@@ -1,0 +1,86 @@
+Error Type,Topic Guid,Message
+Error,,Checking for list in tables in file: message:System.Collections.ArrayList
+Error,,CHecking Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content in md file: message:System.Collections.ArrayList
+Error,,Checking for missing tables headers in file: message:System.Collections.ArrayList
+Error,,Running transform:ConceptualTransform.xslt on file: message:System.Collections.ArrayList
+Error,,Running github process on file: message:System.Collections.ArrayList
+Warning,091876a8-22ee-4685-bb88-adb9de85175a,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>setup.exe /configure &lt;configurationXMLfilename&gt;.xml</b> in md file:091876a8-22ee-4685-bb88-adb9de85175a.md total found:0
+Warning,091876a8-22ee-4685-bb88-adb9de85175a,Missing tables headers in file:091876a8-22ee-4685-bb88-adb9de85175a.md
+Warning,13aa8058-b524-4c73-930b-0802b2617ab4,Missing tables headers in file:13aa8058-b524-4c73-930b-0802b2617ab4.md
+Warning,16cf763b-78a4-43dc-b05f-3efade197c0d,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>     &lt;Display Level="None"  AcceptEULA="True"  /&gt;</p> in md file:16cf763b-78a4-43dc-b05f-3efade197c0d.md total found:0
+Warning,16cf763b-78a4-43dc-b05f-3efade197c0d,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>&lt;No installed product keys detected&gt;</b> in md file:16cf763b-78a4-43dc-b05f-3efade197c0d.md total found:0
+Warning,190f41e4-064d-486b-9c95-db08f973687c,Found a an ul list inside a table in html file:190f41e4-064d-486b-9c95-db08f973687c.xml
+Warning,190f41e4-064d-486b-9c95-db08f973687c,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p> Release dates and build numbers that are italicized and enclosed in "&lt; &gt;" are subject to change.  </p> in md file:190f41e4-064d-486b-9c95-db08f973687c.md total found:0
+Warning,1ee534fd-56dd-40fc-a463-470e8d636f09,Found a an ul list inside a table in html file:1ee534fd-56dd-40fc-a463-470e8d636f09.xml
+Warning,2124a0dc-3f85-478c-a3da-c0b332b82095,Missing tables headers in file:2124a0dc-3f85-478c-a3da-c0b332b82095.md
+Warning,278cea26-4657-45c1-aede-5365daa2f63c,Missing tables headers in file:278cea26-4657-45c1-aede-5365daa2f63c.md
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b> setup.exe /configure &lt;installXMLfilename&gt;.xml</b> in md file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md total found:0
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>setup.exe /configure &lt;installXMLfilename&gt;.xml</b> in md file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md total found:0
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>setup.exe /configure &lt;configurationXMLfilename&gt;.xml</b> in md file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md total found:0
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>setup.exe /configure &lt;configurationXMLfilename&gt;.xml</b> in md file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md total found:0
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>setup.exe /configure &lt;configurationXMLfilename&gt;.xml</b> in md file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md total found:0
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<b>setup.exe /configure &lt;configurationXMLfilename&gt;.xml</b> in md file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md total found:0
+Warning,29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f,Missing tables headers in file:29873de8-6c2f-4f6d-aa1a-ca6f4a28a46f.md
+Warning,2f560823-aa43-4003-8f79-2750d3944060,Missing tables headers in file:2f560823-aa43-4003-8f79-2750d3944060.md
+Warning,328bc4dc-79ab-4082-a897-25ebe4fc44a9,Missing tables headers in file:328bc4dc-79ab-4082-a897-25ebe4fc44a9.md
+Warning,3a3b98be-c33e-4ed5-8403-9cf71eccb904,Missing tables headers in file:3a3b98be-c33e-4ed5-8403-9cf71eccb904.md
+Warning,3c108fee-b271-4cb0-8b16-a134faf9f70c,Missing tables headers in file:3c108fee-b271-4cb0-8b16-a134faf9f70c.md
+Warning,42a703ac-618c-4cb1-bc29-3014de45692b,Found nested table in md file:42a703ac-618c-4cb1-bc29-3014de45692b.md
+Warning,42a703ac-618c-4cb1-bc29-3014de45692b,Fixing missing end table tag in file:42a703ac-618c-4cb1-bc29-3014de45692b.md
+Warning,42a703ac-618c-4cb1-bc29-3014de45692b,Found invalid tables saving file:42a703ac-618c-4cb1-bc29-3014de45692b.md
+Warning,5af6bb88-a92e-4fb0-ae1b-f11929fdf275,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>&lt; 25 traveling users- some who are offsite for extended periods</p> in md file:5af6bb88-a92e-4fb0-ae1b-f11929fdf275.md total found:0
+Warning,5b5f4aab-7100-4e14-b3d6-218d0a267765,Missing tables headers in file:5b5f4aab-7100-4e14-b3d6-218d0a267765.md
+Warning,5ce548ce-7a28-4ce4-a87f-ab4413bdcb40,Found a an ul list inside a table in html file:5ce548ce-7a28-4ce4-a87f-ab4413bdcb40.xml
+Warning,5ebd1288-69ed-4425-a9cf-6253d6027005,Missing tables headers in file:5ebd1288-69ed-4425-a9cf-6253d6027005.md
+Warning,68113166-4e85-45da-8963-ad65d3031ade,Missing tables headers in file:68113166-4e85-45da-8963-ad65d3031ade.md
+Warning,733ff07f-8137-46e6-9904-70f59d716f6f,Found a an ul list inside a table in html file:733ff07f-8137-46e6-9904-70f59d716f6f.xml
+Warning,78b33779-9356-4cdf-9d2c-08350ef05cca,Found a an ul list inside a table in html file:78b33779-9356-4cdf-9d2c-08350ef05cca.xml
+Warning,80b82132-22c2-4628-84b4-fbbd6598aaba,Found a an ul list inside a table in html file:80b82132-22c2-4628-84b4-fbbd6598aaba.xml
+Warning,80b82132-22c2-4628-84b4-fbbd6598aaba,Missing tables headers in file:80b82132-22c2-4628-84b4-fbbd6598aaba.md
+Warning,80faf817-9559-459d-8e9c-e062b29fe9a3,Found a an ul list inside a table in html file:80faf817-9559-459d-8e9c-e062b29fe9a3.xml
+Warning,80faf817-9559-459d-8e9c-e062b29fe9a3,Missing tables headers in file:80faf817-9559-459d-8e9c-e062b29fe9a3.md
+Warning,8d86741d-51da-4b73-91bb-506579494bd3,Missing tables headers in file:8d86741d-51da-4b73-91bb-506579494bd3.md
+Warning,8efa2040-4259-42e7-8087-f589adcc4190,Missing tables headers in file:8efa2040-4259-42e7-8087-f589adcc4190.md
+Warning,98799ea9-3b93-46b4-b399-b9fcab3e1d80,Missing tables headers in file:98799ea9-3b93-46b4-b399-b9fcab3e1d80.md
+Warning,9976a65c-2e66-4781-b830-02db03b1cdba,Missing tables headers in file:9976a65c-2e66-4781-b830-02db03b1cdba.md
+Warning,99aa9fba-e188-4ca0-ac0a-2c82d6ed5242,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>&lt; 1% </p> in md file:99aa9fba-e188-4ca0-ac0a-2c82d6ed5242.md total found:0
+Warning,99aa9fba-e188-4ca0-ac0a-2c82d6ed5242,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>&lt; 10% </p> in md file:99aa9fba-e188-4ca0-ac0a-2c82d6ed5242.md total found:0
+Warning,99aa9fba-e188-4ca0-ac0a-2c82d6ed5242,Missing tables headers in file:99aa9fba-e188-4ca0-ac0a-2c82d6ed5242.md
+Warning,9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd,Found a an ul list inside a table in html file:9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd.xml
+Warning,9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd,Missing tables headers in file:9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd.md
+Warning,9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd,Fixing missing end table tag in file:9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd.md
+Warning,9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd,Fixing missing end table tag in file:9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd.md
+Warning,9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd,Found invalid tables saving file:9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd.md
+Warning,a073ea21-62ed-40ef-8405-fd287f7d0b11,Found a an ul list inside a table in html file:a073ea21-62ed-40ef-8405-fd287f7d0b11.xml
+Warning,a2cf0c03-0c1d-4753-ac05-00aab2644f9d,Missing tables headers in file:a2cf0c03-0c1d-4753-ac05-00aab2644f9d.md
+Warning,a7e61b05-c07c-4a14-9888-3ea61b30f2fc,Missing tables headers in file:a7e61b05-c07c-4a14-9888-3ea61b30f2fc.md
+Warning,a7fcdebf-97e5-4551-84f8-f2cb993c16da,Missing tables headers in file:a7fcdebf-97e5-4551-84f8-f2cb993c16da.md
+Warning,ac3e0d61-fd10-4caa-9b88-be55d1ef39bb,Missing tables headers in file:ac3e0d61-fd10-4caa-9b88-be55d1ef39bb.md
+Warning,ae942449-1fca-4484-898b-a933ea23def7,Found a an ul list inside a table in html file:ae942449-1fca-4484-898b-a933ea23def7.xml
+Warning,aef0e8b7-b36c-488d-a392-21720c139063,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>&lt; 100 travelling users- some who are offsite for extended periods</p> in md file:aef0e8b7-b36c-488d-a392-21720c139063.md total found:0
+Warning,aef0e8b7-b36c-488d-a392-21720c139063,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<p>Remote Desktop Services and Citrix farm with &lt; 500 users</p> in md file:aef0e8b7-b36c-488d-a392-21720c139063.md total found:0
+Warning,be130915-09ab-4303-b436-ae7b84266e28,Missing tables headers in file:be130915-09ab-4303-b436-ae7b84266e28.md
+Warning,c3aeb487-d45f-4079-8c35-7558a45b876c,Found < > tag Bug 1235997:Support Request: MD conversion issue: not escaped tags causing missing content line:<h3 class="subHeading">PRODUCT NOTICE  Your shared computer license expires on &lt;date&gt; and we're having trouble renewing it.</h3> in md file:c3aeb487-d45f-4079-8c35-7558a45b876c.md total found:0
+Warning,c5aa7b52-77a0-464d-a295-5ee8e9a08f61,Missing tables headers in file:c5aa7b52-77a0-464d-a295-5ee8e9a08f61.md
+Warning,c9ce5ffa-bfc7-4207-a6c0-c24fa9ae9db2,Missing tables headers in file:c9ce5ffa-bfc7-4207-a6c0-c24fa9ae9db2.md
+Warning,d3879f0d-766c-469c-9440-0a9a2a905ca8,Found nested table in md file:d3879f0d-766c-469c-9440-0a9a2a905ca8.md
+Warning,d66205f9-cf21-43df-bb19-af18cf0048bb,Missing tables headers in file:d66205f9-cf21-43df-bb19-af18cf0048bb.md
+Warning,df4dba28-cc45-41a0-9b23-a1535523ab8c,Missing tables headers in file:df4dba28-cc45-41a0-9b23-a1535523ab8c.md
+Warning,e9a8dd9f-732c-4c51-907b-59152acda975,Missing tables headers in file:e9a8dd9f-732c-4c51-907b-59152acda975.md
+Warning,f4899394-87f3-425c-9902-ddd65eaaac97,Missing tables headers in file:f4899394-87f3-425c-9902-ddd65eaaac97.md
+
+
+Warning,82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f,Topic title:use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016-and-project-2016 bigger then max length:80 new topic titile name:use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016
+Warning,9b0b48f2-1937-4b10-8274-1ccdb2f5d019,Topic title:use-the-office-compatibility-toolkit-to-assess-application-compatibility-for-office-365-proplus bigger then max length:80 new topic titile name:use-the-office-compatibility-toolkit-to-assess-application-compatibility-for-off
+Warning,a7e61b05-c07c-4a14-9888-3ea61b30f2fc,Topic title:best-practices-system-center-configuration-manager-configuration-for-enterprise-managed bigger then max length:80 new topic titile name:best-practices-system-center-configuration-manager-configuration-for-enterprise-
+Warning,1ee534fd-56dd-40fc-a463-470e8d636f09,Topic title:configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office-2016-version bigger then max length:80 new topic titile name:configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office
+Warning,N/A,Sql Query:use [DDCMS_MOD_IW] SELECT tkw.[topicGuid] as topicGuid,kwf.[keyword] as f1Keyword
+                                        FROM [TopicKeywordsF] tkw join [dbo].[KeywordsF] kwf on tkw.[kwdGuid] = kwf.[kwdGuid]
+                                        join [dbo].[Topics] topics on topics.[topicGuid] = tkw.[topicGuid]
+                                        join [dbo].[Projects] pro on pro.[projectGuid] = topics.[homeProjectGuid]
+                                        where pro.[projectName] = 'Deploy_O365ProPlus' retuned no rows for project:Deploy_O365ProPlus server:ocpubcms for database:DDCMS_MOD_IW
+Warning,N/A,Sql Query:use [DDCMS_MOD_IW] SELECT tkw.[topicGuid] as topicGuid,kwf.[keyword] as f1Keyword
+                                        FROM [TopicKeywordsF] tkw join [dbo].[KeywordsF] kwf on tkw.[kwdGuid] = kwf.[kwdGuid]
+                                        join [dbo].[Topics] topics on topics.[topicGuid] = tkw.[topicGuid]
+                                        join [dbo].[Projects] pro on pro.[projectGuid] = topics.[homeProjectGuid]
+                                        where pro.[projectName] = 'Deploy_O365ProPlus' retuned no rows for project:Deploy_O365ProPlus server:ocpubcms for database:DDCMS_MOD_IW
