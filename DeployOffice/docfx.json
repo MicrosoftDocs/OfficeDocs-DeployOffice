@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,7 +30,11 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/deployoffice/breadcrumb/toc.json",
+      "extendBreadcrumb": "true",
+      "searchScope": ["Office Pro Plus"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "OfficeDocs-OfficeProPlus"
