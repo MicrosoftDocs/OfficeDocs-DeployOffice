@@ -68,14 +68,13 @@ This configuration file includes the most-commonly used elements and attributes,
 The following options apply to running the ODT in download, configure, or packager mode.
   
     
+## Add element
     
+Defines the products and languages to download or install
 
+### Example
 
-|**Name**|**Description**|**Example**|
-|:-----|:-----|:-----|
-|**Add** element <br/> |Defines the products and languages to download or install  <br/> |
 ```
-
 <Add SourcePath="\\\\Server\\Share"
      OfficeClientEdition="32" 
      Channel="Deferred" >
@@ -89,13 +88,64 @@ The following options apply to running the ODT in download, configure, or packag
 </Add>
 ```
 
-|
-|**SourcePath** attribute (part of Add element) <br/> |Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files.  <br/> Optional. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  <br/> | `SourcePath="\\\\server\\share\\"` <br/>  `SourcePath="c:\\preload\\office"` <br/> |
-|**Version** attribute (part of Add element) <br/> |Optional. The default is the latest available version of Office is used.  <br/> | `Version="16.0.6741.2056"` <br/> |
-|**OfficeClientEdition** attribute (part of Add element) <br/> |Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed.  <br/> Required.  <br/> | `OfficeClientEdition="32"` <br/>  `OfficeClientEdition="64"` <br/> |
-|**Channel** attribute (part of Add element) <br/> |Defines which channel to use for updating Office after it is installed.  <br/> Optional. The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. <br/> For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  <br/> | `Channel="Current"` <br/>  `Channel="Deferred"` <br/>  `Channel="FirstReleaseDeferred"` <br/>  `Channel="FirstReleaseCurrent"` <br/> |
-|**DownloadPath** attribute (part of Add element) <br/> |Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location.  <br/> To use this setting, run the ODT in download mode.  <br/> Optional. If not included, the files are downloaded from the Office CDN.  <br/> | `DownloadPath="\\\\serverb\\share\\"` <br/> |
-|**ForceUpgrade** attribute (part of Add element) <br/> |When set to True, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation.  <br/> Optional. Default is **False**. <br/> | `ForceUpgrade="FALSE` `"` <br/>  `ForceUpgrade="TRUE"` <br/> |
+### SourcePath attribute (part of Add element) 
+
+Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. Optional. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  
+
+#### Examples
+
+`SourcePath="\\\\server\\share\\"` 
+`SourcePath="c:\\preload\\office"`
+
+### Version attribute (part of Add element) 
+
+Optional. The default is the latest available version of Office is used.
+
+#### Examples
+
+`Version="16.0.6741.2056"`
+
+### OfficeClientEdition attribute (part of Add element) 
+
+Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. Required. 
+
+#### Examples
+
+`OfficeClientEdition="32"`
+`OfficeClientEdition="64"`
+
+### Channel attribute (part of Add element) 
+
+Defines which channel to use for updating Office after it is installed. Optional. The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. 
+
+For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
+
+#### Examples 
+
+`Channel="Current"` 
+`Channel="Deferred"` 
+`Channel="FirstReleaseDeferred"` 
+`Channel="FirstReleaseCurrent"`
+
+### DownloadPath attribute (part of Add element) 
+
+Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode.  Optional. If not included, the files are downloaded from the Office CDN.  
+
+#### Examples 
+
+`DownloadPath="\\\\serverb\\share\\"` 
+
+### ForceUpgrade attribute (part of Add element) 
+
+When set to True, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Optional. Default is **False**. 
+
+#### Examples 
+
+`ForceUpgrade="FALSE` `"` 
+`ForceUpgrade="TRUE"`
+
+LESLIE START HERE -- UPDATE ALL REMAINING CONTENT BASED ON THE FORMAT FOR ADD ELEMENT
+
 |**Product** element <br/> |Defines which products to download or install.  <br/> If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience.  <br/> You can use the Product element to add language packs to existing installations of Office 365 ProPlus. For more details on how, including an example configuration file, see  [Add languages to existing installations of Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#BKMK_updatelanguages).  <br/> |
 ```
 
