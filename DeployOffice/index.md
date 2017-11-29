@@ -1,4 +1,4 @@
 ---
-redirect_url:  /DeployOffice/Deployment-Guide-for-Office-365-ProPlus
+redirect_url:  /DeployOffice/TOC
 redirect_document_id: TRUE 
 ---
