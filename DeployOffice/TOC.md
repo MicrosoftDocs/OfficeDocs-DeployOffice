@@ -1,7 +1,7 @@
 
   
 # Get started
-## [Overview of deploying Office 365 ProPlus] (deployment-guide-for-office-365-proplus.md)
+## [Overview of deploying Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 ## [What's new: Deploying Office 365 ProPlus](what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
 
 # Deploy
