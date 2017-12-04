@@ -50,5 +50,43 @@ Learn about deployment options, how to deploy from a local source, and how to us
 
 Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates. 
 
-- [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)[Change management for Office 365 clients](change-management-for-office-365-clients.md)[Version and build numbers of update channel releases](http://technet.microsoft.com/library/ae942449-1fca-4484-898b-a933ea23def7%28Office.14%29.aspx)Review the recommended guidance and real-world examples from Microsoft about how to deploy and manage Office 365 ProPlus.[Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)[Best practices: Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)[Best practices: Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)[Best practices: Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)[Best practices: Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)Learn about the Office Deployment Tool (ODT), other deployment options, and activation.[Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)[Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)[Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)[Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)[Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)[Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)[Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
+- [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
+
+- [Change management for Office 365 clients](change-management-for-office-365-clients.md)
+
+- [Version and build numbers of update channel releases] (http://technet.microsoft.com/library/ae942449-1fca-4484-898b-a933ea23def7%28Office.14%29.aspx)
+
+
+## Best practices
+
+Review the recommended guidance and real-world examples from Microsoft about how to deploy and manage Office 365 ProPlus.
+
+- [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
+
+- [Best practices: Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
+
+- [Best practices: Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
+ 
+- [Best practices: Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
+
+- [Best practices: Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
+
+ 
+## Reference
+
+Learn about the Office Deployment Tool (ODT), other deployment options, and activation.
+
+- [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+
+- [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+
+- [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
+
+- [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+
+- [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
+
+- [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
+
+- [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 
