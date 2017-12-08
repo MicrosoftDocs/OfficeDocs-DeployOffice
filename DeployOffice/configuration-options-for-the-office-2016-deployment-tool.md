@@ -31,23 +31,23 @@ This configuration file includes the most-commonly used elements and attributes,
 
 ```
 <Configuration>
-	<Add SourcePath="\\Server\Share" 
+  <Add SourcePath="\\Server\Share" 
        OfficeClientEdition="32"
        Channel="Broad" >
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
-		  <Language ID="ja-jp" />
+      <Language ID="ja-jp" />
     </Product>
     <Product ID="VisioProRetail">
       <Language ID="en-us" />
-	  	<Language ID="ja-jp" />
-	  </Product>
-  </Add>  
-	<Updates Enabled="TRUE" 
+      <Language ID="ja-jp" />
+    </Product>
+  </Add>
+  <Updates Enabled="TRUE" 
            UpdatePath="\\Server\Share" 
            Channel="Broad" /> 
-	<Display Level="None" AcceptEULA="TRUE" />  
-	<Logging Level="Standard" Path="%temp%" /> 
+  <Display Level="None" AcceptEULA="TRUE" />  
+  <Logging Level="Standard" Path="%temp%" /> 
 </Configuration>
 ```
 
