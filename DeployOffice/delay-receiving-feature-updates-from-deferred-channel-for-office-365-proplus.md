@@ -32,7 +32,7 @@ To continue to get security updates for Version 1701 from the Office CDN, you ne
   
 - Configure Office to get the latest build of Version 1701 of Deferred Channel from the Office CDN. As of September 12, 2017, the latest build is 7766.2116.
     
-- On the second Tuesday of the following months - for example, on October 10, 2017 - refer to [this table](http://technet.microsoft.com/library/ae942449-1fca-4484-898b-a933ea23def7%28Office.14%29.aspx#BKMK_ByVersion) to determine the latest build number for Version 1701. The second Tuesday of each month is when Microsoft releases a new build with security updates for Deferred Channel.
+- On the second Tuesday of the following months - for example, on October 10, 2017 - refer to [this table](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7) to determine the latest build number for Version 1701. The second Tuesday of each month is when Microsoft releases a new build with security updates for Deferred Channel.
     
 - Once you have the latest build number, re-configure Office to get this latest build of Version 1701 of Deferred Channel.
     
@@ -42,7 +42,7 @@ The following table provides information about the relevant Group Policy and Off
   
 |**Configuration tool**|**Setting**|**Registry value and key**|**Additional information**|
 |:-----|:-----|:-----|:-----|
-|Group Policy  <br/> |Target Version  <br/> |Value: updatetargetversion  <br/> Key: HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\OfficeUpdate  <br/> |You can find this policy setting under Computer Configuration\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.  <br/> If you use the Group Policy setting, its setting takes precedence over the setting configured by the Office Deployment Tool.  <br/> |
+|Group Policy  <br/> |Target Version  <br/> |Value: updatetargetversion  <br/> Key: HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0\\Common\\OfficeUpdate  <br/> |You can find this policy setting under Computer Configuration\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.  <br/> <br/>If you use the Group Policy setting, its setting takes precedence over the setting configured by the Office Deployment Tool.  <br/> |
 |Office Deployment Tool  <br/> |TargetVersion  <br/> |Value: updatetoversion  <br/> Key: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration  <br/> |You configure this attribute in the Updates element in the configuration.xml file.  <br/> Your xml file should look something like the following example.  <br/> ```<Configuration>  <Updates Enabled="TRUE" TargetVersion="16.0.7766.2116" Channel="Deferred" /> </Configuration>```If you use the Office Deployment Tool, you need to re-run setup.exe, with your configuration.xml file, on each computer in order to update this setting.  <br/> |
    
 On the second Tuesday of each month, until January 2018, you need to update the Group Policy setting or the configuration.xml with the latest build number for Version 1701 of Deferred Channel. For example, for September 2017, you specify the target version as 16.0.7766.2116.
@@ -50,7 +50,7 @@ On the second Tuesday of each month, until January 2018, you need to update the 
 Another possibility is to run the following command from an elevated command prompt:
   
 ```
-C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeC2RClient.exe /update user updatetoversion="16.0.7766.2116"
+C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe /update user updatetoversion="16.0.7766.2116"
 ```
 
 When you run this command, Office looks at the configured update location, such as the Office CDN, and tries to update to the specified version. This update happens immediately, instead of waiting for the next time Office is scheduled to look for updates, which could be in a few days.
@@ -65,7 +65,7 @@ To download the latest build with the Office Deployment Tool, you need to config
 
 #### Other Resources
 
-[Version and build numbers of update channel releases](http://technet.microsoft.com/library/ae942449-1fca-4484-898b-a933ea23def7%28Office.14%29.aspx)
+[Version and build numbers of update channel releases](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
   
 [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
   
