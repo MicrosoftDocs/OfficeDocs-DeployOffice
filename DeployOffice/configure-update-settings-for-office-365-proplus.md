@@ -51,7 +51,7 @@ Users can install Office 365 ProPlus themselves from the Office 365 portal, but 
   
 The settings that the Office Deployment Tool uses to install and update Office 365 ProPlus are contained in a configuration.xml file. This file is a text file that can be edited in Notepad. There is a [list of settings](configuration-options-for-the-office-2016-deployment-tool.md) that you can specify, including settings for configuring updates.
   
-For example, if you want Office 365 ProPlus to get updates automatically from a network share called  \\server\updates, you'd include the following line in your configuration.xml file:
+For example, if you want Office 365 ProPlus to get updates automatically from a network share called  \\\server\updates, you'd include the following line in your configuration.xml file:
   
 ```
 <Updates Enabled="TRUE" UpdatePath="\\server\updates" />
