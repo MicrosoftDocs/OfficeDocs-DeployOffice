@@ -6,7 +6,6 @@ ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
 
 
 # Configuration options for the Office 2016 Deployment Tool
-
 With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
   
     
@@ -19,7 +18,7 @@ The ODT consists of two files: setup.exe and configuration.xml. To work with the
   
     
     
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the reference table in this article to learn more details about each of the elements and attributes.
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.
   
     
     
@@ -33,39 +32,45 @@ This configuration file includes the most-commonly used elements and attributes,
 ```
 
 <Configuration>
-  <Add SourcePath="\\\\Server\\Share" OfficeClientEdition="32" Channel="Deferred" >
-    <Product ID="O365ProPlusRetail">
-      <Language ID="en-us" />
-      <Language ID="ja-jp" />
-    </Product>
-    <Product ID="VisioProRetail">
-      <Language ID="en-us" />
-    </Product>
+	<Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+    		<Product ID="VisioProRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+		    </Product>
   </Add>  
-  <Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share" /> 
-  <Display Level="None" AcceptEULA="TRUE" />  
-  <Logging Level="Standard" Path="%temp%" /> 
+	<Updates Enabled="TRUE" 
+           UpdatePath="\\Server\Share" 
+           Channel="Broad" /> 
+	<Display Level="None" AcceptEULA="TRUE" />  
+	<Logging Level="Standard" Path="%temp%" /> 
 </Configuration>
-
 ```
 
 
 
 |**Value**|**Description**|
 |:-----|:-----|
-|SourcePath="\\\\Server\\Share"  <br/> |Office will be downloaded to "\\\\server\\share" on your network and deployed using installation files at that location.  <br/> |
-|OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
-|Channel="Deferred"  <br/> |After installation, Office will be updated using the Deferred channel.  <br/> |
+|Add SourcePath="\\Server\Share"  <br/> |Office will be downloaded to "\\server\share" on your network and deployed using installation files at that location.  <br/> |
+|Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
+|Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel (also called the Broad Channel).  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Office 365 ProPlus.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
-|Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share"  <br/> |After installation, Office checks for updates at "\\\\server\\share" on your network.  <br/> |
+|Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
+|Updates UpdatePath="\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
+|Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel (also called the Broad Channel).  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
    
 
 ## Configuration options for the Office Deployment Tool
 
-The following options apply to running the ODT in download, configure, or packager mode.
+The following options apply to running the ODT in download mode, configure mode, or packager mode.
   
     
 ## Add element
@@ -75,61 +80,70 @@ Defines the products and languages to download or install
 ### Example
 
 ```
-<Add SourcePath="\\\\Server\\Share"
-     OfficeClientEdition="32" 
-     Channel="Deferred" >
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-    <Language ID="ja-jp" />
-  </Product>
-  <Product ID="VisioProRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
+	<Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+    		<Product ID="VisioProRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+		    </Product>
+  </Add>  
 ```
 
 ## SourcePath attribute (part of Add element) 
 
-Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  
+**Optional**. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  
 
-### Allowed values
-- SourcePath="\\\\server\\share\\"
-- SourcePath="c:\\preload\\office"
+### Example values
+- SourcePath="\\server\share\"
+- SourcePath="c:\preload\office"
 
-
-### Example
-
-<Add SourcePath="\\\\Server\\Share"
-     OfficeClientEdition="32" 
-     Channel="Deferred" >
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
-
-
-## Version attribute (part of Add element) 
-
-Optional. The default is the latest available version of Office.
 
 ### Example
 
 ```
-<Add SourcePath="\\\\Server\\Share"
-     OfficeClientEdition="32" 
-     Channel="Deferred"
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
+	<Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+  </Add>  
+```
+
+
+## Version attribute (part of Add element) 
+
+**Optional** The default is the latest available version of Office.
+
+### Example value
+- Version="16.0.8201.2193"
+
+
+### Example
+
+```
+	<Add Version="16.0.8201.2193" 
+       SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+  </Add>  
 ```
 
 
 ## OfficeClientEdition attribute (part of Add element) 
 
-Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. 
+**Required**. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. 
 
-Required. 
 
 ### Allowed values
 
@@ -140,69 +154,70 @@ Required.
 ### Example
 
 ```
-<Add SourcePath="\\\\Server\\Share"
-     OfficeClientEdition="32" 
-     Channel="Deferred"
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
+	<Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+  </Add>  
 ```
 
 
 ## Channel attribute (part of Add element) 
 
-Defines which channel to use for updating Office after it is installed. The default is **Deferred** for Office 365 ProPlus and **Current** for Visio Pro for Office 365 and Project Online Desktop Client. 
-
-Optional. 
+**Optional**. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
 ### Allowed values 
 
-- Channel="Current"
-- Channel="Deferred"
-- Channel="FirstReleaseDeferred"
-- Channel="FirstReleaseCurrent"
+- Channel="Monthly"
+- Channel="Broad"
+- Channel="Targeted"
 
 
 ### Example 
 
 ```
-<Add SourcePath="\\\\Server\\Share"
-     OfficeClientEdition="32" 
-     Channel="Deferred"
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
+	<Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+  </Add>  
 ```
 
 ## DownloadPath attribute (part of Add element) 
 
-Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  
+**Optional.** Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  
 
-Optional. 
+### Example values 
+
+- DownloadPath="\\serverb\share\"
 
 ### Example 
 
 ```
-<Add SourcePath="\\\\Server\\Share"
-     DownloadPath="\\\\serverb\\share\\"
-     OfficeClientEdition="32" 
-     Channel="Deferred"
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
+	<Add SourcePath="\\Server\Share" 
+     DownloadPath="\\serverb\share\"
+     OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+  </Add>  
 ```
 
 
 ## ForceUpgrade attribute (part of Add element) 
 
-When set to **True**, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Default is **False**. 
+**Optional.** When set to **True**, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Default is **False**. 
 
-Optional. 
 
 ### Allowed values 
 
@@ -213,42 +228,44 @@ Optional.
 ### Example 
 
 ```
-<Add SourcePath="\\\\Server\\Share"
-     OfficeClientEdition="32" 
-     Channel="Deferred"
-     ForceUpgrade="FALSE"
-  <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-  </Product>
-</Add>
+	<Add SourcePath="\\Server\Share" 
+       ForceUpgrade="FALSE"
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+    		</Product>
+  </Add>  
 ```
 
 
 ## Product element
 
-Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. You can use the Product element to add language packs to existing installations of Office 365 ProPlus. 
+Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-For more details on how, including an example configuration file, see  [Add languages to existing installations of Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#BKMK_updatelanguages).
+You can also use the Product element to add language packs to existing installations of Office 365 ProPlus. For more details on how, including an example configuration file, see  [Add languages to existing installations of Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#BKMK_updatelanguages).
 
 ### Example
 
-...
+```
 <Product ID="O365ProPlusRetail">
-  <Language ID="en-us" />
-  <Language ID="ja-jp" />
+    <Language ID="en-us" />
+		<Language ID="ja-jp" />
 </Product>
 <Product ID="VisioProRetail">
-  <Language ID="en-us" />
+    <Language ID="en-us" />
+		<Language ID="ja-jp" />
 </Product>
-...
+```
+
 
 ## ID attribute (part of Product element)
 
-Defines the ID of the product to download or install. 
+**Required.** Defines the ID of the product to download or install. 
 
-Required. 
 
-### Allowed values
+### Example values
 
 Office 365 Product IDs: 
 - ID="O365ProPlusRetail"  
@@ -259,20 +276,32 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 ### Example
 
-...
+```
+<Product ID="O365ProPlusRetail">
+    <Language ID="en-us" />
+		<Language ID="ja-jp" />
+</Product>
+```
 
 
 ## Language element
 
 Defines which languages to download or install. To install the same language as the client's operating system, use "MatchOS" as the ID. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
+### Example values
+
+- <Language ID="en-us"/>
+- <Language ID="ja-jp"/>
+- <Language ID="MatchOS"/>
+
 ### Example
 
-...
-<Language ID="en-us"/>
-<Language ID="ja-jp"/>
-<Language ID="MatchOS"/>
-...
+```
+<Product ID="O365ProPlusRetail">
+    <Language ID="en-us" />
+		<Language ID="ja-jp" />
+</Product>
+```
 
 
 ## ID attribute (part of Language element)
@@ -281,7 +310,7 @@ Defines the ID of the language to download or install.
 
 Required.
 
-### Allowed values
+### Exaxmple values
 
 - ID="en-us"
 - ID="ja-jp"
@@ -291,7 +320,12 @@ For a list of all languages, see  [Language identifiers](https://technet.microso
 
 ### Example
 
-...
+```
+<Product ID="O365ProPlusRetail">
+    <Language ID="en-us" />
+		<Language ID="ja-jp" />
+</Product>
+```
 
 
 ## Display element
@@ -300,10 +334,9 @@ Defines what the user sees when Office is installed.
 
 ### Example
 
-...
-<Display Level="None" 
-         AcceptEULA="TRUE" />
-...
+```
+<Display Level="None" AcceptEULA="TRUE" />  
+```
 
 ## Level attribute (part of Display element)
 
@@ -320,7 +353,9 @@ Optional. Default is Full.
 
 ### Example
 
-...
+```
+<Display Level="None" AcceptEULA="TRUE" />  
+```
 
 
 ## AcceptEULA attribute (part of Display element)
@@ -338,7 +373,9 @@ Optional. Default is **FALSE**.
 
 ### Example
 
-...
+```
+<Display Level="None" AcceptEULA="TRUE" />  
+```
 
 
 ## ExcludeApp element
@@ -346,22 +383,26 @@ Optional. Default is **FALSE**.
 Defines which Office 365 ProPlus products should not be installed.
 
 ### Example
-...
-<Add SourcePath="\\\\Server\\share" 
-     OfficeClientEdition="32">
-  <Product ID="O365ProPlusRetail" >
-    <Language ID="en-us" />
-    <ExcludeApp ID="Publisher" />
-  </Product>
-</Add>
-...
+
+```
+	<Add SourcePath="\\Server\Share" 
+       OfficeClientEdition="32"
+       Channel="Broad" >
+    		<Product ID="O365ProPlusRetail">
+      			<Language ID="en-us" />
+		      	<Language ID="ja-jp" />
+            <ExcludeApp ID="Publisher" />
+    		</Product>
+  </Add>  
+```
+
 
 
 ## ID attribute (part of ExcludeApp element)
 
-Defines the ID of the product that should not be installed.
+
+**Required**. Defines the ID of the product that should not be installed.
   
-Required.
 
 ### Allowed values
 
@@ -380,7 +421,14 @@ For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
 
 ### Example
 
-...
+```
+<Product ID="O365ProPlusRetail">
+  <Language ID="en-us" />
+  <Language ID="ja-jp" />
+  <ExcludeApp ID="Publisher" />
+</Product>
+```
+
 
 
 ## Logging element
@@ -389,17 +437,15 @@ Defines options for ODT logging.
 
 ### Example
 
-...
+```
 <Logging Level="Standard" 
          Path="%temp%" />
-...
+```
 
 
 ## Level attribute (part of Logging element)
 
-Turns logging on or off. 
-
-Optional. Default is **Standard**.
+**Optional**. Turns logging on or off. Default is **Standard**.
 
 ### Allowed values
 
@@ -420,7 +466,7 @@ Optional. Default is **%temp%**.
 ### Allowed values
 
 - Path="%temp%"
-- Path="\\\\server\\share\\userlogs\\"
+- Path="\\server\share\userlogs\"
 
 ### Example
 
