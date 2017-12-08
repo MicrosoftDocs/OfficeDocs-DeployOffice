@@ -50,10 +50,6 @@ This configuration file includes the most-commonly used elements and attributes,
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
    
-## Configuration options for the Office Deployment Tool
-
-The following options apply to running the ODT in download mode, configure mode, or packager mode.
-    
 ## Add element
     
 Defines the products and languages to download or install
@@ -71,8 +67,8 @@ Defines the products and languages to download or install
     <Language ID="ja-jp" />
   </Product>
   <Product ID="VisioProRetail">
-    <Language ID="en-us" />
-	  <Language ID="ja-jp" />
+      <Language ID="en-us" />
+      <Language ID="ja-jp" />
   </Product>
 </Add>  
 ```
@@ -81,7 +77,8 @@ Defines the products and languages to download or install
 
 Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  
 
-#### Example values
+Example values:
+
 - SourcePath="\\server\share\"
 - SourcePath="c:\preload\office"
 
@@ -89,14 +86,15 @@ Optional. Defines the location of the Office installation files. If the ODT is r
 
 Optional The default is the latest available version of Office.
 
-#### Example value
+Example value:
+
 - Version="16.0.8201.2193"
 
 ### OfficeClientEdition attribute (part of Add element) 
 
 Required. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. 
 
-#### Allowed values
+Allowed values:
 
 - OfficeClientEdition="64"
 - OfficeClientEdition="32"
@@ -107,7 +105,7 @@ Optional. Defines which channel to use for installing Office. The default is **B
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
-#### Allowed values 
+Allowed values: 
 
 - Channel="Monthly"
 - Channel="Broad"
@@ -115,9 +113,9 @@ For more information about update channels, see  [Overview of update channels fo
 
 ### DownloadPath attribute (part of Add element) 
 
-**Optional.** Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  
+Optional. Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  
 
-#### Example values 
+Example values: 
 
 - DownloadPath="\\serverb\share\"
 
@@ -129,18 +127,17 @@ For more information about update channels, see  [Overview of update channels fo
      OfficeClientEdition="32"
      Channel="Broad" >
   <Product ID="O365ProPlusRetail">
-    <Language ID="en-us" />
-    <Language ID="ja-jp" />
+      <Language ID="en-us" />
+      <Language ID="ja-jp" />
   </Product>
 </Add>  
 ```
 
-
 ### ForceUpgrade attribute (part of Add element) 
 
-**Optional.** When set to **True**, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Default is **False**. 
+Optional. When set to **True**, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Default is **False**. 
 
-#### Allowed values 
+Allowed values: 
 
 - ForceUpgrade="TRUE"
 - ForceUpgrade="FALSE"
@@ -168,7 +165,7 @@ You can also use the Product element to add language packs to existing installat
 
 Required. Defines the ID of the product to download or install. 
 
-#### Example values
+Example values:
 
 Office 365 Product IDs: 
 - ID="O365ProPlusRetail"  
@@ -176,7 +173,6 @@ Office 365 Product IDs:
 - ID="ProjectProRetail"
 
 For a list of all supported product IDs, see  [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://go.microsoft.com/fwlink/p/?LinkID=301891)
-
 
 ## Language element
 
@@ -221,21 +217,20 @@ If **Level** is set to **Full**, Office is installed with the normal installatio
 
 Default is **Full**. 
 
-#### Allowed values
+Allowed values:
 
 - Level="None"
 - Level="Full"
 
-
 ### AcceptEULA attribute (part of Display element)
 
-**Optional.** If **AcceptEULA** is set to **TRUE**, the user does not see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or is not included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
+Optional. If **AcceptEULA** is set to **TRUE**, the user does not see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or is not included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
 
 This setting only applies if you install with the user's account. If you use System Center Configuration Manager or other software distribution tool that uses the SYSTEM account to install, then the setting is not applied.
 
 Default is **FALSE**.
 
-#### Allowed values
+Allowed values:
 
 - AcceptEULA="TRUE"
 - AcceptEULA="FALSE"
@@ -262,7 +257,7 @@ Defines which Office 365 ProPlus products should not be installed.
 
 Required. Defines the ID of the product that should not be installed.
   
-#### Allowed values
+Allowed values:
 
 - ID="Access"
 - ID="Excel"
@@ -292,16 +287,16 @@ Defines options for ODT logging.
 
 Optional. Turns logging on or off. Default is **Standard**.
 
-#### Allowed values
+Allowed values:
 
 - Level="Off"
 - Level="Standard"
 
 ### Path attribute (part of Logging element)
 
-**Optional.** Defines the location of the log files. Default is **%temp%**.
+Optional. Defines the location of the log files. Default is **%temp%**.
 
-#### Example values
+Example values:
 
 - Path="%temp%"
 - Path="\\server\share\userlogs\"
@@ -336,7 +331,7 @@ Because Office 365 ProPlus is set to activate automatically, you should not set 
 
 Optional. Default is **0**.
 
-#### Allowed values
+Allowed values:
 
 - Property Name="AUTOACTIVATE"
           Value="0"
@@ -350,11 +345,10 @@ When set to **TRUE**, forces any apps that are blocking the install of Office to
 
 Optional. Default is **FALSE**.
 
-#### Allowed values
+Allowed values:
 
 - Property Name="FORCEAPPSHUTDOWN"
           Value="FALSE"
-
 - Property Name="FORCEAPPSHUTDOWN"
           Value="TRUE"
 
@@ -369,7 +363,7 @@ If you use any other characters, the App-V package is created with the default P
 
 Optional.
 
-#### Example values
+Example values:
 
 - Property Name="PACKAGEGUID"
           Value="12345678-ABCD-1234-ABCD-1234567890AB"
@@ -382,11 +376,10 @@ For more information, see  [Overview of shared computer activation for Office 36
 
 Optional. Default value is **0**.
 
-#### Allowed values
+Allowed values:
 
 - Property Name="SharedComputerLicensing"
           Value="0"
-
 - Property Name="SharedComputerLicensing"
           Value="1"
 
@@ -397,11 +390,10 @@ Defines whether shortcut icons for Office products are added to the Windows task
 
 Optional. The default value is **True**.
 
-#### Allowed values
+Allowed values:
 
 - Property Name="PinIconsToTaskbar"
           Value="FALSE"
-
 - Property Name="PinIconsToTaskbar"
           Value="TRUE"
 
@@ -429,7 +421,7 @@ If set to **TRUE**, all Office 365 ProPlus products and languages will be remove
 
 Optional. The default value is **FALSE**.
 
-#### Allowed values
+Allowed values:
 
 - All="FALSE"
 - All="TRUE"
@@ -452,7 +444,7 @@ If set to **TRUE**, Office will check for updates. If set to **FALSE**, Office w
 
 Optional. The default value is **TRUE**.
 
-#### Allowed values
+Allowed values:
 
 - Enabled="TRUE"
 - Enabled="FALSE"
@@ -466,7 +458,7 @@ If you use Group Policy with the  [Office 2016](https://www.microsoft.com/downlo
 
 Optional.
 
-#### Example values
+Example values:
 
 - UpdatePath="\\server\share\"
 - UpdatePath="C:\Preload\Office"
@@ -480,7 +472,7 @@ If you use Group Policy with the  [Office 2016](https://www.microsoft.com/downlo
 
 Optional.
 
-#### Example values
+Example values:
 
 - TargetVersion="15.1.2.3"
 - TargetVersion="""
@@ -497,7 +489,7 @@ To use this attribute, Office must be running at least Service Pack 1 (version 1
 
 Optional.
 
-#### Example value
+Example value:
 
 - Deadline="05/16/2014 18:30"
 
@@ -511,7 +503,7 @@ If you use Group Policy with the  [Office 2016 Administrative Template files (AD
 
 Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client.
 
-#### Allowed values
+Allowed values:
 
 - Channel="Monthly"
 - Channel="Broad"
