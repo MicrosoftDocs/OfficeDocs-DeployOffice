@@ -36,7 +36,7 @@ To start, install and configure the operating system on a test computer. There a
 
 To install Office 365 ProPlus on the test computer, first download the Office 2016 version of the Office Deployment Tool from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-Then, use the [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to download the Office 365 ProPlus software to your local network. You also use the Office Deployment Tool to install Office 365 ProPlus on to the test computer.
+Then, use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to download the Office 365 ProPlus software to your local network. You also use the Office Deployment Tool to install Office 365 ProPlus on to the test computer.
   
 Remember, you don't want to activate Office 365 ProPlus when you do the installation.
   
