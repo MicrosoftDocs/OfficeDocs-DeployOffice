@@ -35,12 +35,12 @@ The following are two common RDS scenarios:
 
 The following is a list of prerequisites that you need to deploy Office 365 ProPlus with RDS:
   
-- An [Office 365 plan](https://go.microsoft.com/fwlink/p/?LinkId=510587) that includes Office 365 ProPlus. Also, make sure that you[Assign or remove licenses for Office 365 for business](http://technet.microsoft.com/library/997596b5-4173-4627-b915-36abac6786dc%28Office.14%29.aspx) for Office 365 ProPlus.
+- An Office 365 plan that includes Office 365 ProPlus. Also, make sure that you [assign each user a license](http://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
     
     > [!NOTE]
     > You also can use RDS to deploy Visio Pro for Office 365 or Project Online Desktop Client, if you have a subscription plan that includes those products. 
   
-- The Office 2016 version of the Office Deployment Tool, which is available on the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Office 365 ProPlus software to your local network by using the [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+- The Office 2016 version of the Office Deployment Tool, which is available on the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Office 365 ProPlus software to your local network by using the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
     
 - Any supported version of Office 365 ProPlus.
     
@@ -89,7 +89,7 @@ Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
     
     You use the SharedComputerLicensing setting to enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md), which is required to use Office 365 ProPlus on a shared computer.
     
-4. Use the [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Office 365 ProPlus on the RD Session Host server.
+4. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Office 365 ProPlus on the RD Session Host server.
     
 At this point, users can connect to the RD Session Host server and use Office 365 ProPlus. Users can connect to the server by using Remote Desktop Connection, which is available in Windows, or by using other [Remote Desktop clients](https://go.microsoft.com/fwlink/p/?LinkId=510586).
   
