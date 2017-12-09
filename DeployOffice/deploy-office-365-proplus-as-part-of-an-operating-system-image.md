@@ -69,7 +69,7 @@ For example, at a command prompt, run the following command:
   
  cscript.exe "%programfiles%\\Microsoft Office\\Office15\\ospp.vbs" /dstatus
   
-You should see **No installed product keys detected**, as shown in the following screen shot.
+You should see **\<No installed product keys detected\>**, as shown in the following screen shot.
   
 ![No installed product key detected](images/aa1e234d-c2d1-471f-bf7f-9b11adc8b4b4.jpg)
   
