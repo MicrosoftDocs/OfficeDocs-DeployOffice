@@ -75,7 +75,7 @@ If you decide to make a change later, update the Group Policy setting by using t
   
 Group Policy settings can be used regardless of whether users install Office 365 ProPlus themselves from the Office 365 portal, or if you deploy Office 365 ProPlus to your users by using the Office Deployment Tool.
   
-
+[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 ## See also
 <a name="GP"> </a>
