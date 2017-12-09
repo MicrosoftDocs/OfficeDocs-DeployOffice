@@ -29,7 +29,7 @@ Here are the basic steps of how to include Office 365 ProPlus when you create an
 ### Step 1: Install and configure the operating system for the image
 <a name="Step1"> </a>
 
-To start, install and configure the operating system on a test computer. There are several free tools from Microsoft to help you do this, such as [Windows Assessment and Deployment Kit (Windows ADK)](https://go.microsoft.com/fwlink/p/?LinkID=312996) and[Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkID=268150). 
+To start, install and configure the operating system on a test computer. There are several free tools from Microsoft to help you do this, such as [Windows Assessment and Deployment Kit (Windows ADK)](https://go.microsoft.com/fwlink/p/?LinkID=312996) and [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkID=268150). 
   
 ### Step 2: Install Office 365 ProPlus for the image by using the Office Deployment Tool
 <a name="Step2"> </a>
@@ -47,7 +47,7 @@ To prevent Office 365 ProPlus from trying to automatically activate during the i
 When you set **Level** to **None**, you don't see any user interface elements during the installation. You won't see anything that shows the progress of the installation and you won't see any error messages.
   
 > [!IMPORTANT]
-> Don't sign in to the Office 365 portal to install Office 365 ProPlus from the **software** page. If you do, activation occurs automatically.> Also, don't save the setup file from the Office 365 portal to the test computer. Even if you run the setup file, which will have a file name similar to Setup.X86.en-us_O365ProPlusRetail_d079c594-698d-4370-9174-7c00f76abf00_TX_PR_.exe, from the test computer, activation occurs automatically. 
+> Don't sign in to the Office 365 portal to install Office 365 ProPlus from the **software** page. If you do, activation occurs automatically.<br/> Also, don't save the setup file from the Office 365 portal to the test computer. Even if you run the setup file, which will have a file name similar to Setup.X86.en-us_O365ProPlusRetail_d079c594-698d-4370-9174-7c00f76abf00_TX_PR_.exe, from the test computer, activation occurs automatically. 
   
 After the installation is complete, don't open any Office programs. If you open an Office program, you are prompted to sign-in and activate. Even if you don't sign in and you close the **Activate Office** dialog box, a temporary product key is installed. You don't want any kind of Office 365 ProPlus product key installed in your operating system image.
   
