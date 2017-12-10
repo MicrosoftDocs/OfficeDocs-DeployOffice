@@ -56,9 +56,7 @@ For information about other settings, see [Configuration options for the Office 
   
 Then, use the Office Deployment Tool to download and install Visio or Project.
   
-||
-|:-----|
-|![The short icon for LinkedIn Learning.](images/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
+[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 ## See also
 

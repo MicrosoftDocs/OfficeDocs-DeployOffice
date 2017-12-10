@@ -149,10 +149,8 @@ Here is some additional information that might be useful to know as you determin
     
 - If you have Visio Pro for Office 365 or Project Online Desktop Client installed on the same computer as Office 365 ProPlus, they all must use the same update channel. You can't have a mix of update channels on the same computer. 
     
-||
-|:-----|
-|![The short icon for LinkedIn Learning.](images/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **New to Office 365?**         Discover free video courses for **Office 365 admins and IT pros**, brought to you by LinkedIn Learning. |
-   
+[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
+
 ## See also
 <a name="BKMK_Configure"> </a>
 
