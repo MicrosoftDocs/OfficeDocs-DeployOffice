@@ -126,7 +126,7 @@ If you use the Office Deployment Tool, you can use the Channel attribute in the 
   
 ```
 <Configuration> 
-   <Add SourcePath="\\\\server01\\office" OfficeClientEdition="32"  Channel="Monthly"> 
+   <Add SourcePath="\\server01\office" OfficeClientEdition="32"  Channel="Monthly"> 
     <Product ID="O365ProPlusRetail" > 
      <Language ID="en-us" /> 
     </Product> 
