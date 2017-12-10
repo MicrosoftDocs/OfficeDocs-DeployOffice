@@ -35,7 +35,7 @@ The following are two common RDS scenarios:
 
 The following is a list of prerequisites that you need to deploy Office 365 ProPlus with RDS:
   
-- An Office 365 plan that includes Office 365 ProPlus. Also, make sure that you [assign each user a license](http://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
+- An Office 365 plan that includes Office 365 ProPlus. Also, make sure that you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
     
     > [!NOTE]
     > You also can use RDS to deploy Visio Pro for Office 365 or Project Online Desktop Client, if you have a subscription plan that includes those products. 

@@ -156,7 +156,7 @@ Here is some additional information that might be useful to know as you determin
 
 #### Other Resources
 
-[Version and build numbers of update channel releases](http://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+[Version and build numbers of update channel releases](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
   
 [Change management for Office 365 clients](change-management-for-office-365-clients.md)
   
