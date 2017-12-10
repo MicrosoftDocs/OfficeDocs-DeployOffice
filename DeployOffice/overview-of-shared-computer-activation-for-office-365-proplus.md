@@ -23,7 +23,7 @@ description: "Shared computer activation lets you to deploy Office 365 ProPlus t
 # Overview of shared computer activation for Office 365 ProPlus
 
 > [!IMPORTANT]
-> This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office 365, Office 2016, or Office 2013](http://technet.microsoft.com/library/5bd38f38-db92-448b-a982-ad170b1e187e.aspx). 
+> This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
 Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For example, several nurses at a hospital connect to the same remote server to use their applications or a group of workers share a computer at a factory.
   
@@ -34,14 +34,14 @@ Shared computer activation is used only for situations where multiple users shar
 ## How to enable shared computer activation for Office 365 ProPlus
 <a name="Enable_1"> </a>
 
-If you have an Office 365 plan that includes Office 365 ProPlus, you can use shared computer activation. Make sure you [Assign or remove licenses for Office 365 for business](http://technet.microsoft.com/library/997596b5-4173-4627-b915-36abac6786dc%28Office.14%29.aspx) for Office 365 ProPlus and that users log on to the shared computer with their own user account.
+If you have an Office 365 plan that includes Office 365 ProPlus, you can use shared computer activation. Make sure you [assign each user a license](http://technet.microsoft.com/library/997596b5-4173-4627-b915-36abac6786dc%28Office.14%29.aspx) for Office 365 ProPlus and that users log on to the shared computer with their own user account.
   
 > [!NOTE]
 > You also can use shared computer activation to install Visio Pro for Office 365 or Project Online Desktop Client on a shared computer, if you have a subscription plan that includes those products. 
   
 To enable shared computer activation when you deploy Office 365 ProPlus, you need the current version of the Office 2016 Deployment Tool, which is available for free from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-The [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md), combined with a simple text file, is used to install Office 365 ProPlus on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](configuration-options-for-the-office-2016-deployment-tool.md).
+The [Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md), combined with a simple text file, is used to install Office 365 ProPlus on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](configuration-options-for-the-office-2016-deployment-tool.md).
   
 ```
 <Display Level="None" AcceptEULA="True" /> 
@@ -51,7 +51,7 @@ The [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-de
 After Office 365 ProPlus is installed, you can [verify that shared computer activation is enabled](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md#Enabled) on that computer.
   
 > [!NOTE]
-> If you've already deployed Office 365 ProPlus, you can enable shared computer activation on a computer by using Registry Editor to add a string value of SharedComputerLIcensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration. > If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing and it's a DWORD value. > You can also enable shared computer activation by using Group Policy. If you're using Group Policy, download the most current [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+> If you've already deployed Office 365 ProPlus, you can enable shared computer activation on a computer by using Registry Editor to add a string value of SharedComputerLIcensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration. <br/><br/>If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing and it's a DWORD value. <br/><br/>You can also enable shared computer activation by using Group Policy. If you're using Group Policy, download the most current [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
   
 ## How shared computer activation works for Office 365 ProPlus
 <a name="Works_1"> </a>
@@ -97,7 +97,7 @@ If a user logs on to a shared computer again, Office 365 ProPlus uses the same l
     
      ![Too many computers activated message](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
   
-- **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Office is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Office 365 ProPlus. For more information, see[Understanding Office 365 identity and Azure Active Directory](http://technet.microsoft.com/library/06a189e7-5ec6-4af2-94bf-a22ea225a7a9%28Office.14%29.aspx).
+- **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Office is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Office 365 ProPlus. For more information, see [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
     
     If you don't use single sign-on, you should consider using roaming profiles and include the following two folders as part of the roaming profile:
     
