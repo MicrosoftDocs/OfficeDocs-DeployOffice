@@ -26,7 +26,7 @@ One of the benefits of Office 365 ProPlus is that Microsoft can provide new feat
   
 |**Update channel**|**Primary purpose**|**How often updated with new features**|**Default update channel for the following products**|
 |:-----|:-----|:-----|:-----|
-|[Monthly Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_MC) <br/> |Provide users with the newest features of Office as soon as they're available.  <br/> |Monthly  <br/> |Visio Pro for Office 365  <br/> Project Online Desktop Client  <br/>  Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium. <br/> |
+|[Monthly Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_MC) <br/> |Provide users with the newest features of Office as soon as they're available.  <br/> |Monthly  <br/> |Visio Pro for Office 365  <br/><br/> Project Online Desktop Client  <br/><br/>  Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium. <br/> |
 |[Semi-Annual Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_SAC) <br/> |Provide users with new features of Office only a few times a year.  <br/> |Every six months, in January and July  <br/> |Office 365 ProPlus  <br/> |
 |[Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) <br/> |Provide pilot users and application compatibility testers the opportunity to test the next Semi-Annual Channel.  <br/> |Every six months, in March and September  <br/> |None  <br/> |
    
@@ -120,7 +120,7 @@ Semi-Annual Channel is the default update channel for Office 365 ProPlus. But yo
     
 - Provide your application compatibility testers with Semi-Annual Channel (Targeted) so that they can test that the finance applications will work with the next Semi-Annual Channel feature release.
     
-To configure the update channel for an Office 365 ProPlus installation, you can use the latest version of the [Office 2016 Deployment Tool](http://go.microsoft.com/fwlink/p/?LinkID=626065) or use the[Group Policy Administrative Templates files (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030) for Office 2016.
+To configure the update channel for an Office 365 ProPlus installation, you can use the latest version of the [Office 2016 Deployment Tool](http://go.microsoft.com/fwlink/p/?LinkID=626065) or use the [Group Policy Administrative Templates files (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030) for Office 2016.
   
 If you use the Office Deployment Tool, you can use the Channel attribute in the configuration.xml file. The Channel attribute can be specified in the Add element or the Update element. The relevant values are Monthly, Broad, and Targeted. For example, if you want to download and install the Monthly Channel of Office 365 ProPlus, your configuration.xml file would look like the following example. 
   
@@ -156,7 +156,7 @@ Here is some additional information that might be useful to know as you determin
 
 #### Other Resources
 
-[Version and build numbers of update channel releases](http://technet.microsoft.com/library/ae942449-1fca-4484-898b-a933ea23def7%28Office.14%29.aspx)
+[Version and build numbers of update channel releases](http://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
   
 [Change management for Office 365 clients](change-management-for-office-365-clients.md)
   
