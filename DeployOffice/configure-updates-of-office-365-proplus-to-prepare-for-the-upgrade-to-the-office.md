@@ -79,7 +79,7 @@ If you want to control when Office is upgraded, we recommend that you configure 
   <Updates Enabled="TRUE" UpdatePath="\\Server\\Share\"  />
   ```
 
-    Replace \\\\Server\\Share_ with the location on your network. Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
+    Replace \\\\Server\\Share with the location on your network. Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
     
 After you do this, use the Office 2013 version of the Office Deployment Tool to download updates for Office 2013 to your local network until you upgrade to Office 2016. 
   
