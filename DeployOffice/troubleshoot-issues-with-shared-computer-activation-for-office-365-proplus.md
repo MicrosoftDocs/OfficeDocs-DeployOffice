@@ -47,7 +47,7 @@ Here are two ways that you can check whether shared computer activation is enabl
 
 On the shared computer, after you open any Office 365 ProPlus program, go to the following folder:
   
- %localappdata%\\Microsoft\\Office\\16.0\\Licensing
+    %localappdata%\\Microsoft\\Office\\16.0\\Licensing
   
 If activation succeeded, there are some text files in the folder, like in the following screenshot. Don't make any changes to these files.
   
@@ -74,7 +74,7 @@ This error means that a licensing token wasn't obtained from the Office Licensin
   
 You can try these steps to fix this problem:
   
-- [Assign or remove licenses for Office 365 for business](http://technet.microsoft.com/library/997596b5-4173-4627-b915-36abac6786dc%28Office.14%29.aspx) for Office 365 ProPlus.
+- [Check that the user is assigned a license](https:/support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
     
 - Check that the user signs in with her user account for Office 365 if the **Activate Office** dialog box appears when the user opens an Office 365 ProPlus program.
     
