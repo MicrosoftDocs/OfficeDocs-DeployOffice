@@ -42,7 +42,7 @@ To determine if your Office installation could get upgraded, you first need to [
     
 - [Disable updates entirely](configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md#BKMK_Disable)
     
-The upgrade isn't automatic. The user has to choose **Update Office** from within an Office app, such as Word, to begin the upgrade. For more information about the upgrade,[read this overview](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md).
+The upgrade isn't automatic. The user has to choose **Update Office** from within an Office app, such as Word, to begin the upgrade. For more information about the upgrade, [read this overview](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md).
   
 > [!NOTE]
 > This information also applies to Visio Pro for Office 365 and Project Online Desktop Client. It also applies to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium. 
@@ -54,9 +54,9 @@ You can determine where Office gets updates from by using Registry Editor to vie
   
 |**Registry key**|**Value**|**Description**|
 |:-----|:-----|:-----|
-|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\ClickToRun\\Configuration  <br/> |UpdateUrl  <br/> | If this value appears in the registry, and it points to a location on your network, such as a network share, then Office isn't configured to get updates from the CDN. <br/>  But, you also need to check for the updatepath value in the registry. <br/> |
-|HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Office\\15.0\\Common\\OfficeUpdate  <br/> |updatepath  <br/> | If this value appears in the registry, and it points to a location on your network, such as a network share, then Office isn't configured to get updates from the CDN. <br/>  But, if the value appears in the registry, and the **Data** column is blank, then Office is configured to get updates from the CDN. <br/>  This location in the registry is used by Group Policy to store the configuration of the **Update Path** policy setting. <br/>  The setting of the updatepath value takes precedence over the setting of UpdateURL. <br/> |
-|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\ClickToRun\\Configuration  <br/> |CDNBaseURL  <br/> | If the UpdateURL and the updatepath values don't appear in the registry, then Office is configured to get updates from the CDN. <br/>  In the **Data** column, you should see an address that begins with http://officecdn.microsoft.com <br/> |
+|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\ClickToRun\\Configuration  <br/> |UpdateUrl  <br/> | If this value appears in the registry, and it points to a location on your network, such as a network share, then Office isn't configured to get updates from the CDN. <br/>  <br/>But, you also need to check for the updatepath value in the registry. <br/> |
+|HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Office\\15.0\\Common\\OfficeUpdate  <br/> |updatepath  <br/> | If this value appears in the registry, and it points to a location on your network, such as a network share, then Office isn't configured to get updates from the CDN. <br/>  <br/>But, if the value appears in the registry, and the **Data** column is blank, then Office is configured to get updates from the CDN. <br/> <br/> This location in the registry is used by Group Policy to store the configuration of the **Update Path** policy setting. <br/>  The setting of the updatepath value takes precedence over the setting of UpdateURL. <br/> |
+|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\ClickToRun\\Configuration  <br/> |CDNBaseURL  <br/> | If the UpdateURL and the updatepath values don't appear in the registry, then Office is configured to get updates from the CDN. <br/> <br/> In the **Data** column, you should see an address that begins with http://officecdn.microsoft.com <br/> |
    
 This assumes that Office is configured to get updates automatically. You can check this in the following places in the registry:
   
@@ -76,10 +76,10 @@ If you want to control when Office is upgraded, we recommend that you configure 
 - Use the Office Deployment Tool and include the following line in the configuration.xml file:
     
   ```
-  <Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share\\"  />
+  <Updates Enabled="TRUE" UpdatePath="\\Server\\Share\"  />
   ```
 
-    Replace  _\\\\Server\\Share_ with the location on your network. Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the[Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
+    Replace \\\\Server\\Share_ with the location on your network. Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
     
 After you do this, use the Office 2013 version of the Office Deployment Tool to download updates for Office 2013 to your local network until you upgrade to Office 2016. 
   
