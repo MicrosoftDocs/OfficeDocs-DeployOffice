@@ -22,17 +22,17 @@ ms.assetid: e471ef30-2a09-4767-a172-aa74e1dc4686
 
 ## 
 
- **[Deploy with System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)** How to deploy Office 365 ProPlus with Configuration Manager version 1702. For how to deploy with earlier versions , see[Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates): How to deploy Office 365 ProPlus with Configuration Manager version 1702. For how to deploy with earlier versions , see[Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
   
- **[Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)** Step-by-step instructions for deploying Office 365 ProPlus from a shared folder on your network with the Office 2016 Deployment Tool.
+ - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md): Step-by-step instructions for deploying Office 365 ProPlus from a shared folder on your network with the Office 2016 Deployment Tool.
   
- **[Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)** Step-by-step instructions for deploying Office 365 ProPlus from the Office CDN with the Office 2016 Deployment Tool.
+ - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md): Step-by-step instructions for deploying Office 365 ProPlus from the Office CDN with the Office 2016 Deployment Tool.
   
 ## How to choose
 
 There are two basic ways that you can deploy Office 365 ProPlus in your organization:
   
-- Have users install Office 365 ProPlus directly from the Office 365 portal. For more details on this method, see [Set up Office 365 for business](http://technet.microsoft.com/library/6a3a29a0-e616-4713-99d1-15eda62d04fa%28Office.14%29.aspx).
+- Have users install Office 365 ProPlus directly from the Office 365 portal. For more details on this method, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
     
 - Download the Office 365 ProPlus software to your local network and then deploy it to your users from a local share using the Office 2016 Deployment Tool, System Center Configuration Manager, or another software distribution tool.
     
