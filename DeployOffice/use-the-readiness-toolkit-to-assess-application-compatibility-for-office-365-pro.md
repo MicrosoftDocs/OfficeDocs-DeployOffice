@@ -80,7 +80,7 @@ To create a readiness report, you first need to select what information to use t
 |:-----|:-----|:-----|
 |Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator only scans Office documents that are in the user's list of most recently used files. This allows you to narrow the focus of the scan to documents that a user accesses on a regular basis.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
 |Office documents in a local folder or network share.  <br/> |The Readiness Report Creator scans the Office documents in the folder or network share that you specify. The Readiness Report Creator automatically scans the specified location, and all the subfolders in that location.  <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for add-ins installed on the computer on which the Readiness Report Creator is run. <br/> |VBA only  <br/> |
-|Previous readiness results saved together in a local folder or network share.  <br/> |This option allows you to create a consolidated report comprised of individual readiness results from multiple standalone computers.  <br/> <br/>For example, you might want to run the Readiness Report Creator on all the computers in the Finance department, saving the results of each scan to a network share. Then, you can use this option to create a consolidated report for the Finance department.  <br/><br/> For more information, see [Getting readiness information for multiple users in an enterprise ](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise).  <br/> |VBA only, or VBA and Add-in, depending on what readiness results are being used.  <br/> |
+|Previous readiness results saved together in a local folder or network share.  <br/> |This option allows you to create a consolidated report comprised of individual readiness results from multiple standalone computers.  <br/> <br/>For example, you might want to run the Readiness Report Creator on all the computers in the Finance department, saving the results of each scan to a network share. Then, you can use this option to create a consolidated report for the Finance department.  <br/><br/> For more information, see [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise).  <br/> |VBA only, or VBA and Add-in, depending on what readiness results are being used.  <br/> |
 |Add-in data from Office Telemetry dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](https://technet.microsoft.com/library/jj822978%28v=office.16%29.aspx) to assess add-in compatibility, you can use that information which you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. <br/> |Add-in only  <br/> |
    
 ### Choosing between a basic and an advanced report
@@ -109,7 +109,7 @@ To provide you with the most up-to-date remediation advice and readiness status,
 
 The Readiness Report Creator creates a readiness report as an Excel file. The readiness information available in the report depends on what information you based your report on, as well as whether you chose to create a basic or advanced report.
   
-Each report starts with an Overview page, which provides high-level information about the results, and links to the reports available - [VBA readiness reports](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_VBAReport) or [Add-in report](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddinReport) or both.
+Each report starts with an Overview page, which provides high-level information about the results, and links to the reports available - [VBA](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_VBAReport) or [Add-in](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddinReport) or both.
   
 ### VBA readiness reports
 <a name="BKMK_VBAReport"> </a>
@@ -301,7 +301,7 @@ The following table lists the types of add-ins that the Readiness Report Creator
 ### Examples of the information sent to Microsoft when creating an advanced report
 <a name="BKMK_InfoSent"> </a>
 
-When you choose to create an [Choosing between a basic and an advanced report](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_ChooseBasicAdv), some information is sent to Microsoft.
+When you choose to create an [advanced report](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_ChooseBasicAdv), some information is sent to Microsoft.
   
 The following table provides a list of the information that is sent to Microsoft about the VBA macros that are found during a scan, along with examples.
   
