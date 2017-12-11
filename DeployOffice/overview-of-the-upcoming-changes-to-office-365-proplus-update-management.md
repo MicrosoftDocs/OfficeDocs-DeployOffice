@@ -61,7 +61,7 @@ Here is a list of the name changes for Office 365 ProPlus. We'll start using the
 |Semi-Annual Channel  <br/> |Deferred Channel  <br/> |
    
 > [!NOTE]
-> We've made some slight changes to the names for Semi-Annual Channel. We've changed "(Pilot)" to "(Targeted)" and we've removed the "(Broad)" designation from the new name for Deferred Channel. These names will be aligned across Windows 10 and Office 365 ProPlus feature update releases. <br/>For information about upcoming changes to the names of Windows 10 feature update releases, [read this blog post](http://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/). 
+> We've made some slight changes to the names for Semi-Annual Channel. We've changed "(Pilot)" to "(Targeted)" and we've removed the "(Broad)" designation from the new name for Deferred Channel. These names will be aligned across Windows 10 and Office 365 ProPlus feature update releases. <br/> <br/> For information about upcoming changes to the names of Windows 10 feature update releases, [read this blog post](http://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/). 
   
 ## The default enterprise release schedule for Office 365 ProPlus is changing to twice a year
 <a name="BKMK_Schedule"> </a>
