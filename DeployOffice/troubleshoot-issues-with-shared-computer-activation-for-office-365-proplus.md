@@ -74,7 +74,7 @@ This error means that a licensing token wasn't obtained from the Office Licensin
   
 You can try these steps to fix this problem:
   
-- [Check that the user is assigned a license](https:/support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
+- [Check that the user is assigned a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
     
 - Check that the user signs in with her user account for Office 365 if the **Activate Office** dialog box appears when the user opens an Office 365 ProPlus program.
     
