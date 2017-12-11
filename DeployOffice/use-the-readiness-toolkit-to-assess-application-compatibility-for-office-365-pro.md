@@ -172,7 +172,7 @@ The following table lists the possible severities that can appear in a readiness
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
    
-(<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
+<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
   
 <sup>2</sup> **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
   
