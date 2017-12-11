@@ -47,7 +47,7 @@ Here are two ways that you can check whether shared computer activation is enabl
 
 On the shared computer, after you open any Office 365 ProPlus program, go to the following folder:
   
-    %localappdata%\\Microsoft\\Office\\16.0\\Licensing
+  %localappdata%\Microsoft\Office\16.0\Licensing
   
 If activation succeeded, there are some text files in the folder, like in the following screenshot. Don't make any changes to these files.
   
