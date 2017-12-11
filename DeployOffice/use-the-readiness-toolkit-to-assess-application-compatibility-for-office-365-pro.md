@@ -170,11 +170,11 @@ The following table lists the possible severities that can appear in a readiness
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
 |DeviceName  <br/> |Name of the device where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
-|Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.1, 2 <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
+|Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.^1, 2^ <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
    
-1 For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
+^1^ For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
   
-2 **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
+^2^ **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
   
 ### Add-in report
 <a name="BKMK_AddinReport"> </a>
@@ -201,12 +201,12 @@ The following table lists the possible readiness statuses that you can see in th
 |Adopted  <br/> |This add-in is being used on Office 365 ProPlus in other organizations, but the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
 |Contact software provider  <br/> |This add-in might have issues with Office 365 ProPlus. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
 |Supported version available  <br/> |A supported version of this add-in for Office 365 ProPlus is available from the software provider.  <br/> |
-|Unknown1,2 <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
-|Insufficient data2 <br/> |Microsoft has seen this add-in but not enough information has been collected to provide a readiness status for this add-in.  <br/> |
+|Unknown^1,2^ <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
+|Insufficient data^2^ <br/> |Microsoft has seen this add-in but not enough information has been collected to provide a readiness status for this add-in.  <br/> |
    
-1 Some of the add-ins that ship by default with Office are currently flagged as Unknown in an add-in readiness report. These add-ins are actually Highly Adopted and are supported by Microsoft. Here are the names of those add-ins: ActionsPane Schema for Add-Ins, Analysis ToolPak, Analysis ToolPak - VBA, Date (XML), Conversation History Add-in for Microsoft Office 2016, Euro Currency Tools, Instant Messaging Contacts (English), Measurement Converter (Measurement Converter), Microsoft Actions Pane 3, Skype Meeting Add-in for Microsoft Office 2016, Solver Add-in, Telephone Number (XML), and Time (XML).
+^1^ Some of the add-ins that ship by default with Office are currently flagged as Unknown in an add-in readiness report. These add-ins are actually Highly Adopted and are supported by Microsoft. Here are the names of those add-ins: ActionsPane Schema for Add-Ins, Analysis ToolPak, Analysis ToolPak - VBA, Date (XML), Conversation History Add-in for Microsoft Office 2016, Euro Currency Tools, Instant Messaging Contacts (English), Measurement Converter (Measurement Converter), Microsoft Actions Pane 3, Skype Meeting Add-in for Microsoft Office 2016, Solver Add-in, Telephone Number (XML), and Time (XML).
   
-2 For more information, see [Possible steps to take for add-ins classified as "Unknown" or "Insufficient data"](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_UnknownInsufficient).
+^2^ For more information, see [Possible steps to take for add-ins classified as "Unknown" or "Insufficient data"](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_UnknownInsufficient).
   
  **Detailed add-in information:** The "Add-in Details" and "By computer name" tabs in the add-in report each contain similar columns of information. The following table provides a list of those columns, along with an explanation of what information is contained in those columns.
   
