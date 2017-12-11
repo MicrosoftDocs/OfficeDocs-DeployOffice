@@ -260,9 +260,9 @@ For on-premises products, your organization takes on most of the responsibility 
   
 Your responsibility for change management is based on the type of service. The following chart summarizes the balance of responsibility for both Microsoft and the customer for online services and on-premises software.
   
-||**Office 365 service**|**Office 365 clients**|**On-premises clients and servers**|
+
+|**Responsibility** <br/> |**Office 365 service<br/> Microsoft** <br/> |**Office 365 service<br/>Customer** <br/> |**Office 365 clients <br/>Microsoft** <br/> |**Office 365 clients <br/>Customer** <br/> |**On-premises clients and servers <br/> Microsoft** <br/> |**On-premises clients and servers <br/>Customer** <br/> |
 |:-----|:-----|:-----|:-----|
-|**Responsibility** <br/> |**Microsoft** <br/> |**Customer** <br/> |**Microsoft** <br/> |**Customer** <br/> |**Microsoft** <br/> |**Customer** <br/> |
 |Provide new functionality  <br/> |X  <br/> ||X  <br/> ||X  <br/> |X  <br/> |
 |Test new features for quality assurance  <br/> |X  <br/> ||X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |Communicate about new features  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
