@@ -39,7 +39,7 @@ In this article:
     
 - [Manage Update Deployments](change-management-for-office-365-clients.md#Manage)
     
-Download this information as a model poster in [Visio](https://go.microsoft.com/fwlink/?LinkId=626680) or[PDF](https://go.microsoft.com/fwlink/?LinkId=626681) format.
+Download this information as a model poster in [Visio](https://go.microsoft.com/fwlink/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/?LinkId=626681) format.
   
 ![Servicing model poster](images/f0f92823-29ae-443e-af36-d913c6ba6486.png)
   
@@ -79,7 +79,7 @@ Use the update option that's right for your devices and your business needs. We 
 |||||
 |:-----|:-----|:-----|:-----|
 |**Device type** <br/> |![Phones and tablets](images/7686c89d-eff0-4ab2-8b28-5eed68967351.png)|![Laptops and desktops](images/99e17d65-144f-442b-9181-9090ec421e48.png)|![Specialty systems](images/4b7f1d61-6020-4781-b5a4-d5f87ee03bc3.png)|
-|**Update option** <br/> |iOS or Android devices receive regular updates from their respective app stores. Devices running the Office Mobile apps automatically receive regular updates from the Microsoft Store.  <br/> For Windows 10 devices, use Semi-Annual Channel to get regular updates with the latest features.  <br/> |To get regular updates with the latest features, use Semi-Annual Channel for Windows 10 and Monthly Channel for Office 365.  <br/> Have custom add-ins? Choose Semi-Annual Channel for Office 365, so you have time to test. For Windows 10, use Semi-Annual Channel with a targeted group of devices before deploying broadly.  <br/> |To limit changes, use Long-Term Servicing Channel for Windows 10. If Office is needed, use Office Professional Plus 2016 (using MSI files).  <br/> Examples of specialized devices: PCs that control medical equipment, point-of-sale systems, or ATMs.  <br/> |
+|**Update option** <br/> |iOS or Android devices receive regular updates from their respective app stores. Devices running the Office Mobile apps automatically receive regular updates from the Microsoft Store.  <br/><br/> For Windows 10 devices, use Semi-Annual Channel to get regular updates with the latest features.  <br/> |To get regular updates with the latest features, use Semi-Annual Channel for Windows 10 and Monthly Channel for Office 365.  <br/> <br/>Have custom add-ins? Choose Semi-Annual Channel for Office 365, so you have time to test. For Windows 10, use Semi-Annual Channel with a targeted group of devices before deploying broadly.  <br/> |To limit changes, use Long-Term Servicing Channel for Windows 10. If Office is needed, use Office Professional Plus 2016 (using MSI files).  <br/><br/> Examples of specialized devices: PCs that control medical equipment, point-of-sale systems, or ATMs.  <br/> |
    
 #### Focus on your business, not managing the software.
 
@@ -123,7 +123,7 @@ By default, the client applications for Office 365 are set to these channel rele
     
 But you can determine which channel is used for your client applications, according to your business needs.
   
-For more information about the channels for Office 365 client applications, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+For more information about the channels for Office 365 client applications, see [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md).
   
 ### Which Release Channel?
 
@@ -150,7 +150,7 @@ It is important to keep both Windows and your Office clients up to date. Office 
 
 Windows 10 has three types of releases:
   
-- **Windows Insider Preview** Join the[Windows Insider](https://insider.windows.com/) program to evaluate and provide feedback on pre-release features, and perform application compatibility validation testing. New features are released frequently.
+- **Windows Insider Preview** Join the [Windows Insider](https://insider.windows.com/) program to evaluate and provide feedback on pre-release features, and perform application compatibility validation testing. New features are released frequently.
     
 - **Semi-Annual Channel** After new features have been tested through the Windows Insider program, they are released along with bug fixes and security patches as the Semi-Annual Channel. A new Semi-Annual Channel is released twice a year, around March and September, and is supported for 18 months. Start by deploying to a targeted group of devices that represent the broader organization.
     
@@ -174,7 +174,7 @@ Office 365 clients have the following types of releases:
     
 - **Semi-Annual Channel** The Semi-Annual Channel (Targeted) is rolled up and released as the Semi-Annual Channel every 6 months, in January and July. No new features are added until the next Semi-Annual Channel, although security updates will continue to be released. Each Semi-Annual Channel feature release is supported for an additional 14 months. This is the default channel for Office 365 ProPlus clients.
     
-Read [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md) for more information.
+Read [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md) for more information.
   
 The following illustration shows the relationships between these releases for Office 365 ProPlus. 
   
@@ -215,11 +215,11 @@ Not all changes have the same impact on your users or require action. Some are p
 |:-----|:-----|:-----|:-----|
 |**Type of change** <br/> | Feature updates <br/>  New features or applications <br/>  Deprecated features <br/> | Client hotfixes for issues <br/> | Security patches <br/> |
 |**Advance notice?** <br/> |30 days notice for changes that require action  <br/> |No, these are included in the monthly build for all channels  <br/> |No, these are included in the monthly build for all channels  <br/> |
-|**Communication channel** <br/> | Message Center <br/> [Office 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community <br/> | TechNet[Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkID=626090) page <br/> | Security bulletin or CVE <br/> |
+|**Communication channel** <br/> | Message Center <br/> [Office 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community <br/> | TechNet [Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkID=626090) page <br/> | Security bulletin or CVE <br/> |
 |**Requires tenant admin action?** <br/> |Sometimes  <br/> |Rarely  <br/> |Rarely  <br/> |
 |**What kind of action?** <br/> | Change settings <br/>  Communicate changes to users <br/>  Validate customizations <br/> | Change admin settings <br/> ||
 |**Requires testing?** <br/> |Rarely - check business critical Add-ins  <br/> |Sometimes - testing the fix against processes or customizations  <br/> |Rarely  <br/> |
-|**Examples of changes** <br/> | Feature updates: PowerPoint - simpler process for embedding videos <br/>  New features or applications: Skype for Business <br/> | Hotfixes based on customer reported bugs <br/> ||
+|**Examples of changes** <br/> | Feature updates: PowerPoint - simpler process for embedding videos <br/><br/>  New features or applications: Skype for Business <br/> | Hotfixes based on customer reported bugs <br/> ||
    
 ### Guidelines for managing change when using Office Add-ins:
 
@@ -289,7 +289,7 @@ Customer's role
   
 - Understand what to expect for changes and communications.
     
-- Read Message Center, [Office 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) and[Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) regularly.
+- Read Message Center, [Office 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) and [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) regularly.
     
 - Set up pilot teams to preview new functionality using Monthly Channel.
     
