@@ -1,8 +1,23 @@
 ---
 title: Configuration options for the Office 2016 Deployment Tool
-ms.prod: OFFICE365
+ms.author: jwhit
+author: jwhit-MSFT
+manager: laurawi
+ms.date: 12/12/2017
+ms.audience: ITPro
+ms.topic: concetpual
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom:
+- DeployProPlus
+- DeployProPlus_SOConly
+- Strat_O365_ProPlus
+- Ent_Office_ProPlus
 ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
+description: "Configuration options for the Office 2016 Deployment Tool"
 ---
+
 
 # Configuration options for the Office 2016 Deployment Tool
 With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).

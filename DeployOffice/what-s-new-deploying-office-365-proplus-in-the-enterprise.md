@@ -45,11 +45,10 @@ Previously, only users could use the Office 365 portal to view a list of which c
   
 In addition to Office 365 ProPlus installations, you can also view and manage installations of Visio Pro for Office 365, Project Professional 2010, and Office 2016 for Mac.
   
-## Related Topics
+## Related topics
 <a name="BKMK_Deactivate"> </a>
 
-[Configure updates of Office 365 ProPlus to prepare for the upgrade to the Office 2016 version](configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md)
-  
-[What's New and Improved in Office 2016](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426)
+- [Configure updates of Office 365 ProPlus to prepare for the upgrade to the Office 2016 version](configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md) 
+- [What's New and Improved in Office 2016](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426)
   
 
