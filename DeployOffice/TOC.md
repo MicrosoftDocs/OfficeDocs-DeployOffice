@@ -15,15 +15,14 @@
 ## [Manage updates with Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
 ## [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 ## [Overview of the update process](overview-of-the-update-process-for-office-365-proplus.md)
-## [Choose how to manage updates](choose-how-to-manage-updates-to-office-365-proplus.md)
-## [Configure update settings](configure-update-settings-for-office-365-proplus.md)
+## [Update history](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+## [Release notes](https://technet.microsoft.com/en-us/office/mt465751)
+
 
 # Upgrade 
-## [Overview of the upgrade of Office 365 ProPlus to the Office 2016 version](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md)
-## [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
-## [Configure updates of Office 365 ProPlus to prepare for the upgrade to the Office 2016 version](configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md)
-## [Upgrade from Office 365 ProPlus 2013 to 2016](upgrade-from-office-365-proplus-2013-to-2016.md)
 ## [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+## [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
+## [Upgrade from Office 2007](https://support.office.com/article/416c54d8-823c-4def-bb7a-6a9b14ef2745)
 
 # Reference
 ## [Overview of reference articles](reference-articles-for-deploying-office-365-proplus.md)
@@ -35,6 +34,8 @@
 ## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
 ## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 ## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
+## [Install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
+
 
 # Best practices
 ## [Overview of best practices](best-practices/best-practices.md)
@@ -53,7 +54,6 @@
 ## [Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 ## [Delay receiving feature updates from Deferred Channel for Office 365 ProPlus](delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md)
 ## [End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md)
-## [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Overview of best practices](best-practices/best-practices.md)
 ## [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
 ## [Best practices: Assessment - reference materials](best-practices/best-practices-assessmentreference-materials.md)
@@ -112,3 +112,9 @@
 ## [Best practices: Links for administration education](best-practices/best-practices-links-for-administration-education.md)
 ## [Best practices: Links for helpdesk and end user training](best-practices/best-practices-links-for-helpdesk-and-end-user-training.md)
 ## [Best practices: Group policy and Office 365 ProPlus](best-practices/best-practices-group-policy-and-office-365-proplus.md)
+## [Choose how to manage updates](choose-how-to-manage-updates-to-office-365-proplus.md)
+## [Configure update settings](configure-update-settings-for-office-365-proplus.md)
+## [Overview of the upgrade of Office 365 ProPlus to the Office 2016 version](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md)
+## [Configure updates of Office 365 ProPlus to prepare for the upgrade to the Office 2016 version](configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md)
+## [Upgrade from Office 365 ProPlus 2013 to 2016](upgrade-from-office-365-proplus-2013-to-2016.md)
+
