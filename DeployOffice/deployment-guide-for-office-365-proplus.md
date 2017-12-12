@@ -31,7 +31,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 - [Microsoft FastTrack for Office](http://fasttrack.microsoft.com/office)
   
-## Deployment
+## Deploy
 
 Learn about deployment options, how to deploy from a local source, and how to use System Center Configuration Manager to deploy Office 365 ProPlus. 
 
@@ -46,7 +46,7 @@ Learn about deployment options, how to deploy from a local source, and how to us
 - [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 
-## Update channels
+## Manage updates
 
 Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates. 
 
