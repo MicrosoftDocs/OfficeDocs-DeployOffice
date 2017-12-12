@@ -1,14 +1,13 @@
-
-  
+ 
 # Get started
-## [Overview of deploying Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
-## [What's new: Deploying Office 365 ProPlus](what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
+## [Deployment guide](deployment-guide-for-office-365-proplus.md)
+## [About Office 365 ProPlus](about-office-365-proplus-in-the-enterprise.md)
 
 # Deploy
 ## [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md)
-## [Deploy Office from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
+## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
+## [Deploy with Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 # Manage updates
 ## [Overview of changes to update management](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md)
@@ -19,29 +18,43 @@
 ## [Choose how to manage updates](choose-how-to-manage-updates-to-office-365-proplus.md)
 ## [Configure update settings](configure-update-settings-for-office-365-proplus.md)
 
-# Reference
-## [Reference articles for deploying Office 365 ProPlus](reference-articles-for-deploying-office-365-proplus.md)
-## [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
-## [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-## [Proofing Tools for Office 365 ProPlus](proofing-tools-for-office-365-proplus.md)
-## [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
-## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
-## [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
-## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
-## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
-## [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
-## [Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
+# Upgrade 
 ## [Overview of the upgrade of Office 365 ProPlus to the Office 2016 version](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md)
 ## [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
 ## [Configure updates of Office 365 ProPlus to prepare for the upgrade to the Office 2016 version](configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md)
 ## [Upgrade from Office 365 ProPlus 2013 to 2016](upgrade-from-office-365-proplus-2013-to-2016.md)
+## [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+
+# Reference
+## [Overview of reference articles](reference-articles-for-deploying-office-365-proplus.md)
+## [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+## [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
+## [Proofing Tools](proofing-tools-for-office-365-proplus.md)
+## [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
+## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
+## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
+
+# Best practices
+## [Overview of best practices](best-practices/best-practices.md)
+## [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
+## [Best practices: Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
+## [Best practices: Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
+## [Best practices: Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
+## [Best practices: Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
+## [Best practices: Enterprise managed scenario](best-practices/best-practices-enterprise-managed-scenario.md)
+## [Best practices: Locally managed scenario](best-practices/best-practices-locally-managed-scenario.md)
+## [Best practices: Cloud managed scenario](best-practices/best-practices-cloud-managed-scenario.md)
+## [Best practices: Deployment resources](best-practices/best-practices-deployment-resources.md)
+
+# Extra--will cut this section before going live
+## [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
+## [Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 ## [Delay receiving feature updates from Deferred Channel for Office 365 ProPlus](delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md)
 ## [End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md)
 ## [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
-## [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
-
-# Best practices
-## [Best practices](best-practices/best-practices.md)
+## [Overview of best practices](best-practices/best-practices.md)
 ## [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
 ## [Best practices: Assessment - reference materials](best-practices/best-practices-assessmentreference-materials.md)
 ## [Best practices: Focus areas for assessment](best-practices/best-practices-focus-areas-for-assessment.md)
