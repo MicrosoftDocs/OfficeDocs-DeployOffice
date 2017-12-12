@@ -18,7 +18,6 @@
 ## [Update history](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
 ## [Release notes](https://technet.microsoft.com/en-us/office/mt465751)
 
-
 # Upgrade 
 ## [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
 ## [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)

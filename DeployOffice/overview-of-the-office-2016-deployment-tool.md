@@ -57,14 +57,13 @@ Follow these steps to download installation files for Office 365 ProPlus from th
   
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
   
-In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus 2016 and Visio Pro for Office 365 to \\\\server\\share on your network:
+In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus 2016 and Visio Pro for Office 365 to \\server\share on your network:
   
 ```
 <Configuration> 
-  <Add SourcePath="\\\\server\\share" OfficeClientEdition="32"> 
+  <Add SourcePath="\\server\share" OfficeClientEdition="32"> 
    <Product ID="O365ProPlusRetail" > 
      <Language ID="en-us" />      
-           
    </Product> 
    <Product ID="VisioProRetail" > 
      <Language ID="en-us" />      
@@ -91,11 +90,11 @@ After running the command, go to the download location you defined in the config
 
 You can use the Office 2016 Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network instead of from the Office Content Delivery Network (CDN). By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
   
-To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus 2016 from **\\\\servera\\share** (the DownloadPath) to **\\\\serverb\\share** (the SourcePath):
+To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus 2016 from **\\servera\share** (the DownloadPath) to **\\serverb\share** (the SourcePath):
   
 ```
 <Configuration> 
-  <Add SourcePath="\\\\serverb\\share" OfficeClientEdition="32" Version="16.0.6741.2056" DownloadPath="\\\\servera\\share"> 
+  <Add SourcePath="\\serverb\share" OfficeClientEdition="32" Version="16.0.6741.2056" DownloadPath="\\servera\share"> 
     <Product ID="O365ProPlusRetail" > 
       <Language ID="en-us" />      
     </Product> 
@@ -119,7 +118,7 @@ In this example, the configuration file installs a 32 bit English edition of Off
   
 ```
 <Configuration> 
-  <Add SourcePath="\\\\Server\\share" OfficeClientEdition="32">
+  <Add SourcePath="\\Server\share" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
       <Language ID="en-us" />        
       <ExcludeApp ID="Publisher" />
@@ -130,7 +129,7 @@ In this example, the configuration file installs a 32 bit English edition of Off
 
 ```
 
-The location of the Office installation files is **\\\\server\\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
+The location of the Office installation files is **\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
   
 For more information about the configuration options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
@@ -144,7 +143,7 @@ You must run the executable from the client computer on which you want to instal
   
  **Step 3: Verify that installation was successful**
   
-After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\\temp directories.
+After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\temp directories.
   
 ## Update Office 365 ProPlus
 <a name="BKMK_updateoffice"> </a>
@@ -155,9 +154,9 @@ You can use the Office 2016Deployment Tool to make updates to your client comput
     
 - Use the ODT to download the Office installation files and then point your client computers to that location to receive their updates. (By default, clients are updated directly from the Office Content Delivery Network (CDN).)
     
-To change where your client computers receive their updates, run the ODT in configure mode and specify an update path in the configuration file. For example, to have Office 365 ProPlus get updates automatically from a network share called **\\\\server\\updates**, include the following line in your configuration.xml file:
+To change where your client computers receive their updates, run the ODT in configure mode and specify an update path in the configuration file. For example, to have Office 365 ProPlus get updates automatically from a network share called **\\server\updates**, include the following line in your configuration.xml file:
   
- `<Updates Enabled="TRUE" UpdatePath="\\\\server\\updates" />`
+ `<Updates Enabled="TRUE" UpdatePath="\\server\updates" />`
   
 This article does not cover all the issues related to managing updates for Office in your organization. For more information on that end-to-end scenario, including using Group Policy, see [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md).
   
@@ -167,7 +166,7 @@ This article does not cover all the issues related to managing updates for Offic
 When installing Office 365 ProPlus, you can exclude specific products. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus products except Publisher:
   
 ```
-<Add SourcePath="\\\\Server\\share" Version="15.1.2.3" OfficeClientEdition="32">
+<Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" >
       <Language ID="en-us" />
       <ExcludeApp ID="Publisher" />
@@ -255,7 +254,7 @@ You must run the executable from the client computer on which you want to instal
 
 In addition to downloading and deploying Office 365 ProPlus, you can use the Office 2016 Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer with a clean install of the operating system.
   
-This article does not cover all the issues related to deploying App-V packages. For more information on that end-to-end scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://technet.microsoft.com/en-us/library/mt590515.aspx).
+This article does not cover all the issues related to deploying App-V packages. For more information on that end-to-end scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
   
  **Step 1: Create the configuration file**
   
@@ -265,7 +264,7 @@ In this example, the configuration file creates an App-V package from a 32-bit E
   
 ```
 <Configuration> 
- <Add SourcePath="\\\\Server\\share" OfficeClientEdition="32">
+ <Add SourcePath="\\Server\share" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
       <Language ID="en-us" />        
       <ExcludeApp ID="Publisher" />
@@ -275,21 +274,21 @@ In this example, the configuration file creates an App-V package from a 32-bit E
 
 ```
 
-The location of the Office installation files is \\\\server\\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
+The location of the Office installation files is \\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
   
  **Step 2: Run the ODT executable in packager mode**
   
-From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you just saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\\\server\\share\\appv\\**:
+From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you just saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\server\share\appv\**:
   
- `setup.exe /packager packageconfig.xml \\\\server\\share\\appv\\`
+ `setup.exe /packager packageconfig.xml \\server\share\appv\`
   
  **Step 3: Verify that the package was created**
   
 After running the command, the package location should have an App-V Packages folder and a WorkingDir folder. You can troubleshoot issues by reviewing the log file in the %temp% directory.
   
-## Related Topics
+## Related topics
 <a name="BKMK_createanappvpackage"> </a>
 
-[Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   
 

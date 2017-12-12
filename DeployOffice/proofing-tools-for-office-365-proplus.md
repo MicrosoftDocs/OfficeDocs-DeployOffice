@@ -36,7 +36,7 @@ To install the Proofing Tools on a single computer, you can run the setup.exe di
 |**Command**|**Description**|
 |:-----|:-----|
 | `setup.exe /extract` <br/> |Extracts the contents of the package to the same folder as setup.exe.  <br/> |
-| `setup.exe /log:[path to log file]` <br/> |Turns on verbose logging and stores it in the specified file. Example:  `\\\\server\\log.txt` <br/> |
+| `setup.exe /log:[path to log file]` <br/> |Turns on verbose logging and stores it in the specified file. Example:  `\\server\log.txt` <br/> |
 | `setup.exe /quiet` <br/> |Installs the update without displaying the user interface during the install. The Microsoft Software License Terms are accepted automatically.  <br/> |
 | `setup.exe /passive` <br/> |Installs the update without requesting any interaction from the user. The Microsoft Software License Terms are accepted automatically.  <br/> |
    
@@ -191,8 +191,7 @@ The following table lists the link for the proofing tool download in all availab
 |Yoruba  <br/> |yo-ng  <br/> |[x86](https://download.microsoft.com/download/1/D/B/1DBAEB2B-7648-47A5-8F26-7B9F9814E959/proofingtools2016_yo-ng-x86.exe), [x64](https://download.microsoft.com/download/1/D/B/1DBAEB2B-7648-47A5-8F26-7B9F9814E959/proofingtools2016_yo-ng-x64.exe) <br/> |
    
 ## Related Topics
-<a name="BKMK_LinksToDownloadsForProofingTools"> </a>
 
-[Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
+- [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
   
 
