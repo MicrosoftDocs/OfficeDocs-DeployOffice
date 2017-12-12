@@ -38,15 +38,15 @@
 
 # Best practices
 ## [Overview of best practices](best-practices/best-practices.md)
-## [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
-## [Best practices: Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
-## [Best practices: Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
-## [Best practices: Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
-## [Best practices: Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
-## [Best practices: Enterprise managed scenario](best-practices/best-practices-enterprise-managed-scenario.md)
-## [Best practices: Locally managed scenario](best-practices/best-practices-locally-managed-scenario.md)
-## [Best practices: Cloud managed scenario](best-practices/best-practices-cloud-managed-scenario.md)
-## [Best practices: Deployment resources](best-practices/best-practices-deployment-resources.md)
+## [Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
+## [Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
+## [Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
+## [Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
+## [Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
+## [Enterprise managed scenario](best-practices/best-practices-enterprise-managed-scenario.md)
+## [Locally managed scenario](best-practices/best-practices-locally-managed-scenario.md)
+## [Cloud managed scenario](best-practices/best-practices-cloud-managed-scenario.md)
+## [Deployment resources](best-practices/best-practices-deployment-resources.md)
 
 # Extra--will cut this section before going live
 ## [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
