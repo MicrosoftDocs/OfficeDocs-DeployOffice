@@ -76,7 +76,7 @@ If you want to control when Office is upgraded, we recommend that you configure 
 - Use the Office Deployment Tool and include the following line in the configuration.xml file:
     
   ```
-  <Updates Enabled="TRUE" UpdatePath="\\Server\\Share\"  />
+  <Updates Enabled="TRUE" UpdatePath="\\Server\Share\"  />
   ```
 
     Replace \\\\Server\\Share with the location on your network. Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
