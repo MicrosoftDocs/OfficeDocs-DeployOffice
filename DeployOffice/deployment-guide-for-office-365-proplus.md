@@ -41,9 +41,10 @@ Learn about deployment options, how to deploy from a local source, and how to us
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (version 1702)](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+- [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-- [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+
 
 
 ## Manage updates
