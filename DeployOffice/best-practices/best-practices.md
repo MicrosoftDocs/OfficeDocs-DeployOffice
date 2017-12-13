@@ -22,15 +22,15 @@ The Best Practices Guide includes deployment recommendations and real-world exam
   
 ## Best Practices for deploying Office 365 ProPlus
 
- - [Best practices: Assessing your infrastructure](best-practices-assessing-your-infrastructure.md) Key infrastructure assessment components and app compatibility discovery processes.
+ - [Best practices: Assessing your infrastructure](best-practices-assessing-your-infrastructure.md): Key infrastructure assessment components and app compatibility discovery processes.
   
- - [Best practices: Planning your deployment of Office 365 ProPlus](best-practices-planning-your-deployment-of-office-365-proplus.md) What to consider when creating a deployment plan.
+ - [Best practices: Planning your deployment of Office 365 ProPlus](best-practices-planning-your-deployment-of-office-365-proplus.md): What to consider when creating a deployment plan.
   
- - [Best practices: Deploying Office 365 ProPlus](best-practices-deploying-office-365-proplus.md) The preferred deployment options and high-level descriptions of the architecture components.
+ - [Best practices: Deploying Office 365 ProPlus](best-practices-deploying-office-365-proplus.md): The preferred deployment options and high-level descriptions of the architecture components.
   
- - [Best practices: Managing updates in Office 365 ProPlus](best-practices-managing-updates-in-office-365-proplus.md) Details on channel management in Office 365 ProPlus.
+ - [Best practices: Managing updates in Office 365 ProPlus](best-practices-managing-updates-in-office-365-proplus.md): Details on channel management in Office 365 ProPlus.
   
- - [Best practices: Recommended deployment scenarios](best-practices-recommended-deployment-scenarios.md) The three preferred deployment options for delivering Office 365 ProPlus to client devices.
+ - [Best practices: Recommended deployment scenarios](best-practices-recommended-deployment-scenarios.md): The three preferred deployment options for delivering Office 365 ProPlus to client devices.
   
- - [Best practices: Implementing group policy](best-practices-implementing-group-policy.md) The recommended Group Policy settings for deploying Office 365 ProPlus.
+ - [Best practices: Implementing group policy](best-practices-implementing-group-policy.md): The recommended Group Policy settings for deploying Office 365 ProPlus.
   

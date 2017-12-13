@@ -20,13 +20,11 @@ ms.assetid: e471ef30-2a09-4767-a172-aa74e1dc4686
 
 # Choose how to deploy Office 365 ProPlus
 
-## 
-
-- [Deploy with System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates): How to deploy Office 365 ProPlus with Configuration Manager version 1702. For how to deploy with earlier versions , see[Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates): How to deploy Office 365 ProPlus with Configuration Manager version 1702. For how to deploy with earlier versions , see [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-system-center-configuration-manager.md)
   
- - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md): Step-by-step instructions for deploying Office 365 ProPlus from a shared folder on your network with the Office 2016 Deployment Tool.
+- [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md): Step-by-step instructions for deploying Office 365 ProPlus from a shared folder on your network with the Office 2016 Deployment Tool.
   
- - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md): Step-by-step instructions for deploying Office 365 ProPlus from the Office CDN with the Office 2016 Deployment Tool.
+- [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md): Step-by-step instructions for deploying Office 365 ProPlus from the Office CDN with the Office 2016 Deployment Tool.
   
 ## How to choose
 
