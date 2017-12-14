@@ -18,10 +18,8 @@ description: "The Best Practices for Office 365 ProPlus Deployment has been crea
 ---
 
 # Best practices: Assessment - reference materials
-[![Help for Office 365 IT Pros](../images/0d973495-46cc-42dc-a26e-87933e8b0a6b.png)
-  
-](http://technet.microsoft.com/library/6e18d402-f35e-415a-83b1-56620d4074ff%28Office.14%29.aspx)
- *The Best Practices for Office 365 ProPlus Deployment has been created by a team of subject matter experts from the Office 365 Product Group, Office 365 Product Marketing Group, and delivery experts from Microsoft Services. The recommendations include application discovery, deployment, channel management, and reporting. For a list of all the best practices articles, see [Best practices: Recommended deployment scenarios](best-practices-recommended-deployment-scenarios.md).* 
+
+*The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see [Best practices](best-practices.md)* 
   
 The following articles provide deeper technical information on specific areas of the assessment phase that are not covered in depth in the customer scenarios.
   
