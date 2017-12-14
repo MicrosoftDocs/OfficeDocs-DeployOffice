@@ -56,12 +56,12 @@ This configuration file includes the most-commonly used elements and attributes,
 |:-----|:-----|
 |Add SourcePath="\\Server\Share"  <br/> |Office will be downloaded to "\\server\share" on your network and deployed using installation files at that location.  <br/> |
 |Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
-|Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel (also called the Broad Channel).  <br/> |
+|Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Office 365 ProPlus.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
 |Updates UpdatePath="\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
-|Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel (also called the Broad Channel).  <br/> |
+|Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
    
