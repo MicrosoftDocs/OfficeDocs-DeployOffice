@@ -145,7 +145,7 @@ The name of the Group Policy setting is Update Channel. You can find this policy
   
 You can also provide users with Semi-Annual Channel (Targeted) by selecting them for the [First Release program for Office 365](https://support.office.com/article/3B3ADFA4-1777-4FF0-B606-FB8732101F47). If you do this, those users can install Semi-Annual Channel (Targeted) directly from the **Software** page in the Office 365 portal.
  
-<a name="BKMK_Configure"> </a>
+<a name="BKMK_AddInfo"> </a>
 ## Additional information about the update channels for Office 365 ProPlus
 
 
