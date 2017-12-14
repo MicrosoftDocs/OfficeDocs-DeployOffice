@@ -43,15 +43,15 @@ Before you upgrade your users to the Office 2016 version, we recommend that you 
     
 - [Prepare to support additional languages](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md#BKMK_Languages)
     
-## Review the system requirements for Office 365 ProPlus
 <a name="BKMK_SysReqs"> </a>
+## Review the system requirements for Office 365 ProPlus
 
 With any new software release, you should [review the system requirements](https://products.office.com/office-system-requirements) to ensure that your computers meet those requirements. For example, for Office 2016, the minimum requirement is now 2 GB of RAM.
   
 Another important change to be aware of is that Outlook 2016 doesn't support connecting to Exchange Server 2007.
-  
+ 
+<a name="BKMK_Channel"> </a> 
 ## Determine which update channel to use for Office 365 ProPlus
-<a name="BKMK_Channel"> </a>
 
 In Office 2016, you can control how fast your users receive feature updates to Office 365 ProPlus. One choice is a monthly update to Office 365 ProPlus, which can contain new or updated features, security updates, and non-security updates, such as updates that provide stability or performance improvements for Office. This is called the Monthly Channel release.
   
@@ -60,9 +60,9 @@ If your organization doesn't want to deploy the latest features of Office right 
 To help your organization prepare for a Semi-Annual Channel release, Microsoft provides Semi-Annual Channel (Targeted). This update channel is provided approximately four months before the availability of the next Semi-Annual Channel. The primary purpose of this update channel is to give pilot users and application compatibility testers in your organization a chance to work with the upcoming Semi-Annual Channel release. During this time, you might identify possible issues that you need to fix with your line-of-business applications, add-ins, or macros or that you want Microsoft to fix.
   
 For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
-  
+ 
+<a name="BKMK_ODT"> </a> 
 ## Download the latest Office Deployment Tool to deploy Office 365 ProPlus
-<a name="BKMK_ODT"> </a>
 
 In order to support new deployment capabilities available for the Office 2016 version of Office 365 ProPlus, there is a new version of the Office Deployment Tool. You can [download this new version](http://go.microsoft.com/fwlink/p/?LinkID=626065) from the Microsoft Download Center. The configuration.xml file used by the latest Office Deployment Tool supports new settings that allow you to configure the following:
   
@@ -71,21 +71,21 @@ In order to support new deployment capabilities available for the Office 2016 ve
 - Which language accessory packs to install
     
 Also, be aware that the new version of the Office Deployment Tool can't be used to deploy the Office 2013 version of Office 365 ProPlus. You can continue to [use the previous version of the Office Deployment Tool](http://www.microsoft.com/download/details.aspx?id=36778) for those deployments.
-  
-## Copy existing Group Policy settings for Office 365 ProPlus
+ 
 <a name="BKMK_GP"> </a>
+## Copy existing Group Policy settings for Office 365 ProPlus
 
 As with any new version of Office, there is a new set of Administrative Template files (ADMX/ADML) for Group Policy settings. You can [download the Administrative Template files](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
   
 We've added some new settings, but maintained most of the existing Group Policy settings to help minimize changes you need to make. However, the registry location for the Group Policy settings has changed, so you need to copy your existing Group Policy settings to account for this change. All Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0 and HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Office\\16.0, where 16.0 is the designation for Office 2016. For Office 2013, the Group Policy settings are located in keys named 15.0.
-  
+ 
+<a name="BKMK_Bandwidth"> </a> 
 ## Review the network bandwidth implications of upgrading Office 365 ProPlus
-<a name="BKMK_Bandwidth"> </a>
 
 The installation files for Office 365 ProPlus are approximately 850 mb for the core files plus approximately 200 mb for each language deployed. Because of the underlying changes between the Office and Office 2016 versions of Office 365 ProPlus, the upgrade process takes longer and requires the entire Office 2016 build to be downloaded to users' computers. This will affect network bandwidth and is something that should be considered as part of your upgrade plan.
   
-## Understand how long you can continue to use the Office 2013 version of Office 365 ProPlus
 <a name="BKMK_Office2013"> </a>
+## Understand how long you can continue to use the Office 2013 version of Office 365 ProPlus
 
 Support for the Office 2016 version of Office 365 ProPlus ended on February 28, 2017. Therefore, we recommend that you upgrade to the Office 2016 version of Office 365 ProPlus as soon as possible. For more information, see Microsoft Knowledge Base (KB) article [3199744](https://support.microsoft.com/kb/3199744).
   
@@ -94,9 +94,9 @@ If you choose to continue to deploy the Office 2016 version of Office 365 ProPlu
 - Continue to use the [Office 2013 version of the Office Deployment Tool](http://www.microsoft.com/download/details.aspx?id=36778).
     
 - Make sure that your users' computers are configured to get updates from a location on your internal network. You can configure this either by using the Office Deployment Tool or by using Group Policy and the **Update Path** policy setting,
-    
-## Understand when upgrades to Office 365 ProPlus will occur
+ 
 <a name="BKMK_WhenUpdates"> </a>
+## Understand when upgrades to Office 365 ProPlus will occur
 
 The way that the users in your organization receive the upgrade to Office 2016 depends on where you've configured Office 365 ProPlus to get updates.
   
@@ -105,9 +105,9 @@ The way that the users in your organization receive the upgrade to Office 2016 d
     If you don't want these users to be upgraded, configure them to get updates from a location on your internal network. You can configure this either by using the Office Deployment Tool or by using Group Policy and the **Update Path** policy setting.
     
 - **From a location on your internal network** If you've configured your users to get updates from a location on your internal network, then the upgrade to Office 2016 is under your control. When you're ready to upgrade your users, use the [Office 2016 version of the Office Deployment Tool](http://go.microsoft.com/fwlink/p/?LinkID=626065) to download the Office 2016 version of Office 365 ProPlus. Then, you'll need to use the Office Deployment Tool to install the Office 2016 version to your users. Just copying the Office 2016 files to the update location on your internal network isn't enough. You need to initiate the installation with the Office Deployment Tool to get Office 365 ProPlus to upgrade to the Office 2016 version. If you had certain configuration settings implemented for your 2013 installation, such as excluding certain apps from being installed or enabling shared computer activation, be sure that your configuration.xml file for the 2016 installation includes those same configuration settings.
-    
+ 
+<a name="BKMK_Languages"> </a>   
 ## Prepare to support additional languages with Office 365 ProPlus
-<a name="BKMK_Languages"> </a>
 
 There is a change to the way additional languages are deployed in the Office 2016 version of Office 365 ProPlus. Previously, in Office, you could deploy an MSI-based language pack after you installed Office 365 ProPlus, even though those language packs weren't specifically designed to be used with Office 365 ProPlus. In Office 2016, using those language packs is no longer supported.
   
@@ -120,19 +120,19 @@ There are two ways to install language accessory packs:
 - Use the Office Deployment Tool to deploy the appropriate language accessory packs to your users
     
 You can't just install a language accessory pack by itself. It needs to be installed along with or after Office 365 ProPlus has been installed in one of the 40 base languages.
-  
-## Additional planning considerations for upgrading Office 365 ProPlus
+ 
 <a name="BKMK_Additional"> </a>
+## Additional planning considerations for upgrading Office 365 ProPlus
 
 The following are some additional considerations that you may need to take into account as you develop your plan to upgrade the users in your organization to the Office 2016 version of Office 365 ProPlus.
-  
-### Support policy for installing other versions of Office side-by-side with Office 365 ProPlus
+ 
 <a name="BKMK_SidebySide"> </a>
+### Support policy for installing other versions of Office side-by-side with Office 365 ProPlus
 
 You can't have the Office 2013 and the Office 2016 version of Office 365 ProPlus installed on the same computer. Also, you can't have a volume licensed version of Office 2016 installed on the same computer as the Office 2016 version of Office 365 ProPlus.
-  
-### Visio and Project versions that can be installed on the same computer with Office 365 ProPlus
+ 
 <a name="BKMK_VisioProject"> </a>
+### Visio and Project versions that can be installed on the same computer with Office 365 ProPlus
 
 You can't have a volume licensed version of Visio 2016 or Project 2016 installed on the same computer as the Office 2016 version of Office 365 ProPlus.
   
@@ -140,14 +140,15 @@ Also, if there is a 2013 version of Visio Pro for Office 365 or Project Online D
   
 > [!IMPORTANT]
 > If you have a volume licensed version of Visio 2016 or Project 2016 installed on the computer, it won't be removed from the computer during the upgrade of Office 365 ProPlus. You can continue to use the volume licensed version of Visio 2016 or Project 2016 on the computer with the Office 2016 version of Office 365 ProPlus. 
-  
-### Removal of InfoPath from Office 365 ProPlus
+
 <a name="BKMK_InfoPath"> </a>
+### Removal of InfoPath from Office 365 ProPlus
 
 [InfoPath 2013 remains the current version](https://blogs.office.com/2014/01/31/update-on-infopath-and-sharepoint-forms/) and therefore won't be included in the Office 2016 version of Office 365 ProPlus. When you upgrade an existing installation of Office 365 ProPlus to the Office 2016 version, InfoPath is removed from the computer. If your users still need to use InfoPath, the previous version will be available for installation on the **Software** page in the Office 365 portal.
-  
+ 
+<a name="BKMK_Related"> </a>
 ## Related Topics
-<a name="BKMK_Additional"> </a>
+
 
 [What's new: Deploying Office 365 ProPlus in the enterprise](what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
   
