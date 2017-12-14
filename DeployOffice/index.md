@@ -6,7 +6,7 @@ description: Office deployment
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Office documentation for admins and IT pros</h1>
+        <h1>Office deployment</h1>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
