@@ -35,8 +35,9 @@ One of the benefits of Office 365 ProPlus is that Microsoft can provide new feat
   
 Which update channel you decide to deploy to your users depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time there is an updated version of Office 365 ProPlus. To help you make this decision, review the following information about the three update channels that are available for Office 365 ProPlus.
   
-## Monthly Channel for Office 365 ProPlus
 <a name="BKMK_MC"> </a>
+## Monthly Channel for Office 365 ProPlus
+
 
 Monthly Channel might be the right choice for your organization in the following situations:
   
