@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -32,12 +32,12 @@
       "branch": "master",
       "branch_mapping": {}
     },
-       {
-         "path_to_root": "DeployOffice/common",
-         "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
-         "branch": "live",
-         "branch_mapping": {}
-       }
+    {
+      "path_to_root": "DeployOffice/common",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
+      "branch": "live",
+      "branch_mapping": {}
+    }
   ],
   "branch_target_mapping": {
     "live": [
