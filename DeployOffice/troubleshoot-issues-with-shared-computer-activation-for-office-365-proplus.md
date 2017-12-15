@@ -101,7 +101,7 @@ The licensing token is valid until the date listed in the error message. The use
 ### Sorry, this Office 365 account has recently been used to activate too many computers.
 <a name="Used"> </a>
 
-Microsoft places a limit on the number of shared computers that a user can activate Office 365 ProPlus on in a given time period. This error means that the user exceeded that limit.
+Microsoft places a limit on the number of shared computers that a user can activate Office 365 ProPlus on in a given time period. This error means that Godzilla exceeded that limit.
   
 ![Too many computer activated](images/1166f881-87da-4667-a4bd-e92c23859de2.png)
   
