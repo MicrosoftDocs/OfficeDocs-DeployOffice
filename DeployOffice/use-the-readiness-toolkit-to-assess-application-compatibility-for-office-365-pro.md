@@ -20,7 +20,7 @@ description: "The Readiness Toolkit for Office add-ins and VBA can help you iden
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119).
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.17353, and was released on December 21, 2017. We recommend that you always download and use the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -133,6 +133,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 |Cloud-based  <br/> |The file couldn't be scanned because it is saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location.  <br/> |
 |Password protected  <br/> |The file is password protected so it couldn't be scanned for VBA macros.  <br/> |
 |Inaccessible  <br/> |The file couldn't be scanned for some reason, such as the Readiness Report Creator had insufficient permission to access the file, the file is corrupted, or the file uses a very old Office file format.  <br/> |
+|Inaccessible - Driver required <br/> |The file couldn't be scanned because the required Microsoft Access Database Engine 2010 isn't installed on the computer performing the scan. <br/> |
 |Locked  <br/> |The file was locked or in use when the scan was performed.  <br/> |
 |Error  <br/> |The VBA code stream trying to be read during the scan wasn't in a valid format. Sometimes opening, and then saving, the file in a supported Office version will allow the Readiness Report Creator to scan the file.  <br/> |
    
@@ -199,6 +200,7 @@ The following table lists the possible readiness statuses that you can see in th
 |:-----|:-----|
 |Highly adopted  <br/> |This add-in is being widely used on Office 365 ProPlus in other organizations, and is ready for use with Office 365 ProPlus. But, the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
 |Adopted  <br/> |This add-in is being used on Office 365 ProPlus in other organizations, but the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
+|Adopted version available <br/> |A different version of this add-in is either “Adopted” or “Highly Adopted” on Office 365 ProPlus. <br/> |
 |Contact software provider  <br/> |This add-in might have issues with Office 365 ProPlus. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
 |Supported version available  <br/> |A supported version of this add-in for Office 365 ProPlus is available from the software provider.  <br/> |
 |Unknown<sup>1,2</sup> <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
