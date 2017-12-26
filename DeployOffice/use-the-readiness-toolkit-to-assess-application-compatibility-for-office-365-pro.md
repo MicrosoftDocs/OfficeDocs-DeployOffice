@@ -199,6 +199,7 @@ The following table lists the possible readiness statuses that you can see in th
 |:-----|:-----|
 |Highly adopted  <br/> |This add-in is being widely used on Office 365 ProPlus in other organizations, and is ready for use with Office 365 ProPlus. But, the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
 |Adopted  <br/> |This add-in is being used on Office 365 ProPlus in other organizations, but the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
+|Adopted version available <br/> |A different version of this add-in is either “Adopted” or “Highly Adopted” on Office 365 ProPlus. <br/> |
 |Contact software provider  <br/> |This add-in might have issues with Office 365 ProPlus. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
 |Supported version available  <br/> |A supported version of this add-in for Office 365 ProPlus is available from the software provider.  <br/> |
 |Unknown<sup>1,2</sup> <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
