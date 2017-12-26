@@ -133,6 +133,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 |Cloud-based  <br/> |The file couldn't be scanned because it is saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location.  <br/> |
 |Password protected  <br/> |The file is password protected so it couldn't be scanned for VBA macros.  <br/> |
 |Inaccessible  <br/> |The file couldn't be scanned for some reason, such as the Readiness Report Creator had insufficient permission to access the file, the file is corrupted, or the file uses a very old Office file format.  <br/> |
+|Inaccessible - Driver required <br/> |The file couldn't be scanned because the required Microsoft Access Database Engine 2010 isn't installed on the computer performing the scan. <br/> |
 |Locked  <br/> |The file was locked or in use when the scan was performed.  <br/> |
 |Error  <br/> |The VBA code stream trying to be read during the scan wasn't in a valid format. Sometimes opening, and then saving, the file in a supported Office version will allow the Readiness Report Creator to scan the file.  <br/> |
    
