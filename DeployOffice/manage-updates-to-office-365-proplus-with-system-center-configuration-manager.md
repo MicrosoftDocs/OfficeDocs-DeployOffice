@@ -49,6 +49,8 @@ To enable Configuration Manager to manage Office 365 client updates, you need th
     
     You can't use WSUS by itself to deploy these updates. You need to use WSUS in conjunction with Configuration Manager
     
+- The hierarchy's top level WSUS server and the top level Configuration Manager site server must have internet access.  
+
 - On the computers that have the Office 365 client installed, the [Office COM object is enabled](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md#BKMK_EnableClient).
     
 <a name="BKMK_EnableCM"> </a>
