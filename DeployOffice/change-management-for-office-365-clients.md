@@ -29,7 +29,7 @@ In this article:
   
 - [A Servicing Model for Updates](change-management-for-office-365-clients.md#ServicingModel)
     
-- [Release Options](change-management-for-office-365-clients.md#Branches)
+- [Release Options](change-management-for-office-365-clients.md#Options)
     
 - [Release Cadences](change-management-for-office-365-clients.md#Cadence)
     
@@ -43,8 +43,8 @@ Download this information as a model poster in [Visio](https://go.microsoft.com/
   
 ![Servicing model poster](images/f0f92823-29ae-443e-af36-d913c6ba6486.png)
   
-## A Servicing Model for Updates
 <a name="ServicingModel"> </a>
+## A Servicing Model for Updates
 
 Both Windows 10 and Office 365 have adopted the servicing model for client updates. This means that new features, non-security updates, and security updates are released regularly, so your users can have the latest functionality and improvements. The servicing model also includes time for enterprise organizations to test and validate releases before adopting them.
   
@@ -94,8 +94,8 @@ The following table explains ways you can focus on your business, not managing t
 |**Manage risk** <br/> |To test critical line-of-business applications, use Semi-Annual Channel or Semi-Annual Channel (Targeted) for Office 365. For Windows 10, use Semi-Annual Channel with a targeted group of devices before deploying broadly.  <br/> |
 |**Save on development** <br/> |First, check the marketplace - others may have a solution that works. If you need custom development, use best practices to ensure add-ins work after updates.  <br/> |
    
+<a name="Options"> </a>
 ## Release Options
-<a name="Branches"> </a>
 
 You need to understand the different release options for Windows 10 and the Office 365 client applications so you can choose the right options for your business. You decide what works and choose the combinations of releases to support for your organization. This section provides an overview and helps you choose.
   
@@ -140,9 +140,9 @@ This table shows the release channels for Windows 10 and Office 365 clients.
 |**Long-Term Servicing Channel** is intended for specialized devices, where limiting changes to the operating system is of prime importance. For example, PCs that control medical equipment, point-of-sale systems, or ATMs. <br/> |No  <br/> |Yes  <br/> |
    
 The release channels at the top of the table provide the freshest features, those at the bottom provide the most administrative control. Freshness indicates rapid access to new features and the ability to provide feedback to Microsoft. You'll sacrifice features for extra control - use the most controlled options for specialized devices, such as devices used on factory floors, for air traffic control, or in emergency rooms. Semi-Annual Channel for Office 365 offers a balance between new features and control. 
-  
+ 
+<a name="Cadence"> </a> 
 ## Release Cadences
-<a name="Cadence"> </a>
 
 It is important to keep both Windows and your Office clients up to date. Office 365 and Windows 10 have aligned release cadences to make this easier. Both will have regular security updates and will have new features releasing twice per year. For specialized devices running Windows 10, there is a long-term servicing channel available which provides regular security updates but only provides new features every few years.
   
@@ -200,8 +200,8 @@ The following table lists the deployment tools that can be used for Windows 10 a
 |Microsoft InTune  <br/> |Yes  <br/> |Yes  <br/> |
 |3rd party software deployment tools  <br/> |Yes  <br/> |Yes  <br/> |
    
-## Types of Changes
 <a name="Changes"> </a>
+## Types of Changes
 
 There are several types of changes that are made to Office 365 on a regular basis. The communication channels for those changes, and the actions that you might have to take for them will vary, depending on the type of change.
   
@@ -243,8 +243,8 @@ For functionality changes, you should test against your add-ins and other custom
     
 - Align your work with the release schedule - schedule testing passes monthly.
     
-## Roles and Responsibilities
 <a name="Roles"> </a>
+## Roles and Responsibilities
 
 Responsibility for managing change is shared between Microsoft and you as the admin of your Office 365 tenancy. The balance of responsibility is different for an online service than it is for an on-premises server or client.
   
@@ -337,8 +337,8 @@ Customer's role
     
 - Train users to provide app specific feedback using the Smile button in Office apps.
     
-## Manage Update Deployments
 <a name="Manage"> </a>
+## Manage Update Deployments
 
 You choose when and how updates are deployed to your organization by configuring:
   
@@ -391,10 +391,8 @@ Use the following methods to configure which channels are used by which client c
     
 - Group Policy - for centralized administration of domain-joined computers.
     
-## See also
-<a name="Manage"> </a>
-
-#### Other Resources
+<a name="Related"> </a>
+## Related Topics
 
 [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
   

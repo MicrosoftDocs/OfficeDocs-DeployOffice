@@ -34,7 +34,7 @@ The following table details the advantages and disadvantages of selecting 64-bit
 |Some tools, like Power Query, are supported in 64-bit environments only.  <br/> |Some applications may not render graphics correctly.  <br/> |
    
 > [!NOTE]
-> For detailed guidance, see [Choose the 64-bit or 32-bit version of Office](http://technet.microsoft.com/library/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261%28Office.14%29.aspx). 
+> For detailed guidance, see [Choose the 64-bit or 32-bit version of Office](https://support.office.com/article/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261). 
   
 It is recommended that 32-bit is used for both 32-bit and 64-bit operating systems if users in your organization depend on existing extensions to Office, such as Microsoft ActiveX® controls, third-party add-ins, in-house solutions built on previous versions of Office, or 32-bit versions of programs that interface directly with Office.
   

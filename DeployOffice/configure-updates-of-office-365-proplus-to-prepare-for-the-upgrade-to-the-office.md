@@ -47,8 +47,8 @@ The upgrade isn't automatic. The user has to choose **Update Office** from withi
 > [!NOTE]
 > This information also applies to Visio Pro for Office 365 and Project Online Desktop Client. It also applies to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium. 
   
-## Determine if Office is configured to get updates from the CDN
 <a name="BKMK_DetermineCDN"> </a>
+## Determine if Office is configured to get updates from the CDN
 
 You can determine where Office gets updates from by using Registry Editor to view the registry on the computer where Office is installed. There are three places in the registry that you need to check, as listed in the following table.
   
@@ -66,8 +66,8 @@ This assumes that Office is configured to get updates automatically. You can che
     
 The enableautomaticupdates value appears in the registry if you use Group Policy and enable the **Enable automatic updates** policy setting. The setting of the enableautomaticupdates value takes precedence over the setting of the UpdatesEnabled value.
   
-## Configure Office to get updates from a location other than the CDN
 <a name="BKMK_ConfigureNotCDN"> </a>
+## Configure Office to get updates from a location other than the CDN
 
 If you want to control when Office is upgraded, we recommend that you configure Office to get updates from a location on your internal network, such as a network share, instead of the CDN. You can configure this by using one of the following methods:
   
@@ -83,8 +83,8 @@ If you want to control when Office is upgraded, we recommend that you configure 
     
 After you do this, use the Office 2013 version of the Office Deployment Tool to download updates for Office 2013 to your local network until you upgrade to Office 2016. 
   
-## Prevent the upgrade but still get updates from the CDN
 <a name="BKMK_PreventAuto"> </a>
+## Prevent the upgrade but still get updates from the CDN
 
 There is another option. You can continue to have Office get updates from the CDN, but prevent Office from receiving this upgrade.
   
@@ -102,8 +102,8 @@ You can continue to get updates from the CDN, but prevent this upgrade, by using
 
     Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
     
-## Disable updates entirely
 <a name="BKMK_Disable"> </a>
+## Disable updates entirely
 
 To prevent this upgrade, you can also disable updates entirely, but in most cases this isn't recommended. That's because it means you won't be getting security updates of Office.
   
@@ -119,10 +119,8 @@ If you plan to upgrade and update Office by using by using enterprise software d
 
     Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
     
-## See also
-<a name="BKMK_Disable"> </a>
-
-#### Other Resources
+<a name="BKMK_Related"> </a>
+## Related Topics
 
 [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   

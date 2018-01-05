@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -32,20 +32,33 @@
       "branch": "master",
       "branch_mapping": {}
     },
-       {
-         "path_to_root": "DeployOffice/common",
-         "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
-         "branch": "live",
-         "branch_mapping": {}
-       }
+    {
+      "path_to_root": "DeployOffice/common",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
+      "branch": "live",
+      "branch_mapping": {}
+    },
+    {
+    "path_to_root": "_themes.pdf",
+    "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+    "branch": "master"
+    }
   ],
-  "branch_target_mapping": {
-    "live": [
+    "branch_target_mapping": {
+    "master": [
+      "Publish",
+      "Pdf"
+    ],
+     "live": [
       "Publish",
       "Pdf"
     ]
   },
+  "Targets": {  
+    "Pdf": {  
+    "template_folder": "_themes.pdf"  
+    }  
+   }, 
   "need_generate_pdf_url_template": true,
-  "need_generate_pdf": false,
   "need_generate_intellisense": false
 }
