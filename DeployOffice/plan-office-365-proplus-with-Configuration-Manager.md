@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus with System Center Configuration Manager"
+title: "Plan your Deployment of Office 365 ProPlus with System Center Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -13,13 +13,26 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Deploy Office 365 ProPlus with System Center Configuration Manager
+# Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
+This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. By the end of this article, you will have a deployment plan that you can use to drive your client deployment. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
   
+# Deployment plan
+
+This article provides guidance and recommendations for completing deployment plan that covers the major requirements for an Office deployment. 
+
+|Deployment plan  |Choices  |Recommendation  |
+|---------|---------|---------|
+|Managed exerience|Managed<br/> Unmanaged<br/>|         |
+|Deployment tool|Office Deployment Tool, System Center Configuration Manager,          |         |
+|Row2     |         |         |
+|Row3     |         |         |
+
+
+# What tool?
 The steps in this article can apply to a variety of environments, but we'll base our examples on the following infrastructure and requirements, all defined as part of a deployment plan. For a step-by-step guide to setting up your deployment plan, see Plan your deployment of Office 365 ProPlus with System Center Configurtion Manager:
   
 - Tool: Office will be installed and receive updates using System Center Configuration Manager (Current Branch)    
