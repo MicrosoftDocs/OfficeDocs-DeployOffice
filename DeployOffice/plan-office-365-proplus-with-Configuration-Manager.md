@@ -20,16 +20,42 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. By the end of this article, you will have a deployment plan that you can use to drive your client deployment. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
   
+# Choose how to manage your deployment
+
+Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan: 
+
+- Do you want to manage the deployment? The vast majority of Enterprise deployments are managed, but there are situations in which unmanaged deployments make sense.
+- What tool do you want to use? We recommend Configuration Manager for organizations that use System Center Configuration Manager to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings. For more options, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md).
+- Where do you want to deploy the Office source files from? Configuration Manager requires that the source files are local, rather than in the cloud.   
+
+|How to manage      |Choice  |Notes  |
+|-------------------|--------|-------|
+|Management         |- Managed|         |
+|Deployment tool      | - Configuration Manager<br/>          |         |
+|Source location     |- Local <br/> |         |
+|
+
+# Choose how to manage updates
+
 # Deployment plan
 
-This article provides guidance and recommendations for completing deployment plan that covers the major requirements for an Office deployment. 
+This article provides guidance and recommendations for completing a deployment plan that covers the major requirements for an Office deployment. 
 
-|Deployment plan  |Choices  |Recommendation  |
-|---------|---------|---------|
-|Managed exerience|Managed<br/> Unmanaged<br/>|         |
-|Deployment tool|Office Deployment Tool, System Center Configuration Manager,          |         |
-|Row2     |         |         |
-|Row3     |         |         |
+|Deployment plan      |Choices  |Recommendation  |
+|---------------------|---------|---------|
+|Management     |- Managed <br/> - Unmanaged <br/> |         |
+|Deployment tool      |- Office Deployment Tool <br/> - Configuration Manager<br/>          |         |
+|Source location     |- Cloud <br/> - Local <br/> |         |
+|Update management      |         |         |
+|Update channel      |         |         |
+|Office suite      |         |         |
+|Office apps      |         |         |
+|Languages      |         |         |
+|Language management      |         |         |
+|Architecture      |         |         |
+|Install experience      |         |         |
+|Licensing      |         |         |
+|Shared computing      |         |         |
 
 
 # What tool?
