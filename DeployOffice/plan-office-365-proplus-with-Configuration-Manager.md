@@ -19,8 +19,18 @@ description: "This article gives step-by-step instructions for how to plan your 
 # Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
 This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
-  
-# Choose how to manage your deployment
+
+The deployment plan is based on five key questions:
+
+1. How do you want to manage your deployment of Office?
+2. How do you want to manage updates to Office?
+3. What products, languages, and architectures are you deploying?
+4. What kind of installation experience do you want your users to have?
+5. What other infrastructure requirements do you have?
+
+Each of the following sections provides details on these questions, as well as Microsoft-recommended best practices.
+
+# Choose how to manage your deployment of Office
 
 Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan:
 
@@ -39,13 +49,11 @@ For more details on these choices, including other options, see [Choose how to d
 
 # Choose how to manage updates
 
-|Manage updates    |Choice                   |Notes                                 |
-|-------------------------|-------------------------|--------------------------------------|
-|Update management        |Unmanaged <br/> OR <br/> Managed <br/> |Recommend unmanaged when possible|
-|Update channels      |         |         |
-|
+Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan:
 
-# Choose how to manage updates
+- Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
+- What tool do you want to use? We recommend System Center Configuration Manager for organizations that already use it to distribute and manage software.
+- From what location  do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
 
 |Manage updates    |Choice                   |Notes                                 |
 |-------------------------|-------------------------|--------------------------------------|
@@ -68,7 +76,7 @@ For more details on these choices, including other options, see [Choose how to d
 |-------------------------|-------------------------|--------------------------------------|
 |Install experience      |         |         |
 
-# Choose additional deployment options
+# Support for additional infrastructure requirements
 
 |Additional deployment options    |Choices                   |Notes                                 |
 |-------------------------|-------------------------|--------------------------------------|
