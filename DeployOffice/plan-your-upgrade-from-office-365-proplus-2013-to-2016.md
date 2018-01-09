@@ -82,14 +82,14 @@ We've added some new settings, but maintained most of the existing Group Policy 
 <a name="BKMK_Bandwidth"> </a> 
 ## Review the network bandwidth implications of upgrading Office 365 ProPlus
 
-The installation files for Office 365 ProPlus are approximately 850 mb for the core files plus approximately 200 mb for each language deployed. Because of the underlying changes between the Office and Office 2016 versions of Office 365 ProPlus, the upgrade process takes longer and requires the entire Office 2016 build to be downloaded to users' computers. This will affect network bandwidth and is something that should be considered as part of your upgrade plan.
+The installation files for Office 365 ProPlus are approximately 850 mb for the core files plus approximately 200 mb for each language deployed. Because of the underlying changes between the Office 2013 and Office 2016 versions of Office 365 ProPlus, the upgrade process takes longer and requires the entire Office 2016 build to be downloaded to users' computers. This will affect network bandwidth and is something that should be considered as part of your upgrade plan.
   
 <a name="BKMK_Office2013"> </a>
 ## Understand how long you can continue to use the Office 2013 version of Office 365 ProPlus
 
-Support for the Office 2016 version of Office 365 ProPlus ended on February 28, 2017. Therefore, we recommend that you upgrade to the Office 2016 version of Office 365 ProPlus as soon as possible. For more information, see Microsoft Knowledge Base (KB) article [3199744](https://support.microsoft.com/kb/3199744).
+Support for the Office 2013 version of Office 365 ProPlus ended on February 28, 2017. Therefore, we recommend that you upgrade to the Office 2016 version of Office 365 ProPlus as soon as possible. For more information, see Microsoft Knowledge Base (KB) article [3199744](https://support.microsoft.com/kb/3199744).
   
-If you choose to continue to deploy the Office 2016 version of Office 365 ProPlus, you need to do the following:
+If you choose to continue to deploy the Office 2013 version of Office 365 ProPlus, you need to do the following:
   
 - Continue to use the [Office 2013 version of the Office Deployment Tool](http://www.microsoft.com/download/details.aspx?id=36778).
     
@@ -139,7 +139,7 @@ You can't have a volume licensed version of Visio 2016 or Project 2016 installed
 Also, if there is a 2013 version of Visio Pro for Office 365 or Project Online Desktop Client installed on the computer when you upgrade Office 365 ProPlus to the Office 2016 version, those versions of Visio and Project are removed from the computer. You won't be able to reinstall them after the Office 365 ProPlus installation finishes. However, you can install the 2016 versions of Visio Pro for Office 365 and Project Online Desktop Client on the same computer with the Office 2016 version of Office 365 ProPlus.
   
 > [!IMPORTANT]
-> If you have a volume licensed version of Visio 2016 or Project 2016 installed on the computer, it won't be removed from the computer during the upgrade of Office 365 ProPlus. You can continue to use the volume licensed version of Visio 2016 or Project 2016 on the computer with the Office 2016 version of Office 365 ProPlus. 
+> If you have a volume licensed version of Visio 2013 or Project 2013 installed on the computer, it won't be removed from the computer during the upgrade of Office 365 ProPlus. You can continue to use the volume licensed version of Visio 2013 or Project 2013 on the computer with the Office 2016 version of Office 365 ProPlus. 
 
 <a name="BKMK_InfoPath"> </a>
 ### Removal of InfoPath from Office 365 ProPlus
