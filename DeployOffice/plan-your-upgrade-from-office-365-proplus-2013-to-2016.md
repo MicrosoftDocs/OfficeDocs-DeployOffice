@@ -140,7 +140,7 @@ If there is a 2013 version of Visio Pro for Office 365 or Project Online Desktop
 If you have a volume licensed version of Visio 2016 or Project 2016 that uses the Windows Installer (MSI) installation technology, that version can't be installed on the same computer as the Office 2016 version of Office 365 ProPlus, which uses the Click-to-Run installation technology. But, you can use the Office Deployment Tool to install a volume licensed version of Visio 2016 or Project 2016 that uses the Click-to-Run installation technology. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
   
 > [!IMPORTANT]
-> If you have a volume licensed version of Visio 2013 or Project 2013 installed on the computer, it won't be removed from the computer during the upgrade of Office 365 ProPlus. You can continue to use the volume licensed version of Visio 2013 or Project 2013 on the computer with the Office 2016 version of Office 365 ProPlus. 
+> If you have installed a volume licensed version of Visio 2013 or Project 2013 using the Windows Installer (MSI) installation technology, it won't be removed from the computer during the upgrade of Office 365 ProPlus. You can continue to use the volume licensed version of Visio 2013 or Project 2013 on the computer with the Office 2016 version of Office 365 ProPlus. 
 
 <a name="BKMK_InfoPath"> </a>
 ### Removal of InfoPath from Office 365 ProPlus
