@@ -49,11 +49,12 @@ For more details on these choices, including other options, see [Choose how to d
 
 # Choose how to manage updates
 
-To manage updates in your organization, you should answer the following questions:
+To plan for managing updates in your organization, answer the following questions:
 
-- How do you want to manage updates? We recommend managing updates automaticaly from the cloud. Updates will be installed directly on client devices the Office CDN. You can also use manage updates with   
-- What tool do you want to use? We recommend System Center Configuration Manager for organizations that already use it to distribute and manage software.
-- From what location  do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
+- How do you want to manage updates? We recommend managing updates automaticaly from the cloud. Updates will be installed directly on client devices the Office CDN. You can also use manage updates with System Center Configuration Manager.   
+- From what location do you want to deploy  Office updates? We recommend the cloud, as noted above. If you decide to manage updates with Configuration Manager, you will download the updates and manage them from a local source.   
+- What validation rings do you want to use? We recommend defining a “Targeted” ring with a  small group of devices and a “Broad” ring with the rest of your devices. Devices in the Targeted ring can receive updates earlier and validate those updates in your environment. After validation, you can deploy the updates to the devices in the Broad ring.   
+- What update channels do you want to use? We recommend using two update channels, one for each of the validation rings. For the targeted ring, use the Semi-Annual Channel (Targeted), which releases feature updates in March and September. For the broad ring, use the Semi-Annual Channel, which releases feature updates four months after the targeted channel.
 
 |Manage updates    |Choice                   |Notes                                 |
 |-------------------------|-------------------------|--------------------------------------|
@@ -86,15 +87,28 @@ To manage updates in your organization, you should answer the following question
 |Shared computing      |         |         |
 
 
-# What tool?
-The steps in this article can apply to a variety of environments, but we'll base our examples on the following infrastructure and requirements, all defined as part of a deployment plan. For a step-by-step guide to setting up your deployment plan, see Plan your deployment of Office 365 ProPlus with System Center Configurtion Manager:
-  
-- Tool: Office will be installed and receive updates using System Center Configuration Manager (Current Branch)    
+# Define your deployment groups
+Deployment groups are collections of clients that will receive the same Office bits and the same updates from the same channel. For example, you can define one deployment group for all the devices in your organization meet the following requirements:
+
+- Tool: Office will be installed by Configuration Manager (Current Branch)
+- Updates: Office updates will be managed automatically from the cloud    
 - Product suite: Office 365 ProPlus 
-- Language: English and Japanese
-- Architecture: 32-bit and 64-bit editions
-- Update channels: Semi-Annual Channel and Semi-Annual Channel (Targeted) 
+- Languages: English and Japanese
+- Architecture: 64-bit editions
+- Update channels: Semi-Annual Channel 
 - Install experience: Office will install silently on all clients
+
+Clients with different requirements, such as 32-bit architecture or different update, will need to be in different deployment groups. 
+
+
+
+
+
+fXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+
 
 Based on these requirements, we've defined four deployment groups:
 
