@@ -26,7 +26,7 @@ The deployment plan is based on five key questions:
 2. How do you want to manage updates to Office?
 3. What products, languages, and architectures are you deploying?
 4. What kind of installation experience do you want your users to have?
-5. What other infrastructure requirements do you have?
+5. What additional requirements do you have?
 
 Each of the following sections provides details on these questions, as well as Microsoft-recommended best practices.
 
@@ -35,23 +35,23 @@ Each of the following sections provides details on these questions, as well as M
 Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan:
 
 - Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
-- What tool do you want to use? We recommend System Center Configuration Manager for organizations that already use it to distribute and manage software.
+- What tool do you want to use? We recommend  System Center Configuration Manager (Current Branch) for organizations that already use it to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
 - From what location  do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
 
-|Manage deployment            |Choice                   |Notes                                 |
+|Manage deployment            |Choices                   |Best practice                                 |
 |-------------------------|-------------------------|--------------------------------------|
-|Management               |Managed|               |Recommended for enterprise deployments|
-|Deployment tool          |Configuration Manager  |Recommended for organizations using Configuration Manager|
-|Source location          |Local                  |Required by Configuration Manager|
+|Management               |Managed|               |Managed is recommended for enterprise deployments|
+|Deployment tool          |Configuration Manager (Current Branch) </br> Office Deployment Tool |Configuration Manager is recommended for organizations already using it|
+|Source location          |Local </br> Cloud                  |Local is required by Configuration Manager|
 |
 
 For more details on these choices, including other options, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md).
 
 # Choose how to manage updates
 
-Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan:
+To manage updates in your organization, you should answer the following questions:
 
-- Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
+- How do you want to manage updates? We recommend managing updates automaticaly from the cloud. Updates will be installed directly on client devices the Office CDN. You can also use manage updates with   
 - What tool do you want to use? We recommend System Center Configuration Manager for organizations that already use it to distribute and manage software.
 - From what location  do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
 
@@ -59,13 +59,14 @@ Because this is the planning article for deploying wth System Center Configurati
 |-------------------------|-------------------------|--------------------------------------|
 |Update management        |Unmanaged <br/> OR <br/> Managed <br/> |Recommend unmanaged when possible|
 |Update channels      |         |         |
+|Validation rings      |         |         |
 |
 
 # Choose what to deploy
 
 |What to deploy    |Choices                   |Notes                                 |
 |-------------------------|-------------------------|--------------------------------------|
-|Office suite      |         |         |
+|Product suite      |         |         |
 |Office apps      |         |         |
 |Languages      |         |         |
 |Architecture      |         |         |
