@@ -26,11 +26,9 @@ The Office Customization Tool for Click-to-Run (preview) creates the configurati
  
 ## Get started
 
-The Office Customization Tool for Click-to-Run (preview) is an Azure-based cloud service that can create and update XML configuration files that are used with the Office  Deployment Tool. In the past, you needed to create the configuration files in Notepad or another text editor. The Office Customization Tool makes this part of the deployment process easier and less likely to introduce errors.
+The Office Customization Tool for Click-to-Run (preview) is an Azure-based cloud service which allows you to create XML configuration files that are used with the Office Deployment Tool. In the past, you needed to create the configuration files in Notepad or another text editor. The Office Customization Tool makes this part of the deployment process easier and less likely to introduce errors.
 
-To work with the service, go to[ Office Customization Tool for Click-to-Run (preview)](https://config.office.com/) and choose the software, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 32-bit English edition of Office, or you can create a file that installs the 32-bit English edition of Office with the EULA automatically accepted and without Publisher. When you're done, you can export the configuration file, which you can then use with the Office Deployment Tool to deploy Office in your organization. 
-
-To edit existing configuration files, you can import them into the tool, make updates, and then export them.
+To work with the service, go to[ Office Customization Tool for Click-to-Run (preview)](https://config.office.com/) and choose the software, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 32-bit English edition of Office, or you can create a file that installs the 64-bit English and German edition of Office excluding Access and Publisher and the EULA automatically accepted. When you're done, you can export the configuration file, which you can then use with the Office Deployment Tool to deploy Office in your organization. 
 
 ## Learn more
 
