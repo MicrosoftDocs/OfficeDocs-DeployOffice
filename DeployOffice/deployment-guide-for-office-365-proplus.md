@@ -3,7 +3,7 @@ title: "Deployment guide for Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 9/22/2017
+ms.date: 1/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -50,6 +50,9 @@ Learn about deployment options, how to deploy from a local source, and how to us
 ## Manage updates
 
 Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates. 
+
+
+- [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 
 - [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
 
