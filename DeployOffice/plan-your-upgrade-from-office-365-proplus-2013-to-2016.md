@@ -3,7 +3,7 @@ title: "Plan your upgrade from Office 365 ProPlus 2013 to 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/12/2017
+ms.date: 1/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration

@@ -3,7 +3,7 @@ title: "Manage updates to Office 365 ProPlus with System Center Configuration Ma
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/9/2017
+ms.date: 1/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
