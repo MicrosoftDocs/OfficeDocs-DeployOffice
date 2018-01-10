@@ -13,7 +13,7 @@ ms.custom:
 - DeployProPlus
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
-ms.assetid: bb5b62d9-1168-47e9-9d54-15a958acfcca
+ms.assetid: 
 description: "The Office Customization Tool for Click-to-Run (preview) creates the configuration files that are used to deploy Office in large organizations."
 ---
 
