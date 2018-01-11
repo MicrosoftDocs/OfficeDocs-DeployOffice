@@ -18,7 +18,7 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
+This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager (Current Branch). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
 
 The deployment plan is based on five key questions:
 
