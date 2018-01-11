@@ -3,7 +3,7 @@ title: "Use the Readiness Toolkit to assess application compatibility for Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 11/2/2017
+ms.date: 12/26/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
