@@ -1,7 +1,7 @@
 ---
 title: "Best practices Links for helpdesk and end user training"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 10/31/2017
 ms.audience: ITPro

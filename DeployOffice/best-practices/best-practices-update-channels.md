@@ -1,7 +1,7 @@
 ---
 title: "Best practices Update channels"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 9/12/2017
 ms.audience: ITPro
