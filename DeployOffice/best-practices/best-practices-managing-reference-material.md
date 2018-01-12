@@ -1,7 +1,7 @@
 ---
 title: "Best practices Managing reference material"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 3/10/2017
 ms.audience: ITPro

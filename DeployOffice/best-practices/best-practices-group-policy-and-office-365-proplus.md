@@ -1,7 +1,7 @@
 ---
 title: "Best practices Group policy and Office 365 ProPlus"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 9/9/2017
 ms.audience: ITPro
