@@ -20,15 +20,22 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
 
-The deployment plan is based on five key questions:
+To complete the deployment plan, you will need to:
 
-1. How do you want to manage your deployment of Office?
-2. How do you want to manage updates to Office?
-3. What products, languages, and architectures are you deploying?
-4. What kind of installation experience do you want your users to have?
-5. What additional requirements do you have?
+- Verify system requirements for deploying Office 365 ProPlus
+- Assess application compatibilty in your organization for Office 365 ProPlus
+- Decide how you want to manage your deployment of Office 365 ProPlus
+- Decide how you want to manage updates to Office in your organization
+- Choose the products, languages, and architectures you want to deploy
+- Define the installation experience for your users
+- Define any additional requirements for your deployment 
 
 Each of the following sections provides details on these questions, as well as Microsoft-recommended best practices.
+
+## Verify system requirements for deploying Office 365 ProPlus
+
+Before completing the deployment plan, make sure your environment meets the prerequisites for deploying Office 365 ProPlus.
+
 
 # Choose how to manage your deployment of Office
 
