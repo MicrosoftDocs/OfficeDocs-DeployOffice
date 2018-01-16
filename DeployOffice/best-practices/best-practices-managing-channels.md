@@ -1,7 +1,7 @@
 ---
 title: "Best practices Managing channels"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 9/10/2017
 ms.audience: ITPro

@@ -1,7 +1,7 @@
 ---
 title: "Best practices Management for enterprise managed"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro

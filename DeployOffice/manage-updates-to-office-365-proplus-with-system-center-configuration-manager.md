@@ -1,7 +1,7 @@
 ---
 title: "Manage updates to Office 365 ProPlus with System Center Configuration Manager"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: jwhit
+author: jwhit-MSFT
 manager: laurawi
 ms.date: 1/9/2018
 ms.audience: ITPro
