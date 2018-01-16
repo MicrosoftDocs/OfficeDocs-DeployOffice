@@ -18,32 +18,45 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager (Current Branch). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
+This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
 
 To complete the deployment plan, you will need to:
 
 - Verify system requirements for deploying Office 365 ProPlus
 - Assess application compatibilty in your organization for Office 365 ProPlus
-- Decide how you want to manage your deployment of Office 365 ProPlus
-- Decide how you want to manage updates to Office in your organization
+- Decide how to manage your deployment of Office 365 ProPlus
+- Decide how to manage updates to Office in your organization
 - Choose the products, languages, and architectures you want to deploy
 - Define the installation experience for your users
 - Define any additional requirements for your deployment 
 
 Each of the following sections provides details on these questions, as well as Microsoft-recommended best practices.
 
-## Verify system requirements for deploying Office 365 ProPlus
+## Verify system requirements 
 
 Before completing the deployment plan, make sure your environment meets the prerequisites for deploying Office 365 ProPlus.
 
+## Review Office 365 licensing requirements
 
-# Choose how to manage your deployment of Office
+When planning an Office 365 ProPlus deployment, careful considerations and planning should be done to ensure all users are assigned the appropriate Office 365 license that includes Office 365 ProPlus prior to the deployment.
+
+## Review and configure network requirements
+
+Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
+
+It requires a reliable connection to the Office CDN during both the deployment and management phases. Therefore, adequate planning should make sure that the network can support the deployment and management methodologies.
+
+## Assess application compatibility
+
+Before completing the deployment plan, make sure your environment meets the prerequisites for deploying Office 365 ProPlus.
+
+# Decide how to manage your deployment 
 
 Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan:
 
 - Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
 - What tool do you want to use? We recommend  System Center Configuration Manager (Current Branch) for organizations that already use it to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
-- From what location  do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
+- From what location do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
 
 |Manage deployment            |Choices                   |Best practice                                 |
 |-------------------------|-------------------------|--------------------------------------|
@@ -54,7 +67,7 @@ Because this is the planning article for deploying wth System Center Configurati
 
 For more details on these choices, including other options, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md).
 
-# Choose how to manage updates
+# Decide how to manage updates
 
 To plan for managing updates in your organization, answer the following questions:
 
@@ -63,7 +76,7 @@ To plan for managing updates in your organization, answer the following question
 - What validation rings do you want to use? We recommend defining a “Targeted” ring with a  small group of devices and a “Broad” ring with the rest of your devices. Devices in the Targeted ring can receive updates earlier and validate those updates in your environment. After validation, you can deploy the updates to the devices in the Broad ring.   
 - What update channels do you want to use? We recommend using two update channels, one for each of the validation rings. For the targeted ring, use the Semi-Annual Channel (Targeted), which releases feature updates in March and September. For the broad ring, use the Semi-Annual Channel, which releases feature updates four months after the targeted channel.
 
-|Manage updates    |Choice                   |Notes                                 |
+|Manage updates    |Choice                   |Best practices                                 |
 |-------------------------|-------------------------|--------------------------------------|
 |Update management        |Unmanaged <br/> OR <br/> Managed <br/> |Recommend unmanaged when possible|
 |Update channels      |         |         |
@@ -72,10 +85,21 @@ To plan for managing updates in your organization, answer the following question
 
 # Choose what to deploy
 
-|What to deploy    |Choices                   |Notes                                 |
+You can choose waht product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. For each suite, you can specify what languages and architectures to deploy. When deciding what to deploy, consider the following: 
+
+- We recommend Office 365 ProPlus for most organizations, as that xx.
+
+- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of Office, but we don't recommend it as a best practice. If you plan to have two versions of Office on the same computer, you should on when to  transition from legacy Office applications to only Office 365 ProPlus. 
+
+- Microsoft supports different versions of Project and Visio running alongside  Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. We recommend xx as a best practice.
+
+
+
+|What to deploy    |Choices                   |Best practices                                 |
 |-------------------------|-------------------------|--------------------------------------|
 |Product suite      |         |         |
 |Office apps      |         |         |
+|Project and Visio      |         |         |
 |Languages      |         |         |
 |Architecture      |         |         |
 
