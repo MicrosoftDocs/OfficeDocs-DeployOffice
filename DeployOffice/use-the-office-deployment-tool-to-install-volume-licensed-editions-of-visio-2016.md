@@ -39,7 +39,6 @@ To begin, [download the most current version](http://go.microsoft.com/fwlink/p/?
    
 You can also edit the Updates element in the configuration.xml file to determine how the installation of Visio or Project is updated. For example, you can configure it so that updates are automatically installed from the Office Content Delivery Network (CDN) on the Internet, which is the default, or from a file share on your local network.
 
-[!TIP]
 If you're not familiar with the Office Deployment Tool, it's usually used to customize deployments of Click-to-Run versions of Office products, such as Office 365 ProPlus. For more information, see [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md). 
   
 Here's an example of a configuration.xml file that can be used to install a 64-bit version of Visio Professional 2016 in English from the Office CDN using a GVLK. 
