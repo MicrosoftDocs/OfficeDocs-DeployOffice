@@ -450,7 +450,7 @@ Defines how Office is updated after it's installed.
 ```
 <Updates Enabled="TRUE" 
          UpdatePath="\\Server\Share\"
-         Channel="Deferred" />
+         Channel="Broad" />
 ```
 
 ### Enabled attribute (part of Updates element)
