@@ -3,7 +3,7 @@ title: "Plan your Deployment of Office 365 ProPlus with System Center Configurat
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 1/31/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,25 +20,17 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
 
-To complete the deployment plan, you will need to:
-
-- Verify system requirements for deploying Office 365 ProPlus
-- Assess application compatibilty in your organization for Office 365 ProPlus
-- Decide how to manage your deployment of Office 365 ProPlus
-- Decide how to manage updates to Office in your organization
-- Choose the products, languages, and architectures you want to deploy
-- Define the installation experience for your users
-- Define any additional requirements for your deployment 
-
-Each of the following sections provides details on these questions, as well as Microsoft-recommended best practices.
-
 ## Verify system requirements 
 
-Before completing the deployment plan, make sure your environment meets the prerequisites for deploying Office 365 ProPlus.
+Before upgrading to Office 365 ProPlus, verify that your client computers meet or exceed the minimum system requirements. The Office 365 ProPlus requirements are the same as [the requirements for Office Professional Plus 2016](https://products.office.com/en-us/office-system-requirements#Office2016-suites-section).
+
+In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
+
+
 
 ## Review Office 365 licensing requirements
 
-When planning an Office 365 ProPlus deployment, careful considerations and planning should be done to ensure all users are assigned the appropriate Office 365 license that includes Office 365 ProPlus prior to the deployment.
+Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).
 
 ## Review and configure network requirements
 
