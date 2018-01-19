@@ -27,20 +27,34 @@ Before upgrading to Office 365 ProPlus, verify that your client computers meet o
 In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
 
 
-
-## Review Office 365 licensing requirements
+## Assess your Office 365 licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).
 
-## Review and configure network requirements
+## Assess your network
 
+Since you're deploying with Configuration Manager, you can Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
+
+As part of deployment and update management, Office 365 ProPlus also requires a reliable connection to the Office CDN.
+
+## Assess your infrastructure and environment
+
+To decide how to upgrade to Office, you should evaluate your infrastructure and environment, including the following:
+Number and distribution of your clients, including required languages.
+IT infrastructure, including operating systems, mobile device support, user permissions and management, and software distribution methods.
+Network infrastructure, including connections to the Internet and internal software distribution points.
 Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
-It requires a reliable connection to the Office CDN during both the deployment and management phases. Therefore, adequate planning should make sure that the network can support the deployment and management methodologies.
+As part of deployment and update management, Office 365 ProPlus also requires a reliable connection to the Office CDN.
 
 ## Assess application compatibility
 
-Before completing the deployment plan, make sure your environment meets the prerequisites for deploying Office 365 ProPlus.
+We recommend that you odentify your Office applications--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
+- Discover the components, including which documents and solutions are being used most often and by the most people. To enable discovery, we recommend using Office telemetry.
+- Rationalize the business-critical components, including working with your business groups to prioritize documents and solutions.
+- Remediate the critical components by setting up “user acceptance testing,” in which users test the high priority documents and solutions during a pilot upgrade.
+- Manage the components for future validation of critical components, including continuing to monitor compatibility of your documents and solutions.
+
 
 # Decide how to manage your deployment 
 
