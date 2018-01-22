@@ -18,47 +18,50 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-This article provides guidance and recommendations for completing a deployment plan that covers the major decisions and requirements for deploying Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
+You can use this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
 
-## Verify system requirements 
+This article provides recommendations, information, and links to help you plan your deploymnt of Office 365 ProPlus in large enterprises. We also recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
+
+# Verify system requirements 
 
 Before upgrading to Office 365 ProPlus, verify that your client computers meet or exceed the minimum system requirements. The Office 365 ProPlus requirements are the same as [the requirements for Office Professional Plus 2016](https://products.office.com/en-us/office-system-requirements#Office2016-suites-section).
 
 In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
 
-
-## Assess your Office 365 licensing and accounts
+# Assess your Office 365 licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).
 
-## Assess your network
+# Assess your network
 
-Since you're deploying with Configuration Manager, you can Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
-
-As part of deployment and update management, Office 365 ProPlus also requires a reliable connection to the Office CDN.
-
-## Assess your infrastructure and environment
-
-To decide how to upgrade to Office, you should evaluate your infrastructure and environment, including the following:
-Number and distribution of your clients, including required languages.
-IT infrastructure, including operating systems, mobile device support, user permissions and management, and software distribution methods.
-Network infrastructure, including connections to the Internet and internal software distribution points.
 Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
 As part of deployment and update management, Office 365 ProPlus also requires a reliable connection to the Office CDN.
 
-## Assess application compatibility
+# Assess your infrastructure and environment
 
-We recommend that you odentify your Office applications--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
-- Discover the components, including which documents and solutions are being used most often and by the most people. To enable discovery, we recommend using Office telemetry.
-- Rationalize the business-critical components, including working with your business groups to prioritize documents and solutions.
-- Remediate the critical components by setting up “user acceptance testing,” in which users test the high priority documents and solutions during a pilot upgrade.
-- Manage the components for future validation of critical components, including continuing to monitor compatibility of your documents and solutions.
+Review the number and distribution of your clients, including required languages.
 
+Review your IT infrastructure, including operating systems, mobile device support, and user permissions and management.
+
+# Assess application compatibility
+
+We recommend that you identify your Office add-ins--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
+
+- Use [Office telemetry](https://technet.microsoft.com/EN-US/library/ff394407(v=office.16).aspx) to discover the add-ins, including which documents and solutions are being used most often and by the most people.
+- Work with your business groups to prioritize the critical add-ins.
+- Test the critical add-ins for compatability with the [Readiness Toolkit](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
+- Create an update process that tests your add-ins with future Office updates. This article builds in that kind of testing to your deployment plan. 
+
+# Review new Group policy settings
+
+As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy settings. All Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
+
+You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 2016 from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49030). The download includes an Excel file that lists all the Group Policy settings and the new policy settings for Office 2016.
 
 # Decide how to manage your deployment 
 
-Because this is the planning article for deploying wth System Center Configuration Manager, we assume you've already answered most of these initial questions in the deployment plan:
+Because this is the planning article for deploying wth System Center Configuration Manager, you've likely already answered most of the questions about how to manage your deployment:
 
 - Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
 - What tool do you want to use? We recommend  System Center Configuration Manager (Current Branch) for organizations that already use it to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
@@ -75,11 +78,13 @@ For more details on these choices, including other options, see [Choose how to d
 
 # Decide how to manage updates
 
+With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+
 To plan for managing updates in your organization, answer the following questions:
 
-- How do you want to manage updates? We recommend managing updates automaticaly from the cloud. Updates will be installed directly on client devices the Office CDN. You can also use manage updates with System Center Configuration Manager.   
+- How do you want to manage updates? We recommend managing updates automaticaly from the cloud. Updates will be installed directly on client devices the Office CDN. You can also manage updates with System Center Configuration Manager.   
 - From what location do you want to deploy  Office updates? We recommend the cloud, as noted above. If you decide to manage updates with Configuration Manager, you will download the updates and manage them from a local source.   
-- What validation rings do you want to use? We recommend defining a “Targeted” ring with a  small group of devices and a “Broad” ring with the rest of your devices. Devices in the Targeted ring can receive updates earlier and validate those updates in your environment. After validation, you can deploy the updates to the devices in the Broad ring.   
+- What validation rings do you want to use? We recommend defining a targeted ring with a small group of devices and a broad ring with the rest of your devices. Devices in the Targeted ring will receive updates earlier and validate those updates in your environment. After validation, you can deploy the updates to the devices in the Broad ring.   
 - What update channels do you want to use? We recommend using two update channels, one for each of the validation rings. For the targeted ring, use the Semi-Annual Channel (Targeted), which releases feature updates in March and September. For the broad ring, use the Semi-Annual Channel, which releases feature updates four months after the targeted channel.
 
 |Manage updates    |Choice                   |Best practices                                 |
@@ -91,12 +96,10 @@ To plan for managing updates in your organization, answer the following question
 
 # Choose what to deploy
 
-You can choose waht product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. For each suite, you can specify what languages and architectures to deploy. When deciding what to deploy, consider the following: 
+You can choose waht product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. For each suite, you can decide what languages and architectures to deploy. When deciding what to deploy, consider the following: 
 
 - We recommend Office 365 ProPlus for most organizations, as that xx.
-
-- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of Office, but we don't recommend it as a best practice. If you plan to have two versions of Office on the same computer, you should on when to  transition from legacy Office applications to only Office 365 ProPlus. 
-
+- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 - Microsoft supports different versions of Project and Visio running alongside  Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. We recommend xx as a best practice.
 
 
@@ -108,6 +111,15 @@ You can choose waht product suite to deploy and, within the suite, which Office 
 |Project and Visio      |         |         |
 |Languages      |         |         |
 |Architecture      |         |         |
+
+# Plan for additional languages
+
+You can install language accessory packs after you’ve deployed Office 365 ProPlus in one of its base languages. There are two ways to install language accessory packs:
+
+- Have your users download and install the language accessory packs that they need from the Office 365 portal.
+- Use Configuration Manager to deploy the appropriate language accessory packs to your users.
+
+For more details, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
 # Choose the installation experience
 
