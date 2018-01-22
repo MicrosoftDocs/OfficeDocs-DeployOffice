@@ -34,6 +34,11 @@ Make sure that all your users have Office 365 accounts and licenses, and that th
 
 # Assess your network
 
+When assessing your network, consider the following data points about the network impact of deploying and managing updates for Office:
+
+Managing network bandwidth with System Center Configuration Manager: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/manage-network-bandwidth
+
+
 Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
 As part of deployment and update management, Office 365 ProPlus also requires a reliable connection to the Office CDN.
@@ -43,6 +48,12 @@ As part of deployment and update management, Office 365 ProPlus also requires a 
 Review the number and distribution of your clients, including required languages.
 
 Review your IT infrastructure, including operating systems, mobile device support, and user permissions and management.
+
+# Assess your System Center Configuration Manager infrastructure
+
+Current Branch, peer cache, network support.xx
+
+Peer cache: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache
 
 # Assess application compatibility
 
@@ -149,8 +160,10 @@ Deployment groups are collections of clients that will receive the same Office b
 
 Clients with different requirements, such as 32-bit architecture or different update, will need to be in different deployment groups. 
 
-
-
+# Other considerations
+- Shared computers
+- Deploying to Mac
+- 
 
 
 fXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
