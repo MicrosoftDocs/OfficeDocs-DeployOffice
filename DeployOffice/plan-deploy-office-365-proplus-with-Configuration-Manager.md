@@ -18,38 +18,51 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-This article provides recommendations and guidance to help you plan your deploymnt of Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
+Follow the steps in this guide to create a plan for deploying Office 365 ProPlus in your organization. If you've already created your plan and want to begin deploying, see [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-Configuration-Manager.md)
 
-We also recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
+# Step 1: Engage Microsoft FastTrack
 
-# Verify system requirements 
+In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
 
-Verify that your client computers meet or exceed the minimum system requirements for installing Office 365 ProPlus. The Office 365 ProPlus requirements are the same as [the requirements for Office Professional Plus 2016](https://products.office.com/en-us/office-system-requirements#Office2016-suites-section).
+|Assessment                              |Details                                 |Best practice                           |
+|----------------------------------------|----------------------------------------|----------------------------------------|
+|Mirosoft FastTrack                      |Free with purchase of 50 or more seats of Office 365 Enterprise|Engage FastTrack early in the deployment process|
+
+
+
+# Step 2: Assess your client infrastructure and system requirements
+
+Review the number and distribution of your clients, including operating systems, architectures, existing versions of Office, and required languages.
+
+As part of this assessment, verify that your client computers meet or exceed the minimum system requirements for installing Office 365 ProPlus. The Office 365 ProPlus requirements are the same as [the requirements for Office Professional Plus 2016](https://products.office.com/en-us/office-system-requirements#Office2016-suites-section).
 
 In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
 
-# Assess your Office 365 licensing and accounts
+|Assessment                              |Details                                 |Best practice                           |
+|----------------------------------------|----------------------------------------|----------------------------------------|
+|Client infastructure and system requirements|                      |Engage FastTrack early in the deployment process|
+
+
+# Step 3: Assess your Office 365 licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).
 
-# Assess your network
+# Step 4: Assess your network
 
-When assessing your network, consider the following data points about the network impact of deploying and managing updates for Office:
+Assess your network and Office 365 ProPlus requirements, including bandwidth and the ports and protocols that need to be open.
 
 Managing network bandwidth with System Center Configuration Manager: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/manage-network-bandwidth
-
 
 Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
 As part of deployment and update management, Office 365 ProPlus also requires a reliable connection to the Office CDN.
+xxxxxxx
+Only the files that are different are copied down to a Download folder on the local computer, and they're downloaded in a compressed form. This helps reduce the size of the download.
 
-# Assess your infrastructure and environment
+The size of the download depends on several factors, such as how many security and other updates are released in a given month, and which version of Office 365 ProPlus you're updating from. For example, if you have the March version of Office 365 ProPlus installed, and you're updating to the July version, it's likely that more files are different between those two versions, than if you're updating from the June to the July version. Therefore, the download will probably be larger.
+xxxxxxx
 
-Review the number and distribution of your clients, including required languages.
-
-Review your IT infrastructure, including operating systems, mobile device support, and user permissions and management.
-
-# Assess your System Center Configuration Manager infrastructure
+# Step 5: Assess your System Center Configuration Manager infrastructure
 
 Current Branch, peer cache, network support.xx
 
@@ -69,6 +82,14 @@ We recommend that you identify your Office add-ins--including VBA scripts, macro
 As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy settings. All Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
 
 You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 2016 from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49030). The download includes an Excel file that lists all the Group Policy settings and the new policy settings for Office 2016.
+
+# Review your assessment
+
+[Show table here]
+
+# Plan your deployet
+
+Based on the assessment, you will now create a plan for deploying Office 365 ProPlus.
 
 # Decide how to manage your deployment 
 
@@ -123,7 +144,7 @@ You can choose waht product suite to deploy and, within the suite, which Office 
 |Languages      |         |         |
 |Architecture      |         |         |
 
-# Plan for additional languages
+# Choose what languages to deploy--and how to deploy them
 
 You can install language accessory packs after you’ve deployed Office 365 ProPlus in one of its base languages. There are two ways to install language accessory packs:
 
@@ -137,15 +158,6 @@ For more details, see [Overview of deploying languages in Office 365 ProPlus](ov
 |Installation experience    |Choices                   |Notes                                 |
 |-------------------------|-------------------------|--------------------------------------|
 |Install experience      |         |         |
-
-# Support for additional infrastructure requirements
-
-|Additional deployment options    |Choices                   |Notes                                 |
-|-------------------------|-------------------------|--------------------------------------|
-|Manage languages      |         |         |
-|Licensing      |         |         |
-|Shared computing      |         |         |
-
 
 # Define your deployment groups
 Deployment groups are collections of clients that will receive the same Office bits and the same updates from the same channel. For example, you can define one deployment group for all the devices in your organization meet the following requirements:
