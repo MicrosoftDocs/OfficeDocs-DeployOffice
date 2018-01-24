@@ -47,7 +47,7 @@ Assess your network and Office 365 ProPlus requirements, including bandwidth and
 
 - [Download sizes (approximate) for channel updates to Office 365 ProPlus](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c) 
 - 
-
+With one language pack, entire package is 1.2 GB [loop in Amesh on what the right statement is]
 Managing network bandwidth with System Center Configuration Manager: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/manage-network-bandwidth
 
 Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
@@ -62,6 +62,8 @@ The size of the download depends on several factors, such as how many security a
 xxxxxxx
 
 ## xxxStep 4 - Assess your System Center Configuration Manager infrastructure
+
+[need to have a base configuration manager implementation--distribution points, client settings deployed]
 
 Current Branch, peer cache, network support.xx
 
@@ -79,6 +81,8 @@ We recommend that you identify your Office add-ins--including VBA scripts, macro
 ## Step 6 - Review new Group policy settings
 
 If you plan to configure and manage Office with Group Policy settings, review the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus. You can download an [Excel file](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. Note that All Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
+
+[Add GPO deployment to the deploy document]
 
 ## Step 7 - Review exit criteria
 

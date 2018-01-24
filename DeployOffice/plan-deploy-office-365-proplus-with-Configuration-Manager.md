@@ -34,7 +34,7 @@ Because this is the planning article for deploying wth System Center Configurati
 
 - Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
 - What tool do you want to use? We recommend  System Center Configuration Manager (Current Branch) for organizations that already use it to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
-- From what location do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   
+- From what location do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   [This isn't necessarily true--some customers don't include source files, instead point to CDN. Not sure if you can do that in the wizard.]
 
 |Manage deployment            |Choices                   |Best practice                                 |
 |-------------------------|-------------------------|--------------------------------------|
@@ -119,6 +119,8 @@ xxxxPlanning should be completed to identify the deployment scenarios and use ca
 
 ## Step 4 - Choose what languages to deploy--and how to deploy them
 
+[Recommend regional packages. Can run a report and gather their top language packs with very high usage. Include high usage languages and the other. Include all languages in configuring updates for languages--need to include all required and optional languages.]
+
 You can install language accessory packs after you’ve deployed Office 365 ProPlus in one of its base languages. There are two ways to install language accessory packs:
 
 - Have your users download and install the language accessory packs that they need from the Office 365 portal.
@@ -152,6 +154,8 @@ Wait till a specified deadline for installation
 Because Office 365 ProPlus is a customizable package, you should determine what application sets each business group should get. Applications that are initially excluded can be added back in later; specific applications can be removed after Office 365 ProPlus has already been installed. If an application isto be excluded from the Office 365 ProPlus deployment, you should create a plan to restore or replace the application. 
 
 ## Step 6 - Define your deployment groups
+[investigate deployment rings vs validation rings]
+
 Deployment groups are collections of clients that will receive the same Office bits and the same updates from the same channel. For example, you can define one deployment group for all the devices in your organization meet the following requirements:
 
 - Tool: Office will be installed by Configuration Manager (Current Branch)
