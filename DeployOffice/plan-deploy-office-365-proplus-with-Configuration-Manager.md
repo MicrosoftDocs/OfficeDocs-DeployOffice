@@ -47,6 +47,41 @@ For more details on these choices, including other options, see [Choose how to d
 
 ## Step 2 - Plan how to manage updates
 
+xxxsing the existing collections, approximately 1,500 users will get Semi-Annual Channel (Targeted), and approximately 18,471 users will get Semi-Annual Channel. Approximately 25 development, technology owner, or business lead roles will self-install and self-manage from CDN with Monthly Channel. These Monthly Channel users will receive features ahead of Semi-Annual Channel (Targeted) and Semi-Annual Channel.
+
+xxxxAny self-installation users
+xxxxxareas.  It should be a Microsoft mandate to take updates from the cloud unless there are a small number of things that restrict a customer from doing so…and the FTC should be helping to push that message to all of our customers.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Automatic from CDN
+Default option – provides least control
+Throttled going out and coming down.
+Updates come from Office CDN when available, scheduled task checks for newer version daily
+
+Automatic from System Center Configuration Manager
+O365 build gets published to WSUS when released to Office CDN
+System Center Configuration Manager can leverage WSUS to sync new builds to site servers
+Builds get distributed to DPs for client machines to update against
+Requires System Center Configuration Manager minimum version 1602, WSUS minimum version 4.0, Object COM enabled for client
+
+
+Starting with version 1706 of System Center Configuration Manager a new option is available allowing administrators to enable clients to fall back to the Microsoft Office CDN when deploying Office 365 ProPlus updates to client machines.  With this option enabled, clients will first check their available distribution points for the specified update.  If the update cannot be found the client will then get the specified update directly from the Microsoft Office CDN.
+ 
+This can be helpful for situations where machines may not have a dedicated or reliable connection to the corporate network and other situations where it is not necessary to manage the update content for a particular update on premises.
+ 
+To enable this feature:
+Each time you configure an update for deployment (either manually or using an ADR) you can choose to enable this setting by simply checking the box labeled ‘If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates.’ on the Download Settings tab of the Deployment Settings Properties dialog.
+ 
+
+ 
+When you deploy an update with this setting enabled you can expect the following behavior:
+the client will check the available distribution points for the specified update before getting the update from the Microsoft Office CDN
+the client will get the update from the Microsoft CDN if the client does not have a connection to the LAN after being signaled to update
+the client may get language pack files related to the update if these files are not available on the distribution points
+the client may switch to the Microsoft Office CDN during an update from a DP if a connection to the LAN is lost
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
 To plan for managing updates in your organization, answer the following questions:
@@ -65,10 +100,9 @@ To plan for managing updates in your organization, answer the following question
 
 ## Step 3 - Choose what Office applications to deploy
 
-You can choose waht product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. For each suite, you can decide what languages and architectures to deploy. When deciding what to deploy, consider the following: 
+You can choose waht product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. When deciding what to deploy, consider the following: 
 
 - We recommend Office 365 ProPlus for most organizations, as that xx.
-- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 - Microsoft supports different versions of Project and Visio running alongside  Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. We recommend xx as a best practice.
 
 
@@ -78,8 +112,10 @@ You can choose waht product suite to deploy and, within the suite, which Office 
 |Product suite      |         |         |
 |Office apps      |         |         |
 |Project and Visio      |         |         |
-|Languages      |         |         |
-|Architecture      |         |         |
+
+## Step 3 - Choose what architectures to deploy 
+
+xxxxPlanning should be completed to identify the deployment scenarios and use cases for the 64-bit architecture version of Office 365 ProPlus. The deployment plan should include how existing Office 64-bit users will be transitioned to the new Office 365 ProPlus client.
 
 ## Step 4 - Choose what languages to deploy--and how to deploy them
 
@@ -90,11 +126,30 @@ You can install language accessory packs after you’ve deployed Office 365 ProP
 
 For more details, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
-## Step 5 - Plan the installation experience for your users
+
+xxx
+Languages are downloaded and installed by using the Office Deployment Tool. System Center Configuration Manager packages will be broken up by regions, where each region will have its own set of languages that accompany the Office 365 ProPlus files. Enterprise Managed has adds each language to the self-service catalog for users to install post-Office deployment. Because the language packs are about 200 MB each, and self-service of languages outside the region is an occurrence that happens rarely, all languages are not replicated to all regions. The default language is the one that is most commonly used in that region, together with instructions on how to change the default language. For the self-service languages, such as a user in the LATAM region who wants to add German, the ** Product ID=" LanguagePack"** element in the Office Deployment Tool is used.
+
+Regarding Language Packs, if you have many different Languages, you can include say top 3  Language Packs in package and rest could be published as an Optional leaving to users to download.
+
+xxxxx
+
+
+## Step 5 - Plan the installation and update experience for your users
+
+xxxxxUser experience
+Expose updates or run silent
+Wait for user or force installation
+Enforce installation and reboot
+Wait till a specified deadline for installation
+
 
 |Installation experience    |Choices                   |Notes                                 |
 |-------------------------|-------------------------|--------------------------------------|
 |Install experience      |         |         |
+
+## Step 6 - Define your client packages
+Because Office 365 ProPlus is a customizable package, you should determine what application sets each business group should get. Applications that are initially excluded can be added back in later; specific applications can be removed after Office 365 ProPlus has already been installed. If an application isto be excluded from the Office 365 ProPlus deployment, you should create a plan to restore or replace the application. 
 
 ## Step 6 - Define your deployment groups
 Deployment groups are collections of clients that will receive the same Office bits and the same updates from the same channel. For example, you can define one deployment group for all the devices in your organization meet the following requirements:
@@ -108,10 +163,26 @@ Deployment groups are collections of clients that will receive the same Office b
 - Install experience: Office will install silently on all clients
 
 Clients with different requirements, such as 32-bit architecture or different update, will need to be in different deployment groups. 
+## Step 7 - Define your group policy settings
+
+xxxOffice offers about 3,000 group policy settings to allow a granular control of security, privacy, and user experience. In most cases, only a subset of these are needed to adjust the configuration to the needs, requirements, and intended user experience of an organization. It is important to include other departments that are responsible for IT security, data protection, and privacy early to get a sign-off of the GPOs before the actual deployment happens.
+
+Call to action
+Review Best practices: Group policy and Office 365 ProPlus with more than 250 proven, commonly set policies for users and computers. Check the listed additional settings.
+Adjust the settings to fit your needs and requirements.
+Get a Resultant Set of Policy (RSOP) of today's policies and review them. Identify settings not covered in the Best Practices for Office 365 ProPlus, and consider adding them if the setting is still needed.
+Check which settings where introduced in Office 2013 and Office 2016 and consider adding them to your list of settings.
+Identify which entity in your organization must sign off security and privacy related settings, present them and get a sign-off.
+Get a sign off and hand the settings over to the team that administers the group Policy Settings. The Best Practices settings can easily be imported into your environment.
+
 
 ## Step 7 - Plan for shared computers
 
 ## Step 8 - Plan for deploying Office 365 ProPlus to Macs
+- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
+
+## Step 8 - Plan your upgrade from existing versions of Office
+- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 
 ## Step 9 - Review exit criteria
 

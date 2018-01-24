@@ -43,7 +43,7 @@ Make sure that all your users have Office 365 accounts and licenses, and that th
 
 ## xxxStep 3 - Assess your network
 
-Assess your network and Office 365 ProPlus requirements, including bandwidth and the ports and protocols that need to be open. As part of that asseessment, make sure to review the estimated size of the Office packages and updates. 
+Assess your network and Office 365 ProPlus requirements, including bandwidth and the ports and protocols that need to be open. As part of that assessment, make sure to review the estimated size of the Office packages and updates. 
 
 - [Download sizes (approximate) for channel updates to Office 365 ProPlus](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c) 
 - 
@@ -56,6 +56,8 @@ As part of deployment and update management, Office 365 ProPlus also requires a 
 xxxxxxx
 Only the files that are different are copied down to a Download folder on the local computer, and they're downloaded in a compressed form. This helps reduce the size of the download.
 
+xxxInternet access required by clients every thirty days.
+ 
 The size of the download depends on several factors, such as how many security and other updates are released in a given month, and which version of Office 365 ProPlus you're updating from. For example, if you have the March version of Office 365 ProPlus installed, and you're updating to the July version, it's likely that more files are different between those two versions, than if you're updating from the June to the July version. Therefore, the download will probably be larger.
 xxxxxxx
 
