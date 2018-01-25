@@ -18,7 +18,7 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-Follow the steps in this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. This is the third article in the series:
+Follow the steps in this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. This article is part of a series:
 
  - 1 - [Overview of deploying Office 365 ProPlus with System Center Configuration Manager](overview-deploy-office-365-proplus-with-Configuration-Manager.md)
  - 2 - [Assess your environment and requirements](assess-deploy-office-365-proplus-with-Configuration-Manager.md) 
@@ -27,6 +27,11 @@ Follow the steps in this article to plan your deployment of Office 365 ProPlus w
  - 5 - [Manage updates to Office 365 ProPlus](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
  -  
 In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
+
+## Before you begin 
+
+If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of your planning your deployment.
+
 
 ## Step 1 - Plan how to manage your deployment 
 
@@ -154,6 +159,14 @@ Wait till a specified deadline for installation
 
 ## Step 6 - Define your client packages
 Because Office 365 ProPlus is a customizable package, you should determine what application sets each business group should get. Applications that are initially excluded can be added back in later; specific applications can be removed after Office 365 ProPlus has already been installed. If an application isto be excluded from the Office 365 ProPlus deployment, you should create a plan to restore or replace the application. 
+
+## xxxStep 4 - Review and update your System Center Configuration Manager infrastructure
+
+[need to have a base configuration manager implementation--distribution points, client settings deployed]
+
+Current Branch, peer cache, network support.xx
+
+Peer cache: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache
 
 ## Step 6 - Define your deployment groups
 [investigate deployment rings vs validation rings]
