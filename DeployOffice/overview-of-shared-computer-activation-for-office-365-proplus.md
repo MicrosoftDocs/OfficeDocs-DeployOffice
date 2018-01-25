@@ -3,7 +3,7 @@ title: "Overview of shared computer activation for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 11/22/2017
+ms.date: 1/25/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
