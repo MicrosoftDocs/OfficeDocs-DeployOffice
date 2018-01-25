@@ -13,14 +13,14 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid:
-description: "This article gives step-by-step instructions for how to assess your enivorment and requirements for deploying Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
 # Assess your environment and requirements for deploying Office 365 ProPlus
 
-Follow the steps in this article to assess your environment and the requirements prior to deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
+Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
 
-In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
+In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.
 
 ## Step 1 - Assess your client infrastructure and system requirements
 
@@ -39,8 +39,7 @@ Make sure that all your users have Office 365 accounts and licenses, and that th
 Review your network capability, including bandwidth and distribution of client devices, based on the following considerations:
 
 - Deploying Office 365 ProPlus: The installation files for Office 365 ProPlus are approximately 850 mb for the core files plus approximately 200 mb for each language deployed. 
-- Managing updates to Office 365 ProPlus: Channel updates vary in size, but you can review recent download sizes [here] (https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md). 
-- Deploying multiple languages: Language accessory packs are approimxately 200 MB per language.
+- Managing updates to Office 365 ProPlus: Channel updates vary in size, but you can review recent download sizes [here](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md). 
 - Authenticating client devices: Client devices require internet access at least once every thirty days to authenticate their Office 365 ProPlus subscription. 
 
 In addition, Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
@@ -59,7 +58,7 @@ As part of the [planning article](plan-deploy-office-365-proplus-with-Configurat
 
 If you plan to configure and manage Office with Group Policy settings, review the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus. You can download an [Excel file](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. Note that all Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
 
-## Step 6 - Review exit criteria
+## Step 6 - Review exit criteria [xxx]
 
 Before creating your deployment, make sure you've completed all the steps for assessing your environment and requirements.
 
@@ -79,6 +78,6 @@ Before creating your deployment, make sure you've completed all the steps for as
 
 ## Next steps
 
-[Plan your deployment of Office 365 ProPlus with System Center Configuration Manager](plan-deploy-office-365-proplus-with-Configuration-Manager.md)f.
+[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
 

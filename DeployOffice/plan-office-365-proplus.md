@@ -13,25 +13,18 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
-description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
+# Plan your deployment of Office 365 ProPlus
 
-Follow the steps in this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. This article is part of a series:
+Follow the steps in this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. 
 
- - 1 - [Overview of deploying Office 365 ProPlus with System Center Configuration Manager](overview-deploy-office-365-proplus-with-Configuration-Manager.md)
- - 2 - [Assess your environment and requirements](assess-deploy-office-365-proplus-with-Configuration-Manager.md) 
- - 3 - **[Create a deployment plan](plan-deploy-office-365-proplus-with-Configuration-Manager.md)**
- - 4 - [Deploy Office 365 ProPlus](deploy-office-365-proplus-with-Configuration-Manager.md) 
- - 5 - [Manage updates to Office 365 ProPlus](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
- -  
-In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
+In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. 
 
 ## Before you begin 
 
-If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of your planning your deployment.
-
+If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of planning your deployment.
 
 ## Step 1 - Plan how to manage your deployment 
 
