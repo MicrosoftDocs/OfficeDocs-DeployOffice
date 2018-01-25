@@ -38,8 +38,11 @@ From an infrastructure standpoint, deploying Office 365 ProPlus with Configurati
 > [!NOTE]
 > **Best practice:** Use the Current Branch of Configuration Manager and enable peer cache on client devices. When deploying Office, use the Office Client Management dashboard in Configuration Manager.
 
-## Create the Office applications   
-For each deloyment group that you defined in your deployment plan, create a unique Office application using the steps below. For example, if you have four deployment groups, you'll create four Office applications.
+## Step 2 - Review your collections   
+The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager.  For each deloyment group, make sure you have a specific collection. 
+
+## Create and deploy the Office applications   
+For each deloyment group that you defined in your deployment plan, create a unique Office application using the steps below. For example, if you have four deployment groups, you'll create four Office applications and deploy them to four different collections.
 
 1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
@@ -52,9 +55,18 @@ For each deloyment group that you defined in your deployment plan, create a uniq
 
 5. On the **Client Products** page, select the Office 365 suite that you use. Select the applications that you want to include. Select any additional Office products that should be included, and then click **Next**.
 6. On the **Client Settings** page, choose the settings to include, and then click **Next**.
-7. On the **Deployment** page, select **No** to not deploy the application, and then click **Next**.
-8. On the **Confirm the settings** page, review the application settings, and then click **Close**.
-9. Repeat this process for each Office application you want to create.
+7. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**.
+> [!NOTE]
+> If you choose not to deploy the package in the wizard, you can deploy or edit the application later from **Software Library** > **Overview** > **Application Management** > **Applications**. 
+7. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined.
+8. On the **Content** page, choose distribution points to host the content, and then click **Next**. 
+9. On the **Deployment Settings** page, choose how the software should be deployed, and then click **Next**. 
+10. On the **Scheduling** page, specify when the application should be made available, and then click **Next**.
+11. On the **User Experience** page, choose the type of notifications and installation experience, and then click **Next**.
+12. On the **Summary** page, review the settings, and then click **Next**.
+13. On the **Alerts** page, choose the type of alerts you want, and then click **Next**.
+14. On the **Confirm the settings** page, review the application settings, and then click **Close**.
+15. Repeat this process for each Office application you want to create.
 
 ## Deploy the Office application
 
