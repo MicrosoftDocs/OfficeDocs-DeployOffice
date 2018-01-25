@@ -15,6 +15,7 @@ ms.custom:
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
+[Add GPO deployment to the deploy document]
 
 # Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
 

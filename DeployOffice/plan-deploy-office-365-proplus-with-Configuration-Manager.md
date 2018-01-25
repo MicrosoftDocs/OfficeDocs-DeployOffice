@@ -16,9 +16,9 @@ ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Create a deployment plan for deploying Office 365 ProPlus with System Center Configuration Manager
+# Plan your deployment of Office 365 ProPlus with System Center Configuration Manager
 
-Follow the steps in this article to create a deployment plan for deploying Office 365 ProPlus in your organization. This is the third article in the series:
+Follow the steps in this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. This is the third article in the series:
 
  - 1 - [Overview of deploying Office 365 ProPlus with System Center Configuration Manager](overview-deploy-office-365-proplus-with-Configuration-Manager.md)
  - 2 - [Assess your environment and requirements](assess-deploy-office-365-proplus-with-Configuration-Manager.md) 
@@ -134,6 +134,8 @@ Languages are downloaded and installed by using the Office Deployment Tool. Syst
 
 Regarding Language Packs, if you have many different Languages, you can include say top 3  Language Packs in package and rest could be published as an Optional leaving to users to download.
 
+
+Languages are downloaded and installed by using the Office Deployment Tool. System Center Configuration Manager packages will be broken up by regions, where each region will have its own set of languages that accompany the Office 365 ProPlus files. Enterprise Managed has adds each language to the self-service catalog for users to install post-Office deployment. Because the language packs are about 200 MB each, and self-service of languages outside the region is an occurrence that happens rarely, all languages are not replicated to all regions. The default language is the one that is most commonly used in that region, together with instructions on how to change the default language. For the self-service languages, such as a user in the LATAM region who wants to add German, the ** Product ID=" LanguagePack"** element in the Office Deployment Tool is used.
 xxxxx
 
 
@@ -190,7 +192,7 @@ Get a sign off and hand the settings over to the team that administers the group
 
 ## Step 9 - Review exit criteria
 
-Before beginning your deployment, make sure you've completed your deployment plan.
+Before beginning your deployment, make sure you've completed the planning exit criteria:
 
 |Plan                                              |Details                                 |Best practice                           |
 |--------------------------------------------------|----------------------------------------|----------------------------------------|
