@@ -18,16 +18,35 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Assess your environment and requirements for deploying Office 365 ProPlus with System Center Configuration Manager
 
-Follow the steps in this guide to assess your environment and requirements for deploying Office 365 ProPlus in your organization. This is the second article in the series:
+Follow the steps in this article to assess your environment and requirements for deploying Office 365 ProPlus in your organization. This is the second article in the series:
 
  - 1 - [Overview of deploying Office 365 ProPlus with System Center Configuration Manager](overview-deploy-office-365-proplus-with-Configuration-Manager.md)
  - 2 - **[Assess your environment and requirements](assess-deploy-office-365-proplus-with-Configuration-Manager.md)** 
  - 3 - [Create a deployment plan](plan-deploy-office-365-proplus-with-Configuration-Manager.md)
  - 4 - [Deploy Office 365 ProPlus](deploy-office-365-proplus-with-Configuration-Manager.md) 
  - 5 - [Manage updates to Office 365 ProPlus](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
-
   
 In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
+
+## Assessment checklist
+
+As you follow the steps in this article, you can use this checklist to track your progress:
+
+|Assessment         |Details                     |
+|-------------------|----------------------------|
+|Number of clients                                ||
+|Distribution of clients                          ||
+|Operating systems                                ||
+|Architectures (32-bit and 64-bit)                ||
+|Required languages                               ||
+|Existing versions of Office                      ||
+|System requirements                              ||
+|Office 365 licensing and accounts                ||
+|Network                                          ||
+|Configuration Manager infrastructure             ||
+|Application compatibility                        ||
+|Group policy settings                            ||
+
 
 ## Step 1 - Assess your client infrastructure and system requirements
 
