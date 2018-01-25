@@ -86,16 +86,16 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 Which users get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
-We recommend identifying a small group of representative users who can pilot new features of Office,and deploying the Semi-Annual (Targeted) channel to them. This group should cover critical business functions and their devices should include all your critical line-of-business applications, add-ins, and macros. This group--what we call the **Pilot Deployment Ring**--will receive updates six months ahead of the rest of your organization.
+We recommend identifying a small group of representative users who can pilot new features of Office,and deploying the Semi-Annual (Targeted) channel to them. This group should cover critical business functions and their devices should include all your critical line-of-business applications, add-ins, and macros. This group--the **Pilot Deployment Ring**--will receive updates six months ahead of the rest of your organization.
 
-You should deploy the Semi-Annual Channel to the remainder of your users as part of what we call the  **Broad Deployment Ring**. 
+You should deploy the Semi-Annual Channel to the remainder of your users as part of the  **Broad Deployment Ring**. 
 
 > [!NOTE]
-> **Best practice:** We recommend creating a Pilot Deployment Ring of a small group of representative users and deploying the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel (the Broad Deployment Ring)to the rest of your organization. 
+> **Best practice:** We recommend creating a Pilot Deployment Ring of a small group of representative users and deploying the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel (the Broad Deployment Ring)to the rest of your organization. This process ensures a six-month lead time for testing new  Office feature updates before they're deployed to your entire organization. 
 
 ## Step 3 - Choose what Office applications to deploy
 
-You can choose waht product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. When deciding what to deploy, consider the following: 
+You can choose what product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. When deciding what to deploy, consider the following: 
 
 - We recommend Office 365 ProPlus for most organizations, as that xx.
 - Microsoft supports different versions of Project and Visio running alongside  Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. We recommend xx as a best practice.
@@ -150,13 +150,6 @@ Wait till a specified deadline for installation
 ## Step 6 - Define your client packages
 Because Office 365 ProPlus is a customizable package, you should determine what application sets each business group should get. Applications that are initially excluded can be added back in later; specific applications can be removed after Office 365 ProPlus has already been installed. If an application isto be excluded from the Office 365 ProPlus deployment, you should create a plan to restore or replace the application. 
 
-## xxxStep 4 - Review and update your System Center Configuration Manager infrastructure
-
-[need to have a base configuration manager implementation--distribution points, client settings deployed]
-
-Current Branch, peer cache, network support.xx
-
-Peer cache: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache
 
 ## Step 6 - Define your deployment groups
 [investigate deployment rings vs validation rings]

@@ -19,13 +19,25 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 # Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
 
-This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager (Current Branch). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. 
+This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager (Current Branch).
 
-## Prerequisites
-- System Center Configuration Manager version 1702 or later.
-- Completed deployment plan for deploying Office 365 ProPlus with System Center Configuration Manager. To create the plan, see [Plan your deployment of Office 365 ProPlus with System Center Configuration Manager](plan-office-365-proplus-with-Configuration-Manager.md).
-- Client computers must have Internet access.  
-- End-user who runs the Office 365 Installer on the client computer must have **Read** and **Write** access to the content location share provided in the Configuration Manager wizard.
+## Before you begin
+- If you haven't already, complete the [asssessment](assess-deploy-office-365-proplus-with-Configuration-Manager.md) and [planning](plan-office-365-proplus.md) guidance for deploying Office 365 ProPlus.
+- This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/understand/introduction). 
+- Client computers must have Internet access to authentiate Office 365 ProPlus after installation.  
+- End-users who runs the Office 365 Installer on the client computer must have **Read** and **Write** access to the content location share provided in the Configuration Manager wizard.
+
+# Step 1 - Review and update your Configuration Manager infrastructure
+
+If you're not already, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard.  
+
+From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special configurations. There are, however, a few recommendations that can help with network capacity:
+
+Current Branch, peer cache, network support.xx
+
+Peer cache: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache
+
+
 
 ## Deploy Office 365 ProPlus  
 Beginning in version 1702, start the Office 365 Installer from the Office 365 Client Management dashboard for the initial Office 365 App installation. The wizard lets you configure Office 365 installation settings, download files from the Office Content Delivery Network (CDN), and create and deploy a script application for the files.
