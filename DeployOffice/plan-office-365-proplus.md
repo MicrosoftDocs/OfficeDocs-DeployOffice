@@ -18,7 +18,9 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus
 
-Follow the steps in this article to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. 
+Follow the steps in this article to plan your deployment of Office 365 ProPlus in your organization. As part of this plan, you will choose how to deploy Office, how to manage updates to Office, what deployment tool to use, and whether to deploy and install from a local source on your network or from the cloud.
+
+![Deployment framework for Office 365 ProPlus](images/plan-office-365-proplus-01.png)
 
 In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. 
 
@@ -26,12 +28,24 @@ In addition to this guidance, we recommend customers use [Microsoft Fastrack](ht
 
 If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of planning your deployment.
 
-## Step 1 - Plan how to manage your deployment 
+## Step 1 - Choose what tool you want to use to deploy Office 365 ProPlus 
 
-Because this is the planning article for deploying wth System Center Configuration Manager, you've likely already answered most of the questions about how to manage your deployment:
+Choose how you want to deploy Office 365 ProPlus:
 
-- Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
-- What tool do you want to use? We recommend  System Center Configuration Manager (Current Branch) for organizations that already use it to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
+- System Center Configuration Manager (Current Branch): We recommend this tool for organizations that already use Configuration Manager to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
+
+- Office Deployment Tool: We recommend this tool for organizations that do not have Configuration Manager and that still want to manage their deployment. Like Configuration Manager, the Office Deployment Tool gives you contorl over which Office applications are installed, how Office is updated, as well as the architecture, languages, and installation experience for your users. You can also use the ODT to download installation files that can be deployed using third-party software distribution tools.
+    
+- Self-install: You can also have your users install Office 365 ProPlus directly from the Office 365 portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. For more details self-installation, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
+
+Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
+
+> [!IMPORTANT]
+> “Should do” info as best practice; “must do” to complete task
+
+##Step 2 - Choose what tool you want to use to manage updates to Office
+
+You can manage updates with the same tool that you deploy Office, but there are You do not need to - Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
 - From what location do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   [This isn't necessarily true--some customers don't include source files, instead point to CDN. Not sure if you can do that in the wizard.]
 
 |Manage deployment            |Choices                   |Best practice                                 |
