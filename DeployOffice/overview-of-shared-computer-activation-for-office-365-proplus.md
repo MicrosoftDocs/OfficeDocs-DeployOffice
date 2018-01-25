@@ -22,6 +22,9 @@ description: "Shared computer activation lets you to deploy Office 365 ProPlus t
 
 # Overview of shared computer activation for Office 365 ProPlus
 
+**Applies to**
+-   Windows
+
 > [!IMPORTANT]
 > This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
