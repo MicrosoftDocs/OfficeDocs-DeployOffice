@@ -40,7 +40,7 @@ Choose how you want to deploy Office 365 ProPlus:
 
 Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
 
-> [!IMPORTANT]
+> [!Best Practice]
 > “Should do” info as best practice; “must do” to complete task
 
 ##Step 2 - Choose what tool you want to use to manage updates to Office
