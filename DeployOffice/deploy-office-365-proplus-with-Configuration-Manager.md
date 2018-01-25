@@ -29,20 +29,18 @@ This article gives step-by-step instructions for how to deploy Office 365 ProPlu
 
 # Step 1 - Review and update your Configuration Manager infrastructure
 
-If you're not already, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard.  
+From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special configuration. There are, however, a few recommendations that can help with network capacity:
 
-From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special configurations. There are, however, a few recommendations that can help with network capacity:
+- If you're not already, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard. For more details on the Current Branch, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use)
 
-Current Branch, peer cache, network support.xx
+- Peer Cache is a feature in Configuration Manager that can help with limited network capacity when deploying to  client devices in remote locations. When you enable it for client devices, they can share content with other clients directly from their local cache. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache).
 
-Peer cache: https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache
+> [!NOTE]
+> **Best practice:** Use the Current Branch of Configuration Manager and enable peer cache on client devices. When deploying Office, use the Office Client Management dashboard in Configuration Manager.
 
+## Create the Office applications   
+For each deloyment group that you defined in your deployment plan, create a unique Office application using the steps below. For example, if you have four deployment groups, you'll create four Office applications.
 
-
-## Deploy Office 365 ProPlus  
-Beginning in version 1702, start the Office 365 Installer from the Office 365 Client Management dashboard for the initial Office 365 App installation. The wizard lets you configure Office 365 installation settings, download files from the Office Content Delivery Network (CDN), and create and deploy a script application for the files.
-
-## To deploy Office 365 ProPlus to clients from the Office 365 Client Management dashboard
 1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
@@ -54,10 +52,22 @@ Beginning in version 1702, start the Office 365 Installer from the Office 365 Cl
 
 5. On the **Client Products** page, select the Office 365 suite that you use. Select the applications that you want to include. Select any additional Office products that should be included, and then click **Next**.
 6. On the **Client Settings** page, choose the settings to include, and then click **Next**.
-7. On the **Deployment** page, choose whether to deploy the application, and then click **Next**. <br/>If you choose not to deploy the package in the wizard, skip to step 9.
-8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
+7. On the **Deployment** page, select **No** to not deploy the application, and then click **Next**.
+8. On the **Confirm the settings** page, review the application settings, and then click **Close**.
+9. Repeat this process for each Office application you want to create.
+
+## Deploy the Office application
+
+
+
+
 9. Complete the wizard.
 10. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
+
+ <br/>If you choose not to deploy the package in the wizard, skip to step 9.
+8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
+
+
 
 After you create and deploy Office 365 ProPlus using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. To enable Office 365 clients to receive updates from Configuration Manager, see [Deploy Office 365 updates with Configuration Manager](#deploy-office-365-updates-with-configuration-manager).
 

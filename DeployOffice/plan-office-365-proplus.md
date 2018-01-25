@@ -43,7 +43,8 @@ Many organizations will use a combination of these tools for different users. Fo
 > [!NOTE]
 > **Best practice:** If you already use Configuration Manager, use that. If you don't, use the Office Deployment Tool--that can be used on its own or in conjunction with a third-party tool. For small groups of  users who are not frequently connected to your network, consider allowing them to self-install directly from the Office portal.     
 
-##Step 2 - Choose the source location of the Office installation files
+## Step 2 - Choose the source location of the Office installation files
+
 
 You can deploy Office directly from the cloud or download the Office files and deployment them from your network. In some cases, your choice of distribution method determines your source location:
 
@@ -51,11 +52,11 @@ You can deploy Office directly from the cloud or download the Office files and d
 - Office Deployment Tool from the cloud: You manage your deployment with the ODT and Office is installed on client devices directly from the Office CDN.
 - Office Deployment Tool from a local source: You manage your deployment with the ODT and Office is downloaded to a local source on your netowrk and installed on client devices from there. 
 - Self-install from the cloud: If users self-install from the Office portal, that installation will always use the Office CDN.
-- 
-  > [!NOTE]
+ 
+> [!NOTE]
 > **Best practice:** If you're using the Office Deployment Tool and if you have the network capacity, we recommend installing Office from the cloud. It's more efficient. If you use Configuration Manager, it will deploy from a local source. If you use self-install, your users will install from the cloud. 
 
-##Step 3 - Choose how to manage updates to Office
+## Step 3 - Choose how to manage updates to Office
 
 You can manage updates with the same tool that you deploy Office, but it's not required. Same with location: you can manage them from the cloud or from a local source.
 
@@ -86,16 +87,18 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 Which users get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
-We recommend identifying a small group of representative users who can pilot new features of Office,and deploying the Semi-Annual (Targeted) channel to them. This group should cover critical business functions and their devices should include all your critical line-of-business applications, add-ins, and macros. This group--the **Pilot Deployment Ring**--will receive updates six months ahead of the rest of your organization.
+To ensure you can test new updates to Office before deploying them to your entire organization, we recommend creating two deployment rings:
 
-You should deploy the Semi-Annual Channel to the remainder of your users as part of the  **Broad Deployment Ring**. 
+- Pilot deployment ring: A small group of representative users who can pilot new features of Office. This ring will use Semi-Annual (Targeted) channel. The users should include people from different areas of the organization and their devices should include all your critical line-of-business applications, add-ins, and macros. This ring will receive updates six months ahead of the rest of your organization.
+
+- Broad deployment ring: The remaining users in your organization will be part of the broad deployment ring an will use the Semi-Annual Channel. 
 
 > [!NOTE]
-> **Best practice:** We recommend creating a Pilot Deployment Ring of a small group of representative users and deploying the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel (the Broad Deployment Ring)to the rest of your organization. This process ensures a six-month lead time for testing new  Office feature updates before they're deployed to your entire organization. 
+> **Best practice:** We recommend creating a pilot peployment ring of a small group of representative users and deploying the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel to the rest of your organization (the Broad Deployment Ring). This process ensures a six-month lead time for testing new  Office feature updates before they're deployed to your entire organization. 
 
 ## Step 3 - Choose what Office applications to deploy
 
-You can choose what product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. When deciding what to deploy, consider the following: 
+You can choose what product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. When deciding what to deploy, consider the following: 
 
 - We recommend Office 365 ProPlus for most organizations, as that xx.
 - Microsoft supports different versions of Project and Visio running alongside  Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. We recommend xx as a best practice.
