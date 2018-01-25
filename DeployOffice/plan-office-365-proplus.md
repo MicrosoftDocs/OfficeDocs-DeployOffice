@@ -40,12 +40,27 @@ Choose how you want to deploy Office 365 ProPlus:
 
 Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
 
-> [!Best Practice]
-> “Should do” info as best practice; “must do” to complete task
+> [!NOTE]
+> **Best practice:** If you already use Configuration Manager, use that. If you don't, use the Office Deployment Tool. If you have the network bandwidth, allow remote users to self-install directly from the Office portal.    
+
+
+
 
 ##Step 2 - Choose what tool you want to use to manage updates to Office
 
-You can manage updates with the same tool that you deploy Office, but there are You do not need to - Do you want to manage the deployment? We recommend managed for enterprise deployments, because that gives you control over how and when Office and Office updates are installed on your client computers.  
+You can manage updates with the same tool that you deploy Office, but it's not required. Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office Content Delivery Network. In the case of automatic updates, you still control their frequency--it's defined as part of the initial deployment. 
+
+Choose how to manage updates:
+
+- System Center Configuration Manager (Current Branch):  If you deploy  Office with System Center Configuration, you can also use it to manage Office updates. The benefits are the same:  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
+
+- Office Deployment Tool: If you don't We recommend this tool for organizations that do not have Configuration Manager and that still want to manage their deployment. Like Configuration Manager, the Office Deployment Tool gives you contorl over which Office applications are installed, how Office is updated, as well as the architecture, languages, and installation experience for your users. You can also use the ODT to download installation files that can be deployed using third-party software distribution tools.
+    
+- Self-install: You can also have your users install Office 365 ProPlus directly from the Office 365 portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. For more details self-installation, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
+
+Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
+
+
 - From what location do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   [This isn't necessarily true--some customers don't include source files, instead point to CDN. Not sure if you can do that in the wizard.]
 
 |Manage deployment            |Choices                   |Best practice                                 |
