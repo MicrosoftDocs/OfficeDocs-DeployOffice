@@ -28,9 +28,9 @@ In addition to this guidance, we recommend customers use [Microsoft Fastrack](ht
 
 If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of planning your deployment.
 
-## Step 1 - Choose what tool you want to use to deploy Office 365 ProPlus 
+## Step 1 - Choose how you want to deploy Office 365 ProPlus 
 
-Choose how you want to deploy Office 365 ProPlus:
+Choose what tool you want to use to deploy Office 365 ProPlus:
 
 - System Center Configuration Manager (Current Branch): We recommend this tool for organizations that already use Configuration Manager to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
 
@@ -41,89 +41,57 @@ Choose how you want to deploy Office 365 ProPlus:
 Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
 
 > [!NOTE]
-> **Best practice:** If you already use Configuration Manager, use that. If you don't, use the Office Deployment Tool. If you have the network bandwidth, allow remote users to self-install directly from the Office portal.    
+> **Best practice:** If you already use Configuration Manager, use that. If you don't, use the Office Deployment Tool--that can be used on its own or in conjunction with a third-party tool. For small groups of  users who are not frequently connected to your network, consider allowing them to self-install directly from the Office portal.     
 
+##Step 2 - Choose the source location of the Office installation files
 
+You can deploy Office directly from the cloud or download the Office files and deployment them from your network. In some cases, your choice of distribution method determines your source location:
 
+- Configuration Manager from a local source: If you use Configuration Manager, you will download the files from the Office CDN and deploy them from distribution points on your network.
+- Office Deployment Tool from the cloud: You manage your deployment with the ODT and Office is installed on client devices directly from the Office CDN.
+- Office Deployment Tool from a local source: You manage your deployment with the ODT and Office is downloaded to a local source on your netowrk and installed on client devices from there. 
+- Self-install from the cloud: If users self-install from the Office portal, that installation will always use the Office CDN.
+- 
+  > [!NOTE]
+> **Best practice:** If you're using the Office Deployment Tool and if you have the network capacity, we recommend installing Office from the cloud. It's more efficient. If you use Configuration Manager, it will deploy from a local source. If you use self-install, your users will install from the cloud. 
 
-##Step 2 - Choose what tool you want to use to manage updates to Office
+##Step 3 - Choose how to manage updates to Office
 
-You can manage updates with the same tool that you deploy Office, but it's not required. Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office Content Delivery Network. In the case of automatic updates, you still control their frequency--it's defined as part of the initial deployment. 
+You can manage updates with the same tool that you deploy Office, but it's not required. Same with location: you can manage them from the cloud or from a local source.
 
 Choose how to manage updates:
 
+- Manage updates automatically from the cloud: Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office Content Delivery Network. You still control frequency of the updates--it's defined as part of the initial deployment--but it's much less work for the administrators.  
+
 - System Center Configuration Manager (Current Branch):  If you deploy  Office with System Center Configuration, you can also use it to manage Office updates. The benefits are the same:  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
 
-- Office Deployment Tool: If you don't We recommend this tool for organizations that do not have Configuration Manager and that still want to manage their deployment. Like Configuration Manager, the Office Deployment Tool gives you contorl over which Office applications are installed, how Office is updated, as well as the architecture, languages, and installation experience for your users. You can also use the ODT to download installation files that can be deployed using third-party software distribution tools.
+- Office Deployment Tool: Like Configuration Manager, the Office Deployment Tool gives you more control over how Office is updated. You can also use the ODT to download update files that can be deployed using third-party software distribution tools.
+
+- Self-manage. All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. 
     
-- Self-install: You can also have your users install Office 365 ProPlus directly from the Office 365 portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. For more details self-installation, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
+As with installation, you can use a combination of methods for different users. 
 
-Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
+> [!NOTE]
+> **Best practice:** We recommend managing your updates automatically from the cloud. It might require more network capacity, but it's more efficient.
 
+## Step 2 - Choose your udpate channels
 
-- From what location do you want to deploy the Office source files? When deploying Office with Configuration Manager, the source files must be downloaded and availalbe on your local network, rather than in the cloud.   [This isn't necessarily true--some customers don't include source files, instead point to CDN. Not sure if you can do that in the wizard.]
+With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you deploy one of three different update channels to different groups of users:
 
-|Manage deployment            |Choices                   |Best practice                                 |
-|-------------------------|-------------------------|--------------------------------------|
-|Management               |Managed|               |Managed is recommended for enterprise deployments|
-|Deployment tool          |Configuration Manager (Current Branch) </br> Office Deployment Tool |Configuration Manager is recommended for organizations already using it|
-|Source location          |Local </br> Cloud                  |Local is required by Configuration Manager|
-|
+- Monthly Channel: Provide users with the newest features of Office as soon as they're available.
 
-For more details on these choices, including other options, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md).
+- Semi-Annual Channel: Provide users with new features of Office every six months, in January and July
 
-## Step 2 - Plan how to manage updates
+- Semi-Annual Channel (Targeted): Provide pilot users and application compatibility testers the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
 
-xxxsing the existing collections, approximately 1,500 users will get Semi-Annual Channel (Targeted), and approximately 18,471 users will get Semi-Annual Channel. Approximately 25 development, technology owner, or business lead roles will self-install and self-manage from CDN with Monthly Channel. These Monthly Channel users will receive features ahead of Semi-Annual Channel (Targeted) and Semi-Annual Channel.
+Which users get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
-xxxxAny self-installation users
-xxxxxareas.  It should be a Microsoft mandate to take updates from the cloud unless there are a small number of things that restrict a customer from doing so…and the FTC should be helping to push that message to all of our customers.
+We recommend identifying a small group of representative users who can pilot new features of Office,and deploying the Semi-Annual (Targeted) channel to them. This group should cover critical business functions and their devices should include all your critical line-of-business applications, add-ins, and macros. This group--what we call the **Pilot Deployment Ring**--will receive updates six months ahead of the rest of your organization.
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-Automatic from CDN
-Default option – provides least control
-Throttled going out and coming down.
-Updates come from Office CDN when available, scheduled task checks for newer version daily
+You should deploy the Semi-Annual Channel to the remainder of your users as part of what we call the  **Broad Deployment Ring**. 
 
-Automatic from System Center Configuration Manager
-O365 build gets published to WSUS when released to Office CDN
-System Center Configuration Manager can leverage WSUS to sync new builds to site servers
-Builds get distributed to DPs for client machines to update against
-Requires System Center Configuration Manager minimum version 1602, WSUS minimum version 4.0, Object COM enabled for client
-
-
-Starting with version 1706 of System Center Configuration Manager a new option is available allowing administrators to enable clients to fall back to the Microsoft Office CDN when deploying Office 365 ProPlus updates to client machines.  With this option enabled, clients will first check their available distribution points for the specified update.  If the update cannot be found the client will then get the specified update directly from the Microsoft Office CDN.
- 
-This can be helpful for situations where machines may not have a dedicated or reliable connection to the corporate network and other situations where it is not necessary to manage the update content for a particular update on premises.
- 
-To enable this feature:
-Each time you configure an update for deployment (either manually or using an ADR) you can choose to enable this setting by simply checking the box labeled ‘If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates.’ on the Download Settings tab of the Deployment Settings Properties dialog.
- 
-
- 
-When you deploy an update with this setting enabled you can expect the following behavior:
-the client will check the available distribution points for the specified update before getting the update from the Microsoft Office CDN
-the client will get the update from the Microsoft CDN if the client does not have a connection to the LAN after being signaled to update
-the client may get language pack files related to the update if these files are not available on the distribution points
-the client may switch to the Microsoft Office CDN during an update from a DP if a connection to the LAN is lost
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
-
-To plan for managing updates in your organization, answer the following questions:
-
-- How do you want to manage updates? We recommend managing updates automaticaly from the cloud. Updates will be installed directly on client devices the Office CDN. You can also manage updates with System Center Configuration Manager.   
-- From what location do you want to deploy  Office updates? We recommend the cloud, as noted above. If you decide to manage updates with Configuration Manager, you will download the updates and manage them from a local source.   
-- What validation rings do you want to use? We recommend defining a targeted ring with a small group of devices and a broad ring with the rest of your devices. Devices in the Targeted ring will receive updates earlier and validate those updates in your environment. After validation, you can deploy the updates to the devices in the Broad ring.   
-- What update channels do you want to use? We recommend using two update channels, one for each of the validation rings. For the targeted ring, use the Semi-Annual Channel (Targeted), which releases feature updates in March and September. For the broad ring, use the Semi-Annual Channel, which releases feature updates four months after the targeted channel.
-
-|Manage updates    |Choice                   |Best practices                                 |
-|-------------------------|-------------------------|--------------------------------------|
-|Update management        |Unmanaged <br/> OR <br/> Managed <br/> |Recommend unmanaged when possible|
-|Update channels      |         |         |
-|Validation rings      |         |         |
-|
+> [!NOTE]
+> **Best practice:** We recommend creating a Pilot Deployment Ring of a small group of representative users and deploying the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel (the Broad Deployment Ring)to the rest of your organization. 
 
 ## Step 3 - Choose what Office applications to deploy
 
