@@ -1,5 +1,5 @@
 ---
-title: "Assess your Deployment of Office 365 ProPlus with System Center Configuration Manager"
+title: "Assess your deployment of Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -13,12 +13,12 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid:
-description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus with System Center Configuration Manager. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to assess your enivorment and requirements for deploying Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Assess your environment and requirements for deploying Office 365 ProPlus with System Center Configuration Manager
+# Assess your environment and requirements for deploying Office 365 ProPlus
 
-Follow the steps in this article to assess your environment and requirements prior to deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
+Follow the steps in this article to assess your environment and the requirements prior to deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
 
 In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. Migration assistance for mail and files is available with the purchase of 500 or more seats.
 
