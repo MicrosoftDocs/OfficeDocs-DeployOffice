@@ -18,7 +18,7 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 # Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
 
-This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager (Current Branch). Configuration Manager is a complex tool with many options for packaging and deploying software; this article gives the most direct method for deploying Office, with links to more details. 
+This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager (Current Branch). 
 
 ## Before you begin
 - If you haven't already, complete the [asssessment](assess-deploy-office-365-proplus-with-Configuration-Manager.md) and [planning](plan-office-365-proplus.md) guidance for deploying Office 365 ProPlus.
