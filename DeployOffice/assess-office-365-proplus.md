@@ -62,9 +62,8 @@ If you plan to configure and manage Office with Group Policy settings, review th
 
 Before planning your deployment, make sure you've completed all the steps for assessing your environment and requirements.
 
-]
-|Assessment         |Complete                     |
-|-------------------|----------------------------|
+|Assessment         |Status            |
+|-------------------|------------------|
 |Number of clients                                ||
 |Distribution of clients                          ||
 |Operating systems                                ||
