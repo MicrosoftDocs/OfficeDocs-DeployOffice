@@ -30,16 +30,9 @@ As part of this review, make sure that your client devices meet or exceed the mi
 
 In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
 
-> [!NOTE]
-> **Why do this:** In addition to ensuring your client devices meet the minimum requirements, your client infastruture determines your deployment plan. You will build different Office packages and deploy those Office packages to different groups of users depending on the architecture and language requirements. 
-
 ## Step 2 - Assess your Office 365 licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).
-
-> [!NOTE]
-> **Why do this:** Office 365 ProPlus cannot be activated for your users without accounts and licenses in place. 
-
 
 ## Step 3 - Assess your network capability
 
@@ -51,9 +44,6 @@ Review your network capability, including bandwidth and distribution of client d
 
 In addition, Office 365 ProPlus requires the following ports and protocols to be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
-> [!NOTE]
-> **Why do this:** In addition to ensuring Office 365 ProPlus can authenticate and be updated, reviewing your network capacity will determine how you want to deploy and manage Office 365 ProPlus. 
-
 ## Step 4 - Assess application compatibility
 
 Identify your Office add-ins--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
@@ -64,21 +54,16 @@ Identify your Office add-ins--including VBA scripts, macros, third-party add-ins
  
 As part of the [planning article](plan-deploy-office-365-proplus-with-Configuration-Manager.md), you will define an update process that tests your add-ins with future Office updates. 
 
-> [!NOTE]
-> **Why do this:** Testing for application compatibility ensures critical add-ins continue to work after deploying Office 365 ProPlus. 
-
 ## Step 5 - Review new Group policy settings
 
 If you plan to configure and manage Office with Group Policy settings, review the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus. You can download an [Excel file](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. Note that all Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
 
-> [!NOTE]
-> **Why do this:** If you use Group Policy, these settings help define the Office experience for your users. 
+## Step 6 - Review exit criteria 
 
-## Step 6 - Review exit criteria [xxx]
+Before planning your deployment, make sure you've completed all the steps for assessing your environment and requirements.
 
-Before creating your deployment, make sure you've completed all the steps for assessing your environment and requirements.
-
-|Assessment         |Details                     |
+]
+|Assessment         |Complete                     |
 |-------------------|----------------------------|
 |Number of clients                                ||
 |Distribution of clients                          ||
@@ -86,8 +71,8 @@ Before creating your deployment, make sure you've completed all the steps for as
 |Architectures (32-bit and 64-bit)                ||
 |Required languages                               ||
 |Existing versions of Office                      ||
-|System requirements                              |Client requirements match those for [Office Professional Plus 2016](https://products.office.com/en-us/office-system-requirements#Office2016-suites-section)<br>[System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements)|
-|Office 365 licensing and accounts                |All users have accounts and Office 365 licenses that include Office 365 ProPlus.<br> For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).|
+|System requirements                              ||
+|Office 365 licensing and accounts                ||
 |Network                                          ||
 |Application compatibility                        ||
 |Group policy settings                            ||

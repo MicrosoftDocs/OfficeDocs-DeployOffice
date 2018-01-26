@@ -26,8 +26,7 @@ This article gives step-by-step instructions for how to deploy Office 365 ProPlu
 - Client computers must have Internet access to authentiate Office 365 ProPlus after installation.  
 - End-users who run the Office 365 Installer on the client computer must have **Read** and **Write** access to the content location share provided in the Configuration Manager wizard.
 
-# Step 1 - Review and update your Configuration Manager infrastructure
-
+## Step 1 - Review and update your Configuration Manager infrastructure
 From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special configuration. There are, however, a couple points to consider:
 
 - If you're not already, we recommend you use the Current Branch of Configuration Manager. With this version, you can deploy and manage Office from the Office Client Management dashboard. For more details on the Current Branch, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use)
@@ -43,7 +42,7 @@ Make sure that you have reviewed and approved the group policy settings as part 
 ## Step 3 - Review your collections   
 The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager.  For each deloyment group, make sure you have a specific collection. For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/collections/introduction-to-collections). 
 
-## Step 4 - Remove existing versions of Office    
+## Step 4 - Remove existing versions of Office  
 > [!IMPORTANT]
 > REVIEWERS: I'm not sure how to tackle this procedure without taking away all the simplicity we've been adding to Configuration Manager deployment of Office. As far as I can tell, it requires (1) getting the two versions of OffScrub, (2) adding those versions to each Office package, (3) updating the task sequence that installs Office to also remove Office, first. If an admin does that, they can no longer use the built-in Office installer wizard to deploy Office, right? Or am I missing something?
 
@@ -51,6 +50,8 @@ The deployment groups that you defined in your deployment plan are represented a
 For each deloyment group that you defined in your deployment plan, create a unique Office application using the steps below. For example, if you have four deployment groups, you'll create four Office applications and deploy them to four different collections.
 > [!IMPORTANT]
 > REVIEWERS: I have screen shots for all the steps below, but I think it's overkill. Let me know if you think it's warranted.
+
+![Office 365 Installer](images/deploy-office-365-proplus-SCCM-02.png)
 
 1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
@@ -64,8 +65,8 @@ For each deloyment group that you defined in your deployment plan, create a uniq
 5. On the **Client Products** page, select the Office 365 suite that you use. Select the applications that you want to include. Select any additional Office products that should be included, and then click **Next**.
 6. On the **Client Settings** page, choose the settings to include, and then click **Next**.
 7. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**.
-> [!NOTE]
-> If you choose not to deploy the package in the wizard, you can deploy or edit the application later from **Software Library** > **Overview** > **Application Management** > **Applications**. For details on deploying an application, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
+    > [!NOTE]
+    > If you choose not to deploy the package in the wizard, you can deploy or edit the application later from **Software Library** > **Overview** > **Application Management** > **Applications**. For details on deploying an application, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
 8. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined.
 9. On the **Content** page, choose distribution points to host the content, and then click **Next**. 
 10. On the **Deployment Settings** page, choose how the software should be deployed, and then click **Next**. 
@@ -82,7 +83,7 @@ For each deloyment group that you defined in your deployment plan, create a uniq
 > [!IMPORTANT]
 > After you create and deploy Office 365 ProPlus using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. If you want to enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 
-## Exit criteria
+## Review exit criteria
 To make sure you have deployed the correct Office package to your client devices, you can use the Office 365 Client Management dashboard. This dashboard provides charts for the following information:
 
 - Number of Office 365 clients
@@ -92,8 +93,12 @@ To make sure you have deployed the correct Office package to your client devices
 
 To view the Office 365 Client Management dashboard in the Configuration Manager console, go to **Software Library** > **Overview** > **Office 365 Client Management**. At the top of the dashboard, use the **Collection** drop-down setting to filter the dashboard data by members of a specific collection. 
 
-> [!IMPORTANT]
-> If the data is not displaying, you might need to enable hardwar inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](\sccm\core\clients\manage\configure-hardware-inventory).
+![Office 365 Client Management dashboard](images/deploy-office-365-proplus-SCCM-01.png)
 
 In the dashboard, make sure you see the Office versions, languages, and update channels that you deployed for each collection.
 
+> [!IMPORTANT]
+> If the data is not displaying, you might need to enable hardwar inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](\sccm\core\clients\manage\configure-hardware-inventory).
+
+## Next steps
+[Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
