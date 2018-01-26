@@ -102,3 +102,43 @@ Managed deployment
 xx
 
 
+
+# Manage Office 365 ProPlus with Configuration Manager
+
+*Applies to: System Center Configuration Manager (Current Branch)*
+
+Configuration Manager lets you manage Office 365 ProPlus apps in the following ways:
+
+- [Office 365 Client Management dashboard](#office-365-client-management-dashboard): Beginning in Configuration Manager version 1610, you can review Office 365 client information from the Office 365 Client Management dashboard.    
+
+- [Deploy Office 365 apps](#deploy-office-365-apps): Beginning in version 1702, you can start the Office 365 Installer from the Office 365 Client Management dashboard to make the initial Office 365 App installation experience easier. The wizard lets you configure Office 365 installation settings, download files from Office Content Delivery Networks (CDNs), and create and deploy a script application with the content.    
+
+- [Deploy Office 365 updates](#deploy-office-365-updates): Beginning in Configuration Manager version 1602, you can manage Office 365 client updates by using the software update management workflow. When Microsoft publishes a new Office 365 client update to the Office Content Delivery Network (CDN), Microsoft also publishes an update package to Windows Server Update Services (WSUS). After Configuration Manager synchronizes the Office 365 client update from the WSUS catalog to the site server, the update is available to deploy to clients.    
+
+- [Add languages for Office 365 update downloads](#add-languages-for-office-365-update-downloads): Beginning in Configuration Manager version 1610, you can add support for Configuration Manager to download updates for any languages supported by Office 365. Meaning Configuration Manager does not have to support the language as long as Office 365 does.  
+
+- [Change the update channel](#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager): You can use group policy to distribute a registry key value change to Office 365 clients to change the update channel.
+
+
+## Office 365 Client Management dashboard  
+The Office 365 Client Management dashboard provides charts for the following information:
+
+- Number of Office 365 clients
+- Office 365 client versions
+- Office 365 client languages
+- Office 365 client channels     
+  For more information, see [Overview of update channels for Office 365 ProPlus](https://technet.microsoft.com/library/mt455210.aspx).
+
+To view the Office 365 Client Management dashboard in the Configuration Manager console, go to **Software Library** > **Overview** > **Office 365 Client Management**. At the top of the dashboard, use the **Collection** drop-down setting to filter the dashboard data by members of a specific collection.
+
+### Display data in the Office 365 Client Management dashboard
+The data that is displayed in the Office 365 Client Management dashboard comes from hardware inventory. Enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class for data to display in the dashboard.
+#### To display data in the Office 365 Client Management dashboard
+1. Enable hardware inventory, if it is not yet enabled. For details, see [Configure hardware inventory](\sccm\core\clients\manage\configure-hardware-inventory).
+2. In the Configuration Manager console, navigate to **Administration** > **Client Settings** > **Default Client Settings**.  
+3. On the **Home** tab, in the **Properties** group, click **Properties**.  
+4. In the **Default Client Settings** dialog box, click **Hardware Inventory**.  
+5. In the **Device Settings** list, click **Set Classes**.  
+6. In the **Hardware Inventory Classes** dialog box, select **Office 365 ProPlus Configurations**.  
+7.  Click **OK** to save your changes and close the **Hardware Inventory Classes** dialog box. <br/>The Office 365 Client Management dashboard starts displaying data as hardware inventory is reported.
+

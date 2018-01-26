@@ -34,17 +34,16 @@ Choose what tool you want to use to deploy Office 365 ProPlus:
 
 - System Center Configuration Manager (Current Branch): We recommend this tool for organizations that already use Configuration Manager to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
 
-- Office Deployment Tool: We recommend this tool for organizations that do not have Configuration Manager and that still want to manage their deployment. Like Configuration Manager, the Office Deployment Tool gives you contorl over which Office applications are installed, how Office is updated, as well as the architecture, languages, and installation experience for your users. You can also use the ODT to download installation files that can be deployed using third-party software distribution tools.
+- Office Deployment Tool: We recommend this tool for organizations that do not have Configuration Manager and that still want to manage their deployment. Like Configuration Manager, the Office Deployment Tool gives you contorl over which Office applications are installed, how Office is updated, as well as the architecture, languages, and installation experience for your users. You can also use the ODT to download installation files that can be deployed using third-party software distribution tools. For more details, see [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
     
-- Self-install: You can also have your users install Office 365 ProPlus directly from the Office 365 portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. For more details self-installation, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
+- Self-install: You can also have your users install Office 365 ProPlus directly from the Office 365 portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. For more details, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
 
-Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of remote workers.
+Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
 
 > [!NOTE]
-> **Best practice:** If you already use Configuration Manager, use that. If you don't, use the Office Deployment Tool--that can be used on its own or in conjunction with a third-party tool. For small groups of  users who are not frequently connected to your network, consider allowing them to self-install directly from the Office portal.     
+> **Best practice:** If you already use Configuration Manager, use it for deploying Office. If you don't use Configuration Manager, use the Office Deployment Tool--that can be used on its own or in combination with a third-party tool. For small groups of  users who are not frequently connected to your network, consider allowing them to self-install directly from the Office portal.     
 
 ## Step 2 - Choose the source location of the Office installation files
-
 
 You can deploy Office directly from the cloud or download the Office files and deployment them from your network. In some cases, your choice of distribution method determines your source location:
 
@@ -62,11 +61,11 @@ You can manage updates with the same tool that you deploy Office, but it's not r
 
 Choose how to manage updates:
 
-- Manage updates automatically from the cloud: Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office Content Delivery Network. You still control frequency of the updates--it's defined as part of the initial deployment--but it's much less work for the administrators.  
+- Manage updates automatically from the cloud: Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office Content Delivery Network. You still control frequency and type of update--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
 
-- System Center Configuration Manager (Current Branch):  If you deploy  Office with System Center Configuration, you can also use it to manage Office updates. The benefits are the same:  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
+- System Center Configuration Manager (Current Branch):  If you deploy  Office with System Center Configuration, you can also use it to manage Office updates. The benefits are the same:  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings. However, there's a higher administrative overhead.
 
-- Office Deployment Tool: Like Configuration Manager, the Office Deployment Tool gives you more control over how Office is updated. You can also use the ODT to download update files that can be deployed using third-party software distribution tools.
+- Office Deployment Tool: Like Configuration Manager, the Office Deployment Tool gives you more control over how Office is updated. You can also use the ODT to download update files that can be deployed using third-party software distribution tools. In both cases, there is an administrative cost.
 
 - Self-manage. All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. 
     
@@ -74,6 +73,9 @@ As with installation, you can use a combination of methods for different users.
 
 > [!NOTE]
 > **Best practice:** We recommend managing your updates automatically from the cloud. It might require more network capacity, but it's more efficient.
+
+> [!IMPORTANT]
+> REVIEWERS: What else can we say about why? I think more secure is overstating it.
 
 ## Step 2 - Choose your udpate channels
 
@@ -94,22 +96,15 @@ To ensure you can test new updates to Office before deploying them to your entir
 - Broad deployment ring: The remaining users in your organization will be part of the broad deployment ring an will use the Semi-Annual Channel. 
 
 > [!NOTE]
-> **Best practice:** We recommend creating a pilot peployment ring of a small group of representative users and deploying the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel to the rest of your organization (the Broad Deployment Ring). This process ensures a six-month lead time for testing new  Office feature updates before they're deployed to your entire organization. 
+> **Best practice:** Create a pilot peployment ring of a small group of representative users and deploy the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel to the rest of your organization (the Broad Deployment Ring). This process ensures a six-month lead time for testing new Office updates before they're deployed to your entire organization. 
 
 ## Step 3 - Choose what Office applications to deploy
 
-You can choose what product suite to deploy and, within the suite, which Office applications to include. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. When deciding what to deploy, consider the following: 
+You can deploy all the Office applications in Office 365 ProPlus or exlude some. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. 
 
-- We recommend Office 365 ProPlus for most organizations, as that xx.
+When deciding what to deploy, consider the following: 
+
 - Microsoft supports different versions of Project and Visio running alongside  Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. We recommend xx as a best practice.
-
-
-
-|What to deploy    |Choices                   |Best practices                                 |
-|-------------------------|-------------------------|--------------------------------------|
-|Product suite      |         |         |
-|Office apps      |         |         |
-|Project and Visio      |         |         |
 
 ## Step 3 - Choose what architectures to deploy 
 
@@ -146,18 +141,8 @@ Enforce installation and reboot
 Wait till a specified deadline for installation
 
 
-|Installation experience    |Choices                   |Notes                                 |
-|-------------------------|-------------------------|--------------------------------------|
-|Install experience      |         |         |
-
-## Step 6 - Define your client packages
-Because Office 365 ProPlus is a customizable package, you should determine what application sets each business group should get. Applications that are initially excluded can be added back in later; specific applications can be removed after Office 365 ProPlus has already been installed. If an application isto be excluded from the Office 365 ProPlus deployment, you should create a plan to restore or replace the application. 
-
-
 ## Step 6 - Define your deployment groups
-[investigate deployment rings vs validation rings]
-
-Deployment groups are collections of clients that will receive the same Office bits and the same updates from the same channel. For example, you can define one deployment group for all the devices in your organization meet the following requirements:
+Deployment groups are collections of clients that will receive the same Office bits and the same updates from the same channel. For example, you can define one deployment group for all the devices in your organization that meet the following requirements:
 
 - Tool: Office will be installed by Configuration Manager (Current Branch)
 - Updates: Office updates will be managed automatically from the cloud    
@@ -168,11 +153,14 @@ Deployment groups are collections of clients that will receive the same Office b
 - Install experience: Office will install silently on all clients
 
 Clients with different requirements, such as 32-bit architecture or different update, will need to be in different deployment groups. 
+
+## Step 6 - Define your client packages
+Based on your Because Office 365 ProPlus is a customizable package, you should determine what application sets each business group should get. Applications that are initially excluded can be added back in later; specific applications can be removed after Office 365 ProPlus has already been installed. If an application isto be excluded from the Office 365 ProPlus deployment, you should create a plan to restore or replace the application. 
+
 ## Step 7 - Define your group policy settings
 
-xxxOffice offers about 3,000 group policy settings to allow a granular control of security, privacy, and user experience. In most cases, only a subset of these are needed to adjust the configuration to the needs, requirements, and intended user experience of an organization. It is important to include other departments that are responsible for IT security, data protection, and privacy early to get a sign-off of the GPOs before the actual deployment happens.
+Office offers about 3,000 group policy settings to allow a granular control of security, privacy, and user experience. In most cases, only a subset of these are needed for an organization. 
 
-Call to action
 Review Best practices: Group policy and Office 365 ProPlus with more than 250 proven, commonly set policies for users and computers. Check the listed additional settings.
 Adjust the settings to fit your needs and requirements.
 Get a Resultant Set of Policy (RSOP) of today's policies and review them. Identify settings not covered in the Best Practices for Office 365 ProPlus, and consider adding them if the setting is still needed.
@@ -180,25 +168,31 @@ Check which settings where introduced in Office 2013 and Office 2016 and conside
 Identify which entity in your organization must sign off security and privacy related settings, present them and get a sign-off.
 Get a sign off and hand the settings over to the team that administers the group Policy Settings. The Best Practices settings can easily be imported into your environment.
 
+## Step 8 - Plan your upgrade from existing versions of Office 
+Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 
-## Step 7 - Plan for shared computers
+## Step 7 - Plan for shared computers (optional)
+> [!IMPORTANT]
+> REVIEWERS: Will include short note with links.
 
-## Step 8 - Plan for deploying Office 365 ProPlus to Macs
-- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
+## Step 8 - Plan for deploying Office 365 ProPlus to Macs (optional)
+> [!IMPORTANT]
+> REVIEWERS: Will include short note with links. But: I don't refer to this as part of the resulting deployment, so not sure if it's necessary here.
 
-## Step 8 - Plan your upgrade from existing versions of Office
-- Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 
 ## Step 9 - Review exit criteria
-
 Before beginning your deployment, make sure you've completed the planning exit criteria:
 
-|Plan                                              |Details                                 |Best practice                           |
-|--------------------------------------------------|----------------------------------------|----------------------------------------|
+> [!IMPORTANT]
+> TO ADD: Table of all planning decision, once those are locked
 
 ## Next steps
 
-Deploy Office 365 ProPlus with System Center Configuration Manager.
+Depending on your deployment plan, go to one of the following articles:
+
+- [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
+- [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
+- [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
 
 fXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
