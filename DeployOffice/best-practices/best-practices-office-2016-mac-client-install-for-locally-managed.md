@@ -3,7 +3,7 @@ title: "Best practices Office 2016 Mac client install for locally managed"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 6/1/2017
+ms.date: 1/29/2018
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-administration
@@ -30,7 +30,7 @@ Administrators can download the MPKG files from the Office 365 Portal Software P
   
 1. Sign in to the Office 365 portal as an Office 365 administrator.
     
-2. Go to the[Office 365 admin center](https://support.office.com/en-us/article/About-the-old-Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547?ui=en-US&amp;rs=en-US&amp;ad=US) and select **Service Settings > User software**. 
+2. Go to the [Office 365 admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23) and select **Service Settings > User software**. 
     
 3. Under **Software for Mac**, expand **Office for Mac** and then click **Download** to begin downloading the installer package file. The installer package file is named **Microsoft_Office_2016_Installer.pkg**.
     
