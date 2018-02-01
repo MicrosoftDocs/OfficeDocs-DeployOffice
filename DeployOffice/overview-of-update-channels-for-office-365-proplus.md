@@ -3,7 +3,7 @@ title: "Overview of update channels for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 10/11/2017
+ms.date: 2/1/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -143,7 +143,7 @@ If you use the Office Deployment Tool, you can use the Channel attribute in the 
 
 The name of the Group Policy setting is Update Channel. You can find this policy setting under Computer Configuration\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates. When you enable the Group Policy setting you can select the appropriate update channel from a drop-down list. 
   
-You can also provide users with Semi-Annual Channel (Targeted) by selecting them for the [First Release program for Office 365](https://support.office.com/article/3B3ADFA4-1777-4FF0-B606-FB8732101F47). If you do this, those users can install Semi-Annual Channel (Targeted) directly from the **Software** page in the Office 365 portal.
+You can also provide users with Semi-Annual Channel (Targeted) by selecting them for the [Targeted release program for Office 365](https://support.office.com/article/3B3ADFA4-1777-4FF0-B606-FB8732101F47). If you do this, those users can install Semi-Annual Channel (Targeted) directly from the **Software** page in the Office 365 portal.
  
 <a name="BKMK_AddInfo"> </a>
 ## Additional information about the update channels for Office 365 ProPlus
