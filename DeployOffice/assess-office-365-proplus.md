@@ -3,7 +3,7 @@ title: "Assess your deployment of Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 2/15/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,6 +20,7 @@ description: "This article gives step-by-step instructions for how to assess you
 
 Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
 
+[FROM BILL: Include tooling and other software that can help with deployment]
 In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.
 
 ## Step 1 - Assess your client infrastructure and system requirements
@@ -32,11 +33,14 @@ In addition, you should review the system requirements for your Office server wo
 
 ## Step 2 - Assess your Office 365 licensing and accounts
 
-Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US).
+Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/en-us/article/Deploy-Office-365-Enterprise-for-your-organization-ee73dafb-be54-492e-bcfd-0fbfb5f65e94?ui=en-US&rs=en-US&ad=US). [FROM BILL: Fix link and get better link with managing licenses in the enterprise. Be aware of issues with PowerShell management]
 
 ## Step 3 - Assess your network capability
 
 Review your network capability, including bandwidth and distribution of client devices, based on the following considerations:
+
+[FROM BILL: Binary compression and for cloud--ramp--when people get what. Takes five business days for people to get what they want--veryify that date. This does not all turn on at once. On-premises can create more problems. We will incorporate more network guidance from FastTrack post airlift next month--cases where we have a narrow pipe to remote sites. Use peer cache or cloud in those cases.]
+
 
 - Deploying Office 365 ProPlus: The installation files for Office 365 ProPlus are approximately 850 mb for the core files plus approximately 200 mb for each language deployed. 
 - Managing updates to Office 365 ProPlus: Channel updates vary in size, but you can review recent download sizes [here](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md). 
@@ -48,19 +52,23 @@ In addition, Office 365 ProPlus requires the following ports and protocols to be
 
 Identify your Office add-ins--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
 
-- Use [Office telemetry](https://technet.microsoft.com/EN-US/library/ff394407(v=office.16).aspx) to discover the add-ins, including which documents and solutions are being used most often and by the most people.
+- Use [Office telemetry](https://technet.microsoft.com/EN-US/library/ff394407(v=office.16).aspx) to discover the add-ins, including which documents and solutions are being used most often and by the most people. [FROM BILL: No good with macros or VBA problems if you're on earlier than Office 2013. Point them to the readiness toolkit in those cases.] [FROM DAN: readiness toolkit can also be used for discovery-- drop Office telemetry.]
 - Work with your business groups to prioritize the critical add-ins.
 - Test the critical add-ins for compatability with the [Readiness Toolkit](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
  
-As part of the [planning article](plan-deploy-office-365-proplus-with-Configuration-Manager.md), you will define an update process that tests your add-ins with future Office updates. 
+As part of the [planning article](plan-deploy-office-365-proplus-with-Configuration-Manager.md), you will define an update process that tests your add-ins with future Office updates. [TO INVESTIGATE: Whether the readiness toolkit is needed for future update testing. Bill thinks no. Q/A testing for channels is more testing features with your hardware in new channels--all macro and plug-in and add-in testing should go away..] 
 
 ## Step 5 - Review new Group policy settings
+
+[FROM BILL: NEED MORE HERE. We want to recommend minimal use of Group Policy--use ODT or Config Manage instead. FROM DAN: Make it clear that we're only focused on deployment--this is general group policy deployment. For most customers, there's only a few policies--just the ones in the best practices guide--confirm with John G. DAN is taking this over for all time.]
 
 If you plan to configure and manage Office with Group Policy settings, review the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus. You can download an [Excel file](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. Note that all Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
 
 ## Step 6 - Review exit criteria 
 
 Before planning your deployment, make sure you've completed all the steps for assessing your environment and requirements.
+
+[FROM BILL: More in the context of the planning and not the assessment. What's my platform--32, 64 or mac, what's my channel, where's my source, how am I getting my updates]
 
 |Assessment         |Status            |
 |-------------------|------------------|

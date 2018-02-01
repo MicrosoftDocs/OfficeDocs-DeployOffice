@@ -3,7 +3,7 @@ title: "Deploy Office 365 ProPlus with System Center Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 2/15/2019
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
