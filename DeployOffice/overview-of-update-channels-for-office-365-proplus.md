@@ -3,7 +3,7 @@ title: "Overview of update channels for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 2/1/2018
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
