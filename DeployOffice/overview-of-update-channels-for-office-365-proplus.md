@@ -3,7 +3,7 @@ title: "Overview of update channels for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 2/1/2018
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,7 +22,7 @@ description: "One of the benefits of Office 365 ProPlus is that Microsoft can pr
 
 # Overview of update channels for Office 365 ProPlus
 
-One of the benefits of Office 365 ProPlus is that Microsoft can provide new features for Office apps on a regular basis, through monthly updates. However, as the admin who deploys Office 365 ProPlus to the users in your organization, you might want to have more control over how often your users get these new features. For the Office 2016 version of Office 365 ProPlus, Microsoft provides you three options, called update channels, to control how often Office 365 ProPlus is updated with new features. Here's an overview of the three options.
+One of the benefits of Office 365 ProPlus is that Microsoft can provide new features for Office apps on a regular basis, through monthly updates. However, as the admin who deploys Office 365 ProPlus to the users in your organization, you might want to have more control over how often your users get these new features. Microsoft provides you three options, called update channels, to control how often Office 365 ProPlus is updated with new features. Here's an overview of the three options.
   
 |**Update channel**|**Primary purpose**|**How often updated with new features**|**Default update channel for the following products**|
 |:-----|:-----|:-----|:-----|
@@ -154,8 +154,10 @@ Here is some additional information that might be useful to know as you determin
 - You can switch an Office 365 ProPlus installation from one update channel to another. For example, you might want to move a user from Monthly Channel to Semi-Annual Channel. To switch update channels, you can use the Office Deployment Tool or Group Policy.
     
 - If the user does an Online Repair of Office 365 ProPlus, the installation reverts to Semi-Annual Channel, unless you've configured a Group Policy setting to provide a different update channel.
-    
+
 - If you have Visio Pro for Office 365 or Project Online Desktop Client installed on the same computer as Office 365 ProPlus, they all must use the same update channel. You can't have a mix of update channels on the same computer. 
+
+- These update channels only apply to installations on computers running Windows.
     
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
 
