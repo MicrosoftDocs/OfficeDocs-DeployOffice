@@ -36,25 +36,10 @@ Choose what tool you want to use to deploy Office 365 ProPlus:
 
 - System Center Configuration Manager (Current Branch): We recommend this tool for organizations that already use Configuration Manager to distribute and manage software.  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings.
 
-TO ADD: should we list the specific scenarios that are aviable vis this method for both install and update
-Install from cloud - updates from cloud
-Install from local source - updates from cloud
-Install from local source - updates from local source
-Optional - GPO control
-
 - Office Deployment Tool: We recommend this tool for organizations that do not have Configuration Manager and that still want to manage their deployment. Like Configuration Manager, the Office Deployment Tool gives you control over which Office applications are installed, how Office is updated, as well as the architecture, languages, and installation experience for your users. You can also use the ODT to download installation files that can be deployed using third-party software distribution tools. For more details, see [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
-
-TO ADD: should we list the specific scenarios that are aviable vis this method for both install and update
-Install from cloud - updates from cloud
-Install from local source - updates from cloud
-Install from local source - updates from local source
-Optional - GPO control
 
 - Self-install: You can also have your users install Office 365 ProPlus directly from the Office 365 portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. For more details, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
 
-TO ADD: should we list the specific scenarios that are aviable vis this method for both install and update
-Install from cloud - updates from cloud
-Optional - GPO control
 [FROM BILL: For self-install, need to add what I can or cannot manage as an admin--pull from screenshot and SOC article]
 
 Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
@@ -64,26 +49,28 @@ Many organizations will use a combination of these tools for different users. Fo
 
 ## Step 2 - Choose the source location of the Office installation files
 
-You can deploy Office directly from the cloud or download the Office files and deployment them from your network. In some cases, your choice of distribution method determines your source location:
+You can deploy Office directly from the Office Content Delivery Network (CDN) or download the Office files and deploy them from your network. In some cases, your choice of how to deploy Office determines your source location:
 
-- Configuration Manager from the cloud: You can configure Office settings and push a deployment to targeted devices which will install directly from the CDN.
+- Configuration Manager from the cloud: You can configure Office settings and push a deployment to targeted devices which will install directly from the Office CDN.
 - Configuration Manager from a local source: You can download the files from the Office CDN and deploy them from distribution points on your network.
 - Office Deployment Tool from the cloud: You manage your deployment with the ODT and Office is installed on client devices directly from the Office CDN.
-- Office Deployment Tool from a local source: You manage your deployment with the ODT and Office is downloaded to a local source on your netowrk and installed on client devices from there. [FROM BILL: We do not recommend this--hard to manage channels, multiple configurations--package is large. DNS failed at replicatoin in Proctor & Gamble--can we call out that this is a supported but not recommended. ]
+- Office Deployment Tool from a local source: You manage your deployment with the ODT and Office is downloaded to a local source on your netowrk and installed on client devices from there. **This option is supported, but we do not recommend it.** Managing Office files from a local source with the ODT is complicated: it's hard to manage the multiple packages and requires extensive administration and network capacity.
 - Self-install from the cloud: If users self-install from the Office portal, that installation will always use the Office CDN.
  
 > [!NOTE]
-> **Best practice:** If you're using the Office Deployment Tool and if you have the network capacity, we recommend installing Office from the cloud. It's more efficient. If you use Configuration Manager, it will deploy from a local source. If you use self-install, your users will install from the cloud. 
+> **Best practice:** If you're using the Office Deployment Tool and if you have the network capacity, we recommend installing Office from the cloud. It's more efficient. If you use Configuration Manager, deploy from distribution points or from the cloud, depending on your existing infrastructure and network requirements. If you use self-install, your users will install from the cloud. 
 
 ## Step 3 - Choose how to manage updates to Office
 
-You can manage updates with the same tool that you deploy Office, but it's not required. Same with location: you can manage them from the cloud or from a local source.
+You can manage updates with the same tool that you deploy Office, but it's not required. You can also choose whether to have the updates install directly from the cloud or from a local source on your network. 
+
+
 
 Choose how to manage updates:
 
 [FROM BILL: Push managing updates from the cloud more strongly--ramp and binary compression. you must set up groups, define ramp, etc.]
 
-- Manage updates automatically from the cloud: Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office Content Delivery Network. You still control frequency and type of update--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
+- Manage updates automatically from the cloud: Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office CDN. You still control frequency and type of update--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
 
 - System Center Configuration Manager (Current Branch):  If you deploy  Office with System Center Configuration, you can also use it to manage Office updates. The benefits are the same:  Configuration Manager scales for large environments and enables extensive control over installation, updates, and settings. However, there's a higher administrative overhead.
 
