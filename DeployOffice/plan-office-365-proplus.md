@@ -183,6 +183,13 @@ For each deployment group, you'll create a unique client package. The client pac
 ## Step 11 - Define your group policy settings
 [SAME FEEDBACK as before--here are the settings you care about. Might not need this at all] 
 
+[FROM ASSESS ARICLE: ## Step 5 - Review new Group policy settings
+
+[FROM BILL: NEED MORE HERE. We want to recommend minimal use of Group Policy--use ODT or Config Manage instead. FROM DAN: Make it clear that we're only focused on deployment--this is general group policy deployment. For most customers, there's only a few policies--just the ones in the best practices guide--confirm with John G. DAN is taking this over for all time.]
+
+If you plan to configure and manage Office with Group Policy settings, review the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus. You can download an [Excel file](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. Note that all Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
+]
+
 Office offers many group policy settings to allow granular control over security, privacy, and user experience. In most cases, only a subset of these are needed for an organization. Review Best practices: Group policy and Office 365 ProPlus with more than 250 proven, commonly set policies for users and computers. Check the listed additional settings. Adjust the settings to fit your needs and requirements.
 
 ## Step 12 - Plan your upgrade from existing versions of Office 
