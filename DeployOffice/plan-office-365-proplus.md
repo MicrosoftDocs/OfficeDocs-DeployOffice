@@ -40,10 +40,14 @@ For organizations that do not have Configuration Manager and that still want to 
 
 Choose how you want to deploy:
 
-- Deploy from a local source with Configuration Manager: Manage your deployment with Configuration Manager, and have Office downloaded and deployed from distribution points on your network.
-- Deploy from the cloud with Configuration Manager: Manage your deployment with Configuration Manager, but have Office install directly on client devices from the Office CDN rather than from distribution points on your network.
-- Deploy from the cloud with the Office Deployment Tool: Manage your deployment with the ODT and have Office installed on client devices directly from the Office CDN.
-- Deploy from a local source with the Office Deployment Tool: Manage your deployment with the ODT and have Office downloaded to a local source on your netowrk and installed on client devices from there. **This option is supported, but we do not recommend it because of the complexity and netowrk impact of managing installation packages from a local source.**
+- **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and have Office downloaded and deployed from distribution points on your network.
+
+- **Deploy from the cloud with Configuration Manager:** Manage your deployment with Configuration Manager, but have Office install directly on client devices from the Office CDN rather than from distribution points on your network.
+
+- **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT and have Office installed on client devices directly from the Office CDN.
+ 
+- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT and have Office downloaded to a local source on your netowrk and installed on client devices from there. **This option is supported, but we do not recommend it because of the complexity and netowrk impact of managing installation packages from a local source.**
+- 
 - Self-install from the cloud: Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, stll define how frequently your users receive updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local adminsitrative rights on their client devices.
 
 Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
@@ -60,13 +64,13 @@ You can manage updates with the same tool that you deploy Office, but it's not r
 
 Choose how to manage updates:
 
-- Manage updates automatically from the cloud: Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office CDN. You still control frequency and type of update--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
+- **Manage updates automatically from the cloud:** Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office CDN. You still control frequency and type of update--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
 
-- Manage updates with Configuration Manager:  If you deploy Office with  Configuration Manager, you can also use it to manage Office updates. 
+- **Manage updates with Configuration Manager:**  If you deploy Office with  Configuration Manager, you can also use it to manage Office updates. 
 
-- Office Deployment Tool: You can use the ODT to download update files and manage those updates, either directly with the ODT or with a third-party software deployment tool. **This option is supported, but we do not recommend it because of the complexity and netowrk impact of managing updates from a local source.**
+- **Office Deployment Tool:** You can use the ODT to download update files and manage those updates, either directly with the ODT or with a third-party software deployment tool. **This option is supported, but we do not recommend it because of the complexity and netowrk impact of managing updates from a local source.**
 
-- Self-manage. All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. 
+- **Self-manage:** All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. 
     
 As with installation, you can use a combination of methods for different users. 
 
@@ -113,6 +117,7 @@ For details on which architecture to choose, see [Choose the 32-bit or 64-bit ve
 > **Best practice:** For Office applications and architectures, define the packages based on your requirements. For languages, choose a small set  that are highly used throughout the region. You can deploy those directly, and then make additional languages available for user installation.
 
 ## Step 5 - Choose whether to install Visio and Project alongisde Office
+
 [FROM BILL: Best practice is to strip these and use click-to-run versions of Project and Visio.]
 
 Note that Microsoft supports different versions of Project and Visio running alongside Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. For details on deploying Visio and Project, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
@@ -145,25 +150,19 @@ Office offers many group policy settings to allow granular control over security
 
 As part of your Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible. Other versions of Office should be removed prior to or as part of the deployment of Office 365 ProPlus
 
-## Step 8 - Plan for shared computers (optional)
-> [!IMPORTANT]
-> TO ADD: Will include short note with links if necessary.
-[Include shared comptuer activation, persistent and non-persistent environments. DAN will help]
+## Step 9 - Plan for shared computers (optional)
 
-[FROM BILL: Need to flesh this out--lots of customers are interested.]
+[DAN to revise]
 
-## Step 14 - Plan for deploying Office 365 ProPlus to Macs (optional)
-> [!IMPORTANT]
-> TO ADD: Will include short note with links if necessary.
+## Review exit criteria
 
-## Step 15 - Review exit criteria
 Before beginning your deployment, make sure you've completed the planning exit criteria:
 
 > [!IMPORTANT]
 > TO ADD: Table of all planning decision, once those are locked
 
 ## Next steps
-Depending on your deployment     plan, go to one of the following articles:
+Depending on your deployment  plan, go to one of the following articles:
 
 - [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
 - [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)

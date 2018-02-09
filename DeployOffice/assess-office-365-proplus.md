@@ -18,6 +18,8 @@ description: "This article gives step-by-step instructions for how to assess you
 
 # Assess your environment and requirements for deploying Office 365 ProPlus
 
+[[JASON: Add value statement about never doing a full install again--all updates after this. Work with Steve Conn and Dinash and John]]
+
 Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
 
 In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.
@@ -35,13 +37,15 @@ Finally, you should assess the deployment tools you already use in your organiza
 
 ## Step 2 - Assess your Office 365 licensing and accounts
 
+[[JASON: Add link to admin licenses content]]
+
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For more details, see [Manage user accounts and licenses with Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) and [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). 
 
 ## Step 3 - Assess your network capability
 
 Review your network capability, including bandwidth and distribution of client devices, based on the following considerations:
 
-- Installation files for Office 365 ProPlus are approximately 850 mb for the core files, plus approximately 200 mb for each language deployed. 
+- Installation files for Office 365 ProPlus are approximately 850 mb for the core files, plus approximately 200 mb for each language deployed. [[DAN to review and provide right estimates--larger than this now.]]
 - Office 365 updates vary in size, but you can review recent download sizes [here](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md).  
 - Client devices require internet access to activate their Office 365 ProPlus subscription, and then must connect at least once every thirty days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
@@ -61,7 +65,7 @@ As part of the [planning article](plan-deploy-office-365-proplus-with-Configurat
 ## Review exit criteria 
 
 Before planning your deployment, make sure you've completed all the steps for assessing your environment and requirements.
-
+[[JASON: Shorten list and have it map more directly to steps above.]]
 |Assessment         |Reviewed?            |
 |-------------------|------------------|
 |Number of clients                                |**Y/N**|
@@ -75,7 +79,7 @@ Before planning your deployment, make sure you've completed all the steps for as
 |Office 365 licensing and accounts                |**Y/N**|
 |Network                                          |**Y/N**|
 |Application compatibility                        |**Y/N**|
-|Group policy settings                            |**Y/N**|
+
 
 ## Next steps
 
