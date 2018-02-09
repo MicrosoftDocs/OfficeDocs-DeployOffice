@@ -191,7 +191,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 ## Language element
 
-Defines which languages to download or install. To install the same language as the client's operating system, use "MatchOS" as the ID. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
+Defines which languages to download or install. To install the same languages as the client's operating system, use "MatchOS" as the ID. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
 ### Example
 
