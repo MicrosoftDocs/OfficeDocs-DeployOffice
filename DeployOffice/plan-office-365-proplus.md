@@ -77,7 +77,7 @@ As with installation, you can use a combination of methods for different users.
 > [!NOTE]
 > **Best practice:** We recommend managing your updates automatically from the cloud. You limit your administrative overhead and receive all the network efficiencies built into udpating from the Office CDN, including binary data compression.
 
-## Step 3 - Choose your update channels and deployment rings
+## Step 3 - Choose your update channels 
 
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you deploy one of three different update channels to different groups of users:
 
@@ -102,7 +102,7 @@ With this approach, you can test new Office features in your environment, partic
 
 ## Step 4 - Choose your Office applications, architectures, and languages
 
-You can deploy all the Office applications in Office 365 ProPlus or exclude some. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. You can also choose the languages and architectures (32-bit or 64-bit) to install.
+You can deploy all the Office applications in Office 365 ProPlus or exlude some. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. You can also choose the languages and architectures (32-bit or 64-bit) to install.
 
 We recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. After you've deployed, you can install additional language accessory packs at any time by choosing one of the following:
 
@@ -114,20 +114,15 @@ For more details, see [Overview of deploying languages in Office 365 ProPlus](ov
 For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/en-us/article/Choose-the-32-bit-or-64-bit-version-of-Office-CA3253E5-AC01-4242-8A64-B56111A6F32D).
 
 > [!NOTE]
-> **Best practice:** For Office applications and architectures, define the packages based on your requirements. For languages, choose a small set that are highly used throughout the region. You can deploy those directly, and then make additional languages available for user installation.
+> **Best practice:** Choose the Office archtiectures based on your requirements. For Office applications, create installation packages with the full set of Office applications and define which ones are installed using Configuration Manager or the Office Deployment Tool.  For languages, choose the lanugages that are highly used throughout a region. You can include those in the installation package and deploy them directly, and then make additional languages available for user installation.
 
-## Step 5 - Choose whether to install Visio and Project alongisde Office
+## Step 5 - Choose whether to install Visio and Project
 
-[FROM BILL: Best practice is to strip these and use click-to-run versions of Project and Visio.]
+In addition to the core Office applications, you can deploy Visio and Project. We recommend replacing existing MSI versions of Project and Visio with Click-to-Run versions. The new Click-to-Run versions support traditional volume licensing and Office 365 licensing models. For more details, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
-Note that Microsoft supports different versions of Project and Visio running alongside Office 365 ProPlus. Customers can use their existing Project and Visio MSI versions, or deploy the Click-to-Run versions that support traditional volume licensing and Office 365 licensing models. For details on deploying Visio and Project, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
+## Step 6 - Define your installation packages
 
-> [!IMPORTANT]
-> TO ADD: More details on Visio and Project deployment
-
-## Step 6 - Define your client packages and deployment groups
-
-To deploy Office 365 ProPlus, you create a client package of the Office installation files. Because the Office installation files are different based on their architecture and update channel, you'll likely need to create multiple packages for your organization. The six basic packages are: 
+When deploying Office, you create an installation package that contains the Office files. The files are different for 32-bit and 64-bit versions of Office and are different for the different update channels. Because of this, you will likely need to create multiple installation packages based on the architectures and update channels you want to deploy. For example, if you want to deploy all three channels and both architectures, you would create six basic packages: 
 
 - Monthly Channel for 32-bit
 - Monthly Channel for 64-bit
@@ -136,30 +131,25 @@ To deploy Office 365 ProPlus, you create a client package of the Office installa
 - Semi-Annual Channel (Targeted) for 32-bit
 - Semi-Annual Channel (Targeted) for 64-bit
 
-You can also create separate packages based on different langauges, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your client package. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed. 
+You can also create separate packages based on different langauges, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your client packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.   
 
-## Step 7 - Define your group policy settings
+## Step 7 - Define your deployment groups
 
-[DAN to revise]
-
-If you plan to configure and manage Office with Group Policy settings, review the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus. You can download an [Excel file](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. Note that all Group Policy settings for Office are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
-
-Office offers many group policy settings to allow granular control over security, privacy, and user experience. In most cases, only a small subset of these are needed for an organization. To see a list of the most important settings, see [Best practices: Management for cloud managed](best-practices/best-practices-management-for-cloud-managed.md).
+When deploying Office, you can install different versions of Office for different groups of users. In addition to the architecture and update channel, you can include or exclude specific applications, choose languages, and define the installation experience. Each group of users is a separate deployment group and will require a separate configuration file.
 
 ## Step 8 - Plan your upgrade from existing versions of Office 
 
-As part of your Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible. Other versions of Office should be removed prior to or as part of the deployment of Office 365 ProPlus
+As part of your Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible. Other versions of Office should be removed prior to or as part of the deployment of Office 365 ProPlus.
 
 ## Step 9 - Plan for shared computers (optional)
 
-[DAN to revise]
+[DAN to add]
 
 ## Review exit criteria
 
 Before beginning your deployment, make sure you've completed the planning exit criteria:
 
-> [!IMPORTANT]
-> TO ADD: Table of all planning decision, once those are locked
+[JASON to add]
 
 ## Next steps
 Depending on your deployment  plan, go to one of the following articles:
