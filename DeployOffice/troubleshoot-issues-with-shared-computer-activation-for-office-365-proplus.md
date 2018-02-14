@@ -14,12 +14,12 @@ ms.custom:
 - DeployProPlus_SOConly
 - Ent_Office_ProPlus
 ms.assetid: c3aeb487-d45f-4079-8c35-7558a45b876c
-description: "Summary: Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared configured activation."
+description: "Summary: Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
 ---
 
 # Troubleshoot issues with shared computer activation for Office 365 ProPlus
 
- **Summary:** Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared configured activation.
+ **Summary:** Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation.
   
 If you're having problems getting shared computer activation to work when you deploy Office 365 ProPlus to shared computers in your organization, try the following to fix the problem.
   
