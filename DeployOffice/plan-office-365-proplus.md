@@ -18,7 +18,7 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus
 
-Follow the steps in this article to plan your deployment of Office 365 ProPlus in your organization. As part of this plan, you will choose how to deploy Office, how to manage updates to Office, what deployment tool to use, and whether to deploy and install from a local source on your n`etwork or from the cloud.
+Follow the steps in this article to plan your deployment of Office 365 ProPlus in your organization. As part of this plan, you will choose how to deploy Office, how to manage updates to Office, what deployment tool to use, and whether to deploy and install from a local source on your network or from the cloud.
 
 ![Deployment framework for Office 365 ProPlus](images/plan-office-365-proplus-01.png)
 
@@ -40,17 +40,17 @@ For organizations that do not have Configuration Manager and that still want to 
 
 Choose how you want to deploy:
 
-- **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and have Office downloaded and deployed from distribution points on your network.
+- **Deploy from the cloud with Configuration Manager:** Manage your deployment with Configuration Manager, and install Office on client devices directly from the Office CDN.
 
-- **Deploy from the cloud with Configuration Manager:** Manage your deployment with Configuration Manager, but have Office install directly on client devices from the Office CDN rather than from distribution points on your network.
+- **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and download and deploy Office from distribution points on your network.
 
-- **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT and have Office installed on client devices directly from the Office CDN.
+- **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT, and install Office on client devices directly from the Office CDN.
  
-- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT and have Office downloaded to a local source on your netowrk and installed on client devices from there. **This option is supported, but we do not recommend it because of the complexity and netowrk impact of managing installation packages from a local source.**
-- 
-- Self-install from the cloud: Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, stll define how frequently your users receive updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local adminsitrative rights on their client devices.
+- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT, and download and deploy Office from a local source on your network. **This option is supported, but we do not recommend it because of the complexity and network impact.**
 
-Many organizations will use a combination of these tools for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
+- **Self-install from the cloud:** Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, stll define how frequently your users receive updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local adminsitrative rights on their client devices.
+
+Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
  
 > [!NOTE]
 > **Best practice:** If you're using the Office Deployment Tool and if you have the network capacity, we recommend deploying Office with the ODT from the cloud. It's more efficient. If you use Configuration Manager, deploy from distribution points or from the cloud, depending on your existing infrastructure and network requirements. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
@@ -68,7 +68,7 @@ Choose how to manage updates:
 
 - **Manage updates with Configuration Manager:**  If you deploy Office with  Configuration Manager, you can also use it to manage Office updates. 
 
-- **Office Deployment Tool:** You can use the ODT to download update files and manage those updates, either directly with the ODT or with a third-party software deployment tool. **This option is supported, but we do not recommend it because of the complexity and netowrk impact of managing updates from a local source.**
+- **Office Deployment Tool:** You can use the ODT to download update files and manage those updates, either directly with the ODT or with a third-party software deployment tool. **This option is supported, but we do not recommend it because of the complexity and netowrk impact.**
 
 - **Self-manage:** All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. 
     
@@ -85,7 +85,7 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 - Semi-Annual Channel: Provide users with new features of Office every six months, in January and July
 
-- Semi-Annual Channel (Targeted): Provide pilot users and application compatibility testers the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
+- Semi-Annual Channel (Targeted): Provide pilot users the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
 
 Which users get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
@@ -102,9 +102,9 @@ With this approach, you can test new Office features in your environment, partic
 
 ## Step 4 - Choose your Office applications, architectures, and languages
 
-You can deploy all the Office applications in Office 365 ProPlus or exlude some. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. You can also choose the languages and architectures (32-bit or 64-bit) to install.
+You can deploy all the Office applications in Office 365 ProPlus or exclude some. Applications that are initially excluded can be added back later, just as applications that are initially included can be removed later. You can also choose the languages and architectures (32-bit or 64-bit) to install.
 
-We recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. After you've deployed, you can install additional language accessory packs at any time:
+We recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. After you've deployed, you can install additional language accessory packs at any time by choosing one of the following:
 
 - Have your users download and install the language accessory packs that they need from the Office 365 portal (requires local administrator permissions).
 - Use Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
@@ -114,7 +114,7 @@ For more details, see [Overview of deploying languages in Office 365 ProPlus](ov
 For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/en-us/article/Choose-the-32-bit-or-64-bit-version-of-Office-CA3253E5-AC01-4242-8A64-B56111A6F32D).
 
 > [!NOTE]
-> **Best practice:** For Office applications and architectures, define the packages based on your requirements. For languages, choose a small set  that are highly used throughout the region. You can deploy those directly, and then make additional languages available for user installation.
+> **Best practice:** For Office applications and architectures, define the packages based on your requirements. For languages, choose a small set that are highly used throughout the region. You can deploy those directly, and then make additional languages available for user installation.
 
 ## Step 5 - Choose whether to install Visio and Project alongisde Office
 
