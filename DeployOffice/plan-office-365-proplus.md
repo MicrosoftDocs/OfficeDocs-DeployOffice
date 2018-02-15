@@ -59,8 +59,7 @@ Many organizations will use a combination of these options for different users. 
 
 You can manage updates with the same tool that you deploy Office, but it's not required. You can also choose whether to have the updates install directly from the cloud or from a local source on your network. 
 
-> [!IMPORTANT]
-> If you manage updates from the cloud (using the Office CDN), your network usage is more efficient: Binary delta compression reduces the size of the updates and Background Intelligent Transfer Service (BITS) transfers updates to a user’s device only when bandwidth isn't being used by other critical applications. The Office CDN also automatically deploys an update over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
+If you manage updates from the cloud (using the Office CDN), your network usage is more efficient: Binary delta compression reduces the size of the updates and Background Intelligent Transfer Service (BITS) transfers updates to a user’s device only when bandwidth isn't being used by other critical applications. The Office CDN also automatically deploys an update over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
 
 Choose how to manage updates:
 
@@ -79,7 +78,7 @@ As with installation, you can use a combination of methods for different users.
 
 ## Step 3 - Choose your update channels 
 
-With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you deploy one of three different update channels to different groups of users:
+With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you deploy one of three update channels to your  users:
 
 - Monthly Channel: Provide users with the newest features of Office as soon as they're available.
 
@@ -87,13 +86,13 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 - Semi-Annual Channel (Targeted): Provide pilot users the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
 
-Which users get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
-To ensure you can test new updates to Office before deploying them to your entire organization, we recommend creating two deployment rings:
+To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels to two different deployment rings:
 
 - Pilot deployment ring: A small group of representative users who can pilot new features of Office. This ring will use Semi-Annual (Targeted) channel. The users should include people from different areas of the organization and their devices should include all your critical line-of-business applications, add-ins, and macros. This ring will receive feature updates four months ahead of the rest of your organization.
 
-- Broad deployment ring: The remaining users in your organization will be part of the broad deployment ring and will use the Semi-Annual Channel. 
+- Broad deployment ring: The remaining users in your organization, who will receive feature updates every six months as part of the Semi-Annual Channel. 
 
 With this approach, you can test new Office features in your environment, particularly with your hardware and device drivers. 
  
@@ -104,7 +103,9 @@ With this approach, you can test new Office features in your environment, partic
 
 You can deploy all the Office applications in Office 365 ProPlus or exlude some. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. You can also choose the languages and architectures (32-bit or 64-bit) to install.
 
-We recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. After you've deployed, you can install additional language accessory packs at any time by choosing one of the following:
+We recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see [Install Office in the same language as the client operating system](overview-of-the-office-2016-deployment-tool.md#install-office-in-the-same-language-as-the-client-operating-system).  
+
+After you've deployed, you can install additional language accessory packs at any time by choosing one of the following:
 
 - Have your users download and install the language accessory packs that they need from the Office 365 portal (requires local administrator permissions).
 - Use Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
