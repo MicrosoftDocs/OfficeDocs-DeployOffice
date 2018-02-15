@@ -195,7 +195,7 @@ For more information about the options for excluding or removing apps, see [Conf
 ## Install Office in the same language as the client operating system
 <a name="BKMK_excludeorremove"> </a>
 
-When using the ODT, you can automatically install the Office language that matches the display language of the client operating system. To do so, use **<Language ID="MatchOS">** in the configuration file.
+When using the ODT, you can automatically install the Office language that matches the display language of the client operating system. To do so, use **Language ID="MatchOS"** in the configuration file.
   
 For example, this configuration file installs the 32-bit edition of Office 365 ProPlus in the same language as the client operating system--English for clients with the display language of English, Japanese for clients with Japanese, and so on:
   
