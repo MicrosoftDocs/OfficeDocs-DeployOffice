@@ -213,7 +213,9 @@ For example, this configuration file installs the 32-bit edition of Office 365 P
 ## Add languages to existing installations of Office 365 ProPlus
 <a name="BKMK_updatelanguages"> </a>
 
-After installing Office, you can add use the ODT to install additional language packs for Office. To do so, you follow the steps for installing Office with the ODT, but use a new configuration file that indicates which languages to add. The new configuration file does not contain (and should not contain) any settings for Office, such as excluded apps or which channel to update. All those client settings are preserved when the new language packs are installed. If your clients are updated from a local source on your network, you must also download the Office installation files for the languages you want to add to that source.
+After installing Office, you can use the ODT to install additional language packs for Office. To do so, follow the steps for installing Office with the ODT, but use a new configuration file that uses “LanguagePack” as the Product ID and that indicates which languages to add. 
+
+By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. 
   
  **Step 1: Download the Office installation files in the languages you want to add**
   
@@ -237,8 +239,6 @@ In this example, the configuration file installs the French and Japanese languag
 
 ```
 
-It's important to emphasize that all the settings defined when you deployed or updated Office are preserved. For example, the source for the language pack is not provided in this configuration file--instead, the ODT will look for it in the source path defined in the configuration file you used to deploy Office.
-  
 For a list of all languages, see [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).
   
  **Step 3: Run the ODT executable in configure mode**
