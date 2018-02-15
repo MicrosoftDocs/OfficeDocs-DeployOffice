@@ -213,7 +213,9 @@ For example, this configuration file installs the 32-bit edition of Office 365 P
 ## Add languages to existing installations of Office 365 ProPlus
 <a name="BKMK_updatelanguages"> </a>
 
-After installing Office, you can use the ODT to install additional language packs for Office. To do so, follow the steps for installing Office with the ODT, but use a new configuration file that uses “LanguagePack” as the Product ID and that indicates which languages to add. By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. 
+After installing Office, you can use the ODT to install additional language packs for Office. To do so, follow the steps for installing Office with the ODT, but use a new configuration file that uses “LanguagePack” as the Product ID and that indicates which languages to add. 
+
+By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. 
   
  **Step 1: Download the Office installation files in the languages you want to add**
   
