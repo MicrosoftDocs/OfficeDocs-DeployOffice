@@ -59,11 +59,11 @@ Many organizations will use a combination of these options for different users. 
 
 You can manage updates with the same tool that you deploy Office, but it's not required. You can also choose whether to have the updates install directly from the cloud or from a local source on your network. 
 
-If you manage updates from the cloud (using the Office CDN), your network usage is more efficient: Binary delta compression reduces the size of the updates and Background Intelligent Transfer Service (BITS) transfers updates to a user’s device only when bandwidth isn't being used by other critical applications. The Office CDN also automatically deploys an update over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
+If you manage updates from the cloud (using the Office CDN), your network usage is more efficient: Binary delta compression reduces the size of the updates and the updates are automically deployed over a number of days to prevent your devices from trying to update at the same time. [[DAN: Please review previous statement and provide any useful links.]] These features are not available when managing updates from a local source.
 
 Choose how to manage updates:
 
-- **Manage updates automatically from the cloud:** Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office CDN. You still control frequency and type of update--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
+- **Manage updates automatically from the cloud:** Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office CDN. You still control the frequency of the updates--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
 
 - **Manage updates with Configuration Manager:**  If you deploy Office with  Configuration Manager, you can also use it to manage Office updates. 
 
@@ -74,7 +74,7 @@ Choose how to manage updates:
 As with installation, you can use a combination of methods for different users. 
 
 > [!NOTE]
-> **Best practice:** We recommend managing your updates automatically from the cloud. You limit your administrative overhead and receive all the network efficiencies built into udpating from the Office CDN, including binary data compression.
+> **Best practice:** We recommend managing your updates automatically from the cloud. You limit your administrative overhead and receive all the network efficiencies built into udpating from the Office CDN, including binary delta compression. [[JASON: Might need to cut compression based on Dan's input above.]]
 
 ## Step 3 - Choose your update channels 
 
@@ -87,6 +87,8 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 - Semi-Annual Channel (Targeted): Provide pilot users the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+
+[[JASON: Review deployment ring recommendations and terminology so it matches M365 Analytics.]]
 
 To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels to two different deployment rings:
 
