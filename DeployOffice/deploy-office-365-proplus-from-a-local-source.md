@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_ProPlus
 ms.assetid: 35d4cb3b-4cc9-4bc9-9f20-eaf3c50f8331
 
-description: "This article gives step-by-step instructions for how to use the Office 2016 Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application."
+description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application."
 ---
 
 # Deploy Office 365 ProPlus from a local source
 
-This article gives step-by-step instructions for how to use the Office 2016 Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application.
+This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application.
   
 The steps in this article can apply to a variety of environments, but we'll base our examples on the following infrastructure and requirements.
   
@@ -76,7 +76,7 @@ Installing Office from a shared folder requires only that the user have Read per
 
 We'll use the ODT to download the installation files for Office from the CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when downloading or deploying Office.
   
- **Step 1: Download the Office 2016 Deployment Tool**
+ **Step 1: Download the Office Deployment Tool**
   
 Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\Server\Share\O365 (or the folder you created above). If you've already downloaded the ODT, make sure you have the latest version.
   
@@ -155,7 +155,7 @@ This configuration file is used to download Office installation files and then d
   
 To change the options from our example, you can edit the XML elements and attributes in the configuration files. For example, if you want to add a third language, you can insert an additional language element with the appropriate ID. You can also create additional configuration files for other groups you want to deploy to, such as a group that needs to receive updates from a different channel.
   
-For more information about the configuration options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
  **Step 5: Run the ODT executable in download mode for group 1**
   
@@ -204,9 +204,9 @@ After running the command, the Office installation should start immediately. If 
 
 ## Related Topics
 
-[Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+[Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   
-[Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
   
