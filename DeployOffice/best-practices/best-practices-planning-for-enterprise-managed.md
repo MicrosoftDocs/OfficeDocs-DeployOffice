@@ -52,7 +52,7 @@ The packaging and deployment team at  *Enterprise Managed*  has a rich history o
   
 ## Download the source files
 
-The [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) downloads the source media that is required to create an install package and language pack(s) for customization and distribution. *Enterprise Managed*  will create a download an XML file that the Office Deployment Tool setup.exe uses to download the Office 365 client source files.
+The [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) downloads the source media that is required to create an install package and language pack(s) for customization and distribution. *Enterprise Managed*  will create a download an XML file that the Office Deployment Tool setup.exe uses to download the Office 365 client source files.
   
 For more information about the Office Deployment Tool, see [Best practices: Deployment for enterprise managed](best-practices-deployment-for-enterprise-managed.md).
   

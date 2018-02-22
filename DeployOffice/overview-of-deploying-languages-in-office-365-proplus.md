@@ -23,9 +23,9 @@ Resources for Click-to-Run for Office 365 products are packaged similarly to the
 
 If you purchased an Office 365 subscription, you can use it to install Office in multiple languages. You do not have to buy a Language Pack. If your organization allows it, users can install Office 365 ProPlus languages directly from the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkID=212232). When users install Office from the **software** page, they select a language from the **Language** drop-down box.
 
-In managed enterprise environments, end-users may not have permission to install software from the Office 365 portal. If you are configuring an on-premises deployment of Office 365 Click-to-Run applications for users in your organization, you can use the Office 2016 Deployment Tool to install Click-to-Run in multiple languages. 
+In managed enterprise environments, end-users may not have permission to install software from the Office 365 portal. If you are configuring an on-premises deployment of Office 365 Click-to-Run applications for users in your organization, you can use the Office Deployment Tool to install Click-to-Run in multiple languages. 
 
-The language elements that you specify in the configuration file for the Office 2016 Deployment Tool determine which languages will be installed. Administrators must specify the languages they want to install. The first language determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips.
+The language elements that you specify in the configuration file for the Office Deployment Tool determine which languages will be installed. Administrators must specify the languages they want to install. The first language determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips.
 
 If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall Click-to-Run and reinstall it. Add the language that you want to set for the Shell UI as the first language in the custom Configuration.xml file.
 
@@ -37,10 +37,10 @@ Additional language tools that you can install for Click-to-Run products include
     
 - ScreenTip Language: Translations that show the text of display elements such as buttons, menus, and dialog boxes in another language. You can download [Microsoft Office ScreenTip Language 2013](https://go.microsoft.com/fwlink/p/?LinkId=281983) from the Microsoft Download Center. ScreenTip Language installs over a Click-to-Run installation.
     
-For information about how to use the Configuration.xml file to specify language installation options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
+For information about how to use the Configuration.xml file to specify language installation options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
 
 ## Related topics
 
-- [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 - [Proofing Tools for Office 365 ProPlus](proofing-tools-for-office-365-proplus.md)
 

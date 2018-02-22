@@ -18,7 +18,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
 
  *The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see [Best practices](best-practices.md).* 
   
-This article includes some common XML configuration files for using the Office 2016 Deployment Tool to download Office 365 ProPlus source files.
+This article includes some common XML configuration files for using the Office Deployment Tool to download Office 365 ProPlus source files.
   
 ## Sample Download File with all Office Applications - Semi-Annual Channel
 

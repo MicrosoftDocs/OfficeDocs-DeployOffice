@@ -1,5 +1,5 @@
 ---
-title: Configuration options for the Office 2016 Deployment Tool
+title: Configuration options for the Office Deployment Tool
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
-description: "Configuration options for the Office 2016 Deployment Tool"
+description: "Configuration options for the Office Deployment Tool"
 ---
 
 
-# Configuration options for the Office 2016 Deployment Tool
-With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+# Configuration options for the Office Deployment Tool
+With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 ## Example of a standard configuration file
 
@@ -417,7 +417,7 @@ Allowed values:
 
 Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. 
 
-For more information, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+For more information, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 ### Example
 
@@ -526,7 +526,7 @@ Allowed values:
 
 ## Related topics
 
-- [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
   

@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Office 2016 Deployment Tool"
+title: "Overview of the Office Deployment Tool"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -16,27 +16,27 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: bb5b62d9-1168-47e9-9d54-15a958acfcca
-description: "The Office 2016 Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
+description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
 ---
 
-# Overview of the Office 2016 Deployment Tool
+# Overview of the Office Deployment Tool
 
-The Office 2016 Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users.
+The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users.
   
 If you're not an enterprise administrator and are looking to install Office 365 in your home or business, see [Install Office with Office 365](https://go.microsoft.com/fwlink/?LinkId=273820).
   
-## Download the Office 2016 Deployment Tool
+## Download the Office Deployment Tool
 
-Download the Office 2016 Deployment Tool from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065).
+Download the Office Deployment Tool from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-After downloading the file, run the self-extracting executable file, which contains the Office 2016 Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
+After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
   
 Before using the ODT to download or install Office, we recommend making sure you have the latest version.
   
-## Get started with the Office 2016 Deployment Tool
+## Get started with the Office Deployment Tool
 <a name="BKMK_GetStarted"> </a>
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher. For the full set of options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher. For the full set of options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
   
@@ -73,7 +73,7 @@ In this example, the configuration file downloads the installation files for a 3
 
 ```
 
-For more information about the configuration options and more examples, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the configuration options and more examples, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
  **Step 2: Run the ODT executable in download mode**
   
@@ -88,7 +88,7 @@ After running the command, go to the download location you defined in the config
 ## Download the installation files for Office 365 ProPlus from a local source
 <a name="BKMK_downloadfromlocalsource"> </a>
 
-You can use the Office 2016 Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network instead of from the Office Content Delivery Network (CDN). By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
+You can use the Office Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network instead of from the Office Content Delivery Network (CDN). By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
   
 To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus 2016 from **\\servera\share** (the DownloadPath) to **\\serverb\share** (the SourcePath):
   
@@ -131,7 +131,7 @@ In this example, the configuration file installs a 32 bit English edition of Off
 
 The location of the Office installation files is **\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
   
-For more information about the configuration options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
  **Step 2: Run the ODT executable in configure mode**
   
@@ -190,7 +190,7 @@ You can also remove an entire language version of Office 365 ProPlus. To do so, 
 
 ```
 
-For more information about the options for excluding or removing apps, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the options for excluding or removing apps, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
 ## Install Office in the same language as the client operating system
 <a name="BKMK_excludeorremove"> </a>
@@ -252,7 +252,7 @@ You must run the executable from the client computer on which you want to instal
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>
 
-In addition to downloading and deploying Office 365 ProPlus, you can use the Office 2016 Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer with a clean install of the operating system.
+In addition to downloading and deploying Office 365 ProPlus, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer with a clean install of the operating system.
   
 This article does not cover all the issues related to deploying App-V packages. For more information on that end-to-end scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
   
@@ -274,7 +274,7 @@ In this example, the configuration file creates an App-V package from a 32-bit E
 
 ```
 
-The location of the Office installation files is \\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
+The location of the Office installation files is \\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
   
  **Step 2: Run the ODT executable in packager mode**
   
@@ -289,6 +289,6 @@ After running the command, the package location should have an App-V Packages fo
 ## Related topics
 <a name="BKMK_createanappvpackage"> </a>
 
-- [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   
 
