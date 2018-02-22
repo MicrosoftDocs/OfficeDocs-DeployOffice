@@ -48,15 +48,15 @@ The packaging and deployment team at  *Locally Managed*  has a moderate history 
   
 ## Download the source files
 
-The Office 2016 Deployment Tool will be used to download the source media required to create an install package and language pack(s) for customization and distribution.  *Locally Managed*  will create a download XML file that Office Deployment Tool setup.exe uses to download the Office 365 client source files.
+The Office Deployment Tool will be used to download the source media required to create an install package and language pack(s) for customization and distribution.  *Locally Managed*  will create a download XML file that Office Deployment Tool setup.exe uses to download the Office 365 client source files.
   
-For more information about the Office Deployment Tool, see [Overview of the Office 2016 Deployment Tool](../overview-of-the-office-2016-deployment-tool.md)
+For more information about the Office Deployment Tool, see [Overview of the Office Deployment Tool](../overview-of-the-office-2016-deployment-tool.md)
   
 ## Configure deployments
 
  *Locally Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
   
-The install XML files are relatively simple and can be made by following the [Configuration options for the Office 2016 Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). However, because  *Locally Managed*  manages multiple download and install XML files, *Locally Managed*  uses a web-based tool for accuracy and efficiency.
+The install XML files are relatively simple and can be made by following the [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). However, because  *Locally Managed*  manages multiple download and install XML files, *Locally Managed*  uses a web-based tool for accuracy and efficiency.
   
  *Locally Managed*  will need install XML files for the following:
   

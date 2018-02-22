@@ -20,8 +20,8 @@ description: "The Best Practices Guide includes deployment recommendations and r
   
 Key deployment resources for the implementing the best practice recommendations.
   
-- [Best practices: Sample configuration files for downloading Office 365 ProPlus](best-practices-sample-configuration-files-for-downloading-office-365-proplus.md): Common examples of the configuration file used by the Office 2016 Deployment Tool to download Office 365 ProPlus. 
-- [Best practices: Sample configuration files for installing Office 365 ProPlus](best-practices-sample-configuration-files-for-installing-office-365-proplus.md): Common examples of the configuration file used by the Office 2016 Deployment Tool to install Office 365 ProPlus. 
+- [Best practices: Sample configuration files for downloading Office 365 ProPlus](best-practices-sample-configuration-files-for-downloading-office-365-proplus.md): Common examples of the configuration file used by the Office Deployment Tool to download Office 365 ProPlus. 
+- [Best practices: Sample configuration files for installing Office 365 ProPlus](best-practices-sample-configuration-files-for-installing-office-365-proplus.md): Common examples of the configuration file used by the Office Deployment Tool to install Office 365 ProPlus. 
 - [Best practices: Installing Office 365 ProPlus from CDN or DFS](best-practices-installing-office-365-proplus-from-cdn-or-dfs.md): Details the different architecture components. For step-by-step instructions, see [Best practices: Step by step installation using CDN](best-practices-step-by-step-installation-using-cdn.md): and [Best practices: Step by step installation using DFS](best-practices-step-by-step-installation-using-dfs.md):. 
 - [Best practices: Implementing group policy](best-practices-implementing-group-policy.md): Links to the administrative templates for Office 2016. 
 - [Best practices: Using OffScrub](best-practices-using-offscrub.md): The Office Scrub tool (OffScrub) is the best way to remove a previous version of Office. 
