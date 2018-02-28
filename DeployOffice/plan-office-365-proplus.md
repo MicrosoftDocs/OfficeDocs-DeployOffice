@@ -30,7 +30,14 @@ If you haven't already, complete the [asssessment of your environment and infras
 
 ![Deploy with ODT or Configuration Manager](images/plan-office-365-proplus-03.png)
 
+What versions of Office are on premise
+What platforms
+What validation testing
+What configuration is required 
+
 ## Step 1 - Choose how you want to deploy Office 365 ProPlus
+
+[[JASON - add that it should be current branch]]
 
 You can deploy Office 365 ProPlus with System Center Configuration Manager, with the Office Deployment Tool, with a third-party software deployment tool, or by having your users self-install. In addition, you can choose whether to deploy Office directly from the cloud or from a local source on your network.
 
@@ -40,13 +47,13 @@ For organizations that do not have Configuration Manager and that still want to 
 
 Choose how you want to deploy:
 
-- **Deploy from the cloud with Configuration Manager:** Manage your deployment with Configuration Manager, and install Office on client devices directly from the Office CDN.
+- **Deploy from the cloud with Configuration Manager:** Manage your deployment with Configuration Manager, and install Office on client devices directly from the Office CDN. [[JASON to cut per Amesh's advice--this is the Intune scenario. Follow up with Chris to get this functionality built into SCCM wizard.]]
 
 - **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and download and deploy Office from distribution points on your network.
 
 - **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT, and install Office on client devices directly from the Office CDN.
  
-- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT, and download and deploy Office from a local source on your network. **This option is supported, but we do not recommend it because of the complexity and network impact.**
+- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT, and download and deploy Office from a local source on your network. [[JASON - to cut the warning--this is standard for customers.]] **This option is supported, but we do not recommend it because of the complexity and network impact.**
 
 - **Self-install from the cloud:** Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, stll define how frequently your users receive updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local adminsitrative rights on their client devices.
 
@@ -63,13 +70,15 @@ If you manage updates from the cloud (using the Office CDN), your network usage 
 
 Choose how to manage updates:
 
+[[JASON - do I want to manage via GP, CM, ODT. What settings do I want to tweak, can I not tweak any]]
+
 - **Manage updates automatically from the cloud:** Many organizations deploy with one tool (such as Configuration Manager), but allow updates to be automically applied from the Office CDN. You still control the frequency of the updates--those settings are defined as part of the initial deployment--but the overall process is much less work for the administrator.  
 
 - **Manage updates with Configuration Manager:**  If you deploy Office with  Configuration Manager, you can also use it to manage Office updates. 
 
-- **Office Deployment Tool:** You can use the ODT to download update files and manage those updates, either directly with the ODT or with a third-party software deployment tool. **This option is supported, but we do not recommend it because of the complexity and netowrk impact.**
+- **Office Deployment Tool:** You can use the ODT to download update files and manage those updates, either directly with the ODT or with a third-party software deployment tool. **This option is supported, but we do not recommend it because of the complexity and netowrk impact.** [[Cut "we do not recommend it" but add details on the work invovled--this should only be an option when network is poor]]
 
-- **Self-manage:** All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. 
+- **Self-manage:** All users who sef-install Office will either be automatically updated from the Office CDN or manage their updates on their own. [[CUT this -- users might install from the portal, for example, but have their updates managed]]
     
 As with installation, you can use a combination of methods for different users. 
 
@@ -78,9 +87,11 @@ As with installation, you can use a combination of methods for different users.
 
 ## Step 3 - Choose your update channels 
 
+[[FROM BILL: Channels is the cadence and rings are what you're testing.]]
+
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you deploy one of three update channels to your  users:
 
-- Monthly Channel: Provide users with the newest features of Office as soon as they're available.
+- Monthly Channel: Provide users with the newest features of Office as soon as they're available. [[Make this a note, not a primary list.]]
 
 - Semi-Annual Channel: Provide users with new features of Office every six months, in January and July
 
@@ -89,6 +100,8 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To help you make this decision, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
 [[JASON: Review deployment ring recommendations and terminology so it matches M365 Analytics.]]
+
+[[JASON/DAN: More about what the link gives you.]]
 
 To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels to two different deployment rings:
 
@@ -102,6 +115,7 @@ With this approach, you can test new Office features in your environment, partic
 > **Best practice:** Create a pilot deployment ring of a small group of representative users and deploy the Semi-Annual Channel (Targeted) to them. Deploy the Semi-Annual Channel to the rest of your organization (the Broad Deployment Ring). This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
 ## Step 4 - Choose your Office applications, architectures, and languages
+[[JASON to combine steps 4, 5, 9]]
 
 You can deploy all the Office applications in Office 365 ProPlus or exlude some. Applications that are initially excluded can be added back later, just as aspplications that are initially included can be removed later. You can also choose the languages and architectures (32-bit or 64-bit) to install.
 

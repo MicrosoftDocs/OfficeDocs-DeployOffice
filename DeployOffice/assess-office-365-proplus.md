@@ -45,16 +45,25 @@ Make sure that all your users have Office 365 accounts and licenses, and that th
 
 Review your network capability, including bandwidth and distribution of client devices, based on the following considerations:
 
+
+[[JASON to update size of install files and updates]]
+
 - Installation files for Office 365 ProPlus are approximately 850 mb for the core files, plus approximately 200 mb for each language deployed. [[DAN to review and provide right estimates--larger than this now.]]
 - Office 365 updates vary in size, but you can review recent download sizes [here](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md).  
 - Client devices require internet access to activate their Office 365 ProPlus subscription, and then must connect at least once every thirty days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
-If you manage updates from the Office Content Delivery Network (CDN), your network usage is more efficient: Binary delta compression reduces the size of the updates and Background Intelligent Transfer Service (BITS) transfers updates to a user’s device only when bandwidth isn't being used by other critical applications. The Office CDN also automatically deploys an update over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
+[[DAN confirmed that binary delta compression does work with local source. Cut mention in planning content as well.]]
+
+If you manage updates from the Office Content Delivery Network (CDN), your network usage is more efficient: The Office CDN automatically deploys an update over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
+
+[[FROM BILL: if no bottlenecks from remote sites to CDN, should just get updates from CDN. Often, customers  In general: add a paragraph to check for bottlenecks and base your update strategy based on that. BILL TO PROVIDE PARAGRAPH ON THIS]]
 
 ## Step 4 - Assess application compatibility
 
-Identify your Office add-ins--including VBA scripts, macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
+[[JASON to review this with Dan and Terry]]
+
+Identify your Office add-ins--including VBA macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
 
 - Discover and test add-ins for compatability issues with the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). For more details, see [Use the Readiness Toolkit](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
