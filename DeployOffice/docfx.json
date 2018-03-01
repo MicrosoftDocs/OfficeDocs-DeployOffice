@@ -34,7 +34,10 @@
     "globalMetadata": {
       "breadcrumb_path": "/deployoffice/breadcrumb/toc.json",
       "extendBreadcrumb": "true",
-      "searchScope": ["Office Pro Plus"]
+      "searchScope": ["Office Pro Plus"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-DeployOffice",
+      "feedback_product_url": "https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/issues" 
     },
     "fileMetadata": {},
     "template": [],
