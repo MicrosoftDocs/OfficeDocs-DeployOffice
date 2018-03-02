@@ -323,12 +323,11 @@ Defines certain Office behaviors and properties.
 ### Example
 
 ```
-<Property Name="FORCEAPPSHUTDOWN"
-          Value="FALSE"/>
-<Property Name="SharedComputerLicensing"
-          Value="1"/>
-<Property Name="PinIconsToTaskbar"
-          Value="TRUE"/>
+<Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
+<Property Name="SharedComputerLicensing" Value="1"/>
+<Property Name="SCLCacheOverride" Value="1" />
+<Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\%username%" />
+<Property Name="PinIconsToTaskbar" Value="TRUE"/>
 
 ```
 
@@ -393,10 +392,8 @@ Optional. Default value is **0**.
 
 Allowed values:
 
-- Property Name="SharedComputerLicensing"
-          Value="0"
-- Property Name="SharedComputerLicensing"
-          Value="1"
+- Property Name="SharedComputerLicensing" Value="0"
+- Property Name="SharedComputerLicensing" Value="1"
 
 ### SCLCacheOverride property (part of Property element)
 Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory.
@@ -420,7 +417,7 @@ Optional.
 Example values:
 
 - Property Name="SCLCacheOverrideDirectory" Value="%appdata%\Microsoft\"
-- Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%"
+- Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\%username%"
 
 ### PinIconsToTaskBar property (part of Property element)
 
