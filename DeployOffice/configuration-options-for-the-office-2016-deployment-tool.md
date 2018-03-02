@@ -417,7 +417,7 @@ Optional.
 Example values:
 
 - Property Name="SCLCacheOverrideDirectory" Value="%appdata%\Microsoft\"
-- Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\%username%"
+- Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\\%username%"
 
 ### PinIconsToTaskBar property (part of Property element)
 
