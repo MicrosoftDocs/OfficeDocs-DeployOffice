@@ -28,7 +28,7 @@ ms.assetid: e471ef30-2a09-4767-a172-aa74e1dc4686
   
 ## How to choose
 
-There are two basic ways that you can deploy Office 365 ProPlus in your organization:
+There are two ways that you can deploy Office 365 ProPlus in your organization:
   
 - Have users install Office 365 ProPlus directly from the Office 365 portal. For more details on this method, see [Set up Office 365 for business](https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa).
     
