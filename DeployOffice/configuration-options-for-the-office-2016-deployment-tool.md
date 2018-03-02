@@ -326,7 +326,7 @@ Defines certain Office behaviors and properties.
 <Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
 <Property Name="SharedComputerLicensing" Value="1"/>
 <Property Name="SCLCacheOverride" Value="1" />
-<Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\%username%" />
+<Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
 <Property Name="PinIconsToTaskbar" Value="TRUE"/>
 
 ```
