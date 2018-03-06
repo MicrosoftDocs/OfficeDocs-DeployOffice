@@ -8,17 +8,19 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office 2016 Deployment Tool (ODT). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing Download and install or reinstall Office 365 or Office 2016 on your PC or Mac or Use the Office 2016 offline installer."
+description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing Download and install or reinstall Office 365 or Office 2016 on your PC or Mac or Use the Office 2016 offline installer."
 ---
 
 # Deploy Office 365 ProPlus from the cloud
 
-This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office 2016 Deployment Tool (ODT). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
+This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
   
 The steps in this article can apply to a variety of environments, but we'll base our examples on the following infrastructure and requirements:
   
@@ -43,9 +45,9 @@ Based on these requirements, we'll create two deployment groups: group 1 will re
    
 Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel and one from Semi-Annual Channel (Targeted). For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
   
-## Download the Office 2016 Deployment Tool and create the configuration files
+## Download the Office Deployment Tool and create the configuration files
 
-We'll use the Office 2016 Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
+We'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
   
  **Step 1: Create a shared folder**
   
@@ -53,15 +55,15 @@ Create the shared folder **\\Server\Share\O365** and assign read permissions for
   
 You can create whatever structure works for your organization, of course, but we'll refer to this setup in our examples. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
   
- **Step 2: Download the Office 2016 Deployment Tool**
+ **Step 2: Download the Office Deployment Tool**
   
-Download the Office 2016 Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
+Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
   
-After downloading the file, run the self-extracting executable file, which contains the Office 2016 Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
+After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
   
  **Step 3: Create a configuration file for group 1**
   
-To download and deploy Office 365 ProPlus for group 1, we'll create a configuration file that defines the appropriate settings for the Office 2016 Deployment Tool.
+To download and deploy Office 365 ProPlus for group 1, we'll create a configuration file that defines the appropriate settings for the Office Deployment Tool.
   
 Using a text editor, copy and paste the following into a text file and save it as **config-group1-SAC.xml** in the \\server\share\O365 folder.
   
@@ -116,7 +118,7 @@ This configuration file is used deploy Office to the group 2 users. The settings
   
 To change the options from our example, you can edit the XML elements and attributes in the configuration files. For example, if you want to add a second language, you can insert an additional language element with the appropriate ID. You can also create additional configuration files for other groups you want to deploy to, such as a group that needs to receive updates from a different channel or a group that needs the 64-bit edition of Office.
   
-For more information about the configuration options, see [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
 ## Deploying Office 365 ProPlus
 
@@ -146,9 +148,9 @@ After running the command, the Office installation should start immediately. If 
   
 ## Related Topics
 
-[Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+[Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   
-[Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
   

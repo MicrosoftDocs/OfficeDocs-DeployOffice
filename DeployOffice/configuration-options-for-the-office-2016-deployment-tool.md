@@ -1,26 +1,26 @@
 ---
-title: Configuration options for the Office 2016 Deployment Tool
+title: Configuration options for the Office Deployment Tool
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
-description: "Configuration options for the Office 2016 Deployment Tool"
+description: "Configuration options for the Office Deployment Tool"
 ---
 
 
-# Configuration options for the Office 2016 Deployment Tool
-With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+# Configuration options for the Office Deployment Tool
+With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 ## Example of a standard configuration file
 
@@ -116,7 +116,7 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client. 
+Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Pro for Office 365 and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
@@ -323,12 +323,11 @@ Defines certain Office behaviors and properties.
 ### Example
 
 ```
-<Property Name="FORCEAPPSHUTDOWN"
-          Value="FALSE"/>
-<Property Name="SharedComputerLicensing"
-          Value="1"/>
-<Property Name="PinIconsToTaskbar"
-          Value="TRUE"/>
+<Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
+<Property Name="SharedComputerLicensing" Value="1"/>
+<Property Name="SCLCacheOverride" Value="1" />
+<Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
+<Property Name="PinIconsToTaskbar" Value="TRUE"/>
 
 ```
 
@@ -393,11 +392,32 @@ Optional. Default value is **0**.
 
 Allowed values:
 
-- Property Name="SharedComputerLicensing"
-          Value="0"
-- Property Name="SharedComputerLicensing"
-          Value="1"
+- Property Name="SharedComputerLicensing" Value="0"
+- Property Name="SharedComputerLicensing" Value="1"
 
+### SCLCacheOverride property (part of Property element)
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory.
+
+For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+
+Optional. Default value is **0**.
+
+Allowed values:
+
+- Property Name="SCLCacheOverride" Value="0"
+- Property Name="SCLCacheOverride" Value="1"
+
+### SCLCacheOverrideDirectory property (part of Property element)
+Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride.
+
+For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+
+Optional.
+
+Example values:
+
+- Property Name="SCLCacheOverrideDirectory" Value="%appdata%\Microsoft\"
+- Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\\%username%"
 
 ### PinIconsToTaskBar property (part of Property element)
 
@@ -417,7 +437,7 @@ Allowed values:
 
 Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. 
 
-For more information, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+For more information, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 ### Example
 
@@ -526,7 +546,7 @@ Allowed values:
 
 ## Related topics
 
-- [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
   

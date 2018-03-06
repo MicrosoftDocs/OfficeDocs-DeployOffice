@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - DeployProPlus
 - DeployProPlus_SOConly
@@ -80,9 +82,9 @@ Review the recommended guidance and real-world examples from Microsoft about how
 
 Learn about the Office Deployment Tool (ODT), other deployment options, and activation.
 
-- [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 
-- [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
 - [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
 

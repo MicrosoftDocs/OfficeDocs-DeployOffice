@@ -48,9 +48,9 @@ The IT department at  *Cloud Managed*  has limited history of deploying MSI-base
   
 ## Download the source files
 
-When using the Office CDN, Cloud Managed is not downloading source files to an on-premises location for redistribution. However, they will still leverage the [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to create an install package and language pack for customization and distribution.
+When using the Office CDN, Cloud Managed is not downloading source files to an on-premises location for redistribution. However, they will still leverage the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to create an install package and language pack for customization and distribution.
   
-For more information about the Office Deployment Tool, see [Overview of the Office 2016 Deployment Tool](../overview-of-the-office-2016-deployment-tool.md).
+For more information about the Office Deployment Tool, see [Overview of the Office Deployment Tool](../overview-of-the-office-2016-deployment-tool.md).
   
 ## Configure deployments
 

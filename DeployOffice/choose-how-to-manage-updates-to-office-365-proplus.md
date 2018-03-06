@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - DeployProPlus
 - DeployProPlus_SOConly
@@ -76,7 +78,7 @@ If you decide to use this option, you'll disable automatic updates. You can [con
 
 [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
   
-[Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
   

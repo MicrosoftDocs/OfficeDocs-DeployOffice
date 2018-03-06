@@ -122,7 +122,7 @@ If you plan to upgrade and update Office by using by using enterprise software d
 <a name="BKMK_Related"> </a>
 ## Related Topics
 
-[Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+[Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   
 [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
   

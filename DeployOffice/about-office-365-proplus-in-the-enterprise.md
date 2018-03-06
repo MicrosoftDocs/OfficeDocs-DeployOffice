@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - DeployProPlus
 - DeployProPlus_SOConly
@@ -30,7 +32,7 @@ Office 365 ProPlus is a version of Office that's available through Office 365. I
 
 Office 365 ProPlus is similar to other versions of Office that you can deploy to your users. Here are some important similarities:
   
-- Office 365 ProPlus is a full version of Office. The in-product environment, such as the ribbon, will be familiar to Office users.
+- Office 365 ProPlus is a full version of Office. 
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-system-requirements).
     

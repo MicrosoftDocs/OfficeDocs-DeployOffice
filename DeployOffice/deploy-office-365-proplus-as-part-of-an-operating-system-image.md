@@ -42,7 +42,7 @@ Remember, you don't want to activate Office 365 ProPlus when you do the installa
   
 To prevent Office 365 ProPlus from trying to automatically activate during the installation, perform a silent installation. To do this, in the [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) that the Office Deployment Tool uses, include the following line:
   
- <Display Level="None" AcceptEULA="True" />
+ \<Display Level="None" AcceptEULA="True" /\>
   
 When you set **Level** to **None**, you don't see any user interface elements during the installation. You won't see anything that shows the progress of the installation and you won't see any error messages.
   

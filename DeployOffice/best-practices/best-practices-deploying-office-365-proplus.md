@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
@@ -80,13 +82,13 @@ A majority of enterprise customers already have tools and processes in place for
   
 ### Office Deployment Tool
 
-The Office Deployment Tool downloads and installs Office 365 clients. You can download the most recent version of the [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) from the Microsoft Download Center. It is highly recommended for customers to frequently check for a newer version of the Office Deployment Tool, as it might contain updates.
+The Office Deployment Tool downloads and installs Office 365 clients. You can download the most recent version of the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) from the Microsoft Download Center. It is highly recommended for customers to frequently check for a newer version of the Office Deployment Tool, as it might contain updates.
   
-For detailed information on the Office Deployment Tool, see [Configuration options for the Office 2016 Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md).
+For detailed information on the Office Deployment Tool, see [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md).
   
 Perform the following steps to extract the executable together with a sample configuration XML:
   
-1. Download the [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117).
+1. Download the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117).
     
 2. Double-click **officedeploymenttool.exe**.
     
