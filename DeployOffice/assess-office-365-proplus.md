@@ -32,12 +32,11 @@ In addition, you should review the system requirements for your Office server wo
 
 Finally, you should review the deployment tools you already use in your organization, such as System Center Configuration Manager. Most organizations use the deployment tools they already have in place to deploy Office. 
 
-
 ## Step 2 - Assess your Office 365 licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For details on how to manage accounts and licenses, see [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md), [Manage user accounts and licenses with Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell), and [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-If you're 
+[[ADD VISIO AND PROJECT LICENSES]]
 
 ## Step 3 - Assess your network capability
 
@@ -48,10 +47,9 @@ Review your network capability, including bandwidth and distribution of client d
 - Client devices require internet access to activate their Office 365 ProPlus subscription, and then must connect at least once every thirty days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
 
-When evaluating your network, make sure to assess network capacity between remote sites and the Office CDN. If you have the capacity in those sites, we recommend that they get updates directly from the Office CDN.
+When evaluating your network, make sure to assess the bandwidth between remote sites and the Office Content Delivery Network (CDN). If you have the capacity between those sites and the internet, we recommend that you get updates directly from the Office CDN.
 
-If you do manage updates from the Office Content Delivery Network (CDN), updates are automatically deployed over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
-
+If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to prevent your devices from trying to update at the same time. These features are not available when managing updates from a local source.
 
 ## Step 4 - Assess application compatibility
 
@@ -66,7 +64,7 @@ As part of the [planning article](plan-deploy-office-365-proplus-with-Configurat
 ## Review exit criteria 
 
 Before planning your deployment, make sure you've completed all the steps for assessing your environment and requirements.
-[[JASON: Shorten list and have it map more directly to steps above.]]
+[[EDIT LIST TO REFLECT ABOVE STEPS]]
 |Assessment         |Reviewed?            |
 |-------------------|------------------|
 |Number of clients                                |**Y/N**|
@@ -81,8 +79,7 @@ Before planning your deployment, make sure you've completed all the steps for as
 |Network                                          |**Y/N**|
 |Application compatibility                        |**Y/N**|
 
-
-## Next steps
+## Next step
 
 [Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
