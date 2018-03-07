@@ -53,6 +53,8 @@ If you do manage updates from the Office CDN, updates are automatically deployed
 
 ## Step 4 - Assess application compatibility
 
+[[CHANGE TO REFLECT INITIAL DEPLOYMENT MODEL - SAC-T to initial users, then SAC to rest after four months]]
+
 Identify your Office add-ins--including VBA macros, third-party add-ins, and complex documents and spreadsheets--and assess their compatibility with Office 365 ProPlus. In particular, you should:
 
 - Discover and test add-ins for compatability issues with the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). For more details, see [Use the Readiness Toolkit](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).

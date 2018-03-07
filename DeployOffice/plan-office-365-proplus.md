@@ -75,7 +75,7 @@ Choose how to manage updates:
 
 - **Manage updates with Configuration Manager:**  Office updates are downloaded and deployed to client devices by Configuration Manager. 
 
-- **Manage updates with the Office Deployment Tool:** Office updates are downloaded to a local source and then installed on client devices using the ODT or a third-party software deployment tool. 
+- **Manage updates with the Office Deployment Tool:** Office updates are downloaded to a local source by the ODT and then installed on client devices. 
     
 As with the initial deployment, organizations can use a combination of these options for different users. 
 
@@ -94,7 +94,7 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
-- Deploy the Semi-Annual Channel (Targeted) to a small group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization.
+- Deploy the Semi-Annual Channel (Targeted) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization.
 
 - Deploy the Semi-Annual Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with the Semi-Annual Channel (Targeted).
 
@@ -103,7 +103,9 @@ With this approach, you can test new Office features in your environment, partic
 > [!NOTE]
 > **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a small group of representative users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
-## Step 4 - Define your installation packages
+## Step 4 - Define your source files
+
+[[UPDATE INSTALLATION PACKAGE TO SOURCE FILES]]
 
 When deploying Office, you create an installation package that contains the Office files. The files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages. For example, to deploy to two channels and both architectures, you create four basic packages: 
 
@@ -139,7 +141,7 @@ Microsoft supports installing Office 365 ProPlus alongside the most recent previ
 When deploying Office, you can install different versions of Office for different groups of users. In addition to the architecture and update channel, you can include or exclude specific applications, choose languages, and define the installation experience. Each group of users is a separate deployment group and will require a separate configuration file. 
 
 In some cases, your deployment groups will match your installation packages. For example, you might have four installation packages, each of which goes to one of four deployment groups.  In most cases, however, you will have more deployment groups than installation packages. For example, you 
-
+[[MAKE THIS MAKE SENSE]]
 ## Step 6 - Plan for shared computers (optional)
 
 [DAN to add]
@@ -157,5 +159,5 @@ Depending on your deployment  plan, go to one of the following articles:
 - [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
 - [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 - [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
-
+- [[ADD SELF-INSTALL LINK]]
 
