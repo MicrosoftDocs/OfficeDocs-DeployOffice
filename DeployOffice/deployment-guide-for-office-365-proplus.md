@@ -30,7 +30,9 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
  - [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
   
 - [Overview of the changes to Office 365 ProPlus update management](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md)
-  
+
+
+
 - [Microsoft FastTrack for Office](http://fasttrack.microsoft.com/office)
   
 ## Deploy
@@ -96,3 +98,4 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 
+- [Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md).
