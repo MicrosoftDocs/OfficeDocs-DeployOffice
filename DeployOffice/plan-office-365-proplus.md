@@ -101,7 +101,7 @@ Which users should get which update channel depends on several factors, includin
 With this approach, you can test new Office features in your environment, particularly with your hardware and device drivers. 
  
 > [!NOTE]
-> **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a small group of representative users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
+> **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
 ## Step 4 - Define your source files
 
