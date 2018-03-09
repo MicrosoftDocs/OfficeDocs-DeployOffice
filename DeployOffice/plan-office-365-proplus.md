@@ -157,6 +157,9 @@ Before installing Office 365 ProPlus, we recommend removing any existing version
 
 Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 
+> [!NOTE]
+> **Best practice:** Before installing Office 365 ProPlus, remove any existing versions of Office. 
+
 ## Step 7 - Plan for shared computers (optional)
 
 [DAN to add]
