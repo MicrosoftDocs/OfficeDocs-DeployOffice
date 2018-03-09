@@ -130,29 +130,34 @@ If you require Visio or Project, we recommend replacing any existing MSI version
 > [!NOTE]
 > **Best practice:** Build separate Office installation packages for the different architectures and update channels you require. In each installation package, include all the required languages and applications, including the core Office applications and, if needed, Visio and Project. For additional languages, you can make them available for user installation or deploy them separately after the initial deployment.
 
-## Step 5 - Plan your upgrade from existing versions of Office 
+## Step 5 - Define your deployment groups
+
+When deploying Office, you can install different versions of Office for different groups of users. In addition to the architecture and update channel, you can include or exclude specific applications, choose languages, and define the installation experience. Each group of users is a separate deployment group. If you use Configuration Manager, you define the settings for these deployment groups as part of the deployment wizard. If you use the ODT, you define the settings in a configuration file. 
+
+Note that you can use the same installation package to deploy different configurations of Office to different groups. For example, you can create an installation package that includes the following:
+
+- 32-bit version of Office 365 ProPlus
+- English, Japanese, and German
+- Semi-Annual Channel
+
+This single installation package can then be used to depoy to multiple deployment groups:
+
+- Group 1 receives the Office apps in English
+- Group 2 receives the Office apps in all three langagues
+- Group 3 recieves the Office apps in English, but without Publisher
+
+By re-using installation packages for different deployment groups, you can save administrative costs and conserve network bandwidth.
+
+> [!NOTE]
+> **Best practice:** Define deployment groups to deploy the appropriate architectures, update channels, languages, and applications to your client devices. If multiple deployment groups share the same architecture and update channel, use the same installation package to install Office.
+
+## Step 6 - Plan your upgrade from existing versions of Office 
 
 Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. You can remove Office when installing a new version of Office 365 ProPlus by adding a setting to the configuration file. For more details, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
 
 Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 
-## Step 6 - Define your deployment groups
-
-When deploying Office, you can install different versions of Office for different groups of users. In addition to the architecture and update channel, you can include or exclude specific applications, choose languages, and define the installation experience. Each group of users is a separate deployment group and will require a separate configuration. If you use Configuration Manager, you define this configuration as part of the deployment wizard. If you use the ODT, you define the configuration in a configuration file. 
-
-Note that you will usually have more deployment groups than installation packages. because you can use the same installation package to deploy different configurations of Office to different groups. For example, you can define an installation package that includes the following:
-
-32-bit version of Office 365 ProPlus
-English, Japanese, and German
-Update channel: Semi-Annual Channel
-
-This single installation package can then be used to depoy to multiple deployment groups by modifying the configuration:
-
-Group 1 receives the Office apps in English
-Group 2 receives the Office apps in all three langagues
-Group 3 recieves the Office apps in English, but without Publisher
-
-## Step 6 - Plan for shared computers (optional)
+## Step 7 - Plan for shared computers (optional)
 
 [DAN to add]
 

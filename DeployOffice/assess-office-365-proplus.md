@@ -30,15 +30,15 @@ As part of this review, make sure that your client devices meet or exceed the [m
 
 In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
 
-Finally, you should review the deployment tools you already use in your organization, such as System Center Configuration Manager. Most organizations use the deployment tools they already have in place to deploy Office. 
+Finally, you should review the deployment tools you use in your organization, such as System Center Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. 
 
-## Step 2 - Assess your Office 365 licensing and accounts
+## Step 2 - Review licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For details on how to manage accounts and licenses, see [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md), [Manage user accounts and licenses with Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell), and [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 If you plan to install Visio or Project, make sure that you have the appropriate licenses for those applications as well. For more details, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
-## Step 3 - Assess your network capability
+## Step 3 - Assess network capability
 
 Review your network capability, including bandwidth and distribution of client devices, based on the following considerations:
 
@@ -58,9 +58,9 @@ Before deploying Office 365 ProPlus, we recommend testing your Office add-ins--i
 
 3. Follow the recommendations in the Readiness Toolkit to fix any critical add-ins that have compatibility issues.
 
-4. Identify a targeted group of representative users and client devices from business groups across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros. 
+4. Define a pilot group of representative users and client devices from business groups across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros. 
 
-As part of your Office deployment, you will deploy Office first to the targeted group from step 4, and then do an additional round of testing to ensure compatibility between Office 365 ProPlus and the add-ins and client devices in that group. After you have verified compatiblity, you can deploy to the rest of your organization. That first group continues to be a pilot for testing future updates from Office ahead of the rest of your organization. For more details, see [Plan your deployment of Office 365 ProPlus](plan-deploy-office-365-proplus-with-Configuration-Manager.md).  
+As part of your Office deployment, you will deploy Office first to the targeted group from step 4, and then do an additional round of testing to ensure compatibility between Office 365 ProPlus and the add-ins and client devices in that group. After you have verified compatiblity, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more details, see [Plan your deployment of Office 365 ProPlus](plan-deploy-office-365-proplus-with-Configuration-Manager.md).  
 
 ## Review exit criteria 
 
@@ -78,7 +78,10 @@ Before planning your deployment, make sure you've completed all the steps for as
 |Existing deployment tools                      |**Y/N**|
 |Office 365 licensing and accounts                |**Y/N**|
 |Network                                          |**Y/N**|
-|Application compatibility                        |**Y/N**|
+|Run Readiness Toolkit                        |**Y/N**|
+|Fix critical add-ins                        |**Y/N**|
+|Define pilot group                        |**Y/N**|
+
 
 ## Next step
 
