@@ -39,6 +39,8 @@ Learn about deployment options, how to deploy from a local source, and how to us
 
 - [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
 
+
+
 - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
@@ -96,3 +98,4 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 
+- [Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md)
