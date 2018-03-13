@@ -99,7 +99,7 @@ Example values:
 
 ### Version attribute (part of Add element) 
 
-Optional The default is the latest available version of Office.
+Optional. The default is the latest available version of Office.
 
 Example value:
 
@@ -157,6 +157,32 @@ Allowed values:
 - ForceUpgrade="TRUE"
 - ForceUpgrade="FALSE"
 
+### AllowCDNFallback attribute (part of Add element) 
+
+Optional. If you deploy Office from a local source, you can use this attribute to specify the Office Content Delivery Network (CDN) as a back-up source for the Office installation files. 
+
+The ODT looks first for installation files in the location specified in the SourcePath attribute. If the installation files are not available at that location and if the AllowCDNFallBack attribute is set to **True**, then the ODT will use installation files from the Office CDN.
+
+Allowed values: 
+
+- AllowCDNFallback="True"
+- AllowCDNFallback="False"
+ 
+#### Example 
+
+```
+<Add SourcePath="\\Server\Share" 
+     OfficeClientEdition="32"
+     Channel="Broad" 
+     AllowCDNFallback="True">
+  <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <Language ID="ja-jp" />
+  </Product>
+</Add>  
+```
+
+
 ## Product element
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
@@ -191,9 +217,11 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 ## Language element
 
-Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
-
+Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
+ 
 To install the same languages as the client's operating system, use "MatchOS" as the ID. When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute, as shown below.
+
+
 
 ### Example
 
