@@ -191,7 +191,9 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 ## Language element
 
-Defines which languages to download or install. To install the same languages as the client's operating system, use "MatchOS" as the ID. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
+Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
+
+To install the same languages as the client's operating system, use "MatchOS" as the ID. When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute, as shown below.
 
 ### Example
 
@@ -201,6 +203,13 @@ Defines which languages to download or install. To install the same languages as
   <Language ID="ja-jp" />
 </Product>
 ```
+
+```
+<Product ID="O365ProPlusRetail">
+  <Language ID="MatchOS" Fallback="en-us" />
+</Product>
+```
+
 
 ### ID attribute (part of Language element)
 
