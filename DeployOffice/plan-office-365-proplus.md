@@ -26,7 +26,7 @@ In this article, you choose how to deploy Office, how to manage updates to Offic
 
 If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of planning your deployment.
 
-In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs. 
+In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment.
 
 ![Deploy with ODT or Configuration Manager](images/plan-office-365-proplus-03.png)
 
@@ -34,7 +34,7 @@ In addition to this guidance, we recommend customers use [Microsoft Fastrack](ht
 
 To deploy Office, you first choose what deployment tool to use and whether to install  the Office files directly from the cloud or from a local source on your network.
 
-We recommend the current branch of Configuration Manager for organizations that already use it to distribute and manage software. Configuration Manager scales for large environments; enables extensive control over installation, updates, and settings; and has built-in features for deploying and managing Office. 
+We recommend the Current Branch of Configuration Manager for organizations that already use it to distribute and manage software. Configuration Manager scales for large environments; enables extensive control over installation, updates, and settings; and has built-in features for deploying and managing Office. 
 
 If you do deploy with Configuration Manager, we recommend deploying from a local source, using your Configuration Manager distribution points. If you use a previous version of Configuration Manager, we recommend upgrading to the curent branch before using it to deploy Office.
 
@@ -42,7 +42,7 @@ For organizations that don't have Configuration Manager, but still want to manag
 
 If you use the ODT and have the network capacity, we recommend deploying Office from the cloud. Doing so will minimize your administrative overhead. If you don't have the network capacity to install Office on client devices from the cloud, you can use the ODT to download the Office files to a local source on your network and install from there.
 
-You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, stll define how frequently your users receive updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local adminsitrative rights on their client devices.
+You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local administrative rights on their client devices.
 
 Choose how you want to deploy:
 
@@ -57,13 +57,13 @@ Choose how you want to deploy:
 Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
  
 > [!NOTE]
-> **Best practice:** If you use Configuration Manager already, make sure you're on the current branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
+> **Best practice:** If you use Configuration Manager already, make sure you're on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
 
 ## Step 2 - Choose how to manage updates
 
 To manage updates to Office, you choose whether to have your client devices automatically updated, what tool to use, and whether to install the updates to Office directly from the cloud or from a local source on your network.
 
-We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates automatically deployed over a number of days to prevent your devices from trying to update at the same time.
+We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to prevent your devices from trying to update at the same time.
 
 If you choose to manage the updates directly, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the curent branch. 
 
@@ -123,7 +123,10 @@ After you've deployed Office with the required languages, you can install additi
 
 For more details, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
-For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/en-us/article/Choose-the-32-bit-or-64-bit-version-of-Office-CA3253E5-AC01-4242-8A64-B56111A6F32D).
+For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+
+If you have subscription versions of Visio or Project (Visio Pro for Office 365 or Project Online Desktop Client), continue to use those. If you have the 2013 versions of pre-2016 MSI/VL versions of Project and Visio, you can keep using those side-by-side with Office 365 ProPlus.  (There is no C2R version for 2013 Visio & Project)
+	If you have 2016 MSI/VL versions of Project and Visio, follow the guidance in Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016. Because you can't install 2016 MSI side-by-side with O365 ProPlus.
 
 If you require Visio or Project, we recommend replacing any existing MSI versions with Click-to-Run versions. The new Click-to-Run versions support traditional volume licensing and Office 365 licensing models. To use Click-to-Run versions of Project and Visio, include them as applications in your installation packages. For more details, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
@@ -153,16 +156,19 @@ By re-using installation packages for different deployment groups, you can save 
 
 ## Step 6 - Plan your upgrade from existing versions of Office 
 
-Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. You can remove Office when installing a new version of Office 365 ProPlus by adding a setting to the configuration file. For more details, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
-
-Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
+Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
 
 > [!NOTE]
 > **Best practice:** Before installing Office 365 ProPlus, remove any existing versions of Office. 
 
 ## Step 7 - Plan for shared computers (optional)
 
-[DAN to add]
+If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation when you deploy Office 365 ProPlus. 
+
+With shared computer activation enabled, any user that has been assigned an Office 365 ProPlus license can log on to the computer and use the Office 365 ProPlus apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).   
+
+> [!NOTE]
+> **Best practice:** For shared computer scenarios, such as VDI, enable shared computer activation when deploying Office 365 ProPlus.
 
 ## Review exit criteria
 
