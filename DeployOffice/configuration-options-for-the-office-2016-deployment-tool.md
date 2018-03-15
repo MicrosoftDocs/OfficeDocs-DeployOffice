@@ -206,7 +206,7 @@ Defines which languages to download or install. To install the same languages as
 
 Defines the ID of the language to download or install. Required.
 
-#### Exaxmple values
+#### Example values
 
 - ID="en-us"
 - ID="ja-jp"
