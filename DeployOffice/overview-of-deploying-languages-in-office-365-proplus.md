@@ -41,6 +41,65 @@ Additional language tools that you can install for Click-to-Run products include
     
 For information about how to use the Configuration.xml file to specify language installation options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
 
+## Install the same language as the operating system
+
+When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same langauge as the operating system on the client device. To do so, you use "MatchOS" as the Language ID in the configuration file for the ODT. 
+
+When using MatchOS, we recommend that you specify a fallback language to install if a match can't be found, either because Office doesn't support the operating system's language or because the langauge pack can't be found in the local source source path. 
+
+In the following example, the ODT will install the same langauge as the operating system. If that langauge can't be installed, either because Office doesn't support it or because the language pack can't be found in the source path, Office will install English.
+
+```
+<Product ID="O365ProPlusRetail">
+  <Language ID="MatchOS" Fallback="en-us" />
+</Product>
+```
+
+For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+
+For details on 
+
+ 'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
+
+automatically install the same language as the client's operating system, you can use "MatchOS" as the ID. When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute, as shown below.
+
+o install the same languages as the client's operating system, use "MatchOS" as the ID. When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute, as shown below.
+
+### Example
+
+```
+<Product ID="O365ProPlusRetail">
+  <Language ID="en-us" />
+  <Language ID="ja-jp" />
+</Product>
+```
+
+```
+<Product ID="O365ProPlusRetail">
+  <Language ID="MatchOS" Fallback="en-us" />
+</Product>
+```
+
+### ID attribute (part of Language element)
+
+Defines the ID of the language to download or install. Required.
+
+#### Example values
+
+- ID="en-us"
+- ID="ja-jp"
+- ID="MatchOS"
+
+For a list of all languages, see  [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).  
+
+When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute.
+
+Example values:
+
+- Fallback="en-us"
+- Fallback="ja-jp"
+
+
 ## Related topics
 
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
