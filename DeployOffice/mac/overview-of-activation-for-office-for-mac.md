@@ -23,7 +23,7 @@ To use Office 2016 for Mac in your organization, it needs to be activated. How y
   
 |||
 |:-----|:-----|
-|![Are you a user?](images/Iconforuser.jpg)           <br/> |If you're an Office user trying to activate a personal copy of Office 2016 for Mac, [follow these instructions](https://support.office.com/article/299c3f95-3551-4e60-a9cf-7380457d8e37) instead of reading this article.  <br/> |
+|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you're an Office user trying to activate a personal copy of Office 2016 for Mac, [follow these instructions](https://support.office.com/article/299c3f95-3551-4e60-a9cf-7380457d8e37) instead of reading this article.  <br/> |
    
 ## Office 365 activation for Office 2016 for Mac
 
@@ -45,7 +45,7 @@ For each user that you've assigned a license to in Office 365, you can deploy an
   
 Users can sign into the Office 365 portal to deactivate an existing installation. 
   
-![Choose Deactivate next to the installation you don't need](images/b14656cb-74c8-4299-91fe-05dfc0f26561.png)
+![Choose Deactivate next to the installation you don't need](../images/b14656cb-74c8-4299-91fe-05dfc0f26561.png)
   
 Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [Office 365 admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office Installations** property of the user. 
   

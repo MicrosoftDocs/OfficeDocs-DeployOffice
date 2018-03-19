@@ -22,7 +22,7 @@ description: "Summary: Provides admins with links to information about how to de
   
 This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office 2016 for Mac in their organizations.
   
-![First Mac 2016 installation screen with "Continue" highlighted](images/0daa1e2c-48cf-4aac-961b-04331b5a4c17.png)
+![First Mac 2016 installation screen with "Continue" highlighted](../images/0daa1e2c-48cf-4aac-961b-04331b5a4c17.png)
   
 This guide covers the following areas:
   
