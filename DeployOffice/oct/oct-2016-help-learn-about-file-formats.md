@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
-f1_keywords:
-- 30646
 ms.prod: office-online-server
 localization_priority: Normal
 ms.collection: Ent_O365
