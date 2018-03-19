@@ -1,7 +1,7 @@
 
   
 
-# [mac](mac.md)
+# Deploy Office 2016 for Mac
 ## [Deployment guide for Office for Mac](deployment-guide-for-office-for-mac.md)
 ## [What's new for admins in Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
 ## [Deployment options for Office for Mac](deployment-options-for-office-for-mac.md)
