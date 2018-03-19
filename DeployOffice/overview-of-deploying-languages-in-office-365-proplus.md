@@ -47,9 +47,9 @@ When deploying Office with the Office Deployment Tool (ODT), you can automatical
 
 When using MatchOS, there are times when the ODT cannot install the operating system languages, either because Office doesn't support that language or because the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
 
-- Specify a fallback language to install if the operating system langauge isn't supported by Office or if the language pack isn't available in the local source file. To specify a fallback langugage, include the "Fallback" attribute in the configuration file, as shown in the example.  If you use MatchOS and do not include a fallback langauge, the ODT will use en-us as a default fallback
+- To specify a fallback langugage, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if the operating system langauge isn't supported by Office or if the language pack isn't available in the local source file. If you use MatchOS and do not include a fallback langauge, the ODT will use en-us as a default fallback. 
 
-- Allow the ODT to use the Office Content Delivery Network (CDN) as a backup source for language packs. When installing langauges, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location, you can have the ODT use source files from the Office CDN. To turn on this setting, inclue the "AllowCDNFallBack" attribute in the configuration file, as shown in the example.
+- To specify the Office CDN as a backup source for language packs, include the "AllowCDNFallBack" attribute in the configuration file, as shown in the example. When installing langauges, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location, the AllowCDNFallBack setting allows the ODT to use source files from the Office CDN. 
 
 For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
