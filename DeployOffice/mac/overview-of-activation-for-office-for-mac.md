@@ -6,13 +6,13 @@ manager: laurawi
 ms.date: 8/3/2015
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 ms.assetid: 8b3d0ee9-4585-4deb-80f5-d68c26daa773
 
-description: "Summary: Describes for admins how activation works for Office 2016 for Mac, for both Office 365 plans and volume license agreements"
+description: "Describes for admins how activation works for Office 2016 for Mac, for both Office 365 plans and volume license agreements"
 ---
 
 # Overview of activation for Office 2016 for Mac

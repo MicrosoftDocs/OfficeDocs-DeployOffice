@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_Mac
 ms.assetid: 18270b63-728d-4419-9032-b3846902d061
-description: "Summary: Provides information to admins on how to download and deploy Office 2016 for Mac to users in their organization"
+description: "Provides information to admins on how to download and deploy Office 2016 for Mac to users in their organization"
 ---
 
 # Deployment options for admins for Office 2016 for Mac

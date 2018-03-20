@@ -6,12 +6,12 @@ manager: laurawi
 ms.date: 8/3/2015
 ms.audience: ITPro
 ms.topic: overview
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 ms.assetid: 90e37cfb-0d8f-45f2-a7f2-71d7a415eea5
-description: "Summary: Describes changes in Office 2016 for Mac that are of interest to admins that plan to deploy it to users in their organization"
+description: "Describes changes in Office 2016 for Mac that are of interest to admins that plan to deploy it to users in their organization"
 ---
 
 # What's new for admins in Office 2016 for Mac

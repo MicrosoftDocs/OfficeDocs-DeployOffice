@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 8/3/2015
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_Mac
 ms.assetid: dcde7e17-fee5-4cba-9316-f4ec71d9f53f
-description: "Summary: Provides information for admins on how to deploy standard preference settings for Office 2016 for Mac, by configuring .plist files"
+description: "Provides information for admins on how to deploy standard preference settings for Office 2016 for Mac, by configuring .plist files"
 ---
 
 # Deploy preferences for Office 2016 for Mac

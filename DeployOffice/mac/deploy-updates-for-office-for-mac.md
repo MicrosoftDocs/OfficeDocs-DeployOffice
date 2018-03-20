@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 7/30/2015
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- Strat_O365_ProPlus
 ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_Mac
 ms.assetid: 8bc08662-4997-4604-9350-d778aa843c15
-description: "Summary: Provides admins with information about how to install updates for Office 2016 for Mac by using Microsoft AutoUpdate"
+description: "Provides admins with information about how to install updates for Office 2016 for Mac by using Microsoft AutoUpdate"
 ---
 
 # Deploy updates for Office 2016 for Mac

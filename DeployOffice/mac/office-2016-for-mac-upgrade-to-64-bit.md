@@ -6,12 +6,12 @@ manager: laurawi
 ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 ms.assetid: 81d318e3-e19d-4734-8485-a067a3c0068f
-description: "Apple has long encouraged application developers to adopt the 64-bit runtime environment, and we've been hearing from customers that 64-bit versions of Office for Mac are desirable to enable larger address spaces, better performance, and new innovative features. The Office for Mac team has been working on the transition and we're currently preparing to release the Office apps in full 64-bit."
+description: "Provides information to admins about Office 2016 for Mac changing to 64-bit."
 ---
 
 # Office 2016 for Mac upgrade to 64-bit

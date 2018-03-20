@@ -6,14 +6,14 @@ manager: laurawi
 ms.date: 8/28/2015
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: office-online-server
+ms.prod: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - O365ITProTrain
 - Ent_Office_Mac
 ms.assetid: bacbdb72-68f9-4419-8e00-49b322756abb
-description: "Summary: Provides admins with links to information about how to deploy Office 2016 for Mac to users in their organization"
+description: "Provides admins with links to information about how to deploy Office 2016 for Mac to users in their organization"
 ---
 
 # Deployment guide for Office 2016 for Mac
