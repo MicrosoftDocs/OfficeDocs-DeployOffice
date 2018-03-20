@@ -195,20 +195,18 @@ For more information about the options for excluding or removing apps, see [Conf
 
 ## Exclude OneDrive when installing Office 365 ProPlus or other applications
 
-OneDrive for Business is automatically installed when you install Office 365 ProPlus or standalone Office applications, including Visio, Project, and Skype. If you don't want OneDrive for Business installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
+OneDrive is automatically installed when you install Office 365 ProPlus or some standalone Office applications, including Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
 
 ```
 <Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" >
       <Language ID="en-us" />
-      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
     </Product>
 </Add>
 
 ```
 
-Note that "Groove" is the Product ID for OneDrive for Business.
-  
 ## Install Office in the same language as the client operating system
 
 When using the ODT, you can automatically install the Office language that matches the display language of the client operating system. To do so, use **Language ID="MatchOS"** in the configuration file.
