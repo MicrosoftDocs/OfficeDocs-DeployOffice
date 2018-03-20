@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/28/2015
 ms.audience: ITPro
 ms.topic: hub-page
-ms.prod: o365-proplus-itpro
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:

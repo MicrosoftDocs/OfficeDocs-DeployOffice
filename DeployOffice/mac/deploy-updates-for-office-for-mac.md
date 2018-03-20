@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 7/30/2015
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.prod: o365-proplus-itpro
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: 
 - Ent_O365
