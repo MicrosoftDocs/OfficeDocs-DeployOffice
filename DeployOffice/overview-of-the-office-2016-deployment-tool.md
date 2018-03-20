@@ -163,7 +163,6 @@ To change where your client computers receive their updates, run the ODT in conf
 This article does not cover all the issues related to managing updates for Office in your organization. For more information on that end-to-end scenario, including using Group Policy, see [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md).
   
 ## Exclude or remove Office 365 ProPlus products from client computers
-<a name="BKMK_excludeorremove"> </a>
 
 When installing Office 365 ProPlus, you can exclude specific products. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus products except Publisher:
   
@@ -178,7 +177,7 @@ When installing Office 365 ProPlus, you can exclude specific products. To do so,
 ```
 
 If you've already installed Office 365 ProPlus, you can also use the ExcludeApp element to remove a product that you've previously installed. For example, the configuration file above removes Publisher from the previous installation of Office.
-  
+
 You can also remove an entire language version of Office 365 ProPlus. To do so, follow the steps for excluding products for installing Office with the ODT, but replace the configuration file with one that uses the **Remove** element. For example, this configuration file removes the Spanish language version of Office 365 ProPlus:
   
 ```
@@ -193,9 +192,24 @@ You can also remove an entire language version of Office 365 ProPlus. To do so, 
 ```
 
 For more information about the options for excluding or removing apps, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+
+## Exclude OneDrive when installing Office 365 ProPlus or other applications
+
+OneDrive for Business is automatically installed when you install Office 365 ProPlus or standalone Office applications, including Visio, Project, and Skype. If you don't want OneDrive for Business installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
+
+```
+<Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
+    <Product ID="O365ProPlusRetail" >
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+    </Product>
+</Add>
+
+```
+
+Note that "Groove" is the Product ID for OneDrive for Business.
   
 ## Install Office in the same language as the client operating system
-<a name="BKMK_excludeorremove"> </a>
 
 When using the ODT, you can automatically install the Office language that matches the display language of the client operating system. To do so, use **Language ID="MatchOS"** in the configuration file.
   

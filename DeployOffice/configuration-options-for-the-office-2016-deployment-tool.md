@@ -294,7 +294,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed.
+Defines which Office 365 ProPlus products should not be installed. 
 
 ### Example
 
