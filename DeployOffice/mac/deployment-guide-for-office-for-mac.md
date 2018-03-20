@@ -9,9 +9,7 @@ ms.topic: hub-page
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Ent_Office_Mac
+ms.custom: Ent_Office_Mac
 ms.assetid: bacbdb72-68f9-4419-8e00-49b322756abb
 description: "Provides admins with links to information about how to deploy Office 2016 for Mac to users in their organization"
 ---
