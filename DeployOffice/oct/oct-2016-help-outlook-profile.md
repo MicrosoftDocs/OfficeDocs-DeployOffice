@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 3062ac28-6f5c-49f9-80b0-2b2bd6dd1094
-description: "Summary: Customizes users' default Outlook profiles, which are the sets of values in the Windows registry that define user-specific information."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Outlook Profile

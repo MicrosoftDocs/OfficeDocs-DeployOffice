@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 38078300-8715-4d5d-90b3-5888403dd9cb
-description: "In the Add/Modify Registry Entry dialog box, you can configure the following information for each registry entry, and then choose OK:"
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Registry Entry dialog box

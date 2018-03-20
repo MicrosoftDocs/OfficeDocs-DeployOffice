@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 5f04cd46-7af0-46f3-a7e8-008dbd7b7be2
-description: "Summary: Customizes security settings for Office applications."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Office security settings

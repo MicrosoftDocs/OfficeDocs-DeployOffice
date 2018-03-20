@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 67844949-6915-42bf-bb48-2c2ed7c451a0
-description: "Summary: Saves the existing Outlook profile settings to a PRF file."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Export settings

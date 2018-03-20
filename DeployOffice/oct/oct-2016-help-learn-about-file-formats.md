@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 62d4c8fa-5470-445e-9c4a-0c2ff0498eb5
-description: "The selection of a default document format could affect, to a certain extent, the manner in which you can use Office and the way you exchange documents with users of other productivity applications. Document formats were initially developed to reflect the features and behavior of one or more applications (the features and behavior of productivity applications can be quite different). For example, OpenDocument Format (ODF) was originally developed to reflect the features and behavior of OpenOffice-based productivity suites and OpenXML was originally developed to reflect the features and behavior of Office. Office provides support for ODF and gives Office users the opportunity to save their documents in ODF. However, because Office and OpenOffice features are not exactly the same or are not implemented the same way, Office users who use unsupported features and save documents in ODF may experience changes in the formatting and usability of the document and sometimes see a loss of content."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Learn about file formats

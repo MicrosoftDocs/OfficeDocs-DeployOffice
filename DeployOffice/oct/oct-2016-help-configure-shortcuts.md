@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 579bab0f-35ca-4ea8-b871-7a11823d5eb5
-description: "Summary: Modify or remove default shortcuts to installed Office applications, and add shortcuts to any files installed with Office or already on the user's computer."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Configure shortcuts

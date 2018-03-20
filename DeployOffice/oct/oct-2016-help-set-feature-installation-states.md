@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 0ff078ae-b95a-4822-a11c-83d1679b56f1
-description: "Summary: Customizes how Office features are installed on the user's computer."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Set feature installation states

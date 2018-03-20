@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 3ba946f3-8de7-4892-9d89-ab504a0ec176
-description: "The Add Network Server Entry dialog box opens when you choose Add on the Additional network sources page. If you select an entry on the Additional network sources page, and then choose Modify, the Modify Network Server Entry dialog box opens."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Network Server Entry dialog box

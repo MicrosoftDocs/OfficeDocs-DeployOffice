@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 05b56f8b-e012-4226-9059-ca9a347d627e
-description: "Summary: Define Send/Receive groups for Exchange accounts and folders, and specify the tasks that are performed on each group during a Send/Receive in Outlook."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Specify Send/Receive Groups

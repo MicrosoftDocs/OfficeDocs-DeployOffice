@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 507f9bae-bb3b-4b9c-8747-f7d227b8e2e2
-description: "Summary: Enters the product key and accepts the end user license agreement (EULA) on behalf of each user who installs Office with this Setup customization file; also sets the user interface display level."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Licensing and user interface

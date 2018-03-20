@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 9e87dfd5-9e04-4225-999b-b6bdcf04591b
-description: "In the New Group Name box, type the name of the Exchange send/receive group you are creating, and then choose OK."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: New Exchange Group dialog box

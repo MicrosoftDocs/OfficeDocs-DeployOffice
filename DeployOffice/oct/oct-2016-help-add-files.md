@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: ca62a903-adc7-430b-a012-6251e5f3695f
-description: "Summary: Adds files to users' computers when Office is installed."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add files

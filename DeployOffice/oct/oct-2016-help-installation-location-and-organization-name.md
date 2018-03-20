@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 14ed8ebb-5ffe-41cd-b17f-5532b24630d8
-description: "Summary: Specifies a default installation file location and organization name for all users whose installation includes this customization file for Setup."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Installation location and organization name

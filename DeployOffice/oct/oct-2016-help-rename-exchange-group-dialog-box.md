@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 83a46cf1-a817-4e82-982e-beedc84fe9f2
-description: "Type the new name of the Exchange send/receive group in the New Group Name box, and then choose OK."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Rename Exchange Group dialog box

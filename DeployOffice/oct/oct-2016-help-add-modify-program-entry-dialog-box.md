@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 7a38a43f-e758-43d1-839f-9c7e1dcf785d
-description: "On the Add installations and run programs page, if you choose Add, the Add Program Entry dialog box opens. If you select an entry on the Add installations and run programs page, and then choose Modify, the Modify Program Entry dialog box opens. You can enter the following information in the Add Program Entry or Modify Program Entry dialog boxes:"
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Program Entry dialog box

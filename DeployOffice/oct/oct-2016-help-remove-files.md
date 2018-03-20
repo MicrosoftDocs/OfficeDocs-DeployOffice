@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: bf6418ff-c604-4dca-b0f0-68ca270b2375
-description: "Summary: Removes files from users' computers when Office is installed."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Remove files

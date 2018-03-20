@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: cbf47aca-486c-4b22-b4ea-f2c40f716dd4
-description: "Summary: Sets the default values of Office application settings for users who install Office with this customization file."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Modify user settings

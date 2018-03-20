@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 32d33020-c00b-4a1e-b586-c407ec9fc61e
-description: "Configure the default way in which Outlook keeps the offline Address Book updated. Select among the following options:"
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Modify Address Book Settings dialog box

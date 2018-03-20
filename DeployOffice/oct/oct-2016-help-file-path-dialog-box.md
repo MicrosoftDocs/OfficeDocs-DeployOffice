@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 5a300561-28b4-4c45-b04d-d40f6c61bac3
-description: "In the File path dialog box, type the path and file name of the file that you want to add to the list of files to remove from the user's computer, and then choose OK."
 ---
 
 # Office Customization Tool (OCT) 2016 Help: File Path dialog box
