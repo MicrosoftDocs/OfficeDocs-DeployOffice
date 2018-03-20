@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: cf56e5cf-c9e0-4338-8f3e-7042c7cc7f4b
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Overview

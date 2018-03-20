@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: aef3cbd1-bdf7-4f23-8bd0-118dac929e05
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Property Value dialog box

@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 791d81b5-80ba-4ff5-a9fe-9ab87cc6603a
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Modify Group dialog box

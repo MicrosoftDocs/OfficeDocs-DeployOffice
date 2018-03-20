@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 91da64e5-306e-4e33-813e-b4ac085575e1
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add registry entries
