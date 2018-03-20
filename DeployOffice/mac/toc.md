@@ -1,12 +1,7 @@
-
-  
-
-# Deploy Office 2016 for Mac
-## [Deployment guide](deployment-guide-for-office-for-mac.md)
+# [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
 ## [What's new for admins](what-s-new-for-admins-in-office-for-mac.md)
 ## [Deployment options](deployment-options-for-office-for-mac.md)
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ## [Overview of activation](overview-of-activation-for-office-for-mac.md)
 ## [Upgrade to 64-bit](office-2016-for-mac-upgrade-to-64-bit.md)
-
