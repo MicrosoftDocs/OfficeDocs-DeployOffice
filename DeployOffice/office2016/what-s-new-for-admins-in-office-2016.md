@@ -36,7 +36,7 @@ As with any new version of Office, there is a new set of Administrative Template
   
 ## Outlook 2016 adds support for multi-factor authentication (MFA)
 
-Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL). For more information, see [Plan multi-factor authentication for Outlook 2016 for Windows](http://technet.microsoft.com/library/5b02b884-bb3f-437d-9ae7-a79b70c8261e.aspx).
+Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL). For more information, see [Plan multi-factor authentication for Outlook 2016 for Windows](https://technet.microsoft.com/library/5b02b884-bb3f-437d-9ae7-a79b70c8261e.aspx).
   
 ## Outlook 2016 now requires Autodiscover to be configured
 
@@ -48,7 +48,7 @@ Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admi
   
 ## Visio 2016 supports Information Rights Management (IRM)
 
-IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](http://technet.microsoft.com/library/92a8dc04-47c7-4946-83ee-4c0ecaff440a.aspx).
+IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](https://technet.microsoft.com/library/92a8dc04-47c7-4946-83ee-4c0ecaff440a.aspx).
   
 ## See also
 
@@ -56,10 +56,10 @@ IRM protection is now available for Visio files, enabling both online and offlin
 
 [Changes in Office 2016 for Windows desktop](changes-in-office-2016-for-windows-desktop.md)
   
-[End user resources for learning about Office 2016](end-user-resources-for-learning-about-office-2016.md)
+[Office Training Center](https://support.office.com/office-training-center)
 #### 
 
-[What's new for administrators in Outlook 2016 for Windows](http://technet.microsoft.com/library/97a37b3c-972b-4cea-be0b-6a5ff2a1f9bb.aspx)
+[What's new for administrators in Outlook 2016 for Windows](https://technet.microsoft.com/library/cc179110(v=office.16).aspx)
   
-[What's new to help admins deploy and manage Office 365 ProPlus](https://technet.microsoft.com/library/mt422980.aspx)
+[What's new to help admins deploy and manage Office 365 ProPlus](/deployoffice/what-s-new-deploying-office-365-proplus-in-the-enterprise)
 

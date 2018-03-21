@@ -24,7 +24,7 @@ Each of the following tables describes features that are changed or removed in t
   
 There are tables for the following applications: [Access](changes-in-office-2016-for-windows-desktop.md#BKMK_Access), [Excel](changes-in-office-2016-for-windows-desktop.md#BKMK_Excel), [OneNote](changes-in-office-2016-for-windows-desktop.md#BKMK_OneNote), [Outlook](changes-in-office-2016-for-windows-desktop.md#BKMK_Outlook), [PowerPoint](changes-in-office-2016-for-windows-desktop.md#BKMK_PowerPoint), [Publisher](changes-in-office-2016-for-windows-desktop.md#BKMK_Publisher), and [Word](changes-in-office-2016-for-windows-desktop.md#BKMK_Word). The [Office suite](changes-in-office-2016-for-windows-desktop.md#BKMK_Suite) table lists features that are changed or removed from several or all apps. 
   
-If you're looking for information about the new features in Office 2016, see [End user resources for learning about Office 2016](end-user-resources-for-learning-about-office-2016.md).
+If you're looking for information about the new features in Office 2016, see [Office Training Center](https://support.office.com/office-training-center).
   
 ## Office suite
 <a name="BKMK_Suite"> </a>
