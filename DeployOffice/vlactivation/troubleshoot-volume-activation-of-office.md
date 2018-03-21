@@ -31,7 +31,7 @@ Many of the solutions include running the Office Software Protection Platform sc
   
 In this article:
   
-- [](tools-to-manage-volume-activation-of-office.md#section0)
+- [Tips for configuring KMS clients and host computers](troubleshoot-volume-activation-of-office.md#tips)
     
 - [KMS activation issues](troubleshoot-volume-activation-of-office.md#KMSActivationIssues)
     
@@ -42,7 +42,7 @@ In this article:
 - [Other activation issues](troubleshoot-volume-activation-of-office.md#OtherIssues)
     
 ## Tips for configuring KMS clients and host computers
-<a name="section0"> </a>
+<a name="tips"> </a>
 
 Generally, you do not have to configure Office Key Management Service (KMS) clients if the Office KMS host computer was correctly set up and configured. The KMS client automatically searches for the KMS host computer by using DNS and then attempts activation. The KMS service uses service (SRV) resource records (RRs) in DNS to store and communicate the locations of KMS host computers.
   
