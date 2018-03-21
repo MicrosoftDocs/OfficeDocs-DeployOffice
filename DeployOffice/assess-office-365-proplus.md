@@ -30,9 +30,7 @@ As part of this review, make sure that your client devices meet or exceed the [m
 
 In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more details, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623(v=exchg.150).aspx) and [System Requirements for Office server products](https://products.office.com/en-US/office-system-requirements).
 
-Finally, you should review the deployment tools you use in your organization, such as System Center Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. 
-
-If your organization uses Configuration Manager, we recommend upgrading to the Current Branch and updating to the current release. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use).
+Finally, you should review the deployment tools you use in your organization, such as System Center Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. If your organization uses Configuration Manager, we recommend upgrading to the Current Branch and updating to the current release. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use).
 
 ## Step 2 - Review licensing and accounts
 
@@ -56,14 +54,6 @@ Before deploying Office 365 ProPlus, we recommend testing your business-critical
 
 > [!NOTE]
 > The vast majority of add-ins, VBA macros, and complex documents and spreadsheets that work with Office 2010 or 2013 will work with Office 365 ProPlus as well.
-
--	Add a step between 1st and 2nd bullet point: Review the reports and identify the subset of solutions which must be updated and are in active usage and such which are critical due to large user base.
--	Update to the (then) 3rd step: Work with your business groups to review the reports from the Readiness Toolkit to prioritize remaining add-ins and VBA macros based on their business impact.
-
-
-
-
-
 
 To complete that assessment, do the following:
 
