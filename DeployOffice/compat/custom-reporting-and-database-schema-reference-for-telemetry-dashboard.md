@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 ms.assetid: 76fa65e9-f6ba-42e8-8bc0-3681b3aea9fa
-
 description: "Describes how to create custom reports in Telemetry Dashboard, shows sample reports, and lists the tables and fields in the telemetry database."
 ---
 

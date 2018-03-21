@@ -118,7 +118,7 @@ The following table describes and illustrates how data collection is triggered a
 |
 **IT Pros access telemetry data by using Telemetry Dashboard**
 
-![IT Pros access data by using Telemetry Dashboard](../images/ORK_Telem_HowTelemetryDataIsCollected-4.gif)|IT Pros who are granted permissions to the telemetry database can use Telemetry Dashboard to view the combined data. To learn more, see [](deploy-telemetry-dashboard.md#permissions).  <br/> |
+![IT Pros access data by using Telemetry Dashboard](../images/ORK_Telem_HowTelemetryDataIsCollected-4.gif)|IT Pros who are granted permissions to the telemetry database can use Telemetry Dashboard to view the combined data. To learn more, see [To grant other administrators permission to access the telemetry database](deploy-telemetry-dashboard.md#permissions).  <br/> |
    
 ## Planning labels for telemetry agents
 <a name="AgentLabel"> </a>

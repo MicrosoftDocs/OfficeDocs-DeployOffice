@@ -191,6 +191,7 @@ The telemetry database, which was created by the telemetry processor settings wi
     
 When the connection is established, many new worksheets are added to the workbook. They won't contain data until you deploy and enable Telemetry Agents.
   
+<a name="permissions"> </a>
 ### To grant other administrators permission to access the telemetry database
 
 - You can use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) on the computer that is running SQL Server to allow other administrators to view data in Telemetry Dashboard. You don't have to run this for your own account if you created a database when you installed the telemetry processor. Update the values for dbserver, dbname, and domain\user as needed. 
