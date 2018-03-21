@@ -3,7 +3,7 @@ title: "Use the Readiness Toolkit to assess application compatibility for Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 2/1/2018
+ms.date: 3/20/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,7 +22,7 @@ description: "The Readiness Toolkit for Office add-ins and VBA can help you iden
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.17353.1, and was released on January 24, 2018. We recommend that you always download and use the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18079, and was released on March 20, 2018. We recommend that you always download and use the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -124,7 +124,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 |VBA Summary  <br/> |Provides some pre-defined PivotTables to allow you to analyze the data captured from the scan.  <br/> <br/>If these PivotTables don't meet your specific needs, you can create your own based on the data on the VBA Results worksheet.  <br/> |
 |VBA Results  <br/> |Provides information on each file scanned by the Readiness Report Creator. If multiple issues are found in a scanned file, there is a separate row for each issue.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 |VBA Remediation  <br/> |Provides proposed changes to VBA macro code found during the scan.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
-|VBA References  <br/> |List references identified in code and in the VBA project. These references are generally used to call external DLLs or linked files for use by the VBA code.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
+|VBA References  <br/> |List references identified in code and in the VBA project. These references are generally used to call external DLLs, linked files, and ODBC connections for use by the VBA code.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
    
  **File status:** The report also categorizes, by a file status, the files that were scanned. The following table lists the possible file statuses that can appear in a readiness report, and an explanation of the file status.
   
@@ -264,9 +264,9 @@ The following is an example of a command line that you can run to scan a folder,
 ReadinessReportCreator.exe -p c:\officefiles\ -r -output \\server01\finance -silent
 ```
 
-It's important to note that when you run the Readiness Report Creator from the command line, the Readiness Report Creator doesn't create an Excel file. Instead the Readiness Report Creator creates a TSV file or a JSON file. The TSV file contains the VBA macro information from the scan, and the JSON file contains the add-in information from the scan.
+It's important to note that when you run the Readiness Report Creator from the command line, the Readiness Report Creator doesn't create an Excel file. Instead the Readiness Report Creator creates JSON files containing VBA macro and add-in information from the scan.
   
-To create a consolidated Excel report from these various command line scans, you need to run the UI wizard version of the Readiness Report Creator. For the information source, select "Previous readiness results saved together in a local folder or network share," and then specify the location where you saved all the TSV and JSON files for the scans. The Readiness Report Creator then consolidates the information from the TSV and JSON files into a readiness report in a single Excel file.
+To create a consolidated Excel report from these various command line scans, you need to run the UI wizard version of the Readiness Report Creator. For the information source, select "Previous readiness results saved together in a local folder or network share," and then specify the location where you saved all the files for the scans. The Readiness Report Creator then consolidates the information from the JSON files into a readiness report in a single Excel file.
   
 Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
   
