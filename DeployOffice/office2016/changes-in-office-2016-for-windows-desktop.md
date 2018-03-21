@@ -1,0 +1,127 @@
+---
+title: "Changes in Office 2016 for Windows desktop"
+ms.author: danbrown
+author: DHB-MSFT
+manager: laurawi
+ms.date: 6/16/2017
+ms.audience: ITPro
+ms.topic: reference
+ms.prod: office-perpetual-itpro
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom: Ent_Office_Other
+ms.assetid: 9aa3ab89-c8d2-47dc-8516-a676f09a9d37
+description: "Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released."
+---
+
+# Changes in Office 2016 for Windows desktop
+
+ **Summary:** Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released. 
+  
+ **Audience:** Admins who deploy and manage Office in organizations 
+  
+Each of the following tables describes features that are changed or removed in the applications in Office 2016 for Windows.
+  
+There are tables for the following applications: [Access](changes-in-office-2016-for-windows-desktop.md#BKMK_Access), [Excel](changes-in-office-2016-for-windows-desktop.md#BKMK_Excel), [OneNote](changes-in-office-2016-for-windows-desktop.md#BKMK_OneNote), [Outlook](changes-in-office-2016-for-windows-desktop.md#BKMK_Outlook), [PowerPoint](changes-in-office-2016-for-windows-desktop.md#BKMK_PowerPoint), [Publisher](changes-in-office-2016-for-windows-desktop.md#BKMK_Publisher), and [Word](changes-in-office-2016-for-windows-desktop.md#BKMK_Word). The [Office suite](changes-in-office-2016-for-windows-desktop.md#BKMK_Suite) table lists features that are changed or removed from several or all apps. 
+  
+If you're looking for information about the new features in Office 2016, see [End user resources for learning about Office 2016](end-user-resources-for-learning-about-office-2016.md).
+  
+## Office suite
+<a name="BKMK_Suite"> </a>
+
+The following table lists features that are changed or removed in Office 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Clip Art  <br/> |The Office.com Clip Art and image library has been removed.  <br/> |[Clip Art now powered by Bing Images](https://blogs.office.com/2014/12/01/clip-art-now-powered-bing-images/) <br/> [Add online pictures or clip art to your file](https://support.office.com/article/0a01ae25-973c-4c2c-8eaf-8c8e1f9ab530) <br/> |
+|Document Information Panel  <br/> |The Document Information Panel has been removed.  <br/> |[Where is the Document Information Panel in Office 2016?](https://support.office.com/article/767bbbbb-27aa-42e8-81dc-9ed5cf06e6e0) <br/> |
+|EPS images  <br/> |The ability to insert images that use the EPS file format is no longer supported.  <br/> |If you have an Office file that contains an image that uses the EPS file format, the image will be replaced by a red X placeholder.  <br/> [Support for EPS images has been turned off in Office for Windows](https://support.office.com/article/a069d664-4bcf-415e-a1b5-cbb0c334a840) <br/> |
+|Equation Editor  <br/> |Microsoft Equation Editor 3.0 isn't supported in Office 2016.  <br/> |You don't need to install anything to write or edit math equations in Office 2016. Just choose **Insert** > **Equation**. For more information, see [Write an equation](https://support.office.com/article/0b1e83aa-19db-478a-a79d-205bcfe88cdc).  <br/> |
+|Localized languages  <br/> | Language packs that allow the user to display the Office user interface in a specific language are no longer available for the following languages:  <br/>  Central Kurdish  <br/>  Hausa (Latin)  <br/>  Igbo  <br/>  isiXhosa  <br/>  isiZulu  <br/>  K'iche  <br/>  Kinyarwanda  <br/>  Punjabi (Arabic)  <br/>  Sesotho sa Leboa  <br/>  Setswana (South Africa)  <br/>  Tajik  <br/>  Tigrigna  <br/>  Wolof  <br/>  Yoruba  <br/> | Proofing tools are still available for the following languages:  <br/>  Hausa (Latin)  <br/>  Igbo  <br/>  isiXhosa  <br/>  isiZulu  <br/>  Kinyarwanda  <br/>  Sesotho sa Leboa  <br/>  Setswana (South Africa)  <br/>  Wolof  <br/>  Yoruba  <br/>  For more information, see [Language Accessory Pack for Office 2016](https://support.office.com/article/82ee1236-0f9a-45ee-9c72-05b026ee809f ).  <br/> |
+|Themes  <br/> | The following changes have been made to Office themes:  <br/>  The light gray theme has been removed.  <br/>  The dark gray theme has been updated.  <br/>  A black theme has been added.  <br/> |The black theme is only available to Office 365 subscribers.  <br/> |
+|Version information  <br/> |The version information shown under **File** > **Account** > **About** _application name_ no longer shows the version information for the application's .exe file.  <br/> |This only applies to Windows Installer (MSI) versions of Office 2016.  <br/> The version number that is shown is for the Mso20win32client.dll file.  <br/> |
+   
+## Access
+<a name="BKMK_Access"> </a>
+
+The following table lists features that are changed or removed in Access 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Web apps  <br/> |Microsoft no longer recommends creating and using Access web apps in SharePoint.  <br/> |This feature will be retired from SharePoint Server in ten years and from Office 365 in one year.  <br/> [Updating the Access Services in SharePoint Roadmap](https://techcommunity.microsoft.com/t5/Office-Retirement-Blog/Updating-the-Access-Services-in-SharePoint-Roadmap/ba-p/57148) <br/> [Access web apps no longer supported](https://support.office.com/article/497fd86b-e982-43c4-8318-81e6d3e711e8) <br/> |
+   
+## Excel
+<a name="BKMK_Excel"> </a>
+
+The following table lists features that are changed or removed in Excel 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Azure Marketplace connector  <br/> | The following options have been removed from the ribbon and are no longer available:  <br/> **Data** > ** Get External Data ** > **From Other Sources** > **From Windows Azure Marketplace** <br/> **Data** > **Get Data** > **From Azure** > **From Azure Marketplace** <br/> |Data services are no longer available from Azure Marketplace.  <br/> |
+|Power View  <br/> |The **Power View** button has been removed from **Insert** > **Reports** on the ribbon.  <br/> |[Roadmap for Power View in Excel](https://support.office.com/article/c1f0d0f7-adef-4f03-ae35-46d83294e96b) <br/> If you want to continue to use Power View, you can [follow these steps](https://support.office.com/article/f8fc21a6-08fc-407a-8a91-643fa848729a) to turn on Power View.  <br/> |
+   
+## OneNote
+<a name="BKMK_OneNote"> </a>
+
+The following table lists features that are changed or removed in OneNote 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Scanned images  <br/> |The **Scanned Image** button has been removed from **Insert** > **Images** on the ribbon.  <br/> |The ability to insert a scanned image from a scanner is no longer supported.  <br/> For other options, see [How can I Insert scanned images into OneNote 2016 for Windows?](https://support.office.com/article/6c41b5a8-7dfd-4c6a-811e-5c167729c4d9) <br/> |
+   
+## Outlook
+<a name="BKMK_Outlook"> </a>
+
+The following table lists features that are changed or removed in Outlook 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Autodiscover  <br/> |Outlook 2016 requires Autodiscover to be configured, or it won't be able to connect to Exchange Server.  <br/> |Outlook 2016 retrieves Exchange Server connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature.  <br/> Microsoft Support Knowledge Base (KB) article [3098831](https://support.microsoft.com/kb/3098831) <br/> |
+|Cached Exchange Mode Sync Slider  <br/> | There are three new options for how much mail is available when you're working offline and you're using Cached Exchange Mode:  <br/>  3 days  <br/>  1 week  <br/>  2 weeks  <br/> |[Change how much mail to keep offline](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633) <br/> |
+|Exchange Server support  <br/> |Outlook 2016 doesn't support connecting to Exchange Server 2007.  <br/> |Microsoft Support Knowledge Base (KB) article [3093039](https://support.microsoft.com/kb/3093039) <br/> |
+|Outlook Social Connector  <br/> |Access to LinkedIn, Facebook, and other social media sites has been removed.  <br/> |In some cases, these social sites have built Office Add-in solutions that you can use instead. Visit the [Office Store](https://store.office.com/appshome.aspx) for additional solutions.  <br/> [Can you connect to a social network in Outlook?](https://support.office.com/article/4a284963-0298-487a-86e4-ffa8882f8ee9) <br/> |
+|People Pane  <br/> |The People Pane is off by default.  <br/> Also, the Account Settings option has been removed.  <br/> |To show the People Pane when reading messages, go to **View** > **People Pane**, and then choose **Normal** or **Minimized**.  <br/> |
+|PRF files  <br/> |PRF files for configuring Exchange Server accounts are no longer supported.  <br/> |Accounts should be configured automatically in the account wizard when you use Autodiscover.  <br/> |
+   
+## PowerPoint
+<a name="BKMK_PowerPoint"> </a>
+
+The following table lists features that are changed or removed in PowerPoint 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|HTML files  <br/> |Opening an HTML file is no longer supported.  <br/> |The "All Web Pages" choice has been removed from the **File** > **Open** dialog box.  <br/> |
+   
+## Publisher
+<a name="BKMK_Publisher"> </a>
+
+The following table lists features that are changed or removed in Publisher 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Live Preview  <br/> |The ability to preview the effects of formatting changes has been removed.  <br/> |The **Enable Live Preview** option has been removed from **File** > **Options** > **General** > **User Interface options**.  <br/> Live Preview is removed starting with Version 1606 (Build 7070.2022).  <br/> |
+   
+## Word
+<a name="BKMK_Word"> </a>
+
+The following table lists features that are changed or removed in Word 2016.
+  
+|**Area**|**What's changed**|**More information**|
+|:-----|:-----|:-----|
+|Blogging  <br/> |The ability to publish a document as a blog post to Blogger (www.blogger.com) is no longer supported.  <br/> |The **Blogger** option has been removed from **File** > **Share** > **Post to Blog**.  <br/> You can still publish a document as a blog post to other blogging platforms.  <br/> [Help with blogging in Word](https://support.office.com/article/3ad4ad8d-06a3-441d-99cd-c65e13a3433d) <br/> |
+|Grammar &amp; Style  <br/> |The **Grammar &amp; Style** option has been removed from the **Writing Style** drop-down menu in the "When correcting spelling and grammar in Word" section under **File** > **Options** > **Proofing**.  <br/> | The **Grammar &amp; Style** option has been removed for the following languages:  <br/>  Arabic  <br/>  Danish  <br/>  Dutch  <br/>  English  <br/>  Finnish  <br/>  French  <br/>  German  <br/>  Italian  <br/>  Norwegian Bokmål  <br/>  Portuguese (Brazilian)  <br/>  Portuguese (Portugal)  <br/>  Russian  <br/>  Spanish  <br/> |
+|Korean data recognizers  <br/> |Korean data recognizers are no longer available under **File** > **Options** > **Proofing** > **AutoCorrect Options** > **Actions**.  <br/> | The following Korean data recognizers have been removed:  <br/>  Address  <br/>  Date  <br/>  Person name  <br/>  Telephone number  <br/>  Time  <br/> |
+|Research  <br/> |The **Research** button has been removed from **Review** > **Proofing** on the ribbon.  <br/> |You can add the **Research** button to the ribbon by customizing the ribbon.  <br/> |
+   
+## See also
+<a name="BKMK_Word"> </a>
+
+#### 
+
+[What's new for admins in Office 2016](what-s-new-for-admins-in-office-2016.md)
+#### 
+
+[What's new for administrators in Outlook 2016 for Windows](http://technet.microsoft.com/library/97a37b3c-972b-4cea-be0b-6a5ff2a1f9bb.aspx)
+  
+[What's new to help admins deploy and manage Office 365 ProPlus](https://technet.microsoft.com/library/mt422980.aspx)
+
