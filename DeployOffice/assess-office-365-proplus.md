@@ -13,7 +13,7 @@ ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid:
-description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
 # Assess your environment and requirements for deploying Office 365 ProPlus
@@ -24,7 +24,7 @@ In addition to this guidance, we recommend that you use [Microsoft Fastrack](htt
 
 ## Step 1 - Review infrastructure and requirements
 
-Review the number and details of your client devices, including platform (Windows or Mac), operating systems, architectures (32-bit or 64-bit), existing versions of Office that are installed, and required languages. 
+Review the number and details of your client devices, including platform (Windows or Mac); operating systems; architectures (32-bit or 64-bit); required languages; and existing versions of Office, Visio, Project, and other Office applications. 
 
 As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Office 365 ProPlus](https://products.office.com/en-us/office-system-requirements).
 
@@ -32,29 +32,44 @@ In addition, you should review the system requirements for your Office server wo
 
 Finally, you should review the deployment tools you use in your organization, such as System Center Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. 
 
+If your organization uses Configuration Manager, we recommend upgrading to the Current Branch and updating to the current release. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use).
+
 ## Step 2 - Review licensing and accounts
 
 Make sure that all your users have Office 365 accounts and licenses, and that those licenses include Office 365 ProPlus. For details on how to manage accounts and licenses, see [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md), [Manage user accounts and licenses with Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell), and [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-If you plan to install Visio or Project, make sure that you have the appropriate licenses for those applications as well. 
+If you plan to install Visio or Project, make sure that you have the appropriate licenses and have identified the users who need them. For more details, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
 ## Step 3 - Assess network capability
 
 Review your network capability, including bandwidth and distribution of client devices, based on the following considerations:
 
 - Installation files for Office 365 ProPlus are at least 1.6 GB for the core files, plus at least 250 MB for each language deployed. 
-- Office 365 updates vary in size, but you can review recent download sizes [here](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 - Client devices require Internet access to activate their Office 365 ProPlus subscription, and then must connect at least once every thirty days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
+- Office 365 updates vary in size, but you can review recent download sizes [here](https://support.office.com/en-us/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the Internet and your client devices, including those in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to prevent your devices from trying to update at the same time. 
 
 ## Step 4 - Assess application compatibility
 
-Before deploying Office 365 ProPlus, we recommend testing your VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with the new version of Office. To complete that assessment, do the following:
+Before deploying Office 365 ProPlus, we recommend testing your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with the new version of Office.  
+
+> [!NOTE]
+> The vast majority of add-ins, VBA macros, and complex documents and spreadsheets that work with Office 2010 or 2013 will work with Office 365 ProPlus as well.
+
+-	Add a step between 1st and 2nd bullet point: Review the reports and identify the subset of solutions which must be updated and are in active usage and such which are critical due to large user base.
+-	Update to the (then) 3rd step: Work with your business groups to review the reports from the Readiness Toolkit to prioritize remaining add-ins and VBA macros based on their business impact.
+
+
+
+
+
+
+To complete that assessment, do the following:
 
 1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). You can run the Readiness Toolkit on client devices across your entire organization. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
  
-2. Work with your business groups to review the reports from the Readiness Toolkit to prioritize the critical add-ins and VBA macros.
+2. Work with your business groups to review the reports from the Readiness Toolkit to prioritize add-ins and VBA macros. We recommend identifying the add-ins and VBA macros as business critical, high impact, medium impact, and low impact.  This prioritization helps identify which add-ins and VBA macros to validate. 
 
 3. Use the reports to identify the readiness status of your add-ins and get recommendations on how to fix VBA macro issues.
 
@@ -72,10 +87,12 @@ Before planning your deployment, make sure you've completed all the steps for as
 |Client platform (Windows or Mac)                 |**Y/N**|
 |Operating systems                                |**Y/N**|
 |Architectures (32-bit and 64-bit)                |**Y/N**|
-|Required languages                               |**Y/N**|
-|Existing versions of Office                      |**Y/N**|
+|Required languages                                 |**Y/N**|
+|Existing versions of Office                        |**Y/N**|
+|Existing versions of Project and Visio              |**Y/N**|
 |System requirements                              |**Y/N**|
-|Existing deployment tools                      |**Y/N**|
+|Existing deployment tools                          |**Y/N**|
+|If using Configuration Manager, on Current Branch  |**Y/N**|
 |Office 365 licensing and accounts                |**Y/N**|
 |Network                                          |**Y/N**|
 |Run Readiness Toolkit                        |**Y/N**|

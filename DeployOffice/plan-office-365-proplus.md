@@ -153,14 +153,14 @@ By re-using installation packages for different deployment groups, you can save 
 
 ## Step 6 - Plan your upgrade from existing versions of Office 
 
-Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you plan to have two versions of Office on the same computer, you should plan to transition to using only Office 365 ProPlus when possible.  
+Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you need to have two versions of Office on the same computer, we recommend that you keep only the necessary earlier applications and that you plan to transition to using only Office 365 ProPlus when possible.  
 
 > [!NOTE]
 > **Best practice:** Before installing Office 365 ProPlus, remove any existing versions of Office. 
 
 ## Step 7 - Plan for shared computers (optional)
 
-If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation when you deploy Office 365 ProPlus. 
+If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Office 365 ProPlus. 
 
 With shared computer activation enabled, any user that has been assigned an Office 365 ProPlus license can log on to the computer and use the Office 365 ProPlus apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).   
 
@@ -180,5 +180,5 @@ Depending on your deployment  plan, go to one of the following articles:
 - [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
 - [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 - [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
-- [[ADD SELF-INSTALL LINK]]
+- [[ADD  SELF- INSTALL LINK]]
 
