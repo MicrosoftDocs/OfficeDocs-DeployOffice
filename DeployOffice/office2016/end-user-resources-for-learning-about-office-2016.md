@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Other
+ms.custom: Ent_Office_VL
 ms.assetid: 12c9aa22-73f5-41f1-98bf-1e6351890576
 
 description: "List of articles to help your organization learn about Office 2016 applications."

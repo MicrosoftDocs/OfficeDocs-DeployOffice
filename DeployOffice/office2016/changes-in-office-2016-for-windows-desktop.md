@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Other
+ms.custom: Ent_Office_VL
 ms.assetid: 9aa3ab89-c8d2-47dc-8516-a676f09a9d37
 description: "Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released."
 ---

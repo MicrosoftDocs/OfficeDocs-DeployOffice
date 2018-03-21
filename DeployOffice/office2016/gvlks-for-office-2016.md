@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 99fa0e2a-99f8-4555-b0a5-c09d3aede928
-description: "Lists the GVLKs that administrators use for enterprise licenses of Office 2016."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # GVLKs for KMS and Active Directory Domain Services activation of Office 2016
