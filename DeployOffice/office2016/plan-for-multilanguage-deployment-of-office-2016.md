@@ -20,19 +20,14 @@ description: "Plan for multilanguage setup, and customization and proofing tools
   
  **Audience:** IT Professionals 
   
+Support for multiple languages and languages other than the default are provided through language accessory packs (LAPs) and language interface packs (LIPs) that you install. Language accessory packs (LAPs) let you see ribbon or menu items, commands, Help, and proofing tools like the spelling checker, grammar checker, and thesaurus in a translated version of Office for all Office applications. Language interface packs (LIPs) only change the language for the ribbon and commands for some Office applications.
+
 To deploy Office 2016 in multiple languages, you must plan carefully. This article discusses the planning considerations for setup and the customizations that you can make when you install language packs or proofing tools.
   
 > [!IMPORTANT]
 > This article describes methods to deploy and manage language packs for the Windows Installer-based (MSI) delivery format of Office 2016, which is available for enterprise organizations through volume licensing. If you have an Office subscription and you are deploying Office 365 ProPlus, which uses the Click-to-Run delivery format, see [Plan for multilanguage deployment of Click-to-Run-based Office installations](http://technet.microsoft.com/library/a972905d-3f7b-47c1-8481-9a5ac6876283.aspx). 
   
-In this article:
   
-- [Plan setup of Office 2016 multilanguage deployment](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanSetup)
-    
-- [Plan language customizations for Office](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanCustomizations)
-    
-- [Plan for Office proofing tools](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanProofingTools)
-    
 ## Plan setup of Office 2016 multilanguage deployment
 <a name="BKMK_PlanSetup"> </a>
 
