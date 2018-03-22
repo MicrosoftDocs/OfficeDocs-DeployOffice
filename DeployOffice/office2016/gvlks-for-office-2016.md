@@ -44,11 +44,10 @@ By default, Office 2016 volume license editions install a Generic Volume License
 |Skype for Business 2016  <br/> |869NQ-FJ69K-466HW-QYCP2-DDBV6  <br/> |
 |Word 2016  <br/> |WXY84-JN2Q9-RBCCQ-3Q3J3-3PFJ6  <br/> |
    
+
 ## See also
 
-#### 
-
-[Plan volume activation](plan-volume-activation-of-office.md)
+[Plan volume activation](../vlactivation/plan-volume-activation-of-office.md)
   
-[Active Directory Domain Services-based activation](activate-office-by-using-active-directory.md)
+[Active Directory Domain Services-based activation](../vlactivation/activate-office-by-using-active-directory.md)
 
