@@ -1,4 +1,4 @@
-# [Volume activation](volume-activation-of-office.md)
+# Volume activation
 ## [Plan volume activation](plan-volume-activation-of-office.md)
 ## [Configure a KMS host computer](configure-a-kms-host-computer-for-office.md)
 ## [Configure DNS to activate by using KMS](configure-dns-to-activate-office-by-using-kms.md)

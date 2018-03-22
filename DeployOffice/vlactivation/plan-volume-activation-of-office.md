@@ -26,18 +26,17 @@ You plan the deployment of Office for volume activation of Office 2016 in severa
 |:-----|:-----|
 |![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)           <br/> |If you are a user activating a personal copy of Office 2016, follow the [Activate Office 365 Home, Personal, University, Office 2013, or Office 2016](https://go.microsoft.com/fwlink/p/?LinkId=335854) directions instead.  <br/> |
 |![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)           <br/> |If you are an admin planning to activate and license Office 365 ProPlus, review the [Overview of licensing and activation in Office 365 ProPlus](http://technet.microsoft.com/library/88a461cf-5573-467e-a0b8-ab2d580b877e.aspx) instead.  <br/> If you are an admin planning to activate and license Volume license edition of Office 2016, you're at the right place, keep reading.  <br/> |
-   
- **In this article:**
+
+Microsoft policy requires the activation of all editions of Office 2016 client software, including volume license editions. For Office 2016, volume activation occurs through Office Activation Technologies, which are based on the Software Protection Platform (SPP) that is used in Windows 7, Windows Server 2008 R2, Windows 8, Windows 8.1, Windows Server 2012 and Windows Server 2012 R2. Office Activation Technologies provides three activation methods for Office 2016: 
   
-- [Plan a volume license deployment](plan-volume-activation-of-office.md#BK_Planadeploymnet)
+ - [Key Management Service (KMS)](plan-volume-activation-of-office.md#kms)
     
-- [Review and compare activation methods](plan-volume-activation-of-office.md#section1)
+ - [Multiple Activation Key (MAK)](plan-volume-activation-of-office.md#mak)
     
-  - [Key Management Service (KMS)](plan-volume-activation-of-office.md#kms)
-    
-  - [Multiple Activation Key (MAK)](plan-volume-activation-of-office.md#mak)
-    
-  - [Active Directory Domain Services-based activation](plan-volume-activation-of-office.md#ADDSActivation)
+ - [Active Directory-Based Activation (ADBA)](plan-volume-activation-of-office.md#ADDSActivation)
+
+The model that you choose depends on the size, network infrastructure, connectivity, and security requirements in your environment.  
+
     
 ## Plan a volume license deployment
 <a name="BK_Planadeploymnet"> </a>
