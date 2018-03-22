@@ -1,7 +1,20 @@
+
 # Deployment guide for Office 2016
 ## [What's new for admins](what-s-new-for-admins-in-office-2016.md)
 ## [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
 ## [Office Training Center](https://support.office.com/office-training-center)
+
+## Volume activation
+### [Plan volume activation](../vlactivation/plan-volume-activation-of-office.md)
+### [Configure a KMS host computer](../vlactivation/configure-a-kms-host-computer-for-office.md)
+### [Configure DNS to activate by using KMS](../vlactivation/configure-dns-to-activate-office-by-using-kms.md)
+### [Activate Office by using KMS](../vlactivation/activate-office-by-using-kms.md)
+### [Rearm an Office installation on an image when using KMS](../vlactivation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md)
+### [Activate Office by using MAK](../vlactivation/activate-office-by-using-mak.md)
+### [Activate Office by using Active Directory](../vlactivation/activate-office-by-using-active-directory.md)
+### [Tools to manage volume activation](../vlactivation/tools-to-manage-volume-activation-of-office.md)
+### [Troubleshoot volume activation](../vlactivation/troubleshoot-volume-activation-of-office.md)
+
 ## Language deployment
 ### [Plan for multilanguage deployment](plan-for-multilanguage-deployment-of-office-2016.md)
 ### [Customize language setup and settings](customize-language-setup-and-settings-for-office-2016.md)
