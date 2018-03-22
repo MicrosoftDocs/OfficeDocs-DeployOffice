@@ -17,7 +17,7 @@ ms.assetid: 21c562f2-2e54-452d-8ef5-e39c236bfaf1
 description: "Each language version of Office 2016 includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect."
 ---
 
-# Proofing Tools for Office 365 ProPlus
+# Proofing tools for Office 365 ProPlus
 
 Each language version of Office 2016 includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
   
