@@ -51,7 +51,6 @@ If the KMS host computer that a client selects does not respond, the KMS client 
 
 #### 
 
-[Volume activation of Office 2016](volume-activation-of-office.md)
   
 [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
 

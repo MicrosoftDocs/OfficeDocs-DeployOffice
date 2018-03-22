@@ -149,8 +149,7 @@ For Office 2016 suites, only one key is required for all the products in the sui
 
 #### 
 
-[Volume activation of Office 2016](volume-activation-of-office.md)
-  
+ 
 [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
   
 [Activate Office 2016 MAK clients](activate-office-by-using-mak.md)
