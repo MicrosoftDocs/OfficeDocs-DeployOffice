@@ -3,7 +3,7 @@ title: "Office 2016 for Mac upgrade to 64-bit"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 03/22/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -16,9 +16,7 @@ description: "Provides information to admins about Office 2016 for Mac changing 
 
 # Office 2016 for Mac upgrade to 64-bit
 
-Apple has long encouraged application developers to adopt the 64-bit runtime environment, and we've been hearing from customers that 64-bit versions of Office for Mac are desirable to enable larger address spaces, better performance, and new innovative features. The Office for Mac team has been working on the transition and we're currently preparing to release the Office apps in full 64-bit.
-  
-If you're an Office Insider for Office 2016 for Mac, you can get going right away and give the 64-bit version a try today. [Learn how to become an Office Insider.](https://support.microsoft.com/kb/3136076)
+Apple has long encouraged application developers to adopt the 64-bit runtime environment, and we've been hearing from customers that 64-bit versions of Office for Mac are desirable to enable larger address spaces, better performance, and new innovative features. All releases of Office 2016 for Mac after August 22, 2016 are 64-bit only.
   
 ## What does this change mean for me?
 
@@ -26,9 +24,7 @@ If you're an Office Insider for Office 2016 for Mac, you can get going right awa
     
 - If you use or develop add-ins in Office 2016 for Mac, you may need to update those add-ins to 64-bit.
     
-> [!NOTE]
-> If you use the Thomson Reuters EndNote Cite While You Write (CWYW) add-in for Word 2016 for Mac, and you need a 64-bit version of the add-in, consider joining the [EndNote beta testing program](https://endnote.com/betasignup). Once you sign up, you'll receive a beta version of the 64-bit CWYW add-in. Any feedback you provide will help ensure that the add-in for EndNote is fully compatible with the 64-bit version of Word 2016 for Mac. 
-  
+
 ## I develop add-ins or write VBA for Office 2016 for Mac. What do I need to know?
 
 - The primary impact of this change is to compiled add-ins. Office add-ins (add-ins using the JavaScript-based APIs) are not impacted by this change.
