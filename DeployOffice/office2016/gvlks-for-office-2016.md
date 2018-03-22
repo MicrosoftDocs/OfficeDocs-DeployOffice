@@ -23,7 +23,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 By default, Office 2016 volume license editions install a Generic Volume License Key (GVLK). The GVLK enables Office 2016 to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
   
 > [!IMPORTANT]
-> These license keys will not work for your personal Office 2016 installation. If you need to find your product key for a personal copy of Office 2016, see [Find your Office product key](https://support.office.com/article/Find-your-Office-product-key-12a5763a-d45c-4685-8c95-a44500213759). 
+> These license keys will not work for your personal Office 2016 installation. If you need to find your product key for a personal copy of Office 2016, see [Using product keys](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759). 
   
 ****
 
@@ -48,7 +48,7 @@ By default, Office 2016 volume license editions install a Generic Volume License
 
 #### 
 
-[Volume activation of Office 2016](http://technet.microsoft.com/library/b41f7bc2-b7fa-43a3-963a-cf1c1ef8f331.aspx)
+[Plan volume activation](plan-volume-activation-of-office.md)
   
-[Active Directory Domain Services-based activation of Office 2016](http://technet.microsoft.com/library/3ae59488-8d05-44f5-bc38-740f073ea1fa.aspx)
+[Active Directory Domain Services-based activation](activate-office-by-using-active-directory.md)
 
