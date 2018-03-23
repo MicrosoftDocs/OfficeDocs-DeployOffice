@@ -44,11 +44,7 @@ Depending on which preferences you're configuring and how you deploy those prefe
 > [!TIP]
 > Office for Mac 2011 also uses preference files. There are some preferences in common between Office 2016 for Mac and Office for Mac 2011. Therefore, if you install Office 2016 for Mac on a computer that has Office for Mac 2011 installed, Office 2016 for Mac will automatically inherit some preference settings from the Office for Mac 2011 installation. 
   
-## See also
-
-#### 
-
+## Related topics
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
-  
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)
 
