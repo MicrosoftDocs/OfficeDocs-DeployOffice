@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 3/20/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
@@ -14,6 +14,7 @@ ms.collection:
 ms.custom:
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
+- Ent_Office_Compat
 ms.assetid: 9b0b48f2-1937-4b10-8274-1ccdb2f5d019
 description: "The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus."
 ---

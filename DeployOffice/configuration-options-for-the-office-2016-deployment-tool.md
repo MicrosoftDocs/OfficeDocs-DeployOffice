@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
@@ -54,13 +54,13 @@ This configuration file includes the most-commonly used elements and attributes,
 
 |**Value**|**Description**|
 |:-----|:-----|
-|Add SourcePath="\\Server\Share"  <br/> |Office will be downloaded to "\\server\share" on your network and deployed using installation files at that location.  <br/> |
+|Add SourcePath="\\\Server\Share"  <br/> |Office will be downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
 |Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
 |Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Office 365 ProPlus.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
-|Updates UpdatePath="\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
+|Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\\server\share" on your network.  <br/> |
 |Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
@@ -94,7 +94,7 @@ Optional. Defines the location of the Office installation files. If the ODT is r
 
 Example values:
 
-- SourcePath="\\server\share\"
+- SourcePath="\\\server\share\"
 - SourcePath="c:\preload\office"
 
 ### Version attribute (part of Add element) 
@@ -132,7 +132,7 @@ Optional. Defines where the installation files are downloaded from. Most commonl
 
 Example values: 
 
-- DownloadPath="\\serverb\share\"
+- DownloadPath="\\\serverb\share\"
 
 #### Example 
 
@@ -314,7 +314,7 @@ Optional. Defines the location of the log files. Default is **%temp%**.
 Example values:
 
 - Path="%temp%"
-- Path="\\server\share\userlogs\"
+- Path="\\\server\share\userlogs\"
 
 ## Property element
 
@@ -495,7 +495,7 @@ Optional.
 
 Example values:
 
-- UpdatePath="\\server\share\"
+- UpdatePath="\\\server\share\"
 - UpdatePath="C:\Preload\Office"
 - UpdatePath="http://internalApps/Office/"
 
