@@ -81,7 +81,7 @@ The parameters and settings for the XML file can be found at [Reference: Configu
     
 4. Copy **GetLatestSACBuild.xml** to ** \\\\Server\\Share\\O365\\SAC**.
     
-5. From an elevated command prompt with administrator privileges, run \\ **\\Server\\Share\\O365\\Setup.exe /Download \\\\Server\\Share\\O365\\SAC\\GetLatestSACBuild.xml**.
+5. From an elevated command prompt with administrator privileges, run \\\\Server\\Share\\O365\\Setup.exe /Download \\\\Server\\Share\\O365\\SAC\\GetLatestSACBuild.xml**.
     
 6. After it is run, Office Deployment Tool will download the latest Office 365 ProPlus Semi-Annual Channel build into **\\\\Server\\Share\\O365\\SAC**.
     
