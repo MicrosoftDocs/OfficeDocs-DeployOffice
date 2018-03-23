@@ -6,16 +6,15 @@ manager: laurawi
 ms.date: 1/17/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Once
+ms.service: o365-proplus-itpro
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- apr17entnews
 - LIL_Placement
 - Strat_O365_ProPlus
-- Ent_Office_Other
+- Ent_Office_ProPlus
 ms.assetid: 82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f
 
 description: "You can use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016 on the same computer with a Click-to-Run version of Office 2016. For example, you can install a volume licensed edition of Visio Standard 2016 on the same computer with Office 365 ProPlus."

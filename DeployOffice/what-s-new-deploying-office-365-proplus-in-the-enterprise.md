@@ -6,13 +6,10 @@ manager: laurawi
 ms.date: 9/12/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: e270bbe0-5156-4587-871b-7b923b199743
 description: "We continue to add new features and capabilities to help you deploy and manage Office 365 ProPlus in your organizations. The following is an overview of these changes, with the most recent changes listed first."
 ---

@@ -6,15 +6,12 @@ manager: laurawi
 ms.date: 9/26/2017
 ms.audience: ITPro
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: c3aeb487-d45f-4079-8c35-7558a45b876c
-description: "Summary: Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
+description: "Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
 ---
 
 # Troubleshoot issues with shared computer activation for Office 365 ProPlus
