@@ -510,7 +510,7 @@ Optional.
 Example values:
 
 - TargetVersion="15.1.2.3"
-- TargetVersion="""
+- TargetVersion=""
 
 ### Deadline attribute (part of Updates element)
 
