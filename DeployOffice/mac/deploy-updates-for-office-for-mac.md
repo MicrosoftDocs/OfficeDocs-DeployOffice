@@ -40,8 +40,6 @@ Updates work the same for Office 2016 for Mac whether you have an Office 365 pla
   
 ## See also
 
-#### 
-
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
   
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)
