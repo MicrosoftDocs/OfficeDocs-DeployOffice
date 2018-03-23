@@ -38,14 +38,16 @@ The following table covers the two general rules for which installation scenario
   
 |**Rule**|**Not supported example**|**Supported example**|
 |:-----|:-----|:-----|
-|You can't install two products together that have the same version but use different installation technologies.  <br/> | MSI version of Project 2016  <br/>  Click-to-Run version of Office 2016  <br/> | MSI version of Project 2013  <br/>  Click-to-Run version of Office 2016  <br/> |
-|You can't install two products together that use different versions of the Click-to-Run installation technology, if those products have overlapping Office applications.<sup>1</sup> <br/> | Retail version of Visio 2013  <br/>  2016 version of Visio Pro for Office 365  <br/> | 2013 version of Visio Pro for Office 365  <br/>  2016 version of Office 365 ProPlus  <br/> |
+|You can't install two products together that have the same version but use different installation technologies.  <br/> | MSI version of Project 2016  <br/><br/>  Click-to-Run version of Office 2016  <br/> | MSI version of Project 2013  <br/><br/>  Click-to-Run version of Office 2016  <br/> |
+|You can't install two products together that use different versions of the Click-to-Run installation technology, if those products have overlapping Office applications.<sup>1</sup> <br/> | Retail version of Visio 2013  <br/><br/>  2016 version of Visio Pro for Office 365  <br/> | 2013 version of Visio Pro for Office 365  <br/><br/>  2016 version of Office 365 ProPlus  <br/> |
    
-> [!NOTE]
-> <sup>1</sup>Office 2013 software that uses Click-to-Run can be installed on the same computer with Office 2016 software that uses Click-to-Run, as long as there is no overlap in the applications installed. Here are some examples: > **Supported** Installing the retail version of Project Professional 2013, which uses Click-to-Run, on the same computer with the Office 2016 version of Office 365 ProPlus. > **Not supported** Installing the 2013 version of Visio Pro for Office 365 on the same computer with the 2016 version of Visio Pro for Office 365. > **Not supported** Installing the retail version of Access 2013, which uses Click-to-Run, on the same computer with the Office 2016 version of Office 365 ProPlus. That's because Office 365 ProPlus includes Access. >  This capability is supported starting with the following releases: >  Version 1609 (Build 7369.2038) of [Current Channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_CB), which was released on October 11, 2016. >  Version 1609 (Build 7369.2038) of [First Release for Deferred Channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_FRCBB), which was released on October 11, 2016. >  Version 1609 (Build 7369.2118) of [Deferred Channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_CBB), which was released on February 22, 2017. 
-  
-## Supported installation scenarios for Office 2016
+<sup>1</sup>Office 2013 software that uses Click-to-Run can be installed on the same computer with Office 2016 software that uses Click-to-Run, as long as there is no overlap in the applications installed. Here are some examples:
+- **Supported** Installing the retail version of Project Professional 2013, which uses Click-to-Run, on the same computer with the Office 2016 version of Office 365 ProPlus. 
+- **Not supported** Installing the 2013 version of Visio Pro for Office 365 on the same computer with the 2016 version of Visio Pro for Office 365. 
+- **Not supported** Installing the retail version of Access 2013, which uses Click-to-Run, on the same computer with the Office 2016 version of Office 365 ProPlus. That's because Office 365 ProPlus includes Access. > 
+
 <a name="BKMK_Office"> </a>
+## Supported installation scenarios for Office 2016
 
 The following table shows which versions of Visio and Project can be installed on the same computer with Click-to-Run and MSI versions of Office 2016.
   
@@ -60,11 +62,10 @@ The following table shows which versions of Visio and Project can be installed o
 |Project 2013 (Click-to-Run)  <br/> |Yes  <br/> |Yes  <br/> |
 |Project 2013 (MSI)  <br/> |Yes  <br/> |Yes  <br/> |
    
-> [!NOTE]
-> <sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
+<sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
   
-## Supported installation scenarios for Visio 2016
 <a name="BKMK_Visio"> </a>
+## Supported installation scenarios for Visio 2016
 
 The following table shows which versions of Visio 2016 can be installed on the same computer with Click-to-Run and MSI versions of Office 2016 and Office 2013.
   
@@ -75,11 +76,10 @@ The following table shows which versions of Visio 2016 can be installed on the s
 |Office 2013 (Click-to-Run)  <br/> |Yes  <br/> |Yes  <br/> |
 |Office 2013 (MSI)  <br/> |Yes  <br/> |Yes  <br/> |
    
-> [!NOTE]
-> <sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Visio 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
+<sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Visio 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
   
-## Supported installation scenarios for Project 2016
 <a name="BKMK_Project"> </a>
+## Supported installation scenarios for Project 2016
 
 The following table shows which versions of Project 2016 can be installed on the same computer with Click-to-Run and MSI versions of Office 2016 and Office 2013.
   
@@ -93,13 +93,13 @@ The following table shows which versions of Project 2016 can be installed on the
 > [!NOTE]
 > <sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Project 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
   
-## How to determine whether you're using a Click-to-Run or MSI installation
 <a name="BKMK_Determine"> </a>
+## How to determine whether you're using a Click-to-Run or MSI installation
 
 In an Office app (such as Excel), Visio, or Project go to **File** > **Account**. If you see **Office Updates** in the **Product Information** area, you have a Click-to-Run installation. If you don't see **Office Updates**, you have a Windows Installer (MSI) version.
   
-## Examples of Click-to-Run and MSI versions of Office, Visio, and Project
 <a name="BKMK_Examples"> </a>
+## Examples of Click-to-Run and MSI versions of Office, Visio, and Project
 
 There are different ways to purchase Office, Visio, and Project. For example, you can purchase them as part of an Office 365 plan, as a one-time purchase from a retail store, or thorough a volume licensing agreement. How you purchase them determines whether they're a Click-to-Run or MSI version.
   
@@ -134,11 +134,7 @@ Office 365 Business is the version of Office that comes with some Office 365 pla
 > [!NOTE]
 > Both the Standard and Professional versions of Visio and Project can be purchased either from retail or from volume licensing. Even though the versions have the same name, they use different installation technologies. 
   
-## See also
-<a name="BKMK_Examples"> </a>
-
-#### 
-
+## Related topics
 [Deployment guide for Visio 2016](deployment-guide-for-visio.md)
   
 [Deployment guide for Project 2016](deployment-guide-for-project.md)
