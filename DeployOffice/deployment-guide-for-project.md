@@ -45,11 +45,11 @@ Here are the general steps to deploy Project Online Desktop Client to users in y
     
 If you want to have more control over how Project is deployed to your users, you can do the following instead:
   
-- [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) from the Microsoft Download Center. 
+- [Download](https://go.microsoft.com/fwlink/p/?LinkID=626065) the Office Deployment Tool from the Microsoft Download Center. 
     
-- [Create a configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md)] to use with the Office Deployment Tool to download and install Project Online Desktop Client. 
+- Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install Project Online Desktop Client. 
     
-- Use the Office Deployment Tool to [deploy Project Online Desktop Client](overview-of-the-office-2016-deployment-tool) on your users' computers. 
+- Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy Project Online Desktop Client on your users' computers. 
     
 If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Project. 
   
@@ -87,5 +87,5 @@ To help your users get started with Project, here are some resources to share wi
 ## Related topics
 [Documentation](https://docs.microsoft.com/project) to help you plan, deploy, and manage Project Server and Project Online
 
-Feature and purchasing information for [Project Server](https://products.office.com/Project/enterprise-project-server), [Project Online](https://products.office.com/Project/project-online-portfolio-management), and [Project Essentials](https://products.office.com/Project/project-online-essentials)
+[Plans and pricing information](https://products.office.com/project/compare-microsoft-project-management-software?tab=1)
 
