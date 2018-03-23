@@ -16,10 +16,6 @@ description: "Learn about the XML file formats and their extensions that are use
 
 # XML file name extension reference for Office
 
- **Summary:** Learn about the XML file formats and their extensions that are used by Word, Excel, PowerPoint, and Visio. 
-  
- **Audience:** IT Professionals 
-  
 XML file formats and their extensions are listed in the following tables for Word, Excel, PowerPoint, and Visio.
   
     

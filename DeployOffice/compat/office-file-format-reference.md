@@ -16,11 +16,8 @@ description: "Learn about the formats and their extensions used by Word, Excel, 
 
 # File format reference for Word, Excel, and PowerPoint
 
- **Summary:** Learn about the formats and their extensions used by Word, Excel, and PowerPoint. 
-  
- **Audience:** IT Professionals 
-  
- 
+Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
+
 <a name="word"> </a>
 ## File formats that are supported in Word
 
@@ -40,7 +37,7 @@ The following table describes the file formats that are supported in Word, alpha
 |.htm, .html  <br/> |Web Page, Filtered  <br/> |Saving in the Web Page, Filtered file format removes Microsoft Office-specific tags. If users save in filtered HTML and then re-open the file in an Office application, text and general appearance are preserved. However, some features might work differently.  <br/> |
 |.mht; .mhtml  <br/> |Single File Web Page  <br/> |A web page as a single file that includes an .htm file and all supporting files, such as images, sound files, cascading style sheets, scripts, and more.  <br/> |
 |.odt  <br/> |OpenDocument Text  <br/> |A file format for saving Word 2016 and Word 2013 files so that they can be opened in document applications that use the OpenDocument format. Users can also open documents in the .odt format in Word 2016 and Word 2013. Formatting might be lost when users save and open .odt files.  <br/> |
-|.pdf  <br/> |PDF  <br/> |Portable Document Format (PDF), a PostScript-based electronic file format that was developed by Adobe Systems. It preserves document formatting and enables file sharing.  <br/> <br/> Files that use the PDF file format can be saved and opened by using Word 2016 and Word 2013.  <br/> <br/> **Important** PDF files might not have a perfect page-to-page correspondence with the original. For example, the pages might break at different locations.           |
+|.pdf  <br/> |PDF  <br/> |Portable Document Format (PDF), a PostScript-based electronic file format that was developed by Adobe Systems. It preserves document formatting and enables file sharing.  <br/> <br/> Files that use the PDF file format can be saved and opened by using Word 2016 and Word 2013.  <br/> <br/> **Important:** PDF files might not have a perfect page-to-page correspondence with the original. For example, the pages might break at different locations.           |
 |.rtf  <br/> |Rich Text Format  <br/> |RTF controls the representation and formatting of a document, both on the screen and in print. When they use the .rtf file format, documents created under different operating systems and with different software applications can be transferred between those operating systems and applications.  <br/> |
 |.txt  <br/> |Plain Text  <br/> |When users save a document as a .txt file, the document loses all formatting.  <br/> |
 |.wps  <br/> |Works 6-9 Document  <br/> |This is the default file format of Microsoft Works, versions 6.0 through 9.0.  <br/> |
