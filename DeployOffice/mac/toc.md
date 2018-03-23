@@ -4,4 +4,4 @@
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ## [Activation overview](overview-of-activation-for-office-for-mac.md)
-## [Upgrade to 64-bit](office-2016-for-mac-upgrade-to-64-bit.md)
+## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
