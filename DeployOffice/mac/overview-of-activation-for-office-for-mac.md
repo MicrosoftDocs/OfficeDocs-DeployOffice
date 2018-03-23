@@ -23,7 +23,7 @@ To use Office 2016 for Mac in your organization, it needs to be activated. How y
   
 |||
 |:-----|:-----|
-|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you're an Office user trying to activate a personal copy of Office 2016 for Mac, [follow these instructions](https://support.office.com/article/299c3f95-3551-4e60-a9cf-7380457d8e37) instead of reading this article.  <br/> |
+|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you're an Office user trying to activate a personal copy of Office 2016 for Mac, [follow these instructions](https://support.office.com/article/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.  <br/> |
    
 ## Office 365 activation for Office 2016 for Mac
 
