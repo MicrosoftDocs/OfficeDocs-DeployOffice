@@ -3,7 +3,7 @@ title: "Deployment guide for Project 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 3/23/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -47,9 +47,9 @@ If you want to have more control over how Project is deployed to your users, you
   
 - [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) from the Microsoft Download Center. 
     
-- Use the Office Deployment Tool to [download Project Online Desktop Client](https://technet.microsoft.com/library/jj219424.aspx) to your local network. 
+- [Create a configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md)] to use with the Office Deployment Tool to download and install Project Online Desktop Client. 
     
-- Use the Office Deployment Tool to [deploy Project Online Desktop Client](https://technet.microsoft.com/library/jj219423.aspx) on your users' computers. 
+- Use the Office Deployment Tool to [deploy Project Online Desktop Client](overview-of-the-office-2016-deployment-tool) on your users' computers. 
     
 If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Project. 
   
@@ -84,13 +84,8 @@ To help your users get started with Project, here are some resources to share wi
     
 - [Basic tasks in Project](https://support.office.com/article/8fdbf020-a9e1-45e4-bf15-23a8d2b6797d)
     
-## See also
+## Related topics
+[Documentation](https://docs.microsoft.com/project) to help you plan, deploy, and manage Project Server and Project Online
 
-#### 
-
-[Project Server](https://products.office.com/Project/enterprise-project-server)
-  
-[Project Online](https://products.office.com/Project/project-online-portfolio-management)
-  
-[Project Lite](https://products.office.com/Project/project-lite)
+Feature and purchasing information for [Project Server](https://products.office.com/Project/enterprise-project-server), [Project Online](https://products.office.com/Project/project-online-portfolio-management), and [Project Essentials](https://products.office.com/Project/project-online-essentials)
 
