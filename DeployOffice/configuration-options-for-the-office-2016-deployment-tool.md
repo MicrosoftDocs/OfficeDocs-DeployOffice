@@ -60,7 +60,7 @@ This configuration file includes the most-commonly used elements and attributes,
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Office 365 ProPlus.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
-|Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\\server\share" on your network.  <br/> |
+|Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
 |Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
