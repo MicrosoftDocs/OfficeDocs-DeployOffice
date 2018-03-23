@@ -20,21 +20,10 @@ description: "Learn about the formats and their extensions used by Word, Excel, 
   
  **Audience:** IT Professionals 
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [File formats that are supported in Word](office-file-format-reference.md#section1)
-    
-- [File formats that are supported in Excel](office-file-format-reference.md#section2)
-    
-- [File formats that are supported in PowerPoint](office-file-format-reference.md#section3)
-    
-- [Additional file format information](office-file-format-reference.md#section5)
-    
+ 
+<a name="word"> </a>
 ## File formats that are supported in Word
-<a name="section1"> </a>
+
 
 The following table describes the file formats that are supported in Word, alphabetized by extension.
   
@@ -51,16 +40,17 @@ The following table describes the file formats that are supported in Word, alpha
 |.htm, .html  <br/> |Web Page, Filtered  <br/> |Saving in the Web Page, Filtered file format removes Microsoft Office-specific tags. If users save in filtered HTML and then re-open the file in an Office application, text and general appearance are preserved. However, some features might work differently.  <br/> |
 |.mht; .mhtml  <br/> |Single File Web Page  <br/> |A web page as a single file that includes an .htm file and all supporting files, such as images, sound files, cascading style sheets, scripts, and more.  <br/> |
 |.odt  <br/> |OpenDocument Text  <br/> |A file format for saving Word 2016 and Word 2013 files so that they can be opened in document applications that use the OpenDocument format. Users can also open documents in the .odt format in Word 2016 and Word 2013. Formatting might be lost when users save and open .odt files.  <br/> |
-|.pdf  <br/> |PDF  <br/> |Portable Document Format (PDF), a PostScript-based electronic file format that was developed by Adobe Systems. It preserves document formatting and enables file sharing.  <br/> Files that use the PDF file format can be saved and opened by using Word 2016 and Word 2013.  <br/> > [!IMPORTANT]> PDF files might not have a perfect page-to-page correspondence with the original. For example, the pages might break at different locations.           |
+|.pdf  <br/> |PDF  <br/> |Portable Document Format (PDF), a PostScript-based electronic file format that was developed by Adobe Systems. It preserves document formatting and enables file sharing.  <br/> <br/> Files that use the PDF file format can be saved and opened by using Word 2016 and Word 2013.  <br/> <br/> **Important** PDF files might not have a perfect page-to-page correspondence with the original. For example, the pages might break at different locations.           |
 |.rtf  <br/> |Rich Text Format  <br/> |RTF controls the representation and formatting of a document, both on the screen and in print. When they use the .rtf file format, documents created under different operating systems and with different software applications can be transferred between those operating systems and applications.  <br/> |
 |.txt  <br/> |Plain Text  <br/> |When users save a document as a .txt file, the document loses all formatting.  <br/> |
 |.wps  <br/> |Works 6-9 Document  <br/> |This is the default file format of Microsoft Works, versions 6.0 through 9.0.  <br/> |
 |.xml  <br/> |Word 2003 XML Document  <br/> |The XML format supported in Office Word 2003.  <br/> |
 |.xml  <br/> |Word XML Document  <br/> |The XML file format supported in Word 2016, Word 2013, Word 2010, and Office Word 2007 (Open XML).  <br/> |
-|.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it keeps exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> You can use Word 2016 or Word 2013 to save documents in the XPS Document file format, but you can't open them by using Word 2016 or Word 2013.  <br/> |
+|.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it keeps exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> <br/> You can use Word 2016 or Word 2013 to save documents in the XPS Document file format, but you can't open them by using Word 2016 or Word 2013.  <br/> |
    
+<a name="excel"> </a>
 ## File formats that are supported in Excel
-<a name="section2"> </a>
+
 
 The following tables describe the file formats that are supported in Excel. 
   
@@ -97,8 +87,9 @@ The following tables describe the file formats that are supported in Excel.
 |.xml  <br/> |XML Data  <br/> |XML Data format.  <br/> |
 |.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it maintains exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> |
    
+<a name="powerpoint"> </a>
 ## File formats that are supported in PowerPoint
-<a name="section3"> </a>
+
 
 The following tables describe the file formats that are supported in PowerPoint.
   
@@ -129,12 +120,12 @@ The following tables describe the file formats that are supported in PowerPoint.
 |.thmx  <br/> |Office Theme  <br/> |A style sheet that includes definitions of a color theme, font theme, and effect theme.  <br/> |
 |.tif  <br/> |TIFF Tag Image File Format  <br/> |A slide that is saved as a graphic for use on web pages.  <br/> |
 |.wmf  <br/> |Windows Metafile  <br/> |A slide that is saved as a 16-bit graphic (for use with Microsoft Windows 3. _x_ and later versions).  <br/> |
-|.wmv  <br/> |Windows Media Video  <br/> |A presentation that is saved as a video. PowerPoint 2016 and PowerPoint 2013 presentations can be saved at High Quality (1024 x 768, 30 frames per second); Medium Quality (640 x 480, 24 frames per sec); and Low Quality (320 X 240, 15 frames per second).  <br/> The WMV file format plays on many media players, such as Windows Media Player.  <br/> |
+|.wmv  <br/> |Windows Media Video  <br/> |A presentation that is saved as a video. PowerPoint 2016 and PowerPoint 2013 presentations can be saved at High Quality (1024 x 768, 30 frames per second); Medium Quality (640 x 480, 24 frames per sec); and Low Quality (320 X 240, 15 frames per second).  <br/> <br/> The WMV file format plays on many media players, such as Windows Media Player.  <br/> |
 |.xml  <br/> |PowerPoint XML Presentation  <br/> |The XML format that is supported in PowerPoint 2016, PowerPoint 2013, PowerPoint 2016, PowerPoint 2010, and Office PowerPoint 2007.  <br/> |
 |.xps  <br/> |XPS Document  <br/> |XML Paper Specification (XPS), an electronic paper format for exchanging documents in their final form.  <br/> |
    
+<a name="unsupported"> </a>
 ## Unsupported file formats in Office
-<a name="section3"> </a>
 
 Office applications do not support the file formats described in the following table
   
@@ -143,8 +134,9 @@ Office applications do not support the file formats described in the following t
 |Excel  <br/> | Excel Chart (Excel 2.0, 3.0, and 2.x file formats) (.xlc)  <br/>  Lotus 1-2-3 file formats (all versions) (.wk1, .wk2, .wk3, .wk4, .wks)  <br/>  Microsoft Works (all versions) (.wks)  <br/>  DBASE II file format (.dbf)  <br/>  Quattro Pro for MS-DOS file format (.wq1)  <br/>  Quattro Pro 5.0 and 7.0 for Windows (.wb1, .wb3)  <br/> |
 |PowerPoint  <br/> | Opening or saving to PowerPoint 95 (or earlier) file formats  <br/>  Pack and Go Wizard (.ppz) files.  <br/>  Web Page (.htm, .html) files  <br/> |
    
+<a name="additional"> </a>
 ## Additional file format information
-<a name="section5"> </a>
+
 
 This section provides additional file formats and whether they are supported in the applications in Office 2016.
   
@@ -154,7 +146,7 @@ Users can paste data from the Office Clipboard into Word, Excel, and PowerPoint 
   
 |**File format**|**Extension**|**Description**|
 |:-----|:-----|:-----|
-|Picture  <br/> |.wmf or .emf  <br/> |Pictures in Windows Metafile Format (WMF) or Windows Enhanced Metafile Format (EMF).  <br/> > [!NOTE]> If users copy a Windows metafile picture from another program, Excel pastes the picture as an enhanced metafile.           |
+|Picture  <br/> |.wmf or .emf  <br/> |Pictures in Windows Metafile Format (WMF) or Windows Enhanced Metafile Format (EMF).  <br/> <br/>**Note:** If users copy a Windows metafile picture from another program, Excel pastes the picture as an enhanced metafile.           |
 |Bitmap  <br/> |.bmp  <br/> |Pictures stored in Bitmap format (BMP).  <br/> |
 |Excel file formats  <br/> |.xls  <br/> |Binary file formats for Excel versions 5.0/95, Excel 97-2003, Excel 2013, and Excel 2016.  <br/> |
 |SYLK  <br/> |.slk  <br/> |Symbolic Link Format.  <br/> |
@@ -166,7 +158,7 @@ Users can paste data from the Office Clipboard into Word, Excel, and PowerPoint 
 |Linked object  <br/> |.gif, .jpg, .doc, .xls, or .bmp  <br/> |OwnerLink, ObjectLink, Link, Picture, or other format.  <br/> |
 |Office drawing object  <br/> |.emf  <br/> |Office drawing object format or Picture (Windows enhanced metafile format, EMF).  <br/> |
 |Text  <br/> |.txt  <br/> |Display Text, OEM Text.  <br/> |
-|HTML  <br/> |.htm, .html  <br/> |Hypertext Markup Language.  <br/> > [!NOTE]> When users copy text from another program, Excel pastes the text in HTML format, regardless of the format of the original text.           |
+|HTML  <br/> |.htm, .html  <br/> |Hypertext Markup Language.  <br/> <br/>**Note:** When users copy text from another program, Excel pastes the text in HTML format, regardless of the format of the original text.           |
 |Single File Web Page  <br/> |mht, .mhtml  <br/> |This file format integrates inline graphics, applets, linked documents, and other supporting items referenced in the document.  <br/> |
    
 ### Opening or viewing unsupported file formats
@@ -177,10 +169,9 @@ If the file format that users want to use is not supported, they can try the fol
     
 - Save to a file format that another program supports. For example, users might want to import their Word, Excel, or PowerPoint file into another program that does not support the application's native file format. However, the other program might support importing another supported file format, such as a text file format. In this case, users can save their work in text file format, and then from the other program, import the text file.
     
-## See also
-<a name="section5"> </a>
-
-#### 
-
+## Related topics
 [XML file name extension reference for Office](xml-file-name-extension-reference-for-office.md)
+
+[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+  
 

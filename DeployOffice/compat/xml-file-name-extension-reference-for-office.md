@@ -22,21 +22,9 @@ description: "Learn about the XML file formats and their extensions that are use
   
 XML file formats and their extensions are listed in the following tables for Word, Excel, PowerPoint, and Visio.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [XML file types for Word](xml-file-name-extension-reference-for-office.md#word)
     
-- [XML file types for Excel ](xml-file-name-extension-reference-for-office.md#excel)
-    
-- [XML file types for PowerPoint ](xml-file-name-extension-reference-for-office.md#powerpoint)
-    
-- [XML file types for Visio ](xml-file-name-extension-reference-for-office.md#visio)
-    
-## XML file types for Word
 <a name="word"> </a>
+## XML file types for Word
 
 The following table describes the file type, extension, and description for Word XML file formats.
   
@@ -50,8 +38,8 @@ The following table describes the file type, extension, and description for Word
 |Word Template  <br/> |.dotx  <br/> |The default format for a Word template. Created when document styles and formatting are saved. Can't store VBA macro code.  <br/> |
 |Word Macro-Enabled Template  <br/> |.dotm  <br/> |Stores macro code for use with other Word documents. Does not always contain macro code, but is configured to support the storage of macro code. Word documents created from a macro-enabled template do not inherit the VBAProject part of the template. By default, documents are saved as .docx files even when they are created from a Word macro-enabled template.  <br/> |
    
-## XML file types for Excel
 <a name="excel"> </a>
+## XML file types for Excel
 
 The following table describes the file type, extension, and description for Excel XML file formats.
   
@@ -66,8 +54,8 @@ The following table describes the file type, extension, and description for Exce
 |Excel Macro-Enabled Template  <br/> |.xltm  <br/> |Can contain a VBAProject part or Excel 4.0 macro sheets (.xlm files in Excel 4.0). Workbooks created from this template inherit the VBAProject part or Excel 4.0 macro sheets that exist in the template.  <br/> |
 |Excel Add-In  <br/> |.xlam  <br/> |A supplemental program that runs additional code. Excel add-ins use the Open XML file format to store data, and they support using VBA projects and Excel 4.0 macro sheets.  <br/> |
    
-## XML file types for PowerPoint
 <a name="powerpoint"> </a>
+## XML file types for PowerPoint
 
 The following table describes the file type, extension, and description for PowerPoint XML file formats.
   
@@ -84,8 +72,8 @@ The following table describes the file type, extension, and description for Powe
 |PowerPoint Show  <br/> |.ppsx  <br/> |An XML-based PowerPoint auto-running slide show. Can't contain a VBAProject part.  <br/> |
 |PowerPoint Macro-Enabled Show  <br/> |.ppsm  <br/> |An XML-based PowerPoint slide show file that contains a VBAProject part. Created when the auto-running slide show includes VBA macro code.  <br/> |
    
-## XML file types for Visio
 <a name="visio"> </a>
+## XML file types for Visio
 
 Visio uses the XML file format package that is defined by the Open Packaging Conventions (ISO/IEC 29500-2:2008) standard. The XML content is based on the existing Visio XML Drawing (VDX) format.
   
@@ -102,10 +90,9 @@ The following table describes the file type, extension, and description for Visi
 |Visio Template  <br/> |.vstx  <br/> |The default format for a Visio template. Can't store VBA macro code.  <br/> |
 |Visio Macro-Enabled Template  <br/> |.vstm  <br/> |Uses the same basic XML format as the Visio Template (.vstx) format, but can store VBA macro code. Does not always contain macro code, but is configured to support the storage of macro code. Visio Drawings that are created from this template inherit the VBAProject part that exists in the template. However, by default, drawings are saved as .vsdx files even when they are created from a Visio macro-enabled template and will drop the VBAProject part.  <br/> |
    
-## See also
-<a name="visio"> </a>
-
-#### 
-
+## Related topics
 [File format reference for Word, Excel, and PowerPoint](office-file-format-reference.md)
+
+[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+  
 
