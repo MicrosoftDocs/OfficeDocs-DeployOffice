@@ -128,8 +128,8 @@ Office applications do not support the file formats described in the following t
   
 |**Application**|**Unsupported file format**|
 |:-----|:-----|
-|Excel  <br/> | Excel Chart (Excel 2.0, 3.0, and 2.x file formats) (.xlc)  <br/>  Lotus 1-2-3 file formats (all versions) (.wk1, .wk2, .wk3, .wk4, .wks)  <br/>  Microsoft Works (all versions) (.wks)  <br/>  DBASE II file format (.dbf)  <br/>  Quattro Pro for MS-DOS file format (.wq1)  <br/>  Quattro Pro 5.0 and 7.0 for Windows (.wb1, .wb3)  <br/> |
-|PowerPoint  <br/> | Opening or saving to PowerPoint 95 (or earlier) file formats  <br/>  Pack and Go Wizard (.ppz) files.  <br/>  Web Page (.htm, .html) files  <br/> |
+|Excel  <br/> | - Excel Chart (Excel 2.0, 3.0, and 2.x file formats) (.xlc)  <br/>  - Lotus 1-2-3 file formats (all versions) (.wk1, .wk2, .wk3, .wk4, .wks)  <br/>  - Microsoft Works (all versions) (.wks)  <br/>  - DBASE II file format (.dbf)  <br/>  - Quattro Pro for MS-DOS file format (.wq1)  <br/>  - Quattro Pro 5.0 and 7.0 for Windows (.wb1, .wb3)  <br/> |
+|PowerPoint  <br/> | - Opening or saving to PowerPoint 95 (or earlier) file formats  <br/>  - Pack and Go Wizard (.ppz) files.  <br/> - Web Page (.htm, .html) files  <br/> |
    
 <a name="additional"> </a>
 ## Additional file format information
