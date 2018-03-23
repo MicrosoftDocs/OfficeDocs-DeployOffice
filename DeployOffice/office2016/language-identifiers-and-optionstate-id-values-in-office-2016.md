@@ -31,7 +31,7 @@ This is a reference article. The values provided in the tables are necessary for
 - [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
     
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
   
 <a name="BKMK_LanguageIdentifiers"> </a>
 ## Language identifiers
@@ -99,7 +99,7 @@ In addition to the fully localized languages listed here, Office 2016 provides L
 <a name="BKMK_OptionStateID"> </a>
 ## Proofing Tools Config.xml OptionState Id values
 
-The following table provides the OptionState ID values for the Office proofing tools. It is ordered alphabetically by language. Use these values to modify the Config.xml file in the ProofKit.WW folder when you customize the setup of the Office proofing tools. For more information about proofing tools, see [Plan for Office proofing tools](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanProofingTools) in [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md). For instructions on how to customize proofing tools, see [Customize and install the Office proofing tools](customize-language-setup-and-settings-for-office-2016.md#BKMK_CustomizeProofingTools).
+The following table provides the OptionState ID values for the Office proofing tools. It is ordered alphabetically by language. Use these values to modify the Config.xml file in the ProofKit.WW folder when you customize the setup of the Office proofing tools. For more information about proofing tools, see [Plan for Office proofing tools](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanProofingTools). For instructions on how to customize proofing tools, see [Customize and install the Office proofing tools](customize-language-setup-and-settings-for-office-2016.md#BKMK_CustomizeProofingTools).
   
 **OptionState IDs for each Proofing Tools language in Office 2016**
 
