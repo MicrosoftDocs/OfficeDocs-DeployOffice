@@ -6,13 +6,10 @@ manager: laurawi
 ms.date: 4/14/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 5ce548ce-7a28-4ce4-a87f-ab4413bdcb40
 description: "To upgrade from Office 2013 to Office 2016 requires planning and testing. If you're an admin responsible for deploying Office 365 ProPlus in your organization, we want to provide you with information to help you prepare for and perform the upgrade."
 ---

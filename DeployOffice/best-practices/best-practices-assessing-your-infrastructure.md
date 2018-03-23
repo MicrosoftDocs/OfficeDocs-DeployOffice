@@ -6,16 +6,15 @@ manager: laurawi
 ms.date: 3/23/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
+- Ent_Office_ProPlus_Best
 ms.assetid: f4899394-87f3-425c-9902-ddd65eaaac97
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---
