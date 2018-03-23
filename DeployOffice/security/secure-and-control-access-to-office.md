@@ -24,7 +24,7 @@ Security controls are available in Office 2016 to help you plan a robust defense
   
 An organization's success often depends on the productivity of its information workers and the integrity and confidentiality of its intellectual property. Many IT departments find it difficult to satisfy these business needs because protection often comes at the expense of productivity.
   
-![Office 2013 logo](../images/Office2013Logo.png) These articles describe the security controls and privacy and identity features that are available in Office 2016. 
+These articles describe the security controls and privacy and identity features that are available in Office 2016. 
   
 Articles about privacy in Office 2016
   
