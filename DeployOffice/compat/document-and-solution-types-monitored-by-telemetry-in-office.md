@@ -16,15 +16,8 @@ description: "Lists document and solution types that are monitored by Office tel
 
 # Document and solution types monitored by telemetry in Office
 
- **Summary:** Lists document and solution types that are monitored by Office telemetry. 
-  
- **Audience:** IT Professionals 
-  
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-## Document and solution types that are monitored by Office telemetry
 <a name="bkmk_whatismonitoredinoffice2013fortelemetrylogging"> </a>
+## Document and solution types that are monitored by Office telemetry
 
 The following table lists the document and solutions that Office telemetry monitors.
   
@@ -32,7 +25,7 @@ The following table lists the document and solutions that Office telemetry monit
 
 |**Type**|**Office Applications**|**Description**|
 |:-----|:-----|:-----|
-|Active Documents  <br/> |Word 2016, PowerPoint 2016, Excel 2013  <br/> | Active documents are any Office document files that are not included in the other solution types that are listed in this table. This can include the following:  <br/>  Office binary format files (.doc, .ppt, .pps, .xls)  <br/>  Office OpenXML format files (.docx, .pptx, .ppsx, .xlsx)  <br/>  Macro-enabled files that contain VBA code (.docm, .dotm, .pptm, .potm, .xlsm, .xltm)  <br/>  Files that contain ActiveX controls  <br/>  Files that have External Data Connections  <br/> |
+|Active Documents  <br/> |Word 2016, PowerPoint 2016, Excel 2013  <br/> | Active documents are any Office document files that are not included in the other solution types that are listed in this table. This can include the following:  <br/>  <br/>Office binary format files (.doc, .ppt, .pps, .xls)  <br/>  Office OpenXML format files (.docx, .pptx, .ppsx, .xlsx)  <br/>  Macro-enabled files that contain VBA code (.docm, .dotm, .pptm, .potm, .xlsm, .xltm)  <br/>  Files that contain ActiveX controls  <br/>  Files that have External Data Connections  <br/> |
 |COM add-ins  <br/> |Word 2016, PowerPoint 2016, Excel 2016, Outlook 2013  <br/> |COM add-ins include Microsoft Office development tools in Microsoft Visual Studio 2010 application-level add-ins.  <br/> |
 |Excel Automation add-ins  <br/> |Excel 2013  <br/> |This solution type includes earlier versions of Excel-supported Automation add-ins, which are built upon COM add-ins. Functions in Automation add-ins can be called from formulas in Excel worksheets.  <br/> |
 |Excel XLL add-ins  <br/> |Excel 2013  <br/> |XLL add-ins (.xll) are specific to Excel and are built with any compiler that supports building DLLs (dynamic-link libraries). They do not have to be installed or registered. XLL add-ins also include DLLs that contain user-defined commands and functions.  <br/> |
@@ -40,12 +33,8 @@ The following table lists the document and solutions that Office telemetry monit
 |Word WLL add-ins  <br/> |Word 2013  <br/> |WLL (.wll) add-ins are specific to Word and built with any compiler that supports building DLLs.  <br/> |
 |Application add-ins  <br/> |Word 2016, PowerPoint 2016, Excel 2013  <br/> |Application add-ins are application-specific files that contain VBA code. These include macro-enabled Word templates (.dotm), Excel add-ins (.xla, .xlam), and PowerPoint add-ins (.ppa, .ppam).  <br/> |
 |Templates  <br/> |Word 2013  <br/> |Templates include document (.dot, .dotx), worksheet (.xlt, .xltx), or presentation (.pot, .potx) templates that are attached to an Office file.  <br/> |
-|apps for Office  <br/> |PowerPoint 2016 Excel 2016, Word 2016, Outlook 2013  <br/> |These are apps for Office that are hosted in a task pane, content, or email within the client application. To learn more, see [Overview of apps for Office 2013](http://technet.microsoft.com/library/42196647-15cf-413a-aa73-df312b25c3ac.aspx).  <br/> |
+|apps for Office  <br/> |PowerPoint 2016 Excel 2016, Word 2016, Outlook 2013  <br/> |These are apps for Office that are hosted in a task pane, content, or email within the client application. To learn more, see [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).  <br/> |
    
-## See also
-<a name="bkmk_whatismonitoredinoffice2013fortelemetrylogging"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 
