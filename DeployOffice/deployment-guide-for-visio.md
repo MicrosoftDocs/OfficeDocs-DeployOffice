@@ -3,7 +3,7 @@ title: "Deployment guide for Visio 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 3/23/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -43,15 +43,15 @@ Here are the general steps to deploy Visio Pro for Office 365 to users in your o
     
 3. Have your users sign in to Office 365 and install Visio from the **Software** section of the Office 365 portal. Users have to be local administrators on their computers to install Visio. 
     
-If you want to have more control over how Visio is deployed to your users, you can do the following instead:
+If you want to have more control over how Visio Pro for Office 365 is deployed to your users, you can do the following instead:
   
-- [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) from the Microsoft Download Center. 
+1. [Download](https://go.microsoft.com/fwlink/p/?LinkID=626065) the Office Deployment Tool from the Microsoft Download Center. 
     
-- Use the Office Deployment Tool to [download Visio Pro for Office 365](https://technet.microsoft.com/library/jj219424.aspx) to your local network. 
+2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install Visio Pro for Office 365. 
     
-- Use the Office Deployment Tool to [deploy Visio Pro for Office 365](https://technet.microsoft.com/library/jj219423.aspx) on your users' computers. 
+3. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy Visio Pro for Office 365 on your users' computers. 
     
-If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Visio. 
+If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Visio Pro for Office 365. 
   
 ## Deploy Visio Professional 2016 or Visio Standard 2016
 
@@ -81,12 +81,11 @@ The same Group Policy settings work for Visio Pro for Office 365, Visio Professi
 To help your users get started with Visio, here are some resources to share with them:
   
 - [What's new in Visio 2016](https://support.office.com/article/798f4f39-2833-486b-9ae9-55162672102e)
-    
 - [Tutorial for Visio 2016](https://support.office.com/article/c8fd9b8b-6e8c-4252-937d-a0eea0cddd94)
+- [Visio video training](https://support.office.com/article/e058bcfa-1d90-4653-afc6-e84d54cf94a6) 
     
-## See also
-
-#### 
+## Related topics
+[Plans and pricing information](https://products.office.com/visio/microsoft-visio-plans-and-pricing-compare-visio-options?tab=tabs-1)
 
 [Licensing Visio](https://products.office.com/Visio/microsoft-visio-volume-licensing-visio-for-multiple-users)
 
