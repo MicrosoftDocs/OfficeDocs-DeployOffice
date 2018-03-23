@@ -31,16 +31,10 @@ This is a reference article. The values provided in the tables are necessary for
 - [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
     
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for the Windows Installer-based (MSI) delivery format of Office 2016, which is available for enterprise organizations through volume licensing. If you have an Office subscription and you are deploying Office 365 ProPlus, which uses the Click-to-Run delivery format, see [Plan for multilanguage deployment of Click-to-Run-based Office installations](http://technet.microsoft.com/library/a972905d-3f7b-47c1-8481-9a5ac6876283.aspx). 
+> This article describes methods of deploying and managing language packs versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
   
-In this article:
-  
-- [Language identifiers](language-identifiers-and-optionstate-id-values-in-office-2016.md#BKMK_LanguageIdentifiers)
-    
-- [Proofing Tools Config.xml OptionState Id values](language-identifiers-and-optionstate-id-values-in-office-2016.md#BKMK_OptionStateID)
-    
-## Language identifiers
 <a name="BKMK_LanguageIdentifiers"> </a>
+## Language identifiers
 
 Office 2016 is available in many languages. In an international setting, you can deploy multiple language versions of Office 2016 in a single installation process. Setup combines a language-neutral core product with one or more language-specific packages to create a complete product. 
   
@@ -53,11 +47,11 @@ The language folders that are included in a fully localized version of an Office
   
 Office 2016 offers localized versions in all the languages that are listed in the following table. Folders for the language-specific components are identified by the language tag that is shown in the table. The Windows operating system uses locale identifiers (LCIDs) to identify languages in the Windows registry.
   
-In addition to the fully localized languages listed here, Office 2016 provides Language Interface Packs (LIPs), which contain a subset of language-specific components and are designed to be installed together with a logical parent language. Elements that are not localized in the LIP language appear in the parent language. For more information about LIPs, see [Language Interface Packs](language-versions-and-language-interface-packs-in-office-2016.md#BKMK_LanguageInterfacePacks) in [Language versions and language interface packs in Office 2016](language-versions-and-language-interface-packs-in-office-2016.md).
+In addition to the fully localized languages listed here, Office 2016 provides Language Interface Packs (LIPs), which contain a subset of language-specific components and are designed to be installed together with a logical parent language. Elements that are not localized in the LIP language appear in the parent language. For more information about LIPs, see [Language Interface Packs](language-versions-and-language-interface-packs-in-office-2016.md#BKMK_LanguageInterfacePacks).
   
 **Language tags (language IDs), and LCIDs available in Office 2016**
 
-|**Language**|**Geographic area**|**Language tag  _(ll-cc)_ (also sometimes referred to as language ID)**|**LCID**|
+|**Language**|**Geographic area**|**Language tag  _(ll-cc)_<sup>1</sup>**|**LCID**|
 |:-----|:-----|:-----|:-----|
 |Arabic  <br/> |Saudi Arabia  <br/> |ar-sa  <br/> |1025  <br/> |
 |Bulgarian  <br/> |Bulgaria  <br/> |bg-bg  <br/> |1026  <br/> |
@@ -99,9 +93,11 @@ In addition to the fully localized languages listed here, Office 2016 provides L
 |Turkish  <br/> |Turkey  <br/> |tr-tr  <br/> |1055  <br/> |
 |Ukrainian  <br/> |Ukrainian  <br/> |uk-ua  <br/> |1058  <br/> |
 |Vietnamese  <br/> |Vietnam  <br/> |vi-vn  <br/> |1066  <br/> |
+
+<sup>1</sup> Language tag is sometimes referred to as the language ID.
    
-## Proofing Tools Config.xml OptionState Id values
 <a name="BKMK_OptionStateID"> </a>
+## Proofing Tools Config.xml OptionState Id values
 
 The following table provides the OptionState ID values for the Office proofing tools. It is ordered alphabetically by language. Use these values to modify the Config.xml file in the ProofKit.WW folder when you customize the setup of the Office proofing tools. For more information about proofing tools, see [Plan for Office proofing tools](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanProofingTools) in [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md). For instructions on how to customize proofing tools, see [Customize and install the Office proofing tools](customize-language-setup-and-settings-for-office-2016.md#BKMK_CustomizeProofingTools).
   
@@ -163,11 +159,7 @@ The following table provides the OptionState ID values for the Office proofing t
 |ProofingTools_1058  <br/> |Ukrainian  <br/> |
 |ProofingTools_1056  <br/> |Urdu  <br/> |
    
-## See also
-<a name="BKMK_OptionStateID"> </a>
-
-#### 
-
+## Related topics
 [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
   
 [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)

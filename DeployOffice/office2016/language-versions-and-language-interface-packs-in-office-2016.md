@@ -25,16 +25,11 @@ An installation of Office 2016 can include applications or user interface elemen
 This article describes the language versions that are available for a subset of Office 2016 applications, the Office 2016 applications that will work with Language Interface Packs, and the recommended base languages to install for Office 2016 Language Interface Packs.
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for the Windows Installer-based (MSI) delivery format of Office 2016, which is available for enterprise organizations through volume licensing. If you have an Office subscription and you are deploying Office 365 ProPlus (which uses the Click-to-Run delivery format), see [Plan for multilanguage deployment of Click-to-Run-based Office installations](http://technet.microsoft.com/library/a972905d-3f7b-47c1-8481-9a5ac6876283.aspx). 
+> This article describes methods of deploying and managing language packs versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
   
-In this article:
-  
-- [Applications and language availability](language-versions-and-language-interface-packs-in-office-2016.md#BKMK_ApplicationsLanguageAvailability)
     
-- [Language Interface Packs](language-versions-and-language-interface-packs-in-office-2016.md#BKMK_LanguageInterfacePacks)
-    
-## Applications and language availability
 <a name="BKMK_ApplicationsLanguageAvailability"> </a>
+## Applications and language availability
 
 In some non-English language versions of Office 2016, a specific Office 2016 application may not be available. For example, Access 2016 is not available in Hindi. Therefore, the Hindi language version of Office 2016 is installed in English.
   
@@ -78,8 +73,8 @@ Some Office applications are not available in some languages. Project 2016 and V
 |Turkish  <br/> |yes  <br/> |yes  <br/> |
 |Ukrainian  <br/> |yes  <br/> |yes  <br/> |
    
-## Language Interface Packs
 <a name="BKMK_LanguageInterfacePacks"> </a>
+## Language Interface Packs
 
 For some languages, Microsoft localizes only some Office 2016 applications and releases them as Language Interface Packs (LIPs). These LIPs localize the user interface only, and not the Help content. Administrators must first install a fully localized base language version (see the table later in this section) of Office 2016, and then install the LIP. Users can then work in their preferred language in the following applications and features: 
   
@@ -179,11 +174,7 @@ The remaining Office applications appear in the base Office 2016 installation la
    
 For information about how to obtain the LIP you need for your deployment, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
   
-## See also
-<a name="BKMK_LanguageInterfacePacks"> </a>
-
-#### 
-
+## Related topics
 [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
   
 [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
