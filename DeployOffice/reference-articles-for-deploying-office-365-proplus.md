@@ -6,13 +6,10 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 6df5de04-6b8e-48af-aede-dceaefacc278
 description: "This article lists all the reference articles about deploying Office 365 ProPlus in an enterprise environment. To see all the articles about Office 365 ProPlus deployment, see Deployment guide for Office 365 ProPlus."
 ---

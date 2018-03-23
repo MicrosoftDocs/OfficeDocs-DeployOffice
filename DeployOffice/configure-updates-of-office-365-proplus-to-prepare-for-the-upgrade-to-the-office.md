@@ -6,15 +6,12 @@ manager: laurawi
 ms.date: 9/9/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 1ee534fd-56dd-40fc-a463-470e8d636f09
-description: "Summary: Help admins configure updates for Office 365 ProPlus to prepare for the upgrade to the Office 2016 version."
+description: "Help admins configure updates for Office 365 ProPlus to prepare for the upgrade to the Office 2016 version."
 ---
 
 # Configure updates of Office 365 ProPlus to prepare for the upgrade to the Office 2016 version
