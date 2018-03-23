@@ -27,7 +27,6 @@ If you purchased an Office 365 subscription, you can use it to install Office in
 If your organization allows it, users can install Office 365 ProPlus languages directly from the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkID=212232). When users install Office from the **software** page, they select a language from the **Language** drop-down box. If an user need an additional language, they can just re-run the process for each required language. The setup will add the selected language to the user's device.
 
 ## Install multiple languages as part of deploying Office
-
 If your users don't have permission to install Office languages from the Office 365 portal, you can use the Office Deployment Tool to install Office 365 ProPlus in multiple languages. To do so, edit the language element in the configuration file for the Office Deployment Tool. Fore more details, see [Language element](configuration-options-for-the-office-2016-deployment-tool.md#language-element).
 
 > [!NOTE]
@@ -44,8 +43,7 @@ Additional language tools that you can install for Click-to-Run products include
 For information about how to use the Configuration.xml file to specify language installation options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
 
 ## Install the same languages as the operating system
-
-When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system or any user on the client device. To do so, use "MatchOS" as the Language ID in the configuration file for the ODT, as shown in the example. 
+When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system and any user on the client device. To do so, use "MatchOS" as the Language ID in the configuration file for the ODT, as shown in the example. 
 
 When "MatchOS" is specified, the installation will add the base language of the operating system as well as any actived display language of all user profiles on the device to the list of to-be-installed languages. MatchOS can be used in combination with a fixed list of languages.
 
