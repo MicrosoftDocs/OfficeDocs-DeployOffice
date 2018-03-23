@@ -46,5 +46,6 @@ Depending on which preferences you're configuring and how you deploy those prefe
   
 ## Related topics
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
+
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)
 

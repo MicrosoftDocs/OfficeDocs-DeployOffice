@@ -38,8 +38,7 @@ Individual security updates or other updates can't be downloaded and installed. 
   
 Updates work the same for Office 2016 for Mac whether you have an Office 365 plan or you have a volume licensing agreement.
   
-## See also
-
+## Related topics
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
   
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)

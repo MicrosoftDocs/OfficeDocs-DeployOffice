@@ -44,7 +44,7 @@ Before you deploy Office 2016 for Mac to users in your organization, you should 
  **Feature comparisons** If you want to compare key features of Office 2016 for Mac with those of Office for Mac 2011, review the comparison tables for [Excel](https://support.office.com/article/602a6c30-e6a6-47c5-9e0d-b16af397427a), [Outlook](https://support.office.com/article/f40accc7-de7e-48bd-a536-ba5af0e499b6), [PowerPoint](https://support.office.com/article/6213ffc8-c8bd-4073-acf8-1869180c6ae0), and [Word](https://support.office.com/article/ac41aed9-3d23-48de-8474-31515e29c48c).
   
 
-## See also
+## Related topics
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
   
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)

@@ -45,8 +45,7 @@ By default, Office 2016 volume license editions install a Generic Volume License
 |Word 2016  <br/> |WXY84-JN2Q9-RBCCQ-3Q3J3-3PFJ6  <br/> |
    
 
-## See also
-
+## Related topics
 [Plan volume activation](../vlactivation/plan-volume-activation-of-office.md)
   
 [Active Directory Domain Services-based activation](../vlactivation/activate-office-by-using-active-directory.md)

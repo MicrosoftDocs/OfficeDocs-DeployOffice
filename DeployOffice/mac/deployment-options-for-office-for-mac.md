@@ -67,7 +67,7 @@ Whichever deployment method you decide to use, the following information can hel
     
 - **Uninstalling** If you need to uninstall Office 2016 for Mac, you can [follow these steps to completely remove](https://support.office.com/article/ec3aa66e-6a76-451f-9d35-cba2e14e94c0) Office 2016 for Mac. Unfortunately, there is no program to uninstall Office 2016 for Mac automatically. 
     
-## See also
+## Related topics
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
   
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)

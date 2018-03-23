@@ -53,10 +53,7 @@ Or, you can deactivate an installation as an Office 365 administrator. Sign into
 
 The volume licensed versions of Office 2016 for Mac are activated automatically during installation. There are no additional steps that you need to do as an admin. Your users won't see any activation prompts when they first open Office 2016 for Mac.
   
-## See also
-
-#### 
-
+## Related topics
 [Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
   
 [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)
