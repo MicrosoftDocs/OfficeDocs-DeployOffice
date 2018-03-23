@@ -90,8 +90,7 @@ The following table shows which versions of Project 2016 can be installed on the
 |Office 2013 (Click-to-Run)  <br/> |Yes  <br/> |Yes  <br/> |
 |Office 2013 (MSI)  <br/> |Yes  <br/> |Yes  <br/> |
    
-> [!NOTE]
-> <sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Project 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
+<sup>1</sup> You can use the Office Deployment Tool to install volume licensed editions of Project 2016 on the same computer with a Click-to-Run version of Office 2016. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://support.office.com/article/82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f). 
   
 <a name="BKMK_Determine"> </a>
 ## How to determine whether you're using a Click-to-Run or MSI installation
