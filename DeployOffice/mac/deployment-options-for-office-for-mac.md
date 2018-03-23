@@ -42,7 +42,7 @@ If you're an Office 365 customer whose plan includes Office, do the following:
     
 2. Go to the [Office 365 admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then choose **Service Settings** > **User software**.
     
-3. Under **Software for Mac**, expand ** Office for Mac **, and then choose **Download** to begin downloading the installer package file. The installer package file is named Microsoft_Office_2016_Installer.pkg. 
+3. Under **Software for Mac**, expand **Office for Mac**, and then choose **Download** to begin downloading the installer package file. The installer package file is named Microsoft_Office_2016_Installer.pkg. 
     
 If your organization has a volume license agreement instead of an Office 365 plan, you can sign in and download Office 2016 for Mac from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx). The download is an .iso file. Once you extract the .iso file, or burn it to a DVD, you can copy the installer package file to your local network.
   
