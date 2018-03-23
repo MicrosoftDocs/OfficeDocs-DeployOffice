@@ -26,8 +26,8 @@ There are tables for the following applications: [Access](changes-in-office-2016
   
 If you're looking for information about the new features in Office 2016, see [Office Training Center](https://support.office.com/office-training-center).
   
-## Office suite
 <a name="BKMK_Suite"> </a>
+## Office suite
 
 The following table lists features that are changed or removed in Office 2016.
   
@@ -41,17 +41,17 @@ The following table lists features that are changed or removed in Office 2016.
 |Themes  <br/> | The following changes have been made to Office themes:  <br/>  The light gray theme has been removed.  <br/>  The dark gray theme has been updated.  <br/>  A black theme has been added.  <br/> |The black theme is only available to Office 365 subscribers.  <br/> |
 |Version information  <br/> |The version information shown under **File** > **Account** > **About** _application name_ no longer shows the version information for the application's .exe file.  <br/> |This only applies to Windows Installer (MSI) versions of Office 2016.  <br/> The version number that is shown is for the Mso20win32client.dll file.  <br/> |
    
-## Access
 <a name="BKMK_Access"> </a>
+## Access
 
 The following table lists features that are changed or removed in Access 2016.
   
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
-|Web apps  <br/> |Microsoft no longer recommends creating and using Access web apps in SharePoint.  <br/> |This feature will be retired from SharePoint Server in ten years and from Office 365 in one year.  <br/> [Updating the Access Services in SharePoint Roadmap](https://techcommunity.microsoft.com/t5/Office-Retirement-Blog/Updating-the-Access-Services-in-SharePoint-Roadmap/ba-p/57148) <br/> [Access web apps no longer supported](https://support.office.com/article/497fd86b-e982-43c4-8318-81e6d3e711e8) <br/> |
+|Web apps  <br/> |Microsoft no longer recommends creating and using Access web apps in SharePoint.  <br/> |This feature will be retired from SharePoint Server in ten years and from Office 365 in one year.  <br/> [Access Services in SharePoint Roadmap](https://support.office.com/article/497fd86b-e982-43c4-8318-81e6d3e711e8) <br/> |
    
-## Excel
 <a name="BKMK_Excel"> </a>
+## Excel
 
 The following table lists features that are changed or removed in Excel 2016.
   
@@ -60,8 +60,8 @@ The following table lists features that are changed or removed in Excel 2016.
 |Azure Marketplace connector  <br/> | The following options have been removed from the ribbon and are no longer available:  <br/> **Data** > ** Get External Data ** > **From Other Sources** > **From Windows Azure Marketplace** <br/> **Data** > **Get Data** > **From Azure** > **From Azure Marketplace** <br/> |Data services are no longer available from Azure Marketplace.  <br/> |
 |Power View  <br/> |The **Power View** button has been removed from **Insert** > **Reports** on the ribbon.  <br/> |[Roadmap for Power View in Excel](https://support.office.com/article/c1f0d0f7-adef-4f03-ae35-46d83294e96b) <br/> If you want to continue to use Power View, you can [follow these steps](https://support.office.com/article/f8fc21a6-08fc-407a-8a91-643fa848729a) to turn on Power View.  <br/> |
    
-## OneNote
 <a name="BKMK_OneNote"> </a>
+## OneNote
 
 The following table lists features that are changed or removed in OneNote 2016.
   
@@ -69,8 +69,8 @@ The following table lists features that are changed or removed in OneNote 2016.
 |:-----|:-----|:-----|
 |Scanned images  <br/> |The **Scanned Image** button has been removed from **Insert** > **Images** on the ribbon.  <br/> |The ability to insert a scanned image from a scanner is no longer supported.  <br/> For other options, see [How can I Insert scanned images into OneNote 2016 for Windows?](https://support.office.com/article/6c41b5a8-7dfd-4c6a-811e-5c167729c4d9) <br/> |
    
-## Outlook
 <a name="BKMK_Outlook"> </a>
+## Outlook
 
 The following table lists features that are changed or removed in Outlook 2016.
   
@@ -83,8 +83,8 @@ The following table lists features that are changed or removed in Outlook 2016.
 |People Pane  <br/> |The People Pane is off by default.  <br/> Also, the Account Settings option has been removed.  <br/> |To show the People Pane when reading messages, go to **View** > **People Pane**, and then choose **Normal** or **Minimized**.  <br/> |
 |PRF files  <br/> |PRF files for configuring Exchange Server accounts are no longer supported.  <br/> |Accounts should be configured automatically in the account wizard when you use Autodiscover.  <br/> |
    
-## PowerPoint
 <a name="BKMK_PowerPoint"> </a>
+## PowerPoint
 
 The following table lists features that are changed or removed in PowerPoint 2016.
   
@@ -92,8 +92,8 @@ The following table lists features that are changed or removed in PowerPoint 201
 |:-----|:-----|:-----|
 |HTML files  <br/> |Opening an HTML file is no longer supported.  <br/> |The "All Web Pages" choice has been removed from the **File** > **Open** dialog box.  <br/> |
    
-## Publisher
 <a name="BKMK_Publisher"> </a>
+## Publisher
 
 The following table lists features that are changed or removed in Publisher 2016.
   
@@ -101,8 +101,8 @@ The following table lists features that are changed or removed in Publisher 2016
 |:-----|:-----|:-----|
 |Live Preview  <br/> |The ability to preview the effects of formatting changes has been removed.  <br/> |The **Enable Live Preview** option has been removed from **File** > **Options** > **General** > **User Interface options**.  <br/> Live Preview is removed starting with Version 1606 (Build 7070.2022).  <br/> |
    
-## Word
 <a name="BKMK_Word"> </a>
+## Word
 
 The following table lists features that are changed or removed in Word 2016.
   
@@ -113,15 +113,10 @@ The following table lists features that are changed or removed in Word 2016.
 |Korean data recognizers  <br/> |Korean data recognizers are no longer available under **File** > **Options** > **Proofing** > **AutoCorrect Options** > **Actions**.  <br/> | The following Korean data recognizers have been removed:  <br/>  Address  <br/>  Date  <br/>  Person name  <br/>  Telephone number  <br/>  Time  <br/> |
 |Research  <br/> |The **Research** button has been removed from **Review** > **Proofing** on the ribbon.  <br/> |You can add the **Research** button to the ribbon by customizing the ribbon.  <br/> |
    
-## See also
-<a name="BKMK_Word"> </a>
-
-#### 
-
+## Related topics
 [What's new for admins in Office 2016](what-s-new-for-admins-in-office-2016.md)
-#### 
 
-[What's new for administrators in Outlook 2016 for Windows](http://technet.microsoft.com/library/97a37b3c-972b-4cea-be0b-6a5ff2a1f9bb.aspx)
+[What's new for administrators in Outlook 2016 for Windows](https://technet.microsoft.com/library/cc179110(v=office.16).aspx)
   
-[What's new to help admins deploy and manage Office 365 ProPlus](https://technet.microsoft.com/library/mt422980.aspx)
+[What's new: Deploying Office 365 ProPlus in the enterprise](..//what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
 
