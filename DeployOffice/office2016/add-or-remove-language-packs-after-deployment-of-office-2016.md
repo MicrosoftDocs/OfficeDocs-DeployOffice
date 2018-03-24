@@ -23,24 +23,12 @@ description: "Identify installed languages, and add or remove Office 2016 langua
 You can add or remove language packs for an existing Office 2016 installation. This article describes the two methods that you can use to complete these tasks and how to view a list of the languages that are installed.
   
 > [!IMPORTANT]
-> This article describes methods to deploy and manage language packs for the Windows Installer-based (MSI) delivery format of Office 2016, available for enterprise organizations through volume licensing. If you have an Office subscription and you are deploying Office 365 ProPlus (which uses the Click-to-Run delivery format), see [Plan for multilanguage deployment of Click-to-Run-based Office installations](http://technet.microsoft.com/library/a972905d-3f7b-47c1-8481-9a5ac6876283.aspx). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
   
-In this article:
-  
-- [Overview](add-or-remove-language-packs-after-deployment-of-office-2016.md#BKMK_Overview)
+
     
-- [Before you begin](add-or-remove-language-packs-after-deployment-of-office-2016.md#BKMK_Before)
-    
-- [Identify installed languages](add-or-remove-language-packs-after-deployment-of-office-2016.md#BKMK_IdentifyInstalledLanguages)
-    
-- [Modify an existing installation](add-or-remove-language-packs-after-deployment-of-office-2016.md#BKMK_ModifyExisting)
-    
-- [Deploy language packs](#section2)
-    
-- [Remove language packs](#BKMK_RemoveLanguagePacks)
-    
-## Overview
 <a name="BKMK_Overview"> </a>
+## Overview
 
 Office 2016 language packs enable Office applications to display menus, dialog boxes, Help topics, and other text in the user interface in multiple languages. Although the most frequently deployed languages for Office 2016 are released at the same time as the product is released, many other Office 2016 Language Packs are released over time. The Office 2016 Multi-Language Pack, which includes all available language packs, is not released until after all the individual language packs are released. However, if you upgrade your multilingual organization to Office 2016 before all the language packs are released, you can always add or remove additional languages at any time. The Office Multilanguage Pack and proofing tools for Office 2016 are available through Microsoft Volume Licensing programs. For more information, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
   
@@ -50,15 +38,15 @@ There are two methods that you can use to add languages after you deploy Office 
     
     However, if the computer has both Office 2016 and Visio 2016 installed on it, you must add the Japanese resources for each product through two separate operations because there are two separate installation sources, one for Office 2016, and the other for Visio 2016.
     
-- **Deploy language packs as separate products.** This method involves running the  *language pack's*  setup file so that the full Language Pack is installed on the computer rather than modifying an existing installation of  *Office 2016*  . Deploying language packs is appropriate when you want to add languages after a deployment of Office 2016 but do not know which Office 2016 products are currently installed on users' computers. To use this method, you must have at least one Office 2016 product installed on the computer. 
+- **Deploy language packs as separate products.** This method involves running the language pack's setup file so that the full Language Pack is installed on the computer rather than modifying an existing installation of Office 2016. Deploying language packs is appropriate when you want to add languages after a deployment of Office 2016 but do not know which Office 2016 products are currently installed on users' computers. To use this method, you must have at least one Office 2016 product installed on the computer. 
     
 > [!NOTE]
-> Language-specific elements for Project 2016 and Visio 2016 are installed separately. You must rerun the Language Pack setup for these products. For more information, see [Deploy language packs](add-or-remove-language-packs-after-deployment-of-office-2016.md#section2) later in this article. 
+> Language-specific elements for Project 2016 and Visio 2016 are installed separately. You must rerun the Language Pack setup for these products. For more information, see [Deploy language packs](add-or-remove-language-packs-after-deployment-of-office-2016.md#deploylangpack) later in this article. 
   
-## Before you begin
 <a name="BKMK_Before"> </a>
+## Before you begin
 
-Determine which languages will be used at the beginning of your deployment. If you change users' configurations after the initial deployment and include additional languages as part of your customizations, you must first copy all the Office 2016 Language Packs that you want to deploy to the network installation point that contains the Office product files. For example, \\ _server_\ _share_\Office2016. A static list of the products that are contained in the installation source is built  *only*  during the initial creation of a customization .msp file. If you later add more languages to the installation source, the existing .msp file is not updated to reflect this change. Addressing this issue involves the following steps: 
+Determine which languages will be used at the beginning of your deployment. If you change users' configurations after the initial deployment and include additional languages as part of your customizations, you must first copy all the Office 2016 Language Packs that you want to deploy to the network installation point that contains the Office product files. For example, \\\server\share\Office2016. A static list of the products that are contained in the installation source is built only during the initial creation of a customization .msp file. If you later add more languages to the installation source, the existing .msp file is not updated to reflect this change. Addressing this issue involves the following steps: 
   
 1. Create a new customization file by using the Office Customization Tool (OCT).
     
@@ -68,12 +56,12 @@ Determine which languages will be used at the beginning of your deployment. If y
     
 4. After you update the installation source with additional languages, deploy the new .msp file to users.
     
-Failure to create and deploy a new .msp file might result in unexpected behavior, because the changes to an existing customization .msp file do not apply to the languages that are added. If you do not create a new .msp file and import the existing .msp file into that file, your deployment may test correctly in your lab. But users might not see the new language in their Office 2016 applications, or they might see only a subset of the language features. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) in the article [Import an Office 2010 Setup customization file](https://technet.microsoft.com/library/ee681791%28v=office.14%29.aspx) (although this article was written for Office 2010, the concepts and procedures it provides also apply to Office 2016) and [Change users' configurations after installing Office 2010](http://technet.microsoft.com/library/a99b682c-b3b7-448e-8280-0ce2e9a94229.aspx).
+Failure to create and deploy a new .msp file might result in unexpected behavior, because the changes to an existing customization .msp file do not apply to the languages that are added. If you do not create a new .msp file and import the existing .msp file into that file, your deployment may test correctly in your lab. But users might not see the new language in their Office 2016 applications, or they might see only a subset of the language features. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) and [Change users' configurations after installing Office 2013](http://technet.microsoft.com/library/a99b682c-b3b7-448e-8280-0ce2e9a94229.aspx) (even though these articles are written for earlier versions of Office, the concepts and procedures it provides also apply to Office 2016).
   
 For information about how to create a network installation point with multiple languages, see [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md).
   
-## Identify installed languages
 <a name="BKMK_IdentifyInstalledLanguages"> </a>
+## Identify installed languages
 
 You can view a list of languages that are installed for Office 2016 either during the initial installation or during a separate installation of a language pack at the following registry key, which displays the LCID for each enabled language:
   
@@ -101,8 +89,8 @@ Although all applications in the Office 2016 use a shared set of registry data t
     
 5. To view the fallback languages, view the registry key value for **HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\UIFallback**. To identify the language, see [Language identifiers and OptionState Id values in Office 2016](language-identifiers-and-optionstate-id-values-in-office-2016.md).
     
-## Modify an existing installation
 <a name="BKMK_ModifyExisting"> </a>
+## Modify an existing installation
 
 The recommended method for adding languages to an existing installation of Office 2016 is to run setup again and modify the existing Office installation. Because you are only modifying the original installation, no new entry appears in **Add or Remove Programs** in **Control Panel**.
   
@@ -128,9 +116,9 @@ In this case, setup installs Russian language elements on any computer that has 
     
 3. Open Config.xml in a text editor, such as Notepad. 
     
-4. Find the  `<AddLanguage>` element. Uncomment the line by deleting the opening  `<!--` and closing  `-->` tags. 
+4. Find the <AddLanguage> element. Uncomment the line by deleting the opening  \<\!-- and closing  --> tags. 
     
-5. Set the value of the  `Id` attribute to the language tag that corresponds to the language that you want to install. You can specify more than one language by including additional  `<AddLanguage>` elements and attributes. 
+5. Set the value of the  Id attribute to the language tag that corresponds to the language that you want to install. You can specify more than one language by including additional <AddLanguage> elements and attributes. 
     
     For example, to add the Russian language pack, the line should resemble the following example: 
     
@@ -149,16 +137,16 @@ In this case, setup installs Russian language elements on any computer that has 
     
 7. Save the Config.xml file. Run Setup.exe and specify the path of your modified Config.xml file. 
     
-    You must use a full qualified path. For example: **\\server\share\Office2016\setup.exe /config \\server\share\Office2016\ProPlus.WW\Config.xml**
+    You must use a full qualified path. For example: **\\\server\share\Office2016\setup.exe /config \\\server\share\Office2016\ProPlus.WW\Config.xml**
     
     where **Office2016** is the root of the network installation point. 
     
     Because setup also recognizes language packs as separate products, make sure that you specify the Config.xml file for the Office product that you are updating, and not the language pack.
     
-To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) in the article [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built  *only*  during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) in the article [Import an Office 2010 Setup customization file](https://technet.microsoft.com/library/ee681791%28v=office.14%29.aspx) (although this article was written for Office 2010, the concepts and procedures it provides also apply to Office 2016). 
+To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) (although this article is written for an earlier version of Office, the concepts and procedures it provides also apply to Office 2016). 
   
 ## Deploy language packs
-<a name="section2"> </a>
+<a name="deploylangpack"> </a>
 
 If you deployed multiple Office 2016 products in your organization and you must add more language support, you can deploy language packs as separate products. In this case, setup installs language-specific elements for every product in Office 2016. No matter which products users have installed, users can access the additional language versions.
   
@@ -166,7 +154,7 @@ For this deployment method to work, there must be at least one Office 2016 produ
   
 When you deploy language packs separately, you must consider the disk space that is required on users' computers. Language pack requirements range from 800MB to 1.5 GB of hard disk space that is needed.
   
-Language-specific elements for Project 2016 and Visio 2016 are installed separately. In each language pack, the core product folder for Project 2016 is PMUI. _ll_- _cc_. The core product folder for Visio 2016 is VisMUI. _ll_- _cc_.
+Language-specific elements for Project 2016 and Visio 2016 are installed separately. In each language pack, the core product folder for Project 2016 is PMUI._ll_-_cc_. The core product folder for Visio 2016 is VisMUI._ll_-_cc_.
   
 You must follow these steps for each language that you want to install.
   
@@ -184,10 +172,11 @@ You must follow these steps for each language that you want to install.
     
     where **Office2016\LP** is the root of the network installation point for the language packs and **RU** is the language folder name. 
     
-To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) in [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built  *only*  during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) in the article [Import an Office 2010 Setup customization file](https://technet.microsoft.com/library/ee681791%28v=office.14%29.aspx) (although this article was written for Office 2010, the concepts and procedures it provides also apply to Office 2016). 
+To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) (although this article is written for an earlier version of Office, the concepts and procedures it provides also apply to Office 2016). 
   
-## Remove language packs
 <a name="BKMK_RemoveLanguagePacks"> </a>
+## Remove language packs
+
 
 If the Office 2016 Language Packs were deployed as separate products, they can be removed by using Windows Add or Remove Programs.
   
@@ -203,9 +192,9 @@ You must follow these steps for each language that you want to remove.
     
 2. Open Config.xml in a text editor, such as Notepad.
     
-3. Find the  `<Display>` element. Uncomment the line by deleting the opening  `<!--` and closing  `-->` tags. 
+3. Find the <Display> element. Uncomment the line by deleting the opening  \<\!-- and closing  --> tags. 
     
-4. Set the value of the  `Level` to  `"basic"` or  `"none"`,  `CompletionNotice` to  `"yes"`,  `SuppressModal` to  `"yes"`, and  `AcceptEula` to  `"yes"`.
+4. Set the value of the Level to  "basic" or "none",  CompletionNotice to  "yes",  SuppressModal to  "yes", and  AcceptEula to  "yes".
     
     The line should resemble the following example: 
     
@@ -213,7 +202,7 @@ You must follow these steps for each language that you want to remove.
   <Display Level="basic" CompletionNotice="yes" SuppressModal="yes" AcceptEula="yes" />
   ```
 
-5. Find the  `<AddLanguage>` element. If it is in the file, comment out the line by adding opening  `<!--` and closing  `-->` tags around the element. 
+5. Find the <AddLanguage> element. If it is in the file, comment out the line by adding opening  \<\!-- and closing  --> tags around the element. 
     
     The line should resemble the following example:
     
@@ -221,9 +210,9 @@ You must follow these steps for each language that you want to remove.
   <!-- <AddLanguage Id="ru-ru" /> -->
   ```
 
-6. Add the  `<RemoveLanguage>` element. 
+6. Add the <RemoveLanguage> element. 
     
-7. Set the value of the  `Id` attribute to the language tag that corresponds to the language that you want to remove. 
+7. Set the value of the Id attribute to the language tag that corresponds to the language that you want to remove. 
     
     For example, to remove the Russian language pack, the line should resemble the following example: 
     
@@ -237,21 +226,17 @@ You must follow these steps for each language that you want to remove.
     
     You must use a fully qualified path. For example: 
     
-    **\\server\share\Office2016\Setup.exe /Config** **\\server\share\Office2016\ProPlus.WW\Config.xml**
+    **\\\server\share\Office2016\Setup.exe /Config** **\\\server\share\Office2016\ProPlus.WW\Config.xml**
     
     where **Office2016** is the root of the network installation point. 
     
-    **\\server\share\Office2016\LP\Setup.exe /Config** **\\server\share\Office2016\LP\RU\OMUI.ru-ru\Config.xml**
+    **\\\server\share\Office2016\LP\Setup.exe /Config** **\\\server\share\Office2016\LP\RU\OMUI.ru-ru\Config.xml**
     
     where **Office2016\LP** is the root of the network installation point for the language packs and **RU** is the language folder name. 
     
     You must complete the previous steps for each language that you want to remove.
     
-## See also
-<a name="BKMK_RemoveLanguagePacks"> </a>
-
-#### 
-
+## Related topics
 [Language identifiers and OptionState Id values in Office 2016](language-identifiers-and-optionstate-id-values-in-office-2016.md)
   
 [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
