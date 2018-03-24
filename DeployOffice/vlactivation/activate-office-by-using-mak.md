@@ -43,10 +43,11 @@ If you use MAK, you must enter the key by using one of the following supported m
 > [!IMPORTANT]
 > Because different products require different multiple activation keys, you should first verify that the key for the product is correct. 
   
-### Use the Office Customization Tool (OCT) to activate a MAK client
 <a name="BKMK_OCT"> </a>
 
-Remember that you do not have to enter a product key in the OCT if you are using KMS activation. For more information about the OCT, see [Office Customization Tool (OCT) in Office 2013](http://technet.microsoft.com/library/8faae8a0-a12c-4f7b-839c-24a66a531bb5.aspx).
+### Use the Office Customization Tool (OCT) to activate a MAK client
+
+Remember that you do not have to enter a product key in the OCT if you are using KMS activation. For more information about the OCT, see [Office Customization Tool (OCT) in Office 2013](https://technet.microsoft.com/library/8faae8a0-a12c-4f7b-839c-24a66a531bb5.aspx). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) 
   
 To enter a MAK key by using the OCT, follow these steps:
   
@@ -57,12 +58,13 @@ To enter a MAK key by using the OCT, follow these steps:
 3. After making any other necessary changes in the OCT, save the .msp file in the Updates folder.
     
 > [!NOTE]
-> You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1. For more information, see [Setting element](http://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementSetting) in [Config.xml file in Office 2016](http://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx). 
+> You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1. For more information, see [Setting element](https://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementSetting). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) 
   
-### Enter a multiple activation key by using the Config.xml file
 <a name="BKMK_ConfigXML"> </a>
 
-To enter a multiple activation key by using the Config.xml file ([Config.xml file in Office 2016](http://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx)), follow these steps:
+### Enter a multiple activation key by using the Config.xml file
+
+To enter a multiple activation key by using the ([Config.xml file](https://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx)), follow these steps:
   
 1. Add the following line to the Config.xml file:
     
@@ -75,10 +77,11 @@ To enter a multiple activation key by using the Config.xml file ([Config.xml fil
     **Setup.exe /config \<path of Config.xml file\>**
     
 > [!NOTE]
-> You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1. For more information, see [Setting element](http://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementSetting) in [Config.xml file in Office 2016](http://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx). 
+> You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1. For more information, see [Setting element](https://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementSetting). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)  
   
-### Changing the MAK product key
 <a name="BKMK_VAMT"> </a>
+
+### Changing the MAK product key
 
 If you have to change the product key on multiple Office 2016 clients after installation, we recommend that you use Volume Activation Management Tool (VAMT) 3.0. For more information about VAMT 3.0, see [Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=251932).
   
@@ -92,13 +95,15 @@ To change the product key on one computer only:
     
 4. Choose **Change Product Key** and enter the product key. 
     
-### The ospp.vbs script
 <a name="BKMK_osppvbs"> </a>
+
+### The ospp.vbs script
 
 For information about how to enter a product key by using the **ospp.vbs** script, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#section1).
   
-### Registry entry that allows a non-admin user to activate an Office MAK key
 <a name="BKMK_Backstage"> </a>
+
+### Registry entry that allows a non-admin user to activate an Office MAK key
 
 An administrator can create a registry key that allows a standard user (a user who is not an administrator) to apply a MAK key and activate an Office 2016 application. This means that a standard user can switch a KMS client to MAK activation, manually activate a computer, and, if it is necessary, replace an existing MAK with a new MAK key. By default, all volume license editions of Office 2016 disable this behavior. To enable this behavior, add the following line to the Config.xml file:
   
@@ -114,9 +119,6 @@ Disable Standard User Activation: "UserOperations"=dword:00000000
   
 Disable Standard User Activation is the default volume license products setting for Office 2016.
   
-## See also
-
-#### 
-
+## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
 
