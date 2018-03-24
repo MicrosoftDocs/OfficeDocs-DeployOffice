@@ -22,8 +22,6 @@ description: "Describes how to improve Office performance by managing add-ins by
   
 If you can prevent end users from running non-approved add-ins that might cause issues or slow performance, then you can reduce your support costs. If an add-in is crashing or takes a long time to load, you can disable the add-in for all Office 2016 client computers at the same time. Using Telemetry Dashboard, you can monitor add-in usage along with performance and other issues. With the collected data, you can decide which add-ins should be managed. This article points to more information about how to manage add-ins for Office by using Telemetry Dashboard.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
   
 ## About add-in management with Telemetry Dashboard
 
@@ -37,10 +35,7 @@ By using the Group Policy Administrative Templates, you can also create lists of
   
 For more information about how to manage Office add-ins by using Telemetry Dashboard, see [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=271236).
   
-## See also
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)

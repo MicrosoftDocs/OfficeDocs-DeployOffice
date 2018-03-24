@@ -101,11 +101,9 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
 
 - On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
     
-## See also
-
-#### 
-
+## Related topics
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
   
 [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
 
+[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)

@@ -22,28 +22,6 @@ description: "Learn about telemetry components and sizing, topology, hardware, a
   
 When you deploy Telemetry Dashboard, you must consider several factors. These can include the location of the users to be monitored and the hardware specifications of the computer that runs the telemetry processor and other components that deliver the data to Telemetry Dashboard. It's also important to understand the supported limits for Telemetry Dashboard deployments, such as the maximum number of users who can be monitored. Use the guidance in this article to help you design a Telemetry Dashboard topology that is sized appropriately for your organization.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [Introducing telemetry for Office 2016](plan-telemetry-dashboard-deployment.md#intro)
-    
-- [Before you begin planning Telemetry Dashboard deployment](plan-telemetry-dashboard-deployment.md#Overview)
-    
-- [Office telemetry tools and components](plan-telemetry-dashboard-deployment.md#bkmk_officetelemetrycomponents)
-    
-- [Planning labels for telemetry agents](plan-telemetry-dashboard-deployment.md#AgentLabel)
-    
-- [Topology requirements for Telemetry Dashboard deployments](plan-telemetry-dashboard-deployment.md#topologymusts)
-    
-- [Supported limits for Telemetry Dashboard components](plan-telemetry-dashboard-deployment.md#sizing)
-    
-- [Topology and bandwidth recommendations for Telemetry Dashboard deployments](plan-telemetry-dashboard-deployment.md#bandwidth)
-    
-- [Scaling out Telemetry Dashboard deployments](plan-telemetry-dashboard-deployment.md#scaleout)
-    
-- [Hardware recommendations for Telemetry Dashboard deployments](plan-telemetry-dashboard-deployment.md#hardware)
     
 ## Introducing telemetry for Office 2016
 <a name="intro"> </a>
@@ -218,11 +196,7 @@ The following table describes hardware recommendations for each computer that ho
    
 \*Includes inventory and events for both earlier versions of Office and for Office 2016.
   
-## See also
-<a name="hardware"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)

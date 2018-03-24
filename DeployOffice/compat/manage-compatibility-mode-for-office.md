@@ -20,9 +20,7 @@ description: "Introduces compatibility mode in Office and how to set the default
   
 In Office, compatibility mode is used automatically to open Word, Excel, and PowerPoint documents that were created in earlier versions of these applications. Compatibility mode ensures that no new or improved features in Office are available while users work with a document so that people who use earlier versions of Office will have full editing capabilities. Compatibility mode also preserves the layout of the document.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
+ 
 ## How Office 2016 uses compatibility mode
 
  Word, Excel, and PowerPoint use compatibility mode to open binary Office documents that were created in Office 2003 or earlier versions of Office. Word also uses compatibility mode to open OpenXML documents that were created in Word 2007 and Word 2010. 
@@ -47,9 +45,8 @@ You can download the Office Administrative Templates from the [Microsoft Downloa
   
  Microsoft Word 2016\Word Options\Save 
   
-## See also
-
-#### 
-
+## Related topics
 [Assess Office compatibility](assess-office-compatibility.md)
+
+[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 

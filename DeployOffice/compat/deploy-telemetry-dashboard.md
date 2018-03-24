@@ -22,17 +22,7 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
   
 This article describes prerequisites, deployment procedures, answers to frequently asked questions, and troubleshooting for Telemetry Dashboard.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [Deploying Telemetry Dashboard components](deploy-telemetry-dashboard.md#deployoverview)
-    
-- [Frequently asked questions about Telemetry Dashboard](deploy-telemetry-dashboard.md#FAQ)
-    
-- [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting)
-    
+
 ## Deploying Telemetry Dashboard components
 <a name="deployoverview"> </a>
 
@@ -481,14 +471,12 @@ The following table describes some symptoms that you might encounter after you d
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server is SQL Express, ensure that the SQL Server instance name is correct. The default instance name for SQL Express differs from SQL Server, for example:  _Servername\SQLExpress_.  <br/> |
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server default collation is case-sensitive (for example, the Japanese version of SQL Server is case-sensitive by default), ensure that you entered a case-sensitive database name in the **Data connection settings** dialog box in Telemetry Dashboard.  <br/> |
    
-## See also
-<a name="tshooting"> </a>
-
-#### 
-
+## Related topics
 [Assess Office compatibility](assess-office-compatibility.md)
   
 [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
   
 [Monitor Office compatibility and deployments by using Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
+
+[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 

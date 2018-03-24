@@ -42,16 +42,6 @@ The agent doesn't collect any of the following kinds of information:
     
 - Information about files that are not in the Most Recently Used list.
     
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [Office applications from which the telemetry agent collect data](data-that-the-telemetry-agent-collects-in-office.md#TelemetryApps)
-    
-- [Telemetry data that is collected by the agent for all computers that it monitors](data-that-the-telemetry-agent-collects-in-office.md#allComputers)
-    
-- [Telemetry data that is collected only for Office 2016 and Office 2013](data-that-the-telemetry-agent-collects-in-office.md#data2016)
     
 ## Office applications from which the telemetry agent collect data
 <a name="TelemetryApps"> </a>
@@ -266,11 +256,7 @@ VBA, OLE, external data connection, ActiveX control, and assembly reference info
     
 - Sessions
     
-## See also
-<a name="data2016"> </a>
-
-#### 
-
+## Related topics
 [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
   
 [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)

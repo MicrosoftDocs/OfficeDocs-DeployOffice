@@ -22,26 +22,6 @@ description: "Explains how to view the stability of Office documents and solutio
   
 After you deploy the components of Telemetry Dashboard and the telemetry agents have collected data, you can use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Telemetry Dashboard. 
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [Open Telemetry Dashboard and connect to the telemetry database](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#openTD)
-    
-- [Navigating in Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#bkmk_telemetrydashboardlayoutandnavigation)
-    
-- [Learn about the Telemetry Dashboard worksheets](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#worksheets)
-    
-- [Use filters to adjust what's shown in a Telemetry Dashboard worksheet](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#scope)
-    
-- [Determine the overall stability of Office 2016 documents and solutions throughout your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#stability)
-    
-- [Drill down to investigate unstable documents or solutions that require your attention](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#investigate)
-    
-- [View the progress of Office 2016 deployments in your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#deploystatus)
-    
-- [Troubleshoot error messages that are shown in Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#tshoot)
     
 ## Open Telemetry Dashboard and connect to the telemetry database
 <a name="openTD"> </a>
@@ -252,11 +232,7 @@ In addition, do the following:
     
 For more information about how to troubleshoot the telemetry processor, see [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).
   
-## See also
-<a name="tshoot"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Assess Office compatibility](assess-office-compatibility.md)

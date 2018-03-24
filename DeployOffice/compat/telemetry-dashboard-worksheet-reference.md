@@ -22,8 +22,6 @@ description: "Find reference information about Telemetry Dashboard worksheets th
   
 As you use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the telemetry agents and processors.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
   
 In this article:
   
@@ -467,11 +465,7 @@ Also, you should be aware that Windows 8 is now supported on ARM-based architect
 
 When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Tutorial: PivotTable data analysis using a Data Model in Excel 2013](https://go.microsoft.com/fwlink/?LinkID=279531). 
   
-## See also
-<a name="custom_report"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)

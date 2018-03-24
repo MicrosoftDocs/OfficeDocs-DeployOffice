@@ -28,16 +28,6 @@ The telemetry agent is built into Office Professional Plus 2016, and Office 365 
   
 For a visual representation of the Telemetry Dashboard components and how they work, see [Telemetry in Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=266531). This poster includes a description of all components, a list of what Office files are monitored, how data collection works, and more.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [How to configure privacy and performance settings in Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure)
-    
-- [Disable data collection for the telemetry agent](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Disable)
-    
-- [Delete telemetry and inventory data that is stored on client computers](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Delete)
     
 ## How to configure privacy and performance settings in Telemetry Dashboard
 <a name="Configure"> </a>
@@ -201,11 +191,7 @@ The policy settings that are listed in the following table are available in the 
 
 Disabling logging does not delete the data that has already been collected from a computer. To delete this data on the local client computer, delete the files evt.tbl, sln.tbl, user.tbl that are located under %LocalAppData%\Microsoft\Office16.0\Telemetry\Microsoft\Office\16.0\Telemetry\.
   
-## See also
-<a name="Delete"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)

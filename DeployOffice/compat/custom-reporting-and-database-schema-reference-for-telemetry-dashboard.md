@@ -22,20 +22,6 @@ description: "Describes how to create custom reports in Telemetry Dashboard, sho
   
 The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [Overview of custom reports in Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#overview)
-    
-- [Create custom reports in Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#Create_customreport)
-    
-- [Default tables and fields in Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#default_tables)
-    
-- [Hidden tables in Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables)
-    
-- [Default data relationships in Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#default_relationships)
     
 ## Overview of custom reports in Telemetry Dashboard
 <a name="overview"> </a>
@@ -363,11 +349,7 @@ The following illustrations show the relationships between tables in the telemet
 
 ![Shows the Issue_Summary table and its relationships to other tables in the telemetry database](../images/ORK_CR_Issue_Summary.gif)
   
-## See also
-<a name="default_relationships"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)

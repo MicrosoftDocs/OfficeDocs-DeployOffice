@@ -22,22 +22,6 @@ description: "Explains how to assess compatibility between versions of Office in
   
 Keeping an Office deployment project on track requires two key aspects: using the right process to assess Office compatibility, and using tools that help you understand the potential risks of an Office upgrade. Office helps you do both. When you use the process described in this topic with the telemetry tools that are in Office, you can speed up your Office deployments and get users up and running on the new version of Office with minimal disruptions. In this article, you'll learn more about the compatibility process and how Office telemetry fits into this process.
   
-> [!IMPORTANT]
-> This article is part of [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md). Use the roadmap as a starting point for articles, downloads, scripts, and videos that help you assess Office compatibility. > **Are you looking for compatibility information about individual Office applications?** You can find this information by searching for "Office compatibility" on [Office Support](https://support.office.com). 
-  
-In this article:
-  
-- [What is Office telemetry?](assess-office-compatibility.md#bkmk_whatisofficetelemetry)
-    
-- [Telemetry and the Office compatibility process](assess-office-compatibility.md#intro)
-    
-- [Phase 1: Discover which Office documents and solutions are being used](assess-office-compatibility.md#discover)
-    
-- [Phase 2: Rationalize the inventory data to identify business-critical Office documents and solutions](assess-office-compatibility.md#rationalize)
-    
-- [Phase 3: Validate that Office files and solutions work](assess-office-compatibility.md#validate)
-    
-- [Phase 4: Manage the transition to the new version of Office](assess-office-compatibility.md#manage)
     
 ## What is Office telemetry?
 <a name="bkmk_whatisofficetelemetry"> </a>
@@ -210,17 +194,13 @@ Your Help Desk should be ramped up on Office and ready to support users. Here ar
     
 - [End user training resources for Office and Office 365](http://technet.microsoft.com/library/12c9aa22-73f5-41f1-98bf-1e6351890576.aspx)
     
-## See also
-<a name="manage"> </a>
-
-#### 
-
+## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
   
 [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-#### 
+
 
 [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=266224)
 
