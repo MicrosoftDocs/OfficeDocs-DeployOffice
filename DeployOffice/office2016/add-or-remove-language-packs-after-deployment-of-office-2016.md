@@ -56,7 +56,7 @@ Determine which languages will be used at the beginning of your deployment. If y
     
 4. After you update the installation source with additional languages, deploy the new .msp file to users.
     
-Failure to create and deploy a new .msp file might result in unexpected behavior, because the changes to an existing customization .msp file do not apply to the languages that are added. If you do not create a new .msp file and import the existing .msp file into that file, your deployment may test correctly in your lab. But users might not see the new language in their Office 2016 applications, or they might see only a subset of the language features. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) and [Change users' configurations after installing Office 2013](http://technet.microsoft.com/library/a99b682c-b3b7-448e-8280-0ce2e9a94229.aspx) (even though these articles are written for earlier versions of Office, the concepts and procedures it provides also apply to Office 2016).
+Failure to create and deploy a new .msp file might result in unexpected behavior, because the changes to an existing customization .msp file do not apply to the languages that are added. If you do not create a new .msp file and import the existing .msp file into that file, your deployment may test correctly in your lab. But users might not see the new language in their Office 2016 applications, or they might see only a subset of the language features. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) and [Change users' configurations after installing Office 2013](http://technet.microsoft.com/library/a99b682c-b3b7-448e-8280-0ce2e9a94229.aspx). (Although these articles are for earlier versions of Office, the information also applies to Office 2016.)
   
 For information about how to create a network installation point with multiple languages, see [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md).
   
@@ -116,9 +116,9 @@ In this case, setup installs Russian language elements on any computer that has 
     
 3. Open Config.xml in a text editor, such as Notepad. 
     
-4. Find the <AddLanguage> element. Uncomment the line by deleting the opening  \<\!-- and closing  --> tags. 
+4. Find the \<AddLanguage\> element. Uncomment the line by deleting the opening  \<\!-- and closing  --> tags. 
     
-5. Set the value of the  Id attribute to the language tag that corresponds to the language that you want to install. You can specify more than one language by including additional <AddLanguage> elements and attributes. 
+5. Set the value of the  Id attribute to the language tag that corresponds to the language that you want to install. You can specify more than one language by including additional \<AddLanguage\> elements and attributes. 
     
     For example, to add the Russian language pack, the line should resemble the following example: 
     
@@ -143,7 +143,7 @@ In this case, setup installs Russian language elements on any computer that has 
     
     Because setup also recognizes language packs as separate products, make sure that you specify the Config.xml file for the Office product that you are updating, and not the language pack.
     
-To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) (although this article is written for an earlier version of Office, the concepts and procedures it provides also apply to Office 2016). 
+To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage). (Although this article is for an earlier version of Office, the information also applies to Office 2016). 
   
 ## Deploy language packs
 <a name="deploylangpack"> </a>
@@ -154,7 +154,7 @@ For this deployment method to work, there must be at least one Office 2016 produ
   
 When you deploy language packs separately, you must consider the disk space that is required on users' computers. Language pack requirements range from 800MB to 1.5 GB of hard disk space that is needed.
   
-Language-specific elements for Project 2016 and Visio 2016 are installed separately. In each language pack, the core product folder for Project 2016 is PMUI._ll_-_cc_. The core product folder for Visio 2016 is VisMUI._ll_-_cc_.
+Language-specific elements for Project 2016 and Visio 2016 are installed separately. In each language pack, the core product folder for Project 2016 is PMUI._lL_-_cc_. The core product folder for Visio 2016 is VisMUI._ll_-_cc_.
   
 You must follow these steps for each language that you want to install.
   
@@ -168,11 +168,11 @@ You must follow these steps for each language that you want to install.
     
 3. Run the language pack setup from the root of the network installation point for the Office 2016 Multi-Language Pack or Office 2016 Language Pack, and specify the path of the Config.xml file on the command line. For example:
     
-    **\\server\share\Office2016\LP\Setup.exe /Config** **\\server\share\Office2016\LP\RU\OMUI.ru-ru\Config.xml**
+    **\\\server\share\Office2016\LP\Setup.exe /Config** **\\\server\share\Office2016\LP\RU\OMUI.ru-ru\Config.xml**
     
     where **Office2016\LP** is the root of the network installation point for the language packs and **RU** is the language folder name. 
     
-To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage) (although this article is written for an earlier version of Office, the concepts and procedures it provides also apply to Office 2016). 
+To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
   
 <a name="BKMK_RemoveLanguagePacks"> </a>
 ## Remove language packs
@@ -180,7 +180,7 @@ To deploy these languages for new Office 2016 installations, see [Specify which 
 
 If the Office 2016 Language Packs were deployed as separate products, they can be removed by using Windows Add or Remove Programs.
   
-If the Office 2016 Language Packs were deployed with Office 2016 and not as separate products, the procedure to remove them resembles the deployment of the Language Packs. Instead of using the  `<AddLanguage>` tag, use the  `<RemoveLanguage>` tag. 
+If the Office 2016 Language Packs were deployed with Office 2016 and not as separate products, the procedure to remove them resembles the deployment of the Language Packs. Instead of using the \<AddLanguage\> tag, use the \<RemoveLanguage\> tag. 
   
 You must follow these steps for each language that you want to remove.
   
@@ -202,7 +202,7 @@ You must follow these steps for each language that you want to remove.
   <Display Level="basic" CompletionNotice="yes" SuppressModal="yes" AcceptEula="yes" />
   ```
 
-5. Find the <AddLanguage> element. If it is in the file, comment out the line by adding opening  \<\!-- and closing  --> tags around the element. 
+5. Find the \<AddLanguage\> element. If it is in the file, comment out the line by adding opening  \<\!-- and closing  --> tags around the element. 
     
     The line should resemble the following example:
     
@@ -210,7 +210,7 @@ You must follow these steps for each language that you want to remove.
   <!-- <AddLanguage Id="ru-ru" /> -->
   ```
 
-6. Add the <RemoveLanguage> element. 
+6. Add the \<RemoveLanguage\> element. 
     
 7. Set the value of the Id attribute to the language tag that corresponds to the language that you want to remove. 
     
