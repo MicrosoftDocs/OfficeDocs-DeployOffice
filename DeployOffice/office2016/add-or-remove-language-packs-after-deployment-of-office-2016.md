@@ -143,7 +143,7 @@ In this case, setup installs Russian language elements on any computer that has 
     
     Because setup also recognizes language packs as separate products, make sure that you specify the Config.xml file for the Office product that you are updating, and not the language pack.
     
-To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage). (Although this article is for an earlier version of Office, the information also applies to Office 2016). 
+To deploy these languages for new Office 2016 installations, see [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall) and import existing customization .msp files into a new customization .msp file. A static list of the products contained in the installation source is built only during the initial creation of a customization file. If you later add more languages to the installation source, the existing customization file is not updated to reflect this change. For more information, see [To import a customization .msp file to add languages to an existing installation](http://technet.microsoft.com/library/6bd88342-4f3a-4535-a570-475d251ef9da.aspx#BKMK_ImportMSO_AddLanguage). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) 
   
 ## Deploy language packs
 <a name="deploylangpack"> </a>
@@ -154,7 +154,7 @@ For this deployment method to work, there must be at least one Office 2016 produ
   
 When you deploy language packs separately, you must consider the disk space that is required on users' computers. Language pack requirements range from 800MB to 1.5 GB of hard disk space that is needed.
   
-Language-specific elements for Project 2016 and Visio 2016 are installed separately. In each language pack, the core product folder for Project 2016 is PMUI._lL_-_cc_. The core product folder for Visio 2016 is VisMUI._ll_-_cc_.
+Language-specific elements for Project 2016 and Visio 2016 are installed separately. In each language pack, the core product folder for Project 2016 is PMUI._ll_-_cc_. The core product folder for Visio 2016 is VisMUI._ll_-_cc_.
   
 You must follow these steps for each language that you want to install.
   
@@ -192,7 +192,7 @@ You must follow these steps for each language that you want to remove.
     
 2. Open Config.xml in a text editor, such as Notepad.
     
-3. Find the <Display> element. Uncomment the line by deleting the opening  \<\!-- and closing  --> tags. 
+3. Find the \<Display\> element. Uncomment the line by deleting the opening  \<\!-- and closing  --> tags. 
     
 4. Set the value of the Level to  "basic" or "none",  CompletionNotice to  "yes",  SuppressModal to  "yes", and  AcceptEula to  "yes".
     
