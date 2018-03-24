@@ -49,19 +49,15 @@ Rearming is also recommended for MAK deployment. If you are deploying Office 201
     
 5. At the command prompt, type ospprearm.exe. If the rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
     
-6. Capture the image or save the virtual computer. For more information about how to capture the image, see [Configure Office 2010 for a hard disk image](http://technet.microsoft.com/library/146a77e1-75b9-4795-8feb-d94d0f528ecc .aspx). Even though this link points to the 2010 content, it still applies for Office 2016. 
+6. Capture the image or save the virtual computer. For more information about how to capture the image, see [Configure Office 2010 for a hard disk image](http://technet.microsoft.com/library/146a77e1-75b9-4795-8feb-d94d0f528ecc .aspx). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) 
     
     > [!IMPORTANT]
     > Do not open an Office application or run ospp.vbs, or do anything else related to Office 2016 while the image is being captured. Otherwise, the grace timer starts. 
   
-## See also
-
-#### 
-
+## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
   
 [Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md)
-#### 
 
 [Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=251932)
 
