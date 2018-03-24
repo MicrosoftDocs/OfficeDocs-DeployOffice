@@ -21,17 +21,17 @@ description: "Describes the activation process for KMS volume license editions o
  **Audience:** IT Professionals 
   
 > [!IMPORTANT]
-> This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](http://technet.microsoft.com/library/88a461cf-5573-467e-a0b8-ab2d580b877e.aspx) instead. 
+> This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead. 
   
-To find out more about how to buy volume license editions of Office 2016, see [Microsoft Office Volume Licensing Buyer's Guide](https://www.microsoft.com/en-us/licensing/product-licensing/office.aspx#tab=3).
+To find out more about how to buy volume license editions of Office 2016, see [Microsoft Office Volume Licensing Buyer's Guide](https://www.microsoft.com/en-us/licensing/product-licensing/office.aspx).
   
 On the client computer, the appropriate product key for your specific activation method is installed automatically with the volume license edition of Office 2016.
   
-If you deploy an image or create a virtual computer, you must rearm the installation of Office 2016 before you capture the image or create the virtual computer. For information about how to capture an image, see [Configure Office 2010 for capturing an image](https://technet.microsoft.com/library/cc178964.aspx). Although the instructions are for Office 2010, they still apply. For information about how to rearm an Office 2016 installation, see [Rearm the Office 2016 KMS-based volume activation installation](rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md).
+If you deploy an image or create a virtual computer, you must rearm the installation of Office 2016 before you capture the image or create the virtual computer. For information about how to capture an image, see [Configure Office 2010 for capturing an image](https://technet.microsoft.com/library/cc178964.aspx). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) For information about how to rearm an Office 2016 installation, see [Rearm the Office 2016 KMS-based volume activation installation](rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md).
   
 ## Activate KMS clients for Office 2016
 
-All volume license editions of Office 2016 have a [Generic Volume License Key (GVLK)](http://technet.microsoft.com/library/99fa0e2a-99f8-4555-b0a5-c09d3aede928%28Office.14%29.aspx) preinstalled. GVLKs support both KMS and AD DS-based activation. 
+All volume license editions of Office 2016 have a [Generic Volume License Key (GVLK)](../office2016/gvlks-for-office-2016.md) preinstalled. GVLKs support both KMS and AD DS-based activation. 
   
 On the Office 2016 KMS host computer, you install and enable only one KMS host key to activate all volume license editions of Office 2016 KMS clients. If the Office 2016 KMS host computer is installed and configured, KMS activation occurs transparently to the user when an Office 2016 client is first installed.
   
@@ -45,8 +45,9 @@ The KMS host name is specified by **KeyManagementServiceName** (REG_SZ), and the
   
 For additional configuration options, such as how to specify the KMS host name on the KMS client, or to change the KMS key to a MAK key, see [Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md).
   
-## Turn KMS host caching on or off for Office KMS clients
 <a name="KMSClientCacheOnOff"> </a>
+
+## Turn KMS host caching on or off for Office KMS clients
 
 Use the ospp.vbs script to configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer is not saved cached, the client will query DNS every time that activation is tried. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client will attempt to directly contact the cached KMS host computer that last resulted in successful activation. For more information about the ospp.vbs script, see [Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md).
   
@@ -56,11 +57,11 @@ Use the ospp.vbs script to configure whether or not the last used KMS host compu
     
 2. Change to the folder that contains the ospp.vbs script. For example:
     
-     `cd c:\Program Files (x86)\Microsoft Office\Office16`
+     cd c:\Program Files (x86)\Microsoft Office\Office16
     
     or:
     
-     `cd c:\Program Files\Microsoft Office\Office16`
+     cd c:\Program Files\Microsoft Office\Office16
     
 3. Type the following command, and then press ENTER:
     
@@ -72,18 +73,17 @@ Use the ospp.vbs script to configure whether or not the last used KMS host compu
     
 2. Change to the folder that contains the ospp.vbs script. For example:
     
-     `cd c:\Program Files (x86)\Microsoft Office\Office16`
+     cd c:\Program Files (x86)\Microsoft Office\Office16
     
     or:
     
-     `cd c:\Program Files\Microsoft Office\Office16`
+     cd c:\Program Files\Microsoft Office\Office16
     
 3. Type the following command, and then press ENTER:
     
     **cscript ospp.vbs /cachst:TRUE**
     
 ## Check the license status of Office 2016 KMS clients
-<a name="KMSClientCacheOnOff"> </a>
 
 The following table describes the license state of the Office 2016 client with respect to activation.
   
@@ -91,7 +91,7 @@ The following table describes the license state of the Office 2016 client with r
 
 |**License state**|**Description**|
 |:-----|:-----|
-|Licensed  <br/> |By default, the KMS client requests activation with the KMS host one time every seven days. (The number of days is configurable.) This design allows the maximum possible time for the client to be in the licensed state.  <br/> After the client is successfully activated, it remains in the licensed state for 180 days. When in the licensed state, users do not see any notification dialog boxes prompting them to activate the client. After 180 days, the activation attempt process resumes. If activation is continually successful, the whole activation experience is transparent to the end-user.  <br/> |
+|Licensed  <br/> |By default, the KMS client requests activation with the KMS host one time every seven days. (The number of days is configurable.) This design allows the maximum possible time for the client to be in the licensed state.  <br/> <br/>After the client is successfully activated, it remains in the licensed state for 180 days. When in the licensed state, users do not see any notification dialog boxes prompting them to activate the client. After 180 days, the activation attempt process resumes. If activation is continually successful, the whole activation experience is transparent to the end-user.  <br/> |
 |Out-of-tolerance  <br/> |If activation does not occur during the 180-day period, Office 2016 goes into the out-of-tolerance state for 30 days. Users then see notifications that request activation.  <br/> |
 |Unlicensed notification  <br/> |If activation does not occur during the out-of-tolerance state, Office 2016 goes into the unlicensed notification state. Users then see notifications that request activation and a red title bar.  <br/> |
    
@@ -103,11 +103,11 @@ You use the ospp.vbs script with the **/dstatusall** option to check the license
     
 2. Change to the folder that contains the ospp.vbs script. For example:
     
-     `cd c:\Program Files (x86)\Microsoft Office\Office16`
+     cd c:\Program Files (x86)\Microsoft Office\Office16
     
     or:
     
-     `cd c:\Program Files\Microsoft Office\Office16`
+     cd c:\Program Files\Microsoft Office\Office16
     
 3. To check the status for all installed licenses, type the following command, and then press ENTER:
     
@@ -117,15 +117,10 @@ You use the ospp.vbs script with the **/dstatusall** option to check the license
     
     **cscript ospp.vbs /dstatus**
     
-## See also
-<a name="KMSClientCacheOnOff"> </a>
-
-#### 
-
+## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
   
 [Set up DNS for Office 2016 KMS-based volume activation](configure-dns-to-activate-office-by-using-kms.md)
-#### 
 
 [Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkID=251932)
 
