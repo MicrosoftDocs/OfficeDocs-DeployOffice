@@ -24,8 +24,8 @@ You plan the deployment of Office for volume activation of Office 2016 in severa
   
 |||
 |:-----|:-----|
-|![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)           <br/> |If you are a user activating a personal copy of Office 2016, follow the [Activate Office 365 Home, Personal, University, Office 2013, or Office 2016](https://go.microsoft.com/fwlink/p/?LinkId=335854) directions instead.  <br/> |
-|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)           <br/> |If you are an admin planning to activate and license Office 365 ProPlus, review the [Overview of licensing and activation in Office 365 ProPlus](http://technet.microsoft.com/library/88a461cf-5573-467e-a0b8-ab2d580b877e.aspx) instead.  <br/> If you are an admin planning to activate and license Volume license edition of Office 2016, you're at the right place, keep reading.  <br/> |
+|![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)           <br/> |If you are a user activating a personal copy of Office 2016, follow the [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/5bd38f38-db92-448b-a982-ad170b1e187e) directions instead.  <br/> |
+|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)           <br/> |If you are an admin planning to activate and license Office 365 ProPlus, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead.  <br/> If you are an admin planning to activate and license Volume license edition of Office 2016, you're at the right place, keep reading.  <br/> |
 
 Microsoft policy requires the activation of all editions of Office 2016 client software, including volume license editions. For Office 2016, volume activation occurs through Office Activation Technologies, which are based on the Software Protection Platform (SPP) that is used in Windows 7, Windows Server 2008 R2, Windows 8, Windows 8.1, Windows Server 2012 and Windows Server 2012 R2. Office Activation Technologies provides three activation methods for Office 2016: 
   
@@ -38,8 +38,8 @@ Microsoft policy requires the activation of all editions of Office 2016 client s
 The model that you choose depends on the size, network infrastructure, connectivity, and security requirements in your environment.  
 
     
-## Plan a volume license deployment
 <a name="BK_Planadeploymnet"> </a>
+## Plan a volume license deployment
 
 Planning an Office 2016 deploying requires the same considerations as planning a Windows deployment of Windows 7, Windows Server 2008 R2, Windows 8, or Windows Server 2012. To help determine which activation method to use for Windows, see the [Windows Volume Activation Planning Guide](https://go.microsoft.com/fwlink/p/?LinkId=183040). Most likely, Office 2016 will use the same method.
   
@@ -71,8 +71,10 @@ When you plan for Office Activation Technologies, think about the following:
     
     For information about VAMT 3.0, see [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#section2).
     
+<a name="review"> </a>
+
 ## Review and compare activation methods
-<a name="section1"> </a>
+
 
 Office Activation Technologies provides three activation methods for Office 2016: KMS, MAK, and AD DS-based activation.
   
@@ -88,24 +90,26 @@ You can also use a combination of KMS and MAK within your deployment. For exampl
   
 The model that you choose depends on the size, network infrastructure, connectivity, and security requirements in your environment. You can choose to use only one or a combination of these activation methods. Typically on a client computer, you would use the same activation method for a particular instance of Windows that you use for Office. For more information about how to decide which activation method to use, see the [Windows Volume Activation Planning Guide](https://go.microsoft.com/fwlink/p/?LinkId=183040).
   
-To find out more about how to buy volume license editions of Office 2016, see [Microsoft Office Volume Licensing Buyer's Guide](https://www.microsoft.com/licensing/product-licensing/office.aspx#tab=3).
-  
-### Key Management Service (KMS)
-<a name="kms"> </a>
+To find out more about how to buy volume license editions of Office 2016, see [Microsoft Office Volume Licensing Buyer's Guide](https://www.microsoft.com/licensing/product-licensing/office.aspx).
+ 
+<a name="kms"> </a> 
+
+## Key Management Service (KMS)
 
 KMS is a client-server model in which each client requests activation from a computer serving as the KMS host computer. By default, clients connect to the KMS host computer on port 1688. The KMS host computer uses DNS to publish the KMS service. You can either use the default settings, which require little or no administrative action, or manually configure the KMS host computer and clients based on the network configuration and security requirements in your environment. To be licensed, each client must be activated.
   
 You must prepare a KMS host computer by first installing the licensing files (see [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)), and then activating the KMS host key before it can accept activation requests from client computers. 
   
-#### Publication of Key Management Service
+### Publication of Key Management Service
 
  KMS uses service (SRV) resource records (RRs) in DNS to store and communicate the locations of KMS host computers. KMS host computers use dynamic updates, if available, to publish the SRV RRs. For more information, see [Dynamic update](https://go.microsoft.com/fwlink/p/?LinkId=317385). If dynamic updates are not available, or if the KMS host computer does not have permissions to publish the RRs, you must publish the DNS records manually or configure client computers to connect to specific KMS host computers. This might require changing permissions on DNS to let more than one KMS host computer publish SRV records.
   
 > [!NOTE]
 > DNS changes might take time to propagate to all DNS hosts, depending on the complexity and topology of your network. For more information, see [Set up DNS for Office 2016 KMS-based volume activation](configure-dns-to-activate-office-by-using-kms.md). 
   
-### Multiple Activation Key (MAK)
 <a name="mak"> </a>
+
+## Multiple Activation Key (MAK)
 
 MAK is used for one-time activation with the Microsoft hosted activation services. Each MAK has a predetermined number of allowed activations. This number is based on volume licensing agreements and may not match the organization's exact license count. Each activation that uses MAK with the Microsoft hosted activation service counts toward the activation limit. After Office 2016 is activated, no re-activation is required unless the hardware changes significantly.
   
@@ -116,14 +120,14 @@ There are two ways to activate computers by using MAK:
 - **MAK proxy activation by using VAMT** This enables a centralized activation request on behalf of multiple computers that have one connection to Microsoft. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#section2). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the Internet or the corporate network. It is also suited for development and test labs that do not have this connectivity.
     
 #### MAK architecture
-<a name="section4"> </a>
 
 MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against Microsoft hosted activation servers over the Internet. In MAK proxy activation, a MAK must be installed on the client computer by any of the methods previously described. VAMT obtains the installation ID (IID) from the target computer, sends the IID to Microsoft on behalf of the client, and obtains a confirmation ID (CID). The tool then activates the client by installing the CID. The CID is saved and can be used later, for example, to activate test computers that were re-imaged after 90 days.
   
 For more information, see [Activate Office 2016 MAK clients](activate-office-by-using-mak.md).
   
-### Active Directory Domain Services-based activation
 <a name="ADDSActivation"> </a>
+
+## Active Directory Domain Services-based activation
 
 As with KMS, AD DS-based activation can activate all Office 2016 volume license clients within the domain. To use AD DS-based activation, you configure AD DS from one computer to support the activation of all Office 2016 volume license clients within the domain.
   
@@ -131,10 +135,3 @@ AD DS-based activation uses the same GVLK/KMS host key pair that KMS activation 
   
 For more information about AD DS-based activation, see [Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md).
   
-## See also
-<a name="section1"> </a>
-
-#### 
-
-[Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkID=251932)
-
