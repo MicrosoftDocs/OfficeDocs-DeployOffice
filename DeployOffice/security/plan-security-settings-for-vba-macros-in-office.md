@@ -77,7 +77,7 @@ VBA macros that aren't trusted aren't allowed to run until a user clicks the Mes
 
 You can easily get some visibility into VBA macro usage in your organization by reviewing data in Office 2016 Telemetry Dashboard. There is a built-in report named "Inventory" that collects and displays unique instance data about each Office solution that is monitored. This includes whether an Office document uses VBA macros.
   
-To use the following procedure you must have already deployed and configured Office Telemetry Dashboard. For information about Office Telemetry Dashboard in general, see [Overview of Office Telemetry](http://technet.microsoft.com/library/848021bb-394d-4210-96a7-df351a1243e7.aspx). For details about how to deploy Office Telemetry, see [Deploy Telemetry Dashboard](http://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717.aspx).
+To use the following procedure you must have already deployed and configured Office Telemetry Dashboard. For information about Office Telemetry Dashboard in general, see [Overview of Office Telemetry](https://technet.microsoft.com/library/848021bb-394d-4210-96a7-df351a1243e7.aspx). For details about how to deploy Office Telemetry, see [Deploy Telemetry Dashboard](https://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717.aspx).
   
 ### To view VBA macro usage in an Office 2016 Telemetry Dashboard report
 

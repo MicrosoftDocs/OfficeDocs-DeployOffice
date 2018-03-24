@@ -142,7 +142,7 @@ It is much easier to transform user acceptance testing into piloting when you us
 > [!IMPORTANT]
 > We recommend that you use side-by-side installations of Office as a temporary solution for user acceptance testing and piloting, not as a long-term solution for production environments. Plan to phase out the earlier version of Office when your production deployments begin. 
   
-You can learn more about Click-to-Run in [Overview of Click-to-Run](http://technet.microsoft.com/library/cbc72706-c7b1-4080-bf2f-5d34aa67df11.aspx).
+You can learn more about Click-to-Run in [Overview of Click-to-Run](https://technet.microsoft.com/library/cbc72706-c7b1-4080-bf2f-5d34aa67df11.aspx).
   
 ### Fix issues in high priority Office documents and solutions
 
@@ -192,7 +192,7 @@ Your Help Desk should be ramped up on Office and ready to support users. Here ar
   
 - [Self-paced Office training](https://go.microsoft.com/fwlink/p/?LinkId=266233)
     
-- [End user training resources for Office and Office 365](http://technet.microsoft.com/library/12c9aa22-73f5-41f1-98bf-1e6351890576.aspx)
+- [End user training resources for Office and Office 365](https://technet.microsoft.com/library/12c9aa22-73f5-41f1-98bf-1e6351890576.aspx)
     
 ## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)

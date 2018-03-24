@@ -61,7 +61,7 @@ Here are some things to think about as you plan your file block settings:
 
 This section describes how to find the settings in Group Policy and the OCT, and lists the settings for Excel 2016, PowerPoint 2016, and Word 2016.
   
-The locations in the Group Policy Editor that are presented in this article apply when you open the Group Policy Editor to edit a GPO. To edit local Group Policy, use the Local Group Policy Editor. To edit domain-based Group Policy, use the Group Policy Management Console (GPMC). Either tool opens the Group Policy Editor when you edit a GPO. For more information, see [Group Policy overview for Office 2016](http://technet.microsoft.com/library/c8cec707-2afa-4964-b0f8-611e4709bd79.aspx).
+The locations in the Group Policy Editor that are presented in this article apply when you open the Group Policy Editor to edit a GPO. To edit local Group Policy, use the Local Group Policy Editor. To edit domain-based Group Policy, use the Group Policy Management Console (GPMC). Either tool opens the Group Policy Editor when you edit a GPO. For more information, see [Group Policy overview for Office 2016](https://technet.microsoft.com/library/c8cec707-2afa-4964-b0f8-611e4709bd79.aspx).
   
 ### How to find the settings
 

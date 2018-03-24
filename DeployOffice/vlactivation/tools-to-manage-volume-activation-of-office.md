@@ -23,7 +23,7 @@ description: "Describes the ospp.vbs and the slmgr.vbs scripts, and the Volume A
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume license editions of Office 2016. Before you read this article, we recommend that you read [Plan volume activation of Office 2016](plan-volume-activation-of-office.md), [Activate Office 2016 MAK clients](activate-office-by-using-mak.md), and [Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md).
   
 > [!IMPORTANT]
-> This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](http://technet.microsoft.com/library/88a461cf-5573-467e-a0b8-ab2d580b877e.aspx) instead. 
+> This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](https://technet.microsoft.com/library/88a461cf-5573-467e-a0b8-ab2d580b877e.aspx) instead. 
   
 In this article: 
   

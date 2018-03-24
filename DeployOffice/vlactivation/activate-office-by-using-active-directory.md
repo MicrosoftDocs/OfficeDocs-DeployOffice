@@ -20,7 +20,7 @@ description: "Describes the basics of Active Directory Domain Services-based act
   
  **Audience:** IT Professionals 
   
-Active Directory Domain Services (AD DS)-based activation enables an enterprise to activate Office 2016 clients on computers in the corporate network through a connection to the domain. When a user joins a computer to the domain, the AD DS-based activation object automatically activates Office 2016 installed on the computer, as long as the computer has a [Generic Volume License Key (GVLK)](http://technet.microsoft.com/library/99fa0e2a-99f8-4555-b0a5-c09d3aede928%28Office.14%29.aspx). No single physical computer is required to act as the activation object, because it is distributed throughout the domain. For more information about AD DS-based activation, see [Active Directory-Based Activation Overview](https://go.microsoft.com/fwlink/p/?LinkID=249006).
+Active Directory Domain Services (AD DS)-based activation enables an enterprise to activate Office 2016 clients on computers in the corporate network through a connection to the domain. When a user joins a computer to the domain, the AD DS-based activation object automatically activates Office 2016 installed on the computer, as long as the computer has a [Generic Volume License Key (GVLK)](https://technet.microsoft.com/library/99fa0e2a-99f8-4555-b0a5-c09d3aede928%28Office.14%29.aspx). No single physical computer is required to act as the activation object, because it is distributed throughout the domain. For more information about AD DS-based activation, see [Active Directory-Based Activation Overview](https://go.microsoft.com/fwlink/p/?LinkID=249006).
   
 ## Supported operating systems for the client computers in an AD DS-based activation model
 <a name="SupportedOSKMS"> </a>

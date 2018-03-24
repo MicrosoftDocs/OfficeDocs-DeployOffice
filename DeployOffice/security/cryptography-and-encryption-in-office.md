@@ -22,7 +22,7 @@ description: "Explains the settings that you can use to encrypt data in Office, 
   
 Office 2016 contains settings that let you control the way that data is encrypted when you use Access 2016, Excel 2016, OneNote 2016, PowerPoint 2016, Project 2016, and Word 2016.
   
-This article discusses cryptography and encryption in Office 2016, describes the settings that you can use to encrypt data, and provides information about compatibility with previous versions of Office. For information about Outlook 2016, see [Plan for e-mail messaging cryptography in Outlook 2010](http://technet.microsoft.com/library/7160c820-c3cd-45ce-ad56-7a7bd444dc75.aspx). 
+This article discusses cryptography and encryption in Office 2016, describes the settings that you can use to encrypt data, and provides information about compatibility with previous versions of Office. For information about Outlook 2016, see [Plan for e-mail messaging cryptography in Outlook 2010](https://technet.microsoft.com/library/7160c820-c3cd-45ce-ad56-7a7bd444dc75.aspx). 
   
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
@@ -31,7 +31,7 @@ As you plan your encryption settings, consider the following:
   
 - We recommend that you do  *not*  change the default encryption settings unless your organization's security model requires encryption settings that differ from the default settings. 
     
-- We recommend that you enforce password length and complexity to help ensure that strong passwords are used when you encrypt data. For more information, see [Plan password complexity settings for Office 2016](http://technet.microsoft.com/library/afcf5593-2acb-45bb-bfb0-2a21772ecd42.aspx).
+- We recommend that you enforce password length and complexity to help ensure that strong passwords are used when you encrypt data. For more information, see [Plan password complexity settings for Office 2016](https://technet.microsoft.com/library/afcf5593-2acb-45bb-bfb0-2a21772ecd42.aspx).
     
 - We recommend that you do  *not*  use RC4 encryption. For more information, see [Compatibility with previous versions of Office](cryptography-and-encryption-in-office.md#section3) later in this article. 
     
