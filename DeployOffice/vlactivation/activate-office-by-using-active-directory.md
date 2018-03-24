@@ -20,10 +20,11 @@ description: "Describes the basics of Active Directory Domain Services-based act
   
  **Audience:** IT Professionals 
   
-Active Directory Domain Services (AD DS)-based activation enables an enterprise to activate Office 2016 clients on computers in the corporate network through a connection to the domain. When a user joins a computer to the domain, the AD DS-based activation object automatically activates Office 2016 installed on the computer, as long as the computer has a [Generic Volume License Key (GVLK)](https://technet.microsoft.com/library/99fa0e2a-99f8-4555-b0a5-c09d3aede928%28Office.14%29.aspx). No single physical computer is required to act as the activation object, because it is distributed throughout the domain. For more information about AD DS-based activation, see [Active Directory-Based Activation Overview](https://go.microsoft.com/fwlink/p/?LinkID=249006).
+Active Directory Domain Services (AD DS)-based activation enables an enterprise to activate Office 2016 clients on computers in the corporate network through a connection to the domain. When a user joins a computer to the domain, the AD DS-based activation object automatically activates Office 2016 installed on the computer, as long as the computer has a [Generic Volume License Key (GVLK)](../office2016/gvlks-for-office-2016.md). No single physical computer is required to act as the activation object, because it is distributed throughout the domain. For more information about AD DS-based activation, see [Active Directory-Based Activation Overview](https://go.microsoft.com/fwlink/p/?LinkID=249006).
   
-## Supported operating systems for the client computers in an AD DS-based activation model
 <a name="SupportedOSKMS"> </a>
+
+## Supported operating systems for the client computers in an AD DS-based activation model
 
 You can use the KMS activation method with the 32-bit and 64-bit editions of these operating systems.
   
@@ -37,8 +38,9 @@ For the computer from which you run setup and configuration:
     
 The domain controller must have Active Directory Domain Services with the Windows Server 2012 schema installed.
   
+<a name="activateAD"> </a>
+
 ## Activate Office clients by using AD DS
-<a name="SupportedOSKMS"> </a>
 
 AD DS-based activation uses the same client product key and host key that are used by KMS. By using AD DS-based activation, the Software Protection Platform Service (SPPSvc) periodically attempts to activate the product key against either an Activation Object (AO) in AD DS or a discoverable KMS host computer if the AD DS-based activation attempt fails. A successful AD DS-based activation grants a license to the Office 2016 client for 180 days.
   
@@ -60,11 +62,7 @@ You must be a member of the Administrators group on the Active Directory Domain 
     
 5. When you're done, an **Activation Succeeded** page displays. 
     
-## See also
-<a name="SupportedOSKMS"> </a>
-
-#### 
-
+## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
   
 [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
