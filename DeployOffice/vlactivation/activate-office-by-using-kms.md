@@ -41,7 +41,7 @@ You do not have to do anything else to set up the clients. KMS clients can locat
   
  **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform**
   
-The KMS host name is specified by **KeyManagementServiceName** (REG_SZ), and the port is specified by **KeyManagementServicePort** (REG_SZ). The default port is **1688**. These registry keys can also be set through the **ospp.vbs** script. For more information about **ospp.vbs**, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#section1).
+The KMS host name is specified by **KeyManagementServiceName** (REG_SZ), and the port is specified by **KeyManagementServicePort** (REG_SZ). The default port is **1688**. These registry keys can also be set through the **ospp.vbs** script. For more information about **ospp.vbs**, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp).
   
 For additional configuration options, such as how to specify the KMS host name on the KMS client, or to change the KMS key to a MAK key, see [Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md).
   

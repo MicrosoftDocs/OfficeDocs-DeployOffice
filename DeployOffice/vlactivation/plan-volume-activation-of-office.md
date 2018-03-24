@@ -67,9 +67,9 @@ When you plan for Office Activation Technologies, think about the following:
     
     The same is true for client computers in an Active Directory Domain Services (AD DS)-based deployment.
     
-- If you decide to use Multiple Activation Key (MAK), you enter the product key either through the [Office Customization Tool (OCT)](https://technet.microsoft.com/library/8faae8a0-a12c-4f7b-839c-24a66a531bb5.aspx#Licensing_and_user_interface) or the [Config.xml file](https://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementPIDKey). ((Although these articles are for an earlier version of Office, the information also applies to Office 2016.) After Office 2016 installation, you can change the product key by using the Volume Activation Management Tool (VAMT) or the Office Software Protection Platform script ( **ospp.vbs** ). For more information about **ospp.vbs**, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#section1).
+- If you decide to use Multiple Activation Key (MAK), you enter the product key either through the [Office Customization Tool (OCT)](https://technet.microsoft.com/library/8faae8a0-a12c-4f7b-839c-24a66a531bb5.aspx#Licensing_and_user_interface) or the [Config.xml file](https://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementPIDKey). ((Although these articles are for an earlier version of Office, the information also applies to Office 2016.) After Office 2016 installation, you can change the product key by using the Volume Activation Management Tool (VAMT) or the Office Software Protection Platform script ( **ospp.vbs** ). For more information about **ospp.vbs**, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp).
     
-    For information about VAMT 3.0, see [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#section2).
+    For information about VAMT 3.0, see [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#vamt).
     
 <a name="review"> </a>
 

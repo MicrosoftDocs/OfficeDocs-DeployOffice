@@ -28,7 +28,7 @@ Rearming does the following important tasks:
     
 - Freezes the grace timer until either an Office application is run, or the ospp.vbs script is run.
     
-- Resets the client computer ID (CMID). This is important because the KMS host uses the CMID to determine the number of unique clients. To check the CMID, use the command **ospp.vbs /dcmid**. For more information about ospp.vbs, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#section1).
+- Resets the client computer ID (CMID). This is important because the KMS host uses the CMID to determine the number of unique clients. To check the CMID, use the command **ospp.vbs /dcmid**. For more information about ospp.vbs, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp).
     
     > [!NOTE]
     > If you run this command on either Windows 8 or Windows Server 2012, it only returns to CMID for Windows, not Office. To see the CMID for Office 2016, look for event 12288 in the Application Event log as shown in this [Office deployment support team blog](https://go.microsoft.com/fwlink/p/?LinkId=317885) article. 

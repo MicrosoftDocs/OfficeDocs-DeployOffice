@@ -99,7 +99,7 @@ To change the product key on one computer only:
 
 ### The ospp.vbs script
 
-For information about how to enter a product key by using the **ospp.vbs** script, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#section1).
+For information about how to enter a product key by using the **ospp.vbs** script, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp).
   
 <a name="BKMK_Backstage"> </a>
 

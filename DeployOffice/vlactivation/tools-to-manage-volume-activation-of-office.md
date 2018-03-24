@@ -23,18 +23,12 @@ description: "Describes the ospp.vbs and the slmgr.vbs scripts, and the Volume A
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume license editions of Office 2016. Before you read this article, we recommend that you read [Plan volume activation of Office 2016](plan-volume-activation-of-office.md), [Activate Office 2016 MAK clients](activate-office-by-using-mak.md), and [Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md).
   
 > [!IMPORTANT]
-> This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](https://technet.microsoft.com/library/88a461cf-5573-467e-a0b8-ab2d580b877e.aspx) instead. 
+> This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead. 
   
-In this article: 
+<a name="ospp"> </a>
   
-- [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#section1)
-    
-- [The slmgr.vbs script](tools-to-manage-volume-activation-of-office.md#BK_Theslmgrscript)
-    
-- [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#section2)
-    
 ## The ospp.vbs script
-<a name="section1"> </a>
+
 
 The Office Software Protection Platform script (ospp.vbs) enables you to configure volume license editions of Office 2016 client products. By default, the ospp.vbs script is installed in the following folder:
   
@@ -59,7 +53,7 @@ The general syntax is as follows:
  **Password** Password for the account. If a user account and password are not provided, the current credentials are used. 
   
 > [!IMPORTANT]
->  Before you run ospp.vbs, ensure that: >  if you want to run the script on a remote computer, the Windows firewall allows Windows Management Instrumentation (WMI) traffic on the remote computer. >  The user account you will use is a member of the Administrators group on the computer on which you run the script. >  You run ospp.vbs in an elevated command prompt. 
+>  Before you run ospp.vbs, ensure that: <br/> - if you want to run the script on a remote computer, the Windows firewall allows Windows Management Instrumentation (WMI) traffic on the remote computer. <br/> - The user account you will use is a member of the Administrators group on the computer on which you run the script. <br/> - You run ospp.vbs in an elevated command prompt. 
   
 **Global options for ospp.vbs**
 
@@ -75,7 +69,7 @@ The general syntax is as follows:
 | _/dinstid_ <br/> |Displays Installation ID for offline activation.  <br/> |
 | _/actcid:value_ <br/> |Activates product with user-provided Confirmation ID. Value parameter is required.  <br/> |
 | _/rearm_ <br/> |Resets the licensing status for all installed Office 2016 product keys.  <br/> |
-| _/rearm:value_ <br/> |Resets the licensing status for an Office 2016 license with a user-provided SKUID value. Value parameter is required.  <br/> Use this option with the SKUID value specified by using the  _/dstatus_ option if you have run out of rearms and have activated Office through KMS or Active Directory-based activation to gain an additional rearm.  <br/> |
+| _/rearm:value_ <br/> |Resets the licensing status for an Office 2016 license with a user-provided SKUID value. Value parameter is required.  <br/><br/> Use this option with the SKUID value specified by using the  _/dstatus_ option if you have run out of rearms and have activated Office through KMS or Active Directory-based activation to gain an additional rearm.  <br/> |
 | _/ddescr:value_ <br/> |Displays the description for a user-provided error code. Value parameter is required.  <br/> |
    
 The following table describes the ospp.vbs options for configuring the KMS client.
@@ -86,11 +80,11 @@ The following table describes the ospp.vbs options for configuring the KMS clien
 |:-----|:-----|
 | _/dhistorykms_ <br/> |Displays KMS client activation history.  <br/> |
 | _/dcmid_ <br/> |Displays KMS client computer ID (CMID).  <br/> |
-| _/sethst:value_ <br/> |Sets a KMS host name with a user-provided host name. Value parameter is required.  <br/> This sets **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServiceName (REG_SZ)**.  <br/> |
-| _/setprt:value_ <br/> |Sets a KMS port with a user-provided port number. The default port number is 1688. Value parameter is required.  <br/> This sets **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServicePort (REG_SZ)**.  <br/> |
+| _/sethst:value_ <br/> |Sets a KMS host name with a user-provided host name. Value parameter is required.  <br/> <br/>This sets **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServiceName (REG_SZ)**.  <br/> |
+| _/setprt:value_ <br/> |Sets a KMS port with a user-provided port number. The default port number is 1688. Value parameter is required.  <br/><br/> This sets **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServicePort (REG_SZ)**.  <br/> |
 | _/remhst_ <br/> |Removes KMS host name and sets port to default. The default port is 1688.  <br/> |
 | _/cachst:value_ <br/> |Allows or denies KMS host caching. Value parameter is required (TRUE or FALSE).  <br/> |
-| _/actype:value_ <br/> |(Windows 8 and later versions only) Sets volume activation type. Value parameter is required.  <br/> Values: 1 (for Active Directory Domain Services-based), 2 (for KMS), 0 (for both).  <br/> |
+| _/actype:value_ <br/> |(Windows 8 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory Domain Services-based), 2 (for KMS), 0 (for both).  <br/> |
 | _/skms-domain:value_ <br/> |(Windows 8 and later versions only) Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the  _/sethst_ option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.  <br/> |
 | _/ckms-domain_ <br/> |(Windows 8 and later versions only) Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the  _/sethst_ option. Otherwise, auto-discovery of the KMS host is used.  <br/> |
    
@@ -160,8 +154,9 @@ The following scenarios assume that you are running ospp.vbs in an elevated comm
     
     **cscript ospp.vbs /remhst**
     
-## The slmgr.vbs script
 <a name="BK_Theslmgrscript"> </a>
+
+## The slmgr.vbs script
 
 The Software License Manager (slmgr.vbs) script is used to configure and retrieve volume activation information for the Office 2016 KMS host and the Windows host. For more information, see [Configuring KMS Hosts](https://go.microsoft.com/fwlink/p/?LinkID=311942) for Windows. 
   
@@ -195,9 +190,9 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ _ato [ActivationID]_ <br/> |Activates the KMS host for Windows (default), or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> |
 |/ _dti [ActivationID]_ <br/> |Displays the Installation ID that is used for telephone activation of the KMS host computer for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**. You enter the Installation ID into the telephone to receive the Confirmation ID, which is used for activating the KMS host computer by using the  _/atp_ parameter.  <br/> |
 |/ _atp [ConfirmationID][ActivationID]_ <br/> |After the Confirmation ID is received, activates the KMS host for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> |
-|/ _dlv [ActivationID]_ <br/> |Displays detailed license information for Windows (default), or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> For example, run the following command at the elevated command prompt, in the C:\windows\system32 folder to get the status of the Office KMS host:  <br/> **cscript slmgr.vbs /dlv 98EBFE73-2084-4C97-932C-C0CD1643BEA7** <br/> |
+|/ _dlv [ActivationID]_ <br/> |Displays detailed license information for Windows (default), or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> <br/>For example, run the following command at the elevated command prompt, in the C:\windows\system32 folder to get the status of the Office KMS host: <br/> <br/> **cscript slmgr.vbs /dlv 98EBFE73-2084-4C97-932C-C0CD1643BEA7** <br/> |
 |/ _dli [ActivationID]_ <br/> |Displays license information for Windows (default), or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> |
-|/ _upk [ActivationID]_ <br/> |Uninstalls the product key for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> > [!CAUTION]> If you intend to uninstall the product key for Office 2016, for example, and forget to enter the Activation ID, all installed product keys are uninstalled. This includes the product key for Windows.           |
+|/ _upk [ActivationID]_ <br/> |Uninstalls the product key for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> ><br/> **CAUTION:** If you intend to uninstall the product key for Office 2016, for example, and forget to enter the Activation ID, all installed product keys are uninstalled. This includes the product key for Windows.           |
 |/ _xpr [ActivationID]_ <br/> |Displays the expiration date for the current license state.  <br/> |
 |/ _sprt [PortNumber]_ <br/> |Sets the TCP communications port on a KMS host computer. It replaces  _PortNumber_ with the TCP port number to use. The default setting is **1688**.  <br/> |
 |/ _cdns_ <br/> |Disables automatic DNS publishing by a KMS host computer.  <br/> |
@@ -216,16 +211,13 @@ The following table shows the command options for activating an AD DS forest by 
 |/ _ad-activation-apply-get-iid [ProductKey]_ <br/> |Displays installation ID for AD DS forest.  <br/> |
 |/ _ad-activation-apply-cid [ProductKey][ConfirmationID]_ <br/> |Activates an AD DS forest through the user-provided product key and the Confirmation ID.  <br/> |
    
+<a name="vamt"> </a>
+
 ## Volume Activation Management Tool (VAMT)
-<a name="section2"> </a>
 
 Volume Activation Management Tool (VAMT) 3.0 provides a graphical user interface to manage volume activation. In addition to the operating systems under which VAMT 2.0 runs, VAMT 3.0 can run under Windows 8 and Windows Server 2012. For more information about VAMT 3.0, see [Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=251932).
   
-## See also
-<a name="section2"> </a>
-
-#### 
-
+## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
   
 [Activate Office 2016 MAK clients](activate-office-by-using-mak.md)
