@@ -53,7 +53,7 @@ The general syntax is as follows:
  **Password** Password for the account. If a user account and password are not provided, the current credentials are used. 
   
 > [!IMPORTANT]
->  Before you run ospp.vbs, ensure that: <br/> - if you want to run the script on a remote computer, the Windows firewall allows Windows Management Instrumentation (WMI) traffic on the remote computer. <br/> - The user account you will use is a member of the Administrators group on the computer on which you run the script. <br/> - You run ospp.vbs in an elevated command prompt. 
+>  Before you run ospp.vbs, ensure that: <br/><br/> - if you want to run the script on a remote computer, the Windows firewall allows Windows Management Instrumentation (WMI) traffic on the remote computer. <br/> - The user account you will use is a member of the Administrators group on the computer on which you run the script. <br/> - You run ospp.vbs in an elevated command prompt. 
   
 **Global options for ospp.vbs**
 
@@ -192,7 +192,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ _atp [ConfirmationID][ActivationID]_ <br/> |After the Confirmation ID is received, activates the KMS host for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> |
 |/ _dlv [ActivationID]_ <br/> |Displays detailed license information for Windows (default), or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> <br/>For example, run the following command at the elevated command prompt, in the C:\windows\system32 folder to get the status of the Office KMS host: <br/> <br/> **cscript slmgr.vbs /dlv 98EBFE73-2084-4C97-932C-C0CD1643BEA7** <br/> |
 |/ _dli [ActivationID]_ <br/> |Displays license information for Windows (default), or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> |
-|/ _upk [ActivationID]_ <br/> |Uninstalls the product key for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> ><br/> **CAUTION:** If you intend to uninstall the product key for Office 2016, for example, and forget to enter the Activation ID, all installed product keys are uninstalled. This includes the product key for Windows.           |
+|/ _upk [ActivationID]_ <br/> |Uninstalls the product key for Windows (default) or the application that is identified when its Activation ID is provided. The Office 2016 Activation ID is **98EBFE73-2084-4C97-932C-C0CD1643BEA7**.  <br/> <br/> **CAUTION:** If you intend to uninstall the product key for Office 2016, for example, and forget to enter the Activation ID, all installed product keys are uninstalled. This includes the product key for Windows.           |
 |/ _xpr [ActivationID]_ <br/> |Displays the expiration date for the current license state.  <br/> |
 |/ _sprt [PortNumber]_ <br/> |Sets the TCP communications port on a KMS host computer. It replaces  _PortNumber_ with the TCP port number to use. The default setting is **1688**.  <br/> |
 |/ _cdns_ <br/> |Disables automatic DNS publishing by a KMS host computer.  <br/> |
