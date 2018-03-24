@@ -59,7 +59,7 @@ Because we're deploying Office 365 ProPlus from a local source, we have to creat
   
 |**Folder Path**|**Purpose**|
 |:-----|:-----|
-|\\Server\Share\O365  <br/> |Stores the ODT and the configuration files that define how to download and deploy Office  <br/> |
+|\\\Server\Share\O365  <br/> |Stores the ODT and the configuration files that define how to download and deploy Office  <br/> |
 |\\\Server\Share\O365\SAC  <br/> |Stores the Office 365 ProPlus installation files from Semi-Annual Channel  <br/> |
 |\\\Server\Share\O365\SACT  <br/> |Stores the Office 365 ProPlus installation files from Semi-Annual Channel (Targeted)  <br/> |
    
@@ -128,7 +128,7 @@ Note that the Office installation files and Office updates will come from Semi-A
   
  **Step 3: Create a configuration file for group 2**
   
-Using a text editor, copy and paste the following into a text file and save it as **config-group2-SACT.xml** in the \\Server\Share\O365 folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-group2-SACT.xml** in the \\\Server\Share\O365 folder.
   
 ```
 <Configuration> 
