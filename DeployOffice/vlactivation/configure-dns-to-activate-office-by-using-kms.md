@@ -20,8 +20,10 @@ description: "How to configure DNS to work with Office 2016 KMS-based volume act
   
  **Audience:** IT Professionals 
   
-## Configure DNS for Office
 <a name="BKMK_ConfigureDNS"> </a>
+
+## Configure DNS for Office
+
 
 To activate Office 2016 by using Key Management Service (KMS), the Office KMS host computer must be discoverable. The KMS host computer automatically publishes its existence by creating service (SRV) resource records (RRs) on the DNS server. However, only the first KMS host computer can create an SRV RR. If there is more than one computer running KMS, subsequent KMS host computers cannot change or update SRV RRs unless the permissions on the DNS server are configured to allow this.
   
@@ -37,8 +39,9 @@ Changing the permissions on the DNS server requires administrative rights in the
     
 For instructions about how to complete these tasks, see [Configuring DNS](https://go.microsoft.com/fwlink/p/?LinkId=238674).
   
-## Client discovery of KMS
 <a name="BKMK_ConfigureDNS"> </a>
+
+## Client discovery of KMS
 
 The first time that a KMS client queries DNS for KMS information, it randomly selects a KMS host computer from the list of SRV RRs that DNS returns. The address of a DNS server that contains the SRV RRs can be listed as a suffixed entry on KMS clients. This enables advertisement of SRV RRs for KMS in one DNS server and KMS clients that have other primary DNS servers to find it.
   
@@ -46,11 +49,9 @@ You can add **priority** and **weight** parameters to the **DnsDomainPublishList
   
 If the KMS host computer that a client selects does not respond, the KMS client removes that KMS host from its list of SRV RRs and randomly selects another KMS host computer from the list. If the priority and weight parameters are set, the KMS client will use them while finding another KMS host computer. Otherwise, KMS host computers are selected randomly. After a KMS host computer responds, the KMS client caches the name of the KMS host computer and, if caching is enabled, uses it for successive activation and renewal attempts. If the cached KMS host computer does not respond on a later renewal, the KMS client discovers a new KMS host computer by querying DNS for KMS SRV RRs.
   
-## See also
-<a name="BKMK_ConfigureDNS"> </a>
-
-#### 
-
-  
+## Related topics
 [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
+
+[Set up Office 2016 KMS clients](activate-office-by-using-kms.md)
+
 
