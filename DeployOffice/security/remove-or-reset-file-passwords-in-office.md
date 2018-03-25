@@ -24,7 +24,7 @@ Use Group Policy to push registry changes that associate a certificate with pass
   
 |||
 |:-----|:-----|
-|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you want information about passwords in a personal copy of Office 2016, [Protect your document, workbook, or presentation with passwords, permission, and other restrictions](https://go.microsoft.com/fwlink/p/?LinkId=268111)  <br/> |
+|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you want information about passwords in a personal copy of Office 2016, [Add or remove protection in your document, workbook, or presentation](https://go.microsoft.com/fwlink/p/?LinkId=268111)  <br/> |
 |![Are you an admin?](../images/IconAdmin.jpg)           <br/> |If you are an IT Professional looking to remove or reset passwords in Office 2016 files within your organization, for example if an employee has left the organization and you do not know the password, you're at the right place, keep reading.  <br/> |
    
     
@@ -77,7 +77,7 @@ Because many private key certificates may be located on an IT computer, it's fai
   
  **Previously encrypted files** The Office DocRecrypt tool can't be used to recover files that were password-protected before you deployed the certificate and escrow key. However, after you've deployed the certificate and escrow key, if a user opens a previously protected file in Office 2016 and then saves it, the escrow key is added to the file at that time. From that point on, you'll be able to remove or reset the file's password using the Office DocRecrypt tool. 
   
- **Other ways to protect Word, Excel, and PowerPoint files** For other ways to protect Word, Excel, and PowerPoint files, see [Protect your document, workbook, or presentation with passwords, permission, and other restrictions](https://go.microsoft.com/fwlink/p/?LinkId=268111).
+ **Other ways to protect Word, Excel, and PowerPoint files** For other ways to protect Word, Excel, and PowerPoint files, see [Add or remove protection in your document, workbook, or presentation](https://go.microsoft.com/fwlink/p/?LinkId=268111).
   
 Be aware that users can independently apply any of these protection methods. If a password is removed by an IT admin, any other protection settings will remain. Removing the password does not affect these other settings. 
   
@@ -183,11 +183,11 @@ The IT admin computer does not have to have key and subkey in the registry, nor 
     
     When you install the Office DocRecrypt tool on a 64-bit computer, it is installed in the following location:
     
-  - %programfiles(x86)%\Microsoft Office\DOCRECRYPT
+   - %programfiles(x86)%\Microsoft Office\DOCRECRYPT
     
     When you install the Office DocRecrypt tool on a 32-bit computer, it is installed in the following location:
     
-  - %programfiles%\Microsoft Office\DOCRECRYPT
+   - %programfiles%\Microsoft Office\DOCRECRYPT
     
 That's it. All the pieces are in place and you are ready to remove the password on a Word, Excel, or PowerPoint file the next time that a user asks you to do it.
   
