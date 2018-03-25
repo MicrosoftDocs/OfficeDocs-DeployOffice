@@ -27,7 +27,7 @@ Digital signatures are based on digital certificates. Digital certificates are v
 This article includes digital signature registry keys that are new to Office 2016.
   
 > [!TIP]
-> **Are you looking for help with digital signature settings in Office 2016 on your desktop?** You may be looking for one of these articles, which will help you secure Office 2016 on your desktop. <br/><br/>[Digital signatures and certificates](https://go.microsoft.com/fwlink/p/?LinkId=267578)> [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=267579) <br/><br/> [Get a digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267580)
+> **Are you looking for help with digital signature settings in Office 2016 on your desktop?** You may be looking for one of these articles, which will help you secure Office 2016 on your desktop: [Digital signatures and certificates](https://go.microsoft.com/fwlink/p/?LinkId=267578), [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=267579), and [Get a digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267580).
   
 <a name="intro"> </a>
     
