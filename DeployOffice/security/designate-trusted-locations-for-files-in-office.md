@@ -25,9 +25,9 @@ If you want to differentiate safe files from potentially harmful files, you can 
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
   
-    
+
+<a name="about"> </a>    
 ## Plan trusted locations settings in Office
-<a name="about"> </a>
 
 Office 2016 provides several settings that let you configure how Office uses trusted locations. By configuring these settings, you can do the following:
   
@@ -72,9 +72,9 @@ The following table lists the default trusted locations for Excel 2016.
 |**Default trusted locations**|**Folder description**|**Are subfolders trusted also?**|
 |:-----|:-----|:-----|
 |Program Files\Microsoft Office 16\Root\Templates  <br/> |Application templates  <br/> |Yes (Allowed)  <br/> |
-|Users\ _user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
+|Users\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Office16\XLSTART  <br/> |Excel startup  <br/> |Yes (Allowed)  <br/> |
-|Users\ _user_name_\Appdata\Roaming\Microsoft\Excel\XLSTART  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
+|Users\_user_name_\Appdata\Roaming\Microsoft\Excel\XLSTART  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Office16\STARTUP  <br/> |Office startup  <br/> |Yes (Allowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Office16\Library  <br/> |Add-ins  <br/> |Yes (Allowed)  <br/> |
    
@@ -87,8 +87,8 @@ The following table lists the default trusted locations for PowerPoint 2016.
 |**Default trusted locations**|**Folder description**|**Are subfolders trusted also?**|
 |:-----|:-----|:-----|
 |Program Files\Microsoft Office 16\Root\Templates  <br/> |Application templates  <br/> |Yes (Allowed)  <br/> |
-|Users\ _user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |Yes (Allowed)  <br/> |
-|Users\ _user_name_\Appdata\Roaming\Microsoft\Addins  <br/> |Add-ins  <br/> |No (Disallowed)  <br/> |
+|Users\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |Yes (Allowed)  <br/> |
+|Users\_user_name_\Appdata\Roaming\Microsoft\Addins  <br/> |Add-ins  <br/> |No (Disallowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Document Themes 16  <br/> |Application themes  <br/> |Yes (Allowed)  <br/> |
    
 ### Word 2016 trusted locations
@@ -100,11 +100,12 @@ The following table lists the default trusted locations for Word 2016.
 |**Default trusted locations**|**Folder description**|**Are subfolders trusted also?**|
 |:-----|:-----|:-----|
 |Program Files\Microsoft Office 16\Root\Templates  <br/> |Application templates  <br/> |Yes (Allowed)  <br/> |
-|Users\ _user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
-|Users\ _user_name_\Appdata\Roaming\Microsoft\Word\Startup  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
+|Users\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
+|Users\_user_name_\Appdata\Roaming\Microsoft\Word\Startup  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
    
-## Implement trusted locations in Office 2016
 <a name="implementlocations"> </a>
+
+## Implement trusted locations in Office 2016
 
 To implement trusted locations, you must determine the following:
   
@@ -203,46 +204,48 @@ All folders that you specify as trusted locations must be secured. Use the follo
 
 Office 2016 provides several settings that enable you to restrict or control the behavior of trusted locations. Use the following guidelines to determine how to configure these settings.
   
- **Group Policy Setting name:** Allow mix of policy and user locations 
+**Group Policy Setting name:** Allow mix of policy and user locations 
   
-> **Description:** This setting controls whether trusted locations can be defined by users, the OCT, and Group Policy, or if they must be defined by Group Policy alone. By default, users can designate any location as a trusted location and a computer can have any combination of user-created, OCT-created, and Group Policy-created trusted locations. 
+ - **Description:** This setting controls whether trusted locations can be defined by users, the OCT, and Group Policy, or if they must be defined by Group Policy alone. By default, users can designate any location as a trusted location and a computer can have any combination of user-created, OCT-created, and Group Policy-created trusted locations. 
     
-> **Impact:** If this setting is disabled, all trusted locations that aren't created by Group Policy are disabled and users can't create new trusted locations in the Trust Center. Disabling this setting will cause some disruption for users who have defined their own trusted locations in the Trust Center. Applications treat such locations as they treat any other untrusted locations, which means that users see Message Bar warnings about content such as ActiveX controls and VBA macros when they open files, and they have to choose whether to enable controls and macros or leave them disabled This is a global setting that applies to all applications for which you configure trusted locations. 
+ - **Impact:** If this setting is disabled, all trusted locations that aren't created by Group Policy are disabled and users can't create new trusted locations in the Trust Center. Disabling this setting will cause some disruption for users who have defined their own trusted locations in the Trust Center. Applications treat such locations as they treat any other untrusted locations, which means that users see Message Bar warnings about content such as ActiveX controls and VBA macros when they open files, and they have to choose whether to enable controls and macros or leave them disabled This is a global setting that applies to all applications for which you configure trusted locations. 
     
-> **Guidelines:** Organizations that have a highly restrictive security environment typically disable this setting. Organizations that manage their desktop configurations through Group Policy typically disable this setting. 
-    
- **Group Policy Setting name:** Allow Trusted Locations on the network 
+ - **Guidelines:** Organizations that have a highly restrictive security environment typically disable this setting. Organizations that manage their desktop configurations through Group Policy typically disable this setting. 
+   
+**Group Policy Setting name:** Allow Trusted Locations on the network 
   
-> **Description:** This setting controls whether trusted locations on the network can be used. By default, trusted locations that are network shares are disabled. But users can still select the **Allow Trusted Locations on my network (not recommended)** check box in the Trust Center, which will enable users to designate network shares as trusted locations. This isn't a global setting. You must configure this setting on a per-application basis for Access 2016, Excel 2016, PowerPoint 2016, Visio 2016, and Word 2016. 
+ - **Description:** This setting controls whether trusted locations on the network can be used. By default, trusted locations that are network shares are disabled. But users can still select the **Allow Trusted Locations on my network (not recommended)** check box in the Trust Center, which will enable users to designate network shares as trusted locations. This isn't a global setting. You must configure this setting on a per-application basis for Access 2016, Excel 2016, PowerPoint 2016, Visio 2016, and Word 2016. 
     
-> **Impact:** Disabling this setting disables all trusted locations that are network shares and prevents users from selecting the **Allow Trusted Locations on my network (not recommended)** check box in the Trust Center. Disabling this setting will cause some disruption for users who have defined their own trusted locations in the Trust Center. If you disable this setting, and a user attempts to designate a network share as a trusted location, a warning informs the user that the current security settings don't allow them to create trusted locations that are remote paths or network paths. If an administrator designates a network share as a trusted location through Group Policy or by using the OCT, and this setting is disabled, the trusted location is disabled. Applications treat such locations like any other untrusted locations, which means that users see Message Bar warnings about content such as ActiveX controls and VBA macros when they open files. They have to choose whether to enable controls and macros or leave them disabled. 
+ - **Impact:** Disabling this setting disables all trusted locations that are network shares and prevents users from selecting the **Allow Trusted Locations on my network (not recommended)** check box in the Trust Center. Disabling this setting will cause some disruption for users who have defined their own trusted locations in the Trust Center. If you disable this setting, and a user attempts to designate a network share as a trusted location, a warning informs the user that the current security settings don't allow them to create trusted locations that are remote paths or network paths. If an administrator designates a network share as a trusted location through Group Policy or by using the OCT, and this setting is disabled, the trusted location is disabled. Applications treat such locations like any other untrusted locations, which means that users see Message Bar warnings about content such as ActiveX controls and VBA macros when they open files. They have to choose whether to enable controls and macros or leave them disabled. 
     
-> **Guidelines:** Organizations that have a highly restrictive security environment typically disable this setting. 
+ -**Guidelines:** Organizations that have a highly restrictive security environment typically disable this setting. 
     
 > [!NOTE]
 > You can also use the **Remove all Trusted Locations written by the OCT during installation** setting to delete all trusted locations that were created by configuring the OCT. 
   
-## Disable trusted locations in Office 2016
+
 <a name="disablelocations"> </a>
+
+## Disable trusted locations in Office 2016
 
 Office 2016 provides a Group Policy setting that you can use to disable trusted locations. You must configure this setting on a per-application basis for Access 2016, Excel 2016, PowerPoint 2016, Visio 2016, and Word 2016. Use the following guidelines to determine whether you should use this setting.
   
  **Group Policy Setting name:** Disable all Trusted Locations 
   
-> **Description:** This setting lets you disable the trusted locations on a per-application basis. By default, users can create trusted locations. 
+- **Description:** This setting lets you disable the trusted locations on a per-application basis. By default, users can create trusted locations. 
     
-> **Impact:** Enabling this setting disables all trusted locations. This includes trusted locations that are as follows: 
+- **Impact:** Enabling this setting disables all trusted locations. This includes trusted locations that are as follows: 
     
-    - Created by default during Setup.
+ - Created by default during Setup.
     
-    - Created by using the OCT.
+ - Created by using the OCT.
     
-    - Created by users through the Trust Center.
+ - Created by users through the Trust Center.
     
-    - Created by using Group Policy.
+ - Created by using Group Policy.
     
-    Enabling this setting also prevents users from configuring trusted locations settings in the Trust Center. If you enable this setting, make sure that you notify users that they can't use trusted locations. If users have been opening files from trusted locations, and you enable this setting, users might start seeing warnings in the Message Bar and they might be required to respond to Message Bar warnings to enable content, such as ActiveX controls, add-ins, and VBA macros.
+Enabling this setting also prevents users from configuring trusted locations settings in the Trust Center. If you enable this setting, make sure that you notify users that they can't use trusted locations. If users have been opening files from trusted locations, and you enable this setting, users might start seeing warnings in the Message Bar and they might be required to respond to Message Bar warnings to enable content, such as ActiveX controls, add-ins, and VBA macros.
     
-> **Guidelines:** Organizations that have a highly restrictive security environment typically enable this setting. 
+ **Guidelines:** Organizations that have a highly restrictive security environment typically enable this setting. 
     
 
