@@ -22,8 +22,8 @@ description: "Explains how to troubleshoot common errors for KMS or MAK-based ac
   
 |||
 |:-----|:-----|
-|![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)           <br/> |If you are a user troubleshooting a personal Office 2016 install, see [Unlicensed Product and activation errors in Office](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380).  <br/> |
-|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)         <br/>If you are an admin troubleshooting a volume license edition of Office 2016, you're at the right place, keep reading.  <br/> |
+|![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)         <br/>  |If you are a user troubleshooting a personal Office 2016 install, see [Unlicensed Product and activation errors in Office](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380).   |
+|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)         <br/> |If you are an admin troubleshooting a volume license edition of Office 2016, you're at the right place, keep reading.  <br/> |
    
 Setting up volume activation with Office 2016 by using Key Management Service (KMS) or Multiple Activation Key (MAK) can be challenging. Use these steps to troubleshoot the most common issues.
   
