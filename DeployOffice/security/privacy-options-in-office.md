@@ -112,15 +112,15 @@ Office 2016 provides several settings that let you control the disclosure of pri
 
 Several other settings are related to privacy disclosure in Office 2016 applications. If you are changing privacy options because you have a special security environment, you might want to evaluate the following settings:
   
-> **Protect document metadata for password protected files** This setting determines whether metadata is encrypted when you use the Encrypt with Password feature. 
+- **Protect document metadata for password protected files** This setting determines whether metadata is encrypted when you use the Encrypt with Password feature. 
     
-> **Protect document metadata for rights managed Office Open XML files** This setting determines whether metadata is encrypted when you use the Restrict Permission by People feature. 
+- **Protect document metadata for rights managed Office Open XML files** This setting determines whether metadata is encrypted when you use the Restrict Permission by People feature. 
     
-> **Warn before printing, saving, or sending a file that contains tracked changes or comments** This setting determines whether users are warned about comments and tracked changes before they print, save, or send a document. 
+- **Warn before printing, saving, or sending a file that contains tracked changes or comments** This setting determines whether users are warned about comments and tracked changes before they print, save, or send a document. 
     
-> **Make hidden markup visible** This setting determines whether all tracked changes are visible when you open a document. 
+- **Make hidden markup visible** This setting determines whether all tracked changes are visible when you open a document. 
     
-> **Prevent document inspectors from running** This setting lets you disable Document Inspector modules. Document Inspector modules, available in various Office applications since Office 2007, allows users to remove hidden and personal information from their Office documents. 
+- **Prevent document inspectors from running** This setting lets you disable Document Inspector modules. Document Inspector modules, available in various Office applications since Office 2007, allows users to remove hidden and personal information from their Office documents. 
     
 ## Related topics
 [Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043)
