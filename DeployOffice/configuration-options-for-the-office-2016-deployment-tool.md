@@ -3,7 +3,7 @@ title: Configuration options for the Office Deployment Tool
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 3/2/2018
+ms.date: 3/25/2018
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
@@ -489,7 +489,7 @@ Allowed values:
 
 Defines where the updates for Office come from. If **UpdatePath** is not set or is set to empty (""), the location is set to the Office Content Delivery Network (CDN). **UpdatePath** can specify a network, local, or HTTP path of a source for Office installation files. Environment variables can be used for network or local paths. 
 
-If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -503,7 +503,7 @@ Example values:
 
 Defines which version Office updates to. If **TargetVersion** is not set or is set to empty (""), Office updates to the most recent version from the specified update path. If **TargetVersion** is set to a specific build number, Office attempts to update to that version. 
 
-If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -520,7 +520,7 @@ Prior to the deadline, users receive multiple reminders to install the updates. 
 
 After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up-to-date, you must change the deadline every time a new update for Office is available.
 
-To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -534,7 +534,7 @@ Defines which channel to use for updating Office after it is installed. Note tha
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md). 
 
-If you use Group Policy with the  [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
+If you use Group Policy with the  [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
 Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client.
 
