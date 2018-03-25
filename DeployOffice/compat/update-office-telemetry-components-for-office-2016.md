@@ -33,7 +33,7 @@ Here are the procedures for uninstalling the old telemetry processors, installin
 > [!NOTE]
 > Be sure that you get the list of telemetry processors before you install Office 2016. You can find the list on the [Telemetry Processor worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_TelemetryProcessorWorksheet) in Telemetry Dashboard. 
   
-### To uninstall the old version of telemetry processor
+## To uninstall the old version of telemetry processor
 
 1. On each computer where telemetry processor is installed, uninstall telemetry processor from the Windows Control Panel.
     
@@ -47,7 +47,7 @@ Here are the procedures for uninstalling the old telemetry processors, installin
     
 The following two procedures describe two options for installing the telemetry processor. Pick the procedure that applies to your situation. Do this for each computer that's running telemetry processor. 
   
-### Option 1: To install the telemetry processor on a computer that's running Office 2016
+## Option 1: To install the telemetry processor on a computer that's running Office 2016
 
 1. Ensure that the computer where you want to update the telemetry processor is also running the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
     
@@ -57,9 +57,9 @@ The following two procedures describe two options for installing the telemetry p
     
 4. Select **Next** in the wizard, and then select **Yes** in the **User Account Control** dialog box, if you are prompted. 
     
-5. When installation is complete, select **Finish**, and then select **Yes** when you are prompted. This will open the **Office Telemetry Processor settings** wizard, where you can complete the next procedure, [To configure the telemetry processor and update the telemetry database](update-office-telemetry-components-for-office-2016.md#Settings), for each computer.
+5. When installation is complete, select **Finish**, and then select **Yes** when you are prompted. This will open the **Office Telemetry Processor settings** wizard, where you can complete the next procedure, [To configure the telemetry processor and update the telemetry database](update-office-telemetry-components-for-office-2016.md#configure), for each computer.
     
-### Option 2: To copy the telemetry processor to a computer that isn't running Office 2016 and install it
+## Option 2: To copy the telemetry processor to a computer that isn't running Office 2016 and install it
 
 1. On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Let's get started**.
     
@@ -73,21 +73,22 @@ The following two procedures describe two options for installing the telemetry p
     
 6. Select **Next** in the wizard, and then select **Yes** in the **User Account Control** dialog box, if you are prompted. 
     
-7. When installation is complete, select **Finish**, and then select **Yes** when you are prompted. This will open the **Office Telemetry Processor settings** wizard, where you can complete the next procedure, [To configure the telemetry processor and update the telemetry database](update-office-telemetry-components-for-office-2016.md#Settings), for each computer. 
+7. When installation is complete, select **Finish**, and then select **Yes** when you are prompted. This will open the **Office Telemetry Processor settings** wizard, where you can complete the next procedure, [To configure the telemetry processor and update the telemetry database](update-office-telemetry-components-for-office-2016.md#configure), for each computer. 
     
 Complete the next procedure for each computer that runs Telemetry Processor. The **Office Telemetry Processor settings** wizard is started as part of the previous procedures. 
   
-### To configure the telemetry processor and update the telemetry database
+<a name="configure"> </a
+## To configure the telemetry processor and update the telemetry database
 
 1. Select **Next** in the **Office Telemetry Processor settings** wizard. 
     
 2. On the **Database Settings** page, do the following: 
     
-1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
+  1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
     
-2. Select **Connect** to connect to the SQL Server computer. 
+  2. Select **Connect** to connect to the SQL Server computer. 
     
-3. Select the telemetry database in **SQL database**, and then select **Next**.
+  3. Select the telemetry database in **SQL database**, and then select **Next**.
     
 3. If you are prompted to update the database, select **Yes**. You'll only be prompted to do this on the first computer where you run the **Office Telemetry Processor settings** wizard. 
     
@@ -97,7 +98,7 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
     
 6. Select **Yes** to set shared folder permissions, and then complete the rest of the wizard. 
     
-### To connect Telemetry Dashboard to the telemetry database after you upgrade
+## To connect Telemetry Dashboard to the telemetry database after you upgrade
 
 - On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
     
