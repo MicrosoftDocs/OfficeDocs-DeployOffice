@@ -280,7 +280,7 @@ The following table describes each column in the **Solution details** worksheet.
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
 |Last loaded  <br/> |Shows the last time that the solution was loaded.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0**  Do not load automatically (Unloaded)  <br/> **1**  Do not load automatically (Loaded)  <br/> **2**  Load at startup (Unloaded)  <br/> **3**  Load at startup (Loaded)  <br/> **8**  Load on demand (Unloaded)  <br/> **9**  Load on demand (Loaded)  <br/> **16**  Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Office version  <br/> |Shows the Office version that was used to open the solution.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -343,7 +343,7 @@ The following table describes each column in the **Solution sessions** worksheet
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Office version  <br/> |Shows the Office version with build numbers that used this solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0**  Do not load automatically (Unloaded)  <br/> **1**  Do not load automatically (Loaded)  <br/> **2**  Load at startup (Unloaded)  <br/> **3**  Load at startup (Loaded)  <br/> **8**  Load on demand (Unloaded)  <br/> **9**  Load on demand (Loaded)  <br/> **16**  Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Document loaded  <br/> |Shows the documents that were open when the issue occurred.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |

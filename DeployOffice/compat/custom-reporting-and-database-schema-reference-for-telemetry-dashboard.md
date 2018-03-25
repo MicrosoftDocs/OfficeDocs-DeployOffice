@@ -23,8 +23,9 @@ description: "Describes how to create custom reports in Telemetry Dashboard, sho
 The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
   
     
-## Overview of custom reports in Telemetry Dashboard
 <a name="overview"> </a>
+
+## Overview of custom reports in Telemetry Dashboard
 
 The built-in worksheets in Telemetry Dashboard show you a relevant subset of the data that is collected by Telemetry Agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view telemetry data in meaningful ways. 
   
@@ -49,8 +50,9 @@ You can get a more detailed view of Office clients by using a custom report. In 
 
 ![Displays an example of a custom report that shows Office deployments by business group](../images/ORK_CR_OfficeCustomReport.png)
   
-## Create custom reports in Telemetry Dashboard
 <a name="Create_customreport"> </a>
+
+## Create custom reports in Telemetry Dashboard
 
 You can create a single custom report on the **Custom report** worksheet. This automatically loads the default tables and creates a basic custom report that you can use as a starting point. Then, you can add and remove fields to design a report that meets your business needs. For performance reasons, not all tables are loaded automatically when you create a custom report. You can add tables by using the procedure in [Hidden tables in Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables). The most common reason to add hidden tables is to gain access to Office builds, which are available in the **System_details** table. 
   
@@ -72,7 +74,7 @@ To create a custom report, you have to first start Telemetry Dashboard. The foll
 
 |**If you have this operating system**|**Follow these steps to start Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016**, then ** Office 2016 Tools **, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016**, then **Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8 or Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
    
@@ -90,19 +92,24 @@ To help you get started, the following tables provide procedures for creating di
   
 **Sample custom reports in Telemetry Dashboard**
 
-|**Custom report steps**|**Illustration**|
-|:-----|:-----|
-|To create a custom report that shows solution stability, do the following:  <br/> From the Lookup_solutions table, drag Solution name to the FILTERS well. After the Solution name field is added to the custom report, use the filter button (next to the Solution name) to choose the solution. From the Inventory table, drag Solution version to the ROWS well. |
-**Custom report that shows solution stability**
+To create a custom report that shows solution stability, do the following:
+1. From the Lookup_solutions table, drag Solution name to the FILTERS well. 
+2. After the Solution name field is added to the custom report, use the filter button (next to the Solution name) to choose the solution. 
+3. From the Inventory table, drag Solution version to the ROWS well. 
 
-![Illustrates a custom report that shows solution stability. The report includes the solution name, the versions of the solution, and the number of events for each version.](../images/ORK_CR_Solutionstability.PNG)|
-|To create a custom report that shows Excel warnings, do the following:  <br/> From the Lookup_issue_definitions table, drag Severity to the FILTERS well. After the Severity field is added to the custom report, use the filter button (next to Severity) to choose Warning. From the Lookup_solutions table, drag Application to the FILTERS well, and then adjust the filter to select Excel. From the Lookup_solutions table, drag File name to the ROWS well. |
-**Custom report that shows Excel warnings**
+![Illustrates a custom report that shows solution stability. The report includes the solution name, the versions of the solution, and the number of events for each version.](../images/ORK_CR_Solutionstability.PNG)
+
+To create a custom report that shows Excel warnings, do the following: 
+1. From the Lookup_issue_definitions table, drag Severity to the FILTERS well. 
+2. After the Severity field is added to the custom report, use the filter button (next to Severity) to choose Warning. 
+3. From the Lookup_solutions table, drag Application to the FILTERS well, and then adjust the filter to select Excel. 
+4. From the Lookup_solutions table, drag File name to the ROWS well. |
 
 ![Illustrates how a custom report shows Excel issues that have the Warning severity. One column shows the file name, and the other column shows the number of Warning events.](../images/ORK_CR_Excelwarnings.PNG)|
    
-## Default tables and fields in Telemetry Dashboard custom reports
 <a name="default_tables"> </a>
+
+## Default tables and fields in Telemetry Dashboard custom reports
 
 The following tables describe the six tables and their related fields that are shown by default in the **PivotTable Fields** list when you create custom reports. 
   
@@ -124,7 +131,7 @@ The following table lists the fields in the **Events** table.
 |**Field name**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |Event ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/>  You can view these definitions in the following articles:  <br/> [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (scroll down to **Table 2. Types of events displayed in the Telemetry Log**)  <br/> |
+|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (scroll down to **Table 2. Types of events displayed in the Telemetry Log**)  <br/> |
 |Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table.  <br/> |
 |Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
 |User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table.  <br/> |
@@ -149,7 +156,7 @@ The following table lists the fields in the **Inventory** table.
 |Author  <br/> |Strings  <br/> |Shows the author of the document.  <br/> |
 |CPU architecture  <br/> |Strings  <br/> |Shows the CPU architecture.  <br/> |
 |Solution version  <br/> |Strings  <br/> |Shows the solution version.  <br/> |
-|Load behavior  <br/> |Numbers  <br/> |Shows the load behavior of the COM add-ins as follows:  <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, and then load on demand (Loaded)  <br/> |
+|Load behavior  <br/> |Numbers  <br/> |Shows the load behavior of the COM add-ins as follows: <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, and then load on demand (Loaded)  <br/> |
 |File size (bytes)  <br/> |Numbers  <br/> |Shows the file size in bytes.  <br/> |
 |Has VBA  <br/> |Boolean  <br/> |Shows 1 if the document has VBA.  <br/> |
 |Has OLE  <br/> |Boolean  <br/> |Shows 1 if the document has OLE objects.  <br/> |
@@ -227,8 +234,10 @@ The following table shows the fields in the **Lookup_issue_definitions** table.
 |Explanation  <br/> |String  <br/> |Shows the issue explanation.  <br/> |
 |More info  <br/> |String  <br/> |Shows the URL where you can get more information.  <br/> |
    
-## Hidden tables in Telemetry Dashboard custom reports
 <a name="hidden_tables"> </a>
+
+## Hidden tables in Telemetry Dashboard custom reports
+
 
 Not all tables are loaded when you create a custom report. If you want to access additional data for your custom report, you can load the **Usage_summary**, **Issue_summary**, and **System_details** tables. Follow these steps to add these hidden tables to Telemetry Dashboard. 
   
@@ -256,8 +265,8 @@ The following tables list the hidden tables that you have to manually add to Tel
 
 |**Table name**|**Comments**|
 |:-----|:-----|
-|Usage_summary  <br/> | Shows Office telemetry data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details:  <br/> **Inventory** <br/> **Lookup_computers** <br/> **Lookup_solutions** <br/> **Lookup_users** <br/> |
-|Issue_summary  <br/> | Shows the issues that have occurred in the last seven days, one month, and three months. You can use this table to create a relationship to following tables to see more details:  <br/> **Inventory** <br/> **Lookup_computers** <br/> **Lookup_issue_definitions** <br/> **Lookup_solutions** <br/> **Lookup_users** <br/> |
+|Usage_summary  <br/> | Shows Office telemetry data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
+|Issue_summary  <br/> | Shows the issues that have occurred in the last seven days, one month, and three months. You can use this table to create a relationship to following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_issue_definitions** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
 |System_details  <br/> |Shows user and computer information.  <br/> |
    
 The following table describes the fields in the Usage_summary table.
@@ -332,8 +341,9 @@ The following table describes the fields in the System_details table.
 |Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
 |Office 16  <br/> |String  <br/> |Shows Office 2016 version details, if it is installed.  <br/> |
    
-## Default data relationships in Telemetry Dashboard custom reports
 <a name="default_relationships"> </a>
+
+## Default data relationships in Telemetry Dashboard custom reports
 
 The following illustrations show the relationships between tables in the telemetry database. 
   
