@@ -20,7 +20,7 @@ description: "Explains how Visual Basic for Applications (VBA) and VBA macro set
   
  **Audience:** IT Professionals 
   
-If you want to control the way Visual Basic for Applications (VBA) and VBA macros behave, you can change Office 2016 VBA and VBA macros settings for the following applications: Access 2016, Excel 2016, PowerPoint 2016, Publisher 2013, Visio 2016, and Word 2016.
+If you want to control the way Visual Basic for Applications (VBA) and VBA macros behave, you can change Office 2016 VBA and VBA macros settings for the following applications: Access 2016, Excel 2016, PowerPoint 2016, Publisher 2016, Visio 2016, and Word 2016.
   
 <a name="about"> </a>
 
@@ -59,7 +59,7 @@ VBA macros that aren't trusted aren't allowed to run until a user clicks the Mes
 
 You can easily get some visibility into VBA macro usage in your organization by reviewing data in Office 2016 Telemetry Dashboard. There is a built-in report named "Inventory" that collects and displays unique instance data about each Office solution that is monitored. This includes whether an Office document uses VBA macros.
   
-To use the following procedure you must have already deployed and configured Office Telemetry Dashboard. For information about Office Telemetry Dashboard, see [Compatibility and telemetry in Office](..//compat/compatibility-and-telemetry-in-office).
+To use the following procedure you must have already deployed and configured Office Telemetry Dashboard. For information about Office Telemetry Dashboard, see [Compatibility and telemetry in Office](..//compat/compatibility-and-telemetry-in-office.md).
   
 ### To view VBA macro usage in an Office 2016 Telemetry Dashboard report
 
