@@ -27,11 +27,11 @@ Digital signatures are based on digital certificates. Digital certificates are v
 This article includes digital signature registry keys that are new to Office 2016.
   
 > [!TIP]
-> **Are you looking for help with digital signature settings in Office 2016 on your desktop?** You may be looking for one of these articles, which will help you secure Office 2016 on your desktop. > [Digital signatures and certificates](https://go.microsoft.com/fwlink/p/?LinkId=267578)> [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=267579)> [Get a digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267580)
+> **Are you looking for help with digital signature settings in Office 2016 on your desktop?** You may be looking for one of these articles, which will help you secure Office 2016 on your desktop. <br/><br/>[Digital signatures and certificates](https://go.microsoft.com/fwlink/p/?LinkId=267578)> [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=267579) <br/><br/> [Get a digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267580)
   
+<a name="intro"> </a>
     
 ## Introduction to digital signatures and how they are used in Office
-<a name="section1"> </a>
 
 Digital signatures help establish the following authentication measures:
   
@@ -73,10 +73,13 @@ The following scenario shows how you can use digital signatures on documents in 
     
 This example demonstrates the ability to add multiple signatures to a single Office 2016 document. In addition to the digital signature, the signer of the document can add a graphic of her actual signature, or use a Tablet PC to actually write a signature into the signature line in the document.
   
-### Compatibility issues with Office documents prior to Office 2016
-<a name="section4"> </a>
 
-Office 2016, just as Office 2013, Office 2010 and Office 2007, uses the XML-DSig format for digital signatures. In addition, Office 2016 has support for XAdES (XML Advanced Electronic Signatures). XAdES is a set of tiered extensions to XML-DSig, the levels of which build upon the previous levels to provide more reliable digital signatures. For more information about the levels of XAdES that are supported in Office 2016, see [Planning digital signature levels in Office 2016 documents](use-digital-signatures-with-office.md#section3a) later in this article. For more information about the details of XAdES, see the specification for [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631).
+<a name="compatissues"> </a>
+
+### Compatibility issues with Office documents prior to Office 2016
+
+
+Office 2016, just as Office 2013, Office 2010 and Office 2007, uses the XML-DSig format for digital signatures. In addition, Office 2016 has support for XAdES (XML Advanced Electronic Signatures). XAdES is a set of tiered extensions to XML-DSig, the levels of which build upon the previous levels to provide more reliable digital signatures. For more information about the levels of XAdES that are supported in Office 2016, see [Planning digital signature levels in Office 2016 documents](use-digital-signatures-with-office.md#planlevels) later in this article. For more information about the details of XAdES, see the specification for [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631).
   
 It is important to be aware that digital signatures that are created in Office 2016 are incompatible with versions of Office that are earlier than the 2007 Office system. For example, if a document is signed by using an application in Office 2016, Office 2013, Office 2010, or Office 2007, and then opened by using an application in Office, 2003 that has the Office Compatibility Pack installed, the user is informed that the document was signed in a newer version of Office and that the digital signature is lost.
   
@@ -90,8 +93,9 @@ Also, if you use XAdES for a digital signature in Office 2016, the digital signa
   
 If you want digital signatures that you create in Office 2016 to be compatible with Office 2003 and earlier versions, you can configure the Group Policy setting, **Legacy format signatures**, and set it to **Enabled**. This Group Policy setting is located under **User Configuration\Administrative Templates\Microsoft Office 2016\Signing**. After you change this setting to **Enabled**, the Office 2016 applications use the Office 2003 binary format to apply digital signatures to Office 97-2003 binary documents that you created in Office 2016. 
   
+<a name="choosetypes"> </a>
+
 ## Choosing digital certificate types for Office 2016
-<a name="section2a"> </a>
 
 Digital certificates can be either self-signed or issued by CAs in an organization, such as a Windows Server 2012 or Windows Server 2008 computer that is running Active Directory Certificate Services, or a public CA, such as VeriSign or Thawte. Self-signed certificates are typically used by people and small businesses that do not want to set up a public key infrastructure (PKI) for their organizations and do not want to purchase a commercial certificate.
   
@@ -103,7 +107,6 @@ For larger organizations, two primary methods for obtaining digital certificates
 
 Organizations have the option to create their own PKI. In this scenario, the company sets up one or more certification authorities (CAs) that can create digital certificates for computers and users throughout the company. When combined with Active Directory Directory Services (AD DS), a company can create a complete PKI solution so that all organization or corporate-managed computers have the organization or corporate CA chain installed and that both users and computers are automatically assigned digital certificates for document signing and encryption. This allows for all employees in a company to automatically trust digital certificates (and, therefore, valid digital signatures) from other employees in the same company.
   
-For more information, see [Active Directory Certificate Services](https://go.microsoft.com/fwlink/p/?LinkId=188299).
   
 ### Commercial certificates
 
@@ -117,10 +120,12 @@ There are three kinds of commercial certificates:
     
 - **Class 3** Class 3 certificates are issued to people, organizations, servers, devices, and administrators for CAs and root authorities (RAs). Class 3 individual certificates are appropriate for digital signatures, encryption, and access control in transactions where proof of identity must be assured. Class 3 server certificates are appropriate for server authentication; message, software, and content integrity; and confidentiality encryption. 
     
-For more information about commercial certificates, see [Digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267581).
+For more information about commercial certificates, see [Find digital ID or digital signature services](https://go.microsoft.com/fwlink/p/?LinkId=267581).
   
+
+<a name="planlevels"> </a>
+
 ## Planning digital signature levels in Office 2016 documents
-<a name="section3a"> </a>
 
 Users can digitally sign documents by using Excel 2016, PowerPoint 2016, and Word 2016. They can also use Excel 2016, InfoPath 2016, or Word 2016 to add a signature line or signature stamp. Digitally signing a document that has a digital certificate but does not have a signature line or stamp is known as creating an invisible digital signature. Visible and invisible digital signatures both use a digital certificate for signing the document. The difference is the graphical representation in the document when a visible digital signature line is used. For more information about how to add a digital signature, see [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=187659).
   
@@ -154,10 +159,12 @@ You can also configure additional time stamp parameters by configuring one or mo
     
 If you do not configure and enable **Configure time stamping hashing algorithm**, the default value of SHA1 will be used. If you do not configure and enable **Set time stamp server time-out**, Office 2016 will wait 5 seconds for the time stamp server to respond to a request.
   
-### Plan signature settings for Office 2016
+
 <a name="configsigs"> </a>
 
-In addition to the Group Policy settings for configuring time stamp related-settings, there are other Group Policy settings to configure how digital signatures are configured and controlled in an organization. The setting names and descriptions are listed in the following table. These are located in **software\policies\microsoft\office\16.0\common\signatures!**
+### Plan signature settings for Office 2016
+
+In addition to the Group Policy settings for configuring time stamp related-settings, there are other Group Policy settings to configure how digital signatures are configured and controlled in an organization. The setting names and descriptions are listed in the following table.
   
 **Digital signature Group Policy configuration settings**
 
@@ -172,7 +179,7 @@ In addition to the Group Policy settings for configuring time stamp related-sett
 |**Set signature verification level** <br/> |This policy setting lets you set the verification level that is used by Office 2016 applications when validating a digital signature.  <br/> |
 |**Requested XAdES level for signature generation** <br/> |This policy setting lets you specify a requested or desired XAdES level in creating a digital signature.  <br/> |
    
-The following additional Group Policy settings are related to digital signatures and are also located in **\software\policies\microsoft\office\16.0\common\signatures!**: 
+The following additional Group Policy settings are related to digital signatures: 
   
 - **Set default image directory**
     
@@ -184,8 +191,11 @@ The following additional Group Policy settings are related to digital signatures
     
 - **Suppress external signature services command**
     
+
+<a name="regsettings"> </a>
+
 ### Registry settings that apply to digital signatures
-<a name="configsigs"> </a>
+
 
 The following table shows Windows registry settings that are specific to digital signatures and the certificates that are used to encrypt them. These registry settings are located in HKEY_CURRENT_USER\software\policies\Microsoft\Office\16.0\common\signatures. There is no corresponding Group Policy.
   
@@ -208,9 +218,7 @@ The following table shows Windows registry settings that are specific to digital
   
 [Office 2016 Administrative Template files (ADMX/ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001)
   
-[Active Directory Certificate Services](https://go.microsoft.com/fwlink/p/?LinkId=188299)
-  
-[Digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267581)
+[Find digital ID or digital signature services](https://go.microsoft.com/fwlink/p/?LinkId=267581)
   
 [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=187659)
 
