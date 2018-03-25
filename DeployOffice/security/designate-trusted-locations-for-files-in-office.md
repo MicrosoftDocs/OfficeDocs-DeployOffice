@@ -22,9 +22,6 @@ description: "Explains how to use a designate a folder on a user's computer or a
   
 If you want to differentiate safe files from potentially harmful files, you can designate a network share as a trusted location in Office 2016. Office lets you designate trusted file sources on the hard disks of users' computers or on a network share. When a folder is designated as a trusted file source, any file that is saved in the folder is assumed to be a trusted file. When a user opens a trusted file, all content in the file is enabled and active, and users aren't notified about any potential risks that might be contained in the file. These can include, for example, unsigned add-ins and Microsoft Visual Basic for Applications (VBA) macros, links to content on the Internet, or database connections.
   
-> [!TIP]
-> **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
-  
 
 <a name="about"> </a>    
 ## Plan trusted locations settings in Office
@@ -72,9 +69,9 @@ The following table lists the default trusted locations for Excel 2016.
 |**Default trusted locations**|**Folder description**|**Are subfolders trusted also?**|
 |:-----|:-----|:-----|
 |Program Files\Microsoft Office 16\Root\Templates  <br/> |Application templates  <br/> |Yes (Allowed)  <br/> |
-|Users\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
+|Users\\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Office16\XLSTART  <br/> |Excel startup  <br/> |Yes (Allowed)  <br/> |
-|Users\_user_name_\Appdata\Roaming\Microsoft\Excel\XLSTART  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
+|Users\\_user_name_\Appdata\Roaming\Microsoft\Excel\XLSTART  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Office16\STARTUP  <br/> |Office startup  <br/> |Yes (Allowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Office16\Library  <br/> |Add-ins  <br/> |Yes (Allowed)  <br/> |
    
@@ -87,8 +84,8 @@ The following table lists the default trusted locations for PowerPoint 2016.
 |**Default trusted locations**|**Folder description**|**Are subfolders trusted also?**|
 |:-----|:-----|:-----|
 |Program Files\Microsoft Office 16\Root\Templates  <br/> |Application templates  <br/> |Yes (Allowed)  <br/> |
-|Users\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |Yes (Allowed)  <br/> |
-|Users\_user_name_\Appdata\Roaming\Microsoft\Addins  <br/> |Add-ins  <br/> |No (Disallowed)  <br/> |
+|Users\\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |Yes (Allowed)  <br/> |
+|Users\\_user_name_\Appdata\Roaming\Microsoft\Addins  <br/> |Add-ins  <br/> |No (Disallowed)  <br/> |
 |Program Files\Microsoft Office 16\Root\Document Themes 16  <br/> |Application themes  <br/> |Yes (Allowed)  <br/> |
    
 ### Word 2016 trusted locations
@@ -100,8 +97,8 @@ The following table lists the default trusted locations for Word 2016.
 |**Default trusted locations**|**Folder description**|**Are subfolders trusted also?**|
 |:-----|:-----|:-----|
 |Program Files\Microsoft Office 16\Root\Templates  <br/> |Application templates  <br/> |Yes (Allowed)  <br/> |
-|Users\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
-|Users\_user_name_\Appdata\Roaming\Microsoft\Word\Startup  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
+|Users\\_user_name_\Appdata\Roaming\Microsoft\Templates  <br/> |User templates  <br/> |No (Disallowed)  <br/> |
+|Users\\_user_name_\Appdata\Roaming\Microsoft\Word\Startup  <br/> |User startup  <br/> |No (Disallowed)  <br/> |
    
 <a name="implementlocations"> </a>
 
@@ -218,7 +215,7 @@ Office 2016 provides several settings that enable you to restrict or control the
     
  - **Impact:** Disabling this setting disables all trusted locations that are network shares and prevents users from selecting the **Allow Trusted Locations on my network (not recommended)** check box in the Trust Center. Disabling this setting will cause some disruption for users who have defined their own trusted locations in the Trust Center. If you disable this setting, and a user attempts to designate a network share as a trusted location, a warning informs the user that the current security settings don't allow them to create trusted locations that are remote paths or network paths. If an administrator designates a network share as a trusted location through Group Policy or by using the OCT, and this setting is disabled, the trusted location is disabled. Applications treat such locations like any other untrusted locations, which means that users see Message Bar warnings about content such as ActiveX controls and VBA macros when they open files. They have to choose whether to enable controls and macros or leave them disabled. 
     
- -**Guidelines:** Organizations that have a highly restrictive security environment typically disable this setting. 
+ - **Guidelines:** Organizations that have a highly restrictive security environment typically disable this setting. 
     
 > [!NOTE]
 > You can also use the **Remove all Trusted Locations written by the OCT during installation** setting to delete all trusted locations that were created by configuring the OCT. 
@@ -246,6 +243,6 @@ Office 2016 provides a Group Policy setting that you can use to disable trusted 
     
 Enabling this setting also prevents users from configuring trusted locations settings in the Trust Center. If you enable this setting, make sure that you notify users that they can't use trusted locations. If users have been opening files from trusted locations, and you enable this setting, users might start seeing warnings in the Message Bar and they might be required to respond to Message Bar warnings to enable content, such as ActiveX controls, add-ins, and VBA macros.
     
- **Guidelines:** Organizations that have a highly restrictive security environment typically enable this setting. 
+- **Guidelines:** Organizations that have a highly restrictive security environment typically enable this setting. 
     
 
