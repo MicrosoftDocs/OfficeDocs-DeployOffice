@@ -42,9 +42,6 @@ If you select **Use Cached Exchange Mode**, you can configure Cached Exchange Mo
     
   - **Directory path to store Offline Address Book files** - Specify the path where the offline Address Book files should be stored. 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Outlook Anywhere](oct-2016-help-outlook-anywhere.md)
 

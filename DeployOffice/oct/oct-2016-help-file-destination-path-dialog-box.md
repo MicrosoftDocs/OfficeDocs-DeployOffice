@@ -41,9 +41,6 @@ You can select multiple files at once by using the SHIFT and CTRL keys; these fi
 |**[ProgramFiles64Folder]** <br/> |Program Files folder (on 64-bit Windows)  <br/> |
 |**[System64Folder]** <br/> |Windows\System32 folder (on 64-bit Windows)  <br/> |
    
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add files](oct-2016-help-add-files.md)
 

@@ -56,10 +56,7 @@ Exchange address book:
     
 - Choose **Address Book Settings** to open the **Modify Address Book Settings** dialog box. You can select **Download changes since last Send/Receive** to download only updates to the address book since the last download, and you can choose whether to download **Full Details** or **No Details**.
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: New Exchange Group dialog box](oct-2016-help-new-exchange-group-dialog-box.md)
   
 [Office Customization Tool (OCT) 2016 Help: Modify Group dialog box](oct-2016-help-modify-group-dialog-box.md)

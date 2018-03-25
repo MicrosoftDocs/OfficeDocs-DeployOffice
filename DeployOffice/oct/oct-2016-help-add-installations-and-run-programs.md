@@ -25,9 +25,6 @@ Setup runs all command lines in the order listed and does not complete the insta
   
 To add a program to the list, choose **Add**. To modify a program, select it, and then choose **Modify**. To remove a program, select it, and then choose **Remove**. To change the order of the list, select a program, and then choose the **Move** arrows to move the program up or down in the list. 
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add/Modify Program Entry dialog box](oct-2016-help-add-modify-program-entry-dialog-box.md)
 

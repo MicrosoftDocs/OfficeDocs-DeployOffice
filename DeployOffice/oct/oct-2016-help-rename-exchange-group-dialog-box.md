@@ -18,10 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 Type the new name of the Exchange send/receive group in the **New Group Name** box, and then choose **OK**.
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: New Exchange Group dialog box](oct-2016-help-new-exchange-group-dialog-box.md)
   
 [Office Customization Tool (OCT) 2016 Help: Modify Group dialog box](oct-2016-help-modify-group-dialog-box.md)

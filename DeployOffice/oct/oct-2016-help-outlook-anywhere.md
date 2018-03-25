@@ -30,9 +30,6 @@ If you select **Configure Outlook Anywhere**, and then select **Connect to Excha
     
 - **Use this authentication when connecting to the proxy server for Exchange** - The default method is Password Authentication (NTLM). 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Cached Mode](oct-2016-help-cached-mode.md)
 

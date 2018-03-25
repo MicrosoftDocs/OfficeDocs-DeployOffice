@@ -24,9 +24,6 @@ Configure the default way in which Outlook keeps the offline Address Book update
     
 - **No Details** - When the address book is downloaded, Outlook copies only essential information, such as the name and e-mail address for each entry. This takes less time to download, but address details are not included in the offline address book. This is a legacy option supported by Outlook Address Book (OAB) versions 2.0 and 3.0. If Outlook connects to a server that supports OAB 4.0 or later, the full details will be downloaded even if this option is checked. 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Specify Send/Receive Groups](oct-2016-help-specify-send-receive-groups.md)
 

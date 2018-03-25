@@ -23,9 +23,6 @@ To add a new shortcut, choose **Add**. To modify a shortcut in the list, select 
 > [!NOTE]
 > If you add a shortcut to a custom application or file, that shortcut is not updated or removed if the user modifies, repairs, reinstalls, or removes Office. 
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add/Modify Shortcut Entry dialog box](oct-2016-help-add-modify-shortcut-entry-dialog-box.md)
 

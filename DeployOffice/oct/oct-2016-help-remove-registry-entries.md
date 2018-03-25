@@ -23,9 +23,6 @@ To create a list of registry entries to remove from users' computers, choose **A
 > [!NOTE]
 > If the user removes, repairs, or reinstalls Office, the custom registry entries are removed or reinstalled along with Office. 
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Delete/Modify Registry Entry dialog box](oct-2016-help-delete-modify-registry-entry-dialog-box.md)
 

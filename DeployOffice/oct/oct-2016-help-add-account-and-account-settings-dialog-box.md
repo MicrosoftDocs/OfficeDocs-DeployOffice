@@ -33,10 +33,7 @@ To ensure that e-mail services do not overlap, Outlook might not allow you to ad
 |**Outlook Address Book** <br/> |No  <br/> |Existence of account  <br/> |
 |**Internet Directory Service (LDAP)** <br/> |Yes  <br/> |Account name  <br/> |
    
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add accounts](oct-2016-help-add-accounts.md)
   
 [Office Customization Tool (OCT) 2016 Help: Outlook Anywhere](oct-2016-help-outlook-anywhere.md)

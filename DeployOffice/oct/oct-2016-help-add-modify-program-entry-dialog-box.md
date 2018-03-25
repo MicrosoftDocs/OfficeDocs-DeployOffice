@@ -46,9 +46,6 @@ On the **Add installations and run programs** page, if you choose **Add**, the *
     
 5. Choose **OK**.
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add installations and run programs](oct-2016-help-add-installations-and-run-programs.md)
 

@@ -22,9 +22,6 @@ ROBOTS: NOINDEX, NOFOLLOW
   
 To add a property value, choose **Add**. To modify a property that you have added, select the property, and then choose **Modify**. To remove a property that you have added, select the property, and then choose **Remove**.
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add/Modify Property Value dialog box](oct-2016-help-add-modify-property-value-dialog-box.md)
 

@@ -28,9 +28,6 @@ You can also specify the following:
     
 - Expand the **Default e-mail account** and then select the account that will be the default e-mail account for users. 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add Account and Account Settings dialog box](oct-2016-help-add-account-and-account-settings-dialog-box.md)
 

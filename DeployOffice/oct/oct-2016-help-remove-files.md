@@ -22,9 +22,6 @@ Files listed in the **Remove files** list are removed from the user's computer b
   
 To create a list of files to remove from the user's computer during installation, choose **Add**. To modify the path or name of a file, select the file in the **Remove files** list, and then choose **Modify**. To remove a file from the list, select the file, and then choose **Remove**. You can use the SHIFT and CTRL keys to select multiple files at one time.
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: File Path dialog box](oct-2016-help-file-path-dialog-box.md)
 

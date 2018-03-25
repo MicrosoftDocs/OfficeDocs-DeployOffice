@@ -24,9 +24,6 @@ In the **Delete/Modify Registry Entry** dialog box, type the following informati
     
 - For **Value name**, type the name of the registry entry that you want to remove. To remove the entire subkey, including all of its value entries, leave this field blank.
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Remove registry entries](oct-2016-help-remove-registry-entries.md)
 

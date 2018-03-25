@@ -23,9 +23,6 @@ To create a list of registry entries to add to users' computers, choose **Add**.
 > [!NOTE]
 > Registry entries customized in this section might override settings customized elsewhere in the OCT. Use this section to customize options that cannot be set directly in the Office user interface and are not configurable by using other methods in the OCT. 
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add/Modify Registry Entry dialog box](oct-2016-help-add-modify-registry-entry-dialog-box.md)
 

@@ -34,9 +34,6 @@ When adding files to an Office installation, note the following:
     
 - If the user removes, repairs, or reinstalls Office, the custom files are removed or reinstalled along with Office. Setup does not reinstall a custom file, however, if the file has changed since installation.
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: File Destination Path dialog box](oct-2016-help-file-destination-path-dialog-box.md)
 

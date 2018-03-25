@@ -41,9 +41,6 @@ The path must begin with a drive letter, a UNC path, or one of the following spe
 |**[ProgramFiles64Folder]** <br/> |Program Files folder (on 64-bit Windows)  <br/> |
 |**[System64Folder]** <br/> |Windows\System32 folder (on 64-bit Windows)  <br/> |
    
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Remove files](oct-2016-help-remove-files.md)
 

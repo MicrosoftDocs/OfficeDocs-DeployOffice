@@ -40,10 +40,7 @@ For some folders the following options are also available:
     
 - **Download only headers for items larger than** - When items are larger than the specified size, download only the header for the item. This setting applies to only this folder when updating by executing a Send/Receive for this Send/Receive group. 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: New Exchange Group dialog box](oct-2016-help-new-exchange-group-dialog-box.md)
   
 [Office Customization Tool (OCT) 2016 Help: Rename Exchange Group dialog box](oct-2016-help-rename-exchange-group-dialog-box.md)

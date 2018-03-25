@@ -24,9 +24,6 @@ To add a server to the list, choose **Add**. To edit an entry in the list, selec
   
 To remove all servers from the list, select **Clear existing server list**.
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add/Modify Network Server Entry dialog box](oct-2016-help-add-modify-network-server-entry-dialog-box.md)
 

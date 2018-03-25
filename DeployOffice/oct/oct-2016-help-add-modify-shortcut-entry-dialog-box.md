@@ -98,9 +98,6 @@ In the **Add/Modify Shortcut Entry** dialog box, type the following information 
     
 - **Change Icon** - Select a different icon for the shortcut. 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Configure shortcuts](oct-2016-help-configure-shortcuts.md)
 

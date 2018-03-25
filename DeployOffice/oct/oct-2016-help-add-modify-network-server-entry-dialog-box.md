@@ -30,9 +30,6 @@ In the **Add Network Server Entry** or **Modify Network Server Entry** dialog bo
     
 You can also choose **Browse** to search for a server on the network. 
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Additional network sources](oct-2016-help-additional-network-sources.md)
 

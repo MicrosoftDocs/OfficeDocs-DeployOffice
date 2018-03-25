@@ -32,9 +32,6 @@ To learn more about ODF generally, see:
     
 - [ISO organization](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=45245)
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Overview](oct-2016-help-overview.md)
 

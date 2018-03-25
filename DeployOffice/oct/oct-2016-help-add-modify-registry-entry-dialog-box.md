@@ -30,9 +30,6 @@ In the **Add/Modify Registry Entry** dialog box, you can configure the following
     
 - In the **Value data** box, type the value to store in the new registry entry. The data must match the data type. 
     
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add registry entries](oct-2016-help-add-registry-entries.md)
 

@@ -24,9 +24,6 @@ You can enter the following information in the **Add/Modify Property Value** dia
     
 If you are modifying a property, you can only change its value.
   
-## See also
-
-#### 
-
+## Related topics
 [Office Customization Tool (OCT) 2016 Help: Modify Setup properties](oct-2016-help-modify-setup-properties.md)
 
