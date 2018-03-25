@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 On the **Add installations and run programs** page, if you choose **Add**, the **Add Program Entry** dialog box opens. If you select an entry on the **Add installations and run programs** page, and then choose **Modify**, the **Modify Program Entry** dialog box opens. You can enter the following information in the **Add Program Entry** or **Modify Program Entry** dialog boxes: 
   
-1. In the **Target** box, type the path and file name of the executable program. 
+- In the **Target** box, type the path and file name of the executable program. 
     
     Expand the **Target** list to include any of the following standard Windows folders in the path of the executable file. 
     
@@ -38,13 +38,13 @@ On the **Add installations and run programs** page, if you choose **Add**, the *
 |**[System64Folder]** <br/> |Windows\System32 folder (on 64-bit Windows)  <br/> |
    
 
-2. In the **Arguments** box, type a string of command-line options; for example, /q /path c:\temp.
+- In the **Arguments** box, type a string of command-line options; for example, /q /path c:\temp.
     
-3. Select **Run this program after the Office product has been installed** if you want the program listed in the **Target** box to run after the Office installation is complete. This is the recommended option. If the program does not terminate normally, or if it restarts the computer, the Office installation is not affected. However, programs further down the list do not run. 
+- Select **Run this program after the Office product has been installed** if you want the program listed in the **Target** box to run after the Office installation is complete. This is the recommended option. If the program does not terminate normally, or if it restarts the computer, the Office installation is not affected. However, programs further down the list do not run. 
     
-4. Select **Run this program before the Office product has been installed** if you want the program listed in the **Target** box to run before the Office installation starts. If the program does not terminate normally, or if it restarts the computer, Office is not installed, and programs further down the list do not run. 
+- Select **Run this program before the Office product has been installed** if you want the program listed in the **Target** box to run before the Office installation starts. If the program does not terminate normally, or if it restarts the computer, Office is not installed, and programs further down the list do not run. 
     
-5. Choose **OK**.
+- Choose **OK**.
     
 ## Related topics
 [Office Customization Tool (OCT) 2016 Help: Add installations and run programs](oct-2016-help-add-installations-and-run-programs.md)

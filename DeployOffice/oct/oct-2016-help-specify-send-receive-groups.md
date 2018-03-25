@@ -24,15 +24,16 @@ A Send/Receive group contains a collection of Outlook accounts and folders. You 
     
 - **Configure Send/Receive settings** - Configure settings for Send/Receive groups (Exchange accounts and folders only). 
     
--- Choose **New** to create a new group of accounts and folders. 
+    - Choose **New** to create a new group of accounts and folders. 
     
--- Choose **Modify** to specify or redefine options for a Send/Receive group. 
+    - Choose **Modify** to specify or redefine options for a Send/Receive group. 
     
--- Choose **Rename** to change the name of an existing Send/Receive group. 
+    - Choose **Rename** to change the name of an existing Send/Receive group. 
     
--- Choose **Remove** to remove an existing Send/Receive group. 
+    - Choose **Remove** to remove an existing Send/Receive group. 
     
- **Send/Receive settings for the selected group**
+
+**Send/Receive settings for the selected group**
   
 Specify settings for the Send/Receive group selected in the list. (The name of the selected group appears in the option label.) You can specify different settings for when Outlook is online or offline. 
   
