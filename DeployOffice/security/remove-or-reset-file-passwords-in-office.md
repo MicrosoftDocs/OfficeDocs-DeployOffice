@@ -185,7 +185,7 @@ The IT admin computer does not have to have key and subkey in the registry, nor 
     
    - %programfiles(x86)%\Microsoft Office\DOCRECRYPT
     
- - When you install the Office DocRecrypt tool on a 32-bit computer, it is installed in the following location:
+- When you install the Office DocRecrypt tool on a 32-bit computer, it is installed in the following location:
     
    - %programfiles%\Microsoft Office\DOCRECRYPT
     

@@ -22,12 +22,9 @@ description: "Explains how you can prevent file format attacks using file valida
   
 By validating files, Office 2016 helps prevent file format attacks by scanning Office binary file formats before they are opened in Excel 2016, PowerPoint 2016, or Word 2016. You can change how Office 2016 validates files that are stored in Microsoft Office binary file formats by configuring settings.
   
-> [!TIP]
-> **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
-  
+<a name="about"> </a>
 
 ## Plan how to validate files in Office
-<a name="about"> </a>
 
 Office file validation helps detect and prevent a kind of exploit known as a file format attack or file fuzzing attack. File format attacks exploit the integrity of a file and occur when someone modifies the structure of a file with the intent of adding malicious code. Usually, the malicious code is run remotely and is used to elevate the privilege of restricted accounts on the computer. An attacker can use the code to gain access to the computer. This could enable an attacker to read sensitive information from the computer's hard disk drive or install malware, such as a worm or a key logging program. To validate files, Office compares a file's structure to a predefined file schema, which is a set of rules that determine what a readable file looks like. If Office detects that a file's structure does not follow all rules that are described in the schema, the file is not validated.
   
@@ -67,15 +64,17 @@ We recommend that you do not change the default settings for Office file validat
     
 - **Organizations that do not want their files sent to Microsoft.** If users allow it, Office file validation sends a copy of all files that fail validation to Microsoft. You can configure Office file validation so that users are not prompted to send validation information to Microsoft. 
     
-## Turn off Office file validation in Office 2016
 <a name="turnoff"> </a>
+
+## Turn off Office file validation in Office 2016
 
 You can use the **Turn off file validation** setting to disable Office file validation. This setting must be configured on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. This setting prevents files that are stored in the Office binary file format from being scanned and validated. For example, if you enable the **Turn off file validation** setting for Excel 2016, Office file validation does not scan or validate Excel 97-2003 Workbook files, Excel 97-2003 Template files, or Microsoft Excel 5.0/95 files. If a user opens one of those file types, and the file contains a file format attack, the attack will not be detected or prevented unless some other security control detects and prevents such an attack. 
   
 We recommend that you do not turn off Office file validation. Office file validation is a key part of the layered defense strategy in Office 2016 and should be enabled on all computers throughout an organization. If you want to prevent files from being validated by Office file validation, we recommend that you also set up trusted locations. Files that are opened from trusted locations skip Office file validation checks. You can also trust specific documents to prevent a file from being validated by Office file validation. Files that are considered to be trusted documents do not undergo Office file validation checks. 
   
-## Change document behavior when validation fails in Office
 <a name="behavior"> </a>
+
+## Change document behavior when validation fails in Office
 
 You can use the **Set document behavior if file validation fails** Group Policy setting to change how documents behave when they fail validation. When you enable this setting, you can select one of the following two options: 
   
@@ -95,8 +94,9 @@ You can use the **Set document behavior if file validation fails** Group Policy 
   
     Users can expand the dialog box and see a more detailed explanation of why the file does not open, or they can close the dialog box by selecting **OK**.
     
-## Turn off Office file validation reporting in Office
 <a name="errorreport"> </a>
+
+## Turn off Office file validation reporting in Office
 
 You can use the **Turn off error reporting for files that fail file validation** Group Policy setting to suppress the dialog box that prompts users to send information to Microsoft. This setting also prevents validation information from being sent to Microsoft. 
   
