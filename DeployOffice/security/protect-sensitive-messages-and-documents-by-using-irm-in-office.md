@@ -22,12 +22,10 @@ description: "Use Information Rights Management (IRM) in Office to specify permi
   
 IRM allows individuals and administrators to specify who can access documents, workbooks, and presentations. This helps prevent sensitive information from being printed, forwarded, or copied by unauthorized people. This article contains a summary of IRM technology and how it works in Office applications, together with links to more information about how to set up and install the required software to implement IRM in Office 2016.
   
-> [!TIP]
-> **Are you looking for help about individual Office 2016 applications?** You can find this information by searching on [Office Support](https://support.office.com/). 
-  
+ 
+<a name="BKMK_WhatIsIRM"> </a>
     
 ## IRM overview
-<a name="BKMK_WhatIsIRM"> </a>
 
 Azure Rights Management and Active Directory Rights Management are persistent document-level information protection technologies from Microsoft. They use permissions and authorization to help prevent sensitive information from being printed, forwarded, or copied by authorized users, or accessed by unauthorized people. After you restrict permission for a document or message with IRM, the usage restrictions travel with the document or email message as part of the contents of the file. Microsoft Office implements support for these technologies by using Information Rights Management (IRM) features.
   
@@ -43,9 +41,9 @@ IRM support in Office 2016 helps organizations and knowledge workers address two
     
 For information technology (IT) managers, IRM helps enable the enforcement of existing corporate policies about document confidentiality, workflow, and email retention. For executives and security officers, IRM reduces the risk of having key company information fall into the hands of the wrong people, whether by accident, thoughtlessness, or through malicious intent.
   
-## How IRM works in Office 2016
 <a name="BKMK_HowIRMWorks"> </a>
 
+## How IRM works in Office 2016
 Office users apply permissions to messages or documents by using options in the **File** menu; for example, by using the **Restrict Access** option, under **Info**, **Protect Document**. The protection options that are available are based on Rights Policy Templates that you can customize for your organization. Rights Policy Templates are groups of IRM rights that you package together in a predefined policy that users can apply to their documents. Office 2016 also provides a predefined **Do Not Forward** option which grants specific rights to the recipients of an email. To learn more about Rights Policy Templates, see [Configuring Custom Templates for Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx).
   
 > [!NOTE]
@@ -61,10 +59,11 @@ Organizations can define the permissions policies that appear in Office applicat
   
 With AD RMS on Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012, users can share rights-protected documents between companies that have a federated trust relationship. For more information, see [Active Directory Rights Management Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=183052) and [Federating AD RMS](https://go.microsoft.com/fwlink/p/?LinkId=183053). With Azure RMS, the ability to securely collaborate between organizations is built-in and doesn't require you to complete any special configuration. 
   
-While the ability to create and consume protected emails in Outlook 2016 does not require any special configuration in the email server, Exchange Server 2013 offers additional IRM-protected email functionality including RMS protection for Unified Messaging voice mail messages and Microsoft Outlook protection rules that can automatically apply IRM-protection to messages in Outlook 2016 before they leave the Microsoft Outlook client. Additionally, enabling IRM integration in Exchange Server allows users to create and consume protected emails in Outlook Web App and in Exchange ActiveSync IRM-enabled mobile devices. For more information, see [What's New in Exchange 2013](https://go.microsoft.com/fwlink/p/?LinkId=267585) and [Understanding Information Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=183063).
+While the ability to create and consume protected emails in Outlook 2016 does not require any special configuration in the email server, Exchange Server 2016 offers additional IRM-protected email functionality including RMS protection for Unified Messaging voice mail messages and Microsoft Outlook protection rules that can automatically apply IRM-protection to messages in Outlook 2016 before they leave the Microsoft Outlook client. Additionally, enabling IRM integration in Exchange Server allows users to create and consume protected emails in Outlook Web App and in Exchange ActiveSync IRM-enabled mobile devices. For more information, [Information Rights Management in Exchange 2016](https://go.microsoft.com/fwlink/p/?LinkId=183063).
   
-## Setting up IRM for Office 2016
 <a name="BKMK_SettingUpIRM"> </a>
+
+## Setting up IRM for Office 2016
 
 Applying IRM permissions to documents or email messages requires the following:
   
@@ -78,8 +77,6 @@ Applying IRM permissions to documents or email messages requires the following:
 
 AD RMS and Azure RMS manage licensing and other server functions that work with IRM to provide rights management to client applications such as Office 2016. An RMS-enlightened client program, such as Office 2016, lets users create and view rights-protected content.
   
-To learn more about how RMS works and how to install and configure AD RMS or enable cloud-based Azure RMS, see the [Microsoft Rights Management Services home page](https://go.microsoft.com/fwlink/p/?LinkId=180006).
-  
 ### Setting up the Rights Management on the client
 
 RMS client software is included in Windows Vista, Windows 7, Windows 8, Windows 8.1, and Windows 10. In order to enable the additional IRM functionality in Office by using the RMS sharing application, users can install it themselves or administrators can automatically deploy it for users.
@@ -88,7 +85,7 @@ RMS client software is included in Windows Vista, Windows 7, Windows 8, Windows 
 
 As in Office 2007, Office 2010, and Office 2013, Office 2016 includes the option for users to apply individual rights to documents and messages, such as **Read** and **Change** in Word 2016, Excel 2016, PowerPoint 2016, and Visio 2016. In Outlook you can use the **Do Not Forward** option that allows you to confidently share email, granting only limited rights to the intended recipients of the message. You can also define custom rights policy templates for your organization that are deployed to clients automatically so they can be applied by users in one click. 
   
-You create and manage rights policy templates by using the administration site on your RMS or AD RMS server. For information about how to create, configure, and post custom policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=183068). For Exchange Server 2010 Outlook protection rules, see [Understanding Outlook Protection Rules](https://go.microsoft.com/fwlink/p/?LinkId=183067).
+You create and manage rights policy templates by using the administration site on your RMS or AD RMS server. For information about how to create, configure, and post custom policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=183068). 
   
 The rights that you can include in permissions policy templates for Office 2016 are listed in the following sections.
   
@@ -136,14 +133,15 @@ In Outlook 2016, users can select the following predefined group of rights when 
 
 In Word 2016, Other IRM permissions can be specified for parts of a document. From **Info**, **Protect Document**, choose **Restrict Editing**, and select the **More Users** option to add users with rights to edit the indicated sections of a document. For even more restriction options, choose **Restrict permission** at the bottom of the **Restrict Editing** panel. For example, users can specify an expiration date, restrict other users from printing or copying content, and so on. 
   
-## Configuring IRM settings for Office 2016
 <a name="BKMK_ConfiguringIRMForOffice"> </a>
+
+## Configuring IRM settings for Office 2016
 
 You can lock down many settings to customize IRM by using the Office Group Policy template (Office). Use this Group Policy template to configure Group Policy Objects in Active Directory and should not be confused with the rights policy templates. In addition, there are IRM configuration options that can only be configured by using registry key settings.
   
 ### Office 2016 IRM settings
 
-The settings that you can configure for IRM in Group Policy are listed in the following table. In Group Policy, these settings are under **User Configuration\Administrative Templates\Microsoft Office 2016\Manage Restricted Permissions**. 
+The settings that you can configure for IRM in Group Policy are listed in the following table. In Group Policy, these settings are under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Manage Restricted Permissions**. 
   
 **IRM settings for Group Policy**
 
@@ -167,8 +165,8 @@ The following IRM registry settings are located in **HKCU\Software\Microsoft\Off
 
 |**Registry entry**|**Type**|**Value**|**Description**|
 |:-----|:-----|:-----|:-----|
-|RequestPermission  <br/> |DWORD  <br/> |1 = The box is checked.  <br/> 0 = The box is cleared.  <br/> |This registry key toggles the default value of the **Users can request additional permissions from** check box.  <br/> |
-|DoNotUseOutlookByDefault  <br/> |DWORD  <br/> |0 = Microsoft Outlook is used  <br/> 1 = Microsoft Outlook is not used  <br/> |The **Permission** dialog box uses Microsoft Outlook to validate email addresses that are entered in that dialog box. This causes an instance of Microsoft Outlook to be started when restricting permissions. Disable the option by using this key.  <br/> |
+|RequestPermission  <br/> |DWORD  <br/> |1 = The box is checked. <br/> <br/> 0 = The box is cleared.  <br/> |This registry key toggles the default value of the **Users can request additional permissions from** check box.  <br/> |
+|DoNotUseOutlookByDefault  <br/> |DWORD  <br/> |0 = Microsoft Outlook is used <br/> <br/> 1 = Microsoft Outlook is not used  <br/> |The **Permission** dialog box uses Microsoft Outlook to validate email addresses that are entered in that dialog box. This causes an instance of Microsoft Outlook to be started when restricting permissions. Disable the option by using this key.  <br/> |
    
 The following IRM registry setting is located in **HKCU\Software\Microsoft\Office\16.0\Common\DRM\LicenseServers**. There is no corresponding Group Policy setting. 
   
@@ -176,7 +174,7 @@ The following IRM registry setting is located in **HKCU\Software\Microsoft\Offic
 
 |**Registry entry**|**Type**|**Value**|**Description**|
 |:-----|:-----|:-----|:-----|
-|LicenseServers  <br/> |Key/Hive. Contains DWORD values that have the name of a license server.  <br/> |Set to the server URL. If the value of the DWORD is 1, Office will not prompt to obtain a license, it will get the license automatically.  <br/> If the value is zero or there is no registry entry for that server, Office prompts for a license.  <br/> |Example: If 'http://contoso.com/_wmcs/licensing = 1' is a value for this setting, a user who tries to obtain a license from that server to open a rights-managed document will not be prompted for authorization. This is the same as the user selecting the checkbox asking not to be notified again the first time that they consume the content.  <br/> |
+|LicenseServers  <br/> |Key/Hive. Contains DWORD values that have the name of a license server.  <br/> |Set to the server URL. If the value of the DWORD is 1, Office will not prompt to obtain a license, it will get the license automatically.  <br/><br/> If the value is zero or there is no registry entry for that server, Office prompts for a license.  <br/> |Example: If http://contoso.com/_wmcs/licensing = 1 is a value for this setting, a user who tries to obtain a license from that server to open a rights-managed document will not be prompted for authorization. This is the same as the user selecting the checkbox asking not to be notified again the first time that they consume the content.  <br/> |
    
 The following IRM registry setting is located in **HKCU\Software\Microsoft\Office\16.0\Common\Security**. There is no corresponding Group Policy setting. 
   
@@ -184,7 +182,7 @@ The following IRM registry setting is located in **HKCU\Software\Microsoft\Offic
 
 |**Registry entry**|**Type**|**Value**|**Description**|
 |:-----|:-----|:-----|:-----|
-|DRMEncryptProperty  <br/> |DWORD  <br/> |1 = The file metadata is encrypted.  <br/> 0 = The metadata is stored in plaintext. The default value is 0.  <br/> |Specify whether to encrypt all metadata that is stored inside a rights-managed document.  <br/> |
+|DRMEncryptProperty  <br/> |DWORD  <br/> |1 = The file metadata is encrypted. <br/> <br/> 0 = The metadata is stored in plaintext. The default value is 0.  <br/> |Specify whether to encrypt all metadata that is stored inside a rights-managed document.  <br/> |
    
 Encrypted metadata is not compatible with Azure Information Protection labels. If you use these labels, do not set the value to 1.
   
@@ -194,8 +192,9 @@ Users can choose to encrypt the metadata by setting a registry key. You can set 
   
 In addition, the **DRMEncryptProperty** registry setting does not determine whether non-Office client metadata storage, such as metadata created by SharePoint Server 2016, is encrypted. 
   
-## Configuring IRM settings for Outlook 2016
 <a name="BKMK_ConfiguringIRMOutlook"> </a>
+
+## Configuring IRM settings for Outlook 2016
 
 In Outlook 2016, users can create and send email messages that have restricted permission to help prevent messages from being forwarded, printed, or copied. Office 2016 documents, workbooks, and presentations that are attached to messages that have restricted permission are also automatically restricted.
   
@@ -220,8 +219,8 @@ You can lock down most settings to customize IRM for Microsoft Outlook by using 
 
 |**Location**|**IRM option**|**Description**|
 |:-----|:-----|:-----|
-|Microsoft Outlook 2013\Miscellaneous  <br/> |Do not download rights permissions license information for IRM email during Exchange folder sync  <br/> |Enable to prevent license information from being cached locally. If enabled, users must connect to the network to retrieve license information to open rights-managed email messages. This doesn't affect Exchange pre-licensing which is performed at the server.  <br/> |
-|Microsoft Outlook 2010\Outlook Options\Email Options\ Advanced Email Options  <br/> |**When sending a message** <br/> |To enforce email expiration, enable and enter the number of days before a message expires. The expiration period is enforced only when users send rights-managed email and the message can't be accessed after the expiration period.  <br/> |
+|Microsoft Outlook 2016\Miscellaneous  <br/> |Do not download rights permissions license information for IRM email during Exchange folder sync  <br/> |Enable to prevent license information from being cached locally. If enabled, users must connect to the network to retrieve license information to open rights-managed email messages. This doesn't affect Exchange pre-licensing which is performed at the server.  <br/> |
+|Options > More Options > Delivery options  <br/> |**When sending a message** <br/> |To enforce email expiration, enable and enter the number of days before a message expires. The expiration period is enforced only when users send rights-managed email and the message can't be accessed after the expiration period.  <br/> |
    
 ### Outlook 2016 IRM registry key options
 
@@ -233,10 +232,11 @@ The following IRM registry setting is located in **HKEY_CURRENT_USER\Software\Mi
 
 |**Registry entry**|**Type**|**Value**|**Description**|
 |:-----|:-----|:-----|:-----|
-|DoNotUseOutlookByDefault  <br/> |DWORD  <br/> |0 = Microsoft Outlook is used  <br/> 1 = Microsoft Outlook is not used  <br/> |Disable the option by using this key.  <br/> |
+|DoNotUseOutlookByDefault  <br/> |DWORD  <br/> |0 = Microsoft Outlook is used <br/> <br/> 1 = Microsoft Outlook is not used  <br/> |Disable the option by using this key.  <br/> |
    
-## Overview for configuring IRM in Office 2016
 <a name="BKMK_Overview"> </a>
+
+## Overview for configuring IRM in Office 2016
 
 You can lock many settings to customize IRM by using the Office 2016 Administrative Template files (Office16.admx) and Microsoft Outlook Group Policy template (Outlk16.admx). In addition, there are IRM configuration options that you can only configure by using registry key settings.
   
@@ -244,21 +244,23 @@ In Outlook 2016, users can create and send email messages that have restricted p
   
 As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group. For more information, see [Setting up IRM for Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_SettingUpIRM) in [Protect sensitive messages and documents by using Information Rights Management (IRM) in Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md).
   
-## Before you begin
 <a name="BKMK_BeforeYouBegin"> </a>
+
+## Before you begin
 
 Before you start deployment, determine the settings that you might have to configure for IRM.
   
-You can download the Office 2016 and Outlook 2016 templates from the Microsoft Download Center, [Office 2013 Administrative Template files (ADMX, ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001).
+You can download the Office 2016 and Outlook 2016 templates from the Microsoft Download Center, [Office 2016 Administrative Template files (ADMX, ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001).
   
-## Turn off Information Rights Management in Office 2016
 <a name="BKMK_TurnOffIRM"> </a>
+
+## Turn off Information Rights Management in Office 2016
 
 You can turn off IRM for all Office applications. To turn off IRM in Outlook 2016, you must turn off IRM for all Office applications. There is no separate option to turn off IRM only in Microsoft Outlook.
   
 ### To turn off IRM in Office 2016 by using Group Policy
 
-1. In Group Policy, load the Office 2016 template (Office) and locate **User Configuration\Administrative Templates\Microsoft Office 2016\Manage Restricted Permissions**.
+1. In Group Policy, load the Office 2016 template (Office) and locate **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Manage Restricted Permissions**.
     
 2. Choose **Turn Off Information Rights Management User Interface**.
     
@@ -266,14 +268,16 @@ You can turn off IRM for all Office applications. To turn off IRM in Outlook 201
     
 4. Choose **OK**.
     
-## Configure automatic license caching for Outlook 2016
 <a name="BKMK_ConfigureAutomaticLicenseCaching"> </a>
+
+## Configure automatic license caching for Outlook 2016
+
 
 By default, Outlook 2016 automatically downloads the IRM license for rights-managed email when Outlook synchronizes with Exchange Server. You can configure Outlook 2016 to prevent license information from being cached locally. This forces users to connect to the network to retrieve license information before they can open rights-managed email messages.
   
 ### To disable automatic license caching for IRM by using Group Policy
 
-1. In Group Policy, load the Outlook 2016 template (Outlk) and locate **User Configuration\Administrative Templates\Microsoft Outlook 2016\Miscellaneous**.
+1. In Group Policy, load the Outlook 2016 template (Outlk) and locate **User Configuration\Policies\Administrative Templates\Microsoft Outlook 2016\Miscellaneous**.
     
 2. Choose **Do not download rights permission license information for IRM email during Exchange folder sync**.
     
@@ -281,6 +285,5 @@ By default, Outlook 2016 automatically downloads the IRM license for rights-mana
     
 4. Choose **OK**.
     
-## Related topics
-[Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?LinkId=180006)
+
 
