@@ -103,7 +103,7 @@ To create a custom report that shows Excel warnings, do the following:
 1. From the Lookup_issue_definitions table, drag Severity to the FILTERS well. 
 2. After the Severity field is added to the custom report, use the filter button (next to Severity) to choose Warning. 
 3. From the Lookup_solutions table, drag Application to the FILTERS well, and then adjust the filter to select Excel. 
-4. From the Lookup_solutions table, drag File name to the ROWS well. |
+4. From the Lookup_solutions table, drag File name to the ROWS well.
 
 ![Illustrates how a custom report shows Excel issues that have the Warning severity. One column shows the file name, and the other column shows the number of Warning events.](../images/ORK_CR_Excelwarnings.PNG)
    

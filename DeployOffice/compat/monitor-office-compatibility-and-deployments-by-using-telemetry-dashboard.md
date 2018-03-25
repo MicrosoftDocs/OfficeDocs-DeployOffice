@@ -55,12 +55,8 @@ After you connect Telemetry Dashboard to the telemetry database, new worksheets 
 ## Navigating in Telemetry Dashboard
 <a name="bkmk_telemetrydashboardlayoutandnavigation"> </a>
 
-After all components are deployed and you connect Telemetry Dashboard to the telemetry database, new worksheets are added to display telemetry information about documents, solutions, and other information. The navigation pane on the left side of the Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. The following video shows how to navigate in the dashboard.
-  
-**Short video about Telemetry Dashboard navigation**
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e766090b-4229-45d5-a9cc-dee992054990?autoplay=false]
-  
+After all components are deployed and you connect Telemetry Dashboard to the telemetry database, new worksheets are added to display telemetry information about documents, solutions, and other information. The navigation pane on the left side of the Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. 
+   
 To learn more about the worksheets in Telemetry Dashboard, visit these resources:
   
 - This article includes a brief overview of the worksheets and how to use them in [Learn about the Telemetry Dashboard worksheets](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#worksheets). The rest of this article tells you how to adjust filters, how to determine overall Office stability, and how to investigate unstable documents and solutions.
@@ -79,11 +75,11 @@ The following table briefly describes the primary worksheets in Telemetry Dashbo
 |**Worksheet name**|**Purpose**|
 |:-----|:-----|
 |Overview  <br/> |Provides a quick view of the health of Office documents and solutions and a view of deployment trends. The links on this worksheet help you investigate Office compatibility and stability issues in your organization.  <br/> |
-|Documents  <br/> |Helps you investigate which Office documents are the most heavily used and identify documents that are experiencing issues.  <br/> This worksheet shows Office documents that were detected in the Most Recently Used (MRU) files in the local registry of monitored clients that run Office and earlier supported versions of Office.  <br/> The list also contains load events for monitored clients that run Office. Select any of the value links to open a worksheet that provides more detail. For example, in the **Total Users** column, you can select any number to view the users who have that file in their MRU list.  <br/> |
-|Solutions  <br/> |Shows details about solutions, such as COM add-ins, that were detected on monitored computers. This worksheet also shows telemetry data about load events on monitored client computers that run Office 2016.  <br/> Check the **Critical** column for a count of the number of unique users who have hit critical errors that the solutions are causing on Office 2016 clients. By reviewing critical errors and the number of users affected, you can decide whether to forcibly block add-ins that are crashing for many users. To do so, choose the **Add-in management mode** link at the top of the worksheet.  <br/> You can also investigate performance issues that might be causing a solution to take a longer time to load than expected on some computers. The load time values that are displayed in this worksheet are statistical averages. Select on of the value links to see individual user load times for a particular document.  <br/> |
+|Documents  <br/> |Helps you investigate which Office documents are the most heavily used and identify documents that are experiencing issues.  <br/> <br/>This worksheet shows Office documents that were detected in the Most Recently Used (MRU) files in the local registry of monitored clients that run Office and earlier supported versions of Office.  <br/> <br/>The list also contains load events for monitored clients that run Office. Select any of the value links to open a worksheet that provides more detail. For example, in the **Total Users** column, you can select any number to view the users who have that file in their MRU list.  <br/> |
+|Solutions  <br/> |Shows details about solutions, such as COM add-ins, that were detected on monitored computers. This worksheet also shows telemetry data about load events on monitored client computers that run Office 2016.  <br/> <br/>Check the **Critical** column for a count of the number of unique users who have hit critical errors that the solutions are causing on Office 2016 clients. By reviewing critical errors and the number of users affected, you can decide whether to forcibly block add-ins that are crashing for many users. To do so, choose the **Add-in management mode** link at the top of the worksheet.  <br/> <br/>You can also investigate performance issues that might be causing a solution to take a longer time to load than expected on some computers. The load time values that are displayed in this worksheet are statistical averages. Select on of the value links to see individual user load times for a particular document.  <br/> |
 |Telemetry Processor  <br/> |Lists the servers that run a telemetry processor, the number of users and computers that are monitored, and the date and time of the last update.  <br/> |
 |Deployments  <br/> |Lists the versions of Office that are detected and other details, such as architecture type and number of unique instances of each version.  <br/> |
-|Custom report  <br/> |Helps you to create a PivotTable report so that you can customize how you view the data in Telemetry Dashboard. Create a custom report if the **Documents** and **Solutions** worksheets don't display data in the way that you want to view it. To learn more, see [Custom reporting and database schema reference for Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md). You can also watch a video demo called [Custom reporting in Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=296456).  <br/> |
+|Custom report  <br/> |Helps you to create a PivotTable report so that you can customize how you view the data in Telemetry Dashboard. Create a custom report if the **Documents** and **Solutions** worksheets don't display data in the way that you want to view it. To learn more, see [Custom reporting and database schema reference for Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md). <br/> |
 |Getting started  <br/> |Provides step-by-step guidance to deploy Telemetry Dashboard components.  <br/> |
 |Telemetry Dashboard guide  <br/> |Provides a brief tutorial on Telemetry Dashboard concepts.  <br/> |
    
@@ -100,16 +96,27 @@ The following table provides more information about the filters in Telemetry Das
 |:-----|:-----|
 |
 **Label filters**
+- Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.
+- The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Telemetry agent](deploy-telemetry-dashboard.md#agent).
 
-![An image of the label drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_Label1.png)|Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.  <br/> The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Telemetry agent](deploy-telemetry-dashboard.md#agent).  <br/> |
-|
+![An image of the label drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
+
+
 **Date range filter**
+- Use the **Date range** filter to choose the date range for the telemetry data that you want to view. This helps you watch trends over longer periods of time, or drill down and find more recent data for analysis.
+- The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.
+- The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the telemetry database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
 
-![An image of the Date Range drop down box in the Office Telemetry dashboard's navigation pane](../images/ORK_Telem_DateRange.png)|Use the **Date range** filter to choose the date range for the telemetry data that you want to view. This helps you watch trends over longer periods of time, or drill down and find more recent data for analysis.  <br/> The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.  <br/> The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the telemetry database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.  <br/> |
-|
+![An image of the Date Range drop down box in the Office Telemetry dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
+
 **View filter**
+- The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:
+  - **Frequently used** displays all documents or solutions that were used within the selected date range, sorted by total number of users.
+  - **Frequently used by Office 2016** displays all documents or solutions that were used by Office within the selected range, sorted by total number of users of Office.
+  - **Attention items** displays all documents or solutions that have critical issues that were found within the selected date range.
+  - **Stability - Top 400/100** displays the documents (up to 400) or solutions (up to 100) that have success rates that are less than the target threshold (95% for documents, 99.9% for solutions).
 
-![An image of the View drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_ViewBox.png)| The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:  <br/> **Frequently used** displays all documents or solutions that were used within the selected date range, sorted by total number of users.  <br/> **Frequently used by Office 2016** displays all documents or solutions that were used by Office within the selected range, sorted by total number of users of Office.  <br/> **Attention items** displays all documents or solutions that have critical issues that were found within the selected date range.  <br/> **Stability - Top 400/100** displays the documents (up to 400) or solutions (up to 100) that have success rates that are less than the target threshold (95% for documents, 99.9% for solutions).  <br/> |
+![An image of the View drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_ViewBox.png)
    
 ## Determine the overall stability of Office 2016 documents and solutions throughout your organization
 <a name="stability"> </a>
