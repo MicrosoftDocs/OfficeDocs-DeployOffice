@@ -20,10 +20,7 @@ In the **Destination path on the user's computer** box, type the path of the fol
   
 You can select multiple files at once by using the SHIFT and CTRL keys; these files are associated with the same destination folder. You can use the following special folder names in the destination path:
   
-****
 
-|
-|
 |**Destination path**|**Windows location**|
 |:-----|:-----|
 |**[INSTALLLOCATION]** <br/> |The folder in which Office is installed  <br/> |

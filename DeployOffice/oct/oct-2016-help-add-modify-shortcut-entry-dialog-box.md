@@ -43,7 +43,7 @@ In the **Add/Modify Shortcut Entry** dialog box, type the following information 
     
 - **Shortcut key** - Type an optional keyboard shortcut for the application or file. The syntax for the shortcut key is: [modifier+]VK_key, where modifier is SHIFT, CTRL, ALT, or EXT, and VK_key is a virtual key name. 
     
-    The modifier is optional, and you can specify more than one, in any order, separated by plus signs (+). If you use a modifier, it must precede the virtual key name. You must enter one virtual key name. Do not use spaces in the key definition. The following are some examples:
+The modifier is optional, and you can specify more than one, in any order, separated by plus signs (+). If you use a modifier, it must precede the virtual key name. You must enter one virtual key name. Do not use spaces in the key definition. The following are some examples:
     
   - CTRL+VK_F12
     
@@ -51,9 +51,9 @@ In the **Add/Modify Shortcut Entry** dialog box, type the following information 
     
   - ALT+CTRL+VK_SNAPSHOT
     
-    Some key combinations, such as CTRL+ALT+VK_DELETE, might be used by the system and might not start the application as expected. Be careful to avoid conflicts on the user's computer, especially when specifying a shortcut key without a modifier. For example, if you specify VK_A with no modifier, the application runs every time the user types the A key.
+Some key combinations, such as CTRL+ALT+VK_DELETE, might be used by the system and might not start the application as expected. Be careful to avoid conflicts on the user's computer, especially when specifying a shortcut key without a modifier. For example, if you specify VK_A with no modifier, the application runs every time the user types the A key.
     
-    You can use the following virtual key names:
+You can use the following virtual key names:
     
    ****
 

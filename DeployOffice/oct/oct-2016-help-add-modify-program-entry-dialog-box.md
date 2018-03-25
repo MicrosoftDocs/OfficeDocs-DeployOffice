@@ -38,7 +38,7 @@ On the **Add installations and run programs** page, if you choose **Add**, the *
 |**[ProgramFIles64Folder]** <br/> |Program Files folder (on 64-bit Windows)  <br/> |
 |**[System64Folder]** <br/> |Windows\System32 folder (on 64-bit Windows)  <br/> |
    
-2. In the **Arguments** box, type a string of command-line options; for example,  `/q /path c:\temp`.
+2. In the **Arguments** box, type a string of command-line options; for example, /q /path c:\temp.
     
 3. Select **Run this program after the Office product has been installed** if you want the program listed in the **Target** box to run after the Office installation is complete. This is the recommended option. If the program does not terminate normally, or if it restarts the computer, the Office installation is not affected. However, programs further down the list do not run. 
     

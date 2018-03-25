@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 If you select **Configure Outlook Anywhere**, and then select **Connect to Exchange Mailbox using HTTP**, you can configure the following options: 
   
-- **Use this URL to connect to the proxy server for Exchange** - Server name URL for the Outlook Anywhere proxy server. Do not enter http://or https:// as part of the name. The appropriate entry (http:// or https://) is included automatically in the box after you enter the name, based on the authentication settings you choose. 
+- **Use this URL to connect to the proxy server for Exchange** - Server name URL for the Outlook Anywhere proxy server. Do not enter http:// or https:// as part of the name. The appropriate entry (http:// or https://) is included automatically in the box after you enter the name, based on the authentication settings you choose. 
     
 - **Connect using SSL only** - Select this option to connect using Secured Sockets Layer only. If you want to support both server authentication and client authentication, select: 
     
