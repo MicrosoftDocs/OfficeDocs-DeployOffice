@@ -24,7 +24,7 @@ Use Group Policy to push registry changes that associate a certificate with pass
   
 |||
 |:-----|:-----|
-|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you want information about passwords in a personal copy of Office 2016, [Add or remove protection in your document, workbook, or presentation](https://go.microsoft.com/fwlink/p/?LinkId=268111)  <br/> |
+|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you want information about passwords in a personal copy of Office 2016, [Add or remove protection in your document, workbook, or presentation](https://go.microsoft.com/fwlink/p/?LinkId=268111). <br/> |
 |![Are you an admin?](../images/IconAdmin.jpg)           <br/> |If you are an IT Professional looking to remove or reset passwords in Office 2016 files within your organization, for example if an employee has left the organization and you do not know the password, you're at the right place, keep reading.  <br/> |
    
     
@@ -181,11 +181,11 @@ The IT admin computer does not have to have key and subkey in the registry, nor 
     
 2. Download and install the Office DocRecrypt tool. This tool is available in the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626081). 
     
-    When you install the Office DocRecrypt tool on a 64-bit computer, it is installed in the following location:
+- When you install the Office DocRecrypt tool on a 64-bit computer, it is installed in the following location:
     
    - %programfiles(x86)%\Microsoft Office\DOCRECRYPT
     
-    When you install the Office DocRecrypt tool on a 32-bit computer, it is installed in the following location:
+ - When you install the Office DocRecrypt tool on a 32-bit computer, it is installed in the following location:
     
    - %programfiles%\Microsoft Office\DOCRECRYPT
     
