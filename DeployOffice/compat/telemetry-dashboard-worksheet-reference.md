@@ -22,37 +22,10 @@ description: "Find reference information about Telemetry Dashboard worksheets th
   
 As you use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the telemetry agents and processors.
   
-  
-In this article:
-  
-- [Overview worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_OverviewWorksheet)
-    
-- [Documents worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_DocumentsWorksheet)
-    
-  - [Document details worksheet](telemetry-dashboard-worksheet-reference.md#document_details)
-    
-  - [Document issues worksheet](telemetry-dashboard-worksheet-reference.md#document_issues)
-    
-  - [Document sessions worksheet](telemetry-dashboard-worksheet-reference.md#document_sessions)
-    
-- [Solutions worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_SolutionsWorksheet)
-    
-  - [Solution details worksheet](telemetry-dashboard-worksheet-reference.md#solution_details)
-    
-  - [Solution issues worksheet](telemetry-dashboard-worksheet-reference.md#solution_issues)
-    
-  - [Solution sessions worksheet](telemetry-dashboard-worksheet-reference.md#solution_sessions)
-    
-- [Telemetry Processor worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_TelemetryProcessorWorksheet)
-    
-- [Agents worksheet](telemetry-dashboard-worksheet-reference.md#agents)
-    
-- [Deployments worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_DeploymentsWorksheet)
-    
-- [Custom report worksheet](telemetry-dashboard-worksheet-reference.md#custom_report)
-    
-## Overview worksheet
+     
 <a name="bkmk_OverviewWorksheet"> </a>
+
+## Overview worksheet
 
 The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screen shot shows the Overview worksheet: 
   
@@ -60,7 +33,7 @@ The **Overview** worksheet provides a big picture view of both the stability and
 
 ![An screenshot of the main Overview worksheet view on the Office Telemetry dashboard.](../images/ORK_Telem_OverviewWSmain.png)
   
-There are three primary tasks that you can perform on the **Overview** worksheet. These correspond to sections that appear in this article. 
+There are three primary tasks that you can perform on the **Overview** worksheet.
   
 - [Determine the overall stability of Office 2016 documents and solutions throughout your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#stability)
     
@@ -68,8 +41,9 @@ There are three primary tasks that you can perform on the **Overview** worksheet
     
 - [View the progress of Office 2016 deployments in your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#deploystatus)
     
-## Documents worksheet
 <a name="bkmk_DocumentsWorksheet"> </a>
+
+## Documents worksheet
 
 The **Documents** worksheet in Telemetry Dashboard displays the list of documents that was collected by telemetry logging and by Telemetry Agent scans. In this worksheet, you can find frequently used documents and telemetry data about them. 
   
@@ -123,8 +97,9 @@ The following table describes each column in the **Documents** worksheet.
    
 The following sections describe worksheets that help you drill down into specific issues. These worksheets appear after you select links within the **Documents** worksheet. 
   
-### Document details worksheet
 <a name="document_details"> </a>
+
+## Document details worksheet
 
 The **Document details** worksheet appears after you select a link under **Office usage** on the **Documents** worksheet. The **Document details** worksheet helps you see which users are frequently using a document. 
   
@@ -144,7 +119,7 @@ The following table describes each column in the **Document details** worksheet.
 |User domain  <br/> |Displays the domain name for this user.  <br/> |
 |Computer name  <br/> |Displays the computer name that was used to open the document.  <br/> |
 |Computer domain  <br/> |Shows the computer's domain name.  <br/> |
-|Location  <br/> |Shows the file path of the document.  <br/> Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path of the document.  <br/><br/>  Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
 |Size (KB)  <br/> |Shows the file size of the document.  <br/> |
 |Author  <br/> |Shows the author name of the document.  <br/> |
 |VBA  <br/> |Indicates whether the document contains VBA code.  <br/> |
@@ -156,8 +131,9 @@ The following table describes each column in the **Document details** worksheet.
 |Title  <br/> |Shows the title of the document.  <br/> |
 |Office version  <br/> |Shows the version of Office that was used to open the document.  <br/> |
    
-### Document issues worksheet
 <a name="document_issues"> </a>
+
+## Document issues worksheet
 
 The **Document issues** worksheet appears after you select a link under **Office 2016 telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
   
@@ -180,8 +156,9 @@ The following table describes each column in the **Document issues** worksheet.
 |Users  <br/> |Shows total number of users who encountered the issue.  <br/> |
 |Sessions  <br/> |Shows total number of sessions that encountered the issue.  <br/> |
    
-### Document sessions worksheet
 <a name="document_sessions"> </a>
+
+## Document sessions worksheet
 
 The **Document sessions** worksheet shows the sessions during which an issue occurred. You can open this worksheet by selecting a link in the **Sessions** column of the **Document issues** worksheet. 
   
@@ -203,7 +180,7 @@ The following table describes each column in the **Document sessions** worksheet
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
 |Computer name  <br/> |Shows the name of the computer where the document encountered the issue.  <br/> |
 |Computer domain  <br/> |Shows the computer's domain name.  <br/> |
-|Location  <br/> |Shows the file path where the selected document was opened.  <br/> Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path where the selected document was opened.  <br/><br/>  Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
 |Office version  <br/> |Shows the version of Office that was used to open this document.  <br/> |
 |Documents loaded  <br/> |Shows the list of documents that were being used when the issue occurred.  <br/> |
 |Size (KB)  <br/> |Shows the size of the document.  <br/> |
@@ -215,8 +192,9 @@ The following table describes each column in the **Document sessions** worksheet
 |Assembly reference  <br/> |Indicate whether the document contains VSTO document-level customization.  <br/> |
 |Title  <br/> |Shows the title of the document.  <br/> |
    
-## Solutions worksheet
 <a name="bkmk_SolutionsWorksheet"> </a>
+
+## Solutions worksheet
 
 The **Solutions** worksheet displays the list of solutions that was collected by telemetry logging and telemetry agent scans. In this worksheet, you can find frequently used solutions and telemetry data about them. The kinds of solutions that are shown include COM add-ins, application-specific add-ins, and apps for Office. 
   
@@ -276,8 +254,9 @@ The following table describes each column in the **Solutions** worksheet.
    
 The following sections describe worksheets that help you drill down into specific issues. These worksheets appear after you select links within the **Solutions** worksheet. 
   
-### Solution details worksheet
 <a name="solution_details"> </a>
+
+## Solution details worksheet
 
 The **Solution details** worksheet appears after you select a link under **Office usage** on the **Solutions** worksheet. The **Solution details** worksheet helps you see which users are frequently using a solution. 
   
@@ -301,7 +280,7 @@ The following table describes each column in the **Solution details** worksheet.
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
 |Last loaded  <br/> |Shows the last time that the solution was loaded.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> **0** Do not load automatically (Unloaded)  <br/> **1** Do not load automatically (Loaded)  <br/> **2** Load at startup (Unloaded)  <br/> **3** Load at startup (Loaded)  <br/> **8** Load on demand (Unloaded)  <br/> **9** Load on demand (Loaded)  <br/> **16** Load first time, then load on demand (Loaded)  <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0**  Do not load automatically (Unloaded)  <br/> **1**  Do not load automatically (Loaded)  <br/> **2**  Load at startup (Unloaded)  <br/> **3**  Load at startup (Loaded)  <br/> **8**  Load on demand (Unloaded)  <br/> **9**  Load on demand (Loaded)  <br/> **16**  Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Office version  <br/> |Shows the Office version that was used to open the solution.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -311,8 +290,9 @@ The following table describes each column in the **Solution details** worksheet.
 |Size (KB)  <br/> |Shows the size of the solution.  <br/> |
 |Location  <br/> |Shows the file path of the solution.Only one file path is kept per user and computer. If the same user opens the solution from different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
    
-### Solution issues worksheet
 <a name="solution_issues"> </a>
+
+## Solution issues worksheet
 
 The **Solution issues** worksheet appears after you select a link under **Office 2016 telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
   
@@ -335,8 +315,9 @@ The following table describes each column in the **Solution issues** worksheet.
 |Users  <br/> |Shows the number of users who encountered the issue.  <br/> |
 |Sessions  <br/> |Shows the number of sessions that encountered the issue.  <br/> |
    
-### Solution sessions worksheet
 <a name="solution_sessions"> </a>
+
+## Solution sessions worksheet
 
 The **Solution sessions** worksheet shows the sessions during which the issue occurred. You can open this worksheet by selecting a link in the **Sessions** column of the **Solution issues** worksheet. 
   
@@ -362,7 +343,7 @@ The following table describes each column in the **Solution sessions** worksheet
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Office version  <br/> |Shows the Office version with build numbers that used this solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> **0** Do not load automatically (Unloaded)  <br/> **1** Do not load automatically (Loaded)  <br/> **2** Load at startup (Unloaded)  <br/> **3** Load at startup (Loaded)  <br/> **8** Load on demand (Unloaded)  <br/> **9** Load on demand (Loaded)  <br/> **16** Load first time, then load on demand (Loaded)  <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0**  Do not load automatically (Unloaded)  <br/> **1**  Do not load automatically (Loaded)  <br/> **2**  Load at startup (Unloaded)  <br/> **3**  Load at startup (Loaded)  <br/> **8**  Load on demand (Unloaded)  <br/> **9**  Load on demand (Loaded)  <br/> **16**  Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Document loaded  <br/> |Shows the documents that were open when the issue occurred.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -370,10 +351,11 @@ The following table describes each column in the **Solution sessions** worksheet
 |Friendly name  <br/> |Shows the friendly name of the solution.  <br/> |
 |Description  <br/> |Shows the description of the solution.  <br/> |
 |Size (KB)  <br/> |Shows the size of the solution.  <br/> |
-|Location  <br/> |Shows the file path of the solution.  <br/> Only one file path is kept per user and computer. If the same user opens the solution from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path of the solution.  <br/> <br/> Only one file path is kept per user and computer. If the same user opens the solution from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
    
-## Telemetry Processor worksheet
 <a name="bkmk_TelemetryProcessorWorksheet"> </a>
+
+## Telemetry Processor worksheet
 
 The **Telemetry Processor** worksheet displays information about the health of the Office Telemetry infrastructure. You can monitor whether Telemetry Processors are running correctly, and you can check whether users' computers are sending telemetry data correctly. 
   
@@ -390,7 +372,7 @@ The following table describes each column in the **Telemetry Processor** workshe
 |**Column**|**Description**|
 |:-----|:-----|
 |Computer name  <br/> |Lists the names of computers that are running Telemetry Processor. You can select the computer name to see the users whose computers are sending telemetry data to each Telemetry Processor. For more information about this feature, see the **Agents** worksheet later in this article.  <br/> |
-|Level  <br/> |Shows the status of the Telemetry Processor. Depending on the status, you might want to investigate if the Telemetry Processor is running correctly or if the agents on users' computers are configured correctly and uploading data.  <br/> The levels are described in the next table.  <br/> |
+|Level  <br/> |Shows the status of the Telemetry Processor. Depending on the status, you might want to investigate if the Telemetry Processor is running correctly or if the agents on users' computers are configured correctly and uploading data.  <br/><br/>  The levels are described in the next table.  <br/> |
 |Users  <br/> |Shows the number of users whose computers are connected to each Telemetry Processor.  <br/> |
 |Computers  <br/> |Shows the number of computers that connected to each Telemetry Processor.  <br/> |
 |Last updated  <br/> |Shows the last date and time when the Telemetry Processor inserted data into the database.  <br/> |
@@ -403,14 +385,15 @@ The following table describes the status that is represented by the symbols that
 |:-----|:-----|
 |![An image of the status icon indicating that the last update date/time for the Telemetry Processor is less than a day ago.](../images/ORK_Telem_Icon_Green.png)|The last updated date and time for the Telemetry Processor is less than a day ago.  <br/> |
 |![An image of the status icon indicating that 5% or more of the users for this Telemetry Processor are not uploading data for the last 14 days.](../images/ORK_Telem_Icon_Yellow.png)|5% or more of the users for this Telemetry Processor have not uploaded data for the last 14 days. Select the Telemetry Processor name to open the **Agents** worksheet so that you can view which users' computers are not sending telemetry data.  <br/> |
-|![An image of the status icon indicating that the last updated date/time for the Telemetry Processor is older than a day.](../images/ORK_Telem_Icon_Red.png)|The last updated date and time for the Telemetry Processor is older than a day. When you see this status, you should investigate whether the Telemetry Processor is running correctly on the computer. You find information about how to troubleshoot Telemetry Processor in [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
+|![An image of the status icon indicating that the last updated date/time for the Telemetry Processor is older than a day.](../images/ORK_Telem_Icon_Red.png)|The last updated date and time for the Telemetry Processor is older than a day. When you see this status, you should investigate whether the Telemetry Processor is running correctly on the computer. <br/> <br/> You find information about how to troubleshoot Telemetry Processor in [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
 |(No symbol)  <br/> |The last updated date and time for the Telemetry Processor was more than 14 days ago.  <br/> |
    
 > [!NOTE]
 > A Telemetry Processor is deleted from the **Telemetry Processors** worksheet if the **Last updated** value for the Telemetry Processor is 90 or more days ago. 
   
-## Agents worksheet
 <a name="agents"> </a>
+
+## Agents worksheet
 
 The **Agents** worksheet displays information about the users whose computers who are uploading data to each Telemetry Processor. You can open the **Agents** worksheet by selecting a link for a computer name on the **Telemetry Processor** worksheet. Use this worksheet to monitor the upload status of each computer. 
   
@@ -439,14 +422,15 @@ The following table describes the status that is represented by the symbols that
 |:-----|:-----|
 |![An image of the status icon indicating that the last update date/time for the Telemetry Processor is less than a day ago.](../images/ORK_Telem_Icon_Green.png)|The last updated date and time for the user is less than a day ago.  <br/> |
 |![An image of the status icon indicating that 5% or more of the users for this Telemetry Processor are not uploading data for the last 14 days.](../images/ORK_Telem_Icon_Yellow.png)|The last updated date and time for the user is between 2 and 14 days ago. Occasionally, you will see this icon when the user's computer has not uploaded data for more than a day (for example, Monday morning after the weekend).  <br/> |
-|![An image of the status icon indicating that the last updated date/time for the Telemetry Processor is older than a day.](../images/ORK_Telem_Icon_Red.png)|The last updated date and time for the user is between 15 and 30 days ago. When you see this status, you should investigate whether the Telemetry Agent on this user's computer is configured correctly.  <br/> You find information about how to troubleshoot Telemetry Agents in [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
+|![An image of the status icon indicating that the last updated date/time for the Telemetry Processor is older than a day.](../images/ORK_Telem_Icon_Red.png)|The last updated date and time for the user is between 15 and 30 days ago. When you see this status, you should investigate whether the Telemetry Agent on this user's computer is configured correctly.  <br/><br/>  You find information about how to troubleshoot Telemetry Agents in [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
 |(No symbol)  <br/> |The last updated date and time for the Telemetry Processor was 31 or more days ago.  <br/> |
    
 > [!NOTE]
 > A user is deleted from the **Agents** worksheet if the **Last updated** value for the user was 90 or more days ago. 
   
-## Deployments worksheet
 <a name="bkmk_DeploymentsWorksheet"> </a>
+
+## Deployments worksheet
 
 The **Deployments** worksheet provides a tabular view of the number of Office clients that are deployed in your organization. This worksheet provides additional information for the deployment trend chart that is shown in the **Overview** worksheet. This information can help you plan for future Office deployments. 
   
@@ -460,10 +444,11 @@ You can see that there are still 32-bit computers that are running Office 2003. 
   
 Also, you should be aware that Windows 8 is now supported on ARM-based architectures. If your organization has users who have Office on these computers, you can now keep track of that information in the **Deployments** worksheet. You can create custom reports to obtain richer information about who is using these computers, what issues they may be experiencing, and so on. 
   
-## Custom report worksheet
 <a name="custom_report"> </a>
 
-When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Tutorial: PivotTable data analysis using a Data Model in Excel 2013](https://go.microsoft.com/fwlink/?LinkID=279531). 
+## Custom report worksheet
+
+When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Tutorial: PivotTable data analysis using a Data Model in Excel](https://go.microsoft.com/fwlink/?LinkID=279531). 
   
 ## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
