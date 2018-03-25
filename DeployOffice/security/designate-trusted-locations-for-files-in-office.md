@@ -172,9 +172,9 @@ You can use environment variables by using Group Policy and the OCT to specify t
     
 2. Delete the  _Path_ entry. 
     
-3. Create a  _Path_entry of type Expandable String Value (REG_EXPAND_SZ).
+3. Create a  _Path_ entry of type Expandable String Value (REG_EXPAND_SZ).
     
-4. Change the new  _Path_ entry so that it has the same value that you wrote down or copied in the first step. 
+4. Change the new _Path_ entry so that it has the same value that you wrote down or copied in the first step. 
     
     Be sure to make this change for each  _Path_ entry that uses environment variables to specify a trusted location. 
     
@@ -241,7 +241,7 @@ Office 2016 provides a Group Policy setting that you can use to disable trusted 
     
  - Created by using Group Policy.
     
-Enabling this setting also prevents users from configuring trusted locations settings in the Trust Center. If you enable this setting, make sure that you notify users that they can't use trusted locations. If users have been opening files from trusted locations, and you enable this setting, users might start seeing warnings in the Message Bar and they might be required to respond to Message Bar warnings to enable content, such as ActiveX controls, add-ins, and VBA macros.
+  Enabling this setting also prevents users from configuring trusted locations settings in the Trust Center. If you enable this setting, make sure that you notify users that they can't use trusted locations. If users have been opening files from trusted locations, and you enable this setting, users might start seeing warnings in the Message Bar and they might be required to respond to Message Bar warnings to enable content, such as ActiveX controls, add-ins, and VBA macros.
     
 - **Guidelines:** Organizations that have a highly restrictive security environment typically enable this setting. 
     
