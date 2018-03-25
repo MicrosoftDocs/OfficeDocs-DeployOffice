@@ -242,7 +242,7 @@ You can lock many settings to customize IRM by using the Office 2016 Administrat
   
 In Outlook 2016, users can create and send email messages that have restricted permission to help prevent messages from being forwarded, printed, or copied and pasted. Office 2016 documents, workbooks, and presentations that are attached to messages that have restricted permission are also automatically restricted.
   
-As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group. For more information, see [Setting up IRM for Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_SettingUpIRM) in [Protect sensitive messages and documents by using Information Rights Management (IRM) in Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md).
+As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group.
   
 <a name="BKMK_BeforeYouBegin"> </a>
 
