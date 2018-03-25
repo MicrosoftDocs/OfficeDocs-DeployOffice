@@ -94,6 +94,7 @@ You can use the following virtual key names:
 |VK_NUMLOCK  <br/> |90  <br/> |NUM LOCK key  <br/> |
 |VK_SCROLL  <br/> |91  <br/> |SCROLL LOCK key  <br/> |
    
+
 - **Run** - Select the type of window in which the application or file should start ( **Normal window**, **Minimized**, or **Maximized**).
     
 - **Change Icon** - Select a different icon for the shortcut. 

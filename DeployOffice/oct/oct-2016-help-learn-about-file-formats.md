@@ -22,7 +22,7 @@ For more information on the level of support in ODF for commonly used features o
   
 - [Differences between the OpenDocument Spreadsheet (.ods) format and the Excel for Windows (.xlsx) format](https://support.office.com/article/3db958c8-e0ac-49a5-9965-2c2f8afbd960)
     
-- [Supported features in OpenDocument presentation (.odp) format](https://support.office.com/article/f6d5b015-a417-4096-bf61-a5c3f58d125f)
+- [Use PowerPoint to open or save a presentation in the OpenDocument Presentation (.odp) format](https://support.office.com/article/94805e84-1b09-4c98-a8b5-0da2a52242a0)
     
 - [Differences between the OpenDocument Text (.odt) format and the Word (.docx) format](https://support.office.com/article/d9d51a92-56d1-4794-8b68-5efb57aebfdc)
     

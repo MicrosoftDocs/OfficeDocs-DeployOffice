@@ -20,10 +20,8 @@ In the **File path** dialog box, type the path and file name of the file that yo
   
 The path must begin with a drive letter, a UNC path, or one of the following special folders:
   
-****
 
-|
-|
+
 |**Destination path**|**Windows location**|
 |:-----|:-----|
 |**[INSTALLLOCATION]** <br/> |The folder in which Office is installed  <br/> |
