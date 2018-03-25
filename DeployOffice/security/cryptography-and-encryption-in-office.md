@@ -22,28 +22,27 @@ description: "Explains the settings that you can use to encrypt data in Office, 
   
 Office 2016 contains settings that let you control the way that data is encrypted when you use Access 2016, Excel 2016, OneNote 2016, PowerPoint 2016, Project 2016, and Word 2016.
   
-This article discusses cryptography and encryption in Office 2016, describes the settings that you can use to encrypt data, and provides information about compatibility with previous versions of Office. For information about Outlook 2016, see [Plan for e-mail messaging cryptography in Outlook 2010](https://technet.microsoft.com/library/7160c820-c3cd-45ce-ad56-7a7bd444dc75.aspx). 
+This article discusses cryptography and encryption in Office 2016, describes the settings that you can use to encrypt data, and provides information about compatibility with previous versions of Office. 
   
-> [!TIP]
-> **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
-  
+ 
 As you plan your encryption settings, consider the following:
   
-- We recommend that you do  *not*  change the default encryption settings unless your organization's security model requires encryption settings that differ from the default settings. 
+- We recommend that you do not change the default encryption settings unless your organization's security model requires encryption settings that differ from the default settings. 
     
-- We recommend that you enforce password length and complexity to help ensure that strong passwords are used when you encrypt data. For more information, see [Plan password complexity settings for Office 2016](https://technet.microsoft.com/library/afcf5593-2acb-45bb-bfb0-2a21772ecd42.aspx).
+- We recommend that you enforce password length and complexity to help ensure that strong passwords are used when you encrypt data.
     
-- We recommend that you do  *not*  use RC4 encryption. For more information, see [Compatibility with previous versions of Office](cryptography-and-encryption-in-office.md#section3) later in this article. 
+- We recommend that you do not use RC4 encryption. For more information, see [Compatibility with previous versions of Office](cryptography-and-encryption-in-office.md#compat) later in this article. 
     
-- There isn't an administrative setting that forces users to encrypt documents. However, there  *is*  an administrative setting that prevents users from adding passwords to documents and, therefore, prevent documents from being encrypted. For more information, see [Cryptography and encryption settings](cryptography-and-encryption-in-office.md#section2) later in this article. 
+- There isn't an administrative setting that forces users to encrypt documents. However, there  is  an administrative setting that prevents users from adding passwords to documents and, therefore, prevent documents from being encrypted. For more information, see [Cryptography and encryption settings](cryptography-and-encryption-in-office.md#settings) later in this article. 
     
 - Saving documents in trusted locations doesn't affect encryption settings. If a document is encrypted and it is saved in a trusted location, a user still must provide a password to open the document.
     
 - If you do allow users to password protect documents, and they later forget or lose the password, you can use the DocRecrypt tool to reset or remove the password. For more information, see the [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md) article. 
     
     
+<a name="about"> </a>
+
 ## About cryptography and encryption in Office 2016
-<a name="section1"> </a>
 
 The encryption algorithms that are available for you to use with Office depend on the algorithms that can be accessed through the APIs (application programming interfaces) in the Windows operating system. Office 2016, in addition to maintaining support for Cryptography API (CryptoAPI), also includes support for CNG (CryptoAPI: Next Generation), which was first made available in the 2007 Microsoft Office system with Service Pack 2 (SP2).
   
@@ -63,8 +62,9 @@ MD2, MD4, MD5, RIPEMD-128, RIPEMD-160, SHA-1, SHA256, SHA384, and SHA512
   
 Although there are Office 2016 settings to change how encryption is performed, when you encrypt Open XML Format files (.docx, .xslx, .pptx, and so on) the default values — AES (Advanced Encryption Standard), 256-bit key length, SHA1, and CBC (cipher block chaining) — provide strong encryption and should be fine for most organizations. AES encryption is the strongest industry-standard algorithm that is available and was selected by the National Security Agency (NSA) to be used as the standard for the United States Government. AES encryption is supported on Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2003, Windows Server 2003 R2, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
   
+<a name="settings"> </a>
+
 ## Cryptography and encryption settings
-<a name="section2"> </a>
 
 The following table lists the encryption algorithm settings you can use with Office versions that access CryptoAPI. This includes Office versions up to and including Office 2016.
   
@@ -109,8 +109,9 @@ You can use the setting that is listed in the following table to prevent users f
 |:-----|:-----|
 |**Disable password to open UI** <br/> |This setting controls whether Office 2016 users can add passwords to documents. By default users can add passwords.  <br/> |
    
+<a name="compat"> </a>
+
 ## Compatibility with previous versions of Office
-<a name="section3"> </a>
 
 If you have to encrypt Office documents, we recommend that you save the documents as Open XML Format files (.docx, .xlsx, .pptx, and so on) instead of Office 97-2003 format (.doc, .xls, .ppt, and so on). The encryption that is used for binary documents (.doc, .xls, .ppt) uses RC4. It isn't recommended, as discussed in Security Considerations sections 4.3.2 and 4.3.3 of the [Office Document Cryptography Structure Specification](https://go.microsoft.com/fwlink/p/?LinkId=192287). Documents that are saved in the older Office binary formats can only be encrypted by using RC4 to maintain compatibility with older versions of Office. AES, the default and recommended encryption algorithm, is used to encrypt Open XML Format files.
   
