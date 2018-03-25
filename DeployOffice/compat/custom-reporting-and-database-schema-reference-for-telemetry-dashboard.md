@@ -105,7 +105,7 @@ To create a custom report that shows Excel warnings, do the following:
 3. From the Lookup_solutions table, drag Application to the FILTERS well, and then adjust the filter to select Excel. 
 4. From the Lookup_solutions table, drag File name to the ROWS well. |
 
-![Illustrates how a custom report shows Excel issues that have the Warning severity. One column shows the file name, and the other column shows the number of Warning events.](../images/ORK_CR_Excelwarnings.PNG)|
+![Illustrates how a custom report shows Excel issues that have the Warning severity. One column shows the file name, and the other column shows the number of Warning events.](../images/ORK_CR_Excelwarnings.PNG)
    
 <a name="default_tables"> </a>
 
@@ -131,7 +131,7 @@ The following table lists the fields in the **Events** table.
 |**Field name**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |Event ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (scroll down to **Table 2. Types of events displayed in the Telemetry Log**)  <br/> |
+|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (see Table 2)  <br/> |
 |Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table.  <br/> |
 |Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
 |User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table.  <br/> |
