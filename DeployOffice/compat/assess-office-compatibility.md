@@ -23,8 +23,9 @@ description: "Explains how to assess compatibility between versions of Office in
 Keeping an Office deployment project on track requires two key aspects: using the right process to assess Office compatibility, and using tools that help you understand the potential risks of an Office upgrade. Office helps you do both. When you use the process described in this topic with the telemetry tools that are in Office, you can speed up your Office deployments and get users up and running on the new version of Office with minimal disruptions. In this article, you'll learn more about the compatibility process and how Office telemetry fits into this process.
   
     
-## What is Office telemetry?
 <a name="bkmk_whatisofficetelemetry"> </a>
+
+## What is Office telemetry?
 
 Office telemetry is a compatibility monitoring framework introduced in Office 2013 that replaced the Office 2010 compatibility tools Office Migration Planning Manager (OMPM), Office Code Compatibility Inspector (OCCI), and Office Environment Assessment Tool (OEAT). When you use Office telemetry as part of the Office compatibility process, it helps minimize the time that you spend assessing Office compatibility. It also reduces the risks associated with an Office upgrade. 
   
@@ -32,10 +33,9 @@ Office telemetry in Office 2016 works as follows: When an Office document or sol
   
 How does Office telemetry work in earlier versions of Office? Office telemetry is not built into Office 2003, Office 2007, and Office 2010. For those clients, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with Office 2016 clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
   
-If you have questions about how to use Telemetry Dashboard, you can read blog posts about Telemetry Dashboard in the [Office IT Pro blog](https://go.microsoft.com/fwlink/p/?LinkID=260542amp;).
-  
-## Telemetry and the Office compatibility process
 <a name="intro"> </a>
+
+## Telemetry and the Office compatibility process
 
 The Office compatibility tools address common issues that can make Office deployments difficult. These tools help by speeding up deployments, reducing the unknown factors in your deployment through reporting, and lay a foundation for future Office upgrades. For the best results, use the telemetry-based compatibility infrastructure that's built into Office works with a phased approach to assess Office compatibility.
   
@@ -50,8 +50,9 @@ The Office compatibility tools address common issues that can make Office deploy
    
 In this article, we'll discuss each phase of the compatibility process and describe how you can use Office telemetry tools to support the process.
   
-## Phase 1: Discover which Office documents and solutions are being used
 <a name="discover"> </a>
+
+## Phase 1: Discover which Office documents and solutions are being used
 
 Your goal for the Discover phase is to know what's being used the most and by whom. There are two approaches that you can take to start the discovery process.
   
@@ -75,8 +76,9 @@ Some business groups, such as human resources, legal, and finance, might have co
 
 When you deploy Telemetry Agent to clients, you can specify up to four labels that describe the clients. These labels help you filter data in the dashboard so that you can focus on individual business groups, specific kinds of users, users in certain geographical locations, and so on. Develop this list as you work with business groups. You can learn more about how to configure labels when you [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md), in the section [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
   
-## Phase 2: Rationalize the inventory data to identify business-critical Office documents and solutions
 <a name="rationalize"> </a>
+
+## Phase 2: Rationalize the inventory data to identify business-critical Office documents and solutions
 
 The goal of the Rationalize phase is to identify business-critical Office documents and solutions. We recommend that you collect data in Telemetry Dashboard for at least one day before you start to look for trends.
   
@@ -114,8 +116,9 @@ If you haven't worked with business groups yet, this is the time to approach the
    
 When you approach business groups to classify their documents and solutions, you might meet some resistance from business groups that assign everything to the high priority list. One of our Office compatibility experts, Chris Jackson, wrote an article for TechNet Magazine that describes some costs behind Office compatibility testing. You can use this information to help justify reactive testing and ease the emotional fears that often affect Office migrations. Read more at [Microsoft Office: The Mathematics of Office Compatibility](https://go.microsoft.com/fwlink/p/?LinkId=266229).
   
-## Phase 3: Validate that Office files and solutions work
 <a name="validate"> </a>
+
+## Phase 3: Validate that Office files and solutions work
 
 After you complete the Discover and Rationalize phases, it's time to start to test the high priority documents and solutions for compatibility with Office. The goal of the Validate phase is to verify that the solutions and documents work in the environment that users need them to work in. This doesn't mean that the solution or document doesn't have bugs. It just means that the bugs don't prevent users from doing their work. 
   
@@ -142,8 +145,7 @@ It is much easier to transform user acceptance testing into piloting when you us
 > [!IMPORTANT]
 > We recommend that you use side-by-side installations of Office as a temporary solution for user acceptance testing and piloting, not as a long-term solution for production environments. Plan to phase out the earlier version of Office when your production deployments begin. 
   
-You can learn more about Click-to-Run in [Overview of Click-to-Run](https://technet.microsoft.com/library/cbc72706-c7b1-4080-bf2f-5d34aa67df11.aspx).
-  
+
 ### Fix issues in high priority Office documents and solutions
 
 By now you have identified the high priority documents and solutions that have to be ready on day one of deployment, and users have tested them by using Office. In addition to bug reports from users, data in Telemetry Dashboard indicates how Word, Excel, and Microsoft Outlook perform when used with your existing Office documents and solutions. As you collect information about bugs and other issues, work with in-house developers and business group managers to create remediation plans. You'll have to decide whether to retire solutions or fix them (if they were developed in-house) and work with vendors to obtain updated versions (for third-party products).
@@ -155,8 +157,9 @@ Your development teams might have automated testing tools that can help with the
 > [!NOTE]
 > You may wonder whether it's a good idea to substitute vendor support statements with compatibility testing. Chris Jackson covers the cost pros and cons of researching vendor support in his article [Microsoft Office: The Mathematics of Office Compatibility](https://go.microsoft.com/fwlink/p/?LinkId=266229). 
   
-## Phase 4: Manage the transition to the new version of Office
 <a name="manage"> </a>
+
+## Phase 4: Manage the transition to the new version of Office
 
 Your goals for the Manage phase are to use Telemetry Dashboard to monitor Office usage and add-ins and prepare users for the transition to Office. You can also set compatibility mode for Office to ensure that people who are still using earlier versions of Office have full editing capabilities when collaborating with users who have already transitioned to the new version of Office.
   
@@ -172,9 +175,9 @@ Telemetry Dashboard provides an interface for configuring these settings. On the
   
 There are individual add-in management settings for each supported Office application. They are located in the following paths:
   
-- User Configuration\Policies\Administrative Templates\ _Office application name_\Miscellaneous\List of managed add-ins
+- User Configuration\Policies\Administrative Templates\\_Office application name_\Miscellaneous\List of managed add-ins
     
-- User Configuration\Policies\Administrative Templates\ _Office application name_\Miscellaneous\Block all unmanaged add-ins
+- User Configuration\Policies\Administrative Templates\\_Office application name_\Miscellaneous\Block all unmanaged add-ins
     
 ### Phase out earlier versions of Office
 
@@ -184,15 +187,11 @@ We recommend that you run Office 2016 with an older version of Office side-by-si
 
 In Office, compatibility mode is used automatically to open documents that were created in earlier versions of Office applications. Compatibility mode blocks new or improved features in Office for that document. This ensures that users who have earlier versions of Office will still have full editing capabilities when they open the same document. Compatibility mode also preserves the layout of the document.
   
-As part of your overall Office training plan, you should provide guidance to users about how compatibility mode works. For more information on administrative settings for compatibility mode, see [Manage compatibility mode for Office](manage-compatibility-mode-for-office.md). You can find end-user topics about compatibility mode by searching for "Office compatibility mode" on [support.office.com](https://support.office.com).
+As part of your overall Office training plan, you should provide guidance to users about how compatibility mode works. For more information on administrative settings for compatibility mode, see [Manage compatibility mode for Office](manage-compatibility-mode-for-office.md). 
   
 ### Prepare help desk and users for change
 
-Your Help Desk should be ramped up on Office and ready to support users. Here are some resources to help them get up to speed:
-  
-- [Self-paced Office training](https://go.microsoft.com/fwlink/p/?LinkId=266233)
-    
-- [End user training resources for Office and Office 365](https://technet.microsoft.com/library/12c9aa22-73f5-41f1-98bf-1e6351890576.aspx)
+Your Help Desk should be ramped up on Office and ready to support users. They should start by going to the [Office Training Center](https://support.office.com/office-training-center).
     
 ## Related topics
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
@@ -200,7 +199,6 @@ Your Help Desk should be ramped up on Office and ready to support users. Here ar
 [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
   
 [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-
 
 [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=266224)
 

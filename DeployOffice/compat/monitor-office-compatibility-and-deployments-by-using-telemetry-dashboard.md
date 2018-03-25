@@ -22,9 +22,9 @@ description: "Explains how to view the stability of Office documents and solutio
   
 After you deploy the components of Telemetry Dashboard and the telemetry agents have collected data, you can use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Telemetry Dashboard. 
   
+<a name="openTD"> </a>
     
 ## Open Telemetry Dashboard and connect to the telemetry database
-<a name="openTD"> </a>
 
 After the Telemetry Dashboard components are deployed, you are ready to start Telemetry Dashboard and connect to the telemetry database. 
   
@@ -52,8 +52,9 @@ The way you start Telemetry Dashboard depends on the operating system you're usi
     
 After you connect Telemetry Dashboard to the telemetry database, new worksheets are added to display information about Office documents, solutions, and other information. If you haven't yet deployed Telemetry Dashboard components, or if data isn't populating the dashboard as expected, see [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md).
   
-## Navigating in Telemetry Dashboard
 <a name="bkmk_telemetrydashboardlayoutandnavigation"> </a>
+
+## Navigating in Telemetry Dashboard
 
 After all components are deployed and you connect Telemetry Dashboard to the telemetry database, new worksheets are added to display telemetry information about documents, solutions, and other information. The navigation pane on the left side of the Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. 
    
@@ -65,8 +66,9 @@ To learn more about the worksheets in Telemetry Dashboard, visit these resources
     
 - [Custom reporting and database schema reference for Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md) helps you create custom reports in Telemetry Dashboard using a PivotTable report. Custom reports can help you customize how telemetry data is displayed for different business purposes. For example, you can view all Warning errors for Excel in a certain business group, create a list of all solutions that use unregistered ActiveX controls, and more. 
     
-## Learn about the Telemetry Dashboard worksheets
 <a name="worksheets"> </a>
+
+## Learn about the Telemetry Dashboard worksheets
 
 The following table briefly describes the primary worksheets in Telemetry Dashboard. All Telemetry Dashboard worksheets. For more detailed information about the worksheets, see [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
   
@@ -83,8 +85,9 @@ The following table briefly describes the primary worksheets in Telemetry Dashbo
 |Getting started  <br/> |Provides step-by-step guidance to deploy Telemetry Dashboard components.  <br/> |
 |Telemetry Dashboard guide  <br/> |Provides a brief tutorial on Telemetry Dashboard concepts.  <br/> |
    
-## Use filters to adjust what's shown in a Telemetry Dashboard worksheet
 <a name="scope"> </a>
+
+## Use filters to adjust what's shown in a Telemetry Dashboard worksheet
 
 In the navigation pane on the left side of the dashboard, there are filters called **Label1**, **Label2**, **Label3**, **Label4**, **Date range**, and **View**. You can use these filters to change the scope of the data that is shown in a worksheet. Any time that you change a filter, you must select the **Refresh** button ![An image of the button on the Office Telemetry Dashboard that refreshe the data in the content pane.](../images/ORK_Telem_RefreshIcon.png) to refresh the data in the content pane. The **Refresh** button is located in the upper-right corner of most worksheets. When you refresh the data, the sorting order is automatically reset. You can verify when the content pane was last updated by referring to the time stamp that is located below the **Refresh** button on the navigation pane. 
   
@@ -111,8 +114,9 @@ In the navigation pane on the left side of the dashboard, there are filters call
 
   ![An image of the View drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_ViewBox.png)
    
-## Determine the overall stability of Office 2016 documents and solutions throughout your organization
 <a name="stability"> </a>
+
+## Determine the overall stability of Office 2016 documents and solutions throughout your organization
 
 The **Overview** worksheet allows you to quickly understand how your critical documents and solutions (add-ins) are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. 
   
@@ -139,8 +143,9 @@ In addition, the **Overview** worksheet view provides a summary of the top 400 f
 > [!NOTE]
 > Built-in documents and solutions that are provided by Microsoft aren't included in the top documents and solutions counts that are displayed on the **Overview** worksheet. 
   
-## Drill down to investigate unstable documents or solutions that require your attention
 <a name="investigate"> </a>
+
+## Drill down to investigate unstable documents or solutions that require your attention
 
 After you know the number of unstable documents and solutions, you can drill into the details. On the **Overview** worksheet, select a value to see a detailed list of stable or unstable documents or solutions. The following graphic shows how to view the unstable documents by selecting the corresponding value ( **23**) on the **Overview** worksheet. 
   
@@ -163,8 +168,9 @@ Back on the **Overview** worksheet, under the stable and unstable counts, you ca
 
 ![A screenshot of a drill down Overview worksheet on the Office Telemetry dashboard showing unstable vs. stable document summary over an extended period.](../images/ORK_Telem_OverviewStableUnstable.gif)
   
-## View the progress of Office 2016 deployments in your organization
 <a name="deploystatus"> </a>
+
+## View the progress of Office 2016 deployments in your organization
 
 You can track your overall Office deployment progress by looking at the chart at the lower part of the **Overview** worksheet. This shows the number of users who are running each Office version and how the Office deployments have changed over time. By using this chart, you can quickly check the deployment status and share progress with your stakeholders. 
   
@@ -177,13 +183,15 @@ The following image shows an example of the Office deployment trend chart on the
 
 ![A screenshot of deployment trends as displayed on the Overview page in the Office Telemetry dashboard.](../images/ORK_Telem_OverviewDeploymentTrend.png)
   
-## Troubleshoot error messages that are shown in Telemetry Dashboard
 <a name="tshoot"> </a>
+
+## Troubleshoot error messages that are shown in Telemetry Dashboard
 
 As you use Telemetry Dashboard, you might notice error messages that are shown in yellow banners at the top of the dashboard. The following sections describe common error messages. 
   
-### You see the error message "The Telemetry Dashboard COM add-in is not enabled or installed."
 <a name="EnableCOM"> </a>
+
+### You see the error message "The Telemetry Dashboard COM add-in is not enabled or installed."
 
 When you view a worksheet in Telemetry Dashboard, you might see the following message:
   
@@ -207,8 +215,9 @@ To resolve this issue, enable the Telemetry Dashboard COM add-in that is availab
   
 4. Reopen the Telemetry Dashboard Excel worksheet that had the error message.
     
-### You see the error message "Telemetry Processor service(s) have errors."
 <a name="TPError"> </a>
+
+### You see the error message "Telemetry Processor service(s) have errors."
 
 When you view a worksheet in Telemetry Dashboard, you might see the following message:
   
