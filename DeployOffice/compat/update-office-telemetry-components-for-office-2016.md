@@ -77,7 +77,8 @@ The following two procedures describe two options for installing the telemetry p
     
 Complete the next procedure for each computer that runs Telemetry Processor. The **Office Telemetry Processor settings** wizard is started as part of the previous procedures. 
   
-<a name="configure"> </a
+<a name="configure"> </a>
+
 ## To configure the telemetry processor and update the telemetry database
 
 1. Select **Next** in the **Office Telemetry Processor settings** wizard. 
