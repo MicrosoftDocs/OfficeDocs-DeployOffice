@@ -55,7 +55,6 @@ Some key combinations, such as CTRL+ALT+VK_DELETE, might be used by the system a
     
 You can use the following virtual key names:
     
-   ****
 
 |**Virtual key name**|**Hex key code**|**Description**|
 |:-----|:-----|:-----|

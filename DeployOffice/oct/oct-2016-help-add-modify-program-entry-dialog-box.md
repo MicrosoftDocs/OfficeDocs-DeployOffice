@@ -22,7 +22,6 @@ On the **Add installations and run programs** page, if you choose **Add**, the *
     
     Expand the **Target** list to include any of the following standard Windows folders in the path of the executable file. 
     
-   ****
 
 |**Target**|**Windows location**|
 |:-----|:-----|
