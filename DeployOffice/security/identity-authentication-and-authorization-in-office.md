@@ -20,12 +20,6 @@ description: "Describes Office authentication, logon types, and how to use regis
   
  **Audience:** IT Professionals 
   
-Many of the sections in this article are based on the Identity and Authentication in Office poster, which you can [view online](https://go.microsoft.com/fwlink/p/?LinkId=293443) or [download from the Download Center](https://go.microsoft.com/fwlink/p/?LinkId=291303).
-  
-[![Thumbnail of poster: Identity and Authentication](../images/Office2013_Identity-and-Authentication-Model_small.gif)
-  
-](https://go.microsoft.com/fwlink/p/?LinkId=293443)
-
 In the new Office, Office applications are used for both business and non-business activities. A person may use Excel to crunch Q2 widget sales numbers by day and crunch World Cup stats by night, or use Word to write product specifications by day and short stories by night. Because Office is a tool that is used by the same individual in two different roles, the new Office offers two identities with which users can log on to Office 2016: 
   
 - **A Microsoft account,** which most people use for personal business 
@@ -38,12 +32,10 @@ For additional convenience, users can choose to mount an online document service
   
 The very good news is that all of this just works for users, by default, and out of the box. 
   
-> [!TIP]
-> **Are you looking for help about individual Office 2016 applications?** You can find this information by searching on [Office Support](https://support.office.com/). 
-  
-    
+<a name="Bkmk_1_OAuth"> </a>  
+
 ## Office authentication protocols
-<a name="Bkmk_1_OAuth"> </a>
+
 
 In Office, users are authenticated by using Forms-Based Authentication (FBA), Windows Integrated Authentication (WIA), or Passport Server Side Include (SSI) Authentication, also known as "Passport Tweener." In Office 2016, you can still use FBA or WIA, but instead of SSI, we now use the new open standard, token-based Open Authorization 2.0 (OAuth 2.0). See the following table for an overview of the authentication protocols that you can use with Office.
   
@@ -61,7 +53,7 @@ In Office, users are authenticated by using Forms-Based Authentication (FBA), Wi
 
 Two logon types are supported when users sign in to Office 2016, a Microsoft account or an organization ID that is assigned by Microsoft. 
   
- **Microsoft account (the user's individual account).** This account, formerly known as Microsoft ID, is the credential that users use to authenticate with the Microsoft network and is frequently used for personal or non-business work, such as volunteer work. To create a Microsoft account, a user provides a user name and password, certain demographic information, and "account proofs," such as an alternative email address or phone number. For more information about the new Microsoft account, see [What is a Microsoft account?](https://go.microsoft.com/fwlink/p/?LinkId=268357).
+ **Microsoft account (the user's individual account).** This account, formerly known as Microsoft ID, is the credential that users use to authenticate with the Microsoft network and is frequently used for personal or non-business work, such as volunteer work. To create a Microsoft account, a user provides a user name and password, certain demographic information, and "account proofs," such as an alternative email address or phone number.
   
  **An organization ID that is assigned by Microsoft / Office 365 account ID that is assigned by Microsoft.** This account is created for business use. An Office 365 account can be one of three types: a pure Office 365 ID, an Active Directory ID, or an Active Directory Federation Services ID. These are described below: 
   
@@ -93,8 +85,9 @@ Two logon types are supported when users sign in to Office 2016, a Microsoft acc
     
 For on-premises resources, Office 2016 uses the domain\alias user name for authentication. For federated resources, Office 2016 uses the alias@org.onmicrosoft.com user name for authentication.
   
-## Use registry settings to determine which ID types to offer a user at logon
 <a name="Bkmk_2_GPforIDtypes"> </a>
+
+## Use registry settings to determine which ID types to offer a user at logon
 
 By default, when a user attempts to access an Office 2016 resource, Office 2016 includes registry keys that are set to display a user's Microsoft account ID and the organization ID that is assigned by Microsoft. But, you can change this so that only the Microsoft account is displayed, or their organization ID, or neither. This setting is changed in the computer registry.
   
@@ -116,10 +109,11 @@ By default, when a user attempts to access an Office 2016 resource, Office 2016 
 |**3** <br/> |**AD DS only** <br/> |Users can sign in only by using a user ID in Active Directory Domain Services (AD DS) on Windows Server.  <br/> |
 |**4** <br/> |**None allowed** <br/> |Users can't sign in with any ID.  <br/> |
    
-    If you disable, or do not configure, the **Block sign-in to Office** setting, the default setting is 0, which means that users can sign in by using their Microsoft account or one that is assigned by your organization. 
+If you disable, or do not configure, the **Block sign-in to Office** setting, the default setting is 0, which means that users can sign in by using their Microsoft account or one that is assigned by your organization. 
     
-## Use a registry setting to prevent a user from connecting to Office 2016 resources on the Internet
+
 <a name="Bkmk_3_GPfornoInternet"> </a>
+## Use a registry setting to prevent a user from connecting to Office 2016 resources on the Internet
 
 By default, Office 2016 gives users access to Office 2016 files that reside on the Internet. You can change this setting so that a user can't see those resources.
   
@@ -139,8 +133,8 @@ By default, Office 2016 gives users access to Office 2016 files that reside on t
 |1  <br/> |DWORD  <br/> |Allow user to opt in to access of Office 2016 resources on the Internet.  <br/> |
 |2  <br/> |DWORD  <br/> |(Default) Allows the user to access Office 2016 resources on the Internet.  <br/> |
    
-## Delete the Office Profile, and credentials, associated with a removed logon identity
 <a name="Bkmk_4_DeleteCreds"> </a>
+## Delete the Office Profile, and credentials, associated with a removed logon identity
 
 When a user logs into an Office app by using either their Microsoft account ID or their organization ID, a matching Office profile and credentials for that identity are created in the registry. The logon page gives the user the option of removing that identity, just under the "Not user name?" question near the user avatar or photo and name. If users choose to remove one of their identity options, it will be removed from the logon page. But, that corresponding Office profile and credentials will actually remain in the cache for a short time. If this is a security issue, such as when a user is fired from your organization, you should immediately delete that Office profile setting from the registry. To do this, browse to that user's Office profile in the registry, and delete it.
   
@@ -154,8 +148,5 @@ When a user logs into an Office app by using either their Microsoft account ID o
     
 3. From the Identity hive, navigate to the Profiles node, choose that same identity, open the shortcut menu (right-click), and then choose **Delete**.
     
-## Related topics
-[What is a Microsoft account?](https://go.microsoft.com/fwlink/p/?LinkId=268357)
-  
-[OAuth 2.0](https://go.microsoft.com/fwlink/p/?LinkId=268364)
+
 
