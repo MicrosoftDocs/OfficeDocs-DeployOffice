@@ -363,7 +363,7 @@ Adjusts the maximum random delay, in minutes. The agent randomly waits between 0
 #### Use Group Policy to enable and configure the telemetry agent
 <a name="agentpolicy"> </a>
 
-You can also use Group Policy to enable and configure telemetry agents. Download the Group Policy administrative template files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001). The policy settings that are listed in the following table are available in the path **User Configuration\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. 
+You can also use Group Policy to enable and configure telemetry agents. Download the Group Policy administrative template files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001). The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. 
   
 **Telemetry Agent policy settings**
 

@@ -95,7 +95,7 @@ The following table describes the name and path of the Group Policy setting that
 
 |**Setting name**|**Path**|
 |:-----|:-----|
-|Turn on privacy settings in the telemetry agent  <br/> |User Configuration\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard  <br/> |
+|Turn on privacy settings in the telemetry agent  <br/> |User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard  <br/> |
    
 ### Prevent certain applications or solutions from being reported in Telemetry Dashboard
 
@@ -177,7 +177,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
   
 ### To stop telemetry logging by using the Group Policy settings
 
-The policy settings that are listed in the following table are available in the path **User Configuration\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
   
 **Telemetry agent policy settings that disable telemetry logging**
 

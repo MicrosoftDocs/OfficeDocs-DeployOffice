@@ -172,9 +172,9 @@ Telemetry Dashboard provides an interface for configuring these settings. On the
   
 There are individual add-in management settings for each supported Office application. They are located in the following paths:
   
-- User Configuration\Administrative Templates\ _Office application name_\Miscellaneous\List of managed add-ins
+- User Configuration\Policies\Administrative Templates\ _Office application name_\Miscellaneous\List of managed add-ins
     
-- User Configuration\Administrative Templates\ _Office application name_\Miscellaneous\Block all unmanaged add-ins
+- User Configuration\Policies\Administrative Templates\ _Office application name_\Miscellaneous\Block all unmanaged add-ins
     
 ### Phase out earlier versions of Office
 

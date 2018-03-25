@@ -91,7 +91,7 @@ The following figure shows the warning that the user sees after opening a docume
   
 Also, if you use XAdES for a digital signature in Office 2016, the digital signature will not be compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](use-digital-signatures-with-office.md#configsigs) later in this article. 
   
-If you want digital signatures that you create in Office 2016 to be compatible with Office 2003 and earlier versions, you can configure the Group Policy setting, **Legacy format signatures**, and set it to **Enabled**. This Group Policy setting is located under **User Configuration\Administrative Templates\Microsoft Office 2016\Signing**. After you change this setting to **Enabled**, the Office 2016 applications use the Office 2003 binary format to apply digital signatures to Office 97-2003 binary documents that you created in Office 2016. 
+If you want digital signatures that you create in Office 2016 to be compatible with Office 2003 and earlier versions, you can configure the Group Policy setting, **Legacy format signatures**, and set it to **Enabled**. This Group Policy setting is located under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Signing**. After you change this setting to **Enabled**, the Office 2016 applications use the Office 2003 binary format to apply digital signatures to Office 97-2003 binary documents that you created in Office 2016. 
   
 <a name="choosetypes"> </a>
 
