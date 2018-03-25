@@ -43,8 +43,9 @@ The agent doesn't collect any of the following kinds of information:
 - Information about files that are not in the Most Recently Used list.
     
     
-## Office applications from which the telemetry agent collect data
 <a name="TelemetryApps"> </a>
+
+## Office applications from which the telemetry agent collect data
 
 The telemetry agent collects inventory-related data, hardware and software data, and user data in Office 2016, Office 2013, Office 2010, Office 2007, and Office 2003 for the following applications:
   
@@ -76,8 +77,9 @@ For Office 2016 and Office 2013 only, the agent collects telemetry data for the 
     
 - Word
     
-## Telemetry data that is collected by the agent for all computers that it monitors
 <a name="allComputers"> </a>
+
+## Telemetry data that is collected by the agent for all computers that it monitors
 
 The agent collects the following data for all computers that it monitors. This data includes inventory data, user data, and hardware and software data. You can find the list of Office versions and operating systems that the agent supports in [Telemetry agent](deploy-telemetry-dashboard.md#agent).
   
@@ -85,7 +87,7 @@ The agent collects the following data for all computers that it monitors. This d
 
 The agent collects the following data about recently opened Office documents and templates. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
   
- **Documents** worksheet: 
+**Documents** worksheet: 
   
 - File name
     
@@ -95,7 +97,7 @@ The agent collects the following data about recently opened Office documents and
     
 - Number of Office
     
- **Document details** worksheet: 
+**Document details** worksheet: 
   
 - User name
     
@@ -127,7 +129,7 @@ Exceptions to data collected about recently opened Office documents and template
 
 The agent collects the following data about recently loaded add-ins and apps for Office. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
   
- **Solutions** worksheet: 
+**Solutions** worksheet: 
   
 - Solution name
     
@@ -135,7 +137,7 @@ The agent collects the following data about recently loaded add-ins and apps for
     
 - Number of Office users 
     
- **Solution details** worksheet: 
+**Solution details** worksheet: 
   
 - User name
     
@@ -173,7 +175,7 @@ The agent collects the following user data. This data appears in the **Agents** 
 
 The agent collects the following data about hardware and software. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
   
- **Telemetry Processor** worksheet: 
+**Telemetry Processor** worksheet: 
   
 - Computer name
     
@@ -185,7 +187,7 @@ The agent collects the following data about hardware and software. This data is 
     
 - Last updated (date and time)
     
- **Deployments** worksheet: 
+**Deployments** worksheet: 
   
 - Office versions
     
@@ -195,14 +197,15 @@ The agent collects the following data about hardware and software. This data is 
     
 - Number of ARM deployments
     
-## Telemetry data that is collected only for Office 2016 and Office 2013
 <a name="data2016"> </a>
+
+## Telemetry data that is collected only for Office 2016 and Office 2013
 
 In Office 2016 and Office 2013, the agent also collects the following telemetry data for Excel, Microsoft Outlook, PowerPoint, and Word. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
   
 Telemetry data is collected during application run time. If the inventory data was collected by the agent, but the application hasn't started collecting telemetry data, then some data, such as **Success (%)** and **Load time**, won't be shown in the dashboard until the user opens documents or loads solutions during application run time.
   
- **Documents** worksheet: 
+**Documents** worksheet: 
   
 - Success (%)
     
@@ -212,7 +215,7 @@ Telemetry data is collected during application run time. If the inventory data w
     
 - Informative compatibility issue or load failure
     
- **Document details** worksheet: 
+**Document details** worksheet: 
   
 VBA, OLE, external data connection, ActiveX control, and assembly reference information are logged starting from the second time that the user opens the document. This information won't be collected if the user opens the document only one time.
   
@@ -226,11 +229,11 @@ VBA, OLE, external data connection, ActiveX control, and assembly reference info
     
 - Has assembly reference? (true/false)
     
- **Document sessions** worksheet: 
+**Document sessions** worksheet: 
   
 - Date and time that the critical or informative event happened
     
- **Solutions** worksheet: 
+**Solutions** worksheet: 
   
 - Success (%)
     
@@ -242,7 +245,7 @@ VBA, OLE, external data connection, ActiveX control, and assembly reference info
     
 - Load time (time taken to load add-ins or apps for Office)
     
- **Solution issues** worksheet: 
+**Solution issues** worksheet: 
   
 - Event ID
     
