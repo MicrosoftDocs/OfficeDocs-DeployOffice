@@ -80,7 +80,7 @@ Office 2016 provides a setting that enables you to change the security warning s
   
 **Group Policy setting name:** VBA Macro Notification Settings 
   
-- **Description:** This setting controls how applications warn users about Visual Basic for Applications (VBA) macros. You configure this setting on a per-application basis for Access 2016, Excel 2016, PowerPoint 2016, Publisher 2013, Visio 2016, and Word 2016. You can select one of four possible options for this setting: 
+- **Description:** This setting controls how applications warn users about Visual Basic for Applications (VBA) macros. You configure this setting on a per-application basis for Access 2016, Excel 2016, PowerPoint 2016, Publisher 2016, Visio 2016, and Word 2016. You can select one of four possible options for this setting: 
     
   - **Disable all with notification** The application displays the Trust Bar for all macros, whether signed or unsigned. This is the default setting. 
     
@@ -126,7 +126,7 @@ Office 2016 provides a Group Policy setting that enables you to disable VBA. By 
   
 **Group Policy setting name:** Disable VBA for Office applications 
   
-- **Description:** This setting disables VBA in Excel 2016, Outlook 2016, PowerPoint 2016, Publisher 2013, SharePoint Designer 2013, and Word 2016, and prevents any VBA code from running in these applications. You can't configure this setting on a per-application basis. It's a global setting. Enabling this setting doesn't install or remove any VBA-related code from a user's computer. 
+- **Description:** This setting disables VBA in Excel 2016, Outlook 2016, PowerPoint 2016, Publisher 2016, SharePoint Designer 2013, and Word 2016, and prevents any VBA code from running in these applications. You can't configure this setting on a per-application basis. It's a global setting. Enabling this setting doesn't install or remove any VBA-related code from a user's computer. 
     
 - **Impact:** If you enable this setting, VBA code doesn't run. If your organization has business-critical requirements for using documents that have VBA code, don't enable this setting. 
     
