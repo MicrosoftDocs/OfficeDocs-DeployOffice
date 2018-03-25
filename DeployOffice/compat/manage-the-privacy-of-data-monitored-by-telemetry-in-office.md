@@ -26,11 +26,9 @@ The telemetry agent collects inventory, usage, and other application data and up
   
 The telemetry agent is built into Office Professional Plus 2016, and Office 365 ProPlus editions of Office 2016 and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the telemetry agent never generates or collects any telemetry or inventory data until you enable telemetry logging. You can do this by using either the registry or the Group Policy Administrative Templates as described in [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, telemetry data is stored on the local computer under %LocalAppData%\Microsoft\Office16.0\Telemetry\Microsoft\Office\16.0\Telemetry\ and is uploaded periodically to a shared folder.
   
-For a visual representation of the Telemetry Dashboard components and how they work, see [Telemetry in Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=266531). This poster includes a description of all components, a list of what Office files are monitored, how data collection works, and more.
-  
-    
+<a name="Configure"> </a>  
+ 
 ## How to configure privacy and performance settings in Telemetry Dashboard
-<a name="Configure"> </a>
 
 There are several ways that you can configure the level of detail that is displayed for Office files, add-ins, and solutions in Telemetry Dashboard. Some methods, such as changing the reporting threshold, prevent certain information from being shown in Telemetry Dashboard. Other methods prevent the agent from uploading data so that it is never added to the telemetry database. Setting a threshold and preventing certain data from uploading can also help improve the performance of the telemetry database and custom reports.
   
@@ -66,11 +64,11 @@ The following table describes different ways in which file information is disgui
 ||**File name**|**File path**|**Title**|
 |:-----|:-----|:-----|:-----|
 |Actual file details on the monitored client computer  <br/> |Resume_Contoso.xlsx  <br/> |C:\Users\John\Documents  <br/> |Resume_Contoso.docx  <br/> |
-|Merger_Contoso.docx  <br/> |\\FileShare\Operations\FY2016  <br/> |Merger_Contoso.docx  <br/> |
-|FY2016_Layoff.xlsx  <br/> |http:\\sharepoint\sites\HR\SharedDocuments  <br/> |FY2016_Layoff.xlsx  <br/> |
+|Merger_Contoso.docx  <br/> |\\\FileShare\Operations\FY2016  <br/> |Merger_Contoso.docx  <br/> |
+|FY2016_Layoff.xlsx  <br/> |http:\\\sharepoint\sites\HR\SharedDocuments  <br/> |FY2016_Layoff.xlsx  <br/> |
 |10 cures for diseases.pptx  <br/> |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD  <br/> |10 cures for diseases  <br/> |
 |Data that is sent to the shared folder after you enable file obfuscation  <br/> |Re\*\*\*\*\*\*\*\*.xlsx  <br/> |C:\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
-|Me\*\*\*\*\*\*\*\*.docx  <br/> |\\FileShare\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
+|Me\*\*\*\*\*\*\*\*.docx  <br/> |\\\FileShare\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
 |FY\*\*\*\*\*\*\*\*.xlsx  <br/> |http://sharepoint/\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
 |10\*\*\*\*\*\*\*\*.pptx  <br/> |Outlook:\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
    
@@ -109,7 +107,7 @@ The following table describes the registry values that prevent specific applicat
 
 |**Value name**|**Value type**|**Value description and data**|
 |:-----|:-----|:-----|
-|accesssolution  <br/> olksolution  <br/> onenotesolution  <br/> pptsolution  <br/> projectsolution  <br/> publishersolution  <br/> visiosolution  <br/> wdsolution  <br/> xlsolution  <br/> |REG_DWORD  <br/> |Prevents telemetric data for specific Office applications from being reported to Telemetry Dashboard. The agent won't report any data that interacts with the specified application. This includes document files that are used by the application and COM add-ins that are loaded the application. The value names correspond to Office applications as follows:  <br/> accesssolution: Access solutions  <br/> olksolution: Microsoft Outlook solutions  <br/> onenotesolution: OneNote solutions  <br/> pptsolution: PowerPoint solutions  <br/> projectsolution: Project solutions  <br/> publishersolution: Publisher solutions  <br/> visiosolution: Visio solutions  <br/> wdsolution: Word solutions  <br/> xlsolution: Excel solutions  <br/> **Value:** <br/> 1 = Prevent reporting  <br/> 0 = Allow reporting  <br/> Default = 0 (Allow reporting)  <br/> |
+|accesssolution  <br/><br/> olksolution  <br/><br/> onenotesolution  <br/> <br/>pptsolution  <br/> <br/>projectsolution  <br/> <br/>publishersolution  <br/><br/> visiosolution  <br/> <br/>wdsolution  <br/> <br/>xlsolution  <br/> |REG_DWORD  <br/> |Prevents telemetric data for specific Office applications from being reported to Telemetry Dashboard. The agent won't report any data that interacts with the specified application. This includes document files that are used by the application and COM add-ins that are loaded the application. The value names correspond to Office applications as follows: <br/> <br/> accesssolution: Access solutions  <br/><br/> olksolution: Microsoft Outlook solutions  <br/><br/> onenotesolution: OneNote solutions  <br/><br/> pptsolution: PowerPoint solutions  <br/><br/> projectsolution: Project solutions  <br/><br/> publishersolution: Publisher solutions <br/> <br/> visiosolution: Visio solutions  <br/><br/> wdsolution: Word solutions  <br/><br/> xlsolution: Excel solutions  <br/><br/> **Value:** <br/><br/> 1 = Prevent reporting <br/> <br/> 0 = Allow reporting <br/> <br/> Default = 0 (Allow reporting)  <br/> |
    
 The following table describes the registry values that prevent specific solution types from being reported to Telemetry Dashboard.
   
@@ -117,7 +115,7 @@ The following table describes the registry values that prevent specific solution
 
 |**Value name**|**Value type**|**Value description and data**|
 |:-----|:-----|:-----|
-|agave  <br/> appaddins  <br/> comaddins  <br/> documentfiles  <br/> templatefiles  <br/> |REG_DWORD  <br/> |Prevents telemetric data for specific solutions from being reported to Telemetry Dashboard. The value names correspond to Office solution types as follows:  <br/> agave: apps for Office  <br/> appaddins: Application-specific add-ins. These include Excel add-ins such as .xla and xlam, Word add-ins such as .dotm, and PowerPoint add-ins such as .ppa and .ppam.  <br/> comaddins: COM add-ins  <br/> documentfiles: Office document files  <br/> templatefiles: Office template files  <br/> **Value:** <br/> 1 = Prevent reporting  <br/> 0 = Allow reporting  <br/> Default = 0 (Allow reporting)  <br/> |
+|agave  <br/> appaddins <br/> <br/> comaddins<br/>  <br/> documentfiles  <br/><br/> templatefiles  <br/> |REG_DWORD  <br/> |Prevents telemetric data for specific solutions from being reported to Telemetry Dashboard. The value names correspond to Office solution types as follows:  <br/> <br/>agave: apps for Office  <br/> <br/>appaddins: Application-specific add-ins. These include Excel add-ins such as .xla and xlam, Word add-ins such as .dotm, and PowerPoint add-ins such as .ppa and .ppam. <br/> <br/> comaddins: COM add-ins <br/> <br/> documentfiles: Office document files  <br/><br/> templatefiles: Office template files  <br/> **Value:** <br/><br/> 1 = Prevent reporting <br/> <br/> 0 = Allow reporting  <br/><br/> Default = 0 (Allow reporting)  <br/> |
    
 The following example disables reporting for all solution and application types. Save this sample as a .reg file and then remove any applications or solutions that you want to allow reporting for. Otherwise they will all be disabled because their value will be set to 00000001.
   
@@ -155,9 +153,10 @@ The following table describes the name and path of the Group Policy settings tha
 |:-----|:-----|
 |Office applications to exclude from telemetry agent reporting  <br/> |Prevents telemetric data for specific Office applications from being reported to the Telemetry Dashboard.  <br/> |
 |Office solutions to exclude from telemetry agent reporting  <br/> |Prevents telemetric data for specific Office solutions from being reported to the Telemetry Dashboard.  <br/> |
+
+<a name="Disable"> </a>
    
 ## Disable data collection for the telemetry agent
-<a name="Disable"> </a>
 
 To stop collecting data on the local computer, update the registry or set Group Policy settings as follows.
   
@@ -186,8 +185,9 @@ The policy settings that are listed in the following table are available in the 
 |Turn on telemetry data collection  <br/> |Set this setting to Disabled to turn off data collection.  <br/> |
 |Turn on data uploading for the Telemetry Agent  <br/> |Set this setting to Disabled to stop uploading data to the shared folder.  <br/> |
    
-## Delete telemetry and inventory data that is stored on client computers
 <a name="Delete"> </a>
+
+## Delete telemetry and inventory data that is stored on client computers
 
 Disabling logging does not delete the data that has already been collected from a computer. To delete this data on the local client computer, delete the files evt.tbl, sln.tbl, user.tbl that are located under %LocalAppData%\Microsoft\Office16.0\Telemetry\Microsoft\Office\16.0\Telemetry\.
   
