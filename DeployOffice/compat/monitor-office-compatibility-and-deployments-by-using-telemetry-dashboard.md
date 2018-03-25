@@ -88,18 +88,11 @@ The following table briefly describes the primary worksheets in Telemetry Dashbo
 
 In the navigation pane on the left side of the dashboard, there are filters called **Label1**, **Label2**, **Label3**, **Label4**, **Date range**, and **View**. You can use these filters to change the scope of the data that is shown in a worksheet. Any time that you change a filter, you must select the **Refresh** button ![An image of the button on the Office Telemetry Dashboard that refreshe the data in the content pane.](../images/ORK_Telem_RefreshIcon.png) to refresh the data in the content pane. The **Refresh** button is located in the upper-right corner of most worksheets. When you refresh the data, the sorting order is automatically reset. You can verify when the content pane was last updated by referring to the time stamp that is located below the **Refresh** button on the navigation pane. 
   
-The following table provides more information about the filters in Telemetry Dashboard.
-  
-**Telemetry Dashboard filters**
-
-|**Filter**|**Description**|
-|:-----|:-----|
-|
 **Label filters**
 - Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.
 - The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Telemetry agent](deploy-telemetry-dashboard.md#agent).
 
-![An image of the label drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
+  ![An image of the label drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
 
 
 **Date range filter**
@@ -107,7 +100,7 @@ The following table provides more information about the filters in Telemetry Das
 - The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.
 - The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the telemetry database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
 
-![An image of the Date Range drop down box in the Office Telemetry dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
+  ![An image of the Date Range drop down box in the Office Telemetry dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
 
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:
@@ -116,7 +109,7 @@ The following table provides more information about the filters in Telemetry Das
   - **Attention items** displays all documents or solutions that have critical issues that were found within the selected date range.
   - **Stability - Top 400/100** displays the documents (up to 400) or solutions (up to 100) that have success rates that are less than the target threshold (95% for documents, 99.9% for solutions).
 
-![An image of the View drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_ViewBox.png)
+  ![An image of the View drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_ViewBox.png)
    
 ## Determine the overall stability of Office 2016 documents and solutions throughout your organization
 <a name="stability"> </a>
