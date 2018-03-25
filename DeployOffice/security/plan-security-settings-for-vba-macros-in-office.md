@@ -25,22 +25,7 @@ If you want to control the way Visual Basic for Applications (VBA) and VBA macro
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
   
-In this article:
-  
-- [Plan VBA and VBA macro security settings](plan-security-settings-for-vba-macros-in-office.md#about)
-    
-- [Change the Office 2016 security warning settings for VBA macros](plan-security-settings-for-vba-macros-in-office.md#changedefault)
-    
-- [Block VBA macros from running in Word, Excel and PowerPoint files from the Internet in Office 2016](plan-security-settings-for-vba-macros-in-office.md#blockvba)
-    
-- [Disable VBA in Office 2016](plan-security-settings-for-vba-macros-in-office.md#changevba)
-    
-- [Change how Office 2016 VBA macros behave in applications that are started programmatically](plan-security-settings-for-vba-macros-in-office.md#changeauto)
-    
-- [Change how encrypted VBA macros are scanned for viruses in Office 2016](plan-security-settings-for-vba-macros-in-office.md#preventencrypted)
-    
-- [Related Office 2016 VBA macro settings](plan-security-settings-for-vba-macros-in-office.md#addtional)
-    
+
 ## Plan VBA and VBA macro security settings
 <a name="about"> </a>
 

@@ -25,16 +25,7 @@ By validating files, Office 2016 helps prevent file format attacks by scanning O
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
   
-In this article:
-  
-- [Plan how to validate files in Office](prevent-file-format-attacks-by-using-file-validation-in-office.md#about)
-    
-- [Turn off Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md#turnoff)
-    
-- [Change document behavior when validation fails in Office](prevent-file-format-attacks-by-using-file-validation-in-office.md#behavior)
-    
-- [Turn off Office file validation reporting in Office](prevent-file-format-attacks-by-using-file-validation-in-office.md#errorreport)
-    
+
 ## Plan how to validate files in Office
 <a name="about"> </a>
 
@@ -114,11 +105,7 @@ Every time that a file fails validation, Office 2016 collects information about 
 > [!IMPORTANT]
 > Office file validation can occasionally indicate that a file failed validation when, in fact, the file is valid. Validation reporting helps Microsoft improve Office file validation and minimize the occurrence of false positive results. 
   
-## See also
-<a name="errorreport"> </a>
-
-#### 
-
+## Related topics
 [Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
   
 [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)

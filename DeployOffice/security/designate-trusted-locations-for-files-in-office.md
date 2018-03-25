@@ -25,13 +25,6 @@ If you want to differentiate safe files from potentially harmful files, you can 
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
   
-In this article:
-  
-- [Plan trusted locations settings in Office](designate-trusted-locations-for-files-in-office.md#about)
-    
-- [Implement trusted locations in Office 2016](designate-trusted-locations-for-files-in-office.md#implementlocations)
-    
-- [Disable trusted locations in Office 2016](designate-trusted-locations-for-files-in-office.md#disablelocations)
     
 ## Plan trusted locations settings in Office
 <a name="about"> </a>

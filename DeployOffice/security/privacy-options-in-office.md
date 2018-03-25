@@ -25,15 +25,7 @@ The **Welcome to Office** experience lets users enable or disable several Intern
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
   
-In this article:
-  
-- [About planning privacy options for Office](privacy-options-in-office.md#about)
-    
-- [Suppress the Welcome to Office experience](privacy-options-in-office.md#suppress)
-    
-- [Configure privacy options in Office](privacy-options-in-office.md#privacyoptions)
-    
-- [Related privacy options](privacy-options-in-office.md#addtional)
+
     
 ## About planning privacy options for Office
 <a name="about"> </a>
@@ -131,10 +123,6 @@ Several other settings are related to privacy disclosure in Office 2016 applicat
     
 > **Prevent document inspectors from running** This setting lets you disable Document Inspector modules. Document Inspector modules, available in various Office applications since Office 2007, allows users to remove hidden and personal information from their Office documents. 
     
-## See also
-<a name="addtional"> </a>
-
-#### 
-
+## Related topics
 [Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043)
 

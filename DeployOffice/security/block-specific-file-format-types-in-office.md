@@ -33,12 +33,7 @@ File block settings are most frequently used to:
 > [!TIP]
 > **Are you looking for security information about individual Office 2016 applications?** You can find this information by searching for "2016 security" on [Office Support](https://support.office.com). 
   
-In this article:
-  
-- [Planning considerations for configuring file block settings](block-specific-file-format-types-in-office.md#BlockFileFormatTypes)
-    
-- [Group Policy and OCT settings](block-specific-file-format-types-in-office.md#GP-OCT_FileBlockSettings)
-    
+
 ## Planning considerations for configuring file block settings
 <a name="BlockFileFormatTypes"> </a>
 
@@ -190,11 +185,7 @@ The following table lists the file block settings in Group Policy and the OCT th
 |Legacy converters for Word  <br/> |All file formats that are opened through a converter  <br/> |**Do not block:**The file type isn't blocked.  <br/> **Save blocked:** Saving of the file type is blocked.  <br/> **Open/Save blocked, use open policy:** Both opening and saving of the file type is blocked. The file opens based on the configuration of the **Set default file block behavior** setting.  <br/> **Block:** Both opening and saving of the file type is blocked, and the file doesn't open.  <br/> **Open in Protected View:** Both opening and saving of the file type is blocked, and the option to edit the file type is disabled.  <br/> **Allow editing and open in Protected View:** Both opening and saving of the file type is blocked, and the option to edit is enabled.  <br/> |File format type isn't blocked.  <br/> |
 |Office Open XML converters for Word  <br/> |All file formats that are opened through an OOXML converter  <br/> |**Do not block:** The file type isn't blocked.  <br/> **Save blocked:** Saving of the file type is blocked.  <br/> **Open/Save blocked, use open policy:** Both opening and saving of the file type is blocked. The file opens based on the configuration of the **Set default file block behavior** setting.  <br/> **Block:** Both opening and saving of the file type is blocked, and the file doesn't open.  <br/> **Open in Protected View:** Both opening and saving of the file type is blocked, and the option to edit the file type is disabled.  <br/> **Allow editing and open in Protected View:** Both opening and saving of the file type is blocked, and the option to edit is enabled.  <br/> |File format type isn't blocked.  <br/> |
    
-## See also
-<a name="GP-OCT_FileBlockSettings"> </a>
-
-#### 
-
+## Related topics
 [Privacy options in Office 2016](privacy-options-in-office.md)
   
 [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)

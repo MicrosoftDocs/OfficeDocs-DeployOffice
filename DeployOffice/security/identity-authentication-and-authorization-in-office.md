@@ -41,15 +41,6 @@ The very good news is that all of this just works for users, by default, and out
 > [!TIP]
 > **Are you looking for help about individual Office 2016 applications?** You can find this information by searching on [Office Support](https://support.office.com/). 
   
-In this article:
-  
-- [Office authentication protocols](identity-authentication-and-authorization-in-office.md#Bkmk_1_OAuth)
-    
-- [Use registry settings to determine which ID types to offer a user at logon](identity-authentication-and-authorization-in-office.md#Bkmk_2_GPforIDtypes)
-    
-- [Use a registry setting to prevent a user from connecting to Office 2016 resources on the Internet](identity-authentication-and-authorization-in-office.md#Bkmk_3_GPfornoInternet)
-    
-- [Delete the Office Profile, and credentials, associated with a removed logon identity](identity-authentication-and-authorization-in-office.md#Bkmk_4_DeleteCreds)
     
 ## Office authentication protocols
 <a name="Bkmk_1_OAuth"> </a>
@@ -163,11 +154,7 @@ When a user logs into an Office app by using either their Microsoft account ID o
     
 3. From the Identity hive, navigate to the Profiles node, choose that same identity, open the shortcut menu (right-click), and then choose **Delete**.
     
-## See also
-<a name="Bkmk_4_DeleteCreds"> </a>
-
-#### 
-
+## Related topics
 [What is a Microsoft account?](https://go.microsoft.com/fwlink/p/?LinkId=268357)
   
 [OAuth 2.0](https://go.microsoft.com/fwlink/p/?LinkId=268364)

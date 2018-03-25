@@ -29,13 +29,6 @@ This article includes digital signature registry keys that are new to Office 201
 > [!TIP]
 > **Are you looking for help with digital signature settings in Office 2016 on your desktop?** You may be looking for one of these articles, which will help you secure Office 2016 on your desktop. > [Digital signatures and certificates](https://go.microsoft.com/fwlink/p/?LinkId=267578)> [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=267579)> [Get a digital ID](https://go.microsoft.com/fwlink/p/?LinkId=267580)
   
-In this article:
-  
-- [Introduction to digital signatures and how they are used in Office](use-digital-signatures-with-office.md#section1)
-    
-- [Choosing digital certificate types for Office 2016](use-digital-signatures-with-office.md#section2a)
-    
-- [Planning digital signature levels in Office 2016 documents](use-digital-signatures-with-office.md#section3a)
     
 ## Introduction to digital signatures and how they are used in Office
 <a name="section1"> </a>
@@ -210,11 +203,7 @@ The following table shows Windows registry settings that are specific to digital
 |LegacyRSABits  <br/> |DWORD  <br/> |Empty  <br/> |Specifies the minimum number of bits that will be processed in a legacy RSA digital signature. Legacy refers to a digital signature that was created for a document or email by using Office 2007 or Office 2010 and where the hash algorithm was specified in the LegacyHashAlg registry key setting.  <br/> |
 |MinSigningRSABits  <br/> |DWORD  <br/> |Empty  <br/> |Specifies the minimum number of bits that will be used to create a digital signature in Office 2016.  <br/> |
    
-## See also
-<a name="section3a"> </a>
-
-#### 
-
+## Related topics
 [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631)
   
 [Office 2016 Administrative Template files (ADMX/ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001)

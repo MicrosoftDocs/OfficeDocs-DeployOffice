@@ -27,17 +27,6 @@ Change how the sandbox preview feature in Office 2016 behaves by configuring Pro
 |![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you are looking for information on protected view in individual Office 2016 applications, see [What is Protected View](https://go.microsoft.com/fwlink/p/?LinkId=393945) instead.  <br/> |
 |![Are you an admin?](../images/IconAdmin.jpg)           <br/> |If you are an IT Professional and planning to configure Protected View settings for Office 2016 in your organization, **you're at the right place**, keep reading.  <br/> |
    
-In this article:
-  
-- [Plan Protected View settings in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md#about)
-    
-- [Prevent files from opening in Protected View in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md#bypass)
-    
-- [Force files to open in Protected View in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md#force)
-    
-- [Add files to the list of unsafe files](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md#unsafe)
-    
-- [Add trusted Microsoft Store applications](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md#windowsstore)
     
 ## Plan Protected View settings in Office 2016
 <a name="about"> </a>
@@ -144,11 +133,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Office\Common\Security\TrustedStoreApps\
   
 Contact the developer of the application in order to obtain the PFN of the application you want to add to the Trusted Microsoft Store application. This is a global setting that applies to Excel 2016, PowerPoint 2016, and Word 2016.
   
-## See also
-<a name="windowsstore"> </a>
-
-#### 
-
+## Related topics
 [Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
   
 [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)

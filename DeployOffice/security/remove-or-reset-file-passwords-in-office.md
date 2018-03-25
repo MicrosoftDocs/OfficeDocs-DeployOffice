@@ -27,17 +27,6 @@ Use Group Policy to push registry changes that associate a certificate with pass
 |![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you want information about passwords in a personal copy of Office 2016, see [protect your documents with passwords and permissions](https://go.microsoft.com/fwlink/p/?LinkId=393748) instead.  <br/> See [remove a password from a document](https://go.microsoft.com/fwlink/p/?LinkId=393749) for an additional example.  <br/> |
 |![Are you an admin?](../images/IconAdmin.jpg)           <br/> |If you are an IT Professional looking to remove or reset passwords in Office 2016 files within your organization, for example if an employee has left the organization and you do not know the password, you're at the right place, keep reading.  <br/> |
    
-In this article:
-  
-- [Overview: removing or resetting a file password in Office 2016 using the DocRecrypt tool](remove-or-reset-file-passwords-in-office.md#BKMK_Overview)
-    
-- [Set up client computers for password protection removal](remove-or-reset-file-passwords-in-office.md#BKMK_SetUpClientComputers)
-    
-- [Set up the IT admin computer that has the key and DocRecrypt tool](remove-or-reset-file-passwords-in-office.md#BKMK_SetUpTheITAdminComputer)
-    
-- [Use the Office DocRecrypt tool](remove-or-reset-file-passwords-in-office.md#BKMK_UsetheDocRecryptTool)
-    
-- [Office 2010 and 2007 files](remove-or-reset-file-passwords-in-office.md#BK_officeEarly)
     
 ## Overview: removing or resetting a file password in Office 2016 using the DocRecrypt tool
 <a name="BKMK_Overview"> </a>

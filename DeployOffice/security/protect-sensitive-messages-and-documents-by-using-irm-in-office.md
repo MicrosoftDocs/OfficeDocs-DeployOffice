@@ -25,17 +25,6 @@ IRM allows individuals and administrators to specify who can access documents, w
 > [!TIP]
 > **Are you looking for help about individual Office 2016 applications?** You can find this information by searching on [Office Support](https://support.office.com/). 
   
-In this article:
-  
-- [IRM overview](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_WhatIsIRM)
-    
-- [How IRM works in Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_HowIRMWorks)
-    
-- [Setting up IRM for Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_SettingUpIRM)
-    
-- [Configuring IRM settings for Office 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_ConfiguringIRMForOffice)
-    
-- [Configuring IRM settings for Outlook 2016](protect-sensitive-messages-and-documents-by-using-irm-in-office.md#BKMK_ConfiguringIRMOutlook)
     
 ## IRM overview
 <a name="BKMK_WhatIsIRM"> </a>
@@ -292,10 +281,6 @@ By default, Outlook 2016 automatically downloads the IRM license for rights-mana
     
 4. Choose **OK**.
     
-## See also
-<a name="BKMK_ConfigureAutomaticLicenseCaching"> </a>
-
-#### 
-
+## Related topics
 [Active Directory Rights Management Services](https://go.microsoft.com/fwlink/p/?LinkId=180006)
 

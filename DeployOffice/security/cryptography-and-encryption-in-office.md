@@ -41,13 +41,6 @@ As you plan your encryption settings, consider the following:
     
 - If you do allow users to password protect documents, and they later forget or lose the password, you can use the DocRecrypt tool to reset or remove the password. For more information, see the [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md) article. 
     
-In this article:
-  
-- [About cryptography and encryption in Office 2016](cryptography-and-encryption-in-office.md#section1)
-    
-- [Cryptography and encryption settings](cryptography-and-encryption-in-office.md#section2)
-    
-- [Compatibility with previous versions of Office](cryptography-and-encryption-in-office.md#section3)
     
 ## About cryptography and encryption in Office 2016
 <a name="section1"> </a>
@@ -135,13 +128,8 @@ If your organization uses the Microsoft Office Compatibility Pack for Word, Exce
     
 - Users can't use the graphical user interface in earlier versions of Office to change the encryption settings for Open XML Format files.
     
-## See also
-<a name="section3"> </a>
-
-#### 
-
+## Related topics
 [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md)
-#### 
 
 [Office Document Cryptography Structure Specification](https://go.microsoft.com/fwlink/p/?LinkId=192287)
 
