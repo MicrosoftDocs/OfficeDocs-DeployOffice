@@ -20,8 +20,6 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
   
  **Audience:** IT Professionals 
   
-This article describes prerequisites, deployment procedures, answers to frequently asked questions, and troubleshooting for Telemetry Dashboard.
-  
 This article helps you deploy the five components of Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
   
 > [!IMPORTANT]
