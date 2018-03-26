@@ -6,14 +6,12 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: 936cda26-41f9-45b5-a1f9-f9e1f485d23b

@@ -6,14 +6,12 @@ manager: laurawi
 ms.date: 7/19/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: 4dd6a023-0a5d-4dc9-9bad-ff70e01840b8
@@ -80,7 +78,7 @@ An application in Configuration Manager must contain at least one [deployment ty
   
 For the Office 365 ProPlus application, the deployment type includes the following:
   
-- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet. For example, \\server1\share1.
+- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet. For example, \\\\server1\share1.
     
 - The command line that gets the Office Deployment Tool to start the installation of Office 365 ProPlus.
     

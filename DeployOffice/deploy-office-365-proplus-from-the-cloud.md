@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
@@ -51,13 +51,13 @@ We'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN.
   
  **Step 1: Create a shared folder**
   
-Create the shared folder **\\Server\Share\O365** and assign read permissions for your users.
+Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users.
   
 You can create whatever structure works for your organization, of course, but we'll refer to this setup in our examples. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
   
  **Step 2: Download the Office Deployment Tool**
   
-Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
+Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
   
 After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
   
@@ -65,7 +65,7 @@ After downloading the file, run the self-extracting executable file, which conta
   
 To download and deploy Office 365 ProPlus for group 1, we'll create a configuration file that defines the appropriate settings for the Office Deployment Tool.
   
-Using a text editor, copy and paste the following into a text file and save it as **config-group1-SAC.xml** in the \\server\share\O365 folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-group1-SAC.xml** in the \\\\server\share\O365 folder.
   
 ```
 <Configuration> 
@@ -96,7 +96,7 @@ Note that the Office installation files and Office updates will come from Semi-A
   
  **Step 4: Create a configuration file for group 2**
   
-Using a text editor, copy and paste the following into a text file and save it as **config-group2-SACT.xml** in the \\Server\Share\O365 folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-group2-SACT.xml** in the \\\\Server\Share\O365 folder.
   
 ```
 <Configuration> 
@@ -124,7 +124,7 @@ For more information about the configuration options, see [Configuration options
 
 To deploy Office, we'll provide two commands that users can run from their client computers. The first command installs Office for client computers in group 1 and the second for group 2. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer.
   
-Users who run these commands must have local admin privileges on their computer and must have read permissions to the share (\\server\share\O365, in our case).
+Users who run these commands must have local admin privileges on their computer and must have read permissions to the share (\\\\server\share\O365, in our case).
   
 Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers.
   

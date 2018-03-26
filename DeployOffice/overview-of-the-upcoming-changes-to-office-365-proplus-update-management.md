@@ -6,12 +6,10 @@ manager: laurawi
 ms.date: 10/11/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Once
+ms.service: o365-proplus-itpro
+localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- apr17entnews
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 78b33779-9356-4cdf-9d2c-08350ef05cca
 description: "On April 20th, we announced some changes to better align the Office 365 ProPlus and Windows 10 update models. In that blog post, we highlighted these key changes:"
 ---
