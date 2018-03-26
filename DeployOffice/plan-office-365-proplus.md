@@ -3,7 +3,7 @@ title: "Plan your Deployment of Office 365 ProPlus with System Center Configurat
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 2/15/2018
+ms.date: 3/30/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -18,15 +18,13 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 # Plan your deployment of Office 365 ProPlus
 
-In this article, you choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud.
+Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud.
 
 ![Deployment framework for Office 365 ProPlus](images/plan-office-365-proplus-01.png)
 
 ## Before you begin 
 
 If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of planning your deployment.
-
-In addition to this guidance, we recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment.
 
 ![Deploy with ODT or Configuration Manager](images/plan-office-365-proplus-03.png)
 
@@ -105,9 +103,9 @@ With this approach, you can test new Office features in your environment, partic
 
 ## Step 4 - Define your source files
 
-When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages. For example, to deploy to two channels and both architectures, you create four packages: 
+When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two channels and both architectures, you create four packages: 
 
-- Semi-Annual Channel for 32-bit
+- Semi-Annual Channel for 32-bit 
 - Semi-Annual Channel for 64-bit
 - Semi-Annual Channel (Targeted) for 32-bit
 - Semi-Annual Channel (Targeted) for 64-bit
@@ -171,7 +169,15 @@ With shared computer activation enabled, any user that has been assigned an Offi
 
 Before beginning your deployment, make sure you've completed the planning exit criteria:
 
-[JASON to add]
+|Plan               |Completed?        |
+|-------------------|------------------|
+|Choose how to deploy                             |**Y/N**|
+|Choose how to manage updates                     |**Y/N**|
+|Choose your update channels                      |**Y/N**|
+|Define your source files                         |**Y/N**|
+|Define your deployment groups                    |**Y/N**|
+|Plan your upgrade                                |**Y/N**|
+|Plan for shared computers                        |**Y/N**|
 
 ## Next step
 
@@ -180,5 +186,5 @@ Depending on your deployment  plan, go to one of the following articles:
 - [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
 - [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 - [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
-- [[ADD  SELF- INSTALL LINK]]
+- [Self-install Office from the cloud](https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)
 

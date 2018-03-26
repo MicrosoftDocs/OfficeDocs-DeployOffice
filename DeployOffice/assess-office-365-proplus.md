@@ -3,7 +3,7 @@ title: "Assess your deployment of Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 2/15/2018
+ms.date: 3/30/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,7 +20,7 @@ description: "This article gives step-by-step instructions for how to assess you
 
 Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment.
 
-In addition to this guidance, we recommend that you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment. FastTrack onboarding services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business plans, as well as with paid Government, Kiosk, and Nonprofit plans.
+In addition to this guidance, we recommend that you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment.
 
 ## Step 1 - Review infrastructure and requirements
 
