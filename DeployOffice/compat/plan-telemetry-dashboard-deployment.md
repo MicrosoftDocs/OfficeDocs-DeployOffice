@@ -95,7 +95,7 @@ The telemetry agent collects inventory, usage, and telemetry data and uploads it
     
 - The "Custom reporting in Telemetry Dashboard" video demonstrates how labels are used in custom reports. This may give you some additional ideas on which labels to choose. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/ed8327e4-c063-40f5-a634-230c067d73b4?autoplay=false]
+   > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed8327e4-c063-40f5-a634-230c067d73b4?autoplay=false]
     
 <a name="topologymusts"> </a>
 
