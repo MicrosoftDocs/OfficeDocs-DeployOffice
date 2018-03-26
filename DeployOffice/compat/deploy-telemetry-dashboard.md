@@ -73,9 +73,9 @@ SQL Server must be deployed before you can configure Telemetry Dashboard. You do
     
 The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2012 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2012 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2012 Express. 
   
-- Ensure that the computer meets the hardware and software requirements for SQL Server 2012. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2012](http://go.microsoft.com/fwlink/p/?LinkID=129377).
+- Ensure that the computer meets the hardware and software requirements for SQL Server 2012. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2012](https://go.microsoft.com/fwlink/p/?LinkID=129377).
     
-- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2012 from the Installation Wizard (Setup)](http://go.microsoft.com/fwlink/p/?LinkID=254657).
+- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2012 from the Installation Wizard (Setup)](https://go.microsoft.com/fwlink/p/?LinkID=254657).
     
 <a name="installsql"> </a>
 

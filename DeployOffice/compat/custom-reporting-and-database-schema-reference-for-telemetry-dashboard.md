@@ -64,7 +64,7 @@ In this video demo, you can see custom reporting in action. We compare data that
   
 If you use large data sets in your custom reports, you might encounter the [2-GB memory limitation](https://go.microsoft.com/fwlink/p/?LinkID=330482) when you use the 32-bit version of Excel 2016. There are a couple ways that you can work around this limitation: 
   
-- Use the 64-bit version of Excel 2016, which doesn't have the 2-GB memory limitation, but does have other drawbacks. See [Choose between the 64-bit or 32-bit version of Office](http://go.microsoft.com/fwlink/p/?LinkId=250955) to learn more. 
+- Use the 64-bit version of Excel 2016, which doesn't have the 2-GB memory limitation, but does have other drawbacks. See [Choose between the 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/p/?LinkId=250955) to learn more. 
     
 - Adjust the reporting threshold in the telemetry database to change how much data is pulled into PowerPivot when custom reports are created, You can learn more about this setting in [How to configure privacy and performance settings in Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure).
     
