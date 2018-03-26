@@ -22,11 +22,6 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
   
 This article describes prerequisites, deployment procedures, answers to frequently asked questions, and troubleshooting for Telemetry Dashboard.
   
-
-<a name="deployoverview"> </a>
-
-## Deploying Telemetry Dashboard components
-
 This article helps you deploy the five components of Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
   
 > [!IMPORTANT]
@@ -276,7 +271,8 @@ The computer running the agent must also run the latest version of the Universal
     
 
 <a name="configure"> </a>
-#### Enabling and configuring the telemetry agent
+
+### Enabling and configuring the telemetry agent
 
 To enable and configure the telemetry agent, you can edit the registry on each monitored client computer in small or test environments. For production environments that contain hundreds or thousands of client computers, you can use Group Policy administrative templates. Two settings, AgentInitWait and AgentRandomDelay, are configurable only in the registry.
   
@@ -348,8 +344,8 @@ The following tables describe each registry value.
 |commonfileshare  <br/> |REG_SZ  <br/> |Specifies the UNC path of the shared folder for storing telemetry data. <br/> <br/> **Value:** <br/><br/> \\\server\share  <br/> |Required  <br/> |
 |tag1  <br/> tag2  <br/> tag3  <br/> tag4  <br/> |REG_SZ  <br/> |Adds custom tags to the Office telemetric data that is sent by the telemetry agent. If you enable this policy setting, the specified custom tags are shown in Telemetry Dashboard, where you can filter the collected data by the tag name. You can replace **tag1**, **tag2**, **tag3**, and **tag4** with custom strings to categorize and filter the collected data (for example, replace **tag1** with a department name, replace **tag2** with the location of the users, and so on). <br/> <br/> **Value:** <br/><br/>  _tag1_ <br/>  _tag2_ <br/>  _tag3_ <br/>  _tag4_ <br/> |Optional  <br/> |
 |enablefileobfuscation  <br/> |REG_DWORD  <br/> |Configures the telemetry agent to disguise, or obfuscate, certain file properties that are reported in telemetric data. If you enable this policy setting, the telemetry agent obfuscates the file name, file path, and title of Office documents before uploading telemetric data to the shared folder. You can learn more about file obfuscation and other privacy settings for Telemetry Dashboard in [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md). <br/> <br/> **Value:** <br/><br/> 0 = Do not obfuscate  <br/> 1 = Obfuscate  <br/> Default = 0 (No obfuscation)  <br/> |Optional  <br/> |
-|AgentInitWait  <br/> |REG_DWORD  <br/> |**IMPORTANT** To avoid affecting network or client performance, decrease this value in test environments only. <br/><br/>Adjusts the time that the agent waits before it scans a client and uploads data to the telemetry shared folder. If this value doesn't exist, the default wait time is 10 minutes (600 seconds). In test environments, you can specify 1 second to remove the delay for testing Windows 7 with Service Pack 1 and earlier clients. We recommend that you set this to at least 60 seconds for computers that run Windows "8." <br/> <br/> **Value:** <br/> <br/> _x_ = Wait time in seconds  <br/> |Optional  <br/> |
-|AgentRandomDelay  <br/> |REG_DWORD  <br/> |**IMPORTANT** To avoid affecting network or client performance, decrease this value in test environments only. <br/><br/> Adjusts the maximum random delay, in minutes. The agent randomly waits between 0 and **AgentRandomDelay** minutes, in addition to the **AgentInitWait** value, before it starts to scan or upload telemetry data. If this value doesn't exist, the agent waits between 0 minutes to 240 minutes. In test environments, you can specify 0 to remove the random delay for testing. <br/> <br/> **Value:** <br/><br/>  _x_ = Random delay in minutes  <br/> |Optional  <br/> |
+|AgentInitWait  <br/> |REG_DWORD  <br/> |**IMPORTANT:** To avoid affecting network or client performance, decrease this value in test environments only. <br/><br/>Adjusts the time that the agent waits before it scans a client and uploads data to the telemetry shared folder. If this value doesn't exist, the default wait time is 10 minutes (600 seconds). In test environments, you can specify 1 second to remove the delay for testing Windows 7 with Service Pack 1 and earlier clients. We recommend that you set this to at least 60 seconds for computers that run Windows "8." <br/> <br/> **Value:** <br/> <br/> _x_ = Wait time in seconds  <br/> |Optional  <br/> |
+|AgentRandomDelay  <br/> |REG_DWORD  <br/> |**IMPORTANT:** To avoid affecting network or client performance, decrease this value in test environments only. <br/><br/> Adjusts the maximum random delay, in minutes. The agent randomly waits between 0 and **AgentRandomDelay** minutes, in addition to the **AgentInitWait** value, before it starts to scan or upload telemetry data. If this value doesn't exist, the agent waits between 0 minutes to 240 minutes. In test environments, you can specify 0 to remove the random delay for testing. <br/> <br/> **Value:** <br/><br/>  _x_ = Random delay in minutes  <br/> |Optional  <br/> |
    
 **Telemetry Agent registry settings under HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedapplications**
 
