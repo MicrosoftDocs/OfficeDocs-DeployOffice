@@ -52,7 +52,7 @@
 # Project & Visio
 ## [Deploy Project](deployment-guide-for-project.md)
 ## [Deploy Visio](deployment-guide-for-visio.md)
-## [Install volume licensed editions](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
+## [Install volume licensed editions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
 # [Office 2016 for Mac](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
