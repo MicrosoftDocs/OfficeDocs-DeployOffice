@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Additional network sources
 
- **Summary:** Specifies additional servers that have a copy of the network installation point. 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary:** Specifies additional servers that have a copy of the network installation point. 
   
 If the original network installation point is unavailable and Setup is installing a feature on demand or repairing Office, then Setup checks the servers in this list in the order specified.
   
