@@ -23,7 +23,7 @@ description: "Office 365 ProPlus is a version of Office that's available through
 Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
-> Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3. > Project and Visio aren't included with Office 365 ProPlus, but are available from other Office 365 plans. > For more information about Office 365 plans, see [https://products.office.com](https://products.office.com) and the[Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961). 
+> Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3. <br/><br/> Project and Visio aren't included with Office 365 ProPlus, but are available from other Office 365 plans.<br/><br/> For more information about Office 365 plans, see [https://products.office.com](https://products.office.com) and the[Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961). 
   
 ## Office 365 ProPlus is similar to other versions of Office
 <a name="BKMK_Similar"> </a>
