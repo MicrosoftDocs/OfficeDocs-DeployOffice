@@ -8,7 +8,7 @@
 ## [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md)
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 ## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+## [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 ## [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 # Manage updates
@@ -18,7 +18,7 @@
 ## [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 ## [Overview of the update process](overview-of-the-update-process-for-office-365-proplus.md)
 ## [Update history](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
-## [Release notes](https://technet.microsoft.com/en-us/office/mt465751)
+## [Release notes](https://technet.microsoft.com/office/mt465751)
 
 # Upgrade 
 ## [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
@@ -49,11 +49,13 @@
 ## [Cloud managed scenario](best-practices/best-practices-cloud-managed-scenario.md)
 ## [Deployment resources](best-practices/best-practices-deployment-resources.md)
 
-
-# [Office 2016 for Mac](../mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
-
 # Project & Visio
-## [Deployment guide for Project 2016](deployment-guide-for-project.md)
-## [Deployment guide for Visio 2016](deployment-guide-for-visio.md)
-## [Install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
-## [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
+## [Deploy Project](deployment-guide-for-project.md)
+## [Deploy Visio](deployment-guide-for-visio.md)
+## [Install volume licensed editions](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
+## [Install different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
+
+# [Office 2016 for Mac](../mac/deployment-guide-for-office-for-mac.md)
+ 
+
+
