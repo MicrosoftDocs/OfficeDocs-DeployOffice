@@ -8,19 +8,20 @@
 
 ## [Compatibility and telemetry in Office](../compat/compatibility-and-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Assess Office compatibility](../compat/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json)
-### [Manage compatibility mode](../compat/manage-compatibility-mode-for-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Plan Telemetry Dashboard deployment](../compat/plan-telemetry-dashboard-deployment.md?toc=/deployoffice/office2016/toc.json)
 ### [Deploy Telemetry Dashboard](../compat/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
-#### [Data that the telemetry agent collects](../compat/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json)
-#### [Telemetry Dashboard worksheet reference](../compat/telemetry-dashboard-worksheet-reference.md?toc=/deployoffice/office2016/toc.json)
-#### [Custom reporting and database schema reference](../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
-#### [Document and solution types monitored by telemetry](../compat/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Update Office Telemetry components for Office 2016](../compat/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json)
 ### [Monitor Office compatibility and deployments](../compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
 ### [Manage add-ins by using Telemetry Dashboard](../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Manage the privacy of data monitored by telemetry](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
-### [Office file format reference](../compat/office-file-format-reference.md?toc=/deployoffice/office2016/toc.json)
-### [XML file name extension reference](../compat/xml-file-name-extension-reference-for-office.md?toc=/deployoffice/office2016/toc.json)
+### [Manage compatibility mode](../compat/manage-compatibility-mode-for-office.md?toc=/deployoffice/office2016/toc.json)
+### [Custom reporting and database schema](../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
+### Reference
+#### [Data that the telemetry agent collects](../compat/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json)
+#### [Document and solution types monitored by telemetry](../compat/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
+#### [Telemetry Dashboard worksheets](../compat/telemetry-dashboard-worksheet-reference.md?toc=/deployoffice/office2016/toc.json)
+#### [Office file formats](../compat/office-file-format-reference.md?toc=/deployoffice/office2016/toc.json)\
+#### [XML file name extensions](../compat/xml-file-name-extension-reference-for-office.md?toc=/deployoffice/office2016/toc.json)
 
 ## Volume activation
 ### [Plan volume activation](../vlactivation/plan-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json)
