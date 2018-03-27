@@ -6,7 +6,7 @@
 ### [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
 ### [Office Training Center](https://support.office.com/office-training-center)
 
-## [Compatibility and telemetry in Office](../compat/compatibility-and-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
+## [Compatibility and telemetry](../compat/compatibility-and-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Assess Office compatibility](../compat/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json)
 ### [Plan Telemetry Dashboard deployment](../compat/plan-telemetry-dashboard-deployment.md?toc=/deployoffice/office2016/toc.json)
 ### [Deploy Telemetry Dashboard](../compat/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
@@ -42,7 +42,7 @@
 ### [Companion proofing languages](companion-proofing-languages-for-office-2016.md)
 ### [Language identifiers and OptionState Id values](language-identifiers-and-optionstate-id-values-in-office-2016.md)
 
-## [Secure and control access to Office](../security/secure-and-control-access-to-office.md?toc=/deployoffice/office2016/toc.json)
+## [Secure and control access](../security/secure-and-control-access-to-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Privacy options](../security/privacy-options-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Remove or reset file passwords](../security/remove-or-reset-file-passwords-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Designate trusted locations for files](../security/designate-trusted-locations-for-files-in-office.md?toc=/deployoffice/office2016/toc.json)
