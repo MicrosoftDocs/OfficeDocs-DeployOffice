@@ -45,7 +45,7 @@ description: Office deployment
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Deploy</h3>
-                                                    <p>Find guidance about how to deploy Office from the cloud, from a local source, and with System Center Configuration Manager.</p>
+                                                    <p>Find guidance about how to deploy Office 365 ProPlus from the cloud, from a local source, and with System Center Configuration Manager.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,18 +91,18 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/best-practices/best-practices">
+                                <a href="/DeployOffice/mac/deployment-guide-for-office-for-mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/best_practices.svg" alt="" />
+                                                        <img src="/DeployOffice/images/office-2016-for-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Best practices</h3>
-                                                    <p>Review the recommended guidance and real-world examples from Microsoft about how to deploy and manage Office 365 ProPlus.</p>
+                                                    <h3>Office 2016 for Mac</h3>
+                                                    <p>Find guidance about deploying Office to Macs in your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,18 +110,18 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx">
+                                <a href="/DeployOffice/office2016/what-s-new-for-admins-in-office-2016">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/deploy_mac_office.svg" alt="" />
+                                                        <img src="/DeployOffice/images/office-2016.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deploy Mac and other versions of Office</h3>
-                                                    <p>Find guidance about deploying Office 2016 for Mac, Project, Visio, and volume licensed versions of Office 2016.</p>
+                                                    <h3>Office 2016</h3>
+                                                    <p>Find guidance about deploying the volume licensed version of Office.</p>
                                                 </div>
                                             </div>
                                         </div>
