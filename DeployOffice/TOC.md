@@ -35,7 +35,6 @@
 ## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
 ## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 ## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
-## [Install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 
 
 # Best practices
@@ -51,4 +50,10 @@
 ## [Deployment resources](best-practices/best-practices-deployment-resources.md)
 
 
+# [Office 2016 for Mac](../mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
 
+# Project & Visio
+## [Deployment guide for Project 2016](deployment-guide-for-project.md)
+## [Deployment guide for Visio 2016](deployment-guide-for-visio.md)
+## [Install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
+## [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
