@@ -55,7 +55,16 @@
 ## [Install volume licensed editions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
-# [Office 2016 for Mac](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
+# Office 2016 for Mac 
+## [Deployment guide](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [What's new for admins](mac/what-s-new-for-admins-in-office-for-mac.md?toc=/deployoffice/toc.json)
+## [Deployment options](mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [Deploy updates](mac/deploy-updates-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [Deploy preferences](mac/deploy-preferences-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [Activation overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [64-bit upgrade](mac/office-2016-for-mac-upgrade-to-64-bit.md?toc=/deployoffice/toc.json)
+## [Update history](https://support.office.com/article/700cab62-0d67-4f23-947b-3686cb1a8eb7)
+## [Release notes](https://support.office.com/article/ed2da564-6d53-4542-9954-7e3209681a41)
  
 
 
