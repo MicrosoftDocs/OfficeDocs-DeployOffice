@@ -20,7 +20,7 @@
 #### [Data that the telemetry agent collects](../compat/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json)
 #### [Document and solution types monitored by telemetry](../compat/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
 #### [Telemetry Dashboard worksheets](../compat/telemetry-dashboard-worksheet-reference.md?toc=/deployoffice/office2016/toc.json)
-#### [Office file formats](../compat/office-file-format-reference.md?toc=/deployoffice/office2016/toc.json)\
+#### [Office file formats](../compat/office-file-format-reference.md?toc=/deployoffice/office2016/toc.json)
 #### [XML file name extensions](../compat/xml-file-name-extension-reference-for-office.md?toc=/deployoffice/office2016/toc.json)
 
 ## Volume activation
