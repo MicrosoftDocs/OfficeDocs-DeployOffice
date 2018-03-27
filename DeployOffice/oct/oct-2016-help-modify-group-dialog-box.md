@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Modify Group dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 When modifying a group, you can select any one or all of the following options in the **Modify Group** dialog box, and then choose **OK**.
   
 Under **Select options for this Send/Receive group**, select the following options:

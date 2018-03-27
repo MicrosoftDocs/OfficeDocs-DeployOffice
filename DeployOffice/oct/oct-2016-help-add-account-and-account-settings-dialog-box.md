@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add Account and Account Settings dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 If you are adding a new account, select the type of account to add, and then choose **Next**.
   
 In the **\<account type\> Settings** dialog box, set the options appropriate for the type of account that you are adding or modifying. Choose **More Settings** for additional configuration options. Choose **Finish** when you are done. 

@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Specify Send/Receive Groups
 
- **Summary**: Define Send/Receive groups for Exchange accounts and folders, and specify the tasks that are performed on each group during a Send/Receive in Outlook. 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Define Send/Receive groups for Exchange accounts and folders, and specify the tasks that are performed on each group during a Send/Receive in Outlook. 
   
 A Send/Receive group contains a collection of Outlook accounts and folders. You can specify different options for Send/Receive groups when Outlook is online and offline.
   

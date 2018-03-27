@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add accounts
 
- **Summary**: Includes new Outlook e-mail accounts in the user's profile.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Includes new Outlook e-mail accounts in the user's profile.
   
 Select **Do not customize Outlook profile and account information** if you do not want to add accounts to the Outlook profile that you are configuring. 
   

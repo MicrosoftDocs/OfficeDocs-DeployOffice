@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Cached Mode
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 Use the following options to configure users' Outlook profiles to use a local copy of the Exchange mailbox. 
   
  **Do not configure Cached Exchange Mode** - By default, Exchange mailboxes can be accessed from the Exchange Server computer, instead of being cached on users' computers in an offline Outlook Data File (.ost). 

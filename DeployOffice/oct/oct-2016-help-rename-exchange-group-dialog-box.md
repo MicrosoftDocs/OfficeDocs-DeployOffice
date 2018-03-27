@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Rename Exchange Group dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 Type the new name of the Exchange send/receive group in the **New Group Name** box, and then choose **OK**.
   
 ## Related topics

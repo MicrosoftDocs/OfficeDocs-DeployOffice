@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Outlook Profile
 
- **Summary**: Customizes users' default Outlook profiles, which are the sets of values in the Windows registry that define user-specific information. 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Customizes users' default Outlook profiles, which are the sets of values in the Windows registry that define user-specific information. 
   
 An Outlook profile can contain multiple e-mail accounts. Users can have multiple Outlook profiles, but you can configure only one profile in the Setup customization file.
   

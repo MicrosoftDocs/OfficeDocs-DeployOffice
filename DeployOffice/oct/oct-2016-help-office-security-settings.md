@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Office security settings
 
- **Summary**: Customizes security settings for Office applications.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Customizes security settings for Office applications.
   
 > [!NOTE]
 > Security settings specified in a Setup customization (.msp) file become the default settings on users' computers; however, users can change them after installation. To help lock down and to enforce security settings, you must use Group Policy. 

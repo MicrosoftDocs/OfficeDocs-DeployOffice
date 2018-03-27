@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add registry entries
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
  **Summary**: Adds or modifies registry entries on users' computers when Office is installed.
   
 To create a list of registry entries to add to users' computers, choose **Add**. To change an entry in the list, select it, and then choose **Modify**. To remove an entry from the list, select it, and then choose **Remove**. Choose **Import** to add a set of entries from a registry file (REG file). If an entry in the REG file duplicates an entry in the list, the OCT prompts you to choose whether to overwrite existing registry entries with those in the REG file. 

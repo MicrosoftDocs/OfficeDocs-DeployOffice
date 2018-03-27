@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Remove registry entries
 
- **Summary**: Removes registry entries from users' computers when Office is installed.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Removes registry entries from users' computers when Office is installed.
   
 To create a list of registry entries to remove from users' computers, choose **Add**. To change an entry in the list, select it, and then choose **Modify**. To remove an entry from the list, select it, and then choose **Remove**.
   

@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Remove files
 
- **Summary**: Removes files from users' computers when Office is installed.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Removes files from users' computers when Office is installed.
   
 Files listed in the **Remove files** list are removed from the user's computer before files listed in the **Add files** list are installed. Therefore, you can delete existing files on a user's computer and replace them with new versions. If the target file on a user's computer has been renamed or modified, an added file with the same name does not replace it. 
   

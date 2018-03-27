@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Program Entry dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 On the **Add installations and run programs** page, if you choose **Add**, the **Add Program Entry** dialog box opens. If you select an entry on the **Add installations and run programs** page, and then choose **Modify**, the **Modify Program Entry** dialog box opens. You can enter the following information in the **Add Program Entry** or **Modify Program Entry** dialog boxes: 
   
 - In the **Target** box, type the path and file name of the executable program. 

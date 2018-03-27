@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Installation location and organization name
 
-***Applies to:*** *Office Professional Plus 2016, Office Standard 2016*
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
 
 **Summary**: Specifies a default installation file location and organization name for all users whose installation includes this customization file for Setup.
   

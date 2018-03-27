@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Set feature installation states
 
- **Summary**: Customizes how Office features are installed on the user's computer.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Customizes how Office features are installed on the user's computer.
   
 To change the installation state of a feature, choose it, and then select the installation state. Some features, called parent features, consist of multiple child features. To view child features, choose the plus sign (+) to the left of the parent feature to expand it.
   

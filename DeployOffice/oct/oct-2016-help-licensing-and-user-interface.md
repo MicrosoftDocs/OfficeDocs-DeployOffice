@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Licensing and user interface
 
- **Summary**: Enters the product key and accepts the end user license agreement (EULA) on behalf of each user who installs Office with this Setup customization file; also sets the user interface display level. 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Enters the product key and accepts the end user license agreement (EULA) on behalf of each user who installs Office with this Setup customization file; also sets the user interface display level. 
   
 These options are recognized by Setup only when Office is first installed on a user's computer.
   

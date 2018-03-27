@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Delete/Modify Registry Entry dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 In the **Delete/Modify Registry Entry** dialog box, type the following information for each registry entry, and then choose **OK**:
   
 - From the **Root** list, select the branch that contains the entries that you want to remove or modify. 

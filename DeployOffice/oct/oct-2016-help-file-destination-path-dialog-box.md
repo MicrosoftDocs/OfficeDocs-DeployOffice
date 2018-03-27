@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: File Destination Path dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 In the **Destination path on the user's computer** box, type the path of the folder where you want the file installed on users' computers, and then choose **OK**.
   
 You can select multiple files at once by using the SHIFT and CTRL keys; these files are associated with the same destination folder. You can use the following special folder names in the destination path:

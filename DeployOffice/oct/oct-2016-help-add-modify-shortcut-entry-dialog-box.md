@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Shortcut Entry dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 In the **Add/Modify Shortcut Entry** dialog box, type the following information for the shortcut that you are creating or modifying, and then choose **OK**:
   
 - **Target** - Specify the application associated with the shortcut by selecting a predefined application keyword or by typing the name and path of the file to which the shortcut will point. If you select an application keyword, the OCT automatically enters information in the remaining boxes. The names in the list correspond to features that you select on the **Set feature installation states** page of the OCT, plus any custom files that you add to the installation on the **Add files** page. If you type a name and path, and the name or path contains a space, you must enclose the entire string in double quotation marks (""). You can add command-line options for the application by using the **Arguments** field. 

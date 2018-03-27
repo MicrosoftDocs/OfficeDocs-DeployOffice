@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Configure shortcuts
 
- **Summary**: Modify or remove default shortcuts to installed Office applications, and add shortcuts to any files installed with Office or already on the user's computer.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Modify or remove default shortcuts to installed Office applications, and add shortcuts to any files installed with Office or already on the user's computer.
   
 To add a new shortcut, choose **Add**. To modify a shortcut in the list, select it, and then choose **Modify**. To remove a shortcut from the list, select it, and then choose **Remove**.
   

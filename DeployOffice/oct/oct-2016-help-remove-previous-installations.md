@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Remove previous installations
 
- **Summary**: Specifies previous versions of Office applications to keep or remove. 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Specifies previous versions of Office applications to keep or remove. 
   
 This option only applies when Office is first installed on a user's computer. By default, Setup removes all previous versions of Office applications. To keep an installed Office application, complete the following steps:
   

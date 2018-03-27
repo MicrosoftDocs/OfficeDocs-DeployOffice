@@ -16,9 +16,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Modify Setup properties
 
- **Summary**: Sets the value of properties that are applied during Office installation.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Sets the value of properties that are applied during Office installation.
   
- You can customize Setup property values only when Office is first installed on a user's computer; values set in a Setup customization file do not take effect if you apply the file to an existing installation. 
+You can customize Setup property values only when Office is first installed on a user's computer; values set in a Setup customization file do not take effect if you apply the file to an existing installation. 
   
 To add a property value, choose **Add**. To modify a property that you have added, select the property, and then choose **Modify**. To remove a property that you have added, select the property, and then choose **Remove**.
   

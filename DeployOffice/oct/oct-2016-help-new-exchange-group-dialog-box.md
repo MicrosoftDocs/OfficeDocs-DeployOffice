@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: New Exchange Group dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 In the **New Group Name** box, type the name of the Exchange send/receive group you are creating, and then choose **OK**.
   
 ## Related topics

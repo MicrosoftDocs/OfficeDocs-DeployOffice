@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Export settings
 
- **Summary**: Saves the existing Outlook profile settings to a PRF file.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Saves the existing Outlook profile settings to a PRF file.
   
 Choose **Export Profile Settings**. In the **Save As** dialog box, type a name for the new PRF file, and then choose **Save**. 
   

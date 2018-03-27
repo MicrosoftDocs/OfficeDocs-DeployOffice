@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Overview
 
-**Applies to:** Office Professional Plus 2016, Office Standard 2016
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
 
 You use the Office Customization Tool (OCT) to customize an installation of Office. When you run the OCT, you choose whether to create a new Setup customization file or open an existing one. If you are creating a new file, the OCT displays a list of the products available on the network installation point. You must select a single product that you want to customize. To start the OCT, type **setup.exe /admin** on the command line. 
   

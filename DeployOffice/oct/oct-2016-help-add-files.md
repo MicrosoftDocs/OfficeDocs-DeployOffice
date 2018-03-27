@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add files
 
- **Summary**: Adds files to users' computers when Office is installed.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Adds files to users' computers when Office is installed.
   
 - To create a list of files to add to a user's computer during installation, choose **Add**, navigate to the file that you want to add to the list, and then choose **Add** again. You can use the SHIFT and CTRL keys to select multiple files at one time. 
     

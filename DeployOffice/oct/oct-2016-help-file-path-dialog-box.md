@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: File Path dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 In the **File path** dialog box, type the path and file name of the file that you want to add to the list of files to remove from the user's computer, and then choose **OK**.
   
 The path must begin with a drive letter, a UNC path, or one of the following special folders:

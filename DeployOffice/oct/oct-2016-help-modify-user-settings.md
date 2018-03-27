@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Modify user settings
 
- **Summary**: Sets the default values of Office application settings for users who install Office with this customization file.
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Sets the default values of Office application settings for users who install Office with this customization file.
   
 1. To configure an application's settings, in the left pane, expand the application folder and subfolders until the setting you want to configure is listed in the details pane.
     

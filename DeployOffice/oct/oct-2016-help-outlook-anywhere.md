@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Outlook Anywhere
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 If you select **Configure Outlook Anywhere**, and then select **Connect to Exchange Mailbox using HTTP**, you can configure the following options: 
   
 - **Use this URL to connect to the proxy server for Exchange** - Server name URL for the Outlook Anywhere proxy server. Do not enter http:// or https:// as part of the name. The appropriate entry (http:// or https://) is included automatically in the box after you enter the name, based on the authentication settings you choose. 

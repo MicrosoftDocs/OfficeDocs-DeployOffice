@@ -16,6 +16,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Registry Entry dialog box
 
+**Applies to:** *Office Professional Plus 2016, Office Standard 2016*
+
 In the **Add/Modify Registry Entry** dialog box, you can configure the following information for each registry entry, and then choose **OK**:
   
 - From the **Root** list, select the branch that contains the entries you want to add or modify. Settings are applied once per user (HKEY_CURRENT_USER) or once per computer (HKEY_LOCAL_MACHINE). Note that you cannot add registry entries to the root of HKEY_USERS or HKEY_LOCAL_MACHINE. 
