@@ -16,7 +16,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Office Customization Tool (OCT) 2016 Help: Installation location and organization name
 
- **Summary**: Specifies a default installation file location and organization name for all users whose installation includes this customization file for Setup.
+***Applies to:*** *Office Professional Plus 2016, Office Standard 2016*
+
+**Summary**: Specifies a default installation file location and organization name for all users whose installation includes this customization file for Setup.
   
 In the **Default installation path** box, type the path to the folder into which Setup installs Office on the user's computer. You can leave the default path, **[ProgramFilesFolder]\Microsoft Office**. 
   
