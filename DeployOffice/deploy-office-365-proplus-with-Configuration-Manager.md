@@ -18,15 +18,12 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 # Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
 
-This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers with System Center Configuration Manager (Current Branch).
-
-> [!IMPORTANT]
-> FROM CHRIS: Is this just meant to provide guidance on deployment or should this article also cover management of updates?  Seems like two seperate topics thus two seperate articles.
+Follow the steps in this article to deploy Office 365 ProPlus to System Center Configuration Manager (Current Branch).
 
 ## Before you begin
-- If you haven't already, complete the [asssessment](assess-deploy-office-365-proplus-with-Configuration-Manager.md) and [planning](plan-office-365-proplus.md) guidance for deploying Office 365 ProPlus.
+- If you haven't already, complete the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) for deploying Office 365 ProPlus.
 - This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/understand/introduction). 
-- Client computers must have Internet access to authentiate Office 365 ProPlus after installation.  
+- Make sure your client devices have Internet access to authentiate Office 365 ProPlus after installation.  
 - End-users who run the Office 365 Installer on the client computer must have administrator priviledges on their device as well as **Read** and **Write** access to the content location share provided in the Configuration Manager wizard.
 > [!IMPORTANT]
 > FROM CHRIS: is the end user running the installer in this case?  I think this is not a requirement because the system is running the installer via the ConfigMgr agent.
