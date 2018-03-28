@@ -52,12 +52,12 @@ description: "The Best Practices Guide includes deployment recommendations and r
 
 ```
 <Configuration>
-   <Add SourcePath="\\\\Server\\Share" OfficeClientEdition="32" >
+   <Add SourcePath="\\Server\Share" OfficeClientEdition="32" >
       <Product ID="O365ProPlusRetail">
          <Language ID="en-us" />
       </Product>
    </Add>
-   <Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share\\Updates" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" />
    <Display Level="Full" AcceptEULA="TRUE" />
 </Configuration> 
 ```
@@ -79,13 +79,13 @@ description: "The Best Practices Guide includes deployment recommendations and r
 
 ```
 <Configuration>
-   <Add SourcePath="\\\\Server\\Share" OfficeClientEdition="32" >
+   <Add SourcePath="\\Server\Share" OfficeClientEdition="32" >
       <Product ID="O365ProPlusRetail"> 
          <Language ID="en-us" />
          <ExcludeApp ID="Word" /> 
       </Product>
    </Add>
-   <Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share\\Updates" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" />
    <Display Level="Full" AcceptEULA="TRUE" />
    <Logging Level="Standard" Path="%temp%" /> 
 </Configuration> 
@@ -111,7 +111,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
 
 ```
 <Configuration>
-   <Add SourcePath="\\\\Server\\Share" OfficeClientEdition="32" >
+   <Add SourcePath="\\Server\Share" OfficeClientEdition="32" >
       <Product ID="O365ProPlusRetail"> 
          <Language ID="en-us" />
       </Product>
@@ -122,7 +122,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
          <Language ID="en-us" /> 
       </Product>
    </Add>
-   <Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share\\Updates" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" />
    <Display Level="NONE" AcceptEULA="TRUE" />
 </Configuration>
 ```
@@ -148,7 +148,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
 
 ```
 <Configuration>
-   <Add SourcePath="\\\\Server\\Share" OfficeClientEdition="32" >
+   <Add SourcePath="\\Server\Share" OfficeClientEdition="32" >
       <Product ID="O365ProPlusRetail">
          <Language ID="en-us" />
       </Product>
@@ -159,7 +159,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
          <Language ID="en-us" />
       </Product>
    </Add>
-   <Updates Enabled="TRUE" UpdatePath="\\\\Server\\Share\\Updates" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" />
    <Display Level="NONE" AcceptEULA="TRUE" />
 </Configuration> 
 ```
@@ -185,7 +185,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
 
 ```
 <Configuration>
-   <Add SourcePath="\\\\Server\\Share" OfficeClientEdition="32" >
+   <Add SourcePath="\\Server\Share" OfficeClientEdition="32" >
       <Product ID="O365ProPlusRetail">
          <Language ID="en-us" />
       </Product>
@@ -196,7 +196,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
          <Language ID="en-us" />
       </Product>
    </Add>
-   <Updates Enabled="FALSE" UpdatePath="\\\\Server\\Share\\Updates" />
+   <Updates Enabled="FALSE" UpdatePath="\\Server\Share\Updates" />
    <Display Level="Full" AcceptEULA="TRUE" />
     <Logging Level="Standard" Path="%temp%" /> 
 </Configuration> 
