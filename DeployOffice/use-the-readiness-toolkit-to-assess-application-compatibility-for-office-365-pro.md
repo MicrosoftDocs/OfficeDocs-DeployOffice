@@ -375,3 +375,23 @@ If an add-in is classified as "Unknown" or "Insufficient data" this means that M
   - Other details, such as the type of add-in, which Office app the add-in is used with, the Prog ID, or the CLSID.
     
 
+<a name="errorinfo"> </a>
+
+### Information sent in an error report to Microsoft
+If there is a problem showing the readiness reports, you will receive a message asking if you want to send an error report to Microsoft. For example, if there is a problem creating a graph in the report or querying the data collected.
+
+By sending an error report to Microsoft, you can help us improve the Readiness Toolkit. The error report sent to Microsoft doesn't contain any personally identifiable information. The following table provides a list of what information is sent to Microsoft in the error report.
+
+ 
+|**Data sent** |**Description**|
+|---------|---------|
+|Module|The VBA module where the error occurred.|
+|Sub/Function name|The name of the sub procedure or function that the error occured in.|
+|Line identifier|The identifier placed at the beginning of the last successfully executed line of code.|
+|Error message|The user message normally output by the error. May be localized for some errors.|
+|Error number|The number identifying the error.|
+|Source name|The name of the object that raised the error. This is not the variable name.|
+|Tool version|The version of the Readiness Toolkit that was being used.|
+|Report GUID|A GUID generated for each report to help filter out repeated errors.|
+|Session ID|The Session ID when the report was created to help correlate it with any errors logged by the Readiness Toolkit.|
+|Excel version|The version of Excel used to view the readiness reports.|
