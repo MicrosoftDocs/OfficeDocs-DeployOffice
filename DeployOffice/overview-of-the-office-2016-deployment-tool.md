@@ -159,6 +159,8 @@ To change where your client computers receive their updates, run the ODT in conf
   
 This article does not cover all the issues related to managing updates for Office in your organization. For more information on that end-to-end scenario, including using Group Policy, see [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md).
   
+<a name="BKMK_excludeorremove"> </a>
+
 ## Exclude or remove Office 365 ProPlus products from client computers
 
 When installing Office 365 ProPlus, you can exclude specific products. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus products except Publisher:
