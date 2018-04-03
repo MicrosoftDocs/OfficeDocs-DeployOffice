@@ -59,7 +59,7 @@ To complete that assessment, do the following:
 
 1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). You can run the Readiness Toolkit on client devices across your entire organization. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
  
-2. Work with your business groups to review the reports from the Readiness Toolkit to prioritize add-ins and VBA macros. We recommend identifying the add-ins and VBA macros as business critical, high impact, medium impact, and low impact.  This prioritization helps identify which add-ins and VBA macros to validate. 
+2. Work with your business groups to review the reports from the Readiness Toolkit to prioritize add-ins and VBA macros. We recommend identifying the add-ins and VBA macros as business critical, high impact, medium impact, and low impact. This prioritization helps identify which add-ins and VBA macros to validate. 
 
 3. Use the reports to identify the readiness status of your add-ins and get recommendations on how to fix VBA macro issues.
 
