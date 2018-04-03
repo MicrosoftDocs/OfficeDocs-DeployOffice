@@ -24,7 +24,7 @@ Follow the steps in this article to choose how to deploy Office, how to manage u
 
 ## Before you begin 
 
-If you haven't already, complete the [asssessment of your environment and infrastructure](assess-deploy-office-365-proplus-with-Configuration-Manager.md). This assessment will help you make key decisions as part of planning your deployment.
+If you haven't already, complete the [asssessment of your environment and infrastructure](assess-office-365-proplus.md). This assessment will help you make key decisions as part of planning your deployment.
 
 ![Deploy with ODT or Configuration Manager](images/plan-office-365-proplus-03.png)
 
@@ -40,7 +40,7 @@ For organizations that don't have Configuration Manager but still want to manage
 
 If you use the ODT and have the network capacity, we recommend deploying Office from the cloud. Doing so will minimize your administrative overhead. If you don't have the network capacity to install Office on client devices from the cloud, you can use the ODT to download the Office files to a local source on your network and install from there.
 
-You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage user software in Office 365](https://support.office.com/en-us/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local administrative rights on their client devices.
+You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage user software in Office 365](https://support.office.com/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local administrative rights on their client devices.
 
 Choose how you want to deploy:
 
@@ -92,7 +92,7 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
-- Deploy the Semi-Annual Channel (Targeted) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [asssessment phase](assess-deploy-office-365-proplus-with-Configuration-Manager.md). 
+- Deploy the Semi-Annual Channel (Targeted) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [asssessment phase](assess-office-365-proplus.md). 
 
 - Deploy the Semi-Annual Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with the Semi-Annual Channel (Targeted).
 
@@ -183,7 +183,7 @@ Before beginning your deployment, make sure you've completed the planning exit c
 
 Depending on your deployment  plan, go to one of the following articles:
 
-- [Deploy Office 365 ProPlus with System Center Configuration Manager](deploy-office-365-proplus-with-Configuration-Manager.md)
+- [Deploy Office 365 ProPlus with System Center Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 - [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 - [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
 - [Self-install Office from the cloud](https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)
