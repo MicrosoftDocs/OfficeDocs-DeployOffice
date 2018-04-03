@@ -1,9 +1,9 @@
 ---
-title: "Plan your Deployment of Office 365 ProPlus with System Center Configuration Manager"
+title: "Plan your enterprise deployment of Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 3/30/2018
+ms.date: 4/2/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -16,7 +16,7 @@ ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Plan your deployment of Office 365 ProPlus
+# Plan your enterprise deployment of Office 365 ProPlus
 
 Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud.
 

@@ -3,7 +3,7 @@ title: "Assess your deployment of Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 3/30/2018
+ms.date: 4/2/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
