@@ -3,7 +3,7 @@ title: "Overview of deploying languages in Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 7/19/2017
+ms.date: 4/2/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -45,18 +45,15 @@ For information about how to use the Configuration.xml file to specify language 
 ## Install the same languages as the operating system
 When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system and any user on the client device. To do so, use "MatchOS" as the Language ID in the configuration file for the ODT, as shown in the example. 
 
-When "MatchOS" is specified, the installation will add the base language of the operating system as well as any actived display language of all user profiles on the device to the list of to-be-installed languages. MatchOS can be used in combination with a fixed list of languages.
+When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination a fixed list of languages. For example, you can use Lanugage ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
 
-When using MatchOS, there are times when the ODT cannot install the operating system languages, either because Office doesn't support that language or because the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
+MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
 
 - To specify a fallback language, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you use MatchOS and do not include a fallback language, the ODT will use en-us as a default fallback. 
 
-- To specify the Office CDN as a backup source for language packs, include the "AllowCDNFallBack" attribute in the configuration file, as shown in the example. When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location, the AllowCDNFallBack setting allows the ODT to use source files from the Office CDN. Otherwise the install will abort due to missing source files.
+- To use the Office CDN as a backup source for language packs, include the "AllowCDNFallBack" attribute in the configuration file, as shown in the example. When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCDNFallBack setting is included, then the ODT will use source files from the Office CDN.
 
 For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
-
-> [!NOTE]
-> MatchOS installs all the operating system languages that are installed and being used by at least one user on the client device.  
 
 ### Example
 ```
