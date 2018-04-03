@@ -6,15 +6,12 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 7655b5cb-89ae-4a08-9621-e5af1b77cfe1
-description: "Summary: Provides information about the upgrade of Office 365 ProPlus to the Office 2016 version, including criteria for the upgrade and the steps taken during upgrade."
+description: "Provides information about the upgrade of Office 365 ProPlus to the Office 2016 version, including criteria for the upgrade and the steps taken during upgrade."
 ---
 
 # Overview of the upgrade of Office 365 ProPlus to the Office 2016 version

@@ -6,17 +6,15 @@ manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - LIL_Placement
 - Ent_Office_ProPlus
 ms.assetid: 1096c33e-a6f2-44c8-9821-3cba07ec5750
 
-description: "Summary: Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
+description: "Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
 ---
 
 # Overview of licensing and activation in Office 365 ProPlus

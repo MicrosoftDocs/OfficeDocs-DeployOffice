@@ -6,15 +6,12 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: f7d07a88-35c3-48f5-b30e-c842f2d911a5
-description: "Summary: Describes what data Office 365 ProPlus sends to Office 365 services for licensing and activation purposes."
+description: "Describes what data Office 365 ProPlus sends to Office 365 services for licensing and activation purposes."
 ---
 
 # Licensing and activation data sent to Office 365 by Office 365 ProPlus

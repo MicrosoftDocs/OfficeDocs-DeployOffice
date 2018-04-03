@@ -6,18 +6,16 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: e486afce-ad31-4889-87a4-28796751bb86
-description: "Summary: Compares different ways to update Office 365 ProPlus, including automatically from the Internet or from an on-premises location."
+description: "Compares different ways to update Office 365 ProPlus, including automatically from the Internet or from an on-premises location."
 ---
 
 # Choose how to manage updates to Office 365 ProPlus

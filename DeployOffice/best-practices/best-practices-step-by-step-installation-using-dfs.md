@@ -6,10 +6,12 @@ manager: laurawi
 ms.date: 9/13/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus_Best
+- Ent_Office_ProPlus
 ms.assetid: 5ebd1288-69ed-4425-a9cf-6253d6027005
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---
@@ -79,7 +81,7 @@ The parameters and settings for the XML file can be found at [Reference: Configu
     
 4. Copy **GetLatestSACBuild.xml** to ** \\\\Server\\Share\\O365\\SAC**.
     
-5. From an elevated command prompt with administrator privileges, run \\ **\\Server\\Share\\O365\\Setup.exe /Download \\\\Server\\Share\\O365\\SAC\\GetLatestSACBuild.xml**.
+5. From an elevated command prompt with administrator privileges, run \\\\Server\\Share\\O365\\Setup.exe /Download \\\\Server\\Share\\O365\\SAC\\GetLatestSACBuild.xml**.
     
 6. After it is run, Office Deployment Tool will download the latest Office 365 ProPlus Semi-Annual Channel build into **\\\\Server\\Share\\O365\\SAC**.
     

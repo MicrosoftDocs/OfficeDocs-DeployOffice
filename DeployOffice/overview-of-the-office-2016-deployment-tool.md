@@ -6,15 +6,12 @@ manager: laurawi
 ms.date: 4/11/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- apr17entnews
-- DeployProPlus
-- DeployProPlus_SOConly
 - Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: bb5b62d9-1168-47e9-9d54-15a958acfcca
@@ -59,7 +56,7 @@ Follow these steps to download installation files for Office 365 ProPlus from th
   
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
   
-In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus 2016 and Visio Pro for Office 365 to \\server\share on your network:
+In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus 2016 and Visio Pro for Office 365 to \\\\server\share on your network:
   
 ```
 <Configuration> 
@@ -92,7 +89,7 @@ After running the command, go to the download location you defined in the config
 
 You can use the Office Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network instead of from the Office Content Delivery Network (CDN). By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
   
-To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus 2016 from **\\servera\share** (the DownloadPath) to **\\serverb\share** (the SourcePath):
+To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus 2016 from **\\\\servera\share** (the DownloadPath) to **\\\\serverb\share** (the SourcePath):
   
 ```
 <Configuration> 
@@ -131,7 +128,7 @@ In this example, the configuration file installs a 32 bit English edition of Off
 
 ```
 
-The location of the Office installation files is **\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
+The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
   
 For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
@@ -156,7 +153,7 @@ You can use the Office 2016Deployment Tool to make updates to your client comput
     
 - Use the ODT to download the Office installation files and then point your client computers to that location to receive their updates. (By default, clients are updated directly from the Office Content Delivery Network (CDN).)
     
-To change where your client computers receive their updates, run the ODT in configure mode and specify an update path in the configuration file. For example, to have Office 365 ProPlus get updates automatically from a network share called **\\server\updates**, include the following line in your configuration.xml file:
+To change where your client computers receive their updates, run the ODT in configure mode and specify an update path in the configuration file. For example, to have Office 365 ProPlus get updates automatically from a network share called **\\\\server\updates**, include the following line in your configuration.xml file:
   
  `<Updates Enabled="TRUE" UpdatePath="\\server\updates" />`
   
@@ -288,11 +285,11 @@ In this example, the configuration file creates an App-V package from a 32-bit E
 
 ```
 
-The location of the Office installation files is \\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
+The location of the Office installation files is \\\\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
   
  **Step 2: Run the ODT executable in packager mode**
   
-From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you just saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\server\share\appv\**:
+From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you just saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\\\server\share\appv\**:
   
  `setup.exe /packager packageconfig.xml \\server\share\appv\`
   

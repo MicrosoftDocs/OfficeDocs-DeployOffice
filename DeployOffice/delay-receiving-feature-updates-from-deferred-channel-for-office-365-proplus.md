@@ -6,8 +6,8 @@ manager: laurawi
 ms.date: 1/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Once
+ms.service: o365-proplus-itpro
+localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 42a703ac-618c-4cb1-bc29-3014de45692b

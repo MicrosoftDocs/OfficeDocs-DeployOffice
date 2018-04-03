@@ -6,17 +6,15 @@ manager: laurawi
 ms.date: 9/29/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - LIL_Placement
 - Ent_Office_ProPlus
 ms.assetid: a073ea21-62ed-40ef-8405-fd287f7d0b11
 
-description: "Summary: Explains how admins can use the Office Deployment Tool or Group Policy to configure update settings for Office 365 ProPlus."
+description: "Explains how admins can use the Office Deployment Tool or Group Policy to configure update settings for Office 365 ProPlus."
 ---
 
 # Configure update settings for Office 365 ProPlus
