@@ -99,7 +99,7 @@ Example values:
 
 ### Version attribute (part of Add element) 
 
-Optional The default is the latest available version of Office.
+Optional. The default is the latest available version of Office.
 
 Example value:
 
@@ -157,6 +157,32 @@ Allowed values:
 - ForceUpgrade="TRUE"
 - ForceUpgrade="FALSE"
 
+### AllowCDNFallback attribute (part of Add element) 
+
+Optional. To use the Office CDN as a backup source for language packs, include the "AllowCDNFallBack" attribute in the configuration file, as shown in the example.
+
+When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCDNFallBack setting is set to True, then the ODT will use source files from the Office CDN.
+
+Allowed values: 
+
+- AllowCDNFallback="True"
+- AllowCDNFallback="False"
+ 
+#### Example 
+
+```
+<Add SourcePath="\\Server\Share" 
+     OfficeClientEdition="32"
+     Channel="Broad" 
+     AllowCDNFallback="True">
+  <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <Language ID="ja-jp" />
+  </Product>
+</Add>  
+```
+
+
 ## Product element
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
@@ -181,8 +207,7 @@ You can also use the Product element to add language packs to existing installat
 Required. Defines the ID of the product to download or install. 
 
 Example values:
-
-Office 365 Product IDs: 
+ 
 - ID="O365ProPlusRetail"  
 - ID="VisioProRetail"
 - ID="ProjectProRetail"
@@ -191,7 +216,9 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 ## Language element
 
-Defines which languages to download or install. To install the same languages as the client's operating system, use "MatchOS" as the ID. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
+Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
+ 
+To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCDNFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 ### Example
 
@@ -200,6 +227,18 @@ Defines which languages to download or install. To install the same languages as
   <Language ID="en-us" />
   <Language ID="ja-jp" />
 </Product>
+```
+
+```
+```
+<Add SourcePath="\\Server\Share" 
+     OfficeClientEdition="32"
+     Channel="Broad" 
+     AllowCDNFallback="True">
+  <Product ID="O365ProPlusRetail">
+     <Language ID="MatchOS" Fallback="en-us" />
+  </Product>
+</Add>  
 ```
 
 ### ID attribute (part of Language element)
@@ -213,6 +252,15 @@ Defines the ID of the language to download or install. Required.
 - ID="MatchOS"
 
 For a list of all languages, see  [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).  
+
+### Fallback attribute (part of Language element)
+
+When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
+
+Example values:
+
+- Fallback="en-us"
+- Fallback="ja-jp"
 
 ## Display element
 
@@ -252,7 +300,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed.
+Defines which Office 365 ProPlus products should not be installed. 
 
 ### Example
 
