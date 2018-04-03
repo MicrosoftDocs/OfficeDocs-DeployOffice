@@ -4,6 +4,7 @@
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ## [Activation overview](overview-of-activation-for-office-for-mac.md)
+## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
 ## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
 ## [Update history](https://support.office.com/article/700cab62-0d67-4f23-947b-3686cb1a8eb7)
 ## [Release notes](https://support.office.com/article/ed2da564-6d53-4542-9954-7e3209681a41)

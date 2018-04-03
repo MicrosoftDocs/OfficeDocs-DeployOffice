@@ -62,6 +62,7 @@
 ## [Deploy updates](mac/deploy-updates-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Deploy preferences](mac/deploy-preferences-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Activation overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
 ## [64-bit upgrade](mac/office-2016-for-mac-upgrade-to-64-bit.md?toc=/deployoffice/toc.json)
 ## [Update history](https://support.office.com/article/700cab62-0d67-4f23-947b-3686cb1a8eb7)
 ## [Release notes](https://support.office.com/article/ed2da564-6d53-4542-9954-7e3209681a41)
