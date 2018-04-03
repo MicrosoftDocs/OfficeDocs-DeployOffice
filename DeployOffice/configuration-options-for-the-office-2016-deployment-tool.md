@@ -159,9 +159,9 @@ Allowed values:
 
 ### AllowCDNFallback attribute (part of Add element) 
 
-Optional. If you deploy Office from a local source, you can use this attribute to specify the Office Content Delivery Network (CDN) as a back-up source for the Office installation files. 
+Optional. To use the Office CDN as a backup source for language packs, include the "AllowCDNFallBack" attribute in the configuration file, as shown in the example.
 
-The ODT looks first for installation files in the location specified in the SourcePath attribute. If the installation files are not available at that location and if the AllowCDNFallBack attribute is set to **True**, then the ODT will use installation files from the Office CDN.
+When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCDNFallBack setting is set to True, then the ODT will use source files from the Office CDN.
 
 Allowed values: 
 
@@ -218,7 +218,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
  
-To install the same languages as the client's operating system, use "MatchOS" as the ID. When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute, as shown below.
+To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCDNFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 ### Example
 
@@ -230,9 +230,15 @@ To install the same languages as the client's operating system, use "MatchOS" as
 ```
 
 ```
-<Product ID="O365ProPlusRetail">
-  <Language ID="MatchOS" Fallback="en-us" />
-</Product>
+```
+<Add SourcePath="\\Server\Share" 
+     OfficeClientEdition="32"
+     Channel="Broad" 
+     AllowCDNFallback="True">
+  <Product ID="O365ProPlusRetail">
+     <Language ID="MatchOS" Fallback="en-us" />
+  </Product>
+</Add>  
 ```
 
 ### ID attribute (part of Language element)
@@ -249,7 +255,7 @@ For a list of all languages, see  [Language identifiers](https://technet.microso
 
 ### Fallback attribute (part of Language element)
 
-When using MatchOS, we recommend that you specify a fallback language to install when a match can't be found. To do so, use the "Fallback" attribute.
+When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 Example values:
 
