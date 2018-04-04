@@ -5,7 +5,8 @@
 ## [Microsoft FastTrack for Office](http://fasttrack.microsoft.com/office)
 
 # Deploy
-## [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md)
+## [Assess your environment and requirements](assess-office-365-proplus.md)
+## [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 ## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
 ## [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
