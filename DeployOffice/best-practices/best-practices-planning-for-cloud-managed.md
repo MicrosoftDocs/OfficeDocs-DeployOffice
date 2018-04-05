@@ -52,7 +52,7 @@ For more information about the Office Deployment Tool, see [Overview of the Offi
   
 ## Configure deployments
 
- *Cloud Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+ *Cloud Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
 The install XML files are relatively simple and can be made by following the [XML properties that are published on Technet](https://technet.microsoft.com/en-us/library/jj219426.aspx). However, because *Cloud Managed*  manages multiple download and install XML files, *Cloud Managed*  uses a web-based tool for accuracy and efficiency.
   
