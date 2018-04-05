@@ -18,7 +18,6 @@ description: "Explains the settings that you can use to encrypt data in Office, 
 
  **Summary:** Explains the settings that you can use to encrypt data in Office 2016, and provides information about compatibility with previous versions of Office. 
   
- **Audience:** IT Professionals 
   
 Office 2016 contains settings that let you control the way that data is encrypted when you use Access 2016, Excel 2016, OneNote 2016, PowerPoint 2016, Project 2016, and Word 2016.
   

@@ -18,7 +18,6 @@ description: "How to prepare and configure the Office 2016 client for Multiple A
 
  **Summary:** How to prepare and configure the Office 2016 client for Multiple Activation Key (MAK) volume activation. 
   
- **Audience:** IT Professionals 
   
 Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft hosted activation services, either via the Internet or by telephone.
   

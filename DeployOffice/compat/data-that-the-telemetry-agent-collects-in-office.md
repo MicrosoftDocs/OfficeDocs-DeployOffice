@@ -18,7 +18,6 @@ description: "Learn about the data that the telemetry agent collects for Office.
 
  **Summary:** Learn about the data that the telemetry agent collects for Office. 
   
- **Audience:** IT Professionals 
   
 The telemetry agent collects several types of telemetry data for Office as described in this article. For example, 
   

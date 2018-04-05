@@ -18,7 +18,6 @@ description: "Lists and describes articles that will help you work with the secu
 
  **Summary:** Lists and describes articles that will help you work with the security controls, as well as understand the identity authorization and authentication features that are available in Office 2016. 
   
- **Audience:** IT Professionals 
   
 Security controls are available in Office 2016 to help you plan a robust defense against threats while maintaining information worker productivity.
   

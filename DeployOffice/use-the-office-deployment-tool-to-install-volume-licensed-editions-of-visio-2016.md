@@ -63,9 +63,6 @@ If you're using [shared computer activation](overview-of-shared-computer-activat
   
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
-## See also
-
-#### Other Resources
-
+## Related topics
 [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](https://technet.microsoft.com/library/mt712177%28v=office.16%29.aspx)
 

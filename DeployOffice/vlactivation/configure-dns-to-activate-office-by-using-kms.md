@@ -18,7 +18,6 @@ description: "How to configure DNS to work with Office 2016 KMS-based volume act
 
  **Summary:** How to configure DNS to work with Office 2016 KMS-based volume activation. 
   
- **Audience:** IT Professionals 
   
 <a name="BKMK_ConfigureDNS"> </a>
 

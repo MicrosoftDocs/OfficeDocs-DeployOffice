@@ -22,7 +22,6 @@ description: "Provides IT admins with information about which versions of Office
 
  **Summary:** Provides IT admins with information about which versions of Office, Visio, and Project can be installed on the same computer. 
   
- **Audience:** Admins who deploy and manage Office, Visio, and Project in organizations. 
   
 In many cases, you can install Office, Visio, and Project on the same computer. But, there are some combinations of Office, Visio, and Project that can't be installed together on the same computer. 
   
