@@ -22,10 +22,10 @@ description: "The Best Practices Guide includes deployment recommendations and r
   
  **Implement the best practices GPOs**
   
-1. Import the Office 2016 Administrative Templates into AD DS:
+1. Import the Office 2016 Administrative Templates into Active Directory Domain Services (AD DS):
     
   - [Download the Administrative Templates for Office 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49030)
     
-  - Extract the content and import it into your central store for Group Policy settings on a domain controller (see [Managing Group Policy ADMX Files Step-by-Step Guide](https://technet.microsoft.com/en-us/library/cc709647%28v=ws.10%29.aspx)).
+  - Extract the content and import it into your central store for Group Policy settings on a domain controller (see [Managing Group Policy ADMX Files Step-by-Step Guide](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc709647(v=ws.10)).
     
 

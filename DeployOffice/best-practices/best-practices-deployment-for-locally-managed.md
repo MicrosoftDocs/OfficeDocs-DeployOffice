@@ -64,7 +64,7 @@ For examples, see [Best practices: Download XML files for locally managed](best-
 
 The next step is to edit the install XML files for the deployment.  *Locally Managed*  created multiple XML files, that together with the downloaded Office 365 ProPlus files, will configure and install Office 365 ProPlus.
   
-[GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl) was leveraged to edit the XML files.
+[GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html) was leveraged to edit the XML files.
   
 The following XML files must be created:
   

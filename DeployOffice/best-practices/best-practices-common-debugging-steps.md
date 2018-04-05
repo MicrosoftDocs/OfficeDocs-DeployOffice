@@ -34,7 +34,7 @@ The following steps are common issues that can occur when you deploy and manage 
     
 4. Make sure that you are using the latest version of the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) (updated regularly).
     
-5. Make sure that your XML syntax is correct by using the [GitHub XML script editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+5. Make sure that your XML syntax is correct by using the [Configuration XML Editor on GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
     
 6. Check for new GPOs in the [Office 2016 Administrative Template files](https://www.microsoft.com/en-us/download/details.aspx?id=49030) (updated regularly).
     
