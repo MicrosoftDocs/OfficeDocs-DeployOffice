@@ -48,11 +48,11 @@ See [Assign licenses to user accounts with Office 365 PowerShell](https://techne
   
 ## Roll back a build
 
- *Cloud Managed*  can use a script that is hosted in a network share to perform a client rollback. For step by step guidance on performing a rollback using the **OfficeC2RClient.exe** update engine, see[Channel management](http://www.deployoffice.com/preferred-practices/).
+ *Cloud Managed*  can use a script that is hosted in a network share to perform a client rollback. For step by step guidance on performing a rollback using the **OfficeC2RClient.exe** update engine, see[Channel management](best-practices-channel-management.md).
   
 ## Switch channels
 
-To change a user's channel membership, see [Channel management](http://www.deployoffice.com/preferred-practices/).
+To change a user's channel membership, see [Channel management](best-practices-channel-management.md).
   
 ## Configure policy
 
