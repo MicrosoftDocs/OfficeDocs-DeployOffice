@@ -3,7 +3,7 @@ title: "Best practices Office 2016 Mac client install for locally managed"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 1/29/2018
+ms.date: 4/5/2018
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
