@@ -29,7 +29,7 @@ Now that  *Cloud Managed*  has been through Assessment and Planning, it is time 
 
 Download the latest version of the [Office Deployment Tool (ODT)](https://www.microsoft.com/en-us/download/details.aspx?id=49117) and create and configure the install XML files to download and install the Office 365 ProPlus source files. *Cloud Managed*  created multiple XML files to configure and install Office 365 ProPlus.
   
-[GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl) was leveraged to edit the XML files.
+[GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html) was leveraged to edit the XML files.
   
 The following XML files must be created:
   

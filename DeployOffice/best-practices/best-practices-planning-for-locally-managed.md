@@ -52,7 +52,7 @@ For more information about the Office Deployment Tool, see [Overview of the Offi
   
 ## Configure deployments
 
- *Locally Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+ *Locally Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
 The install XML files are relatively simple and can be made by following the [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). However, because  *Locally Managed*  manages multiple download and install XML files, *Locally Managed*  uses a web-based tool for accuracy and efficiency.
   

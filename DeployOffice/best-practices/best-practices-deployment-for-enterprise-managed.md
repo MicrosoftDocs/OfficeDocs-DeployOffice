@@ -47,7 +47,7 @@ For examples, see [Best practices: Download XML files for enterprise managed](be
  *Enterprise Managed*  will edit the XML files for the deployment. *Enterprise Managed*  made several install XML files, that together with the Office 365 client source files that were previously downloaded, configure and install Office 365 ProPlus.
   
 > [!NOTE]
-> Use [GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl) to edit the XML files.
+> Use [GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html) to edit the XML files.
   
 The following XML files must be created:
   

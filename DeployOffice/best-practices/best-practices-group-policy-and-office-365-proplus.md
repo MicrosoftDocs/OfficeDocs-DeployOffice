@@ -3,7 +3,7 @@ title: "Best practices Group policy and Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/9/2017
+ms.date: 4/5/2017
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
@@ -86,7 +86,7 @@ description: "The Best Practices Guide includes deployment recommendations and r
     
 ## Overview of all Office 2016 Group Policy settings
 
-The **office2016grouppolicyandoctsettings.xlsx** spreadsheet contains all of the Office 2016 Group Policy settings.
+The **office2016grouppolicyandoctsettings.xlsx** spreadsheet contains all of the Office 2016 Group Policy settings. The spreadsheet is included in the Office 2016 Administrative Template files download.
   
 > [!NOTE]
 > Microsoft provides updates to the Office 2016 Group Policy settings. You should periodically check for new releases of the Office 2016 Administrative Template files at [Download the Administrative Templates for Office 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49030). 
