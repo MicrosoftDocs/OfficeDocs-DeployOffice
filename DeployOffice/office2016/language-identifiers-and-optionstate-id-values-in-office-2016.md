@@ -18,7 +18,6 @@ description: "Find language identifier and OptionState ID values for identifying
 
  **Summary:** Find language identifier and OptionState ID values for identifying and customizing Office 2016 language and proofing tools installations. 
   
- **Audience:** IT Professionals 
   
 Use the values in the Language Identifier and OptionState ID tables to configure setup for Office 2016 or for Office proofing tools, or to identify currently installed languages.
   

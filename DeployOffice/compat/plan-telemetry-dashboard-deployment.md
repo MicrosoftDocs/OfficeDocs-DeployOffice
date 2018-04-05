@@ -18,7 +18,6 @@ description: "Learn about telemetry components and sizing, topology, hardware, a
 
  **Summary:** Learn about telemetry components and sizing, topology, hardware, and bandwidth recommendations for Telemetry Dashboard deployments. 
   
- **Audience:** IT Professionals 
   
 When you deploy Telemetry Dashboard, you must consider several factors. These can include the location of the users to be monitored and the hardware specifications of the computer that runs the telemetry processor and other components that deliver the data to Telemetry Dashboard. It's also important to understand the supported limits for Telemetry Dashboard deployments, such as the maximum number of users who can be monitored. Use the guidance in this article to help you design a Telemetry Dashboard topology that is sized appropriately for your organization.
   

@@ -18,7 +18,6 @@ description: "Explains how to use a designate a folder on a user's computer or a
 
  **Summary:** Explains how to use a designate a folder on a user's computer or a network share as a trusted location to help differentiate safe files from potentially harmful files in Office 2016. 
   
- **Audience:** IT Professionals 
   
 If you want to differentiate safe files from potentially harmful files, you can designate a network share as a trusted location in Office 2016. Office lets you designate trusted file sources on the hard disks of users' computers or on a network share. When a folder is designated as a trusted file source, any file that is saved in the folder is assumed to be a trusted file. When a user opens a trusted file, all content in the file is enabled and active, and users aren't notified about any potential risks that might be contained in the file. These can include, for example, unsigned add-ins and Microsoft Visual Basic for Applications (VBA) macros, links to content on the Internet, or database connections.
   

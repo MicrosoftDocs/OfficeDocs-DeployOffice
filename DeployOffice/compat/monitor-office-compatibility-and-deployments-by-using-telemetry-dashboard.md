@@ -18,7 +18,6 @@ description: "Explains how to view the stability of Office documents and solutio
 
  **Summary:** Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Telemetry Dashboard. 
   
- **Audience:** IT Professionals 
   
 After you deploy the components of Telemetry Dashboard and the telemetry agents have collected data, you can use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Telemetry Dashboard. 
   

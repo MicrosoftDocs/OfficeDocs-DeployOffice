@@ -18,7 +18,6 @@ description: "Explains how to support XML Advanced Electronic Signatures (XAdES)
 
  **Summary:** Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents as well as how to choose the appropriate certificates for your deployment. 
   
- **Audience:** IT Professionals 
   
 Users digitally sign an Excel, PowerPoint, or Word document for many of the same reasons that they might place a handwritten signature on a paper document. A digital signature is used to help authenticate the identity of the creator of digital information, such as documents, email messages, and macros, by using cryptographic algorithms. 
   

@@ -18,7 +18,6 @@ description: "Explains how Visual Basic for Applications (VBA) and VBA macro set
 
  **Summary:** Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office 2016. 
   
- **Audience:** IT Professionals 
   
 If you want to control the way Visual Basic for Applications (VBA) and VBA macros behave, you can change Office 2016 VBA and VBA macros settings for the following applications: Access 2016, Excel 2016, PowerPoint 2016, Publisher 2016, Visio 2016, and Word 2016.
   
