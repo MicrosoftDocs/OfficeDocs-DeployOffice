@@ -15,8 +15,8 @@ description: "Provides admins with information about how to update Office 2016 f
 
 # Update Office 2016 for Mac by using msupdate
 
-Microsoft AutoUpdate (MAU) version 3.18 and later includes the `msupdate` command-line tool. This can be used to start the Office for Mac update process, in addition to reporting the current AutoUpdate configuration. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. Use the following steps to start using the tool:
-1. Open the `Terminal` application
+Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. This can be used to start the Office for Mac update process, in addition to reporting the current AutoUpdate configuration. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. Use the following steps to start using the tool:
+1. Open the Terminal application
 2. Enter `cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS`
 3. Run `./msupdate --help`
 
