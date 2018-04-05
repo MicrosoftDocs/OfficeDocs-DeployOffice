@@ -37,11 +37,11 @@ Administrators can download the installer package (.pkg) file from the Office 36
     
 5. Provide Mac end users with installation instructions
     
-For more information on deployment options, see [Deployment options for admins for Office 2016 for Mac](mac/deployment-options-for-office-for-mac.md). 
+For more information on deployment options, see [Deployment options for admins for Office 2016 for Mac](../mac/deployment-options-for-office-for-mac.md). 
   
 ## Deployment preferences
 
-For guidance on configuring preferences, see [Deploy preferences for Office 2016 for Mac](mac/deploy-preferences-for-office-for-mac.md).
+For guidance on configuring preferences, see [Deploy preferences for Office 2016 for Mac](../mac/deploy-preferences-for-office-for-mac.md).
   
 Deployment preferences can overwrite the existing user preference settings. To remove Office for Mac 2011, [Troubleshoot Office 2011 for Mac issues by completely uninstalling before you reinstall](https://support.office.com/article/ba8d8d13-0015-4eea-b60b-7719c2cedd17).
 

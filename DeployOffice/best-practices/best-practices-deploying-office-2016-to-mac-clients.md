@@ -42,17 +42,17 @@ The following table lists the standard system Office System Requirements. Howeve
 
 The following links provide detailed information about Office 2016 for Mac deployments:
   
-- [What's new for admins in Office 2016 for Mac](mac/what-s-new-for-admins-in-office-for-mac.md)
+- [What's new for admins in Office 2016 for Mac](../mac/what-s-new-for-admins-in-office-for-mac.md)
     
-- [Overview of activation for Office 2016 for Mac](mac/overview-of-activation-for-office-for-mac.md)
+- [Overview of activation for Office 2016 for Mac](../mac/overview-of-activation-for-office-for-mac.md)
     
-- [Deployment options for admins for Office 2016 for Mac](mac/deployment-options-for-office-for-mac.md)
+- [Deployment options for admins for Office 2016 for Mac](../mac/deployment-options-for-office-for-mac.md)
     
-- [Deploy preferences for Office 2016 for Mac](mac/deploy-preferences-for-office-for-mac.md)
+- [Deploy preferences for Office 2016 for Mac](../mac/deploy-preferences-for-office-for-mac.md)
     
-- [Deploy updates for Office 2016 for Mac](mac/deploy-updates-for-office-for-mac.md)
+- [Deploy updates for Office 2016 for Mac](../mac/deploy-updates-for-office-for-mac.md)
     
-- [Office 2016 for Mac upgrade to 64-bit](mac/office-2016-for-mac-upgrade-to-64-bit.md)
+- [Office 2016 for Mac upgrade to 64-bit](../mac/office-2016-for-mac-upgrade-to-64-bit.md)
     
 - [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)
     

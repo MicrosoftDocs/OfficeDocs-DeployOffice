@@ -30,11 +30,11 @@ Because Office 2016 for Mac uses the Apple Installer technology for installation
 > [!NOTE]
 > Not all third-party Mac software distribution solutions support automatic account configuration. 
   
-For more information, see [Deployment options for admins for Office 2016 for Mac](mac/deployment-options-for-office-for-mac.md). 
+For more information, see [Deployment options for admins for Office 2016 for Mac](../mac/deployment-options-for-office-for-mac.md). 
   
 ## Deployment preferences
 
-For guidance on configuring preferences, see [Deploy preferences for Office 2016 for Mac](mac/deploy-preferences-for-office-for-mac.md).
+For guidance on configuring preferences, see [Deploy preferences for Office 2016 for Mac](../mac/deploy-preferences-for-office-for-mac.md).
   
 Deployment preferences can overwrite the existing user preference settings. To remove Office for Mac 2011, [Troubleshoot Office 2011 for Mac issues by completely uninstalling before you reinstall](https://support.office.com/article/ba8d8d13-0015-4eea-b60b-7719c2cedd17).
   
