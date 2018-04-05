@@ -18,7 +18,6 @@ description: "How to reset the grace timer and reset the client computer ID in O
 
  **Summary:** How to reset the grace timer and reset the client computer ID in Office 2016 KMS installation by rearming the image. 
   
- **Audience:** IT Professionals 
   
 There is a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. If you want to deploy an image, you must rearm your Office 2016 installation before you capture the image. If you do not rearm, users see notification dialog boxes at the time that the image is deployed, instead of 25 days after deployment. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users do not see notifications to activate.
   

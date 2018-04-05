@@ -18,7 +18,6 @@ description: "Describes how to improve Office performance by managing add-ins by
 
  **Summary:** Describes how to improve Office performance by managing add-ins by using Telemetry Dashboard. 
   
- **Audience:** IT Professionals 
   
 If you can prevent end users from running non-approved add-ins that might cause issues or slow performance, then you can reduce your support costs. If an add-in is crashing or takes a long time to load, you can disable the add-in for all Office 2016 client computers at the same time. Using Telemetry Dashboard, you can monitor add-in usage along with performance and other issues. With the collected data, you can decide which add-ins should be managed. This article points to more information about how to manage add-ins for Office by using Telemetry Dashboard.
   

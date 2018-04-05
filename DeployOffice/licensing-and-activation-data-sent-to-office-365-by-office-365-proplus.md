@@ -62,11 +62,7 @@ Office 365 ProPlus uses a standard Microsoft technology called Activation &amp; 
   
 For a description of the data sent, see the Activation section of the [Windows 8 and Windows Server 2012 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=313210)
   
-## See also
-<a name="BKMK_ManageProductKeys"> </a>
-
-#### Other Resources
-
+## Related topics
 [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
   
 [Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?linkid=389789)

@@ -82,11 +82,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
     
 - Read the [Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961) to learn more about what's included in Office 365.
     
-## See also
-<a name="BKMK_MoreInfo"> </a>
-
-#### Other Resources
-
+## Related topics
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
   
 [Compare enterprise plans for Office 365](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans)

@@ -18,7 +18,6 @@ description: "Explains how you can prevent file format attacks using file valida
 
  **Summary:** Explains how you can prevent file format attacks using file validation in Office 2016. 
   
- **Audience:** IT Professionals 
   
 By validating files, Office 2016 helps prevent file format attacks by scanning Office binary file formats before they are opened in Excel 2016, PowerPoint 2016, or Word 2016. You can change how Office 2016 validates files that are stored in Microsoft Office binary file formats by configuring settings.
   

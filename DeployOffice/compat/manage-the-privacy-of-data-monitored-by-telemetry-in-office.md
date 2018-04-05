@@ -18,7 +18,6 @@ description: "Learn about the telemetry data collection process and how to confi
 
  **Summary:** Learn about the telemetry data collection process and how to configure settings that help protect user privacy when using the Telemetry Dashboard in Office. 
   
- **Audience:** IT Professionals 
   
 Telemetry Dashboard is an Excel workbook that displays compatibility and inventory data about the Office files, Office add-ins, and Office solutions that are used in an organization. Telemetry Dashboard displays the file names and titles of documents in each user's Most Recently Used list, which might reveal personal or confidential information about the user or organization. The names of add-ins and other solutions that are used by Office are also displayed. In this article, you can learn about settings in Telemetry Dashboard and the telemetry agent that help you protect user privacy by disguising file names and titles or by preventing data for selected applications or solutions from being reported altogether.
   

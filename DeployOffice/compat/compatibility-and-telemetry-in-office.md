@@ -18,7 +18,6 @@ description: "Provides a guide to the articles, downloads, scripts, and videos t
 
  **Summary:** Provides a guide to the articles, downloads, scripts, and videos that help IT Professionals assess Office compatibility. 
   
- **Audience:** IT Professionals 
   
 ![Content roadmap for IT professionals (banner image)](../images/ORK_RoadmapBanner_Temp.gif)
   

@@ -18,7 +18,6 @@ description: "Provides information about the settings to block specific file for
 
  **Summary:** Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users. 
   
- **Audience:** IT Professionals 
   
 You can block specific types of files from being opened or saved in Excel, PowerPoint, and Word by configuring settings in either Group Policy or the Office Customization Tool (OCT).
   

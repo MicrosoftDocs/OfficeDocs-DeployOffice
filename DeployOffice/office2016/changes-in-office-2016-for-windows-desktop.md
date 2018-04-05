@@ -18,7 +18,6 @@ description: "Provides admins with information about which features in Office 20
 
  **Summary:** Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released. 
   
- **Audience:** Admins who deploy and manage Office in organizations 
   
 Each of the following tables describes features that are changed or removed in the applications in Office 2016 for Windows.
   

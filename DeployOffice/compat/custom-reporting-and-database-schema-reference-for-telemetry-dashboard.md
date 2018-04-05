@@ -18,7 +18,6 @@ description: "Describes how to create custom reports in Telemetry Dashboard, sho
 
  **Summary:** Describes how to create custom reports in Telemetry Dashboard, shows sample reports, and lists the tables and fields in the telemetry database. 
   
- **Audience:** IT Professionals 
   
 The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
   

@@ -18,7 +18,6 @@ description: "Describes Office authentication, logon types, and how to use regis
 
  **Summary:** Describes Office 2016 authentication, logon types, and how to use registry settings to determine which user identities are offered at user logon. 
   
- **Audience:** IT Professionals 
   
 In the new Office, Office applications are used for both business and non-business activities. A person may use Excel to crunch Q2 widget sales numbers by day and crunch World Cup stats by night, or use Word to write product specifications by day and short stories by night. Because Office is a tool that is used by the same individual in two different roles, the new Office offers two identities with which users can log on to Office 2016: 
   

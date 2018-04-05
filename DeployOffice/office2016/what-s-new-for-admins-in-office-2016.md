@@ -18,7 +18,6 @@ description: "Provides IT admins with an overview of the new features and capabi
 
  **Summary:** Provides IT admins with an overview of the new features and capabilities in Office 2016. 
   
- **Audience**: Admins who deploy and manage Office in organizations
   
 The following is intended to highlight the new features and capabilities of Office 2016 that admins might want to know about as they plan to deploy Office 2016 to the users in their organization.
   

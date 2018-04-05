@@ -65,11 +65,7 @@ This gives users fifteen minutes to save and close any work. When the countdown 
 > [!NOTE]
 > The **Hide update notifications** Group Policy setting doesn't hide notifications related to deadlines.
   
-## See also
-<a name="Deadline"> </a>
-
-#### Other Resources
-
+## Related topics
 [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
   
 [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md)
