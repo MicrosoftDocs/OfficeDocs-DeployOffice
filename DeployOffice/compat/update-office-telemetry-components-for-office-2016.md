@@ -18,7 +18,6 @@ description: "Learn how to update telemetry processors and the telemetry databas
 
  **Summary:** Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016. 
   
- **Audience:** IT Professionals 
   
 When you install Office 2016, Telemetry Dashboard and the built-in telemetry agents are updated to the new versions automatically. However, the telemetry processors and the telemetry database aren't updated, even if they are on the same computer as Office 2016. 
   

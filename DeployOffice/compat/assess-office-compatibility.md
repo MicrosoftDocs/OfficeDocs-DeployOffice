@@ -18,7 +18,6 @@ description: "Explains how to assess compatibility between versions of Office in
 
  **Summary:** Explains how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment. 
   
- **Audience:** IT Professionals 
   
 Keeping an Office deployment project on track requires two key aspects: using the right process to assess Office compatibility, and using tools that help you understand the potential risks of an Office upgrade. Office helps you do both. When you use the process described in this topic with the telemetry tools that are in Office, you can speed up your Office deployments and get users up and running on the new version of Office with minimal disruptions. In this article, you'll learn more about the compatibility process and how Office telemetry fits into this process.
   

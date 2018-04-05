@@ -93,11 +93,7 @@ Not all Office installations that meet the criteria to be upgraded get the upgra
   
 Once Microsoft starts sending out upgrade notifications, users can upgrade Office before receiving a notification. They can start the upgrade by going to **File** > **Account** > **Update Options** in any Office app, and then choosing **Update Now**. If the Office installation meets all the [criteria](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md#BKMK_Criteria), the upgrade starts. Remember that users have to be local administrators on their computers to install or upgrade Office.
   
-## See also
-<a name="BKMK_Timing"> </a>
-
-#### Other Resources
-
+## Related topics
 [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
   
 [Upgrade from Office 365 ProPlus 2013 to 2016](upgrade-from-office-365-proplus-2013-to-2016.md)

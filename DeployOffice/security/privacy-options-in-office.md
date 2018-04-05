@@ -18,7 +18,6 @@ description: "Explains how Office privacy settings let you control the disclosur
 
  **Summary**: Explains how Office 2016 privacy settings let you control the disclosure of private information. 
   
- **Audience:** IT Professionals 
   
 The **Welcome to Office** experience lets users enable or disable several Internet-based services that help protect and improve Office 2016 applications. For more information about the **Welcome to Office** experience, see the [Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043).
  

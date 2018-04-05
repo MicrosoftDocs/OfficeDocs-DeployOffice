@@ -18,7 +18,6 @@ description: "Learn how to customize languages for Office 2016."
 
  **Summary:** Learn how to customize languages for Office 2016. 
   
- **Audience:** IT Professionals 
   
 To customize and deploy language setup and settings for Office 2016, follow the steps that are described in this article. 
   

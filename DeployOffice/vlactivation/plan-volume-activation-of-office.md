@@ -18,7 +18,6 @@ description: "Explains each method that you can use to activate volume license e
 
  **Summary:** Explains each method that you can use to activate volume license editions of Office 2016. 
   
- **Audience:** IT Professionals 
   
 You plan the deployment of Office for volume activation of Office 2016 in several steps. Before you read this article, we recommend that you read [Windows Volume Activation Planning Guide](https://go.microsoft.com/fwlink/p/?LinkId=183040).
   

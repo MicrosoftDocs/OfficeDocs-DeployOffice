@@ -18,7 +18,6 @@ description: "Explains how to use the Office DocRecrypt tool to unlock password 
 
  **Summary:** Explains how to use the Office 2016 DocRecrypt tool to unlock password protected OOXML formatted Word, Excel, and PowerPoint files. 
   
- **Audience:** IT Professionals 
   
 Use Group Policy to push registry changes that associate a certificate with password-protected documents. This certificate information is embedded in the file header. Later, if the password is forgotten or lost, use the DocRecrypt command-line tool and the private key to unlock the file and, optionally, assign a new password.
   

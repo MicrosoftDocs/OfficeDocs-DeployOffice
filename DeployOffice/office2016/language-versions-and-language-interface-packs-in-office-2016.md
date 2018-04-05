@@ -18,7 +18,6 @@ description: "Learn about the language packs and language interface packs that a
 
  **Summary:** Learn about the language packs and language interface packs that are available for Office. 
   
- **Audience:** IT Professionals 
   
 An installation of Office 2016 can include applications or user interface elements in more than one language because some Office 2016 products are not available in every language. 
   

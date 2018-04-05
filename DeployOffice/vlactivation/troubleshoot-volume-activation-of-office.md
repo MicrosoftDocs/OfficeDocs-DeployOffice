@@ -18,7 +18,6 @@ description: "Explains how to troubleshoot common errors for KMS or MAK-based ac
 
  **Summary:** Explains how to troubleshoot common errors for KMS or MAK-based activation of Office 2016. 
   
- **Audience:** IT Professionals 
   
 |||
 |:-----|:-----|

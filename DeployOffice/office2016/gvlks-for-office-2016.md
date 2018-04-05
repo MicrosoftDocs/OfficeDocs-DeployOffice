@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 
  **Summary:** Lists the GVLKs that administrators use for enterprise licenses of Office 2016. 
   
- **Audience:** IT Professionals 
   
 By default, Office 2016 volume license editions install a Generic Volume License Key (GVLK). The GVLK enables Office 2016 to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
   
