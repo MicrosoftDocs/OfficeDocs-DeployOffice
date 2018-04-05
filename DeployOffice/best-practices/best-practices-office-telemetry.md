@@ -45,7 +45,7 @@ The following links provide additional details on Telemetry Dashboard components
 
 - [Manage add-ins by using Telemetry Dashboard in Office](../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md)
 
-- [Manage the privacy of data monitored by telemetry in Office](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.mdx)
+- [Manage the privacy of data monitored by telemetry in Office](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
  
 - [Custom reporting and database schema reference for Telemetry Dashboard](../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md)
  
