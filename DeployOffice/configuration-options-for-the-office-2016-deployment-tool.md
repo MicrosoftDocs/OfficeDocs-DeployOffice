@@ -522,7 +522,8 @@ Defines how Office is updated after it's installed.
 
 ### Enabled attribute (part of Updates element)
 
-If set to **TRUE**, Office will check for updates. If set to **FALSE**, Office won't check for updates.
+If set to **TRUE**, Office will check for updates.
+If set to **FALSE**, Office won't check for updates (the user can initiate the check for updates using the Update Now button on the backstage).
 
 Optional. The default value is **TRUE**.
 
