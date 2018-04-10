@@ -50,7 +50,7 @@ The following options are displayed:
 - Download and install the latest updates for Word, Excel, and PowerPoint"
 ```./msupdate --install --apps mswd15,xcel15,ppt315```
 - Download and install a version-specific update for Outlook:
-```./msupdate --install --apps opim15 --version 15.41.17120500```
+```./msupdate --install --apps opim15 --version 16.10.18021001```
 
 ## Application identifiers
 The following table lists the applications for Mac supported by AutoUpdate. The identifier is used when specifying the `--apps` parameter:

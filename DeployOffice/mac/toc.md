@@ -2,6 +2,7 @@
 ## [What's new for admins](what-s-new-for-admins-in-office-for-mac.md)
 ## [Deployment options](deployment-options-for-office-for-mac.md)
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
+## [Update by using msupdate](update-office-for-mac-using-msupdate.md)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ## [Activation overview](overview-of-activation-for-office-for-mac.md)
 ## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)

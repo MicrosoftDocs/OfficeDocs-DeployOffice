@@ -61,6 +61,7 @@
 ## [What's new for admins](mac/what-s-new-for-admins-in-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Deployment options](mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Deploy updates](mac/deploy-updates-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## [Update by using msupdate](mac/update-office-for-mac-using-msupdate.md?toc=/deployoffice/toc.json)
 ## [Deploy preferences](mac/deploy-preferences-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Activation overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
