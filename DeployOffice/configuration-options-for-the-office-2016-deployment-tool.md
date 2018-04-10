@@ -157,16 +157,16 @@ Allowed values:
 - ForceUpgrade="TRUE"
 - ForceUpgrade="FALSE"
 
-### AllowCDNFallback attribute (part of Add element) 
+### AllowCdnFallback attribute (part of Add element) 
 
-Optional. To use the Office CDN as a backup source for language packs, include the "AllowCDNFallBack" attribute in the configuration file, as shown in the example.
+Optional. To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
 
-When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCDNFallBack setting is set to True, then the ODT will use source files from the Office CDN.
+When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT will use source files from the Office CDN.
 
 Allowed values: 
 
-- AllowCDNFallback="True"
-- AllowCDNFallback="False"
+- AllowCdnFallback="True"
+- AllowCdnFallback="False"
  
 #### Example 
 
@@ -174,7 +174,7 @@ Allowed values:
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
-     AllowCDNFallback="True">
+     AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
       <Language ID="ja-jp" />
