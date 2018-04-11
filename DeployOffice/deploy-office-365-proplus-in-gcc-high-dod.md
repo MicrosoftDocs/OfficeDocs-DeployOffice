@@ -103,6 +103,81 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 </Configuration>
 ```
 
+<a name="telemetry"> </a>
+
+## Turn off sending telemetry data to Microsoft
+Office apps send telemetry data to Microsoft on a regular basis to help Microsoft understand how to improve the product. For a GCC High or DoD environment, you must turn off sending telemetry data to Microsoft.
+
+No additional configuration is needed to prevent Office 365 ProPlus or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD envrionment and will automatically prevent telemetry data from being sent to Microsoft.
+
+For other Office apps, such as Skype for Business client, Office 2016 for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for additional information.
+
+### Turn off sending telemetry data to Microsoft from Skype for Business client
+To prevent Skype for Business client from sending telemetry data to Microsoft, edit the registry and add the TelemetryTier value to the HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Lync key. The type for TelemetryTier is REG_DWORD, and the value should be set to 0.
+
+### Turn off sending telemetry data to Microsoft from Office 2016 for Mac
+To prevent Office 2016 for Mac from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "FALSE." 
+
+> [!IMPORTANT]
+> You must be using at least Version 16.11 of Office 2016 for Mac.
+
+The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal. For example:
+
+  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
+ 
+and 
+
+  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
+
+
+### Turn off sending telemetry data to Microsoft from Office apps on iOS
+To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+
+> [!IMPORTANT]
+> You must be using at least Version 2.11 of Office on iOS.
+
+For each key and value in the configuration, set the following:
+- Configuration key = SendAllTelemetryEnabled 
+- Value type = Boolean
+- Configuration value = false
+
+and
+
+- Configuration key = SendCriticalTelemetryEnabled 
+- Value type = Boolean
+- Configuration value = false
+
+<a name="settings"> </a>
+
+## Additional settings to configure
+
+In addition to turning off sending telemetry data to Microsoft, there are some additional settings that you need to configure. 
+
+### Disable experimentation on Office 365 ProPlus
+Microsoft occasionally runs experiments on Office features.
+
+To disable experimentation, edit the registry and add the DisableFeatureRollout value to the HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\TrustCenter\Experimentation key. The type for DisableFeatureRollout is REG_DWORD and the value should be set to 1.
+
+If experimentation was previously enabled, you also need to delete any data under the following registry keys to clear the experimentation cache.
+- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Experiment
+- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentEcs
+- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentTas
+
+
 ## Reference information
 
 <a name="CDN"> </a>
