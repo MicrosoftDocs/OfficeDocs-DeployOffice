@@ -22,13 +22,26 @@ If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there
 
 ## Which version of Office 365 ProPlus to deploy
 
-**IMPORTANT:** To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Office 365 ProPlus.
+> [!IMPORTANT]
+> To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Office 365 ProPlus.
 
 Version 1803 is currently available in Monthly Channel and in Semi-Annual Channel (Targeted). It is scheduled to be available in Semi-Annual Channel on July 10, 2018.
 
 <a name="channel"> </a>
 
 ## Which update channel of Office 365 ProPlus to use
+Since Version 1803 of Office 365 ProPlus won’t be available in Semi-Annual Channel until July, there are three possible options for you to meet GCC High and DoD compliance requirements:
+
+- Wait until July to deploy Semi-Annual Channel
+- Deploy Semi-Annual Channel (Targeted) now
+- Deploy Monthly Channel now
+
+For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Office 365 ProPlus. For more information about update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+ 
+But, if you don’t want to wait until July to install Office 365 ProPlus using Semi-Annual Channel, we recommend that you install Office 365 ProPlus to all your users using Semi-Annual Channel (Targeted). This will make the transition easier when you move most of your users to Semi-Annual Channel when Version 1803 is available in Semi-Annual Channel in July. 
+
+If you deploy Monthly Channel to most of your users now, when you move users to Semi-Annual Channel after July, the features available to those users will change. That’s because Monthly Channel always gets new features as soon as they are available, while Semi-Annual Channel only receives new features twice a year. Because of this, it’s possible a feature that the user has been using in Monthly Channel won’t be available yet in Semi-Annual Channel. 
+
 
 <a name="where"> </a>
 
@@ -50,7 +63,7 @@ There is no special guidance about what tools you can use to deploy Office 365 P
 
 To deploy Office 365 ProPlus, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Office 365 ProPlus from, whether to install the 32-bit or 64-bit version, which languages to install, and where Office 365 ProPlus should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
-You can also use enterprise software deployment tools, such as System Center Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) and [Deploy Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+You can also use enterprise software deployment tools, such as System Center Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
 
 <a name="samplexml"> </a>
 
@@ -80,7 +93,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 
 ```
 <Configuration> 
-   <Add SourcePath=”\\Server\Share”  OfficeClientEdition="64" Channel="Targeted"> 
+   <Add SourcePath="\\Server\Share"  OfficeClientEdition="64" Channel="Targeted"> 
        <Product ID="O365ProPlusRetail" > 
             <Language ID="en-us" />      
        </Product> 
@@ -88,8 +101,6 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
    <Updates Enabled="TRUE" UpdatePath="\\Server\Share" Channel="Targeted" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
-
-
 ```
 
 ## Reference information
@@ -124,7 +135,7 @@ For general deployment guidance about Office 365 ProPlus, see the following arti
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 - [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-- [Deploy Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 For networking information, see the following articles:
 
