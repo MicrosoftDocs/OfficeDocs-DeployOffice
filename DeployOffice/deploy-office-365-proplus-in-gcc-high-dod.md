@@ -68,6 +68,9 @@ To deploy Office 365 ProPlus, you can use the Office Deployment Tool along with 
 
 You can also use enterprise software deployment tools, such as System Center Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
 
+> [!NOTE]
+> If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.”
+
 <a name="samplexml"> </a>
 
 ## Sample configuration.xml files
@@ -183,19 +186,19 @@ If experimentation was previously enabled, you also need to delete any data unde
 ### Configure Outlook behavior on Office 365 ProPlus
 The following registry values need to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for all these registry values is REG_DWORD and the values should be set to 1.
 
-- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService
-- **Description:**
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
+  **Description:**   This is needed so that the correct AutoDv2 URL endpoint is used, instead of a world-wide AutoDv2 URL.<br/>
 
-- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService
-- **Description:** This disables calling a worldwide endpoint to get account information for POP, IMAP, and other protocols. Consumer accounts will need to be set up manually. 
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
+  **Description:** This disables calling a worldwide endpoint to get account information for POP, IMAP, and other protocols. Consumer accounts will need to be set up manually. <br/>
+
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableGuessSmart <br/>
+  **Description:** This disables attempts at setting up IMAP, POP accounts through various known ports. <br/>
  
-- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableGuessSmart
-- **Description:** This disables attempts at setting up IMAP, POP accounts through various known ports.
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
+  **Description:** This prevents the option to set up Outlook on a mobile device from appearing.  <br/>
 
- 
-- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink
-- **Description:** This prevents the option to set up Outlook on a mobile device from appearing.  
-
+Also, People functionality is needed across the non-Outlook apps, you must have an Autodiscover xml in a common place using these formats: "https://<contoso.com>.autodiscover/autodiscover.xml" and "https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml."  
 
 ## Reference information
 
