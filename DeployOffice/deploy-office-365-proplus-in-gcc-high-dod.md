@@ -47,7 +47,7 @@ If you deploy Monthly Channel to most of your users now, when you move users to 
 
 ## Where to install Office 365 ProPlus from and where to get updates
 
-We also recommend, if network connectivity and other considerations aren’t an issue, that you deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the Internet. We also recommend that Office 365 ProPlus is configured to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is the easiest way to keep Office 365 ProPlus up to date.
+We recommend, if network connectivity and other considerations aren’t an issue, that you deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the Internet. We also recommend that Office 365 ProPlus is configured to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is the easiest way to keep Office 365 ProPlus up to date.
 
 If you don’t want computers installed with Office 365 ProPlus to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Office 365 ProPlus to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Office 365 ProPlus and updates to Office 365 ProPlus to the shared folder on your internal network. Also, computers installed with Office 365 ProPlus still require Internet connectivity in order to remain activated.
 
@@ -60,6 +60,9 @@ If Office 365 ProPlus is being updated directly from the Office CDN, the amount 
 
 ## What tools to use to deploy Office 365 ProPlus
 There is no special guidance about what tools you can use to deploy Office 365 ProPlus in GCC High or DoD environments.
+
+> [!NOTE]
+> Currently we recommend that you don't allow your users to install Office 365 ProPlus for themselves from the Office 365 portal. By deploying Office 365 ProPlus to your users, you can ensure that users receive the Semi-Annual Channel (Targeted) version. To prevent users from installing from the Office 365 portal, sign in to the Office 365 admin center and go to **Settings** > **Services & add-ins** > **Office software download settings** and make sure all the toggles are set to the Off position.
 
 To deploy Office 365 ProPlus, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Office 365 ProPlus from, whether to install the 32-bit or 64-bit version, which languages to install, and where Office 365 ProPlus should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
@@ -93,12 +96,12 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 
 ```
 <Configuration> 
-   <Add SourcePath="\\Server\Share"  OfficeClientEdition="64" Channel="Targeted"> 
+   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="Targeted"> 
        <Product ID="O365ProPlusRetail" > 
             <Language ID="en-us" />      
        </Product> 
    </Add> 
-   <Updates Enabled="TRUE" UpdatePath="\\Server\Share" Channel="Targeted" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" Channel="Targeted" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
 ```
@@ -123,24 +126,24 @@ To prevent Office 2016 for Mac from sending telemetry data to Microsoft, set the
 
 The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal. For example:
 
-  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
-  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
-  defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
-  defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
-  defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
-  defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
-  defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
+  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
+  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
+  defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE <br/>
+  defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE <br/>
+  defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE <br/>
+  defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE <br/>
+  defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE <br/>
   defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
  
 and 
 
-  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
-  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
-  defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
-  defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
-  defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
-  defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
-  defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
+  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
+  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
+  defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE <br/>
+  defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE <br/>
+  defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE <br/>
+  defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE <br/>
+  defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE <br/>
   defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
 
 
