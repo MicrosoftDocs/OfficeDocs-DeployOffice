@@ -241,6 +241,8 @@ For general deployment guidance about Office 365 ProPlus, see the following arti
 
 For networking information, see the following articles:
 
+- [Office 365 U.S. Government GCC High endpoints](https://support.office.com/article/cbd2369c-fd96-464c-bf48-c99826b459ee)
+- [Office 365 U.S. Government DoD endpoints](https://support.office.com/article/5d7dce60-4892-4b58-b45e-ee42fe8a907)
 - [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 - [Network requests in Office 365 ProPlus and Mobile](https://support.office.com/article/eb73fcd1-ca88-4d02-a74b-2dd3a9f3364d)
 - [Network requests in Office 2016 for Mac](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
