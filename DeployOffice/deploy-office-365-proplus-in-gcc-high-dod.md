@@ -198,7 +198,7 @@ The following registry values need to be set to correctly configure Outlook beha
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
   **Description:** This prevents the option to set up Outlook on a mobile device from appearing.  <br/>
 
-Also, People functionality is needed across the non-Outlook apps, you must have an Autodiscover xml in a common place using these formats: `https://<contoso.com>.autodiscover/autodiscover.xml` and `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  
+Also, if People functionality is needed across the non-Outlook apps, you must have an Autodiscover xml in a common place using these formats: `https://<contoso.com>.autodiscover/autodiscover.xml` and `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  
 
 ## Reference information
 
