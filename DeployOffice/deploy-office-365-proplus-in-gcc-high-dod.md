@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 4/16/2017
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -126,25 +126,25 @@ To prevent Office 2016 for Mac from sending telemetry data to Microsoft, set the
 
 The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal. For example:
 
-  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE <br/>
-  defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
  
 and 
 
-  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE <br/>
-  defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
 
 
 ### Turn off sending telemetry data to Microsoft from Office apps on iOS
@@ -168,7 +168,7 @@ and
 
 ## Additional settings to configure
 
-In addition to turning off sending telemetry data to Microsoft, there are some additional settings that you need to configure. 
+In addition to turning off sending telemetry data to Microsoft, there are some additional settings that you need to configure by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Disable experimentation on Office 365 ProPlus
 Microsoft occasionally runs experiments on Office features.
@@ -204,7 +204,7 @@ The DMS service doesn’t process, store or transmit any personally identifiable
 For more information about the GCC High and DoD environments provided by Microsoft, see the following service descriptions:
 
 - [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx)
-- [GCC High and Dod](https://technet.microsoft.com/library/mt774968.aspx)
+- [GCC High and DoD](https://technet.microsoft.com/library/mt774968.aspx)
 
 For general deployment guidance about Office 365 ProPlus, see the following articles:
 
