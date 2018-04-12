@@ -180,6 +180,22 @@ If experimentation was previously enabled, you also need to delete any data unde
 - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentEcs
 - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentTas
 
+### Configure Outlook behavior on Office 365 ProPlus
+The following registry values need to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for all these registry values is REG_DWORD and the values should be set to 1.
+
+- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService
+- **Description:**
+
+- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService
+- **Description:** This disables calling a worldwide endpoint to get account information for POP, IMAP, and other protocols. Consumer accounts will need to be set up manually. 
+ 
+- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableGuessSmart
+- **Description:** This disables attempts at setting up IMAP, POP accounts through various known ports.
+
+ 
+- **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink
+- **Description:** This prevents the option to set up Outlook on a mobile device from appearing.  
+
 
 ## Reference information
 
@@ -205,6 +221,7 @@ For more information about the GCC High and DoD environments provided by Microso
 
 - [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx)
 - [GCC High and DoD](https://technet.microsoft.com/library/mt774968.aspx)
+- [Enterprise Mobility + Security for US Government](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)
 
 For general deployment guidance about Office 365 ProPlus, see the following articles:
 
