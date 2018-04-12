@@ -77,6 +77,8 @@ You can also use enterprise software deployment tools, such as System Center Con
 
 <a name="CDNxml"> </a>
 
+For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+
 ### Installing and updating Office 365 ProPlus from the Office CDN
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Office 365 ProPlus on Semi-Annual Channel (Targeted) from the Office CDN. Office 365 ProPlus will also be automatically updated directly from the Office CDN.
 
