@@ -69,7 +69,7 @@ To deploy Office 365 ProPlus, you can use the Office Deployment Tool along with 
 You can also use enterprise software deployment tools, such as System Center Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
 
 > [!NOTE]
-> If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.”
+> If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.
 
 <a name="samplexml"> </a>
 
@@ -198,7 +198,7 @@ The following registry values need to be set to correctly configure Outlook beha
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
   **Description:** This prevents the option to set up Outlook on a mobile device from appearing.  <br/>
 
-Also, People functionality is needed across the non-Outlook apps, you must have an Autodiscover xml in a common place using these formats: "https://<contoso.com>.autodiscover/autodiscover.xml" and "https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml."  
+Also, People functionality is needed across the non-Outlook apps, you must have an Autodiscover xml in a common place using these formats: `https://<contoso.com>.autodiscover/autodiscover.xml` and `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  
 
 ## Reference information
 
