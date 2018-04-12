@@ -116,7 +116,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ## Turn off sending telemetry data to Microsoft
 Office apps send telemetry data to Microsoft on a regular basis to help Microsoft understand how to improve the product. For a GCC High or DoD environment, you must turn off sending telemetry data to Microsoft.
 
-No additional configuration is needed to prevent Office 365 ProPlus or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD envrionment and will automatically prevent telemetry data from being sent to Microsoft.
+No additional configuration is needed to prevent Office 365 ProPlus or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
 
 For other Office apps, such as Skype for Business client, Office 2016 for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for additional information.
 
@@ -184,6 +184,8 @@ If experimentation was previously enabled, you also need to delete any data unde
 - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Experiment
 - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentEcs
 - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentTas
+
+These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
 
 ### Configure Outlook behavior on Office 365 ProPlus
 The following registry values need to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for all these registry values is REG_DWORD and the values should be set to 1.
