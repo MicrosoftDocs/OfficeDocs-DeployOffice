@@ -199,19 +199,19 @@ These registry keys get created when an Office app is launched, so it's ok if th
 ### Configure Outlook behavior on Office 365 ProPlus
 The following registry values must to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
 
-   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
-   **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings.<br/>
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
+  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings.<br/>
 
-   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
-   **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
+  **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
 
 The following registry values are optional. The type for these registry values is REG_DWORD and the values should be set to 1.
 
-   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableGuessSmart <br/>
-   **Description:** This disables attempts at setting up IMAP, POP accounts through various known ports. <br/>
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableGuessSmart <br/>
+  **Description:** This disables attempts at setting up IMAP, POP accounts through various known ports. <br/>
  
-   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
-   **Description:** This suppresses the option of configuring Outlook on a mobile device following a successfully configured account in Outlook Desktop. <br/>
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
+  **Description:** This suppresses the option of configuring Outlook on a mobile device following a successfully configured account in Outlook Desktop. <br/>
 
 Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user’s mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
 
