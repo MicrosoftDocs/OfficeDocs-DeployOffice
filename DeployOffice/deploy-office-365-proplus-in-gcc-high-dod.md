@@ -131,24 +131,24 @@ To prevent Office 2016 for Mac from sending telemetry data to Microsoft, set the
 
 The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal. For example:
 
-    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
-    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE <br/>
-    defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE <br/>
-    defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE <br/>
-    defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE <br/>
-    defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE <br/>
-    defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE <br/>
+    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
+    defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
     defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
  
 and 
 
-    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
-    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE <br/>
-    defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE <br/>
-    defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE <br/>
-    defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE <br/>
-    defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE <br/>
-    defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE <br/>
+    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
+    defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
     defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
 
 
