@@ -175,8 +175,8 @@ and
 
 In addition to turning off sending telemetry data to Microsoft, there are some additional settings that you need to configure. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
-## Ensure modern authentication is enabled
-Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Office 365 ProPlus. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013 and Office 2016 client apps](https://support.office.com/article/e4c45989-4b1a-462e-a81b-2a13191cf517).
+### Ensure modern authentication is enabled
+Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Office 365 ProPlus. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) and [How modern authentication works for Office 2013 and Office 2016 client apps](https://support.office.com/article/e4c45989-4b1a-462e-a81b-2a13191cf517).
 
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
