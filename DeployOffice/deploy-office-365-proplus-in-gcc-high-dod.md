@@ -7,7 +7,7 @@ ms.date: 4/16/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: None
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 
@@ -16,7 +16,7 @@ description: "Provides guidance for deploying Office 365 ProPlus in a GCC High o
 
 # Guidance for deploying Office 365 ProPlus in a GCC High or DoD environment
 
-If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there are some special considerations that you need to be aware of to meet compliance requirements.
+If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
 <a name="version"> </a>
 
@@ -113,8 +113,8 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 
 <a name="telemetry"> </a>
 
-## Turn off sending telemetry data to Microsoft
-Office apps send telemetry data to Microsoft on a regular basis to help Microsoft understand how to improve the product. For a GCC High or DoD environment, you must turn off sending telemetry data to Microsoft.
+## Configure whether to send telemetry data to Microsoft
+Office apps send telemetry data to Microsoft on a regular basis to help Microsoft understand how to improve the product. In highly regulated environments, you may choose to prevent telemetry data from being sent to Microsoft.
 
 No additional configuration is needed to prevent Office 365 ProPlus or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
 
@@ -123,13 +123,19 @@ For other Office apps, such as Skype for Business client, Office 2016 for Mac, a
 ### Turn off sending telemetry data to Microsoft from Skype for Business client
 To prevent Skype for Business client from sending telemetry data to Microsoft, edit the registry and add the TelemetryTier value to the HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Lync key. The type for TelemetryTier is REG_DWORD, and the value should be set to 0.
 
+For more information, see [Skype for Business and Microsoft Teams data collection practices](https://docs.microsoft.com/skypeforbusiness/accessibility-and-regulatory/data-collection-practices).
+
 ### Turn off sending telemetry data to Microsoft from Office 2016 for Mac
-To prevent Office 2016 for Mac from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "FALSE." 
+Office 2016 for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the ‘Nexus’ endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
+- **Heartbeat** contains version and license information. This data is sent immediately upon app launch.
+- **Usage** contains information about how apps are being used and non-fatal errors. This data is sent every 60 minutes.
+
+To prevent Office 2016 for Mac from sending telemetry data to Microsoft, you can set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "FALSE." 
 
 > [!IMPORTANT]
 > You must be using at least Version 16.11 of Office 2016 for Mac.
 
-The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal. For example:
+The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal, as shown in the following example.
 
     defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
     defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
@@ -139,9 +145,6 @@ The preferences are per-application and can be set via macOS Configuration Profi
     defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
     defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
     defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
- 
-and 
-
     defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
     defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
     defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
@@ -173,7 +176,7 @@ and
 
 ## Additional settings to configure
 
-In addition to turning off sending telemetry data to Microsoft, there are some additional settings that you need to configure. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
+In addition to telemetry data settings, there are some additional settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Ensure modern authentication is enabled
 Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Office 365 ProPlus. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) and [How modern authentication works for Office 2013 and Office 2016 client apps](https://support.office.com/article/e4c45989-4b1a-462e-a81b-2a13191cf517).
