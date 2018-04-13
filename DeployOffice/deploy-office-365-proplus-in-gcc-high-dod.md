@@ -47,7 +47,7 @@ If you deploy Monthly Channel to most of your users now, when you move users to 
 
 ## Where to install Office 365 ProPlus from and where to get updates
 
-We recommend, if network connectivity and other considerations aren’t an issue, that you deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the Internet. We also recommend that Office 365 ProPlus is configured to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is the easiest way to keep Office 365 ProPlus up to date.
+If network connectivity and other considerations aren’t an issue, you can choose to deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the Internet. You can also configure Office 365 ProPlus to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Office 365 ProPlus up to date.
 
 If you don’t want computers installed with Office 365 ProPlus to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Office 365 ProPlus to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Office 365 ProPlus and updates to Office 365 ProPlus to the shared folder on your internal network. Also, computers installed with Office 365 ProPlus still require Internet connectivity in order to remain activated.
 
@@ -175,6 +175,9 @@ and
 
 In addition to turning off sending telemetry data to Microsoft, there are some additional settings that you need to configure by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
+### Turn off Windows Error Reporting
+To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
+
 ### Disable experimentation on Office 365 ProPlus
 Microsoft occasionally runs experiments on Office features.
 
@@ -211,7 +214,7 @@ Also, if People functionality is needed across the non-Outlook apps, you must ha
 ### Office Content Delivery Network (CDN)
 The software to install and update Office 365 ProPlus is available on the Office Content Delivery Network (CDN) on the Internet. The Click-to-Run service, which manages installations and updates of Office 365 ProPlus, makes calls to the Office CDN, which is hosted by Akamai.
 
-Office 365 has a Memorandum of Understanding with Akamai as part of the Office 365 accreditation package and has a FedRAMP moderate accreditation. For availability, the Click-to-Run service can failover to a world-wide instance of Azure Front Door, which also has a FedRAMP moderate accreditation.
+Office 365 has a Memorandum of Understanding with Akamai as part of the Office 365 accreditation package and Akami has a FedRAMP moderate accreditation. For availability, the Click-to-Run service can failover to a world-wide instance of Azure Front Door, which also has a FedRAMP moderate accreditation.
 
 <a name="DMS"> </a>
 
