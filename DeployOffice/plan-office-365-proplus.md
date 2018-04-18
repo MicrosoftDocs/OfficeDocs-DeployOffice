@@ -30,6 +30,9 @@ If you haven't already, complete the [asssessment of your environment and infras
 
 ## Step 1 - Choose how to deploy
 
+> [!NOTE]
+> **Best practice:** If you use Configuration Manager already, make sure you're on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
+
 To deploy Office, you first choose what deployment tool to use and whether to install  the Office files directly from the cloud or from a local source on your network.
 
 We recommend the Current Branch of Configuration Manager for organizations that already use it to distribute and manage software. Configuration Manager scales for large environments; enables extensive control over installation, updates, and settings; and has built-in features for deploying and managing Office. 
@@ -54,10 +57,10 @@ Choose how you want to deploy:
 
 Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
  
-> [!NOTE]
-> **Best practice:** If you use Configuration Manager already, make sure you're on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
-
 ## Step 2 - Choose how to manage updates
+
+> [!NOTE]
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the updates, but the updates occur without any administrative overhead. 
 
 To manage updates to Office, you choose whether to have your client devices automatically updated, what tool to use, and whether to install the updates to Office directly from the cloud or from a local source on your network.
 
@@ -77,10 +80,10 @@ Choose how to manage updates:
     
 As with the initial deployment, organizations can use a combination of these options for different users. 
 
-> [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the updates, but the updates occur without any administrative overhead. 
-
 ## Step 3 - Choose your update channels 
+
+> [!NOTE]
+> **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
 
@@ -98,10 +101,10 @@ Which users should get which update channel depends on several factors, includin
 
 With this approach, you can test new Office features in your environment, particularly with your hardware and device drivers. 
  
-> [!NOTE]
-> **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
-
 ## Step 4 - Define your source files
+
+> [!NOTE]
+> **Best practice:** Build separate Office installation packages for the different architectures and update channels you require. In each installation package, include all the required languages and applications, including the core Office applications and, if needed, Visio and Project. For additional languages, you can make them available for user installation or deploy them separately after the initial deployment.
 
 When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two channels and both architectures, you create four packages: 
 
@@ -125,10 +128,10 @@ For details on which architecture to choose, see [Choose the 32-bit or 64-bit ve
 
 If you have subscription versions of Visio or Project (Visio Pro for Office 365 or Project Online Desktop Client), continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Office 365 ProPlus. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
-> [!NOTE]
-> **Best practice:** Build separate Office installation packages for the different architectures and update channels you require. In each installation package, include all the required languages and applications, including the core Office applications and, if needed, Visio and Project. For additional languages, you can make them available for user installation or deploy them separately after the initial deployment.
-
 ## Step 5 - Define your deployment groups
+
+> [!NOTE]
+> **Best practice:** Define deployment groups to deploy the appropriate architectures, update channels, languages, and applications to your client devices. If multiple deployment groups share the same architecture and update channel, use the same installation package to install Office.
 
 When deploying Office, you can install different versions of Office for different groups of users. In addition to the architecture and update channel, you can include or exclude specific applications, choose languages, and define the installation experience. Each group of users is a separate deployment group. If you use Configuration Manager, you define the settings for these deployment groups as part of the deployment wizard. If you use the ODT, you define the settings in a configuration file. 
 
@@ -146,24 +149,21 @@ This single installation package can then be used to depoy to multiple deploymen
 
 By re-using installation packages for different deployment groups, you can save administrative costs and conserve network bandwidth.
 
-> [!NOTE]
-> **Best practice:** Define deployment groups to deploy the appropriate architectures, update channels, languages, and applications to your client devices. If multiple deployment groups share the same architecture and update channel, use the same installation package to install Office.
-
 ## Step 6 - Plan your upgrade from existing versions of Office 
-
-Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you need to have two versions of Office on the same computer, we recommend that you keep only the necessary earlier applications and that you plan to transition to using only Office 365 ProPlus when possible.  
 
 > [!NOTE]
 > **Best practice:** Before installing Office 365 ProPlus, remove any existing versions of Office. 
 
+Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you need to have two versions of Office on the same computer, we recommend that you keep only the necessary earlier applications and that you plan to transition to using only Office 365 ProPlus when possible.  
+
 ## Step 7 - Plan for shared computers (optional)
+
+> [!NOTE]
+> **Best practice:** For shared computer scenarios, such as VDI, enable shared computer activation when deploying Office 365 ProPlus.
 
 If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Office 365 ProPlus. 
 
 With shared computer activation enabled, any user that has been assigned an Office 365 ProPlus license can log on to the computer and use the Office 365 ProPlus apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).   
-
-> [!NOTE]
-> **Best practice:** For shared computer scenarios, such as VDI, enable shared computer activation when deploying Office 365 ProPlus.
 
 ## Review exit criteria
 
