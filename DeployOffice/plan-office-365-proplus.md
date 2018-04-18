@@ -64,7 +64,7 @@ Many organizations will use a combination of these options for different users. 
 
 To manage updates to Office, you choose whether to have your client devices automatically updated, what tool to use, and whether to install the updates to Office directly from the cloud or from a local source on your network.
 
-We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to prevent your devices from trying to update at the same time.
+We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to conserve your network bandwidth.
 
 If you choose to manage the updates directly, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the Current Branch. 
 
@@ -87,11 +87,13 @@ As with the initial deployment, organizations can use a combination of these opt
 
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
 
-- Semi-Annual Channel: Provides users with new features of Office every six months, in January and July
+- Semi-Annual Channel: Provides users with new features of Office every six months, in January and July.
 
 - Semi-Annual Channel (Targeted): Provides users the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
 
 - Monthly Channel: Provides users with the newest features of Office as soon as they're available. 
+
+All the channels will receive updates for security and critical non-security isuses when needed. These updates usually occur on the second Tuesday of the month.
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
