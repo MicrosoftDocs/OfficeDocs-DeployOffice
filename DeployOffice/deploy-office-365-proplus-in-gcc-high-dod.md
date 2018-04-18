@@ -3,7 +3,7 @@ title: "Guidance for deploying Office 365 ProPlus in a GCC High or DoD environme
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 4/16/2017
+ms.date: 4/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
