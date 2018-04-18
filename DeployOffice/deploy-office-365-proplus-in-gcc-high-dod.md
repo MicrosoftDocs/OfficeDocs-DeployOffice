@@ -215,6 +215,18 @@ The following registry values are optional. The type for these registry values i
 
 Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user’s mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
 
+
+<a name="special"> </a>
+
+## Special considerations
+Due diligence was done to review cloud services connected to features in Office 365 ProPlus.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release.   We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days. 
+
+
+|**Application**  |**Feature**  |**Recommendation**  |
+|---------|---------|---------|
+|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |Do not use this feature. It will be disabled in the May update of the build delivered to Semi-Annual Channel (Targeted) and Monthly Channel. |
+
+
 ## Reference information
 
 <a name="CDN"> </a>
