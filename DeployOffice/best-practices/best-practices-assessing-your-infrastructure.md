@@ -71,7 +71,7 @@ For specific guidance on the Telemetry Dashboard installation and usage, see [Be
     
 - Note down all responses and use them as the foundation for your planning.
     
-## Related Topics
+## Related topics
 
 [Best practices: Assessment - reference materials](best-practices-assessmentreference-materials.md)
   

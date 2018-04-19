@@ -116,8 +116,8 @@ If you plan to upgrade and update Office by using by using enterprise software d
 
     Then, run the Office Deployment Tool in /configure mode on each computer that has Office installed. Be sure that you're using the [Office 2013 version of the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?linkid=282642).
     
-<a name="BKMK_Related"> </a>
-## Related Topics
+
+## Related topics
 
 [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   

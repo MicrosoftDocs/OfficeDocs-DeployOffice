@@ -202,7 +202,7 @@ This command is the same as group 1, except that it references the configuration
   
 After running the command, the Office installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and %windir%\temp directories.
 
-## Related Topics
+## Related topics
 
 [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   

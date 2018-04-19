@@ -42,8 +42,9 @@ You can look in the registry of the computer to [determine if Office is configur
 > [!NOTE]
 > This information also applies to Visio Pro for Office 365 and Project Online Desktop Client. It also applies to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium. 
   
-## Criteria used to determine if Office can be upgraded successfully
 <a name="BKMK_Criteria"> </a>
+
+## Criteria used to determine if Office can be upgraded successfully
 
 Before upgrading to the Office 2016 version, Microsoft checks to see if Office can be upgraded successfully. It determines this by looking at the following criteria:
   
@@ -69,8 +70,10 @@ If any of these criteria aren't met, then Microsoft won't attempt to upgrade Off
   
 Also, there is a check to see if the user is a local administrator on the computer. If the user isn't a local administrator, then the user won't see the upgrade notification when an Office app is opened. That's because a user must be a local administrator on the computer to install or upgrade Office.
   
-## Steps performed during the upgrade to Office 2016
+
 <a name="BKMK_Steps"> </a>
+
+## Steps performed during the upgrade to Office 2016
 
 If it's determined that the Office installation is a suitable candidate to be upgraded, the following steps occur:
   
@@ -86,8 +89,10 @@ If it's determined that the Office installation is a suitable candidate to be up
     
 If the user chooses to ignore or close the **Get the new Office** message, the message reappears again the next time the user opens an Office app.
   
-## Timing of the upgrade notifications
 <a name="BKMK_Timing"> </a>
+
+## Timing of the upgrade notifications
+
 
 Not all Office installations that meet the criteria to be upgraded get the upgrade notification at the same time. Microsoft initially sends the notification to a small percentage of Office installations. Then, over time, Microsoft increases the number of notifications that it sends out. This means that it's likely that users in your organization will get upgrade notifications at different times, even possibly a week or more apart.
   

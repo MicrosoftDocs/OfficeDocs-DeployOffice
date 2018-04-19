@@ -123,7 +123,7 @@ After you've completed all the RDS configuration steps, users can connect to any
   
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
-## Related Topics
+## Related topics
 <a name="VM"> </a>
 
 [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
