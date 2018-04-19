@@ -129,7 +129,9 @@ To configure licensing token roaming, you can use either the Office Deployment T
    
 ## Related topics
 [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+
 [Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
+
 [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
   
 
