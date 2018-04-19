@@ -88,23 +88,23 @@ If a user logs on to a shared computer again, Office 365 ProPlus uses the same l
 
 **Licensing token renewal** The licensing token that is stored on the shared computer is valid only for a few days. As the expiration date for the licensing token nears, Office 365 ProPlus automatically attempts to renew the licensing token when the user is logged on to the computer and using Office 365 ProPlus.
     
-    If the user doesn't log on to the shared computer for several days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
+If the user doesn't log on to the shared computer for several days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
     
 **Internet connectivity** Because the shared computer has to contact the Office Licensing Service on the Internet to obtain or renew a licensing token, reliable connectivity between the shared computer and the Internet is necessary.
     
 **Reduced functionality mode** If the user is not licensed for Office 365 ProPlus, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Office 365 ProPlus isn't activated. Office 365 ProPlus is now in reduced functionality mode. This means that the user can view and print Office 365 ProPlus documents, but can't create or edit documents. The user also sees a message in Office 365 ProPlus that most features are turned off.
     
-     ![Reduced functionality](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
+   ![Reduced functionality](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
   
 **Activation limits** Normally, users can install and activate Office 365 ProPlus only on up to five computers. Using Office 365 ProPlus with shared computer activation enabled doesn't count against the five computer limit.
     
-    Microsoft allows a single user to activate Office 365 ProPlus on a reasonable number of shared computers in a given time period. The user gets an error message in the unlikely event the limit is exceeded.
+Microsoft allows a single user to activate Office 365 ProPlus on a reasonable number of shared computers in a given time period. The user gets an error message in the unlikely event the limit is exceeded.
     
-     ![Too many computers activated message](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
+   ![Too many computers activated message](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
   
 **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Office is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Office 365 ProPlus. For more information, see [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
     
-    If you don't use single sign-on, you should consider using roaming profiles and include the following two folders as part of the roaming profile:
+If you don't use single sign-on, you should consider using roaming profiles and include the following two folders as part of the roaming profile:
     
   - %localappdata%\\Microsoft\\Office\\16.0\\Licensing
     
@@ -118,14 +118,10 @@ To configure licensing token roaming, you can use either the Office Deployment T
     
   - If you're using the Office Deployment Tool, include the SCLCacheOverride and SCLCacheOverrideDirectory in the Property element of your configuration.xml file. For more information, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
     
-  - To edit the registry, go to HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration and do the following:
+  - To edit the registry, go to HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration andd a string value of SCLCacheOverride and set the value to 1. Also, add a string value of SCLCacheOverrideDirectory and set the value to the path of the folder to save the licensing token. 
     
-  - Add a string value of SCLCacheOverride and set the value to 1.
-    
-  - Add a string value of SCLCacheOverrideDirectory and set the value to the path of the folder to save the licensing token.
-    
-    > [!NOTE]
-    > If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing. 
+   >[!NOTE]
+   > If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing. 
   
 
 
