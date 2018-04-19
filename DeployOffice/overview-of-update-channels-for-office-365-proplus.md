@@ -161,9 +161,8 @@ Here is some additional information that might be useful to know as you determin
     
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
 
-<a name="BKMK_Related"> </a>
-## Related Topics
 
+## Related topics
 
 [Version and build numbers of update channel releases](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
   

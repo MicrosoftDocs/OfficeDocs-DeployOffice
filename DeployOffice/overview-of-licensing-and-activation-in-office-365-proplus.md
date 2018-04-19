@@ -64,8 +64,8 @@ The user can then choose one of the available options to reactivate Office 365 P
   
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
-<a name="BKMK_Related"> </a>
-## Related Topics
+
+## Related topics
 
 [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
   
