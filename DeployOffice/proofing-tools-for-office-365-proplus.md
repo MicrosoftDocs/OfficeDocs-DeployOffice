@@ -187,7 +187,7 @@ The following table lists the link for the proofing tool download in all availab
 |Wolof  <br/> |wo-sn  <br/> |[x86](https://download.microsoft.com/download/C/9/3/C93F4B91-2897-4B0D-B84F-1A39692746E8/proofingtools2016_wo-sn-x86.exe), [x64](https://download.microsoft.com/download/C/9/3/C93F4B91-2897-4B0D-B84F-1A39692746E8/proofingtools2016_wo-sn-x64.exe) <br/> |
 |Yoruba  <br/> |yo-ng  <br/> |[x86](https://download.microsoft.com/download/1/D/B/1DBAEB2B-7648-47A5-8F26-7B9F9814E959/proofingtools2016_yo-ng-x86.exe), [x64](https://download.microsoft.com/download/1/D/B/1DBAEB2B-7648-47A5-8F26-7B9F9814E959/proofingtools2016_yo-ng-x64.exe) <br/> |
    
-## Related Topics
+## Related topics
 
 - [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
   

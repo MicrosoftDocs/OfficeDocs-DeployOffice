@@ -176,7 +176,7 @@ After you deploy the application, a targeted computer becomes aware of the deplo
   
 ![Office installation status](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
   
-## Related Topics
+## Related topics
 - [Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=535034)
   
 

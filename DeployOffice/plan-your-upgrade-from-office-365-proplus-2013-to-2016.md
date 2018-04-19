@@ -147,8 +147,8 @@ If you have a volume licensed version of Visio 2016 or Project 2016 that uses th
 
 [InfoPath 2013 remains the current version](https://blogs.office.com/2014/01/31/update-on-infopath-and-sharepoint-forms/) and therefore won't be included in the Office 2016 version of Office 365 ProPlus. When you upgrade an existing installation of Office 365 ProPlus to the Office 2016 version, InfoPath is removed from the computer. If your users still need to use InfoPath, the previous version will be available for installation on the **Software** page in the Office 365 portal.
  
-<a name="BKMK_Related"> </a>
-## Related Topics
+
+## Related topics
 
 
 [What's new: Deploying Office 365 ProPlus in the enterprise](what-s-new-deploying-office-365-proplus-in-the-enterprise.md)

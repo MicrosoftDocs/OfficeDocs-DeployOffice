@@ -56,7 +56,7 @@ Also, by downloading Office 365 ProPlus to your local network, you can use many 
   
 Whichever deployment method you use, Office 365 ProPlus is installed and runs locally on the user's computer. Office 365 ProPlus is not a web-based version of Office. Users don't have to be connected to the Internet all the time to use it.
   
-## Related Topics
+## Related topics
 
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
   
