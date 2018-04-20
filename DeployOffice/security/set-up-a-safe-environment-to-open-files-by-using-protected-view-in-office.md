@@ -18,7 +18,6 @@ description: "Explains how to use Protected View settings to open documents, pre
 
  **Summary:** Explains how to use Protected View settings to open documents, presentations, and workbooks in a sandbox environment in Office 2016. 
   
- **Audience:** IT Professionals 
   
 Change how the sandbox preview feature in Office 2016 behaves by configuring Protected View settings. Protected View is a security feature in Office 2016 that helps reduce exploits to your computer by opening files in a restricted environment so they can be examined before they are opened for editing in Excel 2016, PowerPoint 2016, or Word 2016.
   

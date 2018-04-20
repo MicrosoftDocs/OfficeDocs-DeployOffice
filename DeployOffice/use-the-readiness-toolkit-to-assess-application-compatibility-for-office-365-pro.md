@@ -3,7 +3,7 @@ title: "Use the Readiness Toolkit to assess application compatibility for Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 4/3/2018
+ms.date: 4/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -23,7 +23,7 @@ description: "The Readiness Toolkit for Office add-ins and VBA can help you iden
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18079, and was released on March 20, 2018. We recommend that you always download and use the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18095, and was released on April 9, 2018. We recommend that you always download and use the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -84,7 +84,7 @@ To create a readiness report, you first need to select what information to use t
 |Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator only scans Office documents that are in the user's list of most recently used files. This allows you to narrow the focus of the scan to documents that a user accesses on a regular basis.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
 |Office documents in a local folder or network share.  <br/> |The Readiness Report Creator scans the Office documents in the folder or network share that you specify. The Readiness Report Creator automatically scans the specified location, and all the subfolders in that location.  <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for add-ins installed on the computer on which the Readiness Report Creator is run. <br/> |VBA only  <br/> |
 |Previous readiness results saved together in a local folder or network share.  <br/> |This option allows you to create a consolidated report comprised of individual readiness results from multiple standalone computers.  <br/> <br/>For example, you might want to run the Readiness Report Creator on all the computers in the Finance department, saving the results of each scan to a network share. Then, you can use this option to create a consolidated report for the Finance department.  <br/><br/> For more information, see [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise).  <br/> |VBA only, or VBA and Add-in, depending on what readiness results are being used.  <br/> |
-|Add-in data from Office Telemetry dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](https://technet.microsoft.com/library/jj822978%28v=office.16%29.aspx) to assess add-in compatibility, you can use that information which you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. <br/> |Add-in only  <br/> |
+|Add-in data from Office Telemetry dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](https://technet.microsoft.com/library/jj822978%28v=office.16%29.aspx) to assess add-in compatibility, you can use that information which you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. Also, GRANT SELECT access on the Telemetry database is required for the user to run this option. <br/> |Add-in only  <br/> |
    
 <a name="BKMK_ChooseBasicAdv"> </a>
 ### Choosing between a basic and an advanced report

@@ -42,22 +42,19 @@ The following table lists the standard system Office System Requirements. Howeve
 
 The following links provide detailed information about Office 2016 for Mac deployments:
   
-- [What's new for admins in Office 2016 for Mac](https://technet.microsoft.com/en-us/library/mt346044%28v=office.16%29.aspx)
+- [What's new for admins in Office 2016 for Mac](../mac/what-s-new-for-admins-in-office-for-mac.md)
     
-- [Overview of activation for Office 2016 for Mac](https://technet.microsoft.com/en-us/library/mt346043%28v=office.16%29.aspx)
+- [Overview of activation for Office 2016 for Mac](../mac/overview-of-activation-for-office-for-mac.md)
     
-- [Deployment options for admins for Office 2016 for Mac](https://technet.microsoft.com/en-us/library/jj984157%28v=office.16%29.aspx)
+- [Deployment options for admins for Office 2016 for Mac](../mac/deployment-options-for-office-for-mac.md)
     
-- [Deploy preferences for Office 2016 for Mac](https://technet.microsoft.com/en-us/library/jj984220%28v=office.16%29.aspx)
+- [Deploy preferences for Office 2016 for Mac](../mac/deploy-preferences-for-office-for-mac.md)
     
-- [Deploy updates for Office 2016 for Mac](https://technet.microsoft.com/en-us/library/jj984187%28v=office.16%29.aspx)
+- [Deploy updates for Office 2016 for Mac](../mac/deploy-updates-for-office-for-mac.md)
     
-- [Office 2016 for Mac upgrade to 64-bit](https://technet.microsoft.com/en-us/library/mt762139%28v=office.16%29.aspx)
+- [Office 2016 for Mac upgrade to 64-bit](../mac/office-2016-for-mac-upgrade-to-64-bit.md)
     
-- [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-your-PC-or-Mac-4414eaaf-0478-48be-9c42-23adc4716658?ui=en-US&amp;rs=en-US&amp;ad=US)
+- [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)
     
-- [What to try if you can't install Office 2016 for Mac](https://support.office.com/en-us/article/What-to-try-if-you-can-t-install-Office-2016-for-Mac-5efba2b4-b1e6-4e5f-bf3c-6ab945d03dea?ui=en-US&amp;rs=en-US&amp;ad=US)
-    
-- [Troubleshoot Office 2011 for Mac issues by completely uninstalling before you reinstall](https://support.office.com/en-us/article/Troubleshoot-Office-2011-for-Mac-issues-by-completely-uninstalling-before-you-reinstall-ba8d8d13-0015-4eea-b60b-7719c2cedd17?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1)
-    
-
+- [What to try if you can't install or activate Office 2016 for Mac](https://support.office.com/article/5efba2b4-b1e6-4e5f-bf3c-6ab945d03dea)
+        

@@ -76,11 +76,7 @@ Updates can't be applied if the Office program that has to be updated is being u
   
 To make sure that users apply updates, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates. Users are given [notifications leading up to the deadline](end-user-update-notifications-for-office-365-proplus.md).
   
-## See also
-<a name="Process"> </a>
-
-#### Other Resources
-
+## Related topics
 [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md)
   
 [Configure update settings for Office 365 ProPlus](configure-update-settings-for-office-365-proplus.md)

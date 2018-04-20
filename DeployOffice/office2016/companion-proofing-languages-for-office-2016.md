@@ -18,8 +18,7 @@ description: "Identify the companion proofing languages that are included with O
 
  **Summary:** Identify the companion proofing languages that are included with Office 2016. 
   
- **Audience:** IT Professionals 
-  
+ 
 Each language version of Office 2016 includes proofing tools for a set of companion languages. For example, when you deploy the English version of an Office 2016 product, users receive proofing tools for both Spanish and French in addition to English. 
   
 Proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.

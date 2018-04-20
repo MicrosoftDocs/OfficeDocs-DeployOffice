@@ -18,7 +18,6 @@ description: "Identify installed languages, and add or remove Office 2016 langua
 
  **Summary:** Identify installed languages, and add or remove Office 2016 language packs by modifying an existing installation or by deploying them as separate products. 
   
- **Audience:** IT Professionals 
   
 You can add or remove language packs for an existing Office 2016 installation. This article describes the two methods that you can use to complete these tasks and how to view a list of the languages that are installed.
   

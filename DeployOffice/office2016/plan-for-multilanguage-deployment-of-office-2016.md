@@ -18,7 +18,6 @@ description: "Plan for multilanguage setup, and customization and proofing tools
 
  **Summary:** Plan for multilanguage setup, and customization and proofing tools for Office 2016. 
   
- **Audience:** IT Professionals 
   
 Support for multiple languages and languages other than the default are provided through language accessory packs (LAPs) and language interface packs (LIPs) that you install. Language accessory packs (LAPs) let you see ribbon or menu items, commands, Help, and proofing tools like the spelling checker, grammar checker, and thesaurus in a translated version of Office for all Office applications. Language interface packs (LIPs) only change the language for the ribbon and commands for some Office applications.
 

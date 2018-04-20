@@ -18,7 +18,6 @@ description: "Describes the activation process for KMS volume license editions o
 
  **Summary:** Describes the activation process for KMS volume license editions of Office 2016 on client computers. 
   
- **Audience:** IT Professionals 
   
 > [!IMPORTANT]
 > This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead. 

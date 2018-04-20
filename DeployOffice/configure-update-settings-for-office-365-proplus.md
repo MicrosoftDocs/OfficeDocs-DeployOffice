@@ -75,11 +75,7 @@ Group Policy settings can be used regardless of whether users install Office 365
   
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
-## See also
-<a name="GP"> </a>
-
-#### Other Resources
-
+## Related topics
 [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
   
 [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md)

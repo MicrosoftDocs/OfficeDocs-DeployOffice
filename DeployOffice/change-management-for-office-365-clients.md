@@ -392,7 +392,7 @@ Use the following methods to configure which channels are used by which client c
 - Group Policy - for centralized administration of domain-joined computers.
     
 <a name="Related"> </a>
-## Related Topics
+## Related topics
 
 [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
   

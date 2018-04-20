@@ -18,7 +18,6 @@ description: "Use Information Rights Management (IRM) in Office to specify permi
 
  **Summary:** Use Information Rights Management (IRM) in Office 2016 to specify permission for accessing and using sensitive documents and messages. 
   
- **Audience:** IT Professionals 
   
 IRM allows individuals and administrators to specify who can access documents, workbooks, and presentations. This helps prevent sensitive information from being printed, forwarded, or copied by unauthorized people. This article contains a summary of IRM technology and how it works in Office applications, together with links to more information about how to set up and install the required software to implement IRM in Office 2016.
   
