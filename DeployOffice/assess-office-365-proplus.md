@@ -46,26 +46,24 @@ Review your network capability, including bandwidth and distribution of client d
 - Client devices require Internet access to activate their Office 365 ProPlus subscription, and then must connect at least once every thirty days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 - Office 365 updates vary in size, but you can review recent download sizes [here](https://support.office.com/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
-- Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the Internet and your client devices, including those in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to prevent your devices from trying to update at the same time. 
+- Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the Internet and your client devices, including those in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
 
 ## Step 4 - Assess application compatibility
 
-Before deploying Office 365 ProPlus, we recommend testing your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with the new version of Office.  
+Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with the new version of Office.  
 
 > [!NOTE]
-> The vast majority of add-ins, VBA macros, and complex documents and spreadsheets that work with Office 2010 or 2013 will work with Office 365 ProPlus as well.
+> The vast majority of add-ins, VBA macros, and complex documents and spreadsheets that work with Office 2010 or 2013 will work with Office 365 ProPlus as well. 
 
 To complete that assessment, do the following:
 
 1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). You can run the Readiness Toolkit on client devices across your entire organization. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
  
-2. Work with your business groups to review the reports from the Readiness Toolkit to prioritize add-ins and VBA macros. We recommend identifying the add-ins and VBA macros as business critical, high impact, medium impact, and low impact. This prioritization helps identify which add-ins and VBA macros to validate. 
+2. Use the reports to identify the readiness status of your add-ins and get recommendations about how to fix any VBA macro issues that were identified.
 
-3. Use the reports to identify the readiness status of your add-ins and get recommendations on how to fix VBA macro issues.
+3. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Office 365 ProPlus. 
 
-4. Define a pilot group of representative users and client devices from business groups across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros. 
-
-As part of your Office deployment, you will deploy Office first to the targeted group from step 4, and then do an additional round of testing to ensure compatibility between Office 365 ProPlus and the add-ins and client devices in that group. After you have verified compatiblity, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more details, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).  
+As part of your Office deployment, you will deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Office 365 ProPlus and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more details, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).  
 
 ## Review exit criteria 
 
