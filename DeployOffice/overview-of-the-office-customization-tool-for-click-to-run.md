@@ -7,13 +7,11 @@ ms.date: 4/11/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 
 description: "The Office Customization Tool for Click-to-Run (preview) creates the configuration files that are used to deploy Office in large organizations."
 ---

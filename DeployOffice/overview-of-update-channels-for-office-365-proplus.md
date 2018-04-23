@@ -7,13 +7,12 @@ ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
 - LIL_Placement
-- Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: 9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4
 

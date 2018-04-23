@@ -7,11 +7,11 @@ ms.date: 4/2/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
