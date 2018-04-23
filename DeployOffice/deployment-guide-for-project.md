@@ -7,13 +7,11 @@ ms.date: 3/23/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 7eeeb822-bc9c-4189-bf20-3f9839879131
 description: "Provides an overview for admins on how to deploy Project 2016, including Project Online Desktop Client, to users in their organization"
 ---

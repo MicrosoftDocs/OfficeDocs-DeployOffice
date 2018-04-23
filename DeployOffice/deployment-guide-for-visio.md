@@ -7,13 +7,11 @@ ms.date: 3/23/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: ffe43dfe-22f0-4079-9ab0-dbc42aaa4934
 description: "Provides an overview for admins on how to deploy Visio 2016, including Visio Pro for Office 365, to users in their organization"
 ---

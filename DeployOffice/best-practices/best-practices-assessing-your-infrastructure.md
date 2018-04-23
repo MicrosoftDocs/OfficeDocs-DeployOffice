@@ -7,12 +7,11 @@ ms.date: 3/23/2017
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- Strat_O365_ProPlus
 - Ent_Office_ProPlus
 - Ent_Office_ProPlus_Best
 ms.assetid: f4899394-87f3-425c-9902-ddd65eaaac97

@@ -7,13 +7,12 @@ ms.date: 9/13/2017
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
 - Ent_Office_ProPlus_Best
-- Strat_O365_ProPlus
 - Ent_Office_ProPlus
 ms.assetid: 3c108fee-b271-4cb0-8b16-a134faf9f70c
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
