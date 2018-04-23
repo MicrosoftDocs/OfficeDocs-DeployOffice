@@ -7,13 +7,11 @@ ms.date: 4/14/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: efeca365-f49c-42b1-899b-80878a398e5c
 description: "Provides IT admins with information about which versions of Office, Visio, and Project can be installed on the same computer."
 ---

@@ -7,13 +7,11 @@ ms.date: 3/25/2018
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
 description: "Configuration options for the Office Deployment Tool"
 ---

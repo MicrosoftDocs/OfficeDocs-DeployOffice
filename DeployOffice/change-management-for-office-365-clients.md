@@ -7,13 +7,11 @@ ms.date: 11/17/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd
 
 description: "The client applications that are included with Office 365 are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality."

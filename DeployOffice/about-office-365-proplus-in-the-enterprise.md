@@ -7,13 +7,11 @@ ms.date: 4/20/2017
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 9f11214c-911d-4e3c-9993-a566f12b1a68
 description: "Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online."
 ---
