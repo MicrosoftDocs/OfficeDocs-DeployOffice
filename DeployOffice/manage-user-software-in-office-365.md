@@ -10,7 +10,6 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c13051e6-f75c-4737-bc0d-7685dcedf360
-
 description: "Provides Office 365 admins with information about using the "Manage user software through Office 365" page in the Office 365 admin center."
 ---
 
