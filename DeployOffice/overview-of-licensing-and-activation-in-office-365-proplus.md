@@ -6,17 +6,15 @@ manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
 - LIL_Placement
 - Ent_Office_ProPlus
 ms.assetid: 1096c33e-a6f2-44c8-9821-3cba07ec5750
 
-description: "Summary: Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
+description: "Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
 ---
 
 # Overview of licensing and activation in Office 365 ProPlus
@@ -28,8 +26,8 @@ To deploy Office 365 ProPlus to users in your organization, you start by assigni
 > [!NOTE]
 > The information in this article also applies to Project Online Desktop Client and Visio Pro for Office 365, which are licensed separately from Office 365 ProPlus. 
   
-## Licensing Office 365 ProPlus
 <a name="BKMK_LicensingO365PP"> </a>
+## Licensing Office 365 ProPlus
 
 The number of available licenses available for Office 365 ProPlus depends on your organization's Office 365 subscription level. To assign a license to a user, you select a check box on the licenses page for the user's account. 
   
@@ -39,8 +37,8 @@ After that's done, the user can install Office directly from the Office 365 port
   
 You can remove a user's license (for example, if the user leaves your organization). After you do this, any installations of Office 365 ProPlus that the user had go into [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode). The Office Licensing Service, a part of Office 365, keeps track of which users are licensed and how many computers they've installed Office on.
   
-## Activating Office 365 ProPlus
 <a name="BKMK_ActivatingO365PP"> </a>
+## Activating Office 365 ProPlus
 
 As part of the installation process, Office 365 ProPlus communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user logs on to their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the Internet at least once every 30 days, Office remains fully functional. If the computer goes offline for more than 30 days, Office enters [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode) until the next time a connection can be made. To get Office fully functional again, usually a user can simply connect to the Internet and let the Activation and Validation Service reactivate the installation.
   
@@ -55,8 +53,8 @@ Each Office 365 ProPlus license allows a user to install Office on up to five co
   
 If the user decides to install Office 365 ProPlus on a sixth computer, she will need to deactivate one of the first five. Office 365 ProPlus goes into [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode) on the deactivated computer.
   
-## What is reduced functionality mode?
 <a name="BKMK_ReducedFunctionalityMode"> </a>
+## What is reduced functionality mode?
 
 In reduced functionality mode, Office 365 ProPlus remains installed on the computer, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message like the following:
   
@@ -66,10 +64,8 @@ The user can then choose one of the available options to reactivate Office 365 P
   
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
-## See also
-<a name="BKMK_ReducedFunctionalityMode"> </a>
 
-#### Other Resources
+## Related topics
 
 [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
   

@@ -6,14 +6,13 @@ manager: laurawi
 ms.date: 9/13/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_BestPractices
-- DeployProPlus_SOConly
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_ProPlus
+ms.custom:
+- Ent_Office_ProPlus_Best
 - Ent_Office_ProPlus
 ms.assetid: 3c108fee-b271-4cb0-8b16-a134faf9f70c
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
@@ -29,7 +28,7 @@ Now that  *Cloud Managed*  has been through Assessment and Planning, it is time 
 
 Download the latest version of the [Office Deployment Tool (ODT)](https://www.microsoft.com/en-us/download/details.aspx?id=49117) and create and configure the install XML files to download and install the Office 365 ProPlus source files. *Cloud Managed*  created multiple XML files to configure and install Office 365 ProPlus.
   
-[GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl) was leveraged to edit the XML files.
+[GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html) was leveraged to edit the XML files.
   
 The following XML files must be created:
   

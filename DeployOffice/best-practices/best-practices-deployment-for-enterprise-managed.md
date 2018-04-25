@@ -6,14 +6,13 @@ manager: laurawi
 ms.date: 9/9/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_BestPractices
-- DeployProPlus_SOConly
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
+ms.custom:
+- Ent_Office_ProPlus_Best
 - Ent_Office_ProPlus
 ms.assetid: 2f560823-aa43-4003-8f79-2750d3944060
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
@@ -47,7 +46,7 @@ For examples, see [Best practices: Download XML files for enterprise managed](be
  *Enterprise Managed*  will edit the XML files for the deployment. *Enterprise Managed*  made several install XML files, that together with the Office 365 client source files that were previously downloaded, configure and install Office 365 ProPlus.
   
 > [!NOTE]
-> Use [GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl) to edit the XML files.
+> Use [GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html) to edit the XML files.
   
 The following XML files must be created:
   

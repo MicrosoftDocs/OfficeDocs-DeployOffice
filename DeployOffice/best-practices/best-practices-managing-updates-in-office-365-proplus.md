@@ -1,17 +1,19 @@
 ---
 title: "Best practices Managing updates in Office 365 ProPlus"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
+ms.custom:
 - Ent_Office_ProPlus
+- Ent_Office_ProPlus_Best
 ms.assetid: 7c80254b-cc14-441c-8500-333d32c71949
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---

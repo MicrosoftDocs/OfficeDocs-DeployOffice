@@ -6,13 +6,11 @@ manager: laurawi
 ms.date: 9/9/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DeployProPlus
-- DeployProPlus_BestPractices
-- DeployProPlus_SOConly
+- Ent_Office_ProPlus_Best
 - Ent_Office_ProPlus
 ms.assetid: 98799ea9-3b93-46b4-b399-b9fcab3e1d80
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
@@ -52,13 +50,13 @@ The packaging and deployment team at  *Enterprise Managed*  has a rich history o
   
 ## Download the source files
 
-The [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) downloads the source media that is required to create an install package and language pack(s) for customization and distribution. *Enterprise Managed*  will create a download an XML file that the Office Deployment Tool setup.exe uses to download the Office 365 client source files.
+The [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) downloads the source media that is required to create an install package and language pack(s) for customization and distribution. *Enterprise Managed*  will create a download an XML file that the Office Deployment Tool setup.exe uses to download the Office 365 client source files.
   
 For more information about the Office Deployment Tool, see [Best practices: Deployment for enterprise managed](best-practices-deployment-for-enterprise-managed.md).
   
 ## Configure deployments
 
- *Enterprise Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+ *Enterprise Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
 The install XML files are relatively simple and can be made by following the [XML properties that are published on Technet](https://technet.microsoft.com/en-us/library/jj219426.aspx). However, because *Enterprise Managed*  manages multiple download and install XML files, *Enterprise Managed*  uses a web-based tool for accuracy and efficiency.
   

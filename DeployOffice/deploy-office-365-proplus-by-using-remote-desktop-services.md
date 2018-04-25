@@ -6,14 +6,13 @@ manager: laurawi
 ms.date: 9/29/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- LIL_Placement
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
+ms.custom:
+- LIL_Placement
 - Ent_Office_ProPlus
 ms.assetid: af9d7621-8c2c-4181-84b4-27778b1e7920
 
@@ -123,7 +122,7 @@ After you've completed all the RDS configuration steps, users can connect to any
   
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
-## Related Topics
+## Related topics
 <a name="VM"> </a>
 
 [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)

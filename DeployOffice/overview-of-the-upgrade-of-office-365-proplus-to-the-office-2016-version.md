@@ -6,15 +6,12 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 7655b5cb-89ae-4a08-9621-e5af1b77cfe1
-description: "Summary: Provides information about the upgrade of Office 365 ProPlus to the Office 2016 version, including criteria for the upgrade and the steps taken during upgrade."
+description: "Provides information about the upgrade of Office 365 ProPlus to the Office 2016 version, including criteria for the upgrade and the steps taken during upgrade."
 ---
 
 # Overview of the upgrade of Office 365 ProPlus to the Office 2016 version
@@ -45,8 +42,9 @@ You can look in the registry of the computer to [determine if Office is configur
 > [!NOTE]
 > This information also applies to Visio Pro for Office 365 and Project Online Desktop Client. It also applies to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium. 
   
-## Criteria used to determine if Office can be upgraded successfully
 <a name="BKMK_Criteria"> </a>
+
+## Criteria used to determine if Office can be upgraded successfully
 
 Before upgrading to the Office 2016 version, Microsoft checks to see if Office can be upgraded successfully. It determines this by looking at the following criteria:
   
@@ -72,8 +70,10 @@ If any of these criteria aren't met, then Microsoft won't attempt to upgrade Off
   
 Also, there is a check to see if the user is a local administrator on the computer. If the user isn't a local administrator, then the user won't see the upgrade notification when an Office app is opened. That's because a user must be a local administrator on the computer to install or upgrade Office.
   
-## Steps performed during the upgrade to Office 2016
+
 <a name="BKMK_Steps"> </a>
+
+## Steps performed during the upgrade to Office 2016
 
 If it's determined that the Office installation is a suitable candidate to be upgraded, the following steps occur:
   
@@ -89,18 +89,16 @@ If it's determined that the Office installation is a suitable candidate to be up
     
 If the user chooses to ignore or close the **Get the new Office** message, the message reappears again the next time the user opens an Office app.
   
-## Timing of the upgrade notifications
 <a name="BKMK_Timing"> </a>
+
+## Timing of the upgrade notifications
+
 
 Not all Office installations that meet the criteria to be upgraded get the upgrade notification at the same time. Microsoft initially sends the notification to a small percentage of Office installations. Then, over time, Microsoft increases the number of notifications that it sends out. This means that it's likely that users in your organization will get upgrade notifications at different times, even possibly a week or more apart.
   
 Once Microsoft starts sending out upgrade notifications, users can upgrade Office before receiving a notification. They can start the upgrade by going to **File** > **Account** > **Update Options** in any Office app, and then choosing **Update Now**. If the Office installation meets all the [criteria](overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md#BKMK_Criteria), the upgrade starts. Remember that users have to be local administrators on their computers to install or upgrade Office.
   
-## See also
-<a name="BKMK_Timing"> </a>
-
-#### Other Resources
-
+## Related topics
 [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
   
 [Upgrade from Office 365 ProPlus 2013 to 2016](upgrade-from-office-365-proplus-2013-to-2016.md)

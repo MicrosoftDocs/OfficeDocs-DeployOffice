@@ -6,22 +6,19 @@ manager: laurawi
 ms.date: 3/8/2017
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
+- Ent_Office_ProPlus_Best
 - Ent_Office_ProPlus
 ms.assetid: f9bb5ed7-8d41-40fb-9804-fecfba7e5d6d
 description: "The Best Practices for Office 365 ProPlus Deployment has been created by a team of subject matter experts from the Office 365 Product Group, Office 365 Product Marketing Group, and delivery experts from Microsoft Services. The recommendations include application discovery, deployment, channel management, and reporting. For a list of all the best practices articles, see Best practices: Recommended deployment scenarios."
 ---
 
 # Best practices: Assessment - reference materials
-[![Help for Office 365 IT Pros](../images/0d973495-46cc-42dc-a26e-87933e8b0a6b.png)
-  
-](http://technet.microsoft.com/library/6e18d402-f35e-415a-83b1-56620d4074ff%28Office.14%29.aspx)
- *The Best Practices for Office 365 ProPlus Deployment has been created by a team of subject matter experts from the Office 365 Product Group, Office 365 Product Marketing Group, and delivery experts from Microsoft Services. The recommendations include application discovery, deployment, channel management, and reporting. For a list of all the best practices articles, see [Best practices: Recommended deployment scenarios](best-practices-recommended-deployment-scenarios.md).* 
+
+*The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see [Best practices](best-practices.md)* 
   
 The following articles provide deeper technical information on specific areas of the assessment phase that are not covered in depth in the customer scenarios.
   

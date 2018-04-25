@@ -1,15 +1,17 @@
 ---
 title: "Best practices Common debugging steps"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 6/1/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus_Best
+- Ent_Office_ProPlus
 ms.assetid: b584fcff-d64d-426a-b20f-fc93707cf46c
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---
@@ -32,7 +34,7 @@ The following steps are common issues that can occur when you deploy and manage 
     
 4. Make sure that you are using the latest version of the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) (updated regularly).
     
-5. Make sure that your XML syntax is correct by using the [GitHub XML script editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+5. Make sure that your XML syntax is correct by using the [Configuration XML Editor on GitHub](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
     
 6. Check for new GPOs in the [Office 2016 Administrative Template files](https://www.microsoft.com/en-us/download/details.aspx?id=49030) (updated regularly).
     

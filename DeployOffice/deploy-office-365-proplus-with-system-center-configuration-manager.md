@@ -6,14 +6,12 @@ manager: laurawi
 ms.date: 7/19/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 4dd6a023-0a5d-4dc9-9bad-ff70e01840b8
 description: "This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702, see Manage Office 365 ProPlus with Configuration Manager."
 ---
@@ -32,7 +30,7 @@ The steps that follow are for System Center 2012 R2 Configuration Manager, but y
 
 To get started, download the Office 2016 version of the Office Deployment Tool from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065) to a shared folder on your organization's network. Then, use the Office Deployment Tool to [download the Office 365 ProPlus installation files](overview-of-the-office-2016-deployment-tool.md#BKMK_downloadinstallationfiles) from the Internet to the same shared folder.
   
-Next, edit the configuration.xml, and review [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md) to decide how you want to install Office 365 ProPlus. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Office 365 ProPlus.
+Next, edit the configuration.xml, and review [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md) to decide how you want to install Office 365 ProPlus. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Office 365 ProPlus.
   
 ```
 <Configuration> 
@@ -78,7 +76,7 @@ An application in Configuration Manager must contain at least one [deployment ty
   
 For the Office 365 ProPlus application, the deployment type includes the following:
   
-- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet. For example, \\server1\share1.
+- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet. For example, \\\\server1\share1.
     
 - The command line that gets the Office Deployment Tool to start the installation of Office 365 ProPlus.
     
@@ -176,7 +174,7 @@ After you deploy the application, a targeted computer becomes aware of the deplo
   
 ![Office installation status](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
   
-## Related Topics
+## Related topics
 - [Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=535034)
   
 

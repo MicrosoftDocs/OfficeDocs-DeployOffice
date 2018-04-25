@@ -6,14 +6,12 @@ manager: laurawi
 ms.date: 4/20/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection: 
+- Ent_O365
 - Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 9f11214c-911d-4e3c-9993-a566f12b1a68
 description: "Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online."
 ---
@@ -23,14 +21,14 @@ description: "Office 365 ProPlus is a version of Office that's available through
 Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
-> Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3. > Project and Visio aren't included with Office 365 ProPlus, but are available from other Office 365 plans. > For more information about Office 365 plans, see [https://products.office.com](https://products.office.com) and the[Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961). 
+> Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3. <br/><br/> Project and Visio aren't included with Office 365 ProPlus, but are available from other Office 365 plans.<br/><br/> For more information about Office 365 plans, see [https://products.office.com](https://products.office.com) and the[Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961). 
   
 ## Office 365 ProPlus is similar to other versions of Office
 <a name="BKMK_Similar"> </a>
 
 Office 365 ProPlus is similar to other versions of Office that you can deploy to your users. Here are some important similarities:
   
-- Office 365 ProPlus is a full version of Office. The in-product environment, such as the ribbon, will be familiar to Office users.
+- Office 365 ProPlus is a full version of Office. 
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-system-requirements).
     
@@ -82,11 +80,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
     
 - Read the [Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961) to learn more about what's included in Office 365.
     
-## See also
-<a name="BKMK_MoreInfo"> </a>
-
-#### Other Resources
-
+## Related topics
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
   
 [Compare enterprise plans for Office 365](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans)

@@ -6,10 +6,12 @@ manager: laurawi
 ms.date: 9/13/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus_Best
+- Ent_Office_ProPlus
 ms.assetid: 5ebd1288-69ed-4425-a9cf-6253d6027005
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---
@@ -39,7 +41,7 @@ Create the following folder structure in the network shares:
 
 The downloads will contain the Office 365 ProPlus build for the most up -to-date channel release. Specify all products and languages that will be deployed.
   
-The parameters and settings for the XML file can be found at [Reference: Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). The parameters for Project and Visio 2016 volume licensing can be found at [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://technet.microsoft.com/library/mt703272.aspx). A graphical UI for creating the XML file can be found at the Office GitHub Repository [Office Click-To-Run Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+The parameters and settings for the XML file can be found at [Reference: Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). The parameters for Project and Visio 2016 volume licensing can be found at [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](https://technet.microsoft.com/library/mt703272.aspx). A graphical UI for creating the XML file can be found at the Office GitHub Repository [Office Click-To-Run Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
  **Download Monthly Channel build**
   
@@ -79,7 +81,7 @@ The parameters and settings for the XML file can be found at [Reference: Configu
     
 4. Copy **GetLatestSACBuild.xml** to ** \\\\Server\\Share\\O365\\SAC**.
     
-5. From an elevated command prompt with administrator privileges, run \\ **\\Server\\Share\\O365\\Setup.exe /Download \\\\Server\\Share\\O365\\SAC\\GetLatestSACBuild.xml**.
+5. From an elevated command prompt with administrator privileges, run \\\\Server\\Share\\O365\\Setup.exe /Download \\\\Server\\Share\\O365\\SAC\\GetLatestSACBuild.xml**.
     
 6. After it is run, Office Deployment Tool will download the latest Office 365 ProPlus Semi-Annual Channel build into **\\\\Server\\Share\\O365\\SAC**.
     
@@ -142,7 +144,7 @@ The parameters and settings for the XML file can be found at [Reference: Configu
 
 You can remove a program from the Office Suite post deployment by using an XML configuration file. 
   
-The parameters and settings for the XML file can be found at [Reference: Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). A graphical UI for creating the XML file can be found at the Office GitHub Repository [Office Click-To-Run Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+The parameters and settings for the XML file can be found at [Reference: Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). A graphical UI for creating the XML file can be found at the Office GitHub Repository [Office Click-To-Run Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
 1. Configure an XML file to exclude an application. For an example XML file, see [Best practices: Sample configuration files for downloading Office 365 ProPlus](best-practices-sample-configuration-files-for-downloading-office-365-proplus.md).
     
@@ -158,7 +160,7 @@ The parameters and settings for the XML file can be found at [Reference: Configu
 
 You can add a program to the Office Suite post deployment by using an XML configuration file. 
   
-The parameters and settings for the XML file can be found at [Reference: Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). A graphical UI for creating the XML file can be found at the Office GitHub Repository [Office Click-To-Run Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+The parameters and settings for the XML file can be found at [Reference: Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). A graphical UI for creating the XML file can be found at the Office GitHub Repository [Office Click-To-Run Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
 1. Configure an XML file by removing any excluded applications.
     

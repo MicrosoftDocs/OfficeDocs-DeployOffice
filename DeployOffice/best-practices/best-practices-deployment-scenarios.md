@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 3/10/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus_Best
+- Ent_Office_ProPlus
 ms.assetid: 4d9d796b-4291-4e0c-bd75-751b434eeb01
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---
 
 # Best Practices: Deployment scenarios
-[![Help for Office 365 IT Pros](../images/0d973495-46cc-42dc-a26e-87933e8b0a6b.png)
-  
-](http://technet.microsoft.com/library/6e18d402-f35e-415a-83b1-56620d4074ff%28Office.14%29.aspx)
- *The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see [Best practices](best-practices.md).* 
+*The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see [Best practices](best-practices.md)* 
+
   
 ## The Enterprise Managed scenario
 <a name="Enterprise"> </a>

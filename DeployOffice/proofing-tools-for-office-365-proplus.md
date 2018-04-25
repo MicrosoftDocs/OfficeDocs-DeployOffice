@@ -6,18 +6,15 @@ manager: laurawi
 ms.date: 10/11/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 21c562f2-2e54-452d-8ef5-e39c236bfaf1
 description: "Each language version of Office 2016 includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect."
 ---
 
-# Proofing Tools for Office 365 ProPlus
+# Proofing tools for Office 365 ProPlus
 
 Each language version of Office 2016 includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
   
@@ -190,7 +187,7 @@ The following table lists the link for the proofing tool download in all availab
 |Wolof  <br/> |wo-sn  <br/> |[x86](https://download.microsoft.com/download/C/9/3/C93F4B91-2897-4B0D-B84F-1A39692746E8/proofingtools2016_wo-sn-x86.exe), [x64](https://download.microsoft.com/download/C/9/3/C93F4B91-2897-4B0D-B84F-1A39692746E8/proofingtools2016_wo-sn-x64.exe) <br/> |
 |Yoruba  <br/> |yo-ng  <br/> |[x86](https://download.microsoft.com/download/1/D/B/1DBAEB2B-7648-47A5-8F26-7B9F9814E959/proofingtools2016_yo-ng-x86.exe), [x64](https://download.microsoft.com/download/1/D/B/1DBAEB2B-7648-47A5-8F26-7B9F9814E959/proofingtools2016_yo-ng-x64.exe) <br/> |
    
-## Related Topics
+## Related topics
 
 - [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
   

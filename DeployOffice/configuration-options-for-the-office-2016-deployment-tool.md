@@ -1,26 +1,24 @@
 ---
-title: Configuration options for the Office 2016 Deployment Tool
+title: Configuration options for the Office Deployment Tool
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 3/25/2018
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
-description: "Configuration options for the Office 2016 Deployment Tool"
+description: "Configuration options for the Office Deployment Tool"
 ---
 
 
-# Configuration options for the Office 2016 Deployment Tool
-With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+# Configuration options for the Office Deployment Tool
+With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 ## Example of a standard configuration file
 
@@ -54,14 +52,14 @@ This configuration file includes the most-commonly used elements and attributes,
 
 |**Value**|**Description**|
 |:-----|:-----|
-|Add SourcePath="\\Server\Share"  <br/> |Office will be downloaded to "\\server\share" on your network and deployed using installation files at that location.  <br/> |
+|Add SourcePath="\\\Server\Share"  <br/> |Office will be downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
 |Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
-|Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel (also called the Broad Channel).  <br/> |
+|Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Office 365 ProPlus.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
-|Updates UpdatePath="\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
-|Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel (also called the Broad Channel).  <br/> |
+|Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
+|Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
    
@@ -94,12 +92,12 @@ Optional. Defines the location of the Office installation files. If the ODT is r
 
 Example values:
 
-- SourcePath="\\server\share\"
+- SourcePath="\\\server\share\"
 - SourcePath="c:\preload\office"
 
 ### Version attribute (part of Add element) 
 
-Optional The default is the latest available version of Office.
+Optional. The default is the latest available version of Office.
 
 Example value:
 
@@ -116,7 +114,7 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client. 
+Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Pro for Office 365 and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
@@ -132,7 +130,7 @@ Optional. Defines where the installation files are downloaded from. Most commonl
 
 Example values: 
 
-- DownloadPath="\\serverb\share\"
+- DownloadPath="\\\serverb\share\"
 
 #### Example 
 
@@ -156,6 +154,32 @@ Allowed values:
 
 - ForceUpgrade="TRUE"
 - ForceUpgrade="FALSE"
+
+### AllowCdnFallback attribute (part of Add element) 
+
+Optional. To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
+
+When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT will use source files from the Office CDN.
+
+Allowed values: 
+
+- AllowCdnFallback="True"
+- AllowCdnFallback="False"
+ 
+#### Example 
+
+```
+<Add SourcePath="\\Server\Share" 
+     OfficeClientEdition="32"
+     Channel="Broad" 
+     AllowCdnFallback="True">
+  <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <Language ID="ja-jp" />
+  </Product>
+</Add>  
+```
+
 
 ## Product element
 
@@ -181,8 +205,7 @@ You can also use the Product element to add language packs to existing installat
 Required. Defines the ID of the product to download or install. 
 
 Example values:
-
-Office 365 Product IDs: 
+ 
 - ID="O365ProPlusRetail"  
 - ID="VisioProRetail"
 - ID="ProjectProRetail"
@@ -191,7 +214,9 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 ## Language element
 
-Defines which languages to download or install. To install the same language as the client's operating system, use "MatchOS" as the ID. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
+Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
+ 
+To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 ### Example
 
@@ -202,17 +227,37 @@ Defines which languages to download or install. To install the same language as 
 </Product>
 ```
 
+```
+<Add SourcePath="\\Server\Share" 
+     OfficeClientEdition="32"
+     Channel="Broad" 
+     AllowCdnFallback="True">
+  <Product ID="O365ProPlusRetail">
+     <Language ID="MatchOS" Fallback="en-us" />
+  </Product>
+</Add>  
+```
+
 ### ID attribute (part of Language element)
 
 Defines the ID of the language to download or install. Required.
 
-#### Exaxmple values
+#### Example values
 
 - ID="en-us"
 - ID="ja-jp"
 - ID="MatchOS"
 
 For a list of all languages, see  [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).  
+
+### Fallback attribute (part of Language element)
+
+When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
+
+Example values:
+
+- Fallback="en-us"
+- Fallback="ja-jp"
 
 ## Display element
 
@@ -252,7 +297,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed.
+Defines which Office 365 ProPlus products should not be installed. 
 
 ### Example
 
@@ -314,7 +359,7 @@ Optional. Defines the location of the log files. Default is **%temp%**.
 Example values:
 
 - Path="%temp%"
-- Path="\\server\share\userlogs\"
+- Path="\\\server\share\userlogs\"
 
 ## Property element
 
@@ -323,12 +368,11 @@ Defines certain Office behaviors and properties.
 ### Example
 
 ```
-<Property Name="FORCEAPPSHUTDOWN"
-          Value="FALSE"/>
-<Property Name="SharedComputerLicensing"
-          Value="1"/>
-<Property Name="PinIconsToTaskbar"
-          Value="TRUE"/>
+<Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
+<Property Name="SharedComputerLicensing" Value="1"/>
+<Property Name="SCLCacheOverride" Value="1" />
+<Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
+<Property Name="PinIconsToTaskbar" Value="TRUE"/>
 
 ```
 
@@ -393,11 +437,32 @@ Optional. Default value is **0**.
 
 Allowed values:
 
-- Property Name="SharedComputerLicensing"
-          Value="0"
-- Property Name="SharedComputerLicensing"
-          Value="1"
+- Property Name="SharedComputerLicensing" Value="0"
+- Property Name="SharedComputerLicensing" Value="1"
 
+### SCLCacheOverride property (part of Property element)
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory.
+
+For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+
+Optional. Default value is **0**.
+
+Allowed values:
+
+- Property Name="SCLCacheOverride" Value="0"
+- Property Name="SCLCacheOverride" Value="1"
+
+### SCLCacheOverrideDirectory property (part of Property element)
+Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride.
+
+For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+
+Optional.
+
+Example values:
+
+- Property Name="SCLCacheOverrideDirectory" Value="%appdata%\Microsoft\"
+- Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\\%username%"
 
 ### PinIconsToTaskBar property (part of Property element)
 
@@ -417,7 +482,7 @@ Allowed values:
 
 Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. 
 
-For more information, see  [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+For more information, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 ### Example
 
@@ -450,12 +515,13 @@ Defines how Office is updated after it's installed.
 ```
 <Updates Enabled="TRUE" 
          UpdatePath="\\Server\Share\"
-         Channel="Deferred" />
+         Channel="Broad" />
 ```
 
 ### Enabled attribute (part of Updates element)
 
-If set to **TRUE**, Office will check for updates. If set to **FALSE**, Office won't check for updates.
+If set to **TRUE**, Office will check for updates.
+If set to **FALSE**, Office won't check for updates, but the user can check for updates by going to **File** > **Account** > **Update Options** > **Update Now**.
 
 Optional. The default value is **TRUE**.
 
@@ -469,13 +535,13 @@ Allowed values:
 
 Defines where the updates for Office come from. If **UpdatePath** is not set or is set to empty (""), the location is set to the Office Content Delivery Network (CDN). **UpdatePath** can specify a network, local, or HTTP path of a source for Office installation files. Environment variables can be used for network or local paths. 
 
-If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
 Example values:
 
-- UpdatePath="\\server\share\"
+- UpdatePath="\\\server\share\"
 - UpdatePath="C:\Preload\Office"
 - UpdatePath="http://internalApps/Office/"
 
@@ -483,14 +549,14 @@ Example values:
 
 Defines which version Office updates to. If **TargetVersion** is not set or is set to empty (""), Office updates to the most recent version from the specified update path. If **TargetVersion** is set to a specific build number, Office attempts to update to that version. 
 
-If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
 Example values:
 
 - TargetVersion="15.1.2.3"
-- TargetVersion="""
+- TargetVersion=""
 
 ### Deadline attribute (part of Updates element)
 
@@ -500,7 +566,7 @@ Prior to the deadline, users receive multiple reminders to install the updates. 
 
 After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up-to-date, you must change the deadline every time a new update for Office is available.
 
-To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -514,7 +580,7 @@ Defines which channel to use for updating Office after it is installed. Note tha
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md). 
 
-If you use Group Policy with the  [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
+If you use Group Policy with the  [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
 Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client.
 
@@ -526,7 +592,7 @@ Allowed values:
 
 ## Related topics
 
-- [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
   

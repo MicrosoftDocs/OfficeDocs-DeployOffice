@@ -1,15 +1,18 @@
 ---
 title: "Best practices Office Telemetry"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 ms.date: 3/10/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus_Best
+- Ent_Office_ProPlus
+- Ent_Office_Compat
 ms.assetid: 570c7fb3-d7a5-49cd-8cbf-7300ea656328
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
 ---
@@ -30,30 +33,27 @@ The Telemetry Dashboard should be used in conjunction with interviewing and work
 
 The following links provide additional details on Telemetry Dashboard components and recommended configuration options to assist you with application compatibility assessment:
   
-- [Assess Office compatibility with other versions of Office](https://technet.microsoft.com/en-us/library/ee819096%28v=office.16%29.aspx)
+- [Assess Office compatibility](../compat/assess-office-compatibility.md)
     
-- [Telemetry Dashboard topology, sizing, and bandwidth planning](https://technet.microsoft.com/en-us/library/jj822978%28v=office.16%29.aspx)
+- [Telemetry Dashboard topology, sizing, and bandwidth planning](../compat/plan-telemetry-dashboard-deployment.md)
+
+- [Deploy Telemetry Dashboard](../compat/deploy-telemetry-dashboard.md)
     
-- [Office Telemetry tools and components](https://technet.microsoft.com/en-us/library/jj822978%28v=office.16%29.aspx)
+- [Update Office Telemetry components for Office 2016](../compat/update-office-telemetry-components-for-office-2016.md)
     
-- [Update Office Telemetry components for Office 2016](https://technet.microsoft.com/en-us/library/dn627517%28v=office.16%29.aspx)
+- [Monitor Office compatibility and deployments by using Telemetry Dashboard](../compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
+
+- [Manage add-ins by using Telemetry Dashboard in Office](../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md)
+
+- [Manage the privacy of data monitored by telemetry in Office](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
+ 
+- [Custom reporting and database schema reference for Telemetry Dashboard](../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md)
+ 
+- [Data that the telemetry agent collects in Office](../compat/data-that-the-telemetry-agent-collects-in-office.md)
     
-- [Deploy Telemetry Dashboard](https://technet.microsoft.com/en-us/library/jj219431%28v=office.16%29.aspx)
+- [Document and solution types monitored by telemetry in Office](../compat/document-and-solution-types-monitored-by-telemetry-in-office.md)
     
-- [Data that the telemetry agent collects in Office](https://technet.microsoft.com/en-us/library/mt599629%28v=office.16%29.aspx)
+- [Telemetry Dashboard worksheet reference](../compat/telemetry-dashboard-worksheet-reference.md)
     
-- [Document and solution types monitored by telemetry in Office](https://technet.microsoft.com/en-us/library/mt599633%28v=office.16%29.aspx)
-    
-- [Monitor Office compatibility and deployments by using Telemetry Dashboard](https://technet.microsoft.com/en-us/library/jj980533%28v=office.16%29.aspx)
-    
-- [Manage the privacy of data monitored by telemetry in Office](https://technet.microsoft.com/en-us/library/jj591589%28v=office.16%29.aspx)
-    
-- [Manage add-ins by using Telemetry Dashboard in Office](https://technet.microsoft.com/en-us/library/mt599631%28v=office.16%29.aspx)
-    
-- [Let's manage add-ins using Telemetry Dashboard](https://blogs.technet.microsoft.com/office_resource_kit/2012/09/17/lets-manage-add-ins-using-telemetry-dashboard/)
-    
-- [Telemetry Dashboard worksheet reference](https://technet.microsoft.com/en-us/library/jj980532%28v=office.16%29.aspx)
-    
-- [Custom reporting and database schema reference for Telemetry Dashboard](https://technet.microsoft.com/en-us/library/dn169565%28v=office.16%29.aspx)
     
 

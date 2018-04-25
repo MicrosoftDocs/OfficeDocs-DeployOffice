@@ -6,13 +6,10 @@ manager: laurawi
 ms.date: 7/19/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 16cf763b-78a4-43dc-b05f-3efade197c0d
 description: "You can include Office 365 ProPlus as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Office 365 ProPlus when you create the image. That's because you need your users to activate their Office 365 ProPlus installations by signing in with their accounts."
 ---
@@ -42,7 +39,7 @@ Remember, you don't want to activate Office 365 ProPlus when you do the installa
   
 To prevent Office 365 ProPlus from trying to automatically activate during the installation, perform a silent installation. To do this, in the [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) that the Office Deployment Tool uses, include the following line:
   
- <Display Level="None" AcceptEULA="True" />
+ \<Display Level="None" AcceptEULA="True" /\>
   
 When you set **Level** to **None**, you don't see any user interface elements during the installation. You won't see anything that shows the progress of the installation and you won't see any error messages.
   

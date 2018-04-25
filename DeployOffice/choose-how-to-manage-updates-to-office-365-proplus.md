@@ -6,16 +6,14 @@ manager: laurawi
 ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: e486afce-ad31-4889-87a4-28796751bb86
-description: "Summary: Compares different ways to update Office 365 ProPlus, including automatically from the Internet or from an on-premises location."
+description: "Compares different ways to update Office 365 ProPlus, including automatically from the Internet or from an on-premises location."
 ---
 
 # Choose how to manage updates to Office 365 ProPlus
@@ -69,14 +67,10 @@ This option re-installs Office 365 ProPlus, but only new or changed files are do
   
 If you decide to use this option, you'll disable automatic updates. You can [control that setting](configure-update-settings-for-office-365-proplus.md) by using either the Office Deployment Tool or Group Policy.
   
-## See also
-<a name="Install"> </a>
-
-#### Other Resources
-
+## Related topics
 [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
   
-[Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
   

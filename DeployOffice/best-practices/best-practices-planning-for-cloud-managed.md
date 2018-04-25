@@ -6,13 +6,11 @@ manager: laurawi
 ms.date: 9/9/2017
 ms.audience: ITPro
 ms.topic: concetpual
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DeployProPlus
-- DeployProPlus_BestPractices
-- DeployProPlus_SOConly
+- Ent_Office_ProPlus_Best
 - Ent_Office_ProPlus
 ms.assetid: e9a8dd9f-732c-4c51-907b-59152acda975
 description: "The Best Practices Guide includes deployment recommendations and real-world examples from the Office 365 Product Group and delivery experts from Microsoft Services. For a list of all the articles, see Best practices."
@@ -48,13 +46,13 @@ The IT department at  *Cloud Managed*  has limited history of deploying MSI-base
   
 ## Download the source files
 
-When using the Office CDN, Cloud Managed is not downloading source files to an on-premises location for redistribution. However, they will still leverage the [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to create an install package and language pack for customization and distribution.
+When using the Office CDN, Cloud Managed is not downloading source files to an on-premises location for redistribution. However, they will still leverage the [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to create an install package and language pack for customization and distribution.
   
-For more information about the Office Deployment Tool, see [Overview of the Office 2016 Deployment Tool](../overview-of-the-office-2016-deployment-tool.md).
+For more information about the Office Deployment Tool, see [Overview of the Office Deployment Tool](../overview-of-the-office-2016-deployment-tool.md).
   
 ## Configure deployments
 
- *Cloud Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.mdl).
+ *Cloud Managed*  uses[Github Office 365 ProPlus - Configuration XML Editor](http://officedev.github.io/Office-IT-Pro-Deployment-Scripts/XmlEditor.html).
   
 The install XML files are relatively simple and can be made by following the [XML properties that are published on Technet](https://technet.microsoft.com/en-us/library/jj219426.aspx). However, because *Cloud Managed*  manages multiple download and install XML files, *Cloud Managed*  uses a web-based tool for accuracy and efficiency.
   

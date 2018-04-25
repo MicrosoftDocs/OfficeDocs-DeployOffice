@@ -3,18 +3,15 @@ title: "Deployment guide for Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 9/22/2017
+ms.date: 1/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- DeployProPlus
-- DeployProPlus_SOConly
-- feb17entnews
+ms.service: o365-proplus-itpro
+localization_priority: Priority
+ms.collection:
+- Ent_O365
 - Strat_O365_ProPlus
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: f99f8cd0-e648-4834-8f45-f5637351899d
 description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
 ---
@@ -33,9 +30,11 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 ## Deploy
 
-Learn about deployment options, how to deploy from a local source, and how to use System Center Configuration Manager to deploy Office 365 ProPlus. 
+Learn about your deployment options, how to deploy from a local source, and how to use System Center Configuration Manager to deploy Office 365 ProPlus. 
 
 - [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
+
+
 
 - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 
@@ -51,11 +50,14 @@ Learn about deployment options, how to deploy from a local source, and how to us
 
 Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates. 
 
+
+- [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
+
 - [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
 
 - [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 
-- [Version and build numbers of update channel releases] (http://technet.microsoft.com/library/ae942449-1fca-4484-898b-a933ea23def7%28Office.14%29.aspx)
+- [Version and build numbers of update channel releases] (https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
 
 
 ## Best practices
@@ -77,9 +79,9 @@ Review the recommended guidance and real-world examples from Microsoft about how
 
 Learn about the Office Deployment Tool (ODT), other deployment options, and activation.
 
-- [Overview of the Office 2016 Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 
-- [Configuration options for the Office 2016 Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
 - [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
 
@@ -90,4 +92,3 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 - [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
 
 - [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
-
