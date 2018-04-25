@@ -1,9 +1,8 @@
 ---
 title: "Update Office 2016 for Mac by using msupdate"
 ms.author: danbrown
-author: DHB-MSFT
+author: pbowden-msft
 manager: laurawi
-ms.date: 4/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
