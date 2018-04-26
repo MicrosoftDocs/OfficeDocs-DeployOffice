@@ -3,7 +3,6 @@ title: "Guidance for deploying Office 365 ProPlus in a GCC High or DoD environme
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 4/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -123,7 +122,7 @@ For other Office apps, such as Skype for Business client, Office 2016 for Mac, a
 ### Turn off sending telemetry data to Microsoft from Skype for Business client
 To prevent Skype for Business client from sending telemetry data to Microsoft, edit the registry and add the TelemetryTier value to the HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Lync key. The type for TelemetryTier is REG_DWORD, and the value should be set to 0.
 
-For more information, see [Skype for Business and Microsoft Teams data collection practices](https://docs.microsoft.com/skypeforbusiness/accessibility-and-regulatory/data-collection-practices).
+For more information, see [Skype for Business and Microsoft Teams data collection practices](https://docs.microsoft.com/SkypeForBusiness/legal-and-regulatory/data-collection-practices).
 
 ### Turn off sending telemetry data to Microsoft from Office 2016 for Mac
 Office 2016 for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the ‘Nexus’ endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
