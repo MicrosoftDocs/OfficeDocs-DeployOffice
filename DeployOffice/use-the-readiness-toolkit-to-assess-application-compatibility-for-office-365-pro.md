@@ -7,12 +7,11 @@ ms.date: 4/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom:
-- Strat_O365_ProPlus
 - Ent_Office_ProPlus
 - Ent_Office_Compat
 ms.assetid: 9b0b48f2-1937-4b10-8274-1ccdb2f5d019

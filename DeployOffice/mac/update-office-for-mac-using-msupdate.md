@@ -1,9 +1,8 @@
 ---
 title: "Update Office 2016 for Mac by using msupdate"
 ms.author: danbrown
-author: DHB-MSFT
+author: pbowden-msft
 manager: laurawi
-ms.date: 4/10/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -48,12 +47,12 @@ The following options are displayed:
 - Download and install all available updates"
 ```./msupdate --install```
 - Download and install the latest updates for Word, Excel, and PowerPoint"
-```./msupdate --install --apps mswd15,xcel15,ppt315```
+```./msupdate --install --apps mswd15 xcel15 ppt315```
 - Download and install a version-specific update for Outlook:
 ```./msupdate --install --apps opim15 --version 16.10.18021001```
 
 ## Application identifiers
-The following table lists the applications for Mac supported by AutoUpdate. The identifier is used when specifying the `--apps` parameter:
+The following table lists the applications for Mac supported by AutoUpdate. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.
 
 | Application           | Identifier |
 |:----------------------|:-----------|
