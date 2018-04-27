@@ -9,9 +9,11 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
+ms.custom: Ent_O365
 ms.assetid: c13051e6-f75c-4737-bc0d-7685dcedf360
 description: "Provides Office 365 admins with information about using the "Manage user software through Office 365" page in the Office 365 admin center."
 ---
+
 
 # Manage user software in Office 365
 
@@ -59,8 +61,6 @@ After you download the software, you can use your existing software deployment t
     
 - By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office 2016 Deployment Tool to deploy Office to your users without those apps.
     
-||
-|:-----|
-|![The short icon for LinkedIn Learning.](media/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), brought to you by LinkedIn Learning. |
+[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 
