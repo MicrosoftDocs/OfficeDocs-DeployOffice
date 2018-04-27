@@ -11,9 +11,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 35d4cb3b-4cc9-4bc9-9f20-eaf3c50f8331
 
 description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application."
