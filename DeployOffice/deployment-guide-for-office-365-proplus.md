@@ -3,7 +3,6 @@ title: "Deployment guide for Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 1/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -22,19 +21,17 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 ## Featured
 
- - [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+- [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md)
+ 
+- [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
   
-- [Overview of the changes to Office 365 ProPlus update management](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md)
+- [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
   
 - [Microsoft FastTrack for Office](http://fasttrack.microsoft.com/office)
   
 ## Deploy
 
 Learn about your deployment options, how to deploy from a local source, and how to use System Center Configuration Manager to deploy Office 365 ProPlus. 
-
-- [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
-
-
 
 - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 
@@ -86,8 +83,6 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 - [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
 
 - [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
-
-- [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
 
 - [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
 
