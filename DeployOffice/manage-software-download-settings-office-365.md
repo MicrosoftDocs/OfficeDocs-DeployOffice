@@ -17,7 +17,7 @@ description: "Provides Office 365 admins with information to help them configure
 ---
 
 
-# Manage software download settingin Office 365
+# Manage software download setting in Office 365
 
 As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Software download settings** page determine which software users can install from the **Software** page in Office 365. Whichever choices you make, they apply to all users in your organization. 
   
