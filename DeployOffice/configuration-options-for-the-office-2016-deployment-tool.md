@@ -294,7 +294,7 @@ Allowed values:
 - AcceptEULA="FALSE"
 
 > [!NOTE]
-> If you deploy a version of Office before 16.0.9126.1000, this setting will be applied only if you install with the user's account. For those earlier versions of Office, System Center Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
+> If you deploy a version of Office before Version 1803, this setting will be applied only if you install with the user's account. System Center Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
 
 ## ExcludeApp element
 
