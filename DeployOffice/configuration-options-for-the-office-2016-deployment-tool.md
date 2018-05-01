@@ -286,14 +286,15 @@ Allowed values:
 
 Optional. If **AcceptEULA** is set to **TRUE**, the user does not see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or is not included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
 
-This setting only applies if you install with the user's account. If you use System Center Configuration Manager or other software distribution tool that uses the SYSTEM account to install, then the setting is not applied.
-
 Default is **FALSE**.
 
 Allowed values:
 
 - AcceptEULA="TRUE"
 - AcceptEULA="FALSE"
+
+> [!NOTE]
+> If you deploy a version of Office before Version 1803, this setting will be applied only if you install with the user's account. System Center Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
 
 ## ExcludeApp element
 
