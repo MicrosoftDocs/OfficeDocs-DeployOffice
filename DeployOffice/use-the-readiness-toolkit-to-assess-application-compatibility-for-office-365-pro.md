@@ -21,7 +21,7 @@ description: "The Readiness Toolkit for Office add-ins and VBA can help you iden
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18095, and was released on April 9, 2018. We recommend that you always download and use the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -181,6 +181,10 @@ The following table lists the possible severities that can appear in a readiness
 |DeviceName  <br/> |Name of the device where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
+|Label 1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
+|Label 2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
+|Label 3 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Finance <br/>|
+|Label 4 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Controller <br/>|
    
 <sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
   
@@ -284,7 +288,7 @@ Keep in mind that the Readiness Report Creator lists each issue with an Office d
 ## Use labels to categorize and filter data in reports
 You can specify up to four custom labels to categorize and filter data in reports created by the Readiness Toolkit. Labels are available in reports that are based on scans of the most recently used Office documents and installed add-ins on the user’s computer.
 
-You can specify any string for the custom labels. For example, you can use a label to indicate the user’s department, title, or geographic location. When the Readiness Toolkit runs on the user’s computer, the custom labels are collected and are made available in the reports that are created. For example, you can filter the report to show only data from the Finance Department or only data from Africa. Assign labels in a consistent manner, such as always using Label 1 for department.
+You can specify any string for the custom labels. For example, you can use a label to indicate the user’s department, title, or geographic location. When the Readiness Toolkit runs on the user’s computer, the custom labels are collected and are made available in the reports that are created. For example, you can filter the report to show only data from the Finance Department or only data from offices in Africa. Assign labels in a consistent manner, such as always using Label 1 for department.
 
 You can specify these labels by using the **Specify custom labels to use with the Readiness Toolkit** Group Policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit. Be sure to download the latest [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?linkid=626001).
 
