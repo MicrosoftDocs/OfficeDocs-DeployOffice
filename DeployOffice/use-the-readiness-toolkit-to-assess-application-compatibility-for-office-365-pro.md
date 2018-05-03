@@ -181,10 +181,10 @@ The following table lists the possible severities that can appear in a readiness
 |DeviceName  <br/> |Name of the device where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
-|Label 1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
-|Label 2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
-|Label 3 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Finance <br/>|
-|Label 4 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Controller <br/>|
+|Label1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
+|Label2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
+|Label3 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Finance <br/>|
+|Label4 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Controller <br/>|
    
 <sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
   
