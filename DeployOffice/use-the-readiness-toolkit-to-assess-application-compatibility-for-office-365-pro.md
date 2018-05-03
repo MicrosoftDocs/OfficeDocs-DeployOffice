@@ -3,7 +3,6 @@ title: "Use the Readiness Toolkit to assess application compatibility for Office
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 4/9/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -22,7 +21,7 @@ description: "The Readiness Toolkit for Office add-ins and VBA can help you iden
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18095, and was released on April 9, 2018. We recommend that you always download and use the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -38,6 +37,8 @@ The following information is provided to help you use the Readiness Report Creat
 - [Interpreting the information in the readiness report](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Interpreting), for both VBA macros and add-in readiness.
     
 - [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise), and using a command-line version of the Readiness Report Creator to scan multiple computers.
+ 
+- [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
     
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
     
@@ -45,9 +46,11 @@ The following information is provided to help you use the Readiness Report Creat
 > If you have feedback or questions about the Readiness Toolkit, please email us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). 
   
 <a name="BKMK_Creating"> </a>
+
 ## Creating a readiness report
 
 <a name="BKMK_Requirements"> </a>
+
 ### Requirements and limitations for using the Readiness Toolkit
 
 Before installing and using the Readiness Toolkit, you should be aware of the following requirements:
@@ -74,6 +77,7 @@ Also, there a few limitations about the Readiness Report Creator that you should
 - The Readiness Report Creator lists each issue with an Office document in a separate row in an Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
     
 <a name="BKMK_ChoosingInfo"> </a>
+
 ### Choosing the information to use to create your report
 
 To create a readiness report, you first need to select what information to use to create the report. The following table lists the possible options and an explanation of each option. It also specifies which type of readiness report is created with each option.
@@ -83,9 +87,10 @@ To create a readiness report, you first need to select what information to use t
 |Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator only scans Office documents that are in the user's list of most recently used files. This allows you to narrow the focus of the scan to documents that a user accesses on a regular basis.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
 |Office documents in a local folder or network share.  <br/> |The Readiness Report Creator scans the Office documents in the folder or network share that you specify. The Readiness Report Creator automatically scans the specified location, and all the subfolders in that location.  <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for add-ins installed on the computer on which the Readiness Report Creator is run. <br/> |VBA only  <br/> |
 |Previous readiness results saved together in a local folder or network share.  <br/> |This option allows you to create a consolidated report comprised of individual readiness results from multiple standalone computers.  <br/> <br/>For example, you might want to run the Readiness Report Creator on all the computers in the Finance department, saving the results of each scan to a network share. Then, you can use this option to create a consolidated report for the Finance department.  <br/><br/> For more information, see [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise).  <br/> |VBA only, or VBA and Add-in, depending on what readiness results are being used.  <br/> |
-|Add-in data from Office Telemetry dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](https://technet.microsoft.com/library/jj822978%28v=office.16%29.aspx) to assess add-in compatibility, you can use that information which you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. GRANT SELECT access on the Telemetry database is required for the user to run this option. <br/> |Add-in only  <br/> |
+|Add-in data from Office Telemetry dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](compat/plan-telemetry-dashboard-deployment.md) to assess add-in compatibility, you can use that information which you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. GRANT SELECT access on the Telemetry database is required for the user to run this option. <br/> |Add-in only  <br/> |
    
 <a name="BKMK_ChooseBasicAdv"> </a>
+
 ### Choosing between a basic and an advanced report
 
 After you select what information to use to create your report and specify a location to save your report, you need to choose whether to create a basic report or an advanced report.
@@ -107,6 +112,7 @@ To provide you with the most up-to-date remediation advice and readiness status,
 - https://ready.osi.office.net/orfo/api/vbareportsummary
     
 <a name="BKMK_Interpreting"> </a>
+
 ## Interpreting the information in the readiness report
 
 The Readiness Report Creator creates a readiness report as an Excel file. The readiness information available in the report depends on what information you based your report on, as well as whether you chose to create a basic or advanced report.
@@ -114,6 +120,7 @@ The Readiness Report Creator creates a readiness report as an Excel file. The re
 Each report starts with an Overview page, which provides high-level information about the results, and links to the reports available - [VBA](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_VBAReport) or [Add-in](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddinReport) or both.
   
 <a name="BKMK_VBAReport"> </a>
+
 ### VBA readiness reports
 
 The following table provides a list of the different tabs (worksheets) that are shown in a VBA readiness report.
@@ -174,12 +181,17 @@ The following table lists the possible severities that can appear in a readiness
 |DeviceName  <br/> |Name of the device where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
+|Label1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
+|Label2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
+|Label3 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Finance <br/>|
+|Label4 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Controller <br/>|
    
 <sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
   
 <sup>2</sup> **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
   
 <a name="BKMK_AddinReport"> </a>
+
 ### Add-in report
 
 The following table provides a list of the different tabs (worksheets) that are shown in an add-in report.
@@ -227,6 +239,7 @@ The following table lists the possible readiness statuses that you can see in th
 |More information  <br/> |Link to additional readiness information about the add-in. Advanced reports only.  <br/> |
    
 <a name="BKMK_Enterprise"> </a>
+
 ## Getting readiness information for multiple users in an enterprise
 
 
@@ -269,11 +282,25 @@ It's important to note that when you run the Readiness Report Creator from the c
 To create a consolidated Excel report from these various command line scans, you need to run the UI wizard version of the Readiness Report Creator. For the information source, select "Previous readiness results saved together in a local folder or network share," and then specify the location where you saved all the files for the scans. The Readiness Report Creator then consolidates the information from the JSON files into a readiness report in a single Excel file.
   
 Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
+
+<a name="labels"> </a>
+
+## Use labels to categorize and filter data in reports
+You can specify up to four custom labels to categorize and filter data in reports created by the Readiness Toolkit. Labels are available in reports that are based on scans of the most recently used Office documents and installed add-ins on the user’s computer.
+
+You can specify any string for the custom labels. For example, you can use a label to indicate the user’s department, title, or geographic location. When the Readiness Toolkit runs on the user’s computer, the custom labels are collected and are made available in the reports that are created. For example, you can filter the report to show only data from the Finance Department or only data from offices in Africa. Assign labels in a consistent manner, such as always using Label 1 for department.
+
+You can specify these labels by using the **Specify custom labels to use with the Readiness Toolkit** Group Policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit. Be sure to download the latest [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?linkid=626001).
+
+> [!NOTE]
+> If you're using the Office Telemetry Dashboard and have already configured tags (labels), the Readiness Toolkit automatically collects those labels during its scan of the user's computer and will make them available in its reports. But, labels you specify for the Readiness Toolkit won't appear in the Office Telemetry Dashboard.
   
 <a name="BKMK_AddInfo"> </a>
+
 ## Additional information
 
 <a name="BKMK_FileExt"> </a>
+
 ### File extensions scanned for VBA macros
 
 The following table lists, by application, the file extensions that are scanned when the Readiness Report Creator looks for VBA macros in Office documents.
@@ -290,6 +317,7 @@ The following table lists, by application, the file extensions that are scanned 
 |Word  <br/> |doc, docm, docx, dot, dotm, dotx  <br/> |
    
 <a name="BKMK_AddinTypes"> </a>
+
 ### Types of add-ins for which the Readiness Report Creator collects data
 
 The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. 
@@ -304,6 +332,7 @@ The following table lists the types of add-ins that the Readiness Report Creator
 |XLS RTD  <br/> |Excel  <br/> |XLS real-time data (RTD) add-ins are Excel worksheets that use the RealTimeData worksheet function to call an Automation server to retrieve data in real-time.  <br/> |
    
 <a name="BKMK_InfoSent"> </a>
+
 ### Examples of the information sent to Microsoft when creating an advanced report
 
 When you choose to create an [advanced report](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_ChooseBasicAdv), some information is sent to Microsoft.
@@ -344,6 +373,7 @@ The following table provides a list of the information that is sent to Microsoft
 |Number of Devices  <br/> |35  <br/> |
    
 <a name="BKMK_MacroSettings"> </a>
+
 ### Change macro settings to view information in the readiness report
 
 The report created by the Readiness Report Creator uses macros and active content to display the information in the report. Therefore, to see the VBA macro compatibility and the add-in readiness information in the report, you need to allow macros and active content in Excel. If macros and active content aren't enabled in Excel, you see a **Getting started** message on the **Overview** worksheet when you open the report. On that page are instructions on how to enable macros and active content. This can be as simple as clicking **Enable Content** in the Message Bar.
@@ -355,6 +385,7 @@ If the macro settings choices are grayed out in the **Trust Center** dialog box,
 For more information about macro setting choices, see [Enable or disable macros in Office files](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6).
   
 <a name="BKMK_UnknownInsufficient"> </a>
+
 ### Possible steps to take for add-ins classified as "Unknown" or "Insufficient data"
 
 If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this is an add-in that is business critical for your organization, you can do the following:
