@@ -5,7 +5,7 @@
 ## [Update by using msupdate](update-office-for-mac-using-msupdate.md)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ### [Set preference for macro security](set-preference-macro-security-office-for-mac.md)
-### [Set for Resume Assistant](set-preference-resume-assistant-word.md)
+### [Set preference for Resume Assistant](set-preference-resume-assistant-word.md)
 ## [Activation overview](overview-of-activation-for-office-for-mac.md)
 ## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
 ## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
