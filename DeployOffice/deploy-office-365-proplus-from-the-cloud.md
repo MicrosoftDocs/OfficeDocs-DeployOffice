@@ -24,32 +24,35 @@ Follow the steps in this article to deploy Office 365 ProPlus to client computer
 
 If you haven't already, complete the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus) phases for your Office deployment. 
 
-Verify that your users have local admin privileges on their client computers.
-
 This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
   
-## Best practice recommendations
+## Best practice recommendations and requirements
 
 The steps in this article can apply to a variety of environments, but we'll base our examples on the recommended best practices from the planning article for deploying from the cloud:
   
-- We will deploy Office from the cloud with the Office Deployment Tool.
+- Deploy Office from the cloud with the Office Deployment Tool.
 
-- We will manage updates to Office automatically, without any adminstrative overhead.  
+- Manage updates to Office automatically, without any adminstrative overhead.  
 
-- We will deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
+- Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
 
-- We will build four Office installation packages: 
-	- Semi-Annual Channel for 32-bit 
-	- Semi-Annual Channel for 64-bit 
-	- Semi-Annual Channel (Targeted) for 32-bit
-	- Semi-Annual Channel (Targeted) for 64-bit
+- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. If you want to deploy the 64-bit version of Office, you will need to create additional installation packages.
+	
+In addition to the best practices, our examples include the following standard options and requirements:
 
-In addition to the best practices, our examples will include the following standard options:
+- Deploy Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
-- We will deploy Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+- Office installs silently on all clients  
 
-- Office will install silently on all clients
-  
+- Users must have local admin privileges on their client devices. If that is not the case, then xx.
+
+## REVIEWER QUESTIONS
+
+1. What to recommend if users don't have local admin privileges.
+2. Whether language recommendations are good enough--or should we include match OS in standard guidance.
+3. What other standard options to include.
+4. When to replace copy and paste of config file with Office Customization Tool for Click-to-Run.
+
 ## Step 1: Create your deployment groups
 
 Based on these requirements, we'll create two deployment groups: group 1 will receives updates from Semi-Annual Channel and group 2 will receive updates from Semi-Annual Channel (Targeted).
