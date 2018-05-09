@@ -223,7 +223,7 @@ Due diligence was done to review cloud services connected to features in Office 
 
 |**Application**  |**Feature**  |**Recommendation**  |
 |---------|---------|---------|
-|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |Do not use this feature. It will be disabled in the May update of the build delivered to Semi-Annual Channel (Targeted) and Monthly Channel. |
+|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Monthly Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Channel (Targeted) <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
 
 
 ## Reference information
