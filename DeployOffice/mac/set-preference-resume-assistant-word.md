@@ -12,7 +12,7 @@ ms.custom: Ent_Office_Mac
 description: "Shows IT Pros how to set a preference for Resume Assistant in Word for Mac"
 ---
 
-# Set a preference for Resume Assistant in Word 2016 for Mac
+# Set a preference for Resume Assistant in Word for Mac
 In Word for Mac, the icon for [Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) will appear on the Review tab if you are running version 16.13 or later, as shown in the following screen shot.
 
 ![Screenshot of Resume Assistant icon in the Word for Mac ribbon](../images/resume-assistant-ribbon.png)
