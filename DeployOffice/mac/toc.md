@@ -2,7 +2,7 @@
 ## [What's new for admins](what-s-new-for-admins-in-office-for-mac.md)
 ## [Deployment options](deployment-options-for-office-for-mac.md)
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
-## [Update by using msupdate](update-office-for-mac-using-msupdate.md)
+### [Update by using msupdate](update-office-for-mac-using-msupdate.md)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ### [Macro security](set-preference-macro-security-office-for-mac.md)
 ### [Resume Assistant](set-preference-resume-assistant-word.md)
