@@ -37,6 +37,8 @@ The steps in this article can apply to a variety of environments, but we'll base
 - Deploy the Semi-Annual Channel (Targeted) to a representative pilot group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
 
 - Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. (If you want to deploy the 64-bit version of Office, you need to create additional installation packages.)
+
+- Deploy those Office installation packages to two deployment groups: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package.   
 	
 In addition to the best practices, this article includes these common options:
 
@@ -132,15 +134,15 @@ Using a text editor, copy and paste the following into a text file and save it a
 
 ```
 
-This configuration file is used deploy Office to the broad group users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel (Targeted).
+This configuration file is used deploy Office to the broad group users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel.
   
- **Step 5: Customize the configuration files for your environment**
+## Step 5: Customize the configuration files for your environment
   
 To change the options from our example, you can edit the XML elements and attributes in the configuration files. For example, if you want to add a third language, you can insert an additional language element with the appropriate ID. You can also create additional configuration files for other groups you want to deploy to, such as a group that needs to receive updates from a different channel or a group that needs the 64-bit edition of Office.
   
 For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
-## Deploying Office 365 ProPlus
+## Step 6: Deploy Office 365 ProPlus
 
 To deploy Office, we'll provide two commands that users can run from their client computers. The first command installs Office for client computers in group 1 and the second for group 2. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer.
   
@@ -148,21 +150,22 @@ Users who run these commands must have local admin privileges on their computer 
   
 Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers.
   
- **Step 1: Run the commands for group 1**
+**Run the commands for the pilot group**
   
-From the client computers for group 1, run the following command from a command prompt with admin privileges:
+From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
   
- `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-group1-SAC.xml`
+ `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-pilot-group-SAC.xml`
   
- **Step 2: Run the commands for group 2**
+**Run the commands for the broad group**
   
 From the client computers for group 2, run the following command from a command prompt with admin privileges:
   
- `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-group2-SACT.xml`
+ `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-broad-group-SAC.xml`
   
-This command is the same as group 1, except that it references the configuration file for group 2.
+This command is the same as the pilot group, except that it references the configuration file for the broad group.
   
- **Step 3: Verify that installation was successful**
+  
+## Step 7: Verify that the installation was successful
   
 After running the command, the Office installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and %windir%\\temp directories.
   
@@ -173,7 +176,6 @@ After running the command, the Office installation should start immediately. If 
 [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
-  
-[Best practices](best-practices/best-practices.md)
+
   
 
