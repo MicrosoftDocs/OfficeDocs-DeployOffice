@@ -28,7 +28,7 @@ This article is intended for administrators in enterprise environments working w
   
 ## Best practice recommendations and requirements
 
-The steps in this article can apply to a variety of environments, but we'll base our examples on the recommended best practices from the planning article for deploying from the cloud. In this article, you will:
+The steps in this article can apply to a variety of environments, but we'll base our examples on the recommended best practices from the planning phase. Based on those best practices, you will:
   
 - Deploy Office from the cloud with the Office Deployment Tool.
 
@@ -36,26 +36,26 @@ The steps in this article can apply to a variety of environments, but we'll base
 
 - Deploy the Semi-Annual Channel (Targeted) to a representative pilot group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
 
-- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. (If you want to deploy the 64-bit version of Office, you will need to create additional installation packages.)
+- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. (If you want to deploy the 64-bit version of Office, you need to create additional installation packages.)
 	
 In addition to the best practices, this article includes these common options:
 
-- Deploy Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+- Installation of Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
 - Office installs silently on all clients. 
 
-- All the Office 365 ProPlus apps are installed.
+- Installation of all the standard Office 365 ProPlus apps.
 
-This scenario assumes that your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
+This article assumes that your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
 
 ## Step 1: Create your deployment groups
 
-Based on these requirements, we'll create two deployment groups: the pilot group will receives updates from Semi-Annual Channel (Targeted) and the broad group will receive updates from Semi-Annual Channel.
+Based on these requirements, we'll create two deployment groups: a pilot group that receives updates from Semi-Annual Channel (Targeted) and a broad group that receives updates from Semi-Annual Channel.
   
 |**Group**|**Requirements**|
 |:-----|:-----|
 |Pilot group: Semi-Annual Channel (Targeted) <br/> |Office 365 ProPlus in English and Japanese, silent installation, and installation and updates come from the Office CDN. Updates to Office are automatic and come from Semi-Annual Channel (Targeted).  <br/> |
-|Broad group: Semi-Annual Channel <br/> |Same as above, except updates to Office come from Semi-Annual Channel.  <br/> |
+|Broad group: Semi-Annual Channel <br/> |Same as above, except installation and updates to Office come from Semi-Annual Channel.  <br/> |
    
 Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel (Targeted) and one from Semi-Annual Channel. For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
@@ -64,7 +64,7 @@ Each group will need a unique configuration file, which is used to define which 
 
 We'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
   
-1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. You can create whatever structure works for your organization, of course, but we'll refer to this setup in our examples. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
+1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. You can create whatever structure works for your organization, but we'll refer to this setup in our examples. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
   
 2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
   
@@ -82,11 +82,14 @@ Using a text editor, copy and paste the following into a text file and save it a
        Channel="Targeted"> 
    <Product ID="O365ProPlusRetail" > 
      <Language ID="en-us" />      
-     <Language ID="en-us" />      
+     <Language ID="ja-jp" />
    </Product> 
   </Add> 
   <Display Level="None" 
            AcceptEULA="TRUE" />
+	 <Updates Enabled="TRUE" 
+         UpdatePath=""
+         Channel="Targeted" />
 </Configuration>
 
 ```
@@ -96,37 +99,44 @@ This configuration file is used to deploy Office to the pilot group. Here's more
 |**Value**|**Description**|
 |:-----|:-----|
 |OfficeClientEdition="32"  <br/> |Installs the 32-bit edition of Office  <br/> |
-|Channel="Broad"  <br/> |Installs the Office installation files from Semi-Annual Channel  <br/> |
+|Channel="Targeted"  <br/> |Installs the Office installation files from Semi-Annual Channel (Targeted)<br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Installs Office 365 ProPlus  <br/> |
 |Language ID="en-us"  <br/> |Installs English version of Office  <br/> |
-|Display Level="None"  <br/> |Installs Office silently, without displaying the user interface.  <br/> |
+|Language ID="ja-jp"  <br/> |Installs Japanese version of Office  <br/> ||Display Level="None"  <br/> |Installs Office silently, without displaying the user interface.  <br/> |
 |AcceptEULA="TRUE"  <br/> |When installing Office, accepts the Microsoft Software License Terms automatically  <br/> |
+|Updates Enabled="TRUE"  <br/> |Office will check for updates|
+|UpdatePath=""  <br/> |Updates will come from the Office CDN|
+|Channel="Targeted"  <br/> |Updates will use the Semi-Annual Channel (Targeted) for updating Office after it is installed|
    
-Note that the Office installation files and Office updates will come from Semi-Annual Channel. For more details on the most recent version of Office based on the different update channels, see [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751.aspx).
+Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751.aspx).
   
-## Step 4: Create a configuration file for group 2
+## Step 4: Create a configuration file for the broad group
   
-Using a text editor, copy and paste the following into a text file and save it as **config-group2-SACT.xml** in the \\\\Server\Share\O365 folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-broad-group-SAC.xml** in the \\\\Server\Share\O365 folder.
   
 ```
 <Configuration> 
   <Add OfficeClientEdition="32" 
-       Channel="Targeted"> 
+       Channel="Broad"> 
    <Product ID="O365ProPlusRetail" > 
      <Language ID="en-us" />      
-     </Product> 
+     <Language ID="ja-jp" />
+   </Product> 
   </Add> 
-<Display Level="None" 
-         AcceptEULA="TRUE" />
+  <Display Level="None" 
+           AcceptEULA="TRUE" />
+	 <Updates Enabled="TRUE" 
+         UpdatePath=""
+         Channel="Broad" />
 </Configuration>
 
 ```
 
-This configuration file is used deploy Office to the group 2 users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel (Targeted).
+This configuration file is used deploy Office to the broad group users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel (Targeted).
   
  **Step 5: Customize the configuration files for your environment**
   
-To change the options from our example, you can edit the XML elements and attributes in the configuration files. For example, if you want to add a second language, you can insert an additional language element with the appropriate ID. You can also create additional configuration files for other groups you want to deploy to, such as a group that needs to receive updates from a different channel or a group that needs the 64-bit edition of Office.
+To change the options from our example, you can edit the XML elements and attributes in the configuration files. For example, if you want to add a third language, you can insert an additional language element with the appropriate ID. You can also create additional configuration files for other groups you want to deploy to, such as a group that needs to receive updates from a different channel or a group that needs the 64-bit edition of Office.
   
 For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
