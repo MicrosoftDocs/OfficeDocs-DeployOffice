@@ -28,41 +28,36 @@ This article is intended for administrators in enterprise environments working w
   
 ## Best practice recommendations and requirements
 
-The steps in this article can apply to a variety of environments, but we'll base our examples on the recommended best practices from the planning article for deploying from the cloud:
+The steps in this article can apply to a variety of environments, but we'll base our examples on the recommended best practices from the planning article for deploying from the cloud. In this article, you will:
   
 - Deploy Office from the cloud with the Office Deployment Tool.
 
 - Manage updates to Office automatically, without any adminstrative overhead.  
 
-- Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
+- Deploy the Semi-Annual Channel (Targeted) to a representative pilot group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
 
-- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. If you want to deploy the 64-bit version of Office, you will need to create additional installation packages.
+- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. (If you want to deploy the 64-bit version of Office, you will need to create additional installation packages.)
 	
-In addition to the best practices, our examples include the following standard options and requirements:
+In addition to the best practices, this article includes these common options:
 
 - Deploy Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
-- Office installs silently on all clients  
+- Office installs silently on all clients. 
 
-- Users must have local admin privileges on their client devices. If that is not the case, then xx.
+- All the Office 365 ProPlus apps are installed.
 
-## REVIEWER QUESTIONS
-
-1. What to recommend if users don't have local admin privileges.
-2. Whether language recommendations are good enough--or should we include match OS in standard guidance.
-3. What other standard options to include.
-4. When to replace copy and paste of config file with Office Customization Tool for Click-to-Run.
+This scenario assumes that your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
 
 ## Step 1: Create your deployment groups
 
-Based on these requirements, we'll create two deployment groups: group 1 will receives updates from Semi-Annual Channel and group 2 will receive updates from Semi-Annual Channel (Targeted).
+Based on these requirements, we'll create two deployment groups: the pilot group will receives updates from Semi-Annual Channel (Targeted) and the broad group will receive updates from Semi-Annual Channel.
   
 |**Group**|**Requirements**|
 |:-----|:-----|
-|Group 1: Semi-Annual Channel  <br/> |Office 365 ProPlus in English, silent installation, and installation and updates come from the Office CDN. Updates to Office come from Semi-Annual Channel, which is the default choice.  <br/> |
-|Group 2: Semi-Annual Channel (Targeted)  <br/> |Same as above, except updates to Office come from Semi-Annual Channel (Targeted).  <br/> |
+|Pilot group: Semi-Annual Channel (Targeted) <br/> |Office 365 ProPlus in English and Japanese, silent installation, and installation and updates come from the Office CDN. Updates to Office are automatic and come from Semi-Annual Channel (Targeted).  <br/> |
+|Broad group: Semi-Annual Channel <br/> |Same as above, except updates to Office come from Semi-Annual Channel.  <br/> |
    
-Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel and one from Semi-Annual Channel (Targeted). For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel (Targeted) and one from Semi-Annual Channel. For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
 
 ## Step 2: Download the Office Deployment Tool 
@@ -75,17 +70,18 @@ We'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN.
   
 3. After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
 
-## Step 3: Create a configuration file for group 1
+## Step 3: Create a configuration file for the pilot group
 
-To download and deploy Office 365 ProPlus for group 1, we'll create a configuration file that defines the appropriate settings for the Office Deployment Tool.
+To download and deploy Office 365 ProPlus for the pilot group, we'll create a configuration file that defines the appropriate settings for the Office Deployment Tool.
   
-Using a text editor, copy and paste the following into a text file and save it as **config-group1-SAC.xml** in the \\\\server\share\O365 folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-pilot-group-SAC.xml** in the \\\\server\share\O365 folder.
   
 ```
 <Configuration> 
   <Add OfficeClientEdition="32" 
-       Channel="Broad"> 
+       Channel="Targeted"> 
    <Product ID="O365ProPlusRetail" > 
+     <Language ID="en-us" />      
      <Language ID="en-us" />      
    </Product> 
   </Add> 
@@ -95,7 +91,7 @@ Using a text editor, copy and paste the following into a text file and save it a
 
 ```
 
-This configuration file is used to deploy Office to the group 1 users. Here's more detail on how the XML settings define what to install:
+This configuration file is used to deploy Office to the pilot group. Here's more detail on how the XML settings define what to install:
   
 |**Value**|**Description**|
 |:-----|:-----|
