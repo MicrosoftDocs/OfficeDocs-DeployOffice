@@ -88,7 +88,7 @@ Translator takes a highlighted word or section of user text, as well as a few wo
 
 You can disable this service for your users by using Group Policy and the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
-{Add policy settings mentioned in Admin considerations for the modern Translator feature in Office}
+You can disable online-based translation features, including Translator and legacy translation features, by using the **Do not use online machine translation** policy setting and the **Use online translation dictionaries** policy setting. These policy settings can be found under User Configuration\Policies\Administrative Templates\Microsoft Word 2016\Miscellaneous.
 
 
 
