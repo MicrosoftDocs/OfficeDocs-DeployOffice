@@ -14,45 +14,65 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 35d4cb3b-4cc9-4bc9-9f20-eaf3c50f8331
 
-description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application."
+description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network."
 ---
 
 # Deploy Office 365 ProPlus from a local source
 
-This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network. As part of this deployment, we will install multiple languages, use two update channels for Office, and exclude an Office application.
+Follow the steps in this article to deploy Office 365 ProPlus to client computers from a shared folder on your network by by using the Office Deployment Tool (ODT). 
+
+## Before you begin
+
+If you haven't already, complete the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus) phases for your Office deployment. 
+
+This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
   
-The steps in this article can apply to a variety of environments, but we'll base our examples on the following infrastructure and requirements.
+## Best practice recommendations and requirements
+
+The steps in this article can apply to a variety of environments, but we'll base our examples on the best practices from the planning phase. Based on those recommendations, this article covers the following:
   
-- Users have local admin privileges on their client computers
-    
-- Office 365 ProPlus will be deployed in English and Japanese
-    
-- Most clients will receive updates to Office from Semi-Annual Channel
-    
-- A small set of pilot clients will receive earlier updates from Semi-Annual Channel (Targeted)
-    
-- Office will be installed without Publisher on all clients
-    
-- Office will install silently on all clients
-    
-- After install, all updates to Office will come directly from the Office Content Delivery Network (CDN)
-    
-Based on these requirements, we'll create two deployment groups: group one will receives updates from Semi-Annual Channel and group two will receive updates from Semi-Annual Channel (Targeted).
+- Deploy Office from a local source with the Office Deployment Tool.
+
+- Manage updates to Office automatically, without any adminstrative overhead. (If you want to manage updates from a local source, you need to change the configuration files in this article. For more details, see [configuring updates](configuration-options-for-the-office-2016-deployment-tool#updates-element).
+
+- Deploy the Semi-Annual Channel (Targeted) to a representative pilot group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
+
+- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. (If you want to deploy the 64-bit version of Office, you need to create additional installation packages.)
+
+- Deploy those Office installation packages to two deployment groups: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package.   
+	
+In addition to the best practices, this article includes these common options:
+
+- Installation of Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+
+- Silent installation of Office on all client devices. 
+
+- Installation of all the core Office 365 ProPlus apps.
+
+This article assumes that your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
+
+
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+## Step 1: Create your deployment groups
+
+Based on these requirements, we'll create two deployment groups: a pilot group that receives updates from Semi-Annual Channel (Targeted) and a broad group that receives updates from Semi-Annual Channel.
   
 |**Group**|**Requirements**|
 |:-----|:-----|
-|Group 1: Semi-Annual Channel  <br/> |Office 365 ProPlus in English and Japanese, no Publisher, silent installation, and updates come from the Office CDN. Updates to OfficOffice come from Semi-Annual Channel, which is the default choice.  <br/> |
-|Group 2: Semi-Annual Channel (Targeted)  <br/> |Same as above, except updates to Office come from Semi-Annual Channel (Targeted).  <br/> |
+|Pilot group: Semi-Annual Channel (Targeted) <br/> |Office 365 ProPlus in English and Japanese, silent installation, and installation and updates come from the Office CDN. Updates to Office are automatic and come from Semi-Annual Channel (Targeted).  <br/> |
+|Broad group: Semi-Annual Channel <br/> |Same as above, except installation and updates to Office come from Semi-Annual Channel.  <br/> |
    
-Each group will need a unique set of Office installation files: one that comes from the most recent release of Semi-Annual Channel, and one that comes from the most recent release of the Semi-Annual Channel (Targeted). To download and deploy these different releases of Office to our two groups, we'll create two configuration files, which are used to define which versions of Office to download and deploy. Each of the configuration files downloads and deploys a different build of Office: one from Semi-Annual Channel and one from Semi-Annual Channel (Targeted). For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel (Targeted) and one from Semi-Annual Channel. For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
   
-This article includes recommendations on how to deploy Office 365 ProPlus and why we make those recommendations. We can't cover all possible situations, of course, so we've aimed for a common scenario that can be used as a template for your own deployment. Where appropriate, we link to reference articles for further customizing your Office deployment, such as adding more languages
-  
-## Create shared folders for Office installation files and updates
+## Step 2: Create shared folders for Office installation files and updates
 
 Because we're deploying Office 365 ProPlus from a local source, we have to create folders to store the Office installation files. We'll create one parent folder and two child folders, one for the version of Office from Semi-Annual Channel and one for the version of Office from Semi-Annual Channel (Targeted). This structure is similar to the Office CDN structure.
   
- **Step 1: Create the following folders:**
+**Create the following folders:**
   
 |**Folder Path**|**Purpose**|
 |:-----|:-----|
@@ -60,9 +80,9 @@ Because we're deploying Office 365 ProPlus from a local source, we have to creat
 |\\\Server\Share\O365\SAC  <br/> |Stores the Office 365 ProPlus installation files from Semi-Annual Channel  <br/> |
 |\\\Server\Share\O365\SACT  <br/> |Stores the Office 365 ProPlus installation files from Semi-Annual Channel (Targeted)  <br/> |
    
-These folders will include all the Office installation files we need to deploy. You can create whatever structure works for your organization, of course, but we'll refer to this setup in our examples.
+These folders will include all the Office installation files we need to deploy. You can create whatever structure works for your organization, but we'll refer to this setup in our examples.
   
- **Step 2: Assign Read permissions for your users**
+**Assign Read permissions for your users**
   
 Installing Office from a shared folder requires only that the user have Read permission for that folder, so we'll assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](http://go.microsoft.com/fwlink/p/?LinkId=184710)
   
