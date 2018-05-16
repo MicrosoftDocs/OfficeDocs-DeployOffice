@@ -4,9 +4,10 @@
 The following information shows administrators what controls are available for services in Office 365 ProPlus in which Microsoft acts as data controller.<sup>1<sup/>
 
 > [!NOTE]
-> - These services are only available if you have Office 365 ProPlus installed. Some of these services may be available in other versions of Office, such as Office Professional Plus 2016. 
 > - For more information about these services, how the data is collected and processed, and the controls available to end users, see [Controller services in Office 365](https://support.officeppe.com/article/92c234f1-dc91-4dc1-925d-6c90fc3816d8).  **/{STAGING LINK/ARTICLE NAME NEEDS TWEAKING}**
 > - Be sure to download the latest [Office 2016 Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030).
+> - To use these services, Office must be installed. 
+> - Some of these services may be available in other versions of Office, such as Office Professional Plus 2016. 
 
 
 ## Add-ins 
