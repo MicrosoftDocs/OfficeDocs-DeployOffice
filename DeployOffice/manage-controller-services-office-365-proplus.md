@@ -60,10 +60,10 @@ You can disable this service for your users by using Group Policy and the **Send
 
 
 ## Tell Me
-You can disable this service for your users by using the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using Group Policy and the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 ## Translator
-You can disable this service for your users by using the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using Group Policy and the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 {Add policy settings mentioned in Admin considerations for the modern Translator feature in Office}
 
