@@ -21,7 +21,7 @@ Users can insert rotatable 3D models based on the subject chosen by the user.
 You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## Linked data types
-Users can import stock and geographic data in Excel by selecting text in a cell and converting it to the Stocks or the Geography linked data type
+Users can import stock and geographic data in Excel by selecting text in a cell and converting it to the Stocks or the Geography linked data type.
 
 You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
