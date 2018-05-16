@@ -11,59 +11,59 @@ The following information shows administrators what controls are available for s
 
 
 ## Add-ins 
-To avoid any unintended transfer of data to Microsoft via an add-in, we recommend that you disable the use of unknown add-ins by your users. You can do this by using the **Block Web Add-ins** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings\Trust Center\Trusted Catalogs. 
+To avoid any unintended transfer of data to Microsoft via an add-in, we recommend that you disable the use of unknown add-ins by your users. You can do this by using Group Policy and the **Block Web Add-ins** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings\Trust Center\Trusted Catalogs. 
 
 ## Insert 3D Models
-You can disable this service for your users by using the **Online Content Options** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 
 ## Linked Data Types 
-You can disable this service for your users by using the **Online Content Options** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## LinkedIn Resume Assistant 
-You can disable this service for your users by using the **Allow LinkedIn Resume Assistant feature** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Word 2016\Word Options\General. 
+You can disable this service for your users by using Group Policy and the **Allow LinkedIn Resume Assistant feature** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Word 2016\Word Options\General. 
 
-You can prevent all LinkedIn features from appearing in Office applications by using the **Show LinkedIn features in Office applications** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. 
+You can prevent all LinkedIn features from appearing in Office applications by using Group Policy and the **Show LinkedIn features in Office applications** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. 
 
 ## Map Charts and 3D Maps 
-You can disable this service for your users by using the **Online Content Options** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 
 ## Office Help and Quick Starts 
-You can disable this service for your users by using the **Send personal information** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using Group Policy and the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 ## Office Templates 
-You can disable this service for your users by using the **Disable web templates in File | New and on the Office Start screen** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Web Options… But, this policy setting doesn’t prevent users from downloading templates from Office.com using their web browsers.
+You can disable this service for your users by using Group Policy and the **Disable web templates in File | New and on the Office Start screen** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Web Options… But, this policy setting doesn’t prevent users from downloading templates from Office.com using their web browsers.
 
 ## Online Pictures 
-You can disable this service for your users by using the **Online Content Options** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## Online Video 
-You can disable this service for your users by using the **Online Content Options** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## PowerPoint QuickStarter
-You can disable this service for your users by using the **Turn off QuickStarter** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft PowerPoint 2016\PowerPoint Options\General. 
+You can disable this service for your users by using Group Policy and the **Turn off QuickStarter** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft PowerPoint 2016\PowerPoint Options\General. 
 
-You can also use the **Send personal information** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can also use the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 
 ## Send a Smile
-You can disable this service for your users by using the **Send Office Feedback** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
+You can disable this service for your users by using Group Policy and the **Send Office Feedback** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
 
-You can also use the **Online Content Options** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+You can also use the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
-You can disable the user option to send a screenshot of their desktop with their feedback to Microsoft by using the **Allow including screenshot with Office Feedback** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
+You can disable the user option to send a screenshot of their desktop with their feedback to Microsoft by using the **Allow including screenshot with Office Feedback** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
 
 
 ## Smart Lookup
-You can disable this service for your users by using the **Send personal information** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using Group Policy and the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 
 ## Tell Me
-You can disable this service for your users by using the **Send personal information** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 ## Translator
-You can disable this service for your users by using the **Send personal information** Group Policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
 
 {Add policy settings mentioned in Admin considerations for the modern Translator feature in Office}
 
