@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing Download and install or reinstall Office 365 or Office 2016 on your PC or Mac or Use the Office 2016 offline installer."
+description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
 # Deploy Office 365 ProPlus from the cloud
@@ -28,7 +28,7 @@ This article is intended for administrators in enterprise environments working w
   
 ## Best practice recommendations and requirements
 
-The steps in this article can apply to a variety of environments, but we'll base our examples on the recommended best practices from the planning phase. Based on those best practices, you will:
+The steps in this article can apply to a variety of environments, but we'll base our examples on the best practices from the planning phase. Based on those recommendations, this article covers the following:
   
 - Deploy Office from the cloud with the Office Deployment Tool.
 
@@ -44,9 +44,9 @@ In addition to the best practices, this article includes these common options:
 
 - Installation of Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
-- Office installs silently on all clients. 
+- Silent installation of Office on all client devices. 
 
-- Installation of all the standard Office 365 ProPlus apps.
+- Installation of all the core Office 365 ProPlus apps.
 
 This article assumes that your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
 
@@ -60,7 +60,6 @@ Based on these requirements, we'll create two deployment groups: a pilot group t
 |Broad group: Semi-Annual Channel <br/> |Same as above, except installation and updates to Office come from Semi-Annual Channel.  <br/> |
    
 Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel (Targeted) and one from Semi-Annual Channel. For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
-
 
 ## Step 2: Download the Office Deployment Tool 
 
@@ -144,7 +143,7 @@ For more information about the configuration options, see [Configuration options
   
 ## Step 6: Deploy Office 365 ProPlus
 
-To deploy Office, we'll provide two commands that users can run from their client computers. The first command installs Office for client computers in group 1 and the second for group 2. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer.
+To deploy Office, we'll provide two commands that users can run from their client computers. The first command installs Office for client computers in the pilot group and the second for the broad group. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer.
   
 Users who run these commands must have local admin privileges on their computer and must have read permissions to the share (\\\\server\share\O365, in our case).
   
