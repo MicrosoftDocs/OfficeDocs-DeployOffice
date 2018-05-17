@@ -110,7 +110,7 @@ By removing the application exclude statement from the install XML file, it will
 
 ## Roll back a build
 
- *Enterprise Managed*  can leverage their existing software distribution tool, System Center Configuration Manager, to perform a client rollback. For step-by-step guidance on performing a rollback using the OfficeC2RClient.exe update engine, see[Channel management](best-practices-channel-management.md).
+ *Enterprise Managed*  can leverage their existing software distribution tool, System Center Configuration Manager, to perform a client rollback. For step-by-step guidance on performing a rollback using the OfficeC2RClient.exe update engine, see [Channel management](best-practices-channel-management.md).
   
 ## Switch channels
 
