@@ -1,3 +1,16 @@
+---
+title: "How admins can manage controller services in Office 365 ProPlus"
+ms.author: danbrown
+author: DHB-MSFT
+manager: laurawi
+ms.audience: ITPro
+ms.topic: reference
+ms.service: o365-proplus-itpro
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom: Ent_Office_ProPlus
+description: "Provides information to admins on how to use Group Policy settings to manage services in Office 365 ProPlus"
+---
 
 # How admins can manage controller services in Office 365 ProPlus 
 
@@ -18,11 +31,6 @@ To avoid any unintended transfer of data to Microsoft via an add-in, we recommen
 
 ## Insert 3D Models
 Users can insert rotatable 3D models based on the subject chosen by the user. 
-
-You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
-
-## Linked data types
-Users can import stock and geographic data in Excel by selecting text in a cell and converting it to the Stocks or the Geography linked data type.
 
 You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
