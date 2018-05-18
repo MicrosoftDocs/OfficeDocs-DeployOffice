@@ -17,7 +17,6 @@ description: "Provides information to admins on how to use Group Policy settings
 The following information shows administrators what controls are available for services in Office 365 ProPlus in which Microsoft acts as data controller.<sup>1<sup/>
 
 > [!NOTE]
-> - For more information about these services, how the data is collected and processed, and the controls available to your users, see [Controller services in Office 365](https://support.office.com/article/92c234f1-dc91-4dc1-925d-6c90fc3816d8).
 > - Unless otherwise noted, the listed connected services are subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
 > - Users access these services through Office applications, such as Excel or PowerPoint. 
 > - Some of these services may be available in other versions of Office, such as Office Professional Plus 2016. 
