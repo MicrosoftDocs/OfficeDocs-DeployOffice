@@ -37,6 +37,7 @@ The steps in this article are based on the following best practices, requirement
 |Requirement|Your users must have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.|
 |Option|Install Office in English and Japanese. [More details on installing additional languages, including matching the language of the client device's operating system](overview-of-deploying-languages-in-office-365-proplus.md).|
 |Option|Install Office silently. [More details](configuration-options-for-the-office-2016-deployment-tool#display-element).|
+|Option|Install core Office apps only. If you want to include Project or Visio, see [Deploy Visio](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-visio) and [Deploy Project](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-project).|
 
 ## Step 1: Download the Office Deployment Tool 
 
@@ -140,7 +141,7 @@ From the client computers for the broad group, run the following command from a 
   
 This command is the same as the pilot group, except that it references the configuration file for the broad group.
   
-## Step 7: Verify that the installation was successful
+## Step 6: Verify that the installation was successful
   
 After running the command, the Office installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and %windir%\\temp directories.
   
