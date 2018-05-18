@@ -26,52 +26,29 @@ If you haven't already, complete the [asssessment](assess-office-365-proplus.md)
 
 This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
   
-## Best practice recommendations and requirements
+## Best practices and requirements
 
-The steps in this article can apply to a variety of environments, but we'll base our examples on the best practices from the planning phase. Based on those recommendations, this article covers the following:
+The steps in this article are based on the following best practices, requirements, and options:
   
-- Deploy Office from the cloud with the Office Deployment Tool.
+|Best practice|Deploy Office from the cloud with the Office Deployment Tool. [More details](plan-office-365-proplus#step-1---choose-how-to-deploy).|
+|Best practice|Manage updates to Office automatically, without any adminstrative overhead. [More details](plan-office-365-proplus#step-2---choose-how-to-manage-updates).|
+|Best practice|Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. (If you want to deploy the 64-bit version of Office, you can create additional installation packages.) [More details](plan-office-365-proplus#step-4---define-your-source-files).|
+|Best practice|Deploy those Office installation packages to two deployment groups: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package. [More details](plan-office-365-proplus#step-3---choose-your-update-channels).| 
+|Requirement|Your users must have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.|
+|Option|Install Office in English and Japanese. [More details on installing additional languages, including matching the language of the client device's operating system](overview-of-deploying-languages-in-office-365-proplus.md).|
+|Option|Install Office silently. [More details](configuration-options-for-the-office-2016-deployment-tool#display-element).|
 
-- Manage updates to Office automatically, without any adminstrative overhead.  
-
-- Deploy the Semi-Annual Channel (Targeted) to a representative pilot group of users and client devices and deploy the Semi-Annual Channel to the rest of our users. 
-
-- Build two Office installation packages: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. (If you want to deploy the 64-bit version of Office, you need to create additional installation packages.)
-
-- Deploy those Office installation packages to two deployment groups: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package.   
-	
-In addition to the best practices, this article includes these common options:
-
-- Installation of Office in English and Japanese. For more details on installing additional languages, including matching the language of the client device's operating system, see  [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
-
-- Silent installation of Office on all client devices. 
-
-- Installation of all the core Office 365 ProPlus apps.
-
-This article assumes that your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
-
-## Step 1: Create your deployment groups
-
-Based on these requirements, we'll create two deployment groups: a pilot group that receives updates from Semi-Annual Channel (Targeted) and a broad group that receives updates from Semi-Annual Channel.
-  
-|**Group**|**Requirements**|
-|:-----|:-----|
-|Pilot group: Semi-Annual Channel (Targeted) <br/> |Office 365 ProPlus in English and Japanese, silent installation, and installation and updates come from the Office CDN. Updates to Office are automatic and come from Semi-Annual Channel (Targeted).  <br/> |
-|Broad group: Semi-Annual Channel <br/> |Same as above, except installation and updates to Office come from Semi-Annual Channel.  <br/> |
-   
-Each group will need a unique configuration file, which is used to define which versions of Office to deploy. Each configuration file deploys a different build of Office: one from Semi-Annual Channel (Targeted) and one from Semi-Annual Channel. For more details on the update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
-
-## Step 2: Download the Office Deployment Tool 
+## Step 1: Download the Office Deployment Tool 
 
 We'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
   
-1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. You can create whatever structure works for your organization, but we'll refer to this setup in our examples. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
+1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
   
 2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
   
-3. After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
+3. After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (cosnfiguration.xml).
 
-## Step 3: Create a configuration file for the pilot group
+## Step 2: Create a configuration file for the pilot group
 
 To download and deploy Office 365 ProPlus for the pilot group, we'll create a configuration file that defines the appropriate settings for the Office Deployment Tool.
   
@@ -111,7 +88,7 @@ This configuration file is used to deploy Office to the pilot group. Here's more
    
 Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751.aspx).
   
-## Step 4: Create a configuration file for the broad group
+## Step 3: Create a configuration file for the broad group
   
 Using a text editor, copy and paste the following into a text file and save it as **config-broad-group-SAC.xml** in the \\\\Server\Share\O365 folder.
   
@@ -135,15 +112,15 @@ Using a text editor, copy and paste the following into a text file and save it a
 
 This configuration file is used deploy Office to the broad group users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel.
   
-## Step 5: Customize the configuration files for your environment
+## Step 4: Customize the configuration files for your environment
   
 To change the options from our example, you can edit the XML elements and attributes in the configuration files. For example, if you want to add a third language, you can insert an additional language element with the appropriate ID. You can also create additional configuration files for other groups you want to deploy to, such as a group that needs to receive updates from a different channel or a group that needs the 64-bit edition of Office.
   
 For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
   
-## Step 6: Deploy Office 365 ProPlus
+## Step 5: Deploy Office 365 ProPlus
 
-To deploy Office, we'll provide two commands that users can run from their client computers. The first command installs Office for client computers in the pilot group and the second for the broad group. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer.
+To deploy Office, we'll provide two commands that users can run from their computers. The first command installs Office in the pilot group and the second for the broad group. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install.
   
 Users who run these commands must have local admin privileges on their computer and must have read permissions to the share (\\\\server\share\O365, in our case).
   
@@ -157,12 +134,11 @@ From the client computers for the pilot group, run the following command from a 
   
 **Run the commands for the broad group**
   
-From the client computers for group 2, run the following command from a command prompt with admin privileges:
+From the client computers for the broad group, run the following command from a command prompt with admin privileges:
   
  `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-broad-group-SAC.xml`
   
 This command is the same as the pilot group, except that it references the configuration file for the broad group.
-  
   
 ## Step 7: Verify that the installation was successful
   
@@ -175,6 +151,4 @@ After running the command, the Office installation should start immediately. If 
 [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
-
-  
 
