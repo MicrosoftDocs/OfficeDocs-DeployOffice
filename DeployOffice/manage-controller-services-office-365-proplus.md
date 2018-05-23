@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+localization_priority: Critical
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides information to admins on how to use Group Policy settings to manage services in Office 365 ProPlus"
@@ -17,11 +17,17 @@ description: "Provides information to admins on how to use Group Policy settings
 The following information shows administrators what controls are available for services in Office 365 ProPlus in which Microsoft acts as data controller.<sup>1<sup/>
 
 > [!NOTE]
+> - For more information about these services, how the data is collected and processed, and the controls available to your users, see [Controller services in Office 365](https://support.office.com/article/92c234f1-dc91-4dc1-925d-6c90fc3816d8).
 > - Unless otherwise noted, the listed connected services are subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
 > - Users access these services through Office applications, such as Excel or PowerPoint. 
 > - Some of these services may be available in other versions of Office, such as Office Professional Plus 2016. 
 > - For Group Policy, be sure to download the latest [Office 2016 Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) so that you have the most current policy settings.
 
+
+## 3D Maps
+3D Maps is a three-dimensional data visualization tool in Excel that provides information and insights that may not be available in traditional two-dimensional tables and charts.
+
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## Add-ins 
 Users can install Microsoft and third-party add-ins that provide a wide variety of additional functionality to Office applications and services.
@@ -33,7 +39,7 @@ Users can insert rotatable 3D models based on the subject chosen by the user.
 
 You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
-## Map Charts and 3D Maps
+## Map Charts
 Users can create and insert a customized map and charts specific to their data set in Excel. 
 
 You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
@@ -41,7 +47,7 @@ You can disable this service for your users by using Group Policy and the **Onli
 ## Office Help and Quick Starts 
 Office Help creates and publishes help experiences. It provides self-help articles and videos, called Quick Starts, on how to troubleshoot and use Office. 
 
-You can disable this service for your users by using Group Policy and the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## Office templates
 Users can download free, pre-built document templates from Office by choosing File > New in an Office app. 
