@@ -17,7 +17,7 @@ description: "Provides information to admins on how to use Group Policy settings
 The following information shows administrators what controls are available for services in Office 365 ProPlus in which Microsoft acts as data controller.<sup>1<sup/>
 
 > [!NOTE]
-> - For more information about these services, how the data is collected and processed, and the controls available to your users, see [Controller services in Office 365](https://support.office.com/article/92c234f1-dc91-4dc1-925d-6c90fc3816d8).
+> - For more information about these services and the controls available to your users, see [Microsoft's other connected services](https://support.office.com/article/92c234f1-dc91-4dc1-925d-6c90fc3816d8).
 > - Unless otherwise noted, the listed connected services are subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
 > - Users access these services through Office applications, such as Excel or PowerPoint. 
 > - Some of these services may be available in other versions of Office, such as Office Professional Plus 2016. 
@@ -34,6 +34,11 @@ Users can install Microsoft and third-party add-ins that provide a wide variety 
 
 To avoid any unintended transfer of data to Microsoft via an add-in, we recommend that you disable the use of unknown add-ins by your users. You can do this by using Group Policy and the **Block Web Add-ins** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings\Trust Center\Trusted Catalogs. 
 
+## Editor
+Editor gives users an overview of document errors and lets them choose which ones they want to fix.
+
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+
 ## Insert 3D Models
 Users can insert rotatable 3D models based on the subject chosen by the user. 
 
@@ -48,6 +53,11 @@ You can disable this service for your users by using Group Policy and the **Onli
 Office Help creates and publishes help experiences. It provides self-help articles and videos, called Quick Starts, on how to troubleshoot and use Office. 
 
 You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
+
+## Office Store
+The Office Store provides add-ins for users to extend the functionality of Office applications. 
+
+You can disable this service for your users by using Group Policy and the **Block the Office Store** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings\Trust Center\Trusted Catalogs.
 
 ## Office templates
 Users can download free, pre-built document templates from Office by choosing File > New in an Office app. 
@@ -70,6 +80,11 @@ QuickStarter builds a PowerPoint outline based on a subject provided by the user
 You can disable this service for your users by using Group Policy and the **Turn off QuickStarter** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft PowerPoint 2016\PowerPoint Options\General. 
 
 You can also use the **Send personal information** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
+
+## Researcher
+Researcher in Word helps users to find topics and incorporate reliable sources and content for research papers.
+
+You can disable this service for your users by using Group Policy and the **Online Content Options** policy setting. This policy setting can be found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools | Options | General | Service Options...\Online Content. 
 
 ## Resume Assistant 
 Resume Assistant helps users with their resume or CV by providing examples and suggestions from LinkedIn.
