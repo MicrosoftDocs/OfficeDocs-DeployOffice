@@ -22,7 +22,7 @@ If you're an IT admin, you may want to define the level of diagnostics data coll
 
 |||
 |:-----|:-----|
-|**Domain** <br/> | com.microsoft.Word  <br/> com.microsoft.Excel  <br/> com.microsoft.PowerPoint  <br/> com.microsoft.Outlook  <br/> |
+|**Domain** <br/> | com.microsoft.Word  <br/> com.microsoft.Excel  <br/> com.microsoft.Powerpoint  <br/> com.microsoft.Outlook  <br/> |
 |**Key** <br/> |DiagnosticDataTypePreference  <br/> |
 |**Data Type** <br/> |String  <br/> |
 |**Possible values** <br/> |FullDiagnosticData  <br/> BasicDiagnosticData  <br/> |
@@ -32,7 +32,7 @@ The following example sets the diagnostic data to Full for Word, Excel, PowerPoi
 
     defaults write com.microsoft.Word DiagnosticDataTypePreference -string FullDiagnosticData
     defaults write com.microsoft.Excel DiagnosticDataTypePreference -string FullDiagnosticData
-    defaults write com.microsoft.PowerPoint DiagnosticDataTypePreference -string FullDiagnosticData
+    defaults write com.microsoft.Powerpoint DiagnosticDataTypePreference -string FullDiagnosticData
     defaults write com.microsoft.Outlook DiagnosticDataTypePreference -string FullDiagnosticData
     
 
