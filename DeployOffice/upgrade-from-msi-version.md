@@ -52,7 +52,7 @@ Here’s an example of a configuration.xml file that installs the 64-bit Monthly
 
 ## Install the same language resources
 
-If there are language resources – for example, language packs, language interface packs, or proofing tools -- already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Office 365 ProPlus. To do this, add <Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
+If there are language resources – for example, language packs, language interface packs, or proofing tools – already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Office 365 ProPlus. To do this, add <Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
 
 Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Office 365 ProPlus in English, along with any existing languages on the computer, from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
@@ -79,7 +79,7 @@ The following are some additional details about using MatchPreviousMSI in your c
 
 ## Keep some Office products and uninstall all other Office products 
 
-We recommend that you uninstall any previous versions of Office, including Visio and Project, before installing the newer version. But, in certain cases, such as for application compability testing, you might need to keep a previous version installed for a limited period of time while you transition to the new version.
+We recommend that you uninstall any previous versions of Office, including Visio and Project, before installing the newer version. But, in a few cases, such as for application compatibility testing, you might need to keep a previous version installed for a limited time while you transition to the new version.
 
 To keep a particular Office product, you add an IgnoreProduct line to your configuration.xml file and you specify its product ID. Some examples of valid IDs are the following:
 - VisStd
