@@ -34,7 +34,7 @@ The following are requirements for using the RemoveMSI element in your configura
  
 ## Uninstall all Office products
 
-To uninstall all versions of Office, including Visio and Project, that are already installed on the computer, add <RemoveMSI All="True" /> to your configuration.xml file. Language resources – for example, language packs, language interface packs, or proofing tools – will also be removed.
+To uninstall all versions of Office, including Visio and Project, that are already installed on the computer, add \<RemoveMSI All="True" /> to your configuration.xml file. Language resources – for example, language packs, language interface packs, or proofing tools – will also be removed.
 
 Here’s an example of a configuration.xml file that installs the 64-bit Monthly Channel version of Office 365 ProPlus in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
@@ -52,7 +52,7 @@ Here’s an example of a configuration.xml file that installs the 64-bit Monthly
 
 ## Install the same language resources
 
-If there are language resources – for example, language packs, language interface packs, or proofing tools – already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Office 365 ProPlus. To do this, add <Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
+If there are language resources – for example, language packs, language interface packs, or proofing tools – already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Office 365 ProPlus. To do this, add \<Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
 
 Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Office 365 ProPlus in English, along with any existing languages on the computer, from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
