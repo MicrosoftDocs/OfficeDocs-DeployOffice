@@ -298,7 +298,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed. 
+Defines which Office 365 ProPlus products should not be installed. Note that OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).  
 
 ### Example
 
