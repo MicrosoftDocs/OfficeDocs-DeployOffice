@@ -63,6 +63,10 @@ For details on how to edit the configuration file, see [Configuration options fo
 </Add>  
 ```
 
+## Install the same languages from a previous MSI installation
+
+If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you install Office 365 ProPlus. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+
 
 ## Related topics
 
