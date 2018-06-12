@@ -94,7 +94,7 @@ The ID isn't version specific. All versions found on the computer will be kept. 
 
 Only full product removals are supported. For example, if you have Office Professional Plus 2013 installed, you can't uninstall everything except Excel. You either must keep or uninstall the entire product. You can only keep a previous installation of Excel if it was installed as a standalone product, not installed as part of an Office suite, like Office Professional Plus.
 
-Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Office 365 ProPlus in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office, except for Visio, on the computer.
+Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Office 365 ProPlus in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office, except for Visio Professional, on the computer.
 
 ```
 <Configuration>
