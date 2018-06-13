@@ -103,7 +103,7 @@ The following are the  *Locally Managed*  example install XML files for configur
 |Display Level="None"  <br/> |Hides the UI when installing Office 365 ProPlus  <br/> |
 |AcceptEULA="TRUE"  <br/> |Accept the License Agreement  <br/> |
    
-### Project Pro - Semi-Annual Channel - Desktops - 32-bit
+### Project Online Desktop Client - Semi-Annual Channel - Desktops - 32-bit
 
 ```
 <Configuration>
