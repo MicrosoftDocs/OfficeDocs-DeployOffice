@@ -3,7 +3,6 @@ title: "Overview of update channels for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -157,6 +156,8 @@ Here is some additional information that might be useful to know as you determin
 - If you have Visio Pro for Office 365 or Project Online Desktop Client installed on the same computer as Office 365 ProPlus, they all must use the same update channel. You can't have a mix of update channels on the same computer. 
 
 - These update channels only apply to installations on computers running Windows.
+
+- We recommended that you use the most current version of Semi-Annual Channel. But, if you have a specific business need to delay receiving a feature update from Semi-Annual Channel in January or July, you can configure Office to not receive that feature update, but still receive the most current security updates for the previous version. For more information on how to do that, see [Delay receiving feature updates from Semi-Annual Channel](delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md). For information about which versions of Semi-Annual Channel are supported and until when, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
     
 [!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
 
