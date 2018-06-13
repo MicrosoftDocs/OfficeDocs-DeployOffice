@@ -613,7 +613,7 @@ Allowed values:
 
 ### IgnoreProduct attribute (part of RemoveMSI element)
 
-If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer. 
+If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer. Used instead of the All attribute.
 
 Optional.
 
