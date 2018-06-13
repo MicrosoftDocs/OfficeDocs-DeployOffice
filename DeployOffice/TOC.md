@@ -13,7 +13,6 @@
 ## [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 # Manage updates
-## [Overview of changes to update management](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md)
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
 ## [Manage updates with Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
 ## [Change management for Office 365 clients](change-management-for-office-365-clients.md)
@@ -22,7 +21,8 @@
 ## [Release notes](https://technet.microsoft.com/office/mt465751)
 
 # Upgrade 
-## [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 ## [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
 ## [Upgrade from Office 2007](https://support.office.com/article/416c54d8-823c-4def-bb7a-6a9b14ef2745)
 ## [Upgrade from Office 2010](https://support.office.com/article/2a58999c-4d83-4e67-9fde-bc96d487105e)
