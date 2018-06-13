@@ -603,7 +603,7 @@ For more information about using RemoveMSI and its attributes, see [Remove exist
 
 ### All attribute (part of RemoveMSI element)
 
-If set to True, any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer, unless the IgnoreProduct attribute is also specified.
+If set to True, any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer.
 
 Optional. 
 
