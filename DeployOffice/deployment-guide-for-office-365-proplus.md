@@ -24,6 +24,8 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
 - [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md)
  
 - [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
+
+- [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md)
   
 - [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
   
