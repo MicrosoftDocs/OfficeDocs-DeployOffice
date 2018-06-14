@@ -16,26 +16,26 @@ description: "On April 20th, we announced some changes to better align the Offic
 
 # Overview of the upcoming changes to Office 365 ProPlus update management
 
-On April 20th, we announced some changes to better align the Office 365 ProPlus and Windows 10 update models. In that [blog post](https://go.microsoft.com/fwlink/p/?linkid=846981), we highlighted these key changes:
+On April 20th 2017, we announced some changes to better align the Office 365 ProPlus and Windows 10 update models. In that [blog post titled "Office 365 ProPlus updates"](https://go.microsoft.com/fwlink/p/?linkid=846981), we highlighted these key changes that are now in effect:
   
-- **Two updates a year.** We will reduce the Office 365 ProPlus update cadence from three to two times a year, with semi-annual feature updates to Windows 10 and Office 365 ProPlus planned for March and September.
+- **Two updates a year.** We have reduced the Office 365 ProPlus update cadence from three to two times a year, with semi-annual feature updates to Windows 10 and Office 365 ProPlus planned for March and September.
     
-- **18 months of support.** We will extend the support period for Office 365 ProPlus semi-annual feature updates from 12 to 18 months (starting from the initial release) so IT professionals can choose to update once or twice a year.
+- **18 months of support.** We have extended the support period for Office 365 ProPlus semi-annual feature updates from 12 to 18 months (starting from the initial release) so IT professionals can choose to update once or twice a year.
     
-As part of these changes, Office 365 ProPlus is changing the names of its update channels to make them more descriptive.
+As part of these changes, Office 365 ProPlus has changed the names of its update channels to make them more descriptive.
   
-All these changes will take effect in September 2017.
+All these changes went into effect in September 2017.
   
 > [!NOTE]
 > These changes also apply to Visio Pro for Office 365 and Project Online Desktop Client. 
   
 The following information is intended to help you understand these upcoming changes and understand what steps, if any, you need to take when it comes to updating Office 365 ProPlus on Windows 10.
   
-- [The names of the Office 365 ProPlus update channels are changing](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Names)
+- [The names of the Office 365 ProPlus update channels have changed](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Names)
     
-- [The default enterprise release schedule for Office 365 ProPlus is changing to twice a year](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Schedule)
+- [The default enterprise release schedule for Office 365 ProPlus have changed to twice a year](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Schedule)
     
-- [The support duration for Semi-Annual Channel releases is increasing](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Duration)
+- [The support duration for Semi-Annual Channel releases has increased](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Duration)
     
 - [The purpose of each Office 365 ProPlus update channel stays the same](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Purpose)
     
@@ -48,7 +48,7 @@ The following information is intended to help you understand these upcoming chan
 <a name="BKMK_Names"> </a>
 ## The names of the Office 365 ProPlus update channels are changing
 
-We heard your feedback and we are making the names for our update channels more descriptive. 
+We heard your feedback and we made the names for our update channels more descriptive. 
   
 Here is a list of the name changes for Office 365 ProPlus. We'll start using the new names in September 2017. 
   
@@ -59,38 +59,38 @@ Here is a list of the name changes for Office 365 ProPlus. We'll start using the
 |Semi-Annual Channel  <br/> |Deferred Channel  <br/> |
    
 > [!NOTE]
-> We've made some slight changes to the names for Semi-Annual Channel. We've changed "(Pilot)" to "(Targeted)" and we've removed the "(Broad)" designation from the new name for Deferred Channel. These names will be aligned across Windows 10 and Office 365 ProPlus feature update releases. <br/> <br/> For information about upcoming changes to the names of Windows 10 feature update releases, [read this blog post](http://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/). 
+> We made some slight changes to the names for Semi-Annual Channel. We've changed "(Pilot)" to "(Targeted)" and we've removed the "(Broad)" designation from the new name for Deferred Channel. These names will be aligned across Windows 10 and Office 365 ProPlus feature update releases. <br/> <br/> For information about upcoming changes to the names of Windows 10 feature update releases, [read this blog post](http://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/). 
   
 <a name="BKMK_Schedule"> </a>
 ## The default enterprise release schedule for Office 365 ProPlus is changing to twice a year
 
-Currently, Office 365 ProPlus gets feature updates in First Release for Deferred Channel in February, June, and October. Those feature updates are then available in Deferred Channel four months later.
+Previously, Office 365 ProPlus recieved feature updates in First Release for Deferred Channel in February, June, and October. Those feature updates are then available in Deferred Channel four months later.
   
-Starting in September 2017, Office 365 ProPlus will get feature updates in Semi-Annual Channel (Targeted) twice a year, in March and September. Those feature updates will then be available in Semi-Annual Channel four months later, in July and January.
+Starting in September 2017, Office 365 ProPlus now recives feature updates in Semi-Annual Channel (Targeted) twice a year, in March and September. Those feature updates will then be available in Semi-Annual Channel four months later, in July and January.
   
-Windows 10 also plans to target the March and September time frames for feature updates to Windows 10 in order to provide customers with a more predictable, consistent release schedule. The first alignment of Office 365 ProPlus and Windows 10 semi-annual releases is currently planned for September 2017. 
+Windows 10 also targets the March and September time frames for feature updates to Windows 10 in order to provide customers with a more predictable, consistent release schedule.
   
-Office 365 ProPlus will continue to receive security updates and quality updates monthly, if necessary, for these update channels on the second Tuesday of each month. Note that Semi-Annual Channel only gets a quality update if there is a critical customer issue that needs to be fixed. There are no changes to the Office 365 ProPlus release schedule for Monthly Channel.
+Office 365 ProPlus continues to receive security updates and quality updates monthly, if necessary, for these update channels on the second Tuesday of each month. Note that Semi-Annual Channel only gets a quality update if there is a critical customer issue that needs to be fixed. There are no changes to the Office 365 ProPlus release schedule for Monthly Channel.
   
 > [!IMPORTANT]
-> Office released a new Deferred Channel and First Release for Deferred Channel on June 13, 2017. The new semi-annual schedule begins on September 12, 2017. This is a month earlier than the previously planned October release, so plan accordingly. For more information, see [Upcoming schedule for Office 365 ProPlus releases](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Upcoming) and [Recommended next steps](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Steps). 
+> Office released a new Deferred Channel and First Release for Deferred Channel on June 13, 2017. The new semi-annual schedule began on September 12, 2017. This was a month earlier than the previously planned October release.For more information, see [Upcoming schedule for Office 365 ProPlus releases](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Upcoming) and [Recommended next steps](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Steps). 
   
 <a name="BKMK_Duration"> </a>
-## The support duration for Semi-Annual Channel releases is increasing
+## The support duration for Semi-Annual Channel releases has increased
 
-With the change to a twice-a-year release schedule, the semi-annual feature update releases of Office 365 ProPlus will now be supported for 18 months, instead of 12 months, starting from the initial release.
+With the change to a twice-a-year release schedule, the semi-annual feature update releases of Office 365 ProPlus is now supported for 18 months, instead of 12 months, starting from the initial release.
   
 A new version, with feature updates, will be released to Semi-Annual Channel (Targeted) in March and September. Four months later, that version, with those feature updates, will be released in Semi-Annual Channel and will be supported for the next 14 months. For example, a new version of Semi-Annual Channel (Targeted) will be released in March 2018. In July 2018, that version will be made available in Semi-Annual Channel and will be supported until September 2019.
   
 This change provides more time and flexibility for IT Pros to deploy releases. For example, customers who want to update once a year will be able to do so with the extended support duration on Semi-Annual Channel. For customers who want to get new features as quickly as possible, we will continue to offer an update channel that provides monthly feature updates.
   
-System Center Configuration Manager will support Office 365 ProPlus and Windows 10 across their 18 month support period.
+System Center Configuration Manager will continue to support Office 365 ProPlus and Windows 10 across their 18 month support period.
   
 <a name="BKMK_Purpose"> </a>
 ## The purpose of each Office 365 ProPlus update channel stays the same
 
 
-The names are changing, but the purpose of each update channel remains the same. For example, Monthly Channel, formerly named Current Channel, is still the release that provides new features to Office 365 ProPlus approximately every month. 
+The names may have changed, but the purpose of each update channel remains the same. For example, Monthly Channel, formerly named Current Channel, is still the release that provides new features to Office 365 ProPlus approximately every month. 
   
 The following table provides a summary of the purpose, target audience, and release frequency of each update channel.
   
@@ -120,7 +120,7 @@ If you manage the update process by downloading updated versions of Office 365 P
 <a name="BKMK_Steps"> </a>
 ## Recommended next steps
 
-If you are currently using Deferred Channel, and doing enterprise pilots and application validation on First Release for Deferred Channel, be sure to review the [Upcoming schedule for Office 365 ProPlus releases](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Upcoming). Be aware that there will only be three months, instead of four months, to do enterprise pilots and application validation on the version of First Release for Deferred Channel that was released on June 13, 2017. 
+If you are currently using Deferred Channel, and doing enterprise pilots and application validation on First Release for Deferred Channel, be sure to review the [Upcoming schedule for Office 365 ProPlus releases](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Upcoming). 
   
 If you've just started deploying Office 365 ProPlus, we recommend that you have less than 10% of your users on First Release for Deferred Channel to do your enterprise pilots and application validation. 
   
@@ -141,12 +141,12 @@ For deployment assistance with Office 365 ProPlus or Windows 10, [contact FastTr
 <a name="BKMK_Upcoming"> </a>
 ## Upcoming schedule for Office 365 ProPlus releases
 
-The change to the Office 365 ProPlus release cadence begins with the release currently scheduled for September 12, 2017. 
+The change to the Office 365 ProPlus release cadence began with the release made September 12, 2017. 
   
 > [!IMPORTANT]
-> Office released a new Deferred Channel and First Release for Deferred Channel on June 13, 2017. The first version of Semi-Annual Channel (Targeted) is scheduled to be released on September 12, 2017. This is a month earlier than the previously planned October release, so plan accordingly. The first Semi-Annual Channel is scheduled to be released on January 9, 2018. For more information, see the schedule listed below and [Recommended next steps](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Steps). 
+> Office released a new Deferred Channel and First Release for Deferred Channel on June 13, 2017. The first version of Semi-Annual Channel (Targeted) was released on September 12, 2017. This was a month earlier than the previously planned October release. The first Semi-Annual Channel was released on January 9, 2018. For more information, see the schedule listed below and [Recommended next steps](overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md#BKMK_Steps). 
   
-Here's a schedule of key upcoming dates for Office 365 ProPlus releases, separated by update channel. All dates are approximate and not all dates are listed.
+Here's a schedule of key previous and upcoming dates for Office 365 ProPlus releases, separated by update channel. All dates are approximate and not all dates are listed.
   
 |**Date**|**First Release for Deferred Channel  <br/> Semi-Annual Channel (Targeted)**|**Deferred Channel  <br/> Semi-Annual Channel**|**IT Pro action to take**|
 |:-----|:-----|:-----|:-----|
