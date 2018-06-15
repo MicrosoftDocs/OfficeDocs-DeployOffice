@@ -54,24 +54,24 @@ You can change the options by customizing the configuration files, as shown late
 
 Because you're deploying Office 365 ProPlus from a local source, you have to create folders to store the Office installation files. You'll create one parent folder and two child folders, one for the pilot group, with the version of Office from Semi-Annual Channel (Targeted), and one for the broad group, with version of Office from Semi-Annual Channel. This structure is similar to the one that the Office Content Delivery Network (CDN) uses.
   
-**Create the following folders:**
+1. Create the following folders:
   
-- **\\\Server\Share\O365**: Stores the ODT and the configuration files that define how to download and deploy Office.
-- **\\\Server\Share\O365\SACT**: Stores the Office 365 ProPlus installation files from Semi-Annual Channel (Targeted).
-- **\\\Server\Share\O365\SAC**: Stores the Office 365 ProPlus installation files from Semi-Annual Channel.
+	- **\\\Server\Share\O365**: Stores the ODT and the configuration files that define how to download and deploy Office.
+	- **\\\Server\Share\O365\SACT**: Stores the Office 365 ProPlus installation files from Semi-Annual Channel (Targeted).
+	- **\\\Server\Share\O365\SAC**: Stores the Office 365 ProPlus installation files from Semi-Annual Channel.
    
 These folders will include all the Office installation files you need to deploy. 
   
-**Assign Read permissions for your users**
-  
-Installing Office from a shared folder requires only that the user have Read permission for that folder, so you should assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](http://go.microsoft.com/fwlink/p/?LinkId=184710)
+2. Assign Read permissions for your users. 
+
+	Installing Office from a shared folder requires only that the user have Read permission for that folder, so you should assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](http://go.microsoft.com/fwlink/p/?LinkId=184710)
   
 > [!NOTE]
 > In this article, we have just one shared folder on the network, but many organizations make the Office installation files available from multiple locations. Using multiple locations can help improve availability and minimize the effect on network bandwidth. For example, if some of your users are located in a branch office, you can create a shared folder in the branch office. Those users can then install Office from the local network. You can use the Distributed File System (DFS) role service in Windows Server to create a network share that is replicated to multiple locations. For more information, see [DFS Management](https://technet.microsoft.com/library/cc732006.aspx). 
   
 ## Step 3: Download the Office Deployment Tool
   
-Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\Server\Share\O365 (or the folder you created above). If you've already downloaded the ODT, make sure you have the latest version.
+Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
   
 After downloading the file, run the self-extracting executable file, which contains the ODT executable (setup.exe) and a sample configuration file (configuration.xml).
   
@@ -82,7 +82,7 @@ To download and deploy Office 365 ProPlus to the pilot group, you create a confi
 > [!NOTE]
 > These steps have you use a text editor to create the configuration files. You can also create configuration files using the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. Note that this tool is still in preview and is subject to change.
   
-Using a text editor, copy and paste the following into a text file and save it as **config-broad-SACT.xml** in the **\\\Server\Share\O365** folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-pilot-SACT.xml** in the **\\\Server\Share\O365** folder.
   
 ```
 <Configuration> 
@@ -119,7 +119,7 @@ Note that the Office installation files and Office updates will come from Semi-A
   
 ## Step 3: Create a configuration file for the broad group
   
-Using a text editor, copy and paste the following into a text file and save it as **config-pilot-SAC.xml** in the \\\Server\Share\O365 folder.
+Using a text editor, copy and paste the following into a text file and save it as **config-broad-SAC.xml** in the \\\Server\Share\O365 folder.
   
 ```
 <Configuration> 
@@ -152,7 +152,7 @@ For more information about the configuration options, see [Configuration options
   
 From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the pilot group:
   
- `\\server\share\O365\setup.exe /download \\server\share\O365\config-group2-SACT.xml`
+ `\\server\share\O365\setup.exe /download \\server\share\O365\config-pilot-SACT.xml`
   
 The files should begin downloading immediately. After running the command, go to **\\\server\share\O365\SACT**  and look for an Office folder with the appropriate files in it.
 
@@ -172,20 +172,20 @@ To deploy Office, we'll provide commands that users can run from their client co
     
 From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
   
- `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-group2-SACT.xml`
+ `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-pilot-SACT.xml`
  
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
 
 After running the command, the Office installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and %windir%\temp directories.
 
-After Office has deployed to the pilot group, you can test Office in your environment, particularly with your hardware and device drivers. For more details, see [Choose your update channels](plan-office-365-proplus#step-3---choose-your-update-channels).
+After Office has deployed to the pilot group, test Office in your environment, particularly with your hardware and device drivers. For more details, see [Choose your update channels](plan-office-365-proplus#step-3---choose-your-update-channels).
 
 ## Step 7: Deploy Office to the broad group
   
 After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
   
- `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-group1-SAC.xml`
+ `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-broad-SAC.xml`
   
 This command is the same as the pilot group, except that it references the configuration file for the broad group.
 
