@@ -52,7 +52,7 @@ You can change the options by customizing the configuration files, as shown late
 
 ## Step 1: Download the Office Deployment Tool 
 
-We'll use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
+You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
   
 1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
   
@@ -133,7 +133,7 @@ For more information about the configuration options, see [Configuration options
   
 ## Step 5: Deploy Office to the pilot group
 
-To deploy Office, we'll provide commands that users can run from their client computers. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\O365**).
+To deploy Office, you provide commands that users can run from their client computers. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\O365**).
 
 From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
   
