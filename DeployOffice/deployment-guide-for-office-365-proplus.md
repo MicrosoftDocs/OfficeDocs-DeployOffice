@@ -56,7 +56,7 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 - [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 
-- [Version and build numbers of update channel releases] (https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+- [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
 
 ## Best practices

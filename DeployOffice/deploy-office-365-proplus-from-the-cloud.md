@@ -90,7 +90,7 @@ This configuration file is used to deploy Office to the group 1 users. Here's mo
 |Display Level="None"  <br/> |Installs Office silently, without displaying the user interface.  <br/> |
 |AcceptEULA="TRUE"  <br/> |When installing Office, accepts the Microsoft Software License Terms automatically  <br/> |
    
-Note that the Office installation files and Office updates will come from Semi-Annual Channel. For more details on the most recent version of Office based on the different update channels, see [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751.aspx).
+Note that the Office installation files and Office updates will come from Semi-Annual Channel. For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
   
  **Step 4: Create a configuration file for group 2**
   

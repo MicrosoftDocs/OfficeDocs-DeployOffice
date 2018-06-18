@@ -17,8 +17,8 @@
 ## [Manage updates with Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
 ## [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 ## [Overview of the update process](overview-of-the-update-process-for-office-365-proplus.md)
-## [Update history](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
-## [Release notes](https://technet.microsoft.com/office/mt465751)
+## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
 # Upgrade 
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
@@ -71,7 +71,7 @@
 ## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
 ## [64-bit upgrade](mac/office-2016-for-mac-upgrade-to-64-bit.md?toc=/deployoffice/toc.json)
 ## [Update history](https://support.office.com/article/700cab62-0d67-4f23-947b-3686cb1a8eb7)
-## [Release notes](https://support.office.com/article/ed2da564-6d53-4542-9954-7e3209681a41)
+## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
  
 
 
