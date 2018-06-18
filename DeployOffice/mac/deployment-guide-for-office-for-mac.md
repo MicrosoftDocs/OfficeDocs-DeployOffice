@@ -40,8 +40,6 @@ In addition to this guide, other information is available to help admins with Of
     
 - [Office Support](https://support.office.com), for help on how to use Office 2016 for Mac
     
-- [Outlook 2016 for Mac Administrator's Guide](https://technet.microsoft.com/library/fbb0c902-c67c-494e-9cfb-ddc317477f26.aspx), for information on how to deploy Outlook 2016 for Mac
-    
 - [Office for Mac blog](https://blogs.office.com/mac/), for news about Office for Mac
     
 

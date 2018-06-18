@@ -53,7 +53,7 @@ It is important to note that if the customer is patching from an on premises sou
   
  **Steps for re-running the ODT Setup.exe with new Install XML to rollback**
   
-1. Identify the version of Office365 ProPlus (version numbers can be found at [Version and build numbers of update channel releases for Office 365 clients](https://technet.microsoft.com/en-us/library/mt592918.aspx)).
+1. Identify the version of Office365 ProPlus (version numbers can be found at [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)).
     
 2. Copy ODT setup.exe and the new install XML file to the appropriate source distribution location to be deployed to the client machines.
     
@@ -84,7 +84,7 @@ The following table represents additional command line switches that you can inc
    
  **Steps for using OfficeC2RClient.exe to rollback**
   
-1. Identify the version of Office365 ProPlus (version numbers can be found at [Version and build numbers of update channel releases for Office 365 clients](https://technet.microsoft.com/en-us/library/mt592918.aspx)).
+1. Identify the version of Office365 ProPlus (version numbers can be found at [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)).
     
 2. From an elevated command prompt with administrator privileges, run the following command: 
     

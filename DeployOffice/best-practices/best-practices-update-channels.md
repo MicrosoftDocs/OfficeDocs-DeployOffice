@@ -51,9 +51,9 @@ The following links provide detailed information about update channels:
   
 - [Overview of update channels for Office 365 ProPlus](https://technet.microsoft.com/en-us/library/mt455210.aspx)
     
-- [Version and build numbers of update channel releases for Office 365 clients](https://technet.microsoft.com/en-us/library/mt592918.aspx)
+- [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
     
-- [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751)
+- [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
     
 - [What's new and improved in Office 2016 for Office 365](https://support.office.com/en-us/article/What-s-new-and-improved-in-Office-2016-for-Office-365-95c8d81d-08ba-42c1-914f-bca4603e1426?ui=en-US&amp;rs=en-US&amp;ad=US)
     
