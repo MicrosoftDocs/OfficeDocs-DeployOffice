@@ -213,7 +213,7 @@ Not all changes have the same impact on your users or require action. Some are p
 |:-----|:-----|:-----|:-----|
 |**Type of change** <br/> | Feature updates <br/>  New features or applications <br/>  Deprecated features <br/> | Client hotfixes for issues <br/> | Security patches <br/> |
 |**Advance notice?** <br/> |30 days notice for changes that require action  <br/> |No, these are included in the monthly build for all channels  <br/> |No, these are included in the monthly build for all channels  <br/> |
-|**Communication channel** <br/> | Message Center <br/> [Office 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community <br/> | TechNet [Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkID=626090) page <br/> | Security bulletin or CVE <br/> |
+|**Communication channel** <br/> | Message Center <br/> [Office 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community <br/> | [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
 |**Requires tenant admin action?** <br/> |Sometimes  <br/> |Rarely  <br/> |Rarely  <br/> |
 |**What kind of action?** <br/> | Change settings <br/>  Communicate changes to users <br/>  Validate customizations <br/> | Change admin settings <br/> ||
 |**Requires testing?** <br/> |Rarely - check business critical Add-ins  <br/> |Sometimes - testing the fix against processes or customizations  <br/> |Rarely  <br/> |
@@ -248,7 +248,7 @@ Responsibility for managing change is shared between Microsoft and you as the ad
   
 Understand the roles both Microsoft and you need to play before, during, and after a change occurs to the service.
   
-Review what's included in each release on the [Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkId=626090) page on TechNet.
+Review what's included in each release on the [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090) page.
   
 ### Balance of Responsibility
 
@@ -398,5 +398,5 @@ Use the following methods to configure which channels are used by which client c
   
 [Microsoft cloud IT architecture resources](https://go.microsoft.com/fwlink/?LinkId=690243)
   
-[Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkId=626090)
+[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
 

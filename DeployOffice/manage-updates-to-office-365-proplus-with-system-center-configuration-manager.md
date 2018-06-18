@@ -41,7 +41,7 @@ To enable Configuration Manager to manage Office 365 client updates, you need th
     
 - An Office 365 client - Office 365 ProPlus, Visio Pro for Office 365, Project Online Desktop Client, or Office 365 Business
     
-- Supported channel version for Office 365 client. For more details, see [Version and build numbers of update channel releases](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+- Supported channel version for Office 365 client. For more details, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
     
 - Windows Server Update Services (WSUS) 4.0
     

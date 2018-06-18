@@ -164,9 +164,9 @@ Here is some additional information that might be useful to know as you determin
 
 ## Related topics
 
-[Version and build numbers of update channel releases](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+[Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
   
 [Change management for Office 365 clients](change-management-for-office-365-clients.md)
   
-[Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkId=626090)
+[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
 
