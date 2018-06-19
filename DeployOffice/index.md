@@ -21,7 +21,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/getstarted_office.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-GetStarted-400x140.svg" alt="A pedestrian symbol and a gear symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -40,7 +40,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/office_install.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-Deploy-400x140.svg" alt="A box within a box and an arrow - deploy symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -59,7 +59,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/fast_track.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-FastTrack-400x140.svg" alt="A checklist over a gear symbol, with a green checkmark" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -78,7 +78,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/manage_updates.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-ManageUpdates-400x140.svg" alt="A computer with a download arrow on the screen" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -97,7 +97,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/DeployOffice/images/office-2016-for-mac.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-Mac-400x140.svg" alt="A book symbol and a computer symbol with a green checkmark on it" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -116,7 +116,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/DeployOffice/images/office-2016.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-2016-400x140.svg" alt="A pedestrian symbol with a question mark, lightbulb, and check mark symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
