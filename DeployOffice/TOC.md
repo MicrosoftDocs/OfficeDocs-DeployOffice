@@ -23,7 +23,6 @@
 # Upgrade 
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
-## [Plan your upgrade from Office 365 ProPlus 2013 to 2016](plan-your-upgrade-from-office-365-proplus-2013-to-2016.md)
 ## [Upgrade from Office 2007](https://support.office.com/article/416c54d8-823c-4def-bb7a-6a9b14ef2745)
 ## [Upgrade from Office 2010](https://support.office.com/article/2a58999c-4d83-4e67-9fde-bc96d487105e)
 

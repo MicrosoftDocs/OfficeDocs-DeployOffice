@@ -12,8 +12,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 733ff07f-8137-46e6-9904-70f59d716f6f
 description: "Office 2016 is the latest version of Microsoft's productivity apps, such as Word, PowerPoint, Excel, and Microsoft Outlook. You can provide the Office 365 ProPlus users in your organization with the new and enhanced features of Office 2016 by upgrading those users from the Office 2013 version of Office 365 ProPlus to the Office 2016 version."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Plan your upgrade from Office 365 ProPlus 2013 to 2016
