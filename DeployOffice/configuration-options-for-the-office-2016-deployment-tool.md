@@ -29,7 +29,7 @@ This configuration file includes the most-commonly used elements and attributes,
 
 ```
 <Configuration>
-  <Add SourcePath="\\Server\Share" 
+  <Add> SourcePath="\\Server\Share" 
        OfficeClientEdition="32"
        Channel="Broad" >
     <Product ID="O365ProPlusRetail">
@@ -69,7 +69,7 @@ Defines the products and languages to download or install
 ### Example
 
 ```
-<Add SourcePath="\\Server\Share" 
+<Add> SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
      Version="16.0.8201.2193"
@@ -134,7 +134,7 @@ Example values:
 #### Example 
 
 ```
-<Add SourcePath="\\Server\Share" 
+<Add> SourcePath="\\Server\Share" 
      DownloadPath="\\serverb\share\"
      OfficeClientEdition="32"
      Channel="Broad" >
@@ -168,7 +168,7 @@ Allowed values:
 #### Example 
 
 ```
-<Add SourcePath="\\Server\Share" 
+<Add> SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
      AllowCdnFallback="True">
@@ -227,7 +227,7 @@ To automatically install the same languages as the operating system, use "MatchO
 ```
 
 ```
-<Add SourcePath="\\Server\Share" 
+<Add> SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
      AllowCdnFallback="True">
@@ -305,7 +305,7 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 ### Example
 
 ```
-<Add SourcePath="\\Server\Share" 
+<Add> SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" >
   <Product ID="O365ProPlusRetail">
