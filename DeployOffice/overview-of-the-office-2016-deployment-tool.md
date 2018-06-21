@@ -58,7 +58,7 @@ In this example, the configuration file downloads the installation files for a 3
   
 ```
 <Configuration> 
-  <Add SourcePath="\\server\share" OfficeClientEdition="32"> 
+  <Add> SourcePath="\\server\share" OfficeClientEdition="32"> 
    <Product ID="O365ProPlusRetail" > 
      <Language ID="en-us" />      
    </Product> 
@@ -91,7 +91,7 @@ To download from a local source, follow the steps for downloading Office with th
   
 ```
 <Configuration> 
-  <Add SourcePath="\\serverb\share" OfficeClientEdition="32" Version="16.0.6741.2056" DownloadPath="\\servera\share"> 
+  <Add> SourcePath="\\serverb\share" OfficeClientEdition="32" Version="16.0.6741.2056" DownloadPath="\\servera\share"> 
     <Product ID="O365ProPlusRetail" > 
       <Language ID="en-us" />      
     </Product> 
@@ -115,7 +115,7 @@ In this example, the configuration file installs a 32 bit English edition of Off
   
 ```
 <Configuration> 
-  <Add SourcePath="\\Server\share" OfficeClientEdition="32">
+  <Add> SourcePath="\\Server\share" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
       <Language ID="en-us" />        
       <ExcludeApp ID="Publisher" />
@@ -164,7 +164,7 @@ This article does not cover all the issues related to managing updates for Offic
 When installing Office 365 ProPlus, you can exclude specific products. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus products except Publisher:
   
 ```
-<Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
+<Add> SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" >
       <Language ID="en-us" />
       <ExcludeApp ID="Publisher" />
@@ -195,7 +195,7 @@ For more information about the options for excluding or removing apps, see [Conf
 OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
 
 ```
-<Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
+<Add> SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" >
       <Language ID="en-us" />
       <ExcludeApp ID="OneDrive" />
@@ -212,7 +212,7 @@ For example, this configuration file installs the 32-bit edition of Office 365 P
   
 ```
 <Configuration> 
-  <Add OfficeClientEdition="32">
+  <Add> OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
       <Language ID="MatchOS" />        
     </Product> 
@@ -240,7 +240,7 @@ In this example, the configuration file installs the French and Japanese languag
   
 ```
 <Configuration>
-  <Add OfficeClientEdition="32">
+  <Add> OfficeClientEdition="32">
     <Product ID="LanguagePack">
       <Language ID="fr-fr" />
       <Language ID="ja-jp" />
@@ -275,7 +275,7 @@ In this example, the configuration file creates an App-V package from a 32-bit E
   
 ```
 <Configuration> 
- <Add SourcePath="\\Server\share" OfficeClientEdition="32">
+ <Add> SourcePath="\\Server\share" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
       <Language ID="en-us" />        
       <ExcludeApp ID="Publisher" />
