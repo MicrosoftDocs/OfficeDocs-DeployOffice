@@ -52,7 +52,7 @@ For details on how to edit the configuration file, see [Configuration options fo
 
 ### Example
 ```
-<Add SourcePath="\\Server\Share" 
+<Add> SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
      AllowCdnFallback="True">
