@@ -115,7 +115,11 @@ This configuration file is used to download Office 365 ProPlus installation file
 - Display Level="None": Installs Office silently, without displaying the user interface
 - AcceptEULA="TRUE": When installing Office, accepts the Microsoft Software License Terms automatically  
    
+<<<<<<< HEAD
 Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
+=======
+Note that the Office installation files and Office updates will come from Semi-Annual Channel. For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
+>>>>>>> master
   
 ## Step 3: Create a configuration file for the broad group
   

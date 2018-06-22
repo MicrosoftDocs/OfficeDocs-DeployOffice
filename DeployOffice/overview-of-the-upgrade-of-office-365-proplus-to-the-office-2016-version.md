@@ -10,8 +10,8 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 7655b5cb-89ae-4a08-9621-e5af1b77cfe1
 description: "Provides information about the upgrade of Office 365 ProPlus to the Office 2016 version, including criteria for the upgrade and the steps taken during upgrade."
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Overview of the upgrade of Office 365 ProPlus to the Office 2016 version

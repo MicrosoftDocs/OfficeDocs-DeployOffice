@@ -99,9 +99,15 @@ This configuration file is used to deploy Office to the pilot group. Here's more
 - Display Level="None": Installs Office silently, without displaying the user interface
 - AcceptEULA="TRUE": When installing Office, accepts the Microsoft Software License Terms automatically  
    
+<<<<<<< HEAD
 Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
    
 ## Step 3: Create a configuration file for the broad group
+=======
+Note that the Office installation files and Office updates will come from Semi-Annual Channel. For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
+  
+ **Step 4: Create a configuration file for group 2**
+>>>>>>> master
   
 Using a text editor, copy and paste the following into a text file and save it as **config-broad-SAC.xml** in the \\\\Server\Share\O365 folder.
   
