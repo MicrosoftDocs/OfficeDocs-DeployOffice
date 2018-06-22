@@ -148,9 +148,6 @@ If you have a volume licensed version of Visio 2016 or Project 2016 that uses th
 
 ## Related topics
 
-
-[What's new: Deploying Office 365 ProPlus in the enterprise](what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
-  
 [Project 2016 - Deployment Guide for Admins](https://technet.microsoft.com/library/mt599788%28v=office.16%29.aspx)
   
 [Visio 2016 - Deployment Guide for Admins](https://technet.microsoft.com/library/mt599789%28v=office.16%29.aspx)

@@ -38,10 +38,6 @@ The following articles provide deeper technical information on specific areas of
 
 [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](https://technet.microsoft.com/library/mt712177%28v=office.16%29.aspx)
   
-### What's new to help me plan and manage an Office 365 ProPlus deployment?
-
-[What's new to help admins deploy and manage Office 365 ProPlus](https://technet.microsoft.com/en-us/library/mt422980.aspx)
-  
 ### What's new to help me plan and manage an Office 2016 for Mac deployment?
 
 [What's new for admins in Office 2016 for Mac](https://technet.microsoft.com/en-us/library/mt346044%28v=office.16%29.aspx)
