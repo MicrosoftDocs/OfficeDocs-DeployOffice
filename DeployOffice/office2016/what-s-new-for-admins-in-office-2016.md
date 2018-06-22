@@ -50,11 +50,9 @@ Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admi
 IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](https://technet.microsoft.com/library/92a8dc04-47c7-4946-83ee-4c0ecaff440a(v=office.16).aspx).
   
 ## Related topics
+
 [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
   
 [Office Training Center](https://support.office.com/office-training-center)
-
-[What's new for administrators in Outlook 2016 for Windows](https://technet.microsoft.com/library/cc179110(v=office.16).aspx)
   
-[What's new: Deploying Office 365 ProPlus in the enterprise](/deployoffice/what-s-new-deploying-office-365-proplus-in-the-enterprise)
 

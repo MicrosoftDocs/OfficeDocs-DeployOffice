@@ -115,7 +115,3 @@ The following table lists features that are changed or removed in Word 2016.
 ## Related topics
 [What's new for admins in Office 2016](what-s-new-for-admins-in-office-2016.md)
 
-[What's new for administrators in Outlook 2016 for Windows](https://technet.microsoft.com/library/cc179110(v=office.16).aspx)
-  
-[What's new: Deploying Office 365 ProPlus in the enterprise](..//what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
-
