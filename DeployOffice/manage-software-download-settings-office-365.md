@@ -9,9 +9,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- LIL_Placement
+ms.custom: Ent_Office_ProPlus
 ms.assetid: c13051e6-f75c-4737-bc0d-7685dcedf360
 description: "Provides Office 365 admins with information to help them configure software download settings in the Office 365 admin center."
 ---
@@ -59,6 +57,5 @@ After you download the software, you can use your existing software deployment t
     
 - By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office Deployment Tool to deploy Office to your users without those apps.
     
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 

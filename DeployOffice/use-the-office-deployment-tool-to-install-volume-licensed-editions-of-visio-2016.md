@@ -11,11 +11,8 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 82691bd7-a3d5-47ca-8d8a-0ee43ec2c01f
-
 description: "You can use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016 on the same computer with a Click-to-Run version of Office 2016. For example, you can install a volume licensed edition of Visio Standard 2016 on the same computer with Office 365 ProPlus."
 ---
 
@@ -60,7 +57,6 @@ Then, use the Office Deployment Tool to download and install Visio or Project.
 
 If you're using [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md) with Office 365 ProPlus, you need to be using at least Version 1701 of Office 365 ProPlus in order to install a volume licensed edition of Visio 2016 or Project 2016 on the same computer.
   
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 ## Related topics
 [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](https://technet.microsoft.com/library/mt712177%28v=office.16%29.aspx)

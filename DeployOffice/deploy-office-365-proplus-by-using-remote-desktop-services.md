@@ -11,9 +11,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: af9d7621-8c2c-4181-84b4-27778b1e7920
 
 description: "If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Office 365 ProPlus on those computers. But, you have to use the Office Deployment Tool and enable shared computer activation to do the installation."
@@ -120,7 +118,6 @@ Here are the basic steps of how to configure RDS to deploy Office 365 ProPlus on
     
 After you've completed all the RDS configuration steps, users can connect to any of the virtual machines and run Office 365 ProPlus.
   
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 ## Related topics
 <a name="VM"> </a>
