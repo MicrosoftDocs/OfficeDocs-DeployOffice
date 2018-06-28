@@ -55,9 +55,5 @@ Office 365ProPlus uses the Office Licensing Service (OLS) to activate. It requir
 ### How can I assess if my current add-ins, macros, and complex documents will work in Office 365 ProPlus?
 
 Office Telemetry is a compatibility monitoring framework to help reduce the time and risks of an Office upgrade. See [Best practices: Office Telemetry](best-practices-office-telemetry.md).
-  
-### I'm currently running Office 365 ProPlus 2013. How does the upgrade process work to upgrade to the Office 2016 suite?
-
-[Overview of the upgrade of Office 365 ProPlus to the Office 2016 version](https://technet.microsoft.com/EN-US/library/mt656689.aspx)
-  
+    
 
