@@ -11,9 +11,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 836f882c-8ff6-4f19-8b24-0212e0111c94
 
 description: "Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For example, several nurses at a hospital connect to the same remote server to use their applications or a group of workers share a computer at a factory."
@@ -124,7 +122,6 @@ To configure licensing token roaming, you can use either the Office Deployment T
   
 
 
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
    
 ## Related topics
 [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)

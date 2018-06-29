@@ -8,9 +8,7 @@ ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 description: "Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
 ---
 
@@ -61,8 +59,7 @@ The user can then choose one of the available options to reactivate Office 365 P
 
 If the user hasn't been assigned a license, and they try to use Office 365 ProPlus on a computer where it's installed, Office will be in reduced functionality mode. Also, the user will be prompted to sign in and activate every time they open an Office app, such as Word or Excel.
   
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
-   
+ 
 
 ## Related topics
 

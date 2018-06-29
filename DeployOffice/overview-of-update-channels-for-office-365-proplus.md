@@ -10,9 +10,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
+ms.custom: Ent_Office_ProPlus
 ms.assetid: 9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4
 
 description: "One of the benefits of Office 365 ProPlus is that Microsoft can provide new features for Office apps on a regular basis, through monthly updates. However, as the admin who deploys Office 365 ProPlus to the users in your organization, you might want to have more control over how often your users get these new features. For the Office 2016 version of Office 365 ProPlus, Microsoft provides you three options, called update channels, to control how often Office 365 ProPlus is updated with new features. Here's an overview of the three options."
@@ -159,7 +157,6 @@ Here is some additional information that might be useful to know as you determin
 
 - We recommended that you use the most current version of Semi-Annual Channel. But, if you have a specific business need to delay receiving a feature update from Semi-Annual Channel in January or July, you can configure Office to not receive that feature update, but still receive the most current security updates for the previous version. For more information on how to do that, see [Delay receiving feature updates from Semi-Annual Channel](delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md). For information about which versions of Semi-Annual Channel are supported and until when, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
     
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
 
 
 ## Related topics
