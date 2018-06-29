@@ -60,6 +60,5 @@ The following articles provide deeper technical information on specific areas of
 
 [Overview of shared computer activation for Office 365 ProPlus](https://technet.microsoft.com/en-us/library/dn782860.aspx)
   
-### I'm currently running Office 365 ProPlus 2013. What planning needs to be done to upgrade to the Office 2016 suite?
   
 
