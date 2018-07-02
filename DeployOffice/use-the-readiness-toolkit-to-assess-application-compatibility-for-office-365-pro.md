@@ -19,6 +19,17 @@ description: "The Readiness Toolkit for Office add-ins and VBA can help you iden
 
 # Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus
 
+> [!NOTE]
+> After running the Readiness Toolkit, many enterprises find that they have fewer compatibility issues than first expected. From telemetry of enterprises who have run the Readiness Toolkit so far:
+>
+> On average:
+> - 6% of files have macros
+> - 3.3% have macro issues
+> -	That’s only 0.2% of files with compatibility issues
+>
+> For Office add-ins:
+> -	75% of add-ins are already categorised as adopted or supported
+
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
 You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version.
