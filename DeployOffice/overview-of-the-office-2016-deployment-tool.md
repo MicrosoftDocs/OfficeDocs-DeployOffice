@@ -41,6 +41,8 @@ When running the ODT, you provide the location of the configuration file and def
     
 - To install the downloaded Office 365 ProPlus products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
     
+- To apply new application settings to client computers that already have Office 365 ProPlus installed, use **customize** mode. Example: `setup.exe /customize appsettingsconfig.xml`
+    
 - To create an App-V package from the downloaded Office 365 ProPlus products and languages, use **packager** mode. Example: `setup.exe /packager packageconfig.xml`
     
 You can also use **help** mode to read command-line help for the tool.
@@ -260,6 +262,56 @@ From a command prompt, run the ODT executable in configure mode with a reference
   
 You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
   
+## Apply application settings to an existing installation of Office 365 ProPlus
+
+You can apply new application settings to client computers that already have Office 365 ProPlus installed. To do so, create a configuration file that contains application settings and then run the ODT in customize mode. Customize mode ignores all other settings in the configuration file except application settings. 
+
+ **Step 1: Create the configuration file**
+  
+To create the configuration file, use the we	 recommend 
+
+
+As part of the Office Customization Tool for Click-to-Run, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. 
+
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
+  
+In this example, the configuration file installs a 32 bit English edition of Office 365 ProPlus 2016 without Publisher:
+  
+```
+<Configuration> 
+  <Add SourcePath="\\Server\share" OfficeClientEdition="32">
+    <Product ID="O365ProPlusRetail" > 
+      <Language ID="en-us" />        
+      <ExcludeApp ID="Publisher" />
+    </Product> 
+  </Add> 
+  <Display Level="None" AcceptEULA="TRUE" />
+</Configuration> 
+
+```
+
+The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
+  
+For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+  
+ **Step 2: Run the ODT executable in configure mode**
+  
+From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you just saved. In the following example, the configuration file is named **installconfig.xml**:
+  
+ `setup.exe /configure installconfig.xml`
+  
+You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
+  
+ **Step 3: Verify that installation was successful**
+  
+After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\temp directories.
+
+**Step 1: Example: `setup.exe /customize appsettingsconfig.xml`
+
+***********************************************************
+
+
+
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>
 
