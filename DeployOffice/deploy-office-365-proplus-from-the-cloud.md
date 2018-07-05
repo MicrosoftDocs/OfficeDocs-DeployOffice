@@ -3,7 +3,6 @@ title: "Deploy Office 365 ProPlus from the cloud"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -32,10 +31,10 @@ The steps in this article are based on the following best practices, requirement
   
 Best practices:
 
-- **Deploy Office from the cloud with the Office Deployment Tool**. [More details](plan-office-365-proplus#step-1---choose-how-to-deploy).
-- **Manage updates to Office automatically**, without any adminstrative overhead. [More details](plan-office-365-proplus#step-2---choose-how-to-manage-updates).
-- **Build two Office installation packages**: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. (If you want to deploy the 64-bit version of Office, you can create additional installation packages.) [More details](plan-office-365-proplus#step-4---define-your-source-files).
-- **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package. [More details](plan-office-365-proplus#step-3---choose-your-update-channels). 
+- **Deploy Office from the cloud with the Office Deployment Tool**. For more details, see [Choose how to deploy](plan-office-365-proplus#step-1---choose-how-to-deploy).
+- **Manage updates to Office automatically**, without any adminstrative overhead. For more details, see [Choose how to manage updates](plan-office-365-proplus#step-2---choose-how-to-manage-updates).
+- **Build two Office installation packages**: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. (If you want to deploy the 64-bit version of Office, you can create additional installation packages.) For more details, see [Define your source files](plan-office-365-proplus#step-4---define-your-source-files).
+- **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package. For more details, see [Choose your update channels](plan-office-365-proplus#step-3---choose-your-update-channels). 
 
 Requirements:
 
@@ -44,8 +43,8 @@ Requirements:
 
 Options:
 
-- **Install Office in English and Japanese**. [More details on installing additional languages, including matching the language of the client device's operating system](overview-of-deploying-languages-in-office-365-proplus.md).
-- **Install Office silently*. [More details](configuration-options-for-the-office-2016-deployment-tool#display-element).
+- **Install Office in English and Japanese**. For more details, see on installing additional languages, including matching the language of the client device's operating system, see [Overview of deploying languages](overview-of-deploying-languages-in-office-365-proplus.md).
+- **Install Office silently**. For more details, see [Display options](configuration-options-for-the-office-2016-deployment-tool#display-element).
 - **Install core Office apps only**. If you want to include Project or Visio, see [Deploy Visio](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-visio) and [Deploy Project](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-project).
 
 You can change the options by customizing the configuration files, as shown later in the article. 
@@ -123,7 +122,7 @@ Using a text editor, copy and paste the following into a text file and save it a
 
 ```
 
-This configuration file is used deploy Office to the broad group users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel.
+This configuration file is used deploy Office to the broad group users. The settings are exactly the same as the first configuration file, except the installation channel and update channel are both set to Semi-Annual Channel ("Broad").
   
 ## Step 4: Customize the configuration files for your environment
   
