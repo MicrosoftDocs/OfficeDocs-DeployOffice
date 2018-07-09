@@ -41,7 +41,7 @@ When running the ODT, you provide the location of the configuration file and def
     
 - To install the downloaded Office 365 ProPlus products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
     
-- To apply new application settings to client computers that already have Office 365 ProPlus installed, use **customize** mode. Example: `setup.exe /customize appsettingsconfig.xml`
+- To apply new application settings to client computers that already have Office 365 ProPlus installed, use **customize** mode. This mode will apply only application settings, without changing any other deployment settings. Example: `setup.exe /customize appsettingsconfig.xml`
     
 - To create an App-V package from the downloaded Office 365 ProPlus products and languages, use **packager** mode. Example: `setup.exe /packager packageconfig.xml`
     
@@ -262,55 +262,44 @@ From a command prompt, run the ODT executable in configure mode with a reference
   
 You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
   
+## Apply application settings to Office 365 ProPlus
+
+As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus 2016](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016),but you include application settings as part of your configuration file. 
+
+To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. Note that this tool is still in preview and is subject to change.
+
+1. In your web browser, open the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/) and follow the steps to create a configuration file. Make sure to define application settings alongside the standard deployment settings. 
+2. Export the file.
+3. Follow the steps in [Install Office 365 ProPlus 2016](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016) to deploy Office with the newly created configuration file.
+
+In this example, the configuration file installs the 32-bit version of Office 365 ProPlus in English and displays the Trust Bar for all VBA macros in Excel.
+
+```
+<Configuration>
+  <Add OfficeClientEdition="32" Channel="Broad">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+    </Product>
+  </Add>
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\excel\security" Name="vbawarnings" Value="3" Type="REG_DWORD" App="excel16" Id="L_VBAWarningsPolicy" />
+  </AppSettings>
+</Configuration>
+
+```
+
+This file was created with the Office Customization Tool for Click-to-Run (preview). For more details on the app settings, we recommend browsing the options in the tool itself.
+
 ## Apply application settings to an existing installation of Office 365 ProPlus
 
-You can apply new application settings to client computers that already have Office 365 ProPlus installed. To do so, create a configuration file that contains application settings and then run the ODT in customize mode. Customize mode ignores all other settings in the configuration file except application settings. 
+You can apply new application settings to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application settings and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application settings. 
 
- **Step 1: Create the configuration file**
+1. Use the steps in [Apply application settings to Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#Apply-application-settings-to-Office-365-ProPlus) to create the configuration file.
+2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installappsettings.xml**:
   
-To create the configuration file, use the we	 recommend 
-
-
-As part of the Office Customization Tool for Click-to-Run, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. 
-
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
-  
-In this example, the configuration file installs a 32 bit English edition of Office 365 ProPlus 2016 without Publisher:
-  
-```
-<Configuration> 
-  <Add SourcePath="\\Server\share" OfficeClientEdition="32">
-    <Product ID="O365ProPlusRetail" > 
-      <Language ID="en-us" />        
-      <ExcludeApp ID="Publisher" />
-    </Product> 
-  </Add> 
-  <Display Level="None" AcceptEULA="TRUE" />
-</Configuration> 
-
-```
-
-The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
-  
-For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
-  
- **Step 2: Run the ODT executable in configure mode**
-  
-From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you just saved. In the following example, the configuration file is named **installconfig.xml**:
-  
- `setup.exe /configure installconfig.xml`
+ `setup.exe /customize installappsettings.xml`
   
 You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
-  
- **Step 3: Verify that installation was successful**
-  
-After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\temp directories.
-
-**Step 1: Example: `setup.exe /customize appsettingsconfig.xml`
-
-***********************************************************
-
-
 
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>
