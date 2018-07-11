@@ -3,7 +3,6 @@ title: "Deploy Office 365 ProPlus with System Center Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 7/19/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -13,19 +12,41 @@ ms.collection:
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 4dd6a023-0a5d-4dc9-9bad-ff70e01840b8
-description: "This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702, see Manage Office 365 ProPlus with Configuration Manager."
+description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)."
 ---
 
-# Deploy Office 365 ProPlus with System Center Configuration Manager
+# Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
 
-This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates).
+Follow the steps in this article to deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch).If you haven't already, complete the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
+    
+## Requirements
+
+- The client devices that run the Office 365 ProPlus must have Internet access.  
+- The user that runs the Office 365 Installer must have **Read** and **Write** access to the content location share provided in the Configuration Manager wizard.
+- If you receive a 404 download error, copy the following files to the user %temp% folder:
+  - [releasehistory.xml](http://officecdn.microsoft.com/pr/wsus/releasehistory.cab)
+  - [o365client_32bit.xml](http://officecdn.microsoft.com/pr/wsus/ofl.cab)  
+- All requirements met in the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
+
+## Best practices 
+
+The steps in this article are based on the following best practices and options:
   
-If you use System Center Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Office 365 ProPlus. By using Configuration Manager, you can control which users and computers get Office 365 ProPlus, where they get the installation files from, and when the Office 365 ProPlus installation occurs.
-  
-For example, you can control network bandwidth usage by placing the Office 365 ProPlus installation files on a distribution point within your organization's network, instead of having users install Office 365 ProPlus directly from the Internet. Keep in mind, however, that even if you're installing Office 365 ProPlus from a location within your network, the computer where Office 365 ProPlus is installed still needs access to the Internet to be able to [active Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ActivatingO365PP).
-  
-The steps that follow are for System Center 2012 R2 Configuration Manager, but you can also deploy Office 365 ProPlus by using System Center 2012 Configuration Manager or Configuration Manager 2007 R2.
-  
+Best practices:
+
+- **Deploy Office with Configuration Manager (Current Branch)**. For more details, see [Choose how to deploy](plan-office-365-proplus.md#step-1---choose-how-to-deploy).
+- **Manage updates to Office automatically**, without any adminstrative overhead. For more details, see [Chose how to manage updates](plan-office-365-proplus.md#step-2---choose-how-to-manage-updates). (If you want to manage updates from a local source, you need to change the configuration files. For more details, see [configuring updates](configuration-options-for-the-office-2016-deployment-tool.md#updates-element)).
+- **Build two Office installation packages**: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. (If you want to deploy the 64-bit version of Office, you can create additional installation packages.) For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files).
+- **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels).
+
+Options:
+
+- **Install Office in English and Japanese**. For more details on installing additional languages, including matching the language of the client device's operating system, see [Overview of deploying languages](overview-of-deploying-languages-in-office-365-proplus.md).
+- **Install Office silently**. For more details, see [Display options](configuration-options-for-the-office-2016-deployment-tool.md#display-element).
+- **Install core Office apps only**. If you want to include Project or Visio, see [Deploy Visio](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-visio) and [Deploy Project](https://docs.microsoft.com/en-us/deployoffice/deployment-guide-for-project).
+
+You can change the options as part of the deployment wizard in Configuration Manager, as shown later in the article. 
+
 ## Prepare the Office 365 ProPlus installation files to be deployed by Configuration Manager
 
 To get started, download the Office 2016 version of the Office Deployment Tool from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065) to a shared folder on your organization's network. Then, use the Office Deployment Tool to [download the Office 365 ProPlus installation files](overview-of-the-office-2016-deployment-tool.md#BKMK_downloadinstallationfiles) from the Internet to the same shared folder.
