@@ -19,7 +19,8 @@ Office 2007 reached its end of support on October 10, 2017. If you haven't alrea
 This article provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Office 365 ProPlus.
   
 > [!NOTE]
-> If you're a home user who wants to upgrade from Office 2007 to the latest version of Office, see [How do I upgrade to Office 2016?](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350)> If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Admins: upgrade your users to the latest Office client using Office 365 for business](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb). 
+> - If you're a home user who wants to upgrade from Office 2007 to the latest version of Office, see [How do I upgrade to Office 2016?](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350)
+> - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Admins: upgrade your users to the latest Office client using Office 365 for business](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb). 
   
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://fasttrack.microsoft.com/office) for cloud migrations and [Software Assurance Deployment and Planning Services](https://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-planning-services-overview.aspx) for on-premises upgrades. 
   
