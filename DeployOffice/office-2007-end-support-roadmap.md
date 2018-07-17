@@ -6,12 +6,10 @@ manager: laurawi
 ms.date: 6/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-search.appverid: MOE150
-ms.assetid: 416c54d8-823c-4def-bb7a-6a9b14ef2745
-description: "Office 2007 reached its end of support on October 10, 2017. If you haven't already begun to upgrade your Office 2007 environment, we recommend you start now."
+description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Office 365 ProPlus from Office 2007."
 ---
 
 # Office 2007 end of support roadmap
@@ -57,13 +55,13 @@ Unlike Office 2007, Office 365 ProPlus uses a user-based licensing model that al
   
 - [Office 365 ProPlus product page](https://products.office.com/business/office-365-proplus-business-software)
     
-- [About Office 365 ProPlus in the enterprise]( https://docs.microsoft.com/DeployOffice/about-office-365-proplus-in-the-enterprise)
+- [About Office 365 ProPlus in the enterprise](about-office-365-proplus-in-the-enterprise.md)
     
-- [Deployment guide for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+- [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
     
 ## Review what's changed since Office 2007
 
-To learn about the changes from Office 2007 to Office 365 ProPlus, review the update articles for each of the Office releases: [Changes in Office 2010](https://docs.microsoft.com/previous-versions/office/office-2010/cc178954%28v=office.14%29), [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29), and [Changes in Office 2016 for Windows](https://docs.microsoft.com/DeployOffice/office2016/changes-in-office-2016-for-windows-desktop).
+To learn about the changes from Office 2007 to Office 365 ProPlus, review the update articles for each of the Office releases: [Changes in Office 2010](https://docs.microsoft.com/previous-versions/office/office-2010/cc178954%28v=office.14%29), [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29), and [Changes in Office 2016 for Windows](office2016/changes-in-office-2016-for-windows-desktop.md).
   
 For information about the new features available in Office 365 ProPlus, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426).
   
@@ -76,15 +74,15 @@ In addition, you should review the system requirements for your Office server wo
   
 ## Plan for Office 365
 
-Because Office 365 ProPlus comes with most enterprise Office 365 plans, you should review your current Office 365 capabilities as part of planning an upgrade to Office 365 ProPlus. Prior to deploying Office 365 ProPlus, for example, you should ensure that all your users have Office 365 accounts and licenses. For more information, see [Deploy Office 365 Enterprise for your organization](../setup-overview-for-enterprises/setup-overview-for-enterprises.md).
+Because Office 365 ProPlus comes with most enterprise Office 365 plans, you should review your current Office 365 capabilities as part of planning an upgrade to Office 365 ProPlus. Prior to deploying Office 365 ProPlus, for example, you should ensure that all your users have Office 365 accounts and licenses. For more information, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/article/ee73dafb-be54-492e-bcfd-0fbfb5f65e94).
   
 ## Assess application compatibility
 
-Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Office 365 ProPlus. For more information, see [Assess application compatibility](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus#step-4---assess-application-compatibility)
+Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Office 365 ProPlus. For more information, see [Assess application compatibility](assess-office-365-proplus.md#step-4---assess-application-compatibility.md)
   
 To help with assessing application compatibility with Office 365 ProPlus, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Office 365 ProPlus. 
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro).
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
   
 ## Assess your infrastructure and environment
 
@@ -98,7 +96,7 @@ To decide how to upgrade to Office 365 ProPlus, you should evaluate your infrast
     
 - Cloud infrastructure, including existing Office 365 capabilities, user licensing, and identity.
     
-Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/deployOffice/assess-office-365-proplus).
+Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md).
   
 ## Review new Group policy settings
 
@@ -110,11 +108,11 @@ You can download the Administrative Template files (ADMX/ADML) for Group Policy 
 
 You can deploy Office 365 ProPlus from the cloud, from a local source on your network, or with System Center Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Office 365 ProPlus, including which applications and languages are installed on which client computers.
   
-For more information, see [Plan your enterprise deployment of Office 365 ProPlus](https://docs.microsoft.com/deployOffice/plan-office-365-proplus). 
+For more information, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md). 
   
 ## Choose how often to update Office
 
-With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Office 365 ProPlus]( https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
+With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
   
 ## Plan for additional languages
 
@@ -124,19 +122,19 @@ You can install language accessory packs after you've deployed Office 365 ProPlu
     
 - Use the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
     
-For more information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus).
+For more information, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
   
 ## Special considerations
 
- **The Office Customization Tool is not used as part of the Office 365 ProPlus installation**. Instead, you can customize the installation for your users with the Office Deployment Tool. For more information, see [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool).
+ **The Office Customization Tool is not used as part of the Office 365 ProPlus installation**. Instead, you can customize the installation for your users with the Office Deployment Tool. For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
   
  **Removal of InfoPath from Office 365 ProPlus**. InfoPath 2013 remains the current version and therefore isn't included in Office 365 ProPlus. When you upgrade an existing installation of Office 2007 to Office 365 ProPlus, InfoPath is removed from the computer. If your users still need to use InfoPath, the 2013 version of InfoPath is available for installation on the Software page in the Office 365 portal. 
   
 ## Related topics
 
-- For articles about planning, deploying, and managing Office 365 ProPlus in an enterprise environment, see [Deployment guide for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus).
+- For articles about planning, deploying, and managing Office 365 ProPlus in an enterprise environment, see [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md).
     
-- To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 or 2010 servers and clients](upgrade-from-office-2007-or-2010-servers-and-products.md).
+- To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 or 2010 servers and clients](https://support.office.com/article/b2acaeca-4986-40f4-92b7-a1bdd06e549d).
     
 - For more information about Office 365 plans, see [Office 365 Service Descriptions](https://technet.microsoft.com/library/office-365-service-descriptions.aspx).
     
