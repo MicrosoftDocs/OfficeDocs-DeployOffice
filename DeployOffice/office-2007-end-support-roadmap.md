@@ -78,7 +78,7 @@ Because Office 365 ProPlus comes with most enterprise Office 365 plans, you shou
   
 ## Assess application compatibility
 
-Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Office 365 ProPlus. For more information, see [Assess application compatibility](assess-office-365-proplus.md#step-4---assess-application-compatibility.md)
+Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Office 365 ProPlus. For more information, see [Assess application compatibility](assess-office-365-proplus.md#step-4---assess-application-compatibility)
   
 To help with assessing application compatibility with Office 365 ProPlus, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Office 365 ProPlus. 
   
