@@ -29,7 +29,7 @@ RemoveMSI can be used to uninstall 2010, 2013, or 2016 versions of Office, Visio
 The following are requirements for using the RemoveMSI element in your configuration.xml file:
 
 - You must be using at least version 16.0.10306.33602 of the Office Deployment Tool, which you can download from [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=626065). To check the version of the Office Deployment Tool, right-click on setup.exe, choose **Properties**, and then choose **Details**.
-- You must be installing at least Version 1803 of Office 365 ProPlus. Version 1803 or later is currently available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
+- You must be installing at least Version 1803 of Office 365 ProPlus. Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
 - You must be installing Office 365 ProPlus on a computer running at least Windows 7 Service Pack 1 (SP1) or above.
  
 ## Uninstall all Office products
