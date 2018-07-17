@@ -37,7 +37,7 @@ In this article:
     
 - [Manage Update Deployments](change-management-for-office-365-clients.md#Manage)
     
-Download this information as a model poster in [Visio](https://go.microsoft.com/fwlink/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/?LinkId=626681) format.
+Download this information as a poster in [Visio](https://go.microsoft.com/fwlink/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/?LinkId=626681) format. *(The poster is only available in English.)*
   
 ![Servicing model poster](images/f0f92823-29ae-443e-af36-d913c6ba6486.png)
   
