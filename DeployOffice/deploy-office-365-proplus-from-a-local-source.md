@@ -156,6 +156,8 @@ From a command prompt, run the ODT executable in download mode and with a refere
   
 The files should begin downloading immediately. After running the command, go to **\\\server\share\O365\SACT**  and look for an Office folder with the appropriate files in it.
 
+Note that when you download Office to a folder that already contains Office, the ODT will conserve your network bandwidth by downloading only the files that are different between the two versions.
+
 If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and %windir%\temp directories.
 
 ## Step 7: Download the Office installation package for the broad group
