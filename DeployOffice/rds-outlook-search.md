@@ -1,5 +1,5 @@
 ---
-title: Dealing with Outlook search in non-persistent environments
+title: Dealing with Outlook search in non-persistent RDS environments
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom: Ent_Office_ProPlus
 description: Learn about your options for managing Outlook data stored to a user profile disk.
 ---
 
-# Dealing with Outlook search in non-persistent environments
+# Dealing with Outlook search in non-persistent RDS environments
 
 *Applies To: Windows Server (Semi-Annual Channel), Windows Server 2016*
 
