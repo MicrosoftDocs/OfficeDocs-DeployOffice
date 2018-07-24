@@ -3,7 +3,6 @@ title: Dealing with Outlook search in non-persistent environments
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.reviewer: elizapo,harowl
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
