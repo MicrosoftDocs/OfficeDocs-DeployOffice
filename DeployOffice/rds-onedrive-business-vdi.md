@@ -3,7 +3,7 @@ title: OneDrive for Business and VDI environments
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.reviewer: elizapo
+ms.reviewer: lizap
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
