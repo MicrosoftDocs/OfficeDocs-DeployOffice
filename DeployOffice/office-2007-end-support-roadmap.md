@@ -135,7 +135,7 @@ For more information, see [Overview of deploying languages in Office 365 ProPlus
 
 - For articles about planning, deploying, and managing Office 365 ProPlus in an enterprise environment, see [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md).
     
-- To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 or 2010 servers and clients](https://support.office.com/article/b2acaeca-4986-40f4-92b7-a1bdd06e549d).
+- To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2007-servers-and-products).
     
 - For more information about Office 365 plans, see [Office 365 Service Descriptions](https://technet.microsoft.com/library/office-365-service-descriptions.aspx).
     
