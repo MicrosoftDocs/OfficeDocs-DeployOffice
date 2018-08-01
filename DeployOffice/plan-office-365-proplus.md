@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 4/2/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: 
 - Ent_O365
