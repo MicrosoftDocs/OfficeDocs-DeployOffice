@@ -37,7 +37,7 @@ The ODT consists of two files: setup.exe and configuration.xml. To work with the
   
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
   
-- To download Office 365 ProPlus products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. Note that when you download Office to a folder that already contains Office, the ODT will conserve your network bandwidth by downloading only the files that are different between the two versions.
+- To download Office 365 ProPlus products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. Note that when you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
     
 - To install the downloaded Office 365 ProPlus products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
     
