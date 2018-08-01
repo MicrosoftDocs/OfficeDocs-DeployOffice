@@ -21,7 +21,7 @@ Follow the steps in this article to deploy Office 365 ProPlus to client computer
 
 ## Before you begin
 
-If you haven't already, complete the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
+If you haven't already, complete the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
 
 This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
   
@@ -39,7 +39,7 @@ Best practices:
 Requirements:
 
 - **Your users must have local admin privileges** on their client devices. If that is not the case, then you should use your standard deployment tools and proceses to install Office.
-- **All requirements met in the [asssessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment**. 
+- **All requirements met in the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment**. 
 
 Options:
 

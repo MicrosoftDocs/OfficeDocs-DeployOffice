@@ -40,7 +40,7 @@ For information about how to use the Configuration.xml file to specify language 
 ## Install the same languages as the operating system
 When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system and any user on the client device. To do so, use "MatchOS" as the Language ID in the configuration file for the ODT, as shown in the example. 
 
-When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Lanugage ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
+When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Language ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
 
 MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
 
