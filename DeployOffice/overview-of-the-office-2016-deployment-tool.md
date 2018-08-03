@@ -3,7 +3,6 @@ title: "Overview of the Office Deployment Tool"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 4/11/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -12,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: bb5b62d9-1168-47e9-9d54-15a958acfcca
 description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
 ---
 
@@ -56,7 +54,7 @@ Follow these steps to download installation files for Office 365 ProPlus from th
   
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
   
-In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus 2016 and Visio Pro for Office 365 to \\\\server\share on your network:
+In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus and Visio Pro for Office 365 to \\\\server\share on your network:
   
 ```
 <Configuration> 
@@ -89,7 +87,7 @@ After running the command, go to the download location you defined in the config
 
 You can use the Office Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network instead of from the Office Content Delivery Network (CDN). By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
   
-To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus 2016 from **\\\\servera\share** (the DownloadPath) to **\\\\serverb\share** (the SourcePath):
+To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus from **\\\\servera\share** (the DownloadPath) to **\\\\serverb\share** (the SourcePath):
   
 ```
 <Configuration> 
@@ -104,7 +102,7 @@ To download from a local source, follow the steps for downloading Office with th
 
 Note that you must specify a **Version** when using DownloadPath.
   
-## Install Office 365 ProPlus 2016
+## Install Office 365 ProPlus
 <a name="BKMK_installoffice"> </a>
 
 After you download Office 365 ProPlus installation files, follow these steps to install Office on a client computer. As part of that installation, you can choose which products to install.
@@ -113,7 +111,7 @@ After you download Office 365 ProPlus installation files, follow these steps to 
   
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
   
-In this example, the configuration file installs a 32 bit English edition of Office 365 ProPlus 2016 without Publisher:
+In this example, the configuration file installs a 32 bit English edition of Office 365 ProPlus without Publisher:
   
 ```
 <Configuration> 
@@ -147,7 +145,7 @@ After running the command, you should see the Office installation start (unless 
 ## Update Office 365 ProPlus
 <a name="BKMK_updateoffice"> </a>
 
-You can use the Office 2016Deployment Tool to make updates to your client computers after installing Office 365 ProPlus. There are two ways to do this:
+You can use the Office Deployment Tool to make updates to your client computers after installing Office 365 ProPlus. There are two ways to do this:
   
 - Use the ODT to install Office 365 ProPlus again, which will update Office to the newest version. Only the files that have changed in the new version will be updated.
     
@@ -264,13 +262,13 @@ You must run the executable from the client computer on which you want to instal
   
 ## Apply application settings to Office 365 ProPlus
 
-As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus 2016](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016), but you include application settings as part of your configuration file. 
+As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016), but you include application settings as part of your configuration file. 
 
 To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. Note that this tool is still in preview and is subject to change.
 
 1. In your web browser, open the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/) and follow the steps to create a configuration file, including defining application settings alongside the standard deployment settings. 
 2. Export the file.
-3. Follow the steps in [Install Office 365 ProPlus 2016](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016) to deploy Office with the newly created configuration file.
+3. Follow the steps in [Install Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016) to deploy Office with the newly created configuration file.
 
 In this example, the configuration file installs the 32-bit version of Office 365 ProPlus in English and displays the Trust Bar for all VBA macros in Excel.
 
@@ -317,7 +315,7 @@ This article does not cover all the issues related to deploying App-V packages. 
   
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
   
-In this example, the configuration file creates an App-V package from a 32-bit English edition of Office 365 ProPlus 2016 without Publisher:
+In this example, the configuration file creates an App-V package from a 32-bit English edition of Office 365 ProPlus without Publisher:
   
 ```
 <Configuration> 
