@@ -263,7 +263,7 @@ The following screen shot shows the **Solution details** worksheet.
   
 **Solution details worksheet in Telemetry Dashboard**
 
-![A screenshot of the Document details worksheet in the Office Telemetry dashboard.](../images/ORK_Telem_DocumentWorksheet2.png)
+![A screenshot of the Solution details worksheet in the Office Telemetry dashboard.](../images/telemetry-dashboard-solution-details.png)
   
 The following table describes each column in the **Solution details** worksheet. 
   
