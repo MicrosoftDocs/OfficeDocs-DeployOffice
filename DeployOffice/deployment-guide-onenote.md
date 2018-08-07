@@ -54,7 +54,7 @@ If you don’t want your users to install apps directly from the Microsoft Store
 If you plan to move your users to OneNote for Windows 10, make sure their notebooks have been moved to a cloud storage location, such as OneDrive for Business. To do that, you can provide them the instructions in [Move OneNote notebooks from your computer to OneDrive](https://support.office.com/article/b43692ae-ce27-4ab9-a8ad-a2aed225e6a5). 
 
 
-## Timing of changes to the default installation behavior of OneNote
+## When do these changes take effect?
 
 The change to the default installation behavior for OneNote will take effect at different times, depending on which version of Office you’re deploying to your users. 
 
@@ -65,6 +65,15 @@ If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote fo
  - Semi-Annual Channel (Targeted): September 2018
  - Semi-Annual Channel: January 2019
 
+## Additional information about deploying OneNote
+
+If your users are currently using OneNote 2016, OneNOte for Windows 10 won't replace OneNote 2016 on their computers. How do we know if the user has used OneNote 2016? We look at the following things to determine that:
+
+- Is the "first run" key for OneNote 2016 enabled in the registry for the current user?
+- Does any user on the computer have a “OneNote Notebooks” folder in the root of their Documents folder? 
+- Has OneNote 2016 sent a message to the Office Updater identifying that it’s been used on that computer? *(Requires Office 365 ProPlus with the June 2018 update.)*
+
+If any of these are true, OneNote 2016 will be identified as “in use” and we won't update that computer to OneNote for Windows 10. We'll always err on the side of caution, so we won’t take any action if there’s any reason for us to suspect that OneNote 2016 has been used before on that computer.
 
 ## Related topics
 
