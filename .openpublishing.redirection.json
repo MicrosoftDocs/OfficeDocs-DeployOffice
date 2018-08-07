@@ -35,11 +35,10 @@
       "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
       "redirect_document_id": false
     },
-    
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-cloud-managed.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-using-offscrub.md",
@@ -49,12 +48,12 @@
     {
         "source_path": "DeployOffice/best-practices/best-practices-deployment-for-enterprise-managed.md",
         "redirect_url": "https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates",
-        "redirect_document_id": false
+        "redirect_document_id": true
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-deployment-for-locally-managed.md",
         "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source",
-        "redirect_document_id": false
+        "redirect_document_id": true
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-distributed-file-system-configuration-for-locally-managed.md",
@@ -95,6 +94,11 @@
         "source_path": "DeployOffice/best-practices/best-practices-deployment-resources.md",
         "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
         "redirect_document_id": false
-    }
+    },
+    {
+        "source_path": "DeployOffice/best-practices/best-practices-links-for-helpdesk-and-end-user-training.md",
+        "redirect_url": "https://support.office.com/office-training-center",
+        "redirect_document_id": true
+    }    
    ] 
 }
