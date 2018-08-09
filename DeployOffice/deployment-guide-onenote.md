@@ -37,15 +37,14 @@ Users can use both OneNote 2016 and OneNote for Windows 10 on the same computer.
 
 ## How to deploy OneNote 2016
 
+You can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) or enterprise deployment software, such as System Center Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
 
-Then, you can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) or enterprise deployment software, such as System Center Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
+If you're using Configuration Manager (Current Branch) and the Office 365 Installer to deploy Office 365 ProPlus, be sure that OneNote is selected to be included as part of the installation of Office 365 ProPlus. In some cases, the default setting will be for OneNote to be excluded from the installation of Office 365 ProPlus.
 
-
-You can also use Group Policy to configure certain OneNote 2016 settings for your users. To do that, download the latest [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
+If an existing installation of Office 365 ProPlus gets updated and OneNote 2016 is removed, but the user needs to start using OneNote 2016, you can reinstall OneNote 2016 by using the Office Deployment Tool or enterprise deployment software. 
 
 > [!NOTE]
-> This information will also apply if you're deploying a volume licensed version of Office 2019 when it's released later this year. *(A specific release date for Office 2019 hasn't been announced yet.)* 
-
+> The information in this section will also apply if you're deploying a volume licensed version of Office 2019 when it's released later this year. *(A specific release date for Office 2019 hasn't been announced yet.)* 
 
 
 ## How to deploy OneNote for Windows 10
@@ -68,11 +67,11 @@ If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote fo
  - Semi-Annual Channel (Targeted): September 2018
  - Semi-Annual Channel: January 2019
 
-The dates of Office 365 ProPlus also apply if you allow your users to install Office 365 ProPlus for themselves from the Office 365 portal. The default update channel for those installs is Semi-Annual Channel.
+The dates for Office 365 ProPlus also apply if you allow your users to install Office 365 ProPlus for themselves from the Office 365 portal. The default update channel for those installs is Semi-Annual Channel.
 
 ## Additional information about deploying OneNote
 
-**Checking if OneNote 2016 is being used** If your users are currently using OneNote 2016, OneNote for Windows 10 won't replace OneNote 2016 on their computers. How do we know if the user has used OneNote 2016? We look at the following things to determine that:
+**Checking if OneNote 2016 is being used:** If your users are currently using OneNote 2016, OneNote for Windows 10 won't replace OneNote 2016 on their computers. How do we know if the user has used OneNote 2016? We look at the following things to determine that:
 
 - Is the "first run" key for OneNote 2016 enabled in the registry for the current user?
 - Does any user on the computer have a “OneNote Notebooks” folder in the root of their Documents folder? 
@@ -80,7 +79,9 @@ The dates of Office 365 ProPlus also apply if you allow your users to install Of
 
 If any of these are true, OneNote 2016 will be identified as “in use” and we won't update that computer to OneNote for Windows 10. We'll always err on the side of caution, so we won’t take any action if there’s any reason for us to suspect that OneNote 2016 has been used before on that computer.
 
-**Office 365 Business** These changes also apply to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium.
+**Configure OneNote 2016 settings:** You can use Group Policy to configure certain OneNote 2016 settings for your users. To do that, download the latest [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement those policy settings by using Active Directory Domain Services (AD DS). Group Policy can't be used with OneNote for Windows 10.
+
+**Office 365 Business:** These changes also apply to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium.
 
 ## Related topics
 
