@@ -53,7 +53,7 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="http://fasttrack.microsoft.com/office">
+                                <a href="https://fasttrack.microsoft.com/office">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
