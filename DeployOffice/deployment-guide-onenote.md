@@ -37,11 +37,11 @@ Users can use both OneNote 2016 and OneNote for Windows 10 on the same computer.
 
 ## How to deploy OneNote 2016
 
-You can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) or enterprise deployment software, such as System Center Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
+You can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or enterprise deployment software, such as System Center Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
 
 If you're using Configuration Manager (Current Branch) and the Office 365 Installer to deploy Office 365 ProPlus, be sure that OneNote is selected to be included as part of the installation of Office 365 ProPlus. In some cases, the default setting will be for OneNote to be excluded from the installation of Office 365 ProPlus.
 
-If an existing installation of Office 365 ProPlus gets updated and OneNote 2016 is removed, but the user needs to start using OneNote 2016, you can reinstall OneNote 2016 by using the Office Deployment Tool or enterprise deployment software. 
+If an existing installation of Office 365 ProPlus gets updated and OneNote 2016 is removed, but the user needs to start using OneNote 2016, you can reinstall OneNote 2016 by using the Office Deployment Tool or enterprise deployment software. When you run the Office installation process again on that computer, it will add OneNote 2016 without doing a complete reinstallation of Office 365 ProPlus.
 
 > [!NOTE]
 > The information in this section will also apply if you're deploying a volume licensed version of Office 2019 when it's released later this year. *(A specific release date for Office 2019 hasn't been announced yet.)* 
@@ -62,7 +62,7 @@ The change to the default installation behavior for OneNote will take effect at 
 
 If you’re deploying Office 2019 to your users, OneNote for Windows 10 will be the default when Office 2019 is released later this year. *(A specific release date for Office 2019 hasn’t been announced yet.)* 
 
-If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote for Windows 10 becomes the default installation depends on which [update channel](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) you’re using. The following are the approximate dates for each update channel:
+If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote for Windows 10 becomes the default installation depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you’re using. The following are the approximate dates for each update channel:
  - Monthly Channel: September 2018
  - Semi-Annual Channel (Targeted): September 2018
  - Semi-Annual Channel: January 2019
