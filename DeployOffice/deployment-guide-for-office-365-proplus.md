@@ -29,7 +29,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 - [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
   
-- [Microsoft FastTrack for Office](http://fasttrack.microsoft.com/office)
+- [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
   
 ## Deploy
 
