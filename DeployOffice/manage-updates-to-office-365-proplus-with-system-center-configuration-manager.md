@@ -80,7 +80,7 @@ You can enable the Office COM object by using either of the following methods: t
 <a name="BKMK_ODT"> </a>
 ### Method 1: Use Office Deployment Tool to enable Office 365 clients to receive updates from Configuration Manager
 
-You can use the latest version of the [Office Deployment Tool](http://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office 365 clients to receive updates from Configuration Manager.
+You can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office 365 clients to receive updates from Configuration Manager.
   
 To configure this capability, use a text editor, such as Notepad, to modify the configuration.xml file for the Office Deployment Tool. In the Add element, include the OfficeMgmtCOM attribute and set its value to True, as seen in the following example.
   

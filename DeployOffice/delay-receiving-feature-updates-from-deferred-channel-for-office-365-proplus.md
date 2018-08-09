@@ -67,7 +67,7 @@ To download the latest build with the Office Deployment Tool, you need to config
   
 [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
   
-[Download the Office Deployment Tool](http://go.microsoft.com/fwlink/p/?LinkID=626065)
+[Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065)
   
 [Download the Office 2016 Administrative Template files (ADMX/ADML) for Group Policy](https://www.microsoft.com/download/details.aspx?id=49030)
 
