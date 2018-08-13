@@ -20,7 +20,7 @@ But, starting with the release of Office 2019 later this year, OneNote for Windo
 
 Even with this change, you’ll still be able to deploy OneNote 2016 to your users. If your users are currently using OneNote 2016, there won’t be any change for them. Also, this change doesn’t affect other versions of OneNote, such as OneNote for Mac, OneNote for Android, or OneNote Online.
 
-## Choose the verison of OneNote to deploy to your users
+## Choose the version of OneNote to deploy to your users
 
 There are differences between OneNote 2016 and OneNote for Windows 10. For more information, see [What's the difference between OneNote and OneNote 2016?](https://support.office.com/article/a624e692-b78b-4c09-b07f-46181958118f)
 
