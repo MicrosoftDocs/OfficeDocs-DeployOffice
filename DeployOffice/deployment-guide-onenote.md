@@ -24,7 +24,7 @@ Even with this change, you’ll still be able to deploy OneNote 2016 to your use
 
 There are differences between OneNote 2016 and OneNote for Windows 10. For more information, see [What's the difference between OneNote and OneNote 2016?](https://support.office.com/article/a624e692-b78b-4c09-b07f-46181958118f)
 
-Other than features, the most significant difference is that local notebooks aren’t supported in OneNote for Windows 10. Local notebooks are OneNote files that are stored on the user’s computer or on a file share on the network. Instead, OneNote for Windows 10 notebooks must be stored in the cloud. For example, in OneDrive for Business or SharePoint Online. SharePoint Server is also supported.
+Other than features, the most significant difference is that local notebooks aren’t supported in OneNote for Windows 10. Local notebooks are OneNote files that are stored on the user’s computer or on a file share on the network. Instead, OneNote for Windows 10 notebooks must be stored in the cloud. For example, in OneDrive for Business or SharePoint Online. SharePoint Server is also supported. But, OneNote for Windows 10 always keeps a copy of notebooks cached on the user's computer so that the user can access them even when the user isn't connected to the Internet.
 
 Other factors that might require you to keep users on OneNote 2016 include computers running Windows 7 or Windows 8 or the use of COM add-ins with OneNote. Micosoft has updated its add-ins for OneNote, such as providing integration with Outlook, to work with OneNote for Windows 10.
 
@@ -33,13 +33,13 @@ Other factors that might require you to keep users on OneNote 2016 include compu
 
 Keep in mind that OneNote 2016 is no longer being updated with new features and there won’t be a OneNote 2019. OneNote 2016 will continue to receive other updates, like critical fixes and security updates, while it’s still supported. Mainstream support for OneNote 2016 ends in October 2020, and extended support ends in October 2025.
 
-Users can use both OneNote 2016 and OneNote for Windows 10 on the same computer. While the two OneNote versions store their notebooks separately, with two different caches on the user’s computer, they can sync with each other if the user is connected to the Internet. Users can [set which OneNote version is the default](https://support.office.com/article/f261140c-5ce8-4cf4-ad0b-c9e1cb953831) on their computer.
+Users can use both OneNote 2016 and OneNote for Windows 10 on the same computer. While the two OneNote versions store their notebooks separately, with two different caches on the user’s computer, both versions can open the same cloud-based notebooks and stay in sync if the user is connected to the Internet. Users can [set which OneNote version is the default](https://support.office.com/article/f261140c-5ce8-4cf4-ad0b-c9e1cb953831) on their computer.
 
 ## How to deploy OneNote 2016
 
 You can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or enterprise deployment software, such as System Center Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
 
-If you're using Configuration Manager (Current Branch) and the Office 365 Installer to deploy Office 365 ProPlus, be sure that OneNote is selected to be included as part of the installation of Office 365 ProPlus. In some cases, the default setting will be for OneNote to be excluded from the installation of Office 365 ProPlus.
+If you're using Configuration Manager (Current Branch) and the Office 365 Installer to deploy Office 365 ProPlus, be sure that OneNote 2016 is selected to be included as part of the installation of Office 365 ProPlus. Depending on which version of Configuration Manager (Current Branch) you're using, the default setting will be for OneNote 2016 to be excluded from the installation of Office 365 ProPlus.
 
 If an existing installation of Office 365 ProPlus gets updated and OneNote 2016 is removed, but the user needs to start using OneNote 2016, you can reinstall OneNote 2016 by using the Office Deployment Tool or enterprise deployment software. When you run the Office installation process again on that computer, it will add OneNote 2016 without doing a complete reinstallation of Office 365 ProPlus.
 
