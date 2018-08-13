@@ -13,15 +13,14 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
-ms.assetid: 9b0b48f2-1937-4b10-8274-1ccdb2f5d019
-description: "The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus."
+description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Office 365 ProPlus
 ---
 
 # Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. 
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -39,6 +38,8 @@ The following information is provided to help you use the Readiness Report Creat
 - [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise), and using a command-line version of the Readiness Report Creator to scan multiple computers.
  
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
+
+- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-by-the-readiness-toolkit) to show you how to conceal senstive information about file paths and names. 
     
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
     
@@ -295,7 +296,27 @@ You can specify these labels by using the **Specify custom labels to use with th
 
 > [!NOTE]
 > If you're using the Office Telemetry Dashboard and have already configured tags (labels), the Readiness Toolkit automatically collects those labels during its scan of the user's computer and will make them available in its reports. But, labels you specify for the Readiness Toolkit won't appear in the Office Telemetry Dashboard.
-  
+
+<a name="conceal"> </a>
+
+## Manage the privacy of data collected in reports
+
+It’s common for users in an organization to save Office files using file names that contain sensitive or confidential information. To protect the privacy of users and to help prevent leaking sensitive information, the Readiness Toolkit allows you to create a report that conceals the file paths and names of documents identified during a scan. You can create a report that conceals this information either by running the Readiness Report Creator from the UI wizard or from the command line. 
+
+If you're using the UI wizard, begin by selecting either "Most recently used Office documents and installed add-ins on this computer" or "Office documents in a local folder or network share" as the type of report that you want to create. Then, on the next page of the wizard, select the **Conceal file names and paths** check box, before continuing on.
+
+If you are using the command line to create a report, use the -ConcealNames option, as shown in the following example.
+
+```
+ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -ConcealNames
+```
+
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (*). For example, c:\mergers\companyx.docx will appear as c:\*******\co******.docx.
+
+When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report.
+
+
+
 <a name="BKMK_AddInfo"> </a>
 
 ## Additional information
