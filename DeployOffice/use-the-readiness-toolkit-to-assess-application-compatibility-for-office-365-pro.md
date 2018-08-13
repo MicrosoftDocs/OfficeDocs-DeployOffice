@@ -40,7 +40,7 @@ The following information is provided to help you use the Readiness Report Creat
  
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
 
-- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in=reports) to show you how to conceal senstive information about file paths and names. 
+- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports) to show you how to conceal senstive information about file paths and names. 
     
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
     
@@ -302,7 +302,7 @@ You can specify these labels by using the **Specify custom labels to use with th
 
 ## Manage the privacy of data collected in reports
 
-It’s common for users in an organization to save Office files using file names that contain sensitive or confidential information. To protect the privacy of users and to help prevent leaking sensitive information, the Readiness Toolkit allows you to create a report that conceals the file paths and names of documents identified during a scan. You can create a report that conceals this information either by running the Readiness Report Creator from the UI wizard or from the command line. 
+It’s common for users in an organization to save Office files using file names that contain sensitive or confidential information. To protect the privacy of users and to help prevent revealing sensitive information, the Readiness Toolkit allows you to create a report that conceals the file paths and names of documents identified during a scan. You can create a report that conceals this information either by running the Readiness Report Creator from the UI wizard or from the command line. 
 
 If you're using the UI wizard, begin by selecting either "Most recently used Office documents and installed add-ins on this computer" or "Office documents in a local folder or network share" as the type of report that you want to create. Then, on the next page of the wizard, select the **Conceal file names and paths** check box, before continuing on.
 
@@ -312,7 +312,7 @@ If you are using the command line to create a report, use the -ConcealNames opti
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -ConcealNames
 ```
 
-When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (*). For example, c:\mergers\companyx.docx will appear as c:\*******\co******.docx.
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (*). For example, "c:\mergers\companyx.docx" will appear as "c:\*******\co******.docx."
 
 When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report.
 
