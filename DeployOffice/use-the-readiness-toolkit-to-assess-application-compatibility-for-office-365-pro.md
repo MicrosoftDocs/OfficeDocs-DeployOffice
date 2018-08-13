@@ -13,8 +13,9 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
-description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Office 365 ProPlus
+description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Office 365 ProPlus"
 ---
+
 
 # Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus
 
@@ -39,7 +40,7 @@ The following information is provided to help you use the Readiness Report Creat
  
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
 
-- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-by-the-readiness-toolkit) to show you how to conceal senstive information about file paths and names. 
+- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in=reports) to show you how to conceal senstive information about file paths and names. 
     
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
     
