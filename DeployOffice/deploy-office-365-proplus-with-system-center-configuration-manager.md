@@ -38,7 +38,7 @@ If your organization already uses Configuration Manager, we recommend upgrading 
 - Deployment of application settings for Office, including VBA macro notifications, default file locations, and default file formats
 - Peer cache, which can help with limited network capacity when deploying to devices in remote locations. 
 
-The steps in this article covers these features and shows you how to implement the best practice recommendations from the Office engineering and FastTrack team. 
+The steps in this article covers these features and shows you how to implement our best practice recommendations. 
 
 ## Before you begin
 
@@ -55,11 +55,11 @@ The steps in this article are based on the following best practices:
 - **Build two Office installation packages**: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. (If you want to deploy the 64-bit version of Office, you can create additional installation packages.) For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files).
 - **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
-You can change the options by managing updates differently, building more installation packages, and deploying to more groups. These customizations are shown later in the article. 
+You can customize these steps by managing updates differently, building more installation packages, and deploying to more groups. These options are shown later in the article. 
 
 ## Step 1 - Review and update your Configuration Manager infrastructure 
 
-From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special configuration. WHen using Configuration Manager, we recommend the following options: 
+From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special configuration. When using Configuration Manager, we recommend the following options: 
 
 - Use the Current Branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use) 
 - Enable peer cache on your clicent devices. Peer Cache is a feature in the Current Branch of Configuration Manager that can help with limited network capacity when deploying to  client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache). 
@@ -84,14 +84,14 @@ In more complex deployments, you might have multiple deployment groups that use 
 
 For each deloyment group that you defined in your deployment plan, create a unique Office application using the steps below. For example, if you have four deployment groups, you'll create four Office applications and deploy them to four different collections. 
 
-When using the Office Customization Tool, we recommend including certain settings. We call those out in the steps below, but here's a list: 
+When using the Office Customization Tool, we recommend including certain settings. We call those out in the steps below, but here's a quick list: 
 
-- Software: Choose Office 365 ProPlus.
+- Software: Office 365 ProPlus.
 - Languages: To install the same language as the operating system, choose Match Operating System. You can also select **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
 - Installation channel: Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group and **Semi-Annual Channel** for the broad group.
 - Updates: To manage updates to Office automatically, choose **Retrieve updates from the Office CDN** and make sure **Automatically check for updates** is selected. If you want to manage updates with Configuration Manager, choose that option.
 - Upgrades: Choose to automatically remove all previous MSI versions of Office and to automatically upgrade 2013 Click-to-Run versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
-- Additional properties: Choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA** to enable a silent installation.
+- Additional properties: To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
 - Application settings: Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 
 To create and deploy an Office installation package, do the following: 
@@ -99,8 +99,9 @@ To create and deploy an Office installation package, do the following:
 1. In the Configuration Manager console, go to the **Software Library** workspace, and select the **Office 365 Client Management** node.
 2. Click the **Office 365 Installer** tile in the dashboard to launch the Office 365 Client Installation Wizard. 
 3. On the **Office Setting** page, click **Go To Office Web Page**. Use the online Office Customization Tool to specify settings for this deployment. 
-4. Click **Submit** in the upper right corner when complete. Finish the Office 365 Client Installation Wizard.
-5. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
+4. [[Add steps]]
+5. Click **Submit** in the upper right corner when complete. Finish the Office 365 Client Installation Wizard.
+6. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
 > [!NOTE] 
 > If you choose not to deploy the package in the wizard, you can deploy or edit the application later from **Software Library** > **Overview** > **Application Management** > **Applications**. For details on deploying an application, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application). 
