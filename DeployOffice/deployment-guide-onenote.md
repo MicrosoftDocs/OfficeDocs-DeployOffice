@@ -80,7 +80,7 @@ The dates for Office 365 ProPlus also apply if you allow your users to install O
 
 - Is the "first run" key for OneNote 2016 enabled in the registry for the current user?
 - Does any user on the computer have a “OneNote Notebooks” folder in the root of their Documents folder? 
-- Has OneNote 2016 sent a message to the Office Updater identifying that it’s been used on that computer? *(Requires Office 365 ProPlus with the June 2018 update.)*
+- Has OneNote 2016 sent a message to the Office Updater identifying that it’s been used on that computer?
 
 If any of these are true, OneNote 2016 will be identified as “in use” and we won't update that computer to OneNote for Windows 10. We'll always err on the side of caution, so we won’t take any action if there’s any reason for us to suspect that OneNote 2016 has been used before on that computer.
 
