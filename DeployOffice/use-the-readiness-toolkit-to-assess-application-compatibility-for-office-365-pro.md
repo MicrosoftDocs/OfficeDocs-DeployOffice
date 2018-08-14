@@ -41,6 +41,8 @@ The following information is provided to help you use the Readiness Report Creat
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
 
 - [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports) to show you how to conceal senstive information about file paths and names. 
+
+- [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports) to get better insights into which add-ins are used most often within your organization and by whom.
     
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
     
@@ -312,11 +314,21 @@ If you are using the command line to create a report, use the -ConcealNames opti
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -ConcealNames
 ```
 
-When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (*). For example, "c:\mergers\companyx.docx" will appear as "c:\*******\co******.docx."
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (*). For example, "c:\mergers\companyx.docx" will appear as "c:\\*******\co\******.docx."
 
 When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report.
 
+<a name="usage"> </a>
 
+## Collect and show add-in usage information in reports
+
+If you want to get better insights into which add-ins are used most often within your organization and by whom, you can use the Readiness Toolkit to gather add-in usage information and include it in a readiness report. 
+
+To collect add-in usage information, install the most current version of the Readiness Toolkit on each computer that you want to capture add-in usage information from. To enable the agent that generates and collects the add-in usage information, you need to enable the "Allow add-in usage data to be generated and collected by the Readiness Toolkit" Group Policy setting. This policy setting is available in the most current version of the [Office 2016 Administrative Template Files (ADMX/ADML)](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that are available on the Microsoft Download Center. This policy setting is found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit.
+
+The data generated and collected includes when the add-in is loaded and used, and if the add-in crashes. This information is stored in the registry of the computer on which the usage agent runs.
+
+We recommended that you allow the usage agent to run for at least 30 days, to ensure you have good coverage of your users and their usage behavior. Once the monitoring period is complete, create a readiness report to collect the information and display it in a report. After you have the information you need, turn off the usage agent by changing the Group Policy setting.
 
 <a name="BKMK_AddInfo"> </a>
 
