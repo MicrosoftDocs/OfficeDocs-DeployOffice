@@ -314,7 +314,7 @@ If you are using the command line to create a report, use the -ConcealNames opti
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -ConcealNames
 ```
 
-When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (*). For example, "c:\mergers\companyx.docx" will appear as "c:\\*******\co\******.docx."
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (\*). For example, "c:\mergers\companyx.docx" will appear as "c:\\*******\co******.docx."
 
 When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report.
 
