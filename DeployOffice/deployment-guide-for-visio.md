@@ -59,7 +59,7 @@ Here are the general steps to deploy Visio Professional 2016 or Visio Standard 2
     
 2. Download your version of Visio 2016 from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
     
-3. If you want to configure user settings for when Visio is installed, you can use the Office Customization Tool (OCT).
+3. If you want to configure user settings for when Visio is installed, you can use the [Office Customization Tool (OCT)](oct/oct-2016-help-overview.md).
     
 4. Deploy Visio 2016 to your users. For example, you can send your users a script to run that installs Visio from a network share on your local network.
     

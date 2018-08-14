@@ -12,7 +12,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 7eeeb822-bc9c-4189-bf20-3f9839879131
 description: "Provides an overview for admins on how to deploy Project 2016, including Project Online Desktop Client, to users in their organization"
 ---
 
@@ -59,7 +58,7 @@ Here are the general steps to deploy Project Professional 2016 or Project Standa
     
 2. Download your version of Project 2016 from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
     
-3. If you want to configure user settings for when Project is installed, you can use the Office Customization Tool (OCT).
+3. If you want to configure user settings for when Project is installed, you can use the [Office Customization Tool (OCT)](oct/oct-2016-help-overview.md).
     
 4. Deploy Project 2016 to your users. For example, you can send your users a script to run that installs Project from a network share on your local network.
     
