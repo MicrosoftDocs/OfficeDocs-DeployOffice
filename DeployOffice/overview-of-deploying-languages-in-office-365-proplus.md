@@ -19,7 +19,7 @@ ms.assetid: 6467979c-3430-45c2-a28f-f9ac995731a5
 If you purchased an Office 365 subscription, you can use it to install Office in multiple languages. You do not have to buy a Language Pack. Resources for Click-to-Run for Office 365 products are packaged similarly to the way standard Office 2016 Windows Installer (MSI) resources are organized. Language-neutral product resources are packaged into a single file that contains all the neutral resources. Language-specific resources are packaged into language-specific files such as en-us for English (United States) resources.
 
 ## Install languages from the Office 365 portal
-If your organization allows it, users can install Office 365 ProPlus languages directly from the [Office 365 portal](https://go.microsoft.com/fwlink/p/?LinkID=212232). When users install Office from the **software** page, they select a language from the **Language** drop-down box. If an user need an additional language, they can just re-run the process for each required language. The setup will add the selected language to the user's device.
+If your organization allows it, users can install Office 365 ProPlus languages directly from the Office 365 portal. When users install Office from the **software** page, they select a language from the **Language** drop-down box. If an user need an additional language, they can just re-run the process for each required language. The setup will add the selected language to the user's device.
 
 ## Install multiple languages as part of deploying Office
 If your users don't have permission to install Office languages from the Office 365 portal, you can use the Office Deployment Tool to install Office 365 ProPlus in multiple languages. To do so, edit the language element in the configuration file for the Office Deployment Tool. Fore more details, see [Language element](configuration-options-for-the-office-2016-deployment-tool.md#language-element).
@@ -40,7 +40,7 @@ For information about how to use the Configuration.xml file to specify language 
 ## Install the same languages as the operating system
 When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system and any user on the client device. To do so, use "MatchOS" as the Language ID in the configuration file for the ODT, as shown in the example. 
 
-When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Lanugage ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
+When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Language ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
 
 MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
 
@@ -66,6 +66,9 @@ For details on how to edit the configuration file, see [Configuration options fo
 
 If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you install Office 365 ProPlus. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
+## Conserve network bandwidth when adding language packs
+
+When you use the Office Deployment Tool (ODT) to download the installation files for Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
 ## Related topics
 

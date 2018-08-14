@@ -31,7 +31,7 @@ To work with the service, go to[ Office Customization Tool for Click-to-Run (pre
 
 ## Customize application settings
 
-As part of the Office Customization Tool for Click-to-Run, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. 
+As part of the Office Customization Tool for Click-to-Run, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these settings, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
 ## Learn more
 

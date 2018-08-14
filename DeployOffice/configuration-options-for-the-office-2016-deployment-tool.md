@@ -87,7 +87,9 @@ Defines the products and languages to download or install
 
 ### SourcePath attribute (part of Add element) 
 
-Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  
+Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool. 
+
+Note that when you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
 Example values:
 
@@ -621,7 +623,27 @@ Example values:
 - IgnoreProduct ID="PrjPro"
 
 
+## AppSettings element
 
+Defines application settings for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application settings, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application settings. Note that this tool is still in preview and is subject to change. 
+
+For more details on application settings, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+
+Optional.
+
+### Example
+
+```
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\excel\security"
+          Name="vbawarnings" 
+          Value="3" 
+          Type="REG_DWORD" 
+          App="excel16" 
+          Id="L_VBAWarningsPolicy" />
+  </AppSettings>
+
+```
 ## Related topics
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    

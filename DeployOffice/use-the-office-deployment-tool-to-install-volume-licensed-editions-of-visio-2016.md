@@ -25,7 +25,7 @@ The Office Deployment Tool uses Click-to-Run to do the installation, instead of 
 > [!IMPORTANT]
 > MAK keys that you use for Windows Installer (MSI) installations of Visio and Project won't work with the Office Deployment Tool. You need a different MAK key to deploy volume licensed editions of Visio and Project with the Office Deployment Tool. To get that MAK key, log into the Volume Licensing Service Center (VLSC) and use the key listed under "C2R-P for use with the Office Deployment Tool." 
   
-To begin, [download the most current version](http://go.microsoft.com/fwlink/p/?LinkID=626065) of the Office Deployment Tool from the Microsoft Download Center. Then, edit the Product element in the configuration.xml file, using the appropriate ID from the following table. To use a Generic Volume License Key (GVLK) for volume activation, use the appropriate value in the table for the PIDKEY attribute.
+To begin, [download the most current version](https://go.microsoft.com/fwlink/p/?LinkID=626065) of the Office Deployment Tool from the Microsoft Download Center. Then, edit the Product element in the configuration.xml file, using the appropriate ID from the following table. To use a Generic Volume License Key (GVLK) for volume activation, use the appropriate value in the table for the PIDKEY attribute.
   
 |**Edition**|**ID**|**PIDKEY**|
 |:-----|:-----|:-----|
