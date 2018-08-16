@@ -76,9 +76,10 @@ In more complex deployments, you might have multiple deployment groups that use 
 
 The installation packages are represented as applications in Configuration Manager. For each deloyment group that you defined in your deployment plan, you create a unique Office application using the steps below. For example, for example, if you have two deployment groups, you'll create two Office applications and deploy them to two different collections. 
 
-1. In the Configuration Manager console, go to the **Software Library** workspace, and select the **Office 365 Client Management** node.
-2. Click the **Office 365 Installer** tile in the dashboard to launch the Office 365 Client Installation Wizard. 
-3. On the **Office Setting** page, click **Go To Office Web Page**. Use the online Office Customization Tool to specify settings for this deployment. We recommedn the following options:
+1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
+2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
+3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
+4. On the **Office Settings** page, click on **Go to the Office Customization Tool**, and configure the desired settings for your Office 365 installation. We recommend the following options:
  - Software: Office 365 ProPlus. If you want to include Visio and Project in the installation package, select those as well. [[Fix language.]]
  - Languages: To install the same language as the operating system, choose Match Operating System. You can also select **Fallback to the CDN** to use the Office CDN as a backup source for language packs. [[Add details about how to set up multiple languages and making sure to include all possible languages.]] 
  - Installation channel: Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group and **Semi-Annual Channel** for the broad group.
@@ -86,7 +87,11 @@ The installation packages are represented as applications in Configuration Manag
  - Upgrades: Choose to automatically remove all previous MSI versions of Office and to automatically upgrade 2013 Click-to-Run versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
  - Additional properties: To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
  - Application settings: Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
-5. Click **Submit** in the upper right corner when complete. Finish the Office 365 Client Installation Wizard.
+7. When you complete the configuration, click **Submit** in the upper right of the page. 
+7. On the **Deployment** page, determine if you would like to deploy now or at a later time. If you choose to deploy later, you can find the application in **Software Library** < **Application Management** < **Applications**.  
+8. Confirm the settings on the **Summary** page. 
+9. Click **Next** then click **Close** once the Office 365 Client Installation Wizard completes. 
+
 6. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
 > [!NOTE] 
