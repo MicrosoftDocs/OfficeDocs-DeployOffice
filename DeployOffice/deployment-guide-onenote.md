@@ -74,6 +74,7 @@ If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote fo
 
 The dates for Office 365 ProPlus also apply if you allow your users to install Office 365 ProPlus for themselves from the Office 365 portal. The default update channel for those installs is Semi-Annual Channel.
 
+
 ## Additional information about deploying OneNote
 
 **Checking if OneNote 2016 is being used:** If your users are currently using OneNote 2016, OneNote for Windows 10 won't replace OneNote 2016 on their computers. How do we know if the user has used OneNote 2016? We look at the following things to determine that:

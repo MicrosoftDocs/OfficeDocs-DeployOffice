@@ -50,9 +50,10 @@
 ## [Cloud managed scenario](best-practices/best-practices-cloud-managed-scenario.md)
 ## [Deployment resources](best-practices/best-practices-deployment-resources.md)
 
-# Project & Visio
+# Project, Visio, and OneNote
 ## [Deploy Project](deployment-guide-for-project.md)
 ## [Deploy Visio](deployment-guide-for-visio.md)
+## [Deploy OneNote](deployment-guide-onenote.md)
 ## [Install volume licensed editions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
