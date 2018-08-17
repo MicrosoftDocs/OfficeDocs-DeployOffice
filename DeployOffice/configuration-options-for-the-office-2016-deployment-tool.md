@@ -73,7 +73,6 @@ Defines the products and languages to download or install
      OfficeClientEdition="32"
      Channel="Broad" 
      Version="16.0.8201.2193"
-     ForceUpgrade="FALSE">
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
     <Language ID="ja-jp" />
@@ -146,15 +145,6 @@ Example values:
   </Product>
 </Add>  
 ```
-
-### ForceUpgrade attribute (part of Add element) 
-
-Optional. When set to **True**, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Default is **False**. 
-
-Allowed values: 
-
-- ForceUpgrade="TRUE"
-- ForceUpgrade="FALSE"
 
 ### AllowCdnFallback attribute (part of Add element) 
 
