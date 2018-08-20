@@ -59,21 +59,6 @@ Learn about the different update channels available for Office 365 ProPlus and h
 - [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
 
-## Best practices
-
-Review the recommended guidance and real-world examples from Microsoft about how to deploy and manage Office 365 ProPlus.
-
-- [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
-
-- [Best practices: Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
-
-- [Best practices: Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
- 
-- [Best practices: Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
-
-- [Best practices: Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
-
- 
 ## Reference
 
 Learn about the Office Deployment Tool (ODT), other deployment options, and activation.

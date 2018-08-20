@@ -37,19 +37,6 @@
 ## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 ## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
 
-
-# Best practices
-## [Overview of best practices](best-practices/best-practices.md)
-## [Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
-## [Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
-## [Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
-## [Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
-## [Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
-## [Enterprise managed scenario](best-practices/best-practices-enterprise-managed-scenario.md)
-## [Locally managed scenario](best-practices/best-practices-locally-managed-scenario.md)
-## [Cloud managed scenario](best-practices/best-practices-cloud-managed-scenario.md)
-## [Deployment resources](best-practices/best-practices-deployment-resources.md)
-
 # Project, Visio, and OneNote
 ## [Deploy Project](deployment-guide-for-project.md)
 ## [Deploy Visio](deployment-guide-for-visio.md)
