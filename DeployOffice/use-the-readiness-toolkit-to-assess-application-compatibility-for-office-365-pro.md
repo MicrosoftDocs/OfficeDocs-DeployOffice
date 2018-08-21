@@ -314,9 +314,9 @@ If you are using the command line to create a report, use the -ConcealNames opti
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -ConcealNames
 ```
 
-When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path and file name are replaced with asterisks (\*). For example, "c:\mergers\companyx.docx" will appear as "c:\\*******\co******.docx."
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path, up to 8 characters, and of the file name are replaced with asterisks (\*). For example, "c:\mergersinfo\Q4\companyx.docx" will appear as "c:\\\*\*\*\*\*\*\*\*\co\*\*\*\*\*\*.docx."
 
-When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report.
+When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report. The file-names.log is saved to a temp folder in the user's AppData folder. For example, for user01, the file would be saved under C:\Users\user01\AppData\Local\Readiness Toolkit Temp\\. 
 
 <a name="usage"> </a>
 
@@ -328,7 +328,10 @@ To collect add-in usage information, install the most current version of the Rea
 
 The data generated and collected includes when the add-in is loaded and used, and if the add-in crashes. This information is stored in the registry of the computer on which the usage agent runs.
 
-We recommended that you allow the usage agent to run for at least 30 days, to ensure you have good coverage of your users and their usage behavior. Once the monitoring period is complete, create a readiness report to collect the information and display it in a report. After you have the information you need, turn off the usage agent by changing the Group Policy setting.
+We recommend that you allow the usage agent to run for at least 30 days, to ensure you have good coverage of your users and their usage behavior. Once the monitoring period is complete, create a readiness report to collect the information and display it in a report. After you have the information you need, turn off the usage agent by changing the Group Policy setting.
+
+> [!NOTE]
+> In this release of the Readiness Toolkit, no add-in usage information is collected on computers that are running Office 2016.
 
 <a name="BKMK_AddInfo"> </a>
 
