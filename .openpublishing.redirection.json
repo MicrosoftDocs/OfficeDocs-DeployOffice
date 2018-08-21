@@ -147,7 +147,7 @@
     }, 
     {
         "source_path": "DeployOffice/best-practices/best-practices-office-telemetry.md",
-        "redirect_url": "https://docs.microsoft.com/DeployOffice/compat/compatibility-and-telemetry-in-office",
+        "redirect_url": "https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro",
         "redirect_document_id": true
     }, 
     {
@@ -302,7 +302,7 @@
     }, 
     {
         "source_path": "DeployOffice/best-practices/best-practices-links-for-administration-education.md",
-        "redirect_url": "https://mva.microsoft.com/product-training/office-365#!jobf=IT%20Pros",
+        "redirect_url": "https://mva.microsoft.com",
         "redirect_document_id": true
     }, 
     {
