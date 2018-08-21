@@ -248,7 +248,7 @@
     {
         "source_path": "DeployOffice/best-practices/best-practices-deploying-office-2016-to-mac-clients.md",
         "redirect_url": "https://docs.microsoft.com/deployoffice/mac/deployment-guide-for-office-for-mac",
-        "redirect_document_id": true 
+        "redirect_document_id": false 
     }, 
     {
         "source_path": "DeployOffice/best-practices/best-practices-office-2016-mac-client-install-for-cloud-managed.md",
