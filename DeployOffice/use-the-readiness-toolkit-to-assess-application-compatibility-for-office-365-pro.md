@@ -311,7 +311,7 @@ If you're using the UI wizard, begin by selecting either "Most recently used Off
 If you are using the command line to create a report, use the -ConcealNames option, as shown in the following example.
 
 ```
-ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -ConcealNames
+ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -concealnames
 ```
 
 When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path, up to 8 characters, and of the file name are replaced with asterisks (\*). For example, "c:\mergersinfo\Q4\companyx.docx" will appear as "c:\\\*\*\*\*\*\*\*\*\co\*\*\*\*\*\*.docx."
@@ -333,11 +333,13 @@ We recommend that you allow the usage agent to run for at least 30 days, to ensu
 > [!NOTE]
 > In this release of the Readiness Toolkit, no add-in usage information is collected on computers that are running Office 2016.
 
-<a name="silverflash"> </a>
+<a name="controls"> </a>
 
 ## Detect Silverlight or Flash controls
 
-Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Office 365 ProPlus. To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
+Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Office 365 ProPlus. For more information about this, [read this TechCommunity post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
+
+To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
 
 
 <a name="BKMK_AddInfo"> </a>
