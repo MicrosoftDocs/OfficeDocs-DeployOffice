@@ -337,7 +337,7 @@ We recommend that you allow the usage agent to run for at least 30 days, to ensu
 
 ## Detect Silverlight or Flash controls
 
-Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Office 365 ProPlus. For more information about this, [read this TechCommunity post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
+Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Office 365 ProPlus. For more information about this, [read this Tech Community post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
 
 To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
 
