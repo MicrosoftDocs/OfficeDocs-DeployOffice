@@ -193,7 +193,7 @@ The following table lists the possible severities that can appear in a readiness
 |Source file reference |Unique value used to identify the file name in the file-names.log file when concealing file names when doing a scan. For more information, see [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports). |9FE4E090A33CDA8F4502E7E5672464C8F40E79E353DC98FF8CA84846C7D99822|
 |RT Version|Version of the Readiness Toolkit installed on the computer running the scan  | 1.0.0.0 |
    
-<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
+<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://docs.microsoft.com/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
   
 <sup>2</sup> **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
   
