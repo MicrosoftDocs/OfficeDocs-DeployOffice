@@ -212,6 +212,8 @@ The following table provides a list of the different tabs (worksheets) that are 
 You can adjust what information is shown in the add-in report by selecting choices from the drop-down lists on the Add-in Summary tab, and then refreshing the report. For example, you can adjust the report to only show information about Access and Excel add-ins.
   
 By default, add-ins that are shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises won't need to worry about application compatibility of add-ins which are shipped with Office.
+
+If you're [collecting add-in usage information](collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
   
 If you plan to deploy the 64-bit version of Office 365 ProPlus, be sure to select "64-bit" from the drop-down list and refresh the report. This provides 64-bit specific readiness information about the add-ins. The default selection for reports is 32-bit.
   
@@ -292,6 +294,8 @@ It's important to note that when you run the Readiness Report Creator from the c
 To create a consolidated Excel report from these various command line scans, you need to run the UI wizard version of the Readiness Report Creator. For the information source, select "Previous readiness results saved together in a local folder or network share," and then specify the location where you saved all the files for the scans. The Readiness Report Creator then consolidates the information from the JSON files into a readiness report in a single Excel file.
   
 Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
+
+By default, the Readiness Toolkit will spend 30 seconds scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 30 seconds to scan a file.
 
 <a name="labels"> </a>
 
