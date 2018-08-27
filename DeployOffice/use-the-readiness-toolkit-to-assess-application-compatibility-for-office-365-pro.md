@@ -21,7 +21,7 @@ description: "Provides IT Pros with info on how the Readiness Toolkit for Office
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. 
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -213,7 +213,7 @@ You can adjust what information is shown in the add-in report by selecting choic
   
 By default, add-ins that are shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises won't need to worry about application compatibility of add-ins which are shipped with Office.
 
-If you're [collecting add-in usage information](collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
+If you're [collecting add-in usage information](#collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
   
 If you plan to deploy the 64-bit version of Office 365 ProPlus, be sure to select "64-bit" from the drop-down list and refresh the report. This provides 64-bit specific readiness information about the add-ins. The default selection for reports is 32-bit.
   
