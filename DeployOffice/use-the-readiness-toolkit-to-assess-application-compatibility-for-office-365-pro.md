@@ -183,13 +183,15 @@ The following table lists the possible severities that can appear in a readiness
 |FileStatus  <br/> |Classification of the status of the file that was processed.  <br/> |Password protected  <br/> |
 |64Bit  <br/> |Specifies if the issues identified is 64-bit specific.  <br/> |Yes  <br/> |
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
-|DeviceName  <br/> |Name of the device where the scan was performed.  <br/> |Laptop01  <br/> |
+|DeviceName  <br/> |Name of the computer where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
 |Label1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
 |Label2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
 |Label3 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Finance <br/>|
 |Label4 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Controller <br/>|
+|Source file reference |Unique value used to identify the file name in the file-names.log file when concealing file names when doing a scan. For more information, see [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports). |9FE4E090A33CDA8F4502E7E5672464C8F40E79E353DC98FF8CA84846C7D99822|
+|RT Version|Version of the Readiness Toolkit installed on the computer running the scan  | 1.0.0.0 |
    
 <sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
   
@@ -242,6 +244,9 @@ The following table lists the possible readiness statuses that you can see in th
 |Readiness status (32-bit)  <br/> |The readiness status for the add-in. Advanced reports only. <br/> <br/> See the table above for a list of possible readiness statuses.  <br/><br/> Note: If you chose "64-bit" from the drop-down list on the "Add-in Summary" tab, this column name displays as "(64-bit)" instead.  <br/> |
 |Remarks  <br/> |Additional information, if available, about the readiness status of the add-in. Advanced reports only.  <br/> |
 |More information  <br/> |Link to additional readiness information about the add-in. Advanced reports only.  <br/> |
+|Total Device Installs|Number of devices on which the add-in is installed. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).|5|
+|Total devices add-in used|Number of devices on which the add-in has been used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).|3|
+|Add-in used since *{date}*|Indication of whether the add-in has been used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).|Yes|
    
 <a name="BKMK_Enterprise"> </a>
 
@@ -388,7 +393,7 @@ The following table provides a list of the information that is sent to Microsoft
   
 |**Data**|**Description**|**Example**|
 |:-----|:-----|:-----|
-|DevicesScanned  <br/> |Number of devices that were scanned.  <br/> |DevicesScanned: 23  <br/> |
+|DevicesScanned  <br/> |Number of computers that were scanned.  <br/> |DevicesScanned: 23  <br/> |
 |UniqueUsers  <br/> |Count of users included in scan.  <br/> |UniqueUsers: 14  <br/> |
 |Rule  <br/> |Count of how many times a specific rule was found to apply to the VBA macros scanned. A GUID is used to uniquely identify the rule.  <br/> |48f05b1d-c8ad-4d0c-9453-1abdf007b2db: 23 <br/> <br/> 74db65ab-76f3-43fb-997d-0d9750efb527: 2  <br/> |
 |FilesWithIssues  <br/> |Count of unique files with compatibility issues.  <br/> |FilesWithIssues: 320  <br/> |
