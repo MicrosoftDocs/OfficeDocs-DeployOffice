@@ -295,7 +295,7 @@ To create a consolidated Excel report from these various command line scans, you
   
 Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
 
-By default, the Readiness Toolkit will spend 30 seconds scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 30 seconds to scan a file.
+By default, the Readiness Toolkit will spend 2 minutes scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 2 minutes to scan a file.
 
 <a name="labels"> </a>
 
