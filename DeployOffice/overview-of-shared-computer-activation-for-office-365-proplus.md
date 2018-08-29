@@ -101,11 +101,7 @@ Microsoft allows a single user to activate Office 365 ProPlus on a reasonable nu
   
 **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Office is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Office 365 ProPlus. For more information, see [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
     
-If you don't use single sign-on, you should consider using roaming profiles and include the following two folders as part of the roaming profile:
-    
-  - %localappdata%\\Microsoft\\Office\\16.0\\Licensing
-    
-  - %localappdata%\\Microsoft\\Credentials
+If you don't use single sign-on, you should consider using roaming profiles and include the %localappdata%\\Microsoft\\Office\\16.0\\Licensing folder as part of the roaming profile.
     
 **Licensing token roaming** Starting with Version 1704 of Office 365 ProPlus, you can configure the licensing token to roam with the user's profile or be located on a shared folder on the network. Previously, the licensing token was always saved to a specific folder on the local computer and was associated with that specific computer. In those cases, if the user signed in to a different computer, the user would be prompted to activate Office on that computer in order to get a new licensing token. The ability to roam the licensing token is especially helpful for non-persistent VDI scenarios.
   
