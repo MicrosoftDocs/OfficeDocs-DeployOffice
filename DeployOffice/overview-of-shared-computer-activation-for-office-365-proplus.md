@@ -3,7 +3,6 @@ title: "Overview of shared computer activation for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 1/25/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -12,9 +11,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 836f882c-8ff6-4f19-8b24-0212e0111c94
-
-description: "Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For example, several nurses at a hospital connect to the same remote server to use their applications or a group of workers share a computer at a factory."
+description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Office 365 ProPlus with Remote Desktop Services (RDS) "
 ---
 
 # Overview of shared computer activation for Office 365 ProPlus
