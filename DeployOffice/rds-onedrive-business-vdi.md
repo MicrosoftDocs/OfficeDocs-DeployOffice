@@ -18,7 +18,7 @@ description: Learn about OneDrive for Business in VDI environments
 
 For information about using OneDrive for Business in virtualized environments, including Remote Desktop Services, check out the "Windows specific restrictions and limitations" information in [Restrictions and limitations when you sync files and folders](https://support.microsoft.com/help/3125202/restrictions-and-limitations-when-you-sync-files-and-folders).
 
-The OneDrive for Business sync app isn’t supported for client sessions that are hosted on Windows 2008 Terminal Services or Windows 2012 Remote Desktop Services (RDS). This includes both persistent and non-persistent Virtual Desktop Infrastructure (VDI).
+The OneDrive for Business sync app isn’t supported for client sessions that are hosted on Windows 2008 Terminal Services or Windows 2012 Remote Desktop Services (RDS). This includes non-persistent Virtual Desktop Infrastructure (VDI). Persistent VDI is supported by the OneDrive desktop app.
 
 For the OneDrive for Business sync app to work as designed, the following requirements must be met: 
 
