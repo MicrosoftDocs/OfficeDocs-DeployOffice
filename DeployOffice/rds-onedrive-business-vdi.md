@@ -16,11 +16,11 @@ description: Learn about OneDrive for Business in VDI environments
 
 *Applies To: Windows Server (Semi-Annual Channel), Windows Server 2016*
 
-For information about using OneDrive for Business in virtualized environments, including Remote Desktop Services, check out the "Windows specific restrictions and limitations" information in [Restrictions and limitations when you sync files and folders](https://support.microsoft.com/help/3125202/restrictions-and-limitations-when-you-sync-files-and-folders).
+For information about using OneDrive in virtualized environments, including Remote Desktop Services, check out the "Windows specific restrictions and limitations" information in [Restrictions and limitations when you sync files and folders](https://support.microsoft.com/help/3125202/restrictions-and-limitations-when-you-sync-files-and-folders).
 
-The OneDrive for Business sync app isn’t supported for client sessions that are hosted on Windows 2008 Terminal Services or Windows 2012 Remote Desktop Services (RDS). This includes both persistent and non-persistent Virtual Desktop Infrastructure (VDI).
+The OneDrive Desktop App isn’t supported for client sessions that are hosted on Windows 2008 Terminal Services or Windows 2012 Remote Desktop Services (RDS) in non-persistent environments. Persistent Virtual Desktop Infrastructure (VDI) environments are supported.
 
-For the OneDrive for Business sync app to work as designed, the following requirements must be met: 
+For the OneDrive Desktop App to work as designed, the following requirements must be met: 
 
 - The application must be installed on the local computer.
 - The user must be able to write to the user profile.
