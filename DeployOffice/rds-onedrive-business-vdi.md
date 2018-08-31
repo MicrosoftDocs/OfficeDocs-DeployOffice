@@ -26,3 +26,6 @@ For the OneDrive Desktop App to work as designed, the following requirements mus
 - Data that's written to the user profile must be saved to the local hard disk and be available without a network connection.
 
 Currently we recommend that OneDrive customers in these environments leverage our OneDrive Office 365 web portal or download our OneDrive [UWP app](https://www.microsoft.com/en-us/store/p/onedrive/9wzdncrfj1p3) (Universal Windows Platform) found in the Microsoft Store.
+
+> [!NOTE]
+> The OneDrive UWP app isn't available for Windows Server 2016.
