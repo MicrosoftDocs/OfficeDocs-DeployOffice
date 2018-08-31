@@ -7,7 +7,6 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.date: 09/28/2016
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: Learn about using Outlook 2016, OneDrive for Business, and Skype for Business in RDSH and VDI deployments
@@ -29,7 +28,7 @@ Outlook 2016 has a solution to tackle this in cached mode by providing a new ser
 [Learn how to configure cached exchange mode in Outlook 2016](https://docs.microsoft.com/exchange/outlook/cached-exchange-mode)
 
 ## OneDrive for Business
-The OneDrive for Business sync client is currently not supported for multi-user environments (pooled VDI and RDSH). Users can connect to their resources using the web interface.
+The OneDrive Desktop App isn’t supported for client sessions that are hosted on Windows 2008 Terminal Services or Windows 2012 Remote Desktop Services (RDS) in non-persistent environments. Persistent Virtual Desktop Infrastructure (VDI) environments are supported. For more information, see [OneDrive for Business and VDI environments](rds-onedrive-business-vdi.md).
 
 ## Skype for Business
 Skype for Business is not supported for RDSH deployments. For VDI deployments check out the documentation on [planning for Skype for Business in VDI environments](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/vdi-environments).
