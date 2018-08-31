@@ -7,7 +7,6 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.date: 02/23/2018
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: Learn about OneDrive for Business in VDI environments
