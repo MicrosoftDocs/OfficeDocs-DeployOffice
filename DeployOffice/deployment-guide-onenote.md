@@ -14,11 +14,16 @@ description: "Provides an overview for admins on how to deploy OneNote 2016 or O
 
 # Deployment guide for OneNote
 
- There are two Windows versions of OneNote that IT Pros can deploy to users in their organizations: OneNote 2016 and OneNote for Windows 10. Currently, OneNote 2016 is installed by default when you deploy Office 365 ProPlus, or when you deploy a volume licensed version of Office 2016, such as Office Standard 2016. OneNote for Windows 10 is installed by default on computers running Windows 10 or users can install it directly from the [Microsoft Store](https://www.microsoft.com/p/onenote/9wzdncrfhvjl?activetab=pivot%3aoverviewtab).
+There are two Windows versions of OneNote that IT Pros can deploy to users in their organizations: OneNote 2016 and OneNote for Windows 10. Currently, OneNote 2016 is installed by default when you deploy Office 365 ProPlus, or when you deploy a volume licensed version of Office 2016, such as Office Standard 2016. OneNote for Windows 10 is installed by default on computers running Windows 10 or users can install it directly from the [Microsoft Store](https://www.microsoft.com/p/onenote/9wzdncrfhvjl?activetab=pivot%3aoverviewtab).
 
-But, starting with the release of Office 2019 later this year, OneNote for Windows 10 will replace OneNote 2016 as the default OneNote experience for both Office 365 ProPlus and Office 2019 on computers running Windows 10.  New installations of Office will get OneNote for Windows 10 instead of OneNote 2016. Also, existing Office 365 ProPlus users will get updated to OneNote for Windows 10 if they haven’t used OneNote 2016.
+But, in the next several months, the following changes are coming to OneNote for new Office deployments:
 
-Even with this change, you’ll still be able to deploy OneNote 2016 to your users. If your users are currently using OneNote 2016, there won’t be any change for them. Also, this change doesn’t affect other versions of OneNote, such as OneNote for Mac, OneNote for Android, or OneNote Online.
+- If you're deploying Office 365 ProPlus on a computer running Windows 10, OneNote 2016 will no longer be installed by default when you're installing Office 365 ProPlus from the Office 365 portal or by using System Center Configuration Manager (Current Branch). OneNote for Windows 10 will be the default OneNote experience.
+- If you're deploying Office 2019, OneNote for Windows 10 will be the default OneNote experience. *(A specific release date for Office 2019 hasn't been announced yet.)*
+
+If you decide later that your users need OneNote 2016, there will be ways to add OneNote 2016, such as by using the Office Deployment Tool.
+ 
+These changes don't affect existing installations of OneNote for Office 365 ProPlus or Office 2016. Also, these changes don’t affect other versions of OneNote, such as OneNote for Mac, OneNote for Android, or OneNote Online.
 
 ## Choose the version of OneNote to deploy to your users
 
@@ -37,16 +42,18 @@ Users can use both OneNote 2016 and OneNote for Windows 10 on the same computer.
 
 ## How to deploy OneNote 2016
 
-You can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or enterprise deployment software, such as System Center Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
+You can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or enterprise deployment software, such as Configuration Manager, to deploy Office 365 ProPlus with OneNote 2016.
 
 By default, OneNote 2016 is installed when you deploy Office 365 ProPlus by using the Office Deployment Tool. If you don't want OneNote 2016 installed, include the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in the configuration.xml file that's used by the Office Deployment Tool.
 
 If you're using Configuration Manager (Current Branch) and the Office 365 Installer to deploy Office 365 ProPlus, be sure that OneNote 2016 is selected to be included as part of the installation of Office 365 ProPlus. Currently, OneNote 2016 is installed by default when using the Office 365 Installer.
 
-Later this year, when OneNote for Windows 10 becomes the default version, you'll need to keep these two things in mind:
+In the coming months, when OneNote for Windows 10 becomes the default version for new Office 365 ProPlus deployments, you'll need to keep these things in mind:
 
+- If you're installing Office 365 ProPlus with the Office Deployment Tool, OneNote 2016 will still be installed by default.
 - If you're using the Office 365 Installer in Configuration Manager (Current Branch), OneNote 2016 will be excluded, by default, from installations of Office 365 ProPlus. But, you can easily include OneNote 2016 as part of the installation by making a simple setting change in the Office 365 Installer UI. *(Older versions of the Office 365 Installer will still include OneNote 2016 by default, but you can exclude OneNote 2016 with a simple setting change in the UI.)*
-- If an existing installation of Office 365 ProPlus gets updated and OneNote 2016 is removed, but the user needs to start using OneNote 2016, you can reinstall OneNote 2016 by using the Office Deployment Tool. When you run the Office installation process again on that computer, it will add OneNote 2016 without doing a complete reinstallation of Office 365 ProPlus. You can also reinstall OneNote 2016 by using Configuration Manager (Current Branch) if you have selected OneNote 2016 in the Office 365 Installer UI.  
+- If you're installing Office 365 ProPlus from the Office 365 portal, OneNote 2016 won't be installed. There will be no way to include OneNote 2016 when installing from the Office 365 portal.
+- If OneNote 2016 isn't installed, but your users need to start using it, you can install OneNote 2016 by using the Office Deployment Tool. When you run the Office installation process again on that computer, it will add OneNote 2016 without doing a complete reinstallation of Office 365 ProPlus. You can also install OneNote 2016 by using Configuration Manager (Current Branch) if you have selected OneNote 2016 in the Office 365 Installer UI.  
 
 > [!NOTE]
 > The information in this section will also apply if you're deploying a volume licensed version of Office 2019 when it's released later this year. *(A specific release date for Office 2019 hasn't been announced yet.)* 
@@ -76,14 +83,6 @@ The dates for Office 365 ProPlus also apply if you allow your users to install O
 
 
 ## Additional information about deploying OneNote
-
-**Checking if OneNote 2016 is being used:** If your users are currently using OneNote 2016, OneNote for Windows 10 won't replace OneNote 2016 on their computers. How do we know if the user has used OneNote 2016? We look at the following things to determine that:
-
-- Is the "first run" key for OneNote 2016 enabled in the registry for the current user?
-- Does any user on the computer have a “OneNote Notebooks” folder in the root of their Documents folder? 
-- Has OneNote 2016 sent a message to the Office Updater identifying that it’s been used on that computer?
-
-If any of these are true, OneNote 2016 will be identified as “in use” and we won't update that computer to OneNote for Windows 10. We'll always err on the side of caution, so we won’t take any action if there’s any reason for us to suspect that OneNote 2016 has been used before on that computer.
 
 **Configure OneNote 2016 settings:** You can use Group Policy to configure certain OneNote 2016 settings for your users. To do that, download the latest [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement those policy settings by using Active Directory Domain Services (AD DS). Group Policy can't be used with OneNote for Windows 10.
 
