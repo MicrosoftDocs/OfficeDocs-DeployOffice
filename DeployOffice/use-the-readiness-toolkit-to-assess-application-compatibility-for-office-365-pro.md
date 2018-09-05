@@ -262,6 +262,9 @@ Along with the UI wizard version of the Readiness Report Creator, there is also 
 If you have your users run the UI wizard version of the Readiness Report Creator, you end up with separate Excel files, one for each user. That makes it difficult to see readiness from a departmental or office-wide perspective. You also have to rely on the users to run the Readiness Report Creator and follow the instructions correctly. 
   
 The better alternative might be to use the command line capabilities of the Readiness Report Creator and use a script to run the Readiness Report Creator to collect the information on behalf of the user. You can save the files created by the Readiness Report Creator to a network share. If you do this, make sure that the appropriate write permissions are given to the share.
+
+> [!NOTE]
+> If you're running the Readiness Toolkit by using System Center Configuration Manager, or similar enterprise software deployment tools, be sure to deploy the package using the user context, instead of the system context. Otherwise, the Readiness Toolkit won't be able to read the most recently used (MRU) information in the current user's registry hive on the computer.
   
 You can see a list of the available command line options by opening a command prompt, navigating to the folder where you installed the Readiness Toolkit, and then typing the following command:
   
@@ -412,6 +415,15 @@ The following table provides a list of the information that is sent to Microsoft
 |Limitedremediationrequired  <br/> |Count of unique files that require limited remediation  <br/> |Limitedremediationrequired: 12  <br/> |
 |Minimalvalidationrequired  <br/> |Count of unique files that require minimal validation.  <br/> |Minimalvalidationrequired: 22  <br/> |
 |CodeDesignChanges  <br/> |Count of unique files that contain use of features that we would recommend changes.  <br/> |CodeDesignChanges: 1  <br/> |
+|DevicesWithNoMacros|Number of devices that didn't have macro enabled files.|DevicesWithNoMacros: 12|
+|DevicesWithDeclares|Number of devices scanned that included macros that used Declare statements.|DevicesWithDeclares: 12|
+|DevicesWhichRequireSignificantRemediation|Number of devices that contain macro files that require significant remediation.|DevicesWhichRequireSignificantRemediation: 12|
+|DevicesBlockedFromUpgrade|Number of devices that contain macros that require remediation to be unblocked from upgrading to Office 365 ProPlus.|DevicesBlockedFromUpgrade: 1|
+|DevicesWithMacrosWithIssues|Number of devices that contain compatibility issues with macros.|DevicesWithMacrosWithIssues: 2|
+|DevicesWhichRequireLimitedRemediation|Number of devices that contain macro files that require limited remediation.|DevicesWhichRequireLimitedRemediation: 12|
+|DevicesWhichRequireMinimalValidation|Number of devices that contain macro files that require minimal validation.|DevicesWhichRequireMinimalValidation: 12|
+|DevicesWithMacrosWithoutIssues|Number of devices that contain macros, but don’t have any compatibility issues.|DevicesWithMacrosWithoutIssues: 12|
+|DevicesWithMacros|Number of devices that contain macro files.|DevicesWithMacros: 12|
    
 The following table provides a list of the information that is sent to Microsoft about the add-ins that are found during a scan, along with examples.
   
