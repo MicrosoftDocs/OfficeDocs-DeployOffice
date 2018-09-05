@@ -77,7 +77,7 @@ Also, there a few limitations about the Readiness Report Creator that you should
   
 - The Readiness Report Creator can't scan password protected files. If you try to scan one of these files, the file shows up as "Password protected" in the report.
     
-- The Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report.
+- By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report. For a possible workaround, see [How to scan cloud=based files](#how-to-scan-cloudbased-files).
     
 - The Readiness Report Creator lists each issue with an Office document in a separate row in an Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
     
@@ -353,6 +353,14 @@ Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from act
 
 To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
 
+<a name="cloudfiles"> </a>
+
+## How to scan cloud=based files
+
+By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report.
+
+One possible workaround is to scan the local cache of these cloud-based files on the user's computer. If the files are only stored in a cloud-based location, you can create a mapped network drive to a OneDrive or SharePoint share. Then, you can have Readiness Report Creator scna that drive. But, when this location is scanned, the files must be downloaded in memory to perform the scan. Depending on the number and size of those files, this could result in the scan taking significantly longer and using up a considerable amount of network bandwidth.
+
 
 <a name="BKMK_AddInfo"> </a>
 
@@ -424,6 +432,8 @@ The following table provides a list of the information that is sent to Microsoft
 |DevicesWhichRequireMinimalValidation|Number of devices that contain macro files that require minimal validation.|DevicesWhichRequireMinimalValidation: 12|
 |DevicesWithMacrosWithoutIssues|Number of devices that contain macros, but don’t have any compatibility issues.|DevicesWithMacrosWithoutIssues: 12|
 |DevicesWithMacros|Number of devices that contain macro files.|DevicesWithMacros: 12|
+|DevicesSafeToUpgrade|Number of devices are ready to upgrade to Office 365 ProPlus.|DevicesSafeToUpgrade: 12|
+|DevicesWithOlderToolVersion|Number of devices that are using an older version of the Readiness Toolkit.|DevicesWithOlderToolVersion: 12|
    
 The following table provides a list of the information that is sent to Microsoft about the add-ins that are found during a scan, along with examples.
   
