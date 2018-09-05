@@ -75,8 +75,8 @@ The change to the default installation behavior for OneNote will take effect at 
 If you’re deploying Office 2019 to your users, OneNote for Windows 10 will be the default when Office 2019 is released later this year. *(A specific release date for Office 2019 hasn’t been announced yet.)* 
 
 If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote for Windows 10 becomes the default installation depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you’re using. The following are the approximate dates for each update channel:
- - Monthly Channel: September 2018
- - Semi-Annual Channel (Targeted): September 2018
+ - Monthly Channel: by end of September 2018
+ - Semi-Annual Channel (Targeted): by end of September 2018
  - Semi-Annual Channel: January 2019
 
 The dates for Office 365 ProPlus also apply if you allow your users to install Office 365 ProPlus for themselves from the Office 365 portal. The default update channel for those installs is Semi-Annual Channel.
@@ -87,6 +87,8 @@ The dates for Office 365 ProPlus also apply if you allow your users to install O
 **Configure OneNote 2016 settings:** You can use Group Policy to configure certain OneNote 2016 settings for your users. To do that, download the latest [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement those policy settings by using Active Directory Domain Services (AD DS). Group Policy can't be used with OneNote for Windows 10.
 
 **Office 365 Business:** These changes also apply to Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium.
+
+**Supported languages:** While both OneNote 2016 and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The list of supported languages are available here: [OneNote 2016](https://support.office.com/article/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.office.com/article/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone)
 
 ## Related topics
 
