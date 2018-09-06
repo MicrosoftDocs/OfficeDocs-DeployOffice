@@ -21,7 +21,7 @@ description: "Provides IT Pros with info on how the Readiness Toolkit for Office
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.2.18243, and was released on September 6, 2018. We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -65,8 +65,6 @@ Before installing and using the Readiness Toolkit, you should be aware of the fo
 - Microsoft .NET Framework 4.5.1 or later
     
 - Excel 2010 or later
-    
-- [Microsoft Power Query for Excel add-in](https://www.microsoft.com/download/details.aspx?id=39379) (if you're not using Excel 2016)
     
 - [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) (only if you're using a Click-to-Run version of Access)
     
