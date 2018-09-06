@@ -75,7 +75,7 @@ Also, there a few limitations about the Readiness Report Creator that you should
   
 - The Readiness Report Creator can't scan password protected files. If you try to scan one of these files, the file shows up as "Password protected" in the report.
     
-- By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report. For a possible workaround, see [How to scan cloud-based files](#how-to-scan-cloudbased-files).
+- By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report. For a possible workaround, see [How to scan cloud-based files](#how-to-scan-cloud-based-files).
     
 - The Readiness Report Creator lists each issue with an Office document in a separate row in an Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
     
