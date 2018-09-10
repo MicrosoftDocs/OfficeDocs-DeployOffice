@@ -13,15 +13,15 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
-ms.assetid: 9b0b48f2-1937-4b10-8274-1ccdb2f5d019
-description: "The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus."
+description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Office 365 ProPlus"
 ---
+
 
 # Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.1.18122, and was released on May 3, 2018. We recommend that you always download and use the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). The most current version is 1.2.18243, and was released on September 7, 2018. We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
   
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -39,6 +39,10 @@ The following information is provided to help you use the Readiness Report Creat
 - [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise), and using a command-line version of the Readiness Report Creator to scan multiple computers.
  
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
+
+- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports) to show you how to conceal senstive information about file paths and names. 
+
+- [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports) to get better insights into which add-ins are used most often within your organization and by whom.
     
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
     
@@ -62,8 +66,6 @@ Before installing and using the Readiness Toolkit, you should be aware of the fo
     
 - Excel 2010 or later
     
-- [Microsoft Power Query for Excel add-in](https://www.microsoft.com/download/details.aspx?id=39379) (if you're not using Excel 2016)
-    
 - [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) (only if you're using a Click-to-Run version of Access)
     
 > [!NOTE]
@@ -73,7 +75,7 @@ Also, there a few limitations about the Readiness Report Creator that you should
   
 - The Readiness Report Creator can't scan password protected files. If you try to scan one of these files, the file shows up as "Password protected" in the report.
     
-- The Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report.
+- By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report. For a possible workaround, see [How to scan cloud-based files](#how-to-scan-cloud-based-files).
     
 - The Readiness Report Creator lists each issue with an Office document in a separate row in an Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
     
@@ -179,15 +181,17 @@ The following table lists the possible severities that can appear in a readiness
 |FileStatus  <br/> |Classification of the status of the file that was processed.  <br/> |Password protected  <br/> |
 |64Bit  <br/> |Specifies if the issues identified is 64-bit specific.  <br/> |Yes  <br/> |
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
-|DeviceName  <br/> |Name of the device where the scan was performed.  <br/> |Laptop01  <br/> |
+|DeviceName  <br/> |Name of the computer where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
 |Label1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
 |Label2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
 |Label3 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Finance <br/>|
 |Label4 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|Controller <br/>|
+|Source file reference |Unique value used to identify the file name in the file-names.log file when concealing file names when doing a scan. For more information, see [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports). |9FE4E090A33CDA8F4502E7E5672464C8F40E79E353DC98FF8CA84846C7D99822|
+|RT Version|Version of the Readiness Toolkit installed on the computer running the scan  | 1.0.0.0 |
    
-<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://msdn.microsoft.com/vba/language-reference-vba/articles/64-bit-visual-basic-for-applications-overview ).
+<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://docs.microsoft.com/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
   
 <sup>2</sup> **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
   
@@ -206,6 +210,8 @@ The following table provides a list of the different tabs (worksheets) that are 
 You can adjust what information is shown in the add-in report by selecting choices from the drop-down lists on the Add-in Summary tab, and then refreshing the report. For example, you can adjust the report to only show information about Access and Excel add-ins.
   
 By default, add-ins that are shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises won't need to worry about application compatibility of add-ins which are shipped with Office.
+
+If you're [collecting add-in usage information](#collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
   
 If you plan to deploy the 64-bit version of Office 365 ProPlus, be sure to select "64-bit" from the drop-down list and refresh the report. This provides 64-bit specific readiness information about the add-ins. The default selection for reports is 32-bit.
   
@@ -238,6 +244,9 @@ The following table lists the possible readiness statuses that you can see in th
 |Readiness status (32-bit)  <br/> |The readiness status for the add-in. Advanced reports only. <br/> <br/> See the table above for a list of possible readiness statuses.  <br/><br/> Note: If you chose "64-bit" from the drop-down list on the "Add-in Summary" tab, this column name displays as "(64-bit)" instead.  <br/> |
 |Remarks  <br/> |Additional information, if available, about the readiness status of the add-in. Advanced reports only.  <br/> |
 |More information  <br/> |Link to additional readiness information about the add-in. Advanced reports only.  <br/> |
+|Total Device Installs|Number of devices on which the add-in is installed. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).|5|
+|Total devices add-in used|Number of devices on which the add-in has been used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).|3|
+|Add-in used since *{date}*|Indication of whether the add-in has been used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).|Yes|
    
 <a name="BKMK_Enterprise"> </a>
 
@@ -251,6 +260,9 @@ Along with the UI wizard version of the Readiness Report Creator, there is also 
 If you have your users run the UI wizard version of the Readiness Report Creator, you end up with separate Excel files, one for each user. That makes it difficult to see readiness from a departmental or office-wide perspective. You also have to rely on the users to run the Readiness Report Creator and follow the instructions correctly. 
   
 The better alternative might be to use the command line capabilities of the Readiness Report Creator and use a script to run the Readiness Report Creator to collect the information on behalf of the user. You can save the files created by the Readiness Report Creator to a network share. If you do this, make sure that the appropriate write permissions are given to the share.
+
+> [!NOTE]
+> If you're running the Readiness Toolkit by using System Center Configuration Manager, or similar enterprise software deployment tools, be sure to deploy the package using the user context, instead of the system context. Otherwise, the Readiness Toolkit won't be able to read the most recently used (MRU) information in the current user's registry hive on the computer.
   
 You can see a list of the available command line options by opening a command prompt, navigating to the folder where you installed the Readiness Toolkit, and then typing the following command:
   
@@ -284,6 +296,8 @@ To create a consolidated Excel report from these various command line scans, you
   
 Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
 
+By default, the Readiness Toolkit will spend 2 minutes scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 2 minutes to scan a file.
+
 <a name="labels"> </a>
 
 ## Use labels to categorize and filter data in reports
@@ -295,7 +309,57 @@ You can specify these labels by using the **Specify custom labels to use with th
 
 > [!NOTE]
 > If you're using the Office Telemetry Dashboard and have already configured tags (labels), the Readiness Toolkit automatically collects those labels during its scan of the user's computer and will make them available in its reports. But, labels you specify for the Readiness Toolkit won't appear in the Office Telemetry Dashboard.
-  
+
+<a name="conceal"> </a>
+
+## Manage the privacy of data collected in reports
+
+It’s common for users in an organization to save Office files using file names that contain sensitive or confidential information. To protect the privacy of users and to help prevent revealing sensitive information, the Readiness Toolkit allows you to create a report that conceals the file paths and names of documents identified during a scan. You can create a report that conceals this information either by running the Readiness Report Creator from the UI wizard or from the command line. 
+
+If you're using the UI wizard, begin by selecting either "Most recently used Office documents and installed add-ins on this computer" or "Office documents in a local folder or network share" as the type of report that you want to create. Then, on the next page of the wizard, select the **Conceal file names and paths** check box, before continuing on.
+
+If you are using the command line to create a report, use the -ConcealNames option, as shown in the following example.
+
+```
+ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -concealnames
+```
+
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path, up to 8 characters, and of the file name are replaced with asterisks (\*). For example, "c:\mergersinfo\Q4\companyx.docx" will appear as "c:\\\*\*\*\*\*\*\*\*\co\*\*\*\*\*\*.docx."
+
+When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report. The file-names.log file is saved to a temp folder in the user's AppData folder. For example, for user01, the file is saved to the C:\Users\user01\AppData\Local\Readiness Toolkit Temp\\ folder. 
+
+<a name="usage"> </a>
+
+## Collect and show add-in usage information in reports
+
+If you want to get better insights into which add-ins are used most often within your organization and by whom, you can use the Readiness Toolkit to gather add-in usage information and include it in a readiness report. 
+
+To collect add-in usage information, install the most current version of the Readiness Toolkit on each computer that you want to capture add-in usage information from. To enable the agent that generates and collects the add-in usage information, you need to enable the "Allow add-in usage data to be generated and collected by the Readiness Toolkit" Group Policy setting. This policy setting is available in the most current version of the [Office 2016 Administrative Template Files (ADMX/ADML)](https://www.microsoft.com/en-us/download/details.aspx?id=49030) that are available on the Microsoft Download Center. This policy setting is found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit.
+
+The data generated and collected includes when the add-in is loaded and used, and if the add-in crashes. This information is stored in the registry of the computer on which the usage agent runs.
+
+We recommend that you allow the usage agent to run for at least 30 days, to ensure you have good coverage of your users and their usage behavior. Once the monitoring period is complete, create a readiness report to collect the information and display it in a report. After you have the information you need, turn off the usage agent by changing the Group Policy setting.
+
+> [!NOTE]
+> In this release of the Readiness Toolkit, no add-in usage information is collected on computers that are running Office 2016.
+
+<a name="controls"> </a>
+
+## Detect Silverlight or Flash controls
+
+Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Office 365 ProPlus. For more information about this, [read this Tech Community post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
+
+To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
+
+<a name="cloudfiles"> </a>
+
+## How to scan cloud-based files
+
+By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report.
+
+One possible workaround is to scan the local cache of these cloud-based files on the user's computer. If the files are only stored in a cloud-based location, you can create a mapped network drive to a OneDrive or SharePoint share. Then, you can have Readiness Report Creator scan that drive. But, when this location is scanned, the files must be downloaded in memory to perform the scan. Depending on the number and size of those files, this could result in the scan taking significantly longer and using up a considerable amount of network bandwidth.
+
+
 <a name="BKMK_AddInfo"> </a>
 
 ## Additional information
@@ -342,7 +406,7 @@ The following table provides a list of the information that is sent to Microsoft
   
 |**Data**|**Description**|**Example**|
 |:-----|:-----|:-----|
-|DevicesScanned  <br/> |Number of devices that were scanned.  <br/> |DevicesScanned: 23  <br/> |
+|DevicesScanned  <br/> |Number of computers that were scanned.  <br/> |DevicesScanned: 23  <br/> |
 |UniqueUsers  <br/> |Count of users included in scan.  <br/> |UniqueUsers: 14  <br/> |
 |Rule  <br/> |Count of how many times a specific rule was found to apply to the VBA macros scanned. A GUID is used to uniquely identify the rule.  <br/> |48f05b1d-c8ad-4d0c-9453-1abdf007b2db: 23 <br/> <br/> 74db65ab-76f3-43fb-997d-0d9750efb527: 2  <br/> |
 |FilesWithIssues  <br/> |Count of unique files with compatibility issues.  <br/> |FilesWithIssues: 320  <br/> |
@@ -357,6 +421,17 @@ The following table provides a list of the information that is sent to Microsoft
 |Limitedremediationrequired  <br/> |Count of unique files that require limited remediation  <br/> |Limitedremediationrequired: 12  <br/> |
 |Minimalvalidationrequired  <br/> |Count of unique files that require minimal validation.  <br/> |Minimalvalidationrequired: 22  <br/> |
 |CodeDesignChanges  <br/> |Count of unique files that contain use of features that we would recommend changes.  <br/> |CodeDesignChanges: 1  <br/> |
+|DevicesWithNoMacros|Number of devices that didn't have macro enabled files.|DevicesWithNoMacros: 12|
+|DevicesWithDeclares|Number of devices scanned that included macros that used Declare statements.|DevicesWithDeclares: 12|
+|DevicesWhichRequireSignificantRemediation|Number of devices that contain macro files that require significant remediation.|DevicesWhichRequireSignificantRemediation: 12|
+|DevicesBlockedFromUpgrade|Number of devices that contain macros that require remediation to be unblocked from upgrading to Office 365 ProPlus.|DevicesBlockedFromUpgrade: 1|
+|DevicesWithMacrosWithIssues|Number of devices that contain compatibility issues with macros.|DevicesWithMacrosWithIssues: 2|
+|DevicesWhichRequireLimitedRemediation|Number of devices that contain macro files that require limited remediation.|DevicesWhichRequireLimitedRemediation: 12|
+|DevicesWhichRequireMinimalValidation|Number of devices that contain macro files that require minimal validation.|DevicesWhichRequireMinimalValidation: 12|
+|DevicesWithMacrosWithoutIssues|Number of devices that contain macros, but don’t have any compatibility issues.|DevicesWithMacrosWithoutIssues: 12|
+|DevicesWithMacros|Number of devices that contain macro files.|DevicesWithMacros: 12|
+|DevicesSafeToUpgrade|Number of devices are ready to upgrade to Office 365 ProPlus.|DevicesSafeToUpgrade: 12|
+|DevicesWithOlderToolVersion|Number of devices that are using an older version of the Readiness Toolkit.|DevicesWithOlderToolVersion: 12|
    
 The following table provides a list of the information that is sent to Microsoft about the add-ins that are found during a scan, along with examples.
   
