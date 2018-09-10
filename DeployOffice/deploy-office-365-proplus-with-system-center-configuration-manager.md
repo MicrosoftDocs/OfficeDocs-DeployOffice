@@ -18,6 +18,8 @@ description: "This article gives step-by-step instructions for how to deploy Off
 # Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
 
 Follow the steps in this article to deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch). 
+
+This article applies to Configuration Manager (Current Branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
     
 ## Overview
 
@@ -44,7 +46,7 @@ We recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/
 The steps in this article are based on the following best practices: 
 
 - **Deploy Office with Configuration Manager (Current Branch)**. For more details, see [Choose how to deploy](plan-office-365-proplus.md#step-1---choose-how-to-deploy).
-- **Manage updates to Office automatically**, without any adminstrative overhead. For more details, see [Choose how to manage updates](plan-office-365-proplus.md#step-2---choose-how-to-manage-updates). 
+- **Manage updates with Configuration Manager**. This is the only option available when deploying with the Office Client Management dashboard and Office 365 Installer wizard. For more details, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](deployoffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 - **Build two Office installation packages**: One package uses Semi-Annual Channel for 32-bit and the other uses Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. If you want to deploy the 64-bit version of Office, you can create additional installation packages. For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files). 
 - **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
@@ -55,8 +57,8 @@ You can customize these options to match the requirements for your organization,
 From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your Office deployment easier and more efficient: 
 
 - Use the Current Branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use) 
-- Enable peer cache on your clicent devices. Peer Cache is a feature in the Current Branch of Configuration Manager that can help with limited network capacity when deploying to  client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache). 
-- Deploy Office using the Office Client Management dashboard and Office 365 Installer wizard in Configuration Manager. The dashboard and wizard enable all the Configuration Manager features designed for Office, including removal of existing versions of Office and defining application settings.
+- Enable peer cache on your clicent devices. Peer Cache is a feature in the Current Branch of Configuration Manager that can help with limited network capacity when deploying updates <to  client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache). 
+- Deploy Office as an application using the Office Client Management dashboard and Office 365 Installer wizard in Configuration Manager. The dashboard and wizard enable all the Configuration Manager features designed for Office, including removal of existing versions of Office and defining application settings.
 
 Make sure to complete the following requirements as well:
 
@@ -81,18 +83,17 @@ The Office installation packages are represented as applications in Configuratio
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, click on **Go to the Office Customization Tool**, and configure the desired settings for your Office 365 installation. We recommend the following options:
- - Software: Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
- - Languages: Include all the language packs you plan to deploy. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
- - Installation channel: Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
- - Updates: To manage updates to Office automatically, choose **Retrieve updates from the Office CDN** and make sure **Automatically check for updates** is selected. If you want to manage updates with Configuration Manager, choose that option. For more details, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](deployoffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
- - Upgrades: Choose to automatically remove all previous MSI versions of Office and to automatically upgrade 2013 Click-to-Run versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
- - Additional properties: To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
- - Application settings: Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+ - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
+ - **Languages:** Include all the language packs you plan to deploy. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
+ - **Installation channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+ - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
+ - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
+ - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 7. When you complete the configuration, click **Submit** in the upper right of the page. 
 8. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
  > [!NOTE] 
- > If you choose not to deploy the package in the wizard, you can find the application in **Software Library** < **Application Management** < **Applications**.  For details on deploying an application, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application). 
+ > If you choose not to deploy the package in the wizard, you can find the application in **Software Library** > **Application Management** > **Applications**.  For details on deploying an application, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application). 
 
 9. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
 10. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application).
@@ -133,13 +134,8 @@ If you want to deploy the 64-bit version of Office, you can create additional in
 ### Use different update channels for Office
 With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package.
 
-### Manage updates to Office with Configuration Manager
-Instead of having updates applied automatically, you can have Configuration Manager manage updates to Office 365 ProPlus. When Microsoft publishes a new Office 365 client update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an update package to Windows Server Update Services (WSUS). Configuration Manager then synchronizes the Office 365 client update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells the Office client where to get the update and when to start the update installation process.
-
-To learn how to set this up as part of your Configuration Manager deployment, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](deployoffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
-
 ### Deploy Visio and Project alongside the core Office apps
-To deploy Visio and Project with Office 365 ProPlus, you can inlude them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio 2016](deployoffice/deployment-guide-for-visio.md) and [Deployment guide for Project 2016](deployoffice/deployment-guide-for-project.md).
+To deploy Visio and Project with Office 365 ProPlus, you can inlude them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployoffice/deployment-guide-for-visio.md) and [Deployment guide for Project](deployoffice/deployment-guide-for-project.md).
 
 
 
