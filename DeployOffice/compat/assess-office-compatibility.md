@@ -3,18 +3,19 @@ title: "Assess Office compatibility"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-ms.assetid: b0d56d5f-f780-483e-8f95-dc7360a05208
 description: "Explains how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment."
 ---
 
 # Assess Office compatibility
+
+> [!NOTE]
+> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
  **Summary:** Explains how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment. 
   
