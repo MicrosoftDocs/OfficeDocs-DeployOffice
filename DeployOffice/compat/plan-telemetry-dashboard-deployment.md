@@ -3,18 +3,19 @@ title: "Telemetry Dashboard topology, sizing, and bandwidth planning"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 11/30/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-ms.assetid: 8ca0221c-a5de-4693-9557-bd77c1a9b834
 description: "Learn about telemetry components and sizing, topology, hardware, and bandwidth recommendations for Telemetry Dashboard deployments."
 ---
 
 # Telemetry Dashboard topology, sizing, and bandwidth planning
+
+> [!NOTE]
+> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
  **Summary:** Learn about telemetry components and sizing, topology, hardware, and bandwidth recommendations for Telemetry Dashboard deployments. 
   

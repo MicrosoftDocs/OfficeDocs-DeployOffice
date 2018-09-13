@@ -3,18 +3,20 @@ title: "Document and solution types monitored by telemetry in Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-ms.assetid: a3f1ada6-4162-4119-9871-c77a1a10fa4f
 description: "Lists document and solution types that are monitored by Office telemetry."
 ---
 
 # Document and solution types monitored by telemetry in Office
+
+> [!NOTE]
+> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+
 
 <a name="bkmk_whatismonitoredinoffice2013fortelemetrylogging"> </a>
 ## Document and solution types that are monitored by Office telemetry
