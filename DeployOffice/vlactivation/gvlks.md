@@ -1,5 +1,5 @@
 ---
-title: "GVLKs for KMS and Active Directory Domain Services activation of Office 2019 and Office 2016"
+title: "GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Lists the GVLKs that administrators use for volume licensed versions of Office 2019 and Office 2016. 
 ---
 
-# GVLKs for KMS and Active Directory Domain Services activation of Office 2019 and Office 2016
+# GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016
 
   
 By default, volume licensed versions of Office 2019 and Office 2016 are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
@@ -39,7 +39,8 @@ By default, volume licensed versions of Office 2019 and Office 2016 are installe
 |Skype for Business 2019  <br/> |NCJ33-JHBBY-HTK98-MYCV8-HMKHJ <br/> |
 |Word 2019  <br/> |  PBX3G-NWMT6-Q7XBW-PYJGG-WXD33 <br/> |
 
-There is no OneNote 2019. 
+> [!NOTE].
+> There is no OneNote 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
 
 ## GVLKs for Office 2016
 |**Product**|**GVLK**|
