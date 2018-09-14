@@ -30,7 +30,7 @@ If you deploy an image or create a virtual computer, you must rearm the installa
   
 ## Activate KMS clients for Office 2016
 
-All volume license editions of Office 2016 have a [Generic Volume License Key (GVLK)](../office2016/gvlks-for-office-2016.md) preinstalled. GVLKs support both KMS and AD DS-based activation. 
+All volume license editions of Office 2016 have a [Generic Volume License Key (GVLK)](gvlks.md) preinstalled. GVLKs support both KMS and AD DS-based activation. 
   
 On the Office 2016 KMS host computer, you install and enable only one KMS host key to activate all volume license editions of Office 2016 KMS clients. If the Office 2016 KMS host computer is installed and configured, KMS activation occurs transparently to the user when an Office 2016 client is first installed.
   
