@@ -1,6 +1,7 @@
 
 # Deployment guide for Office 2019
 ## [Office 2019 overview](office-2019-overview.md)
+## [Deploy Office 2019](deploy-office-2019.md)
 
 ## Volume activation
 ### [Plan volume activation](../vlactivation/plan-volume-activation-of-office.md?toc=/deployoffice/office2019/toc.json)

@@ -1,0 +1,19 @@
+---
+title: "Deploy Office 2019"
+ms.author: danbrown
+author: DHB-MSFT
+manager: laurawi
+ms.date: 9/24/2018
+ms.audience: ITPro
+ms.topic: overview
+ms.prod: office-perpetual-itpro
+localization_priority: Normal
+ms.collection: Ent_O365
+ms.custom: Ent_Office_VL
+description: "Provides IT admins with information on how to deploy Office 2019."
+---
+
+# Deploy Office 2019
+ 
+  
+The following is intended provide IT Pros with information on how to deploy volume licensed versions of Office 2019 to users in their organzation.
