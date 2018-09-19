@@ -5,6 +5,7 @@ author: pbowden-msft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
+ms.date: 9/24/2018
 ms.service: o365-proplus-itpro
 localization_priority: Critical
 ms.collection: Ent_O365
@@ -13,6 +14,9 @@ description: "Shows IT Pros how to set a preference for diagnostic data, either 
 ---
 
 # Set a preference for diagnostic data in Office for Mac
+
+***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+
 
 Office for Mac collects diagnostic information which helps us find and fix problems, improve our products and services, and provide you with customized experiences.
 
@@ -43,5 +47,5 @@ This key is CFPreferences-compatible, which means that it can be set by using en
 
 [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 
-[Deploy preferences for Office 2016 for Mac](deploy-preferences-for-office-for-mac.md)
+[Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
 
