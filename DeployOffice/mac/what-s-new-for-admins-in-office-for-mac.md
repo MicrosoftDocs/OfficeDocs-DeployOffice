@@ -44,9 +44,7 @@ Before you deploy Office 2016 for Mac to users in your organization, you should 
   
 
 ## Related topics
-[Deployment guide for Office 2016 for Mac](deployment-guide-for-office-for-mac.md)
-  
-[Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)
-  
-[Deploy updates for Office 2016 for Mac](deploy-updates-for-office-for-mac.md)
+
+- [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
+- [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
 

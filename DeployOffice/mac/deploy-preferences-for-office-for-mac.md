@@ -43,7 +43,6 @@ Depending on which preferences you're configuring and how you deploy those prefe
 > Office for Mac 2011, which is no longer supported, also used preference files. There are some preferences in common between Office for Mac and Office for Mac 2011. Therefore, if you install Office for Mac on a computer that has Office for Mac 2011 installed, Office for Mac will automatically inherit some preference settings from the Office for Mac 2011 installation. 
   
 ## Related topics
-[Deployment guide for Office for Mac](deployment-guide-for-office-for-mac.md)
 
-[Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
+- [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
 

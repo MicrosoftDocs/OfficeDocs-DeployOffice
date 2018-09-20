@@ -75,3 +75,9 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 
 > [!NOTE]
 > If you're using MAU version 4.1 or later, you can use either set of identifiers and MAU will automatically change them to the appropriate identifiers based on the criteria described in the footnotes above.
+
+
+## Related topics
+
+- [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
+- [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac) and [release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac) for Office for Mac

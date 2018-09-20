@@ -35,9 +35,8 @@ If you're an admin, you may want to prevent this option from being shown to user
 
 This key is CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
     
-## See also
+## Related topics
 
-[Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
-
-[Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
+- [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
+- [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
 
