@@ -26,7 +26,7 @@ To download the VL Serializer, do the following:
 1. Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). 
 2. Select the **Download and Keys** tab.
 3. Select the **Download** button for either Office 2019 for Mac or Office 2016 for Mac, depending on which version of Office you're deploying to your users.
-4. Select **Continue* on the pop-up windows and download .iso file that contains the VL Serializer.
+4. Select **Continue** on the pop-up windows and download the .iso file that contains the VL Serializer package file.
 5. Once the download is complete, mount the .iso file to extract the VL Serializer package file.
 
 
