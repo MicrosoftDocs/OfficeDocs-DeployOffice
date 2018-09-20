@@ -37,9 +37,9 @@ Here are the procedures for uninstalling the old telemetry processors, installin
 
 1. On each computer where telemetry processor is installed, uninstall telemetry processor from the Windows Control Panel.
     
-  - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+   - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
     
-  - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
+   - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
     
 2. In the list of programs, select **Microsoft Office Telemetry Processor**. 
     
@@ -85,11 +85,11 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
     
 2. On the **Database Settings** page, do the following: 
     
-  1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
+   1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
     
-  2. Select **Connect** to connect to the SQL Server computer. 
+   2. Select **Connect** to connect to the SQL Server computer. 
     
-  3. Select the telemetry database in **SQL database**, and then select **Next**.
+   3. Select the telemetry database in **SQL database**, and then select **Next**.
     
 3. If you are prompted to update the database, select **Yes**. You'll only be prompted to do this on the first computer where you run the **Office Telemetry Processor settings** wizard. 
     

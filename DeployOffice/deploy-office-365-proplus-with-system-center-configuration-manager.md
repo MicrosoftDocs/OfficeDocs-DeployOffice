@@ -82,7 +82,7 @@ For the Office 365 ProPlus application, the deployment type includes the followi
     
 - A [detection method](https://go.microsoft.com/fwlink/p/?LinkId=535032), which Configuration Manager uses to determine if Office 365 ProPlus is already installed on the user's computer.
     
- **To create a deployment type**
+  **To create a deployment type**
   
 1. In the Configuration Manager console, choose **Software Library** > **Application Management** > **Applications**.
     
@@ -94,27 +94,27 @@ For the Office 365 ProPlus application, the deployment type includes the followi
     
 5. On the **Content** page, do the following:
     
-  - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet.
+   - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet.
     
-  - In the **Installation program** box, enter the following text: setup.exe /configure configuration.xml
+   - In the **Installation program** box, enter the following text: setup.exe /configure configuration.xml
     
-    After you enter this information, choose **Next**.
+     After you enter this information, choose **Next**.
     
 6. On the **Detection Method** page, choose **Add Clause**.
     
 7. In the **Detection Rule** dialog box, do the following:
     
-  - In the **Setting Type** list, select **Registry**.
+   - In the **Setting Type** list, select **Registry**.
     
-  - In the **Hive** list, select **HKEY_LOCAL_MACHINE**.
+   - In the **Hive** list, select **HKEY_LOCAL_MACHINE**.
     
-  - In the **Key** box, enter the following text: Software\Microsoft\Windows\CurrentVersion\Uninstall\O365ProPlusRetail - en-us
+   - In the **Key** box, enter the following text: Software\Microsoft\Windows\CurrentVersion\Uninstall\O365ProPlusRetail - en-us
     
-  - Select the **Use (Default) registry key value for detection** check box.
+   - Select the **Use (Default) registry key value for detection** check box.
     
      ![Detection rule](images/c6565ea7-2326-490e-8e1f-c2daaa928193.png)
   
-    After you enter this information, choose **OK**, and then on the **Detection Method** page, choose **Next**.
+     After you enter this information, choose **OK**, and then on the **Detection Method** page, choose **Next**.
     
 8. On the **User Experience** page, in the **Installation behavior** list, select **Install for system**, and then choose **Next**.
     

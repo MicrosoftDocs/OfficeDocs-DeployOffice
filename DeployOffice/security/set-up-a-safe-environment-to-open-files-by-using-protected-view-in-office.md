@@ -87,11 +87,11 @@ You can change Protected View settings so that certain files bypass Protected Vi
     
 2. Choose which Protected View settings you want to disable from the following options:
     
-  - **Enable Protected View for files originating from the Internet** Disable this setting to force files to bypass Protected View if the zone information indicates that the file was downloaded from the Internet zone. This setting applies to files that are downloaded by using Internet Explorer and Outlook or files edited by Microsoft Store applications. 
+   - **Enable Protected View for files originating from the Internet** Disable this setting to force files to bypass Protected View if the zone information indicates that the file was downloaded from the Internet zone. This setting applies to files that are downloaded by using Internet Explorer and Outlook or files edited by Microsoft Store applications. 
     
-  - **Enable Protected View for files that are located in potentially unsafe locations** Disable this setting to force files to bypass Protected View if the files are opened from an unsafe location. You can add folders to the unsafe locations list by using the **Specify list of unsafe locations** setting, which is discussed later in this article. 
+   - **Enable Protected View for files that are located in potentially unsafe locations** Disable this setting to force files to bypass Protected View if the files are opened from an unsafe location. You can add folders to the unsafe locations list by using the **Specify list of unsafe locations** setting, which is discussed later in this article. 
     
-  - **Enable Protected View Outlook attachments** Disable this setting to force Excel 2016, PowerPoint 2016, and Word 2016 files that are opened as Outlook 2016 attachments to bypass Protected View. 
+   - **Enable Protected View Outlook attachments** Disable this setting to force Excel 2016, PowerPoint 2016, and Word 2016 files that are opened as Outlook 2016 attachments to bypass Protected View. 
     
 <a name="force"> </a>
 
