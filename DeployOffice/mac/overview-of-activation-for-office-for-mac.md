@@ -3,7 +3,7 @@ title: "Overview of activation for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/22/2018
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -23,7 +23,7 @@ To use Office for Mac in your organization, it needs to be activated. How you ac
 > If you're an Office user trying to activate a personal copy of Office for Mac, [follow these instructions](https://support.office.com/article/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.   
 
    
-## Office 365 activation for Office for Mac
+## Activate Office 365 versions of Office for Mac
 
 If your organization has an Office 365 plan, make sure you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office before you deploy Office  for Mac to your users. If you don't assign a user a license, you can still deploy Office for Mac to that user, but the user won't be able to activate and use Office. 
   
@@ -39,17 +39,15 @@ A program on the Mac, the Office365ServiceV2 daemon, runs once a day to check th
   
 If the computer can't contact the Office Licensing Service after 30 days, Office goes into reduced functionality mode. This means that the user can open, view, and print existing documents in an Office app, but can't create or edit documents. The user also sees a message in the app that most features aren't available. After the user connects to the internet and the subscription status is verified, all the features of Office are available again.
   
-For each user that you've assigned a license to in Office 365, you can deploy and activate Office 2016 for Mac on up to five Macs for the user. If you need to provide Office 2016 for Mac on a sixth computer for a user, you need to deactivate an existing installation first. Deactivating an installation doesn't remove Office 2016 for Mac from the computer. Instead, the installation goes into reduced functionality mode.
+For each user that you've assigned a license to in Office 365, you can deploy and activate Office for Mac on up to five Macs for the user. If you need to provide Office for Mac on a sixth computer for a user, you need to deactivate an existing installation first. Deactivating an installation doesn't remove Office  for Mac from the computer. Instead, the installation goes into reduced functionality mode.
   
-Users can sign into the Office 365 portal to deactivate an existing installation. 
+Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [Office 365 admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
   
-![Choose Deactivate next to the installation you don't need](../images/b14656cb-74c8-4299-91fe-05dfc0f26561.png)
-  
-Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [Office 365 admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
-  
-## Volume licensing activation for Office 2016 for Mac
+## Activate volume licensed versions of Office for Mac
 
-The volume licensed versions of Office 2016 for Mac are activated automatically during installation. There are no additional steps that you need to do as an admin. Your users won't see any activation prompts when they first open Office 2016 for Mac.
+To activate a volume licensed version of Office 2019 for Mac or Office 2016 for Mac, use the the Volume License (VL) Serializer. You can download the VL Serializer by signing into the [Volume Licensing Service Center (VLSC)}(https://www.microsoft.com/licensing/servicecenter/default.aspx)].You run the VL Serializer on each computer. By doing this, your users won't see any activation prompts when they first open Office 2019 for Mac or Office 2016 for Mac.
+
+For more information, see [Overview of the Volume License (VL) Serializer](volume-license-serializer.md).
   
 ## Related topics
   
