@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 2019"
+title: "Deploy Office 2019 (for IT Pros)"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom: Ent_Office_VL
 description: "Provides IT admins with information on how to deploy Office 2019."
 ---
 
-# Deploy Office 2019
+# Deploy Office 2019 (for IT Pros)
  
   
 The following is intended provide IT Pros with information on how to deploy volume licensed versions of Office 2019 to users in their organzation.
