@@ -20,7 +20,7 @@ description: "Describes changes in Office for Mac that are of interest to admins
 Before you deploy Office for Mac to users in your organization, you should be aware of some changes introduced in Office for Mac. These changes might affect how you deploy and manage Office for Mac in your organization.
   
 
- **System requirements** There are some new system requirements to install Office for Mac. See [System requirement for Office](https://products.office.com/office-system-requirements)] for details.
+ **System requirements** There are some new system requirements to install Office for Mac. See [System requirement for Office](https://products.office.com/office-system-requirements) for details.
  
  **App bundles** The app bundle for each app, such as Word, now includes all the resources needed to run the app. There are no longer any shared resources among the apps, like there were in Office for Mac 2011. For example, the app bundles for Excel for Mac and Word for Mac both contain the font resources needed by the app. Because of this change, the size of the app bundles is larger. 
   
@@ -33,7 +33,7 @@ Before you deploy Office for Mac to users in your organization, you should be aw
  **App icons in the dock** When you deploy Office for Mac, the app icons aren't automatically added to the dock, but are available from Launchpad. You can provide your users with instructions on [how to add app icons to the dock](https://support.office.com/article/95db1c14-45e7-450e-86ad-1134f7e80851). If you deploy to a computer that has Office for Mac 2011 installed, the app icons for Office for Mac 2011 are removed from the dock during the installation of Office for Mac.
 
 > [!NOTE]
-> Office for Mac 2011 is no longer supported as of October 10, 2017.
+> Support for Office for Mac 2011 ended on October 10, 2017. All of your Office for Mac 2011 apps will continue to function. But, you could expose yourself to serious and potentially harmful security risks. 
   
  **Feature information** For information about features in the various versions of Office for Mac, review the following resources:
 - **Office for Mac:** To see the latest features in each monthly release, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac). 
