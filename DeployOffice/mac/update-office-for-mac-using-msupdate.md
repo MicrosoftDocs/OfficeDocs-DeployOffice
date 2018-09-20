@@ -65,6 +65,7 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |Outlook        |opim2019|opim15      |
 |OneNote        |onmc2019|onmc15      |
 |Skype for Business |msfb16| msfb16     |
+|MAU              |msau03|msau03|
 |Remote Desktop         |msrd10| msrd10     |
 |Intune Company Portal  |imcp01| imcp01     |
 
@@ -74,7 +75,9 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 <sup>2</sup> These identifiers are used for Office 2016 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 plan) running on macOS version 10.11 (El Capitan) or earlier.
 
 > [!NOTE]
-> If you're using MAU version 4.1 or later, you can use either set of identifiers and MAU will automatically change them to the appropriate identifiers based on the criteria described in the footnotes above.
+> - To use the 2019 version identifiers, you must be using at least MAU version 4.1 or later.
+> - If you're using MAU version 4.1 or later, you can use either set of identifiers and MAU will automatically change them to the appropriate identifiers based on the criteria described in the footnotes above.
+> - Identifiers are not case-sensitive.
 
 
 ## Related topics
