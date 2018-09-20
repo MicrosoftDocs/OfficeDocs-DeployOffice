@@ -15,7 +15,7 @@ description: "Describes for admins how activation works for Office for Mac, for 
 
 # Overview of activation for Office for Mac
 
- **Summary**: Describes for admins how activation works for Office 2016 for Mac, for both Office 365 plans and volume license agreements
+***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
   
 To use Office 2016 for Mac in your organization, it needs to be activated. How you activate Office 2016 for Mac depends on whether your organization has an Office 365 plan or has a volume license agreement. But in both cases your users won't have to enter any product keys.
   

@@ -17,8 +17,8 @@ description: "Provides information to admins on how to download and deploy Offic
 
 # Deployment options for admins for Office for Mac
 
- **Summary**: Provides information to admins on how to download and deploy Office 2016 for Mac to users in their organization
-  
+***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+
 There are two basic ways that you, as an admin, can deploy Office 2016 for Mac to users in your organization:
   
 - Provide your users with the installer package file, and have them install Office 2016 for Mac for themselves
