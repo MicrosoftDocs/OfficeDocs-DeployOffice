@@ -1,21 +1,19 @@
 ---
-title: "Overview of activation for Office 2016 for Mac"
+title: "Overview of activation for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 8/3/2015
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
-ms.assetid: 8b3d0ee9-4585-4deb-80f5-d68c26daa773
-
-description: "Describes for admins how activation works for Office 2016 for Mac, for both Office 365 plans and volume license agreements"
+description: "Describes for admins how activation works for Office for Mac, for both Office 365 plans and volume license agreements"
 ---
 
-# Overview of activation for Office 2016 for Mac
+# Overview of activation for Office for Mac
 
  **Summary**: Describes for admins how activation works for Office 2016 for Mac, for both Office 365 plans and volume license agreements
   

@@ -7,7 +7,7 @@ ms.audience: ITPro
 ms.topic: article
 ms.date: 9/24/2018
 ms.service: o365-proplus-itpro
-localization_priority: Critical
+localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 description: "Shows IT Pros how to set a preference for diagnostic data, either full or basic, for Office for Mac"

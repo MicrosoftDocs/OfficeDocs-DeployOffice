@@ -1,22 +1,21 @@
 ---
-title: "Deployment options for admins for Office 2016 for Mac"
+title: "Deployment options for admins for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_Mac
-ms.assetid: 18270b63-728d-4419-9032-b3846902d061
-description: "Provides information to admins on how to download and deploy Office 2016 for Mac to users in their organization"
+description: "Provides information to admins on how to download and deploy Office for Mac to users in their organization"
 ---
 
-# Deployment options for admins for Office 2016 for Mac
+# Deployment options for admins for Office for Mac
 
  **Summary**: Provides information to admins on how to download and deploy Office 2016 for Mac to users in their organization
   
