@@ -19,21 +19,21 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
 
 
  **Summary:** Explains how to deploy the telemetry processor, telemetry agent, and other components that are required by Telemetry Dashboard for Office. 
-  
-  
+
+
 This article helps you deploy the five components of Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
-  
+
 > [!IMPORTANT]
 > If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529). 
-  
+
 <a name="dashboard"> </a>
 
 ## Telemetry Dashboard
 
 Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office Professional Plus 2016, Office Standard 2016, and Office 365 ProPlus editions of Office 2016. To view it, you must have Excel 2016 installed.
-  
+
 After Office 2016 is installed, you can start Telemetry Dashboard by using one of the procedures in the following table: 
-  
+
 **How to start Telemetry Dashboard**
 
 |**Operating system**|**How to start Telemetry Dashboard**|
@@ -41,252 +41,252 @@ After Office 2016 is installed, you can start Telemetry Dashboard by using one o
 |Windows 10, Windows Server 2008 R2, Windows Server 2008, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016**, then **Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 | Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
-   
+
 <a name="SQL"> </a>
 
 ## SQL Server
 
 SQL Server must be deployed before you can configure Telemetry Dashboard. You don't have to have an existing database, but you do have to install or have access to one of these versions of SQL Server:
-  
+
 - SQL Server 2016
-    
+
 - SQL Server 2016 Express
-    
+
 - SQL Server 2014
-    
+
 - SQL Server 2014 Express
-    
+
 - SQL Server 2012
-    
+
 - SQL Server 2012 Express
-    
+
 - SQL Server 2008 R2
-    
+
 - SQL Server 2008 R2 Express Edition
-    
+
 - SQL Server 2008
-    
+
 - SQL Server 2008 Express Edition
-    
+
 - SQL Server 2005
-    
+
 - SQL Server 2005 Express Edition
-    
+
 The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2012 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2012 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2012 Express. 
-  
+
 - Ensure that the computer meets the hardware and software requirements for SQL Server 2012. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2012](https://go.microsoft.com/fwlink/p/?LinkID=129377).
-    
+
 - For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2012 from the Installation Wizard (Setup)](https://go.microsoft.com/fwlink/p/?LinkID=254657).
-    
+
 <a name="installsql"> </a>
 
 ### To download and install SQL Server 2012 Express
 
 1. In Telemetry Dashboard, on the **Getting started** worksheet, under **1. Set up prerequisites**, choose the link to download and install SQL Server 2012 Express with Tools. Choose the 32-bit or 64-bit edition, as appropriate. Or use this link: [Microsoft SQL Server 2012 Express](https://go.microsoft.com/fwlink/p/?LinkId=246610).
-    
+
 2. The setup process for SQL Server 2012 Express takes a while to download and extract files. Accept the various prompts and wait for the first page of SQL Server 2012 Express, which is named the **SQL Server Installation Center**, to appear after extraction is completed. Then, follow these steps:
-    
- 1. In the SQL Server Installation Center, choose **New SQL Server stand-alone installation or add features to an existing installation**.
-    
- 2. In the SQL Server 2012 wizard, read the license terms, accept them, and then choose **Next**.
-    
- 3. On the **Feature Selection** page, accept the default settings. Choose **Next**.
-    
- 4. On the **Instance Configuration** page, create a named instance (for example, use the name "teledash"). Choose **Next**.
-    
- 5. On the **Server Configuration** page, accept default service accounts. Choose **Next**.
-    
- 6. On the **Database Engine Configuration** page, accept the default authentication mode (Windows authentication mode). Your user account is displayed as a SQL Server administrator. (Warning: Don't use Mixed Mode because Telemetry Dashboard doesn't support SQL Server authentication.) Choose **Next**.
-    
- 7. On the **Error Reporting** page, select the check box if you want to send error reports to Microsoft. Otherwise, just choose **Next**.
-    
- 8. Wait for the installation process to finish, and then exit the wizard and the SQL Server Installation Center.
-    
+
+   1. In the SQL Server Installation Center, choose **New SQL Server stand-alone installation or add features to an existing installation**.
+
+   2. In the SQL Server 2012 wizard, read the license terms, accept them, and then choose **Next**.
+
+   3. On the **Feature Selection** page, accept the default settings. Choose **Next**.
+
+   4. On the **Instance Configuration** page, create a named instance (for example, use the name "teledash"). Choose **Next**.
+
+   5. On the **Server Configuration** page, accept default service accounts. Choose **Next**.
+
+   6. On the **Database Engine Configuration** page, accept the default authentication mode (Windows authentication mode). Your user account is displayed as a SQL Server administrator. (Warning: Don't use Mixed Mode because Telemetry Dashboard doesn't support SQL Server authentication.) Choose **Next**.
+
+   7. On the **Error Reporting** page, select the check box if you want to send error reports to Microsoft. Otherwise, just choose **Next**.
+
+   8. Wait for the installation process to finish, and then exit the wizard and the SQL Server Installation Center.
+
 <a name="processor"> </a>
 
 ## Telemetry Processor
 
 The telemetry processor runs on one or more computers and collects inventory, usage, and telemetric data from the telemetry shared folder and imports the data to the telemetry database. The telemetry processor is installed as a Windows service named "Telemetry Processor." 
-  
+
 The telemetry processor generates error logs in a file that is named dperrorlog.txt. It is located in a hidden folder at %systemroot%\ServiceProfiles\NetworkService\AppData\Local\Temp.
-  
+
 Each computer on which you install the telemetry processors and telemetry database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226). 
-  
+
 We recommend the following operating systems for computers that run the telemetry processor:
-  
+
  **For production environments:** For best performance, we recommend these operating systems: 
-  
+
 - Windows Server 2016
-    
+
 - Windows Server 2012 R2
-    
+
 - Windows Server 2012
-    
+
 - Windows Server 2008 R2
-    
+
 - Windows Server 2008
-    
+
 **For test or small production environments:** You can use computers that run Windows 10, Windows 8.1, Windows 8, and Windows 7 with Service Pack 1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
-  
+
 Ensure that you have the following available before you run the Telemetry Processor Setup wizard.
-  
+
 - **SQL Server instance name.** The example used earlier is "teledash." 
-    
+
 - **SQL database.** A new database will be created if you don't specify an existing database. 
-    
+
 - **Permissions to create a shared folder, or the UNC path of an existing shared folder.** The Telemetry Processor wizard can create a shared folder if it has permissions to do so. If you specify an existing shared folder, any existing NTFS and shared folder permissions are overwritten with permissions set by the wizard. 
-    
+
 - **Permissions to create a database (sysadmin role in SQL Server).** To create and configure a new database, the account that runs the telemetry processor wizard must be a domain account that is a member of the sysadmin server-level role on the SQL Server. For ongoing use of Telemetry Dashboard, membership in the sysadmin role isn't required and can be removed after the database is created. You can also use an existing database. 
-    
+
 - **At least 11 GB of hard disk space.** This disk space is needed to temporarily store telemetry data that is collected from users. 
-    
+
 ### To install the telemetry processor
 
 1. On the computer where you want to install the telemetry processor, install the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
-    
+
 2. In Telemetry Dashboard, on the **Getting started** worksheet, choose the installation link under **2. Install Telemetry Processor**. Select the x86 or x64 version that's the same as the Windows operating system architecture where the telemetry processor will run.
-    
+
 3. Optionally, you can use the links in Telemetry Dashboard to save the .msi file to another computer and run the Setup program there. This step is required if you are installing telemetry processors on separate computers.
-    
+
 4. Choose **Next** and then choose **Yes** to accept the User Account Control prompt to install the Telemetry Processor. Choose **Finish**, which starts the telemetry processor settings wizard.
-    
+
 5. Choose **Yes** to accept the prompt, and then choose **Next**.
-    
+
 6. Type the name of the SQL Server instance, and then choose **Connect**.
-    
+
 7. Type the name of a new database, choose **Create**, and then choose **Next**.
-    
+
 8. Choose **Yes** to create database permissions and the database role. 
-    
+
 9. Do one of the following on the **Shared Folder** page: 
-    
-  - Specify the UNC path of an existing shared folder, and then choose **Next**. Choose **Yes** to allow the wizard to set the appropriate permissions. 
-    
-  - To create a new shared folder on the local computer, choose **Browse**. Navigate to the location where you want to create the shared folder. Open the shortcut menu for the parent folder (right-click it), point to **New**, and then choose **Folder**. Type the name of the new folder, ensure that you choose the folder again to select it, and then choose **Select Folder**. Choose **Next**, and then choose **Yes** to allow the wizard to share the folder and set the appropriate permissions. 
-    
+
+   - Specify the UNC path of an existing shared folder, and then choose **Next**. Choose **Yes** to allow the wizard to set the appropriate permissions. 
+
+   - To create a new shared folder on the local computer, choose **Browse**. Navigate to the location where you want to create the shared folder. Open the shortcut menu for the parent folder (right-click it), point to **New**, and then choose **Folder**. Type the name of the new folder, ensure that you choose the folder again to select it, and then choose **Select Folder**. Choose **Next**, and then choose **Yes** to allow the wizard to share the folder and set the appropriate permissions. 
+
 10. Accept the default option to sign up for the Customer Experience Improvement Program, or choose the option not to sign up for the program at this point, and then choose **Next**.
-    
+
 11. Choose **Finish** to exit the wizard. 
-    
+
 <a name="database"> </a>
 
 ## Telemetry database
 
 The telemetry database, which was created by the telemetry processor settings wizard, is ready to be configured and connected to Telemetry Dashboard.
-  
+
 ### To connect to the telemetry database
 
 1. In Telemetry Dashboard, on the **Getting started** worksheet, under **5. Connect to the database to view telemetry data**, choose **Connect to Database**.
-    
+
 2. Specify the name of the SQL Server and SQL database that you specified during the installation of the telemetry processor.
-    
+
 When the connection is established, many new worksheets are added to the workbook. They won't contain data until you deploy and enable Telemetry Agents.
-  
+
 <a name="permissions"> </a>
 
 ### To grant other administrators permission to access the telemetry database
 
 - You can use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) on the computer that is running SQL Server to allow other administrators to view data in Telemetry Dashboard. You don't have to run this for your own account if you created a database when you installed the telemetry processor. Update the values for dbserver, dbname, and domain\user as needed. 
-    
+
   ```
   tdadm.exe -o permission -databaseserver dbserver -databasename dbname -add domain\user
   ```
 
 For more information about Tdadm, see the [Tdadm wiki](https://go.microsoft.com/fwlink/p/?LinkId=281837).
-  
+
 For more information about how to configure the reporting threshold in the telemetry database to help protect user privacy, see [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md). If you have problems connecting to the database, see [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).
-  
+
 If your data (for example, file names, solution names, user names, computer names, or tag values) includes supplementary characters (surrogate pairs), use the following SC collations that are available in SQL Server to support better handling of the characters. 
-  
+
 - Version 90 Windows collations, such as Chinese_PRC_Stroke_90
-    
+
 - Version 100 Windows collations, such as Latin1_General_100_CI_AS_SC
-    
+
 For more details about collation settings, see the documentation for the version of SQL Server that you are using.
-  
+
 <a name="agent"> </a>
 
 ## Telemetry agent
 
 The following information and instructions will help you learn more about how to deploy and enable the telemetry agent.
-  
+
 ### Deploying the telemetry agent
 
 The telemetry agent is built into Office Professional Plus, and Office 365 ProPlus editions of Office 2016 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2016 agent to these clients. 
-  
+
 - Office 2003
-    
+
 - Office 2007
-    
+
 - Office 2010
-    
+
 For computers that are running Office 2013 and you have the Office 2013 telemetry agent installed on the computer, there are several additional considerations:
-  
+
 - You can monitor computers running Office 2013 from the Office 2016 Telemetry Dashboard. In order for this to work, the computer must also be running the Office 2013 agent. The agent must be configured to point to the Office 2016 Telemetry Dashboard.
-    
+
 - You cannot use an Office 2016 telemetry agent with Office 2013. The Office 2016 agent will not be able to read events from an Office 2013 installation.
-    
+
 - Once you have upgraded a computer to Office 2016, you can continue to run the old Office 2013 agent. The agent will continue to report data to the Office 2013 Telemetry Dashboard. At the same time, the new Office 2016 agent that was installed when you upgraded to Office 2016 will provide the same data to the Office 2016 Telemetry Dashboard. This may use up valuable computer and network bandwidth resources. We recommend you disable the Office 2013 telemetry agent once you are ready to move to Office 2016 Telemetry Dashboard.
-    
+
 - When you install the Office 2016 telemetry agent, it does not overwrite the Office 2013 telemetry agent. Instead, you need to disable the Office 2013 telemetry agent. You disable the telemetry agent by using Group Policy. For more information on the Group Policy settings you use to disable the telemetry agent, see [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
-    
+
 - We recommend that you do not deploy the Office 2016 telemetry agent on computers that are only running Office 2013.
-    
+
 An Office 2016 VL license allows you to install the telemetry agent on all Office 2013, Office 2010, Office 2007, and Office 2003 client computers in your organization. 
-  
+
  In order to run the telemetry agent, client computers must run one of the following versions of Windows (either 32-bit or 64-bit): 
-  
+
 - Window 10
-    
+
 - Windows 8.1
-    
+
 - Windows 8
-    
+
 - Windows 7 with Service Pack 1
-    
+
 - Windows Server 2016
-    
+
 - Windows Server 2012 R2
-    
+
 - Windows Server 2012
-    
+
 - Windows Server 2008 R2
-    
+
 - Windows Server 2008
-    
+
 The telemetry agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on the [Microsoft Product Lifecycle Search website](https://go.microsoft.com/fwlink/p/?LinkId=286402) before you install the agent. 
-  
+
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
-  
+
 ### To deploy the Office 2016 telemetry agent to Office 2010, Office 2007, and Office 2003 clients
 
 1. In Telemetry Dashboard, on the **Getting started** worksheet, under **3. Deploy Telemetry Agent**, choose the appropriate link (x86 or x64) to save the telemetry agent .msi file to a specified location.
-    
+
 2. Using your preferred method, deploy the .msi file to client computers that you want to monitor. Be sure to match the x86 or x64 version of the telemetry agent to the architecture of the Windows operating system that is running on the client, not the Office client architecture. 
-    
+
     For client local installations, you must run the .msi file as an administrator. You can deploy the MSI package silently by using the /quiet parameter with the MSI. Refer to the MSI help for the full set of available parameters. 
-    
+
     For large-scale deployments, you can [deploy Telemetry Agent by using System Center Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=286403).
-    
+
 
 <a name="configure"> </a>
 
 ### Enabling and configuring the telemetry agent
 
 To enable and configure the telemetry agent, you can edit the registry on each monitored client computer in small or test environments. For production environments that contain hundreds or thousands of client computers, you can use Group Policy administrative templates. Two settings, AgentInitWait and AgentRandomDelay, are configurable only in the registry.
-  
+
 - [Use the registry to enable and configure the Office telemetry agent](deploy-telemetry-dashboard.md#agentregistry)
-    
+
 - [Use Group Policy to enable and configure the telemetry agent](deploy-telemetry-dashboard.md#agentpolicy)
-    
+
 <a name="agentregistry"> </a>
 
 ### Use the registry to enable and configure the Office telemetry agent
 
 The easiest way to update the registry on a single client is to run a .reg file that sets the registry values that enable the telemetry agent to collect and upload data. You can create this .reg file by copying one of the following examples to a text file, updating the required fields, saving the file as agent.reg and then running it from an elevated command prompt. In the .reg file, ensure that you specify the UNC path of the shared folder to which the agent uploads the data. Optionally, you can update the \<TAG\> fields so you can easily identify the collected data in your organization, such as by department, location, or deployment group.
-  
+
 The following example sets the default settings that are needed to enable the telemetry agent. AgentInitWait and AgentRandomDelay are set to their default values, which are appropriate for production deployments.
-  
+
 ```
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
@@ -300,11 +300,10 @@ Windows Registry Editor Version 5.00
 "EnableUpload"=dword:00000001
 "EnableFileObfuscation"=dword:00000000
 "AgentRandomDelay"=dword:000000F0
-
 ```
 
 The code in the following example enables Telemetry Dashboard to begin uploading data immediately by setting AgentInitWait and AgentRandomDelay to their smallest values. Use this example only in test deployments. 
-  
+
 ```
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
@@ -318,22 +317,21 @@ Windows Registry Editor Version 5.00
 "EnableUpload"=dword:00000001
 "EnableFileObfuscation"=dword:00000000
 "AgentRandomDelay"=dword:00000000
-
 ```
 
 You can distribute registry updates to multiple client computers by putting a .reg file in a shared folder and instructing users to run the file, or you can add a command to the users' logon script to automatically import the .reg file when users log on. Use the syntax in the following example to start the .reg file from a logon script:
-  
+
 ```
 %windir%\regedit.exe /s <PATH>\<NAME>.reg
 ```
 
 For more information about how to use .reg files, see [How to add, modify, or delete registry subkeys and values by using a registration entries (.reg) file](https://go.microsoft.com/fwlink/p/?LinkID=200827).
-  
+
 The following tables describe each registry value.
-  
+
 > [!NOTE]
 > If you're not an administrator, you'll have to edit the registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\OSM. These changes can be overwritten by policy settings that are located in HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM. 
-  
+
 **Telemetry agent registry settings under HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM**
 
 |**Value name**|**Type**|**Value description and data**|**Required or optional**|
@@ -345,25 +343,25 @@ The following tables describe each registry value.
 |enablefileobfuscation  <br/> |REG_DWORD  <br/> |Configures the telemetry agent to disguise, or obfuscate, certain file properties that are reported in telemetric data. If you enable this policy setting, the telemetry agent obfuscates the file name, file path, and title of Office documents before uploading telemetric data to the shared folder. You can learn more about file obfuscation and other privacy settings for Telemetry Dashboard in [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md). <br/> <br/> **Value:** <br/><br/> 0 = Do not obfuscate  <br/> 1 = Obfuscate  <br/> Default = 0 (No obfuscation)  <br/> |Optional  <br/> |
 |AgentInitWait  <br/> |REG_DWORD  <br/> |**IMPORTANT:** To avoid affecting network or client performance, decrease this value in test environments only. <br/><br/>Adjusts the time that the agent waits before it scans a client and uploads data to the telemetry shared folder. If this value doesn't exist, the default wait time is 10 minutes (600 seconds). In test environments, you can specify 1 second to remove the delay for testing Windows 7 with Service Pack 1 and earlier clients. We recommend that you set this to at least 60 seconds for computers that run Windows "8." <br/> <br/> **Value:** <br/> <br/> _x_ = Wait time in seconds  <br/> |Optional  <br/> |
 |AgentRandomDelay  <br/> |REG_DWORD  <br/> |**IMPORTANT:** To avoid affecting network or client performance, decrease this value in test environments only. <br/><br/> Adjusts the maximum random delay, in minutes. The agent randomly waits between 0 and **AgentRandomDelay** minutes, in addition to the **AgentInitWait** value, before it starts to scan or upload telemetry data. If this value doesn't exist, the agent waits between 0 minutes to 240 minutes. In test environments, you can specify 0 to remove the random delay for testing. <br/> <br/> **Value:** <br/><br/>  _x_ = Random delay in minutes  <br/> |Optional  <br/> |
-   
+
 **Telemetry Agent registry settings under HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedapplications**
 
 |**Value name**|**Value type**|**Value description and data**|**Required or optional**|
 |:-----|:-----|:-----|:-----|
 |accesssolution  <br/> olksolution  <br/> onenotesolution  <br/> pptsolution  <br/> projectsolution  <br/> publishersolution  <br/> visiosolution  <br/> wdsolution  <br/> xlsolution  <br/> |REG_DWORD  <br/> |Prevents telemetric data for specific Office applications from being reported to Telemetry Dashboard. You can learn more about this registry setting in [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md).  <br/><br/> **Value:** <br/><br/> 1 = Prevent reporting  <br/> 0 = Allow reporting  <br/> Default = 0 (Allow reporting)  <br/> |Optional  <br/> |
-   
+
 **Telemetry Agent registry settings under HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedsolutiontypes**
 
 |**Value name**|**Value type**|**Value description and data**|**Required or optional**|
 |:-----|:-----|:-----|:-----|
 |agave  <br/> appaddins  <br/> comaddins  <br/> documentfiles  <br/> templatefiles  <br/> |REG_DWORD  <br/> |Prevents telemetric data for specific solutions from being reported to Telemetry Dashboard. However, the solution type is still reported. You can learn more about this registry setting in [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md).  <br/><br/> **Value:** <br/><br/> 1 = Prevent reporting  <br/> 0 = Allow reporting  <br/> Default = 0 (Allow reporting)  <br/> |Optional  <br/> |
-   
+
 <a name="agentpolicy"> </a>
 
 ### Use Group Policy to enable and configure the telemetry agent
 
 You can also use Group Policy to enable and configure telemetry agents. Download the Group Policy administrative template files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001). The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. 
-  
+
 **Telemetry Agent policy settings**
 
 |**Setting name**|**Description**|**Required or optional**|
@@ -375,83 +373,83 @@ You can also use Group Policy to enable and configure telemetry agents. Download
 |Turn on privacy settings in Telemetry Agent  <br/> |Configures the telemetry agent to disguise, or obfuscate, certain file properties that are reported in telemetric data. If you enable this policy setting, the telemetry agent obfuscates the file name, file path, and title of Office documents before uploading telemetric data to the shared folder.  <br/><br/> You can learn more about file obfuscation and other privacy settings for Telemetry Dashboard in [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md).  <br/> |Optional  <br/> |
 |Office applications to exclude from Telemetry Agent reporting  <br/> |Prevents telemetric data for specific Office applications from being reported to the Telemetry Dashboard.  <br/> |Optional  <br/> |
 |Office solutions to exclude from Telemetry Agent reporting  <br/> |Prevents telemetric data for specific Office solutions from being reported to the Telemetry Dashboard.  <br/> |Optional  <br/> |
-   
+
 <a name="trigger"> </a>
 
 ### Triggering telemetry data collection manually
 
 When a user logs in to an Office client, the telemetry agent waits 10 minutes to allow other logon processes to be completed, and then waits a randomized number of minutes up to 4 hours (or the max delay that is set for the AgentRandomDelay registry value) to avoid client computers sending data to network at the same time. After this initial scan, the telemetry agent scans and collects data every 8 hours. 
-  
+
 If you want to trigger the data collection manually and see data uploaded immediately to Telemetry Dashboard, set the following registry values as described in the earlier table:
-  
+
  **For computers that run Windows 7 with Service Pack 1 and earlier**
-  
+
 - AgentInitWait: 1
-    
+
 - AgentRandomRelay: 0
-    
+
 **For computers that run Windows 8 and later**
-  
+
 Because user logon is faster in Windows 8 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
-  
+
 - AgentInitWait: 60
-    
+
 - AgentRandomRelay: 0
-    
+
 To trigger a scan manually, use one of the following procedures. 
-  
+
 ### To trigger scanning and data collection on Windows clients
 
 1. Ensure that the computer is connected to an AC power supply. 
-    
+
 2. In Task Scheduler on the client computer, expand **Task Scheduler Library**, expand **Microsoft**, and then choose **Office**.
-    
+
 3. Right-click **OfficeTelemetryAgentLogOn**, and then choose **Run**.
-    
+
 <a name="FAQ"> </a>
 
 ## Frequently asked questions about Telemetry Dashboard
 
  **Q:** What happens if a client computer is disconnected for some time? 
-  
+
  **A:** If a monitored client is disconnected, or if the telemetry shared folder is temporarily unavailable, data is still collected locally on the client. When the connection is restored, the backlog of information is delivered to the telemetry shared folder. 
-  
+
  **Q:** How much data is transferred during each transfer? 
-  
+
  **A:** The amount varies according to the number of files that are used and solutions installed. Here are estimates for how much data Telemetry Agent sends for different versions of Office: 
-  
+
 - Earlier versions of Office send approximately 50 KB for every upload.
-    
+
 - Office 2016 sends approximately 64 KB of data for every upload.
-    
+
 The amount transferred can be larger when the interval is set to longer than the default or when the data sits idle on the local computer for long periods of time. Note that actual file content isn't transferred; only metadata about the files is transferred.
-  
+
  **Q:** What is the performance impact of installing and running the telemetry agent? 
-  
+
  **A:** The agent is transparent to the user and performs low-impact tasks, such as inspecting content from MRU and specific local registry settings. The agent doesn't actively scan files. The agent does account for monitor power state and network status to avoid affecting client performance. 
-  
+
  **Q:** How can I re-initialize an agent? 
-  
+
  **A:** The telemetry agent is stored locally on the client computer at %localappdata%/Microsoft/Office/16.0/Telemetry/. You can delete the contents of this folder to reinitialize the computer and start a fresh discovery. Note that this is a per-user data location. 
-  
+
  **Q:** How frequently is data sent to the telemetry shared folder? 
-  
+
  **A:** Data is transferred from the client to the telemetry shared folder when users log on and every 8 hours while the user is logged in. You can adjust this interval in Task Scheduler. 
-  
+
  **Q:** What is the format of the collected data? 
-  
+
  **A:** Collected data is stored and transferred in binary format to optimize the storage and data transfer requirements. 
-  
+
  **Q:** If I change the custom labels after I deploy the telemetry agents, when will the new labels be updated in the telemetry database? 
-  
+
  **A:** Only files that are in the Most Recently Used list will have their labels updated in the telemetry database. This will occur the next time the telemetry agent sends usage data. For files that are not in the Most Recently Used list, they will continue to show the old labels in the telemetry database until the user opens the file and the telemetry agent uploads usage data. 
-  
+
 <a name="tshooting"> </a>
 
 ## Troubleshooting Telemetry Dashboard deployments
 
 The following table describes some symptoms that you might encounter after you deploy Telemetry Dashboard and its components.
-  
+
 **Troubleshooting Telemetry Dashboard deployments**
 
 |**Issue**|**Description**|**Resolution**|
@@ -472,12 +470,12 @@ The following table describes some symptoms that you might encounter after you d
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If there are two or more instances of SQL Server, ensure that the **Data connection settings** dialog box in Telemetry Dashboard uses the correct SQL Server instance in the format  _Servername\SQLServerinstance_.  <br/> |
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server is SQL Express, ensure that the SQL Server instance name is correct. The default instance name for SQL Express differs from SQL Server, for example:  _Servername\SQLExpress_.  <br/> |
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server default collation is case-sensitive (for example, the Japanese version of SQL Server is case-sensitive by default), ensure that you entered a case-sensitive database name in the **Data connection settings** dialog box in Telemetry Dashboard.  <br/> |
-   
+
 ## Related topics
 [Assess Office compatibility](assess-office-compatibility.md)
-  
+
 [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
-  
+
 [Monitor Office compatibility and deployments by using Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
 
 [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
