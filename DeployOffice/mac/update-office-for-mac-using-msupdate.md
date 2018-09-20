@@ -47,9 +47,9 @@ The following options are displayed:
 ```./msupdate --config --format plist```
 - List all available updates:
 ```./msupdate --list```
-- Download and install all available updates"
+- Download and install all available updates:
 ```./msupdate --install```
-- Download and install the latest updates for Word, Excel, and PowerPoint"
+- Download and install the latest updates for Word, Excel, and PowerPoint:
 ```./msupdate --install --apps mswd2019 xcel2019 ppt32019```
 - Download and install a version-specific update for Outlook:
 ```./msupdate --install --apps opim2019 --version 16.17.180090901```
