@@ -13,7 +13,7 @@ ms.custom: Ent_Office_VL
 description: "Provides IT admins with information on how to update Office 2019."
 ---
 
-# Update Office 2019 (for IT Pros)s
+# Update Office 2019 (for IT Pros)
  
   
 The following is intended provide IT Pros with information on how to update volume licensed versions of Office 2019 to users in their organzation.
