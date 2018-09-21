@@ -76,6 +76,21 @@ The following is a sample configuration.xml file that can be used to either down
 
 For the PIDKEY, replace #####-#####-#####-#####-##### with your MAK client activation key. 
 
+
+## Remove existing versions of Office before installing Office 2019
+We recommend that you uninstall any previous versions of Office before installing volume licensed versions of Office 2019. To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file.
+
+There are several ways that you can use the RemoveMSI element when installing volume licensed versions of Office 2019.
+- Uninstall all Office products on the computer.
+- Identify any existing language resources, like language packs, and install the same languages.
+- Keep some Office products and uninstall all other Office products on the computer.
+
+RemoveMSI can be used to uninstall 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
+
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](../upgrade-from-msi-version.md). Even though this article is about Office 365 ProPlus, most of the information also applies to volume licensed versions of Office 2019.
+
+
+
 ## Download the Office 2019 installation files
 Once you have a copy of the ODT and have edited your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
 
@@ -105,19 +120,6 @@ If you have saved the configuration.xml file with a different name, use that nam
 Once the installation is complete, you are returned to a command prompt and you can go open Office 2019 programs you’ve installed.
 
 
-## Remove existing versions of Office before installing Office 2019
-We recommend that you uninstall any previous versions of Office before installing volume licensed versions of Office 2019. To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file.
-
-There are several ways that you can use the RemoveMSI element when installing volume licensed versions of Office 2019.
-- Uninstall all Office products on the computer.
-- Identify any existing language resources, like language packs, and install the same languages.
-- Keep some Office products and uninstall all other Office products on the computer.
-
-RemoveMSI can be used to uninstall 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
-
-For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](../upgrade-from-msi-version.md). Even though this article is about Office 365 ProPlus, most of the information also applies to volume licensed versions of Office 2019.
-
-
 ## Install Office 2019 by using System Center Configuration Manager
 
 You can also use System Center Configuration Manage to deploy volume licensed versions of Office 2019. Configuration Manager (Current Branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file.
@@ -129,7 +131,7 @@ You can also use System Center Configuration Manage to deploy volume licensed ve
 
 ## Deploy languages for Office 2019
 
-You can use the Office Deployment Tool (ODT) and the configuration.xml file to install volume licensed versions of Office 2019, including Project and Visio, in multiple languages. For more details, see Language element.
+You can use the Office Deployment Tool (ODT) and the configuration.xml file to install volume licensed versions of Office 2019, including Project and Visio, in multiple languages. For more details, see [Language element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#language-element).
 
 You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuriation.xml file along with the appropriate Language IDs. Proofing tools packages, which are a new capability for Office 2019, are much smaller than full language packs.  Consider deploying proofing tools in cases where users work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office 2019, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
 

@@ -66,7 +66,7 @@ Office 2019 won’t receive additional new features now that it has been release
 
 ## How do I upgrade to Office 2019?
 
-We recommend that you uninstall existing versions of Office before you deploy Office 2019. If you’re uninstalling previous versions of Office products that were installed with Windows Installer (MSI), the Office Deployment Tool can remove most of those for you as part of the installation of Office 2019. For more information, see **ADD LINK**.
+We recommend that you uninstall existing versions of Office before you deploy Office 2019. If you’re uninstalling previous versions of Office products that were installed with Windows Installer (MSI), the Office Deployment Tool can remove most of those for you as part of the installation of Office 2019. For more information, see [Remove existing versions of Office before installing Office 2019](deploy.md#remove-existing-versions-of-office-before-installing-office-2019).
 
 ## Additional information
 
