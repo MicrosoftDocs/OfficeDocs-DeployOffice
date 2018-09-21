@@ -232,13 +232,13 @@ Office 2016 provides a Group Policy setting that you can use to disable trusted 
     
 - **Impact:** Enabling this setting disables all trusted locations. This includes trusted locations that are as follows: 
     
- - Created by default during Setup.
+  - Created by default during Setup.
     
- - Created by using the OCT.
+  - Created by using the OCT.
     
- - Created by users through the Trust Center.
+  - Created by users through the Trust Center.
     
- - Created by using Group Policy.
+  - Created by using Group Policy.
     
   Enabling this setting also prevents users from configuring trusted locations settings in the Trust Center. If you enable this setting, make sure that you notify users that they can't use trusted locations. If users have been opening files from trusted locations, and you enable this setting, users might start seeing warnings in the Message Bar and they might be required to respond to Message Bar warnings to enable content, such as ActiveX controls, add-ins, and VBA macros.
     
