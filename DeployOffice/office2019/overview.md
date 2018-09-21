@@ -15,7 +15,10 @@ description: "Provides IT admins with an overview of deploying Office 2019."
 
 # Overview of Office 2019 (for IT Pros)
  
-Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's availabe through Office 365 plans. For example, if you've deployed Office 365 ProPlus to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. 
+Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. 
+
+> [!IMPORTANT]
+> Office 2019 is separate from Office that's available through Office 365 plans. For example, if you've deployed Office 365 ProPlus to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. 
   
 Volume licensed versions of Office 2019 are available for enterprise admins to download and deploy to the users in their organization. This includes the following Office products:
 
@@ -28,10 +31,9 @@ Volume licensed versions of Office 2019 are available for enterprise admins to d
 
 These Office products now use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
-> [!NOTE]
-> Office 2019 for Mac is also available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+Office 2019 for Mac is also available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
 
-## WHat's changed in Office 2019?
+## What's changed in Office 2019?
 
 The biggest change since Office 2016 is that the installation technology used by the new volume licensed versions of Office is Click-to-Run, instead of Windows Installer (MSI). Click-to-Run has been the installation technology for most Office products since the release of Office 2013.
 
@@ -79,4 +81,4 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - [Deploy Office 2019 (for IT Pros)](deploy.md)
 - [Update Office 2019 (for IT Pros)](update.md)
-- [Volume activation for Office 2019](../vlactivation/plan-volume-activation-of-office.md)
+- [Volume activation for Office](../vlactivation/plan-volume-activation-of-office.md)
