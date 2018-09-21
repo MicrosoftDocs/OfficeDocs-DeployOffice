@@ -70,14 +70,14 @@ Here are some example installation scenarios, whether they’re supported, and a
 
 |Products to install  |Supported?  |Explanation  |
 |---------|---------|---------|
-|Row1     |   Yes      |They use different installation technologies (Click-to-Run and MSI) and they are different versions (16.0 and 15.0)         |
-|Row2     |   No      | They both use Click-to-Run and they are different versions (16.0 and 15.0), but Office 365 ProPlus already includes Access.        |
-|Row3     |   Yes      |They both use Click-to-Run, they are different versions (16.0 and 15.0), and there is no overlap in applications.         |
-|Row4     |   No      | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0).        |
-|Row5     |   Yes      |They use different installation technologies (Click-to-Run and MSI) and they are different versions (16.0 and 15.0).         |
-|Row6     |   No, but there is an alternative installation method available. | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0). <br/><br/> For more information about the alternative installation method that’s available, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).        |
-|Row7     |   Yes, but with a caveat. <sup>2</sup>   | They both use Click-to-Run and are the same version (16.0).         |
-|Row8     |   Yes, but with a caveat. <sup>2</sup>  | They both use Click-to-Run and are the same version (16.0).         |
+| Office 365 ProPlus <br/> Project Professional 2013 (volume licensed) |   Yes      |They use different installation technologies (Click-to-Run and MSI) and they are different versions (16.0 and 15.0)         |
+| Office 365 ProPlus <br/>  Access 2013 (retail purchase) |   No      | They both use Click-to-Run and they are different versions (16.0 and 15.0), but Office 365 ProPlus already includes Access.        |
+| Office 365 ProPlus  <br/> Visio Professional 2013 (retail purchase) |   Yes      |They both use Click-to-Run, they are different versions (16.0 and 15.0), and there is no overlap in applications.         |
+| Office Professional Plus 2019 (volume licensed) <br/> Visio Professional 2016 (volume licensed)   |   No      | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0).        |
+| Office Standard 2019 (volume licensed) <br/>Visio Standard 2013 (volume licensed)   |   Yes      |They use different installation technologies (Click-to-Run and MSI) and they are different versions (16.0 and 15.0).         |
+|Office 365 ProPlus  <br/> Visio Professional 2016 (volume licensed)  |   No, but there is an alternative installation method available. | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0). <br/><br/> For more information about the alternative installation method that’s available, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).        |
+|Office 365 ProPlus  <br/> Project Professional 2019 (volume licensed)  |   Yes, but with a caveat. <sup>2</sup>   | They both use Click-to-Run and are the same version (16.0).         |
+| Office 365 ProPlus  <br/> Visio Standard 2019 (retail) |   Yes, but with a caveat. <sup>2</sup>  | They both use Click-to-Run and are the same version (16.0).         |
 
 
 
