@@ -55,9 +55,9 @@ Keep in mind that installing and updating Office 2019 from a shared folder on yo
 
 You can also use enterprise software deployment tools, such as System Center Configuration Manager, to help you update Office 2019.
 
-The location where Office 2019 looks for updates is specified in the configuration.xml file that you use to deploy Office 2019 with the Office Deployment Tool.  For more information, see [Deploy Office 2019 (for IT Pros)](deploy.md).
+The location where Office 2019 looks for updates is specified in the configuration.xml file that you use to deploy Office 2019 with the Office Deployment Tool.  For more information, see [Deploy Office 2019 (for IT Pros)](deploy.md). You can also use [Group Policy](#use-group-policy-to-specify-update-settings).
 
-## How to check for updates for Office 2019
+## Check for updates for Office 2019
 
 Instead of waiting for the scheduled task to run to check for updates, you can manually check for updates. To do that, open any Office app, such as Word, and go to **File** > **Account** > **Update Options** > **Update Now**.
 
