@@ -93,15 +93,15 @@ Once you have prepared your KMS host computer, you need to install the Volume Li
     
 4. If you have a firewall enabled, follow these steps to activate the KMS host computer through the firewall:
     
-1. In Control Panel, select **System and Security**, and then select **Windows Firewall**.
+5. In Control Panel, select **System and Security**, and then select **Windows Firewall**.
     
-2. Select the **Allow a program or feature through Windows Firewall** link. 
+6. Select the **Allow a program or feature through Windows Firewall** link. 
     
-3.  Select **Change Settings**.
+7. Select **Change Settings**.
     
-4. Select the **Key Management Service** check box, and then click **OK**.
+8. Select the **Key Management Service** check box, and then click **OK**.
     
-5. If you installed the Microsoft Office 2016 Volume License Pack on Windows 8, when the application opens, the dialog box in the following figure appears. Choose **Yes** to install the Remote Server Administration Tools (RSAT) for Windows 8 from the [RSAT download page](https://go.microsoft.com/fwlink/p/?LinkId=254802), or click **No** to use **slmgr.vbs** to set up KMS host computer activation. We recommend that you install RSAT. 
+9. If you installed the Microsoft Office 2016 Volume License Pack on Windows 8, when the application opens, the dialog box in the following figure appears. Choose **Yes** to install the Remote Server Administration Tools (RSAT) for Windows 8 from the [RSAT download page](https://go.microsoft.com/fwlink/p/?LinkId=254802), or click **No** to use **slmgr.vbs** to set up KMS host computer activation. We recommend that you install RSAT. 
     
    **Figure: Office 2016 Volume License Pack dialog box**
 
@@ -109,7 +109,7 @@ Once you have prepared your KMS host computer, you need to install the Volume Li
   
     For more information about **slmgr.vbs** (Software License Manager script), see [The slmgr.vbs script](tools-to-manage-volume-activation-of-office.md#BK_Theslmgrscript).
     
- **Activating an Office KMS host computer by telephone**
+   **Activating an Office KMS host computer by telephone**
   
 If your KMS host does not have an Internet connection, you can activate it by telephone.
 
@@ -121,9 +121,9 @@ If your KMS host does not have an Internet connection, you can activate it by te
     
 2. Start a Command Prompt with elevated privileges. For example:
     
-  - For Windows Server 2008 R2, click **Start**, click **All Programs**, expand **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
+   - For Windows Server 2008 R2, click **Start**, click **All Programs**, expand **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
     
-  - For Windows Server 2012, on the **Start** screen, right-click **Command Prompt**, and then click **Run as administrator**. If **Command Prompt** is not on the **Start** screen, right-click **Computer**, click **All apps**, right-click **Command Prompt**, and then click **Run as administrator**.
+   - For Windows Server 2012, on the **Start** screen, right-click **Command Prompt**, and then click **Run as administrator**. If **Command Prompt** is not on the **Start** screen, right-click **Computer**, click **All apps**, right-click **Command Prompt**, and then click **Run as administrator**.
     
 3. In the **User Account Control** dialog box, click **Yes**.
     
@@ -166,9 +166,9 @@ After you set up the host computer, the KMS clients send requests for activation
     
 2. Start a Command Prompt with elevated privileges. For example:
     
-  - For Windows Server 2008 R2, click **Start**, click **All Programs**, expand **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
+   - For Windows Server 2008 R2, click **Start**, click **All Programs**, expand **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
     
-  - For Windows Server 2012, on the **Start** screen, right-click **Command Prompt**, and then click **Run as administrator**. If **Command Prompt** is not on the **Start** screen, right-click **Computer**, click **All apps**, right-click **Command Prompt**, and then click **Run as administrator**.
+   - For Windows Server 2012, on the **Start** screen, right-click **Command Prompt**, and then click **Run as administrator**. If **Command Prompt** is not on the **Start** screen, right-click **Computer**, click **All apps**, right-click **Command Prompt**, and then click **Run as administrator**.
     
 3. In the **User Account Control** dialog box, click **Yes**.
     
@@ -182,26 +182,26 @@ After you set up the host computer, the KMS clients send requests for activation
     
     The following is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
     
-  ```
-  Name: Office 16, OfficeKMSHostVL_KMS_Host edition
-  Description: Office 16, VOLUME_KMS channel
-  Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
-  Application ID: 0ff1ce16-a989-479d-af46-f275c6370663
-  Extended PID: 05426-00206-234-001162-03-1033-9200.0000-0992013
-  Installation ID: 020650770493837252929082195773527024195725809211989214
-  Use License URL: https://activation.sls.microsoft.com/SLActivateProduct/SLActiva
-  teProduct.asmx?configextension=o16
-  Validation URL: https://go.microsoft.com/fwlink/?LinkID=187557
-  Partial Product Key: KDQ2G
-  License Status: Licensed
-  Remaining Windows rearm count: 1000
-  Trusted time: 10/26/2016 9:58:33 AM
-  Key Management Service is enabled on this machine
+   ```
+   Name: Office 16, OfficeKMSHostVL_KMS_Host edition
+   Description: Office 16, VOLUME_KMS channel
+   Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
+   Application ID: 0ff1ce16-a989-479d-af46-f275c6370663
+   Extended PID: 05426-00206-234-001162-03-1033-9200.0000-0992013
+   Installation ID: 020650770493837252929082195773527024195725809211989214
+   Use License URL: https://activation.sls.microsoft.com/SLActivateProduct/SLActiva
+   teProduct.asmx?configextension=o16
+   Validation URL: https://go.microsoft.com/fwlink/?LinkID=187557
+   Partial Product Key: KDQ2G
+   License Status: Licensed
+   Remaining Windows rearm count: 1000
+   Trusted time: 10/26/2016 9:58:33 AM
+   Key Management Service is enabled on this machine
       Current count: 0
       Listening on Port: 1688
       DNS publishing enabled
       KMS priority: Normal
-  Key Management Service cumulative requests received from clients
+   Key Management Service cumulative requests received from clients
       Total requests received: 0
       Failed requests received: 0
       Requests with License Status Unlicensed: 0
@@ -210,7 +210,7 @@ After you set up the host computer, the KMS clients send requests for activation
       Requests with License Status License expired or Hardware out of tolerance: 0
       Requests with License Status Non-genuine grace period: 0
       Requests with License Status Notification: 0
-  ```
+   ```
 
 5. Close the **Administrator: Command Prompt** window. 
     

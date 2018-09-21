@@ -127,8 +127,7 @@ description: Office deployment
                                         </div>
                                     </div>
                                 </a>
-                            </li>                            
-                        </ul>
+                            </li><br/>                        </ul>
                     </li>
                 </ul>
             </li>
