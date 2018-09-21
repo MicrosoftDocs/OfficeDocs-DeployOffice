@@ -28,11 +28,11 @@ ROBOTS: NOINDEX, NOFOLLOW
     
 3. To configure the setting, double-click the setting that you want to configure, and then select **Not Configured**, **Enabled**, or **Disabled**. Each of these choices can have a different effect on the setting, and each is explained in the information displayed on the bottom of this page when a setting is selected.
     
-  - **Not configured** - The setting remains as it is. 
+   - **Not configured** - The setting remains as it is. 
     
-  - **Enabled** - The setting is modified based on your choices in the dialog box. 
+   - **Enabled** - The setting is modified based on your choices in the dialog box. 
     
-  - **Disabled** - The setting is disabled. Disabling an option may be different from not configuring the option. See the description of the specific option for more details. 
+   - **Disabled** - The setting is disabled. Disabling an option may be different from not configuring the option. See the description of the specific option for more details. 
     
 4. From this dialog box, you can move through the list of settings by choosing **Previous Setting** or **Next Setting**.
     
