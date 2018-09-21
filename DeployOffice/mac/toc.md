@@ -8,6 +8,7 @@
 ### [Diagnostic data](set-preference-diagnostic-data.md)
 ### [Resume Assistant](set-preference-resume-assistant-word.md)
 ## [Activation overview](overview-of-activation-for-office-for-mac.md)
+### [Overview of the Volume License (VL) Serializer](volume-license-serializer.md)
 ## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
 ## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
