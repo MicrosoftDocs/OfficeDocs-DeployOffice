@@ -49,7 +49,7 @@ If you set up the Office 2019 KMS Host on a different computer than your Office 
 	cscript ospp.vbs /sethst:KMSHostFQDN
     cscript ospp.vbs /act
 ```
-Replace *KMSHostFQDN* with the fully qualified domain name of the Office 2019 KMS Host computer. You will need to restart any Office apps to see these changes take effect.
+Replace *KMSHostFQDN* with the fully qualified domain name of the Office 2019 KMS Host computer. You will need to restart any Office apps for these changes take effect.
 
 
 ## MAK activation steps
@@ -64,7 +64,7 @@ If you activate Office by using MAK, do the following to update Office 2019 Prev
 	cscript ospp.vbs /inpkey:yourkey
 	cscript ospp.vbs /act
 ```
-Replace *yourkey* with your MAK client activation key. You will need to restart any Office apps to see these changes take effect.
+Replace *yourkey* with your MAK client activation key. You will need to restart any Office apps for these changes take effect.
 
 
 
