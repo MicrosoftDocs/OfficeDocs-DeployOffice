@@ -13,7 +13,7 @@ ms.custom: Ent_Office_VL
 description: "Provides admins with information about activatinng volume licensed versions of Office 2019 and Office 2016 by using Active Directory."
 ---
 
-# Activate Office volume licensed versions of Office by using Active Directory
+# Activate volume licensed versions of Office by using Active Directory
 
 ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
   
@@ -30,12 +30,12 @@ To use Active Directory-based activation, the volume licensed version of Office,
 - Windows Server 2012 R2
 - Windows Server 2012  
     
-Review the [System requirements for Office](https://products.office.com/office-system-requirements) to determine which operating systems are supported by the volue licensed version of Office, Project, or Visio that you're using. For example, Office Professional Plus 2019 is supported on Windows 10 but isn't supported on Windows 8.1.
+Review the [System requirements for Office](https://products.office.com/office-system-requirements) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're using. For example, Office Professional Plus 2019 is supported on Windows 10 but isn't supported on Windows 8.1.
 
 
 ### Configure Active Directory-based activation
 
-To configure Active Directory-based activation, you must have Domain Adminsitrator and Enterprise Administrator credentials.
+To configure Active Directory-based activation, you must have Domain Administrator and Enterprise Administrator credentials.
 
 1. Sign in to a domain controller in Active Directory and use Server Manager to install the Volume Activation Services role.
 2. Sign in to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your KMS key for your version of Office.
@@ -52,12 +52,10 @@ To configure Active Directory-based activation, you must have Domain Adminsitrat
 
 ## Additional information about Active-Directory based activation
 
-- Active-Directory based activation uses the same client activation key and host key that are used by Key Management Service (KMS). But Active Directory-based activation doesn't require a dedicated host computer, because the activation object is replicated across all the domain controllers in the Active Directory forest.
+- Active-Directory based activation uses the same keys that are used by Key Management Service (KMS). But Active Directory-based activation doesn't require a dedicated host computer, because the activation object is replicated across all the domain controllers in the Active Directory forest.
 - A successful Active Directory-based activation of Office lasts for up to 180 days. The Software Protection service running on the computer periodically attempts to re-activate Office by querying Active Directory for the activation object. If Active Directory can't be contacted, Office will try to activate by using a discoverable KMS host computer. 
 
     
 ## Related topics
 [Plan volume activation of Office](plan-volume-activation-of-office.md)
-  
-[Prepare and set up the Office KMS host computer](configure-a-kms-host-computer-for-office.md)
-
+ 
