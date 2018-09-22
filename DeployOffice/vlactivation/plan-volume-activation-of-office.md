@@ -31,7 +31,7 @@ Microsoft policy requires the activation of all editions of Office 2016 client s
     
  - [Multiple Activation Key (MAK)](plan-volume-activation-of-office.md#mak)
     
- - [Active Directory-Based Activation (ADBA)](plan-volume-activation-of-office.md#ADDSActivation)
+ - [Active Directory-based](plan-volume-activation-of-office.md#ADDSActivation)
 
 The model that you choose depends on the size, network infrastructure, connectivity, and security requirements in your environment.  
 
