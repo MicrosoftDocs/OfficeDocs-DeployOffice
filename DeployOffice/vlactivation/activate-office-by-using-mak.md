@@ -60,14 +60,16 @@ To enter a multiple activation key by using the Config.xml file, follow these st
   
 1. Add the following line to the Config.xml file:
     
-    **\<PIDKEY Value="AAAAABBBBBCCCCCDDDDDEEEEE" /\>**
+```
+    \<PIDKEY Value="AAAAABBBBBCCCCCDDDDDEEEEE" /\>**
+```
     
-    Where *AAAAABBBBBCCCCCDDDDDEEEEE* is the 25-character product key. 
+   Replace *AAAAABBBBBCCCCCDDDDDEEEEE* with your 25-character product key. 
     
 2. To apply the settings in Config.xml, at a command prompt, type the following command, and then press ENTER:
   
 ```  
-    **Setup.exe /config \<path of Config.xml file\>**
+    Setup.exe /config \<path of Config.xml file\>
 ```
     
 > [!NOTE]
@@ -85,7 +87,7 @@ To change the Office 2016 product key on only one computer:
 2. Go to **File** > **Account**.
 3. Choose **Change Product Key** and enter the product key. 
  
-If you have to change the Office 2016 product key on multiple computers after Office is installed, we recommend that you use Volume Activation Management Tool (VAMT) 3.1. For more information, see [Use the Volume Activation Management Tool](https://docs.microsoft.com/windows/deployment/volume-activation/use-the-volume-activation-management-tool-client).
+If you need to change the Office 2016 product key on multiple computers after Office is installed, we recommend that you use Volume Activation Management Tool (VAMT) 3.1. For more information, see [Use the Volume Activation Management Tool](https://docs.microsoft.com/windows/deployment/volume-activation/use-the-volume-activation-management-tool-client).
     
  
 <a name="registry"> </a>
@@ -97,9 +99,11 @@ An administrator can create a registry key that allows a standard user (that is,
 This can be used if you want a user to manually activate Office by using MAK, replace an existing key with a new key, or switch from KMS to MAK activation.
 
 To enable this behavior, add the following line to the Config.xml file:
-  
+
+```  
  **\<Setting Id="USEROPERATIONS" Value="1" /\>**
-  
+```
+
 Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtectionPlatform registry key to enable or disable standard user activation
   
  - To enable: "UserOperations"=dword:00000001
