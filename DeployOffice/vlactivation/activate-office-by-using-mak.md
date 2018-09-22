@@ -61,7 +61,7 @@ To enter a multiple activation key by using the Config.xml file, follow these st
 1. Add the following line to the Config.xml file:
     
 ```
-    \<PIDKEY Value="AAAAABBBBBCCCCCDDDDDEEEEE" /\>**
+    <PIDKEY Value="AAAAABBBBBCCCCCDDDDDEEEEE" />
 ```
     
    Replace *AAAAABBBBBCCCCCDDDDDEEEEE* with your 25-character product key. 
@@ -69,7 +69,7 @@ To enter a multiple activation key by using the Config.xml file, follow these st
 2. To apply the settings in Config.xml, at a command prompt, type the following command, and then press ENTER:
   
 ```  
-    Setup.exe /config \<path of Config.xml file\>
+    Setup.exe /config <path of Config.xml file>
 ```
     
 > [!NOTE]
@@ -101,13 +101,13 @@ This can be used if you want a user to manually activate Office by using MAK, re
 To enable this behavior, add the following line to the Config.xml file:
 
 ```  
- **\<Setting Id="USEROPERATIONS" Value="1" /\>**
+ <Setting Id="USEROPERATIONS" Value="1" />
 ```
 
 Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtectionPlatform registry key to enable or disable standard user activation
   
- - To enable: "UserOperations"=dword:00000001
- - To disable: "UserOperations"=dword:00000000
+ - To enable, set "UserOperations"=dword:00000001
+ - To disable, set UserOperations"=dword:00000000
   
 > [!NOTE]
 > For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/en-us/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
