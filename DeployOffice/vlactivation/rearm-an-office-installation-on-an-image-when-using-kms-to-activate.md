@@ -15,7 +15,8 @@ description: "How to reset the grace timer and reset the client computer ID in O
 
 # Rearm the Office 2016 KMS-based volume activation installation
 
- 
+ ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+
   
 There is a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. If you want to deploy an image, you must rearm your Office 2016 installation before you capture the image. If you do not rearm, users see notification dialog boxes at the time that the image is deployed, instead of 25 days after deployment. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users do not see notifications to activate.
   

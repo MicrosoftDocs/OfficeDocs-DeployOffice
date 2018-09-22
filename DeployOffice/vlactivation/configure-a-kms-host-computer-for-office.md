@@ -15,7 +15,8 @@ description: "How to prepare and configure the Key Management Service (KMS) host
 
 # Prepare and set up the Office 2016 KMS host computer
 
- 
+ ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+
   
 To enable Key Management Service (KMS) functionality for Office 2016, you install KMS host license files and a KMS activation key on the KMS host computer. Then, you activate the key over the Internet or by telephone using Microsoft hosted activation services.
   

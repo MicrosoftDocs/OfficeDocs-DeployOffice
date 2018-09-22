@@ -15,7 +15,8 @@ description: "How to configure DNS to work with Office 2016 KMS-based volume act
 
 # Set up DNS for Office 2016 KMS-based volume activation
 
-  
+ ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+ 
   
 <a name="BKMK_ConfigureDNS"> </a>
 

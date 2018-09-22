@@ -15,7 +15,8 @@ description: "Describes the activation process for KMS volume license editions o
 
 # Set up Office 2016 KMS clients
 
- 
+***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+
   
 > [!IMPORTANT]
 > This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead. 

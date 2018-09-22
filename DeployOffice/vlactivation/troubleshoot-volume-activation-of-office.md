@@ -15,6 +15,7 @@ description: "Explains how to troubleshoot common errors for KMS or MAK-based ac
 
 # Troubleshoot volume activation for Office 2016
 
+***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
   
 |||

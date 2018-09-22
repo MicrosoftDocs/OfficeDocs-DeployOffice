@@ -16,6 +16,8 @@ description: Lists the GVLKs that administrators use for volume licensed version
 
 # GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016
 
+***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+
   
 By default, volume licensed versions of Office 2019 and Office 2016 are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
   

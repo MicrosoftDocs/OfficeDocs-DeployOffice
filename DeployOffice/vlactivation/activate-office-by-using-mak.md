@@ -15,7 +15,8 @@ description: "How to prepare and configure the Office 2016 client for Multiple A
 
 # Activate Office 2016 MAK clients
 
- 
+ ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+
   
 Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft hosted activation services, either via the Internet or by telephone.
   
