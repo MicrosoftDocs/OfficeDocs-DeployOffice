@@ -3,21 +3,19 @@ title: "Tools to manage Office 2016 volume activation"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 1825df76-7e23-459b-a6c1-224dd6eab81e
 description: "Describes the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
 ---
 
 # Tools to manage Office 2016 volume activation
 
- **Summary:** Describes the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT). 
-  
+ 
   
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume license editions of Office 2016. Before you read this article, we recommend that you read [Plan volume activation of Office 2016](plan-volume-activation-of-office.md), [Activate Office 2016 MAK clients](activate-office-by-using-mak.md), and [Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md).
   

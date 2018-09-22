@@ -3,21 +3,19 @@ title: "Activate Office 2016 MAK clients"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 9ce2cb47-dc27-4e5e-acb7-195b004798e2
 description: "How to prepare and configure the Office 2016 client for Multiple Activation Key (MAK) volume activation."
 ---
 
 # Activate Office 2016 MAK clients
 
- **Summary:** How to prepare and configure the Office 2016 client for Multiple Activation Key (MAK) volume activation. 
-  
+ 
   
 Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft hosted activation services, either via the Internet or by telephone.
   

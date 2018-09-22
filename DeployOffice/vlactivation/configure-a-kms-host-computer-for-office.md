@@ -3,21 +3,19 @@ title: "Prepare and set up the Office 2016 KMS host computer"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 2efb9ade-af63-4b7d-b6a9-c86926d4b429
 description: "How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016."
 ---
 
 # Prepare and set up the Office 2016 KMS host computer
 
- **Summary:** How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016. 
-  
+ 
   
 To enable Key Management Service (KMS) functionality for Office 2016, you install KMS host license files and a KMS activation key on the KMS host computer. Then, you activate the key over the Internet or by telephone using Microsoft hosted activation services.
   

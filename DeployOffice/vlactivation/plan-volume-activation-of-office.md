@@ -3,21 +3,19 @@ title: "Plan volume activation of Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: c6545579-4cca-4ad1-829d-cfecbb917dc4
 description: "Explains each method that you can use to activate volume license editions of Office 2016."
 ---
 
 # Plan volume activation of Office 2016
 
- **Summary:** Explains each method that you can use to activate volume license editions of Office 2016. 
-  
+
   
 You plan the deployment of Office for volume activation of Office 2016 in several steps. Before you read this article, we recommend that you read [Windows Volume Activation Planning Guide](https://go.microsoft.com/fwlink/p/?LinkId=183040).
   

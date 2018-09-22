@@ -3,20 +3,18 @@ title: "Set up DNS for Office 2016 KMS-based volume activation"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: fbbc76b4-98dc-42ac-ae5b-37d41efda134
 description: "How to configure DNS to work with Office 2016 KMS-based volume activation."
 ---
 
 # Set up DNS for Office 2016 KMS-based volume activation
 
- **Summary:** How to configure DNS to work with Office 2016 KMS-based volume activation. 
   
   
 <a name="BKMK_ConfigureDNS"> </a>

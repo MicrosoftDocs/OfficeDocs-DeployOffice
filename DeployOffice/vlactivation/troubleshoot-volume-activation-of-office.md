@@ -3,21 +3,19 @@ title: "Troubleshoot volume activation for Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/29/2017
+ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: troubleshooting
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 976fc06b-faed-4682-b41f-4a19d8eb3302
 description: "Explains how to troubleshoot common errors for KMS or MAK-based activation of Office 2016."
 ---
 
 # Troubleshoot volume activation for Office 2016
 
- **Summary:** Explains how to troubleshoot common errors for KMS or MAK-based activation of Office 2016. 
-  
+
   
 |||
 |:-----|:-----|
