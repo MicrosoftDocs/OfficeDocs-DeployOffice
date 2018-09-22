@@ -27,7 +27,7 @@ If you’re not a volume licensed customer, you need to purchase Office 2019. Af
 
 ## KMS activation steps
 
-If you activate Office by using KMS, including Active Directory-Based Activation (ADBA), do the following to update Office 2019 Preview to Office 2019.
+If you activate Office by using KMS, including Active Directory-based activation, do the following to update Office 2019 Preview to Office 2019.
 
 - If you haven't already done so, set up a KMS host computer. If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer for your Office KMS host computer. 
 - Download the [Office 2019 Volume License Pack](http://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd) from the Microsoft Download Center.
@@ -42,7 +42,7 @@ If you activate Office by using KMS, including Active Directory-Based Activation
 ```
 Replace *yourkey* with your KMS client activation key. You will need to restart any Office apps to see these changes take effect.
 
-If you set up the Office 2019 KMS Host on a different computer than your Office 2019 Preview KMS host and you aren't using Active Directory-Based Activation (ADBA), then the previous commands might not work, so try running these additional commands:
+If you set up the Office 2019 KMS Host on a different computer than your Office 2019 Preview KMS host and you aren't using Active Directory-based activation, then the previous commands might not work, so try running these additional commands:
 
 ```
 	cscript ospp.vbs /remhst
