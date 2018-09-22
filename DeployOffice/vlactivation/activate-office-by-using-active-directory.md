@@ -22,7 +22,7 @@ Active Directory-based activation enables an organization to activate volume lic
 
 ## Requirements for using Active Directory-based activation
 
-To use Active Directory-based activation, the volume licensed version of Office, Project, or Visio must have a [Generic Volume License Key (GVLK)](gvlks.md) and must be installed on one of the following operating systems:
+To use Active Directory-based activation, the volume licensed version of Office, Project, or Visio must have a Generic Volume License Key (GVLK)] and must be installed on one of the following operating systems:
 
 - Windows 10
 - Windows 8.1
@@ -57,5 +57,7 @@ To configure Active Directory-based activation, you must have Domain Administrat
 
     
 ## Related topics
-[Plan volume activation of Office](plan-volume-activation-of-office.md)
+
+- [Plan volume activation of Office](plan-volume-activation-of-office.md)
+- [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md)
  
