@@ -16,7 +16,7 @@ description: "Provides IT admins with information on how to deploy Office 2019."
 # Deploy Office 2019 (for IT Pros)
  
   
-To configure and perform deployments of volume licensed versions of Office 2019 for users in your organization, you use the Office Deployment Tool (ODT). The Office Customization Tool (OCT) that you previously used for Windows Installer (MSI) is no longer used.
+To configure and perform deployments of volume licensed versions of Office 2019, including Project and Visio, for users in your organization, you use the Office Deployment Tool (ODT). The Office Customization Tool (OCT) that you previously used for Windows Installer (MSI) is no longer used.
 
 The installation files for Office 2019 are available on the Office Content Delivery Network (CDN) on the internet instead of on the Volume Licensing Service Center (VLSC). You can install Office 2019 directly from the Office CDN. Or, you can download the installation files from the Office CDN to a location on your local network, such as a shared folder, and install Office 2019 from that location.  You can use different methods for different sets of computers in your organization. Whichever method you choose, you use the ODT.
 
