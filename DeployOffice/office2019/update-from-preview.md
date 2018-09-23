@@ -38,17 +38,17 @@ If you activate Office by using KMS, including Active Directory-based activation
 - Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
 
 ```
-	cscript ospp.vbs /inpkey:yourkey
-	cscript ospp.vbs /act
+cscript ospp.vbs /inpkey:yourkey
+cscript ospp.vbs /act
 ```
 Replace *yourkey* with your KMS client activation key. You will need to restart any Office apps to see these changes take effect.
 
 If you set up the Office 2019 KMS Host on a different computer than your Office 2019 Preview KMS host and you aren't using Active Directory-based activation, then the previous commands might not work, so try running these additional commands:
 
 ```
-	cscript ospp.vbs /remhst
-	cscript ospp.vbs /sethst:KMSHostFQDN
-    cscript ospp.vbs /act
+cscript ospp.vbs /remhst
+cscript ospp.vbs /sethst:KMSHostFQDN
+cscript ospp.vbs /act
 ```
 Replace *KMSHostFQDN* with the fully qualified domain name of the Office 2019 KMS Host computer. You will need to restart any Office apps for these changes take effect.
 
