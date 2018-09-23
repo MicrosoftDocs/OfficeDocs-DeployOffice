@@ -1,5 +1,5 @@
 ---
-title: "Tools to manage Office 2016 volume activation"
+title: "Tools to manage volume activation of Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,12 +13,12 @@ ms.custom: Ent_Office_VL
 description: "Describes the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
 ---
 
-# Tools to manage Office 2016 volume activation
+# Tools to manage volume activation of Office
 
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
   
-The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume license editions of Office 2016. Before you read this article, we recommend that you read [Plan volume activation of Office 2016](plan-volume-activation-of-office.md), [Activate Office 2016 MAK clients](activate-office-by-using-mak.md), and [Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md).
+The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume license editions of Office 2016. Before you read this article, we recommend that you read [Plan volume activation of Office 2016](plan-volume-activation-of-office.md), [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md), and [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md).
   
 > [!IMPORTANT]
 > This information applies to volume license editions of Office 2016. It does not apply to Office 365 ProPlus. Office 365 ProPlus is licensed through a subscription. If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead. 
@@ -82,7 +82,7 @@ The following table describes the ospp.vbs options for configuring the KMS clien
 | _/setprt:value_ <br/> |Sets a KMS port with a user-provided port number. The default port number is 1688. Value parameter is required.  <br/><br/> This sets **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServicePort (REG_SZ)**.  <br/> |
 | _/remhst_ <br/> |Removes KMS host name and sets port to default. The default port is 1688.  <br/> |
 | _/cachst:value_ <br/> |Allows or denies KMS host caching. Value parameter is required (TRUE or FALSE).  <br/> |
-| _/actype:value_ <br/> |(Windows 8 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory Domain Services-based), 2 (for KMS), 0 (for both).  <br/> |
+| _/actype:value_ <br/> |(Windows 8 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory-based), 2 (for KMS), 0 (for both).  <br/> |
 | _/skms-domain:value_ <br/> |(Windows 8 and later versions only) Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the  _/sethst_ option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.  <br/> |
 | _/ckms-domain_ <br/> |(Windows 8 and later versions only) Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the  _/sethst_ option. Otherwise, auto-discovery of the KMS host is used.  <br/> |
    
@@ -199,7 +199,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ _sai [ActivationInterval]_ <br/> |Changes how often a KMS client attempts to activate itself when it cannot find a KMS host computer. It replaces  _ActivationInterval_ with a value expressed in minutes. The default setting is **120** minutes.  <br/> |
 |/ _sri [RenewalInterval]_ <br/> |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  _RenewalInterval_ with a value expressed in minutes. The default setting is **10080** minutes (7 days). This setting overrides the local KMS client settings.  <br/> |
    
-The following table shows the command options for activating an AD DS forest by using AD DS-based activation.
+The following table shows the command options for activating an AD DS forest by using Active Directory-based activation.
   
 **Slmgr.vbs command options — Active Directory-based activation**
 
@@ -213,12 +213,12 @@ The following table shows the command options for activating an AD DS forest by 
 
 ## Volume Activation Management Tool (VAMT)
 
-Volume Activation Management Tool (VAMT) 3.0 provides a graphical user interface to manage volume activation. In addition to the operating systems under which VAMT 2.0 runs, VAMT 3.0 can run under Windows 8 and Windows Server 2012. For more information about VAMT 3.0, see [Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=251932).
+Volume Activation Management Tool (VAMT) 3.0 provides a graphical user interface to manage volume activation. In addition to the operating systems under which VAMT 2.0 runs, VAMT 3.0 can run under Windows 8 and Windows Server 2012. For more information about VAMT 3.0, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
   
 ## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
   
-[Activate Office 2016 MAK clients](activate-office-by-using-mak.md)
+[Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
   
-[Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md)
+[Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
 

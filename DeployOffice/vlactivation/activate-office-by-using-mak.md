@@ -33,7 +33,7 @@ If you're using MAK to activate volume licensed versions of Office 2016, you can
   
 - Before you install Office 2016, you can use the [Office Customization Tool (OCT)](activate-office-by-using-mak.md#OCT) or the [Config.xml file](activate-office-by-using-mak.md#ConfigXML).
     
-- After you install Office 2016, you can use the [product UI](activate-office-by-using-mak.md#OCT), the [Volume Activation Management Tool (VAMT) 3.1](https://docs.microsoft.com/windows/deployment/volume-activation/use-the-volume-activation-management-tool-client), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry).
+- After you install Office 2016, you can use the [product UI](activate-office-by-using-mak.md#OCT), the [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry).
         
     
 <a name="OCT"> </a>
@@ -87,7 +87,7 @@ To change the Office 2016 product key on only one computer:
 2. Go to **File** > **Account**.
 3. Choose **Change Product Key** and enter the product key. 
  
-If you need to change the Office 2016 product key on multiple computers after Office is installed, we recommend that you use Volume Activation Management Tool (VAMT) 3.1. For more information, see [Use the Volume Activation Management Tool](https://docs.microsoft.com/windows/deployment/volume-activation/use-the-volume-activation-management-tool-client).
+If you need to change the Office 2016 product key on multiple computers after Office is installed, we recommend that you use Volume Activation Management Tool (VAMT) 3.1. For more information, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
     
  
 <a name="registry"> </a>

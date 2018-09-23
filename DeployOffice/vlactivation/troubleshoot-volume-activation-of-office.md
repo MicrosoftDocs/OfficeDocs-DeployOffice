@@ -25,7 +25,7 @@ description: "Explains how to troubleshoot common errors for KMS or MAK-based ac
    
 Setting up volume activation with Office 2016 by using Key Management Service (KMS) or Multiple Activation Key (MAK) can be challenging. Use these steps to troubleshoot the most common issues.
   
-Many of the solutions include running the Office Software Protection Platform script ( **ospp.vbs** ), which you can find either in the "%programfiles%\microsoft office\office16" or the "%programfiles(x86)%\microsoft office\office16" folder of the client computer. You have to run it at the administrative command prompt. You can also use the Software License Manager script ( **Slmgr.vbs** ) to configure and manage volume activation. For detailed information about these scripts, see [Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md).
+Many of the solutions include running the Office Software Protection Platform script ( **ospp.vbs** ), which you can find either in the "%programfiles%\microsoft office\office16" or the "%programfiles(x86)%\microsoft office\office16" folder of the client computer. You have to run it at the administrative command prompt. You can also use the Software License Manager script ( **Slmgr.vbs** ) to configure and manage volume activation. For detailed information about these scripts, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
    
 <a name="tips"> </a>
@@ -36,7 +36,7 @@ Generally, you do not have to configure Office Key Management Service (KMS) clie
   
 By default, KMS host computers automatically publish the information that KMS clients have to find and connect to them by using DNS dynamic update protocol. By default, KMS clients query the DNS server for KMS service information.
   
-You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer. For more information about using DNS with volume activation, see [Set up DNS for Office 2016 KMS-based volume activation](configure-dns-to-activate-office-by-using-kms.md). For more information about how to configure the KMS client, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Set up Office 2016 KMS clients](activate-office-by-using-kms.md). For more information about how to configure the KMS host computer, see [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md).
+You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer. For more information about using DNS with volume activation, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md). For more information about how to configure the KMS client, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Set up Office 2016 KMS clients](activate-office-by-using-kms.md). For more information about how to configure the KMS host computer, see [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md).
   
 <a name="KMSActivationIssues"> </a>
 
@@ -132,12 +132,12 @@ The client applications can be in this state because Office 2016 was activated b
   
 ### Generic Volume License Keys (GVLKs) for Office 2016
 
-All Office 2016 volume-licensed products have a [Generic Volume License Key (GVLK)](gvlks.md) preinstalled to activate against an Office 2016 KMS host computer. If you entered a MAK key for a product and you want to change the activation method back to KMS, use the appropriate KMS client GVLK. For more information, see [GVLKs for KMS and Active Directory Domain Services activation of Office 2016](gvlks.md). The recommended way to enter the key is by using the Volume Activation Management Tool, [VAMT](https://go.microsoft.com/fwlink/p/?LinkId=251932). You can also use **ospp.vbs /inpkey** to enter the key. 
+All Office 2016 volume-licensed products have a [Generic Volume License Key (GVLK)](gvlks.md) preinstalled to activate against an Office 2016 KMS host computer. If you entered a MAK key for a product and you want to change the activation method back to KMS, use the appropriate KMS client GVLK. For more information, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md). The recommended way to enter the key is by using [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool). You can also use **ospp.vbs /inpkey** to enter the key. 
   
-For Office 2016 suites, only one key is required for all the products in the suite. For example, if you use Office Professional Plus, you must enter only the Office Professional Plus 2016 key for the complete suite. For a complete listing of the keys, see [GVLKs for KMS and Active Directory Domain Services activation of Office 2016](gvlks.md).
+For Office 2016 suites, only one key is required for all the products in the suite. For example, if you use Office Professional Plus, you must enter only the Office Professional Plus 2016 key for the complete suite. For a complete listing of the keys, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md).
   
 ## Related topics
 [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
   
-[Activate Office 2016 MAK clients](activate-office-by-using-mak.md)
+[Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
 

@@ -67,20 +67,20 @@ When you plan for Office Activation Technologies, think about the following:
     
 - If you decide to use Multiple Activation Key (MAK), you enter the product key either through the [Office Customization Tool (OCT)](https://technet.microsoft.com/library/8faae8a0-a12c-4f7b-839c-24a66a531bb5.aspx#Licensing_and_user_interface) or the [Config.xml file](https://technet.microsoft.com/library/e16af71c-fed4-40da-a886-95e596c3999e.aspx#ElementPIDKey). ((Although these articles are for an earlier version of Office, the information also applies to Office 2016.) After Office 2016 installation, you can change the product key by using the Volume Activation Management Tool (VAMT) or the Office Software Protection Platform script ( **ospp.vbs** ). For more information about **ospp.vbs**, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp).
     
-    For information about VAMT 3.0, see [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#vamt).
+    For information about VAMT, see [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#vamt).
     
 <a name="review"> </a>
 
 ## Review and compare activation methods
 
 
-Office Activation Technologies provides three activation methods for Office 2016: KMS, MAK, and AD DS-based activation.
+Office Activation Technologies provides three activation methods for Office 2016: KMS, MAK, and Active Directory-based activation.
   
 - **Key Management Service (KMS)** A client-server model in which you must install and activate a KMS host activation key on a KMS host computer. This establishes a local activation service in your environment. Office 2016 client computers connect to the local Office 2016 KMS host for activation. 
     
 - **Multiple Activation Key (MAK)** If you use MAK, Office 2016 client computers are activated online by using the Microsoft-hosted activation servers or by telephone. 
     
-- **AD DS-based activation** Available only for Office 2016 on Windows 8 and Windows Server 2012. AD DS-based activation can activate all Office 2016 volume license clients throughout a domain. You set up AD DS-based activation from either a Windows 8 volume license edition computer or a Windows Server 2012 computer. 
+- **Active Directory-based activation** Available only for Office 2016 on Windows 8 and Windows Server 2012. Active Directory-based activation can activate all Office 2016 volume license clients throughout a domain. You set up AActive Directory-based activation from either a Windows 8 volume license edition computer or a Windows Server 2012 computer. 
     
 The kind of key that you install determines the activation method. All Office 2016 volume license editions have the KMS client key pre-installed. You do not have to enter a product key if you are deploying KMS clients. If you want to use MAK activation, you have to enter the correct MAK.
   
@@ -103,7 +103,7 @@ You must prepare a KMS host computer by first installing the licensing files (se
  KMS uses service (SRV) resource records (RRs) in DNS to store and communicate the locations of KMS host computers. KMS host computers use dynamic updates, if available, to publish the SRV RRs. For more information, see [Dynamic update](https://go.microsoft.com/fwlink/p/?LinkId=317385). If dynamic updates are not available, or if the KMS host computer does not have permissions to publish the RRs, you must publish the DNS records manually or configure client computers to connect to specific KMS host computers. This might require changing permissions on DNS to let more than one KMS host computer publish SRV records.
   
 > [!NOTE]
-> DNS changes might take time to propagate to all DNS hosts, depending on the complexity and topology of your network. For more information, see [Set up DNS for Office 2016 KMS-based volume activation](configure-dns-to-activate-office-by-using-kms.md). 
+> DNS changes might take time to propagate to all DNS hosts, depending on the complexity and topology of your network. For more information, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md). 
   
 <a name="mak"> </a>
 
@@ -121,15 +121,15 @@ There are two ways to activate computers by using MAK:
 
 MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against Microsoft hosted activation servers over the Internet. In MAK proxy activation, a MAK must be installed on the client computer by any of the methods previously described. VAMT obtains the installation ID (IID) from the target computer, sends the IID to Microsoft on behalf of the client, and obtains a confirmation ID (CID). The tool then activates the client by installing the CID. The CID is saved and can be used later, for example, to activate test computers that were re-imaged after 90 days.
   
-For more information, see [Activate Office 2016 MAK clients](activate-office-by-using-mak.md).
+For more information, see [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md).
   
 <a name="ADDSActivation"> </a>
 
-## Active Directory Domain Services-based activation
+## Active Directory-based activation
 
-As with KMS, AD DS-based activation can activate all Office 2016 volume license clients within the domain. To use AD DS-based activation, you configure AD DS from one computer to support the activation of all Office 2016 volume license clients within the domain.
+As with KMS, Active Directory-based activation can activate all Office 2016 volume license clients within the domain. To use Active Directory-based activation, you configure AD DS from one computer to support the activation of all Office 2016 volume license clients within the domain.
   
-AD DS-based activation uses the same GVLK/KMS host key pair that KMS activation uses. When you use AD DS-based activation, the Software Protection Platform Services periodically attempts to activate the GVLK against either an activation object in AD DS or a discoverable KMS if the AD DS-based activation attempt fails. A successful AD DS-based activation grants a license to the Office 2016 client for 180 days.
+Active Directory-based activation uses the same GVLK/KMS host key pair that KMS activation uses. When you use Active Directory-based activation, the Software Protection Platform Services periodically attempts to activate the GVLK against either an activation object in AD DS or a discoverable KMS if the Active Directory-based activation attempt fails. A successful Active Directory-based activation grants a license to the Office 2016 client for 180 days.
   
-For more information about AD DS-based activation, see [Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md).
+For more information about Active Directory-based activation, see [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md).
   

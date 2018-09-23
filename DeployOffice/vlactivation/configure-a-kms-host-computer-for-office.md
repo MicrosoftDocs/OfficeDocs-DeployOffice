@@ -25,7 +25,7 @@ To find out more about how to buy volume license editions of Office 2016, see [M
 |||
 |:-----|:-----|
 |![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)           <br/> |If you are a user activating a personal copy of Office 2016, follow the [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e) directions instead.  <br/> |
-|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)           <br/> |If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead.  <br/> <br/>Not sure if you need to use KMS, MAK, or AD DS-based activation? Review [Plan volume activation of Office 2016](plan-volume-activation-of-office.md) before continuing.  <br/> <br/>If you are an admin setting up a KMS host computer in order to activate Office 2016 for your company, you're at the right place, keep reading.  <br/> |
+|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)           <br/> |If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead.  <br/> <br/>Not sure if you need to use KMS, MAK, or Active Direcotry-based activation? Review [Plan volume activation of Office 2016](plan-volume-activation-of-office.md) before continuing.  <br/> <br/>If you are an admin setting up a KMS host computer in order to activate Office 2016 for your company, you're at the right place, keep reading.  <br/> |
    
 
     
@@ -216,5 +216,5 @@ After you set up the host computer, the KMS clients send requests for activation
 ## Related topics
 [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
   
-[Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md)
+[Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
 
