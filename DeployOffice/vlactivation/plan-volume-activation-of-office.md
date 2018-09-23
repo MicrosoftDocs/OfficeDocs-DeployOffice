@@ -19,11 +19,13 @@ description: "Provides Office admins with an overview of Key Management Service 
 
  Activation is the process of validating software with the manufacturer after it has been installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and has not been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
-Volume activation is the process that Microsoft volume licensing customers use to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products across large organizations.
-
 > [!NOTE]
 > If you're a user trying to activate a personal copy of Office, see [Activate Office](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e) instead of reading this article.
   
+
+Volume activation is the process that Microsoft volume licensing customers use to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products across large organizations.
+
+
 There are three different methods that you can activate volume licensed versions of Office, including Project and Visio:
   
  - **[Key Management Service (KMS):](plan-volume-activation-of-office.md#kms)** Office is activated by contacting a KMS host computer on your network. 
@@ -36,14 +38,14 @@ There are three different methods that you can activate volume licensed versions
 Which activation method you choose depends on the size, network infrastructure, connectivity, and security requirements of your environment. You can choose to use different activation methods for different versions of Office and for different computers, for example desktops and laptops. Because these three activation methods are also used to activate volume licensed versions of Windows, you might be able to use the same method to activate both Windows and Office. For more information, see [Volume Activation for Windows 10](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-windows-10) and [Volume Activation Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
 
 
-All volume licensed versions of Office, including Project and Visio, have a preinstalled product key, called a General Volume License Key (GVLK),that can be used for KMS and Active Directory-based activation. You don't have to enter a product key for each Office installation if you're activating Office by using KMS or Active Directory. If you're activating Office by using MAK, you must enter a product key for each Office installation, but there are ways to automate that.
+All volume licensed versions of Office, including Project and Visio, have a preinstalled product key, called a Generic Volume License Key (GVLK), that can be used for KMS and Active Directory-based activation. You don't have to enter a product key for each Office installation if you're activating Office by using KMS or Active Directory. If you're activating Office by using MAK, you must enter a product key for each Office installation, but there are ways to automate that.
   
 
 <a name="kms"> </a> 
 
 ## Key Management Service (KMS) activation of Office
 
-KMS activation is a client-server model in which each client requests activation from a KMS host computer. The keys needed to activate Office are installed on the KMS host computer. The client uses DNS to locate a KMS host computer to request activation. By default, clients connect to the KMS host computer on port 1688. The KMS host computer uses DNS to publish the KMS service.
+KMS activation is a client-server model in which each client requests activation from a KMS host computer. The keys needed to activate Office are installed on the KMS host computer. The client uses DNS to locate a KMS host computer to request activation.
 
 For more information, see the following:
 
@@ -63,18 +65,7 @@ Each MAK has a predetermined number of allowed activations and is based on your 
 
 For more information, see [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md).
   
-There are two ways to activate computers by using MAK:
-  
-- **MAK independent activation** MAK independent activation requires that each computer independently connect and be activated with Microsoft, either over the Internet or by telephone. MAK independent activation is best for computers that do not maintain a connection to the corporate network. 
-    
-- **MAK proxy activation by using VAMT** This enables a centralized activation request on behalf of multiple computers that have one connection to Microsoft. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](tools-to-manage-volume-activation-of-office.md#vamt). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the Internet or the corporate network. It is also suited for development and test labs that do not have this connectivity.
-    
- VAMT obtains the installation ID (IID) from the target computer, sends the IID to Microsoft on behalf of the client, and obtains a confirmation ID (CID). The tool then activates the client by installing the CID. The CID is saved and can be used later, for example, to activate test computers that were re-imaged after 90 days.
-  
-.
 
-
-  
 <a name="ad"> </a>
 
 ## Active Directory-based activation of Office
