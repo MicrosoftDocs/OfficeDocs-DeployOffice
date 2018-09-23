@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides Office 2019 Preview customers with steps to update preview version to Office 2019"
 ---
 
@@ -31,10 +32,10 @@ If you activate Office by using KMS, including Active Directory-based activation
 
 - If you haven't already done so, set up a KMS host computer. If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer for your Office KMS host computer. 
 - Download the [Office 2019 Volume License Pack](http://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd) from the Microsoft Download Center.
-- Sign in to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your KMS client activation keys for Office 2019.
+- Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your KMS client activation keys for Office 2019.
 - [Set up and activate Office KMS](../vlactivation/configure-a-kms-host-computer-for-office.md#set-up-and-activate-office-kms). You'll need both the Office 2019 Volume License Pack and your KMS client activation keys.
 - Make sure that you’re using at least Version 1808 of Office 2019 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section you’ll see the version and build number. 
-- Run the [Office Software Protection Platform script (ospp.vbs)](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
+- Run the [ospp.vbs script)](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
 
 ```
 	cscript ospp.vbs /inpkey:yourkey
@@ -56,9 +57,9 @@ Replace *KMSHostFQDN* with the fully qualified domain name of the Office 2019 KM
 
 If you activate Office by using MAK, do the following to update Office 2019 Preview to Office 2019.
 
-- Sign in to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your MAK client activation keys for Office 2019.
+- Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your MAK client activation keys for Office 2019.
 - Make sure that you’re using at least Version 1808 of Office 2019 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section you’ll see the version and build number.
-- Run the [Office Software Protection Platform script (ospp.vbs)](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your MAK client activation key using the commands below.
+- Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your MAK client activation key using the commands below.
 
 ```
 	cscript ospp.vbs /inpkey:yourkey
@@ -71,7 +72,7 @@ Replace *yourkey* with your MAK client activation key. You will need to restart 
 ## Additional information
 
 - The ospp.vbs commands can be included in a script that you can deploy and run across the computers in your organization. For example, by using System Center Configuration Manager.
-- You can also use the Volume Activation Management Tool (VAMT) 3.1 to centrally manage volume activation. You need to use VAMT 3.1 with Office 2019. VAMT 3.0 won't work with Office 2019. For more information, see [Volume Activation Management Tool (VAMT) Overview](https://technet.microsoft.com/library/hh824953.aspx).
+- You can also use the Volume Activation Management Tool (VAMT) 3.1 to centrally manage volume activation. You need to use VAMT 3.1 with Office 2019. VAMT 3.0 won't work with Office 2019. For more information about VAMT, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
 - This information also applies to updating Project Professional 2019 Preview to Project Professional 2019 and updating Visio Professional 2019 Preview to Visio Professional 2019.
 - If you have the 32-bit version of Office 2019 Preview installed and want to install the 64-bit version of Office 2019, you need to uninstall Office 2019 Preview first. You also must uninstall Office 2019 Preview if you’re switching from the 64-bit version to the 32-bit version.
 - If you're a volume licensed customer and you want to install Office Standard 2019, you need to uninstall Office Professional Plus 2019 Preview first.
@@ -80,4 +81,4 @@ Replace *yourkey* with your MAK client activation key. You will need to restart 
 ## Related topics
 
 - [Plan volume activation of Office](../vlactivation/plan-volume-activation-of-office.md)
-- [Tools to manage Office volume activation](../vlactivation/tools-to-manage-volume-activation-of-office.md)
+- [Tools to manage volume activation of Office](../vlactivation/tools-to-manage-volume-activation-of-office.md)
