@@ -110,7 +110,7 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/office2019/office-2019-overview">
+                                <a href="/DeployOffice/office2019/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -33,7 +33,7 @@ If you activate Office by using KMS, including Active Directory-based activation
 - If you haven't already done so, set up a KMS host computer. If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer for your Office KMS host computer. 
 - Download the [Office 2019 Volume License Pack](http://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd) from the Microsoft Download Center.
 - Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your KMS client activation keys for Office 2019.
-- [Set up and activate Office KMS](../vlactivation/configure-a-kms-host-computer-for-office.md#set-up-and-activate-office-kms). You'll need both the Office 2019 Volume License Pack and your KMS client activation keys.
+- [Configure the KMS host computer to activate Office 2019](../vlactivation/configure-a-kms-host-computer-for-office.md). You'll need both the Office 2019 Volume License Pack and your KMS client activation keys.
 - Make sure that you’re using at least Version 1808 of Office 2019 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section you’ll see the version and build number. 
 - Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
 
