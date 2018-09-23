@@ -50,7 +50,7 @@ If you already use other tools to deploy software to your users, such as System 
 
 ## Deploy a volume licensed version of Project 2019
 
-Here are the general steps to deploy a volume licensed version of Project Professional 2019 or Project Standard 2016 to users in your organization:
+Here are the general steps to deploy a volume licensed version of Project Professional 2019 or Project Standard 2019 to users in your organization:
   
 1. Purchase Project 2019 as part of a volume licensing agreement.
     
@@ -59,7 +59,9 @@ Here are the general steps to deploy a volume licensed version of Project Profes
 If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Project. 
   
 > [!NOTE]
-> Volume licensed versions of Project 2019 are available directly from the Office CDN, instead of from the Volume Licensing Service Center. Also, the Office Customization Tool (OCT) that you previously used for Windows Installer (MSI) versions of Project is no longer used.
+> - Volume licensed versions of Project 2019 are available directly from the Office CDN instead of from the Volume Licensing Service Center. 
+> - Volume licensed versions of Project 2019 are installed by using Click-to-Run instead of by using Windows Installer (MSI).
+> - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Project isn't used with volume licensed versions of Project 2019.
   
 ## Deploy a volume licensed version of Project 2016
 
