@@ -18,7 +18,7 @@ description: "Provides Office admins with information on how to troubleshoot com
 ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
 
-Setting up volume activation for Office, including Project and Visio, by using Key Management Service (KMS) or Multiple Activation Key (MAK) can be challenging. Use these steps to troubleshoot the most common issues.
+Setting up volume activation of Office, including Project and Visio, by using Key Management Service (KMS) or Multiple Activation Key (MAK) can be challenging. Use these steps to troubleshoot the most common issues.
 
 > [!NOTE]
 > If you're an Office user troubleshooting a personal copy of Office, see [Unlicensed Product and activation errors in Office](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380) instead of reading this article.

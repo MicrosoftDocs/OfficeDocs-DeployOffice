@@ -18,8 +18,16 @@ description: "Provides Office admins with information about using Multiple Activ
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
   
-Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft-hosted activation services, either via the internet or by telephone. 
+Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft-hosted activation services, either via the internet or by telephone. MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against those services.
 
+Each MAK has a predetermined number of allowed activations and is based on your volume licensing agreement. Each Office activation that uses MAK counts toward the activation limit. After Office is activated, no re-activation is required unless the hardware changes significantly.
+
+There are two ways to activate computers by using MAK:
+  
+- **MAK independent activation** which requires that each computer independently connect and be activated with Microsoft, either over the Internet or by telephone. MAK independent activation is best for computers that have direct access to the internet. 
+    
+- **MAK proxy activation by using VAMT** which enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com//windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](https://docs.microsoft.com/windows/deployment/volume-activation/proxy-activation-vamt).
+    
 
 ## Activate Office 2019 by using MAK
 
@@ -114,6 +122,6 @@ Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtecti
   
 ## Related topics
 
-- [Plan volume activation of Office](plan-volume-activation-of-office.md)
+- [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
 

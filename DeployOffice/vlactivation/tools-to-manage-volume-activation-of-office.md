@@ -18,7 +18,7 @@ description: "Provides Office admins with informaiton about the ospp.vbs and the
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
   
-The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume licensed versions of Office, including Project and Visio. Before you read this article, we recommend that you read [Plan volume activation of Office](plan-volume-activation-of-office.md), [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md), and [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md).
+The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume licensed versions of Office, including Project and Visio. Before you read this article, we recommend that you read [Overview of volume activation of Office](plan-volume-activation-of-office.md), [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md), and [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md).
   
   
 <a name="ospp"> </a>
@@ -217,7 +217,7 @@ Volume Activation Management Tool (VAMT) provides a graphical user interface to 
   
 ## Related topics
 
-- [Plan volume activation of Office](plan-volume-activation-of-office.md)
+- [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
 - [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
 
