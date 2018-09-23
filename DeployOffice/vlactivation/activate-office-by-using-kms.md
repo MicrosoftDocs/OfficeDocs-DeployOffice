@@ -45,7 +45,7 @@ For additional configuration options, such as how to specify the KMS host name o
   
 <a name="KMSClientCacheOnOff"> </a>
 
-## Turn KMS host caching on or off for Office KMS clients
+## Configure KMS host caching
 
 Use the ospp.vbs script to configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer is not saved cached, the client will query DNS every time that activation is tried. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client will attempt to directly contact the cached KMS host computer that last resulted in successful activation. For more information about the ospp.vbs script, see [Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md).
   
