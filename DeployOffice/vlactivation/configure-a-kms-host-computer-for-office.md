@@ -17,7 +17,7 @@ description: "How to prepare and configure the Key Management Service (KMS) host
 
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
-To activate volume licensed versions of Office, including Project and Visio, you must a KMS host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
+To activate volume licensed versions of Office, including Project and Visio, you must have a KMS host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 
 To enable the KMS host computer to activate Office, you must install the Office Volume License Pack and enter your KMS key on the KMS host computer. Then, you need to activate the KMS key over the internet or by telephone. 
 
@@ -65,7 +65,7 @@ If your KMS host computer doesn't have internet access, you can activate it by t
 2. At the command line, run the following command:
 
 ```
-  slui.exe 4. 
+  slui.exe 4
 ```
 
 This launches the Windows phone activation wizard and it will display a telephone number.
@@ -109,7 +109,7 @@ To view information only for Office 2019, specify the Activation ID after the **
     cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C
 ```
  
-The following is an example of the output for Office 2016. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
+The following is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
     
    ```
    Name: Office 16, OfficeKMSHostVL_KMS_Host edition
