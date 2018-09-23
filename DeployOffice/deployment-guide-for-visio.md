@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with an overview of how to deploy Visio to users in their organization."
+description: "Provides Office admins with an overview of how to deploy subscription and volume licensed versions of Visio to users in their organization."
 ---
 
 # Deployment guide for Visio
@@ -19,7 +19,7 @@ description: "Provides Office admins with an overview of how to deploy Visio to 
   
 How you deploy Visio to the users in your organization depends on which version of Visio you purchase. A common purchase option for organizations is one of the following versions of Visio:
   
-- (subscription version of Visio)
+- Visio that comes with a Visio Online Plan 2 subscription (formerly named Visio Pro for Office 365)
 - Visio Professional 2019 or Visio Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Visio Professional 2016 or Visio Standard 2016, available as a one-time purchase through a volume licensing agreement.
      
@@ -28,25 +28,25 @@ Before you deploy, be sure to [review the system requirements](https://products.
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same computer. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
   
-## Deploy Visio Pro for Office 365
+## Deploy a subscription version of Visio
 
-Here are the general steps to deploy Visio Pro for Office 365 to users in your organization:
+Here are the general steps to deploy a subscription version of Visio to users in your organization:
   
-1. Purchase Visio Pro for Office 365, with enough licenses for each of your Visio users.
+1. Purchase Visio Online Plan 2, with enough licenses for each of your Visio users.
     
-2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Visio Pro for Office 365 to those users. 
+2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Visio Online Plan 2 to those users. 
     
 3. Have your users sign in to Office 365 and install Visio from the **Software** section of the Office 365 portal. Users have to be local administrators on their computers to install Visio. 
     
-If you want to have more control over how Visio Pro for Office 365 is deployed to your users, you can do the following instead:
+If you want to have more control over how the subscription version of Visio is deployed to your users, you can do the following instead:
   
 1. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center. 
     
-2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install Visio Pro for Office 365. 
+2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install the subscription version of Visio. 
     
-3. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy Visio Pro for Office 365 on your users' computers. 
+3. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy the subscription version Visio to the users in your ogranziation. 
     
-If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Visio Pro for Office 365. 
+If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy the subscription version of Office. 
 
 
 ## Deploy a volume licensed version of Visio 2019
@@ -86,7 +86,7 @@ If you already use other tools to deploy software to your users, such as System 
 
 If you want to specify and maintain certain user settings for your Visio installations, you can [download the Office 2016 Group Policy Administrative Template (ADMX/ADML) files](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
   
-The same Group Policy settings work for Visio Pro for Office 365, as well as volume licensed versions of Visio, such as Visio Professional 2019 or Visio Standard 2016.
+The same Group Policy settings work for the subscription version of Visio, as well as volume licensed versions of Visio, such as Visio Professional 2019 or Visio Standard 2016.
   
 ## End user resources for Visio
 
