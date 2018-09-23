@@ -115,5 +115,5 @@ Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtecti
 ## Related topics
 
 - [Plan volume activation of Office](plan-volume-activation-of-office.md)
-- [Tools to manage Office volume activation](tools-to-manage-volume-activation-of-office.md)
+- [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
 

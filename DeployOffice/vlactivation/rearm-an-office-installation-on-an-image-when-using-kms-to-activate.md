@@ -1,5 +1,5 @@
 ---
-title: "Rearm the Office 2016 KMS-based volume activation installation"
+title: "Rearm a volume licensed version of Office that's included in an operating system image"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -10,52 +10,47 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "How to reset the grace timer and reset the client computer ID in Office 2016 KMS installation by rearming the image."
+description: "Explains to Office admins how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
 ---
 
-# Rearm the Office 2016 KMS-based volume activation installation
+# Rearm a volume licensed version of Office that's included in an operating system image
 
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
   
-There is a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. If you want to deploy an image, you must rearm your Office 2016 installation before you capture the image. If you do not rearm, users see notification dialog boxes at the time that the image is deployed, instead of 25 days after deployment. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users do not see notifications to activate.
+There is a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users don't see notifications to activate.
+
+If you want to deploy a volume licensed version of Office, or Project or Visio, as part of an operating system image, you must rearm your Office installation before you capture the image. If you do not rearm, users might see notification dialog boxes at the time that the image is deployed, instead of 25 days after deployment.
   
 Rearming does the following important tasks:
   
-- Resets the grace timer to 30 days.
+- Resets the grace timer to 30 days.    
+- Freezes the grace timer until either an Office application is run, or the ospp.vbs script is run.    
+- Resets the client computer ID (CMID). This is important because the KMS host computer uses the CMID to determine the number of unique clients. You can use the ospp.vbs script to check the CMID.
+ 
+For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md#ospp).
     
-- Freezes the grace timer until either an Office application is run, or the ospp.vbs script is run.
-    
-- Resets the client computer ID (CMID). This is important because the KMS host uses the CMID to determine the number of unique clients. To check the CMID, use the command **ospp.vbs /dcmid**. For more information about ospp.vbs, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp).
-    
-    > [!NOTE]
-    > If you run this command on either Windows 8 or Windows Server 2012, it only returns to CMID for Windows, not Office. To see the CMID for Office 2016, look for event 12288 in the Application Event log as shown in this [Office deployment support team blog](https://go.microsoft.com/fwlink/p/?LinkId=317885) article. 
-  
-You can rearm five times, unless you activate Office by using a KMS host. If you run out of rearms, activating by using a KMS host lets you rearm once.
-  
-Rearming is also recommended for MAK deployment. If you are deploying Office 2016 that is configured for MAK activation, and you do not remotely activate for end-users through Volume Activation Management Tool (VAMT) or ospp.vbs, users see an activation dialog box the first time that an Office 2016 application starts. The activation dialog box is slightly different 25 days after installation. Also, users might immediately see a red title bar warning them of activation issues if Office 2016 was not rearmed before image capture.
-  
-### To rearm your Office KMS based installation
+You can rearm five times, unless you activate Office by using a KMS host computer. If you run out of rearms, activating by using a KMS host computer lets you rearm once.
+
+> [!NOTE]
+> Rearming is also recommended if you're activating a volume licensed version of Office, including Project and Visio, by using Multiple Activation Key (MAK) . If you're activating by using MAK and you don't remotely activate for end-users by using the Volume Activation Management Tool (VAMT) 3.1 or ospp.vbs, users see an activation dialog box the first time that an Office application starts. The activation dialog box is slightly different 25 days after installation. Also, users might immediately see a red title bar warning them of activation issues if Office wasn't rearmed before the image was captured.
+
+
+## Use the ospprearm command to rearm an Office installation
 
 1. Verify that the user account that is performing this procedure is a member of the Administrators group on the KMS host computer.
-    
-2. Close all Office 2016 applications.
-    
-3. Open a command prompt with administrative permissions.
-    
-4. Go to %installdir%\%Program Files%\Microsoft Office\Office16. If you installed the 32-bit edition of Office 2016 on a 64-bit operating system, %Program Files% is the Program Files (x86) folder.
-    
-5. At the command prompt, type ospprearm.exe. If the rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
-    
-6. Capture the image or save the virtual computer. For more information about how to capture the image, see [Configure Office 2010 for a hard disk image](https://technet.microsoft.com/library/146a77e1-75b9-4795-8feb-d94d0f528ecc .aspx). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) 
+2. Close all Office applications.    
+3. Open an elevated command prompt and go to Program Files\Microsoft Office\Office16. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86) folder.
+5. Type ospprearm.exe and then hit Enter. If the rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
+6. Capture the image.
     
     > [!IMPORTANT]
-    > Do not open an Office application or run ospp.vbs, or do anything else related to Office 2016 while the image is being captured. Otherwise, the grace timer starts. 
+    > Do not open an Office application or run ospp.vbs, or do anything else related to Office while the image is being captured. Otherwise, the grace timer starts. 
+
   
 ## Related topics
-[Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
-  
-[Tools to manage Office 2016 volume activation](tools-to-manage-volume-activation-of-office.md)
 
-[Volume Activation Management Tool Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=251932)
+- [Plan volume activation of Office](plan-volume-activation-of-office.md)
+- [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
+- [Use the Volume Activation Management Tool](https://docs.microsoft.com/windows/deployment/volume-activation/use-the-volume-activation-management-tool-client)
 
