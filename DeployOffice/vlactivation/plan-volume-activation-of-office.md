@@ -1,5 +1,5 @@
 ---
-title: "Plan volume activation of Office 2016"
+title: "Plan volume activation of Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom: Ent_Office_VL
 description: "Explains each method that you can use to activate volume license editions of Office 2016."
 ---
 
-# Plan volume activation of Office 2016
+# Plan volume activation of Office
 
 ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
