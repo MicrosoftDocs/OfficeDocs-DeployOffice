@@ -92,7 +92,7 @@ The same Group Policy settings work for Visio Pro for Office 365, as well as vol
 
 To help your users get started with Visio, here are some resources to share with them:
   
-- [What's new in Visio 2019](https://support.office.com/article/6be41c8a-c4b2-409a-9ef7-d250377ad3b7)
+- [What's new in Visio 2019](https://support.office.com/article/19b8e98d-9cf9-40ad-9277-eb65e3713a79)
 - [Visio help center](https://support.office.com/visio)
     
 ## Related topics
