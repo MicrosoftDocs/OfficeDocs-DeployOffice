@@ -42,7 +42,7 @@ By default, volume licensed versions of Office 2019 and Office 2016 are installe
 |Word 2019  <br/> |  PBX3G-NWMT6-Q7XBW-PYJGG-WXD33 <br/> |
 
 > [!NOTE]
-> There isn't a 2019 version of OneNote. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+> There isn't a 2019 version of OneNote, but OneNote 2016 is available for Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
 
 ## GVLKs for Office 2016
 |**Product**|**GVLK**|
