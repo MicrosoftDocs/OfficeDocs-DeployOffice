@@ -216,9 +216,8 @@ The following table shows the command options for activating an AD DS forest by 
 Volume Activation Management Tool (VAMT) 3.0 provides a graphical user interface to manage volume activation. In addition to the operating systems under which VAMT 2.0 runs, VAMT 3.0 can run under Windows 8 and Windows Server 2012. For more information about VAMT 3.0, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
   
 ## Related topics
-[Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
-  
-[Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
-  
-[Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
+
+- [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
+- [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
+- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
 

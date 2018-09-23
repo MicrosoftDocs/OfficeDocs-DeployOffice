@@ -1,5 +1,5 @@
 ---
-title: "Prepare and set up the Office 2016 KMS host computer"
+title: "Configure a KMS host computer to activate volume licensed versions of Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom: Ent_Office_VL
 description: "How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016."
 ---
 
-# Prepare and set up the Office 2016 KMS host computer
+# Configure a KMS host computer to activate volume licensed versions of Office
 
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
@@ -214,7 +214,7 @@ After you set up the host computer, the KMS clients send requests for activation
 5. Close the **Administrator: Command Prompt** window. 
     
 ## Related topics
-[Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
-  
-[Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
+
+- [Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
+- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
 

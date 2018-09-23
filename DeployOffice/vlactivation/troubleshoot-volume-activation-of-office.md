@@ -36,7 +36,7 @@ Generally, you do not have to configure Office Key Management Service (KMS) clie
   
 By default, KMS host computers automatically publish the information that KMS clients have to find and connect to them by using DNS dynamic update protocol. By default, KMS clients query the DNS server for KMS service information.
   
-You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer. For more information about using DNS with volume activation, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md). For more information about how to configure the KMS client, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Set up Office 2016 KMS clients](activate-office-by-using-kms.md). For more information about how to configure the KMS host computer, see [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md).
+You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer. For more information about using DNS with volume activation, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md). For more information about how to configure the KMS client, see [The ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md). For more information about how to configure the KMS host computer, see [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md).
   
 <a name="KMSActivationIssues"> </a>
 
@@ -137,7 +137,7 @@ All Office 2016 volume-licensed products have a [Generic Volume License Key (GVL
 For Office 2016 suites, only one key is required for all the products in the suite. For example, if you use Office Professional Plus, you must enter only the Office Professional Plus 2016 key for the complete suite. For a complete listing of the keys, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md).
   
 ## Related topics
-[Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
-  
-[Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
+
+- [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md)
+- [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "Set up Office 2016 KMS clients"
+title: "Activate volume licensed versions of Office by using KMS"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom: Ent_Office_VL
 description: "Describes the activation process for KMS volume license editions of Office 2016 on client computers."
 ---
 
-# Set up Office 2016 KMS clients
+# Activate volume licensed versions of Office by using KMS
 
 ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
@@ -116,9 +116,8 @@ You use the ospp.vbs script with the **/dstatusall** option to check the license
     **cscript ospp.vbs /dstatus**
     
 ## Related topics
-[Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
-  
-[Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md)
 
-[Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
+- [Plan volume activation of Office](plan-volume-activation-of-office.md)
+- [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md)
+- [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
 

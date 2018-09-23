@@ -96,7 +96,7 @@ To find out more about how to buy volume license editions of Office 2016, see [M
 
 KMS is a client-server model in which each client requests activation from a computer serving as the KMS host computer. By default, clients connect to the KMS host computer on port 1688. The KMS host computer uses DNS to publish the KMS service. You can either use the default settings, which require little or no administrative action, or manually configure the KMS host computer and clients based on the network configuration and security requirements in your environment. To be licensed, each client must be activated.
   
-You must prepare a KMS host computer by first installing the licensing files (see [Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)), and then activating the KMS host key before it can accept activation requests from client computers. 
+You must prepare a KMS host computer by first installing the licensing files (see [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md)), and then activating the KMS host key before it can accept activation requests from client computers. 
   
 ### Publication of Key Management Service
 
