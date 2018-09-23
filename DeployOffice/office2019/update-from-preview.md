@@ -62,8 +62,8 @@ If you activate Office by using MAK, do the following to update Office 2019 Prev
 - Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your MAK client activation key using the commands below.
 
 ```
-	cscript ospp.vbs /inpkey:yourkey
-	cscript ospp.vbs /act
+ cscript ospp.vbs /inpkey:yourkey
+ cscript ospp.vbs /act
 ```
 Replace *yourkey* with your MAK client activation key. You will need to restart any Office apps for these changes take effect.
 
