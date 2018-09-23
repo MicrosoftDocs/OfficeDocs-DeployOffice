@@ -40,8 +40,8 @@ You can rearm five times, unless you activate Office by using a KMS host compute
 
 1. Verify that the user account that is performing this procedure is a member of the Administrators group on the KMS host computer.
 2. Close all Office applications.    
-3. Open an elevated command prompt and go to Program Files\Microsoft Office\Office16. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86) folder.
-5. Type ospprearm.exe and then hit Enter. If the rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
+3. Open an elevated command prompt and go to the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder.
+5. Type ospprearm.exe and then press Enter. If the rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
 6. Capture the image.
     
     > [!IMPORTANT]
