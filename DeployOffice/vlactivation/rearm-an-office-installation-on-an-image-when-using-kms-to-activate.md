@@ -33,7 +33,7 @@ For more information about the ospp.vbs script, see [Tools to manage volume acti
 You can rearm five times, unless you activate Office by using a KMS host computer. If you run out of rearms, activating by using a KMS host computer lets you rearm once.
 
 > [!NOTE]
-> Rearming is also recommended if you're activating a volume licensed version of Office, including Project and Visio, by using Multiple Activation Key (MAK) . If you're activating by using MAK and you don't remotely activate for end-users by using the Volume Activation Management Tool (VAMT) or ospp.vbs, users see an activation dialog box the first time that an Office application starts. The activation dialog box is slightly different 25 days after installation. Also, users might immediately see a red title bar warning them of activation issues if Office wasn't rearmed before the image was captured.
+> Rearming is also recommended if you're activating a volume licensed version of Office, including Project and Visio, by using Multiple Activation Key (MAK). If you're activating by using MAK and you don't remotely activate for end-users by using the Volume Activation Management Tool (VAMT) or ospp.vbs, users see an activation dialog box the first time that an Office application starts. The activation dialog box is slightly different 25 days after installation. Also, users might immediately see a red title bar warning them of activation issues if Office wasn't rearmed before the image was captured.
 
 
 ## Use the ospprearm command to rearm an Office installation
