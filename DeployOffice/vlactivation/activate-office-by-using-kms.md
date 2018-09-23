@@ -10,7 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Provides Office admins with information about activating volume licensed versions of Office by using KMS."
+description: "Provides Office admins with inforrmation about using Key Management Service (KMS) to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."
 ---
 
 # Activate volume licensed versions of Office by using KMS
@@ -18,7 +18,7 @@ description: "Provides Office admins with information about activating volume li
 ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
   
 
-All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK)] preinstalled. GVLKs support both KMS and Active Directory-based activation. On the KMS host computer configured to support volume activation for Office, you install and enable only one KMS host key to activate all volume licensed versions of Office.
+All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled. GVLKs support both Key Management Service (KMS) and Active Directory-based activation. On the KMS host computer configured to support volume activation for Office, you install and enable only one KMS host key to activate all volume licensed versions of Office.
   
 If the KMS host computer is available and properly configured, activation of Office occurs transparently to the user. Office is activated the first time it runs, provided that there have been at least four previous activation requests to the KMS host computer. This is because the KMS host computer requires at least five requests before it begins activating clients.
   

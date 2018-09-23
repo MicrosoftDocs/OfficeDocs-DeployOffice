@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ROBOTS: NOINDEX, NOFOLLOW
-description: Lists the GVLKs that administrators use for volume licensed versions of Office 2019 and Office 2016. 
+description: Lists the Generic Volume License Keys (GVLKs) that Office admins use for activating volume licensed versions of Office 2019 and Office 2016, including Project and Visio. 
 ---
 
 # GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016

@@ -10,7 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Explains to Office admins how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
+description: "Provides Office admins with information on how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
 ---
 
 # Rearm a volume licensed version of Office that's included in an operating system image

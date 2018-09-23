@@ -10,7 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Provides admins with information about activatinng volume licensed versions of Office 2019 and Office 2016 by using Active Directory."
+description: "Provides Office admins with information about using Active Directory to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."
 ---
 
 # Activate volume licensed versions of Office by using Active Directory
