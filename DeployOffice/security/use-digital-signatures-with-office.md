@@ -60,11 +60,11 @@ The following scenario shows how you can use digital signatures on documents in 
   
 1. An employee uses Excel 2016 to create an expense report. The employee then creates three signature lines: one for herself, one for her manager, and one for the accounting department. The signatures serve to:
     
-  - identify that the employee is the originator of the document
+   - identify that the employee is the originator of the document
     
-  - indicate that no changes will occur in the document as it moves to the manager and the accounting department
+   - indicate that no changes will occur in the document as it moves to the manager and the accounting department
     
-  - demonstrate that there is proof that both the manager and the accounting department have received and reviewed the document
+   - demonstrate that there is proof that both the manager and the accounting department have received and reviewed the document
     
 2. The manager receives the document and adds her digital signature to the document, confirming that she has reviewed and approved it. She then forwards it to the accounting department for payment.
     

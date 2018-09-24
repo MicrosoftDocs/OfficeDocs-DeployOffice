@@ -69,11 +69,11 @@ Office 2016 provides several settings that let you control the disclosure of pri
   
 - **Description:** This setting controls whether the Office 2016 Help system can download Help content from support.office.com. You can choose one of three options for this setting: 
     
- - **Never show online content or entry points** The Help system doesn't connect to support.office.com to download content. This is the default setting if you suppress the **Welcome to Office** experience or if users select **Don't make changes** or **Install Updates Only**. 
+  - **Never show online content or entry points** The Help system doesn't connect to support.office.com to download content. This is the default setting if you suppress the **Welcome to Office** experience or if users select **Don't make changes** or **Install Updates Only**. 
     
- - **Search only offline content whenever available** The Help system doesn't connect to support.office.com to download content. 
+  - **Search only offline content whenever available** The Help system doesn't connect to support.office.com to download content. 
     
- - **Search online content whenever available** The Help system connects to support.office.com for content when the computer is connected to the Internet. 
+  - **Search online content whenever available** The Help system connects to support.office.com for content when the computer is connected to the Internet. 
     
 - **Impact:** If you enable this setting and select **Never show online content or entry points** or **Search only offline content whenever available**, users can't access updated Help topics through the Help system and you can't get templates from support.office.com.
     
@@ -99,7 +99,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
   
 - **Description:** This setting controls whether the Help Improve Proofing Tools feature sends usage data to Microsoft. The Help Improve Proofing Tools feature collects data about how users use the proofing tools, such as additions to the custom dictionary, and sends the data to Microsoft. After about six months, the feature stops sending data to Microsoft and deletes the data collection file from the user's computer. By default, this feature is enabled if users choose to participate in the Customer Experience Improvement Program (CEIP). 
     
- If your organization has policies that govern the use of external resources, such as the CEIP, people who use the Help Improve Proofing Tools feature might be violating these policies. If you disable this policy setting, the Help Improve Proofing Tools feature doesn't collect proofing tool usage information and doesn't transmit it to Microsoft. If you don't configure this policy setting, the behavior is of the same as setting the policy to "Enabled."
+  If your organization has policies that govern the use of external resources, such as the CEIP, people who use the Help Improve Proofing Tools feature might be violating these policies. If you disable this policy setting, the Help Improve Proofing Tools feature doesn't collect proofing tool usage information and doesn't transmit it to Microsoft. If you don't configure this policy setting, the behavior is of the same as setting the policy to "Enabled."
     
 - **Impact:** If you enable this setting, users participate in the CEIP. Although this feature doesn't intentionally collect personal information, some content that is sent could include items that were marked as spelling or grammar errors, such as proper names and account numbers. But, any numbers such as account numbers, street addresses, and telephone numbers are converted to zeros when the data is collected. Microsoft uses this information only to improve the effectiveness of the Office Proofing Tools, not to identify users. 
     

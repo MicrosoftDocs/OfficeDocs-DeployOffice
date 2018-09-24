@@ -44,21 +44,24 @@
 ## [Install volume licensed editions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
-# Office 2016 for Mac 
+# Office for Mac 
 ## [Deployment guide](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [What's new for admins](mac/what-s-new-for-admins-in-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Deployment options](mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Deploy updates](mac/deploy-updates-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Use msupdate](mac/update-office-for-mac-using-msupdate.md?toc=/deployoffice/toc.json)
+### [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
+### [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
 ## [Deploy preferences](mac/deploy-preferences-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Macro security](mac/set-preference-macro-security-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Diagnostic data](mac/set-preference-diagnostic-data.md?toc=/deployoffice/toc.json)
 ### [Resume Assistant](mac/set-preference-resume-assistant-word.md?toc=/deployoffice/toc.json)
-## [Activation overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
+## Activation
+### [Overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
+### [Volume License (VL) Serializer](mac/volume-license-serializer.md?toc=/deployoffice/toc.json)
 ## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
 ## [64-bit upgrade](mac/office-2016-for-mac-upgrade-to-64-bit.md?toc=/deployoffice/toc.json)
-## [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
-## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
+
  
 
 
