@@ -18,12 +18,13 @@ description: "The Office Customization Tool (preview) creates the configuration 
 # Overview of the Office Customization Tool for Click-To-Run (preview)
 
 The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and settings for Office applications. After creating the configuration files, you can use them with the Office Deployment Tool, System Center Configuration Manager, or a third-party software distribution solution to deploy a customized version of Office.
+
+As part of the Office Customization Tool, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these settings, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+
  
 ## Get started
 
-The Office Customization Tool is an Azure-based cloud service which allows you to create XML configuration files that are used with the Office Deployment Tool. In the past, you needed to create the configuration files in Notepad or another text editor. The Office Customization Tool makes this part of the deployment process easier and less likely to introduce errors.
-
-To work with the service, go to [Office Customization Tool for Click-to-Run](https://config.office.com/) and choose the products, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English edition of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German edition of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the Office Deployment Tool to deploy Office in your organization. 
+To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English edition of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German edition of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the Office Deployment Tool to deploy Office in your organization. 
 
 The rest of this article covers this procedure in more detail. For more details on the settings for the Office Customization Tool, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
@@ -40,10 +41,15 @@ Follow these steps to create a configuration file that can be used by the Office
 1. Go to [Office Customization Tool for Click-to-Run](https://config.office.com/).
 2. In the General settings, type your organization name and a description for this particular configuration. For example, you might want to use this file to install 64-bit version of Office in the Finance department.
 3. In the Product settings, choose the architecture you want to deploy. Each configuration file can only deploy one architecture. For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
-4. Choose the products and applications you want to deploy. 
+4. Choose the products and applications you want to deploy, and then click Add. Note that you can create a package that includes Office, Visio, and Project by selecting each and adding them separately.
+5. Choose the channel you want to deploy. For best practice recommendations, see [Choose your update channels](plan-office-365-proplus#step-3---choose-your-update-channels.md).
+6. In the Language settings, choose which languages to include. You can include multiple languages and you can can automatically install the same languages that are in use by the operating system and any user on the client device. For more details, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+7. In the Installation settings, choose whether to install the Office files directly from the cloud or from a local source on your network. For more details, see [Choose how to deploy](https://docs.microsoft.com/en-us/deployoffice/plan-office-365-proplus#step-1---choose-how-to-deploy.md).
+8. Choose whether to display the installation from your end users and whether to pin the Office icons to the taskbar. For more details on these options, see [Display element](configuration-options-for-the-office-2016-deployment-tool#display-element.md) and [PinIconsToTaskBar property](configuration-options-for-the-office-2016-deployment-tool#piniconstotaskbar-property-part-of-property-element.md).
+9. In the Update and upgrade settings,  choose whether to install updates directly from the cloud or from a local source on your network. If you want to update your client devices automatically, choose **CDN** and **Automatically check for updates**. For best practice recommendations, see [Choose your update channels](plan-office-365-proplus#step-3---choose-your-update-channels.md).
+10. Choose whether to automatically upgrade from 2013 versions of Click-to-Run versions of Office, whether to automatically remove all MSI-versions of Office, and whether to automatically install the same language as the removed MSI-version of Office. For more details, see [Install the same languages from a previous MSI installation](overview-of-deploying-languages-in-office-365-proplus#install-the-same-languages-from-a-previous-msi-installation.md).
 
-## Customize application settings
+11. remove 
 
-As part of the Office Customization Tool for Click-to-Run, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these settings, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
 
