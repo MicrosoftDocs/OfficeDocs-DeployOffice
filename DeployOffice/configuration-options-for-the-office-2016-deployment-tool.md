@@ -22,9 +22,9 @@ With the Office Deployment Tool (ODT), you can download and deploy Office 365 Pr
 ## Example of a standard configuration file
 
 The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
-  
+
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.  
-    
+
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
 
 ```
@@ -61,9 +61,9 @@ This configuration file includes the most-commonly used elements and attributes,
 |Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
-   
+
 ## Add element
-    
+
 Defines the products and languages to download or install
 
 ### Example
@@ -156,7 +156,7 @@ Allowed values:
 
 - AllowCdnFallback="True"
 - AllowCdnFallback="False"
- 
+
 #### Example 
 
 ```
@@ -196,7 +196,7 @@ You can also use the Product element to add language packs to existing installat
 Required. Defines the ID of the product to download or install. 
 
 Example values:
- 
+
 - ID="O365ProPlusRetail"  
 - ID="VisioProRetail"
 - ID="ProjectProRetail"
@@ -206,7 +206,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 ## Language element
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
- 
+
 To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 ### Example
@@ -311,7 +311,7 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 ### ID attribute (part of ExcludeApp element)
 
 Required. Defines the ID of the product that should not be installed.
-  
+
 Allowed values:
 
 - ID="Access"
@@ -368,7 +368,6 @@ Defines certain Office behaviors and properties.
 <Property Name="SCLCacheOverride" Value="1" />
 <Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
 <Property Name="PinIconsToTaskbar" Value="TRUE"/>
-
 ```
 
 ### Name attribute (part of Property element)
@@ -538,7 +537,7 @@ Example values:
 
 - UpdatePath="\\\server\share\"
 - UpdatePath="C:\Preload\Office"
-- UpdatePath="http://internalApps/Office/"
+- UpdatePath="<http://internalApps/Office/>"
 
 ### TargetVersion attribute (part of Updates element)
 
@@ -584,7 +583,7 @@ Allowed values:
 - Channel="Monthly"
 - Channel="Broad"
 - Channel="Targeted"
- 
+
 
 ## RemoveMSI element
 
@@ -632,14 +631,13 @@ Optional.
           App="excel16" 
           Id="L_VBAWarningsPolicy" />
   </AppSettings>
-
 ```
 ## Related topics
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
-  
-    
-    
+
+
+
 
