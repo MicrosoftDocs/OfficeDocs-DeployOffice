@@ -3,7 +3,6 @@ title: "Deployment options for admins for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro

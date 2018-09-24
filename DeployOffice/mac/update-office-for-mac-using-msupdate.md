@@ -3,7 +3,6 @@ title: "Update Office for Mac by using msupdate"
 ms.author: danbrown
 author: pbowden-msft
 manager: laurawi
-ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

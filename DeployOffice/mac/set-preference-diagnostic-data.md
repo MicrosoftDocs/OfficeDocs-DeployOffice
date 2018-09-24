@@ -5,7 +5,6 @@ author: pbowden-msft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 9/24/2018
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365

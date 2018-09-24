@@ -3,7 +3,6 @@ title: "Update Office 2019 Preview to Office 2019"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro

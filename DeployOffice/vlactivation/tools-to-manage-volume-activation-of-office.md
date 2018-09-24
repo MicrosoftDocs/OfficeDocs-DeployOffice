@@ -3,7 +3,6 @@ title: "Tools to manage volume activation of Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro

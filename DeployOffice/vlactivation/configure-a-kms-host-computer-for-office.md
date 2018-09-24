@@ -3,7 +3,6 @@ title: "Configure a KMS host computer to activate volume licensed versions of Of
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro

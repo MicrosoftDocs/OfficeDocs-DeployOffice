@@ -3,7 +3,6 @@ title: "GVLKs for KMS and Active Directory-based activation of Office 2019 and O
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/24/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
