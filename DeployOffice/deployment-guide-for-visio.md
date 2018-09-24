@@ -82,7 +82,7 @@ If you already use other tools to deploy software to your users, such as System 
 > [!NOTE]
 > The Office Customization Tool (OCT) is only available for versions of Visio 2016 that are purchased as part of a volume licensing agreement. The OCT can't be used for retail versions of Visio 2016, such as versions bought at a retail store or online. 
   
-## Specify and maintain user settings for Visio
+## Configure user settings for Visio by using Group Policy
 
 If you want to specify and maintain certain user settings for your Visio installations, you can [download the Office 2016 Group Policy Administrative Template (ADMX/ADML) files](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
   
