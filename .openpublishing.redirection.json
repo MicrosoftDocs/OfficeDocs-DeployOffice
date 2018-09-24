@@ -326,7 +326,7 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "DeployOffice/office2016/gvlks-for-office2016.md",
+        "source_path": "DeployOffice/office2016/gvlks-for-office-2016.md",
         "redirect_url": "https://docs.microsoft.com/DeployOffice/vlactivation/gvlks",
         "redirect_document_id": true
     }    
