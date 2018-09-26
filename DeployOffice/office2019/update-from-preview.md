@@ -86,5 +86,5 @@ Replace *yourkey* with your MAK client activation key. You will need to restart 
 
 ## VL Serializer steps for Office on a Mac
 
-If you’re a volume licensed customer that’s licensed for Office 2019 for Mac and you want to update Office 2019 Preview for Mac to Office 2019 for Mac, you don’t need to uninstall Office 2019 Preview for Mac. You just need to download the [Volume License (VL) Serializer](../mac/volume-license-serializer.md) from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and deploy to each computer running Office 2019 Preview for Mac.
+If you’re a volume licensed customer that’s licensed for Office 2019 for Mac and you want to update Office 2019 Preview for Mac to Office 2019 for Mac, you don’t need to uninstall Office 2019 Preview for Mac. You just need to download the [Volume License (VL) Serializer](../mac/volume-license-serializer.md) for Office 2019 for Mac from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and deploy to each computer running Office 2019 Preview for Mac.
 
