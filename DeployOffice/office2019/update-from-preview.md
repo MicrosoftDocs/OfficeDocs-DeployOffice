@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Provides Office 2019 Preview customers with steps to update preview version to Office 2019"
+description: "Provides Office 2019 Preview customers with steps to update the preview version to Office 2019, on both Windows and on a Mac"
 ---
 
 # Update Office 2019 Preview to Office 2019
