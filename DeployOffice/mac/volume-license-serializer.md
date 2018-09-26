@@ -42,7 +42,7 @@ Then, deploy and run the VL Serializer package file on each computer that you wa
 
 > [!NOTE]
 > - You can't use the VL Serializer for Office 2019 for Mac to activate a volume licensed version of Office 2016 for Mac.
-> - Volumed licensed versions of Office 2019 for Mac have version numbers of 16.17 or higher. Volumed licensed versions of Office 2016 for Mac have version numbers of 16.16 or lower, such as 16.16.2 or 16.15.
+> - Volume licensed versions of Office 2019 for Mac have version numbers of 16.17 or higher. Volume licensed versions of Office 2016 for Mac have version numbers of 16.16 or lower, such as 16.16.2 or 16.15.
 
  
 ## Additional information about the VL Serializer 
