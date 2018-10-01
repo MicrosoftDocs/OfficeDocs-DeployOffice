@@ -81,7 +81,7 @@ The following are some additional details about using MatchPreviousMSI in your c
 
 We recommend that you uninstall any previous versions of Office, including Visio and Project, before installing the newer version. But, in a few cases, such as for application compatibility testing, you might need to keep a previous version installed for a limited time while you transition to the new version.
 
-To keep a particular Office product, you add an IgnoreProduct line to your configuration.xml file and you specify its product ID. Some examples of valid IDs are the following:
+To keep a particular Office product, you add an IgnoreProduct line to your configuration.xml file and you specify its product ID. The following IDs are supported:
 - VisStd
 - VisPro
 - PrjStd
