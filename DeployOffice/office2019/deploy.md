@@ -121,12 +121,10 @@ Once the installation is complete, you are returned to a command prompt and you 
 
 ## Install Office 2019 by using System Center Configuration Manager
 
-You can also use System Center Configuration Manage to deploy volume licensed versions of Office 2019. Configuration Manager (Current Branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file.
+You can also use System Center Configuration Manager to deploy volume licensed versions of Office 2019, including Project 2019 and Visio 2019. To start, you need to get a copy of the Office Deployment Tool (ODT) from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment. Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
 
-**Configuration Manager (Current Branch):** If you’re using Configuration Manager (Current Branch), you can use the Office 365 Client Installation wizard to deploy Office 2019. You must be using at least version 1710, but version 1806 is recommended. You’ll see an entry for Office Professional Plus 2019 in the Office 365 Client Installation wizard. On that same page, you can also select to install Project and Visio. This will install Visio Professional 2019 and Project Professional 2019.
-
-**System Center 2012 R2 Configuration Manager:** If you’re using System Center 2012 R2 Configuration Manager, the steps are different and much more manual. First you need to get a copy of the Office Deployment Tool (ODT) from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment.  Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
-
+> [!NOTE]
+> The Office 365 Client Installation wizard in Configuration Manager (Current Branch) currently doesn't support Office 2019, including Project 2019 and Visio 2019. The product team is working on the changes needed to enable this and expect support for Office 2019 to be available by the end of the year.
 
 ## Deploy languages for Office 2019
 
