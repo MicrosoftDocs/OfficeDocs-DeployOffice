@@ -40,8 +40,8 @@
 ## [Deploy Project](deployment-guide-for-project.md)
 ## [Deploy Visio](deployment-guide-for-visio.md)
 ## [Deploy OneNote](deployment-guide-onenote.md)
-## [Install volume licensed editions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
-## [Install different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
+## [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
+## [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
 # Office for Mac 
 ## [Deployment guide](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
