@@ -43,7 +43,7 @@ If you select **Full functionality mode**, there is no effect on the Word 2007 a
 You can download the Administrative Templates files (ADMX/ADML) for Group Policy from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030). The **Set default compatibility mode on file creation** policy setting is located under User Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\Save.
   
 ## Related topics
-[Assess Office compatibility](assess-office-compatibility.md)
 
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Assess Office compatibility](assess-office-compatibility.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 
