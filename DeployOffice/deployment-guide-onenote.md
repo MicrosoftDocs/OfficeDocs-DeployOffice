@@ -19,7 +19,7 @@ There are two Windows versions of OneNote that IT Pros can deploy to users in th
 But, in the next several months, the following changes are coming to OneNote for new Office deployments:
 
 - If you're deploying Office 365 ProPlus on a computer running Windows 10, OneNote 2016 will no longer be installed by default when you're installing Office 365 ProPlus from the Office 365 portal or by using System Center Configuration Manager (Current Branch). OneNote for Windows 10 will be the default OneNote experience.
-- If you're deploying Office 2019, OneNote for Windows 10 will be the default OneNote experience. *(A specific release date for Office 2019 hasn't been announced yet.)*
+- If you're deploying Office 2019, OneNote for Windows 10 will be the default OneNote experience.
 
 If you decide later that your users need OneNote 2016, there will be ways to add OneNote 2016, such as by using the Office Deployment Tool.
  
@@ -56,7 +56,7 @@ In the coming months, when OneNote for Windows 10 becomes the default version fo
 - If OneNote 2016 isn't installed, but your users need to start using it, you can install OneNote 2016 by using the Office Deployment Tool. When you run the Office installation process again on that computer, it will add OneNote 2016 without doing a complete reinstallation of Office 365 ProPlus. You can also install OneNote 2016 by using Configuration Manager (Current Branch) if you have selected OneNote 2016 in the Office 365 Installer UI.  
 
 > [!NOTE]
-> The information in this section will also apply if you're deploying a volume licensed version of Office 2019 when it's released later this year. *(A specific release date for Office 2019 hasn't been announced yet.)* 
+> The information in this section also applies if you're deploying a volume licensed version of Office 2019. 
 
 
 ## How to deploy OneNote for Windows 10
@@ -72,7 +72,7 @@ If you plan to move your users to OneNote for Windows 10, make sure their notebo
 
 The change to the default installation behavior for OneNote will take effect at different times, depending on which version of Office you’re deploying to your users. 
 
-If you’re deploying Office 2019 to your users, OneNote for Windows 10 will be the default when Office 2019 is released later this year. *(A specific release date for Office 2019 hasn’t been announced yet.)* 
+If you’re deploying Office 2019 to your users, OneNote for Windows 10 will be the default. 
 
 If you’re deploying Office 365 ProPlus to users on Windows 10, when OneNote for Windows 10 becomes the default installation depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you’re using. The following are the approximate dates for each update channel:
  - Monthly Channel: by end of September 2018
