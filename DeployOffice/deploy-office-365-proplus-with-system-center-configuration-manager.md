@@ -85,13 +85,13 @@ The Office installation packages are represented as applications in Configuratio
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, click on **Go to the Office Customization Tool**, and configure the desired settings for your Office 365 installation. We recommend the following options:
- - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
- - **Languages:** Include all the language packs you plan to deploy. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
- - **Installation channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
- - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
- - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
- - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
-7. When you complete the configuration, click **Submit** in the upper right of the page. 
+  - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
+  - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+  - **Languages:** Include all the language packs you plan to deploy. 
+  - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. 
+  - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
+  - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+7. When you complete the configuration, click **Submit**. 
 8. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
  > [!NOTE] 
@@ -108,7 +108,7 @@ After you create and deploy Office 365 applications using the Office 365 Install
 
 After you've finished testing Office with the pilot group, you can repeat the above steps to create and deploy an Office application to the broad group. When defining the application, include the same options you did with the pilot group, with the following exceptions:
 
- - Installation channel: Choose **Semi-Annual Channel** 
+ - Update channel: Choose **Semi-Annual Channel** 
  - Version: To make sure you deploy the same version to the broad group that you tested with the pilot group, you might need to specify the Office version.
 
 ## Step 5: Review exit criteria 
