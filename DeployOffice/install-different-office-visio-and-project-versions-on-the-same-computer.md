@@ -1,5 +1,5 @@
 ---
-title: "Supported scenarios for installing different versions of Office, Visio, and Project on the same computer"
+title: "Supported scenarios for installing different versions of Office, Project, and Visio on the same computer"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,10 +11,10 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-description: "Provides IT admins with information about which versions of Office, Visio, and Project can be installed together on the same computer."
+description: "Provides IT admins with information about which versions of Office, Project, and Visio can be installed together on the same computer."
 ---
 
-# Supported scenarios for installing different versions of Office, Visio, and Project on the same computer
+# Supported scenarios for installing different versions of Office, Project, and Visio on the same computer
 
 In many cases, you can install Office, Project, and Visio on the same computer. But, there are some combinations of Office, Project, and Visio that can't be installed together on the same computer.
 The two main things that determine whether Office, Project, and Visio can be installed together on the same computer are the [version](#office-releases-and-their-version-number) of the product and the [installation technology](#installation-technologies-used-by-office) used to install the product. What governs whether an installation scenario is supported are these two rules:
@@ -26,7 +26,7 @@ See the [example installation scenarios](#example-installation-scenarios) sectio
 
 ## Office releases and their version number
 
-The following table shows Office releases that are currently supported by Microsoft, their associated version, and all the possible [installation technology](#installation-technologies-used-by-office). The information listed in the table also applies to releases of Project and Visio. For example, Visio Professional 2016 or Project Online Desktop Client.
+The following table shows Office releases that are currently supported by Microsoft, their associated version, and all the possible [installation technology](#installation-technologies-used-by-office). The information listed in the table also applies to releases of Project and Visio. For example, Project Online Desktop Client or Visio Professional 2016.
 
 
 |Office release  |Version<sup>1</sup>  |Installation technologies  |
@@ -46,7 +46,7 @@ The following table shows Office releases that are currently supported by Micros
 
 ## Installation technologies used by Office
 
-There are different ways to purchase Office, Visio, and Project. For example, you can purchase them as part of an Office 365 plan, as a one-time purchase from a retail store, or thorough a volume licensing agreement. How you purchase them, along with which Office release you purchased – for example, Office 365 or Office 2016 – determines what installation technology is used to install Office.
+There are different ways to purchase Office, Project, and Visio. For example, you can purchase them as part of an Office 365 plan, as a one-time purchase from a retail store, or thorough a volume licensing agreement. How you purchase them, along with which Office release you purchased – for example, Office 365 or Office 2016 – determines what installation technology is used to install Office.
 
 The three installation technologies are:
 
@@ -75,7 +75,7 @@ Here are some example installation scenarios, whether they’re supported, and a
 | Office 365 ProPlus  <br/><br/> Visio Professional 2013 (retail purchase) |   Yes      |They both use Click-to-Run, they are different versions (16.0 and 15.0), and there is no overlap in applications.         |
 | Office Professional Plus 2019 (volume licensed) <br/><br/> Visio Professional 2016 (volume licensed)   |   No      | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0).        |
 | Office Standard 2019 (volume licensed) <br/><br/>Visio Standard 2013 (volume licensed)   |   Yes      |They use different installation technologies (Click-to-Run and MSI) and they are different versions (16.0 and 15.0).         |
-|Office 365 ProPlus  <br/><br/> Visio Professional 2016 (volume licensed)  |   No, but there is an alternative installation method available. | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0). <br/><br/> For more information about the alternative installation method that’s available, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).        |
+|Office 365 ProPlus  <br/><br/> Visio Professional 2016 (volume licensed)  |   No, but there is an alternative installation method available. | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0). <br/><br/> For more information about the alternative installation method that’s available, see [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).        |
 |Office 365 ProPlus  <br/><br/> Project Professional 2019 (volume licensed)  |   Yes, but with a caveat. <sup>2</sup>   | They both use Click-to-Run and are the same version (16.0).         |
 | Office 365 ProPlus  <br/><br/> Visio Standard 2019 (retail) |   Yes, but with a caveat. <sup>2</sup>  | They both use Click-to-Run and are the same version (16.0).         |
 
