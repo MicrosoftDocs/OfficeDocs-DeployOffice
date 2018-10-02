@@ -14,11 +14,10 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
 
 # Deploy Telemetry Dashboard
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
-
- **Summary:** Explains how to deploy the telemetry processor, telemetry agent, and other components that are required by Telemetry Dashboard for Office. 
 
 
 This article helps you deploy the five components of Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
@@ -472,11 +471,9 @@ The following table describes some symptoms that you might encounter after you d
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server default collation is case-sensitive (for example, the Japanese version of SQL Server is case-sensitive by default), ensure that you entered a case-sensitive database name in the **Data connection settings** dialog box in Telemetry Dashboard.  <br/> |
 
 ## Related topics
-[Assess Office compatibility](assess-office-compatibility.md)
 
-[Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
-
-[Monitor Office compatibility and deployments by using Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
-
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Assess Office compatibility](assess-office-compatibility.md)
+- [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
+- [Monitor Office compatibility and deployments by using Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 

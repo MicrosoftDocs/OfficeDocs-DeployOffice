@@ -14,10 +14,11 @@ description: "Learn how to update telemetry processors and the telemetry databas
 
 # Update Office Telemetry components for Office 2016
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016. 
   
   
 When you install Office 2016, Telemetry Dashboard and the built-in telemetry agents are updated to the new versions automatically. However, the telemetry processors and the telemetry database aren't updated, even if they are on the same computer as Office 2016. 
@@ -104,8 +105,7 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
 - On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
     
 ## Related topics
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-  
-[Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
 
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)

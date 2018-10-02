@@ -3,18 +3,19 @@ title: "File format reference for Word, Excel, and PowerPoint"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-ms.assetid: 32d9d541-993f-4255-95b4-d8348f8c6e5c
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
 ---
 
 # File format reference for Word, Excel, and PowerPoint
+
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
 
@@ -167,8 +168,8 @@ If the file format that users want to use is not supported, they can try the fol
 - Save to a file format that another program supports. For example, users might want to import their Word, Excel, or PowerPoint file into another program that does not support the application's native file format. However, the other program might support importing another supported file format, such as a text file format. In this case, users can save their work in text file format, and then from the other program, import the text file.
     
 ## Related topics
-[XML file name extension reference for Office](xml-file-name-extension-reference-for-office.md)
 
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [XML file name extension reference for Office](xml-file-name-extension-reference-for-office.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 

@@ -14,11 +14,12 @@ description: "Learn about telemetry components and sizing, topology, hardware, a
 
 # Telemetry Dashboard topology, sizing, and bandwidth planning
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Learn about telemetry components and sizing, topology, hardware, and bandwidth recommendations for Telemetry Dashboard deployments. 
-  
+
   
 When you deploy Telemetry Dashboard, you must consider several factors. These can include the location of the users to be monitored and the hardware specifications of the computer that runs the telemetry processor and other components that deliver the data to Telemetry Dashboard. It's also important to understand the supported limits for Telemetry Dashboard deployments, such as the maximum number of users who can be monitored. Use the guidance in this article to help you design a Telemetry Dashboard topology that is sized appropriately for your organization.
   
@@ -192,7 +193,7 @@ The following table describes hardware recommendations for each computer that ho
 \*Includes inventory and events for both earlier versions of Office and for Office 2016.
   
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
 

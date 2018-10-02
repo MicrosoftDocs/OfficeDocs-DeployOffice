@@ -14,10 +14,11 @@ description: "Find reference information about Telemetry Dashboard worksheets th
 
 # Telemetry Dashboard worksheet reference
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Find reference information about Telemetry Dashboard worksheets that helps you understand Office stability in your organization. 
   
   
 As you use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the telemetry agents and processors.
@@ -451,7 +452,7 @@ Also, you should be aware that Windows 8 is now supported on ARM-based architect
 When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Tutorial: PivotTable data analysis using a Data Model in Excel](https://go.microsoft.com/fwlink/?LinkID=279531). 
   
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
 

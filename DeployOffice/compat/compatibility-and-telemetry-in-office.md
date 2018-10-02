@@ -14,10 +14,12 @@ description: "Provides a guide to the articles, downloads, scripts, and videos t
 
 # Compatibility and telemetry in Office
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Provides a guide to the articles, downloads, scripts, and videos that help IT Professionals assess Office compatibility. 
   
  
 The following table describes resources that are available to IT Professionals who are assessing Office compatibility.

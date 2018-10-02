@@ -14,10 +14,12 @@ description: "Describes how to create custom reports in Telemetry Dashboard, sho
 
 # Custom reporting and database schema reference for Telemetry Dashboard
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Describes how to create custom reports in Telemetry Dashboard, shows sample reports, and lists the tables and fields in the telemetry database. 
   
   
 The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
@@ -360,9 +362,8 @@ The following illustrations show the relationships between tables in the telemet
 ![Shows the Issue_Summary table and its relationships to other tables in the telemetry database](../images/ORK_CR_Issue_Summary.gif)
   
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-  
-[Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 
