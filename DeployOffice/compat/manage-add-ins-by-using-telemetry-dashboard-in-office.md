@@ -14,6 +14,7 @@ description: "Describes how to improve Office performance by managing add-ins by
 
 # Manage add-ins by using Telemetry Dashboard in Office
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
 
 > [!NOTE]
