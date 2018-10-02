@@ -52,7 +52,7 @@ The steps in this article are based on the following best practices:
 - **Build two Office installation packages**: One package uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each installation package includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the installation package. To deploy both versions, you create additional installation packages. For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files). 
 - **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
-You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more information on those customizations, see [Customize your deployment](deploy-office-365-proplus-with-system-center-configuration-manager#customize-your-deployment). 
+You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more information on those customizations, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1 - Review and update your Configuration Manager infrastructure 
 
@@ -75,7 +75,10 @@ The deployment groups that you defined in your deployment plan are represented a
 - A pilot group that receives the Semi-Annual Channel (Targeted)
 - A broad group that recieves the Semi-Annual Channel
 
-In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/collections/introduction-to-collections).  
+In more complex deployments, you would use multiple deployment groups. For more details, see 
+
+
+[Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/collections/introduction-to-collections).  
 
 ## Step 3 - Create and deploy the Office application to the pilot group
 
