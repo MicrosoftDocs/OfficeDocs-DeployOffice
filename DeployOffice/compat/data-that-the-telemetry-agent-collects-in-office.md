@@ -14,11 +14,12 @@ description: "Learn about the data that the telemetry agent collects for Office.
 
 # Data that the telemetry agent collects in Office
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Learn about the data that the telemetry agent collects for Office. 
-  
   
 The telemetry agent collects several types of telemetry data for Office as described in this article. For example, 
   
@@ -47,7 +48,7 @@ The agent doesn't collect any of the following kinds of information:
 
 ## Office applications from which the telemetry agent collect data
 
-The telemetry agent collects inventory-related data, hardware and software data, and user data in Office 2016, Office 2013, Office 2010, Office 2007, and Office 2003 for the following applications:
+The telemetry agent collects inventory-related data, hardware and software data, and user data in Office 2019, Office 2016, Office 2013, Office 2010, Office 2007, and Office 2003 for the following applications:
   
 - Access
     
@@ -67,7 +68,7 @@ The telemetry agent collects inventory-related data, hardware and software data,
     
 - Word
     
-For Office 2016 and Office 2013 only, the agent collects telemetry data for the following applications:
+For Office 2019, Office 2016, and Office 2013 only, the agent collects telemetry data for the following applications:
   
 - Excel
     
@@ -199,9 +200,9 @@ The agent collects the following data about hardware and software. This data is 
     
 <a name="data2016"> </a>
 
-## Telemetry data that is collected only for Office 2016 and Office 2013
+## Telemetry data that is collected only for Office 2019, Office 2016, and Office 2013
 
-In Office 2016 and Office 2013, the agent also collects the following telemetry data for Excel, Microsoft Outlook, PowerPoint, and Word. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
+In Office 2019, Office 2016, and Office 2013, the agent also collects the following telemetry data for Excel, Microsoft Outlook, PowerPoint, and Word. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
   
 Telemetry data is collected during application run time. If the inventory data was collected by the agent, but the application hasn't started collecting telemetry data, then some data, such as **Success (%)** and **Load time**, won't be shown in the dashboard until the user opens documents or loads solutions during application run time.
   
@@ -260,9 +261,8 @@ VBA, OLE, external data connection, ActiveX control, and assembly reference info
 - Sessions
     
 ## Related topics
-[Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-  
-[Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
-  
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+
+- [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
+- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 

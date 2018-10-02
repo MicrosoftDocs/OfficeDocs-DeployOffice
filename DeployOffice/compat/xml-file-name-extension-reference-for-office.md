@@ -3,18 +3,18 @@ title: "XML file name extension reference for Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-ms.assetid: e077da98-0216-45eb-b6a7-957f9c510a85
 description: "Learn about the XML file formats and their extensions that are used by Word, Excel, PowerPoint, and Visio."
 ---
 
 # XML file name extension reference for Office
+
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
 XML file formats and their extensions are listed in the following tables for Word, Excel, PowerPoint, and Visio.
   
@@ -87,8 +87,8 @@ The following table describes the file type, extension, and description for Visi
 |Visio Macro-Enabled Template  <br/> |.vstm  <br/> |Uses the same basic XML format as the Visio Template (.vstx) format, but can store VBA macro code. Does not always contain macro code, but is configured to support the storage of macro code. Visio Drawings that are created from this template inherit the VBAProject part that exists in the template. However, by default, drawings are saved as .vsdx files even when they are created from a Visio macro-enabled template and will drop the VBAProject part.  <br/> |
    
 ## Related topics
-[File format reference for Word, Excel, and PowerPoint](office-file-format-reference.md)
 
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [File format reference for Word, Excel, and PowerPoint](office-file-format-reference.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
   
 
