@@ -28,10 +28,10 @@ To begin, [download the most current version](https://go.microsoft.com/fwlink/p/
 
 |**Product**|**ID**|**PIDKEY**|
 |:-----|:-----|:-----|
-|Visio Standard 2016  <br/> |VisioStdXVolume  <br/> |NY48V-PPYYH-3F4PX-XJRKJ-W4423  <br/> |
-|Visio Professional 2016  <br/> |VisioProXVolume  <br/> |69WXN-MBYV6-22PQG-3WGHK-RM6XC  <br/> |
 |Project Standard 2016  <br/> |ProjectStdXVolume  <br/> |D8NRQ-JTYM3-7J2DX-646CT-6836M  <br/> |
 |Project Professional 2016  <br/> |ProjectProXVolume  <br/> |WGT24-HCNMF-FQ7XH-6M8K7-DRTW9  <br/> |
+|Visio Standard 2016  <br/> |VisioStdXVolume  <br/> |NY48V-PPYYH-3F4PX-XJRKJ-W4423  <br/> |
+|Visio Professional 2016  <br/> |VisioProXVolume  <br/> |69WXN-MBYV6-22PQG-3WGHK-RM6XC  <br/> |
 
 You can also edit the Updates element in the configuration.xml file to determine how the installation of Project or Visio is updated. For example, you can configure it so that updates are automatically installed from the Office Content Delivery Network (CDN) on the Internet, which is the default, or from a file share on your local network.
 
