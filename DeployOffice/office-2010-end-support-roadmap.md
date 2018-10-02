@@ -3,7 +3,6 @@ title: "Office 2010 end of support roadmap"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 6/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: office-perpetual-itpro
@@ -19,10 +18,10 @@ Office 2010 will reach its end of support on October 13, 2020. If you haven't al
 This article provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Office 365 ProPlus.
   
 > [!NOTE]
-> - If you're a home user who wants to upgrade from Office 2010 to the latest version of Office, see [How do I upgrade to Office 2016?](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350)
-> - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Admins: upgrade your users to the latest Office client using Office 365 for business](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb). 
+> - If you're a home user who wants to upgrade from Office 2010 to the latest version of Office, see [How do I upgrade Office?](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350)
+> - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Upgrade your Office 365 for business users to the latest Office client](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb). 
   
-We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://fasttrack.microsoft.com/office) for cloud migrations and [Software Assurance Deployment and Planning Services](https://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-planning-services-overview.aspx) for on-premises upgrades. 
+We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://fasttrack.microsoft.com/office) for cloud migrations and [Software Assurance Planning Services](https://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-planning-services-overview.aspx) for on-premises upgrades. 
   
 ## What does end of support mean?
 
@@ -42,9 +41,9 @@ With Office 2010 reaching its end of support, this is a good time to explore you
   
 - Office 365 ProPlus, the subscription version of Office that comes with most Office 365 enterprise plans.
     
-- Office 2016, which is sold as a one-time purchase and available for one computer per license.
+- Office 2019, which is sold as a one-time purchase and available for one computer per license.
     
-A key difference between Office 365 ProPlus and Office 2016 is that Office 365 ProPlus is updated on a regular basis, as often as monthly, with new features. Office 2016 only has the same features that it had when it was released in September 2015.
+A key difference between Office 365 ProPlus and Office 2019 is that Office 365 ProPlus is updated on a regular basis, as often as monthly, with new features. Office 2019 only has the same features that it had when it was released in October 2018.
   
 This article provides guidance on upgrading to Office 365 ProPlus.
   
@@ -62,15 +61,15 @@ Unlike Office 2010, Office 365 ProPlus uses a user-based licensing model that al
     
 ## Review what's changed since Office 2010
 
-To learn about the changes from Office 2010 to Office 365 ProPlus, review the update articles for each of the Office releases: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](https://docs.microsoft.com/DeployOffice/office2016/changes-in-office-2016-for-windows-desktop).
+To learn about some of the changes since Office 2010, review the following articles: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](https://docs.microsoft.com/DeployOffice/office2016/changes-in-office-2016-for-windows-desktop).
   
-For information about the new features available in Office 365 ProPlus, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426).
+For information about the new features available in Office 365 ProPlus, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426). For Office 2019, see [What's New in Office 2019](https://support.office.com/article/5077cbbe-0d94-44cc-b30e-654e37629b0c).
   
 ## Review the system requirements for Office 365 ProPlus
 
 Before upgrading to Office 365 ProPlus, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-system-requirements).
   
-In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more information, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx) and [System Requirements for Office server products](https://products.office.com/office-system-requirements#Office-server-products-section).
+In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more information, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx) and [System Requirements for Office server products](https://products.office.com/office-system-requirements).
   
 ## Plan for Office 365
 
@@ -78,7 +77,7 @@ Because Office 365 ProPlus comes with most enterprise Office 365 plans, you shou
   
 ## Assess application compatibility
 
-Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Office 365 ProPlus. For more information, see [Assess application compatibility](assess-office-365-proplus.md#step-4---assess-application-compatibility) 
+Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Office 365 ProPlus. For more information, see [Assess application compatibility](assess-office-365-proplus.md#step-4---assess-application-compatibility). 
   
 To help with assessing application compatibility with Office 365 ProPlus, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Office 365 ProPlus. 
   
@@ -136,7 +135,7 @@ For more information, see [Overview of deploying languages in Office 365 ProPlus
     
 - To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2010-servers-and-products).
     
-- For more information about Office 365 plans, see [Office 365 Service Descriptions](https://technet.microsoft.com/library/office-365-service-descriptions.aspx).
+- For more information about Office 365 plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
 - For more information about the support lifecycle for Microsoft products, see [Microsoft Lifecycle Policy](https://support.microsoft.com/en-us/lifecycle/selectindex).
     
