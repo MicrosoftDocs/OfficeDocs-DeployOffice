@@ -69,7 +69,7 @@ For information about the new features available in Office 365 ProPlus, see [Wha
 
 Before upgrading to Office 365 ProPlus, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-system-requirements).
   
-In addition, you should review the system requirements for your Office server workloads. For example, Exchange 2007 does not support Outlook 2016. For more information, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx) and [System Requirements for Office server products](https://products.office.com/office-system-requirements).
+In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx) and [System Requirements for Office server products](https://products.office.com/office-system-requirements).
   
 ## Plan for Office 365
 
