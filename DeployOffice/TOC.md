@@ -9,8 +9,7 @@
 ## [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 ## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-## [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+## [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 # Manage updates
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
