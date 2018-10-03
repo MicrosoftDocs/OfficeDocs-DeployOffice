@@ -133,7 +133,7 @@ The following table lists the fields in the **Events** table.
 |**Field name**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |Event ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (see Table 2)  <br/> |
+|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (see Table 2)  <br/> |
 |Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table.  <br/> |
 |Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
 |User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table.  <br/> |

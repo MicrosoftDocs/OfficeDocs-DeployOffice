@@ -150,7 +150,7 @@ The following table describes each column in the **Document issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -175,7 +175,7 @@ The following table describes each column in the **Document sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the document that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -309,7 +309,7 @@ The following table describes each column in the **Solution issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -334,7 +334,7 @@ The following table describes each column in the **Solution sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the solution that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -449,7 +449,7 @@ Also, you should be aware that Windows 8 is now supported on ARM-based architect
 
 ## Custom report worksheet
 
-When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Tutorial: PivotTable data analysis using a Data Model in Excel](https://go.microsoft.com/fwlink/?LinkID=279531). 
+When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Use multiple tables to create a PivotTable](https://support.office.com/articles/b5e3ff48-2921-4e29-be15-511e09b5cf2d). 
   
 ## Related topics
 
