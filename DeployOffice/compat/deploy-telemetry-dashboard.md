@@ -429,7 +429,7 @@ The amount transferred can be larger when the interval is set to longer than the
 
  **Q:** How can I re-initialize an agent? 
 
- **A:** The telemetry agent is stored locally on the client computer at %localappdata%/Microsoft/Office/16.0/Telemetry/. You can delete the contents of this folder to reinitialize the computer and start a fresh discovery. Note that this is a per-user data location. 
+ **A:** The telemetry agent is stored locally on the client computer at %localappdata%\Microsoft\Office\16.0\Telemetry. You can delete the contents of this folder to reinitialize the computer and start a fresh discovery. Note that this is a per-user data location. 
 
  **Q:** How frequently is data sent to the telemetry shared folder? 
 
