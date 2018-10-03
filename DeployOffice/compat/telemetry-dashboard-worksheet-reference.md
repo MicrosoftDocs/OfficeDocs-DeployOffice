@@ -449,7 +449,7 @@ Also, you should be aware that Windows 8 is now supported on ARM-based architect
 
 ## Custom report worksheet
 
-When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Use multiple tables to create a PivotTable](https://support.office.com/articles/b5e3ff48-2921-4e29-be15-511e09b5cf2d). 
+When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Use multiple tables to create a PivotTable](https://support.office.com/article/b5e3ff48-2921-4e29-be15-511e09b5cf2d). 
   
 ## Related topics
 
