@@ -41,9 +41,6 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
-- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager-2012r2.md)
-
-
 
 ## Manage updates
 
