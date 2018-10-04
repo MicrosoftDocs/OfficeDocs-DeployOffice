@@ -44,13 +44,6 @@ The following table provides information about the relevant Group Policy and Off
    
 On the second Tuesday of each month, until March 2019, you need to update the Group Policy setting or the configuration.xml with the latest build number for Version 1708 of Semi-Annual Channel. For example, for July 2018, you specify the target version as 16.0.8431.2280.
   
-Another possibility is to run the following command from an elevated command prompt:
-  
-```
-C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe /update user updatetoversion="16.0.8431.2280"
-```
-
-When you run this command, Office looks at the configured update location, such as the Office CDN, and tries to update to the specified version. This update happens immediately, instead of waiting for the next time Office is scheduled to look for updates, which could be in a few days.
   
 ## Delay receiving feature updates from Semi-Annual Channel when using an internal network location
 
