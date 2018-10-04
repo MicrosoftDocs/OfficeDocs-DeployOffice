@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with an overivew of Office 365 ProPlus, including including information about deploying and licensing."
+description: "Provides Office admins with an overivew of Office 365 ProPlus, including information about deploying and licensing."
 ---
 
 # About Office 365 ProPlus in the enterprise
