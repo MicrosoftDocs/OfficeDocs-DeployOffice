@@ -1,24 +1,22 @@
 ---
-title: "Deploy Office 365 ProPlus with System Center Configuration Manager"
+title: "Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 7/19/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 4dd6a023-0a5d-4dc9-9bad-ff70e01840b8
-description: "This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702, see Manage Office 365 ProPlus with Configuration Manager."
+description: "Provides Office admins with information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager."
 ---
 
-# Deploy Office 365 ProPlus with System Center Configuration Manager
+# Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager
 
-This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Manage Office 365 ProPlus with Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates).
+This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
   
 If you use System Center Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Office 365 ProPlus. By using Configuration Manager, you can control which users and computers get Office 365 ProPlus, where they get the installation files from, and when the Office 365 ProPlus installation occurs.
   
