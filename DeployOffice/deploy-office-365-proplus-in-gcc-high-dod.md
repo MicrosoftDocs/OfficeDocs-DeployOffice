@@ -9,7 +9,6 @@ ms.service: o365-proplus-itpro
 localization_priority: None
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-
 description: "Provides guidance for deploying Office 365 ProPlus in a GCC High or DoD environment"
 ---
 
@@ -44,7 +43,7 @@ There is no special guidance about what tools you can use to deploy Office 365 P
 
 To deploy Office 365 ProPlus, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Office 365 ProPlus from, whether to install the 32-bit or 64-bit version, which languages to install, and where Office 365 ProPlus should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
-You can also use enterprise software deployment tools, such as System Center Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+You can also use enterprise software deployment tools, such as System Center Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager-2012r2.md).
 
 > [!NOTE]
 > If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, we recommend that you update to the most current version of that software, if possible. In some cases, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.
@@ -148,7 +147,7 @@ and
 In addition to telemetry data settings, there are some additional settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Ensure modern authentication is enabled
-Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Office 365 ProPlus. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) and [How modern authentication works for Office 2013 and Office 2016 client apps](https://support.office.com/article/e4c45989-4b1a-462e-a81b-2a13191cf517).
+Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Office 365 ProPlus. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
 
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
@@ -222,13 +221,12 @@ For general deployment guidance about Office 365 ProPlus, see the following arti
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-- [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager-2012r2.md)
 
 For networking information, see the following articles:
 
-- [Office 365 U.S. Government GCC High endpoints](https://support.office.com/article/cbd2369c-fd96-464c-bf48-c99826b459ee)
-- [Office 365 U.S. Government DoD endpoints](https://support.office.com/article/5d7dce60-4892-4b58-b45e-ee42fe8a907f)
-- [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
-- [Network requests in Office 365 ProPlus and Mobile](https://support.office.com/article/eb73fcd1-ca88-4d02-a74b-2dd3a9f3364d)
-- [Network requests in Office 2016 for Mac](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
+- [Office 365 U.S. Government GCC High endpoints](https://docs.microsoft.com/office365/enterprise/office-365-u-s-government-gcc-high-endpoints)
+- [Office 365 U.S. Government DoD endpoints](https://docs.microsoft.com/office365/enterprise/office-365-u-s-government-dod-endpoints)
+- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+- [Network requests in Office 2016 for Mac](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
