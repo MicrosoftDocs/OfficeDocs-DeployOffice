@@ -212,8 +212,8 @@ The DMS service doesn’t process, store or transmit any personally identifiable
 ## Related topics
 For more information about the GCC High and DoD environments provided by Microsoft, see the following service descriptions:
 
-- [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx)
-- [GCC High and DoD](https://technet.microsoft.com/library/mt774968.aspx)
+- [Office 365 US Government](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [GCC High and DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod)
 - [Enterprise Mobility + Security for US Government](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)
 
 For general deployment guidance about Office 365 ProPlus, see the following articles:
