@@ -58,7 +58,7 @@
 ## Activation
 ### [Overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Volume License (VL) Serializer](mac/volume-license-serializer.md?toc=/deployoffice/toc.json)
-## [Network requests](https://support.office.com/article/afdae969-4046-44b9-9adb-f1bab216414b)
+## [Network requests](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
 ## [64-bit upgrade](mac/office-2016-for-mac-upgrade-to-64-bit.md?toc=/deployoffice/toc.json)
 
  

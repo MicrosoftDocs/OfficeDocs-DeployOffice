@@ -47,12 +47,12 @@
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-deployment-for-enterprise-managed.md",
-        "redirect_url": "https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager",
         "redirect_document_id": true
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-system-center-configuration-manager-configuration-for-enterprise.md",
-        "redirect_url": "https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager",
         "redirect_document_id": false
     },
     {
