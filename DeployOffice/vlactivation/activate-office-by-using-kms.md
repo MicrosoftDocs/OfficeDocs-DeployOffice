@@ -23,7 +23,7 @@ If the KMS host computer is available and properly configured, activation of Off
   
 You don't have to do anything else to enable activation of Office by KMS. KMS clients can locate a KMS host computer automatically by querying DNS for service (SRV) resource records (RRs) that publish the KMS service. For more information, see [How DNS is used to find a KMS host computer](configure-dns-to-activate-office-by-using-kms.md#how-dns-is-used-to-find-a-kms-host-computer).
 
-If the network environment does not use SRV RRs, you can manually assign a KMS client to use a specific KMS host computer by configuring the HKEY_LOCAL_MACHINESoftware\\Microsoft\\OfficeSoftwareProtectionPlatform registry key on the KMS client. The KMS host computer name is specified by KeyManagementServiceName (REG_SZ), and the port is specified by KeyManagementServicePort (REG_SZ). The default port is 1688. These registry keys can also be set through by using ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+If the network environment does not use SRV RRs, you can manually assign a KMS client to use a specific KMS host computer by configuring the HKEY_LOCAL_MACHINE\\Software\\Microsoft\\OfficeSoftwareProtectionPlatform registry key on the KMS client. The KMS host computer name is specified by KeyManagementServiceName (REG_SZ), and the port is specified by KeyManagementServicePort (REG_SZ). The default port is 1688. These registry keys can also be set through by using ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
  
 <a name="KMSClientCacheOnOff"> </a>
