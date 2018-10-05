@@ -254,13 +254,13 @@ You must run the executable from the client computer on which you want to instal
 
 ## Apply application settings to Office 365 ProPlus
 
-As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016), but you include application settings as part of your configuration file. 
+As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](#install-office-365-proplus), but you include application settings as part of your configuration file. 
 
 To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. Note that this tool is still in preview and is subject to change.
 
 1. In your web browser, open the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/) and follow the steps to create a configuration file, including defining application settings alongside the standard deployment settings. 
 2. Export the file.
-3. Follow the steps in [Install Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#install-office-365-proplus-2016) to deploy Office with the newly created configuration file.
+3. Follow the steps in [Install Office 365 ProPlus](#install-office-365-proplus) to deploy Office with the newly created configuration file.
 
 In this example, the configuration file installs the 32-bit version of Office 365 ProPlus in English and displays the Trust Bar for all VBA macros in Excel.
 
