@@ -39,7 +39,7 @@ The steps in this article covers these features and shows you how to implement o
 
 If you haven't already, complete the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
 
-This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/understand/introduction). 
+This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction). 
 
 We recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.  
 
@@ -57,8 +57,8 @@ You can customize these options to match the requirements for your organization,
 
 From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your Office deployment easier and more efficient: 
 
-- Use the Current Branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/en-us/sccm/core/understand/which-branch-should-i-use) 
-- Enable peer cache on your clicent devices. Peer Cache is a feature in the Current Branch of Configuration Manager that can help with limited network capacity when deploying updates to  client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/en-us/sccm/core/plan-design/hierarchy/client-peer-cache). 
+- Use the Current Branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use) 
+- Enable peer cache on your clicent devices. Peer Cache is a feature in the Current Branch of Configuration Manager that can help with limited network capacity when deploying updates to  client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/client-peer-cache). 
 - Deploy Office as an application using the Office Client Management dashboard and Office 365 Installer wizard in Configuration Manager. The dashboard and wizard enable all the Configuration Manager features designed for Office, including removal of existing versions of Office and defining application settings.
 
 Make sure to complete the following requirements as well:
@@ -77,7 +77,7 @@ The deployment groups that you defined in your deployment plan are represented a
 In more complex deployments, you would use multiple deployment groups. For more details, see 
 
 
-[Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/manage/collections/introduction-to-collections).  
+[Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections).  
 
 ## Step 3 - Create and deploy the Office application to the pilot group
 
@@ -97,10 +97,10 @@ The Office installation packages are represented as applications in Configuratio
 8. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
  > [!NOTE] 
- > If you choose not to deploy the package in the wizard, you can find the application in **Software Library** > **Application Management** > **Applications**.  For details on deploying an application, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application.md). 
+ > If you choose not to deploy the package in the wizard, you can find the application in **Software Library** > **Application Management** > **Applications**.  For details on deploying an application, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application). 
 
 9. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
-10. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](/sccm/apps/get-started/create-and-deploy-an-application.md).
+10. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
 11. Complete the wizard.
 12. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
 
@@ -127,7 +127,7 @@ To view the Office 365 Client Management dashboard in the Configuration Manager 
 In the dashboard, make sure you see the Office versions, languages, and update channels that you deployed for each collection. 
 
 > [!IMPORTANT] 
-> If the data is not displaying, you might need to enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](/sccm/core/clients/manage/configure-hardware-inventory.md). 
+> If the data is not displaying, you might need to enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](https://docs.microsoft.com/sccm/core/clients/manage/inventory/configure-hardware-inventory). 
 
 ## Customize your deployment
 The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices.
