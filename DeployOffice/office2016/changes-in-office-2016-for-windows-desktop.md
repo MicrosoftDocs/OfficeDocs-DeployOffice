@@ -17,19 +17,19 @@ description: "Provides admins with information about which features in Office 20
 # Changes in Office 2016 for Windows desktop
 
  **Summary:** Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released. 
-  
-  
+
+
 Each of the following tables describes features that are changed or removed in the applications in Office 2016 for Windows.
-  
+
 There are tables for the following applications: [Access](changes-in-office-2016-for-windows-desktop.md#BKMK_Access), [Excel](changes-in-office-2016-for-windows-desktop.md#BKMK_Excel), [OneNote](changes-in-office-2016-for-windows-desktop.md#BKMK_OneNote), [Outlook](changes-in-office-2016-for-windows-desktop.md#BKMK_Outlook), [PowerPoint](changes-in-office-2016-for-windows-desktop.md#BKMK_PowerPoint), [Publisher](changes-in-office-2016-for-windows-desktop.md#BKMK_Publisher), and [Word](changes-in-office-2016-for-windows-desktop.md#BKMK_Word). The [Office suite](changes-in-office-2016-for-windows-desktop.md#BKMK_Suite) table lists features that are changed or removed from several or all apps. 
-  
+
 If you're looking for information about the new features in Office 2016, see [Office Training Center](https://support.office.com/office-training-center).
-  
+
 <a name="BKMK_Suite"> </a>
 ## Office suite
 
 The following table lists features that are changed or removed in Office 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |Clip Art  <br/> |The Office.com Clip Art and image library has been removed.  <br/> |[Clip Art now powered by Bing Images](https://blogs.office.com/2014/12/01/clip-art-now-powered-bing-images/) <br/><br/> [Add online pictures or clip art to your file](https://support.office.com/article/0a01ae25-973c-4c2c-8eaf-8c8e1f9ab530) <br/> |
@@ -39,40 +39,40 @@ The following table lists features that are changed or removed in Office 2016.
 |Localized languages  <br/> | Language packs that allow the user to display the Office user interface in a specific language are no longer available for the following languages:  <br/><br/> - Central Kurdish  <br/> - Hausa (Latin)  <br/> - Igbo  <br/>  - isiXhosa  <br/> - isiZulu  <br/> - K'iche  <br/> - Kinyarwanda  <br/> - Punjabi (Arabic)  <br/> - Sesotho sa Leboa  <br/> - Setswana (South Africa)  <br/> - Tajik  <br/>  - Tigrigna  <br/> - Wolof  <br/> - Yoruba  <br/> | Proofing tools are still available for the following languages:  <br/><br/> - Hausa (Latin)  <br/> - Igbo  <br/> - isiXhosa  <br/> - isiZulu  <br/> - Kinyarwanda  <br/> - Sesotho sa Leboa  <br/> - Setswana (South Africa)  <br/> - Wolof  <br/> - Yoruba  <br/> <br/> For more information, see [Language Accessory Pack for Office 2016](https://support.office.com/article/82ee1236-0f9a-45ee-9c72-05b026ee809f ).  <br/> |
 |Themes  <br/> | The following changes have been made to Office themes:  <br/><br/> - The light gray theme has been removed.  <br/> - The dark gray theme has been updated.  <br/> - A black theme has been added.  <br/> |The black theme is only available to Office 365 subscribers.  <br/> |
 |Version information  <br/> |The version information shown under **File** > **Account** > **About** _application name_ no longer shows the version information for the application's .exe file.  <br/> |This only applies to Windows Installer (MSI) versions of Office 2016.  <br/><br/> The version number that is shown is for the Mso20win32client.dll file.  <br/> |
-   
+
 <a name="BKMK_Access"> </a>
 ## Access
 
 The following table lists features that are changed or removed in Access 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |Web apps  <br/> |Microsoft no longer recommends creating and using Access web apps in SharePoint.  <br/> |This feature will be retired from SharePoint Server in ten years and from Office 365 in one year.  <br/><br/> [Access Services in SharePoint Roadmap](https://support.office.com/article/497fd86b-e982-43c4-8318-81e6d3e711e8) <br/> |
-   
+
 <a name="BKMK_Excel"> </a>
 ## Excel
 
 The following table lists features that are changed or removed in Excel 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |Azure Marketplace connector  <br/> | The following options have been removed from the ribbon and are no longer available: <br/> <br/> - **Data** > **Get External Data** > **From Other Sources** > **From Windows Azure Marketplace** <br/><br/> - **Data** > **Get Data** > **From Azure** > **From Azure Marketplace** <br/> |Data services are no longer available from Azure Marketplace.  <br/> |
 |Power View  <br/> |The **Power View** button has been removed from **Insert** > **Reports** on the ribbon.  <br/> |[Roadmap for Power View in Excel](https://support.office.com/article/c1f0d0f7-adef-4f03-ae35-46d83294e96b) <br/> <br/>If you want to continue to use Power View, you can [follow these steps](https://support.office.com/article/f8fc21a6-08fc-407a-8a91-643fa848729a) to turn on Power View.  <br/> |
-   
+
 <a name="BKMK_OneNote"> </a>
 ## OneNote
 
 The following table lists features that are changed or removed in OneNote 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |Scanned images  <br/> |The **Scanned Image** button has been removed from **Insert** > **Images** on the ribbon.  <br/> |The ability to insert a scanned image from a scanner is no longer supported.  <br/><br/> For other options, see [How can I Insert scanned images into OneNote 2016 for Windows?](https://support.office.com/article/6c41b5a8-7dfd-4c6a-811e-5c167729c4d9) <br/> |
-   
+
 <a name="BKMK_Outlook"> </a>
 ## Outlook
 
 The following table lists features that are changed or removed in Outlook 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |Autodiscover  <br/> |Outlook 2016 requires Autodiscover to be configured, or it won't be able to connect to Exchange Server.  <br/> |Outlook 2016 retrieves Exchange Server connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature.  <br/><br/> Microsoft Support Knowledge Base (KB) article [3098831](https://support.microsoft.com/kb/3098831) <br/> |
@@ -81,41 +81,38 @@ The following table lists features that are changed or removed in Outlook 2016.
 |Outlook Social Connector  <br/> |Access to LinkedIn, Facebook, and other social media sites has been removed.  <br/> |In some cases, these social sites have built Office Add-in solutions that you can use instead. Visit the [Office Store](https://store.office.com/appshome.aspx) for additional solutions.  <br/><br/> [Can you connect to a social network in Outlook?](https://support.office.com/article/4a284963-0298-487a-86e4-ffa8882f8ee9) <br/> |
 |People Pane  <br/> |The People Pane is off by default.<br/> <br/> Also, the Account Settings option has been removed.  <br/> |To show the People Pane when reading messages, go to **View** > **People Pane**, and then choose **Normal** or **Minimized**.  <br/> |
 |PRF files  <br/> |PRF files for configuring Exchange Server accounts are no longer supported.  <br/> |Accounts should be configured automatically in the account wizard when you use Autodiscover.  <br/> |
-   
+
 <a name="BKMK_PowerPoint"> </a>
 ## PowerPoint
 
 The following table lists features that are changed or removed in PowerPoint 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |HTML files  <br/> |Opening an HTML file is no longer supported.  <br/> |The "All Web Pages" choice has been removed from the **File** > **Open** dialog box.  <br/> |
-   
+
 <a name="BKMK_Publisher"> </a>
 ## Publisher
 
 The following table lists features that are changed or removed in Publisher 2016.
-  
+
 |**Area**|**What's changed**|**More information**|
 |:-----|:-----|:-----|
 |Live Preview  <br/> |The ability to preview the effects of formatting changes has been removed.  <br/> |The **Enable Live Preview** option has been removed from **File** > **Options** > **General** > **User Interface options**.  <br/><br/> Live Preview is removed starting with Version 1606 (Build 7070.2022).  <br/> |
-   
+
 <a name="BKMK_Word"> </a>
 ## Word
 
 The following table lists features that are changed or removed in Word 2016.
-  
-|**Area**|**What's changed**|**More information**|
-|:-----|:-----|:-----|
-|Blogging  <br/> |The ability to publish a document as a blog post to Blogger (www.blogger.com) is no longer supported.  <br/> |The **Blogger** option has been removed from **File** > **Share** > **Post to Blog**.  <br/> <br/>You can still publish a document as a blog post to other blogging platforms.  <br/> <br/>[Help with blogging in Word](https://support.office.com/article/3ad4ad8d-06a3-441d-99cd-c65e13a3433d) <br/> |
-|Grammar &amp; Style  <br/> |The **Grammar &amp; Style** option has been removed from the **Writing Style** drop-down menu in the "When correcting spelling and grammar in Word" section under **File** > **Options** > **Proofing**.  <br/> | The **Grammar &amp; Style** option has been removed for the following languages:  <br/><br/> - Arabic  <br/> - Danish  <br/> - Dutch  <br/> - English  <br/> - Finnish  <br/> - French  <br/> - German  <br/> - Italian  <br/> - Norwegian Bokmål  <br/> - Portuguese (Brazilian)  <br/> - Portuguese (Portugal)  <br/> - Russian  <br/> - Spanish  <br/> |
-|Korean data recognizers  <br/> |Korean data recognizers are no longer available under **File** > **Options** > **Proofing** > **AutoCorrect Options** > **Actions**.  <br/> | The following Korean data recognizers have been removed:  <br/><br/> - Address  <br/> - Date  <br/> - Person name  <br/> - Telephone number  <br/> - Time  <br/> |
-|Research  <br/> |The **Research** button has been removed from **Review** > **Proofing** on the ribbon.  <br/> |You can add the **Research** button to the ribbon by customizing the ribbon.  <br/> |
-   
+
+
+| **Area**                       | **What's changed**                                                                                                                                                                                              | **More information**                                                                                                                                                                                                                                                                                                                                      |
+|:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Blogging  <br/>                | The ability to publish a document as a blog post to Blogger (www.blogger.com) is no longer supported.  <br/>                                                                                                    | The **Blogger** option has been removed from **File** > **Share** > **Post to Blog**.  <br/> <br/>You can still publish a document as a blog post to other blogging platforms.  <br/> <br/>[Help with blogging in Word](https://support.office.com/article/3ad4ad8d-06a3-441d-99cd-c65e13a3433d) <br/>                                                    |
+| Grammar &amp; Style  <br/>     | The **Grammar &amp; Style** option has been removed from the **Writing Style** drop-down menu in the "When correcting spelling and grammar in Word" section under **File** > **Options** > **Proofing**.  <br/> | The **Grammar &amp; Style** option has been removed for the following languages:  <br/><br/> - Arabic  <br/> - Danish  <br/> - Dutch  <br/> - English  <br/> - Finnish  <br/> - French  <br/> - German  <br/> - Italian  <br/> - Norwegian Bokmål  <br/> - Portuguese (Brazilian)  <br/> - Portuguese (Portugal)  <br/> - Russian  <br/> - Spanish  <br/> |
+| Korean data recognizers  <br/> | Korean data recognizers are no longer available under **File** > **Options** > **Proofing** > **AutoCorrect Options** > **Actions**.  <br/>                                                                     | The following Korean data recognizers have been removed:  <br/><br/> - Address  <br/> - Date  <br/> - Person name  <br/> - Telephone number  <br/> - Time  <br/>                                                                                                                                                                                          |
+| Research  <br/>                | The **Research** button has been removed from **Review** > **Proofing** on the ribbon.  <br/>                                                                                                                   | You can add the **Research** button to the ribbon by customizing the ribbon.  <br/>                                                                                                                                                                                                                                                                       |
+
 ## Related topics
 [What's new for admins in Office 2016](what-s-new-for-admins-in-office-2016.md)
-
-[What's new for administrators in Outlook 2016 for Windows](https://technet.microsoft.com/library/cc179110(v=office.16).aspx)
-  
-[What's new: Deploying Office 365 ProPlus in the enterprise](..//what-s-new-deploying-office-365-proplus-in-the-enterprise.md)
 

@@ -3,17 +3,12 @@ title: "Overview of licensing and activation in Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 10/2/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
-ms.assetid: 1096c33e-a6f2-44c8-9821-3cba07ec5750
-
+ms.custom: Ent_Office_ProPlus
 description: "Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
 ---
 
@@ -33,7 +28,7 @@ The number of available licenses available for Office 365 ProPlus depends on you
   
 ![Office 365 licenses](images/15b018fe-c12e-4d78-9287-bc95d5e14cac.png)
   
-After that's done, the user can install Office directly from the Office 365 portal or you can deploy Office to your users from your local network.
+After that's done, the user can install Office directly from the Office 365 portal or you can deploy Office to your users from your local network. If the user hasn't been assigned a license, the user can't install Office from the Office 365 portal. 
   
 You can remove a user's license (for example, if the user leaves your organization). After you do this, any installations of Office 365 ProPlus that the user had go into [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode). The Office Licensing Service, a part of Office 365, keeps track of which users are licensed and how many computers they've installed Office on.
   
@@ -61,9 +56,10 @@ In reduced functionality mode, Office 365 ProPlus remains installed on the compu
 ![Product deactivated](images/78aa59b0-8772-4ba2-8094-bfeb65602ab7.png)
   
 The user can then choose one of the available options to reactivate Office 365 ProPlus on that computer.
+
+If the user hasn't been assigned a license, and they try to use Office 365 ProPlus on a computer where it's installed, Office will be in reduced functionality mode. Also, the user will be prompted to sign in and activate every time they open an Office app, such as Word or Excel.
   
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
-   
+ 
 
 ## Related topics
 

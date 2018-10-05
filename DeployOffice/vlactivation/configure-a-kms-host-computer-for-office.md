@@ -1,207 +1,135 @@
 ---
-title: "Prepare and set up the Office 2016 KMS host computer"
+title: "Configure a KMS host computer to activate volume licensed versions of Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 2efb9ade-af63-4b7d-b6a9-c86926d4b429
 description: "How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016."
 ---
 
-# Prepare and set up the Office 2016 KMS host computer
+# Configure a KMS host computer to activate volume licensed versions of Office
 
- **Summary:** How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016. 
-  
-  
-To enable Key Management Service (KMS) functionality for Office 2016, you install KMS host license files and a KMS activation key on the KMS host computer. Then, you activate the key over the Internet or by telephone using Microsoft hosted activation services.
-  
-To find out more about how to buy volume license editions of Office 2016, see [Microsoft Office Volume Licensing Buyer's Guide](https://www.microsoft.com/en-us/licensing/product-licensing/office.aspx).
-  
-|||
-|:-----|:-----|
-|![Are you a user?](../images/e9b1eeb1-6712-4af3-9bd4-4b8e3cbc85d4.jpg)           <br/> |If you are a user activating a personal copy of Office 2016, follow the [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e) directions instead.  <br/> |
-|![Are you an admin?](../images/450333cb-3c0b-433f-9b74-65bbb5a4f274.jpg)           <br/> |If you are an admin and you want to activate Office 365 ProPlus for your company, review the [Overview of licensing and activation in Office 365 ProPlus](../overview-of-licensing-and-activation-in-office-365-proplus.md) instead.  <br/> <br/>Not sure if you need to use KMS, MAK, or AD DS-based activation? Review [Plan volume activation of Office 2016](plan-volume-activation-of-office.md) before continuing.  <br/> <br/>If you are an admin setting up a KMS host computer in order to activate Office 2016 for your company, you're at the right place, keep reading.  <br/> |
-   
+ ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
-    
-<a name="SupportedOSKMS"> </a>
+To activate volume licensed versions of Office, including Project and Visio, you must have a KMS host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 
-## Supported operating systems for the KMS host computer and client computers
+To enable the KMS host computer to activate Office, you must install the Office Volume License Pack and enter your KMS key on the KMS host computer. Then, you need to activate the KMS key over the internet or by telephone. 
 
-You can use the KMS activation method with the 32-bit and 64-bit editions of these operating systems.
-  
-For KMS client computers:
-  
-- Windows 10
-    
-- Windows 8 or Windows 8.1
-    
-- Windows 7
-    
-- Windows Server 2012 or Windows Server 2012 R2 
-    
-- Windows Server 2008 R2
-    
-For the KMS host computer:
-  
-- Windows 8
-    
-- Volume license editions of Windows 7
-    
-- Windows Server 2012
-    
-- Windows Server 2008 R2
-    
-<a name="coHostwithWindows"> </a>
+If you have a KMS host computer configured to activate Windows, you can configure that same KMS host computer to active Office. You can also configure a KMS host computer to activate multiple versions of Office, such as Office 2019 and Office 2016. In these cases, the KMS host computer must be running an operating system that supports KMS for each of the versions of Office that you want to activate. You'll also need to install the Office Volume License Pack for each version of Office on the KMS host computer and activate a KMS host key for each version of Office.
 
-## Co-hosting Office 2016 with Windows on the same KMS host computer
-
-If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer as your Office KMS host computer as well. To use the same computer for volume license editions of Office, you must still install the licensing files, and activate an Office 2016 KMS host key on the computer.
-
-<a name="BMK_PreparetheKMSHost"> </a>
+Office supports KMS host computers running on the following operating systems, depending on which version of Office is being activated by KMS:
+- **Office 2019:** At least Windows Server 2012 or at least Windows 8.1 (volume editions)
+- **Office 2016:** At least Windows Server 2008 R2 or at least Windows 7 Service Pack 1 (volume editions)
  
-## Prepare the Office KMS host computer
+You can download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](http://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). To get the KMS key, sign in to the [Volume Licensing Service Center (VLCS)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
+
+> [!NOTE]
+> If you are setting up KMS on Windows 7 volume license edition or Windows Server 2008 R2, you must first install a patch as described in Microsoft Knowledge Base article [2757817](https://go.microsoft.com/fwlink/p/?LinkId=254800). This patch allows the KMS host computer to activate Office clients that run on Windows 8.
 
 
-You can set up Office 2016 KMS host on the same computer that is serving as KMS host for Office 2013.
+## Configure the KMS host computer
+
+To configure the KMS host computer to activate Office, you must be a member of the Administrators group on the KMS host computer.
+
+If your KMS host computer has internet access, do the following:
+
+1. Sign in to the [Volume Licensing Service Center (VLCS)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
+2. On the KMS host computer, download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](http://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). 
+3. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack on the KMS host computer and then opens the Volume Activation Tools wizard.
+4. Follow the steps in the Volume Activation Tools wizard. Enter our KMS key when prompted.
+5. If you have a firewall, make sure port 1688 is open to allow the KMS host service through the firewall.
+   - Go to **Control Panel** > **System and Security** > **Windows Firewall**.
+   - Click the **Allow an app or feature through Windows Firewall** link.
+   - Click the **Change Settings** button.
+   - Select the check box for Key Management Service and then choose **OK**.
+
+    
   
-If you are setting up KMS on Windows 7 volume license edition or Windows Server 2008 R2, you must first install a patch as described in Microsoft Knowledge Base article [2757817](https://go.microsoft.com/fwlink/p/?LinkId=254800). This patch allows the KMS host computer to activate Office 2016 clients that run on Windows 8.
+If your KMS host computer doesn't have internet access, you can activate it by telephone.
+
+1. From an elevated command prompt, go to the Windows\system32 folder, and then run the following command: 
+   
+``` 
+   cscript slmgr.vbs /dti ACTIVATIONID
+ ```   
+   Replace *ACTIVATIONID* with the Activation ID for your version of Office. The Activation ID for Office 2019 is 70512334-47B4-44DB-A233-BE5EA33B914C, and the 2016 Activation ID for Office 2016 is 98EBFE73-2084-4C97-932C-C0CD1643BEA7.  
   
-<a name="BMK_SetupAndActivateOfficeKMShost"> </a>
+   The result of this command is a 36-digit installation ID. Paste the installation ID number into Notepad, and then break it up into six groups of six numbers.
+    
+2. At the command line, run the following command:
 
-## Set up and activate Office KMS
+```
+  slui.exe 4
+```
 
-Once you have prepared your KMS host computer, you need to install the Volume License Pack and then activate the KMS host key as described in this article.
+This launches the Windows phone activation wizard and it will display a telephone number.
+    
+After you have obtained the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It is for Windows. 
   
-### To set up Office KMS
+3. Call the telephone number. At each prompt, enter a group of six numbers. This is the installation ID that you obtained in step 1.
+    
+4. When you hear the response, write down the numbers. This is your confirmation ID.
+    
+5. At the command line, run the following command:
 
-1. Verify that the user account that is performing this procedure is a member of the Administrators group on the KMS host computer.
-    
-2. Download the [Microsoft Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164) and run **office2016volumelicensepack_4285-1000_en-us_x86.exe**. This launches the **Volume Activation Tools** wizard. 
-    
-    Then, follow the steps in the **Install Instructions** section on the download page. 
-    
-    To get the key for the Microsoft Office 2016 KMS, sign in to the [Microsoft Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=184280). Choose the Office version for which you are licensed. Then, look for the KMS key for that version. Don't choose the Key Management Service Host Key. 
-    
-3. If the KMS host computer does not have an Internet connection, see [To activate an Office KMS host by telephone](configure-a-kms-host-computer-for-office.md#BMK_ToactivateanOfficeKMSbytelephone) later in this article. 
-    
-4. If you have a firewall enabled, follow these steps to activate the KMS host computer through the firewall:
-    
-1. In Control Panel, select **System and Security**, and then select **Windows Firewall**.
-    
-2. Select the **Allow a program or feature through Windows Firewall** link. 
-    
-3.  Select **Change Settings**.
-    
-4. Select the **Key Management Service** check box, and then click **OK**.
-    
-5. If you installed the Microsoft Office 2016 Volume License Pack on Windows 8, when the application opens, the dialog box in the following figure appears. Choose **Yes** to install the Remote Server Administration Tools (RSAT) for Windows 8 from the [RSAT download page](https://go.microsoft.com/fwlink/p/?LinkId=254802), or click **No** to use **slmgr.vbs** to set up KMS host computer activation. We recommend that you install RSAT. 
-    
-   **Figure: Office 2016 Volume License Pack dialog box**
+ ```
+cscript slmgr.vbs /atp CONFIRMATIONID ACTIVATIONID
+```
+Replace *CONFIRMATIONID* with the 48 digit confirmation ID that you received over the telephone. 
 
-     ![A dialog box that lets you install the RSAT](../images/44722c48-5172-46b6-9472-150630ab8ac4.png)
+Replace *ACTIVATIONID* with the Activation ID for your version of Office. The Activation ID for Office 2019 is 70512334-47B4-44DB-A233-BE5EA33B914C, and the 2016 Activation ID for Office 2016 is 98EBFE73-2084-4C97-932C-C0CD1643BEA7.  
+
   
-    For more information about **slmgr.vbs** (Software License Manager script), see [The slmgr.vbs script](tools-to-manage-volume-activation-of-office.md#BK_Theslmgrscript).
+6. You should see a message that the confirmation ID was successfully deposited.
     
- **Activating an Office KMS host computer by telephone**
+
+
+## Verify activations by the KMS host computer
+
+After you set up the KMS host computer, KMS clients send requests for activation and increment the current count of activations. The current count must be 5 or more before KMS clients are activated. The maximum current count is double the activation threshold, or 10. You can also check the KMS log in the Applications and Services Logs folder for event ID 12290, the ID for KMS-related activity. The KMS log records activation requests from KMS clients. Each event displays the name of the computer and the time stamp of each activation request.
   
-If your KMS host does not have an Internet connection, you can activate it by telephone.
 
-<a name="BMK_ToactivateanOfficeKMSbytelephone"> </a>
+## Verify the KMS key is successfully installed and activated
 
-### To activate an Office KMS host computer by telephone
+From an elevated command prompt on the KMS host computer, run the following command:
+ 
+```
+   cscript slmgr.vbs /dlv all
+```    
+    
+To view information only for Office 2019, specify the Activation ID after the **/dlv** parameter. For example: 
 
-1. Verify that the user account that is performing this procedure is a member of the Administrators group on the computer that is running KMS.
+```   
+    cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C
+```
+ 
+The following is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
     
-2. Start a Command Prompt with elevated privileges. For example:
-    
-  - For Windows Server 2008 R2, click **Start**, click **All Programs**, expand **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
-    
-  - For Windows Server 2012, on the **Start** screen, right-click **Command Prompt**, and then click **Run as administrator**. If **Command Prompt** is not on the **Start** screen, right-click **Computer**, click **All apps**, right-click **Command Prompt**, and then click **Run as administrator**.
-    
-3. In the **User Account Control** dialog box, click **Yes**.
-    
-4. In the **Administrator: Command Prompt** window, change to the **C:\Windows\system32** directory and then run the following command: 
-    
-    cscript slmgr.vbs /dti 98EBFE73-2084-4C97-932C-C0CD1643BEA7
-    
-    > [!NOTE]
-    > The 98EBFE73-2084-4C97-932C-C0CD1643BEA7 value is the Office 2016 activation ID. 
-  
-    The result of this command is a 36-digit installation ID. To prepare for step 6, paste the installation ID number into Notepad, and then break it up into six groups of six numbers.
-    
-5. At the command line, run **slui.exe 4**. This launches the Windows phone activation wizard. Call the telephone number that is displayed. 
-    
-    After you have obtained the telephone number, cancel the wizard.
-    
-    > [!CAUTION]
-    > Ignore the activation ID displayed by the wizard. It is for Windows. 
-  
-6. Call the telephone number. At each prompt, enter a group of six numbers. This is the installation ID for Office 2016 that you obtained in step 4.
-    
-7. When you hear the response, write down the numbers. This is your confirmation ID.
-    
-8. At the command line, run **cscript slmgr.vbs /atp xxxxxxxxxxxx 98EBFE73-2084-4C97-932C-C0CD1643BEA7**, where  _xxxxxxxxxxxx_ is the confirmation ID that you receive by telephone (there should be 48 numbers). 
-    
-    > [!IMPORTANT]
-    > The 98EBFE73-2084-4C97-932C-C0CD1643BEA7 value is the Office 2016 activation ID. Therefore, paste this value exactly as shown. 
-  
-9. You should see a message that the confirmation ID was successfully deposited.
-    
-<a name="BKM_VerifysuccesfulactivationofhteOfficeKMSHost"> </a>
-
-## Verify successful activation of the Office KMS host computer
-
-After you set up the host computer, the KMS clients send requests for activation and increment the current count of activations. The current count must be 5 or larger before KMS clients are activated. The maximum current count is double the activation threshold, or 10. You can also check the KMS log in the Applications and Services Logs folder for event ID 12290, the ID for KMS-related activity. The KMS log records activation requests from KMS clients. Each event displays the name of the computer and the time stamp of each activation request.
-  
-### To verify that the Office 2016 KMS host key is successfully installed and activated
-
-1. Verify that the user account that is performing this procedure is a member of the Administrators group on the computer that is running KMS.
-    
-2. Start a Command Prompt with elevated privileges. For example:
-    
-  - For Windows Server 2008 R2, click **Start**, click **All Programs**, expand **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
-    
-  - For Windows Server 2012, on the **Start** screen, right-click **Command Prompt**, and then click **Run as administrator**. If **Command Prompt** is not on the **Start** screen, right-click **Computer**, click **All apps**, right-click **Command Prompt**, and then click **Run as administrator**.
-    
-3. In the **User Account Control** dialog box, click **Yes**.
-    
-4. In the **Administrator: Command Prompt** window, type the following command, and then press ENTER: 
-    
-    cscript slmgr.vbs /dlv all
-    
-    To view information only for Office 2016, specify the Activation ID after the **/dlv** parameter. For example: 
-    
-    cscript slmgr.vbs /dlv 98EBFE73-2084-4C97-932C-C0CD1643BEA7
-    
-    The following is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
-    
-  ```
-  Name: Office 16, OfficeKMSHostVL_KMS_Host edition
-  Description: Office 16, VOLUME_KMS channel
-  Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
-  Application ID: 0ff1ce16-a989-479d-af46-f275c6370663
-  Extended PID: 05426-00206-234-001162-03-1033-9200.0000-0992013
-  Installation ID: 020650770493837252929082195773527024195725809211989214
-  Use License URL: https://activation.sls.microsoft.com/SLActivateProduct/SLActiva
-  teProduct.asmx?configextension=o16
-  Validation URL: https://go.microsoft.com/fwlink/?LinkID=187557
-  Partial Product Key: KDQ2G
-  License Status: Licensed
-  Remaining Windows rearm count: 1000
-  Trusted time: 10/26/2016 9:58:33 AM
-  Key Management Service is enabled on this machine
+   ```
+   Name: Office 16, OfficeKMSHostVL_KMS_Host edition
+   Description: Office 16, VOLUME_KMS channel
+   Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
+   Application ID: 0ff1ce16-a989-479d-af46-f275c6370663
+   Extended PID: 05426-00206-234-001162-03-1033-9200.0000-0992013
+   Installation ID: 020650770493837252929082195773527024195725809211989214
+   Use License URL: https://activation.sls.microsoft.com/SLActivateProduct/SLActiva
+   teProduct.asmx?configextension=o16
+   Validation URL: https://go.microsoft.com/fwlink/?LinkID=187557
+   Partial Product Key: KDQ2G
+   License Status: Licensed
+   Remaining Windows rearm count: 1000
+   Trusted time: 10/26/2016 9:58:33 AM
+   Key Management Service is enabled on this machine
       Current count: 0
       Listening on Port: 1688
       DNS publishing enabled
       KMS priority: Normal
-  Key Management Service cumulative requests received from clients
+   Key Management Service cumulative requests received from clients
       Total requests received: 0
       Failed requests received: 0
       Requests with License Status Unlicensed: 0
@@ -210,12 +138,12 @@ After you set up the host computer, the KMS clients send requests for activation
       Requests with License Status License expired or Hardware out of tolerance: 0
       Requests with License Status Non-genuine grace period: 0
       Requests with License Status Notification: 0
-  ```
+   ```
 
-5. Close the **Administrator: Command Prompt** window. 
+
     
 ## Related topics
-[Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
-  
-[Active Directory Domain Services-based activation of Office 2016](activate-office-by-using-active-directory.md)
+
+- [Overview of volume activation of Office](plan-volume-activation-of-office.md)
+- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
 

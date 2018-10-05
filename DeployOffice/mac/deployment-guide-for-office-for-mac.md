@@ -1,47 +1,48 @@
 ---
-title: "Deployment guide for Office 2016 for Mac"
+title: "Deployment guide for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 8/28/2015
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
-ms.assetid: bacbdb72-68f9-4419-8e00-49b322756abb
-description: "Provides admins with links to information about how to deploy Office 2016 for Mac to users in their organization"
+description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
 ---
 
-# Deployment guide for Office 2016 for Mac
+# Deployment guide for Office for Mac
 
- **Summary**: Provides admins with links to information about how to deploy Office 2016 for Mac to users in their organization
+This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office for Mac in their organizations.
+
+There are three versions of Office for Mac that are referred to in this guide:
+- **Office for Mac**, which is available with any Office 365 plan that includes Office. For example, the Office 365 Enterprise E5 plan. This version is updated on a regular basis to provide new features. It also receives security and quality updates, as needed.
+- **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
+- **Office 2016 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed, until October 13, 2020.
+
+
+
   
-This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office 2016 for Mac in their organizations.
-  
-![First Mac 2016 installation screen with "Continue" highlighted](../images/0daa1e2c-48cf-4aac-961b-04331b5a4c17.png)
   
 This guide covers the following areas:
   
-- [What's new for admins in Office 2016 for Mac](what-s-new-for-admins-in-office-for-mac.md)
+- [What's new for admins in Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
     
-- [Deployment options for admins for Office 2016 for Mac](deployment-options-for-office-for-mac.md)
+- [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
     
-- [Deploy updates for Office 2016 for Mac](deploy-updates-for-office-for-mac.md)
+- [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
     
-- [Deploy preferences for Office 2016 for Mac](deploy-preferences-for-office-for-mac.md)
+- [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
     
-- [Overview of activation for Office 2016 for Mac](overview-of-activation-for-office-for-mac.md)
+- [Overview of activation for Office for Mac](overview-of-activation-for-office-for-mac.md)
     
-In addition to this guide, other information is available to help admins with Office 2016 for Mac deployments, including the following:
+In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following:
   
-- [Office for Mac](https://products.office.com/mac), for purchasing information
+- [System requirements for Office](https://products.office.com/office-system-requirements), for installation requirements, such as supported operating systems.
+
+- [Office for Mac](https://products.office.com/mac), for purchasing information.
     
-- [Office Support](https://support.office.com), for help on how to use Office 2016 for Mac
-    
-- [Outlook 2016 for Mac Administrator's Guide](https://technet.microsoft.com/library/fbb0c902-c67c-494e-9cfb-ddc317477f26.aspx), for information on how to deploy Outlook 2016 for Mac
-    
-- [Office for Mac blog](https://blogs.office.com/mac/), for news about Office for Mac
-    
+- [Office Help & Training](https://support.office.com), for help on how to use Office for Mac.
+        
 

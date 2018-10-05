@@ -3,7 +3,6 @@ title: "Overview of update channels for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -11,12 +10,8 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
-ms.custom:
-- LIL_Placement
-- Ent_Office_ProPlus
-ms.assetid: 9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4
-
-description: "One of the benefits of Office 365 ProPlus is that Microsoft can provide new features for Office apps on a regular basis, through monthly updates. However, as the admin who deploys Office 365 ProPlus to the users in your organization, you might want to have more control over how often your users get these new features. For the Office 2016 version of Office 365 ProPlus, Microsoft provides you three options, called update channels, to control how often Office 365 ProPlus is updated with new features. Here's an overview of the three options."
+ms.custom: Ent_Office_ProPlus
+description: "Provides IT Pros with an overview of the update channels for Office 365 ProPlus, including Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted)"
 ---
 
 # Overview of update channels for Office 365 ProPlus
@@ -61,7 +56,7 @@ If your organization doesn't want to deploy the latest features of Office right 
   
 A Semi-Annual Channel with new features is expected to be released twice a year, in January and July. New features aren't added to Semi-Annual Channel at any other time. The features that are included in Semi-Annual Channel are features that have been released previously in Monthly Channel.
   
-In the four months prior to a new Semi-Annual Channel feature release, Microsoft provides builds of the upcoming release so that pilot users and application compatibility testers in your organization can work with the upcoming release. These builds are provided through the [Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) update channel.
+In the four months prior to a new Semi-Annual Channel feature release, Microsoft provides builds of the upcoming release so that pilot users and application compatibility testers in your organization can work with the upcoming release. These builds are provided through the [Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) update channel and provide the same features and functionality that will be in the next release of Semi-Annual Channel that includes new features.
   
 After the January and July releases of Semi-Annual Channel, additional security updates, if needed, can also be added to Semi-Annual Channel. A release of Semi-Annual Channel with these updates usually occurs on the second Tuesday of the month. If there is a critical non-security issue that needs to be fixed in Semi-Annual Channel, that non-security update will also be included in a Semi-Annual Channel release.
 
@@ -69,7 +64,7 @@ After the January and July releases of Semi-Annual Channel, additional security 
 ## Semi-Annual Channel (Targeted) for Office 365 ProPlus
 
 
-To help your organization prepare for a Semi-Annual Channel release, Microsoft provides Semi-Annual Channel (Targeted). The primary purpose of this update channel is to give pilot users and application compatibility testers in your organization a chance to work with the upcoming Semi-Annual Channel release. During this time, which is about four months, you might identify possible issues that you need to fix with your line-of-business applications, add-ins, or macros or that you want Microsoft to fix.
+To help your organization prepare for a Semi-Annual Channel release, Microsoft provides Semi-Annual Channel (Targeted). The primary purpose of this update channel is to give pilot users and application compatibility testers in your organization a chance to work with the upcoming Semi-Annual Channel release. During this time, which is about four months, you might identify possible issues that you need to fix with your line-of-business applications, add-ins, or macros or that you want Microsoft to fix. Semi-Annual Channel (Targeted) releases provide the same features and functionality that will be in the next release of Semi-Annual Channel that includes new features.
   
 A Semi-Annual Channel (Targeted) with new features is expected to be released twice a year, in March and September. New features aren't added to Semi-Annual Channel (Targeted) at any other time. The features that are included in Semi-Annual Channel (Targeted) are features that have been released previously in Monthly Channel.
   
@@ -126,7 +121,7 @@ Semi-Annual Channel is the default update channel for Office 365 ProPlus. But yo
     
 - Provide your application compatibility testers with Semi-Annual Channel (Targeted) so that they can test that the finance applications will work with the next Semi-Annual Channel feature release.
     
-To configure the update channel for an Office 365 ProPlus installation, you can use the latest version of the [Office Deployment Tool](http://go.microsoft.com/fwlink/p/?LinkID=626065) or use the [Group Policy Administrative Templates files (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030) for Office 2016.
+To configure the update channel for an Office 365 ProPlus installation, you can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) or use the [Group Policy Administrative Templates files (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030) for Office 2016.
   
 If you use the Office Deployment Tool, you can use the Channel attribute in the configuration.xml file. The Channel attribute can be specified in the Add element or the Update element. The relevant values are Monthly, Broad, and Targeted. For example, if you want to download and install the Monthly Channel of Office 365 ProPlus, your configuration.xml file would look like the following example. 
   
@@ -157,15 +152,16 @@ Here is some additional information that might be useful to know as you determin
 - If you have Visio Pro for Office 365 or Project Online Desktop Client installed on the same computer as Office 365 ProPlus, they all must use the same update channel. You can't have a mix of update channels on the same computer. 
 
 - These update channels only apply to installations on computers running Windows.
+
+- We recommended that you use the most current version of Semi-Annual Channel. But, if you have a specific business need to delay receiving a feature update from Semi-Annual Channel in January or July, you can configure Office to not receive that feature update, but still receive the most current security updates for the previous version. For more information on how to do that, see [Delay receiving feature updates from Semi-Annual Channel](delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md). For information about which versions of Semi-Annual Channel are supported and until when, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
     
-[!INCLUDE [LinkedIn Learning Info](common/office/linkedin-learning-info.md)]
 
 
 ## Related topics
 
-[Version and build numbers of update channel releases](https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+[Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
   
 [Change management for Office 365 clients](change-management-for-office-365-clients.md)
   
-[Office 365 client update channel releases](https://go.microsoft.com/fwlink/?LinkId=626090)
+[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
 

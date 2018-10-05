@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: f99f8cd0-e648-4834-8f45-f5637351899d
 description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
 ---
 
@@ -24,10 +23,12 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
 - [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md)
  
 - [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
+
+- [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md)
   
 - [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
   
-- [Microsoft FastTrack for Office](http://fasttrack.microsoft.com/office)
+- [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
   
 ## Deploy
 
@@ -37,10 +38,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-
-- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
-
+- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 
 ## Manage updates
@@ -54,24 +52,9 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 - [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 
-- [Version and build numbers of update channel releases] (https://support.office.com/article/ae942449-1fca-4484-898b-a933ea23def7)
+- [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
 
-## Best practices
-
-Review the recommended guidance and real-world examples from Microsoft about how to deploy and manage Office 365 ProPlus.
-
-- [Best practices: Assessing your infrastructure](best-practices/best-practices-assessing-your-infrastructure.md)
-
-- [Best practices: Planning your deployment of Office 365 ProPlus](best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md)
-
-- [Best practices: Deploying Office 365 ProPlus](best-practices/best-practices-deploying-office-365-proplus.md)
- 
-- [Best practices: Managing updates in Office 365 ProPlus](best-practices/best-practices-managing-updates-in-office-365-proplus.md)
-
-- [Best practices: Recommended deployment scenarios](best-practices/best-practices-recommended-deployment-scenarios.md)
-
- 
 ## Reference
 
 Learn about the Office Deployment Tool (ODT), other deployment options, and activation.

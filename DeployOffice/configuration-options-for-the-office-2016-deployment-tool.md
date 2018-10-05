@@ -3,7 +3,6 @@ title: Configuration options for the Office Deployment Tool
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 3/25/2018
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
@@ -23,9 +22,9 @@ With the Office Deployment Tool (ODT), you can download and deploy Office 365 Pr
 ## Example of a standard configuration file
 
 The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
-  
+
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.  
-    
+
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
 
 ```
@@ -62,9 +61,9 @@ This configuration file includes the most-commonly used elements and attributes,
 |Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
-   
+
 ## Add element
-    
+
 Defines the products and languages to download or install
 
 ### Example
@@ -74,7 +73,6 @@ Defines the products and languages to download or install
      OfficeClientEdition="32"
      Channel="Broad" 
      Version="16.0.8201.2193"
-     ForceUpgrade="FALSE">
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
     <Language ID="ja-jp" />
@@ -88,7 +86,9 @@ Defines the products and languages to download or install
 
 ### SourcePath attribute (part of Add element) 
 
-Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool.  
+Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool. 
+
+Note that when you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
 Example values:
 
@@ -146,15 +146,6 @@ Example values:
 </Add>  
 ```
 
-### ForceUpgrade attribute (part of Add element) 
-
-Optional. When set to **True**, ForceUpgrade automatically upgrades from Office 365 ProPlus 2013 to Office 365 ProPlus 2016 without asking for input from the user. This attribute is often used alongside the Display element to hide the user interface during installation. Default is **False**. 
-
-Allowed values: 
-
-- ForceUpgrade="TRUE"
-- ForceUpgrade="FALSE"
-
 ### AllowCdnFallback attribute (part of Add element) 
 
 Optional. To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
@@ -165,7 +156,7 @@ Allowed values:
 
 - AllowCdnFallback="True"
 - AllowCdnFallback="False"
- 
+
 #### Example 
 
 ```
@@ -205,7 +196,7 @@ You can also use the Product element to add language packs to existing installat
 Required. Defines the ID of the product to download or install. 
 
 Example values:
- 
+
 - ID="O365ProPlusRetail"  
 - ID="VisioProRetail"
 - ID="ProjectProRetail"
@@ -215,7 +206,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 ## Language element
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
- 
+
 To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 ### Example
@@ -247,8 +238,11 @@ Defines the ID of the language to download or install. Required.
 - ID="en-us"
 - ID="ja-jp"
 - ID="MatchOS"
+- ID="MatchPreviousMSI"
 
-For a list of all languages, see  [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).  
+For a list of all languages, see  [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx). 
+
+For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
 ### Fallback attribute (part of Language element)
 
@@ -298,7 +292,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed. 
+Defines which Office 365 ProPlus products should not be installed. Note that OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).  
 
 ### Example
 
@@ -317,7 +311,7 @@ Defines which Office 365 ProPlus products should not be installed.
 ### ID attribute (part of ExcludeApp element)
 
 Required. Defines the ID of the product that should not be installed.
-  
+
 Allowed values:
 
 - ID="Access"
@@ -374,7 +368,6 @@ Defines certain Office behaviors and properties.
 <Property Name="SCLCacheOverride" Value="1" />
 <Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
 <Property Name="PinIconsToTaskbar" Value="TRUE"/>
-
 ```
 
 ### Name attribute (part of Property element)
@@ -544,7 +537,7 @@ Example values:
 
 - UpdatePath="\\\server\share\"
 - UpdatePath="C:\Preload\Office"
-- UpdatePath="http://internalApps/Office/"
+- UpdatePath="<http://internalApps/Office/>"
 
 ### TargetVersion attribute (part of Updates element)
 
@@ -591,12 +584,60 @@ Allowed values:
 - Channel="Broad"
 - Channel="Targeted"
 
+
+## RemoveMSI element
+
+Specifies whether Windows Installer (MSI) versions of Office, Visio, and Project are uninstalled from the computer prior to the installation of the specified product, such as Office 365 ProPlus.
+
+For more information about using RemoveMSI and its attributes, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+
+### All attribute (part of RemoveMSI element)
+
+If set to True, any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer.
+
+Optional. 
+
+Allowed values:
+- RemoveMSI All="True"
+
+
+### IgnoreProduct attribute (part of RemoveMSI element)
+
+If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer. Use instead of the All attribute.
+
+Optional.
+
+Example values:
+- IgnoreProduct ID="VisPro"
+- IgnoreProduct ID="PrjPro"
+
+
+## AppSettings element
+
+Defines application settings for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application settings, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application settings. Note that this tool is still in preview and is subject to change. 
+
+For more details on application settings, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+
+Optional.
+
+### Example
+
+```
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\excel\security"
+          Name="vbawarnings" 
+          Value="3" 
+          Type="REG_DWORD" 
+          App="excel16" 
+          Id="L_VBAWarningsPolicy" />
+  </AppSettings>
+```
 ## Related topics
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
-  
-    
-    
+
+
+
 

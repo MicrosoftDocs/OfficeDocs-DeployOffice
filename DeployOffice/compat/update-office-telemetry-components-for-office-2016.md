@@ -3,18 +3,19 @@ title: "Update Office Telemetry components for Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 3/10/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-ms.assetid: 2ab315c1-332a-4bb8-8a23-ec1396e4c3cf
 description: "Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016."
 ---
 
 # Update Office Telemetry components for Office 2016
+
+> [!NOTE]
+> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
  **Summary:** Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016. 
   
@@ -36,9 +37,9 @@ Here are the procedures for uninstalling the old telemetry processors, installin
 
 1. On each computer where telemetry processor is installed, uninstall telemetry processor from the Windows Control Panel.
     
-  - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+   - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
     
-  - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
+   - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
     
 2. In the list of programs, select **Microsoft Office Telemetry Processor**. 
     
@@ -84,11 +85,11 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
     
 2. On the **Database Settings** page, do the following: 
     
-  1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
+   1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
     
-  2. Select **Connect** to connect to the SQL Server computer. 
+   2. Select **Connect** to connect to the SQL Server computer. 
     
-  3. Select the telemetry database in **SQL database**, and then select **Next**.
+   3. Select the telemetry database in **SQL database**, and then select **Next**.
     
 3. If you are prompted to update the database, select **Yes**. You'll only be prompted to do this on the first computer where you run the **Office Telemetry Processor settings** wizard. 
     

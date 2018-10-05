@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 4/2/2018
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: 
 - Ent_O365
@@ -44,8 +44,8 @@ Review your network capability, including bandwidth and distribution of client d
 
 - Installation files for Office 365 ProPlus are at least 1.6 GB for the core files, plus at least 250 MB for each language deployed. 
 - Client devices require Internet access to activate their Office 365 ProPlus subscription, and then must connect at least once every thirty days to verify their subscription. 
-- The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
-- Office 365 updates vary in size, but you can review recent download sizes [here](https://support.office.com/article/Download-sizes-approximate-for-channel-updates-to-Office-365-ProPlus-190f41e4-064d-486b-9c95-db08f973687c). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
+- The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Office 365 updates vary in size, but you can review recent download sizes [here](https://docs.microsoft.com/officeupdates/download-sizes-office365-proplus-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the Internet and your client devices, including those in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
 
 ## Step 4 - Assess application compatibility

@@ -21,7 +21,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/getstarted_office.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-GetStarted-400x140.svg" alt="A pedestrian symbol and a gear symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -40,7 +40,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/office_install.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-Deploy-400x140.svg" alt="A box within a box and an arrow - deploy symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -53,13 +53,13 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="http://fasttrack.microsoft.com/office">
+                                <a href="https://fasttrack.microsoft.com/office">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/fast_track.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-FastTrack-400x140.svg" alt="A checklist over a gear symbol, with a green checkmark" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -78,7 +78,7 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/deployoffice/manage_updates.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-ManageUpdates-400x140.svg" alt="A computer with a download arrow on the screen" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -97,11 +97,11 @@ description: Office deployment
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/DeployOffice/images/office-2016-for-mac.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-Mac-400x140.svg" alt="A book symbol and a computer symbol with a green checkmark on it" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office 2016 for Mac</h3>
+                                                    <h3>Office for Mac</h3>
                                                     <p>Find guidance about deploying Office to Macs in your organization.</p>
                                                 </div>
                                             </div>
@@ -110,25 +110,24 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/office2016/what-s-new-for-admins-in-office-2016">
+                                <a href="/DeployOffice/office2019/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/DeployOffice/images/office-2016.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/Office-2016-400x140.svg" alt="A pedestrian symbol with a question mark, lightbulb, and check mark symbol" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office 2016</h3>
+                                                    <h3>Office 2019</h3>
                                                     <p>Find guidance about deploying the volume licensed version of Office.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                            </li>                            
-                        </ul>
+                            </li><br/>                        </ul>
                     </li>
                 </ul>
             </li>

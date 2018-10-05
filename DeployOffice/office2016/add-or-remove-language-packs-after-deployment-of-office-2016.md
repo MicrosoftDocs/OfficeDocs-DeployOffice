@@ -82,9 +82,9 @@ Although all applications in the Office 2016 use a shared set of registry data t
     
 4. To view the UI language, view the following registry key values and refer to [Language identifiers](language-identifiers-and-optionstate-id-values-in-office-2016.md#BKMK_LanguageIdentifiers).
     
-  - **HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\HelpLanguage**
+   - **HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\HelpLanguage**
     
-  - **HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\UILanguage**
+   - **HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\UILanguage**
     
 5. To view the fallback languages, view the registry key value for **HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\UIFallback**. To identify the language, see [Language identifiers and OptionState Id values in Office 2016](language-identifiers-and-optionstate-id-values-in-office-2016.md).
     
@@ -121,16 +121,16 @@ In this case, setup installs Russian language elements on any computer that has 
     
     For example, to add the Russian language pack, the line should resemble the following example: 
     
-  ```
-  <AddLanguage Id="ru-ru" />
-  ```
+   ```
+   <AddLanguage Id="ru-ru" />
+   ```
 
 6. If you add more than one language in Config.xml, you must specify one language as the language for the Shell UI. For example:
     
-  ```
-  <AddLanguage Id="ru-ru" ShellTransform="yes" />
-  <AddLanguage Id="en-us" />
-  ```
+   ```
+   <AddLanguage Id="ru-ru" ShellTransform="yes" />
+   <AddLanguage Id="en-us" />
+   ```
 
     You must specify a ShellUI language, even though setup does not change the ShellUI language that was set for the initial installation.
     
@@ -197,17 +197,17 @@ You must follow these steps for each language that you want to remove.
     
     The line should resemble the following example: 
     
-  ```
-  <Display Level="basic" CompletionNotice="yes" SuppressModal="yes" AcceptEula="yes" />
-  ```
+   ```
+   <Display Level="basic" CompletionNotice="yes" SuppressModal="yes" AcceptEula="yes" />
+   ```
 
 5. Find the \<AddLanguage\> element. If it is in the file, comment out the line by adding opening  \<\!-- and closing  --> tags around the element. 
     
     The line should resemble the following example:
     
-  ```
-  <!-- <AddLanguage Id="ru-ru" /> -->
-  ```
+   ```
+   <!-- <AddLanguage Id="ru-ru" /> -->
+   ```
 
 6. Add the \<RemoveLanguage\> element. 
     
@@ -215,9 +215,9 @@ You must follow these steps for each language that you want to remove.
     
     For example, to remove the Russian language pack, the line should resemble the following example: 
     
-  ```
-  <RemoveLanguage Id="ru-ru" />
-  ```
+   ```
+   <RemoveLanguage Id="ru-ru" />
+   ```
 
 8. Save the Config.xml file. 
     
