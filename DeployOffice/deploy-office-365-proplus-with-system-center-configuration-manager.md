@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 4dd6a023-0a5d-4dc9-9bad-ff70e01840b8
 description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)."
 ---
 

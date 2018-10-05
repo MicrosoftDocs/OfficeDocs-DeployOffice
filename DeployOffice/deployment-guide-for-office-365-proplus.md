@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: f99f8cd0-e648-4834-8f45-f5637351899d
 description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
 ---
 
@@ -39,10 +38,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (Current Branch)](https://docs.microsoft.com/en-us/sccm/sum/deploy-use/manage-office-365-proplus-updates)
-
-- [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
-
+- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
 
 
 ## Manage updates

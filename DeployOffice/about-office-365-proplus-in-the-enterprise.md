@@ -3,17 +3,15 @@ title: "About Office 365 ProPlus in the enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 4/20/2017
 ms.audience: ITPro
 ms.topic: concetpual
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 9f11214c-911d-4e3c-9993-a566f12b1a68
-description: "Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online."
+description: "Provides Office admins with an overivew of Office 365 ProPlus, including information about deploying and licensing."
 ---
 
 # About Office 365 ProPlus in the enterprise
@@ -21,7 +19,9 @@ description: "Office 365 ProPlus is a version of Office that's available through
 Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
-> Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3. <br/><br/> Project and Visio aren't included with Office 365 ProPlus, but are available from other Office 365 plans.<br/><br/> For more information about Office 365 plans, see [https://products.office.com](https://products.office.com) and the[Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961). 
+> - Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3.
+> - Project and Visio aren't included with Office 365 ProPlus, but are available from other Office 365 plans.
+> - For more information about Office 365 plans, see [https://products.office.com](https://products.office.com) and the [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). 
   
 ## Office 365 ProPlus is similar to other versions of Office
 <a name="BKMK_Similar"> </a>
@@ -43,7 +43,7 @@ Office 365 ProPlus is similar to other versions of Office that you can deploy to
 ## What's different about Office 365 ProPlus?
 <a name="BKMK_Different"> </a>
 
-Even though Office 365 ProPlus is a lot like other versions of Office, there are differences, including for [Deployment differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Deployment) and[Licensing differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Licensing). 
+Even though Office 365 ProPlus is a lot like other versions of Office, there are differences, including for [Deployment differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Deployment) and [Licensing differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Licensing). 
   
 The most significant difference is that Office 365 ProPlus is updated regularly, as often as monthly, with new features, unlike non-subscription versions of Office. For a list of new features, see [What's new in Office 365](https://support.office.com/en-us/article/What-s-new-in-Office-365-95c8d81d-08ba-42c1-914f-bca4603e1426).
   
@@ -76,14 +76,13 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
     
 - Users can store the files they create with Office 365 ProPlus on their local computers or elsewhere on your network, such as a SharePoint site. Office 365 also provides cloud-based file storage options,
     
-- Office 365 ProPlus isn't the same as [Office Online](https://go.microsoft.com/fwlink/p/?LinkID=303963). Office Online lets users open Word, Excel, PowerPoint, or OneNote documents in a web browser. Office Online is included with all Office 365 plans.
+- Office 365 ProPlus isn't the same as [Office Online](https://docs.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description). Office Online lets users open Word, Excel, PowerPoint, or OneNote documents in a web browser. Office Online is included with all Office 365 plans.
     
-- Read the [Office 365 Service Descriptions](https://go.microsoft.com/fwlink/p/?LinkID=303961) to learn more about what's included in Office 365.
+- Read the [Office 365 Service Descriptions](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365.
     
 ## Related topics
-[Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
-  
-[Compare enterprise plans for Office 365](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans)
-  
-[Purchase Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=329114)
+
+- [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
+- [Compare enterprise plans for Office 365](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans)
+- [Purchase Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=329114)
 
