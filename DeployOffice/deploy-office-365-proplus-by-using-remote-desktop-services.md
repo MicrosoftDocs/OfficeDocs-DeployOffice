@@ -41,15 +41,11 @@ The following is a list of prerequisites that you need to deploy Office 365 ProP
 
 - Any supported version of Office 365 ProPlus.
 
-- A supported version of RDS, which includes any of the following:
+- A supported version of RDS or Windows with Office 365 ProPlus, which includes any of the following:
 
-  - Windows Server 2008 R2 
-
-  - Windows Server 2012 
-
-  - Windows Server 2012 R2 
-
+  - Windows 8.1
   - Windows Server 2016
+  - Currently supported Windows 10 SAC release
 
 - Reliable connectivity between the shared computer and the Internet.
 
@@ -92,7 +88,7 @@ At this point, users can connect to the RD Session Host server and use Office 36
 ## Install Office 365 ProPlus on a shared virtual machine
 <a name="VM"> </a>
 
-In this scenario, you install Office 365 ProPlus as part of an operating system image, such as one running Windows 8.1. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
+In this scenario, you install Office 365 ProPlus as part of a client operating system image, such as one running Windows 8.1 or Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
 
 > [!NOTE]
 > You can also use RDS to assign a virtual machine to a specific user. RDS calls that a personal virtual desktop. In that scenario, you don't use shared computer activation, because the virtual machine isn't shared among multiple users. 
