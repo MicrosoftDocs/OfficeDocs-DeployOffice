@@ -26,7 +26,9 @@ This article lists significant updates to tehcnical guidance for deploying Offic
 
 ## October 2018
 
-Published [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+| Article                                                                                                                                                      | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md) (new) | Best practice recommendations for Office administrators who want to deploy Office 365 ProPlus with Configuration Manager        |
 
 ## September 2018
 
@@ -51,6 +53,8 @@ You can now  use the Office Deployment Tool to apply application settings to Off
 
 ## June 2018
 
-Published two articles for planning your deployment of Office 365 ProPlus: [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/assess-office-365-proplus) and [Plan your enterprise deployment of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/plan-office-365-proplus).
-
+| Article                                                                                                                                              | Description                                                                                                                                                                     |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/assess-office-365-proplus) (new)) | Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization.                                          |
+| [Plan your enterprise deployment of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/plan-office-365-proplus) (new)                       | How to plan and implement best practices for deploying Office and managing updates. |
 
