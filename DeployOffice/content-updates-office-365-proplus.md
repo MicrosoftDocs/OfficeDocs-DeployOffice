@@ -26,7 +26,8 @@ This article lists significant updates to tehcnical guidance for deploying Offic
 
 ## October 2018
 
-Published [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+Published a new article with best practices for deploying Office with Configuration Mangaer.
+- [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
 
 ## September 2018
 
@@ -43,14 +44,20 @@ Updated articles to support Office 2019:
 
 ## August 2018
 
-Updated an article on using the Readiness Toolkit to assess application compatibility for Office 365 ProPlus. Updated content in the article covers some new functionality, including the ability to conceal folder & file name info collected in the scan and the ability to capture add-in usage info. 
+Updated an article on using the Readiness Toolkit to assess application compatibility for Office 365 ProPlus. : Updated content in the article covers some new functionality, including the ability to conceal folder & file name info collected in the scan and the ability to capture add-in usage info. 
+- Updated [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)
+- 
 
 ## July 2018
 
-You can now  use the Office Deployment Tool to apply application settings to Office 365 ProPlus as part of an initial deployment or as an update to existing installations of Office. For more details, see [Apply application settings to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+You can now  use the Office Deployment Tool to apply application settings to Office 365 ProPlus as part of an initial deployment or as an update to existing installations of Office. 
+- [Apply application settings to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool#apply-application-settings-to-office-365-proplus) 
+- [Apply application settings to an existing installation of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
 ## June 2018
 
-Published two articles for planning your deployment of Office 365 ProPlus: [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/assess-office-365-proplus) and [Plan your enterprise deployment of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/plan-office-365-proplus).
+Published two articles with best practices for planning your deployment of Office 365 ProPlus.
+- [Assess your environment and requirements for deploying Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/assess-office-365-proplus) 
+- [Plan your enterprise deployment of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/plan-office-365-proplus).
 
 
