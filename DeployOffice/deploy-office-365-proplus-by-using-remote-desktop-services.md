@@ -3,17 +3,13 @@ title: "Deploy Office 365 ProPlus by using Remote Desktop Services"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/29/2017
 ms.audience: ITPro
 ms.topic: get-started-article
-ms.service: o365-proplus-itpro
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: af9d7621-8c2c-4181-84b4-27778b1e7920
-
 description: "If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Office 365 ProPlus on those computers. But, you have to use the Office Deployment Tool and enable shared computer activation to do the installation."
 ---
 
