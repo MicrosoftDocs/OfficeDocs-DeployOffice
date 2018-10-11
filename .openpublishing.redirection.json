@@ -1,6 +1,11 @@
 { 
   "redirections": [ 
     {
+        "source_path": "DeployOffice/proofing-tools-for-office-365-proplus.md",
+        "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus",
+        "redirect_document_id": true
+    },
+    {
       "source_path": "DeployOffice/choose-how-to-deploy-office-365-proplus.md",
       "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
       "redirect_document_id": true

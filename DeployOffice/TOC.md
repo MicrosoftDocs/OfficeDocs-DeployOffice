@@ -30,7 +30,6 @@
 ## [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 ## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 ## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
-## [Proofing Tools](proofing-tools-for-office-365-proplus.md)
 ## [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
 ## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
 ## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
