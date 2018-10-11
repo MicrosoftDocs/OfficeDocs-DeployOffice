@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
 description: "Configuration options for the Office Deployment Tool"
 ---
 
@@ -123,6 +122,8 @@ Allowed values:
 - Channel="Monthly"
 - Channel="Broad"
 - Channel="Targeted"
+
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
 
 ### DownloadPath attribute (part of Add element) 
 
@@ -584,6 +585,7 @@ Allowed values:
 - Channel="Broad"
 - Channel="Targeted"
 
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
 
 ## RemoveMSI element
 
