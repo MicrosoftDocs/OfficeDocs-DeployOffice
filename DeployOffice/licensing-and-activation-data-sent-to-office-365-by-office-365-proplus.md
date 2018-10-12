@@ -65,5 +65,5 @@ For a description of the data sent, see the Activation section of the [Windows 8
 ## Related topics
 [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
   
-[Office 365 URLs and IP address ranges](https://go.microsoft.com/fwlink/p/?linkid=389789)
+[Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
