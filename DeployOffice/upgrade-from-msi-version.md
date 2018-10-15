@@ -81,11 +81,14 @@ The following are some additional details about using MatchPreviousMSI in your c
 
 We recommend that you uninstall any previous versions of Office, including Visio and Project, before installing the newer version. But, in a few cases, such as for application compatibility testing, you might need to keep a previous version installed for a limited time while you transition to the new version.
 
-To keep a particular Office product, you add an IgnoreProduct line to your configuration.xml file and you specify its product ID. Some examples of valid IDs are the following:
-- VisStd
-- VisPro
+To keep a particular Office product, you add an IgnoreProduct line to your configuration.xml file and you specify its product ID. 
+
+The following are examples of supported IDs for Project and Visio:
 - PrjStd
 - PrjPro
+- VisStd
+- VisPro
+
 
 > [!NOTE]
 > The product ID is the Setup ID that is found in the Setup.xml file in the product.WW folder of the installation files for your previous version of Office. For example, for Office Professional Plus 2010, the Setup.xml file is found in the ProPlus.WW folder. 
@@ -112,7 +115,16 @@ Here’s an example of a configuration.xml file that installs the 64-bit Semi-An
 ## Additional information about using RemoveMSI
 
 The following are some additional details about using the RemoveMSI element in your configuration.xml file.
-- You can also use these settings if you’re installing Visio Pro for Office 365, Project Online Desktop Client, or Office 365 Business. Office 365 Business is the version of Office that comes with some Office 365 plans, such as Business Premium.
+- You can also use these settings if you’re installing any of the following:
+   - Project Online Desktop Client
+   - Visio Online Plan 2, which is the subscription version of Visio that was previously named Visio Pro for Office 365.
+   - Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium.
+   - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
+- Installations of the following products will also be removed unless you use IgnoreProduct:
+   - SharePoint Designer, whose product ID is SharePointDesigner.
+   - InfoPath, whose product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
+   - Lync 2013 or later. Lync 2010 can't be removed using the RemoveMSI element.
+   - Office products that were installed separately and not as part of an Office suite. For example, a standlone installation of Access.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
 - Some previous versions of Office, Visio, and Project must be uninstalled before installing Office 365 ProPlus. For example, Office Professional Plus 2016. If they aren’t uninstalled beforehand, the installation of Office 365 ProPlus will fail. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
 - A reboot is required to finish uninstalling the Windows Installer (MSI) versions of Office, but the reboot isn’t enforced. You can reboot after the Office 365 ProPlus installation is finished.
