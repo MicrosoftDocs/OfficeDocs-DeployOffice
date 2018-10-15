@@ -125,7 +125,7 @@ Allowed values:
 
 Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
 
-If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019)
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element) 
 
@@ -589,7 +589,7 @@ Allowed values:
 
 Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted). 
 
-If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019)
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ## RemoveMSI element
 
