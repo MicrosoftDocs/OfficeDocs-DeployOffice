@@ -125,6 +125,8 @@ Allowed values:
 
 Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
 
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019)
+
 ### DownloadPath attribute (part of Add element) 
 
 Optional. Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  
@@ -585,7 +587,9 @@ Allowed values:
 - Channel="Broad"
 - Channel="Targeted"
 
-Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted). 
+
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019)
 
 ## RemoveMSI element
 
