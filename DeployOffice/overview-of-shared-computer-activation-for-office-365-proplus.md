@@ -19,11 +19,17 @@ description: "Provides information for IT Pros about shared computer activation 
 > [!IMPORTANT]
 > This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
-Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For example, several nurses at a hospital connect to the same remote server to use their applications or a group of workers share a computer at a factory.
-  
+Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios for using shared computer activation:
+
+- Threee workers at a factory share a computer, each using that computer to use Office during their eight hour shift.
+- Fifteen nurses at a hospital use five different computers throughout the day to use Office.
+- Five employees connect remotely to the same computer to run Office.
+- Mutliple employees use a computer in a conference room or some other public space in the company to run Office.
+
+
 The most common shared computer activation scenario is to [deploy Office 365 ProPlus to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office 365 ProPlus programs, such as Word or Excel, at the same time on the remote computer.
   
-Shared computer activation is used only for situations where multiple users share the same computer. If you have users who are assigned individual computers, you [use product key activation for Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md).
+Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md).
   
 <a name="Enable"> </a>
 
