@@ -37,6 +37,43 @@ Additional language tools that you can install for Click-to-Run products include
     
 For information about how to use the Configuration.xml file to specify language installation options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md). 
 
+## Add languages to existing installations of Office 365 ProPlus
+
+After installing Office, you can use the ODT to install additional language packs for Office. To do so, follow the steps for installing Office with the ODT, but use a new configuration file that uses “LanguagePack” as the Product ID and that indicates which languages to add. 
+
+By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. 
+
+**Step 1: Download the Office installation files in the languages you want to add**
+
+If Office in your organization is updated from a local source, you must download the Office installation files for the languages you want to add.
+
+**Step 2: Create the configuration file for adding the language packs**
+
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then ensuring that the OfficeClientEdition and language IDs are what you want.
+
+In this example, the configuration file installs the French and Japanese language packs:
+
+```
+<Configuration>
+  <Add OfficeClientEdition="32">
+    <Product ID="LanguagePack">
+      <Language ID="fr-fr" />
+      <Language ID="ja-jp" />
+    </Product>
+  </Add>  
+</Configuration>
+```
+
+For a list of all languages, see [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).
+
+**Step 3: Run the ODT executable in configure mode**
+
+From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you just saved. In the following example, the configuration file is named **installlanguage.xml**:
+
+ `setup.exe /configure installlanguage.xml`
+
+You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
+
 ## Install proofing tools
 
 Each language version of Office 365 ProPlus includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
@@ -49,8 +86,6 @@ To install just the proofing tools, you can use the same tools you used to deplo
 > If you deploy languages from a local source (as shown in the example below), you must download the proofing tools to that source first. To do that, use the ODT with the configuration file, but run it in download mode. For more details on how to do that, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus). Whenever you use a local source, you can use the Office CDN as a backup source for language packs and proofing tools by including the "AllowCdnFallback" attribute in the configuration file, as shown in the example. 
 
 For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
-
-
 
 ### Example
 
