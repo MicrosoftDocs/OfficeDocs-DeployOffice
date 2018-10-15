@@ -24,7 +24,7 @@ Shared computer activation lets you to deploy Office 365 ProPlus to a computer i
 - Three workers at a factory share a computer, each worker using Office on that computer during their eight-hour shift.
 - Fifteen nurses at a hospital use Office on five different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
-- Employees can use Office on a computer that's located in a conference room or some other public space in the company.
+- Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
 
 
 The most common shared computer activation scenario is to [deploy Office 365 ProPlus to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office 365 ProPlus programs, such as Word or Excel, at the same time on the remote computer.
