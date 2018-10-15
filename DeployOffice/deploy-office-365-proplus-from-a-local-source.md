@@ -66,14 +66,14 @@ After downloading the file, run the self-extracting executable file, which conta
 To download and deploy Office 365 ProPlus to the pilot group, you can use the [Office Customization Tool](https://config.office.com/) to create a configuration file that defines the appropriate settings for the ODT. 
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend the following options:
-- **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
- - **Languages:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
- - **Installation channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
- - **Installation settings:** Select Local source, and type "\\\Server\Share\O365\SACT" for the source path. Office will be downloaded to and then installed from **\\\server\share\O365\SACT** on your network 
+- **Products:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
+ - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+ - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
+ - **Installation:** Select Local source, and type "\\\Server\Share\O365\SACT" for the source path. Office will be downloaded to and then installed from **\\\server\share\O365\SACT** on your network 
  - **Updates:** To update your client devices automatically, choose **CDN** and **Automatically check for updates**.
  - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
  - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
- - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+ - **Application preferences:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 7. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SACT.xml** in the **\\\Server\Share\O365** folder.
 
 Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).

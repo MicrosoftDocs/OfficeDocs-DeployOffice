@@ -17,17 +17,18 @@ description: "The Office Customization Tool (preview) creates the configuration 
 
 # Overview of the Office Customization Tool for Click-To-Run (preview)
 
-The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and settings for Office applications. After creating the configuration files, you can use them with the Office Deployment Tool or another software distribution solution to deploy a customized version of Office. 
+The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the Office Deployment Tool or another software distribution solution to deploy a customized version of Office. 
 
 > [!NOTE] 
 > If you use System Center Configuration Manager (Current Branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more details, see [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
-
-As part of the Office Customization Tool, you can define application settings for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these settings, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
-
  
+## Define application preferences
+
+As part of the Office Customization Tool, you can define application prefences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+
 ## Get started
 
-To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English edition of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German edition of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the Office Deployment Tool to deploy Office in your organization. 
+To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English version of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German version of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the Office Deployment Tool or another software distribution solution to deploy Office in your organization. 
 
 The rest of this article covers this procedure in more detail. For more details on the settings for the Office Customization Tool, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
@@ -39,10 +40,10 @@ If you're not an enterprise administrator and are looking to install Office 365 
   
 ## Create a configuration file
 
-Follow these steps to create a configuration file that can be used by the Office Deployment Tool to install Office.
+Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office.
 
-1. Go to [Office Customization Tool for Click-to-Run](https://config.office.com/).
-2. In the **General** settings, type your organization name and a description for this particular configuration. For example, you might want to use this file to install 64-bit version of Office in the Finance department.
+1. Go to [Office Customization Tool](https://config.office.com/).
+2. In the **General** settings, type your organization name and a description for this particular configuration. For example, you might want to use this file to install the 64-bit version of Office for your finance department.
 3. In the **Product and releases** settings, choose the architecture you want to deploy. Each configuration file can only deploy one architecture. For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 4. Choose the products and applications you want to deploy, and then click **Add**. Note that you can create a package that includes Office, Visio, and Project by selecting each and adding them separately.
 5. Choose the update channel you want to deploy. The update channel determines how frequently your client devices are updated with new features. For best practice recommendations, see [Choose your update channels](plan-office-365-proplus#step-3---choose-your-update-channels.md).
@@ -58,5 +59,17 @@ Follow these steps to create a configuration file that can be used by the Office
 13. Click **Finish**, review the configured settings in the righthand pane, and then click **Export**.
 14. Accept the terms in the license agreement, name the confguration file, and then click **Export**. 
 15. You can now use the configuration file in your deployment workflow with the Office Deployment Tool or another software distribution solution.
+
+## Edit an existing configuration file
+
+Follow these steps to import and edit an existing configuration file.
+
+1. Go to [Office Customization Tool](https://config.office.com/).
+2. Click **Import**, and then select the configuration file you want to edit.
+4. Change the settings you want, and then export the updated file.
+
+
+
+
 
 
