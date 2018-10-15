@@ -46,7 +46,7 @@ The following table shows Office releases that are currently supported by Micros
 
 ## Installation technologies used by Office
 
-There are different ways to purchase Office, Project, and Visio. For example, you can purchase them as part of an Office 365 plan, as a one-time purchase from a retail store, or thorough a volume licensing agreement. How you purchase them, along with which Office release you purchased – for example, Office 365 or Office 2016 – determines what installation technology is used to install Office.
+There are different ways to purchase Office, Project, and Visio. For example, you can purchase them as part of an Office 365 plan, as a one-time purchase from a retail store, or through a volume licensing agreement. How you purchase them, along with which Office release you purchased – for example, Office 365 or Office 2016 – determines what installation technology is used to install Office.
 
 The three installation technologies are:
 

@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
 description: "Configuration options for the Office Deployment Tool"
 ---
 
@@ -123,6 +122,10 @@ Allowed values:
 - Channel="Monthly"
 - Channel="Broad"
 - Channel="Targeted"
+
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
+
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element) 
 
@@ -584,6 +587,9 @@ Allowed values:
 - Channel="Broad"
 - Channel="Targeted"
 
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted). 
+
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ## RemoveMSI element
 
