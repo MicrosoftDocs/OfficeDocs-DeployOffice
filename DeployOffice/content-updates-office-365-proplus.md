@@ -14,12 +14,11 @@ description: "This article lists the content updates for the Office 365 ProPlus 
 
 # New and updated Office deployment content for IT Pros  
 
-*(QUESTION: should we make the title & intro a bit more general since we cover 2019 and Mac stuff as well, not just ProPlus)*
+***(QUESTION: should we make the title & intro a bit more general since we cover 2019 and Mac stuff as well, not just ProPlus)***
 
-This article lists significant updates to tehcnical guidance for deploying Office 365 ProPlus in the enterprise. For details on product updates and other Office announcements and plans, see [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap) and [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/).
+This article lists significant updates to the guidance for deploying Office 365 ProPlus in the enterprise. For details on product updates and other Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap) and the [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/).
 
-> [!NOTE]
-> <sup>*</sup> indicates a new article.
+New articles are indicated by an <sup>*</sup> after the article name.
 
 ## October 2018
 
