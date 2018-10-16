@@ -86,9 +86,9 @@ If a user logs on to a shared computer again, Office 365 ProPlus uses the same l
 
 ## Additional details about shared computer activation for Office 365 ProPlus
 
-**Licensing token renewal** The licensing token that is stored on the shared computer is valid only for a few days. As the expiration date for the licensing token nears, Office 365 ProPlus automatically attempts to renew the licensing token when the user is logged on to the computer and using Office 365 ProPlus.
+**Licensing token renewal** The licensing token that is stored on the shared computer is valid only for 30 days. As the expiration date for the licensing token nears, Office 365 ProPlus automatically attempts to renew the licensing token when the user is logged on to the computer and using Office 365 ProPlus.
     
-If the user doesn't log on to the shared computer for several days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
+If the user doesn't log on to the shared computer for 30 days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
     
 **Internet connectivity** Because the shared computer has to contact the Office Licensing Service on the Internet to obtain or renew a licensing token, reliable connectivity between the shared computer and the Internet is necessary.
     
