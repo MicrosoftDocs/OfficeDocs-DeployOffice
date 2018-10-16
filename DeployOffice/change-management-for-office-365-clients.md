@@ -3,7 +3,6 @@ title: "Change management for Office 365 clients"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 11/17/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
@@ -12,8 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 9d9fc2d3-23e1-4309-8ae6-12ef5b6a8dcd
-
 description: "The client applications that are included with Office 365 are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality."
 ---
 
@@ -107,7 +104,7 @@ Use the following table to choose the right release option for your business nee
 
 ### Default channels for client applications
 
-Office 365 ProPlus includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. Project Online Desktop Client and Visio Pro for Office 365 also follow this release model. 
+Office 365 ProPlus includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365) also follow this release model. 
 
 The following illustration shows these sets of client applications.
 
@@ -117,7 +114,7 @@ By default, the client applications for Office 365 are set to these channel rele
 
 - **Office 365 ProPlus** is set to use Semi-Annual Channel.
 
-- **Project Online Desktop Client** and **Visio Pro for Office 365** are set to use Monthly Channel.
+- **Project Online Desktop Client** and **Visio Online Plan 2** (previously named Visio Pro for Office 365) are set to use Monthly Channel.
 
 But you can determine which channel is used for your client applications, according to your business needs.
 

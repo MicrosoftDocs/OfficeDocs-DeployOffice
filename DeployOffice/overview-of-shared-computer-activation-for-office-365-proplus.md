@@ -38,7 +38,7 @@ Shared computer activation is used for situations where multiple users share the
 If you have an Office 365 plan that includes Office 365 ProPlus, you can use shared computer activation. Make sure you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus and that users log on to the shared computer with their own user account.
   
 > [!NOTE]
-> You also can use shared computer activation to install Visio Pro for Office 365 or Project Online Desktop Client on a shared computer, if you have a subscription plan that includes those products. <br/><br/>Shared computer activation isn't available for Office 2016 for Mac.
+> You also can use shared computer activation to install Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365) on a shared computer, if you have a subscription plan that includes those products. <br/><br/>Shared computer activation isn't available for Office 2016 for Mac.
 
   
 To enable shared computer activation when you deploy Office 365 ProPlus, you need the current version of the Office Deployment Tool, which is available for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
