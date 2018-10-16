@@ -88,22 +88,22 @@ Office apps send telemetry data to Microsoft on a regular basis to help Microsof
 
 No additional configuration is needed to prevent Office 365 ProPlus or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
 
-For other Office apps, such as Skype for Business client, Office 2016 for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for additional information.
+For other Office apps, such as Skype for Business client, Office for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for additional information.
 
 ### Turn off sending telemetry data to Microsoft from Skype for Business client
 To prevent Skype for Business client from sending telemetry data to Microsoft, edit the registry and add the TelemetryTier value to the HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Lync key. The type for TelemetryTier is REG_DWORD, and the value should be set to 0.
 
 For more information, see [Skype for Business and Microsoft Teams data collection practices](https://docs.microsoft.com/SkypeForBusiness/legal-and-regulatory/data-collection-practices).
 
-### Turn off sending telemetry data to Microsoft from Office 2016 for Mac
-Office 2016 for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the ‘Nexus’ endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
+### Turn off sending telemetry data to Microsoft from Office for Mac
+Office for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the ‘Nexus’ endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
 - **Heartbeat** contains version and license information. This data is sent immediately upon app launch.
 - **Usage** contains information about how apps are being used and non-fatal errors. This data is sent every 60 minutes.
 
-To prevent Office 2016 for Mac from sending telemetry data to Microsoft, you can set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "FALSE." 
+To prevent Office for Mac from sending telemetry data to Microsoft, you can set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "FALSE." 
 
 > [!IMPORTANT]
-> You must be using at least Version 16.11 of Office 2016 for Mac.
+> You must be using at least Version 16.11 of Office for Mac.
 
 The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal, as shown in the following example.
 
@@ -229,4 +229,4 @@ For networking information, see the following articles:
 - [Office 365 U.S. Government GCC High endpoints](https://docs.microsoft.com/office365/enterprise/office-365-u-s-government-gcc-high-endpoints)
 - [Office 365 U.S. Government DoD endpoints](https://docs.microsoft.com/office365/enterprise/office-365-u-s-government-dod-endpoints)
 - [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-- [Network requests in Office 2016 for Mac](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
+- [Network requests in Office for Mac](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
