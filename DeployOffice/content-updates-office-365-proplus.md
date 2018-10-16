@@ -21,36 +21,34 @@ This article lists significant updates to tehcnical guidance for deploying Offic
 - [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751.aspx)
 - [What's new in Office 365](https://support.office.com/en-us/article/What-s-new-in-Office-365-95c8d81d-08ba-42c1-914f-bca4603e1426)
 - [Office 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap)
-- [Release notes for Office 2016 for Mac](https://support.office.com/article/Release-notes-for-Office-2016-for-Mac-ed2da564-6d53-4542-9954-7e3209681a41)
-- [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/)
 
 ## October 2018
 
-Published a new article with best practices for deploying Office with Configuration Mangaer.
-- [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+Published new articles about deploying Office with Configuration Manager, deploying proofing tools, and the list of supported languages.
+- [Deploy Office 365 ProPlus with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md (new)
+- [Install proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#install-proofing-tools) (new) 
+- [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplusm.md#languages-culture-codes-and-companion-proofing-languages) (new)
 
 ## September 2018
 
-Published new articles for Office 2019:
- - Overview of Office 2019
- - Deploy Office 2019
- - Update Office 2019
- - Update Office 2019 Preview to Office 2019
- - Overview of the Volume License (VL) Serializer
-
-Updated articles to support Office 2019:
- - All the articles in the Deployment guide for Office for Mac
- - All the articles related to volume activation
+Published new and updated articles for Office 2019.
+ - [Overview of Office 2019](https://docs.microsoft.com/DeployOffice/office2019/overview)(new)
+ - [Deploy Office 2019](https://docs.microsoft.com/DeployOffice/office2019/deploy) (new)
+ - [Update Office 2019](https://docs.microsoft.com/DeployOffice/office2019/update) (new)
+ - Update Office 2019 Preview to Office 2019 (new)
+ - Overview of the Volume License (VL) Serializer (new)
+ - [Deployment guide for Office for Mac](https://docs.microsoft.com/DeployOffice/mac/deployment-guide-for-office-for-mac) (updated)
+ - All the articles related to volume activation (new)
 
 ## August 2018
 
-Updated an article on using the Readiness Toolkit to assess application compatibility for Office 365 ProPlus. : Updated content in the article covers some new functionality, including the ability to conceal folder & file name info collected in the scan and the ability to capture add-in usage info. 
-- Updated [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)
+Updated an article on using the Readiness Toolkit to assess application compatibility for Office 365 ProPlus.
+- [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) (updated)
 - 
 
 ## July 2018
 
-You can now  use the Office Deployment Tool to apply application settings to Office 365 ProPlus as part of an initial deployment or as an update to existing installations of Office. 
+You can now  use the Office Deployment Tool to apply application preferences to Office 365 ProPlus as part of an initial deployment or as an update to existing installations of Office. 
 - [Apply application settings to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool#apply-application-settings-to-office-365-proplus) 
 - [Apply application settings to an existing installation of Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/overview-of-the-office-2016-deployment-tool#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
