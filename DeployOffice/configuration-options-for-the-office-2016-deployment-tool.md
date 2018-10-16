@@ -113,7 +113,7 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Pro for Office 365 and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
+Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Online Plan 2 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
@@ -579,7 +579,7 @@ For more information about update channels, see  [Overview of update channels fo
 
 If you use Group Policy with the  [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
-Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client.
+Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop Client.
 
 Allowed values:
 
