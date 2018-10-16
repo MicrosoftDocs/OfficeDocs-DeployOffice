@@ -3,14 +3,12 @@ title: "Troubleshoot issues with shared computer activation for Office 365 ProPl
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/26/2017
 ms.audience: ITPro
 ms.topic: troubleshooting
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ms.assetid: c3aeb487-d45f-4079-8c35-7558a45b876c
 description: "Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
 ---
 
@@ -28,7 +26,7 @@ If you're having problems getting shared computer activation to work when you de
 To use shared computer activation, you must have an Office 365 plan that includes Office 365 ProPlus.
   
 > [!NOTE]
-> You also can use shared computer activation with Visio Pro for Office 365 or Project Online Desktop Client. You just need a subscription plan that includes those products. 
+> You also can use shared computer activation with Visio Online Plan 2 (previously named Visio Pro for Office 365) or Project Online Desktop Client. You just need a subscription plan that includes those products. 
 
 <a name="Enabled"> </a>
   
