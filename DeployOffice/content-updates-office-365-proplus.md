@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "This article lists the content updates for the Office 365 ProPlus deployment guide."
@@ -25,7 +25,7 @@ New articles are indicated by an <sup>*</sup> after the article name.
 Published new articles about deploying Office with Configuration Manager, deploying proofing tools, and the list of supported languages.
 - [Deploy Office 365 ProPlus with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)<sup>*</sup>
 - [Install proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#install-proofing-tools)<sup>*</sup> 
-- [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplusm.md#languages-culture-codes-and-companion-proofing-languages)<sup>*</sup>
+- [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages)<sup>*</sup>
 
 ## September 2018
 
