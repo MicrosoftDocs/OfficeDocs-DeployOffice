@@ -210,7 +210,7 @@ Not all changes have the same impact on your users or require action. Some are p
 |:-----|:-----|:-----|:-----|
 |**Type of change** <br/> | Feature updates <br/>  New features or applications <br/>  Deprecated features <br/> | Client hotfixes for issues <br/> | Security patches <br/> |
 |**Advance notice?** <br/> |30 days notice for changes that require action  <br/> |No, these are included in the monthly build for all channels  <br/> |No, these are included in the monthly build for all channels  <br/> |
-|**Communication channel** <br/> | Message Center <br/> [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community <br/> | [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
+|**Communication channel** <br/> | Message Center <br/> [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Microsoft 365 blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community <br/> | [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
 |**Requires tenant admin action?** <br/> |Sometimes  <br/> |Rarely  <br/> |Rarely  <br/> |
 |**What kind of action?** <br/> | Change settings <br/>  Communicate changes to users <br/>  Validate customizations <br/> | Change admin settings <br/> ||
 |**Requires testing?** <br/> |Rarely - check business critical Add-ins  <br/> |Sometimes - testing the fix against processes or customizations  <br/> |Rarely  <br/> |
@@ -284,7 +284,7 @@ Customer's role
 
 - Understand what to expect for changes and communications.
 
-- Read Message Center, [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) and [Office Blog](https://go.microsoft.com/fwlink/?LinkId=626089) regularly.
+- Read Message Center, [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) and [Microsoft 365 blog](https://go.microsoft.com/fwlink/?LinkId=626089) regularly.
 
 - Set up pilot teams to preview new functionality using Monthly Channel.
 
@@ -318,7 +318,7 @@ Microsoft's role
 
 - Listen to customer feedback to improve rollout of future changes.
 
-- Listen to feedback on the [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community and in the admin feedback tool.
+- Listen to feedback on the [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community and in the admin feedback tool.
 
 - Update [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) statuses and add new features.
 
@@ -328,7 +328,7 @@ Customer's role
 
 - Review change management processes and bottlenecks for opportunities to streamline, and use more Microsoft resources.
 
-- Provide general feedback on the [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) space on the Microsoft Tech Community and specific feedback in the admin feedback tool.
+- Provide general feedback on the [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community and specific feedback in the admin feedback tool.
 
 - Train users to provide app specific feedback using the Smile button in Office apps.
 
