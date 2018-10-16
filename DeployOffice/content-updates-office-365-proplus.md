@@ -16,7 +16,7 @@ description: "This article lists the content updates for the Office 365 ProPlus 
 
 This article lists significant updates to the guidance for deploying Office 365 ProPlus, Office 2019, and Office for Mac. For details on product updates and other Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap) and the [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/).
 
-New articles are indicated by an <sup>*</sup>.
+New articles are indicated by an asterisk (<sup>*</sup>).
 
 ## October 2018
 
