@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
@@ -19,11 +19,17 @@ description: "Provides information for IT Pros about shared computer activation 
 > [!IMPORTANT]
 > This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
-Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For example, several nurses at a hospital connect to the same remote server to use their applications or a group of workers share a computer at a factory.
-  
+Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios for using shared computer activation:
+
+- Three workers at a factory share a computer, each worker using Office on that computer during their eight-hour shift.
+- Fifteen nurses at a hospital use Office on five different computers throughout the day.
+- Five employees connect remotely to the same computer to run Office.
+- Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
+
+
 The most common shared computer activation scenario is to [deploy Office 365 ProPlus to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office 365 ProPlus programs, such as Word or Excel, at the same time on the remote computer.
   
-Shared computer activation is used only for situations where multiple users share the same computer. If you have users who are assigned individual computers, you [use product key activation for Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md).
+Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md).
   
 <a name="Enable"> </a>
 
@@ -32,7 +38,7 @@ Shared computer activation is used only for situations where multiple users shar
 If you have an Office 365 plan that includes Office 365 ProPlus, you can use shared computer activation. Make sure you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus and that users log on to the shared computer with their own user account.
   
 > [!NOTE]
-> You also can use shared computer activation to install Visio Pro for Office 365 or Project Online Desktop Client on a shared computer, if you have a subscription plan that includes those products. <br/><br/>Shared computer activation isn't available for Office 2016 for Mac.
+> You also can use shared computer activation to install Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365) on a shared computer, if you have a subscription plan that includes those products. <br/><br/>Shared computer activation isn't available for Office for Mac.
 
   
 To enable shared computer activation when you deploy Office 365 ProPlus, you need the current version of the Office Deployment Tool, which is available for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
@@ -80,9 +86,9 @@ If a user logs on to a shared computer again, Office 365 ProPlus uses the same l
 
 ## Additional details about shared computer activation for Office 365 ProPlus
 
-**Licensing token renewal** The licensing token that is stored on the shared computer is valid only for a few days. As the expiration date for the licensing token nears, Office 365 ProPlus automatically attempts to renew the licensing token when the user is logged on to the computer and using Office 365 ProPlus.
+**Licensing token renewal** The licensing token that is stored on the shared computer is valid only for 30 days. As the expiration date for the licensing token nears, Office 365 ProPlus automatically attempts to renew the licensing token when the user is logged on to the computer and using Office 365 ProPlus.
     
-If the user doesn't log on to the shared computer for several days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
+If the user doesn't log on to the shared computer for 30 days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
     
 **Internet connectivity** Because the shared computer has to contact the Office Licensing Service on the Internet to obtain or renew a licensing token, reliable connectivity between the shared computer and the Internet is necessary.
     
