@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Office Customization Tool for Click-to-Run"
+title: "Overview of the Office Customization Tool"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -12,32 +12,23 @@ ms.collection:
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 
-description: "The Office Customization Tool (preview) creates the configuration files that are used to deploy Office in large organizations."
+description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
 ---
 
-# Overview of the Office Customization Tool for Click-To-Run (preview)
+# Overview of the Office Customization Tool
 
 The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the Office Deployment Tool or another software distribution solution to deploy a customized version of Office. 
 
 > [!NOTE] 
-> If you use System Center Configuration Manager (Current Branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more details, see [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+> The Office Customization Tool is part of of a deployment process for installing Office on hundreds or thousands of computers. To follow this process end-to-end, we recommend completing the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. If you're not an enterprise administrator and are looking to install Office 365 in your home or business, see [Install Office with Office 365](https://go.microsoft.com/fwlink/?LinkId=273820).
  
-## Define application preferences
-
-As part of the Office Customization Tool, you can define application prefences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
-
 ## Get started
 
 To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English version of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German version of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the Office Deployment Tool or another software distribution solution to deploy Office in your organization. 
-
-The rest of this article covers this procedure in more detail. For more details on the settings for the Office Customization Tool, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
-
-## Before you begin
-
-The Office Customization Tool is part of of a deployment process for installing Office on hundreds or thousands of computers. To follow this process end-to-end, we recommend completing the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment.
-
-If you're not an enterprise administrator and are looking to install Office 365 in your home or business, see [Install Office with Office 365](https://go.microsoft.com/fwlink/?LinkId=273820).
   
+> [!NOTE] 
+> If you use System Center Configuration Manager (Current Branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more details, see [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+
 ## Create a configuration file
 
 Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office.
@@ -66,7 +57,15 @@ Follow these steps to import and edit an existing configuration file.
 
 1. Go to [Office Customization Tool](https://config.office.com/).
 2. Click **Import**, and then select the configuration file you want to edit.
-4. Change the settings you want, and then export the updated file.
+3. Change the settings you want, and then export the updated file.
+
+## Define application preferences
+
+As part of the Office Customization Tool, you can define application prefences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+
+
+
+
 
 
 
