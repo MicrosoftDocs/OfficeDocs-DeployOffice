@@ -93,7 +93,7 @@ Prevent users from viewing local **On My Computer** folders in the sidebar.
 |**Data Type**  |Boolean |
 |**Possible values**  |  false (default) <br/> true  |
 |**Availability** | 16.17 |
-|**Comments**| Found in Outlook Preferences > General > Sidebar. |
+|**Comments**| Found under **Outlook** > **Preferences** > **General** > **Sidebar**. |
 
 ## Specify when pictures are downloaded for email
 
@@ -106,7 +106,7 @@ Set when pictures are automatically downloaded from the Internet for email.
 |**Data Type**  |Integer   |
 |**Possible values**  | 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  |
 |**Availability** |16.17 |
-|**Comments**| Found in Outlook Preferences > Email > Reading > Security.  |
+|**Comments**| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
 
 ## Disable import
 
