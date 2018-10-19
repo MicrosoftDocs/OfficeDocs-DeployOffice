@@ -18,8 +18,8 @@ description: "Shows preferences that IT Pros can set for Outlook for Mac and Out
 
 As an IT admin, you may want to provide Outlook for Mac users in your organization with a standard set of preferences in either of the following ways:
 
-- Set a default preference, which users can change
-- Force a particular preference, which users can’t change
+- Set a default preference, which users can change.
+- Force a particular preference, which users can’t change.
 
 The following preferences can be used to simplify account setup for Office 365 mailboxes, help protect company data, and support a streamlined user experience.
 
@@ -46,9 +46,9 @@ Set the domain or full email address of Office 365 mailbox to be added on first 
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | DefaultEmailAddressOrDomain|
+|**Key**  | DefaultEmailAddressOrDomain|
 |**Data Type**  | String|
-|**Possible values**  | *various (example: "contoso.com")* > |
+|**Possible values**  | *various (example: "contoso.com")*  |
 |**Availability** |16.18 |
 |**Comments**| The full email address or domain specified will be added in Outlook instead of the Office activation email address.  |
 
@@ -61,9 +61,9 @@ Specify one or more domains users are allowed to add in Outlook.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | AllowedEmailDomains|
+|**Key**  | AllowedEmailDomains|
 |**Data Type**  | Array of Strings |
-|**Possible values**  |  *various (example: "'contoso\\\\.com$'")*  |
+|**Possible values**  |  *Various (example: "'contoso\\\\.com$'")*  |
 |**Availability** | 16.18|
 |**Comments**| Format strings as regular expressions. Does not remove or disconnect accounts already added in Outlook. |
 
@@ -76,7 +76,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | HideCanAddOtherAccountTypesTipText|
+|**Key** | HideCanAddOtherAccountTypesTipText|
 |**Data Type**  |Boolean   |
 |**Possible values**  | false (default) <br/> true  |
 |**Availability** |16.18 |
@@ -89,7 +89,7 @@ Prevent users from viewing local **On My Computer** folders in the sidebar.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | HideFoldersOnMyComputerRootInFolderList|
+|**Key**  | HideFoldersOnMyComputerRootInFolderList|
 |**Data Type**  |Boolean |
 |**Possible values**  |  false (default) <br/> true  |
 |**Availability** | 16.17 |
@@ -102,7 +102,7 @@ Set when pictures are automatically downloaded from the Internet for email.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> |AutomaticallyDownloadExternalContent |
+|**Key**  |AutomaticallyDownloadExternalContent |
 |**Data Type**  |Integer   |
 |**Possible values**  | 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  |
 |**Availability** |16.17 |
@@ -115,7 +115,7 @@ Prevent users from being able to import archive files (.olm and .pst) and Outloo
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> |DisableImport |
+|**Key**  |DisableImport |
 |**Data Type**  |Boolean |
 |**Possible values**  |  false (default) <br/> true  |
 |**Availability** |16.18 |
@@ -130,7 +130,7 @@ Prevent users from being able to export archive files (.olm).
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | DisableExport  |
+|**Key**  | DisableExport  |
 |**Data Type**  |Boolean |
 |**Possible values**  | false (default) <br/> true |
 |**Availability** |16.18 |
@@ -144,7 +144,7 @@ Prevent users from being able to create, edit, and add client-side signatures.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> |DisableSignatures  |
+|**Key**  |DisableSignatures  |
 |**Data Type**  | Boolean|
 |**Possible values**  |  false (default) <br/> true  |
 |**Availability** |16.18 |
@@ -158,9 +158,9 @@ Set default location for weather in calendar view.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> |DefaultWeatherLocation  |
+|**Key** |DefaultWeatherLocation  |
 |**Data Type**  |String  |
-|**Possible values**  | *various (example: “Paris, France”)* |
+|**Possible values**  | *Various (example: “Paris, France”)* |
 |**Availability** |16.18 |
 |**Comments**| Use the format returned by the weather location search within Outlook. |
 
@@ -171,7 +171,7 @@ Prevent users from choosing **Update Location Automatically** for weather locati
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | Weather_update_automatically |
+|**Key**  | Weather_update_automatically |
 |**Data Type**  |Boolean |
 |**Possible values**  | false (default) <br/> true  |
 |**Availability** |16.19 |
@@ -184,11 +184,11 @@ Set the first day of week in calendar view.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | |
-|**Data Type**  | |
-|**Possible values**  |  <br/> |
+|**Key** | CalendarFirstDayOfWeek|
+|**Data Type**  | Integer |
+|**Possible values**  | 1 = Sunday (default) <br/> 2 = Monday  <br/> 3= Tuesday <br/> 4= Wednesday  <br/> 5= Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
 |**Availability** |16.19 |
-|**Comments**|  |
+
 
 
 ## Disable Skype for Business online meetings
@@ -198,11 +198,11 @@ Prevent users from adding Skype for Business online meeting details to events.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | |
+|**Key**  | DisableSkypeMeeting|
 |**Data Type**  | Boolean|
 |**Possible values**  |  false (default) <br/> true  |
 |**Availability** | 16.19|
-|**Comments**|  |
+|**Comments**| Key must be set to true and forced. |
 
 
 ## Disable Microsoft Teams meetings
@@ -212,11 +212,11 @@ Prevent users from adding Microsoft Teams online meeting details to events.
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key** <br/> | |
+|**Key**  |DisableTeamsMeeting  |
 |**Data Type**  | Boolean |
 |**Possible values**  | false (default) <br/> true  |
 |**Availability** |16.19 |
-|**Comments**|  |
+|**Comments**| Key must be set to true and forced. |
 
     
 ## Related topics
