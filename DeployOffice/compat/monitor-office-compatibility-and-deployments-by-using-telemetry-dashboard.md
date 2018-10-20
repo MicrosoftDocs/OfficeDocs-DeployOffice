@@ -40,9 +40,12 @@ The way you start Telemetry Dashboard depends on the operating system you're usi
 
 |**Operating system**|**How to start Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, **Microsoft Office 2016**, **Office 2016 Tools**, **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Micorosft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+
+For Office 365 ProPlus and Office 2019, look for **Telemetery Dashboard for Office** under **Microsoft Office Tools**.
+
    
 ### To connect to the telemetry database
 
@@ -202,7 +205,7 @@ To resolve this issue, enable the Telemetry Dashboard COM add-in that is availab
   
 ### To enable the Telemetry Dashboard COM add-in
 
-1. Start Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Office 2016 Tools** in Windows 10 or Windows 7. 
+1. Start Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 365 ProPlus and Office 2019, look for **Telemetery Dashboard for Office** under **Microsoft Office Tools**.
     
 2. Select the **Let's get started** button. 
     

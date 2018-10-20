@@ -76,9 +76,11 @@ To create a custom report, you have to first start Telemetry Dashboard. The foll
 
 |**If you have this operating system**|**Follow these steps to start Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016**, then **Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8 or Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+
+For Office 365 ProPlus and Office 2019, look for **Telemetery Dashboard for Office** under **Microsoft Office Tools**.
    
 ### To create a custom report
 
