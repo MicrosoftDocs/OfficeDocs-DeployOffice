@@ -29,9 +29,9 @@ This article helps you deploy the five components of Telemetry Dashboard: the da
 
 ## Telemetry Dashboard
 
-Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office Professional Plus 2016, Office Standard 2016, and Office 365 ProPlus editions of Office 2016. To view it, you must have Excel 2016 installed.
+Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office 365 ProPlus, Office Professional Plus 2019, and Office Professional Plus 2016. To view Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
 
-After Office 2016 is installed, you can start Telemetry Dashboard by using one of the procedures in the following table: 
+After Office is installed, you can start Telemetry Dashboard by using one of the procedures in the following table: 
 
 **How to start Telemetry Dashboard**
 
@@ -214,7 +214,7 @@ The following information and instructions will help you learn more about how to
 
 ### Deploying the telemetry agent
 
-The telemetry agent is built into Office Professional Plus, and Office 365 ProPlus editions of Office 2016 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2016 agent to these clients. 
+The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
 
 - Office 2003
 
@@ -224,17 +224,17 @@ The telemetry agent is built into Office Professional Plus, and Office 365 ProPl
 
 For computers that are running Office 2013 and you have the Office 2013 telemetry agent installed on the computer, there are several additional considerations:
 
-- You can monitor computers running Office 2013 from the Office 2016 Telemetry Dashboard. In order for this to work, the computer must also be running the Office 2013 agent. The agent must be configured to point to the Office 2016 Telemetry Dashboard.
+- You can monitor computers running Office 2013 from the Office 2019 or Office 2016 Telemetry Dashboard. In order for this to work, the computer must also be running the Office 2013 agent. The agent must be configured to point to the Office 2019 or Office 2016 Telemetry Dashboard.
 
-- You cannot use an Office 2016 telemetry agent with Office 2013. The Office 2016 agent will not be able to read events from an Office 2013 installation.
+- You cannot use an Office 2019 or Office 2016 telemetry agent with Office 2013. The Office 2019 or Office 2016 agent will not be able to read events from an Office 2013 installation.
 
-- Once you have upgraded a computer to Office 2016, you can continue to run the old Office 2013 agent. The agent will continue to report data to the Office 2013 Telemetry Dashboard. At the same time, the new Office 2016 agent that was installed when you upgraded to Office 2016 will provide the same data to the Office 2016 Telemetry Dashboard. This may use up valuable computer and network bandwidth resources. We recommend you disable the Office 2013 telemetry agent once you are ready to move to Office 2016 Telemetry Dashboard.
+- Once you have upgraded a computer to Office 2019 or Office 2016, you can continue to run the old Office 2013 agent. The agent will continue to report data to the Office 2013 Telemetry Dashboard. At the same time, the new Office 2019 or Office 2016 agent that was installed when you upgraded to Office 2019 or Office 2016 will provide the same data to the Office 2019 or Office 2016 Telemetry Dashboard. This may use up valuable computer and network bandwidth resources. We recommend you disable the Office 2013 telemetry agent once you are ready to move to Office 2019 or Office 2016 Telemetry Dashboard.
 
-- When you install the Office 2016 telemetry agent, it does not overwrite the Office 2013 telemetry agent. Instead, you need to disable the Office 2013 telemetry agent. You disable the telemetry agent by using Group Policy. For more information on the Group Policy settings you use to disable the telemetry agent, see [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
+- When you install the Office 2019 or Office 2016 telemetry agent, it does not overwrite the Office 2013 telemetry agent. Instead, you need to disable the Office 2013 telemetry agent. You disable the telemetry agent by using Group Policy. For more information on the Group Policy settings you use to disable the telemetry agent, see [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
 
-- We recommend that you do not deploy the Office 2016 telemetry agent on computers that are only running Office 2013.
+- We recommend that you do not deploy the Office 2019 or Office 2016 telemetry agent on computers that are only running Office 2013.
 
-An Office 2016 VL license allows you to install the telemetry agent on all Office 2013, Office 2010, Office 2007, and Office 2003 client computers in your organization. 
+An volume licensed version of Office 2019 or Office 2016 license allows you to install the telemetry agent on all Office 2013, Office 2010, Office 2007, and Office 2003 client computers in your organization. 
 
  In order to run the telemetry agent, client computers must run one of the following versions of Windows (either 32-bit or 64-bit): 
 
@@ -260,7 +260,7 @@ The telemetry agent might not work correctly on Windows service packs that are n
 
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
 
-### To deploy the Office 2016 telemetry agent to Office 2010, Office 2007, and Office 2003 clients
+### To deploy the Office 2019 or Office 2016 telemetry agent to Office 2010, Office 2007, and Office 2003 clients
 
 1. In Telemetry Dashboard, on the **Getting started** worksheet, under **3. Deploy Telemetry Agent**, choose the appropriate link (x86 or x64) to save the telemetry agent .msi file to a specified location.
 
@@ -422,7 +422,7 @@ To trigger a scan manually, use one of the following procedures.
 
 - Earlier versions of Office send approximately 50 KB for every upload.
 
-- Office 2016 sends approximately 64 KB of data for every upload.
+- Office 2019 and Office 2016 send approximately 64 KB of data for every upload.
 
 The amount transferred can be larger when the interval is set to longer than the default or when the data sits idle on the local computer for long periods of time. Note that actual file content isn't transferred; only metadata about the files is transferred.
 

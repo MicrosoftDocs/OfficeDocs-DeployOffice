@@ -145,7 +145,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 The following table describes the name and path of the Group Policy settings that exclude reporting for selected Office applications and solutions. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
-**Exclusion policy settings under User Configuration\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**
+**Exclusion policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**
 
 |**Setting**|**Description**|
 |:-----|:-----|
