@@ -75,7 +75,7 @@ The following table describes the components of Office telemetry. The first two 
 
 ## How telemetry data is collected
 
-The following table describes and illustrates how data collection is triggered and the flow of data between the telemetry agents and Telemetry Dashboard. You can view a more detailed diagram in the [Office telemetry poster](https://go.microsoft.com/fwlink/p/?LinkId=270113).
+The following table describes and illustrates how data collection is triggered and the flow of data between the telemetry agents and Telemetry Dashboard. You can view a more detailed diagram in the [Office telemetry poster](https://go.microsoft.com/fwlink/p/?LinkId=266531).
   
 **Steps in the data collection process**
 
