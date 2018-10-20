@@ -234,8 +234,6 @@ For computers that are running Office 2013 and you have the Office 2013 telemetr
 
 - We recommend that you do not deploy the Office 2019 or Office 2016 telemetry agent on computers that are only running Office 2013.
 
-An volume licensed version of Office 2019 or Office 2016 license allows you to install the telemetry agent on all Office 2013, Office 2010, Office 2007, and Office 2003 client computers in your organization. 
-
  In order to run the telemetry agent, client computers must run one of the following versions of Windows (either 32-bit or 64-bit): 
 
 - Window 10
@@ -422,7 +420,7 @@ To trigger a scan manually, use one of the following procedures.
 
 - Earlier versions of Office send approximately 50 KB for every upload.
 
-- Office 2019 and Office 2016 send approximately 64 KB of data for every upload.
+- Office 2013 and later send approximately 64 KB of data for every upload.
 
 The amount transferred can be larger when the interval is set to longer than the default or when the data sits idle on the local computer for long periods of time. Note that actual file content isn't transferred; only metadata about the files is transferred.
 
