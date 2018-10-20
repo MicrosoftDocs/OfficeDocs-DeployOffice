@@ -201,7 +201,7 @@ When you view a worksheet in Telemetry Dashboard, you might see the following me
 
 ![A screenshot of the Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
   
-To resolve this issue, enable the Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, Office Standard 2019, Office Professional Plus 2016, and Office Standard 2016. 
+To resolve this issue, enable the Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, and Office Professional Plus 2016. 
   
 ### To enable the Telemetry Dashboard COM add-in
 
