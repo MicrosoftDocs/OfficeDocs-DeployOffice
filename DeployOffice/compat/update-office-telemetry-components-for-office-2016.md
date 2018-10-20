@@ -1,5 +1,5 @@
 ---
-title: "Update Office Telemetry components for Office 2016"
+title: "Update Office Telemetry components"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_Compat
 description: "Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016."
 ---
 
-# Update Office Telemetry components for Office 2016
+# Update Office Telemetry components
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 

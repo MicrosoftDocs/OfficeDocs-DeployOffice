@@ -2,7 +2,7 @@
 ## [Assess Office compatibility](assess-office-compatibility.md)
 ## [Plan Telemetry Dashboard deployment](plan-telemetry-dashboard-deployment.md)
 ## [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-## [Update Office Telemetry components for Office 2016](update-office-telemetry-components-for-office-2016.md)
+## [Update Office Telemetry components](update-office-telemetry-components-for-office-2016.md)
 ## [Monitor Office compatibility and deployments](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
 ## [Manage add-ins by using Telemetry Dashboard](manage-add-ins-by-using-telemetry-dashboard-in-office.md)
 ## [Manage the privacy of data monitored by telemetry](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
