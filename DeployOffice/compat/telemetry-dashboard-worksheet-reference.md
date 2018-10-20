@@ -36,11 +36,11 @@ The **Overview** worksheet provides a big picture view of both the stability and
   
 There are three primary tasks that you can perform on the **Overview** worksheet.
   
-- [Determine the overall stability of Office 2016 documents and solutions throughout your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#stability)
+- [Determine the overall stability of Office documents and solutions throughout your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#stability)
     
 - [Drill down to investigate unstable documents or solutions that require your attention](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#investigate)
     
-- [View the progress of Office 2016 deployments in your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#deploystatus)
+- [View the progress of Office deployments in your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#deploystatus)
     
 <a name="bkmk_DocumentsWorksheet"> </a>
 
