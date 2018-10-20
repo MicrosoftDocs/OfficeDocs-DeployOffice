@@ -41,7 +41,7 @@ After Office 2016 is installed, you can start Telemetry Dashboard by using one o
 | Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetery Dashboard for Office** under **Microsoft Office Tools**.
+For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
 
 <a name="SQL"> </a>
