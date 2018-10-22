@@ -3,14 +3,12 @@ title: "Deploy Office 365 ProPlus as part of an operating system image"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 7/19/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 16cf763b-78a4-43dc-b05f-3efade197c0d
 description: "You can include Office 365 ProPlus as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Office 365 ProPlus when you create the image. That's because you need your users to activate their Office 365 ProPlus installations by signing in with their accounts."
 ---
 
@@ -31,7 +29,7 @@ To start, install and configure the operating system on a test computer. There a
 ### Step 2: Install Office 365 ProPlus for the image by using the Office Deployment Tool
 <a name="Step2"> </a>
 
-To install Office 365 ProPlus on the test computer, first download the Office 2016 version of the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
+To install Office 365 ProPlus on the test computer, first download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
   
 Then, use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to download the Office 365 ProPlus software to your local network. You also use the Office Deployment Tool to install Office 365 ProPlus on to the test computer.
   
