@@ -25,7 +25,9 @@ The following preferences can be used to simplify account setup for Office 365 m
 
 These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
 
-## Automatically configure Office 365 mailbox on first launch
+## Mailbox settings
+
+### Automatically configure Office 365 mailbox on first launch
 
 The email address used for Office activation will be added on first launch.
 
@@ -36,10 +38,9 @@ The email address used for Office activation will be added on first launch.
 |**Data Type**  | Boolean |
 |**Possible values**  | false (default) <br/> true |
 |**Availability** |16.17 |
-|**Comments**| The email address used for Office activation will be added in Outlook. |
 
 
-## Specify Office 365 mailbox to be added on first launch
+### Specify Office 365 mailbox to be added on first launch
 
 Set the domain or full email address of Office 365 mailbox to be added on first launch.
 
@@ -53,10 +54,9 @@ Set the domain or full email address of Office 365 mailbox to be added on first 
 |**Comments**| The full email address or domain specified will be added in Outlook instead of the Office activation email address.  |
 
 
-## Allow only corporate mailboxes to be added
+### Allow only corporate mailboxes to be added
 
 Specify one or more domains users are allowed to add in Outlook.
-
 
 |||
 |:-----|:-----|
@@ -68,10 +68,9 @@ Specify one or more domains users are allowed to add in Outlook.
 |**Comments**| Format strings as regular expressions. Does not remove or disconnect accounts already added in Outlook. |
 
 
-## Hide text about adding non-corporate mailboxes
+### Hide text about adding non-corporate mailboxes
 
 Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email** success dialog box.
-
 
 |||
 |:-----|:-----|
@@ -82,33 +81,10 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |**Availability** |16.18 |
 |**Comments**| Only hides text. Does not impact ability to add non-corporate mailboxes. |
 
-## Hide local folders
 
-Prevent users from viewing local **On My Computer** folders in the sidebar.
+## Import/export settings
 
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key**  | HideFoldersOnMyComputerRootInFolderList|
-|**Data Type**  |Boolean |
-|**Possible values**  |  false (default) <br/> true  |
-|**Availability** | 16.17 |
-|**Comments**| Found under **Outlook** > **Preferences** > **General** > **Sidebar**. |
-
-## Specify when pictures are downloaded for email
-
-Set when pictures are automatically downloaded from the Internet for email.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key**  |AutomaticallyDownloadExternalContent |
-|**Data Type**  |Integer   |
-|**Possible values**  | 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  |
-|**Availability** |16.17 |
-|**Comments**| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
-
-## Disable import
+### Disable import
 
 Prevent users from being able to import archive files (.olm and .pst) and Outlook 2011 for Mac data. 
 
@@ -122,10 +98,9 @@ Prevent users from being able to import archive files (.olm and .pst) and Outloo
 |**Comments**| Key must be set to true and forced. |
 
 
-## Disable export
+### Disable export
 
 Prevent users from being able to export archive files (.olm).
-
 
 |||
 |:-----|:-----|
@@ -137,61 +112,9 @@ Prevent users from being able to export archive files (.olm).
 |**Comments**| Key must be set to true and forced. |
 
 
-## Disable signatures
+## Online meetings settings
 
-Prevent users from being able to create, edit, and add client-side signatures.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key**  |DisableSignatures  |
-|**Data Type**  | Boolean|
-|**Possible values**  |  false (default) <br/> true  |
-|**Availability** |16.18 |
-|**Comments**| Key must be set to true and forced. |
-
-
-## Specify default weather location
-
-Set default location for weather in calendar view.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key** |DefaultWeatherLocation  |
-|**Data Type**  |String  |
-|**Possible values**  | *Various (example: “Paris, France”)* |
-|**Availability** |16.18 |
-|**Comments**| Use the format returned by the weather location search within Outlook. |
-
-## Disable automatic updating of weather location 
-
-Prevent users from choosing **Update Location Automatically** for weather location.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key**  | Weather_update_automatically |
-|**Data Type**  |Boolean |
-|**Possible values**  | false (default) <br/> true  |
-|**Availability** |16.19 |
-|**Comments**| Key must be set to false and forced. |
-    
-## Specify calendar first day of week 
-
-Set the first day of week in calendar view.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key** | CalendarFirstDayOfWeek|
-|**Data Type**  | Integer |
-|**Possible values**  | 1 = Sunday (default) <br/> 2 = Monday  <br/> 3= Tuesday <br/> 4= Wednesday  <br/> 5= Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
-|**Availability** |16.19 |
-
-
-
-## Disable Skype for Business online meetings
+### Disable Skype for Business online meetings
 
 Prevent users from adding Skype for Business online meeting details to events.
 
@@ -205,18 +128,88 @@ Prevent users from adding Skype for Business online meeting details to events.
 |**Comments**| Key must be set to true and forced. |
 
 
-## Disable Microsoft Teams meetings
+## Weather location settings
 
-Prevent users from adding Microsoft Teams online meeting details to events.
+### Specify default weather location
+
+Set default location for weather in calendar view.
 
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
-|**Key**  |DisableTeamsMeeting  |
-|**Data Type**  | Boolean |
+|**Key** |DefaultWeatherLocation  |
+|**Data Type**  |String  |
+|**Possible values**  | *Various (example: “Paris, France”)* |
+|**Availability** |16.18 |
+|**Comments**| Use the format returned by the weather location search within Outlook. |
+
+### Disable automatic updating of weather location 
+
+Prevent users from choosing **Update Location Automatically** for weather location.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key**  | Weather_update_automatically |
+|**Data Type**  |Boolean |
 |**Possible values**  | false (default) <br/> true  |
 |**Availability** |16.19 |
+
+
+## Other settings
+    
+### Hide local folders
+
+Prevent users from viewing local **On My Computer** folders in the sidebar.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key**  | HideFoldersOnMyComputerRootInFolderList|
+|**Data Type**  |Boolean |
+|**Possible values**  |  false (default) <br/> true  |
+|**Availability** | 16.17 |
+|**Comments**| Found under **Outlook** > **Preferences** > **General** > **Sidebar**. |
+
+### Specify when pictures are downloaded for email
+
+Set when pictures are automatically downloaded from the Internet for email.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key**  |AutomaticallyDownloadExternalContent |
+|**Data Type**  |Integer   |
+|**Possible values**  | 0 = Never (default) <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  |
+|**Availability** |16.17 |
+|**Comments**| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
+
+
+### Disable signatures
+
+Prevent users from being able to create, edit, and add client-side signatures.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key**  |DisableSignatures  |
+|**Data Type**  | Boolean|
+|**Possible values**  |  false (default) <br/> true  |
+|**Availability** |16.18 |
 |**Comments**| Key must be set to true and forced. |
+
+
+### Specify calendar first day of week 
+
+Set the first day of week in calendar view.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** | CalendarFirstDayOfWeek|
+|**Data Type**  | Integer |
+|**Possible values**  | 1 = Sunday (default) <br/> 2 = Monday  <br/> 3= Tuesday <br/> 4= Wednesday  <br/> 5= Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
+|**Availability** |16.19 |
 
     
 ## Related topics
