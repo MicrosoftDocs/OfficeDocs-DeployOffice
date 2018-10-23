@@ -3,14 +3,12 @@ title: "Manage software download settings in Office 365"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 9/29/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ms.assetid: c13051e6-f75c-4737-bc0d-7685dcedf360
 description: "Provides Office 365 admins with information to help them configure software download settings in the Office 365 admin center."
 ---
 
@@ -23,8 +21,8 @@ If you choose to make some software unavailable to users, they see a message on 
   
    Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization. 
   
-## Choose how often to get feature updates for Office 2016 apps
-For Office 2016, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
+## Choose how often to get feature updates for Office
+For Office 365 ProPlus, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
   
 If you want some users to get feature updates every month, but have other users get feature updates only every six months, you can manually download and install the Office apps for your users by using the Office Deployment Tool. This gives you the control to select different feature update settings for different groups of users.
   
