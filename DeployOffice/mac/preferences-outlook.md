@@ -38,6 +38,8 @@ The email address used for Office activation will be added on first launch.
 |**Data Type**  | Boolean |
 |**Possible values**  | false (default) <br/> true |
 |**Availability** |16.17 |
+|**Comments**| This key also suppresses first run dialogs for other Office apps, including Word, Excel, PowerPoint, and OneNote.  |
+
 
 
 ### Specify Office 365 mailbox to be added on first launch
