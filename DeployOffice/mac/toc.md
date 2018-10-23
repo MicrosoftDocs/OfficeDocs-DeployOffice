@@ -9,6 +9,7 @@
 ### [Macro security](set-preference-macro-security-office-for-mac.md)
 ### [Diagnostic data](set-preference-diagnostic-data.md)
 ### [Resume Assistant](set-preference-resume-assistant-word.md)
+### [Outlook preferences](preferences-outlook.md)
 ## Activation
 ### [Overview](overview-of-activation-for-office-for-mac.md)
 ### [Volume License (VL) Serializer](volume-license-serializer.md)
