@@ -14,7 +14,7 @@ description: "Provides information to admins on how to use Group Policy settings
 
 # How admins can manage controller services in Office 365 ProPlus 
 
-The following information shows administrators what controls are available for services in Office 365 ProPlus in which Microsoft acts as data controller.<sup>1<sup/>
+The following information shows administrators what controls are available for services in Office 365 ProPlus in which Microsoft acts as data controller.<sup>1</sup>
 
 > [!NOTE]
 > - For more information about these services and the controls available to your users, see [Microsoft's other connected services](https://support.office.com/article/92c234f1-dc91-4dc1-925d-6c90fc3816d8).
@@ -121,4 +121,4 @@ You can disable online-based translation features, including Translator and lega
 
 
 
-<sup>1<sup/> “Controller” means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
+<sup>1</sup> “Controller” means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
