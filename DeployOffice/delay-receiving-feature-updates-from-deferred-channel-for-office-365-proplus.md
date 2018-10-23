@@ -14,7 +14,7 @@ description: "Provides IT Pros with the steps to delay receiving feature updates
 
 # Delay receiving feature updates from Semi-Annual Channel for Office 365 ProPlus
 
-Office 365 clients that get updates from Semi-Annual Channel, such as Office 365 ProPlus, receive new features for the Office 2016 apps twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
+Office 365 clients that get updates from Semi-Annual Channel, such as Office 365 ProPlus, receive new features twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
   
 > [!IMPORTANT]
 > Starting with Version 1708, Deferred Channel is named Semi-Annual Channel. 
