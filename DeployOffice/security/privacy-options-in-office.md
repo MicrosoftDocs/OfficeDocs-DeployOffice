@@ -28,7 +28,7 @@ The first time that users start Office 2016, they go through the **Welcome to Of
   
 If users choose to **Install important and recommended updates for Office and other products**:
   
-- Recommended and important updates are automatically installed for the operating systems and Office 2016 applications. Users are notified about new optional software.
+- Recommended and important updates are automatically installed for the operating system and Office 2016 applications. Users are notified about new optional software.
     
 - Applications can connect to support.office.com for updated Help content and can receive targeted Help content for the Office 2016 applications that are installed.
     
@@ -36,7 +36,7 @@ If users choose to **Install important and recommended updates for Office and ot
     
 - Users can sign up for the Customer Experience Improvement Program or the Office Personalized Experience Program (OPEP), depending on the SKU they have installed. For more information about OPEP, see the [Microsoft Office Personalized Experience Program](https://go.microsoft.com/fwlink/p/?LinkId=282045).
     
-If users choose **Install Updates Only**, recommended and important updates are automatically installed for the operating systems and Office 2016 applications. Users are notified about new optional software, but, privacy options aren't changed in Office 2016 applications. This means that the default privacy options take effect. If users choose **Don't Make Changes**, automatic updating isn't changed in the Windows Security Center and privacy options aren't changed in Office 2016. The default privacy options take effect.
+If users choose **Install Updates Only**, recommended and important updates are automatically installed for the operating system and Office 2016 applications. Users are notified about new optional software, but, privacy options aren't changed in Office 2016 applications. This means that the default privacy options take effect. If users choose **Don't Make Changes**, automatic updating isn't changed in the Windows Security Center and privacy options aren't changed in Office 2016. The default privacy options take effect.
   
 The default privacy options for Office 2016 applications are as follows:
   
