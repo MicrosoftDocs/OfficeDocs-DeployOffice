@@ -8,7 +8,9 @@ ms.topic: overview
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+- Ent_Office_VL
+- Office2019
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides Office 2019 Preview customers with steps to update the preview version to Office 2019, on both Windows and on a Mac"
 ---

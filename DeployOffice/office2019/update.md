@@ -8,7 +8,9 @@ ms.topic: overview
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+- Ent_Office_VL
+- Office2019
 description: "Provides IT admins with information on how to update Office 2019."
 ---
 
