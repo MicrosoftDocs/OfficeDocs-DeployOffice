@@ -108,7 +108,7 @@ To enable your IT department to remove a password from a password-protected Word
     
 ### To set up multiple client computers for password protection by using a group policy object
 
-1. Download the Group Policy Administrative template (ADMX/ADML), which is available in the [Office 2016 Administrative Template files (ADMX/ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001)
+1. Download the Group Policy Administrative template (ADMX/ADML), which is available in the [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001)
     
 2. Open the template in the Local Group Policy Editor and navigate to the escrow key settings. Open the **User Configuration** branch, then choose **Administrative Templates**, **Microsoft Office 2016**, **Security Settings**, and then **Escrow Certificates**. 
     

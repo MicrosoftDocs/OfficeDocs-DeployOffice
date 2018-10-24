@@ -52,7 +52,7 @@ Because the **Welcome to Office** experience lets users enable or disable severa
 
 ## Suppress the Welcome to Office experience
 
-You can suppress the **Welcome to Office** experience by enabling the **Suppress recommended settings dialog** setting. This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\(ADM\ADMX)\Microsoft Office 2016\Miscellaneous. This setting prevents the **Welcome to Office** experience from appearing the first time that a user starts Office 2016. If you enable this setting, the automatic updating feature remains unchanged and the privacy options that control Internet-based services aren't enabled. 
+You can suppress the **Welcome to Office** experience by enabling the **Suppress recommended settings dialog** setting. This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. This setting prevents the **Welcome to Office** experience from appearing the first time that a user starts Office 2016. If you enable this setting, the automatic updating feature remains unchanged and the privacy options that control Internet-based services aren't enabled. 
   
 If you suppress the **Welcome to Office** experience without enabling certain privacy options, you disable several features that improve Office 2016 applications and you could expose a computer to security threats. Therefore, if you enable this setting we recommend that you also enable all the privacy options that are discussed in [Configure privacy options in Office](privacy-options-in-office.md#privacyoptions).
   
@@ -64,7 +64,7 @@ Most organizations enable this setting, including organizations that have a high
 
 Office 2016 provides several settings that let you control the disclosure of private information. These settings are often known as privacy options. You can enable or disable each of these settings to suit your organization's security requirements. If you suppress the **Welcome to Office** experience, we recommend that you also enable all of the following Group Policy settings: 
   
-**Online content options** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\(ADM\ADMX)\Microsoft Office 2016\ Tools | Options | General | Service Options… \ Online Content. 
+**Online content options** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\ Tools | Options | General | Service Options… \ Online Content. 
   
 - **Description:** This setting controls whether the Office 2016 Help system can download Help content from support.office.com. You can choose one of three options for this setting: 
     
@@ -78,7 +78,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
     
 - **Guidelines:** Most organizations enable this setting and select **Search online content when available**. This is the recommended configuration for this setting. But, organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically enable this setting and select **Never show online content or entry points**.
     
-**Automatically receive small updates to improve reliability** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\(ADM\ADMX)\Microsoft Office 2016\ Privacy\Trust Center. 
+**Automatically receive small updates to improve reliability** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\ Privacy\Trust Center. 
   
 - **Description:** This setting controls whether client computers periodically download small files that enable Microsoft to diagnose system problems. 
     
@@ -86,7 +86,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
     
 - **Guidelines:** Most organizations enable this setting, which is the recommended configuration. Organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically disable this setting. 
     
-**Enable Customer Experience Improvement Program (CEIP)** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\(ADM\ADMX)\Microsoft Office 2016\Privacy\Trust Center. 
+**Enable Customer Experience Improvement Program (CEIP)** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center. 
   
 - **Description:** This setting controls whether users participate in the CEIP to help improve Office 2016. When users participate in the CEIP, Office 2016 applications automatically send information to Microsoft about how the applications are used. This information is combined with other CEIP data to help Microsoft solve problems and improve the products and features customers use most often. CEIP doesn't collect users' names, addresses, or any other identifying information except the IP address of the computer that is used to send the data. 
     
@@ -94,7 +94,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
     
 - **Guidelines:** Most organizations enable this setting, which is the recommended configuration. Organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically don't enable this setting. 
     
-**Improve Proofing Tools** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\(ADM\ADMX)\Microsoft Office 2016\Tools\Options\Spelling. 
+**Improve Proofing Tools** This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Tools\Options\Spelling. 
   
 - **Description:** This setting controls whether the Help Improve Proofing Tools feature sends usage data to Microsoft. The Help Improve Proofing Tools feature collects data about how users use the proofing tools, such as additions to the custom dictionary, and sends the data to Microsoft. After about six months, the feature stops sending data to Microsoft and deletes the data collection file from the user's computer. By default, this feature is enabled if users choose to participate in the Customer Experience Improvement Program (CEIP). 
     
