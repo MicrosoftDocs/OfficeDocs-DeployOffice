@@ -249,7 +249,7 @@ As an Microsoft Outlook administrator, you can configure several options for IRM
 
 Before you start deployment, determine the settings that you might have to configure for IRM.
   
-You can download the Office 2016 and Outlook 2016 templates from the Microsoft Download Center, [Office 2016 Administrative Template files (ADMX, ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001).
+You can download the Office 2016 and Outlook 2016 templates from the Microsoft Download Center, [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001).
   
 <a name="BKMK_TurnOffIRM"> </a>
 

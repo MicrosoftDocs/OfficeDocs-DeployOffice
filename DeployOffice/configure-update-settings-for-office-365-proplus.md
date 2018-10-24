@@ -58,7 +58,7 @@ The update settings in the configuration.xml file are applied to Office 365 ProP
 ## Use Group Policy to configure update settings for Office 365 ProPlus
 <a name="GP"> </a>
 
-If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for Office 365 ProPlus by using Group Policy. To do this, download the most current [Office 2016 Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Office 365 ProPlus.
+If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for Office 365 ProPlus by using Group Policy. To do this, download the most current [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Office 365 ProPlus.
   
 > [!IMPORTANT]
 >  You must be running at least version 15.0.4605.1003 of Office 365 ProPlus, which was released in April 2014, to use the following policy settings: Hide update notifications, Target version, Update deadline, and Update path.  To determine which version of Office 365 ProPlus is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **Office Updates** section.

@@ -82,7 +82,7 @@ If you already use other tools to deploy software to your users, such as System 
   
 ## Configure user settings for Project by using Group Policy
 
-If you want to specify and maintain certain user settings for your Project installations, you can [download the Office 2016 Group Policy Administrative Template (ADMX/ADML) files](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
+If you want to specify and maintain certain user settings for your Project installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
   
 The same Group Policy settings work for Project Online Desktop Client, as well as volume licensed versions of Project, such as Project Professional 2019 or Project Standard 2016.
   
