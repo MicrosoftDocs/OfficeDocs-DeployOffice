@@ -10,7 +10,6 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: 9e81dd84-2294-484a-a182-d691aef3e2ea
 description: "Explains how Office privacy settings let you control the disclosure of private information."
 ---
 
@@ -29,7 +28,7 @@ The first time that users start Office 2016, they go through the **Welcome to Of
   
 If users choose to **Install important and recommended updates for Office and other products**:
   
-- Recommended and important updates are automatically installed for the Windows 8.1, Windows 8, Windows 7, Windows Vista, Windows Server 2012, Windows Server 2012 R2, Windows Server 2008 and Windows Server 2008 R2 operating systems and Office 2016 applications. Users are notified about new optional software.
+- Recommended and important updates are automatically installed for the operating system and Office 2016 applications. Users are notified about new optional software.
     
 - Applications can connect to support.office.com for updated Help content and can receive targeted Help content for the Office 2016 applications that are installed.
     
@@ -37,7 +36,7 @@ If users choose to **Install important and recommended updates for Office and ot
     
 - Users can sign up for the Customer Experience Improvement Program or the Office Personalized Experience Program (OPEP), depending on the SKU they have installed. For more information about OPEP, see the [Microsoft Office Personalized Experience Program](https://go.microsoft.com/fwlink/p/?LinkId=282045).
     
-If users choose **Install Updates Only**, recommended and important updates are automatically installed for the Windows 7, Windows 8, Windows 8.1, Windows Vista, Windows Server 2012, Windows Server 2012 R2, Windows Server 2008, and Windows Server 2008 R2 operating systems and Office 2016 applications. Users are notified about new optional software, but, privacy options aren't changed in Office 2016 applications. This means that the default privacy options take effect. If users choose **Don't Make Changes**, automatic updating isn't changed in the Windows Security Center and privacy options aren't changed in Office 2016. The default privacy options take effect.
+If users choose **Install Updates Only**, recommended and important updates are automatically installed for the operating system and Office 2016 applications. Users are notified about new optional software, but, privacy options aren't changed in Office 2016 applications. This means that the default privacy options take effect. If users choose **Don't Make Changes**, automatic updating isn't changed in the Windows Security Center and privacy options aren't changed in Office 2016. The default privacy options take effect.
   
 The default privacy options for Office 2016 applications are as follows:
   
