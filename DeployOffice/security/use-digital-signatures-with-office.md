@@ -215,7 +215,7 @@ The following table shows Windows registry settings that are specific to digital
 ## Related topics
 [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631)
   
-[Office 2016 Administrative Template files (ADMX/ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001)
+[Group Policy Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001)
   
 [Find digital ID or digital signature services](https://go.microsoft.com/fwlink/p/?LinkId=267581)
   
