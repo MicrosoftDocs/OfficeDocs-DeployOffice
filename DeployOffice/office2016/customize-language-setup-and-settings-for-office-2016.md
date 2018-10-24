@@ -235,7 +235,7 @@ The following policy settings help you manage language settings in Office 2016:
 |Primary Editing Language  <br/> |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** <br/> |Specifies the language in which users work with Office applications and documents when more than one language version is available on the computer.  <br/> |
    
 > [!IMPORTANT]
-> Before you can configure Office 2016 policy settings, you must download and install the latest [Office 2016 Administrative Template files](https://go.microsoft.com/fwlink/p/?LinkId=626001). 
+> Before you can configure Office 2016 policy settings, you must download and install the latest [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkId=626001). 
   
 ### To use Group Policy to manage language settings
 
