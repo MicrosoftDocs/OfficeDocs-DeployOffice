@@ -8,7 +8,9 @@ ms.topic: overview
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+- Ent_Office_VL
+- Office2019
 description: "Provides IT admins with information on how to update Office 2019."
 ---
 
@@ -81,7 +83,7 @@ If you’re deploying a volume licensed version of Project 2019 or Visio 2019 al
 
 ## Use Group Policy to specify update settings
 
-If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for volume licensed versions of Office 2019 by using Group Policy. To do this, download the most current [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Office 2019.
+If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for volume licensed versions of Office 2019 by using Group Policy. To do this, download the most current [Administrative Template files (ADMX/ADML for Office)](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Office 2019.
 
 After you copy the Administrative Template files to AD DS, you'll find the update policy settings under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\ Updates in the Group Policy Management Console. You'll also find a description of how to configure each policy setting. For example,  you can use the “Update path” Group Policy setting to specify where Office 2019 should look for updates.
 
