@@ -345,7 +345,7 @@ The following table describes the fields in the System_details table.
 |Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
 |Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
 |Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
-|Office 16  <br/> |String  <br/> |Shows Office 2019 or Office 2016 version details, if it is installed.  <br/> |
+|Office 16  <br/> |String  <br/> |Shows Office 365 ProPlus, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
    
 <a name="default_relationships"> </a>
 

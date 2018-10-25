@@ -29,7 +29,7 @@ This article helps you deploy the five components of Telemetry Dashboard: the da
 
 ## Telemetry Dashboard
 
-Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office 365 ProPlus, Office Professional Plus 2019, and Office Professional Plus 2016. To view Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
+Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
 
 After Office is installed, you can start Telemetry Dashboard by using one of the procedures in the following table: 
 
