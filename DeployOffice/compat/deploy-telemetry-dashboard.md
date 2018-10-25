@@ -14,11 +14,10 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
 
 # Deploy Telemetry Dashboard
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
-
- **Summary:** Explains how to deploy the telemetry processor, telemetry agent, and other components that are required by Telemetry Dashboard for Office. 
 
 
 This article helps you deploy the five components of Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
@@ -30,17 +29,20 @@ This article helps you deploy the five components of Telemetry Dashboard: the da
 
 ## Telemetry Dashboard
 
-Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office Professional Plus 2016, Office Standard 2016, and Office 365 ProPlus editions of Office 2016. To view it, you must have Excel 2016 installed.
+Telemetry Dashboard is an Excel workbook that is configured to connect to a telemetry database. Telemetry Dashboard is installed together with Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
 
-After Office 2016 is installed, you can start Telemetry Dashboard by using one of the procedures in the following table: 
+After Office is installed, you can start Telemetry Dashboard by using one of the procedures in the following table: 
 
 **How to start Telemetry Dashboard**
 
 |**Operating system**|**How to start Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows Server 2008 R2, Windows Server 2008, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016**, then **Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows Server 2008 R2, Windows Server 2008, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 | Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+
+For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+
 
 <a name="SQL"> </a>
 
@@ -48,47 +50,35 @@ After Office 2016 is installed, you can start Telemetry Dashboard by using one o
 
 SQL Server must be deployed before you can configure Telemetry Dashboard. You don't have to have an existing database, but you do have to install or have access to one of these versions of SQL Server:
 
-- SQL Server 2016
+- SQL Server 2016 or SQL Server 2016 Express
 
-- SQL Server 2016 Express
+- SQL Server 2014 or SQL Server 2014 Express
 
-- SQL Server 2014
+- SQL Server 2012 or SQL Server 2012 Express
 
-- SQL Server 2014 Express
+- SQL Server 2008 R2 or SQL Server 2008 R2 Express Edition
 
-- SQL Server 2012
+- SQL Server 2008 or SQL Server 2008 Express Edition
 
-- SQL Server 2012 Express
+- SQL Server 2005 or SQL Server 2005 Express Edition
 
-- SQL Server 2008 R2
+The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
-- SQL Server 2008 R2 Express Edition
+- Ensure that the computer meets the hardware and software requirements for SQL Server 2014. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014).
 
-- SQL Server 2008
-
-- SQL Server 2008 Express Edition
-
-- SQL Server 2005
-
-- SQL Server 2005 Express Edition
-
-The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2012 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2012 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2012 Express. 
-
-- Ensure that the computer meets the hardware and software requirements for SQL Server 2012. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2012](https://go.microsoft.com/fwlink/p/?LinkID=129377).
-
-- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2012 from the Installation Wizard (Setup)](https://go.microsoft.com/fwlink/p/?LinkID=254657).
+- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2014 from the Installation Wizard (Setup)](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup?view=sql-server-2014).
 
 <a name="installsql"> </a>
 
-### To download and install SQL Server 2012 Express
+### To download and install SQL Server 2014 Express
 
-1. In Telemetry Dashboard, on the **Getting started** worksheet, under **1. Set up prerequisites**, choose the link to download and install SQL Server 2012 Express with Tools. Choose the 32-bit or 64-bit edition, as appropriate. Or use this link: [Microsoft SQL Server 2012 Express](https://go.microsoft.com/fwlink/p/?LinkId=246610).
+1. In Telemetry Dashboard, on the **Getting started** worksheet, under **1. Set up prerequisites**, choose the link to download and install SQL Server 2014 Express with Tools. Choose the 32-bit or 64-bit edition, as appropriate. Or use this link: [Microsoft SQL Server 2014 Express](https://www.microsoft.com/download/details.aspx?id=42299).
 
-2. The setup process for SQL Server 2012 Express takes a while to download and extract files. Accept the various prompts and wait for the first page of SQL Server 2012 Express, which is named the **SQL Server Installation Center**, to appear after extraction is completed. Then, follow these steps:
+2. The setup process for SQL Server 2014 Express takes a while to download and extract files. Accept the various prompts and wait for the first page of SQL Server 2014 Express, which is named the **SQL Server Installation Center**, to appear after extraction is completed. Then, follow these steps:
 
    1. In the SQL Server Installation Center, choose **New SQL Server stand-alone installation or add features to an existing installation**.
 
-   2. In the SQL Server 2012 wizard, read the license terms, accept them, and then choose **Next**.
+   2. In the SQL Server 2014 setup wizard, read the license terms, accept them, and then choose **Next**.
 
    3. On the **Feature Selection** page, accept the default settings. Choose **Next**.
 
@@ -212,7 +202,7 @@ The following information and instructions will help you learn more about how to
 
 ### Deploying the telemetry agent
 
-The telemetry agent is built into Office Professional Plus, and Office 365 ProPlus editions of Office 2016 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2016 agent to these clients. 
+The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
 
 - Office 2003
 
@@ -222,17 +212,15 @@ The telemetry agent is built into Office Professional Plus, and Office 365 ProPl
 
 For computers that are running Office 2013 and you have the Office 2013 telemetry agent installed on the computer, there are several additional considerations:
 
-- You can monitor computers running Office 2013 from the Office 2016 Telemetry Dashboard. In order for this to work, the computer must also be running the Office 2013 agent. The agent must be configured to point to the Office 2016 Telemetry Dashboard.
+- You can monitor computers running Office 2013 from the Office 2019 or Office 2016 Telemetry Dashboard. In order for this to work, the computer must also be running the Office 2013 agent. The agent must be configured to point to the Office 2019 or Office 2016 Telemetry Dashboard.
 
-- You cannot use an Office 2016 telemetry agent with Office 2013. The Office 2016 agent will not be able to read events from an Office 2013 installation.
+- You cannot use an Office 2019 or Office 2016 telemetry agent with Office 2013. The Office 2019 or Office 2016 agent will not be able to read events from an Office 2013 installation.
 
-- Once you have upgraded a computer to Office 2016, you can continue to run the old Office 2013 agent. The agent will continue to report data to the Office 2013 Telemetry Dashboard. At the same time, the new Office 2016 agent that was installed when you upgraded to Office 2016 will provide the same data to the Office 2016 Telemetry Dashboard. This may use up valuable computer and network bandwidth resources. We recommend you disable the Office 2013 telemetry agent once you are ready to move to Office 2016 Telemetry Dashboard.
+- Once you have upgraded a computer to Office 2019 or Office 2016, you can continue to run the old Office 2013 agent. The agent will continue to report data to the Office 2013 Telemetry Dashboard. At the same time, the new Office 2019 or Office 2016 agent that was installed when you upgraded to Office 2019 or Office 2016 will provide the same data to the Office 2019 or Office 2016 Telemetry Dashboard. This may use up valuable computer and network bandwidth resources. We recommend you disable the Office 2013 telemetry agent once you are ready to move to Office 2019 or Office 2016 Telemetry Dashboard.
 
-- When you install the Office 2016 telemetry agent, it does not overwrite the Office 2013 telemetry agent. Instead, you need to disable the Office 2013 telemetry agent. You disable the telemetry agent by using Group Policy. For more information on the Group Policy settings you use to disable the telemetry agent, see [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
+- When you install the Office 2019 or Office 2016 telemetry agent, it does not overwrite the Office 2013 telemetry agent. Instead, you need to disable the Office 2013 telemetry agent. You disable the telemetry agent by using Group Policy. For more information on the Group Policy settings you use to disable the telemetry agent, see [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
 
-- We recommend that you do not deploy the Office 2016 telemetry agent on computers that are only running Office 2013.
-
-An Office 2016 VL license allows you to install the telemetry agent on all Office 2013, Office 2010, Office 2007, and Office 2003 client computers in your organization. 
+- We recommend that you do not deploy the Office 2019 or Office 2016 telemetry agent on computers that are only running Office 2013.
 
  In order to run the telemetry agent, client computers must run one of the following versions of Windows (either 32-bit or 64-bit): 
 
@@ -258,7 +246,7 @@ The telemetry agent might not work correctly on Windows service packs that are n
 
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
 
-### To deploy the Office 2016 telemetry agent to Office 2010, Office 2007, and Office 2003 clients
+### To deploy the Office 2019 or Office 2016 telemetry agent to Office 2010, Office 2007, and Office 2003 clients
 
 1. In Telemetry Dashboard, on the **Getting started** worksheet, under **3. Deploy Telemetry Agent**, choose the appropriate link (x86 or x64) to save the telemetry agent .msi file to a specified location.
 
@@ -360,7 +348,7 @@ The following tables describe each registry value.
 
 ### Use Group Policy to enable and configure the telemetry agent
 
-You can also use Group Policy to enable and configure telemetry agents. Download the Group Policy administrative template files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001). The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. 
+You can also use Group Policy to enable and configure telemetry agents. Download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001). The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. 
 
 **Telemetry Agent policy settings**
 
@@ -420,7 +408,7 @@ To trigger a scan manually, use one of the following procedures.
 
 - Earlier versions of Office send approximately 50 KB for every upload.
 
-- Office 2016 sends approximately 64 KB of data for every upload.
+- Office 2013 and later send approximately 64 KB of data for every upload.
 
 The amount transferred can be larger when the interval is set to longer than the default or when the data sits idle on the local computer for long periods of time. Note that actual file content isn't transferred; only metadata about the files is transferred.
 
@@ -430,7 +418,7 @@ The amount transferred can be larger when the interval is set to longer than the
 
  **Q:** How can I re-initialize an agent? 
 
- **A:** The telemetry agent is stored locally on the client computer at %localappdata%/Microsoft/Office/16.0/Telemetry/. You can delete the contents of this folder to reinitialize the computer and start a fresh discovery. Note that this is a per-user data location. 
+ **A:** The telemetry agent is stored locally on the client computer at %localappdata%\Microsoft\Office\16.0\Telemetry. You can delete the contents of this folder to reinitialize the computer and start a fresh discovery. Note that this is a per-user data location. 
 
  **Q:** How frequently is data sent to the telemetry shared folder? 
 
@@ -472,11 +460,9 @@ The following table describes some symptoms that you might encounter after you d
 |Telemetry Dashboard can't connect to the telemetry database  <br/> |Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server default collation is case-sensitive (for example, the Japanese version of SQL Server is case-sensitive by default), ensure that you entered a case-sensitive database name in the **Data connection settings** dialog box in Telemetry Dashboard.  <br/> |
 
 ## Related topics
-[Assess Office compatibility](assess-office-compatibility.md)
 
-[Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
-
-[Monitor Office compatibility and deployments by using Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
-
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Assess Office compatibility](assess-office-compatibility.md)
+- [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
+- [Monitor Office compatibility and deployments by using Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 
