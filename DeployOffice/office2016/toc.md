@@ -10,7 +10,7 @@
 ### [Assess Office compatibility](../compat/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json)
 ### [Plan Telemetry Dashboard deployment](../compat/plan-telemetry-dashboard-deployment.md?toc=/deployoffice/office2016/toc.json)
 ### [Deploy Telemetry Dashboard](../compat/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
-### [Update Office Telemetry components for Office 2016](../compat/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json)
+### [Update Office Telemetry components](../compat/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json)
 ### [Monitor Office compatibility and deployments](../compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
 ### [Manage add-ins by using Telemetry Dashboard](../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json)
 ### [Manage the privacy of data monitored by telemetry](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)

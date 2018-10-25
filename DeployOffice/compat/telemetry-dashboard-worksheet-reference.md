@@ -14,10 +14,11 @@ description: "Find reference information about Telemetry Dashboard worksheets th
 
 # Telemetry Dashboard worksheet reference
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Find reference information about Telemetry Dashboard worksheets that helps you understand Office stability in your organization. 
   
   
 As you use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the telemetry agents and processors.
@@ -35,11 +36,11 @@ The **Overview** worksheet provides a big picture view of both the stability and
   
 There are three primary tasks that you can perform on the **Overview** worksheet.
   
-- [Determine the overall stability of Office 2016 documents and solutions throughout your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#stability)
+- [Determine the overall stability of Office documents and solutions throughout your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#stability)
     
 - [Drill down to investigate unstable documents or solutions that require your attention](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#investigate)
     
-- [View the progress of Office 2016 deployments in your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#deploystatus)
+- [View the progress of Office deployments in your organization](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#deploystatus)
     
 <a name="bkmk_DocumentsWorksheet"> </a>
 
@@ -57,11 +58,11 @@ There are two main sections on the Documents worksheet:
   
 - **Office usage**
     
-- **Office 2016 telemetry data**
+- **Office 2016 and later telemetry data**
     
 The columns under the **Office usage** section display usage data that is collected by the Telemetry Agent. You can select the link for the number of users of a document to see who is using the document. This information is displayed in the **Document details** worksheet. 
   
-The columns under the **Office 2016 telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed in the **Document issues** worksheet. 
+The columns under the **Office 2016 and later telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed in the **Document issues** worksheet. 
   
 The following table describes each column in the **Documents** worksheet. 
   
@@ -73,18 +74,18 @@ The following table describes each column in the **Documents** worksheet.
 |**Section**|**Column**|**Description**|
 |:-----|:-----|:-----|
 |Office usage  <br/> |File name  <br/> |Shows the file name of each document.  <br/> |
-||Total users  <br/> |Shows the number of users who opened each document by using Office 2003, Office 2007, Office 2010, Office 2013, and Office 2016  <br/> |
+||Total users  <br/> |Shows the number of users who opened each document by using Office 2003, Office 2007, Office 2010, Office 2013, Office 2016, or Office 2019.  <br/> |
 ||Office 2003  <br/> |Shows the number of users who opened each document by using Office 2003.  <br/> |
 ||Office 2007  <br/> |Shows the number of users who opened each document by using Office 2007.  <br/> |
 ||Office 2010  <br/> |Shows the number of users who opened each document by using Office 2010.  <br/> |
 ||Office 2013  <br/> |Shows the number of users who opened each document by using Office 2013.  <br/> |
-||Office 2016  <br/> |Shows the number of users who opened each document by using Office 2016.  <br/> |
+||Office 2016 and later <br/> |Shows the number of users who opened each document by using Office 2016 or Office 2019.  <br/> |
 ||Office 2003 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2003  <br/> |
 ||Office 2007 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2007.  <br/> |
 ||Office 2010 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2010.  <br/> |
 ||Office 2013 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2013.  <br/> |
-||Office 2016 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2016.  <br/> |
-|Office 2016 telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened documents (no critical errors occurred) out of the total number of sessions.  <br/> |
+||Office 2016 and later (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2016 or Office 2019.  <br/> |
+|Office 2016 and later telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened documents (no critical errors occurred) out of the total number of sessions.  <br/> |
 ||Sessions  <br/> |Shows the total number of sessions. A session refers to all selected file open events.  <br/> |
 ||Trend  <br/> |Shows the trend of changes that occurred between the current week and a week within the selected period. You can change the period by using the **Date range** filter in the navigation pane. For example, if you select **1 year** from the **Date range**, the column shows a trend that compares the current week to a week from one year prior.  <br/> |
 ||Critical  <br/> |Shows the number of users who encountered critical issues.  <br/> |
@@ -135,7 +136,7 @@ The following table describes each column in the **Document details** worksheet.
 
 ## Document issues worksheet
 
-The **Document issues** worksheet appears after you select a link under **Office 2016 telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
+The **Document issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
   
 The following screen shot shows the **Document issues** worksheet. 
   
@@ -149,7 +150,7 @@ The following table describes each column in the **Document issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -174,7 +175,7 @@ The following table describes each column in the **Document sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the document that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -210,11 +211,11 @@ There are two main sections on the **Solutions** worksheet:
   
 - **Office usage**
     
-- **Office 2016 telemetry data**
+- **Office 2016 and later telemetry data**
     
 The columns under the **Office usage** section display the usage data that is collected by the telemetry agent. You can select the link for the number of users of a solution to see who is using the solution. This information is displayed on the **Solution details** worksheet. 
   
-The columns under the **Office 2016 telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed on the **Solution issues** worksheet. 
+The columns under the **Office 2016 and later telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed on the **Solution issues** worksheet. 
   
 The following table describes each column in the **Solutions** worksheet. 
   
@@ -225,19 +226,19 @@ The following table describes each column in the **Solutions** worksheet.
 
 |**Section**|**Column**|**Description**|
 |:-----|:-----|:-----|
-|Office usage  <br/> |Total users  <br/> |Shows the number of users who use the solution in Office 2003, Office 2007, Office 2010, Office 2013, and Office 2016.  <br/> |
+|Office usage  <br/> |Total users  <br/> |Shows the number of users who use the solution in Office 2003, Office 2007, Office 2010, Office 2013, Office 2016, or Office 2019.  <br/> |
 ||Office 2003  <br/> |Shows the number of users who use the solution in Office 2003.  <br/> |
 ||Office 2007  <br/> |Shows the number of users who use the solution in Office 2007.  <br/> |
 ||Office 2010  <br/> |Shows the number of users who use the solution in Office 2010.  <br/> |
 ||Office 2013  <br/> |Shows the number of users who use the solution in Office 2013.  <br/> |
-||Office 2016  <br/> |Shows the number of users who use the solution in Office 2016.  <br/> |
-||Total computers  <br/> |Shows the number of computers where the solution was opened by using Office 2003, Office 2007, Office 2010, Office 2013, and Office 2016.  <br/> |
+||Office 2016 and later  <br/> |Shows the number of users who use the solution in Office 2016 or Office 2019.  <br/> |
+||Total computers  <br/> |Shows the number of computers where the solution was opened by using Office 2003, Office 2007, Office 2010, Office 2013, Office 2016, or Office 2019.  <br/> |
 ||Office 2003 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2003.  <br/> |
 ||Office 2007 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2007.  <br/> |
 ||Office 2010 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2010.  <br/> |
 ||Office 2013 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2013.  <br/> |
-||Office 2016 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2016.  <br/> |
-|Office 2016 telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened solutions (no critical error occurred) out of total sessions.  <br/> |
+||Office 2016 and later (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2016 or Office 2019.  <br/> |
+|Office 2016 and later telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened solutions (no critical error occurred) out of total sessions.  <br/> |
 ||Sessions  <br/> |Shows the total number of sessions. A session refers to all selected file open events.  <br/> |
 ||Trend  <br/> |Shows the trend of changes that occurred between this week and a week within the selected period. You can change the period by using the **Date range** filter in the navigation pane. For example, if you select **1 year** from the **Date range**, the column shows a trend that compares this week to a week from one year prior.  <br/> |
 ||Critical  <br/> |Shows the number of users who encountered critical issues  <br/> |
@@ -294,7 +295,7 @@ The following table describes each column in the **Solution details** worksheet.
 
 ## Solution issues worksheet
 
-The **Solution issues** worksheet appears after you select a link under **Office 2016 telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
+The **Solution issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
   
 The following screen shot shows the **Solution issues** worksheet. 
   
@@ -308,7 +309,7 @@ The following table describes each column in the **Solution issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -333,7 +334,7 @@ The following table describes each column in the **Solution sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the solution that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -448,10 +449,10 @@ Also, you should be aware that Windows 8 is now supported on ARM-based architect
 
 ## Custom report worksheet
 
-When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Tutorial: PivotTable data analysis using a Data Model in Excel](https://go.microsoft.com/fwlink/?LinkID=279531). 
+When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Use multiple tables to create a PivotTable](https://support.office.com/article/b5e3ff48-2921-4e29-be15-511e09b5cf2d). 
   
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
 

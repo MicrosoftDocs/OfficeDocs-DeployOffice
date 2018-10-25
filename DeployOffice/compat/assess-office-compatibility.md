@@ -9,15 +9,17 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Explains how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment."
+description: "Provides an overview of how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment."
 ---
 
 # Assess Office compatibility
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Explains how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment. 
   
   
 Keeping an Office deployment project on track requires two key aspects: using the right process to assess Office compatibility, and using tools that help you understand the potential risks of an Office upgrade. Office helps you do both. When you use the process described in this topic with the telemetry tools that are in Office, you can speed up your Office deployments and get users up and running on the new version of Office with minimal disruptions. In this article, you'll learn more about the compatibility process and how Office telemetry fits into this process.
@@ -29,9 +31,9 @@ Keeping an Office deployment project on track requires two key aspects: using th
 
 Office telemetry is a compatibility monitoring framework introduced in Office 2013 that replaced the Office 2010 compatibility tools Office Migration Planning Manager (OMPM), Office Code Compatibility Inspector (OCCI), and Office Environment Assessment Tool (OEAT). When you use Office telemetry as part of the Office compatibility process, it helps minimize the time that you spend assessing Office compatibility. It also reduces the risks associated with an Office upgrade. 
   
-Office telemetry in Office 2016 works as follows: When an Office document or solution is loaded, used, closed, or raises an error in certain Office 2016 applications, the application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked.
+Office telemetry in Office works as follows: When an Office document or solution is loaded, used, closed, or raises an error in certain Office applications, the application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked.
   
-How does Office telemetry work in earlier versions of Office? Office telemetry is not built into Office 2003, Office 2007, and Office 2010. For those clients, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with Office 2016 clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
+How does Office telemetry work in earlier versions of Office? Office telemetry is not built into Office 2003, Office 2007, and Office 2010. For those clients, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with newer Office clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
   
 <a name="intro"> </a>
 
@@ -167,7 +169,7 @@ As you deploy Office, you'll start to see Office health and usage trends that he
   
 These sections provide more guidance about the Manage phase.
   
-### Manage Office 2016 add-ins by using Telemetry Dashboard
+### Manage Office add-ins by using Telemetry Dashboard
 
 As you monitor solutions that are used by Office, you are likely to find add-ins that are slow to load or that crash frequently. You might also find add-ins that should not be used in your organization. Group Policy settings allow you to manage these add-ins when they are used with Office. 
   
@@ -181,7 +183,7 @@ There are individual add-in management settings for each supported Office applic
     
 ### Phase out earlier versions of Office
 
-We recommend that you run Office 2016 with an older version of Office side-by-side only as a short-term compatibility solution during pilot testing. When your pilot phase ends and your production deployments begin, we recommend that you start to remove earlier versions of Office from production computers that run Office 2016. This avoids any widespread issues that can be caused by file type associations that might break after updates or repair operations.
+We recommend that you run a newer version of Office with an earlier version of Office side-by-side only as a short-term compatibility solution during pilot testing. When your pilot phase ends and your production deployments begin, we recommend that you start to remove earlier versions of Office from production computers that run a newer version of Office. This avoids any widespread issues that can be caused by file type associations that might break after updates or repair operations.
   
 ### Manage compatibility mode in Office
 
@@ -194,11 +196,9 @@ As part of your overall Office training plan, you should provide guidance to use
 Your Help Desk should be ramped up on Office and ready to support users. They should start by going to the [Office Training Center](https://support.office.com/office-training-center).
     
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-  
-[Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
 
-[Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=266224)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
+- [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=266224)
 

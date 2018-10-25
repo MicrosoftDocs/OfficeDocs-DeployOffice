@@ -14,18 +14,18 @@ description: "Learn about the telemetry data collection process and how to confi
 
 # Manage the privacy of data monitored by telemetry in Office
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
-
- **Summary:** Learn about the telemetry data collection process and how to configure settings that help protect user privacy when using the Telemetry Dashboard in Office. 
 
 
 Telemetry Dashboard is an Excel workbook that displays compatibility and inventory data about the Office files, Office add-ins, and Office solutions that are used in an organization. Telemetry Dashboard displays the file names and titles of documents in each user's Most Recently Used list, which might reveal personal or confidential information about the user or organization. The names of add-ins and other solutions that are used by Office are also displayed. In this article, you can learn about settings in Telemetry Dashboard and the telemetry agent that help you protect user privacy by disguising file names and titles or by preventing data for selected applications or solutions from being reported altogether.
 
 The telemetry agent collects inventory, usage, and other application data and uploads it to a shared folder, where it is processed by a service known as the telemetry processor and inserted into an SQL database. The Telemetry Dashboard connects to this database so that it can show the usage of Office files, add-ins, and solutions.
 
-The telemetry agent is built into Office Professional Plus 2016, and Office 365 ProPlus editions of Office 2016 and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the telemetry agent never generates or collects any telemetry or inventory data until you enable telemetry logging. You can do this by using either the registry or the Group Policy Administrative Templates as described in [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, telemetry data is stored on the local computer under %LocalAppData%\Microsoft\Office16.0\Telemetry\Microsoft\Office\16.0\Telemetry\ and is uploaded periodically to a shared folder.
+The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the telemetry agent never generates or collects any telemetry or inventory data until you enable telemetry logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, telemetry data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
 
 <a name="Configure"> </a>  
 
@@ -64,8 +64,8 @@ The following table describes different ways in which file information is disgui
 ||**File name**|**File path**|**Title**|
 |:-----|:-----|:-----|:-----|
 |Actual file details on the monitored client computer  <br/> |Resume_Contoso.xlsx  <br/> |C:\Users\John\Documents  <br/> |Resume_Contoso.docx  <br/> |
-|Merger_Contoso.docx  <br/> |\\\FileShare\Operations\FY2016  <br/> |Merger_Contoso.docx  <br/> |
-|FY2016_Layoff.xlsx  <br/> |http:\\\sharepoint\sites\HR\SharedDocuments  <br/> |FY2016_Layoff.xlsx  <br/> |
+|Merger_Contoso.docx  <br/> |\\\FileShare\Operations\FY2018  <br/> |Merger_Contoso.docx  <br/> |
+|FY2018_Merger.xlsx  <br/> |http:\\\sharepoint\sites\HR\SharedDocuments  <br/> |FY2018_Merger.xlsx  <br/> |
 |10 cures for diseases.pptx  <br/> |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD  <br/> |10 cures for diseases  <br/> |
 |Data that is sent to the shared folder after you enable file obfuscation  <br/> |Re\*\*\*\*\*\*\*\*.xlsx  <br/> |C:\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
 |Me\*\*\*\*\*\*\*\*.docx  <br/> |\\\FileShare\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
@@ -86,7 +86,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 #### To enable file obfuscation by using Group Policy settings
 
-The following table describes the name and path of the Group Policy setting that enables file obfuscation. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The following table describes the name and path of the Group Policy setting that enables file obfuscation. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
 **Group policy setting that enables file obfuscation**
 
@@ -143,9 +143,9 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 #### To configure exclusion settings by using Group Policy settings
 
-The following table describes the name and path of the Group Policy settings that exclude reporting for selected Office applications and solutions. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The following table describes the name and path of the Group Policy settings that exclude reporting for selected Office applications and solutions. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
-**Exclusion policy settings under Configuration\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**
+**Exclusion policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**
 
 |**Setting**|**Description**|
 |:-----|:-----|
@@ -173,7 +173,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 ### To stop telemetry logging by using the Group Policy settings
 
-The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Administrative Template files (ADMX/AMDL) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
 **Telemetry agent policy settings that disable telemetry logging**
 
@@ -186,12 +186,11 @@ The policy settings that are listed in the following table are available in the 
 
 ## Delete telemetry and inventory data that is stored on client computers
 
-Disabling logging does not delete the data that has already been collected from a computer. To delete this data on the local client computer, delete the files evt.tbl, sln.tbl, user.tbl that are located under %LocalAppData%\Microsoft\Office16.0\Telemetry\Microsoft\Office\16.0\Telemetry\.
+Disabling logging does not delete the data that has already been collected from a computer. To delete this data on the local client computer, delete the files evt.tbl, sln.tbl, user.tbl that are located under %LocalAppData%\Microsoft\Office\16.0\Telemetry.
 
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-
-[Data that the telemetry agent collects in Office](data-that-the-telemetry-agent-collects-in-office.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Data that the telemetry agent collects in Office](data-that-the-telemetry-agent-collects-in-office.md)
 

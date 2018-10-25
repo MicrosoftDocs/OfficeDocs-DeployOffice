@@ -14,11 +14,11 @@ description: "Explains how to view the stability of Office documents and solutio
 
 # Monitor Office compatibility and deployments by using Telemetry Dashboard
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Telemetry Dashboard. 
-  
   
 After you deploy the components of Telemetry Dashboard and the telemetry agents have collected data, you can use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Telemetry Dashboard. 
   
@@ -33,6 +33,8 @@ To help you get started, view this short video called  *Quick tips for Telemetry
 **Short video about Telemetry Dashboard navigation**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e766090b-4229-45d5-a9cc-dee992054990?autoplay=false]
+
+*Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   
 The way you start Telemetry Dashboard depends on the operating system you're using. The following table lists and describes the procedures for each supported operating system:
   
@@ -40,9 +42,12 @@ The way you start Telemetry Dashboard depends on the operating system you're usi
 
 |**Operating system**|**How to start Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, **Microsoft Office 2016**, **Office 2016 Tools**, **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Micorosft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+
+For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+
    
 ### To connect to the telemetry database
 
@@ -78,7 +83,7 @@ The following table briefly describes the primary worksheets in Telemetry Dashbo
 |:-----|:-----|
 |Overview  <br/> |Provides a quick view of the health of Office documents and solutions and a view of deployment trends. The links on this worksheet help you investigate Office compatibility and stability issues in your organization.  <br/> |
 |Documents  <br/> |Helps you investigate which Office documents are the most heavily used and identify documents that are experiencing issues.  <br/> <br/>This worksheet shows Office documents that were detected in the Most Recently Used (MRU) files in the local registry of monitored clients that run Office and earlier supported versions of Office.  <br/> <br/>The list also contains load events for monitored clients that run Office. Select any of the value links to open a worksheet that provides more detail. For example, in the **Total Users** column, you can select any number to view the users who have that file in their MRU list.  <br/> |
-|Solutions  <br/> |Shows details about solutions, such as COM add-ins, that were detected on monitored computers. This worksheet also shows telemetry data about load events on monitored client computers that run Office 2016.  <br/> <br/>Check the **Critical** column for a count of the number of unique users who have hit critical errors that the solutions are causing on Office 2016 clients. By reviewing critical errors and the number of users affected, you can decide whether to forcibly block add-ins that are crashing for many users. To do so, choose the **Add-in management mode** link at the top of the worksheet.  <br/> <br/>You can also investigate performance issues that might be causing a solution to take a longer time to load than expected on some computers. The load time values that are displayed in this worksheet are statistical averages. Select on of the value links to see individual user load times for a particular document.  <br/> |
+|Solutions  <br/> |Shows details about solutions, such as COM add-ins, that were detected on monitored computers. This worksheet also shows telemetry data about load events on monitored client computers that run Office.  <br/> <br/>Check the **Critical** column for a count of the number of unique users who have hit critical errors that the solutions are causing on Office clients. By reviewing critical errors and the number of users affected, you can decide whether to forcibly block add-ins that are crashing for many users. To do so, choose the **Add-in management mode** link at the top of the worksheet.  <br/> <br/>You can also investigate performance issues that might be causing a solution to take a longer time to load than expected on some computers. The load time values that are displayed in this worksheet are statistical averages. Select on of the value links to see individual user load times for a particular document.  <br/> |
 |Telemetry Processor  <br/> |Lists the servers that run a telemetry processor, the number of users and computers that are monitored, and the date and time of the last update.  <br/> |
 |Deployments  <br/> |Lists the versions of Office that are detected and other details, such as architecture type and number of unique instances of each version.  <br/> |
 |Custom report  <br/> |Helps you to create a PivotTable report so that you can customize how you view the data in Telemetry Dashboard. Create a custom report if the **Documents** and **Solutions** worksheets don't display data in the way that you want to view it. To learn more, see [Custom reporting and database schema reference for Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md). <br/> |
@@ -108,15 +113,14 @@ In the navigation pane on the left side of the dashboard, there are filters call
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:
   - **Frequently used** displays all documents or solutions that were used within the selected date range, sorted by total number of users.
-  - **Frequently used by Office 2016** displays all documents or solutions that were used by Office within the selected range, sorted by total number of users of Office.
+  - **Frequently used by Office 2016 and later** displays all documents or solutions that were used by Office within the selected range, sorted by total number of users of Office.
   - **Attention items** displays all documents or solutions that have critical issues that were found within the selected date range.
   - **Stability - Top 400/100** displays the documents (up to 400) or solutions (up to 100) that have success rates that are less than the target threshold (95% for documents, 99.9% for solutions).
 
-  ![An image of the View drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_ViewBox.png)
-   
+
 <a name="stability"> </a>
 
-## Determine the overall stability of Office 2016 documents and solutions throughout your organization
+## Determine the overall stability of Office documents and solutions throughout your organization
 
 The **Overview** worksheet allows you to quickly understand how your critical documents and solutions (add-ins) are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. 
   
@@ -170,7 +174,7 @@ Back on the **Overview** worksheet, under the stable and unstable counts, you ca
   
 <a name="deploystatus"> </a>
 
-## View the progress of Office 2016 deployments in your organization
+## View the progress of Office deployments in your organization
 
 You can track your overall Office deployment progress by looking at the chart at the lower part of the **Overview** worksheet. This shows the number of users who are running each Office version and how the Office deployments have changed over time. By using this chart, you can quickly check the deployment status and share progress with your stakeholders. 
   
@@ -199,11 +203,11 @@ When you view a worksheet in Telemetry Dashboard, you might see the following me
 
 ![A screenshot of the Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
   
-To resolve this issue, enable the Telemetry Dashboard COM add-in that is available in Office Professional Plus 2016, Office Standard 2016, and Office 365 ProPlus. 
+To resolve this issue, enable the Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
   
 ### To enable the Telemetry Dashboard COM add-in
 
-1. Start Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Office 2016 Tools** in Windows 10 or Windows 7. 
+1. Start Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
     
 2. Select the **Let's get started** button. 
     
@@ -242,11 +246,9 @@ In addition, do the following:
 For more information about how to troubleshoot the telemetry processor, see [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).
   
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Assess Office compatibility](assess-office-compatibility.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-  
-[Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Assess Office compatibility](assess-office-compatibility.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 
