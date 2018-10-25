@@ -58,11 +58,11 @@ There are two main sections on the Documents worksheet:
   
 - **Office usage**
     
-- **Office 2016 telemetry data**
+- **Office 2016 and later telemetry data**
     
 The columns under the **Office usage** section display usage data that is collected by the Telemetry Agent. You can select the link for the number of users of a document to see who is using the document. This information is displayed in the **Document details** worksheet. 
   
-The columns under the **Office 2016 telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed in the **Document issues** worksheet. 
+The columns under the **Office 2016 and later telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed in the **Document issues** worksheet. 
   
 The following table describes each column in the **Documents** worksheet. 
   
@@ -74,18 +74,18 @@ The following table describes each column in the **Documents** worksheet.
 |**Section**|**Column**|**Description**|
 |:-----|:-----|:-----|
 |Office usage  <br/> |File name  <br/> |Shows the file name of each document.  <br/> |
-||Total users  <br/> |Shows the number of users who opened each document by using Office 2003, Office 2007, Office 2010, Office 2013, and Office 2016  <br/> |
+||Total users  <br/> |Shows the number of users who opened each document by using Office 2003, Office 2007, Office 2010, Office 2013, Office 2016, and Office 2019.  <br/> |
 ||Office 2003  <br/> |Shows the number of users who opened each document by using Office 2003.  <br/> |
 ||Office 2007  <br/> |Shows the number of users who opened each document by using Office 2007.  <br/> |
 ||Office 2010  <br/> |Shows the number of users who opened each document by using Office 2010.  <br/> |
 ||Office 2013  <br/> |Shows the number of users who opened each document by using Office 2013.  <br/> |
-||Office 2016  <br/> |Shows the number of users who opened each document by using Office 2016.  <br/> |
+||Office 2016 and later <br/> |Shows the number of users who opened each document by using Office 2016 or Office 2019.  <br/> |
 ||Office 2003 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2003  <br/> |
 ||Office 2007 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2007.  <br/> |
 ||Office 2010 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2010.  <br/> |
 ||Office 2013 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2013.  <br/> |
-||Office 2016 (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2016.  <br/> |
-|Office 2016 telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened documents (no critical errors occurred) out of the total number of sessions.  <br/> |
+||Office 2016 and later (computers)  <br/> |Shows the number of computers on which users opened each document by using Office 2016 or Office 2019.  <br/> |
+|Office 2016 and later telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened documents (no critical errors occurred) out of the total number of sessions.  <br/> |
 ||Sessions  <br/> |Shows the total number of sessions. A session refers to all selected file open events.  <br/> |
 ||Trend  <br/> |Shows the trend of changes that occurred between the current week and a week within the selected period. You can change the period by using the **Date range** filter in the navigation pane. For example, if you select **1 year** from the **Date range**, the column shows a trend that compares the current week to a week from one year prior.  <br/> |
 ||Critical  <br/> |Shows the number of users who encountered critical issues.  <br/> |
@@ -136,7 +136,7 @@ The following table describes each column in the **Document details** worksheet.
 
 ## Document issues worksheet
 
-The **Document issues** worksheet appears after you select a link under **Office 2016 telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
+The **Document issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
   
 The following screen shot shows the **Document issues** worksheet. 
   
@@ -211,11 +211,11 @@ There are two main sections on the **Solutions** worksheet:
   
 - **Office usage**
     
-- **Office 2016 telemetry data**
+- **Office 2016 and later telemetry data**
     
 The columns under the **Office usage** section display the usage data that is collected by the telemetry agent. You can select the link for the number of users of a solution to see who is using the solution. This information is displayed on the **Solution details** worksheet. 
   
-The columns under the **Office 2016 telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed on the **Solution issues** worksheet. 
+The columns under the **Office 2016 and later telemetry data** section display telemetry data that is collected by telemetry logging. You can select the link for the number of users who hit critical or informative issues to see more details. This information is displayed on the **Solution issues** worksheet. 
   
 The following table describes each column in the **Solutions** worksheet. 
   
@@ -231,14 +231,14 @@ The following table describes each column in the **Solutions** worksheet.
 ||Office 2007  <br/> |Shows the number of users who use the solution in Office 2007.  <br/> |
 ||Office 2010  <br/> |Shows the number of users who use the solution in Office 2010.  <br/> |
 ||Office 2013  <br/> |Shows the number of users who use the solution in Office 2013.  <br/> |
-||Office 2016  <br/> |Shows the number of users who use the solution in Office 2016.  <br/> |
+||Office 2016 and later  <br/> |Shows the number of users who use the solution in Office 2016 or Office 2019.  <br/> |
 ||Total computers  <br/> |Shows the number of computers where the solution was opened by using Office 2003, Office 2007, Office 2010, Office 2013, and Office 2016.  <br/> |
 ||Office 2003 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2003.  <br/> |
 ||Office 2007 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2007.  <br/> |
 ||Office 2010 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2010.  <br/> |
 ||Office 2013 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2013.  <br/> |
-||Office 2016 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2016.  <br/> |
-|Office 2016 telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened solutions (no critical error occurred) out of total sessions.  <br/> |
+||Office 2016 and later (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2016 or Office 2019.  <br/> |
+|Office 2016 and later telemetry data  <br/> |Success (%)  <br/> |Shows the percentage of successfully opened solutions (no critical error occurred) out of total sessions.  <br/> |
 ||Sessions  <br/> |Shows the total number of sessions. A session refers to all selected file open events.  <br/> |
 ||Trend  <br/> |Shows the trend of changes that occurred between this week and a week within the selected period. You can change the period by using the **Date range** filter in the navigation pane. For example, if you select **1 year** from the **Date range**, the column shows a trend that compares this week to a week from one year prior.  <br/> |
 ||Critical  <br/> |Shows the number of users who encountered critical issues  <br/> |
@@ -295,7 +295,7 @@ The following table describes each column in the **Solution details** worksheet.
 
 ## Solution issues worksheet
 
-The **Solution issues** worksheet appears after you select a link under **Office 2016 telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
+The **Solution issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
   
 The following screen shot shows the **Solution issues** worksheet. 
   
