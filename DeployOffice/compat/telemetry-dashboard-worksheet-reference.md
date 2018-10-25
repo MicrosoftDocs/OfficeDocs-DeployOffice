@@ -232,7 +232,7 @@ The following table describes each column in the **Solutions** worksheet.
 ||Office 2010  <br/> |Shows the number of users who use the solution in Office 2010.  <br/> |
 ||Office 2013  <br/> |Shows the number of users who use the solution in Office 2013.  <br/> |
 ||Office 2016 and later  <br/> |Shows the number of users who use the solution in Office 2016 or Office 2019.  <br/> |
-||Total computers  <br/> |Shows the number of computers where the solution was opened by using Office 2003, Office 2007, Office 2010, Office 2013, Office 2016, of Office 2019.  <br/> |
+||Total computers  <br/> |Shows the number of computers where the solution was opened by using Office 2003, Office 2007, Office 2010, Office 2013, Office 2016, or Office 2019.  <br/> |
 ||Office 2003 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2003.  <br/> |
 ||Office 2007 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2007.  <br/> |
 ||Office 2010 (computers)  <br/> |Shows the number of computers where the solution was opened by using Office 2010.  <br/> |
