@@ -111,7 +111,7 @@ In the navigation pane on the left side of the dashboard, there are filters call
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:
   - **Frequently used** displays all documents or solutions that were used within the selected date range, sorted by total number of users.
-  - **Frequently used by Office 2016** displays all documents or solutions that were used by Office within the selected range, sorted by total number of users of Office.
+  - **Frequently used by Office 2016 and later** displays all documents or solutions that were used by Office within the selected range, sorted by total number of users of Office.
   - **Attention items** displays all documents or solutions that have critical issues that were found within the selected date range.
   - **Stability - Top 400/100** displays the documents (up to 400) or solutions (up to 100) that have success rates that are less than the target threshold (95% for documents, 99.9% for solutions).
 
