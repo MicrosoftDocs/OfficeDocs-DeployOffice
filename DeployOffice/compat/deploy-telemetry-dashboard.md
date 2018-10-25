@@ -62,23 +62,23 @@ SQL Server must be deployed before you can configure Telemetry Dashboard. You do
 
 - SQL Server 2005 or SQL Server 2005 Express Edition
 
-The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2012 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2012 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2012 Express. 
+The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
-- Ensure that the computer meets the hardware and software requirements for SQL Server 2012. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2012](https://go.microsoft.com/fwlink/p/?LinkID=129377).
+- Ensure that the computer meets the hardware and software requirements for SQL Server 2014. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014).
 
-- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2012 from the Installation Wizard (Setup)](https://go.microsoft.com/fwlink/p/?LinkID=254657).
+- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2014 from the Installation Wizard (Setup)](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup?view=sql-server-2014).
 
 <a name="installsql"> </a>
 
-### To download and install SQL Server 2012 Express
+### To download and install SQL Server 2014 Express
 
-1. In Telemetry Dashboard, on the **Getting started** worksheet, under **1. Set up prerequisites**, choose the link to download and install SQL Server 2012 Express with Tools. Choose the 32-bit or 64-bit edition, as appropriate. Or use this link: [Microsoft SQL Server 2012 Express](https://go.microsoft.com/fwlink/p/?LinkId=246610).
+1. In Telemetry Dashboard, on the **Getting started** worksheet, under **1. Set up prerequisites**, choose the link to download and install SQL Server 2014 Express with Tools. Choose the 32-bit or 64-bit edition, as appropriate. Or use this link: [Microsoft SQL Server 2014 Express](https://www.microsoft.com/download/details.aspx?id=42299).
 
-2. The setup process for SQL Server 2012 Express takes a while to download and extract files. Accept the various prompts and wait for the first page of SQL Server 2012 Express, which is named the **SQL Server Installation Center**, to appear after extraction is completed. Then, follow these steps:
+2. The setup process for SQL Server 2014 Express takes a while to download and extract files. Accept the various prompts and wait for the first page of SQL Server 2014 Express, which is named the **SQL Server Installation Center**, to appear after extraction is completed. Then, follow these steps:
 
    1. In the SQL Server Installation Center, choose **New SQL Server stand-alone installation or add features to an existing installation**.
 
-   2. In the SQL Server 2012 wizard, read the license terms, accept them, and then choose **Next**.
+   2. In the SQL Server 2014 setup wizard, read the license terms, accept them, and then choose **Next**.
 
    3. On the **Feature Selection** page, accept the default settings. Choose **Next**.
 
