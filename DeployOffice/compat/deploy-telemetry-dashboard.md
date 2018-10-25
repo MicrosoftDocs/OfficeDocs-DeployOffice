@@ -50,29 +50,17 @@ For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Offic
 
 SQL Server must be deployed before you can configure Telemetry Dashboard. You don't have to have an existing database, but you do have to install or have access to one of these versions of SQL Server:
 
-- SQL Server 2016
+- SQL Server 2016 or SQL Server 2016 Express
 
-- SQL Server 2016 Express
+- SQL Server 2014 or SQL Server 2014 Express
 
-- SQL Server 2014
+- SQL Server 2012 or SQL Server 2012 Express
 
-- SQL Server 2014 Express
+- SQL Server 2008 R2 or SQL Server 2008 R2 Express Edition
 
-- SQL Server 2012
+- SQL Server 2008 or SQL Server 2008 Express Edition
 
-- SQL Server 2012 Express
-
-- SQL Server 2008 R2
-
-- SQL Server 2008 R2 Express Edition
-
-- SQL Server 2008
-
-- SQL Server 2008 Express Edition
-
-- SQL Server 2005
-
-- SQL Server 2005 Express Edition
+- SQL Server 2005 or SQL Server 2005 Express Edition
 
 The **Getting started** worksheet in Telemetry Dashboard provides a link to download SQL Server 2012 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2012 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2012 Express. 
 
