@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Introduces compatibility mode in Office and how to set the default behavior for Word."
+description: "Provides an overview of compatibility mode in Office and how to set the default behavior for Word."
 ---
 
 # Manage compatibility mode for Office

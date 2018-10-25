@@ -25,7 +25,7 @@ Telemetry Dashboard is an Excel workbook that displays compatibility and invento
 
 The telemetry agent collects inventory, usage, and other application data and uploads it to a shared folder, where it is processed by a service known as the telemetry processor and inserted into an SQL database. The Telemetry Dashboard connects to this database so that it can show the usage of Office files, add-ins, and solutions.
 
-The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the telemetry agent never generates or collects any telemetry or inventory data until you enable telemetry logging. You can do this by using either the registry or the Group Policy Administrative Templates as described in [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, telemetry data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
+The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the telemetry agent never generates or collects any telemetry or inventory data until you enable telemetry logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, telemetry data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
 
 <a name="Configure"> </a>  
 
@@ -86,7 +86,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 #### To enable file obfuscation by using Group Policy settings
 
-The following table describes the name and path of the Group Policy setting that enables file obfuscation. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The following table describes the name and path of the Group Policy setting that enables file obfuscation. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
 **Group policy setting that enables file obfuscation**
 
@@ -143,7 +143,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 #### To configure exclusion settings by using Group Policy settings
 
-The following table describes the name and path of the Group Policy settings that exclude reporting for selected Office applications and solutions. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The following table describes the name and path of the Group Policy settings that exclude reporting for selected Office applications and solutions. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
 **Exclusion policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**
 
@@ -173,7 +173,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 ### To stop telemetry logging by using the Group Policy settings
 
-The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Office Administrative Templates from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Administrative Template files (ADMX/AMDL) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
 **Telemetry agent policy settings that disable telemetry logging**
 

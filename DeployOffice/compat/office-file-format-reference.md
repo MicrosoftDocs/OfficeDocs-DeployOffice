@@ -19,7 +19,7 @@ description: "Learn about the formats and their extensions used by Word, Excel, 
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
 
-<a name="word"> </a>
+
 ## File formats that are supported in Word
 
 
@@ -46,7 +46,7 @@ The following table describes the file formats that are supported in Word, alpha
 |.xml  <br/> |Word XML Document  <br/> |The XML file format supported in Word 2019, Word 2016, Word 2013, Word 2010, and Office Word 2007 (Open XML).  <br/> |
 |.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it keeps exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> <br/> You can use Word 2019, Word 2016, or Word 2013 to save documents in the XPS Document file format, but you can't open them by using Word 2019, Word 2016, or Word 2013.  <br/> |
    
-<a name="excel"> </a>
+
 ## File formats that are supported in Excel
 
 
@@ -85,7 +85,7 @@ The following tables describe the file formats that are supported in Excel.
 |.xml  <br/> |XML Data  <br/> |XML Data format.  <br/> |
 |.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it maintains exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> |
    
-<a name="powerpoint"> </a>
+
 ## File formats that are supported in PowerPoint
 
 
@@ -122,7 +122,7 @@ The following tables describe the file formats that are supported in PowerPoint.
 |.xml  <br/> |PowerPoint XML Presentation  <br/> |The XML format that is supported in PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010, and Office PowerPoint 2007.  <br/> |
 |.xps  <br/> |XPS Document  <br/> |XML Paper Specification (XPS), an electronic paper format for exchanging documents in their final form.  <br/> |
    
-<a name="unsupported"> </a>
+
 ## Unsupported file formats in Office
 
 Office applications do not support the file formats described in the following table
@@ -132,7 +132,7 @@ Office applications do not support the file formats described in the following t
 |Excel  <br/> | - Excel Chart (Excel 2.0, 3.0, and 2.x file formats) (.xlc)  <br/>  - Lotus 1-2-3 file formats (all versions) (.wk1, .wk2, .wk3, .wk4, .wks)  <br/>  - Microsoft Works (all versions) (.wks)  <br/>  - DBASE II file format (.dbf)  <br/>  - Quattro Pro for MS-DOS file format (.wq1)  <br/>  - Quattro Pro 5.0 and 7.0 for Windows (.wb1, .wb3)  <br/> |
 |PowerPoint  <br/> | - Opening or saving to PowerPoint 95 (or earlier) file formats  <br/>  - Pack and Go Wizard (.ppz) files.  <br/> - Web Page (.htm, .html) files  <br/> |
    
-<a name="additional"> </a>
+
 ## Additional file format information
 
 

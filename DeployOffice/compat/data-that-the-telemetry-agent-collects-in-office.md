@@ -24,17 +24,17 @@ description: "Learn about the data that the telemetry agent collects for Office.
 The telemetry agent collects several types of telemetry data for Office as described in this article. For example, 
   
 - The file names of Office files that are in the Most Recently Used list.
-    
+
 - The names of add-ins and solutions that interact with Office.
-    
+
 - System information such as user name and computer name.
     
 The agent collects different kinds of information for different applications as applicable. For example, for Excel, Microsoft Outlook, PowerPoint, and Word, the agent collects data that allows you to determine:
   
 - Whether the document has specific metadata for a particular file, such VBA macros, data connections, or ActiveX controls.
-    
+
 - Whether the document has encountered compatibility issues or critical errors while it is being used.
-    
+  
 - How Office files and solutions are used on a user's computer. Data of this type that is gathered by the agent is referred to as session data. 
     
 The agent doesn't collect any of the following kinds of information:
@@ -51,31 +51,20 @@ The agent doesn't collect any of the following kinds of information:
 The telemetry agent collects inventory-related data, hardware and software data, and user data in Office 2019, Office 2016, Office 2013, Office 2010, Office 2007, and Office 2003 for the following applications:
   
 - Access
-    
 - Excel
-    
 - OneNote
-    
 - Outlook
-    
 - PowerPoint
-    
 - Project
-    
 - Publisher
-    
 - Visio
-    
 - Word
     
 For Office 2019, Office 2016, and Office 2013 only, the agent collects telemetry data for the following applications:
   
 - Excel
-    
 - Outlook
-    
 - PowerPoint
-    
 - Word
     
 <a name="allComputers"> </a>

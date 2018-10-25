@@ -102,7 +102,7 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
     
 ## To connect Telemetry Dashboard to the telemetry database after you upgrade
 
-- On a computer where Office 2019 or Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
+On a computer where Office 2019 or Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
     
 ## Related topics
 

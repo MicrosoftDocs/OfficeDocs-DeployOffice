@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Explains how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment."
+description: "Provides an overview of how to assess compatibility between versions of Office in your deployment, and use tools like Telemetry Dashboard that help you plan for an Office deployment."
 ---
 
 # Assess Office compatibility

@@ -18,8 +18,7 @@ description: "Learn about the XML file formats and their extensions that are use
 
 XML file formats and their extensions are listed in the following tables for Word, Excel, PowerPoint, and Visio.
   
-    
-<a name="word"> </a>
+
 ## XML file types for Word
 
 The following table describes the file type, extension, and description for Word XML file formats.
@@ -34,7 +33,7 @@ The following table describes the file type, extension, and description for Word
 |Word Template  <br/> |.dotx  <br/> |The default format for a Word template. Created when document styles and formatting are saved. Can't store VBA macro code.  <br/> |
 |Word Macro-Enabled Template  <br/> |.dotm  <br/> |Stores macro code for use with other Word documents. Does not always contain macro code, but is configured to support the storage of macro code. Word documents created from a macro-enabled template do not inherit the VBAProject part of the template. By default, documents are saved as .docx files even when they are created from a Word macro-enabled template.  <br/> |
    
-<a name="excel"> </a>
+
 ## XML file types for Excel
 
 The following table describes the file type, extension, and description for Excel XML file formats.
@@ -50,7 +49,7 @@ The following table describes the file type, extension, and description for Exce
 |Excel Macro-Enabled Template  <br/> |.xltm  <br/> |Can contain a VBAProject part or Excel 4.0 macro sheets (.xlm files in Excel 4.0). Workbooks created from this template inherit the VBAProject part or Excel 4.0 macro sheets that exist in the template.  <br/> |
 |Excel Add-In  <br/> |.xlam  <br/> |A supplemental program that runs additional code. Excel add-ins use the Open XML file format to store data, and they support using VBA projects and Excel 4.0 macro sheets.  <br/> |
    
-<a name="powerpoint"> </a>
+
 ## XML file types for PowerPoint
 
 The following table describes the file type, extension, and description for PowerPoint XML file formats.
@@ -68,7 +67,7 @@ The following table describes the file type, extension, and description for Powe
 |PowerPoint Show  <br/> |.ppsx  <br/> |An XML-based PowerPoint auto-running slide show. Can't contain a VBAProject part.  <br/> |
 |PowerPoint Macro-Enabled Show  <br/> |.ppsm  <br/> |An XML-based PowerPoint slide show file that contains a VBAProject part. Created when the auto-running slide show includes VBA macro code.  <br/> |
    
-<a name="visio"> </a>
+
 ## XML file types for Visio
 
 Visio uses the XML file format package that is defined by the Open Packaging Conventions (ISO/IEC 29500-2:2008) standard. The XML content is based on the existing Visio XML Drawing (VDX) format.

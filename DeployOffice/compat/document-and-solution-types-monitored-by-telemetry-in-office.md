@@ -23,9 +23,8 @@ description: "Lists document and solution types that are monitored by Office tel
 
 ## Document and solution types that are monitored by Office telemetry
 
-The following table lists the document and solutions that Office telemetry monitors.
+The following table lists the document and solutions that Office telemetry monitors in Office 2019 and Office 2016.
   
-**Document and solution types that are monitored in Office 2019 and Office 2016**
 
 |**Type**|**Office Applications**|**Description**|
 |:-----|:-----|:-----|
