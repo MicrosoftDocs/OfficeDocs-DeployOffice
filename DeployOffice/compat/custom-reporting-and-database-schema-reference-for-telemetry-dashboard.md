@@ -63,6 +63,8 @@ In this video demo, you can see custom reporting in action. We compare data that
 **Custom reporting in Telemetry Dashboard**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed8327e4-c063-40f5-a634-230c067d73b4?autoplay=false]
+
+*Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   
 If you use large data sets in your custom reports, you might encounter the [2-GB memory limitation](https://go.microsoft.com/fwlink/p/?LinkID=330482) when you use the 32-bit version of Excel. There are a couple ways that you can work around this limitation: 
   

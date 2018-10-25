@@ -33,6 +33,8 @@ To help you get started, view this short video called  *Quick tips for Telemetry
 **Short video about Telemetry Dashboard navigation**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e766090b-4229-45d5-a9cc-dee992054990?autoplay=false]
+
+*Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   
 The way you start Telemetry Dashboard depends on the operating system you're using. The following table lists and describes the procedures for each supported operating system:
   
