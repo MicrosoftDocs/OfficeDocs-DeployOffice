@@ -40,7 +40,7 @@ When you choose the Word 2003 option, Word is configured to create new Open XML 
   
 If you select **Full functionality mode**, there is no effect on the Word 2007 and Word 2010 users. They can open and edit Word 2019, Word 2016, and Word 2013 documents. The only difference is that new features in Word 2013 and later are not available in Word 2007 or Word 2010.
   
-You can download the Administrative Templates files (ADMX/ADML) for Group Policy from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030). The **Set default compatibility mode on file creation** policy setting is located under User Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\Save.
+You can download the Group Policy Administrative Templates files (ADMX/ADML) for Office from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030). The **Set default compatibility mode on file creation** policy setting is located under User Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\Save.
   
 ## Related topics
 
