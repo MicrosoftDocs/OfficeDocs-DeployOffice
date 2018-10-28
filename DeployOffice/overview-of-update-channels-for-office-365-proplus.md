@@ -119,7 +119,7 @@ Semi-Annual Channel is the default update channel for Office 365 ProPlus. But yo
     
 - Provide your application compatibility testers with Semi-Annual Channel (Targeted) so that they can test that the finance applications will work with the next Semi-Annual Channel feature release.
     
-To configure the update channel for an Office 365 ProPlus installation, you can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) or use the [Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030).
+To configure the update channel for an Office 365 ProPlus installation, you can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) or use the [Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030). See [Configure update settings for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/configure-update-settings-for-office-365-proplus) for a guide on how to do this.
   
 If you use the Office Deployment Tool, you can use the Channel attribute in the configuration.xml file. The Channel attribute can be specified in the Add element or the Update element. The relevant values are "Monthly" for Monthly Channel, "Broad" for Semi-Annual Channel, and "Targeted" for Semi-Annual Channel (Targeted). For example, if you want to download and install the Monthly Channel of Office 365 ProPlus, your configuration.xml file would look like the following example. 
   
@@ -142,7 +142,7 @@ You can also provide users with Semi-Annual Channel (Targeted) by selecting them
 
 Here is some additional information that might be useful to know as you determine how to configure and use Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted) in your organization.
   
-- You can switch an Office 365 ProPlus installation from one update channel to another. For example, you might want to move a user from Monthly Channel to Semi-Annual Channel. To switch update channels, you can use the Office Deployment Tool or Group Policy.
+- You can switch an Office 365 ProPlus installation from one update channel to another. For example, you might want to move a user from Monthly Channel to Semi-Annual Channel. To do this, you can use the Office Deployment Tool or Group Policy. See [Configure update settings for Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/configure-update-settings-for-office-365-proplus) for more information.
     
 - If the user does an Online Repair of Office 365 ProPlus, the installation reverts to Semi-Annual Channel, unless you've configured a Group Policy setting to provide a different update channel.
 
