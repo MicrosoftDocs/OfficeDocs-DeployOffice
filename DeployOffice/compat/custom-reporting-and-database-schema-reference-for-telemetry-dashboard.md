@@ -14,10 +14,12 @@ description: "Describes how to create custom reports in Telemetry Dashboard, sho
 
 # Custom reporting and database schema reference for Telemetry Dashboard
 
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+
+
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Describes how to create custom reports in Telemetry Dashboard, shows sample reports, and lists the tables and fields in the telemetry database. 
   
   
 The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
@@ -61,10 +63,12 @@ In this video demo, you can see custom reporting in action. We compare data that
 **Custom reporting in Telemetry Dashboard**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed8327e4-c063-40f5-a634-230c067d73b4?autoplay=false]
+
+*Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   
-If you use large data sets in your custom reports, you might encounter the [2-GB memory limitation](https://go.microsoft.com/fwlink/p/?LinkID=330482) when you use the 32-bit version of Excel 2016. There are a couple ways that you can work around this limitation: 
+If you use large data sets in your custom reports, you might encounter the [2-GB memory limitation](https://go.microsoft.com/fwlink/p/?LinkID=330482) when you use the 32-bit version of Excel. There are a couple ways that you can work around this limitation: 
   
-- Use the 64-bit version of Excel 2016, which doesn't have the 2-GB memory limitation, but does have other drawbacks. See [Choose between the 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/p/?LinkId=250955) to learn more. 
+- Use the 64-bit version of Excel, which doesn't have the 2-GB memory limitation, but does have other drawbacks. See [Choose between the 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/p/?LinkId=250955) to learn more. 
     
 - Adjust the reporting threshold in the telemetry database to change how much data is pulled into PowerPivot when custom reports are created, You can learn more about this setting in [How to configure privacy and performance settings in Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure).
     
@@ -74,9 +78,11 @@ To create a custom report, you have to first start Telemetry Dashboard. The foll
 
 |**If you have this operating system**|**Follow these steps to start Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016**, then **Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8 or Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+
+For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
    
 ### To create a custom report
 
@@ -131,7 +137,7 @@ The following table lists the fields in the **Events** table.
 |**Field name**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |Event ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (see Table 2)  <br/> |
+|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (see Table 2)  <br/> |
 |Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table.  <br/> |
 |Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
 |User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table.  <br/> |
@@ -339,7 +345,7 @@ The following table describes the fields in the System_details table.
 |Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
 |Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
 |Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
-|Office 16  <br/> |String  <br/> |Shows Office 2016 version details, if it is installed.  <br/> |
+|Office 16  <br/> |String  <br/> |Shows Office 365 ProPlus, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
    
 <a name="default_relationships"> </a>
 
@@ -360,9 +366,8 @@ The following illustrations show the relationships between tables in the telemet
 ![Shows the Issue_Summary table and its relationships to other tables in the telemetry database](../images/ORK_CR_Issue_Summary.gif)
   
 ## Related topics
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-  
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-  
-[Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 

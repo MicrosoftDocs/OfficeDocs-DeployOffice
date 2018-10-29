@@ -17,7 +17,7 @@ description: "Provides information for IT Pros about shared computer activation 
 # Overview of shared computer activation for Office 365 ProPlus
 
 > [!IMPORTANT]
-> This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office 365, Office 2016, or Office 2013](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
+> This information is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
 Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios for using shared computer activation:
 
@@ -53,7 +53,7 @@ The [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), co
 After Office 365 ProPlus is installed, you can [verify that shared computer activation is enabled](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md#Enabled) on that computer.
   
 > [!NOTE]
-> If you've already deployed Office 365 ProPlus, you can enable shared computer activation on a computer by using Registry Editor to add a string value of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration. <br/><br/>If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing and it's a DWORD value. <br/><br/>You can also enable shared computer activation by using Group Policy. If you're using Group Policy, download the most current [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+> If you've already deployed Office 365 ProPlus, you can enable shared computer activation on a computer by using Registry Editor to add a string value of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration. <br/><br/>If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing and it's a DWORD value. <br/><br/>You can also enable shared computer activation by using Group Policy. If you're using Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
   
 <a name="Works"> </a>
 
@@ -110,7 +110,7 @@ If you don't use single sign-on, you should consider using roaming profiles and 
   
 To configure licensing token roaming, you can use either the Office Deployment Tool or Group Policy, or you can use Registry Editor to edit the registry. Whichever method you choose, you need to provide a folder location that is unique to the user. The folder location can either be part of the user's roaming profile or a shared folder on the network. Office needs to be able to write to that folder location. If you're using a shared folder on the network, be aware that network latency problems can adversely impact the time it takes to open Office.
     
-- If you're using Group Policy, download the most current [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Specify the location to save the licensing token used by shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+- If you're using Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Specify the location to save the licensing token used by shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
     
 - If you're using the Office Deployment Tool, include the SCLCacheOverride and SCLCacheOverrideDirectory in the Property element of your configuration.xml file. For more information, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
     

@@ -84,7 +84,7 @@ If you already use other tools to deploy software to your users, such as System 
   
 ## Configure user settings for Visio by using Group Policy
 
-If you want to specify and maintain certain user settings for your Visio installations, you can [download the Office 2016 Group Policy Administrative Template (ADMX/ADML) files](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
+If you want to specify and maintain certain user settings for your Visio installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
   
 The same Group Policy settings work for the subscription version of Visio, as well as volume licensed versions of Visio, such as Visio Professional 2019 or Visio Standard 2016.
   

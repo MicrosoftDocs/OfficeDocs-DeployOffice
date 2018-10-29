@@ -21,7 +21,7 @@ The following information shows administrators what controls are available for s
 > - Unless otherwise noted, the listed connected services are subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/).
 > - Users access these services through Office applications, such as Excel or PowerPoint. 
 > - Some of these services may be available in other versions of Office, such as Office Professional Plus 2016. 
-> - For Group Policy, be sure to download the latest [Office 2016 Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) so that you have the most current policy settings.
+> - For Group Policy, be sure to download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) so that you have the most current policy settings.
 
 
 ## 3D Maps

@@ -20,6 +20,8 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 ## Featured
 
+- [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md)
+
 - [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md)
  
 - [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)

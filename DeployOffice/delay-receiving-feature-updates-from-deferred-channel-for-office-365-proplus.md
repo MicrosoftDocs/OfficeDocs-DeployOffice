@@ -62,5 +62,5 @@ To download the latest build with the Office Deployment Tool, you need to config
   
 [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065)
   
-[Download the Office 2016 Administrative Template files (ADMX/ADML) for Group Policy](https://www.microsoft.com/download/details.aspx?id=49030)
+[Download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030)
 
