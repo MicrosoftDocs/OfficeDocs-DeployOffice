@@ -26,7 +26,7 @@ If you haven't already, complete the [assessment](assess-office-365-proplus.md) 
 
 This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Office 365 or Office 2016 on your PC or Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office 2016 offline installer](https://support.office.com/en-us/article/Use-the-Office-2016-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
 
-## Best practices and requirements
+## Best practices 
 
 The steps in this article are based on the following best practices:
 
@@ -34,7 +34,7 @@ The steps in this article are based on the following best practices:
 - **Build two Office installation packages**: One package uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each installation package includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the installation package. To deploy both versions, you create additional installation packages. For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files). 
 - **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
-You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more information on those customizations, see [Customize your deployment](deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager#customize-your-deployment). 
+You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project.  
 
 ## Step 1: Create shared folders for Office installation files 
 
@@ -64,7 +64,7 @@ After downloading the file, run the self-extracting executable file, which conta
 To download and deploy Office 365 ProPlus to the pilot group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/). 
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend the following options:
-- **Products:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
+ - **Products:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
  - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
  - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
  - **Installation:** Select Local source, and type "\\\Server\Share\O365\SACT" for the source path. Office will be downloaded to and then installed from **\\\server\share\O365\SACT** on your network 
@@ -83,7 +83,7 @@ Note that the Office installation files and Office updates will come from Semi-A
 Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend matching the same options as the pilot group in Step 3, except for the following changes:
- - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+ - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the pilot group 
  - **Installation:** Select Local source, and type "\\\Server\Share\O365\SAC" for the source path. Office will be downloaded to and then installed from **\\\server\share\O365\SAC** on your network 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\O365** folder.
 

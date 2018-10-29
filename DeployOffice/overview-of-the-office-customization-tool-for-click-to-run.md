@@ -17,7 +17,7 @@ description: "The Office Customization Tool creates the configuration files that
 
 # Overview of the Office Customization Tool
 
-The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](https://putlinkhere/) to deploy a customized version of Office.
+The [Office Customization Tool](https://config.office.com/) creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](https://putlinkhere/) to deploy a customized version of Office.
 
 > [!NOTE] 
 > The Office Customization Tool is part of the deployment process for installing Office on hundreds or thousands of computers. To follow this process end-to-end, we recommend completing the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. If you're not an enterprise administrator and are looking to install Office 365 in your home or business, see [Install Office with Office 365](https://go.microsoft.com/fwlink/?LinkId=273820).
@@ -31,7 +31,7 @@ To work with the service, go to [Office Customization Tool](https://config.offic
 
 ## Create a configuration file
 
-Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office.
+Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office. Note that a product and language must be selected before you can export the configuration file.
 
 1. Go to [Office Customization Tool](https://config.office.com/).
 2. In the **General** section, type your organization name and a description for this particular configuration. For example, you might want to use this file to install the 64-bit version of Office for your finance department.
