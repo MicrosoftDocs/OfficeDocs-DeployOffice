@@ -1,6 +1,7 @@
  
 # Get started
 ## [Deployment guide](deployment-guide-for-office-365-proplus.md)
+## [What's new](whats-new-office-it-pros.md)
 ## [About Office 365 ProPlus](about-office-365-proplus-in-the-enterprise.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
 
