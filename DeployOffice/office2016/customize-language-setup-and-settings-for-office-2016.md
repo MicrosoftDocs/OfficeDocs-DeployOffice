@@ -132,26 +132,26 @@ The following steps are the same as the standard steps for deploying Office 2016
     
     For example, to specify that setup install both English and French, with English as the default installation language, add the following elements:
     
-  ```
-  <AddLanguage Id="en-us" ShellTransform="yes"/>
-  <AddLanguage Id="fr-fr" />
-  ```
+   ```
+   <AddLanguage Id="en-us" ShellTransform="yes"/>
+   <AddLanguage Id="fr-fr" />
+   ```
 
     If you want the default installation language and the Shell UI to match the operating system language, and you also want every user to have Office in both English and French, the code in the Config.xml file resembles the following example:
     
-  ```
-  <AddLanguage Id="match" ShellTransform="yes"/> 
-  <AddLanguage Id="en-us" />
-  <AddLanguage Id="fr-fr" /> 
-  ```
+   ```
+   <AddLanguage Id="match" ShellTransform="yes"/> 
+   <AddLanguage Id="en-us" />
+   <AddLanguage Id="fr-fr" /> 
+   ```
 
     You are required to specify a value for the **ShellTransform** attribute when you add more than one **\<AddLanguage\>** element. Skipping this step causes the installation to fail. 
     
 8. To specify that setup also match the language of the user's Windows user locale, add another line in the Config.xml file: 
     
-  ```
-  <AddLanguage Id="match" /> 
-  ```
+   ```
+   <AddLanguage Id="match" /> 
+   ```
 
     When you do this, setup installs all specified languages plus the language that matches the user locale, if that language is different. 
     
@@ -235,7 +235,7 @@ The following policy settings help you manage language settings in Office 2016:
 |Primary Editing Language  <br/> |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** <br/> |Specifies the language in which users work with Office applications and documents when more than one language version is available on the computer.  <br/> |
    
 > [!IMPORTANT]
-> Before you can configure Office 2016 policy settings, you must download and install the latest [Office 2016 Administrative Template files](https://go.microsoft.com/fwlink/p/?LinkId=626001). 
+> Before you can configure Office 2016 policy settings, you must download and install the latest [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkId=626001). 
   
 ### To use Group Policy to manage language settings
 
@@ -245,12 +245,12 @@ The following policy settings help you manage language settings in Office 2016:
     
 3. Under **Language Preferences**, choose either the **Display Language** or the **Editing Languages** folder, depending on what you want to configure: 
     
-  - The **Display Language** folder contains policy settings that allow you to enable language preferences for UI items such as menu items and Help. 
+   - The **Display Language** folder contains policy settings that allow you to enable language preferences for UI items such as menu items and Help. 
     
-  - The **Enable Language** folder contains policy settings that allow you to choose and configure editing languages. 
+   - The **Enable Language** folder contains policy settings that allow you to choose and configure editing languages. 
     
-    > [!NOTE]
-    > Each policy setting provides a description of what it enforces. 
+     > [!NOTE]
+     > Each policy setting provides a description of what it enforces. 
   
 4. In the details pane, open (double-click) the policy setting that you want to configure, choose either **Enable** or **Disable**, and then specify any appropriate options that are provided.
     
@@ -282,9 +282,9 @@ If you are not enforcing language settings by policy, users who work in Office a
 
 1. Depending on your operating system, do one of the following:
     
-  - If you are running Windows 8, open **All Apps** (right-click the desktop), and then under **Microsoft Office 2016**, choose **Office 2016 Language Preferences**. Or, 
+   - If you are running Windows 8, open **All Apps** (right-click the desktop), and then under **Microsoft Office 2016**, choose **Office 2016 Language Preferences**. Or, 
     
-  - If you are running Windows 10 or Windows 7, choose **Start**, choose **All Programs**, choose **Microsoft Office**, choose **Microsoft Office 2016 Tools**, and then choose **Office 2016 Language Preferences**. 
+   - If you are running Windows 10 or Windows 7, choose **Start**, choose **All Programs**, choose **Microsoft Office**, choose **Microsoft Office 2016 Tools**, and then choose **Office 2016 Language Preferences**. 
     
 2. Under **Choose Editing Languages**, in the language list, choose the language that you want to be available for editing, and then choose **Add**. Repeat this step for each editing language that you want to add.
     
@@ -440,15 +440,15 @@ The following Config.xml file example shows every language that has the **Option
     
 4. For each set of proofing tools that you do not want to install, in the **OptionState** element, set the **State** attribute to **Absent**. For example, if you do not want Catalan proofing tools installed, use this syntax: 
     
-  ```
-  <OptionState Id="ProofingTools_1027" State="Absent" Children="force"/>
-  ```
+   ```
+   <OptionState Id="ProofingTools_1027" State="Absent" Children="force"/>
+   ```
 
 5. Set the **State** attribute for each set of proofing tools that you want to deploy to **Local** (or **Advertise**, if preferred). For example, to deploy Basque (Basque) proofing tools, you can use this syntax:
     
-  ```
-  <OptionState Id="ProofingTools_1069" State="Local" Children="force"/>
-  ```
+   ```
+   <OptionState Id="ProofingTools_1069" State="Local" Children="force"/>
+   ```
 
 6. Save the Config.xml file.
     

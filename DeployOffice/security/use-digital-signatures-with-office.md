@@ -60,11 +60,11 @@ The following scenario shows how you can use digital signatures on documents in 
   
 1. An employee uses Excel 2016 to create an expense report. The employee then creates three signature lines: one for herself, one for her manager, and one for the accounting department. The signatures serve to:
     
-  - identify that the employee is the originator of the document
+   - identify that the employee is the originator of the document
     
-  - indicate that no changes will occur in the document as it moves to the manager and the accounting department
+   - indicate that no changes will occur in the document as it moves to the manager and the accounting department
     
-  - demonstrate that there is proof that both the manager and the accounting department have received and reviewed the document
+   - demonstrate that there is proof that both the manager and the accounting department have received and reviewed the document
     
 2. The manager receives the document and adds her digital signature to the document, confirming that she has reviewed and approved it. She then forwards it to the accounting department for payment.
     
@@ -215,7 +215,7 @@ The following table shows Windows registry settings that are specific to digital
 ## Related topics
 [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631)
   
-[Office 2016 Administrative Template files (ADMX/ADML) and Office Customization Tool](https://go.microsoft.com/fwlink/p/?LinkID=626001)
+[Group Policy Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001)
   
 [Find digital ID or digital signature services](https://go.microsoft.com/fwlink/p/?LinkId=267581)
   

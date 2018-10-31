@@ -14,7 +14,7 @@ description: "Provides IT Pros with the steps to delay receiving feature updates
 
 # Delay receiving feature updates from Semi-Annual Channel for Office 365 ProPlus
 
-Office 365 clients that get updates from Semi-Annual Channel, such as Office 365 ProPlus, receive new features for the Office 2016 apps twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
+Office 365 clients that get updates from Semi-Annual Channel, such as Office 365 ProPlus, receive new features twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
   
 > [!IMPORTANT]
 > Starting with Version 1708, Deferred Channel is named Semi-Annual Channel. 
@@ -44,13 +44,6 @@ The following table provides information about the relevant Group Policy and Off
    
 On the second Tuesday of each month, until March 2019, you need to update the Group Policy setting or the configuration.xml with the latest build number for Version 1708 of Semi-Annual Channel. For example, for July 2018, you specify the target version as 16.0.8431.2280.
   
-Another possibility is to run the following command from an elevated command prompt:
-  
-```
-C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe /update user updatetoversion="16.0.8431.2280"
-```
-
-When you run this command, Office looks at the configured update location, such as the Office CDN, and tries to update to the specified version. This update happens immediately, instead of waiting for the next time Office is scheduled to look for updates, which could be in a few days.
   
 ## Delay receiving feature updates from Semi-Annual Channel when using an internal network location
 
@@ -58,7 +51,7 @@ If you don't want to get updates from the Office CDN, you can use Group Policy o
   
 To download the latest build with the Office Deployment Tool, you need to configure both the Version and the Channel attributes in the Add element of the configuration.xml file.
   
-##Related topics
+## Related topics
 [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
   
 [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
@@ -69,5 +62,5 @@ To download the latest build with the Office Deployment Tool, you need to config
   
 [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065)
   
-[Download the Office 2016 Administrative Template files (ADMX/ADML) for Group Policy](https://www.microsoft.com/download/details.aspx?id=49030)
+[Download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030)
 

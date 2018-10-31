@@ -1,5 +1,5 @@
 ---
-title: "Update Office Telemetry components for Office 2016"
+title: "Update Office Telemetry components"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,18 +9,19 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016."
+description: "Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2019 or Office 2016."
 ---
 
-# Update Office Telemetry components for Office 2016
+# Update Office Telemetry components
+
+***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
 > [!NOTE]
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
- **Summary:** Learn how to update telemetry processors and the telemetry database so that they work with Telemetry Dashboard in Office 2016. 
+Follow these steps if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. These steps aren't needed if you were using Office Telemetry Dashboard in Office 2016 and are now moving to Office 2019.
   
-  
-When you install Office 2016, Telemetry Dashboard and the built-in telemetry agents are updated to the new versions automatically. However, the telemetry processors and the telemetry database aren't updated, even if they are on the same computer as Office 2016. 
+When you install Office 2019 or Office 2016, Telemetry Dashboard and the built-in telemetry agents are updated to the new versions automatically. However, the telemetry processors and the telemetry database aren't updated, even if they are on the same computer as Office 2019 or Office 2016. 
   
 To use the new version of Telemetry Dashboard, you'll have to update the telemetry processors and telemetry database manually. If you don't, you'll see an error message similar to the following when you use Telemetry Dashboard to connect to the telemetry database:
   
@@ -31,15 +32,15 @@ You need to ensure that each computer on which you install the telemetry process
 Here are the procedures for uninstalling the old telemetry processors, installing the new telemetry processors, and updating the telemetry database.
   
 > [!NOTE]
-> Be sure that you get the list of telemetry processors before you install Office 2016. You can find the list on the [Telemetry Processor worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_TelemetryProcessorWorksheet) in Telemetry Dashboard. 
+> Be sure that you get the list of telemetry processors before you install Office 2019 or Office 2016. You can find the list on the [Telemetry Processor worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_TelemetryProcessorWorksheet) in Telemetry Dashboard. 
   
 ## To uninstall the old version of telemetry processor
 
 1. On each computer where telemetry processor is installed, uninstall telemetry processor from the Windows Control Panel.
     
-  - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+   - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
     
-  - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
+   - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
     
 2. In the list of programs, select **Microsoft Office Telemetry Processor**. 
     
@@ -47,11 +48,11 @@ Here are the procedures for uninstalling the old telemetry processors, installin
     
 The following two procedures describe two options for installing the telemetry processor. Pick the procedure that applies to your situation. Do this for each computer that's running telemetry processor. 
   
-## Option 1: To install the telemetry processor on a computer that's running Office 2016
+## Option 1: To install the telemetry processor on a computer that's running Office 2019 or Office 2016
 
 1. Ensure that the computer where you want to update the telemetry processor is also running the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
     
-2. On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Let's get started**.
+2. On a computer where Office 2019 or Office 2016 is running, open Telemetry Dashboard, and then select **Let's get started**.
     
 3. On the **Getting started** worksheet, expand **Step 2**, and then select **Install Telemetry Processor on This Computer**. This starts the **Microsoft Office Telemetry Processor Setup** wizard. 
     
@@ -59,9 +60,9 @@ The following two procedures describe two options for installing the telemetry p
     
 5. When installation is complete, select **Finish**, and then select **Yes** when you are prompted. This will open the **Office Telemetry Processor settings** wizard, where you can complete the next procedure, [To configure the telemetry processor and update the telemetry database](update-office-telemetry-components-for-office-2016.md#configure), for each computer.
     
-## Option 2: To copy the telemetry processor to a computer that isn't running Office 2016 and install it
+## Option 2: To copy the telemetry processor to a computer that isn't running Office 2019 or Office 2016 and install it
 
-1. On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Let's get started**.
+1. On a computer where Office 2019 or Office 2016 is running, open Telemetry Dashboard, and then select **Let's get started**.
     
 2. On the **Getting started** worksheet, expand **Step 2**, and then select the appropriate version of the **Save the Telemetry Processor MSI** link (either x86 or x64) to save the MSI file to the local computer. 
     
@@ -85,11 +86,11 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
     
 2. On the **Database Settings** page, do the following: 
     
-  1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2016. 
+   1. Verify that the server selected in **SQL server** corresponds to the database that you are updating for Office 2019 or Office 2016. 
     
-  2. Select **Connect** to connect to the SQL Server computer. 
+   2. Select **Connect** to connect to the SQL Server computer. 
     
-  3. Select the telemetry database in **SQL database**, and then select **Next**.
+   3. Select the telemetry database in **SQL database**, and then select **Next**.
     
 3. If you are prompted to update the database, select **Yes**. You'll only be prompted to do this on the first computer where you run the **Office Telemetry Processor settings** wizard. 
     
@@ -101,11 +102,10 @@ Complete the next procedure for each computer that runs Telemetry Processor. The
     
 ## To connect Telemetry Dashboard to the telemetry database after you upgrade
 
-- On a computer where Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
+On a computer where Office 2019 or Office 2016 is running, open Telemetry Dashboard, and then select **Connect to Database** to connect to the newly updated database. The connection should be successful and you won't see an error message about the database. 
     
 ## Related topics
-[Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-  
-[Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
 
-[Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
+- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)

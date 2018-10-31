@@ -101,7 +101,7 @@ description: Office deployment
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office 2016 for Mac</h3>
+                                                    <h3>Office for Mac</h3>
                                                     <p>Find guidance about deploying Office to Macs in your organization.</p>
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/office2016/what-s-new-for-admins-in-office-2016">
+                                <a href="/DeployOffice/office2019/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -120,15 +120,14 @@ description: Office deployment
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office 2016</h3>
+                                                    <h3>Office 2019</h3>
                                                     <p>Find guidance about deploying the volume licensed version of Office.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                            </li>                            
-                        </ul>
+                            </li><br/>                        </ul>
                     </li>
                 </ul>
             </li>

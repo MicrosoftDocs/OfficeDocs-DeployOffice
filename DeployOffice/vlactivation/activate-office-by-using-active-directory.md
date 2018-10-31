@@ -1,68 +1,62 @@
 ---
-title: "Active Directory Domain Services-based activation of Office 2016"
+title: "Activate volume licensed versions of Office by using Active Directory"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 3ae59488-8d05-44f5-bc38-740f073ea1fa
-description: "Describes the basics of Active Directory Domain Services-based activation of Office 2016 clients."
+description: "Provides Office admins with information about using Active Directory to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."
 ---
 
-# Active Directory Domain Services-based activation of Office 2016
+# Activate volume licensed versions of Office by using Active Directory
 
- **Summary:** Describes the basics of Active Directory Domain Services-based activation of Office 2016 clients. 
+***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
   
-  
-Active Directory Domain Services (AD DS)-based activation enables an enterprise to activate Office 2016 clients on computers in the corporate network through a connection to the domain. When a user joins a computer to the domain, the AD DS-based activation object automatically activates Office 2016 installed on the computer, as long as the computer has a [Generic Volume License Key (GVLK)](../office2016/gvlks-for-office-2016.md). No single physical computer is required to act as the activation object, because it is distributed throughout the domain. For more information about AD DS-based activation, see [Active Directory-Based Activation Overview](https://go.microsoft.com/fwlink/p/?LinkID=249006).
-  
-<a name="SupportedOSKMS"> </a>
+Active Directory-based activation enables an organization to activate volume licensed versions of Office, including Project and Visio, on computers that are joined to an Active Directory domain. Active Directory-based activation is implemented as a role service on Windows Server and relies on Active Directory Domain Services to store an activation object. For more information, see [Activate using Active Directory-based activation](https://docs.microsoft.com/windows/deployment/volume-activation/activate-using-active-directory-based-activation-client).
 
-## Supported operating systems for the client computers in an AD DS-based activation model
 
-You can use the KMS activation method with the 32-bit and 64-bit editions of these operating systems.
-  
-For the computer from which you run setup and configuration:
-  
+## Requirements for using Active Directory-based activation
+
+To use Active Directory-based activation, the volume licensed version of Office, Project, or Visio must have a Generic Volume License Key (GVLK) and must be installed on one of the following operating systems:
+
 - Windows 10
+- Windows 8.1
+- Windows Server 2016
+- Windows Server 2012 R2
+- Windows Server 2012  
     
-- Windows 8 or Windows 8.1
-    
-- Windows Server 2012 or Windows Server 2012 R2 
-    
-The domain controller must have Active Directory Domain Services with the Windows Server 2012 schema installed.
-  
-<a name="activateAD"> </a>
+Review the [System requirements for Office](https://products.office.com/office-system-requirements) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying the users in your organization. For example, Office Professional Plus 2019 is supported on Windows 10 but isn't supported on Windows 8.1.
 
-## Activate Office clients by using AD DS
 
-AD DS-based activation uses the same client product key and host key that are used by KMS. By using AD DS-based activation, the Software Protection Platform Service (SPPSvc) periodically attempts to activate the product key against either an Activation Object (AO) in AD DS or a discoverable KMS host computer if the AD DS-based activation attempt fails. A successful AD DS-based activation grants a license to the Office 2016 client for 180 days.
-  
-You must be a member of the Administrators group on the Active Directory Domain Services domain controller to activate the KMS key in order to use it for AD DS-based activation of Office.
-  
-### Set up an AD DS-based activation host for Office 2016
+## Configure Active Directory-based activation
 
-1. Download the [Microsoft Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164) and run **office2016volumelicensepack_4285-1000_en-us_x86.exe**. 
-    
-    This launches the **Volume Activation Tools** wizard. 
-    
-2. On the first page, choose **Next**, and on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
+To configure Active Directory-based activation, you must have Domain Administrator and Enterprise Administrator credentials.
+
+1. Sign in to a domain controller in Active Directory and use Server Manager to install the Volume Activation Services role.
+2. Sign in to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your KMS key for your version of Office.
+3. Download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164).
+4. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
+5. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
     
      ![Manage Activations Objects page](../images/473b8652-0fc8-4903-abb3-41cd3c5d45ce.png)
   
-3. On the **Manage Activation Objects** page, enter the KMS host key and, optionally, give it a name. 
-    
-4. Choose either the online or phone activation method and then follow the rest of the wizard instructions.
-    
-5. When you're done, an **Activation Succeeded** page displays. 
+6. On the **Manage Activation Objects** page, enter the KMS host key, which you got from the VLSC, and, optionally, give it a name. Then choose **Next**.
+7. On the **Activate Product** page, either activate the KMS host key online or by phone, and then follow the rest of the wizard instructions.
+8. When you're done, an **Activation Succeeded** page displays. 
+
+
+## Additional information about Active-Directory based activation
+
+- Active-Directory based activation uses the same keys that are used by Key Management Service (KMS). But Active Directory-based activation doesn't require a dedicated host computer, because the activation object is replicated across all the domain controllers in the Active Directory forest.
+- A successful Active Directory-based activation of Office lasts for up to 180 days. The Software Protection service running on the computer periodically attempts to re-activate Office by querying Active Directory for the activation object. If Active Directory can't be contacted, Office will try to activate by using a discoverable KMS host computer. 
+
     
 ## Related topics
-[Plan volume activation of Office 2016](plan-volume-activation-of-office.md)
-  
-[Prepare and set up the Office 2016 KMS host computer](configure-a-kms-host-computer-for-office.md)
 
+- [Overview of volume activation of Office](plan-volume-activation-of-office.md)
+- [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md)
+ 

@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
-ms.assetid: d3879f0d-766c-469c-9440-0a9a2a905ca8
 description: "Configuration options for the Office Deployment Tool"
 ---
 
@@ -22,9 +21,9 @@ With the Office Deployment Tool (ODT), you can download and deploy Office 365 Pr
 ## Example of a standard configuration file
 
 The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
-  
+
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.  
-    
+
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
 
 ```
@@ -61,9 +60,9 @@ This configuration file includes the most-commonly used elements and attributes,
 |Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
-   
+
 ## Add element
-    
+
 Defines the products and languages to download or install
 
 ### Example
@@ -114,7 +113,7 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Pro for Office 365 and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
+Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Online Plan 2 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
@@ -123,6 +122,10 @@ Allowed values:
 - Channel="Monthly"
 - Channel="Broad"
 - Channel="Targeted"
+
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
+
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element) 
 
@@ -156,7 +159,7 @@ Allowed values:
 
 - AllowCdnFallback="True"
 - AllowCdnFallback="False"
- 
+
 #### Example 
 
 ```
@@ -196,7 +199,7 @@ You can also use the Product element to add language packs to existing installat
 Required. Defines the ID of the product to download or install. 
 
 Example values:
- 
+
 - ID="O365ProPlusRetail"  
 - ID="VisioProRetail"
 - ID="ProjectProRetail"
@@ -206,7 +209,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 ## Language element
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
- 
+
 To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
 ### Example
@@ -311,7 +314,7 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 ### ID attribute (part of ExcludeApp element)
 
 Required. Defines the ID of the product that should not be installed.
-  
+
 Allowed values:
 
 - ID="Access"
@@ -368,7 +371,6 @@ Defines certain Office behaviors and properties.
 <Property Name="SCLCacheOverride" Value="1" />
 <Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
 <Property Name="PinIconsToTaskbar" Value="TRUE"/>
-
 ```
 
 ### Name attribute (part of Property element)
@@ -530,7 +532,7 @@ Allowed values:
 
 Defines where the updates for Office come from. If **UpdatePath** is not set or is set to empty (""), the location is set to the Office Content Delivery Network (CDN). **UpdatePath** can specify a network, local, or HTTP path of a source for Office installation files. Environment variables can be used for network or local paths. 
 
-If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -538,13 +540,13 @@ Example values:
 
 - UpdatePath="\\\server\share\"
 - UpdatePath="C:\Preload\Office"
-- UpdatePath="http://internalApps/Office/"
+- UpdatePath="<http://internalApps/Office/>"
 
 ### TargetVersion attribute (part of Updates element)
 
 Defines which version Office updates to. If **TargetVersion** is not set or is set to empty (""), Office updates to the most recent version from the specified update path. If **TargetVersion** is set to a specific build number, Office attempts to update to that version. 
 
-If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -561,7 +563,7 @@ Prior to the deadline, users receive multiple reminders to install the updates. 
 
 After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up-to-date, you must change the deadline every time a new update for Office is available.
 
-To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the  [Office 2016](https://www.microsoft.com/download/details.aspx?id=49030) Administrative Template files (ADMX/ADML), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 Optional.
 
@@ -575,16 +577,19 @@ Defines which channel to use for updating Office after it is installed. Note tha
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md). 
 
-If you use Group Policy with the  [Office 2016 Administrative Template files (ADMX/ADML)](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
+If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
-Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Pro for Office 365 and Project Online Desktop Client.
+Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop Client.
 
 Allowed values:
 
 - Channel="Monthly"
 - Channel="Broad"
 - Channel="Targeted"
- 
+
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted). 
+
+If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ## RemoveMSI element
 
@@ -632,14 +637,13 @@ Optional.
           App="excel16" 
           Id="L_VBAWarningsPolicy" />
   </AppSettings>
-
 ```
 ## Related topics
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
-  
-    
-    
+
+
+
 
