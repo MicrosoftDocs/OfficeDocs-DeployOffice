@@ -34,7 +34,7 @@ The steps in this article are based on the following best practices:
 - **Build two Office installation packages**: One package uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each installation package includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the installation package. To deploy both versions, you create additional installation packages. For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files). 
 - **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
-You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project.  
+You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Create shared folders for Office installation files 
 
@@ -148,7 +148,7 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 ### Deploy Visio and Project alongside the core Office apps
 
-To deploy Visio and Project with Office 365 ProPlus, you can inlude them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployoffice/deployment-guide-for-visio.md) and [Deployment guide for Project](deployoffice/deployment-guide-for-project.md).
+To deploy Visio and Project with Office 365 ProPlus, you can inlude them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
 
 ## Related topics
 
