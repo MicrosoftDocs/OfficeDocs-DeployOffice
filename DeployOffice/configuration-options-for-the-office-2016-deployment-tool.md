@@ -71,7 +71,7 @@ Defines the products and languages to download or install
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
-     Version="16.0.8201.2193"
+     Version="16.0.8201.2193" >
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
     <Language ID="ja-jp" />
