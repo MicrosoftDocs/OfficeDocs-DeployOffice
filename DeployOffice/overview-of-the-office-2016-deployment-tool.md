@@ -284,16 +284,18 @@ In this example, the configuration file installs the 32-bit version of Office 36
 
 This file was created with the Office Customization Tool for Click-to-Run (preview). For more details on the app settings, we recommend browsing the options in the tool itself.
 
+Note: When Office is installed, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
+
 ## Apply application settings to an existing installation of Office 365 ProPlus
 
 You can apply new application settings to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application settings and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application settings. 
 
 1. Use the steps in [Apply application settings to Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#Apply-application-settings-to-Office-365-ProPlus) to create the configuration file.
 2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installappsettings.xml**:
-
-   `setup.exe /customize installappsettings.xml`
-
-You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
+  
+ `setup.exe /customize installappsettings.xml`
+  
+You must run the executable from the client computer on which you want to apply the app settings and you must have local administrator permissions on that computer. Note that when using customize mode, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
 
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>

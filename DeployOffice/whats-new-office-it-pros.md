@@ -18,6 +18,8 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## October 2018
 
+The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Office 365 ProPlus and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it [here](overview-of-the-office-customization-tool-for-click-to-run.md).
+
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more details, see [Install proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#install-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
 
 For best practices on deploying Office 365 ProPlus with Configuration Manager, see [our new article](deploy-office-365-proplus-with-system-center-configuration-manager.md).
