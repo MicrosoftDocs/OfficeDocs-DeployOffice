@@ -101,7 +101,7 @@ The semi-annual feature update releases of Office 365 ProPlus are supported for 
   
 A new version, with feature updates, will be released to Semi-Annual Channel (Targeted) in March and September. Four months later, in July and January, that version, with those feature updates, will be released to Semi-Annual Channel and will be supported for the next 14 months. 
   
-For example, on September 12, 2017, Version 1708 of Office 365 ProPlus was released to Semi-Annual Channel (Targeted). On January 9, 2018, Version 1708 is scheduled to be made available to Semi-Annual Channel and will be supported in Semi-Annual Channel until March 2019. In March 2018, a new version of Office 365 ProPlus with new features will be released to Semi-Annual Channel (Targeted). That version is scheduled to be made available to Semi-Annual Channel in July 2018, and will be supported in Semi-Annual Channel until September 2019.
+For example, on September 11, 2018, Version 1808 of Office 365 ProPlus was released to Semi-Annual Channel (Targeted). On January 8, 2019, Version 1808 is scheduled to be made available to Semi-Annual Channel and will be supported in Semi-Annual Channel until March 2020. In March 2019, a new version of Office 365 ProPlus with new features will be released to Semi-Annual Channel (Targeted). That version is scheduled to be made available to Semi-Annual Channel in July 2019, and will be supported in Semi-Annual Channel until September 2020.
   
 This support duration provides more time and flexibility for IT Pros to deploy releases. For example, customers who want to update once a year will be able to do so. There will always be more than one supported version of Semi-Annual Channel available. Note, however, that only the most current release of Semi-Annual Channel (Targeted) is supported.
   
@@ -135,7 +135,6 @@ If you use the Office Deployment Tool, you can use the Channel attribute in the 
 
 The name of the Group Policy setting is Update Channel. You can find this policy setting under Computer Configuration\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates. When you enable the Group Policy setting you can select the appropriate update channel from a drop-down list. 
   
-You can also provide users with Semi-Annual Channel (Targeted) by selecting them for the [Targeted release program for Office 365](https://support.office.com/article/3B3ADFA4-1777-4FF0-B606-FB8732101F47). If you do this, those users can install Semi-Annual Channel (Targeted) directly from the **Software** page in the Office 365 portal.
  
 <a name="BKMK_AddInfo"> </a>
 ## Additional information about the update channels for Office 365 ProPlus
