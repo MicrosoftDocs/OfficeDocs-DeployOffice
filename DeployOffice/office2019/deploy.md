@@ -55,8 +55,8 @@ There are a series of settings in the configuration.xml file that you configure 
 |Whether to remove previous Windows Installer (MSI) versions of Office before installing Office 2019  |RemoveMSI   | This is recommended.   <br/> <br/>  For more information, see [Remove existing versions of Office before installing Office 2019](#remove-existing-versions-of-office-before-installing-office-2019).    |
 
 
-
-More information about these configuration.xml settings is available here: [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). Keep in mind that not all the information in that article applies to Office 2019. For example, the settings related to shared computer activation, such as SharedComputerLicensing and SCLCacheOverride, don’t apply to Office 2019.
+> [!TIP]
+> More information about these configuration.xml settings is available here: [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). Keep in mind that not all the information in that article applies to Office 2019. For example, the settings related to shared computer activation, such as SharedComputerLicensing and SCLCacheOverride, don’t apply to Office 2019.
 
 
 ## Sample configuration.xml file to use with the Office Deployment Tool
