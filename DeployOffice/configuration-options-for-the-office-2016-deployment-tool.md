@@ -243,7 +243,7 @@ Defines the ID of the language to download or install. Required.
 - ID="MatchOS"
 - ID="MatchPreviousMSI"
 
-For a list of all languages, see  [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx). 
+For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
@@ -640,10 +640,6 @@ Optional.
 ```
 ## Related topics
 
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)    
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
-- [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx)
-
-
-
-
+- [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages)
