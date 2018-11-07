@@ -14,12 +14,11 @@
 ### [Activate by using Active Directory](../vlactivation/activate-office-by-using-active-directory.md?toc=/deployoffice/office2019/toc.json)
 ### [Rearm Office in an image](../vlactivation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/deployoffice/office2019/toc.json)
 ### [Tools to manage volume activation](../vlactivation/tools-to-manage-volume-activation-of-office.md?toc=/deployoffice/office2019/toc.json)
-### [Troubleshoot volume activation](../vlactivation/troubleshoot-volume-activation-of-office.md?toc=/deployoffice/office2019/toc.json)
 
 
 ## Project, Visio, and OneNote
 ### [Deploy Project](../deployment-guide-for-project.md?toc=/deployoffice/office2019/toc.json#deploy-a-volume-licensed-version-of-project-2019)
-### [Deploy Visio](../deployment-guide-for-visio.md?toc=/deployoffice/office2019/toc.json#deploy-a-volume-licensed-version-of-visio-2019?)
+### [Deploy Visio](../deployment-guide-for-visio.md?toc=/deployoffice/office2019/toc.json#deploy-a-volume-licensed-version-of-visio-2019)
 ### [Deploy OneNote](../deployment-guide-onenote.md?toc=/deployoffice/office2019/toc.json)
 ### [Install different versions of Office, Project, and Visio on the same computer](../install-different-office-visio-and-project-versions-on-the-same-computer.md?toc=/deployoffice/office2019/toc.json)
 
