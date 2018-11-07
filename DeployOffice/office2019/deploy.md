@@ -29,11 +29,11 @@ The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=
 
 After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files:  setup.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
-The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are samples file to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
+The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
 
-## Edit the configuration.xml
+## Create the configuration.xml
 
-Once you have a copy of the ODT, you need to edit the configuration.xml file. You can create multiple configuration.xml files to be used with the ODT. For example, you would create a configuration.xml file to download and install the 64-bit version of Office Professional Plus 2019 in English and a different configuration.xml file to install the 32-bit version of Visio Professional 2019 in French. When you run the ODT from an elevated command prompt, you specify which configuration.xml file to use. 
+Once you have a copy of the ODT, you need to create a configuration.xml file. You can create multiple configuration.xml files to be used with the ODT. For example, you would create a configuration.xml file to download and install the 64-bit version of Office Professional Plus 2019 in English and a different configuration.xml file to install the 32-bit version of Visio Professional 2019 in French. When you run the ODT from an elevated command prompt, you specify which configuration.xml file to use. 
 
 > [!TIP]
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](../overview-of-the-office-customization-tool-for-click-to-run.md). Please note that this is different than the Office Customization Tool that you might have used in the past to install volume licensed versions of Office that used Windows Installer (MSI) as the installation technology.
@@ -96,7 +96,7 @@ For more information about using RemoveMSI, see [Remove existing MSI versions of
 
 
 ## Download the Office 2019 installation files
-Once you have a copy of the ODT and have edited your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
+Once you have a copy of the ODT and have created your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
 
 ```
 	setup /download configuration.xml
@@ -113,7 +113,7 @@ Here some additional details about downloading Office 2019 installation files:
 - All volume licensed versions of Office 2019 – such as Office Professional Plus 2019, Visio Professional 2019, and Project Professional 2019 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for the Office 2019 products are in the stream.x86.x-none.dat or stream.x64.x-none-dat file, depending if it’s the 32-bit or 64-bit version of Office. 
 
 ## Install Office 2019 by using the Office Deployment Tool
-Once you have a copy of the ODT and have edited your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
+Once you have a copy of the ODT and have created your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
 
 ```
 	setup /configure configuration.xml
