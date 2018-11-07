@@ -18,11 +18,12 @@
 
 
 ## Project, Visio, and OneNote
-### [Deploy Project](../deployment-guide-for-project.md#deploy-a-volume-licensed-version-of-project-2019?toc=/deployoffice/office2019/toc.json)
-### [Deploy Visio](../deployment-guide-for-visio.md#deploy-a-volume-licensed-version-of-visio-2019?toc=/deployoffice/office2019/toc.json)
+### [Deploy Project](../deployment-guide-for-project.md?toc=/deployoffice/office2019/toc.json#deploy-a-volume-licensed-version-of-project-2019)
+### [Deploy Visio](../deployment-guide-for-visio.md?toc=/deployoffice/office2019/toc.json#deploy-a-volume-licensed-version-of-visio-2019?)
 ### [Deploy OneNote](../deployment-guide-onenote.md?toc=/deployoffice/office2019/toc.json)
-### [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md?toc=/deployoffice/office2019/toc.json)
+### [Install different versions of Office, Project, and Visio on the same computer](../install-different-office-visio-and-project-versions-on-the-same-computer.md?toc=/deployoffice/office2019/toc.json)
 
 ## Office 2019 for Mac
+### [Deployment guide](../mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/office2019/toc.json)
 ### [Deployment options](../mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/office2019/toc.json)
 ### [Volume License (VL) Serializer](../mac/volume-license-serializer.md)
