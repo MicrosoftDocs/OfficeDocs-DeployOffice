@@ -123,8 +123,9 @@ The following are some additional details about using the RemoveMSI element in y
 - Installations of the following products will also be removed unless you use IgnoreProduct:
    - SharePoint Designer, whose product ID is SharePointDesigner.
    - InfoPath, whose product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
-   - Lync 2013 or later. Lync 2010 can't be removed using the RemoveMSI element.
+   - Lync 2013 or later. Lync 2010 can't be removed by using the RemoveMSI element.
    - Office products that were installed separately and not as part of an Office suite. For example, a standalone installation of Access.
+   - Access 2010 Runtime or later. But, Access Database Engine 2010 Redistributable or later can't be removed by using the RemoveMSI element.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
 - Some previous versions of Office, Visio, and Project must be uninstalled before installing Office 365 ProPlus. For example, Office Professional Plus 2016. If they aren’t uninstalled beforehand, the installation of Office 365 ProPlus will fail. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
 - A reboot is required to finish uninstalling the Windows Installer (MSI) versions of Office, but the reboot isn’t enforced. You can reboot after the Office 365 ProPlus installation is finished.
