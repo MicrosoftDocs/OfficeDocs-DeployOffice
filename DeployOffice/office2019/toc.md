@@ -25,4 +25,4 @@
 ## Office 2019 for Mac
 ### [Deployment guide](../mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/office2019/toc.json)
 ### [Deployment options](../mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/office2019/toc.json)
-### [Volume License (VL) Serializer](../mac/volume-license-serializer.md)
+### [Volume License (VL) Serializer](../mac/volume-license-serializer.md?toc=/deployoffice/office2019/toc.json)
