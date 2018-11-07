@@ -62,7 +62,7 @@ In this example, the configuration file installs the French and Japanese languag
 </Configuration>
 ```
 
-For a list of all languages, see [Language identifiers](https://technet.microsoft.com/EN-US/library/cc179219%28v=office.16%29.aspx).
+For a list of all languages, see [Languages, culture codes, and companion proofing languages](#languages-culture-codes-and-companion-proofing-languages).
 
 **Step 3: Run the ODT executable in configure mode**
 
