@@ -125,9 +125,6 @@ Once the installation is complete, you are returned to a command prompt and you 
 
 You can also use System Center Configuration Manager to deploy volume licensed versions of Office 2019, including Project 2019 and Visio 2019. To start, you need to get a copy of the Office Deployment Tool (ODT) from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment. Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
 
-> [!NOTE]
-> The Office 365 Client Installation wizard in Configuration Manager (Current Branch) currently doesn't support Office 2019, including Project 2019 and Visio 2019. The product team is working on the changes needed to enable this and expect support for Office 2019 to be available by the end of the year.
-
 ## Deploy languages for Office 2019
 
 You can use the Office Deployment Tool (ODT) and the configuration.xml file to install volume licensed versions of Office 2019, including Project and Visio, in multiple languages. For more details, see [Language element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#language-element).
