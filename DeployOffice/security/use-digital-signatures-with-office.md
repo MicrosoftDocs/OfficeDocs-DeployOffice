@@ -221,3 +221,18 @@ The following table shows Windows registry settings that are specific to digital
   
 [Add or remove a digital signature in Office files](https://go.microsoft.com/fwlink/p/?LinkId=187659)
 
+Create Self Digital Signature Certificate  for Office 2016 C2R edition which is installed on windows 10.
+
+We need a tool called "selfcert.exe" which is located  under this  location 
+"C:\Program Files (x86)\Microsoft Office\root\Office16\"  if  you have installed 32bit C2R  office 2016 on windows 10 64bit 
+selfcert.exe
+
+Close all the running programs by using taskmanager.
+in search box, type Command Prompt , rightclick on Command Prompt , then click on Run as administrator.
+type below command and press enter
+cd /d C:\Program Files (x86)\Microsoft Office\root\Office16
+selfcert.exe
+message will be displayed enter "certificate name" , click ok.
+Selfcert success will be displayed.
+see conformed message for screenshot
+https://1drv.ms/u/s!AmZoRRusRV59lGpW3MrKwAk-CegX
