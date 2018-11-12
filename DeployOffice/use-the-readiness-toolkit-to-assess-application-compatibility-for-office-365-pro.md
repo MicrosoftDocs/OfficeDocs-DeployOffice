@@ -110,6 +110,8 @@ To provide you with the most up-to-date remediation advice and readiness status,
 
  **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the Internet. The Readiness Toolkit calls a publicly available web-service, so the following two URLs need to be whitelisted in your firewall:
 
+- https://officeclient.microsoft.com/serverconfig16
+
 - https://ready.osi.office.net/orfo/api/readinesssummary
 
 - https://ready.osi.office.net/orfo/api/vbareportsummary
