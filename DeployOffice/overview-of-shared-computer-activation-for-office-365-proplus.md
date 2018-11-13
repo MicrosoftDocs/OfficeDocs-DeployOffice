@@ -22,7 +22,7 @@ description: "Provides information for IT Pros about shared computer activation 
 Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios for using shared computer activation:
 
 - Three workers at a factory share a computer, each worker using Office on that computer during their eight-hour shift.
-- Fifteen nurses at a hospital use Office on five different computers throughout the day.
+- Fifteen nurses at a hospital use Office on ten different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
 
@@ -30,6 +30,8 @@ Shared computer activation lets you to deploy Office 365 ProPlus to a computer i
 The most common shared computer activation scenario is to [deploy Office 365 ProPlus to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office 365 ProPlus programs, such as Word or Excel, at the same time on the remote computer.
   
 Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md).
+
+Normally, users can install and activate Office 365 ProPlus only on a limited number of devices, such as 5 PCs. Using Office 365 ProPlus with shared computer activation enabled doesn't count against that limit.
   
 <a name="Enable"> </a>
 
@@ -96,7 +98,7 @@ If the user doesn't log on to the shared computer for 30 days, the licensing tok
     
    ![Reduced functionality](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
   
-**Activation limits** Normally, users can install and activate Office 365 ProPlus only on up to five computers. Using Office 365 ProPlus with shared computer activation enabled doesn't count against the five computer limit.
+**Activation limits** Normally, users can install and activate Office 365 ProPlus only on a limited number of devices, such as 5 PCs. Using Office 365 ProPlus with shared computer activation enabled doesn't count against that limit.
     
 Microsoft allows a single user to activate Office 365 ProPlus on a reasonable number of shared computers in a given time period. The user gets an error message in the unlikely event the limit is exceeded.
     
