@@ -38,7 +38,7 @@ The following table shows Office releases that are currently supported by Micros
 |Office 2010 | 14.0 | Windows Installer (MSI)  |
 
 
-<sup>1</sup> You can find this version information by going to **Control Panel** > **Programs** > **Programs and Features**. You can also find this version in the **About** dialog for the Office app. For example, open Word, and go to **File** > **Account** > **About Word**. On the top line of the **About Microsoft Word** dialog box, you will see the version number. For example, Microsoft Word 2019 MSO (16.0.10336.20044) 32-bt. For steps to find this version in different Office releases, see [Find details for other versions of Office](https://support.office.com/article/8e83dd74-3b83-4528-bda6-6ff6118f8293). 
+<sup>1</sup> You can find this version information by going to **Control Panel** > **Programs** > **Programs and Features**. You can also find this version in the **About** dialog for the Office app. For example, open Word, and go to **File** > **Account** > **About Word**. On the top line of the **About Microsoft Word** dialog box, you will see the version number. For example, Microsoft Word 2019 MSO (16.0.10336.20044) 32-bit. For steps to find this version in different Office releases, see [Find details for other versions of Office](https://support.office.com/article/8e83dd74-3b83-4528-bda6-6ff6118f8293). 
 
 > [!IMPORTANT]
 > Office 365, Office 2019, and Office 2016 all have the same version: 16.0
