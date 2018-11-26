@@ -200,6 +200,9 @@ For more details about collation settings, see the documentation for the version
 
 The following information and instructions will help you learn more about how to deploy and enable the telemetry agent.
 
+> [!IMPORTANT]
+> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
+
 ### Deploying the telemetry agent
 
 The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
