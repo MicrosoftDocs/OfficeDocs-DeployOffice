@@ -388,7 +388,7 @@ The following table lists, by application, the file extensions that are analyzed
 
 ### Types of add-ins for which the Readiness Report Creator collects data
 
-The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. 
+The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Office 365 ProPlus.
 
 |**Add-in type**|**Office applications**|**Description**|
 |:-----|:-----|:-----|
