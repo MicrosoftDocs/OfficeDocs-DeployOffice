@@ -26,7 +26,7 @@ You can download the Readiness Toolkit for free from the [Microsoft Download Cen
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
 
-The Readiness Report Creator can scan for VBA macros in Word, Excel, PowerPoint, Outlook, Access, Project, Visio, and Publisher files, for Office versions as far back as Office 2003. It can also scan for certain types of add-ins used with Office. Add-ins for all Office applications are identified, but it doesn't include web add-ins. For more information, see [File extensions scanned for VBA macros](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_FileExt) and [Types of add-ins for which the Readiness Report Creator collects data](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddinTypes).
+The Readiness Report Creator can scan for VBA macros in Word, Excel, PowerPoint, Outlook, Access, Project, Visio, and Publisher files, for Office versions as far back as Office 2003. It can also scan for certain types of add-ins used with Office. Add-ins for all Office applications are identified, but it doesn't include web add-ins. For more information, see [File extensions analyzed for VBA macros](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_FileExt) and [Types of add-ins for which the Readiness Report Creator collects data](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddinTypes).
 
 The download is an MSI file that you can use to install the Readiness Toolkit on a user's computer. After it's installed, when you run the Readiness Report Creator, a UI wizard steps you through the process of creating a readiness report. There is also a standalone executable that can be run from the command line or used with scripts. This is useful if you need to collect readiness information from users throughout your enterprise in a more automated manner. For more information, see [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise).
 
@@ -44,7 +44,7 @@ The following information is provided to help you use the Readiness Report Creat
 
 - [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports) to get better insights into which add-ins are used most often within your organization and by whom.
 
-- [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are scanned by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
+- [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are analyzed by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
 
 > [!NOTE]
 > - After running the Readiness Toolkit, many enterprises find that they have fewer compatibility issues than first expected. Based on data provided by enterprises running the Readiness Toolkit, on average 6% of scanned files have macros, and of those files, 3.3% have macro issues. So that's only 0.2% files with macro compatibility issues. For Office add-ins, 75% of add-ins found are already categorized as adopted or supported.
@@ -369,9 +369,9 @@ One possible workaround is to scan the local cache of these cloud-based files on
 
 <a name="BKMK_FileExt"> </a>
 
-### File extensions scanned for VBA macros
+### File extensions analyzed for VBA macros
 
-The following table lists, by application, the file extensions that are scanned when the Readiness Report Creator looks for VBA macros in Office documents.
+The following table lists, by application, the file extensions that are analyzed when the Readiness Report Creator looks for VBA macros in Office documents.
 
 |**Application**|**File extension**|
 |:-----|:-----|
@@ -388,7 +388,7 @@ The following table lists, by application, the file extensions that are scanned 
 
 ### Types of add-ins for which the Readiness Report Creator collects data
 
-The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. 
+The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Office 365 ProPlus.
 
 |**Add-in type**|**Office applications**|**Description**|
 |:-----|:-----|:-----|
