@@ -26,7 +26,7 @@ Computers that have Office 365 ProPlus installed occasionally need to send data 
     
 - Manage product keys for Office 365 ProPlus
     
-This article shows the data that is sent to Office 365 for each of these tasks, and which URLs it is sent to.
+This article shows the data that is sent to Office 365 for each of these tasks.
   
 ## Registering the computer and activating Office 365 ProPlus
 <a name="BKMK_RegisterCompAndActivate"> </a>
