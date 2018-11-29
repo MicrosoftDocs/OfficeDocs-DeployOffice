@@ -21,7 +21,7 @@ description: "Learn about the data that the telemetry agent collects for Office.
 > To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
   
-The telemetry agent collects several types of telemetry data for Office as described in this article. For example, 
+The telemetry agent allows enterprise administrators to collect several types of telemetry data for their installations of Office, such as the following:
   
 - The file names of Office files that are in the Most Recently Used list.
 
@@ -42,6 +42,9 @@ The agent doesn't collect any of the following kinds of information:
 - The contents of files.
     
 - Information about files that are not in the Most Recently Used list.
+
+> [!IMPORTANT]
+> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
     
     
 <a name="TelemetryApps"> </a>
