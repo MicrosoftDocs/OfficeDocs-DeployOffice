@@ -23,6 +23,8 @@ description: "Describes how to create custom reports in Telemetry Dashboard, sho
   
   
 The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
+
+
   
     
 <a name="overview"> </a>
@@ -30,6 +32,10 @@ The built-in worksheets in Telemetry Dashboard display lots of useful data, but 
 ## Overview of custom reports in Telemetry Dashboard
 
 The built-in worksheets in Telemetry Dashboard show you a relevant subset of the data that is collected by Telemetry Agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view telemetry data in meaningful ways. 
+
+> [!IMPORTANT]
+> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
+
   
 For example, the following screen shot shows a custom report that lists the unregistered ActiveX controls that are detected on monitored clients. You can see that we've added fields to display the solution name, user name, and business group (as configured for Label 2 when the agents were deployed). This report helps us identify the solutions that use unregistered ActiveX controls and who is using them. In contrast, the **Documents** worksheet lists these solutions but doesn't have a column to indicate whether unregistered ActiveX controls are detected. You have to view the **Document sessions** worksheet for each document to see whether ActiveX controls are being used. 
   
