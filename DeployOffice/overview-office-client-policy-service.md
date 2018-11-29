@@ -19,7 +19,7 @@ description: "The Office Client Policy Service (Preview) is a cloud-based servic
 
 The Office Client Policy Service (Preview) is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
 
-The Office Client Policy Service (Preview) is part of the Microsoft 365 Device Management portal and includes all the same user-based policy settings that are available when using Group Policy on Windows Server.
+The Office Client Policy Service (Preview) is part of the Microsoft 365 Device Management portal and includes many of the same user-based policy settings that are available when using Group Policy on Windows Server.
 
 ## Requirements for using the Office Client Policy Service (Preview)
 
@@ -40,7 +40,7 @@ The following are the basic steps for creating a policy configuration.
 3. On the **Create policy configuration** page, do the following:
    - Enter a name.
    - Provide a description (optional).
-   - Select the security group that is assigned to the policy configuration. You can only assign one security group.
+   - Select the security group that is assigned to the policy configuration. You can only assign one security group to a policy configuration, and a security group can only have one policy configuration assigned to it.
    - Configure the policy settings to be included in the policy configuration. You can search on the policy setting name to find the policy setting that you want to configure.
 4. After you've made selections, choose **Create**.
 
@@ -59,7 +59,8 @@ Also, policy settings implemented by using Office Client Policy Service (Preview
 
 ## Additional information about the Office Client Policy Service (Preview)
 
-- Only user-based policy settings are available. Computer-based policy settings aren’t available. 
+- Only user-based policy settings are available. Computer-based policy settings aren’t available.
+- Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available.
 - As new user-based policy settings are made available for Office, the Office Client Policy Service (Preview) will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
 - Policy settings from the Office Client Policy Service (Preview) are stored in the registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0.
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is currently available in Monthly Channel and Semi-Annual Channel (Targeted) and is scheduled to be available in Semi-Annual Channel in January 2019.
