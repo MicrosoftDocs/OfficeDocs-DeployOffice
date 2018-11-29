@@ -25,7 +25,11 @@ Telemetry Dashboard is an Excel workbook that displays compatibility and invento
 
 The telemetry agent collects inventory, usage, and other application data and uploads it to a shared folder, where it is processed by a service known as the telemetry processor and inserted into an SQL database. The Telemetry Dashboard connects to this database so that it can show the usage of Office files, add-ins, and solutions.
 
+> [!IMPORTANT]
+> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
+
 The telemetry agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the telemetry agent never generates or collects any telemetry or inventory data until you enable telemetry logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, telemetry data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
+
 
 <a name="Configure"> </a>  
 
