@@ -14,9 +14,9 @@ description: "Shows IT Pros how to set a preference for trying a default decrypt
 
 # Set a preference for trying a default decryption password in Excel for Mac
 
-***Applies to:*** *Excel for Mac, Excel 2019 for Mac, Excel 2016 for Mac*
+***Applies to:*** *Excel for Mac, Excel 2019 for Mac
 
-By default, when Excel opens an encrypted file, Excel tries to use a default password to decrypt the file. This preference prevents Excel from trying a default decryption password.
+By default, when Excel opens an encrypted file, Excel tries to use a default password to decrypt the file. This preference prevents Excel, version 16.20 or higher, from trying a default decryption password.
 
 Use the following information to configure a policy:
 
