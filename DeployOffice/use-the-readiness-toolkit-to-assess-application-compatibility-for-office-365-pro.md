@@ -46,6 +46,8 @@ The following information is provided to help you use the Readiness Report Creat
 
 - [Additional information](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_AddInfo), including file extensions that are analyzed by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
 
+- [FAQs](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_FAQ) Frequently asked questions.
+
 > [!NOTE]
 > - After running the Readiness Toolkit, many enterprises find that they have fewer compatibility issues than first expected. Based on data provided by enterprises running the Readiness Toolkit, on average 6% of scanned files have macros, and of those files, 3.3% have macro issues. So that's only 0.2% files with macro compatibility issues. For Office add-ins, 75% of add-ins found are already categorized as adopted or supported.
 > - If you have feedback or questions about the Readiness Toolkit, please email us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). 
@@ -504,3 +506,19 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 |Report GUID|A GUID generated for each report to help filter out repeated errors.|
 |Session ID|The Session ID when the report was created to help correlate it with any errors logged by the Readiness Toolkit.|
 |Excel version|The version of Excel used to view the readiness reports.|
+
+
+<a name="BKMK_FAQ"> </a>
+## Frequently asked questions (FAQ)
+This FAQ addresses the most common questions about the Readiness Toolkit. If your question isn't answered, please contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com).
+
+### "All add-ins are showing us as Readiness status: "Unknown""
+There are usually two main reasons that result in receiving an unknown status for all add-ins.
+
+- You selected the basic report option when generating the report
+  - Ensure you select the Advanced report option when generating the report.
+
+- The Microsoft service URLs are not accessible from within your environment
+  - Make sure the URLs as detailed in our documentation have been whitelisted and are accessible from within your environment.
+ 
+For more information, see [choosing between a basic and an advanced report](https://docs.microsoft.com/en-us/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro?redirectSourcePath=%252fen-us%252farticle%252fUse-the-Readiness-Toolkit-to-assess-application-compatibility-for-Office-365-ProPlus-9b0b48f2-1937-4b10-8274-1ccdb2f5d019#choosing-between-a-basic-and-an-advanced-report)
