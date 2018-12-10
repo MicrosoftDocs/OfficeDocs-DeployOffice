@@ -60,7 +60,7 @@ Also, policy settings implemented by using Office client policy service (Preview
 ## Additional information about the Office client policy service (Preview)
 
 - Only user-based policy settings are available. Computer-based policy settings aren’t available.
-- Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available.
+- Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available currently. Work is being done to make more policy settings available.
 - As new user-based policy settings are made available for Office, the Office client policy service (Preview) will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
 - Policy settings from the Office client policy service (Preview) are stored in the registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0.
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is currently available in Monthly Channel and Semi-Annual Channel (Targeted) and is scheduled to be available in Semi-Annual Channel in January 2019.
