@@ -513,12 +513,12 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 This FAQ addresses the most common questions about the Readiness Toolkit. If your question isn't answered, please contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com).
 
 ### "All add-ins are showing us as Readiness status: "Unknown""
-There are usually two main reasons that result in receiving an unknown status for all add-ins.
+There are usually two main reasons for an unknown status appearing for all add-ins.
 
 - You selected the basic report option when generating the report
   - Ensure you select the Advanced report option when generating the report.
 
 - The Microsoft service URLs are not accessible from within your environment
-  - Make sure the URLs as detailed in our documentation have been whitelisted and are accessible from within your environment.
+  - Make sure the URLs detailed in our documentation have been whitelisted and are accessible from within your environment.
  
 For more information, see [choosing between a basic and an advanced report](https://docs.microsoft.com/en-us/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro?redirectSourcePath=%252fen-us%252farticle%252fUse-the-Readiness-Toolkit-to-assess-application-compatibility-for-Office-365-ProPlus-9b0b48f2-1937-4b10-8274-1ccdb2f5d019#choosing-between-a-basic-and-an-advanced-report)
