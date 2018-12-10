@@ -103,15 +103,17 @@ This configuration file installs the 64-bit version of proofing tools from Germa
 </Configuration>
 ```
 
-## Install the same languages as the operating system
+## Install matching languages 
 
-When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system and any user on the client device. To do so, use "MatchOS" as the Language ID in the configuration file for the ODT, as shown in the example. 
+When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system or by an existing version of Office. To match the operation system langauge, use "MatchOS" as the Language ID. To match the language used by the existing version of Office, use "MatchInstalled" as the language ID. 
 
-When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Language ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
+MatchInstalled can be used when deploying a specific Office app, such as Visio, to devices with Office already installed. In that case, using MatchInstalled automatically installs Visio in the languages used by the existing version of Office.
 
-MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
+When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Language ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.
 
-- To specify a fallback language, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you use MatchOS and do not include a fallback language, the ODT will use en-us as a default fallback. 
+MatchOS and MatchInstalled cannot install a langauge if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
+
+- To specify a fallback language, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you use MatchOS or MatchInstalled and do not include a fallback language, the ODT will use en-us as a default fallback. 
 
 - To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example. When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is included, then the ODT will use source files from the Office CDN.
 
@@ -124,6 +126,7 @@ For details on how to edit the configuration file, see [Configuration options fo
      Channel="Broad" 
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
+     <Language ID="MatchInstalled"  />
      <Language ID="MatchOS" Fallback="en-us" />
   </Product>
 </Add>  
