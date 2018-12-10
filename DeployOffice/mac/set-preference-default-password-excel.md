@@ -1,7 +1,7 @@
 ---
 title: "Set a preference for trying a default decryption password in Excel for Mac"
 ms.author: danbrown
-author: pbowden-msft
+author: DHB-MSFT
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -31,7 +31,7 @@ Use the following information to configure a policy:
 The following example sets the option so that Excel doesn't try a default password when opening an encrypted file:
 
 ```
-***EXAMPLE***
+defaults write com.microsoft.Excel TryDefaultPassword -bool No
 ```
 
 This key is CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
