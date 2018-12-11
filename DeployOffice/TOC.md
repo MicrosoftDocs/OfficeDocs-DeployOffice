@@ -57,6 +57,8 @@
 ### [Diagnostic data](mac/set-preference-diagnostic-data.md?toc=/deployoffice/toc.json)
 ### [Resume Assistant](mac/set-preference-resume-assistant-word.md?toc=/deployoffice/toc.json)
 ### [Outlook preferences](mac/preferences-outlook.md?toc=/deployoffice/toc.json)
+### [Default decryption password (Excel)](mac/set-preference-default-password-excel.md?toc=/deployoffice/toc.json)
+
 
 ## Activation
 ### [Overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
