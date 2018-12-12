@@ -74,11 +74,11 @@ To minimize the size of the updates that need to be downloaded, we recommend tha
 
 Office uses the concept of update channels to determine which updates an installed version of Office receives. The update channel is specified in the configuration.xml file that is used by the Office Deployment Tool. You should always explicitly specify the update channel. For more information, see [Deploy Office 2019 (for IT Pros)](deploy.md).
 
-“PerpetualVL2019” is the **only** supported update channel for Office Professional Plus 2019 and Office Standard 2019. It's also the default update channel for volume licensed versions of Project 2019 and Visio 2019.  
+“PerpetualVL2019” is the **only** supported update channel for Office Professional Plus 2019 and Office Standard 2019. It's also the default update channel for volume licensed versions of Project 2019 and Visio 2019, however they can be installed with any update channel (PerpetualVL2019, Monthly, Semi-Annual (Targeted) and Semi-Annual).
 
 Update channel is a computer-wide setting. Which update channel you use should be determined by which version of the Office suite that you’re deploying. If you’re deploying Project and Visio along with Office, they must use the same update channel as the Office suite. This shouldn’t be an issue if all the versions of Office, Project, and Visio are the 2019 volume licensed versions.
  
-If you’re deploying a volume licensed version of Project 2019 or Visio 2019 along with Office 365 ProPlus, you should specify the same update channel for Project 2019 and Visio 2019 that you’re using for Office 365 ProPlus. For example, “Monthly” for Monthly Channel or “Broad” for Semi-Annual Channel.
+If you’re deploying a volume licensed version of Project 2019 or Visio 2019 along with Office 365 ProPlus, you should specify the same update channel for Project 2019 and Visio 2019 that you’re using for Office 365 ProPlus. For example, “Monthly” for Monthly Channel or “Broad” for Semi-Annual Channel. For more information, see [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
 
 
 ## Use Group Policy to specify update settings
