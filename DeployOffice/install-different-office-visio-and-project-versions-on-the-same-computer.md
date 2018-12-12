@@ -78,6 +78,8 @@ Here are some example installation scenarios, whether they’re supported, and a
 |Office 365 ProPlus  <br/><br/> Visio Professional 2016 (volume licensed)  |   No, but there is an alternative installation method available. | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0). <br/><br/> For more information about the alternative installation method that’s available, see [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).        |
 |Office 365 ProPlus  <br/><br/> Project Professional 2019 (volume licensed)  |   Yes, but with a caveat. <sup>2</sup>   | They both use Click-to-Run and are the same version (16.0).         |
 | Office 365 ProPlus  <br/><br/> Visio Standard 2019 (retail) |   Yes, but with a caveat. <sup>2</sup>  | They both use Click-to-Run and are the same version (16.0).         |
+| Office 365 ProPlus 1808 (Semi-Annual, Targeted)  <br/><br/> Visio Professional 2019 (volume licensed) (PerpetualVL2019) |   No  | They both use Click-to-Run and are the same version (16.0), but are not on the same update channel.           |
+| Office 365 ProPlus 1808 (Semi-Annual, Targeted)  <br/><br/> Visio Professional 2019 (volume licensed) (Semi-Annual, Targeted) |   Yes  | They both use Click-to-Run and are the same version (16.0), and are on the same update channel.         |
 
 
 
@@ -90,6 +92,7 @@ Here are some example installation scenarios, whether they’re supported, and a
 - Even though a particular installation scenario is supported, it might not be recommended. For example, we don’t recommend having two different versions of Office installed on the same computer, such as Office 2013 (MSI) and Office 2019 (Click-to-Run).
 - Volume licensed versions of Office 2013 and Office 2016 use Windows Installer (MSI). Volume licensed versions of Office 2019 use Click-to-Run. The same is true for volume licensed versions of Project and Visio.
 - For Office 365 and Office 2019 products, all products installed on the computer must be using the same [update channel](overview-of-update-channels-for-office-365-proplus.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. Therefore, it can’t be installed on the same computer that has Project Online Desktop Client using Semi-Annual Channel or on the same computer that has Visio Online Plan 2 (the subscription version of Visio that was previously named Visio Pro for Office 365) using Monthly Channel.
+- Visio 2019 and Project 2019 supports all update channels (PerpetualVL2019, Monthly, Semi-Annual (Targeted), Semi-Annual) with any activation method (KMS and MAK) and can be installed side-by-side with Office 2019 Professional Plus and Office 365 ProPlus, as long as Office 365 ProPlus is Version 1808 or later, and as long as all Office products are using the same update channel, along with the other requirements for Office products listed above.
 
 
 
