@@ -23,7 +23,9 @@ If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there
 
 Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
 
-You can also deploy Project Online Desktop Client in a GCC High or DoD environment, but it must be at least Version 1803. Any configuration or settings mentioned for Office 365 ProPlus also apply to Project Online Desktop Client.
+### What about Project and Visio?
+
+You can also deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Office 365 ProPlus also apply to Project Online Desktop Client and Visio Online Plan 2.
 
 ## Which update channel of Office 365 ProPlus to use
 
