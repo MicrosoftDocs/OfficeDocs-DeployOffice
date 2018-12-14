@@ -51,7 +51,7 @@ If you want to create a new policy configuration that is similar to an existing 
 
 ## How the policy configuration is applied
 
-The Click-to-Run service used by Office 365 ProPlus checks with the Office client policy service on a regular basis to see if there are any policy configurations that pertain to the user. If there are, then the appropriate policy settings are applied. 
+The Click-to-Run service used by Office 365 ProPlus checks with the Office client policy service on a regular basis to see if there are any policy configurations that pertain to the user. If there are, then the appropriate policy settings are applied and take effect the next time the user opens the Office app, such as Word or Excel.
 
 For example, when a user signs into Office on a device for the first time, a check is immediately made to see if there is a policy configuration that pertains to the user. If the user isn't a member of an AAD group that is assigned a policy configuration, then another check is made again in 24 hours. If the user is a member of an AAD group that is assigned a policy configuration, then the appropriate policy settings are applied and a check is made again in 90 minutes. In the event of an error, a check is made when the user opens an Office app, such as Word or Excel. If no Office apps are running when the next check is scheduled, then the check will be make the next time the user opens an Office app.
 
