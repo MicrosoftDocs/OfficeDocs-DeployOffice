@@ -51,7 +51,7 @@ After Teams is installed, it's automatically updated approximately every two wee
 
 Starting around January 15, 2019, if you’re deploying Office (that comes with your Office 365 business plan) on a Mac, Teams will be installed by default if you’re using the Office suite install package. 
 
-If you don’t want Teams installed by default, there will be a install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the latest install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
+If you don’t want Teams installed by default, there will be a install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
 
 If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t prevent Teams from being installed by default.
 
@@ -67,3 +67,4 @@ Some Office 365 plans include Office, but don’t include the Teams service. For
 - There is no change to installations of Office 2019, such as Office Professional Plus 2019.
 - If you want to install Teams to an existing installation of Office on Windows, you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), or you can deploy it for them by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation and practical guidance](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
+- You can also use Powershell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
