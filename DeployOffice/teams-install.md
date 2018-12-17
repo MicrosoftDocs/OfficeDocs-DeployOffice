@@ -41,7 +41,7 @@ If you want to remove Teams after it’s been installed, you can go to **Control
 
 ## Impact on existing installations of Office
 
-Existing installations of Office won’t be affected at this time, as long as you don’t make any changes to that installation, other than applying the regular feature and quality updates. But, if you initiate any other sort of installation, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process. In those cases, be sure to include the ExcludeApp element in your configuration.xml file, as described in the previous section, to prevent Teams from being installed by default.
+Existing installations of Office won’t be affected at this time, as long as you don’t make any changes to that installation, other than applying the regular feature and quality updates. But, if you initiate any other sort of installation on a device running Windows, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process. In those cases, be sure to include the ExcludeApp element in your configuration.xml file, as described in the previous section, to prevent Teams from being installed by default.
 
 ## Feature and quality updates for Microsoft Teams
 
@@ -67,4 +67,4 @@ Some Office 365 plans include Office, but don’t include the Teams service. For
 - There is no change to installations of Office 2019, such as Office Professional Plus 2019.
 - If you want to install Teams to an existing installation of Office on Windows, you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), or you can deploy it for them by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation and practical guidance](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
-- You can also use Powershell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
+- You can also use PowerShell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
