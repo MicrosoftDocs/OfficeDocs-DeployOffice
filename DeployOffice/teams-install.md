@@ -15,7 +15,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams wil
 
 # Deploy Microsoft Teams with Office 365 Business
 
-Currently, Microsoft Teams is a separate installation from Office 365 Business. But, starting in January 2019, Teams will be installed by default for ***new*** installations of Office 365 Business. This includes new installations of Office on a Mac.
+Currently, Microsoft Teams is a separate installation from Office 365 Business. But, starting in January 2019, Teams will be installed by default for ***new*** installations of Office 365 Business, starting with Version 1901. This includes new installations of Office on a Mac, starting with Version 16.21.
 
 Existing installations of Office 365 Business won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
 
