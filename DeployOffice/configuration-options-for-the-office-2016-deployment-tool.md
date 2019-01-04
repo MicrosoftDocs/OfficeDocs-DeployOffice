@@ -593,23 +593,15 @@ If you're deploying Office Professional Plus 2019, which is a volume licensed ve
 
 ## RemoveMSI element
 
-Specifies whether Windows Installer (MSI) versions of Office, Visio, and Project are uninstalled from the computer prior to the installation of the specified product, such as Office 365 ProPlus.
+Optional.
 
-For more information about using RemoveMSI and its attributes, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+Specifies whether any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer prior to the installation of the specified product, such as Office 365 ProPlus.
 
-### All attribute (part of RemoveMSI element)
-
-If set to True, any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer.
-
-Optional. 
-
-Allowed values:
-- RemoveMSI All="True"
-
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
 ### IgnoreProduct attribute (part of RemoveMSI element)
 
-If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer. Use instead of the All attribute.
+If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer.
 
 Optional.
 
