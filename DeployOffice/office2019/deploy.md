@@ -73,7 +73,7 @@ The following is a sample configuration.xml file that can be used to either down
         <Language ID="ja-jp" />
       </Product>
   </Add>
-  <RemoveMSI All="True" />
+  <RemoveMSI  />
   <Display Level="None" AcceptEULA="TRUE" />  
 </Configuration>
 ```
