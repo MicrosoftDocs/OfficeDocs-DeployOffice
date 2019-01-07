@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_VL
@@ -73,7 +73,7 @@ The following is a sample configuration.xml file that can be used to either down
         <Language ID="ja-jp" />
       </Product>
   </Add>
-  <RemoveMSI  />
+  <RemoveMSI />
   <Display Level="None" AcceptEULA="TRUE" />  
 </Configuration>
 ```
