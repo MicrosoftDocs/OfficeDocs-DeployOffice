@@ -67,7 +67,7 @@ To enter a multiple activation key by using the Config.xml file, follow these st
   
 1. Add the following line to the Config.xml file:
     
-```
+```xml
     <PIDKEY Value="AAAAABBBBBCCCCCDDDDDEEEEE" />
 ```
     
@@ -107,7 +107,7 @@ This can be used if you want a user to manually activate Office by using MAK, re
 
 To enable this behavior, add the following line to the Config.xml file:
 
-```  
+```xml
  <Setting Id="USEROPERATIONS" Value="1" />
 ```
 

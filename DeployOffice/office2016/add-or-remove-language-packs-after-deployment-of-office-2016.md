@@ -97,7 +97,7 @@ You cannot replace the language of the shell user interface (Shell UI) that was 
   
 When you update a multilanguage installation, you can specify that the new language matches the user locale that is set on the local computer. For example, if your organization includes both English-speaking and Russian-speaking users, you might first deploy English to everyone. Later, when the Russian language pack becomes available, you can add the following line to Config.xml:
   
-```
+```xml
 <AddLanguage Id="match" />
 ```
 
@@ -121,13 +121,13 @@ In this case, setup installs Russian language elements on any computer that has 
     
     For example, to add the Russian language pack, the line should resemble the following example: 
     
-   ```
+   ```xml
    <AddLanguage Id="ru-ru" />
    ```
 
 6. If you add more than one language in Config.xml, you must specify one language as the language for the Shell UI. For example:
     
-   ```
+   ```xml
    <AddLanguage Id="ru-ru" ShellTransform="yes" />
    <AddLanguage Id="en-us" />
    ```
@@ -197,7 +197,7 @@ You must follow these steps for each language that you want to remove.
     
     The line should resemble the following example: 
     
-   ```
+   ```xml
    <Display Level="basic" CompletionNotice="yes" SuppressModal="yes" AcceptEula="yes" />
    ```
 
@@ -205,7 +205,7 @@ You must follow these steps for each language that you want to remove.
     
     The line should resemble the following example:
     
-   ```
+   ```xml
    <!-- <AddLanguage Id="ru-ru" /> -->
    ```
 
@@ -215,7 +215,7 @@ You must follow these steps for each language that you want to remove.
     
     For example, to remove the Russian language pack, the line should resemble the following example: 
     
-   ```
+   ```xml
    <RemoveLanguage Id="ru-ru" />
    ```
 

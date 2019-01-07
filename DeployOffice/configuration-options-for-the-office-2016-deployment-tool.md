@@ -26,7 +26,7 @@ When creating the configuration file, we recommend starting with an example file
 
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
 
-```
+```xml
 <Configuration>
   <Add SourcePath="\\Server\Share" 
        OfficeClientEdition="32"
@@ -67,7 +67,7 @@ Defines the products and languages to download or install
 
 ### Example
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
@@ -137,7 +137,7 @@ Example values:
 
 #### Example 
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      DownloadPath="\\serverb\share\"
      OfficeClientEdition="32"
@@ -162,7 +162,7 @@ Allowed values:
 
 #### Example 
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
@@ -183,7 +183,7 @@ You can also use the Product element to add language packs to existing installat
 
 ### Example
 
-```
+```xml
 <Product ID="O365ProPlusRetail">
   <Language ID="en-us" />
   <Language ID="ja-jp" />
@@ -214,14 +214,14 @@ To automatically install the same languages as the operating system, use "MatchO
 
 ### Example
 
-```
+```xml
 <Product ID="O365ProPlusRetail">
   <Language ID="en-us" />
   <Language ID="ja-jp" />
 </Product>
 ```
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
@@ -262,7 +262,7 @@ Defines what the user sees when Office is installed.
 
 ### Example
 
-```
+```xml
 <Display Level="None" AcceptEULA="TRUE" />  
 ```
 
@@ -299,7 +299,7 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 
 ### Example
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" >
@@ -336,7 +336,7 @@ Defines options for ODT logging.
 
 ### Example
 
-```
+```xml
 <Logging Level="Standard" 
          Path="%temp%" />
 ```
@@ -365,7 +365,7 @@ Defines certain Office behaviors and properties.
 
 ### Example
 
-```
+```xml
 <Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
 <Property Name="SharedComputerLicensing" Value="1"/>
 <Property Name="SCLCacheOverride" Value="1" />
@@ -483,7 +483,7 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
 
 ### Example
 
-```
+```xml
 <Remove All="FALSE">
   <Product ID="O365ProPlusRetail" >
     <Language ID="es-es" />
@@ -509,7 +509,7 @@ Defines how Office is updated after it's installed.
 
 ### Example
 
-```
+```xml
 <Updates Enabled="TRUE" 
          UpdatePath="\\Server\Share\"
          Channel="Broad" />
@@ -620,7 +620,7 @@ Optional.
 
 ### Example
 
-```
+```xml
   <AppSettings>
     <User Key="software\microsoft\office\16.0\excel\security"
           Name="vbawarnings" 
