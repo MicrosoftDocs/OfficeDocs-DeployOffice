@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: conceptual
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Office 365 ProPlus from Office 2007."
 ---
