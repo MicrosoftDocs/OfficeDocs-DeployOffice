@@ -7,7 +7,7 @@ ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+localization_priority: Once
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 1c423975-1848-4060-999c-cafcadf3047d
@@ -19,9 +19,11 @@ description: "Learn how to customize languages for Office 2016."
  **Summary:** Learn how to customize languages for Office 2016. 
   
   
-To customize and deploy language setup and settings for Office 2016, follow the steps that are described in this article. 
-  
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+To customize and deploy language setup and settings for Office 2016, follow the steps that are described in this article.
+
+> [!NOTE]
+> - If you're a user trying to install a language pack for a personal copy of Office at home, see [Language Accessory Pack for Office](https://support.office.com/article/82ee1236-0f9a-45ee-9c72-05b026ee809f) instead of reading this article.
+> - This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
 
 <a name="BKMK_Overview"> </a>  
 ## Overview of customizing language setup and settings for Office
