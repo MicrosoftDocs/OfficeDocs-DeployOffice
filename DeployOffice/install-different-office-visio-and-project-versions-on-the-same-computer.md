@@ -81,7 +81,7 @@ Here are some example installation scenarios, whether they’re supported, and a
 
 
 
-<sup>2</sup> You must be using at least Version 1808 of Office 365 ProPlus, because that’s the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 is currently available in Monthly Channel and Semi-Annual Channel (Targeted). Version 1808 is scheduled to be available in Semi-Annual Channel in January 2019. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+<sup>2</sup> You must be using at least Version 1808 of Office 365 ProPlus, because that’s the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 
 
 ## Additional information
