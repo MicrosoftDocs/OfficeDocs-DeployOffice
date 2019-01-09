@@ -16,6 +16,14 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+## January 2019
+
+A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
+
+For more information, see the following resources:
+ - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
+ - [Overview of the Office client policy service (Preview) for Office 365 ProPlus](overview-office-client-policy-service.md)
+
 ## October 2018
 
 The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Office 365 ProPlus and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it [here](overview-of-the-office-customization-tool-for-click-to-run.md).
