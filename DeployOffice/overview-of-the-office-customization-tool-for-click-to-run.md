@@ -65,8 +65,7 @@ As part of the Office Customization Tool, you can define application prefences f
 
 ## Notes
 
-When creating a configuration file, the Office Customization Tool includes two attributes for the Configuration element: The ID attribute, which identifies the deployment method, and the Host attribute, which identifies the deployment options that have been selected. These attributes are collected by Microsoft as part of the standard telemetry for Office 365. The attributes are optional and can be removed without affecting your deployment.
-
+When creating a configuration file, the Office Customization Tool includes two attributes for the Configuration element: The ID attribute, which identifies the deployment method, and the Host attribute, which identifies the deployment options that have been selected. These attributes don't contain any personally identifiable information (PII), but Click-to-Run sends the attribute values to Microsoft so that we can better understand what configurations customers use and make customization even easier. Because of these insights, we recommend keeping the attributes. They are optional, however, and can be removed without affecting your deployment.
 
 
 
