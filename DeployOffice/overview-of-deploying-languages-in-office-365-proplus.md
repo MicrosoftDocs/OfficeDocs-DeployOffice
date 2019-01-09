@@ -29,7 +29,7 @@ Additional language tools that you can install for Click-to-Run products include
 
 - Language Interface Packs: Translated User Interface that installs over a copy of a Click-to-Run installation. You can download and install a Language Interface Pack for free. After you install it, you can use Microsoft Excel, OneNote, Microsoft Outlook, PowerPoint, and Word features in a different language. You can use the **Office Language Preferences** dialog after installation to change a language and see a translated user interface. For information about how to change the editing, display or Help language for Office applications, see [Enable the use of other languages in your Office programs](https://go.microsoft.com/fwlink/p/?LinkId=281959). To set Office language options on a computer that is running Windows 10, type "Office Language" at the **Start** screen, and select **Office Language Preferences** to open the **Microsoft Office Language Preferences** dialog box.
     
-- Proofing Tools: Localized language versions of Office include proofing tools for a set of companion langauges. For more details, see [Proofing Tools for Office 365 ProPlus](proofing-tools-for-office-365-proplus.md).
+- Proofing Tools: Localized language versions of Office include proofing tools for a set of companion languages. For more details, see [Proofing Tools for Office 365 ProPlus](proofing-tools-for-office-365-proplus.md).
     
 - ScreenTip Language: Translations that show the text of display elements such as buttons, menus, and dialog boxes in another language. You can download [Microsoft Office ScreenTip Language 2013](https://go.microsoft.com/fwlink/p/?LinkId=281983) from the Microsoft Download Center. ScreenTip Language installs over a Click-to-Run installation.
     
@@ -51,7 +51,7 @@ When creating the configuration file, we recommend starting with an example file
 
 In this example, the configuration file installs the French and Japanese language packs:
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="32">
     <Product ID="LanguagePack">
@@ -89,7 +89,7 @@ For details on how to edit the configuration file, see [Configuration options fo
 
 This configuration file installs the 64-bit version of proofing tools from German and Italian. Because the installation is from a local source, the proofing tools should be downloaded to that local source before they can be installed on client computers. If the tools aren't found at the local source, the "AllowCdnFallback" setting tells the ODT to install the tools directly from the Office CDN.
 
-```
+```xml
 <Configuration>
  <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="64"
@@ -109,7 +109,7 @@ When deploying Office with the Office Deployment Tool (ODT), you can automatical
 
 When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Language ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.   
 
-MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
+MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and a backup source location for the language pack:
 
 - To specify a fallback language, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you use MatchOS and do not include a fallback language, the ODT will use en-us as a default fallback. 
 
@@ -118,7 +118,7 @@ MatchOS cannot install the operating system languages if Office doesn't support 
 For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
 ### Example
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
