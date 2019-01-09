@@ -44,7 +44,7 @@ Users can sign into the Office 365 portal to deactivate an existing installation
   
 ## Activate volume licensed versions of Office for Mac
 
-To activate a volume licensed version of Office 2019 for Mac or Office 2016 for Mac, use the the Volume License (VL) Serializer. You can download the VL Serializer by signing into the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). You run the VL Serializer on each computer. By doing this, your users won't see any activation prompts when they first open Office 2019 for Mac or Office 2016 for Mac.
+To activate a volume licensed version of Office 2019 for Mac or Office 2016 for Mac, use the Volume License (VL) Serializer. You can download the VL Serializer by signing into the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). You run the VL Serializer on each computer. By doing this, your users won't see any activation prompts when they first open Office 2019 for Mac or Office 2016 for Mac.
 
 For more information, see [Overview of the Volume License (VL) Serializer](volume-license-serializer.md).
   

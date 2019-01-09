@@ -91,7 +91,7 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 - Monthly Channel: Provides users with the newest features of Office as soon as they're available. 
 
-All the channels will receive updates for security and critical non-security isuses when needed. These updates usually occur on the second Tuesday of the month.
+All the channels will receive updates for security and critical non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
@@ -113,7 +113,7 @@ When deploying Office, you create an installation package of the source files us
 - Semi-Annual Channel (Targeted) for 32-bit
 - Semi-Annual Channel (Targeted) for 64-bit
 
-You can also create separate packages based on different langauges, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.   
+You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.   
 
 To package the languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).  
 
@@ -141,11 +141,11 @@ Note that you can use the same installation package to deploy different configur
 - English, Japanese, and German
 - Semi-Annual Channel
 
-This single installation package can then be used to depoy to multiple deployment groups:
+This single installation package can then be used to deploy to multiple deployment groups:
 
 - Group 1 receives the Office apps in English
-- Group 2 receives the Office apps in all three langagues
-- Group 3 recieves the Office apps in English, but without Publisher
+- Group 2 receives the Office apps in all three languages
+- Group 3 receives the Office apps in English, but without Publisher
 
 By re-using installation packages for different deployment groups, you can save administrative costs and conserve network bandwidth.
 
