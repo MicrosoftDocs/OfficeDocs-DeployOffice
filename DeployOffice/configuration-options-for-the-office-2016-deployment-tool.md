@@ -26,7 +26,7 @@ When creating the configuration file, we recommend starting with an example file
 
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
 
-```
+```xml
 <Configuration>
   <Add SourcePath="\\Server\Share" 
        OfficeClientEdition="32"
@@ -67,7 +67,7 @@ Defines the products and languages to download or install
 
 ### Example
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
@@ -137,7 +137,7 @@ Example values:
 
 #### Example 
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      DownloadPath="\\serverb\share\"
      OfficeClientEdition="32"
@@ -162,7 +162,7 @@ Allowed values:
 
 #### Example 
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
@@ -183,7 +183,7 @@ You can also use the Product element to add language packs to existing installat
 
 ### Example
 
-```
+```xml
 <Product ID="O365ProPlusRetail">
   <Language ID="en-us" />
   <Language ID="ja-jp" />
@@ -216,14 +216,14 @@ Note that MatchOS and MatchInstalled cannot install the operating system languag
 
 ### Example
 
-```
+```xml
 <Product ID="O365ProPlusRetail">
   <Language ID="en-us" />
   <Language ID="ja-jp" />
 </Product>
 ```
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
@@ -265,7 +265,7 @@ Defines what the user sees when Office is installed.
 
 ### Example
 
-```
+```xml
 <Display Level="None" AcceptEULA="TRUE" />  
 ```
 
@@ -302,7 +302,7 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 
 ### Example
 
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" >
@@ -339,7 +339,7 @@ Defines options for ODT logging.
 
 ### Example
 
-```
+```xml
 <Logging Level="Standard" 
          Path="%temp%" />
 ```
@@ -368,7 +368,7 @@ Defines certain Office behaviors and properties.
 
 ### Example
 
-```
+```xml
 <Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
 <Property Name="SharedComputerLicensing" Value="1"/>
 <Property Name="SCLCacheOverride" Value="1" />
@@ -486,7 +486,7 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
 
 ### Example
 
-```
+```xml
 <Remove All="FALSE">
   <Product ID="O365ProPlusRetail" >
     <Language ID="es-es" />
@@ -512,7 +512,7 @@ Defines how Office is updated after it's installed.
 
 ### Example
 
-```
+```xml
 <Updates Enabled="TRUE" 
          UpdatePath="\\Server\Share\"
          Channel="Broad" />
@@ -596,23 +596,15 @@ If you're deploying Office Professional Plus 2019, which is a volume licensed ve
 
 ## RemoveMSI element
 
-Specifies whether Windows Installer (MSI) versions of Office, Visio, and Project are uninstalled from the computer prior to the installation of the specified product, such as Office 365 ProPlus.
+Optional.
 
-For more information about using RemoveMSI and its attributes, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+Specifies whether any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer prior to the installation of the specified product, such as Office 365 ProPlus.
 
-### All attribute (part of RemoveMSI element)
-
-If set to True, any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer.
-
-Optional. 
-
-Allowed values:
-- RemoveMSI All="True"
-
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
 ### IgnoreProduct attribute (part of RemoveMSI element)
 
-If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer. Use instead of the All attribute.
+If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer.
 
 Optional.
 
@@ -631,7 +623,7 @@ Optional.
 
 ### Example
 
-```
+```xml
   <AppSettings>
     <User Key="software\microsoft\office\16.0\excel\security"
           Name="vbawarnings" 

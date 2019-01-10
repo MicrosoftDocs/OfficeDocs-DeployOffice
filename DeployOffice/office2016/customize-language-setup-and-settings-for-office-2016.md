@@ -7,7 +7,7 @@ ms.date: 12/20/2016
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+localization_priority: Once
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 1c423975-1848-4060-999c-cafcadf3047d
@@ -19,9 +19,11 @@ description: "Learn how to customize languages for Office 2016."
  **Summary:** Learn how to customize languages for Office 2016. 
   
   
-To customize and deploy language setup and settings for Office 2016, follow the steps that are described in this article. 
-  
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+To customize and deploy language setup and settings for Office 2016, follow the steps that are described in this article.
+
+> [!NOTE]
+> - If you're a user trying to install a language pack for a personal copy of Office at home, see [Language Accessory Pack for Office](https://support.office.com/article/82ee1236-0f9a-45ee-9c72-05b026ee809f) instead of reading this article.
+> - This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
 
 <a name="BKMK_Overview"> </a>  
 ## Overview of customizing language setup and settings for Office
@@ -132,14 +134,14 @@ The following steps are the same as the standard steps for deploying Office 2016
     
     For example, to specify that setup install both English and French, with English as the default installation language, add the following elements:
     
-   ```
+   ```xml
    <AddLanguage Id="en-us" ShellTransform="yes"/>
    <AddLanguage Id="fr-fr" />
    ```
 
     If you want the default installation language and the Shell UI to match the operating system language, and you also want every user to have Office in both English and French, the code in the Config.xml file resembles the following example:
     
-   ```
+   ```xml
    <AddLanguage Id="match" ShellTransform="yes"/> 
    <AddLanguage Id="en-us" />
    <AddLanguage Id="fr-fr" /> 
@@ -149,7 +151,7 @@ The following steps are the same as the standard steps for deploying Office 2016
     
 8. To specify that setup also match the language of the user's Windows user locale, add another line in the Config.xml file: 
     
-   ```
+   ```xml
    <AddLanguage Id="match" /> 
    ```
 
@@ -360,7 +362,7 @@ The following table shows **OptionState** attributes, values, and descriptions.
 
 The following Config.xml file example shows every language that has the **OptionState** element **State** attribute set to **Absent**. If you decide to copy this example into the Config.xml file for the proofing tools, set the **State** attribute for each set of proofing tools that you want to deploy to **Local** (or **Advertise**, if preferred).
   
-```
+```xml
 <Configuration Product="ProofKit">
   <!-- <Display Level="full" CompletionNotice="yes" SuppressModal="no" AcceptEula="no" /> -->
   <!-- <Logging Type="standard" Path="%temp%" Template="Microsoft Office Proofing Tools Kit Setup(*).txt" /> -->
@@ -440,13 +442,13 @@ The following Config.xml file example shows every language that has the **Option
     
 4. For each set of proofing tools that you do not want to install, in the **OptionState** element, set the **State** attribute to **Absent**. For example, if you do not want Catalan proofing tools installed, use this syntax: 
     
-   ```
+   ```xml
    <OptionState Id="ProofingTools_1027" State="Absent" Children="force"/>
    ```
 
 5. Set the **State** attribute for each set of proofing tools that you want to deploy to **Local** (or **Advertise**, if preferred). For example, to deploy Basque (Basque) proofing tools, you can use this syntax:
     
-   ```
+   ```xml
    <OptionState Id="ProofingTools_1069" State="Local" Children="force"/>
    ```
 

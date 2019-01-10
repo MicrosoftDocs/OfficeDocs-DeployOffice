@@ -34,18 +34,18 @@ The following are requirements for using the RemoveMSI element in your configura
  
 ## Uninstall all Office products
 
-To uninstall all versions of Office, including Visio and Project, that are already installed on the computer, add \<RemoveMSI All="True" /> to your configuration.xml file. Language resources – for example, language packs, language interface packs, or proofing tools – will also be removed.
+To uninstall all versions of Office, including Visio and Project, that are already installed on the computer, add \<RemoveMSI /> to your configuration.xml file. Language resources – for example, language packs, language interface packs, or proofing tools – will also be removed.
 
 Here’s an example of a configuration.xml file that installs the 64-bit Monthly Channel version of Office 365 ProPlus in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="64" Channel="Monthly" >
       <Product ID="O365ProPlusRetail">
          <Language ID="en-us" />
       </Product>
   </Add>
-  <RemoveMSI All="True" />
+  <RemoveMSI />
 </Configuration>
 ```
 
@@ -56,7 +56,7 @@ If there are language resources – for example, language packs, language interf
 
 Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Office 365 ProPlus in English, along with any existing languages on the computer, from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="64" Channel="Targeted" >
       <Product ID="O365ProPlusRetail">
@@ -64,7 +64,7 @@ Here’s an example of a configuration.xml file that installs the 64-bit Semi-An
          <Language ID="MatchPreviousMSI" />
       </Product>
   </Add>
-  <RemoveMSI All="True" />
+  <RemoveMSI />
 </Configuration>
 ```
 
@@ -99,7 +99,7 @@ Only full product removals are supported. For example, if you have Office Profes
 
 Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Office 365 ProPlus in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office, except for Visio Professional, on the computer.
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="64" Channel="Targeted">
       <Product ID="O365ProPlusRetail ">

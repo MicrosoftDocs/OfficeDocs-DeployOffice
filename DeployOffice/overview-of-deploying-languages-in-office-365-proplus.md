@@ -57,7 +57,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 
 This configuration file installs the 64-bit version of proofing tools from German and Italian. Because the installation is from a local source, the proofing tools should be downloaded to that local source before they can be installed on client computers. If the tools aren't found at the local source, the "AllowCdnFallback" setting tells the ODT to install the tools directly from the Office CDN.
 
-```
+```xml
 <Configuration>
  <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="64"
@@ -102,7 +102,7 @@ MatchOS and MatchInstalled cannot install a langauge if Office doesn't support t
 For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
 ### Example
-```
+```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
      Channel="Broad" 
