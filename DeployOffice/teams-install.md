@@ -15,7 +15,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams wil
 
 # Deploy Microsoft Teams with Office 365 Business
 
-Currently, Microsoft Teams is a separate installation from Office 365 Business. But, starting in January 2019, Teams will be installed by default for ***new*** installations of Office 365 Business, starting with Version 1901.
+Currently, Microsoft Teams is a separate installation from Office 365 Business. But, starting in January 2019, Teams will be installed by default for ***new*** installations of Office 365 Business, starting with Version 1901. This includes new installations of Office on a Mac, starting with Version 16.21.
 
 Existing installations of Office 365 Business won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
 
@@ -47,6 +47,16 @@ Existing installations of Office won’t be affected at this time, as long as yo
 ## Feature and quality updates for Microsoft Teams
 
 After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Offices apps, such as Word and Excel. How often those apps get feature and quality updates depends on which [update channel](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) they’re on.
+
+## Microsoft Teams installations on a Mac
+
+Starting around January 15, 2019, if you’re deploying Office (that comes with your Office 365 business plan) on a Mac, Teams will be installed by default if you’re using the Office suite install package. 
+
+If you don’t want Teams installed by default, there will be a install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
+
+If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t prevent Teams from being installed by default.
+
+To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the dock, then hold down Option and choose **Force Quit**. Open the **Application Folder**, select **Microsoft Teams**, and move it to the **Trash**.
 
 ## What about Office 365 plans that don’t include Microsoft Teams?
 
