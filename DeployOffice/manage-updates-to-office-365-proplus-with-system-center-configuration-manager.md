@@ -82,7 +82,7 @@ You can use the latest version of the [Office Deployment Tool](https://go.micros
 
 To configure this capability, use a text editor, such as Notepad, to modify the configuration.xml file for the Office Deployment Tool. In the Add element, include the OfficeMgmtCOM attribute and set its value to True, as seen in the following example.
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="32" Channel="Monthly" OfficeMgmtCOM="True" >
     <Product ID="O365ProPlusRetail">

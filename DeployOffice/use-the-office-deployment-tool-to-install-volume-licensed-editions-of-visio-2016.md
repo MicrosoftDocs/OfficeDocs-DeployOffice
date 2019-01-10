@@ -39,7 +39,7 @@ If you're not familiar with the Office Deployment Tool, it's usually used to cus
 
 Here's an example of a configuration.xml file that can be used to install a 64-bit version of Visio Professional 2016 in English from the Office CDN using a GVLK. 
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="64" >
     <Product ID="VisioProXVolume" PIDKEY="69WXN-MBYV6-22PQG-3WGHK-RM6XC">

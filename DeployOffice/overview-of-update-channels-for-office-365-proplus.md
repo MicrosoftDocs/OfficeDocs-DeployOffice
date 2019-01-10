@@ -123,7 +123,7 @@ To configure the update channel for an Office 365 ProPlus installation, you can 
   
 If you use the Office Deployment Tool, you can use the Channel attribute in the configuration.xml file. The Channel attribute can be specified in the Add element or the Update element. The relevant values are "Monthly" for Monthly Channel, "Broad" for Semi-Annual Channel, and "Targeted" for Semi-Annual Channel (Targeted). For example, if you want to download and install the Monthly Channel of Office 365 ProPlus, your configuration.xml file would look like the following example. 
   
-```
+```xml
 <Configuration> 
    <Add SourcePath="\\server01\office" OfficeClientEdition="32"  Channel="Monthly"> 
     <Product ID="O365ProPlusRetail" > 

@@ -62,7 +62,7 @@ There are a series of settings in the configuration.xml file that you configure 
 ## Sample configuration.xml file to use with the Office Deployment Tool
 The following is a sample configuration.xml file that can be used to either download or install the 64-bit version of Office Professional Plus 2019 in English using a shared folder on your local network and activate by using MAK. If you’re using this configuration.xml to install Office 2019, previous Windows Installer (MSI) versions of Office are removed as part of the installation process. Also, even though it’s not specified in the configuration.xml file, updates are automatically enabled and are configured to come directly from the Office CDN, because those are the default settings.
 
-```
+```xml
 <Configuration>
   <Add SourcePath="\\Server\Share" OfficeClientEdition="64" Channel="PerpetualVL2019">
       <Product ID="ProPlus2019Volume"  PIDKEY="#####-#####-#####-#####-#####" >
