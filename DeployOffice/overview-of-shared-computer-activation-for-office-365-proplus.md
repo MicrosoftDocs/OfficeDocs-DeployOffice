@@ -47,7 +47,7 @@ To enable shared computer activation when you deploy Office 365 ProPlus, you nee
   
 The [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), combined with a simple text file, is used to install Office 365 ProPlus on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](configuration-options-for-the-office-2016-deployment-tool.md).
   
-```
+```xml
 <Display Level="None" AcceptEULA="True" /> 
 <Property Name="SharedComputerLicensing" Value="1" />
 ```

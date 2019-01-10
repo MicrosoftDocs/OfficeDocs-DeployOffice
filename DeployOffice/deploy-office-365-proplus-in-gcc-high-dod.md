@@ -60,7 +60,7 @@ For more information about settings available in the configuration.xml file, see
 ### Installing and updating Office 365 ProPlus from the Office CDN
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Office 365 ProPlus on Semi-Annual Channel from the Office CDN. Office 365 ProPlus will also be automatically updated directly from the Office CDN.
 
-```
+```xml
 <Configuration> 
    <Add OfficeClientEdition="64" Channel="Broad"> 
        <Product ID="O365ProPlusRetail" > 
@@ -75,7 +75,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ### Installing and updating Office 365 ProPlus from a shared folder on the local network
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Office 365 ProPlus on Semi-Annual Channel from a shared folder on your local network. Updates to Office 365 ProPlus will also come from a shared folder on your local network.
 
-```
+```xml
 <Configuration> 
    <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="Broad"> 
        <Product ID="O365ProPlusRetail" > 
