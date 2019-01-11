@@ -34,7 +34,7 @@ The following are the requirements for using the Office client policy service wi
 
 The following are the basic steps for creating a policy configuration.
 
-1. Sign into the [portal](http://aka.ms/o365clientmgmt), review the preview terms, and then choose **Accept**.
+1. Sign into the [portal](https://aka.ms/o365clientmgmt), review the preview terms, and then choose **Accept**.
 2. On the **Office Customization (Preview)** page, choose **Go to Office policy management**.
 3. On the **Policy configurations (Preview)** page, choose **Create**.
 4. On the **Create policy configuration** page, do the following:
