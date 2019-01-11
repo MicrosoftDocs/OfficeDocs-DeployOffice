@@ -23,7 +23,7 @@ Existing installations of Office 365 Business won’t be affected at this time. 
 
 If you don’t want Teams installed by default when you install Office 365 Business on devices running Windows, you'll need to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
-```
+```xml
 <Configuration>
    <Add OfficeClientEdition="64" Channel="Monthly">
       <Product ID="O365BusinessRetail">

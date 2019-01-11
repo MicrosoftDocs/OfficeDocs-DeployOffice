@@ -56,7 +56,7 @@ When creating the configuration file, we recommend starting with an example file
 
 In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus and Visio Online Plan 2 (previously named Visio Pro for Office 365) to \\\\server\share on your network:
 
-```
+```xml
 <Configuration> 
   <Add SourcePath="\\server\share" OfficeClientEdition="32"> 
    <Product ID="O365ProPlusRetail" > 
@@ -88,7 +88,7 @@ You can use the Office Deployment Tool to download the installation files for Of
 
 To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus from **\\\\servera\share** (the DownloadPath) to **\\\\serverb\share** (the SourcePath):
 
-```
+```xml
 <Configuration> 
   <Add SourcePath="\\serverb\share" OfficeClientEdition="32" Version="16.0.6741.2056" DownloadPath="\\servera\share"> 
     <Product ID="O365ProPlusRetail" > 
@@ -111,7 +111,7 @@ When creating the configuration file, we recommend starting with an example file
 
 In this example, the configuration file installs a 32 bit English edition of Office 365 ProPlus without Publisher:
 
-```
+```xml
 <Configuration> 
   <Add SourcePath="\\Server\share" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
@@ -160,7 +160,7 @@ This article does not cover all the issues related to managing updates for Offic
 
 When installing Office 365 ProPlus, you can exclude specific products. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus products except Publisher:
 
-```
+```xml
 <Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" >
       <Language ID="en-us" />
@@ -173,7 +173,7 @@ If you've already installed Office 365 ProPlus, you can also use the ExcludeApp 
 
 You can also remove an entire language version of Office 365 ProPlus. To do so, follow the steps for excluding products for installing Office with the ODT, but replace the configuration file with one that uses the **Remove** element. For example, this configuration file removes the Spanish language version of Office 365 ProPlus:
 
-```
+```xml
 <Configuration> 
  <Remove>
     <Product ID="O365ProPlusRetail" > 
@@ -189,7 +189,7 @@ For more information about the options for excluding or removing apps, see [Conf
 
 OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
 
-```
+```xml
 <Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" >
       <Language ID="en-us" />
@@ -204,7 +204,7 @@ When using the ODT, you can automatically install the Office language that match
 
 For example, this configuration file installs the 32-bit edition of Office 365 ProPlus in the same language as the client operating system--English for clients with the display language of English, Japanese for clients with Japanese, and so on:
 
-```
+```xml
 <Configuration> 
   <Add OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
@@ -231,7 +231,7 @@ When creating the configuration file, we recommend starting with an example file
 
 In this example, the configuration file installs the French and Japanese language packs:
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="32">
     <Product ID="LanguagePack">
@@ -264,7 +264,7 @@ To create the configuration file, we recommend you use the [Office Customization
 
 In this example, the configuration file installs the 32-bit version of Office 365 ProPlus in English and displays the Trust Bar for all VBA macros in Excel.
 
-```
+```xml
 <Configuration>
   <Add OfficeClientEdition="32" Channel="Broad">
     <Product ID="O365ProPlusRetail">
@@ -310,7 +310,7 @@ When creating the configuration file, we recommend starting with an example file
 
 In this example, the configuration file creates an App-V package from a 32-bit English edition of Office 365 ProPlus without Publisher:
 
-```
+```xml
 <Configuration> 
  <Add SourcePath="\\Server\share" OfficeClientEdition="32">
     <Product ID="O365ProPlusRetail" > 
