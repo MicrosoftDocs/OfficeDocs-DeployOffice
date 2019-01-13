@@ -45,6 +45,8 @@ Since Click-to-Run handles updates differently than Windows Installer (MSI), the
 - Updates are cumulative, so the latest version of Office 2019 available on the Office CDN includes all the security and quality updates from all the previous versions of Office 2019.
 - When you download and install Office 2019 from the Office CDN, it’s up to date already. You don’t have to download and apply any updates or service packs after you install Office 2019.
 - Since updates are cumulative and already included in the latest version of Office 2019 on the Office CDN, you don’t use Microsoft Updates or Windows Server Updates Services (WSUS) to update Office 2019. But you can use System Center Configuration Manager to help you deploy and manage updates to Office 2019, including controlling when and from where updates are applied. 
+  > [!NOTE]
+  > The "Office 2019" category, which has appeared on WSUS catalog in November 2018, only contains updates for SharePoint and Office Server Online products.
 
 ## Configure where Office 2019 gets updates from
 
