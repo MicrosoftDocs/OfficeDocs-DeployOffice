@@ -92,7 +92,7 @@ After running the command, the Office installation should start immediately. If 
 
 After Office has deployed to the pilot group, you can test Office in your environment, particularly with your hardware and device drivers. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
-## Step 6: Deploy Office to the broad group
+## Step 5: Deploy Office to the broad group
 
 After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
 
