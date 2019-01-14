@@ -26,15 +26,15 @@ The Office client policy service is part of a portal for managing Office 365 Pro
 The following are the requirements for using the Office client policy service with Office 365 ProPlus:
 
 - At least Version 1808 of Office 365 ProPlus.
-- User accounts created in Azure Active Directory (AAD). The user must be signed into Office 365 ProPlus with an AAD-based account.
-- Security groups created in Azure Active Directory (AAD), with the appropriate users added to those groups.
+- User accounts created in or synchronized to Azure Active Directory (AAD). The user must be signed into Office 365 ProPlus with an AAD-based account.
+- Security groups created in or synchronized to Azure Active Directory (AAD), with the appropriate users added to those groups.
 
 
 ## Steps for creating a policy configuration
 
 The following are the basic steps for creating a policy configuration.
 
-1. Sign into the [portal](http://aka.ms/o365clientmgmt), review the preview terms, and then choose **Accept**.
+1. Sign into the [portal](https://aka.ms/o365clientmgmt), review the preview terms, and then choose **Accept**.
 2. On the **Office Customization (Preview)** page, choose **Go to Office policy management**.
 3. On the **Policy configurations (Preview)** page, choose **Create**.
 4. On the **Create policy configuration** page, do the following:

@@ -68,7 +68,7 @@ Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
 
 3. [Create a configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) that includes the following lines:
 
-   ```
+   ```xml
    <Display Level="None" AcceptEULA="True" /> 
    <Property Name="SharedComputerLicensing" Value="1" />
    ```
@@ -95,7 +95,7 @@ Here are the basic steps of how to configure RDS to deploy Office 365 ProPlus on
 
    - Follow the instructions to [deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md). In Step 2 of the instructions, make sure that your configuration.xml file also includes the following line to enable shared computer activation:
 
-   ```
+   ```xml
    <Property Name="SharedComputerLicensing" Value="1" />
    ```
 

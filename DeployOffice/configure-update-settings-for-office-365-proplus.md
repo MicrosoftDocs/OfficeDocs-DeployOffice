@@ -49,7 +49,7 @@ The settings that the Office Deployment Tool uses to install and update Office 3
   
 For example, if you want Office 365 ProPlus to get updates automatically from a network share called  \\\server\updates, you'd include the following line in your configuration.xml file:
   
-```
+```xml
 <Updates Enabled="TRUE" UpdatePath="\\server\updates" />
 ```
 

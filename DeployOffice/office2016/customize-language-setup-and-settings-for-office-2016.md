@@ -134,14 +134,14 @@ The following steps are the same as the standard steps for deploying Office 2016
     
     For example, to specify that setup install both English and French, with English as the default installation language, add the following elements:
     
-   ```
+   ```xml
    <AddLanguage Id="en-us" ShellTransform="yes"/>
    <AddLanguage Id="fr-fr" />
    ```
 
     If you want the default installation language and the Shell UI to match the operating system language, and you also want every user to have Office in both English and French, the code in the Config.xml file resembles the following example:
     
-   ```
+   ```xml
    <AddLanguage Id="match" ShellTransform="yes"/> 
    <AddLanguage Id="en-us" />
    <AddLanguage Id="fr-fr" /> 
@@ -151,7 +151,7 @@ The following steps are the same as the standard steps for deploying Office 2016
     
 8. To specify that setup also match the language of the user's Windows user locale, add another line in the Config.xml file: 
     
-   ```
+   ```xml
    <AddLanguage Id="match" /> 
    ```
 
@@ -362,7 +362,7 @@ The following table shows **OptionState** attributes, values, and descriptions.
 
 The following Config.xml file example shows every language that has the **OptionState** element **State** attribute set to **Absent**. If you decide to copy this example into the Config.xml file for the proofing tools, set the **State** attribute for each set of proofing tools that you want to deploy to **Local** (or **Advertise**, if preferred).
   
-```
+```xml
 <Configuration Product="ProofKit">
   <!-- <Display Level="full" CompletionNotice="yes" SuppressModal="no" AcceptEula="no" /> -->
   <!-- <Logging Type="standard" Path="%temp%" Template="Microsoft Office Proofing Tools Kit Setup(*).txt" /> -->
@@ -442,13 +442,13 @@ The following Config.xml file example shows every language that has the **Option
     
 4. For each set of proofing tools that you do not want to install, in the **OptionState** element, set the **State** attribute to **Absent**. For example, if you do not want Catalan proofing tools installed, use this syntax: 
     
-   ```
+   ```xml
    <OptionState Id="ProofingTools_1027" State="Absent" Children="force"/>
    ```
 
 5. Set the **State** attribute for each set of proofing tools that you want to deploy to **Local** (or **Advertise**, if preferred). For example, to deploy Basque (Basque) proofing tools, you can use this syntax:
     
-   ```
+   ```xml
    <OptionState Id="ProofingTools_1069" State="Local" Children="force"/>
    ```
 
