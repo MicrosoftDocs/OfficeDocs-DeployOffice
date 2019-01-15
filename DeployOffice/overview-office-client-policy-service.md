@@ -28,6 +28,7 @@ The following are the requirements for using the Office client policy service wi
 - At least Version 1808 of Office 365 ProPlus.
 - User accounts created in or synchronized to Azure Active Directory (AAD). The user must be signed into Office 365 ProPlus with an AAD-based account.
 - Security groups created in or synchronized to Azure Active Directory (AAD), with the appropriate users added to those groups.
+- To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Desktop Analytics Administrator.
 
 
 ## Steps for creating a policy configuration
