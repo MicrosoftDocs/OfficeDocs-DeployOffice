@@ -64,7 +64,7 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |Outlook        |opim2019|opim15      |
 |OneNote        |onmc2019|onmc15      |
 |Skype for Business |msfb16| msfb16     |
-|MAU              |msau03|msau03|
+|MAU              |msau04|msau04|
 |Remote Desktop         |msrd10| msrd10     |
 |Intune Company Portal  |imcp01| imcp01     |
 
