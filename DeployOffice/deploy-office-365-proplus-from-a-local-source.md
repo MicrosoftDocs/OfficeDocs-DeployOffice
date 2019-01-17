@@ -16,7 +16,7 @@ description: "This article gives step-by-step instructions for how to use the Of
 
 # Deploy Office 365 ProPlus from a local source
 
-Follow the steps in this article to deploy Office 365 ProPlus to client computers from a shared folder on your network by using the Office Deployment Tool (ODT). 
+Follow the steps in this article to deploy Office 365 ProPlus to client computers from a shared folder on your network by using the Office Deployment Tool (ODT).  
 
 ## Before you begin
 
