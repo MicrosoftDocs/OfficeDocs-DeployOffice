@@ -19,7 +19,7 @@ Currently, Microsoft Teams is a separate installation from Office 365 Business. 
 
 Existing installations of Office 365 Business won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
 
-## How to prevent Microsoft Teams from being installed by default on devices running Windows
+## How to exclude Microsoft Teams from being installed by default on devices running Windows
 
 If you don’t want Teams installed by default when you install Office 365 Business on devices running Windows, you'll need to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
@@ -36,13 +36,13 @@ If you don’t want Teams installed by default when you install Office 365 Busin
 > [!TIP]
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
-If you’re letting your users install Office 365 Business for themselves, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t prevent Teams from being installed by default.
+If you’re letting your users install Office 365 Business for themselves, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being installed by default.
 
 If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall** a program. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on  the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user.
 
-## Impact on existing installations of Office
+## What about existing installations of Office?
 
-Existing installations of Office won’t be affected at this time, as long as you don’t make any changes to that installation, other than applying the regular feature and quality updates. But, if you initiate any other sort of installation on a device running Windows, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process. In those cases, be sure to include the ExcludeApp element in your configuration.xml file, as described in the previous section, to prevent Teams from being installed by default.
+Existing installations of Office won’t be affected at this time, as long as you don’t make any changes to that installation, other than applying the regular feature and quality updates. But, if you initiate any other sort of installation on a device running Windows, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process. In those cases, be sure to include the ExcludeApp element in your configuration.xml file, as described in the previous section, to exclude Teams from being installed by default.
 
 ## Feature and quality updates for Microsoft Teams
 
@@ -50,11 +50,11 @@ After Teams is installed, it's automatically updated approximately every two wee
 
 ## Microsoft Teams installations on a Mac
 
-Starting around January 15, 2019, if you’re deploying Office (that comes with your Office 365 business plan) on a Mac, Teams will be installed by default if you’re using the Office suite install package. 
+As of January 16, 2019, if you're using Version 16.21, or later, of the Office suite install package to deploy on a Mac, Teams will be installed by default.
 
-If you don’t want Teams installed by default, there will be a install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
+If you don’t want Teams installed by default, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
 
-If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t prevent Teams from being installed by default.
+If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being installed by default.
 
 To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the dock, then hold down Option and choose **Force Quit**. Open the **Application Folder**, select **Microsoft Teams**, and move it to the **Trash**.
 
