@@ -16,7 +16,7 @@ description: "Provides information to admins on how to download and deploy Offic
 
 ***Applies to:*** *Office for Mac*
 
-This article is for IT admins and covers frequently asked questions about the availability of Office from the Mac App Store, and the differences between downloading and distributing Office apps directly from Microsoft.
+This article is for IT administrators and discusses frequently asked questions about the availability of Office from the Mac App Store, and the differences between downloading and distributing Office apps directly from Microsoft.
 
 Starting in January 2019, the following Office applications are available for download from the Mac App Store:
 - Microsoft Word
@@ -29,7 +29,7 @@ Starting in January 2019, the following Office applications are available for d
 \* these apps were also available from the Mac App Store in previous years.
 
 ### What version of Office is available from the Mac App Store?
-The Office apps available from the Mac App Store provide the very latest version of Office on the Mac. Word, Excel, PowerPoint, and Outlook require an Office 365 subscription to activate. OneNote and OneDrive do not require an Office 365 subscription, but some premium features may require an Office 365 subscription. All apps are compatible with Office 365 subscriptions such as A3, A5, E3, E5, and ProPlus.
+The Office apps available from the Mac App Store provide the very latest stable version of Office on the Mac. Word, Excel, PowerPoint, and Outlook require an Office 365 subscription to activate. OneNote and OneDrive do not require an Office 365 subscription, but some premium features may require an Office 365 subscription. All apps are compatible with Office 365 subscriptions such as A3, A5, E3, E5, and ProPlus.
 
 NOTE: Some Office 365 subscriptions such as A1, E1, and F1 do not include access to downloadable Office apps. Click [here](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans) for more information about different Office 365 plans.
 
@@ -42,16 +42,18 @@ You need an Enterprise Mobility and Management (EMM) tool that supports either [
 While a consumer may acquire Office through the Mac App Store as a bundle with a single-click download, IT admins will need to deploy the individual apps.
 
 ### When deployed through the Mac App Store, does Office behave differently, or provide less functionality?
-Word, Excel, PowerPoint, Outlook and OneNote provide the same end-user functionality regardless of how it was deployed. IT admins have traditionally deployed Office from Microsoft's Content Delivery Network (CDN), but now have the option of deploying from the Mac App Store. The OneDrive app offers more functionality, such as [files on demand](https://support.office.com/article/try-files-on-demand-for-mac-529f6d53-e572-4922-a585-e7a318c135f0) when deployed through the Microsoft CDN.
+Word, Excel, PowerPoint, Outlook and OneNote provide the same end-user functionality regardless of how it was deployed. IT admins have traditionally deployed Office from Microsoft's Content Delivery Network (CDN), but now have the option of deploying from the Mac App Store. 
 
-The Office builds available from the Mac App Store are production builds, and are updated on a monthly basis. The [Office Insider](https://insider.office.com/) program is not supported through the Mac App Store.
+The OneDrive app, when acquired from Microsoft's CDN, offers IT admins more deployment flexibility such as pre-enabling icon overlays and system access. When acquired from the Mac App Store, users will see additional prompts to enable this functionality.
 
-Microsoft Teams and Skype for Business is not available through the Mac App Store, and must continued to be deployed from the Microsoft CDN.
+The Office builds available from the Mac App Store are production builds, and are usually updated on a monthly basis. The [Office Insider](https://insider.office.com/) program is not supported through the Mac App Store. If you wish to use the Insider Slow or Fast channels, you should continue to install Office apps from the Microsoft CDN.
+
+Microsoft Teams and Skype for Business are not available through the Mac App Store, and must be deployed from the Microsoft CDN.
 
 ### How do Office updates occur?
-When Office apps are deployed through the Mac App Store, it is the sole responsibility of the App Store to keep those apps up-to-date. Conversely, apps deployed from Microsoft's CDN are updated through the Microsoft AutoUpdate (MAU) tool. [Content caching](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac) services in macOS can be used (and is highly recommended) to optimize both the installation and update process of Office apps.
+When Office apps are deployed through the Mac App Store, it is the sole responsibility of the App Store to keep those apps up-to-date. Conversely, apps deployed from Microsoft's CDN are updated through the Microsoft AutoUpdate (MAU) tool. [Content caching](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac) services in macOS can be used (and is highly recommended) to optimize both the installation and update process of Office apps acquired through the Mac App Store.
 
-The size of monthly update packages is the same, regardless of whether the CDN or Mac App Store is used for deployment.
+The download size of monthly update packages is the same, regardless of whether the CDN or Mac App Store is used for deployment.
 
 ### Can I convert an existing CDN-based Office installation to Mac App Store?
 If a user launches the App Store app on their Mac, they may see that Office apps are available for download even though Office is already installed from the Microsoft CDN. Depending upon the currently installed Office build, and the build available in the Mac App Store, the existing app may or may not get overwritten. For example, if the build of Office currently installed is newer than what is available from the Mac App Store (such as an Insider build), it will not be overwritten if the user chooses to download the Mac App Store build.
