@@ -15,7 +15,8 @@ description: "Provides Office admins with a list of resources for providing prod
 
 # Product feedback and support resources
 
+We appreciate your feedback and want to help you deploy Office in your enterprise. 
 
-
+The following is a list of resources if you want to provide feedback about Office or need additional help. If you have comments about the Office deployment content, please 
 
 To provide feedback about the product, including suggesting new features, 
