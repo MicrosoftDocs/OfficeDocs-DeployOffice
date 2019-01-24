@@ -48,6 +48,7 @@
 ## [Deployment guide](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [What's new for admins](mac/what-s-new-for-admins-in-office-for-mac.md?toc=/deployoffice/toc.json)
 ## [Deployment options](mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/toc.json)
+### [Deploy from the Mac App Store](mac/deploy-mac-app-store.md?toc=/deployoffice/toc.json)
 ## [Deploy updates](mac/deploy-updates-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Use msupdate](mac/update-office-for-mac-using-msupdate.md?toc=/deployoffice/toc.json)
 ### [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
