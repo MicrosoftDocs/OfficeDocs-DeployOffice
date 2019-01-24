@@ -24,7 +24,7 @@ If you're having a problem with deploying Office, such as getting an error messa
 - [Tech Community](https://techcommunity.microsoft.com/)
 - [Support](https://support.microsoft.com/contactus)
 
-The Answers forum and Tech Community are also good places to ask questions about deploying Office.
+The Tech Community is also good place to ask questions about deploying Office.
 
 ## Providing feedback about Office
 
