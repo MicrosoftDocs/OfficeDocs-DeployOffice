@@ -1,6 +1,7 @@
 # [Deployment guide for Office for Mac](deployment-guide-for-office-for-mac.md)
 ## [What's new for admins](what-s-new-for-admins-in-office-for-mac.md)
 ## [Deployment options](deployment-options-for-office-for-mac.md)
+### [Deploy from the Mac App Store](deploy-mac-app-store.md)
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
 ### [Use msupdate](update-office-for-mac-using-msupdate.md)
 ### [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
