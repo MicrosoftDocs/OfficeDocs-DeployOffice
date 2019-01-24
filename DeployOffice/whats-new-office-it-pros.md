@@ -26,7 +26,7 @@ For more information, see the following resources:
  - [Overview of the Office client policy service (Preview) for Office 365 ProPlus](overview-office-client-policy-service.md)
 
 ### Office for Mac available in the Mac App Store
-Office apps, such as Word and Excel, are now available from the Mac App Store. Most require an Office 365 subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
+Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
 
 
 ## October 2018
