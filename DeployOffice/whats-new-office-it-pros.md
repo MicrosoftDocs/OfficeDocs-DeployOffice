@@ -18,14 +18,14 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## January 2019
 
-### Office client policy service public preview available
+### Public preview of Office client policy service
 A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
  - [Overview of the Office client policy service (Preview) for Office 365 ProPlus](overview-office-client-policy-service.md)
 
-## Office for Mac available in the Mac App Store
+### Office for Mac available in the Mac App Store
 Office apps, such as Word and Excel, are now available from the Mac App Store. Most require an Office 365 subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
 
 
