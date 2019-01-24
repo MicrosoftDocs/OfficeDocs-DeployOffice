@@ -24,12 +24,10 @@ If you're having a problem with deploying Office, such as getting an error messa
 - [Tech Community](https://techcommunity.microsoft.com/)
 - [Support](https://support.microsoft.com/contactus)
 
-The Tech Community is also good place to ask questions about deploying Office.
-
 ## Providing feedback about Office
 
 If you have feedback about Office, such as suggestions for improvements, we recommend you use the [UserVoice site for Office 365](https://office365.uservoice.com/).
 
 ## Providing feedback on the content
 
-If you have feedback about an article, be sure to choose the **Content feedback** button and provide your feedback. For example, if something is confusing, key information is missing, or a link is broken or doesn't seem to go to the right destination.
+If you have feedback about an article you're reading, be sure to choose the **Content feedback** button at the bottom of that article and provide your feedback. For example, if something is confusing, key information is missing, or a link is broken or doesn't seem to go to the right destination.
