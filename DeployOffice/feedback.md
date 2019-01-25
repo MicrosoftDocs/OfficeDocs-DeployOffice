@@ -17,17 +17,17 @@ description: "Provides Office admins with a list of resources for providing feed
 
 We appreciate your feedback and want to help you deploy Office in your enterprise.
 
-## Getting support for problems with Office
+## Get support for problems with Office
 
 If you're having a problem with deploying Office, such as getting an error message or something isn't working, we recommend that you use one of these Microsoft resources to get assistance:
 - [Answers forum](https://answers.microsoft.com/)
 - [Tech Community](https://techcommunity.microsoft.com/)
 - [Support](https://support.microsoft.com/contactus)
 
-## Providing feedback about Office
+## Provide feedback about Office
 
 If you have feedback about Office, such as suggestions for improvements, we recommend you use the [UserVoice site for Office 365](https://office365.uservoice.com/).
 
-## Providing feedback on the content
+## Provide feedback on the content
 
 If you have feedback about an article that you're reading, choose the **Content feedback** button at the bottom of that article and then provide your feedback. For example, if something is confusing, important information is missing, or a link is broken or doesn't seem to go to the right destination.
