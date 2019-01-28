@@ -15,18 +15,22 @@ ms.custom: Ent_Office_ProPlus
 
 # Overview of deploying languages in Office 365 ProPlus
 
-This article covers the different options for deploying languages, including what method to use, where to deploy them from, how to deploy proofing tools, and recommendations for deploying multiple languages. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
+This article covers the options for deploying languages, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
+
+In general, you deploy languages for Office 365 ProPlus with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages or you can deploy languages as a separate package, after Office is already installed.
+
+The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuraiton file in a text editor.
 
 ## Best practices for deploying languages
 
 When deploying multiple languages in a large organization, we recommend these best practices:
 
-- Automatically install the same languages as the operating system
-- If you deploy an Office app to a device that already has Office installed, you can automatically deploy the app in the same languages as the installed version of Office. 
+- Automatically install the same languages as the operating system.
+- If you deploy an Office app to a device that already has Office installed, you can automatically deploy the app in the same languages as the installed version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can automatically install the same languages as the previous version.
 - When building Office packages to deploy, include all the language packs you plan to deploy in each package. Creating separate packages for different language sets can make the Office deployment more difficult to manage.
 - When adding languages to an existing deployment of Office, you can deploy just the language packs, rather than the full version of Office.
-- If you deploy Office from a local source on your network, use the Office CDN as a backup source for language packs that migth not be available at that local source.
+- If you deploy Office from a local source on your network, use the Office CDN as a backup source for language packs that might not be available at that local source.
 - If you need to conserve network bandwidth, you can deploy proofing tools instead of full language packs. 
 
 This article also includes more details on language packs, the list of supported languages, and details on how Office conserves network bandwidth when downloading language packs for deployment.
@@ -37,14 +41,22 @@ If your organization allows it, users can install Office 365 ProPlus languages d
 
 ## Deploy multiple languages as part of deploying Office
 
-To deploy Office 365 ProPlus in multiple languages, use the [Office Customization Tool](https://config.office.com/) to add the languages you want when creating the Office packages, and then use the Office Deployment Tool or Configuration Manager to deploy Office in those languages. If you deploy Office from a local source on your network, you must download your languages to the local source, in the same way that you download the Office package. 
+To deploy Office 365 ProPlus in multiple languages, you just need to include the additional langauges in the Office packages you create as part of your standard deployment process:
+
+- When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select the languages you want to deploy in the Language settings.
+
+If you deploy Office from a local source on your network, you must download your languages to the local source, in the same way that you download the Office package. For more details on standard deployments, see [planning your deployment](xx).
 
 > [!NOTE]
 > The primary language selected in the Office Customization Tool determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall Office and reinstall it. 
 
 ## Deploy languages to existing installations of Office 365 ProPlus
 
-After installing Office 365 ProPlus, you can install additional languages for Office. To do so, use the same tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Language Pack** as the Additional Product in the Products section. In the Language section, select the additional languages you want to install.
+After installing Office 365 ProPlus, you can install additional languages for Office. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
+
+1. When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Language Pack** as the Additional Product in the Products section. 
+2. In the Language section, select the additional languages you want to install.
+3. Deploy the languages using the same process you use to deploy Office.
 
 By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. You will also need to download those langauges to that source path.
  
@@ -57,9 +69,13 @@ If you want to deploy proofing tools in additional languages beyond the companio
 > [!NOTE]
 > You cannot use the Office Customization Tool to create the configuration file, because this feature is not yet availabe in that tool. Instead, you must edit the configuration file in a text editor. 
 
-To install just the proofing tools, use the same tools you used to deploy Office, such as Configuration Manager or the ODT. Use "ProofingTools" as the Product ID, along with the appropriate Language IDs, as shown in the example. You can include proofing tools in the initial deployment of Office or you can add them later to an existing deployment. In either case, make sure that the additional proofing tools are the same version (32-bit or 64-bit) and channel as Office.
+To install just the proofing tools, use the same tools you used to deploy Office, such as Configuration Manager or the ODT. You can include proofing tools in the initial deployment of Office or you can add them later to an existing deployment. In either case, make sure that the additional proofing tools are the same version (32-bit or 64-bit) and channel as Office.
 
-If you deploy languages from a local source (as shown in the example below), you must download the proofing tools to that source first. To do that, use the ODT with the configuration file, but run it in download mode. For more details on how to do that, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus). Whenever you use a local source, you can use the Office CDN as a backup source for language packs and proofing tools by including the "AllowCdnFallback" attribute in the configuration file, as shown in the example. 
+1. When creating the configuration file in a text editor, use "ProofingTools" as the Product ID, along with the appropriate Language IDs, as shown in the example. 
+
+2. If you deploy languages from a local source (as shown in the example below), you must download the proofing tools to that source first. To do that, use the ODT with the configuration file, but run it in download mode. For more details on how to do that, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus). 
+
+3. If you use a local source, we recommend that you use the Office CDN as a backup source for language packs and proofing tools by including the "AllowCdnFallback" attribute in the configuration file, as shown in the example. 
 
 For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
@@ -83,56 +99,57 @@ This configuration file installs the 64-bit version of proofing tools from Germa
 
 ## Install the same languages as the operating system
 
-When deploying Office, you can automatically install the same languages that are in use by the operating system. To do so, select **Match Operating System** as the primary language when creating the configuration file in the [Office Customization Tool](https://config.office.com/).
+When deploying Office, you can automatically install the same languages that are in use by the operating system. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
+
+1. When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Match Operating System** as the primary language. 
+2. If you use a local source, we recommend that you use the Office CDN as a backup source for language packs. To do so, select **Fallback to the CDN for missing languages** in the installation settings of the Office Customization Tool. 
 
 When Match Operating System is used, the base language of the operating system and all active display languages for user profiles on the device are installed. Match Operating System  can be used in combination with a fixed list of languages. 
 
-Note that Match Operating System cannot install a langauge if Office doesn't support that language or if the correct language pack cannot be found in the local source files. To help address this issue, we recommend that you use the Office CDN as a backup source for language packs. To do so, select **Fallback to the CDN for missing languages** in the installation settings of the Office Customization Tool. 
+## Install the same languages as an existing version of Office
 
+When deploying Office, you can automatically install the same languages that are in use by an existing version of Office 365 ProPlus. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 
+> [!NOTE]
+> You cannot use the Office Customization Tool to create the configuration file, because this feature is not yet availabe in that tool. Instead, you must edit the configuration file in a text editor. 
 
-## Use the Office CDN as a backup source for language packs
+1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example. 
 
-Install the same languages as the operating system
-If you use Match Operating System or 
-- To specify a fallback language, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you use MatchOS or MatchInstalled and do not include a fallback language, the ODT will use en-us as a default fallback. 
+2. If you deploy languages from a local source (as shown in the example below), you must download any possible matched languages to that source first. For more details, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus). 
 
-- To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example. When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is included, then the ODT will use source files from the Office CDN.
+3. If you use a local source, we recommend the following:
+ - Use the Office CDN as a backup source for language packs and proofing tools by including the "AllowCdnFallback" attribute in the configuration file, as shown in the example. 
+ - Specify a fallback language by including the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you do not include a fallback language, the ODT will use en-us as a default fallback. 
 
-For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+MatchInstalled can be used when deploying a specific Office app, such as Visio, to devices with Office 365 ProPlus already installed. In that case, using MatchInstalled automatically installs Visio in the same languages used by the existing version of Office.
 
-## Install matching languages
-
-When deploying Office with the Office Deployment Tool (ODT), you can automatically install the same languages that are in use by the operating system or by an existing version of Office. To match the operation system langauge, use "MatchOS" as the Language ID. To match the language used by the existing version of Office, use "MatchInstalled" as the language ID. 
-
-MatchInstalled can be used when deploying a specific Office app, such as Visio, to devices with Office already installed. In that case, using MatchInstalled automatically installs Visio in the same languages used by the existing version of Office.
-
-When MatchOS is used, the ODT will install the base language of the operating system and all active display languages for user profiles on the device. MatchOS can be used in combination with a fixed list of languages. For example, you can use Language ID = "MatchOS" and Language ID = "en-us" to install both English and any matching languages.
-
-MatchOS and MatchInstalled cannot install a langauge if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack:
-
-- To specify a fallback language, include the "Fallback" attribute in the configuration file, as shown in the example. The fallback language will be installed if one of the detected languages isn't supported by Office. If you use MatchOS or MatchInstalled and do not include a fallback language, the ODT will use en-us as a default fallback. 
-
-- To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example. When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is included, then the ODT will use source files from the Office CDN.
-
-For details on how to edit the configuration file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
 ### Example
 ```xml
+<Configuration>
 <Add SourcePath="\\Server\Share" 
-     OfficeClientEdition="32"
+     OfficeClientEdition="64"
      Channel="Broad" 
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
-     <Language ID="MatchInstalled"  />
-     <Language ID="MatchOS" Fallback="en-us" />
+     <Language ID="MatchInstalled" Fallback="en-us" />
   </Product>
 </Add>  
+</Configuration>
 ```
 
 ## Install the same languages from a previous MSI installation
 
 If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources--for example, language packs, language interface packs, or proofing tools--installed when you install Office 365 ProPlus. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+
+## Use the Office CDN as a backup source for language packs
+
+If you deploy Office from a local source on your network, you can use the Office CDN as a backup source for language packs that might not be available at that local source. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
+
+- When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Fallback to the CDN for missing languages** in the installation settings of the Office Customization Tool. 
+
+When installing languages, the ODT looks first for source files in the Source Path location. If the language pack isn't available at that location **and** the Fallback setting is selected, then the ODT will use source files from the Office CDN.
 
 ## Conserve network bandwidth when adding language packs
 
