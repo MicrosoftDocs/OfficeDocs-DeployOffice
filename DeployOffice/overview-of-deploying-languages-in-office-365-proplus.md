@@ -21,19 +21,22 @@ In general, you deploy languages for Office 365 ProPlus with the same process an
 
 The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuraiton file in a text editor.
 
+> [!IMPORTANT]
+> This article describes deploying language packs for Office 365 ProPlus, which is a subscription version of Office that uses Click-to-Run installation technology. If you have Office 2016 or Office 2019, which use the Windows Installer (MSI) installation technology, see [Plan for multilanguage deployment of Office 2016](office2016/plan-for-multilanguage-deployment-of-office-2016.md). Language resources for MSI versions of Office are not supported for Click-to-Run versions of Office.  
+
 ## Best practices for deploying languages
 
 When deploying multiple languages in a large organization, we recommend these best practices:
 
-- Automatically install the same languages as the operating system.
-- If you deploy an Office app to a device that already has Office installed, you can automatically deploy the app in the same languages as the installed version of Office.
-- If you upgrade from a Windows Installer (MSI) version of Office, you can automatically install the same languages as the previous version.
-- When building Office packages to deploy, include all the language packs you plan to deploy in each package. Creating separate packages for different language sets can make the Office deployment more difficult to manage.
-- When adding languages to an existing deployment of Office, you can deploy just the language packs, rather than the full version of Office.
-- If you deploy Office from a local source on your network, use the Office CDN as a backup source for language packs that might not be available at that local source.
-- If you need to conserve network bandwidth, you can deploy proofing tools instead of full language packs. 
+- Automatically [install the same languages as the operating system](#install-the-same-languages-as-the-operating-system).
+- If you deploy an Office app to a device that already has Office installed, you can[ automatically deploy the app in the same languages as the installed version of Office](#install-the-same-languages-as-an-existing-version-of-office).
+- If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as the previous version](#install-the-same-languages-from-a-previous-msi-installation).
+- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment more difficult to manage.
+- When adding languages to an existing deployment of Office, you can[ deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
+- If you deploy Office from a local source on your network, [use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
+- If you need to conserve network bandwidth, you can [deploy proofing tools](#install-proofing-tools) instead of full language packs. 
 
-This article also includes more details on language packs, the list of supported languages, and details on how Office conserves network bandwidth when downloading language packs for deployment.
+This article also includes more details on [language packs](#language-resources-for-office-365-proplus), the list of [supported languages](#languages-culture-codes-and-companion-proofing-languages), and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
 
 ## Install languages from the Office 365 portal
 
@@ -45,7 +48,7 @@ To deploy Office 365 ProPlus in multiple languages, you just need to include the
 
 - When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select the languages you want to deploy in the Language settings.
 
-If you deploy Office from a local source on your network, you must download your languages to the local source, in the same way that you download the Office package. For more details on standard deployments, see [planning your deployment](xx).
+If you deploy Office from a local source on your network, you must download your languages to the local source, in the same way that you download the Office package. For more details on standard deployments, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
 > [!NOTE]
 > The primary language selected in the Office Customization Tool determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall Office and reinstall it. 
@@ -163,8 +166,7 @@ You can install the following language resources for Office 365 ProPlus:
 
 - Language Interface Packs: Translated User Interface that installs over a copy of a Click-to-Run installation. You can download and install a Language Interface Pack for free. After you install it, you can use Microsoft Excel, OneNote, Microsoft Outlook, PowerPoint, and Word features in a different language. You can use the **Office Language Preferences** dialog after installation to change a language and see a translated user interface. For information about how to change the editing, display or Help language for Office applications, see [Enable the use of other languages in your Office programs](https://go.microsoft.com/fwlink/p/?LinkId=281959). To set Office language options on a computer that is running Windows 10, type "Office Language" at the **Start** screen, and select **Office Language Preferences** to open the **Microsoft Office Language Preferences** dialog box.
     
-- Proofing Tools: Localized language versions of Office include proofing tools for a set of companion langauges. For more details, see [Install proofing tools
-](xx.md).
+- Proofing Tools: Localized language versions of Office include proofing tools for a set of companion langauges. For more details, see [Install proofing tools](#install-proofing-tools).
     
 - ScreenTip Language: Translations that show the text of display elements such as buttons, menus, and dialog boxes in another language. You can download [Microsoft Office ScreenTip Language 2013](https://go.microsoft.com/fwlink/p/?LinkId=281983) from the Microsoft Download Center. ScreenTip Language installs over a Click-to-Run installation.
 
