@@ -23,9 +23,11 @@ If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there
 
 Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
 
-### What about Project and Visio?
+### What about other applications, such as Project and Visio?
 
-You can also deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Office 365 ProPlus also apply to Project Online Desktop Client and Visio Online Plan 2.
+You can deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Office 365 ProPlus also apply to Project Online Desktop Client and Visio Online Plan 2.
+
+Outlook for iOS and Android is also available for GCC High or DoD environments. For more information, [read this Tech Community blog post](https://techcommunity.microsoft.com/t5/Outlook-Blog/Outlook-mobile-meets-needs-of-customers-with-the-highest-Federal/ba-p/313938).
 
 ## Which update channel of Office 365 ProPlus to use
 
@@ -172,10 +174,13 @@ These registry keys get created when an Office app is launched, so it's ok if th
 The following registry values must to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
-  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings.<br/>
+  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Office 365 ProPlus you don't need to set this registry setting. <br/>
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
   **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
+
+  **Registry location:** HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook\Options\General\DisablePreviewPlace <br/>
+  **Description:** This disables the Coming Soon feature which provides users with information about upcoming features and lets users try those features and provide feedback. Coming Soon is available in Version 1806 or later of Office 365 ProPlus. <br/>
 
 The following registry values are optional. The type for these registry values is REG_DWORD and the values should be set to 1.
 
