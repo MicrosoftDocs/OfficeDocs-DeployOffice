@@ -172,10 +172,13 @@ These registry keys get created when an Office app is launched, so it's ok if th
 The following registry values must to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
-  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings.<br/>
+  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using at least Version 1805 of Office 365 ProPlus you don't need to set this registry setting. <br/>
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
   **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
+
+  **Registry location:** HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook\Options\General\DisablePreviewPlace <br/>
+  **Description:** This disables the Coming Soon feature which provides users information about upcoming features and lets them try the upcoming features and provide feedback. Coming Soon is available in Version 1806 or later of Office 365 ProPlus. <br/>
 
 The following registry values are optional. The type for these registry values is REG_DWORD and the values should be set to 1.
 
