@@ -24,7 +24,7 @@ In addition to this guidance, we recommend that you use [Microsoft Fastrack](htt
 
 ## Step 1 - Review infrastructure and requirements
 
-Review the number and details of your client devices, including platform (Windows or Mac); operating systems; architectures (32-bit or 64-bit); required languages; and existing versions of Office, Visio, Project, and other Office applications. 
+Review the number and details of your client devices, including platform (Windows or Mac); operating systems; architectures (32-bit or 64-bit); required languages; and existing versions of Office, Visio, Project, and other Office applications.
 
 As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Office 365 ProPlus](https://products.office.com/office-system-requirements).
 
