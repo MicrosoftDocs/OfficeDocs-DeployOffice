@@ -28,7 +28,7 @@ Office 365 ProPlus is a version of Office that's available through Office 365. I
 
 Office 365 ProPlus is similar to other versions of Office that you can deploy to your users. Here are some important similarities:
   
-- Office 365 ProPlus is a full version of Office. 
+- Office 365 ProPlus is a full version of Office.  
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-system-requirements).
     
