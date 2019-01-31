@@ -64,11 +64,11 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 
 ```xml
 <Configuration> 
-   <Add OfficeClientEdition="64" Channel="Broad"> 
-       <Product ID="O365ProPlusRetail" > 
-            <Language ID="en-us" />      
-       </Product> 
-   </Add> 
+   <Add OfficeClientEdition="64" Channel="Broad">
+       <Product ID="O365ProPlusRetail" >
+            <Language ID="en-us" />
+       </Product>
+   </Add>
    <Updates Enabled="TRUE"  Channel="Broad" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
@@ -79,11 +79,11 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 
 ```xml
 <Configuration> 
-   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="Broad"> 
-       <Product ID="O365ProPlusRetail" > 
-            <Language ID="en-us" />      
-       </Product> 
-   </Add> 
+   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="Broad">
+       <Product ID="O365ProPlusRetail" >
+            <Language ID="en-us" />
+       </Product>
+   </Add>
    <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" Channel="Broad" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
@@ -194,7 +194,7 @@ Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview
 
 
 ## Special considerations
-Due diligence was done to review cloud services connected to features in Office 365 ProPlus.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release.   We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days. 
+Due diligence was done to review cloud services connected to features in Office 365 ProPlus.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release.   We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
 
 
 |**Application**  |**Feature**  |**Recommendation**  |
