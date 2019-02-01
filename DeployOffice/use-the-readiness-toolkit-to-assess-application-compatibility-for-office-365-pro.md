@@ -388,16 +388,11 @@ The following table lists, by application, the file extensions that are analyzed
 
 ### Types of add-ins for which the Readiness Report Creator collects data
 
-The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Office 365 ProPlus.
+The Readiness Report Creator collects data on COM add-ins. COM add-ins include add-ins usually written in C++ and Visual Studio Tools for Office (VSTO) developed using managed code. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Office 365 ProPlus.
 
 |**Add-in type**|**Office applications**|**Description**|
 |:-----|:-----|:-----|
-|Automation  <br/> |Excel  <br/> |Excel-supported automation add-ins are built upon COM add-ins. Functions in Automation add-ins can be called from formulas in Excel worksheets.  <br/> |
 |COM  <br/> |Excel, Outlook, PowerPoint, and Word  <br/> |COM add-ins include add-ins usually written in C++ and Visual Studio Tools for Office (VSTO) developed using managed code.  <br/> |
-|VBA  <br/> |Excel, PowerPoint, and Word  <br/> |VBA add-ins are application-specific files that contain VBA code. These include macro-enabled Word templates (.dotm), Excel add-ins (.xla, .xlam), and PowerPoint add-ins (.ppa, .ppam).  <br/> |
-|WLL  <br/> |Word  <br/> |WLL (.wll) add-ins are specific to Word and built with any compiler that supports building DLLs.  <br/> |
-|XLL  <br/> |Excel  <br/> |XLL add-ins (.xll) are specific to Excel and are built with any compiler that supports building DLLs (dynamic-link libraries). They do not have to be installed or registered. XLL add-ins also include DLLs that contain user-defined commands and functions.  <br/> |
-|XLS RTD  <br/> |Excel  <br/> |XLS real-time data (RTD) add-ins are Excel worksheets that use the RealTimeData worksheet function to call an Automation server to retrieve data in real-time.  <br/> |
 
 <a name="BKMK_InfoSent"> </a>
 
