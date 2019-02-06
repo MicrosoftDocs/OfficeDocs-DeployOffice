@@ -179,7 +179,7 @@ The following registry values must to be set to correctly configure Outlook beha
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
   **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
 
-  **Registry location:** HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Outlook\Options\General\DisablePreviewPlace <br/>
+  **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisablePreviewPlace <br/>
   **Description:** This disables the Coming Soon feature which provides users with information about upcoming features and lets users try those features and provide feedback. Coming Soon is available in Version 1806 or later of Office 365 ProPlus. <br/>
 
 The following registry values are optional. The type for these registry values is REG_DWORD and the values should be set to 1.
@@ -194,7 +194,7 @@ Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview
 
 
 ## Special considerations
-Due diligence was done to review cloud services connected to features in Office 365 ProPlus.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release.   We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
+Due diligence was done to review cloud services connected to features in Office 365 ProPlus.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release. We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
 
 
 |**Application**  |**Feature**  |**Recommendation**  |
