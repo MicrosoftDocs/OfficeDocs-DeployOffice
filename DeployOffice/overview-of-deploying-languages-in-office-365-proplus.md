@@ -22,19 +22,21 @@ In general, you deploy languages for Office 365 ProPlus with the same process an
 The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuraiton file in a text editor.
 
 > [!IMPORTANT]
-> The guidance in this article also applies to the following Click-to-Run Office products: Project Online Desktop Client; Visio Online Plan 2 (the subscription version of Visio that was previously named Visio Pro for Office 365), Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium); and a volume licensed version of Office 2019, such as Office Professional Plus 2019. If you use a Windows Installer (MSI) version of Office, such as Office 2016, see [Plan for multilanguage deployment of Office 2016](office2016/plan-for-multilanguage-deployment-of-office-2016.md). Language resources for MSI versions of Office are not supported for Click-to-Run versions of Office.  
+> [xx - update names with dan's input] The guidance in this article also applies to the following Click-to-Run Office products: Project Online Desktop Client; Visio Online Plan 2 (the subscription version of Visio that was previously named Visio Pro for Office 365); and Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium). If you use a Windows Installer (MSI) version of Office, such as Office 2016, see [Plan for multilanguage deployment of Office 2016](office2016/plan-for-multilanguage-deployment-of-office-2016.md). Language resources for MSI versions of Office are not supported for Click-to-Run versions of Office.  
+
+[xx - add image of OCT with some more detail on its helpfulness]
 
 ## Best practices for deploying languages
 
 When deploying multiple languages in a large organization, we recommend these best practices:
 
 - Automatically [install the same languages as the operating system](#install-the-same-languages-as-the-operating-system).
-- If you deploy an Office product to a device that already has Office installed, you can [automatically deploy the product in the same languages as the installed version of Office](#install-the-same-languages-as-an-existing-version-of-office).
+- When adding languages to an existing deployment of Office, you can[ deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as the previous version](#install-the-same-languages-from-a-previous-msi-installation).
 - When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment more difficult to manage.
-- When adding languages to an existing deployment of Office, you can[ deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
+- If you deploy a subscription version of Project or Visio to a device that already has Office installed, you can [automatically deploy the product in the same languages as the installed version of Office](#install-the-same-languages-as-an-existing-version-of-office).
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
-- If you need to conserve network bandwidth, you can [deploy proofing tools](#install-proofing-tools) instead of full language packs. 
+- If you only need certain languages for editing tools [xx - fix], you can [deploy proofing tools](#install-proofing-tools) instead of full language packs to conserve network bandwidth. 
 
 This article also includes more details on [language packs](#language-resources-for-office-365-proplus), the list of [supported languages](#languages-culture-codes-and-companion-proofing-languages), and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
 
@@ -44,7 +46,7 @@ If your organization allows it, users can install Office 365 ProPlus languages d
 
 ## Deploy multiple languages as part of deploying Office
 
-To deploy Office 365 ProPlus in multiple languages, you just need to include the additional langauges in the Office packages you create as part of your standard deployment process:
+To deploy Office 365 ProPlus in multiple languages, you just need to include the additional languages in the Office packages you create as part of your standard deployment process:
 
 When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select the languages you want to deploy in the Language section.
 
@@ -57,13 +59,16 @@ If you deploy Office from a local source on your network, you must download your
 
 After installing Office 365 ProPlus, you can install additional languages for Office. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 
-1. When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Language Pack** as the Additional Product in the Products section. 
-2. In the Language section, select the additional languages you want to install.
-3. Deploy the languages using the same process you use to deploy Office.
+1. If you're deploying languages from a local source, make sure the languages are available at that source. [xx-fix language and include CDN Fallback recommendation.]
+2. When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Language Pack** as the Additional Product in the Products section. 
+3. In the Language section, select the additional languages you want to install.
+4. Deploy the languages using the same process you use to deploy Office.
 
 [check xx - "Also, could this cause a problem if the source location has older bits than the update location?"] By default, if the source path isn't specified, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. You will also need to download those languages to that source path.
  
 ## Install proofing tools
+
+[xx - fix sample to remove edition, source, etc--and fix references to example.]
 
 Each language version of Office 365 ProPlus includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
 
@@ -109,7 +114,9 @@ When deploying Office, you can automatically install the same languages that are
 
 When Match Operating System is used, the base language of the operating system and all active display languages for user profiles on the device are installed. Match Operating System  can be used in combination with a fixed list of languages. 
 
-## Install the same languages as an existing version of Office
+## Install Visio or Project in the same languages as an existing version of Office 365 ProPlus
+
+[xx - fix to discuss as Visio and Project specifically] 
 
 You can automatically install the same languages that are in use by an existing version of Office 365 ProPlus or a subscription version of Visio or Project. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 
