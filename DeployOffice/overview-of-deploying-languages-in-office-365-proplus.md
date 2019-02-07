@@ -130,7 +130,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 ### Example
 ```xml
 <Configuration>
-<Add  
+<Add>  
   <Product ID="VisioProRetail">
      <Language ID="MatchOS"/>      
      <Language ID="MatchInstalled" TargetProduct="All"/>
