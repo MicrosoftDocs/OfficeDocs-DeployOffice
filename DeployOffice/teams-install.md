@@ -1,5 +1,5 @@
 ---
-title: "Deploy Microsoft Teams with Office 365 Business"
+title: "Deploy Microsoft Teams with Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -10,23 +10,41 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Provides Office admins with an overview of how Microsoft Teams will be automatically installed with Office 365 Business."
+description: "Provides Office admins with an overview of how Microsoft Teams will be automatically installed with Office 365 ProPlus."
 ---
 
-# Deploy Microsoft Teams with Office 365 Business
+# Deploy Microsoft Teams with Office 365 ProPlus
 
-Currently, Microsoft Teams is a separate installation from Office 365 Business. But, starting in January 2019, Teams will be installed by default for ***new*** installations of Office 365 Business, starting with Version 1901. This includes new installations of Office on a Mac, starting with Version 16.21.
+Currently, Microsoft Teams is a separate installation from Office 365 ProPlus. But, starting in late February 2019, Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902. This includes new installations of Office on a Mac, starting with Version 16.21.
 
-Existing installations of Office 365 Business won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
+Existing installations of Office 365 ProPlus won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
+
+> [!NOTE]
+> Teams is also installed by default for **new** installations of Office 365 Business, starting with Version 1901, which was released on January 31, 2019. **New** installations of Office for Mac, starting with Version 16.21 (which was released on January 16, 2019), also get Teams installed by default. For more information about Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
+
+## When will Microsoft Teams start being installed by default?
+
+The date when Teams starts being installed by default with **new** installations of Office depends on several factors, such as your Office 365 plan and which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
+
+
+|**Office type**<sup>1</sup>  |**Version**| **Update channel**  |**Date**  |
+|---------|---------|---------|
+|Office for Mac |Version 16.21 |*Not applicable* | January 16, 2019 |
+|Office 365 Business |Version 1901 | Monthly Channel |  January 31, 2019 |
+|Office 365 ProPlus | Version 1902 |Monthly Channel | *By end of February 2019*  |
+|Office 365 ProPlus |*To be determined*    |Semi-Annual Channel (Targeted) | *March 12, 2019*  |
+|Office 365 ProPlus |*To be determined*     |Semi-Annual Channel|*July 9, 2019* |
+
+<sup>1</sup> Office 365 Business comes with the Office 365 Business and Office 365 Business Premium plans. Office 365 ProPlus is included with many Office 365 enterprise, government, and education plans. For example, the Office 365 Enterprise E5 plan. Office for Mac comes with any plan that includes Office 365 Business or Office 365 ProPlus.
 
 ## How to exclude Microsoft Teams from being installed by default on devices running Windows
 
-If you don’t want Teams installed by default when you install Office 365 Business on devices running Windows, you'll need to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following example.
+If you don’t want Teams installed by default when you install Office 365 ProPlus on devices running Windows, you'll need to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
 ```xml
 <Configuration>
    <Add OfficeClientEdition="64" Channel="Monthly">
-      <Product ID="O365BusinessRetail">
+      <Product ID="O365ProPlusRetail">
        <Language ID="en-us" />
        <ExcludeApp ID="Teams" />
       </Product>
@@ -36,13 +54,15 @@ If you don’t want Teams installed by default when you install Office 365 Busin
 > [!TIP]
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
-If you’re letting your users install Office 365 Business for themselves, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being installed by default.
+If you’re letting your users install Office 365 ProPlus for themselves, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being installed by default.
 
 If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall** a program. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on  the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user.
 
 ## What about existing installations of Office?
 
 Existing installations of Office won’t be affected at this time, as long as you don’t make any changes to that installation, other than applying the regular feature and quality updates. But, if you initiate any other sort of installation on a device running Windows, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process. In those cases, be sure to include the ExcludeApp element in your configuration.xml file, as described in the previous section, to exclude Teams from being installed by default.
+
+
 
 ## Feature and quality updates for Microsoft Teams
 
