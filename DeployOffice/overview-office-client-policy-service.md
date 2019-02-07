@@ -65,8 +65,6 @@ If the user is a member of multiple AAD groups with conflicting policy settings,
 Also, policy settings implemented by using Office client policy service take precedence over policy settings implemented by using Group Policy on Windows Server, as well as taking precedence over preference settings or locally applied policy settings.
 
 ## Additional information about the Office client policy service
-
-- 
 - Only user-based policy settings are available. Computer-based policy settings aren’t available.
 - Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available currently. Work is being done to make more user-based policy settings available.
 - As new user-based policy settings are made available for Office, the Office client policy service will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
