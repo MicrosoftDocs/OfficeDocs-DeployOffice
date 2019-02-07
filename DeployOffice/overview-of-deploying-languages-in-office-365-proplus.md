@@ -160,16 +160,6 @@ When installing languages, the ODT looks first for source files in the source pa
 
 When you use the Office Deployment Tool (ODT) to download the installation files for Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
-## Language resources for Office 365 ProPlus [xx - maybe cut this section]
-
-You can install the following language resources for Office 365 ProPlus:
-
-- Language Interface Packs: You can download and install a Language Interface Pack for free. After you install it, you can use Microsoft Excel, OneNote, Microsoft Outlook, PowerPoint, and Word features in a different language. You can use the **Office Language Preferences** dialog after installation to change a language and see a translated user interface. For information about how to change the editing, display or Help language for Office applications, see [Enable the use of other languages in your Office programs](https://go.microsoft.com/fwlink/p/?LinkId=281959). To set Office language options on a computer that is running Windows 10, type "Office Language" at the **Start** screen, and select **Office Language Preferences** to open the **Microsoft Office Language Preferences** dialog box.
-    
-- Proofing Tools: Localized language versions of Office include proofing tools for a set of companion languages. For more details, see [Install proofing tools](#install-proofing-tools).
-    
-- ScreenTip Language: Translations that show the text of display elements such as buttons, menus, and dialog boxes in another language. You can download [Microsoft Office ScreenTip Language 2013](https://go.microsoft.com/fwlink/p/?LinkId=281983) from the Microsoft Download Center. ScreenTip Language installs over a Click-to-Run installation.
-
 ## Languages, culture codes, and companion proofing languages
 
 Language-neutral product resources for Office 365 ProPlus are packaged into a single file that contains all the neutral resources. Language-specific resources are packaged into language-specific files such as en-us for English (United States) resources. [xx - add examples]
