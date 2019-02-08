@@ -15,7 +15,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams wil
 
 # Deploy Microsoft Teams with Office 365 ProPlus
 
-Currently, Microsoft Teams is a separate installation from Office 365 ProPlus. But, starting in late February 2019, Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902.
+Currently, Microsoft Teams is a separate installation from Office 365 ProPlus. But, starting in late February 2019, Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel.
 
 Existing installations of Office 365 ProPlus won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
 
@@ -23,14 +23,14 @@ Existing installations of Office 365 ProPlus won’t be affected at this time. A
 
 ## When will Microsoft Teams start being installed by default with Office 365 ProPlus?
 
-The date when Teams starts being installed by default with **new** installations of Office depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
+The date when Teams starts being installed by default with **new** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
 
 
-|**Office type** |**Version**| **Update channel**  |**Date**  |
+| **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
-|Office 365 ProPlus | Version 1902 |Monthly Channel | *By end of February 2019*  |
-|Office 365 ProPlus |*To be determined*    |Semi-Annual Channel (Targeted) | *March 12, 2019*  |
-|Office 365 ProPlus |*To be determined*     |Semi-Annual Channel|*July 9, 2019* |
+|Monthly Channel |Version 1902 | *By end of February 2019*  |
+|Semi-Annual Channel (Targeted)|*To be determined*    | *March 12, 2019*  |
+|Semi-Annual Channel| *To be determined*   |*July 9, 2019* |
 
 
 > [!NOTE]
