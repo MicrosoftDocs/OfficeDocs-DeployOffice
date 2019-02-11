@@ -16,6 +16,10 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+## February 2019
+
+Microsoft Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
+
 ## January 2019
 
 ### Public preview of Office client policy service

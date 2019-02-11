@@ -326,9 +326,12 @@ Allowed values:
 - ID="Outlook"
 - ID="PowerPoint"
 - ID="Publisher"
+- ID="Teams"
 - ID="Word"
 
 For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
+
+For more information about Microsoft Teams, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
 
 ## Logging element
 
