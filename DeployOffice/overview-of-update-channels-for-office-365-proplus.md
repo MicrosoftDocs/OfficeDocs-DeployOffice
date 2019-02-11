@@ -133,7 +133,7 @@ If you use the Office Deployment Tool, you can use the Channel attribute in the 
 </Configuration>
 ```
 
-The name of the Group Policy setting is Update Channel. You can find this policy setting under Computer Configuration\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates. When you enable the Group Policy setting you can select the appropriate update channel from a drop-down list. 
+The name of the Group Policy setting is Update Channel. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates. When you enable the Group Policy setting you can select the appropriate update channel from a drop-down list. 
   
  
 <a name="BKMK_AddInfo"> </a>
