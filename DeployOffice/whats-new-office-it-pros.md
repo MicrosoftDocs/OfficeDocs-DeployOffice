@@ -18,7 +18,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## February 2019
 
-Microsoft Teams will be installed by default for *new* installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
+Microsoft Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
 
 ## January 2019
 
