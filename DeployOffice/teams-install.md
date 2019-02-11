@@ -9,7 +9,6 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides Office admins with an overview of how Microsoft Teams will be automatically installed with Office 365 ProPlus."
 ---
 
