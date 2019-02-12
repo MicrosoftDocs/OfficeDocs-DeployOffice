@@ -35,7 +35,7 @@ To deploy Office, you first choose what deployment tool to use and whether to in
 
 We recommend the Current Branch of Configuration Manager for organizations that already use it to distribute and manage software. Configuration Manager scales for large environments; enables extensive control over installation, updates, and settings; and has built-in features for deploying and managing Office. 
 
-If you do deploy with Configuration Manager, we recommend deploying from a local source, using your Configuration Manager distribution points. If you use a previous version of Configuration Manager, we recommend upgrading to the Current Branch before using it to deploy Office.
+If you do deploy with Configuration Manager, we recommend deploying from a local source, using your Configuration Manager distribution points. If you use a previous version of Configuration Manager, we recommend upgrading to the Current Branch before using it to deploy Office. 
 
 For organizations that don't have Configuration Manager but still want to manage their deployment, we recommend using the Office Deployment Tool (ODT). You can use the ODT as a standalone tool or you can use it to download installation files that can be deployed using third-party software deployment tools. In either case, the ODT provides control over installation, updates, and settings. For more details, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
