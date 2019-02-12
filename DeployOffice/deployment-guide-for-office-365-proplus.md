@@ -61,7 +61,7 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 ## Reference
 
-Learn about the Office Deployment Tool (ODT), other deployment options, and activation.
+Learn about the Office Deployment Tool (ODT), other deployment options, and activation. 
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 
