@@ -42,7 +42,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md) 
 
 
 ## Manage updates
@@ -61,7 +61,7 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 ## Reference
 
-Learn about the Office Deployment Tool (ODT), other deployment options, and activation.
+Learn about the Office Deployment Tool (ODT), other deployment options, and activation. 
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 
