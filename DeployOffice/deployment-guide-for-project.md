@@ -26,7 +26,7 @@ How you deploy Project to the users in your organization depends on which versio
 Before you deploy, be sure to [review the system requirements](https://products.office.com/office-system-requirements) for the version of Project that you plan to deploy to the users in your organization. 
   
 > [!IMPORTANT]
-> There are some combinations of Office, Visio, and Project that can not be installed together on the same computer. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
+> There are some combinations of Office, Visio, and Project that can't be installed together on the same computer. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
   
 ## Deploy Project Online Desktop Client
 
