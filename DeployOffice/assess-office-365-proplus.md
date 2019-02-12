@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
 ms.assetid:
-description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers." 
 ---
 
 # Assess your environment and requirements for deploying Office 365 ProPlus
@@ -47,7 +47,7 @@ Review your network capability, including bandwidth and distribution of client d
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 - Office 365 updates vary in size, but you can review recent download sizes [here](https://docs.microsoft.com/officeupdates/download-sizes-office365-proplus-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the Internet and your client devices, including those in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
-
+ 
 ## Step 4 - Assess application compatibility
 
 Before deploying Office 365 ProPlus, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with the new version of Office.  
@@ -90,6 +90,5 @@ Before planning your deployment, make sure you've completed all the steps for as
 
 ## Next step
 
-[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md)..
-
+[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
