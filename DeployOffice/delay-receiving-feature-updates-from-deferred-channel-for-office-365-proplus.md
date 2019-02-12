@@ -19,7 +19,7 @@ Office 365 clients that get updates from Semi-Annual Channel, such as Office 365
 > [!IMPORTANT]
 > Starting with Version 1708, Deferred Channel is named Semi-Annual Channel. 
   
-If you have a specific business need to delay receiving these feature updates from Semi-Annual Channel, you can configure Office to not receive these feature updates, but still receive the most current security updates.
+If you have a specific business need to delay receiving these feature updates from Semi-Annual Channel, you can configure Office to not receive these feature updates, but still receive the most current security updates. 
   
 For example, if you're currently using Version 1708 of Semi-Annual Channel, which was released in January 2018, you can continue using it and getting security updates for it until March 2019. But, as of July 10, 2018, there's another version available from Semi-Annual Channel, Version 1803, which provides new features. Version 1803 is the default version for Semi-Annual Channel. If you don't specify which version you want, you get updated to Version 1803. Therefore, if you want to continue getting updates for Version 1708 of Semi-Annual Channel, you have to specify that's the version you want. This will require you to perform some manual steps every month.
   
