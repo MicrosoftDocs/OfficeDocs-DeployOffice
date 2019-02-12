@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_ProPlus
 ms.custom: Ent_Office_ProPlus
 ms.assetid:
-description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers." 
+description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
 # Assess your environment and requirements for deploying Office 365 ProPlus
@@ -90,6 +90,6 @@ Before planning your deployment, make sure you've completed all the steps for as
 
 ## Next step
 
-[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md).
+[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md). 
 
 
