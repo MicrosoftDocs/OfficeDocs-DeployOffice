@@ -90,6 +90,6 @@ Before planning your deployment, make sure you've completed all the steps for as
 
 ## Next step
 
-[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md).
+[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md)..
 
 
