@@ -30,6 +30,10 @@ The following are the requirements for using the Office client policy service wi
 - Security groups created in or synchronized to Azure Active Directory (AAD), with the appropriate users added to those groups.
 - To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Desktop Analytics Administrator.
 
+> [!NOTE]
+> The Office client policy service (Preview) isn't available to the following:
+> - Customers with Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD plans.
+> - Tenants located in Australia, Brazil, Germany, India, or South Korea.
 
 ## Steps for creating a policy configuration
 
@@ -61,7 +65,6 @@ If the user is a member of multiple AAD groups with conflicting policy settings,
 Also, policy settings implemented by using Office client policy service take precedence over policy settings implemented by using Group Policy on Windows Server, as well as taking precedence over preference settings or locally applied policy settings.
 
 ## Additional information about the Office client policy service
-
 - Only user-based policy settings are available. Computer-based policy settings aren’t available.
 - Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available currently. Work is being done to make more user-based policy settings available.
 - As new user-based policy settings are made available for Office, the Office client policy service will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
@@ -69,4 +72,3 @@ Also, policy settings implemented by using Office client policy service take pre
 - You can also create policy configurations to apply policy settings for Version 1808 or higher of Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365).
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - A policy configuration can’t be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
-- The Office client policy service isn’t available in the following Office 365 environments: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
