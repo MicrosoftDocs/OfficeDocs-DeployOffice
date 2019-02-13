@@ -220,7 +220,7 @@ The following table lists all the supported languages for Office 365 ProPlus, al
 | Latvian                                  | lv-lv               | Latvian, English, German, Russian                                         |
 | Lithuanian                               | lt-lt               | Lithuanian, English, German, Russian, Polish                              |
 | Luxembourgish                            | lb-lu               |                                                                           |
-| Macedonian (FYRO Macedonia )             | mk-mk               |                                                                           |
+| Macedonian (North Macedonia)            | mk-mk               |                                                                           |
 | Malay (Latin)                            | ms-my               | Malay, English, Chinese (Simplified)                                      |
 | Malayalam                                | ml-in               |                                                                           |
 | Maltese                                  | mt-mt               |                                                                           |
