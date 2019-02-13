@@ -16,7 +16,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams wil
 
 Currently, Microsoft Teams is a separate installation from Office 365 ProPlus. But, starting in late February 2019, Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel.
 
-Existing installations of Office 365 ProPlus won’t be affected at this time. Also, if Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before.
+Existing installations of Office 365 ProPlus won’t be affected at this time. If Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before. Also, Skype for Business will continue to be installed by default when you install Office 365 ProPlus.
 
 
 
