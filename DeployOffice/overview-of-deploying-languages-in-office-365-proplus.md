@@ -17,14 +17,18 @@ ms.custom: Ent_Office_ProPlus
 
 This article covers the options for deploying languages for Office 365 ProPlus, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
 
+> [!IMPORTANT]
+> You can't use language resources for Windows Installer (MSI) versions of Office with Office 365 ProPlus, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Office 365 ProPlus.  
+
 In general, you deploy languages for Office 365 ProPlus with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages or you can deploy languages as a separate package, after Office is already installed.
 
-The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuraiton file in a text editor.
+The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuratioon file in a text editor.
 
-> [!IMPORTANT]
-> [xx - update names with dan's input] The guidance in this article also applies to the following Click-to-Run Office products: Project Online Desktop Client; Visio Online Plan 2 (the subscription version of Visio that was previously named Visio Pro for Office 365); and Office 365 Business (the version of Office that comes with some Office 365 plans, such as Business Premium). If you use a Windows Installer (MSI) version of Office, such as Office 2016, see [Plan for multilanguage deployment of Office 2016](office2016/plan-for-multilanguage-deployment-of-office-2016.md). Language resources for MSI versions of Office are not supported for Click-to-Run versions of Office.  
-
-[xx - add image of OCT with some more detail on its helpfulness]
+> [!NOTE]
+> The guidance in this article applies to Office 365 ProPlus and the following Office products:
+>-The desktop version of Project that comes with some subscription plans, such as Project Online Professional.
+>-The desktop version of Visio that comes with some subscription plans, such as Visio Online Plan 2. 
+>-Office 365 Business, which is the desktop version of Office that comes with some subscription plans, such as Office 365 Business Premium.
 
 ## Best practices for deploying languages
 
