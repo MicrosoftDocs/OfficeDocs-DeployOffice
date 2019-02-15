@@ -72,7 +72,7 @@ Note that the Office installation files and Office updates will come from Semi-A
 Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
- - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the pilot group 
+ - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the broad group 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\O365** folder.
 
 This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Channel ("Broad").
