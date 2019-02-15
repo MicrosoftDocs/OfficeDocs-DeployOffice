@@ -69,7 +69,7 @@ Make sure to complete the following requirements as well:
 
 ## Step 2 - Review your collections 
 
-The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. For each deloyment group, make sure you have a specific collection. Our standard best practices recommend two deployment groups:
+The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. For each deployment group, make sure you have a specific collection. Our standard best practices recommend two deployment groups:
 
 - A pilot group that receives the Semi-Annual Channel (Targeted)
 - A broad group that recieves the Semi-Annual Channel
