@@ -134,6 +134,14 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 ### Deploy Visio and Project alongside the core Office apps
 To deploy Visio and Project with Office 365 ProPlus, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
 
+## Related topics
 
+[Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+
+[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+
+[Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
+
+[Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)  
 
 
