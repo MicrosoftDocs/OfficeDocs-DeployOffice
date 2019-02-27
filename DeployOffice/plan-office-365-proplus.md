@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-## Plan your enterprise deployment of Office 365 ProPlus
+# Plan your enterprise deployment of Office 365 ProPlus
 
 Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud.
 
