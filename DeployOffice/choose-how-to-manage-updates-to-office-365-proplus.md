@@ -7,10 +7,8 @@ ms.date: 3/22/2017
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
-ms.collection:
-- Ent_O365
-- Strat_O365_ProPlus
+localization_priority: Normal
+ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: e486afce-ad31-4889-87a4-28796751bb86
 description: "Compares different ways to update Office 365 ProPlus, including automatically from the Internet or from an on-premises location."

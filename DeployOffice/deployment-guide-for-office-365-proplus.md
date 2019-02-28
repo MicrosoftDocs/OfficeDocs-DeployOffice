@@ -7,9 +7,7 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
-ms.collection:
-- Ent_O365
-- Strat_O365_ProPlus
+ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
 ---
