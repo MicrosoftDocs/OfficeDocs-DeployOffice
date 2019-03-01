@@ -4,12 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection:
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Provides IT Pros with an overview of the update channels for Office 365 ProPlus, including Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted)"
 ---

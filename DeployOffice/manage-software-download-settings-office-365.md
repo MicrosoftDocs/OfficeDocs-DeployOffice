@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office 365 admins with information to help them configure software download settings in the Office 365 admin center."
+description: "Provides Office 365 admins with information to help them configure software download settings in the admin center."
 ---
 
 

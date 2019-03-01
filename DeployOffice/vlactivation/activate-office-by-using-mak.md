@@ -114,7 +114,7 @@ To enable this behavior, add the following line to the Config.xml file:
 Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtectionPlatform registry key to enable or disable standard user activation
   
  - To enable, set "UserOperations"=dword:00000001
- - To disable, set UserOperations"=dword:00000000
+ - To disable, set "UserOperations"=dword:00000000
   
 > [!NOTE]
 > For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/en-us/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
