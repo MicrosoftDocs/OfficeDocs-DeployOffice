@@ -24,7 +24,7 @@ The date when Teams starts being installed by default with **new** installations
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
-|Monthly Channel |Version 1902 | *By end of February 2019*  |
+|Monthly Channel |Version 1902 | March 4, 2019  |
 |Semi-Annual Channel (Targeted)|*To be determined*    | *March 12, 2019*  |
 |Semi-Annual Channel| *To be determined*   |*July 9, 2019* |
 
