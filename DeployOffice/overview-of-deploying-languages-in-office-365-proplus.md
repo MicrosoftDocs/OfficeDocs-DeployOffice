@@ -15,20 +15,18 @@ ms.custom: Ent_Office_ProPlus
 
 # Overview of deploying languages in Office 365 ProPlus
 
-This article covers the options for deploying languages for Office 365 ProPlus, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
+This article covers the options for deploying languages for Office 365 ProPlus, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). The guidance in this article applies to Office 365 ProPlus and the following Office products:
 
-> [!IMPORTANT]
-> You can't use language resources for Windows Installer (MSI) versions of Office with Office 365 ProPlus, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Office 365 ProPlus.  
+-The desktop version of Project that comes with some subscription plans, such as Project Online Professional.
+-The desktop version of Visio that comes with some subscription plans, such as Visio Online Plan 2. 
+-Office 365 Business, which is the desktop version of Office that comes with some subscription plans, such as Office 365 Business Premium.
+
+You can't use language resources for Windows Installer (MSI) versions of Office with Office 365 ProPlus, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Office 365 ProPlus.  
 
 In general, you deploy languages for Office 365 ProPlus with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages or you can deploy languages as a separate package, after Office is already installed.
 
 The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuration file in a text editor.
 
-> [!NOTE]
-> The guidance in this article applies to Office 365 ProPlus and the following Office products:
->-The desktop version of Project that comes with some subscription plans, such as Project Online Professional.
->-The desktop version of Visio that comes with some subscription plans, such as Visio Online Plan 2. 
->-Office 365 Business, which is the desktop version of Office that comes with some subscription plans, such as Office 365 Business Premium.
 
 ## Best practices for deploying languages
 
