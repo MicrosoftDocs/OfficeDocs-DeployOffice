@@ -4,12 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
-ms.collection:
+ms.collection: 
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Office 365 ProPlus with Remote Desktop Services (RDS) "
 ---

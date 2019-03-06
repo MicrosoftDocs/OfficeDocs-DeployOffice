@@ -4,10 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "The Office client policy service is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed."
 ---

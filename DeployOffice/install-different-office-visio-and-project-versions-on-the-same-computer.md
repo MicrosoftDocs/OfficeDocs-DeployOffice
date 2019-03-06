@@ -7,9 +7,7 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Strat_O365_ProPlus
+ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides IT admins with information about which versions of Office, Project, and Visio can be installed together on the same computer."
 ---

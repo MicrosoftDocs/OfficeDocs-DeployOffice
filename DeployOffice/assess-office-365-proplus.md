@@ -5,12 +5,12 @@ author: jwhit-MSFT
 manager: laurawi
 ms.date: 4/2/2018
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: 
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 ms.assetid:
 description: "This article gives step-by-step instructions for how to assess your enivorment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
