@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with an overview of how Microsoft Teams will be automatically installed with Office 365 ProPlus."
