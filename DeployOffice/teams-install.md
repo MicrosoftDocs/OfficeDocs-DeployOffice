@@ -83,7 +83,7 @@ To exclude Teams from being installed in these cases, use the [ExcludeApp elemen
 
 > [!IMPORTANT]
 > - To exclude Teams from being installed in these cases, you need to include the ExcludeApp element for each product that's already installed as well as any products you're installing. But, you don't need to include the ExcludeApp element in the section of your configuration.xml file where you specify language packs or proofing tools.
-> - There is a known issue with the installation process that currently requires including the ExcludeApp element for Teams in multiple places in the configuration.xml file. We're working on a fix for this issue so that repeating the ExcludeApp element for Teams in several places won't be necessary. We'll update this article when this known issue has been fixed.
+> - This is a known issue with the installation process that currently requires including the ExcludeApp element for Teams in multiple places in the configuration.xml file. We're working on a fix for this issue so that repeating the ExcludeApp element for Teams in several places won't be necessary. We'll update this article when this known issue has been fixed.
 
 The following example shows how to add Project Online Desktop Client to an existing installation of Office 365 ProPlus without installing Teams.
 
