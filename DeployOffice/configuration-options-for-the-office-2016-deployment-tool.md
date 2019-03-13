@@ -618,7 +618,7 @@ Example values:
 
 ## AppSettings element
 
-Defines application settings for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application settings, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application settings. Note that this tool is still in preview and is subject to change. 
+Defines application settings for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application settings, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application settings.
 
 For more details on application settings, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
