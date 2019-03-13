@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with an overview of how Microsoft Teams will be automatically installed with Office 365 ProPlus."
@@ -25,8 +25,8 @@ The date when Teams starts being installed by default with **new** installations
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
 |Monthly Channel |Version 1902 | March 4, 2019  |
-|Semi-Annual Channel (Targeted)|*To be determined*    | *March 12, 2019*  |
-|Semi-Annual Channel| *To be determined*   |*July 9, 2019* |
+|Semi-Annual Channel (Targeted)| Version 1902   | March 12, 2019  |
+|Semi-Annual Channel| Version 1902  |*July 9, 2019* |
 
 > [!NOTE]
 > Teams is already installed by default for **new** installations of the following:
@@ -37,12 +37,27 @@ The date when Teams starts being installed by default with **new** installations
 
 If you don’t want Teams installed by default when you install Office 365 ProPlus on devices running Windows, you'll need to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
+> [!IMPORTANT]
+> - To exclude Teams from being installed, even if you're just installing Project or Visio, you need to include the ExcludeApp element for each Office product you're installing. But, you don't need to include the ExcludeApp element in the section of your configuration.xml file where you specify language packs or proofing tools. 
+> - This is a known issue with the installation process that currently requires including the ExcludeApp element for Teams in multiple places in the configuration.xml file. We're working on a fix for this issue so that repeating the ExcludeApp element for Teams in several places won't be necessary. We'll update this article when this known issue has been fixed.
+
 ```xml
 <Configuration>
    <Add OfficeClientEdition="64" Channel="Monthly">
       <Product ID="O365ProPlusRetail">
        <Language ID="en-us" />
        <ExcludeApp ID="Teams" />
+      </Product>
+      <Product ID="VisioProRetail">
+       <Language ID="en-us" />
+       <ExcludeApp ID="Teams" />
+      </Product>
+      <Product ID="ProjectProRetail">
+       <Language ID="en-us" />
+       <ExcludeApp ID="Teams" />
+      </Product>
+      <Product ID="LanguagePack">
+       <Language ID="de-de" />
       </Product>
     </Add>
 </Configuration>
@@ -61,7 +76,49 @@ The guidance above in this section also applies to Office 365 Business.
 
 ## What about existing installations of Office?
 
-Existing installations of Office won’t be affected at this time, as long as you don’t make any changes to that installation, other than applying the regular feature and quality updates. But, if you initiate any other sort of installation on a device running Windows, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process. In those cases, be sure to include the ExcludeApp element in your configuration.xml file, as described in the previous section, to exclude Teams from being installed by default. Also, in some situations, doing an Online Repair results in Teams being installed.
+If Office is already installed on a device running Windows, and you initiate any other sort of installation, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process, if the update channel and version you're using supports the default installation of Teams.
+
+To exclude Teams from being installed in these cases, use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following examples.
+
+
+> [!IMPORTANT]
+> - To exclude Teams from being installed in these cases, you need to include the ExcludeApp element for each product that's already installed as well as any products you're installing. But, you don't need to include the ExcludeApp element in the section of your configuration.xml file where you specify language packs or proofing tools.
+> - This is a known issue with the installation process that currently requires including the ExcludeApp element for Teams in multiple places in the configuration.xml file. We're working on a fix for this issue so that repeating the ExcludeApp element for Teams in several places won't be necessary. We'll update this article when this known issue has been fixed.
+
+The following example shows how to add Project Online Desktop Client to an existing installation of Office 365 ProPlus without installing Teams.
+
+```xml
+<Configuration>
+   <Add OfficeClientEdition="64" Channel="Monthly">
+      <Product ID="O365ProPlusRetail">
+       <ExcludeApp ID="Teams" />
+      </Product>
+      <Product ID="ProjectProRetail">
+       <Language ID="en-us" />
+       <ExcludeApp ID="Teams" />
+      </Product>
+   </Add>
+</Configuration>
+```
+
+The following example shows how to add a language pack to an existing installation of Office 365 ProPlus without installing Teams.
+
+```xml
+<Configuration>
+   <Add OfficeClientEdition="64" Channel="Monthly">
+      <Product ID="O365ProPlusRetail">
+       <ExcludeApp ID="Teams" />
+      </Product>
+      <Product ID="LanguagePack">
+       <Language ID="ja-jp" />
+      </Product>
+    </Add>
+</Configuration>
+```
+
+If you're just applying the regular feature and quality updates for an existing installation of Office, and you don't install another product or language pack, then your existing installation of Office won’t be affected at this time. 
+
+Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using supports the default installation of Teams.
 
 Later this year, the plan is to add Teams to existing installations of Office as part of a regularly scheduled update. We'll provide more information about this closer to when that actually happens.
 
