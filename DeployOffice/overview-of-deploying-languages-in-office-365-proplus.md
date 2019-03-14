@@ -15,7 +15,9 @@ ms.custom: Ent_Office_ProPlus
 
 # Overview of deploying languages in Office 365 ProPlus
 
-This article covers the options for deploying languages for Office 365 ProPlus, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). The guidance in this article applies to Office 365 ProPlus and the following Office products:
+This article covers the options for deploying languages for Office 365 ProPlus, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
+
+The guidance in this article applies to Office 365 ProPlus and the following Office products:
 
 -The desktop version of Project that comes with some subscription plans, such as Project Online Professional.
 -The desktop version of Visio that comes with some subscription plans, such as Visio Online Plan 2. 
@@ -23,7 +25,7 @@ This article covers the options for deploying languages for Office 365 ProPlus, 
 
 You can't use language resources for Windows Installer (MSI) versions of Office with Office 365 ProPlus, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Office 365 ProPlus.  
 
-In general, you deploy languages for Office 365 ProPlus with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages or you can deploy languages as a separate package, after Office is already installed.
+In general, you deploy languages for Office 365 ProPlus with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages, or you can deploy languages as a separate package, after Office is already installed.
 
 The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuration file in a text editor.
 
@@ -33,11 +35,11 @@ The steps in this article assume that you're deploying with Configuration Manage
 When deploying multiple languages in a large organization, we recommend these best practices:
 
 - Automatically [install the same languages as the operating system](#install-the-same-languages-as-the-operating-system).
+- If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
 - When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as the previous version](#install-the-same-languages-from-a-previous-msi-installation).
 - When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
 - If you deploy a subscription version of Project or Visio to a device that already has Office installed, you can [automatically deploy the product in the same languages as the installed version of Office](#install-the-same-languages-as-an-existing-version-of-office).
-- If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
 - If you use some languages only as editing tools, you can [deploy just the proofing tools](#install-proofing-tools) instead of full language packs to conserve network bandwidth. 
 
 This article also includes more details on [language packs](#language-resources-for-office-365-proplus), the list of [supported languages](#languages-culture-codes-and-companion-proofing-languages), and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
@@ -48,9 +50,11 @@ If your organization allows it, users can install Office 365 ProPlus languages d
 
 ## Deploy multiple languages as part of deploying Office
 
-To deploy Office 365 ProPlus in multiple languages, you just need to include the additional languages in the Office packages you create as part of your standard deployment process. To do so, select the languages you want to deploy in the Language section when creating the configuration file in the [Office Customization Tool](https://config.office.com/).
+To deploy Office 365 ProPlus in multiple languages, you just need to include the additional languages in the Office packages you create. To do so, select the languages you want to deploy in the Language section when creating the configuration file in the [Office Customization Tool](https://config.office.com/).
 
-If you deploy Office from a local source on your network, you must download your languages to the local source, in the same way that you download the Office package. When deploying from a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). For more details on standard deployments, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
+If you deploy Office from a local source on your network, you must download your languages to that source, in the same way that you download the Office package. When deploying from a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). 
+
+For more details on standard deployments, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
 > [!NOTE]
 > The primary language selected in the Office Customization Tool determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall Office and reinstall it. 
