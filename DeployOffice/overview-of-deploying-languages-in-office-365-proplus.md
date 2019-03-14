@@ -35,10 +35,10 @@ When deploying multiple languages in a large organization, we recommend these be
 - Automatically [install the same languages as the operating system](#install-the-same-languages-as-the-operating-system).
 - When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as the previous version](#install-the-same-languages-from-a-previous-msi-installation).
-- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment more difficult to manage.
+- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
 - If you deploy a subscription version of Project or Visio to a device that already has Office installed, you can [automatically deploy the product in the same languages as the installed version of Office](#install-the-same-languages-as-an-existing-version-of-office).
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
-- If you only need certain languages for editing tools [xx - fix], you can [deploy proofing tools](#install-proofing-tools) instead of full language packs to conserve network bandwidth. 
+- If you use some languages only as editing tools, you can [deploy just the proofing tools](#install-proofing-tools) instead of full language packs to conserve network bandwidth. 
 
 This article also includes more details on [language packs](#language-resources-for-office-365-proplus), the list of [supported languages](#languages-culture-codes-and-companion-proofing-languages), and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
 
@@ -46,21 +46,9 @@ This article also includes more details on [language packs](#language-resources-
 
 If your organization allows it, users can install Office 365 ProPlus languages directly from the Office 365 portal. When users install Office from the **Software** page, they select a language from the **Language** drop-down box. If a user needs an additional language, they can just re-run the process for each required language. The setup will add the selected language to the user's device.
 
-## xxPlan for deploying multiple languages
-
-If you deploy Office 365 ProPlus from the Office CDN, the languagesyou can You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.
-To package the languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see Install the same languages as the operating system.
-After you've deployed Office with the required languages, you can install additional language accessory packs at any time by choosing one of the following:
-Have your users download and install the language accessory packs that they need from the Office 365 portal (requires local administrator permissions).
-Use Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
-For more details, see Overview of deploying languages in Office 365 ProPlus.
-
-
 ## Deploy multiple languages as part of deploying Office
 
-To deploy Office 365 ProPlus in multiple languages, you just need to include the additional languages in the Office packages you create as part of your standard deployment process:
-
-When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select the languages you want to deploy in the Language section.
+To deploy Office 365 ProPlus in multiple languages, you just need to include the additional languages in the Office packages you create as part of your standard deployment process. To do so, select the languages you want to deploy in the Language section when creating the configuration file in the [Office Customization Tool](https://config.office.com/).
 
 If you deploy Office from a local source on your network, you must download your languages to the local source, in the same way that you download the Office package. When deploying from a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). For more details on standard deployments, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
