@@ -14,7 +14,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams wil
 
 # Deploy Microsoft Teams with Office 365 ProPlus
 
-Currently, Microsoft Teams is a separate installation from Office 365 ProPlus. But, starting in late February 2019, Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel.
+Currently, Microsoft Teams is a separate installation from Office 365 ProPlus. But, starting in late February 2019, Teams will be installed by default for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. If Teams is already installed on the device, no changes are made to that installation of Teams.
 
 If Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before. Also, Skype for Business will continue to be installed by default when you install Office 365 ProPlus.
 
@@ -27,6 +27,8 @@ The date when Teams starts being installed by default with **new** installations
 |Monthly Channel |Version 1902 | March 4, 2019  |
 |Semi-Annual Channel (Targeted)| Version 1902   | March 12, 2019  |
 |Semi-Annual Channel| Version 1902  |*July 9, 2019* |
+
+If you're ready to deploy Teams to the users in your organization, you don't have to wait until you deploy Version 1902 of Office 365 ProPlus. If you want to install Teams to an existing installation of Office 365 ProPlus, you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), or you can deploy it for them by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 
 > [!NOTE]
 > Teams is already installed by default for **new** installations of the following:
@@ -67,6 +69,8 @@ If you don’t want Teams installed by default when you install Office 365 ProPl
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
 If you’re deploying Office 365 ProPlus by using the Office 365 Client Installation wizard in System Center Configuration Manager (Current Branch), you’ll be able to set “Teams” to “Off” in the configuration UI.
+
+If you're deploying Office 365 ProPlus by using Microsoft Intune, there isn't currently a checkbox to exclude Teams under **Configure App Suite**. We expect a checkbox for Teams to be added by the end of March. In the meantime, if you choose an update channel and version under **App Suite Settings** that supports the default installation of Teams, such as Version 1902 of Monthly Channel, then Teams will be installed when you install Office 365 ProPlus.
 
 If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being installed by default.
 
@@ -144,6 +148,6 @@ Some Office 365 plans include Office, but don’t include the Teams service. For
 
 - There is no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
 - Teams is installed with Office 365 ProPlus in the same way that Teams is installed if you use the [MSI-based installer for Teams](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
-- If you want to install Teams to an existing installation of Office on Windows, you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), or you can deploy it for them by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
+- The architecture (sometimes referred to as the *bitness*) of Teams and Office 365 ProPlus installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Office 365 ProPlus. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation and practical guidance](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
 - You can also use PowerShell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
