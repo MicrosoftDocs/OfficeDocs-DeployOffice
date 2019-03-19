@@ -163,7 +163,7 @@ When you use the Office Deployment Tool (ODT) to download the installation files
 
 ## Languages, culture codes, and companion proofing languages
 
-Language-neutral product resources for Office 365 ProPlus are packaged into a single file that contains all the neutral resources. Language-specific resources are packaged into language-specific files such as en-us for English (United States) resources. [xx - add examples]
+Language-neutral product resources for Office 365 ProPlus are packaged into a single file that contains all the neutral resources. Language-specific resources are packaged into language-specific files such as en-us for English (United States) resources. 
 
 The following table lists all the supported languages for Office 365 ProPlus, along with culture codes and companion proofing languages.
 
