@@ -29,7 +29,6 @@ In general, you deploy languages for Office 365 ProPlus with the same process an
 
 The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuration file in a text editor.
 
-
 ## Best practices for deploying languages
 
 When deploying multiple languages in a large organization, we recommend these best practices:
@@ -70,8 +69,6 @@ After installing Office 365 ProPlus, you can install additional languages for Of
 5. Deploy the languages using the same process you use to deploy Office.
  
 ## Install proofing tools
-
-[xx - fix sample to remove edition, source, etc--and fix references to example.]
 
 Each language version of Office 365 ProPlus includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
 
