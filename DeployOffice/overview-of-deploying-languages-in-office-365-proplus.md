@@ -130,7 +130,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 ### Example
 ```xml
 <Configuration>
- <Add AllowCdnFallback="True"> 
+ <Add Channel="Broad" AllowCdnFallback="True"> 
   <Product ID="VisioProRetail">
      <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
   </Product>
