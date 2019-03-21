@@ -81,9 +81,7 @@ To install just the proofing tools, use the same tools you used to deploy Office
 If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit), source location (Office CDN or local source), and update channel as the existing installation of Office 365 ProPlus. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
 
 1. When creating the configuration file in a text editor, use "ProofingTools" as the Product ID, along with the appropriate Language IDs, as shown in the example. 
-
 2. If you deploy languages from a local source, you must download the proofing tools to that source first. For more details, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus).  
-
 3. If you use a local source, we recommend that you use the Office CDN as a backup source for language packs and proofing tools by including the AllowCdnFallback attribute in the configuration file, as shown in the example. 
 
 For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
@@ -94,8 +92,7 @@ This configuration file installs proofing tools for German and Italian on a devi
 
 ```xml
 <Configuration>
- <Add> 
-  <AllowCdnFallback="True"/>
+ <Add AllowCdnFallback="True"> 
   <Product ID="ProofingTools">
      <Language ID="de-de"/>
      <Language ID="it-it"/>
@@ -133,8 +130,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 ### Example
 ```xml
 <Configuration>
- <Add> 
-  <AllowCdnFallback="True"/>
+ <Add AllowCdnFallback="True"> 
   <Product ID="VisioProRetail">
      <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
   </Product>
