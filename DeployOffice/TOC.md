@@ -20,6 +20,9 @@
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
+# Privacy
+## [Overview of privacy controls](privacy/overview-privacy-controls.md)
+
 # Upgrade 
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
@@ -60,8 +63,6 @@
 ### [Resume Assistant](mac/set-preference-resume-assistant-word.md?toc=/deployoffice/toc.json)
 ### [Outlook preferences](mac/preferences-outlook.md?toc=/deployoffice/toc.json)
 ### [Default decryption password (Excel)](mac/set-preference-default-password-excel.md?toc=/deployoffice/toc.json)
-
-
 ## Activation
 ### [Overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Volume License (VL) Serializer](mac/volume-license-serializer.md?toc=/deployoffice/toc.json)
