@@ -21,7 +21,7 @@
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
 # Privacy
-## [Overview of privacy controls](privacy/overview-privacy-controls.md)
+## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
 
 # Upgrade 
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
