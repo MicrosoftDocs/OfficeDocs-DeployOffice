@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ms.assetid: a7154bc5-17cf-4da3-8b2e-21f4dc3475d3
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents as well as how to choose the appropriate certificates for your deployment."
 ---
 

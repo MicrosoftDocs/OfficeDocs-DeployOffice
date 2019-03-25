@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ms.assetid: dc45ec33-40b0-4dec-a038-c0076115f9c9
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use Protected View settings to open documents, presentations, and workbooks in a sandbox environment in Office."
 ---
 
