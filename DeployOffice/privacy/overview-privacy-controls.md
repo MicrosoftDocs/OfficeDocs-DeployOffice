@@ -69,23 +69,23 @@ We understand that you might want to choose which types of connected experiences
 
 For example, you might choose to provide your users with connected experiences that download online content, but not connected experiences that analyze content. If you don’t configure these policy settings, all these connected experiences will be available to your users.
 
-In addition, there will be a policy setting that allows you turn off all these connected experiences, which will also turn off additional connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, as well as essential services described below.
+In addition, there will be a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, as well as essential services described below.
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or the users will get an error message when they try to use those connected experiences.
 
 Your users won’t be able to choose whether to turn these connected experiences on or off if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
-## Optional connected experiences for Office 365 ProPlus
+## Additional optional connected experiences for Office 365 ProPlus
 
-In addition to the connected experiences mentioned above that are included with Office 365 ProPlus,  there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
+In addition to the connected experiences mentioned above that are included with Office 365 ProPlus, there are additional optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
 
-These are optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions.  Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement).
+These are additional optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Additional optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
-Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
+Because these additional optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these additional optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these additional optional connected experiences are available to your users.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to **File** > **Account** > **Account Privacy** > **Manage Settings**. Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+Even if you choose to make these additional optional connected experiences available to your users, your users will have the option to turn these additional optional connected experiences off as a group by going to **File** > **Account** > **Account Privacy** > **Manage Settings**. Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
-We’ll be providing more information in the coming weeks about optional connected services and how to manage them.
+We’ll be providing more information in the coming weeks about additional optional connected services and how to manage them.
 
 ## Necessary service data for connected experiences
 
