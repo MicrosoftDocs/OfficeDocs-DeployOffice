@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ms.assetid: 9fe385d6-3c8f-458b-918f-b524d0b05f74
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office."
 ---
 

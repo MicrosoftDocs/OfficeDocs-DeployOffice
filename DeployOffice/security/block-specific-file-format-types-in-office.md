@@ -10,6 +10,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
+ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: fe3f431c-8d7a-45c8-954f-1268f3b53316
 description: "Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users."
 ---
