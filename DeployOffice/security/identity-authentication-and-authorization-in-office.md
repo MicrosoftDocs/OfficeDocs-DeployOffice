@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ms.assetid: b9ee9188-b209-49a7-a3aa-a6f5040391ba
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes Office authentication, logon types, and how to use registry settings to determine which user identities are offered at user logon."
 ---
 
