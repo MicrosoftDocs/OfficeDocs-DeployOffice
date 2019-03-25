@@ -6,8 +6,10 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-localization_priority: Priority
-ms.collection: Ent_O365
+localization_priority: Critical
+ms.collection: 
+- Ent_O365
+- M365-modern-desktop
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
