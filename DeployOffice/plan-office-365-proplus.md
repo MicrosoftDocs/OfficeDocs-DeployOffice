@@ -29,7 +29,7 @@ If you haven't already, complete the [assessment of your environment and infrast
 ## Step 1 - Choose how to deploy
 
 > [!NOTE]
-> **Best practice:** If you use Configuration Manager already, make sure you're on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
+> **Best practice:** If you use Configuration Manager already, make sure you are on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
 
 To deploy Office, you first choose what deployment tool to use and whether to install  the Office files directly from the cloud or from a local source on your network.
 
