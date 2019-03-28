@@ -50,7 +50,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
 ### Deployment differences
 <a name="BKMK_Deployment"> </a>
 
-- By default, Office 365 ProPlus installs as one package. This means that all Office programs are installed on the user's computer. But, you can configure the deployment to [Exclude or remove Office 365 ProPlus products from client computers](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove), such as Access.
+- By default, Office 365 ProPlus installs as one package. This means that all Office programs are installed on the user's computer. But, you can configure the deployment to [Exclude or remove Office 365 ProPlus products from client computers](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove), such as Access. 
     
 - Because Office 365 ProPlus uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Office 365 ProPlus is configured to automatically install updates from the Office Content Delivery Network (CDN) on the Internet. But, you can configure Office 365 ProPlus to install updates from a location within your own network or you can [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
     
