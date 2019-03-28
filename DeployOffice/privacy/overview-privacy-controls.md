@@ -67,7 +67,7 @@ We understand that you might want to choose which types of connected experiences
 
 - **Experiences that analyze your content** Experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Editor in Word.
 
-- **Experiences that download online content** Experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Insert Online Pictures or PowerPoint QuickStarter.
+- **Experiences that download online content** Experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter.
 
 For example, you might choose to provide your users with connected experiences that download online content, but not connected experiences that analyze content. If you don’t configure these policy settings, all these connected experiences will be available to your users.
 
