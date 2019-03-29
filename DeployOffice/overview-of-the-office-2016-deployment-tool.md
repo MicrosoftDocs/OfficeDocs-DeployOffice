@@ -201,59 +201,9 @@ OneDrive is automatically installed when you install Office 365 ProPlus, Word, E
 </Add>
 ```
 
-## Install Office in the same language as the client operating system
+## Deploy multiple or matching languages
 
-When using the ODT, you can automatically install the Office language that matches the display language of the client operating system. To do so, use **Language ID="MatchOS"** in the configuration file.
-
-For example, this configuration file installs the 32-bit edition of Office 365 ProPlus in the same language as the client operating system--English for clients with the display language of English, Japanese for clients with Japanese, and so on:
-
-```xml
-<Configuration> 
-  <Add OfficeClientEdition="32">
-    <Product ID="O365ProPlusRetail" > 
-      <Language ID="MatchOS" />        
-    </Product> 
-  </Add> 
-</Configuration> 
-```
-
-## Add languages to existing installations of Office 365 ProPlus
-<a name="BKMK_updatelanguages"> </a>
-
-After installing Office, you can use the ODT to install additional language packs for Office. To do so, follow the steps for installing Office with the ODT, but use a new configuration file that uses “LanguagePack” as the Product ID and that indicates which languages to add. 
-
-By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. 
-
- **Step 1: Download the Office installation files in the languages you want to add**
-
-If Office in your organization is updated from a local source, you must download the Office installation files for the languages you want to add.
-
- **Step 2: Create the configuration file for adding the language packs**
-
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then ensuring that the OfficeClientEdition and language IDs are what you want.
-
-In this example, the configuration file installs the French and Japanese language packs:
-
-```xml
-<Configuration>
-  <Add OfficeClientEdition="32">
-    <Product ID="LanguagePack">
-      <Language ID="fr-fr" />
-      <Language ID="ja-jp" />
-    </Product>
-  </Add>  
-</Configuration>
-```
-
-For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
-
- **Step 3: Run the ODT executable in configure mode**
-
-From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you just saved. In the following example, the configuration file is named **installlanguage.xml**:
-
- `setup.exe /configure installlanguage.xml`
-
-You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
+For details on deploying languages, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
 ## Apply application settings to Office 365 ProPlus
 
