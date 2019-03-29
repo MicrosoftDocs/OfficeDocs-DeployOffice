@@ -180,7 +180,7 @@ Allowed values:
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-You can also use the Product element to add language packs to existing installations of Office 365 ProPlus. For more details on how, including an example configuration file, see  [Add languages to existing installations of Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#BKMK_updatelanguages).
+You can also use the Product element to add language packs to existing installations of Office 365 ProPlus. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-office-365-proplus).
 
 ### Example
 
@@ -211,7 +211,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
 
-To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
+Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Overview of deploying languages](overview-of-deploying-languages-in-office-365-proplus.md).
 
 ### Example
 
@@ -228,7 +228,8 @@ To automatically install the same languages as the operating system, use "MatchO
      Channel="Broad" 
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
-     <Language ID="MatchOS" Fallback="en-us" />
+     <Language ID="MatchInstalled" />
+	 <Language ID="MatchOS" Fallback="en-us" />
   </Product>
 </Add>  
 ```
