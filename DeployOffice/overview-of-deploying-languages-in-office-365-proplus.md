@@ -65,7 +65,7 @@ After installing Office 365 ProPlus, you can install additional languages for Of
 4. In the Language section, select the additional languages you want to install.
 5. Deploy the languages using the same process you use to deploy Office.
 
-When you add to an existing deployment, the ODT can automatically use the same architecture (32 bit or 64 bit), source location (Office CDN or local source), and update channel as the existing installation of Office 365 ProPlus. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups. The Office Customization Tool, however, requires that you specify all these values, so you can only use this feature if you create the configuration file in a text editor. 
+When you add to an existing deployment, the ODT can automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Office 365 ProPlus. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups. The Office Customization Tool, however, requires that you specify all these values, so you can only use this feature if you create the configuration file in a text editor. 
 
 ## Install proofing tools
 
@@ -78,7 +78,7 @@ To install just the proofing tools, use the same tools you used to deploy Office
 > [!NOTE]
 > You cannot use the Office Customization Tool to create the configuration file, because this feature is not yet available in that tool. Instead, you must edit the configuration file in a text editor. 
 
-If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit), source location (Office CDN or local source), and update channel as the existing installation of Office 365 ProPlus. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
+If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Office 365 ProPlus. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
 
 1. When creating the configuration file in a text editor, use "ProofingTools" as the Product ID, along with the appropriate Language IDs, as shown in the example. 
 2. If you deploy languages from a local source, you must download the proofing tools to that source first. For more details, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus).  
@@ -88,16 +88,16 @@ For details on how to edit the configuration file in a text editor, see [Configu
 
 ### Example
 
-This configuration file installs proofing tools for German and Italian on a device with Office already installed. If the original installation of Office was from a local source, make sure to download the proofing tools to that source. If the tools aren't found at the local source, the AllowCdnFallback setting installs the tools directly from the Office CDN.
+This configuration file installs proofing tools for German and Italian using the Semi-Annual Channel on a device with Office already installed. If the original installation of Office was from a local source, make sure to download the proofing tools to that source. If the tools aren't found at the local source, the AllowCdnFallback setting installs the tools directly from the Office CDN. 
 
 ```xml
 <Configuration>
- <Add AllowCdnFallback="True"> 
-  <Product ID="ProofingTools">
-     <Language ID="de-de"/>
-     <Language ID="it-it"/>
-  </Product>
- </Add>  
+  <Add Channel="Broad" AllowCdnFallback="TRUE">
+    <Product ID="ProofingTools">
+      <Language ID="de-de" />
+      <Language ID="it-it" />
+    </Product>
+  </Add>
 </Configuration>
 ```
 
