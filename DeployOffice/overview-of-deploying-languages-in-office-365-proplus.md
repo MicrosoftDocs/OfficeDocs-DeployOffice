@@ -34,12 +34,12 @@ When deploying multiple languages in a large organization, we recommend these be
 - Automatically [install the same languages as the operating system](#install-the-same-languages-as-the-operating-system).
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
 - When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
-- If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as the previous version](#install-the-same-languages-from-a-previous-msi-installation). 
+- If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as a previous MSI installation](#install-the-same-languages-as-a-previous-msi-installation). 
 - When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
 - If you deploy a subscription version of Project or Visio to a device that already has Office installed, you can [automatically deploy them in the same languages as the installed version of Office](#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-office-365-proplus).
 - If you use some languages only as editing tools, you can [deploy just the proofing tools](#deploy-proofing-tools) instead of full language packs to conserve network bandwidth.
 
-This article also includes [the list of supported languages](#languages-culture-codes-and-companion-proofing-languages)[language packs](#language-resources-for-office-365-proplus) and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
+This article also includes [the list of supported languages](#languages-culture-codes-and-companion-proofing-languages) and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
 
 ## Install languages from the Office 365 portal
 
