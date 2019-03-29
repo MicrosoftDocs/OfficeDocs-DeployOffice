@@ -243,7 +243,7 @@ Note: When Office is installed, the app settings defined in the configuration fi
 
 You can apply new application settings to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application settings and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application settings. 
 
-1. Use the steps in [Apply application settings to Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#Apply-application-settings-to-Office-365-ProPlus) to create the configuration file.
+1. Use the steps in [define application preferences](overview-of-the-office-customization-tool-for-click-to-run.md#define-application-preferences) to create the configuration file.
 2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installappsettings.xml**:
   
  `setup.exe /customize installappsettings.xml`
