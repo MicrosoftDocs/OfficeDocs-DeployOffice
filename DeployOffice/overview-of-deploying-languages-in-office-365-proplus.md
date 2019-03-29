@@ -110,9 +110,9 @@ When deploying Office, you can automatically install the same languages that are
 
 When Match Operating System is used, the base language of the operating system and all active display languages for user profiles on the device are installed. Match Operating System can be used in combination with a fixed list of languages. 
 
-## Install Visio or Project in the same languages as an existing version of Office 365 ProPlus
+## Deploy Visio or Project in the same languages as an existing version of Office 365 ProPlus
 
-You can automatically install Visio and Project in the languages that are in use by an existing version of Office 365 ProPlus. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
+You can automatically deploy Visio and Project in the languages that are in use by an existing version of Office 365 ProPlus. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 
 > [!NOTE]
 > You cannot use the Office Customization Tool to create the configuration file, because this feature is not yet available in that tool. Instead, you must edit the configuration file in a text editor. 
