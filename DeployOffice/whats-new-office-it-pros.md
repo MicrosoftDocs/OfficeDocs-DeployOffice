@@ -24,6 +24,10 @@ Microsoft is committed to providing you with the information and controls you ne
 
 Starting with Version 1904, which is expected to be released in Monthly Channel in late April, we’ll be providing you with new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
 
+## March 2019
+
+Language deployment for Office 365 ProPlus continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+
 ## February 2019
 
 Microsoft Teams will be installed for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
