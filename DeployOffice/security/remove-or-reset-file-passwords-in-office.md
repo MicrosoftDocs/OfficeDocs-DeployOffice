@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ms.assetid: 6c4deec3-1f17-4958-b487-0c9194383907
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use the Office DocRecrypt tool to unlock password protected OOXML formatted Word, Excel, and PowerPoint files."
 ---
 
