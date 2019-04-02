@@ -52,6 +52,12 @@ To change a policy configuration, select the policy configuration on the **Polic
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then choose **Copy from**. Make the appropriate changes and then choose **Save**.
 
+## Managing policy configurations [add]
+
+View the health of a policy configuration [add]
+
+Sorting and filtering [add]
+
 ## How the policy configuration is applied
 
 The Click-to-Run service used by Office 365 ProPlus checks with the Office cloud policy service on a regular basis to see if there are any policy configurations that pertain to the user. If there are, then the appropriate policy settings are applied and take effect the next time the user opens the Office app, such as Word or Excel.
@@ -70,3 +76,41 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - You can also create policy configurations to apply policy settings for Version 1808 or higher of Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365).
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - A policy configuration can’t be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
+
+- ports are documented here 
+https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges [add]
+
+## Troubleshooting [add]
+
+Storage of policies from OCPS 
+OCPS stores the cloud policies in the following location for the active windows user 
+HKCU\SOFTWARE\Policies\Microsoft\Cloud\Office\16.0  
+  
+If the cloud key does not exist either the user that is signed into Office on the device does not have any cloud policies assigned or the client has not yet checked into the service for the first time. 
+  
+OCPS check in status is stored in the following location 
+HKCU\SOFTWARE\Microsoft\Office\16.0\Common\CloudPolicy 
+  
+If the cloud key does not exist either the user that is signed into Office on the device does not have any cloud policies assigned or the client has not yet checked into the service for the first time. 
+  
+FetchInterval – This value stores the amount of time between check ins.  This value is provide as part of the check in process and stored in the registry.  This value will be written for each check in.  I think the point we want to make here is that if you try to edit this value to set your own it will not be honored because it will be overwritten each time the client checks in for policy changes. 
+  
+LastFetchTime – this is a value that tells the service when the last check in occurred.  This is best viewed in the OCPS client check in report. 
+  
+PolicyHash – If this value does not exist the user that is signed into Office on the device does not have any cloud policies assigned or there was an error retrieving the policies from the service. 
+  
+If the user signed into Office does not have the policies expected 
+Verify the user that is signed into Office has activated Office and has a valid license (i.e. ProPlus license) 
+Check the security group(s) the user is a member of and verify the priority of the policies in OCPS.  If the user is in multiple security groups that have policies assigned then priority from each of the policy configurations determines which values override values from lower priority policy configurations. 
+Check if the user signed in after signing someone else out that also had policies in the same Windows session.  
+
+If there are any technical issues such as: 
+errors reported by the service (in the OCPS client check in report) 
+The client is having trouble connecting to the service 
+  
+The following actions can be taken on the client 
+Make sure all Office apps are closed 
+Delete the following key 
+HKCU\SOFTWARE\Microsoft\Office\16.0\Common\CloudPolicy 
+Start one of the Office apps. 
+
