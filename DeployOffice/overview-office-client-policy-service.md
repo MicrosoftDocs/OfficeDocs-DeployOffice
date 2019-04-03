@@ -39,24 +39,26 @@ The following are the requirements for using the Office cloud policy service wit
 The following are the basic steps for creating a policy configuration.
 
 1. Sign into the [portal](https://aka.ms/o365clientmgmt), review the terms, and then choose **Accept**.
-2. On the **Office Customization Tool** page, choose **Policy configuration**.
+2. On the **Office Customization** page, choose **Got to Office policy management**.
 3. On the **Policy configurations** page, choose **Create**.
 4. On the **Create policy configuration** page, do the following:
    - Enter a name.
    - Provide a description (optional).
-   - Select the AAD-based security group that is assigned to the policy configuration. You can only assign one group to a policy configuration, and a group can only have one policy configuration assigned to it.
-   - Configure the policy settings to be included in the policy configuration. You can search on the policy setting name to find the policy setting that you want to configure.
+   - Select the AAD-based security group that is assigned to the policy configuration. Each policy configuration can only be assigned to one group, and each group can only be assigned one policy configuration.
+   - Configure the policy settings to be included in the policy configuration. You can search on the policy setting name to find the policy setting that you want to configure. You can also filter on the application and whether the policy has been configured.
 5. After you've made your selections, choose **Create**.
 
-To change a policy configuration, select the policy configuration on the **Policy configurations** page, and then choose **Edit**. Make the appropriate changes and then choose **Save**.
+To change a policy configuration, select the policy configuration on the **Policy configurations** page, and then choose **Edit**. Make the appropriate changes and then choose **Save**. You can find the configured policies by filtering on status.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then choose **Copy from**. Make the appropriate changes and then choose **Save**.
 
-## Managing policy configurations [add]
+## Managing policy configurationss
 
-View the health of a policy configuration [add]
+The health of each policy configuration, including whether the policy has been applied to the client devices in the group, is shown on the **Policy configurations** page. To see more details about any errors, you can click the health status for a policy configuration.
 
-Sorting and filtering [add]
+To see which policies are configured when you are editing a policy configuration, choose **Status**, and then choose **Configured**. You can also filter by application.
+
+To change the priority order for the policy configurations, click **Reorder priority** on the **Policy configurations** page.
 
 ## How the policy configuration is applied
 
