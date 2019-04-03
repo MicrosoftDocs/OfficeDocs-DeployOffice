@@ -52,7 +52,7 @@ To change a policy configuration, select the policy configuration on the **Polic
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then choose **Copy from**. Make the appropriate changes and then choose **Save**.
 
-## Managing policy configurationss
+## Managing policy configurations
 
 The health of each policy configuration, including whether the policy has been applied to the client devices in the group, is shown on the **Policy configurations** page. To see more details about any errors, you can click the health status for a policy configuration.
 
