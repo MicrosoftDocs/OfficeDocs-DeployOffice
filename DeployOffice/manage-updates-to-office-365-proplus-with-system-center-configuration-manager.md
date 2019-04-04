@@ -4,12 +4,12 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "System Center Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business."
 ---

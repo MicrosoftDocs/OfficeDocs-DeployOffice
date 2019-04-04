@@ -40,7 +40,7 @@ If the computer can't contact the Office Licensing Service after 30 days, Office
   
 For each user that you've assigned a license to in Office 365, you can deploy and activate Office for Mac on up to five Macs for the user. If you need to provide Office for Mac on a sixth computer for a user, you need to deactivate an existing installation first. Deactivating an installation doesn't remove Office  for Mac from the computer. Instead, the installation goes into reduced functionality mode.
   
-Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [Office 365 admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
+Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
   
 ## Activate volume licensed versions of Office for Mac
 

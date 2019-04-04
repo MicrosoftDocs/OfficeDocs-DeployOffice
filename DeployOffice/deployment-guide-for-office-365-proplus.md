@@ -7,9 +7,7 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
-ms.collection:
-- Ent_O365
-- Strat_O365_ProPlus
+ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
 ---
@@ -42,7 +40,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md) 
 
 
 ## Manage updates
@@ -61,7 +59,7 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 ## Reference
 
-Learn about the Office Deployment Tool (ODT), other deployment options, and activation.
+Learn about the Office Deployment Tool (ODT), other deployment options, and activation. 
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 

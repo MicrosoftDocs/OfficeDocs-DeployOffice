@@ -4,19 +4,19 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: 
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
 # Plan your enterprise deployment of Office 365 ProPlus
 
-Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud.
+Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud. 
 
 ![Deployment framework for Office 365 ProPlus](images/plan-office-365-proplus-01.png)
 
@@ -29,13 +29,13 @@ If you haven't already, complete the [assessment of your environment and infrast
 ## Step 1 - Choose how to deploy
 
 > [!NOTE]
-> **Best practice:** If you use Configuration Manager already, make sure you're on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
+> **Best practice:** If you use Configuration Manager already, make sure you are on the Current Branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
 
 To deploy Office, you first choose what deployment tool to use and whether to install  the Office files directly from the cloud or from a local source on your network.
 
 We recommend the Current Branch of Configuration Manager for organizations that already use it to distribute and manage software. Configuration Manager scales for large environments; enables extensive control over installation, updates, and settings; and has built-in features for deploying and managing Office. 
 
-If you do deploy with Configuration Manager, we recommend deploying from a local source, using your Configuration Manager distribution points. If you use a previous version of Configuration Manager, we recommend upgrading to the Current Branch before using it to deploy Office.
+If you do deploy with Configuration Manager, we recommend deploying from a local source, using your Configuration Manager distribution points. If you use a previous version of Configuration Manager, we recommend upgrading to the Current Branch before using it to deploy Office. 
 
 For organizations that don't have Configuration Manager but still want to manage their deployment, we recommend using the Office Deployment Tool (ODT). You can use the ODT as a standalone tool or you can use it to download installation files that can be deployed using third-party software deployment tools. In either case, the ODT provides control over installation, updates, and settings. For more details, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 

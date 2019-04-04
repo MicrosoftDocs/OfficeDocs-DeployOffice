@@ -4,12 +4,12 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection:
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Configuration options for the Office Deployment Tool"
 ---
@@ -18,11 +18,14 @@ description: "Configuration options for the Office Deployment Tool"
 # Configuration options for the Office Deployment Tool
 With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
+> [!NOTE]
+> **Best practice:** The options in this article show the XML elements and attributes in the configuration file. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more details, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
+
 ## Example of a standard configuration file
 
 The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
 
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.  
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
 
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
 
@@ -41,9 +44,8 @@ This configuration file includes the most-commonly used elements and attributes,
     </Product>
   </Add>
   <Updates Enabled="TRUE" 
-           UpdatePath="\\Server\Share" 
-           Channel="Broad" /> 
-  <Display Level="None" AcceptEULA="TRUE" />  
+           UpdatePath="\\Server\Share" />
+   <Display Level="None" AcceptEULA="TRUE" />  
   <Logging Level="Standard" Path="%temp%" /> 
 </Configuration>
 ```
@@ -57,7 +59,6 @@ This configuration file includes the most-commonly used elements and attributes,
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
 |Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
-|Updates Channel="Broad"  <br/> |Office updates using the Semi-Annual Channel.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 |Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
 
@@ -179,7 +180,7 @@ Allowed values:
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-You can also use the Product element to add language packs to existing installations of Office 365 ProPlus. For more details on how, including an example configuration file, see  [Add languages to existing installations of Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#BKMK_updatelanguages).
+You can also use the Product element to add language packs to existing installations of Office 365 ProPlus. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-office-365-proplus).
 
 ### Example
 
@@ -210,7 +211,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
 
-To automatically install the same languages as the operating system, use "MatchOS" as the Language ID, as shown in the example. MatchOS cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
+Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Overview of deploying languages](overview-of-deploying-languages-in-office-365-proplus.md).
 
 ### Example
 
@@ -227,7 +228,8 @@ To automatically install the same languages as the operating system, use "MatchO
      Channel="Broad" 
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
-     <Language ID="MatchOS" Fallback="en-us" />
+     <Language ID="MatchInstalled" />
+	 <Language ID="MatchOS" Fallback="en-us" />
   </Product>
 </Add>  
 ```
@@ -326,9 +328,12 @@ Allowed values:
 - ID="Outlook"
 - ID="PowerPoint"
 - ID="Publisher"
+- ID="Teams"
 - ID="Word"
 
 For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
+
+For more information about Microsoft Teams, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
 
 ## Logging element
 
@@ -612,7 +617,7 @@ Example values:
 
 ## AppSettings element
 
-Defines application settings for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application settings, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application settings. Note that this tool is still in preview and is subject to change. 
+Defines application settings for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application settings, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application settings.
 
 For more details on application settings, see [Apply application settings](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application settings to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 

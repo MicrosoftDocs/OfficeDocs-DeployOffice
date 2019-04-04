@@ -4,12 +4,12 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection:
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
@@ -31,9 +31,8 @@ This article is intended for administrators in enterprise environments working w
 
 The steps in this article are based on the following best practices:
 
-- **Deploy Office from the cloud with the Office Deployment Tool**. For more details, see [Choose how to deploy](plan-office-365-proplus.md#step-1---choose-how-to-deploy).
 - **Manage updates to Office automatically**, without any adminstrative overhead. For more details, see [Choose how to manage updates](plan-office-365-proplus.md#step-2---choose-how-to-manage-updates).
-- **Build two Office installation packages**: Semi-Annual Channel for 32-bit and Semi-Annual Channel (Targeted) for 32-bit. Each installation package includes all the core Office apps. (If you want to deploy the 64-bit version of Office, you can create additional installation packages.) For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files).
+- **Build two Office installation packages**: Semi-Annual Channel for 64-bit and Semi-Annual Channel (Targeted) for 64-bit. Each installation package includes all the core Office apps. (If you want to deploy the 32-bit version of Office as well, you can create additional installation packages.) For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files).
 - **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that recieves the Semi-Annual Channel. Note that in this scenario, the installation packages and deployment groups match exactly. In more complex deployments, you might have multiple deployment groups that use the same installation package. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
 You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
@@ -72,7 +71,7 @@ Note that the Office installation files and Office updates will come from Semi-A
 Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
- - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the pilot group 
+ - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the broad group 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\O365** folder.
 
 This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Channel ("Broad").

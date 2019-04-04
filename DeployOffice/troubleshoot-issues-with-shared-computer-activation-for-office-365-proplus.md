@@ -9,6 +9,9 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+search.appverid:
+- MET150
+
 description: "Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
 ---
 

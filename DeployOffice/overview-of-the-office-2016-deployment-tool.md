@@ -4,12 +4,12 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection:
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
 ---
@@ -31,7 +31,10 @@ Before using the ODT to download or install Office, we recommend making sure you
 ## Get started with the Office Deployment Tool
 <a name="BKMK_GetStarted"> </a>
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher. For the full set of options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 64-bit English edition of Office, or you can edit the file to install the 64-bit English edition of Office with the EULA automatically accepted and without Publisher. For the full set of options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+
+> [!NOTE]
+> **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more details, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
 
@@ -198,67 +201,17 @@ OneDrive is automatically installed when you install Office 365 ProPlus, Word, E
 </Add>
 ```
 
-## Install Office in the same language as the client operating system
+## Deploy multiple or matching languages
 
-When using the ODT, you can automatically install the Office language that matches the display language of the client operating system. To do so, use **Language ID="MatchOS"** in the configuration file.
-
-For example, this configuration file installs the 32-bit edition of Office 365 ProPlus in the same language as the client operating system--English for clients with the display language of English, Japanese for clients with Japanese, and so on:
-
-```xml
-<Configuration> 
-  <Add OfficeClientEdition="32">
-    <Product ID="O365ProPlusRetail" > 
-      <Language ID="MatchOS" />        
-    </Product> 
-  </Add> 
-</Configuration> 
-```
-
-## Add languages to existing installations of Office 365 ProPlus
-<a name="BKMK_updatelanguages"> </a>
-
-After installing Office, you can use the ODT to install additional language packs for Office. To do so, follow the steps for installing Office with the ODT, but use a new configuration file that uses “LanguagePack” as the Product ID and that indicates which languages to add. 
-
-By default, the ODT will install the languages from the same location that Office gets updates from. If you want to install the languages from a different source location, specify the source path in the configuration file. 
-
- **Step 1: Download the Office installation files in the languages you want to add**
-
-If Office in your organization is updated from a local source, you must download the Office installation files for the languages you want to add.
-
- **Step 2: Create the configuration file for adding the language packs**
-
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then ensuring that the OfficeClientEdition and language IDs are what you want.
-
-In this example, the configuration file installs the French and Japanese language packs:
-
-```xml
-<Configuration>
-  <Add OfficeClientEdition="32">
-    <Product ID="LanguagePack">
-      <Language ID="fr-fr" />
-      <Language ID="ja-jp" />
-    </Product>
-  </Add>  
-</Configuration>
-```
-
-For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
-
- **Step 3: Run the ODT executable in configure mode**
-
-From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you just saved. In the following example, the configuration file is named **installlanguage.xml**:
-
- `setup.exe /configure installlanguage.xml`
-
-You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
+For details on deploying languages, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
 ## Apply application settings to Office 365 ProPlus
 
 As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](#install-office-365-proplus), but you include application settings as part of your configuration file. 
 
-To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/), a web application with a full user interface. Note that this tool is still in preview and is subject to change.
+To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface.
 
-1. In your web browser, open the [Office Customization Tool for Click-to-Run (preview)](https://config.office.com/) and follow the steps to create a configuration file, including defining application settings alongside the standard deployment settings. 
+1. In your web browser, open the [Office Customization Tool for Click-to-Run](https://config.office.com/) and follow the steps to create a configuration file, including defining application settings alongside the standard deployment settings. 
 2. Export the file.
 3. Follow the steps in [Install Office 365 ProPlus](#install-office-365-proplus) to deploy Office with the newly created configuration file.
 
@@ -282,7 +235,7 @@ In this example, the configuration file installs the 32-bit version of Office 36
 </Configuration>
 ```
 
-This file was created with the Office Customization Tool for Click-to-Run (preview). For more details on the app settings, we recommend browsing the options in the tool itself.
+This file was created with the Office Customization Tool for Click-to-Run. For more details on the app settings, we recommend browsing the options in the tool itself.
 
 Note: When Office is installed, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
 
@@ -290,7 +243,7 @@ Note: When Office is installed, the app settings defined in the configuration fi
 
 You can apply new application settings to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application settings and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application settings. 
 
-1. Use the steps in [Apply application settings to Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#Apply-application-settings-to-Office-365-ProPlus) to create the configuration file.
+1. Use the steps in [define application preferences](overview-of-the-office-customization-tool-for-click-to-run.md#define-application-preferences) to create the configuration file.
 2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installappsettings.xml**:
   
  `setup.exe /customize installappsettings.xml`

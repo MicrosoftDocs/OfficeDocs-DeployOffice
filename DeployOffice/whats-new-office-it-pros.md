@@ -16,6 +16,22 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+## April 2019
+
+### Privacy controls for Office 365 ProPlus
+
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
+
+Starting with Version 1904, which is expected to be released in Monthly Channel in late April, we’ll be providing you with new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
+
+## March 2019
+
+Language deployment for Office 365 ProPlus continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+
+## February 2019
+
+Microsoft Teams will be installed for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
+
 ## January 2019
 
 ### Public preview of Office client policy service
@@ -33,7 +49,7 @@ Office apps, such as Word and Outlook, are now available from the Mac App Store.
 
 The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Office 365 ProPlus and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it [here](overview-of-the-office-customization-tool-for-click-to-run.md).
 
-When installing language packs, you can save network bandwidth by installing only proofing tools. For more details, see [Install proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#install-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
+When installing language packs, you can save network bandwidth by installing only proofing tools. For more details, see [Deploy proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
 
 For best practices on deploying Office 365 ProPlus with Configuration Manager, see [our new article](deploy-office-365-proplus-with-system-center-configuration-manager.md).
 

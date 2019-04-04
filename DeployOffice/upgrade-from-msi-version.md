@@ -7,7 +7,9 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Office 365 ProPlus from an MSI version of Office"
 ---

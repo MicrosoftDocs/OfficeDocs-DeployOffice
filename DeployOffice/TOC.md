@@ -20,6 +20,9 @@
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
+# Privacy
+## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
+
 # Upgrade 
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
@@ -37,9 +40,10 @@
 ## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
 ## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
 
-# Project, Visio, and OneNote
+# Project, Visio, Teams, and OneNote
 ## [Deploy Project](deployment-guide-for-project.md)
 ## [Deploy Visio](deployment-guide-for-visio.md)
+## [Deploy Teams](teams-install.md)
 ## [Deploy OneNote](deployment-guide-onenote.md)
 ## [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
@@ -59,8 +63,6 @@
 ### [Resume Assistant](mac/set-preference-resume-assistant-word.md?toc=/deployoffice/toc.json)
 ### [Outlook preferences](mac/preferences-outlook.md?toc=/deployoffice/toc.json)
 ### [Default decryption password (Excel)](mac/set-preference-default-password-excel.md?toc=/deployoffice/toc.json)
-
-
 ## Activation
 ### [Overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Volume License (VL) Serializer](mac/volume-license-serializer.md?toc=/deployoffice/toc.json)

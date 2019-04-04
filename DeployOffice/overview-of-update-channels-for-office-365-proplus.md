@@ -4,12 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection:
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Provides IT Pros with an overview of the update channels for Office 365 ProPlus, including Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted)"
 ---
@@ -133,7 +133,7 @@ If you use the Office Deployment Tool, you can use the Channel attribute in the 
 </Configuration>
 ```
 
-The name of the Group Policy setting is Update Channel. You can find this policy setting under Computer Configuration\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates. When you enable the Group Policy setting you can select the appropriate update channel from a drop-down list. 
+The name of the Group Policy setting is Update Channel. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates. When you enable the Group Policy setting you can select the appropriate update channel from a drop-down list. 
   
  
 <a name="BKMK_AddInfo"> </a>

@@ -7,9 +7,7 @@ ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Strat_O365_ProPlus
+ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with information about how to install volume licensed versions of Project 2016 and Visio 2016 on the same computer with Office 365 ProPlus by using the Office Deployment Tool."
 ---

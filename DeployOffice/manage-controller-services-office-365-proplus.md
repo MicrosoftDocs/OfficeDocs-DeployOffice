@@ -6,7 +6,8 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Critical
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides information to admins on how to use Group Policy settings to manage services in Office 365 ProPlus"

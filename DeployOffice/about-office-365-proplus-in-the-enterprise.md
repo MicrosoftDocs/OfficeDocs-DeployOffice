@@ -4,12 +4,12 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: 
 - Ent_O365
-- Strat_O365_ProPlus
+- M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with an overivew of Office 365 ProPlus, including information about deploying and licensing."
 ---
@@ -28,7 +28,7 @@ Office 365 ProPlus is a version of Office that's available through Office 365. I
 
 Office 365 ProPlus is similar to other versions of Office that you can deploy to your users. Here are some important similarities:
   
-- Office 365 ProPlus is a full version of Office. 
+- Office 365 ProPlus is a full version of Office.  
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-system-requirements).
     
@@ -50,7 +50,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
 ### Deployment differences
 <a name="BKMK_Deployment"> </a>
 
-- By default, Office 365 ProPlus installs as one package. This means that all Office programs are installed on the user's computer. But, you can configure the deployment to [Exclude or remove Office 365 ProPlus products from client computers](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove), such as Access.
+- By default, Office 365 ProPlus installs as one package. This means that all Office programs are installed on the user's computer. But, you can configure the deployment to [Exclude or remove Office 365 ProPlus products from client computers](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove), such as Access. 
     
 - Because Office 365 ProPlus uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Office 365 ProPlus is configured to automatically install updates from the Office Content Delivery Network (CDN) on the Internet. But, you can configure Office 365 ProPlus to install updates from a location within your own network or you can [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
     
@@ -72,7 +72,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
 ## More information about Office 365 ProPlus
 <a name="BKMK_MoreInfo"> </a>
 
-- You can use Office 365 ProPlus with supported versions of Exchange Server or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 plan, you can use Office 365 ProPlus with Exchange Online and SharePoint Online.
+- You can use Office 365 ProPlus with supported versions of Exchange Server (Exchange Server 2013 or later) or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 plan, you can use Office 365 ProPlus with Exchange Online and SharePoint Online.
     
 - Users can store the files they create with Office 365 ProPlus on their local computers or elsewhere on your network, such as a SharePoint site. Office 365 also provides cloud-based file storage options,
     
