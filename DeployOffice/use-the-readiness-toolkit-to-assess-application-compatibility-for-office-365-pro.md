@@ -38,6 +38,8 @@ The following information is provided to help you use the Readiness Report Creat
 
 - [Getting readiness information for multiple users in an enterprise](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_Enterprise), and using a command-line version of the Readiness Report Creator to scan multiple computers.
 
+- [Use SQL Server to store report results](#use-sql-server-to-store-report-results) and use Power BI to analyze report results to overcome some of the limitations of using Excel, especially for reports with large quantities of data.  
+
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
 
 - [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports) to show you how to conceal senstive information about file paths and names. 
@@ -300,6 +302,21 @@ To create a consolidated Excel report from these various command line scans, you
 Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.
 
 By default, the Readiness Toolkit will spend 2 minutes scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 2 minutes to scan a file.
+
+## Use SQL Server to store report results
+
+Starting with Version 1.2.19098 (which was released on April 9, 2019), you can export report data to any supported version of SQL Server or SQL Server Express. This capability is in response to feedback from many customers who want greater scale and more flexibility when running Readiness Toolkit reports.
+
+You can use either the Readiness Report Creator wizard or the command line. If you're using the Readiness Report Creator, select either **Office documents in a local folder or network share** or **Previous readiness results saved together in a local folder or network share** option. Then, on the **Report settings** page, select **SQL Server report**. Provide the necessary credentials and the name of the database you want to use. If the database doesn't exist, it will be created.
+
+Instead of creating an Excel file, a Power BI report, with the same information, is created for you to review the results. This PowerBI report can be expanded on or changed as desired. It has a file extension of .pbit and is saved to the folder where the Readiness Toolkit is installed, which is usually C:\Program Files (x86)\Microsoft Readiness Toolkit for Office. If prompted in Power BI, select **Direct Query** data access mode.
+
+If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, you can use the following command to create a report from previous readiness results for the Finance department, using a local SQL database named Readiness, and using SQL Server authentication, instead of Windows authentication.
+
+```
+ReadinessReportCreator.exe -sqlimport “C:\Reports\Finance” -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
+```
+
 
 <a name="labels"> </a>
 
