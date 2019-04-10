@@ -26,7 +26,7 @@ Starting with Version 1904, which is expected to be released in Monthly Channel 
 
 ### Use SQL Server with the Readiness Toolkit
 
-The Readiness Toolkit now supports storing report results in a SQL Server database, and that option also provides a Power BI report, instead of an Excel workbook. For more information, see [Use SQL Server to store report results](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#use-sql-server-to-store-report-results).
+The Readiness Toolkit now supports storing report results in a SQL Server database. If you use SQL Server, you also get a Power BI report, instead of an Excel workbook. For more information, see [Use SQL Server to store report results](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#use-sql-server-to-store-report-results).
 
 ## March 2019
 
