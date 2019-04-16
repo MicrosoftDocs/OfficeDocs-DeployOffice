@@ -68,7 +68,7 @@ The following table provides a list of connected experiences that download onlin
 | Insert Online 3D Models     | [Get creative with 3D models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Insert Online Pictures      | [Insert pictures](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | Insert Online Video     | [Insert a video from YouTube or another site](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| Office Help                 | When you choose Help \> Help on the ribbon or hit F1 in an Office app   |
+| Office Help                 | When you choose **Help** > **Help** on the ribbon or hit F1 in an Office app   |
 | Online Shape Search (Visio) | [Find more shapes and stencils](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | PowerPoint QuickStarter     | [Research a topic with PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | Researcher    | [Research your paper easily within Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
