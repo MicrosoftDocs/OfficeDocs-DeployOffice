@@ -22,19 +22,19 @@
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
-## [Manage privacy controls with policy settings](manage-privacy-controls.md?toc=/deployoffice/toc.json)
+## [Manage privacy controls with policy settings](privacy/manage-privacy-controls.md?toc=/deployoffice/toc.json)
 
 ## Diagnostic data
-### [Required diagnostic data](required-diagnostic-data.md?toc=/deployoffice/toc.json)
-### [Optional diagnostic data](optional-diagnostic-data.md?toc=/deployoffice/toc.json)
+### [Required diagnostic data](privacy/required-diagnostic-data.md?toc=/deployoffice/toc.json)
+### [Optional diagnostic data](privacy/optional-diagnostic-data.md?toc=/deployoffice/toc.json)
 ### [Using the Diagnostic Data Viewer](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences
-### [Connected experiences](connected-experiences.md?toc=/deployoffice/toc.json)
-### [Optional connected experiences](optional-connected-experiences.md?toc=/deployoffice/toc.json)
-### [Necessary service data](necessary-service-data.md?toc=/deployoffice/toc.json)
+### [Connected experiences](privacy/connected-experiences.md?toc=/deployoffice/toc.json)
+### [Optional connected experiences](privacy/optional-connected-experiences.md?toc=/deployoffice/toc.json)
+### [Necessary service data](privacy/necessary-service-data.md?toc=/deployoffice/toc.json)
 
-## [Essential services](essential-services.md?toc=/deployoffice/toc.json)
+## [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
 
 # Upgrade 
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
