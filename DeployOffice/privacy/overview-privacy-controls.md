@@ -126,7 +126,7 @@ For more information, see [Necessary service data for Office](necessary-service-
 
 ## Essential services for Office 365 ProPlus
 
-There are also a set of services that are essential to how Office 365 ProPlus functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office 365 ProPlus. Necessary service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.  We’ll be providing more information in the coming weeks about which services are considered essential services and the information that is collected and sent to us.
+There are also a set of services that are essential to how Office 365 ProPlus functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office 365 ProPlus. Necessary service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
 
 For more information, see [Essential services for Office](essential-services.md).
 
