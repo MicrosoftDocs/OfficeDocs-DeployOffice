@@ -28,6 +28,8 @@ To use the MigrateArch attribute, you need the following:
 - At least version 16.0.11615.33602 of the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 - A location that contains all the product and language files for the architecture that you are changing the installation to.
 
+Before starting the migration process to a different bitness, you must have Version 1902 or later installed on the device that you want to change the bitness of. Migration is allowed to the same version, or to any later version, but you must have at least Version 1902 installed on the device before beginning the migration process.
+
 Version 1902, or later, is available in Monthly Channel and Semi-Annual Channel (Targeted). Version 1904 is expected to be available in Semi-Annual Channel in July 2019.
 
 ## Providing a source location to be used with the MigrateArch attribute
