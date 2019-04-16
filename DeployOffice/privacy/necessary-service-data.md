@@ -18,7 +18,7 @@ hideEdit: true
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 Plus and Office 365 Business
+> - Office 365 ProPlus and Office 365 Business
 > - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
 > - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
 
