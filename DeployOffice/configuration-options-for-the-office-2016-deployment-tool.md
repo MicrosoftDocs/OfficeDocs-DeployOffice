@@ -175,7 +175,7 @@ Allowed values:
 </Add>  
 ```
 
-## MigrateArch attribute (part of Add element)
+### MigrateArch attribute (part of Add element)
 
 Optional. If set to TRUE, then your existing installation of Office 365 ProPlus will be changed to the architecture (sometimes referred to as the bitness) that is specified in the [OfficeClientEdition attribute](#officeclientedition-attribute-part-of-add-element). For example, you can use this to change a 32-bit installation of Office 365 ProPlus to a 64-bit installation.
 
