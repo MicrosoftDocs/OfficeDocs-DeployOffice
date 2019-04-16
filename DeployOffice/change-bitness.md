@@ -25,7 +25,7 @@ With MigrateArch, you don’t have to account for all the installed products and
 To use the MigrateArch attribute, you need the following:
 
 - At least Version 1902 of Office 365 ProPlus installed on the device that you want to change the bitness of.
-- At least version 16.0.11608.33604 of the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
+- At least version 16.0.11615.33602 of the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 - A location that contains all the product and language files for the architecture that you are changing the installation to.
 
 Version 1902, or later, is available in Monthly Channel and Semi-Annual Channel (Targeted). Version 1904 is expected to be available in Semi-Annual Channel in July 2019.
