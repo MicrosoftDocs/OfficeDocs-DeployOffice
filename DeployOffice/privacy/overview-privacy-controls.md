@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-localization_priority: Critical
+localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
@@ -22,15 +22,15 @@ hideEdit: true
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
 
 Starting with Version 1904 of Office 365 ProPlus, which is expected to be released in Monthly Channel in late April, we’ll be providing you with new, updated, and improved privacy controls for the following areas:
-- Diagnostic data that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
-- Connected experiences that use cloud-based functionality to provide enhanced Office features to you and your users.
+- ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
+- ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 As part of these changes, there will be new and updated user interface (UI) elements and policy settings.
 
-We’ll be providing more information in the coming weeks about these changes, but we wanted to provide this overview for you now to make you aware of the types of changes that are coming.
-
 > [!IMPORTANT]
 > - These changes will apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
+> - These changes will also apply to the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - Version 1904 is expected to be available in Semi-Annual Channel (Targeted) in September and in Semi-Annual Channel in January 2020.
 > - We will be extending these new and improved privacy controls to additional Office clients, including Teams, Office for Mac, and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
 
 ## Diagnostic data sent from Office 365 ProPlus to Microsoft
@@ -47,7 +47,7 @@ There are three levels of diagnostic data for Office 365 ProPlus client software
 
 - **Neither** No diagnostic data about Office client software running on the user’s device is collected and sent to us. This option, however, significantly limits our ability to detect, diagnose, and remediate problems your users may encounter using Office.
 
-Required diagnostic data could include, for example, information about the version of Office installed on the device or include information that indicates that Office applications are crashing when trying to open documents. Optional diagnostic data could include information about the time it takes to save a document, which could indicate an issue specific to saving to your device. We’ll be providing more information in the coming weeks about required and optional diagnostic data.
+Required diagnostic data could include, for example, information about the version of Office installed on the device or include information that indicates that Office applications are crashing when trying to open documents. Optional diagnostic data could include information about the time it takes to save a document, which could indicate an issue specific to saving to your device.
 
 If you choose to send us optional diagnostic data, required diagnostic data is also included.
 
@@ -58,6 +58,13 @@ Your users won’t be able to change the diagnostic data level for their devices
 This diagnostic data doesn’t include names of users, their email addresses, or the content of their Office files. Our system creates a unique ID that it associates with your user’s diagnostic data. When we receive diagnostic data showing that one of our apps crashed 100 times, this unique ID lets us determine if it was a single user who crashed 100 times or if it was 100 different users who each crashed once. We don’t use this unique ID to identify a specific user.
 
 To see what diagnostic data is being sent to Microsoft, you’ll be able to use the free Diagnostic Data Viewer that you can download and install from the Microsoft Store. An updated version of the Diagnostic Data Viewer that shows Office diagnostic data will be available in April.
+
+For more information, see the following:
+
+- [Required diagnostic data for Office](required-diagnostic-data.md)
+- [Optional diagnostic data for Office](optional-diagnostic-data.md)
+- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Office 365 ProPlus
 
@@ -71,49 +78,57 @@ We understand that you might want to choose which types of connected experiences
 
 For example, you might choose to provide your users with connected experiences that download online content, but not connected experiences that analyze content. If you don’t configure these policy settings, all these connected experiences will be available to your users.
 
-In addition, there will be a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, as well as essential services described below.
+In addition, there will be a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or the users will get an error message when they try to use those connected experiences.
 
 Your users won’t be able to choose whether to turn these connected experiences on or off if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
-## Additional optional connected experiences for Office 365 ProPlus
+For more information, see the following:
 
-In addition to the connected experiences mentioned above that are included with Office 365 ProPlus, there are additional optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
+- [Connected experiences in Office](connected-experiences.md)
+- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 
-These are additional optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Additional optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
+## Optional connected experiences for Office 365 ProPlus
 
-Because these additional optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these additional optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these additional optional connected experiences are available to your users.
+In addition to the connected experiences mentioned above that are included with Office 365 ProPlus, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
 
-Even if you choose to make these additional optional connected experiences available to your users, your users will have the option to turn these additional optional connected experiences off as a group by going to **File** > **Account** > **Account Privacy** > **Manage Settings**. Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+These are optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
-We’ll be providing more information in the coming weeks about additional optional connected services and how to manage them.
+Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
+
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to **File** > **Account** > **Account Privacy** > **Manage Settings**. Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+
+For more information, see the following:
+
+- [Overview of optional connected experiences in Office](optional-connected-experiences.md)
+- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 
 ## Necessary service data for connected experiences
 
-Necessary service data is data that enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected. There are three types of information that are considered as necessary service data.
+Necessary service data is data that enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected. Three types of information make up necessary service data.
 
-- **Customer Content**, which is content you create using Office, such as text typed in a Word document.
-- **Functional Data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
-- **Service Diagnostic Data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
+- **Customer content**, which is content you create using Office, such as text typed in a Word document.
+- **Functional data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
+- **Service diagnostic data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
 
 To help you understand necessary service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
 
 The necessary service data that is sent to Microsoft to enable this connected experience for you could include the following:
 
-- Customer content, such as the text or images you added to your slide.
-- Functional data, such as which slide you are working on and its layout.
-- Service diagnostic data, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
+- *Customer content*, such as the text or images you added to your slide.
+- *Functional data*, such as which slide you are working on and its layout.
+- *Service diagnostic data*, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
 
 If you choose not to provide your users with the category of connected experiences that includes PowerPoint Designer, the feature will be turned off and none of this necessary service data is sent to us.
+
+For more information, see [Necessary service data for Office](necessary-service-data.md).
 
 ## Essential services for Office 365 ProPlus
 
 There are also a set of services that are essential to how Office 365 ProPlus functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office 365 ProPlus. Necessary service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.  We’ll be providing more information in the coming weeks about which services are considered essential services and the information that is collected and sent to us.
 
-## Additional information about privacy controls for Office 365 ProPlus
-
-As mentioned above, we’ll be providing more information in the coming weeks to help you better understand diagnostic data, connected experiences, and how you can manage these new privacy controls coming to Office 365 ProPlus. As that information is provided, we’ll be updating this article with links to that additional information.
+For more information, see [Essential services for Office](essential-services.md).
 
 ## Related topics
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
