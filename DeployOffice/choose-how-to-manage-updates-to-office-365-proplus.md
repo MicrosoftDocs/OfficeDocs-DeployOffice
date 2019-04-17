@@ -49,9 +49,6 @@ You can configure Office 365 ProPlus to get updates automatically from a locatio
   
 This is a good option if you want more control over the version of Office 365 ProPlus that users have installed. For example, even if the June version of Office 365 ProPlus is available, you might want your users to continue using the May version. You might want to do this because you want to test to make sure that your line-of-business applications work with the June version.
   
-> [!TIP]
-> For an example of how to set up a group to test updates, [read this blog post about how to manage updates for Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=507547). 
-  
 You'll have to use the Office Deployment Tool to [download updated versions of Office 365 ProPlus from the Internet](overview-of-the-office-2016-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
   
 ## Apply updates by installing an updated version of Office 365 ProPlus
