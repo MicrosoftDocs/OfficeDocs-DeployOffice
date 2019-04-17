@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an exsiting installation of Office 365 ProPlus, such as from 32-bit to 64-bit."
+description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an existing installation of Office 365 ProPlus, such as from 32-bit to 64-bit."
 ---
 
 # Change an Office 365 ProPlus installation from 32-bit to 64-bit

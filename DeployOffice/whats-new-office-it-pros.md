@@ -24,7 +24,7 @@ Microsoft is committed to providing you with the information and controls you ne
 
 Starting with Version 1904, which is expected to be released in Monthly Channel in late April, we’ll be providing you with new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
 
-***Updated on April 16, 2019***  More content about these privacy controls has been published. See [Privacy for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/privacy). 
+***Updated on April 16, 2019***  More information about these privacy controls has been published. See [Privacy for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/privacy). 
 
 ### Use SQL Server with the Readiness Toolkit
 
