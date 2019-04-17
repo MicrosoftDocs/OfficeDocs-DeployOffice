@@ -334,6 +334,11 @@
         "source_path": "DeployOffice/office2016/gvlks-for-office-2016.md",
         "redirect_url": "https://docs.microsoft.com/DeployOffice/vlactivation/gvlks",
         "redirect_document_id": true
-    }    
+    },
+    {
+        "source_path": "DeployOffice/manage-controller-services-office-365-proplus.md",
+        "redirect_url": "https://docs.microsoft.com/DeployOffice/privacy/optional-connected-experiences",
+        "redirect_document_id": true
+    }        
    ] 
 }
