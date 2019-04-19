@@ -71,6 +71,7 @@ If the user is a member of multiple AAD groups with conflicting policy settings,
 Also, policy settings implemented by using Office cloud policy service take precedence over policy settings implemented by using Group Policy on Windows Server, as well as taking precedence over preference settings or locally applied policy settings.
 
 ## Additional information about the Office cloud policy service
+
 - Only user-based policy settings are available. Computer-based policy settings aren’t available.
 - Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available currently. Work is being done to make more user-based policy settings available.
 - As new user-based policy settings are made available for Office, the Office cloud policy service will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
@@ -79,11 +80,11 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - A policy configuration can’t be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
 
-## Troubleshooting
+## Troubleshooting tips
 
-If the expected policies are not being applied, try the following:
-
-- Make sure the user that is signed into Office 365 ProPlus, has activated it, and has a valid license
-- Check which security groups the user is a member of and verify the priority of the policies in OCPS.  If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect. 
-- Check if the user signed in after someone who also had policies signed out during the same Windows session.  
+If the expected policies haven't been correctly applied to a user's device, try the following:
+- Make sure the user is signed into Office 365 ProPlus, has activated it, and has a valid license.
+- Make sure the user is part of the appropriate security group. 
+- Check the priority of the policy configurations in OCPS.  If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect. 
+- In some cases, policies might not be applied correctly if two users with different policies sign into Office 365 on the same device and during the same Windows session.  
 
