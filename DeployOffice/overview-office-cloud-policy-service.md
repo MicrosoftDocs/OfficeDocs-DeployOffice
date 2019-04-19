@@ -79,7 +79,7 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - A policy configuration can’t be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
 
-## Troubleshooting [add]
+## Troubleshooting
 
 If the expected policies are not being applied, try the following:
 
