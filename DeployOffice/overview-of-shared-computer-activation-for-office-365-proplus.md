@@ -42,7 +42,7 @@ If you have an Office 365 plan that includes Office 365 ProPlus, you can use sha
 > [!NOTE]
 > Shared computer activation is also available for the following:
 > - Subscription versions of Project and Visio. For example, if you have the Project Online Professional plan or Visio Online Plan 2.
-> - Office that comes with a Microsoft 365 Business subscription. But, you can't use Group Policy to configure shared computer activation.
+> - Microsoft 365 Business subscribers, whose version of Office is Office 365 Business. But, Microsoft 365 Business subscribers won't be able to use Group Policy to enable shared computer activation, because Office 365 Business doesn't support the use of Group Policy.
 > 
 > Shared computer activation isn't available for Office for Mac.
 
