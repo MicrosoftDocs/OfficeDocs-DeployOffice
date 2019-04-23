@@ -18,6 +18,16 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## April 2019
 
+### General availability of Office cloud policy service
+The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
+
+For more information, see [Overview of the Office cloud policy service for Office 365 ProPlus](overview-office-cloud-policy-service.md).
+
+### Preview of Security Policy Advisor
+Security Policy Advisor is now available for public preview. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
+
+For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
+
 ### Privacy controls for Office 365 ProPlus
 
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
