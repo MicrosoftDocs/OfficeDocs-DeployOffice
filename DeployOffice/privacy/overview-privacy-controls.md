@@ -57,7 +57,7 @@ Your users won’t be able to change the diagnostic data level for their devices
 
 This diagnostic data doesn’t include names of users, their email addresses, or the content of their Office files. Our system creates a unique ID that it associates with your user’s diagnostic data. When we receive diagnostic data showing that one of our apps crashed 100 times, this unique ID lets us determine if it was a single user who crashed 100 times or if it was 100 different users who each crashed once. We don’t use this unique ID to identify a specific user.
 
-To see what diagnostic data is being sent to Microsoft, you’ll be able to use the free Diagnostic Data Viewer that you can download and install from the Microsoft Store. An updated version of the Diagnostic Data Viewer that shows Office diagnostic data will be available in April.
+To see what diagnostic data is being sent to Microsoft, you can use the Diagnostic Data Viewer, which you can download and install for free from the Microsoft Store.
 
 For more information, see the following:
 
