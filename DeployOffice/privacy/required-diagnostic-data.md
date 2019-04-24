@@ -890,51 +890,6 @@ The following fields are collected:
 
   - **TrustedDocument** - was the document trusted
 
-#### Office.Security.FileBlock.FileBlockInformation
-
-Tracks fileblock information regarding if fileblock was enforced and based on what settings. Used by Security Policy Advisor to monitor health of an applied security policy to determine if security or productivity of end users in an enterprise is impacted.
-
-The following fields are collected:
-
-  - **FileBlockSetting** - current file block setting in registry
-
-  - **FileTypeTelemetryId**, - what file type was the user trying to open
-
-  - **IsBlocked** - was it blocked by file block settings
-
-  - **IsTrustedLocation** - was the file opened from a trusted location
-
-  - **OoxmlClsid** - if there is a converter for this document type then this represents the class identifier that uniquely identifies that converter
-
-#### Office.Security.Macro.Enabled
-
-Tracks when a user enables macros (i.e. clicks "Enable Macros") in Office documents. Used by Security Policy Advisor to assess the use of Macros in Office documents and recommend security policies that restrict Macro execution and raise security posture.
-
-The following fields are collected:
-
-  - **IsFromInternet** - was the document from internet
-
-  - **VBAMacroAntiVirusHash** - antivirus hash of the macro
-
-  - **VBAMacroAntiVirusHRESULT** - result of the antivirus assessment
-
-#### Office.Security.Macro.Encountered
-
-Tracks when a user opens a document with a macro and is prompted to "Enabled Macros". Used by Security Policy Advisor to assess the use of Macros in Office documents and recommend security policies that restrict Macro execution and raise security posture.
-
-The following fields are collected:
-
-  - **IsFromInternet** - is the document from internet
-
-  - **IsTrusted** - is the document opened from trusted location
-
-  - **TrustCenterSetting** - current trust center settings
-
-  - **VBAMacroAntiVirusHash** - antivirus hash of the macro
-
-  - **VBAMacroAntiVirusHRESULT** - result of the antivirus assessment
-
-  - **TrustRecordFullRightsCount** – Count of trust records
 
 #### Office.Security.Macro.InternetVBABlockEnabled
 
@@ -982,49 +937,6 @@ The following fields are collected:
 
   - **PromptType** - what type of prompt was shown
 
-#### Office.Security.OCX.NonTrustedEncounter
-
-Tracks when a user opens an untrusted document with an ActiveX control. Used by Security Policy Advisor to assess the use of ActiveX controls embedded in Office documents and recommend security policies that restrict ActiveX controls and raise security posture. Used to broadly assess use of ActiveX controls embedded in Office documents to drive security mitigations (e.g. Killbitting controls) in response to security incidents.
-
-The following fields are collected:
-
-  - **CLSID** - the class identifier of the ActiveX control
-
-  - **DocID** - unique representation of the document
-
-  - **IsCategorized** - was the control categorized to run in office
-
-  - **IsEmbeddable** - is the ActiveX control embeddable
-
-  - **IsFromInternet** - was it opened from internet
-
-  - **IsSafeForInit** - is the active control considered safe for initialization
-
-  - **IsSecureReaderMode** - was the document opened in secure reader mode
-
-  - **OcxTrustCenterSettings** - what were the trust center settings
-
-  - **Permission** - what did Trust Center decide to do with the control
-
-#### Office.Security.OCX.TrustedEncounter
-
-Tracks when a user opens a trusted document with an ActiveX control. Used by Security Policy Advisor to assess the use of ActiveX controls embedded in Office documents and recommend security policies that restrict ActiveX controls and raise security posture. Used to broadly assess use of ActiveX controls embedded in Office documents to drive security mitigations (e.g. Killbitting controls) in response to security incidents.
-
-The following fields are collected:
-
-  - **CLSID** - the class identifier of the ActiveX control
-
-  - **DocID** - unique representation of the document
-
-  - **IsCategorized** - was the control categorized to run in office
-
-  - **IsEmbeddable** - is the ActiveX control embeddable
-
-  - **IsFromInternet** - was it opened from internet
-
-  - **IsSecureReaderMode** - was the document opened in secure reader mode
-
-  - **OcxTrustCenterSettings** - what were the trust center settings
 
 #### Office.Security.OCX.UFIPrompt
 
@@ -1038,25 +950,6 @@ The following fields are collected:
 
   - **OcxTrustCenterSettings** - what is the current ActiveX setting
 
-#### Office.Security.ProtectionService.CloudSecurityPolicyClientError
-
-Tracks errors that happen when applying security policies on a client. Used to diagnose conditions that lead to failures in applying SPA policies.
-
-The following fields are collected:
-
-  - **ErrorTag** - Error code
-
-#### Office.Security.ProtectionService.UserDecision
-
-Tracks when a user reports impact or decides to override a security policy deployed by administrator. Used by Security Policy Advisor to monitor health of an applied security policy to determine if security or productivity of end users in an enterprise is impacted.
-
-The following fields are collected:
-
-  - **DecisionType** - what decision did the use make
-
-  - **Feature** - what feature did they make the decision for
-
-  - **Setting** - what setting did they make the decision for
 
 #### Office.Security.SecureReaderHost.OpenInOSR
 
