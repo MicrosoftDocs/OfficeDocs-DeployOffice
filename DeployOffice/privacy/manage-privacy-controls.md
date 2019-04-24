@@ -37,9 +37,6 @@ The following are the five new policy settings:
 
 These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
-> [!NOTE]
-> Temporarily, the name and help text for these policy settings are only available in English. They will be available in the usual set of languages later this week.
-
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
 These new policy settings also apply to desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2. They also apply to Office 365 Business.
