@@ -20,6 +20,8 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
 
 - [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md)
 
+- [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
+
 - [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) 
 
 - [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md)
