@@ -83,12 +83,12 @@ The Office installation packages are represented as applications in Configuratio
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, click on **Go to the Office Customization Tool**, and configure the desired settings for your Office 365 installation. We recommend the following options:
-  - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those products.
-  - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
-  - **Languages:** Include all the language packs you plan to deploy. 
-  - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. 
-  - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
-  - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+   - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those products.
+   - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+   - **Languages:** Include all the language packs you plan to deploy. 
+   - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. 
+   - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
+   - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 5. When you complete the configuration, click **Submit**. 
 6. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
