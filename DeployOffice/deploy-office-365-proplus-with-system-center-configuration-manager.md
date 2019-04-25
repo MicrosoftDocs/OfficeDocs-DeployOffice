@@ -83,22 +83,22 @@ The Office installation packages are represented as applications in Configuratio
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, click on **Go to the Office Customization Tool**, and configure the desired settings for your Office 365 installation. We recommend the following options:
- - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those products.
- - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
- - **Languages:** Include all the language packs you plan to deploy. 
- - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. 
- - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
- - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
-7. When you complete the configuration, click **Submit**. 
-8. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
+  - **Software:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those products.
+  - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+  - **Languages:** Include all the language packs you plan to deploy. 
+  - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. 
+  - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
+  - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+5. When you complete the configuration, click **Submit**. 
+6. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
  > [!NOTE] 
  > If you choose not to deploy the package in the wizard, you can deploy it later. To find the application, go to **Software Library** > **Application Management** > **Applications**.  For details on deploying an application, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application). 
 
-9. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
-10. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
-11. Complete the wizard.
-12. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
+7. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
+8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
+9. Complete the wizard.
+10. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
 
 After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 
