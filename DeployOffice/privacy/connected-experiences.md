@@ -134,4 +134,5 @@ Even if you decide to turn off these connected experiences, certain Office funct
 
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
+- [Required service data for Office](required-service-data.md)
 - [Essential services for Office](essential-services.md)
