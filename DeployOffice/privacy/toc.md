@@ -10,6 +10,6 @@
 ## Connected experiences
 ### [Connected experiences](connected-experiences.md)
 ### [Optional connected experiences](optional-connected-experiences.md)
-### [Necessary service data](necessary-service-data.md)
+### [Required service data](required-service-data.md)
 
 ## [Essential services](essential-services.md)

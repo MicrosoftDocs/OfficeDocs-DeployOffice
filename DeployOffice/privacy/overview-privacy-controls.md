@@ -104,29 +104,29 @@ For more information, see the following:
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 
-## Necessary service data for connected experiences
+## Required service data for connected experiences
 
-Necessary service data is data that enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected. Three types of information make up necessary service data.
+Required service data is data that enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected. Three types of information make up required service data.
 
 - **Customer content**, which is content you create using Office, such as text typed in a Word document.
 - **Functional data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
 - **Service diagnostic data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
 
-To help you understand necessary service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
+To help you understand required service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
 
-The necessary service data that is sent to Microsoft to enable this connected experience for you could include the following:
+The required service data that is sent to Microsoft to enable this connected experience for you could include the following:
 
 - *Customer content*, such as the text or images you added to your slide.
 - *Functional data*, such as which slide you are working on and its layout.
 - *Service diagnostic data*, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
 
-If you choose not to provide your users with the category of connected experiences that includes PowerPoint Designer, the feature will be turned off and none of this necessary service data is sent to us.
+If you choose not to provide your users with the category of connected experiences that includes PowerPoint Designer, the feature will be turned off and none of this required service data is sent to us.
 
-For more information, see [Necessary service data for Office](necessary-service-data.md).
+For more information, see [Required service data for Office](required-service-data.md).
 
 ## Essential services for Office 365 ProPlus
 
-There are also a set of services that are essential to how Office 365 ProPlus functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office 365 ProPlus. Necessary service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
+There are also a set of services that are essential to how Office 365 ProPlus functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office 365 ProPlus. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
 
 For more information, see [Essential services for Office](essential-services.md).
 
