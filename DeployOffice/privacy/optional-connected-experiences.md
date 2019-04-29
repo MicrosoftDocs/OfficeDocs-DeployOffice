@@ -87,4 +87,4 @@ When you use any of the optional cloud-backed services described in this article
 ## Related topics
 
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Necessary service data for Office](necessary-service-data.md)
+- [Required service data for Office](required-service-data.md)

@@ -32,7 +32,7 @@
 ## Connected experiences
 ### [Connected experiences](privacy/connected-experiences.md?toc=/deployoffice/toc.json)
 ### [Optional connected experiences](privacy/optional-connected-experiences.md?toc=/deployoffice/toc.json)
-### [Necessary service data](privacy/necessary-service-data.md?toc=/deployoffice/toc.json)
+### [Required service data](privacy/required-service-data.md?toc=/deployoffice/toc.json)
 
 ## [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
 

@@ -1,5 +1,5 @@
 ---
-title: "Necessary service data for Office"
+title: "Required service data for Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,10 +11,10 @@ ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with an overview of necessary service data that is collected about connected experiences in Office."
+description: "Provides Office admins with an overview of required service data that is collected about connected experiences in Office."
 hideEdit: true
 ---
-# Necessary service data for Office 
+# Required service data for Office 
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
@@ -24,29 +24,29 @@ hideEdit: true
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
 
-Necessary service data is crucial because it enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected for our customers. Three types of information make up necessary service data.
+Required service data is crucial because it enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected for our customers. Three types of information make up required service data.
 
 - **Customer content**, which is content you create using Office, such as text typed in a Word document, and is used in conjunction with the connected experience.
 - **Functional data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
 - **Service diagnostic data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
 
-## Example of necessary service data for a connected experience
+## Example of required service data for a connected experience
 
-To help you understand necessary service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
+To help you understand required service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
 
-The necessary service data that is sent to Microsoft to enable this connected experience for you could include the following:
+The required service data that is sent to Microsoft to enable this connected experience for you could include the following:
 
 - *Customer content*, such as the text or images you added to your slide.
 - *Functional data*, such as which slide you are working on and its layout.
 - *Service diagnostic data*, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
 
-## View and manage necessary service data
+## View and manage required service data
 
 You can see service diagnostic data by using the Diagnostic Data Viewer. For more information, see [Examples of events for service diagnostic data](#examples-of-events-for-service-diagnostic-data).
 
-We give you the ability to choose which types of connected experiences you want to use in Office, which then determines what necessary service data is sent to us. PowerPoint Designer, for example, is one of several connected experiences that analyzes your content. If you choose to turn off connected experience that analyze content, no necessary service data about PowerPoint Designer is sent to us because PowerPoint Designer won’t be available to use.
+We give you the ability to choose which types of connected experiences you want to use in Office, which then determines what required service data is sent to us. PowerPoint Designer, for example, is one of several connected experiences that analyzes your content. If you choose to turn off connected experience that analyze content, no required service data about PowerPoint Designer is sent to us because PowerPoint Designer won’t be available to use.
 
-Necessary service data is also collected and sent to Microsoft for the essential services of Office, such as the licensing service that confirms that you are properly licensed to use Office. This data for essential services is sent regardless of any other privacy-related settings that you have configured.
+Required service data is also collected and sent to Microsoft for the essential services of Office, such as the licensing service that confirms that you are properly licensed to use Office. This data for essential services is sent regardless of any other privacy-related settings that you have configured.
 
 For more information, see the following:
 

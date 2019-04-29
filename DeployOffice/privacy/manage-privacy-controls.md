@@ -81,7 +81,7 @@ We understand that you might want to choose which types of connected experiences
 
 If you don't configure these policy settings, all connected experiences are available. This gives your users all the features and functionality accessible through Office 365 ProPlus. But we understand that you might need to turn off some or all of these connected experiences to meet certain requirements of your organization.
 
-If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or users will get an error message when they try to use those connected experiences. In that case, no [necessary service data](necessary-service-data.md) for those connected experiences will be sent to Microsoft.
+If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or users will get an error message when they try to use those connected experiences. In that case, no [required service data](required-service-data.md) for those connected experiences will be sent to Microsoft.
 
 Your users won’t be able to choose whether to turn these connected experiences included with Office 365 ProPlus on or off if they are signed into Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
