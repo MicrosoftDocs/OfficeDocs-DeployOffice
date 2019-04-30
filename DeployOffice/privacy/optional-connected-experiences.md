@@ -63,7 +63,7 @@ The [Weather Bar](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc
 
 When you go to **Help** > **Feedback** and provide feedback or elect to respond to one of our “We’d love your feedback” survey requests when using an Office 365 ProPlus application, the information you provide is sent to Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/) apply. When you submit feedback using the Feedback button, you may optionally submit your email address and/or a screenshot of your screen. This is not required information.  
 
-#### Outlook is a an exception
+#### Outlook is an exception
 
 **Help** > **Feedback** in Outlook is different than **Help** > **Feedback** in other Office 365 ProPlus applications. When you submit feedback using **Help** > **Feedback** in Outlook, you allow Microsoft to collect Outlook logs to address potential performance issues. These logs may contain personal information such as your name, email address, contents of your email or search terms. This service is provided to you through your organization’s license with Microsoft. As a result, if you choose to submit feedback via the Feedback button in Outlook, you do not need to enter into a separate agreement with Microsoft and the privacy setting described in this article does not apply.
 
