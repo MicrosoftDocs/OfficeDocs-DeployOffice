@@ -2455,7 +2455,7 @@ This event collects no fields.
 
 ### Office.Licensing.EnforceSignInQualified 
 
-This is the signal that tells us if the experiment that we are running to enforce user sign as part of licensing is successful . This is critical in detecting the success or failure of the experiment that is forcing the users to login which is a required step for the modern licensing stack. Failure to sign in will result in the users being able to use the app
+This is the signal that tells us if the experiment that we are running to enforce user sign as part of licensing is successful. This is critical in detecting the success or failure of the experiment that is forcing the users to login which is a required step for the modern licensing stack. Failure to sign in will result in the users not being able to use the app.
 
 The following fields are collected:
 
