@@ -181,6 +181,30 @@ Optional. If set to TRUE, then your existing installation of Office 365 ProPlus 
 
 For more information about using MigrateArch, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
 
+### OfficeMgmtCOM attribute (part of Add element)
+
+Optional. For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Office 365 ProPlus is automatically disabled for client devices.
+
+For more information, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+
+Allowed values: 
+
+- OfficeMgmtCOM="True"
+- OfficeMgmtCOM="False"
+
+#### Example 
+
+```xml
+<Configuration>
+  <Add OfficeClientEdition="64" Channel="Monthly" OfficeMgmtCOM="True" >
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+    </Product>
+  </Add>  
+  <Updates Enabled="True"  /> 
+</Configuration>
+```
+
 ## Product element
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
