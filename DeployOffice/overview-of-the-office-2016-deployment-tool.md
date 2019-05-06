@@ -248,7 +248,7 @@ You can apply new application settings to client computers that already have Off
   
  `setup.exe /customize installappsettings.xml`
   
-You must run the executable from the client computer on which you want to apply the app settings and you must have local administrator permissions on that computer. Note that when using customize mode, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
+You must run the executable from the client computer on which you want to apply the app settings and you must have local administrator permissions on that computer. Note that when using customize mode, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application settings when Office apps are running, the settings will be applied when Office is next restarted. 
 
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>
