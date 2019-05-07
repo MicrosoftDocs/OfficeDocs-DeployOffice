@@ -187,3 +187,18 @@ The following are new elements added to the Office UI:
 - Under **File** > **Account**, users will see a new choice for **Account Privacy** > **Manage Settings**. It’s under **Manage Settings** where users can turn off optional connected experiences, if you have given them that option.
 
 - Under **File** > **Options** > **Trust Center** > **Trust Center Settings…** > **Privacy Options,** there is an option to enable the use of the [Diagnostic Data Viewer](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855) on the device.
+
+ 
+## Control privacy settings by editing the registry
+
+Some admins prefer to manage settings by changing settings in the registry, for example by using a script, instead of by using Group Policy or the Office cloud policy service. In those cases, you can use the information in the following table to configure the registry settings accordingly for the new policy settings.
+
+
+|**Policy setting** |**Registry path**  |**Name**  |**Values**  |
+|---------|---------|---------|---------|
+|Configure the level of client software diagnostic data sent by Office to Microsoft  | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\Common\ClientTelemetry  | SendTelemetry |1 = Required <br/> 2 = Optional <br/> 3 = Neither|
+|Allow the use of connected experiences in Office that analyze content  | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy  | UserContentDisabled | 1 = Enabled <br/> 2 = Disabled         |
+|Allow the use of connected experiences in Office that download online content  | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy  | DownloadContentDisabled | 1 = Enabled <br/> 2 = Disabled        |
+|Allow the use of additional optional connected experiences in Office   | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy | DisconnectedState |1 = Enabled <br/> 2 = Disabled        |
+|Allow the use of connected experiences in Office | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy |ControllerConnectedServicesEnabled  | 1 = Enabled <br/> 2 = Disabled        |
+
