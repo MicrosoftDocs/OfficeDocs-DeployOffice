@@ -194,11 +194,22 @@ The following are new elements added to the Office UI:
 Some admins prefer to manage settings by changing settings in the registry, for example by using a script, instead of by using Group Policy or the Office cloud policy service. In those cases, you can use the information in the following table to configure the registry settings accordingly for the new policy settings.
 
 
-|**Policy setting** |**Registry path**  |**Name**  |**Values**  |
+|**Policy setting** |**Registry path** <sup>1</sup>  |**Name**  |**Values**<sup>2</sup>  |
 |---------|---------|---------|---------|
-|Configure the level of client software diagnostic data sent by Office to Microsoft  | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\Common\ClientTelemetry  | SendTelemetry |1 = Required <br/> 2 = Optional <br/> 3 = Neither|
-|Allow the use of connected experiences in Office that analyze content  | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy  | UserContentDisabled | 1 = Enabled <br/> 2 = Disabled         |
-|Allow the use of connected experiences in Office that download online content  | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy  | DownloadContentDisabled | 1 = Enabled <br/> 2 = Disabled        |
-|Allow the use of additional optional connected experiences in Office   | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy | DisconnectedState |1 = Enabled <br/> 2 = Disabled        |
-|Allow the use of connected experiences in Office | HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Common\Privacy |ControllerConnectedServicesEnabled  | 1 = Enabled <br/> 2 = Disabled        |
+|Configure the level of client software diagnostic data sent by Office to Microsoft  | \Common\ClientTelemetry  | SendTelemetry |1 = Required <br/> 2 = Optional <br/> 3 = Neither|
+|Allow the use of connected experiences in Office that analyze content  | \16.0\Common\Privacy  | UserContentDisabled | 1 = Enabled <br/> 2 = Disabled         |
+|Allow the use of connected experiences in Office that download online content  | \16.0\Common\Privacy  | DownloadContentDisabled | 1 = Enabled <br/> 2 = Disabled        |
+|Allow the use of additional optional connected experiences in Office   | \16.0\Common\Privacy | DisconnectedState |1 = Enabled <br/> 2 = Disabled        |
+|Allow the use of connected experiences in Office | \16.0\Common\Privacy |ControllerConnectedServicesEnabled  | 1 = Enabled <br/> 2 = Disabled        |
 
+<sup>1</sup> All these registry paths begin with HKEY_CURRENT_USER\Software\Policies\Microsoft\Office.
+<sup>2</sup> All values are DWORD.
+
+To create a .reg file with the settings you prefer, open Notepad and put in the appropriate settings. For example, if you want to set diagnostic data to Optional and want to disable connected experiences that analyze content, you would put the following in the .reg file.
+
+```
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\common\clienttelemetry]
+"sendtelemetry"=dword:00000002
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]
+"usercontentdisabled"=dword:00000002
+```
