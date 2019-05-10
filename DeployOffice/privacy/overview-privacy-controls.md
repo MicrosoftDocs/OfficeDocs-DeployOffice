@@ -21,15 +21,15 @@ hideEdit: true
 
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
 
-Starting with Version 1904 of Office 365 ProPlus, which is expected to be released in Monthly Channel in late April, we’ll be providing you with new, updated, and improved privacy controls for the following areas:
+Starting with Version 1904 of Office 365 ProPlus (which was released in Monthly Channel on April 29, 2019), we are providing you with new, updated, and improved privacy controls for the following areas:
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
-As part of these changes, there will be new and updated user interface (UI) elements and policy settings.
+As part of these changes, there are new and updated user interface (UI) elements and policy settings.
 
 > [!IMPORTANT]
-> - These changes will apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
-> - These changes will also apply to the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - These changes apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
+> - These changes also apply to the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
 > - Version 1904 is expected to be available in Semi-Annual Channel (Targeted) in September and in Semi-Annual Channel in January 2020.
 > - We will be extending these new and improved privacy controls to additional Office clients, including Teams, Office for Mac, and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
 
@@ -78,7 +78,7 @@ We understand that you might want to choose which types of connected experiences
 
 For example, you might choose to provide your users with connected experiences that download online content, but not connected experiences that analyze content. If you don’t configure these policy settings, all these connected experiences will be available to your users.
 
-In addition, there will be a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
+In addition, there is a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or the users will get an error message when they try to use those connected experiences.
 
