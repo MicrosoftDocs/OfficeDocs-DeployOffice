@@ -73,11 +73,9 @@ The following scenario shows how you can use digital signatures on documents in 
     
 This example demonstrates the ability to add multiple signatures to a single Office 2016 document. In addition to the digital signature, the signer of the document can add a graphic of her actual signature, or use a Tablet PC to actually write a signature into the signature line in the document.
   
-
 <a name="compatissues"> </a>
 
 ### Compatibility issues with Office documents prior to Office 2016
-
 
 Office 2016, just as Office 2013, Office 2010 and Office 2007, uses the XML-DSig format for digital signatures. In addition, Office 2016 has support for XAdES (XML Advanced Electronic Signatures). XAdES is a set of tiered extensions to XML-DSig, the levels of which build upon the previous levels to provide more reliable digital signatures. For more information about the levels of XAdES that are supported in Office 2016, see [Planning digital signature levels in Office 2016 documents](use-digital-signatures-with-office.md#planlevels) later in this article. For more information about the details of XAdES, see the specification for [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631).
   
@@ -121,7 +119,6 @@ There are three kinds of commercial certificates:
 - **Class 3** Class 3 certificates are issued to people, organizations, servers, devices, and administrators for CAs and root authorities (RAs). Class 3 individual certificates are appropriate for digital signatures, encryption, and access control in transactions where proof of identity must be assured. Class 3 server certificates are appropriate for server authentication; message, software, and content integrity; and confidentiality encryption. 
     
 For more information about commercial certificates, see [Find digital ID or digital signature services](https://go.microsoft.com/fwlink/p/?LinkId=267581).
-  
 
 <a name="planlevels"> </a>
 
@@ -147,7 +144,7 @@ The XAdES digital signature levels, which are based on the XML-DSig digital sign
 
 When users add a time stamp to a digital signature, they help to extend the lifespan of that digital signature. For example, if a revoked certificate has previously been used to create a digital signature, the digital signature contains a time stamp from a trusted time stamp server, and the time stamp occurred before the revocation of the certificate, the digital signature can still be considered valid. To use the time stamp functionality with digital signatures, you must complete the following tasks:
   
-- Set up a time stamp server that is compliant with RFC 3161
+- Set up a time stamp server that is compliant with RFC 3161.
     
 - Use the Group Policy setting, **Specify server name**, to enter the location of the time stamp server on the network.
     
