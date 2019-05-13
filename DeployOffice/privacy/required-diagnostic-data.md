@@ -4116,7 +4116,7 @@ The following fields are collected:
 
   - **Data\_FCreateNewFromTemplate -** Is this new document from templates
 
-  - **Data_FErrorAfterDocWinCreation:boolean-**  Did any error orexception happen after the document window is created.
+  - **Data_FErrorAfterDocWinCreation:boolean-**  Did any error or exception happen after the document window is created.
 
   - **Data\_FileUrlLocation -** Predefined set of values of where document is stored (NetworkShare, LocalDrive, ServerOther etc.)
 
