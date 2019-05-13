@@ -5239,14 +5239,23 @@ Activity tracking the usage and performance of the Office Insider dialog.
 The following fields are collected:
 
   - **Data_AcceptedContactMeNew** - When opting into an Insider level, and when the user's choice was recorded successfully, indicates whether the user accepted to be contacted by Microsoft.
+
   - **Data_DialogChoice** = Unused
+  
   - **Data_DialogId** = Unused
+  
   - **Data_Event** - Unused
+  
   - **Data_EventInfo** - Unused
+  
   - **Data_InsiderLevel** - The Insider Level when the dialog is first shown to the user.
+  
   - **Data_InsiderLevelNew** - The new Insider level selected by the user.
+  
   - **Data_IsInternalUser** - Indicates whether the application runs under the credentials of an @microsoft.com account.
+  
   - **Data_IsInternalUserInit** - Indicates whether the code could determine whether the application runs under the credentials of an @microsoft.com account.
+  
   - **Data_OpenNewsletterWebpage** - When the Office Insider Newsletter Subscription feature is enabled, and the user switches to an Insider level from Production, indicates whether browser navigation to the Office Insider Newsletter Subscription link was triggered.
 
 #### Office.Visio.Shared.VisioFileRender
