@@ -14,13 +14,17 @@ description: "Provides Office admins with an overview of how Microsoft Teams is 
 
 # Deploy Microsoft Teams with Office 365 ProPlus
 
-In the past, Microsoft Teams was a separate installation from Office 365 ProPlus. But, starting in March 2019 with Version 1902, Teams is now installed by default for ***new*** installations of Office 365 ProPlus. If Teams is already installed on the device, no changes are made to that installation of Teams.
+In the past, Microsoft Teams was a separate installation from Office 365 ProPlus. But, starting in March 2019 with Version 1902, Teams is included as part of ***new*** installations of Office 365 ProPlus. If Teams is already installed on the device, no changes are made to that installation of Teams.
 
-If Skype for Business is already installed, Skype for Business won’t be removed and will continue to function as before. Also, Skype for Business will continue to be installed by default when you install Office 365 ProPlus.
+If Skype for Business is already installed on the device, Skype for Business won’t be removed and will continue to function as before. Also, Skype for Business will continue to be installed with new installations of Office 365 ProPlus, unless you configure your installation to exclude it.
+
+> [!IMPORTANT]
+> Starting in the second half of June 2019, if you're using Monthly Channel, then Teams will be added to existing installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version. For more information, see [What about existing installations of Office?](#what-about-existing-installations-of-office).
+
 
 ## When will Microsoft Teams start being installed by default with Office 365 ProPlus?
 
-The date when Teams starts being installed by default with **new** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
+The date when Teams starts being installed by default with **new** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule, which is subject to change.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
@@ -74,41 +78,35 @@ The guidance above in this section also applies to Office 365 Business.
 
 ## What about existing installations of Office?
 
-If Office is already installed on a device running Windows, and you initiate any other sort of installation, such as installing additional languages or installing a subscription version of Project or Visio, then Teams will get installed by default as part of that installation process, if the update channel and version you're using supports the default installation of Teams.
 
-To exclude Teams from being installed in these cases, use the [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) in your configuration.xml file, as shown in the following examples.
+The date when Teams starts being added to **existing** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
 
-The following example shows how to add Project Online Desktop Client to an existing installation of Office 365 ProPlus without installing Teams.
+| **Update channel** |**Version** |**Date**  |
+|---------|---------|---------|
+|Monthly Channel |Version 1905 | *Late June 2019*  |
+|Semi-Annual Channel (Targeted)| *To be determined*  | *September 2019*  |
+|Semi-Annual Channel| *To be determined*  |*January 2020* |
+
+For example, if you're using Version 1904 in Monthly Channel and you update to Version 1905 in July, Teams will be installed on the device as part of the update to Version 1905.
+
+If you don't want Teams to be added to **existing** installations of Office 365 ProPlus when you update to a new version, use the Office Deployment Tool and the following configuration.xml.
 
 ```xml
 <Configuration>
-   <Add OfficeClientEdition="64" Channel="Monthly">
+   <Add Version="MatchInstalled">
       <Product ID="O365ProPlusRetail">
+       <Language ID="MatchInstalled" TargetProduct="All" />
        <ExcludeApp ID="Teams" />
-      </Product>
-      <Product ID="ProjectProRetail">
-       <Language ID="en-us" />
       </Product>
    </Add>
 </Configuration>
 ```
 
-The following example shows how to add a language pack to an existing installation of Office 365 ProPlus without installing Teams.
+> [!IMPORTANT]
+> - Be sure you're using the most current version of the Office Deployment Tool available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
+> - If your existing installation of Office 365 ProPlus has excluded other apps, such as Access, you need to include a line in your configuration.xmi file for each of those excluded apps. Otherwise, those apps will be installed on the device.
+> - We are working on a policy setting that you can use with Group Policy or Office configuration policy service to make it easier to exclude Teams from being installed as part of an update. We'll update this article with more information about that policy setting once it's available.
 
-```xml
-<Configuration>
-   <Add OfficeClientEdition="64" Channel="Monthly">
-      <Product ID="O365ProPlusRetail">
-       <ExcludeApp ID="Teams" />
-      </Product>
-      <Product ID="LanguagePack">
-       <Language ID="ja-jp" />
-      </Product>
-    </Add>
-</Configuration>
-```
-
-If you're just applying the regular feature and quality updates for an existing installation of Office, and you don't install another product or language pack, then your existing installation of Office won’t be affected at this time.
 
 Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using supports the default installation of Teams.
 
