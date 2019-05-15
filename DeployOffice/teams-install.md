@@ -19,7 +19,7 @@ In the past, Microsoft Teams was a separate installation from Office 365 ProPlus
 If Skype for Business is already installed on the device, Skype for Business won’t be removed and will continue to function as before. Also, Skype for Business will continue to be installed with new installations of Office 365 ProPlus, unless you configure your installation to exclude it.
 
 > [!IMPORTANT]
-> Starting in the second half of June 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version. For more information, see [What about existing installations of Office 365 ProPlus on devices running Windows?](#what-about-existing-installations-of-office-365-proplus-on-devices-running-windows)
+> Starting in the second half of June 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version. For more information, see [What about existing installations of Office 365 ProPlus?](#what-about-existing-installations-of-office-365-proplus-on-devices-running-windows)
 
 
 ## When will Microsoft Teams start being installed with Office 365 ProPlus?
