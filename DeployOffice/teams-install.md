@@ -90,7 +90,7 @@ The date when Teams starts being added to ***existing*** installations of Office
 |Semi-Annual Channel (Targeted)| *To be determined*  | *September 2019*  |
 |Semi-Annual Channel| *To be determined*  |*January 2020* |
 
-<sup>*</sup> For Office 365 Business, Teams will be added starting with Version 1905 in the 2nd half of June 2019.
+<sup>*</sup> *For Office 365 Business, Teams will be added starting with Version 1905 in the 2nd half of June 2019.*
 
 If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, use the Office Deployment Tool and the following configuration.xml. You need to run the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) in /configure mode on each device before you update to the new version.
 
