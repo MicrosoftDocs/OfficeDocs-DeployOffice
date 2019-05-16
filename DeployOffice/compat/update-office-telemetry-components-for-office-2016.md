@@ -32,7 +32,7 @@ You need to ensure that each computer on which you install the telemetry process
 Here are the procedures for uninstalling the old telemetry processors, installing the new telemetry processors, and updating the telemetry database.
   
 > [!NOTE]
-> Be sure that you get the list of telemetry processors before you install Office 2019 or Office 2016. You can find the list on the [Telemetry Processor worksheet](telemetry-dashboard-worksheet-reference.md#bkmk_TelemetryProcessorWorksheet) in Telemetry Dashboard. 
+> Be sure that you get the list of telemetry processors before you install Office 2019 or Office 2016. You can find the list on the [Telemetry Processor worksheet](telemetry-dashboard-worksheet-reference.md#telemetry-processor-worksheet) in Office Telemetry Dashboard. 
   
 ## To uninstall the old version of telemetry processor
 
