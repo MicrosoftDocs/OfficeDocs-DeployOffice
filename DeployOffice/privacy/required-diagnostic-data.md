@@ -1212,6 +1212,8 @@ The following fields are collected:
 
   - **Data.IsWorkingBranchAvailableOnOpen -** Change tracking diagnostic making sure we have the latest version of a shared file
 
+  - **Data.LicenseStatus** - Diagnostic product license status, used to validate that appropriate product features are enabled for the user’s license type 
+
   - **Data.LicenseType -** Indicates state of license (free/paid/trial etc.)
 
   - **Data.Location -** Indicates storage media type/location (USB, Cloud, etc.)
@@ -1712,6 +1714,8 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
 
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+
   - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -1844,6 +1848,8 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -1889,6 +1895,10 @@ The following fields are collected:
   - **Data\_FailureComponent:long -** Predefined set of values of which component caused this protocol to fail? (Conflict, CSI, Internal etc.)
 
   - **Data\_FailureReason:long -** Predefined set of values of what’s the failure reason (FileIsCorrupt, BlockedByAntivirus etc.)
+
+  - **Data_FullDownloadRoundTripCount:long -** The number of roundtrips to the server taken to download the entire document.
+  
+  - **Data_IsProtocolRunInIncOpenMode:bool -** Was the protocol run for an incremental download, which is a download where parts of the document were downloaded after initially showing it to the user.
 
   - **Data\_MethodId:long -** Internally which line of code was last one to be executed
 
@@ -1959,6 +1969,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document being is opened from local cache
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
@@ -2277,6 +2289,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
@@ -2968,6 +2982,8 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
 
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
   - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3057,6 +3073,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -3151,6 +3169,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -3265,6 +3285,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -3593,6 +3615,8 @@ The following fields are collected:
   - **Data\_Doc\_IsIncrementalOpen:bool-** : Was document opened incrementally (new feature that opens document without needing to download entire document)
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked:bool-** true when this is a server document that exists locally, and is synchronized with the server (e.g. through OneDrive or ODB client apps)
 
@@ -4024,6 +4048,8 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -**Is document being opened from local cache?
 
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+
   - **Data\_Doc\_IsSyncBacked:bool -**Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -**Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -4089,6 +4115,8 @@ The following fields are collected:
   - **Data\_FCreateNew -** Is this new blank document
 
   - **Data\_FCreateNewFromTemplate -** Is this new document from templates
+
+  - **Data_FErrorAfterDocWinCreation:boolean-**  Did any error or exception happen after the document window is created.
 
   - **Data\_FileUrlLocation -** Predefined set of values of where document is stored (NetworkShare, LocalDrive, ServerOther etc.)
 
@@ -4380,6 +4408,8 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
 
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto-synced copy of the document exists on the computer
 
   - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -4500,6 +4530,8 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
 
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
   - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -4618,6 +4650,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -4739,6 +4773,8 @@ The following fields are collected:
   - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+
+  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
 
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -5181,6 +5217,66 @@ The following fields are collected:
   - **ShowSafeModeDlg** - is the session opened in safe mode
 
   - **ShowScanPstDlg** - Store repair check displayed error message
+
+#### Office.Performance.Boot
+
+Collected when an Office application is booted. Includes whether the boot was initiated by opening a file or launching via the Start menu, whether this was the first boot of the application, how much memory the application is using, and whether there was any blocking UI shown to the user. Used to measure how fast Office applications boot and how much memory they use when they start, to ensure there is an acceptable user experience.
+
+The following fields are collected:
+
+  - **ActivationKind** - Whether the application was started by launching from the Start menu, by opening a file, or through OLE Automation.
+
+  - **FirstBoot** - Whether this was a first boot of the application.
+
+  - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
+
+  - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
+
+  - **TotalWorkingSetMB** - The amount of memory in megabytes in the process’s working set.
+
+  - **VirtualSetMB** - The amount of memory in megabytes in the process’s virtual set. (MacOS / iOS only)
+
+  - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process’s working set so far.
+
+#### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+
+Activity tracking whether the Office Insider slab can be shown to the user on the Account tab in the Office Backstage UI.
+
+The following fields are collected:
+
+  - **Data_CanShow** - Indicates whether the Office Insider Slab can be shown to the user on the Account tab in the Office Backstage UI.
+  
+  - **Data_Event** - Unused
+
+  - **Data_EventInfo** - Unused
+
+  - **Data_Reason** - Unused
+
+#### Office.UX.OfficeInsider.ShowOfficeInsiderDlg
+
+Activity tracking the usage and performance of the Office Insider dialog.
+
+The following fields are collected:
+
+  - **Data_AcceptedContactMeNew** - When opting into an Insider level, and when the user's choice was recorded successfully, indicates whether the user accepted to be contacted by Microsoft.
+
+  - **Data_DialogChoice** = Unused
+  
+  - **Data_DialogId** = Unused
+  
+  - **Data_Event** - Unused
+  
+  - **Data_EventInfo** - Unused
+  
+  - **Data_InsiderLevel** - The Insider Level when the dialog is first shown to the user.
+  
+  - **Data_InsiderLevelNew** - The new Insider level selected by the user.
+  
+  - **Data_IsInternalUser** - Indicates whether the application runs under the credentials of an @microsoft.com account.
+  
+  - **Data_IsInternalUserInit** - Indicates whether the code could determine whether the application runs under the credentials of an @microsoft.com account.
+  
+  - **Data_OpenNewsletterWebpage** - When the Office Insider Newsletter Subscription feature is enabled, and the user switches to an Insider level from Production, indicates whether browser navigation to the Office Insider Newsletter Subscription link was triggered.
 
 #### Office.Visio.Shared.VisioFileRender
 
