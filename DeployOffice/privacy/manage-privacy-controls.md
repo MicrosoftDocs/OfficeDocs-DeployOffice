@@ -43,7 +43,7 @@ These new policy settings also apply to desktop versions of Project and Visio th
 
 There are also some existing policy settings that will no longer apply to Office 365 ProPlus, and there are some user interface (UI) changes for privacy settings that you should be aware of because your users might notice those changes and ask about them.
 
-As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings you configure have the desired effect before you implement the policy settings more widely in your organzation.
+As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings you configure have the desired effect before you implement the policy settings more widely in your organization.
 
 ## Policy setting for diagnostic data
 
