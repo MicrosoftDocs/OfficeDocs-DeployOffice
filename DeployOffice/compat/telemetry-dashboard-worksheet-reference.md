@@ -21,7 +21,7 @@ As you use Office Telemetry Dashboard to investigate stability issues for Office
      
 ## Overview worksheet
 
-The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screen shot shows the Overview worksheet:
+The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screen shot shows the **Overview** worksheet:
   
 **Overview worksheet in Office Telemetry Dashboard**
 
