@@ -5218,6 +5218,26 @@ The following fields are collected:
 
   - **ShowScanPstDlg** - Store repair check displayed error message
 
+#### Office.Performance.Boot
+
+Collected when an Office application is booted. Includes whether the boot was initiated by opening a file or launching via the Start menu, whether this was the first boot of the application, how much memory the application is using, and whether there was any blocking UI shown to the user. Used to measure how fast Office applications boot and how much memory they use when they start, to ensure there is an acceptable user experience.
+
+The following fields are collected:
+
+  - **ActivationKind** - Whether the application was started by launching from the Start menu, by opening a file, or through OLE Automation.
+
+  - **FirstBoot** - Whether this was a first boot of the application.
+
+  - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
+
+  - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
+
+  - **TotalWorkingSetMB** - The amount of memory in megabytes in the process’s working set.
+
+  - **VirtualSetMB** - The amount of memory in megabytes in the process’s virtual set. (MacOS / iOS only)
+
+  - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process’s working set so far.
+
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
 Activity tracking whether the Office Insider slab can be shown to the user on the Account tab in the Office Backstage UI.
