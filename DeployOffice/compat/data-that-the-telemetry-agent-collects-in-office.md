@@ -17,7 +17,7 @@ description: "Learn about the data that the Office Telemetry Dashboard agent col
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
   
-The Office Telemetry Dashboard uses an agent to collect several types of data for installations of Office, such as the following:
+The Office Telemetry Dashboard uses an agent to collect several types of inventory, usage, and health data for installations of Office, such as the following:
   
 - The file names of Office files that are in the Most Recently Used list.
 
@@ -61,7 +61,7 @@ For Office 2019, Office 2016, and Office 2013 only, the agent collects data for 
 - PowerPoint
 - Word
 
-## Inventory, usage, and health data that is collected by the agent for all computers that it monitors
+## Data that is collected by the agent for all computers that it monitors
 
 The agent collects the following data for all computers that it monitors. This data includes inventory data, user data, and hardware and software data. You can find the list of Office versions and operating systems that the agent supports in [Office Telemetry Dashboard agent](deploy-telemetry-dashboard.md#agent).
   
@@ -149,7 +149,7 @@ The agent collects the following data about hardware and software. This data is 
 - Number of ARM deployments
     
 
-## Inventory, usage, and health data that is collected only for Office 2019, Office 2016, and Office 2013
+## Data that is collected only for Office 2019, Office 2016, and Office 2013
 
 In Office 2019, Office 2016, and Office 2013, the agent also collects the following  data for Excel, Outlook, PowerPoint, and Word. This data is sorted by the worksheet where it appears in Office Telemetry Dashboard.
   
