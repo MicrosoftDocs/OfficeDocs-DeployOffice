@@ -187,3 +187,34 @@ The following are new elements added to the Office UI:
 - Under **File** > **Account**, users will see a new choice for **Account Privacy** > **Manage Settings**. It’s under **Manage Settings** where users can turn off optional connected experiences, if you have given them that option.
 
 - Under **File** > **Options** > **Trust Center** > **Trust Center Settings…** > **Privacy Options,** there is an option to enable the use of the [Diagnostic Data Viewer](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855) on the device.
+
+ 
+## Control privacy settings by editing the registry
+
+Some admins prefer to change settings directly in the registry, for example by using a script, instead of by using Group Policy or the Office cloud policy service. You can use the following information to configure privacy settings directly in the registry.
+
+
+|**Policy setting** |**Registry setting**  |**Values**  |
+|---------|---------|---------|---------|
+|Configure the level of client software diagnostic data sent by Office to Microsoft  | SendTelemetry |1=Required <br/> 2=Optional <br/> 3=Neither|
+|Allow the use of connected experiences in Office that analyze content  | UserContentDisabled | 1=Enabled <br/> 2=Disabled|
+|Allow the use of connected experiences in Office that download online content  | DownloadContentDisabled | 1=Enabled <br/> 2=Disabled|
+|Allow the use of additional optional connected experiences in Office   |  DisconnectedState |1=Enabled <br/> 2=Disabled|
+|Allow the use of connected experiences in Office | ControllerConnectedServicesEnabled  | 1=Enabled <br/> 2=Disabled|
+
+To create a .reg file for the privacy settings, open Notepad and copy in the following lines. Adjust the values to suit your needs, and then save the file. Be sure the file name has an extension of .reg
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]
+"disconnectedstate"=dword:00000001
+"usercontentdisabled"=dword:00000001
+"downloadcontentdisabled"=dword:00000001
+"controllerconnectedservicesenabled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\office\common\clienttelemetry]
+"sendtelemetry"=dword:00000002
+```
+
+For example, you can use this .reg file with the regedit.exe command in a script to configure privacy settings for the user.
