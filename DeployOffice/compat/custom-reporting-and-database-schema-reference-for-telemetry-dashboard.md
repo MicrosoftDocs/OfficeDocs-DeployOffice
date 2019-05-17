@@ -1,5 +1,5 @@
 ---
-title: "Custom reporting and database schema reference for Telemetry Dashboard"
+title: "Custom reporting and database schema reference for Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,34 +9,26 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Describes how to create custom reports in Telemetry Dashboard, shows sample reports, and lists the tables and fields in the telemetry database."
+description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
 ---
 
-# Custom reporting and database schema reference for Telemetry Dashboard
+# Custom reporting and database schema reference for Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
-
-> [!NOTE]
-> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
+ 
   
-  
-The built-in worksheets in Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the telemetry database tables and fields that are used in custom reports.
+The built-in worksheets in Office Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Office Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the database tables and fields that are used in custom reports.
 
 
   
     
 <a name="overview"> </a>
 
-## Overview of custom reports in Telemetry Dashboard
+## Overview of custom reports in Office Telemetry Dashboard
 
-The built-in worksheets in Telemetry Dashboard show you a relevant subset of the data that is collected by Telemetry Agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view telemetry data in meaningful ways. 
+The built-in worksheets in Office Telemetry Dashboard show you a relevant subset of the data that is collected by Telemetry Agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view telemetry data in meaningful ways. 
 
-> [!IMPORTANT]
-> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
-
-  
 For example, the following screen shot shows a custom report that lists the unregistered ActiveX controls that are detected on monitored clients. You can see that we've added fields to display the solution name, user name, and business group (as configured for Label 2 when the agents were deployed). This report helps us identify the solutions that use unregistered ActiveX controls and who is using them. In contrast, the **Documents** worksheet lists these solutions but doesn't have a column to indicate whether unregistered ActiveX controls are detected. You have to view the **Document sessions** worksheet for each document to see whether ActiveX controls are being used. 
   
 **Custom report that shows unregistered ActiveX solutions**
@@ -44,15 +36,15 @@ For example, the following screen shot shows a custom report that lists the unre
 ![Illustrates a custom report that shows unregistered ActiveX controls](../images/ORK_CustomReport_ActiveXreport.GIF)
   
 > [!IMPORTANT]
-> To use labels in custom reports, you have to configure them when you deploy Telemetry Agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for Telemetry Agent). 
+> To use labels in custom reports, you have to configure them when you deploy Telemetry Agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
   
 As another example, the following screen shot shows the list of Office client computers as displayed in the **Deployments** worksheet. This shows a high-level summary of Office deployments. But it doesn't give you a breakdown of how Office is deployed across business groups. 
   
 **The Deployments worksheet**
 
-![Shows the Office deployments that are tracked by Telemetry Dashboard in the Deployments worksheet](../images/ORK_CR_OfficeDeployments.GIF)
+![Shows the Office deployments that are tracked by Office Telemetry Dashboard in the Deployments worksheet](../images/ORK_CR_OfficeDeployments.GIF)
   
-You can get a more detailed view of Office clients by using a custom report. In the following illustration, the Office clients are grouped by business groups (as configured for Label 2) so that you can see the breakdown of Office deployments across each group. You can also create a PivotChart to help show the data. This custom report uses a hidden table, System_details, that you have to manually add before you can add Office versions to your report. You can learn how to do this in [Hidden tables in Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables).
+You can get a more detailed view of Office clients by using a custom report. In the following illustration, the Office clients are grouped by business groups (as configured for Label 2) so that you can see the breakdown of Office deployments across each group. You can also create a PivotChart to help show the data. This custom report uses a hidden table, System_details, that you have to manually add before you can add Office versions to your report. You can learn how to do this in [Hidden tables in Office Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables).
   
 **Custom report showing Office deployments by business group**
 
@@ -60,13 +52,13 @@ You can get a more detailed view of Office clients by using a custom report. In 
   
 <a name="Create_customreport"> </a>
 
-## Create custom reports in Telemetry Dashboard
+## Create custom reports in Office Telemetry Dashboard
 
-You can create a single custom report on the **Custom report** worksheet. This automatically loads the default tables and creates a basic custom report that you can use as a starting point. Then, you can add and remove fields to design a report that meets your business needs. For performance reasons, not all tables are loaded automatically when you create a custom report. You can add tables by using the procedure in [Hidden tables in Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables). The most common reason to add hidden tables is to gain access to Office builds, which are available in the **System_details** table. 
+You can create a single custom report on the **Custom report** worksheet. This automatically loads the default tables and creates a basic custom report that you can use as a starting point. Then, you can add and remove fields to design a report that meets your business needs. For performance reasons, not all tables are loaded automatically when you create a custom report. You can add tables by using the procedure in [Hidden tables in Office Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables). The most common reason to add hidden tables is to gain access to Office builds, which are available in the **System_details** table. 
   
 In this video demo, you can see custom reporting in action. We compare data that is shown in the **Solutions** worksheet to similar data that is shown in a custom report. This video will also help you learn how to add and move fields in a PivotTable report. 
   
-**Custom reporting in Telemetry Dashboard**
+**Custom reporting in Office Telemetry Dashboard**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed8327e4-c063-40f5-a634-230c067d73b4?autoplay=false]
 
@@ -76,13 +68,13 @@ If you use large data sets in your custom reports, you might encounter the [2-GB
   
 - Use the 64-bit version of Excel, which doesn't have the 2-GB memory limitation, but does have other drawbacks. See [Choose between the 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/p/?LinkId=250955) to learn more. 
     
-- Adjust the reporting threshold in the telemetry database to change how much data is pulled into PowerPivot when custom reports are created, You can learn more about this setting in [How to configure privacy and performance settings in Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure).
+- Adjust the reporting threshold in the database to change how much data is pulled into PowerPivot when custom reports are created, You can learn more about this setting in [How to configure privacy and performance settings in Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure).
     
-To create a custom report, you have to first start Telemetry Dashboard. The following table describes how to start the dashboard in different versions of Windows.
+To create a custom report, you have to first start Office Telemetry Dashboard. The following table describes how to start the dashboard in different versions of Windows.
   
-**To start Telemetry Dashboard**
+**To start Office Telemetry Dashboard**
 
-|**If you have this operating system**|**Follow these steps to start Telemetry Dashboard**|
+|**If you have this operating system**|**Follow these steps to start Office Telemetry Dashboard**|
 |:-----|:-----|
 |Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8 or Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
@@ -92,7 +84,7 @@ For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Offic
    
 ### To create a custom report
 
-1. In Telemetry Dashboard, on the **Getting Started** worksheet, choose **Connect to Database**.
+1. In Office Telemetry Dashboard, on the **Getting Started** worksheet, choose **Connect to Database**.
     
 2. In the **Data connection settings** dialog box, type the names of the computer running SQL Server and the SQL database that you specified when you installed Telemetry Processor. 
     
@@ -102,7 +94,7 @@ For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Offic
     
 To help you get started, the following tables provide procedures for creating different kinds of custom reports.
   
-**Sample custom reports in Telemetry Dashboard**
+**Sample custom reports in Office Telemetry Dashboard**
 
 To create a custom report that shows solution stability, do the following:
 1. From the Lookup_solutions table, drag Solution name to the FILTERS well. 
@@ -121,7 +113,7 @@ To create a custom report that shows Excel warnings, do the following:
    
 <a name="default_tables"> </a>
 
-## Default tables and fields in Telemetry Dashboard custom reports
+## Default tables and fields in Office Telemetry Dashboard custom reports
 
 The following tables describe the six tables and their related fields that are shown by default in the **PivotTable Fields** list when you create custom reports. 
   
@@ -189,7 +181,7 @@ The following table shows the fields in the **Lookup_computers** table.
 |Computer ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
 |Computer name  <br/> |String  <br/> |Shows the computer name.  <br/> |
 |Computer domain  <br/> |String  <br/> |Shows the domain name that is registered for this computer.  <br/> |
-|Telemetry Agent version  <br/> |String  <br/> |Shows the Telemetry Agent version that uploads the data to the telemetry database.  <br/> |
+|Telemetry Agent version  <br/> |String  <br/> |Shows the agent version that uploads the data to the database.  <br/> |
 |Computer processor name  <br/> |String  <br/> |Shows the processor name of the computer.  <br/> |
 |Number of processors (logical)  <br/> |Number  <br/> |Shows the number of logical processors in the computer.  <br/> |
 |Number of processors (physical)  <br/> |Number  <br/> |Shows the number of physical processors in the computer.  <br/> |
@@ -248,14 +240,14 @@ The following table shows the fields in the **Lookup_issue_definitions** table.
    
 <a name="hidden_tables"> </a>
 
-## Hidden tables in Telemetry Dashboard custom reports
+## Hidden tables in Office Telemetry Dashboard custom reports
 
 
-Not all tables are loaded when you create a custom report. If you want to access additional data for your custom report, you can load the **Usage_summary**, **Issue_summary**, and **System_details** tables. Follow these steps to add these hidden tables to Telemetry Dashboard. 
+Not all tables are loaded when you create a custom report. If you want to access additional data for your custom report, you can load the **Usage_summary**, **Issue_summary**, and **System_details** tables. Follow these steps to add these hidden tables to Office Telemetry Dashboard. 
   
-### To add hidden tables to Telemetry Dashboard
+### To add hidden tables to Office Telemetry Dashboard
 
-1. Follow the steps in [Create custom reports in Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#Create_customreport) to start Telemetry Dashboard, connect to the database, and create a custom report. 
+1. Follow the steps in [Create custom reports in Office Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#Create_customreport) to start Office Telemetry Dashboard, connect to the database, and create a custom report. 
     
 2. After you create the custom report, select any area in the custom report. This makes the **ANALYZE** tab available on the ribbon. 
     
@@ -271,9 +263,9 @@ Not all tables are loaded when you create a custom report. If you want to access
     
 8. Right-click each new table, and choose **Show in Active Tab**. The new tables are added to the **Active** list under **PivotTable Fields** in the right column for easier access. 
     
-The following tables list the hidden tables that you have to manually add to Telemetry Dashboard and describe the fields in the hidden tables.
+The following tables list the hidden tables that you have to manually add to Office Telemetry Dashboard and describe the fields in the hidden tables.
   
-**Hidden tables in Telemetry Dashboard custom reports**
+**Hidden tables in Office Telemetry Dashboard custom reports**
 
 |**Table name**|**Comments**|
 |:-----|:-----|
@@ -327,9 +319,9 @@ The following table describes the fields in the System_details table.
 |Label 2  <br/> |String  <br/> |Shows the Label 2 setting.  <br/> |
 |Label 3  <br/> |String  <br/> |Shows the Label 3 setting.  <br/> |
 |Label 4  <br/> |String  <br/> |Shows the Label 4 setting.  <br/> |
-|Telemetry Agent version  <br/> |String  <br/> |Shows the version of Telemetry Agent that collected this data.  <br/> |
-|Telemetry Processor (file share)  <br/> |String  <br/> |Shows the file share for the Telemetry Processor that uploaded data to the telemetry database.  <br/> |
-|Telemetry Processor (computer)  <br/> |String  <br/> |Shows the computer name for the Telemetry Processor that uploaded data to the telemetry database.  <br/> |
+|Telemetry Agent version  <br/> |String  <br/> |Shows the version of agent that collected this data.  <br/> |
+|Telemetry Processor (file share)  <br/> |String  <br/> |Shows the file share for the processor that uploaded data to the database.  <br/> |
+|Telemetry Processor (computer)  <br/> |String  <br/> |Shows the computer name for the processor that uploaded data to the database.  <br/> |
 |Computer processor name  <br/> |String  <br/> |Shows the processor name of the computer.  <br/> |
 |Number of processors (logical)  <br/> |Number  <br/> |Shows the number of logical processors in the computer.  <br/> |
 |Number of processors (physical)  <br/> |Number  <br/> |Shows the number of physical processors in the computer.  <br/> |
@@ -346,7 +338,7 @@ The following table describes the fields in the System_details table.
 |IE version (details)  <br/> |String  <br/> |Shows the Internet Explorer version in detail.  <br/> |
 |Windows system local (user)  <br/> |String  <br/> |Shows the Windows system local setting (user setting).  <br/> |
 |Windows display language (user)  <br/> |String  <br/> |Shows the Windows system display language (user setting).  <br/> |
-|Last scanned  <br/> |Date/time  <br/> |Shows the Telemetry Agent scanned date/time.  <br/> |
+|Last scanned  <br/> |Date/time  <br/> |Shows the agent scanned date/time.  <br/> |
 |Office 2003  <br/> |String  <br/> |Shows Office 2003 version details, if it is installed.  <br/> |
 |Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
 |Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
@@ -355,25 +347,25 @@ The following table describes the fields in the System_details table.
    
 <a name="default_relationships"> </a>
 
-## Default data relationships in Telemetry Dashboard custom reports
+## Default data relationships in Office Telemetry Dashboard custom reports
 
-The following illustrations show the relationships between tables in the telemetry database. 
+The following illustrations show the relationships between tables in the database. 
   
-**Default relationships between tables in the telemetry database**
+**Default relationships between tables in the database**
 
-![Shows the primary keys and relationships between tables in the telemetry database](../images/ORK_CR_DefaultRelationships.gif)
+![Shows the primary keys and relationships between tables in the database](../images/ORK_CR_DefaultRelationships.gif)
   
 **The Usage_summary table and its relationships**
 
-![Shows the Usage_Summary table and its relationship to other tables in the telemetry database](../images/ORK_CR_Usage_Summary.gif)
+![Shows the Usage_Summary table and its relationship to other tables in the database](../images/ORK_CR_Usage_Summary.gif)
   
 **The Issue_summary table and its relationships**
 
-![Shows the Issue_Summary table and its relationships to other tables in the telemetry database](../images/ORK_CR_Issue_Summary.gif)
+![Shows the Issue_Summary table and its relationships to other tables in the database](../images/ORK_CR_Issue_Summary.gif)
   
 ## Related topics
 
 - [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
-- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 
