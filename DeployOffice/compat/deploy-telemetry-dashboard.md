@@ -16,9 +16,6 @@ description: "Explains how to deploy the telemetry processor, telemetry agent, a
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
-> [!NOTE]
-> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
 
 This article helps you deploy the five components of Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
 
@@ -199,9 +196,6 @@ For more details about collation settings, see the documentation for the version
 ## Telemetry agent
 
 The following information and instructions will help you learn more about how to deploy and enable the telemetry agent.
-
-> [!IMPORTANT]
-> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
 
 ### Deploying the telemetry agent
 
