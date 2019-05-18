@@ -86,7 +86,7 @@ For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Offic
 
 1. In Office Telemetry Dashboard, on the **Getting Started** worksheet, choose **Connect to Database**.
     
-2. In the **Data connection settings** dialog box, type the names of the computer running SQL Server and the SQL database that you specified when you installed Telemetry Processor. 
+2. In the **Data connection settings** dialog box, type the names of the computer running SQL Server and the SQL database that you specified when you installed Office Telemetry Processor. 
     
 3. In the navigation pane, choose **Custom report**.
     

@@ -222,9 +222,9 @@ To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is 
 
 When you view a worksheet in Office Telemetry Dashboard, you might see the following message:
   
-**Telemetry processor error message**
+**Office Telemetry Processor error message**
 
-![A screenshot of the Telemetry Processor services error message.](../images/ORK_Telem_TelemetryProcessorErrorMessage.png)
+![A screenshot of the Office Telemetry Processor service error message.](../images/ORK_Telem_TelemetryProcessorErrorMessage.png)
   
 This error message is displayed when no agents have reported any data to the dashboard, or if the processor hasn't inserted any data to the database for a day.
   
