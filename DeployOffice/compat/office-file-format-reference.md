@@ -170,6 +170,6 @@ If the file format that users want to use is not supported, they can try the fol
 ## Related topics
 
 - [XML file name extension reference for Office](xml-file-name-extension-reference-for-office.md)
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
   
 

@@ -193,6 +193,6 @@ The following table describes hardware recommendations for each computer that ho
   
 ## Related topics
 
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
 - [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
 

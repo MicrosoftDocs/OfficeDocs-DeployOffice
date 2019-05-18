@@ -187,7 +187,7 @@ Disabling logging does not delete the data that has already been collected from 
 
 ## Related topics
 
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Data that the Office Telemetry Dashboard agent collects in Office](data-that-the-telemetry-agent-collects-in-office.md)
 

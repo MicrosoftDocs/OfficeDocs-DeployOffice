@@ -45,5 +45,5 @@ You can download the Group Policy Administrative Templates files (ADMX/ADML) for
 ## Related topics
 
 - [Assess Office compatibility](assess-office-compatibility.md)
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
 

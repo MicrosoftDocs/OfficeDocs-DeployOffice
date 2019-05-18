@@ -88,6 +88,6 @@ The following table describes the file type, extension, and description for Visi
 ## Related topics
 
 - [File format reference for Word, Excel, and PowerPoint](office-file-format-reference.md)
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
   
 

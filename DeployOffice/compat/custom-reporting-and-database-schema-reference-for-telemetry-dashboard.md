@@ -365,7 +365,7 @@ The following illustrations show the relationships between tables in the databas
   
 ## Related topics
 
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 
