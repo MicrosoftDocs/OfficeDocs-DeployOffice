@@ -68,7 +68,7 @@ We recommend that you monitor about 20% of the client computers across your orga
   
 ### Identify privacy concerns with business group stakeholders
 
-Some business groups, such as human resources, legal, and finance, might have concerns about exposing personal or sensitive files in the data. Office Telemetry Dashboard offers several ways to prevent exposing this data. For example, you can configure the agent to intentionally obscure file names and titles. You can also prevent data from certain applications from being reported. You can learn more about the privacy settings in [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md). Review the privacy options with the business groups and decide which kinds of Office data that you want to exclude from reporting in Office Telemetry Dashboard. 
+Some business groups, such as human resources, legal, and finance, might have concerns about exposing personal or sensitive files in the data. Office Telemetry Dashboard offers several ways to prevent exposing this data. For example, you can configure the agent to intentionally obscure file names and titles. You can also prevent data from certain applications from being reported. You can learn more about the privacy settings in [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md). Review the privacy options with the business groups and decide which kinds of Office data that you want to exclude from reporting in Office Telemetry Dashboard. 
   
 ### Decide how you want to categorize clients that are shown in Office Telemetry Dashboard
 
@@ -122,7 +122,7 @@ After you complete the Discover and Rationalize phases, it's time to start to te
   
 Unfortunately, there is no tool that will do this work for you. You have to ask users to test the documents and solutions by doing their work in Office. We call this user acceptance testing, and it's unavoidable. The good news is that user acceptance testing is much easier now with Click-to-Run, which helps transform user acceptance testing into piloting. Encourage users to use their documents and solutions in the new version of Office, and advise them to use their earlier version of Office if they encounter issues.
   
-Telemetry data is also a big help in this phase because it can tell you what is broken and how. Office Telemetry Dashboard shows positive and negative trends that can help you quickly see the stability of documents or solutions as they are updated. 
+Data in Office Telemetry Dashboard is also a big help in this phase because it can tell you what is broken and how. Office Telemetry Dashboard shows positive and negative trends that can help you quickly see the stability of documents or solutions as they are updated. 
   
 Here are some guidelines to help you plan and monitor user acceptance testing.
   

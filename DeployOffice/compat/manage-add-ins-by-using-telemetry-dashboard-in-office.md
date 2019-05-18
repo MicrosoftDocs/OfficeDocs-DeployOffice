@@ -37,5 +37,5 @@ For more information about how to manage Office add-ins by using Office Telemetr
 
 - [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 - [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
+- [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
 

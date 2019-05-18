@@ -195,7 +195,7 @@ VBA, OLE, external data connection, ActiveX control, and assembly reference info
     
 ## Related topics
 
-- [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
+- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 - [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
 
