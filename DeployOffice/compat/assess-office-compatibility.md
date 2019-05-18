@@ -60,7 +60,7 @@ Your goal for the Discover phase is to know what's being used the most and by wh
     
 Whether or not you start with a blank list, there is no avoiding working with your business groups. The tools can't tell you what's important to the business. The tools can give you some leads on what's important based on use, but only the business groups can tell you how dependent their business is on those documents and solutions. For example, if you only base your work on data, you might miss seasonally used solutions, such as year-end sales reports or annual performance review templates, or other documents that aren't being used at the time that you collect data.
   
-Now it's time to start to make plans to deploy the agent to the existing Office clients. Here are some considerations to think about before you deploy the agent. You will find requirements to deploy the agent in [Telemetry agent](deploy-telemetry-dashboard.md#agent). If you haven't yet deployed Office Telemetry Dashboard, you will find that information in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md).
+Now it's time to start to make plans to deploy the agent to the existing Office clients. Here are some considerations to think about before you deploy the agent. You will find requirements to deploy the agent in [Office Telemetry Agent](deploy-telemetry-dashboard.md#agent). If you haven't yet deployed Office Telemetry Dashboard, you will find that information in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md).
   
 ### Choose which Office client computers to monitor
 
@@ -72,7 +72,7 @@ Some business groups, such as human resources, legal, and finance, might have co
   
 ### Decide how you want to categorize clients that are shown in Office Telemetry Dashboard
 
-When you deploy the agent to clients, you can specify up to four labels that describe the clients. These labels help you filter data in the dashboard so that you can focus on individual business groups, specific kinds of users, users in certain geographical locations, and so on. Develop this list as you work with business groups. You can learn more about how to configure labels when you [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md), in the section [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure).
+When you deploy the agent to clients, you can specify up to four labels that describe the clients. These labels help you filter data in the dashboard so that you can focus on individual business groups, specific kinds of users, users in certain geographical locations, and so on. Develop this list as you work with business groups. You can learn more about how to configure labels when you [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md), in the section [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure).
   
 <a name="rationalize"> </a>
 

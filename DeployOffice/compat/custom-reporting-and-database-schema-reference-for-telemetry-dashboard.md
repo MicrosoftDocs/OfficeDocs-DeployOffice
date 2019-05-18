@@ -36,7 +36,7 @@ For example, the following screen shot shows a custom report that lists the unre
 ![Illustrates a custom report that shows unregistered ActiveX controls](../images/ORK_CustomReport_ActiveXreport.GIF)
   
 > [!IMPORTANT]
-> To use labels in custom reports, you have to configure them when you deploy the agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the telemetry agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
+> To use labels in custom reports, you have to configure them when you deploy the agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
   
 As another example, the following screen shot shows the list of Office client computers as displayed in the **Deployments** worksheet. This shows a high-level summary of Office deployments. But it doesn't give you a breakdown of how Office is deployed across business groups. 
   

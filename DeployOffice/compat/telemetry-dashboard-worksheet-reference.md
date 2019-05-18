@@ -432,5 +432,5 @@ When you select the **Create custom report** button on the **Custom report** wor
 ## Related topics
 
 - [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
-- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 

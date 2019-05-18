@@ -95,7 +95,7 @@ In the navigation pane on the left side of the dashboard, there are filters call
   
 **Label filters**
 - Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.
-- The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Telemetry agent](deploy-telemetry-dashboard.md#agent).
+- The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Office Telemetry Agent](deploy-telemetry-dashboard.md#agent).
 
   ![An image of the label drop down box on the Office Telemetry Dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
 
