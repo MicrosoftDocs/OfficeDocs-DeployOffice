@@ -27,7 +27,7 @@ The built-in worksheets in Office Telemetry Dashboard display lots of useful dat
 
 ## Overview of custom reports in Office Telemetry Dashboard
 
-The built-in worksheets in Office Telemetry Dashboard show you a relevant subset of the data that is collected by the agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view telemetry data in meaningful ways. 
+The built-in worksheets in Office Telemetry Dashboard show you a relevant subset of the data that is collected by the agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view data in meaningful ways. 
 
 For example, the following screen shot shows a custom report that lists the unregistered ActiveX controls that are detected on monitored clients. You can see that we've added fields to display the solution name, user name, and business group (as configured for Label 2 when the agents were deployed). This report helps us identify the solutions that use unregistered ActiveX controls and who is using them. In contrast, the **Documents** worksheet lists these solutions but doesn't have a column to indicate whether unregistered ActiveX controls are detected. You have to view the **Document sessions** worksheet for each document to see whether ActiveX controls are being used. 
   
@@ -269,7 +269,7 @@ The following tables list the hidden tables that you have to manually add to Off
 
 |**Table name**|**Comments**|
 |:-----|:-----|
-|Usage_summary  <br/> | Shows Office telemetry data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
+|Usage_summary  <br/> | Shows data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
 |Issue_summary  <br/> | Shows the issues that have occurred in the last seven days, one month, and three months. You can use this table to create a relationship to following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_issue_definitions** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
 |System_details  <br/> |Shows user and computer information.  <br/> |
    

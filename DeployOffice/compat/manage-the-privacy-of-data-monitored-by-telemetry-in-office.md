@@ -99,7 +99,7 @@ For business groups that employ lawyers, executives, or other employees who work
 
 The following table describes the registry values that prevent specific applications from being reported to Office Telemetry Dashboard.
 
-*Agent registry settings under HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedapplications**
+**Agent registry settings under HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\OSM\preventedapplications**
 
 |**Value name**|**Value type**|**Value description and data**|
 |:-----|:-----|:-----|
