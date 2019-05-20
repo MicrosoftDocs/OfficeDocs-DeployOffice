@@ -18,6 +18,12 @@ description: "Find reference information about Office Telemetry Dashboard worksh
 
 As you use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Office Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the agents and processors used by Office Telemetry Dashboard.
 
+> [!IMPORTANT]
+> - Office Telemetry Dashboard is an on-premises tool that collects usage and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected by the Office Telemetry Dashboard agent is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for the Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+
      
 ## Overview worksheet
 

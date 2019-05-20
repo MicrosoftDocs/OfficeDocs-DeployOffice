@@ -25,6 +25,12 @@ When you deploy Office Telemetry Dashboard, you must consider several factors. T
 ## Introducing Office Telemetry Dashboard
 
 Office Telemetry Dashboard is an Excel workbook that displays compatibility and inventory data about the Office files, Office add-ins, and Office solutions that are used in an organization. For a visual representation of the components used to support Office Telemetry Dashboard and how they work, download the [Telemetry in Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=266531) poster. This poster includes a description of all components, a list of what Office files are monitored, how data collection works, and more. Although the poster is for an earlier version of Office, the information also applies to newer versions of Office.
+
+> [!IMPORTANT]
+> - Office Telemetry Dashboard is an on-premises tool that collects usage and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected by the Office Telemetry Dashboard agent is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for the Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
   
   
 <a name="Overview"> </a>

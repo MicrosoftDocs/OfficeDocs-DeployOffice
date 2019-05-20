@@ -16,13 +16,14 @@ description: "Describes how to create custom reports in Office Telemetry Dashboa
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
- 
-  
 The built-in worksheets in Office Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Office Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the database tables and fields that are used in custom reports.
 
-
+> [!IMPORTANT]
+> - Office Telemetry Dashboard is an on-premises tool that collects usage and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected by the Office Telemetry Dashboard agent is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for the Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
   
-    
 <a name="overview"> </a>
 
 ## Overview of custom reports in Office Telemetry Dashboard

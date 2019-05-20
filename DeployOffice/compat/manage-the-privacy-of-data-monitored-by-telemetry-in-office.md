@@ -23,6 +23,12 @@ The agent collects inventory, usage, and other application data and uploads it t
 
 The agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the agent never generates or collects any data until you enable logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
 
+> [!IMPORTANT]
+> - Office Telemetry Dashboard is an on-premises tool that collects usage and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected by the Office Telemetry Dashboard agent is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for the Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+
 
 <a name="Configure"> </a>  
 
