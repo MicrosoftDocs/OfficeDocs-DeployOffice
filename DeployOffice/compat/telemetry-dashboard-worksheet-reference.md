@@ -110,7 +110,7 @@ The following table describes each column in the **Document details** worksheet.
 |User domain  <br/> |Displays the domain name for this user.  <br/> |
 |Computer name  <br/> |Displays the computer name that was used to open the document.  <br/> |
 |Computer domain  <br/> |Shows the computer's domain name.  <br/> |
-|Location  <br/> |Shows the file path of the document.  <br/><br/>  Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path of the document.  <br/><br/>  Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, only the most recent file path is kept.  <br/> |
 |Size (KB)  <br/> |Shows the file size of the document.  <br/> |
 |Author  <br/> |Shows the author name of the document.  <br/> |
 |VBA  <br/> |Indicates whether the document contains VBA code.  <br/> |
@@ -169,7 +169,7 @@ The following table describes each column in the **Document sessions** worksheet
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
 |Computer name  <br/> |Shows the name of the computer where the document encountered the issue.  <br/> |
 |Computer domain  <br/> |Shows the computer's domain name.  <br/> |
-|Location  <br/> |Shows the file path where the selected document was opened.  <br/><br/>  Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path where the selected document was opened.  <br/><br/>  Only one file path is kept per user and computer. If the same user opens the document from a different file path on the same computer, only the most recent file path is kept.  <br/> |
 |Office version  <br/> |Shows the version of Office that was used to open this document.  <br/> |
 |Documents loaded  <br/> |Shows the list of documents that were being used when the issue occurred.  <br/> |
 |Size (KB)  <br/> |Shows the size of the document.  <br/> |
@@ -275,7 +275,7 @@ The following table describes each column in the **Solution details** worksheet.
 |Friendly name  <br/> |Shows the friendly name of the solution.  <br/> |
 |Description  <br/> |Shows the description of the solution.  <br/> |
 |Size (KB)  <br/> |Shows the size of the solution.  <br/> |
-|Location  <br/> |Shows the file path of the solution.Only one file path is kept per user and computer. If the same user opens the solution from different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path of the solution.Only one file path is kept per user and computer. If the same user opens the solution from different file path on the same computer, only the most recent file path is kept.  <br/> |
    
 ## Solution issues worksheet
 
@@ -335,7 +335,7 @@ The following table describes each column in the **Solution sessions** worksheet
 |Friendly name  <br/> |Shows the friendly name of the solution.  <br/> |
 |Description  <br/> |Shows the description of the solution.  <br/> |
 |Size (KB)  <br/> |Shows the size of the solution.  <br/> |
-|Location  <br/> |Shows the file path of the solution.  <br/> <br/> Only one file path is kept per user and computer. If the same user opens the solution from a different file path on the same computer, Office Telemetry keeps only the most recent file path.  <br/> |
+|Location  <br/> |Shows the file path of the solution.  <br/> <br/> Only one file path is kept per user and computer. If the same user opens the solution from a different file path on the same computer, only the most recent file path is kept.  <br/> |
    
 
 ## Telemetry Processor worksheet

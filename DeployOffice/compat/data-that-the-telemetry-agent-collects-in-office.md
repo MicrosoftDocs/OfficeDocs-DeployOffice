@@ -1,5 +1,5 @@
 ---
-title: "Data that the Office Telemetry Dashboard agent collects in Office"
+title: "Data collected by the agent for Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,10 +9,10 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Learn about the data that the Office Telemetry Dashboard agent collects in Office."
+description: "Learn about the data collected by the agent for Office Telemetry Dashboard."
 ---
 
-# Data that the Office Telemetry Dashboard agent collects in Office
+# Data collected by the agent for Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
@@ -20,23 +20,18 @@ description: "Learn about the data that the Office Telemetry Dashboard agent col
 The Office Telemetry Dashboard uses an agent to collect several types of inventory, usage, and health data for installations of Office, such as the following:
   
 - The file names of Office files that are in the Most Recently Used list.
-
 - The names of add-ins and solutions that interact with Office.
-
 - System information such as user name and computer name.
     
 The agent collects different kinds of information for different applications as applicable. For example, for Excel, Outlook, PowerPoint, and Word, the agent collects data that allows you to determine:
   
 - Whether the document has specific metadata for a particular file, such VBA macros, data connections, or ActiveX controls.
-
 - Whether the document has encountered compatibility issues or critical errors while it is being used.
-  
 - How Office files and solutions are used on a user's computer. Data of this type that is gathered by the agent is referred to as session data. 
     
 The agent doesn't collect any of the following kinds of information:
   
 - The contents of files.
-    
 - Information about files that are not in the Most Recently Used list.
 
 
@@ -90,11 +85,8 @@ The agent collects the following data about recently opened Office documents and
 Exceptions to data collected about recently opened Office documents and templates
   
 - For OneNote, the agent collects only Notebook name and location.
-    
 - For Outlook, the agent doesn't collect any inventory data of document files.
-    
 - For files that are stored in a network share or SharePoint site, the agent collects only the file name and location.
-    
 - If the list of most recently used documents is disabled on a user's computer (by Group Policy or the user disabled it by themselves), the agent doesn't collect inventory data for document files and templates.
     
 ### Data about recently loaded add-ins and apps for Office
