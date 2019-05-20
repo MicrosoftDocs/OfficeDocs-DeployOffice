@@ -20,7 +20,10 @@ description: "Explains how to deploy the processor, agent, and other components 
 This article helps you deploy the five components of Office Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Office Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
 
 > [!IMPORTANT]
-> If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529). 
+> - Office Telemetry Dashboard is an on-premises tool that collects usage and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected by the Office Telemetry Dashboard agent is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for the Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
 
 <a name="dashboard"> </a>
 
@@ -95,6 +98,9 @@ The **Getting started** worksheet in Office Telemetry Dashboard provides a link 
 
 Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor." 
 
+> [!IMPORTANT]
+> If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529). 
+
 The processor generates error logs in a file that is named dperrorlog.txt. It is located in a hidden folder at %systemroot%\ServiceProfiles\NetworkService\AppData\Local\Temp.
 
 Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226). 
@@ -157,7 +163,7 @@ Ensure that you have the following available before you run the wizard to set up
 
 <a name="database"> </a>
 
-## Telemetry database
+## Database used by Office Telemetry Dashboard
 
 The database, which was created by the **Office Telemetry Processor settings** wizard, is ready to be configured and connected to Office Telemetry Dashboard.
 
@@ -321,7 +327,7 @@ The following tables describe each registry value.
 
 |**Value name**|**Type**|**Value description and data**|**Required or optional**|
 |:-----|:-----|:-----|:-----|
-|enablelogging  <br/> |REG_DWORD  <br/> |Enables runtime telemetry and static scanning. This allows the agent to collect data.  <br/><br/> **Value:** <br/><br/> 1 = Enable logging and agent  <br/> 0 = Disable logging and agent  <br/> Default = 0 (Disable logging &amp; agent)  <br/> |Required  <br/> |
+|enablelogging  <br/> |REG_DWORD  <br/> |Enables runtime logging and static scanning. This allows the agent to collect data.  <br/><br/> **Value:** <br/><br/> 1 = Enable logging and agent  <br/> 0 = Disable logging and agent  <br/> Default = 0 (Disable logging &amp; agent)  <br/> |Required  <br/> |
 |enableupload  <br/> |REG_DWORD  <br/> |Turns on the data uploading feature in the agent so that the agent can periodically upload  data to the shared folder that is specified in CommonFileShare. <br/> <br/> **Value:** <br/><br/> 0 = Do not upload  <br/> 1 = Upload  <br/> Default = 0 (Do not upload)  <br/> |Required  <br/> |
 |commonfileshare  <br/> |REG_SZ  <br/> |Specifies the UNC path of the shared folder for storing data. <br/> <br/> **Value:** <br/><br/> \\\server\share  <br/> |Required  <br/> |
 |tag1  <br/> tag2  <br/> tag3  <br/> tag4  <br/> |REG_SZ  <br/> |Adds custom tags to the data that is sent by the agent. If you enable this policy setting, the specified custom tags are shown in Office Telemetry Dashboard, where you can filter the collected data by the tag name. You can replace **tag1**, **tag2**, **tag3**, and **tag4** with custom strings to categorize and filter the collected data (for example, replace **tag1** with a department name, replace **tag2** with the location of the users, and so on). <br/> <br/> **Value:** <br/><br/>  _tag1_ <br/>  _tag2_ <br/>  _tag3_ <br/>  _tag4_ <br/> |Optional  <br/> |
@@ -451,7 +457,7 @@ The following table describes some symptoms that you might encounter after you d
 |Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of firewall issues between the processor and the database.  <br/> |If there is a firewall between Office Telemetry Dashboard and the database, check whether the SQL port is enabled in the firewall configuration. The default port for SQL Server is 1433. See [Configure a Windows Firewall for Database Engine Access](https://go.microsoft.com/fwlink/p/?LinkId=254531) for more information.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of firewall issues between the processor, the database, and SQL Express.  <br/> |If there is a firewall between Office Telemetry Dashboard and the database, check whether the SQL port is enabled in the firewall configuration. The default port for SQL Express isn't a fixed value. Check the port number in the SQL Configuration Manager and add the port to the firewall configuration. See [Configure a Windows Firewall for Database Engine Access](https://go.microsoft.com/fwlink/p/?LinkId=254531) for more information.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The processor isn't working.  <br/> |See the processor log (%windows%\ServiceProfiles\NetworkService\AppData\Local\Temp\dperrorlog.txt) for more information.  <br/> |
-|Office Telemetry Dashboard can't connect to the database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database because of SQL Server permissions.  <br/> |Check the permission role for Office Telemetry Dashboard. Add the user to the td_readonly role by using OSQL, SQLCMD, Enterprise Manager, or the Telemetry Dashboard Administration Tool (Tdadm). See [Telemetry database](deploy-telemetry-dashboard.md#database) earlier in this article for more information.  <br/> |
+|Office Telemetry Dashboard can't connect to the database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database because of SQL Server permissions.  <br/> |Check the permission role for Office Telemetry Dashboard. Add the user to the td_readonly role by using OSQL, SQLCMD, Enterprise Manager, or the Telemetry Dashboard Administration Tool (Tdadm). See [Database used by Office Telemetry Dashboard](deploy-telemetry-dashboard.md#database) earlier in this article for more information.  <br/> |
 |Office Telemetry Dashboard can't connect to the database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If there are two or more instances of SQL Server, ensure that the **Data connection settings** dialog box in Office Telemetry Dashboard uses the correct SQL Server instance in the format  _Servername\SQLServerinstance_.  <br/> |
 |Office Telemetry Dashboard can't connect to the  database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server is SQL Express, ensure that the SQL Server instance name is correct. The default instance name for SQL Express differs from SQL Server, for example:  _Servername\SQLExpress_.  <br/> |
 |Office Telemetry Dashboard can't connect to the database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If the SQL Server default collation is case-sensitive (for example, the Japanese version of SQL Server is case-sensitive by default), ensure that you entered a case-sensitive database name in the **Data connection settings** dialog box in Office Telemetry Dashboard.  <br/> |

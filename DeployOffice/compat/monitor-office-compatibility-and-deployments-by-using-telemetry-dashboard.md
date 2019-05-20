@@ -64,7 +64,7 @@ After you connect Office Telemetry Dashboard to the database, new worksheets are
 
 ## Navigating in Office Telemetry Dashboard
 
-After all components are deployed and you connect Office Telemetry Dashboard to the database, new worksheets are added to display telemetry information about documents, solutions, and other information. The navigation pane on the left side of the Office Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. 
+After all components are deployed and you connect Office Telemetry Dashboard to the database, new worksheets are added to display information about documents, solutions, and other information. The navigation pane on the left side of the Office Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. 
    
 To learn more about the worksheets in Office Telemetry Dashboard, visit these resources:
   

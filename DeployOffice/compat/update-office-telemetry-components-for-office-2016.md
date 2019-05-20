@@ -16,7 +16,8 @@ description: "Learn how to update processors and the database so that they work 
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
-Follow these steps if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. These steps aren't needed if you were using Office Telemetry Dashboard in Office 2016 and are now moving to Office 2019.
+> [!IMPORTANT]
+> Follow these steps only if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. These steps aren't needed if you were using Office Telemetry Dashboard in Office 2016 and are now moving to Office 2019.
   
 When you install Office 2019 or Office 2016, Office Telemetry Dashboard and the built-in agents are updated to the new versions automatically. However, the processors and the database used by Office Telemetry Dashboard aren't updated, even if they are on the same computer as Office 2019 or Office 2016. 
   
