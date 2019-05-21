@@ -1,5 +1,5 @@
 ---
-title: "Plan an Office Telemetry Dashboard deployment"
+title: "Plan a deployment of Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_Compat
 description: "Learn about components and sizing, topology, hardware, and bandwidth recommendations for Office Telemetry Dashboard deployments."
 ---
 
-# Plan an Office Telemetry Dashboard deployment
+# Plan a deployment of Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 

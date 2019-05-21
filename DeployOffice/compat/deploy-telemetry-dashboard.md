@@ -17,7 +17,7 @@ description: "Explains how to deploy the processor, agent, and other components 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
 
-This article helps you deploy the five components of Office Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Plan an Office Telemetry Dashboard deployment](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
+This article helps you deploy the five components of Office Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Plan a deployment of Office Telemetry Dashboard](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
@@ -465,7 +465,7 @@ The following table describes some symptoms that you might encounter after you d
 ## Related topics
 
 - [Assess Office compatibility](assess-office-compatibility.md)
-- [Plan an Office Telemetry Dashboard deployment](plan-telemetry-dashboard-deployment.md)
+- [Plan a deployment of Office Telemetry Dashboard](plan-telemetry-dashboard-deployment.md)
 - [Monitor Office compatibility and deployments by using Office Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 
