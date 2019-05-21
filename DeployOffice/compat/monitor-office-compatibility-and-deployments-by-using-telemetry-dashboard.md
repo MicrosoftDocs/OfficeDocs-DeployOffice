@@ -78,7 +78,7 @@ To learn more about the worksheets in Office Telemetry Dashboard, visit these re
 
 ## Learn about the Office Telemetry Dashboard worksheets
 
-The following table briefly describes the primary worksheets in Office Telemetry Dashboard. All Office Telemetry Dashboard worksheets. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
+The following table briefly describes the primary worksheets in Office Telemetry Dashboard. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
   
 **Overview of Office Telemetry Dashboard worksheets**
 

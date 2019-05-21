@@ -24,7 +24,7 @@ When you deploy Office Telemetry Dashboard, you must consider several factors. T
 
 ## Introducing Office Telemetry Dashboard
 
-Office Telemetry Dashboard is an Excel workbook that displays compatibility and inventory data about the Office files, Office add-ins, and Office solutions that are used in an organization. For a visual representation of the components used to support Office Telemetry Dashboard and how they work, [download this poster](https://go.microsoft.com/fwlink/p/?LinkId=266531), which includes a description of all components, a list of what Office files are monitored, how data collection works, and more. Although the poster is for an earlier version of Office, the information also applies to newer versions of Office.
+Office Telemetry Dashboard is an Excel workbook that displays compatibility and inventory, usage, and health data about the Office files, Office add-ins, and Office solutions that are used in an organization. For a visual representation of the components used to support Office Telemetry Dashboard and how they work, [download this poster](https://go.microsoft.com/fwlink/p/?LinkId=266531), which includes a description of all components, a list of what Office files are monitored, how data collection works, and more. Although the poster is for an earlier version of Office, the information also applies to newer versions of Office.
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects usage and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
