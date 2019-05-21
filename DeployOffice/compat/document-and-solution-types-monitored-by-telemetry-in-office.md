@@ -33,5 +33,5 @@ The following table lists the document and solution types that Office Telemetry 
    
 ## Related topics
 
-- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 

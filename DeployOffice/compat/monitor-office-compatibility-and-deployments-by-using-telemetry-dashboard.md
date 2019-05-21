@@ -250,7 +250,7 @@ For more information about how to troubleshoot the processor, see [Troubleshooti
   
 ## Related topics
 
-- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Assess Office compatibility](assess-office-compatibility.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)

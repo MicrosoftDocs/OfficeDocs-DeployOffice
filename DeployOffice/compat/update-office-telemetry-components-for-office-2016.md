@@ -106,4 +106,4 @@ On a computer where Office 2019 or Office 2016 is running, open Office Telemetry
 
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Office Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
-- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)

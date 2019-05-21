@@ -467,5 +467,5 @@ The following table describes some symptoms that you might encounter after you d
 - [Assess Office compatibility](assess-office-compatibility.md)
 - [Office Telemetry Dashboard topology, sizing, and bandwidth planning](plan-telemetry-dashboard-deployment.md)
 - [Monitor Office compatibility and deployments by using Office Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
-- [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 

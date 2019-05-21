@@ -1,9 +1,9 @@
 # Compatibility and readiness in Office
 
-## [Office compatibility roadmap for IT Pros](compatibility-and-telemetry-in-office.md)
 ## [Assess Office compatibility](assess-office-compatibility.md)
 
 ## Office Telemetry Dashboard
+### [Resources guide](compatibility-and-telemetry-in-office.md)
 ### [Plan](plan-telemetry-dashboard-deployment.md)
 ### [Deploy](deploy-telemetry-dashboard.md)
 ### [Update components](update-office-telemetry-components-for-office-2016.md)
