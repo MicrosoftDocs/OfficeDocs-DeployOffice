@@ -12,7 +12,7 @@ ms.custom: Ent_Office_Compat
 description: "Describes how to improve Office performance by managing add-ins by using Office Telemetry Dashboard."
 ---
 
-# Manage add-ins by using Office Telemetry Dashboard in Office
+# Manage add-ins by using Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
