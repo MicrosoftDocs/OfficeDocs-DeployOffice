@@ -35,8 +35,8 @@ The date when Teams starts being installed with ***new*** installations of Offic
 If you're ready to deploy Teams to the users in your organization, you don't have to wait until you deploy Version 1902 of Office 365 ProPlus. If you want to install Teams to an existing installation of Office 365 ProPlus, you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), or you can deploy it for them by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 
 > [!NOTE]
-> Teams is already installed by default for ***new*** installations of the following:
-> - Office 365 Business, starting with Version 1901, which was released on January 31, 2019. Office 365 Business is the version of Office that is included with the Office 365 Business and Office 365 Business Premium plans.
+> Teams is also included with the following ***new*** installations:
+> - Office 365 Business, starting with Version 1901, which was released on January 31, 2019. Office 365 Business is the version of Office that is included with certain business plans, such as the Microsoft 365 Business plan and the Office 365 Business Premium plan.
 > - Office for Mac, starting with Version 16.21, which was released on January 16, 2019. Office for Mac comes with any plan that includes Office 365 Business or Office 365 ProPlus. For more information, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
 ## How to exclude Microsoft Teams from being installed with Office 365 ProPlus on devices running Windows
@@ -70,7 +70,7 @@ If you’re deploying Office 365 ProPlus by using the Office 365 Client Installa
 
 If you're deploying Office 365 ProPlus by using Microsoft Intune, there is a checkbox to exclude Teams on the **Configure App Suite** pane.  
 
-If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being installed by default.
+If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being included as part of the installation..
 
 If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall** a program. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user.
 
@@ -87,8 +87,8 @@ The date when Teams starts being added to ***existing*** installations of Office
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
 |Monthly Channel |*Version 1906*<sup>*</sup> | *Late June 2019*  |
-|Semi-Annual Channel (Targeted)| *To be determined*  | *September 2019*  |
-|Semi-Annual Channel| *To be determined*  |*January 2020* |
+|Semi-Annual Channel (Targeted)| *To be determined*  | *To be determined*   |
+|Semi-Annual Channel| *To be determined*  |*To be determined*  |
 
 <sup>*</sup> *For Office 365 Business, Teams will be added starting with Version 1905 in the 2nd half of June 2019.*
 
@@ -110,7 +110,7 @@ If you don't want Teams to be added to ***existing*** installations of Office 36
 > - If your existing installation of Office 365 ProPlus has excluded other apps, such as Access, you need to include a line in your configuration.xmi file for each of those excluded apps. Otherwise, those apps will be installed on the device.
 > - We are working on a policy setting that you can use with Group Policy or the [Office cloud policy service](overview-office-cloud-policy-service.md) to make it easier to exclude Teams from being installed as part of an update. We'll update this article with more information about that policy setting once it's available.
 
-Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using supports the default installation of Teams.
+Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using includes Teams as part of the installation.
 
 ## Feature and quality updates for Microsoft Teams
 
@@ -118,11 +118,11 @@ After Teams is installed, it's automatically updated approximately every two wee
 
 ## Microsoft Teams installations on a Mac
 
-If you're using Version 16.21, or later, of the Office suite install package to deploy on a Mac, Teams will be installed by default.
+If you're using Version 16.21, or later, of the Office suite install package to deploy on a Mac, Teams will be included as part of the installation.
 
-If you don’t want Teams installed by default, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
+If you don’t want Teams included as part of the installation, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
 
-If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being installed by default.
+If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being included as part of the installation.
 
 To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the dock, then hold down Option and choose **Force Quit**. Open the **Application Folder**, select **Microsoft Teams**, and move it to the **Trash**.
 
