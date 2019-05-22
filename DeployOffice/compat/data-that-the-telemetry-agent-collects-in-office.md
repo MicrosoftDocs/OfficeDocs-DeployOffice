@@ -1,5 +1,5 @@
 ---
-title: "Data that the telemetry agent collects in Office"
+title: "Data collected by the agent for Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,49 +9,41 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Learn about the data that the telemetry agent collects for Office."
+description: "Learn about the data collected by the agent for Office Telemetry Dashboard."
 ---
 
-# Data that the telemetry agent collects in Office
+# Data collected by the agent for Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
-
-> [!NOTE]
-> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
   
-The telemetry agent allows enterprise administrators to collect several types of telemetry data for their installations of Office, such as the following:
+The Office Telemetry Dashboard uses an agent to collect several types of inventory, usage, and health data for installations of Office, such as the following:
   
 - The file names of Office files that are in the Most Recently Used list.
-
 - The names of add-ins and solutions that interact with Office.
-
 - System information such as user name and computer name.
     
-The agent collects different kinds of information for different applications as applicable. For example, for Excel, Microsoft Outlook, PowerPoint, and Word, the agent collects data that allows you to determine:
+The agent collects different kinds of information for different applications as applicable. For example, for Excel, Outlook, PowerPoint, and Word, the agent collects data that allows you to determine:
   
 - Whether the document has specific metadata for a particular file, such VBA macros, data connections, or ActiveX controls.
-
 - Whether the document has encountered compatibility issues or critical errors while it is being used.
-  
 - How Office files and solutions are used on a user's computer. Data of this type that is gathered by the agent is referred to as session data. 
     
 The agent doesn't collect any of the following kinds of information:
   
 - The contents of files.
-    
 - Information about files that are not in the Most Recently Used list.
-
+ 
 > [!IMPORTANT]
-> The telemetry data that the telemetry agent collects for Office is not related to the diagnostic data collected for Office by Microsoft. For more information about that data, see [Diagnostic data in Office](https://support.office.com/article/f409137d-15d3-4803-a8ae-d26fcbfc91dd).
-    
-    
-<a name="TelemetryApps"> </a>
+> - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
 
-## Office applications from which the telemetry agent collect data
 
-The telemetry agent collects inventory-related data, hardware and software data, and user data in Office 2019, Office 2016, Office 2013, Office 2010, Office 2007, and Office 2003 for the following applications:
+## Office applications from which the agent collects data
+
+The agent collects inventory-related data, hardware and software data, and user data in Office 2019, Office 2016, Office 2013, Office 2010, Office 2007, and Office 2003 for the following applications:
   
 - Access
 - Excel
@@ -63,89 +55,65 @@ The telemetry agent collects inventory-related data, hardware and software data,
 - Visio
 - Word
     
-For Office 2019, Office 2016, and Office 2013 only, the agent collects telemetry data for the following applications:
+For Office 2019, Office 2016, and Office 2013 only, the agent collects data for the following applications:
   
 - Excel
 - Outlook
 - PowerPoint
 - Word
-    
-<a name="allComputers"> </a>
 
-## Telemetry data that is collected by the agent for all computers that it monitors
+## Data that is collected by the agent for all computers that it monitors
 
-The agent collects the following data for all computers that it monitors. This data includes inventory data, user data, and hardware and software data. You can find the list of Office versions and operating systems that the agent supports in [Telemetry agent](deploy-telemetry-dashboard.md#agent).
+The agent collects the following data for all computers that it monitors. This data includes inventory data, user data, and hardware and software data. You can find the list of Office versions and operating systems that the agent supports in [Office Telemetry Dashboard agent](deploy-telemetry-dashboard.md#agent).
   
 ### Data about recently opened Office documents and templates
 
-The agent collects the following data about recently opened Office documents and templates. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
+The agent collects the following data about recently opened Office documents and templates. This data is sorted by the worksheet where it appears in Office Telemetry Dashboard.
   
-**Documents** worksheet: 
+**Documents** worksheet:
   
 - File name
-    
 - File format (extension)
-    
 - Total users
-    
 - Number of Office
     
-**Document details** worksheet: 
+**Document details** worksheet:
   
 - User name
-    
 - Computer name
-    
 - Location
-    
 - Size (KB)
-    
 - Author
-    
 - Last loaded
-    
 - Title
-    
 - Office version
     
 Exceptions to data collected about recently opened Office documents and templates
   
-- For OneNote, Telemetry Agent collects only Notebook name and location.
-    
-- For Outlook, Telemetry Agent doesn't collect any inventory data of document files.
-    
+- For OneNote, the agent collects only Notebook name and location.
+- For Outlook, the agent doesn't collect any inventory data of document files.
 - For files that are stored in a network share or SharePoint site, the agent collects only the file name and location.
-    
 - If the list of most recently used documents is disabled on a user's computer (by Group Policy or the user disabled it by themselves), the agent doesn't collect inventory data for document files and templates.
     
 ### Data about recently loaded add-ins and apps for Office
 
-The agent collects the following data about recently loaded add-ins and apps for Office. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
+The agent collects the following data about recently loaded add-ins and apps for Office. This data is sorted by the worksheet where it appears in Office Telemetry Dashboard.
   
-**Solutions** worksheet: 
+**Solutions** worksheet:
   
 - Solution name
-    
 - Total users
+- Number of Office users
     
-- Number of Office users 
-    
-**Solution details** worksheet: 
+**Solution details** worksheet:
   
 - User name
-    
 - Computer name
-    
 - Solution version
-    
 - Architecture (CPU architectures: x86/x64/ARM)
-    
 - Load time
-    
 - Description
-    
 - Size (KB)
-    
 - Location (.dll/manifest file path)
     
 ### User data
@@ -153,108 +121,79 @@ The agent collects the following data about recently loaded add-ins and apps for
 The agent collects the following user data. This data appears in the **Agents** worksheet. 
   
 - User name
-    
-- Level (Telemetry Agent status)
-    
+- Level
 - Computer
-    
 - Last updated
-    
 - Label (1-4)
-    
 - Version of the agent
     
 ### Data about hardware and software
 
-The agent collects the following data about hardware and software. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
+The agent collects the following data about hardware and software. This data is sorted by the worksheet where it appears in Office Telemetry Dashboard.
   
-**Telemetry Processor** worksheet: 
+**Telemetry Processor** worksheet:
   
 - Computer name
-    
-- Level (telemetry processor status)
-    
+- Level
 - Users
-    
 - Computers
-    
 - Last updated (date and time)
     
-**Deployments** worksheet: 
+**Deployments** worksheet:
   
 - Office versions
-    
 - Number of 32-bit deployments
-    
 - Number of 64-bit deployments
-    
 - Number of ARM deployments
     
-<a name="data2016"> </a>
 
-## Telemetry data that is collected only for Office 2019, Office 2016, and Office 2013
+## Data that is collected only for Office 2019, Office 2016, and Office 2013
 
-In Office 2019, Office 2016, and Office 2013, the agent also collects the following telemetry data for Excel, Microsoft Outlook, PowerPoint, and Word. This data is sorted by the worksheet where it appears in Telemetry Dashboard.
+In Office 2019, Office 2016, and Office 2013, the agent also collects the following  data for Excel, Outlook, PowerPoint, and Word. This data is sorted by the worksheet where it appears in Office Telemetry Dashboard.
   
-Telemetry data is collected during application run time. If the inventory data was collected by the agent, but the application hasn't started collecting telemetry data, then some data, such as **Success (%)** and **Load time**, won't be shown in the dashboard until the user opens documents or loads solutions during application run time.
+Data is collected during application run time. If the inventory data was collected by the agent, but the application hasn't started collecting data, then some data, such as **Success (%)** and **Load time**, won't be shown in the dashboard until the user opens documents or loads solutions during application run time.
   
-**Documents** worksheet: 
+**Documents** worksheet:
   
 - Success (%)
-    
 - Sessions
-    
 - Critical compatibility issue or crash
-    
 - Informative compatibility issue or load failure
     
-**Document details** worksheet: 
+**Document details** worksheet:
   
 VBA, OLE, external data connection, ActiveX control, and assembly reference information are logged starting from the second time that the user opens the document. This information won't be collected if the user opens the document only one time.
   
 - Last loaded date and time
-    
 - Has VBA? (true/false)
-    
 - Has OLE? (true/false)
-    
 - Has external data connection? (true/false)
-    
 - Has assembly reference? (true/false)
     
-**Document sessions** worksheet: 
+**Document sessions** worksheet:
   
 - Date and time that the critical or informative event happened
     
-**Solutions** worksheet: 
+**Solutions** worksheet:
   
 - Success (%)
-    
 - Sessions
-    
 - Critical compatibility issue or crash
-    
 - Informative compatibility issue or load failure
-    
 - Load time (time taken to load add-ins or apps for Office)
     
-**Solution issues** worksheet: 
+**Solution issues** worksheet:
   
 - Event ID
-    
 - Title
-    
 - Explanation
-    
 - More info
-    
 - Users
-    
 - Sessions
     
 ## Related topics
 
-- [Manage the privacy of data monitored by telemetry in Office](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
+- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 
