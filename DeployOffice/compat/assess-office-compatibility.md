@@ -27,9 +27,9 @@ Keeping an Office deployment project on track requires two key aspects: using th
 
 Office Telemetry Dashboard and its components is a compatibility monitoring framework introduced in Office 2013 that replaced the Office 2010 compatibility tools Office Migration Planning Manager (OMPM), Office Code Compatibility Inspector (OCCI), and Office Environment Assessment Tool (OEAT). When you use Office Telemetry Dashboard as part of the Office compatibility process, it helps minimize the time that you spend assessing Office compatibility. It also reduces the risks associated with an Office upgrade. 
   
-Office telemetry works as follows: When an Office document or solution is loaded, used, closed, or raises an error in certain Office applications, the application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked.
+Office Telemetry Dashboard works as follows: When an Office document or solution is loaded, used, closed, or raises an error in certain Office applications, the application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked.
   
-How does Office telemetry work in earlier versions of Office? Office telemetry is not built into Office 2003, Office 2007, and Office 2010. For those clients, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with newer Office clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
+How does Office Telemetry Dashboard work in earlier versions of Office? Office Telemetry Dashboard is not built into Office 2003, Office 2007, and Office 2010. For those clients, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with newer Office clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
@@ -52,7 +52,7 @@ The Office compatibility tools address common issues that can make Office deploy
 |![Icon for the Validate phase](../images/ORK_Compat_Validate_reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  <br/> |
 |![Icon for the Manage phase](../images/ORK_Compat_Manage_reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  <br/> |
    
-In this article, we'll discuss each phase of the compatibility process and describe how you can use Office telemetry tools to support the process.
+In this article, we'll discuss each phase of the compatibility process and describe how you can use Office Telemetry Dashboard to support the process.
   
 <a name="discover"> </a>
 
