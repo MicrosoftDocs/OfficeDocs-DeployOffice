@@ -1,5 +1,5 @@
 ---
-title: "Document and solution types monitored by telemetry in Office"
+title: "Document and solution types monitored by Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,21 +9,14 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Lists document and solution types that are monitored by Office telemetry."
+description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
 ---
 
-# Document and solution types monitored by telemetry in Office
+# Document and solution types monitored by Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
-
-> [!NOTE]
-> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
-
-
-## Document and solution types that are monitored by Office telemetry
-
-The following table lists the document and solutions that Office telemetry monitors in Office 2019 and Office 2016.
+The following table lists the document and solution types that Office Telemetry Dashboard monitors in Office 2019 and Office 2016.
   
 
 |**Type**|**Office Applications**|**Description**|
@@ -40,5 +33,5 @@ The following table lists the document and solutions that Office telemetry monit
    
 ## Related topics
 
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 
