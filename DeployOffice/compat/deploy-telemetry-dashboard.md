@@ -357,7 +357,7 @@ You can also use Group Policy to enable and configure agents. Download the Admin
 
 |**Setting name**|**Description**|**Required or optional**|
 |:-----|:-----|:-----|
-|Turn on telemetry data collection  <br/> |Turns on the data collection features in Office that are used by Office Telemetry Dashboard and the telemetry log. By default, data collection is disabled in Office.  <br/> |Required  <br/> |
+|Turn on telemetry data collection  <br/> |Turns on the data collection features in Office that are used by Office Telemetry Dashboard and Office Telemetry Log. By default, data collection is disabled in Office.  <br/> |Required  <br/> |
 |Turn on data uploading for Office Telemetry Agent  <br/> |Turns on the data uploading feature in the agent so that the agent can periodically upload data to a shared folder. By default, data uploading is disabled.  <br/> |Required  <br/> |
 |Specify the UNC path to store Office telemetry data  <br/> |Specifies the Uniform Naming Convention (UNC) path of a shared folder to which the agent sends data.  <br/> |Required  <br/> |
 |Specify custom tags for Office telemetry data  <br/> |Adds custom tags to the data that is sent by the agent. If you enable this policy setting, the specified custom tags are shown in Office Telemetry Dashboard, where you can filter the collected data by the tag name. You can specify any string that you want to categorize and filter the collected data (for example, department name, title of user, and so on).  <br/> |Optional  <br/> |
