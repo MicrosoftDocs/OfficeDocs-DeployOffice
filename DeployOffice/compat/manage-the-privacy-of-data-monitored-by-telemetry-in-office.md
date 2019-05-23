@@ -91,7 +91,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 The following table describes the name and path of the Group Policy setting that enables file obfuscation. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
-**Group policy setting that enables file obfuscation**
+**Group Policy setting that enables file obfuscation**
 
 |**Setting name**|**Path**|
 |:-----|:-----|
