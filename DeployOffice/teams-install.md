@@ -14,15 +14,21 @@ description: "Provides Office admins with an overview of how Microsoft Teams is 
 
 # Deploy Microsoft Teams with Office 365 ProPlus
 
-In the past, Microsoft Teams was a separate installation from Office 365 ProPlus. But, starting in March 2019 with Version 1902, Teams is included as part of ***new*** installations of Office 365 ProPlus. If Teams is already installed on the device, no changes are made to that installation of Teams.
+In the past, Microsoft Teams was a separate installation from Office 365 ProPlus. But, starting with Version 1902, Teams is included as part of ***new*** installations of Office 365 ProPlus. If Teams is already installed on the device, no changes are made to that installation of Teams.
 
 If Skype for Business is already installed on the device, Skype for Business won’t be removed and will continue to function as before. Also, Skype for Business will continue to be installed with new installations of Office 365 ProPlus, unless you configure your installation to exclude it.
 
 > [!IMPORTANT]
 > Starting in the second half of June 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) on Windows devices when you update your existing installation to the latest version. For more information, see [What about existing installations of Office 365 ProPlus?](#what-about-existing-installations-of-office-365-proplus-on-devices-running-windows)
 
+If you're ready to deploy Teams to the users in your organization, you don't have to wait for this rollout schedule. Instead, you can deploy it now for your users by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment) or you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads).
 
-## When will Microsoft Teams start being installed with Office 365 ProPlus?
+If your organization isn't ready to deploy Teams, we have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) or [existing](#what-about-existing-installations-of-office-365-proplus-on-devices-running-windows) installations of Office 365 ProPlus.
+
+For information about deploying Teams on a Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
+
+
+## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
 
 The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule, which is subject to change.
 
@@ -32,14 +38,12 @@ The date when Teams starts being installed with ***new*** installations of Offic
 |Semi-Annual Channel (Targeted)| Version 1902   | March 12, 2019  |
 |Semi-Annual Channel| Version 1902  |*July 9, 2019* |
 
-If you're ready to deploy Teams to the users in your organization, you don't have to wait until you deploy Version 1902 of Office 365 ProPlus. If you want to install Teams to an existing installation of Office 365 ProPlus, you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), or you can deploy it for them by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
-
 > [!NOTE]
 > Teams is also included with the following ***new*** installations:
 > - Office 365 Business, starting with Version 1901, which was released on January 31, 2019. Office 365 Business is the version of Office that is included with certain business plans, such as the Microsoft 365 Business plan and the Office 365 Business Premium plan.
 > - Office for Mac, starting with Version 16.21, which was released on January 16, 2019. Office for Mac comes with any plan that includes Office 365 Business or Office 365 ProPlus. For more information, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
-## How to exclude Microsoft Teams from being installed with Office 365 ProPlus on devices running Windows
+## How to exclude Microsoft Teams from new installations of Office 365 ProPlus
 
 If you don’t want Teams included when you install Office 365 ProPlus on devices running Windows, you can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
