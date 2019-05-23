@@ -1,5 +1,5 @@
 ---
-title: "Monitor Office compatibility and deployments by using Telemetry Dashboard"
+title: "Monitor Office compatibility and deployments by using Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,38 +9,41 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Telemetry Dashboard."
+description: "Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Office Telemetry Dashboard."
 ---
 
-# Monitor Office compatibility and deployments by using Telemetry Dashboard
+# Monitor Office compatibility and deployments by using Office Telemetry Dashboard
 
 ***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
 
-> [!NOTE]
-> To assess your Office compatibility, we recommend using the [Readiness Toolkit for Office add-ins and VBA](https://www.microsoft.com/en-us/download/details.aspx?id=55983). The Readiness Toolkit is a free download and can be used to identify the VBA macros and add-ins used in your organization. Also, the Excel-based readiness reports can tell you which add-ins are adopted or supported in Office 365 ProPlus and can provide suggestions on how to remediate VBA macros issues that are identified. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](../use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+ 
+After you deploy the components of Office Telemetry Dashboard and the agents have collected data, you can use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Office Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Office Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Office Telemetry Dashboard. 
 
-  
-After you deploy the components of Telemetry Dashboard and the telemetry agents have collected data, you can use Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Telemetry Dashboard. 
+> [!IMPORTANT]
+> - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
+> - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
   
 <a name="openTD"> </a>
     
-## Open Telemetry Dashboard and connect to the telemetry database
+## Open Office Telemetry Dashboard and connect to the database
 
-After the Telemetry Dashboard components are deployed, you are ready to start Telemetry Dashboard and connect to the telemetry database. 
+After the Office Telemetry Dashboard components are deployed, you are ready to start Office Telemetry Dashboard and connect to the database. 
   
-To help you get started, view this short video called  *Quick tips for Telemetry Dashboard navigation*  . 
+To help you get started, view this short video called  *Quick tips for Office Telemetry Dashboard navigation*  . 
   
-**Short video about Telemetry Dashboard navigation**
+**Short video about Office Telemetry Dashboard navigation**
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e766090b-4229-45d5-a9cc-dee992054990?autoplay=false]
 
 *Although this video is for an earlier version of Office, the information also applies to newer versions of Office.*
   
-The way you start Telemetry Dashboard depends on the operating system you're using. The following table lists and describes the procedures for each supported operating system:
+The way you start Office Telemetry Dashboard depends on the operating system you're using. The following table lists and describes the procedures for each supported operating system:
   
-**To start Telemetry Dashboard**
+**To start Office Telemetry Dashboard**
 
-|**Operating system**|**How to start Telemetry Dashboard**|
+|**Operating system**|**How to start Office Telemetry Dashboard**|
 |:-----|:-----|
 |Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Micorosft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
@@ -49,66 +52,66 @@ The way you start Telemetry Dashboard depends on the operating system you're usi
 For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
    
-### To connect to the telemetry database
+### To connect to the database
 
 1. On the **Getting started** worksheet, choose **Connect to Database**.
     
-2. In the **Data connection settings** dialog box, enter the name of the SQL Server server and database where telemetry data is stored, and then choose **OK**.
+2. In the **Data connection settings** dialog box, enter the name of the SQL Server server and database where data is stored, and then choose **OK**.
     
-After you connect Telemetry Dashboard to the telemetry database, new worksheets are added to display information about Office documents, solutions, and other information. If you haven't yet deployed Telemetry Dashboard components, or if data isn't populating the dashboard as expected, see [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md).
+After you connect Office Telemetry Dashboard to the database, new worksheets are added to display information about Office documents, solutions, and other information. If you haven't yet deployed Office Telemetry Dashboard components, or if data isn't populating the dashboard as expected, see [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md).
   
 <a name="bkmk_telemetrydashboardlayoutandnavigation"> </a>
 
-## Navigating in Telemetry Dashboard
+## Navigating in Office Telemetry Dashboard
 
-After all components are deployed and you connect Telemetry Dashboard to the telemetry database, new worksheets are added to display telemetry information about documents, solutions, and other information. The navigation pane on the left side of the Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. 
+After all components are deployed and you connect Office Telemetry Dashboard to the database, new worksheets are added to display information about documents, solutions, and other information. The navigation pane on the left side of the Office Telemetry Dashboard window is the primary way to navigate through the worksheets in the dashboard. You can also use the navigation pane to change the data range and label filters. 
    
-To learn more about the worksheets in Telemetry Dashboard, visit these resources:
+To learn more about the worksheets in Office Telemetry Dashboard, visit these resources:
   
-- This article includes a brief overview of the worksheets and how to use them in [Learn about the Telemetry Dashboard worksheets](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#worksheets). The rest of this article tells you how to adjust filters, how to determine overall Office stability, and how to investigate unstable documents and solutions.
+- This article includes a brief overview of the worksheets and how to use them in [Learn about the Office Telemetry Dashboard worksheets](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#worksheets). The rest of this article tells you how to adjust filters, how to determine overall Office stability, and how to investigate unstable documents and solutions.
     
-- You can dig deeper by reading [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md) which describes every worksheet in Telemetry Dashboard in detail. This is helpful if you want more information about the columns and data shown in a worksheet. 
+- You can dig deeper by reading [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md) which describes every worksheet in Office Telemetry Dashboard in detail. This is helpful if you want more information about the columns and data shown in a worksheet. 
     
-- [Custom reporting and database schema reference for Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md) helps you create custom reports in Telemetry Dashboard using a PivotTable report. Custom reports can help you customize how telemetry data is displayed for different business purposes. For example, you can view all Warning errors for Excel in a certain business group, create a list of all solutions that use unregistered ActiveX controls, and more. 
+- [Custom reporting and database schema reference for Office Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md) helps you create custom reports in Office Telemetry Dashboard using a PivotTable report. Custom reports can help you customize how data is displayed for different business purposes. For example, you can view all Warning errors for Excel in a certain business group, create a list of all solutions that use unregistered ActiveX controls, and more. 
     
 <a name="worksheets"> </a>
 
-## Learn about the Telemetry Dashboard worksheets
+## Learn about the Office Telemetry Dashboard worksheets
 
-The following table briefly describes the primary worksheets in Telemetry Dashboard. All Telemetry Dashboard worksheets. For more detailed information about the worksheets, see [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
+The following table briefly describes the primary worksheets in Office Telemetry Dashboard. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
   
-**Overview of Telemetry Dashboard worksheets**
+**Overview of Office Telemetry Dashboard worksheets**
 
 |**Worksheet name**|**Purpose**|
 |:-----|:-----|
 |Overview  <br/> |Provides a quick view of the health of Office documents and solutions and a view of deployment trends. The links on this worksheet help you investigate Office compatibility and stability issues in your organization.  <br/> |
 |Documents  <br/> |Helps you investigate which Office documents are the most heavily used and identify documents that are experiencing issues.  <br/> <br/>This worksheet shows Office documents that were detected in the Most Recently Used (MRU) files in the local registry of monitored clients that run Office and earlier supported versions of Office.  <br/> <br/>The list also contains load events for monitored clients that run Office. Select any of the value links to open a worksheet that provides more detail. For example, in the **Total Users** column, you can select any number to view the users who have that file in their MRU list.  <br/> |
-|Solutions  <br/> |Shows details about solutions, such as COM add-ins, that were detected on monitored computers. This worksheet also shows telemetry data about load events on monitored client computers that run Office.  <br/> <br/>Check the **Critical** column for a count of the number of unique users who have hit critical errors that the solutions are causing on Office clients. By reviewing critical errors and the number of users affected, you can decide whether to forcibly block add-ins that are crashing for many users. To do so, choose the **Add-in management mode** link at the top of the worksheet.  <br/> <br/>You can also investigate performance issues that might be causing a solution to take a longer time to load than expected on some computers. The load time values that are displayed in this worksheet are statistical averages. Select on of the value links to see individual user load times for a particular document.  <br/> |
-|Telemetry Processor  <br/> |Lists the servers that run a telemetry processor, the number of users and computers that are monitored, and the date and time of the last update.  <br/> |
+|Solutions  <br/> |Shows details about solutions, such as COM add-ins, that were detected on monitored computers. This worksheet also shows data about load events on monitored client computers that run Office.  <br/> <br/>Check the **Critical** column for a count of the number of unique users who have hit critical errors that the solutions are causing on Office clients. By reviewing critical errors and the number of users affected, you can decide whether to forcibly block add-ins that are crashing for many users. To do so, choose the **Add-in management mode** link at the top of the worksheet.  <br/> <br/>You can also investigate performance issues that might be causing a solution to take a longer time to load than expected on some computers. The load time values that are displayed in this worksheet are statistical averages. Select on of the value links to see individual user load times for a particular document.  <br/> |
+|Telemetry Processor  <br/> |Lists the servers that run a processor, the number of users and computers that are monitored, and the date and time of the last update.  <br/> |
 |Deployments  <br/> |Lists the versions of Office that are detected and other details, such as architecture type and number of unique instances of each version.  <br/> |
-|Custom report  <br/> |Helps you to create a PivotTable report so that you can customize how you view the data in Telemetry Dashboard. Create a custom report if the **Documents** and **Solutions** worksheets don't display data in the way that you want to view it. To learn more, see [Custom reporting and database schema reference for Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md). <br/> |
-|Getting started  <br/> |Provides step-by-step guidance to deploy Telemetry Dashboard components.  <br/> |
-|Telemetry Dashboard guide  <br/> |Provides a brief tutorial on Telemetry Dashboard concepts.  <br/> |
+|Custom report  <br/> |Helps you to create a PivotTable report so that you can customize how you view the data in Office Telemetry Dashboard. Create a custom report if the **Documents** and **Solutions** worksheets don't display data in the way that you want to view it. To learn more, see [Custom reporting and database schema reference for Office Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md). <br/> |
+|Getting started  <br/> |Provides step-by-step guidance to deploy Office Telemetry Dashboard components.  <br/> |
+|Office Telemetry Dashboard guide  <br/> |Provides a brief tutorial on Office Telemetry Dashboard concepts.  <br/> |
    
 <a name="scope"> </a>
 
-## Use filters to adjust what's shown in a Telemetry Dashboard worksheet
+## Use filters to adjust what's shown in an Office Telemetry Dashboard worksheet
 
-In the navigation pane on the left side of the dashboard, there are filters called **Label1**, **Label2**, **Label3**, **Label4**, **Date range**, and **View**. You can use these filters to change the scope of the data that is shown in a worksheet. Any time that you change a filter, you must select the **Refresh** button ![An image of the button on the Office Telemetry Dashboard that refreshe the data in the content pane.](../images/ORK_Telem_RefreshIcon.png) to refresh the data in the content pane. The **Refresh** button is located in the upper-right corner of most worksheets. When you refresh the data, the sorting order is automatically reset. You can verify when the content pane was last updated by referring to the time stamp that is located below the **Refresh** button on the navigation pane. 
+In the navigation pane on the left side of the dashboard, there are filters called **Label1**, **Label2**, **Label3**, **Label4**, **Date range**, and **View**. You can use these filters to change the scope of the data that is shown in a worksheet. Any time that you change a filter, you must select the **Refresh** button ![An image of the button on the Office Telemetry Dashboard that refreshes the data in the content pane.](../images/ORK_Telem_RefreshIcon.png) to refresh the data in the content pane. The **Refresh** button is located in the upper-right corner of most worksheets. When you refresh the data, the sorting order is automatically reset. You can verify when the content pane was last updated by referring to the time stamp that is located below the **Refresh** button on the navigation pane. 
   
 **Label filters**
 - Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.
-- The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Telemetry agent](deploy-telemetry-dashboard.md#agent).
+- The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Office Telemetry Agent](deploy-telemetry-dashboard.md#agent).
 
-  ![An image of the label drop down box on the Office Telemetry dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
+  ![An image of the label drop down box on the Office Telemetry Dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
 
 
 **Date range filter**
-- Use the **Date range** filter to choose the date range for the telemetry data that you want to view. This helps you watch trends over longer periods of time, or drill down and find more recent data for analysis.
+- Use the **Date range** filter to choose the date range for the data that you want to view. This helps you watch trends over longer periods of time, or drill down and find more recent data for analysis.
 - The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.
-- The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the telemetry database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
+- The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
 
-  ![An image of the Date Range drop down box in the Office Telemetry dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
+  ![An image of the Date Range drop down box in the Office Telemetry Dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
 
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:
@@ -126,9 +129,9 @@ The **Overview** worksheet allows you to quickly understand how your critical do
   
 The following screen shot shows the **Overview** worksheet. 
   
-**The Overview worksheet in Telemetry Dashboard**
+**The Overview worksheet in Office Telemetry Dashboard**
 
-![An screenshot of the main Overview worksheet view on the Office Telemetry dashboard.](../images/ORK_Telem_OverviewWSmain.png)
+![An screenshot of the main Overview worksheet view on the Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
   
 The four numbers that are highlighted at the top of the content pane show the number of stable and unstable documents and solutions. If you see a high unstable count, you should investigate to find out what is occurring. 
   
@@ -170,7 +173,7 @@ Back on the **Overview** worksheet, under the stable and unstable counts, you ca
   
 **How trend data is illustrated on the Overview worksheet**
 
-![A screenshot of a drill down Overview worksheet on the Office Telemetry dashboard showing unstable vs. stable document summary over an extended period.](../images/ORK_Telem_OverviewStableUnstable.gif)
+![A screenshot of a drill down Overview worksheet on the Office Telemetry Dashboard showing unstable vs. stable document summary over an extended period.](../images/ORK_Telem_OverviewStableUnstable.gif)
   
 <a name="deploystatus"> </a>
 
@@ -185,29 +188,29 @@ The following image shows an example of the Office deployment trend chart on the
   
 **Office deployment trend chart on the Overview worksheet**
 
-![A screenshot of deployment trends as displayed on the Overview page in the Office Telemetry dashboard.](../images/ORK_Telem_OverviewDeploymentTrend.png)
+![A screenshot of deployment trends as displayed on the Overview page in the Office Telemetry Dashboard.](../images/ORK_Telem_OverviewDeploymentTrend.png)
   
 <a name="tshoot"> </a>
 
-## Troubleshoot error messages that are shown in Telemetry Dashboard
+## Troubleshoot error messages that are shown in Office Telemetry Dashboard
 
-As you use Telemetry Dashboard, you might notice error messages that are shown in yellow banners at the top of the dashboard. The following sections describe common error messages. 
+As you use Office Telemetry Dashboard, you might notice error messages that are shown in yellow banners at the top of the dashboard. The following sections describe common error messages. 
   
 <a name="EnableCOM"> </a>
 
 ### You see the error message "The Telemetry Dashboard COM add-in is not enabled or installed."
 
-When you view a worksheet in Telemetry Dashboard, you might see the following message:
+When you view a worksheet in Office Telemetry Dashboard, you might see the following message:
   
 **COM add-in error message**
 
-![A screenshot of the Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
+![A screenshot of the Office Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
   
-To resolve this issue, enable the Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
+To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
   
-### To enable the Telemetry Dashboard COM add-in
+### To enable the Office Telemetry Dashboard COM add-in
 
-1. Start Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
     
 2. Select the **Let's get started** button. 
     
@@ -217,38 +220,38 @@ To resolve this issue, enable the Telemetry Dashboard COM add-in that is availab
 
      ![A screenshot of the Save Copies Info Message.](../images/ORK_Telem_SaveCopiesInfoMessage.png)
   
-4. Reopen the Telemetry Dashboard Excel worksheet that had the error message.
+4. Reopen the Office Telemetry Dashboard Excel worksheet that had the error message.
     
 <a name="TPError"> </a>
 
 ### You see the error message "Telemetry Processor service(s) have errors."
 
-When you view a worksheet in Telemetry Dashboard, you might see the following message:
+When you view a worksheet in Office Telemetry Dashboard, you might see the following message:
   
-**Telemetry processor error message**
+**Office Telemetry Processor error message**
 
-![A screenshot of the Telemetry Processor services error message.](../images/ORK_Telem_TelemetryProcessorErrorMessage.png)
+![A screenshot of the Office Telemetry Processor service error message.](../images/ORK_Telem_TelemetryProcessorErrorMessage.png)
   
-The Telemetry Processor error message is displayed when no agents have reported any data to the dashboard, or if the Telemetry Processor hasn't inserted any data to the database for a day.
+This error message is displayed when no agents have reported any data to the dashboard, or if the processor hasn't inserted any data to the database for a day.
   
-For more information, see the log file (%windows%\ServiceProfiles\NetworkService\AppData\Local\Temp\dperrorlog.txt on the computer where Telemetry Processor is running). 
+For more information, see the log file (%windows%\ServiceProfiles\NetworkService\AppData\Local\Temp\dperrorlog.txt on the computer where processor is running). 
   
 In addition, do the following:
   
-- Verify the network connection between the telemetry processor and the Telemetry Dashboard is working as expected.
+- Verify the network connection between the processor and the Office Telemetry Dashboard is working as expected.
     
 - In **Service** in Control Panel, verify that the **Office Telemetry Processor** service is running. 
     
 - Verify that the SQL Server server is running correctly.
     
-- Verify that the data in the telemetry shared folder that was reported back from the agent was processed correctly. If there are many folders and files in the shared folder that weren't processed for more than 2 hours, the telemetry processor isn't working correctly.
+- Verify that the data in the shared folder that was reported back from the agent was processed correctly. If there are many folders and files in the shared folder that weren't processed for more than 2 hours, the processor isn't working correctly.
     
-For more information about how to troubleshoot the telemetry processor, see [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).
+For more information about how to troubleshoot the processor, see [Troubleshooting Office Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).
   
 ## Related topics
 
-- [Compatibility and telemetry in Office](compatibility-and-telemetry-in-office.md)
+- [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Assess Office compatibility](assess-office-compatibility.md)
-- [Deploy Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
+- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
 
