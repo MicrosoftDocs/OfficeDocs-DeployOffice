@@ -66,7 +66,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
      You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office 365 client update packages are available.
 
-4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction).
+4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in System Center Configuration Manager](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction).
 
 <a name="BKMK_EnableClient"> </a>
 ## Enable Office 365 clients to receive updates from Configuration Manager

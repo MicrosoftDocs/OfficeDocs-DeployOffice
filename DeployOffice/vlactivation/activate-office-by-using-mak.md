@@ -80,7 +80,7 @@ To enter a multiple activation key by using the Config.xml file, follow these st
 ```
     
 > [!NOTE]
-> - For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/en-us/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
+> - For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
 > - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)* 
   
 <a name="UI"> </a>
@@ -117,7 +117,7 @@ Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtecti
  - To disable, set "UserOperations"=dword:00000000
   
 > [!NOTE]
-> For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/en-us/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
+> For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
   
 ## Related topics
 
