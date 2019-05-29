@@ -229,7 +229,7 @@ Group Policy settings can enforce default language settings that users in your o
   
 The following policy settings help you manage language settings in Office 2016:
   
-|**Group policy setting**|**Location**|**Description**|
+|**Group Policy setting**|**Location**|**Description**|
 |:-----|:-----|:-----|
 |Display menus and dialog boxes in  <br/> |**Display language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** <br/> |Determines the language of the user interface.  <br/> |
 |Display help in  <br/> |**Display Language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** <br/> |Determines the language of online Help. If this policy setting is not configured, the Help language uses the user interface language.  <br/> |

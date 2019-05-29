@@ -97,7 +97,7 @@ To decide how to upgrade to Office 365 ProPlus, you should evaluate your infrast
     
 Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md).
   
-## Review new Group policy settings
+## Review new Group Policy settings
 
 As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy settings. All Group Policy settings for Office 365 ProPlus are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
   
