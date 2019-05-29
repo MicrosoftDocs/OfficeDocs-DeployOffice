@@ -82,7 +82,7 @@ We understand that you might want to choose which types of connected experiences
 If you don't configure these policy settings, all connected experiences are available. This gives your users all the features and functionality accessible through Office 365 ProPlus. But we understand that you might need to turn off some or all of these connected experiences to meet certain requirements of your organization.
 
 > [!IMPORTANT]
-> There is currently an issue with these 4 policy settings that we are working to correct. For now, to disable one of these policy settings by using the Group Policy Management tool, you need to select the **Enabled** radio button and then choose **Disabled** from the drop-down list in the **Options** section. Selecting the **Disabled** radio button won't disable these policy settings.
+> An issue related to disabling these 4 policy settings was recently fixed by publishing new Administrative Template files (ADMX/ADML) on Tuesday May 28, 2019. Be sure to download and install the updated Group Policy files from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or users will get an error message when they try to use those connected experiences. In that case, no [required service data](required-service-data.md) for those connected experiences will be sent to Microsoft.
 
