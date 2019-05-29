@@ -202,8 +202,8 @@ Some admins prefer to change settings directly in the registry, for example by u
 |Configure the level of client software diagnostic data sent by Office to Microsoft  | SendTelemetry |1=Required <br/> 2=Optional <br/> 3=Neither|
 |Allow the use of connected experiences in Office that analyze content  | UserContentDisabled | 1=Enabled <br/> 2=Disabled|
 |Allow the use of connected experiences in Office that download online content  | DownloadContentDisabled | 1=Enabled <br/> 2=Disabled|
-|Allow the use of additional optional connected experiences in Office   |  DisconnectedState |1=Enabled <br/> 2=Disabled|
-|Allow the use of connected experiences in Office | ControllerConnectedServicesEnabled  | 1=Enabled <br/> 2=Disabled|
+|Allow the use of additional optional connected experiences in Office   | ControllerConnectedServicesEnabled  |1=Enabled <br/> 2=Disabled|
+|Allow the use of connected experiences in Office | DisconnectedState  | 1=Enabled <br/> 2=Disabled|
 
 To create a .reg file for the privacy settings, open Notepad and copy in the following lines. Adjust the values to suit your needs, and then save the file. Be sure the file name has an extension of .reg
 
