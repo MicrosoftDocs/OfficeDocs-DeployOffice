@@ -91,7 +91,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 The following table describes the name and path of the Group Policy setting that enables file obfuscation. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
-**Group policy setting that enables file obfuscation**
+**Group Policy setting that enables file obfuscation**
 
 |**Setting name**|**Path**|
 |:-----|:-----|
@@ -176,7 +176,7 @@ For more information about how to use .reg files, see [How to add, modify, or de
 
 ### To stop logging by using the Group Policy settings
 
-The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Administrative Template files (ADMX/AMDL) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
+The policy settings that are listed in the following table are available in the path **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard**. Set these policy settings to **Disabled** to turn off data collection and uploading for the agent. You can download the Administrative Template files (ADMX/ADML) for Office from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).
 
 **Agent policy settings that disable logging**
 
