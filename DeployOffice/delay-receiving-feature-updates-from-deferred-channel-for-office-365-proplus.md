@@ -3,7 +3,7 @@ title: "Delay receiving feature updates from Semi-Annual Channel for Office 365 
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
