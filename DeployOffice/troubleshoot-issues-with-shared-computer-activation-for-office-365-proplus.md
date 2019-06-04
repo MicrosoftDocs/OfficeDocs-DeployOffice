@@ -3,7 +3,7 @@ title: "Troubleshoot issues with shared computer activation for Office 365 ProPl
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: o365-proplus-itpro
 localization_priority: Normal

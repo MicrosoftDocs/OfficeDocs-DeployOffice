@@ -3,7 +3,7 @@ title: Dealing with Outlook search in non-persistent RDS environments
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal

@@ -3,7 +3,7 @@ title: "Deployment guide for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-proplus-itpro
 localization_priority: Normal

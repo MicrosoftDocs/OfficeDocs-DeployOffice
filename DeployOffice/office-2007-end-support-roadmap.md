@@ -3,7 +3,7 @@ title: "Office 2007 end of support roadmap"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.prod: office-perpetual-itpro
 localization_priority: Normal

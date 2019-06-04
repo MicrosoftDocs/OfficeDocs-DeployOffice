@@ -3,7 +3,7 @@ title: "What's new in Office deployment for IT Pros"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal

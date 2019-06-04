@@ -4,7 +4,7 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 ms.date: 4/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority

@@ -3,7 +3,7 @@ title: "Guide to Office Telemetry Dashboard resources"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
 localization_priority: Normal

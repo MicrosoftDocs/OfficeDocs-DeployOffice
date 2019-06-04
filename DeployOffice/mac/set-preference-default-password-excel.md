@@ -3,7 +3,7 @@ title: "Set a preference for trying a default decryption password in Excel for M
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
