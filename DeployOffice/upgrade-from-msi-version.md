@@ -3,7 +3,7 @@ title: "Remove existing MSI versions of Office when upgrading to Office 365 ProP
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal

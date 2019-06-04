@@ -3,7 +3,7 @@ title: "Overview of Office 2019 (for IT Pros)"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro
 localization_priority: Normal

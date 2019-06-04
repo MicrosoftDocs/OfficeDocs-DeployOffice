@@ -3,7 +3,7 @@ title: "Deploy Office 365 ProPlus by using Remote Desktop Services"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: get-started-article
 localization_priority: Normal
 ms.collection: Ent_O365

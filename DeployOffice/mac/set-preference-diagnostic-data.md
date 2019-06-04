@@ -3,7 +3,7 @@ title: "Set a preference for diagnostic data in Office for Mac"
 ms.author: danbrown
 author: pbowden-msft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
