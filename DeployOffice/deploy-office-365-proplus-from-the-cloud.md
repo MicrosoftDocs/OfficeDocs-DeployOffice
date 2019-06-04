@@ -3,7 +3,7 @@ title: "Deploy Office 365 ProPlus from the cloud"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority

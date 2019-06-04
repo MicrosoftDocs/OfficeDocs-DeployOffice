@@ -3,7 +3,7 @@ title: "Custom reporting and database schema reference for Office Telemetry Dash
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
