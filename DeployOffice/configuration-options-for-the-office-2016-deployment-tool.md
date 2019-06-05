@@ -95,15 +95,14 @@ Example values:
 - SourcePath="\\\server\share\"
 - SourcePath="c:\preload\office"
 
-### Version attribute (part of Add element) *
+### Version attribute (part of Add element)
 
-Optional. The default is the latest available version of Office.
+Optional. The default is the latest available version of Office. When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel will be used, which might not match the specified version.
 
 Example value:
 
 - Version="16.0.8201.2193"
 
-* When using the Version attribute, the Channel attribute also needs to be used
 
 ### OfficeClientEdition attribute (part of Add element) 
 
