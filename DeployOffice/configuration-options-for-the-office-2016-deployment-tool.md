@@ -128,28 +128,25 @@ Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targ
 
 If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
-### DownloadPath attribute (part of Add element)*
+### DownloadPath attribute (part of Add element)
 
-Optional. Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  
+Optional. Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  Note that you must specify a version when using DownloadPath, as shown in the example.
 
 Example values: 
 
-- DownloadPath="\\\serverb\share\"
+- DownloadPath="\\\servera\share\"
 
 #### Example 
 
 ```xml
-<Add SourcePath="\\Server\Share" 
-     DownloadPath="\\serverb\share\"
-     OfficeClientEdition="32"
-     Channel="Broad" >
-  <Product ID="O365ProPlusRetail">
-      <Language ID="en-us" />
-      <Language ID="ja-jp" />
-  </Product>
-</Add>  
+<Configuration> 
+  <Add SourcePath="\\serverb\share" OfficeClientEdition="64" Version="16.0.6741.2056" DownloadPath="\\servera\share"> 
+    <Product ID="O365ProPlusRetail" > 
+      <Language ID="en-us" />      
+    </Product> 
+  </Add> 
+</Configuration>
 ```
-*Note that you must specify a Version when using DownloadPath.
 
 ### AllowCdnFallback attribute (part of Add element) 
 
