@@ -23,7 +23,7 @@ But, in the next several months, the following changes are coming to OneNote for
 
 If you decide later that your users need OneNote 2016, there will be ways to add OneNote 2016, such as by using the Office Deployment Tool.
  
-These changes don't affect existing installations of OneNote for Office 365 ProPlus or Office 2016. Also, these changes don’t affect other versions of OneNote, such as OneNote for Mac, OneNote for Android, or OneNote Online.
+These changes don't affect existing installations of OneNote for Office 365 ProPlus or Office 2016. Also, these changes don’t affect other versions of OneNote, such as OneNote for Mac, OneNote for Android, or the [web version of OneNote](https://support.office.com/article/7e497458-6bf3-4de3-a362-f83636f0d5b9).
 
 ## Choose the version of OneNote to deploy to your users
 
@@ -34,7 +34,7 @@ Other than features, the most significant difference is that local notebooks are
 Other factors that might require you to keep users on OneNote 2016 include computers running Windows 7 or Windows 8 or the use of COM add-ins with OneNote. Microsoft has updated its add-ins for OneNote, such as providing integration with Outlook, to work with OneNote for Windows 10.
 
 > [!NOTE]
-> If your users are still using computers that are running Windows 7 or Windows 8, the recommended and most up-to-date OneNote experience on those versions is [OneNote Online](https://support.office.com/article/80B7E897-88DF-49E7-8BFE-A3467A428DA0), the Web version of OneNote.
+> If your users are still using computers that are running Windows 7 or Windows 8, the recommended and most up-to-date OneNote experience on those versions of Windows is the [web version of OneNote](https://support.office.com/article/7e497458-6bf3-4de3-a362-f83636f0d5b9).
 
 Keep in mind that OneNote 2016 is no longer being updated with new features and there won’t be a OneNote 2019. OneNote 2016 will continue to receive other updates, like critical fixes and security updates, while it’s still supported. Mainstream support for OneNote 2016 ends in October 2020, and extended support ends in October 2025.
 
