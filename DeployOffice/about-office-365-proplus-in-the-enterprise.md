@@ -76,7 +76,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
     
 - Users can store the files they create with Office 365 ProPlus on their local computers or elsewhere on your network, such as a SharePoint site. Office 365 also provides cloud-based file storage options,
     
-- Office 365 ProPlus isn't the same as [Office Online](https://docs.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description). Office Online lets users open Word, Excel, PowerPoint, or OneNote documents in a web browser. Office Online is included with all Office 365 plans.
+- Office 365 ProPlus isn't the same as the [web versions of the Office applications](https://docs.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description). The web versions let users open and work with Word, Excel, PowerPoint, or OneNote documents in a web browser. The web versions of these Office application are included with all Office 365 and Microsoft 365 plans.
     
 - Read the [Office 365 Service Descriptions](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365.
     
