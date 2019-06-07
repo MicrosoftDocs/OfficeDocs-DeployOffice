@@ -16,6 +16,11 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+## June 2019
+
+### Create and manage your deployment configurations in the cloud
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more details, see [Overview of the Office Customization Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-customization-tool-for-click-to-run).
+
 ## April 2019
 
 ### General availability of Office cloud policy service

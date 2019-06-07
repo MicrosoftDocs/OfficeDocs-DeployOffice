@@ -60,6 +60,22 @@ Follow these steps to import and edit an existing configuration file.
 2. Click **Import**, and then select the configuration file you want to edit.
 3. Change the settings you want, and then export the updated file.
 
+## Save and manage configuration file in the cloud
+
+save the deployment configurations that you create in the cloud.  This allows you to create, edit and access your deployment configurations from one central location, your Office 365 tenant.
+
+Not only can you save your deployment configurations, but you can access them directly using an anonymous URL that can be copied from each deployment configuration and used with the Office Deployment Tool.
+
+This allows you to skip the step of downloading the XML and just reference it directly on the command line when executing the /configure, /download or /customize commands.  The Office Deployment Tool will access the XML directly from your tenant using the anonymous access URL.
+
+Create a base image and copy them.
+
+Get link option lets you get a link to the XML file that you can reference from the Office Deployment Tool
+
+setup.exe /configure "link"
+
+
+
 ## Define application preferences
 
 As part of the Office Customization Tool, you can define application prefences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
