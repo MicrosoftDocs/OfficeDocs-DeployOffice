@@ -32,11 +32,6 @@ The following are the requirements for using the Office cloud policy service wit
 - Security groups created in or synchronized to Azure Active Directory (AAD), with the appropriate users added to those groups.
 - To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Desktop Analytics Administrator.
 
-> [!NOTE]
-> The Office cloud policy service isn't available to the following:
-> - Customers with Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD plans.
-> - Tenants located in Australia, Brazil, Germany, India, or South Korea.
-
 ## Steps for creating a policy configuration
 
 The following are the basic steps for creating a policy configuration.
