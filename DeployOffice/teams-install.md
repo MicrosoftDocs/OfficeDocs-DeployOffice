@@ -96,7 +96,15 @@ The date when Teams starts being added to ***existing*** installations of Office
 
 <sup>*</sup> *For Office 365 Business, Teams will be added starting with Version 1905 in the 2nd half of June 2019.*
 
-If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, use the Office Deployment Tool and the following configuration.xml. You need to run the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) in /configure mode on each device before you update to the new version.
+If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, you can use Group Policy or the Office Deployment Tool.
+
+If you use Group Policy, you can enable the *Don't install Microsoft Teams with new installations or updates of Office* policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+
+> [!NOTE]
+> - Be sure you're using at least version 4867.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 7, 2019.
+> - Temporarily, the name and help text for this policy setting is available only in English. The name and help text will be available in the usual set of languages by June 14, 2019.
+ 
+If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you need to run the Office Deployment Tool in /configure mode on each device before you update to the new version of Office 365 ProPlus. The following is a configuration.xml file you can use with the Office Deployment Tool to exclude Teams from being added to your existing installation of Office 365 ProPlus.
 
 ```xml
 <Configuration>
@@ -106,13 +114,14 @@ If you don't want Teams to be added to ***existing*** installations of Office 36
        <ExcludeApp ID="Teams" />
       </Product>
    </Add>
+   <Display Level="None" />
 </Configuration>
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > - Be sure you're using the most current version of the Office Deployment Tool available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 > - If your existing installation of Office 365 ProPlus has excluded other apps, such as Access, you need to include a line in your configuration.xmi file for each of those excluded apps. Otherwise, those apps will be installed on the device.
-> - We are working on a policy setting that you can use with Group Policy or the [Office cloud policy service](overview-office-cloud-policy-service.md) to make it easier to exclude Teams from being installed as part of an update. We'll update this article with more information about that policy setting once it's available.
+> - If you have Office 365 Business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
 Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using includes Teams as part of the installation.
 
