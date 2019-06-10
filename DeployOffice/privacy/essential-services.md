@@ -2713,6 +2713,14 @@ The following fields are collected:
 
   - **TimerDetectedChange** - Whether the change was detected by regularly timed ping.
 
+### Office.System.PrivacyFallbackToSettingsStore
+
+Used to determine if there are failures with reading the user's privacy settings from the Roaming store.
+
+The following fields are collected:
+
+  - **Tag -** The code tag indicating which setting has fallen back to the settings store.
+
 ### Office.System.SessionDataO365
 
 Metadata required to isolate a failure reproduction.
