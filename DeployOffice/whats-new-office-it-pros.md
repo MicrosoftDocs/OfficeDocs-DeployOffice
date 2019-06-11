@@ -16,7 +16,16 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+## July 2019
+
+Microsoft Teams will be added to ***existing*** installations of Office 365 ProPlus, starting with Version 1906 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
+
 ## April 2019
+
+### Use the MigrateArch attribute to change Office 365 ProPlus from 32-bit to 64-bit
+It's now easier to change an existing installation of Office 365 ProPlus from 32-bit to 64-bit. You can use the MigrateArch attribute in a configuration.xml file along with the Office Deployment Tool. The migration process will preserve existing products, languages, and other deployment settings.
+
+For more information, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
 
 ### General availability of Office cloud policy service
 The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
@@ -29,23 +38,18 @@ Security Policy Advisor is now available for public preview. You can use Securit
 For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
 
 ### Privacy controls for Office 365 ProPlus
-
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
 
-Starting with Version 1904, which is expected to be released in Monthly Channel in late April, we’ll be providing you with new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
+Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
 
-***Updated on April 16, 2019***  More information about these privacy controls has been published. See [Privacy for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/privacy). 
 
 ### Use SQL Server with the Readiness Toolkit
-
 The Readiness Toolkit now supports storing report results in a SQL Server database. If you use SQL Server, you also get a Power BI report, instead of an Excel workbook. For more information, see [Use SQL Server to store report results](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#use-sql-server-to-store-report-results).
 
 ## March 2019
-
 Language deployment for Office 365 ProPlus continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
 ## February 2019
-
 Microsoft Teams will be installed for ***new*** installations of Office 365 ProPlus, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
 
 ## January 2019
