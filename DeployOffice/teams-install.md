@@ -45,7 +45,9 @@ The date when Teams starts being installed with ***new*** installations of Offic
 
 ## How to exclude Microsoft Teams from new installations of Office 365 ProPlus
 
-If you don’t want Teams included when you install Office 365 ProPlus on devices running Windows, you can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
+If you don’t want Teams included when you install Office 365 ProPlus on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool.
+
+If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
 ```xml
 <Configuration>
@@ -74,7 +76,7 @@ If you’re deploying Office 365 ProPlus by using the Office 365 Client Installa
 
 If you're deploying Office 365 ProPlus by using Microsoft Intune, there is a checkbox to exclude Teams on the **Configure App Suite** pane.  
 
-If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being included as part of the installation..
+If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being included as part of the installation, unless you use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams).
 
 If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall** a program. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user.
 
@@ -117,11 +119,11 @@ If you want to use the [Office Deployment Tool](overview-of-the-office-2016-depl
 > - If your existing installation of Office 365 ProPlus has excluded other apps, such as Access, you need to include a line in your configuration.xmi file for each of those excluded apps. Otherwise, those apps will be installed on the device.
 > - If you have Office 365 Business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
-Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using includes Teams as part of the installation.
+Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel or version you're using includes Teams as part of the installation.
 
 ## Use Group Policy to control the installation of Microsoft Teams
 
-If your organization isn't ready to deploy Teams, and you use Group Policy, you can enable the *Don't install Microsoft Teams with new installations or updates of Office* policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+If your organization isn't ready to deploy Teams and you use Group Policy, you can enable the *Don't install Microsoft Teams with new installations or updates of Office* policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 > [!NOTE]
 > - Be sure you're using at least version 4867.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 7, 2019.
@@ -134,6 +136,7 @@ If you enable this policy setting, Teams won't be installed in the following sce
 - Users installing Office 365 ProPlus for themselves from the Office 365 portal
 - An Online Repair of an Office 365 ProPlus installation
 
+Some admins prefer to change settings directly in the registry, for example by using a script, instead of by using Group Policy. In this case, edit the registry by adding the preventteamsinstall value to the HKEY_LOCAL__MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate key. The type for preventteamsinstall is REG_DWORD and the value should be set to 1 if you don't want Teams installed.
 
 ## Feature and quality updates for Microsoft Teams
 
