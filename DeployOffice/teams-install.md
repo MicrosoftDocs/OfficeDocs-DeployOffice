@@ -96,14 +96,8 @@ The date when Teams starts being added to ***existing*** installations of Office
 
 <sup>*</sup> *If you're using Monthly Channel (Targeted), Teams will be added with an update to Version 1906 starting on approximately June 25, 2019.*
 
-If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, you can use Group Policy or the Office Deployment Tool.
+If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool.
 
-If you use Group Policy, you can enable the *Don't install Microsoft Teams with new installations or updates of Office* policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
-
-> [!NOTE]
-> - Be sure you're using at least version 4867.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 7, 2019.
-> - Temporarily, the name and help text for this policy setting is available only in English. The name and help text will be available in the usual set of languages by June 14, 2019.
- 
 If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you need to run the Office Deployment Tool in /configure mode on each device before you update to the new version of Office 365 ProPlus. The following is a configuration.xml file you can use with the Office Deployment Tool to exclude Teams from being added to your existing installation of Office 365 ProPlus.
 
 ```xml
@@ -124,6 +118,22 @@ If you want to use the [Office Deployment Tool](overview-of-the-office-2016-depl
 > - If you have Office 365 Business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
 Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel you're using includes Teams as part of the installation.
+
+## Use Group Policy to control the installation of Microsoft Teams
+
+If your organization isn't ready to deploy Teams, and you use Group Policy, you can enable the *Don't install Microsoft Teams with new installations or updates of Office* policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
+
+> [!NOTE]
+> - Be sure you're using at least version 4867.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 7, 2019.
+> - Temporarily, the name and help text for this policy setting is available only in English. The name and help text will be available in the usual set of languages by June 14, 2019.
+
+If you enable this policy setting, Teams won't be installed in the following scenarios:
+
+- New installations of Office 365 ProPlus
+- Updates to existing installations of Office 365 ProPlus
+- Users installing Office 365 ProPlus for themselves from the Office 365 portal
+- An Online Repair of an Office 365 ProPlus installation
+
 
 ## Feature and quality updates for Microsoft Teams
 
