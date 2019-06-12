@@ -1,5 +1,5 @@
 ---
-title: "Default file format setting for the Office Customization Tool for Click-to-Run"
+title: "Default file format setting for the Office Customization Tool (for Click-to-Run)"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -15,7 +15,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Default file format for the Office Customization Tool (for Click-to-Run)
 
 
-The selection of a default document format could affect, to a certain extent, the manner in which you can use Office and the way you exchange documents with users of other productivity applications. Document formats were initially developed to reflect the features and behavior of one or more applications (the features and behavior of productivity applications can be quite different). For example, OpenDocument Format (ODF) was originally developed to reflect the features and behavior of OpenOffice-based productivity suites and OpenXML was originally developed to reflect the features and behavior of Office. Office provides support for ODF and gives Office users the opportunity to save their documents in ODF. However, because Office and OpenOffice features are not exactly the same or are not implemented the same way, Office users who use unsupported features and save documents in ODF may experience changes in the formatting and usability of the document and sometimes see a loss of content.
+The selection of a default document format could affect, to a certain extent, the manner in which you can use Office and the way you exchange documents with users of other productivity applications. Document formats were initially developed to reflect the features and behavior of one or more applications (the features and behavior of productivity applications can be quite different).
+
+For example, OpenDocument Format (ODF) was originally developed to reflect the features and behavior of OpenOffice-based productivity suites and OpenXML was originally developed to reflect the features and behavior of Office. Office provides support for ODF and gives Office users the opportunity to save their documents in ODF. But, because Office and OpenOffice features are not exactly the same or are not implemented the same way, Office users who use unsupported features and save documents in ODF may experience changes in the formatting and usability of the document and sometimes see a loss of content.
   
 For more information on the level of support in ODF for commonly used features of Excel, PowerPoint, and Word, see the following articles:
   
@@ -32,4 +34,4 @@ To learn more about ODF generally, see:
 - [ISO organization](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=45245)
     
 ## Related topics
-- [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
+- [Overview of the Office Customization Tool (for Click-to-Run)](overview-of-the-office-customization-tool-for-click-to-run.md)
