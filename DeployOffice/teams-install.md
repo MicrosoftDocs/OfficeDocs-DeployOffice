@@ -128,18 +128,18 @@ Also, in some situations, doing an Online Repair results in Teams being installe
 
 If your organization isn't ready to deploy Teams and you use Group Policy, you can enable the *Don't install Microsoft Teams with new installations or updates of Office* policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
-> [!NOTE]
-> - Be sure you're using at least version 4867.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 7, 2019.
-> - Temporarily, the name and help text for this policy setting is available only in English. The name and help text will be available in the usual set of languages by June 14, 2019.
-
 If you enable this policy setting, Teams won't be installed in the following scenarios:
 
 - New installations of Office 365 ProPlus
 - Updates to existing installations of Office 365 ProPlus
 - Users installing Office 365 ProPlus for themselves from the Office 365 portal
-- An Online Repair of an Office 365 ProPlus installation
+- An Online Repair of an existing installation of Office 365 ProPlus
 
-Some admins prefer to change settings directly in the registry, for example by using a script, instead of by using Group Policy. In this case, edit the registry by adding the preventteamsinstall value to the HKEY_LOCAL__MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate key. The type for preventteamsinstall is REG_DWORD and the value should be set to 1 if you don't want Teams installed.
+> [!NOTE]
+> - This policy setting only applies if you are installing or updating to Version 1905 or later.
+> - Be sure you're using at least version 4873.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 13, 2019.
+
+If you have Office 365 Business or can't use Group Policy for some other reason, you can add the preventteamsinstall value to the HKEY_LOCAL__MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate key in the registry. The type for preventteamsinstall is REG_DWORD and the value should be set to 1 if you don't want Teams installed.
 
 ## Feature and quality updates for Microsoft Teams
 
