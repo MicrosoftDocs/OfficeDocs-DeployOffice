@@ -90,7 +90,10 @@ The following are examples of supported IDs for Project and Visio:
 - PrjPro
 - VisStd
 - VisPro
-
+- PrjStdR
+- PrjProR
+- VisStdR
+- VisProR
 
 > [!NOTE]
 > The product ID is the Setup ID that is found in the Setup.xml file in the *{product}*.WW folder of the installation files for your previous version of Office. For example, the Setup.xml file for Office Professional Plus 2010 is found in the ProPlus.WW folder. 
