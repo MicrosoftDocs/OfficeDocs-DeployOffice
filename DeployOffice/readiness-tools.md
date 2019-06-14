@@ -43,8 +43,34 @@ While the Readiness Toolkit is designed for on-premises use, add-in adoption inf
 
 For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
-## Office 365 ProPlus upgrade readiness dashboard in Configuration Manager (Current Branch)
+## Office 365 ProPlus readiness features in Configuration Manager (Current Branch)
 
+If you have at least Version 1902 of System Center Configuration Manager (Current Branch), we recommend using Configuration Manager for assessing application compatibility and readiness for Office 365 ProPlus in your organization.
+
+ Configuration Manager extends beyond the Readiness Toolkit to help with the Upgrade phase by providing the following features:
+
+- An inventory of Office COM add-ins, including information on add-in adoption and ISV support for Office 365 ProPlus.
+- An inventory of devices that have recently used macros and devices that have not.
+- A report of devices ready for Office 365 ProPlus deployment, as well as a list of devices to pilot to validate that they are ready for Office 365 ProPlus.
+- The ability to create collections of devices based on their readiness assessment.
+
+Unlike the Readiness Toolkit, add-in adoption information is downloaded directly into Configuration Manager, instead of having to rely on accessing a publicly available web service.
+
+If you also need a detailed VBA macro compatibility assessment, you can run the Readiness Toolkit on all devices, or just the set of devices that have recently used macros. This will scan the recently used VBA macro files to assess their readiness. 
+
+After you run the Readiness Toolkit on those devices, the following additional information will be available in Configuration Manager:
+
+- An inventory of devices with VBA macros issues based on the Readiness Toolkit compatibility assessment
+- An updated inventory of devices ready for Office 365 ProPlus deployment, based on both add-in and VBA macro assessments.
+
+> [!NOTE]
+> You can also use the Readiness Toolkit to scan Office documents in specific folders or network shares, but this information can't be used by Configuration Manager.
+
+Configuration Manager also provides reporting capabilities which can be used to filter on additional add-in and macro compatibility data fields.
+
+Even though they are separate tools, the Readiness Toolkit and Configuration Manager can be combined to form a powerful end-to-end solution ideal for Configuration Manager customers.
+
+For more information, see [Integration for Office 365 ProPlus readiness](https://docs.microsoft.com/sccm/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) and [Office 365 ProPlus upgrade readiness dashboard](https://docs.microsoft.com/sccm/core/get-started/2019/technical-preview-1904#bkmk_o365).
 
 
 ## Office Telemetry Dashboard
@@ -60,10 +86,13 @@ Office Telemetry Dashboard gathers an inventory of add-ins and Office files as t
 
 In contrast, Readiness Toolkit and Configuration Manager provide an instant inventory of installed add-ins and recently used documents without the need to wait for usage patterns to emerge. These tools also provide Office 365 ProPlus support and adoption information for add-ins, and they proactively scan VBA macros for potential compability issues prior to your upgrade.
 
-Runtime issue logging can help with health tracking as your organization upgrades to Office 365 ProPlus and as you manage ongoing updates to Office 365 ProPlus. This health information can be used to determine if the upgrade to Office 365 ProPlus is successful based on the volume of health issues. The detailed health reporting also helps with remediation. 
+> [!NOTE]
+> You can use the Readiness Toolkit to create reports based on add-in data from Office Telemetry Dashboard.
+
+The runtime issue logging provided by Office Telemetry Dashboard can help with health tracking as your organization upgrades to Office 365 ProPlus and as you manage ongoing updates to Office 365 ProPlus. This health information can be used to determine if the upgrade to Office 365 ProPlus is successful based on the volume of health issues. The detailed health reporting also helps with remediation. 
 
 But, Office Telemetry Dashboard requires a significant amount of time to plan and deploy. For example, you need to enable logging on devices in your organization, configure processors to collect the information from those devices, and create and manage a SQL Server database to store the information collected from those devices.
 
-We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we are planning to provide health reporting capabilities in future release of Configuration Manager (Current Branch).
+We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we are planning to provide health reporting capabilities in future releases of Configuration Manager (Current Branch). In the meantime, organizations who need this type of information can continue to use Office Telemetry Dashboard.
 
 For more information about Office Telemetry Dashboard, see [Guide to Office Telemetry Dashboard resources](compat/compatibility-and-telemetry-in-office.md). 
