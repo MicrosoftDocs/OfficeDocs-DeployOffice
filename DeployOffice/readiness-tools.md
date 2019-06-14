@@ -14,14 +14,23 @@ ms.custom:
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Office 365 ProPlus"
 ---
 
-# Overview of application readiness tools for Office 365 ProPlus
+# Overview of application compatibility and readiness assessment tools for Office 365 ProPlus
 
+Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Office 365 ProPlus. To help organizations with this assessment effort, we have released several different on-premises tools over the last several years. Because there are several different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Office 365 ProPlus. The answer can depend on a variety of factors, but in general our recommendation is:
 
-Typically, enterprises go through the following phases when planning an upgrade to Office 365 ProPlus:
+ - Use the [Readiness Toolkit](#readiness-toolkit-for-office-add-ins-and-vba) for basic environments where simplified tool deployment and use is desired. 
+ - Use the [readiness features in Configuration Manager](#office-365-proplus-readiness-features-in-configuration-manager-current-branch), if you already have System Center Configuration Manager (Current Branch) deployed in your organization.
+ - Use [Office Telemetry Dashboard](#office-telemetry-dashboard) only if your orgnization needs certain usage and health information.
 
-- **Prepare**  Gather the inventory of devices, solutions, users, and compatibility information to adequately plan for the upgrade and pilot validation.
+Typically, organizations go through the following phases when planning and implementing an upgrade to Office 365 ProPlus:
+
+- **Prepare**  Gather the inventory of devices and users, and compatibility information about add-ins and macros to adequately plan for the pilot validation and upgrade.
 - **Upgrade**  Perform the necessary steps to deploy Office, including potential remediation work for application compatibility.
 - **Manage**  Ensure ongoing updates don’t have any impact on business continuity or application compatibility.
+
+The Readiness Toolkit and Configuration Manager can help during the Prepare phase, and Configuration Manager can also help during the Upgrade phase. Office Telemetry Dashboard is primarily of use during the Manage phase.
+
+The following sections provide an overview of the key features of each of these tools, along with links to additional information about each tool.
 
 
 ## Readiness Toolkit for Office add-ins and VBA
@@ -63,8 +72,7 @@ After you run the Readiness Toolkit on those devices, the following additional i
 - An inventory of devices with VBA macros issues based on the Readiness Toolkit compatibility assessment
 - An updated inventory of devices ready for Office 365 ProPlus deployment, based on both add-in and VBA macro assessments.
 
-> [!NOTE]
-> You can also use the Readiness Toolkit to scan Office documents in specific folders or network shares, but this information can't be used by Configuration Manager.
+You can also use the Readiness Toolkit to scan Office documents in specific folders or network shares, but this information can't be used by Configuration Manager.
 
 Configuration Manager also provides reporting capabilities which can be used to filter on additional add-in and macro compatibility data fields.
 
@@ -75,19 +83,16 @@ For more information, see [Integration for Office 365 ProPlus readiness](https:/
 
 ## Office Telemetry Dashboard
 
-In the past, before there was the Readiness Toolkit or the Office 365 ProPlus readiness features in Configuration Manager, we recommended Office Telemetry Dashboard for Office compatibility assessment. Office Telemetry Dashboard, which was first released in Office 2013, is still a supported tool, but we now only recommend it for certain specific scenarios.
+In the past, before there was the Readiness Toolkit or the Office 365 ProPlus readiness features in Configuration Manager, we recommended Office Telemetry Dashboard for Office compatibility assessment. Office Telemetry Dashboard, which was first released in Office 2013, is still a supported tool, but we now only recommend if you need specific usage and health information.
 
-Office Telemetry Dashboard can assist some organizations in both the Upgrade and Manage phases, because it provides the following specialized functionality:
+Office Telemetry Dashboard can assist some organizations primarily in the Manage phase, because it provides the following usage and health information:
 
 - Runtime application and document usage, which tracks which Office applications and files are used.
 - Runtime issue logging, which tracks application and add-in crashes, VBA macro errors, and usages of deprecated or modified VBA APIs.
 
 Office Telemetry Dashboard gathers an inventory of add-ins and Office files as they are used. Since this inventory is gathered through usage, you need to collect inventory over a period of time, such as at least 30 days. This time is needed to accumulate sufficient data to provide meaningful insight into usage patterns within your organization.
 
-In contrast, Readiness Toolkit and Configuration Manager provide an instant inventory of installed add-ins and recently used documents without the need to wait for usage patterns to emerge. These tools also provide Office 365 ProPlus support and adoption information for add-ins, and they proactively scan VBA macros for potential compability issues prior to your upgrade.
-
-> [!NOTE]
-> You can use the Readiness Toolkit to create reports based on add-in data from Office Telemetry Dashboard.
+In contrast, Readiness Toolkit and Configuration Manager provide an instant inventory of installed add-ins and recently used documents without the need to wait for usage patterns to emerge. These tools also provide Office 365 ProPlus support and adoption information for add-ins, and they proactively scan VBA macros for potential compability issues prior to your upgrade. If needed, you can use the Readiness Toolkit to create reports based on add-in data from Office Telemetry Dashboard.
 
 The runtime issue logging provided by Office Telemetry Dashboard can help with health tracking as your organization upgrades to Office 365 ProPlus and as you manage ongoing updates to Office 365 ProPlus. This health information can be used to determine if the upgrade to Office 365 ProPlus is successful based on the volume of health issues. The detailed health reporting also helps with remediation. 
 
