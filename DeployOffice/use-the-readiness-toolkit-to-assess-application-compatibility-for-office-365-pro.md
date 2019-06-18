@@ -267,7 +267,13 @@ If you have your users run the UI wizard version of the Readiness Report Creator
 The better alternative might be to use the command line capabilities of the Readiness Report Creator and use a script to run the Readiness Report Creator to collect the information on behalf of the user. You can save the files created by the Readiness Report Creator to a network share. If you do this, make sure that the appropriate write permissions are given to the share.
 
 > [!NOTE]
-> If you're running the Readiness Toolkit by using System Center Configuration Manager, or similar enterprise software deployment tools, be sure to deploy the package using the user context, instead of the system context. Otherwise, the Readiness Toolkit won't be able to read the most recently used (MRU) information in the current user's registry hive on the computer.
+> Deploying the Readiness Toolkit and running a scan with the readiness toolkit are two different things. You need to be local administrator to deploy the Office readiness Toolkit.
+You don’t need admin privileges to run a scan. Furthermore, you must run the scan in the user security context if you want to scan MRU of the user.
+You can scan user computers without installing the Office Readiness toolkit.
+For that you need to install the tool on one computer and then use the files located in 
+“C:\Program Files (x86)\Microsoft Readiness Toolkit for Office” as the source for your package.
+Then the command line you will use will be the command line that will trigger the scan.
+You can deploy that package to run in the user context to scan MRU.
 
 You can see a list of the available command line options by opening a command prompt, navigating to the folder where you installed the Readiness Toolkit, and then typing the following command:
 
