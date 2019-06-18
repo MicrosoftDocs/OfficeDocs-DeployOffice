@@ -130,7 +130,8 @@ The following are some additional details about using the RemoveMSI element in y
    - InfoPath. The product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
    - Lync 2013 or later. Lync 2010 can't be removed by using the RemoveMSI element.
    - Office products that were installed separately and not as part of an Office suite. For example, a standalone installation of Access.
-   - Access 2010 Runtime or later. The product ID is AccessRT. But, Access Database Engine 2010 Redistributable or later can't be removed by using the RemoveMSI element.
+   - Access 2010 Runtime or later. The product ID is AccessRT.
+- Access Database Engine (ACE) 2010 Redistributable or later can't be removed by using the RemoveMSI element. This is by design, as the Access Database Engine is most commonly bundled with other applications which are interacting with Access databases. Uninstalling the ACE could break the functionality of such applications. An admin should review the impact of removing ACE first. It can be removed by using the following command: msiexec /x aceredist.msi.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
 - Some previous versions of Office, Visio, and Project must be uninstalled before installing Office 365 ProPlus. For example, Office Professional Plus 2016. If they aren’t uninstalled beforehand, the installation of Office 365 ProPlus will fail. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
 - A reboot is required to finish uninstalling the Windows Installer (MSI) versions of Office, but the reboot isn’t enforced. You can reboot after the Office 365 ProPlus installation is finished.
