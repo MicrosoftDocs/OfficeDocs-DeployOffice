@@ -143,10 +143,10 @@ If you have Office 365 Business or can't use Group Policy for some other reason,
 
 ## Use Group Policy to prevent Microsoft Teams from starting automatically after installation
 
-If you want Teams to be installed, but don't want Teams to start automatically for the user after it's installed, you can use Group Policy and enable the *Prevent Microsoft Teams from starting automatically after installation* policy setting. By enabling this policy setting before Teams is installed, Teams doesn't start automatically when the user logs in to the device. Once a user starts Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams not to start automatically by configuring user settings within Teams.
+If you want Teams to be installed, but don't want Teams to start automatically for the user after it's installed, you can use Group Policy and enable the *Prevent Microsoft Teams from starting automatically after installation* policy setting. By enabling this policy setting before Teams is installed, Teams won't start automatically when the user logs in to the device. Once a user starts Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams not to start automatically by configuring user settings within Teams.
 
 > [!IMPORTANT]
-> This policy setting will be available soon in the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) download. We'll update this section when it's available for download.
+> This policy setting isn't yet available in the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) download. It should be available by June 28, 2019. We'll update this section when it's available for download. In the meantime, you can set the registry key mentioned in the next paragraph.
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT__USER\SOFTWARE\Policies\Microsoft\office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
 
