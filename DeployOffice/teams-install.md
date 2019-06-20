@@ -48,7 +48,7 @@ The date when Teams starts being installed with ***new*** installations of Offic
 
 ## How to exclude Microsoft Teams from new installations of Office 365 ProPlus
 
-If you don’t want Teams included when you install Office 365 ProPlus on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool.
+If you don’t want Teams included when you install Office 365 ProPlus on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
 If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
@@ -101,7 +101,7 @@ The date when Teams starts being added to ***existing*** installations of Office
 
 <sup>*</sup> *If you're using Monthly Channel (Targeted), Teams will be added with an update to Version 1906 starting on approximately June 25, 2019.*
 
-If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool.
+If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a new version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
 If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you need to run the Office Deployment Tool in /configure mode on each device before you update to the new version of Office 365 ProPlus. The following is a configuration.xml file you can use with the Office Deployment Tool to exclude Teams from being added to your existing installation of Office 365 ProPlus.
 
@@ -140,6 +140,16 @@ If you enable this policy setting, Teams won't be installed in the following sce
 > - Be sure you're using at least version 4873.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 13, 2019.
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the preventteamsinstall value to the HKEY_LOCAL__MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate key in the registry. The type for preventteamsinstall is REG_DWORD and the value should be set to 1 if you don't want Teams installed.
+
+## Use Group Policy to prevent Microsoft Teams from starting automatically after installation
+
+If you want Teams to be installed, but don't want Teams to start automatically for the user after it's installed, you can use Group Policy and enable the *Prevent Microsoft Teams from starting automatically after installation* policy setting. By enabling this policy setting before Teams is installed, Teams doesn't start automatically when the user logs in to the device. Once a user starts Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams not to start automatically by configuring user settings within Teams.
+
+> [!IMPORTANT]
+> This policy setting will be available soon in the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) download. We'll update this section when it's available for download.
+
+If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT__USER\SOFTWARE\Policies\Microsoft\office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
+
 
 ## Feature and quality updates for Microsoft Teams
 
