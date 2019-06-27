@@ -132,7 +132,7 @@ If your organization isn't ready to deploy Teams and you use Group Policy, you c
 > - This policy setting only applies if you are installing or updating to Version 1905 or later of Office 365 ProPlus (or Office 365 Business).
 > - Be sure you're using at least version 4873.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 13, 2019.
 
-If you enable this policy setting, Teams won't be installed in the following scenarios:
+If you enable this policy setting, Teams won't be installed in the following scenarios for Version 1905 or later:
 
 - New installations of Office 365 ProPlus
 - Updates to existing installations of Office 365 ProPlus
@@ -152,7 +152,7 @@ But even if you enable this policy setting so that Teams doesn't start automatic
 > [!IMPORTANT]
 > - This policy setting only applies if you are installing or updating to Version 1906 or later of Office 365 ProPlus (or Office 365 Business).
 > - Be sure you're using at least version 4879.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 27, 2019.
-> - Temporarily, the name and help text for these policy settings are only available in English. They should be available in the usual set of languages around July 8, 2019.
+> - The name and help text for these policy settings are only available in English. This is only a temporary issue and they should be available in the usual set of languages by July 8, 2019.
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
 
