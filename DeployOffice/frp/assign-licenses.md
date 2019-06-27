@@ -1,5 +1,5 @@
 ---
-title: "Activate licenses for Office 365 ProPlus"
+title: "Assign licenses for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
