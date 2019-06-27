@@ -12,3 +12,10 @@ ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Choose update and language settings for deploying Office 365 ProPlus
+
+> [!NOTE]
+> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
+
+Create configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences.
+
+To mange these settings you can use the [Office Customization Tool](https://config.office.com/officeSettings/configure).
