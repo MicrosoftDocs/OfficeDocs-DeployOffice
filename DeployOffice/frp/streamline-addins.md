@@ -13,3 +13,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Streamline Office add-ins to simplify deployment
 
+> [!NOTE]
+> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
+
+*This content isn't available yet.*
+
