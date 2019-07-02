@@ -60,6 +60,7 @@ The following table provides a list of the categories for required diagnostic da
 | **Product and service usage**​    | [Application feature success](#application-feature-success-subtype)​   | Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​ |
 | | [Application status and boot](#application-status-and-boot-subtype)    | Determination if specific feature events have occurred, such as start or stop, and if feature is running​.   |
 | | [Office accessibility configuration](#office-accessibility-configuration-subtype)  | Office accessibility features​       |
+| | [Privacy](#privacy-subtype)| Office privacy settings|
 | **Product and service performance** ​      | [Unexpected application exit (crash)](#unexpected-application-exit-crash-subtype)  | Unexpected application exits and the state of the application when that happens​.    |
 |  | [Application feature performance ​](#application-feature-performance-subtype)  | Poor response time or performance for scenarios such as application start up or opening a file. |
 |  | [Application activity error](#application-activity-error-subtype)   | Errors in functionality of a feature or user experience.  |
@@ -966,6 +967,7 @@ The following are the data subtypes in this category:
 - [Application feature success](#application-feature-success-subtype)
 - [Application status and boot](#application-status-and-boot-subtype)
 - [Office accessibility configuration](#office-accessibility-configuration-subtype)
+- [Privacy](#privacy-subtype)
 
 
 ### *Application feature success subtype*
@@ -3995,8 +3997,12 @@ The following fields are collected:
   - **Data\_CheckRequiredPartsLoaded -** Method CheckRequiredPartsLoaded execution duration in milliseconds
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
+   
+  - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
 
   - **Data\_ContentTransaction -** Predefined set of values of when transaction can be created (AllowedOnLoadDocument, AllowedOnOpenComplete, etc.)
+
+  - **Data_CorrelationId -** A GUID passed to PowerPoint by ProtocolHandler for correlating telemetry. ProtocolHandler is a separate process which handles Office links for the OS.
 
   - **Data\_CppUncaughtExceptionCount:long -**Uncaught native exceptions while activity was running
 
@@ -4906,6 +4912,50 @@ This event indicates Office Word stops reading aloud the text in the document. T
 The following fields are collected:
 
   - None
+
+### *Privacy subtype*
+
+Office privacy settings 
+
+#### Office.IntelligentService.PrivacyConsent.PrivacyEvent
+
+This event represents a user or system initiated action that is part of the privacy User experience for Office. It is triggered on the privacy First Run dialogs, Account Privacy dialog, and privacy notifications. The event is used to understand the following: users consenting to Office privacy settings, users changing Office privacy settings, and Office privacy settings getting updated in user sessions.
+
+The following fields are collected:
+
+  - **Data_ActionId -** User action in a privacy dialog
+
+  - **Data_ControllerConnectedServicesState -** User policy setting for additional optional connected experiences
+
+  - **Data_DownloadedContentServiceGroupState -** User setting for downloaded content 
+ 
+  - **Data_ForwardLinkId -** Link to privacy documentation for the user scenario
+
+  - **Data_HRESULT -** Record of errors during interaction with a privacy dialog
+
+  - **Data_IsEnterpriseUser -** User license category
+
+  - **Data_OfficeServiceConnectionState -** User setting for connected services
+
+  - **Data_RecordRegistry -** Record of showing the enterprise privacy dialog
+
+  - **Data_Scenario -** First run scenario based on the user license and category
+
+  - **Data_SeenInsidersDialog -** Record of showing the Insiders privacy dialog
+
+  - **Data_SendTelemetryOption -** User setting for telemetry
+
+  - **Data_SendTelemetryOptionPolicy -** User policy setting for telemetry
+
+  - **Data_UserCategory -** User account type  
+
+  - **Data_UserCCSDisabled -** User override for additional optional connected experiences
+
+   - **Data_UserContentServiceGroupState -** User setting for analyzing content
+
+  - **Data_WillShowDialogs -** Record of user needing to see privacy First Run dialogs
+
+
 
 ## Product and service performance data events
 

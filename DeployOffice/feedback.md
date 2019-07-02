@@ -16,20 +16,21 @@ feedback_system: none
 
 # Feedback and support resources
 
-We appreciate your feedback and want to help you deploy Office in your enterprise.
+We appreciate your feedback and want to help you deploy and manage Office in your enterprise.
 
-## Get support for problems with Office
+## Get support for problems with deploying and managing Office
 
-If you're having a problem with deploying Office, such as getting an error message or something isn't working, we recommend that you use one of these Microsoft resources to get assistance:
+If you're having a problem with deploying and managing Office, such as getting an error message or something isn't working, we recommend that you use one of these Microsoft resources to get assistance:
 
 - [Answers forum](https://answers.microsoft.com/)
-- [Tech Community](https://techcommunity.microsoft.com/)
 - [Support](https://support.microsoft.com/contactus)
 
-## Provide feedback about Office
+## Discuss or provide suggestions about deploying and managing Office
 
-If you have feedback about Office, such as suggestions for improvements, we recommend you use the [UserVoice site for Office 365](https://office365.uservoice.com/).
+If you want to discuss issues related to deploying and managing Office, we recommend the [Tech Community](https://techcommunity.microsoft.com/). For example, there's an area for [Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/bd-p/O365ProPlus).
+
+If you have thoughts on how to improve deploying and managing Office, submit your suggestions to the [UserVoice site for Office Deployment Insiders](https://odinsiders.uservoice.com/).
 
 ## Provide feedback on the content
 
-If you have feedback about an article that you're reading, choose the **Content feedback** button at the bottom of that article and then provide your feedback. For example, if something is confusing, important information is missing, or a link is broken or doesn't seem to go to the right destination.
+If you have feedback about an article that you're reading, choose the **This page** button at the bottom of that article and then provide your feedback. For example, if something is confusing, important information is missing, or a link is broken or doesn't seem to go to the right destination.
