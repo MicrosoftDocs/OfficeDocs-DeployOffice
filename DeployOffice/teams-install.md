@@ -30,6 +30,8 @@ If your organization isn't ready to deploy Teams, we have the steps you can take
 
 If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
+If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [Shared computer and VDI environments with Microsoft Teams](#shared-computer-and-vdi-environments-with-microsoft-teams).
+
 
 ## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
 
@@ -158,6 +160,11 @@ But even if you enable this policy setting so that Teams doesn't start automatic
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
 
+## Shared computer and VDI environments with Microsoft Teams
+
+If devices in your organization are shared by multiple users, be aware that Teams is installed separately for each user that signs into that device. Installations of Teams average about 500 mb, so hard disk space, as well network bandwidth for updates, might become an issue for these shared devices installed with Teams. In cases where shared devices are used by a significant number of users, you might want to consider not installing Teams on those shared devices.
+
+If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article isn't currently supported in VDI environments.
 
 ## Feature and quality updates for Microsoft Teams
 
@@ -184,7 +191,6 @@ For Office 365 plans that don't include the Teams service, a free trial version 
 - There is no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
 - Teams is installed with Office 365 ProPlus in the same way that Teams is installed if you use the [MSI-based installer for Teams](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
 - To complete the installation of Teams, either restart the device or have the user log off and log back on.
-- If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article isn't currently supported.
 - The architecture (sometimes referred to as the *bitness*) of Teams and Office 365 ProPlus installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Office 365 ProPlus. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
 - You can also use PowerShell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
