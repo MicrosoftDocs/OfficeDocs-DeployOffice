@@ -31,7 +31,11 @@ To work with the service, go to [Office Customization Tool](https://config.offic
 
 ## Create a configuration file
 
-Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office. Note that a product and language must be selected before you can export the configuration file.
+Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office. 
+
+> [!NOTE] 
+> We recommend saving and managing your configuration files in the cloud. To do so, sign in to the Office 365 Client Configuration Service before you create your configuration file.  For more details, see [Save and manage configuration files in the cloud](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+
 
 1. Go to [Office Customization Tool](https://config.office.com/).
 2. In the **Product and releases** section, choose the architecture you want to deploy. Each configuration file can only deploy one architecture. For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
@@ -49,7 +53,7 @@ Follow these steps to create a configuration file that can be used by the Office
 14. Choose whether to enabled shared computer activation. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
 15. In the **Application preferences** section, choose what settings to apply when deploying Office. You can search for a setting, filter the settings by Office app, and learn more about each setting by clicking it and reviewing the detailed description.
 16. Click **Finish**, review the configured settings in the righthand pane, and then click **Export**.
-17. Accept the terms in the license agreement, name the confguration file, and then click **Export**. 
+17. Accept the terms in the license agreement, name the confguration file, and then click **Export** or, if you're saving the configuration file to the cloud, click **Done**. 
 18. You can now use the configuration file in your deployment workflow with the Office Deployment Tool or another software distribution solution.
 
 ## Edit an existing configuration file
@@ -60,21 +64,17 @@ Follow these steps to import and edit an existing configuration file.
 2. Click **Import**, and then select the configuration file you want to edit.
 3. Change the settings you want, and then export the updated file.
 
-## Save and manage configuration file in the cloud
+## Save and manage configuration files in the cloud
 
-save the deployment configurations that you create in the cloud.  This allows you to create, edit and access your deployment configurations from one central location, your Office 365 tenant.
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly in the cloud.
 
-Not only can you save your deployment configurations, but you can access them directly using an anonymous URL that can be copied from each deployment configuration and used with the Office Deployment Tool.
+To work with configuration files in the cloud, sign in to the [Office 365 Client Configuration Service](https://config.office.com/) and go to the [Device Configuration](https://config.office.com/officeSettings/configurations) page.
 
-This allows you to skip the step of downloading the XML and just reference it directly on the command line when executing the /configure, /download or /customize commands.  The Office Deployment Tool will access the XML directly from your tenant using the anonymous access URL.
+- To create a new file, click **Create**, create a configuration file, and then click **Done**. The configuration file is automatically saved to the cloud as part of your tenant.
+- To edit an existing file, click the name of the file, make your changes, and then click **Done**.
+- To get a link to a configuration file, select the file, click **Get Link**, and then click **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. To deploy with the ODT, for example, you can run setup.exe /configure "link" on the command line. For more details, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
-Create a base image and copy them.
-
-Get link option lets you get a link to the XML file that you can reference from the Office Deployment Tool
-
-setup.exe /configure "link"
-
-
+You can also copy, upload, or download configuration files from this page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
 
 ## Define application preferences
 
