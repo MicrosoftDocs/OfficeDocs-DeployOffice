@@ -30,6 +30,8 @@ If your organization isn't ready to deploy Teams, we have the steps you can take
 
 If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
+If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [Shared computer and VDI environments with Microsoft Teams](#shared-computer-and-vdi-environments-with-microsoft-teams).
+
 
 ## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
 
@@ -87,9 +89,9 @@ The guidance above in this section also applies to Office 365 Business.
 
 ## What about existing installations of Office 365 ProPlus?
 
-Starting in July 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version on devices running Windows.
+Starting in July 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version on devices running Windows. This will be a gradual rollout over several weeks, so not all existing installations will immediately get Teams added when Office is updated.
 
-For example, if you're using Version 1904 in Monthly Channel and you update to Version 1906 in July, Teams will be installed on the device as part of the update to Version 1906.
+For example, if you're using Version 1904 in Monthly Channel and you update to Version 1906, Teams will be installed on the device as part of the update to Version 1906.
 
 The date when Teams starts being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
 
@@ -150,12 +152,19 @@ By enabling this policy setting ***before Teams is installed***, Teams won't sta
 But even if you enable this policy setting so that Teams doesn't start automatically, an icon for Microsoft Teams will appear on the user's desktop.
 
 > [!IMPORTANT]
-> - This policy setting only applies if you are installing or updating to Version 1906 or later of Office 365 ProPlus (or Office 365 Business).
+> - This policy setting only applies if you are installing or updating to the following versions of Office 365 ProPlus (or Office 365 Business):
+>    - Version 1906 or later of Monthly Channel
+>    - Version 1902 or later of Semi-Annual Channel
 > - Be sure you're using at least version 4879.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 27, 2019.
 > - The name and help text for these policy settings are only available in English. This is only a temporary issue and they should be available in the usual set of languages by July 8, 2019.
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
 
+## Shared computer and VDI environments with Microsoft Teams
+
+If devices in your organization are shared by multiple users, be aware that Teams is installed separately for each user that signs into that device. Installations of Teams average about 500 mb, so hard disk space, as well network bandwidth for updates, might become an issue for these shared devices installed with Teams. In cases where shared devices are used by a significant number of users, you might want to consider not installing Teams on those shared devices.
+
+If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article isn't currently supported in VDI environments.
 
 ## Feature and quality updates for Microsoft Teams
 
@@ -173,7 +182,9 @@ To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the d
 
 ## What about Office 365 plans that don’t include Microsoft Teams?
 
-Some Office 365 plans include Office, but don’t include the Teams service. For example, the Office 365 Business plan. In that case, a free trial version of Teams that’s valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
+Some Office 365 plans include Office, but don’t include the Teams service. For example, the Office 365 Business plan. Even if an Office 365 plan doesn’t include the Teams service, Teams will still be installed with Office, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
+
+For Office 365 plans that don't include the Teams service, a free trial version of Teams that’s valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
 
 ## Additional information about installing Microsoft Teams
 
