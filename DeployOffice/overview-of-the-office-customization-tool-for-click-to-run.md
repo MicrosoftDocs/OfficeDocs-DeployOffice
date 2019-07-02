@@ -66,15 +66,18 @@ Follow these steps to import and edit an existing configuration file.
 
 ## Save and manage configuration files in the cloud
 
-You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configuration files in the cloud. When you run the Office Deployment Tool, you can reference these configuration files directly in the cloud.
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configuration files in the cloud. You can also refer to these cloud-based files directly when running the Office Deployment Tool. 
+
 
 To work with configuration files in the cloud, sign in to the [Office 365 Client Configuration Service](https://config.office.com/) and go to the [Device Configuration](https://config.office.com/officeSettings/configurations) page. From that page, you can do the following:
 
 - To create a new file, click **Create**, create a configuration file, and then click **Done**. The configuration file is automatically saved to the cloud as part of your tenant.
 - To edit an existing file, click the name of the file, make your changes, and then click **Done**.
-- To get a link to a configuration file, select the file, click **Get Link**, and then click **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. To deploy with the ODT, for example, you can run `setup.exe /configure "link"` on the command line.
+- To get a link to a configuration file, select the file, click **Get Link**, and then click **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. 
 
-You can also copy, upload, or download configuration files from this page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
+When running the Office Deployment Tool, you refer to the cloud-based configuration file by including the link in quotes. To deploy with the ODT, for example, use `setup.exe /configure "link"`.
+
+You can also copy, upload, or download configuration files from the Device Configuration page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
 
 ## Define application preferences
 
