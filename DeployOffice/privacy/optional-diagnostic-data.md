@@ -85,6 +85,7 @@ The following table provides examples of events in this category and a descripti
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | This event indicates Word has executed the command to highlight text. We use this event to detect errors in the text-highlight command.  |
 | Office.Translator.AddInLoaded   | A heartbeat to indicate that the translator feature has been loaded and rendered successfully.  |
+| Office.Graphics.GVizInsertShape |Tracks the usage of the Insert Shape feature in Word and also reports details of types of shapes inserted and from which source.| 
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | This event determines if there are any sections present in a document when the user is inserting Summary Zoom and if the user chooses to delete existing sections. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Tracks when and why a file is opened in Protected View. Used to diagnose conditions where Protected View may not be correctly triggered to ensure the feature is working properly. |
 
@@ -104,7 +105,6 @@ The following table provides examples of events in this category and a descripti
 | Office.Identity.SignInForWamAccountAad  | This event is sent when a user is signed in to an Azure Active Directory account with Web Account Manager (WAM) library. This event sends metadata such as AppName, AppVersion, and ErrorCode if the event failed. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | This event collects the length of time it takes to render the first slide master thumbnail in PowerPoint.  |
 | Office.Extensibility.Diagnostics   | This event provides general diagnostic information for Office add-ins, such as crash reports for debugging.|
-|Office.Graphics.GVizInsertShape |Tracks the usage of the Insert Shape feature and also reports details of types of shapes inserted and from which source.| 
 
 ## Device connectivity and configuration events
 
