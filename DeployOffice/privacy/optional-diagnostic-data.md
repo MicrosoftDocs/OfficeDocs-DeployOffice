@@ -68,7 +68,7 @@ The following table provides examples of events in this category and a descripti
 
 | **Event name**   | **Event description**  |
 | ---- | ---- |
-| Office\_Extensibility\_AppCommands\_GetRibbonUpdatesForUserId | This event indicates whether Word successfully updates the Ribbon in the Word User Interface when the user changes their identity. We use this event to detect incorrect setup and other issues that would affect the Office user interface. |
+| Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | This event indicates whether Word successfully updates the Ribbon in the Word User Interface when the user changes their identity. We use this event to detect incorrect setup and other issues that would affect the Office user interface. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | This event provides information about the Office add-in that the user has installed, including app ID, operating system build and version, success of installation, and duration of install.  |
 
 ## Product and service usage events
@@ -100,10 +100,11 @@ The following table provides examples of events in this category and a descripti
 
 | **Event name**    | **Event description**   |
 | --------------- | -------------- |
-| Office\_Word\_Word\_CoreSaveTime100ns     | This event logs the performance of a document save activity by Word. We use this event to detect errors and performance issues in the Word save document activity.|
+| Office.Word.Word.CoreSaveTime100ns     | This event logs the performance of a document save activity by Word. We use this event to detect errors and performance issues in the Word save document activity.|
 | Office.Identity.SignInForWamAccountAad  | This event is sent when a user is signed in to an Azure Active Directory account with Web Account Manager (WAM) library. This event sends metadata such as AppName, AppVersion, and ErrorCode if the event failed. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | This event collects the length of time it takes to render the first slide master thumbnail in PowerPoint.  |
 | Office.Extensibility.Diagnostics   | This event provides general diagnostic information for Office add-ins, such as crash reports for debugging.|
+|Office.Graphics.GVizInsertShape |Tracks the usage of the Insert Shape feature and also reports details of types of shapes inserted and from which source.| 
 
 ## Device connectivity and configuration events
 
@@ -115,6 +116,6 @@ The following table provides examples of events in this category and a descripti
 
 | **Event name**                    | **Event description**                                                                                                                                                     |
 | ------ | ----- |
-| Office\_Graphics\_ArtViewValidate | This event logs validation the results of Graphics View that supports Graphics User Interface. We use the event to collect usage and error data about graphics rendering. |
+| Office.Graphics.ArtViewValidate | This event logs validation the results of Graphics View that supports Graphics User Interface. We use the event to collect usage and error data about graphics rendering. |
 | Office.Graphics.ARCExceptionScope | This event tracks rendering failures coming from the rendering engine. |
 | Office.Extensibility.ODPLatency   | This event provides information about the user’s network connection and speed.     |
