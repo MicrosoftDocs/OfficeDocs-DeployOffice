@@ -34,7 +34,7 @@ To work with the service, go to [Office Customization Tool](https://config.offic
 Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office. 
 
 > [!NOTE] 
-> We recommend saving and managing your configuration files in the cloud. To do so, sign in to the Office 365 Client Configuration Service before you create your configuration file.  For more details, see [Save and manage configuration files in the cloud](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+> We recommend saving and managing your configuration files in the cloud. To do so, sign in to the Office 365 Client Configuration Service before you create your configuration file.  For more details, see [Save and manage configuration files in the cloud](#save-and-manage-configuration-files-in-the-cloud).
 
 
 1. Go to [Office Customization Tool](https://config.office.com/).
@@ -66,19 +66,19 @@ Follow these steps to import and edit an existing configuration file.
 
 ## Save and manage configuration files in the cloud
 
-You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly in the cloud.
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configuration files in the cloud. When you run the Office Deployment Tool, you can reference these configuration files directly in the cloud.
 
-To work with configuration files in the cloud, sign in to the [Office 365 Client Configuration Service](https://config.office.com/) and go to the [Device Configuration](https://config.office.com/officeSettings/configurations) page.
+To work with configuration files in the cloud, sign in to the [Office 365 Client Configuration Service](https://config.office.com/) and go to the [Device Configuration](https://config.office.com/officeSettings/configurations) page. From that page, you can do the following:
 
 - To create a new file, click **Create**, create a configuration file, and then click **Done**. The configuration file is automatically saved to the cloud as part of your tenant.
 - To edit an existing file, click the name of the file, make your changes, and then click **Done**.
-- To get a link to a configuration file, select the file, click **Get Link**, and then click **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. To deploy with the ODT, for example, you can run setup.exe /configure "link" on the command line. For more details, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+- To get a link to a configuration file, select the file, click **Get Link**, and then click **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. To deploy with the ODT, for example, you can run `setup.exe /configure "link"` on the command line.
 
 You can also copy, upload, or download configuration files from this page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
 
 ## Define application preferences
 
-As part of the Office Customization Tool, you can define application prefences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+As part of the Office Customization Tool, you can define application preferences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
 ## Notes
 
