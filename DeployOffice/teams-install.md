@@ -87,9 +87,9 @@ The guidance above in this section also applies to Office 365 Business.
 
 ## What about existing installations of Office 365 ProPlus?
 
-Starting in July 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version on devices running Windows.
+Starting in July 2019, if you're using Monthly Channel, then Teams will be added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) when you update your existing installation to the latest version on devices running Windows. This will be a gradual rollout over several weeks, so not all existing installations will immediately get Teams added when Office is updated.
 
-For example, if you're using Version 1904 in Monthly Channel and you update to Version 1906 in July, Teams will be installed on the device as part of the update to Version 1906.
+For example, if you're using Version 1904 in Monthly Channel and you update to Version 1906, Teams will be installed on the device as part of the update to Version 1906.
 
 The date when Teams starts being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
 
@@ -173,13 +173,16 @@ To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the d
 
 ## What about Office 365 plans that don’t include Microsoft Teams?
 
-Some Office 365 plans include Office, but don’t include the Teams service. For example, the Office 365 Business plan. In that case, a free trial version of Teams that’s valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
+Some Office 365 plans include Office, but don’t include the Teams service. For example, the Office 365 Business plan. Even if an Office 365 plan doesn’t include the Teams service, Teams will still be installed with Office, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
+
+For Office 365 plans that don't include the Teams service, a free trial version of Teams that’s valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
 
 ## Additional information about installing Microsoft Teams
 
 - There is no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
 - Teams is installed with Office 365 ProPlus in the same way that Teams is installed if you use the [MSI-based installer for Teams](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
 - To complete the installation of Teams, either restart the device or have the user log off and log back on.
+- If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article isn't currently supported.
 - The architecture (sometimes referred to as the *bitness*) of Teams and Office 365 ProPlus installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Office 365 ProPlus. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
 - You can also use PowerShell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
