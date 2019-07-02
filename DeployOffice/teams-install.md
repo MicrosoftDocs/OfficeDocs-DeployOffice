@@ -150,7 +150,9 @@ By enabling this policy setting ***before Teams is installed***, Teams won't sta
 But even if you enable this policy setting so that Teams doesn't start automatically, an icon for Microsoft Teams will appear on the user's desktop.
 
 > [!IMPORTANT]
-> - This policy setting only applies if you are installing or updating to Version 1906 or later of Office 365 ProPlus (or Office 365 Business).
+> - This policy setting only applies if you are installing or updating to the following versions of Office 365 ProPlus (or Office 365 Business):
+>    - Version 1906 or later of Monthly Channel
+>    - Version 1902 or later of Semi-Annual Channel
 > - Be sure you're using at least version 4879.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 27, 2019.
 > - The name and help text for these policy settings are only available in English. This is only a temporary issue and they should be available in the usual set of languages by July 8, 2019.
 
