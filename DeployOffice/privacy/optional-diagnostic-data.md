@@ -31,7 +31,7 @@ This diagnostic data is collected and sent to Microsoft about Office client soft
 
 If you choose to send us optional diagnostic data, required diagnostic data is also included.
 
-Examples of optional diagnostic data include data we collect about the pictures users insert into Word documents so we can provide better image options, and data we collect about the time it takes for a PowerPoint slide to appear on your screen so we can improve the experience if it’s slow.
+Examples of optional diagnostic data include data we collect about the shapes users insert into Word documents so we can provide better options, and data we collect about the time it takes for a PowerPoint slide to appear on your screen so we can improve the experience if it’s slow.
 
 For more information about diagnostic data, see the following:
 
@@ -85,7 +85,6 @@ The following table provides examples of events in this category and a descripti
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | This event indicates Word has executed the command to highlight text. We use this event to detect errors in the text-highlight command.  |
 | Office.Translator.AddInLoaded   | A heartbeat to indicate that the translator feature has been loaded and rendered successfully.  |
-| Office.Graphics.InsertPictureCommandActivity  | Tracks the success or failure of the Insert Picture feature, and also reports details of types of pictures inserted and from which source.|
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | This event determines if there are any sections present in a document when the user is inserting Summary Zoom and if the user chooses to delete existing sections. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Tracks when and why a file is opened in Protected View. Used to diagnose conditions where Protected View may not be correctly triggered to ensure the feature is working properly. |
 
