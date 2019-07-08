@@ -160,6 +160,10 @@ But even if you enable this policy setting so that Teams doesn't start automatic
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
 
+There have been some reports of the above methods not working. An alternative approach is to create a group policy preference to delete the Run key for Teams.
+- Key Name: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+- Value: com.squirrel.Teams.Teams
+
 ## Shared computer and VDI environments with Microsoft Teams
 
 If devices in your organization are shared by multiple users, be aware that Teams is installed separately for each user that signs into that device. Installations of Teams average about 500 mb, so hard disk space, as well network bandwidth for updates, might become an issue for these shared devices installed with Teams. In cases where shared devices are used by a significant number of users, you might want to consider not installing Teams on those shared devices.
