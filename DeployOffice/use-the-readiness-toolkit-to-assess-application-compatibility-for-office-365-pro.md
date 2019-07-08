@@ -295,13 +295,14 @@ The following is an example of a command line that you can run to scan a folder,
 ReadinessReportCreator.exe -p c:\officefiles\ -r -output \\server01\finance -silent
 ```
 
-From version xxxxxx of the Readiness Toolkit, the MRU scan may be executed without installing the Readiness Toolkit on the target device.  Instead, the Readiness Report Creator may be placed on a network share and invoked using the command line options listed above.
+> [!NOTE]
+> Starting with version 1.2.19184 (which was released on July 4, 2019), a scan of most recently used Office documents can be executed without installing the Readiness Toolkit on the target device.  Instead, the Readiness Report Creator can be placed on a network share and invoked using the command line options listed above.
 
 It's important to note that when you run the Readiness Report Creator from the command line, the Readiness Report Creator doesn't create an Excel file. Instead the Readiness Report Creator creates JSON files containing VBA macro and add-in information from the scan.
 
 To create a consolidated Excel report from these various command line scans, you need to run the UI wizard version of the Readiness Report Creator. For the information source, select "Previous readiness results saved together in a local folder or network share," and then specify the location where you saved all the files for the scans. The Readiness Report Creator then consolidates the information from the JSON files into a readiness report in a single Excel file.
 
-Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.  Alternatively, the SQL export option does not have a hard limit on the number or records it can accommodate, so this may be a suitable choice if you expect a large number of results.
+Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.  Alternatively, the SQL export option doesn't have a limit on the number or records it can accommodate, so this may be a suitable choice if you expect a large number of results.
 
 By default, the Readiness Toolkit will spend 2 minutes scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 2 minutes to scan a file.
 
