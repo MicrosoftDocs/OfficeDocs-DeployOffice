@@ -289,9 +289,6 @@ The following is an example of a command line that you can run to scan a user's 
 ReadinessReportCreator.exe -mru -output \\server01\finance -silent
 ```
 
-> [!NOTE]
-> Starting with version 1.2.19184 (which was released on July 4, 2019), you can do a scan of most recently used Office documents without installing the Readiness Toolkit on the target device.  Instead, the Readiness Report Creator can be placed on a network share and invoked using the command line options listed above.
-
 The following is an example of a command line that you can run to scan a folder, and all its subfolders, and save the results to a network share for the Finance department. This only scans for VBA macros.
 
 ```
