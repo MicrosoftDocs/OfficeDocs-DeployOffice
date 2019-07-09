@@ -163,7 +163,7 @@ If you have Office 365 Business or can't use Group Policy for some other reason,
 
 If devices in your organization are shared by multiple users, be aware that Teams is installed separately for each user that signs into that device. Installations of Teams average about 500 mb, so hard disk space, as well network bandwidth for updates, might become an issue for these shared devices installed with Teams. In cases where shared devices are used by a significant number of users, you might want to consider not installing Teams on those shared devices.
 
-If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article is **NOT** currently supported in VDI environments.
+If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article is ***NOT*** currently supported in VDI environments.
 
 ## Feature and quality updates for Microsoft Teams
 
