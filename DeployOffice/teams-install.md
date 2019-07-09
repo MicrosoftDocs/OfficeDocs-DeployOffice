@@ -35,13 +35,13 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
 
-The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule, which is subject to change.
+The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
 |Monthly Channel |Version 1902 | March 4, 2019  |
 |Semi-Annual Channel (Targeted)| Version 1902   | March 12, 2019  |
-|Semi-Annual Channel| Version 1902  |*July 9, 2019* |
+|Semi-Annual Channel| Version 1902  |July 9, 2019 |
 
 > [!NOTE]
 > Teams is also included with the following ***new*** installations:
@@ -97,7 +97,7 @@ The date when Teams starts being added to ***existing*** installations of Office
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
-|Monthly Channel |*Version 1906* | *July 9, 2019*  |
+|Monthly Channel |Version 1906 | July 9, 2019  |
 |Semi-Annual Channel (Targeted)| *To be determined*  | *September 10, 2019*  |
 |Semi-Annual Channel| *To be determined*  | *January 2020* |
 
@@ -132,7 +132,7 @@ If your organization isn't ready to deploy Teams and you use Group Policy, you c
 
 > [!NOTE]
 > - This policy setting only applies if you are installing or updating to Version 1905 or later of Office 365 ProPlus (or Office 365 Business).
-> - Be sure you're using at least version 4873.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 13, 2019.
+> - To use this policy setting, download at least version 4882.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on July 9, 2019.
 
 If you enable this policy setting, Teams won't be installed in the following scenarios for Version 1905 or later:
 
@@ -154,9 +154,8 @@ But even if you enable this policy setting so that Teams doesn't start automatic
 > [!IMPORTANT]
 > - This policy setting only applies if you are installing or updating to the following versions of Office 365 ProPlus (or Office 365 Business):
 >    - Version 1906 or later of Monthly Channel
->    - Version 1902 or later of Semi-Annual Channel
-> - Be sure you're using at least version 4879.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on June 27, 2019.
-> - The name and help text for these policy settings are only available in English. This is only a temporary issue and they should be available in the usual set of languages by July 8, 2019.
+>    - Version 1902 (Build 11328.20368) or later of Semi-Annual Channel or Semi-Annual Channel (Targeted)
+> - To use this policy setting, download at least version 4882.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on July 9, 2019.
 
 If you have Office 365 Business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
 
@@ -164,7 +163,7 @@ If you have Office 365 Business or can't use Group Policy for some other reason,
 
 If devices in your organization are shared by multiple users, be aware that Teams is installed separately for each user that signs into that device. Installations of Teams average about 500 mb, so hard disk space, as well network bandwidth for updates, might become an issue for these shared devices installed with Teams. In cases where shared devices are used by a significant number of users, you might want to consider not installing Teams on those shared devices.
 
-If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article isn't currently supported in VDI environments.
+If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Office 365 ProPlus as described in this article is ***NOT*** currently supported in VDI environments.
 
 ## Feature and quality updates for Microsoft Teams
 
