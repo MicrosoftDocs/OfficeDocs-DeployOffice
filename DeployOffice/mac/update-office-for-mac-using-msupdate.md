@@ -1,5 +1,5 @@
 ---
-title: "Update Office for Mac by using msupdate"
+title: "Update Microsoft applications for Mac by using msupdate"
 ms.author: danbrown
 author: pbowden-msft
 manager: laurawi
@@ -9,14 +9,18 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
-description: "Provides admins with information about how to update Office for Mac from the command line by using msupdate"
+description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
 ---
 
-# Update Office for Mac by using msupdate
+# Update Microsoft applications for Mac by using msupdate
 
 ***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
 
-Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. This can be used to start the Office for Mac update process, in addition to reporting the current AutoUpdate configuration. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. Use the following steps to start using the tool:
+Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. This can be used to start the update process for Microsoft applications produced for Mac, such as Office. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. You can download the latest version of MAU from [this link](https://go.microsoft.com/fwlink/?linkid=830196).
+
+msupdate works by sending Apple Events to the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you are using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [here](https://aka.ms/msupdateprofile).
+
+Use the following steps to start using the tool:
 1. Open the Terminal application
 2. Enter `cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS`
 3. Run `./msupdate --help`
@@ -49,34 +53,37 @@ The following options are displayed:
 - Download and install all available updates:
 ```./msupdate --install```
 - Download and install the latest updates for Word, Excel, and PowerPoint:
-```./msupdate --install --apps mswd2019 xcel2019 ppt32019```
+```./msupdate --install --apps MSWD2019 XCEL2019 PPT32019```
 - Download and install a version-specific update for Outlook:
-```./msupdate --install --apps opim2019 --version 16.17.180090901```
+```./msupdate --install --apps OPIM2019 --version 16.17.180090901```
 
 ## Application identifiers
 The following table lists the applications for Mac supported by AutoUpdate. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.
 
-| Application          |2019 version<sup>1</sup> | 2016 version<sup>2</sup> |
+| Application          |Latest version<sup>1</sup> | 2016 version<sup>2</sup> |
 |:----------------------|:-----------|:-----------|
-|Word           |mswd2019|mswd15      |
-|Excel          |xcel2019|xcel15      |
-|PowerPoint     |ppt32019|ppt315      |
-|Outlook        |opim2019|opim15      |
-|OneNote        |onmc2019|onmc15      |
-|Skype for Business |msfb16| msfb16     |
-|MAU              |msau04|msau04|
-|Remote Desktop         |msrd10| msrd10     |
-|Intune Company Portal  |imcp01| imcp01     |
-
+|Word           |MSWD2019|MSWD15      |
+|Excel          |XCEL2019|XCEL15      |
+|PowerPoint     |PPT32019|PPT315      |
+|Outlook        |OPIM2019|OPIM15      |
+|OneNote        |ONMC2019|ONMC15      |
+|MAU              |MSAU04|MSAU04|
+|OneDrive  |ONDR18
+|Teams  |TEAM01
+|Skype for Business |MSFB16
+|Remote Desktop         |MSRD10
+|Intune Company Portal  |IMCP01
+|Defender ATP  |WDAV01
+|Edge Canary |EDCN01
+|Edge Dev  |EDDV01
 
 <sup>1</sup> These identifiers are used for Office 2019 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 plan) running on macOS version 10.12 (Sierra) or higher.
 
 <sup>2</sup> These identifiers are used for Office 2016 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 plan) running on macOS version 10.11 (El Capitan) or earlier.
 
 > [!NOTE]
-> - To use the 2019 version identifiers, you must be using at least MAU version 4.1 or later.
-> - If you're using MAU version 4.1 or later, you can use either set of identifiers and MAU will automatically change them to the appropriate identifiers based on the criteria described in the footnotes above.
-> - Identifiers are not case-sensitive.
+> - If an update is pending for MAU itself, that update must be applied before any applications can be updated.
+> - Identifiers are not case-sensitive when run interactively from the command-line, but use UPPERCASE identifiers when running from a management tool such as Jamf Pro.
 
 
 ## Related topics
