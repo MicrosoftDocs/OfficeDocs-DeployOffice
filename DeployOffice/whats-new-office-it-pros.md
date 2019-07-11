@@ -18,7 +18,11 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## July 2019
 
+### Microsoft Teams and existing installations of Office 365 ProPlus
 Microsoft Teams will be added to ***existing*** installations of Office 365 ProPlus, starting with Version 1906 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
+
+### Create and manage your deployment configurations in the cloud
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more details, see [Overview of the Office Customization Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-customization-tool-for-click-to-run).
 
 ## April 2019
 
