@@ -39,11 +39,11 @@ If you use a certain number of days for the deadline, you can re-use that deadli
 
 You can also configure how many hours in advance of the deadline that Automatic Download and Install mode begins. This is optional and the default is 72 hours before the deadline.
 
-### Preference settings for deadlines
+## Preference settings for deadlines
 
 The following are the preference settings for configuring a deadline. These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
 
-### Deadline notifications for users
+## Deadline notifications for users
 
 After Automatic Download and Install mode is turned on, MAU automatically updates any applications that are closed.
 
@@ -53,7 +53,7 @@ If users don't want to apply the updates at that time, they can postpone the upd
 
 When the deadline is an hour away, users get a persistent notification along with a timer that counts down the minutes until the deadline. If the deadline arrives and users haven't saved their work and closed their applications, MAU will forcibly close the applications, without saving the data, and starts to apply the updates.
 
-### Additional information about MAU deadlines
+## Additional information about MAU deadlines
 
 - Deadlines can be configured regardless of where MAU is looking for the updates. For example, deadlines work if MAU is getting updates directly from the Office Content Delivery Network (CDN) on the internet of if MAU is getting updates from a MAU caching server within your local network.
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
