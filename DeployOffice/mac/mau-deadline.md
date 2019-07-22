@@ -14,7 +14,7 @@ description: "Provides admins with information about how to set a deadline for u
 
 # Set a deadline for updates from Microsoft AutoUpdate
 
-Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s device. Version 4.13 was released on July 12, 2019.
+Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s device. Version 4.13 was released on July 18, 2019.
 
 Users will receive notifications about the upcoming deadline and can temporarily postpone the updates from being installed. But once the deadline is reached, any applications the user has open will be closed and the updates applied.
 
@@ -23,9 +23,8 @@ Users will receive notifications about the upcoming deadline and can temporarily
 You can set a deadline for any of the following applications:
 
 - An individual application, such as just Word.
-- A grouping of applications, such as Word, Excel, and PowerPoint.
-- All Office applications that are updated by MAU. This includes Excel, OneNote, Outlook, PowerPoint, and Word, but does not include Teams or OneDrive.
-- All Microsoft applications that are updated by MAU. For example, Skype for Business, Remote Desktop, and Microsoft Defender ATP (Advanced Threat Protection).
+- A group of applications, such as Word, Excel, and PowerPoint.
+- All Microsoft applications that are updated by MAU. For example, Skype for Business, Remote Desktop, and Microsoft Defender Advanced Threat Protection (ATP).
 
 The default is for the deadline to apply to all applications that receive updates from MAU.
 
@@ -37,11 +36,142 @@ If you use a specific date and time for the deadline, it’s tied to a specific 
 
 If you use a certain number of days for the deadline, you can re-use that deadline for future updates that Microsoft releases. The number of days is calculated from when an update is detected by MAU.
 
-You can also configure how many hours in advance of the deadline that Automatic Download and Install mode begins. This is optional and the default is 72 hours before the deadline.
+You can also configure how many days in advance of the deadline that Automatic Download and Install mode begins. This is optional and the default is 3 days (72 hours) before the deadline.
 
 ## Preference settings for deadlines
 
 The following are the preference settings for configuring a deadline. These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
+
+### Configure a deadline for a certain number of days after the update is detected
+
+To configure a deadline that is a certain number of days after the update is detected, use the following preference setting.
+
+|||
+|:-----|:-----|
+|**Domain** | com.microsoft.autoupdate2  |
+|**Key**  |UpdateDeadline.DaysBeforeForcedQuit  |
+|**Data Type** |Integer  |
+|**Possible values**  |*various  (example: 5)* |
+|**Comments** | There is no default value. |
+
+For example, if you want to configure a deadline of 5 days after the update for Excel is detected, you can use the following:
+
+```
+<key>Applications</key>
+<dict> 
+  <key>/Applications/Microsoft Excel.app</key>
+  <dict>
+   <key>Application ID</key>
+   <string>XCEL2019</string>
+   <key>LCID</key>
+   <integer>1033</integer>
+   <key>UpdateDeadline.DaysBeforeForcedQuit</key>
+   <integer>5</integer>
+  </dict>
+</dict>
+```
+
+If you want to configure a deadline of 4 days for Excel and 7 days for PowerPoint, you can use the following:
+
+```
+<key>Applications</key>
+<dict>
+  <key>/Applications/Microsoft Excel.app</key>
+  <dict>
+    <key>Application ID</key>
+    <string>XCEL2019</string>
+    <key>LCID</key>
+    <integer>1033</integer>
+    <key>UpdateDeadline.DaysBeforeForcedQuit</key>
+    <integer>4</integer>
+  </dict>
+  <key>/Applications/Microsoft PowerPoint.app</key>
+  <dict>
+   <key>Application ID</key>
+   <string>PPT32019</string>
+   <key>LCID</key>
+   <integer>1033</integer>
+   <key>UpdateDeadline.DaysBeforeForcedQuit</key>
+   <integer>7</integer>
+  </dict>
+</dict>
+```
+
+### Configure a deadline for a specific date and time
+
+To configure a deadline for a specific date and time, use the following preference setting.
+
+|||
+|:-----|:-----|
+|**Domain** | com.microsoft.autoupdate2  |
+|**Key**  |UpdateDeadline.ApplicationsForcedUpdateSchedule   |
+|**Data Type** |Dictionary  |
+|**Possible values**  |*various  (example: 5)* |
+|**Comments** | There is no default value. <br/><br/> The date and time value should be specified in UTC format. |
+
+For example, if you want configure a specific date and time for a deadline for an Excel update, you can use the following:
+
+```
+<key>UpdateDeadline.ApplicationsForcedUpdateSchedule</key>
+<dict> 
+  <key>/Applications/Microsoft Excel.app</key> 
+  <dict> 
+    <key>Application ID</key> 
+    <string>XCEL2019</string> 
+    <key>ForcedUpdateDate</key> 
+    <date>2019-07-23T20:01:20Z</date> 
+    <key>ForcedUpdateVersion</key> 
+    <string>16.27.19071500</string> 
+  </dict> 
+</dict> 
+```
+
+If you want to configure a specific data and time for a deadline for Word and Outlook, you can use the following:
+
+```
+<key>UpdateDeadline.ApplicationsForcedUpdateSchedule</key>
+<dict>
+  <key>/Applications/Microsoft Word.app</key>
+  <dict>
+    <key>Application ID</key>
+    <string>MSWD2019</string>
+    <key>ForcedUpdateDate</key>
+    <date>2019-07-25T20:01:20Z</date>
+    <key>ForcedUpdateVersion</key>
+    <string>16.27.19071500</string>
+  </dict>
+  <key>/Applications/Microsoft Outlook.app</key>
+  <dict>
+    <key>Application ID</key>
+    <string>OPIM2019</string>
+    <key>ForcedUpdateDate</key>
+    <date>2019-08-01T20:01:20Z</date>
+    <key>ForcedUpdateVersion</key>
+    <string>16.27.19071500</string>
+  </dict>
+</dict>
+```
+
+
+### Configure Automatic Download and Install mode
+
+To configure how many days in advance of the deadline that Automatic Download and Install mode begins, use the following preference setting.
+
+|||
+|:-----|:-----|
+|**Domain** | com.microsoft.autoupdate2  |
+|**Key**  |UpdateDeadline.StartAutomaticUpdates  |
+|**Data Type** |Integer  |
+|**Possible values**  |*various*  (example: 2)* |
+|**Comments** | This is an optional setting. <br/><br/>The default value is 3. <br/><br/> Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. Once the deadline is past, MAU will revert to the previous setting on the device.
+
+
+For example, if you want configure Automatic Download and Install mode to being 2 days before the deadline, you can use the following.
+
+```
+<key>UpdateDeadline.StartAutomaticUpdates</key> 
+ <integer>3</integer>
+```
 
 ## Deadline notifications for users
 
