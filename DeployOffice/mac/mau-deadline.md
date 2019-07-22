@@ -106,7 +106,7 @@ To configure a deadline for a specific date and time, use the following preferen
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.ApplicationsForcedUpdateSchedule   |
 |**Data Type** |Dictionary  |
-|**Possible values**  |*various  (example: 5)* |
+|**Possible values**  |*various (see examples below)*|
 |**Comments** | There is no default value. <br/><br/> The date and time value should be specified in UTC format. |
 
 For example, if you want configure a specific date and time for a deadline for an Excel update, you can use the following:
