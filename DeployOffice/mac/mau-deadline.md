@@ -40,7 +40,7 @@ You can also configure how many days in advance of the deadline that Automatic D
 
 ## Preference settings for deadlines
 
-The following are the preference settings for configuring a deadline. These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
+The following are the preference settings for configuring a deadline. These keys are CFPreferences-compatible, which means that they can be set by using enterprise management software for Mac, such as Jamf Pro.
 
 ### Configure a deadline for a certain number of days after the update is detected
 
@@ -54,7 +54,7 @@ To configure a deadline that is a certain number of days after the update is det
 |**Possible values**  |*various  (example: 5)* |
 |**Comments** | There is no default value. |
 
-For example, if you want to configure a deadline of 5 days after the update for Excel is detected, you can use the following:
+For example, if you want to configure a deadline of 5 days after an update for Excel is detected, you can use the following:
 
 ```
 <key>Applications</key>
@@ -126,7 +126,7 @@ For example, if you want configure a specific date and time for a deadline for a
 </dict> 
 ```
 
-If you want to configure a specific data and time for a deadline for Word and Outlook, you can use the following:
+If you want to configure a specific date and time for a deadline for Word and Outlook, you can use the following:
 
 ```
 <key>UpdateDeadline.ApplicationsForcedUpdateSchedule</key>
@@ -162,15 +162,15 @@ To configure how many days in advance of the deadline that Automatic Download an
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.StartAutomaticUpdates  |
 |**Data Type** |Integer  |
-|**Possible values**  |*various*  (example: 2)* |
-|**Comments** | This is an optional setting. <br/><br/>The default value is 3. <br/><br/> Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. Once the deadline is past, MAU will revert to the previous setting on the device.
+|**Possible values**  |*various (example: 2)* |
+|**Comments** | This is an optional setting. <br/><br/>The default value is 3. <br/><br/> Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
 
 
 For example, if you want configure Automatic Download and Install mode to being 2 days before the deadline, you can use the following.
 
 ```
 <key>UpdateDeadline.StartAutomaticUpdates</key> 
- <integer>3</integer>
+ <integer>2</integer>
 ```
 
 ## Deadline notifications for users
