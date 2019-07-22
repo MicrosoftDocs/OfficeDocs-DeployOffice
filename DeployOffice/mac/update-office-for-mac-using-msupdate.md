@@ -73,7 +73,7 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |Skype for Business |MSFB16
 |Remote Desktop         |MSRD10
 |Intune Company Portal  |IMCP01
-|Defender ATP  |WDAV01
+|Defender ATP  |WDAV00
 |Edge Canary |EDCN01
 |Edge Dev  |EDDV01
 
