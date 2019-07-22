@@ -87,7 +87,7 @@ Here are some example installation scenarios, whether they’re supported, and a
 - All installed products must be either the 32-bit version or the 64-bit version. For example, you can’t install a 32-bit version of Visio on the same computer with a 64-bit version of Office.
 - Even though a particular installation scenario is supported, it might not be recommended. For example, we don’t recommend having two different versions of Office installed on the same computer, such as Office 2013 (MSI) and Office 2019 (Click-to-Run).
 - Volume licensed versions of Office 2013 and Office 2016 use Windows Installer (MSI). Volume licensed versions of Office 2019 use Click-to-Run. The same is true for volume licensed versions of Project and Visio.
-- For Office 365 and Office 2019 products, all products installed on the computer must be using the same [update channel](overview-of-update-channels-for-office-365-proplus.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. Therefore, it can’t be installed on the same computer that has Project Online Desktop Client using Semi-Annual Channel or on the same computer that has Visio Online Plan 2 (the subscription version of Visio that was previously named Visio Pro for Office 365) using Monthly Channel.
+- For Office 365 and Office 2019 products, all products installed on the computer must be using the same [update channel](overview-of-update-channels-for-office-365-proplus.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. Therefore, download the package using PerpetualVL2019 mentioned in channel and change it to channel of Office365ProPlus when you configure. 
 
 
 
