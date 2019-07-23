@@ -109,7 +109,7 @@ To configure a deadline for a specific date and time, use the following preferen
 |**Possible values**  |*various (see examples below)*|
 |**Comments** | There is no default value. <br/><br/> The date and time value should be specified in UTC format. |
 
-For example, if you want configure a specific date and time for a deadline for an Excel update, you can use the following:
+For example, if you want to configure a specific date and time for a deadline for an Excel update, you can use the following:
 
 ```
 <key>UpdateDeadline.ApplicationsForcedUpdateSchedule</key>
@@ -166,7 +166,7 @@ To configure how many days in advance of the deadline that Automatic Download an
 |**Comments** | This is an optional setting. <br/><br/>The default value is 3. <br/><br/> Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
 
 
-For example, if you want configure Automatic Download and Install mode to being 2 days before the deadline, you can use the following.
+For example, if you want to configure Automatic Download and Install mode to being 2 days before the deadline, you can use the following.
 
 ```
 <key>UpdateDeadline.StartAutomaticUpdates</key> 
@@ -187,6 +187,6 @@ When the deadline is an hour away, users get a persistent notification along wit
 
 - Deadlines can be configured regardless of where MAU is looking for the updates. For example, deadlines work if MAU is getting updates directly from the Office Content Delivery Network (CDN) on the internet of if MAU is getting updates from a MAU caching server within your local network.
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
-- If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a 7 day deadline for all applications, and then specify that the deadline for Excel is 4 days.
+- If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a deadline of 7 days for all applications, and then specify that the deadline for Excel is 4 days.
 - Instead of configuring a specific date and time for a deadline for a specific version, you can configure that deadline to be a certain number of days after that specific version is detected by MAU.
 - A deadline can be set within the user level preference profile or the management configuration profile level. If a deadline is set at both levels, the management preference profile takes precedence.
