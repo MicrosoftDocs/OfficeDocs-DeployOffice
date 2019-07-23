@@ -189,3 +189,4 @@ When the deadline is an hour away, users get a persistent notification along wit
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
 - If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a 7 day deadline for all applications, and then specify that the deadline for Excel is 4 days.
 - Instead of configuring a specific date and time for a deadline for a specific version, you can configure that deadline to be a certain number of days after that specific version is detected by MAU.
+- A deadline can be set within the user level preference profile or the management configuration profile level. If a deadline is set at both levels, the management preference profile takes precedence.

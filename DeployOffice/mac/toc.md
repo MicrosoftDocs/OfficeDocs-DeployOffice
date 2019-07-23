@@ -4,6 +4,7 @@
 ### [Deploy from the Mac App Store](deploy-mac-app-store.md)
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
 ### [Use msupdate](update-office-for-mac-using-msupdate.md)
+### [Set a deadline](mau-deadline.md)
 ### [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
 ### [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
