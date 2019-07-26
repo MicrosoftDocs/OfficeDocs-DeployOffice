@@ -161,7 +161,7 @@ To disable Windows Error Reporting (Watson), edit the registry and under the HKE
 ### Disable experimentation on Office 365 ProPlus
 Microsoft occasionally runs experiments on Office features.
 
-To disable experimentation, edit the registry and add the DisableFeatureRollout value to the HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\TrustCenter\Experimentation key. The type for DisableFeatureRollout is REG_SZ and the value should be set to "true" (lowercase).
+To disable experimentation, edit the registry and add the DisableFeatureRollout value to the HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\TrustCenter\Experimentation key. The type for DisableFeatureRollout is REG_SZ and the value should be set to `true` (lowercase).
 
 If experimentation was previously enabled, you also need to delete any data under the following registry keys to clear the experimentation cache.
 - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Experiment
