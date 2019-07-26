@@ -129,6 +129,18 @@ Prevent users from adding Skype for Business online meeting details to events.
 |**Availability** | 16.19|
 |**Comments**| Key must be set to true and forced. |
 
+### Disable Teams online meetings
+
+Prevent users from adding Teams online meeting details to events.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key**  | DisableTeamsMeeting|
+|**Data Type**  | Boolean|
+|**Possible values**  |  false (default) <br/> true  |
+|**Availability** | 16.20|
+|**Comments**| Key must be set to true and forced. |
 
 ## Weather location settings
 
