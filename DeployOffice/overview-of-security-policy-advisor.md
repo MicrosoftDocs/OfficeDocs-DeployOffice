@@ -100,7 +100,6 @@ To create the recommendations and insights, Security Policy Advisor requires req
 ## Known Issues
 The following are known issues we are tracking from input we have received during preview.
 1. **Issues with ActiveX recommendations applied to Access**
-   - Recommendations generated for ActiveX (Disable All ActiveX) do not take into account use of Data Import Wizards in Access.
    - Policies deployed for ActiveX do not allow the users to override or report impact when using Data Import Wizards in Access. 
 
 
