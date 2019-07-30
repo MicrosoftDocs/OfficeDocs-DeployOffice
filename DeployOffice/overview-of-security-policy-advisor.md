@@ -96,3 +96,10 @@ Recommendations are currently available for the following security policies:
 In addition, if your organization has Office 365 Advanced Threat Protection Plan 2, then Security Policy Advisor can use data from this service to provide insights on recommended policies. These insights will be based on threats that have been detected and stopped by Advanced Threat Protection. For more details on Office 365 Advanced Threat Protection, see [Office 365 threat investigation and response](https://docs.microsoft.com/office365/securitycompliance/office-365-ti). 
 
 To create the recommendations and insights, Security Policy Advisor requires required service data from Office 365 ProPlus. For more information, see [Required service data for Office](privacy/required-service-data.md).
+
+## Known Issues
+The following are known issues we are tracking from input we have received during preview.
+1. **Issues with ActiveX recommendations applied to Access**
+   - Policy deployed to "Disable All ActiveX" does not allow the users to override or report impact when using Data Import Wizards in Access. 
+
+
