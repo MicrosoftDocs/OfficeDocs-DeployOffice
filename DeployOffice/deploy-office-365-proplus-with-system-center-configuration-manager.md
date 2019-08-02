@@ -98,6 +98,12 @@ The Office installation packages are represented as applications in Configuratio
 7. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
 8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
 9. Complete the wizard.
+10. Add the information for uninstalling Office through SCCM:
+    - Review the description of the **Remove** attribute in the [ODT Reference](https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
+    - Navigate to **Software Library** > **Overview** > **Application Management** > **Applications**, select the just created application, switch to the **Deployment Type** tab on the bottom and edit the **Office 365 Default Deployment Type**.
+    - Switch to the **Programs** tab and specify the following **Uninstall Program**:
+        - setup.exe /configure uninstall.xml
+    - Close the properties by clicking **OK**, right click the deployment type and hit [**Update Content**](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage).
 10. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
 
 After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
