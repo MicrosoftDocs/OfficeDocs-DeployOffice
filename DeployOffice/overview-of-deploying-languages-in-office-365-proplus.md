@@ -144,6 +144,23 @@ For details on how to edit the configuration file in a text editor, see [Configu
 
 If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources — for example, language packs, language interface packs, or proofing tools — installed when you install Office 365 ProPlus. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
+## Uninstall languages
+
+If you want to install a language, you can use the product ID **LanugagePack** as well. Create a configuration file which is using the [**Remove**](https://docs.microsoft.com/en-us/deployoffice/configuration-options-for-the-office-2016-deployment-tool#remove-element) element and run ODT with the /configure switch as well.
+
+The following example would uninstall the German language across all installed products:
+
+### Example
+```xml
+<Configuration>
+  <Remove>
+    <Product ID="LanguagePack">
+      <Language ID="de-de" />
+    </Product>
+  </Remove>
+</Configuration>
+```
+
 ## Use the Office CDN as a backup source for language packs
 
 If you deploy Office from a local source on your network, you can use the Office CDN as a backup source for language packs that might not be available at that local source. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
