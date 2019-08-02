@@ -523,7 +523,13 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
   </Product>
 </Remove>
 ```
+If you want to uninstall a full product with all installed languages, you can leave out the language section. ODT will automatically discover all installed languages for this product and remove them. This can be used when you don't want to uninstall all products, but just a specific one. Otherwise use the "All" attribute. The following example would uninstall Visio with all languages and leave all other products (e.g. Office 365 ProPlus) untouched.
 
+```xml
+<Remove All="FALSE">
+  <Product ID="VisioProRetail" />
+</Remove>
+```
 
 ### All attribute (part of Remove element)
 
