@@ -104,7 +104,7 @@ The Office installation packages are represented as applications in Configuratio
     - Switch to the **Programs** tab and specify the following **Uninstall Program**:
         - setup.exe /configure uninstall.xml
     - Close the properties by clicking **OK**, right click the deployment type and hit [**Update Content**](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage).
-10. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
+11. You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
 
 After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 
