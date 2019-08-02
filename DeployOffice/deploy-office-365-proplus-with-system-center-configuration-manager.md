@@ -133,6 +133,8 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 ### Deploy Visio and Project alongside the core Office apps
 To deploy Visio and Project with Office 365 ProPlus, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
+> [!NOTE] 
+ > When using the Office 365 Installer Wizard in SCCM, the detection methods used for Office, Visio, Project and other products will be the same. We recommend to update the [Detection Methods](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications#bkmk_dt-detect) to make them distinct per product.
 
 ## Related topics
 
