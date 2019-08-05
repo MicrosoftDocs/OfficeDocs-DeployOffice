@@ -4562,9 +4562,9 @@ The following fields are collected:
 
   - **Data\_Doc\_ServerVersion -** the server version offering the service
 
-  - **Data\_Doc\_SessionId -** the server version offering the service
+  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_SharePointServiceContext-**
+  - **Data\_Doc\_SharePointServiceContext-** Diagnostic information from SharePoint Online requests
 
   - **Data\_Doc\_SizeInBytes -** Indicator of document size
 
