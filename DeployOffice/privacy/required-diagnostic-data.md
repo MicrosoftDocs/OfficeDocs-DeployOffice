@@ -6142,33 +6142,33 @@ Collects success and failure of the Forward, Forward as Attachment, and Forward 
 
 The following fields are collected:
 
-  - **CountExceptionForward- Count of the forwarded Meetings Exceptions**
+  - **CountExceptionForward** - Count of the forwarded Meetings Exceptions
 
-  - **CountExceptionForwardAsiCal- Count of the forwarded Meetings Exceptions as an iCal**
+  - **CountExceptionForwardAsiCal** - Count of the forwarded Meetings Exceptions as an iCal
+  - 
+  - **CountExceptionForwardInSplit** - Count of the forwarded Meetings Exceptions from the Split Menu in Ribbon
 
-  - **CountExceptionForwardInSplit- Count of the forwarded Meetings Exceptions from the Split Menu in Ribbon**
+  - **CountExceptionForwardWithAttach** - Count of the forwarded Meetings Exceptions as an Attachment
 
-  - **CountExceptionForwardWithAttach- Count of the forwarded Meetings Exceptions as an Attachment**
+  - **CountRecurringForward** - Count of the forwarded Recurring Meetings
 
-  - **CountRecurringForward- Count of the forwarded Recurring Meetings**
+  - **CountRecurringForwardAsiCal** - Count of the forwarded Recurring Meetings as an iCal
 
-  - **CountRecurringForwardAsiCal- Count of the forwarded Recurring Meetings as an iCal**
+  - **CountRecurringForwardInSplit** - Count of the forwarded Recurring Meetings from the Split Menu in Ribbon
 
-  - **CountRecurringForwardInSplit**- Count of the forwarded Recurring Meetings from the Split Menu in Ribbon
+  - **CountRecurringForwardWithAttach** - Count of the forwarded Recurring Meetings as an Attachment
 
-  - **CountRecurringForwardWithAttach- Count of the forwarded Recurring Meetings as an Attachment**
+  - **CountSingleForward** - Count of the forwarded Single Meetings
 
-  - **CountSingleForward- Count of the forwarded Single Meetings**
+  - **CountSingleForwardAsiCal** - Count of the forwarded Single Meetings as an iCal
 
-  - **CountSingleForwardAsiCal- Count of the forwarded Single Meetings as an iCal**
+  - **CountSingleForwardInSplit** - Count of the forwarded Single Meetings from the Split Menu in Ribbon
 
-  - **CountSingleForwardInSplit- Count of the forwarded Single Meetings from the Split Menu in Ribbon**
+  - **CountSingleForwardWithAttach** - Count of the forwarded Single Meetings as an Attachment
 
-  - **CountSingleForwardWithAttach- Count of the forwarded Single Meetings as an Attachment**
+  - **HResult** - ErrorCode
 
-  - **HResult- ErrorCode**
-
-  - **OlkViewName -- Indicates Mail, Calendar, or Inspector View**
+  - **OlkViewName** - Indicates Mail, Calendar, or Inspector View
 
 #### Office.Outlook.Desktop.OutlookCalendarUsageErr.MeetRcpt.ReplyActions.Rule.O16
 
@@ -6176,33 +6176,33 @@ Collects success and failure of the Reply, Reply All, Reply With IM, and Reply A
 
 The following fields are collected:
 
-  - **CountExceptionReply - Count of the Meetings Reply on exceptions**
+  - **CountExceptionReply** - Count of the Meetings Reply on exceptions
 
-  - **CountExceptionReplyAll - Count of the Meetings ReplyAll on exceptions**
+  - **CountExceptionReplyAll** - Count of the Meetings ReplyAll on exceptions
 
-  - **CountExceptionReplyAllWithIM- Count of the Meetings ReplyAll with IM on exceptions**
+  - **CountExceptionReplyAllWithIM** - Count of the Meetings ReplyAll with IM on exceptions
 
-  - **CountExceptionReplyWithIM- Count of the Meetings Reply with IM on exceptions**
+  - **CountExceptionReplyWithIM** - Count of the Meetings Reply with IM on exceptions
 
-  - **CountRecurringReply - Count of the Recurring Meetings Reply**
+  - **CountRecurringReply** - Count of the Recurring Meetings Reply
 
-  - **CountRecurringReplyAll- Count of the Recurring Meetings ReplyAll**
+  - **CountRecurringReplyAll** - Count of the Recurring Meetings ReplyAll
 
-  - **CountRecurringReplyAllWithIM- Count of the Recurring Meetings ReplyAll with IM**
+  - **CountRecurringReplyAllWithIM** - Count of the Recurring Meetings ReplyAll with IM
 
-  - **CountRecurringReplyWithIM- Count of the Recurring Meetings Reply with IM**
+  - **CountRecurringReplyWithIM** - Count of the Recurring Meetings Reply with IM
 
-  - **CountSingleReply- Count of the Single Meetings Reply**
+  - **CountSingleReply** - Count of the Single Meetings Reply
 
-  - **CountSingleReplyAll- Count of the Single Meetings ReplyAll**
+  - **CountSingleReplyAll**- Count of the Single Meetings ReplyAll
 
-  - **CountSingleReplyAllWithIM- Count of the Single Meetings ReplyAll with IM**
+  - **CountSingleReplyAllWithIM** - Count of the Single Meetings ReplyAll with IM
 
-  - **CountSingleReplyWithIM- Count of the Single Meetings Reply with IM**
+  - **CountSingleReplyWithIM** - Count of the Single Meetings Reply with IM
 
-  - **HResult- ErrorCode**
+  - **HResult** - ErrorCode
 
-  - **OlkViewName- Indicates Mail, Calendar, or Inspector View**
+  - **OlkViewName** - Indicates Mail, Calendar, or Inspector View
 
 #### Office.Outlook.Desktop.OutlookPrivsDlgSingleUser.LoadFail
 
@@ -6244,7 +6244,7 @@ The errors this event identifies help us understand when the customer experience
 
 The following fields are collected:
 
-Count – The count of each assert reported
+ - **Count** – The count of each assert reported
 
   - **EndTime** – Time at which the last assert reported occurred
 
