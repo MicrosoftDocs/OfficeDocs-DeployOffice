@@ -325,7 +325,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed. Note that OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).  
+Defines which Office 365 ProPlus products should not be installed. Note that OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).
 
 ### Example
 
@@ -340,6 +340,11 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
   </Product>
 </Add>  
 ```
+
+If a configuration.xml is applied to a system which has Office 365 ProPlus already installed, ExcludeApp will be handled like the following by the ODT:
+- If the list of languages in the configuration.xml is equal or a superset (more) of installed languages, the incoming ExcludeApp setting will replace the existing one.
+- In any other cases (no languages or just a subset listed), ODT will merge the incoming setting with the existing one.
+
 
 ### ID attribute (part of ExcludeApp element)
 
