@@ -780,7 +780,7 @@ Collects the success and failure of Outlook loading of an add-in. This data is a
 
 The following fields are collected:
 
-  - **Standard HVA activity with no custom payload**
+  - **Standard HVA activity** with no custom payload
 
 #### Office.Outlook.Mac.AddinAPIUsage
 
@@ -5399,6 +5399,46 @@ The following fields are collected:
 
 - **Event Name** - Event Name is the Event Category and Event Label.
 
+#### Office.Apple.SystemHealthAppExitMacAndiOS
+
+On boot event that captures graceful and ungraceful app exits for further investigation.
+
+The following fields are collected:
+
+- **AffectedProcessResidentMemoryOnCrash** – Resident memory of crashed app
+
+- **AffectedProcessSessionID** – SessionID of the process in previous exit
+
+- **AffectedProcessUnsymbolicatedChecksum** – Goes with Stack hash for symbolization
+
+- **AffectedProcessVirtualMemoryOnCrash** – Virtual memory of crashed app
+
+- **AffectedSessionBuildNumber** – App version
+
+- **AffectedSessionDuration** – Duration of session in seconds before crash
+
+- **AffectedSessionIDSMatch** – Boolean to verify whether reporting session id is the same as picked up by MERP
+
+- **AffectedSessionLongBuildNumber** – Long build number
+
+- **AffectedSessionMERPSessionID** – Session ID of MERP
+
+- **AffectedSessionOSLocale** – OS Locale
+
+- **AffectedSessionOSVersion** – OS version
+
+- **AffectedSessionStackHash** – Hash of the crashed app’s stack trace
+
+- **AffectedSessionStartTime** – Datetime of session start
+
+- **AffectedSessionUAEType** – Enum giving us information on what type of crash it was
+
+- **AffectedSessionVersion** – App version
+
+- **DeviceModel** – Hardware model
+
+- **ExitWasGraceful** – Was previous app exit graceful?
+
 #### Office.Extensibility.COMAddinUnhandledException
 
 Event generated when COM Add-in crashes
@@ -5432,6 +5472,59 @@ The following fields are collected:
 
 **LoadAttempts** – number of attempts to load add-in
 
+#### Office.Extensibility.COMAddinUnhandledExceptionEnterprise
+
+Event generated when COM Add-in crashes.  This is used as a numerator in the computation of enterprise-specific health status for add-ins which is used to infer during pilot if the add-in is "ready to upgrade" in the production ring.
+
+The following fields are collected (Note that these fields are written as placeholders to prevent breaking existing scripts: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
+
+
+- **AddinConnectFlag** - current load behavior
+
+- **AddinFileName** - field empty - deprecated
+
+- **AddinFriendlyName** - field empty - deprecated
+
+- **AddinId** - the add-in Class Id
+
+- **AddinProgId** - field empty - deprecated
+
+- **AddinTimeDateStamp** - the add-in timestamp from the DLL metadata
+
+- **AddinVersion** - field empty - deprecated
+
+- **Interface** - Office interface where exception occurred
+
+- **LoadAttempts** - number of attempts to load add-in
+
+- **Method** - Office method where exception occurred
+
+- **ScopeId** - the current thread scope
+
+- **VSTOAddIn** - whether add-in is VSTO
+
+#### Office.Extensibility.Sandbox.ODPActivationHeartbeat
+
+Office Add-ins run in a sandbox. This event collects heartbeat information on activations. When an add-in crashes, this event collects why it crashed in the case it’s related to our sandbox. Used to investigate when customers escalate issues.
+ 
+The following fields are collected:
+
+- **AppId** - ID of the App
+
+- **AppInfo** - Data regarding the type of add-in (task pane or UILess or in content etc.) and the provider type (omen, SharePoint, filesystem etc.)
+
+- **AppInstanceId** - ID of the app instance 
+
+- **AssetId** - Asset ID of the app
+
+- **ErrorCode** - Total time spent 
+
+- **NumberOfAddinsActivated** - Counter of add-ins activated
+
+- **RemoterType** - Specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF, etc.) used to activate the add-in
+
+- **StoreType** - Origin of the app
+
 #### Office.Extensibility.VbaTelemetryBreak
 
 Event generated when a macro-enabled file runs into a compile or runtime error
@@ -5447,6 +5540,17 @@ The following fields are collected:
 **SolutionType** – type of solution (document, template, app add-in, COM add-in)
 
 **Data.ErrorCode** – error code reported by VBA engine
+
+
+#### Office.FindTime.AppFailedToStart
+
+Collected when app fails to start due to an unexpected error during startup. Used to track exceptions & crashes.  Helps monitor and debug app health.
+
+The following fields are collected: 
+
+- **DateTime** - Timestamp of when the event is logged.
+
+- **EventName** - The name of the event being logged.
 
 #### Office.Outlook.Desktop.HangBucketMetrics
 
@@ -5635,6 +5739,52 @@ The following fields are collected:
   - **OfficeVersion** – the versions of Office
 
   - **ProgID** – the add-in Prog identifier
+
+#### Office.System.SystemHealthUngracefulAppExitMacAndiOS
+
+On boot event that captures ungraceful app exits for further investigation.
+
+The following fields are collected:
+
+- **AffectedProcessAppBuild** – Build number
+
+- **AffectedProcessAppBuildRevision** – Build Revision Number
+
+- **AffectedProcessAppMajorVer** – Major version number of App
+
+- **AffectedProcessAppMinorVer** – Minor version number of App
+
+- **AffectedProcessAppName** – Application name
+
+- **AffectedProcessResidentMemoryOnCrash** – Resident memory of crashed app
+
+- **AffectedProcessUnsymbolicatedChecksum** – Goes with Stack hash for symbolization
+
+- **AffectedProcessVirtualMemoryOnCrash** – Virtual memory of crashed app
+
+- **AffectedSessionDuration** – Duration of session in seconds before crash
+
+- **AffectedSessionLongBuildNumber** – Long build number
+
+- **CrashedProcessSessionID** – SessionID of the process in app crash
+
+- **DetectionTime** – DateTime of app crash
+	
+- **DeviceModel** – Hardware model
+
+- **MERPSessionID** – Session ID of MERP
+
+- **ReportingOsLocaleTag** – OS locale
+
+- **ReportingOSVerStr** – OS version
+
+- **SessionBuildNumber** – Crashed App’s version
+
+- **SessionIDSMatch** – Boolean to verify whether reporting session ID is the same as picked up by Merp
+
+- **SessionVersion** – Crashed App’s version– **StackHash** – Hash of the crashed app’s stack trace
+
+- **UAEType** – Enum giving us information on what type of crash it was
 
 #### Office.ThisAddIn.StartupFailed
 
