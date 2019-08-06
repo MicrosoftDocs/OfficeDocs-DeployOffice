@@ -557,6 +557,26 @@ The following fields are collected:
 
 Software add-ins and their settings​.
 
+#### Excel.AddinDefinedFunction.CustomFunctionsAllInOne
+
+Collects information about runtime behavior of custom add-in functions. Maintains counters of execution attempts, successful completions, infrastructure errors, and user code errors. This is used to identify reliability issues in the product and fix user-impacting problems.
+ 
+The following fields are collected:
+
+- **AsyncBegin** - number of async functions that begin
+
+- **AsyncEndAddinError** - number of async functions that end in error
+
+- **AsyncEndInfraFailure** - number of async functions that end with in infra failure
+
+- **AsyncEndSuccess** - number of async functions that end successfully
+
+- **AsyncRemoveCancel** - number of async functions that were canceled 
+
+- **AsyncRemoveRecycle** - number of async functions that were removed due to recycle 
+
+- **StreamingCycles1** - streaming cycle counter
+
 #### Office.Extensibility.AppCommands.AppCmdProjectionStatus
 
 Collects information to track which Office add-in installations successfully updated the ribbon vs failed.
@@ -566,6 +586,21 @@ Used to fix common registration issues where add-ins are not installed properly 
 The following fields are collected:
 
   - None
+
+#### Office.Extensibility.AppCommands.AddSolution
+
+Collects install information for Office add-ins that customize the ribbon.  Used to detect issues with how custom add-ins modify the office ribbon.
+ 
+The following fields are collected:
+
+- **AppVersion** - version of the app
+
+- **SolutionId** - id of the solution
+
+- **StoreType** - indicates the origin of the app
+
+- **TelemetryId** - telemetry id based on the signed in identity
+
 
 #### Office.Extensibility.Catalog.ExchangeGetEntitlements
 
@@ -746,6 +781,56 @@ Collects the success and failure of Outlook loading of an add-in. This data is a
 The following fields are collected:
 
   - **Standard HVA activity with no custom payload**
+
+#### Office.Outlook.Mac.AddinAPIUsage
+
+Collects success and failure of add-in execution in Outlook. This data is actively monitored to ensure Outlook is correctly working with add-ins. This data is used to detect and investigate issues.
+
+The following fields are collected:
+
+- **AccountType** - type of account associated with the add-in 
+
+- **Cookie** - cookie used by add-in
+
+- **DispId** - dispatch identifier 
+
+- **EndTime** - time when add-in ended 
+
+- **ExecutionTime** - time elapsed during execution of add-in 
+
+- **Result** - result of using the add-in in Outlook 
+
+- **StartTime** - time when add-in started
+
+
+#### Office.Outlook.Mac.AddinEventAPIsUsage
+
+Collects success or failure of add-in execution in Outlook. This data is actively monitored to ensure Outlook is correctly working with add-ins. This data is used to detect and investigate issues.
+
+The following fields are collected:
+
+- **AddinType** - type of add-in 
+
+- **EventAction** - action performed by the add-in 
+
+- **EventDispid** - dispatch identifier
+
+- **EventResult** - result of the action performed by the add-in 
+
+#### Office.Outlook.Mac.AddInInstallationFromInClientStore
+
+Collects success or failure of add-in installation in Outlook. This data is actively monitored to ensure Outlook is correctly working with add-ins. This data is used to detect and investigate issues.
+
+The following fields are collected:
+
+- **AccountType** - type of account associated with add-in 
+
+- **FailureReason** - reason add-in failed to install 
+
+- **MarketplaceAssetId** - store add-in identifier 
+
+- **Status** - status of add-in installation
+
 
 #### Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
@@ -1749,7 +1834,7 @@ The following fields are collected:
 
 -  **TagTimeToFirstResultInMs** - Indicates the amount of time OneNote takes to find the first match in a tag search mode.
 
-	-  **TagTimeToLastResultInMs** - Indicates the amount of time OneNote takes to find the last match in a tag search mode.
+-  **TagTimeToLastResultInMs** - Indicates the amount of time OneNote takes to find the last match in a tag search mode.
 
 -  **TagTimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches in a tag search mode.
 
