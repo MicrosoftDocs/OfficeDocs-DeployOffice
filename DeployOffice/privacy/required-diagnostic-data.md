@@ -5822,6 +5822,27 @@ The following fields are collected:
 
 Poor response time or performance for scenarios such as application start up or opening a file.
 
+#### Office.Extensibility.RichApiMethodInvocation
+
+When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance and usage for Rich API method invocation.
+ 
+The following fields are collected:
+
+- **Api** - Full name of the API
+
+- **DispFlag** - A bit flag describing the type of method call (Ex: 0x1 = METHOD, 0x2 = PROPERTYGET, 0x4 = PROPERTYPUT, 0x8 = PROPERTYPUTREF)
+
+- **DispId** - Dispatch ID for the method being called
+
+- **HResult** - HResult for the method call
+
+- **Latency** - Latency for the call, in microseconds
+
+- **ReqId** - GUID for the batch request that this method belongs to
+
+- **TypeId** - GUID for the interface on which this method being called
+
+
 #### Office.Manageability.Service.ApplyPolicy
 
 Critical telemetry to track failure\\Success of applying cloud policy settings to registry. LastError tells why and where the Application of policy in registry failed.
@@ -5860,6 +5881,29 @@ The following fields are collected:
 
   - **ShowScanPstDlg** - Store repair check displayed error message
 
+
+#### Office.Outlook.Mac.BootPerf
+
+Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It is also used to diagnose customer escalations as well as improve boot performance over time.
+
+The following fields are collected:
+
+- **MacOLKBootPerfDuration** - total time spent booting
+
+- **MacOLKBootPerfID** - identifier for the time spent booting
+
+
+#### Office.Outlook.Mac.PerformanceUnresponsive
+
+Used to identify user impacting issues in Outlook that may manifest as degraded performance. 
+
+The following fields are collected:
+
+- **Duration** - time elapsed of degraded performance
+
+- **EventType** - type of event experiencing degraded performance
+
+
 #### Office.Performance.Boot
 
 Collected when an Office application is booted. Includes whether the boot was initiated by opening a file or launching via the Start menu, whether this was the first boot of the application, how much memory the application is using, and whether there was any blocking UI shown to the user. Used to measure how fast Office applications boot and how much memory they use when they start, to ensure there is an acceptable user experience.
@@ -5879,6 +5923,28 @@ The following fields are collected:
   - **VirtualSetMB** - The amount of memory in megabytes in the process’s virtual set. (MacOS / iOS only)
 
   - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process’s working set so far.
+
+#### Office.UX.OfficeInsider.ShowOfficeInsiderDlg
+
+Critical signal tracking user interaction with Join Office Insider dialog. It is used for identifying any issues in performing user-initiated changes such us joining/leaving Office Insider program and changing Office Insider level.
+
+The following fields are collected:
+
+- **Data_AcceptedContactMeNew** - Indicates if a user has accepted to be contacted by Microsoft upon joining Office Insider program
+
+- **Data_InsiderLevel** - Insider Level on opening of “Join Office Insider” dialog
+
+- **Data_InsiderLevelNew** - Insider level on closing of “Join Office Insider” dialog
+
+- **Data_IsInternalUser** - Indicates whether the application runs under the credentials of a Microsoft corporate account.
+
+- **Data_IsInternalUserInit** - Indicates whether the code could determine whether the application runs under the credentials of a Microsoft corporate account.
+
+- **Data_OpenNewsletterWebpage** - Indicates whether Office Insider Newsletter Subscription link was triggered under condition that user has joined Office Insider program, Newsletter Subscription feature is enabled, and the user have not cancelled opening of Office Insider Newsletter Subscription webpage.
+	
+- **Data_RegisterInsider** - Status of Office Insider registration
+
+- **Data_RegisterInsiderHr** - Result code for Office Insider registration
 
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
