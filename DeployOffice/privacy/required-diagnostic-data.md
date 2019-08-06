@@ -6059,6 +6059,19 @@ The following fields are collected:
 
   - **Data\_Timeout** - How long the hang lasted
 
+#### Office.Extensibility.Sandbox.ODPErrorNotification
+
+Tracks the various error notifications received from the sandbox. Used to detect the error scenarios in sandbox and there by fixing it, to improve productivity of the user
+ 
+The following fields are collected:
+
+- **AppId** - Id of the App
+
+- **AppUrl** - scrubbed app URL 
+
+- **Result** - result error code
+
+
 #### Office.Graphics.ARCExceptions 
 
 This exception reporting information is important for assessing the overall health of the graphics stack, as well as identifying parts of the code where failures are occurring at high frequency, in order to prioritize investigation. This exception reporting information is important for assessing the overall health of the graphics stack, as well as identifying parts of the code where failures are occurring at high frequency. This helps an engineer to determine which rendering failures are impacting the most users, enabling us to prioritize our investigations toward fixing issues that will have the greatest user benefit.
@@ -6200,6 +6213,30 @@ The following fields are collected:
   - **CountAccountWizardEnd** - How many times the legacy wizard dialog ended
 
   - **CountCreatePIMAccount** - How many times user created a PIM Profile
+
+#### Office.Outlook.Mac.MacOLKAsserts
+
+Used to identify user impacting issues in Outlook that may manifest as crashes or degraded functionality. 
+
+The following fields are collected:
+
+- **Category** - type of assert
+
+- **CollectionTime** - time when assert is collected
+
+
+#### Office.Outlook.Mac.MacOLKErrors
+
+Used to identify user impacting issues in Outlook that may manifest as crashes or degraded functionality. 
+
+The following fields are collected:
+
+- **Category** - type of error
+
+- **CollectionTime** - time when error is collected
+
+- **ThreadId** - identifier for the thread
+
 
 #### Office.System.SystemHealthAsserts
 
