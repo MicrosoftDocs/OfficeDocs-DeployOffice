@@ -46,6 +46,10 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 [Insert Online Video](https://support.office.com/article/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) allows you to insert video files into your document. The insert online video experience is subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Additional terms of use may apply if you access content from third-party sources. For example, when you connect to YouTube, its [terms of use](https://www.youtube.com/t/terms) and [privacy statement](https://policies.google.com/privacy) will apply. Microsoft may add other providers of video material in the future.
 
+### Microsoft Error Reporting Program (MERP) 
+
+MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. MERP does not apply to Office client applications that run on Windows.
+
 ### Research
 
 [Research](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397) connects to cloud-backed services to obtain dictionary, thesaurus, translation and word lookup results. When you use this experience, it connects to Microsoft-owned services by default and the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/) apply. Research allows you to add other service providers. If you decide to use another service provider, additional terms may apply.
