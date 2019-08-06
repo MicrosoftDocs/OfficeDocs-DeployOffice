@@ -5448,29 +5448,29 @@ Global insights: this is used to compute a global, non-enterprise-specific "read
 
 The following fields are collected:
 
-**ScopeId** – the current thread scope
+- **ScopeId** – the current thread scope
 
-**Method** – Office method where exception occurred
+- **Method** – Office method where exception occurred
 
-**Interface** – Office interface where exception occurred
+- **Interface** – Office interface where exception occurred
 
-**AddinId** – the add-in Class Id
+- **AddinId** – the add-in Class Id
 
-**AddinProgId** – the add-in Prog Id
+- **AddinProgId** – the add-in Prog Id
 
-**AddinFriendlyName** – the add-in friendly name
+- **AddinFriendlyName** – the add-in friendly name
 
-**AddinTimeDateStamp** – the add-in timestamp from the DLL metadata
+- **AddinTimeDateStamp** – the add-in timestamp from the DLL metadata
 
-**AddinVersion** – the add-in version
+- **AddinVersion** – the add-in version
 
-**AddinFileName** – add-in file name excluding file path
+- **AddinFileName** – add-in file name excluding file path
 
-**VSTOAddIn** – whether add-in is VSTO
+- **VSTOAddIn** – whether add-in is VSTO
 
-**AddinConnectFlag** – current load behavior
+- **AddinConnectFlag** – current load behavior
 
-**LoadAttempts** – number of attempts to load add-in
+- **LoadAttempts** – number of attempts to load add-in
 
 #### Office.Extensibility.COMAddinUnhandledExceptionEnterprise
 
@@ -5533,13 +5533,13 @@ Desktop Analytics: This is used as numerator in the computation of enterprise-sp
 
 The following fields are collected:
 
-**TagId** – the id of the telemetry tag
+- **TagId** – the id of the telemetry tag
 
-**BreakReason** – the reason for the break (runtime, compile, other error)
+- **BreakReason** – the reason for the break (runtime, compile, other error)
 
-**SolutionType** – type of solution (document, template, app add-in, COM add-in)
+- **SolutionType** – type of solution (document, template, app add-in, COM add-in)
 
-**Data.ErrorCode** – error code reported by VBA engine
+- **Data.ErrorCode** – error code reported by VBA engine
 
 
 #### Office.FindTime.AppFailedToStart
