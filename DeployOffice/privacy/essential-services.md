@@ -22,7 +22,8 @@ hideEdit: true
 > - Office 365 ProPlus and Office 365 Business
 > - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
 > - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
-
+>
+> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. While you can control many of the connected experiences that are available to you, or to your users if you’re the admin in your organization, there are a set of services that are essential to how Office functions and therefore cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office. Required service data about these services is collected and sent to Microsoft, regardless of any other privacy-related policy settings that you have configured. You can see this data by using the Diagnostic Data Viewer.
 
@@ -2578,7 +2579,9 @@ The following fields are collected:
 
   - **OptInShown** – Indicates whether the opt in dialog shown on the first boot of the app has already been shown
 
-  - **Office.Licensing.NextUserLicensingEligible -** This signal tells us if a user is qualified to move to our new licensing stack. This is critical to quantify the impact on existing users as we roll out our new licensing stack and make sure that users are not losing functionality
+### Office.Licensing.NextUserLicensingEligible 
+
+This signal tells us if a user is qualified to move to our new licensing stack. This is critical to quantify the impact on existing users as we roll out our new licensing stack and make sure that users are not losing functionality.
 
 This event collects no fields.
 
