@@ -449,6 +449,27 @@ The following fields are collected:
 
 - **targetBuild** - Version Office is updating to
 
+#### Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
+
+Indicates whether the Office File Format choice dialog box was shown to the user on first/second boot of Word, Excel, PowerPoint on Win32.  Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel or PPT Win32.
+
+The following fields are collected.
+
+- **CountryRegion** –  The users’ country region setting in Windows system
+
+- **FileFormatBallotBoxAppIDBootedOnce** –  In which app (Word, Excel, PPT) the file format ballot display logic was processed.
+
+- **FileFormatBallotBoxDisplayedOnFirstBoot** –  What is the display result for file format ballot (displayed/not displayed as unexpected/not displayed due to license/not displayed due to location).
+
+#### Office.Compliance.FileFormatBallotOption
+
+Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel or PPT Win32.  Indicates whether the Office File Format choice dialog box is displayed on first or second boot of Word, Excel, or PowerPoint on Win32.
+
+The following fields are collected:
+
+- **FileFormatBallotSelectedOption** – Identifies the file format option (OOXML/ODF) that was selected by the user through the file format ballot dialog box.
+
+
 #### Office.CorrelationMetadata.UTCCorrelationMetadata
 
 Collects Office metadata through UTC to compare with equivalent data collected through the Office telemetry pipeline to check correctness and completeness of data.
