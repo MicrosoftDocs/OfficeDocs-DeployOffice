@@ -20,7 +20,9 @@ hideEdit: true
 If you have a work or school account, your organization’s admin may have provided you with the ability to use one or more cloud-backed services (also referred to as “optional connected experiences”) while using Office 365 ProPlus applications. These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
 
 > [!NOTE]
-> If you're an admin, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md) to learn how to give or restrict your users’ ability to use optional connected experiences.
+> If you're an admin, see the following articles to learn how to give or restrict your users’ ability to use optional connected experiences:
+> - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+> - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ### If you use these services, what terms of use do you need to agree to?
 
@@ -45,6 +47,10 @@ When you use the Office Store, your use of the store site itself is licensed by 
 ### Insert online video
 
 [Insert Online Video](https://support.office.com/article/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) allows you to insert video files into your document. The insert online video experience is subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Additional terms of use may apply if you access content from third-party sources. For example, when you connect to YouTube, its [terms of use](https://www.youtube.com/t/terms) and [privacy statement](https://policies.google.com/privacy) will apply. Microsoft may add other providers of video material in the future.
+
+### Microsoft Error Reporting Program (MERP) 
+
+MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. MERP does not apply to Office client applications that run on Windows.
 
 ### Research
 
@@ -75,9 +81,13 @@ Suggest a Feature is an experience that allows you to submit your ideas regardin
 
 To determine whether your admin has given you the ability to use any optional connected experiences in your Office 365 ProPlus application on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, “Your organization’s admin manages your privacy settings and has decided to disable optional connected experiences.”
 
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
+
 ## Your privacy settings
 
 If your admin has given you the ability to use optional connected experiences in your Office 365 ProPlus application on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
+
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
 ## Diagnostic data
 
@@ -88,3 +98,4 @@ When you use any of the optional cloud-backed services described in this article
 
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Required service data for Office](required-service-data.md)
+- [Account Privacy Settings](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

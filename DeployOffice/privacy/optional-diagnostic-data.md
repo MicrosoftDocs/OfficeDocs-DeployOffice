@@ -22,6 +22,8 @@ hideEdit: true
 > - Office 365 ProPlus and Office 365 Business
 > - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
 > - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+>
+> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
@@ -42,6 +44,7 @@ If you’re the admin for your organization, you might also be interested in the
 
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ## Categories of optional diagnostic data
 

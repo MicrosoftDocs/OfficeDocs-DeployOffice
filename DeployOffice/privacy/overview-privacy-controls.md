@@ -29,9 +29,11 @@ As part of these changes, there are new and updated user interface (UI) elements
 
 > [!IMPORTANT]
 > - These changes apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
-> - These changes also apply to the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
-> - Version 1904 is expected to be available in Semi-Annual Channel (Targeted) in September and in Semi-Annual Channel in January 2020.
-> - We will be extending these new and improved privacy controls to additional Office clients, including Teams, Office for Mac, and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
+> - These changes also apply to the following:
+>   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+>   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - The privacy controls released in Version 1904 are expected to be available in Semi-Annual Channel (Targeted) in September 2019 and in Semi-Annual Channel in January 2020.
+> - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
 
 ## Diagnostic data sent from Office 365 ProPlus to Microsoft
 
@@ -58,12 +60,13 @@ Your users won’t be able to change the diagnostic data level for their devices
 This diagnostic data doesn’t include names of users, their email addresses, or the content of their Office files. Our system creates a unique ID that it associates with your user’s diagnostic data. When we receive diagnostic data showing that one of our apps crashed 100 times, this unique ID lets us determine if it was a single user who crashed 100 times or if it was 100 different users who each crashed once. We don’t use this unique ID to identify a specific user.
 
 To see what diagnostic data is being sent to Microsoft, you can use the Diagnostic Data Viewer, which you can download and install for free from the Microsoft Store.
-
+7
 For more information, see the following:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Office 365 ProPlus
@@ -88,6 +91,7 @@ For more information, see the following:
 
 - [Connected experiences in Office](connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ## Optional connected experiences for Office 365 ProPlus
 
@@ -97,12 +101,13 @@ These are optional connected experiences that are not covered by your organizati
 
 Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to **File** > **Account** > **Account Privacy** > **Manage Settings**. Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
 For more information, see the following:
 
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ## Required service data for connected experiences
 
