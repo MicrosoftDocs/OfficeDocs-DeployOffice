@@ -35,7 +35,7 @@ To verify that Office 365 ProPlus and the Windows 10 device meet these requireme
 - On the Windows 10 device, from the Start menu or a command prompt, type `winver` and then hit Enter. The **About Windows** dialog appears and lists the version of Windows 10.
 - Sign in to the [Microsoft Azure](https://portal.azure.com/) and go to **Azure Active Directory** > **Devices**. The type of join for your Windows 10 device is listed in the **Join Type** column. 
 
-  If the Windows 10 device doesn’t appear, sign in to the Windows 10 device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps that appear.
+  If the Windows 10 device doesn’t appear, sign in to the Windows 10 device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
 
 ## Steps to configure device-based licensing for Office 365 ProPlus
 
