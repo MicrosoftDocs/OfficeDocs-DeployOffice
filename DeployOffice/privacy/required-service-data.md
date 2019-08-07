@@ -21,6 +21,8 @@ hideEdit: true
 > - Office 365 ProPlus and Office 365 Business
 > - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
 > - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+>
+> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
 
@@ -58,6 +60,7 @@ If you’re the admin for your organization, you might also be interested in the
 
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ## Examples of events for service diagnostic data
 

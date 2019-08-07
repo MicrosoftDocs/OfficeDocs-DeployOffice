@@ -9,7 +9,6 @@
 ### [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
 ### [Macro security](set-preference-macro-security-office-for-mac.md)
-### [Diagnostic data](set-preference-diagnostic-data.md)
 ### [Resume Assistant](set-preference-resume-assistant-word.md)
 ### [Outlook preferences](preferences-outlook.md)
 ### [Default decryption password (Excel)](set-preference-default-password-excel.md)
