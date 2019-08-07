@@ -6464,39 +6464,39 @@ This event logs the result of codesign verification after applying an update. We
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains the result of the codesign verification operation.
+- **Payload** - Contains the result of the codesign verification operation.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_download
@@ -6505,39 +6505,39 @@ This event denotes that an update is being downloaded. We use this event for ens
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of an update.
+- **Payload** - Contains an identifier used to track an update activity and name of an update.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_downloadfailed
@@ -6546,39 +6546,39 @@ This event denotes that a failure occurred while downloading an update. We use t
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of an update.
+- **Payload** - Contains an identifier used to track an update activity and name of an update.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_downloadinbackground
@@ -6587,39 +6587,39 @@ This event denotes that we are starting the download a set of updates in the bac
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains number of updates queued.
+- **Payload** - Contains number of updates queued.
 
 	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_downloadingrepairupdate
@@ -6628,39 +6628,39 @@ This event denotes that we have initiated an attempt to download a repair for a 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of an update.
+- **Payload** - Contains an identifier used to track an update activity and name of an update.
 	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_duplicatedownloadattempted
@@ -6669,39 +6669,39 @@ This event denotes that an error occurred. We should only be downloading one upd
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_installattemptfailed
@@ -6710,39 +6710,39 @@ This event denotes that an installation attempt for an update (version) failed. 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_installcomplete
@@ -6751,39 +6751,39 @@ This event denotes that all updates on the batch finished installing. We use thi
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_installed
@@ -6792,39 +6792,39 @@ This event denotes that an individual update was installed successfully. We use 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event. Contains the update identifier.
+- **Payload** - Text that indicates the nature of the event. Contains the update identifier.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### fbasilentupdate_installing
@@ -6833,39 +6833,39 @@ This event denotes that an individual update was initiated. We use this event fo
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of an update and update package name.
+- **Payload** - Contains an identifier used to track an update activity, name of an update and update package name.
 	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_notificationremoved
@@ -6874,39 +6874,39 @@ This event denotes that an update that was blocked is no longer blocked. We use 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an application ID (identifier application uses to register with Microsoft Autoupdate service) for the previously blocked application
+- **Payload** - Contains an application ID (identifier application uses to register with Microsoft Autoupdate service) for the previously blocked application
 	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_queueinstall
@@ -6915,39 +6915,39 @@ This event denotes that an update will be queued for silent installation. We use
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of the update.
+- **Payload** - Contains an identifier used to track an update activity and name of the update.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_requiredappsclosed
@@ -6956,39 +6956,39 @@ We log when an application that has a pending update has been closed. This indic
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, application bundle ID.
+- **Payload** - Contains an identifier used to track an update activity, application bundle ID.
 	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_updateavailablenotification
@@ -6997,39 +6997,39 @@ This event indicates an update available notification is triggered. We must ensu
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_userclicknotification
@@ -7038,39 +7038,39 @@ This event indicates user clicked content section of the update available notifi
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_userselectinstalllater
@@ -7079,39 +7079,39 @@ This event indicates user opted to install later after shown update available no
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### fbasilentupdate_userselectinstallnow
@@ -7120,39 +7120,39 @@ This event indicates user opted to install now after shown update available noti
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installdata_checkrunning
@@ -7161,39 +7161,39 @@ This event logs the result of a check between the apps to be installed and wheth
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installdata_cleanup
@@ -7202,39 +7202,39 @@ Package files should be removed after installation. This event records instances
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains downloaded file name and error details.
+- **Payload** - Contains downloaded file name and error details.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installedapp_invalidbundle
@@ -7243,39 +7243,39 @@ This event indicates Microsoft Autoupdate could not retrieve bundle information 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application name.
+- **Payload** - Contains application name.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installedapp_invalidpreference
@@ -7284,39 +7284,39 @@ This event logs cases in which the user preference contains an invalid applicati
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference of checking for updates
+- **HowTocheck** - The preference of checking for updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installedapp_nilbundleid
@@ -7325,39 +7325,39 @@ This event logs cases in which the bundle ID was missing for an app. We use this
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application name.
+- **Payload** - Contains application name.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installedapp_nilbundlename
@@ -7366,39 +7366,39 @@ This event logs cases in which the bundle name was missing for an app. We use th
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application version
+- **AppVersionLong** - The application version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application name.
+- **Payload** - Contains application name.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installstatus_codesign
@@ -7407,39 +7407,39 @@ This event logs the status of the OS codesign binary. We use this event for ensu
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 	
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installstatus_daemon
@@ -7448,39 +7448,39 @@ This event logs the status of the status of the Microsoft AutoUpdate daemon. We 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned.
+- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installstatus_helper
@@ -7489,39 +7489,39 @@ This event logs the status of the status of the Microsoft AutoUpdate helper tool
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an indication whether PrivilegedHelperTool component exists at expected location and whether it is codesigned.
+- **Payload** - Contains an indication whether PrivilegedHelperTool component exists at expected location and whether it is codesigned.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installupdatestask_applaunched
@@ -7530,39 +7530,39 @@ This event indicates Microsoft Autoupdate has detected application launch for a 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains name of the launched application.
+- **Payload** - Contains name of the launched application.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installupdatestask_applaunchwithpendingupdate
@@ -7571,39 +7571,39 @@ This event indicates Microsoft Autoupdate detected application launch for an app
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installupdatestask_codesignverificationfail
@@ -7612,39 +7612,39 @@ This event denotes that CodeSign verification failed for an app update. We use t
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of the updated application and failure code.
+- **Payload** - Contains an identifier used to track an update activity, name of the updated application and failure code.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_codesignverificationstart
@@ -7653,39 +7653,39 @@ This event denotes that CodeSign verification started for an app update. We use 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of the updated application.
+- **Payload** - Contains an identifier used to track an update activity and name of the updated application.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_codesignverificationsuccess
@@ -7694,39 +7694,39 @@ This event denotes CodeSign verification success for an app update. We use this 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of the updated application.
+- **Payload** - Contains an identifier used to track an update activity and name of the updated application.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_failsilentinstall
@@ -7735,39 +7735,39 @@ This event logs failures while applying silent updates and whether this was a cl
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 	
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and the type of update.
+- **Payload** - Contains an identifier used to track an update activity and the type of update.
 	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installupdatestask_multiplerelocatablepackage
@@ -7776,39 +7776,39 @@ This event indicates Microsoft Autoupdate has found multiple instances of applic
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity and name of update
+- **Payload** - Contains an identifier used to track an update activity and name of update
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installupdatestask_removeclone
@@ -7817,39 +7817,39 @@ This event denotes that a clone was removed. We remove a clone when either the I
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of update, update package name, remove clone status / error details.
+- **Payload** - Contains an identifier used to track an update activity, name of update, update package name, remove clone status / error details.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_retryfail
@@ -7858,39 +7858,39 @@ This event denotes that errors were encountered during the installation retry pr
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of update and whether install should be performed via Install On Clone
+- **Payload** - Contains an identifier used to track an update activity, name of update and whether install should be performed via Install On Clone
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_retryproxyerror
@@ -7899,39 +7899,39 @@ This event logs intra-process communication errors (communication with MAU helpe
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
+- **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### installupdatestask_retryproxyerror
@@ -7940,39 +7940,39 @@ This event logs intra-process communication errors (communication with MAU helpe
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
+- **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 
@@ -7982,39 +7982,39 @@ This event logs that a retry did not work. We use this event for ensuring the up
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of update, application version, update package name and an indication whether Install On Clone was on, whether install was successful and any errors reported on failure.
+- **Payload** - Contains an identifier used to track an update activity, name of update, application version, update package name and an indication whether Install On Clone was on, whether install was successful and any errors reported on failure.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_retrysuccess
@@ -8023,39 +8023,39 @@ This event logs a successful update installation after a retry. We use this even
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, name of update, application version, update package name and an indication whether Install On Clone was on.
+- **Payload** - Contains an identifier used to track an update activity, name of update, application version, update package name and an indication whether Install On Clone was on.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### installupdatestask_setreopengui
@@ -8064,39 +8064,39 @@ This event indicates whether setting preference to reopen GUI after install was 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text indicating success of operation.
+- **Payload** - Text indicating success of operation.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### msupdate_cli_eventhandler_applyupdates_appids
@@ -8105,39 +8105,39 @@ This event indicates a CLI (client-line interface) command was issued to apply a
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains list of application Ids to be updated.
+- **Payload** - Contains list of application Ids to be updated.
 	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### msupdate_cli_eventhandler_config
@@ -8146,39 +8146,39 @@ This event indicates Microsoft Autoupdate Command Line Interface module received
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### msupdate_cli_eventhandler_updates
@@ -8187,39 +8187,39 @@ This event indicates Microsoft Autoupdate Command Line Interface module received
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### msupdate_monitor_progress_downloaded
@@ -8228,39 +8228,39 @@ This event indicates that updates were downloaded. We use this event for ensurin
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains lists of updates downloaded
+- **Payload** - Contains lists of updates downloaded
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### msupdate_monitor_progress_failure
@@ -8269,39 +8269,39 @@ This event logs a list of Queued updates that failed to be applied. We use this 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains lists of updates.
+- **Payload** - Contains lists of updates.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### msupdate_monitor_progress_finished
@@ -8310,39 +8310,39 @@ This event logs a list of Queued updates that completed install. We use this eve
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains lists of updates.
+- **Payload** - Contains lists of updates.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### msupdate_monitor_progress_queued
@@ -8351,39 +8351,39 @@ This event logs a list of Queued updates. We use this event for ensuring the upd
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains lists of updates.
+- **Payload** - Contains lists of updates.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### Optinnotificationaction
@@ -8392,39 +8392,39 @@ This event logs the user’s response to opt-in dialog for enrolling into silent
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains static text representing user selection for opting into Automatic Download and Install.
+- **Payload** - Contains static text representing user selection for opting into Automatic Download and Install.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### sauupdateinfoprovider
@@ -8433,39 +8433,39 @@ This event logs whenever a manifest key is missing from a collateral. We use thi
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains the string used to look for update location or size.
+- **Payload** - Contains the string used to look for update location or size.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatecore_appregistration
@@ -8474,39 +8474,39 @@ This event logs attempts to register an app and the result/reason. We use this e
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains an identifier used to track an update activity, indication whether preference is available, indication if this is re-registration and an indication whether registration is required.
+- **Payload** - Contains an identifier used to track an update activity, indication whether preference is available, indication if this is re-registration and an indication whether registration is required.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatecore_loadinglaunchagent
@@ -8515,39 +8515,39 @@ This event indicates Launch Agent is being loaded. We use this event for ensurin
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatecore_server_connectionfail
@@ -8556,39 +8556,39 @@ This event logs errors hit while reaching out to the CDN. We use this event for 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains information on server name, whether server is valid and if server is reachable.
+- **Payload** - Contains information on server name, whether server is valid and if server is reachable.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefilterhelper_cannotretrievebuilddate
@@ -8597,39 +8597,39 @@ We can filter updates via MAU Service only when the update being offered is not 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application id.
+- **Payload** - Contains application id.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefilterhelper_invalidresponsefromupdatefiltering
@@ -8638,39 +8638,39 @@ We can filter updates via MAU Service only when the update being offered is not 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 	
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application ID.
+- **Payload** - Contains application ID.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefilterhelper_missingbuilddate
@@ -8679,39 +8679,39 @@ We can filter updates via MAU Service only when the update being offered is not 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application ID.
+- **Payload** - Contains application ID.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefilterhelper_updatebypassedoldage
@@ -8720,39 +8720,39 @@ We can filter updates via MAU Service only when the update being offered is not 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application ID.
+- **Payload** - Contains application ID.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_check_start
@@ -8761,39 +8761,39 @@ This event logs whenever we initiate a check for updates operation. We use this 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 	
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains information on updates to offer, registered applications and temporary location downloaded files will save to.
+- **Payload** - Contains information on updates to offer, registered applications and temporary location downloaded files will save to.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_check_status
@@ -8802,39 +8802,39 @@ This event aggregates the status of the check for update operations (the funnel 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains information on updates to offer, registered applications and temporary location downloaded files will save to.
+- **Payload** - Contains information on updates to offer, registered applications and temporary location downloaded files will save to.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_check_updatefound
@@ -8843,39 +8843,39 @@ We log whenever a check for updates results in updates found. We use this event 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_check_updatenotfound
@@ -8884,39 +8884,39 @@ We log whenever a check for updates results in no updates offered due to no upda
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_check_uptodate
@@ -8925,39 +8925,39 @@ We log whenever a check for updates results in no updates offered due to all app
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_offerupdates_minoscheckfail
@@ -8966,39 +8966,39 @@ We log whenever we blocked an update due to not meeting OS requirements. We use 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains minimum required OS version as specified in downloaded manifest file.
+- **Payload** - Contains minimum required OS version as specified in downloaded manifest file.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_offerupdates_nullbundleforappid
@@ -9007,39 +9007,39 @@ This event indicates Microsoft Autoupdate was unable to load bundle information 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application ID.
+- **Payload** - Contains application ID.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_offerupdates_updaterulematched
@@ -9048,39 +9048,39 @@ This event denotes that an update was found for an app and baseline. We use this
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application ID and bundle version information.
+- **Payload** - Contains application ID and bundle version information.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### updatefinder_registeredapps
@@ -9089,39 +9089,39 @@ We log the apps that are installed/registered/Controlled by MAU. We use this eve
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains application ID and bundle version information.
+- **Payload** - Contains application ID and bundle version information.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### updatefinder_suite_missingcollateral
@@ -9130,39 +9130,39 @@ Suite Update - We log whenever a suite update is not applicable due to collatera
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_suite_staleversion
@@ -9171,39 +9171,39 @@ Suite Update - We log whenever a suite update is not applicable due to baseline 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains suite name.
+- **Payload** - Contains suite name.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_suite_updateapplicable
@@ -9212,39 +9212,39 @@ Suite Update - We log whenever a suite update is applicable. We log the baseline
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains Name, Baseline and update version for the suite.
+- **Payload** - Contains Name, Baseline and update version for the suite.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_suite_updatenotapplicabledefaultpath
@@ -9253,39 +9253,39 @@ Suite Update - We log whenever a suite update is not offered due not all suite a
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains Name, Baseline and update version for the suite.
+- **Payload** - Contains Name, Baseline and update version for the suite.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### updatefinder_suite_updatenotapplicableversion
@@ -9294,39 +9294,39 @@ Suite Update - We log whenever a suite update is not offered due not all suite a
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains Name, Baseline and update version for the suite.
+- **Payload** - Contains Name, Baseline and update version for the suite.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_suite_updatenotoffered
@@ -9335,39 +9335,39 @@ Suite Update - We log whenever a suite update is not offered due to suite size b
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains suite name.
+- **Payload** - Contains suite name.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatefinder_suite_updateoffered
@@ -9376,39 +9376,39 @@ Suite Update - We log whenever a suite update is offered. We use this event for 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains Name, Baseline and update version for the suite.
+- **Payload** - Contains Name, Baseline and update version for the suite.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### updatemanager_checkupdate
@@ -9417,39 +9417,39 @@ This event logs number of updates found by Microsoft Autoupdate while checking f
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains count of available updates found.
+- **Payload** - Contains count of available updates found.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### updatemanager_updatespending
@@ -9458,39 +9458,39 @@ This event denotes that updates were found and are pending install. We use this 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains indication whether the task is running on main thread, and number of pending updates.
-	
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **Payload** - Contains indication whether the task is running on main thread, and number of pending updates.
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **SessionId** - The identifier for the session
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
 
 	
 ### webservices_checkforsilentupdates
@@ -9499,39 +9499,39 @@ This event denotes that silent-update candidates were found. We use this event f
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains count of updates found and application ID.
+- **Payload** - Contains count of updates found and application ID.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### webservices_deltaupdater
@@ -9540,80 +9540,39 @@ This event logs interactions between the client code and the feature gate that c
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains response from web-services and updater type to applied.
+- **Payload** - Contains response from web-services and updater type to applied.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
-
-
-### webservices_serviceaction
-
-We log any errors resulting from an unexpected webservice response. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
- 
-The following fields are collected:
-
-	- **App** - The application process sending the event
-
-	- **AppInfo_Language** - The language the application is running under
-
-	- **AppVersionLong** - The application Version
-
-	- **Channel** - The preference for audience
-
-	- **Device_NetworkCountry** - The device country (based on IP address)
-
-	- **DeviceID** - The device identifier
-
-	- **DeviceInfo_Model** - The Hardware Model of the device
-
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
-
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
-
-	- **Event_ReceivedTime** - The time at which telemetry was received
-
-	- **EventInfo_Name** - The name of the telemetry event being logged
-
-	- **EventInfo_Time** - The time at which the logged event took place 
-
-	- **HowTocheck** - The preference for checking of updates
-
-	- **Payload** - Contains details of action being pushed from web-services.
-
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
-
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
-
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ### webservices_serviceaction
@@ -9622,39 +9581,80 @@ We log any errors resulting from an unexpected webservice response. We use this 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains details of action being pushed from web-services.
+- **Payload** - Contains details of action being pushed from web-services.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
+
+
+### webservices_serviceaction
+
+We log any errors resulting from an unexpected webservice response. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+ 
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application Version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The Hardware Model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** - The Version of the Operating System
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowTocheck** - The preference for checking of updates
+
+- **Payload** - Contains details of action being pushed from web-services.
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
 
 
 ### webservices_serviceresponse
@@ -9663,39 +9663,39 @@ This event logs requests to MAU Service, response times and Errors. We use this 
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains request ID, application name, response time and/or status code.
+- **Payload** - Contains request ID, application name, response time and/or status code.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 	
 ### webservices_silentupdate
@@ -9704,39 +9704,39 @@ We log requests to check for any "force update" applicability rules, i.e. we mus
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains request ID, application name, response time and/or status code.
+- **Payload** - Contains request ID, application name, response time and/or status code.
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 
@@ -9746,39 +9746,39 @@ We log requests and responses received into webservices. We use this event for e
  
 The following fields are collected:
 
-	- **App** - The application process sending the event
+- **App** - The application process sending the event
 
-	- **AppInfo_Language** - The language the application is running under
+- **AppInfo_Language** - The language the application is running under
 
-	- **AppVersionLong** - The application Version
+- **AppVersionLong** - The application Version
 
-	- **Channel** - The preference for audience
+- **Channel** - The preference for audience
 
-	- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country (based on IP address)
 
-	- **DeviceID** - The device identifier
+- **DeviceID** - The device identifier
 
-	- **DeviceInfo_Model** - The Hardware Model of the device
+- **DeviceInfo_Model** - The Hardware Model of the device
 
-	- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
 
-	- **DeviceInfo_OsBuild** - The Version of the Operating System
+- **DeviceInfo_OsBuild** - The Version of the Operating System
 
-	- **Event_ReceivedTime** - The time at which telemetry was received
+- **Event_ReceivedTime** - The time at which telemetry was received
 
-	- **EventInfo_Name** - The name of the telemetry event being logged
+- **EventInfo_Name** - The name of the telemetry event being logged
 
-	- **EventInfo_Time** - The time at which the logged event took place 
+- **EventInfo_Time** - The time at which the logged event took place 
 
-	- **HowTocheck** - The preference for checking of updates
+- **HowTocheck** - The preference for checking of updates
 
-	- **Payload** - Contains web-service caller ID
+- **Payload** - Contains web-service caller ID
 
-	- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
-	- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
-	- **SessionId** - The identifier for the session
+- **SessionId** - The identifier for the session
 
 
 ## Services Configuration events
