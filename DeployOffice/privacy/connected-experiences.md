@@ -126,7 +126,7 @@ If you are signed in with a Microsoft account, open an Office app, such as Word,
 
 If you are signed in with a work or school account, the admin in your organization will decide whether these connected experiences are available to you. You won’t see any choices for these connected experiences if you go to **File** > **Account** > **Account Privacy** > **Manage Settings**.
 
-If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don’t use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md).
+If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don’t use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md) and [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or you will get an error message when you try to use those connected experiences.
 

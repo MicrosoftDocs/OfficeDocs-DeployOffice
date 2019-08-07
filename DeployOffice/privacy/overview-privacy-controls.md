@@ -64,6 +64,7 @@ For more information, see the following:
 - [Required diagnostic data for Office](required-diagnostic-data.md)
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Office 365 ProPlus
@@ -88,6 +89,7 @@ For more information, see the following:
 
 - [Connected experiences in Office](connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ## Optional connected experiences for Office 365 ProPlus
 
@@ -103,6 +105,7 @@ For more information, see the following:
 
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ## Required service data for connected experiences
 
