@@ -9887,7 +9887,7 @@ The following fields are collected
 - **Source** - an enum indicates which event triggered the UI, i.e. created a new redx image, sync error in the sync UI, error dialog displayed, etc.
 
 
-#### Office.OneNote.Storage.RealTime. WebSocketSessionInfo
+#### Office.OneNote.Storage.RealTime.WebSocketSessionInfo
  
 This event logs WebSocket sync result for both OneNote modern page content sync modern hierarchy sync. It is used for figuring out how many unique sync targets when calculating OneNote sync score. It is also used for OneNote modern sync performance dashboard.
  
