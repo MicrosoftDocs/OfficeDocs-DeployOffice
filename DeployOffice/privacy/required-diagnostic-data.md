@@ -420,6 +420,99 @@ This category contains the following fields:
 
   - **TelemetryPermissionLevel** - Value indicating what level of diagnostic data the user has opted into. Allows us to understand what level of diagnostic data to expect from a session.
 
+## Data fields that are common for all OneNote events
+
+The following data fields are common for all events for OneNote on Mac, iOS, and Android.
+
+> [!NOTE]
+> When using the Diagnostic Data Viewer, events for OneNote on Mac, iOS, and Android will appear to have a name of Activity, ReportData, or Unexpected. To find the actual event name, select the event, and then look at the EventName field.
+
+- **Activity_ActivityType** -  Indicates the type of this activity event. An activity can be a normal activity or a high value activity.
+
+- **Activity_AggMode** -  Tells the system how to aggregate activity results. Allows us to reduce the amount of information uploaded from a user’s machine by aggregating activity results into a single event that gets sent periodically.
+
+- **Activity_Count** -  The number of times the activity happened if the count is from an aggregated event. Allows us to determine how often an activity succeeded or failed based on the aggregation mode of the activity.
+
+- **Activity_CV** -  A value that identifies the relationship between activities and sub-activities. Allows us to rebuild the relationship between nested activities.
+
+- **Activity_DetachedDurationInMicroseconds** -  The length of time an activity is idle and not doing any real work, but the time is still count towards the total activity's time.
+
+- **Activity_DurationInMicroseconds** -  The length of time the activity took to execute. Allows us to identify performance issues that are negatively impacting the users experience.
+
+- **Activity_Expiration** -  A date in numerical format indicates when this event will be stop sending from clients
+
+- **Activity_FailCount** -  A number of times this activity has failed
+
+- **Activity_Name** -  A short name of an event. Allows to identify the event that was being sent from the client.
+
+- **Activity_Namespace** -  A namespace of an event. Allows to group the event into groups.
+
+- **Activity_Reason** -  A string indicating the reason causing an activity to ends with a particular result.
+
+- **Activity_Result** -  A flag indicating if the activity succeeded, failed, or unexpectedly failed. Allows us to determine if actions the user takes in the product are succeeding or failing. This allows us to identify issues that are impacting the user.
+
+- **Activity_State** -  A flag indicates whether an event is a start of a user activity or an end of a user activity.
+
+- **Activity_SucceedCount** -  A number of times this activity is succeeded.
+
+- **ErrorCode** -  Indicates an error code if available.
+
+- **ErrorCode2** -  Indicates a second error code if available.
+
+- **ErrorCode3** -  Indicates a third error code if available.
+
+- **ErrorTag** -  Indicates the tag associated in code of an error if available.
+
+- **ErrorType** -  Indicates the type of an error if available.
+
+- **EventName** -  A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **ExpFeatures** -  Indicates whether a user has turn-on an experimental-feature switch in OneNote app or not.
+
+- **ExpirationDate** -  A date in numerical format indicates when this event will be stop sending from clients
+
+- **IsConsumer** -  Indicates whether a user is consumer or not
+
+- **IsEdu** -  Indicates whether a user is a user in education tenant or not
+
+- **IsIW** -  Indicates whether a user is an enterprise user or not
+
+- **IsMsftInternal** -  Indicates whether a user is a Microsoft employee or not
+
+- **IsPremiumUser** -  Indicates whether a user has premium license or not
+
+- **Namespace** -  A namespace of the event. Allows to group the event into groups.
+
+- **Release_AppStore** -  A flag indicates whether a build is coming from an app store or not.
+
+- **Release_Audience** -  Identifies a sub-audience of a given audience group. Allows us to track subsets of audience groups to evaluate prevalence and prioritization of issues.
+
+- **Release_AudienceGroup** -  Identifies the ring where data is coming from. Allows us to roll out features in a staged fashion and identify potential issues before they reach most users.
+
+- **Release_Channel** -  The channel that the product is being released through. Allows us to identify if an issue is impacting one of our rollout channels differently than others.
+
+- **RunningMode** -  Indicates how the app is launched either by user or by system process.
+
+- **SchemaVersion** -  Indicates a current telemetry schema version in OneNote's telemetry pipeline.
+
+- **Session_EcsETag** -  An indicator from the flighting system that represents the flights sent to the machine. Allows us to identify what flights might be impacting a given session.
+
+- **Session_ImpressionId** -  Identifies the set of flights that are running in a given session. Allows us to identify which individual flights are running on a session so that we can determine if a flight is the source of an issue impacting users.
+
+- **SessionCorrelationId** -  The globally unique identifier for the host’s session.
+
+- **SH_ErrorCode** -  Indicates an error code if available when an activity fails.
+
+- **Tag** -  An integer tag that identifies the location in code where the telemetry event is generated.
+
+- **UserInfo_IdType** -  A string indicates the type of a user's account
+
+- **UserInfo_OMSTenantId** -  The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **UserInfo_OtherId** -  A list of non-primary pseudonymous identifiers representing user's accounts.
+
+- **UserInfo_OtherIdType** -  A list of non-primary account types.
+
 ## Software setup and inventory data events
 
 The following are the data subtypes in this category:
