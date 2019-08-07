@@ -9785,6 +9785,138 @@ The following fields are collected:
 
 ## OneNote sync events
 
+### Office.OneNote.Storage.NotebookSyncResult
+ 
+This event logs notebook sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score.
+ 
+The following fields are collected
+
+- **CachedError_Code** -a numbered or alphanumeric code used to determine the nature of the cached error, and/or why it occurred
+
+- **CachedError_Description** –a description of the cached error
+
+- **CachedError_Tag** –indicate where in the code throws the cached error
+
+- **CachedError_Type** –the type of the cached error, e.g. Win32Error, etc.
+
+- **ExecutionTime** –time in milliseconds taken to replicate the notebook
+
+- **Gosid** –global object space ID
+
+- **IdentityType** –identity type, e.g. Windows Live, Org ID, etc.
+
+- **InitialReplicationInSession** –is this replication the first notebook replication after open or not
+
+- **IsBackgroundSync** –is this a background sync or not
+
+- **IsCachedErrorSuppressed** –is the cached error suppressed or not
+
+- **IsCachedErrorUnexpected** –is the cached error unexpected or not
+
+- **IsNotebookErrorSuppressed** –is the notebook level sync error suppressed or not
+
+- **IsNotebookErrorUnexpected** –is the notebook level sync error unexpected or not
+
+- **IsSectionErrorSuppressed** –is the section sync error suppressed or not
+
+- **IsSectionErrorUnexpected** –is the section sync error unexpected or not
+
+- **IsUsingRealtimeSync** –is the notebook sync using modern page content sync or not
+
+- **LastAttemptedSync** –timestamp when the notebook was attempted to be synced last time
+
+- **LastBackgroundSync** –timestamp when the latest background sync was attempted
+
+- **LastNotebookViewedDate** –the date when the notebook was last viewed
+
+- **LastSuccessfulSync** –timestamp when the notebook successfully synced before
+
+- **NeedToRestartBecauseOfInconsistencies** –does the sync need to restart because of inconsistencies or not
+
+- **NotebookErrorCode** –notebook level sync error code saved on notebook graph space
+
+- **NotebookId** –notebook ID
+
+- **NotebookType** –notebook type
+
+- **ReplicatingAgainBecauseOfInconsistencies** –does the sync restart because of inconsistencies or not
+
+- **SectionError_Code** –a numbered or alphanumeric code used to determine the nature of the section sync error, and/or why it occurred
+
+- **SectionError_Description** –a description of the section sync error
+
+- **SectionError_Tag** –indicate where in the code throws the section sync error
+
+- **SectionError_Type** –the type of the section sync error, e.g. Win32Error, etc.
+
+- **Success** –is the notebook sync successful or not
+
+- **SyncDestinationType** –sync destination type, i.e. OneDrive or SharePoint Online
+
+- **SyncId** –a number unique to each notebook sync
+
+- **SyncWasFirstInSession** –is this sync the first sync in current session
+
+- **SyncWasUserInitiated** –is this sync user initiated or not
+
+- **TenantId** –SharePoint tenant ID
+
+- **TimeSinceLastAttemptedSync** –time since last notebook sync attempt
+
+- **TimeSinceLastSuccessfulSync** –time since last successful notebook sync
+
+#### Office.OneNote.Storage.RealTime.WebSocketSessionInfo
+ 
+This event logs WebSocket sync result for both OneNote modern page content sync modern hierarchy sync. It is used for figuring out how many unique sync targets when calculating OneNote sync score. It is also used for OneNote modern sync performance dashboard.
+ 
+The following fields are collected:
+ 
+- **CloseReason** - WebSocket close reason, e.g. Abnormal close, etc.
+
+- **DataIsFreshCount** - number of successful pull requests in the WebSocket session
+
+- **DeviceSessionId** - Device session ID
+
+- **DownloadCount** - number of downloads in the WebSocket session
+
+- **Error** - is basically Exception_Type + Exception_Description + Exception_Code + Exception_Tag
+
+- **Exception_Code** - a numbered or alphanumeric code used to determine the nature of an error, and/or why it occurred
+
+- **Exception_Description** - a description of the error
+
+- **Exception_Tag** - indicate where in the code throws the error
+
+- **Exception_Type** - the type of the error, e.g. Win32Error, etc.
+
+- **FirstUpdateSize** - first update message length
+
+- **HasError** - whether there is an error during the WebSocket session 
+
+- **IsEducationNotebook** - Is the current notebook education notebook or not
+
+- **IsHierarchyResource** - Is the current resource a page or a section
+
+- **NotebookId** - OneNote notebook ID
+
+- **OperationWithError** - in which operation did the error happen, e.g. WebSocket.Close, WebSocket.Open, etc.
+
+- **ResourceId** - OneNote page or section resource ID
+
+- **SectionId** - OneNote section ID
+
+- **ServerSessionId** - session ID used to correlate WebSocket request to onenote.com
+
+- **SessionDurationInMs** - the duration in milliseconds of the WebSocket session
+
+- **TenantId** - SharePoint tenant ID
+
+- **TimeToFirstUpdateInMs** - time in milliseconds taken to receive first update from the server side after the WebSocket session is established
+
+- **UploadAckCount** - number of acknowledges for upload in the WebSocket session
+
+- **WebUrl** - PII scrubbed web URL 
+
 #### Office.OneNote.Storage.SectionSyncResult
  
 This event logs section sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score. It is also used for OneNote modern sync performance dashboard.
@@ -9885,59 +10017,6 @@ The following fields are collected
 - **ServerGosid** - resource id for newly created conflict page
 
 - **Source** - an enum indicates which event triggered the UI, i.e. created a new redx image, sync error in the sync UI, error dialog displayed, etc.
-
-
-#### Office.OneNote.Storage.RealTime.WebSocketSessionInfo
- 
-This event logs WebSocket sync result for both OneNote modern page content sync modern hierarchy sync. It is used for figuring out how many unique sync targets when calculating OneNote sync score. It is also used for OneNote modern sync performance dashboard.
- 
-The following fields are collected:
- 
-- **CloseReason** - WebSocket close reason, e.g. Abnormal close, etc.
-
-- **DataIsFreshCount** - number of successful pull requests in the WebSocket session
-
-- **DeviceSessionId** - Device session ID
-
-- **DownloadCount** - number of downloads in the WebSocket session
-
-- **Error** - is basically Exception_Type + Exception_Description + Exception_Code + Exception_Tag
-
-- **Exception_Code** - a numbered or alphanumeric code used to determine the nature of an error, and/or why it occurred
-
-- **Exception_Description** - a description of the error
-
-- **Exception_Tag** - indicate where in the code throws the error
-
-- **Exception_Type** - the type of the error, e.g. Win32Error, etc.
-
-- **FirstUpdateSize** - first update message length
-
-- **HasError** - whether there is an error during the WebSocket session 
-
-- **IsEducationNotebook** - Is the current notebook education notebook or not
-
-- **IsHierarchyResource** - Is the current resource a page or a section
-
-- **NotebookId** - OneNote notebook ID
-
-- **OperationWithError** - in which operation did the error happen, e.g. WebSocket.Close, WebSocket.Open, etc.
-
-- **ResourceId** - OneNote page or section resource ID
-
-- **SectionId** - OneNote section ID
-
-- **ServerSessionId** - session ID used to correlate WebSocket request to onenote.com
-
-- **SessionDurationInMs** - the duration in milliseconds of the WebSocket session
-
-- **TenantId** - SharePoint tenant ID
-
-- **TimeToFirstUpdateInMs** - time in milliseconds taken to receive first update from the server side after the WebSocket session is established
-
-- **UploadAckCount** - number of acknowledges for upload in the WebSocket session
-
-- **WebUrl** - PII scrubbed web URL 
 
 
 ## Services Configuration events
