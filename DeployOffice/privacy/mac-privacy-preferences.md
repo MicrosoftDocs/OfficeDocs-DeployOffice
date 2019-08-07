@@ -28,7 +28,8 @@ In addition, there is a new preference setting related to a **Required Data Noti
 
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
 
-For information about similar settings for Office on computers running Windows, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+> [!NOTE]
+> For information about similar settings for Office on computers running Windows, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 
 ## Setting preferences
 

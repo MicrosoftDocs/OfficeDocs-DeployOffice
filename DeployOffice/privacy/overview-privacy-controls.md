@@ -29,9 +29,11 @@ As part of these changes, there are new and updated user interface (UI) elements
 
 > [!IMPORTANT]
 > - These changes apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
-> - These changes also apply to the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
-> - Version 1904 is expected to be available in Semi-Annual Channel (Targeted) in September and in Semi-Annual Channel in January 2020.
-> - We will be extending these new and improved privacy controls to additional Office clients, including Teams, Office for Mac, and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
+> - These changes also apply to the following:
+>   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+>   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - The privacy controls released in Version 1904 are expected to be available in Semi-Annual Channel (Targeted) in September 2019 and in Semi-Annual Channel in January 2020.
+> - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
 
 ## Diagnostic data sent from Office 365 ProPlus to Microsoft
 
@@ -58,7 +60,7 @@ Your users won’t be able to change the diagnostic data level for their devices
 This diagnostic data doesn’t include names of users, their email addresses, or the content of their Office files. Our system creates a unique ID that it associates with your user’s diagnostic data. When we receive diagnostic data showing that one of our apps crashed 100 times, this unique ID lets us determine if it was a single user who crashed 100 times or if it was 100 different users who each crashed once. We don’t use this unique ID to identify a specific user.
 
 To see what diagnostic data is being sent to Microsoft, you can use the Diagnostic Data Viewer, which you can download and install for free from the Microsoft Store.
-
+7
 For more information, see the following:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
