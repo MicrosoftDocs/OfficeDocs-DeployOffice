@@ -22,6 +22,8 @@ hideEdit: true
 > - Office 365 ProPlus and Office 365 Business
 > - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
 > - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+>
+> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
@@ -419,6 +421,99 @@ This category contains the following fields:
 
   - **TelemetryPermissionLevel** - Value indicating what level of diagnostic data the user has opted into. Allows us to understand what level of diagnostic data to expect from a session.
 
+## Data fields that are common for OneNote events
+
+The following data fields are common for all events for OneNote on Mac, iOS, and Android.
+
+> [!NOTE]
+> When using the Diagnostic Data Viewer, events for OneNote on Mac, iOS, and Android will appear to have a name of Activity, ReportData, or Unexpected. To find the actual event name, select the event, and then look at the EventName field.
+
+- **Activity_ActivityType** -  Indicates the type of this activity event. An activity can be a normal activity or a high value activity.
+
+- **Activity_AggMode** -  Tells the system how to aggregate activity results. Allows us to reduce the amount of information uploaded from a user’s machine by aggregating activity results into a single event that gets sent periodically.
+
+- **Activity_Count** -  The number of times the activity happened if the count is from an aggregated event. Allows us to determine how often an activity succeeded or failed based on the aggregation mode of the activity.
+
+- **Activity_CV** -  A value that identifies the relationship between activities and sub-activities. Allows us to rebuild the relationship between nested activities.
+
+- **Activity_DetachedDurationInMicroseconds** -  The length of time an activity is idle and not doing any real work, but the time is still count towards the total activity's time.
+
+- **Activity_DurationInMicroseconds** -  The length of time the activity took to execute. Allows us to identify performance issues that are negatively impacting the users experience.
+
+- **Activity_Expiration** -  A date in numerical format indicates when this event will be stop sending from clients
+
+- **Activity_FailCount** -  A number of times this activity has failed
+
+- **Activity_Name** -  A short name of an event. Allows to identify the event that was being sent from the client.
+
+- **Activity_Namespace** -  A namespace of an event. Allows to group the event into groups.
+
+- **Activity_Reason** -  A string indicating the reason causing an activity to ends with a particular result.
+
+- **Activity_Result** -  A flag indicating if the activity succeeded, failed, or unexpectedly failed. Allows us to determine if actions the user takes in the product are succeeding or failing. This allows us to identify issues that are impacting the user.
+
+- **Activity_State** -  A flag indicates whether an event is a start of a user activity or an end of a user activity.
+
+- **Activity_SucceedCount** -  A number of times this activity is succeeded.
+
+- **ErrorCode** -  Indicates an error code if available.
+
+- **ErrorCode2** -  Indicates a second error code if available.
+
+- **ErrorCode3** -  Indicates a third error code if available.
+
+- **ErrorTag** -  Indicates the tag associated in code of an error if available.
+
+- **ErrorType** -  Indicates the type of an error if available.
+
+- **EventName** -  A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **ExpFeatures** -  Indicates whether a user has turn-on an experimental-feature switch in OneNote app or not.
+
+- **ExpirationDate** -  A date in numerical format indicates when this event will be stop sending from clients
+
+- **IsConsumer** -  Indicates whether a user is consumer or not
+
+- **IsEdu** -  Indicates whether a user is a user in education tenant or not
+
+- **IsIW** -  Indicates whether a user is an enterprise user or not
+
+- **IsMsftInternal** -  Indicates whether a user is a Microsoft employee or not
+
+- **IsPremiumUser** -  Indicates whether a user has premium license or not
+
+- **Namespace** -  A namespace of the event. Allows to group the event into groups.
+
+- **Release_AppStore** -  A flag indicates whether a build is coming from an app store or not.
+
+- **Release_Audience** -  Identifies a sub-audience of a given audience group. Allows us to track subsets of audience groups to evaluate prevalence and prioritization of issues.
+
+- **Release_AudienceGroup** -  Identifies the ring where data is coming from. Allows us to roll out features in a staged fashion and identify potential issues before they reach most users.
+
+- **Release_Channel** -  The channel that the product is being released through. Allows us to identify if an issue is impacting one of our rollout channels differently than others.
+
+- **RunningMode** -  Indicates how the app is launched either by user or by system process.
+
+- **SchemaVersion** -  Indicates a current telemetry schema version in OneNote's telemetry pipeline.
+
+- **Session_EcsETag** -  An indicator from the flighting system that represents the flights sent to the machine. Allows us to identify what flights might be impacting a given session.
+
+- **Session_ImpressionId** -  Identifies the set of flights that are running in a given session. Allows us to identify which individual flights are running on a session so that we can determine if a flight is the source of an issue impacting users.
+
+- **SessionCorrelationId** -  The globally unique identifier for the host’s session.
+
+- **SH_ErrorCode** -  Indicates an error code if available when an activity fails.
+
+- **Tag** -  An integer tag that identifies the location in code where the telemetry event is generated.
+
+- **UserInfo_IdType** -  A string indicates the type of a user's account
+
+- **UserInfo_OMSTenantId** -  The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **UserInfo_OtherId** -  A list of non-primary pseudonymous identifiers representing user's accounts.
+
+- **UserInfo_OtherIdType** -  A list of non-primary account types.
+
 ## Software setup and inventory data events
 
 The following are the data subtypes in this category:
@@ -447,6 +542,27 @@ The following fields are collected:
 - **status** - Current status of the update
 
 - **targetBuild** - Version Office is updating to
+
+#### Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
+
+Indicates whether the Office File Format choice dialog box was shown to the user on first/second boot of Word, Excel, PowerPoint on Win32.  Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel or PPT Win32.
+
+The following fields are collected.
+
+- **CountryRegion** –  The users’ country region setting in Windows system
+
+- **FileFormatBallotBoxAppIDBootedOnce** –  In which app (Word, Excel, PPT) the file format ballot display logic was processed.
+
+- **FileFormatBallotBoxDisplayedOnFirstBoot** –  What is the display result for file format ballot (displayed/not displayed as unexpected/not displayed due to license/not displayed due to location).
+
+#### Office.Compliance.FileFormatBallotOption
+
+Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel or PPT Win32.  Indicates whether the Office File Format choice dialog box is displayed on first or second boot of Word, Excel, or PowerPoint on Win32.
+
+The following fields are collected:
+
+- **FileFormatBallotSelectedOption** – Identifies the file format option (OOXML/ODF) that was selected by the user through the file format ballot dialog box.
+
 
 #### Office.CorrelationMetadata.UTCCorrelationMetadata
 
@@ -556,6 +672,26 @@ The following fields are collected:
 
 Software add-ins and their settings​.
 
+#### Excel.AddinDefinedFunction.CustomFunctionsAllInOne
+
+Collects information about runtime behavior of custom add-in functions. Maintains counters of execution attempts, successful completions, infrastructure errors, and user code errors. This is used to identify reliability issues in the product and fix user-impacting problems.
+ 
+The following fields are collected:
+
+- **AsyncBegin** - number of async functions that begin
+
+- **AsyncEndAddinError** - number of async functions that end in error
+
+- **AsyncEndInfraFailure** - number of async functions that end with in infra failure
+
+- **AsyncEndSuccess** - number of async functions that end successfully
+
+- **AsyncRemoveCancel** - number of async functions that were canceled 
+
+- **AsyncRemoveRecycle** - number of async functions that were removed due to recycle 
+
+- **StreamingCycles1** - streaming cycle counter
+
 #### Office.Extensibility.AppCommands.AppCmdProjectionStatus
 
 Collects information to track which Office add-in installations successfully updated the ribbon vs failed.
@@ -565,6 +701,21 @@ Used to fix common registration issues where add-ins are not installed properly 
 The following fields are collected:
 
   - None
+
+#### Office.Extensibility.AppCommands.AddSolution
+
+Collects install information for Office add-ins that customize the ribbon.  Used to detect issues with how custom add-ins modify the office ribbon.
+ 
+The following fields are collected:
+
+- **AppVersion** - version of the app
+
+- **SolutionId** - id of the solution
+
+- **StoreType** - indicates the origin of the app
+
+- **TelemetryId** - telemetry id based on the signed in identity
+
 
 #### Office.Extensibility.Catalog.ExchangeGetEntitlements
 
@@ -744,7 +895,57 @@ Collects the success and failure of Outlook loading of an add-in. This data is a
 
 The following fields are collected:
 
-  - **Standard HVA activity with no custom payload**
+  - **Standard HVA activity** with no custom payload
+
+#### Office.Outlook.Mac.AddinAPIUsage
+
+Collects success and failure of add-in execution in Outlook. This data is actively monitored to ensure Outlook is correctly working with add-ins. This data is used to detect and investigate issues.
+
+The following fields are collected:
+
+- **AccountType** - type of account associated with the add-in 
+
+- **Cookie** - cookie used by add-in
+
+- **DispId** - dispatch identifier 
+
+- **EndTime** - time when add-in ended 
+
+- **ExecutionTime** - time elapsed during execution of add-in 
+
+- **Result** - result of using the add-in in Outlook 
+
+- **StartTime** - time when add-in started
+
+
+#### Office.Outlook.Mac.AddinEventAPIsUsage
+
+Collects success or failure of add-in execution in Outlook. This data is actively monitored to ensure Outlook is correctly working with add-ins. This data is used to detect and investigate issues.
+
+The following fields are collected:
+
+- **AddinType** - type of add-in 
+
+- **EventAction** - action performed by the add-in 
+
+- **EventDispid** - dispatch identifier
+
+- **EventResult** - result of the action performed by the add-in 
+
+#### Office.Outlook.Mac.AddInInstallationFromInClientStore
+
+Collects success or failure of add-in installation in Outlook. This data is actively monitored to ensure Outlook is correctly working with add-ins. This data is used to detect and investigate issues.
+
+The following fields are collected:
+
+- **AccountType** - type of account associated with add-in 
+
+- **FailureReason** - reason add-in failed to install 
+
+- **MarketplaceAssetId** - store add-in identifier 
+
+- **Status** - status of add-in installation
+
 
 #### Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
@@ -975,6 +1176,15 @@ The following are the data subtypes in this category:
 
 Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
 
+#### Office.AppCompat.AppCompat.AgentUpload
+
+Generated on client startup when end user has enabled Office Telemetry Dashboard.  It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
+
+The following fields are collected:
+
+- **UploadTime** - the timestamp of the last successful upload performed by the Telemetry Agent.
+
+
 #### Office.AppCompat.AppCompat.AgentScanAndUpload
 
 Only collected when end user has enabled Office Telemetry Dashboard. It collects information on when the Office Telemetry Agent is executed.  This is only collected when Office Telemetry Dashboard is enabled and is used to determine the health of Office Telemetry agent.
@@ -1044,6 +1254,36 @@ The following fields are collected:
   - **SolutionId** – a GUID representing a unique add-in
 
   - **TelemetryId** – a GUID representing a unique user
+
+#### Office.Extensibility.Catalog.ExchangeProcessManifest
+
+Data regarding the processing of an individual manifest for an O365 tenant admin assigned add-in. Used in analysis of customer problems and charting of customer success.
+ 
+The following fields are collected:
+
+- **AppVersion** - version of the app
+
+- **IsAllReturnedManifestsParsed** - bool indicating we parsed all returned manifests
+
+- **IsAppCommand** - bool indicating if this is an app command app 
+
+- **ReturnedManifestsParsed** - count of the parsed manifests
+
+- **SolutionId** - ID of the solution
+
+- **TelemetryId** - telemetry ID based on the signed in identity
+
+#### Office.Extensibility.ODPAppCommandsRibbonClick
+
+Collects whether clicking the custom add-in control succeeded or not. Used to detect issues in user interaction with add-in controls.
+ 
+The following fields are collected:
+
+- **CommandActionType** - type of the add-in command
+
+- **CommandLabel** - label of the command clicked
+
+- **SolutionId** - ID of the solution
 
 #### Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
@@ -1601,6 +1841,213 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
+
+#### Office.OneNote.Navigation.CreatePage
+
+Critical signal used to monitor the ability of OneNote users to create pages in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t create a page this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **IsAtSectionEnd** - Indicates whether a new page is created at the end of section or not.
+
+- **IsBlank** - Indicates whether a new page is blanked page or created with a template.
+
+- **IsRecentsView** - Indicates whether a page is created from a recents or not.
+
+- **NavView** - Indicates whether a page is created from a navigation view or not.
+
+- **NoteType** - Indicates the type (quick note, list, or photo) of a page.
+
+- **QuickNoteType** - Indicates the type (quick note, list, or photo) of a page.
+
+- **RailState** - Indicates the state of OneNote's navigation rail when creating a page.
+
+- **Trigger** - Indicates an entry point where the create page action is started.
+
+- **TriggerInfo** - Indicates additional information related to the trigger.
+
+
+#### Office.OneNote.Navigation.CreateSection
+
+Critical signal used to monitor the ability of OneNote users to create sections in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t create a page this would trigger a high severity incident.
+
+The following fields are collected
+
+- **NotebookID** - A unique identifier of a notebook.
+
+- **SectionID** - A unique identifier of a section created.
+
+- **Trigger** - Indicates an entry point where the create section action is started.
+
+- **TriggerInfo** - Indicates additional information related to the trigger.
+
+
+#### Office.OneNote.Navigation.Navigate
+
+Critical signal used to monitor the ability of OneNote users to navigate between pages in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t navigate this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **FromNotebook** - A unique identifier of a notebook.
+
+- **FromPage** - A unique identifier of a page.
+
+- **FromSection** - A unique identifier of a section.
+
+- **FromSectionGroup** - A unique identifier of a section group.
+
+- **IsCurrentUserEduStudent** - Indicates whether the current user has a student role in an education notebook or not.
+
+- **IsEduNotebook** - Indicates whether the current page is in an education notebook or not.
+
+- **IsEduNotebookReadOnlyPage** - Indicates whether the current page is a read-only page in an education notebook or not.
+
+- **ToNotebook** - A unique identifier of a notebook.
+
+- **ToPage** - A unique identifier of a page.
+
+- **ToSection** - A unique identifier of a section.
+
+- **ToSectionGroup** - A unique identifier of a section group.
+
+
+#### Office.OneNote.NotebookManagement.CreateNotebook
+
+Critical signal used to monitor the ability of OneNote users to create notebooks in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t create notebooks this would trigger a high severity incident.
+
+The following fields are collected:
+	
+- **NotebookID** - A unique identifier of a notebook.
+
+
+#### Office.OneNote.NotebookManagement.OpenNotebook
+
+Critical signal used to monitor the ability of OneNote users to open notebooks in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t open notebooks this would trigger a high severity incident.
+
+The following fields are collected:
+
+-  **NotebookID** - A unique identifier of a notebook.
+
+	
+#### Office.OneNote.Search.Search
+
+Critical signal ID used to monitor the ability of OneNote users to find information across thousands of pages and notebooks.   Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t find information across notebooks this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **PageSearchResultCount** - Indicates the number of search's results found in a page search mode.
+
+-  **PageTimeToFirstResultInMs** - Indicates the amount of time OneNote takes to find the first match in a page search mode.
+	
+-  **PageTimeToLastResultInMs** - Indicates the amount of time OneNote takes to find the last match in a page search mode.
+
+-  **PageTimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches in a page search mode.
+
+-  **SearchResultCount** - Indicates the number of search's results found.
+
+-  **TagSearchResultCount** - Indicates the number of search's results found in a tag search mode.
+
+-  **TagTimeToFirstResultInMs** - Indicates the amount of time OneNote takes to find the first match in a tag search mode.
+
+-  **TagTimeToLastResultInMs** - Indicates the amount of time OneNote takes to find the last match in a tag search mode.
+
+-  **TagTimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches in a tag search mode.
+
+-  **TimeToFirstResultInMs** - Indicates the amount of time OneNote takes to find the first match.
+
+-  **TimeToLastResultInMs** - Indicates the amount of time OneNote takes to find the last match.
+
+-  **TimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches.
+
+
+#### Office.OneNote.Storage.NotebookSyncResult
+ 
+This event logs notebook sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score.
+ 
+The following fields are collected
+
+- **CachedError_Code** - a numbered or alphanumeric code used to determine the nature of the cached error, and/or why it occurred
+	
+- **CachedError_Description** -a description of the cached error
+
+- **CachedError_Tag** -indicate where in the code throws the cached error
+
+- **CachedError_Type** -the type of the cached error, e.g. Win32Error, etc.
+
+- **ExecutionTime** -time in milliseconds taken to replicate the notebook
+
+- **Gosid** -global object space ID
+
+- **IdentityType** -identity type, e.g. Windows Live, Org ID, etc.
+
+- **InitialReplicationInSession** -is this replication the first notebook replication after open or not
+
+- **IsBackgroundSync** -is this a background sync or not
+
+- **IsCachedErrorSuppressed** -is the cached error suppressed or not
+
+- **IsCachedErrorUnexpected** -is the cached error unexpected or not
+
+- **IsNotebookErrorSuppressed** -is the notebook level sync error suppressed or not
+
+- **IsNotebookErrorUnexpected** -is the notebook level sync error unexpected or not
+
+- **IsSectionErrorSuppressed** -is the section sync error suppressed or not
+
+- **IsSectionErrorUnexpected** -is the section sync error unexpected or not
+
+- **IsUsingRealtimeSync** -is the notebook sync using modern page content sync or not
+
+- **LastAttemptedSync** -timestamp when the notebook was attempted to be synced last time
+
+- **LastBackgroundSync** -timestamp when the latest background sync was attempted
+
+- **LastNotebookViewedDate** -the date when the notebook was last viewed
+
+- **LastSuccessfulSync** -timestamp when the notebook successfully synced before
+
+- **NeedToRestartBecauseOfInconsistencies** -does the sync need to restart because of inconsistencies or not
+
+- **NotebookErrorCode** -notebook level sync error code saved on notebook graph space
+
+- **NotebookId** -notebook ID
+
+- **NotebookType** -notebook type
+
+- **ReplicatingAgainBecauseOfInconsistencies** -does the sync restart because of inconsistencies or not
+
+- **SectionError_Code** -a numbered or alphanumeric code used to determine the nature of the section sync error, and/or why it occurred
+
+- **SectionError_Description** -a description of the section sync error
+
+- **SectionError_Tag** -indicate where in the code throws the section sync error
+
+- **SectionError_Type** -the type of the section sync error, e.g. Win32Error, etc.
+
+- **Success** -is the notebook sync successful or not
+
+- **SyncDestinationType** -sync destination type, i.e. OneDrive or SharePoint Online
+
+- **SyncId** -a number unique to each notebook sync
+
+- **SyncWasFirstInSession** -is this sync the first sync in current session
+
+- **SyncWasUserInitiated** -is this sync user initiated or not
+
+- **TenantId** -SharePoint tenant ID
+
+- **TimeSinceLastAttemptedSync** -time since last notebook sync attempt
+
+- **TimeSinceLastSuccessfulSync** -time since last successful notebook sync
+
+
+#### Office.OneNote.System.AppLifeCycle.AppLaunch
+
+Then critical signal used to ensure OneNote users can successfully launch the app.
+The telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app in our performance window, this would trigger a high severity incident.
+
+The following fields are collected: 	None
+
 #### Office.Outlook.Desktop.AccountConfiguration.CreateAccountResult
 
 Result of adding an account to Outlook in a new profile, from the Office Backstage, or from the account settings dialog. The data is actively monitored to ensure we don't see any spikes in failures. We also analyze the data to find areas of improvement. We aim to improve this success rate with each release.
@@ -1666,6 +2113,68 @@ The following fields are collected:
   - **StoreType** – The type of store created OST/PST/NST
 
   - **StoreVersion** – The store version created Small/Large/Tardis
+
+#### Office.Outlook.Mac.AccountAddWorkflow
+
+Result of adding an account in Outlook. The data is monitored to ensure we don’t see any spikes in failures. We also analyze the data to find areas of improvement. We aim to improve this success rate with each release. 
+
+The following fields are collected:
+
+- **AccountConfigMethod** - the account configuration method
+
+- **AccountType** - the type of account being configured
+
+- **AccountWorkflowSession** - session where account workflow is attempted
+
+- **SessionDuration** - duration of session 
+
+- **ThreadId** - identifier for the thread
+
+
+#### Office.Outlook.Mac.AccountOnboardingFlow
+
+Result of adding an account in Outlook using new account configuration experience. The data is monitored to ensure we don’t see any spikes in failures. We also analyze the data to find areas of improvement. We aim to improve this success rate with each release. 
+
+The following fields are collected:
+
+- **AccountConfigAutoSignIn** - automatic account configuration set by admin
+
+- **AccountConfigDomain** - domain specified during account configuration 
+
+- **AccountConfigEntryPoint** - entry point where user entered account configuration 
+
+- **AccountConfigErrorCode** - error code encountered during account configuration 
+
+- **AccountConfigErrorString** - error encountered during account configuration
+
+- **AccountConfigMethod** - account configuration method
+
+- **AccountConfigPhase** - current step of account configuration workflow
+
+- **AccountConfigPhaseFrom** - beginning step of account configuration workflow 
+
+- **AccountConfigPhaseTo** - last step of account configuration workflow 
+
+- **AccountType** - type of account being configured
+
+- **AccountWorkflowSession** - session where account workflow is attempted
+
+- **SessionDuration** - duration of session
+
+
+#### Office.Outlook.Mac.DeleteAccountUsage
+
+Result of deleting an account in Outlook. The data is monitored to ensure we don’t see any spikes in failures. We also analyze the data to find areas of improvement. We aim to improve this success rate with each release. 
+
+The following fields are collected:
+
+- **AccountType** - type of account being configured
+
+- **AccountID** - account identifier
+
+- **DeprovisionAccount** - indicates whether account is removed from server
+
+- **IsFastDelete** - indicates whether account is deleted on background thread
 
 #### Office.PowerPoint.DocOperation.Close
 
@@ -2071,457 +2580,481 @@ The following fields are collected:
 
 #### Office.PowerPoint.DocOperation.SaveAs
 
-Collected whenever PowerPoint performs a Save As. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss.
-
-Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
+Collected whenever PowerPoint performs a Save As. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss.  Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemetryResult:long -** Does this log entry have all necessary document telemetry (Data\_Doc\_\* fields)? If not, why?
+- **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
 
-  - **Data\_CppUncaughtExceptionCount:long -** Uncaught native exceptions while activity was running
+- **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
-  - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
+- **Data_DetachedDuration:long** - Time for which Activity was detached/not running
 
-  - **Data\_DstDoc\_AccessMode:long -** How was this document opened (Read only | read write)
+- **Data_DstDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
-  - **Data\_DstDoc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_DstDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_DstDoc\_ChunkingType:long -** How is document stored in SharePoint
+- **Data_DstDoc_ChunkingType:long** - How is document stored in SharePoint
 
-  - **Data\_DstDoc\_EdpState:long -** Enterprise Data Protection state of document
+- **Data_DstDoc_EdpState:long** - Enterprise Data Protection state of document
 
-  - **Data\_DstDoc\_Ext:string -** Document extension
+- **Data_DstDoc_Ext:string** - Document extension
 
-  - **Data\_DstDoc\_Extension:string -** Document extension
+- **Data_DstDoc_Extension:string** - Document extension
 
-  - **Data\_DstDoc\_FileFormat:long -** Predefined set of values of format of file (more granular than extension)
+- **Data_DstDoc_FileFormat:long** - Predefined set of values of format of file (more granular than extension)
 
-  - **Data\_DstDoc\_Fqdn:string -** Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+- **Data_DstDoc_Fqdn:string** - Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+	
+- **Data_DstDoc_FqdnHash:string** - Hash of where document is stored
 
-  - **Data\_DstDoc\_FqdnHash:string -** Hash of where document is stored
+- **Data_DstDoc_IdentityTelemetryId:string** - Unique GUID of user
 
-  - **Data\_DstDoc\_IdentityTelemetryId:string -** Unique GUID of user
+- **Data_DstDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_DstDoc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
+- **Data_DstDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
 
-  - **Data\_DstDoc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+- **Data_DstDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+	
+- **Data_DstDoc_IsCloudCollabEnabled:bool** - True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
 
-  - **Data\_DstDoc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+- **Data_DstDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_DstDoc\_IsCloudCollabEnabled:bool -** True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
+- **Data_DstDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
 
-  - **Data\_DstDoc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
+- **Data_DstDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-  - **Data\_DstDoc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+- **Data_DstDoc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
+	
+- **Data_DstDoc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
+- **Data_DstDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_DstDoc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
+- **Data_DstDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
 
-  - **Data\_DstDoc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
+- **Data_DstDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
-  - **Data\_DstDoc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
+- **Data_DstDoc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
-  - **Data\_DstDoc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+- **Data_DstDoc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
 
-  - **Data\_DstDoc\_PasswordFlags:long -** Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
+- **Data_DstDoc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
-  - **Data\_DstDoc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
+- **Data_DstDoc_ServerProtocol:long** - Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
 
-  - **Data\_DstDoc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+- **Data_DstDoc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI)
 
-  - **Data\_DstDoc\_ServerDocId:string -** immutable identifier for documents stored in cloud
+- **Data_DstDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16
 
-  - **Data\_DstDoc\_ServerProtocol:long -** Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
+- **Data_DstDoc_SessionId:long** - generated GUID that Identifies the instance of the document within the same process session
 
-  - **Data\_DstDoc\_ServerType:long -** Predefined set of values of type of server (SharePoint, DropBox, WOPI)
+- **Data_DstDoc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
-  - **Data\_DstDoc\_ServerVersion:long -** verifies if server is based off Office14, Office15 or Office 16
+- **Data_DstDoc_SizeInBytes:long** - Document size in bytes
 
-  - **Data\_DstDoc\_SessionId:long -** generated GUID that Identifies the instance of the document within the same process session
+- **Data_DstDoc_SpecialChars:long** - Bitmask indicating special chars in the document's URL or Path
 
-  - **Data\_DstDoc\_SharePointServiceContext:string -** An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
+- **Data_DstDoc_StorageProviderId:string** - A string that identifies the document's storage provider, like "DropBox"
 
-  - **Data\_DstDoc\_SizeInBytes:long -** Document size in bytes
+- **Data_DstDoc_StreamAvailability:long** - Predefined set of values of status of document Stream(available, permanently disabled, not available)
 
-  - **Data\_DstDoc\_SpecialChars:long -** Bitmask indicating special chars in the document's URL or Path
+- **Data_DstDoc_UrlHash:string** - hash of full URL of documents stored in cloud
 
-  - **Data\_DstDoc\_StorageProviderId:string -** A string that identifies the document's storage provider, like "DropBox"
+- **Data_DstDoc_UsedWrsDataOnOpen:bool** - true if the file was opened incrementally using pre cached WRS data on the host
 
-  - **Data\_DstDoc\_StreamAvailability:long -** Predefined set of values of status of document Stream(available, permanently disabled, not available)
+- **Data_DstDoc_WopiServiceId:string** - WOPI Service identifier, e.g. "Dropbox"
 
-  - **Data\_DstDoc\_UrlHash:string -** hash of full URL of documents stored in cloud
+- **Data_FileType:long** - Predefined set of values of internal type of file
 
-  - **Data\_DstDoc\_UsedWrsDataOnOpen:bool -** true if the file was opened incrementally using pre cached WRS data on the host
+- **Data_fLifeguarded:bool** - Was document ever lifeguarded (feature to fix document errors by themselves without prompting user)?
 
-  - **Data\_DstDoc\_WopiServiceId:string -** WOPI Service identifier, e.g. "Dropbox"
+- **Data_FWebCreated:bool** - Does this document have WebCreator flag?
 
-  - **Data\_FileType:long -** Predefined set of values of internal type of file
+- **Data_SaveReason:long** - Predefined set of values of why this save was performed? (AutoSave, ToOCSTransitionSave, ToCSITransitionSave, etc.)
 
-  - **Data\_fLifeguarded:bool -** Was document ever lifeguarded (feature to fix document errors by themselves without prompting user)?
+- **Data_SaveType:long** - Predefined set of values of save type (SaveAs, Publish, Manual, OMSave, etc.) 
 
-  - **Data\_FWebCreated:bool -** Does this document have WebCreator flag?
+- **Data_SrcDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
-  - **Data\_SaveReason:long -** Predefined set of values of why this save was performed? (AutoSave, ToOCSTransitionSave, ToCSITransitionSave, etc.)
+- **Data_SrcDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_SaveType:long -** Predefined set of values of save type (SaveAs, Publish, Manual, OMSave, etc.)
+- **Data_SrcDoc_ChunkingType:long** - How is document stored in SharePoint 
 
-  - **Data\_SrcDoc\_AccessMode:long -** How was this document opened (Read only | read write)
+- **Data_SrcDoc_EdpState:long** - Enterprise Data Protection state of document
 
-  - **Data\_SrcDoc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_SrcDoc_Ext:string** - Document extension
 
-  - **Data\_SrcDoc\_ChunkingType:long -** How is document stored in SharePoint
+- **Data_SrcDoc_Extension:string** - Document extension
 
-  - **Data\_SrcDoc\_EdpState:long -** Enterprise Data Protection state of document
+- **Data_SrcDoc_FileFormat:long** - Predefined set of values of format of file (more granular than extension)
 
-  - **Data\_SrcDoc\_Ext:string -** Document extension
+- **Data_SrcDoc_Fqdn:string** - Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
 
-  - **Data\_SrcDoc\_Extension:string -** Document extension
+- **Data_SrcDoc_FqdnHash:string** - Hash of where document is stored
 
-  - **Data\_SrcDoc\_FileFormat:long -** Predefined set of values of format of file (more granular than extension)
+- **Data_SrcDoc_IdentityTelemetryId:string** - Unique GUID of user
 
-  - **Data\_SrcDoc\_Fqdn:string -** Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+- **Data_SrcDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_SrcDoc\_FqdnHash:string -** Hash of where document is stored
+- **Data_SrcDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
 
-  - **Data\_SrcDoc\_IdentityTelemetryId:string -** Unique GUID of user
+- **Data_SrcDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
-  - **Data\_SrcDoc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
+- **Data_SrcDoc_IsCloudCollabEnabled:bool** - True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
 
-  - **Data\_SrcDoc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+- **Data_SrcDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_SrcDoc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+- **Data_SrcDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
 
-  - **Data\_SrcDoc\_IsCloudCollabEnabled:bool -** True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
+- **Data_SrcDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-  - **Data\_SrcDoc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
+- **Data_SrcDoc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
-  - **Data\_SrcDoc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+- **Data_SrcDoc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
+- **Data_SrcDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_SrcDoc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
+- **Data_SrcDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
 
-  - **Data\_SrcDoc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
+- **Data_SrcDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
-  - **Data\_SrcDoc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
+- **Data_SrcDoc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
-  - **Data\_SrcDoc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+- **Data_SrcDoc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
 
-  - **Data\_SrcDoc\_PasswordFlags:long -** Predefined set of values of how document is encrypted with password (None, password to read, password to edit)-
+- **Data_SrcDoc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
-  - **Data\_SrcDoc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
+- **Data_SrcDoc_ServerProtocol:long** - Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
 
-  - **Data\_SrcDoc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+- **Data_SrcDoc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI)
 
-  - **Data\_SrcDoc\_ServerDocId:string -** immutable identifier for documents stored in cloud
+- **Data_SrcDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16Data_SrcDoc_SessionId:long generated GUID that Identifies the instance of the document within the same process session
 
-  - **Data\_SrcDoc\_ServerProtocol:long -** Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
+- **Data_SrcDoc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
-  - **Data\_SrcDoc\_ServerType:long -** Predefined set of values of type of server (SharePoint, DropBox, WOPI)
+- **Data_SrcDoc_SizeInBytes:long** - Document size in bytes
 
-  - **Data\_SrcDoc\_ServerVersion:long -** verifies if server is based off Office14, Office15 or Office 16Data\_SrcDoc\_SessionId:long generated GUID that Identifies the instance of the document within the same process session
+- **Data_SrcDoc_SpecialChars:long** - Bitmask indicating special chars in the document's URL or Path
 
-  - **Data\_SrcDoc\_SharePointServiceContext:string -** An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
+- **Data_SrcDoc_StorageProviderId:string** - A string that identifies the document's storage provider, like "DropBox"
 
-  - **Data\_SrcDoc\_SizeInBytes:long -** Document size in bytes
+- **Data_SrcDoc_StreamAvailability:long** - Predefined set of values of status of document Stream(available, permanently disabled, not available)
 
-  - **Data\_SrcDoc\_SpecialChars:long -** Bitmask indicating special chars in the document's URL or Path
+- **Data_SrcDoc_UrlHash:string** - hash of full URL of documents stored in cloud
 
-  - **Data\_SrcDoc\_StorageProviderId:string -** A string that identifies the document's storage provider, like "DropBox"
+- **Data_SrcDoc_UsedWrsDataOnOpen:bool** - true if the file was opened incrementally using pre cached WRS data on the host
 
-  - **Data\_SrcDoc\_StreamAvailability:long -** Predefined set of values of status of document Stream(available, permanently disabled, not available)
+- **Data_SrcDoc_WopiServiceId:string** - WOPI Service identifier, e.g. "Dropbox"
 
-  - **Data\_SrcDoc\_UrlHash:string -** hash of full URL of documents stored in cloud
+- **Data_StopwatchDuration:long** - Total time for Activity
 
-  - **Data\_SrcDoc\_UsedWrsDataOnOpen:bool -** true if the file was opened incrementally using pre cached WRS data on the host
+- **Data_TypeOfSaveDialog:long** - Predefined set of values of Dialog (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG etc.)
 
-  - **Data\_SrcDoc\_WopiServiceId:string -** WOPI Service identifier, e.g. "Dropbox"
+- **DstDoc** - New location of document 
 
-  - **Data\_StopwatchDuration:long -** Total time for Activity
+- **SrcDoc** - Original location of document
 
-  - **Data\_TypeOfSaveDialog:long -** Predefined set of values of Dialog (RUN\_SAVEAS\_DLG, RUN\_SAVEMEDIA\_DLG, RUN\_SAVEAS\_VIDEO\_DLG etc.)
-
-  - **DstDoc -** New location of document
-
-  - **SrcDoc -** Original location of document
 
 #### Office.PowerPoint.DocOperation.SaveLegacy
 
-Collected whenever PowerPoint performs a save using the legacy code path. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss. Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
+Collected whenever PowerPoint performs a save using the legacy code path. Includes success or failure result type of save performance metrics and relevant document metadata.  Failures in save can result in data loss.  Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemetryResult:long -** Does this log entry have all necessary document telemetry (Data\_Doc\_\* fields)? If not, why?
+- **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
 
-  - **Data\_CppUncaughtExceptionCount:long -** Uncaught native exceptions while activity was running
+- **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
-  - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
+- **Data_DetachedDuration:long** - Time for which Activity was detached/not running
 
-  - **Data\_Doc\_AccessMode:long -** How was this document opened (Read only | read write)
+- **Data_Doc_AccessMode:long** - How was this document opened (Read only | read write)
 
-  - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
+- **Data_Doc_ChunkingType:long** - How is document stored in SharePoint
 
-  - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
+- **Data_Doc_EdpState:long** - Enterprise Data Protection state of document
 
-  - **Data\_Doc\_Ext:string -** Document extension
+- **Data_Doc_Ext:string** - Document extension
 
-  - **Data\_Doc\_Extension:string -** Document extension
+- **Data_Doc_Extension:string** - Document extension
 
-  - **Data\_Doc\_FileFormat:long -** Predefined set of values of format of file (more granular than extension)
+- **Data_Doc_FileFormat:long** - Predefined set of values of format of file (more granular than extension)
 
-  - **Data\_Doc\_Fqdn:string -** Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+- **Data_Doc_Fqdn:string** - Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
 
-  - **Data\_Doc\_FqdnHash:string -** Hash of where document is stored
+- **Data_Doc_FqdnHash:string** - Hash of where document is stored
 
-  - **Data\_Doc\_IdentityTelemetryId:string -** Unique GUID of user
+- **Data_Doc_IdentityTelemetryId:string** - Unique GUID of user
 
-  - **Data\_Doc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
+- **Data_Doc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_Doc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+- **Data_Doc_IOFlags:long** - Bitmask for various IO related flags for a given document
 
-  - **Data\_Doc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+- **Data_Doc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
-  - **Data\_Doc\_IsCloudCollabEnabled:bool -** True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
+- **Data_Doc_IsCloudCollabEnabled:bool** - True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
 
-  - **Data\_Doc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
+- **Data_Doc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+- **Data_Doc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
+- **Data_Doc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
+- **Data_Doc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
-  - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
+- **Data_Doc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
-  - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
+- **Data_Doc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_Doc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+- **Data_Doc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
 
-  - **Data\_Doc\_PasswordFlags:long -** Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
+- **Data_Doc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
-  - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
+- **Data_Doc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
-  - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+- **Data_Doc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
 
-  - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
+- **Data_Doc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
-  - **Data\_Doc\_ServerProtocol:long -** Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
+- **Data_Doc_ServerProtocol:long** - Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
 
-  - **Data\_Doc\_ServerType:long -** Predefined set of values of type of server (SharePoint, DropBox, WOPI)
+- **Data_Doc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI) 
 
-  - **Data\_Doc\_ServerVersion:long -** verifies if server is based off Office14, Office15 or Office 16
+- **Data_Doc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16
 
-  - **Data\_Doc\_SessionId:long -** generated GUID that Identifies the instance of the document within the same process session
+- **Data_Doc_SessionId:long** - generated GUID that Identifies the instance of the document within the same process session
 
-  - **Data\_Doc\_SharePointServiceContext:string -** An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
+- **Data_Doc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
-  - **Data\_Doc\_SizeInBytes:long -** Document size in bytes
+- **Data_Doc_SizeInBytes:long** - Document size in bytes
 
-  - **Data\_Doc\_SpecialChars:long -** Bitmask indicating special chars in the document's URL or Path
+- **Data_Doc_SpecialChars:long** - Bitmask indicating special chars in the document's URL or Path
 
-  - **Data\_Doc\_StorageProviderId:string -** A string that identifies the document's storage provider, like "DropBox"
+- **Data_Doc_StorageProviderId:string** - A string that identifies the document's storage provider, like "DropBox"
 
-  - **Data\_Doc\_StreamAvailability:long -** Predefined set of values of status of document Stream(available, permanently disabled, not available)
+- **Data_Doc_StreamAvailability:long** - Predefined set of values of status of document Stream(available, permanently disabled, not available)
 
-  - **Data\_Doc\_UrlHash:string -** hash of full URL of documents stored in cloud
+- **Data_Doc_UrlHash:string** - hash of full URL of documents stored in cloud
 
-  - **Data\_Doc\_UsedWrsDataOnOpen:bool -** true if the file was opened incrementally using pre cached WRS data on the host
+- **Data_Doc_UsedWrsDataOnOpen:bool** - true if the file was opened incrementally using pre cached WRS data on the host
 
-  - **Data\_Doc\_WopiServiceId:string -** WOPI Service identifier, e.g. "Dropbox"
+- **Data_Doc_WopiServiceId:string** - WOPI Service identifier, e.g. "Dropbox"
 
-  - **Data\_DstDoc\_AccessMode:long -** How was this document opened (Read only | read write)
+- **Data_DstDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
-  - **Data\_DstDoc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_DstDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_DstDoc\_ChunkingType:long -** How is document stored in SharePoint
+- **Data_DstDoc_ChunkingType:long** - How is document stored in SharePoint
 
-  - **Data\_DstDoc\_EdpState:long -** Enterprise Data Protection state of document
+- **Data_DstDoc_EdpState:long** - Enterprise Data Protection state of document
 
-  - **Data\_DstDoc\_Ext:string -** Document extension
+- **Data_DstDoc_Ext:string** - Document extension
 
-  - **Data\_DstDoc\_Extension:string -** Document extension
+- **Data_DstDoc_Extension:string** - Document extension
 
-  - **Data\_DstDoc\_FileFormat:long -** Predefined set of values of format of file (more granular than extension)
+- **Data_DstDoc_FileFormat:long** - Predefined set of values of format of file (more granular than extension)
 
-  - **Data\_DstDoc\_Fqdn:string -** Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+- **Data_DstDoc_Fqdn:string** - Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+	
+- **Data_DstDoc_FqdnHash:string** - Hash of where document is stored
 
-  - **Data\_DstDoc\_FqdnHash:string -** Hash of where document is stored
+- **Data_DstDoc_IdentityTelemetryId:string** - Unique GUID of user
 
-  - **Data\_DstDoc\_IdentityTelemetryId:string -** Unique GUID of user
+- **Data_DstDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_DstDoc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
+- **Data_DstDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
 
-  - **Data\_DstDoc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+- **Data_DstDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
-  - **Data\_DstDoc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+- **Data_DstDoc_IsCloudCollabEnabled:bool** - True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
 
-  - **Data\_DstDoc\_IsCloudCollabEnabled:bool -** True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
+- **Data_DstDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_DstDoc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
+- **Data_DstDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
 
-  - **Data\_DstDoc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+- **Data_DstDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
+- **Data_DstDoc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
-  - **Data\_DstDoc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
+- **Data_DstDoc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
-  - **Data\_DstDoc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
+- **Data_DstDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_DstDoc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
+- **Data_DstDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
 
-  - **Data\_DstDoc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+- **Data_DstDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
-  - **Data\_DstDoc\_PasswordFlags:long-**Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
+- **Data_DstDoc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
-  - **Data\_DstDoc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
+- **Data_DstDoc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
 
-  - **Data\_DstDoc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+- **Data_DstDoc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
-  - **Data\_DstDoc\_ServerDocId:string -** immutable identifier for documents stored in cloud
+- **Data_DstDoc_ServerProtocol:long** - Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
 
-  - **Data\_DstDoc\_ServerProtocol:long -** Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
+- **Data_DstDoc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI)
 
-  - **Data\_DstDoc\_ServerType:long -** Predefined set of values of type of server (SharePoint, DropBox, WOPI)
+- **Data_DstDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16
 
-  - **Data\_DstDoc\_ServerVersion:long -** verifies if server is based off Office14, Office15 or Office 16
+- **Data_DstDoc_SessionId:long** - generated GUID that Identifies the instance of the document within the same process session
 
-  - **Data\_DstDoc\_SessionId:long -** generated GUID that Identifies the instance of the document within the same process session
+- **Data_DstDoc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
-  - **Data\_DstDoc\_SharePointServiceContext:string -** An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
+- **Data_DstDoc_SizeInBytes:long** - Document size in bytes
 
-  - **Data\_DstDoc\_SizeInBytes:long -** Document size in bytes
+- **Data_DstDoc_SpecialChars:long** - Bitmask indicating special chars in the document's URL or Path
 
-  - **Data\_DstDoc\_SpecialChars:long -** Bitmask indicating special chars in the document's URL or Path
+- **Data_DstDoc_StorageProviderId:string** - A string that identifies the document's storage provider, like "DropBox"
 
-  - **Data\_DstDoc\_StorageProviderId:string -** A string that identifies the document's storage provider, like "DropBox"
+- **Data_DstDoc_StreamAvailability:long** - Predefined set of values of status of document Stream(available, permanently disabled, not available)
 
-  - **Data\_DstDoc\_StreamAvailability:long -** Predefined set of values of status of document Stream(available, permanently disabled, not available)
+- **Data_DstDoc_UrlHash:string** - hash of full URL of documents stored in cloud
 
-  - **Data\_DstDoc\_UrlHash:string -** hash of full URL of documents stored in cloud
+- **Data_DstDoc_UsedWrsDataOnOpen:bool** - true if the file was opened incrementally using pre cached WRS data on the host
 
-  - **Data\_DstDoc\_UsedWrsDataOnOpen:bool -** true if the file was opened incrementally using pre cached WRS data on the host
+- **Data_DstDoc_WopiServiceId:string** - WOPI Service identifier, e.g. "Dropbox"
 
-  - **Data\_DstDoc\_WopiServiceId:string -** WOPI Service identifier, e.g. "Dropbox"
+- **Data_FileType:long** - Predefined set of values of internal type of file
 
-  - **Data\_FileType:long -** Predefined set of values of internal type of file
+- **Data_fLifeguarded:bool** - Was document ever lifeguarded (feature to fix document errors by themselves without prompting user)?
 
-  - **Data\_fLifeguarded:bool -** Was document ever lifeguarded (feature to fix document errors by themselves without prompting user)?
+- **Data_SaveReason:long** - Predefined set of values of why this save was performed? (AutoSave, ToOCSTransitionSave, ToCSITransitionSave etc.)
 
-  - **Data\_SaveReason:long -** Predefined set of values of why this save was performed? (AutoSave, ToOCSTransitionSave, ToCSITransitionSave etc.)
+- **Data_SaveType:long** - Predefined set of values of save type (SaveAs, Publish, Manual, OMSave etc.)
 
-  - **Data\_SaveType:long -** Predefined set of values of save type (SaveAs, Publish, Manual, OMSave etc.)
+- **Data_SrcDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
-  - **Data\_SrcDoc\_AccessMode:long -** How was this document opened (Read only | read write)
+- **Data_SrcDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_SrcDoc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_SrcDoc_ChunkingType:long** - How is document stored in SharePoint
 
-  - **Data\_SrcDoc\_ChunkingType:long -** How is document stored in SharePoint
+- **Data_SrcDoc_EdpState:long** - Enterprise Data Protection state of document
 
-  - **Data\_SrcDoc\_EdpState:long -** Enterprise Data Protection state of document
+- **Data_SrcDoc_Ext:string** - Document extension
 
-  - **Data\_SrcDoc\_Ext:string -** Document extension
+- **Data_SrcDoc_Extension:string** - Document extension
 
-  - **Data\_SrcDoc\_Extension:string -** Document extension
+- **Data_SrcDoc_FileFormat:long** - Predefined set of values of format of file (more granular than extension)
 
-  - **Data\_SrcDoc\_FileFormat:long -** Predefined set of values of format of file (more granular than extension)
+- **Data_SrcDoc_Fqdn:string** - Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
 
-  - **Data\_SrcDoc\_Fqdn:string -** Where is document stored (SharePoint.com, live.net), only available for Office 365 domains
+- **Data_SrcDoc_FqdnHash:string** - Hash of where document is stored 
 
-  - **Data\_SrcDoc\_FqdnHash:string -** Hash of where document is stored
+- **Data_SrcDoc_IdentityTelemetryId:string** - Unique GUID of user
 
-  - **Data\_SrcDoc\_IdentityTelemetryId:string -** Unique GUID of user
+- **Data_SrcDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_SrcDoc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
+- **Data_SrcDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
 
-  - **Data\_SrcDoc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+- **Data_SrcDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+	
+- **Data_SrcDoc_IsCloudCollabEnabled:bool** - True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
 
-  - **Data\_SrcDoc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
+- **Data_SrcDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_SrcDoc\_IsCloudCollabEnabled:bool -** True if the "IsCloudCollabEnabled" HTTP header has already been received from an OPTIONS request.
+- **Data_SrcDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
 
-  - **Data\_SrcDoc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
+- **Data_SrcDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-  - **Data\_SrcDoc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+- **Data_SrcDoc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
+- **Data_SrcDoc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
-  - **Data\_SrcDoc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
+- **Data_SrcDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures, etc.)
 
-  - **Data\_SrcDoc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
+- **Data_SrcDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
 
-  - **Data\_SrcDoc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures, etc.)
+- **Data_SrcDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
-  - **Data\_SrcDoc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+- **Data_SrcDoc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
-  - **Data\_SrcDoc\_PasswordFlags:long-**Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
+- **Data_SrcDoc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
 
-  - **Data\_SrcDoc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
+- **Data_SrcDoc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
-  - **Data\_SrcDoc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+- **Data_SrcDoc_ServerProtocol:long** - Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
 
-  - **Data\_SrcDoc\_ServerDocId:string -** immutable identifier for documents stored in cloud
+- **Data_SrcDoc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI)
 
-  - **Data\_SrcDoc\_ServerProtocol:long -** Predefined set of values of which protocol is used to talk to server (Http, Cobalt, WOPI etc.)
+- **Data_SrcDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16
 
-  - **Data\_SrcDoc\_ServerType:long -** Predefined set of values of type of server (SharePoint, DropBox, WOPI)
+- **Data_SrcDoc_SessionId:long** - generated GUID that Identifies the instance of the document within the same process session
 
-  - **Data\_SrcDoc\_ServerVersion:long -** verifies if server is based off Office14, Office15 or Office 16
+- **Data_SrcDoc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
-  - **Data\_SrcDoc\_SessionId:long -** generated GUID that Identifies the instance of the document within the same process session
+- **Data_SrcDoc_SizeInBytes:long** - Document size in bytes
 
-  - **Data\_SrcDoc\_SharePointServiceContext:string -** An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
+- **Data_SrcDoc_SpecialChars:long** - Bitmask indicating special chars in the document's URL or Path
 
-  - **Data\_SrcDoc\_SizeInBytes:long -** Document size in bytes
+- **Data_SrcDoc_StorageProviderId:string** - A string that identifies the document's storage provider, like "DropBox"
 
-  - **Data\_SrcDoc\_SpecialChars:long -** Bitmask indicating special chars in the document's URL or Path
+- **Data_SrcDoc_StreamAvailability:long** - Predefined set of values of status of document Stream(available, permanently disabled, not available)
 
-  - **Data\_SrcDoc\_StorageProviderId:string -** A string that identifies the document's storage provider, like "DropBox"
+- **Data_SrcDoc_UrlHash:string** - hash of full URL of documents stored in cloud
 
-  - **Data\_SrcDoc\_StreamAvailability:long -** Predefined set of values of status of document Stream(available, permanently disabled, not available)
+- **Data_SrcDoc_UsedWrsDataOnOpen:bool** - true if the file was opened incrementally using pre cached WRS data on the host
 
-  - **Data\_SrcDoc\_UrlHash:string -** hash of full URL of documents stored in cloud
+- **Data_SrcDoc_WopiServiceId:string** - WOPI Service identifier, e.g. "Dropbox"
 
-  - **Data\_SrcDoc\_UsedWrsDataOnOpen:bool -** true if the file was opened incrementally using pre cached WRS data on the host
+- **Data_StopwatchDuration:long** - Total time for Activity
 
-  - **Data\_SrcDoc\_WopiServiceId:string -** WOPI Service identifier, e.g. "Dropbox"
+- **Data_TypeOfSaveDialog:long** - Predefined set of values of Dialog (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG etc.)
 
-  - **Data\_StopwatchDuration:long -** Total time for Activity
+- **Doc** - current document for Save
 
-  - **Data\_TypeOfSaveDialog:long -** Predefined set of values of Dialog (RUN\_SAVEAS\_DLG, RUN\_SAVEMEDIA\_DLG, RUN\_SAVEAS\_VIDEO\_DLG etc.)
+- **DstDoc** - New location of document (in case of SaveAs)
 
-  - **Doc -** current document for Save
+- **SrcDoc** - Original location of document (in case of SaveAs)
 
-  - **DstDoc -** New location of document (in case of SaveAs)
+#### Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-  - **SrcDoc -** Original location of document (in case of SaveAs)
+Collected whenever a print PDF or export PDF operation has completed and contains information about the layout type as well as the success of the operation. This information is critical to identify the success of print PDF and export PDF operations for our application.
+
+The following fields are collected:
+
+- **Data_ExportAsPDFSucceed** - Boolean indicating if exporting as PDF was a success.
+
+- **Data_SavePrintLayoutType** - The print layout type at the time of starting the print or export operation.
+
 
 #### Office.PowerPoint.PPT.Shared.SlideShow.Failure
 
-Collecting failures during slide show. Slide show is a key feature for PowerPoint. Microsoft is collecting when error happens during slide show to help improve user experience on slide show. Microsoft uses this data to get diagnostic information about where the error happens while user is using slide show
+Collecting failures during slide show as a key feature for PowerPoint. Microsoft is collecting when error happens during slide show to help improve user experience on slide show. Microsoft uses this data to get diagnostic information about where the error happens while user is using slide show.
 
 The following fields are collected:
 
-  - **CountSlideShowErrors** - total number of slide show errors
+- **CountOArtErrors** - total number of OArt errors
 
-  - **CountPPTErrors** - total number of PPT errors
+- **CountOtherErrors** - total number of other errors
 
-  - **CountOArtErrors** - total number of OArt errors
+- **CountPPTErrors** - total number of PPT errors
 
-  - **CountOtherErrors** - total number of other errors
+- **CountSlideShowErrors** - total number of slide show errors
 
-  - **FirstSlideShowError** - first error happened in slide show
+- **FirstOArtError** - first error happened in OArt
 
-  - **FirstOArtError** - first error happened in OArt
+- **FirstOtherError** - first error happened in other area
 
-  - **FirstPPTError** - first error happened in PPT
+- **FirstPPTError** - first error happened in PPT
 
-  - **FirstOtherError** - first error happened in other area
+- **FirstSlideShowError** - first error happened in slide show
+
+	
+#### Office.PowerPoint.RunPrintOperation
+
+Collected whenever a print PDF operation has completed and contains information about the layout type, use of slide numbers, as well as the success of the operation. This information is critical to identify the success of print PDF operations for our application.
+
+The following fields are collected:
+
+- **Data_PrintWithSlideNumbers** - Boolean indicating if the user is printing with slide numbers.
+
+- **Data_SavePrintLayoutType** - The print layout type at the time of starting the print or export operation.
+
+- **Data_Success** -  Boolean indicating if printing was a success.
+
 
 #### Office.Project.ProjectFileSave
 
@@ -2641,121 +3174,124 @@ The following fields are collected:
 
   - **Data\_RequestUrl** - URL of the CDN resource we’re trying to retrieve
 
+
+
 #### Office.Translator.DocumentTranslated
 
 Collects success or failure of a full document translation a user trigger in the Translator SDX. This is critical to evaluate the health of the translation feature and react to any outages that might occur. Monitor the health of the "Translate Document" scenario in Word.
 
 The following fields are collected:
 
-  - **Data.actionSource -** How was the translate selection triggered-
+- **Data.actionSource** - How was the translate selection triggered
 
-  - **Data.bodyBackgroundColor -** Office theme container background color-
+- **Data.bodyBackgroundColor** - Office theme container background color
 
-  - **Data.bodyForegroundColor -** Office theme container foreground color-
+- **Data.bodyForegroundColor** - Office theme container foreground color
 
-  - **Data.browserLang -** Browser current display language-
+- **Data.browserLang** - Browser current display language
 
-  - **Data.browserOnline -** Obsolete-
+- **Data.browserOnline** - Obsolete
 
-  - **Data.browserPlatform -** Browser platform-
+- **Data.browserPlatform** - Browser platform
 
-  - **Data.browserUserAgent -** Browser user agent-
+- **Data.browserUserAgent** - Browser user agent
 
-  - **Data.colorDepth -** System color depth-
+- **Data.colorDepth** - System color depth
 
-  - **Data.contentLanguage -** Detected language of the content to translate-
+- **Data.contentLanguage** - Detected language of the content to translate
 
-  - **Data.controlBackgroundColor -** Office theme control background color-
+- **Data.controlBackgroundColor** - Office theme control background color
 
-  - **Data.controlForegroundColor -** Office theme control foreground color-
+- **Data.controlForegroundColor** - Office theme control foreground color
 
-  - **Data.correlationId -** Unique identifier of the request sent to the service-
+- **Data.correlationId** - Unique identifier of the request sent to the service
 
-  - **Data.crossSessionId -** Unique identifier of the user-
+- **Data.crossSessionId** - Unique identifier of the user
 
-  - **Data.crossSessionStartTime -** UTC timestamp of when the translation session started-
+- **Data.crossSessionStartTime** - UTC timestamp of when the translation session started
 
-  - **Data.currentTime -** UTC timestamp of when this telemetry message was sent-
+- **Data.currentTime** - UTC timestamp of when this telemetry message was sent
 
-  - **Data.displayLanguage -** Office display language-
+- **Data.displayLanguage** - Office display language
 
-  - **Data.documentSourceLang -** Document content language-
+- **Data.documentSourceLang** - Document content language
 
-  - **Data.documentTargetLang -** Language document will be translated to-
+- **Data.documentTargetLang** - Language document will be translated to
 
-  - **Data.environment -** Service environment the request is sent to-
+- **Data.environment** - Service environment the request is sent to
 
-  - **Data.errorMessage -** Error message reported by the service-
+- **Data.errorMessage** - Error message reported by the service
 
-  - **Data.eventActionType -** Type of telemetry event-
+- **Data.eventActionType** - Type of telemetry event
 
-  - **Data.eventTagId -** Unique identifier of the line of code that produced this telemetry message-
+- **Data.eventTagId** - Unique identifier of the line of code that produced this telemetry message.
 
-  - **Data.flights-** Enabled flights-
+- **Data.flights** - Enabled flights
 
-  - **Data.fileSize -** Size of Word file to translate-
+- **Data.fileSize** - Size of Word file to translate
 
-  - **Data.fileSource -** Where is the Word file hosted (offline, online)-
+- **Data.fileSource** - Where is the Word file hosted (offline, online)
 
-  - **Data.fileType -** Word file extension-
+- **Data.fileType** - Word file extension
 
-  - **Data.innerHeight"-** Side pane container height-
+- **Data.innerHeight"** - Side pane container height
 
-  - **Data.innerWidth"-** Side pane container width-
+- **Data.innerWidth"** - Side pane container width
 
-  - **Data.lookupSourceLang-** Not used for document translation-
+- **Data.lookupSourceLang** - Not used for document translation
 
-  - **Data.lookupTargetLang-** Not used for document translation-
+- **Data.lookupTargetLang** - Not used for document translation
 
-  - **Data.officeHost-** Office application hosting the side pane-
+- **Data.officeHost** - Office application hosting the side pane
 
-  - **Data.officeLocale-** Office user language-
+- **Data.officeLocale** - Office user language
 
-  - **Data.officeMachineId-** Device Unique identifier-
+- **Data.officeMachineId** - Device Unique identifier
 
-  - **Data.officePlatform -** Device platform-
+- **Data.officePlatform** - Device platform
 
-  - **Data.officeSessionId -** Office session identifier-
+- **Data.officeSessionId** - Office session identifier
 
-  - **Data.officeUserId -** Office user unique identifier-
+- **Data.officeUserId** - Office user unique identifier
 
-  - **Data.officeVersion -** Office version-
+- **Data.officeVersion** - Office version
 
-  - **Data.pageXOffset -** Side pane horizontal scroll position from the left side of the pane-
+- **Data.pageXOffset** - Side pane horizontal scroll position from the left side of the pane
 
-  - **Data.pageYOffset -** Side pane vertical scroll position from the top side of the pane-
+- **Data.pageYOffset** - Side pane vertical scroll position from the top side of the pane
 
-  - **Data.pixelDepth -** Screen color resolution-
+- **Data.pixelDepth** - Screen color resolution
 
-  - **Data.responseCode -** Request response code from the service-
+- **Data.responseCode** - Request response code from the service
 
-  - **Data.responseTime -** Request elapsed time -
+- **Data.responseTime** - Request elapsed time 
 
-  - **Data.resultType -** Request result-
+- **Data.resultType** - Request result
 
-  - **Data.screenHeight -** Screen height in pixels-
+- **Data.screenHeight** - Screen height in pixels
 
-  - **Data.screenLeft -** Horizontal coordinate of the window relative to the screen-
+- **Data.screenLeft** - Horizontal coordinate of the window relative to the screen
 
-  - **Data.screenTop -** Vertical coordinate of the window relative to the screen-
+- **Data.screenTop** - Vertical coordinate of the window relative to the screen
 
-  - **Data.screenWidth -** Screen width in pixels-
+- **Data.screenWidth** - Screen width in pixels
 
-  - **Data.selectedTab -** Which tab is selected Selection or Document-
+- **Data.selectedTab** - Which tab is selected Selection or Document
 
-  - **Data.serverUrl -** Translation service URL-
+- **Data.serverUrl** - Translation service URL
 
-  - **Data.sessionId -** Side pane session identifier-
+- **Data.sessionId** - Side pane session identifier
 
-  - **Data.sessionStartTime -** UTC Timestamp of when the translation session started-
+- **Data.sessionStartTime** - UTC Timestamp of when the translation session started
 
-  - **Data.sourceTextHash -** Hash of text to translate-
+- **Data.sourceTextHash** - Hash of text to translate
 
-  - **Data.sourceTextLength -** Text to translate length-
+- **Data.sourceTextLength** - Text to translate length
 
-  - **Data.sourceTextWords -** Number of words in the text to translate-
+- **Data.sourceTextWords** - Number of words in the text to translate
 
-  - **Data.warningMessage -** Warning message reported by the service-
+- **Data.warningMessage** - Warning message reported by the service
+
 
 #### Office.Translator.TextTranslated
 
@@ -2763,173 +3299,171 @@ Collects success or failure of a selection translation that a user action trigge
 
 The following fields are collected:
 
-  - **Data.actionSource -** How was the translate selection triggered
+- **Data.actionSource** - How was the translate selection triggered
 
-  - **Data.bodyBackgroundColor -** Office theme container background color
+- **Data.bodyBackgroundColor** - Office theme container background color
 
-  - **Data.bodyForegroundColor -** Office theme container foreground color
+- **Data.bodyForegroundColor** - Office theme container foreground color
 
-  - **Data.browserLang -** Browser current display language
+- **Data.browserLang** - Browser current display language
 
-  - **Data.browserOnline -** Obsolete
+- **Data.browserOnline** - Obsolete
 
-  - **Data.browserPlatform -** Browser platform
+- **Data.browserPlatform** - Browser platform
 
-  - **Data.browserUserAgent -** Browser user agent
+- **Data.browserUserAgent** - Browser user agent
 
-  - **Data.colorDepth -** System color depth
+- **Data.colorDepth** - System color depth
 
-  - **Data.contentLanguage -** Detected language of the content to translate
+- **Data.contentLanguage** - Detected language of the content to translate
 
-  - **Data.controlBackgroundColor -** Office theme control background color
+- **Data.controlBackgroundColor** - Office theme control background color
 
-  - **Data.controlForegroundColor -** Office theme control foreground color
+- **Data.controlForegroundColor** - Office theme control foreground color
 
-  - **Data.correlationId -** Unique identifier of the request sent to the service
+- **Data.correlationId** - Unique identifier of the request sent to the service
 
-  - **Data.crossSessionId -** Unique identifier of the user
+- **Data.crossSessionId** - Unique identifier of the user
 
-  - **Data.crossSessionStartTime -** UTC timestamp of when the translation session started
+- **Data.crossSessionStartTime** - UTC timestamp of when the translation session started
 
-  - **Data.currentTime -** UTC timestamp of when this telemetry message was sent
+- **Data.currentTime** - UTC timestamp of when this telemetry message was sent
 
-  - **Data.displayLanguage -** Office display language
+- **Data.displayLanguage** - Office display language
 
-  - **Data.documentSourceLang -** Not used for selection
+- **Data.documentSourceLang** - Not used for selection
 
-  - **Data.documentTargetLang -** Nor used for translation selection
+- **Data.documentTargetLang** - Nor used for translation selection
 
-  - **Data.environment -** Service environment the request is sent to
+- **Data.environment** - Service environment the request is sent to
 
-  - **Data.errorMessage -** Error message reported by the service
+- **Data.errorMessage** - Error message reported by the service
 
-  - **Data.eventActionType -** Type of telemetry event
+- **Data.eventActionType** - Type of telemetry event
 
-  - **Data.eventTagId"-** Unique identifier of the line of code that produced this telemetry message
+- **Data.eventTagId"** - Unique identifier of the line of code that produced this telemetry message
 
-  - **Data.flights-** Enabled flights
+- **Data.flights** - Enabled flights
 
-  - **Data.innerHeight -** Side pane container height
+- **Data.innerHeight** - Side pane container height
 
-  - **Data.innerWidth -** Side pane container width
+- **Data.innerWidth** - Side pane container width
 
-  - **Data.lookupSourceLang-** Language of the currently selected text
+- **Data.lookupSourceLang** - Language of the currently selected text
 
-  - **Data.lookupTargetLang-** Language currently selected text will be translated to
+- **Data.lookupTargetLang** - Language currently selected text will be translated to
 
-  - **Data.officeHost-** Office application hosting the side pane
+- **Data.officeHost** - Office application hosting the side pane
 
-  - **Data.officeLocale-** Office user language
+- **Data.officeLocale** - Office user language
 
-  - **Data.officeMachineId-** Device Unique identifier
+- **Data.officeMachineId** - Device Unique identifier
 
-  - **Data.officePlatform -** Device platform
+- **Data.officePlatform** - Device platform
 
-  - **Data.officeSessionId -** Office session identifier
+- **Data.officeSessionId** - Office session identifier
 
-  - **Data.officeUserId -** Office user unique identifier
+- **Data.officeUserId** - Office user unique identifier
 
-  - **Data.officeVersion -** Office version
+- **Data.officeVersion** - Office version
 
-  - **Data.pageXOffset -** Side pane horizontal scroll position from the left side of the pane
+- **Data.pageXOffset** - Side pane horizontal scroll position from the left side of the pane
 
-  - **Data.pageYOffset -** Side pane vertical scroll position from the top side of the pane
+- **Data.pageYOffset** - Side pane vertical scroll position from the top side of the pane
 
-  - **Data.pixelDepth -** Screen color resolution
+- **Data.pixelDepth** - Screen color resolution
 
-  - **Data.responseCode -** Request response code from the service
+- **Data.responseCode** - Request response code from the service
 
-  - **Data.responseTime -** Request elapsed time
+- **Data.responseTime** - Request elapsed time
 
-  - **Data.resultType -** Request result
+- **Data.resultType** - Request result
 
-  - **Data.screenHeight -** Screen height in pixels
+- **Data.screenHeight** - Screen height in pixels
 
-  - **Data.screenLeft -** Horizontal coordinate of the window relative to the screen
+- **Data.screenLeft** - Horizontal coordinate of the window relative to the screen
 
-  - **Data.screenTop -** Vertical coordinate of the window relative to the screen
+- **Data.screenTop** - Vertical coordinate of the window relative to the screen
 
-  - **Data.screenWidth -** Screen width in pixels
+- **Data.screenWidth** - Screen width in pixels
 
-  - **Data.selectedTab -** Which tab is selected Selection or Document
+- **Data.selectedTab** - Which tab is selected Selection or Document
 
-  - **Data.serverUrl -** Translation service URL
+- **Data.serverUrl** - Translation service URL
 
-  - **Data.sessionId -** Side pane session identifier
+- **Data.sessionId** - Side pane session identifier
 
-  - **Data.sessionStartTime -** UTC Timestamp of when the translation session started
+- **Data.sessionStartTime** - UTC Timestamp of when the translation session started
 
-  - **Data.sourceTextHash -** Hash of text to translate
+- **Data.sourceTextHash** - Hash of text to translate
 
-  - **Data.sourceTextLength -** Text to translate length
+- **Data.sourceTextLength** - Text to translate length
 
-  - **Data.sourceTextWords -** Number of words in the text to translate
+- **Data.sourceTextWords** - Number of words in the text to translate
 
-  - **Data.warningMessage -** Warning message reported by the service
+- **Data.warningMessage** - Warning message reported by the service
 
 #### Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
-This event logs document statistics for each document when Office Word is closed or suspended.
-
-The event is used to correlate document edits, size, etc. with document-save, document-share, and document-online-collaboration errors.
+This event logs document statistics for each document when Office Word is closed or suspended.  The event is used to correlate document edits, size, etc. with document-save, document-share, and document online collaboration errors.
 
 The following fields are collected:
 
-  - **Data\_BkmkRefCount -** Number of bookmark references in the document
+- **Data_BkmkRefCount** - Number of bookmark references in the document
 
-  - **Data\_CharacterCount -** Number of characters in the document
+- **Data_CharacterCount** - Number of characters in the document
 
-  - **Data\_CharactersWithSpaceCount -** Number of characters and spaces in the document
+- **Data_CharactersWithSpaceCount** - Number of characters and spaces in the document
 
-  - **Data\_ChartCount -** Number of charts in the document
+- **Data_ChartCount** - Number of charts in the document
 
-  - **Data\_CitationCount -** Number of citations in the document
+- **Data_CitationCount** - Number of citations in the document
 
-  - **Data\_DocumentLocation -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_DocumentLocation** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_ETW\_TrackbackTag -** Identifies the place in code where this event was fired from (Close or Suspend)
+- **Data_ETW_TrackbackTag** - Identifies the place in code where this event was fired from (Close or Suspend)
 
-  - **Data\_EndnoteDocCount -** Number of endnotes in the document
+- **Data_EndnoteDocCount** - Number of endnotes in the document
 
-  - **Data\_FootnoteDocCount -** Number of footnotes in the document
+- **Data_FootnoteDocCount** - Number of footnotes in the document
 
-  - **Data\_HasBibliography -** Indicates whether the document contains bibliography
+- **Data_HasBibliography** - Indicates whether the document contains bibliography
 
-  - **Data\_HasHeader -** Indicates whether the document contains a header
+- **Data_HasHeader** - Indicates whether the document contains a header
 
-  - **Data\_IsImeUsed -** Indicates whether Input Method Editor been was used in the document
+- **Data_IsImeUsed** - Indicates whether Input Method Editor been was used in the document
 
-  - **Data\_IsPageCountInProgress -** Indicates whether page count is currently in progress for the document.
+- **Data_IsPageCountInProgress** - Indicates whether page count is currently in progress for the document.
+	
+- **Data_IsTouchUsed** - Indicates whether touch input was used in the document
 
-  - **Data\_IsTouchUsed -** Indicates whether touch input was used in the document
+- **Data_IsTrackChangesOn** - Indicates whether track-changes was on for the document
 
-  - **Data\_IsTrackChangesOn -** Indicates whether track-changes was on for the document
+- **Data_LineCount** - Number of lines in the document
 
-  - **Data\_LineCount -** Number of lines in the document
+- **Data_MainPdod** - The document identifier in Office Word process.
 
-  - **Data\_MainPdod -** The document identifier in Office Word process.
+- **Data_PageCount** - Number of pages in the document
 
-  - **Data\_PageCount -** Number of pages in the document
+- **Data_PageNumberFieldCount** - Number of page number fields in the document
 
-  - **Data\_PageNumberFieldCount -** Number of page number fields in the document
+- **Data_ParagraphCount** - Number of paragraphs in the document
 
-  - **Data\_ParagraphCount -** Number of paragraphs in the document
+- **Data_PicCount** - Number of pictures in the document
 
-  - **Data\_PicCount -** Number of pictures in the document
+- **Data_RsidCount** - Number of revisions save identifier in the document
 
-  - **Data\_RsidCount -** Number of revisions save identifier in the document
+- **Data_TocCount** - Number of table of contents in the document
 
-  - **Data\_TocCount -** Number of table of contents in the document
+- **Data_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_UserActionID** - this data field is not used (the value is always 0).
 
-  - **Data\_UserActionID -** this data field is not used (the value is always 0).
+- **Data_UserActionName** - always “DocumentStatsOnCloseAndSuspend”
 
-  - **Data\_UserActionName -** always “DocumentStatsOnCloseAndSuspend”
-
-  - **Data\_UserInteractionTimeMsec -** Number of milliseconds that the user was actively interacting with the document
-
-  - **Data\_WordCount -** Number of words in document
+- **Data_UserInteractionTimeMsec** - Number of milliseconds that the user was actively interacting with the document
+	
+- **Data_WordCount** - Number of words in document
 
 #### Office.Word.FileNew.CreateNewFile
 
@@ -2951,187 +3485,187 @@ This event indicates that a user is saving their changes to a new document. The 
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_Doc\_AccessMode -** Document is read only/editable
+- **Data_Doc_AccessMode** - Document is read only/editable
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+	
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_FqdnHash -** One-way hash of customer identifiable domain name
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one way hash of the user identity used to perform the open
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_InitializationScenario -** Records how the document was opened
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+	
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
+	
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_ServerProtocol** - The protocol version used to communicate with the service
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerType** - The type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerVersion** - The server version offering the service
 
-  - **Data\_Doc\_ServerProtocol -** The protocol version used to communicate with the service
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_ServerType -** The type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_ServerVersion -** The server version offering the service
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_EditorDisablingRename** - identifier of the first editor that caused rename to be disabled
 
-  - **Data\_Doc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_EditorsCount** - Number of editors in the document
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_LastLoggedTag** - Unique tag for code call site used to identify when we fail to try the save twice (used for data quality diagnostics)
 
-  - **Data\_EditorDisablingRename -** identifier of the first editor that caused rename to be disabled
+- **Data_MoveDisabledReason** - Error that is disabling move for the document
 
-  - **Data\_EditorsCount -** Number of editors in the document
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_LastLoggedTag -** Unique tag for code call site used to identify when we fail to try the save twice (used for data quality diagnostics)
+- **Data_RenameDisabledReason** - Error that is causing rename to be disabled for the document
 
-  - **Data\_MoveDisabledReason -** Error that is disabling move for the document
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
-
-  - **Data\_RenameDisabledReason -** Error that is causing rename to be disabled for the document
-
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
-
+	
 #### Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
 
-This event indicates Office Word saves an auto-recovery document that has not been saved before. It allows Microsoft to detect errors in auto-recovery which is important for document data safety.
-
-The event monitors whether auto-recovery-save is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
+This event indicates Office Word saves an auto-recovery document that has not been saved before. It allows Microsoft to detect errors in auto-recovery which is important for document data safety.  The event monitors whether auto-recovery-save is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
 
 The following fields are collected:
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_Doc\_AccessMode -** Document is read only/editable
+- **Data_Doc_AccessMode** - Document is read only/editable
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+	
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_FqdnHash -** One way hash of customer identifiable domain name
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one-way hash of the user identity used to perform the open
+- **Data_Doc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_Doc\_InitializationScenario -** Records how the document was opened
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
+	
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
 
-  - **Data\_Doc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_Doc_ServerVersion** - the server version offering the service
 
-  - **Data\_Doc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_ServerVersion -** the server version offering the service
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_Doc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_Doc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_FailureClass** - Integer representing the failure class for Office Collaboration Services (OCS) transition failures
+	
+- **Data_MainPdod** - The document identifier in Office Word process.
 
-  - **Data\_Doc\_WopiServiceId -** Contains unique identifier of WOPI service provider
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_FailureClass -** Integer representing the failure class for Office Collaboration Services (OCS) transition failures
+- **Data_OCSSyncbackSaveStarted** - Flag that indicates that this save is related to sync back save
 
-  - **Data\_MainPdod -** The document identifier in Office Word process.
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_OCSSyncbackSaveStarted -** Flag that indicates that this save is related to sync back save
+- **Data_SaveInitiateKind** - Integer that indicates how the save was initiated
 
-  - **Data\_RenameDisabledReason -** Error that is causing for rename to be disabled for this document
+- **Data_SrcDocIsUnnamedOrNew** - Indicates whether the document we are saving is new
 
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
-
-  - **Data\_SaveInitiateKind -** Integer that indicates how the save was initiated
-
-  - **Data\_SrcDocIsUnnamedOrNew -** Indicates whether the document we are saving is new
 
 #### Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -3139,113 +3673,114 @@ This event indicates Office Word prompts the user to save changes when it tries 
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_Doc\_AccessMode -** Document is read only/editable
+- **Data_Doc_AccessMode** - Document is read only/editable
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_FqdnHash -** One-way hash of customer identifiable domain name
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one-way hash of the user identity used to perform the open
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_InitializationScenario -** Records how the document was opened
+- **Data_Doc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
+	
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_Doc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_Doc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
 
-  - **Data\_Doc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_Doc_ServerVersion** - the server version offering the service
 
-  - **Data\_Doc\_ServerVersion -** the server version offering the service
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_Doc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_Doc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
-  - **Data\_Doc\_WopiServiceId -** Contains unique identifier of WOPI service provider
+- **Data_DstDoc_AccessMode** - Destination Document is read only/editable
 
-  - **Data\_DstDoc\_AccessMode -** Destination Document is read only/editable
+- **Data_DstDoc_EdpState** -Electronic Data Protection setting for the destination document-
 
-  - **Data\_DstDoc\_EdpState –Electronic Data Protection setting for the destination document-**
+- **Data_DstDoc_Ext** - Document extension (docx/xlsb/pptx, etc.) for the destination document
 
-  - **Data\_DstDoc\_Ext -** Document extension (docx/xlsb/pptx, etc.) for the destination document
+- **Data_DstDoc_FileFormat** - File format protocol version for the destination document
 
-  - **Data\_DstDoc\_FileFormat -** File format protocol version for the destination document
+- **Data_DstDoc_Location** - Indicates which service will provide storage for destination document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_DstDoc\_Location -** Indicates which service will provide storage for destination document (OneDrive, File Server, SharePoint etc.)
+- **Data_DstDoc_LocationDetails** - Indicates which local Known Folder stored the destination document
 
-  - **Data\_DstDoc\_LocationDetails -** Indicates which local Known Folder stored the destination document
+- **Data_DstDoc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_DstDoc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_DstDoc_UrlHash** - One-way hash to create a naïve document identifier for the destination document
 
-  - **Data\_DstDoc\_UrlHash -** One-way hash to create a naïve document identifier for the destination document
+- **Data_FailureClass** - Integer representing the failure class for OCS transition failures
 
-  - **Data\_FailureClass -** Integer representing the failure class for OCS transition failures
+- **Data_LocationPickerSaveStatus** - Integer value that indicates the action that triggered the save from the save on exit dialog
 
-  - **Data\_LocationPickerSaveStatus -** Integer value that indicates the action that triggered the save from the save on exit dialog
+- **Data_MainPdod** - The document identifier in Office Word process.
 
-  - **Data\_MainPdod -** The document identifier in Office Word process.
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
+- **Data_OCSSyncbackSaveStarted** - Flag that indicates that this save is related to sync back save 
 
-  - **Data\_OCSSyncbackSaveStarted -** Flag that indicates that this save is related to sync back save
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
-  - **Data\_RenameDisabledReason -** Error that is causing for rename to be disabled for this document
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
+- **Data_SaveInitiateKind** - Integer that indicates how the save was initiated
 
-  - **Data\_SaveInitiateKind -** Integer that indicates how the save was initiated
+- **Data_SrcDocIsUnnamedOrNew** - Indicates whether the document we are saving is new
 
-  - **Data\_SrcDocIsUnnamedOrNew -** Indicates whether the document we are saving is new
 
 #### Office.Word.FileSave.SaveAsSaveFile
 
@@ -3253,257 +3788,232 @@ This event indicates Office Word saves a document into a new document. It allows
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
 
-  - **Data\_AddDocTelemResDst -** Reports whether we were able to properly populate other document telemetry related values in the event for the destination document. Used for data quality diagnostics.
+- **Data_AddDocTelemResDst** - Reports whether we were able to properly populate other document telemetry related values in the event for the destination document. Used for data quality diagnostics.
 
-  - **Data\_AddDocTelemResSrc -** Reports whether we were able to properly populate other document telemetry related values in the event for the source document. Used for data quality diagnostics.
+- **Data_AddDocTelemResSrc** - Reports whether we were able to properly populate other document telemetry related values in the event for the source document. Used for data quality diagnostics.
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_Doc\_AccessMode -** Document is read only/editable
+- **Data_Doc_AccessMode** - Document is read only/editable
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_FqdnHash -** One way hash of customer identifiable domain name
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one-way hash of the user identity used to perform the open
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document identifier used to diagnose problems
+- **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document identifier used to diagnose problems
+- **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
-  - **Data\_Doc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_Doc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
 
-  - **Data\_Doc\_ServerVersion -** the server version offering the service
+- **Data_Doc_ServerVersion** - the server version offering the service
 
-  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_DstDoc\_AccessMode -** Destination Document is read only/editable
+- **Data_DstDoc_AccessMode** - Destination Document is read only/editable
 
-  - **Data\_DstDoc\_AssistedReadingReasons -** Predefined set of values of why the destination document was opened in assisted reading mode
+- **Data_DstDoc_AssistedReadingReasons** - Predefined set of values of why the destination document was opened in assisted reading mode
+	
+- **Data_DstDoc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_DstDoc\_ChunkingType -** Units used for incremental document open
+- **Data_DstDoc_EdpState** - Electronic Data Protection setting for the destination document
 
-  - **Data\_DstDoc\_EdpState -** Electronic Data Protection setting for the destination document
+- **Data_DstDoc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_DstDoc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_DstDoc_FileFormat** - File format protocol version
 
-  - **Data\_DstDoc\_FileFormat -** File format protocol version
+- **Data_DstDoc_Fqdn** - OneDrive or SharePoint Online Domain Name for the destination document
 
-  - **Data\_DstDoc\_Fqdn -** OneDrive or SharePoint Online Domain Name for the destination document
+- **Data_DstDoc_FqdnHash** - One-way hash of customer identifiable domain name for the destination document
 
-  - **Data\_DstDoc\_FqdnHash -** One-way hash of customer identifiable domain name for the destination document
+- **Data_DstDoc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_DstDoc\_IdentityTelemetryId -** A one-way hash of the user identity used to perform the open
+- **Data_DstDoc_InitializationScenario** - Records how the destination document was opened
 
-  - **Data\_DstDoc\_InitializationScenario -** Records how the destination document was opened
+- **Data_DstDoc_IOFlags** - Reports on the cached flags used to set open request options for the destination document
+	
+- **Data_DstDoc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the destination document/user
 
-  - **Data\_DstDoc\_IOFlags -** Reports on the cached flags used to set open request options for the destination document
+- **Data_DstDoc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_DstDoc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the destination document/user
+- **Data_DstDoc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
 
-  - **Data\_DstDoc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_DstDoc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_DstDoc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_DstDoc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_DstDoc_Location** - Indicates which service provided the storage for the destination document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_DstDoc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_DstDoc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_DstDoc\_Location -** Indicates which service provided the storage for the destination document (OneDrive, File Server, SharePoint etc.)
+- **Data_DstDoc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_DstDoc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_DstDoc_PasswordFlags** - Indicates read or read/write password flags set for the destination document
 
-  - **Data\_DstDoc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_DstDoc_ReadOnlyReasons** - Reasons why the destination document was opened read only 
 
-  - **Data\_DstDoc\_PasswordFlags -** Indicates read or read/write password flags set for the destination document
+- **Data_DstDoc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-  - **Data\_DstDoc\_ReadOnlyReasons -** Reasons why the destination document was opened read only
+- **Data_DstDoc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
-  - **Data\_DstDoc\_ResourceIdHash -** An anonymized document identifier used to diagnose problems
+- **Data_DstDoc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_DstDoc\_ServerDocId -** An immutable anonymized document identifier used to diagnose problems
+- **Data_DstDoc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+	
+- **Data_DstDoc_ServerVersion** - the server version offering the service
 
-  - **Data\_DstDoc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_DstDoc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_DstDoc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_DstDoc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_DstDoc\_ServerVersion -** the server version offering the service
+- **Data_DstDoc_SizeInBytes** - Indicator of document size
 
-  - **Data\_DstDoc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_DstDoc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_DstDoc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_DstDoc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_DstDoc\_SizeInBytes -** Indicator of document size
+- **Data_DstDoc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_DstDoc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_DstDoc_UrlHash** - One-way hash to create a naïve document identifier for the destination document
+	
+- **Data_DstDoc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
-  - **Data\_DstDoc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_FailureClass** - Integer representing the failure class for OCS transition failures
 
-  - **Data\_DstDoc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_LocationPickerPropagateToSaveTime,spLapsedMsec** - Measure the time, in milliseconds, that it takes for the save to trigger after getting a result from the location picker
 
-  - **Data\_DstDoc\_UrlHash -** One-way hash to create a naïve document identifier for the destination document
+- **Data_LocationPickerSaveStatus** - Status returned by the location picker
 
-  - **Data\_DstDoc\_WopiServiceId -** Contains unique identifier of WOPI service provider
+- **Data_MainPdod** - The document identifier in Office Word process
 
-  - **Data\_FailureClass -** Integer representing the failure class for OCS transition failures
+- **Data_MoveDisabledReason** - Error that is disabling move for the document
 
-  - **Data\_LocationPickerPropagateToSaveTime,spLapsedMsec -** Measure the time, in milliseconds, that it takes for the save to trigger after getting a result from the location picker
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_LocationPickerSaveStatus -** Status returned by the location picker
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
-  - **Data\_MainPdod -** The document identifier in Office Word process
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_MoveDisabledReason -** Error that is disabling move for the document
+- **Data_SaveInitiateKind** - Integer that indicates how the save was initiated
 
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
+- **Data_SrcDoc_AccessMode** - Source Document is read only/editable
 
-  - **Data\_RenameDisabledReason -** Error that is causing for rename to be disabled for this document
+- **Data_SrcDoc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
+- **Data_SrcDoc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_SaveInitiateKind -** Integer that indicates how the save was initiated
+- **Data_SrcDoc_EdpState** - Electronic Data Protection setting for the source document
 
-  - **Data\_SrcDoc\_AccessMode -** Source Document is read only/editable
+- **Data_SrcDoc_Ext** - Document extension for the source document (docx/xlsb/pptx, etc.)
 
-  - **Data\_SrcDoc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_SrcDoc_FileFormat** - File format protocol version for the source document
 
-  - **Data\_SrcDoc\_ChunkingType -** Units used for incremental document open
+- **Data_SrcDoc_Fqdn** - OneDrive or SharePoint Online Domain Name for the source document
 
-  - **Data\_SrcDoc\_EdpState -** Electronic Data Protection setting for the source document
+- **Data_SrcDoc_FqdnHash** - One-way hash of customer identifiable domain name for the source document
 
-  - **Data\_SrcDoc\_Ext -** Document extension for the source document (docx/xlsb/pptx, etc.)
+- **Data_SrcDoc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_SrcDoc\_FileFormat -** File format protocol version for the source document
+- **Data_SrcDoc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_SrcDoc\_Fqdn -** OneDrive or SharePoint Online Domain Name for the source document
+- **Data_SrcDoc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_SrcDoc\_FqdnHash -** One-way hash of customer identifiable domain name for the source document
+- **Data_SrcDoc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
 
-  - **Data\_SrcDoc\_IdentityTelemetryId -** A one-way hash of the user identity used to perform the open
+- **Data_SrcDoc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_SrcDoc\_InitializationScenario -** Records how the document was opened
+- **Data_SrcDoc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
 
-  - **Data\_SrcDoc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_SrcDoc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_SrcDoc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_SrcDoc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
+	
+- **Data_SrcDoc_Location** - Indicates which service provided the source document (OneDrive, File Server, SharePoint, etc.)
 
-  - **Data\_SrcDoc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_SrcDoc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_SrcDoc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_SrcDoc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_SrcDoc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_SrcDoc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_SrcDoc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_SrcDoc\_Location -** Indicates which service provided the source document (OneDrive, File Server, SharePoint, etc.)
+- **Data_SrcDoc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-  - **Data\_SrcDoc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_SrcDoc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
-  - **Data\_SrcDoc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_SrcDoc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_SrcDoc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_SrcDoc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
 
-  - **Data\_SrcDoc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_SrcDoc_ServerVersion** - the server version offering the service
 
-  - **Data\_SrcDoc\_ResourceIdHash -** An anonymized document identifier used to diagnose problems
+- **Data_SrcDoc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_SrcDoc\_ServerDocId -** An immutable anonymized document identifier used to diagnose problems
+- **Data_SrcDoc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_SrcDoc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_SrcDoc_SizeInBytes** - Indicator of document size
 
-  - **Data\_SrcDoc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_SrcDoc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_SrcDoc\_ServerVersion -** the server version offering the service
+- **Data_SrcDoc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_SrcDoc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_SrcDoc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_SrcDoc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_SrcDoc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_SrcDoc\_SizeInBytes -** Indicator of document size
+- **Data_SrcDoc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
-  - **Data\_SrcDoc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_SrcDocIsUnnamedOrNew** - Indicates whether the document we are saving is new
 
-  - **Data\_SrcDoc\_StreamAvailability -** Indicator if document stream is available/disabled
-
-  - **Data\_SrcDoc\_SyncBackedType -** Indicator as to the type of document (local or service based)
-
-  - **Data\_SrcDoc\_UrlHash -** One way hash to create a naïve document identifier
-
-  - **Data\_SrcDoc\_WopiServiceId -** Contains unique identifier of WOPI service provider
-
-  - **Data\_SrcDocIsUnnamedOrNew -** Indicates whether the document we are saving is new
-
-#### Office.Word.Word.DocumentDirtyFlagChanged
-
-This event indicates Office Word edits a document which changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It is also used to calculated monthly active users/devices.
-
-The following fields are collected:
-
-  - **Data\_CollectionTime-** Timestamp of the event
-
-  - **Data\_DocumentLocation-** type of the document location
-
-  - **Data\_DocumentLocationDetails-** Sub-type of the document location
-
-  - **Data\_FAlwaysSaveEnabled-** Indicates whether always-save was enabled
-
-  - **Data\_FirstEditTime-** Timestamp of first edit
-
-  - **Data\_NumberCoAuthors-** Number of coauthors editing the document during the session
-
-  - **Data\_NumberOfTimesDocumentDirtied-** Number of edits made to the document
-
-  - **Data\_Pdod-** Document identifier in Office Word process
-
-  - **Data\_UrlHash-** Hash of the document path
-
-  - **Data\_ViewKind-** Type of Word view
 
 #### Office.Visio.Shared.FeatureExperimentation
 
@@ -3565,6 +4075,31 @@ The following fields are collected:
 
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
+#### Office.Word.Word.DocumentDirtyFlagChanged
+
+This event indicates Office Word edits a document which changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It is also used to calculated monthly active users/devices.
+
+The following fields are collected:
+
+  - **Data\_CollectionTime-** Timestamp of the event
+
+  - **Data\_DocumentLocation-** type of the document location
+
+  - **Data\_DocumentLocationDetails-** Sub-type of the document location
+
+  - **Data\_FAlwaysSaveEnabled-** Indicates whether always-save was enabled
+
+  - **Data\_FirstEditTime-** Timestamp of first edit
+
+  - **Data\_NumberCoAuthors-** Number of coauthors editing the document during the session
+
+  - **Data\_NumberOfTimesDocumentDirtied-** Number of edits made to the document
+
+  - **Data\_Pdod-** Document identifier in Office Word process
+
+  - **Data\_UrlHash-** Hash of the document path
+
+  - **Data\_ViewKind-** Type of Word view
 ### *Application status and boot subtype*
 
 Determination if specific feature events have occurred, such as start or stop, and if feature is running​.
@@ -3849,6 +4384,35 @@ The following fields are collected:
 
   - **Office.Visio.VisioFileSaveSync -** This event collects File save sync stats for Visio Dev16. This event is used to monitor file save sync Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to e.g., cloud/local. File properties enable us debug and root cause issues faster. This event helps us monitor save failure reasons for a file.
 
+#### Office.Extensibility.Sandbox.ODPActivationHanging
+
+Collects when an Office add-in takes unexpectedly long to launch (>5 sec). Used to detect and fix problems with Office add-ins launching.
+ 
+The following fields are collected:
+
+- **AppId** - ID of the App
+
+- **AppInfo** - data regarding the type of add-in (task pane or UILess or in content etc.) and the provider type (omen, SharePoint, filesystem etc.)
+
+- **AppInstanceId** - ID of the app instance 
+
+- **AssetId** - asset ID of the app
+
+- **NumberOfAddinsActivated** - counter of add-ins activated
+
+- **RemoterType** - specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF etc.) used to activate the add-in
+
+- **StoreType** - origin of the app
+
+- **TimeForAuth** - time spent on auth 
+
+- **TimeForSandbox** - time spent on the sandbox
+
+- **TimeForServerCall** - time spent on the server call 
+
+- **TotalTime** - total time spent
+
+
 #### Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
 Collects the user PUID and Tenant Identifier once per session. The correlation of PUID and Tenant are necessary to understand and diagnose Outlook issues on a per-tenant basis.
@@ -3863,103 +4427,14 @@ The following fields are collected:
 
   - **PUID** - Exchange's PUID to uniquely identify users
 
-#### Office.PowerPoint.PPT.Desktop.Bootime
 
-Collecting how PowerPoint is booted. It includes boot PowerPoint in protected view, in assisted reading mode, from Macro, print, new and blank document, document recovery, from automation and if it is click- to-run. It also collects how long it takes PowerPoint to boot. This data is critical to guarantee PowerPoint performs well when booted from different modes. Microsoft uses this data to catch long booting time when opening PowerPoint from different modes.
+#### Office.Outlook.Mac.MacOLKActivationState
 
-The following fields are collected:
-
-  - **AssistedReading -** in assisted reading mode
-
-  - **Automation -** from automation
-
-  - **Benchmark -** run performance benchmark
-
-  - **Blank -** blank document
-
-  - **BootTime -** session boot time
-
-  - **Embedding -** embedding document
-
-  - **IsC2R -** is click-to-run
-
-  - **IsNew -** new document
-
-  - **IsOpen -** is open
-
-  - **Macro1 -** run Macro
-
-  - **Macro2 -** run Macro
-
-  - **NonStandardSpaceInCmdLine** – there is non-standard space in command line
-
-  - **Print -** print document
-
-  - **PrintDialog -** print document with dialog
-
-  - **PrintPrinter -** print document with printer
-
-  - **ProtectedView -** in protected view
-
-  - **Regserver -** Register PowerPoint as a COM server
-
-  - **Restore -** restore document
-
-  - **Show -** show document
-
-  - **Time -** session time
-
-  - **UnprotectedView -** in unprotected view
-
-#### Office.PowerPoint.PPT.HasUserEditedDocument
-
-Collected when a user starts editing a document. Microsoft uses this data to calculate active users who edited a PowerPoint document
+Collects how Outlook is activated, such as with a subscription or volume license. The data is monitored to ensure we don’t see any spikes in failures. We also analyze the data to find areas of improvement. 
 
 The following fields are collected:
 
-  - **CorrelationId** – document Correlation Identifier
-
-#### Office.Project.BootAndOpenProject
-
-Project is booted by opening a file. This event indicates that a user has opened Office Project with an associated file. It contains critical success data of making sure Project can start and load a file.
-
-The following fields are collected:
-
-  - **Data\_AlertTime -** The amount of time the boot dialog was active.
-
-  - **Data\_BootTime -** The amount of time it took to boot Project
-
-  - **Data\_CacheFileSize -** If the file was cached, the size of the file
-
-  - **Data\_EntDocType -** The type of file that was opened
-
-  - **Data\_IsInCache -** Whether the file opened was cached
-
-  - **Data\_LoadSRAs -** If the user wants to load SRAs or not
-
-  - **Data\_Outcome -** Total boot and file open time.
-
-  - **Data\_OpenFromDocLib -** If the Project file opened was from the document library
-
-  - **Data\_ProjectServerVersion -** The version and build that Project is currently on
-
-#### Office.Project.BootProject
-
-Project is booted without opening a file. This event indicates that a user has opened Office Project without an associated file. It contains critical success data of making sure Project can start.
-
-The following fields are collected:
-
-  - **Data\_BootTime -** The amount of time it took to boot Project
-
-  - **Data\_FileLoaded -** False if opening from out-space or new blank project
-
-  - **Data\_IsEntOfflineWithProfile -** If the users are in the professional SKU and not connected to the server
-
-  - **Data\_IsEntOnline -** If the session of Project is connected to a Project server with enterprise features
-
-  - **Data\_IsLocalProfile -** If the Project session is connected to a Project server with enterprise features
-
-  - **Data\_ProjectServerVersion -** The version and build that Project is currently on
+- **SetupUIActivationMethod** - Outlook activation method, such as subscription or volume license
 
 #### Office.PowerPoint.DocOperation.Open 
 
@@ -4293,6 +4768,105 @@ The following fields are collected:
 
   - **Data\_ZRTOpenDisabledReasons -** Why we could not open document from cache (Zero Round Trip)
 
+#### Office.PowerPoint.PPT.Desktop.Bootime
+
+Collecting how PowerPoint is booted. It includes boot PowerPoint in protected view, in assisted reading mode, from Macro, print, new and blank document, document recovery, from automation and if it is click- to-run. It also collects how long it takes PowerPoint to boot. This data is critical to guarantee PowerPoint performs well when booted from different modes. Microsoft uses this data to catch long booting time when opening PowerPoint from different modes.
+
+The following fields are collected:
+
+  - **AssistedReading -** in assisted reading mode
+
+  - **Automation -** from automation
+
+  - **Benchmark -** run performance benchmark
+
+  - **Blank -** blank document
+
+  - **BootTime -** session boot time
+
+  - **Embedding -** embedding document
+
+  - **IsC2R -** is click-to-run
+
+  - **IsNew -** new document
+
+  - **IsOpen -** is open
+
+  - **Macro1 -** run Macro
+
+  - **Macro2 -** run Macro
+
+  - **NonStandardSpaceInCmdLine** – there is non-standard space in command line
+
+  - **Print -** print document
+
+  - **PrintDialog -** print document with dialog
+
+  - **PrintPrinter -** print document with printer
+
+  - **ProtectedView -** in protected view
+
+  - **Regserver -** Register PowerPoint as a COM server
+
+  - **Restore -** restore document
+
+  - **Show -** show document
+
+  - **Time -** session time
+
+  - **UnprotectedView -** in unprotected view
+
+#### Office.PowerPoint.PPT.HasUserEditedDocument
+
+Collected when a user starts editing a document. Microsoft uses this data to calculate active users who edited a PowerPoint document
+
+The following fields are collected:
+
+  - **CorrelationId** – document Correlation Identifier
+
+#### Office.Project.BootAndOpenProject
+
+Project is booted by opening a file. This event indicates that a user has opened Office Project with an associated file. It contains critical success data of making sure Project can start and load a file.
+
+The following fields are collected:
+
+  - **Data\_AlertTime -** The amount of time the boot dialog was active.
+
+  - **Data\_BootTime -** The amount of time it took to boot Project
+
+  - **Data\_CacheFileSize -** If the file was cached, the size of the file
+
+  - **Data\_EntDocType -** The type of file that was opened
+
+  - **Data\_IsInCache -** Whether the file opened was cached
+
+  - **Data\_LoadSRAs -** If the user wants to load SRAs or not
+
+  - **Data\_Outcome -** Total boot and file open time.
+
+  - **Data\_OpenFromDocLib -** If the Project file opened was from the document library
+
+  - **Data\_ProjectServerVersion -** The version and build that Project is currently on
+
+#### Office.Project.BootProject
+
+Project is booted without opening a file. This event indicates that a user has opened Office Project without an associated file. It contains critical success data of making sure Project can start.
+
+The following fields are collected:
+
+  - **Data\_BootTime -** The amount of time it took to boot Project
+
+  - **Data\_FileLoaded -** False if opening from out-space or new blank project
+
+  - **Data\_IsEntOfflineWithProfile -** If the users are in the professional SKU and not connected to the server
+
+  - **Data\_IsEntOnline -** If the session of Project is connected to a Project server with enterprise features
+
+  - **Data\_IsLocalProfile -** If the Project session is connected to a Project server with enterprise features
+
+  - **Data\_ProjectServerVersion -** The version and build that Project is currently on
+
+
 #### Office.Project.OpenProject
 
 Project opens a file. This event indicates a user directly opening a Project file by a user. It contains critical success data of opening files in Project.
@@ -4367,249 +4941,251 @@ The following fields are collected:
 
 - **parentSessionId** - Randomly generated guid to identify the app session
 
+
 #### Office.Word.FileOpen.OpenCmdFileMruPriv
 
-This event indicates Office Word opens a document from the Most Recent Used (MRU) list. It also contains critical file open performance data, and is an app start event from user perspective. The event monitors whether file-open-from-MRU is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document from the Most Recent Used (MRU) list. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether fileopen-from-MRU is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
 
-  - **Data\_BytesAsynchronous -** Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
+- **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
 
-  - **Data\_BytesAsynchronousWithWork -** Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen
+- **Data_BytesAsynchronousWithWork** - Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen
 
-  - **Data\_BytesSynchronous -** Number of bytes (compressed) that we must have before we can start opening the file
+- **Data_BytesSynchronous** - Number of bytes (compressed) that we must have before we can start opening the file
 
-  - **Data\_BytesUnknown -** Number of bytes in document parts that we don’t expect to find
+- **Data_BytesUnknown** - Number of bytes in document parts that we don’t expect to find 
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_Doc\_AccessMode -** Document is read-only/editable
+- **Data_Doc_AccessMode** - Document is read-only/editable
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_FqdnHash -** One-way hash of customer identifiable domain name
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one way hash of the user identity used to perform the open
+- **Data_Doc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_Doc\_InitializationScenario -** Records how the document was opened
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto-synced copy of the document exists on the computer
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto-synced copy of the document exists on the computer
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_Doc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document Identifier used to diagnose problems
+- **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document Identifier used to diagnose problems
+- **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
-  - **Data\_Doc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_Doc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI, etc.)
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI, etc.)
 
-  - **Data\_Doc\_ServerVersion -** the server version offering the service
+- **Data_Doc_ServerVersion** - the server version offering the service
 
-  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL 
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_Doc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_Doc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
-  - **Data\_Doc\_WopiServiceId -** Contains unique identifier of WOPI service provider
+- **Data_EditorDisablingRename** - Identifier of the first editor that caused for rename to be disabled
 
-  - **Data\_EditorDisablingRename -** Identifier of the first editor that caused for rename to be disabled
+- **Data_EditorsCount** - Number of editors in the document
 
-  - **Data\_EditorsCount -** Number of editors in the document
+- **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Indicates that open succeeded after repairing a failure while opening the document
+- **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document
 
-  - **Data\_ForceReadWriteReason -** Integer value representing the reason why the file was forced into read/write mode
+- **Data_LastLoggedTag** - Unique tag for code call site used to identify when we try to fail the open twice (used for data quality diagnostics)
 
-  - **Data\_LastLoggedTag -** Unique tag for code call site used to identify when we try to fail the open twice (used for data quality diagnostics)
+- **Data_LinkStyles** - Indicates whether we are linking to the template styles
 
-  - **Data\_LinkStyles -** Indicates whether we are linking to the template styles
+- **Data_MainPdod** - The document identifier in Office Word process
 
-  - **Data\_MainPdod -** The document identifier in Office Word process
+- **Data_Measurements** - Encoded string containing the time breakdown of the different parts of open. Used to measure performance.
 
-  - **Data\_Measurements -** Encoded string containing the time breakdown of the different parts of open. Used to measure performance.
+- **Data_MoveDisabledReason** - Error that is disabling move for the document
 
-  - **Data\_MoveDisabledReason -** Error that is disabling move for the document
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
+- **Data_PartsUnknown** - the number of document parts that we couldn’t get data for
 
-  - **Data\_PartsUnknown -** the number of document parts that we couldn’t get data for
+- **Data_RecoverableFailureInitiationLocationTag** - Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it
 
-  - **Data\_RecoverableFailureInitiationLocationTag -** Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
-  - **Data\_RenameDisabledReason -** Error that is causing for rename to be disabled for this document
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
+- **Data_SecondaryTag** - Unique tag for code call site used to add additional failure data for open 
 
-  - **Data\_SecondaryTag -** Unique tag for code call site used to add additional failure data for open
+- **Data_TemplateFormat** - File format of the template that the document is based on.
 
-  - **Data\_TemplateFormat -** File format of the template that the document is based on.
+- **Data_UsesNormal** - Indicates whether the open document is based on the normal template
 
-  - **Data\_UsesNormal -** Indicates whether the open document is based on the normal template
+- **PathData_Doc_StreamAvailability** - Indicator if document stream is available/disabled
+
 
 #### Office.Word.FileOpen.OpenFFileOpenXstzCore
 
-This event indicates Office Word opens a document who is double clicked by a user. It also contains critical file open performance data, and is an app start event from user perspective. The event monitors whether file-open-from-file-double-click is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document who is double clicked by a user. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-openfrom-file-double-click is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics
+	
+- **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
+	
+- **Data_BytesAsynchronousWithWork** - Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen
 
-  - **Data\_BytesAsynchronous -** Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
+- **Data_BytesSynchronous** - Number of bytes (compressed) that we must have before we can start opening the file
+	
+- **Data_BytesUnknown** - Number of bytes in document parts that we don’t expect to find
 
-  - **Data\_BytesAsynchronousWithWork -** Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_BytesSynchronous -** Number of bytes (compressed) that we must have before we can start opening the file
+- **Data_Doc_AccessMode** - Document is read-only/editable
 
-  - **Data\_BytesUnknown -** Number of bytes in document parts that we don’t expect to find
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_AccessMode -** Document is read-only/editable
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_FqdnHash -** One-way hash of customer identifiable domain name
+- **Data_Doc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one-way hash of the user identity used to perform the open
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_InitializationScenario -** Records how the document was opened
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
+	
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+	
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_Doc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+	
+- **Data_Doc_ServerVersion** - the server version offering the service 
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document Identifier used to diagnose problems
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document Identifier used to diagnose problems
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_Doc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_Doc\_ServerVersion -** the server version offering the service
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_Doc\_SessionId -** the server version offering the service
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_Doc\_SharePointServiceContext-**
+- **Data_Doc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_EditorDisablingRename** - Identifier of the first editor that caused for rename to be disabled
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_EditorsCount** - Number of editors in the document
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document
 
-  - **Data\_Doc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode
+	
+- **Data_LastLoggedTag** - Unique tag for code call site used to identify when we try to fail the open twice (used for data quality diagnostics)
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_LinkStyles** - Indicates whether we are linking to the template styles
 
-  - **Data\_Doc\_WopiServiceId -** Contains unique identifier of WOPI service provider
+- **Data_MainPdod** - The document identifier in Office Word process
 
-  - **Data\_EditorDisablingRename -** Identifier of the first editor that caused for rename to be disabled
+- **Data_Measurements** - Encoded string containing the time breakdown of the different parts of open. Used to measure performance.
+	
+- **Data_MoveDisabledReason** - Error that is disabling move for the document
 
-  - **Data\_EditorsCount -** Number of editors in the document
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Indicates that open succeeded after repairing a failure while opening the document
+- **Data_PartsUnknown** - the number of document parts that we couldn’t get data for
 
-  - **Data\_ForceReadWriteReason -** Integer value representing the reason why the file was forced into read/write mode
+- **Data_RecoverableFailureInitiationLocationTag** - Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it.
 
-  - **Data\_LastLoggedTag -** Unique tag for code call site used to identify when we try to fail the open twice (used for data quality diagnostics)
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
-  - **Data\_LinkStyles -** Indicates whether we are linking to the template styles
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_MainPdod -** The document identifier in Office Word process
+- **Data_SecondaryTag** - Unique tag for code call site used to add additional failure data for open.
 
-  - **Data\_Measurements -** Encoded string containing the time breakdown of the different parts of open. Used to measure performance.
+- **Data_TemplateFormat** - File format of the template that the document is based on.
 
-  - **Data\_MoveDisabledReason -** Error that is disabling move for the document
-
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
-
-  - **Data\_PartsUnknown -** the number of document parts that we couldn’t get data for
-
-  - **Data\_RecoverableFailureInitiationLocationTag -** Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it.
-
-  - **Data\_RenameDisabledReason -** Error that is causing for rename to be disabled for this document
-
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
-
-  - **Data\_SecondaryTag -** Unique tag for code call site used to add additional failure data for open.
-
-  - **Data\_TemplateFormat -** File format of the template that the document is based on.
-
-  - **Data\_UsesNormal -** Indicates whether the open document is based on the normal template
+- **Data_UsesNormal** - Indicates whether the open document is based on the normal template.
 
 
 #### Office.Word.FileOpen.OpenIfrInitArgs
@@ -4735,123 +5311,123 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.OpenLoadFile
 
-This event indicates Office Word opens a document via Open dialog. It also contains critical file open performance data, and is an app start event from user perspective. The event monitors whether file-open-from-the-open-file-dialog is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document via Open dialog. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-open-from-the-open-filedialog is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
 
-  - **Data\_BytesAsynchronous -** Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
+- **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
 
-  - **Data\_BytesAsynchronousWithWork -** Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen
+- **Data_BytesAsynchronousWithWork** - Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen
+	
+- **Data_BytesSynchronous** - Number of bytes (compressed) that we must have before we can start opening the file
 
-  - **Data\_BytesSynchronous -** Number of bytes (compressed) that we must have before we can start opening the file
+- **Data_BytesUnknown** - Number of bytes in document parts that we don’t expect to find
 
-  - **Data\_BytesUnknown -** Number of bytes in document parts that we don’t expect to find
+- **Data_DetachedDuration** - How long was the activity detached from the thread
 
-  - **Data\_DetachedDuration -** How long was the activity detached from the thread
+- **Data_Doc_AccessMode** - Document is read only/editable
 
-  - **Data\_Doc\_AccessMode -** Document is read only/editable
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
-  - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+- **Data_Doc_ChunkingType** - Units used for incremental document open
 
-  - **Data\_Doc\_ChunkingType -** Units used for incremental document open
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
 
-  - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
 
-  - **Data\_Doc\_Ext -** Document extension (docx/xlsb/pptx etc.)
+- **Data_Doc_FileFormat** - File format protocol version
 
-  - **Data\_Doc\_FileFormat -** File format protocol version
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
-  - **Data\_Doc\_FqdnHash -** One way hash of customer identifiable domain name
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
 
-  - **Data\_Doc\_IdentityTelemetryId -** A one way hash of the user identity used to perform the open
+- **Data_Doc_InitializationScenario** - Records how the document was opened
 
-  - **Data\_Doc\_InitializationScenario -** Records how the document was opened
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
 
-  - **Data\_Doc\_IOFlags -** Reports on the cached flags used to set open request options
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+	
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
 
-  - **Data\_Doc\_IrmRights -** Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
 
-  - **Data\_Doc\_IsIncrementalOpen -** Flag indicating that the document has been incrementally opened
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-  - **Data\_Doc\_IsOcsSupported -** Flag indicating that the document is supported in the collaboration service
+- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
 
-  - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
 
-  - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
-  - **Data\_Doc\_LocationDetails -** Indicates which Known Folder provided a locally stored document
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
 
-  - **Data\_Doc\_NumberCoAuthors -** Count of the number of fellow users in a collaborative editing session
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
-  - **Data\_Doc\_PasswordFlags -** Indicates read or read/write password flags set
+- **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
 
-  - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
+- **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
-  - **Data\_Doc\_ResourceIdHash -** An anonymized document Identifier used to diagnose problems
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
 
-  - **Data\_Doc\_ServerDocId -** An immutable anonymized document Identifier used to diagnose problems
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI, etc.)
 
-  - **Data\_Doc\_ServerProtocol -** the protocol version used to communicate with the service
+- **Data_Doc_ServerVersion** - the server version offering the service
 
-  - **Data\_Doc\_ServerType -** the type of the server offering the service (SharePoint, OneDrive, WOPI, etc.)
+- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-  - **Data\_Doc\_ServerVersion -** the server version offering the service
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
 
-  - **Data\_Doc\_SessionId -** Identifies a specific document edit session within the full session
+- **Data_Doc_SizeInBytes** - Indicator of document size
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
 
-  - **Data\_Doc\_SizeInBytes -** Indicator of document size
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
 
-  - **Data\_Doc\_SpecialChars -** Indicator of special chars in the document's URL or Path
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
 
-  - **Data\_Doc\_StreamAvailability -** Indicator if document stream is available/disabled
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
 
-  - **Data\_Doc\_SyncBackedType -** Indicator as to the type of document (local or service based)
+- **Data_EditorDisablingRename** - Identifier of the first editor that caused for rename to be disabled
 
-  - **Data\_Doc\_UrlHash -** One-way hash to create a naïve document identifier
+- **Data_EditorsCount** - Number of editors in the document
 
-  - **Data\_EditorDisablingRename -** Identifier of the first editor that caused for rename to be disabled
+- **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode
+	
+- **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document
 
-  - **Data\_EditorsCount -** Number of editors in the document
+- **Data_LastLoggedTag** - Unique tag for code call site used to identify when we fail to try the save twice (used for data quality diagnostics)
 
-  - **Data\_ForceReadWriteReason -** Integer value representing the reason why the file was forced into read/write mode
+- **Data_LinkStyles** - Indicates whether we are linking to the template styles
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Indicates that open succeeded after repairing a failure while opening the document
+- **Data_MainPdod** - The document identifier in Office Word process
 
-  - **Data\_LastLoggedTag -** Unique tag for code call site used to identify when we fail to try the save twice (used for data quality diagnostics)
+- **Data_Measurements** - Encoded string containing the time breakdown of the different parts of open. Used to measure performance.
 
-  - **Data\_LinkStyles -** Indicates whether we are linking to the template styles
+- **Data_MoveDisabledReason** - Error that is disabling move for the document
 
-  - **Data\_MainPdod -** The document identifier in Office Word process
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
 
-  - **Data\_Measurements -** Encoded string containing the time breakdown of the different parts of open. Used to measure performance.
+- **Data_PartsUnknown** - the number of document parts that we couldn’t get data for
 
-  - **Data\_MoveDisabledReason -** Error that is disabling move for the document
+- **Data_RecoverableFailureInitiationLocationTag** - Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it
 
-  - **Data\_MoveFlightEnabled -** Whether the flight for the move feature is enabled
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
-  - **Data\_PartsUnknown -** the number of document parts that we couldn’t get data for
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-  - **Data\_RecoverableFailureInitiationLocationTag -** Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it
+- **Data_SecondaryTag** - Unique tag for code call site used to add additional failure data for open
 
-  - **Data\_RenameDisabledReason -** Error that is causing for rename to be disabled for this document
+- **Data_TemplateFormat** - File format of the template that the document is based on
 
-  - **Data\_RenameFlightEnabled -** Whether the flight for the rename feature is enabled
-
-  - **Data\_SecondaryTag -** Unique tag for code call site used to add additional failure data for open
-
-  - **Data\_TemplateFormat -** File format of the template that the document is based on
-
-  - **Data\_UsesNormal** - Indicates whether the open document is based on the normal template
+- **Data_UsesNormal** - Indicates whether the open document is based on the normal template
 
 
 ### *Office accessibility configuration subtype*
@@ -4979,6 +5555,46 @@ The following fields are collected:
 
 - **Event Name** - Event Name is the Event Category and Event Label.
 
+#### Office.Apple.SystemHealthAppExitMacAndiOS
+
+On boot event that captures graceful and ungraceful app exits for further investigation.
+
+The following fields are collected:
+
+- **AffectedProcessResidentMemoryOnCrash** – Resident memory of crashed app
+
+- **AffectedProcessSessionID** – SessionID of the process in previous exit
+
+- **AffectedProcessUnsymbolicatedChecksum** – Goes with Stack hash for symbolization
+
+- **AffectedProcessVirtualMemoryOnCrash** – Virtual memory of crashed app
+
+- **AffectedSessionBuildNumber** – App version
+
+- **AffectedSessionDuration** – Duration of session in seconds before crash
+
+- **AffectedSessionIDSMatch** – Boolean to verify whether reporting session id is the same as picked up by MERP
+
+- **AffectedSessionLongBuildNumber** – Long build number
+
+- **AffectedSessionMERPSessionID** – Session ID of MERP
+
+- **AffectedSessionOSLocale** – OS Locale
+
+- **AffectedSessionOSVersion** – OS version
+
+- **AffectedSessionStackHash** – Hash of the crashed app’s stack trace
+
+- **AffectedSessionStartTime** – Datetime of session start
+
+- **AffectedSessionUAEType** – Enum giving us information on what type of crash it was
+
+- **AffectedSessionVersion** – App version
+
+- **DeviceModel** – Hardware model
+
+- **ExitWasGraceful** – Was previous app exit graceful?
+
 #### Office.Extensibility.COMAddinUnhandledException
 
 Event generated when COM Add-in crashes
@@ -4988,29 +5604,82 @@ Global insights: this is used to compute a global, non-enterprise-specific "read
 
 The following fields are collected:
 
-**ScopeId** – the current thread scope
+- **ScopeId** – the current thread scope
 
-**Method** – Office method where exception occurred
+- **Method** – Office method where exception occurred
 
-**Interface** – Office interface where exception occurred
+- **Interface** – Office interface where exception occurred
 
-**AddinId** – the add-in Class Id
+- **AddinId** – the add-in Class Id
 
-**AddinProgId** – the add-in Prog Id
+- **AddinProgId** – the add-in Prog Id
 
-**AddinFriendlyName** – the add-in friendly name
+- **AddinFriendlyName** – the add-in friendly name
 
-**AddinTimeDateStamp** – the add-in timestamp from the DLL metadata
+- **AddinTimeDateStamp** – the add-in timestamp from the DLL metadata
 
-**AddinVersion** – the add-in version
+- **AddinVersion** – the add-in version
 
-**AddinFileName** – add-in file name excluding file path
+- **AddinFileName** – add-in file name excluding file path
 
-**VSTOAddIn** – whether add-in is VSTO
+- **VSTOAddIn** – whether add-in is VSTO
 
-**AddinConnectFlag** – current load behavior
+- **AddinConnectFlag** – current load behavior
 
-**LoadAttempts** – number of attempts to load add-in
+- **LoadAttempts** – number of attempts to load add-in
+
+#### Office.Extensibility.COMAddinUnhandledExceptionEnterprise
+
+Event generated when COM Add-in crashes.  This is used as a numerator in the computation of enterprise-specific health status for add-ins which is used to infer during pilot if the add-in is "ready to upgrade" in the production ring.
+
+The following fields are collected (Note that these fields are written as placeholders to prevent breaking existing scripts: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
+
+
+- **AddinConnectFlag** - current load behavior
+
+- **AddinFileName** - field empty - deprecated
+
+- **AddinFriendlyName** - field empty - deprecated
+
+- **AddinId** - the add-in Class Id
+
+- **AddinProgId** - field empty - deprecated
+
+- **AddinTimeDateStamp** - the add-in timestamp from the DLL metadata
+
+- **AddinVersion** - field empty - deprecated
+
+- **Interface** - Office interface where exception occurred
+
+- **LoadAttempts** - number of attempts to load add-in
+
+- **Method** - Office method where exception occurred
+
+- **ScopeId** - the current thread scope
+
+- **VSTOAddIn** - whether add-in is VSTO
+
+#### Office.Extensibility.Sandbox.ODPActivationHeartbeat
+
+Office Add-ins run in a sandbox. This event collects heartbeat information on activations. When an add-in crashes, this event collects why it crashed in the case it’s related to our sandbox. Used to investigate when customers escalate issues.
+ 
+The following fields are collected:
+
+- **AppId** - ID of the App
+
+- **AppInfo** - Data regarding the type of add-in (task pane or UILess or in content etc.) and the provider type (omen, SharePoint, filesystem etc.)
+
+- **AppInstanceId** - ID of the app instance 
+
+- **AssetId** - Asset ID of the app
+
+- **ErrorCode** - Total time spent 
+
+- **NumberOfAddinsActivated** - Counter of add-ins activated
+
+- **RemoterType** - Specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF, etc.) used to activate the add-in
+
+- **StoreType** - Origin of the app
 
 #### Office.Extensibility.VbaTelemetryBreak
 
@@ -5020,13 +5689,24 @@ Desktop Analytics: This is used as numerator in the computation of enterprise-sp
 
 The following fields are collected:
 
-**TagId** – the id of the telemetry tag
+- **TagId** – the id of the telemetry tag
 
-**BreakReason** – the reason for the break (runtime, compile, other error)
+- **BreakReason** – the reason for the break (runtime, compile, other error)
 
-**SolutionType** – type of solution (document, template, app add-in, COM add-in)
+- **SolutionType** – type of solution (document, template, app add-in, COM add-in)
 
-**Data.ErrorCode** – error code reported by VBA engine
+- **Data.ErrorCode** – error code reported by VBA engine
+
+
+#### Office.FindTime.AppFailedToStart
+
+Collected when app fails to start due to an unexpected error during startup. Used to track exceptions & crashes.  Helps monitor and debug app health.
+
+The following fields are collected: 
+
+- **DateTime** - Timestamp of when the event is logged.
+
+- **EventName** - The name of the event being logged.
 
 #### Office.Outlook.Desktop.HangBucketMetrics
 
@@ -5216,6 +5896,52 @@ The following fields are collected:
 
   - **ProgID** – the add-in Prog identifier
 
+#### Office.System.SystemHealthUngracefulAppExitMacAndiOS
+
+On boot event that captures ungraceful app exits for further investigation.
+
+The following fields are collected:
+
+- **AffectedProcessAppBuild** – Build number
+
+- **AffectedProcessAppBuildRevision** – Build Revision Number
+
+- **AffectedProcessAppMajorVer** – Major version number of App
+
+- **AffectedProcessAppMinorVer** – Minor version number of App
+
+- **AffectedProcessAppName** – Application name
+
+- **AffectedProcessResidentMemoryOnCrash** – Resident memory of crashed app
+
+- **AffectedProcessUnsymbolicatedChecksum** – Goes with Stack hash for symbolization
+
+- **AffectedProcessVirtualMemoryOnCrash** – Virtual memory of crashed app
+
+- **AffectedSessionDuration** – Duration of session in seconds before crash
+
+- **AffectedSessionLongBuildNumber** – Long build number
+
+- **CrashedProcessSessionID** – SessionID of the process in app crash
+
+- **DetectionTime** – DateTime of app crash
+	
+- **DeviceModel** – Hardware model
+
+- **MERPSessionID** – Session ID of MERP
+
+- **ReportingOsLocaleTag** – OS locale
+
+- **ReportingOSVerStr** – OS version
+
+- **SessionBuildNumber** – Crashed App’s version
+
+- **SessionIDSMatch** – Boolean to verify whether reporting session ID is the same as picked up by Merp
+
+- **SessionVersion** – Crashed App’s version– **StackHash** – Hash of the crashed app’s stack trace
+
+- **UAEType** – Enum giving us information on what type of crash it was
+
 #### Office.ThisAddIn.StartupFailed
 
 Collects information for exception that occur during startup of the Data Streamer App. This data is used to monitor the health of the application. This event is generated by Microsoft Data Streamer for Excel Add-in.
@@ -5230,6 +5956,27 @@ The following fields are collected:
 ### *Application feature performance subtype*
 
 Poor response time or performance for scenarios such as application start up or opening a file.
+
+#### Office.Extensibility.RichApiMethodInvocation
+
+When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance and usage for Rich API method invocation.
+ 
+The following fields are collected:
+
+- **Api** - Full name of the API
+
+- **DispFlag** - A bit flag describing the type of method call (Ex: 0x1 = METHOD, 0x2 = PROPERTYGET, 0x4 = PROPERTYPUT, 0x8 = PROPERTYPUTREF)
+
+- **DispId** - Dispatch ID for the method being called
+
+- **HResult** - HResult for the method call
+
+- **Latency** - Latency for the call, in microseconds
+
+- **ReqId** - GUID for the batch request that this method belongs to
+
+- **TypeId** - GUID for the interface on which this method being called
+
 
 #### Office.Manageability.Service.ApplyPolicy
 
@@ -5269,6 +6016,29 @@ The following fields are collected:
 
   - **ShowScanPstDlg** - Store repair check displayed error message
 
+
+#### Office.Outlook.Mac.BootPerf
+
+Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It is also used to diagnose customer escalations as well as improve boot performance over time.
+
+The following fields are collected:
+
+- **MacOLKBootPerfDuration** - total time spent booting
+
+- **MacOLKBootPerfID** - identifier for the time spent booting
+
+
+#### Office.Outlook.Mac.PerformanceUnresponsive
+
+Used to identify user impacting issues in Outlook that may manifest as degraded performance. 
+
+The following fields are collected:
+
+- **Duration** - time elapsed of degraded performance
+
+- **EventType** - type of event experiencing degraded performance
+
+
 #### Office.Performance.Boot
 
 Collected when an Office application is booted. Includes whether the boot was initiated by opening a file or launching via the Start menu, whether this was the first boot of the application, how much memory the application is using, and whether there was any blocking UI shown to the user. Used to measure how fast Office applications boot and how much memory they use when they start, to ensure there is an acceptable user experience.
@@ -5289,6 +6059,28 @@ The following fields are collected:
 
   - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process’s working set so far.
 
+#### Office.UX.OfficeInsider.ShowOfficeInsiderDlg
+
+Critical signal tracking user interaction with Join Office Insider dialog. It is used for identifying any issues in performing user-initiated changes such us joining/leaving Office Insider program and changing Office Insider level.
+
+The following fields are collected:
+
+- **Data_AcceptedContactMeNew** - Indicates if a user has accepted to be contacted by Microsoft upon joining Office Insider program
+
+- **Data_InsiderLevel** - Insider Level on opening of “Join Office Insider” dialog
+
+- **Data_InsiderLevelNew** - Insider level on closing of “Join Office Insider” dialog
+
+- **Data_IsInternalUser** - Indicates whether the application runs under the credentials of a Microsoft corporate account.
+
+- **Data_IsInternalUserInit** - Indicates whether the code could determine whether the application runs under the credentials of a Microsoft corporate account.
+
+- **Data_OpenNewsletterWebpage** - Indicates whether Office Insider Newsletter Subscription link was triggered under condition that user has joined Office Insider program, Newsletter Subscription feature is enabled, and the user have not cancelled opening of Office Insider Newsletter Subscription webpage.
+	
+- **Data_RegisterInsider** - Status of Office Insider registration
+
+- **Data_RegisterInsiderHr** - Result code for Office Insider registration
+
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
 Activity tracking whether the Office Insider slab can be shown to the user on the Account tab in the Office Backstage UI.
@@ -5303,31 +6095,6 @@ The following fields are collected:
 
   - **Data_Reason** - Unused
 
-#### Office.UX.OfficeInsider.ShowOfficeInsiderDlg
-
-Activity tracking the usage and performance of the Office Insider dialog.
-
-The following fields are collected:
-
-  - **Data_AcceptedContactMeNew** - When opting into an Insider level, and when the user's choice was recorded successfully, indicates whether the user accepted to be contacted by Microsoft.
-
-  - **Data_DialogChoice** = Unused
-  
-  - **Data_DialogId** = Unused
-  
-  - **Data_Event** - Unused
-  
-  - **Data_EventInfo** - Unused
-  
-  - **Data_InsiderLevel** - The Insider Level when the dialog is first shown to the user.
-  
-  - **Data_InsiderLevelNew** - The new Insider level selected by the user.
-  
-  - **Data_IsInternalUser** - Indicates whether the application runs under the credentials of an @microsoft.com account.
-  
-  - **Data_IsInternalUserInit** - Indicates whether the code could determine whether the application runs under the credentials of an @microsoft.com account.
-  
-  - **Data_OpenNewsletterWebpage** - When the Office Insider Newsletter Subscription feature is enabled, and the user switches to an Insider level from Production, indicates whether browser navigation to the Office Insider Newsletter Subscription link was triggered.
 
 #### Office.Visio.Shared.VisioFileRender
 
@@ -5427,6 +6194,19 @@ The following fields are collected:
 
   - **Data\_Timeout** - How long the hang lasted
 
+#### Office.Extensibility.Sandbox.ODPErrorNotification
+
+Tracks the various error notifications received from the sandbox. Used to detect the error scenarios in sandbox and there by fixing it, to improve productivity of the user
+ 
+The following fields are collected:
+
+- **AppId** - Id of the App
+
+- **AppUrl** - scrubbed app URL 
+
+- **Result** - result error code
+
+
 #### Office.Graphics.ARCExceptions 
 
 This exception reporting information is important for assessing the overall health of the graphics stack, as well as identifying parts of the code where failures are occurring at high frequency, in order to prioritize investigation. This exception reporting information is important for assessing the overall health of the graphics stack, as well as identifying parts of the code where failures are occurring at high frequency. This helps an engineer to determine which rendering failures are impacting the most users, enabling us to prioritize our investigations toward fixing issues that will have the greatest user benefit.
@@ -5497,33 +6277,33 @@ Collects success and failure of the Forward, Forward as Attachment, and Forward 
 
 The following fields are collected:
 
-  - **CountExceptionForward- Count of the forwarded Meetings Exceptions**
+  - **CountExceptionForward** - Count of the forwarded Meetings Exceptions
 
-  - **CountExceptionForwardAsiCal- Count of the forwarded Meetings Exceptions as an iCal**
+  - **CountExceptionForwardAsiCal** - Count of the forwarded Meetings Exceptions as an iCal
 
-  - **CountExceptionForwardInSplit- Count of the forwarded Meetings Exceptions from the Split Menu in Ribbon**
+  - **CountExceptionForwardInSplit** - Count of the forwarded Meetings Exceptions from the Split Menu in Ribbon
 
-  - **CountExceptionForwardWithAttach- Count of the forwarded Meetings Exceptions as an Attachment**
+  - **CountExceptionForwardWithAttach** - Count of the forwarded Meetings Exceptions as an Attachment
 
-  - **CountRecurringForward- Count of the forwarded Recurring Meetings**
+  - **CountRecurringForward** - Count of the forwarded Recurring Meetings
 
-  - **CountRecurringForwardAsiCal- Count of the forwarded Recurring Meetings as an iCal**
+  - **CountRecurringForwardAsiCal** - Count of the forwarded Recurring Meetings as an iCal
 
-  - **CountRecurringForwardInSplit**- Count of the forwarded Recurring Meetings from the Split Menu in Ribbon
+  - **CountRecurringForwardInSplit** - Count of the forwarded Recurring Meetings from the Split Menu in Ribbon
 
-  - **CountRecurringForwardWithAttach- Count of the forwarded Recurring Meetings as an Attachment**
+  - **CountRecurringForwardWithAttach** - Count of the forwarded Recurring Meetings as an Attachment
 
-  - **CountSingleForward- Count of the forwarded Single Meetings**
+  - **CountSingleForward** - Count of the forwarded Single Meetings
 
-  - **CountSingleForwardAsiCal- Count of the forwarded Single Meetings as an iCal**
+  - **CountSingleForwardAsiCal** - Count of the forwarded Single Meetings as an iCal
 
-  - **CountSingleForwardInSplit- Count of the forwarded Single Meetings from the Split Menu in Ribbon**
+  - **CountSingleForwardInSplit** - Count of the forwarded Single Meetings from the Split Menu in Ribbon
 
-  - **CountSingleForwardWithAttach- Count of the forwarded Single Meetings as an Attachment**
+  - **CountSingleForwardWithAttach** - Count of the forwarded Single Meetings as an Attachment
 
-  - **HResult- ErrorCode**
+  - **HResult** - ErrorCode
 
-  - **OlkViewName -- Indicates Mail, Calendar, or Inspector View**
+  - **OlkViewName** - Indicates Mail, Calendar, or Inspector View
 
 #### Office.Outlook.Desktop.OutlookCalendarUsageErr.MeetRcpt.ReplyActions.Rule.O16
 
@@ -5531,33 +6311,33 @@ Collects success and failure of the Reply, Reply All, Reply With IM, and Reply A
 
 The following fields are collected:
 
-  - **CountExceptionReply - Count of the Meetings Reply on exceptions**
+  - **CountExceptionReply** - Count of the Meetings Reply on exceptions
 
-  - **CountExceptionReplyAll - Count of the Meetings ReplyAll on exceptions**
+  - **CountExceptionReplyAll** - Count of the Meetings ReplyAll on exceptions
 
-  - **CountExceptionReplyAllWithIM- Count of the Meetings ReplyAll with IM on exceptions**
+  - **CountExceptionReplyAllWithIM** - Count of the Meetings ReplyAll with IM on exceptions
 
-  - **CountExceptionReplyWithIM- Count of the Meetings Reply with IM on exceptions**
+  - **CountExceptionReplyWithIM** - Count of the Meetings Reply with IM on exceptions
 
-  - **CountRecurringReply - Count of the Recurring Meetings Reply**
+  - **CountRecurringReply** - Count of the Recurring Meetings Reply
 
-  - **CountRecurringReplyAll- Count of the Recurring Meetings ReplyAll**
+  - **CountRecurringReplyAll** - Count of the Recurring Meetings ReplyAll
 
-  - **CountRecurringReplyAllWithIM- Count of the Recurring Meetings ReplyAll with IM**
+  - **CountRecurringReplyAllWithIM** - Count of the Recurring Meetings ReplyAll with IM
 
-  - **CountRecurringReplyWithIM- Count of the Recurring Meetings Reply with IM**
+  - **CountRecurringReplyWithIM** - Count of the Recurring Meetings Reply with IM
 
-  - **CountSingleReply- Count of the Single Meetings Reply**
+  - **CountSingleReply** - Count of the Single Meetings Reply
 
-  - **CountSingleReplyAll- Count of the Single Meetings ReplyAll**
+  - **CountSingleReplyAll**- Count of the Single Meetings ReplyAll
 
-  - **CountSingleReplyAllWithIM- Count of the Single Meetings ReplyAll with IM**
+  - **CountSingleReplyAllWithIM** - Count of the Single Meetings ReplyAll with IM
 
-  - **CountSingleReplyWithIM- Count of the Single Meetings Reply with IM**
+  - **CountSingleReplyWithIM** - Count of the Single Meetings Reply with IM
 
-  - **HResult- ErrorCode**
+  - **HResult** - ErrorCode
 
-  - **OlkViewName- Indicates Mail, Calendar, or Inspector View**
+  - **OlkViewName** - Indicates Mail, Calendar, or Inspector View
 
 #### Office.Outlook.Desktop.OutlookPrivsDlgSingleUser.LoadFail
 
@@ -5569,13 +6349,37 @@ The following fields are collected:
 
   - **CountCreatePIMAccount** - How many times user created a PIM Profile
 
+#### Office.Outlook.Mac.MacOLKAsserts
+
+Used to identify user impacting issues in Outlook that may manifest as crashes or degraded functionality. 
+
+The following fields are collected:
+
+- **Category** - type of assert
+
+- **CollectionTime** - time when assert is collected
+
+
+#### Office.Outlook.Mac.MacOLKErrors
+
+Used to identify user impacting issues in Outlook that may manifest as crashes or degraded functionality. 
+
+The following fields are collected:
+
+- **Category** - type of error
+
+- **CollectionTime** - time when error is collected
+
+- **ThreadId** - identifier for the thread
+
+
 #### Office.System.SystemHealthAsserts
 
 The errors this event identifies help us understand when the customer experience is degrading. Many of these ShipAsserts lead to crashes and this information makes it possible to fix many of those. Collects ShipAsserts from the product which helps to identify errors.
 
 The following fields are collected:
 
-Count – The count of each assert reported
+ - **Count** – The count of each assert reported
 
   - **EndTime** – Time at which the last assert reported occurred
 
