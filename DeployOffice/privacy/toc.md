@@ -1,7 +1,7 @@
 # Privacy for Office 365 ProPlus
 ## [Overview of privacy controls](overview-privacy-controls.md)
 ## [Manage privacy controls with policy settings](manage-privacy-controls.md)
-## [Use preferences to manage privacy controls for Mac](mac-privacy-preferences.md)
+## [Manage privacy controls with preferences (Mac)](mac-privacy-preferences.md)
 
 ## Diagnostic data
 ### [Required diagnostic data](required-diagnostic-data.md)

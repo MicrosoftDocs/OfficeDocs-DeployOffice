@@ -20,7 +20,9 @@ hideEdit: true
 If you have a work or school account, your organization’s admin may have provided you with the ability to use one or more cloud-backed services (also referred to as “optional connected experiences”) while using Office 365 ProPlus applications. These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
 
 > [!NOTE]
-> If you're an admin, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md) and [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md) to learn how to give or restrict your users’ ability to use optional connected experiences.
+> If you're an admin, see the following articles to learn how to give or restrict your users’ ability to use optional connected experiences:
+> - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+> - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 ### If you use these services, what terms of use do you need to agree to?
 
