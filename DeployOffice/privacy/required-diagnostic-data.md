@@ -421,7 +421,7 @@ This category contains the following fields:
 
   - **TelemetryPermissionLevel** - Value indicating what level of diagnostic data the user has opted into. Allows us to understand what level of diagnostic data to expect from a session.
 
-## Data fields that are common for all OneNote events
+## Data fields that are common for OneNote events
 
 The following data fields are common for all events for OneNote on Mac, iOS, and Android.
 
