@@ -74,7 +74,6 @@
 ### [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
 ## [Deploy preferences](mac/deploy-preferences-for-office-for-mac.md?toc=/deployoffice/toc.json)
 ### [Macro security](mac/set-preference-macro-security-office-for-mac.md?toc=/deployoffice/toc.json)
-### [Diagnostic data](mac/set-preference-diagnostic-data.md?toc=/deployoffice/toc.json)
 ### [Resume Assistant](mac/set-preference-resume-assistant-word.md?toc=/deployoffice/toc.json)
 ### [Outlook preferences](mac/preferences-outlook.md?toc=/deployoffice/toc.json)
 ### [Default decryption password (Excel)](mac/set-preference-default-password-excel.md?toc=/deployoffice/toc.json)

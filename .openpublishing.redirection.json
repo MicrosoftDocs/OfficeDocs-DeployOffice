@@ -354,6 +354,11 @@
         "source_path": "DeployOffice/rds-onedrive-business-vdi.md",
         "redirect_url": "https://docs.microsoft.com/onedrive/sync-vdi-support",
         "redirect_document_id": true 
-    }              
+    }, 
+    {
+        "source_path": "DeployOffice/mac/set-preference-diagnostic-data.md",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/privacy/mac-privacy-preferences",
+        "redirect_document_id": true 
+    }                    
    ] 
 }
