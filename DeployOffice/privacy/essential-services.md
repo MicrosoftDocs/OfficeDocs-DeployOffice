@@ -3749,7 +3749,8 @@ The following fields are collected:
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
-	- **SessionId** - The identifier for the session
+	
+- **SessionId** - The identifier for the session
 
 	
 ### controller_downloadwindow_closeapplicationdialog
@@ -3875,7 +3876,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 	
-###controller_downloadwindow_downloadfailed
+### controller_downloadwindow_downloadfailed
 
 This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly.
 
@@ -3916,7 +3917,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 	
-###controller_downloadwindow_downloadfailedok
+### controller_downloadwindow_downloadfailedok
 
 This event denotes that a failure occurred when downloading an update and the user was notified. We use this event for ensuring updates are offered and download correctly, and that in case of failure, a notification is served to the user.
 
@@ -3957,7 +3958,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-###controller_downloadwindow_downloadpathmissing
+### controller_downloadwindow_downloadpathmissing
 
 This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly. This event indicates a download URL is missing.
 
@@ -3998,7 +3999,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-###controller_downloadwindow_downloadtasknull
+### controller_downloadwindow_downloadtasknull
 
 This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly. This event indicates that Microsoft Autoupdate was asked to pause/resume a download but could not find corresponding download manager.
 
@@ -8265,7 +8266,7 @@ The following fields are collected:
 
 ### msupdate_monitor_progress_failure
 
-This event logs a list of Queued updates that failed to be applied. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs a list of queued updates that failed to be applied. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -8306,7 +8307,7 @@ The following fields are collected:
 	
 ### msupdate_monitor_progress_finished
 
-This event logs a list of Queued updates that completed install. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs a list of queued updates that completed install. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -8347,7 +8348,7 @@ The following fields are collected:
 
 ### msupdate_monitor_progress_queued
 
-This event logs a list of Queued updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs a list of queued updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
