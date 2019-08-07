@@ -64,7 +64,7 @@ For more information about Azure group management, see the following articles:
 - [Create a dynamic group and check status](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 - [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
-After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](https://go.microsoft.com/fwlink/p/?LinkID=######).
+After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](https://go.microsoft.com/fwlink/p/?LinkID=2100336).
 
 ## Configure Office 365 ProPlus to use device-based licensing
 
