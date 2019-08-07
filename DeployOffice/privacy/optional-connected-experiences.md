@@ -81,9 +81,13 @@ Suggest a Feature is an experience that allows you to submit your ideas regardin
 
 To determine whether your admin has given you the ability to use any optional connected experiences in your Office 365 ProPlus application on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, “Your organization’s admin manages your privacy settings and has decided to disable optional connected experiences.”
 
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
+
 ## Your privacy settings
 
 If your admin has given you the ability to use optional connected experiences in your Office 365 ProPlus application on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
+
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
 ## Diagnostic data
 
@@ -94,3 +98,4 @@ When you use any of the optional cloud-backed services described in this article
 
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Required service data for Office](required-service-data.md)
+- [Account Privacy Settings](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
