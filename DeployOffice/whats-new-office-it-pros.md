@@ -16,13 +16,30 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+
+## August 2019
+
+### Privacy controls for Office for Mac
+Starting with Version 16.28 of Office for Mac, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office for Mac](privacy/mac-privacy-preferences.md).
+
 ## July 2019
 
 ### Microsoft Teams and existing installations of Office 365 ProPlus
 Microsoft Teams will be added to ***existing*** installations of Office 365 ProPlus, starting with Version 1906 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
 
 ### Create and manage your deployment configurations in the cloud
-You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more details, see [Overview of the Office Customization Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-customization-tool-for-click-to-run).
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more details, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
+
+### Security baseline for Office 365 ProPlus
+Microsoft has announced the *draft* release of the recommended security configuration baseline settings for Microsoft Office 365 ProPlus, version 1907. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1907-July-2019-DRAFT/ba-p/771308).
+
+### Set a deadline for updates from Microsoft AutoUpdate (MAU)
+Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s device. For more information, see [Set a deadline for updates from Microsoft AutoUpdate](mac/mau-deadline.md).
+
+## June 2019
+
+### Comparison of application compatibility and readiness assessments tools
+Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (Current Branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Office 365 ProPlus](readiness-tools.md)
 
 ## April 2019
 
