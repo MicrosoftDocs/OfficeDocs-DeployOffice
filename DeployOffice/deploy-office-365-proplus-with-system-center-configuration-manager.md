@@ -106,7 +106,7 @@ After you create and deploy Office 365 applications using the Office 365 Install
 
 After you've finished testing Office with the pilot group, you can repeat the above steps to create and deploy an Office application to the broad group. When defining the application, include the same options you did with the pilot group, except choose **Semi-Annual Channel** for the update channel. 
 
-## Step 5: Review exit criteria 
+## Step 5 - Review exit criteria 
 
 To make sure you have deployed the correct Office package to your client devices, you can use the Office 365 Client Management dashboard. This dashboard provides charts for the following information: 
 
