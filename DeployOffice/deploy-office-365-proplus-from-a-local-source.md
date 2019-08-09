@@ -20,7 +20,7 @@ Follow the steps in this article to deploy Office 365 ProPlus to client computer
 
 ## Before you begin
 
-Make sure your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and processes to install Office.
+Make sure your users have local admin privileges on their client devices. If that is not the case, then you should use your company standard deployment tools and processes to install Office.
 
 If you haven't already, complete the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
 
