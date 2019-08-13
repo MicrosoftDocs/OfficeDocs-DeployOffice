@@ -510,7 +510,7 @@ Allowed values:
 
 ## Remove element
 
-Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. If you want to uninstall a full product and all the installed languages, do not include the language attribute. In that case, the ODT  automatically removes all installed languages for the product. 
+Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. To remove all the installed languages, do not include the language attribute. In that case, the ODT automatically discovers and removes all installed languages for the product. 
 
 For more information, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
