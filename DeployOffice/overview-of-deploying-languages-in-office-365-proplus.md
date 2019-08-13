@@ -144,11 +144,9 @@ For details on how to edit the configuration file in a text editor, see [Configu
 
 If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources — for example, language packs, language interface packs, or proofing tools — installed when you install Office 365 ProPlus. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
-## Uninstall Languages Packs or Proofing Tools
+## Remove languages packs or proofing tools
 
-If you want to uninstall a Language Pack or Proofing Tool, you can use the [**Remove**](https://docs.microsoft.com/en-us/deployoffice/configuration-options-for-the-office-2016-deployment-tool#remove-element) element for this as for any product. By specifying **LanguagePack** or **ProofingTools** as the product ID, it will be removed without changing anything else.
-
-The following example would uninstall the German language across all installed products:
+To remove a language pack or proofing tool, you can use the **Remove** element, just as you would for a product. For product ID, specify **LanguagePack** or **ProofingTools**. In the example, the German language pack is removed across all installed products:
 
 ### Example
 ```xml
