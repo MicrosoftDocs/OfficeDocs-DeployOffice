@@ -106,7 +106,7 @@ Example value:
 
 ### OfficeClientEdition attribute (part of Add element) 
 
-Required for download and initial installation. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. Optional when the ODT is run on devices with Office already deployed. If specified, OfficeClientEdition must match the already installed architecture (32-bit or 64-bit). If not speficied, the ODT will automatically match the already installed architecture. 
+Required for download and initial installation. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. Optional when the ODT is run on devices with Office already deployed. If specified, OfficeClientEdition must match the already installed architecture (32-bit or 64-bit). If not specified, the ODT will automatically match the already installed architecture. 
 
 Allowed values:
 
