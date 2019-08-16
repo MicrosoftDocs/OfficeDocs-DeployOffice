@@ -106,7 +106,7 @@ Example value:
 
 ### OfficeClientEdition attribute (part of Add element) 
 
-Required for download and initial installation. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. Optional when the ODT is run on devices with Office already deployed. If specified, OfficeClientEdition must match the already installed architecture (32-bit or 64-bit). If not speficied, the ODT will automatically match the already installed architecture. 
+Required for download and initial installation. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. Optional when the ODT is run on devices with Office already deployed. If specified, OfficeClientEdition must match the already installed architecture (32-bit or 64-bit). If not specified, the ODT will automatically match the already installed architecture. 
 
 Allowed values:
 
@@ -510,7 +510,7 @@ Allowed values:
 
 ## Remove element
 
-Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. 
+Defines which products and languages to remove from a previous installation of Office 365 ProPlus. To remove an installed language, you must provide both the product and the language, as in the example. To remove all the installed languages, do not include the language attribute. In that case, the ODT automatically discovers and removes all installed languages for the product. 
 
 For more information, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
@@ -523,8 +523,6 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
   </Product>
 </Remove>
 ```
-
-
 ### All attribute (part of Remove element)
 
 If set to **TRUE**, all Office 365 ProPlus products and languages will be removed.

@@ -159,9 +159,9 @@ This article does not cover all the issues related to managing updates for Offic
 
 <a name="BKMK_excludeorremove"> </a>
 
-## Exclude or remove Office 365 ProPlus products from client computers
+## Exclude or remove Office 365 ProPlus applications from client computers
 
-When installing Office 365 ProPlus, you can exclude specific products. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus products except Publisher:
+When installing Office 365 ProPlus, you can exclude specific applications. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Office 365 ProPlus applications except Publisher:
 
 ```xml
 <Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
@@ -172,7 +172,7 @@ When installing Office 365 ProPlus, you can exclude specific products. To do so,
 </Add>
 ```
 
-If you've already installed Office 365 ProPlus, you can also use the ExcludeApp element to remove a product that you've previously installed. For example, the configuration file above removes Publisher from the previous installation of Office.
+If you've already installed Office 365 ProPlus, you can also use the ExcludeApp element to remove an application that you've previously installed. For example, the configuration file above removes Publisher from the previous installation of Office.
 
 You can also remove an entire language version of Office 365 ProPlus. To do so, follow the steps for excluding products for installing Office with the ODT, but replace the configuration file with one that uses the **Remove** element. For example, this configuration file removes the Spanish language version of Office 365 ProPlus:
 
