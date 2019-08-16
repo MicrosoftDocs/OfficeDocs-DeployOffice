@@ -99,9 +99,12 @@ Example values:
 
 Optional. The default is the latest available version of Office. When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel will be used, which might not match the specified version.
 
-Example value:
+Version attribute can also be set to "MatchInstalled". When ODT is running on a device which has already an Click-to-Run product installed, it will match the version, even if a newer version is available. This is especially helpful in scenarios like adding a Language Pack or another product liek Visio and Project, and you want to ensure that no unintended update is performed.
+
+Example values:
 
 - Version="16.0.8201.2193"
+- Version="MatchInstalled"
 
 
 ### OfficeClientEdition attribute (part of Add element) 
