@@ -341,9 +341,9 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 </Add>  
 ```
 
-If a configuration.xml is applied to a system which has Office 365 ProPlus already installed, ExcludeApp will be handled like the following by the ODT:
-- If the list of languages in the configuration.xml is equal or a superset (more) of installed languages, the incoming ExcludeApp setting will replace the existing one.
-- In any other cases (no languages or just a subset listed), ODT will merge the incoming setting with the existing one.
+If a configuration file with ExcludeApp is used to install Office on a device that already has Office 365 ProPlus installed, the ExcludeApp setting is treated differently based on the list of languages:
+- If the list of languages in the configuration file includes all the installed langauges, then the ExcludeApp setting in the file replaces any existing ExcludeApp setting on the device. This is also true if the list of languages in the configuration file includes both all the installed languages and additional languages.
+- If the list of languages in the configuration file doesn't include all the installed languages, then the ExcludeApp setting in the configuration file will be combined with the ExcludeApp setting on the device. 
 
 
 ### ID attribute (part of ExcludeApp element)
