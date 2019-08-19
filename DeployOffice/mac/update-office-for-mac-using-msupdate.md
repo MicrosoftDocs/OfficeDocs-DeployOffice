@@ -67,7 +67,7 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |PowerPoint     |PPT32019|PPT315      |
 |Outlook        |OPIM2019|OPIM15      |
 |OneNote        |ONMC2019|ONMC15      |
-|MAU              |MSAU04|MSAU04|
+|MAU              |MSau04|MSau04|
 |OneDrive  |ONDR18
 |Teams  |TEAM01
 |Skype for Business |MSFB16
@@ -83,7 +83,7 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 
 > [!NOTE]
 > - If an update is pending for MAU itself, that update must be applied before any applications can be updated.
-> - Identifiers are not case-sensitive when run interactively from the command-line, but use UPPERCASE identifiers when running from a management tool such as Jamf Pro.
+> - Identifiers are not case-sensitive when run interactively from the command-line, but use the character casing from the table above when running from a management tool such as Jamf Pro.
 
 
 ## Related topics
