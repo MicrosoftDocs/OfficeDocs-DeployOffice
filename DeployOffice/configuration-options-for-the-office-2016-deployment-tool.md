@@ -99,9 +99,12 @@ Example values:
 
 Optional. The default is the latest available version of Office. When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel will be used, which might not match the specified version.
 
-Example value:
+If Office 365 ProPlus is already installed on a device, you can use Version="MatchInstalled" to install the same version of Office, even if a newer version is available. This setting can make it easier to add language packs or Visio and Project without updatinging Office to a newer version. 
+
+Example values:
 
 - Version="16.0.8201.2193"
+- Version="MatchInstalled"
 
 
 ### OfficeClientEdition attribute (part of Add element) 
