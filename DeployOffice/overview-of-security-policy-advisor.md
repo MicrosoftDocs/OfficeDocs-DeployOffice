@@ -33,7 +33,7 @@ The following are the requirements for using Security Policy Advisor:
 - Must be using the Office cloud policy service and meet all the [requirements for that service](overview-office-cloud-policy-service.md#requirements-for-using-the-office-cloud-policy-service). 
 - At least version 1904 of Office 365 ProPlus. 
 - To create the recommendations and insights, Security Policy Advisor relies on required service data from Office 365 ProPlus. For more information, see [Required service data for Office](privacy/required-service-data.md).
-- The [required URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) properly configured on your network.
+- The [required URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) properly configured on your network.
 
 ## Turn on Security Policy Advisor
 
