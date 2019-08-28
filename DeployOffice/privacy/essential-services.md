@@ -10499,8 +10499,6 @@ The following fields are collected:
 
   - **sysVolSizeMB -** The amount of space on the System volume in megabytes.
 
-<!-- end list -->
-
   - **WindowsErrorReportingMachineId** - Windows Error Reporting assigned machine identifier of the device Office is run on.
 
   - **WindowsSqmMachineId** - Windows assigned machine identifier of the device Office is run on.
@@ -11158,6 +11156,12 @@ The following fields are collected:
   - **ErrorMessage** - Parsing error message
 
   - **NodeName** - Node which failed to parse
+
+### Office.Telemetry.DynamicConfig.PopulatedRequestIgnored
+
+This event is generated when we fail to set up the telemetry configuration pipeline.
+
+This event collects no fields.
 
 ### Office.Telemetry.DynamicConfig.PopulateTreeCalledAgain
 
