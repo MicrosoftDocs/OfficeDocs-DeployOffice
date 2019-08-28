@@ -949,7 +949,7 @@ The following fields are collected:
 
 #### Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
-Event generated when a COM Add-in is loaded on an Enterprise Device. 
+Event generated when a COM Add-in is loaded on an enterprise device. 
 
 The following fields are collected:
 
