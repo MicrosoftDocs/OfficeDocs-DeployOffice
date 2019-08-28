@@ -6059,9 +6059,39 @@ The following fields are collected:
 
   - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process’s working set so far.
 
+#### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+
+Activity tracking whether the Office Insider slab can be shown to the user on the Account tab in the Office Backstage UI.
+
+The following fields are collected:
+
+  - **Data_CanShow** - Indicates whether the Office Insider Slab can be shown to the user on the Account tab in the Office Backstage UI.
+  
+  - **Data_Event** - Unused
+
+  - **Data_EventInfo** - Unused
+
+  - **Data_Reason** - Unused
+ 
+
+#### Office.UX.OfficeInsider.RegisterCurrentInsider
+
+Critical signal for tracking success or failure of registering users using Office Insider builds who wasn’t registered as Office Insiders before. Main scenario for this is current Office Insiders who joined Office Insider program before registration of Office Insiders was added.
+
+The following fields are collected:
+
+- **Data_RegisterInsider** - Status of Office Insider registration
+
+- **Data_RegisterInsiderHr** - Result code for Office Insider registration
+
+- **Data_RegistrationStateCurrent** - Current registration state
+
+- **Data_RegistrationStateDesired** - Requested registration state
+
+
 #### Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
-Critical signal tracking user interaction with Join Office Insider dialog. It is used for identifying any issues in performing user-initiated changes such us joining/leaving Office Insider program and changing Office Insider level.
+Critical signal tracking user interaction with Join Office Insider dialog. It is used for identifying any issues in performing user-initiated changes such as joining or leaving Office Insider program and changing Office Insider level.
 
 The following fields are collected:
 
@@ -6081,19 +6111,11 @@ The following fields are collected:
 
 - **Data_RegisterInsiderHr** - Result code for Office Insider registration
 
-#### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+- **Data_RegistrationStateCurrent** - Current registration state
 
-Activity tracking whether the Office Insider slab can be shown to the user on the Account tab in the Office Backstage UI.
+- **Data_RegistrationStateDesired** - Requested registration state
 
-The following fields are collected:
 
-  - **Data_CanShow** - Indicates whether the Office Insider Slab can be shown to the user on the Account tab in the Office Backstage UI.
-  
-  - **Data_Event** - Unused
-
-  - **Data_EventInfo** - Unused
-
-  - **Data_Reason** - Unused
 
 
 #### Office.Visio.Shared.VisioFileRender
