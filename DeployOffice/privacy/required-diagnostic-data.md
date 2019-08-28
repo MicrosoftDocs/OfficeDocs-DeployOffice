@@ -949,27 +949,19 @@ The following fields are collected:
 
 #### Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
-Event generated when a COM Add-in is loaded on an Enterprise Device. Desktop Analytics: \# of loads is used as denominator for calculation of health (\# crash / \# loads) for computation of health metrics for pilot and production rings in enterprise scenarios. This demands that the data is precise, not sampled since the number of devices is smaller (100-1K).
+Event generated when a COM Add-in is loaded on an Enterprise Device. 
 
 The following fields are collected:
 
+  - **Activity Result** - Success state of the connection
+
   - **Add-inconnectFlag** – current load behavior
-
-  - **Add-inDescription** – the add-in description
-
-  - **Add-inFileName** – the add-in file name, excluding file path
-
-  - **Add-inFriendlyName** – the add-in friendly name
 
   - **Add-inId** – the add-in Class Id
 
-  - **Add-inProgId** – the add-in Prog Id
-
-  - **Add-inProvider** – the add-in provider
-
   - **Add-inTimeDateStamp** – the add-in timestamp from the DLL metadata
 
-  - **Add-inVersion** – the add-in version
+  - **IsBootInProgress** – whether the Office application is in the process of booting
 
 #### Office.Visio.Visio.AddonLoad
 
@@ -3011,13 +3003,11 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-Collected whenever a print PDF or export PDF operation has completed and contains information about the layout type as well as the success of the operation. This information is critical to identify the success of print PDF and export PDF operations for our application.
+Collected whenever an export PDF operation has completed and contains information about the success of the operation. This information is critical to identify the success of export PDF operations for our application.
 
 The following fields are collected:
 
 - **Data_ExportAsPDFSucceed** - Boolean indicating if exporting as PDF was a success.
-
-- **Data_SavePrintLayoutType** - The print layout type at the time of starting the print or export operation.
 
 
 #### Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -5597,10 +5587,9 @@ The following fields are collected:
 
 #### Office.Extensibility.COMAddinUnhandledException
 
-Event generated when COM Add-in crashes
+Event generated when COM Add-in crashes on a consumer version of Office applications. 
 
-Desktop Analytics: This is used as numerator in the computation of enterprise-specific health status for add-ins which is used to infer during pilot if the add-in is "ready to upgrade" in the production ring.  
-Global insights: this is used to compute a global, non-enterprise-specific "readiness" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit
+Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
 
 The following fields are collected:
 
@@ -5612,15 +5601,15 @@ The following fields are collected:
 
 - **AddinId** – the add-in Class Id
 
-- **AddinProgId** – the add-in Prog Id
+- **AddinProgId** – deprecated
 
-- **AddinFriendlyName** – the add-in friendly name
+- **AddinFriendlyName** – deprecated
 
 - **AddinTimeDateStamp** – the add-in timestamp from the DLL metadata
 
-- **AddinVersion** – the add-in version
+- **AddinVersion** – deprecated
 
-- **AddinFileName** – add-in file name excluding file path
+- **AddinFileName** – deprecated
 
 - **VSTOAddIn** – whether add-in is VSTO
 
@@ -5630,34 +5619,33 @@ The following fields are collected:
 
 #### Office.Extensibility.COMAddinUnhandledExceptionEnterprise
 
-Event generated when COM Add-in crashes.  This is used as a numerator in the computation of enterprise-specific health status for add-ins which is used to infer during pilot if the add-in is "ready to upgrade" in the production ring.
+Event generated when COM Add-in crashes on an enterprise version of Office applications.
 
-The following fields are collected (Note that these fields are written as placeholders to prevent breaking existing scripts: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
+Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
 
+- **ScopeId** – the current thread scope
 
-- **AddinConnectFlag** - current load behavior
+- **Method** – Office method where exception occurred
 
-- **AddinFileName** - field empty - deprecated
+- **Interface** – Office interface where exception occurred
 
-- **AddinFriendlyName** - field empty - deprecated
+- **AddinId** – the add-in Class Id
 
-- **AddinId** - the add-in Class Id
+- **AddinProgId** – deprecated
 
-- **AddinProgId** - field empty - deprecated
+- **AddinFriendlyName** – deprecated
 
-- **AddinTimeDateStamp** - the add-in timestamp from the DLL metadata
+- **AddinTimeDateStamp** – the add-in timestamp from the DLL metadata
 
-- **AddinVersion** - field empty - deprecated
+- **AddinVersion** – deprecated
 
-- **Interface** - Office interface where exception occurred
+- **AddinFileName** – deprecated
 
-- **LoadAttempts** - number of attempts to load add-in
+- **VSTOAddIn** – whether add-in is VSTO
 
-- **Method** - Office method where exception occurred
+- **AddinConnectFlag** – current load behavior
 
-- **ScopeId** - the current thread scope
-
-- **VSTOAddIn** - whether add-in is VSTO
+- **LoadAttempts** – number of attempts to load add-in
 
 #### Office.Extensibility.Sandbox.ODPActivationHeartbeat
 
@@ -6046,6 +6034,10 @@ Collected when an Office application is booted. Includes whether the boot was in
 The following fields are collected:
 
   - **ActivationKind** - Whether the application was started by launching from the Start menu, by opening a file, or through OLE Automation.
+  
+  - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
+
+  - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
 
   - **FirstBoot** - Whether this was a first boot of the application.
 
@@ -6076,7 +6068,7 @@ The following fields are collected:
 
 #### Office.UX.OfficeInsider.RegisterCurrentInsider
 
-Critical signal for tracking success or failure of registering users using Office Insider builds who wasn’t registered as Office Insiders before. Main scenario for this is current Office Insiders who joined Office Insider program before registration of Office Insiders was added.
+Critical signal for tracking success or failure of registering users using Office Insider builds who weren't registered as Office Insiders before. Main scenario for this is current Office Insiders who joined Office Insider program before registration of Office Insiders was added.
 
 The following fields are collected:
 
