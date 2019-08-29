@@ -48,7 +48,7 @@ We recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/
 The steps in this article are based on the following best practices: 
 
 - **Build two Office [applications](https://docs.microsoft.com/en-us/sccm/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files). 
-- **Deploy to two [collections](https://docs.microsoft.com/en-us/sccm/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives the Semi-Annual Channel (Targeted). The other collection represents the broad group, which recieves the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
+- **Deploy to two [collections](https://docs.microsoft.com/en-us/sccm/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives the Semi-Annual Channel (Targeted). The other collection represents the broad group, which receives the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
 You can customize these options to match the requirements for your organization, including deploying to more than two collections, changing update channels, and deploying Visio and Project. For more detils, see [Customize your deployment](#customize-your-deployment).
 
@@ -71,7 +71,7 @@ Make sure to complete the following requirements as well:
 The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. For each deployment group, make sure you have a specific collection. Our standard best practices recommend two deployment groups:
 
 - A pilot group that receives the Semi-Annual Channel (Targeted)
-- A broad group that recieves the Semi-Annual Channel
+- A broad group that receives the Semi-Annual Channel
 
 In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections).  
 
