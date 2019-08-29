@@ -43,7 +43,8 @@ After you have verified that your Windows 10 devices and Office 365 ProPlus inst
 - Add the Windows 10 devices to a group that’s available in Azure AD and assign the appropriate licenses to that group.
 - Configure Office 365 ProPlus to use device-based licensing instead of user-based licensing.
 
-Be sure to create the Azure AD group and assign the licenses ***before*** you configure Office 365 ProPlus to use device-based licensing. Otherwise you will receive error messages in Office 365 ProPlus.
+> [!IMPORTANT]
+> Be sure to create the Azure AD group and assign the licenses ***before*** you configure Office 365 ProPlus to use device-based licensing. Otherwise you will receive error messages in Office 365 ProPlus.
 
 ### Add Windows 10 devices to a group in Azure AD and assign that group licenses
 
