@@ -19,7 +19,7 @@ Starting in August 2019, education customers can use *Office 365 ProPlus for Edu
 > [!IMPORTANT]
 > *Office 365 ProPlus for Education (device)* is an add-on license that is available only for education customers and is available only through Enrollment for Education Solutions (EES).
 >
-> For more information, contact your Microsoft account representative or the Microsoft partner that you work with.
+> For more information, [read this blog post](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/) and contact your Microsoft account representative or the Microsoft partner that you work with.
 
 ## Requirements for using device-based licensing for Office 365 ProPlus
 
@@ -43,7 +43,8 @@ After you have verified that your Windows 10 devices and Office 365 ProPlus inst
 - Add the Windows 10 devices to a group that’s available in Azure AD and assign the appropriate licenses to that group.
 - Configure Office 365 ProPlus to use device-based licensing instead of user-based licensing.
 
-Be sure to create the Azure AD group and assign the licenses ***before*** you configure Office 365 ProPlus to use device-based licensing. Otherwise you will receive error messages in Office 365 ProPlus.
+> [!IMPORTANT]
+> Be sure to create the Azure AD group and assign the licenses ***before*** you configure Office 365 ProPlus to use device-based licensing. Otherwise you will receive error messages in Office 365 ProPlus.
 
 ### Add Windows 10 devices to a group in Azure AD and assign that group licenses
 
@@ -64,7 +65,7 @@ For more information about Azure group management, see the following articles:
 - [Create a dynamic group and check status](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 - [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
-After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](https://go.microsoft.com/fwlink/p/?LinkID=2100336).
+After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](https://go.microsoft.com/fwlink/p/?LinkID=2100336). You can assign licenses to only one group, but you can nest groups within that one group.
 
 ## Configure Office 365 ProPlus to use device-based licensing
 
@@ -79,7 +80,13 @@ If you use the Office Deployment Tool to install or configure Office 365 ProPlus
 ```
 
 > [!TIP]
-> Always be sure you are using the most current version of the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) available on the Microsoft Download Center so that you have the latest features and bug fixes.
+> - Be sure you're always using the most current version of the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) available on the Microsoft Download Center so that you have the latest features and bug fixes.
+> - Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). There is a choice to configure device-based licensing under the **Licensing and activation** section of the OCT.
+
+> [!IMPORTANT]
+> There is currently a problem with using the DeviceBasedLicensing setting with the Office Deployment Tool. This problem is preventing device-based licensing from being properly configured. We are working to fix the problem and will update this article when the problem has been fixed. In the meantime, you can configure device-based licensing by using Group Policy as described below.  Or, from an elevated command prompt you can run the following command:
+>
+>   `reg add HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v O365ProPlusRetail.DeviceBasedLicensing /t REG_DWORD /d 1`
 
 For more information about using the Office Deployment Tool and the configuration options that it supports, see the following articles:
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
@@ -88,7 +95,7 @@ For more information about using the Office Deployment Tool and the configuratio
 If you use Group Policy to configure Office 365 ProPlus settings, you can enable the “Use a device-based license for Office 365 ProPlus” policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
 
 > [!NOTE]
-> This policy setting should be available by the end of August in the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Office 365 ProPlus on the Microsoft Download Center. We'll update this note when the policy setting is available.
+> To use this policy setting, download version 4909.1000 (or later) of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Office 365 ProPlus from the Microsoft Download Center. Version 4909.1000 was released on September 5, 2019.
 
 ## Troubleshoot device-based licensing for Office 365 ProPlus
 
