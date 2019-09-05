@@ -86,7 +86,7 @@ If you use the Office Deployment Tool to install or configure Office 365 ProPlus
 > [!IMPORTANT]
 > There is currently a problem with using the DeviceBasedLicensing setting with the Office Deployment Tool. This problem is preventing device-based licensing from being properly configured. We are working to fix the problem and will update this article when the problem has been fixed. In the meantime, you can configure device-based licensing by using Group Policy as described below.  Or, from an elevated command prompt you can run the following command:
 >
->   `reg add HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v O365ProPlusRetail.DeviceBasedLicensing /t REG_DWORD /d 1`
+>   `reg add HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v O365ProPlusRetail.DeviceBasedLicensing /t REG_SZ /d 1`
 
 For more information about using the Office Deployment Tool and the configuration options that it supports, see the following articles:
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
