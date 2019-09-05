@@ -90,7 +90,7 @@ For more information about using the Office Deployment Tool and the configuratio
 If you use Group Policy to configure Office 365 ProPlus settings, you can enable the “Use a device-based license for Office 365 ProPlus” policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
 
 > [!NOTE]
-> To use this policy setting, download version 4903.1000 (or later) of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Office 365 ProPlus from the Microsoft Download Center. Version 4903.1000 was released on August 28, 2019.
+> To use this policy setting, download version 4909.1000 (or later) of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Office 365 ProPlus from the Microsoft Download Center. Version 4909.1000 was released on September 5, 2019.
 
 ## Troubleshoot device-based licensing for Office 365 ProPlus
 
