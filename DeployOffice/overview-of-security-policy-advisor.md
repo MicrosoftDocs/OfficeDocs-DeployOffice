@@ -58,9 +58,7 @@ If you want to stop applying a policy, choose **Rollback**.
 
 ## Allow users to override a policy
 
-When users attempt an action blocked by a security policy, such as opening an Office document that contains macros, a Message Bar appears at the top of the application letting users know that their admin has configured a security policy that prevents that action.
-
-> .[!Note] The Message Bar needs to be enabled in Office clients for users to see notifications and take action.
+When users attempt an action blocked by a security policy, such as opening an Office document that contains macros, a Message Bar appears at the top of the application letting users know that their admin has configured a security policy that prevents that action. (Note that the Message Bar needs to be enabled in Office clients for users to see notifications and take action.)
 
 When you choose to apply a security policy recommendation, you can choose whether users can override the policy:
 
