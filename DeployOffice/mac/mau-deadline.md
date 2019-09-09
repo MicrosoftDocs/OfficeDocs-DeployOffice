@@ -42,6 +42,9 @@ You can also configure how many days in advance of the deadline that Automatic D
 
 The following are the preference settings for configuring a deadline. These keys are CFPreferences-compatible, which means that they can be set by using enterprise management software for Mac, such as Jamf Pro.
 
+> [!NOTE]
+> A deadline can be set within the user level preference profile or the management configuration profile level. If a deadline is set at both levels, the management preference profile takes precedence.
+
 ### Configure a deadline for a certain number of days after the update is detected
 
 To configure a deadline that is a certain number of days after the update is detected, use the following preference setting.
@@ -183,10 +186,22 @@ If users don't want to apply the updates at that time, they can postpone the upd
 
 When the deadline is an hour away, users get a persistent notification along with a timer that counts down the minutes until the deadline. If the deadline arrives and users haven't saved their work and closed their applications, MAU will forcibly close the applications, without saving the data, and starts to apply the updates.
 
+## Turn off a deadline
+
+If you delete the management config profile, this doesn't delete the value in the local config profile. But, if you set empty values in your management config profile, as shown below, MAU ignores the values in the user configure profile, which effectively turns off the deadline.
+
+```
+<key>UpdateDeadline.DaysBeforeForcedQuit</key>
+<integer>0</integer>
+<key>UpdateDeadline.StartAutomaticUpdates</key>
+<integer>0</integer>
+```
+
+If you configured a [deadline for a specific date and time](#configure-a-deadline-for-a-specific-date-and-time), once that date and time has passed, MAU deletes those values from the relevant config profiles.
+
 ## Additional information about MAU deadlines
 
 - Deadlines can be configured regardless of where MAU is looking for the updates. For example, deadlines work if MAU is getting updates directly from the Office Content Delivery Network (CDN) on the internet of if MAU is getting updates from a MAU caching server within your local network.
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
 - If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a deadline of 7 days for all applications, and then specify that the deadline for Excel is 4 days.
 - Instead of configuring a specific date and time for a deadline for a specific version, you can configure that deadline to be a certain number of days after that specific version is detected by MAU.
-- A deadline can be set within the user level preference profile or the management configuration profile level. If a deadline is set at both levels, the management preference profile takes precedence.
