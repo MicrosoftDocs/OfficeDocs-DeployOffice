@@ -82,7 +82,7 @@ If you're deploying Office 365 ProPlus by using Microsoft Intune, there is a che
 
 If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being included as part of the installation, unless you use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams).
 
-If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall a program**. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user. You also need to uninstall any instances of **Teams Machine-Wide Installer**.
+If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall a program**. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user. You also need to uninstall all instances of **Teams Machine-Wide Installer**.
 
 The guidance above in this section also applies to Office 365 Business.
 
