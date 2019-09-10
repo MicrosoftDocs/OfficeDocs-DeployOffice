@@ -18,6 +18,9 @@ In the past, Microsoft Teams was a separate installation from Office 365 ProPlus
 
 Teams is also being added to ***existing*** installations of Office 365 ProPlus on devices running Windows. For more information about when that occurs, see [What about existing installations of Office 365 ProPlus?](#what-about-existing-installations-of-office-365-proplus).
 
+> [!NOTE]
+> To complete the installation of Teams on new or existing installations of Office 365 ProPlus, either restart the device or have the user log off and log back on.
+
 If Skype for Business is already installed on the device, Skype for Business won’t be removed and will continue to function as before. Skype for Business will continue to be installed with new installations of Office 365 ProPlus, unless you configure your installation to exclude it.
 
 You don't have to wait if you're ready now to deploy Teams to the users in your organization. You can deploy Teams for your users by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment) or you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads).
@@ -79,7 +82,7 @@ If you're deploying Office 365 ProPlus by using Microsoft Intune, there is a che
 
 If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being included as part of the installation, unless you use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams).
 
-If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall** a program. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user.
+If you want to remove Teams after it’s been installed, you can go to **Control Panel** > **Uninstall** a program. Select **Microsoft Teams** and then choose **Uninstall**. If you’re logged in with local administrator permissions on the computer, Teams will be uninstalled for all users. If you’re only logged in with user permissions, Teams is only uninstalled for that user. You also need to uninstall any instances of **Teams Machine-Wide Installer**.
 
 The guidance above in this section also applies to Office 365 Business.
 
@@ -87,15 +90,18 @@ The guidance above in this section also applies to Office 365 Business.
 
 Teams is also being added to ***existing*** installations of Office 365 ProPlus (and Office 365 Business) on devices running Windows as part of the normal update process. There is no change to existing installations of Mac.
 
-Whether Teams gets added to an existing installation of Office 365 ProPlus is determined by what version is installed, what version you're updating to, and some other factors. Version 1906 that was released in Monthly Channel in July is the first version that started including Teams as part of the update process. But not all devices updating to Version 1906 or later have received Teams as part of the update process because the rollout has been a gradual process over the last 2 months. So if you've updated a device to the latest version of Office 365 ProPlus, but Teams hasn't been installed, that is probably expected and not necessarily an error. It's likely a future update will install Teams. If you want Teams on that device now, you can install it manually from https://teams.microsoft.com/downloads.
+Whether Teams gets added to an existing installation of Office 365 ProPlus is determined by what version is installed, what version you're updating to, and some other factors. Version 1906 that was released in Monthly Channel in July is the first version that started including Teams as part of the update process. But not all devices updating to Version 1906 or later have received Teams as part of the update process because the rollout has been a gradual process over several months. So if you've updated a device to the latest version of Office 365 ProPlus, but Teams hasn't been installed, that is probably expected and not necessarily an error. It's likely a future update will install Teams. If you want Teams on that device now, you can install it manually from https://teams.microsoft.com/downloads.
+
+> [!IMPORTANT]
+> If you're updating your existing installation of Office 365 ProPlus to Version 1908 (Build 11929.20300) or later, Teams will be added. To complete the installation of Teams after the update, either restart the device or have the user log off and log back on.
 
 The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
 |Monthly Channel |Version 1906 | July 9, 2019  |
-|Semi-Annual Channel (Targeted)| *Version 1908*  | *September 10, 2019*  |
-|Semi-Annual Channel| *To be determined*  | *January 2020* |
+|Semi-Annual Channel (Targeted)| Version 1908  | September 10, 2019  |
+|Semi-Annual Channel| *Version 1908*  | *January 14, 2020* |
 
 If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a newer version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
@@ -183,7 +189,6 @@ For Office 365 plans that don't include the Teams service, a free trial version 
 
 - There is no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
 - Teams is installed with Office 365 ProPlus in the same way that Teams is installed if you use the [MSI-based installer for Teams](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
-- To complete the installation of Teams, either restart the device or have the user log off and log back on.
 - The architecture (sometimes referred to as the *bitness*) of Teams and Office 365 ProPlus installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Office 365 ProPlus. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
 - You can also use PowerShell to remove Teams from a device running Windows, as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
