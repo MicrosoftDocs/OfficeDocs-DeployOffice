@@ -43,7 +43,7 @@ You can also configure how many days in advance of the deadline that Automatic D
 The following are the preference settings for configuring a deadline. These keys are CFPreferences-compatible, which means that they can be set by using enterprise management software for Mac, such as Jamf Pro.
 
 > [!NOTE]
-> A deadline can be set within the user level preference profile or the management configuration profile level. If a deadline is set at both levels, the management preference profile takes precedence.
+> A deadline can be set within the user configuration profile or the management configuration profile. Settings in the management configuration profile take precedence, because those settings are also written to the user configuration profile.
 
 ### Configure a deadline for a certain number of days after the update is detected
 
@@ -188,7 +188,7 @@ When the deadline is an hour away, users get a persistent notification along wit
 
 ## Turn off a deadline
 
-If you delete the management config profile, this doesn't delete the value in the local config profile. But, if you set empty values in your management config profile, as shown below, MAU ignores the values in the user configure profile, which effectively turns off the deadline.
+If you have set a deadline in the management configuration profile, you should turn off the deadline by setting empty values in your management configuration profile, as shown in the following example.
 
 ```
 <key>UpdateDeadline.DaysBeforeForcedQuit</key>
@@ -196,6 +196,8 @@ If you delete the management config profile, this doesn't delete the value in th
 <key>UpdateDeadline.StartAutomaticUpdates</key>
 <integer>0</integer>
 ```
+
+If you just delete the management configuration profile, the deadline isn't actually turned off. That's because the deadline settings still exist in the user configuration profile, because the settings were originally written to the user configuration profile from the management configuration profile.
 
 If you configured a [deadline for a specific date and time](#configure-a-deadline-for-a-specific-date-and-time), once that date and time has passed, MAU deletes those values from the relevant config profiles.
 
@@ -205,3 +207,4 @@ If you configured a [deadline for a specific date and time](#configure-a-deadlin
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
 - If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a deadline of 7 days for all applications, and then specify that the deadline for Excel is 4 days.
 - Instead of configuring a specific date and time for a deadline for a specific version, you can configure that deadline to be a certain number of days after that specific version is detected by MAU.
+- If no values are set for UpdateDeadline.DaysBeforeForcedQuit or UpdateDeadline.StartAutomaticUpdates in the user configuration profile or management configuration profile, macOS automatically generates and inserts empty values for those keys in the user configuration profile. This does not set any deadlines.
