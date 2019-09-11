@@ -62,27 +62,4 @@
 ## [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
-# Office for Mac 
-## [Deployment guide](mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/toc.json)
-## [What's new for admins](mac/what-s-new-for-admins-in-office-for-mac.md?toc=/deployoffice/toc.json)
-## [Deployment options](mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/toc.json)
-### [Deploy from the Mac App Store](mac/deploy-mac-app-store.md?toc=/deployoffice/toc.json)
-## [Deploy updates](mac/deploy-updates-for-office-for-mac.md?toc=/deployoffice/toc.json)
-### [Use msupdate](mac/update-office-for-mac-using-msupdate.md?toc=/deployoffice/toc.json)
-### [Set a deadline](mac/mau-deadline.md?toc=/deployoffice/toc.json)
-### [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
-### [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
-## [Deploy preferences](mac/deploy-preferences-for-office-for-mac.md?toc=/deployoffice/toc.json)
-### [Macro security](mac/set-preference-macro-security-office-for-mac.md?toc=/deployoffice/toc.json)
-### [Resume Assistant](mac/set-preference-resume-assistant-word.md?toc=/deployoffice/toc.json)
-### [Outlook preferences](mac/preferences-outlook.md?toc=/deployoffice/toc.json)
-### [Default decryption password (Excel)](mac/set-preference-default-password-excel.md?toc=/deployoffice/toc.json)
-## Activation
-### [Overview](mac/overview-of-activation-for-office-for-mac.md?toc=/deployoffice/toc.json)
-### [Volume License (VL) Serializer](mac/volume-license-serializer.md?toc=/deployoffice/toc.json)
-## [Network requests](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
-## [64-bit upgrade](mac/office-2016-for-mac-upgrade-to-64-bit.md?toc=/deployoffice/toc.json)
-
- 
-
-
+# [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
