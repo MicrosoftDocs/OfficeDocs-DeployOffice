@@ -32,7 +32,8 @@ As part of these changes, there are new and updated user interface (UI) elements
 > - These changes also apply to the following:
 >   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 >   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
-> - The privacy controls released in Version 1904 are expected to be available in Semi-Annual Channel (Targeted) in September 2019 and in Semi-Annual Channel in January 2020.
+> - These privacy controls are included in Version 1908 of Semi-Annual Channel (Targeted), which was released on September 10, 2019. They are expected to be available in Semi-Annual Channel in January 2020.
+> - These privacy controls are scheduled to be available in the second half of October 2019 for the iOS versions of Excel, OneNote, PowerPoint, Visio, and Word. We'll provide more information in early October.
 > - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
 
 ## Diagnostic data sent from Office 365 ProPlus to Microsoft
