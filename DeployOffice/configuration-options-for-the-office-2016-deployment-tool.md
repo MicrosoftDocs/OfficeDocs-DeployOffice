@@ -118,7 +118,9 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. **For initial installations**, the default is **Broad** for Office 365 ProPlus and applies to Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client if deployed along with Office 365 ProPlus. The default is **Monthly** for Visio Online Plan 2 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. If there is a **prior installation** on the device, ODT will match the assigned channel in case no channel is specified in the configuration file.
+Optional. Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Office 365 ProPlus. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation. 
+
+If Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client are installed along with Office 365 ProPlus, the default setting is **Broad**. If Visio Online Plan 2 and Project Online Desktop Client are deployed without Office 365 ProPlus, the default setting is **Monthly**. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
