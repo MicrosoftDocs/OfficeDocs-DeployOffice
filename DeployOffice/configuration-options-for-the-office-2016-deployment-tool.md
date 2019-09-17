@@ -109,7 +109,7 @@ Example values:
 
 ### OfficeClientEdition attribute (part of Add element) 
 
-Required for download and initial installation. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. Optional when the ODT is run on devices with Office already deployed. If specified, OfficeClientEdition must match the already installed architecture (32-bit or 64-bit). If not specified, the ODT will automatically match the already installed architecture. 
+Optional. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. If Office is not installed on the device and OfficeClientEdition is not specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures are not supported. 
 
 Allowed values:
 
@@ -118,7 +118,9 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. The default is **Broad** for Office 365 ProPlus and applies to Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client if deployed along with Office 365 ProPlus.  The default is **Monthly** for Visio Online Plan 2 and Project Online Desktop Client if deployed standalone without Office 365 ProPlus. 
+Optional. Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Office 365 ProPlus. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation. 
+
+If Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client are installed along with Office 365 ProPlus, the default setting is **Broad**. If Visio Online Plan 2 and Project Online Desktop Client are deployed without Office 365 ProPlus, the default setting is **Monthly**. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
@@ -328,7 +330,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Office 365 ProPlus products should not be installed. Note that OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).  
+Defines which Office 365 ProPlus products should not be installed. Note that OneDrive is automatically installed when you install Office 365 ProPlus, Word, Excel, PowerPoint, Publisher, Visio, and Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).
 
 ### Example
 
@@ -343,6 +345,11 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
   </Product>
 </Add>  
 ```
+
+If a configuration file with ExcludeApp is used to install Office on a device that already has Office 365 ProPlus installed, the ExcludeApp setting is treated differently based on the list of languages:
+- If the list of languages in the configuration file includes all the installed langauges, then the ExcludeApp setting in the file replaces any existing ExcludeApp setting on the device. This is also true if the list of languages in the configuration file includes both all the installed languages and additional languages.
+- If the list of languages in the configuration file doesn't include all the installed languages, then the ExcludeApp setting in the configuration file will be combined with the ExcludeApp setting on the device. 
+
 
 ### ID attribute (part of ExcludeApp element)
 
