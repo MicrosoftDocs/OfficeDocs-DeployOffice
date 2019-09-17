@@ -109,7 +109,7 @@ Example values:
 
 ### OfficeClientEdition attribute (part of Add element) 
 
-Optional. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. In case there is no prior install on the device, ODT will default to the 64-bit edition, except when executed on a device running a 32-bit edition of Windows or with less than 4 GB RAM. If a prior install is present and OfficeClientEdition not set in configuration file, ODT will match its architecture. If a prior install is present and OfficeClientEdition is specified,it must match the already installed architecture, otherwise the install will fail as mixed architectures are not supported. 
+Optional. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. If Office is not installed on the device and OfficeClientEdition is not specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures are not supported. 
 
 Allowed values:
 
