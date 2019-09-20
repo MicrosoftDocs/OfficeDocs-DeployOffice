@@ -100,9 +100,9 @@ Then, use the Office Deployment Tool and the configuration file to install, for 
 <a name="BKMK_GP"> </a>
 ### Method 2: Use Group Policy to enable Office 365 clients to receive updates from Configuration Manager
 
-You can enable Configuration Manager to manage Office 365 client updates on specific computers by using Group Policy. This does the same thing as setting the OfficeMgmtCOM attribute to True in the configuration file used by the Office Deployment Tool. But, with Group Policy, you can apply this setting to multiple computers, an organizational unit (OU), or a domain.
+You can also use Group Policy to enable Configuration Manager to manage Office 365 client updates on specific computers. Using Group Policy does the same thing as setting the OfficeMgmtCOM attribute to True in the configuration file for the Office Deployment Tool. With Group Policy, however, you can apply the setting to multiple computers, an organizational unit (OU), or a domain.
 
-To use Group Policy to enable this capability, you do the following:
+To use Group Policy to enable this capability, do the following:
 
 - Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 
