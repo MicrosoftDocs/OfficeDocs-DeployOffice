@@ -16,11 +16,11 @@ description: "The Office cloud policy service is a cloud-based service that enab
 
 # Overview of the Office cloud policy service for Office 365 ProPlus
 
-The Office cloud policy service is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
+The Office cloud policy service is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus or Office for the web. You can also enforce some policy settings for Office for the web, both for users who are signed in and users who access documents anonymously.
 
 The Office cloud policy service is part of a portal for managing Office 365 ProPlus and includes many of the same user-based policy settings that are available when using Group Policy on Windows Server.
 
-Security Policy Advisor, which can be used with Office cloud policy service, is now available for public preview. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
+Security Policy Advisor, which can be used with Office cloud policy service, is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
 
 
 ## Requirements for using the Office cloud policy service
@@ -40,13 +40,14 @@ The following are the requirements for using the Office cloud policy service wit
 The following are the basic steps for creating a policy configuration.
 
 1. Sign into the [portal](https://aka.ms/o365clientmgmt), review the terms, and then choose **Accept**.
-2. On the **Office Customization** page, choose **Got to Office policy management**.
+2. On the **Office Customization** page, choose **Go to Office policy management**.
 3. On the **Policy configurations** page, choose **Create**.
 4. On the **Create policy configuration** page, do the following:
    - Enter a name.
    - Provide a description (optional).
+   - In assignments, choose whether this policy applies to all users of Office 365 ProPlus, or just to users who anonymously access documents using Office for the web.
    - Select the AAD-based security group that is assigned to the policy configuration. Each policy configuration can only be assigned to one group, and each group can only be assigned one policy configuration.
-   - Configure the policy settings to be included in the policy configuration. You can search on the policy setting name to find the policy setting that you want to configure. You can also filter on the application and whether the policy has been configured.
+   - Configure the policy settings to be included in the policy configuration. You can search on the policy setting name to find the policy setting that you want to configure. You can also filter on the application and whether the policy has been configured. The platform column indicates whether the policy is applied to Office 365 ProPlus for Windows devices, Office for the web, or all.
 5. After you've made your selections, choose **Create**.
 
 To change a policy configuration, select the policy configuration on the **Policy configurations** page, and then choose **Edit**. Make the appropriate changes and then choose **Save**. You can find the configured policies by filtering on status.
