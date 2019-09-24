@@ -121,6 +121,18 @@ We recommend that you also set the value of the Enabled attribute to True in the
 
 Then, use the Office Deployment Tool and the configuration file to install Office 365 ProPlus. If you've already installed Office on the devices, you can run the Office Deployment Tool with the configuration file on those computers to update the configuration. 
 
+<a name="BKMK_GP"> </a>
+### Method 2: Use Group Policy to enable Office 365 clients to receive updates from Configuration Manager
+
+You can also use Group Policy to enable Configuration Manager to manage Office 365 client updates on specific computers. Using Group Policy does the same thing as setting the OfficeMgmtCOM attribute to True in the configuration file for the Office Deployment Tool. With Group Policy, however, you can apply the setting to multiple computers, an organizational unit (OU), or a domain.
+
+To use Group Policy to enable this capability, do the following:
+
+- Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
+
+- Enable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+
+
 <a name="BKMK_Package"> </a>
 ## Contents of the Office 365 client update package for WSUS
 
