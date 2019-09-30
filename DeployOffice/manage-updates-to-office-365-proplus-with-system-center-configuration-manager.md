@@ -117,9 +117,7 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
  </Configuration>
 ```
 
-We strongly recommend that you also set the value of the Enabled attribute to **True** in the Updates element (default configuration).  When OfficeMgmtCOM and Updates element are both set to **True**, updates will only be delivered by SCCM. If you set the value of the Enabled attribute to **False**, Office 365 clients can still receive updates from Configuration Manager, but any channel assignments via group policy will be ignored.  The Office Automatic Updates 2.0 scheduled task registered during Office 365 ProPlus installation which performs product configuration tasks such as channel management map to Updates element above which is why default configuration is recommended.
-
-There also may be scenarios where Office COM should be removed.  For example, if an IT Pro wants to switch from receiving updates from SCCM to CDN, actions above must be reversed.  The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup.  Changing domain policy or SCCM client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration.  Toggling Office 365 Client Management via GPO or SCCM Clients settings from **Enabled** to **Not Configured** is not sufficent. 
+We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are delivered only by SCCM. If you set the value of the Enabled attribute to false, Office 365 clients can still receive updates from Configuration Manager, but any channel assignments via group policy will be ignored. The Updates element maps to the Office Automatic Updates 2.0 scheduled task, which is registered during Office 365 ProPlus installation and which performs product configuration tasks such as channel management.
 
 <a name="BKMK_Package"> </a>
 ## Contents of the Office 365 client update package for WSUS
