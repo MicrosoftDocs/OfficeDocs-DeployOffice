@@ -119,31 +119,31 @@ This category contains the following fields:
 
   - **DiagnosticConsentSourceLocation** – Indicates how the user had provided the consent for diagnostic data
 
-  - **DiagnosticConsentConsentTime** – Indicates when the user provided the consent for diagnostic data
+  - **DiagnosticConsentConsentTime** – Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **ServiceConnectionState** – Indicates whether the user has chosen to use or not use all connected experiences
 
   - **ServiceConnectionStateSourceLocation** – Indicates how the user provided the choice whether to use all connected experiences
 
-  - **ServiceConnectionStateConsentTime** – Indicates when the user chose whether to use all connected experiences
+  - **ServiceConnectionStateConsentTime** – Indicates when the user chose whether to use all connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **ControllerConnectedServicesState** – Indicates whether the user has access to optional connected experiences
 
   - **ControllerConnectedServicesStateSourceLocation** – Indicates how the user’s choice for optional connected experiences was made
 
-  - **ControllerConnectedServicesStateConsentTime** – Indicates when the user chose the status of optional connected experiences
+  - **ControllerConnectedServicesStateConsentTime** – Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **UserContentDependentState** – Indicates whether the user has chosen to enable or disable connected experiences that analyze content
 
   - **UserContentDependentStateSourceLocation** – Indicates how the user’s choice to enable or disable was made for connected experiences that analyze content
 
-  - **UserContentDependentStateConsentTime** – Indicates when the user chose to enable or disable connected experiences that analyze content was made
+  - **UserContentDependentStateConsentTime** – Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **DownloadContentState** – Indicates whether the user has chosen to enable or disable connected experiences that download online content
 
   - **DownloadContentStateSourceLocation** – Indicates how the user made the choice to enable or disable connected experiences that that download online content
 
-  - **DownloadContentStateConsentTime** – Indicates when the user made the choice to enable or disable connected experiences that download online content.
+  - **DownloadContentStateConsentTime** – Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
 #### Device 
 
