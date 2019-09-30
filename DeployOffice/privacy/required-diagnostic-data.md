@@ -2086,13 +2086,6 @@ The following fields are collected:
 
   - **Result** - result of attempt to update password. For example: "Success" or "Fail\_AllowLessSecureAppsDisabled"
 
-#### Office.Outlook.Desktop.Providers.LoadProviderLibrary
-
-This event tracks the success or failure of MAPI trying to load a provider DLL (e.g. contab32.dll, emsmdb32.dll, a DLL used by an add-in). The MAPI operation responsible for loading provider DLLs is fundamental for Outlook’s Required operation as well as extensibility (via Add-ins or custom Store/Transport/AddressBook providers). We actively monitor the success or failure result of this operation to ensure that this core MAPI functionality continues to work as expected.
-
-The following fields are collected:
-
-  - **Standard HVA Activity** with no custom payload
 
 #### Office.Outlook.Desktop.Stores.CreateNewStore
 
