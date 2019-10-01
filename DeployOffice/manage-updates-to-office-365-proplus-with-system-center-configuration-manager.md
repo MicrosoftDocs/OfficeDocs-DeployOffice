@@ -87,7 +87,6 @@ To enable Configuration Manager to manage Office 365 client updates on specific 
 For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
-
 ### Method 2: Use Group Policy to enable updates
 
 You can enable Configuration Manager to manage Office 365 client updates on specific computers by using Group Policy. This does the same thing as setting the OfficeMgmtCOM attribute to True in the configuration file for the Office Deployment Tool. With Group Policy, however, you can apply this setting to multiple computers, an organizational unit (OU), or a domain.
@@ -99,7 +98,6 @@ To use Group Policy, do the following:
 - Enable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 <a name="BKMK_ODT"> </a>
-
 ### Method 3: Use the Office Deployment Tool to enable updates
 
 You can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office 365 clients to receive updates from Configuration Manager.
@@ -129,5 +127,3 @@ The package contains a file named noop.exe. But, that file doesn't contain any c
 For each update release there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of the Monthly Channel and a package for the 64-bit edition of the Monthly Channel. In June, there will be two new packages for Monthly Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
 
 There aren't separate packages for the different Office 365 clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about the Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business clients.
-
-
