@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Office cloud policy service for Office 365 ProPlus"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: jwhit
+author: jwhit-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
