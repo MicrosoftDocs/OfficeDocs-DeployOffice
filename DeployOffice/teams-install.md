@@ -141,7 +141,7 @@ If you enable this policy setting, Teams won't be installed in the following sce
 - Users installing Office 365 ProPlus for themselves from the Office 365 portal
 - An Online Repair of an existing installation of Office 365 ProPlus
 
-If you have Office 365 Business or can't use Group Policy for some other reason, you can add the preventteamsinstall value to the HKEY_LOCAL__MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\common\officeupdate key in the registry. The type for preventteamsinstall is REG_DWORD and the value should be set to 1 if you don't want Teams installed.
+If you have Office 365 Business or can't use Group Policy for some other reason, you can add the preventteamsinstall value to the HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\common\officeupdate key in the registry. The type for preventteamsinstall is REG_DWORD and the value should be set to 1 if you don't want Teams installed.
 
 ## Use Group Policy to prevent Microsoft Teams from starting automatically after installation
 
