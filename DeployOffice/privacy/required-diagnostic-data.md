@@ -2215,7 +2215,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
 
-    - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
+  - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
