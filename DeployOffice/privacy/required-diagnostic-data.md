@@ -1309,6 +1309,8 @@ The following fields are collected:
 
   - **Data.Doc.AssistedReadingReasons -** Set if the document has electronic data protection in place
 
+  - **Data.Doc.AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data.Doc.ChunkingType -** Units used for incremental document open
 
   - **Data.Doc.EdpState -** Electronic Data Protection setting for the document
@@ -1560,6 +1562,8 @@ The following fields are collected:
   - **Data.Doc.AccessMode -** Document is read only
 
   - **Data.Doc.AssistedReadingReasons -** Set if the document has electronic data protection in place
+
+  - **Data.Doc.AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data.Doc.ChunkingType -** Units used for incremental document open
 
@@ -2039,8 +2043,7 @@ The following fields are collected
 
 #### Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Then critical signal used to ensure OneNote users can successfully launch the app.
-The telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app in our performance window, this would trigger a high severity incident.
+The critical signal used to ensure OneNote users can successfully launch the app. The telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app in our performance window, this would trigger a high severity incident.
 
 The following fields are collected: 	None
 
@@ -2185,6 +2188,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
@@ -2319,6 +2324,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
@@ -2440,6 +2447,8 @@ The following fields are collected:
   - **Data\_Doc\_AccessMode:long -** How was this document opened (Read only | read write)
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
+
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
@@ -2583,6 +2592,8 @@ The following fields are collected:
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_DstDoc_AsyncOpenKind:long –** Indicates whether a cached version of the new cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_DstDoc_ChunkingType:long** - How is document stored in SharePoint
 
 - **Data_DstDoc_EdpState:long** - Enterprise Data Protection state of document
@@ -2666,6 +2677,8 @@ The following fields are collected:
 - **Data_SrcDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_SrcDoc_AsyncOpenKind:long –** Indicates whether a cached version of the original cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_SrcDoc_ChunkingType:long** - How is document stored in SharePoint 
 
@@ -2760,6 +2773,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType:long** - How is document stored in SharePoint
 
 - **Data_Doc_EdpState:long** - Enterprise Data Protection state of document
@@ -2835,6 +2850,8 @@ The following fields are collected:
 - **Data_DstDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_DstDoc_AsyncOpenKind:long –** Indicates whether a cached version of the new cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_DstDoc_ChunkingType:long** - How is document stored in SharePoint
 
@@ -2917,6 +2934,8 @@ The following fields are collected:
 - **Data_SrcDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_SrcDoc_AsyncOpenKind:long –** Indicates whether a cached version of the original cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_SrcDoc_ChunkingType:long** - How is document stored in SharePoint
 
@@ -3479,7 +3498,9 @@ The following fields are collected:
 - **Data_Doc_AccessMode** - Document is read only/editable
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
-	
+
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -3570,6 +3591,8 @@ The following fields are collected:
 - **Data_Doc_AccessMode** - Document is read only/editable
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 	
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
@@ -3667,6 +3690,8 @@ The following fields are collected:
 - **Data_Doc_AccessMode** - Document is read only/editable
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
@@ -3787,6 +3812,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -3848,6 +3875,8 @@ The following fields are collected:
 - **Data_DstDoc_AccessMode** - Destination Document is read only/editable
 
 - **Data_DstDoc_AssistedReadingReasons** - Predefined set of values of why the destination document was opened in assisted reading mode
+
+- **Data_DstDoc_AsyncOpenKind –** Indicates whether a cached version of the new cloud document was opened and which asynchronous refresh logic was used.
 	
 - **Data_DstDoc_ChunkingType** - Units used for incremental document open
 
@@ -3934,6 +3963,8 @@ The following fields are collected:
 - **Data_SrcDoc_AccessMode** - Source Document is read only/editable
 
 - **Data_SrcDoc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_SrcDoc_AsyncOpenKind –** Indicates whether a cached version of the original cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_SrcDoc_ChunkingType** - Units used for incremental document open
 
@@ -4087,6 +4118,8 @@ The following fields are collected:
   - **Data\_UrlHash-** Hash of the document path
 
   - **Data\_ViewKind-** Type of Word view
+
+
 ### *Application status and boot subtype*
 
 Determination if specific feature events have occurred, such as start or stop, and if feature is running​.
@@ -4108,6 +4141,8 @@ The following fields are collected:
   - **Data\_AppSizeWidth –** Add**-**in window size’s width
 
   - **Data\_AppURL -** URL of the Add in; Logs full URL for Store Add ins and URL domain for non-store Add ins
+
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data\_AuthorsCount:integer -** number of authors who edited the document in this session
 
@@ -4486,6 +4521,8 @@ The following fields are collected:
   - **Data\_Doc\_AccessMode:long -**How was this document opened (Read only / read write)
 
   - **Data\_Doc\_AssistedReadingReasons:long -**Predefined set of values of why document was opened in assisted reading mode
+
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data\_Doc\_ChunkingType:long -**How is document stored in SharePoint
 
@@ -4951,6 +4988,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -5074,6 +5113,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -5194,6 +5235,8 @@ The following fields are collected:
   - **Data\_Doc\_AccessMode -** Document is read only/editable
 
   - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
+
+  - **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data\_Doc\_ChunkingType -** Units used for incremental document open
 
@@ -5317,6 +5360,8 @@ The following fields are collected:
 - **Data_Doc_AccessMode** - Document is read only/editable
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
