@@ -591,11 +591,11 @@ The following fields are collected:
   
   - **DownloadSucceeded -** True if the pipeline successfully downloaded an Office update, false if not.
 
-  - **ErrorCode -** The code of last error that occurred in the Click-to-Run Repoman pipeline.
+  - **ErrorCode -** The code of the last error that occurred in the Click-to-Run Repoman pipeline.
 
-  - **ErrorDetails -**  The message of last error that occurred in the Click-to-Run Repoman pipeline.
+  - **ErrorDetails -**  Additional error details of the last error that occurred in the Click-to-Run Repoman pipeline.
  
-  - **ErrorMessage -** The message of last error that occurred in the Click-to-Run Repoman pipeline.
+  - **ErrorMessage -** The message of the last error that occurred in the Click-to-Run Repoman pipeline.
 
   - **OpenStreamSessionSucceeded -** True if the pipeline successfully creates a session for streaming an Office update, false if not.
 
