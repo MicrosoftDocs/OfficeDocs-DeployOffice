@@ -614,6 +614,65 @@ The following fields are collected:
 
 - **UTCReplace_AppSessionGuid** - Constant boolean value. Always true.
 
+#### Office.OneNote.FirstRun.FirstRun
+
+The critical signal used to ensure new users can successfully launch and run OneNote for the first time.  The telemetry is collected to ensure critical regression detection for OneNote app and service health. If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+- **AfterOneDriveFrozenAccountError** - Indicates an error from OneDrive when an account is frozen.
+
+- **Attempt** - The number of times that the first run experience needs to retry.
+
+- **IsDefaultNotebookCreated** - Indicates whether OneNote has created a user's default notebook or not.
+
+- **IsDelayedSignIn** - Indicates whether the first run is in delayed sign-in mode where a user is not required to signed-in.
+
+- **IsMSA** - Indicates whether an account is Microsoft account or not.
+
+#### Office.OneNote.FirstRun.FirstRunForMSA
+
+The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.
+How used Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **Attempt** - The number of times that the first run experience needs to retry.
+
+- **Error A** - OneNote's error object indicates an error during an error during the first run if any.
+
+- **FAllowAddingGuide** - Indicates whether OneNote will allow creating a guide notebook or not.
+
+- **FrozenOneDriveAccount** - Indicates whether a OneDrive account is frozen or not.
+
+- **IsDefaultNotebookCreated** - Indicates whether OneNote has created a user's default notebook or not.
+
+- **NoInternetConnection** - Indicates whether a device does not have internet connection.
+
+- **ProvisioningFailure** - A OneNote error object indicating a provisioning error if any.
+
+- **ProvisioningFinishedTime** - Indicates the end time when OneNote finishes provisioning a notebook during first run experience.
+
+- **ProvisioningStartedTime** - Indicates the start time when OneNote starts provisioning a notebook during first run experience.
+
+- **ShowSuggestedNotebooks** - Indicates whether OneNote will show a suggested notebook feature or not.
+
+#### Office.OneNote.FirstRun.FirstRunForOrgId
+
+The critical signal used to ensure new enterprise users (AAD/OrgID) can successfully launch and run OneNote for the first time.  How used Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+- **Attempt** - The number of times that the first run experience needs to retry.
+
+- **Error** - A OneNote's error object indicates an error during the first run if any.
+
+- **FAllowAddingGuide** - Indicates whether OneNote will allow creating a guide notebook or not.
+
+- **IsDefaultNotebookCreated** - Indicates whether OneNote has created a user's default notebook or not.
+
+- **ProvisioningFailure** - A OneNote's error object indicates a provisioning error if any.
+
+- **ProvisioningFinishedTime** - Indicates the end time when OneNote finishes provisioning a notebook during first run experience.
+
+- **ProvisioningStartedTime** - Indicates the start time when OneNote starts provisioning a notebook during first run experience.
+
 #### Office.TargetedMessaging.EnsureCached 
 
 Tracks if a package for Dynamic Canvas was downloaded. Considered a software configuration because the package must be successfully downloaded to enable the client to render the right experience. Is especially critical in consumer subscriptions where we use canvas to communicate to the user that the license has expired. Used to track metadata of a dynamic content package downloaded and cached by the product as well as results of operations performed on the package: download failures, unpacking failures, consistency checks failures, cache hits, package usages, download sources.
