@@ -5985,6 +5985,12 @@ The following fields are collected:
 
   - **ProgID** – the add-in Prog identifier
 
+#### Office.Programmability.Telemetry.MacroFileOpened 
+
+Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Office ProPlus has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
+
+No fields are collected.
+
 #### Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
 On boot event that captures ungraceful app exits for further investigation.
@@ -6046,6 +6052,75 @@ The following fields are collected:
 
 Poor response time or performance for scenarios such as application start up or opening a file.
 
+#### IpcpBootstrapUser
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpBootstrapUser API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - the extranet URL in connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - the intranet URL in connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate  
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id
 #### Office.Extensibility.RichApiMethodInvocation
 
 When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance and usage for Rich API method invocation.
@@ -6589,6 +6664,35 @@ The following fields are collected:
   - **FirstTimeStamp** - The first time at which the error occurred
 
   - **Trackback** - A unique identifier for a specific error
+
+#### RenewIdentityFailure
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when failed to renew user certificates.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **Failure.Category** - The category of the failure “UnhandledError”
+
+- **Failure.Detail** - The detailed info of the failure
+
+- **Failure.Id** - Failure Id
+
+- **Failure.Signature** - The signature of the failure, which is same as the event name
+
+- **iKey** - Logging service server Id
+
+- **RMS.HRESULT** - The result of renewing user certificate
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
 
 ## Device connectivity and configuration​ data events
 
