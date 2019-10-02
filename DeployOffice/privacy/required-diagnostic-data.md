@@ -5681,66 +5681,6 @@ The following fields are collected:
 - **Data_UsesNormal** - Indicates whether the open document is based on the normal template
 
 
-### *Office accessibility configuration subtype*
-
-Office accessibility features​
-
-#### Office.Accessibility.AccessibilityToolSessionPresenceWin32
-
-Allows us to detect that the user has an Assistive technology tool and its name. This allows us to understand if an Office user is experiencing issues with a specific Assistive Technology tool.
-
-The following fields are collected:
-
-  - **Data\_Data\_Jaws -** indicates if Jaws was running during the session**Data\_Data\_Magic -** indicates if Magic was running during the session
-
-  - **Data\_Data\_Magnify -** indicates if Magnify was running during the session
-
-  - **Data\_Data\_Narrator -** indicates if Narrator was running during the session
-
-  - **Data\_Data\_NVDA -** indicates if NVDA was running during the session
-
-  - **Data\_Data\_SA -** indicates if SA was running during the session
-
-  - **Data\_Data\_Supernova -** indicates if Supernova was running during the session
-
-  - **Data\_Data\_SuperNovaessSuite -** indicates if SuperNovaAccessSuite was running during the session
-
-  - **Data\_Data\_WinEyes -** indicates if WinEyes was running during the session
-
-  - **Data\_Data\_ZoomText -** indicates if ZoomText was running during the session
-
-#### Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
-
-This event indicates Office Word reads aloud the text in the document. The event is a heartbeat of the accessibility feature which allows Microsoft to evaluate the feature health of read-aloud-text.
-
-The following fields are collected:
-
-  - **Data\_CharacterCount -** character count of the document
-
-  - **Data\_CharactersWithSpaceCount -** character and space count of the document
-
-  - **Data\_IsPageCountInProgress -** is the page count in progress
-
-  - **Data\_LineCount -** line count of the document
-
-  - **Data\_PageCount -** page count of the document
-
-  - **Data\_ParagraphCount -** paragraph count of the document
-
-  - **Data\_Play -** Is this the first time for Word to read aloud
-
-  - **Data\_ViewKind -** view type of the document
-
-  - **Data\_WordCount -** word count of the document
-
-#### Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
-
-This event indicates Office Word stops reading aloud the text in the document. The event allows Microsoft to evaluate the feature health of read-aloud-text by measuring the working duration.
-
-The following fields are collected:
-
-  - None
-
 #### RenewUserOp
 
 Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when renew user certificates operation is performed. 
@@ -5816,6 +5756,67 @@ The following fields are collected:
 - **RMS.ServerType** - The type of Rights Management Service Server 
 
 - **RMS.StatusCode** - Status code of the operation result
+
+
+### *Office accessibility configuration subtype*
+
+Office accessibility features​
+
+#### Office.Accessibility.AccessibilityToolSessionPresenceWin32
+
+Allows us to detect that the user has an Assistive technology tool and its name. This allows us to understand if an Office user is experiencing issues with a specific Assistive Technology tool.
+
+The following fields are collected:
+
+  - **Data\_Data\_Jaws -** indicates if Jaws was running during the session**Data\_Data\_Magic -** indicates if Magic was running during the session
+
+  - **Data\_Data\_Magnify -** indicates if Magnify was running during the session
+
+  - **Data\_Data\_Narrator -** indicates if Narrator was running during the session
+
+  - **Data\_Data\_NVDA -** indicates if NVDA was running during the session
+
+  - **Data\_Data\_SA -** indicates if SA was running during the session
+
+  - **Data\_Data\_Supernova -** indicates if Supernova was running during the session
+
+  - **Data\_Data\_SuperNovaessSuite -** indicates if SuperNovaAccessSuite was running during the session
+
+  - **Data\_Data\_WinEyes -** indicates if WinEyes was running during the session
+
+  - **Data\_Data\_ZoomText -** indicates if ZoomText was running during the session
+
+#### Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
+
+This event indicates Office Word reads aloud the text in the document. The event is a heartbeat of the accessibility feature which allows Microsoft to evaluate the feature health of read-aloud-text.
+
+The following fields are collected:
+
+  - **Data\_CharacterCount -** character count of the document
+
+  - **Data\_CharactersWithSpaceCount -** character and space count of the document
+
+  - **Data\_IsPageCountInProgress -** is the page count in progress
+
+  - **Data\_LineCount -** line count of the document
+
+  - **Data\_PageCount -** page count of the document
+
+  - **Data\_ParagraphCount -** paragraph count of the document
+
+  - **Data\_Play -** Is this the first time for Word to read aloud
+
+  - **Data\_ViewKind -** view type of the document
+
+  - **Data\_WordCount -** word count of the document
+
+#### Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
+
+This event indicates Office Word stops reading aloud the text in the document. The event allows Microsoft to evaluate the feature health of read-aloud-text by measuring the working duration.
+
+The following fields are collected:
+
+  - None
 
 ### *Privacy subtype*
 
