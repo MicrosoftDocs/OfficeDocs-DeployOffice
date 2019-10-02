@@ -2215,9 +2215,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
-  - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
+    - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
 
@@ -2230,6 +2228,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -2349,8 +2349,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2364,6 +2362,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -2471,8 +2471,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document being is opened from local cache
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2486,6 +2484,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -2790,8 +2790,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
 - **Data_Doc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2805,6 +2803,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
 - **Data_Doc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
@@ -3506,8 +3506,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3521,6 +3519,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3597,8 +3597,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3612,6 +3610,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3694,8 +3694,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3709,6 +3707,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3811,8 +3811,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3824,6 +3822,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -4141,8 +4141,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
   - **Data\_Doc\_IsSyncBacked:bool-** true when this is a server document that exists locally, and is synchronized with the server (e.g. through OneDrive or ODB client apps)
 
   - **Data\_Doc\_Location:long-** : Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -4150,6 +4148,8 @@ The following fields are collected:
   - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource Identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -4517,8 +4517,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -**Is document being opened from local cache?
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
   - **Data\_Doc\_IsSyncBacked:bool -**Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -**Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -4532,6 +4530,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long –-**Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -**Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -**immutable identifier for documents stored in cloud
 
@@ -4977,8 +4977,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto-synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -4992,6 +4990,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
@@ -5100,8 +5100,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -5115,6 +5113,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems
 
@@ -5221,8 +5221,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
   - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint)
@@ -5236,6 +5234,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
 
   - **Data\_Doc\_ResourceIdHash -** An anonymized document Identifier used to diagnose problems
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId -** An immutable anonymized document Identifier used to diagnose problems
 
@@ -5344,8 +5344,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -5359,6 +5357,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
