@@ -4183,6 +4183,166 @@ The following fields are collected:
 
 Determination if specific feature events have occurred, such as start or stop, and if feature is running​.
 
+#### DnsLookupOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when DNS information lookup operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.NoOfDomainsSearched** - The number of domains searched	
+
+- **RMS.NoOfDomainsSkipped** - The number of domains skipped 
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+#### GetUserOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when getting user certificates operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server ID
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.ContentId** - Content Id
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned from the operation
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Type** - type of user info
+
+#### HttpOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when http request operation is performed.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+	
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.CallBackStatus** - The status of authentication call back returned result
+
+- **RMS.CallbackTime** - The time consumed by authentication call back 
+
+- **RMS.CorrelationId** - correlation Id of the http request
+
+- **RMS.DataSize** - data size of the HTTP request
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicate if there is nested http operation 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.OperationName** - operation name
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Url** - The URL of Rights Management Service Server
+
+- **RMS.WinhttpCallbackStatus** - The status of winhttp call back result
+
+#### IpcCreateOauth2Token
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcCreateOauth2Token API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+	
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
 #### Office.Extensibility.OfficeJS.Appactivated
 
 Records information about unexpected shutdowns of Office. This allows us to identify crashes or hangs in the product so that they can be addressed.
@@ -5581,6 +5741,82 @@ The following fields are collected:
 
   - None
 
+#### RenewUserOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when renew user certificates operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logger server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicates if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Type** - The type of user info
+
+#### ServiceDiscoveryOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when service discovery operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - Indicate if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.OperationName** - Operation name
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
 ### *Privacy subtype*
 
 Office privacy settings 
@@ -5987,7 +6223,7 @@ The following fields are collected:
 
 #### Office.Programmability.Telemetry.MacroFileOpened 
 
-Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Office ProPlus has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
+Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Office 365 ProPlus has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
 
 No fields are collected.
 
