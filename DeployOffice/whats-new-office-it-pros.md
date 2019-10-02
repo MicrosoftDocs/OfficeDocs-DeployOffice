@@ -16,7 +16,25 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/en-US/business/office-365-roadmap).
 
+## September 2019
 
+### General availability of Security Policy Advisor
+Security Policy Advisor is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
+
+For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Office 365 ProPlus](overview-of-security-policy-advisor.md).
+
+### Windows 7 end of support and Office 365 ProPlus
+***Support for Windows 7 ends on January 14, 2020.*** Using Office 365 ProPlus on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Office 365 ProPlus on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
+
+Even though Windows 7 will no longer be supported after January 2020, we’ve decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. For more information, see [Windows 7 end of support and Office 365 ProPlus](windows-7-support.md).
+
+### Delivery Optimization and Office 365 ProPlus
+Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft. 
+
+Office 365 ProPlus on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Office 365 ProPlus](delivery-optimization.md).
+
+### Security baseline for Office 365 ProPlus
+Microsoft has announced the final release of the recommended security configuration baseline settings for Office 365 ProPlus, version 1908. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1908-Sept-2019-FINAL/ba-p/873084).
 ## August 2019
 
 ### Privacy controls for Office for Mac
