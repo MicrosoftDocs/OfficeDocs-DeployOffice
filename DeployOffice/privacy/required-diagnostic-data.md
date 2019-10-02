@@ -301,7 +301,7 @@ This category contains the following fields:
 
   - **Name** - The name of the device. Allows us to classify data based on device pivot.
   
-  - **NetworkCost** - Indicates network cost or type, such as metered or metered above cap
+  - **NetworkCost** - Indicates network cost or type, such as metered or metered above cap.
   
   - **NetworkCountry** - The country code of the sender, based on the unscrubbed client IP address.
 
@@ -2215,7 +2215,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
 
@@ -2349,7 +2349,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
@@ -2471,7 +2471,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document being is opened from local cache
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
@@ -2790,7 +2790,7 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
@@ -3506,7 +3506,7 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -3597,7 +3597,7 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -3694,7 +3694,7 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -3811,7 +3811,7 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -4141,7 +4141,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_IsSyncBacked:bool-** true when this is a server document that exists locally, and is synchronized with the server (e.g. through OneDrive or ODB client apps)
 
@@ -4517,7 +4517,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -**Is document being opened from local cache?
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_IsSyncBacked:bool -**Is document opened from folder that is using OneDrive sync back app
 
@@ -4977,7 +4977,7 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto-synced copy of the document exists on the computer
 
@@ -5100,7 +5100,7 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -5221,7 +5221,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
@@ -5344,7 +5344,7 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
