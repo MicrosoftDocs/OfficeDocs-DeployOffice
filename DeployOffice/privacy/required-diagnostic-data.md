@@ -300,6 +300,10 @@ This category contains the following fields:
   - **MotherboardUUIDHash** - A hash of a unique identifier for the motherboard. Allows us to classify data based on device pivot.
 
   - **Name** - The name of the device. Allows us to classify data based on device pivot.
+  
+  - **NetworkCost** - Indicates network cost or type, such as metered or metered above cap
+  
+  - **NetworkCountry** - The country code of the sender, based on the unscrubbed client IP address.
 
   - **NumProcPhysCores** - The number of physical cores on the machine. Allows us to classify data based on device pivot.
 
