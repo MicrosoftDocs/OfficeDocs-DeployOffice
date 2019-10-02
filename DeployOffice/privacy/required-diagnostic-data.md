@@ -1231,6 +1231,489 @@ The following are the data subtypes in this category:
 
 Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
 
+#### IpcCreateRepublishingLicense
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcCreateRepublishingLicense API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+#### IpcGetLicenseProperty
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetLicenseProperty API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - Indicates if there is HTTP operation
+
+- **RMS.LicensePropertyType** - license property type
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+#### IpcGetSerializedLicenseProperty
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetSerializedLicenseProperty API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey**- Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - Indicates if there is HTTP operation
+
+- **RMS.LicensePropertyType** - License property type
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+#### IpcGetTemplateIssuerList
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetTemplateIssuerList API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - extranet URL of connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - intranet URL of connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+ 
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **UserInfo.UserObjectId** - The user object Id
+
+#### IpcGetTemplateList
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetTemplateList API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - extranet URL of connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - intranet URL of connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+ 
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **UserInfo.UserObjectId** - The user object Id
+
+#### IpcpCreateLicenseFromScratch
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpCreateLicenseFromScratch API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id 
+
+#### IpcpCreateLicenseFromTemplate
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpCreateLicenseFromTemplate API call is made. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+#### IpcpGetTemplateListForUser
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpGetTemplateListForUser API call is made. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - extranet URL of connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - intranet URL of connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - Indicates if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+	
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id 
+
+#### IpcpSerializeLicense
+
+Collected when a user attempts to apply IRM protections on the doc. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpSerializeLicense API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.ContentId** - Content Id of the document
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.KeyHandle** - The memory address of key handle
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id 
+
+#### IpcSetLicenseProperty
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcSetLicenseProperty API call is made. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call 
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.LicensePropertyType** - license property type
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Scenario Id defined by the API
+
+
 #### Office.AppCompat.AppCompat.AgentUpload
 
 Generated on client startup when end user has enabled Office Telemetry Dashboard.  It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
