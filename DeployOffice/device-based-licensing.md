@@ -110,13 +110,13 @@ If the device hasn’t been properly configured for device-based licensing, when
 
 In those cases, the user will also see a banner beneath the ribbon in the document with the following message:
 
-   **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
+> **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
 
 To troubleshoot this issue, make sure the device is correctly joined to Azure AD and that the device is added to the group that has been assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
 
 In other cases, the user might see this message:
 
-**CAN’T VERIFY LICENSE** We’re having trouble verifying the Office license for this device.
+>**CAN’T VERIFY LICENSE** We’re having trouble verifying the Office license for this device.
 
 In this case, the device is having problems contacting the Office Licensing Service on the internet. Office tries to contact the Office Licensing Service to ensure the device is properly licensed and to automatically renew a license that is about to expire. A device-based license is set to expire in about 3 to 4 months, so the device doesn’t have to access to internet constantly. The **CAN’T VERIFY LICENSE** message usually appears about 10 days before the license is about to expire.
 
