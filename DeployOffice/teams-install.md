@@ -34,7 +34,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
 
-The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule.
+The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you’re using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
@@ -167,7 +167,7 @@ If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, 
 
 ## Feature and quality updates for Microsoft Teams
 
-After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Offices apps, such as Word and Excel. How often those apps get feature and quality updates depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) they’re on.
+After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Offices apps, such as Word and Excel. For more information, see [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
 
 ## Microsoft Teams installations on a Mac
 
