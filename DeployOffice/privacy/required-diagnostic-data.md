@@ -6882,7 +6882,7 @@ The following fields are collected:
 
   - **ElapsedHanging** - hang time spent in the call
 
-#### **Office.PowerPoint.Session**
+#### Office.PowerPoint.Session
 
 Collecting feature usages on each PowerPoint session. This data is used to calculate the ratio of PowerPoint ungraceful exit while using a feature. The ratio of PowerPoint ungraceful exit is a key signal to guarantee PowerPoint is running as expected.
 
