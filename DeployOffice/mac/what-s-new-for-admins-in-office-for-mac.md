@@ -41,7 +41,7 @@ Before you deploy Office for Mac to users in your organization, you should be aw
 
   - **Office 2019 for Mac:** For information about the new features in Office 2019 for Mac, see the “what’s new” articles for [Excel](https://support.office.com/article/5ce129d3-9e5c-417f-9545-fb6f7b72674d), [Outlook](https://support.office.com/article/05736033-f99e-4cb2-88aa-01e979b0736b), [PowerPoint](https://support.office.com/article/5038ba79-48c5-40f0-adff-11489e5d6fed), and [Word](https://support.office.com/article/247e0cd4-a758-4b42-a157-42eb8853aef5).
 
-  - **Office 2016 for Mac:** If you want to compare key features of Office 2016 for Mac with those of Office for Mac 2011, review the comparison tables for [Excel](https://support.office.com/article/602a6c30-e6a6-47c5-9e0d-b16af397427a), [Outlook](https://support.office.com/article/f40accc7-de7e-48bd-a536-ba5af0e499b6), [PowerPoint](https://support.office.com/article/6213ffc8-c8bd-4073-acf8-1869180c6ae0), and [Word](https://support.office.com/article/ac41aed9-3d23-48de-8474-31515e29c48c).
+  - **Office 2016 for Mac:** If you want to compare key features of Office 2016 for Mac with those of Office for Mac 2011, review the comparison tables for [Outlook](https://support.office.com/article/f40accc7-de7e-48bd-a536-ba5af0e499b6), [PowerPoint](https://support.office.com/article/6213ffc8-c8bd-4073-acf8-1869180c6ae0), and [Word](https://support.office.com/article/ac41aed9-3d23-48de-8474-31515e29c48c).
   
     If you're looking for information to help your users get started with Office for Mac, review the resources on the [Office 365 Training Center](https://support.office.com/office-training-center).
 
