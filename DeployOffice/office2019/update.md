@@ -74,7 +74,7 @@ To minimize the size of the updates that need to be downloaded, we recommend tha
 
 Office uses the concept of update channels to determine which updates an installed version of Office receives. The update channel is specified in the configuration.xml file that is used by the Office Deployment Tool. You should always explicitly specify the update channel. For more information, see [Deploy Office 2019 (for IT Pros)](deploy.md).
 
-“PerpetualVL2019” is the **only** supported update channel for Office Professional Plus 2019 and Office Standard 2019. It's also the default update channel for volume licensed versions of Project 2019 and Visio 2019, however they can be installed with any update channel (PerpetualVL2019, Monthly, Semi-Annual (Targeted) and Semi-Annual).
+“PerpetualVL2019” is the **only** supported update channel for Office Professional Plus 2019 and Office Standard 2019. It's also the default update channel for volume licensed versions of Project 2019 and Visio 2019, although they can be installed with any update channel, such as Monthly or Semi-Annual.
 
 Update channel is a computer-wide setting. Which update channel you use should be determined by which version of the Office suite that you’re deploying. If you’re deploying Project and Visio along with Office, they must use the same update channel as the Office suite. This shouldn’t be an issue if all the versions of Office, Project, and Visio are the 2019 volume licensed versions.
  
