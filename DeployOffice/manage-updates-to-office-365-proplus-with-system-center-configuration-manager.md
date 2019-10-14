@@ -35,7 +35,7 @@ After you perform these steps, you can use the software update management capabi
 
 To enable Configuration Manager to manage Office 365 client updates, you need the following:
 
-- System Center Configuration Manager, update 1602 or later
+- System Center Configuration Manager (Current Branch)
 
 - An Office 365 client - Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, or Office 365 Business
 
@@ -81,8 +81,7 @@ You can enable the Office COM object by using client policy in Configuration Man
 To enable Configuration Manager to manage Office 365 client updates on specific computers by using client policy, do the following:
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
-- Click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent setting**.
+- Open the client settings, click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
 
 For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
 
@@ -96,7 +95,7 @@ To use Group Policy, do the following:
 
 - Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 
-- Enable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+- Disable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 <a name="BKMK_ODT"> </a>
 
