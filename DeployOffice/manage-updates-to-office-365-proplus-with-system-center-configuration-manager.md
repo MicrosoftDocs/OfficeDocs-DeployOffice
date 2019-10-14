@@ -35,7 +35,7 @@ After you perform these steps, you can use the software update management capabi
 
 To enable Configuration Manager to manage Office 365 client updates, you need the following:
 
-- System Center Configuration Manager, update 1602 or later
+- System Center Configuration Manager (Current Branch)
 
 - An Office 365 client - Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, or Office 365 Business
 
@@ -76,19 +76,18 @@ For Configuration Manager to be able to manage Office 365 client updates, an Off
 You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool.
 
 <a name="BKMK_SCCM"> </a>
-### Method 1: Use client policy in Configuration Manager to enable updates
+### Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager
 
 To enable Configuration Manager to manage Office 365 client updates on specific computers by using client policy, do the following:
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
-- Click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent setting**.
+- Open the client settings, click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
 
 For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 
-### Method 2: Use Group Policy to enable updates
+### Method 2: Use Group Policy to enable updates from Configuration Manager
 
 You can enable Configuration Manager to manage Office 365 client updates on specific computers by using Group Policy. This does the same thing as setting the OfficeMgmtCOM attribute to True in the configuration file for the Office Deployment Tool. With Group Policy, however, you can apply this setting to multiple computers, an organizational unit (OU), or a domain.
 
@@ -96,11 +95,11 @@ To use Group Policy, do the following:
 
 - Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 
-- Enable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+- Disable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 <a name="BKMK_ODT"> </a>
 
-### Method 3: Use the Office Deployment Tool to enable updates
+### Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager
 
 You can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office 365 clients to receive updates from Configuration Manager.
 
@@ -120,6 +119,30 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
 We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are delivered only by SCCM. If you set the value of the Enabled attribute to false, Office 365 clients can still receive updates from Configuration Manager, but any channel assignments via group policy will be ignored. The Updates element maps to the Office Automatic Updates 2.0 scheduled task, which is registered during Office 365 ProPlus installation and which performs product configuration tasks such as channel management.
 
 <a name="BKMK_Package"> </a>
+
+## Enable Office 365 clients to receive updates from the Office CDN instead of Configuration Manager
+
+If it meets your business and technical requirements, we recommend updating your client devices automatically from the Office CDN. To enable a device to recieve updates from the Office CDN instead of from Configuration Manager, use one of the following methods:
+
+### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
+
+- In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
+- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
+- Click **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent setting**.
+
+For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
+
+<a name="BKMK_GP"> </a>
+
+### Method 2: Use Group Policy to enable updates from the CDN
+
+- Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
+
+- Enable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+
+> [!IMPORTANT]
+> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling Office 365 Client Management via GPO or SCCM Clients settings from **Enabled** to **Not Configured** is not sufficent.
+
 ## Contents of the Office 365 client update package for WSUS
 
 The update package that Microsoft publishes to WSUS only appears in the WSUS catalog. It doesn't contain a copy of the updated version of Office that's on the Office CDN. Instead, it contains information that Configuration Manager needs to be able to download and distribute the updated version of Office.
