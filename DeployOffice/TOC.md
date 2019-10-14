@@ -27,6 +27,8 @@
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
 ## [Manage privacy controls with policy settings](privacy/manage-privacy-controls.md?toc=/deployoffice/toc.json)
 ## [Manage privacy controls with preferences (Mac)](privacy/mac-privacy-preferences.md?toc=/deployoffice/toc.json)
+## [Manage privacy controls with preferences (iOS)](ios-privacy-preferences.md?toc=/deployoffice/toc.json)
+
 
 ## Diagnostic data
 ### [Required diagnostic data](privacy/required-diagnostic-data.md?toc=/deployoffice/toc.json)
