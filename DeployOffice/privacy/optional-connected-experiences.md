@@ -23,6 +23,7 @@ If you have a work or school account, your organization’s admin may have provi
 > If you're an admin, see the following articles to learn how to give or restrict your users’ ability to use optional connected experiences:
 > - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 > - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+> - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 
 ### If you use these services, what terms of use do you need to agree to?
 
