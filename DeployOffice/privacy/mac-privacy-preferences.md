@@ -48,12 +48,11 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 |**Possible values**  | `BasicDiagnosticData` *(this sets the level to Required)* <br/> `FullDiagnosticData` *(this sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this sets the level to Neither)* |
 |**Availability** |16.28 and later |
 
-> [!NOTE]
-> If you set this preference, it also will apply to the following products:
-> - Version 1.00.217856 and later of Teams for Mac
-> - Version 16.28 and later of Skype for Business for Mac
+Starting with new installations of Version 16.30, if you don't set this preference, only required diagnostic data is sent to Microsoft if users with an Office 365 subscription are signed in with a work or school account or if users have a volume licensed version of Office 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
-If you don't set this preference, both optional and required diagnostic data is sent to Microsoft if users with an Office 365 subscription are signed in with a work or school account or if users have a volume licensed version of Office 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+> [!NOTE]
+> - If you install Version 16.28 or 16.29 and you don't set this preference, both optional and required diagnostic data is sent to Microsoft. If you then upgrade to Version 16.30 or later, both optional and required diagnostic data is still sent to Microsoft, unless you use this preference to set a different value.
+> - If you set this preference, it also will apply to Version 1.00.217856 and later of Teams for Mac and to Version 16.28 and later of Skype for Business for Mac.
 
 For other users, such as home users with an Office 365 subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Preferences** > **Privacy**.
 
