@@ -1,4 +1,4 @@
-content---
+---
 title: "Manage updates to Office 365 ProPlus with System Center Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
