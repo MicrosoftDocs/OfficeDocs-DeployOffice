@@ -506,7 +506,7 @@ Example values:
 
 ### PinIconsToTaskBar property (part of Property element)
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7, 8, and 8.1. If you install Office using a system account, which is common when deploying with System Center Configuration Managers, the icons will not be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with System Center Configuration Managers, the icons will not be pinned even if this property is set to **True**.
 
 Optional. The default value is **True**.
 
