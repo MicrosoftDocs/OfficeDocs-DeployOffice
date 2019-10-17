@@ -27,6 +27,8 @@
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
 ## [Manage privacy controls with policy settings](privacy/manage-privacy-controls.md?toc=/deployoffice/toc.json)
 ## [Manage privacy controls with preferences (Mac)](privacy/mac-privacy-preferences.md?toc=/deployoffice/toc.json)
+## [Manage privacy controls with preferences (iOS)](privacy/ios-privacy-preferences.md?toc=/deployoffice/toc.json)
+
 
 ## Diagnostic data
 ### [Required diagnostic data](privacy/required-diagnostic-data.md?toc=/deployoffice/toc.json)
@@ -43,6 +45,7 @@
 # Reference
 ## [Overview of reference articles](reference-articles-for-deploying-office-365-proplus.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
+## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 ## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 ## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)

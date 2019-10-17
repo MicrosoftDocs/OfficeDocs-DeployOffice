@@ -38,7 +38,9 @@ The following are the five new policy settings:
 These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
-> For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
+> - For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
+> - For information about similar settings for Office on iOS devices, see [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md).
+
 
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
@@ -114,6 +116,16 @@ In addition to the connected experiences mentioned above that are included with 
 These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these optional connected experiences will be available to your users.
+
+> [!NOTE]
+> The *Allow the use of additional optional connected experiences in Office* policy setting can also be configured to apply to the following Office for the web applications:
+> - Excel for the web
+> - OneNote for the web
+> - PowerPoint for the web
+> - Visio for the web
+> - Word for the web
+>
+> These Office for the web applications are scheduled to start using the new privacy control for optional connected experiences in mid-October 2019, but you can configure the policy setting now. To configure this policy setting for these Office for the web applications, you need to use the [Office cloud policy service](../overview-office-cloud-policy-service.md).
 
 Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn them off as a group by going to the [privacy settings dialog box](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed into Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 

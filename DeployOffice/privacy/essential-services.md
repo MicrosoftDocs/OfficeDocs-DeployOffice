@@ -38,6 +38,7 @@ If you’re the admin for your organization, you might also be interested in the
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 
 ## List of essential services for Office 
 
@@ -580,6 +581,27 @@ The following fields are collected:
   - **Data\_PrereqFailure\_Type-** The prerequisite failure we hit
 
   - **Data\_ProductReleaseId-** Product we’re installing, i.e. Office 365 ProPlus
+
+### Office.ClickToRun.RepomanLogger
+
+Reports on the status for the new Click-to-Run update pipeline (“Repoman”) and if it successfully downloads and applies Office updates.
+
+The following fields are collected:
+
+  - **ApplySucceeded -** True if the pipeline successfully applied an Office update, false if not.
+  
+  - **DownloadSucceeded -** True if the pipeline successfully downloaded an Office update, false if not.
+
+  - **ErrorCode -** The code of the last error that occurred in the Click-to-Run Repoman pipeline.
+
+  - **ErrorDetails -**  Additional error details of the last error that occurred in the Click-to-Run Repoman pipeline.
+ 
+  - **ErrorMessage -** The message of the last error that occurred in the Click-to-Run Repoman pipeline.
+
+  - **OpenStreamSessionSucceeded -** True if the pipeline successfully creates a session for streaming an Office update, false if not.
+
+  - **RepomanErrorMessage -** The error message received from the repoman.dll.
+ 
 
 ### Office.ClickToRun.Scenario.InstallTaskConfigure
 
@@ -2653,6 +2675,13 @@ The following fields are collected:
 
   - **UnmergedConfigs** - List of configurations not merged
 
+### Office.Experimentation.TriggerAnalysis
+
+This event helps scope analysis of product usage and performance metrics (such as crashes, hangs, etc.) to the subset of users or devices that are eligible to use the feature, thereby helping ensure that the product is working properly.
+
+The following fields are collected:
+
+  - **FeatureGate -** Identifies the set of features for which the trigger analysis is applicable.
 
 ## Licensing events
 
@@ -10915,7 +10944,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthUngracefulApplicationExitWin32
 
-Used to capture crash metrics.
+The event is triggers by an abnormal application termination (for example, task manager kill, application hang, etc.) for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used by Office engineers to infer product stability.
 
 The following fields are collected:
 
@@ -10927,11 +10956,7 @@ The following fields are collected:
 
   - **CrashedAppRevision -** Build version identifier for the affected process.
 
-  - **CrashedConfigIds -** The configuration assigned to the crashed process.
-
   - **CrashedEcsETag -** An experiment identifier for the crashed process.
-
-  - **CrashedImpressionId -** The impression identifier of the crashed process.
 
   - **CrashedModuleName -** Failing module name.
 
@@ -10946,6 +10971,8 @@ The following fields are collected:
   - **ExceptionAddress -** Address in the program where the failure occurred.
 
   - **ExceptionCode -** Bucketing identifier for the exception.
+
+  - **HexCrashTag -**  The unique identifier for the code of the crash.
 
   - **HexExceptionAddress -** Address in hexadecimal in the program where the failure occurred.
 
@@ -10972,6 +10999,8 @@ The following fields are collected:
   - **PreviousBuild -** Previously installed build version
 
   - **UAEOSEnvironment -** Operating System environment identifier.
+
+  - **UninitLibletId –** The unique identifier for the failing component of the crash.
 
   - **VerifyElseCrashTag -** Unique identifier for where the app crashed.
 

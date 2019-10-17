@@ -42,6 +42,7 @@ The following table provides a list of connected experiences that analyze your c
 | Editor    | [Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Ideas     | [Ideas in Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Insert data from picture| [Insert data from picture](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Maps in Power View   | [Maps in Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
@@ -129,7 +130,11 @@ If you are signed in with a work or school account, the admin in your organizati
 > [!NOTE]
 > If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
-If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don’t use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md) and [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
+If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don’t use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
+
+- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or you will get an error message when you try to use those connected experiences.
 

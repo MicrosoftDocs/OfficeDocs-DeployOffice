@@ -43,6 +43,7 @@ If you’re the admin for your organization, you might also be interested in the
 - [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 
 ## Categories, data subtypes, events, and data fields for required diagnostic data
 
@@ -119,31 +120,31 @@ This category contains the following fields:
 
   - **DiagnosticConsentSourceLocation** – Indicates how the user had provided the consent for diagnostic data
 
-  - **DiagnosticConsentConsentTime** – Indicates when the user provided the consent for diagnostic data
+  - **DiagnosticConsentConsentTime** – Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **ServiceConnectionState** – Indicates whether the user has chosen to use or not use all connected experiences
 
   - **ServiceConnectionStateSourceLocation** – Indicates how the user provided the choice whether to use all connected experiences
 
-  - **ServiceConnectionStateConsentTime** – Indicates when the user chose whether to use all connected experiences
+  - **ServiceConnectionStateConsentTime** – Indicates when the user chose whether to use all connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **ControllerConnectedServicesState** – Indicates whether the user has access to optional connected experiences
 
   - **ControllerConnectedServicesStateSourceLocation** – Indicates how the user’s choice for optional connected experiences was made
 
-  - **ControllerConnectedServicesStateConsentTime** – Indicates when the user chose the status of optional connected experiences
+  - **ControllerConnectedServicesStateConsentTime** – Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **UserContentDependentState** – Indicates whether the user has chosen to enable or disable connected experiences that analyze content
 
   - **UserContentDependentStateSourceLocation** – Indicates how the user’s choice to enable or disable was made for connected experiences that analyze content
 
-  - **UserContentDependentStateConsentTime** – Indicates when the user chose to enable or disable connected experiences that analyze content was made
+  - **UserContentDependentStateConsentTime** – Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
   - **DownloadContentState** – Indicates whether the user has chosen to enable or disable connected experiences that download online content
 
   - **DownloadContentStateSourceLocation** – Indicates how the user made the choice to enable or disable connected experiences that that download online content
 
-  - **DownloadContentStateConsentTime** – Indicates when the user made the choice to enable or disable connected experiences that download online content.
+  - **DownloadContentStateConsentTime** – Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
 #### Device 
 
@@ -300,6 +301,10 @@ This category contains the following fields:
   - **MotherboardUUIDHash** - A hash of a unique identifier for the motherboard. Allows us to classify data based on device pivot.
 
   - **Name** - The name of the device. Allows us to classify data based on device pivot.
+  
+  - **NetworkCost** - Indicates network cost or type, such as metered or metered above cap.
+  
+  - **NetworkCountry** - The country code of the sender, based on the unscrubbed client IP address.
 
   - **NumProcPhysCores** - The number of physical cores on the machine. Allows us to classify data based on device pivot.
 
@@ -609,6 +614,65 @@ The following fields are collected:
 - **sessionID** - Randomly generated guid to identify the app session
 
 - **UTCReplace_AppSessionGuid** - Constant boolean value. Always true.
+
+#### Office.OneNote.FirstRun.FirstRun
+
+The critical signal used to ensure new users can successfully launch and run OneNote for the first time.  The telemetry is collected to ensure critical regression detection for OneNote app and service health. If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+- **AfterOneDriveFrozenAccountError** - Indicates an error from OneDrive when an account is frozen.
+
+- **Attempt** - The number of times that the first run experience needs to retry.
+
+- **IsDefaultNotebookCreated** - Indicates whether OneNote has created a user's default notebook or not.
+
+- **IsDelayedSignIn** - Indicates whether the first run is in delayed sign-in mode where a user is not required to signed-in.
+
+- **IsMSA** - Indicates whether an account is Microsoft account or not.
+
+#### Office.OneNote.FirstRun.FirstRunForMSA
+
+The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.
+How used Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **Attempt** - The number of times that the first run experience needs to retry.
+
+- **Error A** - OneNote's error object indicates an error during an error during the first run if any.
+
+- **FAllowAddingGuide** - Indicates whether OneNote will allow creating a guide notebook or not.
+
+- **FrozenOneDriveAccount** - Indicates whether a OneDrive account is frozen or not.
+
+- **IsDefaultNotebookCreated** - Indicates whether OneNote has created a user's default notebook or not.
+
+- **NoInternetConnection** - Indicates whether a device does not have internet connection.
+
+- **ProvisioningFailure** - A OneNote error object indicating a provisioning error if any.
+
+- **ProvisioningFinishedTime** - Indicates the end time when OneNote finishes provisioning a notebook during first run experience.
+
+- **ProvisioningStartedTime** - Indicates the start time when OneNote starts provisioning a notebook during first run experience.
+
+- **ShowSuggestedNotebooks** - Indicates whether OneNote will show a suggested notebook feature or not.
+
+#### Office.OneNote.FirstRun.FirstRunForOrgId
+
+The critical signal used to ensure new enterprise users (AAD/OrgID) can successfully launch and run OneNote for the first time.  How used Telemetry used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+- **Attempt** - The number of times that the first run experience needs to retry.
+
+- **Error** - A OneNote's error object indicates an error during the first run if any.
+
+- **FAllowAddingGuide** - Indicates whether OneNote will allow creating a guide notebook or not.
+
+- **IsDefaultNotebookCreated** - Indicates whether OneNote has created a user's default notebook or not.
+
+- **ProvisioningFailure** - A OneNote's error object indicates a provisioning error if any.
+
+- **ProvisioningFinishedTime** - Indicates the end time when OneNote finishes provisioning a notebook during first run experience.
+
+- **ProvisioningStartedTime** - Indicates the start time when OneNote starts provisioning a notebook during first run experience.
 
 #### Office.TargetedMessaging.EnsureCached 
 
@@ -1168,6 +1232,489 @@ The following are the data subtypes in this category:
 
 Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
 
+#### IpcCreateRepublishingLicense
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcCreateRepublishingLicense API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+#### IpcGetLicenseProperty
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetLicenseProperty API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - Indicates if there is HTTP operation
+
+- **RMS.LicensePropertyType** - license property type
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+#### IpcGetSerializedLicenseProperty
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetSerializedLicenseProperty API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey**- Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - Indicates if there is HTTP operation
+
+- **RMS.LicensePropertyType** - License property type
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+#### IpcGetTemplateIssuerList
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetTemplateIssuerList API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - extranet URL of connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - intranet URL of connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+ 
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **UserInfo.UserObjectId** - The user object Id
+
+#### IpcGetTemplateList
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcGetTemplateList API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - extranet URL of connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - intranet URL of connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+ 
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **UserInfo.UserObjectId** - The user object Id
+
+#### IpcpCreateLicenseFromScratch
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpCreateLicenseFromScratch API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id 
+
+#### IpcpCreateLicenseFromTemplate
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpCreateLicenseFromTemplate API call is made. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+#### IpcpGetTemplateListForUser
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpGetTemplateListForUser API call is made. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - extranet URL of connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - intranet URL of connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - Indicates if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+	
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id 
+
+#### IpcpSerializeLicense
+
+Collected when a user attempts to apply IRM protections on the doc. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpSerializeLicense API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.ContentId** - Content Id of the document
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.KeyHandle** - The memory address of key handle
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id 
+
+#### IpcSetLicenseProperty
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcSetLicenseProperty API call is made. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call 
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.LicensePropertyType** - license property type
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Scenario Id defined by the API
+
+
 #### Office.AppCompat.AppCompat.AgentUpload
 
 Generated on client startup when end user has enabled Office Telemetry Dashboard.  It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
@@ -1196,6 +1743,20 @@ Only collected when Office Telemetry Dashboard has been enabled by end user (mos
 The following fields are collected:
 
   - **Data.CollectionTime** - Timestamp of when a crash event was logged
+
+#### Office_Apple_CISAuthTicketWithIdentity
+
+This event is collected for Office applications running under Apple platforms. The event is used for capturing auth token generation failures during InAppPurchase on the Mac (the event logs the error code received).  This event is used for detecting and helping troubleshoot auth token generation failures
+
+The following fields are collected:
+
+- **Data_EmptyAuthToken** - We collect a string representing where in the activate perpetual license flow we failed.
+
+- **Data_TicketAuthError** - Error code which indicates the cause of failure
+
+- **Data_ValidIdentity** - If the client has a valid identity
+
+
 
 #### Office.ConnectDevice.Activity.Start
 
@@ -1305,6 +1866,8 @@ The following fields are collected:
 
   - **Data.Doc.AssistedReadingReasons -** Set if the document has electronic data protection in place
 
+  - **Data.Doc.AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data.Doc.ChunkingType -** Units used for incremental document open
 
   - **Data.Doc.EdpState -** Electronic Data Protection setting for the document
@@ -1411,7 +1974,7 @@ The following fields are collected:
 
   - **Data.FullyQualifiedDomainName -** Obsolete, replaced by Data\_Doc\_Fqdn
 
-  - **Data.Input.FileOpenState -** State requested by app (Read/ReadWrite etc.) **-**
+  - **Data.Input.FileOpenState -** State requested by app (Read/ReadWrite etc.)
 
   - **Data.Input.OpenAsync -** Async open requested by app
 
@@ -1556,6 +2119,8 @@ The following fields are collected:
   - **Data.Doc.AccessMode -** Document is read only
 
   - **Data.Doc.AssistedReadingReasons -** Set if the document has electronic data protection in place
+
+  - **Data.Doc.AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data.Doc.ChunkingType -** Units used for incremental document open
 
@@ -1812,6 +2377,84 @@ The following fields are collected:
 
 - **EventName** - The name of the event being logged
 
+#### Office.LivePersonaCard.UserActions.OpenedPersonaCard
+
+Logged when the user opens a Persona Card. It is used to observe critical anomalies in failure rates of launching the Live Persona Card.
+
+The following fields are collected:
+
+- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+- **Data.clientType** - The type of device the app is run on.
+
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.exportName** - Human readable name of the user action event, e.g. "OpenedPersonaCard"
+
+- **Data.exportType** - Category of the event for GDPR export request
+
+- **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.hostAppRing** - The ring by which the app was distributed
+
+- **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account 
+
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+- **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+
+- **Data.version** -The version of the service (Profile Card)
+
+- **Data.viewType** -Defines the type of the Profile card displayed
+
+- **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
+
+- **NetworkCountry** - The Country Code of the Sender, based on the un-scrubbed Client IP Address.
+
+- **Data.properties** - Additional metadata collected for each event as follows.
+
+	- **bandwidthEstimateMbps** - Effective bandwidth estimate in Mbps
+
+	- **cardCorrelationId** - Duplicate of Data.appContextId above 
+
+	- **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+
+	- **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
+
+	- **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
+	- **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
+	- **networkEffectiveType** - The effective type of network connection, e.g. "slow-2g Online” to identify whether the user is connected to the internet at the time of showing the persona card
+
+	- **networkType** - The type of network connectivity of the device in use
+
+	- **personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+	- **roundTripEstimateMs** - Estimated effective round-trip of the current connection in milliseconds
+
+	- **wasOpenedAsCompactCard** - Used to identify if the card was opened as a compact view initially
+
 
 #### Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -1952,6 +2595,34 @@ The following fields are collected:
 -  **TimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches.
 
 
+#### Office.OneNote.StickyNotes.NoteCreated
+
+This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **NoteLocalId** - Distinguishable unique identifier assigned to a note at the time of a user creates the note within the app.
+
+- **IsExportable** - A flag indicating whether this event was a result of a user action or not. Should be set to True as NoteCreated is a user-triggered action.
+
+- **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+
+#### Office.OneNote.StickyNotes.NoteViewed
+
+This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **HasImages** - A flag indicating whether the note viewed has images stored in it.
+
+- **IsExportable** - A flag indicating whether this event was a result of a user action or not. Should be set to True as NoteViewed is a user-triggered action.
+
+- **NoteLocalId** - Distinguishable unique identifier assigned to a note at the time a user creates the note within the app.
+
+- **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+
 #### Office.OneNote.Storage.NotebookSyncResult
  
 This event logs notebook sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score.
@@ -2035,8 +2706,7 @@ The following fields are collected
 
 #### Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Then critical signal used to ensure OneNote users can successfully launch the app.
-The telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app in our performance window, this would trigger a high severity incident.
+The critical signal used to ensure OneNote users can successfully launch the app. The telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t launch the app in our performance window, this would trigger a high severity incident.
 
 The following fields are collected: 	None
 
@@ -2086,13 +2756,6 @@ The following fields are collected:
 
   - **Result** - result of attempt to update password. For example: "Success" or "Fail\_AllowLessSecureAppsDisabled"
 
-#### Office.Outlook.Desktop.Providers.LoadProviderLibrary
-
-This event tracks the success or failure of MAPI trying to load a provider DLL (e.g. contab32.dll, emsmdb32.dll, a DLL used by an add-in). The MAPI operation responsible for loading provider DLLs is fundamental for Outlook’s Required operation as well as extensibility (via Add-ins or custom Store/Transport/AddressBook providers). We actively monitor the success or failure result of this operation to ensure that this core MAPI functionality continues to work as expected.
-
-The following fields are collected:
-
-  - **Standard HVA Activity** with no custom payload
 
 #### Office.Outlook.Desktop.Stores.CreateNewStore
 
@@ -2188,6 +2851,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
@@ -2218,8 +2883,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
-
   - **Data\_Doc\_IsSyncBacked:bool -** verifies if document is being opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2233,6 +2896,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -2322,6 +2987,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
@@ -2352,8 +3019,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
-
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2367,6 +3032,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -2444,6 +3111,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
@@ -2474,8 +3143,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document being is opened from local cache
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
-
   - **Data\_Doc\_IsSyncBacked:bool -** Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -** Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2489,6 +3156,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long -** Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -2586,6 +3255,8 @@ The following fields are collected:
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_DstDoc_AsyncOpenKind:long –** Indicates whether a cached version of the new cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_DstDoc_ChunkingType:long** - How is document stored in SharePoint
 
 - **Data_DstDoc_EdpState:long** - Enterprise Data Protection state of document
@@ -2669,6 +3340,8 @@ The following fields are collected:
 - **Data_SrcDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_SrcDoc_AsyncOpenKind:long –** Indicates whether a cached version of the original cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_SrcDoc_ChunkingType:long** - How is document stored in SharePoint 
 
@@ -2763,6 +3436,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType:long** - How is document stored in SharePoint
 
 - **Data_Doc_EdpState:long** - Enterprise Data Protection state of document
@@ -2793,8 +3468,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked:bool** - Is document opened from folder that is using OneDrive sync back app
 
 - **Data_Doc_Location:long** - Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -2808,6 +3481,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons:long** - Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
 - **Data_Doc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
@@ -2838,6 +3513,8 @@ The following fields are collected:
 - **Data_DstDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
 - **Data_DstDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_DstDoc_AsyncOpenKind:long –** Indicates whether a cached version of the new cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_DstDoc_ChunkingType:long** - How is document stored in SharePoint
 
@@ -2920,6 +3597,8 @@ The following fields are collected:
 - **Data_SrcDoc_AccessMode:long** - How was this document opened (Read only | read write)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_SrcDoc_AsyncOpenKind:long –** Indicates whether a cached version of the original cloud document was opened and which asynchronous refresh logic was used.
 
 - **Data_SrcDoc_ChunkingType:long** - How is document stored in SharePoint
 
@@ -3393,6 +4072,68 @@ The following fields are collected:
 
 - **Data.warningMessage** - Warning message reported by the service
 
+
+#### Office.Visio.Shared.FeatureExperimentation
+
+Tracks feature flighting for users. This event helps us determines success or failure of feature flights.
+
+The following fields are collected:
+
+  - **Data\_Enable:bool**- true indicate the feature is enabled for current user
+
+  - **Data\_Feature:string** - name of the feature
+
+  - **Data\_Flighted:bool** - true indicates the feature is enabled
+
+  - **Data\_Licensed:bool** - true indicates the feature is under licensing check
+
+  - **Data\_Subscriber:bool** - true indicates the user has subscription license
+
+#### Office.Visio.Shared.RefreshSmartDiagram
+
+Captures diagram refresh failures when file is created through DV. This helps us debug the failures and issues in data refresh in a DV diagram.
+
+The following fields are collected:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** - true if the refreshed diagram was originally created using connector based on sequence" option
+
+  - **Data\_DialogError**:**string** - error during refreshing smart diagram
+
+  - **Data\_FileError:string** - error string when connected Excel file is invalid
+
+  - **Data\_OverwriteSelected**:**bool** - true if user selected overwrite diagram option during refresh
+
+  - **Data\_WarningShown**:**bool** - true if there was any warning shown to user during data refresh
+
+#### Office.Visio.Shared.WritebackToExcel
+
+Captures Excel write back failures when file is created through DV. This helps us debug the failures and issues in writing back data to Excel in a DV diagram.
+
+The following fields are collected:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** - true means connectors are created based on sequence settings
+
+  - **Data\_DataSourceType:string** - This filed indicates whether diagram is created from  "Table" or "CustomRange"
+
+  - **Data\_DialogError:string** - Custom Error type while creating smart diagram through Excel
+
+  - **Data\_NoOfShapesAdded:int** - Number of shapes added during writeback to Excel functionality
+
+  - **Data\_NoOfShapesDeleted:int** - Number of shapes deleted during writeback to Excel functionality
+
+  - **Data\_OverwriteSelected:bool** - true indicate user selected overwrite data option
+
+  - **Data\_SourceDataModified:bool** - true indicates source data is modified
+
+  - **Data\_WarningShown:bool** - true means data update warning shown to the user
+
+  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** - true indicates warning shown to the user because of presence of formula in Excel
+
+  - **Data\_WarningShownToAddNextStepID:bool** - true indicates warning show to the user because next step Identifier missing in Excel
+
+  - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
+
+
 #### Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
 This event logs document statistics for each document when Office Word is closed or suspended.  The event is used to correlate document edits, size, etc. with document-save, document-share, and document online collaboration errors.
@@ -3469,6 +4210,130 @@ The following fields are collected:
 
   - **Data\_UsesCustomTemplate** - indicates whether the document was created from a custom template
 
+#### Office.Word.FileOpen.UserInitiatedOpen 
+
+This event indicates Office Word opens a document by user initiation instead of by Office Word programmatically. It also contains critical file open performance data and is an app start event from user perspective.  The event monitors whether file-open is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics. 
+ 
+The following fields are collected:
+
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics. 
+
+- **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving. 
+
+- **Data_BytesAsynchronousWithWork** - Number of bytes (compressed) that we might be able to open the file without but would require significant code investments to make it happen 
+
+- **Data_BytesSynchronous** - Number of bytes (compressed) that we must have before we can start opening the file 
+
+- **Data_BytesUnknown** - Number of bytes in document parts that we don’t expect to find. 
+
+- **Data_Doc_AccessMode** - Document is read only/editable 
+
+- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode 
+
+- **Data_Doc_ChunkingType** - Units used for incremental document open 
+
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document 
+
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx, etc.) 
+
+- **Data_Doc_FileFormat** - File format protocol version 
+
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name 
+
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name 
+
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open 
+
+- **Data_Doc_InitializationScenario** - Records how the document was opened 
+
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options 
+
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user 
+
+- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened 
+
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service 
+
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened 
+
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer 
+
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint) 
+
+- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document 
+
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session 
+
+- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set 
+
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only 
+
+- **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems 
+
+- **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
+
+- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service 
+
+- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.) 
+
+- **Data_Doc_ServerVersion** - the server version offering the service 
+
+- **Data_Doc_SessionId** - the server version offering the service 
+
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests 
+
+- **Data_Doc_SizeInBytes** - Indicator of document size 
+
+- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path 
+
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled 
+
+- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based) 
+
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier 
+
+- **Data_Doc_WopiServiceId** - Contains unique identifier of WOPI service provider 
+
+- **Data_EditorDisablingRename** - Identifier of the first editor that caused for rename to be disabled 
+
+- **Data_EditorsCount** - Number of editors in the document 
+
+- **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode 
+
+- **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document 
+
+- **Data_LastLoggedTag** - Unique tag for code call site used to identify when we try to fail the open twice (used for data quality diagnostics) 
+
+- **Data_LinkStyles** - Indicates whether we are linking to the template styles 
+
+- **Data_MainPdod** - The document identifier in Office Word process 
+
+- **Data_Measurements** - Encoded string containing the time breakdown of the different parts of open. Used to diagnose open performance. 
+
+- **Data_MoveDisabledReason** - Error that is disabling move for the document 
+
+- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled 
+
+- **Data_OpenInitiateKind** – Type of the scenario where users started this file-open operation. 
+
+- **Data_PartsUnknown** - The number of document parts that we couldn’t get data for 
+
+- **Data_RecoverableFailureInitiationLocationTag** - Unique tag for code call site used to identify the place in code where we attempt to fix the file before opening it 
+
+- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document 
+
+- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled 
+
+- **Data_SecondaryTag** - Unique tag for code call site used to add additional failure data for open. 
+
+- **Data_TemplateFormat** - File format of the template that the document is based on. 
+
+- **Data_UsesNormal** - Indicates whether the open document is based on the normal template. 
+
+- **Data_VerboseMeasurements** - Encoded string containing the detailed time breakdown of the different parts of open.  Used to measure performance, only enabled for internal rings. 
+
+
+
 #### Office.Word.FileSave.ActCmdGosubSaveAs
 
 This event indicates that a user is saving their changes to a new document. The event monitors whether saving to a new document is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
@@ -3482,7 +4347,9 @@ The following fields are collected:
 - **Data_Doc_AccessMode** - Document is read only/editable
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
-	
+
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -3509,8 +4376,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3524,6 +4389,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3573,6 +4440,8 @@ The following fields are collected:
 - **Data_Doc_AccessMode** - Document is read only/editable
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
+
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 	
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
@@ -3600,8 +4469,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3615,6 +4482,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3671,6 +4540,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -3697,8 +4568,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3712,6 +4581,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3790,6 +4661,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -3814,8 +4687,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -3827,6 +4698,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -3851,6 +4724,8 @@ The following fields are collected:
 - **Data_DstDoc_AccessMode** - Destination Document is read only/editable
 
 - **Data_DstDoc_AssistedReadingReasons** - Predefined set of values of why the destination document was opened in assisted reading mode
+
+- **Data_DstDoc_AsyncOpenKind –** Indicates whether a cached version of the new cloud document was opened and which asynchronous refresh logic was used.
 	
 - **Data_DstDoc_ChunkingType** - Units used for incremental document open
 
@@ -3938,6 +4813,8 @@ The following fields are collected:
 
 - **Data_SrcDoc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_SrcDoc_AsyncOpenKind –** Indicates whether a cached version of the original cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_SrcDoc_ChunkingType** - Units used for incremental document open
 
 - **Data_SrcDoc_EdpState** - Electronic Data Protection setting for the source document
@@ -4005,66 +4882,6 @@ The following fields are collected:
 - **Data_SrcDocIsUnnamedOrNew** - Indicates whether the document we are saving is new
 
 
-#### Office.Visio.Shared.FeatureExperimentation
-
-Tracks feature flighting for users. This event helps us determines success or failure of feature flights.
-
-The following fields are collected:
-
-  - **Data\_Enable:bool**- true indicate the feature is enabled for current user
-
-  - **Data\_Feature:string** - name of the feature
-
-  - **Data\_Flighted:bool** - true indicates the feature is enabled
-
-  - **Data\_Licensed:bool** - true indicates the feature is under licensing check
-
-  - **Data\_Subscriber:bool** - true indicates the user has subscription license
-
-#### Office.Visio.Shared.RefreshSmartDiagram
-
-Captures diagram refresh failures when file is created through DV. This helps us debug the failures and issues in data refresh in a DV diagram.
-
-The following fields are collected:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** - true if the refreshed diagram was originally created using connector based on sequence" option
-
-  - **Data\_DialogError**:**string** - error during refreshing smart diagram
-
-  - **Data\_FileError:string** - error string when connected Excel file is invalid
-
-  - **Data\_OverwriteSelected**:**bool** - true if user selected overwrite diagram option during refresh
-
-  - **Data\_WarningShown**:**bool** - true if there was any warning shown to user during data refresh
-
-#### Office.Visio.Shared.WritebackToExcel
-
-Captures Excel write back failures when file is created through DV. This helps us debug the failures and issues in writing back data to Excel in a DV diagram.
-
-The following fields are collected:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** - true means connectors are created based on sequence settings
-
-  - **Data\_DataSourceType:string** - This filed indicates whether diagram is created from  "Table" or "CustomRange"
-
-  - **Data\_DialogError:string** - Custom Error type while creating smart diagram through Excel
-
-  - **Data\_NoOfShapesAdded:int** - Number of shapes added during writeback to Excel functionality
-
-  - **Data\_NoOfShapesDeleted:int** - Number of shapes deleted during writeback to Excel functionality
-
-  - **Data\_OverwriteSelected:bool** - true indicate user selected overwrite data option
-
-  - **Data\_SourceDataModified:bool** - true indicates source data is modified
-
-  - **Data\_WarningShown:bool** - true means data update warning shown to the user
-
-  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** - true indicates warning shown to the user because of presence of formula in Excel
-
-  - **Data\_WarningShownToAddNextStepID:bool** - true indicates warning show to the user because next step Identifier missing in Excel
-
-  - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
-
 #### Office.Word.Word.DocumentDirtyFlagChanged
 
 This event indicates Office Word edits a document which changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It is also used to calculated monthly active users/devices.
@@ -4090,9 +4907,254 @@ The following fields are collected:
   - **Data\_UrlHash-** Hash of the document path
 
   - **Data\_ViewKind-** Type of Word view
+
+
+#### ParseLicenseOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when parsing licenses operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logger server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.VerifyCertChainDuration** - Duration time to verify certificate chain
+
+- **RMS.VerifySignatureDuration** - Duration time to verify signature
+
+#### StoreOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when Rights Management Service license store operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.ContentId** - Content Id in End User License
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.OperationName** - Operation name
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Url** - The URL of Rights Management Service Server
+
+
 ### *Application status and boot subtype*
 
 Determination if specific feature events have occurred, such as start or stop, and if feature is running​.
+
+#### DnsLookupOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when DNS information lookup operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.NoOfDomainsSearched** - The number of domains searched	
+
+- **RMS.NoOfDomainsSkipped** - The number of domains skipped 
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+#### GetUserOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when getting user certificates operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server ID
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.ContentId** - Content Id
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned from the operation
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Type** - type of user info
+
+#### HttpOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when http request operation is performed.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+	
+- **AppInfo.Name** - Application name
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.CallBackStatus** - The status of authentication call back returned result
+
+- **RMS.CallbackTime** - The time consumed by authentication call back 
+
+- **RMS.CorrelationId** - correlation Id of the http request
+
+- **RMS.DataSize** - data size of the HTTP request
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicate if there is nested http operation 
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.OperationName** - operation name
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Url** - The URL of Rights Management Service Server
+
+- **RMS.WinhttpCallbackStatus** - The status of winhttp call back result
+
+#### IpcCreateOauth2Token
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcCreateOauth2Token API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+	
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.StatusCode** - Status code of the returned result
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -4111,6 +5173,8 @@ The following fields are collected:
   - **Data\_AppSizeWidth –** Add**-**in window size’s width
 
   - **Data\_AppURL -** URL of the Add in; Logs full URL for Store Add ins and URL domain for non-store Add ins
+
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data\_AuthorsCount:integer -** number of authors who edited the document in this session
 
@@ -4144,8 +5208,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
-
   - **Data\_Doc\_IsSyncBacked:bool-** true when this is a server document that exists locally, and is synchronized with the server (e.g. through OneDrive or ODB client apps)
 
   - **Data\_Doc\_Location:long-** : Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -4153,6 +5215,8 @@ The following fields are collected:
   - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource Identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -4490,6 +5554,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons:long -**Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType:long -**How is document stored in SharePoint
 
   - **Data\_Doc\_EdpState:long -**Enterprise Data Protection state of document
@@ -4520,8 +5586,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -**Is document being opened from local cache?
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
-
   - **Data\_Doc\_IsSyncBacked:bool -**Is document opened from folder that is using OneDrive sync back app
 
   - **Data\_Doc\_Location:long -**Predefined set of values of where document is stored (Local, SharePoint, WOPI, Network etc.)
@@ -4535,6 +5599,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons:long –-**Predefined set of values of why this document was marked read only (Locked on server, final document, password protected to edit, etc.)
 
   - **Data\_Doc\_ResourceIdHash:string -**Hash of resource identifier for documents stored in cloud
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -**immutable identifier for documents stored in cloud
 
@@ -4954,6 +6020,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -4980,8 +6048,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto-synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -4995,6 +6061,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
@@ -5077,6 +6145,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -5103,8 +6173,6 @@ The following fields are collected:
 	
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -5118,6 +6186,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems
 
@@ -5198,6 +6268,8 @@ The following fields are collected:
 
   - **Data\_Doc\_AssistedReadingReasons -** Predefined set of values of why document was opened in assisted reading mode
 
+  - **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
   - **Data\_Doc\_ChunkingType -** Units used for incremental document open
 
   - **Data\_Doc\_EdpState -** Electronic Data Protection setting for the document
@@ -5224,8 +6296,6 @@ The following fields are collected:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Flag indicating that the offline copy of a document was opened
 
-  - **Data_Doc_IsRtcAlwaysOn -** true if the real time channel (RTC) is always on for this file.
-
   - **Data\_Doc\_IsSyncBacked -** Flag indicating that an auto synced copy of the document exists on the computer
 
   - **Data\_Doc\_Location -** Indicates which service provided the document (OneDrive, File Server, SharePoint)
@@ -5239,6 +6309,8 @@ The following fields are collected:
   - **Data\_Doc\_ReadOnlyReasons -** Reasons why the document was opened read only
 
   - **Data\_Doc\_ResourceIdHash -** An anonymized document Identifier used to diagnose problems
+
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId -** An immutable anonymized document Identifier used to diagnose problems
 
@@ -5321,6 +6393,8 @@ The following fields are collected:
 
 - **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
 
+- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
 - **Data_Doc_ChunkingType** - Units used for incremental document open
 
 - **Data_Doc_EdpState** - Electronic Data Protection setting for the document
@@ -5347,8 +6421,6 @@ The following fields are collected:
 
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
 
-- **Data_Doc_IsRtcAlwaysOn** - true if the real time channel (RTC) is always on for this file.
-
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
@@ -5362,6 +6434,8 @@ The following fields are collected:
 - **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
+
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
@@ -5418,6 +6492,83 @@ The following fields are collected:
 - **Data_TemplateFormat** - File format of the template that the document is based on
 
 - **Data_UsesNormal** - Indicates whether the open document is based on the normal template
+
+
+#### RenewUserOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when renew user certificates operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logger server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - indicates if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
+
+- **RMS.Type** - The type of user info
+
+#### ServiceDiscoveryOp
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when service discovery operation is performed. 
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.Duration** - Total time for the operation to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the operation
+
+- **RMS.HttpCall** - Indicate if there is HTTP operation
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.OperationName** - Operation name
+
+- **RMS.Result** - Success or fail of the operation
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the operation result
 
 
 ### *Office accessibility configuration subtype*
@@ -5732,7 +6883,7 @@ The following fields are collected:
 
   - **ElapsedHanging** - hang time spent in the call
 
-#### **Office.PowerPoint.Session**
+#### Office.PowerPoint.Session
 
 Collecting feature usages on each PowerPoint session. This data is used to calculate the ratio of PowerPoint ungraceful exit while using a feature. The ratio of PowerPoint ungraceful exit is a key signal to guarantee PowerPoint is running as expected.
 
@@ -5884,6 +7035,12 @@ The following fields are collected:
 
   - **ProgID** – the add-in Prog identifier
 
+#### Office.Programmability.Telemetry.MacroFileOpened 
+
+Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Office 365 ProPlus has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
+
+No fields are collected.
+
 #### Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
 On boot event that captures ungraceful app exits for further investigation.
@@ -5945,6 +7102,75 @@ The following fields are collected:
 
 Poor response time or performance for scenarios such as application start up or opening a file.
 
+#### IpcpBootstrapUser
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpBootstrapUser API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server Id
+
+- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionInfo.ExtranetUrl** - the extranet URL in connection info
+
+- **RMS.ConnectionInfo.IntranetUrl** - the intranet URL in connection info
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.GuestTenant** - Guest tenant Id for the user
+
+- **RMS.HomeTenant** - Home tenant Id for the user
+
+- **RMS.HttpCall** - indicate if there is HTTP operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate  
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario Id defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server 
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object Id
 #### Office.Extensibility.RichApiMethodInvocation
 
 When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance and usage for Rich API method invocation.
@@ -6488,6 +7714,35 @@ The following fields are collected:
   - **FirstTimeStamp** - The first time at which the error occurred
 
   - **Trackback** - A unique identifier for a specific error
+
+#### RenewIdentityFailure
+
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when failed to renew user certificates.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **Failure.Category** - The category of the failure “UnhandledError”
+
+- **Failure.Detail** - The detailed info of the failure
+
+- **Failure.Id** - Failure Id
+
+- **Failure.Signature** - The signature of the failure, which is same as the event name
+
+- **iKey** - Logging service server Id
+
+- **RMS.HRESULT** - The result of renewing user certificate
+
+- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
 
 ## Device connectivity and configuration​ data events
 

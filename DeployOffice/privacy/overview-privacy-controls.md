@@ -33,7 +33,8 @@ As part of these changes, there are new and updated user interface (UI) elements
 >   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 >   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
 > - These privacy controls are included in Version 1908 of Semi-Annual Channel (Targeted), which was released on September 10, 2019. They are expected to be available in Semi-Annual Channel in January 2020.
-> - These privacy controls are scheduled to be available in the second half of October 2019 for the iOS versions of Excel, OneNote, PowerPoint, Visio, and Word. We'll provide more information in early October.
+> - These privacy controls are available for Version 2.30 and later of the iOS versions of Excel, OneNote, PowerPoint, and Word, as well as Version 1.17 and later of Visio Viewer for iOS.
+> - Most of the Office for the web applications are scheduled to start using the new privacy control for [optional connected experiences](optional-connected-experiences.md) in mid-October 2019. Those applications are the following: Excel for the web, OneNote for the web, PowerPoint for the web, Visio for the web, and Word for the web. Before that starts, you can use the [Office cloud policy service](../overview-office-cloud-policy-service.md) to configure the appropriate [policy setting](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
 > - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
 
 ## Diagnostic data sent from Office 365 ProPlus to Microsoft
@@ -68,6 +69,7 @@ For more information, see the following:
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Office 365 ProPlus
@@ -93,6 +95,7 @@ For more information, see the following:
 - [Connected experiences in Office](connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 
 ## Optional connected experiences for Office 365 ProPlus
 
@@ -109,6 +112,7 @@ For more information, see the following:
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 
 ## Required service data for connected experiences
 
