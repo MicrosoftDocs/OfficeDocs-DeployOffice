@@ -152,5 +152,3 @@ The package contains a file named noop.exe. But, that file doesn't contain any c
 For each update release there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of the Monthly Channel and a package for the 64-bit edition of the Monthly Channel. In June, there will be two new packages for Monthly Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
 
 There aren't separate packages for the different Office 365 clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about the Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business clients.
-
-
