@@ -73,7 +73,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
 For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates.
 
-You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. Any option is sufficient on its own, but if multiple ways are employed, the setting through Group Policy would determine the final configuration.
+You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
 
 <a name="BKMK_SCCM"> </a>
 ### Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager
