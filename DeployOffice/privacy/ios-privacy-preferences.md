@@ -32,8 +32,7 @@ These preference settings apply to the following applications:
 - Version 1.17 and later of Visio Viewer for iOS.
 
 > [!NOTE]
-> - These preference settings also apply to Version 1.17 and later of Visio Viewer for iOS. 
-> - For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+> For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 
 ## Setting device preferences
