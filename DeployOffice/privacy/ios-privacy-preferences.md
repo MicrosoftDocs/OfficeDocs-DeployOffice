@@ -18,7 +18,7 @@ hideEdit: true
 
 # Use preferences to manage privacy controls for Office on iOS devices
 
-Starting with Version 2.30 of Word for iOS, Excel for iOS, PowerPoint for iOS, and OneNote for iOS, there are new preference settings that allow you to control settings related to the following:
+There are new preference settings for Office on iOS devices that allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used.
 
@@ -26,9 +26,13 @@ Starting with Version 2.30 of Word for iOS, Excel for iOS, PowerPoint for iOS, a
 
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
 
+These preference settings apply to the following applications:
+- Version 2.30 and later of Word for iOS, Excel for iOS, and PowerPoint for iOS.
+- Version 16.30 and later of OneNote for iOS.
+- Version 1.17 and later of Visio Viewer for iOS.
+
 > [!NOTE]
-> - These preference settings also apply to Version 1.17 and later of Visio Viewer for iOS. 
-> - For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+> For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 
 
 ## Setting device preferences
@@ -54,7 +58,6 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 |**Key**  | `DiagnosticDataTypePreference`  |
 |**Data Type**  | String |
 |**Possible values**  | `BasicDiagnosticData` *(this sets the level to Required)* <br/> `FullDiagnosticData` *(this sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this sets the level to Neither)* |
-|**Availability** |2.30 and later |
 
 If you don't set this preference, only required diagnostic data is sent to Microsoft if users with an Office 365 subscription are signed in with a work or school account. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
@@ -70,7 +73,7 @@ Connected experiences that analyze your content are experiences that use your Of
 |**Key**  | `OfficeExperiencesAnalyzingContentPreference`  |
 |**Data Type**  | Boolean |
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
-|**Availability** |2.30 and later |
+
 
 If you don't set this preference, connected experiences that analyze content are available to users.
 
@@ -87,7 +90,7 @@ Connected experiences that download online content are experiences that allow yo
 |**Key**  | `OfficeExperiencesDownloadingContentPreference`  |
 |**Data Type**  | Boolean |
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
-|**Availability** |2.30 and later |
+
 
 If you don't set this preference, connected experiences that download online content are available to users.
 
@@ -104,7 +107,7 @@ In addition to the connected experiences mentioned above, there are some optiona
 |**Key**  | `OptionalConnectedExperiencesPreference`  |
 |**Data Type**  | Boolean |
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
-|**Availability** |2.30 and later |
+
 
 If you don't set this preference, optional connected experiences are available to users with an Office 365 subscription that are signed in with a work or school account. Unless you have set this preference to FALSE, these users can choose to turn off optional connected experiences by going to **Settings** > **Privacy Settings**.
 
