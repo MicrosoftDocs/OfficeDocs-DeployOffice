@@ -18,7 +18,7 @@ hideEdit: true
 
 # Use preferences to manage privacy controls for Office on iOS devices
 
-Starting with Version 2.30 of Word for iOS, Excel for iOS, PowerPoint for iOS, and OneNote for iOS, there are new preference settings that allow you to control settings related to the following:
+Starting with Version 2.30 of Word for iOS, Excel for iOS, and PowerPoint for iOS, and with Version 16.30 of OneNote for iOS, there are new preference settings that allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used.
 
