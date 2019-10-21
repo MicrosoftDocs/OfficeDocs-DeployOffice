@@ -17,9 +17,10 @@ description: "Explains how to troubleshoot issues with deployments of Office 365
 
 # Troubleshoot issues with shared computer activation for Office 365 ProPlus
 
- **Summary:** Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation.
-  
 If you're having problems getting shared computer activation to work when you deploy Office 365 ProPlus to shared computers in your organization, try the following to fix the problem.
+
+> [!TIP]
+> You can download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_TshootOfficeSCA_Docs) to install Office 365 ProPlus in shared computer activation mode.
 
 <a name="Plan"> </a>
   
