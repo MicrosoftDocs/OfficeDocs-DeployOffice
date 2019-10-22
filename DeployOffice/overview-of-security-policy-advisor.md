@@ -41,7 +41,7 @@ To enable security policy recommendations, sign in to the [portal for managing O
 To review and implement security policy recommendations, do the following:
 
 1. Sign in to the [portal for managing Office 365 ProPlus](https://config.office.com).
-2. If you haven’t already, create a policy configuration for a group in the Office policy configuration service. 
+2. If you haven’t already, [create a policy configuration for a group in the Office policy configuration service](https://docs.microsoft.com/en-us/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration). 
 3. Click **Security**, and then click a group name.
 4. In the policy configuration page, you can review the recommendations for that group and that policy configuration. To see more details about a recommendation, click the policy name. To see the applied policies, click **Applied policies**. 
 5. To enable a recommendation, select the policy, and then click **Apply**. As part of applying a policy, you can allow users to override the policy. For more details, see [Allow users to override a policy](#allow-users-to-override-a-policy).
