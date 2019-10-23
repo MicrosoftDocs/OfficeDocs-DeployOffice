@@ -347,7 +347,7 @@ Defines which Office 365 ProPlus products should not be installed. Note that One
 ```
 
 If a configuration file with ExcludeApp is used to install Office on a device that already has Office 365 ProPlus installed, the ExcludeApp setting is treated differently based on the list of languages:
-- If the list of languages in the configuration file includes all the installed langauges, then the ExcludeApp setting in the file replaces any existing ExcludeApp setting on the device. This is also true if the list of languages in the configuration file includes both all the installed languages and additional languages.
+- If the list of languages in the configuration file includes all the installed languages, then the ExcludeApp setting in the file replaces any existing ExcludeApp setting on the device. This is also true if the list of languages in the configuration file includes both all the installed languages and additional languages.
 - If the list of languages in the configuration file doesn't include all the installed languages, then the ExcludeApp setting in the configuration file will be combined with the ExcludeApp setting on the device. 
 
 
@@ -506,7 +506,7 @@ Example values:
 
 ### PinIconsToTaskBar property (part of Property element)
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7, 8, and 8.1. If you install Office using a system account, which is common when deploying with System Center Configuration Managers, the icons will not be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with System Center Configuration Managers, the icons will not be pinned even if this property is set to **True**.
 
 Optional. The default value is **True**.
 
@@ -535,7 +535,7 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
 ```
 ### All attribute (part of Remove element)
 
-If set to **TRUE**, all Office 365 ProPlus products and languages will be removed.
+If set to **TRUE**, all Office 365 ProPlus products and languages will be removed, including Project and Visio.
 
 Optional. The default value is **FALSE**.
 
