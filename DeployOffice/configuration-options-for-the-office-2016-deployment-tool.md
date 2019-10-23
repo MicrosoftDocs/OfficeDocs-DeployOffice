@@ -535,7 +535,7 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
 ```
 ### All attribute (part of Remove element)
 
-If set to **TRUE**, all Office 365 ProPlus products and languages will be removed.
+If set to **TRUE**, all Office 365 ProPlus products and languages will be removed, including Project and Visio.
 
 Optional. The default value is **FALSE**.
 
