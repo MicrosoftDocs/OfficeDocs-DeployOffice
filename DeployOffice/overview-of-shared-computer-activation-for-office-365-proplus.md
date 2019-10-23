@@ -59,7 +59,10 @@ The [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), co
 After Office 365 ProPlus is installed, you can [verify that shared computer activation is enabled](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md#Enabled) on that computer.
   
 > [!NOTE]
-> If you've already deployed Office 365 ProPlus, you can enable shared computer activation on a computer by using Registry Editor to add a string value of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration. <br/><br/>If you're using Microsoft Application Virtualization (App-V) to deploy Office 365 ProPlus, the registry location is HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\16.0\\Common\\Licensing and it's a DWORD value. <br/><br/>You can also enable shared computer activation by using Group Policy. If you're using Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+> Here are some other ways that you can enable shared computer activation:
+> - Download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_OfficeSCA_Docs).
+> - Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+> - Use Registry Editor to add a string value of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
   
 <a name="Works"> </a>
 
