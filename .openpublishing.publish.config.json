@@ -36,7 +36,8 @@
       "path_to_root": "DeployOffice/common",
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
       "branch": "live",
-      "branch_mapping": {}
+      "branch_mapping": {},
+      "include_in_build": true
     },
     {
     "path_to_root": "_themes.pdf",
