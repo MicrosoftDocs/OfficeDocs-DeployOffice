@@ -28,6 +28,7 @@ When working with enterprise customers who are deploying Office 365 ProPlus, Mic
 
 To deliver the workshop, FastTrack uses this PowerPoint deck, which we encourage you to review and use as part of your deployment planning: 
 
+[![Thumb image for FastTrack assessment workshop PowerPoint deck](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-teams-logical-architecture-thumb.png)](shttps://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.pdf)  <br/>[PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)
 
 To learn more how you can use FastTrack to help with your deployment, see [Microsoft Fastrack](https://fasttrack.microsoft.com/office).
 
