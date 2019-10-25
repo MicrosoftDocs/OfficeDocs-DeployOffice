@@ -21,7 +21,7 @@ description: "Provides information for IT Pros about shared computer activation 
   
 Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios for using shared computer activation:
 
-- Three workers at a factory share a computer, each worker using Office on that computer during their eight-hour shift.
+- Three workers at a factory share the same physical computer, each worker using Office on that computer during their eight-hour shift.
 - Fifteen nurses at a hospital use Office on ten different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
