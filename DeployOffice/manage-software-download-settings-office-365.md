@@ -15,11 +15,14 @@ description: "Provides Office 365 admins with information to help them configure
 
 # Manage software download settings in Office 365
 
-As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Software download settings** page determine which software users can install from the **Software** page in Office 365. Whichever choices you make, they apply to all users in your organization. 
+As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office software download settings** page determine which software users can install from the **My account** > **Apps & devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
+
+> [!TIP]
+> To get to the **Office software download settings** page, sign in to the Office 365 portal with your admin account, and then go to **Admin** > **Show all** > **Settings** > **Services & add-ins**.
   
-If you choose to make some software unavailable to users, they see a message on their **Software** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
+If you choose to make some software unavailable to users, they see a message on their **My account** > **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
-   Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization. 
+*Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.*
   
 ## Choose how often to get feature updates for Office
 For Office 365 ProPlus, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
@@ -47,13 +50,10 @@ In addition to Office, you can download InfoPath 2013 and SharePoint Designer 20
 After you download the software, you can use your existing software deployment tools and processes to deploy InfoPath or SharePoint Designer to your users.
   
 ## Additional considerations about managing software download settings in Office 365
-- The list of Office software that appears on the **Software download settings** page depends on the type of Office 365 plan that your organization has. 
+- The list of Office software that appears on the **Office software download settings** page depends on the type of Office 365 plan that your organization has. 
     
 - Users have to be local administrators on their computers to install Office software. If users aren't local administrators, you'll have to install Office for them.
     
-- For users to be able to install Office, you need to [assign them an Office 365 license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- For users to be able to install Office, you need to [assign them an Office 365 license](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).
     
 - By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office Deployment Tool to deploy Office to your users without those apps.
-    
-   
-
