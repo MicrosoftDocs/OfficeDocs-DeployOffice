@@ -15,14 +15,14 @@ description: "Provides Office 365 admins with information to help them configure
 
 # Manage software download settings in Office 365
 
-As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office software download settings** page determine which software users can install from the **My account** > **Apps & Devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
+As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office software download settings** page determine which software users can install from the **My account** > **Apps & devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
 
 > [!TIP]
 > To get to the **Office software download settings** page, sign in to the Office 365 portal with your admin account, and then go to **Admin** > **Show all** > **Settings** > **Services & add-ins**.
   
-If you choose to make some software unavailable to users, they see a message on their **My account** > **Apps & Devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
+If you choose to make some software unavailable to users, they see a message on their **My account** > **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
-    Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization. 
+*Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.*
   
 ## Choose how often to get feature updates for Office
 For Office 365 ProPlus, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
