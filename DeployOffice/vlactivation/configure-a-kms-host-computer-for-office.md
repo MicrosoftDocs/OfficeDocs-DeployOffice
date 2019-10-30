@@ -26,7 +26,7 @@ Office supports KMS host computers running on the following operating systems, d
 - **Office 2019:** At least Windows Server 2012 or at least Windows 8.1 (volume editions)
 - **Office 2016:** At least Windows Server 2008 R2 or at least Windows 7 Service Pack 1 (volume editions)
  
-You can download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). To get the KMS key, sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
+You can download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/download/details.aspx?id=57342), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). To get the KMS key, sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
 
 > [!NOTE]
 > If you are setting up KMS on Windows 7 volume license edition or Windows Server 2008 R2, you must first install a patch as described in Microsoft Knowledge Base article [2757817](https://go.microsoft.com/fwlink/p/?LinkId=254800). This patch allows the KMS host computer to activate Office clients that run on Windows 8.
@@ -39,7 +39,7 @@ To configure the KMS host computer to activate Office, you must be a member of t
 If your KMS host computer has internet access, do the following:
 
 1. Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
-2. On the KMS host computer, download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). 
+2. On the KMS host computer, download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/en-us/downloads/details.aspx?id=57342), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). 
 3. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack on the KMS host computer and then opens the Volume Activation Tools wizard.
 4. Follow the steps in the Volume Activation Tools wizard. Enter your KMS key when prompted.
 5. If you have a firewall, make sure port 1688 is open to allow the KMS host service through the firewall.
