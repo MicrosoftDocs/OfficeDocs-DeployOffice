@@ -85,7 +85,7 @@ Using the [Office Customization Tool](https://config.office.com/), create the co
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend matching the same options as the pilot group in Step 3, except for the following changes:
  - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the pilot group 
  - **Installation:** Select Local source, and type "\\\Server\Share\O365\SAC" for the source path. Office will be downloaded to and then installed from **\\\server\share\O365\SAC** on your network 
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\O365** folder.
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-broad-SAC.xml** in the **\\\Server\Share\O365** folder.
 
 This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the source path points to a different folder (SAC), and the update channel is set to Semi-Annual Channel ("Broad").
 
