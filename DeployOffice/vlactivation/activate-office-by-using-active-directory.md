@@ -38,7 +38,7 @@ To configure Active Directory-based activation, you must have Domain Administrat
 
 1. Sign in to a domain controller in Active Directory and use Server Manager to install the Volume Activation Services role.
 2. Sign in to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) and get your KMS key for your version of Office.
-3. Download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/downloads/details.aspx?FamilyID=878fef7e-3f4d-4d22-a423-f447c0f5bfdd), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164).
+3. Download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/downloads/details.aspx?id=57342), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164).
 4. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
 5. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
     
