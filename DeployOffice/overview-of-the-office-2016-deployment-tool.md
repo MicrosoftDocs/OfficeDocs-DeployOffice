@@ -136,7 +136,7 @@ From a command prompt, run the ODT executable in configure mode with a reference
 
  `setup.exe /configure installconfig.xml`
 
-You must run the executable from the client computer on which you want to install Office and you must have local administrator permissions on that computer.
+You must have local administrator permissions on the client computer. You can run the executable from the client computer on which you want to install Office or you can put the ODT and the configuration file on a network share and run it from there. If you use a network share, make sure to pass the full network path for both the setup.exe and the configuration file to the command.
 
  **Step 3: Verify that installation was successful**
 
