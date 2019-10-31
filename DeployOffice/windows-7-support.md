@@ -40,7 +40,7 @@ This means that if you want to continue to deploy and update Office 365 ProPlus 
 Version 2002 will be available until January 2023 and will receive only security updates, as needed, during that time.
 
 > [!NOTE]
-> - Versions on Semi-Annual Channel are usually available only for 14 months, but we are making an exception just for Version 2002 to align with how long ESU for Windows 7 is available. 
+> - Versions on Semi-Annual Channel are usually available only for 14 months, but we're making an exception just for Version 2002 to align with how long ESU for Windows 7 is available. 
 > - This extended availability for Version 2002 also applies to other update channels, such as Monthly and Semi-Annual (Targeted).
 > - The extended availability of Version 2002 until January 2023 only applies to devices running Windows 7.
 
