@@ -114,7 +114,8 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
  </Configuration>
 ```
 
-We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered by SCCM only. Note that the scheduled task "Office Automatic Updates 2.0", which is registered during Office 365 ProPlus installation, is initiating product configuration tasks such as channel management and must remain enabled.
+We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered only by SCCM. Note that the scheduled task Office Automatic Updates 2.0, which is registered during Office 365 ProPlus installation, must remain enabled. That task initiates product configuration tasks such as channel management.
+ 
 
 <a name="BKMK_Package"> </a>
 ## Enable Office 365 clients to receive updates from the Office CDN instead of Configuration Manager
