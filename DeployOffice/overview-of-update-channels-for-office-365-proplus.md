@@ -46,7 +46,8 @@ Monthly Channel releases are cumulative. The most current Monthly Channel releas
 A Monthly Channel release is supported only until the next Monthly Channel release is available. No new security updates are provided for previous Monthly Channel releases.
   
 > [!NOTE]
-> There is also Monthly Channel (Targeted). This update channel provides an early look at the upcoming Monthly Channel release. It is a supported update channel, and usually is available at least one week ahead of time when it's a Monthly Channel release that contains new features. 
+> - There is also Monthly Channel (Targeted). This update channel provides an early look at the upcoming Monthly Channel release. It is a supported update channel, and usually is available at least one week ahead of time when it's a Monthly Channel release that contains new features.
+> - Monthly Channel (Targeted) is also part of the Office Insider program. For more information, see [Office Insider for Business](https://insider.office.com/en-us/business).
   
 <a name="BKMK_SAC"> </a>
 ## Semi-Annual Channel for Office 365 ProPlus
