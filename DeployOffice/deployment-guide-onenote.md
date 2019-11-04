@@ -18,7 +18,7 @@ description: "Provides an overview for admins on how to deploy OneNote 2016 or O
 > Based on customer feedback, we're making the following changes for OneNote 2016:
 >- We're continuing mainstream support for OneNote 2016 until October 2023, which aligns with mainstream support for Office 2019. Extended support for OneNote 2016 remains the same, ending in October 2025.
 >- We're adding some new features to OneNote 2016, starting with Dark Mode.
->- Beginning in March 2020, when you deploy Office 365 ProPlus, Office 365 Business, or Office 2019, OneNote 2016 will be installed by default alongside the other Office apps, such as Excel and PowerPoint.<br/><br/>
+>- Beginning in March 2020, OneNote 2016 will be installed alongside the other Office apps, such as Excel and PowerPoint, when you deploy Office 365 ProPlus, Office 365 Business, or Office 2019. You will still be able to exclude OneNote 2016 from being installed.<br/><br/>
 > We'll be updating this article soon to cover these new changes. In the meantime, for more information, [read this blog post](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) from the OneNote team.
 
 
