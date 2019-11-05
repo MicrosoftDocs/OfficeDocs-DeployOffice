@@ -30,7 +30,7 @@ The following are the requirements for using the Office cloud policy service wit
 - At least Version 1808 of Office 365 ProPlus.
 - User accounts created in or synchronized to Azure Active Directory (AAD). The user must be signed into Office 365 ProPlus with an AAD-based account.
 - Security groups created in or synchronized to Azure Active Directory (AAD), with the appropriate users added to those groups.
-- To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Desktop Analytics Administrator.
+- To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Office Apps admin.
 
 > [!IMPORTANT]
 > The Office cloud policy service isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
