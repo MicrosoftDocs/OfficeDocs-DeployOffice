@@ -9,6 +9,7 @@
 ## [Assess your environment and requirements](assess-office-365-proplus.md)
 ## [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 
 # Upgrade
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
