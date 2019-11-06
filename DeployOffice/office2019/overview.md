@@ -50,7 +50,7 @@ In addition to Click-to-Run, the following are some other changes that you need 
 
 ## What's stayed the same in Office 2019?
 
-Even though there is a different installation technology, you can still use the same software distribution tools, such as System Center Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.
+Even though there is a different installation technology, you can still use the same software distribution tools, such as Microsoft Endpoint Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.
 
 The major version of Office 2019 is staying at 16.0, so some additional things are staying the same for those upgrading from Office 2016, including the following:
 

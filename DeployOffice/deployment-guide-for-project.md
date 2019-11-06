@@ -44,7 +44,7 @@ If you want to have more control over how Project is deployed to your users, you
     
 3. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy Project Online Desktop Client on your users' computers. 
     
-If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Project. 
+If you already use other tools to deploy software to your users, such as Microsoft Endpoint Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Project. 
 
 ## Deploy a volume licensed version of Project 2019
 
@@ -54,7 +54,7 @@ Here are the general steps to deploy a volume licensed version of Project Profes
     
 2. Use the Office Deployment Tool and a configuration.xml file to download and install Project from 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
 
-If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Project. 
+If you already use other tools to deploy software to your users, such as Microsoft Endpoint Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Project. 
   
 > [!NOTE]
 > - Volume licensed versions of Project 2019 are available directly from the Office CDN instead of from the Volume Licensing Service Center. 
@@ -73,7 +73,7 @@ Here are the general steps to deploy a volume licensed version Project Professio
     
 4. Deploy Project 2016 to your users. For example, you can send your users a script to run that installs Project from a network share on your local network.
     
-If you already use other tools to deploy software to your users, such as System Center Configuration Manager, you can use the Office Customization Tool (OCT) along with those tools to deploy Project. 
+If you already use other tools to deploy software to your users, such as Microsoft Endpoint Configuration Manager, you can use the Office Customization Tool (OCT) along with those tools to deploy Project. 
   
 > [!NOTE]
 > The Office Customization Tool (OCT) is only available for versions of Project 2016 that are purchased as part of a volume licensing agreement. The OCT can't be used for retail versions of Project 2016, such as versions bought at a retail store or online. 

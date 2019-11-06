@@ -36,7 +36,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 ## Deploy
 
-Learn about your deployment options, how to deploy from a local source, and how to use System Center Configuration Manager to deploy Office 365 ProPlus. 
+Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus. 
 
 - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 
@@ -52,7 +52,7 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 
-- [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
+- [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
 
 - [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 

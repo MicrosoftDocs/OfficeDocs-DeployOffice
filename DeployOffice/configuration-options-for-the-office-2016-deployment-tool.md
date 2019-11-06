@@ -189,7 +189,7 @@ For more information about using MigrateArch, see [Change an Office 365 ProPlus 
 
 Optional. For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Office 365 ProPlus is automatically disabled for client devices.
 
-For more information, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+For more information, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 
 Allowed values: 
 
@@ -326,7 +326,7 @@ Allowed values:
 - AcceptEULA="FALSE"
 
 > [!NOTE]
-> If you deploy a version of Office before Version 1803, this setting will be applied only if you install with the user's account. System Center Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
+> If you deploy a version of Office before Version 1803, this setting will be applied only if you install with the user's account. Microsoft Endpoint Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
 
 ## ExcludeApp element
 
@@ -506,7 +506,7 @@ Example values:
 
 ### PinIconsToTaskBar property (part of Property element)
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with System Center Configuration Managers, the icons will not be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Endpoint Configuration Managers, the icons will not be pinned even if this property is set to **True**.
 
 Optional. The default value is **True**.
 
