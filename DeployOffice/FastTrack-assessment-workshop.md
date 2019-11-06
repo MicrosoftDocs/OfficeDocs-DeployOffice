@@ -30,5 +30,6 @@ To learn more how you can use FastTrack to help with your deployment, see [Micro
 
 To deliver the workshop, FastTrack uses the PowerPoint deck below, which we encourage you to review and use as part of your deployment planning. The workshop aligns to the phases and best practices available in the [Office Deployment Guide](https://aka.ms/officedeployment).
 
-[![Thumb image for FastTrack assessment workshop PowerPoint deck](images/thumbnail-O365-ProPlus-Assessment-Workshop.png)](images/O365-ProPlus-Assessment-Workshop.pdf)  <br/>[PDF](images/O365-ProPlus-Assessment-Workshop.pdf) | [PowerPoint](images/O365-ProPlus-Assessment-Workshop.pptx)
+[![Thumb image for FastTrack assessment workshop PowerPoint deck](images/thumbnail-O365-ProPlus-Assessment-Workshop.png)](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/blob/live/DeployOffice/images/O365-ProPlus-Assessment-Workshop.pdf)  <br/>[PDF](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/blob/live/DeployOffice/images/O365-ProPlus-Assessment-Workshop.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/blob/live/DeployOffice/images/O365-ProPlus-Assessment-Workshop.pptx)
+
 
