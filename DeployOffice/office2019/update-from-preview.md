@@ -78,7 +78,7 @@ Replace *yourkey* with your MAK client activation key. You will need to restart 
 
 ## Additional information for Office on Windows
 
-- The ospp.vbs commands can be included in a script that you can deploy and run across the computers in your organization. For example, by using System Center Configuration Manager.
+- The ospp.vbs commands can be included in a script that you can deploy and run across the computers in your organization. For example, by using Microsoft Endpoint Configuration Manager.
 - You can also use the Volume Activation Management Tool (VAMT) 3.1 to centrally manage volume activation. You need to use VAMT 3.1 with Office 2019. VAMT 3.0 won't work with Office 2019. For more information about VAMT, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
 - This information also applies to updating Project Professional 2019 Preview to Project Professional 2019 and updating Visio Professional 2019 Preview to Visio Professional 2019.
 - If you have the 32-bit version of Office 2019 Preview installed and want to install the 64-bit version of Office 2019, you need to uninstall Office 2019 Preview first. You also must uninstall Office 2019 Preview if you’re switching from the 64-bit version to the 32-bit version.

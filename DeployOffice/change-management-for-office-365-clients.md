@@ -189,7 +189,7 @@ The following table lists the deployment tools that can be used for Windows 10 a
 |:-----|:-----|:-----|
 |Windows Update for Business  <br/> |Yes  <br/> |No  <br/> |
 |Windows Server Update Services  <br/> |Yes  <br/> |No  <br/> |
-|System Center Configuration Manager  <br/> |Yes  <br/> |Yes  <br/> |
+|Microsoft Endpoint Configuration Manager  <br/> |Yes  <br/> |Yes  <br/> |
 |Microsoft InTune  <br/> |Yes  <br/> |Yes  <br/> |
 |3rd party software deployment tools  <br/> |Yes  <br/> |Yes  <br/> |
 

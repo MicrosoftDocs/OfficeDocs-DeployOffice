@@ -257,7 +257,7 @@ The computer running the agent must also run the latest version of the Universal
 
     For client local installations, you must run the .msi file as an administrator. You can deploy the MSI package silently by using the /quiet parameter with the MSI. Refer to the MSI help for the full set of available parameters. 
 
-    For large-scale deployments, you can [deploy Telemetry Agent by using System Center Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=286403).
+    For large-scale deployments, you can [deploy Telemetry Agent by using Microsoft Endpoint Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=286403).
 
 
 <a name="configure"> </a>

@@ -45,7 +45,7 @@ description: Office deployment
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Deploy</h3>
-                                                    <p>Find guidance about how to deploy Office 365 ProPlus from the cloud, from a local source, and with System Center Configuration Manager.</p>
+                                                    <p>Find guidance about how to deploy Office 365 ProPlus from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.</p>
                                                 </div>
                                             </div>
                                         </div>

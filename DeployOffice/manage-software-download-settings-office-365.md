@@ -36,7 +36,7 @@ If you don't want your users to install software themselves from Office 365, you
   
 To manually deploy Office, as well as Project or Visio, you need to use the Office Deployment Tool. You can download the Office Deployment Tool for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-You use the Office Deployment Tool to both download and deploy Office, such as Office 365 ProPlus, to your users. If you already use other tools, such as System Center Configuration Manager, to deploy software to your users, you can use the Office Deployment Tool along with those tools to deploy Office.
+You use the Office Deployment Tool to both download and deploy Office, such as Office 365 ProPlus, to your users. If you already use other tools, such as Microsoft Endpoint Configuration Manager, to deploy software to your users, you can use the Office Deployment Tool along with those tools to deploy Office.
   
 For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
   

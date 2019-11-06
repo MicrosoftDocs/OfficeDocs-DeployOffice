@@ -124,9 +124,9 @@ If you have saved the configuration.xml file with a different name, use that nam
 Once the installation is complete, you are returned to a command prompt and you can go open Office 2019 programs you’ve installed.
 
 
-## Install Office 2019 by using System Center Configuration Manager
+## Install Office 2019 by using Microsoft Endpoint Configuration Manager
 
-You can also use System Center Configuration Manager to deploy volume licensed versions of Office 2019. Configuration Manager (Current Branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file. 
+You can also use Microsoft Endpoint Configuration Manager to deploy volume licensed versions of Office 2019. Configuration Manager (Current Branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file. 
 
 - **Configuration Manager (Current Branch):** If you’re using Configuration Manager (Current Branch), you can use the Office 365 Client Installation wizard to deploy Office 2019. You must be using at least version 1710, but version 1806 is recommended. You’ll see an entry for Office Professional Plus 2019 in the Office 365 Client Installation wizard. On that same page, you can also select to install Project and Visio.
 

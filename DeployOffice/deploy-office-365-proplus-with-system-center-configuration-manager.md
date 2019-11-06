@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus with System Center Configuration Manager"
+title: "Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)."
+description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)."
 ---
 
-# Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)
+# Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)
 
-Follow the steps in this article to deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch). 
+Follow the steps in this article to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch). 
 
 This article applies to deploying with Configuration Manager (Current Branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
     
@@ -33,13 +33,13 @@ If your organization already uses Configuration Manager, we recommend upgrading 
 The steps in this article covers these features and shows you how to implement our best practice recommendations. 
 
 > [!NOTE] 
-> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more details, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more details, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 
 ## Before you begin
 
 If you haven't already, complete the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
 
-This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction). 
+This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction). 
 
 We recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.  
 
@@ -73,7 +73,7 @@ The deployment groups that you defined in your deployment plan are represented a
 - A pilot group that receives the Semi-Annual Channel (Targeted)
 - A broad group that receives the Semi-Annual Channel
 
-In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections).  
+In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/collections/introduction-to-collections).  
 
 ## Step 3 - Create and deploy the Office application to the pilot group
 
@@ -98,7 +98,7 @@ The Office installation packages are represented as applications in Configuratio
 7. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
 8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
 9. Complete the wizard.
-After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with System Center Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
 
 ## Step 4 - Create and deploy the Office application to the broad group
 

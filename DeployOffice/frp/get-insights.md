@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 Help identify any possible compatibility issues with Microsoft Visual Basic for Applications (VBA) macros and add-ins that may be used in your customers enterprise.
 
-## My customer uses System Center Configuration Manager
+## My customer uses Microsoft Endpoint Configuration Manager
 To help you determine which devices are ready to upgrade to Office 365 ProPlus, there's a new readiness dashboard in Configuration Manager. It includes the following Office 365 ProPlus upgrade readiness tiles that to help you evaluate Office add-in and macro readiness:
 
 - Add-in readiness
@@ -31,7 +31,7 @@ In the Configuration Manager console, go to the Software Library workspace, expa
 
 [Learn more about Office readiness in Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/office-365-dashboard)
 
-## My customer doesn’t use System Center Configuration Manager
+## My customer doesn’t use Microsoft Endpoint Configuration Manager
 For customers who are not using Configuration manager, the Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
 You can download the Readiness Toolkit for free from the Microsoft Download Center.
 

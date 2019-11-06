@@ -44,7 +44,7 @@ Since Click-to-Run handles updates differently than Windows Installer (MSI), the
 - There are no separate downloads for security or quality updates. Updates are already included as part of a new build of Office 2019 that’s posted on the Office CDN.
 - Updates are cumulative, so the latest version of Office 2019 available on the Office CDN includes all the security and quality updates from all the previous versions of Office 2019.
 - When you download and install Office 2019 from the Office CDN, it’s up to date already. You don’t have to download and apply any updates or service packs after you install Office 2019.
-- Since updates are cumulative and already included in the latest version of Office 2019 on the Office CDN, you don’t use Microsoft Updates or Windows Server Updates Services (WSUS) to update Office 2019. But you can use System Center Configuration Manager to help you deploy and manage updates to Office 2019, including controlling when and from where updates are applied. 
+- Since updates are cumulative and already included in the latest version of Office 2019 on the Office CDN, you don’t use Microsoft Updates or Windows Server Updates Services (WSUS) to update Office 2019. But you can use Microsoft Endpoint Configuration Manager to help you deploy and manage updates to Office 2019, including controlling when and from where updates are applied. 
 
 ## Configure where Office 2019 gets updates from
 
@@ -54,7 +54,7 @@ If you don’t want computers installed with Office 2019 to connect to the Offic
 
 Keep in mind that installing and updating Office 2019 from a shared folder on your local network requires significantly more administrative effort and more disk space. For example, you have to keep track of when new builds of Office 2019 are available and then download the updated version of Office 2019 to your network. Downloading to a shared folder on your local network will always download a full copy of the updated version of Office.
 
-You can also use enterprise software deployment tools, such as System Center Configuration Manager, to help you update Office 2019.
+You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to help you update Office 2019.
 
 The location where Office 2019 looks for updates is specified in the configuration.xml file that you use to deploy Office 2019 with the Office Deployment Tool.  For more information, see [Deploy Office 2019 (for IT Pros)](deploy.md). You can also use [Group Policy](#use-group-policy-to-specify-update-settings).
 
