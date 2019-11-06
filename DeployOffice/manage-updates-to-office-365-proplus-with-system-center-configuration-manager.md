@@ -1,5 +1,5 @@
 ---
-title: "Manage updates to Office 365 ProPlus with System Center Configuration Manager"
+title: "Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "System Center Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business."
+description: "Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business."
 ---
 
-# Manage updates to Office 365 ProPlus with System Center Configuration Manager
+# Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager
 
-System Center Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business.
+Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business.
 
 When Microsoft publishes a new Office 365 client update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an [update package](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md#BKMK_Package) to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office 365 client update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells the Office client where to get the update and when to start the update installation process.
 
@@ -28,14 +28,14 @@ Here's an overview of the steps to enable Configuration Manager to manage Office
 
 3. [Enable Office 365 clients to receive updates from Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md#BKMK_EnableClient)
 
-After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in System Center Configuration Manager](https://technet.microsoft.com/library/mt613209.aspx).
+After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt613209.aspx).
 
 <a name="BKMK_Reqs"> </a>
 ## Requirements for using Configuration Manager to manage Office 365 client updates
 
 To enable Configuration Manager to manage Office 365 client updates, you need the following:
 
-- System Center Configuration Manager (Current Branch)
+- Microsoft Endpoint Configuration Manager (Current Branch)
 
 - An Office 365 client - Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, or Office 365 Business
 
@@ -66,7 +66,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
      You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office 365 client update packages are available.
 
-4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction).
+4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction).
 
 <a name="BKMK_EnableClient"> </a>
 ## Enable Office 365 clients to receive updates from Configuration Manager
@@ -125,7 +125,7 @@ If it meets your business and technical requirements, we recommend updating your
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
+- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
 - Click **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent setting**.
 
 For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).

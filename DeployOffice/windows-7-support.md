@@ -44,7 +44,7 @@ Version 2002 will be available until January 2023 and will receive only security
 > - This extended availability for Version 2002 also applies to other update channels, such as Monthly and Semi-Annual (Targeted).
 > - The extended availability of Version 2002 until January 2023 only applies to devices running Windows 7.
 
-To deploy or update Version 2002 on devices running Windows 7, you can keep using the same  management tools that you’re currently using, such as the Office Deployment Tool or System Center Configuration Manager. Also, Office 365 ProPlus can remain on the same update channel as before.
+To deploy or update Version 2002 on devices running Windows 7, you can keep using the same  management tools that you’re currently using, such as the Office Deployment Tool or Microsoft Endpoint Configuration Manager. Also, Office 365 ProPlus can remain on the same update channel as before.
 
 After you move Office 365 ProPlus to a supported Windows operating system, you can configure Office 365 ProPlus to begin receiving newer versions and feature updates again. Since updates for Office 365 ProPlus are cumulative, you will receive all the feature updates that you missed while the device was running Windows 7.
 

@@ -19,7 +19,7 @@ description: "Unlike earlier versions of Office, individual security updates and
 Unlike earlier versions of Office, individual security updates and other updates for Office 365 ProPlus aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Office 365 ProPlus and puts it on the Internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Office 365 ProPlus is available on the Internet for 12 months. After 12 months, that specific version is no longer supported.
   
 > [!IMPORTANT]
-> Because individual updates aren't available for Office 365 ProPlus, you can't use Windows Update, Windows Server Update Services (WSUS), or System Center Configuration Manager to download and apply individual updates to Office 365 ProPlus. 
+> Because individual updates aren't available for Office 365 ProPlus, you can't use Windows Update, Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager to download and apply individual updates to Office 365 ProPlus. 
   
 To determine which version of Office 365 ProPlus is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **Office Updates** section.
   

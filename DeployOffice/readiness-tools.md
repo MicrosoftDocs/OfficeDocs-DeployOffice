@@ -19,7 +19,7 @@ description: "Provides IT Pros with info about the different application compati
 Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Office 365 ProPlus. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Office 365 ProPlus. The answer can depend on a variety of factors, but in general our recommendation is:
 
  - Use the [Readiness Toolkit](#readiness-toolkit-for-office-add-ins-and-vba) for basic environments where simplified tool deployment and use is desired.
- - Use the [readiness features in Configuration Manager](#office-365-proplus-readiness-features-in-configuration-manager-current-branch), if you already have System Center Configuration Manager (Current Branch) deployed in your organization.
+ - Use the [readiness features in Configuration Manager](#office-365-proplus-readiness-features-in-configuration-manager-current-branch), if you already have Microsoft Endpoint Configuration Manager (Current Branch) deployed in your organization.
  - Use [Office Telemetry Dashboard](#office-telemetry-dashboard) only if your organization needs certain usage and health information.
 
 Typically, organizations go through the following phases when planning and implementing an upgrade to Office 365 ProPlus:
@@ -54,7 +54,7 @@ For more information, see [Use the Readiness Toolkit to assess application compa
 
 ## Office 365 ProPlus readiness features in Configuration Manager (Current Branch)
 
-If you have at least Version 1902 of System Center Configuration Manager (Current Branch), we recommend using Configuration Manager for assessing application compatibility and readiness for Office 365 ProPlus in your organization.
+If you have at least Version 1902 of Microsoft Endpoint Configuration Manager (Current Branch), we recommend using Configuration Manager for assessing application compatibility and readiness for Office 365 ProPlus in your organization.
 
  Configuration Manager extends beyond the Readiness Toolkit to help with the Upgrade phase by providing the following features:
 

@@ -107,7 +107,7 @@ You can download the Administrative Template files (ADMX/ADML) for Group Policy 
   
 ## Choose how you want to deploy Office 365 ProPlus
 
-You can deploy Office 365 ProPlus from the cloud, from a local source on your network, or with System Center Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Office 365 ProPlus, including which applications and languages are installed on which client computers.
+You can deploy Office 365 ProPlus from the cloud, from a local source on your network, or with Microsoft Endpoint Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Office 365 ProPlus, including which applications and languages are installed on which client computers.
   
 For more information, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md). 
   

@@ -27,7 +27,7 @@ The [Office Customization Tool](https://config.office.com/) creates the configur
 To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and application settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English version of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German version of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or another software distribution solution to deploy Office in your organization. 
   
 > [!NOTE] 
-> If you use System Center Configuration Manager (Current Branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more details, see [Deploy Office 365 ProPlus with System Center Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
+> If you use Microsoft Endpoint Configuration Manager (Current Branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more details, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md).
 
 ## Create a configuration file
 

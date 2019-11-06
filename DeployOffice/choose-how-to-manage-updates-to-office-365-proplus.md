@@ -31,7 +31,7 @@ Which way is right for your organization depends on how much administrative effo
 In most cases, you use the Office Deployment Tool or Group Policy to [configure the appropriate update settings](configure-update-settings-for-office-365-proplus.md).
   
 > [!IMPORTANT]
-> Because individual updates aren't available for Office 365 ProPlus, you can't use Windows Update, Windows Server Update Services (WSUS), or System Center Configuration Manager to download and apply individual updates to Office 365 ProPlus. 
+> Because individual updates aren't available for Office 365 ProPlus, you can't use Windows Update, Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager to download and apply individual updates to Office 365 ProPlus. 
   
 ## Apply updates automatically from the Internet to Office 365 ProPlus
 <a name="Internet"> </a>
@@ -54,7 +54,7 @@ You'll have to use the Office Deployment Tool to [download updated versions of O
 ## Apply updates by installing an updated version of Office 365 ProPlus
 <a name="Install"> </a>
 
-Instead of using automatic updates, you can deploy an updated version of Office 365 ProPlus to your users by using the Office Deployment Tool. You can use the Office Deployment Tool together with software distribution tools, such as System Center Configuration Manager or Microsoft Intune.
+Instead of using automatic updates, you can deploy an updated version of Office 365 ProPlus to your users by using the Office Deployment Tool. You can use the Office Deployment Tool together with software distribution tools, such as Microsoft Endpoint Configuration Manager or Microsoft Intune.
   
 This option is useful if you want to control which version of Office 365 ProPlus users have, and you want to control which users get updated and when they get updated. This option provides the most control, but also requires the most administrative effort.
   

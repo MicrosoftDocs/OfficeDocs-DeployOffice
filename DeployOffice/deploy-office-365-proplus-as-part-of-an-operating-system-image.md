@@ -79,7 +79,7 @@ The location of the ospp.vbs script depends on whether you install the 32-bit or
 ### Step 5: Save the operating system image
 <a name="Step5"> </a>
 
-You can use Windows ADK or MDT 2012 to save the operating system image file that you'll deploy to your users. You can also use [System Center Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=312997).
+You can use Windows ADK or MDT 2012 to save the operating system image file that you'll deploy to your users. You can also use [Microsoft Endpoint Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=312997).
   
 ### Step 6: Test that the operating system image works
 <a name="Step6"> </a>
