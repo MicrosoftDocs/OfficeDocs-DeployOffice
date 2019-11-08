@@ -70,6 +70,7 @@ For more information, see the following:
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Office 365 ProPlus
@@ -96,6 +97,7 @@ For more information, see the following:
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 ## Optional connected experiences for Office 365 ProPlus
 
@@ -113,6 +115,7 @@ For more information, see the following:
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 ## Required service data for connected experiences
 

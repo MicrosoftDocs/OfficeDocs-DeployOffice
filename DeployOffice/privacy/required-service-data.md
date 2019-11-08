@@ -62,6 +62,7 @@ If you’re the admin for your organization, you might also be interested in the
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 ## Examples of events for service diagnostic data
 
