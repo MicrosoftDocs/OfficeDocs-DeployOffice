@@ -24,7 +24,7 @@ If you have a work or school account, your organization’s admin may have provi
 > - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 > - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 > - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
-- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
+> - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 ### If you use these services, what terms of use do you need to agree to?
 
