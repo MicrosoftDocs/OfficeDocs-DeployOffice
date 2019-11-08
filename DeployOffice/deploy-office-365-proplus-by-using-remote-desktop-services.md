@@ -122,6 +122,6 @@ After you've completed all the RDS configuration steps, users can connect to any
 
 [Remote Desktop Services Overview (Windows Server 2012 and Windows Server 2012 R2)](https://go.microsoft.com/fwlink/p/?LinkID=268149)
 
-(https://docs.microsoft.com/en-gb/office365/servicedescriptions/office-applications-service-description/office-applications-service-description)
+[Office Applications Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-applications-service-description/office-applications-service-description)
 
 
