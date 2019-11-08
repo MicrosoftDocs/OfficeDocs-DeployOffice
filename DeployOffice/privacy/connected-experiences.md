@@ -135,6 +135,7 @@ If you are the admin for your organization, you can use policy settings to deter
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or you will get an error message when you try to use those connected experiences.
 
