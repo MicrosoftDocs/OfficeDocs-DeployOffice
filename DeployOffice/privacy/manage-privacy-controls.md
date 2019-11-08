@@ -40,6 +40,7 @@ These policy settings can be implemented by using either Group Policy or the [Of
 > [!NOTE]
 > - For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
 > - For information about similar settings for Office on iOS devices, see [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md).
+> - For information about similar settings for Office on Android devices, see [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md).
 
 
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
