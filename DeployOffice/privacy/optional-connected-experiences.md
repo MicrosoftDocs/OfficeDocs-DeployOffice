@@ -42,9 +42,9 @@ Note: The privacy setting described below does not control experiences that requ
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
 
-### Office Store 
+### Help > Suggest a Feature
 
-When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider’s terms of use. These can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service and privacy policy of UserVoice](https://outlook.uservoice.com/tos) will apply.
 
 ### Insert online video
 
@@ -53,6 +53,10 @@ When you use the Office Store, your use of the store site itself is licensed by 
 ### Microsoft Error Reporting Program (MERP) 
 
 MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. MERP does not apply to Office client applications that run on Windows.
+
+### Office Store 
+
+When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider’s terms of use. These can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
 
 ### Research
 
@@ -65,19 +69,6 @@ MERP connects to the Watson.microsoft.com service to send diagnostic data when O
 
 The [Weather Bar](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
 
-## Experiences that allow you to submit feedback
-
-### Help > Feedback
-
-When you go to **Help** > **Feedback** and provide feedback or elect to respond to one of our “We’d love your feedback” survey requests when using an Office 365 ProPlus application, the information you provide is sent to Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/) apply. When you submit feedback using the Feedback button, you may optionally submit your email address and/or a screenshot of your screen. This is not required information.  
-
-#### Outlook is an exception
-
-**Help** > **Feedback** in Outlook is different than **Help** > **Feedback** in other Office 365 ProPlus applications. When you submit feedback using **Help** > **Feedback** in Outlook, you allow Microsoft to collect Outlook logs to address potential performance issues. These logs may contain personal information such as your name, email address, contents of your email or search terms. This service is provided to you through your organization’s license with Microsoft. As a result, if you choose to submit feedback via the Feedback button in Outlook, you do not need to enter into a separate agreement with Microsoft and the privacy setting described in this article does not apply.
-
-### Help > Suggest a Feature
-
-Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service and privacy policy of UserVoice](https://outlook.uservoice.com/tos) will apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
