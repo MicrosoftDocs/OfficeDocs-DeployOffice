@@ -39,6 +39,7 @@ If you’re the admin for your organization, you might also be interested in the
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 ## List of essential services for Office 
 
@@ -6451,7 +6452,7 @@ The following fields are collected:
 
 ### fbasilentupdate_appterminationeventreceived
 
-This event indicates Microsoft Autoupdate has received an apple event informing the application has been terminated. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates Microsoft Autoupdate has received an Apple event informing the application has been terminated. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -8174,7 +8175,7 @@ The following fields are collected:
 
 ### msupdate_cli_eventhandler_config
 
-This event indicates Microsoft Autoupdate Command Line Interface module received an apple event to configure. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to configure. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -8215,7 +8216,7 @@ The following fields are collected:
 
 ### msupdate_cli_eventhandler_updates
 
-This event indicates Microsoft Autoupdate Command Line Interface module received an apple event to list updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to list updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -10053,6 +10054,15 @@ The following fields are collected
 No required service diagnostic data events are collected by Services Configuration.
 
 ## Telemetry events
+
+### Office_FirstRun_Apple_TelemetryOptIn
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our telemetry opt-in flow in First Run Experience. We collect a code that denotes what type of diagnostic data collection option was selected by the user.
+
+The following fields are collected:
+
+ - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
+
 
 ### Office.System.IdentityChanged
 
