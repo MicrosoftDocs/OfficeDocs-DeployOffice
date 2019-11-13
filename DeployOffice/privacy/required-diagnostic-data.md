@@ -6786,45 +6786,51 @@ The following fields are collected:
 
 - **Event Name** - Event Name is the Event Category and Event Label.
 
-#### Office.Apple.SystemHealthAppExitMacAndiOS
+#### Office_Apple_IdentityDomainName
 
-On boot event that captures graceful and ungraceful app exits for further investigation.
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our system as well as investigating causes of failures by certain domain users. We collect the domain used by our users when they authenticate.  We use this data to help identify and fix those issues that might not seem too impactful at a broader level, but that turn out to be very impactful to a certain domain of users.
 
 The following fields are collected:
 
-- **AffectedProcessResidentMemoryOnCrash** – Resident memory of crashed app
+- **Data_Domain** - the domain used for authentication
 
-- **AffectedProcessSessionID** – SessionID of the process in previous exit
+- **Data_IdentityProvider** - The authentication identity provider name. (i.e. LiveId or ADAL)
 
-- **AffectedProcessUnsymbolicatedChecksum** – Goes with Stack hash for symbolization
+- **Data_IdentityProviderEnum** - The authentication identity provider code. (A number)
 
-- **AffectedProcessVirtualMemoryOnCrash** – Virtual memory of crashed app
+#### Office_Apple_SystemHealthAppExitMacAndiOS
 
-- **AffectedSessionBuildNumber** – App version
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our Office applications as well as for investigating causes of failures. We collect data on each application exit to determine whether an application exited gracefully.
 
-- **AffectedSessionDuration** – Duration of session in seconds before crash
+The following fields are collected:
 
-- **AffectedSessionIDSMatch** – Boolean to verify whether reporting session id is the same as picked up by MERP
+- **Data_AffectedProcessSessionID** - The identifier for the session that experience the application exit.
 
-- **AffectedSessionLongBuildNumber** – Long build number
+- **Data_AffectedSessionBuildNumber** - The minor version of the application in which an application exit was observed.
 
-- **AffectedSessionMERPSessionID** – Session ID of MERP
+- **Data_AffectedSessionDuration** - The length of the session from start to exit
 
-- **AffectedSessionOSLocale** – OS Locale
+- **Data_AffectedSessionIDSMatch** - An indicator of telemetry health.
 
-- **AffectedSessionOSVersion** – OS version
+- **Data_AffectedSessionMERPSessionID** - An indicator of telemetry health.
 
-- **AffectedSessionStackHash** – Hash of the crashed app’s stack trace
+- **Data_AffectedSessionOSLocale** - The Locale of the OS under which the application exit was observed.
 
-- **AffectedSessionStartTime** – Datetime of session start
+- **Data_AffectedSessionOSVersion** - The OS version under which the application exit was observed.
 
-- **AffectedSessionUAEType** – Enum giving us information on what type of crash it was
+- **Data_AffectedSessionResidentMemoryOnCrash** - The amount of resident memory that was consumed when the application exit occurred
 
-- **AffectedSessionVersion** – App version
+- **Data_AffectedSessionStackHash** - An identifier that will denote the specific error being hit.
 
-- **DeviceModel** – Hardware model
+- **Data_AffectedSessionStartTime** - The time at which the session started.
 
-- **ExitWasGraceful** – Was previous app exit graceful?
+- **Data_AffectedSessionUAEType** - The type of application exit observed (if it was an ungraceful exit, this code will denote the type of error observed)
+
+- **Data_AffectedSessionVersion** - The major version of the application in which an application exit was observed.
+
+- **Data_AffectedSessionVirtualMemoryOnCrash** - The amount of virtual memory that was consumed when the application exit occurred.
+
+- **Data_ExitWasGraceful** - Whether the application Exit was graceful or ungraceful.
 
 #### Office.Extensibility.COMAddinUnhandledException
 
@@ -6909,6 +6915,11 @@ The following fields are collected:
 - **RemoterType** - Specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF, etc.) used to activate the add-in
 
 - **StoreType** - Origin of the app
+
+- **Tag**- Specifies where exactly the code has failed using the unique tag associated with it.
+
+- **UsesSharedRuntime** - indicates the app uses sharedRuntime or not.
+
 
 #### Office.Extensibility.VbaTelemetryBreak
 
