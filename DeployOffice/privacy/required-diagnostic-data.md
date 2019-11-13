@@ -7203,6 +7203,20 @@ The following fields are collected:
 
 Poor response time or performance for scenarios such as application start up or opening a file.
 
+#### Initial_page_landing 
+ 
+This event helps track the type of experience that users see when they land in our application page.  This data is used to determine the traffic of users piped into each experience in our application and also helps us to easily consolidate experimentation results.
+ 
+The following fields are collected: 
+
+- **Page** - This is used to track the type of experience that user first sees when they land on our page. Possible values are “Trial”, “Skip”, “Prebundled”, “Subscription” etc.
+
+- **storeExperience** - This is used to determine if user was eligible to see the Store SDK Experience.
+
+- **stringVariant** - This is used to determine the type of strings that user sees when they land on our page. Note that for any page such as “Trial”, user can be eligible to see different strings based on whether they had Legacy Office installed, or if they had previously activated Office. Possible enumerations of this property are “LegacyUpsell”, “OfficeOpened”, “Default”, “YesIntent”, “NoIntent” etc.
+
+- **windowsBuildType** - This is used to track the type of WindowsBuildType that user is on. i.e. “RS4”, “RS5”, “RS19H1”, “Vibranium etc. As our experiences are usually targeted to different WindowsBuildTypes, this property is vital in differentiating between rollouts. 
+
 #### IpcpBootstrapUser
 
 Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpBootstrapUser API call is made.
@@ -7272,6 +7286,211 @@ The following fields are collected:
 - **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
 
 - **UserInfo.UserObjectId** - The user object Id
+
+#### json_parse_error 
+ 
+This event denotes that an error is thrown by the json parser.  We will be able to debug the read registry string that was sent to the json parser, to allow a smooth experience for our users.
+ 
+The following fields are collected: 
+
+- **Error** - This consists of the error message that the error object returns.
+
+#### Office_Apple_Apple_AppBoot_Mac
+
+This event is collected for Office applications running under Apple platforms. The event is used to collect the time taken to boot the app, as well as some details on the type of boot done. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_ Data_EvtBootTimerDocStageReady** - Time elapsed until reaching certain point in code.
+
+- **Data_DocumentRecoveryInvoked** - Whether document recovery was invoked during boot.
+
+- **Data_EvtBootTimerBootIdle** - Time elapsed until reaching certain point in code.
+
+- **Data_EvtBootTimerFinishLaunchEnd** - Time elapsed until reaching certain point in code.
+
+- **Data_EvtBootTimerLaunchDidFinish** - Time elapsed until reaching certain point in code.
+
+- **Data_EvtBootTimerLaunchStart** - Time elapsed until reaching certain point in code.
+
+- **Data_EvtBootTimerMainStart** - Time elapsed until reaching certain point in code.
+
+- **Data_EvtBootTimerStaticInit** - Time elapsed until reaching certain point in code.
+
+- **Data_EvtDockStageReady** - Time elapsed until reaching certain point in code.
+
+- **Data_IsFileOpenAttempted** - Whether a file open was attempted during boot.
+
+- **Data_IsFirstRunAttempted** - Whether the app boot went thru first run experience.
+
+- **Data_SentToBackground** - Whether the app was sent to background during boot.
+
+#### Office_Apple_DiskRuleResultSerializerErrorOnStreamOp
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our telemetry infrastructure. This event denotes an error has occurred.
+
+The following fields are collected:
+
+- **Data_ActualBytesModified** - Number of bytes modified.
+
+- **Data_BytesRequested** - Number of bytes to process.
+
+- **Data_IsWriteOp** - Whether we are about to execute a write operation
+
+#### Office_Apple_MacBootResourceUsage
+
+This event is collected for Office applications running under Apple platforms. This event is collected for Office applications running under Apple platforms. The event is used to collect multiple indicators around the resources being consumed during boot by Office apps. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_BlockInputOperations** - A count of block input operations
+
+- **Data_BlockOutputOperations** - A count of block output operations
+
+- **Data_InvoluntaryContextSwitches** - The number of involuntary context switches
+
+- **Data_MainThreadCPUTime** - An elapsed time measurement
+
+- **Data_MaxResidentSize** - A memory size measurement
+
+- **Data_MessagesReceived** - The number of messages received
+
+- **Data_MessagesSent** - The number of messages sent
+
+- **Data_PageFaults** - A count of page reclaims
+
+- **Data_PageReclaims** - A count of page reclaims
+
+- **Data_ProcessCPUTime** - An elapsed time measurement
+
+- **Data_SharedTextMemorySize** - A memory size measurement
+
+- **Data_SignalsReceived** - The number of signals received
+
+- **Data_Swaps** - A count of data swaps
+
+- **Data_SystemCPUTime** - An elapsed time measurement
+
+- **Data_SystemUpTime** - An elapsed time measurement
+
+- **Data_UnsharedDataSize** - A data size measurement
+
+- **Data_UnsharedStackSize** - A stack size measurement
+
+- **Data_UserCPUTime** - An elapsed time measurement
+
+- **Data_VoluntaryContextSwitchesNvcsw** - The number of voluntary context switches
+
+#### Office_Apple_MAU_Validation
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of the Microsoft Autoupdate component, which is used to distribute and install application updates. The data collected is used for detecting errors and investigating causes of failures.
+
+The following fields are collected:
+
+- **Data_EventID** - We collect a string representing an error code
+
+- **Data_Message** - We collect a string containing a description of the error
+
+#### Office_Apple_MbuInstrument_Hang_Detection_Spin_Control
+
+This event is collected for Office applications running under Apple platforms. The event is logged whenever an application appears to become non-responsive. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_CountSpinControlStart** - A marker than indicates that the application appears to have become unresponsive (or slow to respond)
+
+#### Office_Apple_MbuInstrument_VMOnDocumentClose
+
+This event is collected for Office applications running under Apple platforms. The event is used to collect a snapshot of the state of memory during document close. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_CollectionTime** - A timestamp from the moment in which the data was collected
+
+- **Data_ResidentMemory** - Observed resident memory value
+
+- **Data_VirtualMemory** - Observed virtual memory value
+
+#### Office_Apple_MbuInstrument_VMOnShutdown
+
+This event is collected for Office applications running under Apple platforms. The event is used to collect a snapshot of the state of memory during application shutdown. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_CollectionTime** - A timestamp from the moment in which the data was collected
+
+- **Data_ResidentMemory** - Observed resident memory value
+
+- **Data_VirtualMemory** - Observed virtual memory value
+
+#### Office_Apple_MbuInstrument_VMOnStart
+
+This event is collected for Office applications running under Apple platforms. The event is used to collect a snapshot of the state of memory during application start. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_CollectionTime** - A timestamp from the moment in which the data was collected
+
+- **Data_ResidentMemory** - Observed resident memory value
+
+- **Data_VirtualMemory** - Observed virtual memory value
+
+#### Office_Apple_MsoAppDelegate_BootPerf
+
+This event is collected for Office applications running under Apple platforms. The event is used to collect time and memory consumed during boot by Office apps, as well as some details on the type of boot done. This event helps us monitor our performance and provide performance improvements.
+
+The following fields are collected:
+
+- **Data_AppLaunchDurationMicroSec** - The duration of the boot process
+
+- **Data_AppLaunchFinishSystemTime** - A timestamp at a particular boot code marker
+
+- **Data_AppLaunchStartSystemTime** - A timestamp at a particular boot code marker
+
+- **Data_ResidentMemory** - A snapshot of the available resident memory during boot
+
+- **Data_VirtualMemory** - A snapshot of the available virtual memory during boot
+
+#### Office_Apple_UngracefulAppExitHangsInPreviousSession
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our Office applications as well as for investigating causes of failures. We collect the number of times an application appeared to be unresponsive prior to hitting an ungraceful application exit.
+
+The following fields are collected:
+
+- **Data_HangsDetected** - The number of times the application appeared to become unresponsive prior to observing the ungraceful application exit.
+
+- **Data_LastSessionId** - The identifier for the session in which the ungraceful application exit was observed.
+
+- **Data_SessionBuildNumber** - The minor version of the application in which an ungraceful application exit was observed.
+
+- **Data_SessionVersion** - The major version of the application in which an ungraceful application exit was observed.
+
+#### Office_Apple_WhatsNewErrorAndWarning
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of the What’s New feature. This event denotes that an error/warning occurred while parsing What's New content, pointing to potential content authoring issues.
+
+The following fields are collected:
+
+- **Data_ContentKey** - A pointer to the section of the content that is likely to have caused the error.
+
+- **Data_ErrorCode** - The observed error code (if available)
+
+- **Data_ErrorDescription** - A description of the error (if available)
+
+- **Data_EventID** - We collect a string representing the type of error observed.
+
+- **Data_IncludesHTMLTag** - Whether the content contains rich html
+
+- **Data_IncludesItemsTag** - Whether the content contains a hierarchy of items
+
+- **Data_LengthOfRawData** - The size of the content
+
+- **Data_RequestURL** - The URL from which the content was downloaded
+
+- **Data_ServerLanguageTag** - The language the content was in.
+
+- **Data_StatusCode** - The status of the error (if available)
+
 #### Office.Extensibility.RichApiMethodInvocation
 
 When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance and usage for Rich API method invocation.
