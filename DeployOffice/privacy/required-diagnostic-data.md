@@ -5964,6 +5964,14 @@ The following fields are collected:
 
 - **UTCReplace_AppSessionGuid** - Constant boolean value. Always true.
 
+#### Office.System.SessionHandoff
+
+Indicates that the current Office session is a handoff session. This means that handling of a user’s request to open a document is being handed off to an already running instance of the same application.
+
+The following fields are collected.
+
+- **ParentSessionId** - The ID of the session that will be taking over handling of the users’ request.
+
 #### Office.TelemetryEngine.IsPreLaunch
 
 Applicable for Office UWP applications.  This event is fired when an office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a session is launch session or not.
@@ -5998,6 +6006,21 @@ The following fields are collected:
 
 - **parentSessionId** - Randomly generated guid to identify the app session
 
+#### Office.Visio.VisioIosAppBootTime
+
+This is triggered every time the Visio iOS application boots. It is essential to understand boot performance of the Visio iOS app. Used to troubleshoot poor performance. 
+
+The following fields are collected:
+
+- **Data_AppBootTime** - Duration taken for app to boot, in milliseconds.
+
+#### Office.Visio.VisioIosAppResumeTime 
+
+This event is triggered every time the Visio iOS app resumes focus. It is essential to measure app resume performance and troubleshoot performance issues of Visio iOS app.
+
+The following fields are collected:
+
+- **Data_AppResumeTime** - Duration for app to resume in milliseconds.
 
 #### Office.Word.FileOpen.OpenCmdFileMruPriv
 
