@@ -7435,6 +7435,28 @@ The following fields are collected:
 
   - **Data\_Timeout** - How long the hang lasted
 
+#### Office_Apple_Licensing_Mac_DRActivationFailures
+
+This event is collected for Office applications running under Apple platforms. The event is used for capturing digital river activation failures (the event logs the key and product that was used to activate, as well as the error code received).  This event is used for detecting and helping troubleshoot activation failures (Digital River issues).
+
+The following fields are collected:
+
+- **Data_DigitalRiverID** - Digital River product Id that maps to this Office product SKY
+
+- **Data_Error** - A string representing an activation error code.
+
+- **Data_ProductKey** - Product key that was attempted to be activated
+
+- **Data_ProductKeyHash** - An encoded product key being activated
+
+#### Office_Apple_Licensing_Mac_GetMachineStatusErrors
+
+This event is collected for Office applications running under Apple platforms. The event collects the error code returned while periodically checking the validity of a subscription license. The error code can signify server unavailability but also license expiration, machine count limit, invalid hardware ID, etc.  This event is used to monitor the health of the Office Licensing Service but also to investigate issues related to subscription machine management.
+
+The following fields are collected:
+
+- **Data_Error** - We collect a string representing an error code.
+
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 
 Tracks the various error notifications received from the sandbox. Used to detect the error scenarios in sandbox and there by fixing it, to improve productivity of the user
@@ -7447,6 +7469,13 @@ The following fields are collected:
 
 - **Result** - result error code
 
+#### Office_FirstRun_Apple_MacONIOLKFirstRunStarted
+
+This event is collected for Office applications running under Apple platforms. The event lets us know a user has entered first run experience. We use this event to figure out if the First-Run Experience (FRE) was started successfully.
+
+The following fields are collected:
+
+- **Data_FirstRunCollectionTime** - A timestamp registering the time at which the flow was started.
 
 #### Office.Graphics.ARCExceptions 
 
