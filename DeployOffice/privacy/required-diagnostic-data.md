@@ -6623,6 +6623,72 @@ The following fields are collected:
 
   - **Data\_Data\_ZoomText -** indicates if ZoomText was running during the session
 
+#### Office_Apple_DarkMode
+
+This event is collected for Office applications running under Apple platforms. The event tells us if user is running a System on DarkMode and whether the user overwrote the DarkMode System setting in Office.  We use this event to help ensure accessibility and prioritize user-experience optimization.
+
+The following fields are collected:
+
+- **Data_DarkModeIsEnabled** - Whether DarkMode is enabled in the system.
+
+- **Data_RequiresAquaSystemAppearanceEnabled** - Whether DarkMode is overwritten in Office.
+
+#### Office_Apple_HardwareKeyboardInUse_Apple
+
+This event is collected for Office applications running under Apple platforms. The event tells us that a user is attaching a keyboard to their mobile device. The event helps us improve accessibility and optimize our user experience.
+
+The following fields are collected:
+
+- **Data_CollectionTime** - A timestamp denoting the event collection time.
+
+#### Office_Apple_MbuInstrument_DeviceAccessibilitySettings
+
+This event is collected for Office applications running under Apple platforms. The event collects the state of the different accessibility options available during a session. We use this event to help ensure accessibility and prioritize user-experience optimization.
+
+The following fields are collected:
+
+- **Data_AccessibilityContentSize** - A flag indicating whether this setting is enabled
+
+- **Data_AssistiveTouchRunning** - A flag indicating whether this setting is enabled
+
+- **Data_BoldTextEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_CollectionTime** - A flag indicating whether this setting is enabled
+
+- **Data_DarkerSystemColorsEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_DifferentiateWithoutColor** - A flag indicating whether this setting is enabled
+
+- **Data_GrayscaleEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_GuidedAccessEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_IncreaseContrast** - A flag indicating whether this setting is enabled
+
+- **Data_InvertColorsEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_PreferredContentSizeCategory** - A flag indicating whether this setting is enabled
+
+- **Data_ReduceMotionEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_ReduceTransparency** - A flag indicating whether this setting is enabled
+
+- **Data_ReduceTransparencyEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_ShakeToUndeEnabled** - A flag indicating whether this setting is enabled. (Deprecated - used only on old builds.)
+
+- **Data_ShakeToUndoEnabled** - A flag indicating whether this setting is enabled.
+
+- **Data_SpeakScreenEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_SpeakSelectionEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_SwitchControlRunning** - A flag indicating whether this setting is enabled
+
+- **Data_UAZoomEnabled** - A flag indicating whether this setting is enabled
+
+- **Data_VoiceOverRunning** - A flag indicating whether this setting is enabled
+
 #### Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
 
 This event indicates Office Word reads aloud the text in the document. The event is a heartbeat of the accessibility feature which allows Microsoft to evaluate the feature health of read-aloud-text.
