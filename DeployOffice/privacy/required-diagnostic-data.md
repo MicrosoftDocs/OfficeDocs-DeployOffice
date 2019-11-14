@@ -1233,6 +1233,7 @@ The following are the data subtypes in this category:
 
 Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
 
+
 #### IpcCreateRepublishingLicense
 
 Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcCreateRepublishingLicense API call is made.
@@ -1745,6 +1746,24 @@ The following fields are collected:
 
   - **Data.CollectionTime** - Timestamp of when a crash event was logged
 
+#### Office_Apple_ActivatePerpetual
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of the perpetual activation flow as well as investigating causes of failures by reviewing the FailedAt values.
+
+The following fields are collected:
+
+- **Data_FailedAt** - We collect a string representing where in the activate perpetual license flow we failed.
+
+#### Office_Apple_ActivateSubscription
+
+This event is collected for Office applications running under Apple platforms. We collect information related to the migration from the legacy licensing code stack to the vNext licensing code tack. This is used to monitor the health of the subscription activation flow as well as tracking if this is a migration to licensing vNext and if the primary identity was used.
+
+The following fields are collected:
+
+- **Data_ActivatingPrimaryIdentity** - A true/false value denoting if the primary identity was used. 
+
+- **Data_NULSubscriptionLicensed** - A true/false value denoting the state of subcription
+
 #### Office_Apple_CISAuthTicketWithIdentity
 
 This event is collected for Office applications running under Apple platforms. The event is used for capturing auth token generation failures during InAppPurchase on the Mac (the event logs the error code received).  This event is used for detecting and helping troubleshoot auth token generation failures
@@ -1757,7 +1776,52 @@ The following fields are collected:
 
 - **Data_ValidIdentity** - If the client has a valid identity
 
+#### Office_Apple_InAppAssociationActivity
 
+This event is collected for Office applications running under Apple platforms. 
+We collect information related to product association after an in-app purchase. We log which subscription SKU we are associating.  This is used to monitor the health of the in-app purchase product associations.
+
+The following fields are collected:
+
+- **Data_ProductID** - The subscription SKU we are trying to associate the product to.
+
+#### Office_Apple_InAppPurchaseActivity
+
+This event is collected for Office applications running under Apple platforms. 
+
+We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Office 365 Home, etc.).  This data is used for monitoring the health of the in-app purchase flows.
+
+The following fields are collected:
+
+- **Data_ Data_PurchaseResult** - The result of the purchase operation
+
+- **Data_ProductID** - The product being purchased
+
+- **Data_PurchaseRequestType** - The type of purchase request
+
+#### Office_Apple_InTune
+
+This event is collected for Office applications running under Apple platforms. We collect whether the current session is Intune-managed. This is used to pivot/filter on Intune managed sessions and allows us to investigate potential issues related to Office being run as an Intune-managed application.
+
+The following fields are collected:
+
+- **Data_EventID** - We collect a string representing a code that indicates whether the session is intune-managed.
+
+#### Office_Apple_Licensing_Mac_LicensingState
+
+This event is collected for Office applications running under Apple platforms. The event captures the current state of the license for a session in a machine (OLS license id, SKU being used, grace-period or not, RFM, etc.). The data collected is used for detecting errors and investigating causes of failures. 
+
+The following fields are collected:
+
+- **Data_DidRunPreview** - A string indicating if this session is run under preview
+
+- **Data_LicensingACID** - A string representing a licensing system internal identifier
+
+- **Data_LicensingType** - A string representing the type of license
+
+- **Data_OLSLicenseId** - A string representing a license identifier
+
+- **Data_State** - A string representing the current state of the license
 
 #### Office.ConnectDevice.Activity.Start
 
@@ -1794,6 +1858,258 @@ The following fields are collected:
 - **Activity_StartStopType** - Stop
 
 - **Activity_DateTimeTicks** - Data Time for the activity
+
+#### Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
+
+This event is collected for Office applications running under Apple platforms. The event records when a “Save as” operation takes place and is used to understand and prioritize user-experiences based on file operation information such as location categories.  A “Save as” operation occurs whenever a user creates a new file and saves it for the first time or saves a copy of an existing file to a new location.
+
+The following fields are collected:
+
+- **Data_OriginServiceType** - An abstract categorization of the original location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_ServiceType** - An abstract categorization of the new location of a file after the save is completed like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+#### Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user “@” mentions another user and is used to understand and prioritize user-experiences based on how users collaborate with other users.
+
+The following fields are collected:
+
+- **Data_CharactersTyped** - A numerical value that indicates the total number of characters typed in the “@” mention text.
+
+#### Office_Docs_Apple_DocsUXMacODSPSharingWebViewSharingCompleted 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user chooses to share a cloud document using the OneDrive sharing experience and is used to better understand and prioritize user-experiences based on sharing documents.
+
+The following fields are collected:
+
+- **Data_ShareType** - A hardcoded string that indicates what kind of share operation was completed including but not limited to “Copy Link”, “More apps”, “Teams”.
+
+- **Data_ShareWebViewMode** - A hardcoded string that indicates what kind of share mode was active when the share was completed including but not limited to “ManageAccess”, “AtMentions”, “Share”.
+
+#### Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user selects to look at the list of current co-authors.  This data is used to better understand and prioritize user-experiences relating to co-authoring a document at the same time.
+
+The following fields are collected:
+
+- **Data_CoauthorCount** - A numerical value that represents the total number of people who are currently editing the same document as the user.
+
+#### Office_DocsUI_Collaboration_CollabCornerPeopleGalleryCoauthorsUpdated 
+
+This event is collected for Office applications running under Apple platforms. The event records when the number of active co-authors in a cloud document changes.  This data is used to better understand and prioritize user-experiences relating to co-authoring a document at the same time.
+
+The following fields are collected:
+
+- **Data_CoauthorsJoined** - The number of co-authors that joined the document.
+
+- **Data_CoauthorsLeft** - The number of co-authors that left the document.
+
+- **Data_NewCoauthorCount** - The new count of active co-authors in the document. 
+
+- **Data_OldCoauthorCount** - The previous count of active co-authors before the update.
+
+- **Data_ServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+#### Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
+
+This event is collected for Office applications running under Apple platforms. The event records when a new file is created from the “New from template” experience and is used to better understand and prioritize user-experiences based on document creation information.
+
+The following fields are collected:
+
+- **Data_InHomeTab** - A Boolean value that indicate whether the new file from template was created from the Home tab of the file new experience.
+
+- **Data_InSearch** - A Boolean that indicates whether the file was created when the user was searching for a template.
+
+- **Data_IsHomeTabEnabled** - A Boolean value that indicates if the Home tab is currently available to the user.
+
+- **Data_IsRecommendedEnabled** - A Boolean value that indicates if the “Recommended” experience is currently available to the user.
+
+- **Data_TemplateIndex** - The numerical index of the template file as it is displayed visually to the user.
+
+- **Data_TemplateType** - A classification to help distinguish the type of template like, but not limited to, “Online” templates, “Online search” templates, “Local” templates.
+
+#### Office_DocsUI_DocStage_RecommendedOpen
+
+This event is collected for Office applications running under Apple platforms. The event records when a file-open operation takes place from the recommended files section of the document gallery and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_Success** - A Boolean value to indicate whether the operation succeeded.
+
+#### Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
+
+This event is collected for Office applications running under Apple platforms. The event records when a file open operation takes place and is used to understand and prioritize user-experiences based on file open operation information such as location categories “ServiceType” and the first four characters of the extension.
+
+The following fields are collected:
+
+- **Data_Ext** - The file extension limited to the first four characters of the extension or less.
+
+- **Data_ServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc.
+
+#### Office_DocsUI_FileOperations_OpenFileWithReason 
+
+This event is collected for Office applications running under Apple platforms. The event records when a file open operation takes place and is used to understand and prioritize user-experiences based on file open operation information such as location categories “ServiceType” and from where within Application the user requested to open a file.
+
+The following fields are collected:
+
+- **Data_IsCandidateDropboxFile** - This is a Boolean value that is logged if by inspecting the path of the file we think it might be from a folder that is sync’d by Drop Box.
+
+- **Data_IsSignedIn** - Whether or not a user is signed in when the file is saved.
+
+- **Data_OpenReason** - The open reason is a numerical value that indicates from where within the application a user opened a file.
+
+- **Data_ServiceType** - An abstract numerical categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+#### Office_DocsUI_FileOperations_SaveToURL
+
+This event is collected for Office applications running under Apple platforms. The event records when a “save as” operation takes place and is used to understand and prioritize user-experiences based on file operation information such as location categories and the first four characters of the extension.  A “save as” operation occurs whenever a user creates a new file and saves it for the first time or saves a copy of an existing file to a new location.
+
+The following fields are collected:
+
+- **Data_FileExtension** - The first four characters of the new file’s extension.
+
+- **Data_IsNewFileCreation** - Indicates if the save operation is for a new file or a copy of an existing file.
+
+- **Data_IsSignedIn** - Whether or not a user is signed in when the file is saved.
+
+- **Data_SaveErrorCode** - A numerical value that is set if there is an error to help identify the kind of error.
+
+- **Data_SaveErrorDomain** - Specifies the domain of the SaveErrorCode as defined by Apple SaveErrorDomains “are arbitrary strings used to differentiate groups of codes”.
+
+- **Data_SaveLocation** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_SaveOperationType** - A numerical value defined by Apple’s NSSaveOperationType group of values.
+
+#### Office_DocsUI_SharingUI_CloudUpsellShown 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow.  This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
+
+The following fields are collected:
+
+- **Data_FileStyle** - A numerical value that indicates from what scenario the upsell experience was shown like from an autosave toggle or a share button.
+
+- **Data_FileType** - The first four characters of the current file’s extension.
+
+- **Data_InDocStage** - A Boolean that indicates if the upsell experience is shown from the Document Gallery or from within a document window.
+
+- **Data_IsDocumentOpened** - A Boolean that indicates if the current document for which the upsell experience is being shown is also open.
+
+- **Data_IsDraft** - A Boolean that indicates if the current file has ever been saved.
+
+- **Data_IsSheetModal** - A Boolean that indicates if the upsell experience was presented modally or not.
+
+#### Office_DocsUI_SharingUI_CloudUpsellUpload 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user chooses to upload a new or local file to the cloud and the result of that operation.  This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
+
+The following fields are collected:
+
+- **Data_FileStyle** - A numerical value that indicates from what scenario the upsell experience was shown like an autosave toggle or a share button.
+
+- **Data_FileType** - The first four characters of the current file’s extension.
+
+- **Data_InDocStage** - A Boolean that indicates if the upsell experience is shown from the Document Gallery or from within a document window.
+
+- **Data_IsDefaultServiceLocation** - A Boolean value that indicates if the selected location to upload the document to is the default location.
+
+- **Data_IsDocumentOpened** - A Boolean that indicates if the current document for which the upsell experience is being shown is also open.
+
+- **Data_IsDraft** - A Boolean that indicates if the current file has ever been saved.
+
+- **Data_IsSheetModal** - A Boolean that indicates if the upsell experience was presented modally or not.
+
+- **Data_LocationServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_UploadAction** - A hard coded string that indicates whether the upload was a move or a copy operation.
+
+- **Data_UploadResult** - A hard coded string that indicates the result of the attempt to upload including but not limited to ‘’Success”, “UserCancelledUpload”, and “PreAuthFailed”.
+
+#### Office_DocsUI_SharingUI_CopyLinkOperation
+
+This event is collected for Office applications running under Apple platforms. This event records when a user chooses to share a document by generating a link to a cloud document and is used to better understand and prioritize user-experiences based on sharing documents.
+
+The following fields are collected:
+
+- **Data_ ServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_LinkType** - A hard coded string that describes the kind of invite operation performed like “ViewOnly” and “ViewAndEdit”.
+
+- **Data_ShareScenario** - A hard-coded string description of where within the application’s user interface the file is being shared from including but not limited to, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+
+#### Office_DocsUI_SharingUI_DocsUIOneDriveShare 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user chooses to share a cloud document using the OneDrive sharing experience and is used to better understand and prioritize user-experiences based on sharing documents.
+
+The following fields are collected:
+
+- **Data_ODSPShareWebviewShareError** - If the sharing experience experiences an error this is a numerical value to help identify the reason for the failure.
+
+- **Data_ODSPShareWebviewShareGrantAccessResult** - A Boolean value that when true indicates that a lightweight sharing operation successfully completed.
+
+- **Data_ODSPShareWebviewShareSuccessType** - When a share operation successfully completes this is a numerical value used to determine what kind of sharing operation was completed.
+
+- **Data_WebViewInfoResult** - If the user interface fails to load this is a numerical value to help identify the reason for the failure. 
+
+- **Data_WebViewLoadTimeInMs** - A numerical value that records the amount of time it took for the web user interface to load.
+
+#### Office_DocsUI_SharingUI_InvitePeople 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user chooses to invite people to a cloud document and is used to better understand and prioritize user-experiences based on sharing documents.
+
+The following fields are collected:
+
+- **Data_ ServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_InviteeCount** - The total number of contacts invited to a document in one invite action.
+
+- **Data_LinkType** - A hard-coded string that describes the kind of invite operation performed like “ViewOnly” and “ViewAndEdit”.
+
+- **Data_MessageLength** - A numerical count of the total number of characters sent in the invite message.
+
+- **Data_ShareScenario** - A hard coded string description of where within the application’s user interface the file is being shared from including but not limited to, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+
+#### Office_DocsUI_SharingUI_SendACopyOperation
+
+This event is collected for Office applications running under Apple platforms. The event records when a user chooses to send a copy of a document and is used to better understand and prioritize user-experiences based on sharing documents.
+
+The following fields are collected:
+
+- **Data_IsHomeTabEnabled** - A Boolean value that indicates if the Home tab is currently available to the user.
+
+- **Data_IsRecommendedEnabled** - A Boolean value that indicates if the “Recommended” experience is currently available to the user.
+
+- **Data_OperationType** - A numerical value to indicate what kind of send a copy operation is taking place like sending a copy in an email or sending a copy through Apple’s share control.
+
+- **Data_ServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_ShareFileType** - A hard coded string description of what type of object is being shared including but not limited to, “Document”, “PDF”, “Picture”.
+
+- **Data_ShareScenario** - A hard coded string description of where within the application’s user interface the file is being shared from including but not limited to, “FileMenu”, “OpenTabShareActionMenu”, “RecentTabShareActionMenu”.
+
+- **Data_SharingService** - A Boolean that indicates whether the file was created when the user was searching for a template.
+
+#### Office_DocsUI_SharingUI_UpsellShare 
+
+This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow when trying to share a document.  This data is used to better understand and prioritize user experiences relating to moving documents to cloud locations.
+
+The following fields are collected:
+
+- **Data_FileOperationResult** - A numerical value to indicate whether the operation succeeded.
+
+- **Data_HostedFromDocStage** - A Boolean to indicate if a user is going through the upsell to cloud flow from the DocStage experience or from an open document.
+
+- **Data_isLocalCopyOn** - A Boolean to indicate if the use chose to keep a local copy of the document being uploaded to a cloud location or move the existing document to a cloud location.
+
+- **Data_NewFileType** - An abstract categorization of the location of the new location of the file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_OriginalFileType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc., and explicitly not the actual location of the file.
+
+- **Data_UploadButtonPressed** - A Boolean to indicate if the user chose to upload the current document to a cloud location.
+
+- **Data_UploadError** - A numerical value that indicates the kind of error that occurred if an upload operation fails.
+
+- **Data_UpsellAppearsFromDelegate** - A Boolean value to indicate if the view was shown from the share menu.
 
 #### Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -1852,7 +2168,11 @@ The following fields are collected:
   - **Data.AsyncOpen -** flag to indicate the open had content that arrived after the main body was opened
 
   - **Data.CacheFileId -** connects to Office Document Cache telemetry to enable impact analysis of cache issues on the user experience
+ 
+  - **Data.CFREnabled** - Indicates that CacheFileRuntime is enabled for the session.
 
+  - **Data.CFRFailure** - Indicated that CacheFileRuntime ran into error.
+  
   - **Data.CoauthStatus -** reports collaborative status of the document on Open
 
   - **Data.CountOfMultiRoundTripsDownload -** Count of round trips to the server used to troubleshoot performance and network issues
@@ -2079,6 +2399,8 @@ The following fields are collected:
 
   - **Data.UseClientIdAsSchemaLockId -** flag to control how documents are locked in the service
 
+  - **Data.VersionType** - Indicate which version type the current open operation is.
+
   - **Data.WopiServiceId -** Obsolete, replaced by Data\_Doc\_WopiServiceId
 
 #### Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
@@ -2110,6 +2432,10 @@ The following fields are collected:
   - **Data.CountOfMultiRoundTripsDownload -** Count of round trips to the server used to troubleshoot performance and network issues
 
   - **Data.CountOfMultiRoundTripsUpload -** Count of round trips to the server used to troubleshoot performance and network issues
+  
+  - **Data.CFREnabled** - Indicates that CacheFileRuntime is enabled for the session.
+
+  - **Data.CFRFailure** - Indicated that CacheFileRuntime ran into error.
 
   - **Data.DialogChoice -** Records choice made in any error dialogs
 
@@ -2377,6 +2703,198 @@ The following fields are collected:
 - **DateTime** - Timestamp of when the event is logged
 
 - **EventName** - The name of the event being logged
+
+#### Office_FirstRun_Apple_ActivationResult
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the O365 subscription activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.).
+
+The following fields are collected:
+
+- **Data_ActivationStatusCollectionTime** – A timestamp
+
+- **Data_ActivationStatusError** – An activation error code.
+
+- **Data_ActivationStatusFlowType** – A numeric value indicating the type of activation flow
+
+#### Office_FirstRun_Apple_ActivationStatus
+
+This event is collected for Office applications running under Apple platforms. The event is used to figure out the outcome of the O365 subscription activation along with the flow used to activate (FRE, InApp, Purchase, etc.). We collect data containing the Activation type, flow type (FRE/DocStage/Purchase) and Office Licensing Service ID.
+
+The following fields are collected:
+
+- **Data_ActivationTypeCollectionTime** – A timestamp
+
+- **Data_ActivationTypeFlowType** – A numeric value indicating the type of activation flow
+
+- **Data_ActivationTypeOLSLicense** – An identifier of the License
+
+- **Data_ActivationTypeStatus** – An activation status code.
+
+#### Office_FirstRun_Apple_FirstRunComplete
+
+This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase) and the identity type (MSA/OrgID). We use this event to figure out if the First Run-Experience (FRE) was completed and type of identity used to sign-in (MSA/OrgID).
+
+The following fields are collected:
+
+- **Data_FirstRunCompletedCollectionTime** - A timestamp registering the time at which the flow was completed
+
+- **Data_FirstRunCompletedFlowType** - A code denoting the type of user flow that was completed 
+
+- **Data_FirstRunCompletedFreemiumStatus** - A code representing the status of completion for a freemium user flow
+
+- **Data_FirstRunCompletedIdentityType** - The type of identity of the user that completed the flow
+
+#### Office_FirstRun_Apple_FirstRunStart
+
+This event is collected for Office applications running under Apple platforms. The event lets us know a user has entered first run experience and the flow type being run (FRE/DocStage/Purchase). We use this event to figure out if the First Run-Experience (FRE) was started successfully.
+
+The following fields are collected:
+
+- **Data_FirstRunStartedCollectionTime** - A timestamp registering the time at which the flow was completed
+
+- **Data_FirstRunStartedFlowType** - A code denoting the type of user flow that was completed 
+
+#### Office_FirstRun_Apple_FirstRunStartedAndCompleted
+
+This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase) and the identity type (MSA/OrgID). We use this event to figure out the health and effectiveness of our First-Run Experience (FRE) flow.
+
+The following fields are collected:
+
+- **Data_FirstRunCompletedCollectionTime** - A timestamp registering the time at which the flow was completed
+
+- **Data_FirstRunCompletedFlowType** - A code denoting the type of user flow that was completed  
+
+- **Data_FirstRunCompletedFreemiumStatus** - A code representing the status of completion for a freemium user flow
+
+- **Data_FirstRunCompletedIdentityType** - The type of identity of the user that completed the flow
+
+- **Data_FirstRunStartedCollectionTime** - A timestamp registering the time at which the flow was started
+
+- **Data_FirstRunStartedFlowType** - A code denoting the type of user flow that was started
+
+#### Office_FirstRun_Apple_InAppPurchaseActivationFail
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the In-App purchase activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.). 
+
+The following fields are collected:
+
+- **Data_ActivationFailCollectionTime** - A timestamp registering the time at which the activation failure occurred 
+
+- **Data_ActivationFailFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_AssoicatedSuccessfullyCollectionTime** - A timestamp registering the time at which the association occurred 
+
+- **Data_AssoicatedSuccessfullyFlowType** - A code denoting the type of user flow that was exercised
+
+#### Office_FirstRun_Apple_InAppPurchaseActivationSuccess
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the In-App purchase activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.). 
+
+The following fields are collected:
+
+- **Data_ActivatedSuccessfullyCollectionTime** - A timestamp registering the time at which the activation occurred 
+
+- **Data_ActivatedSuccessfullyFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_AssoicatedSuccessfullyCollectionTime** - A timestamp registering the time at which the association occurred 
+
+- **Data_AssoicatedSuccessfullyFlowType** - A code denoting the type of user flow that was exercised
+
+#### Office_FirstRun_Apple_InAppPurchaseAssociationFailed
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the In-App purchase activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.). 
+
+The following fields are collected:
+
+- **Data_AppChargedSuccessfullyCollectionTime** - A timestamp registering the time at which the purchase was charged
+
+- **Data_AppChargedSuccessfullyFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_AssoicationFailedCollectionTime** - A timestamp registering the time at which the app association failed
+
+- **Data_AssoicationFailedFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_AssoicationFailedResult** - A code denoting type of failure observed
+
+#### Office_FirstRun_Apple_InAppPurchaseAssociationSuccess
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the In-App purchase activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.). 
+
+The following fields are collected:
+
+- **Data_AppChargedSuccessfullyCollectionTime** - A timestamp registering the time at which the purchase was charged
+
+- **Data_AppChargedSuccessfullyFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_AssoicatedSuccessfullyCollectionTime** - A timestamp registering the time at which the app association failed
+
+- **Data_AssoicatedSuccessfullyFlowType** - A code denoting the type of user flow that was exercised
+
+#### Office_FirstRun_Apple_InAppPurchaseFailures
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data on the outcome of the In-App purchase flow.
+
+The following fields are collected:
+
+- **Data_AppStoreFailureFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_AppStoreFailureResult** - The failure result observed
+
+- **Data_CancelRequestFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_EventId** - A code denoting type of failure observed
+
+#### Office_FirstRun_Apple_InAppPurchasesAttempted
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application in-app purchase flow. We collect data to track the attempted In-App purchases and their Type of SKU being purchased (Monthly/Annual/Home/Personal).
+
+The following fields are collected:
+
+- **Data_EventId** - A code denoting type of result observed
+
+- **Data_PurchasedClickedOfferType** - The type of SKU attempted to purchase
+
+- **Data_PurchaseSuccessfulFlowType** - A code denoting the type of user flow that was exercised
+
+#### Office_FirstRun_Apple_InAppRestoreAttempted
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application in-app purchase flow. We collect data to track the attempted In-App restorations
+
+The following fields are collected:
+
+- **Data_EventId** - A code denoting the type of outcome of the attempt
+
+- **Data_RestoreAttemptFlowType** - A code denoting the type of user flow that was exercised
+
+#### Office_FirstRun_Apple_InAppRestoreAttemptFailed
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application in-app purchase flow. We collect data to track the attempted In-App restorations and their associated flows and errors.
+
+The following fields are collected:
+
+- **Data_RestoreButtonFlowType** - A code denoting the type of user flow that was exercised
+
+- **Data_RestoredFailedPaymentCancelledFlowType** - A code denoting the type of payment cancellation flow that was exercised
+
+- **Data_RestoredFailedUnKnownFlowType** - Whether the attempt failed due to the exercise of an unexpected user flow
+
+- **Data_RestoredFailedUnKnownResult** - Whether the attempt failed due to unknown reasons
+
+#### Office_FirstRun_Apple_MacFirstRunCompleted
+
+This event is collected for Office applications running under Apple platforms. The event lets us know a user has gone thru first run experience. We use this event to figure out if the First Run-Experience (FRE) was completed successfully.
+
+The following fields are collected:
+
+- **Data_FirstRunCollectionTime** - A timestamp registering the time at which the flow was completed.
+
+#### Office_FirstRun_Apple_MacWXPFirstRunStarted
+
+This event is collected for Office applications running under Apple platforms. The event lets us know a user has entered first run experience. We use this event to figure out if the First Run-Experience (FRE) was started successfully.
+
+The following fields are collected:
+
+- **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
 #### Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
