@@ -87,9 +87,6 @@ We understand that you might want to choose which types of connected experiences
 
 If you don't configure these policy settings, all connected experiences are available. This gives your users all the features and functionality accessible through Office 365 ProPlus. But we understand that you might need to turn off some or all of these connected experiences to meet certain requirements of your organization.
 
-> [!IMPORTANT]
-> An issue related to disabling these 4 policy settings was recently fixed by publishing new Administrative Template files (ADMX/ADML) on Tuesday May 28, 2019. Be sure to download and install the updated Group Policy files from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
-
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or users will get an error message when they try to use those connected experiences. In that case, no [required service data](required-service-data.md) for those connected experiences will be sent to Microsoft.
 
 Your users won’t be able to choose whether to turn these connected experiences included with Office 365 ProPlus on or off if they are signed into Office with their organizational credentials, which is sometimes referred to as a work or school account.
@@ -126,7 +123,7 @@ You can use the *Allow the use of additional optional connected experiences in O
 > - Visio for the web
 > - Word for the web
 >
-> These Office for the web applications are scheduled to start using the new privacy control for optional connected experiences in mid-October 2019, but you can configure the policy setting now. To configure this policy setting for these Office for the web applications, you need to use the [Office cloud policy service](../overview-office-cloud-policy-service.md).
+> To configure this policy setting for these Office for the web applications, you need to use the [Office cloud policy service](../overview-office-cloud-policy-service.md).
 
 Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn them off as a group by going to the [privacy settings dialog box](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed into Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
