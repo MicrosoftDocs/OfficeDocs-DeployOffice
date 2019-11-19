@@ -66,7 +66,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
      You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office 365 client update packages are available.
 
-4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction).
+4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction).
 
 <a name="BKMK_EnableClient"> </a>
 ## Enable Office 365 clients to receive updates from Configuration Manager
@@ -83,7 +83,7 @@ To enable Configuration Manager to manage Office 365 client updates on specific 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
 - Open the client settings, click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
 
-For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
+For more information, see [client policy](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 ### Method 2: Use Group Policy to enable updates from Configuration Manager
@@ -125,10 +125,10 @@ If it meets your business and technical requirements, we recommend updating your
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
+- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/clients/deploy/configure-client-settings).
 - Click **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent setting**.
 
-For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
+For more information, see [client policy](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 

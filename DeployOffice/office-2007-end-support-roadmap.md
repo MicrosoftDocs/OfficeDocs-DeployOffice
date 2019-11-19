@@ -21,7 +21,7 @@ This article provides recommendations, information, and links to help administra
 > - If you're a home user who wants to upgrade from Office 2007 to the latest version of Office, see [How do I upgrade Office?](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350)
 > - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Upgrade your Office 365 for business users to the latest Office client](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb). 
   
-We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://fasttrack.microsoft.com/office) for cloud migrations and [Software Assurance Planning Services](https://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-planning-services-overview.aspx) for on-premises upgrades. 
+We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://fasttrack.microsoft.com/office) for cloud migrations and [Software Assurance Planning Services](https://www.microsoft.com/Licensing/licensing-programs/software-assurance-planning-services-overview.aspx) for on-premises upgrades. 
   
 ## What does end of support mean?
 
@@ -137,6 +137,6 @@ For more information, see [Overview of deploying languages in Office 365 ProPlus
     
 - For more information about Office 365 plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
-- For more information about the support lifecycle for Microsoft products, see [Microsoft Lifecycle Policy](https://support.microsoft.com/en-us/lifecycle/selectindex).
+- For more information about the support lifecycle for Microsoft products, see [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/selectindex).
     
 

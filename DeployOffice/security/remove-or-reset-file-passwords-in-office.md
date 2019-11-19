@@ -62,7 +62,7 @@ That said, to maintain a high level of security on password-protected files, we 
     
 - Make sure that no single individual can compromise public key infrastructure (PKI) services. Also, we recommend that you distribute certificate management roles across different people in your organization.
     
-If you do not follow these recommendations consistently, the security of all new password-protected files can be compromised. Your company or organization should already have a well-defined Active Directory Certificate Services (AD CS) administration model and certification authority (CA) infrastructure strategy that includes, for example, off-site storage of the private key and certificates. For more information, see [Implement Role-Based Administration](https://technet.microsoft.com/en-us/library/cc732590). 
+If you do not follow these recommendations consistently, the security of all new password-protected files can be compromised. Your company or organization should already have a well-defined Active Directory Certificate Services (AD CS) administration model and certification authority (CA) infrastructure strategy that includes, for example, off-site storage of the private key and certificates. For more information, see [Implement Role-Based Administration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732590(v=ws.11)). 
   
 > [!NOTE]
 > The certificate used for DocRecrypt can be a regular user certificate with User Authentication as the intended purpose. The main goal of the certificate is to be able to encrypt the document. 
