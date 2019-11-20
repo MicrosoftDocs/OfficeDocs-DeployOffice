@@ -29,7 +29,7 @@ To help you determine which devices are ready to upgrade to Office 365 ProPlus, 
 
 In the Configuration Manager console, go to the Software Library workspace, expand Office 365 Client Management, and select the Office 365 ProPlus Upgrade Readiness node.
 
-[Learn more about Office readiness in Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/office-365-dashboard)
+[Learn more about Office readiness in Configuration Manager](https://docs.microsoft.com/configmgr//sum/deploy-use/office-365-dashboard)
 
 ## My customer doesn’t use Microsoft Endpoint Configuration Manager
 For customers who are not using Configuration manager, the Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.

@@ -20,4 +20,4 @@ If your customer uses Microsoft Endpoint Configuration Manager (Current Branch) 
 
 Using this information, select a representative sample of devices from those marked **Ready to Upgrade** and pilot Office 365 ProPlus to them. To access this information in the Configuration Manager console, go to the **Software Library** workspace, expand **Office 365 Client Management**, and select the **Office 365 ProPlus Upgrade Readiness** node.
 
-[Learn more about Office readiness in Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/office-365-dashboard)
+[Learn more about Office readiness in Configuration Manager](https://docs.microsoft.com/configmgr//sum/deploy-use/office-365-dashboard)
