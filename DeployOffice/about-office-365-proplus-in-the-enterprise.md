@@ -32,7 +32,7 @@ Office 365 ProPlus is similar to other versions of Office that you can deploy to
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-system-requirements).
     
-- Like other versions of Office, Office 365 ProPlus is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose the 64-bit or 32-bit version of Office](https://support.office.com/en-us/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
+- Like other versions of Office, Office 365 ProPlus is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose the 64-bit or 32-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
     
 - When you deploy Office 365 ProPlus, it's installed on the user's local computer. Office 365 ProPlus is not a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the Internet all the time to use it.
     
@@ -45,7 +45,7 @@ Office 365 ProPlus is similar to other versions of Office that you can deploy to
 
 Even though Office 365 ProPlus is a lot like other versions of Office, there are differences, including for [Deployment differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Deployment) and [Licensing differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Licensing). 
   
-The most significant difference is that Office 365 ProPlus is updated regularly, as often as monthly, with new features, unlike non-subscription versions of Office. For a list of new features, see [What's new in Office 365](https://support.office.com/en-us/article/What-s-new-in-Office-365-95c8d81d-08ba-42c1-914f-bca4603e1426).
+The most significant difference is that Office 365 ProPlus is updated regularly, as often as monthly, with new features, unlike non-subscription versions of Office. For a list of new features, see [What's new in Office 365](https://support.office.com/article/What-s-new-in-Office-365-95c8d81d-08ba-42c1-914f-bca4603e1426).
   
 ### Deployment differences
 <a name="BKMK_Deployment"> </a>
@@ -78,11 +78,11 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
     
 - Office 365 ProPlus isn't the same as the [web versions of the Office applications](https://docs.microsoft.com/office365/servicedescriptions/office-online-service-description/office-online-service-description). The web versions let users open and work with Word, Excel, PowerPoint, or OneNote documents in a web browser. The web versions of these Office application are included with all Office 365 and Microsoft 365 plans.
     
-- Read the [Office 365 Service Descriptions](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365.
+- Read the [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365.
     
 ## Related topics
 
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
-- [Compare enterprise plans for Office 365](https://products.office.com/en-us/business/compare-more-office-365-for-business-plans)
+- [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
 - [Purchase Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=329114)
 

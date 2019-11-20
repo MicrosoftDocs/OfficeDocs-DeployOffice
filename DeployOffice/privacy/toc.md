@@ -1,9 +1,12 @@
 # Privacy for Office 365 ProPlus
+
 ## [Overview of privacy controls](overview-privacy-controls.md)
-## [Manage privacy controls with policy settings](manage-privacy-controls.md)
-## [Manage privacy controls with preferences (Mac)](mac-privacy-preferences.md)
-## [Manage privacy controls with preferences (iOS)](ios-privacy-preferences.md)
-## [Manage privacy controls with policy settings (Android)](android-privacy-controls.md)
+
+## Manage privacy controls
+### [Windows policy settings](manage-privacy-controls.md)
+### [Mac preferences](mac-privacy-preferences.md)
+### [iOS preferences](ios-privacy-preferences.md)
+### [Android policy settings](android-privacy-controls.md)
 
 ## Diagnostic data
 ### [Required diagnostic data](required-diagnostic-data.md)

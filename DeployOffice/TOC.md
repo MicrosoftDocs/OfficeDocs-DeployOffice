@@ -26,11 +26,12 @@
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
-## [Manage privacy controls with policy settings](privacy/manage-privacy-controls.md?toc=/deployoffice/toc.json)
-## [Manage privacy controls with preferences (Mac)](privacy/mac-privacy-preferences.md?toc=/deployoffice/toc.json)
-## [Manage privacy controls with preferences (iOS)](privacy/ios-privacy-preferences.md?toc=/deployoffice/toc.json)
-## [Manage privacy controls with policy settings (Android)](privacy/android-privacy-controls.md?toc=/deployoffice/toc.json)
 
+## Manage privacy controls
+### [Windows policy settings](privacy/manage-privacy-controls.md?toc=/deployoffice/toc.json)
+### [Mac preferences](privacy/mac-privacy-preferences.md?toc=/deployoffice/toc.json)
+### [iOS preferences](privacy/ios-privacy-preferences.md?toc=/deployoffice/toc.json)
+### [Android policy settings](privacy/android-privacy-controls.md?toc=/deployoffice/toc.json)
 
 ## Diagnostic data
 ### [Required diagnostic data](privacy/required-diagnostic-data.md?toc=/deployoffice/toc.json)
