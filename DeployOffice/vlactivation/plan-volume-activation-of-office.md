@@ -76,6 +76,6 @@ For more information, see [Activate volume licensed versions of Office by using 
 
 ## Related topics
 
-- [Microsoft Office Licensing](https://www.microsoft.com/en-us/licensing/product-licensing/office.aspx)
+- [Microsoft Office Licensing](https://www.microsoft.com/licensing/product-licensing/office.aspx)
 
   

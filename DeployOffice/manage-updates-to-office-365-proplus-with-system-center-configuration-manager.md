@@ -28,7 +28,7 @@ Here's an overview of the steps to enable Configuration Manager to manage Office
 
 3. [Enable Office 365 clients to receive updates from Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md#BKMK_EnableClient)
 
-After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt613209.aspx).
+After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/deploy-software-updates).
 
 <a name="BKMK_Reqs"> </a>
 ## Requirements for using Configuration Manager to manage Office 365 client updates
@@ -66,7 +66,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
      You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office 365 client update packages are available.
 
-4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction).
+4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction).
 
 <a name="BKMK_EnableClient"> </a>
 ## Enable Office 365 clients to receive updates from Configuration Manager
@@ -83,7 +83,7 @@ To enable Configuration Manager to manage Office 365 client updates on specific 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
 - Open the client settings, click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
 
-For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
+For more information, see [client policy](https://docs.microsoft.com/configmgr/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 ### Method 2: Use Group Policy to enable updates from Configuration Manager
@@ -114,7 +114,7 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
  </Configuration>
 ```
 
-We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered only by SCCM. Note that the scheduled task Office Automatic Updates 2.0, which is registered during Office 365 ProPlus installation, must remain enabled. That task initiates product configuration tasks such as channel management.
+We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered only by Configuration Manager. Note that the scheduled task Office Automatic Updates 2.0, which is registered during Office 365 ProPlus installation, must remain enabled. That task initiates product configuration tasks such as channel management.
  
 
 <a name="BKMK_Package"> </a>
@@ -125,10 +125,10 @@ If it meets your business and technical requirements, we recommend updating your
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/configure-client-settings).
+- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/deploy/configure-client-settings).
 - Click **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent setting**.
 
-For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/core/clients/deploy/about-client-settings).
+For more information, see [client policy](https://docs.microsoft.com/configmgr/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 
@@ -139,7 +139,7 @@ For more information, see [client policy](https://docs.microsoft.com/en-us/sccm/
 - Disable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 > [!IMPORTANT]
-> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling Office 365 Client Management via GPO or SCCM Clients settings from **Enabled** to **Not Configured** is not sufficent.
+> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling Office 365 Client Management via Group Policy or **Client Settings** for Configuration Manager  from **Enabled** to **Not Configured** is not sufficient.
 
 ## Contents of the Office 365 client update package for WSUS
 
