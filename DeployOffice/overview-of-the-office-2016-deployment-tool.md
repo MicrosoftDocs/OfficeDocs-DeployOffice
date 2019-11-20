@@ -255,7 +255,7 @@ You must run the executable from the client computer on which you want to apply 
 
 In addition to downloading and deploying Office 365 ProPlus, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer with a clean install of the operating system.
 
-This article does not cover all the issues related to deploying App-V packages. For more information on that end-to-end scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
+This article does not cover all the issues related to deploying App-V packages. For more information on that end-to-end scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
 
  **Step 1: Create the configuration file**
 
