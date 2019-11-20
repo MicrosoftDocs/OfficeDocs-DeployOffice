@@ -139,7 +139,7 @@ For more information, see [client policy](https://docs.microsoft.com/configmgr/c
 - Disable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 > [!IMPORTANT]
-> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling Office 365 Client Management via GPO or SCCM Clients settings from **Enabled** to **Not Configured** is not sufficent.
+> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling Office 365 Client Management via Group Policy or **Client Settings** for Configuration Manager  from **Enabled** to **Not Configured** is not sufficient.
 
 ## Contents of the Office 365 client update package for WSUS
 
