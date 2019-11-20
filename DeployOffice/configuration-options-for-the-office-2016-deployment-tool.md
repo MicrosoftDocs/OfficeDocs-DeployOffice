@@ -189,7 +189,7 @@ For more information about using MigrateArch, see [Change an Office 365 ProPlus 
 
 Optional. For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Office 365 ProPlus is automatically disabled for client devices.
 
-For more information, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+For more information, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
 
 Allowed values: 
 

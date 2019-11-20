@@ -33,7 +33,7 @@ If your organization already uses Configuration Manager, we recommend upgrading 
 The steps in this article covers these features and shows you how to implement our best practice recommendations. 
 
 > [!NOTE] 
-> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more details, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more details, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
 
 ## Before you begin
 
@@ -98,7 +98,7 @@ The Office installation packages are represented as applications in Configuratio
 7. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
 8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/configmgr/apps/get-started/create-and-deploy-an-application).
 9. Complete the wizard.
-After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md).
+After you create and deploy Office 365 applications using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Office 365 clients to receive updates from Configuration Manager, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
 
 ## Step 4 - Create and deploy the Office application to the broad group
 

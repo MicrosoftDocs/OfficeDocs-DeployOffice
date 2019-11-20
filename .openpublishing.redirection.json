@@ -57,12 +57,12 @@
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-deployment-for-enterprise-managed.md",
-        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-configuration-manager",
         "redirect_document_id": true
     },
     {
         "source_path": "DeployOffice/best-practices/best-practices-system-center-configuration-manager-configuration-for-enterprise.md",
-        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-configuration-manager",
         "redirect_document_id": false
     },
     {
@@ -359,6 +359,16 @@
         "source_path": "DeployOffice/mac/set-preference-diagnostic-data.md",
         "redirect_url": "https://docs.microsoft.com/deployoffice/privacy/mac-privacy-preferences",
         "redirect_document_id": true 
-    }                    
+    },
+    {
+        "source_path": "DeployOffice/deploy-office-365-proplus-with-system-center-configuration-manager.md",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-configuration-manager",
+        "redirect_document_id": false 
+    },
+    {
+        "source_path": "DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md",
+        "redirect_url": "https://docs.microsoft.com/deployoffice/manage-office-365-proplus-updates-with-configuration-manager",
+        "redirect_document_id": true 
+    }
    ] 
 }

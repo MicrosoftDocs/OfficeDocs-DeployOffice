@@ -14,11 +14,11 @@
 # Upgrade
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 ## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md)
+## [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-configuration-manager.md)
 
 # Manage
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
-## [Manage updates with Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
+## [Manage updates with Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 ## [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 ## [Overview of the update process](overview-of-the-update-process-for-office-365-proplus.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
@@ -49,6 +49,7 @@
 ## [Overview of reference articles](reference-articles-for-deploying-office-365-proplus.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
+## [Overview of Security Policy Advisor for Office 365 ProPlus](overview-of-security-policy-advisor.md)
 ## [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 ## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 ## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
