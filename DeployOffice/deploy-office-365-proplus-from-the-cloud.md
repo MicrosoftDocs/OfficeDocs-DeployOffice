@@ -41,7 +41,7 @@ You can customize these options to match the requirements for your organization,
 
 You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
 
-1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://technet.microsoft.com/library/cc770406.aspx).
+1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11)).
 
 2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
 

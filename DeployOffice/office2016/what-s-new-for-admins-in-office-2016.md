@@ -35,11 +35,11 @@ As with any new version of Office, there is a new set of Administrative Template
   
 ## Outlook 2016 adds support for multi-factor authentication (MFA)
 
-Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL). For more information, see [Plan multi-factor authentication for Outlook 2016 for Windows](https://technet.microsoft.com/library/5b02b884-bb3f-437d-9ae7-a79b70c8261e(v=office.16).aspx).
+Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL). For more information, see [Plan multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
   
 ## Outlook 2016 now requires Autodiscover to be configured
 
-Outlook now requires Autodiscover to be configured or it will be unable to connect to Exchange Server. Outlook retrieves Exchange connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature. For more information, see [Autodiscover service](https://technet.microsoft.com/library/bb124251.aspx). 
+Outlook now requires Autodiscover to be configured or it will be unable to connect to Exchange Server. Outlook retrieves Exchange connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature. For more information, see [Autodiscover service](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover). 
   
 ## Data Loss Protection (DLP) added to Word 2016, Excel 2016, and PowerPoint 2016
 
@@ -47,7 +47,7 @@ Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admi
   
 ## Visio 2016 supports Information Rights Management (IRM)
 
-IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](https://technet.microsoft.com/library/92a8dc04-47c7-4946-83ee-4c0ecaff440a(v=office.16).aspx).
+IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](https://docs.microsoft.com/DeployOffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office).
   
 ## Related topics
 

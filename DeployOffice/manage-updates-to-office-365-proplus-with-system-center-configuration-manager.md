@@ -28,7 +28,7 @@ Here's an overview of the steps to enable Configuration Manager to manage Office
 
 3. [Enable Office 365 clients to receive updates from Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md#BKMK_EnableClient)
 
-After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt613209.aspx).
+After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/deploy-software-updates).
 
 <a name="BKMK_Reqs"> </a>
 ## Requirements for using Configuration Manager to manage Office 365 client updates
