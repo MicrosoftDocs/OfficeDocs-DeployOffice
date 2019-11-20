@@ -42,7 +42,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-system-center-configuration-manager.md) 
+- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-configuration-manager.md) 
 
 
 ## Manage updates
@@ -52,7 +52,7 @@ Learn about the different update channels available for Office 365 ProPlus and h
 
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 
-- [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md)
+- [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 
 - [Change management for Office 365 clients](change-management-for-office-365-clients.md)
 
