@@ -20,9 +20,6 @@ After deploying Office 365 ProPlus, you can change the update channel with Group
 
 Group Policy and the ODT are the only supported methods to change update channels. If you manage updates to Office with Configuration Manager, you can change the channel by using Group Policy or the ODT in combination with Configuration Manager. For more information, see [Change the update channel with Configuration Manager](#change-the-update-channel-with-configuration-manager).
 
-> [!IMPORTANT]
-> If you use Configuration Manger to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Monthly Channel to Semi-Annual Channel.  
-
 ## Change the update channel with Group Policy
 
 1. Before you begin, make sure the scheduled task "Office Automatic Update 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Office 365 ProPlus, whether you use  Group Policy, the Office Deployment Tool, or Configuration Manager.
@@ -61,11 +58,12 @@ If you manage updates to Office with Configuration Manager, you change the updat
 
 - If you use the ODT, you can package the ODT to deliver the configuration file using your standard approach for deploying and managing software with Configuration Manager.
 
-- Make sure that the build from the new channel is available to the device through Configuration Manager.
+- Make sure that the build from the new channel is available to the device through the Software Update Point in Configuration Manager.
 
 - After the Office Automatic Update 2.0 task runs and updates the assigned channel, the new build is installed the next time the Configuration Manager client runs a Software Updates Deployment Evaluation Cycle.
 
-As noted above, if you use Configuration Manager to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Monthly Channel to Semi-Annual Channel.  
+> [!IMPORTANT]
+> If you use Configuration Manger to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Monthly Channel to Semi-Annual Channel.  
 
 ## Considerations when changing channels
 
