@@ -36,7 +36,6 @@ Follow these steps to create a configuration file that can be used by the Office
 > [!NOTE] 
 > We recommend saving and managing your configuration files in the cloud. To do so, sign in to the Office 365 Client Configuration Service before you create your configuration file.  For more details, see [Save and manage configuration files in the cloud](#save-and-manage-configuration-files-in-the-cloud).
 
-
 1. Go to [Office Customization Tool](https://config.office.com/).
 2. In the **Product and releases** section, choose the architecture you want to deploy. Each configuration file can only deploy one architecture. For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 3. Choose the products and applications you want to deploy.
@@ -81,7 +80,7 @@ You can also copy, upload, or download configuration files from the Device Confi
 
 ## Define application preferences
 
-As part of the Office Customization Tool, you can define application preferences for Office 365 ProPlus, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+As part of the Office Customization Tool, you can define application preferences for supported products, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
 ## Notes
 
