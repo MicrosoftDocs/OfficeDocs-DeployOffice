@@ -54,7 +54,7 @@ After policy has been applied, the Office Automatic Update 2.0 task must run. Af
 
 ## Change the update channel with Configuration Manager
 
-If you manage updates to Office with Configuration Manager, you change the update channel using Group Policy or the Office Deployment Tool, as described above. When doing so, the process is the same, except for the following considerations:
+If you manage updates for Office 365 ProPlus with Configuration Manager, you change the update channel using Group Policy or the Office Deployment Tool, as described above. When doing so, the process is the same, except for the following considerations:
 
 - If you use the ODT, you can package the ODT to deliver the configuration file using your standard approach for deploying and managing software with Configuration Manager.
 
