@@ -29,7 +29,7 @@ Even though Windows 7 will no longer be supported after January 2020, we’ve de
 
 > [!IMPORTANT]
 > - Even with these security updates, Office 365 ProPlus won't be supported on Windows 7 after January 14, 2020.
-> - This information applies even if you have purchased Extended Security Updates (ESU) for Windows 7. After January 2020, security updates for Windows 7 are only available with ESU. For more information about ESU, see [Lifecyle FAQ-Extended Security Updates](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates).
+> - This information applies even if you have purchased Extended Security Updates (ESU) for Windows 7. After January 2020, security updates for Windows 7 are only available with ESU. For more information, see [FAQ about Extended Security Updates for Windows 7](https://support.microsoft.com/help/4527878/faq-about-extended-security-updates-for-windows-7).
 
 ## How to manage Office 365 ProPlus on Windows 7 after January 2020
 
