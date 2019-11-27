@@ -7,7 +7,7 @@
 
 # Prepare
 ## [Assess your environment and requirements](assess-office-365-proplus.md)
-## [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
+## [Plan your enterprise deployment](plan-office-365-proplus.md)
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
 ## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 
@@ -19,8 +19,7 @@
 # Manage
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
 ## [Manage updates with Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
-## [Change management for Office 365 clients](change-management-for-office-365-clients.md)
-## [Overview of the update process](overview-of-the-update-process-for-office-365-proplus.md)
+## [Change the update channel](change-update-channels.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
