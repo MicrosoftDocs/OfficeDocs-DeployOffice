@@ -17,7 +17,7 @@ description: "This article lists the new tools, content, and processes for IT Pr
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
 
-## November 2020
+## November 2019
 
 After deploying Office 365 ProPlus, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). We've published a new article that covers how to change the update channel. For more information, see [Change the Office 365 ProPlus update channel for devices in your organization](change-update-channels.md).
 
