@@ -7268,7 +7268,9 @@ The following fields are collected:
 
 - **AssetId** - Asset ID of the app
 
-- **ErrorCode** - Total time spent 
+- **ErrorCode** - Total time spent
+
+- **IsDebug** - indicates if session is a debug session
 
 - **NumberOfAddinsActivated** - Counter of add-ins activated
 
