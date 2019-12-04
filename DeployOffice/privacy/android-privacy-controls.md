@@ -26,7 +26,7 @@ There are policy settings for Office on Android devices that allow you to contro
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
 
 These policy settings apply to the following applications:
-- Version 16.0.12226.10000 and later of Word for Android, Excel for Android, and PowerPoint for Android.
+- Version 16.0.12228.20260 and later of Word for Android, Excel for Android, and PowerPoint for Android.
 - Version 16.0.12228.20004 and later of OneNote for Android.
 
 > [!NOTE]
