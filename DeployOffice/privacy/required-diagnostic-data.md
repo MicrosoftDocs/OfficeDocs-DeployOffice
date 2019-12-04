@@ -3114,8 +3114,7 @@ The following fields are collected:
 -  **TimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches.
 
 
-#### Office.OneNote.StickyNotes.NoteCreated (on iOS)
-#### OneNote.StickyNotes.NoteCreated (on Android)
+#### Office.OneNote.StickyNotes.NoteCreated (on iOS), OneNote.StickyNotes.NoteCreated (on Android)
 
 This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
 
@@ -3128,8 +3127,7 @@ The following fields are collected:
 - **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
 
-#### Office.OneNote.StickyNotes.NoteViewed (on iOS)
-#### OneNote.StickyNotes.NoteViewed (on Android)
+#### Office.OneNote.StickyNotes.NoteViewed (on iOS), OneNote.StickyNotes.NoteViewed (on Android)
 
 This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
 
