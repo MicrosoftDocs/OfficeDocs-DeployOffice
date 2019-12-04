@@ -16,7 +16,6 @@ description: "If you use Remote Desktop Services (RDS) to provide shared compute
 If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Office 365 ProPlus on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md) to do the installation.
 
 ## Office 365 ProPlus is supported on user-dedicated virtual desktop infrastructure (VDI).
-## Office 365 ProPlus only supports Remote Desktop Services (RDS) when purchased through a Volume Licensing Program.
 
 The following are two common RDS scenarios:
 
