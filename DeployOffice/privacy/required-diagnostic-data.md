@@ -7354,7 +7354,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on a consumer version of Office applications. 
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
 
 The following fields are collected:
 
@@ -7386,7 +7386,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on an enterprise version of Office applications.
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
 
 - **ScopeId** – the current thread scope
 
