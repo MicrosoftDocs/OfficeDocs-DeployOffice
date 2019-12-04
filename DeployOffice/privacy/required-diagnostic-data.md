@@ -3114,7 +3114,7 @@ The following fields are collected:
 -  **TimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches.
 
 
-#### Office.OneNote.StickyNotes.NoteCreated
+#### Office.OneNote.StickyNotes.NoteCreated (on iOS), OneNote.StickyNotes.NoteCreated (on Android)
 
 This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
 
@@ -3127,7 +3127,7 @@ The following fields are collected:
 - **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
 
-#### Office.OneNote.StickyNotes.NoteViewed
+#### Office.OneNote.StickyNotes.NoteViewed (on iOS), OneNote.StickyNotes.NoteViewed (on Android)
 
 This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
 
@@ -4653,68 +4653,6 @@ The following fields are collected:
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
 
-#### Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
-
-This event logs document statistics for each document when Office Word is closed or suspended.  The event is used to correlate document edits, size, etc. with document-save, document-share, and document online collaboration errors.
-
-The following fields are collected:
-
-- **Data_BkmkRefCount** - Number of bookmark references in the document
-
-- **Data_CharacterCount** - Number of characters in the document
-
-- **Data_CharactersWithSpaceCount** - Number of characters and spaces in the document
-
-- **Data_ChartCount** - Number of charts in the document
-
-- **Data_CitationCount** - Number of citations in the document
-
-- **Data_DocumentLocation** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
-
-- **Data_ETW_TrackbackTag** - Identifies the place in code where this event was fired from (Close or Suspend)
-
-- **Data_EndnoteDocCount** - Number of endnotes in the document
-
-- **Data_FootnoteDocCount** - Number of footnotes in the document
-
-- **Data_HasBibliography** - Indicates whether the document contains bibliography
-
-- **Data_HasHeader** - Indicates whether the document contains a header
-
-- **Data_IsImeUsed** - Indicates whether Input Method Editor been was used in the document
-
-- **Data_IsPageCountInProgress** - Indicates whether page count is currently in progress for the document.
-	
-- **Data_IsTouchUsed** - Indicates whether touch input was used in the document
-
-- **Data_IsTrackChangesOn** - Indicates whether track-changes was on for the document
-
-- **Data_LineCount** - Number of lines in the document
-
-- **Data_MainPdod** - The document identifier in Office Word process.
-
-- **Data_PageCount** - Number of pages in the document
-
-- **Data_PageNumberFieldCount** - Number of page number fields in the document
-
-- **Data_ParagraphCount** - Number of paragraphs in the document
-
-- **Data_PicCount** - Number of pictures in the document
-
-- **Data_RsidCount** - Number of revisions save identifier in the document
-
-- **Data_TocCount** - Number of table of contents in the document
-
-- **Data_UrlHash** - One-way hash to create a naïve document identifier
-
-- **Data_UserActionID** - this data field is not used (the value is always 0).
-
-- **Data_UserActionName** - always “DocumentStatsOnCloseAndSuspend”
-
-- **Data_UserInteractionTimeMsec** - Number of milliseconds that the user was actively interacting with the document
-	
-- **Data_WordCount** - Number of words in document
-
 #### Office.Word.FileNew.CreateNewFile
 
 This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
@@ -4948,102 +4886,6 @@ The following fields are collected:
 - **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
 	
-#### Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
-
-This event indicates Office Word saves an auto-recovery document that has not been saved before. It allows Microsoft to detect errors in auto-recovery which is important for document data safety.  The event monitors whether auto-recovery-save is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
-
-The following fields are collected:
-
-- **Data_DetachedDuration** - How long was the activity detached from the thread
-
-- **Data_Doc_AccessMode** - Document is read only/editable
-
-- **Data_Doc_AssistedReadingReasons** - Predefined set of values of why document was opened in assisted reading mode
-
-- **Data_Doc_AsyncOpenKind –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
-	
-- **Data_Doc_ChunkingType** - Units used for incremental document open
-
-- **Data_Doc_EdpState** - Electronic Data Protection setting for the document
-
-- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx etc.)
-
-- **Data_Doc_FileFormat** - File format protocol version
-
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
-
-- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
-
-- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open
-
-- **Data_Doc_InitializationScenario** - Records how the document was opened
-
-- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options
-
-- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user
-
-- **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened
-
-- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service
-	
-- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened
-
-- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer
-
-- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint etc.)
-
-- **Data_Doc_LocationDetails** - Indicates which Known Folder provided a locally stored document
-
-- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
-
-- **Data_Doc_PasswordFlags** - Indicates read or read/write password flags set
-
-- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only
-
-- **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
-
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
-
-- **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
-
-- **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service
-
-- **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.)
-
-- **Data_Doc_ServerVersion** - the server version offering the service
-
-- **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
-
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
-
-- **Data_Doc_SizeInBytes** - Indicator of document size
-
-- **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path
-
-- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled
-
-- **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based)
-
-- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier
-
-- **Data_Doc_WopiServiceId** - Contains unique identifier of WOPI service provider
-
-- **Data_FailureClass** - Integer representing the failure class for Office Collaboration Services (OCS) transition failures
-	
-- **Data_MainPdod** - The document identifier in Office Word process.
-
-- **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
-
-- **Data_OCSSyncbackSaveStarted** - Flag that indicates that this save is related to sync back save
-
-- **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
-
-- **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
-
-- **Data_SaveInitiateKind** - Integer that indicates how the save was initiated
-
-- **Data_SrcDocIsUnnamedOrNew** - Indicates whether the document we are saving is new
-
 
 #### Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -7354,7 +7196,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on a consumer version of Office applications. 
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
 
 The following fields are collected:
 
@@ -7386,7 +7228,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on an enterprise version of Office applications.
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then published on readyforwindows.com and other tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
 
 - **ScopeId** – the current thread scope
 
@@ -7426,7 +7268,9 @@ The following fields are collected:
 
 - **AssetId** - Asset ID of the app
 
-- **ErrorCode** - Total time spent 
+- **ErrorCode** - Total time spent
+
+- **IsDebug** - indicates if session is a debug session
 
 - **NumberOfAddinsActivated** - Counter of add-ins activated
 
