@@ -2526,13 +2526,19 @@ Reports on the action that reason over the input collected using CollectParamete
 
 - **PRID –**	String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
+- **PridsToMigrateFromCentennial-**	String of Office products to migrate from Store installations to Click-To-Run
+
 - **ProductsToAdd –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be installing
+
+- **ProductsToMigrateFromO15C2R -**  String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
 
 - **ProductsToRemove –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
 
 - **SharedComputerLicensing –**	Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
 
 - **ShouldActivate –**	Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
+
+- **ShouldUninstallCentennial -** Boolean flag indicating whether Office products from the Store should be uninstalled
 
 - **VersionToInstall –**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
  
@@ -2597,15 +2603,21 @@ Reports the parameters used for the Office installation
 
 - **PlatformToInstall –**	String indicating the final decision on whether x86 vs. X64 Office should be installed
 
-- **ProductsToRemove –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
-
 - **PRID –**	String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
+- **PridsToMigrateFromCentennial-** String of Office products to migrate from Store installations to Click-To-Run
+
 - **ProductsToAdd –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be installing
+
+- **ProductsToMigrateFromO15C2R -** String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
+
+- **ProductsToRemove –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
 
 - **SharedComputerLicensing –**	Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
 
 - **ShouldActivate–**	Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
+
+- **ShouldUninstallCentennial -** Boolean flag indicating whether Office products from the Store should be uninstalled
 
 - **VersionToInstall–**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
@@ -2752,7 +2764,10 @@ The following fields are collected:
 
 We collect this when the user is setting up a device and we call our licensing service to detect if the logged in user has an Office entitlement or not. This reports the result of that call. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
-This event collects no fields.
+The following fields are collected:
+
+- **EntitlementCount** – Number of entitlements the user has
+
 
 ### Office.Licensing.Heartbeat 
 
