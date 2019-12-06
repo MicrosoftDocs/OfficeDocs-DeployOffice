@@ -675,6 +675,16 @@ The critical signal used to ensure new enterprise users (AAD/OrgID) can successf
 
 - **ProvisioningStartedTime** - Indicates the start time when OneNote starts provisioning a notebook during first run experience.
 
+#### Office.OneNote.FirstRun.MruReaderNoteBookEntries 
+
+The signal used to record any issues encountered when loading Notebooks during First Run.  The telemetry is used to monitor, detect and fix any issues in First run.
+
+The following fields are collected: 
+
+- **OnPremNBCount** - Count of notebooks in On Prem Server
+
+- **TotalNBCount** - Total count of notebooks associated with the User Account
+
 #### Office.TargetedMessaging.EnsureCached 
 
 Tracks if a package for Dynamic Canvas was downloaded. Considered a software configuration because the package must be successfully downloaded to enable the client to render the right experience. Is especially critical in consumer subscriptions where we use canvas to communicate to the user that the license has expired. Used to track metadata of a dynamic content package downloaded and cached by the product as well as results of operations performed on the package: download failures, unpacking failures, consistency checks failures, cache hits, package usages, download sources.
@@ -732,6 +742,63 @@ Captures Visio SKU whether it's standard or professional. Essential to categoriz
 The following fields are collected:
 
   - **Data\_VisioSKU**:**integer** - 0 for Standard SKU and 1 for Professional SKU
+
+#### OneNote.App.OneNoteLaunchedNonActivated
+
+Records information about activation state of the App.  The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
+
+The following fields are collected: 
+
+- **INSTALL_LOCATION** - Indicates if the app is pre-installed or is downloaded from Store
+
+#### OneNote.ResetStatus 
+
+The signal used to record any issues encountered when a user tries to reset the App.  The telemetry is used to monitor, detect and fix any issues caused during reset. 
+
+The following fields are collected: 
+
+- **Accounts** - Indicates the types if accounts used for signing-into the App
+
+- **Generic String Type** - Returns if it is full reset of a notes_light_data reset
+
+- **LaunchPoint** - The point from where Reset is initiated. Possible values: Sign Out Button, Sign-out failure, Intune Triggered
+
+- **Pass** - Indicates if the Reset was successful
+
+#### OneNote.SignIn.SignInCompleted 
+
+The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
+
+The following fields are collected: 
+
+- **CompletionState** - Final state of sign in - Succeeded or failed. And failure cases
+
+- **EntryPoint** - Indicates from where Sign-In was initiated
+
+- **Hresult** - Error code
+
+- **Provider Package ID** - In case of Auto sign in
+
+- **Result** - Succeeded, Failed, Unknown, Cancelled
+
+- **ServerType** - Returns the type of the server offering the service 
+
+- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
+
+#### OneNote.SignIn.SignInStarted 
+
+The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
+
+The following fields are collected: 
+
+- **EntryPoint** - Indicates from where Sign-In was initiated
+
+- **Result** - Result of the sign-in flow
+
+- **ServerType** - Returns the type of the server offering the service 
+
+- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
+
 
 ### *Office add-in configuration subtype*
 
@@ -1716,6 +1783,75 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Scenario Id defined by the API
 
+#### Office.Android.ODWXPSSO.Telemetry
+
+This event helps in understanding with which other Microsoft app in the device, our app got silent single sign on, from which entry point and so on. Also helps in understanding the failure reason for not getting silent single sign on.  We get better insights like from which Microsoft app in the device, we are getting single sign on experience. Act upon failures, where single sign on is not working as expected.
+
+The following fields are collected:
+
+- **AccountType** - Indicates the account type with which single sign on is happening, like personal Microsoft account or work account.
+
+- **EntryPoint** - Indicates the entry point in the app, from where single sign on attempt was initiated.
+
+- **ErrorCode** - Indicates the error code of the single sign on attempt.
+
+- **ErrorDescription** - Indicates the error message of the single sign on attempt.
+
+- **HResult** - Indicates result status code of the single sign on attempt.
+
+- **ProviderPackageId** - Other Microsoft app in the device from which single sign on is happening.
+
+#### Office.Android.PhoneNumberSignIns
+
+This event helps in understanding if user signed in or signed up with phone number-based account or email based personal Microsoft account.  This event helps in knowing count of users signing in or signing up with phone number based personal Microsoft account.
+
+The following fields are collected:
+
+- **EntryPoint** - Indicates the entry point in the app, from where sign-in attempt was initiated.
+
+- **IsEmailMissing** - Is email missing in the account profile information?
+
+- **IsPhoneNumberMissing** - Is phone number missing in the account profile information?
+
+- **UserDecision** - Indicates the choice made by user like sign-in or sign-up or sign in later.
+
+#### Office.Android.UserSignInDecision
+
+This event helps in understanding at which stage user is dropping in sign in flow, why sign in is failing, how many users are getting signed in successfully from which entry point in the app and so on.  This event helps with sign-in funnel data, which helps in understand at which stage users are getting dropped more and so on.
+
+The following fields are collected:
+
+- **AccountType** - Indicates the account type with which sign-in is attempted like personal account or work account.
+
+- **AfterLicensingState** - Indicates the app licensing state after sign-in completed.
+
+- **AllowedEditsWithoutSignIn** - Indicates how many free edits have lapsed before sign-in was attempted.
+
+- **BeforeLicensingState** - Indicates the app licensing state before sign-in attempted.
+
+- **CompletionState** - Indicates the stage of sign-in completion.
+
+- **EntryPoint** - Indicates the entry point in the app, from where sign-in attempt was initiated.
+
+- **HRDAutoAcceleratedSignUpAttemptCount** - Indicates the count of accelerated sign-ups attempted.
+
+- **HRDAutoAcceleratedSignUpQuitCount** - Indicates the count of accelerated sign-ups cancelled.
+
+- **HResult** - Indicates result status code of the sign-in operation.
+
+- **IsPhoneOnlyAuthFeatureEnabled** - Is phone number-based sign-in allowed or not?
+
+- **LicenseActivationHResult** - Indicates the status code of license activation attempt.
+
+- **LicenseActivationMessageCode** - Indicates the message code from licensing service.
+
+- **NoFreeEditsTreatmentValue** - Is free edits allowed or not?
+
+- **SignUpAttemptCount** - Indicates the count of sign-ups attempted.
+
+- **StartMode** - Indicates the mode in which sign-in attempt was started.
+
+- **UserDecision** - Indicates the choice made by user like sign-in or sign-up or sign in later.
 
 #### Office.AppCompat.AppCompat.AgentUpload
 
@@ -1946,6 +2082,102 @@ The following fields are collected:
 - **Data_Ext** - The file extension limited to the first four characters of the extension or less.
 
 - **Data_ServiceType** - An abstract categorization of the location of a file like “SharePoint”, “OneDrive”, “Local”, “WOPI”, etc.
+
+#### Office_DocsUI_FileOperations_OpenDocumentMeasurements
+
+This event is collected for Office applications running under iOS platform. The event records when a file open operation takes place and is used to understand and prioritize user-experiences based on file open operation information, especially performance information.
+
+The following fields are collected:
+
+- **Data_AppDuration** - The duration spent in application processing during a file open operation.
+
+- **Data_BootDuration** - The duration of boot process of the file open.
+
+- **Data_ClickOrigin** - A string indicating which part the link was from when user clicked a link in iOS Outlook to open a file in Office app.
+
+- **Data_ClickTime** - The Unix epoch time when the user clicked a link in iOS Outlook to open the file in Office app.
+
+- **Data_DetachedDuration** - The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** - An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** - An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** - An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** - An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** - File extension of the file.
+
+- **Data_Doc_Fqdn** - The server host name of the file.
+
+- **Data_Doc_FqdnHash** - A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** - A GUID that uniquely identifies the identity used to open a file.
+
+- **Data_Doc_InitializationScenario** - An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** - An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** - Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** - Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** - Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** - Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** - Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** - An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** - An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** - A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** - An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** - A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** - An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** - An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** - An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** - An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** - A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** - File size in bytes.
+
+- **Data_Doc_SpecialChars** - An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** - A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** - A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. from which UI element or trigged by another app.
+
+- **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_OpenInPlace** - Whether or not a file must be copied to the Office’s sandboxed container before user can open it.
+
+- **Data_OpenStartTime** - The Unix epoch time when the file open started.
+
+- **Data_SilhouetteDuration** - The duration of rendering of the file open.
+
+- **Data_SourceApplication** - A string indicating the bundle ID of the source application when a file open was triggered by another app.
+
+- **Data_StopwatchDuration** - The duration from beginning of the event to the end of the event.
+
+- **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration.
 
 #### Office_DocsUI_FileOperations_OpenFileWithReason 
 
@@ -2995,6 +3227,32 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
+
+#### Office.OneNote.Canvas.Ink.InkStrokeLogger 
+
+This event is used to detect and diagnose a high frequency bug that a user encounters while using Ink feature.  This will be used to determine the most appropriate mode of fixing this issue. 
+
+The following fields are collected:
+
+- **CurrentCanvasZoomFactor** - Current Zoom factor of the canvas.
+
+- **CurrentNotebook** - Identifier of the current active notebook.
+
+- **CurrentPage** - Identifier of the current active page
+
+- **CurrentSection** - Identifier of the current active section.
+
+- **DefaultCanvasZoomFactor** - Default Zoom factor of the canvas.
+
+- **InkStrokeCount** - Total count of ink strokes since the last log.
+
+- **InkStrokeWithLayerInkEffect** - Count of ink strokes with layer ink effect since the last log.
+
+- **InkStrokeWithoutPressureCount** - Count of Ink Strokes without Pressure since the last log.
+
+- **InkStrokeWithPencilInkEffect** - Count of ink strokes with pencil ink effect since the last log.
+
+- **InkStrokeWithTilt** - Count of ink strokes with tilt since the last log.
 
 #### Office.OneNote.Navigation.CreatePage
 
@@ -5269,6 +5527,25 @@ The following fields are collected:
 
   - **Data\_ViewKind-** Type of Word view
 
+#### OneNote.Canvas.PageOpened 
+
+The signal used to record when a Page is opened.  The telemetry is used to monitor, detect and fix any issues caused when a Page is opened in OneNote
+
+The following fields are collected: 
+
+- **JOT_ID** - object of the page opened
+
+- **TIME_TAKEN_IN_MS** - time taken to open page
+
+#### OneNote.MessageBar.MessageBarClicked 
+
+The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
+
+The following fields are collected: 
+
+- **Message_Bar_Type** - Returns if the user is using old or new message bar
+
+- **Message_Type** - Returns the error message ID
 
 #### ParseLicenseOp
 
@@ -5516,6 +5793,26 @@ The following fields are collected:
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
 - **RMS.StatusCode** - Status code of the returned result
+
+#### Office.Android.AndroidOffice16BootLatency
+
+Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in WXP apps.
+
+The following fields are collected:
+
+- **AppLaunchResponsiveTimeInMilliSec** - App launch responsive time
+
+- **AppSuspendedDuringBoot** - Boolean to indicate if app was suspended during boot
+
+- **CollectionTime** - Time of event
+
+- **FileActivationAttempted** - Boolean to indicate if file activation as attempted
+
+- **FirstIdleOnAppThreadTimeInMilliSec** - App thread idle time
+
+- **IsThisFirstLaunch** - Boolean to indicate if this is first time app launch
+
+- **UserDialogInterruptionDuringBoot** - Boolean to indicate if there was a blocking UI during boot
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -5827,6 +6124,125 @@ The following fields are collected:
 
 - **TotalTime** - total time spent
 
+#### OneNote.App.AppBootComplete 
+
+The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.  This is used to ensure critical regression detection for OneNote app and service health.  If users can’t launch the app for the first time, this would trigger a high severity incident.
+
+The following fields are collected: 
+
+- **ACTIVITY_BOOT_TIME_IN_MS** - Time taken to complete Activity creation
+
+- **ACTIVITY_NAME** - Name of the Activity opened when booted 
+
+- **ANY_DIALOG_SHOWN** - Indicates if any dialog is shown during boot time
+
+- **APP_SUSPEND_DURING_EVENT** - Indicates if the boot was pre-empted
+
+- **APP_THREAD_CREATION_WAIT_TIME_TIME_FOR_APP_THREAD_CREATION** - Time taken to create Application threads
+
+- **AVAILABLE_MEMORY_IN_MB** - Total memory available in device 
+
+- **AVG_SNAPSHOT_POPULATION_TIME** - Avg. time taken to fetch notebook structures while using the App
+
+- **BOOT_END_AT_VIEW** - Sub-category of Activity name (Name of the View)
+
+- **BOOT_SNAPSHOTS** - Detail of notebook structure fetches for the account(s) used in App
+
+- **COREAPP_STARTUP_ACCOUNT_SETUP_STARTUP_ACCOUNT_SETUP** - Time taken to check and initiate SSO experience
+
+- **CRASH_INTERACTION_DURING_BOOT> 0** - To indicate if the App crashed during last session
+
+- **DALVIK_HEAP_LIMIT_IN_MB** - Obsolete
+
+- **DELAY_LOAD_STICKY_NOTES** - Indicates if the Sticky Notes with delay or not
+
+- **FISHBOWL_SHOWN_DURING_EVENT** - Indicates instances where content in not synced
+
+- **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** - Indicates if boot time is impacted due to logs
+
+- **INIT_SNAPSHOT_DURATION** - Time taken to get the notebook structure for the user account(s)
+
+- **IS_COLD_BOOT** - Indicates if the App launch when the App was not running in the background
+
+- **IS_FIRST_LAUNCH** - Indicates if this is the First time App was launched in the device 
+
+- **IS_PHONE** - Indicates if the device is a phone or tablet
+
+- **IS_RECENT_PAGES_AVAILABLE_ON_FRAGMENT_CREATION** - Indicates if UI is ready and waiting for content to be made available 
+
+- **IS_REHYDRATE_LAUNCH** - Indicates if App was killed by the system
+
+- **IS_UPGRADE** - Indicates if the App is being launched after upgrade
+
+- **JOT_MAIN_APP_CREATE_TIME_MAIN_APP_CREATE_TIME** - Time taken to create JOT component (shared code component) 
+
+- **JOT_MAIN_APP_INIT_TIME_MAIN_APP_INIT_TIME** - Time taken to initialize JOT component
+
+- **LAUNCH_POINT** - Indicates if the App is opened from Widget or App Icon or Hyperlink or Share to ON etc.
+
+- **MSO_ACTIVATION_TIME_ACTIVATION_TIME** - Time taken to initialize MSO
+
+- **NATIVE_LIBRARIES_LOAD_TIME** - Time taken to load libraries
+
+- **NAVIGATION_CREATE_TO_NAVIGATION_RESUME_CREATE_TO_NAVIGATION_RESUME** - Time taken to complete navigation
+
+- **NAVIGATION_RESUME_TO_BOOT_END_RESUME_TO_BOOT_END** - Time taken to measure delay in page load after boot
+
+- **NAVIGATION_SET_CONTENT_VIEW_TIME_SET_CONTENT_VIEW_TIME** - Time taken to bring in content
+
+- **NUMBER_Of_RUNNING_PROCESSES** - Indicates number of active processes running
+
+- **NUMBER_OF_SNAPSHOTS** - Count of fetches of notebook structure during boot
+
+- **OFFICEASSETMANAGER_INITIALIZATION_TIME** - Time taken to unzip and initialize Asset Manager
+
+- **PROCESS_BOOT_TIME_IN_MS** - Time taken to complete Process creation
+
+- **ROOT_ACTIVITY_CREATE_ACTIVITY_CREATE** - Time taken to transition from Root layer 
+
+- **ROOT_ACTIVITY_DISK_CHECK_ACTIVITY_DISK_CHECK** - Obsolete
+
+- **ROOT_ACTIVITY_LAUNCH_NEXTACTIVITY_ACTIVITY_LAUNCH_NEXTACTIVITY** - Obsolete
+
+- **ROOT_ACTIVITY_PROCESS_INTENT_ACTIVITY_PROCESS_INTENT** - Obsolete 
+
+- **ROOT_ACTIVITY_SESSION_ACTIVITY_SESSION** - Time taken to transition from Root layer 
+
+- **ROOT_TO_NAVIGATION_TRANSITION_TO_NAVIGATION_TRANSITION** - Time taken to handle navigation from Root
+
+- **SNAPSHOT_PUBLISH_TO_RENDERING_END_PUBLISH_TO_RENDERING_END** - Time to complete rendering content
+
+- **SPLASH_ACTIVITY_SESSION_ACTIVITY_SESSION** - Time taken to show splash screen
+
+- **SPLASH_TO_ROOT_TRANSITION_TO_ROOT_TRANSITION** - Time taken to transition from Root layer 
+
+- **TIME_BETWEEN_PROCESS_BOOT_AND_ACTIVITY_BEGIN_IN_MS** - Time between process & activity creation 
+
+- **TIME_TAKEN_IN_MS** - Time taken to complete boot
+ 
+- **TOTAL_MEMORY_IN_MB** - Total memory of the Device
+ 
+- **USER_INTERACTED_DURING_EVENT** - Indicates if the user has interacted during booting
+
+#### OneNote.App.OneNoteAppForeground 
+
+The signal used to indicate OneNote App is in foreground.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+
+The following fields are collected: None
+
+#### OneNote.AppLaunch
+
+The critical signal used to ensure OneNote users can successfully launch the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+
+The following fields are collected: 
+
+- **FirstLaunchTime** - Records time when the App was first launched
+
+- **InstallLocation** - Indicates if the app is pre-installed or downloaded form Store
+
+- **is_boot_completed_ever** - Indicates if the App have even been booted successfully before in the device
+
+- **NewOneNoteUser** - Identify if the user is a new user
 
 #### Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
@@ -7657,6 +8073,67 @@ The following fields are collected:
 
 - **Error** - This consists of the error message that the error object returns.
 
+#### Office.Android.AndroidOfficeLaunchToLandingPageLatency
+
+Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in WXP apps.
+
+The following fields are collected:
+ 
+- **AnyCrashInteractionDuringBoot** - Boolean for any crash encountered during boot
+
+- **AppActivationTimeInMs** - App phase time
+
+- **AppSuspendedDuringBoot** - Boolean for app suspension during boot
+
+- **AvailableMemoryInMB** - available memory
+
+- **CollectionTime** - time of event
+
+- **DalvikHeapLimitInMB** - Heap info
+
+- **DocumentRecoveryInvoked** - Boolean to indicate if any document was recovered
+
+- **ExtractionDone** - Native library extraction time
+
+- **FastBootGainTimeInMs** - Time for fast boot completion
+
+- **FileActivationAttempted** - Boolean to indicate if app was launched due to File activation
+
+- **HasLogcatLoggingImpactOnBoot** - Boolean to indicate if logcat impacted boot time
+
+- **IsThisFirstLaunch** - Boolean to indicate if this is first app launch
+
+- **LatencyTimeInMilliSec** - latency in milli second
+
+- **LibrarySharingTimeInMs** - time for sharing libraries
+
+- **LoadMinLibsTimeInMs** - Loading time for the minimum set of libraries
+
+- **MruListingTimeInMs** - time to load MRU
+
+- **NativeLibrariesLoadTime** - CPP library load time
+
+- **NumberOfRunningProcesses** - number of running processes
+
+- **NumberOfRunningProcesses** - Number of running processes
+
+- **NumberOfRunningServices** - Number of running services
+
+- **OfficeActivityTimeInMs** - Time for initing OfficeActivity
+
+- **PostAppInitTimeInMs** - app phase time
+
+- **PreAppInitializationTime** - App phase init time
+
+- **PreAppInitTimeInMs** - app phase time
+
+- **TotalMemoryInMB** - total memory
+
+- **UIRaaSDownloadLanguagePackageBoot** - information related to language pack download
+
+- **UserDialogInterruptionDuringBoot** - Boolean for any blocking dialog shown during boot
+
+
 #### Office_Apple_Apple_AppBoot_Mac
 
 This event is collected for Office applications running under Apple platforms. The event is used to collect the time taken to boot the app, as well as some details on the type of boot done. This event helps us monitor our performance and provide performance improvements.
@@ -8116,6 +8593,655 @@ The following fields are collected:
 
   - **Data\_Timeout** - How long the hang lasted
 
+  #### Office.Android.ADALSignInUIPrompts
+
+This event denotes that sign-in prompt came to the user, for school or work account.  This event helps in understanding the health of signed in state of our apps and take appropriate actions, when we notice unexpected sign-in re-prompts. 
+
+The following fields are collected:
+
+- **LastLoginDelta** - The time delta from last successful login.
+
+- **PreviousIdentityCredProviderState** - Indicates the state of the account.
+
+- **PreviousIdentityState** - Indicates state of the account, like session expired. 
+
+- **SignInResultCode** - Indicates the result code of sign-in prompt end.
+
+- **UseCache** - Indicates if we force prompted the user to provide the password again.
+
+- **UserType** - Indicates whether it is existing account or new account
+
+#### Office.Android.AndroidAppDocsFileOperationEnds
+
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in WXP apps.
+
+The following fields are collected:
+
+- **AccessMode** - enumeration value for the access mode for the file. Values- None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** - Boolean to indicate if blocking UI was shown in the flow anywhere.
+
+- **ContentUriAuthority** - the authority of the content URL from SAF
+
+- **Correlation** - GUID for the correlation Id related to the operation
+
+- **DocId** - the document ID generated by AppDocs
+
+- **DocInstanceId** - DocInstanceId the document instance ID generated by AppDocs that is scoped to an operation instance on a document
+
+- **DocIsEnterpriseProtected** - Boolean to indicate if document is protected.
+
+- **DocUserId** - user ID from the MS auth layer
+
+- **DocUserIdProvider** - enumeration that represents the user ID provider, 0 = Unkown, 1 = LiveId, 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** - time in millisecond for the file operation to end
+
+- **EndReason** - enumeration value for the end reason.  Values - None, Success, Failure, Cancel
+
+- **ErrorCode** - error code for the file operation
+
+- **Extension** - extension of the file being opened.
+
+- **FileSourceLocation** - enumeration value for file location. Possible values: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** - Time of the event
+
+- **FirstBCSClientError_Info** - Error code information related to file conversions
+
+- **HttpStatusCode** - http response code for web service request
+
+- **InitalizationReason** - entry point for file open
+
+- **K2FileIOHresult** - Hresult code for File open operation end
+
+- **LastBCSClientError_TagId** - last error of BCS (binary conversion service) client
+
+- **OfficeWebServiceApiStatusFlag** - status flag for the web service request
+
+- **OpEndEventId** - tag that represents where the operation actually ended
+
+- **OpFlags** - Document operation param flags used by AppDocs layer.
+
+- **OpSeqNum** - A number that represents the sequencing of file operation related calls in AppDocs layer
+
+- **OpType** - operation type enumeration. Values: "None", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** - enumeration for prefetch state of templates for new file create operations.
+
+- **ProviderApp** - the package name of the app from which file is opened
+
+- **ScopeInstanceId** - Scope Instance ID used to join data context to activities
+
+- **Size** - file size
+
+- **State** - enumeration value for the state of the file. Values: None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **TemplateName** - the binary template name of the document template from the template service, e.g. TF10002009.dotx
+
+- **UriScheme** - scheme of the URL
+
+#### Office.Android.AndroidAuthError
+
+This event denotes core authentication failures during silent token refresh, loading sign in page from service and so on.  This event helps in understanding the health of signed in state of our apps, sign in attempts that are made, and take appropriate actions, when we notice unexpected failures. 
+
+The following fields are collected:
+
+- **ADALErrorCode** - Indicates error code while showing sign-in prompt or silent token fetch attempt for work account.
+
+- **ADALRawErrorCode** - Indicates raw error code while showing sign-in prompt or silent token fetch attempt for work account.
+
+- **ErrorGroup** - Indicates the type of account like personal account or work account or on-premise work account.
+
+- **IDCRLErrorCode** - Indicates error code while showing sign-in prompt for personal account.
+
+- **IDCRLRawErrorCode** - Indicates raw error code while showing sign-in prompt for personal account.
+
+- **LiveOAuthErrorCode** - Indicates error code during silent token refresh attempt for personal account.
+
+- **LiveOAuthRawErrorCode** - Indicates raw error code during silent token refresh attempt for personal account.
+
+- **NTLMErrorCode** - Indicates error code while showing sign-in prompt for on-premise work account.
+
+#### Office.Android.AndroidFileAsyncSaveStatus
+
+Captures File async save status data and various error codes from different components.  Microsoft uses this data to analyze if there is any user data loss in the app during saving of files in WXP apps.
+
+The following fields are collected:
+
+- **FileExtension** - file extension
+
+- **FileIOSaveHResult** - HResult for file save operation
+
+- **FileIOSaveIsCopy** - Boolean to indicate if operation is saving a copy.
+
+- **FileSize** - size of file
+
+- **FileSourceLocation** - enumeration for file source location. Values: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+#### Office.Android.AndroidFileOpenReliability
+
+This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code are reporting them.  Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in WXP apps.
+
+The following fields are collected:
+
+- **AccessMode** - Access mode enumeration
+
+- **AppDocsFileOpenErrorCode** - AppDocs error code for file open failure
+
+- **ContentUriAuthority** - authority of the content URL from SAF
+
+- **DownloadCsiError** - download error message from CSI
+
+- **FileExtension** - file extension
+
+- **FileOpenEndErrorCode** - Error code for file open failure
+
+- **FileOpenStatus** - File open status enumeration
+
+- **FileSize** - file size
+
+- **FileSourceLocation** - File Location enumeration
+
+- **FirstBCSClientError_Info** - last error of BCS (binary conversion service) client
+
+- **IfWordFileOpenCancelled** - if file open was cancelled by user in Word
+
+- **InitializationReason** - enumeration for the entry point for file open
+
+- **IsAutoSaveDisabled** - Is auto save disabled during file open
+
+- **IsFileEmpty** - Boolean to indicate if file is empty
+
+- **K2FileIOHresult** - Hresult for File operation end
+
+- **OpenCsiError** - file open error message in the CSI layer
+
+- **OpEndEventId** - tag where the operation actually ended
+
+- **PPTHresult** - Hresult in PPT
+
+- **PPTIsExpectedError** - PPT Error classification for file open expected/unexpected failure 
+
+- **PPTTag** - error tag in PPT
+
+- **ProviderApp** - the package name of the app from which file is opened
+
+- **ProviderFileSize** - file size captured while opening file via file activation
+
+- **Stae** - File open state enumeration
+
+- **UriScheme** - Scheme of the URL
+
+- **WordErrortag** - error tag in Word
+
+- **WordFileCorruptionReason** - Reason for corruption due to which word file can fail in opening
+
+- **WordFileOpenErrorCode** - Word specific file open error code.
+
+- **WordFileTypeFromDod** - File type determined by word based on actual file format
+
+- **WordFileTypeFromExtension** - File type determined by word based on file extension
+
+#### Office.Android.AndroidFileSaveStatus
+
+Critical to capture File save status data and various error codes from different components.  Microsoft uses this data to analyze if there is any user data loss in the app during saving of files in WXP apps.
+
+The following fields are collected:
+
+- **AccessMode** - Values** - None, ReadOnly, ReadOnlyUpgradable, ReadWrite.
+
+- **AppDocsEndReason** - enumeration for File save Appdoc EndReason.  Values: None, Success, Failure, Cancel.
+
+- **AppDocsErrorCode** - Final Error Code for file save failure
+
+- **AppDocsTriggeringSaveDetails** - field to indicate if AppDocs is triggering the save
+
+- **DocInstanceId** - DocInstanceId the document instance ID generated by AppDocs that is scoped to an operation instance on a document
+
+- **ExcelFileSaveResult** - Excel specific HResult
+
+- **FileExtension** - Extension of file.
+
+- **FileIOSaveErrorCode** - Error code in FileIO
+
+- **FileIOSaveHResult** - Hresult in FileIO
+
+- **FileIOSaveIsCopy** - Boolean to indicate if this is a copy operation
+
+- **FileSize** - Size of file
+
+- **FileSourceLocation** - File location enumeration.  Values: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **OpFlags** - Operation flags for save
+
+- **PPTFileSaveFailHresult** - PPT hresult for save failure
+
+- **PPTFileSaveFailTag** - PPT tag for save failure
+
+- **State** - File Open state enumeration. 
+
+- **Values** - None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **WordFileCopyErrorTrackbackTag** - trackback tag for failure is CopyDocument stage in Word
+
+- **WordFileSaveCancelReason** - trackback tag for cancels in word
+
+- **WordFileSaveEid** - Word specific error code
+
+- **WordFileSaveErrorTrackbackTag** - trackback tag for save failures
+
+- **WordFileSaveOpResult** - enumeration for result status 0 if succeeded, 1 if failed, 2 if cancelled
+
+- **WordFileSaveSuccess** - enumeration for Word specific details for file save operation success.
+
+#### Office.Android.AndroidOfficeActivationLatency
+
+Critical data to collect end-to-end file open time for all file opens in Windows, Excel, PowerPoint apps.  This is used by Microsoft to find out the metric for file open performance of our apps
+
+The following fields are collected:
+
+- **AppBootingOccured** - Boolean to check if app boot is complete
+
+- **ApplicationBootTime** - time required during a specific phase of app boot
+
+- **AppSuspendedDuringBoot** - Boolean to check if app was suspended during boot
+
+- **BlockingUIShownDuringFileOpen** - Boolean to indicate if there was any blocking dialog during the file open operation
+
+- **CachedInfoAvailable** - Boolean to look for cached info specific to file open operation
+
+- **DocumentRecoveryInvoked** - Boolean to indicate if there was a document pending for recovery
+
+- **EndToEndActivationTime** - time taken to render the file for files opened from outside the app
+
+- **EndToEndFileOpenTime** - time taken to render the file for files opened from inside the app
+
+- **FileOpenPhaseDurationInMs** - file open operation time consumed by specific phase
+
+- **FileSourceLocation** - enumeration value for File location such as None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **InitalizationReason** - entry point for file open
+
+- **InitialBootPhaseTime** - time required during a specific phase of app boot
+
+- **IsThisFirstLaunch** - Boolean to indicate if this is the first launch of the app
+
+- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **PostAppInitTimeInMs** - time required during a specific phase of app boot
+
+- **PPTRenderPhase** - time related to specific phase in PPT rendering
+
+- **PreAppInitTimeInMs** - time required during a specific phase of app boot
+
+- **ProviderApp** - the package name of the app from which file is opened
+
+- **TelemetryReason** - similar to InitialisationReason, but more detailed enumeration value regarding the entry point for File open.
+
+- **UserDialogInterruptionDuringBoot** - Boolean to indicate if there was any blocking dialog during the boot
+
+- **XLRenderPhase** - time related to specific phase in Excel rendering
+
+#### Office.Android.AppDocsFileOperationEnds
+
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in WXP apps.
+
+The following fields are collected:
+
+- **AccessMode** - enumeration value for the access mode for the file.  Values: None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+
+- **BlockingUIShown** - Boolean to indicate if blocking UI was shown in the flow anywhere.
+
+- **ContentUriAuthority** - the authority of the content URL from SAF
+
+- **Correlation** - GUID for the correlation ID related to the operation
+
+- **DocId** - the document id generated by AppDocs
+
+- **DocInstanceId** - DocInstanceId the document instance ID generated by AppDocs that is scoped to an operation instance on a document
+
+- **DocIsEnterpriseProtected** - Boolean to indicate if document is protected.
+
+- **DocUserId** - user ID from the MS auth layer
+
+- **DocUserIdProvider** - enumeration that represents the user id provider, 0 = Unkown, 1 = LiveId , 2 = OrgId, 3 = SSPI, 4 = ADAL
+
+- **DurationInMs** - time in milliseconds for the file operation to end
+
+- **EndReason** - enumeration value for the end reason.  Values: None, Success, Failure, Cancel
+
+- **ErrorCode** - error code for the file operation
+
+- **Extension** - first four characters of the extension of the file being opened.
+
+- **FileSourceLocation** - enumeration value for file location. Possible values: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** - Time of the event
+
+- **FirstBCSClientError_Info** - Error code information related to file conversions
+
+- **HttpStatusCode** - HTTP response code for web service request
+
+- **InitalizationReason** - entry point for file open
+
+- **K2FileIOHresult** - Hresult code for File open operation end
+
+- **LastBCSClientError_TagId** - last error of BCS (binary conversion service) client
+
+- **OfficeWebServiceApiStatusFlag** - status flag for the web service request
+
+- **OpEndEventId** - tag that represents where the operation actually ended
+
+- **OpFlags** - Document operation param flags used by AppDocs layer.
+
+- **OpSeqNum** - A number that represents the sequencing of file operation related calls in AppDocs layer
+
+- **OpType** - operation type enumeration. Values: "None", "CreateDocument", "OpenDocument", "CopyDocument", "CloseDocument", "SaveDocument", "OpenVersion", "CloseVersion"
+
+- **PreFetchState** - enumeration for prefetch state of templates for new file create operations.
+
+- **ProviderApp** - the package name of the app from which file is opened
+
+- **ScopeInstanceId** - Scope Instance Id used to join data context to activities
+
+- **Size** - file size
+
+- **State** - enumeration value for the state of the file. Values: None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **TemplateName** - the binary template name of the document template from the template service, e.g. TF10002009.dotx
+
+- **UriScheme** - scheme of the URL
+
+#### Office.Android.BCS.Errors
+
+Binary conversion Errors telemetry for Print and Share as PDF.  Microsoft uses this to identify failure points during BCS conversions in WXP apps.
+
+The following fields are collected:
+
+- **DocumentFileSize** - File size.
+
+- **FileExtension** - First four characters of the extension of the file.
+
+- **IsFileDirty** - Boolean to indicate if there were unsaved changes in the file.
+
+- **Location** - File location enumeration.  Values: OneDrive, SharePoint, Dropbox, Others
+
+- **PDFConversionError** - Tag at which error occurs for PDF conversion
+
+- **PdfConversionErrorCode** - PDF conversion error code
+
+- **PdfConversionHRStatus** - PDF conversion status code
+
+- **PdfConversionResult** - PDF Conversion result enumeration.  Values: "Success", "Failed" and "Cancelled"
+
+- **PdfFileSize** - Size of the PDF
+
+#### Office.Android.ClientSideIAP
+
+Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps which might hinder user to add places or browse through them from within the app in WXP apps.
+
+The following fields are collected:
+
+- **ClientTransactionId** - GUID passed to DSC for a specific Redemption request.
+
+- **CollectionTime** - time of subscription purchase completion
+
+- **CountryCode** - Client country code which is sent to DSC for client redemption request
+
+- **GoPremiumEntryPoint** - entry point for triggering purchase 
+
+- **IsActivateExistingSubscription** - Boolean to indicate if there was an existing subscription which was activated
+
+- **IsErrorRetriable** - Boolean to indicate if redemption can be retried
+
+- **IsPreviousPurchase** - Boolean to indicate if activation occurred with a previous purchase of subscription
+
+- **IsProvisioningTriggeredByRetry** - Boolean to indicate if retry was involved
+
+- **LanguageCode** - Client language code which is sent to DSC for client redemption request
+
+- **ProductIdentifier** - SKU name which the client is trying to purchase
+
+- **ProvisioningHttpStatusCode** - Provisioning http status code
+
+- **ProvisioningStatusCode** - Provisioning status code
+
+- **PurchaseOrderId** - Purchase order identifier from Google/Samsung store
+
+- **RedemptionTaskHR** - HResult for redemption task of subscription
+
+- **SubscriptionProvisioningSucceeded** - Boolean for subscription provisioning result success
+
+- **SubscriptionPurchaseHR** - Hresult for subscription purchase task
+
+- **SubscriptionType** - enumeration for subscription type or SKUs.
+
+- **TCID** - Icon click the triggers the subscription flow
+
+#### Office.Android.DBFailureCause
+
+Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps which might hinder user to add places or browse through them from within the app in WXP apps.
+
+The following fields are collected:
+
+- **ErrorAt** - Tag Value: Information about the place where the Failure happened
+
+- **ExceptionErrorMessage** - verbose error message
+
+#### Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
+
+We log this event in case there are errors while loading shared libraries. There can be library loading errors for two reasons 1) Installed Apk is incompatible with the device. 2) The library that we are trying to load may be corrupt, because of errors in extracting it due to low disk space, or low memory.
+
+The following fields are collected:
+
+- **Data_ExceptionMessage** - Exception message thrown by Android API System.loadlibrary
+
+- **Data_FreeSpaceInMB** - Free space available on device
+
+- **Data_nickName** - Name of the library which couldn’t be loaded.
+
+#### Office.Android.Intune.IntuneJavaCopyFailedAttempts
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- **Data_FileCreationFailedErrorCode** - Error code associated with the flow
+
+#### Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources.  Microsoft uses this data to identify errors during Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- **Data_ErrorCode** - Error code associated with the flow
+
+#### Office.Android.Intune.IntuneJavaExceptionAppPolicy
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+ 
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+ 
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+
+The following fields are collected:
+ 
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+  
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to identifying if an account is managed.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account.
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionProtect
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account.
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.Intune.IntuneJavaExceptionUpdateToken
+
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+
+The following fields are collected:
+
+- None
+
+#### Office.Android.LicenseActivationFailure
+
+Critical Error telemetry to track failures to activate licenses for O365 accounts in W/X/P apps.  Microsoft uses this to analyze failures to activate a purchased o365 license.
+
+The following fields are collected:
+
+- **EntryPoint** - Entrypoint enumeration for triggering the license activation flow
+
+- **HResult** - error code for the failure
+
+- **IsGallatin** - Boolean to check if it is a Gallatin account
+
+- **MessageCode** - enumeration to indicate the point of failure for activation
+
+- **PreviousEntryPoint** - Entrypoint enumeration for triggering the license activation flow
+
+- **StateAfterActivation** - enumeration to indicate licensing state of the app before the activation flow started
+
+- **StateBeforeActivation** - enumeration to indicate licensing state of the app before the activation flow started
+
+- **UserAccountType** - enumeration to indicate whether personal account or enterprise account.
+
+#### Office.Android.MSASignInUIPrompts
+
+This event denotes that sign-in prompt came to the user, for personal account.  This event helps in understanding the health of signed in state of our apps and take appropriate actions, when we notice unexpected sign-in re-prompts. 
+
+The following fields are collected:
+
+- **ExternalCacheRefreshError** - Error code of token refresh attempt, before showing sign-in prompt.
+
+- **LastLoginDelta** - The time delta from last successful login.
+
+- **MSAserverUAID** - Correlation id with service telemetry data.
+
+- **PreviousIdentityState** - Indicates state of the account, like session expired. 
+
+- **SignInResultCode** - Indicates the result code of sign-in prompt end.
+
+- **UseCache** - Indicates if we force prompted the user to provide the password again.
+
+- **UserType** - Indicates whether it is existing account or new account
+
+- **WasIdentitySignedOut** - Indicates if account was in signed out state.
+
+
 #### Office_Apple_Licensing_Mac_DRActivationFailures
 
 This event is collected for Office applications running under Apple platforms. The event is used for capturing digital river activation failures (the event logs the key and product that was used to activate, as well as the error code received).  This event is used for detecting and helping troubleshoot activation failures (Digital River issues).
@@ -8573,3 +9699,13 @@ Collected whenever PowerPoint detects there is no internet connectivity. Microso
 The following fields are collected:
 
 - **Data\_IsNexusDetected:bool** - shows whether we got the Internet connectivity status when calling Nexus service (value true) or when calling generic web service API call (value false)
+
+#### Office.ServiceabilityManager.OfficeSvcMgrProfile
+
+This event is triggered when Office Serviceability Manager starts, and is critical for providing accurate insights related to Deployment Status and Application and Add-in crashes within customer's tenant by allowing us to generate insights for the IT Admin to be able to confidently roll-out updates for their enterprise machines.  
+
+The following fields are collected:
+
+- **DeviceIdJoinToken** - used to join Telemetry data from Health and Deployment Status with other Functional Data which is collected via the Services pipeline.
+
+- **TenantAssociationKeyStamped** - a Boolean flag used to determine the number of Managed devices in the Office eco-system.
