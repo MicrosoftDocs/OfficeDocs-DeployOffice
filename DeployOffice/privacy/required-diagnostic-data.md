@@ -9067,7 +9067,7 @@ Critical Error telemetry to track failures for individual Intune APIs; This tele
 
 The following fields are collected:
  
-None
+- None
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
 
@@ -9075,7 +9075,7 @@ Critical Error telemetry to track failures for individual Intune APIs; This tele
 
 The following fields are collected:
  
-None
+- None
 
 #### Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
 
@@ -9083,7 +9083,7 @@ Critical Error telemetry to track failures for individual Intune APIs; This tele
 
 The following fields are collected:
 
-None
+- None
 
 #### Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
 
