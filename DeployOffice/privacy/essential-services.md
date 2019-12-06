@@ -2700,27 +2700,6 @@ The following fields are collected:
 
 - **Result** - Numeric error code flags returned by the Office webservice call APIs.
 
-### Office.ServiceabilityManager.InventoryAddon.Result
-
-This event is logged when the call to the webservice made within the Click-to-Run Serviceability Manager Inventory add-on completes, irrespective of whether it succeeds or fails. This is essentially the last operation within the add-on to track the overall operation status.
-
-- **Correlation ID** - A randomly generated GUID specific to the current instance that is sent to the webservice to correlate calls between the client and the server.
-
-- **Function** - The function in the code from which the current call occurred.
-
-- **Result** - Numeric error code flags returned by the Office webservice call APIs.
-
-### Office.ServiceabilityManager.InventoryAddon.Result
-
-This event is logged when the call to the webservice made within the Click-to-Run Serviceability Manager Inventory add-on completes, irrespective of whether it succeeds or fails. This is essentially the last operation within the add-on to track the overall operation status.
-
-The following fields are collected:
-
-- **Correlation ID** - A randomly generated GUID specific to the current instance that is sent to the webservice to correlate calls between the client and the server.
-
-- **Function** - The function in the code from which the current call occurred.
-
-- **Result** - Numeric error code flags returned by the Office webservice call APIs.
 
 ### Office.ServiceabilityManager.WebserviceFailure
 
@@ -3136,15 +3115,14 @@ The following fields are collected:
 
 - **GenuineTicketFailure** - Tells us the failure HRESULT when trying to get the machine’s Windows genuine ticket/product key (WPK).
 
-- **PinValidationFailure** - Tells us why the pin validation process failed.
-	Possible errors:
-	GeoBlocked
-	InvalidFormat
-	InvalidPin
-	InvalidState
-	InvalidVersion
-	Unknown
-	Used
+- **PinValidationFailure** - Tells us why the pin validation process failed. Possible errors:
+	- GeoBlocked
+	- InvalidFormat
+	- InvalidPin
+	- InvalidState
+	- InvalidVersion
+	- Unknown
+	- Used
 
 - **PinValidationResult** - Tells us the pin validation result of a pin that we failed to crack.
 
@@ -3152,15 +3130,14 @@ The following fields are collected:
 
 - **Success** - Indicates that we successfully fetched a valid Office binding (pin) for the machine.
 
-- **Tag** - Tells us at which step we stopped searching for a binding.
-	Possible tags:
-	0x03113809	No internet/service error while validating pin
-	0x0311380a	Pin validation failure, sent with PinValidationFailure field
-	0x0310410f	Success, sent with Success field
-	0x0311380d	Retry-able errors (internet issues, unknown errors)
-	0x0311380e	Non-retry-able errors (binding offer expired)
-	0x0311380f	Other errors (unable to license)
-	0x03104111	Failed to crack the Office pin, sent with PinValidationResult field
+- **Tag** - Tells us at which step we stopped searching for a binding. Possible tags:
+  - 0x03113809	No internet/service error while validating pin
+   - 0x0311380a	Pin validation failure, sent with PinValidationFailure field
+  - 0x0310410f	Success, sent with Success field
+  - 0x0311380d	Retry-able errors (internet issues, unknown errors)
+  - 0x0311380e	Non-retry-able errors (binding offer expired)
+  - 0x0311380f	Other errors (unable to license)
+  - 0x03104111	Failed to crack the Office pin, sent with PinValidationResult field
 
 - **WpkBindingFailure** - Tells us the error code of getting the Office pin bound to the machine’s WPK.
 
@@ -3182,17 +3159,16 @@ The following fields are collected:
 
 - **OExType** - The error type we get back when identity’s sign-in dialog was dismissed.
 
-- **Tag** - Tells us at which step the user exits the AFO redemption process.
-	Possible tags:
-	0x0311380b	User dismissed identity’s sign-in dialog from redemption dialog
-	0x0311380c	Failed to auto-load an identity post user sign-in from redemption dialog
-	0x03113810	Failed to load the account’s demographic information (country code, language, 	currency, trial offer, and marketing preferences)
-	0x03113805	User dismissed identity’s sign-in dialog from sign-in dialog
-	0x03113806	Failed to auto-load an identity post user sign-in from sign-in dialog
-	0x03113807	Failed to auto-load an identity
-	0x03113811	User closed the sign-in/redemption dialog
-	0x03113812	User closed the accept EULA dialog
-	0x03113808	User accepted the EULA
+- **Tag** - Tells us at which step the user exits the AFO redemption process. Possible tags:
+	- 0x0311380b	User dismissed identity’s sign-in dialog from redemption dialog
+	- 0x0311380c	Failed to auto-load an identity post user sign-in from redemption dialog
+	- 0x03113810	Failed to load the account’s demographic information (country code, language, 	currency, trial offer, and marketing preferences)
+	- 0x03113805	User dismissed identity’s sign-in dialog from sign-in dialog
+	- 0x03113806	Failed to auto-load an identity post user sign-in from sign-in dialog
+	- 0x03113807	Failed to auto-load an identity
+	- 0x03113811	User closed the sign-in/redemption dialog
+	- 0x03113812	User closed the accept EULA dialog
+	- 0x03113808	User accepted the EULA
 
 - **UseInAppRedemption** - Tells us if we’re keeping users in-app for redemption or sending them to the web to redeem their fetched pin (pre-populated).
 
