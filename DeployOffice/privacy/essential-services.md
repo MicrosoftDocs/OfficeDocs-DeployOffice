@@ -2688,18 +2688,6 @@ Reports on the machine-impactful actions taken, as determined by the reasoned-ov
 
 - **VersionToInstall –**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
-### Office.ServiceabilityManager.InventoryAddon.Result
-
-This event is logged when the call to the webservice made within the Click-to-Run Serviceability Manager Inventory add-on completes, irrespective of whether it succeeds or fails. This is essentially the last operation within the add-on to track the overall operation status.
-
-The following fields are collected:
-
-- **Correlation ID** - A randomly generated GUID specific to the current instance that is sent to the webservice to correlate calls between the client and the server.
-
-- **Function** - The function in the code from which the current call occurred.
-
-- **Result** - Numeric error code flags returned by the Office webservice call APIs.
-
 
 ### Office.ServiceabilityManager.WebserviceFailure
 
