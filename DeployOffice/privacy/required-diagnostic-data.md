@@ -257,7 +257,7 @@ This category contains the following fields:
 
   - **IsClickToRunInstall** - Flag indicating if install was a click to run install. Allows us to identify issues that might be specific to the Click-To-Run install mechanism.
 
-  - **IsDebug** - Flag indicating if the office build is a Debug build. Allows us to identify if issues are coming from Debug builds which may behave differently .
+  - **IsDebug** - Flag indicating if the Office build is a Debug build. Allows us to identify if issues are coming from Debug builds which may behave differently .
 
   - **IsInstalledOnExternalStorage** - Flag indicating if Office was installed on an external storage device. Let’s us determine if issues can be traced to an external storage location.
 
@@ -533,7 +533,7 @@ Installed product and version and the installation status.
 
 #### Office.ClickToRun.UpdateStatus
 
-Applicable to all win32 applications. Helps us understand the status of the update process of the office suite (Success or failure with error details)
+Applicable to all win32 applications. Helps us understand the status of the update process of the Office suite (Success or failure with error details)
 
 The following fields are collected:
 
@@ -836,7 +836,7 @@ The following fields are collected:
 
 #### Office.Extensibility.AppCommands.AddSolution
 
-Collects install information for Office add-ins that customize the ribbon.  Used to detect issues with how custom add-ins modify the office ribbon.
+Collects install information for Office add-ins that customize the ribbon.  Used to detect issues with how custom add-ins modify the Office ribbon.
  
 The following fields are collected:
 
@@ -5820,7 +5820,7 @@ Records information about unexpected shutdowns of Office. This allows us to iden
 
 The following fields are collected:
 
-  - **Data\_AirspaceInitTime:integer-** time taken to initialize Airspace office component
+  - **Data\_AirspaceInitTime:integer-** time taken to initialize Airspace Office component
 
   - **Data\_AllShapes:integer -** number of shapes in the document
 
@@ -5938,19 +5938,19 @@ The following fields are collected:
 
   - **Data\_InitAddinsTime:integer -** time taken to initialize and load the COM Add
 
-  - **Data\_InitBrandTime:integer -** amount of time it takes to initialize splash screen and branding office components
+  - **Data\_InitBrandTime:integer -** amount of time it takes to initialize splash screen and branding Office components
 
-  - **Data\_InitGimmeTime:integer -** time taken to initialize office component
+  - **Data\_InitGimmeTime:integer -** time taken to initialize Office component
 
-  - **Data\_InitLicensingTime:integer -** time taken to initialize licensing office component
+  - **Data\_InitLicensingTime:integer -** time taken to initialize licensing Office component
 
-  - **Data\_InitMsoUtilsTime:integer -** Initialization time to MSOUTILS office component
+  - **Data\_InitMsoUtilsTime:integer -** Initialization time to MSOUTILS Office component
 
-  - **Data\_InitPerfTime:integer -** Performance office component initialization time
+  - **Data\_InitPerfTime:integer -** Performance Office component initialization time
 
-  - **Data\_InitTCOTime:integer -** amount of time it takes to initialize office component manager
+  - **Data\_InitTCOTime:integer -** amount of time it takes to initialize Office component manager
 
-  - **Data\_InitTrustCenterTime:integer -** Time taken to initialize office component trust center
+  - **Data\_InitTrustCenterTime:integer -** Time taken to initialize Office component trust center
 
   - **Data\_InitVSSubSystemsTime:integer -** amount of time it takes to initialize Visio components
 
@@ -5982,7 +5982,7 @@ The following fields are collected:
 
   - **Data\_Layers:integer -** number of layers in the diagram
 
-  - **Data\_LoadProfileTime:integer -** amount of time it takes to load office profiler
+  - **Data\_LoadProfileTime:integer -** amount of time it takes to load Office profiler
 
   - **Data\_LoadRichEditTim:integer-** rich edit component load time
 
@@ -6002,9 +6002,9 @@ The following fields are collected:
 
   - **Data\_MsoEndBootTime:integer -** time taken to end MSO boot
 
-  - **Data\_MsoInitCoreTime:integer -** Take taken to initialize MSO office component
+  - **Data\_MsoInitCoreTime:integer -** Take taken to initialize MSO Office component
 
-  - **Data\_MsoInitUITime:integer -** time taken to initialize MSO office component UI
+  - **Data\_MsoInitUITime:integer -** time taken to initialize MSO Office component UI
 
   - **Data\_MsoMigrateTime:integer -** Time taken to migrate user settings on first bootup if user upgraded from previous version
 
@@ -6016,9 +6016,9 @@ The following fields are collected:
 
   - **Data\_NetworkIOBytesWrittenSquared :int-** squared value of NetworkIOBytesWritten
 
-  - **Data\_OartStartupTime:integer -** time taken to initialize OART office component
+  - **Data\_OartStartupTime:integer -** time taken to initialize OART Office component
 
-  - **Data\_OleInitTime:integer -** OLE office component initialization time
+  - **Data\_OleInitTime:integer -** OLE Office component initialization time
 
   - **Data\_OpenDurationTimeInMs:integer -** duration to open file in milliseconds
 
@@ -6750,7 +6750,7 @@ The following fields are collected.
 
 #### Office.TelemetryEngine.IsPreLaunch
 
-Applicable for Office UWP applications.  This event is fired when an office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a session is launch session or not.
+Applicable for Office UWP applications.  This event is fired when an Office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a session is launch session or not.
 
 The following fields are collected:
 
