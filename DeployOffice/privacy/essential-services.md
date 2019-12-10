@@ -2689,6 +2689,20 @@ Reports on the machine-impactful actions taken, as determined by the reasoned-ov
 - **VersionToInstall –**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
 
+### Office.ServiceabilityManager.InventoryAddon.Results
+
+This event is logged when the call to the webservice made within the Click-to-Run Serviceability Manager Inventory add-on completes, irrespective of whether it succeeds or fails. This is essentially the last operation within the add-on to track the overall operation status.
+
+The following fields are collected:
+
+-  **WebCallSource** - An enumeration value (specified as an integer) indicating the Serviceability Manager add-on that was the source of the call:
+   - Inventory: 0
+   - Inventory Configuration: 1
+   - Inventory Policy: 2
+   - Inventory Network Status: 3
+
+- **Result** - Numeric error code flags returned by the Office webservice call APIs.
+
 ### Office.ServiceabilityManager.WebserviceFailure
 
 This event is logged whenever a call to a webservice made within a Click-to-Run Serviceability Manager add-on fails.
