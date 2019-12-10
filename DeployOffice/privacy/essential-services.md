@@ -419,6 +419,37 @@ The following fields are collected:
 
   - **Wamtelemetrybatch** - Currently unused. In the future, allows the WAM component to dispatch additional information regarding the authentication event.
 
+### OneNote.SignIn.SSOExternalAppsAccountFound
+ 
+This event is logged when an account with a valid refresh token is found among the list of accounts provided by TokenSharingManager.  This scenario is specific to Single Sign-on (SSO).
+ 
+The following fields are collected:
+ 
+- **AccountType** - Logs the type of account
+
+- **ProviderPackageID** - Logs the package ID of the app that provided this account
+
+### OneNote.SignIn.SSOExternalAppsInvalidAccount
+
+This event is logged when there was an error when attempting to obtain a refresh token for an account in the list of accounts provided by TokenSharingManager. This scenario is specific to Single Sign-on (SSO)
+ 
+The following fields are collected:
+ 
+- **RawError** - Logs the raw error obtained when attempting to get a refresh token with the given account
+
+### OneNote.StickyNotes.FetchTokenCompleted
+ 
+This event is logged post authentication, once fetching of refresh token is completed.
+ 
+The following fields are collected:
+ 
+- **ErrorMessage** - If fetching of token failed, this would log the error message 
+
+- **Result** - Logs the result of token fetching attempt
+
+- **StickyNoteAccountType** - Logs type of the account for which the app was trying to fetch refresh token
+
+
 ## Click-to-Run events
 
 ### Office.ClickToRun.Bootstrapper 
@@ -2526,13 +2557,19 @@ Reports on the action that reason over the input collected using CollectParamete
 
 - **PRID –**	String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
+- **PridsToMigrateFromCentennial-**	String of Office products to migrate from Store installations to Click-To-Run
+
 - **ProductsToAdd –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be installing
+
+- **ProductsToMigrateFromO15C2R -**  String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
 
 - **ProductsToRemove –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
 
 - **SharedComputerLicensing –**	Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
 
 - **ShouldActivate –**	Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
+
+- **ShouldUninstallCentennial -** Boolean flag indicating whether Office products from the Store should be uninstalled
 
 - **VersionToInstall –**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
  
@@ -2597,15 +2634,21 @@ Reports the parameters used for the Office installation
 
 - **PlatformToInstall –**	String indicating the final decision on whether x86 vs. X64 Office should be installed
 
-- **ProductsToRemove –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
-
 - **PRID –**	String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
+- **PridsToMigrateFromCentennial-** String of Office products to migrate from Store installations to Click-To-Run
+
 - **ProductsToAdd –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be installing
+
+- **ProductsToMigrateFromO15C2R -** String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
+
+- **ProductsToRemove –**	The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
 
 - **SharedComputerLicensing –**	Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
 
 - **ShouldActivate–**	Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
+
+- **ShouldUninstallCentennial -** Boolean flag indicating whether Office products from the Store should be uninstalled
 
 - **VersionToInstall–**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
@@ -2646,6 +2689,37 @@ Reports on the machine-impactful actions taken, as determined by the reasoned-ov
 - **VersionToInstall –**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
 
+### Office.ServiceabilityManager.InventoryAddon.Results
+
+This event is logged when the call to the webservice made within the Click-to-Run Serviceability Manager Inventory add-on completes, irrespective of whether it succeeds or fails. This is essentially the last operation within the add-on to track the overall operation status.
+
+The following fields are collected:
+
+-  **WebCallSource** - An enumeration value (specified as an integer) indicating the Serviceability Manager add-on that was the source of the call:
+   - Inventory: 0
+   - Inventory Configuration: 1
+   - Inventory Policy: 2
+   - Inventory Network Status: 3
+
+- **Result** - Numeric error code flags returned by the Office webservice call APIs.
+
+### Office.ServiceabilityManager.WebserviceFailure
+
+This event is logged whenever a call to a webservice made within a Click-to-Run Serviceability Manager add-on fails.
+
+The following fields are collected:
+
+- **Add-on** - The Click-to-Run Serviceability Manager add-on from which the webservice call was made. This can have values like inventory, manageability, etc. encoded as a numeric value.
+
+- **Correlation ID** - A randomly generated GUID specific to the current instance that is sent to the webservice to correlate calls between the client and the server.
+
+- **ErrorInfo** - Numeric error code information returned by the Office webservice call APIs.
+
+- **Function** - The function in the code from which the current call occurred.
+
+- **Status** - The HTTP status code returned by the call to the webservice, e.g. 404, 500, etc.
+
+
 ## Enhanced Configuration Service (ECS) events
 
 ### Office.Experimentation.FeatureQueryBatched
@@ -2683,6 +2757,14 @@ This event helps scope analysis of product usage and performance metrics (such a
 The following fields are collected:
 
   - **FeatureGate -** Identifies the set of features for which the trigger analysis is applicable.
+
+### OneNote.FlightDefault
+ 
+This event is logged when OneNote asks ECS server for flight values.  This is used to enable experimental features to those users who have opted in for receiving such flights.
+ 
+The following fields are collected:
+ 
+- **ConfigParam** - The config for which the value is being accessed for
 
 ## Licensing events
 
@@ -2752,7 +2834,10 @@ The following fields are collected:
 
 We collect this when the user is setting up a device and we call our licensing service to detect if the logged in user has an Office entitlement or not. This reports the result of that call. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
-This event collects no fields.
+The following fields are collected:
+
+- **EntitlementCount** – Number of entitlements the user has
+
 
 ### Office.Licensing.Heartbeat 
 
@@ -2761,6 +2846,26 @@ On every session we check if 72 hours have passed since the last license renewal
 The following fields are collected:
 
   - **Mode** – An enumerator representation of the Office licensing stack that is being used on this machine
+
+### Office.Licensing.InClientPinRedemption.CallPinRedemptionAPI
+
+This telemetry tracks the results of Office’s pin redemption service call.
+
+The following fields are collected:
+
+- **ClientTransactionId** - Unique identifier for the service call.
+
+- **ErrorCategory** - Each error type can fall into a more general category, such as “Retryable”.
+
+- **ErrorType** - Reason of failure, such as “AlreadyRedeemedByOther”.
+
+- **InAFOFlow** - A Boolean indicating if we are in the AFO redemption flow.
+
+- **StatusCode** - One-word result of the service call, such as “Created”.
+
+- **StatusMessage** - Details of the status code, such as ‘Successfully provisioned."
+
+- **UsingNulApi** - A Boolean indicating if we are using the new licensing stack.
 
 ### Office.Licensing.InRFM 
 
@@ -2910,6 +3015,26 @@ If we are not able to activate a user for some reason and have to show them a di
 
 This event collects no fields.
 
+### Office.Licensing.OOBE.TryBuyChoice
+
+Users with pre-installed Office on new machines who have no Office entitlement are shown a dialog through which they can try, buy or enter a product key to get licensed. This event captures the user action on the dialog. This event is used to track the user action taken on the dialog shown to users with no Office entitlement where Office was pre-installed on the machine and helps determining if the user is licensed or unlicensed by design.
+
+The following fields are collected:
+
+- **Buy** - Tells if the user clicked on the buy button or not
+
+- **ForceAutoActivate** - Tells if in-app activation should be attempted or not
+
+- **GoBackToSignIn** - Tells if the user wanted to sign in again (possibly with another account)
+
+- **IsPin** - Tells if the user entered a pin
+
+- **ProductKey** - Tells if the user tried to enter a product key
+
+- **Try** - Tells if the user clicked on the try button or not
+
+- **UserDismissed** - This tells if the user dismissed the dialog and thus would be in grace or reduced functionality mode because they didn’t choose to buy office or get a trial
+
 ### Office.Licensing.Purchase 
 
 We have an experiment that gives the user an option to try and setup autopay for Office directly from an app without ever leaving the context of the app. This reports the success orfailure of that experiment along with the error code It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
@@ -2952,6 +3077,149 @@ The following fields are collected:
 
   - **UninstallProduct** – Indicates whether the old product will be uninstalled as part of the conversion
 
+### Office.Licensing.TelemetryFlow.OLSResults
+
+When a user is unlicensed, we make several service calls to get the user into a licensed state and to activate their Office product.  This event gets triggered on calling the Office Licensing Service to check if the user has entitlements.  This event is going to be used to track the user licensing health after calling the Office Licensing Service and the Office Client health after attempting to get Office activated.
+
+The following fields are collected:
+
+- **EntitlementPickerShown** - Tells if the user had multiple entitlements and if the user had to manually choose from them to get licensed
+
+- **GetAuthResult** - Tells various states the client might be in like if they got an empty product key from the Office Licensing Service or if they were entitled for another product and Office needs to be converted to the new product
+
+- **GetEntitlementsCount** - Tells the number of entitlements the user has
+
+- **GetEntitlementsSucceeded** - Tells if the call to an Office Licensing Service API to retrieve the user’s entitlements succeeded or not
+
+- **GetKeySucceeded** - Tells if the call to an Office Licensing Service API to retrieve a key succeeded
+
+- **GetNextUserLicenseResult** - Tells if the modern licensing stack was able to work and if the user got licensed or not
+
+- **InstallKeyResult** - Tells various reasons why the user might be in a bad state like if activation failed or the installation of the key failed
+
+- **NotInitializedBeforeWhileAdding** - This is just informational and tells if the event was added to a telemetry manager map without explicitly registering for it
+
+- **NotInitializedBeforeWhileSending** - This is just informational and tells if the event was attempted to be sent without explicitly registering for it in the telemetry manager map before hand
+
+- **SentOnDestruction** - This is just informational and tells if the event was added to a telemetry manager map and wasn’t sent explicitly
+
+- **Tag** - Used for telling where in the code the event was sent from
+
+- **VerifyEntitlementsResult** - Tells various states the user might be in after validating the entitlements retrieved from the Office Licensing Service
+
+### Office.Licensing.TelemetryFlow.SearchForBindingResult
+
+OEMs sell machines that come with Office (one-year subscriptions or perpetual).  These Office products are paid for when the customer purchases their machine. Machines that are setup with a specific regkey (OOBEMode: OEMTA) might have an Office binding associated with it.  When we boot Office on such machines, we perform service checks to see if an Office binding corresponding to the machine is found.
+
+This telemetry activity tracks the success and failure points in searching for a binding so that we can ensure that machines that do have a binding can successfully fetch them, and that our services are healthy.  This activity does not track machines that turn out to not have any bindings associated with them after we check with our services.
+
+The following fields are collected:
+
+- **GenuineTicketFailure** - Tells us the failure HRESULT when trying to get the machine’s Windows genuine ticket/product key (WPK).
+
+- **PinValidationFailure** - Tells us why the pin validation process failed. Possible errors:
+	- GeoBlocked
+	- InvalidFormat
+	- InvalidPin
+	- InvalidState
+	- InvalidVersion
+	- Unknown
+	- Used
+
+- **PinValidationResult** - Tells us the pin validation result of a pin that we failed to crack.
+
+- **Pkpn** - The pkpn range that the pin belongs to.
+
+- **Success** - Indicates that we successfully fetched a valid Office binding (pin) for the machine.
+
+- **Tag** - Tells us at which step we stopped searching for a binding. Possible tags:
+  - 0x03113809	No internet/service error while validating pin
+   - 0x0311380a	Pin validation failure, sent with PinValidationFailure field
+  - 0x0310410f	Success, sent with Success field
+  - 0x0311380d	Retry-able errors (internet issues, unknown errors)
+  - 0x0311380e	Non-retry-able errors (binding offer expired)
+  - 0x0311380f	Other errors (unable to license)
+  - 0x03104111	Failed to crack the Office pin, sent with PinValidationResult field
+
+- **WpkBindingFailure** - Tells us the error code of getting the Office pin bound to the machine’s WPK.
+
+### Office.Licensing.TelemetryFlow.ShowAFODialogs
+
+After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the EULA dialog.  As a part of our modernizing AFO feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
+
+The following fields are collected:
+
+- **ActionCreateAccount** - User chose to create an account.
+
+- **ActionSignIn** - User chose to sign-in.
+
+- **DialogRedemption** - Showing the AFO redemption dialog.
+
+- **DialogSignIn** - Showing the AFO sign-in dialog.
+
+- **OExDetails** - The error details we get back when identity’s sign-in dialog was dismissed.
+
+- **OExType** - The error type we get back when identity’s sign-in dialog was dismissed.
+
+- **Tag** - Tells us at which step the user exits the AFO redemption process. Possible tags:
+	- 0x0311380b	User dismissed identity’s sign-in dialog from redemption dialog
+	- 0x0311380c	Failed to auto-load an identity post user sign-in from redemption dialog
+	- 0x03113810	Failed to load the account’s demographic information (country code, language, 	currency, trial offer, and marketing preferences)
+	- 0x03113805	User dismissed identity’s sign-in dialog from sign-in dialog
+	- 0x03113806	Failed to auto-load an identity post user sign-in from sign-in dialog
+	- 0x03113807	Failed to auto-load an identity
+	- 0x03113811	User closed the sign-in/redemption dialog
+	- 0x03113812	User closed the accept EULA dialog
+	- 0x03113808	User accepted the EULA
+
+- **UseInAppRedemption** - Tells us if we’re keeping users in-app for redemption or sending them to the web to redeem their fetched pin (pre-populated).
+
+- **UseModernAFO** - Tells us if we’re using the new or old AFO experience.
+
+### Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
+
+When new machines have Office pre-installed and the user doesn't have an entitlement we show a dialog which gives the user the option to try, buy or enter a product key so that the user can get licensed and this event tracks if the dialog was shown. This event will help with knowing if the dialog was shown to the user to try, buy or enter the product key and hence will help us determine if the user had the opportunity to get licensed.
+
+The following fields are collected: 
+
+- **ActiveView** - Tells the dialog id shown to the user
+
+- **CurrentOOBEMode** - Tells the pre-install mode (OOBE mode such as AFO, OEM etc.)
+
+- **NotInitializedBeforeWhileAdding** - This is just informational and tells if the event was added to a telemetry manager map without explicitly registering for it
+
+- **SentOnDestruction** - This is just informational and tells if the event was added to a telemetry manager map and wasn’t sent explicitly
+
+- **ShowTryButton** - Tells if the Try Button was shown to the user on the dialog or not
+
+- **Tag** - Used for telling where in the code the event was sent from
+
+### Office.Licensing.TelemetryFlow.TrialFlow
+
+When an unlicensed user of Office pre-installed on a machine is attempting to get a trial, this event gets triggered.  It is used to see which path the user would follow to get a trial and if there were any errors while getting the trial through in-app purchases.  Depending on the user action and the result of the in-app purchase the user could end up being unlicensed.
+
+The following fields are collected:
+
+- **HasConnectivity** - Tells if the user has internet connectivity and in case there isn’t the user might have to use a grace license for five days or may be in reduced functionality mode
+
+- **InAppTrialPurchase** - Tells if the flight is enabled for launching the Store Purchase SDK to capture PI and purchase a trial from within the application
+
+- **IsRS1OrGreater** - Tells if the OS Version is greater than RS1 or not since the Store Purchase SDK should be used only if the OS Version is greater that RS1
+
+- **NotInitializedBeforeWhileAdding**: This is just informational and tells if the event was added to a telemetry manager map without explicitly registering for it
+
+- **OEMSendToWebForTrial** - Tells if the flight is enabled to send users to the web to redeem a trial
+
+- **StoreErrorConditions** - Tells the various conditions under which the Store Purchase SDK could have failed
+
+- **StoreErrorHResult** - Tells the error code returned from the Store Purchase SDK
+
+- **StorePurchaseStatusResult** - Tells the result of calling the Store Purchase SDK and if the user made a purchase or not which will help determine if the user should get licensed to use Office
+
+- **Tag** - Used for telling where in the code the event was sent from
+
+- **UserSignedInExplicitly** - Tells if the user signed in explicitly in which case, we would re-direct users to the web for the trial
+
 ### Office.Licensing.UseGraceKey
 
 For some reason if we are unable to license the user, we install a grace key and send out this signal that signifies. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
@@ -2961,6 +3229,14 @@ The following fields are collected:
   - **OpportunisticTokenRenewalAttempted** – Indicates if we attempted an opportunistic renewal for the user in shared computer activation mode
 
   - **ReArmResult** – Indicates the result of rearming the installed key which can extend the expiry of the current license
+
+### OneNote.EnrollmentResult
+ 
+This event logs the status upon Intune enrollment.  This scenario is specific to Intune enabled accounts.
+ 
+The following fields are collected:
+ 
+- **EnrollmentResult** - The result of Intune enrollment
 
 ## Microsoft AutoUpdate (MAU) events
 
@@ -10048,6 +10324,33 @@ The following fields are collected
 
 - **Source** - an enum indicates which event triggered the UI, i.e. created a new redx image, sync error in the sync UI, error dialog displayed, etc.
 
+### OneNote.App.Provisioning.MoveLocalNotebookToOnlineNotebookFailed
+ 
+This event is logged when move of local notebook to drive fails.  This scenario is specific to delayed sign-in user. When the user signs-in, their local notebook is transferred to their OneDrive storage. 
+ 
+The following fields are collected:
+ 
+- **ErrorMsg** - The error message corresponding to the failure.
+
+### OneNote.Sync.CreateNotebookFailed
+ 
+This event is logged when creation of a notebook fails.  
+ 
+The following fields are collected:
+ 
+- **NetworkConnection** - Logs the connection type that the device is currently on e.g. Wi-Fi, offline, 3G 
+
+- **ServerType** - Logs the server type where notebook was to be created.
+
+### OneNote.Sync.FirstRunError
+ 
+This event is logged when syncing of Quick Notes failed for a user during their First Run Experience on a device.  This is specific to the First Run scenario.
+ 
+The following fields are collected:
+ 
+- **NetworkConnection** - Logs the connection type that the device is currently on e.g. Wi-Fi, offline, 3G
+
+- **ServerType** - Logs the server type where Quick Notes notebook was to be created
 
 ## Services Configuration events
 
