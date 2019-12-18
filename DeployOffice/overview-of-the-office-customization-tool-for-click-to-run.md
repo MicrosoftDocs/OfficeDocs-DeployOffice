@@ -80,7 +80,7 @@ You can also copy, upload, or download configuration files from the Device Confi
 
 ## Define application preferences
 
-As part of the Office Customization Tool, you can define application preferences for supported products, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application prefences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+As part of the Office Customization Tool, you can define application preferences for supported products, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
 
 ## Notes
 
