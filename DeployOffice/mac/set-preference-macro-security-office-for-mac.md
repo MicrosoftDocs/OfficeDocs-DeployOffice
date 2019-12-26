@@ -16,7 +16,7 @@ description: "Shows IT Pros how to set the macro security level for Office for M
 
 ***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
 
-In Office for Mac, there are three levels of macro security available, as seen in the following screen shot: 
+In Office for Mac, there are three levels of macro security available, as seen in the following screenshot: 
   
 ![Shows the macro security options for Security &amp; Privacy](../images/48dc9e7f-d4d0-4603-9a50-7112f40805c9.png)
   
