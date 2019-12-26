@@ -64,7 +64,7 @@ For example, at a command prompt, run the following command:
   
  cscript.exe "%programfiles%\\Microsoft Office\\Office16\\ospp.vbs" /dstatus
   
-You should see **\<No installed product keys detected\>**, as shown in the following screen shot.
+You should see **\<No installed product keys detected\>**, as shown in the following screenshot.
   
 ![No installed product key detected](images/aa1e234d-c2d1-471f-bf7f-9b11adc8b4b4.jpg)
   
@@ -93,7 +93,7 @@ After you finish your tests, don't save an image of the test computer.
 
 After you test your operating system image, you can deploy it to your users. There are many ways that you can deploy the image to computers in your organization. For example, you can use Windows ADK, MDT 2012, Configuration Manager, scripts, or other enterprise software deployment tools.
   
-Users are prompted to activate Office 365 ProPlus when they open their first Office program, as seen in the following screen shot.
+Users are prompted to activate Office 365 ProPlus when they open their first Office program, as seen in the following screenshot.
   
 ![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
