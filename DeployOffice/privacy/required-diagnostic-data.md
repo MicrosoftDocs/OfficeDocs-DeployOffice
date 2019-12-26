@@ -4170,7 +4170,9 @@ The following fields are collected:
 
 - **Data_SrcDoc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI)
 
-- **Data_SrcDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16Data_SrcDoc_SessionId:long generated GUID that Identifies the instance of the document within the same process session
+- **Data_SrcDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16
+
+- **Data_SrcDoc_SessionId:long** - generated GUID that identifies the instance of the document within the same process session
 
 - **Data_SrcDoc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
