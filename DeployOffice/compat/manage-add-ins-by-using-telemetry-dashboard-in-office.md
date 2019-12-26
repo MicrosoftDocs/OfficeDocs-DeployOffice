@@ -21,7 +21,7 @@ If you can prevent end users from running non-approved add-ins that might cause 
   
 ## About add-in management with Office Telemetry Dashboard
 
-Use the Add-in management worksheet to generate a Group Policy Object script that sets the configuration state of add-ins that are used with Office. The following screen shot displays the Add-in Management worksheet.
+Use the Add-in management worksheet to generate a Group Policy Object script that sets the configuration state of add-ins that are used with Office. The following screenshot displays the Add-in Management worksheet.
 
   
 **User interface for managing add-ins in Office Telemetry Dashboard**
