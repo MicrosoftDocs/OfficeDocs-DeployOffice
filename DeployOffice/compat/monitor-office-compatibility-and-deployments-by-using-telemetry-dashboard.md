@@ -45,7 +45,7 @@ The way you start Office Telemetry Dashboard depends on the operating system you
 
 |**Operating system**|**How to start Office Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Micorosft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows 8  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
@@ -127,11 +127,11 @@ In the navigation pane on the left side of the dashboard, there are filters call
 
 The **Overview** worksheet allows you to quickly understand how your critical documents and solutions (add-ins) are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. 
   
-The following screen shot shows the **Overview** worksheet. 
+The following screenshot shows the **Overview** worksheet. 
   
 **The Overview worksheet in Office Telemetry Dashboard**
 
-![An screenshot of the main Overview worksheet view on the Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
+![A screenshot of the main Overview worksheet view on the Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
   
 The four numbers that are highlighted at the top of the content pane show the number of stable and unstable documents and solutions. If you see a high unstable count, you should investigate to find out what is occurring. 
   
@@ -160,7 +160,7 @@ After you know the number of unstable documents and solutions, you can drill int
 
 ![A screenshot of a drill down Overview worksheet showing stable and unstable document statistics.](../images/ORK_Telem_OverviewUnstable1.gif)
   
-After you click the link for unstable documents, the **Documents** worksheet appears. The worksheet is filtered to show the 23 unstable documents. The following screen shot shows an example of this filtered view. Although it isn't obvious in the screen shot, only 23 documents are listed, sorted by most unstable. 
+After you click the link for unstable documents, the **Documents** worksheet appears. The worksheet is filtered to show the 23 unstable documents. The following screenshot shows an example of this filtered view. Although it isn't obvious in the screenshot, only 23 documents are listed, sorted by most unstable. 
   
 **Unstable documents that are shown in the Documents worksheet**
 
@@ -169,7 +169,7 @@ After you click the link for unstable documents, the **Documents** worksheet app
 > [!IMPORTANT]
 > Remember that when you select a link on the **Overview** worksheet to see details about documents or solutions, the contents pane displays a filtered view. Select the message bar at the top of the header pane to see the full list of all items for that worksheet. 
   
-Back on the **Overview** worksheet, under the stable and unstable counts, you can see the trend charts that show how these counts increased or decreased over past periods. If you see the trend line pointing down to indicate a decline in stability, this indicates that recent changes are triggering issues for your documents and solutions. As shown in the following screen shot, the date range that is displayed in the trend chart shows an expanded range that is four times longer than the selected date range. This provides better context to view the overall trend data. 
+Back on the **Overview** worksheet, under the stable and unstable counts, you can see the trend charts that show how these counts increased or decreased over past periods. If you see the trend line pointing down to indicate a decline in stability, this indicates that recent changes are triggering issues for your documents and solutions. As shown in the following screenshot, the date range that is displayed in the trend chart shows an expanded range that is four times longer than the selected date range. This provides better context to view the overall trend data. 
   
 **How trend data is illustrated on the Overview worksheet**
 
@@ -214,7 +214,7 @@ To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is 
     
 2. Select the **Let's get started** button. 
     
-3. In the **Getting Started** worksheet, select the **Click here to use saved copies of Telemetry Dashboard** banner that is shown in the following screen shot. 
+3. In the **Getting Started** worksheet, select the **Click here to use saved copies of Telemetry Dashboard** banner that is shown in the following screenshot. 
     
    **Message that enables saved copies of Telemetry Dashboard**
 

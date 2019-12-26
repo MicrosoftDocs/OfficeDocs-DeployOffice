@@ -27,11 +27,11 @@ As you use Office Telemetry Dashboard to investigate stability issues for Office
      
 ## Overview worksheet
 
-The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screen shot shows the **Overview** worksheet:
+The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screenshot shows the **Overview** worksheet:
   
 **Overview worksheet in Office Telemetry Dashboard**
 
-![An screenshot of the main Overview worksheet view in Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
+![A screenshot of the main Overview worksheet view in Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
   
 There are three primary tasks that you can perform on the **Overview** worksheet.
   
@@ -46,7 +46,7 @@ There are three primary tasks that you can perform on the **Overview** worksheet
 
 The **Documents** worksheet in Office Telemetry Dashboard displays the list of documents that was collected by logging and by agent scans. In this worksheet, you can find frequently used documents and data about them. 
   
-The following screen shot shows the **Documents** worksheet. 
+The following screenshot shows the **Documents** worksheet. 
   
 **Documents worksheet in Office Telemetry Dashboard**
 
@@ -100,7 +100,7 @@ The following sections describe worksheets that help you drill down into specifi
 
 The **Document details** worksheet appears after you select a link under **Office usage** on the **Documents** worksheet. The **Document details** worksheet helps you see which users are frequently using a document. 
   
-The following screen shot shows the **Documents details** worksheet. 
+The following screenshot shows the **Documents details** worksheet. 
   
 **Document details worksheet in Office Telemetry Dashboard**
 
@@ -133,7 +133,7 @@ The following table describes each column in the **Document details** worksheet.
 
 The **Document issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
   
-The following screen shot shows the **Document issues** worksheet. 
+The following screenshot shows the **Document issues** worksheet. 
   
 **Document issues worksheet in Office Telemetry Dashboard**
 
@@ -157,7 +157,7 @@ The following table describes each column in the **Document issues** worksheet.
 
 The **Document sessions** worksheet shows the sessions during which an issue occurred. You can open this worksheet by selecting a link in the **Sessions** column of the **Document issues** worksheet. 
   
-The following screen shot shows the **Documents sessions** worksheet. 
+The following screenshot shows the **Documents sessions** worksheet. 
   
 **Document sessions worksheet in Office Telemetry Dashboard**
 
@@ -192,7 +192,7 @@ The following table describes each column in the **Document sessions** worksheet
 
 The **Solutions** worksheet displays the list of solutions that was collected by logging and agent scans. In this worksheet, you can find frequently used solutions and data about them. The kinds of solutions that are shown include COM add-ins, application-specific add-ins, and apps for Office.
   
-The following screen shot shows the **Solutions** worksheet. 
+The following screenshot shows the **Solutions** worksheet. 
   
 **Solutions worksheet in Office Telemetry Dashboard**
 
@@ -253,7 +253,7 @@ The following sections describe worksheets that help you drill down into specifi
 
 The **Solution details** worksheet appears after you select a link under **Office usage** on the **Solutions** worksheet. The **Solution details** worksheet helps you see which users are frequently using a solution. 
   
-The following screen shot shows the **Solution details** worksheet. 
+The following screenshot shows the **Solution details** worksheet. 
   
 **Solution details worksheet in Office Telemetry Dashboard**
 
@@ -287,7 +287,7 @@ The following table describes each column in the **Solution details** worksheet.
 
 The **Solution issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
   
-The following screen shot shows the **Solution issues** worksheet. 
+The following screenshot shows the **Solution issues** worksheet. 
   
 **Solution issues worksheet in Office Telemetry Dashboard**
 
@@ -311,7 +311,7 @@ The following table describes each column in the **Solution issues** worksheet.
 
 The **Solution sessions** worksheet shows the sessions during which the issue occurred. You can open this worksheet by selecting a link in the **Sessions** column of the **Solution issues** worksheet. 
   
-The following screen shot shows the **Solution sessions** worksheet. 
+The following screenshot shows the **Solution sessions** worksheet. 
   
 **Solution sessions worksheet in Office Telemetry Dashboard**
 
@@ -348,7 +348,7 @@ The following table describes each column in the **Solution sessions** worksheet
 
 The **Telemetry Processor** worksheet displays information about the health of the Office Telemetry Dashboard infrastructure. You can monitor whether processors are running correctly, and you can check whether users' computers are sending data correctly. 
   
-The following screen shot shows the **Telemetry Processor** worksheet: 
+The following screenshot shows the **Telemetry Processor** worksheet: 
   
 **Telemetry Processor worksheet in Office Telemetry Dashboard**
 
@@ -384,7 +384,7 @@ The following table describes the status that is represented by the symbols that
 
 The **Agents** worksheet displays information about the users whose computers who are uploading data to each processor. You can open the **Agents** worksheet by selecting a link for a computer name on the **Telemetry Processor** worksheet. Use this worksheet to monitor the upload status of each computer. 
   
-The following screen shot shows the **Agents** worksheet. 
+The following screenshot shows the **Agents** worksheet. 
   
 **Agents worksheet in Office Telemetry Dashboard**
 
@@ -420,7 +420,7 @@ The following table describes the status that is represented by the symbols that
 
 The **Deployments** worksheet provides a tabular view of the number of Office clients that are deployed in your organization. This worksheet provides additional information for the deployment trend chart that is shown in the **Overview** worksheet. This information can help you plan for future Office deployments. 
   
-In the following screen shot of the **Deployments** worksheet, you can see how many Office clients are deployed. The list is organized by Office version and CPU architecture. For example, you can see how many users are running 32-bit versions of Office. 
+In the following screenshot of the **Deployments** worksheet, you can see how many Office clients are deployed. The list is organized by Office version and CPU architecture. For example, you can see how many users are running 32-bit versions of Office. 
   
 **Deployments worksheet in Office Telemetry Dashboard**
 
