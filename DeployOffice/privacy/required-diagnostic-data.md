@@ -7688,6 +7688,8 @@ The following fields are collected:
 
 - **ErrorCode** - Total time spent
 
+- **IsAugmetationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
+
 - **IsDebug** - indicates if session is a debug session
 
 - **NumberOfAddinsActivated** - Counter of add-ins activated
