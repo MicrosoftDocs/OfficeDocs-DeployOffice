@@ -62,7 +62,7 @@ Before you save the image, you should check to make sure that no product key for
   
 For example, at a command prompt, run the following command:
   
- cscript.exe "%programfiles%\\Microsoft Office\\Office15\\ospp.vbs" /dstatus
+ cscript.exe "%programfiles%\\Microsoft Office\\Office16\\ospp.vbs" /dstatus
   
 You should see **\<No installed product keys detected\>**, as shown in the following screen shot.
   
@@ -72,9 +72,9 @@ The location of the ospp.vbs script depends on whether you install the 32-bit or
   
 |**Version of Office 365 ProPlus**|**Version of operating system**|**Location of ospp.vbs file**|
 |:-----|:-----|:-----|
-|32-bit  <br/> |32-bit  <br/> |%programfiles%\\Microsoft Office\\Office15\\  <br/> |
-|32-bit  <br/> |64-bit  <br/> |%programfiles(x86)%\\Microsoft Office\\Office15\\  <br/> |
-|64-bit  <br/> |64-bit  <br/> |%programfiles%\\Microsoft Office\\Office15\\  <br/> |
+|32-bit  <br/> |32-bit  <br/> |%programfiles%\\Microsoft Office\\Office16\\  <br/> |
+|32-bit  <br/> |64-bit  <br/> |%programfiles(x86)%\\Microsoft Office\\Office16\\  <br/> |
+|64-bit  <br/> |64-bit  <br/> |%programfiles%\\Microsoft Office\\Office16\\  <br/> |
    
 ### Step 5: Save the operating system image
 <a name="Step5"> </a>
