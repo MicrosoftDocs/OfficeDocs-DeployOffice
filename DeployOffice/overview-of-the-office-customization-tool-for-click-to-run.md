@@ -24,7 +24,7 @@ The [Office Customization Tool](https://config.office.com/) creates the configur
  
 ## Get started
 
-To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and application settings you want to configure. For example, you can create a configuration file that downloads the 64-bit English version of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German version of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or another software distribution solution to deploy Office in your organization. 
+To work with the service, go to [Office Customization Tool](https://config.office.com/) and choose the products, languages, and application preferences you want to configure. For example, you can create a configuration file that downloads the 64-bit English version of Office 365 ProPlus, or you can create a file that installs the 64-bit English and German version of Office without Access and Publisher and with the EULA automatically accepted. When you're done, you export the configuration file, which you can then use with the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or another software distribution solution to deploy Office in your organization. 
   
 > [!NOTE] 
 > If you use Microsoft Endpoint Configuration Manager (Current Branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more details, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)](deploy-office-365-proplus-with-configuration-manager.md).
@@ -50,7 +50,7 @@ Follow these steps to create a configuration file that can be used by the Office
 12. In the **General** section, type your organization name and a description for this particular configuration. For example, you might want to use this file to install the 64-bit version of Office for your finance department.
 13. Choose whether to automatically accept the EULA. 
 14. Choose whether to enabled shared computer activation. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
-15. In the **Application preferences** section, choose what settings to apply when deploying Office. You can search for a setting, filter the settings by Office app, and learn more about each setting by clicking it and reviewing the detailed description.
+15. In the **Application preferences** section, choose what preferences to apply when deploying Office. You can search for a setting, filter the preferences by Office app, and learn more about each setting by clicking it and reviewing the detailed description.
 16. Click **Finish**, review the configured settings in the righthand pane, and then click **Export**.
 17. Accept the terms in the license agreement, name the confguration file, and then click **Export** or, if you're saving the configuration file to the cloud, click **Done**. 
 18. You can now use the configuration file in your deployment workflow with the Office Deployment Tool or another software distribution solution.
@@ -80,7 +80,7 @@ You can also copy, upload, or download configuration files from the Device Confi
 
 ## Define application preferences
 
-As part of the Office Customization Tool, you can define application preferences for supported products, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-an-existing-installation-of-office-365-proplus).
+As part of the Office Customization Tool, you can define application preferences for supported products, including VBA macro notifications, default file locations, and default file formats. When you define these preferences, you can apply them as part of deploying Office or you can apply them to an existing installation of Office without changing any other deployment settings. For more details, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-office-365-proplus).
 
 ## Notes
 
