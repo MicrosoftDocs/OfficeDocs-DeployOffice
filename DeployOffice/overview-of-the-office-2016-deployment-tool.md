@@ -31,14 +31,14 @@ Before using the ODT to download or install Office, we recommend making sure you
 ## Get started with the Office Deployment Tool
 <a name="BKMK_GetStarted"> </a>
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 64-bit English edition of Office, or you can edit the file to install the 64-bit English edition of Office with the EULA automatically accepted and without Publisher. For the full set of options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to install the 64-bit English edition of Office with the EULA automatically accepted. For the full set of options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
 > [!NOTE]
-> **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more details, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
+> **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
 
-- To download Office 365 ProPlus products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. Note that when you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
+- To download Office 365 ProPlus products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. When you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
 - To install the downloaded Office 365 ProPlus products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
 
@@ -57,7 +57,7 @@ Follow these steps to download installation files for Office 365 ProPlus from th
 
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
 
-In this example, the configuration file downloads the installation files for a 32 bit English edition of Office 365 ProPlus and Visio Online Plan 2 (previously named Visio Pro for Office 365) to \\\\server\share on your network:
+In this example, the configuration file downloads the installation files for a 32-bit English edition of Office 365 ProPlus and Visio Online Plan 2 (previously named Visio Pro for Office 365) to \\\\server\share on your network:
 
 ```xml
 <Configuration> 
@@ -76,7 +76,7 @@ For more information about the configuration options and more examples, see [Con
 
  **Step 2: Run the ODT executable in download mode**
 
-From a command prompt, run the ODT executable in download mode and with a reference to the configuration file you just saved. In this example, the configuration file is named **downloadconfig.xml:**
+From a command prompt, run the ODT executable in download mode and with a reference to the configuration file you saved. In this example, the configuration file is named **downloadconfig.xml:**
 
  `setup.exe /download downloadconfig.xml`
 
@@ -87,9 +87,9 @@ After running the command, go to the download location you defined in the config
 ## Download the installation files for Office 365 ProPlus from a local source
 <a name="BKMK_downloadfromlocalsource"> </a>
 
-You can use the Office Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network instead of from the Office Content Delivery Network (CDN). By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
+You can use the Office Deployment Tool to download the installation files for Office 365 ProPlus from a local source on your network. By doing so, you can store a central copy of multiple languages and products for Office and distribute just the languages and products that you need to other locations on your network.
 
-To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32 bit English edition of Office 365 ProPlus from **\\\\servera\share** (the DownloadPath) to **\\\\serverb\share** (the SourcePath):
+To download from a local source, follow the steps for downloading Office with the ODT, but include in your configuration file the download path, which defines where the installation files are downloaded from. For example, this configuration file downloads a 32-bit English edition of Office 365 ProPlus from **\\\\servera\share** (the DownloadPath) to **\\\\serverb\share** (the SourcePath):
 
 ```xml
 <Configuration> 
@@ -101,7 +101,7 @@ To download from a local source, follow the steps for downloading Office with th
 </Configuration>
 ```
 
-Note that you must specify a **Version** when using DownloadPath.
+When using DownloadPath, you must specify a **Version**.
 
 ## Install Office 365 ProPlus
 <a name="BKMK_installoffice"> </a>
@@ -112,7 +112,7 @@ After you download Office 365 ProPlus installation files, follow these steps to 
 
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
 
-In this example, the configuration file installs a 32 bit English edition of Office 365 ProPlus without Publisher:
+In this example, the configuration file installs a 32-bit English edition of Office 365 ProPlus without Publisher:
 
 ```xml
 <Configuration> 
@@ -126,13 +126,13 @@ In this example, the configuration file installs a 32 bit English edition of Off
 </Configuration> 
 ```
 
-The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install, and the AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
+The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install. The AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
 
 For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
  **Step 2: Run the ODT executable in configure mode**
 
-From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you just saved. In the following example, the configuration file is named **installconfig.xml**:
+From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you saved. In the following example, the configuration file is named **installconfig.xml**:
 
  `setup.exe /configure installconfig.xml`
 
@@ -145,7 +145,7 @@ After running the command, you should see the Office installation start (unless 
 ## Update Office 365 ProPlus
 <a name="BKMK_updateoffice"> </a>
 
-You can use the Office Deployment Tool to make updates to your client computers after installing Office 365 ProPlus. There are two ways to do this:
+You can use the Office Deployment Tool to make updates to your client computers after installing Office 365 ProPlus. There are two ways to make the updates:
 
 - Use the ODT to install Office 365 ProPlus again, which will update Office to the newest version. Only the files that have changed in the new version will be updated.
 
@@ -155,7 +155,7 @@ To change where your client computers receive their updates, run the ODT in conf
 
  `<Updates Enabled="TRUE" UpdatePath="\\server\updates" />`
 
-This article does not cover all the issues related to managing updates for Office in your organization. For more information on that end-to-end scenario, including using Group Policy, see [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md).
+This article does not cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md).
 
 <a name="BKMK_excludeorremove"> </a>
 
@@ -235,7 +235,7 @@ In this example, the configuration file installs the 32-bit version of Office 36
 </Configuration>
 ```
 
-This file was created with the Office Customization Tool for Click-to-Run. For more details on the app preferences, we recommend browsing the options in the tool itself.
+This file was created with the Office Customization Tool for Click-to-Run. For more information on the app preferences, we recommend browsing the options in the tool itself.
 
 Note: When Office is installed, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
 
@@ -244,18 +244,18 @@ Note: When Office is installed, the app preferences defined in the configuration
 You can apply new application preferences to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application preferences and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application preferences. 
 
 1. Use the steps in [define application preferences](overview-of-the-office-customization-tool-for-click-to-run.md#define-application-preferences) to create the configuration file.
-2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installapppreferences.xml**:
+2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you created. In the following example, the configuration file is named **installapppreferences.xml**:
   
  `setup.exe /customize installapppreferences.xml`
   
-You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. Note that when using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted. 
+You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted. 
 
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>
 
-In addition to downloading and deploying Office 365 ProPlus, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer with a clean install of the operating system.
+In addition to downloading and deploying Office 365 ProPlus, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer that has a clean install of the operating system.
 
-This article does not cover all the issues related to deploying App-V packages. For more information on that end-to-end scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
+This article does not cover all the issues related to deploying App-V packages. For more information on that scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
 
  **Step 1: Create the configuration file**
 
@@ -278,7 +278,7 @@ The location of the Office installation files is \\\\server\share. For your conf
 
  **Step 2: Run the ODT executable in packager mode**
 
-From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you just saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\\\server\share\appv\\**:
+From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\\\server\share\appv\\**:
 
  `setup.exe /packager packageconfig.xml \\server\share\appv\`
 
