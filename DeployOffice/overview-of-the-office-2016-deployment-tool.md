@@ -42,7 +42,7 @@ When running the ODT, you provide the location of the configuration file and def
 
 - To install the downloaded Office 365 ProPlus products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
 
-- To apply new application settings to client computers that already have Office 365 ProPlus installed, use **customize** mode. This mode will apply only application settings, without changing any other deployment settings. Example: `setup.exe /customize appsettingsconfig.xml`
+- To apply new application preferences to client computers that already have Office 365 ProPlus installed, use **customize** mode. This mode will apply only application preferences, without changing any other deployment settings. Example: `setup.exe /customize preferencesconfig.xml`
 
 - To create an App-V package from the downloaded Office 365 ProPlus products and languages, use **packager** mode. Example: `setup.exe /packager packageconfig.xml`
 
@@ -205,13 +205,13 @@ OneDrive is automatically installed when you install Office 365 ProPlus, Word, E
 
 For details on deploying languages, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
 
-## Apply application settings to Office 365 ProPlus
+## Apply application preferences to Office 365 ProPlus
 
-As part of your deployment, you can define application settings for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](#install-office-365-proplus), but you include application settings as part of your configuration file. 
+As part of your deployment, you can define application preferences for Office 365 ProPlus, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](#install-office-365-proplus), but you include application preferences as part of your configuration file. 
 
 To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface.
 
-1. In your web browser, open the [Office Customization Tool for Click-to-Run](https://config.office.com/) and follow the steps to create a configuration file, including defining application settings alongside the standard deployment settings. 
+1. In your web browser, open the [Office Customization Tool for Click-to-Run](https://config.office.com/) and follow the steps to create a configuration file, including defining application preferences alongside the standard deployment settings. 
 2. Export the file.
 3. Follow the steps in [Install Office 365 ProPlus](#install-office-365-proplus) to deploy Office with the newly created configuration file.
 
@@ -235,20 +235,20 @@ In this example, the configuration file installs the 32-bit version of Office 36
 </Configuration>
 ```
 
-This file was created with the Office Customization Tool for Click-to-Run. For more details on the app settings, we recommend browsing the options in the tool itself.
+This file was created with the Office Customization Tool for Click-to-Run. For more details on the app preferences, we recommend browsing the options in the tool itself.
 
-Note: When Office is installed, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
+Note: When Office is installed, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
 
-## Apply application settings to an existing installation of Office 365 ProPlus
+## Apply application preferences to an existing installation of Office 365 ProPlus
 
-You can apply new application settings to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application settings and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application settings. 
+You can apply new application preferences to client computers that already have Office 365 ProPlus installed without changing any other deployment setting. To do so, create a configuration file that contains application preferences and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application preferences. 
 
 1. Use the steps in [define application preferences](overview-of-the-office-customization-tool-for-click-to-run.md#define-application-preferences) to create the configuration file.
-2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installappsettings.xml**:
+2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you just created. In the following example, the configuration file is named **installapppreferences.xml**:
   
- `setup.exe /customize installappsettings.xml`
+ `setup.exe /customize installapppreferences.xml`
   
-You must run the executable from the client computer on which you want to apply the app settings and you must have local administrator permissions on that computer. Note that when using customize mode, the app settings defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application settings when Office apps are running, the settings will be applied when Office is next restarted. 
+You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. Note that when using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted. 
 
 ## Create an App-V package for Office 365 ProPlus
 <a name="BKMK_createanappvpackage"> </a>
