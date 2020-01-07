@@ -1,7 +1,7 @@
 ---
 title: "Device-based licensing for Office 365 ProPlus for education customers"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: jwhit
+author: jwhit-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
