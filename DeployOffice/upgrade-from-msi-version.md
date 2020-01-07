@@ -125,6 +125,11 @@ The following are some additional details about using the RemoveMSI element in y
    - Visio Online Plan 2, which is the subscription version of Visio that was previously named Visio Pro for Office 365.
    - Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
+- RemoveMSI cannot remove the following products:
+   - Office 2007 or Earlier
+   - Lync 2010
+   - Access Database Engine
+   - Any version of Office installed using Click-to-Run Technology
 - Installations of the following products will also be removed unless you use IgnoreProduct:
    - SharePoint Designer. The product ID is SharePointDesigner.
    - InfoPath. The product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
