@@ -1,7 +1,7 @@
 ---
 title: "Overview of licensing and activation in Office 365 ProPlus"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: jwhit
+author: jwhit-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: get-started-article
