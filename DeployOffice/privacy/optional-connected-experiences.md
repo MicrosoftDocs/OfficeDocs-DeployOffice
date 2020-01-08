@@ -32,7 +32,9 @@ It is important to know that these optional cloud-backed services are not covere
 
 ## Experiences that rely on Bing
 
-Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a separate business to Office 365 ProPlus and is managed independently of Office 365 ProPlus by Microsoft. The experiences it powers in Office 365 ProPlus applications are: [3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Map Charts](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Insert Online Pictures](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Insert Online 3D Models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Researcher](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) and [Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). These experiences are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Office 365 ProPlus organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
+Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a separate business to Office 365 ProPlus and is managed independently of Office 365 ProPlus by Microsoft. The experiences it powers in Office 365 ProPlus applications are: [3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Map Charts](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Insert Online Pictures](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Insert Online 3D Models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Researcher](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) and [Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). The experiences it powers in Outlook for iOS and Android are: [Location Suggestions](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=suggested-locations-and-available-conference-rooms) and [Interesting Calendars](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all).
+
+These experiences are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Office 365 ProPlus organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
 
 ## Experiences that rely on LinkedIn
 
@@ -41,6 +43,10 @@ Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a se
 Note: The privacy setting described below does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these type of experiences (such as the LinkedIn information on a [profile card](https://support.office.com/article/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [Connect your LinkedIn and Microsoft accounts](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
+
+### Help > Contact Support
+
+On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience is powered by a Microsoft-owned service called HelpShift.
 
 ### Help > Suggest a Feature
 
