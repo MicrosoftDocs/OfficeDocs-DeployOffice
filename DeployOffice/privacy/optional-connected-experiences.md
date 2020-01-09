@@ -36,8 +36,8 @@ Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a se
 
 The experiences that Bing powers in Outlook for iOS and Android are the following:
 
-- **Location suggestions**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
-- **Interesting Calendars**   You can [subscribe](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) to calendars about your favorite sports teams or TV shows.
+- **Location suggestions:**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
+- **Interesting Calendars:**   You can [subscribe](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) to calendars about your favorite sports teams or TV shows.
 
 
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Office 365 ProPlus organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
