@@ -69,16 +69,16 @@ The following table provides a list of connected experiences that download onlin
 | Calendar apps| [What are Calendar Apps?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Cloud fonts                 | [Cloud fonts in Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
-| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to https://www.osupportweb.com/a/outlook-mobile.|
+| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Ink Effects                 | [Draw and write with ink in Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Insert Icons                | [Insert icons in Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Insert Microsoft Forms      | [Insert a form or quiz into PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
 | Insert Online 3D Models     | [Get creative with 3D models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Insert Online Pictures      | [Insert pictures](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | Insert Online Video     | [Insert a video from YouTube or another site](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| Interesting Calendars|Subscribe to [interesting calendars](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) about your favorites sports teams or TV shows on Outlook for iOS and Android. |
+| Interesting Calendars| [Subscribe to interesting calendars](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) about your favorites sports teams or TV shows on Outlook for iOS and Android. |
 | Location suggestions | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
-| Maps in event details | Know where you need to go with [maps]((https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all)) in event details on Outlook for iOS and Android. |
+| Maps in event details | Know where you need to go with [maps]((https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) in event details on Outlook for iOS and Android. |
 | Office Help                 | When you choose **Help** > **Help** on the ribbon or use F1 in an Office app   |
 | Online Shape Search (Visio) | [Find more shapes and stencils](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | PowerPoint QuickStarter     | [Research a topic with PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
