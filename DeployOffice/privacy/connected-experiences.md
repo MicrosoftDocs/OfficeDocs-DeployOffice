@@ -24,6 +24,8 @@ hideEdit: true
 > - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
 >
 > The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+>
+> This information will apply to a version of Outlook for iOS and Android that is expected to be released at the end of January 2020.
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive or translating the contents of a Word document into a different language are examples of connected experiences.
 
@@ -51,7 +53,7 @@ The following table provides a list of connected experiences that analyze your c
 | Publish to Power BI   | [Publish to Power BI from Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Research   | [Add or change research services](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
-| Scan a business card|  [Scan or tap to add contacts](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+| Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 | Smart Lookup   | [Get insights into what you're working on with Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Suggested replies | [What are suggested replies?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Tap for Word (Add from files)   | [Find and use the content you need, when you need, without leaving Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
