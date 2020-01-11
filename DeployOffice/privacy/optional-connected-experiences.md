@@ -52,11 +52,11 @@ Note: The privacy setting described below does not control experiences that requ
 
 ### Help > Contact Support
 
-On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience is powered by a Microsoft-owned service called HelpShift.
+On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience is powered by a service provided by HelpShift, and the [terms of service](https://www.helpshift.com/legal/terms/) and [privacy policy](https://www.helpshift.com/legal/privacy/) of HelpShift will apply.
 
 ### Help > Suggest a Feature
 
-Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service and privacy policy of UserVoice](https://outlook.uservoice.com/tos) will apply.
+Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service](https://outlook.uservoice.com/tos) and [privacy policy](https://outlook.uservoice.com/tos#privacy-policy) of UserVoice will apply.
 
 ### Insert online video
 
