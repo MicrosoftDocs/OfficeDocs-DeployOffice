@@ -2387,6 +2387,139 @@ The following fields are collected:
 
 - **SolutionId** - ID of the solution
 
+#### Office.Feed.Events.Initializing
+
+This event is collected when the feed has started initializing. This event is used to indicate that the feed is starting and to diagnose reliability issues in launching the feed.
+
+- **AppInfo.Language** - Language of the App in IETF language tag format.
+
+- **AppInfo.Name** - Name of the component in use (Office Feed).
+
+- **AppInfo.Version** - The version of the App.
+
+- **clientCorrelationId** - The globally unique identifier for the application's session.
+
+- **clientType** - The application on which the component runs.
+
+- **DeviceInfo.Make** - The Device manufacturer or device OEM name.
+
+- **DeviceInfo.NetworkProvider** - The network or mobile operator, such as "AT&T".
+
+- **DeviceInfo.NetworkType** - The type of network connectivity of the device in use, such as "Wired", "Wifi" or "WWAN" (data/cellular).
+
+- **DeviceInfo.OsName** - The name of the device OS.
+
+- **DeviceInfo.SDKUid** - Uniquely identifies the device from the telemetry SDK’s perspective.
+
+- **eventId** - Name identifier of the event. 
+
+- **EventInfo.SdkVersion** - The version of the telemetry SDK used by the client to generate the event.
+
+- **eventpriority** - An enumeration value for the priority of sending the event.
+
+- **feature** - Used to group various events of the same feature.
+
+- **hostAppRing** - The population of users to whom the application was distributed.
+
+- **properties** - Contains additional metadata properties collected for each event.
+		
+	- **ClientTimeStamp** - Timestamp of when the event was logged in the client.
+
+- **publicEventName** - Public facing event name.  
+
+- **region** - The geographical region of the feed service which the user is connected to. 
+
+- **tenantAadObjectId** - A globally unique identifier for the user's enterprise tenant.
+
+- **type** - Type of the logged event, e.g. Trace, Error, Event, QoS.
+
+- **userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account.
+
+- **UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account.
+
+- **UserInfo.IdType** - Specifies the type of a user ID. 
+
+- **UserInfo.Language** - The user's language in IETF language tag format.
+
+- **UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account.
+
+- **UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **UserInfo.TimeZone** - The user's time zone relative to UTC.
+
+- **userPuid** - The globally unique user identifier for a consumer Microsoft account.
+
+- **version** - The version of the feed client.
+
+#### Office.Feed.Events.OfficeFeedDidAppear
+
+This event is collected when the feed is shown to the user. The event is used to verify that the feed completed initialization step and to diagnose reliability issues in launching the feed.
+
+- **AppInfo.Language** - Language of the App in IETF language tag format.
+
+- **AppInfo.Name** - Name of the component in use (Office Feed).
+
+- **AppInfo.Version** - The version of the App.
+
+- **clientCorrelationId** - The globally unique identifier for the application's session.
+
+- **clientType** - The application on which the component runs.
+
+- **DeviceInfo.Make** - The Device manufacturer or device OEM name.
+
+- **DeviceInfo.NetworkProvider** - The network or mobile operator, such as "AT&T".
+
+- **DeviceInfo.NetworkType** - The type of network connectivity of the device in use, such as "Wired", "Wifi" or "WWAN" (data/cellular).
+
+- **DeviceInfo.OsName** - The name of the device OS.
+
+- **DeviceInfo.SDKUid** - Uniquely identifies the device from the telemetry SDK’s perspective.
+
+- **eventId** - Name identifier of the event.
+
+- **EventInfo.SdkVersion** - The version of the telemetry SDK used by the client to generate the event.
+
+- **eventpriority** - An enumeration value for the priority of sending the event.
+
+- **feature** - Used to group various events of the same feature.
+
+- **hostAppRing** - The population of users to whom the application was distributed.
+
+- **properties** - Contains additional metadata properties collected for each event.
+		
+  - **bridgeWaitingTime** - Metric to diagnose performance in rendering of the feed.
+	
+  - **ClientTimeStamp** - Timestamp of when the event was logged in the client.
+		
+  - **renderTime** - Metric to diagnose performance in rendering of the feed.
+
+- **publicEventName** - Public facing event name.  
+
+- **region** - The geographical region of the feed service which the user is connected to. 
+
+- **tenantAadObjectId** - A globally unique identifier for the user's enterprise tenant.
+
+- **type** - Type of the logged event, e.g. Trace, Error, Event, QoS.
+
+- **userAadObjectId** - The globally unique user identifier for an enterprise Microsoft account.
+
+- **UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account.
+
+- **UserInfo.IdType** - Specifies the type of a user ID. 
+
+- **UserInfo.Language** - The user's language in IETF language tag format.
+
+- **UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account.
+
+- **UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **UserInfo.TimeZone** - The user's time zone relative to UTC.
+
+- **userPuid** - The globally unique user identifier for a consumer Microsoft account.
+
+- **version** - The version of the feed client.
+
+
 #### Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Allows us to know if a file successfully opened from the FIO Layer. Used for feature health and monitoring.
@@ -3127,6 +3260,191 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
+
+#### Office.LivePersonaCard.UserActions.ConfigurationSetAction
+
+We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card.  The data is used to determine whether the card loaded correctly. 
+
+The following fields are collected: 
+
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
+
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+- **Data.AppInfo_Id** - Name of the host application
+
+- **Data.AppInfo_Version** - Version of the host application
+
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+- **Data.clientType** - The type of device the app is run on
+
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** - An enumeration value for the priority of sending the event.
+
+- **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.properties** - Additional metadata collected for each event as follows:
+
+  - **accountType** - Whether the user belongs to an organization or a consumer
+
+  - **cardCorrelationId** - Duplicate of Data.appContextId above
+
+  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+
+  - **ClientTimeStamp** - Time on the application when the event was logged
+
+  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
+
+  - **contextType** - What context (app) the card was launched from
+
+  - **ecsConfigIds** - Version identifiers for the features enabled in the card
+
+  - **ecsTagId** - Tag ID for features
+
+  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
+  - **flights** - The features enabled in the card
+
+  - **fromCache** - Whether data was fetched from memory
+
+  - **hasFinePointer** - Whether the device has mouse-pointer capability
+
+  - **hasHoverEvents** - Whether the device has mouse-hover capability
+
+  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
+  - **offlineResolved** - Whether data was fetched while offline
+
+  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
+
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+- **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+
+- **Data.version** - The version of the service (Profile Card)
+
+- **Data.workloadCulture** - Culture set in the host application
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device
+
+- **DeviceInfo_Make** - The brand of the operating system
+
+- **DeviceInfo_Model** - The model of the device
+
+- **DeviceInfo_OsName** - The name of the device OS
+
+- **DeviceInfo_OsVersion** - The version of the operating system
+
+- **DeviceInfo_SDKUid** - Uniquely identifies the device from the telemetry SDK’s perspective
+
+#### Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
+
+Logged when the user opens an expanded Persona Card. It is used to observe critical anomalies in failure rates of launching the Live Persona Card.
+
+The following fields are collected:
+
+- **AppInfo_Id** – Name of the host application
+
+- **AppInfo_Version** – Version of the host application
+
+- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+- **Data.clientType** - The type of device the app is run on
+
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.exportName** - Human readable name of the user action event, e.g. "OpenedPersonaCard"
+
+- **Data.exportType** - Category of the event for GDPR export request
+
+- **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.hostAppRing** - The ring by which the app was distributed
+
+- **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.properties** - Additional metadata collected for each event as follows:
+
+  - **cardCorrelationId** - Duplicate of Data.appContextId above 
+
+  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+
+  - **clientScenario** - To identify the feature in the app from where the persona card was opened
+
+  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
+
+  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
+  - **hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
+
+  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
+  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+  - **section** – The active section of the expanded card
+
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account 
+
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+- **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+
+- **Data.version** -The version of the service (Profile Card)
+
+- **DeviceInfo_Id** – The globally unique device identifier for a device
+
+- **DeviceInfo_Make** – The brand of the operating system
+
+- **DeviceInfo_Model** – The model of the device
+
+- **DeviceInfo_OsName** - The name of the device OS
+
+- **DeviceInfo_OsVersion** – The version of the operating system
+
+- **DeviceInfo_SDKUid** – Uniquely identifies the device from the telemetry SDK’s perspective
+
+- **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
+
+- **NetworkCountry** - The Country Code of the Sender, based on the un-scrubbed Client IP Address
+
 
 #### Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -4170,7 +4488,9 @@ The following fields are collected:
 
 - **Data_SrcDoc_ServerType:long** - Predefined set of values of type of server (SharePoint, DropBox, WOPI)
 
-- **Data_SrcDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16Data_SrcDoc_SessionId:long generated GUID that Identifies the instance of the document within the same process session
+- **Data_SrcDoc_ServerVersion:long** - verifies if server is based off Office14, Office15 or Office 16
+
+- **Data_SrcDoc_SessionId:long** - generated GUID that identifies the instance of the document within the same process session
 
 - **Data_SrcDoc_SharePointServiceContext:string** - An opaque string, typically GridManagerID.FarmID. Useful for correlating client side and server-side logs
 
@@ -7685,6 +8005,8 @@ The following fields are collected:
 - **AssetId** - Asset ID of the app
 
 - **ErrorCode** - Total time spent
+
+- **IsAugmentationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
 
 - **IsDebug** - indicates if session is a debug session
 
