@@ -78,7 +78,7 @@ It's now easier to change an existing installation of Office 365 ProPlus from 32
 For more information, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
 
 ### General availability of Office cloud policy service
-The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
+The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy preferences for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Office 365 ProPlus.
 
 For more information, see [Overview of the Office cloud policy service for Office 365 ProPlus](overview-office-cloud-policy-service.md).
 
@@ -105,7 +105,7 @@ Microsoft Teams will be installed for ***new*** installations of Office 365 ProP
 ## January 2019
 
 ### Public preview of Office client policy service
-A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus.
+A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy preferences for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Office 365 ProPlus.
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
@@ -133,7 +133,7 @@ Version 1.2 of the Readiness Toolkit was released, with new functionlity to conc
 
 ## July 2018
 
-You can now  use the Office Deployment Tool to apply application preferences to Office 365 ProPlus as part of an initial deployment or as an update to existing installations of Office. For more details, see [Apply application settings to Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#apply-application-settings-to-office-365-proplus).
+You can now  use the Office Deployment Tool to apply application preferences to Office 365 ProPlus as part of an initial deployment or as an update to existing installations of Office. For more details, see [Apply application preferences to Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-office-365-proplus).
 
 ## June 2018
 

@@ -1,7 +1,7 @@
 ---
 title: "End-user update notifications for Office 365 ProPlus"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: jwhit
+author: jwhit-MSFT
 manager: laurawi
 ms.date: 3/22/2017
 audience: ITPro
