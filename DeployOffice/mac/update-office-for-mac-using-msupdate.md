@@ -68,15 +68,16 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |Outlook        |OPIM2019|OPIM15      |
 |OneNote        |ONMC2019|ONMC15      |
 |MAU              |MSau04|MSau04|
-|OneDrive  |ONDR18
-|Teams  |TEAM01
-|Skype for Business |MSFB16
-|Remote Desktop         |MSRD10
-|Intune Company Portal  |IMCP01
-|Defender ATP  |WDAV00
-|Edge Canary |EDCN01
-|Edge Dev  |EDDV01
-|Edge Beta |EDBT01
+|OneDrive  |ONDR18||
+|Teams  |TEAM01||
+|Skype for Business |MSFB16||
+|Remote Desktop         |MSRD10||
+|Intune Company Portal  |IMCP01||
+|Defender ATP  |WDAV00||
+|Edge Canary |EDCN01||
+|Edge Dev  |EDDV01||
+|Edge Beta |EDBT01||
+|Edge Stable |EDGE01 ||
 
 <sup>1</sup> These identifiers are used for Office 2019 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 plan) running on macOS version 10.12 (Sierra) or higher.
 
