@@ -95,13 +95,13 @@ Whether Teams gets added to an existing installation of Office 365 ProPlus is de
 > [!IMPORTANT]
 > If you're updating your existing installation of Office 365 ProPlus to Version 1908 (Build 11929.20300) or later, Teams will be added. To complete the installation of Teams after the update, either restart the device or have the user log off and log back on.
 
-The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
+The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
 |Monthly Channel |Version 1906 | July 9, 2019  |
 |Semi-Annual Channel (Targeted)| Version 1908  | September 10, 2019  |
-|Semi-Annual Channel| *Version 1908*  | *January 14, 2020* |
+|Semi-Annual Channel| Version 1908  | January 14, 2020 |
 
 If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a newer version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
