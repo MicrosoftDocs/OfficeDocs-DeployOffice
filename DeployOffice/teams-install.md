@@ -95,7 +95,7 @@ Whether Teams gets added to an existing installation of Office 365 ProPlus is de
 > [!IMPORTANT]
 > If you're updating your existing installation of Office 365 ProPlus to Version 1908 (Build 11929.20300) or later, Teams will be added. To complete the installation of Teams after the update, either restart the device or have the user log off and log back on.
 
-The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the forecasted schedule, which is subject to change.
+The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
