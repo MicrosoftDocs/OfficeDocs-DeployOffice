@@ -59,6 +59,7 @@
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 ## [Upgrade from Office 2007](office-2007-end-support-roadmap.md)
 ## [Upgrade from Office 2010](office-2010-end-support-roadmap.md)
+## [Windows 7 end of support](windows-7-support.md)
 
 # Project, Visio, Teams, and OneNote
 ## [Deploy Project](deployment-guide-for-project.md)

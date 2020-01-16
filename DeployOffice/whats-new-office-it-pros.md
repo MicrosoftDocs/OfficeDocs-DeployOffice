@@ -35,9 +35,9 @@ Security Policy Advisor is now generally available. You can use Security Policy 
 For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Office 365 ProPlus](overview-of-security-policy-advisor.md).
 
 ### Windows 7 end of support and Office 365 ProPlus
-***Support for Windows 7 ends on January 14, 2020.*** Using Office 365 ProPlus on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Office 365 ProPlus on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
+***Support for Windows 7 ended on January 14, 2020.*** Using Office 365 ProPlus on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Office 365 ProPlus on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
-Even though Windows 7 will no longer be supported after January 2020, we’ve decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. For more information, see [Windows 7 end of support and Office 365 ProPlus](windows-7-support.md).
+Even though Windows 7 is longer supported, we’ve decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. For more information, see [Windows 7 end of support and Office 365 ProPlus](windows-7-support.md).
 
 ### Delivery Optimization and Office 365 ProPlus
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft. 
@@ -129,7 +129,7 @@ Office 2019 is the latest version of Microsoft's productivity software that's av
  
 ## August 2018
 
-Version 1.2 of the Readiness Toolkit was released, with new functionlity to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+Version 1.2 of the Readiness Toolkit was released, with new functionality to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
 ## July 2018
 
