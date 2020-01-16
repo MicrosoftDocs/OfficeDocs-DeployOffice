@@ -101,7 +101,7 @@ The date when Teams can start being added to ***existing*** installations of Off
 |---------|---------|---------|
 |Monthly Channel |Version 1906 | July 9, 2019  |
 |Semi-Annual Channel (Targeted)| Version 1908  | September 10, 2019  |
-|Semi-Annual Channel| *Version 1908*  | *January 14, 2020* |
+|Semi-Annual Channel| Version 1908  | January 14, 2020 |
 
 If you don't want Teams to be added to ***existing*** installations of Office 365 ProPlus when you update to a newer version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
