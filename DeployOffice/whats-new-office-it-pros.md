@@ -129,7 +129,7 @@ Office 2019 is the latest version of Microsoft's productivity software that's av
  
 ## August 2018
 
-Version 1.2 of the Readiness Toolkit was released, with new functionlity to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+Version 1.2 of the Readiness Toolkit was released, with new functionality to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more details, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
 ## July 2018
 
