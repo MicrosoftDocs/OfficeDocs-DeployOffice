@@ -120,7 +120,7 @@ We recommend that you also set the value of the Enabled attribute to **True** in
 <a name="BKMK_Package"> </a>
 ## Enable Office 365 clients to receive updates from the Office CDN instead of Configuration Manager
 
-If it meets your business and technical requirements, we recommend updating your client devices automatically from the Office CDN. To enable a device to recieve updates from the Office CDN instead of from Configuration Manager, use one of the following methods:
+If it meets your business and technical requirements, we recommend updating your client devices automatically from the Office CDN. To enable a device to receive updates from the Office CDN instead of from Configuration Manager, use one of the following methods:
 
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 

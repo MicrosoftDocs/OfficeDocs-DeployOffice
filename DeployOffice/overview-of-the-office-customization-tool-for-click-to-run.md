@@ -51,8 +51,8 @@ Follow these steps to create a configuration file that can be used by the Office
 13. Choose whether to automatically accept the EULA. 
 14. Choose whether to enabled shared computer activation. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
 15. In the **Application preferences** section, choose what preferences to apply when deploying Office. You can search for a setting, filter the preferences by Office app, and learn more about each setting by clicking it and reviewing the detailed description.
-16. Click **Finish**, review the configured settings in the righthand pane, and then click **Export**.
-17. Accept the terms in the license agreement, name the confguration file, and then click **Export** or, if you're saving the configuration file to the cloud, click **Done**. 
+16. Click **Finish**, review the configured settings in the right-hand pane, and then click **Export**.
+17. Accept the terms in the license agreement, name the configuration file, and then click **Export** or, if you're saving the configuration file to the cloud, click **Done**. 
 18. You can now use the configuration file in your deployment workflow with the Office Deployment Tool or another software distribution solution.
 
 ## Edit an existing configuration file
