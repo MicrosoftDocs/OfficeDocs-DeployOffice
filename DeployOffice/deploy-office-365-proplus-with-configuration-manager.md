@@ -11,18 +11,18 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)."
+description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)."
 ---
 
-# Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)
+# Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)
 
-Follow the steps in this article to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch). 
+Follow the steps in this article to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch). 
 
-This article applies to deploying with Configuration Manager (Current Branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
+This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
     
 ## Overview
 
-If your organization already uses Configuration Manager, we recommend upgrading to the Current Branch and using it to deploy Office 365 ProPlus. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
+If your organization already uses Configuration Manager, we recommend upgrading to the current branch and using it to deploy Office 365 ProPlus. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
 - The Office Client Management dashboard, where you can deploy Office and monitor updates
 - Integration of the Office Customization Tool for Click-to-Run, which means administrators always have access to the latest Click-to-Run deployment and management features
@@ -41,7 +41,7 @@ If you haven't already, complete the [assessment](assess-office-365-proplus.md) 
 
 This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction). 
 
-We recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.  
+We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.  
 
 ## Best practices 
 
@@ -50,14 +50,14 @@ The steps in this article are based on the following best practices:
 - **Build two Office [applications](https://docs.microsoft.com/configmgr/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more details, see [Define your source files](plan-office-365-proplus.md#step-4---define-your-source-files). 
 - **Deploy to two [collections](https://docs.microsoft.com/configmgr/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives the Semi-Annual Channel (Targeted). The other collection represents the broad group, which receives the Semi-Annual Channel. For more details, see [Choose your update channels](plan-office-365-proplus.md#step-3---choose-your-update-channels). 
 
-You can customize these options to match the requirements for your organization, including deploying to more than two collections, changing update channels, and deploying Visio and Project. For more detils, see [Customize your deployment](#customize-your-deployment).
+You can customize these options to match the requirements for your organization, including deploying to more than two collections, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1 - Review and update your Configuration Manager infrastructure 
 
 From an infrastructure standpoint, deploying Office 365 ProPlus with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your Office deployment easier and more efficient: 
 
-- Use the Current Branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use) 
-- Enable peer cache on your client devices. Peer cache is a feature in the Current Branch of Configuration Manager that can help with limited network capacity when deploying updates to client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache). Office can benefit both during initial deployment as well as later servicing with updates from peer cache.
+- Use the current branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use) 
+- Enable peer cache on your client devices. Peer cache is a feature in the current branch of Configuration Manager that can help with limited network capacity when deploying updates to client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache). Office can benefit both during initial deployment as well as later servicing with updates from peer cache.
 - Deploy Office as an application using the Office Client Management dashboard and Office 365 Installer wizard in Configuration Manager. The dashboard and wizard enable all the Configuration Manager features designed for Office, including removal of existing versions of Office and the ability to define application preferences.
 
 Make sure to complete the following requirements as well:
@@ -77,7 +77,7 @@ In more complex deployments, you would use multiple deployment groups. For more 
 
 ## Step 3 - Create and deploy the Office application to the pilot group
 
-The Office installation packages are represented as applications in Configuration Manager. For each deloyment group that you defined in your deployment plan, you create a unique Office application using the steps below. 
+The Office installation packages are represented as applications in Configuration Manager. For each deployment group that you defined in your deployment plan, you create a unique Office application using the steps below. 
 
 1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 2. Click **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.

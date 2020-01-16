@@ -14,7 +14,7 @@ description: "Provides Office admins with information on how to deploy Office 36
 
 # Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager
 
-This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (Current Branch)](deploy-office-365-proplus-with-configuration-manager.md).
+This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md).
   
 If you use Microsoft Endpoint Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Office 365 ProPlus. By using Configuration Manager, you can control which users and computers get Office 365 ProPlus, where they get the installation files from, and when the Office 365 ProPlus installation occurs.
   

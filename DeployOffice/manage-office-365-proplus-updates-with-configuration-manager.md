@@ -35,7 +35,7 @@ After you perform these steps, you can use the software update management capabi
 
 To enable Configuration Manager to manage Office 365 client updates, you need the following:
 
-- Microsoft Endpoint Configuration Manager (Current Branch)
+- Microsoft Endpoint Configuration Manager (current branch)
 
 - An Office 365 client - Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, or Office 365 Business
 
@@ -120,7 +120,7 @@ We recommend that you also set the value of the Enabled attribute to **True** in
 <a name="BKMK_Package"> </a>
 ## Enable Office 365 clients to receive updates from the Office CDN instead of Configuration Manager
 
-If it meets your business and technical requirements, we recommend updating your client devices automatically from the Office CDN. To enable a device to recieve updates from the Office CDN instead of from Configuration Manager, use one of the following methods:
+If it meets your business and technical requirements, we recommend updating your client devices automatically from the Office CDN. To enable a device to receive updates from the Office CDN instead of from Configuration Manager, use one of the following methods:
 
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 

@@ -26,7 +26,7 @@ When working with enterprise customers who are deploying Office 365 ProPlus, Mic
 - Establish approach for servicing Office 365 ProPlus
 - Get ready to identify remediation needs
 
-To learn more how you can use FastTrack to help with your deployment, see [Microsoft Fastrack](https://fasttrack.microsoft.com/office). You can review how FastTrack will help you prepare, upgrade, and manage Office 365 ProPlus in the [Office 365 FastTrack Benefit](https://docs.microsoft.com/fasttrack/o365-fasttrack-benefit-for-office-365).
+To learn more how you can use FastTrack to help with your deployment, see [Microsoft FastTrack](https://fasttrack.microsoft.com/office). You can review how FastTrack will help you prepare, upgrade, and manage Office 365 ProPlus in the [Office 365 FastTrack Benefit](https://docs.microsoft.com/fasttrack/o365-fasttrack-benefit-for-office-365).
 
 To deliver the workshop, FastTrack uses the PowerPoint deck below, which we encourage you to review and use as part of your deployment planning. The workshop aligns to the phases and best practices available in the [Office Deployment Guide](https://aka.ms/officedeployment).
 
