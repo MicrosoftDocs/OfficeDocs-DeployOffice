@@ -14,7 +14,7 @@
 # Upgrade
 ## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 ## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-configuration-manager.md)
+## [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
 
 # Manage
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)

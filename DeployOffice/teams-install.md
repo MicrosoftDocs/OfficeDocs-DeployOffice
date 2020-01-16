@@ -76,7 +76,7 @@ If you want to use the [Office Deployment Tool](overview-of-the-office-2016-depl
 > [!TIP]
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
-If you’re deploying Office 365 ProPlus by using the Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (Current Branch), you can set **Teams** to the **Off** position in the configuration UI.
+If you’re deploying Office 365 ProPlus by using the Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
 
 If you're deploying Office 365 ProPlus by using Microsoft Intune, there is a checkbox to exclude Teams on the **Configure App Suite** pane.  
 

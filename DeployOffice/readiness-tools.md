@@ -19,7 +19,7 @@ description: "Provides IT Pros with info about the different application compati
 Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Office 365 ProPlus. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Office 365 ProPlus. The answer can depend on a variety of factors, but in general our recommendation is:
 
  - Use the [Readiness Toolkit](#readiness-toolkit-for-office-add-ins-and-vba) for basic environments where simplified tool deployment and use is desired.
- - Use the [readiness features in Configuration Manager](#office-365-proplus-readiness-features-in-configuration-manager-current-branch), if you already have Microsoft Endpoint Configuration Manager (Current Branch) deployed in your organization.
+ - Use the [readiness features in Configuration Manager](#office-365-proplus-readiness-features-in-configuration-manager-current-branch), if you already have Microsoft Endpoint Configuration Manager (current branch) deployed in your organization.
  - Use [Office Telemetry Dashboard](#office-telemetry-dashboard) only if your organization needs certain usage and health information.
 
 Typically, organizations go through the following phases when planning and implementing an upgrade to Office 365 ProPlus:
@@ -52,9 +52,9 @@ While the Readiness Toolkit is designed for on-premises use, add-in adoption inf
 
 For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
-## Office 365 ProPlus readiness features in Configuration Manager (Current Branch)
+## Office 365 ProPlus readiness features in Configuration Manager (current branch)
 
-If you have at least Version 1902 of Microsoft Endpoint Configuration Manager (Current Branch), we recommend using Configuration Manager for assessing application compatibility and readiness for Office 365 ProPlus in your organization.
+If you have at least Version 1902 of Microsoft Endpoint Configuration Manager (current branch), we recommend using Configuration Manager for assessing application compatibility and readiness for Office 365 ProPlus in your organization.
 
  Configuration Manager extends beyond the Readiness Toolkit to help with the Upgrade phase by providing the following features:
 
@@ -98,6 +98,6 @@ The runtime issue logging provided by Office Telemetry Dashboard can help with h
 
 But, Office Telemetry Dashboard requires a significant amount of time to plan and deploy. For example, you need to enable logging on devices in your organization, configure processors to collect the information from those devices, and create and manage a SQL Server database to store the information collected from those devices.
 
-We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we are planning to provide health reporting capabilities in future releases of Configuration Manager (Current Branch). In the meantime, organizations who need this type of information can continue to use Office Telemetry Dashboard.
+We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we are planning to provide health reporting capabilities in future releases of Configuration Manager (current branch). In the meantime, organizations who need this type of information can continue to use Office Telemetry Dashboard.
 
 For more information about Office Telemetry Dashboard, see [Guide to Office Telemetry Dashboard resources](compat/compatibility-and-telemetry-in-office.md). 
