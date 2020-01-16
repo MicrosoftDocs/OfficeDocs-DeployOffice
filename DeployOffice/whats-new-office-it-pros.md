@@ -68,7 +68,7 @@ Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline
 ## June 2019
 
 ### Comparison of application compatibility and readiness assessments tools
-Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (Current Branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Office 365 ProPlus](readiness-tools.md)
+Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Office 365 ProPlus](readiness-tools.md)
 
 ## April 2019
 

@@ -42,7 +42,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 - [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 
-- [Deploy with Configuration Manager (Current Branch)](deploy-office-365-proplus-with-configuration-manager.md) 
+- [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md) 
 
 
 ## Manage updates

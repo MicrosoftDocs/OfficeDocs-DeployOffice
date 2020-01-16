@@ -35,7 +35,7 @@ After you perform these steps, you can use the software update management capabi
 
 To enable Configuration Manager to manage Office 365 client updates, you need the following:
 
-- Microsoft Endpoint Configuration Manager (Current Branch)
+- Microsoft Endpoint Configuration Manager (current branch)
 
 - An Office 365 client - Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, or Office 365 Business
 
