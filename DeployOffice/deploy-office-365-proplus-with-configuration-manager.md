@@ -41,7 +41,7 @@ If you haven't already, complete the [assessment](assess-office-365-proplus.md) 
 
 This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction). 
 
-We recommend customers use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.  
+We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 Enterprise and Office 365 Business SKUs, along with paid Government, Kiosk, and Nonprofit SKUs.  
 
 ## Best practices 
 

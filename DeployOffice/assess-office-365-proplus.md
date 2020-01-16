@@ -20,7 +20,7 @@ description: "This article gives step-by-step instructions for how to assess you
 
 Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment. 
 
-In addition to this guidance, we recommend that you use [Microsoft Fastrack](https://fasttrack.microsoft.com/office) to help with your deployment.
+In addition to this guidance, we recommend that you use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with your deployment.
 
 ## Step 1 - Review infrastructure and requirements
 
