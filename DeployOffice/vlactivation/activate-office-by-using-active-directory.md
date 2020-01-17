@@ -29,7 +29,7 @@ To use Active Directory-based activation, the volume licensed version of Office,
 - Windows Server 2012 R2
 - Windows Server 2012  
     
-Review the [System requirements for Office](https://products.office.com/office-system-requirements) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying the users in your organization. For example, Office Professional Plus 2019 is supported on Windows 10 but isn't supported on Windows 8.1.
+Review the [System requirements for Office](https://products.office.com/office-resources) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying the users in your organization. For example, Office Professional Plus 2019 is supported on Windows 10 but isn't supported on Windows 8.1.
 
 
 ## Configure Active Directory-based activation

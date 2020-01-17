@@ -40,7 +40,7 @@ The biggest change since Office 2016 is that the installation technology used by
 
 In addition to Click-to-Run, the following are some other changes that you need to be aware of:
 
-- Office 2019 is supported on Windows 10 but isn’t supported on Windows 7 or Windows 8.1. For more information, review the [system requirements](https://products.office.com/office-system-requirements).
+- Office 2019 is supported on Windows 10 but isn’t supported on Windows 7 or Windows 8.1. For more information, review the [system requirements](https://products.office.com/office-resources).
 - To configure and perform installations, you use the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117), which is a free download from the Microsoft Download Center. The Office Customization Tool that you previously used for Windows Installer (MSI) is no longer used.
 - Instead of downloading the installation files from the Volume Licensing Service Center (VLSC), you use the Office Deployment Tool to download the installation files directly from the Office Content Delivery Network (CDN) on the internet.
 - When you install Office Professional Plus 2019, all apps are installed by default. But, you can configure the Office Deployment Tool to exclude certain apps from being installed.

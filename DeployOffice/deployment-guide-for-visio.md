@@ -21,7 +21,7 @@ How you deploy Visio to the users in your organization depends on which version 
 - Visio Professional 2019 or Visio Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Visio Professional 2016 or Visio Standard 2016, available as a one-time purchase through a volume licensing agreement.
      
-Before you deploy, be sure to [review the system requirements](https://products.office.com/office-system-requirements) for the version of Visio that you plan to deploy to the users in your organization. 
+Before you deploy, be sure to [review the system requirements](https://products.office.com/office-resources) for the version of Visio that you plan to deploy to the users in your organization. 
   
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same computer. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
@@ -42,7 +42,7 @@ If you want to have more control over how the subscription version of Visio is d
     
 2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install the subscription version of Visio. 
     
-3. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy the subscription version Visio to the users in your ogranziation. 
+3. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy the subscription version Visio to the users in your organization. 
     
 If you already use other tools to deploy software to your users, such as Microsoft Endpoint Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy the subscription version of Office. 
 
