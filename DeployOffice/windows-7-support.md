@@ -19,7 +19,7 @@ description: "Provides Office admins with information about the implications of 
 > - Office 365 ProPlus is no longer supported on Windows 7.
 > - If you’re a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.office.com/article/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
 
-Office 365 is governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-system-requirements) for the product or service. This includes using Office 365 ProPlus on a Windows operating system that is currently in support.
+Office 365 is governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This includes using Office 365 ProPlus on a Windows operating system that is currently in support.
 
 Using Office 365 ProPlus on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Office 365 ProPlus on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
@@ -55,7 +55,7 @@ After you move Office 365 ProPlus to a supported Windows operating system, you c
 
 Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](https://support.microsoft.com/help/14085). To see specific end of support dates for non-subscription versions of Office, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
 
-Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, unless you have ESU, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://products.office.com/office-system-requirements), such as [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
+Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, unless you have ESU, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://products.office.com/office-resources), such as [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
 ## Additional information
 
