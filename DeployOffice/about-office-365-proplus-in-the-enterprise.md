@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with an overivew of Office 365 ProPlus, including information about deploying and licensing."
+description: "Provides Office admins with an overview of Office 365 ProPlus, including information about deploying and licensing."
 ---
 
 # About Office 365 ProPlus in the enterprise
@@ -50,7 +50,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
 ### Deployment differences
 <a name="BKMK_Deployment"> </a>
 
-- By default, Office 365 ProPlus installs as one package. This means that all Office apprlications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove) certain Office 365 ProPlus applications, such as Access, from client computers.
+- By default, Office 365 ProPlus installs as one package. This means that all Office applications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove) certain Office 365 ProPlus applications, such as Access, from client computers.
     
 - Because Office 365 ProPlus uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Office 365 ProPlus is configured to automatically install updates from the Office Content Delivery Network (CDN) on the Internet. But, you can configure Office 365 ProPlus to install updates from a location within your own network or you can [manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
     
