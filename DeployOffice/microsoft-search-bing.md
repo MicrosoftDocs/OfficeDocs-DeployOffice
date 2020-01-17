@@ -75,7 +75,7 @@ Also, the location of the device is checked once every month. At that time, if t
 If you don’t want Bing to be made the default search engine, you can exclude the extension from being installed by using the Office Deployment Tool or by using Group Policy. There are also ways to exclude the extension from being installed if you’re using Microsoft Endpoint Configuration Manager (current branch) or Microsoft Intune.
 
 > [!IMPORTANT]
-> Whichever exclusion method you use, be sure to implement it ***before*** you install or update to a version of Office 365 ProPlus that installs the extension for Microsoft Search in Bing. If you implement the exclusion after the extension has been installed, the extension won’t be removed from the device. To remove the extension, see [How to remove the extensions after it’s been installed](#how-to-remove-the-extensions-after-its-been-installed).
+> Whichever exclusion method you use, be sure to implement it ***before*** you install or update to a version of Office 365 ProPlus that installs the extension for Microsoft Search in Bing. If you implement the exclusion after the extension has been installed, the extension won’t be removed from the device. To remove the extension, see [How to remove the extension after it’s been installed](#how-to-remove-the-extension-after-its-been-installed).
 
 ### Office Deployment Tool
 
@@ -158,7 +158,7 @@ If you use those steps, note that after you set the default search engine to Bin
 > [!NOTE]
 > We're working on providing a way to deploy the extension by itself by using Configuration Manager. When that’s available, we’ll update this section with the details.
 
-## How to remove the extensions after it’s been installed
+## How to remove the extension after it’s been installed
 
 If you want to remove the extension from multiple devices in your organization after it’s been installed, you can run the following command as an administrator:
 
