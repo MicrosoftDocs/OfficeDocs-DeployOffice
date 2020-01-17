@@ -30,7 +30,7 @@ Office 365 ProPlus is similar to other versions of Office that you can deploy to
   
 - Office 365 ProPlus is a full version of Office.  
     
-- Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-system-requirements).
+- Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-resources).
     
 - Like other versions of Office, Office 365 ProPlus is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose the 64-bit or 32-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
     

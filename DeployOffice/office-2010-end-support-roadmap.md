@@ -69,9 +69,9 @@ For information about the new features available in Office 365 ProPlus, see [Wha
   
 ## Review the system requirements for Office 365 ProPlus
 
-Before upgrading to Office 365 ProPlus, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-system-requirements).
+Before upgrading to Office 365 ProPlus, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-resources).
   
-In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://products.office.com/office-system-requirements).
+In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://products.office.com/office-resources).
   
 ## Plan for Office 365
 
