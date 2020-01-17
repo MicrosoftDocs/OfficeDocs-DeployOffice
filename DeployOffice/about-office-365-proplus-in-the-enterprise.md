@@ -16,7 +16,7 @@ description: "Provides Office admins with an overivew of Office 365 ProPlus, inc
 
 # About Office 365 ProPlus in the enterprise
 
-Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
+Office 365 ProPlus is a version of Office that's available through Office 365. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
 > - Office 365 ProPlus is available as a standalone offering, or as part of other Office 365 plans, such as Office 365 Enterprise E3.
@@ -36,7 +36,7 @@ Office 365 ProPlus is similar to other versions of Office that you can deploy to
     
 - When you deploy Office 365 ProPlus, it's installed on the user's local computer. Office 365 ProPlus is not a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the Internet all the time to use it.
     
-- You can use many of the same tools to deploy and configure Office 365 ProPlus that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus. For more information, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md).
+- You can use many of the same tools to deploy and configure Office 365 ProPlus that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus. For more information, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
     
 - In addition, you can use many of the same Group Policy settings that you use with other versions of Office to configure and enforce Office 365 ProPlus program settings. 
     
@@ -56,7 +56,7 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
     
 - Office 365 ProPlus also provides the ability to control how often users receive feature updates. For example, users can get new features to Office 365 ProPlus as soon as they are available. Or, if you have line-of-business applications, add-ins, or macros that you want to test with the new features, you can provide users with new features less frequently. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
     
-- Office 365 provides a web-based portal where users can install Office 365 ProPlus themselves. Keep in mind that users have to be local administrators on their computers to install Office 365 ProPlus. If users aren't local administrators, you'll have to install Office 365 ProPlus for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md).
+- Office 365 provides a web-based portal where users can install Office 365 ProPlus themselves. Keep in mind that users have to be local administrators on their computers to install Office 365 ProPlus. If users aren't local administrators, you'll have to install Office 365 ProPlus for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
     
 ### Licensing differences
 <a name="BKMK_Licensing"> </a>
