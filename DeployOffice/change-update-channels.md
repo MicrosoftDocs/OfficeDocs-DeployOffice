@@ -42,7 +42,7 @@ After policy has been applied, the Office Automatic Update 2.0 task must run. Wh
 
 4. Deploy the configuration file using your standard processes.
 
-After policy has been applied, the Office Automatic Update 2.0 task must run. After that task runs, it detects the updated policy and updates the assigned channel. After the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed.
+After ODT has executed, the Office Automatic Update 2.0 task must run. The task will detect change and update channel. After the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed.
 
 ### Example
 
