@@ -32,11 +32,11 @@ Office 365 ProPlus is similar to other versions of Office that you can deploy to
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-resources).
     
-- Like other versions of Office, Office 365 ProPlus is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose the 64-bit or 32-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
+- Like other versions of Office, Office 365 ProPlus is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose between the 64-bit or 32-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
     
 - When you deploy Office 365 ProPlus, it's installed on the user's local computer. Office 365 ProPlus is not a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the Internet all the time to use it.
     
-- You can use many of the same tools to deploy and configure Office 365 ProPlus that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus. For more information, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
+- You can use many of the same tools to deploy and configure Office 365 ProPlus that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus. For more information, see [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
     
 - In addition, you can use many of the same Group Policy settings that you use with other versions of Office to configure and enforce Office 365 ProPlus program settings. 
     
@@ -50,13 +50,13 @@ The most significant difference is that Office 365 ProPlus is updated regularly,
 ### Deployment differences
 <a name="BKMK_Deployment"> </a>
 
-- By default, Office 365 ProPlus installs as one package. This means that all Office programs are installed on the user's computer. But, you can configure the deployment to [Exclude or remove Office 365 ProPlus products from client computers](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove), such as Access. 
+- By default, Office 365 ProPlus installs as one package. This means that all Office apprlications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove) certain Office 365 ProPlus applications, such as Access, from client computers.
     
 - Because Office 365 ProPlus uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Office 365 ProPlus is configured to automatically install updates from the Office Content Delivery Network (CDN) on the Internet. But, you can configure Office 365 ProPlus to install updates from a location within your own network or you can [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
     
 - Office 365 ProPlus also provides the ability to control how often users receive feature updates. For example, users can get new features to Office 365 ProPlus as soon as they are available. Or, if you have line-of-business applications, add-ins, or macros that you want to test with the new features, you can provide users with new features less frequently. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
     
-- Office 365 provides a web-based portal where users can install Office 365 ProPlus themselves. Keep in mind that users have to be local administrators on their computers to install Office 365 ProPlus. If users aren't local administrators, you'll have to install Office 365 ProPlus for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
+- Office 365 provides a web-based portal where users can install Office 365 ProPlus themselves. Keep in mind that users have to be local administrators on their computers to install Office 365 ProPlus. If users aren't local administrators, you'll have to install Office 365 ProPlus for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
     
 ### Licensing differences
 <a name="BKMK_Licensing"> </a>
