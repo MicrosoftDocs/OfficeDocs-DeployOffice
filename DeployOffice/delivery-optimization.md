@@ -86,7 +86,7 @@ For additional configuration options available for Delivery Optimization, see [D
 
 ## Viewing data about the use of Delivery Optimization
 
-On an individual device, you can go to **Settings** > **Update & Security** > **Delivery Optimization** > **Activity monitor**. You can also use PowerShell cmdlets. For more information about those cmdlets, see [Montitor Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-setup#monitor-delivery-optimization).
+On an individual device, you can go to **Settings** > **Update & Security** > **Delivery Optimization** > **Activity monitor**. You can also use PowerShell cmdlets. For more information about those cmdlets, see [Monitor Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-setup#monitor-delivery-optimization).
 
 If your organization uses [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), a Delivery Optimization report is available. For more information, see [Delivery Optimization in Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-delivery-optimization). 
 
