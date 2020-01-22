@@ -14,11 +14,11 @@ description: "Provides Office admins with information about the extension for Mi
 
 # Microsoft Search in Bing and Office 365 ProPlus
 
-Starting with Version 2002 of Office 365 ProPlus, an extension for Microsoft Search in Bing will be installed that makes Bing the default search engine for the Google Chrome web browser. This extension will be installed with new installations of Office 365 ProPlus or when existing installations of Office 365 ProPlus are updated. If Bing is already the default search engine, the extension doesn't get installed.
+Starting with Version 2002 of Office 365 ProPlus, an extension for Microsoft Search in Bing will be installed that makes Bing the default search engine for the Google Chrome web browser only on devices in certain [locations](#which-locations-will-receive-microsoft-search-in-bing-with-office-365-proplus). This extension will be installed with new installations of Office 365 ProPlus or when existing installations of Office 365 ProPlus are updated. If you don't want the extension installed, [follow these steps](#how-to-exclude-the-extension-for-microsoft-search-in-bing-from-being-installed). Also, if Bing is already the default search engine, the extension doesn't get installed.
+
+Even after the extension is installed, your users can easily stop using Bing as the default search engine on their own by using a simple [On/Off toggle](#change-whether-bing-is-the-default-search-engine-for-google-chrome) or you can [remove the extension](#how-to-remove-the-extension-after-its-been-installed) from multiple devices in your organization.
 
 By making Bing the default search engine, users in your organization with Google Chrome will be able to take advantage of Microsoft Search, including being able to access relevant workplace information directly from the browser address bar. Microsoft Search is part of Microsoft 365 and is turned on by default for all Microsoft apps that support it.
-
-Even after Bing is made the default search engine, your users can still change to a different default search engine in Google Chrome on their own. For more information, see [What your users will see with Microsoft Search in Bing](#what-your-users-will-see-with-microsoft-search-in-bing).
 
 > [!NOTE]
 > - Support for the Firefox web browser is planned for a later date. We will keep you informed about support for Firefox through the Microsoft 365 Admin Center and this article.
@@ -142,6 +142,9 @@ After the extension for Microsoft Search in Bing is installed, your users will s
 As they use Microsoft Search in Bing, your users will see work-related information in their search results, similar to what is shown in the following screenshot:
 
 ![Work-related search results displayed in Microsoft Search in Bing](images/work-related-search-result.png)
+
+
+### Change whether Bing is the default search engine for Google Chrome
 
 If your users decide they want to stop using Bing as their default search engine, they can click on the magnifying glass icon next to the address bar in Google Chrome and click the **Use Bing as your default search engine** toggle to the **Off** position. For the change to take effect, they need to close Google Chrome and then open it again.
 
