@@ -100,7 +100,7 @@ If you use the Office Deployment Tool, you can use the ExcludeApp element in you
 
 If you use Group Policy in your organization, you can enable the *Don't install extension for Microsoft Search in Bing that makes Bing the default the search engine* policy setting. This method is probably best used for existing installations of Office 365 ProPlus.
 
-You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. This policy setting is available in the [Administrative Template files (ADMX/ADML) download](https://www.microsoft.com/en-us/download/details.aspx?id=49030) starting with version 4966.1000, which is scheduled to be released on January 21, 2020.
+You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. This policy setting is available in the [Administrative Template files (ADMX/ADML) download](https://www.microsoft.com/en-us/download/details.aspx?id=49030) starting with version 4966.1000, which was released on January 21, 2020.
 
 > [!NOTE]
 > If you let your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude the extension for Microsoft Search in Bing from being installed unless you enable the *Don't install extension for Microsoft Search in Bing that makes Bing the default the search engine* policy setting.
