@@ -141,7 +141,7 @@ For more information, see [Plan your content](https://docs.microsoft.com/microso
 
 After the extension for Microsoft Search in Bing is installed, your users will see a Welcome screen. For example, the Welcome screen in Google Chrome looks similar to this:
 
-![Welcome screen for Microsoft Search in Bing when using Google Chrome web browser](images/welcome-chrome.png)
+![Welcome screen for Microsoft Search in Bing when using Google Chrome web browser](images/welcome-screen-chrome.png)
 
 As they use Microsoft Search in Bing, your users will see work-related information in their search results, similar to what is shown in the following screenshot:
 
