@@ -180,4 +180,6 @@ To deploy that command to multiple devices in your organization, you could use a
 If you remove the extension, Bing will no longer be set as the default search engine.
 
 > [!IMPORTANT]
-> If you have technical questions or see something incorrect in the article (for example, a typo or a broken link), please choose **This page** in the **Feedback** section.  If you have other comments or feedback, please post those in the [Office 365 ProPlus area](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/bd-p/O365ProPlus) of the Tech Community or choose **This product** in the **Feedback** section.
+> If you have a technical question or see something incorrect in the article (for example, a typo or a broken link), please choose **This page** in the **Feedback** section.
+>
+> If you have other comments or feedback, please post those in the [Office 365 ProPlus area](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/bd-p/O365ProPlus) of the Microsoft Tech Community or choose **This product** in the **Feedback** section.
