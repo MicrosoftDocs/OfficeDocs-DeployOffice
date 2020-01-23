@@ -121,6 +121,9 @@ If you’re deploying Office 365 ProPlus by using the Office 365 Client Installa
 
 If you're deploying Office 365 ProPlus by using Intune, you can clear the **Set default search engine to Microsoft Search in Bing** check box on the **Configure App Suite** pane.
 
+> [!NOTE]
+> This toggle is expected to be available in late February 2020. In the meantime, you can choose **Enter XML data** for the **Settings format**, and then enter XML similar to the example in the [Office Deployment Tool](#office-deployment-tool) section.
+
 
 ## How to prepare your organization for Microsoft Search in Bing
 
