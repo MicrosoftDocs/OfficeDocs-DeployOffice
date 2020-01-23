@@ -188,7 +188,7 @@ If you're using Windows 10, you can also remove the extension by going to **Sett
 If you want to remove the extension from multiple devices in your organization after it’s been installed, you can run the following command as an administrator:
 
 ```
-"C:\Program Files (x86)\Microsoft\DefaultPackPC\MainBootStrap.exe" uninstallAll 
+"C:\Program Files (x86)\Microsoft\DefaultPackMSI\MainBootStrap.exe" uninstallAll 
 ```
 
 To deploy that command to multiple devices in your organization, you could use a script, Configuration Manager, or some other enterprise software deployment tool.
