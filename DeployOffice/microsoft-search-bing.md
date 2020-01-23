@@ -24,7 +24,6 @@ By making Bing the default search engine, users in your organization with Google
 
 > [!NOTE]
 > - For more information about the business value of Microsoft Search in Bing, [read this blog post](https://techcommunity.microsoft.com/t5/office-365-blog/introducing-and-managing-microsoft-search-in-bing-through-office/ba-p/1110974).
-> - To ask questions or provide feedback, go to the [Office 365 ProPlus section of the Tech Community](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/bd-p/O365ProPlus).
 > - Support for the Firefox web browser is planned for a later date. We will keep you informed about support for Firefox through the Microsoft 365 Admin Center and this article.
 > - This extension is included only with Office 365 ProPlus. It isn’t included with Office 365 Business, which is the version of Office that is comes with certain business plans, such as the Microsoft 365 Business plan and the Office 365 Business Premium plan.
 
@@ -179,3 +178,6 @@ C:\Program Files (x86)\Microsoft\DefaultPackPC\MainBootStrap.exe uninstallAll
 To deploy that command to multiple devices in your organization, you could use a script, Configuration Manager, or some other enterprise software deployment tool.
 
 If you remove the extension, Bing will no longer be set as the default search engine.
+
+> [!IMPORTANT]
+> If you have technical questions or see something incorrect in the article (for example, a typo or a broken link), please choose **This page** in the **Feedback** section.  If you have other comments or feedback, please post those in the [Office 365 ProPlus area](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/bd-p/O365ProPlus) of the Tech Community or choose **This product** in the **Feedback** section.
