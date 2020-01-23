@@ -169,15 +169,30 @@ If you use those steps, note that after you set the default search engine to Bin
 
 ## How to remove the extension after it’s been installed
 
+There are two ways that you can remove the extension after it's been installed:
+- Use Control Panel
+- Run an executable command
+
+In either case, you need to be a local administrator on the device to remove the extension.
+
+After you remove the extension, Bing will no longer be set as the default search engine. Also, the extension won't be installed again in a future update of Office 365 ProPlus.
+
+### Use Control Panel to remove the extension
+
+To remove the extension on an individual device by using Control Panel, go to **Control Panel** > **Programs** > **Programs and Features**. Then, under the list of installed programs, right-click on **DefaultPackPC** and choose **Uninstall**.
+
+If you're using Windows 10, you can also remove the extension by going to **Settings** > **Apps** > **Apps & features**.
+
+### Run an executable command to remove the extension
+
 If you want to remove the extension from multiple devices in your organization after it’s been installed, you can run the following command as an administrator:
 
 ```
-C:\Program Files (x86)\Microsoft\DefaultPackPC\MainBootStrap.exe uninstallAll 
+"C:\Program Files (x86)\Microsoft\DefaultPackPC\MainBootStrap.exe" uninstallAll 
 ```
 
 To deploy that command to multiple devices in your organization, you could use a script, Configuration Manager, or some other enterprise software deployment tool.
 
-If you remove the extension, Bing will no longer be set as the default search engine.
 
 ###
 
