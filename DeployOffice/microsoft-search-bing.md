@@ -14,11 +14,11 @@ description: "Provides Office admins with information about the extension for Mi
 
 # Microsoft Search in Bing and Office 365 ProPlus
 
-Starting with Version 2002 of Office 365 ProPlus, an extension for Microsoft Search in Bing will be installed that makes Bing the default search engine for the Google Chrome web browser only on devices in certain [locations](#which-locations-will-receive-microsoft-search-in-bing-with-office-365-proplus). This extension will be installed with new installations of Office 365 ProPlus or when existing installations of Office 365 ProPlus are updated.
+Starting with Version 2002 of Office 365 ProPlus, an extension for Microsoft Search in Bing will be installed that makes Bing the default search engine for the Google Chrome web browser only on devices in a limited number of [locations](#which-locations-will-receive-microsoft-search-in-bing-with-office-365-proplus). This extension will be installed with new installations of Office 365 ProPlus or when existing installations of Office 365 ProPlus are updated.
 
 If you don't want the extension installed, [follow these steps](#how-to-exclude-the-extension-for-microsoft-search-in-bing-from-being-installed). Also, if Bing is already the default search engine, the extension doesn't get installed.
 
-Even after the extension is installed, your users can easily stop using Bing as the default search engine on their own by using a simple [On/Off toggle](#change-whether-bing-is-the-default-search-engine-for-google-chrome) or you can [remove the extension](#how-to-remove-the-extension-after-its-been-installed) from multiple devices in your organization.
+Even after the extension is installed, your users can easily stop using Bing as the default search engine on their own by using a simple [On/Off toggle](#change-whether-bing-is-the-default-search-engine-for-google-chrome) or you can [remove the extension](#how-to-remove-the-extension-after-its-been-installed).
 
 By making Bing the default search engine, users in your organization with Google Chrome will be able to take advantage of Microsoft Search, including being able to access relevant workplace information directly from the browser address bar. Microsoft Search is part of Microsoft 365 and is turned on by default for all Microsoft apps that support it.
 
@@ -169,15 +169,30 @@ If you use those steps, note that after you set the default search engine to Bin
 
 ## How to remove the extension after it’s been installed
 
+There are two ways that you can remove the extension after it's been installed:
+- Use Control Panel
+- Run an executable command
+
+In either case, you need to be a local administrator on the device to remove the extension.
+
+After you remove the extension, Bing will no longer be set as the default search engine. Also, the extension won't be installed again in a future update of Office 365 ProPlus.
+
+### Use Control Panel to remove the extension
+
+To remove the extension on an individual device by using Control Panel, go to **Control Panel** > **Programs** > **Programs and Features**. Then, under the list of installed programs, right-click on **DefaultPackPC** and choose **Uninstall**.
+
+If you're using Windows 10, you can also remove the extension by going to **Settings** > **Apps** > **Apps & features**.
+
+### Run an executable command to remove the extension
+
 If you want to remove the extension from multiple devices in your organization after it’s been installed, you can run the following command as an administrator:
 
 ```
-C:\Program Files (x86)\Microsoft\DefaultPackPC\MainBootStrap.exe uninstallAll 
+"C:\Program Files (x86)\Microsoft\DefaultPackMSI\MainBootStrap.exe" uninstallAll 
 ```
 
 To deploy that command to multiple devices in your organization, you could use a script, Configuration Manager, or some other enterprise software deployment tool.
 
-If you remove the extension, Bing will no longer be set as the default search engine.
 
 ###
 
