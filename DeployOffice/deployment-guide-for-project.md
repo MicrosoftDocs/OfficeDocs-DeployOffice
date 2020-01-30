@@ -83,6 +83,13 @@ If you already use other tools to deploy software to your users, such as Microso
 If you want to specify and maintain certain user settings for your Project installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
   
 The same Group Policy settings work for Project Online Desktop Client, as well as volume licensed versions of Project, such as Project Professional 2019 or Project Standard 2016.
+
+## Important notes for group policy administrative files
+1. There are two types extension files are there one is .admx and other is .adml
+2. After downloaded the .exe file, exact the file using winrar software
+3. Copy all the .admx files to this location C:\Windows\PolicyDefinitions\
+4. Rename all the  files of .adml0  to .adml  for english language 
+5. Copy all the .adml files to this location C:\Windows\PolicyDefinitions\en-US\ 
   
 ## End user resources for Project
 
@@ -96,4 +103,5 @@ To help your users get started with Project, here are some resources to share wi
 
 - [Documentation](https://docs.microsoft.com/project) to help you plan, deploy, and manage Project Server and Project Online
 - [Plans and pricing information](https://products.office.com/project/compare-microsoft-project-management-software?tab=1)
+- [Create and Manage the central store for group policy administrative templates](https://support.microsoft.com/en-in/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
 
