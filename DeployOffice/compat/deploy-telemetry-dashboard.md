@@ -103,7 +103,10 @@ Office Telemetry Processor runs on one or more computers and collects inventory,
 
 The processor generates error logs in a file that is named dperrorlog.txt. It is located in a hidden folder at %systemroot%\ServiceProfiles\NetworkService\AppData\Local\Temp.
 
-Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226). 
+Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+
+> [!NOTE]
+> Office Telemetry Processor supports Transport Layer Security (TLS) 1.2.
 
 We recommend the following operating systems for computers that run the processor:
 
