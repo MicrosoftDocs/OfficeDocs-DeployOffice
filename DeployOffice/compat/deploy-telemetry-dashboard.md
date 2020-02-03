@@ -96,7 +96,7 @@ The **Getting started** worksheet in Office Telemetry Dashboard provides a link 
 
 ## Office Telemetry Processor
 
-Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor" and supports Transport Layer Security (TLS) 1.2.
+Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor" and the processor supports Transport Layer Security (TLS) 1.2.
 
 > [!IMPORTANT]
 > If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529). 
