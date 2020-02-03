@@ -121,13 +121,13 @@ Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtecti
 
 ## Deploying multiple MAK keys
 
-In some organizations, different groups have different MAK keys for their volume licensed versions of Office, Project, or Visio. Unfortunately, you can't include multiple MAK keys in the same configuration.xml file (for 2019 versions) or in the Office Customization Tool or config.xml file (for 2016 versions). 
+In some organizations, different groups have different MAK keys for their volume licensed versions of Office, Project, or Visio. Unfortunately, you can't include multiple MAK keys in the same configuration.xml file (for 2019 versions) or in the Office Customization Tool or config.xml file (for 2016 versions).
 
 If you don't want to create separate XML files for each group, you could use one of these other methods:
 
 - [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
 - [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp)
-- [enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry)
+- [Enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry)
 
 ## Related topics
 
