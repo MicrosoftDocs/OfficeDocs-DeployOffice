@@ -70,10 +70,10 @@ The following table describes different ways in which file information is disgui
 |Merger_Contoso.docx  <br/> |\\\FileShare\Operations\FY2018  <br/> |Merger_Contoso.docx  <br/> |
 |FY2018_Merger.xlsx  <br/> |http:\\\sharepoint\sites\HR\SharedDocuments  <br/> |FY2018_Merger.xlsx  <br/> |
 |10 cures for diseases.pptx  <br/> |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD  <br/> |10 cures for diseases  <br/> |
-|Data that is sent to the shared folder after you enable file obfuscation  <br/> |Re\*\*\*\*\*\*\*\*.xlsx  <br/> |C:\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
-|Me\*\*\*\*\*\*\*\*.docx  <br/> |\\\FileShare\\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
-|FY\*\*\*\*\*\*\*\*.xlsx  <br/> |http://sharepoint/\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
-|10\*\*\*\*\*\*\*\*.pptx  <br/> |Outlook:\*\*\*\*\*\*\*\*  <br/> |\*\*\*\*\*\*\*\*  <br/> |
+|Data that is sent to the shared folder after you enable file obfuscation  <br/> |Re\*.xlsx  <br/> |C:\\*  <br/> |\* <br/> |
+|Me\*.docx  <br/> |\\\FileShare\\*  <br/> |\*  <br/> |
+|FY\*.xlsx  <br/> |http://sharepoint/\*  <br/> |\*  <br/> |
+|10\*.pptx  <br/> |Outlook:\*  <br/> |\*  <br/> |
 
 #### To enable file obfuscation by using the registry
 
