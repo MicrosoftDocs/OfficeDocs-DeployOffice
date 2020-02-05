@@ -58,7 +58,7 @@ To enter a MAK key by using the Office Customization Tool (OCT), follow these st
 > [!NOTE]
 > - For more information, see [Office Customization Tool (OCT) 2016 Help: Overview](../oct/oct-2016-help-overview.md) and [Office Customization Tool (OCT) 2016 Help: Licensing and user interface](../oct/oct-2016-help-licensing-and-user-interface.md).
 > - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
-  
+
 <a name="ConfigXML"> </a>
 
 ### Configure MAK activation in the Config.xml file
@@ -118,7 +118,17 @@ Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtecti
   
 > [!NOTE]
 > For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
-  
+
+## Deploying multiple MAK keys
+
+In some organizations, different groups have different MAK keys for their volume licensed versions of Office, Project, or Visio. Unfortunately, you can't include multiple MAK keys in the same configuration.xml file (for 2019 versions) or in the Office Customization Tool or config.xml file (for 2016 versions).
+
+If you don't want to create separate XML files for each group, you could use one of these other methods:
+
+- [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
+- [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp)
+- [Enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry)
+
 ## Related topics
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
