@@ -96,14 +96,14 @@ The **Getting started** worksheet in Office Telemetry Dashboard provides a link 
 
 ## Office Telemetry Processor
 
-Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor." 
+Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor" and the processor supports Transport Layer Security (TLS) 1.2.
 
 > [!IMPORTANT]
 > If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529). 
 
 The processor generates error logs in a file that is named dperrorlog.txt. It is located in a hidden folder at %systemroot%\ServiceProfiles\NetworkService\AppData\Local\Temp.
 
-Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226). 
+Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
 
 We recommend the following operating systems for computers that run the processor:
 
