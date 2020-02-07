@@ -36,11 +36,11 @@ additionalContent:
         # Card
         - title: Get started
           summary: Learn how to plan, deploy, and manage Office 365 ProPlus in your enterprise environment.
-          url: /DeployOffice/deployment-guide-for-office-365-proplus.md
+          url: /DeployOffice/deployment-guide-for-office-365-proplus
         # Card
         - title: Deploy
           summary: Find guidance about how to deploy Office 365 ProPlus from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.
-          url: /DeployOffice/choose-how-to-deploy-office-365-proplus.md
+          url: /DeployOffice/choose-how-to-deploy-office-365-proplus
         # Card
         - title: Manage updates
           summary: Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates.
@@ -48,11 +48,11 @@ additionalContent:
         # Card
         - title: Office for Mac
           summary: Find guidance about deploying Office to Macs in your organization.
-          url: /DeployOffice/mac/deployment-guide-for-office-for-mac.md
+          url: /DeployOffice/mac/deployment-guide-for-office-for-mac
         # Card
         - title: Office 2019
           summary: Find guidance about deploying the volume licensed version of Office.
-          url: /DeployOffice/office2019/overview.md
+          url: /DeployOffice/office2019/overview
         # Card
         - title: Troubleshoot
           summary: Find troubleshooting and support resources for IT Professionals and admins.
