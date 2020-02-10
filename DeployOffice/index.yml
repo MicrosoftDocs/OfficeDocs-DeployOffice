@@ -1,0 +1,70 @@
+### YamlMime:Hub
+
+title: Office deployment # < 60 chars
+summary: Guidance for IT professionals who deploy and manage Office for their organization # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: office
+
+metadata:
+  title: Office deployment # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Office deployment # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: o365-proplus-itpro #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  audience: ITPro
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/03/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+      # Card
+      - title: FastTrack
+        itemType: deploy
+        url: https://fasttrack.microsoft.com/office
+      
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: For IT Professionals # < 60 chars (optional)
+      items:
+        # Card
+        - title: Get started
+          summary: Learn how to plan, deploy, and manage Office 365 ProPlus in your enterprise environment.
+          url: /DeployOffice/deployment-guide-for-office-365-proplus
+        # Card
+        - title: Deploy
+          summary: Find guidance about how to deploy Office 365 ProPlus from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.
+          url: /DeployOffice/choose-how-to-deploy-office-365-proplus
+        # Card
+        - title: Manage updates
+          summary: Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates.
+          url: /DeployOffice/overview-of-update-channels-for-office-365-proplus
+        # Card
+        - title: Office for Mac
+          summary: Find guidance about deploying Office to Macs in your organization.
+          url: /DeployOffice/mac/deployment-guide-for-office-for-mac
+        # Card
+        - title: Office 2019
+          summary: Find guidance about deploying the volume licensed version of Office.
+          url: /DeployOffice/office2019/overview
+        # Card
+        - title: Troubleshoot
+          summary: Find troubleshooting and support resources for IT Professionals and admins.
+          url: https://docs.microsoft.com/office/troubleshoot
+    - title: For other audiences # < 60 chars (optional)
+      items:
+        # Card
+        - title: End users
+          summary: Go to help, training, and what's new content for end users.
+          url: https://go.microsoft.com/fwlink/?linkid=787131
+        # Card
+        - title: Developers
+          summary: Learn about the Teams developer platform and how it enables you to build useful and powerful apps.
+          url: https://developer.microsoft.com/office/docs
+
