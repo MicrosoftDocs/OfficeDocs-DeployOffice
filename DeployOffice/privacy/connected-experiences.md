@@ -59,7 +59,8 @@ The following table provides a list of connected experiences that analyze your c
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
-\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> [!NOTE]
+> \*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Connected experiences that download online content
 
@@ -88,7 +89,7 @@ The following table provides a list of connected experiences that download onlin
 | Researcher\*    | [Research your paper easily within Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Tell Me    | [Do things quickly with Tell Me](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Templates  | [Download free, pre-built templates](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-| Weather Bar (Outlook)\*| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+| Weather Bar\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 \*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
