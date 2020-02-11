@@ -117,10 +117,10 @@ The following table provides a list of those other connected experiences and pro
 | LinkedIn contact card |[Connect your LinkedIn and Microsoft accounts](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
-| Office 365 add-ins | [Manage deployment of Office 365 add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
+| Office 365 add-ins\* | [Manage deployment of Office 365 add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Organization chart (Visio) |[Create a Visio organization chart](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Outlook Social Connector | [Turn on the Outlook Social Connector](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
-| Outlook UserVoice | [How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+| Outlook UserVoice\* | [How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Recent documents |[Open files from the File menu](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | Resume Assistant (or CV Assistant)\* |[Write your best resume with help from LinkedIn and Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Room Finder (Outlook)|[How to control the Room Finder in Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
