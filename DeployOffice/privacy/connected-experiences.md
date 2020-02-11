@@ -91,7 +91,8 @@ The following table provides a list of connected experiences that download onlin
 | Templates  | [Download free, pre-built templates](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 | Weather Bar\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
-\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> [!NOTE]
+>\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Other connected experiences
 
@@ -132,7 +133,8 @@ The following table provides a list of those other connected experiences and pro
 | Version history |[View previous versions of Office files](https://support.office.com/article/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
 | While you were away |[Get notified when members of your team update your shared file](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
-\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> [!NOTE]
+>\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Choose whether these connected experiences are available to use
 
