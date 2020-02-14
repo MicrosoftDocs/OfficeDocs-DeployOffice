@@ -149,6 +149,9 @@ If you want Teams to be installed, but don't want Teams to start automatically f
 
 By enabling this policy setting ***before Teams is installed***, Teams won't start automatically when the user logs in to the device. Once a user signs in to Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams to not start automatically by configuring user settings within Teams or by clearing the **Open Teams on startup** check box on the sign in screen for Teams.
 
+> [!TIP]
+> If you've already installed Teams but you want to use this policy setting to prevent Teams from starting automatically, enable this policy setting and then [run this script](https://docs.microsoft.com/MicrosoftTeams/scripts/powershell-script-teams-reset-autostart) on a per-user basis to reset the autostart setting for Teams.
+
 But even if you enable this policy setting so that Teams doesn't start automatically, an icon for Microsoft Teams will appear on the user's desktop.
 
 > [!IMPORTANT]
