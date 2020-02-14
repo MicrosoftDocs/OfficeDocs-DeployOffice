@@ -14,6 +14,9 @@ description: "Provides Office admins with information about the extension for Mi
 
 # Microsoft Search in Bing and Office 365 ProPlus
 
+> [!IMPORTANT]
+> Based on customer feedback, we're making a few changes to the plan to roll out the extension for Microsoft Search in Bing. Because of these changes, the rollout will not start with Version 2002. For information about the changes, [read this announcement](https://techcommunity.microsoft.com/t5/office-365-blog/update-to-microsoft-search-in-bing-through-office-365-proplus/ba-p/1161030). This article will be updated when more details are available.
+
 Starting with Version 2002 of Office 365 ProPlus, an extension for Microsoft Search in Bing will be installed that makes Bing the default search engine for the Google Chrome web browser only on devices in a limited number of [locations](#which-locations-will-receive-microsoft-search-in-bing-with-office-365-proplus). This extension will be installed with new installations of Office 365 ProPlus or when existing installations of Office 365 ProPlus are updated.
 
 If you don't want the extension installed, [follow these steps](#how-to-exclude-the-extension-for-microsoft-search-in-bing-from-being-installed). Also, if Bing is already the default search engine, the extension doesn't get installed.
@@ -23,7 +26,6 @@ Even after the extension is installed, your users can easily stop using Bing as 
 By making Bing the default search engine, users in your organization with Google Chrome will be able to take advantage of Microsoft Search, including being able to access relevant workplace information directly from the browser address bar. Microsoft Search is part of Microsoft 365 and is turned on by default for all Microsoft apps that support it.
 
 > [!NOTE]
-> - For more information about the business value of Microsoft Search in Bing, [read this blog post](https://techcommunity.microsoft.com/t5/office-365-blog/introducing-and-managing-microsoft-search-in-bing-through-office/ba-p/1110974).
 > - Support for the Firefox web browser is planned for a later date. We will keep you informed about support for Firefox through the Microsoft 365 Admin Center and this article.
 > - This extension is included only with Office 365 ProPlus. It isn’t included with Office 365 Business, which is the version of Office that is comes with certain business plans, such as the Microsoft 365 Business plan and the Office 365 Business Premium plan.
 
@@ -40,6 +42,9 @@ For more information about features and capabilities, see [Microsoft Search in B
 
 ## When will the extension for Microsoft Search in Bing be added to Office 365 ProPlus?
 
+> [!IMPORTANT]
+> Based on customer feedback, we're making a few changes to the plan to roll out the extension for Microsoft Search in Bing. Because of these changes, the rollout will not start with Version 2002. For information about the changes, [read this announcement](https://techcommunity.microsoft.com/t5/office-365-blog/update-to-microsoft-search-in-bing-through-office-365-proplus/ba-p/1161030). This article will be updated when more details are available.
+
 Version 2002 is the first version of Office 365 ProPlus that will install this extension. Version 2002 is expected to be released in Monthly Channel in early March 2020 and will be available in Monthly Channel (Targeted) shortly before then. After that, the extension will then be included in releases of Semi-Annual (Targeted) and Semi-Annual Channel.
 
 The following table shows the tentative schedule for the various update channels.  All the information in the table is tentative and subject to change. We will update the table as specific versions and release dates are determined.
@@ -47,10 +52,10 @@ The following table shows the tentative schedule for the various update channels
 
 |Update channel      | Version  | Release date  |
 |---------|---------|---------|
-|Monthly Channel (Targeted) | *Version 2002*  | *Middle of February 2020* |
-|Monthly     | *Version 2002*  | *Early March 2020* |
-|Semi-Annual (Targeted) | *To be determined*  | *March 10, 2020*  |
-|Semi-Annual     | *To be determined*  |*July 14, 2020*  |
+|Monthly Channel (Targeted) |*To be determined*   | *To be determined*  |
+|Monthly     | *To be determined*  | *To be determined*  |
+|Semi-Annual (Targeted) | *To be determined*  | *To be determined*   |
+|Semi-Annual     | *To be determined*  |*To be determined*   |
 
 
 > [!NOTE]

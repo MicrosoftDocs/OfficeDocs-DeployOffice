@@ -25,6 +25,8 @@ If you have a work or school account, your organization’s admin may have provi
 > - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 > - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 > - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
+>
+> Most optional connected experiences also can be managed by the privacy controls for connected experiences. For example, Insert Online Pictures can also be managed by the *Allow the use of connected experiences in Office that download online content* policy setting.
 
 ### If you use these services, what terms of use do you need to agree to?
 
