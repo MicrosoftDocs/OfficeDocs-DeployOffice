@@ -44,8 +44,6 @@ Other factors that might require you to keep users on OneNote 2016 include compu
 > [!NOTE]
 > If your users are still using computers that are running Windows 7 or Windows 8, the recommended and most up-to-date OneNote experience on those versions of Windows is the [web version of OneNote](https://support.office.com/article/7e497458-6bf3-4de3-a362-f83636f0d5b9).
 
-Keep in mind that OneNote 2016 is no longer being updated with new features and there won’t be a OneNote 2019. OneNote 2016 will continue to receive other updates, like critical fixes and security updates, while it’s still supported. Mainstream support for OneNote 2016 ends in October 2020, and extended support ends in October 2025.
-
 Users can use both OneNote 2016 and OneNote for Windows 10 on the same computer. While the two OneNote versions store their notebooks separately, with two different caches on the user’s computer, both versions can open the same cloud-based notebooks and stay in sync if the user is connected to the Internet. Users can [set which OneNote version is the default](https://support.office.com/article/f261140c-5ce8-4cf4-ad0b-c9e1cb953831) on their computer.
 
 ## How to deploy OneNote 2016
