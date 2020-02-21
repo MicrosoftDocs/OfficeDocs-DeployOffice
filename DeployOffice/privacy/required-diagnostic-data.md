@@ -1568,22 +1568,6 @@ The following fields are collected:
 
 - **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
 
-#### conversation_view_action
-
-Used for monitoring possible negative impact on your ability to view and reply to email messages
-
-The following fields are collected:
-
-- **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
-
-- **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
-
-- **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
-
-- **suggested_reply_click_pos** - Tells us which position the suggested reply (if available) is rendered so we can detect issues with a specific suggestion
-
-- **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
-
 #### draft_action
 
 Used for monitoring possible negative impact on your ability to create and save mail drafts.
@@ -2233,27 +2217,27 @@ Used for monitoring possible negative impact on your ability to perform critical
 
 The following fields are collected:
 
--**event_mode** - Indicates whether this event was from a group or not to help us detect issues with group events
+- **event_mode** - Indicates whether this event was from a group or not to help us detect issues with group events
 
--**meeting_id** - A meeting ID that helps us track issues throughout the lifetime of a meeting to help us detect issues with specific meetings
+- **meeting_id** - A meeting ID that helps us track issues throughout the lifetime of a meeting to help us detect issues with specific meetings
 
--**meeting_provider** - Indicates the provider for an online meeting, e.g. Teams, Skype for Business to help us detect issues with specific online meeting providers
+- **meeting_provider** - Indicates the provider for an online meeting, e.g. Teams, Skype for Business to help us detect issues with specific online meeting providers
 
--**notify_type** - Indicates the response type for other account types to help us detect issues with different account types
+- **notify_type** - Indicates the response type for other account types to help us detect issues with different account types
 
--**recurrence** - Indicates how often this meeting occurs I.e. occurrence or series to help us detect issues with reoccurring meeting series
+- **recurrence** - Indicates how often this meeting occurs I.e. occurrence or series to help us detect issues with reoccurring meeting series
 
--**response** - Indicates response type such as accept or decline on certain account types to help us detect issues with responding to events
+- **response** - Indicates response type such as accept or decline on certain account types to help us detect issues with responding to events
 
--**response_message_length** - Indicates how long the message length was to help us detect issues with meeting responses
+- **response_message_length** - Indicates how long the message length was to help us detect issues with meeting responses
 
--**review_time_proposal_action_type** - Indicates a user response new time proposal to help us detect issues with proposing a new time
+- **review_time_proposal_action_type** - Indicates a user response new time proposal to help us detect issues with proposing a new time
 
--**send_response** - Indicates whether a response was sent to help us detect issues sending meeting invite responses
+- **send_response** - Indicates whether a response was sent to help us detect issues sending meeting invite responses
 
--**txp** - Indicates what type of meeting it was generated from flight reservations and deliveries to help us detect issues with this type of meeting
+- **txp** - Indicates what type of meeting it was generated from flight reservations and deliveries to help us detect issues with this type of meeting
 
--**with_message_enabled** - Indicates whether a user can response with a message to help us detect issues with responding to meeting invites
+- **with_message_enabled** - Indicates whether a user can response with a message to help us detect issues with responding to meeting invites
 
 #### Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
 
@@ -3851,60 +3835,60 @@ We log when the user closes a Persona Card.  The data is used to determine wheth
 
 The following fields are collected: 
 
--**BatchId** - Globally unique identifier if a set of requests was made
+- **BatchId** - Globally unique identifier if a set of requests was made
 
--**Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
 
--**Data.AppInfo.Name** - Name of the service in use (Profile card)
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
--**Data.AppInfo_Id** - Name of the host application
+- **Data.AppInfo_Id** - Name of the host application
 
--**Data.AppInfo_Version** - Version of the host application
+- **Data.AppInfo_Version** - Version of the host application
 
--**Data.cardCorrelationId** - The globally unique identifier for a persona card
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
 
--**Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
 
--**Data.clientCorrelationId** - The globally unique identifier for the app's session
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
 
--**Data.clientType** - The type of device the app is run on
+- **Data.clientType** - The type of device the app is run on
 
--**Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
 
--**Data.feature** - Used to group various events of the same feature (Profile card)
+- **Data.feature** - Used to group various events of the same feature (Profile card)
 
--**Data.OTelJS.Version** - Version of OTel logger
+- **Data.OTelJS.Version** - Version of OTel logger
 
--**Data.properties** - Additional metadata collected for each event as follows:
- - **ClientTimeStamp** - Time on the application when the event was logged
- - **cardCorrelationId** - Duplicate of Data.appContextId above
- - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
- - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
- - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
- - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
- - **personaCorrelationId** - A globally unique identifier for unique personas in a session
+- **Data.properties** - Additional metadata collected for each event as follows:
+  - **ClientTimeStamp** - Time on the application when the event was logged
+  - **cardCorrelationId** - Duplicate of Data.appContextId above
+  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
+  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
 
--**Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
 
--**Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+- **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
--**Data.type** -Type of the logged event, e.g. Trace, Error, Event
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
 
--**Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
 
--**Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
 
--**Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
 
--**Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+- **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
--**Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
 
--**Data.version** -The version of the service (Profile Card)
+- **Data.version** -The version of the service (Profile Card)
 
--**Data_hostAppRing** - The rollout ring of the persona card
+- **Data_hostAppRing** - The rollout ring of the persona card
 
--**Event_ReceivedTime** - The time the event was logged in the service
+- **Event_ReceivedTime** - The time the event was logged in the service
 
 #### Office.LivePersonaCard.UserActions.ConfigurationSetAction
 
