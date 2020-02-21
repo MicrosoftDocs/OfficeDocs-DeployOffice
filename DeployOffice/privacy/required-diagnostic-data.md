@@ -8481,6 +8481,130 @@ The following fields are collected:
 
 Poor response time or performance for scenarios such as application start up or opening a file.
 
+#### android_frame_metrics
+
+Allows us to detect and fix situations where our Android app components are causing performance issues, for example, if your inbox is not scrolling smoothly.
+
+The following fields are collected: 
+
+- **animation_duration** - duration of animation rendering in milliseconds
+
+- **command_issue_duration** - duration to issue commands to the platform in milliseconds 
+
+- **draw_duration** - duration of drawing the UI in milliseconds 
+
+- **input_handling_duration** - duration of input handling in milliseconds 
+
+- **layout_measure_duration** - duration of measuring the layout in milliseconds
+
+- **origin** - the app component that is being measured, for example calendar or mail
+
+- **sync_duration** - duration to sync the frame in milliseconds
+
+- **swap_buffers_duration** - duration to swap buffers in milliseconds
+
+- **total_duration** - total duration of the frame rendering in milliseconds
+
+- **unknown_delay** - delay caused by unknown sources other than the explicitly tracked durations
+
+#### cal_component
+
+This event lets us detect and fix issues where there is perceivable performance impact on our calendar UI components that would cause your calendar to have scrolling issues.
+
+The following fields are collected: 
+
+- **account_counter** - tracks the number of accounts associated for each type of calendar, e.g. 2 for Gmail calendar and whether that account is using our new sync service
+
+- **component_name** - Tells us the name of the calendar component such as Agenda view or Day view to help us detect performance issues impacting a specific component in the calendar
+
+- **display_frame_data** - Tracks the time spent on displaying every 60 frames to determine if there are performance issues. 
+
+- **orientation** - Tells us whether the device was in portrait or landscape mode to help us detect performance issues impacting a specific device orientation
+
+- **view_duration** - Tells us how long it took to render the various UI calendar components to help us detect performance issues impacting your calendar experience
+
+#### conversation_load_time
+
+This event lets us detect and fix issues where there is perceivable performance impact on loading your email conversations to ensure your emails are loading as expected.
+
+The following fields are collected: 
+
+- **cid_type** - indicates what type of the account the CID belongs to
+
+- **time** - Tells us the amount of time that it has taken for the email conversation to complete loading.
+
+#### core_data_migration
+
+Allows us to detect and fix situations where there was an error in updating email data on your device to a newer version.
+
+The following fields are collected:
+
+- **db_size_megabytes** - tracks the size of the core data database rounded to the nearest 25 megabytes and with a maximum megabyte of 500
+
+- **db_wal_size_megabytes** - tracks the size of the core data database when the main store file is untouched rounded to the nearest 1 megabytes and with a maximum megabyte of 10
+
+- **free_space_megabytes** - tracks the free space available in buckets 10, 100, 1000, 10,000, and then 100,000. 
+
+- **migration_duration_seconds** - tracks the migration duration rounded to one of these time slots - 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 (180 and beyond should just be 180)
+
+#### core_data_performance
+
+Allows us to detect and fix situations where the email data we're storing on your device is causing performance issues.
+
+The following fields are collected:
+
+- **Caller** - tracks the entity name that calls the save operation
+
+- **db_size_megabytes** - tracks the size of the core data database rounded to the nearest 25 megabytes and with a maximum megabyte of 500
+
+- **duration** - tracks the amount of time it takes to complete the operation
+
+- **entity** - tracks the entity name that called the fetch operation
+
+- **operation** - raw value of operation either save, fetch, or “read write queue blocked”
+
+#### inbox_component
+
+This event lets us detect and fix issues where there is perceivable performance impact on your inbox UI components which would cause email messages, avatar, read/unread state to not load or display properly.
+
+The following fields are collected: 
+
+- **above_40fps** - count of frames rendered above 40fps
+
+- **above_50fps** - count of frames rendered above 50fps
+
+- **above_55fps** - count of frames rendered above 55fps
+
+- **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
+
+- **ad_not_shown_reason** - reason why ads are not being shown
+
+- **ad_shown** - whether an ad was shown (if ads are enabled)
+
+- **age** - age of the person (used to confirm compliance with age limitations on ads)
+
+- **component_name** - the name of the component/view which is active during the filtering
+
+- **has_hx** - whether the device has at least one Hx (our new email syncing service) account
+
+- **has_subscription** - whether the device has an ads subscription
+
+- **is_all_accounts_inbox** - whether the current inbox is the “all accounts” folder
+
+- **is_current_account** - whether the current active account is the ads account
+
+- **load_error_code** - error code when loading ads
+
+- **network_error_code** - network error code when requesting ads
+
+- **orientation** - the screen orientation at the time of the even (portrait or landscape)
+
+- **sub_error_type** - detailed error type
+
+- **total_count** - total frames displayed by the component
+
+- **view_duration** - how long the component was viewed by the user
+
 #### Initial_page_landing 
  
 This event helps track the type of experience that users see when they land in our application page.  This data is used to determine the traffic of users piped into each experience in our application and also helps us to easily consolidate experimentation results.
@@ -8572,6 +8696,50 @@ This event denotes that an error is thrown by the json parser.  We will be able 
 The following fields are collected: 
 
 - **Error** - This consists of the error message that the error object returns.
+
+#### mail_filter_component
+
+This event lets us detect and fix issues where there is perceivable performance impact on your mail filtering experience which would cause your filters to not load or display properly.
+
+The following fields are collected: 
+
+- **above_40fps** - count of frames rendered above 40fps
+ 
+- **above_50fps** - count of frames rendered above 50fps
+ 
+- **above_55fps** - count of frames rendered above 55fps
+ 
+- **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
+ 
+- **ad_not_shown_reason** - reason why ads are not being shown
+ 
+- **ad_shown** - whether an add was shown (if ads enabled)
+ 
+- **age** - age of the person (used to confirm compliance with age limitations on ads)
+ 
+- **component_name** - the name of the component/view which is active during the filtering
+ 
+- **folder_type** - the type of folder which is being filtered (e.g. Inbox, Trash, NonSystem)
+ 
+- **has_hx** - whether the device has at least one Hx (the new email syncing service) account
+ 
+- **has_subscription** - whether the device has an ads subscription
+ 
+- **is_all_accounts_inbox** - whether the current inbox is the “all accounts” folder
+ 
+- **is_current_account** - whether the current active account is the ads account
+ 
+- **load_error_code** - error code when loading ads
+ 
+- **network_error_code** - network error code when requesting ads
+ 
+- **orientation** - the screen orientation at the time of the even (portrait or landscape)
+ 
+- **sub_error_type** - detailed error type
+ 
+- **total_count** - total frames displayed by the component
+ 
+- **view_duration** - how long the component was viewed by the user
 
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
@@ -9078,6 +9246,67 @@ The following fields are collected:
   - **Data\_Tag: string -** unique identifier to identify Save AS event
 
   - **Data\_WasSuccessful: bool -** true if open as was successful
+
+#### OneNote.Sync.ProvisioningCompleted
+
+The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
+
+The following fields are collected: 
+
+- **AppSuspendedDuringEvent** - Returns Boolean to indicate if app was suspended during provisioning
+
+- **NetworkConnection** - The type of network connectivity of the device in use
+
+- **NetworkDataExchange** - Records the number of bytes exchanged during provisioning.
+
+- **ServerType** - Returns the type of the server offering the service
+
+- **TimeTakenInMilliSeconds** - Returns time taken to complete provisioning in millisecond
+
+#### OneNote.Sync.ProvisioningStarted
+
+The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health
+
+The following fields are collected: 
+
+- **NetworkConnection** - The type of network connectivity of the device in use
+
+- **ServerType** - Returns the type of the server offering the service
+
+#### perf_event
+
+Used for monitoring possible negative impact on performance of loading different parts of the app, for example to ensure when you first open the app, your inbox loads as quickly as possible.
+
+The following fields are collected: 
+
+- **app_start_show_message_list** - that means there was a performance issue with the app start-up causing your inbox message list to take a long time to load
+
+- **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
+
+- **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, i.e. when did this action start and end, etc. 
+
+- **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
+
+#### performance_record
+
+Allows us to detect and fix situations where the app memory usage and CPU usage becomes critically high which could cause your device to slow down
+
+The following fields are collected: 
+
+- **category** - Tells us if the app is in the foreground or background at the time. Possible values include foreground and background.
+
+- **cpu_usage** - Tells us how much CPU was used by the app so we have something to compare, to help us understand the negative performance impact
+
+- **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it is installed to help us understand the negative performance impact due to the Watch
+
+- **is_watch_paired** - Tells us if the user is currently using an Apple Watch and whether it is paired with the device to help us understand the negative performance impact due to the Watch
+
+- **is_watch_supported_and_active** - Tells us if the user is currently using an Apple Watch and whether it is active to help us understand the negative performance impact due to the Watch
+
+- **memoAry_used_percentage** - Tells us what percentage of memory was used by the app so we have something to compare, to help us understand the negative performance impact
+
+- **memory_used** - Tells us how much memory was used by the app so we have something to compare, to help us understand the negative performance impact
+
 
 ### *Application activity error subtype*
 
