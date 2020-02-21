@@ -16,11 +16,11 @@ description: "The Office cloud policy service is a cloud-based service that enab
 
 # Overview of the Office cloud policy service for Office 365 ProPlus
 
-The Office cloud policy service is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus or Office for the web. You can also enforce some policy settings for Office for the web, both for users who are signed in and users who access documents anonymously.
+The Office cloud policy service is a cloud-based service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus or Office for the web. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 
-The Office cloud policy service is part of a portal for managing Office 365 ProPlus and includes many of the same user-based policy settings that are available when using Group Policy on Windows Server. You can also use the Office cloud policy service in the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), which means you can create and manage Office app policies directly within the Endpoint Manager portal.  
+The Office cloud policy service is part of a portal for managing Office 365 ProPlus. The service includes many of the same user-based policy settings that are available in Group Policy. You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).  
 
-Security Policy Advisor, which can be used with Office cloud policy service, is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
+Security Policy Advisor, which can be used with Office cloud policy service, is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
 
 
 ## Requirements for using the Office cloud policy service
