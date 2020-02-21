@@ -5970,9 +5970,9 @@ The following fields are collected:
 
 - **initial_activity_name** - the Android Activity which launched the app
 
-- **manufacturer - the device manufacturer
+- **manufacturer** - the device manufacturer
 
-- **model - the device model
+- **model** - the device model
 
 - **on_create_millis** - time taken in the onCreate() method
 
