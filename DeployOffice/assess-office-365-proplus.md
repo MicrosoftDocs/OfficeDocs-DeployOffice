@@ -47,7 +47,6 @@ Review your network capability, including bandwidth and distribution of client d
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 - Office 365 updates vary in size, but you can review recent download sizes [here](https://docs.microsoft.com/officeupdates/download-sizes-office365-proplus-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the Internet and your client devices, including those in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
-- Test your network configuration and performance with connectivity.office.com
  
 ## Step 4 - Assess application compatibility
 
@@ -64,7 +63,7 @@ To complete that assessment, do the following:
 
 3. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Office 365 ProPlus. 
 
-4. If your organization has System Center Configuration Manager 1910 you can utilize the new Health Dashboard features covered in detail here:https://docs.microsoft.com/en-us/configmgr/core/plan-design/changes/whats-new-in-version-1910#bkmk_o365
+4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Office 365 ProPlus deployment. For more information, see [https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1910#bkmk_o365).
 
 As part of your Office deployment, you will deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Office 365 ProPlus and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more details, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).  
 
