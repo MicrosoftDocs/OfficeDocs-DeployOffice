@@ -10161,7 +10161,125 @@ The following are the data subtypes in this category:
 
 ### *Device connectivity and configuration subtype*
 
-Network connection state and device settings, such as memory.​
+Network connection state and device settings, such as memory.
+
+#### application_did_receive_memory_warning
+
+This event is sent when Apple tells us that the application is running out of memory. It tells us that we have introduced an issue with memory management on your device.
+
+The following fields are collected: 
+
+- **current_memory_used** - Tells us the amount of memory used by the application at the point the application has run out of memory.
+
+- **current_memory_used_percentage** - Tell us the percentage of memory used by the application out of the total memory available at the point the application has run out of memory.
+
+- **currentVC** - Tells us the view that is currently showing when the application has run out of memory.
+
+- **has_hx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
+
+- **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it is installed to help us understand the negative performance impact due to the Watch
+
+- **is_watch_paired** - Tells us if the user is currently using an Apple Watch and whether it is paired with the device to help us understand the negative performance impact due to the Watch
+
+- **is_watch_supported_and_active** - Tells us if the user is currently using an Apple Watch and whether it is active to help us understand the negative performance impact due to the Watch
+
+- **rn_initialized** - Tell us if React Native has been initialized at the point the application has run out of memory.
+
+- **running_time** - Tell us the amount of time that app has spent running at the time the application has run out of memory.
+
+#### conversation_memory_leak
+
+Allows us to detect situations where our email conversation view is causing us to use up more memory on your device that expected.
+
+The following fields are collected:
+
+- No fields or added data are collected. Only logs are collected if there is a memory leak related to a conversation thread.
+
+#### core_data_corruption
+
+Allows us to detect situations where we cannot show you your email or calendar because where we store your email on your device has become corrupted.
+
+The following fields are collected:
+
+- **errorSource** - indicates whether it came from a save or create action
+
+- **sqlError** - numerical error code listed at https://www.sqlite.org/c3ref/c_abort.html
+
+#### core_data_corruption_user_reset
+
+Allows us to detect situations where you have deleted or reset your account in our app and it was caused by a corruption in email data we've stored on your device.
+
+The following fields are collected:
+
+- **errorSource** - dictates where the corruption occurred whether during save or create
+
+#### core_data_diagnostics 
+
+Allows us to detect and fix situations where our email storage is using up too much of your device storage space
+
+The following fields are collected:
+
+- **db_size_megabytes** - tracks the size of the core data database rounded to the nearest 25 megabytes and with a maximum megabyte of 500
+
+#### general_properties_log
+
+This event collects information that allows us to categorize and classify issues within the Outlook app that are related to accessibility and device settings.  This categorization is necessary to prioritize the impact of issues on customers.
+
+The following fields are collected for iOS only:
+
+- **bold_text** - Tells us if the device has bold text turned on to help us detect issues related to bold text
+
+- **closed_captioning** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
+
+- **darker_system_colors** - Tells us if the user has turned on darkening of system colors on their device to help us detect issues related to this setting
+
+- **gray_scale** - Tells us if the user has turned on gray scale on their device to help us detect issues related to this setting
+
+- **guided_access** - Tells us if the user has turned on guided access on their device to help us detect issues related to this setting
+
+- **invert_colors** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
+
+- **mono_audio** - Tells us if the user has turned on the setting for mono audio on their device to help us detect issues related to this setting
+
+- **reduce_motion** - Tells us if the user has turned on the setting for reducing motion on their device to help us detect issues related to this setting
+
+- **reduce_transparency** - Tells us if the user has turned on the setting to reduce transparency on their device to help us detect issues related to this setting
+
+- **speak_screen** - Tells us if the user has turned on the setting for mono audio on their device to help us detect issues related to this setting
+
+- **speak_selection** - Tells us if the user has turned on the setting for Speak Selection on their device to help us detect issues related to this setting
+
+- **switch_control** - Tells us if the user has turned on the setting for Switch Control on their device to help us detect issues related to this setting
+
+- **voice_over** - Tells us if the user has turned on the setting for voiceover on their device to help us detect issues related to this setting
+
+The following fields are collected for Android only:
+
+- **braille** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
+
+- **caption** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
+
+- **color_inversion** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
+
+- **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
+
+- **large_text** - Tells us if the device has large text setting turned on to help us detect issues related to this setting
+
+- **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
+
+- **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
+
+- **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
+
+- **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
+
+#### low_storage_warning
+
+This is needed to monitor if our app suddenly takes up most of your device storage due to high memory usage by indicating when the device is low on storage
+
+The following fields are collected: 
+
+- **free_bytes** - the amount of free storage space available on the device​
 
 #### Office.AirSpace.AirSpaceLocalBlocklistDriverUpdated
 
