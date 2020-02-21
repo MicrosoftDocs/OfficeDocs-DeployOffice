@@ -73,6 +73,17 @@ You can see these events by using the Diagnostic Data Viewer.
 
 These diagnostic data events are collected when Office attempts to acquire an authentication token, either silently or through prompting.
 
+### Office.Andorid.MSAGuestToAAD
+
+This event helps in understanding how many users are getting prompted for providing personal account password, while accessing work resource, as their personal account could be a valid guest to work account's tenant.
+
+This data helps us understand how many users are going through the pain of sign in re-prompts to prioritize AAD token acquisition silently based on a Microsoft account SAML (Security Assertion Markup Language) assertion.
+
+The following fields are collected:
+
+- **Tag** - Indicates that user got sign-in prompt for personal account, while accessing work account resource.
+
+
 ### Office.Identity.FbaPromptWin32
 
 Collected when Office shows the user a Forms-Based-Auth sign-in prompt.
@@ -81,7 +92,7 @@ Along with silent token acquisitions, authentication prompts is used to determin
 
 Forms-Based-Auth (FBA) sign-in prompts are used for some on-premises authentication scenarios and typically we want to make sure this isn’t happening, as everyone should be using Modern-Auth because of security vulnerabilities associated with FBA.
 
-**The following fields are collected:**
+The following fields are collected:
 
   - **AuthScheme** - the authentication scheme used
 
@@ -2688,6 +2699,11 @@ Reports on the machine-impactful actions taken, as determined by the reasoned-ov
 
 - **VersionToInstall –**	String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
+### Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+This event is used to acquire standard metadata on each run of the Inventory add-on, which is part of the Office Serviceability Manager and is used for inventory Office information on those machines for which an IT admin has opted in. The metadata of specific interest here is the session ID, and it is used for linking to other data stored within a per-tenant cloud service.
+
+This event contains no extra fields since only the metadata is relevant.
 
 ### Office.ServiceabilityManager.InventoryAddon.Results
 
