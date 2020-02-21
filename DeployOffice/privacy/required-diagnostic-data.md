@@ -7791,23 +7791,11 @@ This event indicates Office Word reads aloud the text in the document. The event
 
 The following fields are collected:
 
-  - **Data\_CharacterCount -** character count of the document
-
-  - **Data\_CharactersWithSpaceCount -** character and space count of the document
-
-  - **Data\_IsPageCountInProgress -** is the page count in progress
-
-  - **Data\_LineCount -** line count of the document
-
-  - **Data\_PageCount -** page count of the document
-
   - **Data\_ParagraphCount -** paragraph count of the document
 
   - **Data\_Play -** Is this the first time for Word to read aloud
 
   - **Data\_ViewKind -** view type of the document
-
-  - **Data\_WordCount -** word count of the document
 
 #### Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
 
