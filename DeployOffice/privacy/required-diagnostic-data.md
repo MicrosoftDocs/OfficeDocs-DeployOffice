@@ -7916,6 +7916,109 @@ The following are the data subtypes in this category:
 
 Unexpected application exits and the state of the application when that happens​.
 
+#### app_startup_reason
+
+This event lets us detect and fix issues where Outlook crashed during app start up.  This event includes information on why the crash happened so we can fix the issue quickly.
+
+The following fields are collected: 
+
+- **app_background_time** - duration of how long app was in background last session
+
+- **startup_reason_type** - indicates why the app is starting up, this will indicate if it was due to force quit, or other reason. 
+
+- **watch_status_info** - keeps track of the following information, if applicable. 
+
+  - **is_watch_app_installed** - determines if the user has the Watch app installed
+
+  - **is_watch_paired** - determines if iOS device is paired to a watch
+
+  - **is_watch_supported_and_active** - indicates whether a watch is supportive and active during the session
+
+The following fields are collected for only Outlook Mobile for iOS:
+
+- **clean_exit_reason** - A string of words indicating why if there was a reason for the app stop
+
+- **is_agenda_user** - Indicates if the user has opened the agenda recently which indicates if we are writing disk on the startup
+
+- **is_watch_supported_and_active** - indicates whether a watch is supportive and active during the session
+
+
+#### application_crash
+
+Used for monitoring critical app crashes and helps us collect information on why the app has crashed and how to prevent it.
+
+The following fields are collected: 
+
+- **android.hardware.** - (e.g. android.hardware.bluetooth) Hardware configuration values provided by the Android platform
+
+- **android.software.** - (e.g. android.software.device_admin) Software configuration values provided by the Android platform
+
+- **android_version** - Device android version name as indicated by android.os.Build.VERSION#RELEASE
+
+- **application_package_name** - Application package name as indicated by android.content.Context#getPackageName()
+
+- **application_stack_trace** - the stack trace of the crash
+
+- **application_version_code** - Application version code defined by the Outlook app
+
+- **application_version_name** - Application version name defined by the Outlook app 
+
+- **com.** (e.g. com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Manufacturer specific configuration values provided by the Android platform
+
+- **device_brand** - Device brand (manufacturer or carrier) as indicated by android.os.Build#BRAND
+
+- **device_ID** - Device unique ID (IMEI)
+
+- **device_manufacturer** - Device manufacturer as indicated by android.os.Build#MANUFACTURER
+
+- **device_model** - Device model as indicated by android.os.Build#MODEL
+
+- **device_name** - Device name as indicated by android.os.Build#DEVICE
+
+- **device_total_memory** - Estimation of the total device memory size based on filesystem stats.
+
+- **glEsVersion** - OpenGL Embedded Systems version key
+
+
+#### crash_event
+
+Allows us to detect and fix situations where critical app crashes have occurred and helps us collect information on why the app has crashed and how to prevent it.
+
+The following fields are collected: 
+
+- **crashTime** - Date and time the crash occurred to help with investigation
+
+- **exceptionName** - The name of the exception that triggered the crash to help with investigation
+
+- **hasHx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
+
+- **incidentIdentifier** - A unique ID for the crash report so we can find the corresponding issue
+
+- **isAppKill** - Helps us understand if that app was killed or close on the device
+
+- **reportKey** - A unique ID for the application installation om the device for issue investigation
+
+- **signal** - A signal that caused the crash to give us more details to investigate this crash
+
+
+#### Error
+
+Allows us to understand the issues that mobile apps are facing when attempting to fetch privacy settings from the server.
+
+The following fields are collected:
+
+- **correlationId** - a unique identifier for a service connection that resulted in an error, allowing us to diagnose what might have gone wrong
+
+- **errorCode** - identifies the relevant error code received from the service that could be used to diagnose the problem
+
+- **exceptionType** - type of error that the library encountered when fetching the setting
+
+- **message** - identifies the error message received from the service
+
+- **roamingSettingType** - identifies the location from which we attempt to read settings
+
+- **settingId** - the setting that was attempted to be fetched
+
 #### Office.AppDomain.UnhandledExceptionHandlerFailed
 
 Collects information for any unhandled exceptions using the Data Streamer App. This data is used to monitor the health of the application. This event is generated by Microsoft Data Streamer for Excel Add-in.
@@ -8341,6 +8444,37 @@ The following fields are collected:
 - **Exception** - Call stack for the Exception
 
 - **Event Name** - Event Name is the Event Category and Event Label.
+
+#### telemetry_error
+
+This event lets us diagnose and fix issues that are preventing necessary diagnostic data from being generated or sent. These events let us understand if we are missing critical data needed to identify security issues or major issues with how your app is working.
+
+The following fields are collected: 
+
+- **timer_name** - Tells where the telemetry issue is happening, for example, in the mailbox component or the calendar. This helps us detect and resolve telemetry issues happening from a specific part of the app
+
+- **type** - tells us the type of timer error to help us detect when our app is having any issues with sending diagnostic telemetry data
+
+
+#### watchdog_anr
+
+Needed for monitoring app performance errors to prevent cases where the app stops responding, and your screen becomes frozen in the app (referred to as ANR - application not responding).
+
+The following fields are collected: 
+
+- **callstack** - the code callstack where the ANR occurred
+ 
+- **caused_restart** - whether the app was forced to restart because of the ANR
+ 
+- **duration** - the amount of time the device was frozen
+ 
+- **id** - a unique identifier for the ANR
+ 
+- **interval** - the configured threshold for triggering an ANR
+ 
+- **is_application_object_initialized** - whether the ANR happened after the app was fully initialized or before
+ 
+- **last_known_is_in_foreground** - whether the app was most recently in the foreground or background
 
 
 ### *Application feature performance subtype*
