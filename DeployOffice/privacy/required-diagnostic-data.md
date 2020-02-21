@@ -8949,6 +8949,63 @@ The following fields are collected:
 
 Errors in functionality of a feature or user experience.
 
+#### assertion
+
+This event lets us detect when critical app errors occurred that would cause your app to crash or experience serious issues like causing you to see empty rows in your inbox.
+
+The following fields are collected:
+
+- **count** - Total number of items associated with the error; for example, number of calendars that have errors
+
+- **has_hx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
+
+- **host_name** - the name of the service host that was involved in the error to help us detect issues related to a specific host
+
+- **host_type** - the type of host that was involved in the error to help us detect issues related to a specific host type
+
+- **message** - custom message for the assertion that is used to diagnose the issue 
+
+- **origin** - the origin of the error in the code to help us detect issues related to a certain part of the code
+
+- **stacktrace** - the stack trace where the assertion occurred to help us detect issues related to a certain part of the code
+
+- **type** - the type of assertion error that occurred, e.g. null_folder_name, compose_selected_null_account, to help us detect issues related to a certain part of the code
+
+#### edit_contact_error
+
+Allows us to detect and fix situations where errors were caused when you're trying to view or edit contacts through our app.
+
+The following fields are collected: 
+
+- **errorType** - the type of error that occurred to help us diagnose the issue
+
+- **field** - The contact field that the user was trying to edit to help us diagnose the issue
+
+- **version** - The version of the contact card service we are using to help us diagnose the issue
+
+#### error_report
+
+This event lets us detect when critical app errors occurred so that we can prevent issues that could cause your app to crash or prevent you from reading email. 
+
+The following fields are collected: 
+
+- **client-request-id** - the client request identifier for the request which caused the error
+ 
+- **date** - the datestamp of the request which caused the error
+
+- **error** - the type of error, e.g. get_mailbox_location_failed
+ 
+- **error_body** - the body of the error message
+ 
+- **is_x_mailbox_anchor_set** - whether the X-AnchorMailbox property was set on the request
+ 
+- **reason** - the reason for the error, i.e. an error message
+ 
+- **request-id** - the server request identifier for the request which caused the error
+ 
+- **source** - the source of the error within the OM infrastructure, typically one of 'BE' or 'FE'
+
+
 #### Office.AirSpace.Backend.Win32.GraphicsDriverSoftHang 
 
 Helps Microsoft separate long video card driver hangs from short ones, which in turn helps make decisions about which video card drivers may be having problems. The user's video card driver has caused Office to hang, but the impact of the hang is not known yet
@@ -9945,6 +10002,20 @@ The following fields are collected:
 - **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
+
+#### save_error
+
+Allows us to detect and fix situations where there was an error when you attempted to save a file.  It tracks errors caused by failures to save a file, including a descriptive error message to help us resolve the issue.
+
+The following fields are collected: 
+
+- **error** - The type of error that happened to help us detect and resolve issues related to a specific error type
+
+- **file_type** - The type of file the user tried to save (such as .doc)
+
+- **origin** - Where the file save attempt originated from (such as from an email) so we can detect issues associated with saving a file from a specific place in the app
+
+- **token_type** - the type of token used to authenticate the account in order to save the file to help us detect authentication issues associated with saving a file
 
 
 ## Device connectivity and configuration​ data events
