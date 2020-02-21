@@ -5954,6 +5954,54 @@ The following fields are collected:
 
 Determination if specific feature events have occurred, such as start or stop, and if feature is running​.
 
+#### app_startup
+
+This event lets us detect and fix issues where Outlook is starting slowly or incompletely, making it difficult for users to use our app.  This includes information on the specific features that were enabled and how long parts of the startup took.
+
+The following fields are collected: 
+
+- **attach_base_context_millis** - time between the base Context starting and onCreate() starting
+
+- **device_ram_in_mb** - the RAM available on the device
+
+- **has_company_portal** - whether the company portal app is installed
+
+- **hx_okhttp_mode** - whether the new email syncing service component is using OKHttp for sending and receiving HTTP-based network requests
+
+- **initial_activity_name** - the Android Activity which launched the app
+
+- **manufacturer - the device manufacturer
+
+- **model - the device model
+
+- **on_create_millis** - time taken in the onCreate() method
+
+- **on_resume_millis** - time taken in the onResume() method
+
+- **time_until_attach** - time between the class loading and the base Context starting
+
+- **total_millis** - total time from class loading start to Android Activity resume completion
+
+#### boot_time 
+
+This event lets us detect when critical app errors occurred that would cause your app to crash or experience serious issues like causing you to see empty rows in your inbox. This event collects information that allows us to categorize and classify issues to help prioritize the impact of issues on customers.
+
+The following fields are collected:
+
+- **black_list_reason** - Tells us if there is a reason why we should disregard this data. Some examples include launching due to a remote notification and launching due to a background fetch.
+
+- **step0_main** - Tells us the amount of time it has taken for Outlook to get to the “main” step, which is a step defined by Apple.
+
+- **step1_appWillFinishLaunching** - Tells us the amount of time it has taken for Outlook to go from the “main” step to the “appWillFinishLaunching” step, which is a step defined by Apple.
+
+- **step2_appDidFinishLaunching** - Tells us the amount of time it has taken for Outlook to go from the “appWillFinishLaunching” step to the “appDidFinishLaunching” step, which is a step defined by Apple.
+
+- **step3_engineStarted** - Tells us the amount of time it has taken for Outlook to go from the “appDidFinishLaunching” step to starting the engine of the app, which handles storing and syncing data.
+
+- **step4_runLoopFirstIdle** - Tells us the amount of time it has taken for Outlook to go from the “engineStarted” step to having no additional work to complete.
+
+- **total_time** - Tells us the total amount of time it has taken for Outlook to complete the boot process.
+
 #### DnsLookupOp
 
 Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when DNS information lookup operation is performed. 
@@ -6083,6 +6131,14 @@ The following fields are collected:
 - **RMS.Url** - The URL of Rights Management Service Server
 
 - **RMS.WinhttpCallbackStatus** - The status of winhttp call back result
+
+#### Initialized
+
+Allows us to analyze the health of the interface that allows mobile apps to fetch user and privacy settings from Office services and diagnose connectivity and privacy setting service issues.
+
+The following fields are collected:
+
+- **roamingSettingType** - identifies the location from which we attempt to read settings
 
 #### IpcCreateOauth2Token
 
