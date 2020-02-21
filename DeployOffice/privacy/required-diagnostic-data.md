@@ -1300,6 +1300,337 @@ The following are the data subtypes in this category:
 
 Success of application functionality. Limited to opening and closing of the application and documents, file editing, and file sharing (collaboration).​
 
+#### account_action
+
+Needed to ensure account configuration is operating successfully and is used to monitor health of account creation, ability to add new email accounts, and monitor soft account resets 
+
+The following fields are collected: 
+
+- **account_calendar_count** - how many calendars the account has
+ 
+- **action** - type of action performed, e.g. create_account, delete_account.
+ 
+- **duration_seconds** - duration of the action
+ 
+- **entry_point** - entry point of the action, how the user started the action
+ 
+- **has_hx** - whether the device has an account that is using our new mail syncing service, not necessarily the account that the action was performed upon
+ 
+- **is_hx** - is the account using our new mail syncing service
+ 
+- **is_shared_mailbox** - whether the action pertains to a shared mailbox
+ 
+- **number_of_accounts** - total number of accounts that the action is performed on
+ 
+- **result** - result for the action, e.g. success, failure.
+   
+- **server_type** - the server type for the account, similar to account_type
+ 
+- **shared_type** - type of shared account (if the account is shared)
+ 
+- **scope** - the scope of the action; for delete account, this_device or all_devices
+ 
+- **total_calendar_accounts** - count of calendar accounts in the app at time of action
+ 
+- **total_email_accounts** - count of email accounts in the app at time of action
+ 
+- **total_file_accounts** - count of file accounts in the app at time of action
+
+#### app_error
+
+Tracks critical app errors used so that we can prevent issues that could cause your app to crash or prevent you from reading email.
+
+The following fields are collected: 
+
+- **clientName** - The name of the client for the cloud file where the error occurred, if applicable.
+
+- **cloudfile_error_type** - The type of error that occurred for the cloud file, if applicable.
+
+- **cloudfile_response_name** - The response name for the error that occurred for the cloud file, if applicable.
+
+- **component_name** - The name of the component of the app where the error occurred, such as mail or calendar.
+
+- **debug_info** - Information on the error that occurred for the cloud file in order to be able to determine why the error happened.
+
+- **error_origin_identifier** - Origin of the error that occurred on the draft that the error occurred, if applicable.
+
+- **error_type** - The type of error that occurred. Some examples include save draft, send draft, and cloud file error.
+
+- **exrule** - the extended rule value (only applies to appointment recurrence errors)
+
+- **exdate** - the extended rule date (only applies to appointment recurrence errors)
+
+- **has_attachments** - Reflects if the draft the error occurred on has attachments, if applicable.
+
+- **is_IRM_protected** - Reflects if the draft the error occurred on is protected by information rights management, if applicable.
+
+- **is_legitimate** - Reflects if the error comes from a programming error or not. Programming errors are considered non-legitimate.
+
+- **is_local** - Reflects if the draft the error occurred on has synced to the server, if applicable.
+
+- **is_recoverable** - Reflects if the error can be recovered from or if it is a fatal error.
+
+- **rdate** - the date of the recurrence rule (only applies to appointment recurrence errors) 
+
+- **rrule** - the recurrence rule itself (only applies to appointment recurrence errors) 
+
+- **rrule_error_message** - recurrence rule parsing error message (only applies to appointment recurrence errors)
+
+- **rrule_error_type** - recurrence rule parsing error type (only applies to appointment recurrence errors)
+
+- **status_code** - The status code of the error that occurred. This helps us understand the cause of the error.
+
+All characters are also possible properties. This helps us understand the characters in the body of the draft message when the error occurred. For example, “a”, “b”, “c” are possible properties.
+
+#### app_launch_report
+
+This event lets us detect and fix issues where Outlook is starting slowly or incompletely, making it difficult for users to use our app. This includes information on the specific features that were enabled and how long parts of the startup took.
+
+The following fields are collected: 
+
+- **is_agenda_widget_active** - Tells us if the agenda widget is active.
+
+- **is_alert_available** - Tell us if the app has been configured to allow alerts in notifications.
+
+- **is_background_refresh_available** - Tells if the app has been configured to be able to refresh in the background.
+
+- **is_badge_available** - Tell us if the app has been configured to allow badges in notifications.
+
+- **is_intune_managed** - Tell us if the app is managed by Intune.
+
+- **is_registered_for_remote_notifications** - Tell us if the app has been registered for remote notifications.
+
+- **is_sound_available** - Tell us if the app has been configured to allow sounds in notifications.
+
+- **is_watch_app_installed** - Tells us if the watch Outlook app has been installed.
+
+- **is_watch_paired** - Tell us if the watch Outlook app is paired with the main Outlook app.
+
+- **launch_to_db_ready_ms** - Tell us the amount of time the Outlook app spent from launch to the database being ready.
+
+- **num_calendar_accounts** - Tells us the number of calendar accounts in the app.
+
+- **num_cloud_file_accounts** - Tells us the number of storage accounts in the app.
+
+- **num_hx_calendar_accounts** - Tells us the number of calendar accounts in the app that connect to our new mail syncing service.
+
+- **num_hx_mail_accounts** - Tells us the number of mail accounts in the app that connect to our new mail syncing service.
+
+- **num_mail_accounts** - Tells us the number of mail accounts in the app.
+
+#### calendar_action
+
+Used for monitoring any possible negative impact on your ability to perform core calendar actions like creating or editing events.  The event could also include a series of property names and if they have changed or not. For example, “title_changed”, “online_meeting_changed”, and “description_changed” are property names that are included to help us understand if there are any issues with editing certain properties.
+
+The following fields are collected: 
+
+- **account_sfb_enabled** - Helps us make sure that Skype for Business is configured correctly. 
+
+- **action** - The type of action that was performed on the calendar. This includes things like open, editing, adding shortcut, snooze, etc. Helps us ensure our calendar experience is functioning as expected and nothing has broken 
+
+- **action_result** - Result of the action taken on calendar components. This can include values such as success, failure, unknown, and timeout. Used to track the success rate of actions and determine if there is a widespread issue with calendar actions. 
+
+- **attendee_busy_status** - The free/busy status of the attendee that the action is related to. This value can be free, busy, or tentative. Helps us understand if there is an issue with actions related to a certain busy status. 
+
+- **availability** - The availability value if the free/busy value has changed on the meeting. Helps us understand if there are issues with setting a certain availability value. 
+
+- **calendar_onlinemeeting_default_provider** - Contains the default online meeting provider for use with server-supported online meeting creation. This includes types of Skype, Skype for Business, Hangout, and Teams for Business. Helps us diagnose potential issues with creating online meetings on certain providers. 
+
+- **calendar_onlinemeeting_enabled** - True if the calendar supports server-supported online meeting creation based on a default online meeting provider. Helps us understand if there are any issues with online meeting enabled calendars. 
+
+- **calendar_type** - The type of calendar an event is on after the user has edited the meeting. Possible values include primary, secondary, shared, and group. Helps us understand if there are issues with a certain calendar type. 
+
+- **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
+
+- **distribution_list_count** - Number of attendees which are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
+
+- **guest_count** - The number of guests on the meeting.  Helps us make sure that the guests are being added correctly. 
+
+- **is_all_day** - Used along with “meeting_duration” to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
+
+- **is_organizer** - Helps us understand if meetings are able to be edited and created by the organizer correctly. 
+
+- **is_recurring** - Helps us understand if there is an issue that specifically impacts recurring meetings. 
+
+- **launch_point** - The launch point of the action. Can be values such as widget header, widget footer, widget all day, and calendar shortcut. Helps us understand the context that the action was started from. 
+
+- **location_count** - Number of locations that are set on event create and edit. Helps us understand if there are any issues with creating or editing events with a certain number of locations. 
+
+- **location_selection_source_type** - Type of the location selection source. This can include values such as location suggestion, custom, and existing. Helps us diagnose any issues with selecting a location from a certain source. 
+
+- **location_session_id** - ID of the meeting location chooser session. Helps us diagnose any issues with choosing a location to add to the meeting. 
+
+- **location_type** - The type of location selected.  Contains types such as custom location, conference room, and Bing. Helps us understand issues with adding certain location types to the meeting. 
+
+- **meeting_duration** - The length of the meeting.  Helps us make sure that the meetings are being configured with the correct times. 
+
+- **meeting_insights_type** - The type of meeting insights in the event details.  This includes file and message. Helps us understand the number of meeting insights that are being shown. 
+
+- **meeting_type** - The type of online meeting associated with the action.  This includes types of Skype, Skype for Business, Hangout, and Teams for Business. Helps us understand if the online meetings are configured correctly. 
+
+- **origin** - The origin of the calendar action. This includes types like agenda, calendar, widget agenda, etc. Helps us better ensure the interaction within the calendar components are working correctly 
+
+- **recurrence_scope** - The type of recurrence of the meeting, either occurrence or series.  Helps us understand if there are any issues with editing different meeting recurrence types. 
+
+- **reminder_time** - The reminder time of the meeting if it has changed.  Used to make sure the reminder time of the meeting is saved correctly. 
+
+- **reminders_count** - Number of reminders on the event if the reminders have changed. Helps us diagnose any issues with multiple reminders on an event. 
+
+- **sensitivity** - The sensitivity of the meeting. This includes types of normal, personal, private, and confidential. Helps us understand if the sensitivity of the meeting is being configured correctly. 
+
+- **session_duration** - The length that the session lasted in milliseconds. Helps us understand if there are issues that are increasing the amount of time needed to perform the calendar action. 
+
+- **shared_calendar_result** - The result of an action performed on a shared calendar. Possible values include ok, no permission, unknown, owner on-prem, and owner is group. Helps us understand the reliability of actions performed on shared calendars. 
+
+- **time_picker_origin** - Origin of the time picker for a save action. Includes values such as more options and fewer options. Helps us understand how the user navigated the flow to save the meeting and ensure that is functioning correctly 
+
+- **title** - The auto-suggested title from app-defined values. This includes values such as “Call”, “Lunch”, and “Skype”. Helps us understand if the title auto-suggestion is configured correctly. 
+
+- **txp** - The type of booking or reservation on the event, if any. This includes types like event reservation, flight reservation, car rental reservation, etc. Helps us understand if the booking/reservation cards are performing correctly. 
+
+- **upcoming_event_count** - The number of upcoming events displayed in the upcoming events view. Helps us understand if there are issues with the upcoming events view. 
+
+- **upcoming_event_seconds_until_event** - The number of seconds until the next upcoming event starts. Helps us understand the typical events that are shown in the upcoming events view. 
+
+- **value** - Action-specific detail such as alert delay length or repeat-until category. Helps us understand the context that the action was performed. 
+
+#### combined_search_use
+
+Used for monitoring possible negative impact on your ability to perform key search functionality such as searching for mail, contacts, or events.
+
+The following fields are collected:  
+
+- **account_switcher_action_type** - This action type tracks if the user used the account switcher either in simply discovery or if they decided to switch the account
+
+- **action** - the type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, I.e. was the mic used. This is instrumental in ensuring accurate and helpful searches.
+
+- **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, I.e. was the mic used. This is instrumental in ensuring accurate and helpful searches. 
+
+- **answer_result_selected_count** - tracks how many times the search was “successful” I.e. did the user find the person they wanted? Composed an email? Bookmarked the message? 
+
+- **contact_result_in_full_list_selected_count** - tracks how many times the user asked to “see all contacts” in full list was selected during the combined search session
+
+- **contact_result_selected_count** - tracks how many contact results were selected during the combined search session
+
+- **conversation_result_selected_count** - tracks how many conversations were selecting during the combined sear search ach session
+
+- **entrance_type** - This determines how the user started the search query, from the search tab, zero query, search heading, or search result. 
+
+- **has_contact_results** - Simple whether contact results are shown or not in the search query
+
+- **include_deleted** - whether the search is showing deleted options in the search results 
+
+- **re_enter_search_tab** - Boolean to indicate whether a user has switched tabs before selecting a search result
+
+- **result_selected_type** - What type of data that was displayed is the user interacting with I.e. see all contact, conversations, event, etc. 
+
+- **search_conversation_result_data** - This contains data about the conversation selected from a search result including account type (hx, ac, etc.), whether the message is held by a cloud service, and whether the page offset shown is the same page as the first message. 
+
+- **search_origin** - Where did the search originate from, i.e. voice assistant, Cortana, keyboard input, etc. 
+
+- **search_request_reason** - Indicates the reason a search request was sent from the app, in effect indicating the component or user action which invoked a search.
+
+- **search_result_filter_type** - Indicates what type of filter was applied to search, show all or attachments only
+
+- **search_scope** - A string indicating what type of account the user was searching in (I.e. Exchange, Gmail, etc.) or if it was in All Accounts. 
+
+- **search_session_ended_type** - Indicates where a search ended because it was canceled or the updated was the query
+
+- **search_suggestion_type** - indicates what is behind the search suggestion, I.e. is a spell correction? Based on history? Autocomplete?
+
+- **see_all_contacts_selected_count** - tracks how many times “see all contacts” was selected during the combined search session
+
+- **top_mail_result_selected_count** - tracks how many times a user selects the top results provided to them. 
+
+#### compose_mail_accessory
+
+This event lets us detect and fix issues with key mail compose actions to prevent you from running into issues with attaching a file, taking a photo as an attachment, or sending your availability.
+
+The following fields are collected: 
+
+- **action** - Tells us the action that was attempted when the action is logged. Some examples include attaching a file and presenting more options.
+
+- **icon_name** - Tells us the name of the icon that is being shown when the action is logged.
+
+#### conversation_view_action
+
+Used for monitoring possible negative impact on your ability to view and reply to email messages
+
+The following fields are collected:
+
+- **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
+
+- **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
+
+- **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
+
+- **suggested_reply_click_pos** - Tells us which position the suggested reply (if available) is rendered so we can detect issues with a specific suggestion
+
+- **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
+
+#### conversation_view_action
+
+Used for monitoring possible negative impact on your ability to view and reply to email messages
+
+The following fields are collected:
+
+- **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
+
+- **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
+
+- **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
+
+- **suggested_reply_click_pos** - Tells us which position the suggested reply (if available) is rendered so we can detect issues with a specific suggestion
+
+- **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
+
+#### draft_action
+
+Used for monitoring possible negative impact on your ability to create and save mail drafts.
+
+The following fields are collected: 
+
+- **action** - the type of action, e.g. save, discard.
+ 
+- **draft_message_id** - message ID of the draft
+
+- **is_groups** - whether the draft is being sent to/from a group folder
+ 
+- **origin** - where draft was initiated, e.g. message detail, compose.
+ 
+- **thread_id** - thread ID of the conversation draft is associated with
+
+#### drawer_event
+
+Used for monitoring possible negative impact on your ability to access folders in your inbox
+
+The following fields are collected:
+
+- **add_calendar_option** - Indicates the type of calendar being added from the drawer i.e. interesting calendar, mail calendar, shared calendar, to help us detect issues related to specific calendar types
+
+- **calendar_accounts_count** - Indicates the number of calendar accounts to help us detect issues related to number of accounts you have
+
+- **calendar_apps_count** - Indicates the number of calendar apps present on the user’s device to help us detect issues related to calendar apps
+
+- **drawer_type** - Indicates the drawer type: calendar, mail or zero query to help us detect issues related to the drawer type
+
+- **from_favorites** - Indicates if the action was taken from favorites to help us detect issues related to favorites
+
+- **group_calendar_count** - Indicates the number of calendars for the account to help us detect issues related group calendars
+
+- **inbox_unread_count** - Indicates the number of unread messages in the inbox to help us detect issues with displaying inbox unread counts.
+
+- **interesting_calendar_accounts_count** - Indicates the number of accounts which are eligible for interesting calendars on the device to help us detect issues related to interesting calendars
+
+- **is_group_calendar** - Indicates if the calendar is a group calendar to help us detect issues related group calendars
+
+- **mail_folder_type** - Indicates the mail folder type i.e. inbox, drafts, etc. to help us detect issues related to folder types.
+
+- **mail_accounts_count** - indicates the number of mail accounts to help us detect issues related mail accounts.
+
+- **selected_group_calendar_count** - Indicates the number of group calendars which are selected and active in the UI
+
+- **visibility_toggle** - indicates if the user is turning on or off a given calendar to help us detect issues related to showing or hiding calendars
 
 #### IpcCreateRepublishingLicense
 
@@ -1782,6 +2113,259 @@ The following fields are collected:
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
 - **RMS.StatusCode** - Scenario Id defined by the API
+
+
+#### mail_action
+
+Used for monitoring possible negative impact on your ability to perform critical mail actions (like running mail threaded mode, ensuring mail triage actions work) to ensure our app is functioning properly for mail.
+
+The following fields are collected:
+
+- **account** - the account which performed the action
+
+- **action** - tracks what type of action was taking, i.e. archive, delete, mark as read, etc. 
+
+- **attachment_content_type** - the content type of the downloaded attachment 
+
+- **attachment_content_type_with_count** - tracks the number of attachments in email
+
+- **attachment_download_result** - the result (i.e. success/failure) for an attachment download action
+
+- **attachment_download_time** - the time for an attachment download action
+
+- **attachment_extn** - the file extension of the downloaded attachment
+
+- **attachment_id** - the system identifier for the downloaded attachment 
+
+- **attachment_size** - the size of downloaded attachment
+
+- **domain** - domain of the document being opened
+
+- **duration** - tracks how long the action took as human-readable English string (e.g. 1s, 4h)
+
+- **error** - error message associated with the action 
+
+- **event_mode** - what type of event mode it was in, groups or others. 
+
+- **Extension** - file extension of link or attachment associated with this action 
+
+- **internet_message_id** - tracking message ID
+
+- **is_group_escalation** - indicates whether the message the action was taken on was sent to the user's mailbox because of an escalation (subscribed to group)
+
+- **is_rule** - indicates if the mail action done is resetting a focused/other classification
+
+- **is_threaded_mode** - indicates whether the message was in threaded mode or not, i.e. how are the messages grouped
+
+- **is_unread** - indicates whether message is unread that the action was taken on
+
+- **left_swipe_setting** - indicates what action was a set to be the left swipe
+
+- **message_id** - server message id targeted for action, or comma-separated list if more than one item was in action.
+
+- **message_type** - indicates what type of message type the action was taken on** - group or other
+
+- **origin** - source of action, i.e. cell swipe, zero-query, deep link, email view, email list, etc.
+
+- **reported_to_msft** - after sending an email to junk (spam) or trash (phishing) they can choose to report their action to Microsoft.
+
+- **retry** - whether the action was retried
+
+- **right_swipe_setting** - indicates what action was a set to be the right swipe 
+
+- **shortcut** - indicates if a shortcut was used and what shortcut was used for scheduling a message i.e. later, tomorrow, choose time, etc.
+
+- **size** - size of link or attachment associated with this action
+
+- **source_folder** - tracks source folder type when action is indicating to move from one folder to other, i.e. to inbox, trash etc. 
+
+- **source_inbox** - indicates which inbox the mail action is taking place (i.e. focused, other, etc.) state - state of the action, i.e. success or point of failure
+
+- **target_folder** - indicates target folder type when moving emails from one folder to other
+
+- **thread_id** - thread id of the conversation targeted for action, or comma-separated list if more than one item was targeted
+
+- **time_taken_to_fetch_access_token** - time taken to fetch a system access token to use for opening a link
+
+- **time_taken_to_fetch_drive_item** - time taken to fetch a OneDrive resource when clicked
+
+- **time_taken_to_fetch_embed_viewer_resource** - time taken to initialize the embedded viewer when opening links
+
+- **time_taken_to_load_embed_viewer** - time taken to initialize the embedded viewer when opening links
+
+- **time_taken_to_load_link** - time a load link action takes to complete
+
+- **time_taken_to_tap_attachment** - the time between opening the message an clicking on the attachment
+
+- **time_taken_to_tap_link** - time the user took between viewing message and clicking a link
+
+- **txp** - indicates if there is a txp type of item associated with the mail that action was taken on, i.e. event reservation, flight reservation, etc. 
+
+- **type** - document type being opened via link
+
+#### mail_compose
+
+Used for monitoring possible negative impact on your ability to compose and reply to emails such as running into issues with reply-all, formatting your email, or sending your emails.
+
+The following fields are collected: 
+
+- **draft_message_id** - The draft id of the conversation being created as a draft to help us detect issues related to draft emails
+
+- **message_id** - The message id of the conversation being replied to or forwarded from to help us detect issues related to a specific message
+
+- **origin** - Tells us where the compose originated from, such as from a reply all, a new compose, or quick reply. Helps us detect issues associated with a specific reply origin type.
+
+- **is_group_escalation** - Whether the message is an escalated group message so we can detect compose issues related to groups.
+
+- **is_link** - Tells us if the new draft that was created was done from a link. Helps us detect issues associated with drafts created from links.
+
+- **is_force_touch** - Tells us if the new draft that was created was done from a force touch action. Helps us detect issues associated with drafts created from this specific action.
+
+- **is_groups** - Whether the event was started from the groups' space so we can detect compose issues related to groups.
+
+- **source_inbox** - Tells us the source inbox, such as whether it was a focused or other inbox
+
+- **thread_id** - The thread id of the conversation being replied to or forwarded from to help us detect issues related to a specific thread
+
+#### meeting_call_to_action
+
+Used for monitoring possible negative impact on your ability to perform critical meeting actions like creating, editing, and responding to meetings.
+
+The following fields are collected:
+
+-**event_mode** - Indicates whether this event was from a group or not to help us detect issues with group events
+
+-**meeting_id** - A meeting ID that helps us track issues throughout the lifetime of a meeting to help us detect issues with specific meetings
+
+-**meeting_provider** - Indicates the provider for an online meeting, e.g. Teams, Skype for Business to help us detect issues with specific online meeting providers
+
+-**notify_type** - Indicates the response type for other account types to help us detect issues with different account types
+
+-**recurrence** - Indicates how often this meeting occurs I.e. occurrence or series to help us detect issues with reoccurring meeting series
+
+-**response** - Indicates response type such as accept or decline on certain account types to help us detect issues with responding to events
+
+-**response_message_length** - Indicates how long the message length was to help us detect issues with meeting responses
+
+-**review_time_proposal_action_type** - Indicates a user response new time proposal to help us detect issues with proposing a new time
+
+-**send_response** - Indicates whether a response was sent to help us detect issues sending meeting invite responses
+
+-**txp** - Indicates what type of meeting it was generated from flight reservations and deliveries to help us detect issues with this type of meeting
+
+-**with_message_enabled** - Indicates whether a user can response with a message to help us detect issues with responding to meeting invites
+
+#### Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
+
+This event is collected for Office applications running under Android platform and records when a file open operation takes place. The event helps in keeping the file open operation secure, up- to- date and performing properly. The goal of collecting this data is to continuously improve the file open performance. 
+
+The following fields are collected:
+
+- **Data_AppDocsOperationDuration** - The duration spent in sub- layer during a file open operation.
+
+- **Data_AppDuration** - The duration spent in application processing during a file open operation. 
+
+- **Data_BootDuration** - The duration of application boot in process of the file open.
+
+- **Data_Doc_AccessMode** - An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** - An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** - An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** - An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** - File extension of the file.
+
+- **Data_Doc_Fqdn** - The server host name of the file.
+
+- **Data_Doc_FqdnHash** - A Globally Unique Identifier (GUID) that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** - A GUID that uniquely identifies the identity used to open a file. 
+
+- **Data_Doc_InitializationScenario** - An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** - An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** - Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** - Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** - Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** - Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** - Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** - An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** - An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** - A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** - An enumeration indicating type of real- time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** - A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** - An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** - An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** - An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** - An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** - A string used to correlate client- side and server- side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** - File size in bytes.
+
+- **Data_Doc_SpecialChars** - An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** - A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** - Whether or not the file was opened incrementally using pre- cached WRS data.
+
+- **Data_Doc_WopiServiceId** - A string indicating which service a Web Application Open Platform Interface Protocol (WOPI) file is from.
+
+- **Data_ErrorId_Code** - An error code indicating a failure in the data collection operation
+
+- **Data_ErrorId_Tag** - A tag in the code to help find the point of failure
+
+- **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
+
+- **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. UI element, trigged by another app, etc.
+
+- **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
+
+- **Data_OfficeMobileInitReason** - An enumeration indicating the entry point of file open. 
+
+- **Data_SilhouetteDuration** - The duration of rendering of the file open.
+
+- **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
+
+#### Office_Android_Intune_IntuneComplianceRequest
+
+This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign-in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It is used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office_Android_Intune_IntuneComplianceStatus, to ensure the configured policy is enforced. 
+
+No data fields are collected.
+
+#### Office_Android_Intune_IntuneComplianceStatus
+
+This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign-in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It is combined with another event, Office_Android_Intune_IntuneComplianceRequest, to ensure the configured policy is enforced.
+  
+The following fields are collected:
+
+- **Data_ComplianceStatus** - Indicates the compliance status of the application during sign-in with a success or failure error code.
+  - -1 – Unknown error
+  -	0 – The application is compliant with the organization policies
+  - 1 – The application is not compliant with the organization policies
+  - 2 – Service related failures
+  - 3 – Network related failures
+  - 4 – Application failed to retrieve authentication token 
+  - 5 – The response has not been yet received from the service
+  - 6 – The company portal application needs to be installed
 
 #### Office.Android.ODWXPSSO.Telemetry
 
@@ -3260,6 +3844,67 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
+
+#### Office.LivePersonaCard.UserActions.ClosedPersonaCard
+
+We log when the user closes a Persona Card.  The data is used to determine whether the card closed correctly. 
+
+The following fields are collected: 
+
+-**BatchId** - Globally unique identifier if a set of requests was made
+
+-**Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+
+-**Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+-**Data.AppInfo_Id** - Name of the host application
+
+-**Data.AppInfo_Version** - Version of the host application
+
+-**Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+-**Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+-**Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+-**Data.clientType** - The type of device the app is run on
+
+-**Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+-**Data.feature** - Used to group various events of the same feature (Profile card)
+
+-**Data.OTelJS.Version** - Version of OTel logger
+
+-**Data.properties** - Additional metadata collected for each event as follows:
+ - **ClientTimeStamp** - Time on the application when the event was logged
+ - **cardCorrelationId** - Duplicate of Data.appContextId above
+ - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+ - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
+ - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+ - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+ - **personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+-**Data.region** -The geographical region of the profile card backend service to which user is connected
+
+-**Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+-**Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+-**Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+-**Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
+
+-**Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+-**Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+-**Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+
+-**Data.version** -The version of the service (Profile Card)
+
+-**Data_hostAppRing** - The rollout ring of the persona card
+
+-**Event_ReceivedTime** - The time the event was logged in the service
 
 #### Office.LivePersonaCard.UserActions.ConfigurationSetAction
 
@@ -5857,6 +6502,12 @@ The following fields are collected:
 
 - **TIME_TAKEN_IN_MS** - time taken to open page
 
+#### OneNote.Capture.NewNote.NewNoteTaken
+
+This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
+
+No additional fields are collected.
+
 #### OneNote.MessageBar.MessageBarClicked 
 
 The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
@@ -5907,6 +6558,198 @@ The following fields are collected:
 
 - **RMS.VerifySignatureDuration** - Duration time to verify signature
 
+#### read_conversation
+
+Used for monitoring possible negative impact on the health and performance of rendering an email message
+
+The following fields are collected: 
+
+- **above_40fps** - count of frames rendered above 40fps
+ 
+- **above_50fps** - count of frames rendered above 50fps
+ 
+- **above_55fps** - count of frames rendered above 55fps
+
+- **adal_id** - the account’s active directory authentication ID, a unique identifier in the Microsoft authentication system 
+
+- **component_name** - the name of the component/view which is active during the filtering
+
+- **event_mode** - the place in the app that the user entered the conversation (groups or other)
+
+- **internet_message_id** - a tracking ID for the most recent message in the conversation
+      
+- **orientation** - the screen orientation at the time of the even (portrait or landscape)
+
+- **recent_message_id** - the ID of the most recent message in the conversation
+
+- **suggested_reply_state** - the state of suggested replies for this conversation (unavailable, available, shown, used, or discarded)
+  
+- **total_count** - total frames displayed by the component
+ 
+- **view_duration** - how long the component was viewed by the user
+
+#### save_attempt
+
+Allows us to identify the impact of issues caused by users attempting to save a file by evaluating the number of sessions impacted and if there are common features of those sessions.
+
+The following fields are collected: 
+
+- **file_type** - The type of file the user tried to save (such as .doc)
+
+- **origin** - Where the file save attempt originated from (such as from an email) so we can detect issues associated with saving a file from a specific place in the app
+
+- **token_type** - the type of token used to authenticate the account in order to save the file to help us detect authentication issues associated with saving a file
+
+#### send_message
+
+Used for monitoring possible negative impact on the performance and health of sending email messages.
+
+The following fields are collected:
+  
+- **account** - tracks the account which performed the action
+
+- **compose_duration** - tracks the total time user took to compose the message including multiple drafts session
+
+- **draft_message_id** - tracks the compose message ID of the message being sent
+
+- **event_mode** - tracks the event mode if applicable to the message, (“groups” or “other”)
+
+- **has_attachment** - indicates whether message has any attachments
+
+- **has_mip_label** - indicates whether a MIP label was stamped on the message or not
+
+- **is_group_escalation** - is this a group escalated message, “escalated message” is a message that was sent to the user's mailbox because of an escalation (subscribed to group)
+
+- **is_groups** - track whether message sent is a groups message or not
+
+- **key_stroke_count** - tracks the keystrokes count for the message that is being sent
+
+- **message_id** - tracks the message ID being replied/forwarded
+
+- **origin** - indicates where compose was initiated, i.e. new, reply, quick reply etc.
+
+- **send_draft_origin** - indicates where send was initiated, i.e. compose or quick reply
+
+- **source_inbox** - indicates source inbox type for reference message, 
+
+- **suggested_reply_state** - capturing suggested reply state i.e., unavailable, available, shown, used, discarded for this sent mail
+
+- **thread_id** - indicates thread ID of the conversation being replied/forwarded
+
+#### session
+
+Allows us to detect and fix situations where we are using up too much of your device's battery and helps us identify what could be the cause.
+
+The following fields are collected: 
+
+- **battery_level** - tells us the battery level on the device to help us detect when our app is causing a negative impact on your device’s battery level
+
+- **has_hx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
+
+#### settings_action
+
+Allows us to detect situations where there is possible negative impact on your ability configure your app settings, such as your notification settings, your primary mail account, and configuring your mail signature.
+
+The following fields are collected: 
+
+- **account_order_changed** - To check if you changed the order of your accounts to make sure this configuration works properly 
+
+- **action** - possible actions taken in settings, such as deleting an account to help us diagnose issues and ensure no negative impact
+
+- **auth_type** - The authentication type being used by the account, so we understand which backend sync layer we are using to help us diagnose issues 
+
+- **auth_type** - indicates the back-end authentication type allowing us to know if there is an issue with a particular account type
+
+- **badge_count_state** - indicates what type of badge count the user has asked for i.e. no badges, focused inbox only, etc. 
+
+- **changed_folder** - Capturing whether a folder was changed to help us diagnose issues. 
+
+- **changed_folder** - determines whether this action was archived, scheduled, or another action.
+
+- **delete_scope** - During an account deletion, whether you deleted the account from this device or from all devices with Outlook.  
+
+- **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
+
+- **enabled_state** - Whether your auto reply, save contacts, and block external images settings are configured correctly  
+
+- **enabled_state** - whether state related to the action is enabled
+
+- **notification_state** - indicates what type of badge count the user has asked for i.e. no badges, focused inbox only, etc.,
+
+- **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better. Examples** - Office365, Gmail, Outlook
+
+- **server_type** - indicates the back-end server type allowing us to know if there is an issue with a particular server type
+
+- **setting_properties** - Tracks properties relation to setting action 
+
+- **signature_setting** - indicates if the setting was applied to all account or an individual account
+
+- **source** - indicates what is the source of notifications, if applicable, from settings or do not disturb setting
+
+- **state_changed_to** - To check if your focused inbox on/off setting is configured correctly 
+
+- **swipe_action** - To check if you have configured any swipe actions for triaging emails to help us make sure this setting is working successfully 
+
+- **swipe_action** - indicates what the user was trying to do, i.e. flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
+
+- **swipe_direction** - To check if your swipe directions (left or right) are configured correctly
+
+- **swipe_direction** - indicates which way the user set up the swipe to be, i.e. left to right or right to left. This allows us to determine if there is a problem with a particular swipe direction.
+
+- **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
+
+- **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
+
+#### sidebar_action
+
+Allows us to detect situations where there is possible negative impact on your ability configure your app settings, such as your notification settings, your primary mail account, and configuring your mail signature.
+
+Data fields that are common for Outlook Mobile for this event on iOS and Android:
+
+- **Account** - tracks the account and its data associated with the event, values tracked in this data are in the common om field documentation 
+
+- **action** - tracks the type of side bar action occurred, i.e. dismissed, help button selected, mail side bar, etc., 
+
+- **from_favorites** - tracks if the action is coming from an item in favorites 
+
+- **mail_folder_type** - what type of folder was selected during the side bar action, if any.
+
+- **sidebar_type** - tracks the type of side bar associated with this event, i.e. mail or calendar to helps us ensure the navigation from the favorites setting works properly
+
+The following fields are collected: 
+
+- **account_type** - indicates what authentication type the account is i.e. Gmail, outlook, etc. 
+
+- **account_has_groups** - Helps us make sure if the account has groups, they are configured correctly
+
+- **calendar_accounts_count** - Number of calendar accounts you have to help us make sure your calendar accounts are configured correctly 
+
+- **calendar_apps_count** - Number of calendar apps you have to help us make sure your interesting calendar apps are configured correctly 
+
+- **calendar_type** - The type of calendar you have (Primary calendar, Group calendar, etc.) 
+
+- **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
+
+- **has_favorite_folders** - Helps us make sure favorite folders are configured correctly 
+
+- **has_favorite_people** - Helps us make sure favorite people/contacts are configured correctly 
+
+- **has_group_calendar** - Helps us make sure if you have group calendars, they are configured correctly 
+
+- **has_group_calendar_account** - Helps us make sure if you have group calendars, they are configured correctly 
+
+- **has_group_toggled** - Helps us make sure if you have toggled group calendars, this setting is configured correctly 
+
+- **interesting_calendars_accounts_count** - Number of interesting calendar accounts you have to help us make sure your interesting calendar accounts are configured correctly 
+
+- **mail_accounts_count** - The total number of mail accounts in the sidebar to make sure this is configured correctly 
+
+- **mail_folder_type** - The type of folder the user tapped on to make sure it’s configured correctly. This could include Deleted folder, Spam, or your Sent folder. 
+
+- **mail_inbox_unread_count** - Helps us ensure the unread count is displayed and configured accurately 
+
+- **mail_subfolder_depth** - Helps us ensure we can successfully display a user’s mail subfolder configurations
+
 #### StoreOp
 
 Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when Rights Management Service license store operation is performed. 
@@ -5948,6 +6791,20 @@ The following fields are collected:
 - **RMS.StatusCode** - Status code of the operation result
 
 - **RMS.Url** - The URL of Rights Management Service Server
+
+#### watchAppV2
+
+This event allows us to detect and fix possible issues with capabilities on your Apple Watch such as receiving notifications and responding to emails.
+
+The following fields are collected: 
+
+- **app_action** - Tells us the types of action the user took on the Apple watch, such as “archive_message” to help us detect issues related to a specific action such as being unable to successfully archive messages on the Apple Watch
+
+- **is_watch_app_installed** - Tells us if the user has installed our Apple Watch app on their device
+
+- **is_complication_enabled** - Tells us if the user has added Outlook to their Apple Watch screen to help us detect issues related to Apple Watch screens
+
+- **watch_os** - Tells us the OS version of the Apple Watch they have installed to help us detect issues related to specific OS versions of the Apple Watch
 
 
 ### *Application status and boot subtype*
