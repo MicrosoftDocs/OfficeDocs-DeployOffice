@@ -115,5 +115,3 @@ After you've completed all the RDS configuration steps, users can connect to any
 [Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 
 [Remote Desktop Services](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/welcome-to-rds)
-
-[Remote Desktop Services Overview (Windows Server 2012 and Windows Server 2012 R2)](https://go.microsoft.com/fwlink/p/?LinkID=268149)
