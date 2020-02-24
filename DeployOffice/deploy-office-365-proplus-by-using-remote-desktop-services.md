@@ -97,7 +97,7 @@ Here are the basic steps of how to configure RDS to deploy Office 365 ProPlus on
    <Property Name="SharedComputerLicensing" Value="1" />
    ```
 
-   - You also need to [make some RDS-specific changes on the virtual machine](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/create-virtual-machines-for-remote-desktop), such as enabling Remote Desktop.
+   - You also need to [make some RDS-specific changes on the virtual machine](https://go.microsoft.com/fwlink/p/?LinkId=510584), such as enabling Remote Desktop.
 
 2. Install and configure Windows Server.
 
