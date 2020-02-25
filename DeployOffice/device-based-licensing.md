@@ -1,5 +1,5 @@
 ---
-title: "Device-based licensing for Office 365 ProPlus for education customers"
+title: "Device-based licensing for Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -9,21 +9,19 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Explains how to configure device-based licensing for Office 365 ProPlus for Education customers."
+description: "Explains how to configure device-based licensing for Office 365 ProPlus."
 ---
 
-# Device-based licensing for Office 365 ProPlus for Education customers
+# Device-based licensing for Office 365 ProPlus
 
-Starting in August 2019, education customers can use *Office 365 ProPlus for Education (device)* to assign an Office 365 ProPlus license to a Windows 10 device instead of assigning the license to a user. This device-based license is designed to simplify management of Office 365 ProPlus on devices shared by many students or on devices in labs or libraries. Anyone that signs in and uses that device can use Office 365 ProPlus to create and edit documents.
+Starting in April 2020, commerical customers can use *Office 365 ProPlus (device)*  to assign an Office 365 ProPlus license to a Windows 10 device instead to a user. Education customers can do the same thing by using the *Office 365 ProPlus for Education (device)* license.  This device-based license is designed to simplify management of Office 365 ProPlus on devices shared by many users. Anyone that signs in and uses that device can use Office 365 ProPlus to create and edit documents.
 
 > [!IMPORTANT]
-> *Office 365 ProPlus for Education (device)* is an add-on license that is available only for education customers and is available only through Enrollment for Education Solutions (EES).
->
-> For more information, [read this blog post](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/) and contact your Microsoft account representative or the Microsoft partner that you work with.
+> Device-based licensing for Office 365 ProPlus is available only as an add-on license for some commerical customers and some education customers. For commercial customers, the license is *Office 365 ProPlus (device)* and is available only through EA/EAS.  For education customers, the license is *Office 365 ProPlus for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog posts for commercial availability and [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/) and contact your Microsoft account representative or the Microsoft partner that you work with.
 
 ## Requirements for using device-based licensing for Office 365 ProPlus
 
-The following are the requirements for device-based licensing for Office 365 ProPlus when using *Office 365 ProPlus for Education (device)*.
+The following are the requirements for device-based licensing for Office 365 ProPlus:
 
 - Version 1907 or later of Office 365 ProPlus
 - Version 1803 or later of Windows 10
