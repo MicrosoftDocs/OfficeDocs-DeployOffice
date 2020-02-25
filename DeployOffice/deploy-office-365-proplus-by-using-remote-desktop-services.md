@@ -60,7 +60,7 @@ Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
 
 2. Install and configure the Remote Desktop Session Host role service.
 
-    For example, [follow these steps to install RD Session Host](https://go.microsoft.com/fwlink/p/?LinkId=510582) on Windows Server 2008 R2.
+    For example, [follow these steps to install RD Session Host](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-deploy-infrastructure) on Windows Server.
 
     For users to be able to connect remotely to the server to use Office 365 ProPlus, their accounts must be members of the Remote Desktop Users group on the RD Session Host server.
 
@@ -77,7 +77,7 @@ Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
 
 4. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Office 365 ProPlus on the RD Session Host server.
 
-At this point, users can connect to the RD Session Host server and use Office 365 ProPlus. Users can connect to the server by using Remote Desktop Connection, which is available in Windows, or by using other [Remote Desktop clients](https://go.microsoft.com/fwlink/p/?LinkId=510586).
+At this point, users can connect to the RD Session Host server and use Office 365 ProPlus. Users can connect to the server by using Remote Desktop Connection, which is available in Windows, or by using other [Remote Desktop clients](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
 
 ## Install Office 365 ProPlus on a shared virtual machine
 <a name="VM"> </a>
@@ -103,10 +103,9 @@ Here are the basic steps of how to configure RDS to deploy Office 365 ProPlus on
 
 3. Install and configure RDS.
 
-    For example, [follow these steps to deploy a virtual desktop pool](https://go.microsoft.com/fwlink/p/?LinkId=510583) on Windows Server 2008 R2.
+    For example, [follow these steps to deploy a virtual desktop collection](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-create-collection) on Windows Server.
 
 After you've completed all the RDS configuration steps, users can connect to any of the virtual machines and run Office 365 ProPlus.
-
 
 ## Related topics
 <a name="VM"> </a>
@@ -115,8 +114,4 @@ After you've completed all the RDS configuration steps, users can connect to any
 
 [Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 
-[Remote Desktop Services in Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?LinkID=268148)
-
-[Remote Desktop Services Overview (Windows Server 2012 and Windows Server 2012 R2)](https://go.microsoft.com/fwlink/p/?LinkID=268149)
-
-
+[Remote Desktop Services](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/welcome-to-rds)
