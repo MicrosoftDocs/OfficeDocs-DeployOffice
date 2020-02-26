@@ -70,7 +70,7 @@ The idea is to not hard code everything in the configuration file, but to instea
 
 Let’s have a look at a "classic" package that was built to add Project to an existing install of Office 365 ProPlus. We have the source files (of ~2.5 gigabytes) and a configuration file, which explicitly states what we want to achieve:
 
-![Sample package](../../images/lean5-pic1.jpg)
+![Sample package](../images/lean5-pic1.jpg)
 
 ```
 <Configuration>
@@ -85,7 +85,7 @@ Let’s have a look at a "classic" package that was built to add Project to an e
  
 When we apply  the concepts of dynamic, lean, and universal packages, the result would look like this:
  
-![Lean sample package](images/lean5-pic2.jpg)
+![Lean sample package](../images/lean5-pic2.jpg)
 
 ```
 <Configuration>

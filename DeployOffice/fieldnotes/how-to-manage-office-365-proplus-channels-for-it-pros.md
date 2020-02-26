@@ -48,7 +48,7 @@ Ideally, minimizing the number of Office 365 ProPlus packages reduces overall co
  
 Using [Office ADMX](https://www.microsoft.com/download/details.aspx?id=49030) files, use Update Channel GPO to set Semi-Annual Channel (Targeted).
 
-![Update Channel GPO](images/gpo.png)
+![Update Channel GPO](../images/gpo.png)
 
 Group Policy refreshes in the background every 90 minutes by default. Use **gpupdate /force** to expedite. Alternatively, add the registry key manually to the policy key:
 
@@ -96,7 +96,7 @@ If you've completed the steps described previously and the channel change still 
  
 After *UpdateChannel* is successfully changed, Office 365 clients that point to CDN will download the latest build from the faster channel. Clients that have COM enabled for SCCM integration will download a newer build the next time that the Software Updates Deployment Evaluation cycle runs, based on the Software Deployment configuration in SCCM. IT pros can expedite testing channel migration by deploying a desired build to validation collection. (It should be a build from Semi-Annual Channel (Targeted).) Use the Configuration Manager control panel item to perform Machine Policy Retrieval, followed by the Software Updates Deployment Evaluation cycle.
 
-![The Actions tab of Configuration Manager Properties](images/applet.png)
+![The Actions tab of Configuration Manager Properties](../images/applet.png)
 
 ## Office 365 ProPlus behavior: Slower to faster vs. faster to slower
 

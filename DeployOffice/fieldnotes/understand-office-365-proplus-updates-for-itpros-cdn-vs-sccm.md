@@ -64,33 +64,33 @@ Since the build that's installed is the most recent version, we can leverage a f
 
 If the updates still aren't applied after four days, a message appears in the Windows notification area telling the user that updates are available.
 
-![Office updates-available message](images/updatesareavail.png)
+![Office updates-available message](../images/updatesareavail.png)
 
 If the updates still aren't applied after six days, a message appears in any newly opened Office document to remind the user that updates are available. We call this the "BusBar." It lets users drive change when it's convenient.
 
-![Updates-available message bar](images/bizbar.png)
+![Updates-available message bar](../images/bizbar.png)
 
 If you click **Update now** on the bar when Office applications are open, you'll see a dialog box like the following example. Click **Continue** to save your work, update, and reopen your Office applications.
 
-![Save-your-work message](images/saveyourwork.png)
+![Save-your-work message](../images/saveyourwork.png)
 
 The Office Backstage also offers an **Update now** option that lets the user check for updates to install. This option brings up the same dialog box.
 
-![Download now selected](images/backstage.png)
+![Download now selected](../images/backstage.png)
 
-![Progress bar](images/download.png)
+![Progress bar](../images/download.png)
 
 IT pros can also configure an "update deadline" policy for when Office updates must be applied.  Users receive notifications leading up to the deadline. For example, within 72 hours of the deadline, they see a message in any newly opened Office document that updates are blocked because of open apps.
 
-![Updates blocked by app message bar](images/blocked.png)
+![Updates blocked by app message bar](../images/blocked.png)
 
 Additional sequential reminders will notify the user that update is mandatory. A message appears every 2 hours. It's also shown 60 minutes, 30 minutes, 15 minutes, and 5 minutes before the deadline.
 
-![Updates blocked by app with deadline message](images/updatesreadtoapplywithdead.png)
+![Updates blocked by app with deadline message](../images/updatesreadtoapplywithdead.png)
 
 If the deadline arrives and the update hasn't been applied, a message warns the user that the update will happen in 15 minutes.
 
-![Updates to be applied in 15 minutes warning](images/officeupdatesrequired.png)
+![Updates to be applied in 15 minutes warning](../images/officeupdatesrequired.png)
 
 ## Update from SCCM
  
@@ -109,7 +109,7 @@ If the deadline arrives and the update hasn't been applied, a message warns the 
 - The Office 365 client product must be selected on the **Products** tab under **Software Update Point Component Properties and synchronize software updates after change**. Then you should see Office 365 client updates populate the Office 365 Updates node under **Office 365 Client Management** on the **Software Library** tab in the SCCM console.
 - **Office 365 Client Management** must be enabled on the client. This setting can be configured in multiple ways, such as by adding *OfficeMgmtCOM="TRUE"* to *configuration.xml* during installation, enabling the "Office 365 Client Management" domain policy, or toggling **Enable management of the Office 365 Client Agent** to *yes* in the SCCM client settings under **Software Updates**. To verify, launch *dcomcnfg.exe* on the client computer and confirm that the OfficeC2RCom application is registered.  **Only one is required**, where policy overrides and take priority over all other methods. The purpose of the COM application is to allow Office 365 ProPlus to cooperate with SCCM to pull updates from distribution points rather than from the CDN.
 
-![Explorer window](images/officec2r.png)
+![Explorer window](../images/officec2r.png)
 
 *Example of running dcomcnfg.exe*
 
@@ -133,11 +133,11 @@ If the deadline arrives and the update hasn't been applied, a message warns the 
 > [!NOTE]
 > Frequency of toast notifications from SCCM is configurable in **Client Settings** under **Computer Agent**. This configuration is applicable to all software deployments, not just the Office 365 client.
 
-![Computer Agent settings](images/notifications.png)
+![Computer Agent settings](../images/notifications.png)
 
 *Can be found within SCCM console under client settings*
 
-![Software change required message](images/sccmsoftwarechangesrequired.png)
+![Software change required message](../images/sccmsoftwarechangesrequired.png)
 
 ## SCCM deployment scenarios
  
@@ -152,46 +152,46 @@ This scenario is a good fit for customers who want faster compliance and no rebo
 For example:
 
 
-![Business Bar](images/bizbar.png)
+![Business Bar](../images/bizbar.png)
 
 Once a build is staged, a toast notification might not appear until the user clicks the icon in the notification area. This is easy to miss.
 
-![Notification area icons](images/systrayreminder.png)
+![Notification area icons](../images/systrayreminder.png)
 
 *"Basic notification," which is sometimes hidden under the task bar chevron*
 
-![Close-apps dialog box](images/systrayreminder2.png)
+![Close-apps dialog box](../images/systrayreminder2.png)
 
 7.5 hours before the deadline, Office will show the *Enforced toast*, which will present the "Office Updates Available" toast as described previously in the foreground. If the user doesn't select **Update now**, they will potentially receive three additional notifications with a countdown. If no decision is made to postpone, Office applications will eventually be forced closed and updates installed at the deadline as defined in SCCM.
 
-| ![Office will update in *XX* minutes warning](images/minu.png)      | ![Office will update in *XX* seconds warning](images/sec.png) | ![Updates were installed message](images/installed.png) |
+| ![Office will update in *XX* minutes warning](../images/minu.png)      | ![Office will update in *XX* seconds warning](../images/sec.png) | ![Updates were installed message](../images/installed.png) |
 | :------------- | :----------: | -----------: |
 | *Minute countdown* | *Second countdown* | *Updates installed* |
 
 
 If the user selects **Postpone** and the deadline is eventually reached, a standard SCCM restart window will be displayed with a countdown. Office may also raise additional notification with a 30-minute countdown. It's important to note that countdowns from SCCM and Office are not synchronized in any way. They have separate timers.
 
-![Computer-restart warning and options](images/sccmrestartwindow.png)![Office will update; deadline is passed message](images/prestageanddeadlinehaspassed.png)
+![Computer-restart warning and options](../images/sccmrestartwindow.png)![Office will update; deadline is passed message](../images/prestageanddeadlinehaspassed.png)
 
 ### Scenario 3 - Available and required installation deadline are the same
 
 This scenario is best for IT pros who want to minimize notifications to users unless the deadline has been reached. (The Office content is not prestaged.) If the software deployment *available time* and *installation deadline* are the same, the SCCM client will determine that the deadline was missed and therefore make the deployment immediate. A typical notification workflow will be presented to the user.  
 
-![Software changes required message](images/sccmsoftwarechangesrequired.png)
+![Software changes required message](../images/sccmsoftwarechangesrequired.png)
 
 In this case, since the deadline has passed, download will begin automatically.
 
-![Download progress message](images/downloadinginstalling.png)
+![Download progress message](../images/downloadinginstalling.png)
 
 After the content has been downloaded, SCCM will immediately initiate the Office update by using the following logic:  
 - If all Office applications are closed, updates will occur with no reboot. 
 - If any Office apps are open, the standard SCCM reboot workflow occurs.
 
-![Restart-required message](images/restartwindow.png)
+![Restart-required message](../images/restartwindow.png)
 
 The user will see an SCCM restart message window with a countdown until a restart is forced. The frequency of notifications is controlled solely by the SCCM client. It can be configured in the **Client Settings** node in the SCCM console.
 
-![Restart warning with timer and options](images/sccmrestartwindow.png)
+![Restart warning with timer and options](../images/sccmrestartwindow.png)
 
 ## Frequently asked questions
 
@@ -214,7 +214,7 @@ Yes: [Manage Office 365 ProPlus with Configuration Manager](https://docs.microso
 
 This means that the SCCM "Peer cache" feature is enabled, and content is available to be shared with other peers. Windows is using an NTFS feature called "[Sparse files](https://docs.microsoft.com/windows/win32/fileio/sparse-files)." By looking closely at the size in disk details, you can compare the differences as shown below between the full data and the one on the right using peer cache. (Peer cache really only downloaded 80 MB here.)
 
-![Size data compared](images/peercache.png)
+![Size data compared](../images/peercache.png)
 
 **I’ve done everything I can think of, and the OfficeC2RCom application never shows in the MMC console. In fact, when I browse COM applications from within dcomconfg.exe, my Computer has a red down arrow. Why?**
 
@@ -226,7 +226,7 @@ By design, this feature is enabled only for the CDN scenario.
 
 **Users who launch Office immediately after logon receive the message "Updating Office, please wait a moment." Why?**
 
-![Updating Office, please wait message](images/updatingofficewait.jpg)
+![Updating Office, please wait message](../images/updatingofficewait.jpg)
 
 This means an Office update was attempted while applications were open, which can't succeed.  Therefore, build was staged to retry the update by the Microsoft Office Click-to-Run service at Windows startup. In this case, the user was able to access the desktop and start an Office application while the Office update process was in progress. If easily reproducible, this is often a reflection of slow boot process and Windows startup performance. It's best to troubleshoot by removing third-party filter drivers and unnecessary startup items.
 
