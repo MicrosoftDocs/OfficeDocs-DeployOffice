@@ -1,6 +1,6 @@
 ---
 title: Build dynamic, lean, universal packages for Office 365 ProPlus
-author: 
+author: manoth
 ms.author: manoth
 manager: 
 audience: ITPro 
@@ -12,7 +12,11 @@ ms.custom:
 ms.collection: 
 ---
 
-# Build dynamic, lean, and universal packages for Office 365 ProPlus
+# Field notes: Build dynamic, lean, and universal packages for Office 365 ProPlus
+
+> [!NOTE]
+> Field notes are created by Microsoft experts in the field who work with enterprise customers to deploy Office.
+   
 
 As an admin, you might have to deploy Office 365 ProPlus in your organization. But such a deployment is more than just Office. After the initial migration to ProPlus, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Microsoft Visio and Project, or other components.
 

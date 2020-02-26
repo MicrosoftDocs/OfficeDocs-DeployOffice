@@ -12,7 +12,10 @@ ms.custom:
 ms.collection: 
 ---
 
-# Understand Office 365 ProPlus Updates for IT pros (CDN vs SCCM)
+# Field notes: Understand Office 365 ProPlus Updates for IT pros (CDN vs SCCM)
+
+> [!NOTE]
+> Field notes are created by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
 When we support customers in the field, we receive many questions about the Office 365 ProPlus update process. This article provides context about end-user behavior during update scenarios and clarifies when and how Office updates are applied.
 

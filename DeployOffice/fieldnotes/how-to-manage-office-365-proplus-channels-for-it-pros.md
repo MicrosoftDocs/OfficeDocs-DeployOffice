@@ -12,7 +12,10 @@ ms.custom:
 ms.collection: 
 ---
 
-# How to manage Office 365 ProPlus Channels for IT pros
+# Field notes: How to manage Office 365 ProPlus Channels for IT pros
+
+> [!NOTE]
+> Field notes are created by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
 We recommend that enterprise customers include validation as a part of their Office 365 ProPlus deployment processes. Microsoft provides "channels" that control the rate of change of features and quality fixes. For most customer deployments, this means a minimum of two channels, such as Semi-Annual Channel and Semi-Annual Channel (Targeted). Many IT pros broadly deploy a single channel (usually Semi-Annual Channel) and use Group Policy to assign validation computers to a faster channel, such as Semi-Annual Channel (Targeted). In this way, they can preview what’s coming four months before production release.
  
