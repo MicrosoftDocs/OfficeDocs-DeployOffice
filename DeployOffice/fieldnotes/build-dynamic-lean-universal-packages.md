@@ -70,7 +70,7 @@ The idea is to not hard code everything in the configuration file, but to instea
 
 Let’s have a look at a "classic" package that was built to add Project to an existing install of Office 365 ProPlus. We have the source files (of ~2.5 gigabytes) and a configuration file, which explicitly states what we want to achieve:
 
-![Sample package](images/lean5-pic1.jpg)
+![Sample package](../../images/lean5-pic1.jpg)
 
 ```
 <Configuration>
