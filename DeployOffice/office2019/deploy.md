@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_VL
