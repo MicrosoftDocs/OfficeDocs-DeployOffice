@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides Office admins with information about using Multiple Activation Key (MAK) to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."

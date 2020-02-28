@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with information about the implications of Windows 7 end of support on Office 365 ProPlus."
