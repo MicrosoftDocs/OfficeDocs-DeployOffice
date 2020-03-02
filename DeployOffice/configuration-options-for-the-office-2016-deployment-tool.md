@@ -86,7 +86,9 @@ Defines the products and languages to download or install
 
 ### SourcePath attribute (part of Add element) 
 
-Optional. Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool. 
+Optional.
+
+Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool. 
 
 Note that when you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
@@ -97,7 +99,9 @@ Example values:
 
 ### Version attribute (part of Add element)
 
-Optional. The default is the latest available version of Office. When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel will be used, which might not match the specified version.
+Optional. Defaults to the latest version available if not specified.
+
+When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel will be used, which might not match the specified version.
 
 If Office 365 ProPlus is already installed on a device, you can use Version="MatchInstalled" to install the same version of Office, even if a newer version is available. This setting can make it easier to add language packs or Visio and Project without updatinging Office to a newer version. 
 
@@ -109,7 +113,9 @@ Example values:
 
 ### OfficeClientEdition attribute (part of Add element) 
 
-Optional. Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. If Office is not installed on the device and OfficeClientEdition is not specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures are not supported. 
+Optional.
+
+Defines whether the 32-bit or 64-bit edition of Office 365 ProPlus is downloaded or installed. If Office is not installed on the device and OfficeClientEdition is not specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures are not supported. 
 
 Allowed values:
 
@@ -118,7 +124,9 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-Optional. Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Office 365 ProPlus. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
+Optional.
+
+Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Office 365 ProPlus. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
 
 This value determines the channel to be installed, regardless of an optionally specified update channel in the <Update /> section or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Office 365 ProPlus update channel](change-update-channels.md) for additional details.
 
@@ -138,7 +146,9 @@ If you're deploying Office Professional Plus 2019, which is a volume licensed ve
 
 ### DownloadPath attribute (part of Add element)
 
-Optional. Defines where the installation files are downloaded from. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. To use this setting, run the ODT in download mode. If not included, the files are downloaded from the Office CDN.  Note that you must specify a version when using DownloadPath, as shown in the example.
+Optional. Defaults to the CDN if not specified.
+
+Defines where the installation files are downloaded from when running ODT in download mode. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. Note that you must specify a version when using DownloadPath, as shown in the example.
 
 Example values: 
 
@@ -158,7 +168,9 @@ Example values:
 
 ### AllowCdnFallback attribute (part of Add element) 
 
-Optional. To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
+Optional. Defaults to False if not specified.
+
+To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
 
 When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT will use source files from the Office CDN.
 
@@ -183,13 +195,17 @@ Allowed values:
 
 ### MigrateArch attribute (part of Add element)
 
-Optional. If set to TRUE, then your existing installation of Office 365 ProPlus will be changed to the architecture (sometimes referred to as the bitness) that is specified in the [OfficeClientEdition attribute](#officeclientedition-attribute-part-of-add-element). For example, you can use this to change a 32-bit installation of Office 365 ProPlus to a 64-bit installation.
+Optional. Defaults to False if not specified.
+
+If set to TRUE, then your existing installation of Office 365 ProPlus will be changed to the architecture (sometimes referred to as the bitness) that is specified in the [OfficeClientEdition attribute](#officeclientedition-attribute-part-of-add-element). For example, you can use this to change a 32-bit installation of Office 365 ProPlus to a 64-bit installation.
 
 For more information about using MigrateArch, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
 
 ### OfficeMgmtCOM attribute (part of Add element)
 
-Optional. For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Office 365 ProPlus is automatically disabled for client devices.
+Optional. Defaults to False if not specified.
+
+For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Office 365 ProPlus is automatically disabled for client devices.
 
 For more information, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
 
@@ -232,7 +248,9 @@ You can also use the Product element to add language packs to existing installat
 
 ### ID attribute (part of Product element)
 
-Required. Defines the ID of the product to download or install. 
+Required.
+
+Defines the ID of the product to download or install. 
 
 Example values:
 
@@ -271,7 +289,9 @@ Note that MatchOS and MatchInstalled cannot install the operating system languag
 
 ### ID attribute (part of Language element)
 
-Defines the ID of the language to download or install. Required.
+Required.
+
+Defines the ID of the language to download or install.
 
 #### Example values
 
@@ -285,6 +305,8 @@ For a list of all languages, see [Languages, culture codes, and companion proofi
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
 ### Fallback attribute (part of Language element)
+
+Optional.
 
 When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
 
@@ -305,11 +327,11 @@ Defines what the user sees when Office is installed.
 
 ### Level attribute (part of Display element)
 
-Optional. If **Level** is set to **None**, Office is installed with no user interface: no progress bars, completion screens, error messages, or other user interface are displayed.
+Optional. Default is set to **Full** if not specified.
+
+If **Level** is set to **None**, Office is installed with no user interface: no progress bars, completion screens, error messages, or other user interface are displayed.
 
 If **Level** is set to **Full**, Office is installed with the normal installation experience. 
-
-Default is **Full**. 
 
 Allowed values:
 
@@ -318,9 +340,9 @@ Allowed values:
 
 ### AcceptEULA attribute (part of Display element)
 
-Optional. If **AcceptEULA** is set to **TRUE**, the user does not see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or is not included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
+Optional. Defaults to **FALSE** if not specified.
 
-Default is **FALSE**.
+If **AcceptEULA** is set to **TRUE**, the user does not see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or is not included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
 
 Allowed values:
 
@@ -355,7 +377,9 @@ If a configuration file with ExcludeApp is used to install Office on a device th
 
 ### ID attribute (part of ExcludeApp element)
 
-Required. Defines the ID of the product that should not be installed.
+Required.
+
+Defines the ID of the product that should not be installed.
 
 Allowed values:
 
@@ -388,7 +412,9 @@ Defines options for ODT logging.
 
 ### Level attribute (part of Logging element)
 
-Optional. Turns logging on or off. Default is **Standard**.
+Optional. Default is **Standard** if not specified.
+
+Turns logging on or off. 
 
 Allowed values:
 
@@ -397,7 +423,9 @@ Allowed values:
 
 ### Path attribute (part of Logging element)
 
-Optional. Defines the location of the log files. Default is **%temp%**.
+Optional. Default is **%temp%** if not specified.
+
+Defines the location of the log files. 
 
 Example values:
 
@@ -420,7 +448,9 @@ Defines certain Office behaviors and properties.
 
 ### Name attribute (part of Property element)
 
-Required. Defines the specific property whose value you want to set.
+Required.
+
+Defines the specific property whose value you want to set.
 
 ### Value attribute (part of Property element)
 
@@ -428,9 +458,9 @@ Defines the value of the named property.
 
 ### AUTOACTIVATE property (part of Property element)
 
-Because Office 365 ProPlus is set to activate automatically, you should not set this property for Office 365 ProPlus products. For other products, you can set **AUTOACTIVATE** to **1** to have the product activate automatically.
+Optional. Default is **0** if not specified.
 
-Optional. Default is **0**.
+Because Office 365 ProPlus is set to activate automatically, you should not set this property for Office 365 ProPlus products. For other products, you can set **AUTOACTIVATE** to **1** to have the product activate automatically.
 
 Allowed values:
 
@@ -438,13 +468,13 @@ Allowed values:
           Value="0"
 - Property Name="AUTOACTIVATE"
           Value="1"
-
+	  
 
 ### FORCEAPPSHUTDOWN property (part of Property element)
 
-When set to **TRUE**, forces any apps that are blocking the install of Office to shut down. Data loss may occur. 
+Optional. Default is **FALSE** if not specified.
 
-Optional. Default is **FALSE**.
+When set to **TRUE**, forces any apps that are blocking the install of Office to shut down. Data loss may occur. 
 
 Allowed values:
 
@@ -456,13 +486,13 @@ Allowed values:
 
 ### PACKAGEGUID property (part of Property element)
 
+Optional.
+
 By default, App-V packages created by the ODT share the same App-V Package ID. Administrators can use **PACKAGEGUID** to specify a different Package ID. This allows you to publish multiple App-V packages of Office to an App-V Management Server. But, this doesn't enable you to deploy more than one Office App-V package to a single computer. You can use the ODT to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported.
 
 The Package ID must follow the format of the example and can only use these characters: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F  
 
 If you use any other characters, the App-V package is created with the default Package ID.
-
-Optional.
 
 Example values:
 
@@ -471,11 +501,11 @@ Example values:
 
 ### SharedComputerLicensing property (part of Property element)
 
+Optional. Default value is **0** if not specified.
+
 Set **SharedComputerLicensing** to 1 if you deploy Office 365 ProPlus to shared computers by using Remote Desktop Services. 
 
 For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
-
-Optional. Default value is **0**.
 
 Allowed values:
 
@@ -483,11 +513,12 @@ Allowed values:
 - Property Name="SharedComputerLicensing" Value="1"
 
 ### SCLCacheOverride property (part of Property element)
+
+Optional. Default value is **0** if not specified.
+
 Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory.
 
 For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
-
-Optional. Default value is **0**.
 
 Allowed values:
 
@@ -495,11 +526,12 @@ Allowed values:
 - Property Name="SCLCacheOverride" Value="1"
 
 ### SCLCacheOverrideDirectory property (part of Property element)
+
+Optional.
+
 Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride.
 
 For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
-
-Optional.
 
 Example values:
 
@@ -508,9 +540,9 @@ Example values:
 
 ### PinIconsToTaskBar property (part of Property element)
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Endpoint Configuration Managers, the icons will not be pinned even if this property is set to **True**.
+Optional. The default value is **True** if not specified.
 
-Optional. The default value is **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Endpoint Configuration Managers, the icons will not be pinned even if this property is set to **True**.
 
 Allowed values:
 
@@ -537,9 +569,9 @@ For more information, see  [Overview of the Office Deployment Tool](overview-of-
 ```
 ### All attribute (part of Remove element)
 
-If set to **TRUE**, all Office 365 ProPlus products and languages will be removed, including Project and Visio.
+Optional. The default value is **FALSE** is not specified.
 
-Optional. The default value is **FALSE**.
+If set to **TRUE**, all Office 365 ProPlus products and languages will be removed, including Project and Visio.
 
 Allowed values:
 
@@ -560,10 +592,10 @@ Defines how Office is updated after it's installed.
 
 ### Enabled attribute (part of Updates element)
 
+Optional. The default value is **TRUE** if not specified.
+
 If set to **TRUE**, Office will check for updates.
 If set to **FALSE**, Office won't check for updates, but the user can check for updates by going to **File** > **Account** > **Update Options** > **Update Now**.
-
-Optional. The default value is **TRUE**.
 
 Allowed values:
 
@@ -573,11 +605,11 @@ Allowed values:
 
 ### UpdatePath attribute (part of Updates element)
 
-Defines where the updates for Office come from. If **UpdatePath** is not set or is set to empty (""), the location is set to the Office Content Delivery Network (CDN). **UpdatePath** can specify a network, local, or HTTP path of a source for Office installation files. Environment variables can be used for network or local paths. 
+Optional.  Defaults to the CDN if not specified.
+
+Defines where the updates for Office come from. **UpdatePath** can specify a network, local, or HTTP path of a source for Office installation files. Environment variables can be used for network or local paths. 
 
 If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **UpdatePath** by using the **Update Path** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
-
-Optional.
 
 Example values:
 
@@ -587,11 +619,11 @@ Example values:
 
 ### TargetVersion attribute (part of Updates element)
 
-Defines which version Office updates to. If **TargetVersion** is not set or is set to empty (""), Office updates to the most recent version from the specified update path. If **TargetVersion** is set to a specific build number, Office attempts to update to that version. 
+Optional. Defaults to the latest version from the specified update path.
+
+Defines which version Office updates to. If **TargetVersion** is set to a specific build number, Office attempts to update to that version. 
 
 If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **TargetVersion** by using the **Target Version** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
-
-Optional.
 
 Example values:
 
@@ -599,6 +631,8 @@ Example values:
 - TargetVersion=""
 
 ### Deadline attribute (part of Updates element)
+
+Optional.
 
 Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use **Deadline** with **Target Version** to make sure that Office is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
 
@@ -608,21 +642,19 @@ After the Office programs are closed, the updates are applied automatically. The
 
 To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
-Optional.
-
 Example value:
 
 - Deadline="05/16/2014 18:30"
 
 ### Channel attribute (part of Updates element)
 
+Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop Client.
+
 Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office.
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
-
-Optional. The default is **Broad** for Office 365 ProPlus and **Monthly** for Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop Client.
 
 Allowed values:
 
@@ -644,9 +676,9 @@ For more information about using RemoveMSI, see [Remove existing MSI versions of
 
 ### IgnoreProduct attribute (part of RemoveMSI element)
 
-If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer.
-
 Optional.
+
+If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer.
 
 Example values:
 - IgnoreProduct ID="VisPro"
@@ -655,11 +687,11 @@ Example values:
 
 ## AppSettings element
 
+Optional.
+
 Defines application preferences for Office 365 ProPlus, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application preferences, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application preferences.
 
 For more details on application preferences, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-office-365-proplus).
-
-Optional.
 
 ### Example
 
