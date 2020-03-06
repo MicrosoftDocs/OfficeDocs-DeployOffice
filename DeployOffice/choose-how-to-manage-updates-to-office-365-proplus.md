@@ -18,21 +18,23 @@ description: "Compares different ways to update Office 365 ProPlus, including au
 
  **Summary:** Compares different ways to update Office 365 ProPlus, including automatically from the Internet or from an on-premises location.
   
-There are three ways that admins typically apply updates for Office 365 ProPlus:
-  
+There are four ways that admins typically apply updates for Office 365 ProPlus:
+
 - Automatically from the Internet
-    
+
+- Using Microsoft Endpoint Configuration Manager
+
 - Automatically from an on-premises location
-    
+
 - By installing an updated version of Office 365 ProPlus
     
 Which way is right for your organization depends on how much administrative effort you want to expend and how much control that you want to have over the update process.
-  
+
 In most cases, you use the Office Deployment Tool or Group Policy to [configure the appropriate update settings](configure-update-settings-for-office-365-proplus.md).
   
 > [!IMPORTANT]
-> Because individual updates aren't available for Office 365 ProPlus, you can't use Windows Update, Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager to download and apply individual updates to Office 365 ProPlus. 
-  
+> Because individual updates aren't available for Office 365 ProPlus, you can't use Windows Update or Windows Server Update Services (WSUS) to download and apply individual updates to Office 365 ProPlus. 
+
 ## Apply updates automatically from the Internet to Office 365 ProPlus
 <a name="Internet"> </a>
 
@@ -41,7 +43,12 @@ This is the default setting for Office 365 ProPlus. For example, if your users i
 Even if you use the Office Deployment Tool to deploy Office 365 ProPlus to your users, you can configure updates to be applied automatically from the Internet.
   
 This option might be a good choice for your organization if you have users who travel or work remotely and don't connect to the corporate network regularly. It's also the choice that requires the least amount of administrative effort. But, this option gives you the least amount of control over the update process.
-  
+
+## Using Microsoft Endpoint Configuration Manager
+<a name="MECM"> </a>
+
+Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md) for an in-depth description.
+
 ## Apply updates automatically from an on-premises location to Office 365 ProPlus
 <a name="OnPremises"> </a>
 
@@ -54,11 +61,9 @@ You'll have to use the Office Deployment Tool to [download updated versions of O
 ## Apply updates by installing an updated version of Office 365 ProPlus
 <a name="Install"> </a>
 
-Instead of using automatic updates, you can deploy an updated version of Office 365 ProPlus to your users by using the Office Deployment Tool. You can use the Office Deployment Tool together with software distribution tools, such as Microsoft Endpoint Configuration Manager or Microsoft Intune.
+Instead of using automatic updates, you can deploy an updated version of Office 365 ProPlus to your users by using the Office Deployment Tool. This option re-installs Office 365 ProPlus. You can use the Office Deployment Tool together with software distribution tools, such as Microsoft Endpoint Configuration Manager or Microsoft Intune.
   
-This option is useful if you want to control which version of Office 365 ProPlus users have, and you want to control which users get updated and when they get updated. This option provides the most control, but also requires the most administrative effort.
-  
-This option re-installs Office 365 ProPlus, but only new or changed files are downloaded to the user's computer.
+This option is useful if you want to control which version of Office 365 ProPlus users have, and you want to control which users get updated and when they get updated. This option provides the most control, but also requires the most administrative effort and has a high impact on user downtime and network load. 
   
 If you decide to use this option, you'll disable automatic updates. You can [control that setting](configure-update-settings-for-office-365-proplus.md) by using either the Office Deployment Tool or Group Policy.
   
@@ -68,8 +73,9 @@ If you decide to use this option, you'll disable automatic updates. You can [con
 [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
 [Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
+
+[Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
   
 [Configure update settings for Office 365 ProPlus](configure-update-settings-for-office-365-proplus.md)
   
 [End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md)
-
