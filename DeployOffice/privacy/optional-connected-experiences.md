@@ -54,7 +54,7 @@ Note: The privacy setting described below does not control experiences that requ
 
 ### Help > Contact Support
 
-On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience is powered by a service provided by HelpShift, and the [terms of service](https://www.helpshift.com/legal/terms/) and [privacy policy](https://www.helpshift.com/legal/privacy/) of HelpShift will apply.
+On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience requires a Microsoft owned service called PowerLift, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply.
 
 ### Help > Suggest a Feature
 
