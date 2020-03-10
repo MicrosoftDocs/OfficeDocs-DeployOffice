@@ -59,7 +59,31 @@ The user can then choose one of the available options to reactivate Office 365 P
 
 If the user hasn't been assigned a license, and they try to use Office 365 ProPlus on a computer where it's installed, Office will be in reduced functionality mode. Also, the user will be prompted to sign in and activate every time they open an Office app, such as Word or Excel.
   
- 
+ ## Improvements in Office 365 ProPlus version 1904.
+
+We have made great improvements to how licensing and user administration is handled with Office 365 ProPlus.
+
+For your users, here’s what stays the same:
+
+- Sign in to activate Office: Users will continue to sign in to activate Office on their devices. When single sign-on is enabled, Office detects the user’s credentials and activates Office automatically.
+
+- Sign-in limits: Users can sign in to activate Office on five desktops, five tablets, and five mobile devices.
+
+
+Here are the changes that your users may notice:
+
+- No more prompts to deactivate: Users can install Office on a new device without being prompted to deactivate Office on another device.
+
+- Automatic sign out: When a user reaches the sign-in limit, instead of being prompted to deactivate, the user will be automatically signed out of Office on the device where Office has been least recently used. The next time the user starts Office on that device, the user will be prompted to sign in to activate Office.
+
+
+Here are the changes that you as an admin may notice when managing devices where Office is installed:
+
+- Improved device reallocation: Previously, users who received reallocated devices could receive an error if the previous user deactivated the device from the portal or if you removed the Office 365 license from the previous user. Going forward, users will not receive the error because the activation and deactivation is user specific.
+
+- Improved activation reporting: Previously, when one user activated Office on a device and a second user later signed on to that device, the second activation was not displayed in the Admin Center’s Activation Reports. Going forward, both activations will be identified and displayed in the Activation Report.
+
+
 
 ## Related topics
 
