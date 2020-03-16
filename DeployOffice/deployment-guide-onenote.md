@@ -20,14 +20,11 @@ There are two versions of OneNote that you can deploy to users in your organizat
 
 Both versions are supported and continue to receive new features. For example, [Dark Mode](https://support.office.com/article/bb81fb88-968d-4c1a-818d-eec590deadef) was added to OneNote 2016 in late 2019.
 
-> [!NOTE]
-> In November 2019, we [announced](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) that mainstream support for OneNote 2016 will continue until October 2023. Extended supported remains the same, ending in October 2025. These dates align with the support dates for Office 2019. These support dates apply only to OneNote included with non-subscription versions of Office, such as Office Professional Plus 2016 or Office Standard 2019.
-
 As of March 2020, OneNote 2016 is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Office 365 ProPlus, Office 365 Business, or Office 2019. But, if you want to, you can exclude OneNote 2016 from being installed. For more information, see [OneNote 2016 deployment guidance](#onenote-2016-deployment-guidance).
 
 ## Choose the version of OneNote for your organization
 
-Both OneNote 2016 and OneNote for Windows 10 can be installed on the same device and used side-by-side. Each version of OneNote can access and sync with the same cloud-based notebooks, such as notebooks stored in OneDrive for Business, SharePoint Online, or SharePoint Server. Even though the notebooks are cloud-based, a copy of each notebook is cached on the user's device so that they can access them even when the device isn't connected to the internet. But, OneNote for Windows 10 can't use local notebooks, which are OneNote files that are stored on the user's device or on a file share on the network.
+Both OneNote 2016 and OneNote for Windows 10 can be installed on the same device and used side-by-side. Each version of OneNote can access and sync with the same cloud-based notebooks, such as notebooks stored in OneDrive for Business, SharePoint Online, or SharePoint Server. Even though the notebooks are cloud-based, a copy of each notebook is cached on the user's device so that users can access them even when the device isn't connected to the internet. But, OneNote for Windows 10 can't use local notebooks, which are OneNote files that are stored on the user's device or on a file share on the network.
 
 You can provide users in your organization with both versions of OneNote so that they can choose which version best suits their needs. Users can [set which OneNote version is the default](https://support.office.com/article/f261140c-5ce8-4cf4-ad0b-c9e1cb953831) on their device. Or, you can decide to provide only one version of OneNote on their devices running Windows.
 
@@ -56,7 +53,7 @@ If Office is already installed on the device, but OneNote 2016 didn't get instal
 <Configuration>
    <Add>
       <Product ID="OneNoteFreeRetail">
-       <Language ID="MatchOS" />
+       <Language ID="MatchOS"/>
       </Product>
    </Add>
 </Configuration>
@@ -65,11 +62,11 @@ If Office is already installed on the device, but OneNote 2016 didn't get instal
 Although you're deploying the freemium version of OneNote, the first time the user opens OneNote after it's installed, the license will update automatically to the same license as the version of Office already installed on the device.
 
 > [!NOTE]
-> Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote 2016 to these versions of Office, run an Online Repair.
+> Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote 2016 back to these versions of Office, run an Online Repair.
 
 ### To exclude OneNote 2016 from being installed
 
-There are different ways to exclude OneNote 2016 from being installed with Office, depending on which deployment method you're using.
+There are different ways to exclude OneNote 2016 from being installed with Office, depending on which deployment method you're using, as shown in the following table.
 
 
 |Method  |Instructions  |
@@ -99,8 +96,9 @@ If you plan to move your users from OneNote for Windows 10 to OneNote 2016, no s
 > - Most of these same policy settings can be applied by using the [Office cloud policy service](overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
 > - Neither Group Policy nor Office cloud policy service can be used with Office 365 Business or with OneNote for Windows 10.
 
+**Support dates:** In November 2019, we [announced](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) that mainstream support for OneNote 2016 will continue until October 2023. Extended supported remains the same, ending in October 2025. These dates align with the support dates for Office 2019. These specific support dates apply only to OneNote included with versions of Office, such as Office Professional Plus 2016, that are available as a one-time purchase or through volume licensing agreements.
 
-**Supported languages:** While both OneNote 2016 and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The list of supported languages are available here: [OneNote 2016](https://support.office.com/article/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.office.com/article/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone)
+**Supported languages:** While both OneNote 2016 and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The list of supported languages are available here: [OneNote 2016](https://support.office.com/article/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.office.com/article/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone)
 
 **Other platforms:** There are also versions of OneNote for Mac, iPad, iPhone, Android, and for web browsers. For more information, see [OneNote help & learning](https://support.office.com/OneNote).
 
