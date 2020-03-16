@@ -79,7 +79,7 @@ But, if you're allowing your users to install Office for themselves from the Off
 
 ## OneNote for Windows 10 deployment guidance
 
-OneNote for Windows 10 is installed by default on computers running Windows 10. Users can also install it directly from the [Microsoft Store](https://www.microsoft.com/p/onenote/9wzdncrfhvjl?activetab=pivot%3aoverviewtab), if you allow them to installs apps from there. In either case, updates to OneNote for Windows 10 come directly from the Microsoft Store.
+OneNote for Windows 10 is installed by default on computers running Windows 10. Users can also install it directly from the [Microsoft Store](https://www.microsoft.com/p/onenote/9wzdncrfhvjl?activetab=pivot%3aoverviewtab), if you allow them to install apps from there. In either case, updates to OneNote for Windows 10 come directly from the Microsoft Store.
 
 If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview)
 
