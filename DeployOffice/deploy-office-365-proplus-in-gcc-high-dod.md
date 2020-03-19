@@ -29,15 +29,20 @@ You can deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC Hi
 
 Outlook for iOS and Android is also available for GCC High or DoD environments. For more information, [read this Tech Community blog post](https://techcommunity.microsoft.com/t5/Outlook-Blog/Outlook-mobile-meets-needs-of-customers-with-the-highest-Federal/ba-p/313938).
 
+> [!IMPORTANT]
+> For Teams, currently you need to exclude Teams from being installed when you install Office 365 ProPlus. Instead, you need to install Teams by using the separate MSI-based installer. In the future, you'll be able to install Teams along with Office 365 ProPlus without needing to use the separate MSI-based installer.
+> - For steps on how to exclude Teams from being installed with Office 365 ProPlus, see [How to exclude Microsoft Teams from new installations of Office 365 ProPlus](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
+>- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
+
 ## Which update channel of Office 365 ProPlus to use
 
 For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Office 365 ProPlus. For more information about update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
  
 ## Where to install Office 365 ProPlus from and where to get updates
 
-If network connectivity and other considerations based on your organizational requirements aren’t an issue, you can choose to deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the Internet. You can also configure Office 365 ProPlus to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Office 365 ProPlus up to date.
+If network connectivity and other considerations based on your organizational requirements aren't an issue, you can choose to deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the Internet. You can also configure Office 365 ProPlus to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Office 365 ProPlus up to date.
 
-If you don’t want computers installed with Office 365 ProPlus to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Office 365 ProPlus to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Office 365 ProPlus and updates to Office 365 ProPlus to the shared folder on your internal network. Also, computers installed with Office 365 ProPlus still require Internet connectivity in order to remain activated.
+If you don't want computers installed with Office 365 ProPlus to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Office 365 ProPlus to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Office 365 ProPlus and updates to Office 365 ProPlus to the shared folder on your internal network. Also, computers installed with Office 365 ProPlus still require Internet connectivity in order to remain activated.
 
 Keep in mind that installing and updating Office 365 ProPlus from a shared folder on your local network requires significantly more administrative effort and more disk space. For example, you have to keep track of when new builds of Office 365 ProPlus are available and then download the updated version of Office 365 ProPlus to your network. The core files for Office 365 ProPlus are at least 1.6 GB and at least 250 MB for each language deployed.
 
@@ -102,7 +107,7 @@ To prevent Skype for Business client from sending telemetry data to Microsoft, e
 For more information, see [Skype for Business and Microsoft Teams data collection practices](https://docs.microsoft.com/SkypeForBusiness/legal-and-regulatory/data-collection-practices).
 
 ### Turn off sending telemetry data to Microsoft from Office for Mac
-Office for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the ‘Nexus’ endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
+Office for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the 'Nexus' endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
 - **Heartbeat** contains version and license information. This data is sent immediately upon app launch.
 - **Usage** contains information about how apps are being used and non-fatal errors. This data is sent every 60 minutes.
 
@@ -190,7 +195,7 @@ The following registry values are optional. The type for these registry values i
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
   **Description:** This suppresses the option of configuring Outlook on a mobile device following a successfully configured account in Outlook Desktop. <br/>
 
-Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user’s mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
+Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user's mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
 
 
 ## Special considerations
@@ -214,7 +219,7 @@ For installations of Office 365 ProPlus that are configured to get updates autom
 
 The Click-to-Run service contacts DMS to check for updates and will get a JSON response letting it know if a new build is available to download. None of the data passed by the Click-to-Run service is stored by the DMS service. The data is merely used as filtering criteria to determine what build information should be provided to the Click-to-Run for updating Office 365 ProPlus.
  
-The DMS service doesn’t process, store or transmit any personally identifiable information or customer content.
+The DMS service doesn't process, store or transmit any personally identifiable information or customer content.
 
 
 ## Related topics

@@ -21,11 +21,14 @@ Teams is also being added to ***existing*** installations of Office 365 ProPlus 
 > [!NOTE]
 > To complete the installation of Teams on new or existing installations of Office 365 ProPlus, either restart the device or have the user log off and log back on.
 
-If Skype for Business is already installed on the device, Skype for Business won’t be removed and will continue to function as before. Skype for Business will continue to be installed with new installations of Office 365 ProPlus, unless you configure your installation to exclude it.
+If Skype for Business is already installed on the device, Skype for Business won't be removed and will continue to function as before. Skype for Business will continue to be installed with new installations of Office 365 ProPlus, unless you configure your installation to exclude it.
 
 You don't have to wait if you're ready now to deploy Teams to the users in your organization. You can deploy Teams for your users by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment) or you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads).
 
 We also have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) or [existing](#what-about-existing-installations-of-office-365-proplus) installations of Office 365 ProPlus if your organization isn't ready to deploy Teams.
+
+> [!IMPORTANT]
+> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Office 365 ProPlus. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Office 365 ProPlus in GCC High or DoD environments without needing to use the separate MSI-based installer.
 
 If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
@@ -34,7 +37,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
 
-The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you’re using. The following table shows the schedule.
+The date when Teams starts being installed with ***new*** installations of Office 365 ProPlus depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you're using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
@@ -49,7 +52,7 @@ The date when Teams starts being installed with ***new*** installations of Offic
 
 ## How to exclude Microsoft Teams from new installations of Office 365 ProPlus
 
-If you don’t want Teams included when you install Office 365 ProPlus on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
+If you don't want Teams included when you install Office 365 ProPlus on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
 If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
@@ -76,13 +79,13 @@ If you want to use the [Office Deployment Tool](overview-of-the-office-2016-depl
 > [!TIP]
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
-If you’re deploying Office 365 ProPlus by using the Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
+If you're deploying Office 365 ProPlus by using the Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
 
 If you're deploying Office 365 ProPlus by using Microsoft Intune, there is a checkbox to exclude Teams on the **Configure App Suite** pane.  
 
-If you’re letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can’t exclude Teams from being included as part of the installation, unless you use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams).
+If you're letting your users install Office 365 ProPlus for themselves from the Office 365 portal, you can't exclude Teams from being included as part of the installation, unless you use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams).
 
-To remove Teams after it’s been installed, go to **Control Panel** > **Uninstall a program** and uninstall **Microsoft Teams** and any instances of **Teams Machine-Wide Installer**. If you previously installed Teams separately from installing Office 365 ProPlus, you might see multiple instances of **Teams Machine-Wide Installer**. You can also use PowerShell to remove Teams as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
+To remove Teams after it's been installed, go to **Control Panel** > **Uninstall a program** and uninstall **Microsoft Teams** and any instances of **Teams Machine-Wide Installer**. If you previously installed Teams separately from installing Office 365 ProPlus, you might see multiple instances of **Teams Machine-Wide Installer**. You can also use PowerShell to remove Teams as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
 
 The guidance above in this section also applies to Office 365 Business.
 
@@ -95,7 +98,7 @@ Whether Teams gets added to an existing installation of Office 365 ProPlus is de
 > [!IMPORTANT]
 > If you're updating your existing installation of Office 365 ProPlus to Version 1908 (Build 11929.20300) or later, Teams will be added. To complete the installation of Teams after the update, either restart the device or have the user log off and log back on.
 
-The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you’re using. The following table shows the schedule.
+The date when Teams can start being added to ***existing*** installations of Office 365 ProPlus depends on which update channel you're using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
@@ -176,17 +179,17 @@ After Teams is installed, it's automatically updated approximately every two wee
 
 If you're using Version 16.21, or later, of the Office suite install package to deploy on a Mac, Teams will be included as part of the installation.
 
-If you don’t want Teams included as part of the installation, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
+If you don't want Teams included as part of the installation, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
 
-If you’re letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can’t exclude Teams from being included as part of the installation.
+If you're letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can't exclude Teams from being included as part of the installation.
 
 To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the dock, then hold down Option and choose **Force Quit**. Open the **Application Folder**, select **Microsoft Teams**, and move it to the **Trash**.
 
-## What about Office 365 plans that don’t include Microsoft Teams?
+## What about Office 365 plans that don't include Microsoft Teams?
 
-Some Office 365 plans include Office, but don’t include the Teams service. For example, the Office 365 Business plan. Even if an Office 365 plan doesn’t include the Teams service, Teams will still be installed with Office, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
+Some Office 365 plans include Office, but don't include the Teams service. For example, the Office 365 Business plan. Even if an Office 365 plan doesn't include the Teams service, Teams will still be installed with Office, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
 
-For Office 365 plans that don't include the Teams service, a free trial version of Teams that’s valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
+For Office 365 plans that don't include the Teams service, a free trial version of Teams that's valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
 
 ## Additional information about installing Microsoft Teams
 
