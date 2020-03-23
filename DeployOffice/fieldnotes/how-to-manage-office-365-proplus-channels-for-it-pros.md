@@ -22,7 +22,7 @@ We recommend that enterprise customers include validation as a part of their Off
 This article explains how Office 365 ProPlus processes channel change requests.
  
 > [!TIP]
-> New Semi-Annual Channel versions are released in January/July. Semi-Annual Channel (Targeted) versions are released in March/September. All channels receive a minimum of one build per month that contain security and critical customer-escalated fixes. (The latter has a very high bar.)
+> Semi-Annual Channel versions are released in January/July. Semi-Annual Channel (Targeted) versions are released in March/September. All channels receive a minimum of one build per month that contain security and critical customer-escalated fixes. (The latter has a very high bar.)
 
 To read more about channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
  
@@ -60,7 +60,7 @@ HKLM\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate "updatebranch"=
 ```
 
 **Step 3: Allow the Microsoft\Office\Office Automatic Updates 2.0 scheduled task to run.**
-Group Policy will set registry keys. That’s all. Office 365 ProPlus uniquely leverages a scheduled task named *Office Automatic Updates* to maintain product configuration, including channel management. The name itself "Automatic Updates" can cause confusion for IT pros in enterprise environments where System Center Configuration (SCCM) is used to deploy updates. When OfficeMgmtCom (COM) is enabled, updates will be delivered only from SCCM. The Office Automatic Updates scheduled task will fire based on a default set of triggers, regardless of whether COM is enabled. By manually running the task instead, you can compress the time frame to validate changes.
+Group Policy will set registry keys, that’s all. Office 365 ProPlus uniquely leverages a scheduled task named *Office Automatic Updates* to maintain product configuration, including channel management. The name itself "Automatic Updates" can cause confusion for IT pros in enterprise environments where System Center Configuration (SCCM) is used to deploy updates. When OfficeMgmtCom (COM) is enabled, updates will be delivered only from SCCM. The Office Automatic Updates scheduled task will fire based on a default set of triggers, regardless of whether COM is enabled. By manually running the task instead, you can compress the time frame to validate changes.
  
 > [!WARNING] 
 > Microsoft recommends that *Automatic Updates* remains enabled (the default configuration) in all update scenarios. This task does more than the name implies. If you disable it, you may have a diminished channel management experience and disable the feature to apply updates when the system is idle.
