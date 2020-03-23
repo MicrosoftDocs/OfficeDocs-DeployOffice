@@ -50,11 +50,11 @@ So, how do you build packages that are less costly to maintain over a long time 
 
 You can resolve these issues by implementing self-adjusting, small, and universal packages. Let's cover the basic concepts before we dive into sample scenarios.
 
-Build dynamic packages where you don’t hard-code anything. Use features of the [Office Deployment Tool (ODT)](https://go.microsoft.com/fwlink/p/?LinkID=626065) to enable the packages to self-adjust to the requirements:
+Build **dynamic** packages where you don’t hard-code anything. Use features of the [Office Deployment Tool (ODT)](https://go.microsoft.com/fwlink/p/?LinkID=626065) to enable the packages to self-adjust to the requirements:
 - Use [Version=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-Blog/New-feature-Make-changes-to-Office-deployments-without-changing/ba-p/816482) to prevent unexpected updates and stay in control of the version installed on a client. No hard coding of a build number, which gets outdated quickly, is required.
 - Use [Language=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Dynamically-match-already-existing-languages-when-installing/m-p/716927) to instruct Visio or Project, for example, to install by using the same languages that are already installed for Office. No need to list them or build a script that injects the required languages.
  
-Build lean packages by removing the source files from the packages. This has multiple benefits:
+Build **lean** packages by removing the source files from the packages. This has multiple benefits:
 
 - Package size is much smaller, from 2.5 GB down to less than 10 megabytes for the ODT and its configuration file.
 - Instead of pushing a 2.5-GB install package to clients, you let clients pull what they need on demand from Office Content Delivery Network (CDN), which saves bandwidth.
@@ -64,11 +64,11 @@ Build lean packages by removing the source files from the packages. This has mul
 - A second install scenario is often less frequent, which lowers the Internet traffic burden, ultimately reducing the impact.
 - You don’t have to update the source files every time Microsoft releases new features or security and quality fixes.
  
-Build universal packages by not hard coding things like the architecture or update channel. ODT will dynamically match the existing install, so your packages work across all update channels and architectures. Instead of having 4 packages to install Visio, for example, you'll have a single, universal package that will work across all permutations of update channels and architectures.
+Build **universal** packages by not hard coding things like the architecture or update channel. ODT will dynamically match the existing install, so your packages work across all update channels and architectures. Instead of having 4 packages to install Visio, for example, you'll have a single, universal package that will work across all permutations of update channels and architectures.
 - Leaving out [OfficeClientEdition](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Insights-into-OfficeClientEdition-and-how-to-make-it-work-for/m-p/767577) makes your package universal for mixed x86/x64 environments.
 - Leaving out [Channel](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Understanding-the-Channel-attribute-of-the-Office-Deployment/m-p/813604) makes your package universal across update channels.
  
-## How to and benefits of building dynamic, lean, and universal packages
+## How to build and benefit from building dynamic, lean, and universal packages
 
 The idea is to not hard code everything in the configuration file, but to instead utilize the cleverness of the Office Deployment Tool as much as possible.
 
@@ -93,9 +93,9 @@ When we apply  the concepts of dynamic, lean, and universal packages, the result
 
 ```
 <Configuration>
- <Add OfficeClientEdition="64" Channel="Broad">
+ <Add Version="MatchInstalled">
   <Product ID="ProjectProRetail">
-   <Language ID="en-us" />
+   <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
   </Product>
  </Add>
  <Display Level="None" />
@@ -108,7 +108,7 @@ So what have we changed, and what are the benefits?
    - Benefit: The configuration file now works for both *x*86 and *x*64 scenarios.
 - We removed the channel for the same reason. ODT will automatically match the already-assigned update channel.
    - Benefit I: The package works for all update channels (Monthly, Semi-annual, SAC-T, and others).
-   - Benefit II: It also works for update channels you don’t offer as central IT. Some users are running monthly, some are on insider builds? Don’t worry, it just works.
+   - Benefit II: It also works for update channels you don’t offer as central IT. Some users are running Monthly Channel, some are on Insider builds? Don’t worry, it just works.
 - We added *Version=MatchInstalled*, which ensures that ODT will install the same version that's already installed.
    - Benefit: You're in control of versions deployed, with no unexpected updates.
 - We added *Language ID="MatchInstalled"*  and *TargetProduct* to match the currently installed languages, replacing a hard-coded list of languages to install.
@@ -116,7 +116,7 @@ So what have we changed, and what are the benefits?
    - Benefit II: No need to rerequest language pack installs.
    - Benefit III: Also works for rarely used languages that you as the central IT admin don’t offer, which makes users happy.
 - We removed the source files. The ODT will fetch the correct set of source files from the Office CDN just in time.
-   - Benefit I: The package never gets old. No maintenance of source files is needed.
+   - Benefit I: The package never gets outdated. No maintenance of source files is needed.
    - Benefit II: The download is about 50 megabytes instead of about 2.5 GB.
  
 ## Another example: Add language packs and proofing tools the dynamic, lean, and  universal way
