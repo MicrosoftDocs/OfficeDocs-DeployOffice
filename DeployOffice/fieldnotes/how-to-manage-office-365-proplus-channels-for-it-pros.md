@@ -12,10 +12,10 @@ ms.custom:
 ms.collection: 
 ---
 
-# Field notes: How to manage Office 365 ProPlus Channels for IT pros
+# Best practices from the field: How to manage Office 365 ProPlus Channels for IT pros
 
 > [!NOTE]
-> Field notes are created by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
 We recommend that enterprise customers include validation as a part of their Office 365 ProPlus deployment processes. Microsoft provides "channels" that control the rate of change of features and quality fixes. For most customer deployments, this means a minimum of two channels, such as Semi-Annual Channel and Semi-Annual Channel (Targeted). Many IT pros broadly deploy a single channel (usually Semi-Annual Channel) and use Group Policy to assign validation computers to a faster channel, such as Semi-Annual Channel (Targeted). In this way, they can preview what’s coming four months before production release.
  
@@ -53,24 +53,23 @@ Using [Office ADMX](https://www.microsoft.com/download/details.aspx?id=49030) fi
 
 ![Update Channel GPO](../images/gpo.png)
 
-Group Policy refreshes in the background every 90 minutes by default. Use **gpupdate /force** to expedite. Alternatively, add the registry key manually to the policy key:
+Group Policy refreshes in the background every 90 minutes by default. Use **gpupdate /force** to expedite this refresh. Alternatively, add the registry key manually to the policy key:
 
 ```
 HKLM\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate "updatebranch"="FirstReleaseDeferred"
 ```
 
 **Step 3: Allow the Microsoft\Office\Office Automatic Updates 2.0 scheduled task to run.**
-Group Policy will set registry keys. That’s all. Office 365 ProPlus uniquely leverages a scheduled task named *Office Automatic Updates* to maintain product configuration, including channel management. The name itself "Automatic Updates" can cause confusion for IT pros in enterprise environments where System Center Configuration (SCCM) is used to deploy updates. When OfficeMgmtCom (COM) is enabled, updates will be delivered only from SCCM. The Office Automatic Updates scheduled task will fire based on a default set of triggers, regardless of whether COM is enabled. By manually running the task instead, you can compress the time frame to validate changes.
+Group Policy will set registry keys. That’s all. Office 365 ProPlus uniquely leverages a scheduled task named *Office Automatic Updates* to maintain product configuration, including channel management. The name itself "Automatic Updates" can cause confusion for IT pros in enterprise environments where Configuration Manager is used to deploy updates. When OfficeMgmtCom (COM) is enabled, updates will be delivered only from Configuration Manager. The Office Automatic Updates scheduled task will fire based on a default set of triggers, regardless of whether COM is enabled. By manually running the task instead, you can compress the time frame to validate changes.
  
 > [!WARNING] 
-> Microsoft recommends that *Automatic Updates* remains enabled (the default configuration) in all update scenarios. This task does more than the name implies. If you disable it, you may have a diminished channel management experience and disable the feature to apply updates when the system is idle.
+> Microsoft recommends that Automatic Updates remains enabled (the default configuration) in all update scenarios. This task does more than the name implies. If you disable it, you may have a diminished channel management experience and disable the feature to apply updates when the system is idle.
 
 For more information about the CDN update workflow, see 2:00 in the [Managing Office with SCCM (2019)](https://www.youtube.com/watch?v=9lFyyj-V2AA) video.
- 
+
 > [!TIP]
 > List of channels and URL identifiers CDNBaseUrl represents the channel where product was installed. If no channel was defined in *unattend,* Semi-Annual Channel is the default selection.
 
-```
 Monthly Channel 
 (formerly *Current Channel*):
 CDNBaseUrl = http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
@@ -86,18 +85,17 @@ CDNBaseUrl = http://officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f
 Semi-Annual Channel (Targeted) 
 (formerly *First Release for Deferred Channel*):
 CDNBaseUrl = http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
-```
 
-> [!TIP]
-> IT pros can monitor several registry keys to confirm that change has occurred after the scheduled task has completed. Registry subkeys of interest for monitoring can be found under the key HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration. Editing keys directly can lead to unintended consequences and should be avoided. Rather, monitor keys for the desired outcome.
+
+IT pros can monitor several registry keys to confirm that change has occurred after the scheduled task has completed. Registry subkeys of interest for monitoring can be found under the key HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration. Editing keys directly can lead to unintended consequences and should be avoided. Rather, monitor keys for the desired outcome.
                                                
 **UpdateChannel:** This is the channel configuration "winner." This is dynamically managed by the Automatic Updates scheduled task and should not be edited directly.
  
-In our example where we use GPO to move Office 365 ProPlus to Semi-Annual Channel (Targeted), the Office Automatic Updates scheduled task will discover the policy key and then change *UpdateChannel* to a new value, in this case from *http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114 (SAC)* to *http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf (SAC-T)*. Additionally, *UpdateChannelChanged* will be set to *True*. As of the next successful Office 365 client update, *UpdateChannelChanged* will reset to *False*. The product can only accept one channel change request at a time. Successful update is a prerequisite for accepting another change.
+In our example where we use GPO to move Office 365 ProPlus to Semi-Annual Channel (Targeted), the Office Automatic Updates scheduled task will discover the policy key and then change **UpdateChannel** to a new value, in this case from *http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114 (SAC)* to *http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf (SAC-T)*. Additionally, *UpdateChannelChanged* will be set to *True*. As of the next successful Office 365 client update, *UpdateChannelChanged* will reset to *False*. The product can only accept one channel change request at a time. Successful update is a prerequisite for accepting another change.
  
-If you've completed the steps described previously and the channel change still isn't shown, you may be blocked by a temporary *discovery period*. Generally, updates won't happen during the discovery period, which can last up to 24 hours after initial installation. IT pros may encounter this scenario during compressed time validation in lab scenarios.
+If you've completed the steps described previously and the channel change still isn't shown, you may be blocked by a temporary discovery period. Generally, updates won't happen during the discovery period, which can last up to 24 hours after initial installation. IT pros may encounter this scenario during compressed time validation in lab scenarios.
  
-After *UpdateChannel* is successfully changed, Office 365 clients that point to CDN will download the latest build from the faster channel. Clients that have COM enabled for SCCM integration will download a newer build the next time that the Software Updates Deployment Evaluation cycle runs, based on the Software Deployment configuration in SCCM. IT pros can expedite testing channel migration by deploying a desired build to validation collection. (It should be a build from Semi-Annual Channel (Targeted).) Use the Configuration Manager control panel item to perform Machine Policy Retrieval, followed by the Software Updates Deployment Evaluation cycle.
+After UpdateChannel is successfully changed, Office 365 clients that point to CDN will download the latest build from the faster channel. Clients that have COM enabled for Configuration Manager integration will download a newer build the next time that the Software Updates Deployment Evaluation cycle runs, based on the Software Deployment configuration in Configuration Manager. IT pros can expedite testing channel migration by deploying a desired build to validation collection. (It should be a build from Semi-Annual Channel (Targeted).) Use the Configuration Manager control panel item to perform Machine Policy Retrieval, followed by the Software Updates Deployment Evaluation cycle.
 
 ![The Actions tab of Configuration Manager Properties](../images/applet.png)
 
@@ -107,10 +105,9 @@ After *UpdateChannel* is successfully changed, Office 365 clients that point to 
 - The client will always gracefully move forward when a now-available build number is higher. For example, a client on June 2019 Semi-Annual Channel with build version 1808 (build 10730.20348) will move to Semi-Annual Channel Targeted with build version 1902 (build 11328.20318). No  administrative intervention is required. The normal update process/workflow applies the change.
 
 **Faster -> slower (Example: SAC-T to SAC)**
-- In an SCCM-managed environment where COM is enabled, Office will not auto downgrade when the channel is changed. It will only move forward once the build advertised is later than what’s currently installed. For example, an Office ProPlus client on Semi-Annual Targeted build June 2019 version 1902 (build 11328.20318) will have to wait until the Semi-Annual Channel build number is greater to move forward, such as July 2019 version 1902 (build 11328.20368). The supported downgrade method is to rerun Office Deployment Tool with the desired build and channel. Keep in mind that during the waiting period, the Office 365 client won't receive any updates, including security updates.
+- In an Configuration Manager environment where COM is enabled, Office will not auto downgrade when the channel is changed. It will only move forward once the build advertised is later than what’s currently installed. For example, an Office ProPlus client on Semi-Annual Targeted build June 2019 version 1902 (build 11328.20318) will have to wait until the Semi-Annual Channel build number is greater to move forward, such as July 2019 version 1902 (build 11328.20368). The supported downgrade method is to rerun Office Deployment Tool with the desired build and channel. Keep in mind that during the waiting period, the Office 365 client won't receive any updates, including security updates.
 - In a non-COM-managed environment such as default configuration CDN, your new version will be downgraded to match the Group Policy that's assigned.
-
-*Since we can’t do binary delta compression (BDC) the download will be larger. As a result, network considerations should be considered when downgrading from CDN.
+- Since we can’t do binary delta compression (BDC) the download will be larger. As a result, network considerations should be considered when downgrading from CDN.
  
 ## Frequently asked questions
 
@@ -122,10 +119,8 @@ Some customers may need to have one factory image of Windows that includes Offic
 
 We recommend that customers use Group Policy to change Office 365 ProPlus channels because it's easier for IT pros. Group Policy sets a registry key under the policy hive and Office Automatic Updates scheduled task to processes channel change. The link above references *CDNBaseURL*. Notice in the following list that this is the fourth item evaluated for priority by the scheduled task. So, if the first three priorities listed aren't configured and *CDNBaseURL* doesn't match *UpdateChannel*, the scheduled task will align them, resulting in channel change.  This article leads with Group Policy where the link above requires a direct registry change through Group Policy Preferences or Compliance Item in SCCM.
  
-```
-1st Priority : GPO "UpdatePath" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatepath
-2nd Priority : GPO "UpdateChannel" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatebranch
-3rd Priority : "UpdateURL" or UpdatePath="\\Server\Share" HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration
-4th Priority : CDNBaseURL - HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl
-```
+- 1st Priority : GPO "UpdatePath" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatepath
+- 2nd Priority : GPO "UpdateChannel" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatebranch
+- 3rd Priority : "UpdateURL" or UpdatePath="\\Server\Share" HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration
+- 4th Priority : CDNBaseURL - HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl
  
