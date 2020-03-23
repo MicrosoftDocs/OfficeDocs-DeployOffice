@@ -32,3 +32,20 @@
 [0323/123215.424:ERROR:main_delegate.cc(814)] Could not load cef_200_percent.pak
 [0323/123215.424:ERROR:main_delegate.cc(824)] Could not load cef_extensions.pak
 [0323/123215.619:ERROR:content_client.cc(252)] No data resource available for id 25401
+[0323/131951.386:ERROR:main_delegate.cc(805)] Could not load cef_100_percent.pak
+[0323/131951.386:ERROR:main_delegate.cc(814)] Could not load cef_200_percent.pak
+[0323/131951.386:ERROR:main_delegate.cc(824)] Could not load cef_extensions.pak
+[0323/131951.639:ERROR:main_delegate.cc(805)] Could not load cef_100_percent.pak
+[0323/131951.639:ERROR:main_delegate.cc(814)] Could not load cef_200_percent.pak
+[0323/131951.639:ERROR:main_delegate.cc(824)] Could not load cef_extensions.pak
+[0323/131951.767:ERROR:viz_main_impl.cc(169)] Exiting GPU process due to errors during initialization
+[0323/131951.954:ERROR:main_delegate.cc(805)] Could not load cef_100_percent.pak
+[0323/131951.955:ERROR:main_delegate.cc(814)] Could not load cef_200_percent.pak
+[0323/131951.955:ERROR:main_delegate.cc(824)] Could not load cef_extensions.pak
+[0323/131952.079:ERROR:viz_main_impl.cc(169)] Exiting GPU process due to errors during initialization
+[0323/131952.099:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0323/131952.666:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0323/131952.855:ERROR:main_delegate.cc(805)] Could not load cef_100_percent.pak
+[0323/131952.855:ERROR:main_delegate.cc(814)] Could not load cef_200_percent.pak
+[0323/131952.855:ERROR:main_delegate.cc(824)] Could not load cef_extensions.pak
+[0323/131953.159:ERROR:content_client.cc(252)] No data resource available for id 25401
