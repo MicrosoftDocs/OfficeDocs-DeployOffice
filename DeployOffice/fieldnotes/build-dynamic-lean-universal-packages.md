@@ -23,14 +23,14 @@ As an admin, you might have to deploy Office 365 ProPlus in your organization. B
 This article shows you how to build dynamic, lean, and universal packages for Office 365 ProPlus. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
 ## The challenge
-When you plan your upgrade to Office 365 ProPlus, the actual upgrade from a legacy version to the always-current Office 365 ProPlus is front and center. But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin. Sometimes, after you upgrade your users, they might need any of the following components:
+When you plan your upgrade to Office 365 ProPlus, the actual upgrade from a legacy version to the always-current Office 365 ProPlus is front and center (1st install scenario). But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin (2nd install). Sometimes, after you upgrade your users, they might need any of the following components:
  
 - Additional language packs
 - Proofing tools
 - Visio
 - Project
 
-In managed environments, each of these items would require a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~2.5 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
+Historically, each of these scenarios was adressed by creating a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~2.5 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
 
 But, especially in larger organizations, you often don't run a single installation of Office 365 ProPlus. You might have a mix of update channels (often SAC and SAC-T). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
 
@@ -40,7 +40,7 @@ So in the end, you wouldn't have *1* package per component but *4*, covering eac
 - High-bandwidth consumption, as a client might get the full 2.5-GB package pushed down before installation.
 - High maintenance costs to keep embedded source files current.
 - High user impact, if you haven’t kept the source files current and installing a component will perform a downgrade just to perform an update to the current version soon after.
-- Low satisfaction for users who have to pick their package from among many options.
+- Low satisfaction for users who have to pick the matching package from many options presented in the software portal.
  
 While the initial upgrade to Office 365 ProPlus is a one-time activity, the scenarios described previously will be applicable over a longer period. Users might need additional components days, weeks, or even years after the initial deployment.
 
