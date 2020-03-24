@@ -25,7 +25,7 @@ Using Office 365 ProPlus on older, unsupported operating systems may cause perfo
 
 ## Security updates will continue for Office 365 ProPlus on Windows 7
 
-Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. We're doing this to give you additional time to make the transition from running Office 365 ProPlus on devices running Windows 7 to a supported operating system, such as Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Office 365 ProPlus won't receive any new features updates.
+Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. We're doing this to give you additional time to make the transition from using Office 365 ProPlus on devices running Windows 7 to devices running a supported operating system, such as Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Office 365 ProPlus won't receive any new features updates.
 
 > [!IMPORTANT]
 > - Even with these security updates, Office 365 ProPlus is no longer supported on Windows 7.
@@ -38,26 +38,26 @@ Version 2002 is the last version of Office 365 ProPlus that you can install on d
 This means that if you want to continue to deploy and update Office 365 ProPlus on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Office 365 ProPlus, such as Version 2005, on a device running Windows 7, you will receive an error message.
 
 > [!NOTE]
-> You can continue to use a version of Office 365 ProPlus earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see which versions of Office 365 ProPlus are available, see the table in [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).  
+> You can continue to use a version of Office 365 ProPlus earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see the version available in each update channel of Office 365 ProPlus, refer to the table in [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).  
 
 To deploy or update Version 2002 on devices running Windows 7, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Microsoft Endpoint Configuration Manager. Also, Office 365 ProPlus can remain on the same update channel as before.
 
-If Office 365 ProPlus is configured to get updates directly from the Office Content Delivery Network (CDN) on the internet, Office 365 ProPlus will be updated automatically to the most current release of Version 2002 for that update channel on devices running Windows 7.
+If Office 365 ProPlus is configured to get updates directly from the Office Content Delivery Network (CDN) on the internet, Office 365 ProPlus on devices running Windows 7 will be updated automatically to the most current release of Version 2002 for that update channel.
 
 ## Guidance when using Configuration Manager for updates
 
 If you use Configuration Manager and the Software Update management workflow to update installations of Office 365 ProPlus, we recommend that you create a separate collection for your Windows 7 devices and use a query rule to add members to the collection.
 
-On the 2nd Tuesday of each month, a new update package for Version 2002, and only for devices running Windows 7, will be made available in the Microsoft Update catalog. There will be an update package for each architecture (x86 or x64) and that update package can be used with whichever update channel of Office 365 ProPlus you have deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Monthly Channel or a Semi-Annual Channel installation of Office 365 ProPlus on devices running Windows 7.
+On the 2nd Tuesday of each month, a new update package for Version 2002 that is only for devices running Windows 7 will be made available in the Microsoft Update Catalog. There will be an update package for each architecture (x86 or x64) and that update package can be used with whichever update channel of Office 365 ProPlus you have deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Monthly Channel or a Semi-Annual Channel installation of Office 365 ProPlus on devices running Windows 7.
 
-In the Office 365 Updates node, you will see entries like this, where ##### will be replaced by the most current build number:
+In the Office 365 Updates node, you will see entries like the following, where ##### will be replaced by the most current build number:
 
 - Office 365 Client Update for Windows 7 – Version 2002 for x64 based Edition (Build 12527.#####)
 - Office 365 Client Update for Windows 7 – Version 2002 for x86 based Edition (Build 12527.#####)
 
 These update packages are configured to apply ***only*** to devices running Windows 7. These update packages can't be used to update Office 365 ProPlus on devices running other supported operating systems, such as Windows 10.
 
-If you use an Automatic Deployment Rule (ADR), you should create a new rule for these update packages that are specifically for Windows 7, and then use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Office 365 Client Update for Windows 7" as well as the architecture you support. If you support both x86 and x64, you can  include both updates in one Software Update Package as clients will apply the appropriate update. You should also check any other existing ADRs to make sure they don't incorrectly try to apply these Windows-7-specific update packages to devices running other operating systems.
+If you use an automatic deployment rule (ADR), you should create a new rule for these update packages, and then use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Office 365 Client Update for Windows 7" as well as the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients will apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
 
 ## Extended availability of Version 2002
 
@@ -82,9 +82,9 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
 ## Additional information
 
 - This information also applies to the following:
-   - Desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2. 
+   - Desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
   - Office 365 Business, which is the version of Office that is included with certain business plans, such as the Microsoft 365 Business plan and the Office 365 Business Premium plan.
 - Windows Server 2008 R2 also went out of support on January 14, 2020. Running Office 365 ProPlus on Windows Server 2008 R2 is no longer supported, even if you have [ESU for Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/extended-security-updates). Similar to Windows 7, Version 2002 is the last version of Office 365 ProPlus available for devices running Windows Server 2008 R2.  
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Office 365 ProPlus on devices running Windows 10, including [FastTrack](https://docs.microsoft.com/fasttrack/win-10-fasttrack-benefit-for-windows-10), [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure), and the [Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
-- To discuss or ask questions about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
+- To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
