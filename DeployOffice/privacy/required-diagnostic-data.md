@@ -1336,6 +1336,22 @@ The following fields are collected:
  
 - **total_file_accounts** - count of file accounts in the app at time of action
 
+#### account_lifecycle
+
+This event is collected to ensure account configuration is operating successfully and is used to monitor health of account creation, ability to add new email accounts, and monitor soft account resets.
+
+The following fields are collected: 
+
+- **action** - The type of action performed on the account, such as add, remove, or reset
+
+#### add_new_account_step
+
+This event lets us detect how far the user has gotten in the create new account form.  It indicates when the user has moved to another step or if they have dropped off.  We need this information to detect if any steps are failing and to ensure user account creation was successful. 
+
+The following field is collected: 
+
+- **OTAddAccountCurrentStep** - That can have the following values: profile_form, redirect_mobile_check, mobile_check_success
+
 #### app_error
 
 Tracks critical app errors used so that we can prevent issues that could cause your app to crash or prevent you from reading email.
@@ -1585,6 +1601,16 @@ The following fields are collected:
 - **origin** - where draft was initiated, e.g. message detail, compose.
  
 - **thread_id** - thread ID of the conversation draft is associated with
+
+#### drag_and_drop
+
+This event lets us detect the if the drag and drop action was successful or not.  It is used to ensure that drag-and-drop experiences are working correctly across applications both as a drop event into Outlook and a drag event that leaves Outlook.  With this data we are able to ensure that the end-to-end experience with other applications is working as expected.
+
+The following fields are collected: 
+
+- **action** - Action will be either drag or drop
+
+- **location** - In case of a drag action, this will let us know from which location the user started the drag.  In case of a drop action, this will let us know where the user dropped the file which was being dragged. 
 
 #### drawer_event
 
@@ -2102,7 +2128,6 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Scenario Id defined by the API
 
-
 #### mail_action
 
 Used for monitoring possible negative impact on your ability to perform critical mail actions (like running mail threaded mode, ensuring mail triage actions work) to ensure our app is functioning properly for mail.
@@ -2334,6 +2359,23 @@ The following fields are collected:
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
+
+#### Office_Android_EarlyTelemetry_ExpansionFilesAvailability
+
+We are enabling Android Package Kit (APK) expansion files for the Office mobile app. APK Expansion files are supplementary resource files that Android app developers can publish along with their app. To understand the reliability of the expansion files, we log a flag indicating whether expansion files are available or not at every boot.
+
+The following fields are collected:
+
+- **Data_ExpansionFilesAvailable** - A Boolean flag that indicates whether APK Expansion files are available on the device at the time of app boot.
+
+#### Office_Android_EarlyTelemetry_ExpansionFilesDownloader
+
+We are enabling Android Package Kit (APK) expansion files for the Office mobile app. APK Expansion files are supplementary resource files, that Android app developers can publish along with their app.  To understand the reliability of our expansion file download mechanism, we are logging a flag indicating whether we are successfully able to download expansion files.
+
+The following fields are collected: 
+
+- **Data_DownloadSuccess** - A Boolean flag that indicates whether APK Expansion files download is successful, whenever we attempt a download during app boot.
+
 
 #### Office_Android_Intune_IntuneComplianceRequest
 
@@ -4183,6 +4225,67 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
+#### Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+The event is collected for Union on Android. It records when a PDF open, close, or save operation takes place and is used to understand and prioritize the user experience based on PDF file operation information. The event enables us to keep the PDF open, close and save operations performing as expected, and to improve PDF file operation performance.
+
+The following fields are collected:
+
+- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session
+
+- **Data_Doc_URLHash** - A GUID for the file URL
+
+- **Data_ErrorCode** - error in case of file open failures/download failures / download cancelled
+
+- **Data_ErrorMessage** - relevant message-to-error code
+
+- **Data_FailureReason** - In case of open failure, these enums define the reason for failure.
+
+- **Data_FileLocation** - Location where the file sits, ex: Local, ODSP, iCloud, etc.
+
+- **Data_FileOpenEntryPoint** - entry point for file open
+
+- **Data_FileSize** - Size of the file on which the operation is happening
+
+- **Data_OpenMode** - In which mode the PDF was opened, ex: 0: View mode, 2: Sign mode
+
+- **Data_PageCount** - Count of page in the PDF File.
+
+- **Data_PasswordProtected** - Marker that tell whether the file is password protected or not.
+
+- **Data_ProviderApp** - currently providing provider app in case of file activation only 
+
+- **Data_ReadOnly** - Marker that tell whether the file is read-only or not.
+
+- **Data_Result** - The status of the operation being performed, ex: true:success, false:failure
+
+- **Data_Type** - Type of file operation (open, close or save) 
+
+#### Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(previous name)*
+
+This event collects the critical signal used to ensure OneNote users can successfully navigate through the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+
+The following fields are collected: 
+
+- **IS_SPANNED** - Indicates whether the app is in a spanned mode. This is specifically logged for foldable devices.
+
+- **NEW_STATE** - Indicates the applications' state right after the navigation
+
+- **OLD_STATE** - Indicates the applications' state right before the navigation
+
+#### Office.OneNote.Android.LensSDK.OfficeLensLaunched, OneNote.LensSDK.OfficeLensLaunched *(previous name)*
+
+This event collects the critical signal used to ensure that OfficeLens is launched correctly.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+
+The following fields are collected: 
+
+- **CAPTURE_MODE** - Indicates which mode has OfficeLens been launched in.  It could be default, edit, fast insert or video import.
+
+- **ERROR_CODE** - Indicates the launch error code in case there was an error while launching.
+
+- **IMAGE_COUNT** - Indicates the number of images taken
+
+- **LAUNCH_REASON** - Indicates the flow under which OfficeLens was launched. It could be over the lock screen or via Camera or Gallery options in StickyNotes or via OneNote Canvas etc.
 
 #### Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
@@ -6593,6 +6696,18 @@ The following fields are collected:
 
 - **token_type** - the type of token used to authenticate the account in order to save the file to help us detect authentication issues associated with saving a file
 
+#### search_subtab_selected
+
+This event lets us track the entity type pills (all, mail, contacts and calendar) that users are using when they do their searches so we can ensure the search filter mechanisms are working properly.
+
+The following fields are collected:
+
+- **properties_general** -The general properties that all Aria event is collecting
+
+- **selected_reason** - The cause of the type pill getting selected, which could be one of these three values: tap_on_header, tap_on_see_all, enter_search_mode
+
+- **subtab_type** - The type pill that got selected, which could be one of these four values: all, mail, contact, event.
+
 #### send_message
 
 Used for monitoring possible negative impact on the performance and health of sending email messages.
@@ -6891,6 +7006,22 @@ The following fields are collected:
 - **RMS.ServerType** - The type of Rights Management Service Server 
 
 - **RMS.StatusCode** - Status code of the operation result
+
+#### first_visible
+
+This event lets us detect the first time the app is launched intentionally by the user. This event is required to ensure that the app is successfully working in Original Equipment Manufacturer (OEM) builds.
+
+The following fields are collected:
+
+- **is_oem** - a field tracking that indicates whether the application is running on an OEM variant
+
+- **is_system_install** - a field tracking the presence of a pre-installed property file that should indicate that this install is OEM 
+
+- **manufacturer** - device manufacturer
+
+- **model** - device model
+
+- **systemFlagSet** - value of the Android system flag (ApplicationInfo.FLAG_SYSTEM) that indicates if the application was installed as part of the device's system image
 
 #### GetUserOp
 
@@ -9549,6 +9680,86 @@ The following fields are collected:
 
 - **UserInfo.UserObjectId** - The user object Id
 
+#### IpcpGetKey
+
+Collected when a user attempts to open an Information Rights Managed (IRM) protected document or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcpGetKey API call is made.
+
+The following fields are collected:
+
+- **AppInfo.ClientHierarchy** - Client hierarchy which indicates the application runs in production environment or developer environment
+
+- **AppInfo.Name** - Application name.
+
+- **AppInfo.Version** - Application version
+
+- **iKey** - Logging service server ID
+
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
+
+- **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
+
+- **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
+
+- **RMS.ContentId** - Content ID of the document
+
+- **RMS.Duration** - Total time for API call to complete
+
+- **RMS.DurationWithoutExternalOps** - Total time minus external operations consumed, such as network latency.
+
+- **RMS.ErrorCode** - The error code returned if any from the API call
+
+- **RMS.EulId** - The ID of End User License
+
+- **RMS.EulProvided** - Indicate if provides the End User License as input of the API call or not
+
+- **RMS.GuestTenant** - Guest tenant ID for the user 
+
+- **RMS.HomeTenant** - Home tenant ID for the user
+
+- **RMS.HttpCall** - indicate if there is http operation
+
+- **RMS.Identity.ExtranetUrl** - The extranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.IntranetUrl** - The intranet URL of Rights Management service server for the user, collected while getting a new Rights Account Certificate from the server
+
+- **RMS.Identity.Status** - The first time to get Rights Account Certificate from the server or renew the Rights Account Certificate 
+
+- **RMS.Identity.Type** - The type of the user account such as windows account or live account
+
+- **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
+
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate 
+
+- **RMS.KeyHandle** - The memory address of key handle
+
+- **RMS.LicenseFormat** - The license Format: Xrml or Json
+
+- **RMS.PL.ExtranetUrl** - The extranet URL in Publishing License
+
+- **RMS.PL.IntranetUrl** - The intranet URL in Publishing License
+
+- **RMS.PL.KeyType** - Values of "Single" or "Double" Indicates whether the PL was protected with Single Key Protection or Double Key Protection
+
+- **RMS.RACType** - The type of Rights Accounts Certificate
+
+- **RMS.Result** - Success or fail of the API call
+
+- **RMS.ScenarioId** - Scenario ID defined by the API
+
+- **RMS.SDKVersion** - The version of Rights Management Service Client
+
+- **RMS.ServerType** - The type of Rights Management Service Server
+
+- **RMS.StatusCode** - Status code of the returned result
+
+- **RMS.TemplatesCount** - The number of the templates
+
+- **RMS.TokenProvided** - Indicate if provides the token as input of the API call or not 
+
+- **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
+
+- **UserInfo.UserObjectId** - The user object ID
+
 #### json_parse_error 
  
 This event denotes that an error is thrown by the json parser.  We will be able to debug the read registry string that was sent to the json parser, to allow a smooth experience for our users.
@@ -10678,6 +10889,22 @@ The following fields are collected:
 - **ErrorAt** - Tag Value: Information about the place where the Failure happened
 
 - **ExceptionErrorMessage** - verbose error message
+
+#### Office_Android_EarlyTelemetry_ExpansionFilesErrors
+
+Android Package Kit (APK) expansion files for the Office mobile app are supplementary resource files that Android app developers can publish along with their app. To make our Expansion files download mechanism more reliable, we are logging the cause of errors that occur either in downloading the expansion files or while reading the downloaded expansion files.
+
+The following fields are collected:
+
+- **Data_ClassName** - Text representing the source code file name where there is an error.
+
+- **Data_ErrorMessage** - Text representing the operation that has failed.
+
+- **Data_ExceptionMessage** - An optional text field representing the cause of the exception.
+
+- **Data_ExceptionType** - An optional text field representing the name of the exception thrown from source code.
+
+- **Data_MethodName** - Text representing the method name in source code where there is an error.
 
 #### Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
