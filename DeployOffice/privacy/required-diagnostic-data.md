@@ -743,7 +743,7 @@ The following fields are collected:
 
   - **Data\_VisioSKU**:**integer** - 0 for Standard SKU and 1 for Professional SKU
 
-#### OneNote.App.OneNoteLaunchedNonActivated
+#### OneNote.App.OneNoteLaunchedNonActivated *(previous name)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Records information about activation state of the App.  The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
 
@@ -751,7 +751,7 @@ The following fields are collected:
 
 - **INSTALL_LOCATION** - Indicates if the app is pre-installed or is downloaded from Store
 
-#### OneNote.ResetStatus 
+#### OneNote.ResetStatus *(previous name)*, Office.OneNote.Android.ResetStatus
 
 The signal used to record any issues encountered when a user tries to reset the App.  The telemetry is used to monitor, detect and fix any issues caused during reset. 
 
@@ -765,7 +765,7 @@ The following fields are collected:
 
 - **Pass** - Indicates if the Reset was successful
 
-#### OneNote.SignIn.SignInCompleted 
+#### OneNote.SignIn.SignInCompleted *(previous name)*, Office.OneNote.Android.SignIn.SignInCompleted
 
 The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
 
@@ -785,7 +785,7 @@ The following fields are collected:
 
 - **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
 
-#### OneNote.SignIn.SignInStarted 
+#### OneNote.SignIn.SignInStarted *(previous name)*, Office.OneNote.Android.SignIn.SignInStarted
 
 The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
 
@@ -4227,7 +4227,7 @@ The following fields are collected:
 
 #### Office_OfficeMobile_PdfViewer_PdfFileOperations
 
-The event is collected for Union on Android. It records when a PDF open, close, or save operation takes place and is used to understand and prioritize the user experience based on PDF file operation information. The event enables us to keep the PDF open, close and save operations performing as expected, and to improve PDF file operation performance.
+The event is collected for the Office app for Android. It records when a PDF open, close, or save operation takes place and is used to understand and prioritize the user experience based on PDF file operation information. The event enables us to keep the PDF open, close and save operations performing as expected, and to improve PDF file operation performance.
 
 The following fields are collected:
 
@@ -6588,7 +6588,7 @@ The following fields are collected:
 
   - **Data\_ViewKind-** Type of Word view
 
-#### OneNote.Canvas.PageOpened 
+#### OneNote.Canvas.PageOpened *(previous name)*, Office.OneNote.Android.Canvas.PageOpened
 
 The signal used to record when a Page is opened.  The telemetry is used to monitor, detect and fix any issues caused when a Page is opened in OneNote
 
@@ -6598,13 +6598,13 @@ The following fields are collected:
 
 - **TIME_TAKEN_IN_MS** - time taken to open page
 
-#### OneNote.Capture.NewNote.NewNoteTaken
+#### OneNote.Capture.NewNote.NewNoteTaken *(previous name)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
 
 No additional fields are collected.
 
-#### OneNote.MessageBar.MessageBarClicked 
+#### OneNote.MessageBar.MessageBarClicked *(previous name)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
 The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
 
@@ -7481,7 +7481,7 @@ The following fields are collected:
 
 - **TotalTime** - total time spent
 
-#### OneNote.App.AppBootComplete 
+#### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete 
 
 The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.  This is used to ensure critical regression detection for OneNote app and service health.  If users can't launch the app for the first time, this would trigger a high severity incident.
 
@@ -7583,13 +7583,13 @@ The following fields are collected:
  
 - **USER_INTERACTED_DURING_EVENT** - Indicates if the user has interacted during booting
 
-#### OneNote.App.OneNoteAppForeground 
+#### OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground
 
 The signal used to indicate OneNote App is in foreground.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
 The following fields are collected: None
 
-#### OneNote.AppLaunch
+#### OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch
 
 The critical signal used to ensure OneNote users can successfully launch the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -10318,7 +10318,7 @@ The following fields are collected:
 
   - **Data\_WasSuccessful: bool -** true if open as was successful
 
-#### OneNote.Sync.ProvisioningCompleted
+#### OneNote.Sync.ProvisioningCompleted *(previous name)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
 The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
 
@@ -10334,7 +10334,7 @@ The following fields are collected:
 
 - **TimeTakenInMilliSeconds** - Returns time taken to complete provisioning in millisecond
 
-#### OneNote.Sync.ProvisioningStarted
+#### OneNote.Sync.ProvisioningStarted *(previous name)*, Office.OneNote.Android.Sync.ProvisioningStarted
 
 The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health
 
