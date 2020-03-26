@@ -520,6 +520,122 @@ The following data fields are common for all events for OneNote on Mac, iOS, and
 
 - **UserInfo_OtherIdType** -  A list of non-primary account types.
 
+## Data fields that are common for Outlook mobile events
+
+Outlook mobile collects common fields for each of our events so that we can ensure the app is up-to-date, secure, and functioning as expected. 
+
+The following data fields are common for all events for Outlook for iOS and Android.
+
+- **aad_tenant_id** - The tenant id of the customer if available
+
+- **account_cid** - A pseudonymous identifier that represents the current user
+
+- **account_domain** - Domain name of the account
+
+- **account_puid** - The globally unique user identifier for a consumer Microsoft account
+
+- **account_type** - Tracks the account type such as Office 365, Google Cloud Cache, Outlook.com, etc
+
+- **action** - The event action name (such as archive, delete, etc) so we can detect issues with specific actions taken
+
+- **ad_id** - The unique advertising identifier
+
+- **app_version** - Current version of the app installed to help us detect issues affecting certain app version
+
+- **AppInfo.ETag** - A unique identifier for managing release of our features to help us detect issues affecting certain features being released
+
+- **AppInfo.Language** - Currently language setting of the device to help us detect issues affecting certain languages
+
+- **AppInfo.Version** - Current version of the app installed to help us detect issues affecting certain app versions
+
+- **customer_type** - Indicates the type of customer (consumer, commercial, third party, etc) to help us detect issues affecting certain customer types
+
+- **device_category** - Indicates what type of device it is (phone, tablet, etc) to help us detect device category specific issues
+
+- **DeviceInfo.Id** - A unique device identifier to help us detect device specific issues
+
+- **DeviceInfo.Make** - The make of the device (i.e. Apple, Samsung, etc) to help us detect device make specific issues
+
+- **DeviceInfo.Model** - The device model (i.e. iPhone 6s) to help us detect device model specific issues
+
+- **DeviceInfo.NetworkType** - The current device network being used (WiFi, cellular, etc) to help us detect device network specific issues
+
+- **DeviceInfo.OsBuild** - The current OS build of the device to help us detect issues affecting certain OS builds
+
+- **DeviceInfo.OsName** - The name of the OS (for example, iOS) to help us detect issues affecting certain platforms
+
+- **DeviceInfo.OsVersion** - The current OS version of the device to help us detect issues affecting certain OS versions
+
+- **DeviceInfo.SDKUid** - The device unique identifier (similar to DeviceInfo.Id)
+
+- **EventInfo.InitId** - Id used as part of sequencing for event ordering through our telemetry pipeline to help us detect the root cause of a pipeline issue
+
+- **EventInfo.SdkVersion** - The SDK version we are using to send our telemetry to help us detect the root cause of a pipeline issue
+
+- **EventInfo.Sequence** - The sequence is for event ordering through our telemetry pipeline to help us detect the root cause of a pipeline issue
+
+- **EventInfo.Source** - Tells us what part of the code sent the event to help us detect the root cause of an issue
+
+- **EventInfo.Time** - The time and date the event was emitted from the device so our systems can successfully manage events coming in
+
+- **eventpriority** - The priority of the telemetry event relative to other events so our systems can successfully manage events coming in
+
+- **first_launch_date** - The first time the app was launched so help us understand when an issue first began
+
+- **hashed_email** - A pseudonymous identifier that represents the current user email
+
+- **is_first_session** - Tracks if this is the first session of the app for debugging purposes
+
+- **origin** - The origination of an action. For example marking a message read can originate from message list or a new mail notification, this helps us detect issues based on action origination
+
+- **PipelineInfo.AccountId** - A pseudonymous identifier that represents the current user
+
+- **PipelineInfo.ClientCountry** - The current country of the device to detect country or region specific issues and outages
+
+- **PipelineInfo.ClientIp** - The IP address the device is connected to debug connection issues
+
+- **PipelineInfo.IngestionTime** - Timestamp of when our telemetry ingestion happens for this event
+
+- **Session.Id** - A unique identifier for the app session to help identify session-related issues
+
+- **Session.ImpressionId** - A unique identifier for managing release of our features to ensure features are successfully released to all users and devices
+
+- **ui_mode** - Is the user in light or dark mode, helps us triage UX bugs with dark mode
+
+- **UserInfo.Language** - The user's language to help debug translation text issues
+
+- **UserInfo.TimeZone** - The user's time zone to help debug calendar issues
+
+
+In addition, the following fields are common for all events for Outlook for iOS.
+
+- **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
+
+- **DeviceInfo.NetworkProvider** - The network provider of the device (i.e. Verizon)
+
+- **gcc_restrictions_enabled** - Tells us if GCC restrictions have been applied to the app so we can ensure our GCC customers are using our app securely
+
+- **office_session_id** - A unique id tracking the session for connected Office services to help detect issues specific an Office service integration in Outlook like Word
+
+- **state** - Whether the app was active when this event was sent to help detect issues specific to active or inactive app states
+
+
+In addition, the following fields are common for all events for Outlook for Android.
+
+- **DeviceInfo.NetworkCost** - Indication of devices current network cost which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
+
+- **is_app_in_duo_split_view_mode** - This will let us know that the app was in Duo split-screen mode.  This property is set only for Duo (Android only) devices.
+
+- **is_dex_mode_enabled** - Whether Samsung DeX mode is enabled to help detect issues specific to DeX mode with Samsung devices
+
+- **is_sliding_drawer_enabled** - Whether Sliding Drawer interface is enabled to help detect issues caused by our sliding drawer interface
+
+- **orientation** - Physical orientation of the screen (portrait/landscape) to help detect issues specific to device orientation
+
+- **os_arch** - Operating System architecture for the device to help detect issues specific to device operation systems
+
+- **process_bitness** - Process bitness (32 or 64 bit) for the application to help detect issues specific to device bitness
+
 ## Software setup and inventory data events
 
 The following are the data subtypes in this category:
@@ -2977,7 +3093,7 @@ The following fields are collected:
 
 #### Office.Extensibility.Catalog.ExchangeProcessManifest
 
-Data regarding the processing of an individual manifest for an O365 tenant admin assigned add-in. Used in analysis of customer problems and charting of customer success.
+Data regarding the processing of an individual manifest for an Office 365 tenant admin assigned add-in. Used in analysis of customer problems and charting of customer success.
  
 The following fields are collected:
 
@@ -3690,7 +3806,7 @@ The following fields are collected:
 
 #### Office_FirstRun_Apple_ActivationResult
 
-This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the O365 subscription activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.).
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our application activation flow. We collect data to figure out the outcome of the Office 365 subscription activation along with the flow used to activate (First Run Experience, In-App-Flow, Purchase, etc.).
 
 The following fields are collected:
 
@@ -3702,7 +3818,7 @@ The following fields are collected:
 
 #### Office_FirstRun_Apple_ActivationStatus
 
-This event is collected for Office applications running under Apple platforms. The event is used to figure out the outcome of the O365 subscription activation along with the flow used to activate (FRE, InApp, Purchase, etc.). We collect data containing the Activation type, flow type (FRE/DocStage/Purchase) and Office Licensing Service ID.
+This event is collected for Office applications running under Apple platforms. The event is used to figure out the outcome of the Office 365 subscription activation along with the flow used to activate (FRE, InApp, Purchase, etc.). We collect data containing the Activation type, flow type (FRE/DocStage/Purchase) and Office Licensing Service ID.
 
 The following fields are collected:
 
@@ -7153,7 +7269,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidOffice16BootLatency
 
-Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in WXP apps.
+Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -9814,7 +9930,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
-Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in WXP apps.
+Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
 
 The following fields are collected:
  
@@ -10470,7 +10586,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidAppDocsFileOperationEnds
 
-Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in WXP apps.
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10562,7 +10678,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileAsyncSaveStatus
 
-Captures File async save status data and various error codes from different components.  Microsoft uses this data to analyze if there is any user data loss in the app during saving of files in WXP apps.
+Captures File async save status data and various error codes from different components.  Microsoft uses this data to analyze if there is any user data loss in the app during saving of files in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10578,7 +10694,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileOpenReliability
 
-This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code are reporting them.  Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in WXP apps.
+This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code are reporting them.  Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10642,7 +10758,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileSaveStatus
 
-Critical to capture File save status data and various error codes from different components.  Microsoft uses this data to analyze if there is any user data loss in the app during saving of files in WXP apps.
+Critical to capture File save status data and various error codes from different components.  Microsoft uses this data to analyze if there is any user data loss in the app during saving of files in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10746,7 +10862,7 @@ The following fields are collected:
 
 #### Office.Android.AppDocsFileOperationEnds
 
-Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in WXP apps.
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10816,7 +10932,7 @@ The following fields are collected:
 
 #### Office.Android.BCS.Errors
 
-Binary conversion Errors telemetry for Print and Share as PDF.  Microsoft uses this to identify failure points during BCS conversions in WXP apps.
+Binary conversion Errors telemetry for Print and Share as PDF.  Microsoft uses this to identify failure points during BCS conversions in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10840,7 +10956,7 @@ The following fields are collected:
 
 #### Office.Android.ClientSideIAP
 
-Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps which might hinder user to add places or browse through them from within the app in WXP apps.
+Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps which might hinder user to add places or browse through them from within the app in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -10882,7 +10998,7 @@ The following fields are collected:
 
 #### Office.Android.DBFailureCause
 
-Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps which might hinder user to add places or browse through them from within the app in WXP apps.
+Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps which might hinder user to add places or browse through them from within the app in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -11072,7 +11188,7 @@ The following fields are collected:
 
 #### Office.Android.LicenseActivationFailure
 
-Critical Error telemetry to track failures to activate licenses for O365 accounts in W/X/P apps.  Microsoft uses this to analyze failures to activate a purchased o365 license.
+Critical Error telemetry to track failures to activate licenses for Office 365 accounts in Word, Excel, or PowerPoint.  Microsoft uses this to analyze failures to activate a purchased Office 365 license.
 
 The following fields are collected:
 
