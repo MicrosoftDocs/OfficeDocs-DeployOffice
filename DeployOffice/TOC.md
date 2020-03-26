@@ -20,6 +20,7 @@
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
 ## [Manage updates with Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
+## [Build lean packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
