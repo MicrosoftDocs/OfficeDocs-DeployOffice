@@ -522,7 +522,7 @@ The following data fields are common for all events for OneNote on Mac, iOS, and
 
 ## Data fields that are common for Outlook mobile events
 
-Outlook Mobile collects common fields for each of our events so that we can ensure the app is up-to-date, secure, and functioning as expected. 
+Outlook mobile collects common fields for each of our events so that we can ensure the app is up-to-date, secure, and functioning as expected. 
 
 The following data fields are common for all events for Outlook for iOS and Android.
 
