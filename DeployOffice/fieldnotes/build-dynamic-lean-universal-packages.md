@@ -18,7 +18,7 @@ ms.collection:
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
 
-As an admin, you might have to deploy Office 365 ProPlus in your organization. But such a deployment is more than just Office: After the initial migration to ProPlus, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Microsoft Visio and Project, or other components.
+As an admin, you might have to deploy Office 365 ProPlus in your organization. But such a deployment is more than just Office: After the initial migration to ProPlus, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Microsoft Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Office 365 ProPlus from a legacy Office is called **1st install**.
 
 This article shows you how to build dynamic, lean, and universal packages for Office 365 ProPlus. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
