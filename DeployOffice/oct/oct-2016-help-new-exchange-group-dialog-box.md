@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to create a new Exchange Group using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 9e87dfd5-9e04-4225-999b-b6bdcf04591b
 ROBOTS: NOINDEX, NOFOLLOW
 ---

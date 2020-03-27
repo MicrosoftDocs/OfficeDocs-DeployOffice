@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to modify user settings using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: cbf47aca-486c-4b22-b4ea-f2c40f716dd4
 ROBOTS: NOINDEX, NOFOLLOW
 ---

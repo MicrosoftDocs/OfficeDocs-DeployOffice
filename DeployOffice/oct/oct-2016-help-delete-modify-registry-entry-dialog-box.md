@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to delete or modify registry entries using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 13269e58-9060-4019-8245-dc05da6cffa2
 ROBOTS: NOINDEX, NOFOLLOW
 ---
