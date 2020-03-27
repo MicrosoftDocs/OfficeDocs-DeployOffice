@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn about how to rename an Exchange Group using the Office Customization Tool (OCT) in Office 2016.
 ms.assetid: 83a46cf1-a817-4e82-982e-beedc84fe9f2
 ROBOTS: NOINDEX, NOFOLLOW
 ---

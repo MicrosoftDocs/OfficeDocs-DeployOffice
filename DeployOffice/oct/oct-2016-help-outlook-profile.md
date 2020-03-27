@@ -1,5 +1,5 @@
 ---
-title: "Office Customization Tool (OCT) 2016 Help Outlook Profile"
+title: Office Customization Tool (OCT) 2016 Help: Outlook Profile
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to customize a user's default Outlook profile using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 3062ac28-6f5c-49f9-80b0-2b2bd6dd1094
 ROBOTS: NOINDEX, NOFOLLOW
 ---

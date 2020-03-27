@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn about how to remove a user's files using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: bf6418ff-c604-4dca-b0f0-68ca270b2375
 ROBOTS: NOINDEX, NOFOLLOW
 ---
