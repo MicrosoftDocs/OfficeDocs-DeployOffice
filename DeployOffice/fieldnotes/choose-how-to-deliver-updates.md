@@ -53,7 +53,11 @@ When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Ma
 
 When you use Configuration Manager, your end users can receive both Configuration Manager and Office notifications if the update pre-staged on the device. For more information, see [How to manage Office 365 ProPlus Channels](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-manage-office-365-proplus-channels-for-it-pros/ba-p/795813).
 
-## Updates delivered from file share
+## Considerations for choosing how to deliver  updates
+
+[Add brief intro here]
+
+### Updates delivered from file share
 
 Advantages: none
 
@@ -61,7 +65,7 @@ Disadvantages: This method is discouraged due to the high cost of ownership and 
 
 End-user notifications: Delivered only by Office.
 
-## Updates delivered by Configuration Manager (on-premises)
+### Updates delivered by Configuration Manager (on-premises)
 
 Advantages: 
 - Office clients fetch updates only from the closest distribution point.
@@ -75,7 +79,7 @@ Disadvantages:
 
 End-user notifications: Delivered by Configuration Manager and, in some cases, Office. [Review for accuracy--we don't say in the end-user section that Office only is a possibility]
 
-## Updates delivered by Configuration Manager (on-premises and cloud)
+### Updates delivered by Configuration Manager (on-premises and cloud)
 
 Advantages: 
 - Optimizes bandwidth where IT Pro can stage on-premises content which are often required and offload to CDN for those which aren't.  Great example is languages.  Use Configuration Manager inventory to identify primary languages and stage only those on-premises, offload secondary languages and proofing tools to pull from CDN.
@@ -89,7 +93,7 @@ Disadvantages:
 
 End-user notifications: Delivered by Configuration Manager and, in some cases, Office. [Review for accuracy--we don't say in the end-user section that Office only is a possibility]
 
-## Updates delivered by Configuration Manager (cloud)
+### Updates delivered by Configuration Manager (cloud)
 
 Advantages: 
 - IT Pro remains in full control of software deployment available vs deadlines using Configuration Manager.  
@@ -101,7 +105,7 @@ Disadvantages:
 
 End-user notifications: Delivered by Configuration Manager and, in some cases, Office. [Review for accuracy--we don't say in the end-user section that Office only is a possibility]
 
-## Updates delivered from Office CDN (Microsoft recommended)
+### Updates delivered from Office CDN (Microsoft recommended)
 
 Advantages: 
 - Will take advantage of binary delta compression to optimize content downloaded from the Microsoft CDN.
