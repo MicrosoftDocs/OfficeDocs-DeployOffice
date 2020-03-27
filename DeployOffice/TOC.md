@@ -20,6 +20,7 @@
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
 ## [Manage updates with Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
+## [Build lean packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
@@ -55,6 +56,7 @@
 ## [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
 ## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
 ## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
+## [Device-based licensing for Office 365 ProPlus](device-based-licensing.md)
 ## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 ## [Upgrade from Office 2007](office-2007-end-support-roadmap.md)

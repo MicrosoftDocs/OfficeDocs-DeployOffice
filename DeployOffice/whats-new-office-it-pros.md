@@ -17,6 +17,10 @@ description: "This article lists the new tools, content, and processes for IT Pr
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
 
+## March 2020
+
+We're starting to publish best practice articles from Microsoft experts in the field who work with enterprise customers to deploy Office. The first article is now live: [Build dynamic, lean, universal packages for Office 365 ProPlus](fieldnotes/build-dynamic-lean-universal-packages.md).
+
 ## November 2019
 
 After deploying Office 365 ProPlus, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). We've published a new article that covers how to change the update channel. For more information, see [Change the Office 365 ProPlus update channel for devices in your organization](change-update-channels.md).
@@ -46,6 +50,7 @@ Office 365 ProPlus on devices running Windows 10 can take advantage of Delivery 
 
 ### Security baseline for Office 365 ProPlus
 Microsoft has announced the final release of the recommended security configuration baseline settings for Office 365 ProPlus, version 1908. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1908-Sept-2019-FINAL/ba-p/873084).
+
 ## August 2019
 
 ### Privacy controls for Office for Mac
