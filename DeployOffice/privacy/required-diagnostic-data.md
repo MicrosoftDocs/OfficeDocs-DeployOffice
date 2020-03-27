@@ -534,9 +534,9 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **account_puid** - The globally unique user identifier for a consumer Microsoft account
 
-- **account_type** - Tracks the account type such as Office 365, Google Cloud Cache, Outlook.com, etc
+- **account_type** - Tracks the account type such as Office 365, Google Cloud Cache, Outlook.com, etc.
 
-- **action** - The event action name (such as archive, delete, etc) so we can detect issues with specific actions taken
+- **action** - The event action name (such as archive, delete, etc.) so we can detect issues with specific actions taken
 
 - **ad_id** - The unique advertising identifier
 
@@ -548,17 +548,17 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **AppInfo.Version** - Current version of the app installed to help us detect issues affecting certain app versions
 
-- **customer_type** - Indicates the type of customer (consumer, commercial, third party, etc) to help us detect issues affecting certain customer types
+- **customer_type** - Indicates the type of customer (consumer, commercial, third party, etc.) to help us detect issues affecting certain customer types
 
-- **device_category** - Indicates what type of device it is (phone, tablet, etc) to help us detect device category specific issues
+- **device_category** - Indicates what type of device it is (phone, tablet, etc.) to help us detect device category specific issues
 
 - **DeviceInfo.Id** - A unique device identifier to help us detect device specific issues
 
-- **DeviceInfo.Make** - The make of the device (i.e. Apple, Samsung, etc) to help us detect device make specific issues
+- **DeviceInfo.Make** - The make of the device (i.e. Apple, Samsung, etc.) to help us detect device make specific issues
 
 - **DeviceInfo.Model** - The device model (i.e. iPhone 6s) to help us detect device model specific issues
 
-- **DeviceInfo.NetworkType** - The current device network being used (WiFi, cellular, etc) to help us detect device network specific issues
+- **DeviceInfo.NetworkType** - The current device network being used (WiFi, cellular, etc.) to help us detect device network specific issues
 
 - **DeviceInfo.OsBuild** - The current OS build of the device to help us detect issues affecting certain OS builds
 
@@ -724,7 +724,7 @@ The following fields are collected:
 
 - **osArchitecture** - Operating system architecture
 
-- **osEnvironment** - An integer indicating the operating system (Windows, Android, iOS, Mac, etc).
+- **osEnvironment** - An integer indicating the operating system (Windows, Android, iOS, Mac, etc.).
 
 - **osVersionString** - Operating system version
 
@@ -1644,7 +1644,7 @@ The following fields are collected:
 
 - **contact_result_selected_count** - tracks how many contact results were selected during the combined search session
 
-- **conversation_result_selected_count** - tracks how many conversations were selecting during the combined sear search ach session
+- **conversation_result_selected_count** - tracks how many conversations were selecting during the combined search session
 
 - **entrance_type** - This determines how the user started the search query, from the search tab, zero query, search heading, or search result. 
 
@@ -2466,7 +2466,7 @@ The following fields are collected:
 
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
-- **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. UI element, trigged by another app, etc.
+- **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. UI element, triggered by another app, etc.
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
@@ -2567,7 +2567,7 @@ The following fields are collected:
 
 - **HRDAutoAcceleratedSignUpAttemptCount** - Indicates the count of accelerated sign-ups attempted.
 
-- **HRDAutoAcceleratedSignUpQuitCount** - Indicates the count of accelerated sign-ups cancelled.
+- **HRDAutoAcceleratedSignUpQuitCount** - Indicates the count of accelerated sign-ups canceled.
 
 - **HResult** - Indicates result status code of the sign-in operation.
 
@@ -2630,7 +2630,7 @@ The following fields are collected:
 
 - **Data_ActivatingPrimaryIdentity** - A true/false value denoting if the primary identity was used. 
 
-- **Data_NULSubscriptionLicensed** - A true/false value denoting the state of subcription
+- **Data_NULSubscriptionLicensed** - A true/false value denoting the state of subscription
 
 #### Office_Apple_CISAuthTicketWithIdentity
 
@@ -2897,7 +2897,7 @@ The following fields are collected:
 
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
 
-- **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. from which UI element or trigged by another app.
+- **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. from which UI element or triggered by another app.
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
 
@@ -4351,7 +4351,7 @@ The following fields are collected:
 
 - **Data_Doc_URLHash** - A GUID for the file URL
 
-- **Data_ErrorCode** - error in case of file open failures/download failures / download cancelled
+- **Data_ErrorCode** - error in case of file open failures/download failures / download canceled
 
 - **Data_ErrorMessage** - relevant message-to-error code
 
@@ -7303,7 +7303,7 @@ The following fields are collected:
 
   - **Data\_AppSizeWidth –** Add**-**in window size's width
 
-  - **Data\_AppURL -** URL of the Add in; Logs full URL for Store Add ins and URL domain for non-store Add ins
+  - **Data\_AppURL -** URL of the Add in; Logs full URL for Store Add-ins and URL domain for non-store Add-ins
 
   - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
@@ -7515,7 +7515,7 @@ The following fields are collected:
 
   - **Data\_SchemeMgrStartupTime:integer -** time taken to initialize scheme manager
 
-  - **Data\_SDX\_AssetId -** ONLY exists for store Add- ins. OMEX gives the Add in an AssetId when it goes into Store
+  - **Data\_SDX\_AssetId -** ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store
 
   - **Data\_SDX\_BrowserToken -** Identifier that sits in the browser's cache
 
@@ -9958,7 +9958,7 @@ The following fields are collected:
 
 - **IsThisFirstLaunch** - Boolean to indicate if this is first app launch
 
-- **LatencyTimeInMilliSec** - latency in milli second
+- **LatencyTimeInMilliSec** - latency in millisecond
 
 - **LibrarySharingTimeInMs** - time for sharing libraries
 
@@ -10337,7 +10337,7 @@ The following fields are collected:
 
 - **Data_IsInternalUserInit** - Indicates whether the code could determine whether the application runs under the credentials of a Microsoft corporate account.
 
-- **Data_OpenNewsletterWebpage** - Indicates whether Office Insider Newsletter Subscription link was triggered under condition that user has joined Office Insider program, Newsletter Subscription feature is enabled, and the user have not cancelled opening of Office Insider Newsletter Subscription webpage.
+- **Data_OpenNewsletterWebpage** - Indicates whether Office Insider Newsletter Subscription link was triggered under condition that user has joined Office Insider program, Newsletter Subscription feature is enabled, and the user have not canceled opening of Office Insider Newsletter Subscription webpage.
     
 - **Data_RegisterInsider** - Status of Office Insider registration
 
@@ -10718,7 +10718,7 @@ The following fields are collected:
 
 - **FirstBCSClientError_Info** - last error of BCS (binary conversion service) client
 
-- **IfWordFileOpenCancelled** - if file open was cancelled by user in Word
+- **IfWordFileOpencanceled** - if file open was canceled by user in Word
 
 - **InitializationReason** - enumeration for the entry point for file open
 
@@ -10742,7 +10742,7 @@ The following fields are collected:
 
 - **ProviderFileSize** - file size captured while opening file via file activation
 
-- **Stae** - File open state enumeration
+- **State** - File open state enumeration
 
 - **UriScheme** - Scheme of the URL
 
@@ -10804,7 +10804,7 @@ The following fields are collected:
 
 - **WordFileSaveErrorTrackbackTag** - trackback tag for save failures
 
-- **WordFileSaveOpResult** - enumeration for result status 0 if succeeded, 1 if failed, 2 if cancelled
+- **WordFileSaveOpResult** - enumeration for result status 0 if succeeded, 1 if failed, 2 if canceled
 
 - **WordFileSaveSuccess** - enumeration for Word specific details for file save operation success.
 
@@ -11036,7 +11036,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaCopyFailedAttempts
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11044,7 +11044,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources.  Microsoft uses this data to identify errors during Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources.  Microsoft uses this data to identify errors during Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11052,7 +11052,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicy
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
  
@@ -11060,7 +11060,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
  
@@ -11068,7 +11068,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11084,7 +11084,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11092,7 +11092,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11100,7 +11100,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
   
@@ -11108,7 +11108,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11116,7 +11116,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11124,7 +11124,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to identifying if an account is managed.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to identifying if an account is managed.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -11132,7 +11132,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11140,7 +11140,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionProtect
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -11148,7 +11148,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11156,7 +11156,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11164,7 +11164,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11172,7 +11172,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
@@ -11180,7 +11180,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionUpdateToken
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account.  Microsoft uses this data to identify errors during and after Intune enrolment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
 
 The following fields are collected:
 
