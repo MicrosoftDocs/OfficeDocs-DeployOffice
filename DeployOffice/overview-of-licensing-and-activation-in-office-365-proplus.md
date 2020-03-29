@@ -14,7 +14,10 @@ description: "Explains how to assign Office 365 ProPlus licenses to users, and h
 
 # Overview of licensing and activation in Office 365 ProPlus
 
- **Summary:** Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated.
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
   
 To deploy Office 365 ProPlus to users in your organization, you start by assigning licenses to your users. Then, each user can install Office 365 ProPlus on up to five computers. Each installation is activated and kept activated automatically by cloud-based services associated with Office 365. This means you don't have to keep track of product keys. It also means you don't have to figure out how to use other activation methods such as Key Management Service (KMS) or Multiple Activation Key (MAK). All you have to do is make sure you purchase enough licenses, keep your Office 365 subscription current, and make sure your users can connect to Office Licensing Service via the Internet at least once every 30 days.
   

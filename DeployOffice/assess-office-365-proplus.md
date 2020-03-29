@@ -18,6 +18,11 @@ description: "This article gives step-by-step instructions for how to assess you
 
 # Assess your environment and requirements for deploying Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+
 Follow the steps in this article to assess your environment and requirements before deploying Office 365 ProPlus in your organization. This assessment will help you make key decisions as part of planning your deployment. 
 
 In addition to this guidance, we recommend that you use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with your deployment.

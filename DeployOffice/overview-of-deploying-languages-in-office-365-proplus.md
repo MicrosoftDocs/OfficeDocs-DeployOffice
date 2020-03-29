@@ -15,6 +15,11 @@ ms.custom: Ent_Office_ProPlus
 
 # Overview of deploying languages in Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+
 This article covers the options for deploying languages for Office 365 ProPlus, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
 
 The guidance in this article applies to Office 365 ProPlus and the following Office products:

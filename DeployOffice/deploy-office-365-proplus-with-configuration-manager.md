@@ -16,6 +16,11 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 # Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+
 Follow the steps in this article to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch). 
 
 This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).

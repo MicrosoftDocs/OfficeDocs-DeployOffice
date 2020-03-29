@@ -16,6 +16,11 @@ description: "This article gives step-by-step instructions for changing the upda
 
 # Change the Office 365 ProPlus update channel for devices in your organization
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+
 After deploying Office 365 ProPlus, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
 Group Policy and the ODT are the only supported methods to change update channels. If you manage updates to Office with Configuration Manager, you can change the channel by using Group Policy or the ODT in combination with Configuration Manager. For more information, see [Change the update channel with Configuration Manager](#change-the-update-channel-with-configuration-manager).
@@ -48,7 +53,7 @@ After ODT has executed, the Office Automatic Update 2.0 task must run. The task 
 
 ```xml
     <Configuration> 
-    	<Updates Channel="Monthly" />
+        <Updates Channel="Monthly" />
     </Configuration>
 ```
 
