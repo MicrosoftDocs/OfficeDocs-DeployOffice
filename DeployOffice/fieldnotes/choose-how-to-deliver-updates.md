@@ -36,7 +36,8 @@ Network optimization is an important consideration when delivering Office update
 - File share: Server Message Block (SMB)
 - Configuration Manager: Office 365 Client Management is Enabled, Background Intelligent Transfer Service (BITS) is used.
 - Office CDN (optional Configuration Manager Connected Cache), Delivery Optimization (DO) is used.
-*By default, Office Click-To-Run installer uses the Windows' built in implementation of DO to download the content from the CDN.  When Configuration Manager integration Office 365 Client Management is Enabled, BITS will be used.
+
+By default, Office Click-To-Run installer uses the Windows' built in implementation of DO to download the content from the CDN.  When Configuration Manager integration Office 365 Client Management is Enabled, BITS will be used.
 
 ## End-user notifications
 
@@ -48,8 +49,7 @@ When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Ma
 - Configuration Manager: ConfigMgr notifications only unless Office updates are pre-staged.
 - Office CDN: Office notifications only
 
-> [!NOTE]
-*Office and ConfigMgr notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1), and when ConfigMgr software deployment has Available time prior to Deadline.  Meaning, IT Pro pre-staged Office content using ConfigMgr on the machine prior to Deadline. In this scenario, both ConfigMgr and Office will deliver end-user notifications independently based on deadline defined in ConfigMgr. 
+Note that Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1), and when ConfigMgr software deployment has Available time prior to Deadline.  Meaning, IT Pro pre-staged Office content using ConfigMgr on the machine prior to Deadline. In this scenario, both ConfigMgr and Office will deliver end-user notifications independently based on deadline defined in ConfigMgr. 
 
 ## Considerations for choosing how to deliver updates
 
