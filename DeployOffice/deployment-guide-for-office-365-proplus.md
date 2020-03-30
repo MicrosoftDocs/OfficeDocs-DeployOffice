@@ -14,6 +14,11 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
 
 # Deployment guide for Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
  This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments.
   
 ## Featured
