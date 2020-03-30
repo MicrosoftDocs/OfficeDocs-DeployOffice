@@ -14,11 +14,16 @@ description: "Provides Office admins with information about using Delivery Optim
 
 # Delivery Optimization and Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
 
 Office 365 ProPlus on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain [requirements](#requirements-for-using-delivery-optimization-with-office-365-proplus) are met.
 
-Delivery Optimization can be an effective way to reduce network bandwidth without the need for additional infrastructure or administrative overhead, especially for those organizations that don’t have Microsoft Endpoint Configuration Manager (current branch) or other enterprise software distribution tools, or that want to shift content handling from on-premises to the cloud.
+Delivery Optimization can be an effective way to reduce network bandwidth without the need for additional infrastructure or administrative overhead, especially for those organizations that don't have Microsoft Endpoint Configuration Manager (current branch) or other enterprise software distribution tools, or that want to shift content handling from on-premises to the cloud.
 
 ## Overview of Delivery Optimization
 
@@ -47,7 +52,7 @@ By user-initiated updates, we're referring to when the user goes to **File** > *
 
 ## Configure Office 365 ProPlus to use Delivery Optimization
 
-Delivery Optimization is enabled by default on devices running the Windows 10 Enterprise or Windows 10 Education editions. Therefore, there isn’t anything additional you need to do for Office 365 ProPlus to start taking advantage of Delivery Optimization for background updates.
+Delivery Optimization is enabled by default on devices running the Windows 10 Enterprise or Windows 10 Education editions. Therefore, there isn't anything additional you need to do for Office 365 ProPlus to start taking advantage of Delivery Optimization for background updates.
 
 To use Delivery Optimization for background updates of Office 365 ProPlus, there is no additional configuration needed.
 
@@ -58,22 +63,22 @@ To take advantage of Delivery Optimization when installing or when doing user-in
 
 > [!NOTE]
 > - Version 1912 is available in Monthly Channel as of January 8, 2020.
-> - Version 2002 is scheduled to be available in Semi-Annual Channel (Targeted) in March 2020 and in Semi-Annual Channel in July 2020. Version 2002 or later won’t require the registry key.
+> - Version 2002 is scheduled to be available in Semi-Annual Channel (Targeted) in March 2020 and in Semi-Annual Channel in July 2020. Version 2002 or later won't require the registry key.
 
-If you’re using Configuration Manager or local network shares to manage installing and updating Office 365 ProPlus on devices, Delivery Optimization won't be used. Delivery Optimization is used only if you’re installing or updating Office 365 ProPlus directly from the Office Content Delivery Network (CDN) on the internet. If you want some of these devices, such as those on Monthly Channel, to take advantage of Delivery Optimization, you need to reconfigure them to use the Office CDN. You can do that by using the Office Deployment Tool or Group Policy settings, depending how your environment is configured. You have to remove any configuration of the update path as well as the use of the [OfficeMgmtCOM](configuration-options-for-the-office-2016-deployment-tool.md#officemgmtcom-attribute-part-of-add-element) attribute, which enables Configuration Manager to manage updates.
+If you're using Configuration Manager or local network shares to manage installing and updating Office 365 ProPlus on devices, Delivery Optimization won't be used. Delivery Optimization is used only if you're installing or updating Office 365 ProPlus directly from the Office Content Delivery Network (CDN) on the internet. If you want some of these devices, such as those on Monthly Channel, to take advantage of Delivery Optimization, you need to reconfigure them to use the Office CDN. You can do that by using the Office Deployment Tool or Group Policy settings, depending how your environment is configured. You have to remove any configuration of the update path as well as the use of the [OfficeMgmtCOM](configuration-options-for-the-office-2016-deployment-tool.md#officemgmtcom-attribute-part-of-add-element) attribute, which enables Configuration Manager to manage updates.
 
 ## Configure Delivery Optimization settings for Office 365 ProPlus
 
 There are some settings that you can configure to allow your environment to take better advantage of Delivery Optimization.  For example, you should choose the appropriate [download mode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode) for your environment. The download mode defines how devices determine whether other devices are suitable peers. Here are some recommendations for download mode:
 
-- If you’re using Microsoft Endpoint Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
-- If you’re not using Configuration Manager, you can still use *Group (2)* for download mode. This uses the Active Directory site to determine which devices should be considered as peers.
-- If you’re not using Active Directory, consider using *LAN (1)* for the download mode.
+- If you're using Microsoft Endpoint Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
+- If you're not using Configuration Manager, you can still use *Group (2)* for download mode. This uses the Active Directory site to determine which devices should be considered as peers.
+- If you're not using Active Directory, consider using *LAN (1)* for the download mode.
 
 There are a few other settings that have specific implications for Office 365 ProPlus:
 
 - [Minimum Peer Caching Content File Size](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-peer-caching-content-file-size): Updates for Office 365 ProPlus contain files which are as small as 1 megabyte. To maximize the effectiveness of Delivery Optimization you can reduce value of this setting down to its minimum.
-- [Delay background download from http (in secs)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-from-http-in-secs) and [Delay foreground download from http (in secs)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-from-http-in-secs):  A higher value for these settings allows devices to search longer for peers, but it also increases the time needed for an update. For background updates, users aren’t likely to be impacted. But if you set this to 5 minutes and do a user-initiated update, the update might take up to 5 minutes longer due to the search for peer devices. Take this into consideration during testing or troubleshooting.
+- [Delay background download from http (in secs)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-from-http-in-secs) and [Delay foreground download from http (in secs)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-from-http-in-secs):  A higher value for these settings allows devices to search longer for peers, but it also increases the time needed for an update. For background updates, users aren't likely to be impacted. But if you set this to 5 minutes and do a user-initiated update, the update might take up to 5 minutes longer due to the search for peer devices. Take this into consideration during testing or troubleshooting.
 
 Delivery Optimization also handles how the devices download content from the HTTP source, such as from the Office CDN, and not just between the devices. In those cases, there are settings available to throttle bandwidth, which can be useful in sites with constrained bandwidth. There are several settings available, including the following:
 
@@ -90,14 +95,14 @@ On an individual device, you can go to **Settings** > **Update & Security** > **
 
 If your organization uses [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), a Delivery Optimization report is available. For more information, see [Delivery Optimization in Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-delivery-optimization). 
 
-Keep in mind that this information represents overall results for Delivery Optimization, not just from using Delivery Optimization for Office 365 ProPlus. For example, it might include information related to Windows 10 updates, depending how your environment is configured.  Also, you won’t be able to get 100% of the content from peer devices.
+Keep in mind that this information represents overall results for Delivery Optimization, not just from using Delivery Optimization for Office 365 ProPlus. For example, it might include information related to Windows 10 updates, depending how your environment is configured.  Also, you won't be able to get 100% of the content from peer devices.
 
 
 ## Additional information about Delivery Optimization and Office 365 ProPlus
 
-- You can also take advantage of Delivery Optimization if you’re using the [AllowCdnFallback](configuration-options-for-the-office-2016-deployment-tool.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
-- If you’re already using Configuration Manager (current branch) and [peer cache](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Office 365 ProPlus, Delivery Optimization won’t provide any added benefit for content coming from your on-premises infrastructure.
+- You can also take advantage of Delivery Optimization if you're using the [AllowCdnFallback](configuration-options-for-the-office-2016-deployment-tool.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
+- If you're already using Configuration Manager (current branch) and [peer cache](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Office 365 ProPlus, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
 - You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 - Delivery Optimization can also be used with Office 365 Business and with subscription versions of Project and Visio. The same requirements listed above for Office 365 ProPlus apply.
-- Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn’t available for installing or for foreground updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
+- Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installing or for foreground updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
 - If you're already using a 3rd party peer-to-peer solution along with Configuration Manager, Delivery Optimization isn't expected to cause any problems with that solution.
