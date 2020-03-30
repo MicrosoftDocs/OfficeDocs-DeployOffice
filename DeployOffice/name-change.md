@@ -22,7 +22,7 @@ The new name will appear in Version 2004 onwards, starting on April 21, 2020. Fo
 
 Older versions of Office 365 ProPlus won't be updated with the new name. For example, if you're using Version 1908 of Semi-Annual Channel, you'll still see Office 365 ProPlus under the **Product Information** section.
 
-References to Microsoft 365 Apps for enterprise will begin to appear on April 21 in other places as well. For example, references on product websites, in documentation, and in the user interface (UI) of deployment tools, such as the Office Customization Tool. Note that some references to the new name might not occur until after April 21.
+References to Microsoft 365 Apps for enterprise will begin to appear on April 21 in other places as well. For example, references on product websites, in documentation, and in the user interface (UI) of deployment tools, such as the Office Customization Tool. Some references to the new name might not occur until after April 21.
 
 ## What do admins need to do?
 
