@@ -14,6 +14,11 @@ description: "Provides guidance for deploying Office 365 ProPlus in a GCC High o
 
 # Guidance for deploying Office 365 ProPlus in a GCC High or DoD environment
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
 ## Which version of Office 365 ProPlus to deploy
