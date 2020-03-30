@@ -181,7 +181,7 @@ If experimentation was previously enabled, you also need to delete any data unde
 These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
 
 ### Configure Outlook behavior on Office 365 ProPlus
-The following registry values must to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
+The following registry values must be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
   **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Office 365 ProPlus you don't need to set this registry setting. <br/>
