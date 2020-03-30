@@ -17,15 +17,15 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps (previously named Office 365 ProPlus).  This article outlines the advantages and disadvantages of each approach to help you make the right choice. I'm assuming that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
+There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps (previously named Office 365 ProPlus).  This article outlines the advantages and disadvantages of each approach to help you make the right choice. We assume that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
 
 ## Evaluating the Options
 
-The overwhelming majority of customers I work with in the field remain on-premises when delivering software updates for Microsoft 365 Apps.  The original version of Office 2013 Click-to-Run was released years ago when options were very limited and network transport optimizations didn't exist.  Only one Office channel existed and architecture was 32-bit.  Further, capabilities to update Office using Microsoft Endpoint Configuration Manager were unavailable.  Many customers used an on-premises file share and mirrored Office CDN content each month.  Microsoft 365 Apps has evolved since then to provide customers with many more options, including multiple channels, languages, and 64-bit architecture. These additional options can lead to a large increase in the amount of content IT Pros must download and replicate on-premises.
+The overwhelming majority of customers we work with in the field remain on-premises when delivering software updates for Microsoft 365 Apps.  The original version of Office 2013 Click-to-Run was released years ago when update options were very limited and network transport optimizations didn't exist.  Many customers used an on-premises file share and mirrored Office CDN content each month.  Microsoft 365 Apps has evolved since then to provide customers with many more options, including multiple channels, languages, and 64-bit architecture. These additional options can lead to a large increase in the amount of content IT Pros must download and replicate on-premises.
 
-Since that time, there have been tremendous innovations in Windows and Configuration Manager that provide many new capabilities.  With so many choices and combinations, a visual aid may help you choose how to manage updates.  The flowchart below is a comparison of update options, with a special focus on network transport and end-user notifications. Choosing an update option determines what process is delivering notifications to the end-user (Office or Configuration Manager or both).  For example, if the customer wants to hide or control the precise timing of software updates and the level of notifications, then Configuration Manager should be considered.  If the customer values network optimization and lowest cost of ownership to service Office, then update from CDN with Delivery Optimization (DO) should be considered.  
+Since that time, there have been tremendous innovations in Windows and Configuration Manager that provide many new capabilities for servicing Office.  With so many choices and combinations, a visual aid may help you choose how to manage updates.  The flowchart below is a comparison of update options, with a special focus on network transport and end-user notifications. Choosing an update option determines what process is delivering notifications to the end-user (Office or Configuration Manager or both).  For example, if the customer wants to hide or control the precise timing of software updates and the level of notifications, then Configuration Manager should be considered.  If the customer values network optimization and lowest cost of ownership to service Office, then update from CDN with Delivery Optimization (DO) should be considered.  
 
-By default, Microsoft 365 Apps will update from Office CDN.  If you are a customer who currently delivers updates using one of the on-premises selections, you must reverse policies and configurations to restore default behavior.  For example, if Office 365 Client Management was enabled to support Configuration Manager integration, those steps must be reversed. Configuration Manager client settings or domain policy should be set so that Office 365 Client Management is disabled. Once change is made, Office will update against CDN next after the next restart of the  Microsoft Office Click-to-Run service. It's always a good idea to perform such an action with phased deployment process to monitor compliance and network impact.
+By default, Microsoft 365 Apps will update from Office CDN.  If you are a customer who currently delivers updates using one of the on-premises selections, you must reverse policies and configurations to restore default behavior.  For example, if Office 365 Client Management was enabled to support Configuration Manager integration, those steps must be reversed. Configuration Manager client settings or domain policy should be set so that Office 365 Client Management is disabled. Once the change is made, Office will update against CDN  after the next restart of the  Microsoft Office Click-to-Run service. It is always a good idea to perform such an action with phased deployment processes to monitor compliance and network impact.
 
 :::image type="content" source="../images/update-options-flowchart.png" alt-text="Update options for Microsoft 365 Apps":::
 
@@ -37,23 +37,25 @@ Network optimization is an important consideration when delivering Office update
 - Configuration Manager: Office 365 Client Management is Enabled, Background Intelligent Transfer Service (BITS) is used.
 - Office CDN (optional Configuration Manager Connected Cache), Delivery Optimization (DO) is used.
 
-By default, Office Click-To-Run installer uses the Windows' built in implementation of DO to download the content from the CDN.  When Configuration Manager integration Office 365 Client Management is Enabled, BITS will be used.
+By default, Office Click-To-Run installer uses the Windows' built in implementation of DO to download the content from the CDN.  When Configuration Manager has Office 365 Client Management enabled, BITS will be used.
 
 ## End-user notifications
 
-End-user notifications for software updates are a key concern for any IT department.  By default, Microsoft 365 Apps update automatically in the background.  If Office is open, notifications will be delivered to the end-user over a period of days. For a full description of notifications and end user experience, see [End-user update notifications for Office 365 ProPlus](../end-user-update-notifications-for-office-365-proplus.md). IT Pros can optionally silence all end user Office notifications by using the "Hide update notifications from users" policy. Note: Notifications related to deadlines cannot be silenced.
+End-user notifications for software updates are a key concern for any IT department.  By default, Microsoft 365 Apps updates automatically in the background.  If Office is open, notifications will be delivered to the end-user over a period of days. For a full description of notifications and end user experience, see [End-user update notifications for Office 365 ProPlus](../end-user-update-notifications-for-office-365-proplus.md). IT Pros can optionally silence all end user Office notifications by using the "Hide update notifications from users" policy. 
+> [!NOTE]
+> Notifications related to deadlines cannot be suppressed.
 
-When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Manager will also deliver notifications. To learn more, see [Understanding Office 365 ProPlus Updates for IT Pros](https://techcommunity.microsoft.com/t5/office-365-blog/understanding-office-365-proplus-updates-for-it-pros-cdn-vs-sccm/ba-p/795728).  Its important to carefully consider ramifications of user notifications when considering an update strategy. 
+When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Manager will also deliver notifications. To learn more, see [Understanding Office 365 ProPlus Updates for IT Pros](https://techcommunity.microsoft.com/t5/office-365-blog/understanding-office-365-proplus-updates-for-it-pros-cdn-vs-sccm/ba-p/795728).  It is important to carefully consider ramifications of user notifications when considering an update strategy. 
 
 - File share: Office notifications only
-- Configuration Manager: ConfigMgr notifications only unless Office updates are pre-staged.
+- Configuration Manager: Configuration Manager notifications only unless Office updates are pre-staged.
 - Office CDN: Office notifications only
 
-Note that Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1), and when ConfigMgr software deployment has Available time prior to Deadline.  Meaning, IT Pro pre-staged Office content using ConfigMgr on the machine prior to Deadline. In this scenario, both ConfigMgr and Office will deliver end-user notifications independently based on deadline defined in ConfigMgr. 
+Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1) and when Configuratiion Manager software deployment has Available time prior to deadline.  Meaning, IT Pro pre-staged Office content using Configuration Manager on the machine prior to deadline. In this scenario, both Configuration Manager and Office will deliver end-user notifications independently based on deadline defined in Configuration Manager. 
 
 ## Considerations for choosing how to deliver updates
 
-Please see section below to help compare and contrast Office update strategy to determine option best for your environment. For customers who are exclusively on-premises today, moving to a hybrid model is likely outcome.  For customers who are greenfield or have goal to reduce long-term dependency on on-premises infrastruture, cloud only is best.
+Please see section below to help compare and contrast Office update strategy to determine option best for your environment. For customers who are exclusively on-premises today, moving to a hybrid model is a likely outcome.  For customers who are greenfield or have goal to reduce long-term dependency on on-premises infrastruture, cloud only is best.
 
 ### Updates delivered from file share
 
@@ -71,25 +73,24 @@ Advantages:
 - Full control over end user notifications.
 
 Disadvantages:
-- Requires the IT Pro to download all the content required to support every permutation of channel, architecture and combination of languages the organization supports.
+- Requires the IT Pro to download all the content required to support every permutation of channel, architecture, and combination of languages the organization supports.
 - Every permutation of Office supported leads to exponential growth of package content which must be replicated to every Distribution Point.
-- If any required content is not found on the Distribution Point, the Office client will fail to update.
+- By default, any required content not found on the Distribution Point will result in Office 365 client update failure.
 
-End-user notifications: Delivered by Configuration Manager and, in some cases, Office. [Review for accuracy--we don't say in the end-user section that Office only is a possibility]
+End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered by Configuration Manager (on-premises and cloud)
 
 Advantages: 
-- Optimizes bandwidth where IT Pro can stage on-premises content which are often required and offload to CDN for those which aren't.  Great example is languages.  Use Configuration Manager inventory to identify primary languages and stage only those on-premises, offload secondary languages and proofing tools to pull from CDN.
+- Optimizes bandwidth where IT Pro can stage on-premises content which are often required and offload to CDN for those which aren't.  Great example is languages.  Use Configuration Manager inventory to identify primary languages and stage only those on-premises, offload secondary languages and proofing tools to pull from CDN. Fallback for non-downloaded content can be achieved by selecting ‘If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates’ within Configuration Manager software deployment.
 - Supports Configuration Manager Peer Cache feature but only for content which is staged on Distribution Points.
 
 Disadvantages:
 - A subset of content not found on the Distribution Point is downloaded using BITS from the Microsoft CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
 - The IT Pro must carefully consider which content to download and what should come from CDN.
 - The IT Pro must make intentional decisions regarding specific builds\versions by channels to download each month.
-- End user notifications are delivered only by Office only, Office and Configuration Manager or only Configuration Manager.
 
-End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by ConfigMgr or Office prior to deadline.
+End-user notifications: Delivered by Configuration Manager only when available time and deadline are the same.  If available time is prior to deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered by Configuration Manager (cloud)
 
@@ -101,7 +102,7 @@ Disadvantages:
 - Each workstation will egress to the internet to download content via BITS from the Microsoft CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
 - The IT Pro must make intentional decisions regarding specific builds\versions by channels to download each month.
 
-End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by ConfigMgr or Office prior to deadline.
+End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered from Office CDN (Microsoft recommended)
 
@@ -117,7 +118,7 @@ Disadvantages:
 - The IT Pro will need to review the network topology to ensure clients are performing peer to peer sharing from sources close to client.
 - Extensive controls of Delivery Optimization require review.
 - The IT Pro must transition from push mentality to allow clients to pull content dynamically.
-- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling".  This means not all clients will receive the update at the same time and not appropriate for traditional "maintenance windows" et
+- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling".  This means not all clients will receive the update at the same time and not appropriate for traditional Configuration Manager "maintenance windows" etc.
 - The networking team should follow Microsoft best practice and whitelist\bypass proxy for Microsoft CDN endpoints.
 
 End-user notifications: Delivered by Office only.
