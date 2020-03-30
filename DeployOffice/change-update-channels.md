@@ -19,7 +19,7 @@ description: "This article gives step-by-step instructions for changing the upda
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
 >
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
 After deploying Office 365 ProPlus, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 

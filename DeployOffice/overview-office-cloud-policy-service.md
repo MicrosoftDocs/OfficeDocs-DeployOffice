@@ -19,7 +19,7 @@ description: "The Office cloud policy service lets you enforce policy settings f
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
 >
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
 The [Office cloud policy service](https://aka.ms/o365clientmgmt) lets you enforce policy settings for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Office 365 ProPlus on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 

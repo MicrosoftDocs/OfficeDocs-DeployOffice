@@ -20,7 +20,7 @@ description: "The Office Customization Tool creates the configuration files that
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
 >
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
 The [Office Customization Tool](https://config.office.com/) creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to deploy a customized version of Office.
 

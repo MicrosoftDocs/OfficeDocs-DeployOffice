@@ -17,7 +17,7 @@ description: "Provides Office admins with information on how to deploy Office 36
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
 >
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
 This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md).
   
