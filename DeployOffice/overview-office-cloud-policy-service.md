@@ -11,12 +11,17 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "The Office cloud policy service lets you enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed."
+description: "The Office cloud policy service lets you enforce policy settings for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed."
 ---
 
 # Overview of the Office cloud policy service for Office 365 ProPlus
 
-The [Office cloud policy service](https://aka.ms/o365clientmgmt) lets you enforce policy settings for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. When a user signs into Office 365 ProPlus on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](https://go.microsoft.com/fwlink/p/?linkid=2123420).
+
+The [Office cloud policy service](https://aka.ms/o365clientmgmt) lets you enforce policy settings for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Office 365 ProPlus on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 
 The Office cloud policy service is part of a [portal for managing Office 365 ProPlus](https://aka.ms/o365clientmgmt). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).  
 
@@ -71,18 +76,18 @@ For example, when a user signs into Office on a device for the first time, a che
 > [!NOTE]
 > Policies from the Office cloud policy service are applied only when the Office app is restarted. The behavior is the same as with Group Policy. For Windows devices, policies are enforced based on the primary user that is signed into Office 365 ProPlus.  If there are multiple accounts signed in, only policies for the primary account are applied.  If the primary account is switched, most of the policies assigned to that account will not apply until the Office apps are restarted. Some policies related to [privacy controls](privacy/overview-privacy-controls.md) will apply without restarting any Office apps. 
 
-If the user is a member of multiple AAD groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with “0” being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
+If the user is a member of multiple AAD groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
 
 Also, policy settings implemented by using Office cloud policy service take precedence over policy settings implemented by using Group Policy on Windows Server, as well as taking precedence over preference settings or locally applied policy settings.
 
 ## Additional information about the Office cloud policy service
 
-- Only user-based policy settings are available. Computer-based policy settings aren’t available.
+- Only user-based policy settings are available. Computer-based policy settings aren't available.
 - Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available currently. Work is being done to make more user-based policy settings available.
 - As new user-based policy settings are made available for Office, the Office cloud policy service will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
 - You can also create policy configurations to apply policy settings for Version 1808 or higher of Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365).
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
-- A policy configuration can’t be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
+- A policy configuration can't be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
 
 ## Troubleshooting tips
 
