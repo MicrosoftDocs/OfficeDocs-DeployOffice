@@ -48,10 +48,10 @@ End-user notifications for software updates are a key concern for any IT departm
 When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Manager will also deliver notifications. To learn more, see [Understanding Office 365 ProPlus Updates for IT Pros](https://techcommunity.microsoft.com/t5/office-365-blog/understanding-office-365-proplus-updates-for-it-pros-cdn-vs-sccm/ba-p/795728).  It is important to carefully consider ramifications of user notifications when considering an update strategy. 
 
 - File share: Office notifications only
-- Configuration Manager: ConfigMgr notifications only unless Office updates are pre-staged.
+- Configuration Manager: Configuration Manager notifications only unless Office updates are pre-staged.
 - Office CDN: Office notifications only
 
-Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1) and when ConfigMgr software deployment has Available time prior to deadline.  Meaning, IT Pro pre-staged Office content using ConfigMgr on the machine prior to deadline. In this scenario, both ConfigMgr and Office will deliver end-user notifications independently based on deadline defined in ConfigMgr. 
+Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1) and when Configuratiion Manager software deployment has Available time prior to deadline.  Meaning, IT Pro pre-staged Office content using Configuration Manager on the machine prior to deadline. In this scenario, both Configuration Manager and Office will deliver end-user notifications independently based on deadline defined in Configuration Manager. 
 
 ## Considerations for choosing how to deliver updates
 
@@ -77,12 +77,12 @@ Disadvantages:
 - Every permutation of Office supported leads to exponential growth of package content which must be replicated to every Distribution Point.
 - By default, any required content not found on the Distribution Point will result in Office 365 client update failure.
 
-End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by ConfigMgr or Office prior to deadline.
+End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered by Configuration Manager (on-premises and cloud)
 
 Advantages: 
-- Optimizes bandwidth where IT Pro can stage on-premises content which are often required and offload to CDN for those which aren't.  Great example is languages.  Use Configuration Manager inventory to identify primary languages and stage only those on-premises, offload secondary languages and proofing tools to pull from CDN. Fallback for non-downloaded content can be achieved by selecting ‘If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates’ within ConfigMgr software deployment.
+- Optimizes bandwidth where IT Pro can stage on-premises content which are often required and offload to CDN for those which aren't.  Great example is languages.  Use Configuration Manager inventory to identify primary languages and stage only those on-premises, offload secondary languages and proofing tools to pull from CDN. Fallback for non-downloaded content can be achieved by selecting ‘If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates’ within Configuration Manager software deployment.
 - Supports Configuration Manager Peer Cache feature but only for content which is staged on Distribution Points.
 
 Disadvantages:
@@ -90,7 +90,7 @@ Disadvantages:
 - The IT Pro must carefully consider which content to download and what should come from CDN.
 - The IT Pro must make intentional decisions regarding specific builds\versions by channels to download each month.
 
-End-user notifications: Delivered by Configuration Manager only when available time and deadline are the same.  If available time is prior to deadline updates may be pre-staged, notifications may be delivered either by ConfigMgr or Office prior to deadline.
+End-user notifications: Delivered by Configuration Manager only when available time and deadline are the same.  If available time is prior to deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered by Configuration Manager (cloud)
 
@@ -102,7 +102,7 @@ Disadvantages:
 - Each workstation will egress to the internet to download content via BITS from the Microsoft CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
 - The IT Pro must make intentional decisions regarding specific builds\versions by channels to download each month.
 
-End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to deadline updates may be pre-staged, notifications may be delivered either by ConfigMgr or Office prior to deadline.
+End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered from Office CDN (Microsoft recommended)
 
@@ -118,7 +118,7 @@ Disadvantages:
 - The IT Pro will need to review the network topology to ensure clients are performing peer to peer sharing from sources close to client.
 - Extensive controls of Delivery Optimization require review.
 - The IT Pro must transition from push mentality to allow clients to pull content dynamically.
-- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling".  This means not all clients will receive the update at the same time and not appropriate for traditional ConfigMgr "maintenance windows" etc.
+- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling".  This means not all clients will receive the update at the same time and not appropriate for traditional Configuration Manager "maintenance windows" etc.
 - The networking team should follow Microsoft best practice and whitelist\bypass proxy for Microsoft CDN endpoints.
 
 End-user notifications: Delivered by Office only.
