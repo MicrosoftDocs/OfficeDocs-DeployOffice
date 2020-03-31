@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: How to configure users' Outlook profiles to use a local copy of the Exchange mailbox (Cached Mode) using the Office Customization Tool (OCT) in Office 2016.
 ms.assetid: 29eead6a-7cdc-4787-aa79-c71a2cf702b4
 ROBOTS: NOINDEX, NOFOLLOW
 ---

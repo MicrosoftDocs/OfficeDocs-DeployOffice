@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn about how to create a new Setup customization file or open an existing one using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

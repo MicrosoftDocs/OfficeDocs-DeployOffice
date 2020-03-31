@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to modify or remove default shortcuts to installed Office applications using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 579bab0f-35ca-4ea8-b871-7a11823d5eb5
 ROBOTS: NOINDEX, NOFOLLOW
 ---

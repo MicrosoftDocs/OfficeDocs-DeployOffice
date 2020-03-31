@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to customize security settings for Office applications using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 5f04cd46-7af0-46f3-a7e8-008dbd7b7be2
 ROBOTS: NOINDEX, NOFOLLOW
 ---

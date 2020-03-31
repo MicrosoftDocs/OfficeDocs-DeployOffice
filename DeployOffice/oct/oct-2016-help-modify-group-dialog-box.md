@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn about the options available for modifying a group using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 791d81b5-80ba-4ff5-a9fe-9ab87cc6603a
 ROBOTS: NOINDEX, NOFOLLOW
 ---

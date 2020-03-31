@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to use Outlook AnywhereConnect to connect to an Exchange Mailbox using HTTP with Office Customization Tool (OCT) in Microsoft Office 2016. 
 ms.assetid: 915eb0cf-6354-4084-b0f5-b8f66a529424
 ROBOTS: NOINDEX, NOFOLLOW
 ---

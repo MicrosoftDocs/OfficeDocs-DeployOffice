@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to add a destination path on a user's computer using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: a4bdcf90-6e9e-4f71-b848-1327290c5fd0
 ROBOTS: NOINDEX, NOFOLLOW
 ---

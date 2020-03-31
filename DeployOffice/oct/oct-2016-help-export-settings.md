@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to export existing Outlook profile settings to a PRF file using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 67844949-6915-42bf-bb48-2c2ed7c451a0
 ROBOTS: NOINDEX, NOFOLLOW
 ---

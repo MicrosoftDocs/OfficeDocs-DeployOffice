@@ -10,6 +10,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
+description: Learn how to add files to the list of files to remove from a user's computer using the Office Customization Tool (OCT) in Microsoft Office 2016.
 ms.assetid: 5a300561-28b4-4c45-b04d-d40f6c61bac3
 ROBOTS: NOINDEX, NOFOLLOW
 ---
