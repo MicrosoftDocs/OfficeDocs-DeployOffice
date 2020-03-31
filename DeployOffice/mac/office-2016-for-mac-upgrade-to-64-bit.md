@@ -8,8 +8,10 @@ ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
-description: "Provides information to admins about Office for Mac changing to 64-bit."
+ms.custom: 
+ - Ent_Office_Mac
+ - seo-marvel-mar2020
+description: Find information for admins and application developers about Office for Mac changing to the 64-bit runtime environment.
 ---
 
 # Office for Mac upgrade to 64-bit

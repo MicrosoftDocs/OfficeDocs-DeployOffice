@@ -8,8 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
-description: "Shows IT Pros how to set a preference for Resume Assistant in Word for Mac"
+ms.custom: 
+ - Ent_Office_Mac
+ - seo-marvel-mar2020
+description: Information for IT Pros about setting a preference for the Resume Assistant add-in in Office 365 Word for Mac.
 ---
 
 # Set a preference for Resume Assistant in Word for Mac

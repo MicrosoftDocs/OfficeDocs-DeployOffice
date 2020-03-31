@@ -9,9 +9,10 @@ ms.prod: office-perpetual-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: 
-- Ent_Office_VL
-- Office2019
-description: "Provides IT admins with information on how to deploy Office 2019."
+ - Ent_Office_VL
+ - Office2019
+ - seo-marvel-mar2020
+description: Provides IT admins with detailed information on how to deploy Office 2019 using the Office Deployment Tool.
 ---
 
 # Deploy Office 2019 (for IT Pros)
@@ -43,24 +44,24 @@ There are a series of settings in the configuration.xml file that you configure 
 
 |Configuration  |configuration.xml setting  |Additional information  |
 |---------|---------|---------|
-|Where to download the Office installation files to and where to install Office from <br/> <br/>For example, \\\server\share (a shared folder on your local network)| SourcePath  |If you don’t specify a SourcePath when using the ODT to install Office, the ODT looks for the installation files in the folder it’s located in. If it doesn’t find the Office installation files there, it goes to the Office CDN to get the installation files. <br/> <br/>  We recommend that you install Office directly from the Office CDN, if internet connectivity and network bandwidth make that possible.      |
-|Which products to download or install <br/> <br/>For example, Office Professional Plus 2019 | Product ID  | Valid values for volume licensed versions of Office 2019 include the following:  <br/>- ProPlus2019Volume <br/> -	Standard2019Volume <br/>- ProjectPro2019Volume <br/> - ProjectStd2019Volume <br/> - VisioPro2019Volume <br/> - VisioStd2019Volume  <br/><br/> For a list of Product IDs for other volume licensed versions of Office 2019, such as Access 2019, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).|
-|Use Multiple Activation (MAK) to activate Office 2019     | PIDKEY  | Enter the product key for MAK activation.   <br/> <br/> You don’t need to use PIDKEY if you’re activating Office 2019 with Key Management Service (KMS).    |
-|Which languages to download or install <br/> <br/> For example, English (en-us) and French (fr-fr). |Language ID      | You can install multiple languages at the same time you’re Installing Office 2019, or you can install them later.   <br/> <br/> For more information, see [Deploy languages for Office 2019](#deploy-languages-for-office-2019).   |
+|Where to download the Office installation files to and where to install Office from <br/> <br/>For example, \\\server\share (a shared folder on your local network)| SourcePath  |If you don't specify a SourcePath when using the ODT to install Office, the ODT looks for the installation files in the folder it's located in. If it doesn't find the Office installation files there, it goes to the Office CDN to get the installation files. <br/> <br/>  We recommend that you install Office directly from the Office CDN, if internet connectivity and network bandwidth make that possible.      |
+|Which products to download or install <br/> <br/>For example, Office Professional Plus 2019 | Product ID  | Valid values for volume licensed versions of Office 2019 include the following:  <br/>- ProPlus2019Volume <br/> -    Standard2019Volume <br/>- ProjectPro2019Volume <br/> - ProjectStd2019Volume <br/> - VisioPro2019Volume <br/> - VisioStd2019Volume  <br/><br/> For a list of Product IDs for other volume licensed versions of Office 2019, such as Access 2019, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).|
+|Use Multiple Activation (MAK) to activate Office 2019     | PIDKEY  | Enter the product key for MAK activation.   <br/> <br/> You don't need to use PIDKEY if you're activating Office 2019 with Key Management Service (KMS).    |
+|Which languages to download or install <br/> <br/> For example, English (en-us) and French (fr-fr). |Language ID      | You can install multiple languages at the same time you're Installing Office 2019, or you can install them later.   <br/> <br/> For more information, see [Deploy languages for Office 2019](#deploy-languages-for-office-2019).   |
 |Which proofing tools to install  |Product ID  | The Product ID is "ProofingTools" and is used in combination with the Language ID. <br/> <br/> For more information, see [Deploy languages for Office 2019](#deploy-languages-for-office-2019). |
-|Which edition of Office 2019 to download or install. <br/> <br/>  For example, the 64-bit version.    | OfficeClientEdition  | Valid xml values are "32" and "64." <br/> <br/>All Office products on the computer must be of the same architecture. You can’t have both 32-bit and 64-bit Office products installed on the same computer. <br/><br/>  We recommend 64-bit on computers that have 4 gb or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. <br/> <br/> For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.office.com/article/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).   |
+|Which edition of Office 2019 to download or install. <br/> <br/>  For example, the 64-bit version.    | OfficeClientEdition  | Valid xml values are "32" and "64." <br/> <br/>All Office products on the computer must be of the same architecture. You can't have both 32-bit and 64-bit Office products installed on the same computer. <br/><br/>  We recommend 64-bit on computers that have 4 gb or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. <br/> <br/> For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.office.com/article/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).   |
 | Which apps to install <br/> <br/> For example, all apps except Publisher.  | ExcludeApp       | By default, all apps included in Office Professional Plus 2019 are installed. <br/> <br/> For example, to not install Publisher, you can include the following line in your configuration.xml:  <br/> <br/> \<ExcludeApp ID="Publisher" />  <br/> <br/> For more information, see [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element).    |
-| Where to get security and quality updates from. <br/> <br/> For example, directly from the Office CDN on the internet. | UpdatePath |  The default is to get updates directly from the Office CDN on the internet. This is recommended and requires the least amount of administrative effort.  <br/> <br/> But if you need to update computers that don’t have connectivity to the internet, you can specify that Office gets updates, for example, from a shared folder on your local network. But this means that you must download the updates from the Office CDN and copy them to the shared folder.  <br/> <br/> For more information, see [Update Office 2019 (for IT Pros)](update.md).  |
+| Where to get security and quality updates from. <br/> <br/> For example, directly from the Office CDN on the internet. | UpdatePath |  The default is to get updates directly from the Office CDN on the internet. This is recommended and requires the least amount of administrative effort.  <br/> <br/> But if you need to update computers that don't have connectivity to the internet, you can specify that Office gets updates, for example, from a shared folder on your local network. But this means that you must download the updates from the Office CDN and copy them to the shared folder.  <br/> <br/> For more information, see [Update Office 2019 (for IT Pros)](update.md).  |
 |Which update channel to install from and get updates from  |Channel  | Office uses the concept of update channels to determine which updates an installed version of Office receives.   <br/> <br/>  For more information, see [Update channel for Office 2019](update.md#update-channel-for-office-2019).  |
 |Whether to remove previous Windows Installer (MSI) versions of Office before installing Office 2019  |RemoveMSI   | This is recommended.   <br/> <br/>  For more information, see [Remove existing versions of Office before installing Office 2019](#remove-existing-versions-of-office-before-installing-office-2019).    |
 
 
 > [!TIP]
-> More information about these configuration.xml settings is available here: [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). Keep in mind that not all the information in that article applies to Office 2019. For example, the settings related to shared computer activation, such as SharedComputerLicensing and SCLCacheOverride, don’t apply to Office 2019.
+> More information about these configuration.xml settings is available here: [Configuration options for the Office Deployment Tool](../configuration-options-for-the-office-2016-deployment-tool.md). Keep in mind that not all the information in that article applies to Office 2019. For example, the settings related to shared computer activation, such as SharedComputerLicensing and SCLCacheOverride, don't apply to Office 2019.
 
 
 ## Sample configuration.xml file to use with the Office Deployment Tool
-The following is a sample configuration.xml file that can be used to either download or install the 64-bit version of Office Professional Plus 2019 in English using a shared folder on your local network and activate by using MAK. If you’re using this configuration.xml to install Office 2019, previous Windows Installer (MSI) versions of Office are removed as part of the installation process. Also, even though it’s not specified in the configuration.xml file, updates are automatically enabled and are configured to come directly from the Office CDN, because those are the default settings.
+The following is a sample configuration.xml file that can be used to either download or install the 64-bit version of Office Professional Plus 2019 in English using a shared folder on your local network and activate by using MAK. If you're using this configuration.xml to install Office 2019, previous Windows Installer (MSI) versions of Office are removed as part of the installation process. Also, even though it's not specified in the configuration.xml file, updates are automatically enabled and are configured to come directly from the Office CDN, because those are the default settings.
 
 ```xml
 <Configuration>
@@ -99,44 +100,44 @@ For more information about using RemoveMSI, see [Remove existing MSI versions of
 Once you have a copy of the ODT and have created your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
 
 ```
-	setup /download configuration.xml
+    setup /download configuration.xml
 ```
 
 If you have saved the configuration.xml file with a different name, use that name in the command.
 
 It will look as if nothing is happening, but the download is happening in the background. Once the download is complete, you are returned to a command prompt.
 
-If you want to check that the files are downloading, go to the location you specified for your SourcePath in the configuration.xml file. You should see a folder named “Office” with a subfolder named “Data.”  There will also be a folder named with the version number of the download. For example, 16.0.10336.20044. Which files you see and the names of the files depend on whether you are downloading the 32-bit or 64-bit version of Office and which languages you are downloading. 
+If you want to check that the files are downloading, go to the location you specified for your SourcePath in the configuration.xml file. You should see a folder named "Office" with a subfolder named "Data."  There will also be a folder named with the version number of the download. For example, 16.0.10336.20044. Which files you see and the names of the files depend on whether you are downloading the 32-bit or 64-bit version of Office and which languages you are downloading. 
 
 Here some additional details about downloading Office 2019 installation files:
 - You must download the 32-bit and 64-bit versions separately.
-- All volume licensed versions of Office 2019 – such as Office Professional Plus 2019, Visio Professional 2019, and Project Professional 2019 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for the Office 2019 products are in the stream.x86.x-none.dat or stream.x64.x-none-dat file, depending if it’s the 32-bit or 64-bit version of Office. 
+- All volume licensed versions of Office 2019 – such as Office Professional Plus 2019, Visio Professional 2019, and Project Professional 2019 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for the Office 2019 products are in the stream.x86.x-none.dat or stream.x64.x-none-dat file, depending if it's the 32-bit or 64-bit version of Office. 
 
 ## Install Office 2019 by using the Office Deployment Tool
 Once you have a copy of the ODT and have created your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
 
 ```
-	setup /configure configuration.xml
+    setup /configure configuration.xml
 ```
 
 If you have saved the configuration.xml file with a different name, use that name in the command. 
 
-Once the installation is complete, you are returned to a command prompt and you can go open Office 2019 programs you’ve installed.
+Once the installation is complete, you are returned to a command prompt and you can go open Office 2019 programs you've installed.
 
 
 ## Install Office 2019 by using Microsoft Endpoint Configuration Manager
 
 You can also use Microsoft Endpoint Configuration Manager to deploy volume licensed versions of Office 2019. Configuration Manager (current branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file. 
 
-- **Configuration Manager (current branch):** If you’re using Configuration Manager (current branch), you can use the Office 365 Client Installation wizard to deploy Office 2019. You must be using at least version 1710, but version 1806 is recommended. You’ll see an entry for Office Professional Plus 2019 in the Office 365 Client Installation wizard. On that same page, you can also select to install Project and Visio.
+- **Configuration Manager (current branch):** If you're using Configuration Manager (current branch), you can use the Office 365 Client Installation wizard to deploy Office 2019. You must be using at least version 1710, but version 1806 is recommended. You'll see an entry for Office Professional Plus 2019 in the Office 365 Client Installation wizard. On that same page, you can also select to install Project and Visio.
 
-- **System Center 2012 R2 Configuration Manager:** If you’re using System Center 2012 R2 Configuration Manager, the steps are different and much more manual. First you need to get a copy of the ODT from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment.  Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
+- **System Center 2012 R2 Configuration Manager:** If you're using System Center 2012 R2 Configuration Manager, the steps are different and much more manual. First you need to get a copy of the ODT from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment.  Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
 
 ## Deploy languages for Office 2019
 
 You can use the ODT and the configuration.xml file to install volume licensed versions of Office 2019, including Project and Visio, in multiple languages. For more details, see [Language element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#language-element).
 
-You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuriation.xml file along with the appropriate Language IDs. Proofing tools packages, which are a new capability for Office 2019, are much smaller than full language packs.  Consider deploying proofing tools in cases where users work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office 2019, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
+You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuriation.xml file along with the appropriate Language IDs. Proofing tools packages, which are a new capability for Office 2019, are much smaller than full language packs.  Consider deploying proofing tools in cases where users work with documents in multiple languages but don't need the Office product UI in all those languages. The proofing tools can be installed at the same time you're installing Office 2019, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
 
 If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office 2019. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](../upgrade-from-msi-version.md). Even though this article is about Office 365 ProPlus, most of the information also applies to volume licensed versions of Office 2019.
 

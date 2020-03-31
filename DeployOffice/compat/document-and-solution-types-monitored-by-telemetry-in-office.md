@@ -8,8 +8,10 @@ ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
-description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
+ms.custom: 
+ - Ent_Office_Compat
+ - seo-marvel-mar2020
+description: Find information about document and solution types that Office Telemetry Dashboard monitors in Office 365 ProPlus, Office 2019, and Office 2016.
 ---
 
 # Document and solution types monitored by Office Telemetry Dashboard

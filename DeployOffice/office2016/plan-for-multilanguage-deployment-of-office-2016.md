@@ -9,9 +9,11 @@ ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ - seo-marvel-mar2020
 ms.assetid: f458a0cb-a3a5-4d4a-9f98-a4a81a17ee3a
-description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."
+description: Make a plan for multilanguage setup using customization and proofing tools provided through LAPs and LIPs for Office 2016.
 ---
 
 # Plan for multilanguage deployment of Office 2016

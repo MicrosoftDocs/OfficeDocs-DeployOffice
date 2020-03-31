@@ -8,8 +8,10 @@ ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
-description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
+ms.custom: 
+ - Ent_Office_Compat
+ - seo-marvel-mar2020
+description: Learn about the supported formats and their extensions used by Word, Excel, and PowerPoint applications.
 ---
 
 # File format reference for Word, Excel, and PowerPoint

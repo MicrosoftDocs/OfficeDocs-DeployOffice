@@ -9,9 +9,11 @@ ms.topic: reference
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ - seo-marvel-mar2020
 ms.assetid: 9994905c-9fe9-4085-9f77-924dbaa38764
-description: "Learn about the language packs and language interface packs that are available for Office."
+description: Learn about the various language packs and language interface packs that are available for Office 2016.
 ---
 
 # Language versions and language interface packs in Office 2016

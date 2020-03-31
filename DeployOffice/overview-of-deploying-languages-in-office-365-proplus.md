@@ -10,7 +10,10 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-mar2020
+description: Learn about options available when deploying languages for Office 365 ProPlus, such as proofing tools, best practices, and where to deploy from.
 ---
 
 # Overview of deploying languages in Office 365 ProPlus

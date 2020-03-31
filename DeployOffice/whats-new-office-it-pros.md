@@ -8,8 +8,10 @@ ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
-description: "This article lists the new tools, content, and processes for IT Pros deploying Office."
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-mar2020
+description: This article describes the new tools, content, and processes for IT Pros deploying Office in an enterprise environment.
 ---
 
 # What's new in Office deployment for IT Pros
@@ -41,7 +43,7 @@ For more information, see this [blog post](https://techcommunity.microsoft.com/t
 ### Windows 7 end of support and Office 365 ProPlus
 ***Support for Windows 7 ended on January 14, 2020.*** Using Office 365 ProPlus on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Office 365 ProPlus on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
-Even though Windows 7 is longer supported, we’ve decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. For more information, see [Windows 7 end of support and Office 365 ProPlus](windows-7-support.md).
+Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Office 365 ProPlus for the next 3 years, until January 2023. For more information, see [Windows 7 end of support and Office 365 ProPlus](windows-7-support.md).
 
 ### Delivery Optimization and Office 365 ProPlus
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft. 
@@ -68,7 +70,7 @@ You can now use the [Office Customization Tool](https://config.office.com/) to c
 Microsoft has announced the *draft* release of the recommended security configuration baseline settings for Microsoft Office 365 ProPlus, version 1907. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1907-July-2019-DRAFT/ba-p/771308).
 
 ### Set a deadline for updates from Microsoft AutoUpdate (MAU)
-Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s device. For more information, see [Set a deadline for updates from Microsoft AutoUpdate](mac/mau-deadline.md).
+Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user's device. For more information, see [Set a deadline for updates from Microsoft AutoUpdate](mac/mau-deadline.md).
 
 ## June 2019
 
@@ -83,7 +85,7 @@ It's now easier to change an existing installation of Office 365 ProPlus from 32
 For more information, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
 
 ### General availability of Office cloud policy service
-The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy preferences for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Office 365 ProPlus.
+The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy preferences for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Office 365 ProPlus.
 
 For more information, see [Overview of the Office cloud policy service for Office 365 ProPlus](overview-office-cloud-policy-service.md).
 
@@ -93,7 +95,7 @@ Security Policy Advisor is now available for public preview. You can use Securit
 For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
 
 ### Privacy controls for Office 365 ProPlus
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Office 365 ProPlus.
 
 Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
 
@@ -110,7 +112,7 @@ Microsoft Teams will be installed for ***new*** installations of Office 365 ProP
 ## January 2019
 
 ### Public preview of Office client policy service
-A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy preferences for Office 365 ProPlus on a user’s device, even if the device isn’t domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Office 365 ProPlus.
+A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy preferences for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Office 365 ProPlus.
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)

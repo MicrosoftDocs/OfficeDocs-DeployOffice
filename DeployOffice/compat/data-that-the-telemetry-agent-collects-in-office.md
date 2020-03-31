@@ -8,8 +8,10 @@ ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
-description: "Learn about the data collected by the agent for Office Telemetry Dashboard."
+ms.custom: 
+ - Ent_Office_Compat
+ - seo-marvel-mar2020
+description: Learn about the data collected by the agent for Office Telemetry Dashboard, such as user data and recently loaded apps.
 ---
 
 # Data collected by the agent for Office Telemetry Dashboard

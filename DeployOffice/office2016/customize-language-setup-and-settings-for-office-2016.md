@@ -9,9 +9,11 @@ ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ -seo-marvel-mar2020
 ms.assetid: 1c423975-1848-4060-999c-cafcadf3047d
-description: "Learn how to customize languages for Office 2016."
+description: Learn how to customize and deploy language settings for Office 2016, including how to download ISOs for Office language packs and proofing tools.
 ---
 
 # Customize language setup and settings for Office 2016
