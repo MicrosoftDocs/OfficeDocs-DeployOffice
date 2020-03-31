@@ -114,11 +114,11 @@ Advantages:
 - Aligns with Microsoft's vision of "Modern Workplace" where users roam and work remotely.
 
 Disadvantages:
-- Requires extensive boundary configuration within Configuration Manager.
-- The IT Pro will need to review the network topology to ensure clients are performing peer to peer sharing from sources close to client.
+- The IT Pro will need to review the network topology to ensure clients are performing peer to peer sharing is optimal.
 - Extensive controls of Delivery Optimization require review.
 - The IT Pro must transition from push mentality to allow clients to pull content dynamically.
 - Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling".  This means not all clients will receive the update at the same time and not appropriate for traditional Configuration Manager "maintenance windows" etc.
 - The networking team should follow Microsoft best practice and whitelist\bypass proxy for Microsoft CDN endpoints.
+- Requires extensive boundary configuration within Configuration Manager Connected Cache (optional).
 
 End-user notifications: Delivered by Office only.
