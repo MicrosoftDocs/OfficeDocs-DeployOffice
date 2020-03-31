@@ -8,8 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
-description: "Shows IT Pros how to set the macro security level for Office for Mac by using a preference"
+ms.custom: 
+ - Ent_Office_Mac
+ - seo-marvel-mar2020
+description: Information for IT Pros about setting the macro security level for Office for Mac by using a preference.
 ---
 
 # Set a preference for macro security in Office for Mac

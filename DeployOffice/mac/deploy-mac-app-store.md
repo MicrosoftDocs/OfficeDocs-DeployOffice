@@ -8,8 +8,10 @@ ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
-description: "Provides information to admins on how to download and deploy Office for Mac from the Mac App Store"
+ms.custom: 
+ - Ent_Office_Mac
+ - seo-marvel-mar2020
+description: Provides information to admins about how to download and deploy Office for Mac from the Mac App Store.
 ---
 
 # Deploy Office for Mac from the Mac App Store

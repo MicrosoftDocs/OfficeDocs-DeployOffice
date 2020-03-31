@@ -8,8 +8,10 @@ ms.topic: get-started-article
 ms.service: o365-administration 
 localization_priority: Normal 
 ms.collection: Ent_O365 
-ms.custom: Ent_Office_ProPlus 
-description: "Deploy Office content updates" 
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-mar2020
+description: Find a list of Office deployment articles that have changed recently, like new features and tools or announcements and plans for future content updates.
 --- 
 
 # Content updates for deploying Office 

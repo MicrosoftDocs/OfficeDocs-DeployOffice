@@ -10,8 +10,10 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
-description: "Configuration options for the Office Deployment Tool"
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-mar2020
+description: Learn about the different configuration options available for the Office Deployment Tool, such as the Add element and its attributes.
 ---
 
 
@@ -264,7 +266,7 @@ Note that MatchOS and MatchInstalled cannot install the operating system languag
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
      <Language ID="MatchInstalled" />
-	 <Language ID="MatchOS" Fallback="en-us" />
+     <Language ID="MatchOS" Fallback="en-us" />
   </Product>
 </Add>  
 ```

@@ -9,9 +9,11 @@ ms.topic: reference
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ - seo-marvel-mar2020
 ms.assetid: 3f4de10b-757a-4ce5-b9b7-1baafeb4753e
-description: "Identify the companion proofing languages that are included with Office 2016."
+description: Find information about which companion proofing languages are included with each language version of Office 2016.
 ---
 
 # Companion proofing languages for Office 2016

@@ -8,8 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
-description: "Explains how to configure device-based licensing for Office 365 ProPlus."
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-mar2020
+description: Learn how to configure device-based licensing for Office 365 ProPlus to simplify management among multiple users.
 ---
 
 # Device-based licensing for Office 365 ProPlus
@@ -33,12 +35,12 @@ To verify that Office 365 ProPlus and the Windows 10 device meet these requireme
 - On the Windows 10 device, from the Start menu or a command prompt, type `winver` and then hit Enter. The **About Windows** dialog appears and lists the version of Windows 10.
 - Sign in to the [Microsoft Azure](https://portal.azure.com/) and go to **Azure Active Directory** > **Devices**. The type of join for your Windows 10 device is listed in the **Join Type** column. 
 
-  If the Windows 10 device doesn’t appear, sign in to the Windows 10 device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
+  If the Windows 10 device doesn't appear, sign in to the Windows 10 device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
 
 ## Steps to configure device-based licensing for Office 365 ProPlus
 
 After you have verified that your Windows 10 devices and Office 365 ProPlus installations meet the specified requirements, you need to do the following:
-- Add the Windows 10 devices to a group that’s available in Azure AD and assign the appropriate licenses to that group.
+- Add the Windows 10 devices to a group that's available in Azure AD and assign the appropriate licenses to that group.
 - Configure Office 365 ProPlus to use device-based licensing instead of user-based licensing.
 
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ After you have verified that your Windows 10 devices and Office 365 ProPlus inst
 
 ### Add Windows 10 devices to a group in Azure AD and assign that group licenses
 
-To configure device-based licensing, you first need to add your Windows 10 devices to a group that’s available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.
+To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.
 
 
 |**Group type**  |**Create using these tools**  |
@@ -69,10 +71,10 @@ After you have created the appropriate group type and assigned the appropriate W
 
 After you have assigned licenses to the group in Azure AD that contains your Windows 10 devices, you need to configure Office 365 ProPlus to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
  - The Office Deployment Tool and the DeviceBasedLicensing setting.
-- Group Policy and the “Use a device-based license for Office 365 ProPlus” policy setting
+- Group Policy and the "Use a device-based license for Office 365 ProPlus" policy setting
 
 ### Using the Office Deployment Tool
-If you use the Office Deployment Tool to install or configure Office 365 ProPlus, you’ll want to add the following line to your configuration.xml file:
+If you use the Office Deployment Tool to install or configure Office 365 ProPlus, you'll want to add the following line to your configuration.xml file:
 
 ```xml
 <Property Name="DeviceBasedLicensing" Value="1" />
@@ -81,7 +83,7 @@ If you use the Office Deployment Tool to install or configure Office 365 ProPlus
 > [!IMPORTANT]
 > To configure device-based licensing by using the Office Deployment Tool, you must be installing Version 1909 or later of Office 365 ProPlus. There was a problem with earlier versions that prevented device-based licensing from being properly configured using the DeviceBasedLicensing setting with the Office Deployment Tool.
 >
-> If you’re using an earlier version of Office 365 ProPlus, you can configure device-based licensing by using [Group Policy](#using-group-policy).  Or, from an elevated command prompt you can run the following command:
+> If you're using an earlier version of Office 365 ProPlus, you can configure device-based licensing by using [Group Policy](#using-group-policy).  Or, from an elevated command prompt you can run the following command:
 >
 >   `reg add HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v O365ProPlusRetail.DeviceBasedLicensing /t REG_SZ /d 1`
 
@@ -95,7 +97,7 @@ For more information about using the Office Deployment Tool and the configuratio
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
 ### Using Group Policy 
-If you use Group Policy to configure Office 365 ProPlus settings, you can enable the “Use a device-based license for Office 365 ProPlus” policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
+If you use Group Policy to configure Office 365 ProPlus settings, you can enable the "Use a device-based license for Office 365 ProPlus" policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
 
 > [!NOTE]
 > To use this policy setting, download version 4909.1000 (or later) of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Office 365 ProPlus from the Microsoft Download Center. Version 4909.1000 was released on September 5, 2019.
@@ -104,7 +106,7 @@ If you use Group Policy to configure Office 365 ProPlus settings, you can enable
 
 You can verify that Office 365 ProPlus is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
-If the device hasn’t been properly configured for device-based licensing, when a user tries to use Office 365 ProPlus on the device, Office will be in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can’t create new documents or edit and save existing documents.
+If the device hasn't been properly configured for device-based licensing, when a user tries to use Office 365 ProPlus on the device, Office will be in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
 
 In those cases, the user will also see a banner beneath the ribbon in the document with the following message:
 
@@ -114,8 +116,8 @@ To troubleshoot this issue, make sure the device is correctly joined to Azure AD
 
 In other cases, the user might see this message:
 
->**CAN’T VERIFY LICENSE** We’re having trouble verifying the Office license for this device.
+>**CAN'T VERIFY LICENSE** We're having trouble verifying the Office license for this device.
 
-In this case, the device is having problems contacting the Office Licensing Service on the internet. Office tries to contact the Office Licensing Service to ensure the device is properly licensed and to automatically renew a license that is about to expire. A device-based license is set to expire in about 3 to 4 months, so the device doesn’t have to access to internet constantly. The **CAN’T VERIFY LICENSE** message usually appears about 10 days before the license is about to expire.
+In this case, the device is having problems contacting the Office Licensing Service on the internet. Office tries to contact the Office Licensing Service to ensure the device is properly licensed and to automatically renew a license that is about to expire. A device-based license is set to expire in about 3 to 4 months, so the device doesn't have to access to internet constantly. The **CAN'T VERIFY LICENSE** message usually appears about 10 days before the license is about to expire.
 
-Make sure the device has access to the internet or that your firewall isn’t preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).  
+Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).  

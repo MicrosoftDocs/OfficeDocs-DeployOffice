@@ -8,8 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
-description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
+ms.custom: 
+ - Ent_Office_Mac
+ - seo-marvel-mar2020
+description: Information about preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac, such as mailbox settings.
 ---
 
 # Set preferences for Outlook for Mac
@@ -19,7 +21,7 @@ description: "Shows preferences that IT Pros can set for Outlook for Mac and Out
 As an IT admin, you may want to provide Outlook for Mac users in your organization with a standard set of preferences in either of the following ways:
 
 - Set a default preference, which users can change.
-- Force a particular preference, which users can’t change.
+- Force a particular preference, which users can't change.
 
 The following preferences can be used to simplify account setup for Office 365 mailboxes, help protect company data, and support a streamlined user experience.
 
@@ -72,7 +74,7 @@ Specify one or more domains users are allowed to add in Outlook.
 
 ### Hide text about adding non-corporate mailboxes
 
-Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email** success dialog box.
+Hide the "Did you know? Outlook supports…" text in the **Set Up Your Email** success dialog box.
 
 |||
 |:-----|:-----|
@@ -153,7 +155,7 @@ Set default location for weather in calendar view.
 |**Domain**  | com.microsoft.Outlook |
 |**Key** |DefaultWeatherLocation  |
 |**Data Type**  |String  |
-|**Possible values**  | *Various (example: “Paris, France”)* |
+|**Possible values**  | *Various (example: "Paris, France")* |
 |**Availability** |16.18 |
 |**Comments**| Use the format returned by the weather location search within Outlook. |
 
