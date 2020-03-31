@@ -26,8 +26,6 @@ When viewer mode is enabled, an unlicensed user of Office 365 ProPlus is not pro
 
 :::image type="content" source="images/viewermode1.png" alt-text="Viewer mode enabled in Office 365 ProPlus":::
 
-If you enable viewer mode on a device, we recommend not installing Outlook and Skype on that device. 
-
 ## Enable viewer mode with Group Policy
 
 To enable viewer mode for unlicensed users in your organization with Group Policy, apply the following policy settings:
@@ -41,7 +39,7 @@ The Administrative Template files (ADMX/ADML) for this policy setting are availa
 
 ## Considerations when using viewer mode
 
-- viewermode is supported on Word, Excel, and PowerPoint at this time. We are aware of known issues with Project and Visio and additional prompts. To exclude the unsupported applications you can follow the process here(https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) 
+- Wiewer mode is currently supported for Word, Excel, and PowerPoint. We are aware of known issues with Project and Visio. For information about how to exclude applications when deploying, see [here](https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) 
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
 - For information about the availability of Version 1902 or later in the update channels for Office 365 ProPlus, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - The Activate Product button under File > Account is hidden when Office is in viewer mode.
