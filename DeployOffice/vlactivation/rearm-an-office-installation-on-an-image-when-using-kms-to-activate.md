@@ -1,5 +1,5 @@
 ---
-title: "Rearm a volume licensed version of Office that's included in an operating system image"
+title: Rearm a volume licensed version of Office from an operating system image
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -8,7 +8,9 @@ ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ - seo-marvel-apr2020
 description: "Provides Office admins with information on how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
 ---
 

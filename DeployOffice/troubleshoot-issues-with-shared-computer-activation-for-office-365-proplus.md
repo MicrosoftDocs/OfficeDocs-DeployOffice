@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot issues with shared computer activation for Office 365 ProPlus"
+title: Troubleshoot shared computer activation issues for Office 365 ProPlus
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -8,7 +8,9 @@ ms.topic: troubleshooting
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-apr2020
 search.appverid:
 - MET150
 

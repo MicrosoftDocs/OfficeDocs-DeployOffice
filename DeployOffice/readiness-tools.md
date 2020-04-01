@@ -1,5 +1,5 @@
 ---
-title: "Overview of application compatibility and readiness assessment tools for Office 365 ProPlus"
+title: Office 365 ProPlus application compatibility & readiness assessment tools
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
+- seo-marvel-apr2020
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Office 365 ProPlus"
 ---
 
@@ -26,7 +27,7 @@ Typically, organizations go through the following phases when planning and imple
 
 - **Prepare**  Gather the inventory of devices and users, and compatibility information about add-ins and macros to adequately plan for the pilot validation and upgrade.
 - **Upgrade**  Perform the necessary steps to deploy Office, including potential remediation work for application compatibility.
-- **Manage**  Ensure ongoing updates don’t have any impact on business continuity or application compatibility.
+- **Manage**  Ensure ongoing updates don't have any impact on business continuity or application compatibility.
 
 The Readiness Toolkit and Configuration Manager can help during the Prepare phase, and Configuration Manager can also help during the Upgrade phase. Office Telemetry Dashboard is primarily of use during the Manage phase.
 

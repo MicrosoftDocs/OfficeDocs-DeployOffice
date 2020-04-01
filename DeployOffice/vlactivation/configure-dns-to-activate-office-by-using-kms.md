@@ -1,5 +1,5 @@
 ---
-title: "Configure DNS for activating volume licensed versions of Office by using KMS"
+title: Configure DNS to activate volume licensed versions of Office using KMS
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -8,7 +8,9 @@ ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ - seo-marvel-apr2020
 description: "Provides Office admins with information on how to configure DNS and Key Management Service (KMS) to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."
 ---
 
