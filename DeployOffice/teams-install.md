@@ -140,7 +140,7 @@ If your organization isn't ready to deploy Teams and you use Group Policy, you c
 
 > [!NOTE]
 > - This policy setting only applies if you are installing or updating to Version 1905 or later of Office 365 ProPlus (or Office 365 Business).
-> - To use this policy setting, download at least version 4882.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on July 9, 2019.
+> - To use this policy setting, download at least version 4993.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on March 30, 2020.
 
 If you enable this policy setting, Teams won't be installed in the following scenarios for Version 1905 or later:
 
