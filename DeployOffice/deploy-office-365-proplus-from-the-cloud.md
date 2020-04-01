@@ -17,6 +17,11 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 # Deploy Office 365 ProPlus from the cloud
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 Follow the steps in this article to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). 
 
 ## Before you begin
@@ -113,7 +118,7 @@ With Office 365 ProPlus, you can control how frequently your users receive featu
 
 ### Deploy Visio and Project alongside the core Office apps
 
-To deploy Visio and Project with Office 365 ProPlus, you can inlude them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
+To deploy Visio and Project with Office 365 ProPlus, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
 
 ## Related topics
 
