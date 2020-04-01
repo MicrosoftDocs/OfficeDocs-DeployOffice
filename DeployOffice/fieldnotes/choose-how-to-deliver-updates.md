@@ -31,7 +31,7 @@ By default, Microsoft 365 Apps will update from Office CDN.  If you are a custom
 
 ## Network options for updates
 
-Network optimization is an important consideration when delivering Office updates.  Microsoft recommends selecting one of the options which includes peer-to-peer sharing technologies such as ConfigMgr or Office CDN. 
+Network optimization is an important consideration when delivering Office updates.  Microsoft recommends selecting one of the options which includes peer-to-peer sharing technologies such as Configuration Manager or Office CDN. 
 
 - File share: Server Message Block (SMB)
 - Configuration Manager: Office 365 Client Management is Enabled, Background Intelligent Transfer Service (BITS) is used.
