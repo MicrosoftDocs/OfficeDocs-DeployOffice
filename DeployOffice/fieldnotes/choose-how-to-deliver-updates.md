@@ -2,7 +2,7 @@
 title: Update options for Office 365 ProPlus
 author: davguent
 ms.author: davguent
-manager: 
+manager: daryltu
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
