@@ -14,6 +14,11 @@ description: "Provides Office admins with an overview of how Microsoft Teams is 
 
 # Deploy Microsoft Teams with Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 In the past, Microsoft Teams was a separate installation from Office 365 ProPlus. But starting with Version 1902, Teams is included as part of ***new*** installations of Office 365 ProPlus. If Teams is already installed on the device, no changes are made to that installation of Teams.
 
 Teams is also being added to ***existing*** installations of Office 365 ProPlus on devices running Windows. For more information about when that occurs, see [What about existing installations of Office 365 ProPlus?](#what-about-existing-installations-of-office-365-proplus).

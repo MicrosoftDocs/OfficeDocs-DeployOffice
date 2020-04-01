@@ -16,6 +16,12 @@ description: "Configuration options for the Office Deployment Tool"
 
 
 # Configuration options for the Office Deployment Tool
+
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 With the Office Deployment Tool (ODT), you can download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
 > [!NOTE]
@@ -264,7 +270,7 @@ Note that MatchOS and MatchInstalled cannot install the operating system languag
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
      <Language ID="MatchInstalled" />
-	 <Language ID="MatchOS" Fallback="en-us" />
+     <Language ID="MatchOS" Fallback="en-us" />
   </Product>
 </Add>  
 ```

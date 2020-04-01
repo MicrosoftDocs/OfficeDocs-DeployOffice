@@ -14,6 +14,11 @@ description: "Explains how to configure device-based licensing for Office 365 Pr
 
 # Device-based licensing for Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 Starting in Summer 2020, commercial customers can use *Office 365 ProPlus (device)*  to assign an Office 365 ProPlus license to a Windows 10 device instead of to a user. Education customers can do the same thing by using the *Office 365 ProPlus for Education (device)* license.  This device-based license is designed to simplify management of Office 365 ProPlus on devices shared by many users. Anyone that signs in and uses that device can use Office 365 ProPlus to create and edit documents.
 
 > [!IMPORTANT]

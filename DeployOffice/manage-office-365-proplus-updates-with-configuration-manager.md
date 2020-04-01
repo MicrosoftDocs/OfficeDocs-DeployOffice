@@ -16,6 +16,11 @@ description: "Microsoft Endpoint Configuration Manager has the ability to manage
 
 # Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business.
 
 When Microsoft publishes a new Office 365 client update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an [update package](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_Package) to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office 365 client update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells the Office client where to get the update and when to start the update installation process.

@@ -14,6 +14,11 @@ description: "Provides guidance for deploying Office 365 ProPlus in a GCC High o
 
 # Guidance for deploying Office 365 ProPlus in a GCC High or DoD environment
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
 ## Which version of Office 365 ProPlus to deploy
@@ -176,7 +181,7 @@ If experimentation was previously enabled, you also need to delete any data unde
 These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
 
 ### Configure Outlook behavior on Office 365 ProPlus
-The following registry values must to be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
+The following registry values must be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
   **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Office 365 ProPlus you don't need to set this registry setting. <br/>
