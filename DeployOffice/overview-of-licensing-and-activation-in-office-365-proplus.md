@@ -59,7 +59,7 @@ The user can then choose one of the available options to reactivate Office 365 P
 
 If the user hasn't been assigned a license, and they try to use Office 365 ProPlus on a computer where it's installed, Office will be in reduced functionality mode. Also, the user will be prompted to sign in and activate every time they open an Office app, such as Word or Excel.
   
- ## Improvements in Office 365 ProPlus version 1909.
+ ## Improvements in Office 365 ProPlus versions >1910.
 
 We have made great improvements to how licensing and user administration is handled with Office 365 ProPlus.
 
