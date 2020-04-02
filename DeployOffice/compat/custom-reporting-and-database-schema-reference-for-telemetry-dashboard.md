@@ -1,5 +1,5 @@
 ---
-title: "Custom reporting and database schema reference for Office Telemetry Dashboard"
+title: Office Telemetry Dashboard custom reporting & database schema
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -8,7 +8,9 @@ ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.custom: 
+ - Ent_Office_Compat
+ - seo-marvel-apr2020
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
 ---
 

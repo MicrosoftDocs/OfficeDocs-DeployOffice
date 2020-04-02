@@ -1,5 +1,5 @@
 ---
-title: "Guidance for deploying Office 365 ProPlus in a GCC High or DoD environment"
+title: Deploying Office 365 ProPlus in a GCC High or DoD environment
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -10,7 +10,7 @@ localization_priority: None
 ms.collection: Ent_O365
 ms.custom: 
  - Ent_Office_ProPlus
- - seo-marvel-mar2020
+ - seo-marvel-apr2020
 description: Provides guidance for deploying Office 365 ProPlus in a GCC High or DoD environment and meeting your compliance requirements.
 ---
 

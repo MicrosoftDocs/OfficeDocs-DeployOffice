@@ -1,5 +1,5 @@
 ---
-title: "Configure a KMS host computer to activate volume licensed versions of Office"
+title: Configure KMS host computer to activate volume licensed Office versions
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -8,7 +8,9 @@ ms.topic: get-started-article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.custom: 
+ - Ent_Office_VL
+ - seo-marvel-apr2020
 description: "How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016."
 ---
 

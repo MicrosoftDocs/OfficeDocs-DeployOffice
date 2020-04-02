@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager"
+title: Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -8,7 +8,9 @@ ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-apr2020
 description: "Provides Office admins with information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager."
 ---
 

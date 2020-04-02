@@ -1,5 +1,5 @@
 ---
-title: "Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus"
+title: Assess application compatibility with Readiness Toolkit | Office 365 ProPlus
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
+- seo-marvel-apr2020
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
@@ -225,7 +226,7 @@ The following table lists the possible readiness statuses that you can see in th
 |:-----|:-----|
 |Highly adopted  <br/> |This add-in is being widely used on Office 365 ProPlus in other organizations, and is ready for use with Office 365 ProPlus. But, the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
 |Adopted  <br/> |This add-in is being used on Office 365 ProPlus in other organizations, but the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
-|Adopted version available <br/> |A different version of this add-in is either “Adopted” or “Highly Adopted” on Office 365 ProPlus. <br/> |
+|Adopted version available <br/> |A different version of this add-in is either "Adopted" or "Highly Adopted" on Office 365 ProPlus. <br/> |
 |Contact software provider  <br/> |This add-in might have issues with Office 365 ProPlus. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
 |Supported version available  <br/> |A supported version of this add-in for Office 365 ProPlus is available from the software provider.  <br/> |
 |Unknown<sup>1,2</sup> <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
@@ -314,16 +315,16 @@ Instead of creating an Excel file, a Power BI report, with the same information,
 If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, you can use the following command to create a report from previous readiness results for the Finance department, using a local SQL database named Readiness, and using SQL Server authentication, instead of Windows authentication.
 
 ```
-ReadinessReportCreator.exe -sqlimport “C:\Reports\Finance” -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
+ReadinessReportCreator.exe -sqlimport "C:\Reports\Finance" -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
 ```
 
 
 <a name="labels"> </a>
 
 ## Use labels to categorize and filter data in reports
-You can specify up to four custom labels to categorize and filter data in reports created by the Readiness Toolkit. Labels are available in reports that are based on scans of the most recently used Office documents and installed add-ins on the user’s computer.
+You can specify up to four custom labels to categorize and filter data in reports created by the Readiness Toolkit. Labels are available in reports that are based on scans of the most recently used Office documents and installed add-ins on the user's computer.
 
-You can specify any string for the custom labels. For example, you can use a label to indicate the user’s department, title, or geographic location. When the Readiness Toolkit runs on the user’s computer, the custom labels are collected and are made available in the reports that are created. For example, you can filter the report to show only data from the Finance Department or only data from offices in Africa. Assign labels in a consistent manner, such as always using Label 1 for department.
+You can specify any string for the custom labels. For example, you can use a label to indicate the user's department, title, or geographic location. When the Readiness Toolkit runs on the user's computer, the custom labels are collected and are made available in the reports that are created. For example, you can filter the report to show only data from the Finance Department or only data from offices in Africa. Assign labels in a consistent manner, such as always using Label 1 for department.
 
 You can specify these labels by using the **Specify custom labels to use with the Readiness Toolkit** Group Policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit. Be sure to download the latest [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001).
 
@@ -334,7 +335,7 @@ You can specify these labels by using the **Specify custom labels to use with th
 
 ## Manage the privacy of data collected in reports
 
-It’s common for users in an organization to save Office files using file names that contain sensitive or confidential information. To protect the privacy of users and to help prevent revealing sensitive information, the Readiness Toolkit allows you to create a report that conceals the file paths and names of documents identified during a scan. You can create a report that conceals this information either by running the Readiness Report Creator from the UI wizard or from the command line. 
+It's common for users in an organization to save Office files using file names that contain sensitive or confidential information. To protect the privacy of users and to help prevent revealing sensitive information, the Readiness Toolkit allows you to create a report that conceals the file paths and names of documents identified during a scan. You can create a report that conceals this information either by running the Readiness Report Creator from the UI wizard or from the command line. 
 
 If you're using the UI wizard, begin by selecting either "Most recently used Office documents and installed add-ins on this computer" or "Office documents in a local folder or network share" as the type of report that you want to create. Then, on the next page of the wizard, select the **Conceal file names and paths** check box, before continuing on.
 
@@ -448,7 +449,7 @@ The following table provides a list of the information that is sent to Microsoft
 |DevicesWithMacrosWithIssues|Number of devices that contain compatibility issues with macros.|DevicesWithMacrosWithIssues: 2|
 |DevicesWhichRequireLimitedRemediation|Number of devices that contain macro files that require limited remediation.|DevicesWhichRequireLimitedRemediation: 12|
 |DevicesWhichRequireMinimalValidation|Number of devices that contain macro files that require minimal validation.|DevicesWhichRequireMinimalValidation: 12|
-|DevicesWithMacrosWithoutIssues|Number of devices that contain macros, but don’t have any compatibility issues.|DevicesWithMacrosWithoutIssues: 12|
+|DevicesWithMacrosWithoutIssues|Number of devices that contain macros, but don't have any compatibility issues.|DevicesWithMacrosWithoutIssues: 12|
 |DevicesWithMacros|Number of devices that contain macro files.|DevicesWithMacros: 12|
 |DevicesSafeToUpgrade|Number of devices are ready to upgrade to Office 365 ProPlus.|DevicesSafeToUpgrade: 12|
 |DevicesWithOlderToolVersion|Number of devices that are using an older version of the Readiness Toolkit.|DevicesWithOlderToolVersion: 12|

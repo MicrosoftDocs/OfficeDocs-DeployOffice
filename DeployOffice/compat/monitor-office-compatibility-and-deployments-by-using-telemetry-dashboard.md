@@ -1,5 +1,5 @@
 ---
-title: "Monitor Office compatibility and deployments by using Office Telemetry Dashboard"
+title: Office Telemetry Dashboard monitor compatibility & deployments
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
