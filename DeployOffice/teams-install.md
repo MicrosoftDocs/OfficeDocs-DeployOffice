@@ -130,6 +130,7 @@ If you want to use the [Office Deployment Tool](overview-of-the-office-2016-depl
 > [!NOTE]
 > - Be sure you're using the most current version of the Office Deployment Tool available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 > - If your existing installation of Office 365 ProPlus has excluded other apps, such as Access, you need to include a line in your configuration.xmi file for each of those excluded apps. Otherwise, those apps will be installed on the device.
+> - If you excluded Teams in your existing installation of Office 365 ProPlus before using the Office Deployment Tool, no action is required. The information that Teams should be excluded will be applied during subsequent runs of the Office Dpeloyment Tool, e.g. when adding Visio, Project or a Language Pack.
 > - If you have Office 365 Business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
 Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel or version you're using includes Teams as part of the installation.
