@@ -85,6 +85,9 @@ Disadvantages:
 - Every permutation of Office supported leads to exponential growth of package content. This content must then be replicated to every Distribution Point.
 - By default, any required content not found on the Distribution Point will result in Office 365 client update failure.
 
+> [!NOTE]
+> Please note that a managed device will only download required changes from a Distribution Point. So when making multiple channels and architectures availble to clients, they will not download the whole content, but only required one.
+
 End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
 ### Updates delivered by Configuration Manager (on-premises and cloud)
