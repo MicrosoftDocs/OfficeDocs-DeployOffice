@@ -266,6 +266,53 @@ Example values:
 
 For a list of all supported product IDs, see  [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://go.microsoft.com/fwlink/p/?LinkID=301891)
 
+## MSI Condition attribute
+
+Optional.
+
+Defines which MSI product codes will be detected, uninstalled and repplaced with the resulting Prodict ID.
+
+Example values:
+
+- MSICondition="VisPro,VisProR"
+- MSICondition="PrjPro,PrjProR
+
+Example list of MSI Product codes:
+
+PrjStd
+PrjPro
+VisStd
+VisPro
+PrjStdR
+PrjProR
+VisStdR
+VisProR
+
+### Example XML
+
+```xml
+<Configuration>
+	<Add Channel="Monthly" OfficeClientEdition="64">
+		<Product ID="O365ProPlusRetail">
+			<Language ID="en-us"/>
+                        <Language ID="MatchPreviousMSI"/>
+			<ExcludeApp ID="Groove"/>
+			<ExcludeApp ID="OneNote"/>
+	</Product>
+		<Product ID="VisioProRetail" MSICondition="VisPro,VisProR">
+			<Language ID="en-us"/>
+                        <Language ID="MatchPreviousMSI"/>
+			<ExcludeApp ID="Groove"/>
+		</Product>
+		<Product ID="ProjectProRetail" MSICondition="PrjPro,PrjProR">
+			<Language ID="en-us"/>
+                        <Language ID="MatchPreviousMSI"/>
+			<ExcludeApp ID="Groove"/>
+		</Product>
+	</Add>
+	<RemoveMSI/>
+</Configuration>
+```
 ## Language element
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
