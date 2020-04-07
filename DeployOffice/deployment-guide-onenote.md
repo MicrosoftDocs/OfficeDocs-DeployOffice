@@ -47,13 +47,13 @@ As of March 2020, OneNote 2016 is included alongside the other Office apps, such
 
 ### To add OneNote 2016 to an existing installation of Office
 
-If Office is already installed on the device, but OneNote 2016 didn't get installed, you can run the Office Deployment Tool on the device and use the following configuration.xml file to add OneNote 2016.
+If Office is already installed on the device, but OneNote 2016 didn't get installed, you can run the Office Deployment Tool on the device and use the following configuration file to add OneNote 2016.
 
 ```xml
 <Configuration>
    <Add>
       <Product ID="OneNoteFreeRetail">
-       <Language ID="MatchOS"/>
+       <Language ID="MatchInstalled" TargetProduct="All"/>
       </Product>
    </Add>
 </Configuration>
