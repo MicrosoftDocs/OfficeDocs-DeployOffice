@@ -39,6 +39,7 @@ The following table provides a list of connected experiences that analyze your c
 | ----------- | ------------------ |
 | 3D Maps\*    | [Get started with 3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+| Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate with your voice in Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Editor    | [Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Ideas     | [Ideas in Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -72,7 +73,6 @@ The following table provides a list of connected experiences that download onlin
 | ------------- | ------------- |
 | Calendar apps| [What are Calendar Apps?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Cloud fonts                 | [Cloud fonts in Office](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Ink Effects                 | [Draw and write with ink in Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Insert Icons                | [Insert icons in Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
@@ -104,7 +104,6 @@ The following table provides a list of those other connected experiences and pro
 | ------------- | ------------- |
 | @mention | [Use @mention in comments to tag someone for feedback](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd) |
 |Brainstorming diagram (Visio)|[Create a brainstorming diagram](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
-| Chat | [Enhance collaboration with Chat in Microsoft Office](https://support.office.com/article/1ecc6c7f-0b02-4baa-b9d9-c9d67023bedd)  |
 | Coming Soon (Outlook)  |[Coming Soon](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Contact Support (Outlook) | When you choose **Help** > **Contact Support** on the ribbon|
 | Custom Import (Visio)  | [Import data to shapes in your drawing](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
@@ -142,12 +141,12 @@ You can choose whether certain types of connected experiences, such as connected
 
 If you are signed in with a Microsoft account, open an Office app, such as Word, and go to **File** > **Account** > **Account Privacy** > **Manage Settings**. Under the **Connected experiences** section, you can choose whether certain types of connected experiences, such as experiences that analyze your content, are available to use. If you don't go to **Manage Settings**, all connected experiences will be available to you.
 
-If you are signed in with a work or school account, the admin in your organization will decide whether these connected experiences are available to you. You won’t see any choices for these connected experiences if you go to **File** > **Account** > **Account Privacy** > **Manage Settings**.
+If you are signed in with a work or school account, the admin in your organization will decide whether these connected experiences are available to you. You won't see any choices for these connected experiences if you go to **File** > **Account** > **Account Privacy** > **Manage Settings**.
 
 > [!NOTE]
 > If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
-If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don’t use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
+If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don't use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
 
 - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
@@ -156,7 +155,7 @@ If you are the admin for your organization, you can use policy settings to deter
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or you will get an error message when you try to use those connected experiences.
 
-Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there are a set of services that are essential to how Office functions that can’t be turned off, such as the licensing service that confirms that you are properly licensed to use Office.
+Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there are a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you are properly licensed to use Office.
 
 ## Related topics
 
