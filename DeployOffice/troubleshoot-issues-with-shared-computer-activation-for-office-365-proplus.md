@@ -57,7 +57,13 @@ If activation succeeded, there are some text files in the folder, like in the fo
 ![Screenshot of the Licensing folder, showing the licensing token files for shared computer activation.](images/adb109f0-757c-4e0e-87fa-ea87ba54b610.png)
   
 If you've configured the licensing token to roam, these text files will appear in the folder that you've specified.
-  
+
+<a name="Reset"> </a>
+
+## Remove existing default activations
+
+If Office has already been activated using the Default Activation Configuration, you need to clear this activation first to allow Office to perform the Shared Computer Activation. Follow the steps to [reset the activation] (https://docs.microsoft.com/en-us/office/troubleshoot/activation/reset-office-365-proplus-activation-state) and let the user re-launch Office.
+
 <a name="Errors"> </a>
 
 ## Review error messages for shared computer activation
