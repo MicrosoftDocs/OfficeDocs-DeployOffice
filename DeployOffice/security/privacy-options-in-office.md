@@ -122,5 +122,5 @@ Several other settings are related to privacy disclosure in Office 2016 applicat
 - **Prevent document inspectors from running** This setting lets you disable Document Inspector modules. Document Inspector modules, available in various Office applications since Office 2007, allows users to remove hidden and personal information from their Office documents. 
     
 ## Related topics
-[Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043)
+[Microsoft Privacy Statement covering Office](https://go.microsoft.com/fwlink/p/?LinkId=282043)
 
