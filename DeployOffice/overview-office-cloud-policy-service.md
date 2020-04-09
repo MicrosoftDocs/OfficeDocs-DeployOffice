@@ -45,7 +45,7 @@ The following are the requirements for using the Office cloud policy service wit
 The following are the basic steps for creating a policy configuration.
 
 1. Sign into the [portal](https://aka.ms/o365clientmgmt), review the terms, and then choose **Accept**.
-2. On the **Office Customization** page, choose **Go to Office policy management**.
+2. Expand the **Customization** drop/down, choose **Policy Management**.
 3. On the **Policy configurations** page, choose **Create**.
 4. On the **Create policy configuration** page, do the following:
    - Enter a name.
