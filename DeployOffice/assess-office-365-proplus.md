@@ -3,7 +3,7 @@ title: "Assess your deployment of Office 365 ProPlus"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 4/2/2018
+ms.date: 4/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -68,7 +68,7 @@ To complete that assessment, do the following:
 
 3. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Office 365 ProPlus. 
 
-4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Office 365 ProPlus deployment. For more information, see [https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1910#bkmk_o365).
+4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Office 365 ProPlus deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
 
 As part of your Office deployment, you will deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Office 365 ProPlus and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more details, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).  
 
