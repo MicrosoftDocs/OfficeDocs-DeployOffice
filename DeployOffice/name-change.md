@@ -14,7 +14,7 @@ description: "Provides Office admins information about Office 365 ProPlus being 
 
 # Name change for Office 365 ProPlus
 
-Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). In our documentation, we'll usually refer to it as just Microsoft 365 Apps.
+Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Office 365 ProPlus is the version of Office that comes with several enterprise, government, and education subscription plans. For example, Office 365 E5 and Office 365 A3. Even though those plans aren't being renamed, Office 365 ProPlus that comes with those plans will be renamed.
 
