@@ -60,13 +60,17 @@ The following information is provided to help you use the Readiness Report Creat
 
 ### Requirements and limitations for using the Readiness Toolkit
 
-Before installing and using the Readiness Toolkit, you should be aware of the following requirements:
+Before using the Readiness Toolkit, you should be aware of the following requirements for all scenarios:
 
 - Windows 7 Service Pack 1 (SP1) or later
 
 - Microsoft .NET Framework 4.5.1 or later
 
+For generating or looking at an Excel-based report, you will need in addition:
+
 - Excel 2010 or later
+
+For using a SQL server to store the results you need:
 
 - [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) (only if you're using a Click-to-Run version of Access)
 
