@@ -523,9 +523,7 @@ Allowed values:
 
 Optional. Default value is **0** if not specified.
 
-Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory.THis is only needed if you choose to move the licensing from it's default location.
-
-For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory. This is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Allowed values:
 
@@ -536,9 +534,9 @@ Allowed values:
 
 Optional.
 
-Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride.THis is only needed if you choose to move the licensing from it's default location.
+Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride. This is only needed if you choose to move the licensing token from its default location.
 
-For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+For more information, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Example values:
 
@@ -549,9 +547,9 @@ Example values:
 
 Optional. Default value is **0** if not specified.
 
-Defines the Office licensing mode for Device based activation. Device-based licensing for Office 365 ProPlus is available as a license only for some commercial customers and some education customers. For commercial customers, the license is Office 365 ProPlus (device) and is available only through Enterprise Agreement/Enterprise Agreement Subscription. For education customers, the license is Office 365 ProPlus for Education (device) and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on education availability. For commercial availability, contact your Microsoft account representative. More info(https://docs.microsoft.com/en-us/DeployOffice/device-based-licensing)
+Defines the Office licensing mode for device-based activation. For more information, see (https://docs.microsoft.com/en-us/DeployOffice/device-based-licensing).
 
-Example values:
+Allowed values:
 
 - <Property Name="DeviceBasedLicensing" Value="1" />
 - <Property Name="DeviceBasedLicensing" Value="0" />
