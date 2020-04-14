@@ -1,5 +1,5 @@
 ---
-title: Build dynamic, lean, universal packages for Office 365 ProPlus
+title: Build dynamic, lean, universal packages for Microsoft 365 Apps
 author: manoth
 ms.author: manoth
 manager: 
@@ -12,18 +12,18 @@ ms.custom:
 ms.collection: 
 ---
 
-# Best practices from the field: Build dynamic, lean, and universal packages for Office 365 ProPlus
+# Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
 
-As an admin, you might have to deploy Office 365 ProPlus in your organization. But such a deployment is more than just Office: After the initial migration to ProPlus, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Microsoft Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Office 365 ProPlus from a legacy Office is called **1st install**.
+As an admin, you might have to deploy Microsoft 365 Apps in your organization. But such a deployment is more than just Office: After the initial migration to ProPlus, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Microsoft Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**.
 
-This article shows you how to build dynamic, lean, and universal packages for Office 365 ProPlus. This method can greatly reduce long-term maintenance costs and effort in managed environments.
+This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
 ## The challenge
-When you plan your upgrade to Office 365 ProPlus, the actual upgrade from a legacy version to the always-current Office 365 ProPlus is front and center (1st install scenario). But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin (2nd install). Sometimes, after you upgrade your users, they might need any of the following components:
+When you plan your upgrade to Microsoft 365 Apps, the actual upgrade from a legacy version to the always-current Microsoft 365 Apps is front and center (1st install scenario). But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin (2nd install). Sometimes, after you upgrade your users, they might need any of the following components:
  
 - Additional language packs
 - Proofing tools
@@ -32,7 +32,7 @@ When you plan your upgrade to Office 365 ProPlus, the actual upgrade from a lega
 
 Historically, each of these scenarios was adressed by creating a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~2.5 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
 
-But, especially in larger organizations, you often don't run a single installation of Office 365 ProPlus. You might have a mix of update channels (often SAC and SAC-T). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
+But, especially in larger organizations, you often don't run a single installation of Microsoft 365 Apps. You might have a mix of update channels (often SAC and SAC-T). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
 
 So in the end, you wouldn't have *1* package per component but *4*, covering each possible permutation of SAC/SAC-T and x86/x64. The end result would be:
 
@@ -42,7 +42,7 @@ So in the end, you wouldn't have *1* package per component but *4*, covering eac
 - High user impact, if you haven’t kept the source files current and installing a component will perform a downgrade just to perform an update to the current version soon after.
 - Low satisfaction for users who have to pick the matching package from many options presented in the software portal.
  
-While the initial upgrade to Office 365 ProPlus is a one-time activity, the scenarios described previously will be applicable over a longer period. Users might need additional components days, weeks, or even years after the initial deployment.
+While the initial upgrade to Microsoft 365 Apps is a one-time activity, the scenarios described previously will be applicable over a longer period. Users might need additional components days, weeks, or even years after the initial deployment.
 
 So, how do you build packages that are less costly to maintain over a long time frame and avoid the  downsides?
 
@@ -72,7 +72,7 @@ Build **universal** packages by not hard coding things like the architecture or 
 
 The idea is to not hard code everything in the configuration file, but to instead utilize the cleverness of the Office Deployment Tool as much as possible.
 
-Let’s have a look at a "classic" package that was built to add Project to an existing install of Office 365 ProPlus. We have the source files (of ~2.5 gigabytes) and a configuration file, which explicitly states what we want to achieve:
+Let’s have a look at a "classic" package that was built to add Project to an existing install of Microsoft 365 Apps. We have the source files (of ~2.5 gigabytes) and a configuration file, which explicitly states what we want to achieve:
 
 ![Sample package](../images/lean5-pic1.jpg)
 
