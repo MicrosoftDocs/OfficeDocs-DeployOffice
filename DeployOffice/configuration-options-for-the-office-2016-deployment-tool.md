@@ -448,6 +448,7 @@ Defines certain Office behaviors and properties.
 <Property Name="FORCEAPPSHUTDOWN" Value="FALSE"/>
 <Property Name="SharedComputerLicensing" Value="1"/>
 <Property Name="SCLCacheOverride" Value="1" />
+<Property Name="DeviceBasedLicensing" Value="1" />
 <Property Name="SCLCacheOverrideDirectory" Value="\\server\share\%username%" />
 <Property Name="PinIconsToTaskbar" Value="TRUE"/>
 ```
@@ -522,9 +523,7 @@ Allowed values:
 
 Optional. Default value is **0** if not specified.
 
-Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory.
-
-For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory. This is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Allowed values:
 
@@ -535,14 +534,26 @@ Allowed values:
 
 Optional.
 
-Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride.
+Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride. This is only needed if you choose to move the licensing token from its default location.
 
-For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+For more information, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Example values:
 
 - Property Name="SCLCacheOverrideDirectory" Value="%appdata%\Microsoft\"
 - Property Name="SCLCacheOverrideDirectory" Value="\\\server\share\\%username%"
+
+### DeviceBasedLicensing property (part of Property element)
+
+Optional. Default value is **0** if not specified.
+
+Defines the Office licensing mode for device-based activation. For more information, see (https://docs.microsoft.com/en-us/DeployOffice/device-based-licensing).
+
+Allowed values:
+
+- <Property Name="DeviceBasedLicensing" Value="1" />
+- <Property Name="DeviceBasedLicensing" Value="0" />
+
 
 ### PinIconsToTaskBar property (part of Property element)
 
