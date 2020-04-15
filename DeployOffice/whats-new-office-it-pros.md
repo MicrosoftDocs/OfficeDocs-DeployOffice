@@ -21,6 +21,10 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## April 2020
+
+Viewer mode allows unlicensed users of Office 365 ProPlus to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Office 365 ProPlus or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](overview-viewer-mode.md).
+
 ## March 2020
 
 We're starting to publish best practice articles from Microsoft experts in the field who work with enterprise customers to deploy Office. The first article is now live: [Build dynamic, lean, universal packages for Office 365 ProPlus](fieldnotes/build-dynamic-lean-universal-packages.md).
