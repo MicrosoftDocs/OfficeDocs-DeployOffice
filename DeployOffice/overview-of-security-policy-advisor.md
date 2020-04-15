@@ -17,9 +17,14 @@ description: "You can use Security Policy Advisor to receive and implement secur
 
 # Overview of Security Policy Advisor for Office 365 ProPlus
 
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
 You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of the [portal for managing Office 365 ProPlus](https://config.office.com).
 
-Security Policy Advisor can only be used in combination with the Office cloud policy service, a service that enables you to enforce policy settings for Office 365 ProPlus on a user’s device. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus. Security Policy Advisor provides recommendations and the implementation of security policies for devices managed by the Office cloud policy service.
+Security Policy Advisor can only be used in combination with the Office cloud policy service, a service that enables you to enforce policy settings for Office 365 ProPlus on a user's device. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus. Security Policy Advisor provides recommendations and the implementation of security policies for devices managed by the Office cloud policy service.
  
 For more information about the Office cloud policy service, including details on how the policies are applied and how priority is used, see [Overview of the Office cloud policy service for Office 365 ProPlus](overview-office-cloud-policy-service.md).
 
@@ -41,12 +46,12 @@ To enable security policy recommendations, sign in to the [portal for managing O
 To review and implement security policy recommendations, do the following:
 
 1. Sign in to the [portal for managing Office 365 ProPlus](https://config.office.com).
-2. If you haven’t already, [create a policy configuration for a group in the Office policy configuration service](overview-office-cloud-policy-service.md#steps-for-creating-a-policy-configuration). 
+2. If you haven't already, [create a policy configuration for a group in the Office policy configuration service](overview-office-cloud-policy-service.md#steps-for-creating-a-policy-configuration). 
 3. Click **Security**, and then click a group name.
 4. In the policy configuration page, you can review the recommendations for that group and that policy configuration. To see more details about a recommendation, click the policy name. To see the applied policies, click **Applied policies**. 
 5. To enable a recommendation, select the policy, and then click **Apply**. As part of applying a policy, you can allow users to override the policy. For more details, see [Allow users to override a policy](#allow-users-to-override-a-policy).
 
-These recommendations are based on best practices from Microsoft and on an analysis of how users are using Office files in your existing environment. If you don’t want to implement a recommendation and want to remove it from the page, choose **Ignore**.
+These recommendations are based on best practices from Microsoft and on an analysis of how users are using Office files in your existing environment. If you don't want to implement a recommendation and want to remove it from the page, choose **Ignore**.
 
 ## Manage applied security policies
 
@@ -62,10 +67,10 @@ When users attempt an action blocked by a security policy, such as opening an Of
 
 When you choose to apply a security policy recommendation, you can choose whether users can override the policy:
 
-- If you don’t allow users to override the policy, the Message Bar that appears allows them to report that the policy prevents them from doing their work. 
+- If you don't allow users to override the policy, the Message Bar that appears allows them to report that the policy prevents them from doing their work. 
 - If you do allow users to override the policy, the Message Bar that appears allows them to override the policy and continue working in their document without the policy being applied.
 
-In both cases, the user’s response can be viewed on the **Policy details** page when you choose a policy on the **Applied policies** tab. This information usually appears within 6 to 8 hours.
+In both cases, the user's response can be viewed on the **Policy details** page when you choose a policy on the **Applied policies** tab. This information usually appears within 6 to 8 hours.
 
 ## Turn off Security Policy Advisor
 

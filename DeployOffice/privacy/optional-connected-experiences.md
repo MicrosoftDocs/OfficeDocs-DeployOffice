@@ -17,10 +17,10 @@ hideEdit: true
 
 # Overview of optional connected experiences in Office
 
-If you have a work or school account, your organization’s admin may have provided you with the ability to use one or more cloud-backed services (also referred to as “optional connected experiences”) while using Office 365 ProPlus applications. These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
+If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using Office 365 ProPlus applications. These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
 
 > [!NOTE]
-> If you're an admin, see the following articles to learn how to give or restrict your users’ ability to use optional connected experiences:
+> If you're an admin, see the following articles to learn how to give or restrict your users' ability to use optional connected experiences:
 > - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
 > - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 > - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
@@ -58,7 +58,7 @@ On Outlook for iOS and Android, you can report issues and connect with our suppo
 
 ### Help > Suggest a Feature
 
-Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service](https://outlook.uservoice.com/tos) and [privacy policy](https://outlook.uservoice.com/tos#privacy-policy) of UserVoice will apply.
+Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook or Excel. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service](https://outlook.uservoice.com/tos) and [privacy policy](https://outlook.uservoice.com/tos#privacy-policy) of UserVoice will apply.
 
 ### Insert online video
 
@@ -70,7 +70,7 @@ MERP connects to the Watson.microsoft.com service to send diagnostic data when O
 
 ### Office Store 
 
-When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider’s terms of use. These can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider's terms of use. These can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
 
 ### Research
 
@@ -86,7 +86,7 @@ The [Weather Bar](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
-To determine whether your admin has given you the ability to use any optional connected experiences in your Office 365 ProPlus application on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, “Your organization’s admin manages your privacy settings and has decided to disable optional connected experiences.”
+To determine whether your admin has given you the ability to use any optional connected experiences in your Office 365 ProPlus application on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
