@@ -28,13 +28,13 @@ When viewer mode is enabled, an unlicensed user of Office 365 ProPlus is not pro
 
 ## Enable viewer mode with Group Policy
 
-To enable viewer mode for unlicensed users in your organization with Group Policy, do the following:
+To enable viewer mode for unlicensed users in your organization with Group Policy:
 
-- Enable the **Viewer Mode** policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
+- Enable the **Viewer mode** policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
 
 - Disable the **Automatically activate Office with federated organization credentials** policy setting. You can find this setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Subscription Activation. By disabling this setting, you ensure that Office is not automatically activated with federated organization credentials.
 
-The Administrative Template files (ADMX/ADML) for this policy setting are available here(https://www.microsoft.com/en-us/download/details.aspx?id=49030)
+The Administrative Template files (ADMX/ADML) for this policy setting are available [here](https://www.microsoft.com/download/details.aspx?id=49030)
 
 ## Considerations when using viewer mode
 
