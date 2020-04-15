@@ -34,11 +34,11 @@ To enable viewer mode for unlicensed users in your organization with Group Polic
 
 - Disable the **Automatically activate Office with federated organization credentials** policy setting. You can find this setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Subscription Activation. By disabling this setting, you ensure that Office is not automatically activated with federated organization credentials.
 
-The Administrative Template files (ADMX/ADML) for this policy setting are available [here](https://www.microsoft.com/download/details.aspx?id=49030)
+The Administrative Template files (ADMX/ADML) for this policy setting are available here: [Administrative Template files (ADMX/ADML) and Office Customization Tool for Office 365 ProPlus, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 ## Considerations when using viewer mode
 
-- Viewer mode is currently supported for Word, Excel, and PowerPoint. We are aware of known issues with Project and Visio. For information about how to exclude applications when deploying, see [here](https://docs.microsoft.com/en-us/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element) 
+- Viewer mode is currently supported for Word, Excel, and PowerPoint. We are aware of known issues with Project and Visio. For information about how to exclude applications when deploying, see [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element). 
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
 - For information about the availability of Version 1902 or later in the update channels for Office 365 ProPlus, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - The Activate Product button under File > Account is hidden when Office is in viewer mode.
