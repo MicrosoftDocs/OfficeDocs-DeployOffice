@@ -78,7 +78,7 @@ Office uses the concept of update channels to determine which updates an install
 
 Update channel is a computer-wide setting. Which update channel you use should be determined by which version of the Office suite that you’re deploying. If you’re deploying Project and Visio along with Office, they must use the same update channel as the Office suite. This shouldn’t be an issue if all the versions of Office, Project, and Visio are the 2019 volume licensed versions.
  
-If you’re deploying a volume licensed version of Project 2019 or Visio 2019 along with Office 365 ProPlus, you should specify the same update channel for Project 2019 and Visio 2019 that you’re using for Office 365 ProPlus. For example, “Monthly” for Monthly Channel or “Broad” for Semi-Annual Channel. For more information, see [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](../install-different-office-visio-and-project-versions-on-the-same-computer.md).
+If you’re deploying a volume licensed version of Project 2019 or Visio 2019 along with subscription-based Microsoft 365 Apps, you have to specify the same update channel for Project 2019 and Visio 2019 that you’re using for the Microsoft 365 Apps. For example, “Monthly” for Monthly Channel or “Broad” for Semi-Annual Channel. For more information, see [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](../install-different-office-visio-and-project-versions-on-the-same-computer.md). The channel "PerpetualVL2019" will not work in such mixed scenarios.
 
 
 ## Use Group Policy to specify update settings
