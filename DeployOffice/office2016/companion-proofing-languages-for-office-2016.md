@@ -53,7 +53,7 @@ The following table lists companion proofing languages for each primary language
 |German  <br/> |German, English, French, Italian  <br/> |
 |Greek  <br/> |Greek, English, French, German  <br/> |
 |Hebrew  <br/> |Hebrew, English, French, Arabic, Russian  <br/> |
-|Hindi  <br/> |Hindi, English, Tamil, Telegu, Marathi, Kannada, Guajarati, Punjabi, Urdu  <br/> |
+|Hindi  <br/> |Hindi, English, Tamil, Telegu, Marathi, Kannada, Gujarati, Punjabi, Urdu  <br/> |
 |Hungarian  <br/> |Hungarian, English, German  <br/> |
 |Indonesian  <br/> |Indonesian, English  <br/> |
 |Italian  <br/> |Italian, English, French, German  <br/> |
