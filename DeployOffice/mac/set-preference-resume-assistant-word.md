@@ -21,7 +21,7 @@ In Word for Mac, the icon for [Resume Assistant](https://support.office.com/arti
 ![Screenshot of Resume Assistant icon in the Word for Mac ribbon](../images/resume-assistant-ribbon.png)
 
 > [!NOTE]
-> Resume Assistant is only available to Office 365 and Microsoft 365 subscribers.
+> Resume Assistant is only available to Office 365 (and Microsoft 365) subscribers.
 
 If you're an admin, you may want to prevent this option from being shown to users. Use the following information to configure a policy:
 
