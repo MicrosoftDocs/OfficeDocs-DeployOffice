@@ -20,7 +20,7 @@ description: "Provides IT admins with information on how to update Office 2019."
 After you deploy volume licensed versions of Office 2019, including Project and Visio, you’ll want to keep it updated as Microsoft releases security updates and quality updates, such as updates that provide stability or performance improvements for Office. Office 2019 will be updated approximately once a month, usually on the second Tuesday of the month. 
 
 > [!NOTE]
-> Office 2019 doesn't receive new features. If you want to get new Office features on an on-going basis, you should consider moving to an Office 365 plan that includes Office.
+> Office 2019 doesn't receive new features. If you want to get new Office features on an on-going basis, you should consider moving to an Office 365 or Microsoft 365 plan that includes Office.
 
 Volume licensed versions of Office 2019 now use Click-to-Run, instead of Windows Installer (MSI), as the technology used to install and update Office.
 
@@ -78,7 +78,7 @@ Office uses the concept of update channels to determine which updates an install
 
 Update channel is a computer-wide setting. Which update channel you use should be determined by which version of the Office suite that you’re deploying. If you’re deploying Project and Visio along with Office, they must use the same update channel as the Office suite. This shouldn’t be an issue if all the versions of Office, Project, and Visio are the 2019 volume licensed versions.
  
-If you’re deploying a volume licensed version of Project 2019 or Visio 2019 along with Office 365 ProPlus, you should specify the same update channel for Project 2019 and Visio 2019 that you’re using for Office 365 ProPlus. For example, “Monthly” for Monthly Channel or “Broad” for Semi-Annual Channel. For more information, see [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](../install-different-office-visio-and-project-versions-on-the-same-computer.md).
+If you’re deploying a volume licensed version of Project 2019 or Visio 2019 along with Microsoft 365 Apps, you should specify the same update channel for Project 2019 and Visio 2019 that you’re using for Microsoft 365 Apps. For example, “Monthly” for Monthly Channel or “Broad” for Semi-Annual Channel. For more information, see [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](../install-different-office-visio-and-project-versions-on-the-same-computer.md).
 
 
 ## Use Group Policy to specify update settings
