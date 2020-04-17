@@ -20,7 +20,7 @@ description: "Provides IT admins with information on how to update Office 2019."
 After you deploy volume licensed versions of Office 2019, including Project and Visio, you’ll want to keep it updated as Microsoft releases security updates and quality updates, such as updates that provide stability or performance improvements for Office. Office 2019 will be updated approximately once a month, usually on the second Tuesday of the month. 
 
 > [!NOTE]
-> Office 2019 doesn't receive new features. If you want to get new Office features on an on-going basis, you should consider moving to an Office 365 or Microsoft 365 plan that includes Office.
+> Office 2019 doesn't receive new features. If you want to get new Office features on an on-going basis, you should consider moving to an Office 365 (or Microsoft 365) plan that includes Office.
 
 Volume licensed versions of Office 2019 now use Click-to-Run, instead of Windows Installer (MSI), as the technology used to install and update Office.
 
