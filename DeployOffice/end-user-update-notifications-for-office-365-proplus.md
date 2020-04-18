@@ -47,7 +47,7 @@ If you don't want your users to see these types of notifications, you can [use G
 To make sure that your users apply updates to Microsoft 365 Apps, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates.
 
 > [!NOTE]
-> Starting with Configuration Manager, version 1802, if any Office 365 applications are running during an Office 365 client update enforcement, the Office applications will not be forced to close. Instead, the update install will return as requiring a system restart 
+> Starting with Configuration Manager, version 1802, if any Office applications are running during an Office update enforcement, the Office applications will not be forced to close. Instead, the update install will return as requiring a system restart 
 
 Users are given notifications leading up to the deadline. For example, within seventy-two hours of the deadline, users see a message, in any newly opened Office document, that updates are blocked.
   

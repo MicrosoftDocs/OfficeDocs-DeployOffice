@@ -16,8 +16,6 @@ description: "Explains how admins can use the Office Deployment Tool or Group Po
 ---
 
 # Configure update settings for Office 365 ProPlus
-
- **Summary:** Explains how admins can use the Office Deployment Tool or Group Policy to configure update settings for Office 365 ProPlus.
   
 There are two ways that you can configure update settings for Microsoft 365 Apps in your organization:
   
