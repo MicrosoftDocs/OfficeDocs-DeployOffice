@@ -60,7 +60,7 @@ Because you're deploying Microsoft 365 Apps from a local source, you have to cre
 
 ## Step 2: Download the Office Deployment Tool
 
-Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49117) to \\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
+Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
 
 After downloading the file, run the self-extracting executable file, which contains the ODT executable (setup.exe) and a sample configuration file (configuration.xml).
 

@@ -32,7 +32,7 @@ Starting in January 2019, the following Office applications are available for d
 The Office apps available from the Mac App Store provide the very latest production version of Office on the Mac. Word, Excel, PowerPoint, and Outlook require an Office 365 (or Microsoft 365) subscription to activate. OneNote and OneDrive do not require a subscription, but some premium features may require a subscription. All apps are compatible with Office 365 (and Microsoft 365) subscription plans, such as Office 365 E5 or Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Some Office 365 (and Microsoft 365) subscriptions don't include access to downloadable Office apps. For example, the Office 365 E1 and Microsoft 365 Business Basic. For more information, see [Office 365 plans](https://products.office.com/business/compare-more-office-365-for-business-plans).
+> Some Office 365 (and Microsoft 365) subscriptions don't include access to downloadable Office apps. For example, the Office 365 E1 and Microsoft 365 Business Basic plans. For more information, see [Office 365 plans](https://products.office.com/business/compare-more-office-365-for-business-plans).
 
 ## Can I use apps from the Mac App Store with my Volume License?
 No. Perpetual licenses, including Office 2019 and Office 2016, are not supported with Office apps available from the Mac App Store. The [Volume License (VL) Serializer](volume-license-serializer.md) is not compatible with these apps. Attempts to use a perpetual license with Mac App Store apps will cause the apps to enter [reduced functionality mode](https://go.microsoft.com/fwlink/?linkid=2060861).

@@ -38,7 +38,7 @@ Here are the general steps to deploy Project Online Desktop Client to users in y
     
 If you want to have more control over how Project is deployed to your users, you can do the following instead:
   
-1. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center. 
+1. [Download](https://www.microsoft.com/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center. 
     
 2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install Project Online Desktop Client. 
     

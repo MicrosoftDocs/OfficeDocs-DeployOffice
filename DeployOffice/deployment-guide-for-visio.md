@@ -38,7 +38,7 @@ Here are the general steps to deploy a subscription version of Visio to users in
     
 If you want to have more control over how the subscription version of Visio is deployed to your users, you can do the following instead:
   
-1. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center. 
+1. [Download](https://www.microsoft.com/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center. 
     
 2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install the subscription version of Visio. 
     

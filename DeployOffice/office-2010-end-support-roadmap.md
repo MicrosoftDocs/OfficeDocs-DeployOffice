@@ -103,7 +103,7 @@ Your assessment of these components will influence how you want to upgrade. For 
 
 As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy settings. All Group Policy settings for Office 365 ProPlus are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
   
-You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=49030) for free. The download includes an Excel file that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. 
+You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Office 365 ProPlus from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030) for free. The download includes an Excel file that lists all the Group Policy settings and the new policy settings for Office 365 ProPlus. 
   
 ## Choose how you want to deploy Office 365 ProPlus
 
