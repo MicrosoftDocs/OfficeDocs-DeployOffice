@@ -1,33 +1,37 @@
 ---
-title: Update options for Office 365 ProPlus
+title: Choose how to deliver updates for Microsoft 365 Apps for enterprise
 author: davguent
 ms.author: davguent
-manager: daryltu
+manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: 
+localization_priority: Normal
 description: 
 ms.custom: 
+- Ent_Office_ProPlus
+- Ent_Office_FieldNotes
 ms.collection: 
+- Ent_O365
+- M365-modern-desktop
 ---
 
-# Choose how to deliver updates for Microsoft 365 Apps
+# Choose how to deliver updates for Microsoft 365 Apps for enterprise
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps (formerly known as Office 365 ProPlus).  This article outlines the advantages and disadvantages of each approach to help you make the right choice. We assume that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
+There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).  This article outlines the advantages and disadvantages of each approach to help you make the right choice. We assume that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
 
 ## Evaluating the Options
 
-The overwhelming majority of customers we work with in the field remain on-premises when delivering software updates for Microsoft 365 Apps.  The original version of Office 2013 Click-to-Run was released years ago when update options were  limited and network transport optimizations didn't exist.  Many customers used an on-premises file share and mirrored Office CDN content each month.  Microsoft 365 Apps has evolved since then to provide customers with many more options, including multiple channels, languages, and 64-bit architecture. These additional options can lead to a large increase in the number of content IT Pros must download and replicate on-premises.
+The overwhelming majority of customers we work with in the field remain on-premises when delivering software updates for Microsoft 365 Apps for enterprise.  The original version of Office 2013 Click-to-Run was released years ago when update options were  limited and network transport optimizations didn't exist.  Many customers used an on-premises file share and mirrored Office CDN content each month.  Microsoft 365 Apps for enterprise has evolved since then to provide customers with many more options, including multiple channels, languages, and 64-bit architecture. These additional options can lead to a large increase in the number of content IT Pros must download and replicate on-premises.
 
 Since that time, there have been tremendous innovations in Windows and Configuration Manager that provide many new capabilities for servicing Office.  With so many choices and combinations, a visual aid may help you choose how to manage updates.  The flowchart below is a comparison of update options, with a special focus on network transport. Choosing an update option also determines what process is delivering notifications to the end user (Office or Configuration Manager or both).  For example, if the customer wants to hide or control the precise timing of software updates and the level of notifications, then Configuration Manager should be considered.  If the customer values network optimization and lowest cost of ownership to service Office, then update from CDN with Delivery Optimization (DO) should be considered.  
 
-By default, Microsoft 365 Apps will update from Office CDN.  If you are a customer who currently delivers updates using one of the on-premises selections, you must [reverse policies and configurations to restore default behavior](../manage-office-365-proplus-updates-with-configuration-manager.md).  For example, if Office 365 Client Management was enabled to support Configuration Manager integration, those steps must be reversed. Configuration Manager client settings or domain policy should be set so that Office 365 Client Management is disabled. Once the change is made, Office will update against CDN  after the next restart of the  Microsoft Office Click-to-Run service. It is always a good idea to perform such an action with phased deployment processes to monitor compliance and network impact.
+By default, Microsoft 365 Apps for enterprise will update from Office CDN.  If you are a customer who currently delivers updates using one of the on-premises selections, you must [reverse policies and configurations to restore default behavior](../manage-office-365-proplus-updates-with-configuration-manager.md).  For example, if Office 365 Client Management was enabled to support Configuration Manager integration, those steps must be reversed. Configuration Manager client settings or domain policy should be set so that Office 365 Client Management is disabled. Once the change is made, Office will update against CDN  after the next restart of the  Microsoft Office Click-to-Run service. It is always a good idea to perform such an action with phased deployment processes to monitor compliance and network impact.
 
-:::image type="content" source="../images/update-options-flowchart.png" alt-text="Update options for Microsoft 365 Apps":::
+:::image type="content" source="../images/update-options-flowchart.png" alt-text="Update options for Microsoft 365 Apps for enterprise":::
 
 ## Network options for updates
 
@@ -41,7 +45,7 @@ By default, Office Click-To-Run installer uses the Windows' built in implementat
 
 ## End-user notifications
 
-End-user notifications for software updates are a key concern for any IT department.  By default, Microsoft 365 Apps updates automatically in the background.  If Office is open, notifications will be delivered to the end user over a period of days. For a full description of notifications and end-user experience, see [End-user update notifications for Office 365 ProPlus](../end-user-update-notifications-for-office-365-proplus.md). IT Pros can optionally silence all end-user Office notifications by using the "Hide update notifications from users" policy. 
+End-user notifications for software updates are a key concern for any IT department.  By default, Microsoft 365 Apps for enterprise updates automatically in the background.  If Office is open, notifications will be delivered to the end user over a period of days. For a full description of notifications and end-user experience, see [End-user update notifications for Office 365 ProPlus](../end-user-update-notifications-for-office-365-proplus.md). IT Pros can optionally silence all end-user Office notifications by using the "Hide update notifications from users" policy. 
 
 > [!NOTE]
 > Notifications related to deadlines cannot be suppressed.
@@ -123,6 +127,6 @@ End-user notifications: Delivered by Configuration Manager only when Available t
 
 Advantages: none
 
-Disadvantages: This method is discouraged due to the high cost of ownership and repetitive, manual intensive processes.  Modern network peer to peer solutions like Delivery Optimization and Peer Cache don't apply when updating Microsoft 365 Apps update from a file share.
+Disadvantages: This method is discouraged due to the high cost of ownership and repetitive, manual intensive processes.  Modern network peer to peer solutions like Delivery Optimization and Peer Cache don't apply when updating Microsoft 365 Apps for enterprise update from a file share.
 
 End-user notifications: Delivered only by Office.

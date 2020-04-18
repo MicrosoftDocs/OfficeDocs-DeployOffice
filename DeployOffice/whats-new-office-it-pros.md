@@ -27,7 +27,7 @@ Viewer mode allows unlicensed users of Office 365 ProPlus to view and print Offi
 
 ## March 2020
 
-We're starting to publish best practice articles from Microsoft experts in the field who work with enterprise customers to deploy Office. The first article is now live: [Build dynamic, lean, universal packages for Office 365 ProPlus](fieldnotes/build-dynamic-lean-universal-packages.md).
+We're starting to publish best practice articles from Microsoft experts in the field who work with enterprise customers to deploy Office. The first article is now live: [Build dynamic, lean, universal packages for Microsoft 365 Apps for enterprise](fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ## November 2019
 
