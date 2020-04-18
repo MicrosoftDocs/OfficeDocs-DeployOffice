@@ -25,7 +25,7 @@ If you choose to make some software unavailable to users, they see a message on 
 *Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.*
   
 ## Choose how often to get feature updates for Office
-For Office 365 ProPlus, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
+For Microsoft 365 Apps, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
   
 If you want some users to get feature updates every month, but have other users get feature updates only every six months, you can manually download and install the Office apps for your users by using the Office Deployment Tool. This gives you the control to select different feature update settings for different groups of users.
   
@@ -36,7 +36,7 @@ If you don't want your users to install software themselves from Office 365, you
   
 To manually deploy Office, as well as Project or Visio, you need to use the Office Deployment Tool. You can download the Office Deployment Tool for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-You use the Office Deployment Tool to both download and deploy Office, such as Office 365 ProPlus, to your users. If you already use other tools, such as Microsoft Endpoint Configuration Manager, to deploy software to your users, you can use the Office Deployment Tool along with those tools to deploy Office.
+You use the Office Deployment Tool to both download and deploy Office, such as Microsoft 365 Apps, to your users. If you already use other tools, such as Microsoft Endpoint Configuration Manager, to deploy software to your users, you can use the Office Deployment Tool along with those tools to deploy Office.
   
 For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
   
@@ -50,10 +50,10 @@ In addition to Office, you can download InfoPath 2013 and SharePoint Designer 20
 After you download the software, you can use your existing software deployment tools and processes to deploy InfoPath or SharePoint Designer to your users.
   
 ## Additional considerations about managing software download settings in Office 365
-- The list of Office software that appears on the **Office software download settings** page depends on the type of Office 365 plan that your organization has. 
+- The list of Office software that appears on the **Office software download settings** page depends on the type of Office 365 (or Microsoft 365) plan that your organization has. 
     
 - Users have to be local administrators on their computers to install Office software. If users aren't local administrators, you'll have to install Office for them.
     
-- For users to be able to install Office, you need to [assign them an Office 365 license](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).
+- For users to be able to install Office, you need to [assign them a license](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).
     
 - By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office Deployment Tool to deploy Office to your users without those apps.

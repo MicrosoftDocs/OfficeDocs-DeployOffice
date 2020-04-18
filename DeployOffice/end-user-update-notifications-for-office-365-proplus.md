@@ -16,14 +16,14 @@ description: "You probably don't want users in your organization to notice when 
 
 # End-user update notifications for Office 365 ProPlus
 
-You probably don't want users in your organization to notice when security and other updates are applied to Office 365 ProPlus on their computers. In most cases, they won't notice as the updates are installed automatically in the background. But, you should be aware that there are times when users see notifications that updates are available or need to be applied.
+You probably don't want users in your organization to notice when security and other updates are applied to Microsoft 365 Apps on their computers. In most cases, they won't notice as the updates are installed automatically in the background. But, you should be aware that there are times when users see notifications that updates are available or need to be applied.
   
 Updates can only be applied when Office programs aren't running. Therefore, notifications usually appear because the user is working in an Office program, such as Microsoft Outlook, and hasn't closed it in several days.
   
 ## Notifications your users see when updates can't be applied for several days to Office 365 ProPlus
 <a name="Days"> </a>
 
-After updates are downloaded to the computer that is running Office 365 ProPlus, Office attempts to apply the updates. If, after four days, the updates still aren't applied, a message appears in the notification area in Windows, telling the user that updates are available.
+After updates are downloaded to the computer that is running Microsoft 365 Apps, Office attempts to apply the updates. If, after four days, the updates still aren't applied, a message appears in the notification area in Windows, telling the user that updates are available.
   
 ![Office updates are available](images/a5ed310f-432c-49de-a810-38962b552531.jpg)
   
@@ -44,7 +44,7 @@ If you don't want your users to see these types of notifications, you can [use G
 ## Notifications your users see when you set an update deadline for Office 365 ProPlus
 <a name="Deadline"> </a>
 
-To make sure that your users apply updates to Office 365 ProPlus, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates.
+To make sure that your users apply updates to Microsoft 365 Apps, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates.
 
 > [!NOTE]
 > Starting with Configuration Manager, version 1802, if any Office 365 applications are running during an Office 365 client update enforcement, the Office applications will not be forced to close. Instead, the update install will return as requiring a system restart 

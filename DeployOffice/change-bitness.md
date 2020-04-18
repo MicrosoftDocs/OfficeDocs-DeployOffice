@@ -19,9 +19,9 @@ description: "Provides Office admins with information on how to use the MigrateA
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-Up to now, if you had the 32-bit version of Office 365 ProPlus installed on a device and you wanted to change to the 64-bit version, you needed to uninstall the existing 32-bit version and then install the 64-bit version. It also required that you account for all the other deployment settings configured for that device, such as the update path and the installed languages, so that those settings would be included when you did the 64-bit installation.
+Up to now, if you had the 32-bit version of Microsoft 365 Apps installed on a device and you wanted to change to the 64-bit version, you needed to uninstall the existing 32-bit version and then install the 64-bit version. It also required that you account for all the other deployment settings configured for that device, such as the update path and the installed languages, so that those settings would be included when you did the 64-bit installation.
 
-But now, to make it easier to change from a 32-bit to a 64-bit installation of Office 365 ProPlus, the Office Deployment Tool and its configuration.xml file supports an optional attribute named MigrateArch. If the MigrateArch attribute is set to True, then your installation of Office 365 ProPlus will be changed to the architecture (sometimes referred to as the bitness) that is specified in the OfficeClientEdition attribute.
+But now, to make it easier to change from a 32-bit to a 64-bit installation of Microsoft 365 Apps, the Office Deployment Tool and its configuration.xml file supports an optional attribute named MigrateArch. If the MigrateArch attribute is set to True, then your installation of Microsoft 365 Apps will be changed to the architecture (sometimes referred to as the bitness) that is specified in the OfficeClientEdition attribute.
 
 With MigrateArch, you don't have to account for all the installed products and languages or other deployment settings. The migration process will preserve those during the migration process. But, if you want to make any changes to the installed products and languages, or other deployment settings, you can do that as part of the migration process by explicitly specifying those settings in your configuration.xml file. For more information, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
@@ -29,7 +29,7 @@ With MigrateArch, you don't have to account for all the installed products and l
 
 To use the MigrateArch attribute, you need the following:
 
-- At least Version 1902 of Office 365 ProPlus installed on the device that you want to change the bitness of.
+- At least Version 1902 of Microsoft 365 Apps installed on the device that you want to change the bitness of.
 - At least version 16.0.11615.33602 of the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 - A location that contains all the product and language files for the architecture that you are changing the installation to.
 
@@ -49,7 +49,7 @@ If your local network location doesn't contain files of the correct bitness, the
 
 ## Sample configuration.xml file to use with the Office Deployment Tool
 
-The following is a sample configuration.xml that will change an existing 32-bit installation of Office 365 ProPlus to a 64-bit installation. All existing products, languages, and other deployment settings, such as update path, will be preserved.
+The following is a sample configuration.xml that will change an existing 32-bit installation of Microsoft 365 Apps to a 64-bit installation. All existing products, languages, and other deployment settings, such as update path, will be preserved.
 
 ```xml
 <Configuration>
@@ -60,7 +60,7 @@ The following is a sample configuration.xml that will change an existing 32-bit 
 
 Then, run the Office Deployment Tool in /configure mode and specify this configuration.xml file to make the change from 32-bit to 64-bit. The 32-bit version will be uninstalled and then the 64-bit version will be installed.
 
-If you want to change the products or languages installed, or want to change other deployment settings, you need to specify those in your configuration.xml file. For example, if you want to change a 64-bit installation of Office 365 ProPlus in English to a 32-bit installation that includes English and German, changes the update path, and adds Visio in English, you would use a configuration.xml file that looks similar to the following example.
+If you want to change the products or languages installed, or want to change other deployment settings, you need to specify those in your configuration.xml file. For example, if you want to change a 64-bit installation of Microsoft 365 Apps in English to a 32-bit installation that includes English and German, changes the update path, and adds Visio in English, you would use a configuration.xml file that looks similar to the following example.
 
 ```xml
 <Configuration>
