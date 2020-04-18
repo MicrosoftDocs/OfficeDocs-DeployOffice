@@ -20,7 +20,7 @@ There are two versions of OneNote that you can deploy to users in your organizat
 
 Both versions are supported and continue to receive new features. For example, [Dark Mode](https://support.office.com/article/bb81fb88-968d-4c1a-818d-eec590deadef) was added to OneNote 2016 in late 2019.
 
-As of March 2020, OneNote 2016 is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Office 365 ProPlus, Office 365 Business, or Office 2019. But, if you want to, you can exclude OneNote 2016 from being installed. For more information, see [OneNote 2016 deployment guidance](#onenote-2016-deployment-guidance).
+As of March 2020, OneNote 2016 is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps or Office 2019. But, if you want to, you can exclude OneNote 2016 from being installed. For more information, see [OneNote 2016 deployment guidance](#onenote-2016-deployment-guidance).
 
 ## Choose the version of OneNote for your organization
 
@@ -43,7 +43,7 @@ For more information, see [What's the difference between OneNote and OneNote 201
 
 You can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or enterprise deployment software, such as Microsoft Endpoint Configuration Manager, to include or exclude OneNote 2016 when you deploy Office in your organization.
 
-As of March 2020, OneNote 2016 is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Office 365 ProPlus, Office 365 Business, or Office 2019. There are no additional steps you need to take to include OneNote 2016 with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
+As of March 2020, OneNote 2016 is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps or Office 2019. There are no additional steps you need to take to include OneNote 2016 with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
 ### To add OneNote 2016 to an existing installation of Office
 
