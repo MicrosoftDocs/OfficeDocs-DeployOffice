@@ -14,7 +14,7 @@ description: "Explains how to deploy the processor, agent, and other components 
 
 # Deploy Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 
 This article helps you deploy the five components of Office Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Plan a deployment of Office Telemetry Dashboard](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
@@ -29,7 +29,7 @@ This article helps you deploy the five components of Office Telemetry Dashboard:
 
 ## Office Telemetry Dashboard
 
-Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
+Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
 
 After Office is installed, you can start Office Telemetry Dashboard by using one of the procedures in the following table: 
 
@@ -41,7 +41,7 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 | Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
 
 <a name="SQL"> </a>
@@ -205,7 +205,7 @@ The following information and instructions will help you learn more about how to
 
 ### Deploying the agent
 
-The agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
+The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
 
 - Office 2003
 

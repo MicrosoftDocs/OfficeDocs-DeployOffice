@@ -14,7 +14,7 @@ description: "Explains how to view the stability of Office documents and solutio
 
 # Monitor Office compatibility and deployments by using Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
  
 After you deploy the components of Office Telemetry Dashboard and the agents have collected data, you can use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Office Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Office Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Office Telemetry Dashboard. 
@@ -49,7 +49,7 @@ The way you start Office Telemetry Dashboard depends on the operating system you
 |Windows 8  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
    
 ### To connect to the database
@@ -206,11 +206,11 @@ When you view a worksheet in Office Telemetry Dashboard, you might see the follo
 
 ![A screenshot of the Office Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
   
-To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
+To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
   
 ### To enable the Office Telemetry Dashboard COM add-in
 
-1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
     
 2. Select the **Let's get started** button. 
     

@@ -14,7 +14,7 @@ description: "Describes how to create custom reports in Office Telemetry Dashboa
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 The built-in worksheets in Office Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Office Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the database tables and fields that are used in custom reports.
 
@@ -81,7 +81,7 @@ To create a custom report, you have to first start Office Telemetry Dashboard. T
 |Windows 8 or Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
    
 ### To create a custom report
 
@@ -344,7 +344,7 @@ The following table describes the fields in the System_details table.
 |Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
 |Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
 |Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
-|Office 16  <br/> |String  <br/> |Shows Office 365 ProPlus, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
+|Office 16  <br/> |String  <br/> |Shows Microsoft 365 Apps for enterprise, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
    
 <a name="default_relationships"> </a>
 

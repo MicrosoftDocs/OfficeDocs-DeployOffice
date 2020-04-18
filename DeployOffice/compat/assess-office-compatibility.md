@@ -14,7 +14,7 @@ description: "Provides an overview of how to assess compatibility between versio
 
 # Assess Office compatibility
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
   
   

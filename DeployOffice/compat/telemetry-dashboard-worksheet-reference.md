@@ -14,7 +14,7 @@ description: "Find reference information about Office Telemetry Dashboard worksh
 
 # Office Telemetry Dashboard worksheet reference
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 As you use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Office Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the agents and processors used by Office Telemetry Dashboard.
 

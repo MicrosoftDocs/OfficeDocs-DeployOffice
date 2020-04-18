@@ -14,7 +14,7 @@ description: "Learn about the formats and their extensions used by Word, Excel, 
 
 # File format reference for Word, Excel, and PowerPoint
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.

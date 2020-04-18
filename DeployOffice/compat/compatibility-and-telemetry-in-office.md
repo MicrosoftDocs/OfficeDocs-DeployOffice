@@ -14,7 +14,7 @@ description: "Provides a guide to the articles, downloads, scripts, and videos t
 
 # Guide to Office Telemetry Dashboard resources
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
   
  

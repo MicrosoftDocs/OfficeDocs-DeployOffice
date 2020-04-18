@@ -14,7 +14,7 @@ description: "Learn about the data collected by the agent for Office Telemetry D
 
 # Data collected by the agent for Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
   
 The Office Telemetry Dashboard uses an agent to collect several types of inventory, usage, and health data for installations of Office, such as the following:
