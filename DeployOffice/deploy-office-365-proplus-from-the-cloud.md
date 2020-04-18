@@ -22,7 +22,7 @@ description: "This article gives step-by-step instructions for how to deploy Off
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-Follow the steps in this article to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). 
+Follow the steps in this article to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). 
 
 ## Before you begin
 
@@ -54,10 +54,10 @@ You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. T
 
 ## Step 2: Create a configuration file for the pilot group
 
-To download and deploy Office 365 ProPlus to the pilot group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/). 
+To download and deploy Microsoft 365 Apps to the pilot group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/). 
 
-1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend the following options:
- - **Products:** Office 365 ProPlus. You can also include Visio and Project if you plan to deploy those apps.
+1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
+ - **Products:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps.
  - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
  - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
  - **Installation:** Select Office Content Delivery Network (CDN). 
@@ -75,7 +75,7 @@ Note that the Office installation files and Office updates will come from Semi-A
 
 Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
 
-1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Office 365 installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
+1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
  - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the broad group 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\O365** folder.
 
@@ -114,11 +114,11 @@ If you want to deploy both the 32-bit and the 64-bit version of Office, you can 
 
 ### Use different update channels for Office
 
-With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
 
 ### Deploy Visio and Project alongside the core Office apps
 
-To deploy Visio and Project with Office 365 ProPlus, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
 
 ## Related topics
 
