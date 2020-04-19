@@ -178,7 +178,7 @@ If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, 
 
 ## Feature and quality updates for Microsoft Teams
 
-After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Offices apps, such as Word and Excel. For more information, see [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
+After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
 
 ## Microsoft Teams installations on a Mac
 
