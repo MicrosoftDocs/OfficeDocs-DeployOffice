@@ -22,7 +22,7 @@ description: "You can use Security Policy Advisor to receive and implement secur
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of the [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise.
+You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of a [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
 Security Policy Advisor can only be used in combination with the Office cloud policy service, a service that enables you to enforce policy settings for Microsoft 365 Apps for enterprise on a user's device. The policy settings roam to whichever device the user signs into and uses Microsoft 365 Apps for enterprise. Security Policy Advisor provides recommendations and the implementation of security policies for devices managed by the Office cloud policy service.
  
