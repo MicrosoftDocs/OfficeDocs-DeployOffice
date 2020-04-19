@@ -551,8 +551,8 @@ Defines the Office licensing mode for device-based activation. For more informat
 
 Allowed values:
 
-- <Property Name="DeviceBasedLicensing" Value="1" />
-- <Property Name="DeviceBasedLicensing" Value="0" />
+- Property Name="DeviceBasedLicensing" Value="1" 
+- Property Name="DeviceBasedLicensing" Value="0" 
 
 
 ### PinIconsToTaskBar property (part of Property element)

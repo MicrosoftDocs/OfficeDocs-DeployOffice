@@ -195,7 +195,7 @@ For more information about the options for excluding or removing apps, see [Conf
 
 ## Exclude OneDrive when installing Office 365 ProPlus or other applications
 
-OneDrive is automatically installed when you install Microsoft 365 ProPlus or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
+OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
 
 ```xml
 <Add SourcePath="\\Server\share" Version="15.1.2.3" OfficeClientEdition="32">
