@@ -19,7 +19,12 @@ description: "Provides IT Pros with info on how the Readiness Toolkit for Office
 
 # Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus
 
-The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
+The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Microsoft 365 Apps.
 
 You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
 
@@ -42,7 +47,7 @@ The following information is provided to help you use the Readiness Report Creat
 
 - [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports) to help you analyze and make decisions about your organization's readiness.
 
-- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports) to show you how to conceal senstive information about file paths and names. 
+- [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports) to show you how to conceal sensitive information about file paths and names. 
 
 - [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports) to get better insights into which add-ins are used most often within your organization and by whom.
 
@@ -100,11 +105,11 @@ To create a readiness report, you first need to select what information to use t
 
 After you select what information to use to create your report and specify a location to save your report, you need to choose whether to create a basic report or an advanced report.
 
-We strongly recommend that you create an advanced report because an advanced report provides additional information to help you assess the compatibility of your VBA macros and add-ins with Office 365 ProPlus. For example, in an advanced report, you get the following additional information:
+We strongly recommend that you create an advanced report because an advanced report provides additional information to help you assess the compatibility of your VBA macros and add-ins with Microsoft 365 Apps. For example, in an advanced report, you get the following additional information:
 
 - Remediation advice, when available, for issues found in your VBA macros. This information is shown in a separate worksheet in the report.
 
-- Readiness status for add-ins. For example, the report might show that the software provider has a supported version of the add-in for Office 365 ProPlus.
+- Readiness status for add-ins. For example, the report might show that the software provider has a supported version of the add-in for Microsoft 365 Apps.
 
 The readiness status for add-ins is derived from telemetry-based computations as well as explicit support statements from ISVs. 
 
@@ -134,7 +139,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 
 |**Worksheet name**|**Contents**|
 |:-----|:-----|
-|VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie charts shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. See the tables later in this section for more information about the file status and readiness status values that appear in these pie charts.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. The Readiness Toolkit does something similar to identify duplicate files. The Readiness Toolkit does this to provide you with a more realistic assessment of how many unique VBA macros and unique files need to be evaluated.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Office 365 ProPlus, be sure that the "Include 64-bit readiness data" check box is selected and that you've refreshed the report. <br/> |
+|VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie charts shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. See the tables later in this section for more information about the file status and readiness status values that appear in these pie charts.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. The Readiness Toolkit does something similar to identify duplicate files. The Readiness Toolkit does this to provide you with a more realistic assessment of how many unique VBA macros and unique files need to be evaluated.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure that the "Include 64-bit readiness data" check box is selected and that you've refreshed the report. <br/> |
 |VBA Summary  <br/> |Provides some pre-defined PivotTables to allow you to analyze the data captured from the scan.  <br/> <br/>If these PivotTables don't meet your specific needs, you can create your own based on the data on the VBA Results worksheet.  <br/> |
 |VBA Results  <br/> |Provides information on each file scanned by the Readiness Report Creator. If multiple issues are found in a scanned file, there is a separate row for each issue.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 |VBA Remediation  <br/> |Provides proposed changes to VBA macro code found during the scan.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
@@ -159,9 +164,9 @@ The following table lists the possible severities that can appear in a readiness
 
 |**Severity**|**Explanation**|
 |:-----|:-----|
-|Ready to upgrade  <br/> |No issues were found in this file and it's compatible with Office 365 ProPlus.  <br/> |
+|Ready to upgrade  <br/> |No issues were found in this file and it's compatible with Microsoft 365 Apps.  <br/> |
 |Code design awareness  <br/> |While the code will function as expected and the user isn't likely to notice any change, the feature, property, or method works differently than previously or might be deprecated in favor of a newer version.  <br/> |
-|Minimal validation recommended  <br/> |No runtime or compile time errors are expected, but the API functionality may have changed in some way. It's recommended that the user runs a spot check on the file with Office 365 ProPlus to ensure it continues to function as expected. To minimize environmental issues, ideally run the spot check on the computer that the macro usually runs.  <br/> |
+|Minimal validation recommended  <br/> |No runtime or compile time errors are expected, but the API functionality may have changed in some way. It's recommended that the user runs a spot check on the file with Microsoft 365 Apps to ensure it continues to function as expected. To minimize environmental issues, ideally run the spot check on the computer that the macro usually runs.  <br/> |
 |Limited remediation required  <br/> |Some refactoring of code will be required. But, there is a clear replacement and so the expectation is that the work required to fix the macro is significantly reduced.  <br/> |
 |Significant remediation required  <br/> |Significant code refactoring will be required to enable the code to continue to function as it did in the legacy Office version. For example, an API that has been deprecated, but no replacement function has been provided. In this case, the only option available is to recreate the functionality.  <br/> |
 
@@ -207,7 +212,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 
 |**Worksheet name**|**Contents**|
 |:-----|:-----|
-|Add-in Summary  <br/> |Provides a high-level overview of the add-ins found by the Readiness Report Creator.  <br/><br/> The data at the top of the worksheet is intended to give you a quick assessment of how many add-ins will likely be compatible with Office 365 ProPlus and how many add-ins you'll need to do more research on.  <br/> |
+|Add-in Summary  <br/> |Provides a high-level overview of the add-ins found by the Readiness Report Creator.  <br/><br/> The data at the top of the worksheet is intended to give you a quick assessment of how many add-ins will likely be compatible with Microsoft 365 Apps and how many add-ins you'll need to do more research on.  <br/> |
 |Add-in Details  <br/> |Provides metadata information about the add-ins found (for example, publisher and version number), the total number of installs of each add-in, and, if an advanced report, the readiness status (for example, "Supported version available").  <br/> |
 |By computer name  <br/> |Provides similar information to what's on the Add-in Details worksheet, but lists every computer that the add-in is installed on, instead of just a total number of installs for the add-in.  <br/> |
 
@@ -217,17 +222,17 @@ By default, add-ins that are shipped by Office aren't shown. If you want to see 
 
 If you're [collecting add-in usage information](#collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
 
-If you plan to deploy the 64-bit version of Office 365 ProPlus, be sure to select "64-bit" from the drop-down list and refresh the report. This provides 64-bit specific readiness information about the add-ins. The default selection for reports is 32-bit.
+If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure to select "64-bit" from the drop-down list and refresh the report. This provides 64-bit specific readiness information about the add-ins. The default selection for reports is 32-bit.
 
 The following table lists the possible readiness statuses that you can see in the add-in report and an explanation of what each status means. 
 
 |**Readiness status**|**Explanation**|
 |:-----|:-----|
-|Highly adopted  <br/> |This add-in is being widely used on Office 365 ProPlus in other organizations, and is ready for use with Office 365 ProPlus. But, the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
-|Adopted  <br/> |This add-in is being used on Office 365 ProPlus in other organizations, but the software provider doesn't officially support the add-in on Office 365 ProPlus.  <br/> |
-|Adopted version available <br/> |A different version of this add-in is either “Adopted” or “Highly Adopted” on Office 365 ProPlus. <br/> |
-|Contact software provider  <br/> |This add-in might have issues with Office 365 ProPlus. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
-|Supported version available  <br/> |A supported version of this add-in for Office 365 ProPlus is available from the software provider.  <br/> |
+|Highly adopted  <br/> |This add-in is being widely used on Microsoft 365 Apps in other organizations, and is ready for use with Microsoft 365 Apps. But, the software provider doesn't officially support the add-in on Microsoft 365 Apps.  <br/> |
+|Adopted  <br/> |This add-in is being used on Microsoft 365 Apps in other organizations, but the software provider doesn't officially support the add-in on Microsoft 365 Apps.  <br/> |
+|Adopted version available <br/> |A different version of this add-in is either “Adopted” or “Highly Adopted” on Microsoft 365 Apps. <br/> |
+|Contact software provider  <br/> |This add-in might have issues with Microsoft 365 Apps. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
+|Supported version available  <br/> |A supported version of this add-in for Microsoft 365 Apps is available from the software provider.  <br/> |
 |Unknown<sup>1,2</sup> <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
 |Insufficient data<sup>2</sup> <br/> |Microsoft has seen this add-in but not enough information has been collected to provide a readiness status for this add-in.  <br/> |
 
@@ -367,7 +372,7 @@ We recommend that you allow the usage agent to run for at least 30 days, to ensu
 
 ## Detect Silverlight or Flash controls
 
-Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Office 365 ProPlus. For more information about this, [read this Tech Community post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
+Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Microsoft 365 Apps. For more information about this, [read this Tech Community post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
 
 To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
 
@@ -405,7 +410,7 @@ The following table lists, by application, the file extensions that are analyzed
 
 ### Types of add-ins for which the Readiness Report Creator collects data
 
-The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Office 365 ProPlus.
+The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Microsoft 365 Apps.
 
 |**Add-in type**|**Office applications**|**Description**|
 |:-----|:-----|:-----|
@@ -444,20 +449,20 @@ The following table provides a list of the information that is sent to Microsoft
 |DevicesWithNoMacros|Number of devices that didn't have macro enabled files.|DevicesWithNoMacros: 12|
 |DevicesWithDeclares|Number of devices scanned that included macros that used Declare statements.|DevicesWithDeclares: 12|
 |DevicesWhichRequireSignificantRemediation|Number of devices that contain macro files that require significant remediation.|DevicesWhichRequireSignificantRemediation: 12|
-|DevicesBlockedFromUpgrade|Number of devices that contain macros that require remediation to be unblocked from upgrading to Office 365 ProPlus.|DevicesBlockedFromUpgrade: 1|
+|DevicesBlockedFromUpgrade|Number of devices that contain macros that require remediation to be unblocked from upgrading to Microsoft 365 Apps.|DevicesBlockedFromUpgrade: 1|
 |DevicesWithMacrosWithIssues|Number of devices that contain compatibility issues with macros.|DevicesWithMacrosWithIssues: 2|
 |DevicesWhichRequireLimitedRemediation|Number of devices that contain macro files that require limited remediation.|DevicesWhichRequireLimitedRemediation: 12|
 |DevicesWhichRequireMinimalValidation|Number of devices that contain macro files that require minimal validation.|DevicesWhichRequireMinimalValidation: 12|
 |DevicesWithMacrosWithoutIssues|Number of devices that contain macros, but don’t have any compatibility issues.|DevicesWithMacrosWithoutIssues: 12|
 |DevicesWithMacros|Number of devices that contain macro files.|DevicesWithMacros: 12|
-|DevicesSafeToUpgrade|Number of devices are ready to upgrade to Office 365 ProPlus.|DevicesSafeToUpgrade: 12|
+|DevicesSafeToUpgrade|Number of devices are ready to upgrade to Microsoft 365 Apps.|DevicesSafeToUpgrade: 12|
 |DevicesWithOlderToolVersion|Number of devices that are using an older version of the Readiness Toolkit.|DevicesWithOlderToolVersion: 12|
 
 The following table provides a list of the information that is sent to Microsoft about the add-ins that are found during a scan, along with examples.
 
 |**Data**|**Example**|
 |:-----|:-----|
-|Add-in Prog ID  <br/> |UCAddin.LyncAddin.1  <br/> |
+|Add-in Pro ID  <br/> |UCAddin.LyncAddin.1  <br/> |
 |Friendly Name  <br/> |Skype Meeting Add-in for Microsoft Office 2016(Outlook)  <br/> |
 |Description  <br/> |Skype Meeting Add-in for Microsoft Office 2016  <br/> |
 |File Name  <br/> |UCADDIN.DLL  <br/> |
@@ -486,7 +491,7 @@ For more information about macro setting choices, see [Enable or disable macros 
 
 If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this is an add-in that is business critical for your organization, you can do the following:
 
-- Contact the software provider who developed this add-in to see if the add-in is supported for Office 365 ProPlus. Also, you can request that your software provider list the add-in's support for Office 365 ProPlus on the [Ready for Windows](https://go.microsoft.com/fwlink/p/?linkid=860044) site. By listing the add-in, the software provider can make the add-in's support status for Office 365 ProPlus available to other enterprises.
+- Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps. Also, you can request that your software provider list the add-in's support for Microsoft 365 Apps on the [Ready for Windows](https://go.microsoft.com/fwlink/p/?linkid=860044) site. By listing the add-in, the software provider can make the add-in's support status for Microsoft 365 Apps available to other enterprises.
 
 - Contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). We'll do our best to add the readiness status of the add-in to our database. Please provide as much information about the add-in as possible including, but not limited to, the following:
 
@@ -512,7 +517,7 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 |**Data sent** |**Description**|
 |---------|---------|
 |Module|The VBA module where the error occurred.|
-|Sub/Function name|The name of the sub procedure or function that the error occured in.|
+|Sub/Function name|The name of the sub procedure or function that the error occurred in.|
 |Line identifier|The identifier placed at the beginning of the last successfully executed line of code.|
 |Error message|The user message normally output by the error. May be localized for some errors.|
 |Error number|The number identifying the error.|

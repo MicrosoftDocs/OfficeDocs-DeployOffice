@@ -21,14 +21,13 @@ description: "This article lists all the reference articles about deploying Offi
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-This article lists all the reference articles about deploying Office 365 ProPlus in an enterprise environment. To see all the articles about Office 365 ProPlus deployment, see [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md). 
+This article lists reference articles about deploying Microsoft 365 Apps in an enterprise environment. To see more articles about Microsoft 365 Apps deployment, see the table of contents.
 
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md): How to use the Office Deployment Tool to download, install, and update Office 365 ProPlus. 
-- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md): Detailed information on the configuration options for the Office Deployment Tool. 
-- [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md): What shared computer activation is and how it's used for Office 365 ProPlus deployments in which users access a shared computer. 
-- [End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md): What notifications your users see when updates for Office 365 ProPlus are available or must be applied. 
-- [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md): How to deploy Office 365 ProPlus as part of an operating system image with the Office Deployment Tool. 
-- [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md): How to deploy Office 365 ProPlus to a shared computer by using Remote Desktop Services (RDS). 
-- [Proofing Tools for Office 365 ProPlus](proofing-tools-for-office-365-proplus.md): How to download and deploy Proofing Tools in additional languages for Office 365 ProPlus. 
-- [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md): How to assign Office 365 ProPlus licenses to users and how individual installations are activated. 
-- [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md): What data Office 365 ProPlus sends to Office 365 services for licensing and activation purposes.
+- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md): How to use the Office Deployment Tool to download, install, and update Microsoft 365 Apps. 
+- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md): Detailed information on the configuration options for the Office Deployment Tool.
+- [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md): How to include multiple languages as part of a deployment of Microsoft 365 Apps or add them to an existing installation.
+- [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md): What shared computer activation is and how it's used for Microsoft 365 Apps deployments in which users access a shared computer. 
+- [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md): How to deploy Microsoft 365 Apps as part of an operating system image with the Office Deployment Tool. 
+- [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md): How to deploy Microsoft 365 Apps to a shared computer by using Remote Desktop Services (RDS).
+- [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md): How to assign Microsoft 365 Apps licenses to users and how individual installations are activated. 
+- [Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md): What data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes.
