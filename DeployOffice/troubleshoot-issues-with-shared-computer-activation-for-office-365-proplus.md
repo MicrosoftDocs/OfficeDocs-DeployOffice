@@ -27,7 +27,7 @@ If you're having problems getting shared computer activation to work when you de
 ## Check that your Office 365 plan supports shared computer activation
 
 
-To use shared computer activation, you must have an Office 365 plan that includes Microsoft 365 Apps.
+To use shared computer activation, you must have an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and that supports shared computer activation.
   
 > [!NOTE]
 > You also can use shared computer activation with Visio Online Plan 2 (previously named Visio Pro for Office 365) or Project Online Desktop Client. You just need a subscription plan that includes those products. 
@@ -69,7 +69,7 @@ If you're having problems using shared computer activation, you might get one of
 ### The products we found in your account cannot be used to activate Office in shared computer scenarios.
 
 
-This error means that you don't have an Office 365 plan that includes Microsoft 365 Apps. Therefore, you can't use shared computer activation.
+This error means that you don't have an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and that supports shared computer activation. Therefore, you can't use shared computer activation.
   
 ![Error message cannot activate products into shared scenario](images/67637fc5-35cc-4118-acc1-e68fe1155512.png)
   
