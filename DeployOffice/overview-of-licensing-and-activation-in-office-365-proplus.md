@@ -22,7 +22,7 @@ description: "Explains how to assign Office 365 ProPlus licenses to users, and h
 To deploy Microsoft 365 Apps to users in your organization, you start by assigning licenses to your users. Then, each user can install Microsoft 365 Apps on up to five computers. Each installation is activated and kept activated automatically by cloud-based services associated with Office 365 (or Microsoft 365). This means you don't have to keep track of product keys. It also means you don't have to figure out how to use other activation methods such as Key Management Service (KMS) or Multiple Activation Key (MAK). All you have to do is make sure you purchase enough licenses, keep your Office 365 (or Microsoft 365) subscription current, and make sure your users can connect to Office Licensing Service via the Internet at least once every 30 days.
   
 > [!NOTE]
-> The information in this article also applies to Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365), which are licensed separately from Microsoft 365 Apps. 
+> The information in this article also applies to Project Online Desktop Client and Visio Online Plan 2, which are licensed separately from Microsoft 365 Apps. 
   
 <a name="BKMK_LicensingO365PP"> </a>
 ## Licensing Office 365 ProPlus

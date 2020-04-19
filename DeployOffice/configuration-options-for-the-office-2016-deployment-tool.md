@@ -136,7 +136,7 @@ Defines which channel to use for installing Office. If Office is not installed o
 
 This value determines the channel to be installed, regardless of an optionally specified update channel in the <Update /> section or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Office 365 ProPlus update channel](change-update-channels.md) for additional details.
 
-If Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop client are installed along with Microsoft 365 Apps for enterprise, the default setting is **Broad**. If Visio Online Plan 2 and Project Online Desktop Client are deploy without Microsoft 365 Apps, the default setting is **Monthly**. 
+If Visio Online Plan 2 and Project Online Desktop client are installed along with Microsoft 365 Apps for enterprise, the default setting is **Broad**. If Visio Online Plan 2 and Project Online Desktop Client are deploy without Microsoft 365 Apps, the default setting is **Monthly**. 
 
 For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
 
@@ -665,7 +665,7 @@ Example value:
 
 ### Channel attribute (part of Updates element)
 
-Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **Monthly** for Visio Online Plan 2 (previously named Visio Pro for Office 365) and Project Online Desktop Client.
+Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **Monthly** for Visio Online Plan 2 and Project Online Desktop Client.
 
 Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office.
 

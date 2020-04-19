@@ -62,7 +62,7 @@ Follow these steps to download installation files for Microsoft 365 Apps from th
 
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file, saving it with a name of your choosing, and then editing the XML elements and attributes to define the options you want.
 
-In this example, the configuration file downloads the installation files for a 32-bit English edition of Microsoft 365 Apps for enterprise and Visio Online Plan 2 (previously named Visio Pro for Office 365) to \\\\server\share on your network:
+In this example, the configuration file downloads the installation files for a 32-bit English edition of Microsoft 365 Apps for enterprise and Visio Online Plan 2 to \\\\server\share on your network:
 
 ```xml
 <Configuration> 

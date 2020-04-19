@@ -21,7 +21,7 @@ description: "Microsoft Endpoint Configuration Manager has the ability to manage
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business.
+Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business.
 
 When Microsoft publishes a new Office 365 client update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an [update package](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_Package) to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office 365 client update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells the Office client where to get the update and when to start the update installation process.
 
@@ -42,7 +42,7 @@ To enable Configuration Manager to manage Office 365 client updates, you need th
 
 - Microsoft Endpoint Configuration Manager (current branch)
 
-- An Office 365 client - Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, or Office 365 Business
+- An Office 365 client - Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, or Office 365 Business
 
 - Supported channel version for Office 365 client. For more details, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
@@ -154,4 +154,4 @@ The package contains a file named noop.exe. But, that file doesn't contain any c
 
 For each update release there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of the Monthly Channel and a package for the 64-bit edition of the Monthly Channel. In June, there will be two new packages for Monthly Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
 
-There aren't separate packages for the different Office 365 clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about the Office 365 ProPlus, Visio Online Plan 2 (previously named Visio Pro for Office 365), Project Online Desktop Client, and Office 365 Business clients.
+There aren't separate packages for the different Office 365 clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about the Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business clients.

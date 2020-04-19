@@ -85,7 +85,7 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - Only user-based policy settings are available. Computer-based policy settings aren't available.
 - Not all user-based policy settings are available. Only user-based policy settings that configure a single value are available currently. Work is being done to make more user-based policy settings available.
 - As new user-based policy settings are made available for Office, the Office cloud policy service will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
-- You can also create policy configurations to apply policy settings for Version 1808 or higher of Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365).
+- You can also create policy configurations to apply policy settings for Version 1808 or higher of Project Online Desktop Client or Visio Online Plan 2.
 - Version 1808 of Office 365 ProPlus, Project Online Desktop Client, and Visio Online Plan 2 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Office 365 ProPlus release information, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - A policy configuration can't be applied to other commercial versions of Office that use Click-to-Run, such as Office 365 Business, Office Professional Plus 2019, or Office Standard 2016.
 

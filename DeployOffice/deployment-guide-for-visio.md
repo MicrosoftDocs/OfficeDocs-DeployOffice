@@ -17,7 +17,7 @@ description: "Provides Office admins with an overview of how to deploy subscript
   
 How you deploy Visio to the users in your organization depends on which version of Visio you purchase. A common purchase option for organizations is one of the following versions of Visio:
   
-- Visio that comes with a Visio Online Plan 2 subscription (previously named Visio Pro for Office 365)
+- Visio that comes with a Visio Online Plan 2 subscription
 - Visio Professional 2019 or Visio Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Visio Professional 2016 or Visio Standard 2016, available as a one-time purchase through a volume licensing agreement.
      

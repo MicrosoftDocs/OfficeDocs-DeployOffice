@@ -34,7 +34,7 @@ The following is a list of prerequisites that you need to deploy Office 365 ProP
 - An Office 365 plan that includes Office 365 ProPlus. Also, make sure that you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
 
     > [!NOTE]
-    > You also can use RDS to deploy Project Online Desktop Client or Visio Online Plan 2 (previously named Visio Pro for Office 365), if you have a subscription plan that includes those products. 
+    > You also can use RDS to deploy Project Online Desktop Client or Visio Online Plan 2, if you have a subscription plan that includes those products. 
 
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Office 365 ProPlus software to your local network by using the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
