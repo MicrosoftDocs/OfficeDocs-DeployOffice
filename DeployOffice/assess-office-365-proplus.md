@@ -88,7 +88,7 @@ Before planning your deployment, make sure you've completed all the steps for as
 |System requirements                              |**Y/N**|
 |Existing deployment tools                          |**Y/N**|
 |If using Configuration Manager, on current branch  |**Y/N**|
-|Office 365 licensing and accounts                |**Y/N**|
+|Office 365 (or Microsoft 365) licensing and accounts                |**Y/N**|
 |Network                                          |**Y/N**|
 |Run Readiness Toolkit                        |**Y/N**|
 |Fix critical add-ins                        |**Y/N**|

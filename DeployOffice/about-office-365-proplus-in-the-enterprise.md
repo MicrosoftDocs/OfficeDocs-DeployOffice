@@ -21,10 +21,9 @@ description: "Provides Office admins with an overview of Office 365 ProPlus, inc
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-Microsoft 365 Apps is a version of Office that's available through Office 365 (and Microsoft 365). It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
+Microsoft 365 Apps is a version of Office that's available through many Office 365 (and Microsoft 365) plans. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 (or Microsoft 365) services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
-> - Microsoft 365 Apps is available as a standalone offering, or as part of other Office 365 (or Microsoft 365) plans, such as Office 365 E3 and Microsoft 365 E5.
 > - Project and Visio aren't included with Microsoft 365 Apps, but are available from other subscription plans.
 > - For more information about Office 365 (and Microsoft 365) plans, see [https://products.office.com](https://products.office.com) and the [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). 
   
@@ -61,7 +60,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they are available. Or, if you have line-of-business applications, add-ins, or macros that you want to test with the new features, you can provide users with new features less frequently. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
     
-- Office 365 provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you'll have to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
+- Office 365 (and Microsoft 365) provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you'll have to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
     
 ### Licensing differences
 <a name="BKMK_Licensing"> </a>

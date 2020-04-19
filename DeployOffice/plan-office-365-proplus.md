@@ -191,7 +191,7 @@ Before beginning your deployment, make sure you've completed the planning exit c
 Depending on your deployment  plan, go to one of the following articles:
 
 - [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
-- [Deploy Office 365 ProPlus with the ODT from the cloud](deploy-office-365-proplus-from-the-cloud.md)
-- [Deploy Office 365 ProPlus with the ODT from a local source](deploy-office-365-proplus-from-a-local-source.md)
+- [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
+- [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
 - [Self-install Office from the cloud](https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)
 
