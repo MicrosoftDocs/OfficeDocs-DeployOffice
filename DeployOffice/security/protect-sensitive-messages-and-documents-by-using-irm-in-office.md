@@ -198,7 +198,7 @@ In addition, the **DRMEncryptProperty** registry setting does not determine whet
 
 In Outlook 2016, users can create and send email messages that have restricted permission to help prevent messages from being forwarded, printed, or copied. Office 2016 documents, workbooks, and presentations that are attached to messages that have restricted permission are also automatically restricted.
   
-As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. 
+As a Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. 
   
 The following IRM settings and features can be useful when you configure rights-managed email messaging:
   
@@ -242,7 +242,7 @@ You can lock many settings to customize IRM by using the Office 2016 Administrat
   
 In Outlook 2016, users can create and send email messages that have restricted permission to help prevent messages from being forwarded, printed, or copied and pasted. Office 2016 documents, workbooks, and presentations that are attached to messages that have restricted permission are also automatically restricted.
   
-As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group.
+As a Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group.
   
 <a name="BKMK_BeforeYouBegin"> </a>
 

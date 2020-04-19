@@ -60,7 +60,7 @@ The following is a sample configuration.xml that will change an existing 32-bit 
 
 Then, run the Office Deployment Tool in /configure mode and specify this configuration.xml file to make the change from 32-bit to 64-bit. The 32-bit version will be uninstalled and then the 64-bit version will be installed.
 
-If you want to change the products or languages installed, or want to change other deployment settings, you need to specify those in your configuration.xml file. For example, if you want to change a 64-bit installation of Microsoft 365 Apps in English to a 32-bit installation that includes English and German, changes the update path, and adds Visio in English, you would use a configuration.xml file that looks similar to the following example.
+If you want to change the products or languages installed, or want to change other deployment settings, you need to specify those in your configuration.xml file. For example, if you want to change a 64-bit installation of Microsoft 365 Apps for enterprise in English to a 32-bit installation that includes English and German, changes the update path, and adds Visio in English, you would use a configuration.xml file that looks similar to the following example.
 
 ```xml
 <Configuration>

@@ -43,7 +43,7 @@ The following are requirements for using the RemoveMSI element in your configura
 
 To uninstall all versions of Office, including Visio and Project, that are already installed on the computer, add \<RemoveMSI /> to your configuration.xml file. Language resources – for example, language packs, language interface packs, or proofing tools – will also be removed.
 
-Here’s an example of a configuration.xml file that installs the 64-bit Monthly Channel version of Microsoft 365 Apps in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
+Here’s an example of a configuration.xml file that installs the 64-bit Monthly Channel version of Microsoft 365 Apps for enterprise in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
 ```xml
 <Configuration>
@@ -61,7 +61,7 @@ Here’s an example of a configuration.xml file that installs the 64-bit Monthly
 
 If there are language resources – for example, language packs, language interface packs, or proofing tools – already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Microsoft 365 Apps. To do this, add \<Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
 
-Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Microsoft 365 Apps in English, along with any existing languages on the computer, from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
+Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Microsoft 365 Apps for enterprise in English, along with any existing languages on the computer, from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
 ```xml
 <Configuration>
@@ -107,7 +107,7 @@ The ID isn't version specific. All versions found on the computer will be kept. 
 
 Only full product removals are supported. For example, if you have Office Professional Plus 2013 installed, you can't uninstall everything except Excel. You either must keep or uninstall the entire product. You can only keep a previous installation of Excel if it was installed as a standalone product, not installed as part of an Office suite, like Office Professional Plus.
 
-Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Microsoft 365 Apps in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office, except for Visio Professional, on the computer.
+Here’s an example of a configuration.xml file that installs the 64-bit Semi-Annual Channel (Targeted) version of Microsoft 365 Apps for enterprise in English from the Office Content Delivery Network (CDN) on the Internet and uninstalls any Windows Installer (MSI) versions of Office, except for Visio Professional, on the computer.
 
 ```xml
 <Configuration>
