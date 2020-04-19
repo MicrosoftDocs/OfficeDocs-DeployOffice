@@ -44,7 +44,7 @@ During the installation and activation process, Microsoft 365 Apps connects to t
 ## Checking the status of the Office 365 subscription
 <a name="BKMK_CheckSubscriptionStatus"> </a>
 
-Once Microsoft 365 Apps is installed and activated, a process runs once a day to connect to the Office Licensing Service. The purpose is to check whether the Office 365 subscription is still active or if it has changed in any way. The connection needs to succeed at least once a month for Microsoft 365 Apps to remain fully functional.
+Once Microsoft 365 Apps is installed and activated, a process runs once a day to connect to the Office Licensing Service. The purpose is to check whether the Office 365 (or Microsoft 365) subscription is still active or if it has changed in any way. The connection needs to succeed at least once a month for Microsoft 365 Apps to remain fully functional.
   
 Microsoft 365 Apps connects to the Office Licensing Service, and sends the following data:
   
@@ -57,7 +57,7 @@ Microsoft 365 Apps connects to the Office Licensing Service, and sends the follo
 ## Managing product keys for Office 365 ProPlus
 <a name="BKMK_ManageProductKeys"> </a>
 
-Microsoft 365 Apps uses a standard Microsoft technology called Activation &amp; Validation Service to activate and validate keys. Since Office 365 product keys need to be renewed every month, communication with the Activation &amp; Validation Service is necessary on a monthly basis.
+Microsoft 365 Apps uses a standard Microsoft technology called Activation &amp; Validation Service to activate and validate keys. Since Microsoft 365 Apps product keys need to be renewed every month, communication with the Activation &amp; Validation Service is necessary on a monthly basis.
   
 For a description of the data sent, see the Activation section of the [Windows 8 and Windows Server 2012 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=313210)
   
