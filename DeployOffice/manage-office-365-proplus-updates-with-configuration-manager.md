@@ -21,11 +21,11 @@ description: "Microsoft Endpoint Configuration Manager has the ability to manage
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business.
+Microsoft Endpoint Configuration Manager has the ability to manage Office updates by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, as well as Visio Online Plan 2 and Project Online Desktop Client.
 
-When Microsoft publishes a new Office 365 client update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an [update package](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_Package) to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office 365 client update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells the Office client where to get the update and when to start the update installation process.
+When Microsoft publishes a new Office update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an [update package](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_Package) to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells Office where to get the update and when to start the update installation process.
 
-Here's an overview of the steps to enable Configuration Manager to manage Office 365 client updates:
+Here's an overview of the steps to enable Configuration Manager to manage Office updates:
 
 1. [Review the requirements](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_Reqs)
 
@@ -36,15 +36,15 @@ Here's an overview of the steps to enable Configuration Manager to manage Office
 After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/deploy-software-updates).
 
 <a name="BKMK_Reqs"> </a>
-## Requirements for using Configuration Manager to manage Office 365 client updates
+## Requirements for using Configuration Manager to manage Office updates
 
-To enable Configuration Manager to manage Office 365 client updates, you need the following:
+To enable Configuration Manager to manage Office updates, you need the following:
 
 - Microsoft Endpoint Configuration Manager (current branch)
 
-- An Office 365 client - Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, or Office 365 Business
+- Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, Visio Online Plan 2, or Project Online Desktop Client. 
 
-- Supported channel version for Office 365 client. For more details, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+- Supported channel version for Office. For more details, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
 - Windows Server Update Services (WSUS) 4.0
 
@@ -52,12 +52,12 @@ To enable Configuration Manager to manage Office 365 client updates, you need th
 
 - The hierarchy's top level WSUS server and the top level Configuration Manager site server must have access to the following URLs: *.microsoft.com, *.msocdn.com, *.office.com, *.office.net, *.onmicrosoft.com, officecdn.microsoft.com, officecdn.microsoft.com.edgesuite.net. For more details, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
 
-- On the computers that have the Office 365 client installed, the [Office COM object is enabled](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_EnableClient).
+- On the computers that have the Office installed, the [Office COM object is enabled](manage-office-365-proplus-updates-with-configuration-manager.md#BKMK_EnableClient).
 
 <a name="BKMK_EnableCM"> </a>
 ## Enable Configuration Manager to receive Office 365 client package notifications
 
-To start, you need to configure Configuration Manager to receive notifications when Office 365 client update packages are available. To do that, use the following steps:
+To start, you need to configure Configuration Manager to receive notifications when Office update packages are available. To do that, use the following steps:
 
 1. In the Configuration Manager console, choose **Site Configuration** > **Sites**, and then select your site server.
 
@@ -69,21 +69,21 @@ To start, you need to configure Configuration Manager to receive notifications w
 
    - On the **Classifications** tab, select **Updates**.
 
-     You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office 365 client update packages are available.
+     You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office update packages are available.
 
 4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction).
 
 <a name="BKMK_EnableClient"> </a>
 ## Enable Office 365 clients to receive updates from Configuration Manager
 
-For Configuration Manager to be able to manage Office 365 client updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates.
+For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates.
 
 You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
 
 <a name="BKMK_SCCM"> </a>
 ### Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager
 
-To enable Configuration Manager to manage Office 365 client updates on specific computers by using client policy, do the following:
+To enable Configuration Manager to manage Office updates on specific computers by using client policy, do the following:
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
 - Open the client settings, click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
@@ -93,7 +93,7 @@ For more information, see [client policy](https://docs.microsoft.com/configmgr/c
 <a name="BKMK_GP"> </a>
 ### Method 2: Use Group Policy to enable updates from Configuration Manager
 
-You can enable Configuration Manager to manage Office 365 client updates on specific computers by using Group Policy. You can apply this setting to multiple computers, an organizational unit (OU), or a domain.
+You can enable Configuration Manager to manage Office updates on specific computers by using Group Policy. You can apply this setting to multiple computers, an organizational unit (OU), or a domain.
 
 To use Group Policy, do the following:
 
@@ -104,7 +104,7 @@ To use Group Policy, do the following:
 <a name="BKMK_ODT"> </a>
 ### Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager
 
-You can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office 365 clients to receive updates from Configuration Manager.
+You can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office to receive updates from Configuration Manager.
 
 To configure this capability, use a text editor, such as Notepad, to modify the configuration file for the Office Deployment Tool. In the Add element, include the OfficeMgmtCOM attribute and set its value to True, as seen in the following example.
 
@@ -119,7 +119,7 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
  </Configuration>
 ```
 
-We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered only by Configuration Manager. Note that the scheduled task Office Automatic Updates 2.0, which is registered during Office 365 ProPlus installation, must remain enabled. That task initiates product configuration tasks such as channel management.
+We recommend that you also set the value of the Enabled attribute to **True** in the Updates element (note that this is the default setting).  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered only by Configuration Manager. Note that the scheduled task Office Automatic Updates 2.0, which is registered during Microsoft 365 Apps installation, must remain enabled. That task initiates product configuration tasks such as channel management.
  
 
 <a name="BKMK_Package"> </a>
@@ -154,4 +154,4 @@ The package contains a file named noop.exe. But, that file doesn't contain any c
 
 For each update release there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of the Monthly Channel and a package for the 64-bit edition of the Monthly Channel. In June, there will be two new packages for Monthly Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
 
-There aren't separate packages for the different Office 365 clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about the Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business clients.
+There aren't separate packages for the different Office clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about the Microsoft 365 Apps for enterprise, Visio Online Plan 2, Project Online Desktop Client, and Microsoft 365 Apps for business.

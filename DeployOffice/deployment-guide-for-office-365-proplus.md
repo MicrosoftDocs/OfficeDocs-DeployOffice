@@ -59,7 +59,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 
-- [Change management for Office 365 clients](change-management-for-office-365-clients.md)
+- [Change the Office 365 ProPlus update channel for devices in your organization](change-update-channels.md) 
 
 - [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 

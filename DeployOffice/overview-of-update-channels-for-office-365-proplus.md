@@ -164,8 +164,6 @@ Here is some additional information that might be useful to know as you determin
 ## Related topics
 
 [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
-  
-[Change management for Office 365 clients](change-management-for-office-365-clients.md)
-  
+ 
 [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
 

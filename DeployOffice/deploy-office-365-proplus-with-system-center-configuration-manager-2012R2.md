@@ -19,19 +19,19 @@ description: "Provides Office admins with information on how to deploy Office 36
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Office 365 ProPlus with Configuration Manager version 1702 or later, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md).
+This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Microsoft 365 Apps with Configuration Manager version 1702 or later, see [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md).
   
-If you use Microsoft Endpoint Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Office 365 ProPlus. By using Configuration Manager, you can control which users and computers get Office 365 ProPlus, where they get the installation files from, and when the Office 365 ProPlus installation occurs.
+If you use Microsoft Endpoint Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Microsoft 365 Apps. By using Configuration Manager, you can control which users and computers get Microsoft 365 Apps, where they get the installation files from, and when the Microsoft 365 Apps installation occurs.
   
-For example, you can control network bandwidth usage by placing the Office 365 ProPlus installation files on a distribution point within your organization's network, instead of having users install Office 365 ProPlus directly from the Internet. Keep in mind, however, that even if you're installing Office 365 ProPlus from a location within your network, the computer where Office 365 ProPlus is installed still needs access to the Internet to be able to [active Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ActivatingO365PP).
+For example, you can control network bandwidth usage by placing the Microsoft 365 Apps installation files on a distribution point within your organization's network, instead of having users install Microsoft 365 Apps directly from the Internet. Keep in mind, however, that even if you're installing Microsoft 365 Apps from a location within your network, the computer where Microsoft 365 Apps is installed still needs access to the Internet to be able to [active Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ActivatingO365PP).
   
-The steps that follow are for System Center 2012 R2 Configuration Manager, but you can also deploy Office 365 ProPlus by using System Center 2012 Configuration Manager or Configuration Manager 2007 R2.
+The steps that follow are for System Center 2012 R2 Configuration Manager, but you can also deploy Microsoft 365 Apps by using System Center 2012 Configuration Manager or Configuration Manager 2007 R2.
   
 ## Prepare the Office 365 ProPlus installation files to be deployed by Configuration Manager
 
 To get started, download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065) to a shared folder on your organization's network. Then, use the Office Deployment Tool to [download the Office 365 ProPlus installation files](overview-of-the-office-2016-deployment-tool.md#BKMK_downloadinstallationfiles) from the Internet to the same shared folder.
   
-Next, edit the configuration.xml, and review [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md) to decide how you want to install Office 365 ProPlus. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Office 365 ProPlus.
+Next, edit the configuration.xml, and review [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md) to decide how you want to install Microsoft 365 Apps. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Microsoft 365 Apps for enterprise.
   
 ```xml
 <Configuration> 
@@ -44,9 +44,9 @@ Next, edit the configuration.xml, and review [Configuration options for the Offi
 </Configuration>
 ```
 
-It's important that you don't include the SourcePath attribute in the Add section of your configuration.xml file. That's because Configuration Manager copies the installation files for an application into a folder under the Configuration Manager client cache folder, and the name of that subfolder is different for each computer. Because the folder name is different for each computer, you can't specify a SourcePath that will work for every computer that you're deploying Office 365 ProPlus to. Instead, leave out the SourcePath attribute. When a SourcePath isn't specified, the Office Deployment Tool automatically looks for the Office 365 ProPlus installation files in the same folder that the Office Deployment Tool is located. That's why we're including the Office Deployment Tool, the configuration.xml, and the Office 365 ProPlus installation files together in the same shared folder.
+It's important that you don't include the SourcePath attribute in the Add section of your configuration.xml file. That's because Configuration Manager copies the installation files for an application into a folder under the Configuration Manager client cache folder, and the name of that subfolder is different for each computer. Because the folder name is different for each computer, you can't specify a SourcePath that will work for every computer that you're deploying Microsoft 365 Apps to. Instead, leave out the SourcePath attribute. When a SourcePath isn't specified, the Office Deployment Tool automatically looks for the Microsoft 365 Apps installation files in the same folder that the Office Deployment Tool is located. That's why we're including the Office Deployment Tool, the configuration.xml, and the Microsoft 365 Apps installation files together in the same shared folder.
   
-![Office 365 installation file folder](images/b556bbf7-f881-4d34-98fb-b96de5d6e0ec.png)
+![Microsoft 365 Apps installation file folder](images/b556bbf7-f881-4d34-98fb-b96de5d6e0ec.png)
   
 ## Create an application for Office 365 ProPlus in Configuration Manager
 
@@ -75,19 +75,19 @@ The next step is to [create an application](https://go.microsoft.com/fwlink/p/?L
 
 An application in Configuration Manager must contain at least one [deployment type](https://go.microsoft.com/fwlink/p/?LinkId=535030). The deployment type contains the installation files for a software package as well as rules that specify when and how the software is deployed.
   
-For the Office 365 ProPlus application, the deployment type includes the following:
+For the Microsoft 365 Apps application, the deployment type includes the following:
   
-- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet. For example, \\\\server1\share1.
+- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the Internet. For example, \\\\server1\share1.
     
-- The command line that gets the Office Deployment Tool to start the installation of Office 365 ProPlus.
+- The command line that gets the Office Deployment Tool to start the installation of Microsoft 365 Apps.
     
-- A [detection method](https://go.microsoft.com/fwlink/p/?LinkId=535032), which Configuration Manager uses to determine if Office 365 ProPlus is already installed on the user's computer.
+- A [detection method](https://go.microsoft.com/fwlink/p/?LinkId=535032), which Configuration Manager uses to determine if Microsoft 365 Apps is already installed on the user's computer.
     
  **To create a deployment type**
   
 1. In the Configuration Manager console, choose **Software Library** > **Application Management** > **Applications**.
     
-2. Select the Office 365 ProPlus application, and then on the **Home** tab, in the **Application** group, choose ** Create Deployment Type**.
+2. Select the Microsoft 365 Apps application, and then on the **Home** tab, in the **Application** group, choose ** Create Deployment Type**.
     
 3. On the **General** page of the Create Deployment Type Wizard, in the **Type** list, select **Script Installer**, and then choose **Next**.
     
@@ -95,7 +95,7 @@ For the Office 365 ProPlus application, the deployment type includes the followi
     
 5. On the **Content** page, do the following:
     
-  - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Office 365 ProPlus installation files that you downloaded from the Internet.
+  - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the Internet.
     
   - In the **Installation program** box, enter the following text: setup.exe /configure configuration.xml
     
@@ -126,13 +126,13 @@ For the Office 365 ProPlus application, the deployment type includes the followi
 ## Distribute the Office 365 ProPlus application to distribution points in Configuration Manager
 <a name="BKMK_Distribute"> </a>
 
-After you create the Office 365 ProPlus application and configure its deployment type, the next step is to copy all the files needed by the application to the appropriate [distribution points](https://go.microsoft.com/fwlink/p/?LinkId=535033) in your Configuration Manager environment.
+After you create the Microsoft 365 Apps application and configure its deployment type, the next step is to copy all the files needed by the application to the appropriate [distribution points](https://go.microsoft.com/fwlink/p/?LinkId=535033) in your Configuration Manager environment.
   
  **To distribute the application to distribution points**
   
 1. In the Configuration Manager console, choose **Software Library** > **Application Management** > **Applications**.
     
-2. Select the Office 365 ProPlus application, and then on the **Home** tab, in the **Deployment** group, choose ** Distribute Content**.
+2. Select the Microsoft 365 Apps application, and then on the **Home** tab, in the **Deployment** group, choose ** Distribute Content**.
     
 3. On the **General** page of the Distribute Content Wizard, choose **Next**, and then on the **Content** page, choose **Next**.
     
@@ -151,15 +151,15 @@ After you create the Office 365 ProPlus application and configure its deployment
 ## Deploy the Office 365 ProPlus application in Configuration Manager
 <a name="BKMK_Deploy"> </a>
 
-After the files for the Office 365 ProPlus application are copied to the appropriate distribution points, the next step is to [deploy the application](https://go.microsoft.com/fwlink/p/?LinkId=535036). When you deploy the application, you specify which computers or users get the application and when.
+After the files for the Microsoft 365 Apps application are copied to the appropriate distribution points, the next step is to [deploy the application](https://go.microsoft.com/fwlink/p/?LinkId=535036). When you deploy the application, you specify which computers or users get the application and when.
   
  **To deploy the application**
   
 1. In the Configuration Manager console, choose **Software Library** > **Application Management** > **Applications**.
     
-2. Select the Office 365 ProPlus application, and then on the **Home** tab, in the **Deployment** group, choose **Deploy**.
+2. Select the Microsoft 365 Apps application, and then on the **Home** tab, in the **Deployment** group, choose **Deploy**.
     
-3. On the **General** page of the Deploy Software Wizard, choose **Browse** for the **Collection** box, and then select which computers or users that you want to deploy Office 365 ProPlus to. After you've made your selection, choose **OK**, and then choose **Next**.
+3. On the **General** page of the Deploy Software Wizard, choose **Browse** for the **Collection** box, and then select which computers or users that you want to deploy Microsoft 365 Apps to. After you've made your selection, choose **OK**, and then choose **Next**.
     
 4. On the **Content** page, choose **Next** because we've already specified the distribution points for the application.
     
@@ -171,7 +171,7 @@ After the files for the Office 365 ProPlus application are copied to the appropr
     
 8. On the **Confirmation** page, check that the application was successfully deployed, and then choose **Close**.
     
-After you deploy the application, a targeted computer becomes aware of the deployed application during the computer's next client policy polling cycle, which is once every sixty minutes by default. Then, the computer downloads the installation files for the application from a distribution point into the Configuration Manager client cache. The installation of Office 365 ProPlus takes place from the client cache and no additional files are downloaded from the network or from the Internet.
+After you deploy the application, a targeted computer becomes aware of the deployed application during the computer's next client policy polling cycle, which is once every sixty minutes by default. Then, the computer downloads the installation files for the application from a distribution point into the Configuration Manager client cache. The installation of Microsoft 365 Apps takes place from the client cache and no additional files are downloaded from the network or from the Internet.
   
 ![Office installation status](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
   
