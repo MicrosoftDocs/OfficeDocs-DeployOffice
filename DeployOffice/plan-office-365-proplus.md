@@ -88,7 +88,7 @@ As with the initial deployment, organizations can use a combination of these opt
 > [!NOTE]
 > **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
-With Office 365 ProPlus, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
 
 - Semi-Annual Channel: Provides users with new features of Office every six months, in January and July.
 
@@ -131,7 +131,7 @@ For more details, see [Overview of deploying languages in Office 365 ProPlus](ov
 
 For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
-If you have subscription versions of Visio or Project (Visio Online Plan 2 or Project Online Desktop Client), continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Office 365 ProPlus. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
+If you have subscription versions of Visio or Project (Visio Online Plan 2 or Project Online Desktop Client), continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Microsoft 365 Apps. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
 ## Step 5 - Define your deployment groups
 
@@ -142,7 +142,7 @@ When deploying Office, you can install different versions of Office for differen
 
 Note that you can use the same installation package to deploy different configurations of Office to different groups. For example, you can create an installation package that includes the following:
 
-- 32-bit version of Office 365 ProPlus
+- 32-bit version of Microsoft 365 Apps
 - English, Japanese, and German
 - Semi-Annual Channel
 
@@ -157,20 +157,20 @@ By re-using installation packages for different deployment groups, you can save 
 ## Step 6 - Plan your upgrade from existing versions of Office 
 
 > [!NOTE]
-> **Best practice:** Before installing Office 365 ProPlus, remove any existing versions of Office. 
+> **Best practice:** Before installing Microsoft 365 Apps, remove any existing versions of Office. 
 
-Before installing Office 365 ProPlus, we recommend removing any existing versions of Office. Microsoft supports installing Office 365 ProPlus alongside the most recent previous version of the Office suite, but we don't recommend it. If you need to have two versions of Office on the same computer, we recommend that you keep only the necessary earlier applications and that you plan to transition to using only Office 365 ProPlus when possible. To verify the supported versions to be installed alongside Office 365 ProPlus, refer to [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
+Before installing Microsoft 365 Apps, we recommend removing any existing versions of Office. Microsoft supports installing Microsoft 365 Apps alongside the most recent previous version of the Office suite, but we don't recommend it. If you need to have two versions of Office on the same computer, we recommend that you keep only the necessary earlier applications and that you plan to transition to using only Microsoft 365 Apps when possible. To verify the supported versions to be installed alongside Microsoft 365 Apps, refer to [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
 
-To help you remove prior versions of Office that use Windows Installer (MSI) as the installation technology, you can use the Office Deployment Tool and specify the RemoveMSI element to automate the removal with your Office 365 ProPlus deployment package. For details see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+To help you remove prior versions of Office that use Windows Installer (MSI) as the installation technology, you can use the Office Deployment Tool and specify the RemoveMSI element to automate the removal with your Microsoft 365 Apps deployment package. For details see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
 
 ## Step 7 - Plan for shared computers (optional)
 
 > [!NOTE]
-> **Best practice:** For shared computer scenarios, such as VDI, enable shared computer activation when deploying Office 365 ProPlus.
+> **Best practice:** For shared computer scenarios, such as VDI, enable shared computer activation when deploying Microsoft 365 Apps.
 
-If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Office 365 ProPlus. 
+If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Microsoft 365 Apps. 
 
-With shared computer activation enabled, any user that has been assigned an Office 365 ProPlus license can log on to the computer and use the Office 365 ProPlus apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).   
+With shared computer activation enabled, any user that has been assigned an Microsoft 365 Apps license can log on to the computer and use the Office apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).   
 
 ## Review exit criteria
 

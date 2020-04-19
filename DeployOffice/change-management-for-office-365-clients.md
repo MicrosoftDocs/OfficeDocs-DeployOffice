@@ -14,7 +14,7 @@ description: "The client applications that are included with Office 365 are rele
 
 # Change management for Office 365 clients
 
-The client applications that are included with Office 365 are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality. 
+The client applications that are included with Office 365 (and Microsoft 365) are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality. 
 
 This article gives you an overview of this servicing model, and helps you understand the release channels and cadence, and how to effectively manage releases of the Office 365 client applications for your organization.
 
@@ -102,7 +102,7 @@ Use the following table to choose the right release option for your business nee
 
 ### Default channels for client applications
 
-Office 365 ProPlus includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365) also follow this release model. 
+Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365) also follow this release model. 
 
 The following illustration shows these sets of client applications.
 
@@ -110,7 +110,7 @@ The following illustration shows these sets of client applications.
 
 By default, the client applications for Office 365 are set to these channel releases:
 
-- **Office 365 ProPlus** is set to use Semi-Annual Channel.
+- **Microsoft 365 Apps for enterprise** is set to use Semi-Annual Channel.
 
 - **Project Online Desktop Client** and **Visio Online Plan 2** (previously named Visio Pro for Office 365) are set to use Monthly Channel.
 
@@ -165,11 +165,11 @@ Office 365 clients have the following types of releases:
 
 - **Semi-Annual Channel (Targeted)** You can validate this release for four months before it becomes a Semi-Annual Channel release. New features are included only at the beginning of a release, in March and September. This channel is refreshed with non-security updates and security updates every month.
 
-- **Semi-Annual Channel** The Semi-Annual Channel (Targeted) is rolled up and released as the Semi-Annual Channel every 6 months, in January and July. No new features are added until the next Semi-Annual Channel, although security updates will continue to be released. Each Semi-Annual Channel feature release is supported for an additional 14 months. This is the default channel for Office 365 ProPlus clients.
+- **Semi-Annual Channel** The Semi-Annual Channel (Targeted) is rolled up and released as the Semi-Annual Channel every 6 months, in January and July. No new features are added until the next Semi-Annual Channel, although security updates will continue to be released. Each Semi-Annual Channel feature release is supported for an additional 14 months. This is the default channel for Microsoft 365 Apps for enterprise.
 
 Read [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md) for more information.
 
-The following illustration shows the relationships between these releases for Office 365 ProPlus. 
+The following illustration shows the relationships between these releases for Microsoft 365 Apps for enterprise. 
 
 ![Office 365 release cadence](images/99a17880-4029-44e9-b478-be4058c30f92.png)
 
