@@ -9,9 +9,11 @@ ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus
+- seo-marvel-apr2020
 ms.assetid: 936cda26-41f9-45b5-a1f9-f9e1f485d23b
-description: "Unlike earlier versions of Office, individual security updates and other updates for Office 365 ProPlus aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Office 365 ProPlus and puts it on the Internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Office 365 ProPlus is available on the Internet for 12 months. After 12 months, that specific version is no longer supported."
+description: "This article provides you with an overview of the update process for Microsoft Office 365 ProPlus."
 ---
 
 # Overview of the update process for Office 365 ProPlus

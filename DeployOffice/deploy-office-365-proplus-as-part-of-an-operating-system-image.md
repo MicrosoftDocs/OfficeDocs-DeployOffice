@@ -8,8 +8,10 @@ ms.topic: get-started-article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
-description: "You can include Office 365 ProPlus as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Office 365 ProPlus when you create the image. That's because you need your users to activate their Office 365 ProPlus installations by signing in with their accounts."
+ms.custom: 
+- Ent_Office_ProPlus
+- seo-marvel-apr2020
+description: "In this article, you will learn how to include Office 365 ProPlus as part of an operating system image that you deploy to users in your organization."
 ---
 
 # Deploy Office 365 ProPlus as part of an operating system image
