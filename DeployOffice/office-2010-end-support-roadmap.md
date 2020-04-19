@@ -56,7 +56,7 @@ This article provides guidance on upgrading to Microsoft 365 Apps.
   
 ## What is Office 365? What is Office 365 ProPlus?
 
-Office 365 (and Microsoft 365) provides subscription plans that include access to Office applications and other cloud services, including Skype for Business, Exchange Online, and OneDrive for Business. Microsoft 365 Apps for enterprise is the version of Office that comes with most Office 365 (and Microsoft 365) enterprise plans. Microsoft 365 Apps includes the full versions of Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access, and Skype for Business installed on your client computers.
+Office 365 (and Microsoft 365) provides subscription plans that include access to Office applications and other cloud services, including Skype for Business, Exchange Online, and OneDrive for Business. Microsoft 365 Apps is the version of Office that comes with many Office 365 (and Microsoft 365) enterprise and business plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client computers. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
   
 Unlike Office 2010, Microsoft 365 Apps uses a user-based licensing model that allows people to install Office on up to 5 PCs or Macs and on their mobile devices. There are also differences in how you deploy, license, and activate Microsoft 365 Apps compared to Office 2010. For more information about Microsoft 365 Apps, see the following information:
   
@@ -80,7 +80,7 @@ In addition, you should review the system requirements for your Office server wo
   
 ## Plan for Office 365
 
-Because Microsoft 365 Apps comes with most enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 accounts and licenses. For more information, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/article/ee73dafb-be54-492e-bcfd-0fbfb5f65e94).
+Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/article/ee73dafb-be54-492e-bcfd-0fbfb5f65e94).
   
 ## Assess application compatibility
 
