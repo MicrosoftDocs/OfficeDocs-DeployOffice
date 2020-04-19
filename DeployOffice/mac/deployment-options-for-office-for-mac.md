@@ -29,9 +29,9 @@ But, if you deploy Office for Mac for your users, you have more control over the
 ## Download Office for Mac to your local network
 
 The easiest way to download Office for Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet.  Here are the links to the installer packages for the Office suite, which contains all the applications:
-- [Office for Mac](https://go.microsoft.com/fwlink/?linkid=525133) (for Office 365 or Microsoft 365 plans)
-- [Office 2019 for Mac](https://go.microsoft.com/fwlink/?linkid=525133) (for retail or volume licensed versions)
-- [Office 2016 for Mac](https://go.microsoft.com/fwlink/?linkid=871743) (for retail or volume licensed versions)
+- [Office for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (for Office 365 or Microsoft 365 plans)
+- [Office 2019 for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (for retail or volume licensed versions)
+- [Office 2016 for Mac](https://go.microsoft.com/fwlink/p/?linkid=871743) (for retail or volume licensed versions)
 
 > [!NOTE]
 > - Installer and update packages for individual applications are also available on the Office CDN. For links to those, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).

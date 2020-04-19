@@ -32,7 +32,7 @@ In this article:
 
 - [Manage Update Deployments](change-management-for-office-365-clients.md#Manage)
 
-Download this information as a poster in [Visio](https://go.microsoft.com/fwlink/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/?LinkId=626681) format. *(The poster is only available in English.)*
+Download this information as a poster in [Visio](https://go.microsoft.com/fwlink/p/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/p/?LinkId=626681) format. *(The poster is only available in English.)*
 
 ![Servicing model poster](images/f0f92823-29ae-443e-af36-d913c6ba6486.png)
 
@@ -155,7 +155,7 @@ The following illustration shows the relationships between these releases for Wi
 
 ![Windows 10 release cadence](images/42471221-f1a5-4bd6-9d7e-5f24a3049330.png)
 
-Read [Overview of Windows as a service](https://go.microsoft.com/fwlink/?LinkId=847278) for more information.
+Read [Overview of Windows as a service](https://go.microsoft.com/fwlink/p/?LinkId=847278) for more information.
 
 ### Office 365 Client Release Cadence
 
@@ -208,7 +208,7 @@ Not all changes have the same impact on your users or require action. Some are p
 |:-----|:-----|:-----|:-----|
 |**Type of change** <br/> | Feature updates <br/>  New features or applications <br/>  Deprecated features <br/> | Client hotfixes for issues <br/> | Security patches <br/> |
 |**Advance notice?** <br/> |30 days notice for changes that require action  <br/> |No, these are included in the monthly build for all channels  <br/> |No, these are included in the monthly build for all channels  <br/> |
-|**Communication channel** <br/> | Message Center <br/> [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Microsoft 365 blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community <br/> | [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
+|**Communication channel** <br/> | Message Center <br/> [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) <br/> [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community <br/> | [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
 |**Requires tenant admin action?** <br/> |Sometimes  <br/> |Rarely  <br/> |Rarely  <br/> |
 |**What kind of action?** <br/> | Change settings <br/>  Communicate changes to users <br/>  Validate customizations <br/> | Change admin settings <br/> ||
 |**Requires testing?** <br/> |Rarely - check business critical Add-ins  <br/> |Sometimes - testing the fix against processes or customizations  <br/> |Rarely  <br/> |
@@ -216,7 +216,7 @@ Not all changes have the same impact on your users or require action. Some are p
 
 ### Guidelines for managing change when using Office Add-ins:
 
-- We recommend that customers use Monthly Channel to get the latest feature updates. If you have Office customizations or Add-ins deployed, you can use Semi-Annual Channel, which allows you to wait for feature updates to Office until you have had the chance to test and fix your customizations. To test and fix your customizations before those features updates are applied to Semi-Annual Channel, use Semi-Annual Channel (Targeted). Use the Office Telemetry Dashboard to check Add-ins for compatibility. For more information, see [Compatibility and telemetry in Office](https://go.microsoft.com/fwlink/?LinkId=626610).
+- We recommend that customers use Monthly Channel to get the latest feature updates. If you have Office customizations or Add-ins deployed, you can use Semi-Annual Channel, which allows you to wait for feature updates to Office until you have had the chance to test and fix your customizations. To test and fix your customizations before those features updates are applied to Semi-Annual Channel, use Semi-Annual Channel (Targeted). Use the Office Telemetry Dashboard to check Add-ins for compatibility. For more information, see [Compatibility and telemetry in Office](https://go.microsoft.com/fwlink/p/?LinkId=626610).
 
 - If your developers built the Office Add-in, we suggest they update the code and redeploy the custom Office Add-in.
 
@@ -224,7 +224,7 @@ Not all changes have the same impact on your users or require action. Some are p
 
 - Consider decommissioning Office Add-in that are no longer used or have low utilization.
 
-More information about [Office Add-ins](https://go.microsoft.com/fwlink/?LinkID=626869).
+More information about [Office Add-ins](https://go.microsoft.com/fwlink/p/?LinkID=626869).
 
 ### Tips for Testing
 
@@ -243,7 +243,7 @@ Responsibility for managing change is shared between Microsoft and you as the ad
 
 Understand the roles both Microsoft and you need to play before, during, and after a change occurs to the service.
 
-Review what's included in each release on the [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090) page.
+Review what's included in each release on the [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkId=626090) page.
 
 ### Balance of Responsibility
 
@@ -276,13 +276,13 @@ Microsoft's role
 
 - Notify customers 30 days in advance for changes that require administrator action.
 
-- Publish majority of new features and updates on the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454).
+- Publish majority of new features and updates on the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454).
 
 Customer's role
 
 - Understand what to expect for changes and communications.
 
-- Read Message Center, [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) and [Microsoft 365 blog](https://go.microsoft.com/fwlink/?LinkId=626089) regularly.
+- Read Message Center, [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) and [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089) regularly.
 
 - Set up pilot teams to preview new functionality using Monthly Channel.
 
@@ -318,7 +318,7 @@ Microsoft's role
 
 - Listen to feedback on the [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community and in the admin feedback tool.
 
-- Update [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) statuses and add new features.
+- Update [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) statuses and add new features.
 
 Customer's role
 
@@ -390,9 +390,9 @@ Use the following methods to configure which channels are used by which client c
 
 [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 
-[Overview of Windows as a service](https://go.microsoft.com/fwlink/?LinkId=847278)
+[Overview of Windows as a service](https://go.microsoft.com/fwlink/p/?LinkId=847278)
 
-[Microsoft cloud IT architecture resources](https://go.microsoft.com/fwlink/?LinkId=690243)
+[Microsoft cloud IT architecture resources](https://go.microsoft.com/fwlink/p/?LinkId=690243)
 
-[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
+[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkId=626090)
 

@@ -165,5 +165,5 @@ Here is some additional information that might be useful to know as you determin
 
 [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
  
-[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
+[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkId=626090)
 

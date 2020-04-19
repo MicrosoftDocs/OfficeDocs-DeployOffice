@@ -119,7 +119,7 @@ The following is an example of the output. The line that says: "License Status: 
    Installation ID: 020650770493837252929082195773527024195725809211989214
    Use License URL: https://activation.sls.microsoft.com/SLActivateProduct/SLActiva
    teProduct.asmx?configextension=o16
-   Validation URL: https://go.microsoft.com/fwlink/?LinkID=187557
+   Validation URL: https://go.microsoft.com/fwlink/p/?LinkID=187557
    Partial Product Key: KDQ2G
    License Status: Licensed
    Remaining Windows rearm count: 1000
