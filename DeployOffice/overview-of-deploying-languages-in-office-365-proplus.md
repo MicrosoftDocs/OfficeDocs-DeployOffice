@@ -81,7 +81,7 @@ If you want to deploy proofing tools in additional languages beyond the companio
 To deploy just the proofing tools, use the same tools you used to deploy Office, such as Configuration Manager or the ODT. You can include proofing tools in the initial deployment of Office, or you can add them later to an existing deployment. 
 
 > [!NOTE]
-> To install proofing tools, you must be using at least Version 1803 of Office 365 ProPlus. You must also be using the latest version of the Office Deployment Tool, which you can download from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). In addition, you cannot use the Office Customization Tool to create the configuration file, because this feature is not yet available in that tool. Instead, you must edit the configuration file in a text editor. 
+> To install proofing tools, you must be using at least Version 1803 of Microsoft 365 Apps. You must also be using the latest version of the Office Deployment Tool, which you can download from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). In addition, you cannot use the Office Customization Tool to create the configuration file, because this feature is not yet available in that tool. Instead, you must edit the configuration file in a text editor. 
 
 If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
 
