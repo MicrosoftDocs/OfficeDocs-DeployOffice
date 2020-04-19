@@ -19,7 +19,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
- This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments.
+ This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments.
   
 ## Featured
 
@@ -41,7 +41,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
   
 ## Deploy
 
-Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Endpoint Configuration Manager to deploy Office 365 ProPlus. 
+Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Endpoint Configuration Manager to deploy Microsoft 365 Apps. 
 
 - [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
 
@@ -52,7 +52,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 ## Manage updates
 
-Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates. 
+Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates. 
 
 
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
