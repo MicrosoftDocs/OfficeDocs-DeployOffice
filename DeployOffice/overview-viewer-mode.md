@@ -38,7 +38,7 @@ To use these policy settings, download and install the [Administrative Template 
 
 ## Considerations when using viewer mode
 
-- Viewer mode is currently supported for Word, Excel, and PowerPoint. We are aware of known issues with Project and Visio. For information about how to exclude applications when deploying, see [ExcludeApp element](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element). 
+- Viewer mode is currently supported for Word, Excel, and PowerPoint. We are aware of known issues with Project and Visio. For information about how to exclude applications when deploying, see [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element). 
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
 - For information about the availability of Version 1902 or later in the update channels for Microsoft 365 Apps, see [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - The Activate Product button under File > Account is hidden when Office is in viewer mode.

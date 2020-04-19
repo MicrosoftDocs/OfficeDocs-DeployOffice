@@ -63,7 +63,7 @@ Unlike Office 2010, Office 365 ProPlus uses a user-based licensing model that al
     
 ## Review what's changed since Office 2010
 
-To learn about some of the changes since Office 2010, review the following articles: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](https://docs.microsoft.com/DeployOffice/office2016/changes-in-office-2016-for-windows-desktop).
+To learn about some of the changes since Office 2010, review the following articles: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](office2016/changes-in-office-2016-for-windows-desktop.md).
   
 For information about the new features available in Office 365 ProPlus, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426). For Office 2019, see [What's New in Office 2019](https://support.office.com/article/5077cbbe-0d94-44cc-b30e-654e37629b0c).
   

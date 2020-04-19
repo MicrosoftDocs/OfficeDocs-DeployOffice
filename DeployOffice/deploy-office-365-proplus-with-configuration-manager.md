@@ -141,7 +141,7 @@ To deploy Visio and Project with Office 365 ProPlus, you can include them as par
 
 To remove Office, do the following:
 
-1. Review the description of the **Remove** attribute in the [ODT Reference](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
+1. Review the description of the **Remove** attribute in the [ODT Reference](configuration-options-for-the-office-2016-deployment-tool.md#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
 2. Navigate to **Software Library** > **Overview** > **Application Management** > **Applications**, select the just created application, switch to the **Deployment Type** tab and edit the **Office 365 Default Deployment Type**.
 3. Switch to the **Programs** tab and specify the following **Uninstall Program**: setup.exe /configure uninstall.xml
 4. Clik **OK**, right-click the deployment type and select  **Update Content**. For more details, see [Deploy and manage content](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage).

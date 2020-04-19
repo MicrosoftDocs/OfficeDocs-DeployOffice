@@ -35,4 +35,4 @@ In the Configuration Manager console, go to the Software Library workspace, expa
 For customers who are not using Configuration manager, the Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Office 365 ProPlus.
 You can download the Readiness Toolkit for free from the Microsoft Download Center.
 
-[Learn more about how use and deploy Office Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)
+[Learn more about how use and deploy Office Readiness Toolkit](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
