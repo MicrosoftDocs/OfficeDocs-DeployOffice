@@ -102,6 +102,6 @@ Users are prompted to activate Office 365 ProPlus when they open their first Off
   
 ![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
-As long as the computer is connected to the Internet, the user just needs to sign in when prompted, and then activation occurs automatically.
+As long as the computer is connected to the internet, the user just needs to sign in when prompted, and then activation occurs automatically.
   
 

@@ -34,7 +34,7 @@ Here are the update settings that you can configure by using the Office Deployme
 |Hide update notifications from users  <br/> |You can't configure this by using the Office Deployment Tool.  <br/> |Hide update notifications  <br/> |
 |Hide the option to enable or disable Office automatic updates  <br/> |You can't configure this by using the Office Deployment Tool.  <br/> |Hide options to enable or disable updates  <br/> |
    
-By default, updates for Microsoft 365 Apps are downloaded automatically from the Internet and applied in the background, without any user or administrator intervention. You can use these update settings to change that behavior and make other changes about how Microsoft 365 Apps is updated.
+By default, updates for Microsoft 365 Apps are downloaded automatically from the internet and applied in the background, without any user or administrator intervention. You can use these update settings to change that behavior and make other changes about how Microsoft 365 Apps is updated.
   
 In most cases, you'll use either the Office Deployment Tool or Group Policy, not both, to configure update settings. If you do use both to configure a setting, the Group Policy setting overrides the setting configured by the Office Deployment Tool.
   

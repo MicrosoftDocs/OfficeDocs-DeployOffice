@@ -115,7 +115,7 @@ The readiness status for add-ins is derived from telemetry-based computations as
 
 To provide you with the most up-to-date remediation advice and readiness status, the Readiness Report Creator contacts Microsoft when it creates the report. Some information about your VBA macros and add-ins is sent to Microsoft. For more information about what is sent, see [Examples of the information sent to Microsoft when creating an advanced report](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#BKMK_InfoSent).
 
- **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the Internet. The Readiness Toolkit calls a publicly available web-service, so the following URLs need to be whitelisted in your firewall:
+ **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the internet. The Readiness Toolkit calls a publicly available web-service, so the following URLs need to be whitelisted in your firewall:
 
 - https://officeclient.microsoft.com/serverconfig16
 

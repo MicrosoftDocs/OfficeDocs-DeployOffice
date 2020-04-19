@@ -65,7 +65,7 @@ Build **lean** packages by removing the source files from the packages. This has
    - When you add Project to an existing Microsoft 365 Apps for enterprise installation, you need to download less than 50 megabytes, as Office shared components are already installed.
    - Visio installs are typically 100-200 megabytes, based on the number of languages, as the templates/stencils are a substantial part of the download.
    - Installing proofing tools is typically 30-50 megabytes, versus a full language pack, which is 200-300 megabytes.
-- A second install scenario is often less frequent, which lowers the Internet traffic burden, ultimately reducing the impact.
+- A second install scenario is often less frequent, which lowers the internet traffic burden, ultimately reducing the impact.
 - You don’t have to update the source files every time Microsoft releases new features or security and quality fixes.
  
 Build **universal** packages by not hard coding things like the architecture or update channel. ODT will dynamically match the existing install, so your packages work across all update channels and architectures. Instead of having 4 packages to install Visio, for example, you'll have a single, universal package that will work across all permutations of update channels and architectures.
@@ -159,4 +159,4 @@ There are some prerequisites you must meet to make this concept work in your env
 - Use [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) 16.0.11615.33602 or later to enable *Version=MatchInstalled* to work.
 - The ODT must be able to locate the matching source files on the Office CDN.
 - Make sure that the context you're using for running the install can traverse the proxy. For details, see [Office 365 ProPlus Deployment and Proxy Server Guidance](https://techcommunity.microsoft.com/t5/Office-365-Blog/Office-365-ProPlus-Deployment-and-Proxy-Server-Guidance/ba-p/849164).
-- Make sure that the account (user or system) that's used to install the apps can connect to the Internet.
+- Make sure that the account (user or system) that's used to install the apps can connect to the internet.

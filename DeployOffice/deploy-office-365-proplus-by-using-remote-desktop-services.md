@@ -46,9 +46,9 @@ The following is a list of prerequisites that you need to deploy Office 365 ProP
   - Windows Server 2016
   - Currently supported Windows 10 SAC release
 
-- Reliable connectivity between the shared computer and the Internet.
+- Reliable connectivity between the shared computer and the internet.
 
-    This is required because the shared computer must be able to contact the Office Licensing Service on the Internet to obtain a license for each user who uses Office 365 ProPlus on the computer and then activate Office 365 ProPlus. Internet connectivity is also needed to renew the license, which occurs every few days.
+    This is required because the shared computer must be able to contact the Office Licensing Service on the internet to obtain a license for each user who uses Office 365 ProPlus on the computer and then activate Office 365 ProPlus. internet connectivity is also needed to renew the license, which occurs every few days.
 
 - A separate user account for each user who logs on to the shared computer.
 

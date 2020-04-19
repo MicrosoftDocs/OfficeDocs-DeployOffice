@@ -96,7 +96,7 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
     
 - IT infrastructure, including operating systems, mobile device support, user permissions and management, and software distribution methods.
     
-- Network infrastructure, including connections to the Internet and internal software distribution points.
+- Network infrastructure, including connections to the internet and internal software distribution points.
     
 - Cloud infrastructure, including existing Office 365 (or Microsoft 365) capabilities, user licensing, and identity.
     

@@ -80,7 +80,7 @@ Here's what happens after Office 365 ProPlus is installed on a computer that has
     
 2. The user starts an Office 365 ProPlus program, such as Word.
     
-3. Office 365 ProPlus contacts the Office Licensing Service on the Internet to obtain a licensing token for the user.
+3. Office 365 ProPlus contacts the Office Licensing Service on the internet to obtain a licensing token for the user.
     
     To determine whether the user is licensed to use Office 365 ProPlus, the Office Licensing Service has to know the user's account for Office 365. In some cases, Office 365 ProPlus prompts the user to provide the information. For example, the user might see the **Activate Office** dialog box.
     
@@ -102,9 +102,9 @@ If a user logs on to a shared computer again, Office 365 ProPlus uses the same l
 
 **Licensing token renewal** The licensing token that is stored on the shared computer is valid only for 30 days. As the expiration date for the licensing token nears, Office 365 ProPlus automatically attempts to renew the licensing token when the user is logged on to the computer and using Office 365 ProPlus.
     
-If the user doesn't log on to the shared computer for 30 days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the Internet to get a new licensing token.
+If the user doesn't log on to the shared computer for 30 days, the licensing token can expire. The next time that the user tries to use Office 365 ProPlus, Office 365 ProPlus contacts the Office Licensing Service on the internet to get a new licensing token.
     
-**Internet connectivity** Because the shared computer has to contact the Office Licensing Service on the Internet to obtain or renew a licensing token, reliable connectivity between the shared computer and the Internet is necessary.
+**Internet connectivity** Because the shared computer has to contact the Office Licensing Service on the internet to obtain or renew a licensing token, reliable connectivity between the shared computer and the internet is necessary.
     
 **Reduced functionality mode** If the user is not licensed for Office 365 ProPlus, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Office 365 ProPlus isn't activated. Office 365 ProPlus is now in reduced functionality mode. This means that the user can view and print Office 365 ProPlus documents, but can't create or edit documents. The user also sees a message in Office 365 ProPlus that most features are turned off.
     

@@ -36,7 +36,7 @@ To begin, [download the most current version](https://go.microsoft.com/fwlink/p/
 
 If you are using the Office Customization Tool or want to specify the update channel manually, you must pick the same update channel as your existing Office installation is already using. FOr example, if you want to add Project to devices which already have Microsoft 365 Apps installed and configured for the Semi-Annual Channel, you need to specify the same channel for Project 2016 in the configuration file.
 
-You can also edit the Updates element in the configuration file to determine how the installation of Project or Visio is updated. For example, you can configure it so that updates are automatically installed from the Office Content Delivery Network (CDN) on the Internet, which is the default, or from a file share on your local network.
+You can also edit the Updates element in the configuration file to determine how the installation of Project or Visio is updated. For example, you can configure it so that updates are automatically installed from the Office Content Delivery Network (CDN) on the internet, which is the default, or from a file share on your local network.
 
 If you're not familiar with the Office Deployment Tool, it's usually used to customize deployments of Click-to-Run versions of Office products, such as Microsoft 365 Apps. For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md). 
 

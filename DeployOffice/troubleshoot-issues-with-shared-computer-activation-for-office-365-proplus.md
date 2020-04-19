@@ -93,7 +93,7 @@ You can try these steps to fix this problem:
 
 ### Sorry, we cannot verify the license currently installed for this product.
 
-This error means that Office has a problem with the user's licensing token on the shared computer. The user should make sure to sign in to Office with his user account for Office 365 so that Office can obtain a new licensing token from the Office Licensing Service on the Internet.
+This error means that Office has a problem with the user's licensing token on the shared computer. The user should make sure to sign in to Office with his user account for Office 365 so that Office can obtain a new licensing token from the Office Licensing Service on the internet.
   
 ![Cannot verify product license message](images/f8bb9b93-f25d-44ff-b46e-a9e163704663.png)
   
@@ -101,7 +101,7 @@ This error means that Office has a problem with the user's licensing token on th
 
 ### PRODUCT NOTICE Your shared computer license expires on <date> and we're having trouble renewing it.
 
-This error means that Office tried to renew the licensing token automatically, but there was a problem. One possible cause for this is that the shared computer wasn't connected to the Internet when Office tried to renew the licensing token with the Office Licensing Service.
+This error means that Office tried to renew the licensing token automatically, but there was a problem. One possible cause for this is that the shared computer wasn't connected to the internet when Office tried to renew the licensing token with the Office Licensing Service.
   
 The licensing token is valid until the date listed in the error message. The user can continue to use Office apps to create, edit, and print documents. The user can choose **Renew** to try to renew the license before the license token expires.
   

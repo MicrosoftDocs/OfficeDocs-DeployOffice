@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 936cda26-41f9-45b5-a1f9-f9e1f485d23b
-description: "Unlike earlier versions of Office, individual security updates and other updates for Office 365 ProPlus aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Office 365 ProPlus and puts it on the Internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Office 365 ProPlus is available on the Internet for 12 months. After 12 months, that specific version is no longer supported."
+description: "Unlike earlier versions of Office, individual security updates and other updates for Office 365 ProPlus aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Office 365 ProPlus and puts it on the internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Office 365 ProPlus is available on the internet for 12 months. After 12 months, that specific version is no longer supported."
 ---
 
 # Overview of the update process for Office 365 ProPlus
 
-Unlike earlier versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Microsoft 365 Apps and puts it on the Internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Microsoft 365 Apps is available on the Internet for 12 months. After 12 months, that specific version is no longer supported.
+Unlike earlier versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Microsoft 365 Apps and puts it on the internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Microsoft 365 Apps is available on the internet for 12 months. After 12 months, that specific version is no longer supported.
   
 > [!IMPORTANT]
 > Because individual updates aren't available for Microsoft 365 Apps, you can't use Windows Update, Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager to download and apply individual updates to Microsoft 365 Apps. 
@@ -47,7 +47,7 @@ When you install Microsoft 365 Apps, a scheduled task called Office Automatic Up
     
 ![Automatic updates](images/2a4e0cfb-828b-4881-9db9-468a2b597b7d.jpg)
   
-When the task runs, it compares the version of Microsoft 365 Apps on the computer to the version of Microsoft 365 Apps on the update location. The update location is where Office looks for updates — for example, on a network share or from the Internet. By default, Microsoft 365 Apps looks on the Internet for updates, but you can [configure the update location](configure-update-settings-for-office-365-proplus.md).
+When the task runs, it compares the version of Microsoft 365 Apps on the computer to the version of Microsoft 365 Apps on the update location. The update location is where Office looks for updates — for example, on a network share or from the internet. By default, Microsoft 365 Apps looks on the internet for updates, but you can [configure the update location](configure-update-settings-for-office-365-proplus.md).
   
 If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. After that, the next step — downloading the updates — starts.
   
@@ -61,7 +61,7 @@ The size of the download depends on several factors, such as how many security a
 > [!NOTE]
 > Starting in July 2014, the update process automatically uses a technology called binary delta compression to help reduce the size of the files downloaded even more. But, this technology is only used if you're updating from the most recent version of Microsoft 365 Apps. For example, binary delta compression is used if you're updating from the June to the July version, but not if you're updating from the May to the July version. 
   
-If the download process is interrupted — for example, by a temporary loss of network connectivity — the download resumes after the interruption, instead of restarting from the beginning. After the updates are downloaded, the computer doesn't have to be connected to the Internet or the network for the updates to be applied. That's because all the files that are needed to apply the updates are already on the local computer.
+If the download process is interrupted — for example, by a temporary loss of network connectivity — the download resumes after the interruption, instead of restarting from the beginning. After the updates are downloaded, the computer doesn't have to be connected to the internet or the network for the updates to be applied. That's because all the files that are needed to apply the updates are already on the local computer.
   
 ### Apply the updates for Office 365 ProPlus
 <a name="Apply"> </a>

@@ -23,13 +23,13 @@ This article applies to System Center 2012 R2 Configuration Manager. For informa
   
 If you use Microsoft Endpoint Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Microsoft 365 Apps. By using Configuration Manager, you can control which users and computers get Microsoft 365 Apps, where they get the installation files from, and when the Microsoft 365 Apps installation occurs.
   
-For example, you can control network bandwidth usage by placing the Microsoft 365 Apps installation files on a distribution point within your organization's network, instead of having users install Microsoft 365 Apps directly from the Internet. Keep in mind, however, that even if you're installing Microsoft 365 Apps from a location within your network, the computer where Microsoft 365 Apps is installed still needs access to the Internet to be able to [active Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ActivatingO365PP).
+For example, you can control network bandwidth usage by placing the Microsoft 365 Apps installation files on a distribution point within your organization's network, instead of having users install Microsoft 365 Apps directly from the internet. Keep in mind, however, that even if you're installing Microsoft 365 Apps from a location within your network, the computer where Microsoft 365 Apps is installed still needs access to the internet to be able to [active Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ActivatingO365PP).
   
 The steps that follow are for System Center 2012 R2 Configuration Manager, but you can also deploy Microsoft 365 Apps by using System Center 2012 Configuration Manager or Configuration Manager 2007 R2.
   
 ## Prepare the Office 365 ProPlus installation files to be deployed by Configuration Manager
 
-To get started, download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065) to a shared folder on your organization's network. Then, use the Office Deployment Tool to [download the Office 365 ProPlus installation files](overview-of-the-office-2016-deployment-tool.md#BKMK_downloadinstallationfiles) from the Internet to the same shared folder.
+To get started, download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065) to a shared folder on your organization's network. Then, use the Office Deployment Tool to [download the Office 365 ProPlus installation files](overview-of-the-office-2016-deployment-tool.md#BKMK_downloadinstallationfiles) from the internet to the same shared folder.
   
 Next, edit the configuration.xml, and review [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md) to decide how you want to install Microsoft 365 Apps. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Microsoft 365 Apps for enterprise.
   
@@ -77,7 +77,7 @@ An application in Configuration Manager must contain at least one [deployment ty
   
 For the Microsoft 365 Apps application, the deployment type includes the following:
   
-- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the Internet. For example, \\\\server1\share1.
+- The path of the shared folder that contains the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the internet. For example, \\\\server1\share1.
     
 - The command line that gets the Office Deployment Tool to start the installation of Microsoft 365 Apps.
     
@@ -95,7 +95,7 @@ For the Microsoft 365 Apps application, the deployment type includes the followi
     
 5. On the **Content** page, do the following:
     
-  - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the Internet.
+  - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the internet.
     
   - In the **Installation program** box, enter the following text: setup.exe /configure configuration.xml
     
@@ -171,7 +171,7 @@ After the files for the Microsoft 365 Apps application are copied to the appropr
     
 8. On the **Confirmation** page, check that the application was successfully deployed, and then choose **Close**.
     
-After you deploy the application, a targeted computer becomes aware of the deployed application during the computer's next client policy polling cycle, which is once every sixty minutes by default. Then, the computer downloads the installation files for the application from a distribution point into the Configuration Manager client cache. The installation of Microsoft 365 Apps takes place from the client cache and no additional files are downloaded from the network or from the Internet.
+After you deploy the application, a targeted computer becomes aware of the deployed application during the computer's next client policy polling cycle, which is once every sixty minutes by default. Then, the computer downloads the installation files for the application from a distribution point into the Configuration Manager client cache. The installation of Microsoft 365 Apps takes place from the client cache and no additional files are downloaded from the network or from the internet.
   
 ![Office installation status](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
   

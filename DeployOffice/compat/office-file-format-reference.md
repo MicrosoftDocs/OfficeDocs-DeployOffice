@@ -163,7 +163,7 @@ Users can paste data from the Office Clipboard into Word, Excel, and PowerPoint 
 
 If the file format that users want to use is not supported, they can try the following methods to open the file.
   
-- Search the Internet for a company that makes file format converters for file formats that are not supported in the application.
+- Search the internet for a company that makes file format converters for file formats that are not supported in the application.
     
 - Save to a file format that another program supports. For example, users might want to import their Word, Excel, or PowerPoint file into another program that does not support the application's native file format. However, the other program might support importing another supported file format, such as a text file format. In this case, users can save their work in text file format, and then from the other program, import the text file.
     

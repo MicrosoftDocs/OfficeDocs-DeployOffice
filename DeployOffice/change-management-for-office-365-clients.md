@@ -341,7 +341,7 @@ You choose when and how updates are deployed to your organization by configuring
 
 ### How to Apply Updates
 
-You can decide how updates are deployed to your users' computers. You can allow the client computers to automatically receive updates over the Internet or from an on-premises location. Alternatively, you might want to have more control by packaging the updates yourself and manually delivering them to client computers over your network.
+You can decide how updates are deployed to your users' computers. You can allow the client computers to automatically receive updates over the internet or from an on-premises location. Alternatively, you might want to have more control by packaging the updates yourself and manually delivering them to client computers over your network.
 
 #### Methods for applying Office updates to client computers
 
@@ -350,8 +350,8 @@ The following table explains three methods you can use to apply Office updates t
 
 | **Automatic**                                                                                                                                      | **Manual**                                                                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **From the Internet** <br/>                                                                                                                        | **From an on-premises location** <br/>                                                                                                                          |
-| Microsoft makes an updated build available on the Internet. The client computers automatically install the updates when they are available.  <br/> | An administrator downloads the updated build to an on-premises location. The client computers automatically install the updates when they are available.  <br/> |
+| **From the internet** <br/>                                                                                                                        | **From an on-premises location** <br/>                                                                                                                          |
+| Microsoft makes an updated build available on the internet. The client computers automatically install the updates when they are available.  <br/> | An administrator downloads the updated build to an on-premises location. The client computers automatically install the updates when they are available.  <br/> |
 
 The following illustration shows these methods:
 
@@ -373,7 +373,7 @@ To decide which method to use, consider the following scenarios:
 
 - Managed or un-managed computers?
 
-  - <strong>Allow automatic updates from the Internet for...</strong>Consumers and small businesses without an IT department.
+  - <strong>Allow automatic updates from the internet for...</strong>Consumers and small businesses without an IT department.
 
   - <strong>Deploy from an on-premises location when...</strong>You want to control when updates are pushed out to your organization's computers.
 
