@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with an overview of Office 365 ProPlus, including information about deploying and licensing."
+description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
 ---
 
 # About Microsoft 365 Apps in the enterprise
@@ -27,7 +27,7 @@ Microsoft 365 Apps is a version of Office that's available through many Office 3
 > - Project and Visio aren't included with Microsoft 365 Apps, but are available from other subscription plans.
 > - For more information about Office 365 (and Microsoft 365) plans, see [https://products.office.com](https://products.office.com) and the [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). 
   
-## Office 365 ProPlus is similar to other versions of Office
+## Microsoft 365 Apps is similar to other versions of Office
 <a name="BKMK_Similar"> </a>
 
 Microsoft 365 Apps is similar to other versions of Office that you can deploy to your users. Here are some important similarities:
@@ -44,7 +44,7 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
     
 - In addition, you can use many of the same Group Policy settings that you use with other versions of Office to configure and enforce Microsoft 365 Apps program settings. 
     
-## What's different about Office 365 ProPlus?
+## What's different about Microsoft 365 Apps?
 <a name="BKMK_Different"> </a>
 
 Even though Microsoft 365 Apps is a lot like other versions of Office, there are differences, including for [Deployment differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Deployment) and [Licensing differences](about-office-365-proplus-in-the-enterprise.md#BKMK_Licensing). 
@@ -56,7 +56,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - By default, Microsoft 365 Apps installs as one package. This means that all Office applications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-of-the-office-2016-deployment-tool.md#BKMK_excludeorremove) certain Office applications, such as Access, from client computers.
     
-- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
+- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
     
 - Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they are available. Or, if you have line-of-business applications, add-ins, or macros that you want to test with the new features, you can provide users with new features less frequently. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
     
@@ -73,7 +73,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Even though users don't need to be connected to the internet all the time to use Microsoft 365 Apps, users must connect to the internet at least once every 30 days. This is so that the status of their Office 365 (or Microsoft 365) subscriptions can be checked. If users don't connect within 30 days, Microsoft 365 Apps goes into reduced functionality mode. After users connect to the internet and their subscription status is verified, all the features of Microsoft 365 Apps are available again.
     
-## More information about Office 365 ProPlus
+## More information about Microsoft 365 Apps
 <a name="BKMK_MoreInfo"> </a>
 
 - You can use Microsoft 365 Apps with supported versions of Exchange Server (Exchange Server 2013 or later) or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 (or Microsoft 365) plan, you can use Microsoft 365 Apps with Exchange Online and SharePoint Online.
@@ -88,5 +88,3 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
 - [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
-- [Purchase Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=329114)
-
