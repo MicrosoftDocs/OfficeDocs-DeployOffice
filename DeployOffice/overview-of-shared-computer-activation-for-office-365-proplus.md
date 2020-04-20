@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Office 365 ProPlus with Remote Desktop Services (RDS) "
+description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Microsoft 365 Apps with Remote Desktop Services (RDS) "
 ---
 
 # Overview of shared computer activation for Microsoft 365 Apps
@@ -32,15 +32,15 @@ Shared computer activation lets you to deploy Microsoft 365 Apps to a computer i
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
 
 
-The most common shared computer activation scenario is to [deploy Office 365 ProPlus to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office programs, such as Word or Excel, at the same time on the remote computer.
+The most common shared computer activation scenario is to [deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office programs, such as Word or Excel, at the same time on the remote computer.
   
-Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md).
+Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md).
 
 Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
   
 <a name="Enable"> </a>
 
-## How to enable shared computer activation for Office 365 ProPlus
+## How to enable shared computer activation for Microsoft 365 Apps
 
 To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer activation is available for the following:
 
@@ -74,7 +74,7 @@ After Microsoft 365 Apps is installed, you can [verify that shared computer acti
   
 <a name="Works"> </a>
 
-## How shared computer activation works for Office 365 ProPlus
+## How shared computer activation works for Microsoft 365 Apps
 
 
 Here's what happens after Microsoft 365 Apps is installed on a computer that has shared computer activation enabled.
@@ -101,7 +101,7 @@ If a user logs on to a shared computer again, Microsoft 365 Apps uses the same l
   
 <a name="Details"> </a>
 
-## Additional details about shared computer activation for Office 365 ProPlus
+## Additional details about shared computer activation for Microsoft 365 Apps
 
 **Licensing token renewal** The licensing token that is stored on the shared computer is valid only for 30 days. As the expiration date for the licensing token nears, Microsoft 365 Apps automatically attempts to renew the licensing token when the user is logged on to the computer and using Microsoft 365 Apps.
     

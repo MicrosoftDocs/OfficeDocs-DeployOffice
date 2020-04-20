@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 search.appverid:
 - MET150
 
-description: "Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
+description: "Explains how to troubleshoot issues with deployments of Microsoft 365 Apps that are configured to use shared computer activation."
 ---
 
 # Troubleshoot issues with shared computer activation for Microsoft 365 Apps
@@ -34,7 +34,7 @@ To use shared computer activation, you must have an Office 365 (or Microsoft 365
 
 <a name="Enabled"> </a>
   
-## Verify that shared computer activation is enabled for Office 365 ProPlus
+## Verify that shared computer activation is enabled for Microsoft 365 Apps
 
 Here are two ways that you can check whether shared computer activation is enabled on the computer that has Microsoft 365 Apps installed.
   
@@ -46,7 +46,7 @@ Here are two ways that you can check whether shared computer activation is enabl
     
 <a name="Succeeded"> </a>
 
-## Verify that activation for Office 365 ProPlus succeeded
+## Verify that activation for Microsoft 365 Apps succeeded
 
 On the shared computer, after you open any Office program, go to the following folder:
   
