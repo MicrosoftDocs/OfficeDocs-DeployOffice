@@ -17,7 +17,7 @@ description: "Provides Office admins with an overview of how to deploy Project, 
  
 How you deploy Project to the users in your organization depends on which version of Project you purchase. A common purchase option for organizations is one of the following versions of Project:
   
-- Project Online Desktop Client, available as a subscription through Project Online.
+- Project Online Desktop Client, available as a subscription with Project Plan 3 or Project Plan 5.
 - Project Professional 2019 or Project Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2016 or Project Standard 2016, available as a one-time purchase through a volume licensing agreement.
     
@@ -30,7 +30,7 @@ Before you deploy, be sure to [review the system requirements](https://products.
 
 Here are the general steps to deploy Project Online Desktop Client to users in your organization:
   
-1. Purchase a Project Online subscription, such as Project Online Professional, that includes Project Online Desktop Client, with enough licenses for each of your Project users.
+1. Purchase either Project Plan 3 or Project Plan 5, which includes Project Online Desktop Client, with enough licenses for each of your Project users.
     
 2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Project Online Desktop Client to those users. 
     

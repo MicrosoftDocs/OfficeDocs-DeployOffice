@@ -17,7 +17,7 @@ description: "Provides Office admins with an overview of how to deploy subscript
   
 How you deploy Visio to the users in your organization depends on which version of Visio you purchase. A common purchase option for organizations is one of the following versions of Visio:
   
-- Visio that comes with a Visio Online Plan 2 subscription
+- Visio desktop app that comes with a Visio Plan 2 subscription.
 - Visio Professional 2019 or Visio Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Visio Professional 2016 or Visio Standard 2016, available as a one-time purchase through a volume licensing agreement.
      
@@ -30,9 +30,9 @@ Before you deploy, be sure to [review the system requirements](https://products.
 
 Here are the general steps to deploy a subscription version of Visio to users in your organization:
   
-1. Purchase Visio Online Plan 2, with enough licenses for each of your Visio users.
+1. Purchase Visio Plan 2, with enough licenses for each of your Visio users.
     
-2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Visio Online Plan 2 to those users. 
+2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Visio to those users. 
     
 3. Have your users sign in to Office 365 and install Visio from the **Software** section of the Office 365 portal. Users have to be local administrators on their computers to install Visio. 
     
@@ -84,7 +84,7 @@ If you already use other tools to deploy software to your users, such as Microso
 
 If you want to specify and maintain certain user settings for your Visio installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with computers joined to a domain. 
   
-The same Group Policy settings work for the subscription version of Visio, as well as volume licensed versions of Visio, such as Visio Professional 2019 or Visio Standard 2016.
+The same Group Policy settings work for the subscription version of the Visio desktop app, as well as volume licensed versions of Visio, such as Visio Professional 2019 or Visio Standard 2016.
   
 ## End user resources for Visio
 
