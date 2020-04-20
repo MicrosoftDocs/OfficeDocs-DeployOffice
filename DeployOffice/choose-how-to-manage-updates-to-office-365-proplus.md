@@ -1,5 +1,5 @@
 ---
-title: "Choose how to manage updates to Office 365 ProPlus"
+title: "Choose how to manage updates to Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.assetid: e486afce-ad31-4889-87a4-28796751bb86
 description: "Compares different ways to update Office 365 ProPlus, including automatically from the internet or from an on-premises location."
 ---
 
-# Choose how to manage updates to Office 365 ProPlus
+# Choose how to manage updates to Microsoft 365 Apps
   
 There are four ways that admins typically apply updates for Microsoft 365 Apps:
 
@@ -45,7 +45,7 @@ This option might be a good choice for your organization if you have users who t
 ## Using Microsoft Endpoint Configuration Manager
 <a name="MECM"> </a>
 
-Microsoft Endpoint Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md) for an in-depth description.
+Microsoft Endpoint Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md) for an in-depth description.
 
 ## Apply updates automatically from an on-premises location to Office 365 ProPlus
 <a name="OnPremises"> </a>
@@ -70,10 +70,10 @@ If you decide to use this option, you'll disable automatic updates. You can [con
   
 [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   
-[Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
+[Overview of the update process for Microsoft 365 Apps](overview-of-the-update-process-for-office-365-proplus.md)
 
-[Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
+[Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
   
-[Configure update settings for Office 365 ProPlus](configure-update-settings-for-office-365-proplus.md)
+[Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md)
   
-[End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md)
+[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-for-office-365-proplus.md)

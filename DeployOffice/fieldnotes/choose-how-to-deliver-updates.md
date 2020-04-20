@@ -45,7 +45,7 @@ By default, Office Click-To-Run installer uses the Windows' built in implementat
 
 ## End-user notifications
 
-End-user notifications for software updates are a key concern for any IT department.  By default, Microsoft 365 Apps for enterprise updates automatically in the background.  If Office is open, notifications will be delivered to the end user over a period of days. For a full description of notifications and end-user experience, see [End-user update notifications for Office 365 ProPlus](../end-user-update-notifications-for-office-365-proplus.md). IT Pros can optionally silence all end-user Office notifications by using the "Hide update notifications from users" policy. 
+End-user notifications for software updates are a key concern for any IT department.  By default, Microsoft 365 Apps for enterprise updates automatically in the background.  If Office is open, notifications will be delivered to the end user over a period of days. For a full description of notifications and end-user experience, see [End-user update notifications for Microsoft 365 Apps](../end-user-update-notifications-for-office-365-proplus.md). IT Pros can optionally silence all end-user Office notifications by using the "Hide update notifications from users" policy. 
 
 > [!NOTE]
 > Notifications related to deadlines cannot be suppressed.

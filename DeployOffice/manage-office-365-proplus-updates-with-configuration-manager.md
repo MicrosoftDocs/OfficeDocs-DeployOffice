@@ -1,5 +1,5 @@
 ---
-title: "Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager"
+title: "Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Office 365 Business, and the the subscription version of the Project desktop app."
 ---
 
-# Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager
+# Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

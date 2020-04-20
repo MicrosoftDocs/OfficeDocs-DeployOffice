@@ -1,5 +1,5 @@
 ---
-title: "End-user update notifications for Office 365 ProPlus"
+title: "End-user update notifications for Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.assetid: 83ede0c2-474d-4b11-8723-1984d5279a4c
 description: "You probably don't want users in your organization to notice when security and other updates are applied to Office 365 ProPlus on their computers. In most cases, they won't notice as the updates are installed automatically in the background. But, you should be aware that there are times when users see notifications that updates are available or need to be applied."
 ---
 
-# End-user update notifications for Office 365 ProPlus
+# End-user update notifications for Microsoft 365 Apps
 
 You probably don't want users in your organization to notice when security and other updates are applied to Microsoft 365 Apps on their computers. In most cases, they won't notice as the updates are installed automatically in the background. But, you should be aware that there are times when users see notifications that updates are available or need to be applied.
   
@@ -69,9 +69,9 @@ This gives users fifteen minutes to save and close any work. When the countdown 
 > The **Hide update notifications** Group Policy setting doesn't hide notifications related to deadlines.
   
 ## Related topics
-[Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
+[Overview of the update process for Microsoft 365 Apps](overview-of-the-update-process-for-office-365-proplus.md)
   
-[Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md)
+[Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md)
   
-[Configure update settings for Office 365 ProPlus](configure-update-settings-for-office-365-proplus.md)
+[Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md)
 

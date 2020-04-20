@@ -57,7 +57,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 
-- [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 
 - [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md) 
 
@@ -76,6 +76,6 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
 
-- [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
+- [Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
 
 - [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)

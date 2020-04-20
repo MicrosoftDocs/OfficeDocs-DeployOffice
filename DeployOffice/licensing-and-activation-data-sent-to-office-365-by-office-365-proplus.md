@@ -1,5 +1,5 @@
 ---
-title: "Licensing and activation data sent to Office 365 by Office 365 ProPlus"
+title: "Licensing and activation data sent to Office 365 by Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.assetid: f7d07a88-35c3-48f5-b30e-c842f2d911a5
 description: "Describes what data Office 365 ProPlus sends to Office 365 services for licensing and activation purposes."
 ---
 
-# Licensing and activation data sent to Office 365 by Office 365 ProPlus
+# Licensing and activation data sent to Office 365 by Microsoft 365 Apps
 
   
 Computers that have Microsoft 365 Apps installed occasionally need to send data to Office 365. This data helps Office 365 do the following:
@@ -62,7 +62,7 @@ Microsoft 365 Apps uses a standard Microsoft technology called Activation &amp; 
 For a description of the data sent, see the Activation section of the [Windows 8 and Windows Server 2012 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=313210)
   
 ## Related topics
-[Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
+[Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
   
 [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 

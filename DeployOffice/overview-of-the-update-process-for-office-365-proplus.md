@@ -1,5 +1,5 @@
 ---
-title: "Overview of the update process for Office 365 ProPlus"
+title: "Overview of the update process for Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.assetid: 936cda26-41f9-45b5-a1f9-f9e1f485d23b
 description: "Unlike earlier versions of Office, individual security updates and other updates for Office 365 ProPlus aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Office 365 ProPlus and puts it on the internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Office 365 ProPlus is available on the internet for 12 months. After 12 months, that specific version is no longer supported."
 ---
 
-# Overview of the update process for Office 365 ProPlus
+# Overview of the update process for Microsoft 365 Apps
 
 Unlike earlier versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Microsoft 365 Apps and puts it on the internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Microsoft 365 Apps is available on the internet for 12 months. After 12 months, that specific version is no longer supported.
   
@@ -73,9 +73,9 @@ Updates can't be applied if the Office program that has to be updated is being u
 To make sure that users apply updates, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates. Users are given [notifications leading up to the deadline](end-user-update-notifications-for-office-365-proplus.md).
   
 ## Related topics
-[Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md)
+[Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md)
   
-[Configure update settings for Office 365 ProPlus](configure-update-settings-for-office-365-proplus.md)
+[Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md)
   
-[End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md)
+[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-for-office-365-proplus.md)
 

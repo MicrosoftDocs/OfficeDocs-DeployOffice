@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager"
+title: "Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -9,10 +9,10 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager."
+description: "Provides Office admins with information on how to Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager."
 ---
 
-# Deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager
+# Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

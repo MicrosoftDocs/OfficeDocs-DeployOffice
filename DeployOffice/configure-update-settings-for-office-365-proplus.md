@@ -1,5 +1,5 @@
 ---
-title: "Configure update settings for Office 365 ProPlus"
+title: "Configure update settings for Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -12,10 +12,10 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: a073ea21-62ed-40ef-8405-fd287f7d0b11
 
-description: "Explains how admins can use the Office Deployment Tool or Group Policy to configure update settings for Office 365 ProPlus."
+description: "Explains how admins can use the Office Deployment Tool or Group Policy to Configure update settings for Microsoft 365 Apps."
 ---
 
-# Configure update settings for Office 365 ProPlus
+# Configure update settings for Microsoft 365 Apps
   
 There are two ways that you can configure update settings for Microsoft 365 Apps in your organization:
   
@@ -71,9 +71,9 @@ Group Policy settings can be used regardless of whether users install Microsoft 
   
    
 ## Related topics
-[Overview of the update process for Office 365 ProPlus](overview-of-the-update-process-for-office-365-proplus.md)
+[Overview of the update process for Microsoft 365 Apps](overview-of-the-update-process-for-office-365-proplus.md)
   
-[Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md)
+[Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md)
   
-[End-user update notifications for Office 365 ProPlus](end-user-update-notifications-for-office-365-proplus.md)
+[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-for-office-365-proplus.md)
 

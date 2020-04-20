@@ -160,7 +160,7 @@ To change where your client computers receive their updates, run the ODT in conf
 
  `<Updates Enabled="TRUE" UpdatePath="\\server\updates" />`
 
-This article does not cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Office 365 ProPlus](choose-how-to-manage-updates-to-office-365-proplus.md).
+This article does not cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md).
 
 <a name="BKMK_excludeorremove"> </a>
 

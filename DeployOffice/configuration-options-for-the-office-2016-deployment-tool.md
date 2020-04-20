@@ -213,7 +213,7 @@ Optional. Defaults to False if not specified.
 
 For Configuration Manager to be able to manage Microsoft 365 Apps updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
 
-For more information, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
+For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
 
 Allowed values: 
 

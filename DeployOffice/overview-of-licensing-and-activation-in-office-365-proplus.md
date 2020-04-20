@@ -1,5 +1,5 @@
 ---
-title: "Overview of licensing and activation in Office 365 ProPlus"
+title: "Overview of licensing and activation in Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
 ---
 
-# Overview of licensing and activation in Office 365 ProPlus
+# Overview of licensing and activation in Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -66,7 +66,7 @@ If the user hasn't been assigned a license, and they try to use Microsoft 365 Ap
 
 ## Related topics
 
-[Licensing and activation data sent to Office 365 by Office 365 ProPlus](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
+[Licensing and activation data sent to Office 365 by Microsoft 365 Apps](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
   
 [About Office 365 ProPlus in the enterprise](about-office-365-proplus-in-the-enterprise.md)
   
