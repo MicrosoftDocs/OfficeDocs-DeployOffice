@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business."
+description: "Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Office 365 ProPlus, Office 365 Business, and the the subscription version of the Project desktop app."
 ---
 
 # Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager

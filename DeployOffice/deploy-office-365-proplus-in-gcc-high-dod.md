@@ -30,7 +30,7 @@ Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targ
 
 ### What about other applications, such as Project and Visio?
 
-You can deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Microsoft 365 Apps also apply to Project Online Desktop Client and Visio Online Plan 2.
+You can deploy the subscription versions of the Project and Visio desktop apps in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Microsoft 365 Apps also apply to the subscription versions of the Project and Visio desktop apps.
 
 Outlook for iOS and Android is also available for GCC High or DoD environments. For more information, [read this Tech Community blog post](https://techcommunity.microsoft.com/t5/Outlook-Blog/Outlook-mobile-meets-needs-of-customers-with-the-highest-Federal/ba-p/313938).
 

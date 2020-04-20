@@ -81,7 +81,7 @@ If you want to change the products or languages installed, or want to change oth
 
 - Before changing to a different architecture, especially when changing to 64-bit, make sure that your existing add-ins, macros, and complex Office files work on the new architecture. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
-- The MigrateArch attribute can be used to change the architecture of the subscription versions of Project and Visio. For example, if you have a device that only has Project Online Desktop Client installed on it.
+- The MigrateArch attribute can also be used to change the architecture of the subscription versions of the Project and Visio desktop apps.
 
 - The MigrateArch attribute won't migrate the bitness of Office programs on the device that were installed by using Windows Installer (MSI). Those programs can be removed by the using the [RemoveMSI](upgrade-from-msi-version.md) element in your configuration.xml file.
 

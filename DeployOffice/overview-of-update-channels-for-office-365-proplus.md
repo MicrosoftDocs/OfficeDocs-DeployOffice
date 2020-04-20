@@ -25,8 +25,8 @@ One of the benefits of Microsoft 365 Apps is that Microsoft can provide new feat
   
 |**Update channel**|**Primary purpose**|**How often updated with new features**|**Default update channel for the following products**|
 |:-----|:-----|:-----|:-----|
-|[Monthly Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_MC) <br/> |Provide users with the newest features of Office as soon as they're available.  <br/> |Monthly  <br/> |Visio Online Plan 2  <br/><br/> Project Online Desktop Client  <br/><br/>  Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium. <br/> |
-|[Semi-Annual Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_SAC) <br/> |Provide users with new features of Office only a few times a year.  <br/> |Every six months, in January and July  <br/> |Microsoft 365 Apps for enterprise  <br/> |
+|[Monthly Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_MC) <br/> |Provide users with the newest features of Office as soon as they're available.  <br/> |Monthly  <br/> |Subscription version of Project desktop app  <br/><br/> Subscription version of Visio desktop app <br/><br/>  Microsoft 365 Apps for business (previously named Office 365 Business) <br/> |
+|[Semi-Annual Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_SAC) <br/> |Provide users with new features of Office only a few times a year.  <br/> |Every six months, in January and July  <br/> |Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) <br/> |
 |[Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) <br/> |Provide pilot users and application compatibility testers the opportunity to test the next Semi-Annual Channel.  <br/> |Every six months, in March and September  <br/> |None  <br/> |
    
 > [!NOTE]
@@ -151,7 +151,7 @@ Here is some additional information that might be useful to know as you determin
     
 - If the user does an Online Repair of Microsoft 365 Apps for enterprise, the installation reverts to Semi-Annual Channel, unless you've configured a Group Policy setting to provide a different update channel.
 
-- If you have Visio Online Plan 2 or Project Online Desktop Client installed on the same computer as Microsoft 365 Apps, they all must use the same update channel. You can't have a mix of update channels on the same computer. 
+- If you have the subscription versions of the Project and Visio desktop apps installed on the same computer as Microsoft 365 Apps, they all must use the same update channel. You can't have a mix of update channels on the same computer. 
 
 - These update channels only apply to installations on computers running Windows.
 

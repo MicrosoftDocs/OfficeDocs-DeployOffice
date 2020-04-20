@@ -102,7 +102,7 @@ Use the following table to choose the right release option for your business nee
 
 ### Default channels for client applications
 
-Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. Project Online Desktop Client and Visio Online Plan 2 also follow this release model. 
+Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. The subscription versions of the Project and Visio desktop apps also follow this release model. 
 
 The following illustration shows these sets of client applications.
 
@@ -112,7 +112,7 @@ By default, the client applications for Office 365 are set to these channel rele
 
 - **Microsoft 365 Apps for enterprise** is set to use Semi-Annual Channel.
 
-- **Project Online Desktop Client** and **Visio Online Plan 2** are set to use Monthly Channel.
+- Subscription versions of the Project and Visio desktop apps are set to use Monthly Channel.
 
 But you can determine which channel is used for your client applications, according to your business needs.
 

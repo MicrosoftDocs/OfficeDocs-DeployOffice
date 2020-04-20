@@ -30,7 +30,7 @@ If you're having problems getting shared computer activation to work when you de
 To use shared computer activation, you must have an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and that supports shared computer activation.
   
 > [!NOTE]
-> You also can use shared computer activation with Visio Online Plan 2 or Project Online Desktop Client. You just need a subscription plan that includes those products. 
+> You also can use shared computer activation with the subscription versions of the Project and Visio desktop apps. You just need a subscription plan that includes those products. 
 
 <a name="Enabled"> </a>
   

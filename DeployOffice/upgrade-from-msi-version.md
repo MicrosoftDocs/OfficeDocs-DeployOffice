@@ -126,8 +126,8 @@ Here’s an example of a configuration.xml file that installs the 64-bit Semi-An
 
 The following are some additional details about using the RemoveMSI element in your configuration.xml file.
 - You can also use these settings if you’re installing any of the following:
-   - Project Online Desktop Client
-   - Visio Online Plan 2, which is the subscription version of Visio.
+   - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
+   - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
    - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
 - Installations of the following products will also be removed unless you use IgnoreProduct:

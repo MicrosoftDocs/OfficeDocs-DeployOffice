@@ -131,7 +131,7 @@ For more details, see [Overview of deploying languages in Office 365 ProPlus](ov
 
 For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
-If you have subscription versions of Visio or Project (Visio Online Plan 2 or Project Online Desktop Client), continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Microsoft 365 Apps. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
+If you have the subscription versions of the Project and Visio desktop apps, continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Microsoft 365 Apps. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
 ## Step 5 - Define your deployment groups
 
