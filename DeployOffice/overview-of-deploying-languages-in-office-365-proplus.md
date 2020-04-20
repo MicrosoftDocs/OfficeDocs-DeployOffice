@@ -39,10 +39,10 @@ When deploying multiple languages in a large organization, we recommend these be
 
 - Automatically [install the same languages as the operating system](#install-the-same-languages-as-the-operating-system).
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
-- When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-office-365-proplus), rather than the full version of Office.
+- When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-microsoft-365-apps), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as a previous MSI installation](#install-the-same-languages-as-a-previous-msi-installation). 
 - When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
-- If you deploy a subscription version of the Project or Visio desktop app to a device that already has Office installed, you can [automatically deploy them in the same languages as the installed version of Office](#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-office-365-proplus).
+- If you deploy a subscription version of the Project or Visio desktop app to a device that already has Office installed, you can [automatically deploy them in the same languages as the installed version of Office](#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-microsoft-365-apps).
 - If you use some languages only as editing tools, you can [deploy just the proofing tools](#deploy-proofing-tools) instead of full language packs to conserve network bandwidth.
 
 This article also includes [the list of supported languages](#languages-culture-codes-and-companion-proofing-languages) and details on how Office [conserves network bandwidth when downloading language packs](#conserve-network-bandwidth-when-adding-language-packs) for deployment.
@@ -61,7 +61,7 @@ For more details on standard deployments, see [Plan your enterprise deployment o
 
 The primary language selected in the Office Customization Tool determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you must uninstall Office and reinstall it. 
 
-## Deploy languages to existing installations of Office 365 ProPlus
+## Deploy languages to existing installations of Microsoft 365 Apps
 
 After deploying Microsoft 365 Apps, you can deploy additional languages for Office. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 
@@ -116,7 +116,7 @@ When deploying Office, you can automatically install the same languages that are
 
 When Match Operating System is used, the base language of the operating system and all active display languages for user profiles on the device are installed. Match Operating System can be used in combination with a fixed list of languages. 
 
-## Deploy Visio or Project in the same languages as an existing version of Office 365 ProPlus
+## Deploy Visio or Project in the same languages as an existing version of Microsoft 365 Apps
 
 You can automatically deploy Visio and Project in the languages that are in use by an existing version of Microsoft 365 Apps. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 

@@ -237,7 +237,7 @@ Allowed values:
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-office-365-proplus).
+You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
 
 ### Example
 
