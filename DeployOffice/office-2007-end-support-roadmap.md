@@ -60,7 +60,7 @@ Unlike Office 2007, Microsoft 365 Apps uses a user-based licensing model that al
   
 - [Office 365 ProPlus product page](https://products.office.com/business/office-365-proplus-business-software)
     
-- [About Office 365 ProPlus in the enterprise](about-office-365-proplus-in-the-enterprise.md)
+- [About Microsoft 365 Apps in the enterprise](about-office-365-proplus-in-the-enterprise.md)
     
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
     

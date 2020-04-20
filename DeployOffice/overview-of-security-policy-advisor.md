@@ -1,5 +1,5 @@
 ---
-title: "Overview of Security Policy Advisor for Microsoft 365 Apps"
+title: "Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.assetid:
 description: "You can use Security Policy Advisor to receive and implement security policy recommendations."
 ---
 
-# Overview of Security Policy Advisor for Microsoft 365 Apps
+# Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -26,7 +26,7 @@ You can use Security Policy Advisor to receive and implement security policy rec
 
 Security Policy Advisor can only be used in combination with the Office cloud policy service, a service that enables you to enforce policy settings for Microsoft 365 Apps for enterprise on a user's device. The policy settings roam to whichever device the user signs into and uses Microsoft 365 Apps for enterprise. Security Policy Advisor provides recommendations and the implementation of security policies for devices managed by the Office cloud policy service.
  
-For more information about the Office cloud policy service, including details on how the policies are applied and how priority is used, see [Overview of the Office cloud policy service for Microsoft 365 Apps](overview-office-cloud-policy-service.md).
+For more information about the Office cloud policy service, including details on how the policies are applied and how priority is used, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
 
 ## Requirements for using Security Policy Advisor
 

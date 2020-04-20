@@ -1,5 +1,5 @@
 ---
-title: "About Office 365 ProPlus in the enterprise"
+title: "About Microsoft 365 Apps in the enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with an overview of Office 365 ProPlus, including information about deploying and licensing."
 ---
 
-# About Office 365 ProPlus in the enterprise
+# About Microsoft 365 Apps in the enterprise
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

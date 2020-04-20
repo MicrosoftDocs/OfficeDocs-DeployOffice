@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Office cloud policy service for Microsoft 365 Apps"
+title: "Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "The Office cloud policy service lets you enforce policy settings for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed."
 ---
 
-# Overview of the Office cloud policy service for Microsoft 365 Apps
+# Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
