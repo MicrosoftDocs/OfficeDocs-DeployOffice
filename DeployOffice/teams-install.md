@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Office 365 ProPlus."
+description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
 ---
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
@@ -21,7 +21,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams is 
 
 In the past, Microsoft Teams was a separate installation from Microsoft 365 Apps. But starting with Version 1902, Teams is included as part of ***new*** installations of Microsoft 365 Apps. If Teams is already installed on the device, no changes are made to that installation of Teams.
 
-Teams is also being added to ***existing*** installations of Microsoft 365 Apps on devices running Windows. For more information about when that occurs, see [What about existing installations of Office 365 ProPlus?](#what-about-existing-installations-of-office-365-proplus).
+Teams is also being added to ***existing*** installations of Microsoft 365 Apps on devices running Windows. For more information about when that occurs, see [What about existing installations of Microsoft 365 Apps?](#what-about-existing-installations-of-microsoft-365-apps).
 
 > [!NOTE]
 > To complete the installation of Teams on new or existing installations of Microsoft 365 Apps, either restart the device or have the user log off and log back on.
@@ -30,7 +30,7 @@ If Skype for Business is already installed on the device, Skype for Business won
 
 You don't have to wait if you're ready now to deploy Teams to the users in your organization. You can deploy Teams for your users by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment) or you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads).
 
-We also have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) or [existing](#what-about-existing-installations-of-office-365-proplus) installations of Microsoft 365 Apps if your organization isn't ready to deploy Teams.
+We also have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) or [existing](#what-about-existing-installations-of-microsoft-365-apps) installations of Microsoft 365 Apps if your organization isn't ready to deploy Teams.
 
 > [!IMPORTANT]
 > If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
@@ -40,7 +40,7 @@ If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#mi
 If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [Shared computer and VDI environments with Microsoft Teams](#shared-computer-and-vdi-environments-with-microsoft-teams).
 
 
-## When will Microsoft Teams start being included with new installations of Office 365 ProPlus?
+## When will Microsoft Teams start being included with new installations of Microsoft 365 Apps?
 
 The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you're using. The following table shows the schedule.
 
@@ -55,7 +55,7 @@ The date when Teams starts being installed with ***new*** installations of Micro
 > - Microsoft 365 Apps for business, starting with Version 1901, which was released on January 31, 2019. Microsoft 365 Apps for business is the version of Office that is included with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 > - Office for Mac, starting with Version 16.21, which was released on January 16, 2019. Office for Mac comes with any plan that includes Microsoft 365 Apps. For more information, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
-## How to exclude Microsoft Teams from new installations of Office 365 ProPlus
+## How to exclude Microsoft Teams from new installations of Microsoft 365 Apps
 
 If you don't want Teams included when you install Microsoft 365 Apps on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
@@ -93,7 +93,7 @@ If you're letting your users install Microsoft 365 Apps for themselves from the 
 To remove Teams after it's been installed, go to **Control Panel** > **Uninstall a program** and uninstall **Microsoft Teams** and any instances of **Teams Machine-Wide Installer**. If you previously installed Teams separately from installing Microsoft 365 Apps, you might see multiple instances of **Teams Machine-Wide Installer**. You can also use PowerShell to remove Teams as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
 
 
-## What about existing installations of Office 365 ProPlus?
+## What about existing installations of Microsoft 365 Apps?
 
 Teams is also being added to ***existing*** installations of Microsoft 365 Apps on devices running Windows as part of the normal update process. There is no change to existing installations of Mac.
 
