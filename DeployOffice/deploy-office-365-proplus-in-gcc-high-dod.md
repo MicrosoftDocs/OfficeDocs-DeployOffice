@@ -19,47 +19,47 @@ description: "Provides guidance for deploying Office 365 ProPlus in a GCC High o
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-If you plan to deploy Office 365 ProPlus in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
+If you plan to deploy Microsoft 365 Apps in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
 ## Which version of Office 365 ProPlus to deploy
 
 > [!IMPORTANT]
-> To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Office 365 ProPlus.
+> To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Microsoft 365 Apps.
 
 Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
 
 ### What about other applications, such as Project and Visio?
 
-You can deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Office 365 ProPlus also apply to Project Online Desktop Client and Visio Online Plan 2.
+You can deploy Project Online Desktop Client and Visio Online Plan 2 in a GCC High or DoD environment, but they must be at least Version 1803. Any configuration or settings mentioned for Microsoft 365 Apps also apply to Project Online Desktop Client and Visio Online Plan 2.
 
 Outlook for iOS and Android is also available for GCC High or DoD environments. For more information, [read this Tech Community blog post](https://techcommunity.microsoft.com/t5/Outlook-Blog/Outlook-mobile-meets-needs-of-customers-with-the-highest-Federal/ba-p/313938).
 
 > [!IMPORTANT]
-> For Teams, currently you need to exclude Teams from being installed when you install Office 365 ProPlus. Instead, you need to install Teams by using the separate MSI-based installer. In the future, you'll be able to install Teams along with Office 365 ProPlus without needing to use the separate MSI-based installer.
-> - For steps on how to exclude Teams from being installed with Office 365 ProPlus, see [How to exclude Microsoft Teams from new installations of Office 365 ProPlus](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
+> For Teams, currently you need to exclude Teams from being installed when you install Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. In the future, you'll be able to install Teams along with Microsoft 365 Apps without needing to use the separate MSI-based installer.
+> - For steps on how to exclude Teams from being installed with Microsoft 365 Apps, see [How to exclude Microsoft Teams from new installations of Office 365 ProPlus](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
 >- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 
 ## Which update channel of Office 365 ProPlus to use
 
-For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Office 365 ProPlus. For more information about update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps. For more information about update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
  
 ## Where to install Office 365 ProPlus from and where to get updates
 
-If network connectivity and other considerations based on your organizational requirements aren't an issue, you can choose to deploy Office 365 ProPlus directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the internet. You can also configure Office 365 ProPlus to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Office 365 ProPlus up to date.
+If network connectivity and other considerations based on your organizational requirements aren't an issue, you can choose to deploy Microsoft 365 Apps directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the internet. You can also configure Microsoft 365 Apps to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Microsoft 365 Apps up to date.
 
-If you don't want computers installed with Office 365 ProPlus to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Office 365 ProPlus to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Office 365 ProPlus and updates to Office 365 ProPlus to the shared folder on your internal network. Also, computers installed with Office 365 ProPlus still require internet connectivity in order to remain activated.
+If you don't want computers installed with Microsoft 365 Apps to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Microsoft 365 Apps to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Microsoft 365 Apps and updates to Microsoft 365 Apps to the shared folder on your internal network. Also, computers installed with Microsoft 365 Apps still require internet connectivity in order to remain activated.
 
-Keep in mind that installing and updating Office 365 ProPlus from a shared folder on your local network requires significantly more administrative effort and more disk space. For example, you have to keep track of when new builds of Office 365 ProPlus are available and then download the updated version of Office 365 ProPlus to your network. The core files for Office 365 ProPlus are at least 1.6 GB and at least 250 MB for each language deployed.
+Keep in mind that installing and updating Microsoft 365 Apps from a shared folder on your local network requires significantly more administrative effort and more disk space. For example, you have to keep track of when new builds of Microsoft 365 Apps are available and then download the updated version of Microsoft 365 Apps to your network. The core files for Microsoft 365 Apps are at least 1.6 GB and at least 250 MB for each language deployed.
 
-If Office 365 ProPlus is being updated directly from the Office CDN, the amount of network traffic to each computer is significantly less, because only the changed files need to be downloaded. The size of those updates can vary from 50 mb to 300 mb. These estimates are based on historical data from the past year or so of updates.
+If Microsoft 365 Apps is being updated directly from the Office CDN, the amount of network traffic to each computer is significantly less, because only the changed files need to be downloaded. The size of those updates can vary from 50 mb to 300 mb. These estimates are based on historical data from the past year or so of updates.
 
 
 ## What tools to use to deploy Office 365 ProPlus
-There is no special guidance about what tools you can use to deploy Office 365 ProPlus in GCC High or DoD environments.
+There is no special guidance about what tools you can use to deploy Microsoft 365 Apps in GCC High or DoD environments.
 
-To deploy Office 365 ProPlus, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Office 365 ProPlus from, whether to install the 32-bit or 64-bit version, which languages to install, and where Office 365 ProPlus should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+To deploy Microsoft 365 Apps, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
-You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to deploy Office 365 ProPlus. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager-2012r2.md).
+You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to deploy Microsoft 365 Apps. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-office-365-proplus-with-system-center-configuration-manager-2012r2.md).
 
 > [!NOTE]
 > If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, we recommend that you update to the most current version of that software, if possible. In some cases, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.
@@ -70,7 +70,7 @@ You can also use enterprise software deployment tools, such as Microsoft Endpoin
 For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
 ### Installing and updating Office 365 ProPlus from the Office CDN
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Office 365 ProPlus on Semi-Annual Channel from the Office CDN. Office 365 ProPlus will also be automatically updated directly from the Office CDN.
+Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
 
 ```xml
 <Configuration> 
@@ -85,7 +85,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ```
 
 ### Installing and updating Office 365 ProPlus from a shared folder on the local network
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Office 365 ProPlus on Semi-Annual Channel from a shared folder on your local network. Updates to Office 365 ProPlus will also come from a shared folder on your local network.
+Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
 ```xml
 <Configuration> 
@@ -102,7 +102,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ## Configure whether to send telemetry data to Microsoft
 Office apps send telemetry data to Microsoft on a regular basis to help Microsoft understand how to improve the product. In highly regulated environments, you may choose to prevent telemetry data from being sent to Microsoft.
 
-No additional configuration is needed to prevent Office 365 ProPlus or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
+No additional configuration is needed to prevent Microsoft 365 Apps or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
 
 For other Office apps, such as Skype for Business client, Office for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for additional information.
 
@@ -163,7 +163,7 @@ and
 In addition to telemetry data settings, there are some additional settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Ensure modern authentication is enabled
-Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Office 365 ProPlus. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
+Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Microsoft 365 Apps. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
 
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
@@ -181,16 +181,16 @@ If experimentation was previously enabled, you also need to delete any data unde
 These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
 
 ### Configure Outlook behavior on Office 365 ProPlus
-The following registry values must be set to correctly configure Outlook behavior on Office 365 ProPlus. The type for these registry values is REG_DWORD and the values should be set to 1.
+The following registry values must be set to correctly configure Outlook behavior on Microsoft 365 Apps. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
-  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Office 365 ProPlus you don't need to set this registry setting. <br/>
+  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Microsoft 365 Apps you don't need to set this registry setting. <br/>
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
   **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisablePreviewPlace <br/>
-  **Description:** This disables the Coming Soon feature which provides users with information about upcoming features and lets users try those features and provide feedback. Coming Soon is available in Version 1806 or later of Office 365 ProPlus. <br/>
+  **Description:** This disables the Coming Soon feature which provides users with information about upcoming features and lets users try those features and provide feedback. Coming Soon is available in Version 1806 or later of Microsoft 365 Apps. <br/>
 
 The following registry values are optional. The type for these registry values is REG_DWORD and the values should be set to 1.
 
@@ -204,7 +204,7 @@ Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview
 
 
 ## Special considerations
-Due diligence was done to review cloud services connected to features in Office 365 ProPlus.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release. We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
+Due diligence was done to review cloud services connected to features in Microsoft 365 Apps.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release. We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
 
 
 |**Application**  |**Feature**  |**Recommendation**  |
@@ -215,14 +215,14 @@ Due diligence was done to review cloud services connected to features in Office 
 ## Reference information
 
 ### Office Content Delivery Network (CDN)
-The software to install and update Office 365 ProPlus is available on the Office Content Delivery Network (CDN) on the internet. The Click-to-Run service, which manages installations and updates of Office 365 ProPlus, makes calls to the Office CDN, which is hosted by Akamai.
+The software to install and update Microsoft 365 Apps is available on the Office Content Delivery Network (CDN) on the internet. The Click-to-Run service, which manages installations and updates of Microsoft 365 Apps, makes calls to the Office CDN, which is hosted by Akamai.
 
 Office 365 has a Memorandum of Understanding with Akamai as part of the Office 365 accreditation package and Akami has a FedRAMP moderate accreditation. For availability, the Click-to-Run service can failover to a world-wide instance of Azure Front Door, which also has a FedRAMP moderate accreditation.
 
 ### Device Management Service
-For installations of Office 365 ProPlus that are configured to get updates automatically from the Office CDN, Microsoft uses the Device Management Service (DMS) to apply release configuration to individual devices based on their specific configuration. For example, the operating system version that Office is installed on, whether the 32-bit or 64-bit version of Office is installed, and which language of Office is installed.
+For installations of Microsoft 365 Apps that are configured to get updates automatically from the Office CDN, Microsoft uses the Device Management Service (DMS) to apply release configuration to individual devices based on their specific configuration. For example, the operating system version that Office is installed on, whether the 32-bit or 64-bit version of Office is installed, and which language of Office is installed.
 
-The Click-to-Run service contacts DMS to check for updates and will get a JSON response letting it know if a new build is available to download. None of the data passed by the Click-to-Run service is stored by the DMS service. The data is merely used as filtering criteria to determine what build information should be provided to the Click-to-Run for updating Office 365 ProPlus.
+The Click-to-Run service contacts DMS to check for updates and will get a JSON response letting it know if a new build is available to download. None of the data passed by the Click-to-Run service is stored by the DMS service. The data is merely used as filtering criteria to determine what build information should be provided to the Click-to-Run for updating Microsoft 365 Apps.
  
 The DMS service doesn't process, store or transmit any personally identifiable information or customer content.
 
@@ -234,7 +234,7 @@ For more information about the GCC High and DoD environments provided by Microso
 - [GCC High and DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod)
 - [Enterprise Mobility + Security for US Government](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)
 
-For general deployment guidance about Office 365 ProPlus, see the following articles:
+For general deployment guidance about Microsoft 365 Apps, see the following articles:
 
 - [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)

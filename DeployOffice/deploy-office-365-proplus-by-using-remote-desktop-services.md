@@ -18,29 +18,29 @@ description: "If you use Remote Desktop Services (RDS) to provide shared compute
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Office 365 ProPlus on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md) to do the installation.
+If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps for enterprise on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md) to do the installation.
 
 The following are two common RDS scenarios:
 
-- Install Office 365 ProPlus on an RDS server.
+- Install Microsoft 365 Apps for enterprise on an RDS server.
 
-- Install Office 365 ProPlus on a shared virtual machine.
+- Install Microsoft 365 Apps for enterprise on a shared virtual machine.
 
 ## What you need to get started
 <a name="Started"> </a>
 
-The following is a list of prerequisites that you need to deploy Office 365 ProPlus with RDS:
+The following is a list of prerequisites that you need to deploy Microsoft 365 Apps for enterprise with RDS:
 
-- An Office 365 plan that includes Office 365 ProPlus. Also, make sure that you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office 365 ProPlus.
+- An Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps for enterprise. Also, make sure that you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Microsoft 365 Apps for enterprise.
 
     > [!NOTE]
     > You also can use RDS to deploy Project Online Desktop Client or Visio Online Plan 2, if you have a subscription plan that includes those products. 
 
-- The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Office 365 ProPlus software to your local network by using the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+- The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Microsoft 365 Apps for enterprise software to your local network by using the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
 
-- Any supported version of Office 365 ProPlus.
+- Any supported version of Microsoft 365 Apps for enterprise.
 
-- A supported version of RDS or Windows with Office 365 ProPlus, which includes any of the following:
+- A supported version of RDS or Windows with Microsoft 365 Apps for enterprise, which includes any of the following:
 
   - Windows 8.1
   - Windows Server 2016
@@ -48,18 +48,18 @@ The following is a list of prerequisites that you need to deploy Office 365 ProP
 
 - Reliable connectivity between the shared computer and the internet.
 
-    This is required because the shared computer must be able to contact the Office Licensing Service on the internet to obtain a license for each user who uses Office 365 ProPlus on the computer and then activate Office 365 ProPlus. internet connectivity is also needed to renew the license, which occurs every few days.
+    This is required because the shared computer must be able to contact the Office Licensing Service on the internet to obtain a license for each user who uses Microsoft 365 Apps for enterprise on the computer and then activate Microsoft 365 Apps for enterprise. Internet connectivity is also needed to renew the license, which occurs every few days.
 
 - A separate user account for each user who logs on to the shared computer.
 
-- A server that supports [Hyper-V](https://go.microsoft.com/fwlink/p/?LinkId=510585) if you're deploying Office 365 ProPlus on a shared virtual machine.
+- A server that supports [Hyper-V](https://go.microsoft.com/fwlink/p/?LinkId=510585) if you're deploying Microsoft 365 Apps for enterprise on a shared virtual machine.
 
 ## Install Office 365 ProPlus on an RDS server
 <a name="Server"> </a>
 
-In this scenario, you install Office 365 ProPlus on a computer configured as a Remote Desktop Session Host server. This enables multiple users to connect remotely to this computer. The users can each run Office 365 ProPlus programs, such as Word or Excel, at the same time.
+In this scenario, you install Microsoft 365 Apps for enterprise on a computer configured as a Remote Desktop Session Host server. This enables multiple users to connect remotely to this computer. The users can each run Office programs, such as Word or Excel, at the same time.
 
-Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
+Here are the basic steps of how to install Microsoft 365 Apps for enterprise on an RDS server:
 
 1. Install and configure Windows Server.
 
@@ -67,7 +67,7 @@ Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
 
     For example, [follow these steps to install RD Session Host](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-deploy-infrastructure) on Windows Server.
 
-    For users to be able to connect remotely to the server to use Office 365 ProPlus, their accounts must be members of the Remote Desktop Users group on the RD Session Host server.
+    For users to be able to connect remotely to the server to use Microsoft 365 Apps for enterprise, their accounts must be members of the Remote Desktop Users group on the RD Session Host server.
 
 3. [Create a configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) that includes the following lines:
 
@@ -76,23 +76,23 @@ Here are the basic steps of how to install Office 365 ProPlus on an RDS server:
    <Property Name="SharedComputerLicensing" Value="1" />
    ```
 
-    You set the display level to "None" to do a silent installation of Office 365 ProPlus. This prevents Office 365 ProPlus from trying to activate during the installation. This also means that you won't see any user interface elements during the installation, such as the progress of the installation or error messages.
+    You set the display level to "None" to do a silent installation of Microsoft 365 Apps for enterprise. This prevents Microsoft 365 Apps for enterprise from trying to activate during the installation. This also means that you won't see any user interface elements during the installation, such as the progress of the installation or error messages.
 
-    You use the SharedComputerLicensing setting to enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md), which is required to use Office 365 ProPlus on a shared computer.
+    You use the SharedComputerLicensing setting to enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md), which is required to use Microsoft 365 Apps for enterprise on a shared computer.
 
-4. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Office 365 ProPlus on the RD Session Host server.
+4. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Microsoft 365 Apps for enterprise on the RD Session Host server.
 
-At this point, users can connect to the RD Session Host server and use Office 365 ProPlus. Users can connect to the server by using Remote Desktop Connection, which is available in Windows, or by using other [Remote Desktop clients](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
+At this point, users can connect to the RD Session Host server and use Microsoft 365 Apps for enterprise. Users can connect to the server by using Remote Desktop Connection, which is available in Windows, or by using other [Remote Desktop clients](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
 
 ## Install Office 365 ProPlus on a shared virtual machine
 <a name="VM"> </a>
 
-In this scenario, you install Office 365 ProPlus as part of a client operating system image, such as one running Windows 8.1 or Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
+In this scenario, you install Microsoft 365 Apps for enterprise as part of a client operating system image, such as one running Windows 8.1 or Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
 
 > [!NOTE]
 > You can also use RDS to assign a virtual machine to a specific user. RDS calls that a personal virtual desktop. In that scenario, you don't use shared computer activation, because the virtual machine isn't shared among multiple users. 
 
-Here are the basic steps of how to configure RDS to deploy Office 365 ProPlus on a shared virtual machine:
+Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps for enterprise on a shared virtual machine:
 
 1. Create the operating system image:
 
@@ -110,7 +110,7 @@ Here are the basic steps of how to configure RDS to deploy Office 365 ProPlus on
 
     For example, [follow these steps to deploy a virtual desktop collection](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-create-collection) on Windows Server.
 
-After you've completed all the RDS configuration steps, users can connect to any of the virtual machines and run Office 365 ProPlus.
+After you've completed all the RDS configuration steps, users can connect to any of the virtual machines and run Microsoft 365 Apps for enterprise.
 
 ## Related topics
 <a name="VM"> </a>
