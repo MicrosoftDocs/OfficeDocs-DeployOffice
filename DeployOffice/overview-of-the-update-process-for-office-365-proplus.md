@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 936cda26-41f9-45b5-a1f9-f9e1f485d23b
-description: "Unlike earlier versions of Office, individual security updates and other updates for Office 365 ProPlus aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Office 365 ProPlus and puts it on the internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Office 365 ProPlus is available on the internet for 12 months. After 12 months, that specific version is no longer supported."
+description: "Unlike earlier versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released — usually the second Tuesday of each month — Microsoft creates an updated version of Microsoft 365 Apps and puts it on the internet. This updated version contains all the updates for that month, in addition to all updates from previous months. Each updated version of Microsoft 365 Apps is available on the internet for 12 months. After 12 months, that specific version is no longer supported."
 ---
 
 # Overview of the update process for Microsoft 365 Apps
@@ -25,7 +25,7 @@ To determine which version of Microsoft 365 Apps is installed on a user's comput
   
 ![Office version at Office Updates](images/15f0ae22-60d6-4484-838a-08b5e1312988.jpg)
   
-## Update process for Office 365 ProPlus
+## Update process for Microsoft 365 Apps
 <a name="Process"> </a>
 
 There are three steps that occur automatically when the update process runs for Microsoft 365 Apps:
@@ -36,7 +36,7 @@ There are three steps that occur automatically when the update process runs for 
     
 3. Apply the updates
     
-### Detect that updates are available for Office 365 ProPlus
+### Detect that updates are available for Microsoft 365 Apps
 <a name="Detect"> </a>
 
 When you install Microsoft 365 Apps, a scheduled task called Office Automatic Updates is created. This scheduled task is configured to look for updates at the following times:
@@ -51,7 +51,7 @@ When the task runs, it compares the version of Microsoft 365 Apps on the compute
   
 If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. After that, the next step — downloading the updates — starts.
   
-### Download the updates for Office 365 ProPlus
+### Download the updates for Microsoft 365 Apps
 <a name="Download"> </a>
 
 Only the files that are different are copied down to a Download folder on the local computer, and they're downloaded in a compressed form. This helps reduce the size of the download.
@@ -63,7 +63,7 @@ The size of the download depends on several factors, such as how many security a
   
 If the download process is interrupted — for example, by a temporary loss of network connectivity — the download resumes after the interruption, instead of restarting from the beginning. After the updates are downloaded, the computer doesn't have to be connected to the internet or the network for the updates to be applied. That's because all the files that are needed to apply the updates are already on the local computer.
   
-### Apply the updates for Office 365 ProPlus
+### Apply the updates for Microsoft 365 Apps
 <a name="Apply"> </a>
 
 After the compressed files are downloaded, they're uncompressed and moved from the Download folder to the Apply folder. The scheduled task then attempts to install the updates in the background, without requiring any user intervention.

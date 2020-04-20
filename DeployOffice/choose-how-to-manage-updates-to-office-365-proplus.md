@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: e486afce-ad31-4889-87a4-28796751bb86
-description: "Compares different ways to update Office 365 ProPlus, including automatically from the internet or from an on-premises location."
+description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
 ---
 
 # Choose how to manage updates to Microsoft 365 Apps
@@ -33,7 +33,7 @@ In most cases, you use the Office Deployment Tool or Group Policy to [configure 
 > [!IMPORTANT]
 > Because individual updates aren't available for Microsoft 365 Apps, you can't use Windows Update or Windows Server Update Services (WSUS) to download and apply individual updates to Microsoft 365 Apps. 
 
-## Apply updates automatically from the internet to Office 365 ProPlus
+## Apply updates automatically from the internet to Microsoft 365 Apps
 <a name="Internet"> </a>
 
 This is the default setting for Microsoft 365 Apps. For example, if your users install Microsoft 365 Apps themselves from the Office 365 portal, Microsoft 365 Apps is configured to get updates automatically from the internet. No additional user or administrative configuration is needed.
@@ -47,16 +47,16 @@ This option might be a good choice for your organization if you have users who t
 
 Microsoft Endpoint Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md) for an in-depth description.
 
-## Apply updates automatically from an on-premises location to Office 365 ProPlus
+## Apply updates automatically from an on-premises location to Microsoft 365 Apps
 <a name="OnPremises"> </a>
 
 You can configure Microsoft 365 Apps to get updates automatically from a location on your network, such as a network share. You can configure the update location by using the Office Deployment Tool or Group Policy.
   
 This is a good option if you want more control over the version of Microsoft 365 Apps that users have installed. For example, even if the June version of Microsoft 365 Apps is available, you might want your users to continue using the May version. You might want to do this because you want to test to make sure that your line-of-business applications work with the June version.
   
-You'll have to use the Office Deployment Tool to [download updated versions of Office 365 ProPlus from the internet](overview-of-the-office-2016-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
+You'll have to use the Office Deployment Tool to [download updated versions of Microsoft 365 Apps from the internet](overview-of-the-office-2016-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
   
-## Apply updates by installing an updated version of Office 365 ProPlus
+## Apply updates by installing an updated version of Microsoft 365 Apps
 <a name="Install"> </a>
 
 Instead of using automatic updates, you can deploy an updated version of Microsoft 365 Apps to your users by using the Office Deployment Tool. This option re-installs Microsoft 365 Apps. You can use the Office Deployment Tool together with software distribution tools, such as Microsoft Endpoint Configuration Manager or Microsoft Intune.
