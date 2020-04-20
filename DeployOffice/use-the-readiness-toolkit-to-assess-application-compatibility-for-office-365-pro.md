@@ -13,7 +13,7 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
-description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Office 365 ProPlus"
+description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Microsoft 365 Apps"
 ---
 
 

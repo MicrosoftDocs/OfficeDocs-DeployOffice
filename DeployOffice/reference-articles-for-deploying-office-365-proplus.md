@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 6df5de04-6b8e-48af-aede-dceaefacc278
-description: "This article lists all the reference articles about deploying Office 365 ProPlus in an enterprise environment. To see all the articles about Office 365 ProPlus deployment, see Deployment guide for Microsoft 365 Apps."
+description: "This article lists all the reference articles about deploying Microsoft 365 Apps in an enterprise environment. To see all the articles about Microsoft 365 Apps deployment, see Deployment guide for Microsoft 365 Apps."
 ---
 
 # Reference articles for deploying Microsoft 365 Apps

@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "The Office cloud policy service lets you enforce policy settings for Office 365 ProPlus on a user's device, even if the device isn't domain joined or otherwise managed."
+description: "The Office cloud policy service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
 ---
 
 # Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise

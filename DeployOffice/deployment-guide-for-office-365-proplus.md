@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
+description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
 ---
 
 # Deployment guide for Microsoft 365 Apps

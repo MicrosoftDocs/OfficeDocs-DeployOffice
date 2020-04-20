@@ -12,7 +12,7 @@ ms.collection:
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
+description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
 ---
 
 # Deploy Microsoft 365 Apps from the cloud

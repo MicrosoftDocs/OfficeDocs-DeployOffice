@@ -134,7 +134,7 @@ Optional.
 
 Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Microsoft 365 Apps for enterprise. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
 
-This value determines the channel to be installed, regardless of an optionally specified update channel in the <Update /> section or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Office 365 ProPlus update channel](change-update-channels.md) for additional details.
+This value determines the channel to be installed, regardless of an optionally specified update channel in the <Update /> section or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Microsoft 365 Apps update channel](change-update-channels.md) for additional details.
 
 If the subscription versions of the Project and Visio desktop apps are installed along with Microsoft 365 Apps for enterprise, the default setting is **Broad**. If the subscription versions of the Project and Visio desktop apps are deployed without Microsoft 365 Apps, the default setting is **Monthly**. 
 
@@ -237,7 +237,7 @@ Allowed values:
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
+You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
 
 ### Example
 

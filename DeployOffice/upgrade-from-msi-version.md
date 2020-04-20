@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Office 365 ProPlus from an MSI version of Office"
+description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Microsoft 365 Apps from an MSI version of Office"
 ---
 
 # Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps

@@ -13,7 +13,7 @@ ms.collection:
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 ms.assetid:
-description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
@@ -31,7 +31,7 @@ In addition to this guidance, we recommend that you use [Microsoft FastTrack](ht
 
 Review the number and details of your client devices, including platform (Windows or Mac); operating systems; architectures (32-bit or 64-bit); required languages; and existing versions of Office, Visio, Project, and other Office applications. 
 
-As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Office 365 ProPlus](https://products.office.com/office-resources).
+As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Microsoft 365 Apps](https://products.office.com/office-resources).
 
 Review the system requirements for your Office server workloads as well. For example, Exchange 2007 does not support Outlook 2016. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://products.office.com/office-resources).
 
@@ -97,4 +97,4 @@ Before planning your deployment, make sure you've completed all the steps for as
 
 ## Next step
 
-[Plan your deployment of Office 365 ProPlus](plan-office-365-proplus.md). 
+[Plan your deployment of Microsoft 365 Apps](plan-office-365-proplus.md). 

@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "This article gives step-by-step instructions for changing the update channel for Office 365 ProPlus."
+description: "This article gives step-by-step instructions for changing the update channel for ."
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
