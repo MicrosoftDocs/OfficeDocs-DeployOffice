@@ -66,7 +66,6 @@ This option is useful if you want to control which version of Microsoft 365 Apps
 If you decide to use this option, you'll disable automatic updates. You can [control that setting](configure-update-settings-for-office-365-proplus.md) by using either the Office Deployment Tool or Group Policy.
   
 ## Related topics
-[Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
   
 [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
   

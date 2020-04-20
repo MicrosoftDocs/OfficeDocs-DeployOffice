@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: f7d07a88-35c3-48f5-b30e-c842f2d911a5
-description: "Describes what data Office 365 ProPlus sends to Office 365 services for licensing and activation purposes."
+description: "Describes what data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes."
 ---
 
 # Licensing and activation data sent to Office 365 by Microsoft 365 Apps
@@ -27,7 +27,7 @@ Computers that have Microsoft 365 Apps installed occasionally need to send data 
     
 This article shows the data that is sent to Office 365 for each of these tasks.
   
-## Registering the computer and activating Office 365 ProPlus
+## Registering the computer and activating Microsoft 365 Apps
 <a name="BKMK_RegisterCompAndActivate"> </a>
 
 During the installation and activation process, Microsoft 365 Apps connects to the Office Licensing Service, and sends the following data:
@@ -54,7 +54,7 @@ Microsoft 365 Apps connects to the Office Licensing Service, and sends the follo
 |:-----|:-----|:-----|
 |Machine Key  <br/> |The serial number of the Microsoft 365 Apps product key for the computer.  <br/> |Used to uniquely identify the Microsoft 365 Apps product key used by the computer.  <br/> |
    
-## Managing product keys for Office 365 ProPlus
+## Managing product keys for Microsoft 365 Apps
 <a name="BKMK_ManageProductKeys"> </a>
 
 Microsoft 365 Apps uses a standard Microsoft technology called Activation &amp; Validation Service to activate and validate keys. Since Microsoft 365 Apps product keys need to be renewed every month, communication with the Activation &amp; Validation Service is necessary on a monthly basis.

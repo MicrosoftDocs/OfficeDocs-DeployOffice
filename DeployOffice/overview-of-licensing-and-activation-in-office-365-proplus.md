@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Explains how to assign Office 365 ProPlus licenses to users, and how individual installations are activated."
+description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
 ---
 
 # Overview of licensing and activation in Microsoft 365 Apps
@@ -25,7 +25,7 @@ To deploy Microsoft 365 Apps to users in your organization, you start by assigni
 > The information in this article also applies to the subscription versions of the Project and Visio desktop apps, which are licensed separately from Microsoft 365 Apps. 
   
 <a name="BKMK_LicensingO365PP"> </a>
-## Licensing Office 365 ProPlus
+## Licensing Microsoft 365 Apps
 
 The number of available licenses available for Microsoft 365 Apps depends on your organization's Office 365 (or Microsoft 365) subscription level. To assign a license to a user, you select a check box on the licenses page for the user's account. 
   
@@ -36,7 +36,7 @@ After that's done, the user can install Office directly from the Office 365 port
 You can remove a user's license (for example, if the user leaves your organization). After you do this, any installations of Microsoft 365 Apps that the user had go into [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode). The Office Licensing Service, a part of Office 365, keeps track of which users are licensed and how many computers they've installed Office on.
   
 <a name="BKMK_ActivatingO365PP"> </a>
-## Activating Office 365 ProPlus
+## Activating Microsoft 365 Apps
 
 As part of the installation process, Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user logs on to their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Office remains fully functional. If the computer goes offline for more than 30 days, Office enters [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode) until the next time a connection can be made. To get Office fully functional again, usually a user can simply connect to the internet and let the Activation and Validation Service reactivate the installation.
   
@@ -70,5 +70,3 @@ If the user hasn't been assigned a license, and they try to use Microsoft 365 Ap
   
 [About Microsoft 365 Apps in the enterprise](about-office-365-proplus-in-the-enterprise.md)
   
-[Choose how to deploy Office 365 ProPlus](choose-how-to-deploy-office-365-proplus.md)
-

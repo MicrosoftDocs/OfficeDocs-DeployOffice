@@ -21,7 +21,7 @@ description: "Provides guidance for deploying Microsoft 365 Apps for enterprise 
 
 If you plan to deploy Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
-## Which version of Office 365 ProPlus to deploy
+## Which version of Microsoft 365 Apps for enterprise to deploy
 
 > [!IMPORTANT]
 > To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Microsoft 365 Apps for enterprise.
@@ -39,11 +39,11 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 > - For steps on how to exclude Teams from being installed with Microsoft 365 Apps for enterprise, see [How to exclude Microsoft Teams from new installations of Office 365 ProPlus](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
 >- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 
-## Which update channel of Office 365 ProPlus to use
+## Which update channel of Microsoft 365 Apps for enterprise to use
 
 For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps for enterprise. For more information about update channels, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
  
-## Where to install Office 365 ProPlus from and where to get updates
+## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
 If network connectivity and other considerations based on your organizational requirements aren't an issue, you can choose to deploy Microsoft 365 Apps for enterprise directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the internet. You can also configure Microsoft 365 Apps for enterprise to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Microsoft 365 Apps for enterprise up to date.
 
@@ -54,7 +54,7 @@ Keep in mind that installing and updating Microsoft 365 Apps for enterprise from
 If Microsoft 365 Apps for enterprise is being updated directly from the Office CDN, the amount of network traffic to each computer is significantly less, because only the changed files need to be downloaded. The size of those updates can vary from 50 mb to 300 mb. These estimates are based on historical data from the past year or so of updates.
 
 
-## What tools to use to deploy Office 365 ProPlus
+## What tools to use to deploy Microsoft 365 Apps for enterprise
 There is no special guidance about what tools you can use to deploy Microsoft 365 Apps for enterprise in GCC High or DoD environments.
 
 To deploy Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps for enterprise from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps for enterprise should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
@@ -69,7 +69,7 @@ You can also use enterprise software deployment tools, such as Microsoft Endpoin
 
 For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
-### Installing and updating Office 365 ProPlus from the Office CDN
+### Installing and updating Microsoft 365 Apps for enterprise from the Office CDN
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
 
 ```xml
@@ -84,7 +84,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 </Configuration>
 ```
 
-### Installing and updating Office 365 ProPlus from a shared folder on the local network
+### Installing and updating Microsoft 365 Apps for enterprise from a shared folder on the local network
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
 ```xml
@@ -168,7 +168,7 @@ Modern authentication needs to be enabled to be compliant. Modern authentication
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
 
-### Disable experimentation on Office 365 ProPlus
+### Disable experimentation on Microsoft 365 Apps for enterprise
 Microsoft occasionally runs experiments on Office features.
 
 To disable experimentation, edit the registry and add the DisableFeatureRollout value to the HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\TrustCenter\Experimentation key. The type for DisableFeatureRollout is REG_SZ and the value should be set to `true` (lowercase).
@@ -180,7 +180,7 @@ If experimentation was previously enabled, you also need to delete any data unde
 
 These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
 
-### Configure Outlook behavior on Office 365 ProPlus
+### Configure Outlook behavior on Microsoft 365 Apps for enterprise
 The following registry values must be set to correctly configure Outlook behavior on Microsoft 365 Apps for enterprise. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>

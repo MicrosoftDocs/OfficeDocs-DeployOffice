@@ -1,5 +1,5 @@
 ---
-title: "Windows 7 end of support and Office 365 ProPlus"
+title: "Windows 7 end of support and Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,10 +9,10 @@ ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with information about the implications of Windows 7 end of support on Office 365 ProPlus."
+description: "Provides Office admins with information about the implications of Windows 7 end of support on Microsoft 365 Apps."
 ---
 
-# Windows 7 end of support and Office 365 ProPlus
+# Windows 7 end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
 > - Support for Windows 7 ended on January 14, 2020. [Learn more](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)
@@ -23,7 +23,12 @@ Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
-## Security updates will continue for Office 365 ProPlus on Windows 7
+> [!IMPORTANT]
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
+>
+> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+
+## Security updates will continue for Microsoft 365 Apps on Windows 7
 
 Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next 3 years, until January 2023. We're doing this to give you additional time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new features updates.
 
@@ -31,7 +36,7 @@ Even though Windows 7 is no longer supported, we've decided to continue to provi
 > - Even with these security updates, Microsoft 365 Apps is no longer supported on Windows 7.
 > - This information applies even if you have purchased Extended Security Updates (ESU) for Windows 7. After January 2020, security updates for Windows 7 are only available with ESU. For more information, see [FAQ about Extended Security Updates for Windows 7](https://support.microsoft.com/help/4527878/faq-about-extended-security-updates-for-windows-7).
 
-## How to manage Office 365 ProPlus on Windows 7 after January 2020
+## How to manage Microsoft 365 Apps on Windows 7 after January 2020
 
 Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows 7. Version 2002 is available in Monthly Channel and in Semi-Annual Channel (Targeted), and is expected to be available in Semi-Annual Channel in July 2020.
 
@@ -67,7 +72,7 @@ Versions on Semi-Annual Channel are available usually for only 14 months, but we
 
 The extended availability of Version 2002 until January 2023 applies ***only*** to devices running Windows 7.
 
-## After moving Office 365 ProPlus to a supported Windows operating system
+## After moving Microsoft 365 Apps to a supported Windows operating system
 
 After you move Microsoft 365 Apps to a supported Windows operating system, you can configure Microsoft 365 Apps to begin receiving newer versions and feature updates again. Since updates for Microsoft 365 Apps are cumulative, you'll receive all the feature updates that you missed while your device was running Windows 7.
 

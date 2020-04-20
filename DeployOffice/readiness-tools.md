@@ -24,7 +24,7 @@ description: "Provides IT Pros with info about the different application compati
 Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Microsoft 365 Apps. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Microsoft 365 Apps. The answer can depend on a variety of factors, but in general our recommendation is:
 
  - Use the [Readiness Toolkit](#readiness-toolkit-for-office-add-ins-and-vba) for basic environments where simplified tool deployment and use is desired.
- - Use the [readiness features in Configuration Manager](#office-365-proplus-readiness-features-in-configuration-manager-current-branch), if you already have Microsoft Endpoint Configuration Manager (current branch) deployed in your organization.
+ - Use the [readiness features in Configuration Manager](#microsoft-365-apps-readiness-features-in-configuration-manager-current-branch), if you already have Microsoft Endpoint Configuration Manager (current branch) deployed in your organization.
  - Use [Office Telemetry Dashboard](#office-telemetry-dashboard) only if your organization needs certain usage and health information.
 
 Typically, organizations go through the following phases when planning and implementing an upgrade to Microsoft 365 Apps:
@@ -57,7 +57,7 @@ While the Readiness Toolkit is designed for on-premises use, add-in adoption inf
 
 For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
-## Office 365 ProPlus readiness features in Configuration Manager (current branch)
+## Microsoft 365 Apps readiness features in Configuration Manager (current branch)
 
 If you have at least Version 1902 of Microsoft Endpoint Configuration Manager (current branch), we recommend using Configuration Manager for assessing application compatibility and readiness for Microsoft 365 Apps in your organization.
 

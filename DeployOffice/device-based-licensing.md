@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Explains how to configure device-based licensing for Office 365 ProPlus."
+description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
@@ -24,7 +24,7 @@ Starting in Summer 2020, commercial customers can use *Microsoft 365 Apps for en
 > [!IMPORTANT]
 > Device-based licensing for Microsoft 365 Apps for enterprise is available as a license only for some commercial customers and some education customers. For commercial customers, the license is *Microsoft 365 Apps for enterprise (device)* and is available only through Enterprise Agreement/Enterprise Agreement Subscription.  For education customers, the license is *Microsoft 365 Apps for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/). For commercial availability, contact your Microsoft account representative.
 
-## Requirements for using device-based licensing for Office 365 ProPlus
+## Requirements for using device-based licensing for Microsoft 365 Apps for enterprise
 
 The following are the requirements for device-based licensing for Microsoft 365 Apps for enterprise:
 
@@ -40,7 +40,7 @@ To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet 
 
   If the Windows 10 device doesn't appear, sign in to the Windows 10 device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
 
-## Steps to configure device-based licensing for Office 365 ProPlus
+## Steps to configure device-based licensing for Microsoft 365 Apps for enterprise
 
 After you have verified that your Windows 10 devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following:
 - Add the Windows 10 devices to a group that's available in Azure AD and assign the appropriate licenses to that group.
@@ -70,7 +70,7 @@ For more information about Azure group management, see the following articles:
 
 After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](https://go.microsoft.com/fwlink/p/?LinkID=2100336). You can assign licenses to only one group, but you can nest groups within that one group.
 
-## Configure Office 365 ProPlus to use device-based licensing
+## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
 After you have assigned licenses to the group in Azure AD that contains your Windows 10 devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
  - The Office Deployment Tool and the DeviceBasedLicensing setting.
@@ -106,7 +106,7 @@ If you use Group Policy to configure Microsoft 365 Apps for enterprise settings,
 > - To use this policy setting, download the most current version of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 > - This policy setting was previously named "Use a device-based license for Office 365 ProPlus." If you configured the previously named policy setting, the setting you chose still applies.
 
-## Troubleshoot device-based licensing for Office 365 ProPlus
+## Troubleshoot device-based licensing for Microsoft 365 Apps for enterprise
 
 You can verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
