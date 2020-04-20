@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
-description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Office 365 ProPlus from Office 2007."
+description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from Office 2007."
 ---
 
 # Office 2007 end of support roadmap
@@ -52,13 +52,13 @@ A key difference between Microsoft 365 Apps and Office 2019 is that Microsoft 36
   
 This article provides guidance on upgrading to Microsoft 365 Apps.
   
-## What is Office 365? What is Office 365 ProPlus?
+## What is Office 365? What is Microsoft 365 Apps?
 
 Office 365 (and Microsoft 365) provides subscription plans that include access to Office applications and other cloud services, including Skype for Business, Exchange Online, and OneDrive for Business. Microsoft 365 Apps is the version of Office that comes with many Office 365 (and Microsoft 365) enterprise and business plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client computers. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
   
 Unlike Office 2007, Microsoft 365 Apps uses a user-based licensing model that allows people to install Office on up to 5 PCs or Macs and on their mobile devices. There are also differences in how you deploy, license, and activate Microsoft 365 Apps compared to Office 2007. For more information about Microsoft 365 Apps, see the following information:
   
-- [Office 365 ProPlus product page](https://products.office.com/business/office-365-proplus-business-software)
+- [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
     
 - [About Microsoft 365 Apps in the enterprise](about-office-365-proplus-in-the-enterprise.md)
     
@@ -70,7 +70,7 @@ To learn about some of the changes since Office 2007, review the following artic
   
 For information about the new features available in Microsoft 365 Apps, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426). For Office 2019, see [What's New in Office 2019](https://support.office.com/article/5077cbbe-0d94-44cc-b30e-654e37629b0c).
   
-## Review the system requirements for Office 365 ProPlus
+## Review the system requirements for Microsoft 365 Apps
 
 Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-resources).
   
@@ -108,7 +108,7 @@ As with any new version of Office, there are new Administrative Template files (
   
 You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Microsoft 365 Apps from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030) for free. The download includes an Excel file that lists all the Group Policy settings for Microsoft 365 Apps. 
   
-## Choose how you want to deploy Office 365 ProPlus
+## Choose how you want to deploy Microsoft 365 Apps
 
 You can deploy Microsoft 365 Apps from the cloud, from a local source on your network, or with Microsoft Endpoint Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Microsoft 365 Apps, including which applications and languages are installed on which client computers.
   

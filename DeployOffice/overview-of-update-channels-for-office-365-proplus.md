@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "Provides IT Pros with an overview of the update channels for Office 365 ProPlus, including Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted)"
+description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted)"
 ---
 
 # Overview of update channels for Microsoft 365 Apps
@@ -67,7 +67,7 @@ In the four months prior to a new Semi-Annual Channel feature release, Microsoft
 After the January and July releases of Semi-Annual Channel, additional security updates, if needed, can also be added to Semi-Annual Channel. A release of Semi-Annual Channel with these updates usually occurs on the second Tuesday of the month. If there is a critical non-security issue that needs to be fixed in Semi-Annual Channel, that non-security update will also be included in a Semi-Annual Channel release, usually on the second Tuesday of the month.
 
 <a name="BKMK_SACT"> </a>  
-## Semi-Annual Channel (Targeted) for Office 365 ProPlus
+## Semi-Annual Channel (Targeted) for Microsoft 365 Apps
 
 
 To help your organization prepare for a Semi-Annual Channel release, Microsoft provides Semi-Annual Channel (Targeted). The primary purpose of this update channel is to give pilot users and application compatibility testers in your organization a chance to work with the upcoming Semi-Annual Channel release. During this time, which is about four months, you might identify possible issues that you need to fix with your line-of-business applications, add-ins, or macros or that you want Microsoft to fix. Semi-Annual Channel (Targeted) releases provide the same features and functionality that will be in the next release of Semi-Annual Channel that includes new features.
@@ -79,7 +79,7 @@ The March and September feature releases for Semi-Annual Channel (Targeted) also
 Even though this update channel is primarily designed for your testing, it's a fully supported version of Microsoft 365 Apps. 
 
 <a name="BKMK_Visual"> </a> 
-## Visual representation of the update channels for Office 365 ProPlus
+## Visual representation of the update channels for Microsoft 365 Apps
 
 
 The following illustration shows the relationship between the update channels for Microsoft 365 Apps and the approximate release schedule. 
@@ -87,7 +87,7 @@ The following illustration shows the relationship between the update channels fo
 ![The three primary Office 365 update channels, showing the relationship between the update channels and the release cadence](images/16fae804-8d79-43db-8902-2adbbc6e0c9e.png)
  
 <a name="BKMK_Frequency"> </a> 
-## Frequency of updates for the update channels for Office 365 ProPlus
+## Frequency of updates for the update channels for Microsoft 365 Apps
 
 
 As a review, the following table provides information about how often each update channel usually includes feature updates, security updates, and non-security updates. Security and non-security updates are included only as needed.
@@ -101,7 +101,7 @@ As a review, the following table provides information about how often each updat
 Security updates, if needed, are usually released on the second Tuesday of the month. Non-security updates, if needed, for Semi-Annual Channel and Semi-Annual Channel (Targeted) also are usually released on the second Tuesday of the month. 
  
 <a name="BKMK_Support"> </a>
-## Support duration for semi-annual feature releases for Office 365 ProPlus
+## Support duration for semi-annual feature releases for Microsoft 365 Apps
 
 The semi-annual feature update releases of Microsoft 365 Apps are supported for 18 months, starting from the initial release.
   
@@ -115,7 +115,7 @@ This support duration provides more time and flexibility for IT Pros to deploy r
 > Windows 10 also plans to target the March and September time frames for providing feature updates to Windows 10. Those releases will also be referred to as Semi-Annual Channel and also will be supported for 18 months. 
 
 <a name="BKMK_Configure"> </a>
-## Configure the update channel to be used by Office 365 ProPlus
+## Configure the update channel to be used by Microsoft 365 Apps
 
 Semi-Annual Channel is the default update channel for Microsoft 365 Apps for enterprise. But you can configure a Microsoft 365 Apps for enterprise installation to use Monthly Channel or Semi-Annual Channel (Targeted). Also, not all users in your organization have to be configured the same. For example, you might do the following:
   
@@ -143,7 +143,7 @@ The name of the Group Policy setting is Update Channel. You can find this policy
   
  
 <a name="BKMK_AddInfo"> </a>
-## Additional information about the update channels for Office 365 ProPlus
+## Additional information about the update channels for Microsoft 365 Apps
 
 Here is some additional information that might be useful to know as you determine how to configure and use Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted) in your organization.
   
