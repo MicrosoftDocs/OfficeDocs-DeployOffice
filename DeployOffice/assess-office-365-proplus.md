@@ -1,5 +1,5 @@
 ---
-title: "Assess your deployment of Office 365 ProPlus"
+title: "Assess your environment and requirements for deploying Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.assetid:
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Office 365 ProPlus.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Assess your environment and requirements for deploying Office 365 ProPlus
+# Assess your environment and requirements for deploying Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -62,7 +62,7 @@ Before deploying Microsoft 365 Apps, you may want to test your business-critical
 
 To complete that assessment, do the following steps:
 
-1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). You can run the Readiness Toolkit on client devices across your entire organization. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
+1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). You can run the Readiness Toolkit on client devices across your entire organization. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md). 
  
 2. Use the reports to identify the readiness status of your add-ins and get recommendations about how to fix any VBA macro issues that were identified.
 
@@ -70,7 +70,7 @@ To complete that assessment, do the following steps:
 
 4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
 
-As part of your Office deployment, you'll deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).  
+As part of your Office deployment, you'll deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md).  
 
 ## Review exit criteria 
 

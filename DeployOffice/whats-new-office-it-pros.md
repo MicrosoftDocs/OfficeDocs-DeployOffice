@@ -31,7 +31,7 @@ We're starting to publish best practice articles from Microsoft experts in the f
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). We've published a new article that covers how to change the update channel. For more information, see [Change the Office 365 ProPlus update channel for devices in your organization](change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
 
 ## October 2019
 
@@ -142,7 +142,7 @@ Office 2019 is the latest version of Microsoft's productivity software that's av
  
 ## August 2018
 
-Version 1.2 of the Readiness Toolkit was released, with new functionality to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+Version 1.2 of the Readiness Toolkit was released, with new functionality to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
 ## July 2018
 
@@ -152,6 +152,6 @@ You can now  use the Office Deployment Tool to apply application preferences to 
 
 To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can now use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
-For best practices for planning your deployment of Microsoft 365 Apps, see [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md) and [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
+For best practices for planning your deployment of Microsoft 365 Apps, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-office-365-proplus.md) and [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md).
 
 

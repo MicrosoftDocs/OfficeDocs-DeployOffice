@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus from the cloud"
+title: "Deploy Microsoft 365 Apps from the cloud"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
 ---
 
-# Deploy Office 365 ProPlus from the cloud
+# Deploy Microsoft 365 Apps from the cloud
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

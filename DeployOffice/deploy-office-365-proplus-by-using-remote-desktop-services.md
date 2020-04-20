@@ -96,7 +96,7 @@ Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps fo
 
 1. Create the operating system image:
 
-   - Follow the instructions to [deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md). In Step 2 of the instructions, make sure that your configuration.xml file also includes the following line to enable shared computer activation:
+   - Follow the instructions to [Deploy Microsoft 365 Apps as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md). In Step 2 of the instructions, make sure that your configuration.xml file also includes the following line to enable shared computer activation:
 
    ```xml
    <Property Name="SharedComputerLicensing" Value="1" />

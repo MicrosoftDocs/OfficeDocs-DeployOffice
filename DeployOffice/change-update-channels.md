@@ -1,5 +1,5 @@
 ---
-title: "Change the Office 365 ProPlus update channel for devices in your organization"
+title: "Change the Microsoft 365 Apps update channel for devices in your organization"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for changing the update channel for Office 365 ProPlus."
 ---
 
-# Change the Office 365 ProPlus update channel for devices in your organization
+# Change the Microsoft 365 Apps update channel for devices in your organization
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

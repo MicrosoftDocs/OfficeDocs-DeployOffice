@@ -55,7 +55,7 @@ There are different ways you can deploy and run the Readiness Toolkit within you
 
 While the Readiness Toolkit is designed for on-premises use, add-in adoption information, which is optional, requires access to a publicly available web service. If you can't use this web service in your environment, you can find third party add-in adoption information on the [Ready for Modern Desktop](https://developer.microsoft.com/windows/ready-for-windows#/) website.
 
-For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
 
 ## Office 365 ProPlus readiness features in Configuration Manager (current branch)
 

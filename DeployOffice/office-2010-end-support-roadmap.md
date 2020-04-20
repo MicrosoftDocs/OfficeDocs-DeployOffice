@@ -88,7 +88,7 @@ Before deploying Microsoft 365 Apps, you may want to test your business-critical
   
 To help with assessing application compatibility with Microsoft 365 Apps, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md).
   
 ## Assess your infrastructure and environment
 
@@ -102,7 +102,7 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
     
 - Cloud infrastructure, including existing Office 365 (or Microsoft 365) capabilities, user licensing, and identity.
     
-Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md).
+Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-office-365-proplus.md).
   
 ## Review new Group Policy settings
 
@@ -114,7 +114,7 @@ You can download the Administrative Template files (ADMX/ADML) for Group Policy 
 
 You can deploy Microsoft 365 Apps from the cloud, from a local source on your network, or with Microsoft Endpoint Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Microsoft 365 Apps, including which applications and languages are installed on which client computers.
   
-For more information, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md). 
+For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md). 
   
 ## Choose how often to update Office
 

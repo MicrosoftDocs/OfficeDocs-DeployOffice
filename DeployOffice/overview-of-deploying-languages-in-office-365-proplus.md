@@ -57,7 +57,7 @@ To deploy Microsoft 365 Apps in multiple languages, you just need to include the
 
 If you deploy Office from a local source on your network, you must download your languages to that source, in the same way that you download the Office package. For more details, see [Download the installation files for Office 365 ProPlus](overview-of-the-office-2016-deployment-tool.md#download-the-installation-files-for-office-365-proplus). When deploying from a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). 
 
-For more details on standard deployments, see [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
+For more details on standard deployments, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md).
 
 The primary language selected in the Office Customization Tool determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you must uninstall Office and reinstall it. 
 
@@ -283,4 +283,4 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 - [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-- [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
+- [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md)

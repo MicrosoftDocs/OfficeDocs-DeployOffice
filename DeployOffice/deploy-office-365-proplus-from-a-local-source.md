@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus from a local source"
+title: "Deploy Microsoft 365 Apps from a local source"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Office 365 ProPlus to client devices from a shared folder on your network."
 ---
 
-# Deploy Office 365 ProPlus from a local source
+# Deploy Microsoft 365 Apps from a local source
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

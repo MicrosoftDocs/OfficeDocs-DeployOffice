@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus as part of an operating system image"
+title: "Deploy Microsoft 365 Apps as part of an operating system image"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "You can include Office 365 ProPlus as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Office 365 ProPlus when you create the image. That's because you need your users to activate their Office 365 ProPlus installations by signing in with their accounts."
 ---
 
-# Deploy Office 365 ProPlus as part of an operating system image
+# Deploy Microsoft 365 Apps as part of an operating system image
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

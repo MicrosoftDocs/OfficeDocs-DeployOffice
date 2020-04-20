@@ -1,5 +1,5 @@
 ---
-title: "Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus"
+title: "Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ description: "Provides IT Pros with info on how the Readiness Toolkit for Office
 ---
 
 
-# Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus
+# Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

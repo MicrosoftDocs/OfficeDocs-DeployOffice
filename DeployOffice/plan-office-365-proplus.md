@@ -1,5 +1,5 @@
 ---
-title: "Plan your enterprise deployment of Office 365 ProPlus"
+title: "Plan your enterprise deployment of Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
-# Plan your enterprise deployment of Office 365 ProPlus
+# Plan your enterprise deployment of Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -190,8 +190,8 @@ Before beginning your deployment, make sure you've completed the planning exit c
 
 Depending on your deployment  plan, go to one of the following articles:
 
-- [Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
-- [Deploy Office 365 ProPlus from the cloud](deploy-office-365-proplus-from-the-cloud.md)
-- [Deploy Office 365 ProPlus from a local source](deploy-office-365-proplus-from-a-local-source.md)
+- [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
+- [Deploy Microsoft 365 Apps from the cloud](deploy-office-365-proplus-from-the-cloud.md)
+- [Deploy Microsoft 365 Apps from a local source](deploy-office-365-proplus-from-a-local-source.md)
 - [Self-install Office from the cloud](https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)
 

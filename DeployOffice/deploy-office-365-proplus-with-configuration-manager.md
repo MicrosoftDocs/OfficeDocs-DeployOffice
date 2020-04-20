@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager"
+title: "Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -11,10 +11,10 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)."
+description: "This article gives step-by-step instructions for how to Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)."
 ---
 
-# Deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)
+# Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
