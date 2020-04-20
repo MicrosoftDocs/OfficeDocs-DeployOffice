@@ -36,7 +36,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 > [!IMPORTANT]
 > For Teams, currently you need to exclude Teams from being installed when you install Microsoft 365 Apps for enterprise. Instead, you need to install Teams by using the separate MSI-based installer. In the future, you'll be able to install Teams along with Microsoft 365 Apps for enterprise without needing to use the separate MSI-based installer.
-> - For steps on how to exclude Teams from being installed with Microsoft 365 Apps for enterprise, see [How to exclude Microsoft Teams from new installations of Office 365 ProPlus](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
+> - For steps on how to exclude Teams from being installed with Microsoft 365 Apps for enterprise, see [How to exclude Microsoft Teams from new installations of Microsoft 365 Apps](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
 >- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use

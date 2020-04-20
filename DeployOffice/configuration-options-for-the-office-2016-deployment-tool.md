@@ -360,7 +360,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Microsoft 365 Apps products should not be installed. Note that OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Office 365 ProPlus or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-office-365-proplus-or-other-applications).
+Defines which Microsoft 365 Apps products should not be installed. Note that OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
 
 ### Example
 
@@ -708,7 +708,7 @@ Optional.
 
 Defines application preferences for Microsoft 365 Apps, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application preferences, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application preferences.
 
-For more details on application preferences, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-office-365-proplus) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-office-365-proplus).
+For more details on application preferences, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-microsoft-365-apps).
 
 ### Example
 

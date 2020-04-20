@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "You can include Office 365 ProPlus as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Office 365 ProPlus when you create the image. That's because you need your users to activate their Office 365 ProPlus installations by signing in with their accounts."
+description: "You can include Microsoft 365 Apps as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Microsoft 365 Apps when you create the image. That's because you need your users to activate their Microsoft 365 Apps installations by signing in with their accounts."
 ---
 
 # Deploy Microsoft 365 Apps as part of an operating system image
@@ -31,7 +31,7 @@ Here are the basic steps of how to include Microsoft 365 Apps when you create an
 
 To start, install and configure the operating system on a test computer. There are several free tools from Microsoft to help you do this, such as [Windows Assessment and Deployment Kit (Windows ADK)](https://go.microsoft.com/fwlink/p/?LinkID=312996) and [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkID=268150). 
   
-### Step 2: Install Office 365 ProPlus for the image by using the Office Deployment Tool
+### Step 2: Install Microsoft 365 Apps for the image by using the Office Deployment Tool
 <a name="Step2"> </a>
 
 To install Microsoft 365 Apps on the test computer, first download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
@@ -60,7 +60,7 @@ Next, install other programs that you want to include as part of the operating s
   
 Remember not to open any Office programs. After you have created the image, you can test on another computer that Office and the add-ins work correctly.
   
-### Step 4: Check that an Office 365 ProPlus product key is not installed in the image
+### Step 4: Check that an Microsoft 365 Apps product key is not installed in the image
 <a name="Step4"> </a>
 
 Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use the ospp.vbs script. This script is installed on the computer when Microsoft 365 Apps is installed.

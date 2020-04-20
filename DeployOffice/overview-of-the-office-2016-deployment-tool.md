@@ -11,7 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Office 365 ProPlus to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
+description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
 ---
 
 # Overview of the Office Deployment Tool
@@ -53,7 +53,7 @@ When running the ODT, you provide the location of the configuration file and def
 
 You can also use **help** mode to read command-line help for the tool.
 
-## Download the installation files for Office 365 ProPlus
+## Download the installation files for Microsoft 365 Apps
 <a name="BKMK_downloadinstallationfiles"> </a>
 
 Follow these steps to download installation files for Microsoft 365 Apps from the Office Content Delivery Network (CDN). 
@@ -108,7 +108,7 @@ To download from a local source, follow the steps for downloading Office with th
 
 When using DownloadPath, you must specify a **Version**.
 
-## Install Office 365 ProPlus
+## Install Microsoft 365 Apps
 <a name="BKMK_installoffice"> </a>
 
 After you download Microsoft 365 Apps installation files, follow these steps to install Office on a client computer. As part of that installation, you can choose which products to install.
@@ -147,7 +147,7 @@ You must have local administrator permissions on the client computer. You can ru
 
 After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\temp directories.
 
-## Update Office 365 ProPlus
+## Update Microsoft 365 Apps
 <a name="BKMK_updateoffice"> </a>
 
 You can use the Office Deployment Tool to make updates to your client computers after installing Microsoft 365 Apps. There are two ways to make the updates:
@@ -164,7 +164,7 @@ This article does not cover all the issues related to managing updates for Offic
 
 <a name="BKMK_excludeorremove"> </a>
 
-## Exclude or remove Office 365 ProPlus applications from client computers
+## Exclude or remove Microsoft 365 Apps applications from client computers
 
 When installing Microsoft 365 Apps, you can exclude specific applications. To do so, follow the steps for installing Office with the ODT, but include the ExcludeApp element in your configuration file. For example, this configuration file installs all the Microsoft 365 Apps for enterprise applications except Publisher:
 
@@ -193,7 +193,7 @@ You can also remove an entire language version of Microsoft 365 Apps. To do so, 
 
 For more information about the options for excluding or removing apps, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
-## Exclude OneDrive when installing Office 365 ProPlus or other applications
+## Exclude OneDrive when installing Microsoft 365 Apps or other applications
 
 OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it, as shown in the example.  
 
@@ -210,15 +210,15 @@ OneDrive is automatically installed when you install Microsoft 365 Apps or insta
 
 For details on deploying languages, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
 
-## Apply application preferences to Office 365 ProPlus
+## Apply application preferences to Microsoft 365 Apps
 
-As part of your deployment, you can define application preferences for Microsoft 365 Apps, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Office 365 ProPlus](#install-office-365-proplus), but you include application preferences as part of your configuration file. 
+As part of your deployment, you can define application preferences for Microsoft 365 Apps, including VBA Macro notifications,  default file locations, and default file formats. To do so, you deploy Office using the standard steps in [Install Microsoft 365 Apps](#install-microsoft-365-apps), but you include application preferences as part of your configuration file. 
 
 To create the configuration file, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface.
 
 1. In your web browser, open the [Office Customization Tool for Click-to-Run](https://config.office.com/) and follow the steps to create a configuration file, including defining application preferences alongside the standard deployment settings. 
 2. Export the file.
-3. Follow the steps in [Install Office 365 ProPlus](#install-office-365-proplus) to deploy Office with the newly created configuration file.
+3. Follow the steps in [Install Microsoft 365 Apps](#install-microsoft-365-apps) to deploy Office with the newly created configuration file.
 
 In this example, the configuration file installs the 32-bit version of Microsoft 365 Apps for enterprise in English and displays the Trust Bar for all VBA macros in Excel.
 
@@ -244,7 +244,7 @@ This file was created with the Office Customization Tool for Click-to-Run. For m
 
 Note: When Office is installed, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future.
 
-## Apply application preferences to an existing installation of Office 365 ProPlus
+## Apply application preferences to an existing installation of Microsoft 365 Apps
 
 You can apply new application preferences to client computers that already have Microsoft 365 Apps installed without changing any other deployment setting. To do so, create a configuration file that contains application preferences and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application preferences. 
 
@@ -255,7 +255,7 @@ You can apply new application preferences to client computers that already have 
   
 You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted. 
 
-## Create an App-V package for Office 365 ProPlus
+## Create an App-V package for Microsoft 365 Apps
 <a name="BKMK_createanappvpackage"> </a>
 
 In addition to downloading and deploying Microsoft 365 Apps, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer that has a clean install of the operating system.
