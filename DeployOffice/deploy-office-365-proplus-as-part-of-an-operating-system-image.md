@@ -60,7 +60,7 @@ Next, install other programs that you want to include as part of the operating s
   
 Remember not to open any Office programs. After you have created the image, you can test on another computer that Office and the add-ins work correctly.
   
-### Step 4: Check that an Microsoft 365 Apps product key is not installed in the image
+### Step 4: Check that a Microsoft 365 Apps product key is not installed in the image
 <a name="Step4"> </a>
 
 Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use the ospp.vbs script. This script is installed on the computer when Microsoft 365 Apps is installed.
