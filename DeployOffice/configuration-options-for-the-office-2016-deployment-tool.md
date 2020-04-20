@@ -138,7 +138,7 @@ This value determines the channel to be installed, regardless of an optionally s
 
 If the subscription versions of the Project and Visio desktop apps are installed along with Microsoft 365 Apps for enterprise, the default setting is **Broad**. If the subscription versions of the Project and Visio desktop apps are deployed without Microsoft 365 Apps, the default setting is **Monthly**. 
 
-For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).  
 
 Allowed values: 
 
@@ -403,7 +403,7 @@ Allowed values:
 
 For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
 
-For more information about Microsoft Teams, see [Deploy Microsoft Teams with Office 365 ProPlus](teams-install.md).
+For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ## Logging element
 
@@ -512,7 +512,7 @@ Optional. Default value is **0** if not specified.
 
 Set **SharedComputerLicensing** to 1 if you deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services. 
 
-For more information, see  [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+For more information, see  [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Allowed values:
 
@@ -523,7 +523,7 @@ Allowed values:
 
 Optional. Default value is **0** if not specified.
 
-Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory. This is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory. This is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Allowed values:
 
@@ -536,7 +536,7 @@ Optional.
 
 Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride. This is only needed if you choose to move the licensing token from its default location.
 
-For more information, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).
+For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md).
 
 Example values:
 
@@ -547,7 +547,7 @@ Example values:
 
 Optional. Default value is **0** if not specified.
 
-Defines the Office licensing mode for device-based activation. For more information, see [Device-based licensing for Office 365 ProPlus](device-based-licensing.md).
+Defines the Office licensing mode for device-based activation. For more information, see [Device-based licensing for Microsoft 365 Apps for enterprise](device-based-licensing.md).
 
 Allowed values:
 
@@ -669,7 +669,7 @@ Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **M
 
 Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office.
 
-For more information about update channels, see  [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md). 
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 

@@ -50,7 +50,7 @@ Review your network capability, including bandwidth and distribution of client d
 - Installation files for Microsoft 365 Apps are at least 1.6 GB for the core files, plus at least 250 MB for each language deployed. 
 - Client devices require internet access to activate their Microsoft 365 Apps subscription, and then must connect at least once every 30 days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
-- Microsoft 365 Apps updates vary in size, but you can review recent download sizes [here](https://docs.microsoft.com/officeupdates/download-sizes-office365-proplus-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).  
+- Microsoft 365 Apps updates vary in size, but you can review recent download sizes [here](https://docs.microsoft.com/officeupdates/download-sizes-office365-proplus-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
  
 ## Step 4 - Assess application compatibility

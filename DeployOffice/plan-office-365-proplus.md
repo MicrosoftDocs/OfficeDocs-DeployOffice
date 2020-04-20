@@ -127,7 +127,7 @@ After you've deployed Office with the required languages, you can install additi
 - Have your users download and install the language accessory packs that they need from the Office 365 portal (requires local administrator permissions).
 - Use Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
 
-For more details, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
 
 For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
@@ -170,7 +170,7 @@ To help you remove prior versions of Office that use Windows Installer (MSI) as 
 
 If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Microsoft 365 Apps. 
 
-With shared computer activation enabled, any user that has been assigned a Microsoft 365 Apps license can log on to the computer and use the Office apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md).   
+With shared computer activation enabled, any user that has been assigned a Microsoft 365 Apps license can log on to the computer and use the Office apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md).   
 
 ## Review exit criteria
 

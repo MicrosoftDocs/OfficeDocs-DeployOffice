@@ -1,5 +1,5 @@
 ---
-title: "Deploy Microsoft Teams with Office 365 ProPlus"
+title: "Deploy Microsoft Teams with Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Office 365 ProPlus."
 ---
 
-# Deploy Microsoft Teams with Office 365 ProPlus
+# Deploy Microsoft Teams with Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

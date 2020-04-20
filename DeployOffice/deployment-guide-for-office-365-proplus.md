@@ -55,7 +55,7 @@ Learn about your deployment options, how to deploy from a local source, and how 
 Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates. 
 
 
-- [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
+- [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
 
 - [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
 
@@ -72,10 +72,10 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
-- [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md)
+- [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md)
 
-- [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+- [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
 
 - [Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
 
-- [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
+- [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md)

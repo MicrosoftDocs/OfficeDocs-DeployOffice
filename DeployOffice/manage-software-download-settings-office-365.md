@@ -29,7 +29,7 @@ For Microsoft 365 Apps, you must choose how often you want users to get feature 
   
 If you want some users to get feature updates every month, but have other users get feature updates only every six months, you can manually download and install the Office apps for your users by using the Office Deployment Tool. This gives you the control to select different feature update settings for different groups of users.
   
-For more information, [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+For more information, [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
   
 ## Manually download and install the Office apps by using the Office Deployment Tool
 If you don't want your users to install software themselves from Office 365, you can download the software to your local network. Then, you can deploy the software to your users by using your existing software deployment tools and processes.

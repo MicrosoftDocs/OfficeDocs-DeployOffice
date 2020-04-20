@@ -54,7 +54,7 @@ To download the latest build with the Office Deployment Tool, you need to config
 ## Related topics
 [Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
   
-[Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
+[Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
   
 [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
   

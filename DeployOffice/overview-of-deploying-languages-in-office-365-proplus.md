@@ -1,5 +1,5 @@
 ---
-title: "Overview of deploying languages in Office 365 ProPlus"
+title: "Overview of deploying languages for Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 ---
 
-# Overview of deploying languages in Office 365 ProPlus
+# Overview of deploying languages for Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

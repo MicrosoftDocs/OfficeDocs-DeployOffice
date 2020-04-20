@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot issues with shared computer activation for Office 365 ProPlus"
+title: "Troubleshoot issues with shared computer activation for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ search.appverid:
 description: "Explains how to troubleshoot issues with deployments of Office 365 ProPlus that are configured to use shared computer activation."
 ---
 
-# Troubleshoot issues with shared computer activation for Office 365 ProPlus
+# Troubleshoot issues with shared computer activation for Microsoft 365 Apps
 
 If you're having problems getting shared computer activation to work when you deploy Microsoft 365 Apps to shared computers in your organization, try the following to fix the problem.
 
@@ -116,7 +116,7 @@ Microsoft places a limit on the number of shared computers that a user can activ
 ![Too many computer activated](images/1166f881-87da-4667-a4bd-e92c23859de2.png)
   
 ## Related topics
-[Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
+[Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md)
   
-[Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+[Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
 

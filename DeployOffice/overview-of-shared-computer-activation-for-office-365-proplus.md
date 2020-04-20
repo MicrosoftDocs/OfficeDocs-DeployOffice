@@ -1,5 +1,5 @@
 ---
-title: "Overview of shared computer activation for Office 365 ProPlus"
+title: "Overview of shared computer activation for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Office 365 ProPlus with Remote Desktop Services (RDS) "
 ---
 
-# Overview of shared computer activation for Office 365 ProPlus
+# Overview of shared computer activation for Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -140,9 +140,9 @@ To configure licensing token roaming, you can use either the Office Deployment T
 
    
 ## Related topics
-[Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+[Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
 
-[Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
+[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 
 [Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
   

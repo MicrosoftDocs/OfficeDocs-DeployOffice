@@ -1,5 +1,5 @@
 ---
-title: "Device-based licensing for Office 365 ProPlus"
+title: "Device-based licensing for Microsoft 365 Apps for enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Explains how to configure device-based licensing for Office 365 ProPlus."
 ---
 
-# Device-based licensing for Office 365 ProPlus
+# Device-based licensing for Microsoft 365 Apps for enterprise
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

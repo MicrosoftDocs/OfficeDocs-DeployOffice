@@ -1,5 +1,5 @@
 ---
-title: "Guidance for deploying Office 365 ProPlus in a GCC High or DoD environment"
+title: "Guidance for deploying Microsoft 365 Apps in a GCC High or DoD environment"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,10 +9,10 @@ ms.service: o365-proplus-itpro
 localization_priority: None
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides guidance for deploying Office 365 ProPlus in a GCC High or DoD environment"
+description: "Provides guidance for deploying Microsoft 365 Apps in a GCC High or DoD environment"
 ---
 
-# Guidance for deploying Office 365 ProPlus in a GCC High or DoD environment
+# Guidance for deploying Microsoft 365 Apps in a GCC High or DoD environment
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -41,7 +41,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 ## Which update channel of Office 365 ProPlus to use
 
-For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps. For more information about update channels, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps. For more information about update channels, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
  
 ## Where to install Office 365 ProPlus from and where to get updates
 
@@ -237,7 +237,7 @@ For more information about the GCC High and DoD environments provided by Microso
 For general deployment guidance about Microsoft 365 Apps, see the following articles:
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
-- [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
+- [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 - [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)

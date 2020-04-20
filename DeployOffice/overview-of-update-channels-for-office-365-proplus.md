@@ -1,5 +1,5 @@
 ---
-title: "Overview of update channels for Office 365 ProPlus"
+title: "Overview of update channels for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides IT Pros with an overview of the update channels for Office 365 ProPlus, including Monthly Channel, Semi-Annual Channel, and Semi-Annual Channel (Targeted)"
 ---
 
-# Overview of update channels for Office 365 ProPlus
+# Overview of update channels for Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

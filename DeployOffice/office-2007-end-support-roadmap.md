@@ -116,7 +116,7 @@ For more information, see [Plan your enterprise deployment of Microsoft 365 Apps
   
 ## Choose how often to update Office
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
   
 ## Plan for additional languages
 
@@ -126,7 +126,7 @@ You can install language accessory packs after you've deployed Microsoft 365 App
     
 - Use the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
     
-For more information, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+For more information, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
   
 ## Special considerations
 

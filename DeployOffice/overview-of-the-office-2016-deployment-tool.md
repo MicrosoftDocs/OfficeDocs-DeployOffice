@@ -208,7 +208,7 @@ OneDrive is automatically installed when you install Microsoft 365 Apps or insta
 
 ## Deploy multiple or matching languages
 
-For details on deploying languages, see [Overview of deploying languages in Office 365 ProPlus](overview-of-deploying-languages-in-office-365-proplus.md).
+For details on deploying languages, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
 
 ## Apply application preferences to Office 365 ProPlus
 

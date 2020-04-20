@@ -1,5 +1,5 @@
 ---
-title: "Deploy Office 365 ProPlus by using Remote Desktop Services"
+title: "Deploy Microsoft 365 Apps by using Remote Desktop Services"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ ms.custom: Ent_Office_ProPlus
 description: "If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Office 365 ProPlus on those computers. But, you have to use the Office Deployment Tool and enable shared computer activation to do the installation."
 ---
 
-# Deploy Office 365 ProPlus by using Remote Desktop Services
+# Deploy Microsoft 365 Apps by using Remote Desktop Services
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -115,8 +115,8 @@ After you've completed all the RDS configuration steps, users can connect to any
 ## Related topics
 <a name="VM"> </a>
 
-[Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
+[Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md)
 
-[Troubleshoot issues with shared computer activation for Office 365 ProPlus](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
+[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 
 [Remote Desktop Services](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/welcome-to-rds)

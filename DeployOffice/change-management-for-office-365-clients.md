@@ -388,7 +388,7 @@ Use the following methods to configure which channels are used by which client c
 <a name="Related"> </a>
 ## Related topics
 
-[Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
+[Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
 
 [Overview of Windows as a service](https://go.microsoft.com/fwlink/p/?LinkId=847278)
 
