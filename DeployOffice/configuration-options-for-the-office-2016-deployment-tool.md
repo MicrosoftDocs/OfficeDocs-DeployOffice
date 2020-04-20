@@ -205,7 +205,7 @@ Optional. Defaults to False if not specified.
 
 If set to TRUE, then your existing installation of Microsoft 365 Apps will be changed to the architecture (sometimes referred to as the bitness) that is specified in the [OfficeClientEdition attribute](#officeclientedition-attribute-part-of-add-element). For example, you can use this to change a 32-bit installation of Microsoft 365 Apps to a 64-bit installation.
 
-For more information about using MigrateArch, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
+For more information about using MigrateArch, see [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](change-bitness.md).
 
 ### OfficeMgmtCOM attribute (part of Add element)
 
@@ -308,7 +308,7 @@ Defines the ID of the language to download or install.
 
 For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
 
-For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
 ### Fallback attribute (part of Language element)
 
@@ -689,7 +689,7 @@ Optional.
 
 Specifies whether any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer prior to the installation of the specified product, such as Microsoft 365 Apps.
 
-For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
 ### IgnoreProduct attribute (part of RemoveMSI element)
 
@@ -725,5 +725,5 @@ For more details on application preferences, see [Apply application preferences]
 ## Related topics
 
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
-- [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
+- [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
 - [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages)

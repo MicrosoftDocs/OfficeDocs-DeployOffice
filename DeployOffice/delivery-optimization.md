@@ -1,5 +1,5 @@
 ---
-title: "Delivery Optimization and Office 365 ProPlus"
+title: "Delivery Optimization and Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with information about using Delivery Optimization to reduce network bandwidth when installing or updating Office 365 ProPlus."
 ---
 
-# Delivery Optimization and Office 365 ProPlus
+# Delivery Optimization and Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -99,7 +99,7 @@ If your organization uses [Update Compliance](https://docs.microsoft.com/windows
 Keep in mind that this information represents overall results for Delivery Optimization, not just from using Delivery Optimization for Microsoft 365 Apps. For example, it might include information related to Windows 10 updates, depending how your environment is configured.  Also, you won't be able to get 100% of the content from peer devices.
 
 
-## Additional information about Delivery Optimization and Office 365 ProPlus
+## Additional information about Delivery Optimization and Microsoft 365 Apps
 
 - You can also take advantage of Delivery Optimization if you're using the [AllowCdnFallback](configuration-options-for-the-office-2016-deployment-tool.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
 - If you're already using Configuration Manager (current branch) and [peer cache](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.

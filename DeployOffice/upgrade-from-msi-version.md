@@ -1,5 +1,5 @@
 ---
-title: "Remove existing MSI versions of Office when upgrading to Office 365 ProPlus"
+title: "Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Office 365 ProPlus from an MSI version of Office"
 ---
 
-# Remove existing MSI versions of Office when upgrading to Office 365 ProPlus
+# Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

@@ -64,7 +64,7 @@ Unlike Office 2010, Microsoft 365 Apps uses a user-based licensing model that al
     
 - [About Office 365 ProPlus in the enterprise](about-office-365-proplus-in-the-enterprise.md)
     
-- [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
+- [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
     
 ## Review what's changed since Office 2010
 
@@ -138,7 +138,7 @@ For more information, see [Overview of deploying languages in Office 365 ProPlus
   
 ## Related topics
 
-- For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md).
+- For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md).
     
 - To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2010-servers-and-products).
     

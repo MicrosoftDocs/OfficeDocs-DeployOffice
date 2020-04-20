@@ -1,5 +1,5 @@
 ---
-title: "Delay receiving feature updates from Semi-Annual Channel for Office 365 ProPlus"
+title: "Delay receiving feature updates from Semi-Annual Channel for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides IT Pros with the steps to delay receiving feature updates from Semi-Annual Channel, but still receive the most current security updates for a supported version"
 ---
 
-# Delay receiving feature updates from Semi-Annual Channel for Office 365 ProPlus
+# Delay receiving feature updates from Semi-Annual Channel for Microsoft 365 Apps
 
 Semi-Annual Channel provides Microsoft 365 Apps with new features for the Office apps, such as Word and Excel, twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
   

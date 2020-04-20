@@ -86,7 +86,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 ## Related topics
 
-- [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
+- [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
 - [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
 - [Purchase Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkID=329114)
 

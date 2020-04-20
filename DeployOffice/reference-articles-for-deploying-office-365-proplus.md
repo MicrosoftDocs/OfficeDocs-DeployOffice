@@ -1,5 +1,5 @@
 ---
-title: "Reference articles for deploying Office 365 ProPlus"
+title: "Reference articles for deploying Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -11,10 +11,10 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 6df5de04-6b8e-48af-aede-dceaefacc278
-description: "This article lists all the reference articles about deploying Office 365 ProPlus in an enterprise environment. To see all the articles about Office 365 ProPlus deployment, see Deployment guide for Office 365 ProPlus."
+description: "This article lists all the reference articles about deploying Office 365 ProPlus in an enterprise environment. To see all the articles about Office 365 ProPlus deployment, see Deployment guide for Microsoft 365 Apps."
 ---
 
-# Reference articles for deploying Office 365 ProPlus
+# Reference articles for deploying Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

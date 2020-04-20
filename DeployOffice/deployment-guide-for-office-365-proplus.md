@@ -1,5 +1,5 @@
 ---
-title: "Deployment guide for Office 365 ProPlus"
+title: "Deployment guide for Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPlus in their enterprise environments."
 ---
 
-# Deployment guide for Office 365 ProPlus
+# Deployment guide for Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
@@ -33,7 +33,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Office 365 ProPl
  
 - [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md)
 
-- [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md)
+- [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md)
   
 - [Use the Readiness Toolkit to assess application compatibility for Office 365 ProPlus](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
   

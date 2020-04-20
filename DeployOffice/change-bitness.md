@@ -1,5 +1,5 @@
 ---
-title: "Change an Office 365 ProPlus installation from 32-bit to 64-bit"
+title: "Change a Microsoft 365 Apps installation from 32-bit to 64-bit"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -12,7 +12,7 @@ ms.custom: Ent_Office_ProPlus
 description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an existing installation of Office 365 ProPlus, such as from 32-bit to 64-bit."
 ---
 
-# Change an Office 365 ProPlus installation from 32-bit to 64-bit
+# Change a Microsoft 365 Apps installation from 32-bit to 64-bit
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

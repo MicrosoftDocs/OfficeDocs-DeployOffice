@@ -1,5 +1,5 @@
 ---
-title: "Overview of application compatibility and readiness assessment tools for Office 365 ProPlus"
+title: "Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -14,7 +14,7 @@ ms.custom:
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Office 365 ProPlus"
 ---
 
-# Overview of application compatibility and readiness assessment tools for Office 365 ProPlus
+# Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps
 
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 

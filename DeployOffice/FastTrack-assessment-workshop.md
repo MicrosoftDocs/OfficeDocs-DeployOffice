@@ -37,5 +37,3 @@ To deliver the workshop, FastTrack uses the PowerPoint deck below, which we enco
 
 [![Thumb image for FastTrack assessment workshop PowerPoint deck](images/thumbnail-O365-ProPlus-Assessment-Workshop.png)](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/raw/live/DeployOffice/images/O365-ProPlus-Assessment-Workshop.pdf)  <br/>[PDF](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/raw/live/DeployOffice/images/O365-ProPlus-Assessment-Workshop.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/raw/live/DeployOffice/images/O365-ProPlus-Assessment-Workshop.pptx)
 
-> [!NOTE]
-> The PDF and PowerPoint still refer to Office 365 ProPlus. We'll provide updated versions with the new name when they're available.

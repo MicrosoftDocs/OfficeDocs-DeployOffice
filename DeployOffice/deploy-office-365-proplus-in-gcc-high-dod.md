@@ -236,7 +236,7 @@ For more information about the GCC High and DoD environments provided by Microso
 
 For general deployment guidance about Microsoft 365 Apps, see the following articles:
 
-- [Deployment guide for Office 365 ProPlus](deployment-guide-for-office-365-proplus.md)
+- [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
 - [Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
 - [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)

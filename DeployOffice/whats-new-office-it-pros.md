@@ -44,7 +44,7 @@ Starting with Version 2.30 of the Office apps for iOS, there are new preference 
 ### General availability of Security Policy Advisor
 Security Policy Advisor is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
 
-For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Office 365 ProPlus](overview-of-security-policy-advisor.md).
+For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Microsoft 365 Apps](overview-of-security-policy-advisor.md).
 
 ### Windows 7 end of support and Microsoft 365 Apps
 ***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
@@ -54,7 +54,7 @@ Even though Windows 7 is longer supported, we've decided to continue to provide 
 ### Delivery Optimization and Microsoft 365 Apps
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft. 
 
-Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Office 365 ProPlus](delivery-optimization.md).
+Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Microsoft 365 Apps](delivery-optimization.md).
 
 ### Security baseline for Microsoft 365 Apps
 Microsoft has announced the final release of the recommended security configuration baseline settings for Microsoft 365 Apps, version 1908. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1908-Sept-2019-FINAL/ba-p/873084).
@@ -81,19 +81,19 @@ Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline
 ## June 2019
 
 ### Comparison of application compatibility and readiness assessments tools
-Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Office 365 ProPlus](readiness-tools.md)
+Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](readiness-tools.md)
 
 ## April 2019
 
 ### Use the MigrateArch attribute to change Microsoft 365 Apps from 32-bit to 64-bit
 It's now easier to change an existing installation of Microsoft 365 Apps from 32-bit to 64-bit. You can use the MigrateArch attribute in a configuration.xml file along with the Office Deployment Tool. The migration process will preserve existing products, languages, and other deployment settings.
 
-For more information, see [Change an Office 365 ProPlus installation from 32-bit to 64-bit](change-bitness.md).
+For more information, see [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](change-bitness.md).
 
 ### General availability of Office cloud policy service
 The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
-For more information, see [Overview of the Office cloud policy service for Office 365 ProPlus](overview-office-cloud-policy-service.md).
+For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps](overview-office-cloud-policy-service.md).
 
 ### Preview of Security Policy Advisor
 Security Policy Advisor is now available for public preview. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
@@ -150,7 +150,7 @@ You can now  use the Office Deployment Tool to apply application preferences to 
 
 ## June 2018
 
-To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can now use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](upgrade-from-msi-version.md).
+To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can now use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
 For best practices for planning your deployment of Microsoft 365 Apps, see [Assess your environment and requirements for deploying Office 365 ProPlus](assess-office-365-proplus.md) and [Plan your enterprise deployment of Office 365 ProPlus](plan-office-365-proplus.md).
 
