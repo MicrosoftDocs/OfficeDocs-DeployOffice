@@ -128,7 +128,7 @@ The following are some additional details about using the RemoveMSI element in y
 - You can also use these settings if you’re installing any of the following:
    - Project Online Desktop Client
    - Visio Online Plan 2, which is the subscription version of Visio.
-   - Office 365 Business, which is the version of Office that comes with some Office 365 plans, such as Business Premium.
+   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
 - Installations of the following products will also be removed unless you use IgnoreProduct:
    - SharePoint Designer. The product ID is SharePointDesigner.

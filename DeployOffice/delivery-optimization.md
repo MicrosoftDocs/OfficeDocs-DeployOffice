@@ -63,7 +63,8 @@ To take advantage of Delivery Optimization when installing or when doing user-in
 
 > [!NOTE]
 > - Version 1912 is available in Monthly Channel as of January 8, 2020.
-> - Version 2002 is scheduled to be available in Semi-Annual Channel (Targeted) in March 2020 and in Semi-Annual Channel in July 2020. Version 2002 or later won't require the registry key.
+> - Version 2002 is available in Semi-Annual Channel (Targeted) as of March 10, 2020. Version 2002 or later won't require the registry key.
+> - Version 2002 is scheduled to be available in Semi-Annual Channel in July 2020.
 
 If you're using Configuration Manager or local network shares to manage installing and updating Microsoft 365 Apps on devices, Delivery Optimization won't be used. Delivery Optimization is used only if you're installing or updating Microsoft 365 Apps directly from the Office Content Delivery Network (CDN) on the internet. If you want some of these devices, such as those on Monthly Channel, to take advantage of Delivery Optimization, you need to reconfigure them to use the Office CDN. You can do that by using the Office Deployment Tool or Group Policy settings, depending how your environment is configured. You have to remove any configuration of the update path as well as the use of the [OfficeMgmtCOM](configuration-options-for-the-office-2016-deployment-tool.md#officemgmtcom-attribute-part-of-add-element) attribute, which enables Configuration Manager to manage updates.
 
@@ -103,6 +104,6 @@ Keep in mind that this information represents overall results for Delivery Optim
 - You can also take advantage of Delivery Optimization if you're using the [AllowCdnFallback](configuration-options-for-the-office-2016-deployment-tool.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
 - If you're already using Configuration Manager (current branch) and [peer cache](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
 - You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
-- Delivery Optimization can also be used with Office 365 Business and with subscription versions of Project and Visio. The same requirements listed above for Microsoft 365 Apps apply.
+- Delivery Optimization can also be used with the subscription versions of the Project and Visio desktop apps. The same requirements listed above for Microsoft 365 Apps apply.
 - Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installing or for foreground updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
 - If you're already using a 3rd party peer-to-peer solution along with Configuration Manager, Delivery Optimization isn't expected to cause any problems with that solution.

@@ -22,11 +22,12 @@ ms.custom: Ent_Office_ProPlus
 
 This article covers the options for deploying languages for Microsoft 365 Apps, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
 
-The guidance in this article applies to Microsoft 365 Apps and the following Office products:
+The guidance in this article applies to the following Office products:
 
-- The desktop version of Project that comes with some subscription plans, such as Project Online Professional 
-- The desktop version of Visio that comes with some subscription plans, such as Visio Online Plan 2 
-- Office 365 Business, which is the desktop version of Office that comes with some subscription plans, such as Office 365 Business Premium
+- Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), which comes with many Office 365 and Microsoft 365 enterprise plans.
+- Microsoft 365 Apps for business (previously named Office 365 Business), which comes with some Microsoft 365 business plans.
+- The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
+- The subscription version of the Visio desktop app that comes with Visio Plan 2. 
 
 You can't use language resources for Windows Installer (MSI) versions of Office with Microsoft 365 Apps, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Microsoft 365 Apps.  
 

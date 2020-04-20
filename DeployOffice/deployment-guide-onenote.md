@@ -99,7 +99,7 @@ If you plan to move your users from OneNote for Windows 10 to OneNote 2016, no s
 > [!NOTE]
 > - Group Policy requires the devices with OneNote 2016 to be joined to an Active Directory domain. 
 > - Most of these same policy settings can be applied by using the [Office cloud policy service](overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
-> - Neither Group Policy nor Office cloud policy service can be used with Office 365 Business or with OneNote for Windows 10.
+> - Neither Group Policy nor Office cloud policy service can be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
 
 **Support dates:** In November 2019, we [announced](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) that mainstream support for OneNote 2016 will continue until October 2023. Extended supported remains the same, ending in October 2025. These dates align with the support dates for Office 2019. These specific support dates apply only to OneNote included with versions of Office, such as Office Professional Plus 2016, that are available as a one-time purchase or through volume licensing agreements.
 

@@ -52,7 +52,7 @@ The date when Teams starts being installed with ***new*** installations of Micro
 
 > [!NOTE]
 > Teams is also included with the following ***new*** installations:
-> - Microsoft 365 Apps for business, starting with Version 1901, which was released on January 31, 2019. Microsoft 365 Apps for business is the version of Office that is included with certain business plans, such as the Microsoft 365 Business Premium plan.
+> - Microsoft 365 Apps for business, starting with Version 1901, which was released on January 31, 2019. Microsoft 365 Apps for business is the version of Office that is included with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 > - Office for Mac, starting with Version 16.21, which was released on January 16, 2019. Office for Mac comes with any plan that includes Microsoft 365 Apps. For more information, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
 ## How to exclude Microsoft Teams from new installations of Office 365 ProPlus

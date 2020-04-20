@@ -45,7 +45,7 @@ This option might be a good choice for your organization if you have users who t
 ## Using Microsoft Endpoint Configuration Manager
 <a name="MECM"> </a>
 
-Microsoft Endpoint Configuration Manager has the ability to manage updates to Micorosft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps, Visio Online Plan 2, Project Online Desktop Client, and Office 365 Business. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md) for an in-depth description.
+Microsoft Endpoint Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md) for an in-depth description.
 
 ## Apply updates automatically from an on-premises location to Office 365 ProPlus
 <a name="OnPremises"> </a>
