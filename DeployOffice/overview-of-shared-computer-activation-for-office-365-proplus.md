@@ -42,11 +42,11 @@ Normally, users can install and activate Microsoft 365 Apps only on a limited nu
 
 ## How to enable shared computer activation for Office 365 ProPlus
 
-To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer is available for the following:
+To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer activation is available for the following:
 
-- Any plans that include Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
-- Any plans that include the desktop versions of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
-- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for enterprise (previously named Office 365 Business).
+- Any plan that include Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
+- Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
+- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business (previously named Office 365 Business).
   
 > [!NOTE]
 > - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, But, those business plans don't include support for shared computer activation.

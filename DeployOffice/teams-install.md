@@ -131,7 +131,7 @@ If you want to use the [Office Deployment Tool](overview-of-the-office-2016-depl
 > - If your existing installation of Microsoft 365 Apps has excluded other apps, such as Access, you need to include a line in your configuration.xmi file for each of those excluded apps. Otherwise, those apps will be installed on the device.
 > - If you have Microsoft 365 Apps for business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
-Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Office is configured to get updates from the Office Content Delivery Network (CDN) and the update channel or version you're using includes Teams as part of the installation.
+Also, in some situations, doing an Online Repair results in Teams being installed. For example, if Microsoft 365 Apps is configured to get updates from the Office Content Delivery Network (CDN) and the update channel or version you're using includes Teams as part of the installation.
 
 ## Use Group Policy to control the installation of Microsoft Teams
 
@@ -191,7 +191,7 @@ To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the d
 
 ## What about Office 365 plans that don't include Microsoft Teams?
 
-Some Office 365 plans include Office, but don't include the Teams service. Even if an Office 365 plan doesn't include the Teams service, Teams will still be installed with Office, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
+Some Office 365 plans include Microsoft 365 Apps, but don't include the Teams service. Even if a plan doesn't include the Teams service, Teams will still be installed with Microsoft 365 Apps, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
 
 For Office 365 plans that don't include the Teams service, a free trial version of Teams that's valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
 
