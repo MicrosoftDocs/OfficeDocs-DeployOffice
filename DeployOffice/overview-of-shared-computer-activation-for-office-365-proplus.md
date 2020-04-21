@@ -32,7 +32,7 @@ Shared computer activation lets you to deploy Microsoft 365 Apps to a computer i
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
 
 
-The most common shared computer activation scenario is to [deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services (RDS)](deploy-office-365-proplus-by-using-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office programs, such as Word or Excel, at the same time on the remote computer.
+The most common shared computer activation scenario is to [deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office programs, such as Word or Excel, at the same time on the remote computer.
   
 Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md).
 
@@ -140,7 +140,7 @@ To configure licensing token roaming, you can use either the Office Deployment T
 
    
 ## Related topics
-[Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
+[Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 
 [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
 

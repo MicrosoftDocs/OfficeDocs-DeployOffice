@@ -2,7 +2,7 @@
 # Get started
 ## [Deployment guide](deployment-guide-for-office-365-proplus.md)
 ## [What's new](whats-new-office-it-pros.md)
-## [About Microsoft 365 Apps](about-office-365-proplus-in-the-enterprise.md)
+## [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
 
 # Prepare
@@ -46,15 +46,15 @@
 ## [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
 
 # Reference
-## [Overview of reference articles](reference-articles-for-deploying-office-365-proplus.md)
+## [Overview of reference articles](reference-articles.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)
 ## [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
 ## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 ## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
-## [Deploy by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
-## [Deploy as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
+## [Deploy by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+## [Deploy as part of an operating system image](deploy-microsoft-365-apps-operating-system-image.md)
 ## [Overview of shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md)
 ## [Device-based licensing](device-based-licensing.md)
 ## [Overview of licensing and activation](overview-of-licensing-and-activation-in-office-365-proplus.md)
