@@ -81,7 +81,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
+Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
 
 ## Step 4: Create a configuration file for the broad group
 

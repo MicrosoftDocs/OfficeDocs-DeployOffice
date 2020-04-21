@@ -43,7 +43,7 @@ Version 2002 is the last version of Microsoft 365 Apps that you can install on d
 This means that if you want to continue to deploy and update Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows 7, you'll receive an error message.
 
 > [!NOTE]
-> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).  
+> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).  
 
 To deploy or update Version 2002 on devices running Windows 7, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Microsoft Endpoint Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
 
@@ -66,7 +66,7 @@ If you use an automatic deployment rule (ADR), you should create a new rule for 
 
 ## Extended availability of Version 2002
 
-Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Office 365 ProPlus Security Updates](https://docs.microsoft.com/officeupdates/office365-proplus-security-updates).
+Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft 365 Apps Security Updates](https://docs.microsoft.com/officeupdates/office365-proplus-security-updates).
 
 Versions on Semi-Annual Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Monthly and Semi-Annual (Targeted).
 

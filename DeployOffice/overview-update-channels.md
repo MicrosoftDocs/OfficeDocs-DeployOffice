@@ -155,7 +155,7 @@ Here is some additional information that might be useful to know as you determin
 
 - These update channels only apply to installations on computers running Windows.
 
-- We recommended that you use the most current version of Semi-Annual Channel. But, if you have a specific business need to delay receiving a feature update from Semi-Annual Channel in January or July, you can configure Office to not receive that feature update, but still receive the most current security updates for the previous version. For more information on how to do that, see [Delay receiving feature updates from Semi-Annual Channel](delay-feature-updates-semi-annual-channel.md). For information about which versions of Semi-Annual Channel are supported and until when, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
+- We recommended that you use the most current version of Semi-Annual Channel. But, if you have a specific business need to delay receiving a feature update from Semi-Annual Channel in January or July, you can configure Office to not receive that feature update, but still receive the most current security updates for the previous version. For more information on how to do that, see [Delay receiving feature updates from Semi-Annual Channel](delay-feature-updates-semi-annual-channel.md). For information about which versions of Semi-Annual Channel are supported and until when, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
 
 - If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
     
@@ -163,7 +163,7 @@ Here is some additional information that might be useful to know as you determin
 
 ## Related topics
 
-[Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+[Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
  
-[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?LinkId=626090)
+[Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkId=626090)
 

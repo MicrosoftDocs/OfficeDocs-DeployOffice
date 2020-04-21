@@ -52,13 +52,13 @@ If you don't want to get updates from the Office CDN, you can use Group Policy o
 To download the latest build with the Office Deployment Tool, you need to configure both the Version and the Channel attributes in the Add element of the configuration.xml file.
   
 ## Related topics
-[Update history for Office 365 ProPlus (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+[Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
   
 [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
   
 [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
   
-[Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+[Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
   
 [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065)
   
