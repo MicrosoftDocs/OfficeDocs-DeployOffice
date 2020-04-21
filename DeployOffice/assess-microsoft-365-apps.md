@@ -3,7 +3,6 @@ title: "Assess your environment and requirements for deploying Microsoft 365 App
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 4/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

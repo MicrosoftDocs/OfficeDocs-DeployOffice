@@ -3,7 +3,6 @@ title: "Configure update settings for Microsoft 365 Apps"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
-ms.date: 9/29/2017
 audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-proplus-itpro
