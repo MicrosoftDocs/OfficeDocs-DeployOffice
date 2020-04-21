@@ -134,7 +134,7 @@ The [Office Customization Tool](https://config.office.com/) is now generally ava
 
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
 
-For best practices on deploying Microsoft 365 Apps with Configuration Manager, see [our new article](deploy-office-365-proplus-with-configuration-manager.md).
+For best practices on deploying Microsoft 365 Apps with Configuration Manager, see [our new article](deploy-microsoft-365-apps-configuration-manager.md).
 
 ## September 2018
 

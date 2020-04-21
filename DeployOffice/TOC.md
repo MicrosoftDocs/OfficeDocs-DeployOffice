@@ -12,13 +12,13 @@
 ## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 
 # Upgrade
-## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
-## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
+## [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
+## [Deploy from a local source](deploy-microsoft-365-apps-local-source.md)
+## [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 
 # Manage
 ## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
-## [Manage updates with Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
+## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
 ## [Build lean packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)

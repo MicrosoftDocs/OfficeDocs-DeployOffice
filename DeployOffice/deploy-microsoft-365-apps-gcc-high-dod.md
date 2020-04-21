@@ -59,7 +59,7 @@ There is no special guidance about what tools you can use to deploy Microsoft 36
 
 To deploy Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps for enterprise from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps for enterprise should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
 
-You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to deploy Microsoft 365 Apps for enterprise. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
+You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to deploy Microsoft 365 Apps for enterprise. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
 
 > [!NOTE]
 > If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, we recommend that you update to the most current version of that software, if possible. In some cases, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.
@@ -240,7 +240,7 @@ For general deployment guidance about Microsoft 365 Apps for enterprise, see the
 - [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-- [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
+- [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 - [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md)
 
 For networking information, see the following articles:
