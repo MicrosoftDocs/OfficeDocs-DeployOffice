@@ -24,7 +24,7 @@ An installation of Office 2016 can include applications or user interface elemen
 This article describes the language versions that are available for a subset of Office 2016 applications, the Office 2016 applications that will work with Language Interface Packs, and the recommended base languages to install for Office 2016 Language Interface Packs.
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-of-deploying-languages-in-office-365-proplus.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
   
     
 <a name="BKMK_ApplicationsLanguageAvailability"> </a>

@@ -36,7 +36,7 @@ Before using the ODT to download or install Office, we recommend making sure you
 ## Get started with the Office Deployment Tool
 <a name="BKMK_GetStarted"> </a>
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to install the 64-bit English edition of Office with the EULA automatically accepted. For the full set of options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to install the 64-bit English edition of Office with the EULA automatically accepted. For the full set of options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 > [!NOTE]
 > **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
@@ -77,7 +77,7 @@ In this example, the configuration file downloads the installation files for a 3
 </Configuration>
 ```
 
-For more information about the configuration options and more examples, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the configuration options and more examples, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
  **Step 2: Run the ODT executable in download mode**
 
@@ -133,7 +133,7 @@ In this example, the configuration file installs a 32-bit English edition of Mic
 
 The location of the Office installation files is **\\\\server\share**. The display level is set to **None**, which means the user will not see any user interface during the install. The AcceptEULA is set to **TRUE**, which means your users will not have to click to accept the EULA during the installation.
 
-For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
  **Step 2: Run the ODT executable in configure mode**
 
@@ -191,7 +191,7 @@ You can also remove an entire language version of Microsoft 365 Apps. To do so, 
 </Configuration> 
 ```
 
-For more information about the options for excluding or removing apps, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about the options for excluding or removing apps, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ## Exclude OneDrive when installing Microsoft 365 Apps or other applications
 
@@ -208,7 +208,7 @@ OneDrive is automatically installed when you install Microsoft 365 Apps or insta
 
 ## Deploy multiple or matching languages
 
-For details on deploying languages, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
+For details on deploying languages, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
 ## Apply application preferences to Microsoft 365 Apps
 
@@ -279,7 +279,7 @@ In this example, the configuration file creates an App-V package from a 32-bit E
 </Configuration> 
 ```
 
-The location of the Office installation files is \\\\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md),
+The location of the Office installation files is \\\\server\share. For your configuration file, substitute the example values with the appropriate option for your environment. For more information about the options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md),
 
  **Step 2: Run the ODT executable in packager mode**
 
@@ -294,6 +294,6 @@ After running the command, the package location should have an App-V Packages fo
 ## Related topics
 <a name="BKMK_createanappvpackage"> </a>
 
-- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
 

@@ -31,7 +31,7 @@ The steps that follow are for System Center 2012 R2 Configuration Manager, but y
 
 To get started, download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065) to a shared folder on your organization's network. Then, use the Office Deployment Tool to [download the Microsoft 365 Apps installation files](overview-office-deployment-tool.md#BKMK_downloadinstallationfiles) from the internet to the same shared folder.
   
-Next, edit the configuration.xml, and review [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md) to decide how you want to install Microsoft 365 Apps. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Microsoft 365 Apps for enterprise.
+Next, edit the configuration.xml, and review [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md) to decide how you want to install Microsoft 365 Apps. The following example shows a configuration.xml that you can use to install the 32-bit, English version of Microsoft 365 Apps for enterprise.
   
 ```xml
 <Configuration> 

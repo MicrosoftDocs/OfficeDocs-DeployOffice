@@ -7,7 +7,7 @@
     },
     {
       "source_path": "DeployOffice/proofing-tools-for-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-deploying-languages-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "source_path": "DeployOffice/overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": true
     },
     {
@@ -162,57 +162,57 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-install-xml-files-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-install-xml-files-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-install-xml-files-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-sample-configuration-files-for-downloading-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-sample-configuration-files-for-installing-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-uninstall-xml-files-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-uninstall-xml-files-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-uninstall-xml-files-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
@@ -277,12 +277,12 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-updates-in-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-update-channels.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -327,12 +327,12 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-channel-management.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-channels.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -478,21 +478,36 @@
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-from-a-local-source.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-local-source",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-from-the-cloud.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-with-configuration-manager.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/manage-office-365-proplus-updates-with-configuration-manager.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/manage-microsoft-365-apps-updates-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/configuration-options-for-the-office-2016-deployment-tool.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-deploying-languages-in-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-deploying-languages-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-update-channels-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-update-channels",
       "redirect_document_id": true
     }
   ]

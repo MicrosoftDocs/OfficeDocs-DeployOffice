@@ -40,7 +40,7 @@ Then, use the [Office Deployment Tool](overview-office-deployment-tool.md) to do
   
 Remember, you don't want to activate Microsoft 365 Apps when you do the installation.
   
-To prevent Microsoft 365 Apps from trying to automatically activate during the installation, perform a silent installation. To do this, in the [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) that the Office Deployment Tool uses, include the following line:
+To prevent Microsoft 365 Apps from trying to automatically activate during the installation, perform a silent installation. To do this, in the [configuration.xml file](office-deployment-tool-configuration-options.md) that the Office Deployment Tool uses, include the following line:
   
  \<Display Level="None" AcceptEULA="True" /\>
   

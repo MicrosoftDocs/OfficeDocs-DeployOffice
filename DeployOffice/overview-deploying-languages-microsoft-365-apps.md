@@ -90,7 +90,7 @@ If you're adding to an existing deployment, the ODT will automatically use the s
 2. If you deploy languages from a local source, you must download the proofing tools to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps).  
 3. If you use a local source, we recommend that you use the Office CDN as a backup source for language packs and proofing tools by including the AllowCdnFallback attribute in the configuration file, as shown in the example. 
 
-For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ### Example
 
@@ -132,7 +132,7 @@ If you're adding to an existing deployment, the ODT will automatically use the s
 
 You can also use MatchInstalled as the Language ID when adding Office apps to or removing them from an existing installation of Office. 
 
-For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For details on how to edit the configuration file in a text editor, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ### Example
 ```xml
@@ -282,5 +282,5 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 
 - [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
-- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 - [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md)

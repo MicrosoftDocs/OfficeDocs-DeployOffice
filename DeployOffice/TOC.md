@@ -17,7 +17,7 @@
 ## [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 
 # Manage
-## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
+## [Overview of update channels](overview-update-channels.md)
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
 ## [Build lean packages](fieldnotes/build-dynamic-lean-universal-packages.md)
@@ -51,8 +51,8 @@
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)
 ## [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
-## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
+## [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
+## [Deploying languages](overview-deploying-languages-microsoft-365-apps.md)
 ## [Deploy by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 ## [Deploy as part of an operating system image](deploy-microsoft-365-apps-operating-system-image.md)
 ## [Overview of shared computer activation](overview-shared-computer-activation.md)

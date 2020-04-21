@@ -67,7 +67,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
  - **Application preferences:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SACT.xml** in the **\\\Server\Share\O365** folder.
 
-For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Office 365 ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus).
 
@@ -114,7 +114,7 @@ If you want to deploy both the 32-bit and the 64-bit version of Office, you can 
 
 ### Use different update channels for Office
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 ### Deploy Visio and Project alongside the core Office apps
 
@@ -122,7 +122,7 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 ## Related topics
 
-[Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+[Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 

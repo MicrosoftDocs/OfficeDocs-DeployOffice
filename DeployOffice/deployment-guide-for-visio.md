@@ -40,7 +40,7 @@ If you want to have more control over how the subscription version of Visio is d
   
 1. [Download](https://www.microsoft.com/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center. 
     
-2. Create a [configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) to use with the Office Deployment Tool to download and install the subscription version of Visio. 
+2. Create a [configuration.xml file](office-deployment-tool-configuration-options.md) to use with the Office Deployment Tool to download and install the subscription version of Visio. 
     
 3. Use the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy the subscription version Visio to the users in your organization. 
     

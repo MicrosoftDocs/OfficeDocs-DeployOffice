@@ -76,7 +76,7 @@ There are different ways to exclude OneNote 2016 from being installed with Offic
 
 |Method  |Instructions  |
 |---------|---------|
-|Office Deployment Tool | You can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file. <br/><br/> We recommend that you use the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) to help you create your configuration.xml file.|
+|Office Deployment Tool | You can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file. <br/><br/> We recommend that you use the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) to help you create your configuration.xml file.|
 |Microsoft Endpoint Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote 2016** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote 2016 in the **Select Office apps** drop-down list.|
 

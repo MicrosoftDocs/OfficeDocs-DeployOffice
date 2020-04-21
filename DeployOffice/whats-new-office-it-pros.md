@@ -110,7 +110,7 @@ Starting with Version 1904, there are new, updated, and improved privacy control
 The Readiness Toolkit now supports storing report results in a SQL Server database. If you use SQL Server, you also get a Power BI report, instead of an Excel workbook. For more information, see [Use SQL Server to store report results](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md#use-sql-server-to-store-report-results).
 
 ## March 2019
-Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
+Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
 ## February 2019
 Microsoft Teams will be installed for ***new*** installations of Microsoft 365 Apps, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
@@ -132,7 +132,7 @@ Office apps, such as Word and Outlook, are now available from the Mac App Store.
 
 The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it [here](overview-of-the-office-customization-tool-for-click-to-run.md).
 
-When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-of-deploying-languages-in-office-365-proplus.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
+When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-deploying-languages-microsoft-365-apps.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 
 For best practices on deploying Microsoft 365 Apps with Configuration Manager, see [our new article](deploy-microsoft-365-apps-configuration-manager.md).
 

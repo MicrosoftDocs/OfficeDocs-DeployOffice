@@ -69,7 +69,7 @@ Here are the basic steps of how to install Microsoft 365 Apps for enterprise on 
 
     For users to be able to connect remotely to the server to use Microsoft 365 Apps for enterprise, their accounts must be members of the Remote Desktop Users group on the RD Session Host server.
 
-3. [Create a configuration.xml file](configuration-options-for-the-office-2016-deployment-tool.md) that includes the following lines:
+3. [Create a configuration.xml file](office-deployment-tool-configuration-options.md) that includes the following lines:
 
    ```xml
    <Display Level="None" AcceptEULA="True" /> 

@@ -120,14 +120,14 @@ When deploying Office, you create an installation package of the source files us
 
 You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.   
 
-To package the languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).  
+To package the languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).  
 
 After you've deployed Office with the required languages, you can install additional language accessory packs at any time by choosing one of the following:
 
 - Have your users download and install the language accessory packs that they need from the Office 365 portal (requires local administrator permissions).
 - Use Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
 
-For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md).
+For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
 For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 

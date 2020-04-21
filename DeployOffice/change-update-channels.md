@@ -21,7 +21,7 @@ description: "This article gives step-by-step instructions for changing the upda
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-After deploying Microsoft 365 Apps, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).  
+After deploying Microsoft 365 Apps, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 
 Group Policy and the ODT are the only supported methods to change update channels. If you manage updates to Office with Configuration Manager, you can change the channel by using Group Policy or the ODT in combination with Configuration Manager. For more information, see [Change the update channel with Configuration Manager](#change-the-update-channel-with-configuration-manager).
 
@@ -43,7 +43,7 @@ After policy has been applied, the Office Automatic Update 2.0 task must run. Wh
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-3. Create a configuration file that specifies the new channel name. In the example below, the channel changes to Monthly.  For more information on channel names, see [Channel attribute in the Configuration Options article](configuration-options-for-the-office-2016-deployment-tool.md#channel-attribute-part-of-updates-element).
+3. Create a configuration file that specifies the new channel name. In the example below, the channel changes to Monthly.  For more information on channel names, see [Channel attribute in the Configuration Options article](office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
 
 4. Deploy the configuration file using your standard processes.
 

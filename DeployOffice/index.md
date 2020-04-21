@@ -72,7 +72,7 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/overview-of-update-channels-for-office-365-proplus">
+                                <a href="/DeployOffice/overview-update-channels">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -42,7 +42,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When will Microsoft Teams start being included with new installations of Microsoft 365 Apps?
 
-The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](overview-of-update-channels-for-office-365-proplus.md) you're using. The following table shows the schedule.
+The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](overview-update-channels.md) you're using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ The date when Teams starts being installed with ***new*** installations of Micro
 
 If you don't want Teams included when you install Microsoft 365 Apps on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
-If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
+If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
 ```xml
 <Configuration>

@@ -132,7 +132,7 @@ The steps in this article cover the standard best practice recommendations from 
 If you want to deploy the 32-bit version of Office, you can create additional installation packages. (Two different architectures cannot be included in the same package.) For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
 
 ### Use different update channels for Office
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 ### Deploy Visio and Project alongside the core Office apps
 To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](https://docs.microsoft.com/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
@@ -141,7 +141,7 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 To remove Office, do the following:
 
-1. Review the description of the **Remove** attribute in the [ODT Reference](configuration-options-for-the-office-2016-deployment-tool.md#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
+1. Review the description of the **Remove** attribute in the [ODT Reference](office-deployment-tool-configuration-options.md#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
 2. Navigate to **Software Library** > **Overview** > **Application Management** > **Applications**, select the just created application, switch to the **Deployment Type** tab and edit the **Office 365 Default Deployment Type**.
 3. Switch to the **Programs** tab and specify the following **Uninstall Program**: setup.exe /configure uninstall.xml
 4. Clik **OK**, right-click the deployment type and select  **Update Content**. For more details, see [Deploy and manage content](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage).
@@ -152,7 +152,7 @@ You can deploy or edit the application from **Software Library** > **Overview** 
 
 ## Related topics
 
-[Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+[Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 

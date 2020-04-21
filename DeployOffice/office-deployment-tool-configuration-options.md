@@ -138,7 +138,7 @@ This value determines the channel to be installed, regardless of an optionally s
 
 If the subscription versions of the Project and Visio desktop apps are installed along with Microsoft 365 Apps for enterprise, the default setting is **Broad**. If the subscription versions of the Project and Visio desktop apps are deployed without Microsoft 365 Apps, the default setting is **Monthly**. 
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).  
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 
 Allowed values: 
 
@@ -237,7 +237,7 @@ Allowed values:
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
+You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
 
 ### Example
 
@@ -270,7 +270,7 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
 
-Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Overview of deploying languages](overview-of-deploying-languages-in-office-365-proplus.md).
+Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md).
 
 ### Example
 
@@ -306,7 +306,7 @@ Defines the ID of the language to download or install.
 - ID="MatchOS"
 - ID="MatchPreviousMSI"
 
-For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages).
+For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
@@ -314,7 +314,7 @@ For more information about MatchPreviousMSI, see [Remove existing MSI versions o
 
 Optional.
 
-When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-of-deploying-languages-in-office-365-proplus.md#install-the-same-languages-as-the-operating-system).
+When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
 
 Example values:
 
@@ -669,7 +669,7 @@ Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **M
 
 Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office.
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md). 
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
@@ -726,4 +726,4 @@ For more details on application preferences, see [Apply application preferences]
 
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
-- [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages)
+- [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages)

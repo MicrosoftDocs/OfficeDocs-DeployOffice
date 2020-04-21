@@ -41,7 +41,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use
 
-For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps for enterprise. For more information about update channels, see [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md).
+For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps for enterprise. For more information about update channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
  
 ## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
@@ -57,7 +57,7 @@ If Microsoft 365 Apps for enterprise is being updated directly from the Office C
 ## What tools to use to deploy Microsoft 365 Apps for enterprise
 There is no special guidance about what tools you can use to deploy Microsoft 365 Apps for enterprise in GCC High or DoD environments.
 
-To deploy Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps for enterprise from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps for enterprise should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md) and [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+To deploy Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps for enterprise from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps for enterprise should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md) and [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to deploy Microsoft 365 Apps for enterprise. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
 
@@ -67,7 +67,7 @@ You can also use enterprise software deployment tools, such as Microsoft Endpoin
 
 ## Sample configuration.xml files
 
-For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ### Installing and updating Microsoft 365 Apps for enterprise from the Office CDN
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
@@ -237,9 +237,9 @@ For more information about the GCC High and DoD environments provided by Microso
 For general deployment guidance about Microsoft 365 Apps for enterprise, see the following articles:
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
-- [Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
+- [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
-- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 - [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 - [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md)
 

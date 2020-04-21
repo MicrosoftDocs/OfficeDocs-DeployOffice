@@ -116,7 +116,7 @@ By default, the client applications for Office 365 are set to these channel rele
 
 But you can determine which channel is used for your client applications, according to your business needs.
 
-For more information about the channels for Office 365 client applications, see [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md).
+For more information about the channels for Office 365 client applications, see [Overview of update channels](overview-update-channels.md).
 
 ### Which Release Channel?
 
@@ -167,7 +167,7 @@ Office 365 clients have the following types of releases:
 
 - **Semi-Annual Channel** The Semi-Annual Channel (Targeted) is rolled up and released as the Semi-Annual Channel every 6 months, in January and July. No new features are added until the next Semi-Annual Channel, although security updates will continue to be released. Each Semi-Annual Channel feature release is supported for an additional 14 months. This is the default channel for Microsoft 365 Apps for enterprise.
 
-Read [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md) for more information.
+Read [Overview of update channels](overview-update-channels.md) for more information.
 
 The following illustration shows the relationships between these releases for Microsoft 365 Apps for enterprise. 
 
@@ -388,7 +388,7 @@ Use the following methods to configure which channels are used by which client c
 <a name="Related"> </a>
 ## Related topics
 
-[Overview of update channels for Microsoft 365 Apps](overview-of-update-channels-for-office-365-proplus.md)
+[Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
 
 [Overview of Windows as a service](https://go.microsoft.com/fwlink/p/?LinkId=847278)
 

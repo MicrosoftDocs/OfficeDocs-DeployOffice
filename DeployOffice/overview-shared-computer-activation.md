@@ -57,7 +57,7 @@ Make sure you [assign each user a license](https://support.office.com/article/99
   
 To enable shared computer activation when you deploy Microsoft 365 Apps, you need the current version of the Office Deployment Tool, which is available for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-The [Office Deployment Tool](overview-office-deployment-tool.md), combined with a simple text file, is used to install Microsoft 365 Apps on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](configuration-options-for-the-office-2016-deployment-tool.md).
+The [Office Deployment Tool](overview-office-deployment-tool.md), combined with a simple text file, is used to install Microsoft 365 Apps on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](office-deployment-tool-configuration-options.md).
   
 ```xml
 <Display Level="None" AcceptEULA="True" /> 
@@ -129,7 +129,7 @@ To configure licensing token roaming, you can use either the Office Deployment T
     
 - If you're using Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Specify the location to save the licensing token used by shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
     
-- If you're using the Office Deployment Tool, include the SCLCacheOverride and SCLCacheOverrideDirectory in the Property element of your configuration.xml file. For more information, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+- If you're using the Office Deployment Tool, include the SCLCacheOverride and SCLCacheOverrideDirectory in the Property element of your configuration.xml file. For more information, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
     
 - To edit the registry, go to HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration, add a string value of SCLCacheOverride, and set the value to 1. Also, add a string value of SCLCacheOverrideDirectory and set the value to the path of the folder to save the licensing token. 
     

@@ -97,7 +97,7 @@ If you use the Office Deployment Tool to install or configure Microsoft 365 Apps
 
 For more information about using the Office Deployment Tool and the configuration options that it supports, see the following articles:
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
-- [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
 ### Using Group Policy 
 If you use Group Policy to configure Microsoft 365 Apps for enterprise settings, you can enable the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.

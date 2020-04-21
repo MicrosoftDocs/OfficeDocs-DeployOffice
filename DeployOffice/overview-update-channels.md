@@ -25,9 +25,9 @@ One of the benefits of Microsoft 365 Apps is that Microsoft can provide new feat
   
 |**Update channel**|**Primary purpose**|**How often updated with new features**|**Default update channel for the following products**|
 |:-----|:-----|:-----|:-----|
-|[Monthly Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_MC) <br/> |Provide users with the newest features of Office as soon as they're available.  <br/> |Monthly  <br/> |Subscription version of Project desktop app  <br/><br/> Subscription version of Visio desktop app <br/><br/>  Microsoft 365 Apps for business (previously named Office 365 Business) <br/> |
-|[Semi-Annual Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_SAC) <br/> |Provide users with new features of Office only a few times a year.  <br/> |Every six months, in January and July  <br/> |Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) <br/> |
-|[Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) <br/> |Provide pilot users and application compatibility testers the opportunity to test the next Semi-Annual Channel.  <br/> |Every six months, in March and September  <br/> |None  <br/> |
+|[Monthly Channel](overview-update-channels.md#BKMK_MC) <br/> |Provide users with the newest features of Office as soon as they're available.  <br/> |Monthly  <br/> |Subscription version of Project desktop app  <br/><br/> Subscription version of Visio desktop app <br/><br/>  Microsoft 365 Apps for business (previously named Office 365 Business) <br/> |
+|[Semi-Annual Channel](overview-update-channels.md#BKMK_SAC) <br/> |Provide users with new features of Office only a few times a year.  <br/> |Every six months, in January and July  <br/> |Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) <br/> |
+|[Semi-Annual Channel (Targeted)](overview-update-channels.md#BKMK_SACT) <br/> |Provide pilot users and application compatibility testers the opportunity to test the next Semi-Annual Channel.  <br/> |Every six months, in March and September  <br/> |None  <br/> |
    
 > [!NOTE]
 > Prior to September 2017, these update channels were named Current Channel, Deferred Channel, and First Release for Deferred Channel. 
@@ -62,7 +62,7 @@ If your organization doesn't want to deploy the latest features of Office right 
   
 A Semi-Annual Channel with new features is expected to be released twice a year, in January and July. New features aren't added to Semi-Annual Channel at any other time. The features that are included in Semi-Annual Channel are features that have been released previously in Monthly Channel.
   
-In the four months prior to a new Semi-Annual Channel feature release, Microsoft provides builds of the upcoming release so that pilot users and application compatibility testers in your organization can work with the upcoming release. These builds are provided through the [Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) update channel and provide the same features and functionality that will be in the next release of Semi-Annual Channel that includes new features.
+In the four months prior to a new Semi-Annual Channel feature release, Microsoft provides builds of the upcoming release so that pilot users and application compatibility testers in your organization can work with the upcoming release. These builds are provided through the [Semi-Annual Channel (Targeted)](overview-update-channels.md#BKMK_SACT) update channel and provide the same features and functionality that will be in the next release of Semi-Annual Channel that includes new features.
   
 After the January and July releases of Semi-Annual Channel, additional security updates, if needed, can also be added to Semi-Annual Channel. A release of Semi-Annual Channel with these updates usually occurs on the second Tuesday of the month. If there is a critical non-security issue that needs to be fixed in Semi-Annual Channel, that non-security update will also be included in a Semi-Annual Channel release, usually on the second Tuesday of the month.
 
@@ -94,9 +94,9 @@ As a review, the following table provides information about how often each updat
   
 |**Update channel**|**Feature updates**|**Security updates**|**Non-security updates**|
 |:-----|:-----|:-----|:-----|
-|[Monthly Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_MC) <br/> |Monthly  <br/> |Monthly  <br/> |Monthly  <br/> |
-|[Semi-Annual Channel](overview-of-update-channels-for-office-365-proplus.md#BKMK_SAC) <br/> |Every six months, in January and July  <br/> |Monthly  <br/> |Monthly <br/> |
-|[Semi-Annual Channel (Targeted)](overview-of-update-channels-for-office-365-proplus.md#BKMK_SACT) <br/> |Every six months, in March and September  <br/> |Monthly  <br/> |Monthly  <br/> |
+|[Monthly Channel](overview-update-channels.md#BKMK_MC) <br/> |Monthly  <br/> |Monthly  <br/> |Monthly  <br/> |
+|[Semi-Annual Channel](overview-update-channels.md#BKMK_SAC) <br/> |Every six months, in January and July  <br/> |Monthly  <br/> |Monthly <br/> |
+|[Semi-Annual Channel (Targeted)](overview-update-channels.md#BKMK_SACT) <br/> |Every six months, in March and September  <br/> |Monthly  <br/> |Monthly  <br/> |
    
 Security updates, if needed, are usually released on the second Tuesday of the month. Non-security updates, if needed, for Semi-Annual Channel and Semi-Annual Channel (Targeted) also are usually released on the second Tuesday of the month. 
  

@@ -52,7 +52,7 @@ Here's an example of a configuration file that can be used to install a 64-bit v
 </Configuration>
 ```
 
-For information about other settings, see [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md).
+For information about other settings, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 Then, use the Office Deployment Tool to download and install Project or Visio.
 
