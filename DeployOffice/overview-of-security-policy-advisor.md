@@ -18,7 +18,7 @@ description: "You can use Security Policy Advisor to receive and implement secur
 # Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md).
 
 You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of a [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
@@ -76,7 +76,7 @@ To turn off Security Policy Advisor, sign in to the [portal](https://config.offi
 
 When you turn off Security Policy Advisor, usage and threat data from your organization are no longer analyzed and no recommendations or insights will be generated.  
 
-Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=2083502).
+Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?linkid=2083502).
 
 ## How Security Policy Advisor creates recommendations 
 

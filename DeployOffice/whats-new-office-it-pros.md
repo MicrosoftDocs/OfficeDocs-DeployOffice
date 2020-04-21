@@ -101,7 +101,7 @@ For more information, see [Overview of Security Policy Advisor](overview-of-secu
 ### Privacy controls for Microsoft 365 Apps
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft 365 Apps.
 
-Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Office 365 ProPlus](privacy/overview-privacy-controls.md).
+Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Microsoft 365 Apps](privacy/overview-privacy-controls.md).
 
 
 ### Use SQL Server with the Readiness Toolkit
