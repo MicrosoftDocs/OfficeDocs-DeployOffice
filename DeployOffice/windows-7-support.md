@@ -18,7 +18,7 @@ description: "Provides Office admins with information about the implications of 
 > - Support for Windows 7 ended on January 14, 2020. [Learn more](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)
 > - Microsoft 365 Apps is no longer supported on Windows 7.
 > - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.office.com/article/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
-> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
