@@ -36,7 +36,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
     > [!NOTE]
     > You also can use RDS to deploy the subscription versions of the Project and Visio desktop apps, if you have a subscription plan that includes those products. 
 
-- The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Microsoft 365 Apps for enterprise software to your local network by using the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+- The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). You can download the Microsoft 365 Apps for enterprise software to your local network by using the [Office Deployment Tool](overview-office-deployment-tool.md).
 
 - Any supported version of Microsoft 365 Apps for enterprise.
 
@@ -80,7 +80,7 @@ Here are the basic steps of how to install Microsoft 365 Apps for enterprise on 
 
     You use the SharedComputerLicensing setting to enable [shared computer activation](overview-shared-computer-activation.md), which is required to use Microsoft 365 Apps for enterprise on a shared computer.
 
-4. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Microsoft 365 Apps for enterprise on the RD Session Host server.
+4. Use the [Office Deployment Tool](overview-office-deployment-tool.md) and the configuration.xml file to install Microsoft 365 Apps for enterprise on the RD Session Host server.
 
 At this point, users can connect to the RD Session Host server and use Microsoft 365 Apps for enterprise. Users can connect to the server by using Remote Desktop Connection, which is available in Windows, or by using other [Remote Desktop clients](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
 

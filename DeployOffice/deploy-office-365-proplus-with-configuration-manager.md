@@ -23,7 +23,7 @@ description: "This article gives step-by-step instructions for how to Deploy Mic
 
 Follow the steps in this article to deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch). 
 
-This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
+This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager, see [here](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
     
 ## Overview
 
@@ -154,7 +154,7 @@ You can deploy or edit the application from **Software Library** > **Overview** 
 
 [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
-[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+[Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
 [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 

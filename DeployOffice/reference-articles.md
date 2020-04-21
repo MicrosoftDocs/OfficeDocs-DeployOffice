@@ -23,7 +23,7 @@ description: "This article lists all the reference articles about deploying Micr
 
 This article lists reference articles about deploying Microsoft 365 Apps in an enterprise environment. To see more articles about Microsoft 365 Apps deployment, see the table of contents.
 
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md): How to use the Office Deployment Tool to download, install, and update Microsoft 365 Apps. 
+- [Overview of the Office Deployment Tool](overview-office-deployment-tool.md): How to use the Office Deployment Tool to download, install, and update Microsoft 365 Apps. 
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md): Detailed information on the configuration options for the Office Deployment Tool.
 - [Overview of deploying languages for Microsoft 365 Apps](overview-of-deploying-languages-in-office-365-proplus.md): How to include multiple languages as part of a deployment of Microsoft 365 Apps or add them to an existing installation.
 - [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md): What shared computer activation is and how it's used for Microsoft 365 Apps deployments in which users access a shared computer. 

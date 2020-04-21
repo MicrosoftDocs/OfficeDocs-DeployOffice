@@ -46,7 +46,7 @@ For more information, see [What's the difference between OneNote and OneNote 201
 
 ## OneNote 2016 deployment guidance
 
-You can use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) or enterprise deployment software, such as Microsoft Endpoint Configuration Manager, to include or exclude OneNote 2016 when you deploy Office in your organization.
+You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Endpoint Configuration Manager, to include or exclude OneNote 2016 when you deploy Office in your organization.
 
 As of March 2020, OneNote 2016 is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps or Office 2019. There are no additional steps you need to take to include OneNote 2016 with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 

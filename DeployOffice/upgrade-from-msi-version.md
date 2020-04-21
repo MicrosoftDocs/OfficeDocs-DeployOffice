@@ -144,5 +144,5 @@ The following are some additional details about using the RemoveMSI element in y
 - If you're using RemoveMSI on a Windows 7 SP1 computer, pinned shortcuts that the user created might sometimes remain even though the previous version of Office and all of its other shortcuts have been removed. To remove the pinned shortcut, simply click on it and you'll be prompted to remove it. Or, log in as the user who created the pinned shortcut, and then run the Office Deployment Tool to upgrade to Microsoft 365 Apps.
 
 ## Related topics
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+- [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)

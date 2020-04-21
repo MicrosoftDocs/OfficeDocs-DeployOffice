@@ -146,7 +146,7 @@ Version 1.2 of the Readiness Toolkit was released, with new functionality to con
 
 ## July 2018
 
-You can now  use the Office Deployment Tool to apply application preferences to Microsoft 365 Apps as part of an initial deployment or as an update to existing installations of Office. For more information, see [Apply application preferences to Microsoft 365 Apps](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps).
+You can now  use the Office Deployment Tool to apply application preferences to Microsoft 365 Apps as part of an initial deployment or as an update to existing installations of Office. For more information, see [Apply application preferences to Microsoft 365 Apps](overview-office-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps).
 
 ## June 2018
 

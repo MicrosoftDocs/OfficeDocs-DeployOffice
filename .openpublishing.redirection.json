@@ -449,6 +449,16 @@
       "source_path": "DeployOffice/troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/troubleshoot-shared-computer-activation",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager-2012R2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-the-office-2016-deployment-tool.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-office-deployment-tool",
+      "redirect_document_id": true
     }
   ]
 }

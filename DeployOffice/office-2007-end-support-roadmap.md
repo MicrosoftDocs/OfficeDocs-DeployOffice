@@ -130,7 +130,7 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
   
 ## Special considerations
 
- **The Office Customization Tool is not used as part of the Microsoft 365 Apps installation**. Instead, you can customize the installation for your users with the Office Deployment Tool. For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+ **The Office Customization Tool is not used as part of the Microsoft 365 Apps installation**. Instead, you can customize the installation for your users with the Office Deployment Tool. For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
   
  **Removal of InfoPath from Microsoft 365 Apps**. InfoPath 2013 remains the current version and therefore isn't included in Microsoft 365 Apps. When you upgrade an existing installation of Office 2007 to Microsoft 365 Apps, InfoPath is removed from the computer. If your users still need to use InfoPath, the 2013 version of InfoPath is available for installation on the Software page in the Office 365 portal. 
   

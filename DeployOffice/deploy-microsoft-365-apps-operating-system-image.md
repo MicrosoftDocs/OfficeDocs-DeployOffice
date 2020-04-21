@@ -36,7 +36,7 @@ To start, install and configure the operating system on a test computer. There a
 
 To install Microsoft 365 Apps on the test computer, first download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-Then, use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) to download the Microsoft 365 Apps software to your local network. You also use the Office Deployment Tool to install Microsoft 365 Apps on to the test computer.
+Then, use the [Office Deployment Tool](overview-office-deployment-tool.md) to download the Microsoft 365 Apps software to your local network. You also use the Office Deployment Tool to install Microsoft 365 Apps on to the test computer.
   
 Remember, you don't want to activate Microsoft 365 Apps when you do the installation.
   

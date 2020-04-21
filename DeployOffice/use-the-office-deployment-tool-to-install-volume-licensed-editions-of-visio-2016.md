@@ -38,7 +38,7 @@ If you are using the Office Customization Tool or want to specify the update cha
 
 You can also edit the Updates element in the configuration file to determine how the installation of Project or Visio is updated. For example, you can configure it so that updates are automatically installed from the Office Content Delivery Network (CDN) on the internet, which is the default, or from a file share on your local network.
 
-If you're not familiar with the Office Deployment Tool, it's usually used to customize deployments of Click-to-Run versions of Office products, such as Microsoft 365 Apps. For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md). 
+If you're not familiar with the Office Deployment Tool, it's usually used to customize deployments of Click-to-Run versions of Office products, such as Microsoft 365 Apps. For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md). 
 
 Here's an example of a configuration file that can be used to install a 64-bit version of Visio Professional 2016 in English from the Office CDN using a GVLK. 
 

@@ -159,7 +159,7 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
-[Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+[Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
 [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 

@@ -68,7 +68,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 Learn about the Office Deployment Tool (ODT), other deployment options, and activation. 
 
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+- [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 

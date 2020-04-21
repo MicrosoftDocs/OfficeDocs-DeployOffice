@@ -50,7 +50,7 @@
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)
-## [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+## [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 ## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 ## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
 ## [Deploy by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)

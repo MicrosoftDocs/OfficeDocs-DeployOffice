@@ -38,7 +38,7 @@ To manually deploy Office, as well as Project or Visio, you need to use the Offi
   
 You use the Office Deployment Tool to both download and deploy Office, such as Microsoft 365 Apps, to your users. If you already use other tools, such as Microsoft Endpoint Configuration Manager, to deploy software to your users, you can use the Office Deployment Tool along with those tools to deploy Office.
   
-For more information, see [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
   
 ## Manually download InfoPath 2013 and SharePoint Designer 2013
 In addition to Office, you can download InfoPath 2013 and SharePoint Designer 2013 in order to deploy them to your users. You can download them from the Microsoft Download Center by using the following links:

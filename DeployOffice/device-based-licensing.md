@@ -96,7 +96,7 @@ If you use the Office Deployment Tool to install or configure Microsoft 365 Apps
 
 
 For more information about using the Office Deployment Tool and the configuration options that it supports, see the following articles:
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+- [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
 
 ### Using Group Policy 

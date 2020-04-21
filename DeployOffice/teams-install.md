@@ -59,7 +59,7 @@ The date when Teams starts being installed with ***new*** installations of Micro
 
 If you don't want Teams included when you install Microsoft 365 Apps on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
-If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
+If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you can use the [ExcludeApp element](configuration-options-for-the-office-2016-deployment-tool.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
 ```xml
 <Configuration>
@@ -112,7 +112,7 @@ The date when Teams can start being added to ***existing*** installations of Mic
 
 If you don't want Teams to be added to ***existing*** installations of Microsoft 365 Apps when you update to a newer version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
-If you want to use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), you need to run the Office Deployment Tool in /configure mode on each device before you update to the new version of Microsoft 365 Apps. The following is a configuration.xml file you can use with the Office Deployment Tool to exclude Teams from being added to your existing installation of Microsoft 365 Apps for enterprise.
+If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you need to run the Office Deployment Tool in /configure mode on each device before you update to the new version of Microsoft 365 Apps. The following is a configuration.xml file you can use with the Office Deployment Tool to exclude Teams from being added to your existing installation of Microsoft 365 Apps for enterprise.
 
 ```xml
 <Configuration>

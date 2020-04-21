@@ -22,7 +22,7 @@ description: "Configuration options for the Office Deployment Tool"
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
 > [!NOTE]
 > **Best practice:** The options in this article show the XML elements and attributes in the configuration file. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more details, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
@@ -360,7 +360,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Microsoft 365 Apps products should not be installed. Note that OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-of-the-office-2016-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
+Defines which Microsoft 365 Apps products should not be installed. Note that OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
 
 ### Example
 
@@ -573,7 +573,7 @@ Allowed values:
 
 Defines which products and languages to remove from a previous installation of Microsoft 365 Apps. To remove an installed language, you must provide both the product and the language, as in the example. To remove all the installed languages, do not include the language attribute. In that case, the ODT automatically discovers and removes all installed languages for the product. 
 
-For more information, see  [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md).
+For more information, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
 ### Example
 
@@ -708,7 +708,7 @@ Optional.
 
 Defines application preferences for Microsoft 365 Apps, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application preferences, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application preferences.
 
-For more details on application preferences, see [Apply application preferences](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps) and [Apply application preferences to an existing installation of Office](overview-of-the-office-2016-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-microsoft-365-apps).
+For more details on application preferences, see [Apply application preferences](overview-office-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps) and [Apply application preferences to an existing installation of Office](overview-office-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-microsoft-365-apps).
 
 ### Example
 
@@ -724,6 +724,6 @@ For more details on application preferences, see [Apply application preferences]
 ```
 ## Related topics
 
-- [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
+- [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
 - [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages)

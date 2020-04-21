@@ -57,7 +57,7 @@ Make sure you [assign each user a license](https://support.office.com/article/99
   
 To enable shared computer activation when you deploy Microsoft 365 Apps, you need the current version of the Office Deployment Tool, which is available for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
   
-The [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), combined with a simple text file, is used to install Microsoft 365 Apps on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](configuration-options-for-the-office-2016-deployment-tool.md).
+The [Office Deployment Tool](overview-office-deployment-tool.md), combined with a simple text file, is used to install Microsoft 365 Apps on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](configuration-options-for-the-office-2016-deployment-tool.md).
   
 ```xml
 <Display Level="None" AcceptEULA="True" /> 
