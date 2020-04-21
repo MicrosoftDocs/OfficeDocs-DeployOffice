@@ -15,7 +15,7 @@ description: Office deployment
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsC">
                             <li>
-                                <a href="/DeployOffice/deployment-guide-for-office-365-proplus">
+                                <a href="/DeployOffice/deployment-guide-microsoft-365-apps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -26,7 +26,7 @@ description: Office deployment
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Get started</h3>
-                                                    <p>Learn how to plan, deploy, and manage Office 365 ProPlus in your enterprise environment.</p>
+                                                    <p>Learn how to plan, deploy, and manage Microsoft 365 Apps in your enterprise environment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -45,7 +45,7 @@ description: Office deployment
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Deploy</h3>
-                                                    <p>Find guidance about how to deploy Office 365 ProPlus from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.</p>
+                                                    <p>Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +72,7 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/overview-of-update-channels-for-office-365-proplus">
+                                <a href="/DeployOffice/overview-update-channels">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -83,7 +83,7 @@ description: Office deployment
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Manage updates</h3>
-                                                    <p>Learn about the different update channels available for Office 365 ProPlus and how to use Configuration Manager to manage updates.</p>
+                                                    <p>Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates.</p>
                                                 </div>
                                             </div>
                                         </div>

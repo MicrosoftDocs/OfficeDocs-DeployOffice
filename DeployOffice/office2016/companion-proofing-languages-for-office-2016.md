@@ -26,7 +26,7 @@ Proofing tools include spelling and grammar checkers, thesauruses, and hyphenato
 Depending on the number of user interface languages that you want to deploy and the included companion proofing languages, Office 2016 Language Packs might provide all the proofing tools that you want. For more information about Office 2016 Language Packs, see [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md).
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
   
 <a name="BKMK_Identify"> </a>
 ## Identify companion proofing languages for Office
@@ -53,7 +53,7 @@ The following table lists companion proofing languages for each primary language
 |German  <br/> |German, English, French, Italian  <br/> |
 |Greek  <br/> |Greek, English, French, German  <br/> |
 |Hebrew  <br/> |Hebrew, English, French, Arabic, Russian  <br/> |
-|Hindi  <br/> |Hindi, English, Tamil, Telegu, Marathi, Kannada, Guajarati, Punjabi, Urdu  <br/> |
+|Hindi  <br/> |Hindi, English, Tamil, Telegu, Marathi, Kannada, Gujarati, Punjabi, Urdu  <br/> |
 |Hungarian  <br/> |Hungarian, English, German  <br/> |
 |Indonesian  <br/> |Indonesian, English  <br/> |
 |Italian  <br/> |Italian, English, French, German  <br/> |
