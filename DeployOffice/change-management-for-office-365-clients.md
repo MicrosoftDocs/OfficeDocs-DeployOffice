@@ -14,7 +14,7 @@ description: "The client applications that are included with Office 365 are rele
 
 # Change management for Office 365 clients
 
-The client applications that are included with Office 365 are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality. 
+The client applications that are included with Office 365 (and Microsoft 365) are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality. 
 
 This article gives you an overview of this servicing model, and helps you understand the release channels and cadence, and how to effectively manage releases of the Office 365 client applications for your organization.
 
@@ -32,7 +32,7 @@ In this article:
 
 - [Manage Update Deployments](change-management-for-office-365-clients.md#Manage)
 
-Download this information as a poster in [Visio](https://go.microsoft.com/fwlink/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/?LinkId=626681) format. *(The poster is only available in English.)*
+Download this information as a poster in [Visio](https://go.microsoft.com/fwlink/p/?LinkId=626680) or [PDF](https://go.microsoft.com/fwlink/p/?LinkId=626681) format. *(The poster is only available in English.)*
 
 ![Servicing model poster](images/f0f92823-29ae-443e-af36-d913c6ba6486.png)
 
@@ -102,7 +102,7 @@ Use the following table to choose the right release option for your business nee
 
 ### Default channels for client applications
 
-Office 365 ProPlus includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365) also follow this release model. 
+Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) includes the following Office applications: Word, Excel, PowerPoint, Outlook, OneNote, Access, Skype for Business, and Publisher. The subscription versions of the Project and Visio desktop apps also follow this release model. 
 
 The following illustration shows these sets of client applications.
 
@@ -110,13 +110,13 @@ The following illustration shows these sets of client applications.
 
 By default, the client applications for Office 365 are set to these channel releases:
 
-- **Office 365 ProPlus** is set to use Semi-Annual Channel.
+- **Microsoft 365 Apps for enterprise** is set to use Semi-Annual Channel.
 
-- **Project Online Desktop Client** and **Visio Online Plan 2** (previously named Visio Pro for Office 365) are set to use Monthly Channel.
+- Subscription versions of the Project and Visio desktop apps are set to use Monthly Channel.
 
 But you can determine which channel is used for your client applications, according to your business needs.
 
-For more information about the channels for Office 365 client applications, see [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md).
+For more information about the channels for Office 365 client applications, see [Overview of update channels](overview-update-channels.md).
 
 ### Which Release Channel?
 
@@ -155,7 +155,7 @@ The following illustration shows the relationships between these releases for Wi
 
 ![Windows 10 release cadence](images/42471221-f1a5-4bd6-9d7e-5f24a3049330.png)
 
-Read [Overview of Windows as a service](https://go.microsoft.com/fwlink/?LinkId=847278) for more information.
+Read [Overview of Windows as a service](https://go.microsoft.com/fwlink/p/?LinkId=847278) for more information.
 
 ### Office 365 Client Release Cadence
 
@@ -165,11 +165,11 @@ Office 365 clients have the following types of releases:
 
 - **Semi-Annual Channel (Targeted)** You can validate this release for four months before it becomes a Semi-Annual Channel release. New features are included only at the beginning of a release, in March and September. This channel is refreshed with non-security updates and security updates every month.
 
-- **Semi-Annual Channel** The Semi-Annual Channel (Targeted) is rolled up and released as the Semi-Annual Channel every 6 months, in January and July. No new features are added until the next Semi-Annual Channel, although security updates will continue to be released. Each Semi-Annual Channel feature release is supported for an additional 14 months. This is the default channel for Office 365 ProPlus clients.
+- **Semi-Annual Channel** The Semi-Annual Channel (Targeted) is rolled up and released as the Semi-Annual Channel every 6 months, in January and July. No new features are added until the next Semi-Annual Channel, although security updates will continue to be released. Each Semi-Annual Channel feature release is supported for an additional 14 months. This is the default channel for Microsoft 365 Apps for enterprise.
 
-Read [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md) for more information.
+Read [Overview of update channels](overview-update-channels.md) for more information.
 
-The following illustration shows the relationships between these releases for Office 365 ProPlus. 
+The following illustration shows the relationships between these releases for Microsoft 365 Apps for enterprise. 
 
 ![Office 365 release cadence](images/99a17880-4029-44e9-b478-be4058c30f92.png)
 
@@ -208,7 +208,7 @@ Not all changes have the same impact on your users or require action. Some are p
 |:-----|:-----|:-----|:-----|
 |**Type of change** <br/> | Feature updates <br/>  New features or applications <br/>  Deprecated features <br/> | Client hotfixes for issues <br/> | Security patches <br/> |
 |**Advance notice?** <br/> |30 days notice for changes that require action  <br/> |No, these are included in the monthly build for all channels  <br/> |No, these are included in the monthly build for all channels  <br/> |
-|**Communication channel** <br/> | Message Center <br/> [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) <br/> [Microsoft 365 blog](https://go.microsoft.com/fwlink/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community <br/> | [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
+|**Communication channel** <br/> | Message Center <br/> [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) <br/> [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089) <br/> [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community <br/> | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090) <br/> | Security bulletin or CVE <br/> |
 |**Requires tenant admin action?** <br/> |Sometimes  <br/> |Rarely  <br/> |Rarely  <br/> |
 |**What kind of action?** <br/> | Change settings <br/>  Communicate changes to users <br/>  Validate customizations <br/> | Change admin settings <br/> ||
 |**Requires testing?** <br/> |Rarely - check business critical Add-ins  <br/> |Sometimes - testing the fix against processes or customizations  <br/> |Rarely  <br/> |
@@ -216,7 +216,7 @@ Not all changes have the same impact on your users or require action. Some are p
 
 ### Guidelines for managing change when using Office Add-ins:
 
-- We recommend that customers use Monthly Channel to get the latest feature updates. If you have Office customizations or Add-ins deployed, you can use Semi-Annual Channel, which allows you to wait for feature updates to Office until you have had the chance to test and fix your customizations. To test and fix your customizations before those features updates are applied to Semi-Annual Channel, use Semi-Annual Channel (Targeted). Use the Office Telemetry Dashboard to check Add-ins for compatibility. For more information, see [Compatibility and telemetry in Office](https://go.microsoft.com/fwlink/?LinkId=626610).
+- We recommend that customers use Monthly Channel to get the latest feature updates. If you have Office customizations or Add-ins deployed, you can use Semi-Annual Channel, which allows you to wait for feature updates to Office until you have had the chance to test and fix your customizations. To test and fix your customizations before those features updates are applied to Semi-Annual Channel, use Semi-Annual Channel (Targeted). Use the Office Telemetry Dashboard to check Add-ins for compatibility. For more information, see [Compatibility and telemetry in Office](https://go.microsoft.com/fwlink/p/?LinkId=626610).
 
 - If your developers built the Office Add-in, we suggest they update the code and redeploy the custom Office Add-in.
 
@@ -224,7 +224,7 @@ Not all changes have the same impact on your users or require action. Some are p
 
 - Consider decommissioning Office Add-in that are no longer used or have low utilization.
 
-More information about [Office Add-ins](https://go.microsoft.com/fwlink/?LinkID=626869).
+More information about [Office Add-ins](https://go.microsoft.com/fwlink/p/?LinkID=626869).
 
 ### Tips for Testing
 
@@ -243,7 +243,7 @@ Responsibility for managing change is shared between Microsoft and you as the ad
 
 Understand the roles both Microsoft and you need to play before, during, and after a change occurs to the service.
 
-Review what's included in each release on the [Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090) page.
+Review what's included in each release on the [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkId=626090) page.
 
 ### Balance of Responsibility
 
@@ -276,13 +276,13 @@ Microsoft's role
 
 - Notify customers 30 days in advance for changes that require administrator action.
 
-- Publish majority of new features and updates on the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454).
+- Publish majority of new features and updates on the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454).
 
 Customer's role
 
 - Understand what to expect for changes and communications.
 
-- Read Message Center, [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) and [Microsoft 365 blog](https://go.microsoft.com/fwlink/?LinkId=626089) regularly.
+- Read Message Center, [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) and [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089) regularly.
 
 - Set up pilot teams to preview new functionality using Monthly Channel.
 
@@ -318,7 +318,7 @@ Microsoft's role
 
 - Listen to feedback on the [Office 365 ](https://go.microsoft.com/fwlink/p/?linkid=860047) area of the Microsoft Tech Community and in the admin feedback tool.
 
-- Update [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?LinkID=529454) statuses and add new features.
+- Update [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) statuses and add new features.
 
 Customer's role
 
@@ -341,7 +341,7 @@ You choose when and how updates are deployed to your organization by configuring
 
 ### How to Apply Updates
 
-You can decide how updates are deployed to your users' computers. You can allow the client computers to automatically receive updates over the Internet or from an on-premises location. Alternatively, you might want to have more control by packaging the updates yourself and manually delivering them to client computers over your network.
+You can decide how updates are deployed to your users' computers. You can allow the client computers to automatically receive updates over the internet or from an on-premises location. Alternatively, you might want to have more control by packaging the updates yourself and manually delivering them to client computers over your network.
 
 #### Methods for applying Office updates to client computers
 
@@ -350,8 +350,8 @@ The following table explains three methods you can use to apply Office updates t
 
 | **Automatic**                                                                                                                                      | **Manual**                                                                                                                                                      |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **From the Internet** <br/>                                                                                                                        | **From an on-premises location** <br/>                                                                                                                          |
-| Microsoft makes an updated build available on the Internet. The client computers automatically install the updates when they are available.  <br/> | An administrator downloads the updated build to an on-premises location. The client computers automatically install the updates when they are available.  <br/> |
+| **From the internet** <br/>                                                                                                                        | **From an on-premises location** <br/>                                                                                                                          |
+| Microsoft makes an updated build available on the internet. The client computers automatically install the updates when they are available.  <br/> | An administrator downloads the updated build to an on-premises location. The client computers automatically install the updates when they are available.  <br/> |
 
 The following illustration shows these methods:
 
@@ -373,7 +373,7 @@ To decide which method to use, consider the following scenarios:
 
 - Managed or un-managed computers?
 
-  - <strong>Allow automatic updates from the Internet for...</strong>Consumers and small businesses without an IT department.
+  - <strong>Allow automatic updates from the internet for...</strong>Consumers and small businesses without an IT department.
 
   - <strong>Deploy from an on-premises location when...</strong>You want to control when updates are pushed out to your organization's computers.
 
@@ -388,11 +388,11 @@ Use the following methods to configure which channels are used by which client c
 <a name="Related"> </a>
 ## Related topics
 
-[Overview of update channels for Office 365 ProPlus](overview-of-update-channels-for-office-365-proplus.md)
+[Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
 
-[Overview of Windows as a service](https://go.microsoft.com/fwlink/?LinkId=847278)
+[Overview of Windows as a service](https://go.microsoft.com/fwlink/p/?LinkId=847278)
 
-[Microsoft cloud IT architecture resources](https://go.microsoft.com/fwlink/?LinkId=690243)
+[Microsoft cloud IT architecture resources](https://go.microsoft.com/fwlink/p/?LinkId=690243)
 
-[Release information for updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?LinkId=626090)
+[Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkId=626090)
 

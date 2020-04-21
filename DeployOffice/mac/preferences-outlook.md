@@ -187,7 +187,7 @@ Prevent users from viewing local **On My Computer** folders in the sidebar.
 
 ### Specify when pictures are downloaded for email
 
-Set when pictures are automatically downloaded from the Internet for email.
+Set when pictures are automatically downloaded from the internet for email.
 
 |||
 |:-----|:-----|

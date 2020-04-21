@@ -14,20 +14,20 @@ description: "Learn about the data collection process and how to configure setti
 
 # Manage the privacy of data monitored by Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 
 Office Telemetry Dashboard is an Excel workbook that displays compatibility and inventory data about the Office files, Office add-ins, and Office solutions that are used in an organization. Office Telemetry Dashboard displays the file names and titles of documents in each user's Most Recently Used list, which might reveal personal or confidential information about the user or organization. The names of add-ins and other solutions that are used by Office are also displayed. In this article, you can learn about settings in Office Telemetry Dashboard and the Office Telemetry Agent that help you protect user privacy by disguising file names and titles or by preventing data for selected applications or solutions from being reported altogether.
 
 The agent collects inventory, usage, and health data and uploads it to a shared folder, where it is processed by a service named "Office Telemetry Processor" and inserted into an SQL database. Office Telemetry Dashboard connects to this database so that it can show the usage of Office files, add-ins, and solutions.
 
-The agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the agent never generates or collects any data until you enable logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
+The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2016, and Office 2013 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the agent never generates or collects any data until you enable logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
 
 
 <a name="Configure"> </a>  

@@ -22,16 +22,16 @@ There are two basic ways that you, as an admin, can deploy Office for Mac to use
     
 - Download the installer package file to your local network, and then use your software distribution tools to deploy Office for Mac to your users
     
-If you have an Office 365 plan, you can provide your users with instructions on [how to download and install](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) Office for Mac for themselves. To install Office for Mac, a user has to be administrator on the Mac or know an administrator account name and password. 
+If you have an Office 365 (or Microsoft 365) plan, you can provide your users with instructions on [how to download and install](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) Office for Mac for themselves. To install Office for Mac, a user has to be administrator on the Mac or know an administrator account name and password. 
   
 But, if you deploy Office for Mac for your users, you have more control over the deployment, including which users get Office  for Mac and when. To plan your deployment, review the following information.
   
 ## Download Office for Mac to your local network
 
 The easiest way to download Office for Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet.  Here are the links to the installer packages for the Office suite, which contains all the applications:
-- [Office for Mac](https://go.microsoft.com/fwlink/?linkid=525133) (for Office 365 plans)
-- [Office 2019 for Mac](https://go.microsoft.com/fwlink/?linkid=525133) (for retail or volume licensed versions)
-- [Office 2016 for Mac](https://go.microsoft.com/fwlink/?linkid=871743) (for retail or volume licensed versions)
+- [Office for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (for Office 365 or Microsoft 365 plans)
+- [Office 2019 for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (for retail or volume licensed versions)
+- [Office 2016 for Mac](https://go.microsoft.com/fwlink/p/?linkid=871743) (for retail or volume licensed versions)
 
 > [!NOTE]
 > - Installer and update packages for individual applications are also available on the Office CDN. For links to those, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
@@ -51,7 +51,7 @@ Whichever deployment method you decide to use, the following information can hel
   
 - **What's new:** Before you deploy, review the information about [what's new for admins](what-s-new-for-admins-in-office-for-mac.md) in Office for Mac. This includes information about system requirements, language support, and new features. 
     
-- **Side-by-side installation:** You can't have Office 2016 for Mac and Office 2019 for Mac installed on the same computer. Also, you can't have Office for Mac (from an Office 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same computer.
+- **Side-by-side installation:** You can't have Office 2016 for Mac and Office 2019 for Mac installed on the same computer. Also, you can't have Office for Mac (from an Office 365 or Microsoft 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same computer.
     
 - **Deploying individual apps:**  Installer package files for individual applications are available on the Office Content Delivery Network (CDN). For links to those, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
     
