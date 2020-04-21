@@ -543,7 +543,7 @@
     {
       "source_path": "DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
