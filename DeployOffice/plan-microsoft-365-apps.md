@@ -23,13 +23,13 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud. 
 
-![Deployment framework for Microsoft 365 Apps](images/plan-microsoft-365-apps-01.png)
+![Deployment framework for Microsoft 365 Apps](images/plan-office-365-proplus-01.png)
 
 ## Before you begin 
 
 If you haven't already, complete the [assessment of your environment and infrastructure](assess-microsoft-365-apps.md). This assessment will help you make key decisions as part of planning your deployment.
 
-![Deploy with ODT or Configuration Manager](images/plan-microsoft-365-apps-03.png)
+![Deploy with ODT or Configuration Manager](images/plan-office-365-proplus-03.png)
 
 ## Step 1 - Choose how to deploy
 

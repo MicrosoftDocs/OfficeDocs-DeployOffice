@@ -463,17 +463,17 @@
     {
       "source_path": "DeployOffice/assess-office-365-proplus.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/assess-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/plan-office-365-proplus.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/deployment-guide-for-office-365-proplus.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     }
   ]
 }
