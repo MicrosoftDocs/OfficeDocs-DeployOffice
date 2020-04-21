@@ -962,8 +962,6 @@ The following fields are collected:
 
 - **StoreType** - indicates the origin of the app
 
-- **TelemetryId** - telemetry id based on the signed in identity
-
 
 #### Office.Extensibility.Catalog.ExchangeGetEntitlements
 
@@ -2895,9 +2893,15 @@ The following fields are collected:
 
 - **Data_Doc_WopiServiceId** - A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
 
+- **Data_HWModel** – A string value logging the model of iPad or iPhone device.
+
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. from which UI element or triggered by another app.
+
+- **Data_IsDocumentAlreadyOpen** – Whether or not the file is already open.
+
+- **Data_IsInterrupted** – Whether or not the file open operation was interrupted by app transitioning to background.
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
 
@@ -4348,8 +4352,6 @@ The event is collected for the Office app for Android. It records when a PDF ope
 The following fields are collected:
 
 - **Data_Doc_FileOpSessionID** - Unique ID for a Document Session
-
-- **Data_Doc_URLHash** - A GUID for the file URL
 
 - **Data_ErrorCode** - error in case of file open failures/download failures / download canceled
 
@@ -7705,7 +7707,7 @@ The signal used to indicate OneNote App is in foreground.  The telemetry is used
 
 The following fields are collected: None
 
-#### OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch
+#### OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 The critical signal used to ensure OneNote users can successfully launch the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -7915,6 +7917,8 @@ The following fields are collected:
   - **Data\_FileUrlLocation -** Predefined set of values of where document is stored (NetworkShare, LocalDrive, ServerOther etc.)
 
   - **Data\_FirstSlideCompressedSize -** compressed size of first slide zip part (usually Slide1.xml)
+
+  - **Data_FIsAutoBackupFile-** Is this file an auto backup file?
 
   - **Data\_FIsDownloadFileInBgThreadEnabled -** Is downloading in background thread enabled?
 
@@ -9072,6 +9076,16 @@ The following fields are collected:
 
 - **com.** (e.g. com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Manufacturer specific configuration values provided by the Android platform
 
+- **crash_report_sdk** - SDK to send crash logs. Either Hockey or AppCenter
+
+- **crash_type** - crash_type will have java, native, non-fatal as types.
+
+     - java - if crash recorded on application Layer.
+
+     - native - if crash recored on native layer within the app. 
+
+     - non-fatal - crashes being recorded to debug any feature. Application won’t crash but it will upload non-fatal crash logs to help in debugging a feature.
+
 - **device_brand** - Device brand (manufacturer or carrier) as indicated by android.os.Build#BRAND
 
 - **device_ID** - Device unique ID (IMEI)
@@ -9622,11 +9636,15 @@ The following fields are collected:
 
 - **account_counter** - tracks the number of accounts associated for each type of calendar, e.g. 2 for Gmail calendar and whether that account is using our new sync service
 
+- **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
+
 - **component_name** - Tells us the name of the calendar component such as Agenda view or Day view to help us detect performance issues impacting a specific component in the calendar
 
 - **display_frame_data** - Tracks the time spent on displaying every 60 frames to determine if there are performance issues. 
 
 - **orientation** - Tells us whether the device was in portrait or landscape mode to help us detect performance issues impacting a specific device orientation
+
+- **taskId** – TaskId will give us the current instance’s taskId. This will be required in multi instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
 - **view_duration** - Tells us how long it took to render the various UI calendar components to help us detect performance issues impacting your calendar experience
 
@@ -9690,6 +9708,8 @@ The following fields are collected:
 
 - **age** - age of the person (used to confirm compliance with age limitations on ads)
 
+- **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
+
 - **component_name** - the name of the component/view which is active during the filtering
 
 - **has_hx** - whether the device has at least one Hx (our new email syncing service) account
@@ -9707,6 +9727,8 @@ The following fields are collected:
 - **orientation** - the screen orientation at the time of the even (portrait or landscape)
 
 - **sub_error_type** - detailed error type
+
+- **taskId** – TaskId will give us the current instance’s taskId. This will be required in multi instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
 - **total_count** - total frames displayed by the component
 
@@ -9903,6 +9925,8 @@ The following fields are collected:
 - **ad_shown** - whether an add was shown (if ads enabled)
  
 - **age** - age of the person (used to confirm compliance with age limitations on ads)
+
+- **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
  
 - **component_name** - the name of the component/view which is active during the filtering
  
@@ -9923,6 +9947,8 @@ The following fields are collected:
 - **orientation** - the screen orientation at the time of the even (portrait or landscape)
  
 - **sub_error_type** - detailed error type
+
+- **taskId** – TaskId will give us the current instance’s taskId. This will be required in multi instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
  
 - **total_count** - total frames displayed by the component
  
@@ -10471,6 +10497,8 @@ The following fields are collected:
 - **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
 
 - **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, i.e. when did this action start and end, etc. 
+
+- **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
 
