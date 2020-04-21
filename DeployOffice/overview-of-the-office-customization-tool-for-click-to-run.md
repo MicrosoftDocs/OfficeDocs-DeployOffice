@@ -54,7 +54,7 @@ Follow these steps to create a configuration file that can be used by the Office
 11. If you are deploying a volume-licensed version of Office, Visio, or Project, specify the appropriate license key in **Licensing and activation** settings. Note that Microsoft 365 Apps is not volume licensed and does not require a KMS or MAK activation. For more details, see [Overview of volume activation of Office](vlactivation/plan-volume-activation-of-office.md).
 12. In the **General** section, type your organization name and a description for this particular configuration. For example, you might want to use this file to install the 64-bit version of Office for your finance department.
 13. Choose whether to automatically accept the EULA. 
-14. Choose whether to enabled shared computer activation. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md).
+14. Choose whether to enabled shared computer activation. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
 15. In the **Application preferences** section, choose what preferences to apply when deploying Office. You can search for a setting, filter the preferences by Office app, and learn more about each setting by clicking it and reviewing the detailed description.
 16. Click **Finish**, review the configured settings in the right-hand pane, and then click **Export**.
 17. Accept the terms in the license agreement, name the configuration file, and then click **Export** or, if you're saving the configuration file to the cloud, click **Done**. 

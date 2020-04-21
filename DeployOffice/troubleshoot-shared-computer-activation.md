@@ -116,7 +116,7 @@ Microsoft places a limit on the number of shared computers that a user can activ
 ![Too many computer activated](images/1166f881-87da-4667-a4bd-e92c23859de2.png)
   
 ## Related topics
-[Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md)
+[Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
   
 [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 

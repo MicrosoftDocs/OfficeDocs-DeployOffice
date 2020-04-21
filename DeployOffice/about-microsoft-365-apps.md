@@ -67,7 +67,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - Users can install Microsoft 365 Apps on up to five different computers with a single Office 365 license. For example, a user can have Microsoft 365 Apps installed on a computer in the office, on a laptop to use when traveling, and on a home computer. Users can also install on up to 5 tablets and 5 phones.
     
-- Microsoft 365 Apps is offered as a subscription. If you cancel your subscription, Microsoft 365 Apps goes into reduced functionality mode. In reduced functionality mode, users can open and view existing Office files, but users can't use most of the other features of Microsoft 365 Apps. For more information, see [Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md).
+- Microsoft 365 Apps is offered as a subscription. If you cancel your subscription, Microsoft 365 Apps goes into reduced functionality mode. In reduced functionality mode, users can open and view existing Office files, but users can't use most of the other features of Microsoft 365 Apps. For more information, see [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
     
 - To use Microsoft 365 Apps, a user must have an Office 365 (or Microsoft 365) account and have been assigned a license. If the user's license or account is removed, the user's installations of Microsoft 365 Apps go into reduced functionality mode.
     

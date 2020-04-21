@@ -62,7 +62,7 @@ Microsoft 365 Apps uses a standard Microsoft technology called Activation &amp; 
 For a description of the data sent, see the Activation section of the [Windows 8 and Windows Server 2012 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=313210)
   
 ## Related topics
-[Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
+[Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
   
 [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 

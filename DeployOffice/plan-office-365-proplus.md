@@ -170,7 +170,7 @@ To help you remove prior versions of Office that use Windows Installer (MSI) as 
 
 If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Microsoft 365 Apps. 
 
-With shared computer activation enabled, any user that has been assigned a Microsoft 365 Apps license can log on to the computer and use the Office apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md).   
+With shared computer activation enabled, any user that has been assigned a Microsoft 365 Apps license can log on to the computer and use the Office apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).   
 
 ## Review exit criteria
 

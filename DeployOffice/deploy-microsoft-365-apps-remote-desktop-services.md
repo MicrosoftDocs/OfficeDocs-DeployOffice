@@ -18,7 +18,7 @@ description: "If you use Remote Desktop Services (RDS) to provide shared compute
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps for enterprise on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md) to do the installation.
+If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps for enterprise on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-shared-computer-activation.md) to do the installation.
 
 The following are two common RDS scenarios:
 
@@ -78,7 +78,7 @@ Here are the basic steps of how to install Microsoft 365 Apps for enterprise on 
 
     You set the display level to "None" to do a silent installation of Microsoft 365 Apps for enterprise. This prevents Microsoft 365 Apps for enterprise from trying to activate during the installation. This also means that you won't see any user interface elements during the installation, such as the progress of the installation or error messages.
 
-    You use the SharedComputerLicensing setting to enable [shared computer activation](overview-of-shared-computer-activation-for-office-365-proplus.md), which is required to use Microsoft 365 Apps for enterprise on a shared computer.
+    You use the SharedComputerLicensing setting to enable [shared computer activation](overview-shared-computer-activation.md), which is required to use Microsoft 365 Apps for enterprise on a shared computer.
 
 4. Use the [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md) and the configuration.xml file to install Microsoft 365 Apps for enterprise on the RD Session Host server.
 
@@ -115,8 +115,8 @@ After you've completed all the RDS configuration steps, users can connect to any
 ## Related topics
 <a name="VM"> </a>
 
-[Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md)
+[Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
 
-[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
+[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
 
 [Remote Desktop Services](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/welcome-to-rds)

@@ -76,6 +76,6 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 
-- [Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
+- [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
 
-- [Overview of shared computer activation for Microsoft 365 Apps](overview-of-shared-computer-activation-for-office-365-proplus.md)
+- [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)

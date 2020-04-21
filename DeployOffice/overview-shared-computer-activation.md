@@ -34,7 +34,7 @@ Shared computer activation lets you to deploy Microsoft 365 Apps to a computer i
 
 The most common shared computer activation scenario is to [deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office programs, such as Word or Excel, at the same time on the remote computer.
   
-Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md).
+Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
 
 Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
   
@@ -64,7 +64,7 @@ The [Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md), co
 <Property Name="SharedComputerLicensing" Value="1" />
 ```
 
-After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md#Enabled) on that computer.
+After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
   
 > [!NOTE]
 > Here are some other ways that you can enable shared computer activation:
@@ -142,8 +142,8 @@ To configure licensing token roaming, you can use either the Office Deployment T
 ## Related topics
 [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 
-[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md)
+[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
 
-[Overview of licensing and activation in Microsoft 365 Apps](overview-of-licensing-and-activation-in-office-365-proplus.md)
+[Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
   
 
