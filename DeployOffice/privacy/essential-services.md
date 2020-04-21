@@ -6141,7 +6141,7 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-– **AppID** – The identifier of application that has download failure.
+- **AppID** – The identifier of application that has download failure.
 
 - **AppInfo_Language** - The language the application is running under
 
@@ -6159,7 +6159,7 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
-– **Error** – The error observed during download.
+- **Error** – The error observed during download.
 
 - **Event_ReceivedTime** - The time at which telemetry was received
 
@@ -6177,7 +6177,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-– **UpdateID** – The identifier of the update being downloaded.
+- **UpdateID** – The identifier of the update being downloaded.
 
 
 ### downloadtask_downloadsuccess
@@ -6188,7 +6188,7 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-– **AppID** – The identifier of application.
+- **AppID** – The identifier of application.
 
 - **AppInfo_Language** - The language the application is running under
 
@@ -6222,7 +6222,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-– **UpdateID** – The identifier of downloaded update.
+- **UpdateID** – The identifier of downloaded update.
 
 
 ### fba_checkforupdate
@@ -11355,7 +11355,7 @@ The following fields are collected:
 
   - **ModuleSize -** Failing module size in bytes.
 
-  - **OfficeArchitectureText-** The architecture of Office product as string (e.g. x86, arm).
+  - **OfficeArchitectureText -** The architecture of Office product as string (e.g. x86, arm).
 
   - **OfficeUILang –** The language of the User Interface in the Office build.
 
