@@ -35,7 +35,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
 
 - [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md)
   
-- [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+- [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
   
 - [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
   

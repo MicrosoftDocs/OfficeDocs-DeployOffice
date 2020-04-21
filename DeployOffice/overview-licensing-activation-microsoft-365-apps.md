@@ -66,7 +66,7 @@ If the user hasn't been assigned a license, and they try to use Microsoft 365 Ap
 
 ## Related topics
 
-[Licensing and activation data sent to Office 365 by Microsoft 365 Apps](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
+[Licensing and activation data sent to Office 365 by Microsoft 365 Apps](licensing-activation-data-sent-microsoft-365-apps.md)
   
 [About Microsoft 365 Apps in the enterprise](about-microsoft-365-apps.md)
   
