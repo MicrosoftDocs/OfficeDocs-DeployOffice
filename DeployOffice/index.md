@@ -15,7 +15,7 @@ description: Office deployment
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsC">
                             <li>
-                                <a href="/DeployOffice/deployment-guide-for-office-365-proplus">
+                                <a href="/DeployOffice/deployment-guide-microsoft-365-apps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

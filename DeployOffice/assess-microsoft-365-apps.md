@@ -70,7 +70,7 @@ To complete that assessment, do the following steps:
 
 4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
 
-As part of your Office deployment, you'll deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md).  
+As part of your Office deployment, you'll deploy Office first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group will then continue to be a pilot for testing future updates from Office ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).  
 
 ## Review exit criteria 
 
@@ -97,4 +97,4 @@ Before planning your deployment, make sure you've completed all the steps for as
 
 ## Next step
 
-[Plan your deployment of Microsoft 365 Apps](plan-office-365-proplus.md). 
+[Plan your deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md). 

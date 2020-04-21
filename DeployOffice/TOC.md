@@ -1,13 +1,13 @@
  
 # Get started
-## [Deployment guide](deployment-guide-for-office-365-proplus.md)
+## [Deployment guide](deployment-guide-microsoft-365-apps.md)
 ## [What's new](whats-new-office-it-pros.md)
 ## [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
 
 # Prepare
-## [Assess your environment and requirements](assess-office-365-proplus.md)
-## [Plan your enterprise deployment](plan-office-365-proplus.md)
+## [Assess your environment and requirements](assess-microsoft-365-apps.md)
+## [Plan your enterprise deployment](plan-microsoft-365-apps.md)
 ## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
 ## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 

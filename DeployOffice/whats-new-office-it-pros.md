@@ -152,6 +152,6 @@ You can now  use the Office Deployment Tool to apply application preferences to 
 
 To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can now use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
-For best practices for planning your deployment of Microsoft 365 Apps, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-office-365-proplus.md) and [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md).
+For best practices for planning your deployment of Microsoft 365 Apps, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md) and [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
 
 

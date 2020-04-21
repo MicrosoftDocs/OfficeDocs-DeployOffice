@@ -725,5 +725,5 @@ For more details on application preferences, see [Apply application preferences]
 ## Related topics
 
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
-- [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
+- [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
 - [Languages, culture codes, and companion proofing languages](overview-of-deploying-languages-in-office-365-proplus.md#languages-culture-codes-and-companion-proofing-languages)

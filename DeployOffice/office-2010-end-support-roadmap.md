@@ -64,7 +64,7 @@ Unlike Office 2010, Microsoft 365 Apps uses a user-based licensing model that al
     
 - [About Microsoft 365 Apps in the enterprise](about-microsoft-365-apps.md)
     
-- [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md)
+- [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
     
 ## Review what's changed since Office 2010
 
@@ -84,7 +84,7 @@ Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 
   
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](assess-office-365-proplus.md#step-4---assess-application-compatibility). 
+Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](assess-microsoft-365-apps.md#step-4---assess-application-compatibility). 
   
 To help with assessing application compatibility with Microsoft 365 Apps, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
   
@@ -102,7 +102,7 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
     
 - Cloud infrastructure, including existing Office 365 (or Microsoft 365) capabilities, user licensing, and identity.
     
-Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-office-365-proplus.md).
+Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md).
   
 ## Review new Group Policy settings
 
@@ -114,7 +114,7 @@ You can download the Administrative Template files (ADMX/ADML) for Group Policy 
 
 You can deploy Microsoft 365 Apps from the cloud, from a local source on your network, or with Microsoft Endpoint Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Microsoft 365 Apps, including which applications and languages are installed on which client computers.
   
-For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md). 
+For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md). 
   
 ## Choose how often to update Office
 
@@ -138,7 +138,7 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
   
 ## Related topics
 
-- For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](deployment-guide-for-office-365-proplus.md).
+- For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md).
     
 - To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2010-servers-and-products).
     

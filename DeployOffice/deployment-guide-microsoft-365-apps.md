@@ -29,9 +29,9 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
 
 - [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) 
 
-- [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-office-365-proplus.md)
+- [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md)
  
-- [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md)
+- [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md)
 
 - [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md)
   

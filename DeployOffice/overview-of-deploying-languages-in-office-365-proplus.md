@@ -20,7 +20,7 @@ ms.custom: Ent_Office_ProPlus
 >
 > For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
 
-This article covers the options for deploying languages for Microsoft 365 Apps, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-office-365-proplus.md). 
+This article covers the options for deploying languages for Microsoft 365 Apps, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-microsoft-365-apps.md). 
 
 The guidance in this article applies to the following Office products:
 
@@ -41,7 +41,7 @@ When deploying multiple languages in a large organization, we recommend these be
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
 - When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-microsoft-365-apps), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as a previous MSI installation](#install-the-same-languages-as-a-previous-msi-installation). 
-- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-office-365-proplus.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
+- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-microsoft-365-apps.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
 - If you deploy a subscription version of the Project or Visio desktop app to a device that already has Office installed, you can [automatically deploy them in the same languages as the installed version of Office](#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-microsoft-365-apps).
 - If you use some languages only as editing tools, you can [deploy just the proofing tools](#deploy-proofing-tools) instead of full language packs to conserve network bandwidth.
 
@@ -57,7 +57,7 @@ To deploy Microsoft 365 Apps in multiple languages, you just need to include the
 
 If you deploy Office from a local source on your network, you must download your languages to that source, in the same way that you download the Office package. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). When deploying from a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). 
 
-For more details on standard deployments, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md).
+For more details on standard deployments, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
 
 The primary language selected in the Office Customization Tool determines the Shell UI language. The Shell UI is the language that is used to display shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you must uninstall Office and reinstall it. 
 
@@ -283,4 +283,4 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 - [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-- [Plan your enterprise deployment of Microsoft 365 Apps](plan-office-365-proplus.md)
+- [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md)

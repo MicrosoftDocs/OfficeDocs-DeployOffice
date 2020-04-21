@@ -12,7 +12,7 @@
     },
     {
       "source_path": "DeployOffice/choose-how-to-deploy-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
@@ -22,27 +22,27 @@
     },
     {
       "source_path": "DeployOffice/what-s-new-deploying-office-365-proplus-in-the-enterprise.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/plan-your-upgrade-from-office-365-proplus-2013-to-2016.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/upgrade-from-office-365-proplus-2013-to-2016.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-using-offscrub.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -97,27 +97,27 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-resources.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -132,27 +132,27 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessing-your-infrastructure.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-focus-areas-for-assessment.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -217,22 +217,22 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessmentreference-materials.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-reference-material.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planningreference-materials.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -287,27 +287,27 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deploying-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-scenarios.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-enterprise-managed-scenario.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-management-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-recommended-deployment-scenarios.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -459,6 +459,21 @@
       "source_path": "DeployOffice/overview-of-the-office-2016-deployment-tool.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/overview-office-deployment-tool",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/assess-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/assess-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/plan-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deployment-guide-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
+      "redirect_document_id": false
     }
   ]
 }

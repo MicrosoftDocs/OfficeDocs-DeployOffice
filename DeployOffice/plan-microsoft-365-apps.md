@@ -23,13 +23,13 @@ description: "This article gives step-by-step instructions for how to plan your 
 
 Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud. 
 
-![Deployment framework for Microsoft 365 Apps](images/plan-office-365-proplus-01.png)
+![Deployment framework for Microsoft 365 Apps](images/plan-microsoft-365-apps-01.png)
 
 ## Before you begin 
 
-If you haven't already, complete the [assessment of your environment and infrastructure](assess-office-365-proplus.md). This assessment will help you make key decisions as part of planning your deployment.
+If you haven't already, complete the [assessment of your environment and infrastructure](assess-microsoft-365-apps.md). This assessment will help you make key decisions as part of planning your deployment.
 
-![Deploy with ODT or Configuration Manager](images/plan-office-365-proplus-03.png)
+![Deploy with ODT or Configuration Manager](images/plan-microsoft-365-apps-03.png)
 
 ## Step 1 - Choose how to deploy
 
@@ -100,7 +100,7 @@ All the channels will receive updates for security and critical non-security iss
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
-- Deploy the Semi-Annual Channel (Targeted) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-office-365-proplus.md). 
+- Deploy the Semi-Annual Channel (Targeted) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
 
 - Deploy the Semi-Annual Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with the Semi-Annual Channel (Targeted).
 
