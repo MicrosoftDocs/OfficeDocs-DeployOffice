@@ -19,9 +19,7 @@ description: "This article gives step-by-step instructions for how to assess you
 # Assess your environment and requirements for deploying Microsoft 365 Apps
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Follow the steps in this article to assess your environment and requirements before deploying Microsoft 365 Apps in your organization. This assessment will help you make key decisions as part of planning your deployment. 
 
