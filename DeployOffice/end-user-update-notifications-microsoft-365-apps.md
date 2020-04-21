@@ -39,12 +39,12 @@ Users also see notifications if they go to **File > Account** in an Office progr
   
 ![Office updates are available](images/574a065f-f666-481f-b2f7-5cc56d7c97f9.jpg)
   
-If you don't want your users to see these types of notifications, you can [use Group Policy to hide the notifications](configure-update-settings-for-office-365-proplus.md).
+If you don't want your users to see these types of notifications, you can [use Group Policy to hide the notifications](configure-update-settings-microsoft-365-apps.md).
   
 ## Notifications your users see when you set an update deadline for Microsoft 365 Apps
 <a name="Deadline"> </a>
 
-To make sure that your users apply updates to Microsoft 365 Apps, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates.
+To make sure that your users apply updates to Microsoft 365 Apps, you can [configure a deadline](configure-update-settings-microsoft-365-apps.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates.
 
 > [!NOTE]
 > Starting with Configuration Manager, version 1802, if any Office applications are running during an Office update enforcement, the Office applications will not be forced to close. Instead, the update install will return as requiring a system restart 
@@ -69,9 +69,9 @@ This gives users fifteen minutes to save and close any work. When the countdown 
 > The **Hide update notifications** Group Policy setting doesn't hide notifications related to deadlines.
   
 ## Related topics
-[Overview of the update process for Microsoft 365 Apps](overview-of-the-update-process-for-office-365-proplus.md)
+[Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
   
-[Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md)
+[Choose how to manage updates to Microsoft 365 Apps](choose-how-manage-updates-microsoft-365-apps.md)
   
-[Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md)
+[Configure update settings for Microsoft 365 Apps](configure-update-settings-microsoft-365-apps.md)
 

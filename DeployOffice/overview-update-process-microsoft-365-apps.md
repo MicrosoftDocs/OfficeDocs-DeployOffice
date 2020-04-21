@@ -47,7 +47,7 @@ When you install Microsoft 365 Apps, a scheduled task called Office Automatic Up
     
 ![Automatic updates](images/2a4e0cfb-828b-4881-9db9-468a2b597b7d.jpg)
   
-When the task runs, it compares the version of Microsoft 365 Apps on the computer to the version of Microsoft 365 Apps on the update location. The update location is where Office looks for updates — for example, on a network share or from the internet. By default, Microsoft 365 Apps looks on the internet for updates, but you can [configure the update location](configure-update-settings-for-office-365-proplus.md).
+When the task runs, it compares the version of Microsoft 365 Apps on the computer to the version of Microsoft 365 Apps on the update location. The update location is where Office looks for updates — for example, on a network share or from the internet. By default, Microsoft 365 Apps looks on the internet for updates, but you can [configure the update location](configure-update-settings-microsoft-365-apps.md).
   
 If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. After that, the next step — downloading the updates — starts.
   
@@ -68,14 +68,14 @@ If the download process is interrupted — for example, by a temporary loss of n
 
 After the compressed files are downloaded, they're uncompressed and moved from the Download folder to the Apply folder. The scheduled task then attempts to install the updates in the background, without requiring any user intervention.
   
-Updates can't be applied if the Office program that has to be updated is being used by the user. If this is the case, the task tries to apply the updates the next time that the scheduled task runs. If updates can't be applied for several days, [users see a message](end-user-update-notifications-for-office-365-proplus.md) that updates are ready to install. If the user restarts the computer and updates haven't been applied, the updates are applied as Windows starts. This won't prevent the user from logging in.
+Updates can't be applied if the Office program that has to be updated is being used by the user. If this is the case, the task tries to apply the updates the next time that the scheduled task runs. If updates can't be applied for several days, [users see a message](end-user-update-notifications-microsoft-365-apps.md) that updates are ready to install. If the user restarts the computer and updates haven't been applied, the updates are applied as Windows starts. This won't prevent the user from logging in.
   
-To make sure that users apply updates, you can [configure a deadline](configure-update-settings-for-office-365-proplus.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates. Users are given [notifications leading up to the deadline](end-user-update-notifications-for-office-365-proplus.md).
+To make sure that users apply updates, you can [configure a deadline](configure-update-settings-microsoft-365-apps.md). The deadline specifies a date and time by when the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates. Users are given [notifications leading up to the deadline](end-user-update-notifications-microsoft-365-apps.md).
   
 ## Related topics
-[Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md)
+[Choose how to manage updates to Microsoft 365 Apps](choose-how-manage-updates-microsoft-365-apps.md)
   
-[Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md)
+[Configure update settings for Microsoft 365 Apps](configure-update-settings-microsoft-365-apps.md)
   
-[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-for-office-365-proplus.md)
+[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-microsoft-365-apps.md)
 

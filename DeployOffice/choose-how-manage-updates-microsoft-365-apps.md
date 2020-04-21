@@ -28,7 +28,7 @@ There are four ways that admins typically apply updates for Microsoft 365 Apps:
     
 Which way is right for your organization depends on how much administrative effort you want to expend and how much control that you want to have over the update process.
 
-In most cases, you use the Office Deployment Tool or Group Policy to [configure the appropriate update settings](configure-update-settings-for-office-365-proplus.md).
+In most cases, you use the Office Deployment Tool or Group Policy to [configure the appropriate update settings](configure-update-settings-microsoft-365-apps.md).
   
 > [!IMPORTANT]
 > Because individual updates aren't available for Microsoft 365 Apps, you can't use Windows Update or Windows Server Update Services (WSUS) to download and apply individual updates to Microsoft 365 Apps. 
@@ -63,16 +63,16 @@ Instead of using automatic updates, you can deploy an updated version of Microso
   
 This option is useful if you want to control which version of Microsoft 365 Apps users have, and you want to control which users get updated and when they get updated. This option provides the most control, but also requires the most administrative effort and has a high impact on user downtime and network load. 
   
-If you decide to use this option, you'll disable automatic updates. You can [control that setting](configure-update-settings-for-office-365-proplus.md) by using either the Office Deployment Tool or Group Policy.
+If you decide to use this option, you'll disable automatic updates. You can [control that setting](configure-update-settings-microsoft-365-apps.md) by using either the Office Deployment Tool or Group Policy.
   
 ## Related topics
   
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
   
-[Overview of the update process for Microsoft 365 Apps](overview-of-the-update-process-for-office-365-proplus.md)
+[Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
 
 [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
   
-[Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md)
+[Configure update settings for Microsoft 365 Apps](configure-update-settings-microsoft-365-apps.md)
   
-[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-for-office-365-proplus.md)
+[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-microsoft-365-apps.md)

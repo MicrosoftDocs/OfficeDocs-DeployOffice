@@ -71,9 +71,9 @@ Group Policy settings can be used regardless of whether users install Microsoft 
   
    
 ## Related topics
-[Overview of the update process for Microsoft 365 Apps](overview-of-the-update-process-for-office-365-proplus.md)
+[Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
   
-[Choose how to manage updates to Microsoft 365 Apps](choose-how-to-manage-updates-to-office-365-proplus.md)
+[Choose how to manage updates to Microsoft 365 Apps](choose-how-manage-updates-microsoft-365-apps.md)
   
-[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-for-office-365-proplus.md)
+[End-user update notifications for Microsoft 365 Apps](end-user-update-notifications-microsoft-365-apps.md)
 

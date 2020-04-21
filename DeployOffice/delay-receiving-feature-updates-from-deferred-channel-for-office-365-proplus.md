@@ -47,7 +47,7 @@ On the second Tuesday of each month, until March 2019, you need to update the Gr
   
 ## Delay receiving feature updates from Semi-Annual Channel when using an internal network location
 
-If you don't want to get updates from the Office CDN, you can use Group Policy or the Office Deployment Tool to specify the location for Office to look for updates. For example, every month you can use the Office Deployment Tool to download the latest build of Version 1708 of Semi-Annual Channel to a file share on your local network. Then, you can use Group Policy or the Office Deployment Tool to configure Office to look at that file share for updates. For more information, see [Configure update settings for Microsoft 365 Apps](configure-update-settings-for-office-365-proplus.md).
+If you don't want to get updates from the Office CDN, you can use Group Policy or the Office Deployment Tool to specify the location for Office to look for updates. For example, every month you can use the Office Deployment Tool to download the latest build of Version 1708 of Semi-Annual Channel to a file share on your local network. Then, you can use Group Policy or the Office Deployment Tool to configure Office to look at that file share for updates. For more information, see [Configure update settings for Microsoft 365 Apps](configure-update-settings-microsoft-365-apps.md).
   
 To download the latest build with the Office Deployment Tool, you need to configure both the Version and the Channel attributes in the Add element of the configuration.xml file.
   
