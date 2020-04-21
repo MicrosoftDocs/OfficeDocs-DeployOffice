@@ -14,9 +14,7 @@ description: "Provides recommendations, information, and links to help administr
 # Office 2007 end of support roadmap
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Office 2007 reached its end of support on October 10, 2017. If you haven't already begun to upgrade your Office 2007 environment, we recommend you start now.
   

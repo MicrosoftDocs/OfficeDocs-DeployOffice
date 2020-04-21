@@ -15,9 +15,7 @@ description: "Provides Office admins with information on how to use the MigrateA
 # Change a Microsoft 365 Apps installation from 32-bit to 64-bit
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Up to now, if you had the 32-bit version of Microsoft 365 Apps installed on a device and you wanted to change to the 64-bit version, you needed to uninstall the existing 32-bit version and then install the 64-bit version. It also required that you account for all the other deployment settings configured for that device, such as the update path and the installed languages, so that those settings would be included when you did the 64-bit installation.
 

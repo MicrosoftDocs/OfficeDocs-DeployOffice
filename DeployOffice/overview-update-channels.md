@@ -17,9 +17,7 @@ description: "Provides IT Pros with an overview of the update channels for Micro
 # Overview of update channels for Microsoft 365 Apps
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 One of the benefits of Microsoft 365 Apps is that Microsoft can provide new features for Office apps on a regular basis, through monthly updates. However, as the admin who deploys Microsoft 365 Apps to the users in your organization, you might want to have more control over how often your users get these new features. Microsoft provides you three options, called update channels, to control how often Microsoft 365 Apps is updated with new features. Here's an overview of the three options.
   

@@ -15,9 +15,7 @@ description: "Provides Office admins with an overview of how Microsoft Teams is 
 # Deploy Microsoft Teams with Microsoft 365 Apps
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 In the past, Microsoft Teams was a separate installation from Microsoft 365 Apps. But starting with Version 1902, Teams is included as part of ***new*** installations of Microsoft 365 Apps. If Teams is already installed on the device, no changes are made to that installation of Teams.
 

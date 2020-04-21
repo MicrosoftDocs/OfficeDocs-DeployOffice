@@ -17,9 +17,7 @@ description: "This article lists all the reference articles about deploying Micr
 # Reference articles for deploying Microsoft 365 Apps
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 This article lists reference articles about deploying Microsoft 365 Apps in an enterprise environment. To see more articles about Microsoft 365 Apps deployment, see the table of contents.
 

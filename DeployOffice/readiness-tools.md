@@ -17,9 +17,7 @@ description: "Provides IT Pros with info about the different application compati
 # Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Microsoft 365 Apps. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Microsoft 365 Apps. The answer can depend on a variety of factors, but in general our recommendation is:
 

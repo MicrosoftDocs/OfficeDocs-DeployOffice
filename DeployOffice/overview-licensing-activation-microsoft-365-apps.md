@@ -15,9 +15,7 @@ description: "Explains how to assign Microsoft 365 Apps licenses to users, and h
 # Overview of licensing and activation in Microsoft 365 Apps
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
   
 To deploy Microsoft 365 Apps to users in your organization, you start by assigning licenses to your users. Then, each user can install Microsoft 365 Apps on up to five computers. Each installation is activated and kept activated automatically by cloud-based services associated with Office 365 (or Microsoft 365). This means you don't have to keep track of product keys. It also means you don't have to figure out how to use other activation methods such as Key Management Service (KMS) or Multiple Activation Key (MAK). All you have to do is make sure you purchase enough licenses, keep your Office 365 (or Microsoft 365) subscription current, and make sure your users can connect to Office Licensing Service via the internet at least once every 30 days.
   

@@ -17,9 +17,7 @@ description: "Microsoft Endpoint Configuration Manager has the ability to manage
 # Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Microsoft Endpoint Configuration Manager has the ability to manage Office updates by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, as well as the subscription versions of the Project and Visio desktop apps.
 

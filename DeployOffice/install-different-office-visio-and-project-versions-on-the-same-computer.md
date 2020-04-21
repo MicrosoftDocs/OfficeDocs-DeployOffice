@@ -15,9 +15,7 @@ description: "Provides IT admins with information about which versions of Office
 # Supported scenarios for installing different versions of Office, Project, and Visio on the same computer
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 In many cases, you can install Office, Project, and Visio on the same computer. But, there are some combinations of Office, Project, and Visio that can't be installed together on the same computer.
 The two main things that determine whether Office, Project, and Visio can be installed together on the same computer are the [version](#office-releases-and-their-version-number) of the product and the [installation technology](#installation-technologies-used-by-office) used to install the product. What governs whether an installation scenario is supported are these two rules:
