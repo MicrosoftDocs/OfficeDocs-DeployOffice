@@ -27,10 +27,12 @@ Microsoft 365 Apps was designed to leverage Office 365 Content Delivery Network 
 
 The installation options are applicable to initial install\upgrade to Microsoft 365 Apps as well as subsequent additions, referred to as “2nd Installs” of language packs, proofing tools and the addition of products such as Visio or Project for existing installations.  Please see [Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps](build-dynamic-lean-universal-packages.md) for more information on this approach.
 
-
 The flowchart below is a comparison of install options, including consideration of network transport.  Network optimization features may include peer to peer technologies such as Configuration Manager Peer Cache or Delivery Optimization (DO) to reduce network bandwidth demands where possible.  
- 
-Note: Regardless of selection, the Office Deployment Tool (ODT) will be used to install Microsoft 365 Apps.  
+
+:::image type="content" source="../images/install-options-2.png" alt-text="Options for installing Microsoft 365 Apps":::
+
+Note: Regardless of selection, the [Office Deployment Tool (ODT)](../overview-of-the-office-2016-deployment-tool.md) will be used to install Microsoft 365 Apps.  
+
 Configuration Manager Hybrid – subset of content (Microsoft recommended)
 Advantages:
 •	Continue to use well-known established processes for controlling the installation time, user experience as well as compliance reporting
