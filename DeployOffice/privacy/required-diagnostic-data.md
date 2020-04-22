@@ -4345,6 +4345,38 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
+#### Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
+
+This event is collected for Union iOS, it records when a file open operation takes
+place. We collect this data to ensure good performance for all file opens on the app. 
+
+The following fields are collected:
+
+- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
+(only 1st party app info is being logged).
+
+- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
+
+- **Data_Doc_DownloadEndTime** - Timestamp for end of download of a cloud file.
+
+- **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
+
+- **Data_Doc_FileOpSessionID** - Unique Id for a Document Session.
+
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third party files app , wopi
+
+- **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
+
+- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
+
+- **Data_Doc_OpenStartTime** - Timestamp for start of open operation of a PDF file.
+
+- **Data_Doc_TelemetryReason** - Telemetry reason for the open event (eg: open from MRU or
+browse, File Activation, Protocol Activation, etc.).
+
+- **Doc_RenderDurationms** - Time to render a pdf file
+
+
 #### Office_OfficeMobile_PdfViewer_PdfFileOperations
 
 The event is collected for the Office app for Android. It records when a PDF open, close, or save operation takes place and is used to understand and prioritize the user experience based on PDF file operation information. The event enables us to keep the PDF open, close and save operations performing as expected, and to improve PDF file operation performance.
@@ -7269,6 +7301,22 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Status code of the returned result
 
+
+#### Office.Android.AccountStorageInfo
+
+This event determines the number of MSA and ADAL accounts in the registry and shared preferences. It enables the analysis of inconsistencies between data stores and helps us to stabilize app performance.
+
+The following fields are collected:
+
+- **RegistryADALCount**- Indicates no. of ADAL accounts in registry.
+
+- **RegistryLiveIdCount**- Indicates no. of MSA accounts in registry.
+
+- **SharedPrefADALCount**- Indicates no. of ADAL accounts in shared preferences.
+
+- **SharedPrefLiveIdCount**- Indicates no. of MSA accounts in shared preferences.
+
+
 #### Office.Android.AndroidOffice16BootLatency
 
 Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
@@ -7701,7 +7749,7 @@ The following fields are collected:
  
 - **USER_INTERACTED_DURING_EVENT** - Indicates if the user has interacted during booting
 
-#### OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground
+#### OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 The signal used to indicate OneNote App is in foreground.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -10243,6 +10291,26 @@ The following fields are collected:
   - **Data.Cid** - dynamically generated correlation identifier sent to the service when the service call was made to fetch the cloud policy. Used to correlate which call caused an issue while applying the policies on the cloud.
 
   - **Data.Last Error** - One of five string values (enumerators) to log which stage of policy application was being executed when the exception occurred
+
+#### Office.OneNote.Android.Sync.ProvisioningError
+
+The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health.
+
+The following fields are collected:
+
+- **AppSuspendedDuringEvent**: Returns boolean to indicate if app was suspended during provisioning
+
+- **ErrorCode** – Returns the error code responsible for failure of provisioning 
+
+- **NetworkConnection**: The type of network connectivity of the device in use
+
+- **NetworkDataExchange** - Records the number of bytes exchanged during provisioning.
+
+- **ServerType**: Returns the type of the server offering the service
+
+- **TimeTakenInMilliSeconds**: Returns time taken to complete provisioning in millisecond
+
+
 
 #### Office.Outlook.Desktop.BootPerfMetrics
 
