@@ -16,18 +16,18 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps for enterprise
+# Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
 
-As an admin, you might have to deploy Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) in your organization. But such a deployment is more than just Office: After the initial migration to Microsoft 365 Apps for enterprise, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Microsoft Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps for enterprise from a legacy Office is called **1st install**.
+As an admin, you might have to deploy Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus) in your organization. But such a deployment is more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**.
 
-This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps for enterprise. This method can greatly reduce long-term maintenance costs and effort in managed environments.
+This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
 ## The challenge
-When you plan your upgrade to Microsoft 365 Apps for enterprise, the actual upgrade from a legacy version to the always-current Microsoft 365 Apps for enterprise is front and center (1st install scenario). But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin (2nd install). Sometimes, after you upgrade your users, they might need any of the following components:
+When you plan your upgrade to Microsoft 365 Apps, the actual upgrade from a legacy version to the always-current Microsoft 365 Apps is front and center (1st install scenario). But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin (2nd install). Sometimes, after you upgrade your users, they might need any of the following components:
  
 - Additional language packs
 - Proofing tools
@@ -36,7 +36,7 @@ When you plan your upgrade to Microsoft 365 Apps for enterprise, the actual upgr
 
 Historically, each of these scenarios was addressed by creating a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~2.5 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
 
-But, especially in larger organizations, you often don't run a single installation of Microsoft 365 Apps for enterprise. You might have a mix of update channels (often SAC and SAC-T). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
+But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels (often SAC and SAC-T). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
 
 So in the end, you wouldn't have *1* package per component but *4*, covering each possible permutation of SAC/SAC-T and x86/x64. The end result would be:
 
@@ -46,9 +46,9 @@ So in the end, you wouldn't have *1* package per component but *4*, covering eac
 - High user impact, if you haven’t kept the source files current and installing a component will perform a downgrade just to perform an update to the current version soon after.
 - Low satisfaction for users who have to pick the matching package from many options presented in the software portal.
  
-While the initial upgrade to Microsoft 365 Apps for enterprise is a one-time activity, the scenarios described previously will be applicable over a longer period. Users might need additional components days, weeks, or even years after the initial deployment.
+While the initial upgrade to Microsoft 365 Apps is a one-time activity, the scenarios described previously will be applicable over a longer period. Users might need additional components days, weeks, or even years after the initial deployment.
 
-So, how do you build packages that are less costly to maintain over a long time frame and avoid the  downsides?
+So, how do you build packages that are less costly to maintain over a long time frame and avoid the downsides?
 
 ## The solution: Dynamic, lean, and universal packages
 
@@ -56,13 +56,13 @@ You can resolve these issues by implementing self-adjusting, small, and universa
 
 Build **dynamic** packages where you don’t hard-code anything. Use features of the [Office Deployment Tool (ODT)](https://go.microsoft.com/fwlink/p/?LinkID=626065) to enable the packages to self-adjust to the requirements:
 - Use [Version=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-Blog/New-feature-Make-changes-to-Office-deployments-without-changing/ba-p/816482) to prevent unexpected updates and stay in control of the version installed on a client. No hard coding of a build number, which gets outdated quickly, is required.
-- Use [Language=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Dynamically-match-already-existing-languages-when-installing/m-p/716927) to instruct Visio or Project, for example, to install by using the same languages that are already installed for Office. No need to list them or build a script that injects the required languages.
+- Use [Language=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Dynamically-match-already-existing-languages-when-installing/m-p/716927) to instruct e.g. Visio or Project to install with the same set of languages as Office is already using. No need to list them or build a script that injects the required languages.
  
 Build **lean** packages by removing the source files from the packages. This has multiple benefits:
 
 - Package size is much smaller, from 2.5 GB down to less than 10 megabytes for the ODT and its configuration file.
 - Instead of pushing a 2.5-GB install package to clients, you let clients pull what they need on demand from Office Content Delivery Network (CDN), which saves bandwidth.
-   - When you add Project to an existing Microsoft 365 Apps for enterprise installation, you need to download less than 50 megabytes, as Office shared components are already installed.
+   - When you add Project to an existing Microsoft 365 Apps installation, you need to download less than 50 megabytes, as Office shared components are already installed.
    - Visio installs are typically 100-200 megabytes, based on the number of languages, as the templates/stencils are a substantial part of the download.
    - Installing proofing tools is typically 30-50 megabytes, versus a full language pack, which is 200-300 megabytes.
 - A second install scenario is often less frequent, which lowers the internet traffic burden, ultimately reducing the impact.
@@ -76,7 +76,7 @@ Build **universal** packages by not hard coding things like the architecture or 
 
 The idea is to not hard code everything in the configuration file, but to instead utilize the cleverness of the Office Deployment Tool as much as possible.
 
-Let’s have a look at a "classic" package that was built to add Project to an existing install of Microsoft 365 Apps for enterprise. We have the source files (of ~2.5 gigabytes) and a configuration file, which explicitly states what we want to achieve:
+Let’s have a look at a "classic" package that was built to add Project to an existing install of Microsoft 365 Apps. We have the source files (of ~2.5 gigabytes) and a configuration file, which explicitly states what we want to achieve:
 
 ![Sample package](../images/lean5-pic1.jpg)
 
@@ -91,7 +91,7 @@ Let’s have a look at a "classic" package that was built to add Project to an e
 </Configuration>
 ```
  
-When we apply  the concepts of dynamic, lean, and universal packages, the result would look like this:
+When we apply the concepts of dynamic, lean, and universal packages, the result would look like this:
  
 ![Lean sample package](../images/lean5-pic2.jpg)
 
@@ -109,9 +109,9 @@ When we apply  the concepts of dynamic, lean, and universal packages, the result
 So what have we changed, and what are the benefits?
 
 - We removed the OfficeClientEdition-attribute, as the ODT will automatically match the installed version.
-   - Benefit: The configuration file now works for both *x*86 and *x*64 scenarios.
+   - Benefit: The configuration file now works for both x86 and x64 scenarios.
 - We removed the channel for the same reason. ODT will automatically match the already-assigned update channel.
-   - Benefit I: The package works for all update channels (Monthly, Semi-annual, SAC-T, and others).
+   - Benefit I: The package works for all update channels (Monthly, Semi-Annual, SAC-T, and others).
    - Benefit II: It also works for update channels you don’t offer as central IT. Some users are running Monthly Channel, some are on Insider builds? Don’t worry, it just works.
 - We added *Version=MatchInstalled*, which ensures that ODT will install the same version that's already installed.
    - Benefit: You're in control of versions deployed, with no unexpected updates.
@@ -138,7 +138,7 @@ Let’s have a brief look at other scenarios as well, like adding language packs
 </Configuration>
 ```
 
-If you’re running SAC as well as SAC-T and have an *x*86/*x*64 mixed environment, you'd need three additional files to cover the remaining configuration permutations. Or, you just go the dynamic, lean, and universal way:
+If you’re running SAC as well as SAC-T and have an x86/x64 mixed environment, you'd need three additional files to cover the remaining configuration permutations. Or, you just go the dynamic, lean, and universal way:
 
 ```
 <Configuration>
