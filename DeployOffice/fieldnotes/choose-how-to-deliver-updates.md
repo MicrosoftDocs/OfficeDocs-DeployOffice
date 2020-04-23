@@ -41,7 +41,7 @@ Network optimization is an important consideration when delivering Office update
 - Configuration Manager: Office 365 Client Management is Enabled, Background Intelligent Transfer Service (BITS) is used.
 - Office CDN (optional Configuration Manager Connected Cache), Delivery Optimization (DO) is used.
 
-By default, Office Click-To-Run installer uses the Windows' built in implementation of DO to download the content from the CDN.  When Configuration Manager has Office 365 Client Management enabled, BITS will be used.
+By default, Office Click-To-Run installer uses  Windows built in implementation of DO to download the content from the CDN.  When Configuration Manager has Office 365 Client Management enabled, BITS will be used.
 
 ## End-user notifications
 
@@ -50,24 +50,24 @@ End-user notifications for software updates are a key concern for any IT departm
 > [!NOTE]
 > Notifications related to deadlines cannot be suppressed.
 
-When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Manager will also deliver notifications. To learn more, see [Understanding Office 365 ProPlus Updates for IT Pros](https://techcommunity.microsoft.com/t5/office-365-blog/understanding-office-365-proplus-updates-for-it-pros-cdn-vs-sccm/ba-p/795728).  It is important to carefully consider ramifications of user notifications when considering an update strategy. 
+When Office 365 Client Management is enabled (OfficeMgmtCom=1), Configuration Manager will also deliver notifications. To learn more, see [Understanding Office 365 ProPlus Updates for IT Pros](https://techcommunity.microsoft.com/t5/office-365-blog/understanding-office-365-proplus-updates-for-it-pros-cdn-vs-sccm/ba-p/795728). It is important to carefully consider ramifications of user notifications when considering an update strategy. 
 
 - File share: Office notifications only
 - Configuration Manager: Configuration Manager notifications only unless Office updates are pre-staged.
 - Office CDN: Office notifications only
 
-Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1) and when Configuratiion Manager software deployment has Available time prior to deadline.  Meaning, IT Pro pre-staged Office content using Configuration Manager on the machine prior to deadline. In this scenario, both Configuration Manager and Office will deliver end-user notifications independently based on deadline defined in Configuration Manager. 
+Office and Configuration Manager notifications can both occur when Office 365 Client Management Enabled (OfficeMgmtCom=1) and when Configuration Manager software deployment has Available time prior to deadline.  Meaning, the IT Pro pre-staged Office content using Configuration Manager on the machine prior to deadline. In this scenario, both Configuration Manager and Office will deliver end-user notifications independently based on deadline defined in Configuration Manager. 
 
 ## Considerations for choosing how to deliver updates
 
-The section below compares Office update approaches to help you choose the right option for your environment. For customers who are exclusively on-premises today, moving to a hybrid model is a likely outcome.  For customers who are green field or have goal to reduce long-term dependency on on-premises infrastructure, cloud only is best.
+The section below compares update approaches to help you choose the right option for your environment. For customers who are exclusively on-premises today, moving to a hybrid model is a likely outcome.  For customers who are green field or have goal to reduce long-term dependency on on-premises infrastructure, cloud only is best.
 
 ### Updates delivered from Office CDN (Microsoft recommended)
 
 Advantages: 
-- Supports advanced network optimization technologies like Delivery Optimization and Configuration Manager Connected Cache.  These solutions also support other Microsoft workloads such as Windows 10 updates (feature updates and quality updates), Windows 10 drivers, Windows Store files, Windows Store for Business files, Windows Defender definition updates, Win32 apps for Intune and SCCM Express Updates.
+- Supports advanced network optimization technologies like Delivery Optimization and Configuration Manager Connected Cache.  These solutions also support other Microsoft workloads such as Windows 10 updates (feature updates and quality updates), Windows 10 drivers, Windows Store files, Windows Store for Business files, Windows Defender definition updates, Win32 apps for Intune and Configuration Manager Express Updates.
 - IT Pro remains in control, but clients pull what is needed automatically.  No need for admin to micro-manage intentional downloads each month.
-- Office was designed to update from the Microsoft CDN, which allows additional capabilities such as rollback or roll forward based on group policy configuration.
+- Office was designed to update from the Office CDN, which allows additional capabilities such as rollback or roll forward based on group policy configuration.
 - Aligns with Microsoft's "Modern Workplace" where users roam and work remotely.
 
 Considerations:
@@ -90,7 +90,7 @@ Disadvantages:
 - By default, any required content not found on the Distribution Point will result in Office 365 client update failure.
 
 > [!NOTE]
-> A managed device downloads only the required changes from a Distribution Point. So when making multiple channels and architectures availble to clients, they will not download all the content, but only what's required for that client.
+> A managed device downloads only the required changes from a Distribution Point. So when making multiple channels and architectures available to clients, they will not download all the content, but only what's required for that client.
 
 End-user notifications: Delivered by Configuration Manager only when Available time and Deadline are the same.  If Available time is prior to Deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
@@ -105,7 +105,7 @@ Disadvantages:
 - The IT Pro must make intentional decisions regarding specific builds\versions by channels to download each month.
 
 Consideration:
-- A subset of content not found on the Distribution Point is downloaded using BITS from the Microsoft CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
+- A subset of content not found on the Distribution Point is downloaded using BITS from the Office CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
 
 End-user notifications: Delivered by Configuration Manager only when available time and deadline are the same.  If available time is prior to deadline updates may be pre-staged, notifications may be delivered either by Configuration Manager or Office prior to deadline.
 
@@ -115,7 +115,7 @@ Advantages:
 - IT Pro remains in full control of software deployment available vs deadlines using Configuration Manager.  
 
 Disadvantages:
-- Each workstation will egress to the internet to download content via BITS from the Microsoft CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
+- Each workstation will egress to the internet to download content via BITS from the Office CDN. (Note that the Configuration Manager Peer Cache feature does not support content that is downloaded from the Office CDN.)
 - The IT Pro must make intentional decisions regarding specific builds\versions by channels to download each month.
 
 Consideration:
