@@ -36,8 +36,8 @@ Note: Regardless of selection, the [Office Deployment Tool (ODT)](../overview-of
 ## Configuration Manager Hybrid – subset of content (Microsoft recommended)
 
 Advantages:
-- Continue to use well-known established processes for controlling the installation time, user experience, and compliance reporting
-- Reduces the amount of data required to be pulled down by clients from DP, e.g. through VPN. Offloads work to Office CDN using local internet breakout
+- Continue to use well-known established processes for controlling the installation time, user experience, and compliance reporting.
+- Reduces the amount of data required to be pulled down by clients from Distribution Point. Offloads work to Office CDN using local internet breakout.
 - Supports advanced network caching technologies such as Configuration Peer Cache, Microsoft Connected Cache and Delivery Optimization to reduce bandwidth consumption.
 - Reduces the amount of content required to download each month if you have chosen to keep installation packages always up to date.
 
@@ -73,7 +73,7 @@ Consideration:
 - Configuration Manager cannot dynamically assign deployment package to a collection based on where its geographically located.  For example, on-premises all content and remote no content.
 
 Disadvantages:
-- Cloud subscription cost
+- Cloud subscription cost.
 - Management data sent through cloud service.
 
 ## Intune Cloud 
