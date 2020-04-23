@@ -65,7 +65,7 @@ Disadvantages:
 ## Configuration Manager Hybrid – Cloud Management Gateway (CMG)
 
 Advantages:
-- Ideal or scenarios where workstations are primarily remote.  Clients do not need to connect to corporate network to pull installation media from Distribution Points.
+- Ideal for scenarios where workstations are primarily remote.  Clients do not need to connect to corporate network to pull installation media from Distribution Points.
 - Cloud Distribution Points only need to host ODT + Configuration.xml for each installation package.
 - Aligns with “Lean Install” best practice.
 
