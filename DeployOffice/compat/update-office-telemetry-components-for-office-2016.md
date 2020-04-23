@@ -14,7 +14,7 @@ description: "Learn how to update processors and the database so that they work 
 
 # Update Office Telemetry Dashboard components
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 > [!IMPORTANT]
 > Follow these steps only if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. These steps aren't needed if you were using Office Telemetry Dashboard in Office 2016 and are now moving to Office 2019.

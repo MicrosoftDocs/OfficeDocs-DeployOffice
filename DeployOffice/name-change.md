@@ -32,7 +32,7 @@ Because of this name change, you might need to adjust some of your existing work
 
 ### Office Deployment Tool
 
-If you use the Office Deployment Tool to deploy Office 365 ProPlus, the [product ID](configuration-options-for-the-office-2016-deployment-tool.md#product-element) will remain as O365ProPlusRetail. Therefore, you don't have to make any changes to your existing configuration.xml files.
+If you use the Office Deployment Tool to deploy Office 365 ProPlus, the [product ID](office-deployment-tool-configuration-options.md#product-element) will remain as O365ProPlusRetail. Therefore, you don't have to make any changes to your existing configuration.xml files.
 
 ### Update packages used by Configuration Manager
 

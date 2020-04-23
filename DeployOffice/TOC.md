@@ -1,24 +1,24 @@
  
 # Get started
-## [Deployment guide](deployment-guide-for-office-365-proplus.md)
+## [Deployment guide](deployment-guide-microsoft-365-apps.md)
 ## [What's new](whats-new-office-it-pros.md)
-## [About Office 365 ProPlus](about-office-365-proplus-in-the-enterprise.md)
+## [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
 
 # Prepare
-## [Assess your environment and requirements](assess-office-365-proplus.md)
-## [Plan your enterprise deployment](plan-office-365-proplus.md)
-## [Use Readiness Toolkit to assess application compatibility](use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md)
+## [Assess your environment and requirements](assess-microsoft-365-apps.md)
+## [Plan your enterprise deployment](plan-microsoft-365-apps.md)
+## [Use Readiness Toolkit to assess application compatibility](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
 ## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 
 # Upgrade
-## [Deploy from the cloud](deploy-office-365-proplus-from-the-cloud.md)
-## [Deploy from a local source](deploy-office-365-proplus-from-a-local-source.md)
-## [Deploy with Configuration Manager (current branch)](deploy-office-365-proplus-with-configuration-manager.md)
+## [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
+## [Deploy from a local source](deploy-microsoft-365-apps-local-source.md)
+## [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 
 # Manage
-## [Overview of update channels](overview-of-update-channels-for-office-365-proplus.md)
-## [Manage updates with Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md)
+## [Overview of update channels](overview-update-channels.md)
+## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
 ## [Build lean packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
@@ -46,18 +46,18 @@
 ## [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
 
 # Reference
-## [Overview of reference articles](reference-articles-for-deploying-office-365-proplus.md)
+## [Overview of reference articles](reference-articles.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
-## [Overview of Security Policy Advisor for Office 365 ProPlus](overview-of-security-policy-advisor.md)
-## [Overview of the Office Deployment Tool](overview-of-the-office-2016-deployment-tool.md)
-## [Configuration options for the Office Deployment Tool](configuration-options-for-the-office-2016-deployment-tool.md)
-## [Deploying languages](overview-of-deploying-languages-in-office-365-proplus.md)
-## [Deploy Office 365 ProPlus by using Remote Desktop Services](deploy-office-365-proplus-by-using-remote-desktop-services.md)
-## [Deploy Office 365 ProPlus as part of an operating system image](deploy-office-365-proplus-as-part-of-an-operating-system-image.md)
-## [Overview of shared computer activation for Office 365 ProPlus](overview-of-shared-computer-activation-for-office-365-proplus.md)
-## [Device-based licensing for Office 365 ProPlus](device-based-licensing.md)
-## [Overview of licensing and activation in Office 365 ProPlus](overview-of-licensing-and-activation-in-office-365-proplus.md)
+## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)
+## [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
+## [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
+## [Deploying languages](overview-deploying-languages-microsoft-365-apps.md)
+## [Deploy by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+## [Deploy as part of an operating system image](deploy-microsoft-365-apps-operating-system-image.md)
+## [Overview of shared computer activation](overview-shared-computer-activation.md)
+## [Device-based licensing](device-based-licensing.md)
+## [Overview of licensing and activation](overview-licensing-activation-microsoft-365-apps.md)
 ## [Overview of viewer mode](overview-viewer-mode.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 ## [Upgrade from Office 2007](office-2007-end-support-roadmap.md)

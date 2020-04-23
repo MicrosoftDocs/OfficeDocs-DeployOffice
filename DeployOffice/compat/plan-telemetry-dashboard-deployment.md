@@ -14,7 +14,7 @@ description: "Learn about components and sizing, topology, hardware, and bandwid
 
 # Plan a deployment of Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
   
 When you deploy Office Telemetry Dashboard, you must consider several factors. These can include the location of the users to be monitored and the hardware specifications of the computer that runs the processor and other components that deliver the data to Office Telemetry Dashboard. It's also important to understand the supported limits for Office Telemetry Dashboard deployments, such as the maximum number of users who can be monitored. Use the guidance in this article to help you design an Office Telemetry Dashboard topology that is sized appropriately for your organization.
@@ -29,8 +29,8 @@ Office Telemetry Dashboard is an Excel workbook that displays compatibility and 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
   
   
 <a name="Overview"> </a>
@@ -56,8 +56,8 @@ The following table describes the tools and components for Office Telemetry Dash
 
 |**Tool**|**Description**|
 |:-----|:-----|
-|![This icon represents the Office Telemetry Dashboard.](../images/ORK_Telem_TelemetryDashboardIcon.gif)| Office Telemetry Dashboard:  <br/><br/>  - Shows IT Pros a combined view of inventory, usage, and health data  <br/> - Requires Excel 2019 or Excel 2016  <br/> - Is installed with Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016.  <br/> - Connects to the database  <br/> - Can be viewed by multiple IT Pros  <br/> |
-|![This icon represents Office Telemetry Log.](../images/ORK_Telem_TelemetryLogIcon.gif)| Office Telemetry Log: <br/> <br/> - Helps developers and experienced users diagnose compatibility issues that occur on an Office client  <br/> - Requires Excel 2019 or Excel 2016  <br/> - Is installed with Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016.  <br/> - Connects to the local data store on the client computer  <br/> |
+|![This icon represents the Office Telemetry Dashboard.](../images/ORK_Telem_TelemetryDashboardIcon.gif)| Office Telemetry Dashboard:  <br/><br/>  - Shows IT Pros a combined view of inventory, usage, and health data  <br/> - Requires Excel 2019 or Excel 2016  <br/> - Is installed with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016.  <br/> - Connects to the database  <br/> - Can be viewed by multiple IT Pros  <br/> |
+|![This icon represents Office Telemetry Log.](../images/ORK_Telem_TelemetryLogIcon.gif)| Office Telemetry Log: <br/> <br/> - Helps developers and experienced users diagnose compatibility issues that occur on an Office client  <br/> - Requires Excel 2019 or Excel 2016  <br/> - Is installed with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016.  <br/> - Connects to the local data store on the client computer  <br/> |
    
 The following table describes the components of Office Telemetry Dashboard. The first two components shown below are required for both Office Telemetry Log and Office Telemetry Dashboard. The remaining components that are listed are applicable only to Office Telemetry Dashboard. These components collect data from across an organization so that you can view it by using Office Telemetry Dashboard. To learn how to deploy these components, see [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md).
   

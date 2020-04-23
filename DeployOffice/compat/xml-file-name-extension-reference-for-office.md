@@ -14,7 +14,7 @@ description: "Learn about the XML file formats and their extensions that are use
 
 # XML file name extension reference for Office
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 XML file formats and their extensions are listed in the following tables for Word, Excel, PowerPoint, and Visio.
   

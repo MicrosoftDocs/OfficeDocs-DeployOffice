@@ -29,7 +29,7 @@ IRM allows individuals and administrators to specify who can access documents, w
 
 Azure Rights Management and Active Directory Rights Management are persistent document-level information protection technologies from Microsoft. They use permissions and authorization to help prevent sensitive information from being printed, forwarded, or copied by authorized users, or accessed by unauthorized people. After you restrict permission for a document or message with IRM, the usage restrictions travel with the document or email message as part of the contents of the file. Microsoft Office implements support for these technologies by using Information Rights Management (IRM) features.
   
-The ability to create documents or email messages that have restricted permission by using IRM is available in Office Professional Plus 2016 and Office 365 ProPlus, and in the stand-alone versions of Excel 2016, Outlook 2016, PowerPoint 2016, InfoPath 2016, and Word 2016. IRM content that is created in Office 2016 can be viewed in Office 2007, Office 2010, Office 2013, or Office 2016.
+The ability to create documents or email messages that have restricted permission by using IRM is available in Office Professional Plus 2016 and Microsoft 365 Apps for enterprise, and in the stand-alone versions of Excel 2016, Outlook 2016, PowerPoint 2016, InfoPath 2016, and Word 2016. IRM content that is created in Office 2016 can be viewed in Office 2007, Office 2010, Office 2013, or Office 2016.
   
 For more information about IRM and Active Directory Rights Management Services (AD RMS) features that are supported in Office 2016, Office 2013, Office 2010, and Office 2007, see [AD RMS and Microsoft Office Deployment Considerations](https://go.microsoft.com/fwlink/p/?LinkId=153314). For information about IRM and Azure RMS see [How applications support Azure Rights Management](https://docs.microsoft.com/azure/information-protection/applications-support) and [What is Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms).
   
@@ -198,7 +198,7 @@ In addition, the **DRMEncryptProperty** registry setting does not determine whet
 
 In Outlook 2016, users can create and send email messages that have restricted permission to help prevent messages from being forwarded, printed, or copied. Office 2016 documents, workbooks, and presentations that are attached to messages that have restricted permission are also automatically restricted.
   
-As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. 
+As a Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. 
   
 The following IRM settings and features can be useful when you configure rights-managed email messaging:
   
@@ -242,7 +242,7 @@ You can lock many settings to customize IRM by using the Office 2016 Administrat
   
 In Outlook 2016, users can create and send email messages that have restricted permission to help prevent messages from being forwarded, printed, or copied and pasted. Office 2016 documents, workbooks, and presentations that are attached to messages that have restricted permission are also automatically restricted.
   
-As an Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group.
+As a Microsoft Outlook administrator, you can configure several options for IRM email, such as disabling IRM or configuring local license caching. You can also design custom IRM permissions for users, in addition to the default **Do Not Forward** permissions group.
   
 <a name="BKMK_BeforeYouBegin"> </a>
 
