@@ -75,9 +75,8 @@ Advantages:
 Consideration:
 - Configuration Manager cannot dynamically assign deployment package to a collection based on where it's geographically located.
 
-Disadvantages:
+Disadvantage:
 - Cloud subscription cost.
-- Management data sent through cloud service.
 
 ## Intune cloud 
 
