@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-description: 
+description: "Field best practices: How to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus)"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
