@@ -17,18 +17,18 @@ description: "Explains how to assign Microsoft 365 Apps licenses to users, and h
 > [!IMPORTANT]
 > Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
-This article shows how to assign Microsoft 365 Apps licenses to users and how to activate installations of Office.
+This article shows how to assign Microsoft 365 Apps licenses to users and how to activate installations of Microsoft 365 Apps.
 
 > [!NOTE]
 > The information in this article also applies to Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365), which are licensed separately from Microsoft 365 Apps.  
   
-Before deploying Microsoft 365 Apps to users in your organization, you must first assign licenses to those users. Each license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. Each installation is activated and kept activated automatically by cloud-based services associated with Office 365. This means you don’t have to keep track of product keys and you don’t have to figure out how to use other activation methods such as Key Management Service (KMS) or Multiple Activation Key (MAK). All you have to do is purchase enough licenses, keep your Office 365 subscription current, and make sure your users can connect to the Office Licensing Service via the internet at least once every 30 days.
+Before deploying Microsoft 365 Apps to users in your organization, you must first assign licenses to those users. Each license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. Each installation is activated and kept activated automatically by cloud-based services associated with Office 365 (or Microsoft 365). This automatic activation means you don’t have to keep track of product keys and you don’t have to figure out how to use other activation methods such as Key Management Service (KMS) or Multiple Activation Key (MAK). All you have to do is purchase enough licenses, keep your Office 365 (or Microsoft 365) subscription current, and make sure your users can connect to the Office Licensing Service via the internet at least once every 30 days. When single sign-on is enabled, Microsoft 365 Apps detects the user’s credentials and is activated automatically.
 
-If you remove a user's license (for example, if the user leaves your organization), any installations of Microsoft 365 Apps that the user had go into [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode). The Office Licensing Service, a part of Office 365, keeps track of which users are licensed and how many computers they've installed Office on.
+If you remove a user's license (for example, if the user leaves your organization), any installations of Microsoft 365 Apps that the user had go into [reduced functionality mode](overview-of-licensing-and-activation-in-office-365-proplus.md#BKMK_ReducedFunctionalityMode). The Office Licensing Service, a part of Microsoft 365, keeps track of which users are licensed and how many computers they've installed Office on.
      
 ## Assign and manage licenses
 
-To use Microsoft 365 Apps, your users will need the appropriate license. To assign Microsoft 365 Apps licenses, do one of the following:
+To use Microsoft 365 Apps, your users will need the appropriate license. To assign licenses, do one of the following:
 
 - Assign a license to a user directly in the Office 365 portal by selecting a check box on the licenses page for the user’s account. 
 
@@ -40,52 +40,38 @@ After a user is assigned a license, you can deploy Office to your users or your 
 
 ## Activating Microsoft 365 Apps
 
-As part of the installation process, Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user logs on to their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Office remains fully functional. If the computer goes offline for more than 30 days, Office enters reduced functionality mode until the next time a connection can be made. To get Office fully functional again, the user can simply connect to the internet and let the Activation and Validation Service reactivate the installation, though in some cases the user may have to sign back into Office first.
+As part of the installation process, Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user logs on to their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Microsoft 365 Apps remains fully functional. If the computer goes offline for more than 30 days, Microsoft 365 Apps enters reduced functionality mode until the next time a connection can be made. To get Microsoft 365 Apps fully functional again, the user can simply connect to the internet and let the Activation and Validation Service reactivate the installation, though in some cases the user may have to sign back in first.
   
 > [!IMPORTANT]
-> Because of its online activation features, Microsoft 365 Apps won't work on computers that are completely cut off from the Internet. For those computers, we recommend installing Office Professional Plus 2019 and using a [traditional activation method](https://docs.microsoft.com/DeployOffice/vlactivation/plan-volume-activation-of-office) such as Key Management Service (KMS) or Active Directory Domain Services.
+> Because of its online activation features, Microsoft 365 Apps won't work on computers that are completely cut off from the internet. For those computers, we recommend installing Office Professional Plus 2019 and using a [traditional activation method](https://docs.microsoft.com/DeployOffice/vlactivation/plan-volume-activation-of-office) such as Key Management Service (KMS) or Active Directory Domain Services.
   
 ### Managing activated installations
 
-Each Microsoft 365 Apps license allows a user to install Office on up to five desktops, five tablets, and five mobile devices. The user manages installations in the Office 365 portal:
+Each Microsoft 365 Apps license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. The user manages installations in the Office 365 portal:
   
 ![Managing Office 365 active installations](images/c830ebad-a255-4e32-8d7a-af5a687dc107.png)
   
-If the user decides to install Microsoft 365 Apps on an eleventh computer, she will need to deactivate one of the first ten. Microsoft 365 Apps goes into reduced functionality mode on the deactivated computer.
+If a user has more than ten devices with Microsoft 365 Apps activated, then the device that hasn't been used for the longest amount of time is automatically deactivated. Microsoft 365 Apps goes into reduced functionality mode on the deactivated device.
   
 ## What is reduced functionality mode?
 
-In reduced functionality mode, Microsoft 365 Apps remains installed on the computer, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message like the following:
+In reduced functionality mode, Microsoft 365 Apps remains installed on the device, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message like the following:
   
 ![Product deactivated](images/78aa59b0-8772-4ba2-8094-bfeb65602ab7.png)
   
 The user can then choose one of the available options to reactivate Microsoft 365 Apps on that computer.
 
-If the user hasn't been assigned a license, and they try to use Microsoft 365 Apps on a computer where it's installed, Office will be in reduced functionality mode. Also, the user will be prompted to sign in and activate every time they open an Office app, such as Word or Excel.
+If the user hasn't been assigned a license, and they try to use Microsoft 365 Apps on a computer where it's installed, it will be in reduced functionality mode. Also, the user will be prompted to sign in and activate every time they open an app, such as Word or Excel.
 
- ## Improvements in Office 365 ProPlus versions >1910.
+## Improvements in licensing and activation
 
-We have made great improvements to how licensing and user administration is handled with Office 365 ProPlus.
+In Microsoft 365 Apps version 1910 and later, we made the following improvements:
 
-For your users, here’s what stays the same:
+- Users can install Microsoft 365 Apps on a new device without being prompted to deactivate it on another device. If a user has more than ten devices with Microsoft 365 Apps activated, then the device that hasn't been used for the longest amount of time is automatically deactivated.
 
-- Sign in to activate Office: Users will continue to sign in to activate Office on their devices. When single sign-on is enabled, Office detects the user’s credentials and activates Office automatically.
+- When Microsoft 365 Apps on a device has been deactivated, either from the portal or because a license has been removed, a new user on that device can activate Microsoft 365 Apps without an error.
 
-- Sign-in limits: Users can sign in to activate Office on five desktops, five tablets, and five mobile devices.
-
-
-Here are the changes that your users may notice:
-
-- No more prompts to deactivate: Users can install Office on a new device without being prompted to deactivate Office on another device.
-
-- Automatic sign out: When a user reaches the sign-in limit, instead of being prompted to deactivate, the user will be automatically signed out of Office on the device where Office has been least recently used. The next time the user starts Office on that device, the user will be prompted to sign in to activate Office.
-
-
-Here are the changes that you as an admin may notice when managing devices where Office is installed:
-
-- Improved device reallocation: Previously, users who received reallocated devices could receive an error if the previous user deactivated the device from the portal or if you removed the Office 365 license from the previous user. Going forward, users will not receive the error because the activation and deactivation is user specific.
-
-- Improved activation reporting: Previously, when one user activated Office on a device and a second user later signed on to that device, the second activation was not displayed in the Admin Center’s Activation Reports. Going forward, both activations will be identified and displayed in the Activation Report.
+- When a user activates Microsoft 365 Apps on a device and a second user signs on to that device, both activations are now displayed in the activation report in the Microsoft 365 admin center.
 
 ## Related topics
 
