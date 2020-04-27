@@ -2,7 +2,8 @@
 layout: HubPage
 hide_bc: true
 title: Office deployment
-description: Office deployment
+description: This hub page provides information to get started, deploy, and manage Office 365 ProPlus, including guidance for deploying Office for Mac.
+ms.custom: seo-marvel-apr2020
 ---
 <div id="main" class="v2">
     <div class="container">

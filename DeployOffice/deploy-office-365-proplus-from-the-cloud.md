@@ -10,7 +10,9 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+- Ent_Office_ProPlus
+- seo-marvel-apr2020
 ms.assetid: b18a9110-0d14-46ec-af54-a22793ef6b38
 description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
 ---
@@ -19,7 +21,7 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 Follow the steps in this article to deploy Office 365 ProPlus to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). 
 
-## Before you begin
+## Prepare for deployment in an enterprise environment
 
 Make sure your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and processes to install Office.
 

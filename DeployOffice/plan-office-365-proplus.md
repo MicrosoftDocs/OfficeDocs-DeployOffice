@@ -10,7 +10,9 @@ localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-apr2020
 description: "This article gives step-by-step instructions for how to plan your deployment of Office 365 ProPlus. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
 
@@ -20,7 +22,7 @@ Follow the steps in this article to choose how to deploy Office, how to manage u
 
 ![Deployment framework for Office 365 ProPlus](images/plan-office-365-proplus-01.png)
 
-## Before you begin 
+## Complete an assessment of your environment and infrastructure
 
 If you haven't already, complete the [assessment of your environment and infrastructure](assess-office-365-proplus.md). This assessment will help you make key decisions as part of planning your deployment.
 

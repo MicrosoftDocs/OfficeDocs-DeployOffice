@@ -10,7 +10,9 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
+ms.custom: 
+ - Ent_Office_ProPlus
+ - seo-marvel-apr2020
 description: "This article gives step-by-step instructions for how to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch)."
 ---
 
@@ -18,9 +20,9 @@ description: "This article gives step-by-step instructions for how to deploy Off
 
 Follow the steps in this article to deploy Office 365 ProPlus with Microsoft Endpoint Configuration Manager (current branch). 
 
-This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, see [here](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
+This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Office 365 ProPlus with System Center 2012 R2 Configuration Manager, go to [Deploy Office 365 ProPlus](deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md).
     
-## Overview
+## Benefits of using Configuration Manager
 
 If your organization already uses Configuration Manager, we recommend upgrading to the current branch and using it to deploy Office 365 ProPlus. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
@@ -35,7 +37,7 @@ The steps in this article covers these features and shows you how to implement o
 > [!NOTE] 
 > When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more details, see [Manage updates to Office 365 ProPlus with Microsoft Endpoint Configuration Manager](manage-office-365-proplus-updates-with-configuration-manager.md).
 
-## Before you begin
+## Prepare for deployment
 
 If you haven't already, complete the [assessment](assess-office-365-proplus.md) and [planning](plan-office-365-proplus.md) phases for your Office deployment. 
 
