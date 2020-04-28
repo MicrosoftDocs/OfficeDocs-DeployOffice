@@ -80,7 +80,7 @@ Let’s have a look at a "classic" package that was built to add Project to an e
 
 ![Sample package](../images/lean5-pic1.jpg)
 
-```
+```xml
 <Configuration>
  <Add OfficeClientEdition="64" Channel="Broad">
   <Product ID="ProjectProRetail">
@@ -95,7 +95,7 @@ When we apply the concepts of dynamic, lean, and universal packages, the result 
  
 ![Lean sample package](../images/lean5-pic2.jpg)
 
-```
+```xml
 <Configuration>
  <Add Version="MatchInstalled">
   <Product ID="ProjectProRetail">
@@ -127,7 +127,7 @@ So what have we changed, and what are the benefits?
 
 Let’s have a brief look at other scenarios as well, like adding language packs and proofing tools. The classic configuration file to install the German Language Pack might look like this:
  
-```
+```xml
 <Configuration>
  <Add OfficeClientEdition="64" Channel="Broad">
   <Product ID="LanguagePack">
@@ -140,7 +140,7 @@ Let’s have a brief look at other scenarios as well, like adding language packs
 
 If you’re running SAC as well as SAC-T and have an x86/x64 mixed environment, you'd need three additional files to cover the remaining configuration permutations. Or, you just go the dynamic, lean, and universal way:
 
-```
+```xml
 <Configuration>
  <Add Version="MatchInstalled">
   <Product ID="LanguagePack">
