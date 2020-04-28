@@ -2,14 +2,18 @@
 title: Choose how to install Microsoft 365 Apps (Office 365 ProPlus)
 author: davguent
 ms.author: davguent
-manager: daryltu
+manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: 
-description: 
+localization_priority: Normal
+description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus)"
 ms.custom: 
+- Ent_Office_ProPlus
+- Ent_Office_FieldNotes
 ms.collection: 
+- Ent_O365
+- M365-modern-desktop
 ---
 
 # Choose how to install Microsoft 365 Apps
