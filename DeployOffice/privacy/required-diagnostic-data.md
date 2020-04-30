@@ -1713,6 +1713,16 @@ The following fields are collected:
 - **is_groups** - whether the draft is being sent to/from a group folder
  
 - **origin** - where draft was initiated, e.g. message detail, compose.
+
+- **smart_compose_model_version** - tracks which version of smart compose model is being used
+
+- **suggestions_requested** - indicates how many smart compose suggestions requested
+
+- **suggestions_results** - smart compose suggestions’ result, i.e. accepted, rejected
+
+- **suggestions_returned** - indicates how many smart compose suggestions returned from server
+
+- **suggestions_shown** - indicates how many smart compose suggestions shown to the user
  
 - **thread_id** - thread ID of the conversation draft is associated with
 
@@ -1725,6 +1735,8 @@ The following fields are collected:
 - **action** - Action will be either drag or drop
 
 - **location** - In case of a drag action, this will let us know from which location the user started the drag.  In case of a drop action, this will let us know where the user dropped the file which was being dragged. 
+
+- **source** – In the case of a drop action, this will let us know from which location the user started the drag. This helps us better discover issues with a specific source like OneDrive or Files into a specific drop location, such as a new email.
 
 #### drawer_event
 
@@ -2291,6 +2303,8 @@ The following fields are collected:
 - **message_id** - server message id targeted for action, or comma-separated list if more than one item was in action.
 
 - **message_type** - indicates what type of message type the action was taken on** - group or other
+
+- **number_selected** - the number of items the user selected on the message list and took action on during multiple selection mode.
 
 - **origin** - source of action, i.e. cell swipe, zero-query, deep link, email view, email list, etc.
 
@@ -3202,6 +3216,8 @@ This event is collected when the feed is shown to the user. The event is used to
 - **bridgeWaitingTime** - Metric to diagnose performance in rendering of the feed.
 
 - **clientCorrelationId** - The globally unique identifier for the application's session.
+
+- **clientScenario** - Scenario discriminator for different variants of the feed.
 
 - **ClientTimeStamp** - Timestamp of when the event was logged in the client.
 
@@ -6888,9 +6904,19 @@ The following fields are collected:
 
 - **send_draft_origin** - indicates where send was initiated, i.e. compose or quick reply
 
+- **smart_compose_model_version** - tracks which version of smart compose model is being used
+
 - **source_inbox** - indicates source inbox type for reference message, 
 
 - **suggested_reply_state** - capturing suggested reply state i.e., unavailable, available, shown, used, discarded for this sent mail
+
+- **suggestions_requested** - indicates how many smart compose suggestions requested
+
+- **suggestions_results** - smart compose suggestions’ result, i.e accpected, rejected
+
+- **suggestions_returned** - indicates how many smart compose suggestions returned from server
+
+- **suggestions_shown** - indicates how many smart compose suggestions shown to the user
 
 - **thread_id** - indicates thread ID of the conversation being replied/forwarded
 
@@ -7308,13 +7334,13 @@ This event determines the number of MSA and ADAL accounts in the registry and sh
 
 The following fields are collected:
 
-- **RegistryADALCount**- Indicates no. of ADAL accounts in registry.
+- **RegistryADALCount**- Indicates number of ADAL accounts in registry.
 
-- **RegistryLiveIdCount**- Indicates no. of MSA accounts in registry.
+- **RegistryLiveIdCount**- Indicates number of MSA accounts in registry.
 
-- **SharedPrefADALCount**- Indicates no. of ADAL accounts in shared preferences.
+- **SharedPrefADALCount**- Indicates number of ADAL accounts in shared preferences.
 
-- **SharedPrefLiveIdCount**- Indicates no. of MSA accounts in shared preferences.
+- **SharedPrefLiveIdCount**- Indicates number of MSA accounts in shared preferences.
 
 
 #### Office.Android.AndroidOffice16BootLatency
@@ -7633,6 +7659,8 @@ The following fields are collected:
 
 - **AssetId** - asset ID of the app
 
+- **IsPreload** – indicates if the add-in is being preloaded in background for improving activation performance
+
 - **NumberOfAddinsActivated** - counter of add-ins activated
 
 - **RemoterType** - specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF etc.) used to activate the add-in
@@ -7646,6 +7674,8 @@ The following fields are collected:
 - **TimeForServerCall** - time spent on the server call 
 
 - **TotalTime** - total time spent
+
+- **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
 
 #### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete 
 
@@ -9326,6 +9356,8 @@ The following fields are collected:
 
 - **IsDebug** - indicates if session is a debug session
 
+- **IsPreload** – indicates if the add-in is being preloaded in background for improving activation perf.
+
 - **NumberOfAddinsActivated** - Counter of add-ins activated
 
 - **RemoterType** - Specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF, etc.) used to activate the add-in
@@ -10371,7 +10403,13 @@ The following fields are collected:
   
   - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
+  - **ColdBoot** - Whether is first time Office application runs after a system restart or application binary had to be loaded from disk.
+
+  - **DeviceModel** - The model of the device.
+
   - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
+
+  - **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
 
   - **FirstBoot** - Whether this was a first boot of the application.
 
