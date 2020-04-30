@@ -31,7 +31,7 @@ As part of these changes, there are new and updated user interface (UI) elements
 > - These changes apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
 > - These changes also apply to the following:
 >   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
->   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+>   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 > - These privacy controls are included in Version 1908 of Semi-Annual Channel (Targeted), which was released on September 10, 2019. They are expected to be available in Semi-Annual Channel in January 2020.
 > - These privacy controls are available for Version 2.30 and later of the iOS versions of Excel, OneNote, PowerPoint, and Word, as well as Version 1.17 and later of Visio Viewer for iOS.
 > - These privacy controls are available for Version 16.0.12226.10000 and later of the Android versions of Excel, PowerPoint, and Word, as well as Version 16.0.12228.20004 and later of OneNote for Android.

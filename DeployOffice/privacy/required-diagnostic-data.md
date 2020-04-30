@@ -19,9 +19,10 @@ hideEdit: true
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 ProPlus and Office 365 Business
-> - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
-> - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+> - Microsoft 365 Apps for business (previously named Office 365 Business)
+> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
+> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 >
 > The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
@@ -2657,7 +2658,7 @@ The following fields are collected:
 
 This event is collected for Office applications running under Apple platforms. 
 
-We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Office 365 Home, etc.).  This data is used for monitoring the health of the in-app purchase flows.
+We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Microsoft 365 Family, etc.).  This data is used for monitoring the health of the in-app purchase flows.
 
 The following fields are collected:
 

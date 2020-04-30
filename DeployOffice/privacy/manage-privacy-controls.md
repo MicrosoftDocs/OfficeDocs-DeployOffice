@@ -45,7 +45,7 @@ These policy settings can be implemented by using either Group Policy or the [Of
 
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
-These new policy settings also apply to desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2. They also apply to Office 365 Business.
+These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business (previously named Office 365 Business).
 
 There are also some existing policy settings that will no longer apply to Office 365 ProPlus, and there are some user interface (UI) changes for privacy settings that you should be aware of because your users might notice those changes and ask about them.
 
