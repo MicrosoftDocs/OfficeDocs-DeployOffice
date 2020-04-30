@@ -20,7 +20,6 @@
 ## [Overview of update channels](overview-update-channels.md)
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
-## [Build lean packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 
@@ -44,6 +43,11 @@
 ### [Required service data](privacy/required-service-data.md?toc=/deployoffice/toc.json)
 
 ## [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
+
+# Best practices from the field
+## [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
+## [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
+## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 
 # Reference
 ## [Overview of reference articles](reference-articles.md)
