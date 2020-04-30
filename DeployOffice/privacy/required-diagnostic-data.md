@@ -41,8 +41,8 @@ For more information about diagnostic data, see the following:
 
 If you're the admin for your organization, you might also be interested in the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -9187,7 +9187,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on a consumer version of Office applications. 
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Microsoft 365 Apps for enterprise "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Microsoft 365 Apps for enterprise and plan their upgrades accordingly. 
 
 The following fields are collected:
 
@@ -9219,7 +9219,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on an enterprise version of Office applications.
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Microsoft 365 Apps for enterprise "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Microsoft 365 Apps for enterprise and plan their upgrades accordingly. 
 
 - **ScopeId** – the current thread scope
 
@@ -9493,7 +9493,7 @@ The following fields are collected:
 
 #### Office.Programmability.Telemetry.MacroFileOpened 
 
-Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Office 365 ProPlus has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
+Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Microsoft 365 Apps for enterprise has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
 
 No fields are collected.
 

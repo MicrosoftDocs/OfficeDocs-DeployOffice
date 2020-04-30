@@ -29,7 +29,7 @@ In addition, there is a new preference setting related to a **Required Data Noti
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
 
 > [!NOTE]
-> - For information about similar settings for Office on computers running Windows, see [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md).
+> - For information about similar settings for Office on computers running Windows, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md).
 > - For information about similar settings for Office on iOS devices, see [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md).
 
 ## Setting preferences
@@ -38,7 +38,7 @@ These new preference settings are CFPreferences API compatible and can be set us
 
 ## Preference setting for diagnostic data
 
-Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Office 365 ProPlus to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-office-365-proplus-to-microsoft).
+Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-office-365-proplus-to-microsoft).
 
 |||
 |:-----|:-----|

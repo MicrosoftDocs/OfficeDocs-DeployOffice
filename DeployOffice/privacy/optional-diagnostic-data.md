@@ -43,8 +43,8 @@ For more information about diagnostic data, see the following:
 
 If you’re the admin for your organization, you might also be interested in the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)

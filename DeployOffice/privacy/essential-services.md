@@ -36,8 +36,8 @@ For more information, see the following:
 
 If you're the admin for your organization, you might also be interested in the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -486,7 +486,7 @@ The following fields are collected:
 
   - **Data\_PrereqFailure\_Type** – The prerequisite failure we hit, i.e. the operating system is not supported
 
-  - **Data\_ProductReleaseId** - Product we're installing, i.e. Office 365 ProPlus
+  - **Data\_ProductReleaseId** - Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
 ### Office.ClickToRun.CorruptionCheck
 
@@ -584,7 +584,7 @@ The following fields are collected:
 
   - **Data\_OfficeVersion** - The version Office is installed in
 
-  - **Data\_Sku** - The SKU that's installed, i.e. Office 365 ProPlus.en-us
+  - **Data\_Sku** - The SKU that's installed, i.e. Microsoft 365 Apps for enterprise
 
   - **Data\_SqmMachineID** – Unique Machine ID used by Windows SQM Data\_SusClientID- Machine Office update identifier
 
@@ -624,7 +624,7 @@ The following fields are collected:
 
   - **Data\_PrereqFailure\_Type-** The prerequisite failure we hit
 
-  - **Data\_ProductReleaseId-** Product we're installing, i.e. Office 365 ProPlus
+  - **Data\_ProductReleaseId-** Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
 ### Office.ClickToRun.RepomanLogger
 
