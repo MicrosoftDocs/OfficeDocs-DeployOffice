@@ -2254,6 +2254,40 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Scenario Id defined by the API
 
+
+#### link_clicked_action
+
+The event is used to track users' success in viewing a URL in the Edge web view and completing standard web scenarios in that web view without facing errors
+
+The following fields are collected:
+
+- **account_type** – if the Edge web view was launched from an email or event in Outlook, type of the account where the URL came from
+
+- **action** – action performed by the user inside Outlook from the moment they tap on a URL to when they exit that flow (opened the link in the Edge web view, page failed to load in the web view, performed a search in the web view, exit the Edge web view to open the link in a web browser application, etc.)
+
+- **duration** – duration of the user session
+
+- **launch_type** – if the Edge web view was launched, was it from Outlook, from a widget, or from an OS component
+
+- **origin** – if the user performed an action in the Edge web view, origin of that action
+
+- **referrer** – the location of the URL the user tapped on (email, calendar event, TXP card, etc.)
+
+- **search_scope** – if the user performed a search in the Edge web view, scope of that search (All, Images, Videos, etc.)
+
+- **search_subtype** – if the user performed a search in the Edge web view, was it an initial search or a refined search
+
+- **session_summary_page_loaded_count** – number of pages loaded by the user during their session in the Edge web view
+
+- **session_summary_search_count** - number of Bing searches performed by the user during their session in the Edge web view
+
+- **session_summary_session_id** – identifier for the present user session in the Edge web view
+
+- **txp** – if the Edge web view was launched from a TXP card, event type for that card (dining, flight, etc.)
+
+- **txp_component** - if the Edge web view was launched from a TXP card, UI component type for that card
+
+
 #### mail_action
 
 Used for monitoring possible negative impact on your ability to perform critical mail actions (like running mail threaded mode, ensuring mail triage actions work) to ensure our app is functioning properly for mail.
@@ -10343,6 +10377,13 @@ The following fields are collected:
 - **TimeTakenInMilliSeconds**: Returns time taken to complete provisioning in millisecond
 
 
+#### Office.OneNote.System.BootDialogs.SafeBootDialogPending 
+
+The critical signal used to track when we decide to show user a safe boot dialog on next boot because we have been crashing on boot multiple times continuously. This is used to ensure critical regression detection for OneNote app and service health. If users are seeing the safe boot dialog then we have a critical boot crash bug and this info will help us know how many users are facing this issue and how many users boot the app again to actually see the safe boot dialog vs how many don’t return.
+
+The following fields are collected:
+
+ - None
 
 #### Office.Outlook.Desktop.BootPerfMetrics
 
@@ -10423,6 +10464,47 @@ The following fields are collected:
 
   - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
 
+
+#### Office.PowerPoint.PPT.Android.RehearseView
+
+This event is triggered on Stop of rehearsal session. In combination with Office.PowerPoint.PPT.Android.RehearseView.StartSession this will be the first indicator of any crashes or errors that user faces.
+
+The following fields are collected:
+
+- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal
+
+- **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView.Errors
+
+Event triggered when any error occurs. This event will help us know the errors that user has faced and will help keep the Presenter Coach performant on mobile.
+
+The following fields are collected:
+
+- **Session id:string** – rehearsal session id
+
+- **RehearsalEventCode:int** – rehearsal error code
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView.RehearsalSummaryPage 
+
+Event triggered when summary page is loaded. This event helps us in capturing the performance of summary page. It tells how much time it takes for rehearsal summary service page to load on client. It is required to keep the feature performant. 
+
+The following fields are collected:
+
+- **SummaryPageLoadTime:int** – Time (in ms) taken to load summary page. This includes payload creation time 
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView.StartSession
+
+Event triggered when user clicks on start session. This event helps us in capturing how many users are using the feature of Presenter coach on Android. When combined with Office.PowerPoint.PPT.Android.RehearseView it will tell us how many users successfully completed the rehearsal session and how many couldn’t. This is our first indicator of crashes or errors in the feature.
+ 
+The following fields are collected:
+
+ - None
+
+
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
 Activity tracking whether the Office Insider slab can be shown to the user on the Account tab in the Office Backstage UI.
@@ -10480,8 +10562,6 @@ The following fields are collected:
 - **Data_RegistrationStateDesired** - Requested registration state
 
 
-
-
 #### Office.Visio.Shared.VisioFileRender
 
 This event captures file render time. This event helps us keep file render performance in check.
@@ -10497,6 +10577,7 @@ The following fields are collected:
   - **Data\_FirstRenderTime: long** - duration to render file on first launch in millisecond
 
   - **Data\_MaxTime: integer** - Max time it took to render Visio drawing in a session
+
 
 #### Office.Visio.VisioFileOpenReliability
 
@@ -10565,6 +10646,16 @@ The following fields are collected:
   - **Data\_Tag: string -** unique identifier to identify Save AS event
 
   - **Data\_WasSuccessful: bool -** true if open as was successful
+
+
+#### OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
+
+The critical signal used to track user response when he/she sees a safe boot dialog. Safe boot dialog is shown when we were unable to launch repeatedly. User choice to safe boot is used as permission to clear app data to launch successfully. This is used to ensure critical regression detection for OneNote app and service health. User sees when they encounter critical boot crash bug. This info will help track if they crash causehas been resolved and user can launch the app successfully or not.
+
+The following fields are collected: 
+
+- **DIALOG_ACTION** - Which dialog button did the user click on – Positive button or negative button
+
 
 #### OneNote.Sync.ProvisioningCompleted *(previous name)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
