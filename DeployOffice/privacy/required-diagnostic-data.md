@@ -548,6 +548,10 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **AppInfo.Version** - Current version of the app installed to help us detect issues affecting certain app versions
 
+- **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
+
+- **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
+
 - **customer_type** - Indicates the type of customer (consumer, commercial, third party, etc.) to help us detect issues affecting certain customer types
 
 - **device_category** - Indicates what type of device it is (phone, tablet, etc.) to help us detect device category specific issues
@@ -608,8 +612,6 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 
 In addition, the following fields are common for all events for Outlook for iOS.
-
-- **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
 
 - **DeviceInfo.NetworkProvider** - The network provider of the device (i.e. Verizon)
 
@@ -2294,7 +2296,7 @@ Used for monitoring possible negative impact on your ability to perform critical
 
 The following fields are collected:
 
-- **account** - the account which performed the action
+- **account** - the account which performed the action *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **action** - tracks what type of action was taking, i.e. archive, delete, mark as read, etc. 
 
@@ -7024,7 +7026,7 @@ Allows us to detect situations where there is possible negative impact on your a
 
 Data fields that are common for Outlook Mobile for this event on iOS and Android:
 
-- **Account** - tracks the account and its data associated with the event, values tracked in this data are in the common om field documentation 
+- **Account** - tracks the account and its data associated with the event, values tracked in this data are in the common om field documentation *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **action** - tracks the type of side bar action occurred, i.e. dismissed, help button selected, mail side bar, etc., 
 
@@ -7045,8 +7047,6 @@ The following fields are collected:
 - **calendar_apps_count** - Number of calendar apps you have to help us make sure your interesting calendar apps are configured correctly 
 
 - **calendar_type** - The type of calendar you have (Primary calendar, Group calendar, etc.) 
-
-- **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
 
 - **has_favorite_folders** - Helps us make sure favorite folders are configured correctly 
 
@@ -9767,8 +9767,6 @@ The following fields are collected:
 This event lets us detect and fix issues where there is perceivable performance impact on loading your email conversations to ensure your emails are loading as expected.
 
 The following fields are collected: 
-
-- **cid_type** - indicates what type of the account the CID belongs to
 
 - **time** - Tells us the amount of time that it has taken for the email conversation to complete loading.
 
