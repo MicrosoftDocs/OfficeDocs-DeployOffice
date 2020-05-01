@@ -42,7 +42,7 @@ The experiences that Bing powers in Outlook for iOS and Android are the followin
 - **Interesting Calendars:**   You can [subscribe](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) to calendars about your favorite sports teams or TV shows.
 
 
- These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Office 365 Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
+ These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
 
 ## Experiences that rely on LinkedIn
 

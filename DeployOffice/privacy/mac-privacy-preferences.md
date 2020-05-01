@@ -38,7 +38,7 @@ These new preference settings are CFPreferences API compatible and can be set us
 
 ## Preference setting for diagnostic data
 
-Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-office-365-proplus-to-microsoft).
+Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-app-for-enterprise-to-microsoft).
 
 |||
 |:-----|:-----|
@@ -48,13 +48,13 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 |**Possible values**  | `BasicDiagnosticData` *(this sets the level to Required)* <br/> `FullDiagnosticData` *(this sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this sets the level to Neither)* |
 |**Availability** |16.28 and later |
 
-Starting with new installations of Version 16.30, if you don't set this preference, only required diagnostic data is sent to Microsoft if users with an Office 365 subscription are signed in with a work or school account or if users have a volume licensed version of Office 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+Starting with new installations of Version 16.30, if you don't set this preference, only required diagnostic data is sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account or if users have a volume licensed version of Office 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
 > [!NOTE]
 > - If you install Version 16.28 or 16.29 and you don't set this preference, both optional and required diagnostic data is sent to Microsoft. If you then upgrade to Version 16.30 or later, both optional and required diagnostic data is still sent to Microsoft, unless you use this preference to set a different value.
 > - If you set this preference, it also will apply to Version 1.00.217856 and later of Teams for Mac and to Version 16.28 and later of Skype for Business for Mac.
 
-For other users, such as home users with an Office 365 subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Preferences** > **Privacy**.
+For other users, such as home users with an Office 365 (or Microsoft 365) subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Preferences** > **Privacy**.
 
 ## Preference setting for connected experiences that analyze your content
 
@@ -70,9 +70,9 @@ Connected experiences that analyze your content are experiences that use your Of
 
 If you don't set this preference, connected experiences that analyze content are available to users. 
 
-If the user has an Office 365 subscription and is signed in with a work or school account or if the user has a volume licensed version of Office 2019 for Mac, then the user can't turn off connected experiences that analyze content.
+If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account or if the user has a volume licensed version of Office 2019 for Mac, then the user can't turn off connected experiences that analyze content.
 
-For other users, such as home users with an Office 365 subscription, the user can choose to turn off connected experiences that analyze content by going to **Preferences** > **Privacy**.
+For other users, such as home users with an Office 365 (or Microsoft 365) subscription, the user can choose to turn off connected experiences that analyze content by going to **Preferences** > **Privacy**.
 
 ## Preference setting for connected experiences that download online content
 
@@ -88,9 +88,9 @@ Connected experiences that download online content are experiences that allow yo
 
 If you don't set this preference, connected experiences that download online content are available to users.
 
-If the user has an Office 365 subscription and is signed in with a work or school account or if the user has a volume licensed version of Office 2019 for Mac, then the user can't turn off connected experiences that download online content.
+If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account or if the user has a volume licensed version of Office 2019 for Mac, then the user can't turn off connected experiences that download online content.
 
-For other users, such as home users with an Office 365 subscription, a user can choose to turn off connected experiences that download online content by going to **Preferences** > **Privacy**.
+For other users, such as home users with an Office 365 (or Microsoft 365) subscription, a user can choose to turn off connected experiences that download online content by going to **Preferences** > **Privacy**.
 
 ## Preference setting for optional connected experiences
 
@@ -104,9 +104,9 @@ In addition to the connected experiences mentioned above, there are some optiona
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
 |**Availability** |16.28 and later |
 
-If you don't set this preference, optional connected experiences are available to users with an Office 365 subscription that are signed in with a work or school account or users who have a volume licensed version of Office 2019 for Mac. Unless you have set this preference to `FALSE`, these users can choose to turn off optional connected experiences by going to **Preferences** > **Privacy**.
+If you don't set this preference, optional connected experiences are available to users with an Office 365 (or Microsoft 365) subscription that are signed in with a work or school account or users who have a volume licensed version of Office 2019 for Mac. Unless you have set this preference to `FALSE`, these users can choose to turn off optional connected experiences by going to **Preferences** > **Privacy**.
 
-For other users, such as home users with an Office 365 subscription, there isn't an option to turn off optional connected experiences.
+For other users, such as home users with an Office 365 (or Microsoft 365) subscription, there isn't an option to turn off optional connected experiences.
 
 ## Preference setting for most connected experiences
 
@@ -131,9 +131,9 @@ In addition, if you set this preference to `FALSE`, most other connected experie
 
 But even if you set this preference to `FALSE`, limited Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. [Essential services](essential-services.md), such as the licensing service that confirms that you’re properly licensed to use Office, will also remain available.
 
-If the user has an Office 365 subscription and is signed in with a work or school account or if the user has a volume licensed version of Office 2019 for Mac, then the user can't turn off most connected experiences.
+If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account or if the user has a volume licensed version of Office 2019 for Mac, then the user can't turn off most connected experiences.
 
-For other users, such as home users with an Office 365 subscription, a user can choose to turn off most connected experiences by going to **Preferences** > **Privacy**.
+For other users, such as home users with an Office 365 (or Microsoft 365) subscription, a user can choose to turn off most connected experiences by going to **Preferences** > **Privacy**.
 
 ## Preference setting for the Required Data Notice dialog for Microsoft AutoUpdate
 
