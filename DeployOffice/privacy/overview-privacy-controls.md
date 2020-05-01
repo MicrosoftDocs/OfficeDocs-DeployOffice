@@ -21,7 +21,7 @@ hideEdit: true
 
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
-Starting with Version 1904 of Microsoft 365 Apps for enterprise (which was released in Monthly Channel on April 29, 2019), we are providing you with new, updated, and improved privacy controls for the following areas:
+Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
@@ -32,7 +32,7 @@ As part of these changes, there are new and updated user interface (UI) elements
 > - These changes also apply to the following:
 >   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 >   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
-> - These privacy controls are included in Version 1908 of Semi-Annual Channel (Targeted), which was released on September 10, 2019. They are expected to be available in Semi-Annual Channel in January 2020.
+> - These privacy controls are included in Version 1908 or later of Semi-Annual Channel (Targeted) and Semi-Annual Channel.
 > - These privacy controls are available for Version 2.30 and later of the iOS versions of Excel, OneNote, PowerPoint, and Word, as well as Version 1.17 and later of Visio Viewer for iOS.
 > - These privacy controls are available for Version 16.0.12226.10000 and later of the Android versions of Excel, PowerPoint, and Word, as well as Version 16.0.12228.20004 and later of OneNote for Android.
 > - Most of the Office for the web applications use the new privacy control for [optional connected experiences](optional-connected-experiences.md). Those applications are the following: Excel for the web, OneNote for the web, PowerPoint for the web, Visio for the web, and Word for the web. You can use the [Office cloud policy service](../overview-office-cloud-policy-service.md) to configure the appropriate [policy setting](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
