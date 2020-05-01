@@ -79,7 +79,7 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |Edge Beta |EDBT01||
 |Edge Stable |EDGE01 ||
 
-<sup>1</sup> These identifiers are used for Office 2019 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 or Microsoft 365 plan) running on macOS version 10.12 (Sierra) or higher.
+<sup>1</sup> These identifiers are used for Office 2019 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 or Microsoft 365 plan) running on macOS version 10.12 (Sierra) or later.
 
 <sup>2</sup> These identifiers are used for Office 2016 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 or Microsoft 365 plan) running on macOS version 10.11 (El Capitan) or earlier.
 
