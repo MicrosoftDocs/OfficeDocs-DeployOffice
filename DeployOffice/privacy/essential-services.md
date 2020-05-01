@@ -19,9 +19,10 @@ hideEdit: true
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 ProPlus and Office 365 Business
-> - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
-> - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+> - Microsoft 365 Apps for business (previously named Office 365 Business)
+> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
+> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 >
 > The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
@@ -35,8 +36,8 @@ For more information, see the following:
 
 If you're the admin for your organization, you might also be interested in the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -485,7 +486,7 @@ The following fields are collected:
 
   - **Data\_PrereqFailure\_Type** – The prerequisite failure we hit, i.e. the operating system is not supported
 
-  - **Data\_ProductReleaseId** - Product we're installing, i.e. Office 365 ProPlus
+  - **Data\_ProductReleaseId** - Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
 ### Office.ClickToRun.CorruptionCheck
 
@@ -583,7 +584,7 @@ The following fields are collected:
 
   - **Data\_OfficeVersion** - The version Office is installed in
 
-  - **Data\_Sku** - The SKU that's installed, i.e. Office 365 ProPlus.en-us
+  - **Data\_Sku** - The SKU that's installed, i.e. Microsoft 365 Apps for enterprise
 
   - **Data\_SqmMachineID** – Unique Machine ID used by Windows SQM Data\_SusClientID- Machine Office update identifier
 
@@ -623,7 +624,7 @@ The following fields are collected:
 
   - **Data\_PrereqFailure\_Type-** The prerequisite failure we hit
 
-  - **Data\_ProductReleaseId-** Product we're installing, i.e. Office 365 ProPlus
+  - **Data\_ProductReleaseId-** Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
 ### Office.ClickToRun.RepomanLogger
 

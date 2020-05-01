@@ -1,4 +1,4 @@
-# Privacy for Office 365 ProPlus
+# Privacy for Microsoft 365 Apps for enterprise
 
 ## [Overview of privacy controls](overview-privacy-controls.md)
 
