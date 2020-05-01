@@ -34,7 +34,7 @@ description: Office deployment
                                 </a>
                             </li>
                             <li>
-                                <a href="/DeployOffice/choose-how-to-deploy-office-365-proplus">
+                                <a href="/DeployOffice/plan-microsoft-365-apps">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

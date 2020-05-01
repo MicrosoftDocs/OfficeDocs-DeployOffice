@@ -38,7 +38,7 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
     
 - When you deploy Microsoft 365 Apps, it's installed on the user's local computer. Microsoft 365 Apps is not a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the internet all the time to use it.
     
-- You can use many of the same tools to deploy and configure Microsoft 365 Apps that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Microsoft 365 Apps. For more information, see [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
+- You can use many of the same tools to deploy and configure Microsoft 365 Apps that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Microsoft 365 Apps. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
     
 - In addition, you can use many of the same Group Policy settings that you use with other versions of Office to configure and enforce Microsoft 365 Apps program settings. 
     
@@ -58,7 +58,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they are available. Or, if you have line-of-business applications, add-ins, or macros that you want to test with the new features, you can provide users with new features less frequently. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
     
-- Office 365 (and Microsoft 365) provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you'll have to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](choose-how-to-deploy-office-365-proplus.md#step-1---choose-how-to-deploy).
+- Office 365 (and Microsoft 365) provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you'll have to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
     
 ### Licensing differences
 <a name="BKMK_Licensing"> </a>
