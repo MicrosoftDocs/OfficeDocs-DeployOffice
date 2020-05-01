@@ -549,6 +549,8 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **AppInfo.Version** - Current version of the app installed to help us detect issues affecting certain app versions
 
+- **ci** - a pseudonymous app-specific device unique identifier
+
 - **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
 
 - **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
@@ -624,6 +626,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 
 
 In addition, the following fields are common for all events for Outlook for Android.
+
+- **aad_id** - a pseudonymous Azure Active Directory identifier
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
