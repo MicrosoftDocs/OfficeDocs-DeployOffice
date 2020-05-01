@@ -1,5 +1,5 @@
 ---
-title: "Overview of privacy controls for Office 365 ProPlus"
+title: "Overview of privacy controls for Microsoft 365 Apps for enterprise"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with an overview of privacy controls for Office 365 ProPlus, including for diagnostic data and connected experiences."
+description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), including for diagnostic data and connected experiences."
 hideEdit: true
 ---
 
-# Overview of privacy controls for Office 365 ProPlus
+# Overview of privacy controls for Microsoft 365 Apps for enterprise
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
-Starting with Version 1904 of Office 365 ProPlus (which was released in Monthly Channel on April 29, 2019), we are providing you with new, updated, and improved privacy controls for the following areas:
+Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
@@ -31,20 +31,20 @@ As part of these changes, there are new and updated user interface (UI) elements
 > - These changes apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
 > - These changes also apply to the following:
 >   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
->   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
-> - These privacy controls are included in Version 1908 of Semi-Annual Channel (Targeted), which was released on September 10, 2019. They are expected to be available in Semi-Annual Channel in January 2020.
+>   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
+> - These privacy controls are included in Version 1908 or later of Semi-Annual Channel (Targeted) and Semi-Annual Channel.
 > - These privacy controls are available for Version 2.30 and later of the iOS versions of Excel, OneNote, PowerPoint, and Word, as well as Version 1.17 and later of Visio Viewer for iOS.
 > - These privacy controls are available for Version 16.0.12226.10000 and later of the Android versions of Excel, PowerPoint, and Word, as well as Version 16.0.12228.20004 and later of OneNote for Android.
 > - Most of the Office for the web applications use the new privacy control for [optional connected experiences](optional-connected-experiences.md). Those applications are the following: Excel for the web, OneNote for the web, PowerPoint for the web, Visio for the web, and Word for the web. You can use the [Office cloud policy service](../overview-office-cloud-policy-service.md) to configure the appropriate [policy setting](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
-> - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 clients and services.
+> - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 (and Microsoft 365) clients and services.
 
-## Diagnostic data sent from Office 365 ProPlus to Microsoft
+## Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
 This diagnostic data is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
 
-There are three levels of diagnostic data for Office 365 ProPlus client software that you can choose from:
+There are three levels of diagnostic data for Microsoft 365 Apps for enterprise client software that you can choose from:
 
 - **Required** The minimum data necessary to help keep Office secure, up-to-date, and performing as expected on the device it’s installed on.
 
@@ -68,15 +68,15 @@ For more information, see the following:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-## Connected experiences for Office 365 ProPlus
+## Connected experiences for Microsoft 365 Apps for enterprise
 
-Office 365 ProPlus consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
+Microsoft 365 Apps for enterprise consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
 
 We understand that you might want to choose which types of connected experiences are available to your users when working in Office applications. As an admin for your organization, you’ll have policy settings that allow you to choose whether to provide the following types of connected experiences to your users:
 
@@ -95,14 +95,14 @@ Your users won’t be able to choose whether to turn these connected experiences
 For more information, see the following:
 
 - [Connected experiences in Office](connected-experiences.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
-## Optional connected experiences for Office 365 ProPlus
+## Optional connected experiences for Microsoft 365 Apps for enterprise
 
-In addition to the connected experiences mentioned above that are included with Office 365 ProPlus, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
+In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
 
 These are optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -113,7 +113,7 @@ Even if you choose to make these optional connected experiences available to you
 For more information, see the following:
 
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -138,9 +138,9 @@ If you choose not to provide your users with the category of connected experienc
 
 For more information, see [Required service data for Office](required-service-data.md).
 
-## Essential services for Office 365 ProPlus
+## Essential services for Microsoft 365 Apps for enterprise
 
-There are also a set of services that are essential to how Office 365 ProPlus functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office 365 ProPlus. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
+There are also a set of services that are essential to how Microsoft 365 Apps for enterprise functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Microsoft 365 Apps for enterprise. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
 
 For more information, see [Essential services for Office](essential-services.md).
 
