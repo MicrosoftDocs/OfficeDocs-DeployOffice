@@ -18,7 +18,7 @@ Microsoft Search in Bing helps the users in your organization quickly find work-
 
 To help your users take advantage of the benefits of Microsoft Search in Bing, we’re making an extension available for the Google Chrome web browser. This optional extension will be available only in specific [locations](#which-locations-will-receive-the-microsoft-search-in-bing-extension) for domain-joined devices running Windows. If you decide to deploy this extension, it sets Bing as the default search engine for Google Chrome and provides easier access to Microsoft Search capabilities. If Bing is already the default search engine, the extension doesn't get installed. Even after the extension is installed, a simple [On/Off](#change-whether-bing-is-the-default-search-engine-for-google-chrome) toggle easily allows your users to stop using Bing as the default search engine.
 
-Deployment of this optional extension relies on a background service, which we’re making available with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). Even with the background service installed, you have control over the deployment of the extension. For example, the extension won’t get installed on devices in your organization unless you opt in by selecting a specific setting in the Microsoft Search section of the Microsoft 365 admin center. For more information, see [How does the Microsoft Search in Bing extension for Google Chrome get installed?](#how-does-the-microsoft-search-in-bing-extension-for-google-chrome-get-installed)
+Deployment of this optional extension relies on a background service, which we’re making available with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). Even with the background service installed, you have control over the deployment of the extension. For example, the extension won’t get installed on devices in your organization unless you opt in. You can opt in by selecting a specific setting in the Microsoft Search section of the Microsoft 365 admin center. For more information, see [How does the Microsoft Search in Bing extension for Google Chrome get installed?](#how-does-the-microsoft-search-in-bing-extension-for-google-chrome-get-installed)
 
 This extension is expected to be available gradually starting with Version 2005 of Microsoft 365 Apps for enterprise, for both new installations and for updates to existing installations. For more information about the schedule, [review this table](#which-versions-of-microsoft-365-apps-for-enterprise-include-the-background-service-for-microsoft-search-in-bing).
 
@@ -46,7 +46,9 @@ For more details, see the following sections.
 
 To allow the extension to be installed, sign in to the Microsoft 365 admin center with your admin account. Then, go to **Show all** > **Settings** > **Microsoft Search** > **Configurations**, and then choose **Edit**.
 
-There you will see the **Install extension and set Bing as the default search engine** check box. The check box is not selected by default, as seen in the following screenshot.
+There you'll see the **Install extension and set Bing as the default search engine** check box. The check box is not selected by default, as shown in the following screenshot.
+
+![Configurations tab for Microsoft Search in the Microsoft 365 admin Center](images/m365-admin-center-microsoft-search-bing-checkbox.png)
 
 To allow the extension to be installed, select the check box, and then choose **Save**.
 
@@ -212,7 +214,7 @@ If your users decide they want to stop using Bing as their default search engine
 
 ## How to remove the background service for Microsoft Search in Bing after it’s been installed
 
-You don’t need to remove the background service to revert back to back the original search engine settings. Your users can use the simple [On/Off](#change-whether-bing-is-the-default-search-engine-for-google-chrome) toggle or you can [clear the setting in the Microsoft 365 admin center](#configure-the-setting-in-the-microsoft-365-admin-center-to-allow-the-extension-to-be-installed) which effects all users in your organization.
+You don’t need to remove the background service to revert back to back the original search engine settings. Your users can use the simple [On/Off](#change-whether-bing-is-the-default-search-engine-for-google-chrome) toggle or you can [clear the setting in the Microsoft 365 admin center](#configure-the-setting-in-the-microsoft-365-admin-center-to-allow-the-extension-to-be-installed) that affects all users in your organization.
 
 But if you want, you can remove the background service from the device. If the extension is installed on the device, then uninstalling the background service also removes the extension. Bing will no longer be set as the default search engine. Also, the background service won't be installed again in a future update of Microsoft 365 Apps for enterprise.
 
@@ -232,4 +234,4 @@ You can manually [download](https://aka.ms/AA6im0l) the background service for M
 
 ### Support for Firefox web browser
 
-Support for the Firefox web browser is planned for a later date. We will keep you informed about support for Firefox through the Microsoft 365 Admin Center and this article.
+Support for the Firefox web browser is planned for a later date. We'll keep you informed about support for Firefox through the Microsoft 365 Admin Center and this article.
