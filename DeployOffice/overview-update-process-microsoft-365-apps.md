@@ -20,9 +20,8 @@ Unlike earlier versions of Office, individual security updates and other updates
 > [!IMPORTANT]
 > Because individual updates aren't available for Microsoft 365 Apps, you can't use Windows Update, Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager to download and apply individual updates to Microsoft 365 Apps. 
   
-To determine which version of Microsoft 365 Apps is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **Office Updates** section.
+To determine which version of Microsoft 365 Apps is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **About** section. For example, in Excel, under the **About Excel** section.
   
-![Office version at Office Updates](images/15f0ae22-60d6-4484-838a-08b5e1312988.jpg)
   
 ## Update process for Microsoft 365 Apps
 <a name="Process"> </a>
