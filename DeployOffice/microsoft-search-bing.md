@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with information about the extension for Microsoft Search in Bing that is installed with Office 365 ProPlus and makes Bing the default search engine for the Google Chrome web browser."
+description: "Provides Office admins with information about an optional Microsoft Search in Bing extension for Google Chrome, which relies on a background service that is installed with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)."
 ---
 
 # Microsoft Search in Bing and Microsoft 365 Apps for enterprise
@@ -159,7 +159,7 @@ If you use the Office Deployment Tool, you can use the ExcludeApp element in you
 
 ### Group Policy
 
-If you use Group Policy in your organization, you can enable the *Don't install a background service for Microsoft Search in Bing* policy setting. This method is probably best used for existing installations of Office 365 ProPlus.
+If you use Group Policy in your organization, you can enable the *Don't install a background service for Microsoft Search in Bing* policy setting. This method is probably best used for existing installations of Microsoft 365 Apps for enterprise.
 
 You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. This policy setting is available in the [Administrative Template files (ADMX/ADML) download](https://www.microsoft.com/en-us/download/details.aspx?id=49030) starting with version 5011.1000, which was released on May 5, 2020.
 
