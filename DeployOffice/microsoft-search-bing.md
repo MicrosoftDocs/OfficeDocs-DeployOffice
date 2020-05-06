@@ -172,6 +172,8 @@ You can find this policy setting under Computer Configuration\Policies\Administr
 
 If you’re deploying Microsoft 365 Apps for enterprise  by using the Office 365 Client Installation wizard in Configuration Manager, you can set the **Background service for Microsoft Search in Bing** toggle to the **Off** position in the **Features** section.
 
+![The Features section showing the toggle for Microsoft Search in Bing](images/oct-features-toggle-bing.PNG)
+
 ### Microsoft Intune
 
 If you're deploying Microsoft 365 Apps for enterprise  by using Intune, you can clear the **Install background service for Microsoft Search in Bing** check box on the **Configure App Suite** pane.
