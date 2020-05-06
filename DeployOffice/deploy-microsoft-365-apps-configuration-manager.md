@@ -42,7 +42,7 @@ The steps in this article covers these features and shows you how to implement o
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Office deployment. 
 
-This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction). 
+This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction). 
 
 We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Office 365 (or Microsoft 365) enterprise plans or Microsoft 365 business plans, along with paid Government, Kiosk, and Nonprofit SKUs.  
 
@@ -50,8 +50,8 @@ We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com
 
 The steps in this article are based on the following best practices: 
 
-- **Build two Office [applications](https://docs.microsoft.com/configmgr/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
-- **Deploy to two [collections](https://docs.microsoft.com/configmgr/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives the Semi-Annual Channel (Targeted). The other collection represents the broad group, which receives the Semi-Annual Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
+- **Build two Office [applications](https://docs.microsoft.com/mem/configmgr/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
+- **Deploy to two [collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives the Semi-Annual Channel (Targeted). The other collection represents the broad group, which receives the Semi-Annual Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
 
 You can customize these options to match the requirements for your organization, including deploying to more than two collections, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
 
@@ -59,8 +59,8 @@ You can customize these options to match the requirements for your organization,
 
 From an infrastructure standpoint, deploying Microsoft 365 Apps with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your Office deployment easier and more efficient: 
 
-- Use the current branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use) 
-- Enable peer cache on your client devices. Peer cache is a feature in the current branch of Configuration Manager that can help with limited network capacity when deploying updates to client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache). Office can benefit both during initial deployment as well as later servicing with updates from peer cache.
+- Use the current branch of Configuration Manager. For more details, see [Which branch of Configuration Manager should I use?](https://docs.microsoft.com/mem/configmgr/core/understand/which-branch-should-i-use) 
+- Enable peer cache on your client devices. Peer cache is a feature in the current branch of Configuration Manager that can help with limited network capacity when deploying updates to client devices in remote locations. For more details, see [Peer Cache for Configuration Manager clients](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache). Office can benefit both during initial deployment as well as later servicing with updates from peer cache.
 - Deploy Office as an application using the Office Client Management dashboard and Office 365 Installer wizard in Configuration Manager. The dashboard and wizard enable all the Configuration Manager features designed for Office, including removal of existing versions of Office and the ability to define application preferences.
 
 Make sure to complete the following requirements as well:
@@ -76,7 +76,7 @@ The deployment groups that you defined in your deployment plan are represented a
 - A pilot group that receives the Semi-Annual Channel (Targeted)
 - A broad group that receives the Semi-Annual Channel
 
-In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/introduction-to-collections).  
+In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections).  
 
 ## Step 3 - Create and deploy the Office application to the pilot group
 
@@ -96,10 +96,10 @@ The Office installation packages are represented as applications in Configuratio
 6. On the **Deployment** page, select **Yes** to deploy the application, and then click **Next**. 
 
  > [!NOTE] 
- > If you choose not to deploy the package in the wizard, you can deploy it later. To find the application, go to **Software Library** > **Application Management** > **Applications**.  For details on deploying an application, see [Create and deploy an application](https://docs.microsoft.com/configmgr/apps/get-started/create-and-deploy-an-application). 
+ > If you choose not to deploy the package in the wizard, you can deploy it later. To find the application, go to **Software Library** > **Application Management** > **Applications**.  For details on deploying an application, see [Create and deploy an application](https://docs.microsoft.com/mem/configmgr/apps/get-started/create-and-deploy-an-application). 
 
 7. On the **General** page, choose a collection to deploy to, and then click **Next**. The collection should match the deployment group that receives the Office application you just defined. 
-8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/configmgr/apps/get-started/create-and-deploy-an-application).
+8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](https://docs.microsoft.com/mem/configmgr/apps/get-started/create-and-deploy-an-application).
 9. Complete the wizard.
 After you create and deploy Microsoft 365 Apps using the Office 365 Installer, Configuration Manager will not manage the Office updates by default. Instead, Office will update automatically. To enable Microsoft 365 Apps to receive updates from Configuration Manager, see [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
 
@@ -121,7 +121,7 @@ To view the Office 365 Client Management dashboard in the Configuration Manager 
 In the dashboard, make sure you see the Office versions, languages, and update channels that you deployed for each collection. 
 
 > [!IMPORTANT] 
-> If the data is not displaying, you might need to enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/configure-hardware-inventory). 
+> If the data is not displaying, you might need to enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/configure-hardware-inventory). 
 
 ## Customize your deployment
 The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch. 
@@ -133,7 +133,7 @@ If you want to deploy the 32-bit version of Office, you can create additional in
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 ### Deploy Visio and Project alongside the core Office apps
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](https://docs.microsoft.com/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
 
 ## Remove Office with Configuration Manager
 
@@ -142,7 +142,7 @@ To remove Office, do the following:
 1. Review the description of the **Remove** attribute in the [ODT Reference](office-deployment-tool-configuration-options.md#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
 2. Navigate to **Software Library** > **Overview** > **Application Management** > **Applications**, select the just created application, switch to the **Deployment Type** tab and edit the **Office 365 Default Deployment Type**.
 3. Switch to the **Programs** tab and specify the following **Uninstall Program**: setup.exe /configure uninstall.xml
-4. Clik **OK**, right-click the deployment type and select  **Update Content**. For more details, see [Deploy and manage content](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage).
+4. Clik **OK**, right-click the deployment type and select  **Update Content**. For more details, see [Deploy and manage content](https://docs.microsoft.com/mem/configmgr/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage).
 
 You can deploy or edit the application from **Software Library** > **Overview** > **Application Management** > **Applications**.    
 

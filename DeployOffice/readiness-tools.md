@@ -81,7 +81,7 @@ Configuration Manager also provides reporting capabilities which can be used to 
 
 Even though they are separate tools, the Readiness Toolkit and Configuration Manager can be combined to form a powerful end-to-end solution ideal for Configuration Manager customers.
 
-For more information, see [Integration for Office 365 ProPlus readiness](https://docs.microsoft.com/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) and [Office 365 ProPlus upgrade readiness dashboard](https://docs.microsoft.com/configmgr/core/get-started/2019/technical-preview-1904#bkmk_o365).
+For more information, see [Integration for Office 365 ProPlus readiness](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) and [Office 365 ProPlus upgrade readiness dashboard](https://docs.microsoft.com/mem/configmgr/core/get-started/2019/technical-preview-1904#bkmk_o365).
 
 
 ## Office Telemetry Dashboard

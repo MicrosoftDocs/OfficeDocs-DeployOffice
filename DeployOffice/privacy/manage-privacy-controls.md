@@ -1,5 +1,5 @@
 ---
-title: "Use policy settings to manage privacy controls for Office 365 ProPlus"
+title: "Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with information about how to manage privacy controls in Office 365 ProPlus by using policy settings."
+description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) by using policy settings."
 hideEdit: true
 ---
 
-# Use policy settings to manage privacy controls for Office 365 ProPlus
+# Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Office 365 ProPlus.
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
-Starting with Version 1904 of Office 365 ProPlus, there are new policy settings that will allow you to control settings related to the following:
+Starting with Version 1904 of Microsoft 365 Apps for enterprise, there are new policy settings that will allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used
 
@@ -45,9 +45,9 @@ These policy settings can be implemented by using either Group Policy or the [Of
 
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
-These new policy settings also apply to desktop versions of Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2. They also apply to Office 365 Business.
+These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business (previously named Office 365 Business).
 
-There are also some existing policy settings that will no longer apply to Office 365 ProPlus, and there are some user interface (UI) changes for privacy settings that you should be aware of because your users might notice those changes and ask about them.
+There are also some existing policy settings that will no longer apply to Microsoft 365 Apps for enterprise, and there are some user interface (UI) changes for privacy settings that you should be aware of because your users might notice those changes and ask about them.
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings you configure have the desired effect before you implement the policy settings more widely in your organization.
 
@@ -69,14 +69,14 @@ If you disable or don’t configure this policy setting, both optional and requi
 
 For more information about diagnostic data, see the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Required diagnostic data for Office](required-diagnostic-data.md)
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Policy settings for connected experiences
 
-Office 365 ProPlus consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
+Microsoft 365 Apps for enterprise consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
 
 We understand that you might want to choose which types of connected experiences are available to your users when they’re working in Office applications. So we have provided four new policy settings for you:
 
@@ -85,11 +85,11 @@ We understand that you might want to choose which types of connected experiences
 - Allow the use of additional optional connected experiences in Office
 - Allow the use of connected experiences in Office
 
-If you don't configure these policy settings, all connected experiences are available. This gives your users all the features and functionality accessible through Office 365 ProPlus. But we understand that you might need to turn off some or all of these connected experiences to meet certain requirements of your organization.
+If you don't configure these policy settings, all connected experiences are available. This gives your users all the features and functionality accessible through Microsoft 365 Apps for enterprise. But we understand that you might need to turn off some or all of these connected experiences to meet certain requirements of your organization.
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or users will get an error message when they try to use those connected experiences. In that case, no [required service data](required-service-data.md) for those connected experiences will be sent to Microsoft.
 
-Your users won’t be able to choose whether to turn these connected experiences included with Office 365 ProPlus on or off if they are signed into Office with their organizational credentials, which is sometimes referred to as a work or school account.
+Your users won’t be able to choose whether to turn these connected experiences included with Microsoft 365 Apps for enterprise on or off if they are signed into Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
 ### Policy setting for connected experiences that analyze your content
 
@@ -109,7 +109,7 @@ Note that if you disable the *Allow the use of connected experiences in Office* 
 
 ### Policy setting for optional connected experiences
 
-In addition to the connected experiences mentioned above that are included with Office 365 ProPlus, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
@@ -133,7 +133,7 @@ There is one exception to take note of. The *Allow the use of additional optiona
 
 ### Policy setting for most connected experiences
 
-You can use the *Allow the use of connected experiences in Office* policy setting to control whether most connected experiences accessible through Office 365 ProPlus are available to your users. If you disable the policy setting, the following types of connected experiences won’t be available to your users:
+You can use the *Allow the use of connected experiences in Office* policy setting to control whether most connected experiences accessible through Microsoft 365 Apps for enterprise are available to your users. If you disable the policy setting, the following types of connected experiences won’t be available to your users:
 
 - Experiences that analyze your content
 - Experiences that download online content
@@ -145,13 +145,13 @@ But even if you disable this policy setting, limited Office functionality will r
 
 ## Existing policy settings that are replaced by new policy settings
 
-There are two existing policy settings that are no longer applicable to Office 365 ProPlus, starting with Version 1904. Those policy settings are the following:
+There are two existing policy settings that are no longer applicable to Microsoft 365 Apps for enterprise, starting with Version 1904. Those policy settings are the following:
 
 - **Send personal information**, which can be found under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
 - **Online Content Options**, which can be found under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Tools | Options | General | Service Options...\\Online Content.
 
-Starting with Version 1904, configuring these two existing policy settings will have no effect on Office 365 ProPlus. They are no longer applicable because their functionality is replaced by these new policy settings:
+Starting with Version 1904, configuring these two existing policy settings will have no effect on Microsoft 365 Apps for enterprise. They are no longer applicable because their functionality is replaced by these new policy settings:
 
 - Allow the use of connected experiences in Office that analyze content
 - Allow the use of connected experiences in Office that download online content
@@ -178,7 +178,7 @@ In general, if one policy setting is configured to turn on a specific connected 
 
 ## Privacy related changes to the Office UI
 
-There are some changes to the user interface (UI) of Office 365 ProPlus related to privacy that your users might notice and ask about. These changes are a direct result of the new privacy controls and policy settings available starting in Version 1904.
+There are some changes to the user interface (UI) of Microsoft 365 Apps for enterprise related to privacy that your users might notice and ask about. These changes are a direct result of the new privacy controls and policy settings available starting in Version 1904.
 
 ### Dialog about optional connected experiences
 

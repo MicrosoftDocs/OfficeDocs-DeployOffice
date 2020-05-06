@@ -44,9 +44,9 @@ You can customize these options to match the requirements for your organization,
 
 You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
 
-1. Create the shared folder **\\\\Server\Share\O365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11)).
+1. Create the shared folder **\\\\Server\Share\M365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11)).
 
-2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\\Server\Share\O365. If you've already downloaded the ODT, make sure you have the latest version.
+2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\\Server\Share\M365. If you've already downloaded the ODT, make sure you have the latest version.
 
 3. After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
 
@@ -63,7 +63,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
  - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
  - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
  - **Application preferences:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SACT.xml** in the **\\\Server\Share\O365** folder.
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SACT.xml** in the **\\\Server\Share\M365** folder.
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
@@ -75,17 +75,17 @@ Using the [Office Customization Tool](https://config.office.com/), create the co
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
  - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the broad group 
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\O365** folder.
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\M365** folder.
 
 This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Channel ("Broad").
 
 ## Step 4: Deploy Office to the pilot group
 
-To deploy Office, you provide commands that users can run from their client computers. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\O365**).
+To deploy Office, you provide commands that users can run from their client computers. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
 
 From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-pilot-SACT.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-pilot-SACT.xml`
 
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
@@ -98,7 +98,7 @@ After Office has deployed to the pilot group, you can test Office in your enviro
 
 After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\O365\setup.exe /configure \\Server\Share\O365\config-broad-SAC.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-broad-SAC.xml`
 
 This command is the same as the pilot group, except that it references the configuration file for the broad group. After running the command, the Office installation should start immediately. 
 
