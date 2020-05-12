@@ -14,6 +14,9 @@ description: "The client applications that are included with Office 365 are rele
 
 # Change management for Office 365 clients
 
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+
 The client applications that are included with Office 365 (and Microsoft 365) are released regularly with updates that provide new features and functionality together with security and other updates. Windows 10 has also adopted this servicing model and is also releasing new functionality regularly. As an IT Professional, you need to understand this servicing model and how you can manage the releases while your organization takes advantage of the new functionality. 
 
 This article gives you an overview of this servicing model, and helps you understand the release channels and cadence, and how to effectively manage releases of the Office 365 client applications for your organization.

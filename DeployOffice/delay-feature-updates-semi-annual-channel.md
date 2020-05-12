@@ -14,6 +14,9 @@ description: "Provides IT Pros with the steps to delay receiving feature updates
 
 # Delay receiving feature updates from Semi-Annual Channel for Microsoft 365 Apps
 
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+
 Semi-Annual Channel provides Microsoft 365 Apps with new features for the Office apps, such as Word and Excel, twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
   
 > [!IMPORTANT]
