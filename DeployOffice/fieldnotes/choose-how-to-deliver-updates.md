@@ -18,6 +18,9 @@ ms.collection:
 
 # Choose how to deliver updates for Microsoft 365 Apps for enterprise
 
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
