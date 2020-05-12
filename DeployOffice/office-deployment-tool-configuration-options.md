@@ -129,6 +129,9 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+
 Optional.
 
 Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Microsoft 365 Apps for enterprise. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
@@ -663,6 +666,9 @@ Example value:
 - Deadline="05/16/2014 18:30"
 
 ### Channel attribute (part of Updates element)
+
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
 
 Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **Monthly** for the subscription versions of the Project and Visio desktop apps.
 
