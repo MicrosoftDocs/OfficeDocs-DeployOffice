@@ -18,7 +18,8 @@ description: "Configuration options for the Office Deployment Tool"
 # Configuration options for the Office Deployment Tool
 
 > [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+> - We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
@@ -127,6 +128,9 @@ Allowed values:
 - OfficeClientEdition="32"
 
 ### Channel attribute (part of Add element) 
+
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
 
 Optional.
 
@@ -662,6 +666,9 @@ Example value:
 - Deadline="05/16/2014 18:30"
 
 ### Channel attribute (part of Updates element)
+
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
 
 Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **Monthly** for the subscription versions of the Project and Visio desktop apps.
 
