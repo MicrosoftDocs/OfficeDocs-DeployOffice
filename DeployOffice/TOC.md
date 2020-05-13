@@ -20,8 +20,8 @@
 ## [Overview of update channels](overview-update-channels.md)
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
-## [Update history](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
-## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+## [Update history](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
+## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
