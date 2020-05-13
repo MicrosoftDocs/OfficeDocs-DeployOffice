@@ -118,7 +118,7 @@ We recommend using the [Office Customization Tool](overview-of-the-office-custom
 You will also see this default update channel selection if you use Microsoft Endpoint Configuration Manager (current branch) and the Office 365 Client Installation Wizard. That’s because the wizard makes use of the Office Customization Tool.
 
 ### Microsoft 365 admin center  
-Current Channel will be the default selection when you sign into the Microsoft 365 admin center and go to **Show all** > **Settings** > **Settings** > **Services** > **Office software download settings**.
+Current Channel will be the default selection when you sign into the Microsoft 365 admin center and go to **Show all** > **Settings** > **Org settings** > **Services** > **Office software download settings**.
 
 This change to the default selection in the Microsoft 365 admin center only applies to ***new*** tenants that are created on or after June 9, 2020.
 
