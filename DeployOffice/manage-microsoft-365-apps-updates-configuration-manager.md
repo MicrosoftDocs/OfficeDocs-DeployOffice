@@ -43,7 +43,7 @@ To enable Configuration Manager to manage Office updates, you need the following
 
 - Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, the subscription version of the Project desktop app, or the subscription version of the Visio desktop app.
 
-- Supported channel version for Office. For more details, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+- Supported channel version for Office. For more details, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
 
 - Windows Server Update Services (WSUS) 4.0
 

@@ -84,7 +84,7 @@ Here are some example installation scenarios, whether they're supported, and an 
 
 
 
-<sup>2</sup> You must be using at least Version 1808 of Microsoft 365 Apps, because that's the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Microsoft 365 Apps release information, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+<sup>2</sup> You must be using at least Version 1808 of Microsoft 365 Apps, because that's the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Microsoft 365 Apps release information, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 
 
 ## Additional information
