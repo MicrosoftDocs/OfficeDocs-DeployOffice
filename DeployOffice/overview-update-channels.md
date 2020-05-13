@@ -127,7 +127,7 @@ Features that are currently in Current Channel need to meet certain release crit
 
 For a list of feature updates included in a given release of Monthly Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
 
-##### Preview upcoming new features of Monthly Enterprise Channel
+#### Preview upcoming new features of Monthly Enterprise Channel
 
 There is no dedicated preview channel for Monthly Enterprise Channel, like there is for Current Channel and for Semi-Annual Enterprise Channel.
 
