@@ -60,7 +60,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md) 
 
-- [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+- [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
 
 
 ## Reference

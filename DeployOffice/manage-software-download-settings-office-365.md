@@ -18,7 +18,7 @@ description: "Provides Office 365 admins with information to help them configure
 As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office software download settings** page determine which software users can install from the **My account** > **Apps & devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
 
 > [!TIP]
-> To get to the **Office software download settings** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Settings** > **Services**.
+> To get to the **Office software download settings** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
   
 If you choose to make some software unavailable to users, they see a message on their **My account** > **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   

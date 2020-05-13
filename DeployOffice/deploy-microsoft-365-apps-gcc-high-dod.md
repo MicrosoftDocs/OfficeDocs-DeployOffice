@@ -167,18 +167,6 @@ Modern authentication needs to be enabled to be compliant. Modern authentication
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
 
-### Disable experimentation on Microsoft 365 Apps for enterprise
-Microsoft occasionally runs experiments on Office features.
-
-To disable experimentation, edit the registry and add the DisableFeatureRollout value to the HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\TrustCenter\Experimentation key. The type for DisableFeatureRollout is REG_SZ and the value should be set to `true` (lowercase).
-
-If experimentation was previously enabled, you also need to delete any data under the following registry keys to clear the experimentation cache.
-- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Experiment
-- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentEcs
-- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentTas
-
-These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
-
 ### Configure Outlook behavior on Microsoft 365 Apps for enterprise
 The following registry values must be set to correctly configure Outlook behavior on Microsoft 365 Apps for enterprise. The type for these registry values is REG_DWORD and the values should be set to 1.
 

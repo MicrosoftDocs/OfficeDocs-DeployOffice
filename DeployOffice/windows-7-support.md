@@ -41,7 +41,7 @@ Version 2002 is the last version of Microsoft 365 Apps that you can install on d
 This means that if you want to continue to deploy and update Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows 7, you'll receive an error message.
 
 > [!NOTE]
-> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).  
+> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).  
 
 To deploy or update Version 2002 on devices running Windows 7, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Microsoft Endpoint Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
 
@@ -64,7 +64,7 @@ If you use an automatic deployment rule (ADR), you should create a new rule for 
 
 ## Extended availability of Version 2002
 
-Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft 365 Apps Security Updates](https://docs.microsoft.com/officeupdates/office365-proplus-security-updates).
+Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft 365 Apps Security Updates](https://docs.microsoft.com/officeupdates/microsoft365-apps-security-updates).
 
 Versions on Semi-Annual Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Monthly and Semi-Annual (Targeted).
 
@@ -91,3 +91,4 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 10, including [FastTrack](https://docs.microsoft.com/fasttrack/win-10-fasttrack-benefit-for-windows-10), [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure), and the [Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
+- If you're using Microsoft 365 Apps for enterprise on a device running Windows 7 or Windows Server 2008 R2, you'll continue to see **Office 365 ProPlus** under the **Product Information** section when you go to **File** > **Account** in an Office app, such as Word. If you're using Version 2002 of Microsoft 365 Apps for business, you'll see **Microsoft 365 for business** under the **Product Information** section.
