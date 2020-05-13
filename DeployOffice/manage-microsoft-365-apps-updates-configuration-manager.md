@@ -98,7 +98,7 @@ To use Group Policy, do the following:
 
 - Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 
-- Enable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+- Enable the *Management of Microsoft 365 Apps for enterprise* policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 <a name="BKMK_ODT"> </a>
 ### Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager
@@ -140,10 +140,10 @@ For more information, see [client policy](https://docs.microsoft.com/mem/configm
 
 - Download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 
-- Disable the **Office 365 Client Management** policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+- Disable the *Management of Microsoft 365 Apps for enterprise* policy setting. You can find this policy setting under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 > [!IMPORTANT]
-> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling Office 365 Client Management via Group Policy or **Client Settings** for Configuration Manager  from **Enabled** to **Not Configured** is not sufficient.
+> The Microsoft Office Click-to-Run Service is responsible for registering and unregistering Office COM application during service startup. Change domain policy or Configuration Manager client settings require explicit **Disable** selection for Office COM to be successfully deregistered and restore default configuration. Toggling *Management of Microsoft 365 Apps for enterprise* via Group Policy or **Client Settings** for Configuration Manager from **Enabled** to **Not Configured** is not sufficient.
 
 ## Contents of the Office 365 client update package for WSUS
 
