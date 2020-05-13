@@ -32,7 +32,7 @@ The following are the requirements for using the Office cloud policy service wit
 
 - At least Version 1808 of Microsoft 365 Apps for enterprise.
 - User accounts created in or synchronized to Azure Active Directory (AAD). The user must be signed into Microsoft 365 Apps for enterprise with an AAD-based account.
-- Security groups created in or synchronized to Azure Active Directory (AAD), with the appropriate users added to those groups.
+- Office cloud policy service supports security groups, mail-enabled security groups, and distribution groups created in Azure AD. The membership type can be either Dynamic or Assigned.
 - To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Office Apps Admin.
 
 > [!IMPORTANT]
@@ -86,6 +86,8 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - You can also create policy configurations to apply policy settings for Version 1808 or later of the subscription versions of the Project and Visio desktop apps.
 - Version 1808 of Microsoft 365 Apps for enterprise (and for the subscription versions of the Project and Visio desktop apps) are available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel. For Microsoft 365 Apps for enterprise release information, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 - A policy configuration can't be applied to other commercial versions of Office that use Click-to-Run, such as Microsoft 365 Apps for business, Office Professional Plus 2019, or Office Standard 2019.
+- If users are located in nested groups and the parent group is targeted for policies in OCPS, the users in the nested groups will receive the policies.
+
 
 ## Troubleshooting tips
 
