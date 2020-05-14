@@ -35,7 +35,7 @@ This new update channel is available as of May 12, 2020. Version 2003 is the fir
 You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Endpoint Configuration Manager.
 
 > [!NOTE]
-> - To deploy Monthly Enterprise Channel by using Group Policy and the *Update Channel* policy setting, download at least version 5017.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/en-us/download/details.aspx?id=49030). Version 5017.1000 was released on May 14, 2020.
+> To deploy Monthly Enterprise Channel by using Group Policy and the *Update Channel* policy setting, download at least version 5017.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/en-us/download/details.aspx?id=49030). Version 5017.1000 was released on May 14, 2020.
 
 For more information about Monthly Enterprise Channel, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
