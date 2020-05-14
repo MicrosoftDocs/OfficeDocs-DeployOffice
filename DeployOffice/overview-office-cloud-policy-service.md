@@ -32,7 +32,7 @@ The following are the requirements for using the Office cloud policy service wit
 
 - At least Version 1808 of Microsoft 365 Apps for enterprise.
 - User accounts created in or synchronized to Azure Active Directory (AAD). The user must be signed into Microsoft 365 Apps for enterprise with an AAD-based account.
-- Office cloud policy service supports security groups, mail-enabled security groups, and distribution groups created in Azure AD. The membership type can be either Dynamic or Assigned.
+- Office cloud policy service supports security groups and mail-enabled security groups created in Azure AD. The membership type can be either Dynamic or Assigned.
 - To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Office Apps Admin.
 
 > [!IMPORTANT]
