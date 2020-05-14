@@ -104,8 +104,9 @@ The following table shows the tentative release schedule for Version 2005 for th
 
 |Update channel      | Version  | Release date  |
 |---------|---------|---------|
-|Monthly Channel (Targeted) |*Version 2005*   | *Middle of May 2020*  |
+|Monthly Channel (Targeted) |Version 2005   | May 14, 2020  |
 |Monthly Channel   | *Version 2005*  | *Late May 2020*  |
+|Monthly Enterprise Channel | *To be determined*  | *To be determined*   |
 |Semi-Annual Channel (Targeted) | *To be determined*  | *To be determined*   |
 |Semi-Annual Channel    | *To be determined*  |*To be determined*   |
 
