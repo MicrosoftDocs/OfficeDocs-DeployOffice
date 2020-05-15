@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["master"]
- :allowed-filename-matches ["DeployOffice/"]}
+ :allowed-filename-matches ["DeployOffice/"]
  :acrolinx-check-settings
  {
   "languageId" "en"
