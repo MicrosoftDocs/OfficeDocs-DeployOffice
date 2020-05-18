@@ -20,7 +20,7 @@ To activate volume licensed versions of Office, including Project and Visio, you
 
 To enable the KMS host computer to activate Office, you must install the Office Volume License Pack and enter your KMS key on the KMS host computer. Then, you need to activate the KMS key over the internet or by telephone. 
 
-If you have a KMS host computer configured to activate Windows, you can configure that same KMS host computer to active Office. You can also configure a KMS host computer to activate multiple versions of Office, such as Office 2019 and Office 2016. In these cases, the KMS host computer must be running an operating system that supports KMS for each of the versions of Office that you want to activate. You'll also need to install the Office Volume License Pack for each version of Office on the KMS host computer and activate a KMS host key for each version of Office.
+If you have a KMS host computer configured to activate Windows, you can configure that same KMS host computer to activate Office. You can also configure a KMS host computer to activate multiple versions of Office, such as Office 2019 and Office 2016. In these cases, the KMS host computer must be running an operating system that supports KMS for each of the versions of Office that you want to activate. You'll also need to install the Office Volume License Pack for each version of Office on the KMS host computer and activate a KMS host key for each version of Office.
 
 Office supports KMS host computers running on the following operating systems, depending on which version of Office is being activated by KMS:
 - **Office 2019:** At least Windows Server 2012 or at least Windows 8.1 (volume editions)
