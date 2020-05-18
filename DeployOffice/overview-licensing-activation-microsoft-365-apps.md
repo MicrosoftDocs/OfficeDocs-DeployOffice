@@ -47,10 +47,8 @@ As part of the installation process, Microsoft 365 Apps communicates with the Of
   
 ### Managing activated installations
 
-Each Microsoft 365 Apps license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. The user manages installations in the Office 365 portal:
-  
-![Managing Office 365 active installations](images/c830ebad-a255-4e32-8d7a-af5a687dc107.png)
-  
+Each Microsoft 365 Apps license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. The user manages installations in the Office 365 portal.
+    
 If a user installs Microsoft 365 Apps on more than 10 devices, then the device that hasn't been used for the longest amount of time is automatically deactivated. Microsoft 365 Apps goes into reduced functionality mode on the deactivated device. Note that this automatic deactivation is only supported for Windows devices at this time. 
   
 ## What is reduced functionality mode?
