@@ -71,7 +71,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 ## Considerations when changing channels
 
-- When moving from a channel with a higher build number to a channel with an lower build number (such as Monthly Channel to Semi-Annual Channel), binary delta compression is not applied. Because of this, the update will be larger than normal. The update, however, will not be as large as a full installation of Microsoft 365 Apps.
+- When moving from a channel with a higher build number to a channel with a lower build number (such as Monthly Channel to Semi-Annual Channel), binary delta compression is not applied. Because of this, the update will be larger than normal. The update, however, will not be as large as a full installation of Microsoft 365 Apps.
 
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.
 
