@@ -1,7 +1,7 @@
 ---
 title: "Overview of licensing and activation in Microsoft 365 Apps"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: mattphil
+author: MJP-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: get-started-article
