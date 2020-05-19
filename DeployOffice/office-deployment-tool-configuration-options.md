@@ -145,6 +145,7 @@ For more information about update channels, see  [Overview of update channels fo
 Allowed values: 
 
 - Channel="Monthly"
+- Channel="MonthlyEnterprise"
 - Channel="Broad"
 - Channel="Targeted"
 
@@ -681,6 +682,7 @@ If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for
 Allowed values:
 
 - Channel="Monthly"
+- Channel="MonthlyEnterprise"
 - Channel="Broad"
 - Channel="Targeted"
 

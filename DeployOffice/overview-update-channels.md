@@ -245,6 +245,7 @@ After Office is installed, you can change the update channel for a device. For m
 
 ### Other products
 - These update channels also apply to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 3 or Visio Plan 2.
+- OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app update process](https://docs.microsoft.com/onedrive/sync-client-update-process) and [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
 - If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there is a different update channel you need to use. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ### Managing updates
