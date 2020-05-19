@@ -706,6 +706,8 @@ Example values:
 - IgnoreProduct ID="VisPro"
 - IgnoreProduct ID="PrjPro"
 
+> [!IMPORTANT]
+> - Office Professional Plus 2016 (MSI) cannot coexist with Microsoft 365 Apps.  If Office Professional Plus 2016 isn't removed, the installation of Microsoft 365 Apps will fail. 
 
 ## AppSettings element
 
