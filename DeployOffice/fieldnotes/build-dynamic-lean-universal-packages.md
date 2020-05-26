@@ -158,7 +158,7 @@ This single configuration file will work across x86/x64 and all update channels 
 
 ## Build your own configuration
 
-The above concept is universally applicable to all Click-To-Run-based installations and products, as long as the ODT is used. You can change the specified Product ID to your scenario. Please check out the [list of supported Product IDs](https://docs.microsoft.com/en-us/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run) for more information.
+The above concept is universally applicable to all Click-To-Run-based installations and products, as long as the ODT is used. You can change the specified Product ID to your scenario. Please check out the [list of supported Product IDs](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run) for more information.
 
 ## Prerequisites/Notes
 
