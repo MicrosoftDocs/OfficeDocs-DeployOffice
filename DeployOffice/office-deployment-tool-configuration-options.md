@@ -148,7 +148,7 @@ Allowed values:
 - Channel="Broad"
 - Channel="Targeted"
 
-Use "Broad" for Semi-Annual Enterprise Channel and "Targeted" for Semi-Annual Enterprise Channel (Preview).
+Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Preview).
 
 If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
