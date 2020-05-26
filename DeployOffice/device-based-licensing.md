@@ -28,7 +28,7 @@ The following are the requirements for device-based licensing for Microsoft 365 
 
 - Version 1907 or later of Microsoft 365 Apps for enterprise
 - Version 1803 or later of Windows 10
-- The Windows 10 device must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+- The Windows 10 device must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
 To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet these requirements, do the following:
 
