@@ -331,7 +331,7 @@ Example values:
 
 Optional.
 
-When using MatchInstalled, you have to specify if you want to match a specific already installed product or the sum of all already installed languages. To target a specific product, you can specify any [supported product ID](https://docs.microsoft.com/en-us/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match all already installed languages, you can specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
+When using MatchInstalled, you have to specify if you want to match a specific already installed product or the sum of all already installed languages. To target a specific product, you can specify any [supported product ID](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match all already installed languages, you can specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
 
 Example values:
 
