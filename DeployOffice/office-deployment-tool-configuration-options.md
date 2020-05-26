@@ -311,9 +311,9 @@ For a list of all languages, see [Languages, culture codes, and companion proofi
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
-Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a allow the ODT to leverage the Office CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md).
+Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and allow the ODT to use the Office CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. 
 
-MatchInstalled can only be used if there is at least one Click-to-Run-based product already installed. It can not be used with the /download switch for the ODT.  Learn more about on how to leverage MatchInstalled for [deploying languages](overview-deploying-languages-microsoft-365-apps.md#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-microsoft-365-apps) and for [scenarios like adding Visio or Project to existing Microsoft 365 App installations](/fieldnotes/build-dynamic-lean-universal-packages.md).
+MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more details on MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](/fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ### Fallback attribute (part of Language element)
 
