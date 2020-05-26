@@ -125,7 +125,7 @@ If you're adding to an existing deployment, the ODT will automatically use the s
 
 1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example below.
 2. Optionally, you can include the TargetProduct as an attribute of the Language element, as shown in the example below. By doing so, you can specify which existing Office product should be used to determine which languages to install. For example, if you set TargetProduct = "O365ProPlusRetail", the Office products you're deploying will be installed in the same languages as Microsoft 365 Apps for enterprise, if that product is installed on the client computer. If you want to match all installed languages, you can specify TargetProduct="All".
-4. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). You can not use the /download switch for ODT on a configuration file which contains the MatchInstalled keyword. You have to use a separate configuration file for this. 
+3. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). You can not use the /download switch for ODT on a configuration file which contains the MatchInstalled keyword. You have to use a separate configuration file for this. 
 
 You can also use MatchInstalled as the Language ID when adding Office apps to or removing them from an existing installation of Office. 
 
@@ -142,7 +142,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 </Configuration>
 ```
 
-Learn more about[ how to leverage MatchInstalled in 2nd install scenarios](/fieldnotes/build-dynamic-lean-universal-packages.md).
+Learn more about [how to use MatchInstalled in second-install scenarios](/fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ## Install the same languages as a previous MSI installation
 
