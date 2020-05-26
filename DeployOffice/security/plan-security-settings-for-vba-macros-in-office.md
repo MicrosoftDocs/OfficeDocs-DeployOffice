@@ -30,7 +30,7 @@ Office 2016 provides several settings that enable you to control the behavior of
   
 - Change the security warning settings for VBA macros. This includes disabling VBA macros, enabling all VBA macros, and changing the way that users are notified about VBA macros.
     
-- Block VBA macros from running in Word, Excel, and PowerPoint files from the Internet.
+- Block VBA macros from running in Word, Excel, PowerPoint, Access and Visio files from the Internet.
     
 - Disable VBA.
     

@@ -155,11 +155,16 @@ If you’re running SAC as well as SAC-T and have an x86/x64 mixed environment, 
 ```
  
 This single configuration file will work across x86/x64 and all update channels (Insider Fast, Monthly Targeted, Monthly, SAC-T, SAC, and others). So, if you want to offer five additional languages in your environment, just build five of these "config file + ODT" packages. For proofing tools, you just change the ProductID to "ProofingTools".
- 
-## Prerequisites
 
-There are some prerequisites you must meet to make this concept work in your environment:
+## Build your own configuration
+
+The above concept is universally applicable to all Click-To-Run-based installations and products, as long as the ODT is used. You can change the specified Product ID to your scenario. Please check out the [list of supported Product IDs](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run) for more information.
+
+## Prerequisites/Notes
+
+Here are some prerequisites you must meet to make this concept work in your environment and some notes:
 - Use [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) 16.0.11615.33602 or later to enable *Version=MatchInstalled* to work.
 - The ODT must be able to locate the matching source files on the Office CDN.
 - Make sure that the context you're using for running the install can traverse the proxy. For details, see [Office 365 ProPlus Deployment and Proxy Server Guidance](https://techcommunity.microsoft.com/t5/Office-365-Blog/Office-365-ProPlus-Deployment-and-Proxy-Server-Guidance/ba-p/849164).
 - Make sure that the account (user or system) that's used to install the apps can connect to the internet.
+- The tailored configuration files shown above are good for installing the products (with the /configure switch), but do not work with the /download switch. This is expected, as the ODT is missing some details to perform a download (like architecture). For the above concept, there is no need to download the files beforehand.

@@ -123,10 +123,9 @@ You can automatically deploy Visio and Project in the languages that are in use 
 
 If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
 
-1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example below. 
-2. In some cases, using Match Installed can change the Shell UI language. To avoid that, we recommend including "MatchOS" or a specific language as the first Language ID, as show in the example below.  
-3. Optionally, you can include the TargetProduct as an attribute of the Language element, as shown in the example below. By doing so, you can specify which existing Office product should be used to determine which languages to install. For example, if you set TargetProduct = "O365ProPlusRetail", the Office products you're deploying will be installed in the same languages as Microsoft 365 Apps for enterprise, if that product is installed on the client computer. 
-4. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps).  
+1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example below.
+2. Optionally, you can include the TargetProduct as an attribute of the Language element, as shown in the example below. By doing so, you can specify which existing Office product should be used to determine which languages to install. For example, if you set TargetProduct = "O365ProPlusRetail", the Office products you're deploying will be installed in the same languages as Microsoft 365 Apps for enterprise, if that product is installed on the client computer. If you want to match all installed languages, you can specify TargetProduct="All".
+3. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). You can not use the /download switch for ODT on a configuration file which contains the MatchInstalled keyword. You have to use a separate configuration file for this. 
 
 You can also use MatchInstalled as the Language ID when adding Office apps to or removing them from an existing installation of Office. 
 
@@ -137,12 +136,13 @@ For details on how to edit the configuration file in a text editor, see [Configu
 <Configuration>
  <Add Channel="Broad" AllowCdnFallback="True"> 
   <Product ID="VisioProRetail">
-     <Language ID="MatchOS" />
      <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
   </Product>
  </Add>  
 </Configuration>
 ```
+
+Learn more about [how to use MatchInstalled in second-install scenarios](/fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ## Install the same languages as a previous MSI installation
 
