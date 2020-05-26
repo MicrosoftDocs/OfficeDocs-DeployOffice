@@ -273,8 +273,6 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
 
-Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and and a backup source location for the language pack. To do so, use the Fallback attribute and AllowCdnFallBack attribute. For more details, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md).
-
 ### Example
 
 ```xml
@@ -308,10 +306,15 @@ Defines the ID of the language to download or install.
 - ID="ja-jp"
 - ID="MatchOS"
 - ID="MatchPreviousMSI"
+- ID="MatchInstalled"
 
 For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
+
+Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and allow the ODT to use the Office CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. 
+
+MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more details on MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](/fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ### Fallback attribute (part of Language element)
 
@@ -323,6 +326,17 @@ Example values:
 
 - Fallback="en-us"
 - Fallback="ja-jp"
+
+### TargetProduct attribute (part of Language element)
+
+Optional.
+
+When using MatchInstalled, you have to specify if you want to match a specific already installed product or the sum of all already installed languages. To target a specific product, you can specify any [supported product ID](https://docs.microsoft.com/en-us/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match all already installed languages, you can specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
+
+Example values:
+
+- <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail"
+- <Language ID="MatchInstalled" TargetProduct="All"
 
 ## Display element
 
