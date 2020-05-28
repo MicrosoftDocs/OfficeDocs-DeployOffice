@@ -16,7 +16,7 @@ description: "How to prepare and configure the Key Management Service (KMS) host
 
  ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
 
-To activate volume licensed versions of Office, including Project and Visio, you must have a KMS host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
+To activate volume licensed versions of Office, including Project and Visio, you must have a Key Management Service (KMS) host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 
 To enable the KMS host computer to activate Office, you must install the Office Volume License Pack and enter your KMS key on the KMS host computer. Then, you need to activate the KMS key over the internet or by telephone. 
 
@@ -36,11 +36,11 @@ You can download the appropriate Office Volume License Pack from the Microsoft D
 
 To configure the KMS host computer to activate Office, you must be a member of the Administrators group on the KMS host computer.
 
-If your KMS host computer has internet access, do the following:
+If your KMS host computer has internet access, do the following steps:
 
 1. Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
 2. On the KMS host computer, download the appropriate Office Volume License Pack from the Microsoft Download Center: [Office 2019](https://www.microsoft.com/download/details.aspx?id=57342), [Office 2016](https://www.microsoft.com/download/details.aspx?id=49164). 
-3. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack on the KMS host computer and then opens the Volume Activation Tools wizard.
+3. Run the Office Volume License Pack executable file. Running the executable file will install the Office Volume License Pack on the KMS host computer and then opens the Volume Activation Tools wizard.
 4. Follow the steps in the Volume Activation Tools wizard. Enter your KMS key when prompted.
 5. If you have a firewall, make sure port 1688 is open to allow the KMS host service through the firewall.
    - Go to **Control Panel** > **System and Security** > **Windows Firewall**.
@@ -59,7 +59,7 @@ If your KMS host computer doesn't have internet access, you can activate it by t
  ```   
    Replace *ACTIVATIONID* with the Activation ID for your version of Office. The Activation ID for Office 2019 is 70512334-47B4-44DB-A233-BE5EA33B914C, and the 2016 Activation ID for Office 2016 is 98EBFE73-2084-4C97-932C-C0CD1643BEA7.  
   
-   The result of this command is a 36-digit installation ID. Paste the installation ID number into Notepad, and then break it up into six groups of six numbers.
+   The result of running this command is a 36-digit installation ID. Paste the installation ID number into Notepad, and then break it up into six groups of six numbers.
     
 2. At the command line, run the following command:
 
@@ -67,20 +67,20 @@ If your KMS host computer doesn't have internet access, you can activate it by t
   slui.exe 4
 ```
 
-This launches the Windows phone activation wizard and it will display a telephone number.
+This command launches the Windows phone activation wizard and it will display a telephone number.
     
-After you have obtained the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It is for Windows. 
+After you've obtained the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It's for Windows. 
   
-3. Call the telephone number. At each prompt, enter a group of six numbers. This is the installation ID that you obtained in step 1.
+3. Call the telephone number. At each prompt, enter a group of six numbers. This 36-digit number is the installation ID that you obtained in step 1.
     
-4. When you hear the response, write down the numbers. This is your confirmation ID.
+4. When you hear the response, write down the numbers. These numbers are your confirmation ID.
     
 5. At the command line, run the following command:
 
  ```
 cscript slmgr.vbs /atp CONFIRMATIONID ACTIVATIONID
 ```
-Replace *CONFIRMATIONID* with the 48 digit confirmation ID that you received over the telephone. 
+Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received over the telephone. 
 
 Replace *ACTIVATIONID* with the Activation ID for your version of Office. The Activation ID for Office 2019 is 70512334-47B4-44DB-A233-BE5EA33B914C, and the 2016 Activation ID for Office 2016 is 98EBFE73-2084-4C97-932C-C0CD1643BEA7.  
 
@@ -108,7 +108,7 @@ To view information only for Office 2019, specify the Activation ID after the **
     cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C
 ```
  
-The following is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
+The following text is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
     
    ```
    Name: Office 16, OfficeKMSHostVL_KMS_Host edition
