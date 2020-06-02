@@ -142,7 +142,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 </Configuration>
 ```
 
-Learn more about [how to use MatchInstalled in second-install scenarios](/fieldnotes/build-dynamic-lean-universal-packages.md).
+Learn more about [how to use MatchInstalled in second-install scenarios](fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ## Install the same languages as a previous MSI installation
 
