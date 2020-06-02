@@ -8,6 +8,7 @@ audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 9b4d1da4-c3d7-46ab-8b63-3efc38ca8057
@@ -35,7 +36,7 @@ As with any new version of Office, there is a new set of Administrative Template
   
 ## Outlook 2016 adds support for multi-factor authentication (MFA)
 
-Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL). For more information, see [Plan multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL).
   
 ## Outlook 2016 now requires Autodiscover to be configured
 
