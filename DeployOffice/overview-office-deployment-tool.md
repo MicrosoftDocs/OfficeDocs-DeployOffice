@@ -222,7 +222,7 @@ In this example, the configuration file installs the 32-bit version of Microsoft
 
 ```xml
 <Configuration>
-  <Add OfficeClientEdition="32" Channel="Broad">
+  <Add OfficeClientEdition="32" Channel="Current">
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
     </Product>

@@ -43,7 +43,7 @@ To enable Configuration Manager to manage Office updates, you need the following
 
 - Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, the subscription version of the Project desktop app, or the subscription version of the Visio desktop app.
 
-- Supported channel version for Office. For more details, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
+- Supported update channel version for Office. For more details, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
 
 - Windows Server Update Services (WSUS) 4.0
 
@@ -109,7 +109,7 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
 
 ```xml
 <Configuration>
-  <Add OfficeClientEdition="32" Channel="Monthly" OfficeMgmtCOM="True" >
+  <Add OfficeClientEdition="32" Channel="Current" OfficeMgmtCOM="True" >
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
     </Product>
@@ -151,6 +151,6 @@ The update package that Microsoft publishes to WSUS only appears in the WSUS cat
 
 The package contains a file named noop.exe. But, that file doesn't contain any code and shouldn't be downloaded or run.
 
-For each update release there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of the Monthly Channel and a package for the 64-bit edition of the Monthly Channel. In June, there will be two new packages for Monthly Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
+For each update release there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of the Current Channel and a package for the 64-bit edition of the Current Channel. In June, there will be two new packages for Current Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
 
-There aren't separate packages for the different Office clients. For example, an update package for the 32-bit edition of the Monthly Channel has information about Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business, as well as the subscription versions of the Project and Visio desktop apps.
+There aren't separate packages for the different Office clients. For example, an update package for the 32-bit edition of the Current Channel has information about Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business, as well as the subscription versions of the Project and Visio desktop apps.
