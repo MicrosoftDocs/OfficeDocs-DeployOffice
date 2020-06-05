@@ -31,7 +31,7 @@ Starting with Version 2005, when you go to **Control Panel** > **Programs** > **
 
 &nbsp; &nbsp; Microsoft 365 for enterprise – en-us
 
-Older versions of Office 365 ProPlus won't be updated with the new name. For example, if you're using Version 1908 of Semi-Annual Channel, you'll still see Office 365 ProPlus under the **Product Information** section and in Control Panel.
+Older versions of Office 365 ProPlus won't be updated with the new name. For example, if you're using Version 1908 of Semi-Annual Enterprise Channel, you'll still see Office 365 ProPlus under the **Product Information** section and in Control Panel.
 
 References to Microsoft 365 Apps for enterprise will begin to appear on April 21 in other places as well. For example, references on product websites, in documentation, and in the user interface (UI) of deployment tools, such as the Office Customization Tool. Some references to the new name might not occur until after April 21.
 
