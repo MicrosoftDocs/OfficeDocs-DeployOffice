@@ -46,9 +46,10 @@ The date when Teams starts being installed with ***new*** installations of Micro
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
-|Monthly Channel |Version 1902 | March 4, 2019  |
-|Semi-Annual Channel (Targeted)| Version 1902   | March 12, 2019  |
-|Semi-Annual Channel| Version 1902  |July 9, 2019 |
+|Current Channel |Version 1902 | March 4, 2019  |
+|Monthly Enterprise Channel |Version 2003 | May 12, 2020  |
+|Semi-Annual Enterprise Channel (Preview)| Version 1902   | March 12, 2019  |
+|Semi-Annual Enterprise Channel| Version 1902  |July 9, 2019 |
 
 > [!NOTE]
 > Teams is also included with the following ***new*** installations:
@@ -63,7 +64,7 @@ If you want to use the [Office Deployment Tool](overview-office-deployment-tool.
 
 ```xml
 <Configuration>
-   <Add OfficeClientEdition="64" Channel="Monthly">
+   <Add OfficeClientEdition="64" Channel="Current">
       <Product ID="O365ProPlusRetail">
        <Language ID="en-us" />
        <ExcludeApp ID="Teams" />
@@ -97,7 +98,7 @@ To remove Teams after it's been installed, go to **Control Panel** > **Uninstall
 
 Teams is also being added to ***existing*** installations of Microsoft 365 Apps on devices running Windows as part of the normal update process. There is no change to existing installations of Mac.
 
-Whether Teams gets added to an existing installation of Microsoft 365 Apps is determined by what version is installed, what version you're updating to, and some other factors. Version 1906 that was released in Monthly Channel in July is the first version that started including Teams as part of the update process. But not all devices updating to Version 1906 or later have received Teams as part of the update process because the rollout has been a gradual process over several months. So if you've updated a device to the latest version of Microsoft 365 Apps, but Teams hasn't been installed, that is probably expected and not necessarily an error. It's likely a future update will install Teams. If you want Teams on that device now, you can install it manually from https://teams.microsoft.com/downloads.
+Whether Teams gets added to an existing installation of Microsoft 365 Apps is determined by what version is installed, what version you're updating to, and some other factors. Version 1906 that was released in Current Channel in July is the first version that started including Teams as part of the update process. But not all devices updating to Version 1906 or later have received Teams as part of the update process because the rollout has been a gradual process over several months. So if you've updated a device to the latest version of Microsoft 365 Apps, but Teams hasn't been installed, that is probably expected and not necessarily an error. It's likely a future update will install Teams. If you want Teams on that device now, you can install it manually from https://teams.microsoft.com/downloads.
 
 > [!IMPORTANT]
 > If you're updating your existing installation of Microsoft 365 Apps to Version 1908 (Build 11929.20300) or later, Teams will be added. To complete the installation of Teams after the update, either restart the device or have the user log off and log back on.
@@ -106,9 +107,10 @@ The date when Teams can start being added to ***existing*** installations of Mic
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
-|Monthly Channel |Version 1906 | July 9, 2019  |
-|Semi-Annual Channel (Targeted)| Version 1908  | September 10, 2019  |
-|Semi-Annual Channel| Version 1908  | January 14, 2020 |
+|Current Channel |Version 1906 | July 9, 2019  |
+|Monthly Enterprise Channel |Version 2003 | May 12, 2020  |
+|Semi-Annual Enterprise Channel (Preview)| Version 1908  | September 10, 2019  |
+|Semi-Annual Enterprise Channel| Version 1908  | January 14, 2020 |
 
 If you don't want Teams to be added to ***existing*** installations of Microsoft 365 Apps when you update to a newer version, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. Or, as an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
@@ -163,8 +165,9 @@ But even if you enable this policy setting so that Teams doesn't start automatic
 
 > [!IMPORTANT]
 > - This policy setting only applies if you are installing or updating to the following versions of Microsoft 365 Apps:
->    - Version 1906 or later of Monthly Channel
->    - Version 1902 (Build 11328.20368) or later of Semi-Annual Channel or Semi-Annual Channel (Targeted)
+>    - Version 1906 or later of Current Channel
+>    - Version 1902 (Build 11328.20368) or later of Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview)
+>    - Version 2003 or later of Monthly Enterprise Channel
 > - To use this policy setting, download at least version 4882.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on July 9, 2019.
 
 If you have Microsoft 365 Apps for business or can't use Group Policy for some other reason, you can add the PreventFirstLaunchAfterInstall value to the HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams key in the registry. The type for PreventFirstLaunchAfterInstall is REG_DWORD and the value should be set to 1 if you don't want Teams to automatically start after installation.
