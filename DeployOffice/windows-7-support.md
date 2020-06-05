@@ -36,12 +36,12 @@ Even though Windows 7 is no longer supported, we've decided to continue to provi
 
 ## How to manage Microsoft 365 Apps on Windows 7 after January 2020
 
-Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows 7. Version 2002 is available in Monthly Channel and in Semi-Annual Channel (Targeted), and is expected to be available in Semi-Annual Channel in July 2020.
+Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows 7. Version 2002 is available in Current Channel and in Semi-Annual Enterprise Channel (Preview), and is expected to be available in Semi-Annual Enterprise Channel in July 2020.
 
 This means that if you want to continue to deploy and update Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows 7, you'll receive an error message.
 
 > [!NOTE]
-> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).  
+> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Enterprise Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).  
 
 To deploy or update Version 2002 on devices running Windows 7, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Microsoft Endpoint Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
 
@@ -51,7 +51,7 @@ If Microsoft 365 Apps is configured to get updates directly from the Office Cont
 
 If you use Configuration Manager and the Software Update management workflow to update installations of Microsoft 365 Apps, we recommend that you create a separate collection for your Windows 7 devices. Then, use a query rule to add members to the collection.
 
-On the 2nd Tuesday of each month, a new update package for Version 2002 that is only for devices running Windows 7 will be made available in the Microsoft Update Catalog. There will be an update package for each architecture (x86 or x64). That update package can be used with whichever update channel of Microsoft 365 Apps you have deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Monthly Channel or a Semi-Annual Channel installation of Microsoft 365 Apps on devices running Windows 7.
+On the 2nd Tuesday of each month, a new update package for Version 2002 that is only for devices running Windows 7 will be made available in the Microsoft Update Catalog. There will be an update package for each architecture (x86 or x64). That update package can be used with whichever update channel of Microsoft 365 Apps you have deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Current Channel or a Semi-Annual Enterprise Channel installation of Microsoft 365 Apps on devices running Windows 7.
 
 In the Office 365 Updates node, you'll see entries like the following, where ##### will be replaced by the most current build number:
 
@@ -66,7 +66,7 @@ If you use an automatic deployment rule (ADR), you should create a new rule for 
 
 Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft 365 Apps Security Updates](https://docs.microsoft.com/officeupdates/microsoft365-apps-security-updates).
 
-Versions on Semi-Annual Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Monthly and Semi-Annual (Targeted).
+Versions on Semi-Annual Enterprise Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel (Preview).
 
 The extended availability of Version 2002 until January 2023 applies ***only*** to devices running Windows 7.
 

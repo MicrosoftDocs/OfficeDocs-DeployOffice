@@ -25,7 +25,7 @@ If you plan to deploy Microsoft 365 Apps for enterprise (previously named Office
 > [!IMPORTANT]
 > To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Microsoft 365 Apps for enterprise.
 
-Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
+Version 1803 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
 
 ### What about other applications, such as Project and Visio?
 
@@ -197,7 +197,7 @@ Due diligence was done to review cloud services connected to features in Microso
 
 |**Application**  |**Feature**  |**Recommendation**  |
 |---------|---------|---------|
-|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Monthly Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Channel (Targeted) <br/> - Version 1803 (Build 9126.2259) of Semi-Annual Channel  <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
+|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Current Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Enterprise Channel (Preview) <br/> - Version 1803 (Build 9126.2259) of Semi-Annual Enterprise Channel  <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
 
 
 ## Reference information

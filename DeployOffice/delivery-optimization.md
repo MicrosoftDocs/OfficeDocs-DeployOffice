@@ -60,11 +60,13 @@ To take advantage of Delivery Optimization when installing or when doing user-in
 <br/> `reg add HKLM\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate  /v SetDOAsPrimary /t REG_DWORD /d 1`
 
 > [!NOTE]
-> - Version 1912 is available in Monthly Channel as of January 8, 2020.
-> - Version 2002 is available in Semi-Annual Channel (Targeted) as of March 10, 2020. Version 2002 or later won't require the registry key.
-> - Version 2002 is scheduled to be available in Semi-Annual Channel in July 2020.
+> - Version 1912 is available in Current Channel as of January 8, 2020.
+> - Version 2002 is available in Semi-Annual Enterprise Channel (Preview) as of March 10, 2020. Version 2002 or later won't require the registry key.
+> - Version 2002 is scheduled to be available in Semi-Annual Enterprise Channel in July 2020.
+> - Version 2003 is available in Monthly Enterprise Channel as of May 12, 2020.
 
-If you're using Configuration Manager or local network shares to manage installing and updating Microsoft 365 Apps on devices, Delivery Optimization won't be used. Delivery Optimization is used only if you're installing or updating Microsoft 365 Apps directly from the Office Content Delivery Network (CDN) on the internet. If you want some of these devices, such as those on Monthly Channel, to take advantage of Delivery Optimization, you need to reconfigure them to use the Office CDN. You can do that by using the Office Deployment Tool or Group Policy settings, depending how your environment is configured. You have to remove any configuration of the update path as well as the use of the [OfficeMgmtCOM](office-deployment-tool-configuration-options.md#officemgmtcom-attribute-part-of-add-element) attribute, which enables Configuration Manager to manage updates.
+
+If you're using Configuration Manager or local network shares to manage installing and updating Microsoft 365 Apps on devices, Delivery Optimization won't be used. Delivery Optimization is used only if you're installing or updating Microsoft 365 Apps directly from the Office Content Delivery Network (CDN) on the internet. If you want some of these devices, such as those on Current Channel, to take advantage of Delivery Optimization, you need to reconfigure them to use the Office CDN. You can do that by using the Office Deployment Tool or Group Policy settings, depending how your environment is configured. You have to remove any configuration of the update path as well as the use of the [OfficeMgmtCOM](office-deployment-tool-configuration-options.md#officemgmtcom-attribute-part-of-add-element) attribute, which enables Configuration Manager to manage updates.
 
 ## Configure Delivery Optimization settings for Microsoft 365 Apps
 
