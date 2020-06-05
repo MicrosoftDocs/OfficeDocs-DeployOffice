@@ -28,7 +28,7 @@ Preference files are stored in the app container, which isn't the same thing as 
   
 The best way to add or edit preferences is by using the defaults command. For example, if you want to configure updates to be checked manually, you can open Terminal and enter the following command: 
   
-```
+```console
 defaults write com.microsoft.autoupdate2 HowToCheck Manual
 ```
 

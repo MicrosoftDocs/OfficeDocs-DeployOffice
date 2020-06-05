@@ -122,23 +122,24 @@ To prevent Office for Mac from sending telemetry data to Microsoft, you can set 
 
 The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal, as shown in the following example.
 
-    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
-
+```console
+defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
+```
 
 ### Turn off sending telemetry data to Microsoft from Office apps on iOS
 To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
