@@ -14,7 +14,7 @@ hideEdit: true
 # (Known Issue) Some Semi-Annual Channel devices moved to Monthly Channel if receiving updates from Configuration Manager
 
 > [!IMPORTANT]
-> - The information in this article only applies to organizations that received Message Center post ##### on June 4, 2020.
+> - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC215291 on June 4, 2020.
 > - If you don’t use Configuration Manager to deploy updates for Microsoft 365 Apps by using Windows Server Update Services (WSUS) and Office COM, or if you're using Group Policy to specify an update channel for your devices, then this issue doesn’t apply to your organization and no action is needed on your part.
 
 In the last few months, we contacted you about moving certain devices in your organization from Semi-Annual Channel to Monthly Channel. Because you selected **Monthly Channel** on the **Office software download settings page** in the Microsoft 365 admin center, we moved those certain devices to Monthly Channel based on your selection.
