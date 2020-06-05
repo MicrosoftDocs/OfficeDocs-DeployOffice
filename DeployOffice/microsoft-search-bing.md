@@ -225,7 +225,7 @@ To remove the background service from an individual device, go to **Control Pane
 
 If you want to remove the background service from multiple devices in your organization, you can run the following command as an administrator in a script:
 
-```
+```console
 "%ProgramFiles(x86)%\Microsoft\DefaultPackMSI\MainBootStrap.exe" uninstallAll 
 ```
 
