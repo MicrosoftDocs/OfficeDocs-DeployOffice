@@ -274,7 +274,7 @@ The better alternative might be to use the command line capabilities of the Read
 
 You can see a list of the available command line options by opening a command prompt, navigating to the folder where you installed the Readiness Toolkit, and then typing the following command:
 
-```
+```console
 ReadinessReportCreator.exe -help
 ```
 
@@ -282,19 +282,19 @@ The command line version of the Readiness Report Creator doesn't have the all th
 
 The following is an example of a command line that you can run to scan for both VBA macros and add-ins, and save the results to a network share for the Finance department. Note that you have to include addinscan option as part of the command line for the add-in scan to occur.
 
-```
+```console
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent
 ```
 
 The following is an example of a command line that you can run to scan a user's most recently used Office documents and save the results to a network share for the Finance department. This only scans for VBA macros.
 
-```
+```console
 ReadinessReportCreator.exe -mru -output \\server01\finance -silent
 ```
 
 The following is an example of a command line that you can run to scan a folder, and all its subfolders, and save the results to a network share for the Finance department. This only scans for VBA macros.
 
-```
+```console
 ReadinessReportCreator.exe -p c:\officefiles\ -r -output \\server01\finance -silent
 ```
 
@@ -316,7 +316,7 @@ Instead of creating an Excel file, a Power BI report, with the same information,
 
 If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, you can use the following command to create a report from previous readiness results for the Finance department, using a local SQL database named Readiness, and using SQL Server authentication, instead of Windows authentication.
 
-```
+```console
 ReadinessReportCreator.exe -sqlimport “C:\Reports\Finance” -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
 ```
 
@@ -343,7 +343,7 @@ If you're using the UI wizard, begin by selecting either "Most recently used Off
 
 If you are using the command line to create a report, use the -ConcealNames option, as shown in the following example.
 
-```
+```console
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -concealnames
 ```
 

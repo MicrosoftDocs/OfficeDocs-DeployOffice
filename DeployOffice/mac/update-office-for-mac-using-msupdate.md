@@ -26,7 +26,7 @@ Use the following steps to start using the tool:
 3. Run `./msupdate --help`
 
 The following options are displayed:
-```
+```console
  usage: msupdate <command> [<args> ...] <modifier> 
 
  Commands: 
