@@ -181,7 +181,7 @@ When the connection is established, many new worksheets are added to the workboo
 
 - You can use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) on the computer that is running SQL Server to allow other administrators to view data in Office Telemetry Dashboard. You don't have to run this for your own account if you created a database when you installed the processor. Update the values for dbserver, dbname, and domain\user as needed. 
 
-  ```
+  ```console
   tdadm.exe -o permission -databaseserver dbserver -databasename dbname -add domain\user
   ```
 
@@ -278,7 +278,7 @@ The easiest way to update the registry on a single client is to run a .reg file 
 
 The following example sets the default settings that are needed to enable the agent. AgentInitWait and AgentRandomDelay are set to their default values, which are appropriate for production deployments.
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "CommonFileShare"="\\\\<SERVERNAME>\\<SHARENAME>"
@@ -295,7 +295,7 @@ Windows Registry Editor Version 5.00
 
 The code in the following example enables Office Telemetry Dashboard to begin uploading data immediately by setting AgentInitWait and AgentRandomDelay to their smallest values. Use this example only in test deployments. 
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "CommonFileShare"="\\\\<SERVERNAME>\\<SHARENAME>"
@@ -312,7 +312,7 @@ Windows Registry Editor Version 5.00
 
 You can distribute registry updates to multiple client computers by putting a .reg file in a shared folder and instructing users to run the file, or you can add a command to the users' logon script to automatically import the .reg file when users log on. Use the syntax in the following example to start the .reg file from a logon script:
 
-```
+```console
 %windir%\regedit.exe /s <PATH>\<NAME>.reg
 ```
 
