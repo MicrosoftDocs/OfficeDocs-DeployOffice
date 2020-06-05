@@ -45,17 +45,17 @@ The following options are displayed:
 
 ## Examples of how to use msupdate
 - Display the current configuration parameters for AutoUpdate:
-```./msupdate --config```
+`./msupdate --config`
 - Display the current configuration parameters in machine-readable format:
-```./msupdate --config --format plist```
+`./msupdate --config --format plist`
 - List all available updates:
-```./msupdate --list```
+`./msupdate --list`
 - Download and install all available updates:
-```./msupdate --install```
+`./msupdate --install`
 - Download and install the latest updates for Word, Excel, and PowerPoint:
-```./msupdate --install --apps MSWD2019 XCEL2019 PPT32019```
+`./msupdate --install --apps MSWD2019 XCEL2019 PPT32019`
 - Download and install a version-specific update for Outlook:
-```./msupdate --install --apps OPIM2019 --version 16.17.180090901```
+`./msupdate --install --apps OPIM2019 --version 16.17.180090901`
 
 ## Application identifiers
 The following table lists the applications for Mac supported by AutoUpdate. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.

@@ -59,7 +59,7 @@ To configure a deadline that is a certain number of days after the update is det
 
 For example, if you want to configure a deadline of 5 days after an update for Excel is detected, you can use the following:
 
-```
+```xml
 <key>Applications</key>
 <dict> 
   <key>/Applications/Microsoft Excel.app</key>
@@ -76,7 +76,7 @@ For example, if you want to configure a deadline of 5 days after an update for E
 
 If you want to configure a deadline of 4 days for Excel and 7 days for PowerPoint, you can use the following:
 
-```
+```xml
 <key>Applications</key>
 <dict>
   <key>/Applications/Microsoft Excel.app</key>
