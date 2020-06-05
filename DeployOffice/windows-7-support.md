@@ -66,7 +66,7 @@ If you use an automatic deployment rule (ADR), you should create a new rule for 
 
 Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft 365 Apps Security Updates](https://docs.microsoft.com/officeupdates/microsoft365-apps-security-updates).
 
-Versions on Semi-Annual Enterprise Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel (Preview).
+Versions of Semi-Annual Enterprise Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel (Preview).
 
 The extended availability of Version 2002 until January 2023 applies ***only*** to devices running Windows 7.
 
