@@ -81,13 +81,13 @@ As with the initial deployment, organizations can use a combination of these opt
 ## Step 3 - Choose your update channels 
 
 > [!NOTE]
-> **Best practice:** Deploy the Semi-Annual Enterprise Channel (Preview) to a representative group of users and client devices. Deploy the Semi-Annual Enterprise Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
+> **Best practice:** Deploy Semi-Annual Enterprise Channel (Preview) to a representative group of users and client devices. Deploy Semi-Annual Enterprise Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
 
 - Semi-Annual Enterprise Channel: Provides users with new features of Office every six months, in January and July.
 
-- Semi-Annual Enterprise Channel (Preview): Provides users the opportunity to test the next Semi-Annual Enterprise Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Enterprise Channel.
+- Semi-Annual Enterprise Channel (Preview): Provides users the opportunity to test the next Semi-Annual Enterprise Channel. Releases every six months in March and September, four months ahead of Semi-Annual Enterprise Channel.
 
 - Current Channel: Provides users with the newest features of Office as soon as they're available. 
 
@@ -95,9 +95,9 @@ All the channels will receive updates for security and critical non-security iss
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
-- Deploy the Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
+- Deploy Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
 
-- Deploy the Semi-Annual Enterprise Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with the Semi-Annual Enterprise Channel (Preview).
+- Deploy Semi-Annual Enterprise Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with Semi-Annual Enterprise Channel (Preview).
 
 With this approach, you can test new Office features in your environment, particularly with your hardware and device drivers. 
  
