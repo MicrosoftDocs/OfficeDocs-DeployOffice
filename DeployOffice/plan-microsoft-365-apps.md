@@ -81,23 +81,23 @@ As with the initial deployment, organizations can use a combination of these opt
 ## Step 3 - Choose your update channels 
 
 > [!NOTE]
-> **Best practice:** Deploy the Semi-Annual Channel (Targeted) to a representative group of users and client devices. Deploy the Semi-Annual Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
+> **Best practice:** Deploy the Semi-Annual Enterprise Channel (Preview) to a representative group of users and client devices. Deploy the Semi-Annual Enterprise Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
 
-- Semi-Annual Channel: Provides users with new features of Office every six months, in January and July.
+- Semi-Annual Enterprise Channel: Provides users with new features of Office every six months, in January and July.
 
-- Semi-Annual Channel (Targeted): Provides users the opportunity to test the next Semi-Annual Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Channel.
+- Semi-Annual Enterprise Channel (Preview): Provides users the opportunity to test the next Semi-Annual Enterprise Channel. Releases every six months in March and September, four months ahead of the Semi-Annual Enterprise Channel.
 
-- Monthly Channel: Provides users with the newest features of Office as soon as they're available. 
+- Current Channel: Provides users with the newest features of Office as soon as they're available. 
 
 All the channels will receive updates for security and critical non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
 Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
-- Deploy the Semi-Annual Channel (Targeted) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
+- Deploy the Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
 
-- Deploy the Semi-Annual Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with the Semi-Annual Channel (Targeted).
+- Deploy the Semi-Annual Enterprise Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with the Semi-Annual Enterprise Channel (Preview).
 
 With this approach, you can test new Office features in your environment, particularly with your hardware and device drivers. 
  
@@ -108,10 +108,10 @@ With this approach, you can test new Office features in your environment, partic
 
 When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two channels and both architectures, you create four packages: 
 
-- Semi-Annual Channel for 32-bit 
-- Semi-Annual Channel for 64-bit
-- Semi-Annual Channel (Targeted) for 32-bit
-- Semi-Annual Channel (Targeted) for 64-bit
+- Semi-Annual Enterprise Channel for 32-bit 
+- Semi-Annual Enterprise Channel for 64-bit
+- Semi-Annual Enterprise Channel (Preview) for 32-bit
+- Semi-Annual Enterprise Channel (Preview) for 64-bit
 
 You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.   
 
@@ -139,7 +139,7 @@ Note that you can use the same installation package to deploy different configur
 
 - 32-bit version of Microsoft 365 Apps
 - English, Japanese, and German
-- Semi-Annual Channel
+- Semi-Annual Enterprise Channel
 
 This single installation package can then be used to deploy to multiple deployment groups:
 
