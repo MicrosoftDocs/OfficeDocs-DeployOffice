@@ -35,20 +35,20 @@ This article is intended for administrators in enterprise environments working w
 The steps in this article are based on the following best practices:
 
 - **Manage updates to Office automatically**, without any administrative overhead. For more details, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). (If you want to manage updates from a local source, you need to change the configuration files. For more details, see [configuring updates](office-deployment-tool-configuration-options.md#updates-element)). 
-- **Build two Office installation packages**: One package uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each installation package includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the installation package. To deploy both versions, you create additional installation packages. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
-- **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Channel (Targeted) and a broad group that receives the Semi-Annual Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
+- **Build two Office installation packages**: One package uses Semi-Annual Enterprise Channel for 64-bit and the other uses Semi-Annual Enterprise Channel (Preview) for 64-bit. Each installation package includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the installation package. To deploy both versions, you create additional installation packages. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
+- **Deploy to two deployment groups**: a pilot group that receives the Semi-Annual Enterprise Channel (Preview) and a broad group that receives the Semi-Annual Enterprise Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
 
 You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Create shared folders for Office installation files 
 
-Because you're deploying Microsoft 365 Apps from a local source, you have to create folders to store the Office installation files. You'll create one parent folder and two child folders, one for the pilot group, with the version of Office from Semi-Annual Channel (Targeted), and one for the broad group, with version of Office from Semi-Annual Channel. This structure is similar to the one that the Office Content Delivery Network (CDN) uses.
+Because you're deploying Microsoft 365 Apps from a local source, you have to create folders to store the Office installation files. You'll create one parent folder and two child folders, one for the pilot group, with the version of Office from Semi-Annual Enterprise Channel (Preview), and one for the broad group, with version of Office from Semi-Annual Enterprise Channel. This structure is similar to the one that the Office Content Delivery Network (CDN) uses.
 
 1. Create the following folders:
 
     - **\\\Server\Share\M365**: Stores the ODT and the configuration files that define how to download and deploy Office.
-    - **\\\Server\Share\M365\SACT**: Stores the Microsoft 365 Apps installation files from Semi-Annual Channel (Targeted).
-    - **\\\Server\Share\M365\SAC**: Stores the Microsoft 365 Apps installation files from Semi-Annual Channel.
+    - **\\\Server\Share\M365\SACT**: Stores the Microsoft 365 Apps installation files from Semi-Annual Enterprise Channel (Preview).
+    - **\\\Server\Share\M365\SAC**: Stores the Microsoft 365 Apps installation files from Semi-Annual Enterprise Channel.
 
  These folders will include all the Office installation files you need to deploy. 
 
@@ -69,7 +69,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
  - **Products:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps.
- - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+ - **Update channel:** Choose **Semi-Annual Enterprise Channel (Preview)** for the installation package for the pilot group 
  - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
  - **Installation:** Select Local source, and type "\\\Server\Share\M365\SACT" for the source path. Office will be downloaded to and then installed from **\\\server\share\M365\SACT** on your network 
  - **Updates:** To update your client devices automatically, choose **CDN** and **Automatically check for updates**.
@@ -80,18 +80,18 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the Office installation files and Office updates will come from Semi-Annual Channel (Targeted). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps).
+Note that the Office installation files and Office updates will come from Semi-Annual Enterprise Channel (Preview). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps).
 
 ## Step 4: Create a configuration file for the broad group
 
 Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as the pilot group in Step 3, except for the following changes:
- - **Update channel:** Choose **Semi-Annual Channel** for the installation package for the pilot group 
+ - **Update channel:** Choose **Semi-Annual Enterprise Channel** for the installation package for the pilot group 
  - **Installation:** Select Local source, and type "\\\Server\Share\M365\SAC" for the source path. Office will be downloaded to and then installed from **\\\server\share\M365\SAC** on your network 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-broad-SAC.xml** in the **\\\Server\Share\M365** folder.
 
-This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the source path points to a different folder (SAC), and the update channel is set to Semi-Annual Channel ("Broad").
+This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the source path points to a different folder (SAC), and the update channel is set to Semi-Annual Enterprise Channel ("Broad").
 
 ## Step 5: Download the Office installation package for the pilot group
 
@@ -148,7 +148,7 @@ If you want to deploy both the 32-bit and the 64-bit version of Office, you can 
 
 ### Use different update channels for Office
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Enterprise Channel (Preview) for your pilot group and the Semi-Annual Enterprise Channel for the rest of your organization. You can, however, choose the Current Channel, which provides users with the newest features of Office as soon as they're ready. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 ### Deploy Visio and Project alongside the core Office apps
 
