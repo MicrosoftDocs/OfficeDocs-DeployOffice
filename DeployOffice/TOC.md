@@ -4,6 +4,7 @@
 ## [What's new](whats-new-office-it-pros.md)
 ## [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
+## [Announcement: Office 365 ProPlus renamed](name-change.md)
 
 # Prepare
 ## [Assess your environment and requirements](assess-microsoft-365-apps.md)
@@ -18,6 +19,7 @@
 
 # Manage
 ## [Overview of update channels](overview-update-channels.md)
+## [Announcement: changes to update channels](update-channels-changes.md)
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)

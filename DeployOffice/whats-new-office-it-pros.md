@@ -19,7 +19,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 ## June 2020
 
 ### Update channels for Microsoft 365 Apps renamed
-The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel. To learn more, including what actions you might need to take, [read this article](update-channels-changes.md).
+The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel. To learn more, including what actions you might need to take, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
 ## May 2020
 
@@ -33,7 +33,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](o
 ## April 2020
 
 ### Office 365 ProPlus renamed
-Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, including what actions you might need to take, see [Name change for Office 365 ProPlus](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 ### Best practices articles
 We've published two new best practice articles from the field:[Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](fieldnotes/choose-how-to-deliver-updates.md). 
