@@ -40,7 +40,9 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use
 
-For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps for enterprise. For more information about update channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
  
 ## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
@@ -69,11 +71,11 @@ You can also use enterprise software deployment tools, such as Microsoft Endpoin
 For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ### Installing and updating Microsoft 365 Apps for enterprise from the Office CDN
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
+Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Current Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
 
 ```xml
 <Configuration> 
-   <Add OfficeClientEdition="64" Channel="Broad">
+   <Add OfficeClientEdition="64" Channel="Current">
        <Product ID="O365ProPlusRetail" >
             <Language ID="en-us" />
        </Product>
@@ -86,9 +88,12 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ### Installing and updating Microsoft 365 Apps for enterprise from a shared folder on the local network
 Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
+> [!NOTE]
+> To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](manage-microsoft-365-apps-updates-configuration-manager.md).
+
 ```xml
 <Configuration> 
-   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="Broad">
+   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="SemiAnnual">
        <Product ID="O365ProPlusRetail" >
             <Language ID="en-us" />
        </Product>
