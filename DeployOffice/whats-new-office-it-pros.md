@@ -32,7 +32,7 @@ We're starting to publish best practice articles from Microsoft experts in the f
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
 
 ## October 2019
 
@@ -68,7 +68,7 @@ Starting with Version 16.28 of Office for Mac, there are new preference settings
 ## July 2019
 
 ### Microsoft Teams and existing installations of Microsoft 365 Apps
-Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
+Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ### Create and manage your deployment configurations in the cloud
 You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
@@ -114,7 +114,7 @@ The Readiness Toolkit now supports storing report results in a SQL Server databa
 Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
 ## February 2019
-Microsoft Teams will be installed for ***new*** installations of Microsoft 365 Apps, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
+Microsoft Teams will be installed for ***new*** installations of Microsoft 365 Apps, starting with Version 1902 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ## January 2019
 
