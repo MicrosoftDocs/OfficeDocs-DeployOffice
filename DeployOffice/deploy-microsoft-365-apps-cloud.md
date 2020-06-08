@@ -64,7 +64,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
  - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
  - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
  - **Application preferences:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SACT.xml** in the **\\\Server\Share\M365** folder.
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SECP.xml** in the **\\\Server\Share\M365** folder.
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
@@ -76,7 +76,7 @@ Using the [Office Customization Tool](https://config.office.com/), create the co
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
  - **Update channel:** Choose **Semi-Annual Enterprise Channel** for the installation package for the broad group 
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SAC.xml** in the **\\\Server\Share\M365** folder.
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SEC.xml** in the **\\\Server\Share\M365** folder.
 
 This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Enterprise Channel ("Broad").
 
@@ -86,7 +86,7 @@ To deploy Office, you provide commands that users can run from their client comp
 
 From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-pilot-SACT.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-pilot-SECP.xml`
 
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
@@ -99,7 +99,7 @@ After Office has deployed to the pilot group, you can test Office in your enviro
 
 After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-broad-SAC.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-broad-SEC.xml`
 
 This command is the same as the pilot group, except that it references the configuration file for the broad group. After running the command, the Office installation should start immediately. 
 
