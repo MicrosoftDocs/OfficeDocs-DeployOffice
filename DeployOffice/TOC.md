@@ -67,6 +67,7 @@
 ## [Overview of licensing and activation](overview-licensing-activation-microsoft-365-apps.md)
 ## [Overview of viewer mode](overview-viewer-mode.md)
 ## [Change installation from 32-bit to 64-bit](change-bitness.md)
+## [App compat & readiness assessment tools](readiness-tools.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 ## [Upgrade from Office 2007](office-2007-end-support-roadmap.md)
 ## [Upgrade from Office 2010](office-2010-end-support-roadmap.md)
