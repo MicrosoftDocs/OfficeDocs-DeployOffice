@@ -55,7 +55,7 @@ This configuration file includes the most-commonly used elements and attributes,
 |:-----|:-----|
 |Add SourcePath="\\\Server\Share"  <br/> |Office will be downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
 |Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
-|Add Channel="SemiAnnual"  <br/> |Office will be installed using the Semi-Annual Channel.  <br/> |
+|Add Channel="SemiAnnual"  <br/> |Office will be installed using Semi-Annual Enterprise Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Microsoft 365 Apps for enterprise.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
@@ -126,7 +126,7 @@ Allowed values:
 ### Channel attribute (part of Add element) 
 
 > [!NOTE]
-> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
+> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
 Optional.
 
@@ -680,7 +680,7 @@ Example value:
 ### Channel attribute (part of Updates element)
 
 > [!NOTE]
-> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
+> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
 Optional. The default is **Current**.
 
