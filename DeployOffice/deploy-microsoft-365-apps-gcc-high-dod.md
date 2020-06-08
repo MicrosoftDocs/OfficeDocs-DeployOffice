@@ -80,13 +80,13 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
             <Language ID="en-us" />
        </Product>
    </Add>
-   <Updates Enabled="TRUE"  Channel="Broad" />
+   <Updates Enabled="TRUE"  Channel="Current" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
 ```
 
 ### Installing and updating Microsoft 365 Apps for enterprise from a shared folder on the local network
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
+Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Enterprise Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
 > [!NOTE]
 > To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](manage-microsoft-365-apps-updates-configuration-manager.md).
@@ -98,7 +98,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
             <Language ID="en-us" />
        </Product>
    </Add>
-   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" Channel="Broad" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" Channel="SemiAnnual" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
 ```
