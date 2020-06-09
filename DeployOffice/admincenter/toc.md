@@ -1,3 +1,3 @@
 # Servicing
-## [Update deadlines](update-deadlines.md)
-## [Update exclusions](update-exclusions.md)
+## [Update deadline](update-deadline.md)
+## [Update exclusion dates](update-exclusion-dates.md)
