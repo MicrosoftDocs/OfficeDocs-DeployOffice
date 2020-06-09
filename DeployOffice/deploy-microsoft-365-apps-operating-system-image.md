@@ -14,9 +14,6 @@ description: "You can include Microsoft 365 Apps as part of an operating system 
 
 # Deploy Microsoft 365 Apps as part of an operating system image
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 You can include [Microsoft 365 Apps](about-microsoft-365-apps.md) as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Microsoft 365 Apps when you create the image. That's because you need your users to activate their Microsoft 365 Apps installations by signing in with their accounts.
   
 Here are the basic steps of how to include Microsoft 365 Apps when you create and deploy an operating system image.

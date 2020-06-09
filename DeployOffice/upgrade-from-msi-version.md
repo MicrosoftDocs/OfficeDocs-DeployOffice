@@ -16,9 +16,6 @@ description: "Provides information for IT Pros about how to use the RemoveMSI el
 
 # Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps. To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file.
 
 There are several ways that you can use the RemoveMSI element when installing Microsoft 365 Apps.
