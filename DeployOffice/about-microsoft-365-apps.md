@@ -16,10 +16,6 @@ description: "Provides Office admins with an overview of Microsoft 365 Apps, inc
 
 # About Microsoft 365 Apps in the enterprise
 
-> [!IMPORTANT]
-> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-> - We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
-
 Microsoft 365 Apps is a version of Office that's available through many Office 365 (and Microsoft 365) plans. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 (or Microsoft 365) services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
