@@ -16,9 +16,8 @@ description: "This article gives step-by-step instructions for changing the upda
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
 
-> [!IMPORTANT]
-> - We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
-> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+> [!NOTE]
+> - We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
 After deploying Microsoft 365 Apps, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 
