@@ -33,7 +33,7 @@ This article is intended for administrators in enterprise environments working w
 
 ## Best practices
 
-The steps in this article are based on the following best practices:
+The steps in this article are based on the following best practices, if you've chosen to deploy Semi-Annual Enterprise Channel:
 
 - **Manage updates to Office automatically**, without any administrative overhead. For more details, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates).
 - **Build two Office installation packages**: Semi-Annual Enterprise Channel for 64-bit and Semi-Annual Enterprise Channel (Preview) for 64-bit. Each installation package includes all the core Office apps. (If you want to deploy the 32-bit version of Office as well, you can create additional installation packages.) For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files).
@@ -78,7 +78,7 @@ Using the [Office Customization Tool](https://config.office.com/), create the co
  - **Update channel:** Choose **Semi-Annual Enterprise Channel** for the installation package for the broad group 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SEC.xml** in the **\\\Server\Share\M365** folder.
 
-This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Enterprise Channel ("Broad").
+This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Enterprise Channel.
 
 ## Step 4: Deploy Office to the pilot group
 
@@ -105,7 +105,7 @@ This command is the same as the pilot group, except that it references the confi
 
 ## Customize your deployment
 
-The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices.
+The steps in this article cover the standard best practice recommendations from Microsoft, if you've chosen to deploy Semi-Annual Enterprise Channel. This section covers the most common customizations to these best practices.
 
 ### Build and deploy multiple packages to multiple deployment groups
 
@@ -113,7 +113,11 @@ If you want to deploy both the 32-bit and the 64-bit version of Office, you can 
 
 ### Use different update channels for Office
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend Semi-Annual Enterprise Channel (Preview) for your pilot group and Semi-Annual Enterprise Channel for the rest of your organization. You can, however, choose Current Channel, which provides users with the newest features of Office as soon as they're ready. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. 
+
+In this article, we're using Semi-Annual Enterprise Channel (Preview) for your pilot group and Semi-Annual Enterprise Channel for the rest of your organization. You can, however, choose to deploy Current Channel, which provides users with the newest features of Office as soon as they're ready. In that scenario, you'd deploy Current Channel (Preview) to your pilot group.
+
+A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 ### Deploy Visio and Project alongside the core Office apps
 
