@@ -82,25 +82,26 @@ As with the initial deployment, organizations can use a combination of these opt
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
 
-- Current Channel: Provides users with the newest features of Office as soon as they're ready, but on no set schedule.
+- **Current Channel:** Provides users with the newest features of Office as soon as they're ready, but on no set schedule.
 
-- Monthly Enterprise Channel: Provides users with the newest features of Office only once a month and on a predictable schedule (the second Tuesday of the month)
+- **Monthly Enterprise Channel:** Provides users with the newest features of Office only once a month and on a predictable schedule (the second Tuesday of the month)
 
-- Semi-Annual Enterprise Channel: Provides users with new features of Office every six months, in January and July.
+- **Semi-Annual Enterprise Channel:** Provides users with new features of Office every six months, in January and July.
 
 We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-All the update channels will receive updates for security and critical non-security issues when needed. These updates usually occur on the second Tuesday of the month.
+All the update channels will receive updates for security and non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
+To preview or test new updates to Office before deploying them to your entire organization, you can deploy two update channels. For example, if you're using Semi-Annual Channel:
 
-- Deploy Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
+- Deploy Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office. The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), any significant differences in hardware and device drivers, as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
 
 - Deploy Semi-Annual Enterprise Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with Semi-Annual Enterprise Channel (Preview).
 
-With this approach, you can test new Office features in your environment, particularly with your hardware and device drivers. 
+You could take a similar approach with Current Channel (Preview) and Current Channel. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
+
  
 ## Step 4 - Define your source files
 
