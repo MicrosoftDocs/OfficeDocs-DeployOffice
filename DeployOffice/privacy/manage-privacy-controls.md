@@ -220,7 +220,7 @@ Some admins prefer to change settings directly in the registry, for example by u
 
 To create a .reg file for the privacy settings, open Notepad and copy in the following lines. Adjust the values to suit your needs, and then save the file. Be sure the file name has an extension of .reg
 
-```
+```console
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]

@@ -54,7 +54,7 @@ If your KMS host computer doesn't have internet access, you can activate it by t
 
 1. From an elevated command prompt, go to the Windows\system32 folder, and then run the following command: 
    
-``` 
+```console 
    cscript slmgr.vbs /dti ACTIVATIONID
  ```   
    Replace *ACTIVATIONID* with the Activation ID for your version of Office. The Activation ID for Office 2019 is 70512334-47B4-44DB-A233-BE5EA33B914C, and the 2016 Activation ID for Office 2016 is 98EBFE73-2084-4C97-932C-C0CD1643BEA7.  
@@ -63,7 +63,7 @@ If your KMS host computer doesn't have internet access, you can activate it by t
     
 2. At the command line, run the following command:
 
-```
+```console
   slui.exe 4
 ```
 
@@ -77,7 +77,7 @@ After you've obtained the telephone number, cancel the wizard. You can ignore th
     
 5. At the command line, run the following command:
 
- ```
+ ```console
 cscript slmgr.vbs /atp CONFIRMATIONID ACTIVATIONID
 ```
 Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received over the telephone. 
@@ -98,19 +98,19 @@ After you set up the KMS host computer, KMS clients send requests for activation
 
 From an elevated command prompt on the KMS host computer, run the following command:
  
-```
+```console
    cscript slmgr.vbs /dlv all
 ```    
     
 To view information only for Office 2019, specify the Activation ID after the **/dlv** parameter. For example: 
 
-```   
+```console   
     cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C
 ```
  
 The following text is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
     
-   ```
+   ```console
    Name: Office 16, OfficeKMSHostVL_KMS_Host edition
    Description: Office 16, VOLUME_KMS channel
    Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7

@@ -19,9 +19,6 @@ description: "Provides IT Pros with info on how the Readiness Toolkit for Office
 
 # Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Microsoft 365 Apps.
 
 You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
@@ -274,7 +271,7 @@ The better alternative might be to use the command line capabilities of the Read
 
 You can see a list of the available command line options by opening a command prompt, navigating to the folder where you installed the Readiness Toolkit, and then typing the following command:
 
-```
+```console
 ReadinessReportCreator.exe -help
 ```
 
@@ -282,19 +279,19 @@ The command line version of the Readiness Report Creator doesn't have the all th
 
 The following is an example of a command line that you can run to scan for both VBA macros and add-ins, and save the results to a network share for the Finance department. Note that you have to include addinscan option as part of the command line for the add-in scan to occur.
 
-```
+```console
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent
 ```
 
 The following is an example of a command line that you can run to scan a user's most recently used Office documents and save the results to a network share for the Finance department. This only scans for VBA macros.
 
-```
+```console
 ReadinessReportCreator.exe -mru -output \\server01\finance -silent
 ```
 
 The following is an example of a command line that you can run to scan a folder, and all its subfolders, and save the results to a network share for the Finance department. This only scans for VBA macros.
 
-```
+```console
 ReadinessReportCreator.exe -p c:\officefiles\ -r -output \\server01\finance -silent
 ```
 
@@ -316,7 +313,7 @@ Instead of creating an Excel file, a Power BI report, with the same information,
 
 If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, you can use the following command to create a report from previous readiness results for the Finance department, using a local SQL database named Readiness, and using SQL Server authentication, instead of Windows authentication.
 
-```
+```console
 ReadinessReportCreator.exe -sqlimport “C:\Reports\Finance” -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
 ```
 
@@ -343,7 +340,7 @@ If you're using the UI wizard, begin by selecting either "Most recently used Off
 
 If you are using the command line to create a report, use the -ConcealNames option, as shown in the following example.
 
-```
+```console
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -concealnames
 ```
 

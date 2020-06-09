@@ -104,11 +104,11 @@ The following table shows the tentative release schedule for Version 2005 for th
 
 |Update channel      | Version  | Release date  |
 |---------|---------|---------|
-|Monthly Channel (Targeted) |Version 2005   | May 14, 2020  |
-|Monthly Channel   | Version 2005  | June 2, 2020  |
+|Current Channel (Preview) |Version 2005   | May 14, 2020  |
+|Current Channel   | Version 2005  | June 2, 2020  |
 |Monthly Enterprise Channel | *To be determined*  | *To be determined*   |
-|Semi-Annual Channel (Targeted) | *To be determined*  | *To be determined*   |
-|Semi-Annual Channel    | *To be determined*  |*To be determined*   |
+|Semi-Annual Enterprise Channel (Preview) | *To be determined*  | *To be determined*   |
+|Semi-Annual Enterprise Channel    | *To be determined*  |*To be determined*   |
 
 Not all devices with Version 2005 or later will receive the background service right away. That’s because we’re gradually rolling out this change. So if you’re installing or updating to Version 2005 or later, and the background service isn’t installed, that is probably expected and not necessarily an error. It’s likely a future installation or update will install the background service.
 
@@ -145,7 +145,7 @@ If you use the Office Deployment Tool, you can use the ExcludeApp element in you
 
 ```xml
 <Configuration>
-   <Add OfficeClientEdition="64" Channel="Monthly">
+   <Add OfficeClientEdition="64" Channel="Current">
       <Product ID="O365ProPlusRetail">
        <Language ID="en-us" />
        <ExcludeApp ID="Bing" />
@@ -225,7 +225,7 @@ To remove the background service from an individual device, go to **Control Pane
 
 If you want to remove the background service from multiple devices in your organization, you can run the following command as an administrator in a script:
 
-```
+```console
 "%ProgramFiles(x86)%\Microsoft\DefaultPackMSI\MainBootStrap.exe" uninstallAll 
 ```
 

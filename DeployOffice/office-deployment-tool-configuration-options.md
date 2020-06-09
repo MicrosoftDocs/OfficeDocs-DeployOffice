@@ -17,10 +17,6 @@ description: "Configuration options for the Office Deployment Tool"
 
 # Configuration options for the Office Deployment Tool
 
-> [!IMPORTANT]
-> - We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
-> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
 > [!NOTE]
@@ -38,7 +34,7 @@ This configuration file includes the most-commonly used elements and attributes,
 <Configuration>
   <Add SourcePath="\\Server\Share" 
        OfficeClientEdition="32"
-       Channel="Broad" >
+       Channel="SemiAnnual" >
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
       <Language ID="ja-jp" />
@@ -59,7 +55,7 @@ This configuration file includes the most-commonly used elements and attributes,
 |:-----|:-----|
 |Add SourcePath="\\\Server\Share"  <br/> |Office will be downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
 |Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
-|Add Channel="Broad"  <br/> |Office will be installed using the Semi-Annual Channel.  <br/> |
+|Add Channel="SemiAnnual"  <br/> |Office will be installed using Semi-Annual Enterprise Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Microsoft 365 Apps for enterprise.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
@@ -76,7 +72,7 @@ Defines the products and languages to download or install
 ```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
-     Channel="Broad" 
+     Channel="SemiAnnual" 
      Version="16.0.8201.2193" >
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
@@ -129,27 +125,28 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-> [!IMPORTANT]
-> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+> [!NOTE]
+> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
 Optional.
 
-Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Broad** for Microsoft 365 Apps for enterprise. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
+Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
 
-This value determines the channel to be installed, regardless of an optionally specified update channel in the <Update /> section or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Microsoft 365 Apps update channel](change-update-channels.md) for additional details.
-
-If the subscription versions of the Project and Visio desktop apps are installed along with Microsoft 365 Apps for enterprise, the default setting is **Broad**. If the subscription versions of the Project and Visio desktop apps are deployed without Microsoft 365 Apps, the default setting is **Monthly**. 
+This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Microsoft 365 Apps update channel](change-update-channels.md) for additional details.
 
 For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 
 Allowed values: 
 
-- Channel="Monthly"
+- Channel="BetaChannel"
+- Channel="CurrentPreview"
+- Channel="Current"
 - Channel="MonthlyEnterprise"
-- Channel="Broad"
-- Channel="Targeted"
+- Channel="SemiAnnualPreview"
+- Channel="SemiAnnual"
 
-Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted).
+> [!NOTE]
+> Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
 If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
@@ -193,7 +190,7 @@ Allowed values:
 ```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
-     Channel="Broad" 
+     Channel="SemiAnnual" 
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
@@ -227,7 +224,7 @@ Allowed values:
 
 ```xml
 <Configuration>
-  <Add OfficeClientEdition="64" Channel="Monthly" OfficeMgmtCOM="True" >
+  <Add OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="True" >
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
     </Product>
@@ -285,7 +282,7 @@ Defines which languages to download or install. If you define multiple languages
 ```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
-     Channel="Broad" 
+     Channel="SemiAnnual" 
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
      <Language ID="MatchInstalled" />
@@ -384,7 +381,7 @@ Defines which Microsoft 365 Apps products should not be installed. Note that One
 ```xml
 <Add SourcePath="\\Server\Share" 
      OfficeClientEdition="32"
-     Channel="Broad" >
+     Channel="SemiAnnual" >
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
     <Language ID="ja-jp" />
@@ -621,7 +618,7 @@ Defines how Office is updated after it's installed.
 ```xml
 <Updates Enabled="TRUE" 
          UpdatePath="\\Server\Share\"
-         Channel="Broad" />
+         Channel="SemiAnnual" />
 ```
 
 ### Enabled attribute (part of Updates element)
@@ -682,12 +679,12 @@ Example value:
 
 ### Channel attribute (part of Updates element)
 
-> [!IMPORTANT]
-> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+> [!NOTE]
+> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
-Optional. The default is **Broad** for Microsoft 365 Apps for enterprise and **Monthly** for the subscription versions of the Project and Visio desktop apps.
+Optional. The default is **Current**.
 
-Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the Add element is used to specify an update channel while installing Office, and the channel for the Update element is used to change the channel for an existing installation of Office.
+Defines which channel to use for updating Office after it is installed. Note that there are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
 
 For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md). 
 
@@ -695,12 +692,15 @@ If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for
 
 Allowed values:
 
-- Channel="Monthly"
+- Channel="BetaChannel"
+- Channel="CurrentPreview"
+- Channel="Current"
 - Channel="MonthlyEnterprise"
-- Channel="Broad"
-- Channel="Targeted"
+- Channel="SemiAnnualPreview"
+- Channel="SemiAnnual"
 
-Use "Broad" for Semi-Annual Channel and "Targeted" for Semi-Annual Channel (Targeted). 
+> [!NOTE]
+> Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
 If you're deploying Office Professional Plus 2019, which is a volume licensed version of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 

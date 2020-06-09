@@ -75,7 +75,7 @@ To enter a multiple activation key by using the Config.xml file, follow these st
     
 2. To apply the settings in Config.xml, at a command prompt, type the following command, and then press ENTER:
   
-```  
+```console  
     Setup.exe /config <path of Config.xml file>
 ```
     

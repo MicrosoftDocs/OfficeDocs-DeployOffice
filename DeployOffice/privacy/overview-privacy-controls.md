@@ -32,7 +32,7 @@ As part of these changes, there are new and updated user interface (UI) elements
 > - These changes also apply to the following:
 >   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 >   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
-> - These privacy controls are included in Version 1908 or later of Semi-Annual Channel (Targeted) and Semi-Annual Channel.
+> - These privacy controls are included in Version 1908 or later of Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel.
 > - These privacy controls are available for Version 2.30 and later of the iOS versions of Excel, OneNote, PowerPoint, and Word, as well as Version 1.17 and later of Visio Viewer for iOS.
 > - These privacy controls are available for Version 16.0.12226.10000 and later of the Android versions of Excel, PowerPoint, and Word, as well as Version 16.0.12228.20004 and later of OneNote for Android.
 > - Most of the Office for the web applications use the new privacy control for [optional connected experiences](optional-connected-experiences.md). Those applications are the following: Excel for the web, OneNote for the web, PowerPoint for the web, Visio for the web, and Word for the web. You can use the [Office cloud policy service](../overview-office-cloud-policy-service.md) to configure the appropriate [policy setting](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).

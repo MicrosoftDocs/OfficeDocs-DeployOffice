@@ -26,10 +26,7 @@ If you choose to make some software unavailable to users, they see a message on 
   
 ## Choose how often to get feature updates for Office
 
-> [!IMPORTANT]
-> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
-
-For Microsoft 365 Apps, you must choose how often you want users to get feature updates. Which frequency you choose depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test any time that there are feature updates to Office, Project, or Visio. For example, if you use specialized Excel workbooks in your business, you may want to get feature updates only every six months. This gives you time to test that your Excel workbooks work with the new features that Microsoft releases.
+For Microsoft 365 Apps, you must choose how often you want users to get feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
   
 If you want some users to get feature updates every month, but have other users get feature updates only every six months, you can manually download and install the Office apps for your users by using the Office Deployment Tool. This gives you the control to select different feature update settings for different groups of users.
   

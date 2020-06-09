@@ -14,9 +14,6 @@ description: "Provides Office admins with information on how to Deploy Microsoft
 
 # Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Microsoft 365 Apps with Configuration Manager version 1702 or later, see [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md).
   
 If you use Microsoft Endpoint Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Microsoft 365 Apps. By using Configuration Manager, you can control which users and computers get Microsoft 365 Apps, where they get the installation files from, and when the Microsoft 365 Apps installation occurs.
