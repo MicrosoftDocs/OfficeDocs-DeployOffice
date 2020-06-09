@@ -82,8 +82,7 @@ As part of the new names for the update channels, we're also providing new value
 |Semi-Annual Enterprise Channel  |SemiAnnual| Broad|
 
 > [!IMPORTANT]
-> - You can start using the MonthlyEnterprise attribute value on May 12, 2020. The most current version of the Office Deployment Tool available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) supports using that new value.
-> - You can start using the other new attribute values on June 9, 2020 and you'll need to [download](https://www.microsoft.com/download/details.aspx?id=49117) an updated version of the Office Deployment Tool on that day. That new version of the Office Deployment Tool will support those new values.
+> - To use all the new attribute values, you need to be using at least version 16.0.12827.20268 of the Office Deployment Tool, which was released on Tuesday June 9, 2020. We always recommend that you [download the most current version of the Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117).
 > - After June 9, 2020, previous attribute values for each update channel will still be valid. For example, if you use Broad in your configuration XML file, Semi-Annual Enterprise Channel will be installed. We're keeping the previous attribute values valid so that you don't have to update your existing configuration XML files.
 
 ### Update packages used by Configuration Manager
