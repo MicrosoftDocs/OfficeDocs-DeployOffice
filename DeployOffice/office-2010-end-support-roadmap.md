@@ -13,9 +13,6 @@ description: "Provides recommendations, information, and links to help administr
 
 # Office 2010 end of support roadmap
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 Office 2010 will reach its end of support on October 13, 2020. If you haven't already begun to upgrade your Office 2010 environment, we recommend you start now.
 
 Also, support for Windows 7 ended on January 14, 2020. Even though Office 2010 is still supported until October, Windows 7 will no longer receive security updates after January 2020, unless you purchase Extended Security Updates (ESU). Without ESU, Windows 7 is vulnerable to security threats. For more information, see the [Windows 7 end of support site](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) and [Lifecycle FAQ-Extended Security Updates](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates).

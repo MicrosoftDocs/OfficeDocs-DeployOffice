@@ -14,9 +14,6 @@ description: "Explains how to assign Microsoft 365 Apps licenses to users, and h
 
 # Overview of licensing and activation in Microsoft 365 Apps
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 This article shows how to assign Microsoft 365 Apps licenses to users and how to activate installations of Microsoft 365 Apps.
 
 > [!NOTE]

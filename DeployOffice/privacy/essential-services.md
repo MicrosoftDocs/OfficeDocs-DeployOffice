@@ -2523,9 +2523,9 @@ Reports the result of the end-to-end installation attempt
 
 Reports on the action that reason over the input collected using CollectParameters
 
-- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **ChannelID –**    Integer representing the enum value of the selected update/install channel (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+- **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
 - **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
 
@@ -2602,9 +2602,9 @@ Reports on the action that reads tagged input from the exe's embedded signature.
 
 Reports the parameters used for the Office installation
 
-- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **ChannelID –**    Integer representing the enum value of the selected update/install channel (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+- **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
 - **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are:  autorun, configure, consumer, download, help, packager
 

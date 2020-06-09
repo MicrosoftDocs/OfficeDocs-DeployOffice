@@ -17,9 +17,6 @@ description: "This article provides the PowerPoint deck used by FastTrack to del
 
 # FastTrack assessment workshop for Microsoft 365 Apps
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 When working with enterprise customers who are deploying Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), Microsoft FastTrack experts deliver an assessment workshop that prepares the customer for the deployment with guidance and best practices. The workshop covers the following objectives:
 
 - Introduce the Microsoft 365 deployment framework

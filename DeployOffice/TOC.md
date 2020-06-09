@@ -4,6 +4,7 @@
 ## [What's new](whats-new-office-it-pros.md)
 ## [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
+## [Announcement: Office 365 ProPlus renamed](name-change.md)
 
 # Prepare
 ## [Assess your environment and requirements](assess-microsoft-365-apps.md)
@@ -18,8 +19,10 @@
 
 # Manage
 ## [Overview of update channels](overview-update-channels.md)
+## [Announcement: changes to update channels](update-channels-changes.md)
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
+## [Delivery Optimization](delivery-optimization.md)
 ## [Update history](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
 ## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
 
@@ -63,6 +66,8 @@
 ## [Device-based licensing](device-based-licensing.md)
 ## [Overview of licensing and activation](overview-licensing-activation-microsoft-365-apps.md)
 ## [Overview of viewer mode](overview-viewer-mode.md)
+## [Change installation from 32-bit to 64-bit](change-bitness.md)
+## [App compat & readiness assessment tools](readiness-tools.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 ## [Upgrade from Office 2007](office-2007-end-support-roadmap.md)
 ## [Upgrade from Office 2010](office-2010-end-support-roadmap.md)

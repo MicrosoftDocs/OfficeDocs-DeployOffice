@@ -15,9 +15,6 @@ ms.custom: Ent_Office_ProPlus
 
 # Overview of deploying languages for Microsoft 365 Apps
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 This article covers the options for deploying languages for Microsoft 365 Apps, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-microsoft-365-apps.md). 
 
 The guidance in this article applies to the following Office products:
@@ -92,11 +89,11 @@ For details on how to edit the configuration file in a text editor, see [Configu
 
 ### Example
 
-This configuration file installs proofing tools for German and Italian using the Semi-Annual Channel on a device with Office already installed. If the original installation of Office was from a local source, make sure to download the proofing tools to that source. If the tools aren't found at the local source, the AllowCdnFallback setting installs the tools directly from the Office CDN. 
+This configuration file installs proofing tools for German and Italian using Monthly Enterprise Channel on a device with Office already installed. If the original installation of Office was from a local source, make sure to download the proofing tools to that source. If the tools aren't found at the local source, the AllowCdnFallback setting installs the tools directly from the Office CDN. 
 
 ```xml
 <Configuration>
-  <Add Channel="Broad" AllowCdnFallback="TRUE">
+  <Add Channel="MonthlyEnterprise" AllowCdnFallback="TRUE">
     <Product ID="ProofingTools">
       <Language ID="de-de" />
       <Language ID="it-it" />
@@ -134,7 +131,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 ### Example
 ```xml
 <Configuration>
- <Add Channel="Broad" AllowCdnFallback="True"> 
+ <Add Channel="MonthlyEnterprise" AllowCdnFallback="True"> 
   <Product ID="VisioProRetail">
      <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
   </Product>
