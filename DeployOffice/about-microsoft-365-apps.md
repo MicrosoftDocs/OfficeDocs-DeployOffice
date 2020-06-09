@@ -16,10 +16,6 @@ description: "Provides Office admins with an overview of Microsoft 365 Apps, inc
 
 # About Microsoft 365 Apps in the enterprise
 
-> [!IMPORTANT]
-> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-> - We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
-
 Microsoft 365 Apps is a version of Office that's available through many Office 365 (and Microsoft 365) plans. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 (or Microsoft 365) services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
@@ -57,7 +53,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
     
-- Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they are available. Or, if you have line-of-business applications, add-ins, or macros that you want to test with the new features, you can provide users with new features less frequently. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+- Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday). For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
     
 - Office 365 (and Microsoft 365) provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you'll have to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
     

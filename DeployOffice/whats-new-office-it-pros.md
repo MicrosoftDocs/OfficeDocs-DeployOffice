@@ -14,16 +14,31 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 # What's new in Office deployment for IT Pros
 
-> [!IMPORTANT]
-> - We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
-> - Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
+
+## June 2020
+
+### Update channels for Microsoft 365 Apps renamed
+The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel. To learn more, including what actions you might need to take, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
+
+## May 2020
+
+### Introduction of Monthly Enterprise Channel
+A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise Channel. This update channel provides new Office features once a month, on the second Tuesday of the month. These once-a-month updates will also include, as needed, security updates and non-security updates. 
+
+You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Endpoint Configuration Manager.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 ## April 2020
 
+### Office 365 ProPlus renamed
+Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, including what actions you might need to take, see [Name change for Office 365 ProPlus](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+
+### Best practices articles
 We've published two new best practice articles from the field:[Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](fieldnotes/choose-how-to-deliver-updates.md). 
 
+### Viewer mode
 Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](overview-viewer-mode.md).
 
 ## March 2020
@@ -32,7 +47,7 @@ We're starting to publish best practice articles from Microsoft experts in the f
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Channel to Semi-Annual Channel (Targeted). We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
 
 ## October 2019
 
@@ -68,7 +83,7 @@ Starting with Version 16.28 of Office for Mac, there are new preference settings
 ## July 2019
 
 ### Microsoft Teams and existing installations of Microsoft 365 Apps
-Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
+Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ### Create and manage your deployment configurations in the cloud
 You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
@@ -114,7 +129,7 @@ The Readiness Toolkit now supports storing report results in a SQL Server databa
 Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
 ## February 2019
-Microsoft Teams will be installed for ***new*** installations of Microsoft 365 Apps, starting with Version 1902 in Monthly Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
+Microsoft Teams will be installed for ***new*** installations of Microsoft 365 Apps, starting with Version 1902 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ## January 2019
 

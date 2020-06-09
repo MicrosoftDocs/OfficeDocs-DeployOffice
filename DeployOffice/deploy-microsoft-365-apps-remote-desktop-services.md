@@ -13,9 +13,6 @@ description: "If you use Remote Desktop Services (RDS) to provide shared compute
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps for enterprise on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-shared-computer-activation.md) to do the installation.
 
 The following are two common RDS scenarios:

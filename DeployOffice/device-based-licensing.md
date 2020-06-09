@@ -14,9 +14,6 @@ description: "Explains how to configure device-based licensing for Microsoft 365
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md).
-
 Starting in Summer 2020, commercial customers can use *Microsoft 365 Apps for enterprise (device)* to assign a Microsoft 365 Apps for enterprise license to a Windows 10 device instead of to a user. Education customers can do the same thing by using the *Microsoft 365 Apps for Education (device)* license.  This device-based license is designed to simplify management of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on devices shared by many users. Anyone that signs in and uses that device can use Microsoft 365 Apps for enterprise to create and edit documents.
 
 > [!IMPORTANT]

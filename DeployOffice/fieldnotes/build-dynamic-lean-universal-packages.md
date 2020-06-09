@@ -18,13 +18,9 @@ ms.collection:
 
 # Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps
 
-> [!IMPORTANT]
-> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](../update-channels-changes.md).
-
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-
 As an admin, you might have to deploy Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus) in your organization. But such a deployment is more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**.
 
 This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
@@ -39,9 +35,9 @@ When you plan your upgrade to Microsoft 365 Apps, the actual upgrade from a lega
 
 Historically, each of these scenarios was addressed by creating a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~2.5 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
 
-But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels (often SAC and SAC-T). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
+But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, often Semi-Annual Enterprise Channel and Semi-Annual Enterprise Channel (Preview). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
 
-So in the end, you wouldn't have *1* package per component but *4*, covering each possible permutation of SAC/SAC-T and x86/x64. The end result would be:
+So in the end, you wouldn't have *1* package per component but *4*, covering each possible permutation of Semi-Annual Enterprise Channel/Semi-Annual Enterprise Channel (Preview) and x86/x64. The end result would be:
 
 - A large number of packages. The 4 listed components would result in 16 or more packages.
 - High-bandwidth consumption, as a client might get the full 2.5-GB package pushed down before installation.
@@ -85,7 +81,7 @@ Let’s have a look at a "classic" package that was built to add Project to an e
 
 ```xml
 <Configuration>
- <Add OfficeClientEdition="64" Channel="Broad">
+ <Add OfficeClientEdition="64" Channel="SemiAnnual">
   <Product ID="ProjectProRetail">
    <Language ID="en-us" />
   </Product>
@@ -114,8 +110,8 @@ So what have we changed, and what are the benefits?
 - We removed the OfficeClientEdition-attribute, as the ODT will automatically match the installed version.
    - Benefit: The configuration file now works for both x86 and x64 scenarios.
 - We removed the channel for the same reason. ODT will automatically match the already-assigned update channel.
-   - Benefit I: The package works for all update channels (Monthly, Semi-Annual, SAC-T, and others).
-   - Benefit II: It also works for update channels you don’t offer as central IT. Some users are running Monthly Channel, some are on Insider builds? Don’t worry, it just works.
+   - Benefit I: The package works for all update channels (Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, and others).
+   - Benefit II: It also works for update channels you don’t offer as central IT. Some users are running Current Channel, some are on Insider builds? Don’t worry, it just works.
 - We added *Version=MatchInstalled*, which ensures that ODT will install the same version that's already installed.
    - Benefit: You're in control of versions deployed, with no unexpected updates.
 - We added *Language ID="MatchInstalled"*  and *TargetProduct* to match the currently installed languages, replacing a hard-coded list of languages to install.
@@ -132,7 +128,7 @@ Let’s have a brief look at other scenarios as well, like adding language packs
  
 ```xml
 <Configuration>
- <Add OfficeClientEdition="64" Channel="Broad">
+ <Add OfficeClientEdition="64" Channel="SemiAnnual">
   <Product ID="LanguagePack">
    <Language ID="de-de" />
   </Product>
@@ -141,7 +137,7 @@ Let’s have a brief look at other scenarios as well, like adding language packs
 </Configuration>
 ```
 
-If you’re running SAC as well as SAC-T and have an x86/x64 mixed environment, you'd need three additional files to cover the remaining configuration permutations. Or, you just go the dynamic, lean, and universal way:
+If you’re running Semi-Annual Enterprise Channel as well as Semi-Annual Enterprise Channel (Preview) and have an x86/x64 mixed environment, you'd need three additional files to cover the remaining configuration permutations. Or, you just go the dynamic, lean, and universal way:
 
 ```xml
 <Configuration>
@@ -154,7 +150,7 @@ If you’re running SAC as well as SAC-T and have an x86/x64 mixed environment, 
 </Configuration>
 ```
  
-This single configuration file will work across x86/x64 and all update channels (Insider Fast, Monthly Targeted, Monthly, SAC-T, SAC, and others). So, if you want to offer five additional languages in your environment, just build five of these "config file + ODT" packages. For proofing tools, you just change the ProductID to "ProofingTools".
+This single configuration file will work across x86/x64 and all update channels, such as Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, and others. So, if you want to offer five additional languages in your environment, just build five of these "config file + ODT" packages. For proofing tools, you just change the ProductID to "ProofingTools".
 
 ## Build your own configuration
 

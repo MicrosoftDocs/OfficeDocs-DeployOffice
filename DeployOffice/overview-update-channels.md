@@ -16,14 +16,6 @@ description: "Provides IT Pros with an overview of the update channels for Micro
 
 # Overview of update channels for Microsoft 365 Apps
 
-> [!IMPORTANT]
-> We're making some changes to the update channels for Microsoft 365 Apps:
-> - Introducing a new update channel: Monthly Enterprise Channel
-> - Updating the names of the existing update channels
-> - Changing the default update channel for Microsoft 365 Apps for enterprise
->
-> To learn more, [read this article](update-channels-changes.md). In the following article, we include Monthly Enterprise Channel and we use the new names.
-
 One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and updated) features for Office apps, such as Excel and Word, on a regular basis. You can control how often the users in your organization get these new features by specifying the update channel.
 
 In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office. 
@@ -43,7 +35,7 @@ But, we realize that there are multiple factors that will determine which update
 The following table provides a comparison of Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
 
 
-|  |Current <br></br>Channel|Monthly Enterprise <br></br>Channel  |Semi-Annual Enterprise <br></br>Channel  |
+|  |Current <br>Channel|Monthly Enterprise </br>Channel  |Semi-Annual Enterprise </br>Channel  |
 |---------|---------|---------|---------|
 |*Recommended use*     | Provide your users with new Office features as soon as they are ready, but on no set schedule.|Provide your users with new Office features only once a month and on a predictable schedule.|For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.|
 |*Release frequency*<sup>1</sup>|At least once a month (likely more often), but on no set schedule| Once a month, on the second Tuesday of the month  |Once a month, on the second Tuesday of the month|
@@ -223,9 +215,9 @@ Not all devices in your organization have to be configured with the same update 
 
 Each subscription product is configured with a default update channel. If you don’t specify the update channel when you install the product by itself on a device, the product will be configured to use the default update channel.
 
-Current Channel is the default update channel for most subscription products, such as Microsoft 365 Apps for business and the subscription versions of the Project and Visio desktop apps. The exception is Microsoft 365 Apps for enterprise, which uses Semi-Annual Enterprise Channel as the default update channel.
+Current Channel is the default update channel for Microsoft 365 Apps for business and the subscription versions of the Project and Visio desktop apps. 
 
-But, starting on June 9, 2020, Current Channel will become the default channel for Microsoft 365 Apps for enterprise in most cases. For more information, see [Change to the default update channel for Microsoft 365 Apps for enterprise](update-channels-changes.md#change-to-the-default-update-channel-for-microsoft-365-apps-for-enterprise).
+As of June 9, 2020, Current Channel is also the default channel for Microsoft 365 Apps for enterprise in most cases. For more information, see [Change to the default update channel for Microsoft 365 Apps for enterprise](update-channels-changes.md#change-to-the-default-update-channel-for-microsoft-365-apps-for-enterprise).
 
 ### Configure the update channel
 
@@ -247,6 +239,7 @@ After Office is installed, you can change the update channel for a device. For m
 - These update channels also apply to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 3 or Visio Plan 2.
 - OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app update process](https://docs.microsoft.com/onedrive/sync-client-update-process) and [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
 - If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there is a different update channel you need to use. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
+- If you have a home subscription of Office, such as Microsoft 365 Family or Microsoft 365 Personal, the only update channels available to you are Current Channel and the update channels available through the [Office Insider program](#office-insider-program).
 
 ### Managing updates
 - To simplify managing updates, especially for Current Channel and Monthly Enterprise Channel, we recommend that you configure devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
