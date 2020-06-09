@@ -1,5 +1,5 @@
 ---
-title: "(Known Issue) Some Semi-Annual Channel devices moved to Monthly Channel if receiving updates from Configuration Manager"
+title: "(Known Issue) Some Semi-Annual Enterprise Channel devices moved to Current Channel if receiving updates from Configuration Manager"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,17 +11,22 @@ ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
 ---
 
-# (Known Issue) Some Semi-Annual Channel devices moved to Monthly Channel if receiving updates from Configuration Manager
+# (Known Issue) Some Semi-Annual Enterprise Channel devices moved to Current Channel if receiving updates from Configuration Manager
 
 > [!IMPORTANT]
 > - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC215291 on June 4, 2020.
 > - If you don’t use Configuration Manager to deploy updates for Microsoft 365 Apps by using Windows Server Update Services (WSUS) and Office COM, or if you're using Group Policy to specify an update channel for your devices, then this issue doesn’t apply to your organization and no action is needed on your part.
 
-In the last few months, we contacted you about moving certain devices in your organization from Semi-Annual Channel to Monthly Channel. Because you selected **Monthly Channel** on the **Office software download settings page** in the Microsoft 365 admin center, we moved those certain devices to Monthly Channel based on your selection.
+In the last few months, we contacted you about helping you move certain devices in your organization from Semi-Annual Enterprise Channel to Current Channel. We intended to move only devices configured to get updates directly from the Office Content Delivery Network (CDN) on the internet and only when **Current Channel** was selected on the **Office software download settings** page in the Microsoft 365 admin center. 
 
-Recently we identified an issue where other devices in your organization might have been moved inadvertently from Semi-Annual Channel to Monthly Channel.
+While we were able to assist you in moving those devices to Current Channel, we recently identified an issue with some devices that are configured to receive updates from Configuration Manager. For those devices, we might have inadvertently moved those devices in your organization from Semi-Annual Enterprise Channel to Current Channel.
 
-We’re contacting you to let you know about this issue. We're also providing you with steps to help you identify devices that shouldn't have been moved and to provide you with steps to bring those devices back to their intended state. We’ve made the appropriate changes to our code so that this issue doesn’t affect you or any other customers in the future.
+> [!NOTE]
+> Prior to June 9, 2020, Current Channel was named Monthly Channel and Semi-Annual Enterprise Channel was named Semi-Annual Channel.
+
+We’re contacting you to let you know about this issue. We're providing you with steps to help you identify devices that shouldn't have been moved. Also, while Current Channel is our recommended update channel, we're providing you with the steps to bring those devices back to their original update channel (Semi-Annual Enterprise Channel) or to another update channel of your choosing.
+
+We’ve made the appropriate changes to our code so that this issue doesn’t affect you or any other customers in the future.
 
 ## Which devices are affected by this issue?
 
@@ -35,11 +40,11 @@ Also, not all devices that get updates from Configuration Manager are affected. 
 
 This issue could affect devices in your organization in two possible ways:
 
-- Devices could be moved inadvertently from Semi-Annual Channel to Monthly Channel.
-- Devices could get stuck trying to move to Monthly Channel, and in doing so, ***stop receiving any updates, including security updates***. These devices will still appear to be on Semi-Annual Channel.
+- Devices could be moved inadvertently from Semi-Annual Enterprise Channel to Current Channel.
+- Devices could get stuck trying to move to Current Channel, and in doing so, ***stop receiving any updates, including security updates***. These devices will still appear to be on Semi-Annual Enterprise Channel.
 
 > [!IMPORTANT]
-> We recommend that you identify, as soon as possible, any of the devices that are stuck trying to move to Monthly Channel and aren’t currently receiving any updates. It’s important that you identify these devices and fix the issue so that those devices can start receiving updates again, especially security updates. Tuesday June 9, 2020 is the next date when we plan to release security updates for Microsoft 365 Apps.
+> We recommend that you identify, as soon as possible, any of the devices that are stuck trying to move to Current Channel and aren’t currently receiving any updates. It’s important that you identify these devices and fix the issue so that those devices can start receiving updates again, especially security updates. Tuesday June 9, 2020 is the next date when we plan to release security updates for Microsoft 365 Apps.
 
 ## How to determine if a device is affected by this issue
 
@@ -64,15 +69,16 @@ To determine if a device is affected by this issue, you need to look at several 
 
 There are three options available to you for resolving this issue:
 
-- [Keep the devices on Monthly Channel](#how-to-keep-the-devices-on-monthly-channel)
+- [Keep the devices on Current Channel](#how-to-keep-the-devices-on-current-channel)
 - [Move the devices to Monthly Enterprise Channel](#how-to-move-the-devices-to-monthly-enterprise-channel)
-- [Move the devices back to Semi-Annual Channel](#how-to-move-the-devices-back-to-semi-annual-channel)
+- [Move the devices back to Semi-Annual Enterprise Channel](#how-to-move-the-devices-back-to-semi-annual-enterprise-channel)
+
 
 For more information about each of these update channels, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
 
-### How to keep the devices on Monthly Channel
+### How to keep the devices on Current Channel
 
-If you want to keep the devices on Monthly Channel, we recommend that you stop using Configuration Manager to manage updates to Microsoft 365 Apps. Instead, we recommend that you allow these devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
+If you want to keep the devices on Current Channel, we recommend that you stop using Configuration Manager to manage updates to Microsoft 365 Apps. Instead, we recommend that you allow these devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
 
 To do receive updates directly from the Office CDN, you need to disable the Office COM object. For more information, see [How to disable or re-enable the Office COM object](#how-to-disable-or-re-enable-the-office-com-object).
 
@@ -96,21 +102,21 @@ If you want to move a device to Monthly Enterprise Channel and continue to use C
 3. Allow the device to update to Monthly Enterprise Channel.
 4. After the device is updated to Monthly Enterprise Channel, re-enable the Office COM object. For more information, see [How to disable or re-enable the Office COM object](#how-to-disable-or-re-enable-the-office-com-object).
 
-### How to move the devices back to Semi-Annual Channel
+### How to move the devices back to Semi-Annual Enterprise Channel
 
-If you want to move the devices back to Semi-Annual Channel and start using the Office CDN to provide updates instead of using Configuration Manager, do the following steps:
+If you want to move the devices back to Semi-Annual Enterprise Channel and start using the Office CDN to provide updates instead of using Configuration Manager, do the following steps:
 
-1. Enable the Update Channel policy setting and select Semi-Annual Channel. For more information, [Change the update channel with Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy). *(If you have Microsoft 365 Apps for business installed, [change the update channel with the Office Deployment Tool](../change-update-channels.md#change-the-update-channel-with-the-office-deployment-tool-odt).)*
+1. Enable the Update Channel policy setting and select Semi-Annual Enterprise Channel. For more information, [Change the update channel with Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy). *(If you have Microsoft 365 Apps for business installed, [change the update channel with the Office Deployment Tool](../change-update-channels.md#change-the-update-channel-with-the-office-deployment-tool-odt).)*
 2. Disable the Office COM object. For more information, see [How to disable or re-enable the Office COM object](#how-to-disable-or-re-enable-the-office-com-object).
 
-After you disable the Office COM object, the device will start receiving updates for Semi-Annual Channel directly from the Office CDN instead of receiving updates from Configuration Manager.
+After you disable the Office COM object, the device will start receiving updates for Semi-Annual Enterprise Channel directly from the Office CDN instead of receiving updates from Configuration Manager.
 
-If you want to move the devices back to Semi-Annual Channel and continue to use Configuration Manager to manage updates, do the following steps:
+If you want to move the devices back to Semi-Annual Enterprise Channel and continue to use Configuration Manager to manage updates, do the following steps:
 
-1. Enable the Update Channel policy setting and select Semi-Annual Channel. For more information, [Change the update channel with Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy). *(If you have Microsoft 365 Apps for business installed, [change the update channel with the Office Deployment Tool](../change-update-channels.md#change-the-update-channel-with-the-office-deployment-tool-odt).)*
+1. Enable the Update Channel policy setting and select Semi-Annual Enterprise Channel. For more information, [Change the update channel with Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy). *(If you have Microsoft 365 Apps for business installed, [change the update channel with the Office Deployment Tool](../change-update-channels.md#change-the-update-channel-with-the-office-deployment-tool-odt).)*
 2. Disable the Office COM object. For more information, see [How to disable or re-enable the Office COM object](#how-to-disable-or-re-enable-the-office-com-object).
-3. Allow the device to update to Semi-Annual Channel.
-4. After the device is updated to Semi-Annual Channel, re-enable the Office COM object. For more information, see [How to disable or re-enable the Office COM object](#how-to-disable-or-re-enable-the-office-com-object).
+3. Allow the device to update to Semi-Annual Enterprise Channel.
+4. After the device is updated to Semi-Annual Enterprise Channel, re-enable the Office COM object. For more information, see [How to disable or re-enable the Office COM object](#how-to-disable-or-re-enable-the-office-com-object).
 
 ### How to disable or re-enable the Office COM object
 
