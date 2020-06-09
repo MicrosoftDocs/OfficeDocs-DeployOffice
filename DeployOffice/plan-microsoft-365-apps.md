@@ -66,7 +66,7 @@ We recommend updating your client devices automatically from the Office CDN. You
 
 If you choose to manage the updates directly, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch. 
 
-If you don't have Configuration Manager, you can use the ODT to download updates to a local source on your network and deploy them from there. This option requires the most administrative overhead, as you will need to manage update packages for different channels, architectures, and platforms. We suggest this option only when your network capacity is too limited to update from the cloud.
+If you don't have Configuration Manager, you can use the ODT to download updates to a local source on your network and deploy them from there. This option requires the most administrative overhead, as you will need to manage update packages for different update channels, architectures, and platforms. We suggest this option only when your network capacity is too limited to update from the cloud.
 
 Choose how to manage updates:
 
@@ -80,20 +80,21 @@ As with the initial deployment, organizations can use a combination of these opt
 
 ## Step 3 - Choose your update channels 
 
-> [!NOTE]
-> **Best practice:** Deploy Semi-Annual Enterprise Channel (Preview) to a representative group of users and client devices. Deploy Semi-Annual Enterprise Channel to the rest of your users. This process ensures a four-month lead time for testing new Office feature updates before they're deployed to your entire organization. 
-
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
+
+- Current Channel: Provides users with the newest features of Office as soon as they're ready, but on no set schedule.
+
+- Monthly Enterprise Channel: Provides users with the newest features of Office only once a month and on a predictable schedule (the second Tuesday of the month)
 
 - Semi-Annual Enterprise Channel: Provides users with new features of Office every six months, in January and July.
 
-- Semi-Annual Enterprise Channel (Preview): Provides users the opportunity to test the next Semi-Annual Enterprise Channel. Releases every six months in March and September, four months ahead of Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-- Current Channel: Provides users with the newest features of Office as soon as they're available. 
+All the update channels will receive updates for security and critical non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
-All the channels will receive updates for security and critical non-security issues when needed. These updates usually occur on the second Tuesday of the month.
+For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-Which users should get which update channel depends on several factors, including how many line-of-business applications, add-ins, or macros that you need to test. To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
+To ensure you can test new updates to Office before deploying them to your entire organization, we recommend deploying two update channels:
 
 - Deploy Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office.  The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
 
@@ -106,14 +107,14 @@ With this approach, you can test new Office features in your environment, partic
 > [!NOTE]
 > **Best practice:** Build separate Office installation packages for the different architectures and update channels you require. In each installation package, include all the required languages and applications, including the core Office applications and, if needed, Visio and Project. For additional languages, you can make them available for user installation or deploy them separately after the initial deployment.
 
-When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two channels and both architectures, you create four packages: 
+When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two update channels and both architectures, you create four packages: 
 
 - Semi-Annual Enterprise Channel for 32-bit 
 - Semi-Annual Enterprise Channel for 64-bit
 - Semi-Annual Enterprise Channel (Preview) for 32-bit
 - Semi-Annual Enterprise Channel (Preview) for 64-bit
 
-You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.   
+You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.
 
 To package the languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).  
 
