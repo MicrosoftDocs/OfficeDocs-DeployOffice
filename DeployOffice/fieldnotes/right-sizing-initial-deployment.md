@@ -55,11 +55,11 @@ This allows us to substitute required LAN/WAN bandwidth with far lower internet 
 
 In order to be able to identify which language packs we should exclude, we can generate an overview of how often each language pack is installed in our environment. Typically, the distribution if not even and we will have a pretty large number of language packs which are only installed on a hand-full of devices. We can then add up the number all language packs and calculate the share of each one. Let’s have a look at some sample data and how many language packs represent 90+% of all installed language packs:
 
-(Insert picture1 here)
+![Overview of distribution of language packs, showing that there is a very uneven distribution](../images/Lean6-Rightsize_1.png)
 
 So in this example (which is based on a real customer example), we could include less than 50% of all supported languages in the deployment package and still cover 92% of all device configurations. We’ve crafted a table which show the impact on the network:
 
-(Insert picture2 here)
+![Spreadsheet showing the different impact onLAN/WAN and internet bandwidth for different language pack combinations](../images/Lean6-Rightsize_2.png)
 
 We can see the two extremes (no/all language packs) and the impact on the LAN/WAN traffic as well as internet bandwidth consumed. If we go with including just 9 language packs, we will reduce the package size by nearly 50% and save more than 180 terabyte of LAN/WAN network traffic. The trade-in is that ~1,800 devices will have to download one of the excluded languages, generating approx. 3,100 gigabyte of traffic. If we stretch this over all work days from our targeted 3 month rollout window, this is ~24 gigabyte per day. If we add [Client Peer Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](https://docs.microsoft.com/en-us/deployoffice/delivery-optimization) and [Microsoft Connected Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
@@ -78,7 +78,7 @@ select count (distinct resourceid) as total, DisplayName0 from v_Add_Remove_Prog
 
 Feel free to adjust the query to your needs, keep in mind that getting a rough understanding of the distribution of language packs is just fine. Copy the data into Excel, sort by number of installs and calculate the total number of installs. Then calculate the individual share of each Language Pack and start summing those up. The result might look similar to this:
 
-(insert picture3 here)
+![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/Lean6-Rightsize_3.png)
 
 This will allow you to quickly access three important factors:
 
@@ -93,7 +93,7 @@ For the last bullet, perform these calculations for each group:
 
 For the above table, it would look like this:
 
-(insert picture 4 here)
+![Table showing the savings per language pack combination](../images/Lean6-Rightsize_4.png)
 
 Multiply this number by 250 megabyte to get a rough count on how much data needs to be downloaded from the internet. Multiply the number of all managed devices by 250 megabyte to understand, how much on-premises network traffic is saved.
 
@@ -129,7 +129,9 @@ Also add [AllowCdnFallback="True"](https://docs.microsoft.com/en-us/deployoffice
 ```
 
 Save the file and return to the Configuration Manager console. Navigate to **Software Library** > **Application Management** > **Applications**, select your application, switch to the **Deployment Types** tab, right-click the appropriate entry and click **Update Content**.
- 
+
+![Screenshot of Configuation Manager console](../images/Lean6-Rightsize_5.png)
+
 Once all Distribution Points have synced the changes, you can deploy your application as usual.
 
 ### Further reduce network impact
