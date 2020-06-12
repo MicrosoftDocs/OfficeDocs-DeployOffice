@@ -42,7 +42,8 @@
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-DeployOffice",
-      "feedback_product_url": "https://ODInsiders.uservoice.com"
+      "feedback_product_url": "https://ODInsiders.uservoice.com",
+      "titleSuffix": "Deploy Office"
     },
     "fileMetadata": {},
     "template": [],
