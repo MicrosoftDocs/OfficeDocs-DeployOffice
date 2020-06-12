@@ -19,9 +19,10 @@ hideEdit: true
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 ProPlus and Office 365 Business
-> - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
-> - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+> - Microsoft 365 Apps for business (previously named Office 365 Business)
+> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
+> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 >
 > The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
@@ -40,8 +41,8 @@ For more information about diagnostic data, see the following:
 
 If you're the admin for your organization, you might also be interested in the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -548,6 +549,12 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **AppInfo.Version** - Current version of the app installed to help us detect issues affecting certain app versions
 
+- **ci** - a pseudonymous app-specific device unique identifier
+
+- **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
+
+- **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
+
 - **customer_type** - Indicates the type of customer (consumer, commercial, third party, etc.) to help us detect issues affecting certain customer types
 
 - **device_category** - Indicates what type of device it is (phone, tablet, etc.) to help us detect device category specific issues
@@ -609,8 +616,6 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 In addition, the following fields are common for all events for Outlook for iOS.
 
-- **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
-
 - **DeviceInfo.NetworkProvider** - The network provider of the device (i.e. Verizon)
 
 - **gcc_restrictions_enabled** - Tells us if GCC restrictions have been applied to the app so we can ensure our GCC customers are using our app securely
@@ -621,6 +626,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 
 
 In addition, the following fields are common for all events for Outlook for Android.
+
+- **aad_id** - a pseudonymous Azure Active Directory identifier
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
@@ -961,8 +968,6 @@ The following fields are collected:
 - **SolutionId** - id of the solution
 
 - **StoreType** - indicates the origin of the app
-
-- **TelemetryId** - telemetry id based on the signed in identity
 
 
 #### Office.Extensibility.Catalog.ExchangeGetEntitlements
@@ -1715,6 +1720,16 @@ The following fields are collected:
 - **is_groups** - whether the draft is being sent to/from a group folder
  
 - **origin** - where draft was initiated, e.g. message detail, compose.
+
+- **smart_compose_model_version** - tracks which version of smart compose model is being used
+
+- **suggestions_requested** - indicates how many smart compose suggestions requested
+
+- **suggestions_results** - smart compose suggestions’ result, i.e. accepted, rejected
+
+- **suggestions_returned** - indicates how many smart compose suggestions returned from server
+
+- **suggestions_shown** - indicates how many smart compose suggestions shown to the user
  
 - **thread_id** - thread ID of the conversation draft is associated with
 
@@ -1727,6 +1742,8 @@ The following fields are collected:
 - **action** - Action will be either drag or drop
 
 - **location** - In case of a drag action, this will let us know from which location the user started the drag.  In case of a drop action, this will let us know where the user dropped the file which was being dragged. 
+
+- **source** – In the case of a drop action, this will let us know from which location the user started the drag. This helps us better discover issues with a specific source like OneDrive or Files into a specific drop location, such as a new email.
 
 #### drawer_event
 
@@ -2244,13 +2261,47 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Scenario Id defined by the API
 
+
+#### link_clicked_action
+
+The event is used to track users' success in viewing a URL in the Edge web view and completing standard web scenarios in that web view without facing errors
+
+The following fields are collected:
+
+- **account_type** – if the Edge web view was launched from an email or event in Outlook, type of the account where the URL came from
+
+- **action** – action performed by the user inside Outlook from the moment they tap on a URL to when they exit that flow (opened the link in the Edge web view, page failed to load in the web view, performed a search in the web view, exit the Edge web view to open the link in a web browser application, etc.)
+
+- **duration** – duration of the user session
+
+- **launch_type** – if the Edge web view was launched, was it from Outlook, from a widget, or from an OS component
+
+- **origin** – if the user performed an action in the Edge web view, origin of that action
+
+- **referrer** – the location of the URL the user tapped on (email, calendar event, TXP card, etc.)
+
+- **search_scope** – if the user performed a search in the Edge web view, scope of that search (All, Images, Videos, etc.)
+
+- **search_subtype** – if the user performed a search in the Edge web view, was it an initial search or a refined search
+
+- **session_summary_page_loaded_count** – number of pages loaded by the user during their session in the Edge web view
+
+- **session_summary_search_count** - number of Bing searches performed by the user during their session in the Edge web view
+
+- **session_summary_session_id** – identifier for the present user session in the Edge web view
+
+- **txp** – if the Edge web view was launched from a TXP card, event type for that card (dining, flight, etc.)
+
+- **txp_component** - if the Edge web view was launched from a TXP card, UI component type for that card
+
+
 #### mail_action
 
 Used for monitoring possible negative impact on your ability to perform critical mail actions (like running mail threaded mode, ensuring mail triage actions work) to ensure our app is functioning properly for mail.
 
 The following fields are collected:
 
-- **account** - the account which performed the action
+- **account** - the account which performed the action *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **action** - tracks what type of action was taking, i.e. archive, delete, mark as read, etc. 
 
@@ -2293,6 +2344,8 @@ The following fields are collected:
 - **message_id** - server message id targeted for action, or comma-separated list if more than one item was in action.
 
 - **message_type** - indicates what type of message type the action was taken on** - group or other
+
+- **number_selected** - the number of items the user selected on the message list and took action on during multiple selection mode.
 
 - **origin** - source of action, i.e. cell swipe, zero-query, deep link, email view, email list, etc.
 
@@ -2657,7 +2710,7 @@ The following fields are collected:
 
 This event is collected for Office applications running under Apple platforms. 
 
-We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Office 365 Home, etc.).  This data is used for monitoring the health of the in-app purchase flows.
+We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Microsoft 365 Family, etc.).  This data is used for monitoring the health of the in-app purchase flows.
 
 The following fields are collected:
 
@@ -2895,9 +2948,15 @@ The following fields are collected:
 
 - **Data_Doc_WopiServiceId** - A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
 
+- **Data_HWModel** – A string value logging the model of iPad or iPhone device.
+
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. from which UI element or triggered by another app.
+
+- **Data_IsDocumentAlreadyOpen** – Whether or not the file is already open.
+
+- **Data_IsInterrupted** – Whether or not the file open operation was interrupted by app transitioning to background.
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
 
@@ -3198,6 +3257,8 @@ This event is collected when the feed is shown to the user. The event is used to
 - **bridgeWaitingTime** - Metric to diagnose performance in rendering of the feed.
 
 - **clientCorrelationId** - The globally unique identifier for the application's session.
+
+- **clientScenario** - Scenario discriminator for different variants of the feed.
 
 - **ClientTimeStamp** - Timestamp of when the event was logged in the client.
 
@@ -4341,6 +4402,38 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
+#### Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
+
+This event is collected for Union iOS, it records when a file open operation takes
+place. We collect this data to ensure good performance for all file opens on the app. 
+
+The following fields are collected:
+
+- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
+(only 1st party app info is being logged).
+
+- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
+
+- **Data_Doc_DownloadEndTime** - Timestamp for end of download of a cloud file.
+
+- **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
+
+- **Data_Doc_FileOpSessionID** - Unique Id for a Document Session.
+
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third party files app , wopi
+
+- **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
+
+- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
+
+- **Data_Doc_OpenStartTime** - Timestamp for start of open operation of a PDF file.
+
+- **Data_Doc_TelemetryReason** - Telemetry reason for the open event (eg: open from MRU or
+browse, File Activation, Protocol Activation, etc.).
+
+- **Doc_RenderDurationms** - Time to render a pdf file
+
+
 #### Office_OfficeMobile_PdfViewer_PdfFileOperations
 
 The event is collected for the Office app for Android. It records when a PDF open, close, or save operation takes place and is used to understand and prioritize the user experience based on PDF file operation information. The event enables us to keep the PDF open, close and save operations performing as expected, and to improve PDF file operation performance.
@@ -4348,8 +4441,6 @@ The event is collected for the Office app for Android. It records when a PDF ope
 The following fields are collected:
 
 - **Data_Doc_FileOpSessionID** - Unique ID for a Document Session
-
-- **Data_Doc_URLHash** - A GUID for the file URL
 
 - **Data_ErrorCode** - error in case of file open failures/download failures / download canceled
 
@@ -6854,9 +6945,19 @@ The following fields are collected:
 
 - **send_draft_origin** - indicates where send was initiated, i.e. compose or quick reply
 
+- **smart_compose_model_version** - tracks which version of smart compose model is being used
+
 - **source_inbox** - indicates source inbox type for reference message, 
 
 - **suggested_reply_state** - capturing suggested reply state i.e., unavailable, available, shown, used, discarded for this sent mail
+
+- **suggestions_requested** - indicates how many smart compose suggestions requested
+
+- **suggestions_results** - smart compose suggestions’ result, i.e accpected, rejected
+
+- **suggestions_returned** - indicates how many smart compose suggestions returned from server
+
+- **suggestions_shown** - indicates how many smart compose suggestions shown to the user
 
 - **thread_id** - indicates thread ID of the conversation being replied/forwarded
 
@@ -6930,7 +7031,7 @@ Allows us to detect situations where there is possible negative impact on your a
 
 Data fields that are common for Outlook Mobile for this event on iOS and Android:
 
-- **Account** - tracks the account and its data associated with the event, values tracked in this data are in the common om field documentation 
+- **Account** - tracks the account and its data associated with the event, values tracked in this data are in the common om field documentation *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **action** - tracks the type of side bar action occurred, i.e. dismissed, help button selected, mail side bar, etc., 
 
@@ -6951,8 +7052,6 @@ The following fields are collected:
 - **calendar_apps_count** - Number of calendar apps you have to help us make sure your interesting calendar apps are configured correctly 
 
 - **calendar_type** - The type of calendar you have (Primary calendar, Group calendar, etc.) 
-
-- **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
 
 - **has_favorite_folders** - Helps us make sure favorite folders are configured correctly 
 
@@ -7266,6 +7365,22 @@ The following fields are collected:
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
 - **RMS.StatusCode** - Status code of the returned result
+
+
+#### Office.Android.AccountStorageInfo
+
+This event determines the number of MSA and ADAL accounts in the registry and shared preferences. It enables the analysis of inconsistencies between data stores and helps us to stabilize app performance.
+
+The following fields are collected:
+
+- **RegistryADALCount**- Indicates number of ADAL accounts in registry.
+
+- **RegistryLiveIdCount**- Indicates number of MSA accounts in registry.
+
+- **SharedPrefADALCount**- Indicates number of ADAL accounts in shared preferences.
+
+- **SharedPrefLiveIdCount**- Indicates number of MSA accounts in shared preferences.
+
 
 #### Office.Android.AndroidOffice16BootLatency
 
@@ -7583,6 +7698,8 @@ The following fields are collected:
 
 - **AssetId** - asset ID of the app
 
+- **IsPreload** – indicates if the add-in is being preloaded in background for improving activation performance
+
 - **NumberOfAddinsActivated** - counter of add-ins activated
 
 - **RemoterType** - specifies the type of remoter (Trusted, untrusted, Win32webView, Trusted UDF etc.) used to activate the add-in
@@ -7596,6 +7713,8 @@ The following fields are collected:
 - **TimeForServerCall** - time spent on the server call 
 
 - **TotalTime** - total time spent
+
+- **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
 
 #### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete 
 
@@ -7699,13 +7818,13 @@ The following fields are collected:
  
 - **USER_INTERACTED_DURING_EVENT** - Indicates if the user has interacted during booting
 
-#### OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground
+#### OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
 
 The signal used to indicate OneNote App is in foreground.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
 The following fields are collected: None
 
-#### OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch
+#### OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
 
 The critical signal used to ensure OneNote users can successfully launch the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -7915,6 +8034,8 @@ The following fields are collected:
   - **Data\_FileUrlLocation -** Predefined set of values of where document is stored (NetworkShare, LocalDrive, ServerOther etc.)
 
   - **Data\_FirstSlideCompressedSize -** compressed size of first slide zip part (usually Slide1.xml)
+
+  - **Data_FIsAutoBackupFile-** Is this file an auto backup file?
 
   - **Data\_FIsDownloadFileInBgThreadEnabled -** Is downloading in background thread enabled?
 
@@ -9072,6 +9193,16 @@ The following fields are collected:
 
 - **com.** (e.g. com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Manufacturer specific configuration values provided by the Android platform
 
+- **crash_report_sdk** - SDK to send crash logs. Either Hockey or AppCenter
+
+- **crash_type** - crash_type will have java, native, non-fatal as types.
+
+     - java - if crash recorded on application Layer.
+
+     - native - if crash recored on native layer within the app. 
+
+     - non-fatal - crashes being recorded to debug any feature. Application won’t crash but it will upload non-fatal crash logs to help in debugging a feature.
+
 - **device_brand** - Device brand (manufacturer or carrier) as indicated by android.os.Build#BRAND
 
 - **device_ID** - Device unique ID (IMEI)
@@ -9186,7 +9317,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on a consumer version of Office applications. 
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Microsoft 365 Apps for enterprise "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Microsoft 365 Apps for enterprise and plan their upgrades accordingly. 
 
 The following fields are collected:
 
@@ -9218,7 +9349,7 @@ The following fields are collected:
 
 Event generated when COM Add-in crashes on an enterprise version of Office applications.
 
-Usage: this is used to compute a global, non-enterprise-specific Office 365 ProPlus "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Office 365 ProPlus and plan their upgrades accordingly. 
+Usage: this is used to compute a global, non-enterprise-specific Microsoft 365 Apps for enterprise "adoption" for an add-in which is then used by tools like the Readiness Toolkit. This allows enterprise customers to validate if the add-ins they have deployed in their organizations are compatible with the latest versions of Microsoft 365 Apps for enterprise and plan their upgrades accordingly. 
 
 - **ScopeId** – the current thread scope
 
@@ -9263,6 +9394,8 @@ The following fields are collected:
 - **IsAugmentationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
 
 - **IsDebug** - indicates if session is a debug session
+
+- **IsPreload** – indicates if the add-in is being preloaded in background for improving activation perf.
 
 - **NumberOfAddinsActivated** - Counter of add-ins activated
 
@@ -9492,7 +9625,7 @@ The following fields are collected:
 
 #### Office.Programmability.Telemetry.MacroFileOpened 
 
-Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Office 365 ProPlus has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
+Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Microsoft 365 Apps for enterprise has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
 
 No fields are collected.
 
@@ -9622,11 +9755,15 @@ The following fields are collected:
 
 - **account_counter** - tracks the number of accounts associated for each type of calendar, e.g. 2 for Gmail calendar and whether that account is using our new sync service
 
+- **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
+
 - **component_name** - Tells us the name of the calendar component such as Agenda view or Day view to help us detect performance issues impacting a specific component in the calendar
 
 - **display_frame_data** - Tracks the time spent on displaying every 60 frames to determine if there are performance issues. 
 
 - **orientation** - Tells us whether the device was in portrait or landscape mode to help us detect performance issues impacting a specific device orientation
+
+- **taskId** – TaskId will give us the current instance’s taskId. This will be required in multi instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
 - **view_duration** - Tells us how long it took to render the various UI calendar components to help us detect performance issues impacting your calendar experience
 
@@ -9635,8 +9772,6 @@ The following fields are collected:
 This event lets us detect and fix issues where there is perceivable performance impact on loading your email conversations to ensure your emails are loading as expected.
 
 The following fields are collected: 
-
-- **cid_type** - indicates what type of the account the CID belongs to
 
 - **time** - Tells us the amount of time that it has taken for the email conversation to complete loading.
 
@@ -9690,6 +9825,8 @@ The following fields are collected:
 
 - **age** - age of the person (used to confirm compliance with age limitations on ads)
 
+- **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
+
 - **component_name** - the name of the component/view which is active during the filtering
 
 - **has_hx** - whether the device has at least one Hx (our new email syncing service) account
@@ -9707,6 +9844,8 @@ The following fields are collected:
 - **orientation** - the screen orientation at the time of the even (portrait or landscape)
 
 - **sub_error_type** - detailed error type
+
+- **taskId** – TaskId will give us the current instance’s taskId. This will be required in multi instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
 - **total_count** - total frames displayed by the component
 
@@ -9903,6 +10042,8 @@ The following fields are collected:
 - **ad_shown** - whether an add was shown (if ads enabled)
  
 - **age** - age of the person (used to confirm compliance with age limitations on ads)
+
+- **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
  
 - **component_name** - the name of the component/view which is active during the filtering
  
@@ -9923,6 +10064,8 @@ The following fields are collected:
 - **orientation** - the screen orientation at the time of the even (portrait or landscape)
  
 - **sub_error_type** - detailed error type
+
+- **taskId** – TaskId will give us the current instance’s taskId. This will be required in multi instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
  
 - **total_count** - total frames displayed by the component
  
@@ -10218,6 +10361,33 @@ The following fields are collected:
 
   - **Data.Last Error** - One of five string values (enumerators) to log which stage of policy application was being executed when the exception occurred
 
+#### Office.OneNote.Android.Sync.ProvisioningError
+
+The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health.
+
+The following fields are collected:
+
+- **AppSuspendedDuringEvent**: Returns boolean to indicate if app was suspended during provisioning
+
+- **ErrorCode** – Returns the error code responsible for failure of provisioning 
+
+- **NetworkConnection**: The type of network connectivity of the device in use
+
+- **NetworkDataExchange** - Records the number of bytes exchanged during provisioning.
+
+- **ServerType**: Returns the type of the server offering the service
+
+- **TimeTakenInMilliSeconds**: Returns time taken to complete provisioning in millisecond
+
+
+#### Office.OneNote.System.BootDialogs.SafeBootDialogPending 
+
+The critical signal used to track when we decide to show user a safe boot dialog on next boot because we have been crashing on boot multiple times continuously. This is used to ensure critical regression detection for OneNote app and service health. If users are seeing the safe boot dialog then we have a critical boot crash bug and this info will help us know how many users are facing this issue and how many users boot the app again to actually see the safe boot dialog vs how many don’t return.
+
+The following fields are collected:
+
+ - None
+
 #### Office.Outlook.Desktop.BootPerfMetrics
 
 Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It is also used to diagnose customer escalations as well as improve boot performance over time.
@@ -10277,7 +10447,13 @@ The following fields are collected:
   
   - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
+  - **ColdBoot** - Whether is first time Office application runs after a system restart or application binary had to be loaded from disk.
+
+  - **DeviceModel** - The model of the device.
+
   - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
+
+  - **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
 
   - **FirstBoot** - Whether this was a first boot of the application.
 
@@ -10290,6 +10466,47 @@ The following fields are collected:
   - **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (MacOS / iOS only)
 
   - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView
+
+This event is triggered on Stop of rehearsal session. In combination with Office.PowerPoint.PPT.Android.RehearseView.StartSession this will be the first indicator of any crashes or errors that user faces.
+
+The following fields are collected:
+
+- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal
+
+- **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView.Errors
+
+Event triggered when any error occurs. This event will help us know the errors that user has faced and will help keep the Presenter Coach performant on mobile.
+
+The following fields are collected:
+
+- **Session id:string** – rehearsal session id
+
+- **RehearsalEventCode:int** – rehearsal error code
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView.RehearsalSummaryPage 
+
+Event triggered when summary page is loaded. This event helps us in capturing the performance of summary page. It tells how much time it takes for rehearsal summary service page to load on client. It is required to keep the feature performant. 
+
+The following fields are collected:
+
+- **SummaryPageLoadTime:int** – Time (in ms) taken to load summary page. This includes payload creation time 
+
+
+#### Office.PowerPoint.PPT.Android.RehearseView.StartSession
+
+Event triggered when user clicks on start session. This event helps us in capturing how many users are using the feature of Presenter coach on Android. When combined with Office.PowerPoint.PPT.Android.RehearseView it will tell us how many users successfully completed the rehearsal session and how many couldn’t. This is our first indicator of crashes or errors in the feature.
+ 
+The following fields are collected:
+
+ - None
+
 
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
@@ -10348,8 +10565,6 @@ The following fields are collected:
 - **Data_RegistrationStateDesired** - Requested registration state
 
 
-
-
 #### Office.Visio.Shared.VisioFileRender
 
 This event captures file render time. This event helps us keep file render performance in check.
@@ -10365,6 +10580,7 @@ The following fields are collected:
   - **Data\_FirstRenderTime: long** - duration to render file on first launch in millisecond
 
   - **Data\_MaxTime: integer** - Max time it took to render Visio drawing in a session
+
 
 #### Office.Visio.VisioFileOpenReliability
 
@@ -10434,6 +10650,16 @@ The following fields are collected:
 
   - **Data\_WasSuccessful: bool -** true if open as was successful
 
+
+#### OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
+
+The critical signal used to track user response when he/she sees a safe boot dialog. Safe boot dialog is shown when we were unable to launch repeatedly. User choice to safe boot is used as permission to clear app data to launch successfully. This is used to ensure critical regression detection for OneNote app and service health. User sees when they encounter critical boot crash bug. This info will help track if they crash causehas been resolved and user can launch the app successfully or not.
+
+The following fields are collected: 
+
+- **DIALOG_ACTION** - Which dialog button did the user click on – Positive button or negative button
+
+
 #### OneNote.Sync.ProvisioningCompleted *(previous name)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
 The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
@@ -10471,6 +10697,8 @@ The following fields are collected:
 - **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
 
 - **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, i.e. when did this action start and end, etc. 
+
+- **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
 

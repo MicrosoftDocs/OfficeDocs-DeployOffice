@@ -19,9 +19,10 @@ hideEdit: true
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 ProPlus and Office 365 Business
-> - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
-> - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+> - Microsoft 365 Apps for business (previously named Office 365 Business)
+> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
+> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 >
 > The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 >
@@ -43,7 +44,7 @@ The following table provides a list of connected experiences that analyze your c
 | Dictation  | [Dictate with your voice in Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Editor    | [Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Ideas     | [Ideas in Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-| Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Office 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Map chart\*    | [Create a Map chart](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
@@ -114,16 +115,16 @@ The following table provides a list of those other connected experiences and pro
 | Focused Inbox (Outlook) |[Focused Inbox for Outlook](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Information Rights Management in Office](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn contact card |[Connect your LinkedIn and Microsoft accounts](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| Office add-ins\* | [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
-| Office 365 add-ins\* | [Manage deployment of Office 365 add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Organization chart (Visio) |[Create a Visio organization chart](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Outlook Social Connector | [Turn on the Outlook Social Connector](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | Outlook UserVoice\* | [How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Recent documents |[Open files from the File menu](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | Resume Assistant (or CV Assistant)\* |[Write your best resume with help from LinkedIn and Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Room Finder (Outlook)|[How to control the Room Finder in Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-| Safe Links |[Office 365 ATP Safe Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
+| Safe Links |[ATP Safe Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Sensitivity labels |[Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Share  |[Share a document (Excel)](https://support.office.com//article/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Share a document (PowerPoint)](https://support.office.com//article/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.office.com//article/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Shared with me |[See files others have shared with you](https://support.office.com/article/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
@@ -148,7 +149,7 @@ If you are signed in with a work or school account, the admin in your organizati
 
 If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don't use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
 
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -159,7 +160,7 @@ Even if you decide to turn off these connected experiences, certain Office funct
 
 ## Related topics
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Required service data for Office](required-service-data.md)
 - [Essential services for Office](essential-services.md)

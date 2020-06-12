@@ -23,7 +23,7 @@ Each MAK has a predetermined number of allowed activations and is based on your 
 
 There are two ways to activate computers by using MAK:
   
-- **MAK independent activation** requires that each computer independently connect and be activated with Microsoft, either over the Internet or by telephone. MAK independent activation is best for computers that have direct access to the internet. 
+- **MAK independent activation** requires that each computer independently connect and be activated with Microsoft, either over the internet or by telephone. MAK independent activation is best for computers that have direct access to the internet. 
     
 - **MAK proxy activation by using VAMT** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com//windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](https://docs.microsoft.com/windows/deployment/volume-activation/proxy-activation-vamt).
     
@@ -75,7 +75,7 @@ To enter a multiple activation key by using the Config.xml file, follow these st
     
 2. To apply the settings in Config.xml, at a command prompt, type the following command, and then press ENTER:
   
-```  
+```console  
     Setup.exe /config <path of Config.xml file>
 ```
     

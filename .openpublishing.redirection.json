@@ -7,117 +7,117 @@
     },
     {
       "source_path": "DeployOffice/proofing-tools-for-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-deploying-languages-in-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-deploying-languages-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/choose-how-to-deploy-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/what-s-new-deploying-office-365-proplus-in-the-enterprise.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-of-the-upgrade-of-office-365-proplus-to-the-office-2016-version.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/plan-your-upgrade-from-office-365-proplus-2013-to-2016.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/upgrade-from-office-365-proplus-2013-to-2016.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-using-offscrub.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-configuration-manager",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-system-center-configuration-manager-configuration-for-enterprise.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-configuration-manager",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-local-source",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-distributed-file-system-configuration-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-local-source",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-step-by-step-installation-using-dfs.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-local-source",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-step-by-step-installation-using-cdn.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-office-content-delivery-network-configuration-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-installing-office-365-proplus-from-cdn-or-dfs.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-your-deployment-of-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planning-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-resources.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -127,132 +127,132 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-common-debugging-steps.md",
-      "redirect_url": "https://diagnostics.outlook.com/",
+      "redirect_url": "https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessing-your-infrastructure.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-focus-areas-for-assessment.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-office-telemetry.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-install-xml-files-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-install-xml-files-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-install-xml-files-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-sample-configuration-files-for-downloading-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-sample-configuration-files-for-installing-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-uninstall-xml-files-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-uninstall-xml-files-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-uninstall-xml-files-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessmentreference-materials.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-reference-material.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-planningreference-materials.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-locally-managed-scenario.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deploy-office-365-proplus-from-a-local-source",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deploy-microsoft-365-apps-local-source",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-management-for-locally-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/deploy-office-365-proplus-from-a-local-source",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/deploy-microsoft-365-apps-local-source",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-cloud-managed-scenario.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-management-for-cloud-managed.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
       "redirect_document_id": false
     },
     {
@@ -277,42 +277,42 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-updates-in-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-update-channels.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deploying-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-scenarios.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-enterprise-managed-scenario.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-management-for-enterprise-managed.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-recommended-deployment-scenarios.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-links-for-administration-education.md",
-      "redirect_url": "https://mva.microsoft.com",
+      "redirect_url": "https://docs.microsoft.com/learn/",
       "redirect_document_id": true
     },
     {
@@ -327,12 +327,12 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-channel-management.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-channels.md",
-      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus",
+      "redirect_url": "https://docs.microsoft.com/DeployOffice/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -362,12 +362,12 @@
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-with-system-center-configuration-manager.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-configuration-manager",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/manage-office-365-proplus-updates-with-configuration-manager",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/manage-microsoft-365-apps-updates-configuration-manager",
       "redirect_document_id": true
     },
     {
@@ -408,6 +408,141 @@
     {
       "source_path": "DeployOffice/vlactivation/index.md",
       "redirect_url": "plan-volume-activation-of-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/about-office-365-proplus-in-the-enterprise.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/about-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-as-part-of-an-operating-system-image.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-by-using-remote-desktop-services.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-remote-desktop-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/reference-articles-for-deploying-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/reference-articles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-in-gcc-high-dod.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-gcc-high-dod",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-licensing-and-activation-in-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-licensing-activation-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-shared-computer-activation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/troubleshoot-issues-with-shared-computer-activation-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/troubleshoot-shared-computer-activation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-with-system-center-configuration-manager-2012R2.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager-2012R2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-the-office-2016-deployment-tool.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-office-deployment-tool",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/assess-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/assess-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/plan-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deployment-guide-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-from-a-local-source.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-local-source",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-from-the-cloud.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-365-proplus-with-configuration-manager.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/manage-office-365-proplus-updates-with-configuration-manager.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/manage-microsoft-365-apps-updates-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/configuration-options-for-the-office-2016-deployment-tool.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-of-deploying-languages-in-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-deploying-languages-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-of-update-channels-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-update-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/choose-how-to-manage-updates-to-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/choose-how-manage-updates-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/configure-update-settings-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/end-user-update-notifications-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-the-update-process-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/licensing-activation-data-sent-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/delay-feature-updates-semi-annual-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps",
       "redirect_document_id": false
     }
   ]

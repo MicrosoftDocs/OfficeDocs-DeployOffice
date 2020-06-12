@@ -16,7 +16,7 @@ description: "Provides admins with information about how to update Office and ot
 
 ***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
 
-Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. This can be used to start the update process for Microsoft applications produced for Mac, such as Office. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. You can download the latest version of MAU from [this link](https://go.microsoft.com/fwlink/?linkid=830196).
+Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. This can be used to start the update process for Microsoft applications produced for Mac, such as Office. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. You can download the latest version of MAU from [this link](https://go.microsoft.com/fwlink/p/?linkid=830196).
 
 msupdate works by sending Apple Events to the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you are using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [here](https://aka.ms/msupdateprofile).
 
@@ -26,7 +26,7 @@ Use the following steps to start using the tool:
 3. Run `./msupdate --help`
 
 The following options are displayed:
-```
+```console
  usage: msupdate <command> [<args> ...] <modifier> 
 
  Commands: 
@@ -45,17 +45,17 @@ The following options are displayed:
 
 ## Examples of how to use msupdate
 - Display the current configuration parameters for AutoUpdate:
-```./msupdate --config```
+`./msupdate --config`
 - Display the current configuration parameters in machine-readable format:
-```./msupdate --config --format plist```
+`./msupdate --config --format plist`
 - List all available updates:
-```./msupdate --list```
+`./msupdate --list`
 - Download and install all available updates:
-```./msupdate --install```
+`./msupdate --install`
 - Download and install the latest updates for Word, Excel, and PowerPoint:
-```./msupdate --install --apps MSWD2019 XCEL2019 PPT32019```
+`./msupdate --install --apps MSWD2019 XCEL2019 PPT32019`
 - Download and install a version-specific update for Outlook:
-```./msupdate --install --apps OPIM2019 --version 16.17.180090901```
+`./msupdate --install --apps OPIM2019 --version 16.17.180090901`
 
 ## Application identifiers
 The following table lists the applications for Mac supported by AutoUpdate. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.
@@ -79,9 +79,9 @@ The following table lists the applications for Mac supported by AutoUpdate. The 
 |Edge Beta |EDBT01||
 |Edge Stable |EDGE01 ||
 
-<sup>1</sup> These identifiers are used for Office 2019 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 plan) running on macOS version 10.12 (Sierra) or higher.
+<sup>1</sup> These identifiers are used for Office 2019 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 or Microsoft 365 plan) running on macOS version 10.12 (Sierra) or later.
 
-<sup>2</sup> These identifiers are used for Office 2016 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 plan) running on macOS version 10.11 (El Capitan) or earlier.
+<sup>2</sup> These identifiers are used for Office 2016 for Mac, either a retail or a volume licensed version, and for Office for Mac (from an Office 365 or Microsoft 365 plan) running on macOS version 10.11 (El Capitan) or earlier.
 
 > [!NOTE]
 > - If an update is pending for MAU itself, that update must be applied before any applications can be updated.

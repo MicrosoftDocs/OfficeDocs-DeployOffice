@@ -8,6 +8,7 @@ audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ms.assetid: 9b4d1da4-c3d7-46ab-8b63-3efc38ca8057
@@ -35,7 +36,7 @@ As with any new version of Office, there is a new set of Administrative Template
   
 ## Outlook 2016 adds support for multi-factor authentication (MFA)
 
-Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL). For more information, see [Plan multi-factor authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
+Multi-factor authentication (MFA) is now available in Outlook through integration with the Active Directory Authentication Library (ADAL).
   
 ## Outlook 2016 now requires Autodiscover to be configured
 
@@ -47,7 +48,7 @@ Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admi
   
 ## Visio 2016 supports Information Rights Management (IRM)
 
-IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](https://docs.microsoft.com/DeployOffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office).
+IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](../security/protect-sensitive-messages-and-documents-by-using-irm-in-office.md).
   
 ## Related topics
 

@@ -1,5 +1,5 @@
 ---
-title: "Overview of Security Policy Advisor"
+title: "Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -15,37 +15,32 @@ ms.assetid:
 description: "You can use Security Policy Advisor to receive and implement security policy recommendations."
 ---
 
-# Overview of Security Policy Advisor for Office 365 ProPlus
+# Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**. To learn more about this name change, [read this blog post](https://go.microsoft.com/fwlink/p/?linkid=2120533). 
->
-> For details of when this change takes effect, and what actions admins might need to take, [read this article](name-change.md).
+You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of a [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
-You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of the [portal for managing Office 365 ProPlus](https://config.office.com).
-
-Security Policy Advisor can only be used in combination with the Office cloud policy service, a service that enables you to enforce policy settings for Office 365 ProPlus on a user's device. The policy settings roam to whichever device the user signs into and uses Office 365 ProPlus. Security Policy Advisor provides recommendations and the implementation of security policies for devices managed by the Office cloud policy service.
+Security Policy Advisor can only be used in combination with the Office cloud policy service, a service that enables you to enforce policy settings for Microsoft 365 Apps for enterprise on a user's device. The policy settings roam to whichever device the user signs into and uses Microsoft 365 Apps for enterprise. Security Policy Advisor provides recommendations and the implementation of security policies for devices managed by the Office cloud policy service.
  
-For more information about the Office cloud policy service, including details on how the policies are applied and how priority is used, see [Overview of the Office cloud policy service for Office 365 ProPlus](overview-office-cloud-policy-service.md).
+For more information about the Office cloud policy service, including details on how the policies are applied and how priority is used, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
 
 ## Requirements for using Security Policy Advisor
 
 The following are the requirements for using Security Policy Advisor:
 
 - Must be using the Office cloud policy service and meet all the [requirements for that service](overview-office-cloud-policy-service.md#requirements-for-using-the-office-cloud-policy-service). 
-- At least version **1908** of Office 365 ProPlus. 
-- To create the recommendations and insights, Security Policy Advisor relies on required service data from Office 365 ProPlus. For more information, see [Required service data for Office](privacy/required-service-data.md).
+- At least version **1908** of Microsoft 365 Apps for enterprise. 
+- To create the recommendations and insights, Security Policy Advisor relies on required service data from Microsoft 365 Apps for enterprise. For more information, see [Required service data for Office](privacy/required-service-data.md).
 - The [required URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) properly configured on your network.
 
 ## Turn on Security Policy Advisor
 
-To enable security policy recommendations, sign in to the [portal for managing Office 365 ProPlus](https://config.office.com), click **Security**, and then choose **On** for the **Security Policy Advisor**.  
+To enable security policy recommendations, sign in to the [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise, click **Security**, and then choose **On** for the **Security Policy Advisor**.  
 
 ## Implement security policy recommendations
 
 To review and implement security policy recommendations, do the following:
 
-1. Sign in to the [portal for managing Office 365 ProPlus](https://config.office.com).
+1. Sign in to the [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise.
 2. If you haven't already, [create a policy configuration for a group in the Office policy configuration service](overview-office-cloud-policy-service.md#steps-for-creating-a-policy-configuration). 
 3. Click **Security**, and then click a group name.
 4. In the policy configuration page, you can review the recommendations for that group and that policy configuration. To see more details about a recommendation, click the policy name. To see the applied policies, click **Applied policies**. 
@@ -74,15 +69,15 @@ In both cases, the user's response can be viewed on the **Policy details** page 
 
 ## Turn off Security Policy Advisor
 
-To turn off Security Policy Advisor, sign in to the [portal for managing Office 365 ProPlus](https://config.office.com), click **Security**, and then choose **Off** for the **Security Policy Advisor**. 
+To turn off Security Policy Advisor, sign in to the [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise, click **Security**, and then choose **Off** for the **Security Policy Advisor**. 
 
 When you turn off Security Policy Advisor, usage and threat data from your organization are no longer analyzed and no recommendations or insights will be generated.  
 
-Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=2083502).
+Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?linkid=2083502).
 
 ## How Security Policy Advisor creates recommendations 
 
-When a security group has been assigned a policy configuration, Security Policy Advisor analyzes how users in that group work with Office 365 ProPlus. Based on this analysis and on Microsoft best practices, recommendations are created for specific security policies and insights about the impact of those policies on productivity and security. 
+When a security group has been assigned a policy configuration, Security Policy Advisor analyzes how users in that group work with Microsoft 365 Apps for enterprise. Based on this analysis and on Microsoft best practices, recommendations are created for specific security policies and insights about the impact of those policies on productivity and security. 
 
 Recommendations are usually generated within a few minutes of a policy configuration being applied to a group. On rare occasions, it may take longer. In such instances, please revisit Security Policy Advisor to check if new recommendations are available.
 
@@ -97,7 +92,7 @@ Recommendations are currently available for the following security policies:
 
 In addition, if your organization has Office 365 Advanced Threat Protection Plan 2, then Security Policy Advisor can use data from this service to provide insights on recommended policies. These insights will be based on threats that have been detected and stopped by Advanced Threat Protection. For more details on Office 365 Advanced Threat Protection, see [Office 365 threat investigation and response](https://docs.microsoft.com/office365/securitycompliance/office-365-ti). 
 
-To create the recommendations and insights, Security Policy Advisor requires required service data from Office 365 ProPlus. For more information, see [Required service data for Office](privacy/required-service-data.md).
+To create the recommendations and insights, Security Policy Advisor requires required service data from Microsoft 365 Apps for enterprise. For more information, see [Required service data for Office](privacy/required-service-data.md).
 
 ## Known Issues
 The following are known issues we are tracking from input we have received during preview.

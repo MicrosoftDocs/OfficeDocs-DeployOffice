@@ -14,7 +14,7 @@ description: "Learn how to update processors and the database so that they work 
 
 # Update Office Telemetry Dashboard components
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 > [!IMPORTANT]
 > Follow these steps only if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. These steps aren't needed if you were using Office Telemetry Dashboard in Office 2016 and are now moving to Office 2019.
@@ -23,7 +23,7 @@ When you install Office 2019 or Office 2016, Office Telemetry Dashboard and the 
   
 To use the new version of Office Telemetry Dashboard, you'll have to update the processors and database manually. If you don't, you'll see an error message similar to the following when you use Office Telemetry Dashboard to connect to the database:
   
-    Database connection failure. The database needs to be updated.
+&nbsp; &nbsp; Database connection failure. The database needs to be updated.
   
 You need to ensure that each computer on which you install the processors and database is also running the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
   

@@ -38,13 +38,13 @@ To configure KMS host caching, open an elevated command prompt on the KMS client
 
 To **disable** KMS host caching, type the following command, and then press ENTER:
 
-```     
+```console
     cscript ospp.vbs /cachst:FALSE
 ``` 
 
 To **enable** KMS host caching, type the following command, and then press ENTER:
 
-```     
+```console     
     cscript ospp.vbs /cachst:TRUE
 ``` 
   

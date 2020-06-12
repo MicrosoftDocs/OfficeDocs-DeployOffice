@@ -17,11 +17,11 @@ hideEdit: true
 
 # Overview of optional connected experiences in Office
 
-If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using Office 365 ProPlus applications. These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
+If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
 
 > [!NOTE]
 > If you're an admin, see the following articles to learn how to give or restrict your users' ability to use optional connected experiences:
-> - [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+> - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 > - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 > - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 > - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -34,7 +34,7 @@ It is important to know that these optional cloud-backed services are not covere
 
 ## Experiences that rely on Bing
 
-Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a separate business to Office 365 ProPlus and is managed independently of Office 365 ProPlus by Microsoft. The experiences it powers in Office 365 ProPlus applications are: [3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Map Charts](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Insert Online Pictures](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Insert Online 3D Models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Researcher](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) and [Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a separate business to Microsoft 365 Apps for enterprise and is managed independently of Microsoft 365 Apps for enterprise by Microsoft. The experiences it powers in Office apps included with Microsoft 365 Apps for enterprise are: [3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Map Charts](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Insert Online Pictures](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [Insert Online 3D Models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Researcher](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) and [Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
 
 The experiences that Bing powers in Outlook for iOS and Android are the following:
 
@@ -42,11 +42,11 @@ The experiences that Bing powers in Outlook for iOS and Android are the followin
 - **Interesting Calendars:**   You can [subscribe](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) to calendars about your favorite sports teams or TV shows.
 
 
- These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Office 365 ProPlus organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
+ These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
 
 ## Experiences that rely on LinkedIn
 
-[Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) provides an experience in Word that is powered by LinkedIn. It delivers ideas for your resume. LinkedIn is a different company that is owned by Microsoft. If you use Resume Assistant, the [LinkedIn User Agreement and Privacy Policy](https://www.linkedin.com/legal/user-agreement) apply in addition to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Office 365 ProPlus organization while using these services are sent to LinkedIn. They are not linked to you by the LinkedIn organization. You do not need to have a LinkedIn account to use this cloud-backed service.
+[Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) provides an experience in Word that is powered by LinkedIn. It delivers ideas for your resume. LinkedIn is a different company that is owned by Microsoft. If you use Resume Assistant, the [LinkedIn User Agreement and Privacy Policy](https://www.linkedin.com/legal/user-agreement) apply in addition to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to LinkedIn. They are not linked to you by the LinkedIn organization. You do not need to have a LinkedIn account to use this cloud-backed service.
 
 Note: The privacy setting described below does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these type of experiences (such as the LinkedIn information on a [profile card](https://support.office.com/article/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [Connect your LinkedIn and Microsoft accounts](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
@@ -86,23 +86,23 @@ The [Weather Bar](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
-To determine whether your admin has given you the ability to use any optional connected experiences in your Office 365 ProPlus application on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
+To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
 ## Your privacy settings
 
-If your admin has given you the ability to use optional connected experiences in your Office 365 ProPlus application on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
+If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 
 ## Diagnostic data
 
-When you use any of the optional cloud-backed services described in this article, Microsoft may collect diagnostic data (such as usage data, error and performance data) about the performance of the experience when you used it. This diagnostic data may contain "personal data" as defined by Article 4 of the European GDPR. All diagnostic data Microsoft collects during the use of any Office 365 ProPlus applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3 ) standard.
+When you use any of the optional cloud-backed services described in this article, Microsoft may collect diagnostic data (such as usage data, error and performance data) about the performance of the experience when you used it. This diagnostic data may contain "personal data" as defined by Article 4 of the European GDPR. All diagnostic data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3 ) standard.
 
 
 ## Related topics
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Required service data for Office](required-service-data.md)
 - [Account Privacy Settings](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

@@ -19,9 +19,10 @@ hideEdit: true
 
 > [!IMPORTANT]
 > The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 ProPlus and Office 365 Business
-> - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
-> - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
+> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
+> - Microsoft 365 Apps for business (previously named Office 365 Business)
+> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
+> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 >
 > The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
 
@@ -35,8 +36,8 @@ For more information, see the following:
 
 If you're the admin for your organization, you might also be interested in the following:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
@@ -485,7 +486,7 @@ The following fields are collected:
 
   - **Data\_PrereqFailure\_Type** – The prerequisite failure we hit, i.e. the operating system is not supported
 
-  - **Data\_ProductReleaseId** - Product we're installing, i.e. Office 365 ProPlus
+  - **Data\_ProductReleaseId** - Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
 ### Office.ClickToRun.CorruptionCheck
 
@@ -583,7 +584,7 @@ The following fields are collected:
 
   - **Data\_OfficeVersion** - The version Office is installed in
 
-  - **Data\_Sku** - The SKU that's installed, i.e. Office 365 ProPlus.en-us
+  - **Data\_Sku** - The SKU that's installed, i.e. Microsoft 365 Apps for enterprise
 
   - **Data\_SqmMachineID** – Unique Machine ID used by Windows SQM Data\_SusClientID- Machine Office update identifier
 
@@ -623,7 +624,7 @@ The following fields are collected:
 
   - **Data\_PrereqFailure\_Type-** The prerequisite failure we hit
 
-  - **Data\_ProductReleaseId-** Product we're installing, i.e. Office 365 ProPlus
+  - **Data\_ProductReleaseId-** Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
 ### Office.ClickToRun.RepomanLogger
 
@@ -2522,9 +2523,9 @@ Reports the result of the end-to-end installation attempt
 
 Reports on the action that reason over the input collected using CollectParameters
 
-- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **ChannelID –**    Integer representing the enum value of the selected update/install channel (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+- **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
 - **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
 
@@ -2601,9 +2602,9 @@ Reports on the action that reads tagged input from the exe's embedded signature.
 
 Reports the parameters used for the Office installation
 
-- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted)
+- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **ChannelID –**    Integer representing the enum value of the selected update/install channel (Monthly, Insiders Slow, Insiders Fast, Semi-Annual, Semi-Annual Targeted, Invalid)
+- **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
 - **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are:  autorun, configure, consumer, download, help, packager
 
@@ -3056,6 +3057,8 @@ The following fields are collected:
 - **UserDismissed** - This tells if the user dismissed the dialog and thus would be in grace or reduced functionality mode because they didn't choose to buy office or get a trial
 
 ### Office.Licensing.Purchase 
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
 We have an experiment that gives the user an option to try and setup autopay for Office directly from an app without ever leaving the context of the app. This reports the success or failure of that experiment along with the error code It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
@@ -6139,6 +6142,8 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** – The identifier of application that has download failure.
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
@@ -6155,6 +6160,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** – The error observed during download.
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -6163,13 +6170,15 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains the name of the update being downloaded and the error observed.
+- **Payload** - Contains the name of the update being downloaded and the error observed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+- **UpdateID** – The identifier of the update being downloaded.
 
 
 ### downloadtask_downloadsuccess
@@ -6179,6 +6188,8 @@ The successful downloading a package file. We log the update path used. We use t
 The following fields are collected:
 
 - **App** - The application process sending the event
+
+- **AppID** – The identifier of application.
 
 - **AppInfo_Language** - The language the application is running under
 
@@ -6211,6 +6222,8 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+- **UpdateID** – The identifier of downloaded update.
 
 
 ### fba_checkforupdate
@@ -6319,6 +6332,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** – Contains OSStatus (Apple status code) reflecting launch status.
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -6327,7 +6342,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains OSStatus (Apple status code) reflecting launch status.
+- **Payload** - Contains OSStatus (Apple status code) reflecting launch status. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -6335,6 +6350,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+- **Success** – The string Boolean indicating whether MAU daemon process was successfully launched.
 
 ### fba_silentupdateoptin
 
@@ -6631,6 +6647,8 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** – The identifier of the application.
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
@@ -6647,6 +6665,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** – The detail of the error occurred during launching application after update.
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -6655,7 +6675,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an identifier used to track an update activity and name of the application be launched.
+- **Payload** - Contains an identifier used to track an update activity and name of the application be launched. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
     
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
     
@@ -6754,6 +6774,8 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** – The identifier of the application.
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
@@ -6770,6 +6792,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** – The detail about error occurred during application termination.
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -6778,13 +6802,15 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an identifier used to track an update activity and application bundle ID. This may also contain an error string if Microsoft Autoupdate determines the application is still running even though termination event was received.
+- **Payload** - Contains an identifier used to track an update activity and application bundle ID. This may also contain an error string if Microsoft Autoupdate determines the application is still running even though termination event was received. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+- **UpdateID** – The identifier of the application update.
 
 
 ### fbasilentupdate_codesignfailure
@@ -6877,6 +6903,8 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** – The identifier of the application.
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
@@ -6893,6 +6921,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** – The detail of error occurred during application update download.
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -6901,13 +6931,17 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an identifier used to track an update activity and name of an update.
+- **Payload** - Contains an identifier used to track an update activity and name of an update. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+- **UpdateID** – The identifier of the application update.
+
+- **UpdateName** – The name of the application update.
 
 
 ### fbasilentupdate_downloadinbackground
@@ -10545,6 +10579,8 @@ The following fields are collected:
 
   - **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
 
+  - **OfficeArchitectureText** - The architecture of Office product as string (e.g. x86, arm).
+
   - **PreviousBuild** - The version of Office this build was upgraded to or rolled back from.
 
   - **State** - State which the session changed to.
@@ -11281,6 +11317,8 @@ The event is triggers by an abnormal application termination (for example, task 
 
 The following fields are collected:
 
+  - **AddinExecution -** Flag that informs if an add-in was executing and didn't finish during an ungraceful application exit.
+
   - **BootCompleted –** Was Office boot completed at the time of crash.
 
   - **CrashedAppBuild -** Build version identifier for the affected process.
@@ -11338,6 +11376,8 @@ The following fields are collected:
   - **ModuleOffset -** Offset in bytes from the base address where the failure occurred.
 
   - **ModuleSize -** Failing module size in bytes.
+
+  - **OfficeArchitectureText -** The architecture of Office product as string (e.g. x86, arm).
 
   - **OfficeUILang –** The language of the User Interface in the Office build.
 

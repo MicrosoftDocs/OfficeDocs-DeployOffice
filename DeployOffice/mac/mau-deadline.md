@@ -59,7 +59,7 @@ To configure a deadline that is a certain number of days after the update is det
 
 For example, if you want to configure a deadline of 5 days after an update for Excel is detected, you can use the following:
 
-```
+```xml
 <key>Applications</key>
 <dict> 
   <key>/Applications/Microsoft Excel.app</key>
@@ -76,7 +76,7 @@ For example, if you want to configure a deadline of 5 days after an update for E
 
 If you want to configure a deadline of 4 days for Excel and 7 days for PowerPoint, you can use the following:
 
-```
+```xml
 <key>Applications</key>
 <dict>
   <key>/Applications/Microsoft Excel.app</key>
@@ -114,7 +114,7 @@ To configure a deadline for a specific date and time, use the following preferen
 
 For example, if you want to configure a specific date and time for a deadline for an Excel update, you can use the following:
 
-```
+```xml
 <key>UpdateDeadline.ApplicationsForcedUpdateSchedule</key>
 <dict> 
   <key>/Applications/Microsoft Excel.app</key> 
@@ -131,7 +131,7 @@ For example, if you want to configure a specific date and time for a deadline fo
 
 If you want to configure a specific date and time for a deadline for Word and Outlook, you can use the following:
 
-```
+```xml
 <key>UpdateDeadline.ApplicationsForcedUpdateSchedule</key>
 <dict>
   <key>/Applications/Microsoft Word.app</key>
@@ -171,7 +171,7 @@ To configure how many days in advance of the deadline that Automatic Download an
 
 For example, if you want to configure Automatic Download and Install mode to being 2 days before the deadline, you can use the following.
 
-```
+```xml
 <key>UpdateDeadline.StartAutomaticUpdates</key> 
  <integer>2</integer>
 ```
@@ -190,7 +190,7 @@ When the deadline is an hour away, users get a persistent notification along wit
 
 If you have set a deadline in the management configuration profile, you should turn off the deadline by setting empty values in your management configuration profile, as shown in the following example.
 
-```
+```xml
 <key>UpdateDeadline.DaysBeforeForcedQuit</key>
 <integer>0</integer>
 <key>UpdateDeadline.StartAutomaticUpdates</key>
@@ -199,7 +199,7 @@ If you have set a deadline in the management configuration profile, you should t
 
 If you just delete the management configuration profile, the deadline isn't actually turned off. That's because the deadline settings still exist in the user configuration profile, because the settings were originally written to the user configuration profile from the management configuration profile.
 
-If you configured a [deadline for a specific date and time](#configure-a-deadline-for-a-specific-date-and-time), once that date and time has passed, MAU deletes those values from the relevant config profiles.
+If you configured a [deadline for a specific date and time](#configure-a-deadline-for-a-specific-date-and-time), once that date and time have passed, MAU deletes those values from the relevant config profiles.
 
 ## Additional information about MAU deadlines
 

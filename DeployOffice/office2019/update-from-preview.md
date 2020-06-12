@@ -45,7 +45,7 @@ If you activate Office by using KMS, including Active Directory-based activation
 - Make sure that you’re using at least Version 1808 of Office 2019 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section you’ll see the version and build number. 
 - Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
 
-```
+```console
 cscript ospp.vbs /inpkey:yourkey
 cscript ospp.vbs /act
 ```
@@ -53,7 +53,7 @@ Replace *yourkey* with your KMS client activation key. You will need to restart 
 
 If you set up the Office 2019 KMS Host on a different computer than your Office 2019 Preview KMS host and you aren't using Active Directory-based activation, then the previous commands might not work, so try running these additional commands:
 
-```
+```console
 cscript ospp.vbs /remhst
 cscript ospp.vbs /sethst:KMSHostFQDN
 cscript ospp.vbs /act
@@ -69,7 +69,7 @@ If you activate Office by using MAK, do the following to update Office 2019 Prev
 - Make sure that you’re using at least Version 1808 of Office 2019 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section you’ll see the version and build number.
 - Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your MAK client activation key using the commands below.
 
-```
+```console
  cscript ospp.vbs /inpkey:yourkey
  cscript ospp.vbs /act
 ```
