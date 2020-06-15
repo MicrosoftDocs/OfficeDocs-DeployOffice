@@ -41,7 +41,7 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 
 - Any plan that include Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
 - Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
-- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business (previously named Office 365 Business).
+- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business (previously named Microsoft 365 Business).
   
 > [!NOTE]
 > - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, But, those business plans don't include support for shared computer activation.
