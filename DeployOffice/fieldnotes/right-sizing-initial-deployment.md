@@ -1,5 +1,5 @@
 ---
-title: Right-sizing your initial deployment of Office 365 ProPlus
+title: Right-sizing your initial deployment of Microsoft 365 Apps
 author: manoth
 ms.author: manoth
 manager: 
@@ -12,7 +12,7 @@ ms.custom:
 ms.collection: 
 ---
 
-# Best practices from the field: Right-sizing your initial deployment of Office 365 ProPlus
+# Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
@@ -35,8 +35,7 @@ Let’s first look at a sample scenario and how we identified the right balance,
 
 ## Sample scenario and solution
 
-Let’s have a look at a sample scenario which is typical for larger organizations. We will walk you through the key characteristics, challenges and how we solved the problem.
-Key characteristics:
+Below is a sample scenario based on an actual customer engagement. It is pretty typical when it comes to the setup and characteristics of an enterprise environment: 
 
 - IT supports 24 different languages for Microsoft 365 Apps.
 - IT manages 50,000 devices around the globe using Microsoft Endpoint Configuration Manager.
