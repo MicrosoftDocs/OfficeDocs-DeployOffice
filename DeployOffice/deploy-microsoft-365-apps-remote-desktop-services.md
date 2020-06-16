@@ -73,7 +73,7 @@ At this point, users can connect to the RD Session Host server and use Microsoft
 ## Install Microsoft 365 Apps on a shared virtual machine
 <a name="VM"> </a>
 
-In this scenario, you install Microsoft 365 Appsas part of a client operating system image, such as one running Windows 8.1 or Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
+In this scenario, you install Microsoft 365 Apps as part of a client operating system image, such as one running Windows 8.1 or Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
 
 > [!NOTE]
 > You can also use RDS to assign a virtual machine to a specific user. RDS calls that a personal virtual desktop. In that scenario, you don't use shared computer activation, because the virtual machine isn't shared among multiple users. 
@@ -88,7 +88,7 @@ Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps on
    <Property Name="SharedComputerLicensing" Value="1" />
    ```
 
-   - You also need to [make some RDS-specific changes on the virtual machine](https://go.microsoft.com/fwlink/p/?LinkId=510584), such as enabling Remote Desktop.
+   - You also need to [make some RDS-specific changes on the virtual machine](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-prepare-vms), such as enabling Remote Desktop.
 
 2. Install and configure Windows Server.
 
