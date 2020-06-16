@@ -27,7 +27,7 @@ The following are two common RDS scenarios:
 The following is a list of prerequisites that you need to deploy Microsoft 365 Apps or the Project and Visio desktop apps with RDS:
 
 - One of the below plans to be eligible to use shared computer activation:
-  - An Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps for enterprise.
+  - An Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps for enterprise, purchased through a Volume Licensing Program.
   - A Microsoft 365 Business plan which includes Microsoft 365 Apps for Business.
   - For the Project and Visio desktop apps, a subscription plan that includes those products.
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). 
