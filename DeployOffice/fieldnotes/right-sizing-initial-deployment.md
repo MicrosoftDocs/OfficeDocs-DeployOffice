@@ -60,7 +60,7 @@ So in this example (which is based on a real customer example), we could include
 
 ![Spreadsheet showing the different impact onLAN/WAN and internet bandwidth for different language pack combinations](../images/Lean6-Rightsize_2.png)
 
-We can see the two extremes (no/all language packs) and the impact on the LAN/WAN traffic as well as internet bandwidth consumed. If we go with including just 9 language packs, we will reduce the package size by nearly 50% and save more than 180 terabyte of LAN/WAN network traffic. The trade-in is that ~1,800 devices will have to download one of the excluded languages, generating approx. 3,100 gigabyte of traffic. If we stretch this over all work days from our targeted 3 month rollout window, this is ~24 gigabyte per day. If we add [Client Peer Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](https://docs.microsoft.com/en-us/deployoffice/delivery-optimization) and [Microsoft Connected Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
+We can see the two extremes (no/all language packs) and the impact on the LAN/WAN traffic as well as internet bandwidth consumed. If we go with including just 9 language packs, we will reduce the package size by nearly 50% and save more than 180 terabyte of LAN/WAN network traffic. The trade-in is that ~1,800 devices will have to download one of the excluded languages, generating approx. 3,100 gigabyte of traffic. If we stretch this over all work days from our targeted 3 month rollout window, this is ~24 gigabyte per day. If we add [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](https://docs.microsoft.com/deployoffice/delivery-optimization) and [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
 Therefore we went with 9 language packs in this scenario which saved a lot of time and network bandwidth during the initial sync across all Distribution Points as well as client devices. Going forward, we also applied this on-prem/cloud split to Office updates, so this customer is benefiting from the split basically every month, not only during the initial deployment.
 
@@ -106,10 +106,10 @@ Launch your Configuration Manager, navigate to **Software Library**, open the **
 Navigate to your content source folder and open the configuration.xml in an editor. Remove all the hard coded languages and replace them by a combination of:
 
 - Specify languages you want to always install.
-- Add ID="[MatchPreviousMSI](https://docs.microsoft.com/en-us/DeployOffice/upgrade-from-msi-version#install-the-same-language-resources)" if you want to carry forward any already installed languages. 
-- Add ID="[MatchOS](https://docs.microsoft.com/en-us/deployoffice/overview-deploying-languages-microsoft-365-apps#install-the-same-languages-as-the-operating-system)" if you want to install languages matching the Windows Display Language.
+- Add ID="[MatchPreviousMSI](../upgrade-from-msi-version.md#install-the-same-language-resources)" if you want to carry forward any already installed languages. 
+- Add ID="[MatchOS](../overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system)" if you want to install languages matching the Windows Display Language.
 
-Also add [AllowCdnFallback="True"](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Below is an example of such a configuration.xml:
+Also add [AllowCdnFallback="True"](../office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Below is an example of such a configuration.xml:
 
 ```
 <Configuration ID="0f7c243e-b0f4-4e6f-bbe1-290875b7c685" Host="cm">
@@ -137,13 +137,13 @@ Once all Distribution Points have synced the changes, you can deploy your applic
 
 We recommend to employ additional technologies to further reduce the network impact:
 
-- Leverage [Client Peer Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content which is coming from Distribution Points. As this is the bulk of the download, enabling this is highly recommended and will benefit all your on-prem deployments, not just Office.
-- Configure [Delivery Optimization](https://docs.microsoft.com/en-us/deployoffice/delivery-optimization) on your devices to allow them to peer cache content coming from the Office CDN. Note the minimum version of Office required to leverage this feature of Windows as described in the linked article.
-- Optionally enable [Microsoft Connected Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your Distribution Points. This allows your DPs to act as a persistent cache for your devices and is easy to set up. It will leverage already existing information within Configuration Manager about your network infrastructure and preferred DPs.
+- Leverage [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content which is coming from Distribution Points. As this is the bulk of the download, enabling this is highly recommended and will benefit all your on-prem deployments, not just Office.
+- Configure [Delivery Optimization](https://docs.microsoft.com/deployoffice/delivery-optimization) on your devices to allow them to peer cache content coming from the Office CDN. Note the minimum version of Office required to leverage this feature of Windows as described in the linked article.
+- Optionally enable [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your Distribution Points. This allows your DPs to act as a persistent cache for your devices and is easy to set up. It will leverage already existing information within Configuration Manager about your network infrastructure and preferred DPs.
 
 ## Prerequisites
 
 There are some prerequisites you must meet to make this concept work in your environment:
 
 - Make sure, that the account (user or SYSTEM) used to install the apps is able to connect to the internet.
-- In order to leverage Delivery Optimization during Office install, you should deploy version 1908 or later. For version 1908 to 1911, you have to set a specific registry key as [described here](https://docs.microsoft.com/en-us/deployoffice/delivery-optimization#configure-microsoft-365-apps-to-use-delivery-optimization).
+- In order to leverage Delivery Optimization during Office install, you should deploy version 1908 or later. For version 1908 to 1911, you have to set a specific registry key as [described here](../delivery-optimization.md#configure-microsoft-365-apps-to-use-delivery-optimization).
