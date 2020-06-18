@@ -2714,13 +2714,22 @@ This event is logged when the call to the webservice made within the Click-to-Ru
 
 The following fields are collected:
 
+- **ActionDetail** -  Additional details for when a failure occurs.
+   - If the HTTP request succeeds, ActionDetail will be 0.
+   - If the Result field is not OK (i.e. not 0), which means that the request is not sent, this field will log the internal error code which is the same as the Result field.
+   - If the Result field is OK (i.e. 0), which means that the HTTP response code >= 300, it will log the HTTP response code (e.g. 404).
+
+- **Result** - Numeric error code flags returned by the Office webservice call APIs. – e.g. 3 would mean that there was a problem initializing the HTTP headers.
+
+- **Type** - Additional type information. In the case of the Inventory, this information specifies the type of payload being sent – e.g. full or just a delta of changes. 
+
 -  **WebCallSource** - An enumeration value (specified as an integer) indicating the Serviceability Manager add-on that was the source of the call:
    - Inventory: 0
    - Inventory Configuration: 1
    - Inventory Policy: 2
    - Inventory Network Status: 3
-
-- **Result** - Numeric error code flags returned by the Office webservice call APIs.
+   - Serviceability Manager: 4
+   - Manageability: 5
 
 ### Office.ServiceabilityManager.WebserviceFailure
 
