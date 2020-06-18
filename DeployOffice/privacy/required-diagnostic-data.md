@@ -654,6 +654,20 @@ The following are the data subtypes in this category:
 
 Installed product and version and the installation status.
 
+#### add_sso_account
+
+This will alert Microsoft to the success or failure of a user adding an account through single sign-on (SSO).
+
+The following fields are collected: 
+
+- **account_type** – the type of the account added using the SSO.
+
+- **action_origin** – from where this event was generated. (e.g.,values: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
+
+- **provider** - the identifier for the provider software package for the SSO.
+
+- **state** – current state of the account, (example value: FAILED, PENDING, ADDED etc.)
+ 
 #### Office.ClickToRun.UpdateStatus
 
 Applicable to all win32 applications. Helps us understand the status of the update process of the Office suite (Success or failure with error details)
@@ -1243,6 +1257,34 @@ The following fields are collected:
 ### *Security subtype*
 
 Document, feature, and add-in error conditions that may compromise security, including product update readiness.
+
+#### Office_AppGuard_CreateContainer
+
+We collect error codes and whether the container already existed or not. We also collect error codes for a reset event in case we fail to create the container on our first attempt. Data will be used identify the percentage of sessions we successfully create the container for launching Office Application Guard apps. Data will also allow Microsoft to identify and address error codes from the container creation.
+
+The following fields are collected:
+
+- **ErrorCode1** - Type of container setup error code.  
+
+- **ErrorCode2** - Error code from executing the creation. 
+
+- **ErrorCode3** - Additional error code. 
+
+- **Id** - A unique identifier (GUID) for the container creation.
+
+- **ResetError** - Error code from trying to reset the container after a failed attempt.
+
+- **ResetErrorCode1** - Type of Container Setup Error code after reset command. 
+
+- **ResetErrorCode2** - Error code from executing the creation after reset command.
+
+- **ResetErrorCode3** - Additional error code after reset command.
+
+- **ResetErrorType** - Type of error during reset: Creation, Preparing File or Launch.
+
+- **WarmBoot** - Identifies whether the container was already created or not.
+
+
 
 #### Office.Security.ActivationFilter.CLSIDActivated
 
@@ -4065,6 +4107,81 @@ The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
+#### Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
+
+Logged when the user closes an expanded Persona Card. It is used to observe critical anomalies in failure rates of closing the Live Persona Card.
+
+The following fields are collected:
+
+- **AppInfo_Id** – Name of the host application
+
+- **AppInfo_Version** – Version of the host application
+-
+- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+- **Data.clientType** - The type of device the app is run on, e.g. “Outlook_Win32”
+
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.exportName** - Human readable name of the user action event, e.g. "ClosedExpandedPersonaCard"
+
+- **Data.exportType** - Category of the event for GDPR export request
+
+- **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.properties** - Additional metadata collected for each event as follows:
+
+   - **cardCorrelationId** - Duplicate of Data.appContextId above 
+   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+   - **ClientTimeStamp** - time that the event occurred in Unix epoch time
+   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
+   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+   - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+   - **personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account 
+
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+- **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+- 
+- **Data.version** -The version of the service (Profile Card)
+
+- **DeviceInfo_Id** – The globally unique device identifier for a device
+
+- **DeviceInfo_Make** – The brand of the operating system
+
+- **DeviceInfo_Model** – The model of the device
+
+- **DeviceInfo.NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
+
+- **DeviceInfo_OsName** - The name of the device OS
+
+- **DeviceInfo_OsVersion** – The version of the operating system
+
+- **PipelineInfo.ClientCountry** - The Country Code of the Sender, based on the un-scrubbed Client IP Address
+
+
 #### Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
 We log when the user closes a Persona Card.  The data is used to determine whether the card closed correctly. 
@@ -6802,6 +6919,14 @@ The following fields are collected:
   - **Data\_UrlHash-** Hash of the document path
 
   - **Data\_ViewKind-** Type of Word view
+
+#### OneNote.App.Navigation.RatingReminderDialogShown
+
+The critical signal used to measure effectiveness of trigger logic for Rating reminder. This dialog is shown when the user has met all the conditions to see the rating reminder (no. of active days, has rated previously or not, etc.). This is used to ensure that the trigger logic for Rating reminder. If the users are seeing this dialog, it will provide us with ways to receive feedback from the customers on the right time and improve app health.
+
+The following fields are collected:
+
+- None
 
 #### OneNote.Canvas.PageOpened *(previous name)*, Office.OneNote.Android.Canvas.PageOpened
 
