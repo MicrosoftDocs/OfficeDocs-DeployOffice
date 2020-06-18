@@ -619,6 +619,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 - **DeviceInfo.NetworkProvider** - The network provider of the device (i.e. Verizon)
 
 - **gcc_restrictions_enabled** - Tells us if GCC restrictions have been applied to the app so we can ensure our GCC customers are using our app securely
+ 
+- **multi_window_mode** – Tells us if the user on the iPad is using multiple windows to help us detect issues related to multi-window usage.
 
 - **office_session_id** - A unique id tracking the session for connected Office services to help detect issues specific an Office service integration in Outlook like Word
 
