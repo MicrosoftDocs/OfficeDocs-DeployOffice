@@ -242,7 +242,7 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Odia                                     | or-IN               |                                                                           |
 | Pashto                                   | ps-AF               |                                                                           |
 | Persian (Farsi)                          | fa-IR               |                                                                           |
-| Polish                                   | pl-PR               | Polish, English, German                                                   |
+| Polish                                   | pl-PL               | Polish, English, German                                                   |
 | Portuguese (Portugal)                    | pt-PT               | Portuguese, English, French, Spanish                                      |
 | Portuguese (Brazil)                      | pt-BR               | Brazilian, English, Spanish                                               |
 | Punjabi (Gurmukhi)                       | pa-IN               |                                                                           |
