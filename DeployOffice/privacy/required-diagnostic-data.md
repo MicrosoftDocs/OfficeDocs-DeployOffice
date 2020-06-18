@@ -4116,7 +4116,7 @@ The following fields are collected:
 - **AppInfo_Id** – Name of the host application
 
 - **AppInfo_Version** – Version of the host application
--
+
 - **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
@@ -4164,7 +4164,7 @@ The following fields are collected:
 - **Data.UserInfo.OMSTenantId** - The tenant that a user’s subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
 - **Data.userPuid** -The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
-- 
+
 - **Data.version** -The version of the service (Profile Card)
 
 - **DeviceInfo_Id** – The globally unique device identifier for a device
