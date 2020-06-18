@@ -1679,7 +1679,15 @@ The following fields are collected:
 
 - **subtab_type** -  tracks where the user has selected the result from which result tab
 
-- **top_mail_result_selected_count** - tracks how many times a user selects the top results provided to them. 
+- **top_mail_result_selected_count** - tracks how many times a user selects the top results provided to them.
+
+- **ui_reload_result_count** - records the times of reloading UI because of result set update (during the corresponding query)
+
+- **ui_reload_result_time** - records the total time spent on reloading UI because of result set update (during the corresponding query)
+
+- **ui_reload_status_count** - records the times of reloading UI because of status update (during the corresponding query)
+
+- **ui_reload_status_time** - records the total time spent on reloading UI because of status update (during the corresponding query)
 
 #### compose_mail_accessory
 
@@ -6999,6 +7007,8 @@ The following fields are collected:
 
 - **enabled_state** - whether state related to the action is enabled
 
+- **in_app_language** - the selected in-app language, string type (default, en-US, fa, ru etc.)  
+
 - **notification_state** - indicates what type of badge count the user has asked for i.e. no badges, focused inbox only, etc.,
 
 - **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better. Examples** - Office365, Gmail, Outlook
@@ -7716,7 +7726,7 @@ The following fields are collected:
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
 
-#### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete 
+#### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.  This is used to ensure critical regression detection for OneNote app and service health.  If users can't launch the app for the first time, this would trigger a high severity incident.
 
