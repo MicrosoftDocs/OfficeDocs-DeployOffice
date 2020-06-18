@@ -3366,6 +3366,118 @@ This event is collected when the feed is shown to the user. The event is used to
 - **version** - The version of the feed client.
 
 
+#### Office.Feedback.Survey.FloodgateClient.SurveyTracked
+
+Tracks when a device that is eligible for a survey starts an app. Used to assess the health of the survey user selection process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.FloodgateClient.TriggerMet
+
+Tracks when a device has met the criteria to show a survey. Used to assess the health of the survey triggering process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.FloodgateClient.UserSelected
+
+Tracks when a device has been selected for a survey. Used to assess the health of the survey user selection process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.UI.Android
+
+On an Android device, it tracks when a user on a device interacts with the survey prompt and survey UI. Used to assess the health of the end-to-end survey experience as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.UI.IOS
+
+On an iOS device, it tracks when a user on a device interacts with the survey prompt and survey UI. Used to assess the health of the end-to-end survey experience as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.UI.Mac
+
+On a Mac device, it tracks when a user on a device interacts with the survey prompt and survey UI. Used to assess the health of the end-to-end survey experience as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.UI.Win32
+
+On a Win32 device, it tracks when a user on a device interacts with the survey prompt and survey UI. Used to assess the health of the end-to-end survey experience as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
+#### Office.Feedback.Survey.UI.Win32.Toast
+
+Tracks when survey prompt is shown. Used to assess the health of the survey prompt process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected:
+
+- **ExpirationTimeUTC** – date/time the survey will expire
+
+- **SurveyName** – name of survey shown
+
+- **SurveyId** – Unique instance of a campaign
+
+- **UniqueId** – Id to identify the individual piece of telemetry
+
 #### Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Allows us to know if a file successfully opened from the FIO Layer. Used for feature health and monitoring.
