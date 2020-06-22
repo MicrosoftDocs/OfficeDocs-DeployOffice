@@ -50,48 +50,48 @@ In addition to the fully localized languages listed here, Office 2016 provides L
   
 **Language tags (language IDs), and LCIDs available in Office 2016**
 
-|**Language**|**Geographic area**|**Language tag  _(ll-cc)_<sup>1</sup>**|**LCID**|
+|**Language**|**Geographic area**|**Language tag  _(ll-CC)_<sup>1</sup>**|**LCID**|
 |:-----|:-----|:-----|:-----|
-|Arabic  <br/> |Saudi Arabia  <br/> |ar-sa  <br/> |1025  <br/> |
-|Bulgarian  <br/> |Bulgaria  <br/> |bg-bg  <br/> |1026  <br/> |
-|Chinese (Simplified)  <br/> |People's Republic of China  <br/> |zh-cn  <br/> |2052  <br/> |
-|Chinese  <br/> |Taiwan  <br/> |zh-tw  <br/> |1028  <br/> |
-|Croatian  <br/> |Croatia  <br/> |hr-hr  <br/> |1050  <br/> |
-|Czech  <br/> |Czech Republic  <br/> |cs-cz  <br/> |1029  <br/> |
-|Danish  <br/> |Denmark  <br/> |da-dk  <br/> |1030  <br/> |
-|Dutch  <br/> |Netherlands  <br/> |nl-nl  <br/> |1043  <br/> |
-|English  <br/> |United States  <br/> |en-us  <br/> |1033  <br/> |
-|Estonian  <br/> |Estonia  <br/> |et-ee  <br/> |1061  <br/> |
-|Finnish  <br/> |Finland  <br/> |fi-fi  <br/> |1035  <br/> |
-|French  <br/> |France  <br/> |fr-fr  <br/> |1036  <br/> |
-|German  <br/> |Germany  <br/> |de-de  <br/> |1031  <br/> |
-|Greek  <br/> |Greece  <br/> |el-gr  <br/> |1032  <br/> |
-|Hebrew  <br/> |Israel  <br/> |he-il  <br/> |1037  <br/> |
-|Hindi  <br/> |India  <br/> |hi-in  <br/> |1081  <br/> |
-|Hungarian  <br/> |Hungary  <br/> |hu-hu  <br/> |1038  <br/> |
-|Indonesian  <br/> |Indonesia  <br/> |id-id  <br/> |1057  <br/> |
-|Italian  <br/> |Italy  <br/> |it-it  <br/> |1040  <br/> |
-|Japanese  <br/> |Japan  <br/> |ja-jp  <br/> |1041  <br/> |
-|Kazakh  <br/> |Kazakhstan  <br/> |kk-kz  <br/> |1087  <br/> |
-|Korean  <br/> |Korea  <br/> |ko-kr  <br/> |1042  <br/> |
-|Latvian  <br/> |Latvia  <br/> |lv-lv  <br/> |1062  <br/> |
-|Lithuanian  <br/> |Lithuania  <br/> |lt-lt  <br/> |1063  <br/> |
-|Malay  <br/> |Malaysia  <br/> |ms-my  <br/> |1086  <br/> |
-|Norwegian (Bokmål)  <br/> |Norway  <br/> |nb-no  <br/> |1044  <br/> |
-|Polish  <br/> |Poland  <br/> |pl-pl  <br/> |1045  <br/> |
-|Portuguese  <br/> |Brazil  <br/> |pt-br  <br/> |1046  <br/> |
-|Portuguese  <br/> |Portugal  <br/> |pt-pt  <br/> |2070  <br/> |
-|Romanian  <br/> |Romania  <br/> |ro-ro  <br/> |1048  <br/> |
-|Russian  <br/> |Russia  <br/> |ru-ru  <br/> |1049  <br/> |
-|Serbian (Latin)  <br/> |Serbia  <br/> |sr-latn-rs  <br/> |2074  <br/> |
-|Slovak  <br/> |Slovakia  <br/> |sk-sk  <br/> |1051  <br/> |
-|Slovenian  <br/> |Slovenia  <br/> |sl-si  <br/> |1060  <br/> |
-|Spanish  <br/> |Spain  <br/> |es-es  <br/> |3082  <br/> |
-|Swedish  <br/> |Sweden  <br/> |sv-se  <br/> |1053  <br/> |
-|Thai  <br/> |Thailand  <br/> |th-th  <br/> |1054  <br/> |
-|Turkish  <br/> |Turkey  <br/> |tr-tr  <br/> |1055  <br/> |
-|Ukrainian  <br/> |Ukrainian  <br/> |uk-ua  <br/> |1058  <br/> |
-|Vietnamese  <br/> |Vietnam  <br/> |vi-vn  <br/> |1066  <br/> |
+|Arabic  <br/> |Saudi Arabia  <br/> |ar-SA  <br/> |1025  <br/> |
+|Bulgarian  <br/> |Bulgaria  <br/> |bg-BG  <br/> |1026  <br/> |
+|Chinese (Simplified)  <br/> |People's Republic of China  <br/> |zh-CN  <br/> |2052  <br/> |
+|Chinese  <br/> |Taiwan  <br/> |zh-TW  <br/> |1028  <br/> |
+|Croatian  <br/> |Croatia  <br/> |hr-HR  <br/> |1050  <br/> |
+|Czech  <br/> |Czech Republic  <br/> |cs-CZ  <br/> |1029  <br/> |
+|Danish  <br/> |Denmark  <br/> |da-DK  <br/> |1030  <br/> |
+|Dutch  <br/> |Netherlands  <br/> |nl-NL  <br/> |1043  <br/> |
+|English  <br/> |United States  <br/> |en-US  <br/> |1033  <br/> |
+|Estonian  <br/> |Estonia  <br/> |et-EE  <br/> |1061  <br/> |
+|Finnish  <br/> |Finland  <br/> |fi-FI  <br/> |1035  <br/> |
+|French  <br/> |France  <br/> |fr-FR  <br/> |1036  <br/> |
+|German  <br/> |Germany  <br/> |de-DE  <br/> |1031  <br/> |
+|Greek  <br/> |Greece  <br/> |el-GR  <br/> |1032  <br/> |
+|Hebrew  <br/> |Israel  <br/> |he-IL  <br/> |1037  <br/> |
+|Hindi  <br/> |India  <br/> |hi-IN  <br/> |1081  <br/> |
+|Hungarian  <br/> |Hungary  <br/> |hu-HU  <br/> |1038  <br/> |
+|Indonesian  <br/> |Indonesia  <br/> |id-ID  <br/> |1057  <br/> |
+|Italian  <br/> |Italy  <br/> |it-IT  <br/> |1040  <br/> |
+|Japanese  <br/> |Japan  <br/> |ja-JP  <br/> |1041  <br/> |
+|Kazakh  <br/> |Kazakhstan  <br/> |kk-KZ  <br/> |1087  <br/> |
+|Korean  <br/> |Korea  <br/> |ko-KR  <br/> |1042  <br/> |
+|Latvian  <br/> |Latvia  <br/> |lv-LV  <br/> |1062  <br/> |
+|Lithuanian  <br/> |Lithuania  <br/> |lt-LT  <br/> |1063  <br/> |
+|Malay  <br/> |Malaysia  <br/> |ms-MY  <br/> |1086  <br/> |
+|Norwegian (Bokmål)  <br/> |Norway  <br/> |nb-NO  <br/> |1044  <br/> |
+|Polish  <br/> |Poland  <br/> |pl-PL  <br/> |1045  <br/> |
+|Portuguese  <br/> |Brazil  <br/> |pt-BR  <br/> |1046  <br/> |
+|Portuguese  <br/> |Portugal  <br/> |pt-PT  <br/> |2070  <br/> |
+|Romanian  <br/> |Romania  <br/> |ro-RO  <br/> |1048  <br/> |
+|Russian  <br/> |Russia  <br/> |ru-RU  <br/> |1049  <br/> |
+|Serbian (Latin)  <br/> |Serbia  <br/> |sr-latn-RS  <br/> |2074  <br/> |
+|Slovak  <br/> |Slovakia  <br/> |sk-SK  <br/> |1051  <br/> |
+|Slovenian  <br/> |Slovenia  <br/> |sl-SI  <br/> |1060  <br/> |
+|Spanish  <br/> |Spain  <br/> |es-ES  <br/> |3082  <br/> |
+|Swedish  <br/> |Sweden  <br/> |sv-SE  <br/> |1053  <br/> |
+|Thai  <br/> |Thailand  <br/> |th-TH  <br/> |1054  <br/> |
+|Turkish  <br/> |Turkey  <br/> |tr-TR  <br/> |1055  <br/> |
+|Ukrainian  <br/> |Ukrainian  <br/> |uk-UA  <br/> |1058  <br/> |
+|Vietnamese  <br/> |Vietnam  <br/> |vi-VN  <br/> |1066  <br/> |
 
 <sup>1</sup> Language tag is sometimes referred to as the language ID.
    
