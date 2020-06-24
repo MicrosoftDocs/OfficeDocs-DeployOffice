@@ -54,12 +54,12 @@ On the 2nd Tuesday of each month, a new update package for Version 2002 that is 
 
 In the Office 365 Updates node, you'll see entries like the following, where ##### will be replaced by the most current build number:
 
-- Office 365 Client Update for Windows 7 – Version 2002 for x64 based Edition (Build 12527.#####)
-- Office 365 Client Update for Windows 7 – Version 2002 for x86 based Edition (Build 12527.#####)
+- Microsoft 365 Apps Update for Windows 7 – Version 2002 for x64 based Edition (Build 12527.#####)
+- Microsoft 365 Apps Update for Windows 7 – Version 2002 for x86 based Edition (Build 12527.#####)
 
 These update packages are configured to apply ***only*** to devices running Windows 7. These update packages can't be used to update Microsoft 365 Apps on devices running other supported operating systems, such as Windows 10.
 
-If you use an automatic deployment rule (ADR), you should create a new rule for these update packages. Then, use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Office 365 Client Update for Windows 7" as well as the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients will apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
+If you use an automatic deployment rule (ADR), you should create a new rule for these update packages. Then, use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Microsoft 365 Apps Update for Windows 7" as well as the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients will apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
 
 ## Extended availability of Version 2002
 
