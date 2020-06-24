@@ -56,7 +56,7 @@ Disadvantages:
 
 ## Configuration Manager on-premises – full content
 
-Advantages: 
+Advantages:
 - Works with existing workflow within the Configuration Manager wizard to build a Microsoft 365 Apps installation package.
 - IT Pro can pre-stage content on workstation over time using Configuration Manager, so installation will have all local installation files present to ensure fastest installation times.
 - IT Pro can use Peer Cache to reduce bandwidth consumption.
@@ -95,7 +95,7 @@ Disadvantages:
 - Intune uses a configuration service provider (CSP) to install and manage Office.  This prevents flexibility of “Lean” second installs to add Visio, Project or additional languages.  Only one policy containing the configuration can apply to a machine.  While it’s possible to support variations by group exclusions, additional planning is required.
 
 ## File share on-premises
-
+add some content
 Advantages:
 - Appropriate for customers who don’t use Configuration Manager or who use third-party tools that don't directly support Microsoft 365 Apps deployment.
 
