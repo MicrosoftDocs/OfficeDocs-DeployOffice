@@ -30,7 +30,11 @@ Microsoft Search is the native search experience in Microsoft 365, so no initial
 
 Users must be signed in with their work or school account to receive results from Microsoft Search in Bing. For more information, see [Security and Privacy for Microsoft Search in Bing](https://docs.microsoft.com/microsoftsearch/security-for-search).
 
-For more information about features and capabilities, see [Microsoft Search in Bing](https://www.bing.com/business/explore) and [Overview of Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search).
+For more information about features and capabilities, see the following resources:
+
+- [Intelligent search for work](https://www.microsoft.com/edge/business/intelligent-search-with-bing)
+- [Microsoft Search and How to Set it Up](https://www.youtube.com/watch?v=a5oXeaV1LEI) *(Microsoft Mechanics video)*
+- [Overview of Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) *(documentation)*
 
 ## How does the Microsoft Search in Bing extension for Google Chrome get installed?
 
@@ -171,17 +175,15 @@ You can find this policy setting under Computer Configuration\Policies\Administr
 
 ### Configuration Manager (current branch)
 
-If you’re deploying Microsoft 365 Apps for enterprise  by using the Office 365 Client Installation wizard in Configuration Manager, you can set the **Background service for Microsoft Search in Bing** toggle to the **Off** position in the **Features** section.
+If you’re deploying Microsoft 365 Apps for enterprise  by using the Office 365 Client Installation wizard in Configuration Manager, you can set the **Background service for Microsoft Search in Bing** toggle to **Off** in the **Features** section.
 
 ![The Features section showing the toggle for Microsoft Search in Bing](images/oct-features-toggle-bing.PNG)
 
 ### Microsoft Intune
 
-If you're deploying Microsoft 365 Apps for enterprise  by using Intune, you can clear the **Install background service for Microsoft Search in Bing** check box on the **Configure App Suite** pane.
+If you're deploying Microsoft 365 Apps for enterprise by using Intune, on the **Configure app suite** page, you can set the **Install background service for Microsoft Search in Bing** toggle to **No** in the **Properties** section.
 
-> [!NOTE]
-> This toggle for Intune is anticipated to be available in June 2020. In the meantime, you can choose **Enter XML data** for the **Settings format**, and then enter XML similar to the example in the [Office Deployment Tool](#office-deployment-tool) section.
-
+![The Properties section showing the toggle for Microsoft Search in Bing](images/intune-toggle-bing.PNG)
 
 ## How to enhance Microsoft Search in Bing results for your organization
 
