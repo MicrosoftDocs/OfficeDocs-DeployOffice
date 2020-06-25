@@ -30,7 +30,11 @@ Microsoft Search is the native search experience in Microsoft 365, so no initial
 
 Users must be signed in with their work or school account to receive results from Microsoft Search in Bing. For more information, see [Security and Privacy for Microsoft Search in Bing](https://docs.microsoft.com/microsoftsearch/security-for-search).
 
-For more information about features and capabilities, see [Microsoft Search in Bing](https://www.bing.com/business/explore) and [Overview of Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search).
+For more information about features and capabilities, see the following resources:
+
+- [Intelligent search for work](https://www.microsoft.com/edge/business/intelligent-search-with-bing)
+- [Microsoft Search and How to Set it Up](https://www.youtube.com/watch?v=a5oXeaV1LEI) *(Microsoft Mechanics video)*
+- [Overview of Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) *(documentation)*
 
 ## How does the Microsoft Search in Bing extension for Google Chrome get installed?
 
