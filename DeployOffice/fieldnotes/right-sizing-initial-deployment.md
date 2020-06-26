@@ -19,14 +19,14 @@ description: "Best practices from the field: Right-sizing your initial deploymen
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-When you are planning a Microsoft 365 Apps rollout in a multi-language enterprise environment, you might face the challenge of balancing language deployment with  Microsoft Endpoint Configuration Manager:
+When you plan a Microsoft 365 Apps deployment with Configuration Manager in a multi-language enterprise environment, you might face the following challenge:
 
-- Including as many source files for different languages as possible in the on-premises deployment package prevents overloading your corporate internet connections.
+- To prevent overloading your corporate internet connections, you want to include  as many source files for different languages as possible in the on-premises deployment package.
 - At the same time, including that many languages increases the on-premises LAN/WAN traffic, as all distribution points and managed clients will download the whole package, regardless of what is actually needed.
 
-Leaning towards the two extremes (host everything or nothing on-premises) is usually not feasible for most organizations. This article will show you how to find the sweet spot that balances the impact on internet and local resources.
+Leaning toward the two extremes (host everything on-premises or host nothing) is usually not feasible for most organizations. This article will show you how to find the sweet spot that balances the impact on internet and on local resources.
 
-There are three goals that we are trying to achieve here:
+There are three goals that we are trying to achieve:
 
 - Reduce the impact on your company’s internet circuits as much as possible.
 - Reduce the impact on your internal network as much as possible.
