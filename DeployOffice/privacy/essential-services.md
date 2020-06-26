@@ -2714,13 +2714,22 @@ This event is logged when the call to the webservice made within the Click-to-Ru
 
 The following fields are collected:
 
+- **ActionDetail** -  Additional details for when a failure occurs.
+   - If the HTTP request succeeds, ActionDetail will be 0.
+   - If the Result field is not OK (i.e. not 0), which means that the request is not sent, this field will log the internal error code which is the same as the Result field.
+   - If the Result field is OK (i.e. 0), which means that the HTTP response code >= 300, it will log the HTTP response code (e.g. 404).
+
+- **Result** - Numeric error code flags returned by the Office webservice call APIs. – e.g. 3 would mean that there was a problem initializing the HTTP headers.
+
+- **Type** - Additional type information. In the case of the Inventory, this information specifies the type of payload being sent – e.g. full or just a delta of changes. 
+
 -  **WebCallSource** - An enumeration value (specified as an integer) indicating the Serviceability Manager add-on that was the source of the call:
    - Inventory: 0
    - Inventory Configuration: 1
    - Inventory Policy: 2
    - Inventory Network Status: 3
-
-- **Result** - Numeric error code flags returned by the Office webservice call APIs.
+   - Serviceability Manager: 4
+   - Manageability: 5
 
 ### Office.ServiceabilityManager.WebserviceFailure
 
@@ -3138,6 +3147,8 @@ This telemetry activity tracks the success and failure points in searching for a
 
 The following fields are collected:
 
+- **DexShouldRetry** - Signal that we’ve hit a retryable issue (no internet or servers are down)
+
 - **GenuineTicketFailure** - Tells us the failure HRESULT when trying to get the machine's Windows genuine ticket/product key (WPK).
 
 - **PinValidationFailure** - Tells us why the pin validation process failed. Possible errors:
@@ -3172,13 +3183,27 @@ After successfully obtaining a valid Office pin bound to a machine pre-bundled w
 
 The following fields are collected:
 
-- **ActionCreateAccount** - User chose to create an account.
+- **ActionActivate** - Signal that user clicked the “Activate” button.
 
-- **ActionSignIn** - User chose to sign-in.
+- **ActionChangeAccount** -  Signal that user clicked the “Use a different account” hyperlink.
 
-- **DialogRedemption** - Showing the AFO redemption dialog.
+- **ActionCreateAccount** - Signal that user clicked the “Create account” button.
 
-- **DialogSignIn** - Showing the AFO sign-in dialog.
+- **ActionSignIn** - Signal that user clicked the “Sign in” button.
+
+- **CurrentView** - The type of dialog the user closed.
+
+- **DialogEULA** -  Signal that we showed the ‘Accept EULA’ dialog. 
+
+- **DialogRedemption** - Signal that we showed the AFO redemption dialog.
+
+- **DialogSignIn** - Signal that we showed the AFO sign-in dialog.
+
+- **EmptyRedemptionDefaults** - Signal that we failed to fetch default redemption information.
+ 
+- **GetRedemptionInfo** - Signal that we’re fetching demographic information for pin redemption.
+
+- **MalformedCountryCode** - Signal that the country code needed for pin redemption is malformed.
 
 - **OExDetails** - The error details we get back when identity's sign-in dialog was dismissed.
 
@@ -3194,6 +3219,14 @@ The following fields are collected:
     - 0x03113811    User closed the sign-in/redemption dialog
     - 0x03113812    User closed the accept EULA dialog
     - 0x03113808    User accepted the EULA
+    - 0x03113811	  User closed a dialog
+    - 0x2370e3a0	  User closed a dialog
+    - 0x2370e3c1	  Go to web for pin redemption
+    - 0x2370e3a1 	  Go to web for pin redemption
+    - 0x2370e3c0	  Dialog sequence looped caused by user going back and forth in the dialog flow
+    - 0x2370e3a3	  User clicked “Not now” hyperlink which skips the AFO offer for that session
+    - 0x2370e3a2	  User clicked on “Never show this to me” hyperlink which disables the AFO offer
+
 
 - **UseInAppRedemption** - Tells us if we're keeping users in-app for redemption or sending them to the web to redeem their fetched pin (pre-populated).
 
@@ -3225,7 +3258,7 @@ The following fields are collected:
 
 - **HasConnectivity** - Tells if the user has internet connectivity and in case there isn't the user might have to use a grace license for five days or may be in reduced functionality mode
 
-- **InAppTrialPurchase** - Tells if the flight is enabled for launching the Store Purchase SDK to capture PI and purchase a trial from within the application
+- **InAppTrialPurchase** - Tells if the flight is enabled for launching the Store Purchase SDK to capture PI and purchase a trial from within the application *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **IsRS1OrGreater** - Tells if the OS Version is greater than RS1 or not since the Store Purchase SDK should be used only if the OS Version is greater that RS1
 
@@ -3233,15 +3266,15 @@ The following fields are collected:
 
 - **OEMSendToWebForTrial** - Tells if the flight is enabled to send users to the web to redeem a trial
 
-- **StoreErrorConditions** - Tells the various conditions under which the Store Purchase SDK could have failed
+- **StoreErrorConditions** - Tells the various conditions under which the Store Purchase SDK could have failed *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **StoreErrorHResult** - Tells the error code returned from the Store Purchase SDK
+- **StoreErrorHResult** - Tells the error code returned from the Store Purchase SDK *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **StorePurchaseStatusResult** - Tells the result of calling the Store Purchase SDK and if the user made a purchase or not which will help determine if the user should get licensed to use Office
+- **StorePurchaseStatusResult** - Tells the result of calling the Store Purchase SDK and if the user made a purchase or not which will help determine if the user should get licensed to use Office *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Tag** - Used for telling where in the code the event was sent from
 
-- **UserSignedInExplicitly** - Tells if the user signed in explicitly in which case, we would re-direct users to the web for the trial
+- **UserSignedInExplicitly** - Tells if the user signed in explicitly in which case, we would re-direct users to the web for the trial *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 ### Office.Licensing.UseGraceKey
 
