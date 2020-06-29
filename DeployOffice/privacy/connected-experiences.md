@@ -62,7 +62,7 @@ The following table provides a list of connected experiences that analyze your c
 | Translator   | [Translate text into a different language](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
 > [!NOTE]
-> \*When users are signed in with a work or school account, the connected experience listed above in italics is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> \*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Connected experiences that download online content
 
@@ -93,7 +93,7 @@ The following table provides a list of connected experiences that download onlin
 | *Weather Bar*\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*When users are signed in with a work or school account, the connected experience listed above in italics is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+>\*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Other connected experiences
 
@@ -134,7 +134,7 @@ The following table provides a list of those other connected experiences and pro
 | While you were away |[Get notified when members of your team update your shared file](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
->\*When users are signed in with a work or school account, the connected experience listed above in italics is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+>\*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Choose whether these connected experiences are available to use
 
