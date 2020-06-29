@@ -15,7 +15,7 @@ description: "Provides Office admins with information about the implications of 
 # Windows 8 end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
-> - Support for Windows 8 ended on January 12, 2016. [Learn more](https://docs.microsoft.com/en-us/lifecycle/faq/windows#windows-81)
+> - Support for Windows 8 ended on January 12, 2016. [Learn more](https://docs.microsoft.com/lifecycle/faq/windows#windows-81)
 > - Microsoft 365 Apps are not supported on Windows 8.
 > - If you're a home user running Office on Windows 8, see [Windows 8 end of support and Office](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading this article.
 
