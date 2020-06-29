@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office admins with information about the implications of Windows 8 end of support on Microsoft 365 Apps."
+description: "Provides Office admins with information what versions of Office are supported for connecting to Office 365 services and the implications of using older Office clients."
 ---
 
 # Office versions and connectivity to Office 365 services
