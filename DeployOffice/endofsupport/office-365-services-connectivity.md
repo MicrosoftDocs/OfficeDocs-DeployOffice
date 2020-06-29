@@ -39,7 +39,7 @@ We recommend that you upgrade older Office clients to a subscription version of 
 We provide various services to help you upgrade to subscription versions of the Office client. The following list provides some examples of resources that are available:
 
 - [Microsoft FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365?rtc=1), for migration and deployment assistance from Microsoft experts.
-- [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/office-365?rtc=1), for assistance from Microsoft with application compatibility issues.
+- [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1), for assistance from Microsoft with application compatibility issues.
 - [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md), for technical documentation.
 - [Product lifecycle dashboard](https://docs.microsoft.com/mem/configmgr/core/clients/manage/asset-intelligence/product-lifecycle-dashboard) and [upgrade readiness dashboard](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness), for users of Microsoft Endpoint Configuration Manager (current branch).
 - [Readiness Toolkit for Office add-ins and VBA](../readiness-toolkit-application-compatibility-microsoft-365-apps.md), to help identify potential issues with add-ins and VBA macros used in your organization.
@@ -55,4 +55,3 @@ There are some changes planned related to the use Basic Authentication with Exch
 - This information about connecting to Office 365 services also applies to Project and Visio.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
-- 
