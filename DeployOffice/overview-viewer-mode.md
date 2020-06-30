@@ -38,7 +38,7 @@ To use these policy settings, download and install the [Administrative Template 
 
 ## Considerations when using viewer mode
 
-- Viewer mode is currently supported for Word, Excel, PowerPoint(Version 1902), Project and Visio(Version 2005). 
+- Viewer mode is currently supported for Word, Excel, PowerPoint (Version 1902), Project and Visio (Version 2005). 
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
 - For information about the availability of Version 1902 or later in the update channels for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 - The Activate Product button under File > Account is hidden when Office is in viewer mode.
