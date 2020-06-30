@@ -47,19 +47,19 @@ Below is a sample scenario based on an actual customer engagement. It is pretty 
 
 So, we could include all languages in one on-premises deployment package to reduce impact on the internet breakouts to zero. Including 24 languages bumps the package size up to approximately 8 gigabytes. As Configuration Manager synchronizes the full package to each device, regardless of what the device actually needs, this package size causes 400 terabytes of LAN traffic (8 gigabytes to 50,000 devices).
 
-If we go the other extreme, we could remove all source files and use Configuration Manager to just initiate the install. We would rely on the Office CDN (content delivery network) to supply just the required source files. This will ensure that devices will only download what they need, but it all comes from the internet. If we assume that every device needs one additional language, we are looking at 50,000 devices requiring approximately 1.7 gigabytes, or 85 terabytes of traffic from the internet. That’s a great reduction in overall traffic, but it will contribute to internet access congestion.
+If we go the other extreme, we could remove all source files and use Configuration Manager to just initiate the install. We would rely on the Office CDN (content delivery network) to supply just the required source files. This will ensure that devices will only download what they need, but it all comes from the internet. If we assume that every device needs one additional language, we are looking at 50,000 devices requiring approximately 1.7 gigabytes, or 85 terabytes of traffic from the internet. That is a great reduction in overall traffic, but it will contribute to internet access congestion.
 
-We could also break the one, big deployment package up into a core package and individual language packs. This will reduce that amount of content being synced unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex and we would have to maintain 25 individual deployment packages going forward.
+We could also break the one, big deployment package up into a core package and individual language packs. This will reduce that amount of content being synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex and we would have to maintain 25 individual deployment packages going forward.
 
-The good news is that we don’t have to think in extremes. Instead, we can use a feature called “AllowCdnFallback”. When enabled, the installation engine is allowed to fall back to Office CDN for each language pack it can’t find locally in the Ccmcache folder.
+The good news is that we do not have to think in extremes. Instead, we can use a feature called “AllowCdnFallback”. When enabled, the installation engine is allowed to fall back to Office CDN for each language pack it cannot find locally in the Ccmcache folder.
 
-This allows us to substitute LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, this device will have to download approx. 250 megabytes. But it will save 49,999 devices from syncing the source files from Distribution Points (~12.5 terabyte), if we remove this language from the source file set. This sounds like a pretty good deal!
+This allows us to substitute LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, this device will have to download approx. 250 megabytes. But it will save 49,999 devices from synchronizing the source files from Distribution Points (~12.5 terabyte), if we remove this language from the source file set. This sounds like a pretty good deal!
 
 To be able to identify which language packs we should exclude; we can generate an overview of how often each language pack is installed in our environment. Typically, the distribution is not even, and we will have a substantial number of language packs which are only installed on a hand-full of devices. We can then add up the number of all language packs and calculate the share of each one. Let’s have a look at some sample data and how many language packs stand for 90% or more of all installed language packs:
 
 ![Overview of distribution of language packs, showing that there is a very uneven distribution](../images/Lean6-Rightsize_1.png)
 
-In this example (which is based on a real customer environment), we could include less than 50% of all supported languages in the deployment package and still cover 92% of all device configurations. We’ve crafted a table that shows the impact on the network:
+In this example (which is based on a real customer environment), we could include less than 50% of all supported languages in the deployment package and still cover 92% of all device configurations. We have crafted a table that shows the impact on the network:
 
 ![Spreadsheet showing the different impact on LAN/WAN and internet bandwidth for different language pack combinations](../images/Lean6-Rightsize_2.png)
 
@@ -137,7 +137,7 @@ The next step is to craft a deployment package which includes the selected langu
 
 ![Screenshot of Configuration Manager console](../images/Lean6-Rightsize_5.png)
 
-8. Once all distribution points have synced the changes, you can deploy your application as usual.
+8. Once all distribution points have synchronized the changes, you can deploy your application as usual.
 
 ### Further reduce network impact
 
