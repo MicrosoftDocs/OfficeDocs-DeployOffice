@@ -1,7 +1,7 @@
 ---
 title: "Update deadline"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: johmark
+author: johmarkMSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
