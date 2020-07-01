@@ -222,8 +222,20 @@ Set the first day of week in calendar view.
 |**Domain**  | com.microsoft.Outlook |
 |**Key** | CalendarFirstDayOfWeek|
 |**Data Type**  | Integer |
-|**Possible values**  | 1 = Sunday (default) <br/> 2 = Monday  <br/> 3= Tuesday <br/> 4= Wednesday  <br/> 5= Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
+|**Possible values**  | 1 = Sunday (default) <br/> 2 = Monday  <br/> 3 = Tuesday <br/> 4 = Wednesday  <br/> 5 = Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
 |**Availability** |16.19 |
+
+### Enable New Outlook
+
+Set the availability and default position of the [New Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439) switch.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** | EnableNewOutlook|
+|**Data Type**  | Integer |
+|**Possible values**  | 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
+|**Availability** |16.38 |
 
     
 ## Related topics
