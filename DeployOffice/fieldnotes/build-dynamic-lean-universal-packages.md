@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-As an admin, you might have to deploy Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus) in your organization. But such a deployment is more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**.
+As an admin, you might have to deploy Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus) in your organization. But such a deployment is more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 
 This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
