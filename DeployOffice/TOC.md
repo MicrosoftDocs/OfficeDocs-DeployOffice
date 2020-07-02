@@ -51,7 +51,7 @@
 ## [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
 ## [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
 ## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
-## [Right-sizing your initial deployment of Microsoft 365 Apps](fieldnotes/right-sizing-initial-deployment.md)
+## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 
 # Reference
 ## [Overview of reference articles](reference-articles.md)
