@@ -32,7 +32,7 @@ Office consists of client software applications and connected experiences design
 
 ## Connected experiences that analyze your content
 
-Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Editor in Word.
+Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator.
 
 The following table provides a list of connected experiences that analyze your content and also provides links to more information about them.
 
@@ -42,7 +42,6 @@ The following table provides a list of connected experiences that analyze your c
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate with your voice in Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-| Editor    | [Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Ideas     | [Ideas in Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -55,6 +54,7 @@ The following table provides a list of connected experiences that analyze your c
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Research*\*   | [Add or change research services](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|*Similarity checker*\* (a feature of Editor)|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Smart Lookup*\*   | [Get insights into what you're working on with Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Suggested replies | [What are suggested replies?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Tap for Word (Add from files)   | [Find and use the content you need, when you need, without leaving Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
