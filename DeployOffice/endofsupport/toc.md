@@ -1,5 +1,7 @@
 # Office end of support resources
 
+## [Connectivity to Office 365 services](office-365-services-connectivity.md) 
+
 ## Microsoft 365 Apps
 
 ### [Windows 7](windows-7-support.md)
@@ -8,8 +10,8 @@
 
 ## Other Office clients
 
-### [Office 2007](office-2007.md)
-### [Office 2010](office-2010.md)
+### [Office 2007](office-2007-end-support-roadmap.md)
+### [Office 2010](office-2010-end-support-roadmap.md)
 
 ## Office server products
 

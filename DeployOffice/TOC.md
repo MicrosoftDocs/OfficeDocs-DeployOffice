@@ -79,11 +79,12 @@
 ## [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ## [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
-# [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
-
 # End of support resources
 
-## [Windows 7 and Microsoft 365 Apps](windows-7-support.md)
-## [Windows Server and Microsoft 365 Apps](windows-server-support.md)
+## [Windows 7 and Microsoft 365 Apps](endofsupport/windows-7-support.md)
+## [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
+## [Connectivity to Office 365 services](endofsupport/office-365-services-connectivity.md)
 ## [Office system requirements](https://products.office.com/office-resources)
 ## [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)
+
+# [Office for Mac](mac/deployment-guide-for-office-for-mac.md)

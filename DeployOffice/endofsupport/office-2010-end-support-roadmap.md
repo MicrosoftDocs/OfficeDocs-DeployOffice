@@ -57,13 +57,13 @@ Unlike Office 2010, Microsoft 365 Apps uses a user-based licensing model that al
   
 - [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
     
-- [About Microsoft 365 Apps in the enterprise](about-microsoft-365-apps.md)
+- [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md)
     
-- [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
+- [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md)
     
 ## Review what's changed since Office 2010
 
-To learn about some of the changes since Office 2010, review the following articles: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](office2016/changes-in-office-2016-for-windows-desktop.md).
+To learn about some of the changes since Office 2010, review the following articles: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](../office2016/changes-in-office-2016-for-windows-desktop.md).
   
 For information about the new features available in Microsoft 365 Apps, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426). For Office 2019, see [What's New in Office 2019](https://support.office.com/article/5077cbbe-0d94-44cc-b30e-654e37629b0c).
   
@@ -79,11 +79,11 @@ Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 
   
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](assess-microsoft-365-apps.md#step-4---assess-application-compatibility). 
+Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility). 
   
 To help with assessing application compatibility with Microsoft 365 Apps, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md).
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
   
 ## Assess your infrastructure and environment
 
@@ -97,7 +97,7 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
     
 - Cloud infrastructure, including existing Office 365 (or Microsoft 365) capabilities, user licensing, and identity.
     
-Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md).
+Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../assess-microsoft-365-apps.md).
   
 ## Review new Group Policy settings
 
@@ -109,11 +109,11 @@ You can download the Administrative Template files (ADMX/ADML) for Group Policy 
 
 You can deploy Microsoft 365 Apps from the cloud, from a local source on your network, or with Microsoft Endpoint Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Microsoft 365 Apps, including which applications and languages are installed on which client computers.
   
-For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md). 
+For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](../plan-microsoft-365-apps.md). 
   
 ## Choose how often to update Office
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
   
 ## Plan for additional languages
 
@@ -123,17 +123,17 @@ You can install language accessory packs after you've deployed Microsoft 365 App
     
 - Use the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
     
-For more information, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
+For more information, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md).
   
 ## Special considerations
 
- **The Office Customization Tool is not used as part of the Microsoft 365 Apps installation**. Instead, you can customize the installation for your users with the Office Deployment Tool. For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
+ **The Office Customization Tool is not used as part of the Microsoft 365 Apps installation**. Instead, you can customize the installation for your users with the Office Deployment Tool. For more information, see [Overview of the Office Deployment Tool](../overview-office-deployment-tool.md).
   
  **Removal of InfoPath from Microsoft 365 Apps**. InfoPath 2013 remains the current version and therefore isn't included in Microsoft 365 Apps. When you upgrade an existing installation of Office 2010 to Microsoft 365 Apps, InfoPath is removed from the computer. If your users still need to use InfoPath, the 2013 version of InfoPath is available for installation on the Software page in the Office 365 portal. 
   
 ## Related topics
 
-- For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md).
+- For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md).
     
 - To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2010-servers-and-products).
     
