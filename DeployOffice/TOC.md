@@ -70,9 +70,6 @@
 ## [Change installation from 32-bit to 64-bit](change-bitness.md)
 ## [App compat & readiness assessment tools](readiness-tools.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
-## [Upgrade from Office 2007](office-2007-end-support-roadmap.md)
-## [Upgrade from Office 2010](office-2010-end-support-roadmap.md)
-## [Windows 7 end of support](windows-7-support.md)
 
 # Project, Visio, Teams, and OneNote
 ## [Deploy Project](deployment-guide-for-project.md)
@@ -83,3 +80,10 @@
 ## [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
 # [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
+
+# End of support resources
+
+## [Windows 7 and Microsoft 365 Apps](windows-7-support.md)
+## [Windows Server and Microsoft 365 Apps](windows-server-support.md)
+## [Office system requirements](https://products.office.com/office-resources)
+## [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)

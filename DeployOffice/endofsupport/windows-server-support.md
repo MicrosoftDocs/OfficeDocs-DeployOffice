@@ -28,7 +28,7 @@ Version 2002 is the last version of Microsoft 365 Apps that you can install on d
 
 Even though Windows Server 2008 R2 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next 3 years, until January 2023. But, during that time, as long as the device is still running Windows Server 2008 R2, your installation of Microsoft 365 Apps won't receive any new features updates.
 
-For information about managing updates to Microsoft 365 Apps on Windows Server 2008 R2 and guidance for using Microsoft Endpoint Configuration Manager for updates, see [Windows 7 end of support and Microsoft 365 Apps](../windows-7-support.md). The same information about managing updates and using Configuration Manager for Windows 7 also applies to Windows Server 2008 R2.
+For information about managing updates to Microsoft 365 Apps on Windows Server 2008 R2 and guidance for using Microsoft Endpoint Configuration Manager for updates, see [Windows 7 end of support and Microsoft 365 Apps](windows-7-support.md). The same information about managing updates and using Configuration Manager for Windows 7 also applies to Windows Server 2008 R2.
 
 ## Windows Server 2012
 
