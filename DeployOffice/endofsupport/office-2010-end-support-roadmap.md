@@ -20,8 +20,8 @@ Also, support for Windows 7 ended on January 14, 2020. Even though Office 2010 i
 This article provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps.
   
 > [!NOTE]
-> - If you're a home user who wants to upgrade from Office 2010 to the latest version of Office, see [How do I upgrade Office?](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350)
-> - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Upgrade your Office 365 for business users to the latest Office client](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb). 
+> - If you're a home user who wants to upgrade from Office 2010 to the latest version of Office, see [How do I upgrade Office?](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)
+> - If you're an admin at a small business or organization who wants to help your users upgrade to the latest version of Office, see [Upgrade your Microsoft 365 for business users to the latest Office client](https://docs.microsoft.com/microsoft-365/admin/setup/upgrade-users-to-latest-office-client). 
   
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://fasttrack.microsoft.com/office) for cloud migrations and [Software Assurance Planning Services](https://www.microsoft.com/Licensing/licensing-programs/software-assurance-planning-services-overview.aspx) for on-premises upgrades. 
   
@@ -65,7 +65,7 @@ Unlike Office 2010, Microsoft 365 Apps uses a user-based licensing model that al
 
 To learn about some of the changes since Office 2010, review the following articles: [Changes in Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc178954%28v=office.15%29) and [Changes in Office 2016 for Windows](../office2016/changes-in-office-2016-for-windows-desktop.md).
   
-For information about the new features available in Microsoft 365 Apps, see [What's new in Office 365](https://support.office.com/article/95c8d81d-08ba-42c1-914f-bca4603e1426). For Office 2019, see [What's New in Office 2019](https://support.office.com/article/5077cbbe-0d94-44cc-b30e-654e37629b0c).
+For information about the new features available in Microsoft 365 Apps, see [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426). For Office 2019, see [What's New in Office 2019](https://support.microsoft.com/office/5077cbbe-0d94-44cc-b30e-654e37629b0c).
   
 ## Review the system requirements for Microsoft 365 Apps
 
@@ -75,7 +75,7 @@ In addition, you should review the system requirements for your Office server wo
   
 ## Plan for Office 365
 
-Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Office 365 Enterprise for your organization](https://support.office.com/article/ee73dafb-be54-492e-bcfd-0fbfb5f65e94).
+Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Microsoft 365 Enterprise for your organization](https://docs.microsoft.com/office365/enterprise/setup-overview-for-enterprises).
   
 ## Assess application compatibility
 
