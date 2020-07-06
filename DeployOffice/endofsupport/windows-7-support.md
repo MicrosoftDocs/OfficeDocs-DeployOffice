@@ -17,7 +17,7 @@ description: "Provides Office admins with information about the implications of 
 > [!IMPORTANT]
 > - Support for Windows 7 ended on January 14, 2020. [Learn more](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)
 > - Microsoft 365 Apps is no longer supported on Windows 7.
-> - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.office.com/article/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
+> - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.microsoft.com/office/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
 
 
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
@@ -86,7 +86,7 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
 - This information also applies to the following products:
    - The subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
-- Windows Server 2008 R2 also went out of support on January 14, 2020. Running Microsoft 365 Apps on Windows Server 2008 R2 is no longer supported, even if you have [ESU for Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/extended-security-updates). Similar to Windows 7, Version 2002 is the last version of Microsoft 365 Apps available for devices running Windows Server 2008 R2.  
+- For information about Windows Server 2008 R2, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md).
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 10, including [FastTrack](https://docs.microsoft.com/fasttrack/win-10-fasttrack-benefit-for-windows-10), [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure), and the [Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
