@@ -28,4 +28,4 @@
 ### [Office system requirements](https://products.office.com/office-resources)
 ### [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)
 ### [Tech Community: Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS)
-### [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
+### [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/)
