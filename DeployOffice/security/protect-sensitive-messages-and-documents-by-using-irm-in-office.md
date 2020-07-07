@@ -80,6 +80,9 @@ AD RMS and Azure RMS manage licensing and other server functions that work with 
 ### Setting up the Rights Management on the client
 
 RMS client software is included in Windows Vista, Windows 7, Windows 8.1, and Windows 10. In order to enable the additional IRM functionality in Office by using the RMS sharing application, users can install it themselves or administrators can automatically deploy it for users.
+
+> [!NOTE]
+> Windows Vista and Windows 7 are no longer supported.
   
 ### Defining and deploying rights policy templates for Office 2016
 
