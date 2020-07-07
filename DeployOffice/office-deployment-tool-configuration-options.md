@@ -575,7 +575,7 @@ Allowed values:
 
 Optional. The default value is **True** if not specified.
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Endpoint Configuration Managers, the icons will not be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Endpoint Configuration Manager, the icons will not be pinned even if this property is set to **True**.
 
 Allowed values:
 
@@ -584,6 +584,8 @@ Allowed values:
 - Property Name="PinIconsToTaskbar"
           Value="TRUE"
 
+> [!NOTE]
+> Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
 
 ## Remove element
 

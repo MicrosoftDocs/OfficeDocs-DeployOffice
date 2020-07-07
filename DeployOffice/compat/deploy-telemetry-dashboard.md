@@ -38,7 +38,7 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 |**Operating system**|**How to start Office Telemetry Dashboard**|
 |:-----|:-----|
 |Windows 10, Windows Server 2008 R2, Windows Server 2008, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
-| Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
+| Windows 8.1 <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
 For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
@@ -119,7 +119,7 @@ We recommend the following operating systems for computers that run the processo
 
 - Windows Server 2008
 
-**For test or small production environments:** You can use computers that run Windows 10, Windows 8.1, Windows 8, and Windows 7 with Service Pack 1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
+**For test or small production environments:** You can use computers that run Windows 10, Windows 8.1, and Windows 7 with Service Pack 1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
 Ensure that you have the following available before you run the wizard to set up the processor.
 
@@ -230,8 +230,6 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 - Window 10
 
 - Windows 8.1
-
-- Windows 8
 
 - Windows 7 with Service Pack 1
 
@@ -379,9 +377,9 @@ If you want to trigger the data collection manually and see data uploaded immedi
 
 - AgentRandomRelay: 0
 
-**For computers that run Windows 8 and later**
+**For computers that run Windows 8.1 and later**
 
-Because user logon is faster in Windows 8 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
+Because user logon is faster in Windows 8.1 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
 
 - AgentInitWait: 60
 
