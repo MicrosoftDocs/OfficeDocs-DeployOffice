@@ -43,6 +43,9 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 
 For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
+> [!NOTE]
+> - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
 <a name="SQL"> </a>
 
@@ -61,6 +64,9 @@ SQL Server must be deployed before you can configure Office Telemetry Dashboard.
 - SQL Server 2008 or SQL Server 2008 Express Edition
 
 - SQL Server 2005 or SQL Server 2005 Express Edition
+
+> [!NOTE]
+> To check which versions of SQL Server are currently supported, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
 
 The **Getting started** worksheet in Office Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
@@ -115,11 +121,7 @@ We recommend the following operating systems for computers that run the processo
 
 - Windows Server 2012
 
-- Windows Server 2008 R2
-
-- Windows Server 2008
-
-**For test or small production environments:** You can use computers that run Windows 10, Windows 8.1, and Windows 7 with Service Pack 1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
+**For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
 Ensure that you have the following available before you run the wizard to set up the processor.
 
@@ -244,6 +246,11 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 - Windows Server 2008
 
 The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on the [Microsoft Product Lifecycle Search website](https://go.microsoft.com/fwlink/p/?LinkId=286402) before you install the agent. 
+
+> [!NOTE]
+> - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
+
 
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
 

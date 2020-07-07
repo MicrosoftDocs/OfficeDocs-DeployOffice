@@ -85,7 +85,7 @@ For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dash
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
-> - As of January 14, 2020, Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
    
 ### To create a custom report
 
