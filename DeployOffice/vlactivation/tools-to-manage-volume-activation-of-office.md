@@ -78,9 +78,9 @@ The following table describes the ospp.vbs options for configuring the KMS clien
 | _/setprt:value_ <br/> |Sets a KMS port with a user-provided port number. The default port number is 1688. Value parameter is required.  <br/><br/> This sets **HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServicePort (REG_SZ)**.  <br/> |
 | _/remhst_ <br/> |Removes KMS host name and sets port to default. The default port is 1688.  <br/> |
 | _/cachst:value_ <br/> |Allows or denies KMS host caching. Value parameter is required (TRUE or FALSE).  <br/> |
-| _/actype:value_ <br/> |(Windows 8 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory-based), 2 (for KMS), 0 (for both).  <br/> |
-| _/skms-domain:value_ <br/> |(Windows 8 and later versions only) Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the  _/sethst_ option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.  <br/> |
-| _/ckms-domain_ <br/> |(Windows 8 and later versions only) Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the  _/sethst_ option. Otherwise, auto-discovery of the KMS host is used.  <br/> |
+| _/actype:value_ <br/> |(Windows 8.1 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory-based), 2 (for KMS), 0 (for both).  <br/> |
+| _/skms-domain:value_ <br/> |(Windows 8.1 and later versions only) Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the  _/sethst_ option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.  <br/> |
+| _/ckms-domain_ <br/> |(Windows 8.1 and later versions only) Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the  _/sethst_ option. Otherwise, auto-discovery of the KMS host is used.  <br/> |
    
 ### Scenarios that use ospp.vbs
 

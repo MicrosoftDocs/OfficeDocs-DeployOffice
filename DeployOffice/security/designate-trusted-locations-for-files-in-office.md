@@ -154,7 +154,7 @@ You can use environment variables by using Group Policy and the OCT to specify t
     
     To open Registry Editor, click **Start**, click **Run**, type **regedit**, and then click **OK**.
     
-    Or, if you are using Windows 8 or Windows 8.1, swipe from the right to reveal the charms, choose the Search charm, and type **regedit**.
+    Or, if you are using Windows 8.1, swipe from the right to reveal the charms, choose the Search charm, and type **regedit**.
     
     Trusted locations that are configured by using the OCT are stored in the following location:
     
