@@ -93,6 +93,7 @@ The following table provides a list of connected experiences that download onlin
 | *Researcher*\*    | [Research your paper easily within Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Tell Me    | [Do things quickly with Tell Me](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Templates  | [Download free, pre-built templates](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
+|*Travel time estimates in Up Next*\*|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) card at the top of your inbox.|
 | *Weather Bar*\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
