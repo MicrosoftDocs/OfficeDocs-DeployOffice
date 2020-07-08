@@ -40,7 +40,7 @@ The experiences that Bing powers in Outlook for iOS and Android are the followin
 
 - **Location suggestions:**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
 - **Interesting Calendars:**   You can [subscribe](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) to calendars about your favorite sports teams or TV shows.
-
+- **Travel time in Up Next:** Your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
 
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
 
@@ -78,6 +78,10 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 > [!NOTE]
 > Research is different than Researcher. In newer versions of Office, another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed above under [Experiences that rely on Bing](#experiences-that-rely-on-bing).
+
+### Travel time in Up Next in Outlook for iOS
+
+On Outlook for iOS, your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
 
 ### Weather Bar in Outlook
 
