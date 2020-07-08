@@ -42,7 +42,7 @@ The following table provides a list of connected experiences that analyze your c
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate with your voice in Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|Editor|[Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+|Editor<sup>1</sup> |[Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ideas     | [Ideas in Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -61,6 +61,8 @@ The following table provides a list of connected experiences that analyze your c
 | Tap for Word (Add from files)   | [Find and use the content you need, when you need, without leaving Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+
+<sup>1</sup> Basic functionality of Editor remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of Editor is sent to Microsoft.
 
 > [!NOTE]
 > \*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
