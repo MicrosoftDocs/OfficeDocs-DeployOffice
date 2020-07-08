@@ -19,15 +19,15 @@ description: "Provides information for IT Pros about shared computer activation 
 > [!TIP]
 > The information in this article is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
-Shared computer activation lets you to deploy Microsoft 365 Apps to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios:
+Shared computer activation lets you deploy Microsoft 365 Apps to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios:
 
-- Three workers at a factory share the same physical computer, each worker using Office on that computer during their eight-hour shift.
+- Three workers at a factory share the same physical computer, with each worker using Office on that computer during their eight-hour shift.
 - Fifteen nurses at a hospital use Office on ten different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
-- Multiple users are accessing Office which is hosted through [Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md).
+- Multiple users access an instance of Office that is hosted through [Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md).
 
-So shared computer activation is required for scenarios where multiple users share the same computer and the users are logging in with their own account. Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit. If your users have dedicated computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
+Shared computer activation is required for scenarios where multiple users share the same computer and the users are logging in with their own account. Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit. If your users have dedicated computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
   
 <a name="Enable"> </a>
 
