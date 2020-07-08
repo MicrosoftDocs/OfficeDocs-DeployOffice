@@ -93,7 +93,7 @@ Your users won’t be able to choose whether to turn these connected experiences
 
 ### Policy setting for connected experiences that analyze your content
 
-These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Editor in Word. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
 You can use the *Allow the use of connected experiences in Office that analyze content* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
 

@@ -36,7 +36,7 @@ Here are the procedures for uninstalling the old processors, installing the new 
 
 1. On each computer where a processor is installed, uninstall the processor from the Windows Control Panel.
     
-   - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+   - On Windows 8.1, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
     
    - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
     
