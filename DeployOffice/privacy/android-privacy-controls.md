@@ -28,6 +28,7 @@ For more information about diagnostic data and connected experiences, see [Overv
 These policy settings apply to the following applications:
 - Version 16.0.12228.20260 and later of Word for Android, Excel for Android, and PowerPoint for Android.
 - Version 16.0.12228.20004 and later of OneNote for Android.
+- Version 5.47 and later of OneDrive for Android.
 
 > [!NOTE]
 >- These policy settings also apply to Version 16.0.12130.20272 and later of the public preview of the [Office Mobile app](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172) for Android.

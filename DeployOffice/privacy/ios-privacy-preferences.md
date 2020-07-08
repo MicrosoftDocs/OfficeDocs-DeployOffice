@@ -28,7 +28,9 @@ For more information about diagnostic data and connected experiences, see [Overv
 
 These preference settings apply to the following applications:
 - Version 2.30 and later of Word for iOS, Excel for iOS, and PowerPoint for iOS.
+- Version 4.30.0 and later of Outlook for iOS
 - Version 16.30 and later of OneNote for iOS.
+- Version 11.19.11 and later of OneDrive for iOS.
 - Version 1.17 and later of Visio Viewer for iOS.
 
 > [!NOTE]
