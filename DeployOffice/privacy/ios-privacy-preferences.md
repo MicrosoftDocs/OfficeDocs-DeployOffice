@@ -32,6 +32,7 @@ These preference settings apply to the following applications:
 - Version 16.30 and later of OneNote for iOS.
 - Version 11.19.11 and later of OneDrive for iOS.
 - Version 1.17 and later of Visio Viewer for iOS.
+- Version 2.34 and later of the Office app for iOS.
 
 > [!NOTE]
 > For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
