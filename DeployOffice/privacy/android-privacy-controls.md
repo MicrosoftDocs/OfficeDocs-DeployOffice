@@ -30,11 +30,7 @@ These policy settings apply to the following applications:
 - Version 4.1.71 and later of Outlook for Android.
 - Version 16.0.12228.20004 and later of OneNote for Android.
 - Version 5.47 and later of OneDrive for Android.
-
-> [!NOTE]
->- These policy settings also apply to Version 16.0.12130.20272 and later of the public preview of the [Office Mobile app](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172) for Android.
->- Use of the public preview of the Office Mobile app for Android will collect crash logs which may in some circumstances contain content.
->- If you're concerned about the collection of data from the public preview of the Office Mobile app for Android, you should inform your users not to log into the application with their work or school accounts.
+- Version 16.0.12430.20254 and later of the Office app for Android.
 
 ## Policy settings available for Office on Android devices
 
