@@ -60,7 +60,7 @@ If the Microsoft 365 Apps are already installed and you want to enable shared co
 
   > [!NOTE]
   > Microsoft 365 Apps for business doesn't doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
-  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](https://docs.microsoft.com//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow SCA to work.
+  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](https://docs.microsoft.com//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
