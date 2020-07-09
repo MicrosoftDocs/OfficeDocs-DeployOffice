@@ -40,7 +40,7 @@ To get security updates for Windows and updates to Microsoft 365 Apps, we strong
 > - If you’re using Microsoft Endpoint Configuration Manager (current branch), you can use the [Computers with a specific operating system](https://docs.microsoft.com/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.
 > - You can update from Windows 8 to Windows 8.1 for free. Windows 8.1 is supported until January 10, 2023. To get Windows 8.1, go to the [Windows 8.1 download page](https://www.microsoft.com/en-us/software-download/windows8ISO).
 
-For more information upgrading from Windows 8 to Windows 10, see the following resources:
+For more information about upgrading from Windows 8 to Windows 10, see the following resources:
 
 - [Windows 10 deployment resources and documentation](https://docs.microsoft.com/windows/deployment/)
 - [Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
