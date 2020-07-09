@@ -95,7 +95,7 @@ If all those criteria are met, then the extension is installed on the user’s d
 For what happens next, see [What your users will see with Microsoft Search in Bing](#what-your-users-will-see-with-microsoft-search-in-bing).
 
 > [!TIP]
-> If you’re expecting the extension to be installed, but it isn’t getting installed, check to make sure that you haven’t done anything to prevent the background service from being installed with Microsoft 365 Apps for enterprise. Also, using a policy setting to enforce a different default search engine or blocking extensions on Google Chrome will prevent the extension from being installed.
+> If you’re expecting the extension to be installed, but it isn’t getting installed, check to make sure that you haven’t done anything to prevent the background service from being installed with Microsoft 365 Apps for enterprise. Also, using a policy setting to enforce a different default search engine or to control extensions on Google Chrome will prevent the extension from being installed. For example, if you're using the [ExtensionInstallForceList](#extensioninstallforcelist-policy-for-google-chrome) policy.
 
 ## Which versions of Microsoft 365 Apps for enterprise include the background service for Microsoft Search in Bing?
 
@@ -236,6 +236,14 @@ If you want to remove the background service from multiple devices in your organ
 ### Manually download and install the background service
 
 You can manually [download](https://aka.ms/AA6im0l) the background service for Microsoft Search in Bing and then deploy it to devices in your organization. For example, on devices running a version of Microsoft 365 Apps for enterprise earlier than Version 2005 or on devices with Microsoft 365 Apps for business. Even if manually deployed, the background service will use the same [criteria](#criteria-that-need-to-be-met-to-install-the-extension) to determine whether to install the extension on the device.
+
+### ExtensionInstallForceList policy for Google Chrome
+
+If you use the [Configure the list of force-installed apps and extensions](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionInstallForcelist) *(Extension​Install​Forcelist)* policy to restrict which Chrome extensions are installed on devices in your organization, then you need to include the following value when you configure the policy:
+
+`obdappnhkfoejojnmcohppfnoeagadna;https://clients2.google.com/service/update2/crx`
+
+If you don't include this value, the extension for Microsoft Search in Bing will be removed from devices.
 
 ### Support for Firefox web browser
 
