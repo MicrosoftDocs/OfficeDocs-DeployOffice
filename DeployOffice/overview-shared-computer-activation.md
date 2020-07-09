@@ -81,7 +81,7 @@ Here's what happens after Microsoft 365 Apps is installed on a computer that has
     
      ![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
-    If your environment is configured to synchronize Office 365 (AAD) and loal active directory accounts (AD), then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
+    If your environment is configured to synchronize Office 365 (Azure Active Directory) and local Active Directory (AD) accounts, then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
     
 4. If the user is licensed for Microsoft 365 Apps, a licensing token is stored on the computer in the user's profile folder, and Microsoft 365 Apps is activated. The user can now use Microsoft 365 Apps.
     
