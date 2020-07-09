@@ -35,7 +35,7 @@ The following are the five new policy settings:
 - Allow the use of additional optional connected experiences in Office
 - Allow the use of connected experiences in Office
 
-These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](../overview-office-client-policy-service). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
+These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](../overview-office-client-policy-service.md). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > - For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
