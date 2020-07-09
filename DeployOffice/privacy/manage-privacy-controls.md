@@ -43,7 +43,7 @@ These policy settings can be implemented by using either Group Policy or the [Of
 > - For information about similar settings for Office on Android devices, see [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md).
 
 
-If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
+If you’re using the Group Policy Management tool, all these policy settings are located under **User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
 These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business (previously named Office 365 Business).
 
@@ -93,19 +93,19 @@ Your users won’t be able to choose whether to turn these connected experiences
 
 ### Policy setting for connected experiences that analyze your content
 
-These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator. For a list of these connected experiences, see [**Connected experiences in Office**](connected-experiences.md).
 
-You can use the *Allow the use of connected experiences in Office that analyze content* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
+You can use the **Allow the use of connected experiences in Office that analyze content** policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
 
-Note that if you disable the *Allow the use of connected experiences in Office* policy setting, connected experiences that analyze content won’t be available to your users.
+Note that if you disable the **Allow the use of connected experiences in Office** policy setting, connected experiences that analyze content won’t be available to your users.
 
 ### Policy setting for connected experiences that download online content
 
-These are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+These are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [**Connected experiences in Office**](connected-experiences.md).
 
-You can use the *Allow the use of connected experiences in Office that download online content* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
+You can use the **Allow the use of connected experiences in Office that download online content** policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
 
-Note that if you disable the *Allow the use of connected experiences in Office* policy setting, connected experiences that download online content won’t be available to your users.
+Note that if you disable the **Allow the use of connected experiences in Office** policy setting, connected experiences that download online content won’t be available to your users.
 
 ### Policy setting for optional connected experiences
 
@@ -147,9 +147,9 @@ But even if you disable this policy setting, limited Office functionality will r
 
 There are two existing policy settings that are no longer applicable to Microsoft 365 Apps for enterprise, starting with Version 1904. Those policy settings are the following:
 
-- **Send personal information**, which can be found under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
+- **Send personal information**, which can be found under **User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
-- **Online Content Options**, which can be found under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Tools | Options | General | Service Options...\\Online Content.
+- **Online Content Options**, which can be found under User **Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Tools | Options | General | Service Options...\\Online Content.
 
 Starting with Version 1904, configuring these two existing policy settings will have no effect on Microsoft 365 Apps for enterprise. They are no longer applicable because their functionality is replaced by these new policy settings:
 
@@ -166,13 +166,13 @@ The policy settings still appear in the Group Policy Management tool because the
 
 As you probably already know, there are some existing policy settings that allow you to control connected experiences. Here are a few examples of existing policy settings:
 
-- *PowerPoint Designer Options*, under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Tools | Options | General | Service Options...\\PowerPoint Designer
+- *PowerPoint Designer Options*, under **User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Tools | Options | General | Service Options...\\PowerPoint Designer
 
-- *Turn off QuickStarter*, under User Configuration\\Policies\\Administrative Templates\\Microsoft PowerPoint 2016\\PowerPoint Options\\General
+- *Turn off QuickStarter*, under **User Configuration\\Policies\\Administrative Templates\\Microsoft PowerPoint 2016\\PowerPoint Options\\General
 
-- *Allow LinkedIn Resume Assistant feature*, under User Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\General
+- *Allow LinkedIn Resume Assistant feature*, under User **Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\General
 
- You can still use these existing policy settings if you want to turn off individual connected experiences. But keep in mind that if you use one of the new policy settings, that new policy setting might turn off a connected experience that you turned on by using a different policy setting. For example, if you enable the *Allow LinkedIn Resume Assistant feature* policy setting, but disable the *Allow the use of connected experiences in Office* policy setting, the LinkedIn Resume Assistant won’t be available to your users.
+ You can still use these existing policy settings if you want to turn off individual connected experiences. But keep in mind that if you use one of the new policy settings, that new policy setting might turn off a connected experience that you turned on by using a different policy setting. For example, if you enable the **Allow LinkedIn Resume Assistant feature** policy setting, but disable the **Allow the use of connected experiences in Office** policy setting, the LinkedIn Resume Assistant won’t be available to your users.
 
 In general, if one policy setting is configured to turn on a specific connected experience while at the same time another policy setting is configured to turn off that type of connected experience, then that specific connected experience is turned off for your users.
 
