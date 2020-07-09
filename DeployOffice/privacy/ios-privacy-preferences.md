@@ -28,7 +28,9 @@ For more information about diagnostic data and connected experiences, see [Overv
 
 These preference settings apply to the following applications:
 - Version 2.30 and later of Word for iOS, Excel for iOS, and PowerPoint for iOS.
+- Version 4.30.0 and later of Outlook for iOS
 - Version 16.30 and later of OneNote for iOS.
+- Version 11.19.11 and later of OneDrive for iOS.
 - Version 1.17 and later of Visio Viewer for iOS.
 
 > [!NOTE]
@@ -55,6 +57,8 @@ Once sent to the device, the configuration dictionary will reside under the `com
 > - Allow the use of connected experiences in Office that analyze content
 > - Allow the use of connected experiences in Office that download online content
 > - Allow the use of additional optional connected experiences in Office
+>
+> Privacy settings for Outlook for iOS and OneDrive for iOS can only be configured by using the Office cloud policy service.
 >
 > For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../overview-office-cloud-policy-service.md).
 
