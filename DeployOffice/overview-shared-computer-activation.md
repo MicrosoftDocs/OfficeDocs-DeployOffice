@@ -37,7 +37,7 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 
 - Any plan that include Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
 - Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
-- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business (previously named Office 365 Business).
+- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business.
   
 > [!NOTE]
 > - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, but, those business plans don't include support for shared computer activation.
@@ -60,7 +60,7 @@ If the Microsoft 365 Apps are already installed and you want to enable shared co
 
   > [!NOTE]
   > Microsoft 365 Apps for business doesn't doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
-  > If a user already activated the Microsoft 365 Apps before Share Computer Activation was enabled, you have to [reset the activation](https://docs.microsoft.com//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow SCA to work.
+  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](https://docs.microsoft.com//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow SCA to work.
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
