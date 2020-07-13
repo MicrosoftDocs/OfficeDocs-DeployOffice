@@ -5711,10 +5711,10 @@ The following fields are collected:
 - **Data_StopwatchDuration:long** - Total time for Activity
 
 - **Data_TypeOfSaveDialog:long** - Predefined set of values of Dialog (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG etc.)
- 
-- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs timeouted when waiting for a background save or merge.
 
 - **Data_WaitForSaveOrMergeSuccess:bool** - SaveAs succeeded waiting for a background save or merge.
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs timeouted when waiting for a background save or merge.
 
 - **DstDoc** - New location of document 
 
@@ -10754,9 +10754,9 @@ The following fields are collected:
 
 - **ExitEventCode–** Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit.
 
-- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
-
 - **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
+
+- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
 
 - **RehearsalInitTime** - Time taken by rehearsal to initialize.
 
