@@ -1742,6 +1742,11 @@ The following fields are collected:
 - **action** - Tells us the action that was attempted when the action is logged. Some examples include attaching a file and presenting more options.
 
 - **icon_name** - Tells us the name of the icon that is being shown when the action is logged.
+ 
+- **origin** – Tells us the origin of the action. Possible values are quick_reply and full_screen.
+
+- **toolbar_type** – Tell us the toolbar type which is presenting on compose page. Possible values are compose_actions and formatting.
+
 
 #### conversation_view_action
 
@@ -1756,6 +1761,8 @@ The following fields are collected:
 - **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
 
 - **suggested_reply_click_pos** - Tells us which position the suggested reply (if available) is rendered so we can detect issues with a specific suggestion
+
+- **suggested_reply_type** - indicates type of suggested reply for this action. Possible values are text, send_avail, and create_meeting.
 
 - **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
 
@@ -2503,6 +2510,8 @@ The following fields are collected:
 
 - **Data_BootDuration** - The duration of application boot in process of the file open.
 
+- **Data_ClosePreviouslyOpenedMarkers** – In some file open scenarios, closing of a previously opened document takes place before the opening of the current document. This time duration between some of the operations that take place in this case is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_Doc_AccessMode** - An enumeration indicating the access mode of the file, e.g. read only, read write.
 
 - **Data_Doc_AsyncOpenKind** - An enumeration indicating the type of asynchronous flow used to open the file.
@@ -2569,6 +2578,8 @@ The following fields are collected:
 
 - **Data_ErrorId_Tag** - A tag in the code to help find the point of failure
 
+- **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. UI element, triggered by another app, etc.
@@ -2576,6 +2587,8 @@ The following fields are collected:
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
 - **Data_OfficeMobileInitReason** - An enumeration indicating the entry point of file open. 
+
+- **Data_RenderToInSpaceDuration** – The duration between render end and the silhouette/canvas animation.
 
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
 
@@ -5698,6 +5711,10 @@ The following fields are collected:
 - **Data_StopwatchDuration:long** - Total time for Activity
 
 - **Data_TypeOfSaveDialog:long** - Predefined set of values of Dialog (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG etc.)
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs timeouted when waiting for a background save or merge.
+
+- **Data_WaitForSaveOrMergeSuccess:bool** - SaveAs succeeded waiting for a background save or merge.
 
 - **DstDoc** - New location of document 
 
@@ -7133,6 +7150,8 @@ The following fields are collected:
 - **recent_message_id** - the ID of the most recent message in the conversation
 
 - **suggested_reply_state** - the state of suggested replies for this conversation (unavailable, available, shown, used, or discarded)
+
+- **suggested_reply_types** - indicates type and count of suggested reply shown/used for this conversation. It’s a dictionary. For example {text: 2, send_avail: 1}.
   
 - **total_count** - total frames displayed by the component
  
@@ -7197,6 +7216,8 @@ The following fields are collected:
 - **source_inbox** - indicates source inbox type for reference message, 
 
 - **suggested_reply_state** - capturing suggested reply state i.e., unavailable, available, shown, used, discarded for this sent mail
+
+- **suggested_reply_types** - indicates type and count of suggested reply shown/used for this sent email. It’s a dictionary. For example {text: 2,  send_avail: 1}.
 
 - **suggestions_requested** - indicates how many smart compose suggestions requested
 
@@ -7418,6 +7439,8 @@ This event lets us detect when critical app errors occurred that would cause you
 The following fields are collected:
 
 - **black_list_reason** - Tells us if there is a reason why we should disregard this data. Some examples include launching due to a remote notification and launching due to a background fetch.
+
+- **step_premain** – Tells us the amount of time it has taken for Outlook to go from the user tapping the icon to step0_main the “main” step defined in this document.
 
 - **step0_main** - Tells us the amount of time it has taken for Outlook to get to the "main" step, which is a step defined by Apple.
 
@@ -9483,6 +9506,8 @@ The following fields are collected:
 
 - **isAppKill** - Helps us understand if that app was killed or close on the device
 
+- **is_crashloop** – Helps us understand if the crash could likely be a crash loop.
+
 - **reportKey** - A unique ID for the application installation om the device for issue investigation
 
 - **signal** - A signal that caused the crash to give us more details to investigate this crash
@@ -9645,6 +9670,8 @@ The following fields are collected:
 - **IsDebug** - indicates if session is a debug session
 
 - **IsPreload** – indicates if the add-in is being preloaded in background for improving activation perf.
+
+- **IsWdagContainer** – indicates if the add-in activation is being taken place in a Windows Defender Application Guard container.
 
 - **NumberOfAddinsActivated** - Counter of add-ins activated
 
@@ -10723,9 +10750,19 @@ This event is triggered on Stop of rehearsal session. In combination with Office
 
 The following fields are collected:
 
-- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal
+- **CritiqueSummary** - Summary of what all critiques user saw with their counts.
 
-- **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal
+- **ExitEventCode–** Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit.
+
+- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
+
+- **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
+
+- **RehearsalInitTime** - Time taken by rehearsal to initialize.
+
+- **Sessionid** - This is speech frontdoor session id. We can use this to debug service logs.
+
+- **SlideshowViewLoadTime** – Time taken by slideshow to load.
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -10744,6 +10781,10 @@ The following fields are collected:
 Event triggered when summary page is loaded. This event helps us in capturing the performance of summary page. It tells how much time it takes for rehearsal summary service page to load on client. It is required to keep the feature performant. 
 
 The following fields are collected:
+
+- **PageURL:string**- This is URL of page which we can use to identify if session was successful or some error happened.
+
+- **Sessionid:string** - This is speech frontdoor session id. We can use this to debug service logs.
 
 - **SummaryPageLoadTime:int** – Time (in ms) taken to load summary page. This includes payload creation time 
 
