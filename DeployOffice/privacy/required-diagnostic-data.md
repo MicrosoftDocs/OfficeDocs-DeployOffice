@@ -4240,6 +4240,8 @@ We log when the user is in an app that loads a Persona Card in anticipation of t
 
 The following fields are collected: 
 
+- **Data.accountType** - Whether the user belongs to an organization or a consumer
+
 - **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
@@ -4256,47 +4258,42 @@ The following fields are collected:
 
 - **Data.clientType** - The type of device the app is run on
 
+- **Data.contextType** - What context (app) the card was launched from
+
+- **Data.ecsConfigIds** - Version identifiers for the features enabled in the card
+
+- **Data.ecsTagId** - Tag ID for features
+
 - **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
 
 - **Data.eventpriority** - An enumeration value for the priority of sending the event.
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
+- **Data.flights** - The features enabled in the card
+
+- **Data.fromCache** - Whether data was fetched from memory
+
+- **Data.hasFinePointer** - Whether the device has mouse-pointer capability
+
+- **Data.hasHoverEvents** - Whether the device has mouse-hover capability
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
+- **Data.offlineResolved** - Whether data was fetched while offline
+
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
 
-  - **accountType** - Whether the user belongs to an organization or a consumer
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **cardCorrelationId** - Duplicate of Data.appContextId above
-
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
   - **ClientTimeStamp** - Time on the application when the event was logged
-
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
 
-  - **contextType** - What context (app) the card was launched from
-
-  - **ecsConfigIds** - Version identifiers for the features enabled in the card
-
-  - **ecsTagId** - Tag ID for features
-
   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-  - **flights** - The features enabled in the card
-
-  - **fromCache** - Whether data was fetched from memory
-
-  - **hasFinePointer** - Whether the device has mouse-pointer capability
-
-  - **hasHoverEvents** - Whether the device has mouse-hover capability
-
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-  - **offlineResolved** - Whether data was fetched while offline
-
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4358,19 +4355,22 @@ The following fields are collected:
 
 - **Data.exportType** - Category of the event for GDPR export request
 
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
 - **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
 
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
    - **cardCorrelationId** - Duplicate of Data.appContextId above 
    - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
    - **ClientTimeStamp** - time that the event occurred in Unix epoch time
    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
-   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-   - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-   - **personaCorrelationId** - A globally unique identifier for unique personas in a session
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4431,18 +4431,22 @@ The following fields are collected:
 
 - **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
 
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session.
+
 - **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
 
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
   - **ClientTimeStamp** - Time on the application when the event was logged
   - **cardCorrelationId** - Duplicate of Data.appContextId above
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
-  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4486,9 +4490,13 @@ The following fields are collected:
 
 - **Data.clientCorrelationId** - The globally unique identifier for the app's session
 
+- **Data.clientScenario** - To identify the feature in the app from where the persona card was opened
+
 - **Data.clientType** - The type of device the app is run on
 
 - **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session.
 
 - **Data.exportName** - Human readable name of the user action event, e.g. "OpenedPersonaCard"
 
@@ -4496,31 +4504,25 @@ The following fields are collected:
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
+- **Data.hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
+
 - **Data.hostAppRing** - The ring by which the app was distributed
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
 
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **cardCorrelationId** - Duplicate of Data.appContextId above 
-
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
-  - **clientScenario** - To identify the feature in the app from where the persona card was opened
-
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-  - **hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
-
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
-
-  - **section** – The active section of the expanded card
-
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.section** – The active section of the expanded card
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -4565,6 +4567,8 @@ The following fields are collected:
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
+- **Data.bandwidthEstimateMbps** - Effective bandwidth estimate in Mbps
+
 - **Data.cardCorrelationId** - The globally unique identifier for a persona card
 
 - **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
@@ -4579,11 +4583,26 @@ The following fields are collected:
 
 - **Data.exportType** - Category of the event for GDPR export request
 
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
 - **Data.hostAppRing** - The ring by which the app was distributed
 
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
 - **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+    - **cardCorrelationId** - Duplicate of Data.appContextId above 
+    - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
+    - **networkEffectiveType** - The effective type of network connection, e.g. "slow-2g Online" to identify whether the user is connected to the internet at the time of showing the persona card
+    - **networkType** - The type of network connectivity of the device in use
+    - **roundTripEstimateMs** - Estimated effective round-trip of the current connection in milliseconds
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4605,34 +4624,11 @@ The following fields are collected:
 
 - **Data.viewType** -Defines the type of the Profile card displayed
 
+- **Data.wasOpenedAsCompactCard** - Used to identify if the card was opened as a compact view initially
+
 - **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
 
 - **NetworkCountry** - The Country Code of the Sender, based on the un-scrubbed Client IP Address.
-
-- **Data.properties** - Additional metadata collected for each event as follows.
-
-    - **bandwidthEstimateMbps** - Effective bandwidth estimate in Mbps
-
-    - **cardCorrelationId** - Duplicate of Data.appContextId above 
-
-    - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
-    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
-
-    - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-    - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-    - **networkEffectiveType** - The effective type of network connection, e.g. "slow-2g Online" to identify whether the user is connected to the internet at the time of showing the persona card
-
-    - **networkType** - The type of network connectivity of the device in use
-
-    - **personaCorrelationId** - A globally unique identifier for unique personas in a session
-
-    - **roundTripEstimateMs** - Estimated effective round-trip of the current connection in milliseconds
-
-    - **wasOpenedAsCompactCard** - Used to identify if the card was opened as a compact view initially
-
 
 #### Office.Manageability.Client Fetch.PolicyPreChecks
 
