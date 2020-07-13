@@ -10756,9 +10756,9 @@ The following fields are collected:
 
 - **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
 
-- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
-
 - **RehearsalInitTime** - Time taken by rehearsal to initialize.
+
+- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
 
 - **Sessionid** - This is speech frontdoor session id. We can use this to debug service logs.
 
