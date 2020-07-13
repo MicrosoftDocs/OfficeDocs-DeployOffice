@@ -4234,6 +4234,102 @@ The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
+#### Office.LivePersonaCard.ConfigurationSetAction
+
+We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card.  The data is used to determine whether the card loaded correctly. 
+
+The following fields are collected: 
+
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
+
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+- **Data.AppInfo_Id** - Name of the host application
+
+- **Data.AppInfo_Version** - Version of the host application
+
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+- **Data.clientType** - The type of device the app is run on
+
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** - An enumeration value for the priority of sending the event.
+
+- **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.properties** - Additional metadata collected for each event as follows:
+
+  - **accountType** - Whether the user belongs to an organization or a consumer
+
+  - **cardCorrelationId** - Duplicate of Data.appContextId above
+
+  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+
+  - **ClientTimeStamp** - Time on the application when the event was logged
+
+  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
+
+  - **contextType** - What context (app) the card was launched from
+
+  - **ecsConfigIds** - Version identifiers for the features enabled in the card
+
+  - **ecsTagId** - Tag ID for features
+
+  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
+  - **flights** - The features enabled in the card
+
+  - **fromCache** - Whether data was fetched from memory
+
+  - **hasFinePointer** - Whether the device has mouse-pointer capability
+
+  - **hasHoverEvents** - Whether the device has mouse-hover capability
+
+  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
+  - **offlineResolved** - Whether data was fetched while offline
+
+  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
+
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+- **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+
+- **Data.version** - The version of the service (Profile Card)
+
+- **Data.workloadCulture** - Culture set in the host application
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device
+
+- **DeviceInfo_Make** - The brand of the operating system
+
+- **DeviceInfo_Model** - The model of the device
+
+- **DeviceInfo_OsName** - The name of the device OS
+
+- **DeviceInfo_OsVersion** - The version of the operating system
+
+- **DeviceInfo_SDKUid** - Uniquely identifies the device from the telemetry SDK's perspective
+
 #### Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
 Logged when the user closes an expanded Persona Card. It is used to observe critical anomalies in failure rates of closing the Live Persona Card.
@@ -4369,102 +4465,6 @@ The following fields are collected:
 - **Data_hostAppRing** - The rollout ring of the persona card
 
 - **Event_ReceivedTime** - The time the event was logged in the service
-
-#### Office.LivePersonaCard.UserActions.ConfigurationSetAction
-
-We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card.  The data is used to determine whether the card loaded correctly. 
-
-The following fields are collected: 
-
-- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
-
-- **Data.AppInfo.Name** - Name of the service in use (Profile card)
-
-- **Data.AppInfo_Id** - Name of the host application
-
-- **Data.AppInfo_Version** - Version of the host application
-
-- **Data.cardCorrelationId** - The globally unique identifier for a persona card
-
-- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
-
-- **Data.clientCorrelationId** - The globally unique identifier for the app's session
-
-- **Data.clientType** - The type of device the app is run on
-
-- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
-
-- **Data.eventpriority** - An enumeration value for the priority of sending the event.
-
-- **Data.feature** - Used to group various events of the same feature (Profile card)
-
-- **Data.OTelJS.Version** - Version of OTel logger
-
-- **Data.properties** - Additional metadata collected for each event as follows:
-
-  - **accountType** - Whether the user belongs to an organization or a consumer
-
-  - **cardCorrelationId** - Duplicate of Data.appContextId above
-
-  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
-  - **ClientTimeStamp** - Time on the application when the event was logged
-
-  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
-
-  - **contextType** - What context (app) the card was launched from
-
-  - **ecsConfigIds** - Version identifiers for the features enabled in the card
-
-  - **ecsTagId** - Tag ID for features
-
-  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-  - **flights** - The features enabled in the card
-
-  - **fromCache** - Whether data was fetched from memory
-
-  - **hasFinePointer** - Whether the device has mouse-pointer capability
-
-  - **hasHoverEvents** - Whether the device has mouse-hover capability
-
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-  - **offlineResolved** - Whether data was fetched while offline
-
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
-
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
-
-- **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
-
-- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
-
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
-
-- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
-
-- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
-
-- **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
-
-- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
-
-- **Data.version** - The version of the service (Profile Card)
-
-- **Data.workloadCulture** - Culture set in the host application
-
-- **DeviceInfo_Id** - The globally unique device identifier for a device
-
-- **DeviceInfo_Make** - The brand of the operating system
-
-- **DeviceInfo_Model** - The model of the device
-
-- **DeviceInfo_OsName** - The name of the device OS
-
-- **DeviceInfo_OsVersion** - The version of the operating system
-
-- **DeviceInfo_SDKUid** - Uniquely identifies the device from the telemetry SDK's perspective
 
 #### Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
