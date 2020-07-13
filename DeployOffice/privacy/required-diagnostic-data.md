@@ -1286,6 +1286,36 @@ The following fields are collected:
 
 - **WarmBoot** - Identifies whether the container was already created or not.
 
+#### Office_AppGuard_LaunchFile
+
+This event denotes the result of a Application Guard launch file execution. We will be able to define the percentage of sessions we successfully launched a Word, Excel, or PowerPoint file and the error codes for the failed attempts.
+
+The following fields are collected:
+
+- **AppId** – Identifies which App is being launched.
+
+- **FileId** - A unique identifier (GUID) returned from the Windows API after launching a file.
+
+- **DetachedDuration** – Identifies the total time the merged activity took. 
+
+- **ErrorCode1** – Type of container setup error code.  
+
+- **ErrorCode2** – Error code from executing the creation. 
+
+- **ErrorCode3** - Additional error code. 
+
+- **Id** – A unique identifier (GUID) for the launching and creating a file. This ID is used to correlate events from Office and Windows.
+
+- **ResetError** - Error code from trying to reset the container after a failed attempt.
+
+- **ResetErrorCode1** – Type of container setup error code after reset command. 
+
+- **ResetErrorCode2** – Error code from executing the creation after reset command.
+
+- **ResetErrorCode3** - Additional error code after reset command.  
+
+- **ResetErrorType** - Type of error: Creation, PrepFile or Launch.
+
 
 
 #### Office.Security.ActivationFilter.CLSIDActivated
@@ -7069,7 +7099,9 @@ The following fields are collected:
 
 This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
 
-No additional fields are collected.
+The following fields are collected:
+
+- None
 
 #### OneNote.MessageBar.MessageBarClicked *(previous name)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
@@ -7983,6 +8015,16 @@ The following fields are collected:
 - **TotalTime** - total time spent
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
+
+#### Office.OfficeMobile.FirstRunSetup
+
+The first run of the app after installation will trigger this heartbeat event. It will help identify installs and auto upgrades from older versions of the app and enable us to identify errors in auto-upgrades, including library loads and expansion/language package download failures.
+
+The following fields are collected:
+
+- **IsFlightAssigned** - Boolean value determining if the user was part of any preassigned flight group which can trigger exposure to certain experiences.
+
+- **IsFRELoadSuccessful** - integer mentioning the result state
 
 #### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
@@ -9957,6 +9999,15 @@ The following fields are collected:
 
 - **Event Name** - Event Name is the Event Category and Event Label.
 
+#### OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+
+The critical signal is sent when we are resetting the crash counter on app suspend before safe boot dialog is shown. This marker is required to track and diagnose the health of the app. A safe boot dialog is shown when the app crashes multiple times continuously. It gives the user an option to reset the app. This marker will help  figure out if Safe boot dialog was not shown to a user despite hitting trigger criteria. 
+
+The following fields are collected:
+
+- None
+
+
 #### telemetry_error
 
 This event lets us diagnose and fix issues that are preventing necessary diagnostic data from being generated or sent. These events let us understand if we are missing critical data needed to identify security issues or major issues with how your app is working.
@@ -10793,6 +10844,44 @@ The following fields are collected:
 
  - None
 
+#### Office.PowerPoint.Rehearsal.SessionMetrics 
+
+Event triggered when the speech session is stopped for Presenter Coach. This event helps us in capturing some metrics for a rehearsal session in Presenter Coach. It will help in maintaining a high quality of service for this feature.
+
+The following fields are collected:
+
+- **AuthDurationInMs** – This is the time taken in milliseconds for authentication (refresh the auth token).
+
+- **AuthError** – This describes the authentication error that occurred (if at all).
+
+- **AvgFragmentLatencyInMs** – This is the average round-trip time for network speech messages.
+
+- **ConnectDurationInMs** – This is the time taken in milliseconds for the session to complete the connection. 
+
+- **FirstAudioDelayInMs** – This is the time taken in milliseconds for the first audio data to be received.
+
+- **InitMediaCaptureLayerDurationInMs** – This is the time taken in milliseconds to initialise the media/audio capture layer.
+
+- **LocallyDroppedMessageCount** – This is the total number of messages dropped locally.
+
+- **OpenFrontDoorConnectionDurationInMs** – This is the time in milliseconds taken to open the connection to the FrontDoor service.
+
+- **SendAdaptationTextDurationInMs** – This is the time taken in milliseconds to send the adaptation text to the service.
+
+- **ServiceDroppedMessageCount** – This is the total number of messages dropped by the service.
+
+- **SessionId** – This is the speech frontdoor session id. We can use this to debug service logs.
+
+- **SpeechClientResultEventsWithTimestamps** – This is an array of error codes received along with the timestamps which can help in debugging.
+
+- **SpeechHResultsWithTimestamps** – This is an array of error codes received along with the timestamps which can help in debugging.
+
+- **StartSpeechCaptureDurationInMs** – This is the time taken in milliseconds to start speech capture.
+
+- **TotalMessageCount** – This is the total number of audio messages sent to the service.
+
+- **WebSocketConnectDurationInMs** – This is the time taken in milliseconds to complete the web socket connection.
+
 
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
@@ -11535,6 +11624,18 @@ The following fields are collected:
 - **Data_ExceptionType** - An optional text field representing the name of the exception thrown from source code.
 
 - **Data_MethodName** - Text representing the method name in source code where there is an error.
+
+#### Office_Android_EarlyTelemetry_RegistryErrors
+
+This event captures any errors faced during Android registry access. This event data helps us in understanding the user errors and making the registry feature more robust.
+
+The following fields are collected:
+
+- **App** – The application process sending the event.
+
+- **AppVersionLong** – The application version.
+
+- **Data_StackTrace** – The stacktrace of the error.
 
 #### Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
