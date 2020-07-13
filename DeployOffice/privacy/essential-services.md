@@ -2846,11 +2846,13 @@ The following fields are collected:
 
 ### Office.Licensing.FullValidation 
 
-This is collected on every session that reports the licensing state of the machine and reports the errors that the user is seeing due to which they are not able to use the application. This event indicates if the user's machine is healthy or not. We have anomaly detection set up for this event to indicate if a regression is causing bad user behavior. This is also critical when diagnosing user issues and for monitoring system health
+This is collected on every session that reports the licensing state of the machine and reports the errors that the user is seeing due to which they are not able to use the application. This event indicates if the user's machine is healthy or not. We have anomaly detection set up for this event to indicate if a regression or activation mechanism is causing bad user behavior. This is also critical when diagnosing user issues and for monitoring system health.
 
 The following fields are collected:
 
   - **Acid** – A GUID identifier representing the Office product that the user is licensed for 
+  
+  - **ActivationAttributes** - Type of activation mechanism that the user is using.
 
   - **IsSessionLicensing** – Whether we are currently running under shared computer activation mode or not 
 
@@ -10453,6 +10455,27 @@ The following fields are collected:
 
  - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
 
+### Office.System.GracefulExit.GracefulAppExitDesktop
+
+The event is triggered by a graceful application termination for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. We use Graceful Exit to measure the health of Office client products. It is intended to be a business-critical signal used by Office engineers to infer product stability.
+
+The following fields are collected:
+
+- **AppBuild** - Build version identifier for the affected process.
+- **AppMajor** - Major version identifier for the affected process.
+- **AppMinor** - Minor version identifier for the affected process.
+- **AppRevision** - Build version identifier for the affected process.
+- **BootCompleted** – Did Office process complete boot.
+- **DetectionTime** - The time when the unexpected exit was detected.
+- **EcsETag** - An experiment identifier for the process.
+- **HasEdit** – Was document editing occurring during the Office process.
+- **HasOpen** – Was document opened during the Office process.
+- **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+- **OfficeUILang** – Language of the Office process.
+- **PreviousBuild** - Previously installed build version.
+- **SafeMode** – Was Office process in safe mode.
+- **SessionId** - A unique identifier of the process.
+- **SessionInitTime** - The time when the affected process started.
 
 ### Office.System.IdentityChanged
 
