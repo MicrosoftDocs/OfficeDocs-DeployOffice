@@ -2856,8 +2856,6 @@ The following fields are collected:
 
 - **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
-
 - **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
 
 - **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
@@ -2969,8 +2967,6 @@ The following fields are collected:
 - **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
 
 - **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
-
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
 
 - **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
 
@@ -3085,8 +3081,6 @@ The following fields are collected:
 
 - **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
-
 - **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
 
 - **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
@@ -3198,8 +3192,6 @@ The following fields are collected:
 - **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
 
 - **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
-
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
 
 - **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
 
@@ -3313,8 +3305,6 @@ The following fields are collected:
 
 - **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
 
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
-
 - **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
 
 - **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
@@ -3427,8 +3417,6 @@ The following fields are collected:
 - **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
 
 - **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
-
-- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
 
 - **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
 
