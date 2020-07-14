@@ -1294,8 +1294,6 @@ The following fields are collected:
 
 - **AppId** – Identifies which App is being launched.
 
-- **FileId** - A unique identifier (GUID) returned from the Windows API after launching a file.
-
 - **DetachedDuration** – Identifies the total time the merged activity took. 
 
 - **ErrorCode1** – Type of container setup error code.  
@@ -1303,6 +1301,8 @@ The following fields are collected:
 - **ErrorCode2** – Error code from executing the creation. 
 
 - **ErrorCode3** - Additional error code. 
+
+- **FileId** - A unique identifier (GUID) returned from the Windows API after launching a file.
 
 - **Id** – A unique identifier (GUID) for the launching and creating a file. This ID is used to correlate events from Office and Windows.
 
