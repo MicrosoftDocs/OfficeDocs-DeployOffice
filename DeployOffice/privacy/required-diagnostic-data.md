@@ -2762,6 +2762,693 @@ The following fields are collected:
 
   - **Data.CollectionTime** - Timestamp of when a crash event was logged
 
+#### Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the path provided in the most recently used list and is used to understand and prioritize user-experience errors based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the URL provided in the most recently used list and is used to understand and prioritize user-experiences based on file open operation information. 
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+
+#### Office_AppDocs_AppDocs_OperationOpenFromPath
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from a path and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from another application using the protocol handler interface and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office_AppDocs_AppDocs_OperationOpenFromShell
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the shell and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+
+#### Office_AppDocs_AppDocs_OperationOpenFromUrl
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from a URL and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled** - 
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+
 #### Office_Apple_ActivatePerpetual
 
 This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of the perpetual activation flow as well as investigating causes of failures by reviewing the FailedAt values.
