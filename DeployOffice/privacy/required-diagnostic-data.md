@@ -11474,8 +11474,6 @@ The following fields are collected:
 
 - **CritiqueSummary** - Summary of what all critiques user saw with their counts.
 
-- **ExitEventCode** - Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit.
-
 - **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
 
 - **RehearsalInitTime** - Time taken by rehearsal to initialize.
