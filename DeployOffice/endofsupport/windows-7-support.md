@@ -35,7 +35,7 @@ Even though Windows 7 is no longer supported, we've decided to continue to provi
 
 ## How to manage Microsoft 365 Apps on Windows 7 after January 2020
 
-Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows 7. Version 2002 is available in Current Channel and in Semi-Annual Enterprise Channel (Preview), and is expected to be available in Semi-Annual Enterprise Channel in July 2020.
+Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows 7. Version 2002 is available in Current Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
 
 This means that if you want to continue to deploy and update Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows 7, you'll receive an error message.
 

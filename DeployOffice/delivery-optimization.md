@@ -58,8 +58,7 @@ To take advantage of Delivery Optimization when installing or when doing user-in
 
 > [!NOTE]
 > - Version 1912 is available in Current Channel as of January 8, 2020.
-> - Version 2002 is available in Semi-Annual Enterprise Channel (Preview) as of March 10, 2020. Version 2002 or later won't require the registry key.
-> - Version 2002 is scheduled to be available in Semi-Annual Enterprise Channel in July 2020.
+> - Version 2002 is available in Semi-Annual Enterprise Channel (Preview) as of March 10, 2020 and in Semi-Annual Enterprise Channel as of July 14, 2020. Version 2002 or later won't require the registry key.
 > - Version 2003 is available in Monthly Enterprise Channel as of May 12, 2020.
 
 
