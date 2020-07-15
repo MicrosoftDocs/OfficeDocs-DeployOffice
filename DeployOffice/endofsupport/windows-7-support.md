@@ -20,7 +20,7 @@ description: "Provides Office admins with information about the implications of 
 > - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.microsoft.com/office/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
 
 
-Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
+Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
@@ -77,7 +77,7 @@ If you're getting updates directly from the Office CDN on the internet, after th
 
 ## What about other versions of Office on Windows 7?
 
-Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](https://support.microsoft.com/help/14085). To see specific end of support dates for non-subscription versions of Office, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
+Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
 
 Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, leaving it vulnerable to security threats, unless you have ESU. We recommend that you move to a [supported operating system](https://products.office.com/office-resources), such as [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 

@@ -14,7 +14,7 @@ description: "Provides Office admins with information about the implications of 
 
 # Windows Server end of support and Microsoft 365 Apps
 
-Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
+Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to Windows Server 2019 or [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
 

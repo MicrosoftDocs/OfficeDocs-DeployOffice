@@ -19,7 +19,7 @@ description: "Provides Office admins with information about the implications of 
 > - Microsoft 365 Apps are not supported on Windows 8.
 > - If you're a home user running Office on Windows 8, see [Windows 8 end of support and Office](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading this article.
 
-Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
+Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 8, we strongly recommend your organization moves those devices to a supported operating system, preferably Windows 10.
 
