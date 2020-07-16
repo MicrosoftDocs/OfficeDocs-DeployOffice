@@ -2762,7 +2762,7 @@ The following fields are collected:
 
   - **Data.CollectionTime** - Timestamp of when a crash event was logged
 
-#### Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+#### Office_Docs_AppDocs_OperationOpenFromMruByPath
 
 This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the path provided in the most recently used list and is used to understand and prioritize user-experience errors based on file open operation information.
 
@@ -2874,7 +2874,7 @@ The following fields are collected:
 
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
-#### Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+#### Office_Docs_AppDocs_OperationOpenFromMruByUrl
 
 This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the URL provided in the most recently used list and is used to understand and prioritize user-experiences based on file open operation information. 
 
@@ -2987,7 +2987,7 @@ The following fields are collected:
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
 
-#### Office_AppDocs_AppDocs_OperationOpenFromPath
+#### Office_Docs_AppDocs_OperationOpenFromPath
 
 This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from a path and is used to understand and prioritize user-experiences based on file open operation information.
 
@@ -3099,7 +3099,7 @@ The following fields are collected:
 
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
-#### Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+#### Office_Docs_AppDocs_OperationOpenFromProtocolHandler
 
 This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from another application using the protocol handler interface and is used to understand and prioritize user-experiences based on file open operation information.
 
@@ -3211,7 +3211,7 @@ The following fields are collected:
 
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
-#### Office_AppDocs_AppDocs_OperationOpenFromShell
+#### Office_Docs_AppDocs_OperationOpenFromShell
 
 This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the shell and is used to understand and prioritize user-experiences based on file open operation information.
 
@@ -3324,7 +3324,7 @@ The following fields are collected:
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
 
-#### Office_AppDocs_AppDocs_OperationOpenFromUrl
+#### Office_Docs_AppDocs_OperationOpenFromUrl
 
 This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from a URL and is used to understand and prioritize user-experiences based on file open operation information.
 
