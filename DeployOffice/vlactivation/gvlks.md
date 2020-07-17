@@ -21,7 +21,7 @@ description: Lists the Generic Volume License Keys (GVLKs) that Office admins us
 By default, volume licensed versions of Office 2019 and Office 2016 are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
   
 > [!IMPORTANT]
-> These license keys can't be used to activate your personal copy of Office. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759). 
+> These license keys can't be used to activate your personal copy of Office. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759). 
   
 ## GVLKs for Office 2019
 |**Product**|**GVLK**|
@@ -41,7 +41,7 @@ By default, volume licensed versions of Office 2019 and Office 2016 are installe
 |Word 2019  <br/> |  PBX3G-NWMT6-Q7XBW-PYJGG-WXD33 <br/> |
 
 > [!NOTE]
-> There isn't a 2019 version of OneNote, but OneNote 2016 is available for Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+> There isn't a 2019 version of OneNote, but OneNote is available for Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
 
 ## GVLKs for Office 2016
 |**Product**|**GVLK**|
