@@ -40,7 +40,7 @@ OneNote for Windows 10 might be a better alternative for your organization in th
 - Most of your users are new to OneNote. OneNote for Windows 10 has a user interface that is designed to be easier to navigate for new users.
 - Your organization supports OneNote on multiple platforms, such as Mac, web, and iPad. OneNote across these platforms, including OneNote for Windows 10, have a consistent user interface.
 
-For more information, see [What's the difference between the OneNote versions](https://support.microsoft.com/office/a624e692-b78b-4c09-b07f-46181958118f)
+For more information, see [What's the difference between the OneNote versions?](https://support.microsoft.com/office/a624e692-b78b-4c09-b07f-46181958118f)
 
 ## OneNote deployment guidance
 
