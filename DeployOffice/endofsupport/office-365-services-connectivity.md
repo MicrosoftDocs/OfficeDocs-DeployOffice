@@ -21,7 +21,7 @@ Starting on October 13, 2020, only these versions of Office will be supported fo
 - Office 2019, such as Office Professional Plus 2019
 - Office 2016, such as Office Standard 2016
 
-Examples Office 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
+Examples of Office 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
 
 > [!IMPORTANT]
 > We won’t take any active measures to block other versions of the Office client, such as Office 2013, from connecting to Office 365 services, but these older clients may encounter performance or reliability issues over time.
@@ -52,7 +52,7 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Office 
 
 ### Basic authentication with Exchange Online
 
-There are some changes planned related to the use Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – April 2020 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-april-2020-update/ba-p/1275508).
+There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – April 2020 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-april-2020-update/ba-p/1275508).
 
 
 ## Additional information about connectivity to Office 365 services  
