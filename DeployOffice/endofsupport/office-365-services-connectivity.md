@@ -46,12 +46,20 @@ We provide various services to help you upgrade to subscription versions of the 
 
 ## Upcoming changes related to connectivity to Office 365 services
 
+### Retirement of TLS 1.0 and 1.1
+
+After October 15, 2020, you must be using at least TLS 1.2 to connect to Office 365 services. For more information, see [TLS 1.0 and 1.1 deprecation for Office 365](https://docs.microsoft.com/microsoft-365/compliance/tls-1.0-and-1.1-deprecation-for-office-365) and [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](https://docs.microsoft.com/microsoft-365/compliance/prepare-tls-1.2-in-office-365).
+
+### Basic authentication with Exchange Online
+
 There are some changes planned related to the use Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – April 2020 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-april-2020-update/ba-p/1275508).
+
 
 ## Additional information about connectivity to Office 365 services  
 
 - Versions of Office 2019 and Office 2016 are supported until October 2023.
 - Connecting to Office 365 services using Office 2016 for Mac isn’t supported after October 13, 2020. That’s because Office 2016 for Mac reaches end of support on that date.
 - This information about connecting to Office 365 services also applies to Project and Visio.
+- This information about connecting to Office 365 services does *not* apply to InfoPath 2013 or SharePoint Designer 2013.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
