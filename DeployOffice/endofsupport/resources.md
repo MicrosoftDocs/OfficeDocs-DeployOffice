@@ -32,7 +32,7 @@ The following table shows upcoming end of support events that affect Office that
 
 ## Recent end of support events
 
-The following table show recent end of support events that affect Office along with links to additional information.
+The following table shows recent end of support events that affect Office along with links to additional information.
 
 |End of support event   |End of support date |More information|
 |---------|---------|---------|
