@@ -694,7 +694,7 @@ Optional.
 
 Specifies whether any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer prior to the installation of the specified product, such as Microsoft 365 Apps.
 
-For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
+We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps. For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).  
 
 ### IgnoreProduct attribute (part of RemoveMSI element)
 
@@ -705,9 +705,6 @@ If an ID is specified, that Windows Installer (MSI) product won't be uninstalled
 Example values:
 - IgnoreProduct ID="VisPro"
 - IgnoreProduct ID="PrjPro"
-
-> [!IMPORTANT]
-> - Office Professional Plus 2016 (MSI) cannot coexist with Microsoft 365 Apps.  If Office Professional Plus 2016 isn't removed, the installation of Microsoft 365 Apps will fail. 
 
 ## AppSettings element
 
