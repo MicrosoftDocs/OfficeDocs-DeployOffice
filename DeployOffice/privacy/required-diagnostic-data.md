@@ -5357,7 +5357,7 @@ The following fields are collected:
 
 #### Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
 
-This event is collected for Union iOS, it records when a file open operation takes
+This event is collected for the Office app for iOS, it records when a file open operation takes
 place. We collect this data to ensure good performance for all file opens on the app. 
 
 The following fields are collected:
