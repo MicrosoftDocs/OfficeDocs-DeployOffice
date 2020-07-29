@@ -51,7 +51,7 @@ To configure device-based licensing, you first need to add your Windows 10 devic
 
 |**Group type**  |**Create using these tools**  |
 |---------|---------|
-|Security, with assigned or static membership| Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
+|Security, with assigned or static membership. The security group should not be mail-enabled | Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
 |Security, with dynamic device membership |Azure AD portal |
 |Distribution list| On-premises Active Directory and sync to Azure AD with Azure AD Connect <br/><br/>On-premises Exchange Server and sync to Azure AD with Azure AD Connect<br/><br/> Microsoft 365 admin center      |
 |Office 365 | Not supported   (type of group in Azure AD |
