@@ -24,7 +24,7 @@ There are several ways that you can use the RemoveMSI element when installing Mi
 - Identify any existing language resources, like language packs, and install the same languages.
 - Keep some Office products and uninstall all other Office products on the computer.
 
-RemoveMSI can be used to uninstall 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
+RemoveMSI can be used to uninstall 2007, 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
 
 ## Requirements for using RemoveMSI
 
