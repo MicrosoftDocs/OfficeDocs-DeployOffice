@@ -1286,6 +1286,36 @@ The following fields are collected:
 
 - **WarmBoot** - Identifies whether the container was already created or not.
 
+#### Office_AppGuard_LaunchFile
+
+This event denotes the result of a Application Guard launch file execution. We will be able to define the percentage of sessions we successfully launched a Word, Excel, or PowerPoint file and the error codes for the failed attempts.
+
+The following fields are collected:
+
+- **AppId** – Identifies which App is being launched.
+
+- **DetachedDuration** – Identifies the total time the merged activity took. 
+
+- **ErrorCode1** – Type of container setup error code.  
+
+- **ErrorCode2** – Error code from executing the creation. 
+
+- **ErrorCode3** - Additional error code. 
+
+- **FileId** - A unique identifier (GUID) returned from the Windows API after launching a file.
+
+- **Id** – A unique identifier (GUID) for the launching and creating a file. This ID is used to correlate events from Office and Windows.
+
+- **ResetError** - Error code from trying to reset the container after a failed attempt.
+
+- **ResetErrorCode1** – Type of container setup error code after reset command. 
+
+- **ResetErrorCode2** – Error code from executing the creation after reset command.
+
+- **ResetErrorCode3** - Additional error code after reset command.  
+
+- **ResetErrorType** - Type of error: Creation, PrepFile or Launch.
+
 
 
 #### Office.Security.ActivationFilter.CLSIDActivated
@@ -1742,6 +1772,11 @@ The following fields are collected:
 - **action** - Tells us the action that was attempted when the action is logged. Some examples include attaching a file and presenting more options.
 
 - **icon_name** - Tells us the name of the icon that is being shown when the action is logged.
+ 
+- **origin** – Tells us the origin of the action. Possible values are quick_reply and full_screen.
+
+- **toolbar_type** – Tell us the toolbar type which is presenting on compose page. Possible values are compose_actions and formatting.
+
 
 #### conversation_view_action
 
@@ -1756,6 +1791,8 @@ The following fields are collected:
 - **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
 
 - **suggested_reply_click_pos** - Tells us which position the suggested reply (if available) is rendered so we can detect issues with a specific suggestion
+
+- **suggested_reply_type** - indicates type of suggested reply for this action. Possible values are text, send_avail, and create_meeting.
 
 - **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
 
@@ -2503,6 +2540,8 @@ The following fields are collected:
 
 - **Data_BootDuration** - The duration of application boot in process of the file open.
 
+- **Data_ClosePreviouslyOpenedMarkers** – In some file open scenarios, closing of a previously opened document takes place before the opening of the current document. This time duration between some of the operations that take place in this case is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_Doc_AccessMode** - An enumeration indicating the access mode of the file, e.g. read only, read write.
 
 - **Data_Doc_AsyncOpenKind** - An enumeration indicating the type of asynchronous flow used to open the file.
@@ -2569,6 +2608,8 @@ The following fields are collected:
 
 - **Data_ErrorId_Tag** - A tag in the code to help find the point of failure
 
+- **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. UI element, triggered by another app, etc.
@@ -2576,6 +2617,8 @@ The following fields are collected:
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
 - **Data_OfficeMobileInitReason** - An enumeration indicating the entry point of file open. 
+
+- **Data_RenderToInSpaceDuration** – The duration between render end and the silhouette/canvas animation.
 
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
 
@@ -2718,6 +2761,681 @@ Only collected when Office Telemetry Dashboard has been enabled by end user (mos
 The following fields are collected:
 
   - **Data.CollectionTime** - Timestamp of when a crash event was logged
+
+#### Office_Docs_AppDocs_OperationOpenFromMruByPath
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the path provided in the most recently used list and is used to understand and prioritize user-experience errors based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office_Docs_AppDocs_OperationOpenFromMruByUrl
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the URL provided in the most recently used list and is used to understand and prioritize user-experiences based on file open operation information. 
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+
+#### Office_Docs_AppDocs_OperationOpenFromPath
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from a path and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office_Docs_AppDocs_OperationOpenFromProtocolHandler
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from another application using the protocol handler interface and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office_Docs_AppDocs_OperationOpenFromShell
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from the shell and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+
+#### Office_Docs_AppDocs_OperationOpenFromUrl
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file open operation takes place from a URL and is used to understand and prioritize user-experiences based on file open operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – First 4 characters of the extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
 
 #### Office_Apple_ActivatePerpetual
 
@@ -4221,6 +4939,99 @@ The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
+#### Office.LivePersonaCard.ConfigurationSetAction
+
+We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card.  The data is used to determine whether the card loaded correctly. 
+
+The following fields are collected: 
+
+- **Data.accountType** - Whether the user belongs to an organization or a consumer
+
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
+
+- **Data.AppInfo.Name** - Name of the service in use (Profile card)
+
+- **Data.AppInfo_Id** - Name of the host application
+
+- **Data.AppInfo_Version** - Version of the host application
+
+- **Data.cardCorrelationId** - The globally unique identifier for a persona card
+
+- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
+
+- **Data.clientCorrelationId** - The globally unique identifier for the app's session
+
+- **Data.clientType** - The type of device the app is run on
+
+- **Data.contextType** - What context (app) the card was launched from
+
+- **Data.ecsConfigIds** - Version identifiers for the features enabled in the card
+
+- **Data.ecsTagId** - Tag ID for features
+
+- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.eventpriority** - An enumeration value for the priority of sending the event.
+
+- **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.flights** - The features enabled in the card
+
+- **Data.fromCache** - Whether data was fetched from memory
+
+- **Data.hasFinePointer** - Whether the device has mouse-pointer capability
+
+- **Data.hasHoverEvents** - Whether the device has mouse-hover capability
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
+- **Data.offlineResolved** - Whether data was fetched while offline
+
+- **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **cardCorrelationId** - Duplicate of Data.appContextId above
+  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+  - **ClientTimeStamp** - Time on the application when the event was logged
+  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
+
+  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
+- **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
+
+- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
+
+- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
+
+- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
+
+- **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
+
+- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
+
+- **Data.version** - The version of the service (Profile Card)
+
+- **Data.workloadCulture** - Culture set in the host application
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device
+
+- **DeviceInfo_Make** - The brand of the operating system
+
+- **DeviceInfo_Model** - The model of the device
+
+- **DeviceInfo_OsName** - The name of the device OS
+
+- **DeviceInfo_OsVersion** - The version of the operating system
+
+- **DeviceInfo_SDKUid** - Uniquely identifies the device from the telemetry SDK's perspective
+
 #### Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
 Logged when the user closes an expanded Persona Card. It is used to observe critical anomalies in failure rates of closing the Live Persona Card.
@@ -4249,19 +5060,22 @@ The following fields are collected:
 
 - **Data.exportType** - Category of the event for GDPR export request
 
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
 - **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
 
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
    - **cardCorrelationId** - Duplicate of Data.appContextId above 
    - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
    - **ClientTimeStamp** - time that the event occurred in Unix epoch time
    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
-   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-   - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-   - **personaCorrelationId** - A globally unique identifier for unique personas in a session
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4322,18 +5136,22 @@ The following fields are collected:
 
 - **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
 
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session.
+
 - **Data.feature** - Used to group various events of the same feature (Profile card)
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
 
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
   - **ClientTimeStamp** - Time on the application when the event was logged
   - **cardCorrelationId** - Duplicate of Data.appContextId above
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
-  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4357,102 +5175,6 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service
 
-#### Office.LivePersonaCard.UserActions.ConfigurationSetAction
-
-We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card.  The data is used to determine whether the card loaded correctly. 
-
-The following fields are collected: 
-
-- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
-
-- **Data.AppInfo.Name** - Name of the service in use (Profile card)
-
-- **Data.AppInfo_Id** - Name of the host application
-
-- **Data.AppInfo_Version** - Version of the host application
-
-- **Data.cardCorrelationId** - The globally unique identifier for a persona card
-
-- **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
-
-- **Data.clientCorrelationId** - The globally unique identifier for the app's session
-
-- **Data.clientType** - The type of device the app is run on
-
-- **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
-
-- **Data.eventpriority** - An enumeration value for the priority of sending the event.
-
-- **Data.feature** - Used to group various events of the same feature (Profile card)
-
-- **Data.OTelJS.Version** - Version of OTel logger
-
-- **Data.properties** - Additional metadata collected for each event as follows:
-
-  - **accountType** - Whether the user belongs to an organization or a consumer
-
-  - **cardCorrelationId** - Duplicate of Data.appContextId above
-
-  - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
-  - **ClientTimeStamp** - Time on the application when the event was logged
-
-  - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
-
-  - **contextType** - What context (app) the card was launched from
-
-  - **ecsConfigIds** - Version identifiers for the features enabled in the card
-
-  - **ecsTagId** - Tag ID for features
-
-  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-  - **flights** - The features enabled in the card
-
-  - **fromCache** - Whether data was fetched from memory
-
-  - **hasFinePointer** - Whether the device has mouse-pointer capability
-
-  - **hasHoverEvents** - Whether the device has mouse-hover capability
-
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-  - **offlineResolved** - Whether data was fetched while offline
-
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
-
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
-
-- **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
-
-- **Data.type** -Type of the logged event, e.g. Trace, Error, Event
-
-- **Data.userAadObjectId** -The globally unique user identifier for an enterprise Microsoft account (duplicate of Data.UserInfo.Id)
-
-- **Data.UserInfo.Id** - The globally unique user identifier for an enterprise Microsoft account
-
-- **Data.UserInfo.MsaId** - The globally unique user identifier for a consumer Microsoft account
-
-- **Data.UserInfo.OMSTenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
-
-- **Data.userPuid** - The globally unique user identifier for a consumer Microsoft account (duplicate of Data.UserInfo.MsaId)
-
-- **Data.version** - The version of the service (Profile Card)
-
-- **Data.workloadCulture** - Culture set in the host application
-
-- **DeviceInfo_Id** - The globally unique device identifier for a device
-
-- **DeviceInfo_Make** - The brand of the operating system
-
-- **DeviceInfo_Model** - The model of the device
-
-- **DeviceInfo_OsName** - The name of the device OS
-
-- **DeviceInfo_OsVersion** - The version of the operating system
-
-- **DeviceInfo_SDKUid** - Uniquely identifies the device from the telemetry SDK's perspective
-
 #### Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
 Logged when the user opens an expanded Persona Card. It is used to observe critical anomalies in failure rates of launching the Live Persona Card.
@@ -4473,9 +5195,13 @@ The following fields are collected:
 
 - **Data.clientCorrelationId** - The globally unique identifier for the app's session
 
+- **Data.clientScenario** - To identify the feature in the app from where the persona card was opened
+
 - **Data.clientType** - The type of device the app is run on
 
 - **Data.eventId** - Name identifier of the event, e.g. "LivePersonaCardRenderedAction"
+
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session.
 
 - **Data.exportName** - Human readable name of the user action event, e.g. "OpenedPersonaCard"
 
@@ -4483,31 +5209,25 @@ The following fields are collected:
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
+- **Data.hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
+
 - **Data.hostAppRing** - The ring by which the app was distributed
+
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
 
 - **Data.OTelJS.Version** - Version of OTel logger
 
-- **Data.properties** - Additional metadata collected for each event as follows:
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows: *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **cardCorrelationId** - Duplicate of Data.appContextId above 
-
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
-  - **clientScenario** - To identify the feature in the app from where the persona card was opened
-
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-  - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-  - **hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
-
-  - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-  - **personaCorrelationId** - A globally unique identifier for unique personas in a session
-
-  - **section** – The active section of the expanded card
-
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
+
+- **Data.section** – The active section of the expanded card
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -4552,6 +5272,8 @@ The following fields are collected:
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
+- **Data.bandwidthEstimateMbps** - Effective bandwidth estimate in Mbps
+
 - **Data.cardCorrelationId** - The globally unique identifier for a persona card
 
 - **Data.cardPersonaCorrelationId** - The globally unique identifier for a specific persona shown in a card
@@ -4566,11 +5288,26 @@ The following fields are collected:
 
 - **Data.exportType** - Category of the event for GDPR export request
 
+- **Data.externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
+
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
 - **Data.hostAppRing** - The ring by which the app was distributed
 
+- **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
+
 - **Data.OTelJS.Version** - Version of OTel logger
+
+- **Data.personaCorrelationId** - A globally unique identifier for unique personas in a session
+
+- **Data.properties** - Additional metadata collected for each event as follows. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+    - **cardCorrelationId** - Duplicate of Data.appContextId above 
+    - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
+    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
+    - **networkEffectiveType** - The effective type of network connection, e.g. "slow-2g Online" to identify whether the user is connected to the internet at the time of showing the persona card
+    - **networkType** - The type of network connectivity of the device in use
+    - **roundTripEstimateMs** - Estimated effective round-trip of the current connection in milliseconds
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -4592,34 +5329,11 @@ The following fields are collected:
 
 - **Data.viewType** -Defines the type of the Profile card displayed
 
+- **Data.wasOpenedAsCompactCard** - Used to identify if the card was opened as a compact view initially
+
 - **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
 
 - **NetworkCountry** - The Country Code of the Sender, based on the un-scrubbed Client IP Address.
-
-- **Data.properties** - Additional metadata collected for each event as follows.
-
-    - **bandwidthEstimateMbps** - Effective bandwidth estimate in Mbps
-
-    - **cardCorrelationId** - Duplicate of Data.appContextId above 
-
-    - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
-
-    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
-
-    - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
-
-    - **immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
-
-    - **networkEffectiveType** - The effective type of network connection, e.g. "slow-2g Online" to identify whether the user is connected to the internet at the time of showing the persona card
-
-    - **networkType** - The type of network connectivity of the device in use
-
-    - **personaCorrelationId** - A globally unique identifier for unique personas in a session
-
-    - **roundTripEstimateMs** - Estimated effective round-trip of the current connection in milliseconds
-
-    - **wasOpenedAsCompactCard** - Used to identify if the card was opened as a compact view initially
-
 
 #### Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -5698,6 +6412,10 @@ The following fields are collected:
 - **Data_StopwatchDuration:long** - Total time for Activity
 
 - **Data_TypeOfSaveDialog:long** - Predefined set of values of Dialog (RUN_SAVEAS_DLG,RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG etc.)
+
+- **Data_WaitForSaveOrMergeSuccess:bool** - SaveAs succeeded waiting for a background save or merge.
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs timeouted when waiting for a background save or merge.
 
 - **DstDoc** - New location of document 
 
@@ -7056,7 +7774,9 @@ The following fields are collected:
 
 This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
 
-No additional fields are collected.
+The following fields are collected:
+
+- None
 
 #### OneNote.MessageBar.MessageBarClicked *(previous name)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
@@ -7133,6 +7853,8 @@ The following fields are collected:
 - **recent_message_id** - the ID of the most recent message in the conversation
 
 - **suggested_reply_state** - the state of suggested replies for this conversation (unavailable, available, shown, used, or discarded)
+
+- **suggested_reply_types** - indicates type and count of suggested reply shown/used for this conversation. It’s a dictionary. For example {text: 2, send_avail: 1}.
   
 - **total_count** - total frames displayed by the component
  
@@ -7197,6 +7919,8 @@ The following fields are collected:
 - **source_inbox** - indicates source inbox type for reference message, 
 
 - **suggested_reply_state** - capturing suggested reply state i.e., unavailable, available, shown, used, discarded for this sent mail
+
+- **suggested_reply_types** - indicates type and count of suggested reply shown/used for this sent email. It’s a dictionary. For example {text: 2,  send_avail: 1}.
 
 - **suggestions_requested** - indicates how many smart compose suggestions requested
 
@@ -7418,6 +8142,8 @@ This event lets us detect when critical app errors occurred that would cause you
 The following fields are collected:
 
 - **black_list_reason** - Tells us if there is a reason why we should disregard this data. Some examples include launching due to a remote notification and launching due to a background fetch.
+
+- **step_premain** – Tells us the amount of time it has taken for Outlook to go from the user tapping the icon to step0_main the “main” step defined in this document.
 
 - **step0_main** - Tells us the amount of time it has taken for Outlook to get to the "main" step, which is a step defined by Apple.
 
@@ -7964,6 +8690,16 @@ The following fields are collected:
 - **TotalTime** - total time spent
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
+
+#### Office.OfficeMobile.FirstRunSetup
+
+The first run of the app after installation will trigger this heartbeat event. It will help identify installs and auto upgrades from older versions of the app and enable us to identify errors in auto-upgrades, including library loads and expansion/language package download failures.
+
+The following fields are collected:
+
+- **IsFlightAssigned** - Boolean value determining if the user was part of any preassigned flight group which can trigger exposure to certain experiences.
+
+- **IsFRELoadSuccessful** - integer mentioning the result state
 
 #### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
@@ -9483,6 +10219,8 @@ The following fields are collected:
 
 - **isAppKill** - Helps us understand if that app was killed or close on the device
 
+- **is_crashloop** – Helps us understand if the crash could likely be a crash loop.
+
 - **reportKey** - A unique ID for the application installation om the device for issue investigation
 
 - **signal** - A signal that caused the crash to give us more details to investigate this crash
@@ -9645,6 +10383,8 @@ The following fields are collected:
 - **IsDebug** - indicates if session is a debug session
 
 - **IsPreload** – indicates if the add-in is being preloaded in background for improving activation perf.
+
+- **IsWdagContainer** – indicates if the add-in activation is being taken place in a Windows Defender Application Guard container.
 
 - **NumberOfAddinsActivated** - Counter of add-ins activated
 
@@ -9933,6 +10673,15 @@ The following fields are collected:
 - **Exception** - Call stack for the Exception
 
 - **Event Name** - Event Name is the Event Category and Event Label.
+
+#### OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+
+The critical signal is sent when we are resetting the crash counter on app suspend before safe boot dialog is shown. This marker is required to track and diagnose the health of the app. A safe boot dialog is shown when the app crashes multiple times continuously. It gives the user an option to reset the app. This marker will help  figure out if Safe boot dialog was not shown to a user despite hitting trigger criteria. 
+
+The following fields are collected:
+
+- None
+
 
 #### telemetry_error
 
@@ -10723,9 +11472,17 @@ This event is triggered on Stop of rehearsal session. In combination with Office
 
 The following fields are collected:
 
-- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal
+- **CritiqueSummary** - Summary of what all critiques user saw with their counts.
 
-- **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal
+- **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
+
+- **RehearsalInitTime** - Time taken by rehearsal to initialize.
+
+- **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
+
+- **Sessionid** - This is speech frontdoor session id. We can use this to debug service logs.
+
+- **SlideshowViewLoadTime** – Time taken by slideshow to load.
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -10745,6 +11502,10 @@ Event triggered when summary page is loaded. This event helps us in capturing th
 
 The following fields are collected:
 
+- **PageURL:string**- This is URL of page which we can use to identify if session was successful or some error happened.
+
+- **Sessionid:string** - This is speech frontdoor session id. We can use this to debug service logs.
+
 - **SummaryPageLoadTime:int** – Time (in ms) taken to load summary page. This includes payload creation time 
 
 
@@ -10755,6 +11516,44 @@ Event triggered when user clicks on start session. This event helps us in captur
 The following fields are collected:
 
  - None
+
+#### Office.PowerPoint.Rehearsal.SessionMetrics 
+
+Event triggered when the speech session is stopped for Presenter Coach. This event helps us in capturing some metrics for a rehearsal session in Presenter Coach. It will help in maintaining a high quality of service for this feature.
+
+The following fields are collected:
+
+- **AuthDurationInMs** – This is the time taken in milliseconds for authentication (refresh the auth token).
+
+- **AuthError** – This describes the authentication error that occurred (if at all).
+
+- **AvgFragmentLatencyInMs** – This is the average round-trip time for network speech messages.
+
+- **ConnectDurationInMs** – This is the time taken in milliseconds for the session to complete the connection. 
+
+- **FirstAudioDelayInMs** – This is the time taken in milliseconds for the first audio data to be received.
+
+- **InitMediaCaptureLayerDurationInMs** – This is the time taken in milliseconds to initialise the media/audio capture layer.
+
+- **LocallyDroppedMessageCount** – This is the total number of messages dropped locally.
+
+- **OpenFrontDoorConnectionDurationInMs** – This is the time in milliseconds taken to open the connection to the FrontDoor service.
+
+- **SendAdaptationTextDurationInMs** – This is the time taken in milliseconds to send the adaptation text to the service.
+
+- **ServiceDroppedMessageCount** – This is the total number of messages dropped by the service.
+
+- **SessionId** – This is the speech frontdoor session id. We can use this to debug service logs.
+
+- **SpeechClientResultEventsWithTimestamps** – This is an array of error codes received along with the timestamps which can help in debugging.
+
+- **SpeechHResultsWithTimestamps** – This is an array of error codes received along with the timestamps which can help in debugging.
+
+- **StartSpeechCaptureDurationInMs** – This is the time taken in milliseconds to start speech capture.
+
+- **TotalMessageCount** – This is the total number of audio messages sent to the service.
+
+- **WebSocketConnectDurationInMs** – This is the time taken in milliseconds to complete the web socket connection.
 
 
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -11498,6 +12297,18 @@ The following fields are collected:
 - **Data_ExceptionType** - An optional text field representing the name of the exception thrown from source code.
 
 - **Data_MethodName** - Text representing the method name in source code where there is an error.
+
+#### Office_Android_EarlyTelemetry_RegistryErrors
+
+This event captures any errors faced during Android registry access. This event data helps us in understanding the user errors and making the registry feature more robust.
+
+The following fields are collected:
+
+- **App** – The application process sending the event.
+
+- **AppVersionLong** – The application version.
+
+- **Data_StackTrace** – The stacktrace of the error.
 
 #### Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 

@@ -19,19 +19,15 @@ description: "Provides information for IT Pros about shared computer activation 
 > [!TIP]
 > The information in this article is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
-Shared computer activation lets you to deploy Microsoft 365 Apps to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios for using shared computer activation:
+Shared computer activation lets you deploy Microsoft 365 Apps to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios:
 
-- Three workers at a factory share the same physical computer, each worker using Office on that computer during their eight-hour shift.
+- Three workers at a factory share the same physical computer, with each worker using Office on that computer during their eight-hour shift.
 - Fifteen nurses at a hospital use Office on ten different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
+- Multiple users access an instance of Office that is hosted through [Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md).
 
-
-The most common shared computer activation scenario is to [deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md). By using RDS, multiple users can connect to the same remote computer at the same time. The users can each run Office programs, such as Word or Excel, at the same time on the remote computer.
-  
-Shared computer activation is used for situations where multiple users share the same computer and the users are logging in with their own account. If you have users who are assigned individual computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
-
-Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
+Shared computer activation is required for scenarios where multiple users share the same computer and the users are logging in with their own account. Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit. If your users have dedicated computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
   
 <a name="Enable"> </a>
 
@@ -41,32 +37,33 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 
 - Any plan that include Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
 - Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
-- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business (previously named Office 365 Business).
+- The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business.
   
 > [!NOTE]
-> - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, But, those business plans don't include support for shared computer activation.
-> - Microsoft 365 Apps for business doesn't doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
+> - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, but, those business plans don't include support for shared computer activation.
 > - Shared computer activation isn't available for Office for Mac.
 
 Make sure you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
-  
-To enable shared computer activation when you deploy Microsoft 365 Apps, you need the current version of the Office Deployment Tool, which is available for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
-  
-The [Office Deployment Tool](overview-office-deployment-tool.md), combined with a simple text file, is used to install Microsoft 365 Apps on the shared computer, and to enable shared computer activation for that computer. Add the following lines when you [create the text file](office-deployment-tool-configuration-options.md).
-  
-```xml
-<Display Level="None" AcceptEULA="True" /> 
-<Property Name="SharedComputerLicensing" Value="1" />
-```
+
+If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
+- When you are using the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-4---create-and-deploy-the-office-application-to-the-broad-group), make sure that you enable the option **Shared Computer** in the **Product activation** section.
+- When you are crafting the configuration file manually, make sure to include the following line:
+  ```xml
+  <Property Name="SharedComputerLicensing" Value="1" />
+  ```
+
+If the Microsoft 365 Apps are already installed and you want to enable shared computer activation, there are three options to choose from. A re-installation is not required. The device must be rebooted in order to apply the change.
+
+- Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+- Use Registry Editor to add a string value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
+- Download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_OfficeSCA_Docs).
+
+  > [!NOTE]
+  > Microsoft 365 Apps for business doesn't doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
+  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](https://docs.microsoft.com//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
-  
-> [!NOTE]
-> Here are some other ways that you can enable shared computer activation:
-> - Download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_OfficeSCA_Docs).
-> - Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
-> - Use Registry Editor to add a string value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
-  
+
 <a name="Works"> </a>
 
 ## How shared computer activation works for Microsoft 365 Apps
@@ -84,7 +81,7 @@ Here's what happens after Microsoft 365 Apps is installed on a computer that has
     
      ![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
-    If your environment is configured to synchronize Office 365 (AAD) and loal active directory accounts (AD), then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
+    If your environment is configured to synchronize Office 365 (Azure Active Directory) and local Active Directory (AD) accounts, then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
     
 4. If the user is licensed for Microsoft 365 Apps, a licensing token is stored on the computer in the user's profile folder, and Microsoft 365 Apps is activated. The user can now use Microsoft 365 Apps.
     

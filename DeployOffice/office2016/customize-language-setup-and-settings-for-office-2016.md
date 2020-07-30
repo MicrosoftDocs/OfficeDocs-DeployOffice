@@ -284,9 +284,9 @@ If you are not enforcing language settings by policy, users who work in Office a
 
 1. Depending on your operating system, do one of the following:
     
-   - If you are running Windows 8, open **All Apps** (right-click the desktop), and then under **Microsoft Office 2016**, choose **Office 2016 Language Preferences**. Or, 
+   - If you are running Windows 8.1, open **All Apps** (right-click the desktop), and then under **Microsoft Office 2016**, choose **Office 2016 Language Preferences**. Or, 
     
-   - If you are running Windows 10 or Windows 7, choose **Start**, choose **All Programs**, choose **Microsoft Office**, choose **Microsoft Office 2016 Tools**, and then choose **Office 2016 Language Preferences**. 
+   - If you are running Windows 10, choose **Start**, choose **All Programs**, choose **Microsoft Office**, choose **Microsoft Office 2016 Tools**, and then choose **Office 2016 Language Preferences**. 
     
 2. Under **Choose Editing Languages**, in the language list, choose the language that you want to be available for editing, and then choose **Add**. Repeat this step for each editing language that you want to add.
     

@@ -95,7 +95,7 @@ If you want digital signatures that you create in Office 2016 to be compatible w
 
 ## Choosing digital certificate types for Office 2016
 
-Digital certificates can be either self-signed or issued by CAs in an organization, such as a Windows Server 2012 or Windows Server 2008 computer that is running Active Directory Certificate Services, or a public CA, such as VeriSign or Thawte. Self-signed certificates are typically used by people and small businesses that do not want to set up a public key infrastructure (PKI) for their organizations and do not want to purchase a commercial certificate.
+Digital certificates can be either self-signed or issued by CAs in an organization, such as a Windows Server 2012 computer that is running Active Directory Certificate Services, or a public CA, such as VeriSign or Thawte. Self-signed certificates are typically used by people and small businesses that do not want to set up a public key infrastructure (PKI) for their organizations and do not want to purchase a commercial certificate.
   
 The primary drawback of using self-signed certificates is that they are only useful if you exchange documents with those who know you personally and are confident that you are the actual originator of the document. By using self-signed certificates, there is no third party that validates the authenticity of your certificate. Each person who receives your signed document must manually decide whether to trust your certificate. 
   
