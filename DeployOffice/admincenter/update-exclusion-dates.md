@@ -25,4 +25,4 @@ Update exclusions can be created to prevent devices downloading security and fea
 
 ## Limitations
 
-Update exclusion dates start and end at 00:00 UTC on the specified dates, not local device time.
+Update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
