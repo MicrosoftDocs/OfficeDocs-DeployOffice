@@ -714,7 +714,7 @@ If you're deploying Office Professional Plus 2019, which is a volume licensed ve
 
 Optional.
 
-Specifies whether any 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer prior to the installation of the specified product, such as Microsoft 365 Apps.
+Specifies whether any 2007, 2010, 2013, or 2016 versions of Office, Visio, and Project that were installed using Windows Installer (MSI) are uninstalled from the computer prior to the installation of the specified product, such as Microsoft 365 Apps.
 
 We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps. For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).  
 
