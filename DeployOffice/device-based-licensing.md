@@ -49,9 +49,9 @@ After you have verified that your Windows 10 devices and Microsoft 365 Apps for 
 To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.
 
 
-|**Group type**  |**Create using these tools**  |
+| Group type | Create using these tools |
 |---------|---------|
-|Security, with assigned or static membership| Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
+|Security, with assigned or static membership. The security group should not be mail-enabled. | Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
 |Security, with dynamic device membership |Azure AD portal |
 |Distribution list| On-premises Active Directory and sync to Azure AD with Azure AD Connect <br/><br/>On-premises Exchange Server and sync to Azure AD with Azure AD Connect<br/><br/> Microsoft 365 admin center      |
 |Office 365 | Not supported   (type of group in Azure AD |
@@ -109,13 +109,13 @@ If the device hasn't been properly configured for device-based licensing, when a
 
 In those cases, the user will also see a banner beneath the ribbon in the document with the following message:
 
-&nbsp; &nbsp; **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
+> **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
 
 To troubleshoot this issue, make sure the device is correctly joined to Azure AD and that the device is added to the group that has been assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
 
 In other cases, the user might see this message:
 
-&nbsp; &nbsp; **CAN'T VERIFY LICENSE** We're having trouble verifying the Office license for this device.
+> **CAN'T VERIFY LICENSE** We're having trouble verifying the Office license for this device.
 
 In this case, the device is having problems contacting the Office Licensing Service on the internet. Office tries to contact the Office Licensing Service to ensure the device is properly licensed and to automatically renew a license that is about to expire. A device-based license is set to expire in about 3 to 4 months, so the device doesn't have to access to internet constantly. The **CAN'T VERIFY LICENSE** message usually appears about 10 days before the license is about to expire.
 
