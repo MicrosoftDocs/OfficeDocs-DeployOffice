@@ -33,6 +33,9 @@ The following are requirements for using the RemoveMSI element in your configura
 - You must be using at least version 16.0.10306.33602 of the Office Deployment Tool, which you can download from [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). To check the version of the Office Deployment Tool, right-click on setup.exe, choose **Properties**, and then choose **Details**.
 - You must be installing at least Version 1803 of Microsoft 365 Apps. Version 1803 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
 - You must be installing Microsoft 365 Apps on a computer running at least Windows 7 Service Pack 1 (SP1) or above.
+
+> [!NOTE]
+> Support for Windows 7 ended on January 14, 2020. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
  
 ## Uninstall all Office products
 
