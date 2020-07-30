@@ -18,13 +18,13 @@ hideEdit: true
 
 ## Overview
 
-Update exclusions can be created to prevent devices from downloading security and feature updates during specific dates. Update exclusions allow you to reduce change in your environment during busy periods, such as during tax season or at the end of the financial year.
+Update exclusions can be created to prevent devices downloading security and feature updates during specific dates. Update exclusions allow you to reduce change in your environment during busy periods, such as during tax season or at the end of the financial year.
 
-Manual actions taken through Action Center such as Target Version, as well as end-user changes are unaffected by update exclusion dates.
+Manual actions in Action Center and end-user actions are unaffected by update exclusion dates.
 
 > [!NOTE]
-> Update exclusions prevent security and feature updates from downloading. If you also want to prevent updates from being installed during an exclusion period, consider setting an earlier start date and enforcing installations with an [update deadline](update-deadline.md).
+> Update exclusions prevent devices downloading security and feature updates. If you also want to prevent devices installing updates, consider starting the exclusion sooner and enforcing installations with an [update deadline](update-deadline.md).
 
 ## Limitations
 
-Update exclusion dates begin and end at 00:00 UTC on the specified dates and are not based on local device time.
+Update exclusion dates start and end at 00:00 UTC on the specified dates, not local device time.
