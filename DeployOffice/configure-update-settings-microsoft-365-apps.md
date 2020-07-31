@@ -30,8 +30,8 @@ Here are the update settings that you can configure by using the Office Deployme
 |Specify a location to look for updates  <br/> |UpdatePath  <br/> |Update path  <br/> |
 |Specify the version of Microsoft 365 Apps to update to  <br/> |TargetVersion  <br/> |Target version  <br/> |
 |Set a deadline by when updates have to be applied  <br/> |Deadline  <br/> |Update deadline  <br/> |
-|Hide update notifications from users  <br/> |You can't configure this by using the Office Deployment Tool.  <br/> |Hide update notifications  <br/> |
-|Hide the option to enable or disable Office automatic updates  <br/> |You can't configure this by using the Office Deployment Tool.  <br/> |Hide options to enable or disable updates  <br/> |
+|Hide update notifications from users  <br/> |You can't configure this setting by using the Office Deployment Tool.  <br/> |Hide update notifications  <br/> |
+|Hide the option to enable or disable Office automatic updates  <br/> |You can't configure this setting by using the Office Deployment Tool.  <br/> |Hide options to enable or disable updates  <br/> |
    
 By default, updates for Microsoft 365 Apps are downloaded automatically from the internet and applied in the background, without any user or administrator intervention. You can use these update settings to change that behavior and make other changes about how Microsoft 365 Apps is updated.
   
@@ -40,7 +40,7 @@ In most cases, you'll use either the Office Deployment Tool or Group Policy, not
 ## Use the Office Deployment Tool to configure update settings for Microsoft 365 Apps
 <a name="ODT"> </a>
 
-Users can install Microsoft 365 Apps themselves from the Office 365 portal, but using the Office Deployment Tool to deploy Microsoft 365 Apps to your users gives you more control over the installation. This includes controlling how Microsoft 365 Apps is updated.
+Users can install Microsoft 365 Apps themselves from the Office 365 portal, but using the Office Deployment Tool to deploy Microsoft 365 Apps to your users gives you more control over the installation. For example, you can control how Microsoft 365 Apps is updated.
   
 The settings that the Office Deployment Tool uses to install and update Microsoft 365 Apps are contained in a configuration.xml file. This file is a text file that can be edited in Notepad. There is a [list of settings](office-deployment-tool-configuration-options.md) that you can specify, including settings for configuring updates.
   
@@ -55,11 +55,9 @@ The update settings in the configuration.xml file are applied to Microsoft 365 A
 ## Use Group Policy to configure update settings for Microsoft 365 Apps
 <a name="GP"> </a>
 
-If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for Microsoft 365 Apps by using Group Policy. To do this, download the most current [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Microsoft 365 Apps.
-  
-> [!IMPORTANT]
->  You must be running at least version 15.0.4605.1003 of Microsoft 365 Apps, which was released in April 2014, to use the following policy settings: Hide update notifications, Target version, Update deadline, and Update path.  To determine which version of Microsoft 365 Apps is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **Office Updates** section.
-  
+If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for Microsoft 365 Apps by using Group Policy. To use Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Microsoft 365 Apps.
+
+
 After you copy the Administrative Template files to AD DS, you'll find the update policy settings under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates in the Group Policy Management Console. You'll also find a description of how to configure each policy setting.
   
 ![Group Policy settings updates](images/86a9781c-0e91-4e5d-b334-7a0d07d85466.jpg)
@@ -69,7 +67,7 @@ If you decide to make a change later, update the Group Policy setting by using t
 Group Policy settings can be used regardless of whether users install Microsoft 365 Apps themselves from the Office 365 portal, or if you deploy Microsoft 365 Apps to your users by using the Office Deployment Tool.
   
    
-## Related topics
+## Related articles
 [Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
   
 [Choose how to manage updates to Microsoft 365 Apps](choose-how-manage-updates-microsoft-365-apps.md)
