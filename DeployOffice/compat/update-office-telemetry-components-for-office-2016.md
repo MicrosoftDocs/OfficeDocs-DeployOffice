@@ -23,7 +23,7 @@ When you install Office 2019 or Office 2016, Office Telemetry Dashboard and the 
   
 To use the new version of Office Telemetry Dashboard, you'll have to update the processors and database manually. If you don't, you'll see an error message similar to the following when you use Office Telemetry Dashboard to connect to the database:
   
-    Database connection failure. The database needs to be updated.
+&nbsp; &nbsp; Database connection failure. The database needs to be updated.
   
 You need to ensure that each computer on which you install the processors and database is also running the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
   
@@ -36,7 +36,7 @@ Here are the procedures for uninstalling the old processors, installing the new 
 
 1. On each computer where a processor is installed, uninstall the processor from the Windows Control Panel.
     
-   - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+   - On Windows 8.1, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
     
    - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
     

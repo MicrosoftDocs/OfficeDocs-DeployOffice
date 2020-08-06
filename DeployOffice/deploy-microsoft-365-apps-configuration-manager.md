@@ -16,8 +16,6 @@ description: "This article gives step-by-step instructions for how to Deploy Mic
 
 # Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 Follow the steps in this article to deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch). 
 
@@ -48,10 +46,10 @@ We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com
 
 ## Best practices 
 
-The steps in this article are based on the following best practices: 
+The steps in this article are based on the following best practices, if you've chosen to deploy Semi-Annual Enterprise Channel:
 
-- **Build two Office [applications](https://docs.microsoft.com/mem/configmgr/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Channel for 64-bit and the other uses Semi-Annual Channel (Targeted) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
-- **Deploy to two [collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives the Semi-Annual Channel (Targeted). The other collection represents the broad group, which receives the Semi-Annual Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
+- **Build two Office [applications](https://docs.microsoft.com/mem/configmgr/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Enterprise Channel for 64-bit and the other uses Semi-Annual Enterprise Channel (Preview) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
+- **Deploy to two [collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives Semi-Annual Enterprise Channel (Preview). The other collection represents the broad group, which receives Semi-Annual Enterprise Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
 
 You can customize these options to match the requirements for your organization, including deploying to more than two collections, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
 
@@ -73,8 +71,8 @@ Make sure to complete the following requirements as well:
 
 The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. For each deployment group, make sure you have a specific collection. Our standard best practices recommend two deployment groups:
 
-- A pilot group that receives the Semi-Annual Channel (Targeted)
-- A broad group that receives the Semi-Annual Channel
+- A pilot group that receives Semi-Annual Enterprise Channel (Preview)
+- A broad group that receives Semi-Annual Enterprise Channel
 
 In more complex deployments, you would use multiple deployment groups. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/introduction-to-collections).  
 
@@ -87,7 +85,7 @@ The Office installation packages are represented as applications in Configuratio
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then click **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, click on **Go to the Office Customization Tool**, and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
     - **Software:** Microsoft 365 Apps for enterprise (if you're licensed for it). You can also include Visio and Project if you plan to deploy those products.
-      - **Update channel:** Choose **Semi-Annual Channel (Targeted)** for the installation package for the pilot group 
+      - **Update channel:** Choose **Semi-Annual Enterprise Channel (Preview)** for the installation package for the pilot group 
       - **Languages:** Include all the language packs you plan to deploy. 
       - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. 
       - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
@@ -105,7 +103,7 @@ After you create and deploy Microsoft 365 Apps using the Office 365 Installer, C
 
 ## Step 4 - Create and deploy the Office application to the broad group
 
-After you've finished testing Office with the pilot group, you can repeat the above steps to create and deploy an Office application to the broad group. When defining the application, include the same options you did with the pilot group, except choose **Semi-Annual Channel** for the update channel. 
+After you've finished testing Office with the pilot group, you can repeat the above steps to create and deploy an Office application to the broad group. When defining the application, include the same options you did with the pilot group, except choose **Semi-Annual Enterprise Channel** for the update channel. 
 
 ## Step 5 - Review exit criteria 
 
@@ -124,13 +122,17 @@ In the dashboard, make sure you see the Office versions, languages, and update c
 > If the data is not displaying, you might need to enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more details, see [Configure hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/configure-hardware-inventory). 
 
 ## Customize your deployment
-The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch. 
+The steps in this article cover the standard best practice recommendations from Microsoft, if you've chosen to deploy Semi-Annual Enterprise Channel. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch. 
 
 ### Build and deploy multiple packages to multiple deployment groups
 If you want to deploy the 32-bit version of Office, you can create additional installation packages. (Two different architectures cannot be included in the same package.) For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
 
 ### Use different update channels for Office
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. In this article, we recommend the Semi-Annual Channel (Targeted) for your pilot group and the Semi-Annual Channel for the rest of your organization. You can, however, choose the Monthly Channel, which provides users with the newest features of Office as soon as they're available. A single Office installation package can only include one type of channel, so each new channel requires an additional package. For more details, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+
+In this article, we're using Semi-Annual Enterprise Channel (Preview) for your pilot group and Semi-Annual Enterprise Channel for the rest of your organization. You can, however, choose to deploy Current Channel, which provides users with the newest features of Office as soon as they're ready. In that scenario, you'd deploy Current Channel (Preview) to your pilot group.
+
+A single Office installation package can only include one type of update channel, so each new update channel requires an additional package. 
 
 ### Deploy Visio and Project alongside the core Office apps
 To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).

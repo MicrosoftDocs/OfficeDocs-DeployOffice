@@ -35,7 +35,7 @@ The following are the five new policy settings:
 - Allow the use of additional optional connected experiences in Office
 - Allow the use of connected experiences in Office
 
-These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
+These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](../overview-office-client-policy-service.md). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > - For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
@@ -93,7 +93,7 @@ Your users won’t be able to choose whether to turn these connected experiences
 
 ### Policy setting for connected experiences that analyze your content
 
-These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Editor in Word. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
 You can use the *Allow the use of connected experiences in Office that analyze content* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
 
@@ -220,7 +220,7 @@ Some admins prefer to change settings directly in the registry, for example by u
 
 To create a .reg file for the privacy settings, open Notepad and copy in the following lines. Adjust the values to suit your needs, and then save the file. Be sure the file name has an extension of .reg
 
-```
+```console
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\office\16.0\common\privacy]

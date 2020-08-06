@@ -15,9 +15,6 @@ ms.custom: Ent_Office_ProPlus
 
 # Overview of deploying languages for Microsoft 365 Apps
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-
 This article covers the options for deploying languages for Microsoft 365 Apps, including what method to use, where to deploy languages from, how to deploy proofing tools, and best practices. We recommend using this article as part of [planning your Office deployment](plan-microsoft-365-apps.md). 
 
 The guidance in this article applies to the following Office products:
@@ -92,11 +89,11 @@ For details on how to edit the configuration file in a text editor, see [Configu
 
 ### Example
 
-This configuration file installs proofing tools for German and Italian using the Semi-Annual Channel on a device with Office already installed. If the original installation of Office was from a local source, make sure to download the proofing tools to that source. If the tools aren't found at the local source, the AllowCdnFallback setting installs the tools directly from the Office CDN. 
+This configuration file installs proofing tools for German and Italian using Monthly Enterprise Channel on a device with Office already installed. If the original installation of Office was from a local source, make sure to download the proofing tools to that source. If the tools aren't found at the local source, the AllowCdnFallback setting installs the tools directly from the Office CDN. 
 
 ```xml
 <Configuration>
-  <Add Channel="Broad" AllowCdnFallback="TRUE">
+  <Add Channel="MonthlyEnterprise" AllowCdnFallback="TRUE">
     <Product ID="ProofingTools">
       <Language ID="de-de" />
       <Language ID="it-it" />
@@ -123,10 +120,9 @@ You can automatically deploy Visio and Project in the languages that are in use 
 
 If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
 
-1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example below. 
-2. In some cases, using Match Installed can change the Shell UI language. To avoid that, we recommend including "MatchOS" or a specific language as the first Language ID, as show in the example below.  
-3. Optionally, you can include the TargetProduct as an attribute of the Language element, as shown in the example below. By doing so, you can specify which existing Office product should be used to determine which languages to install. For example, if you set TargetProduct = "O365ProPlusRetail", the Office products you're deploying will be installed in the same languages as Microsoft 365 Apps for enterprise, if that product is installed on the client computer. 
-4. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps).  
+1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example below.
+2. Optionally, you can include the TargetProduct as an attribute of the Language element, as shown in the example below. By doing so, you can specify which existing Office product should be used to determine which languages to install. For example, if you set TargetProduct = "O365ProPlusRetail", the Office products you're deploying will be installed in the same languages as Microsoft 365 Apps for enterprise, if that product is installed on the client computer. If you want to match all installed languages, you can specify TargetProduct="All".
+3. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more details, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). You can not use the /download switch for ODT on a configuration file which contains the MatchInstalled keyword. You have to use a separate configuration file for this. 
 
 You can also use MatchInstalled as the Language ID when adding Office apps to or removing them from an existing installation of Office. 
 
@@ -135,14 +131,15 @@ For details on how to edit the configuration file in a text editor, see [Configu
 ### Example
 ```xml
 <Configuration>
- <Add Channel="Broad" AllowCdnFallback="True"> 
+ <Add Channel="MonthlyEnterprise" AllowCdnFallback="True"> 
   <Product ID="VisioProRetail">
-     <Language ID="MatchOS" />
      <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
   </Product>
  </Add>  
 </Configuration>
 ```
+
+Learn more about [how to use MatchInstalled in second-install scenarios](fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ## Install the same languages as a previous MSI installation
 
@@ -181,100 +178,100 @@ Language-neutral product resources for Microsoft 365 Apps are packaged into a si
 
 The following table lists all the supported languages for Microsoft 365 Apps, along with culture codes and companion proofing languages.
 
-| **Language**                             | **Culture (ll-cc)** | **Companion proofing languages**                                          |
+| **Language**                             | **Culture (ll-CC)** | **Companion proofing languages**                                          |
 |------------------------------------------|---------------------|---------------------------------------------------------------------------|
-| Afrikaans                                | af-za               |                                                                           |
-| Albanian                                 | sq-al               |                                                                           |
-| Arabic                                   | ar-sa               | Arabic, English, French                                                   |
-| Armenian                                 | hy-am               |                                                                           |
-| Assamese                                 | as-in               |                                                                           |
-| Azerbaijani (Latin)                      | az-Latn-az          |                                                                           |
-| Bangla (Bangladesh)                      | bn-bd               |                                                                           |
-| Bangla (Bengali India)                   | bn-in               |                                                                           |
-| Basque (Basque)                          | eu-es               |                                                                           |
-| Bosnian (Latin)                          | bs-latn-ba          |                                                                           |
-| Bulgarian                                | bg-bg               | Bulgarian, English, German, Russian                                       |
-| Catalan                                  | ca-es               |                                                                           |
-| Catalan (Valencia)                       | ca-es-valencia      |                                                                           |
-| Chinese (Simplified)                     | zh-cn               | Chinese (Simplified), English                                             |
-| Chinese (Traditional)                    | zh-tw               | Chinese (Traditional), English                                            |
-| Croatian                                 | hr-hr               | Croatian, English, German, Serbian, Italian                               |
-| Czech                                    | cs-cz               | Czech, English, German, Slovak                                            |
-| Danish                                   | da-dk               | Danish, English, German, Swedish                                          |
-| Dutch                                    | nl-nl               | Dutch, English, French, German                                            |
-| English                                  | en-us               | English, French, Spanish                                                  |
-| Estonian                                 | et-ee               | Estonian, English, German, Russian, Finnish,                              |
-| Finnish                                  | fi-fi               | Finnish, English, Swedish, German, Russian                                |
-| French                                   | fr-fr               | French, English, German, Dutch, Arabic, Spanish                           |
-| Galician                                 | gl-es               |                                                                           |
-| Georgian                                 | ka-ge               |                                                                           |
-| German                                   | de-de               | German, English, French, Italian                                          |
-| Greek                                    | el-gr               | Greek, English, French, German                                            |
-| Gujarati                                 | gu-in               |                                                                           |
-| Hausa                                    | ha-Latn-ng          |                                                                           |
-| Hebrew                                   | he-il               | Hebrew, English, French, Arabic, Russian                                  |
-| Hindi                                    | hi-in               | Hindi, English, Tamil, Telegu, Marathi, Kannada, Gujarati, Punjabi, Urdu |
-| Hungarian                                | hu-hu               | Hungarian, English, German                                                |
-| Icelandic                                | is-is               |                                                                           |
-| Igbo                                     | ig-ng               |                                                                           |
-| Indonesian                               | id-id               | Indonesian, English                                                       |
-| Irish                                    | ga-ie               |                                                                           |
-| isiXhosa                                 | xh-za               |                                                                           |
-| isiZulu                                  | zu-za               |                                                                           |
-| Italian                                  | it-it               | Italian, English, French, German                                          |
-| Japanese                                 | ja-jp               | Japanese, English                                                         |
-| Kannada                                  | kn-in               |                                                                           |
-| Kazakh                                   | kk-kz               | Kazakh, English, Russian                                                  |
-| Kinyarwanda                              | rw-rw               |                                                                           |
-| KiSwahili                                | sw-ke               |                                                                           |
-| Konkani                                  | kok-in              |                                                                           |
-| Korean                                   | ko-kr               | Korean, English                                                           |
-| Kyrgyz                                   | ky-kg               |                                                                           |
-| Latvian                                  | lv-lv               | Latvian, English, German, Russian                                         |
-| Lithuanian                               | lt-lt               | Lithuanian, English, German, Russian, Polish                              |
-| Luxembourgish                            | lb-lu               |                                                                           |
-| Macedonian (North Macedonia)            | mk-mk               |                                                                           |
-| Malay (Latin)                            | ms-my               | Malay, English, Chinese (Simplified)                                      |
-| Malayalam                                | ml-in               |                                                                           |
-| Maltese                                  | mt-mt               |                                                                           |
-| Maori                                    | mi-nz               |                                                                           |
-| Marathi                                  | mr-in               |                                                                           |
-| Nepali                                   | ne-np               |                                                                           |
-| Norwegian Bokmål                         | nb-no               | Norwegian (Bk), English, German, Norwegian (Ny)                           |
-| Norwegian Nynorsk                        | nn-no               | Norwegian (Bk), English, German, Norwegian (Ny)                           |
-| Odia                                     | or-in               |                                                                           |
-| Pashto                                   | ps-af               |                                                                           |
-| Persian (Farsi)                          | fa-ir               |                                                                           |
-| Polish                                   | pl-pl               | Polish, English, German                                                   |
-| Portuguese (Portugal)                    | pt-pt               | Portuguese, English, French, Spanish                                      |
-| Portuguese (Brazil)                      | pt-br               | Brazilian, English, Spanish                                               |
-| Punjabi (Gurmukhi)                       | pa-in               |                                                                           |
-| Romanian                                 | ro-ro               | Romanian, English, French                                                 |
-| Romansh                                  | rm-ch               |                                                                           |
-| Russian                                  | ru-ru               | Russian, English, Ukrainian, German                                       |
-| Scottish Gaelic                          | gd-gb               |                                                                           |
-| Serbian (Cyrillic, Serbia)               | sr-cyrl-rs          |                                                                           |
-| Serbian (Latin, Serbia)                  | sr-latn-rs          | Serbian (Latin), English, German, French, Croatian                        |
-| Serbian (Cyrillic, Bosnia & Herzegovina) | sr-cyrl-ba          |                                                                           |
-| Sesotho sa Leboa                         | nso-za              |                                                                           |
-| Setswana                                 | tn-za               |                                                                           |
-| Sinhala                                  | si-lk               |                                                                           |
-| Slovak                                   | sk-sk               | Slovak, English, Czech, Hungarian, German                                 |
-| Slovenian                                | sl-si               | Slovenian, English, German, Italian, Croatian                             |
-| Spanish                                  | es-es               | Spanish, English, French, Basque (Basque), Catalan, Galician, Brazilian   |
-| Swedish                                  | sv-se               | Swedish, English, Finnish, German                                         |
-| Tamil                                    | ta-in               |                                                                           |
-| Tatar (Cyrillic)                         | tt-ru               |                                                                           |
-| Telugu                                   | te-in               |                                                                           |
-| Thai                                     | th-th               | Thai, English, French                                                     |
-| Turkish                                  | tr-tr               | Turkish, English, French, German                                          |
-| Ukrainian                                | uk-ua               | Ukrainian, English, Russian, German                                       |
-| Urdu                                     | ur-pk               |                                                                           |
-| Uzbek (Latin)                            | uz-Latn-uz          |                                                                           |
-| Vietnamese                               | vi-vn               | Vietnamese, English, French                                               |
-| Welsh                                    | cy-gb               |                                                                           |
-| Wolof                                    | wo-sn               |                                                                           |
-| Yoruba                                   | yo-ng               |
+| Afrikaans                                | af-ZA               |                                                                           |
+| Albanian                                 | sq-AL               |                                                                           |
+| Arabic                                   | ar-SA               | Arabic, English, French                                                   |
+| Armenian                                 | hy-AM               |                                                                           |
+| Assamese                                 | as-IN               |                                                                           |
+| Azerbaijani (Latin)                      | az-Latn-AZ          |                                                                           |
+| Bangla (Bangladesh)                      | bn-BD               |                                                                           |
+| Bangla (Bengali India)                   | bn-IN               |                                                                           |
+| Basque (Basque)                          | eu-ES               |                                                                           |
+| Bosnian (Latin)                          | bs-latn-BA          |                                                                           |
+| Bulgarian                                | bg-BG               | Bulgarian, English, German, Russian                                       |
+| Catalan                                  | ca-ES               |                                                                           |
+| Catalan (Valencia)                       | ca-ES-valencia      |                                                                           |
+| Chinese (Simplified)                     | zh-CN               | Chinese (Simplified), English                                             |
+| Chinese (Traditional)                    | zh-TW               | Chinese (Traditional), English                                            |
+| Croatian                                 | hr-HR               | Croatian, English, German, Serbian, Italian                               |
+| Czech                                    | cs-CZ               | Czech, English, German, Slovak                                            |
+| Danish                                   | da-DK               | Danish, English, German, Swedish                                          |
+| Dutch                                    | nl-NL               | Dutch, English, French, German                                            |
+| English                                  | en-US               | English, French, Spanish                                                  |
+| Estonian                                 | et-EE               | Estonian, English, German, Russian, Finnish,                              |
+| Finnish                                  | fi-FI               | Finnish, English, Swedish, German, Russian                                |
+| French                                   | fr-FR               | French, English, German, Dutch, Arabic, Spanish                           |
+| Galician                                 | gl-ES               |                                                                           |
+| Georgian                                 | ka-GE               |                                                                           |
+| German                                   | de-DE               | German, English, French, Italian                                          |
+| Greek                                    | el-GR               | Greek, English, French, German                                            |
+| Gujarati                                 | gu-IN               |                                                                           |
+| Hausa                                    | ha-Latn-NG          |                                                                           |
+| Hebrew                                   | he-IL               | Hebrew, English, French, Arabic, Russian                                  |
+| Hindi                                    | hi-IN               | Hindi, English, Tamil, Telegu, Marathi, Kannada, Gujarati, Punjabi, Urdu |
+| Hungarian                                | hu-HU               | Hungarian, English, German                                                |
+| Icelandic                                | is-IS               |                                                                           |
+| Igbo                                     | ig-NG               |                                                                           |
+| Indonesian                               | id-ID               | Indonesian, English                                                       |
+| Irish                                    | ga-IE               |                                                                           |
+| isiXhosa                                 | xh-ZA               |                                                                           |
+| isiZulu                                  | zu-ZA               |                                                                           |
+| Italian                                  | it-IT               | Italian, English, French, German                                          |
+| Japanese                                 | ja-JP               | Japanese, English                                                         |
+| Kannada                                  | kn-IN               |                                                                           |
+| Kazakh                                   | kk-KZ               | Kazakh, English, Russian                                                  |
+| Kinyarwanda                              | rw-RW               |                                                                           |
+| KiSwahili                                | sw-KE               |                                                                           |
+| Konkani                                  | kok-IN              |                                                                           |
+| Korean                                   | ko-KR               | Korean, English                                                           |
+| Kyrgyz                                   | ky-KG               |                                                                           |
+| Latvian                                  | lv-LV               | Latvian, English, German, Russian                                         |
+| Lithuanian                               | lt-LT               | Lithuanian, English, German, Russian, Polish                              |
+| Luxembourgish                            | lb-LU               |                                                                           |
+| Macedonian (North Macedonia)            | mk-MK               |                                                                           |
+| Malay (Latin)                            | ms-MY               | Malay, English, Chinese (Simplified)                                      |
+| Malayalam                                | ml-IN               |                                                                           |
+| Maltese                                  | mt-MT               |                                                                           |
+| Maori                                    | mi-NZ               |                                                                           |
+| Marathi                                  | mr-IN               |                                                                           |
+| Nepali                                   | ne-NP               |                                                                           |
+| Norwegian Bokmål                         | nb-NO               | Norwegian (Bk), English, German, Norwegian (Ny)                           |
+| Norwegian Nynorsk                        | nn-NO               | Norwegian (Bk), English, German, Norwegian (Ny)                           |
+| Odia                                     | or-IN               |                                                                           |
+| Pashto                                   | ps-AF               |                                                                           |
+| Persian (Farsi)                          | fa-IR               |                                                                           |
+| Polish                                   | pl-PL               | Polish, English, German                                                   |
+| Portuguese (Portugal)                    | pt-PT               | Portuguese, English, French, Spanish                                      |
+| Portuguese (Brazil)                      | pt-BR               | Brazilian, English, Spanish                                               |
+| Punjabi (Gurmukhi)                       | pa-IN               |                                                                           |
+| Romanian                                 | ro-RO               | Romanian, English, French                                                 |
+| Romansh                                  | rm-CH               |                                                                           |
+| Russian                                  | ru-RU               | Russian, English, Ukrainian, German                                       |
+| Scottish Gaelic                          | gd-GB               |                                                                           |
+| Serbian (Cyrillic, Serbia)               | sr-cyrl-RS          |                                                                           |
+| Serbian (Latin, Serbia)                  | sr-latn-RS          | Serbian (Latin), English, German, French, Croatian                        |
+| Serbian (Cyrillic, Bosnia & Herzegovina) | sr-cyrl-BA          |                                                                           |
+| Sesotho sa Leboa                         | nso-ZA              |                                                                           |
+| Setswana                                 | tn-ZA               |                                                                           |
+| Sinhala                                  | si-LK               |                                                                           |
+| Slovak                                   | sk-SK               | Slovak, English, Czech, Hungarian, German                                 |
+| Slovenian                                | sl-SI               | Slovenian, English, German, Italian, Croatian                             |
+| Spanish                                  | es-ES               | Spanish, English, French, Basque (Basque), Catalan, Galician, Brazilian   |
+| Swedish                                  | sv-SE               | Swedish, English, Finnish, German                                         |
+| Tamil                                    | ta-IN               |                                                                           |
+| Tatar (Cyrillic)                         | tt-RU               |                                                                           |
+| Telugu                                   | te-IN               |                                                                           |
+| Thai                                     | th-TH               | Thai, English, French                                                     |
+| Turkish                                  | tr-TR               | Turkish, English, French, German                                          |
+| Ukrainian                                | uk-UA               | Ukrainian, English, Russian, German                                       |
+| Urdu                                     | ur-PK               |                                                                           |
+| Uzbek (Latin)                            | uz-Latn-UZ          |                                                                           |
+| Vietnamese                               | vi-VN               | Vietnamese, English, French                                               |
+| Welsh                                    | cy-GB               |                                                                           |
+| Wolof                                    | wo-SN               |                                                                           |
+| Yoruba                                   | yo-NG               |
 
 ## Related topics
 

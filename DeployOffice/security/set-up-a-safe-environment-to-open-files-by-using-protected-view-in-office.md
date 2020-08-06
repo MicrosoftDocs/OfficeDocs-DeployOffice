@@ -44,7 +44,7 @@ By default, files open in Protected View if any one of the following conditions 
   
 - **A file skips or fails Office File Validation** Office File Validation is a security feature that scans files for file format exploits. If Office File Validation detects a possible exploit or some other unsafe file corruption, the file opens in Protected View. 
     
-- **Zone information determines that a file is not safe** Attachment Execution Services (AES) adds zone information to files that are downloaded by Microsoft Outlook, Internet Explorer, and some other applications. Also, in Windows 8 and later versions, Windows adds zone information to files that are edited using Microsoft Store applications. If a file's zone information indicates that the file originated from an untrusted website or the Internet, the file opens in Protected View. 
+- **Zone information determines that a file is not safe** Attachment Execution Services (AES) adds zone information to files that are downloaded by Microsoft Outlook, Internet Explorer, and some other applications. Also, in Windows 8.1 and later versions, Windows adds zone information to files that are edited using Microsoft Store applications. If a file's zone information indicates that the file originated from an untrusted website or the Internet, the file opens in Protected View. 
     
 - **A user opens a file in Protected View** Users can open files in Protected View by choosing **Open in Protected View** in the **Open** dialog box, or by holding down the SHIFT key, choosing a file name, and, from its shortcut menu (right-click), choosing **Open in Protected View**.
     
@@ -134,7 +134,7 @@ You can use the **Specify list of unsafe locations** setting to add locations to
 
 ## Add trusted Microsoft Store applications
 
-In Windows 8 and later versions of Windows, the operating system automatically adds the Internet Zone identifier to files that are edited by Microsoft Store applications. As a result, such files will open in Protected View when opened in Office 2016.
+In Windows 8.1 and later versions of Windows, the operating system automatically adds the Internet Zone identifier to files that are edited by Microsoft Store applications. As a result, such files will open in Protected View when opened in Office 2016.
   
 In Office 2016 you can specify trusted Microsoft Store applications. This enables specific files that are edited by these applications to bypass Protected View when opened in Office 2016. By default, this list of trusted Microsoft Store applications includes Word Mobile, Excel Mobile and PowerPoint Mobile. Users with local administrator privileges or Enterprise Administrators can add additional Microsoft Store applications to this list by adding the Microsoft Store Package Family Name (PFN) to the following registry key:
   

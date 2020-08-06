@@ -45,7 +45,8 @@ There are a series of settings in the configuration.xml file that you configure 
 |---------|---------|---------|
 |Where to download the Office installation files to and where to install Office from <br/> <br/>For example, \\\server\share (a shared folder on your local network)| SourcePath  |If you don’t specify a SourcePath when using the ODT to install Office, the ODT looks for the installation files in the folder it’s located in. If it doesn’t find the Office installation files there, it goes to the Office CDN to get the installation files. <br/> <br/>  We recommend that you install Office directly from the Office CDN, if internet connectivity and network bandwidth make that possible.      |
 |Which products to download or install <br/> <br/>For example, Office Professional Plus 2019 | Product ID  | Valid values for volume licensed versions of Office 2019 include the following:  <br/>- ProPlus2019Volume <br/> -	Standard2019Volume <br/>- ProjectPro2019Volume <br/> - ProjectStd2019Volume <br/> - VisioPro2019Volume <br/> - VisioStd2019Volume  <br/><br/> For a list of Product IDs for other volume licensed versions of Office 2019, such as Access 2019, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).|
-|Use Multiple Activation (MAK) to activate Office 2019     | PIDKEY  | Enter the product key for MAK activation.   <br/> <br/> You don’t need to use PIDKEY if you’re activating Office 2019 with Key Management Service (KMS).    |
+|Use Key Management Service (KMS) to activate Office 2019|PIDKEY| Enter the [Generic Volume License Key (GVLK)](../vlactivation/gvlks.md) for KMS activation.|
+|Use Multiple Activation (MAK) to activate Office 2019     | PIDKEY  | Enter the product key for MAK activation.  |
 |Which languages to download or install <br/> <br/> For example, English (en-us) and French (fr-fr). |Language ID      | You can install multiple languages at the same time you’re Installing Office 2019, or you can install them later.   <br/> <br/> For more information, see [Deploy languages for Office 2019](#deploy-languages-for-office-2019).   |
 |Which proofing tools to install  |Product ID  | The Product ID is "ProofingTools" and is used in combination with the Language ID. <br/> <br/> For more information, see [Deploy languages for Office 2019](#deploy-languages-for-office-2019). |
 |Which edition of Office 2019 to download or install. <br/> <br/>  For example, the 64-bit version.    | OfficeClientEdition  | Valid xml values are "32" and "64." <br/> <br/>All Office products on the computer must be of the same architecture. You can’t have both 32-bit and 64-bit Office products installed on the same computer. <br/><br/>  We recommend 64-bit on computers that have 4 gb or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. <br/> <br/> For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.office.com/article/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).   |
@@ -98,7 +99,7 @@ For more information about using RemoveMSI, see [Remove existing MSI versions of
 ## Download the Office 2019 installation files
 Once you have a copy of the ODT and have created your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
 
-```
+```console
 	setup /download configuration.xml
 ```
 
@@ -115,7 +116,7 @@ Here some additional details about downloading Office 2019 installation files:
 ## Install Office 2019 by using the Office Deployment Tool
 Once you have a copy of the ODT and have created your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
 
-```
+```console
 	setup /configure configuration.xml
 ```
 

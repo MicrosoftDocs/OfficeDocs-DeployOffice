@@ -14,9 +14,6 @@ description: "Provides guidance for deploying Microsoft 365 Apps for enterprise 
 
 # Guidance for deploying Microsoft 365 Apps for enterprise in a GCC High or DoD environment
 
-> [!IMPORTANT]
-> Office 365 ProPlus is being renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, [read this article](name-change.md).
-
 If you plan to deploy Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
 ## Which version of Microsoft 365 Apps for enterprise to deploy
@@ -24,7 +21,7 @@ If you plan to deploy Microsoft 365 Apps for enterprise (previously named Office
 > [!IMPORTANT]
 > To meet GCC High and DoD compliance requirements, you must be running at least Version 1803 of Microsoft 365 Apps for enterprise.
 
-Version 1803 or later is available in Monthly Channel, Semi-Annual Channel (Targeted), and Semi-Annual Channel.
+Version 1803 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
 
 ### What about other applications, such as Project and Visio?
 
@@ -39,7 +36,9 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use
 
-For most enterprises, we usually recommend that a majority of users be on the Semi-Annual Channel of Microsoft 365 Apps for enterprise. For more information about update channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
  
 ## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
@@ -68,31 +67,34 @@ You can also use enterprise software deployment tools, such as Microsoft Endpoin
 For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ### Installing and updating Microsoft 365 Apps for enterprise from the Office CDN
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
+Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Current Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
 
 ```xml
 <Configuration> 
-   <Add OfficeClientEdition="64" Channel="Broad">
+   <Add OfficeClientEdition="64" Channel="Current">
        <Product ID="O365ProPlusRetail" >
             <Language ID="en-us" />
        </Product>
    </Add>
-   <Updates Enabled="TRUE"  Channel="Broad" />
+   <Updates Enabled="TRUE"  Channel="Current" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
 ```
 
 ### Installing and updating Microsoft 365 Apps for enterprise from a shared folder on the local network
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
+Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Enterprise Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
+
+> [!NOTE]
+> To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](manage-microsoft-365-apps-updates-configuration-manager.md).
 
 ```xml
 <Configuration> 
-   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="Broad">
+   <Add SourcePath="\\Server\Share\Installs"  OfficeClientEdition="64" Channel="SemiAnnual">
        <Product ID="O365ProPlusRetail" >
             <Language ID="en-us" />
        </Product>
    </Add>
-   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" Channel="Broad" />
+   <Updates Enabled="TRUE" UpdatePath="\\Server\Share\Updates" Channel="SemiAnnual" />
   <Display Level="None" AcceptEULA="TRUE" />
 </Configuration>
 ```
@@ -121,23 +123,24 @@ To prevent Office for Mac from sending telemetry data to Microsoft, you can set 
 
 The preferences are per-application and can be set via macOS Configuration Profiles, or manually from Terminal, as shown in the following example.
 
-    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
-    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
-    defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
-
+```console
+defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Excel SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Powerpoint SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Outlook SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.onenote.mac SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.autoupdate2 SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE
+defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Word SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Excel SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Powerpoint SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Outlook SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.onenote.mac SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.autoupdate2 SendCriticalTelemetryEnabled  -bool FALSE
+defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -bool FALSE
+```
 
 ### Turn off sending telemetry data to Microsoft from Office apps on iOS
 To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
@@ -165,18 +168,6 @@ Modern authentication needs to be enabled to be compliant. Modern authentication
 
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
-
-### Disable experimentation on Microsoft 365 Apps for enterprise
-Microsoft occasionally runs experiments on Office features.
-
-To disable experimentation, edit the registry and add the DisableFeatureRollout value to the HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\TrustCenter\Experimentation key. The type for DisableFeatureRollout is REG_SZ and the value should be set to `true` (lowercase).
-
-If experimentation was previously enabled, you also need to delete any data under the following registry keys to clear the experimentation cache.
-- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Experiment
-- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentEcs
-- HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\ExperimentTas
-
-These registry keys get created when an Office app is launched, so it's ok if they reappear after you delete the data underneath them.
 
 ### Configure Outlook behavior on Microsoft 365 Apps for enterprise
 The following registry values must be set to correctly configure Outlook behavior on Microsoft 365 Apps for enterprise. The type for these registry values is REG_DWORD and the values should be set to 1.
@@ -207,7 +198,7 @@ Due diligence was done to review cloud services connected to features in Microso
 
 |**Application**  |**Feature**  |**Recommendation**  |
 |---------|---------|---------|
-|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Monthly Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Channel (Targeted) <br/> - Version 1803 (Build 9126.2259) of Semi-Annual Channel  <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
+|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Current Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Enterprise Channel (Preview) <br/> - Version 1803 (Build 9126.2259) of Semi-Annual Enterprise Channel  <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
 
 
 ## Reference information

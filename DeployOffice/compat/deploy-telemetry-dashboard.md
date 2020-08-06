@@ -37,12 +37,15 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 
 |**Operating system**|**How to start Office Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows Server 2008 R2, Windows Server 2008, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
-| Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
+|Windows 10, Windows Server 2008 R2, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+| Windows 8.1 <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
 For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
+> [!NOTE]
+> - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
 <a name="SQL"> </a>
 
@@ -61,6 +64,9 @@ SQL Server must be deployed before you can configure Office Telemetry Dashboard.
 - SQL Server 2008 or SQL Server 2008 Express Edition
 
 - SQL Server 2005 or SQL Server 2005 Express Edition
+
+> [!NOTE]
+> To check which versions of SQL Server are currently supported, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
 
 The **Getting started** worksheet in Office Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
@@ -115,11 +121,7 @@ We recommend the following operating systems for computers that run the processo
 
 - Windows Server 2012
 
-- Windows Server 2008 R2
-
-- Windows Server 2008
-
-**For test or small production environments:** You can use computers that run Windows 10, Windows 8.1, Windows 8, and Windows 7 with Service Pack 1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
+**For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
 Ensure that you have the following available before you run the wizard to set up the processor.
 
@@ -181,7 +183,7 @@ When the connection is established, many new worksheets are added to the workboo
 
 - You can use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) on the computer that is running SQL Server to allow other administrators to view data in Office Telemetry Dashboard. You don't have to run this for your own account if you created a database when you installed the processor. Update the values for dbserver, dbname, and domain\user as needed. 
 
-  ```
+  ```console
   tdadm.exe -o permission -databaseserver dbserver -databasename dbname -add domain\user
   ```
 
@@ -231,8 +233,6 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 
 - Windows 8.1
 
-- Windows 8
-
 - Windows 7 with Service Pack 1
 
 - Windows Server 2016
@@ -246,6 +246,11 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 - Windows Server 2008
 
 The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on the [Microsoft Product Lifecycle Search website](https://go.microsoft.com/fwlink/p/?LinkId=286402) before you install the agent. 
+
+> [!NOTE]
+> - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
+
 
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
 
@@ -278,7 +283,7 @@ The easiest way to update the registry on a single client is to run a .reg file 
 
 The following example sets the default settings that are needed to enable the agent. AgentInitWait and AgentRandomDelay are set to their default values, which are appropriate for production deployments.
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "CommonFileShare"="\\\\<SERVERNAME>\\<SHARENAME>"
@@ -295,7 +300,7 @@ Windows Registry Editor Version 5.00
 
 The code in the following example enables Office Telemetry Dashboard to begin uploading data immediately by setting AgentInitWait and AgentRandomDelay to their smallest values. Use this example only in test deployments. 
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "CommonFileShare"="\\\\<SERVERNAME>\\<SHARENAME>"
@@ -312,7 +317,7 @@ Windows Registry Editor Version 5.00
 
 You can distribute registry updates to multiple client computers by putting a .reg file in a shared folder and instructing users to run the file, or you can add a command to the users' logon script to automatically import the .reg file when users log on. Use the syntax in the following example to start the .reg file from a logon script:
 
-```
+```console
 %windir%\regedit.exe /s <PATH>\<NAME>.reg
 ```
 
@@ -379,9 +384,9 @@ If you want to trigger the data collection manually and see data uploaded immedi
 
 - AgentRandomRelay: 0
 
-**For computers that run Windows 8 and later**
+**For computers that run Windows 8.1 and later**
 
-Because user logon is faster in Windows 8 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
+Because user logon is faster in Windows 8.1 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
 
 - AgentInitWait: 60
 

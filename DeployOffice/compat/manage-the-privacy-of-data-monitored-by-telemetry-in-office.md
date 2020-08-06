@@ -48,7 +48,7 @@ Office Telemetry Dashboard tracks the number of users who use an Office file tha
 
 To prevent Office Telemetry Dashboard from displaying files that have a single author, you run a script that adjusts the minimum reporting threshold in the database. Specifically, you use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) to filter out files that appear on two or fewer clients. To do this, set the **Threshold** value to 3 (or to a larger value, if you want) as shown in the following example. 
 
-```
+```console
 tdadm.exe -o settings -databaseserver dbserver -databasename dbname -threshold 3
 ```
 
@@ -79,7 +79,7 @@ The following table describes different ways in which file information is disgui
 
 The following example enables file obfuscation in the registry of a client computer. Save this code sample as a .reg file and then run it on the monitored client computers.
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "EnableFileObfuscation"=dword:00000001
@@ -121,7 +121,7 @@ The following table describes the registry values that prevent specific solution
 
 The following example disables reporting for all solution and application types. Save this sample as a .reg file and then remove any applications or solutions that you want to allow reporting for. Otherwise they will all be disabled because their value will be set to 00000001.
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\microsoft\office\16.0\osm\preventedapplications]
 "accesssolution"=dword:00000001
@@ -165,7 +165,7 @@ To stop collecting data on the local computer, update the registry or set Group 
 
 The following example stops logging and uploading by the agent. Save the example as a .reg file and run it on the client computer.
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "Enablelogging"=dword:00000000

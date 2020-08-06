@@ -11,7 +11,7 @@ ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with an information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
+description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
 ---
 
@@ -32,37 +32,40 @@ Office consists of client software applications and connected experiences design
 
 ## Connected experiences that analyze your content
 
-Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Editor in Word.
+Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator.
 
 The following table provides a list of connected experiences that analyze your content and also provides links to more information about them.
 
 | **Name**   | **More information**   |
 | ----------- | ------------------ |
-| 3D Maps\*    | [Get started with 3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| *3D Maps*\*    | [Get started with 3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate with your voice in Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-| Editor    | [Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
+|Editor<sup>1</sup> |[Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ideas     | [Ideas in Excel](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
-| Map chart\*    | [Create a Map chart](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
+| *Map chart*\*    | [Create a Map chart](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Maps in Power View   | [Maps in Power View](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint Designer   | [Create professional slide layouts with PowerPoint Designer](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publish to Power BI   | [Publish to Power BI from Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Research\*   | [Add or change research services](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| *Research*\*   | [Add or change research services](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
-| Smart Lookup\*   | [Get insights into what you're working on with Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+|*Similarity checker*\* (a feature of Editor)|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
+| *Smart Lookup*\*   | [Get insights into what you're working on with Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Suggested replies | [What are suggested replies?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Tap for Word (Add from files)   | [Find and use the content you need, when you need, without leaving Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
+<sup>1</sup> Basic functionality of Editor remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of Editor is sent to Microsoft.
+
 > [!NOTE]
-> \*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> \*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Connected experiences that download online content
 
@@ -78,22 +81,23 @@ The following table provides a list of connected experiences that download onlin
 | Ink Effects                 | [Draw and write with ink in Office](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Insert Icons                | [Insert icons in Microsoft Office](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Insert Microsoft Forms      | [Insert a form or quiz into PowerPoint](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
-| Insert Online 3D Models\*     | [Get creative with 3D models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
-| Insert Online Pictures\*      | [Insert pictures](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
-| Insert Online Video\*     | [Insert a video from YouTube or another site](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| Interesting Calendars\*| [Subscribe to a calendar](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
-| Location suggestions\* | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
+| *Insert Online 3D Models*\*     | [Get creative with 3D models](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| *Insert Online Pictures*\*      | [Insert pictures](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
+| *Insert Online Video*\*     | [Insert a video from YouTube or another site](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| *Interesting Calendars*\*| [Subscribe to a calendar](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
+| *Location suggestions*\* | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
 | Maps in event details | Know where you need to go with [maps](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) in event details on Outlook for iOS and Android. |
 | Office Help                 | When you choose **Help** > **Help** on the ribbon or use F1 in an Office app   |
 | Online Shape Search (Visio) | [Find more shapes and stencils](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
-| PowerPoint QuickStarter\*     | [Research a topic with PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
-| Researcher\*    | [Research your paper easily within Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
+| *PowerPoint QuickStarter*\*     | [Research a topic with PowerPoint QuickStarter](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
+| *Researcher*\*    | [Research your paper easily within Word](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Tell Me    | [Do things quickly with Tell Me](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Templates  | [Download free, pre-built templates](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-| Weather Bar\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+|*Travel time estimates in Up Next*\*|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) card at the top of your inbox.|
+| *Weather Bar*\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+>\*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Other connected experiences
 
@@ -115,14 +119,14 @@ The following table provides a list of those other connected experiences and pro
 | Focused Inbox (Outlook) |[Focused Inbox for Outlook](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Information Rights Management in Office](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn contact card |[Connect your LinkedIn and Microsoft accounts](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| Office add-ins\* | [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
+| *Office add-ins*\* | [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
 | Organization chart (Visio) |[Create a Visio organization chart](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Outlook Social Connector | [Turn on the Outlook Social Connector](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
-| Outlook UserVoice\* | [How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+| *Outlook UserVoice*\* | [How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Recent documents |[Open files from the File menu](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
-| Resume Assistant (or CV Assistant)\* |[Write your best resume with help from LinkedIn and Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
+| *Resume Assistant (or CV Assistant)*\* |[Write your best resume with help from LinkedIn and Resume Assistant](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Room Finder (Outlook)|[How to control the Room Finder in Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
 | Safe Links |[ATP Safe Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Sensitivity labels |[Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
@@ -134,7 +138,7 @@ The following table provides a list of those other connected experiences and pro
 | While you were away |[Get notified when members of your team update your shared file](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
->\*When users are signed in with a work or school account, this connected experience is optional and is provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, this connected experience can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+>\*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Choose whether these connected experiences are available to use
 
@@ -156,7 +160,7 @@ If you are the admin for your organization, you can use policy settings to deter
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or you will get an error message when you try to use those connected experiences.
 
-Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there are a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you are properly licensed to use Office.
+Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there is a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you are properly licensed to use Office.
 
 ## Related topics
 

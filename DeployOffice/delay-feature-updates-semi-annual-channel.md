@@ -14,6 +14,9 @@ description: "Provides IT Pros with the steps to delay receiving feature updates
 
 # Delay receiving feature updates from Semi-Annual Channel for Microsoft 365 Apps
 
+> [!IMPORTANT]
+> We’re making some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. To learn more, [read this article](update-channels-changes.md).
+
 Semi-Annual Channel provides Microsoft 365 Apps with new features for the Office apps, such as Word and Excel, twice a year, in January and July. If Office is configured to receive updates automatically from the Office Content Delivery Network (CDN), then you get these feature updates from Semi-Annual Channel automatically.
   
 > [!IMPORTANT]
@@ -29,7 +32,7 @@ To continue to get security updates for Version 1708 from the Office CDN, you ne
   
 - Configure Office to get the latest build of Version 1708 of Semi-Annual Channel from the Office CDN. As of July 10, 2018, the latest build is 8431.2280.
     
-- On the second Tuesday of the following months - for example, on August 14, 2018 - refer to [this table](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date) to determine the latest build number for Version 1708. The second Tuesday of each month is when Microsoft releases a new build with security updates for Semi-Annual Channel.
+- On the second Tuesday of the following months - for example, on August 14, 2018 - refer to [this table](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) to determine the latest build number for Version 1708. The second Tuesday of each month is when Microsoft releases a new build with security updates for Semi-Annual Channel.
     
 - Once you have the latest build number, re-configure Office to get this latest build of Version 1708 of Semi-Annual Channel.
     
@@ -52,13 +55,13 @@ If you don't want to get updates from the Office CDN, you can use Group Policy o
 To download the latest build with the Office Deployment Tool, you need to configure both the Version and the Channel attributes in the Add element of the configuration.xml file.
   
 ## Related topics
-[Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+[Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
   
 [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
   
 [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
   
-[Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+[Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
   
 [Download the Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065)
   

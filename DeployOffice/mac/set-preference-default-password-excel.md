@@ -30,7 +30,7 @@ Use the following information to configure a policy:
 
 The following example sets the option so that Excel doesn't try a default password when opening an encrypted file:
 
-```
+```console
 defaults write com.microsoft.Excel TryDefaultPassword -bool No
 ```
 
