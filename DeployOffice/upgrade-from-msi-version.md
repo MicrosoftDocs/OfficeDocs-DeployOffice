@@ -125,7 +125,7 @@ Here’s an example of a configuration.xml file that installs the 64-bit Monthly
 
 ## Other products that can be removed
 
-Installations of the following products will also be removed unless you use IgnoreProduct:
+Installations of the following products will also be removed by using the RemoveMSI element unless you use IgnoreProduct:
 
 - SharePoint Designer. The product ID is SharePointDesigner.
 - InfoPath. The product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
@@ -148,6 +148,7 @@ The following are some additional details about using the RemoveMSI element in y
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
 - Some previous versions of Office, Visio, and Project must be uninstalled before installing Microsoft 365 Apps. For example, Office Professional Plus 2016. If they aren’t uninstalled beforehand, the installation of Microsoft 365 Apps will fail. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
 - A reboot is required to finish uninstalling the Windows Installer (MSI) versions of Office, but the reboot isn’t enforced. You can reboot after the Microsoft 365 Apps installation is finished.
+- Removing a product might fail if the product is open on the user's device and the [Level attribute](office-deployment-tool-configuration-options.md#level-attribute-part-of-display-element) for the Display element in your configuration.xml file is set to None. If you set the Level attribute to Full, the user will be prompted to close the program so the removal can continue. You can use the [FORCEAPPSHUTDOWN property](office-deployment-tool-configuration-options.md#forceappshutdown-property-part-of-property-element), but that could result in data loss.
 - If you're using RemoveMSI on a Windows 7 SP1 computer, pinned shortcuts that the user created might sometimes remain even though the previous version of Office and all of its other shortcuts have been removed. To remove the pinned shortcut, simply click on it and you'll be prompted to remove it. Or, sign in as the user who created the pinned shortcut, and then run the Office Deployment Tool to upgrade to Microsoft 365 Apps.
 
 ## Related articles
