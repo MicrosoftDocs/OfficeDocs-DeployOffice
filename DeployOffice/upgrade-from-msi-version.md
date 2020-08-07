@@ -26,11 +26,14 @@ There are several ways that you can use the RemoveMSI element when installing Mi
 
 RemoveMSI can be used to uninstall 2007, 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
 
+> [!NOTE]
+> RemoveMSI doesn’t uninstall prior versions of Office, including Visio and Project, that use Click-to-Run as the installation technology. You can uninstall those versions of Office through Control Panel or by running the Office Deployment Tool and using the [Remove element](office-deployment-tool-configuration-options.md#remove-element) in your configuration.xml file.
+
 ## Requirements for using RemoveMSI
 
 The following are requirements for using the RemoveMSI element in your configuration.xml file:
 
-- You must be using at least version 16.0.10306.33602 of the Office Deployment Tool, which you can download from [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). To check the version of the Office Deployment Tool, right-click on setup.exe, choose **Properties**, and then choose **Details**.
+- You must be using at least version 16.0.12827.20268 (setup.exe version 16.0.12827.20258) of the Office Deployment Tool, which you can download from [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). We recommend that you always download and use the most current version of the Office Deployment Tool. To check the version of the Office Deployment Tool, right-click on setup.exe, choose **Properties**, and then choose **Details**.
 - You must be installing at least Version 1803 of Microsoft 365 Apps. Version 1803 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
 - You must be installing Microsoft 365 Apps on a computer running at least Windows 7 Service Pack 1 (SP1) or above.
 
@@ -57,7 +60,7 @@ Here’s an example of a configuration.xml file that installs the 64-bit Current
 
 ## Install the same language resources
 
-If there are language resources – for example, language packs, language interface packs, or proofing tools – already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Microsoft 365 Apps. To do this, add \<Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
+If there are language resources – for example, language packs, language interface packs, or proofing tools – already installed on the computer, you can get Click-to-Run versions of the same language resources installed when you install Microsoft 365 Apps. To install the same language resources, add \<Language ID="MatchPreviousMSI" /> to your configuration.xml file. 
 
 Here’s an example of a configuration.xml file that installs the 64-bit Monthly Enterprise Channel version of Microsoft 365 Apps for enterprise in English, along with any existing languages on the computer, from the Office Content Delivery Network (CDN) on the internet and uninstalls any Windows Installer (MSI) versions of Office on the computer.
 
@@ -79,7 +82,7 @@ The following are some additional details about using MatchPreviousMSI in your c
 - The setting isn’t product specific. For example, if Office Professional Plus 2013 in French and Visio Standard 2013 in German are installed, you will get both French and German, along with any other language IDs you have specified, when you install Microsoft 365 Apps.
  
 > [!IMPORTANT]
-> If you’re installing Microsoft 365 Apps from a location on your local network, such as a shared folder, make sure you’ve downloaded all the possible language files to that folder. If any of the languages needed to install aren't available in that folder, the installation will fail and the previous version of Office will have been removed. To avoid this situation, we recommend that you include [AllowCdnFallback="True"](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This will use the Office Content Delivery Network (CDN) on the internet as a backup source from which to install the language files.
+> If you’re installing Microsoft 365 Apps from a location on your local network, such as a shared folder, make sure you’ve downloaded all the possible language files to that folder. If any of the languages needed to install aren't available in that folder, the installation will continue but without those languages being installed. To avoid this situation, we recommend that you include [AllowCdnFallback="True"](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This will use the Office Content Delivery Network (CDN) on the internet as a backup source from which to install the language files.
 
 
 ## Keep some Office products and uninstall all other Office products 
@@ -120,27 +123,33 @@ Here’s an example of a configuration.xml file that installs the 64-bit Monthly
 </Configuration>
 ```
 
+## Other products that can be removed
+
+Installations of the following products will also be removed unless you use IgnoreProduct:
+
+- SharePoint Designer. The product ID is SharePointDesigner.
+- InfoPath. The product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
+- Lync 2013 or later. Note that Lync 2010 can't be removed by using the RemoveMSI element.
+- Office products that were installed separately and not as part of an Office suite. For example, a standalone installation of Access.
+- Access 2010 Runtime or later. The product ID is AccessRT.
+- Access Database Engine 2010 Redistributable or later. The product ID is AceRedist.
+
+> [!NOTE]
+> Access Database Engine is most commonly included as part of other applications which are interacting with Access data sources, and uninstalling Access Database Engine could impact functionality of these applications. Before removing Access Database Engine, ensure that any applications which require this component are removed or no longer needed.
+
 ## Additional information about using RemoveMSI
 
 The following are some additional details about using the RemoveMSI element in your configuration.xml file.
-- You can also use these settings if you’re installing any of the following:
+- You can also use these settings if you’re installing any of the following products:
    - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
    - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
    - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
-- Installations of the following products will also be removed unless you use IgnoreProduct:
-   - SharePoint Designer. The product ID is SharePointDesigner.
-   - InfoPath. The product ID is either InfoPath (for volume licensed versions) or InfoPathR (for retail versions).
-   - Lync 2013 or later. Lync 2010 can't be removed by using the RemoveMSI element.
-   - Office products that were installed separately and not as part of an Office suite. For example, a standalone installation of Access.
-   - Access 2010 Runtime or later. The product ID is AccessRT.
-- Access Database Engine 2010 Redistributable or later can’t be removed by using the RemoveMSI element.  This is because Access Database Engine is most commonly included as part of other applications which are interacting with Access data sources, and uninstalling Access Database Engine could impact functionality of these applications.  Before removing Access Database Engine, ensure that any applications which require this component are removed or no longer needed.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
 - Some previous versions of Office, Visio, and Project must be uninstalled before installing Microsoft 365 Apps. For example, Office Professional Plus 2016. If they aren’t uninstalled beforehand, the installation of Microsoft 365 Apps will fail. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
 - A reboot is required to finish uninstalling the Windows Installer (MSI) versions of Office, but the reboot isn’t enforced. You can reboot after the Microsoft 365 Apps installation is finished.
-- RemoveMSI doesn’t uninstall prior versions of Office, including Visio and Project, that use Click-to-Run as the installation technology. You can uninstall those versions of Office through Control Panel or by running the Office Deployment Tool and using the [Remove element](office-deployment-tool-configuration-options.md#remove-element) in your configuration.xml file.
-- If you're using RemoveMSI on a Windows 7 SP1 computer, pinned shortcuts that the user created might sometimes remain even though the previous version of Office and all of its other shortcuts have been removed. To remove the pinned shortcut, simply click on it and you'll be prompted to remove it. Or, log in as the user who created the pinned shortcut, and then run the Office Deployment Tool to upgrade to Microsoft 365 Apps.
+- If you're using RemoveMSI on a Windows 7 SP1 computer, pinned shortcuts that the user created might sometimes remain even though the previous version of Office and all of its other shortcuts have been removed. To remove the pinned shortcut, simply click on it and you'll be prompted to remove it. Or, sign in as the user who created the pinned shortcut, and then run the Office Deployment Tool to upgrade to Microsoft 365 Apps.
 
-## Related topics
+## Related articles
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
