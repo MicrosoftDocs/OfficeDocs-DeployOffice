@@ -21,9 +21,10 @@ There are three versions of Office for Mac that are referred to in this guide:
 - **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
 - **Office 2016 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed, until October 13, 2020.
 
+> [!IMPORTANT]
+> Support for Office 2016 for Mac ends on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
 
-
-  
+ 
   
 This guide covers the following areas:
   
@@ -37,12 +38,12 @@ This guide covers the following areas:
     
 - [Overview of activation for Office for Mac](overview-of-activation-for-office-for-mac.md)
     
-In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following:
+In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following sites:
   
 - [System requirements for Office](https://products.office.com/office-resources), for installation requirements, such as supported operating systems.
 
 - [Office for Mac](https://products.office.com/mac), for purchasing information.
     
-- [Office Help & Training](https://support.office.com), for help on how to use Office for Mac.
+- [Office Help & Training](https://support.microsoft.com/office), for help on how to use Office for Mac.
         
 
