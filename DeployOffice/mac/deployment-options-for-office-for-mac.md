@@ -38,7 +38,7 @@ The easiest way to download Office for Mac, and ensure you're always getting the
 
 Here is some additional information about installer packages:
 
-- Installer and update packages for individual applications are also available on the Office CDN. For links to those, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
+- Installer and update packages for individual applications are also available on the Office CDN. For links to those packages, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
 - The same installer package is used for Office for Mac and Office 2019 for Mac. How you activate the product determines whether you get the features for Office for Mac or the features for Office 2019 for Mac.
 - Unlike Office 2016 for Mac, the installer package for Office 2019 for Mac isn't available on the Volume Licensing Service Center (VLSC).
   
@@ -53,7 +53,7 @@ Office for Mac uses the Apple Installer technology for installation. That means 
 
 Whichever deployment method you decide to use, the following information can help you plan your Office for Mac deployment.
   
-- **What's new:** Before you deploy, review the information about [what's new for admins](what-s-new-for-admins-in-office-for-mac.md) in Office for Mac. This topic includes information about system requirements, language support, and new features. 
+- **What's new:** Before you deploy, review the information about [what's new for admins](what-s-new-for-admins-in-office-for-mac.md) in Office for Mac. This article includes information about system requirements, language support, and new features. 
     
 - **Side-by-side installation:** You can't have Office 2016 for Mac and Office 2019 for Mac installed on the same computer. Also, you can't have Office for Mac (from an Office 365 or Microsoft 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same computer.
     
@@ -62,6 +62,8 @@ Whichever deployment method you decide to use, the following information can hel
 - **Activation:** To use Office for Mac, it needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) in Office for Mac. 
 
 - **Uninstalling:** If you need to uninstall Office for Mac, you can [follow these steps to completely remove](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0) Office for Mac. Unfortunately, there is no program to uninstall Office for Mac automatically.
+
+- **Upgrading to Office for Mac (subscription version):** If you're a volume licensed customer of Office 2016 for Mac or Office 2019 for Mac, you can upgrade to Office for Mac (available with certain Office 365 or Microsoft 365 plans) without uninstalling your current version. First, download and run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193). Second, launch Microsoft AutoUpdate (MAU) and install the latest Office updates. Finally, launch any Office app and sign in with your Office 365 or Microsoft 365 account. For a demo of these steps, and an example of how to automate this process with Jamf Pro, [watch this video](https://aka.ms/modi3).
 
 - **Upgrading to Office 2019 for Mac:** If you're a volume licensed customer, you can upgrade to Office 2019 for Mac without uninstalling Office 2016 for Mac. First, you need to download the 2019 version of the [Volume License (VL) Serializer](volume-license-serializer.md) from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). Second, [download](https://go.microsoft.com/fwlink/p/?linkid=525133) the latest version of Office 2019 for Mac. Then, deploy both the Volume License (VL) Serializer and Office 2019 for Mac to each device running Office 2016 for Mac. There is no need to remove Office 2016 for Mac first. If you need to go back to Office 2016 for Mac after you've upgraded, [follow these steps](https://support.microsoft.com/office/d987c6c5-f077-45cc-8c13-08f0d2c69c65). 
 
