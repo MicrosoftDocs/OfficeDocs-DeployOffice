@@ -645,6 +645,13 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **process_bitness** - Process bitness (32 or 64 bit) for the application to help detect issues specific to device bitness
 
+- **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_name**: The package name of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_version**: The package version of webview on the device to help us detect compatibility issues related to the version of webview.
+
+
 ## Software setup and inventory data events
 
 The following are the data subtypes in this category:
