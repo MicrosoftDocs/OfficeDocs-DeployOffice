@@ -29,7 +29,7 @@ To enable extended offline access for users in your organization with Group Poli
 
 - Enable the **Allow extended offline use** policy setting. You can find this policy setting under HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing.
 
-To use this policy setting, download and install the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
+To use this policy setting, download and install the [Group Policy Administrative Template files (ADMX/ADML) for enabling the extended offline access for Microsoft 365 Apps](https://download.microsoft.com/download/5/6/c/56ce6724-dbdf-4794-819c-470077b6f6b0/Group_Policy.zip) from the Microsoft Download Center.
 
 ## Extending offline access for devices with no internet access
 
