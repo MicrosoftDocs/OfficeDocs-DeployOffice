@@ -11,7 +11,7 @@ ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with information about optional diagnostic data in Office, including some exaaples of events."
+description: "Provides Office admins with information about optional diagnostic data in Office, including some examples of events."
 hideEdit: true
 ---
 
