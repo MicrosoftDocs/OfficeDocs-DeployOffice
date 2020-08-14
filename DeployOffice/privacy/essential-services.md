@@ -10421,6 +10421,140 @@ The following fields are collected:
  
 - **ErrorMsg** - The error message corresponding to the failure.
 
+### OneNote.Storage.ConnectivityChanged
+
+The event logs if a user has internet connectivity or not. This is used to correlate the other sync health performance metrics by allowing us to ignore events that occur while a user does not have internet connectivity as we do not expect our service latency to be acceptable without internet connectivity. This allows us to calculate an accurate session count for our metrics across slices of customers (per-tenant, per-sector). We also use it to filter error reports as there are numerous sync errors that we expect to occur without network connectivity but that warrant investigation otherwise.
+
+If we do not receive this data, we will not be able to accurately monitor our products performance or determine if errors experienced by a user are expected or require further investigation.
+
+The following fields are collected:
+
+- **InternetConnectivityNowAvailable** -  If the connectivity state has been changed so it is now Internet
+
+### OneNote.Storage.LegacyInboundLatency
+
+The critical signal used to track the performance of inbound sync operations that communicate directly with sharepoint including correlating information allowing us to monitor and investigate the performance of uploading data to our service. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
+
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data to our service, information about the data they ere uploading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we do not have this data it will prevent us from ensuring adequate download performance when a user syncs changes from sharepoint to their computer.
+
+The following fields are collected: 
+
+- **IsEducationNotebook** - A bool indicating if the notebook is an education notebook
+
+- **NotebookId** - The ID of the notebook that this upload is part of
+
+- **TimeToConfirmSyncedWithServerInMs** - The time in milliseconds it took to perform the upload
+
+### OneNote.Storage.LegacyOutboundLatency
+
+The critical signal used to track the performance of outbound sync operations that communicate directly with sharepoint including correlating information allowing us to monitor and investigate the performance of uploading data to our service. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
+
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow outbound of data to our service, information about the data they were uploading when they experienced the slow outbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we do not have this data, it will prevent us from ensuring adequate performance when syncing users changes up to SharePoint. 
+
+The following fields are collected: 
+
+- **IsEducationNotebook** - A bool indicating if the notebook is an education notebook
+
+- **NotebookId** - The ID of the notebook that this upload is part of
+
+- **TimeToConfirmSyncedWithServerInMs** - The time in milliseconds it took to perform the upload
+
+### OneNote.Storage.RealTime.FileDataObjectDownload 
+
+The critical signal used to track performance when a user inbounds a file data object (i.e. an embedded file or image) which is downloaded directly from our service and not as part of a sync operation on a page, section or notebook. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
+
+This is used to ensure service health and performance by allowing us to see which tenants are experiencing an unacceptably slow download of data from our service, and how widespread within a tenant that latency issue is, and report our behavior over time allowing us to measure service performance trends. If we see an unacceptable latency for a file object, we will also use this data to correlate that with other signals from the client and service regarding the object to make improvements to our download process. We also split the data based on the extension of the file object downloaded as we have different expectations based on whether the file is presented inline in our canvas (e.g. an image) or is a non-inline file (such as a text document). If we do not receive this data, it will prevent us from monitoring the performance of these downloads
+
+The following fields are collected: 
+
+- **FileSizeInBytes** - The size of the file being downloaded in bytes 
+
+- **IsImage** - A bool determining if the file being downloaded has an extension that matches a pre-determined list of common image formats (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png) that we display inline in the canvas
+
+- **TimeToDownload** - The length of time it took to successfully download the FDO from our blob storage to the device 
+
+### OneNote.Storage.RealTime.WebSocketDownload
+
+The critical signal used to track performance of inbound sync operations including correlating information allowing us to monitor and investigate the performance of downloading data from our service (onenote.com). This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
+
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data from our service, information about the data they were downloading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. 
+
+If we see an unacceptable latency for a section or notebook we will also use this data to correlate that with other signals from the client and service regarding the same document to identify client side performance regressions allowing us to deliver a more performant service.
+
+If we do not receive this data, we will be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
+
+The following fields are collected:
+
+- **DeviceSessionId** -  The ID of the device session
+
+- **IsEducationNotebook** - A bool indicating if the notebook is an education notebook
+
+- **IsHierarchyResource** - A bool indicating if the resource is a hierarchy resource
+
+- **NotebookId** - The ID of the notebook that this upload is part of
+
+- **ResourceId** - The ID of the resource that we are uploading
+
+- **SectionId** - The ID of the section that this upload is part of
+
+- **ServerSessionId** - The ID of the server session that this upload is part of
+
+- **TimeToConfirmSyncedWithServerInMs** - The time in milliseconds between a user navigating to a page and the replication stack confirming that page is in sync with the server.
+
+- **TimeToFirstUpdateInMs** - The time in milliseconds between the sync engine beginning inbound replication of a page and that replication operation reaching the in sync with the server state.
+
+### OneNote.Storage.RealTime.WebSocketUpload
+
+The critical signal used to track the performance of outbound sync operations including correlating information allowing us to monitor and investigate the performance of uploading data to our service (onenote.com)
+
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow outbound of data to our service, information about the data they were uploading when they experienced the slow outbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. We will also use this data to track the impact and effectiveness of improvements we make to our clients and services. 
+
+If we see an unacceptable latency for a section or notebook we will also use this data to correlate that with other signals from the client and service regarding the same document to identify performance regressions allowing us to deliver a more performant experience.
+
+If we do not receive this data, we will be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
+
+The following fields are collected: 
+
+- **DeviceSessionId** - The ID of the device session
+
+- **IsEducationNotebook** - A bool indicating if the notebook is an education notebook
+
+- **IsHierarchyResource** - A bool indicating if the resource is a hierarchy resource
+
+- **IsWorstTime** - A bool indicating if the time is a regular upload event, or the worst time we saw on this client in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
+
+- **NotebookId** - The ID of the notebook that this upload is part of
+
+- **RecommendedPutIntervalInMs** - The time the service has communicated to the client as its recommended put interval
+
+- **ResourceId** - The ID of the resource that we are uploading
+
+- **SectionId** - The ID of the section that this upload is part of
+
+- **SenderRequestId** - The ID of the sender performing the upload
+
+- **ServerSessionId** - The ID of the server session that this upload is part of
+
+- **UploadNonSuspendedTimeInMs** - The time in milliseconds it took to perform the upload excluding the time when the application was suspended
+
+- **UploadTimeInMs** - The time in milliseconds it took to actually perform the upload
+
+- **WaitTimeInMs** - The time in millseconds between an upload being requested and an upload starting
+
+- **WebUrl** - The WebUrl of the upload (Logged as a PiiWz)
+
+### OneNote.Storage.SyncHealth
+
+The critical signal used to track errors and exceptions that have occurred inside the sync stack in the OneNote client allowing us to monitor and mitigate these unexpected conditions.
+
+This is used to ensure service health by allowing us to see error reports from the clients in near real-time, which lets us respond to sync issues as they arise. It is also used to identify how widespread an issue is, and how severe by cross-referencing the error tag with the client code to identify the source of failure. We also aggregate this data to get information on our performance over time and the impact and effectiveness of improvements we make to our clients and services. If we do not have this data, we won’t be able to proactively respond to error conditions in our sync service without customer escalation.
+
+The following fields are collected: 
+
+- **Service** - The sync service the client was using when the error occurred (Legacy or Modern Sync)
+
+- **Tag** - The tag (a identifying value) representing the error that the client encountered during the sync operation
+
 ### OneNote.Sync.CreateNotebookFailed
  
 This event is logged when creation of a notebook fails.  
