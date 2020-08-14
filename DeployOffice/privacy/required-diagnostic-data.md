@@ -645,6 +645,13 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **process_bitness** - Process bitness (32 or 64 bit) for the application to help detect issues specific to device bitness
 
+- **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_name**: The package name of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_version**: The package version of webview on the device to help us detect compatibility issues related to the version of webview.
+
+
 ## Software setup and inventory data events
 
 The following are the data subtypes in this category:
@@ -1567,9 +1574,9 @@ The following fields are collected:
 
 - **error_type** - The type of error that occurred. Some examples include save draft, send draft, and cloud file error.
 
-- **exrule** - the extended rule value (only applies to appointment recurrence errors)
+- **exdate** - the extended rule date (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **exdate** - the extended rule date (only applies to appointment recurrence errors)
+- **exrule** - the extended rule value (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **has_attachments** - Reflects if the draft the error occurred on has attachments, if applicable.
 
@@ -1581,13 +1588,13 @@ The following fields are collected:
 
 - **is_recoverable** - Reflects if the error can be recovered from or if it is a fatal error.
 
-- **rdate** - the date of the recurrence rule (only applies to appointment recurrence errors) 
+- **rdate** - the date of the recurrence rule (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **rrule** - the recurrence rule itself (only applies to appointment recurrence errors) 
+- **rrule** - the recurrence rule itself (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **rrule_error_message** - recurrence rule parsing error message (only applies to appointment recurrence errors)
+- **rrule_error_message** - recurrence rule parsing error message (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **rrule_error_type** - recurrence rule parsing error type (only applies to appointment recurrence errors)
+- **rrule_error_type** - recurrence rule parsing error type (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **status_code** - The status code of the error that occurred. This helps us understand the cause of the error.
 
@@ -1659,6 +1666,8 @@ The following fields are collected:
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
 
+- **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
 - **is_organizer** - Helps us understand if meetings are able to be edited and created by the organizer correctly. 
 
 - **is_recurring** - Helps us understand if there is an issue that specifically impacts recurring meetings. 
@@ -1709,27 +1718,23 @@ The following fields are collected:
 
 Used for monitoring possible negative impact on your ability to perform key search functionality such as searching for mail, contacts, or events.
 
-The following fields are collected:  
+The following fields are collected across iOS and Android: 
 
 - **account_switcher_action_type** - This action type tracks if the user used the account switcher either in simply discovery or if they decided to switch the account
 
-- **action** - the type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, I.e. was the mic used. This is instrumental in ensuring accurate and helpful searches.
-
 - **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, I.e. was the mic used. This is instrumental in ensuring accurate and helpful searches. 
-
-- **answer_result_selected_count** - tracks how many times the search was "successful" I.e. did the user find the person they wanted? Composed an email? Bookmarked the message? 
-
-- **contact_result_in_full_list_selected_count** - tracks how many times the user asked to "see all contacts" in full list was selected during the combined search session
-
-- **contact_result_selected_count** - tracks how many contact results were selected during the combined search session
-
-- **conversation_result_selected_count** - tracks how many conversations were selecting during the combined search session
 
 - **entrance_type** - This determines how the user started the search query, from the search tab, zero query, search heading, or search result. 
 
 - **has_contact_results** - Simple whether contact results are shown or not in the search query
 
 - **include_deleted** - whether the search is showing deleted options in the search results 
+
+- **is_ics_external_data** - Captures if an added event is internal (i.e added in Outlook to Outlook calendar) or external (i.e added from another email app such as Gmail to Outlook calendar).
+
+- **is_network_fully_connected** - This is to get a hint of the reason behind the offline search. If the network is connected and the search is offline, then the reason is likely to be the server timeout
+
+- **is_offline_search** - whether the search session is offline search based on search results returned by hx
 
 - **re_enter_search_tab** - Boolean to indicate whether a user has switched tabs before selecting a search result
 
@@ -1739,11 +1744,29 @@ The following fields are collected:
 
 - **search_origin** - Where did the search originate from, i.e. voice assistant, Cortana, keyboard input, etc. 
 
+- **search_scope** - A string indicating what type of account the user was searching in (I.e. Exchange, Gmail, etc.) or if it was in All Accounts. 
+
+- **search_suggestion_type** - indicates what is behind the search suggestion, I.e. is a spell correction? Based on history? Autocomplete?
+
 - **search_request_reason** - Indicates the reason a search request was sent from the app, in effect indicating the component or user action which invoked a search.
 
 - **search_result_filter_type** - Indicates what type of filter was applied to search, show all or attachments only
 
-- **search_scope** - A string indicating what type of account the user was searching in (I.e. Exchange, Gmail, etc.) or if it was in All Accounts. 
+The following fields are collected across iOS applications of Outlook Mobile: 
+
+- **action** - the type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, I.e. was the mic used. This is instrumental in ensuring accurate and helpful searches.
+
+- **answer_result_selected_count** - tracks how many times the search was "successful" I.e. did the user find the person they wanted? Composed an email? Bookmarked the message? 
+
+- **contact_result_in_full_list_selected_count** - tracks how many times the user asked to "see all contacts" in full list was selected during the combined search session
+
+- **contact_result_selected_count** - tracks how many contact results were selected during the combined search session
+
+- **conversation_result_selected_count** - tracks how many conversations were selecting during the combined search session
+
+- **mail_requests_count** - tracks how many mail search requests were sent within the combined search session
+
+- **people_filter_selected_contacts_count** - tracks how many contacts were selected in the people filter
 
 - **search_session_ended_type** - Indicates where a search ended because it was canceled or the updated was the query
 
@@ -1787,6 +1810,10 @@ The following fields are collected:
 - **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
 
 - **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
+
+- **reaction_origin** – Tells us origin from where the user reacted 
+
+- **reaction_type** – Tells us the reaction type of the user
 
 - **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
 
@@ -2610,6 +2637,8 @@ The following fields are collected:
 
 - **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
+- **Data_FirstPartyProviderApp** - If a file open on Word, Excel, or Powerpoint or Office apps is invoked from another Microsoft app, then the name of that provider app is captured here.
+
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, e.g. UI element, triggered by another app, etc.
@@ -2761,6 +2790,124 @@ Only collected when Office Telemetry Dashboard has been enabled by end user (mos
 The following fields are collected:
 
   - **Data.CollectionTime** - Timestamp of when a crash event was logged
+
+#### Office_AppDocs_AppDocs_DocumentOperation
+
+This event is collected for Office applications running on Android, iOS, Universal or Windows platforms. The event records when a file operation (create/open/save/export/etc.) takes place and it is used to understand and prioritize user-experiences based on the file operation information.
+
+The following fields are collected:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – App ID when not known before report end called on the operation.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – CanContinue state, before the begin handler is invoked.
+
+- **Data_DetachedDuration** – The duration of detach process of an event. 
+
+- **Data_Doc_AccessMode** – An enumeration indicating the access mode of the file, e.g. read only, read write.
+
+- **Data_Doc_AsyncOpenKind** – An enumeration indicating the type of asynchronous flow used to open the file.
+
+- **Data_Doc_ChunkingType** – An enumeration indicating the type of chunking algorithm of a file.
+
+- **Data_Doc_EdpState** – An enumeration indicating the enterprise data protection state of a file.
+
+- **Data_Doc_Ext** – The first 4 characters of the file extension of the file.
+
+- **Data_Doc_Fqdn** – The server host name of the file.
+
+- **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
+
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open..
+
+- **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
+
+- **Data_Doc_IOFlags** – An enumeration indicating the IO flags of a file open operation, e.g. if the file is cached or not.
+
+- **Data_Doc_IsCloudCollabEnabled** – Whether or not the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsIncrementalOpen** – Whether or not the file was opened via incremental open.
+
+- **Data_Doc_IsOcsSupported** – Whether or not a file supports Office Collaboration Service.
+
+- **Data_Doc_IsOpeningOfflineCopy** – Whether or not a file is opened from an offline cached copy.
+
+- **Data_Doc_IsPrefetched** – Whether or not the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** – Whether or not a cloud file exists locally and is synchronized with the server.
+
+- **Data_Doc_Location** – An enumeration indicating where the file is located, e.g. locally or in cloud.
+
+- **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
+
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+
+- **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
+
+- **Data_Doc_ServerDocId** – A GUID that uniquely identifies server document ID.
+
+- **Data_Doc_ServerProtocol** – An enumeration indicating the server protocol of a cloud file.
+
+- **Data_Doc_ServerType** – An enumeration indicating the server type of a cloud file.
+
+- **Data_Doc_ServerVersion** – An enumeration indicating the server version of a cloud file.
+
+- **Data_Doc_SessionId** – An integer which is incremented by 1 for each file open operation in a session.
+
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+
+- **Data_Doc_SizeInBytes** – File size in bytes.
+
+- **Data_Doc_SpecialChars** – An enumeration indicating which kind of special character the file URL has.
+
+- **Data_Doc_UrlHash** – A GUID that uniquely identifies the file URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – Whether or not the file was opened incrementally using pre-cached WRS data.
+
+- **Data_Doc_WopiServiceId** – A string indicating which service a WOPI (Web Application Open Platform Interface Protocol) file is from.
+
+- **Data_DocumentInputCurrency** – Type of document input used by the operation.
+
+- **Data_DocumentOperation_AppId** – Enumeration value representing the ID of an app.
+
+- **Data_DocumentOperation_EndEventId** – Tag that represents where the operation ended.
+
+- **Data_DocumentOperation_EndReason** – Enumeration value representing the end reason.
+
+- **Data_DocumentOperation_IsReinitialized** – Is reinitializing a document already open.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – Is the target execution context the same as the context opened from.
+
+- **Data_DocumentOperation_ParamsFlags** – Enumeration flags used to start the operation.
+
+- **Data_DocumentOperation_TelemetryReason** – Enumeration representation of the entry point for the open event. Eg- open from MRU or browse, file activation, etc.
+
+- **Data_FileIOInclusiveMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub-function calls.
+
+- **Data_FileIOMeasurements** – A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub-function calls.
+
+- **Data_InitializationReason** – Enumeration representation of the specific reason for the operation. Eg- open from a URL or a local file path, create with file picker, copy to file path, export to URL, etc.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
+
+- **Data_IsNameMissingInUrl** – Indicates if the name was not parsed from the URL.
+
+- **Data_IsPathMissingForLocalFile** – Indicates if this is a local file without a path.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – Indicates if unpackable link is supported for open.
+
+- **Data_LinksOpenRightScenario** – Enumeration value for the links open right scenario.
+
+- **Data_OpEndEventId** – Tag that represents where the operation ended.
+
+- **Data_OperationType** – Enumeration representation of the generic type of operation. Eg- create, open, copy, save, etc.
+
+- **Data_RelatedPrevOpTelemetryReason** – Is operation related to previous operation.
+
+- **Data_StopwatchDuration** – Total time for the event.
+
+- **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
+
+- **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
 #### Office_Docs_AppDocs_OperationOpenFromMruByPath
 
@@ -5209,7 +5356,7 @@ The following fields are collected:
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
-- **Data.hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
+- **Data.hasPersonaInsightRing** - Insights from Office or LinkedIn could be available for the user
 
 - **Data.hostAppRing** - The ring by which the app was distributed
 
@@ -5292,6 +5439,8 @@ The following fields are collected:
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
+- **Data.hasPersonaInsightRing** - Insights from Office or LinkedIn could be available for the user
+
 - **Data.hostAppRing** - The ring by which the app was distributed
 
 - **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
@@ -5357,13 +5506,15 @@ The following fields are collected:
 
 #### Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
 
-This event is collected for Union iOS, it records when a file open operation takes
+This event is collected for the Office app for iOS, it records when a file open operation takes
 place. We collect this data to ensure good performance for all file opens on the app. 
 
 The following fields are collected:
 
 - **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
 (only 1st party app info is being logged).
+
+- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(eg: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
 
 - **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
 
@@ -5401,11 +5552,17 @@ The following fields are collected:
 
 - **Data_FailureReason** - In case of open failure, these enums define the reason for failure.
 
+- **Data_FileGUID** – Global identifier for the file which is random generated
+
 - **Data_FileLocation** - Location where the file sits, ex: Local, ODSP, iCloud, etc.
 
 - **Data_FileOpenEntryPoint** - entry point for file open
 
 - **Data_FileSize** - Size of the file on which the operation is happening
+
+- **Data_NetworkRequestErrorResponse** – Network Error response corresponding to error code.
+
+- **Data_NetworkRequestStage** – Error stage in case of cloud pdf file download.
 
 - **Data_OpenMode** - In which mode the PDF was opened, ex: 0: View mode, 2: Sign mode
 
@@ -5420,6 +5577,43 @@ The following fields are collected:
 - **Data_Result** - The status of the operation being performed, ex: true:success, false:failure
 
 - **Data_Type** - Type of file operation (open, close or save) 
+
+#### Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+The event is collected for the Office app for iOS. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close and save operations performing as expected, and to improve .pdf file operation performance. 
+
+- **Data_Doc_FileOpSessionID** - Unique Id for a Document Session 
+
+- **Data_Doc_URLHash** - A GUID for the file url 
+
+- **Data_ErrorCode** – error in case of file open failures/download failures / download cancelled 
+
+- **Data_ErrorMessage** – relevant message to error code 
+
+- **Data_FailureReason** - In case of open failure, these enums define the reason for failure. 
+
+- **Data_FileGUID** – Global identifier for the file which is random generated
+
+- **Data_FileLocation** - Location where the file sits (Local, ODSP, iCloud, etc.) 
+
+- **Data_FileOpenEntryPoint** – entry point for file open 
+
+- **Data_FileSize** - Size of the file on which the operation is happening 
+
+- **Data_OpenMode** - In which mode the PDF was opened ( 0: View mode 2: Sign mode) 
+
+- **Data_PageCount** - Count of page in the PDF File.
+
+- **Data_PasswordProtected** - Marker that tell whether the file is password protected or not. 
+
+- **Data_ProviderApp** – currently providing provider app in case of file activation only 
+
+- **Data_ReadOnly** - Marker that tell whether the file is read-only or not.
+
+- **Data_Result** - The status of the operation being performed ( true:success , false:failure) 
+
+- **Data_Type** - Type of file operation (open, close or save)
+
 
 #### Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(previous name)*
 
@@ -8691,7 +8885,7 @@ The following fields are collected:
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
 
-#### Office.OfficeMobile.FirstRunSetup
+#### Office.OfficeMobile.FRE.FirstRunSetup
 
 The first run of the app after installation will trigger this heartbeat event. It will help identify installs and auto upgrades from older versions of the app and enable us to identify errors in auto-upgrades, including library loads and expansion/language package download failures.
 
@@ -11474,6 +11668,8 @@ The following fields are collected:
 
 - **CritiqueSummary** - Summary of what all critiques user saw with their counts.
 
+- **ExitEventCode** – Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit. 
+
 - **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
 
 - **RehearsalInitTime** - Time taken by rehearsal to initialize.
@@ -12992,6 +13188,12 @@ The following fields are collected for Android only:
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
 
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
+
+- **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_name**: The package name of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_version**: The package version of webview on the device to help us detect compatibility issues related to the version of webview.
 
 #### low_storage_warning
 
