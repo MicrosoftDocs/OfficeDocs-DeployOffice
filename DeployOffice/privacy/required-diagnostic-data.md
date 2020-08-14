@@ -1666,6 +1666,8 @@ The following fields are collected:
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
 
+- **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
 - **is_organizer** - Helps us understand if meetings are able to be edited and created by the organizer correctly. 
 
 - **is_recurring** - Helps us understand if there is an issue that specifically impacts recurring meetings. 
@@ -1794,6 +1796,10 @@ The following fields are collected:
 - **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
 
 - **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
+
+- **reaction_origin** – Tells us origin from where the user reacted 
+
+- **reaction_type** – Tells us the reaction type of the user
 
 - **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
 
@@ -2616,6 +2622,8 @@ The following fields are collected:
 - **Data_ErrorId_Tag** - A tag in the code to help find the point of failure
 
 - **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
+- **Data_FirstPartyProviderApp** - If a file open on Word, Excel, or Powerpoint or Office apps is invoked from another Microsoft app, then the name of that provider app is captured here.
 
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
@@ -5216,7 +5224,7 @@ The following fields are collected:
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
-- **Data.hasPersonalInsightRing** - Insights from Office or LinkedIn could be available for the user
+- **Data.hasPersonaInsightRing** - Insights from Office or LinkedIn could be available for the user
 
 - **Data.hostAppRing** - The ring by which the app was distributed
 
@@ -5299,6 +5307,8 @@ The following fields are collected:
 
 - **Data.feature** - Used to group various events of the same feature (Profile card)
 
+- **Data.hasPersonaInsightRing** - Insights from Office or LinkedIn could be available for the user
+
 - **Data.hostAppRing** - The ring by which the app was distributed
 
 - **Data.immersiveProfileCorrelationId** - A globally unique identifier for the expanded profile view session
@@ -5371,6 +5381,8 @@ The following fields are collected:
 
 - **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
 (only 1st party app info is being logged).
+
+- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(eg: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
 
 - **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
 
@@ -8698,7 +8710,7 @@ The following fields are collected:
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
 
-#### Office.OfficeMobile.FirstRunSetup
+#### Office.OfficeMobile.FRE.FirstRunSetup
 
 The first run of the app after installation will trigger this heartbeat event. It will help identify installs and auto upgrades from older versions of the app and enable us to identify errors in auto-upgrades, including library loads and expansion/language package download failures.
 
@@ -11481,6 +11493,8 @@ The following fields are collected:
 
 - **CritiqueSummary** - Summary of what all critiques user saw with their counts.
 
+- **ExitEventCode** – Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit. 
+
 - **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
 
 - **RehearsalInitTime** - Time taken by rehearsal to initialize.
@@ -12999,6 +13013,12 @@ The following fields are collected for Android only:
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
 
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
+
+- **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_name**: The package name of webview on the device to help us detect compatibility issues related to the version of webview.
+
+- **webview_package_version**: The package version of webview on the device to help us detect compatibility issues related to the version of webview.
 
 #### low_storage_warning
 
