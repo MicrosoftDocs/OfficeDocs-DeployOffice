@@ -10435,7 +10435,7 @@ The following fields are collected:
 
 The critical signal used to track the performance of inbound sync operations that communicate directly with sharepoint including correlating information allowing us to monitor and investigate the performance of uploading data to our service. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
 
-This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data to our service, information about the data they ere uploading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we do not have this data it will prevent us from ensuring adequate download performance when a user syncs changes from sharepoint to their computer.
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data to our service, information about the data they are uploading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we do not have this data it will prevent us from ensuring adequate download performance when a user syncs changes from sharepoint to their computer.
 
 The following fields are collected: 
 
