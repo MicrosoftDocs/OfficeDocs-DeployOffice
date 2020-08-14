@@ -59,6 +59,7 @@ The following table provides a list of connected experiences that analyze your c
 | *Smart Lookup*\*   | [Get insights into what you're working on with Smart Lookup](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Suggested replies | [What are suggested replies?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Tap for Word (Add from files)   | [Find and use the content you need, when you need, without leaving Word](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
+|Transcription |[Transcribe your recordings](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
