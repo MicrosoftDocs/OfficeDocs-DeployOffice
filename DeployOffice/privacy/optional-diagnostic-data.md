@@ -11,7 +11,7 @@ ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with information about optional diagnostic data in Office, including some exaaples of events."
+description: "Provides Office admins with information about optional diagnostic data in Office, including some examples of events."
 hideEdit: true
 ---
 
@@ -32,7 +32,7 @@ This diagnostic data is collected and sent to Microsoft about Office client soft
 
 ***Optional diagnostic data*** is additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and fix issues.
 
-If you choose to send us optional diagnostic data, required diagnostic data is also included.
+If you choose to send us optional diagnostic data, required diagnostic data is also included. Also, diagnostic log files for Office, which contain information very similar to optional diagnostic data, might be sent. For more information about those log files, see [Overview of diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
 Examples of optional diagnostic data include data we collect about the shapes users insert into Word documents so we can provide better options, and data we collect about the time it takes for a PowerPoint slide to appear on your screen so we can improve the experience if it’s slow.
 
