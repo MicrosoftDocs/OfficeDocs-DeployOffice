@@ -925,7 +925,7 @@ The following fields are collected:
 
 - **Provider Package ID** - In case of Auto sign in
 
-- **Result** - Succeeded, Failed, Unknown, Cancelled
+- **Result** - Succeeded, Failed, Unknown, Canceled
 
 - **ServerType** - Returns the type of the server offering the service 
 
@@ -2637,7 +2637,7 @@ The following fields are collected:
 
 - **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
-- **Data_FirstPartyProviderApp** - If a file open on Word, Excel, or Powerpoint or Office apps is invoked from another Microsoft app, then the name of that provider app is captured here.
+- **Data_FirstPartyProviderApp** - If a file open on Word, Excel, or PowerPoint or Office apps is invoked from another Microsoft app, then the name of that provider app is captured here.
 
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
@@ -5586,7 +5586,7 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 
 - **Data_Doc_URLHash** - A GUID for the file url 
 
-- **Data_ErrorCode** – error in case of file open failures/download failures / download cancelled 
+- **Data_ErrorCode** – error in case of file open failures/download failures / download canceled 
 
 - **Data_ErrorMessage** – relevant message to error code 
 
@@ -6119,7 +6119,7 @@ The following fields are collected:
 
   - **Data\_fLifeguarded:bool -** Was document ever lifeguarded (feature to fix document errors by themselves without prompting user)?
 
-  - **Data\_IsDocAutoSaveable:bool -** Is presentation auto savable?
+  - **Data\_IsDocAutoSaveable:bool -** Is presentation auto saveable?
 
   - **Data\_IsDocDirty:bool -** Does presentation have changes that are not yet saved?
 
@@ -8118,7 +8118,7 @@ The following fields are collected:
 
 - **suggestions_requested** - indicates how many smart compose suggestions requested
 
-- **suggestions_results** - smart compose suggestions’ result, i.e accpected, rejected
+- **suggestions_results** - smart compose suggestions’ result, i.e accepted, rejected
 
 - **suggestions_returned** - indicates how many smart compose suggestions returned from server
 
@@ -10378,7 +10378,7 @@ The following fields are collected:
 
      - java - if crash recorded on application Layer.
 
-     - native - if crash recored on native layer within the app. 
+     - native - if crash recorded on native layer within the app. 
 
      - non-fatal - crashes being recorded to debug any feature. Application won’t crash but it will upload non-fatal crash logs to help in debugging a feature.
 
@@ -11897,7 +11897,7 @@ The following fields are collected:
 
 #### OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
 
-The critical signal used to track user response when he/she sees a safe boot dialog. Safe boot dialog is shown when we were unable to launch repeatedly. User choice to safe boot is used as permission to clear app data to launch successfully. This is used to ensure critical regression detection for OneNote app and service health. User sees when they encounter critical boot crash bug. This info will help track if they crash causehas been resolved and user can launch the app successfully or not.
+The critical signal used to track user response when he/she sees a safe boot dialog. Safe boot dialog is shown when we were unable to launch repeatedly. User choice to safe boot is used as permission to clear app data to launch successfully. This is used to ensure critical regression detection for OneNote app and service health. User sees when they encounter critical boot crash bug. This info will help track if they crash cause has been resolved and user can launch the app successfully or not.
 
 The following fields are collected: 
 
