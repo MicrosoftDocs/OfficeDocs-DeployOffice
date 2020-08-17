@@ -1,5 +1,6 @@
 # Office end of support resources
 
+## [End of support resources](resources.md)
 ## [Connectivity to Office 365 services](office-365-services-connectivity.md) 
 
 ## Microsoft 365 Apps
