@@ -14524,7 +14524,7 @@ The following fields are collected:
 
 - **UploadTimeInMs** - The time in milliseconds it took to actually perform the upload
 
-- **WaitTimeInMs** - The time in millseconds between an upload being requested and an upload starting
+- **WaitTimeInMs** - The time in milliseconds between an upload being requested and an upload starting
 
 - **WebUrl** - The WebUrl of the upload (Logged as a PiiWz)
 
