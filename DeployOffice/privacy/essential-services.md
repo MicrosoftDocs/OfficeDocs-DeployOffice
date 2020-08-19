@@ -9715,6 +9715,57 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+
+### installedapp_sendcoreappleevent
+
+This event indicates Microsoft Auto Update (MAU) is sending an Apple event to a registered application to terminate the application in order to proceed with pending application update. This event is currently being used to help develop future enhancement to minimize user interruption during application updates. 
+
+The following fields are collected:
+
+- **Acknowledged** - Indicates whether the subject application has acknowledged receipt of the event
+
+- **App** - The application process sending the event
+
+- **AppID** - Identifier for the application being updated
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppleEventClass** - Indicates type of event being sent/acknowledged
+
+- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains retry count
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **Success** -	Indicates whether the subject application has reported success of operation
+
     
 ### installstatus_codesign
 
@@ -10414,6 +10465,104 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### installupdatestask_updatestatus
+
+This event reports on status of installation task. This event forms part of the update funnel and is used to determine health of application updates.
+
+The following fields are collected: 
+
+- **App** - The application process sending the event
+
+- **AppID** - Identifier for the application being updated
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Error** - Indicates any errors encountered during update process, if populated
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **IOC** - Indicates whether Install on Clone feature was used
+
+- **Payload** - Static text to indicate beginning of install process if present
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **Success** -	 Indicates whether the install process has successfully completed
+
+- **UpdateID** - Identifier for an application update
+
+- **UpdateName** - Name of the update as it appears in the downloaded manifest file
+
+- **UpdatePkg** - Name of the update package being applied
+
+
+### msupdate_cli_eventhandler
+
+This event is used to calculate the usage of various types of Microsoft Auto Update (MAU) Command Line Interface API.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppID** - The identifier of application that sends command line interface API to MAU.
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry got received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **EventType** - The type of event that is sent by application to MAU’s command line interface API.
+
+- **HowTocheck** - The preference for checking of updates
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+
 ### msupdate_cli_eventhandler_applyupdates_appids
 
 This event indicates a CLI (client-line interface) command was issued to apply an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
@@ -10738,6 +10887,609 @@ The following fields are collected:
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+
+### sauforcedupdate_autodismiss
+
+This event indicates displayed force update dialog is being dismissed due to user inactivity. This event is used to determine volume of forced updates that proceed without users providing any input to the displayed notification. This event is used to enhance user interface to minimize interruption.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+  
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** -The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_close
+
+This event indicates user has chosen to close forced update dialog. This event is used to determine volume of forced updates that are postponed by user action. This event is used to enhance user interface to minimize interruption. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_completeautodismiss
+
+This event indicates that displayed forced update dialog from deadline feature is being dismissed due to user inactivity. This event is used to determine volume of forced updates that proceed without users providing any input to the displayed notification. This event is used to enhance user interface to minimize interruption for deadline feature.
+
+The following fields are collected: 
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_completeclose
+
+This event indicates successful completion of a forced update. This event is used to help determine health of the forced update feature. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_display
+
+This event indicates that a forced update dialog has been displayed.  This event forms part of a forced update funnel and is used to determine the health of the forced update feature.
+
+The following fields are collected: 
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_displayfinalhour
+
+This event indicates that a forced update final hour dialog has been displayed. This event forms part of forced update funnel and is used to determine health of forced update feature.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_done
+
+This event indicates that a forced update has successfully completed. This event forms part of forced update funnel and is used to determine health of forced update feature. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_enabled
+
+This event is triggered when Microsoft Auto Update (MAU) determines forced update is applicable.  This event is used to determine health of forced update feature. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Enabled** - Indicates whether forced update is enabled
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **InvalidUpdates** - Count of forced updates set with invalid update versions
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_forcedupdatedismiss
+
+This event indicates that the displayed force update final hour dialog is being dismissed due to user inactivity. This event is used to determine volume of forced updates that proceed without users providing any input to the displayed notification. This event is used to enhance the user interface to minimize interruption. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_forcequitandupdatenow
+
+This event indicates start of user initiated forced update. This event forms part of funnel and is used to determine health of forced update feature. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session 
+
+### sauforcedupdate_forceterminate
+
+This event indicates start of the forced update with application being terminated forcefully.  This event forms part of the funnel and is used to determine health of forced update feature.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application Version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The Hardware Model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains count of applications to be terminated
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_quitandupdatenow
+
+This event indicates that the user has elected to close the application and apply update. This event forms part of a funnel and is used to determine the health of the forced update feature. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_snooze
+
+This event indicates user has elected to postpone forced update. This event forms part of funnel and is used to determine health of forced update feature. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_terminate
+
+This event indicates start of the forced update with application being terminated. This event forms part of the funnel and is used to determine health of forced update feature.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains count of applications to be terminated
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+### sauforcedupdate_updatenow
+
+This event indicates user has elected to update application now.  This event forms part of funnel and is used to determine health of forced update feature.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Static text
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
 
 - **SessionId** - The identifier for the session
 
