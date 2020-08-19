@@ -1,7 +1,7 @@
 ---
-title: "Target version"
-ms.author: johmark
-author: johmarkMSFT
+title: "Security Currency"
+ms.author: darrend
+author: darrend__update_with_your_github_username
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -11,11 +11,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
 ---
 
-# Target Version
+# Security Currency
 
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
-
-## Limitations and known issues
-
-Ensure you assign devices to an AAD group to target them with Target Version. Targeting only affects device based AAD groups, not user based AAD groups.
