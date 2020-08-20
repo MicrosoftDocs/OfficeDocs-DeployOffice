@@ -1,5 +1,5 @@
 ---
-title: "Overview of extended offline access for Microsoft 365 Apps"
+title: "Overview of extended offline access for Microsoft 365 Apps for enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
@@ -16,10 +16,10 @@ description: "Overview of extended offline access for Microsoft 365 Apps."
 
 # Overview of extended offline access for Microsoft 365 Apps
 
-Extended offline access enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. To use extended offline access, you must have version 2002 of Microsoft 365 Apps or later. To enable extended offline access, your organization must have a Microsoft 365 license subscription and xx.
+Extended offline access enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. To use extended offline access, you must have version 2002 of Microsoft 365 Apps or later. To enable extended offline access, your organization must have a Microsoft 365 Apps license subscription and xx.
 
 > [!IMPORTANT]
-> Extended offline access for Microsoft 365 Apps for enterprise is not available as a license for all customers. To find out about availability for your organization, contact your Microsoft account representative.
+> Extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
 
 Extended offline access is designed for users with devices that need to go offline for an extended period, such as users in secure environments, remote locations, or on field trips with no connectivity. 
 
@@ -31,11 +31,11 @@ To enable extended offline access for users in your organization with Group Poli
 
 To use this policy setting, download and install the [Group Policy Administrative Template files (ADMX/ADML) for enabling the extended offline access for Microsoft 365 Apps](https://download.microsoft.com/download/5/6/c/56ce6724-dbdf-4794-819c-470077b6f6b0/Group_Policy.zip) from the Microsoft Download Center.
 
-## Extending offline access for devices with no internet access
+## Extended offline access for devices with no internet access
 
-When a device loses internet access, the user can continue to use Office without an internet connection for up to six months.  When a few days remain, the user receives an in-client notification to connect to the internet so the license can be verified. If possible, the user should connect the device to the internet, which will enable an additional six months. 
+When a device loses internet access, the user can continue to use Office without an internet connection for up to 180 days.  When 15 days remain, the user receives an in-client notification to connect to the internet so the license can be verified. If possible, the user should connect the device to the internet, which will enable an additional 180 days. 
 
-If the device cannot connect to the internet every six months, you can still [extend the Office license for offline use](https://support.office.com/article/extend-your-office-license-for-offline-use-06de5162-e230-4ce6-83bb-e6f06190a8f5).
+If the device cannot connect to the internet every 180 days, you can still [extend the Office license for offline use](https://support.office.com/article/extend-your-office-license-for-offline-use-06de5162-e230-4ce6-83bb-e6f06190a8f5).
 
 ## Considerations when using extended offline access
 
