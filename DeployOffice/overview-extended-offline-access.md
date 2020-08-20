@@ -35,18 +35,18 @@ To use this policy setting, download and install the [Group Policy Administrativ
 
 If you can't use group policy to enable extended offline access, you can update the registry. To enable the setting, set the following:
 
-    -[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing]
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing]
     "ExtendedOfflineSubscription"=dword:00000001
     
-    -[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Microsoft\Office\16.0\Common\Licensing]
+    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Microsoft\Office\16.0\Common\Licensing]
     "ExtendedOfflineSubscription"=dword:00000001
 
 To disable the setting, set the following:
 
-    -[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing]
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\Licensing]
     "ExtendedOfflineSubscription"=dword:00000000
     
-    -[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Microsoft\Office\16.0\Common\Licensing]
+    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Microsoft\Office\16.0\Common\Licensing]
     "ExtendedOfflineSubscription"=dword:00000000
 
 ## Extended offline access for devices with no internet access
