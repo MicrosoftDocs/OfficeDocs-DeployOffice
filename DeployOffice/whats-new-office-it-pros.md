@@ -29,7 +29,7 @@ We've published the following new articles to provide information about end of s
 
 You can download and print the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390) to use as a reference.
 
-If you have end of support questions about Office, go to [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
+To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
 
 ## June 2020
 
