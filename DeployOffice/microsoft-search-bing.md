@@ -66,9 +66,6 @@ You can choose to provide the extension to everyone in your organization or just
 
 Changes that you make to which users get the extension can take up to 24 hours to take effect on their devices.
 
-> [!NOTE]
-> Currently, you're limited to a maximum of five groups and 500 total users. We're working on removing this limitation in the near future.
-
 ### Install the background service for Microsoft Search in Bing on the user’s device
 
 Another requirement is that a background service for Microsoft Search in Bing needs to be installed on the user’s device. This background service is included with Microsoft 365 Apps for enterprise, starting with Version 2005. For more information about the schedule, [review this table](#which-versions-of-microsoft-365-apps-for-enterprise-include-the-background-service-for-microsoft-search-in-bing).
