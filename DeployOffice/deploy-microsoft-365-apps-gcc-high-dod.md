@@ -164,7 +164,7 @@ and
 In addition to telemetry data settings, there are some additional settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Ensure modern authentication is enabled
-Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Microsoft 365 Apps for enterprise. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
+Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Microsoft 365 Apps for enterprise. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
 
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
@@ -234,7 +234,7 @@ For general deployment guidance about Microsoft 365 Apps for enterprise, see the
 
 For networking information, see the following articles:
 
-- [Office 365 U.S. Government GCC High endpoints](https://docs.microsoft.com/office365/enterprise/office-365-u-s-government-gcc-high-endpoints)
-- [Office 365 U.S. Government DoD endpoints](https://docs.microsoft.com/office365/enterprise/office-365-u-s-government-dod-endpoints)
-- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-- [Network requests in Office for Mac](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
+- [Office 365 U.S. Government GCC High endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
+- [Office 365 U.S. Government DoD endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
+- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- [Network requests in Office for Mac](https://docs.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
