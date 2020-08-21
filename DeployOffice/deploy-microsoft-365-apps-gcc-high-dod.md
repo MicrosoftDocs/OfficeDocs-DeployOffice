@@ -198,7 +198,7 @@ Due diligence was done to review cloud services connected to features in Microso
 
 |**Application**  |**Feature**  |**Recommendation**  |
 |---------|---------|---------|
-|Excel     |[Maps](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Current Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Enterprise Channel (Preview) <br/> - Version 1803 (Build 9126.2259) of Semi-Annual Enterprise Channel  <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
+|Excel     |[Maps](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)         |This feature has been disabled, as of these releases: <br/><br/> - Version 1804 (Build 9226.2126) of Current Channel <br/> - Version 1803 (Build 9126.2191) of Semi-Annual Enterprise Channel (Preview) <br/> - Version 1803 (Build 9126.2259) of Semi-Annual Enterprise Channel  <br/><br/> If you're using an earlier version of Excel, don't use this feature.|
 
 
 ## Reference information
