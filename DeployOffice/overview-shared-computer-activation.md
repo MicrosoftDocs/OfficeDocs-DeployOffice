@@ -52,7 +52,7 @@ If you want to enable shared computer activation during the initial installation
   <Property Name="SharedComputerLicensing" Value="1" />
   ```
 
-If the Microsoft 365 Apps are already installed and you want to enable shared computer activation, there are three options to choose from. A re-installation is not required. The device must be rebooted in order to apply the change.
+If Microsoft 365 Apps is already installed and you want to enable shared computer activation, there are three options to choose from. A re-installation is not required. The device must be rebooted in order to apply the change.
 
 - Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
 - Use Registry Editor to add a string value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
