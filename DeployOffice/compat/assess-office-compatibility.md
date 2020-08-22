@@ -195,7 +195,7 @@ As part of your overall Office training plan, you should provide guidance to use
   
 ### Prepare help desk and users for change
 
-Your Help Desk should be ramped up on Office and ready to support users. They should start by going to the [Microsoft 365 Training](https://support.microsoft.com/training).
+Your Help Desk should be ramped up on Office and ready to support users. They should start by going to [Microsoft 365 Training](https://support.microsoft.com/training).
     
 ## Related articles
 
