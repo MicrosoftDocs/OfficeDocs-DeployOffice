@@ -32,7 +32,7 @@ Here are the general steps to deploy a subscription version of Visio to users in
   
 1. Purchase Visio Plan 2, with enough licenses for each of your Visio users.
     
-2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Visio to those users. 
+2. Sign in to Office 365 and [assign licenses](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Visio to those users. 
     
 3. Have your users sign in to Office 365 and install Visio from the **Software** section of the Office 365 portal. Users have to be local administrators on their computers to install Visio. 
     
@@ -90,10 +90,10 @@ The same Group Policy settings work for the subscription version of the Visio de
 
 To help your users get started with Visio, here are some resources to share with them:
   
-- [What's new in Visio 2019](https://support.office.com/article/19b8e98d-9cf9-40ad-9277-eb65e3713a79)
-- [Visio help center](https://support.office.com/visio)
+- [What's new in Visio 2019](https://support.microsoft.com/office/19b8e98d-9cf9-40ad-9277-eb65e3713a79)
+- [Visio help & learning](https://support.microsoft.com/visio)
     
-## Related topics
+## Related articles
 
 - [Plans and pricing information](https://products.office.com/visio/microsoft-visio-plans-and-pricing-compare-visio-options?tab=tabs-1)
 - [Visio licensing](https://products.office.com/Visio/microsoft-visio-volume-licensing-visio-for-multiple-users)

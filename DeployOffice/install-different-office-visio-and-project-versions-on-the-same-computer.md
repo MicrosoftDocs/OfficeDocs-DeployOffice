@@ -37,7 +37,7 @@ The following table shows Office releases that are currently supported by Micros
 |Office 2010 | 14.0 | Windows Installer (MSI)  |
 
 
-<sup>1</sup> You can find this version information by going to **Control Panel** > **Programs** > **Programs and Features**. You can also find this version in the **About** dialog for the Office app. For example, open Word, and go to **File** > **Account** > **About Word**. On the top line of the **About Microsoft Word** dialog box, you will see the version number. For example, Microsoft Word 2019 MSO (16.0.10336.20044) 32-bit. For steps to find this version in different Office releases, see [Find details for other versions of Office](https://support.office.com/article/8e83dd74-3b83-4528-bda6-6ff6118f8293). 
+<sup>1</sup> You can find this version information by going to **Control Panel** > **Programs** > **Programs and Features**. You can also find this version in the **About** dialog for the Office app. For example, open Word, and go to **File** > **Account** > **About Word**. On the top line of the **About Microsoft Word** dialog box, you will see the version number. For example, Microsoft Word 2019 MSO (16.0.10336.20044) 32-bit. For steps to find this version in different Office releases, see [Find details for other versions of Office](https://support.microsoft.com/office/8e83dd74-3b83-4528-bda6-6ff6118f8293). 
 
 > [!IMPORTANT]
 > Office 365, Microsoft 365, Office 2019, and Office 2016 all have the same version: 16.0
@@ -90,7 +90,7 @@ Here are some example installation scenarios, whether they're supported, and an 
 - Volume licensed versions of Office 2013 and Office 2016 use Windows Installer (MSI). Volume licensed versions of Office 2019 use Click-to-Run. The same is true for volume licensed versions of Project and Visio.
 - For Office 365, Microsoft 365, and Office 2019 products, all products installed on the computer must be using the same [update channel](overview-update-channels.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. Therefore, it can't be installed on the same computer that has the subscription version of the Project desktop app using Semi-Annual Enterprise Channel or on the same computer that has the subscription version of the Visio desktop app using Current Channel.
 
-## Related topics
+## Related articles
 
 - [Deployment guide for Project](deployment-guide-for-project.md)
 - [Deployment guide for Visio](deployment-guide-for-visio.md)
