@@ -29,7 +29,7 @@ To use Microsoft 365 Apps, your users will need the appropriate license. To assi
 
 - Assign a license to a user directly in the Office 365 portal by selecting a check box on the licenses page for the user’s account. 
 
-- Use Office 365 PowerShell. For more information, see [Assign licenses to user accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell).
+- Use Office 365 PowerShell. For more information, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 - If you have a subscription for Azure AD Premium P1 and above, or an edition of Office 365 Enterprise E3 or Office 365 A3 or Office 365 GCC G3 and above, you can use group-based licensing with Azure AD. You can assign one or more product licenses to a group, and Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. For more information, see  [Group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). 
 
