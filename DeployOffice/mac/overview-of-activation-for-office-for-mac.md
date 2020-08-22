@@ -19,12 +19,12 @@ description: "Describes for admins how activation works for Office for Mac, for 
 To use Office for Mac in your organization, it needs to be activated. How you activate Office for Mac depends on whether your organization has an Office 365 (or Microsoft 365) plan or has a volume license agreement. But in both cases your users won't have to enter any product keys.
 
 > [!NOTE]
-> If you're an Office user trying to activate a personal copy of Office for Mac, [follow these instructions](https://support.office.com/article/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.   
+> If you're an Office user trying to activate a personal copy of Office for Mac, [follow these instructions](https://support.microsoft.com/office/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.   
 
    
 ## Activate Office 365 versions of Office for Mac
 
-If your organization has an Office 365 (or Microsoft 365) plan, make sure you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Office before you deploy Office  for Mac to your users. If you don't assign a user a license, you can still deploy Office for Mac to that user, but the user won't be able to activate and use Office. 
+If your organization has an Office 365 (or Microsoft 365) plan, make sure you [assign each user a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Office before you deploy Office  for Mac to your users. If you don't assign a user a license, you can still deploy Office for Mac to that user, but the user won't be able to activate and use Office. 
   
 For Office 365 (and Microsoft 365) customers, Office for Mac activates by contacting the Office Licensing Service on the internet. The Office Licensing Service keeps track of which users are licensed and how many computers they've installed Office on.
   
@@ -40,7 +40,7 @@ If the computer can't contact the Office Licensing Service after 30 days, Office
   
 For each user that you've assigned a license to, you can deploy and activate Office for Mac on up to five Macs for the user. If you need to provide Office for Mac on a sixth computer for a user, you need to deactivate an existing installation first. Deactivating an installation doesn't remove Office for Mac from the computer. Instead, the installation goes into reduced functionality mode.
   
-Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [admin center](https://support.office.com/Article/58537702-d421-4d02-8141-e128e3703547), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
+Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
   
 ## Activate volume licensed versions of Office for Mac
 
@@ -48,7 +48,7 @@ To activate a volume licensed version of Office 2019 for Mac or Office 2016 for 
 
 For more information, see [Overview of the Volume License (VL) Serializer](volume-license-serializer.md).
   
-## Related topics
+## Related articles
   
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
 
