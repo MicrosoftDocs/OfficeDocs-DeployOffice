@@ -37,7 +37,7 @@ For organizations that don't have Configuration Manager but still want to manage
 
 If you use the ODT and have the network capacity, we recommend deploying Office from the cloud. Doing so will minimize your administrative overhead. If you don't have the network capacity to install Office on client devices from the cloud, you can use the ODT to download the Office files to a local source on your network and install from there.
 
-You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage user software in Office 365](https://support.office.com/article/manage-user-software-in-office-365-c13051e6-f75c-4737-bc0d-7685dcedf360). This option requires that your users have local administrative rights on their client devices.
+You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage software download settings in Office 365](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
 
 Choose how you want to deploy:
 
@@ -122,7 +122,7 @@ After you've deployed Office with the required languages, you can install additi
 
 For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
-For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 If you have the subscription versions of the Project and Visio desktop apps, continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Microsoft 365 Apps. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
@@ -186,5 +186,5 @@ Depending on your deployment  plan, go to one of the following articles:
 - [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 - [Deploy Microsoft 365 Apps from the cloud](deploy-microsoft-365-apps-cloud.md)
 - [Deploy Microsoft 365 Apps from a local source](deploy-microsoft-365-apps-local-source.md)
-- [Self-install Office from the cloud](https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)
+- [Self-install Office from the cloud](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 

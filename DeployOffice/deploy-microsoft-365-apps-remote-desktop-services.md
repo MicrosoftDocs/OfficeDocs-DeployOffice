@@ -32,7 +32,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
   - For the Project and Visio desktop apps, a subscription plan that includes those products.
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). 
 - A separate user account for each user who logs on to the shared computer.
-- An [eligible license assigned](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) to each user account.
+- An [eligible license assigned](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
 - A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-and-office-resources#coreui-heading-5dcqxz4).
 - Reliable connectivity between the shared computer and the internet.
 - If you're deploying Microsoft 365 Apps on a shared virtual machine, Microsoft supports using [Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) only.
@@ -98,11 +98,9 @@ Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps on
 
 After you've completed all the RDS configuration steps, users can connect to any of the virtual machines and run Microsoft 365 Apps.
 
-## Related topics
+## Related articles
 <a name="VM"> </a>
 
-[Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
-
-[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
-
-[Remote Desktop Services](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/welcome-to-rds)
+- [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
+- [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
+- [Remote Desktop Services](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/welcome-to-rds)
