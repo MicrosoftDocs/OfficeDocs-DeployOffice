@@ -16,8 +16,8 @@
 
 ## Office server products
 
-### [Office 2007 servers](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2007-servers-and-products)
-### [Office 2010 servers](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2010-servers-and-products)
+### [Office 2007 servers](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products)
+### [Office 2010 servers](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products)
 
 ## Upgrade assistance
 

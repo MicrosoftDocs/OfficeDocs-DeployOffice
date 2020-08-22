@@ -122,13 +122,13 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-links-for-helpdesk-and-end-user-training.md",
-      "redirect_url": "https://support.office.com/office-training-center",
-      "redirect_document_id": true
+      "redirect_url": "https://support.microsoft.com/training",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-common-debugging-steps.md",
-      "redirect_url": "https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f",
-      "redirect_document_id": true
+      "redirect_url": "https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessing-your-infrastructure.md",
@@ -313,7 +313,7 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-links-for-administration-education.md",
       "redirect_url": "https://docs.microsoft.com/learn/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "deployoffice/best-practices/best-practices-group-policy-and-office-365-proplus.md",
@@ -353,7 +353,7 @@
     {
       "source_path": "DeployOffice/rds-onedrive-business-vdi.md",
       "redirect_url": "https://docs.microsoft.com/onedrive/sync-vdi-support",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/mac/set-preference-diagnostic-data.md",
