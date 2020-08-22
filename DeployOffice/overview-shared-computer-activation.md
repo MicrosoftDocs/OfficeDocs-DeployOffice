@@ -17,7 +17,7 @@ description: "Provides information for IT Pros about shared computer activation 
 # Overview of shared computer activation for Microsoft 365 Apps
 
 > [!TIP]
-> The information in this article is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e). 
+> The information in this article is intended for administrators and IT Pros. For information about activating a personal copy of Office, see [Activate Office](https://support.microsoft.com/office/5bd38f38-db92-448b-a982-ad170b1e187e). 
   
 Shared computer activation lets you deploy Microsoft 365 Apps to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios:
 
@@ -43,7 +43,7 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 > - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, but, those business plans don't include support for shared computer activation.
 > - Shared computer activation isn't available for Office for Mac.
 
-Make sure you [assign each user a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
+Make sure you [assign each user a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
 
 If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
 - When you are using the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-4---create-and-deploy-the-office-application-to-the-broad-group), make sure that you enable the option **Shared Computer** in the **Product activation** section.
@@ -111,7 +111,8 @@ Microsoft allows a single user to activate Microsoft 365 Apps on a reasonable nu
     
    ![Too many computers activated message](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
   
-**Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
+**Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Azure Active Directory
+](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
     
 If you don't use single sign-on, you should consider using roaming profiles and include the %localappdata%\\Microsoft\\Office\\16.0\\Licensing folder as part of the roaming profile.
     
@@ -131,11 +132,10 @@ To configure licensing token roaming, you can use either the Office Deployment T
 
 
    
-## Related topics
-[Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+## Related articles
 
-[Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
-
-[Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
+- [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+- [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
+- [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
   
 

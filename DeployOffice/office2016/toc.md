@@ -4,7 +4,7 @@
 ## Get started
 ### [What's new for admins](what-s-new-for-admins-in-office-2016.md)
 ### [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
-### [Office Training Center](https://support.office.com/office-training-center)
+### [Office Help & Training](https://support.microsoft.com/office)
 
 ## Application compatibility
 ### [Assess Office compatibility](../compat/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json)
