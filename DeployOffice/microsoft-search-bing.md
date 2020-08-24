@@ -52,7 +52,7 @@ To allow the extension to be installed, sign in to the Microsoft 365 admin cente
 
 There you'll see the **Install extension and set Bing as the default search engine** check box. The check box is not selected by default, as shown in the following screenshot.
 
-![Configurations tab for Microsoft Search in the Microsoft 365 admin Center](images/m365-admin-center-microsoft-search-bing.png)
+![Configurations tab for Microsoft Search in the Microsoft 365 admin Center](images/microsoft-365-admin-center-microsoft-search-bing.png)
 
 To allow the extension to be installed, select the check box, and then choose **Save**.
 
