@@ -40,6 +40,7 @@ The following table provides a list of connected experiences that analyze your c
 | ----------- | ------------------ |
 | *3D Maps*\*    | [Get started with 3D Maps](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+|Chart recommendations (Excel for the web)|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 | Data types                  | [Excel data types: Stocks and geography](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate with your voice in Office](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Editor<sup>1</sup> |[Editor is your writing assistant](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
