@@ -22,7 +22,7 @@
 ## Upgrade assistance
 
 ### [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview)
-### [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+### [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1)
 
 ## Related resources
 
