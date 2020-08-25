@@ -121,7 +121,7 @@ The following table provides a list of those other connected experiences and pro
 | Focused Inbox (Outlook) |[Focused Inbox for Outlook](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Information Rights Management in Office](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn contact card |[Connect your LinkedIn and Microsoft accounts](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Office add-ins*\* | [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| *Office add-ins*\* | [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
 | Organization chart (Visio) |[Create a Visio organization chart](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
