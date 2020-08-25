@@ -86,7 +86,7 @@ The following table provides a list of connected experiences that download onlin
 | *Insert Online 3D Models*\*     | [Get creative with 3D models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | *Insert Online Pictures*\*      | [Insert pictures](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | *Insert Online Video*\*     | [Insert a video from YouTube or another site](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| *Interesting Calendars*\*| [Subscribe to a calendar](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
+| *Interesting Calendars*\*| [Subscribe to a calendar](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
 | *Location suggestions*\* | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
 | Maps in event details | Know where you need to go with [maps](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) in event details on Outlook for iOS and Android. |
 | Office Help                 | When you choose **Help** > **Help** on the ribbon or use F1 in an Office app   |
