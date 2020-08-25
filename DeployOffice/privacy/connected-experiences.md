@@ -42,13 +42,13 @@ The following table provides a list of connected experiences that analyze your c
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Chart recommendations (Excel for the web)|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 | Data types                  | [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
-| Dictation  | [Dictate with your voice in Office](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|Editor<sup>1</sup> |[Editor is your writing assistant](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+| Dictation  | [Dictate your documents Word](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+|Editor<sup>1</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Ideas     | [Ideas in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
-| *Map chart*\*    | [Create a Map chart](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
+| *Map chart*\*    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Maps in Power View   | [Maps in Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
 | PowerPoint Designer   | [Create professional slide layouts with PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
@@ -116,25 +116,25 @@ The following table provides a list of those other connected experiences and pro
 | Custom Import (Visio)  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
 | Data Loss Prevention (DLP) policy tips |[Send email notifications and show policy tips for DLP policies](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Data Visualizer (Visio) |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
-| Design Flows (Visio)  | [Design a Microsoft Flow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
+| Design Flows (Visio)  | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | External list (Outlook) |[Connect an external list to Outlook](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
 | Focused Inbox (Outlook) |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
-| Information Rights Management |[Information Rights Management in Office](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
-| LinkedIn contact card |[Connect your LinkedIn and Microsoft accounts](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
+| LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
 | *Office add-ins*\* | [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
-| Organization chart (Visio) |[Create a Visio organization chart](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)  |
+| Organization chart (Visio) |[Create an organization chart in Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | Outlook Social Connector | [Turn on the Outlook Social Connector](https://support.microsoft.com/office/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | *Outlook UserVoice*\* | [How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Recent documents |[Open files from the File menu](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
-| *Resume Assistant (or CV Assistant)*\* |[Write your best resume with help from LinkedIn and Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
+| *Resume Assistant (or CV Assistant)*\* |[Use Resume Assistant and LinkedIn for great resumes](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Room Finder (Outlook)|[How to control the Room Finder in Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
 | Safe Links |[ATP Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
-| Sensitivity labels |[Apply sensitivity labels to your documents and email within Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
-| Share  |[Share a document (Excel)](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Share a document (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
+| Sensitivity labels |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
+| Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Shared with me |[See files others have shared with you](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
-| SharePoint site mailbox (Outlook)|[Show or hide a site mailbox in Outlook](https://support.microsoft.com/office/A9C4B8C7-A1A9-43C0-BD05-7513CA092863)  |
+| SharePoint site mailbox (Outlook)|[Show or hide a site mailbox in Outlook](https://support.microsoft.com/office/A9C4B8C7-A1A9-43C0-BD05-7513CA092863#__toc341877075)  |
 |Timeline import and export (Visio)|[Import and export timeline data between Visio and Project](https://support.microsoft.com/office/bc09becb-8c77-49b1-8e47-af3cf8cb7242)|
 | Version history |[View previous versions of Office files](https://support.microsoft.com/office/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
 | While you were away |[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
