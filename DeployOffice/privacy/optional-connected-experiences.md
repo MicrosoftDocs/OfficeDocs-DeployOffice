@@ -36,7 +36,7 @@ It is important to know that these optional cloud-backed services are not covere
 
 Some cloud-backed services are powered by Microsoft Bing. Microsoft Bing is a separate business to Microsoft 365 Apps for enterprise and is managed independently of Microsoft 365 Apps for enterprise by Microsoft. The experiences it powers in Office apps included with Microsoft 365 Apps for enterprise are: [3D Maps](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030), [Map Charts](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [Insert Online Pictures](https://support.microsoft.com/office/3C51EDF4-22E1-460A-B372-9329A8724344), [Insert Online 3D Models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [PowerPoint QuickStarter](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224), [Researcher](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f), [Smart Lookup](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044), and [similarity checker](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) (a feature of Editor).
 
-The experiences that Bing powers in Outlook for iOS and Android are the following:
+Bing powers the following experiences in Outlook for iOS and Android:
 
 - **Location suggestions:**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
 - **Interesting Calendars:**   You can [subscribe](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) to calendars about your favorite sports teams or TV shows.
@@ -48,7 +48,7 @@ The experiences that Bing powers in Outlook for iOS and Android are the followin
 
 [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) provides an experience in Word that is powered by LinkedIn. It delivers ideas for your resume. LinkedIn is a different company that is owned by Microsoft. If you use Resume Assistant, the LinkedIn [user agreement](https://www.linkedin.com/legal/user-agreement) and [privacy policy](https://www.linkedin.com/legal/privacy-policy) apply in addition to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to LinkedIn. They are not linked to you by the LinkedIn organization. You do not need to have a LinkedIn account to use this cloud-backed service.
 
-Note: The privacy setting described below does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these type of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
+Note: The privacy setting described below does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
 
@@ -74,7 +74,7 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 ### Research
 
-[Research](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397) connects to cloud-backed services to obtain dictionary, thesaurus, translation and word lookup results. When you use this experience, it connects to Microsoft-owned services by default and the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/) apply. Research allows you to add other service providers. If you decide to use another service provider, additional terms may apply.
+[Research](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397) connects to cloud-backed services to obtain dictionary, thesaurus, translation, and word lookup results. When you use this experience, it connects to Microsoft-owned services by default and the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/) apply. Research allows you to add other service providers. If you decide to use another service provider, additional terms may apply.
 
 > [!NOTE]
 > Research is different than Researcher. In newer versions of Office, another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed above under [Experiences that rely on Bing](#experiences-that-rely-on-bing).
@@ -92,20 +92,20 @@ The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5
 
 To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
 
-If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
 ## Your privacy settings
 
 If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
 
-If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
 ## Diagnostic data
 
-When you use any of the optional cloud-backed services described in this article, Microsoft may collect diagnostic data (such as usage data, error and performance data) about the performance of the experience when you used it. This diagnostic data may contain "personal data" as defined by Article 4 of the European GDPR. All diagnostic data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3 ) standard.
+When you use any of the optional cloud-backed services described in this article, Microsoft may collect diagnostic data (such as usage data, error and performance data) about the performance of the experience when you used it. This diagnostic data may contain "personal data" as defined by Article 4 of the European GDPR. All diagnostic data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3) standard.
 
 
-## Related topics
+## Related articles
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Required service data for Office](required-service-data.md)
