@@ -81,7 +81,7 @@ This error means that a licensing token wasn't obtained from the Office Licensin
   
 You can try these steps to fix this problem:
   
-- [Check that the user is assigned a license](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Microsoft 365 Apps.
+- [Check that the user is assigned a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps.
     
 - Check that the user signs in with her user account for Office 365 if the **Activate Office** dialog box appears when the user opens an Office program.
     
@@ -115,8 +115,8 @@ Microsoft places a limit on the number of shared computers that a user can activ
   
 ![Too many computer activated](images/1166f881-87da-4667-a4bd-e92c23859de2.png)
   
-## Related topics
-[Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
-  
-[Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+## Related articles
+
+- [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
+- [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 

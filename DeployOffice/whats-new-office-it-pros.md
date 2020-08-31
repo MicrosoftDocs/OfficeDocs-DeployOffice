@@ -16,6 +16,21 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## July 2020
+
+### End of support resources
+
+We've published the following new articles to provide information about end of support events related to Office.
+
+- [End of support resources for Office](endofsupport/resources.md)
+- [Office versions and connectivity to Office 365 services](endofsupport/office-365-services-connectivity.md)
+- [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md)
+- [Windows 8 end of support and Microsoft 365 Apps](endofsupport/windows-8-support.md)
+
+You can download and print the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390) to use as a reference.
+
+To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
+
 ## June 2020
 
 ### Update channels for Microsoft 365 Apps renamed

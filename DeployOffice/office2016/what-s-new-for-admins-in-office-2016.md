@@ -22,7 +22,7 @@ description: "Provides IT admins with an overview of the new features and capabi
   
 The following is intended to highlight the new features and capabilities of Office 2016 that admins might want to know about as they plan to deploy Office 2016 to the users in their organization.
   
-If you're looking for information for end users about the new features in Word, Excel, and the other Office apps, see [What's new and improved in Office 2016](https://support.office.com/article/29d7e38e-ef06-4d9c-a476-03d896928b2f).
+If you're looking for information for end users about the new features in Word, Excel, and the other Office apps, see [What's new and improved in Office 2016](https://support.microsoft.com/office/29d7e38e-ef06-4d9c-a476-03d896928b2f).
   
 ## Updated system requirements for Office 2016
 
@@ -50,10 +50,9 @@ Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admi
 
 IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](../security/protect-sensitive-messages-and-documents-by-using-irm-in-office.md).
   
-## Related topics
+## Related articles
 
-[Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
-  
-[Office Training Center](https://support.office.com/office-training-center)
+- [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
+- [Office Help & Training](https://support.microsoft.com/office)
   
 

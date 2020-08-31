@@ -22,7 +22,7 @@
 ## [Default decryption password (Excel)](set-preference-default-password-excel.md)
 
 # Related articles
-## [Network requests](https://docs.microsoft.com/office365/enterprise/network-requests-in-office-2016-for-mac)
+## [Network requests](https://docs.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
 ## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
 
 # Microsoft AutoUpdate (MAU)
