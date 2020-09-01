@@ -33,7 +33,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). 
 - A separate user account for each user who logs on to the shared computer.
 - An [eligible license assigned](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
-- A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/en-us/microsoft-365/microsoft-365-and-office-resources#coreui-heading-5dcqxz4).
+- A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-5dcqxz4).
 - Reliable connectivity between the shared computer and the internet.
 - If you're deploying Microsoft 365 Apps on a shared virtual machine, Microsoft supports using [Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) only.
 
