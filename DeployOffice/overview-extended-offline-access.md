@@ -27,10 +27,10 @@ Extended offline access is designed for users with devices that need to go offli
 ## Online setup of the device for users
 
 To enable extended offline access for users in your organization:
-- IT Admin / Helpdesk installs Microsoft 365 Apps and enables extended offline access by deploying the [group policy](https://docs.microsoft.com/en-us/deployoffice/overview-extended-offline-access#enable-extended-offline-access-with-group-policy) or the [registry](https://docs.microsoft.com/en-us/deployoffice/overview-extended-offline-access#enable-extended-offline-access-with-the-registry)
-- Once deployed, user signs into Windows using Azure AD account
-- User launches an Office app like Word or Excel
-- User confirms Office license is valid for 180 days
+- Admin installs Microsoft 365 Apps and enables extended offline access by deploying the [group policy](enable-extended-offline-access-with-group-policy) or the [registry](enable-extended-offline-access-with-the-registry).
+- Once deployed, the user signs into Windows using an Azure AD account.
+- User launches an Office app like Word or Excel.
+- User confirms Office license is valid for 180 days.
 
 ## User experience for extended offline access
 
@@ -71,8 +71,6 @@ To disable the setting, set the following:
 ## Extended offline access for devices with no internet access
 
 When a device loses internet access, the user can continue to use Office without an internet connection for up to 180 days.  When 15 days remain, the user receives an in-client notification to connect to the internet so the license can be verified. If possible, the user should connect the device to the internet, which will enable an additional 180 days. 
-
-> **EXTEND YOUR LICENSE** To continue editing Office documents after <<date>>, note your device name <<Device Name>>. Next go to https://go.microsoft.com... from a device that is connected to the internet and follow the instructions. 
 
 If the device cannot connect to the internet every 180 days, you can still [extend the Office license for offline use](https://support.office.com/article/extend-your-office-license-for-offline-use-06de5162-e230-4ce6-83bb-e6f06190a8f5).
 
