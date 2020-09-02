@@ -18,14 +18,6 @@ hideEdit: true
 
 Action Center allows you to perform management actions such as setting the Target Version for devices with Microsoft 365 Apps in your organization.
 
-<!-- 
-## Requirements for using Action Center
-
-The following are the requirements for using Action Center with Microsoft 365 Apps for enterprise:
-
-* 
--->
-
 ## Steps for setting a Target version
 
 1. Sign into the [portal](https://aka.ms/o365clientmgmt).
@@ -47,9 +39,3 @@ To view more detailed information:
 1. Select the task name.
 2. View the devices targeted and the status of each device.
 3. Export the devices.
-
-<!-- 
-
-## Limitations
-
->

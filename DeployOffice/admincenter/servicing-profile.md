@@ -41,7 +41,6 @@ Within the devices tab, you can see the update status of these devices, view inf
 
 Actions allows you to view the actions taken within your tenant, the same as [Action Center](action-center), within the Servicing Profile, to easily keep track of any actions you have taken.
 
-
 ## Issues
 
 Issues allows you to view errors relating to Office deployment, including the number of devices affected and potential remediation advice. You can view the most recent issue for each device, and once the issue is resolved for a device it is removed.
