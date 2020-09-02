@@ -22,8 +22,8 @@ The Servicing Profile allows administrators to simplify their organizations mont
 
 The Servicing Profile getting started page provides information about the devices in Inventory including the number of devices meeting the following criteria:
 
-* Sufficient disk space (Greater than 5 GB)
-* The Monthly Enterprise Channel for Microsoft 365 Apps updates.
+* Devices with sufficient disk space (greater than 5 GB)
+* The Monthly Enterprise Channel for Microsoft 365 Apps.
 
 Only devices which meet the criteria will be included in the Servicing Profile.
 
@@ -35,11 +35,12 @@ You should now see an overview of the devices in the Servicing Profile, details 
 
 ## Devices
 
-Within the devices tab, you can see the update status of these devices, view information on individual devices, and perform quick actions such as restore and snooze devices.
+Within the devices tab, you can see the update status of these devices, view information on individual devices, and perform quick actions such as restore and snooze devices. You can click on the device to view the same information you can view within Inventory such as details on the device's hardware, operating system and Microsoft 365 Apps configuration.
 
 ## Actions
 
 Actions allows you to view the actions taken within your tenant, the same as [Action Center](action-center), within the Servicing Profile, to easily keep track of any actions you have taken.
+
 
 ## Issues
 
