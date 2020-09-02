@@ -23,7 +23,7 @@ The Servicing Profile allows administrators to simplify their organizations mont
 The Servicing Profile getting started page provides information about the devices in Inventory including the number of devices meeting the following criteria:
 
 * Devices with sufficient disk space (greater than 5 GB)
-* The Monthly Enterprise Channel for Microsoft 365 Apps.
+* The Monthly Enterprise Channel for Microsoft 365 Apps
 
 Only devices which meet the criteria will be included in the Servicing Profile.
 
