@@ -63,4 +63,4 @@ Devices that are managed via Microsoft Intune get their Office updates automatic
 
 If you are using Microsoft Endpoint Configuration Manager to manage the updates, the devices that you want to switch to auto-managed will need additional changes.
 
-1. TODO.
+1. Exclude devices from Microsoft Endpoint Configuration Manager result collections so there aren't conflicting management commands.
