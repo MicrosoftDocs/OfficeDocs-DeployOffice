@@ -50,7 +50,7 @@ If the devices you want to manage with these services are below version [16.0.xx
 
 Steps to configure:
 
-1. Download Serviceability Manager from the Microsoft Download Center - [https://www.microsoft.com/download/details.aspx?id=9999999999](https://www.microsoft.com/download/details.aspx?id=9999999999)
+1. Download Serviceability Manager from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2141871).
 2. Distribute Serviceability Manager to run as a scheduled task on devices you want to manage with these services.
 
 To verify the device is connected you can check if the device appears in the Inventory page.
