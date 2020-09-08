@@ -1,7 +1,7 @@
 ---
 title: "Inventory"
 ms.author: darrend
-author: darrend__update_with_your_github_username
+author: darrend
 manager: laurawi
 audience: ITPro
 ms.topic: article

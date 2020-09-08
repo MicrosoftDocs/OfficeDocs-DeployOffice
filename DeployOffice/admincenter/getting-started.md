@@ -1,7 +1,7 @@
 ---
 title: "Getting started"
 ms.author: chhopkin
-author: chhopkin__update_with_your_github_username
+author: chhopkin
 manager: laurawi
 audience: ITPro
 ms.topic: article

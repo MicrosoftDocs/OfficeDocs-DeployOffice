@@ -1,7 +1,7 @@
 ---
 title: "Action Center"
 ms.author: dhirenb
-author: dhirenb__update_with_your_github_username
+author: dhirendra-bhupati 
 manager: laurawi
 audience: ITPro
 ms.topic: article
