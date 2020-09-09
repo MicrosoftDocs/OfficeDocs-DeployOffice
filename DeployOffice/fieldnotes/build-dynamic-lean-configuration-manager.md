@@ -1,3 +1,4 @@
+---
 title: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
 author: manoth-msft
 ms.author: manoth
