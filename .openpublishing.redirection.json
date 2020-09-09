@@ -573,7 +573,7 @@
     {
       "source_path": "DeployOffice/feedback.md",
       "redirect_url": "https://techcommunity.microsoft.com/t5/microsoft-365-apps-for/bd-p/Microsoft365Apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
