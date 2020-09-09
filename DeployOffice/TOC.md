@@ -52,6 +52,7 @@
 ## [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
 ## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
+## [Build dynamic collections with Configuration Manager](fieldnotes\build-dynamic-lean-configuration-manager.md)
 
 # Reference
 ## [Overview of reference articles](reference-articles.md)
