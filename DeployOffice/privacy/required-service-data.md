@@ -52,3 +52,18 @@ If you’re the administrator for your organization and want to manage connected
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
+
+## Categories of required service data
+
+Required service data is organized into the following categories:
+
+- Software setup and inventory
+- Product and service usage
+- Product and service performance
+- Device connectivity and configuration
+
+The information in these categories enables Microsoft to assess whether a connected experience or essential service is secure, up to date, and performing as expected.
+
+For example, information in the product and service performance category may cover unexpected issues (crashes), poor response times or performance, or errors in functionality.
+
+For the product and service usage category, information might be collected that indicates whether the service used by a connected experience started successfully and was available when needed.
