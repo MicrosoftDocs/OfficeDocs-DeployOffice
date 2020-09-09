@@ -432,8 +432,8 @@
     },
     {
       "source_path": "DeployOffice/reference-articles-for-deploying-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/reference-articles",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-in-gcc-high-dod.md",
@@ -564,6 +564,16 @@
       "source_path": "DeployOffice/windows-7-support.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/endofsupport/windows-7-support",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/reference-articles.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/feedback.md",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/microsoft-365-apps-for/bd-p/Microsoft365Apps",
+      "redirect_document_id": false
     }
   ]
 }

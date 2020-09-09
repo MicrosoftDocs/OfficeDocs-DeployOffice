@@ -54,7 +54,6 @@
 ## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 
 # Reference
-## [Overview of reference articles](reference-articles.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)
