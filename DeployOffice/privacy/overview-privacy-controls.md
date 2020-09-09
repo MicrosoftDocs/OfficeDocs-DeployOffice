@@ -120,21 +120,9 @@ For more information, see the following:
 
 ## Required service data for connected experiences
 
-Required service data is data that enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected. Three types of information make up required service data.
+As you use a connected experience, data is sent to and processed by Microsoft to provide you that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data.
 
-- **Customer content**, which is content you create using Office, such as text typed in a Word document.
-- **Functional data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
-- **Service diagnostic data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
-
-To help you understand required service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
-
-The required service data that is sent to Microsoft to enable this connected experience for you could include the following:
-
-- *Customer content*, such as the text or images you added to your slide.
-- *Functional data*, such as which slide you are working on and its layout.
-- *Service diagnostic data*, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
-
-If you choose not to provide your users with the category of connected experiences that includes PowerPoint Designer, the feature will be turned off and none of this required service data is sent to us.
+Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translate in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
 
 For more information, see [Required service data for Office](required-service-data.md).
 
