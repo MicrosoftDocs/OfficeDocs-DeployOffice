@@ -14,69 +14,41 @@ ms.custom:
 description: "Provides Office admins with an overview of required service data that is collected about connected experiences in Office."
 hideEdit: true
 ---
-# Required service data for Office 
+# Required service data for Office
 
-> [!IMPORTANT]
-> The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
-> - Microsoft 365 Apps for business (previously named Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
-> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
->
-> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+Office consists of client software applications and [connected experiences](connected-experiences.md) designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
 
-Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
+As you use a connected experience, data is sent to and processed by Microsoft to provide you that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data.
 
-Required service data is crucial because it enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected for our customers. Three types of information make up required service data.
-
-- **Customer content**, which is content you create using Office, such as text typed in a Word document, and is used in conjunction with the connected experience.
-- **Functional data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
-- **Service diagnostic data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
+Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translate in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
 
 ## Example of required service data for a connected experience
 
-To help you understand required service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
+Let’s use PowerPoint Designer as another example to show the type of required service data that a connected experience sends to Microsoft. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
 
-The required service data that is sent to Microsoft to enable this connected experience for you could include the following:
+The required service data that PowerPoint Designer sends to Microsoft could include the following information:
+- The text or images you added to your slide.
+- Which slide you’re working on and the slide’s layout.
+- Whether the design idea was correctly applied to your slide.
+- Whether the interaction between PowerPoint and the Designer service performed as expected.
 
-- *Customer content*, such as the text or images you added to your slide.
-- *Functional data*, such as which slide you are working on and its layout.
-- *Service diagnostic data*, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
+This required service data helps ensure that PowerPoint Designer is performing as expected.
 
-## View and manage required service data
+## Manage required service data
 
-You can see service diagnostic data by using the Diagnostic Data Viewer. For more information, see [Examples of events for service diagnostic data](#examples-of-events-for-service-diagnostic-data).
+We give you the ability to choose which types of connected experiences you want to use in Office, which then determines what required service data is sent to Microsoft. Dictation in Word, for example, is one of several connected experiences that analyzes your content. If you choose to turn off connected experiences that analyze content, no required service data about Dictation in Word is sent to Microsoft because Dictation in Word won’t be available to use. For more information, see [Choose whether these connected experiences are available to use](connected-experiences.md#choose-whether-these-connected-experiences-are-available-to-use).
 
-We give you the ability to choose which types of connected experiences you want to use in Office, which then determines what required service data is sent to us. PowerPoint Designer, for example, is one of several connected experiences that analyzes your content. If you choose to turn off connected experience that analyze content, no required service data about PowerPoint Designer is sent to us because PowerPoint Designer won’t be available to use.
+Required service data is separate from required or optional [diagnostic data](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft), which relates to information about the use of Office software running on your device. Therefore, the privacy settings you chose for required or optional diagnostic data don’t affect whether required service data is sent to Microsoft.
 
-Required service data is also collected and sent to Microsoft for the essential services of Office, such as the licensing service that confirms that you are properly licensed to use Office. This data for essential services is sent regardless of any other privacy-related settings that you have configured.
+Required service data is also collected and sent to Microsoft for the [essential services](essential-services.md) of Office, such as the licensing service that confirms that you're properly licensed to use Office. While you can control many of the connected experiences that are available to you, or to your users if you're the administrator in your organization, this set of services are essential to how Office functions, and therefore cannot be disabled. The data for essential services is always sent to and processed by Microsoft when using Office, regardless of how other privacy-related settings are configured.
 
-For more information, see the following:
+Required service data is available through Data Service Requests (DSRs). For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Office 365 Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
 
-- [Connected experiences in Office](connected-experiences.md)
-- [Essential services for Office](essential-services.md)
-- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
-
-If you’re the admin for your organization, you might also be interested in the following:
+If you’re the administrator for your organization and want to manage connected experiences, see the following articles:
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
-
-## Examples of events for service diagnostic data
-
-Service diagnostic data appears in the Diagnostic Data Viewer and is organized into the same categories that required and optional diagnostic data use. For example, *Product and service usage* or *Product and service performance.*
-
-The events for service diagnostic data provide us necessary information about whether a connected experience is performing as a customer would expect. For example, whether the service used by the connected experience started successfully and was available when needed, whether there were errors or other unexpected issues (crashes) when interacting with the service, and the responsiveness or performance of the service.
-
-The following table provides some examples of events for service diagnostic data.
-
-| **Name**      | **Description**    |
-| ---------- | --------------------- |
-| Office.Excel.Coauth.SaveXrr     | An event triggered in Excel when using the collaboration service that reports details on individual revisions that are written to the revision log. This provides latency monitoring and indicates errors in Excel that are related to the collaboration  |
-| Office.Excel.Coauth.CloseWorkbook  | An event triggered in Excel when using the collaboration service that reports when a workbook is closed. This is needed in determining any errors with reload and auto-refresh. It provides success measurement for collaboration service activities.   |
-| Office.Security.OCX.NonTrustedEncounter    | An event triggered in Office applications (including Word, Excel, Outlook, PowerPoint, and Visio) when a user opens an untrusted document with an ActiveX control. It is used to broadly assess use of ActiveX controls embedded in Office documents and to drive security mitigations in response to security incidents.  |
-| Office.Security.UrlReputation.GetUrlReputation | An event triggered in Office applications (including Word, Excel, PowerPoint, Visio, and Publisher) that tracks the success or failure of Safe Links calls. It is used to make sure that the Safe Links service is working properly and to diagnose any problems.  |
-| Office.Voice.VoiceManager.StreamingAudio   | An event triggered in Office applications (including Word, Outlook, and PowerPoint) that provides information about the health of audio streaming to the speech service. It contains information about the size of audio streamed and any errors that may have occurred. This information is used to monitor the service health and to diagnose any issues that may have been reported by customers. |
+- [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
