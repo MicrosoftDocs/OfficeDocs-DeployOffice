@@ -56,9 +56,11 @@ Once created, we use these collections to deploy Configuration Manager applicati
 2.	Provide a name and select a limiting collection. Click **Next**.
 3.	Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
 4.	Copy paste the text below into the editor window.
+```sql
+select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
 ```
-select *  from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS. cfgUpdateChannel = "ReplaceThis"
-```
+> [!NOTE]
+>The query is provided as-is and based on engagements in the field.
 5.	Replace the string **ReplaceThis** with the matching Update Channel Value for the channel you want to capture in this collection from the table below:
 
 |Update Channel                           |Update Channel Value                                                  |
@@ -82,7 +84,7 @@ Repeat the steps for each update channel you want to be captured in a separate c
 2.	Provide a name and select a limiting collection. Click **Next**.
 3.	Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
 4.	Copy paste the text below into the editor window.
-```
+```sql
 select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
 ```
 > [!NOTE]
