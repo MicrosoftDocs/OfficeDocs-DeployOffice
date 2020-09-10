@@ -69,7 +69,7 @@ If you enable this policy setting, you must choose which level of diagnostic dat
 
 - If you choose ***Neither***, no diagnostic data about Office client software running on the user’s device is sent to Microsoft. This option, however, significantly limits Microsoft’s ability to detect, diagnose, and remediate problems that your users may encounter when using Office.
 
-If you disable or don’t configure this policy setting, both optional and required diagnostic data is sent to Microsoft.
+If you disable or don’t configure this policy setting, both optional and required diagnostic data are sent to Microsoft.
 
 For more information about diagnostic data, see the following:
 
@@ -115,7 +115,7 @@ Note that if you disable the *Allow the use of connected experiences in Office* 
 
 In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
-These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third-party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these optional connected experiences will be available to your users.
 
@@ -123,7 +123,7 @@ Even if you choose to make these optional connected experiences available to you
 
 Also, some of these optional connected experiences are also considered to be connected experiences that analyze content or that download online content. For example, Insert Online Pictures is an optional connected experience, powered by Microsoft Bing, but it’s also considered to be a connected experience that downloads online content. Therefore, if you disable the *Allow the use of connected experiences in Office that download online content* policy setting, Insert Online Pictures won’t be available to your users. It won’t be available even if you have enabled the *Allow the use of additional optional connected experiences in Office* policy setting. For more information about which connected experiences analyze content or download online content, see [Connected experiences in Office](connected-experiences.md).
 
-There is one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these type of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
+There is one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### Policy setting for most connected experiences
 
@@ -170,7 +170,7 @@ As you probably already know, there are some existing policy settings that allow
 
 In general, if one policy setting is configured to turn on a specific connected experience while at the same time another policy setting is configured to turn off that type of connected experience, then that specific connected experience is turned off for your users.
 
-## Privacy related changes to the Office UI
+## Privacy-related changes to the Office UI
 
 There are some changes to the user interface (UI) of Microsoft 365 Apps for enterprise related to privacy that your users might notice and ask about. These changes are a direct result of the new privacy controls and policy settings available starting in Version 1904.
 
