@@ -38,7 +38,7 @@ This article will supply an example as well as step-by-step instructions on how 
 
 ## Example
 
-Let’s assume your organization has deployed Microsoft 365 Apps to several thousand devices. You run a mix of [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) (SAEC-P) and [Semi-Annual Enterprise Channel](../overview-update-channels#semi-annual-enterprise-channel-overview.md) (SAEC) and want to adopt the recently introduced [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) (MEC). You are also aware that a couple of devices run Current Channel, despite the fact this is not supported by your IT department.
+Let’s assume your organization has deployed Microsoft 365 Apps to several thousand devices. You run a mix of [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) (SAEC-P) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) (SAEC) and want to adopt the recently introduced [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) (MEC). You are also aware that a couple of devices run Current Channel, despite the fact this is not supported by your IT department.
 
 In this example, we would implement five dynamic collections in Configuration Manager:
 - Three collections which will add devices as members when the device is running a specific update channel. One for SAEC-P, SAEC and MEC each.
