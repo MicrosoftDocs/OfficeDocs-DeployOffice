@@ -71,7 +71,7 @@ Therefore, we went with 8 language packs in this scenario, which saved a lot of 
 
 First off, you need an overview on how often each individual language pack is installed in your environment. If you are using Configuration Manager, you can directly query the database for an overview and count of installed language packs with the below query:
 
-```
+```sql
 select count (distinct resourceid) as total, DisplayName0 from v_Add_Remove_Programs where DisplayName0 like 'Microsoft Office Language Pack%' group by resourceid, DisplayName0
 
 ```
