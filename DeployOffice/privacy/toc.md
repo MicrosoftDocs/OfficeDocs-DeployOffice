@@ -13,7 +13,7 @@
 ## Diagnostic data
 ### [Required diagnostic data](required-diagnostic-data.md)
 ### [Optional diagnostic data](optional-diagnostic-data.md)
-### [Using the Diagnostic Data Viewer](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+### [Using the Diagnostic Data Viewer](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences
 ### [Connected experiences](connected-experiences.md)
