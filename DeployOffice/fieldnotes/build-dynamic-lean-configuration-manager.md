@@ -21,19 +21,19 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-As an admin, you often have to manage more than one [update channel](../overview-update-channels.md) for the Microsoft 365 Apps in your organization. Or you are planning to move devices to a new channel and need a way to manage/see devices by channel with minimal management overhead and effort.
+As an admin, you often must manage more than one [update channel](../overview-update-channels.md) for the Microsoft 365 Apps in your organization. Or you are planning to move devices to a new channel and need a way to manage/see devices by channel with minimal management overhead and effort.
 This article will walk you through the steps to implement [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) in Microsoft Endpoint Configuration Manager to achieve the following goals:
-- Establish collections which will automatically add/remove devices based on the installed update channel of the Microsoft 365 Apps.
-- Establish a collection which will automatically add/remove all devices running Microsoft 365 Apps for easier targeting of updates.
-- Establish a collection which will contain all devices on update channels that you as IT does not support in your environment.
+- Set up collections which will automatically add/remove devices based on the installed update channel of the Microsoft 365 Apps.
+- Set up a collection which will automatically add/remove all devices running Microsoft 365 Apps for easier targeting of updates.
+- Set up a collection which will hold all devices on update channels that you as IT does not support in your environment.
 
-For dynamic collections, Configuration Manager will automatically evaluate the membership of devices based on rules and queries, so there is no manual work required to keep these collections up-to-date.
+For dynamic collections, Configuration Manager will automatically evaluate the membership of devices based on rules and queries, so there is no manual work required to keep these collections up to date.
 Such an implementation will enable you to:
 - Easily identify and target devices based on their currently installed update channel.
-- When devices switch update channels, you can easily monitor progress just by looking at the number of devices per collection.
+- When devices switch update channels, you can easily check progress just by looking at the number of devices per collection.
 - Identify devices which are on channels which your IT department has not approved for internal use and implement actions against such configuration drift.
 - Reduce admin effort by targeting the right devices with updates automatically.
-This article will provide an example as well as step-by-step instructions on how to set up dynamic collections.
+This article will supply an example as well as step-by-step instructions on how to set up dynamic collections.
 
 ## Example
 
@@ -68,7 +68,7 @@ select *  from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIO
 |Semi-Annual Enterprise Channel           |http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114|
 
 6.	The final query should look like on the screenshots below. Make sure to keep the quote signs.
-7.	Click **OK**, **OK**. We recommend to tick the box for incremental updates, but this is optional.
+7.	Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
 8. Click **Summary**, **Next** and **Close** to finish the wizard.
 
 Repeat the steps for each update channel you want to be captured in a separate collection. The result will look like this:
@@ -83,28 +83,28 @@ Repeat the steps for each update channel you want to be captured in a separate c
 select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
 ```
 > [!NOTE]
->The query is provided as-is and based on engagements in the field. The above query checks for Microsoft 365 Apps for enterprise, you might want to adjust the query for other SKUs.
-5.	Click **OK**, **OK**. We recommend to tick the box for incremental updates, but this is optional.
+>The query is provided as-is and based on engagements in the field. The above query checks for Microsoft 365 Apps for enterprise, you might want to adjust the query for other licenses.
+5.	Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
 6.	Click **Summary**, **Next** and **Close** to finish the wizard.
 The result is a collection which will automatically add all devices running any servicing channel for Microsoft 365 Apps.
 
 ## Implement a collection which catches all devices running other servicing channels
 
-After you created collections for the updates channels you are supporting as IT, you can also craft one which is catching all devices running other channels. This can help to identify any configuration drift and implement measures to re-establish the desired configuration on those devices.
+After you created collections for the updates channels you are supporting as IT, you can also craft one which is catching all devices running other channels. This can help to find configuration drift and implement measures to re-establish the desired configuration on those devices.
 1.	Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
 2.	Provide a name and select a limiting collection. Click **Next**.
 3.	Click on **Add Rule** and select **Include Collections**. Select the collection you created to catch all devices running Microsoft 365 Apps. Click **OK**.
 4.	Click on **Add Rule** again and **Select Exclude Collections**. Select the collections you created which are catching devices on supported servicing channels. Click **OK**.
-5.	Click **OK** again. We recommend to tick the box for incremental updates, but this is optional.
+5.	Click **OK** again. We recommend ticking the box for incremental updates, but this is optional.
 6.	Click **Summary**, **Next** and **Close** to finish the wizard.
 
-This collection will now automatically add all devices which have Microsoft 365 Apps installed, but are not a member of one of the other collections we just created. As a result, the collection will catch all devices which are running on an update channels you have not created a separate collection for.
+This collection will now automatically add all devices which have Microsoft 365 Apps installed but are not a member of one of the other collections we just created. As a result, the collection will catch all devices which are running on an update channels you have not created a separate collection for.
 
 ## Deploy applications and updates
 
 The focus of this article is to provide you the steps to build dynamic collection using Configuration Manager. Based on the example above, next steps could be:
-- Deploy an application which instruct the device to [perform a channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager) to Monthly Enterprise Channel as "available" to the collection holding SAEC and SAEC-P devices. This enabled users to switch the channel onto a faster cadence for themselves. You as an admin will see the device transitioning to the new collection automatically.
-- Deploy an application which allows a user to revert back from e.g. Monthly Enterprise Channel to Semi-Annual Enterprise Channel in case of any issues. If your devices are receiving updates from the Office CDN, you can use the same approach as described above. If you manage updates using Configuration Manager, you must offer a re-install of the Microsoft 365 Apps to the users as Configuration Manager [cannot perform a downgrade](../change-update-channels.md#considerations-when-changing-channels) when it comes to the installed build version.
+- Deploy an application which instruct the device to [perform a channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager) to Monthly Enterprise Channel as "available" to the collection holding SAEC and SAEC-P devices. This enabled users to switch the channel on their own terms and pace. You will see the devices transitioning to the new collection automatically.
+- Deploy an application which allows a user to revert from e.g. Monthly Enterprise Channel to Semi-Annual Enterprise Channel in case of any issues. If your devices are receiving updates from the Office CDN, you can use the same approach as described above. If you manage updates using Configuration Manager, you must offer a re-install of the Microsoft 365 Apps to the users as Configuration Manager [cannot perform a downgrade](../change-update-channels.md#considerations-when-changing-channels) when it comes to the installed build version.
 - [Deploy updates](../manage-microsoft-365-apps-updates-configuration-manager.md) from all update channels you support to the collection holding all devices running Microsoft 365 Apps. It is important to not deploy updates to the individual collections, as devices performing a channel change must have access to the target update to complete the transition. Devices will only download applicable updates, so if a device is offered SEAC, SAEC-P and MEC updates, it will only download the delta from the update channel the device is currently on or instructed to switch to.
 - Deploy an application which re-install the desired Microsoft 365 Apps configuration (e.g. Monthly Enterprise Channel) to the collection which holds all devices with a configuration drift.
 
