@@ -26,7 +26,7 @@ This article will walk you through the steps to implement [dynamic collections](
 - Establish collections which will automatically add/remove devices based on the installed update channel of the Microsoft 365 Apps.
 - Establish a collection which will automatically add/remove all devices running Microsoft 365 Apps for easier targeting of updates.
 - Establish a collection which will contain all devices on update channels that you as IT does not support in your environment.
-Dynamic is referring to the fact, that Configuration Manager will automatically evaluate the membership of devices to the collections based on rules and queries, so there is no manual work required to keep these collections up-to-date.
+For dynamic collections, Configuration Manager will automatically evaluate the membership of devices based on rules and queries, so there is no manual work required to keep these collections up-to-date.
 Such an implementation will enable you to:
 - Easily identify and target devices based on their currently installed update channel.
 - When devices switch update channels, you can easily monitor progress just by looking at the number of devices per collection.
