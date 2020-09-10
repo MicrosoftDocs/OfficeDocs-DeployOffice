@@ -17,6 +17,9 @@ hideEdit: true
 
 # Use policy settings to manage privacy controls for Office for the web applications
 
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 As an administrator for your organization, you can control whether your users have the choice to use optional connected experiences when they use Office for the web applications, such as Word for the web or PowerPoint for the web. This choice is available to your users only if they're signed in with their work or school account when they use Office for the web applications. To control whether your users have the choice to use optional connected experiences, you use the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Overview of optional connected experiences
