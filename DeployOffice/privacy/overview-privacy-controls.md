@@ -72,7 +72,7 @@ For more information, see the following:
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
-- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Microsoft 365 Apps for enterprise
 
@@ -108,7 +108,7 @@ These are optional connected experiences that are not covered by your organizati
 
 Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
 For more information, see the following:
 

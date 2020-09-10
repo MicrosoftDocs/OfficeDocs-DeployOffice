@@ -3166,7 +3166,7 @@ The following fields are collected:
 
 - **Tag** - Tells us at which step we stopped searching for a binding. Possible tags:
   - 0x03113809    No internet/service error while validating pin
-   - 0x0311380a    Pin validation failure, sent with PinValidationFailure field
+  - 0x0311380a    Pin validation failure, sent with PinValidationFailure field
   - 0x0310410f    Success, sent with Success field
   - 0x0311380d    Retry-able errors (internet issues, unknown errors)
   - 0x0311380e    Non-retry-able errors (binding offer expired)
