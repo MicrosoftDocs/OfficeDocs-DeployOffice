@@ -23,16 +23,17 @@ ms.collection:
 
 As an admin, you often must manage more than one [update channel](../overview-update-channels.md) for the Microsoft 365 Apps in your organization. Or you are planning to move devices to a new channel and need a way to manage/see devices by channel with minimal management overhead and effort.
 This article will walk you through the steps to implement [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) in Microsoft Endpoint Configuration Manager to achieve the following goals:
-- Set up collections which will automatically add/remove devices based on the installed update channel of the Microsoft 365 Apps.
-- Set up a collection which will automatically add/remove all devices running Microsoft 365 Apps for easier targeting of updates.
+- Set up collections which will automatically add/remove devices based on the installed update channel.
+- Set up a collection which will automatically add all devices running Microsoft 365 Apps for easier targeting of updates.
 - Set up a collection which will hold all devices on update channels that you as IT does not support in your environment.
 
 For dynamic collections, Configuration Manager will automatically evaluate the membership of devices based on rules and queries, so there is no manual work required to keep these collections up to date.
 Such an implementation will enable you to:
 - Easily identify and target devices based on their currently installed update channel.
 - When devices switch update channels, you can easily check progress just by looking at the number of devices per collection.
-- Identify devices which are on channels which your IT department has not approved for internal use and implement actions against such configuration drift.
-- Reduce admin effort by targeting the right devices with updates automatically.
+- Identify devices which are on undesired update channels and implement actions to correct the configuration drift.
+- Reduce admin effort by targeting the right set of devices with updates automatically.
+
 This article will supply an example as well as step-by-step instructions on how to set up dynamic collections.
 
 ## Example
