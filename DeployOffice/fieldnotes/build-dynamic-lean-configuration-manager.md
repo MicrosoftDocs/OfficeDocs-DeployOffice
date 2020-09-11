@@ -52,16 +52,16 @@ Once created, we use these collections to deploy Configuration Manager applicati
 
 ## Implement collections which catch devices on a certain update channel
 
-1.	Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
-2.	Provide a name and select a limiting collection. Click **Next**.
-3.	Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
-4.	Copy paste the text below into the editor window.
+1. Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
+2. Provide a name and select a limiting collection. Click **Next**.
+3. Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
+4. Copy paste the text below into the editor window.
 ```sql
 select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
 ```
 > [!NOTE]
 >The query is provided as-is and based on engagements in the field.
-5.	Replace the string **ReplaceThis** with the matching Update Channel Value for the channel you want to capture in this collection from the table below:
+5. Replace the string **ReplaceThis** with the matching Update Channel Value for the channel you want to capture in this collection from the table below:
 
 |Update Channel                           |Update Channel Value                                                  |
 |:----------------------------------------|:---------------------------------------------------------------------|
@@ -72,36 +72,41 @@ select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATION
 |Semi-Annual Enterprise Channel (Preview) |http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf|
 |Semi-Annual Enterprise Channel           |http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114|
 
-6.	The final query should look like on the screenshots below. Make sure to keep the quote signs.
-7.	Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
+6. The final query should look similar to the screenshot below. Make sure to keep the quote signs.
+
+![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes_DynCollection_1.png)
+
+7. Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
 8. Click **Summary**, **Next** and **Close** to finish the wizard.
 
 Repeat the steps for each update channel you want to be captured in a separate collection. The result will look like this:
 
+![Screenshot from Configuration Manager showing three collections](../images/fieldnotes_DynCollection_2.png)
+
 ## Implement a collection which catches all devices running Microsoft 365 Apps
 
-1.	Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
-2.	Provide a name and select a limiting collection. Click **Next**.
-3.	Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
-4.	Copy paste the text below into the editor window.
+1. Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
+2. Provide a name and select a limiting collection. Click **Next**.
+3. Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
+4. Copy paste the text below into the editor window.
 ```sql
 select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
 ```
 > [!NOTE]
 >The query is provided as-is and based on engagements in the field. The above query checks for Microsoft 365 Apps for enterprise, you might want to adjust the query for other licenses.
-5.	Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
-6.	Click **Summary**, **Next** and **Close** to finish the wizard.
+5. Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
+6. Click **Summary**, **Next** and **Close** to finish the wizard.
 The result is a collection which will automatically add all devices running any servicing channel for Microsoft 365 Apps.
 
 ## Implement a collection which catches all devices running other servicing channels
 
 After you created collections for the updates channels you are supporting as IT, you can also craft one which is catching all devices running other channels. This can help to find configuration drift and implement measures to re-establish the desired configuration on those devices.
-1.	Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
-2.	Provide a name and select a limiting collection. Click **Next**.
-3.	Click on **Add Rule** and select **Include Collections**. Select the collection you created to catch all devices running Microsoft 365 Apps. Click **OK**.
-4.	Click on **Add Rule** again and **Select Exclude Collections**. Select the collections you created which are catching devices on supported servicing channels. Click **OK**.
-5.	Click **OK** again. We recommend ticking the box for incremental updates, but this is optional.
-6.	Click **Summary**, **Next** and **Close** to finish the wizard.
+1. Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
+2. Provide a name and select a limiting collection. Click **Next**.
+3. Click on **Add Rule** and select **Include Collections**. Select the collection you created to catch all devices running Microsoft 365 Apps. Click **OK**.
+4. Click on **Add Rule** again and **Select Exclude Collections**. Select the collections you created which are catching devices on supported servicing channels. Click **OK**.
+5. Click **OK** again. We recommend ticking the box for incremental updates, but this is optional.
+6. Click **Summary**, **Next** and **Close** to finish the wizard.
 
 This collection will now automatically add all devices which have Microsoft 365 Apps installed but are not a member of one of the other collections we just created. As a result, the collection will catch all devices which are running on an update channels you have not created a separate collection for.
 
