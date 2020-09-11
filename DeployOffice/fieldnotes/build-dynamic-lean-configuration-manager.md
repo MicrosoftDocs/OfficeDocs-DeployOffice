@@ -96,15 +96,18 @@ select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SM
 >The query is provided as-is and based on engagements in the field. The above query checks for Microsoft 365 Apps for enterprise, you might want to adjust the query for other licenses.
 5. Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
 6. Click **Summary**, **Next** and **Close** to finish the wizard.
-The result is a collection which will automatically add all devices running any servicing channel for Microsoft 365 Apps.
+The result is a collection which will automatically add all devices running Microsoft 365 Apps, regardless of the update channel.
 
-## Implement a collection which catches all devices running other servicing channels
+## Implement a collection which catches all devices running other update channels
 
 After you created collections for the updates channels you are supporting as IT, you can also craft one which is catching all devices running other channels. This can help to find configuration drift and implement measures to re-establish the desired configuration on those devices.
 1. Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
 2. Provide a name and select a limiting collection. Click **Next**.
 3. Click on **Add Rule** and select **Include Collections**. Select the collection you created to catch all devices running Microsoft 365 Apps. Click **OK**.
-4. Click on **Add Rule** again and **Select Exclude Collections**. Select the collections you created which are catching devices on supported servicing channels. Click **OK**.
+4. Click on **Add Rule** again and **Select Exclude Collections**. Select the collections you created which are catching devices on supported update channels. Click **OK**.
+
+![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes_DynCollection_3.png)
+
 5. Click **OK** again. We recommend ticking the box for incremental updates, but this is optional.
 6. Click **Summary**, **Next** and **Close** to finish the wizard.
 
