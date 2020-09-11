@@ -29,7 +29,7 @@ If you're a volume licensed customer that's licensed for Office 2019 and you wan
 If you’re not a volume licensed customer, you need to do the following:
 
 - For Office on Windows, purchase Office 2019. After you purchase Office 2019, you need to uninstall Office 2019 Preview before installing Office 2019.
-- For Office on a Mac, you don’t need to uninstall Office 2019 Preview for Mac. But, you need to purchase Office 2019 for Mac. Then, run the [license removal tool](https://support.office.com/article/b032c0f6-a431-4dad-83a9-6b727c03b193) and [activate](https://support.office.com/article/7f6646b1-bb14-422a-9ad4-a53410fcefb2) your existing installation.
+- For Office on a Mac, you don’t need to uninstall Office 2019 Preview for Mac. But, you need to purchase Office 2019 for Mac. Then, run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193) and [activate](https://support.microsoft.com/office/7f6646b1-bb14-422a-9ad4-a53410fcefb2) your existing installation.
 
 > [!WARNING]
 > The client activation keys used in the Office 2019 Preview program expire on December 31, 2018. If you don't follow the steps in this article, Office 2019 Preview will go into reduced functionality mode and your users will only be able to read and print documents using Office 2019 Preview. Users will get periodic warnings about this in their Office apps, such as Word, starting in early December.

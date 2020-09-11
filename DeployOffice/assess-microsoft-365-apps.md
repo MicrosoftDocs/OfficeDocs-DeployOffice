@@ -33,7 +33,7 @@ Finally, you should review the deployment tools you use in your organization, su
 
 ## Step 2 - Review licensing and accounts
 
-Make sure that all your users have Office 365 (or Microsoft 365) accounts and licenses, and that those licenses include Microsoft 365 Apps. For details on how to manage accounts and licenses, see [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md), [Manage user accounts and licenses with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell), and [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
+Make sure that all your users have Office 365 (or Microsoft 365) accounts and licenses, and that those licenses include Microsoft 365 Apps. For details on how to manage accounts and licenses, see [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md), [Manage Microsoft 365 user accounts, licenses, and groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-user-accounts-and-licenses-with-microsoft-365-powershell), and [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 If you plan to install Visio or Project, make sure that you have the appropriate licenses and have identified the users who need them. For more information, see [Use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
@@ -43,7 +43,7 @@ Review your network capability, including bandwidth and distribution of client d
 
 - Installation files for Microsoft 365 Apps are at least 1.6 GB for the core files, plus at least 250 MB for each language deployed. 
 - Client devices require internet access to activate their Microsoft 365 Apps subscription, and then must connect at least once every 30 days to verify their subscription. 
-- The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- The following ports and protocols must be open: [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 - Microsoft 365 Apps updates vary in size, but you can review recent download sizes [here](https://docs.microsoft.com/officeupdates/download-sizes-microsoft365-apps-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
  

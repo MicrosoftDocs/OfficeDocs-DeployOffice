@@ -54,6 +54,9 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Office 
 
 There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – April 2020 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-april-2020-update/ba-p/1275508).
 
+### Retirement of Skype for Business Online
+
+Skype for Business Online will be retired on July 31, 2021. For more information, see [Skype for Business Online retirement](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement).
 
 ## Additional information about connectivity to Office 365 services  
 

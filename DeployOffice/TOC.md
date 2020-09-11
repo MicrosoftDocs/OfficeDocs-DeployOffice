@@ -28,17 +28,19 @@
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
+## [Privacy controls available for Office products](privacy/products-versions-privacy-controls.md?toc=/deployoffice/toc.json)
 
 ## Manage privacy controls
 ### [Windows policy settings](privacy/manage-privacy-controls.md?toc=/deployoffice/toc.json)
 ### [Mac preferences](privacy/mac-privacy-preferences.md?toc=/deployoffice/toc.json)
 ### [iOS preferences](privacy/ios-privacy-preferences.md?toc=/deployoffice/toc.json)
 ### [Android policy settings](privacy/android-privacy-controls.md?toc=/deployoffice/toc.json)
+### [Office for the web policy settings](privacy/office-web-privacy-controls.md?toc=/deployoffice/toc.json)
 
 ## Diagnostic data
 ### [Required diagnostic data](privacy/required-diagnostic-data.md?toc=/deployoffice/toc.json)
 ### [Optional diagnostic data](privacy/optional-diagnostic-data.md?toc=/deployoffice/toc.json)
-### [Using the Diagnostic Data Viewer](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+### [Using the Diagnostic Data Viewer](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences
 ### [Connected experiences](privacy/connected-experiences.md?toc=/deployoffice/toc.json)
@@ -54,7 +56,6 @@
 ## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 
 # Reference
-## [Overview of reference articles](reference-articles.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)

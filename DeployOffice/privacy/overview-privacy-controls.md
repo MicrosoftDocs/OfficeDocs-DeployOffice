@@ -19,6 +19,9 @@ hideEdit: true
 
 # Overview of privacy controls for Microsoft 365 Apps for enterprise
 
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
@@ -26,17 +29,6 @@ Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providin
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 As part of these changes, there are new and updated user interface (UI) elements and policy settings.
-
-> [!IMPORTANT]
-> - These changes apply to Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
-> - These changes also apply to the following:
->   - Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
->   - Version 1904 or later of the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
-> - These privacy controls are included in Version 1908 or later of Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel.
-> - These privacy controls are available for Version 2.30 and later of the iOS versions of Excel, OneNote, PowerPoint, and Word, as well as Version 1.17 and later of Visio Viewer for iOS.
-> - These privacy controls are available for Version 16.0.12226.10000 and later of the Android versions of Excel, PowerPoint, and Word, as well as Version 16.0.12228.20004 and later of OneNote for Android.
-> - Most of the Office for the web applications use the new privacy control for [optional connected experiences](optional-connected-experiences.md). Those applications are the following: Excel for the web, OneNote for the web, PowerPoint for the web, Visio for the web, and Word for the web. You can use the [Office cloud policy service](../overview-office-cloud-policy-service.md) to configure the appropriate [policy setting](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences).
-> - We will be extending these new and improved privacy controls to additional Office clients, including Teams and our mobile apps. We’ll provide more information about those changes in the upcoming months. We will continue to carefully listen to your feedback and make improvements across all Office 365 (and Microsoft 365) clients and services.
 
 ## Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft
 
@@ -72,7 +64,7 @@ For more information, see the following:
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
-- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## Connected experiences for Microsoft 365 Apps for enterprise
 
@@ -108,7 +100,7 @@ These are optional connected experiences that are not covered by your organizati
 
 Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
 For more information, see the following:
 
@@ -117,30 +109,19 @@ For more information, see the following:
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
 
 ## Required service data for connected experiences
 
-Required service data is data that enables us to deliver these cloud-based connected experiences and help make these experiences secure and perform as expected. Three types of information make up required service data.
+As you use a connected experience, data is sent to and processed by Microsoft to provide you that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data.
 
-- **Customer content**, which is content you create using Office, such as text typed in a Word document.
-- **Functional data**, which includes information needed by a connected experience to perform its task, such as configuration information about the app.
-- **Service diagnostic data**, which is the data necessary to keep the service secure, up to date, and performing as expected. Because this data is strictly related to the connected experience, it is separate from required or optional diagnostic data levels.
-
-To help you understand required service data, the following is an example scenario using PowerPoint Designer, which is a connected experience you can use when creating slides for a presentation. PowerPoint Designer helps you improve your slides by automatically generating design ideas to choose from. While you're putting content on a slide, Designer works in the background to match that content to professionally designed layouts.
-
-The required service data that is sent to Microsoft to enable this connected experience for you could include the following:
-
-- *Customer content*, such as the text or images you added to your slide.
-- *Functional data*, such as which slide you are working on and its layout.
-- *Service diagnostic data*, such as events that tell us if the design idea was correctly applied to your slide and that the service calls were performing correctly.
-
-If you choose not to provide your users with the category of connected experiences that includes PowerPoint Designer, the feature will be turned off and none of this required service data is sent to us.
+Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translate in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
 
 For more information, see [Required service data for Office](required-service-data.md).
 
 ## Essential services for Microsoft 365 Apps for enterprise
 
-There are also a set of services that are essential to how Microsoft 365 Apps for enterprise functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Microsoft 365 Apps for enterprise. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
+There is also a set of services that are essential to how Microsoft 365 Apps for enterprise functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Microsoft 365 Apps for enterprise. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
 
 For more information, see [Essential services for Office](essential-services.md).
 

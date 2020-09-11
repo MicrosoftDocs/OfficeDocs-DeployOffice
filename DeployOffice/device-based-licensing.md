@@ -23,8 +23,8 @@ Starting in Summer 2020, commercial customers can use *Microsoft 365 Apps for en
 
 The following are the requirements for device-based licensing for Microsoft 365 Apps for enterprise:
 
-- Version 1907 or later of Microsoft 365 Apps for enterprise
-- Version 1803 or later of Windows 10. Device-based licensing can be used with the Long Term Servicing Channel (LTSC) as well, but it must be version 1803 or later.
+- Version 1907 or later of Microsoft 365 Apps for enterprise.
+- A supported version of Windows 10 Semi-Annual Channel, but at least Version 1803.
 - The Windows 10 device must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
 To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet these requirements, do the following:
@@ -123,4 +123,4 @@ In this case, the device is having problems contacting the Office Licensing Serv
 
 If Microsoft 365 Apps  are already installed and activated with user-based subscription licensing or shared computer activation, you will need to reset the license state on the device before it will transition over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](https://docs.microsoft.com/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
 
-Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).  
+Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).  

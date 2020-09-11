@@ -16,7 +16,7 @@ description: "Provides Office admins with information about the implications of 
 
 > [!IMPORTANT]
 > - Support for Windows 8 ended on January 12, 2016. [Learn more](https://docs.microsoft.com/lifecycle/faq/windows#windows-81)
-> - Microsoft 365 Apps are not supported on Windows 8.
+> - Microsoft 365 Apps is not supported on Windows 8.
 > - If you're a home user running Office on Windows 8, see [Windows 8 end of support and Office](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading this article.
 
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://products.office.com/office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
@@ -40,11 +40,8 @@ To get security updates for Windows and updates to Microsoft 365 Apps, we strong
 > - If you’re using Microsoft Endpoint Configuration Manager (current branch), you can use the [Computers with a specific operating system](https://docs.microsoft.com/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.
 > - You can update from Windows 8 to Windows 8.1 for free. Windows 8.1 is supported until January 10, 2023. For more information, see [Update to Windows 8.1 from Windows 8](https://support.microsoft.com/help/15288/windows-8-update-to-windows-8-1).
 
-For more information about upgrading from Windows 8 to Windows 10, see the following resources:
+For more information about upgrading to Windows 10, see [Windows 10 deployment resources and documentation](https://docs.microsoft.com/windows/deployment/).
 
-- [Windows 10 deployment resources and documentation](https://docs.microsoft.com/windows/deployment/)
-- [Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
-
-Other upgrade resources are available from Microsoft experts, such as [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).
+Other upgrade resources are available from Microsoft experts, such as [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
 
 If you're not ready to upgrade from Windows 8 at this time, [Office on the web](https://www.office.com/) might be an alternative for your users.
