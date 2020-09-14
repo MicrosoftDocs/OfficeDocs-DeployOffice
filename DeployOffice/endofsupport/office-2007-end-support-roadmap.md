@@ -137,6 +137,6 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
     
 - For more information about Office 365 (and Microsoft 365) plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
-- For more information about the support lifecycle for Microsoft products, see [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/selectindex).
+- For more information about the support lifecycle for Microsoft products, see [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
 
 - To discuss or learn more about end of support for Office versions, go to the [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) area of the Microsoft Tech Community.
