@@ -4202,7 +4202,6 @@ This event is collected when the feed is shown to the user. The event is used to
 - **hostAppRing** - The population of users to whom the application was distributed.
 
 - **properties** - Contains additional metadata properties collected for each event. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
-  - **ClientTimeStamp** - Timestamp of when the event was logged in the client.
 
 - **publicEventName** - Public facing event name.  
 
@@ -5540,7 +5539,7 @@ browse, File Activation, Protocol Activation, etc.).
 
 #### Office_OfficeMobile_PdfViewer_PdfFileOperations
 
-The event is collected for the Office app for Android. It records when a PDF open, close, or save operation takes place and is used to understand and prioritize the user experience based on PDF file operation information. The event enables us to keep the PDF open, close and save operations performing as expected, and to improve PDF file operation performance.
+The event is collected for the Office app for Android. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close and save operations performing as expected, and to improve .pdf file operation performance.
 
 The following fields are collected:
 
@@ -5583,8 +5582,6 @@ The following fields are collected:
 The event is collected for the Office app for iOS. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close and save operations performing as expected, and to improve .pdf file operation performance. 
 
 - **Data_Doc_FileOpSessionID** - Unique Id for a Document Session 
-
-- **Data_Doc_URLHash** - A GUID for the file url 
 
 - **Data_ErrorCode** – error in case of file open failures/download failures / download canceled 
 
@@ -11662,13 +11659,23 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.Android.RehearseView
 
-This event is triggered on Stop of rehearsal session. In combination with Office.PowerPoint.PPT.Android.RehearseView.StartSession this will be the first indicator of any crashes or errors that user faces.
+This event is denoting that user has stopped the rehearsal session. In combination with Office.PowerPoint.PPT.Android.RehearseView.StartSession this will be the first indicator of any crashes or errors that user faces.
 
 The following fields are collected:
+
+- **ConnectionCreationTime** - time taken to create service side connections.
+
+- **CountDownAlertTime** – Time for which countdown alert was displayed.
+
+- **CountdownInitTime–** Time between slideshow load completed and countdown started.
 
 - **CritiqueSummary** - Summary of what all critiques user saw with their counts.
 
 - **ExitEventCode** – Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit. 
+
+- **FRETime** - Time between FRE screen started to display until user dismissed it. 
+
+- **MicrophonePermissionTime** - Time for which microphone permission alert was displayed until user select one of the options.
 
 - **PauseRehearsingCount** – Count of how many times user clicked on pause rehearsal.
 
@@ -11676,7 +11683,7 @@ The following fields are collected:
 
 - **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
 
-- **Sessionid** - This is speech frontdoor session id. We can use this to debug service logs.
+- **Sessionid** - This is speech frontdoor session id. This is used to debug service logs.
 
 - **SlideshowViewLoadTime** – Time taken by slideshow to load.
 
