@@ -77,7 +77,7 @@ If you're getting updates directly from the Office CDN on the internet, after th
 
 ## What about other versions of Office on Windows 7?
 
-Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
+Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
 
 Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, leaving it vulnerable to security threats, unless you have ESU. We recommend that you move to a [supported operating system](https://products.office.com/office-resources), such as [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
