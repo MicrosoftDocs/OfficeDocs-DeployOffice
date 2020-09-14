@@ -96,5 +96,6 @@ If the expected policies haven't been correctly applied to a user's device, try 
 - In some cases, policies might not be applied correctly if two users with different policies sign into Office 365 on the same device and during the same Windows session.  
 - Policy settings retrieved from the Office cloud policy service are stored in the registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
 - Policy service check-in activity is stored in the registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
+- Ensure the "Device Configuration" client workload is moved to Intune for clients in co-managed scenarios with Microsoft Endpoint Configuration Manager
 
 
