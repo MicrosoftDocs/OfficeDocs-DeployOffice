@@ -23,7 +23,7 @@ Starting on October 13, 2020, only these versions of Office will be supported fo
 
 Examples of Office 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
 
-For Microsoft 365 Apps, you must be using a supported version. For the versions currently supported, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 
 > [!IMPORTANT]
 > We won’t take any active measures to block other versions of the Office client, such as Office 2013, from connecting to Office 365 services, but these older clients may encounter performance or reliability issues over time.
