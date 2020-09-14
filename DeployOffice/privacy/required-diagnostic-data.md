@@ -17,14 +17,8 @@ hideEdit: true
 
 # Required diagnostic data for Office
 
-> [!IMPORTANT]
-> The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
-> - Microsoft 365 Apps for business (previously named Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
-> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
->
-> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data does not include a user's name or email address, the content of the user's files, or information about apps unrelated to Office.
 
@@ -37,7 +31,7 @@ Required diagnostic data helps to identify problems with Office that may be rela
 For more information about diagnostic data, see the following:
 
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
-- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 If you're the admin for your organization, you might also be interested in the following:
 
@@ -8196,7 +8190,7 @@ The following fields are collected:
 
 #### settings_action
 
-Allows us to detect situations where there is possible negative impact on your ability configure your app settings, such as your notification settings, your primary mail account, and configuring your mail signature.
+This event collects the configuration information in settings. The data allows us to detect situations where there is possible negative impact on the users’ ability configure app settings, such as notification settings, primary mail account, and configuring the email signature.
 
 The following fields are collected: 
 
@@ -8206,49 +8200,44 @@ The following fields are collected:
 
 - **auth_type** - The authentication type being used by the account, so we understand which backend sync layer we are using to help us diagnose issues 
 
-- **auth_type** - indicates the back-end authentication type allowing us to know if there is an issue with a particular account type
-
-- **badge_count_state** - indicates what type of badge count the user has asked for i.e. no badges, focused inbox only, etc. 
-
 - **changed_folder** - Capturing whether a folder was changed to help us diagnose issues. 
-
-- **changed_folder** - determines whether this action was archived, scheduled, or another action.
 
 - **delete_scope** - During an account deletion, whether you deleted the account from this device or from all devices with Outlook.  
 
-- **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
-
 - **enabled_state** - Whether your auto reply, save contacts, and block external images settings are configured correctly  
 
-- **enabled_state** - whether state related to the action is enabled
+- **notification_action** - To check if you have configured any notification actions for triaging emails to help us make sure this setting is working successfully 
 
-- **in_app_language** - the selected in-app language, string type (default, en-US, fa, ru etc.)  
+- **notification_action_number** - To check if your notification actions (action one or action two) are configured correctly
 
-- **notification_state** - indicates what type of badge count the user has asked for i.e. no badges, focused inbox only, etc.,
+- **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better.  Examples: Office365, Gmail, Outlook
 
-- **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better. Examples** - Office365, Gmail, Outlook
+- **setting_properties** - Tracks properties relation to setting action detailed below: 
+   - **alternate_app_icon_setting** - the selected alternate app icon (light, dark)
+   - **auth_type** - indicates the back-end authentication type allowing us to know if there is an issue with a particular account type
+   - **badge_count_state** - indicates what type of badge count the user has asked for I.e. no badges, focused inbox only, etc. 
+   - **changed_folder** - determines whether this action was archived, scheduled, or another action.
+   - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
+  - **enabled_state** - whether state related to the action is enabled
+  - **in_app_language** - the selected in-app language, string type (default, en-US, fa, ru etc.)
+  - **notification_action_setting** - indicates the details of, if applicable, notification action settings related to this action
+    - **notification_action** - indicates what the user was trying to do, I.e. flag, delete, archive, it allows us to determine what message action the user wanted to perform on the notification and if the action failed or not. 
+    - **notification_action_number** - indicates which action number (two of three actions are customizable) was assigned a notification action, i.e. action one, action two. This allows us to determine if there is a problem with a particular action.
+   - **notification_state** - indicates what type of badge count the user has asked for i.e. no badges, focused inbox only, etc.
+   - **server_type** - indicates the back-end server type allowing us to know if there is an issue with a particular server type
+   - **source** - indicates what is the source of notifications, if applicable, from settings or do not disturb setting
+   - **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
+     - **swipe_action** - indicates what the user was trying to do, i.e. flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
+     - **swipe_direction** - indicates which way the user set up the swipe to be, i.e. left to right or right to left. This allows us to determine if there is a problem with a particular swipe direction.
+   - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
+   - **signature_setting** - indicates if the setting was applied to all account or an individual account
 
-- **server_type** - indicates the back-end server type allowing us to know if there is an issue with a particular server type
-
-- **setting_properties** - Tracks properties relation to setting action 
-
-- **signature_setting** - indicates if the setting was applied to all account or an individual account
-
-- **source** - indicates what is the source of notifications, if applicable, from settings or do not disturb setting
-
-- **state_changed_to** - To check if your focused inbox on/off setting is configured correctly 
+- **state_changed_to** - To check if your focused inbox On/Off setting is configured correctly 
 
 - **swipe_action** - To check if you have configured any swipe actions for triaging emails to help us make sure this setting is working successfully 
 
-- **swipe_action** - indicates what the user was trying to do, i.e. flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
-
 - **swipe_direction** - To check if your swipe directions (left or right) are configured correctly
 
-- **swipe_direction** - indicates which way the user set up the swipe to be, i.e. left to right or right to left. This allows us to determine if there is a problem with a particular swipe direction.
-
-- **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
-
-- **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
 
 #### sidebar_action
 
@@ -12624,7 +12613,7 @@ The following fields are collected:
 - **Data_ArchivePath** - Path where the resource is temporarily cached.
 
 - **Data_ArchiveSizeKB** - Size of the resource that is being extracted.
-- 
+ 
 - **Data_ClassName** - File name in source code where the error is encountered.
 
 - **Data_ErrorDetail** - Text describing more details about the cause of the error, like the error code etc.
