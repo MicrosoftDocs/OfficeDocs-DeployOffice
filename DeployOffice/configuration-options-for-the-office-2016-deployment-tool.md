@@ -266,52 +266,36 @@ Example values:
 
 For a list of all supported product IDs, see  [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://go.microsoft.com/fwlink/p/?LinkID=301891)
 
-## MSI Condition attribute
+### MSI Condition attribute
 
 Optional.
 
-Defines which MSI product codes will be detected, uninstalled and repplaced with the resulting Prodict ID.
+Defines which MSI products are uninstalled as part of the installation of a click-to-run version of Office.
 
 Example values:
 
 - MSICondition="VisPro,VisProR"
 - MSICondition="PrjPro,PrjProR
 
-Example list of MSI Product codes:
+Examples of MSI product codes for Project and Visio:
 
-PrjStd
-PrjPro
-VisStd
-VisPro
-PrjStdR
-PrjProR
-VisStdR
-VisProR
+- PrjStd
+- PrjPro
+- VisStd
+- VisPro
+- PrjStdR
+- PrjProR
+- VisStdR
+- VisProR
 
 ### Example XML
 
 ```xml
-<Configuration>
-	<Add Channel="Monthly" OfficeClientEdition="64">
-		<Product ID="O365ProPlusRetail">
-			<Language ID="en-us"/>
-                        <Language ID="MatchPreviousMSI"/>
-			<ExcludeApp ID="Groove"/>
-			<ExcludeApp ID="OneNote"/>
-	</Product>
-		<Product ID="VisioProRetail" MSICondition="VisPro,VisProR">
-			<Language ID="en-us"/>
-                        <Language ID="MatchPreviousMSI"/>
-			<ExcludeApp ID="Groove"/>
-		</Product>
-		<Product ID="ProjectProRetail" MSICondition="PrjPro,PrjProR">
-			<Language ID="en-us"/>
-                        <Language ID="MatchPreviousMSI"/>
-			<ExcludeApp ID="Groove"/>
-		</Product>
-	</Add>
-	<RemoveMSI/>
-</Configuration>
+<Product ID="VisioProRetail" MSICondition="VisPro,VisProR">
+	<Language ID="en-us"/>
+        <Language ID="MatchPreviousMSI"/>
+	<ExcludeApp ID="Groove"/>
+</Product>
 ```
 ## Language element
 
