@@ -8016,6 +8016,8 @@ The following fields are collected:
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
+- **ScreenLocked** – Indication whether download is initiated behind locked screen
+
 - **SessionId** - The identifier for the session
 
 
@@ -8146,6 +8148,8 @@ The following fields are collected:
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **ScreenLocked** – Indication whether download is initiated behind locked screen
 
 - **SessionId** - The identifier for the session
 
