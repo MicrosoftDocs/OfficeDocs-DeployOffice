@@ -2653,6 +2653,16 @@ The following fields are collected:
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
 
+#### Office.Android.DocsUI.PaywallControl.SkuChooserToggled
+
+Usage telemetry to view how many times user switches between different SKUs before attempting a purchase. Used to understand usage of the SKU chooser and optimize the in app purchase experience in future versions.
+
+The following fields are collected:
+
+- **EventDate** – Timestamp of the event occurence 
+
+- **SessionID** – GUID to connect events by session
+
 #### Office_Android_EarlyTelemetry_ExpansionFilesAvailability
 
 We are enabling Android Package Kit (APK) expansion files for the Office mobile app. APK Expansion files are supplementary resource files that Android app developers can publish along with their app. To understand the reliability of the expansion files, we log a flag indicating whether expansion files are available or not at every boot.
@@ -5084,6 +5094,57 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
+
+#### Office.iOS.Paywall.Paywall.Presented
+
+This critical usage telemetry is collected when Paywall control is shown to the user, and is used to understand the in-app purchase experience for the user and optimize the same for future versions.
+
+The following fields are collected:
+
+- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
+
+- **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+
+#### Office.iOS.Paywall.Paywall.Stats
+
+This session-based metadata is collected when the Paywall UI is shown to the user, the duration of the interaction and whether a purchase was attempted and succeeded or failed.  The data is used to understand the usage and health of the entire payment experience and debug, optimize and troubleshoot the in-app purchase experience in future versions.
+
+The following fields are collected:
+
+- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+
+- **status** - String – Exit status of Paywall. Like “initiated”, “paymentDone”, “provisionFailed”
+
+- **userDuration** - Double – Duration in milli-seconds the user spent on Paywall
+
+#### Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
+
+This event collects the features and apps the user expands from “See More Benefits”, and the duration of time spent.  The data is used to understand usage of the “See all benefits” feature and further optimize the experience in future versions.
+
+The following fields are collected:
+
+- **appsExpanded** - String - Comma-separated list of services/apps for which the benefits were expanded.
+
+- **productId** - String - App Store ID of the product for which user is viewing more benefits offered
+
+- **userDuration** - Double - Duration in milli-seconds the user spent on the Benefits Screen.
+
+#### Office.iOS.Paywall.SKUChooser.Stats
+
+This usage telemetry is collected to see how the user entered the SKU Chooser, how much time the user spends on the SKU Chooser screen and why they exited the SKU Chooser.  The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions.
+
+The following fields are collected:
+
+- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton
+
+- **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+
+- **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser
+
 
 #### Office.LivePersonaCard.ConfigurationSetAction
 
@@ -10956,6 +11017,24 @@ The following fields are collected:
 
 - **view_duration** - Tells us how long it took to render the various UI calendar components to help us detect performance issues impacting your calendar experience
 
+#### contact_action
+
+This event is triggered on different actions on contacts - viewing, updating, and deleting contacts as well as viewing the contacts list. It is used to determine if there are any performance regressions that have to do with contacts.
+
+The following fields are collected: 
+
+- **accounts_with_filters** - the number of accounts with filters applied to the contact list
+
+- **action** - the action that was performed, e.g. viewing a contact
+ 
+- **duration_initial_view_load** - duration from opening the view to initially loading the contact list
+
+- **duration_show_contacts** - duration from opening the view to showing contacts in the contact list
+ 
+- **total_contacts** - number of contacts with no filters applied
+ 
+- **total_filtered_contacts** - number of contacts with filters applied
+
 #### conversation_load_time
 
 This event lets us detect and fix issues where there is perceivable performance impact on loading your email conversations to ensure your emails are loading as expected.
@@ -11536,6 +11615,16 @@ The following fields are collected:
 - **ReqId** - GUID for the batch request that this method belongs to
 
 - **TypeId** - GUID for the interface on which this method being called
+
+#### Office.iOS.Paywall.FailedScreen.RetryButtonTap
+
+This usage telemetry is collected to know when the Purchase/Provisioning/Activation failed, and the user tapped the “Retry” button.  Used to troubleshoot purchase error scenarios that lead to retry and improve process reliability.
+
+The following fields are collected:
+
+- **failureReason** - String – Indicates what the failure was the user is retrying. Like “provisioningFailed”, “purchaseFailed”, “activationFailed”.
+
+- **productid** - String – App Store ID of the product for which user is retrying the failed request
 
 
 #### Office.Manageability.Service.ApplyPolicy
@@ -12409,6 +12498,25 @@ The following fields are collected:
 
 - **UriScheme** - scheme of the URL
 
+#### Office.Android.AuthACEErrors
+
+This event uses the Microsoft Account (MSA) to determine which user is attempting to sign-in to the app and during that which telemetry in discussion is getting triggered as part of an unsuccessful attempt.  
+
+This event helps with MSA sign-in error distribution analysis, which helps in understanding reasons behind unsuccessful MSA sign-in flow end.
+
+The following fields are collected:
+
+- **ExceptionsName** - indicates exception classes with regard to exception tags that occur during Microsoft account sign-in flow.
+
+- **ExceptionsTag** - indicates which inflow exceptions present in union are occurring for MSA-sign in flow.
+
+- **IDCRLACEErrorCode** - Gives error code occurring during MSA sign-in flow. Different error codes mentioned at %SRCROOT%\identity\coreapi\public\IdentityData.h
+
+- **IDCRLAuthenticationStatusErrorCode** - Indicates error codes for invalid status of Authentication result coming from Microsoft Account (MSA).
+
+- **IDCRLUserInteractionMissingError** - Indicates if Microsoft Account (MSA) sign-in flow invoked with showUI flag as false causing the hit.
+
+
 #### Office.Android.BCS.Errors
 
 Binary conversion Errors telemetry for Print and Share as PDF.  Microsoft uses this to identify failure points during BCS conversions in Word, Excel, or PowerPoint.
@@ -12500,6 +12608,37 @@ The following fields are collected:
 - **Data_ExceptionType** - An optional text field representing the name of the exception thrown from source code.
 
 - **Data_MethodName** - Text representing the method name in source code where there is an error.
+
+#### Office_Android_EarlyTelemetry_ExtractionError
+
+To reduce the size of Office Android apps, we apply compression to the resources in the final package. At run time, we first extract these resources before using them. Sometimes there are unexpected errors while performing extractions, which leads to app crashes. 
+
+Through this event we are collecting some diagnostic information related to extraction, like name of the resource being extracted, path where its extracted etc, free disk space available etc. This data is collected only when there are extraction errors.
+
+We use this data to understand the cause of extraction failures, and to improve the user experience of our apps.
+
+The following fields are collected:
+
+- **Data_ArchiveName** - Name of the resource that is being extracted.
+
+- **Data_ArchivePath** - Path where the resource is temporarily cached.
+
+- **Data_ArchiveSizeKB** - Size of the resource that is being extracted.
+- 
+- **Data_ClassName** - File name in source code where the error is encountered.
+
+- **Data_ErrorDetail** - Text describing more details about the cause of the error, like the error code etc.
+
+- **Data_ErrorMessage** - Text describing the type of error encountered during extraction.
+
+- **Data_ExtractionDestinationPath** - Path where the resource is to be saved after extraction.
+
+- **Data_FreeDiskSpaceMB** - The amount of free disk space available on the device measured in Mega Bytes. 
+
+- **Data_ItemToExtract** - Name of the resource that is being extracted.
+
+- **Data_MethodName** - Method name in source code where the error is encountered.
+
 
 #### Office_Android_EarlyTelemetry_RegistryErrors
 
