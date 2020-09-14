@@ -119,11 +119,10 @@ The following table shows the tentative release schedule for Version 2005 for th
 |---------|---------|---------|
 |Current Channel (Preview) |Version 2005   | May 14, 2020  |
 |Current Channel   | Version 2005  | June 2, 2020  |
-|Monthly Enterprise Channel | *To be determined*  | *To be determined*   |
-|Semi-Annual Enterprise Channel (Preview) | *To be determined*  | *To be determined*   |
-|Semi-Annual Enterprise Channel    | *To be determined*  |*To be determined*   |
+|Monthly Enterprise Channel | *Version 2008*  | *October 13, 2020*   |
+|Semi-Annual Enterprise Channel (Preview) | Version 2008  | September 8, 2020  |
+|Semi-Annual Enterprise Channel | *Version 2008*   |*January 12, 2021*   |
 
-Not all devices with Version 2005 or later will receive the background service right away. That's because we're gradually rolling out this change. So if you're installing or updating to Version 2005 or later, and the background service isn't installed, that is probably expected and not necessarily an error. It's likely a future installation or update will install the background service.
 
 ## Which locations will receive the Microsoft Search in Bing extension?
 
