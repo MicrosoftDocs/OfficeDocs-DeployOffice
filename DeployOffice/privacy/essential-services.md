@@ -705,7 +705,7 @@ The following fields are collected:
 
 - **oneauth_transactionuploadid** - GUID specifying an individual call to the OneAuth API.
 
-- **oneauth_version - The version of the OneAuth SDK.**
+- **oneauth_version** - The version of the OneAuth SDK.
 
 - **Platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
 
