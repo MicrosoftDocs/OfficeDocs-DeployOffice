@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
+description: "Provides Office admins information on setting an update deadline for devices within the Servicing Profile"
 ---
 
 # Update deadline
