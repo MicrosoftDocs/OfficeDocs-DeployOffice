@@ -195,9 +195,9 @@ As part of your overall Office training plan, you should provide guidance to use
   
 ### Prepare help desk and users for change
 
-Your Help Desk should be ramped up on Office and ready to support users. They should start by going to the [Office Training Center](https://support.office.com/office-training-center).
+Your Help Desk should be ramped up on Office and ready to support users. They should start by going to [Microsoft 365 Training](https://support.microsoft.com/training).
     
-## Related topics
+## Related articles
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)

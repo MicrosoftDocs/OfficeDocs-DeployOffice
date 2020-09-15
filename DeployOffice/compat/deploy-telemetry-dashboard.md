@@ -66,7 +66,7 @@ SQL Server must be deployed before you can configure Office Telemetry Dashboard.
 - SQL Server 2005 or SQL Server 2005 Express Edition
 
 > [!NOTE]
-> To check which versions of SQL Server are currently supported, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
+> To check which versions of SQL Server are currently supported, go to [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/) page.
 
 The **Getting started** worksheet in Office Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
@@ -109,7 +109,7 @@ Office Telemetry Processor runs on one or more computers and collects inventory,
 
 The processor generates error logs in a file that is named dperrorlog.txt. It is located in a hidden folder at %systemroot%\ServiceProfiles\NetworkService\AppData\Local\Temp.
 
-Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
 
 We recommend the following operating systems for computers that run the processor:
 
@@ -137,7 +137,7 @@ Ensure that you have the following available before you run the wizard to set up
 
 ### To install the Office Telemetry Processor
 
-1. On the computer where you want to install the processor, install the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+1. On the computer where you want to install the processor, install the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
 
 2. In Office Telemetry Dashboard, on the **Getting started** worksheet, choose the installation link under **2. Install Telemetry Processor**. Select the x86 or x64 version that's the same as the Windows operating system architecture where the processor will run.
 
@@ -245,14 +245,14 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 
 - Windows Server 2008
 
-The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on the [Microsoft Product Lifecycle Search website](https://go.microsoft.com/fwlink/p/?LinkId=286402) before you install the agent. 
+The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/) before you install the agent. 
 
 > [!NOTE]
 > - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.
 > - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
 
-The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
 
 ### To deploy the Office 2019 or Office 2016 agent to Office 2010, Office 2007, and Office 2003 clients
 

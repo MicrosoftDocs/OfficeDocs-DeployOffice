@@ -71,7 +71,7 @@ Therefore, we went with 8 language packs in this scenario, which saved a lot of 
 
 First off, you need an overview on how often each individual language pack is installed in your environment. If you are using Configuration Manager, you can directly query the database for an overview and count of installed language packs with the below query:
 
-```
+```sql
 select count (distinct resourceid) as total, DisplayName0 from v_Add_Remove_Programs where DisplayName0 like 'Microsoft Office Language Pack%' group by resourceid, DisplayName0
 
 ```
@@ -99,7 +99,7 @@ Decide which language packs you want to include and note them down.
 
 The next step is to craft a deployment package which includes the selected language packs and allows devices to fall back to Office CDN for missing content.
 
-1. Make sure, that the account (user or SYSTEM) used to install Microsoft 365 Apps can connect to the internet [as documented](https://docs.microsoft.com/Office365/Enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
+1. Make sure, that the account (user or SYSTEM) used to install Microsoft 365 Apps can connect to the internet [as documented](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
 2. Launch your Configuration Manager, navigate to **Software Library**, open the **Office 365 Client Management** node, and launch the **Office 365 Installer** wizard. 
 3. Click through the wizard and make sure to select all the languages you want to include. 
 4. Once the wizard has finished its work, we must adjust the configuration file to allow Office CDN fallback and instruct the setup engine to dynamically determine which languages to install instead of hard coding them. Navigate to your content source folder and open the configuration.xml in an editor. 

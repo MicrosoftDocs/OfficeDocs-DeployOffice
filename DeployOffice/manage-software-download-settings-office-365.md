@@ -55,6 +55,6 @@ After you download the software, you can use your existing software deployment t
     
 - Users have to be local administrators on their computers to install Office software. If users aren't local administrators, you'll have to install Office for them.
     
-- For users to be able to install Office, you need to [assign them a license](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).
+- For users to be able to install Office, you need to [assign them a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
     
 - By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office Deployment Tool to deploy Office to your users without those apps.

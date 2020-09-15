@@ -32,7 +32,7 @@ Here are the general steps to deploy Project Online Desktop Client to users in y
   
 1. Purchase either Project Plan 3 or Project Plan 5, which includes Project Online Desktop Client, with enough licenses for each of your Project users.
     
-2. Sign in to Office 365 and [assign licenses](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) for Project Online Desktop Client to those users. 
+2. Sign in to Office 365 and [assign licenses](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Project Online Desktop Client to those users. 
     
 3. Have your users sign in to Office 365 and install Project from the **Software** section of the Office 365 portal. Users have to be local administrators on their computers to install Project. 
     
@@ -88,11 +88,11 @@ The same Group Policy settings work for Project Online Desktop Client, as well a
 
 To help your users get started with Project, here are some resources to share with them:
 
-- [What's new in Project 2019](https://support.office.com/article/6be41c8a-c4b2-409a-9ef7-d250377ad3b7)
-- [Project help center](https://support.office.com/project)
-- [Get started with Project](https://support.office.com/article/ed95837e-5675-4f6b-ad2e-7f1fd8524eac#ID0EAABAAA=Project_Desktop)  
+- [What's new in Project 2019](https://support.microsoft.com/office/6be41c8a-c4b2-409a-9ef7-d250377ad3b7)
+- [Project help & learning](https://support.microsoft.com/project)
+- [Get started with Project](https://support.microsoft.com/office/ed95837e-5675-4f6b-ad2e-7f1fd8524eac#ID0EAABAAA=Project_Desktop)  
     
-## Related topics
+## Related articles
 
 - [Documentation](https://docs.microsoft.com/project) to help you plan, deploy, and manage Project Server and Project Online
 - [Plans and pricing information](https://products.office.com/project/compare-microsoft-project-management-software?tab=1)

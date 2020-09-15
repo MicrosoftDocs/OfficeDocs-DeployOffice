@@ -73,7 +73,7 @@ In addition, you should review the system requirements for your Office server wo
   
 ## Plan for Office 365
 
-Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Microsoft 365 Enterprise for your organization](https://docs.microsoft.com/office365/enterprise/setup-overview-for-enterprises).
+Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Microsoft 365 Enterprise for your organization](https://docs.microsoft.com/microsoft-365/enterprise/setup-overview-for-enterprises).
   
 ## Assess application compatibility
 
@@ -133,10 +133,10 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
 
 - For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md).
     
-- To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2007-servers-and-products).
+- To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 servers and clients](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products).
     
 - For more information about Office 365 (and Microsoft 365) plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
-- For more information about the support lifecycle for Microsoft products, see [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/selectindex).
+- For more information about the support lifecycle for Microsoft products, see [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
 
 - To discuss or learn more about end of support for Office versions, go to the [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) area of the Microsoft Tech Community.

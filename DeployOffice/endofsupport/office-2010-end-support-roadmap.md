@@ -15,7 +15,7 @@ description: "Provides recommendations, information, and links to help administr
 
 Office 2010 will reach its end of support on October 13, 2020. If you haven't already begun to upgrade your Office 2010 environment, we recommend you start now.
 
-Also, support for Windows 7 ended on January 14, 2020. Even though Office 2010 is still supported until October, Windows 7 will no longer receive security updates after January 2020, unless you purchase Extended Security Updates (ESU). Without ESU, Windows 7 is vulnerable to security threats. For more information, see the [Windows 7 end of support site](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) and [Lifecycle FAQ-Extended Security Updates](https://support.microsoft.com/help/4497181/lifecycle-faq-extended-security-updates).
+Also, support for Windows 7 ended on January 14, 2020. Even though Office 2010 is still supported until October, Windows 7 will no longer receive security updates after January 2020, unless you purchase Extended Security Updates (ESU). Without ESU, Windows 7 is vulnerable to security threats. For more information, see the [Windows 7 end of support site](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) and [FAQ about Extended Security Updates for Windows 7](https://support.microsoft.com/help/4527878/faq-about-extended-security-updates-for-windows-7).
   
 This article provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps.
   
@@ -75,7 +75,7 @@ In addition, you should review the system requirements for your Office server wo
   
 ## Plan for Office 365
 
-Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Microsoft 365 Enterprise for your organization](https://docs.microsoft.com/office365/enterprise/setup-overview-for-enterprises).
+Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 365) plans, you should review your current Office 365 (or Microsoft 365) capabilities as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have Office 365 (or Microsoft 365) accounts and licenses. For more information, see [Deploy Microsoft 365 Enterprise for your organization](https://docs.microsoft.com/microsoft-365/enterprise/setup-overview-for-enterprises).
   
 ## Assess application compatibility
 
@@ -135,10 +135,10 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
 
 - For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md).
     
-- To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/Office365/Enterprise/upgrade-from-office-2010-servers-and-products).
+- To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products).
     
 - For more information about Office 365 (and Microsoft 365) plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
-- For more information about the support lifecycle for Microsoft products, see [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/selectindex).
+- For more information about the support lifecycle for Microsoft products, see [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
 
 - To discuss or learn more about end of support for Office versions, go to the [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) area of the Microsoft Tech Community.

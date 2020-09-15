@@ -23,6 +23,8 @@ Starting on October 13, 2020, only these versions of Office will be supported fo
 
 Examples of Office 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
 
+For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+
 > [!IMPORTANT]
 > We won’t take any active measures to block other versions of the Office client, such as Office 2013, from connecting to Office 365 services, but these older clients may encounter performance or reliability issues over time.
 
@@ -54,6 +56,9 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Office 
 
 There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – April 2020 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-april-2020-update/ba-p/1275508).
 
+### Retirement of Skype for Business Online
+
+Skype for Business Online will be retired on July 31, 2021. For more information, see [Skype for Business Online retirement](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement).
 
 ## Additional information about connectivity to Office 365 services  
 

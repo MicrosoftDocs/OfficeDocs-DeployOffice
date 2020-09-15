@@ -31,7 +31,7 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
     
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-resources).
     
-- Like other versions of Office, Microsoft 365 Apps is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose between the 64-bit or 32-bit version of Office](https://support.office.com/article/Choose-between-the-64-bit-or-32-bit-version-of-Office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
+- Like other versions of Office, Microsoft 365 Apps is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
     
 - When you deploy Microsoft 365 Apps, it's installed on the user's local computer. Microsoft 365 Apps is not a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the internet all the time to use it.
     
@@ -44,7 +44,7 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
 
 Even though Microsoft 365 Apps is a lot like other versions of Office, there are differences, including for [Deployment differences](about-microsoft-365-apps.md#BKMK_Deployment) and [Licensing differences](about-microsoft-365-apps.md#BKMK_Licensing). 
   
-The most significant difference is that Microsoft 365 Apps is updated regularly, as often as monthly, with new features, unlike non-subscription versions of Office. For a list of new features, see [What's new in Office 365](https://support.office.com/article/What-s-new-in-Office-365-95c8d81d-08ba-42c1-914f-bca4603e1426).
+The most significant difference is that Microsoft 365 Apps is updated regularly, as often as monthly, with new features, unlike non-subscription versions of Office. For a list of new features, see [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426).
   
 ### Deployment differences
 <a name="BKMK_Deployment"> </a>

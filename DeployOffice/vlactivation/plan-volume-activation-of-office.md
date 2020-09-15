@@ -19,7 +19,7 @@ description: "Provides Office admins with an overview of Key Management Service 
  Activation is the process of validating software with the manufacturer after it has been installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and has not been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
 > [!NOTE]
-> If you're a user trying to activate a personal copy of Office, see [Activate Office](https://support.office.com/article/5bd38f38-db92-448b-a982-ad170b1e187e) instead of reading this article.
+> If you're a user trying to activate a personal copy of Office, see [Activate Office](https://support.microsoft.com/office/5bd38f38-db92-448b-a982-ad170b1e187e) instead of reading this article.
   
 
 Volume activation is the process that Microsoft volume licensing customers use to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products across large organizations.

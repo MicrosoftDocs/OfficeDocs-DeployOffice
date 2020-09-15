@@ -125,9 +125,6 @@ Allowed values:
 
 ### Channel attribute (part of Add element) 
 
-> [!NOTE]
-> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
-
 Optional.
 
 Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
@@ -682,9 +679,6 @@ Example value:
 - Deadline="05/16/2014 18:30"
 
 ### Channel attribute (part of Updates element)
-
-> [!NOTE]
-> We’ve made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
 
 Optional. The default is **Current**.
 
