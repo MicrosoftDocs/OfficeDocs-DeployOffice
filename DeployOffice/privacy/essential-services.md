@@ -788,6 +788,97 @@ The following fields are collected:
 - **WAM_x_ms_clitelem** - Present if service returns header “x-ms-clitelem"
 
 
+### Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
+
+Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. This event is a parent of one or more ActionMicrosoftOffice events, allowing related events to be grouped together. These events help our users avoid entering broken authentication states by:
+
+1) Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+
+2) Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+
+3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+
+4) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+
+The following fields are collected:
+
+- **Actiontype** - "oneauthtransaction" is the only value.
+
+- **Appaudience** - Application audience (Automation, Preproduction or Production)
+
+- **Appname** - App name
+
+- **Appver** - App version
+
+- **Authoutcome** - Did the authentication attempt succeed, fail, or was cancelled
+
+- **Correlationid** - Identifier used to join information regarding this individual event with services 
+data
+
+- **Count** - Number of times the error occurred
+
+- **Devicenetworkstate** - Device network state
+
+- **Deviceprofiletelemetryid** - Device profile telemetry ID (string used by MATS to identify a 
+specific device)
+
+- **duration_max** - Minimum duration, in milliseconds, of the transactions aggregated on this signal.
+
+- **duration_min** - Maximum duration, in milliseconds, of the transactions aggregated on this signal.
+
+- **duration_sum** - Sum of durations, in milliseconds, of the transactions aggregated on this signal.
+
+- **Endtime** - Time at which the OneAuth transaction ended.
+
+- **Error** - OneAuth status code.
+
+- **Eventtype** - Event type
+
+- **Issilent** - False if UI was shown; true if it was a background event.
+
+- **oneauth_api** - Specifies the public API of OneAuth that was invoked.
+
+- **oneauth_Domain** - If the API call resulted in an error, this is the system domain of that error.
+
+- **oneauth_ErrorCode** - Error code representing the internal error state for OneAuth. Replaces the old oneauth_errortag field.
+
+- **oneauth_errortag** - Numerical identifier for a line of code that was responsible for generating an error.
+
+- **oneauth_ExecutionFlow** - A series of tags identifying the codepath this API invocation took.
+
+- **oneauth_internalerror** - Error code representing the internal error state for OneAuth.
+
+- **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_Tag** - The OneAuth tag designating the final place in code reached at the conclusion of this API call.
+
+- **oneauth_transactionuploadid** - Specifies the randomly-generated internal GUID that maps to the specific invocation of a OneAuth API.
+
+- **oneauth_version** - The version of the OneAuth SDK.
+
+- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+
+- **Scenarioname** - Name of the scenario for which auth is necessary, specified by the calling application.
+
+- **Schemaver** - Schema Version
+
+- **Sdkver** - Version of the MATS sdk
+
+- **Sessionid** - Session ID
+
+- **severityError** - severity
+
+- **starttime** - Time at which the OneAuth transaction began.
+
+- **Timestamp** - Timestamp
+
+- **Type** - Error type
+
+- **Uploaded** - Unique identifier for this particular event, for de-duping purposes.
+
+
 ### OneNote.SignIn.SSOExternalAppsAccountFound
  
 This event is logged when an account with a valid refresh token is found among the list of accounts provided by TokenSharingManager.  This scenario is specific to Single Sign-on (SSO).
