@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
+description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
 ---
 
 # Microsoft 365 Apps health

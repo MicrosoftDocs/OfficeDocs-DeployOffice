@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
+description: "Provides Office admins information on how to onboard to Microsoft 365 Apps management services"
 ---
 
 # Getting started

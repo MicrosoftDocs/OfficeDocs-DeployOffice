@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
+description: "Provides Office admins information about configuring and using Inventory in config.office.com to view the devices they manage"
 ---
 
 # Inventory
