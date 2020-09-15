@@ -422,6 +422,463 @@ The following fields are collected:
 
   - **Wamtelemetrybatch** - Currently unused. In the future, allows the WAM component to dispatch additional information regarding the authentication event.
 
+
+### Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
+
+Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. When acquisition attempts fail, error information is included. These events help our users avoid entering broken authentication states by:
+
+1) Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+
+2) Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+
+3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+
+4) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+
+The following fields are collected:
+
+- **Accounttype** - Type of the account used for this authentication event, for example, consumer or organizational.
+
+- **Actionname** - Friendly name for this event, if one was provided.
+
+- **Actiontype** - Specifies the type of authentication library in use.
+
+- **Appaudience** - Is the app build for internal or external use
+
+- **Appforcedprompt** - Did the app override cache and force a prompt to be shown
+
+- **Appname** - Name of the application doing authentication
+
+- **Appver** - Version of the application doing authentication
+
+- **Askedforcreds** - Did the application ask the user to enter credentials for this action
+
+- **Authoutcome** - Did the authentication attempt succeed, fail, or was cancelled
+
+- **Blockingprompt** -  Did the application throw a prompt requiring user interaction
+
+- **Correlationid** - Identifier used to join information regarding this individual event with services data
+
+- **Count** - The total number of aggregated actions reported in this one data event.
+
+- **Devicenetworkstate** - Is the device connected to the internet.
+
+- **Deviceprofiletelemetryid** - Anonymous device ID used to measure device-wide authentication experience and reliability.
+
+- **Duration** - How long the authentication took
+
+- **duration_max** - Max duration of any one of the aggregated events
+
+- **duration_min** - Min duration of any one of the aggregated events
+
+- **duration_sum** - Sum of the duration of all the aggregated events
+
+- **endtime** - When the authentication event ended
+
+- **error** - Error code if the authentication failed
+
+- **errordescription** - Brief description of the error
+
+- **errorsource** - Did the error come from service, authentication library, or application
+
+- **eventtype** - Is this event reporting an authentication datapoint, or a data quality error event. Used to measure data quality.
+
+- **from_cache** - Boolean representing whether the record is from the WAM core cache, or the plugin
+
+- **hasadaltelemetry** - Indicates whether the Azure Active Directory Authentication Library (ADAL) provided telemetry for this event.
+
+- **Identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+
+- **Interactiveauthcontainer** - What type of prompt was shown
+
+- **Issilent** - Was a prompt shown or was this a silent (background) authentication event.
+
+- **Microsoft_ADAL_adal_version** - Version of the Azure Active Directory Authentication Library (ADAL)
+
+- **Microsoft_ADAL_api_error_code** - Error code emitted by authentication library for this authentication attempt
+
+- **Microsoft_ADAL_api_id** - API invoked for this authentication attempt
+
+- **Microsoft_ADAL_application_name** - The name of the application / process using ADAL.
+
+- **Microsoft_ADAL_application_version** - The version of the application using ADAL.
+
+- **Microsoft_ADAL_authority** - Azure Active Directory authority URL responsible for authenticating the user
+
+- **Microsoft_ADAL_authority_type** - Consumer / Microsoft Service Agreement (MSA) vs organizational / Azure Active Directory (AAD); currently always AAD
+
+- **Microsoft_ADAL_authority_validation_status** - Tells whether authentication completed on the service-side
+
+- **Microsoft_ADAL_broker_app** - Tells whether ADAL used a broker for authentication
+
+- **Microsoft_ADAL_broker_app_used** - Tells the name of the broker (e.g., Windows Account Management)
+
+- **Microsoft_ADAL_broker_version** - Tells the version of the broker if used
+
+- **Microsoft_ADAL_cache_event_count** - Number of cache events ADAL performed while retrieving token
+
+- **Microsoft_ADAL_cache_event_count_max** - If this signal is aggregated, max cache events of any one of the aggregated events
+
+- **Microsoft_ADAL_cache_event_count_min** - If this signal is aggregated, min cache events of any one of the aggregated events
+
+- **Microsoft_ADAL_cache_event_count_sum** - If this signal is aggregated, sum of the cache events of all the aggregated events
+
+- **Microsoft_ADAL_cache_read_count** - How many times the API read from the disk cache. Present if there was at least one read
+
+- **Microsoft_ADAL_cache_read_error_count** - How many times the disk cache read failed. Is present if there was at least one failure
+
+- **Microsoft_ADAL_cache_read_last_error** - ADAL error code. Present if there was at least one read failure
+
+- **Microsoft_ADAL_cache_read_last_system_error** - System error code.  Is present if there was at least one read failure
+
+- **Microsoft_ADAL_cache_write_count** - How many times the API wrote to the disk cache. Present if there was at least one write
+
+- **Microsoft_ADAL_cache_write_error_count** - How many times the disk cache-write failed. Present if there was at least one failure
+
+- **Microsoft_ADAL_cache_write_last_error** - ADAL error code. Present if there was at least one write failure
+
+- **Microsoft_ADAL_cache_write_last_system_error** - System error code. Present if there was at least one write failure
+
+- **Microsoft_ADAL_client_id** - Hashed Azure Active Directory app ID
+
+- **Microsoft_ADAL_device_id** - ADAL-generated local device id.
+
+- **Microsoft_ADAL_error_domain** - The domain/component which generated the error code.
+
+- **Microsoft_ADAL_error_protocol_code** - OAuth protocol error code returned by the service, recorded by ADAL.
+
+- **Microsoft_ADAL_extended_expires_on_setting** - True/false telling if the token has an extended lifetime
+
+- **Microsoft_ADAL_http_event_count** - Number of HTTP requests generated by ADAL.
+
+- **Microsoft_ADAL_idp** - The Identity Provider (idp) used by ADAL.
+
+- **Microsoft_ADAL_network_event_count** - Count of network calls made by ADAL
+
+- **Microsoft_ADAL_http_event_count_max** - If this signal is aggregated, max of http calls made by ADAL
+
+- **Microsoft_ADAL_http_event_count_min** - If this signal is aggregated, min of http calls made by ADAL
+
+- **Microsoft_ADAL_http_event_count_sum** - If this signal is aggregated, sum of http calls made by ADAL
+
+- **Microsoft_ADAL_network_event_count_max** - If this signal is aggregated, max network calls made by ADAL of any aggregated event
+
+- **Microsoft_ADAL_network_event_count_min** - If this signal is aggregated, min network calls made by ADAL of any aggregated event
+
+- **Microsoft_ADAL_network_event_count_sum** - If this signal is aggregated, sum of the network calls made by ADAL of all the aggregated events
+
+- **Microsoft_ADAL_is_silent_ui** - True/false telling if UI was shown (prompt) by ADAL
+
+- **Microsoft_ADAL_is_successfull** - True/false telling if ADAL API succeeded (MacOS)
+
+- **Microsoft_ADAL_is_successful** - True/false telling if ADAL API succeeded
+
+- **Microsoft_ADAL_logging_pii_enabled** - True/false telling if ADAL full logging mode is enabled. This data is only logged locally, not emitted in telemetry
+
+- **Microsoft_ADAL_ntlm** - True/false telling if ADAL used basic auth (NTLM).
+
+- **Microsoft_ADAL_oauth_error_code** - OAuth protocol error code returned by the service
+
+- **Microsoft_ADAL_prompt_behavior** - log-in or none network parameter passed to service to specify if user interface can be shown
+
+- **Microsoft_ADAL_request_id** - Transactional GUID for the request emitted by ADAL to the service
+
+- **Microsoft_ADAL_response_code** - network response code from the service
+
+- **Microsoft_ADAL_response_time** - How long it took service to return to ADAL
+
+- **Microsoft_ADAL_response_time_max** - If the signal is aggregated, the max time it took ADAL to return from its API among any of the aggregated events
+
+- **Microsoft_ADAL_response_time_min** - If the signal is aggregated, the min time it took the service to respond to ADAL among any of the aggregated events
+
+- **Microsoft_ADAL_response_time_sum** - If the signal is aggregated, the sum of the time it took ADAL to return from its API among all aggregated events
+
+- **Microsoft_ADAL_rt_age** - Age of the refresh token
+
+- **Microsoft_ADAL_server_error_code** - Error code returned by the server
+
+- **Microsoft_ADAL_server_sub_error_code** - Sub error code returned by the server to help disambiguate why the request failed
+
+- **Microsoft_ADAL_spe_info** - True/false telling if the user was using the Secure Production Enterprise inner ring (Microsoft employees only)
+
+- **Microsoft_ADAL_spe_ring** - True/false telling if the user was using the Secure Production Enterprise inner ring (Microsoft employees only)
+
+- **Microsoft_ADAL_start_time** - Time the ADAL API call was made
+
+- **Microsoft_ADAL_status** - Success/Failure status on the overall ADAL invocation
+
+- **Microsoft_ADAL_stop_time** - Time the ADAL API call returned
+
+- **Microsoft_ADAL_telemetry_pii_enabled** - True/false telling if ADAL full telemetry mode is enabled. The name is a misnomer, as no PII/EUII is emitted
+
+- **Microsoft_ADAL_tenant_id** - GUID identifying the tenant that the authenticated user belongs to
+
+- **Microsoft_ADAL_token_acquisition_from_context** - Describes the ADAL behavior based on the tokens in the authentication context
+
+- **Microsoft_ADAL_token_frt_status** - Status of the refresh token: whether it was tried, not needed, not found, or deleted.
+
+- **Microsoft_ADAL_token_mrrt_status** - Status of the MultiResourceRefreshToken: whether it was tried, not needed, not found, or deleted.
+
+- **Microsoft_ADAL_token_rt_status** - Status of the refresh token: whether it was tried, not needed, not found, or deleted.
+
+- **Microsoft_ADAL_token_type** - Either refresh token (RT) or multi-resource refresh token (MRRT)
+
+- **Microsoft_ADAL_ui_event_count** - Count of prompts shown to the user. May have been silent
+
+- **Microsoft_ADAL_user_cancel** - True / false if the user interface window was cancelled
+
+- **Microsoft_ADAL_x_ms_request_id** - Additional request ID provided in network header to service by ADAL
+
+- **Microsoft_ADAL_x_client_cpu** - Information regarding the CPU Architecture of the device
+
+- **Microsoft_ADAL_x_client_os** - The device OS Version.
+
+- **Microsoft_ADAL_x_client_sku** - The name of the device OS SKU.
+
+- **Microsoft_ADAL_x_client_ver** - The version of the ADAL library.
+
+- **MSAL_all_error_tags** - All error tags the Microsoft Authentication Library (MSAL) encountered during the authentication flow.
+
+- **MSAL_api_error_code** - If MSAL encounters an error bubbled up from the OS, platform error codes are stored here.
+
+- **MSAL_api_error_context** - String containing additional human readable details about the last error MSAL encountered. 
+
+- **MSAL_api_error_tag** - Unique string for the place in code where this error occured.
+
+- **MSAL_api_name** - Name of the MSAL top level API called to start this authentication flow.
+
+- **MSAL_api_status_code** - Status code MSAL returned for this authentication flow result.
+
+- **MSAL_auth_flow** - Steps MSAL attempted during this authentication flow (AT, PRT, LRT, FRT, ART, IRT). Seperated by the pipe "|" symbol for easy parsing.
+
+- **MSAL_auth_flow_last_error** - Error code we received from the server on the 2nd to last item in AuthFlow. (Ex: if AuthFlow = "PRT|LRT", PRT's error would be in AuthFlowLastError).
+
+- **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
+
+- **MSAL_broker_app_used** - Was a broker app used in this auth flow.
+
+- **MSAL_client_id** - Client ID of the calling application
+
+- **MSAL_correlation_id** - Unique GUID for this event, used to join actions across client, server, and app logs.
+
+- **MSAL_delete_token** - List of tokens that were deleted from cache during this authentication flow.
+
+- **MSAL_http_call_count** - Number of HTTP calls MSAL made during the authentication flow.
+
+- **MSAL_is_successful** - Was the authentication flow successful.
+
+- **MSAL_last_http_response_code** - If MSAL made one or more HTTP call(s), this is the last HTTP response code we received.
+
+- **MSAL_msal_version** - MSAL's version string, format X.X.X+("OneAuth", "local", or a commit hash).
+
+- **MSAL_read_token** - Tokens that were read from cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
+
+- **MSAL_read_token_last_error** - If MSAL encountered an error reading from cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on MacOS).
+
+- **MSAL_request_duration** - How long the request took from when MSAL's top level API was called, until we returned a result.
+
+- **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
+
+- **MSAL_server_error_code** - Microsoft specific secure token service numeric error code if we received one.
+
+- **MSAL_server_spe_ring** - Microsoft secure token service's Secure Production Enterprise ring info if we received it.
+
+- **MSAL_server_suberror_code** - Microsoft specific secure token service suberror code string if we received one.
+
+- **MSAL_start_time** - Time MSAL request was started at the top level public API.
+
+- **MSAL_stop_time** - Time MSAL finished procesing the request and returned a result to the caller.
+
+- **MSAL_tenant_id** - Microsoft GUID identifying the tenant the user exists in.
+
+- **MSAL_ui_event_count** - Number of UI prompts MSAL displayed on screen.
+
+- **MSAL_wam_telemetry** - Contains a batch of WAM telemetry data in a JSON string that will be parsed and converted to the fields in this document that are sourced from WAM.
+
+- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there is most likely a loop in the calling app.
+
+- **MSAL_write_token** - Tokens that were wrote to cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
+
+- **MSAL_write_token_last_error** - If MSAL encountered an error writing to cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on MacOS).
+
+- **oneauth_api** - OneAuth API invoked for this authentication attempt.
+
+- **oneauth_transactionuploadid** - GUID specifying an individual call to the OneAuth API.
+
+- **oneauth_version** - The version of the OneAuth SDK.
+
+- **Platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+
+- **Promptreasoncorrelationid** - A correlation identifier that can be used to lookup a previous authentication event, which is used to explain why the user was prompted to authenticate.
+
+- **Resource** - The resource for which a token is requested for.
+
+- **Scenarioid** - Multiple events may belong to a single scenario, e.g. the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This identifier enables correlation of those related events.
+
+- **Scenarioname** - Name of the application scenario where authentication was required, e.g., first-boot, licensing check, etc.
+
+- **Scope** - The scope for which a token is requested for.
+
+- **Sdkver** - Version of Microsoft Auth Telemetry System library used to produce this data
+
+- **Sessionid** - Identifier for the boot session
+
+- **Starttime** - Time at which the authentication evnet began.
+
+- **Tenantid** - GUID identifying the tenant the authenticated user belongs to (in non-ADAL cases)
+
+- **Uploadid** - Unique GUID for this event, used for de-duping
+
+- **wamapi** - Identifies which Windows Web Account Management (WAM) API is called
+
+- **wamtelemetrybatch** - Currently unused. In the future, allows the WAM component to dispatch additional information regarding the authentication event
+
+- **WAM_account_join_on_end** - Account join state at the end of a WAM operation.  Possible values: “primary”, “secondary”, “not_joined”
+
+- **WAM_account_join_on_start** - Account join state at the start of a WAM operation.  Possible values: “primary”, “secondary”, “not_joined”
+
+- **WAM_api_error_code** - If an error response came from the AAD WAM plugin, this field will exist and will contain that error code
+
+- **WAM_authority** - String containing the authority url—this should be the login.windows.net endpoint used
+
+- **WAM_broker_version** - Present if WAM was used, this is the broker version string
+
+- **WAM_cache_event_count** - The number of WAM cache events within the operation
+
+- **WAM_client_id** - Identifier for joining with services data, this identifies the client application.
+
+- **WAM_correlation_id** - Identifier for joining events with services data
+
+- **WAM_device_join** - The device join state; possible values are “aadj”, “haadj”
+
+- **WAM_network_event_count** - Present if at least one network call happened; the number of network calls to the service for that WAM operation
+
+- **WAM_network_status** - Present if at least one network call happened, contains an HTTP error code if the network request failed.
+
+- **WAM_idp** - Specifies if the WAM consumer or organizational auth plugin was used.
+
+- **WAM_is_cached** - Specifies if the response provided by WAM was retrieved from cache.
+
+- **WAM_oauth_error_code** - Contains the error code returned by the service as part of the oauth protocol.
+
+- **WAM_prompt_behavior** - Specifies if this prompt is forced by the app, or, if this request might skip prompting if it can silently authenticate.
+
+- **WAM_provider_id** - Specifies the Microsoft endpoint for the authority in use for the auth scenario.
+
+- **WAM_redirect_uri** - The redirect URI registered for the application in Azure Active Directory.
+
+- **WAM_resource**	- The resource for which a token is requested for.
+
+- **WAM_server_error_code** - The error code returned by the service to WAM.
+
+- **WAM_server_sub_code** - An additional error code used to further break down the causes for failure, returned by the service.
+
+- **WAM_silent_code** - The error code encountered by the internal silent attempt WAM makes, prior to prompting the user.
+
+- **WAM_silent_mats** - Unused.
+
+- **WAM_silent_message** - The error message associated with the internal silent attempt WAM makes, prior to prompting the user.
+
+- **WAM_silent_status** - The success/fail status for the internal silent attempt WAM makes, prior to prompting the user.
+
+- **WAM_tenant_id** - An identifier for the tenant the authenticated AAD user belongs to, if returned by the service
+
+- **WAM_ui_visible** - Present if at least one UI window was shown to the user, either ‘true’ or ‘false’
+
+- **WAM_x_ms_clitelem** - Present if service returns header “x-ms-clitelem"
+
+
+### Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
+
+Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. This event is a parent of one or more ActionMicrosoftOffice events, allowing related events to be grouped together. These events help our users avoid entering broken authentication states by:
+
+1) Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+
+2) Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+
+3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+
+4) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+
+The following fields are collected:
+
+- **Actiontype** - "oneauthtransaction" is the only value.
+
+- **Appaudience** - Application audience (Automation, Preproduction or Production)
+
+- **Appname** - App name
+
+- **Appver** - App version
+
+- **Authoutcome** - Did the authentication attempt succeed, fail, or was cancelled
+
+- **Correlationid** - Identifier used to join information regarding this individual event with services 
+data
+
+- **Count** - Number of times the error occurred
+
+- **Devicenetworkstate** - Device network state
+
+- **Deviceprofiletelemetryid** - Device profile telemetry ID (string used by MATS to identify a 
+specific device)
+
+- **duration_max** - Minimum duration, in milliseconds, of the transactions aggregated on this signal.
+
+- **duration_min** - Maximum duration, in milliseconds, of the transactions aggregated on this signal.
+
+- **duration_sum** - Sum of durations, in milliseconds, of the transactions aggregated on this signal.
+
+- **Endtime** - Time at which the OneAuth transaction ended.
+
+- **Error** - OneAuth status code.
+
+- **Eventtype** - Event type
+
+- **Issilent** - False if UI was shown; true if it was a background event.
+
+- **oneauth_api** - Specifies the public API of OneAuth that was invoked.
+
+- **oneauth_Domain** - If the API call resulted in an error, this is the system domain of that error.
+
+- **oneauth_ErrorCode** - Error code representing the internal error state for OneAuth. Replaces the old oneauth_errortag field.
+
+- **oneauth_errortag** - Numerical identifier for a line of code that was responsible for generating an error.
+
+- **oneauth_ExecutionFlow** - A series of tags identifying the codepath this API invocation took.
+
+- **oneauth_internalerror** - Error code representing the internal error state for OneAuth.
+
+- **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_Tag** - The OneAuth tag designating the final place in code reached at the conclusion of this API call.
+
+- **oneauth_transactionuploadid** - Specifies the randomly-generated internal GUID that maps to the specific invocation of a OneAuth API.
+
+- **oneauth_version** - The version of the OneAuth SDK.
+
+- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+
+- **Scenarioname** - Name of the scenario for which auth is necessary, specified by the calling application.
+
+- **Schemaver** - Schema Version
+
+- **Sdkver** - Version of the MATS sdk
+
+- **Sessionid** - Session ID
+
+- **severityError** - severity
+
+- **starttime** - Time at which the OneAuth transaction began.
+
+- **Timestamp** - Timestamp
+
+- **Type** - Error type
+
+- **Uploaded** - Unique identifier for this particular event, for de-duping purposes.
+
+
 ### OneNote.SignIn.SSOExternalAppsAccountFound
  
 This event is logged when an account with a valid refresh token is found among the list of accounts provided by TokenSharingManager.  This scenario is specific to Single Sign-on (SSO).
@@ -2788,6 +3245,101 @@ The following fields are collected:
 - **ConfigParam** - The config for which the value is being accessed for
 
 ## Licensing events
+
+### Office.Android.DocsUI.PaywallControl.AutoRedeemPendingPurchaseResult
+
+Critical engineering telemetry to log the result of automatic attempt of trying to redeem pending purchases of a user. Product telemetry used for reconciliation of purchase transaction information with Microsoft’s commerce system to enable associated subscription benefits.
+
+The following fields are collected:
+
+- **EventDate** – Timestamp of the event occurence 
+
+- **Result** – Int denoting the enum result of the operation. 
+
+- **SessionID** – GUID to connect events by session
+
+### Office.Android.DocsUI.PaywallControl.PaywallUIShown
+
+Critical Usage telemetry for when Paywall control is shown to the user. Used to understand the in app purchase experience for the user and optimize the same for future versions.
+
+The following fields are collected:
+
+- **EventDate** – Timestamp of the event occurence 
+
+- **IsModeFRE** – Boolean to indicate experience type, Upsell dialog or SKU Chooser
+
+- **SessionID** – GUID to connect events by session
+
+### Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
+
+Critical Usage telemetry to know when user clicks on the Purchase Button. Used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
+
+The following fields are collected:
+
+- **EventDate** – Timestamp of the event occurence
+
+- **IsDefaultSku** – Boolean indicating if user is attempting to purchase the Sku that showed up first/default
+
+- **ProductID** – String identifying which subscription user is attempting to purchase as configured in the store
+
+- **SessionID** – GUID to connect events by session
+
+### Office.Android.DocsUI.PaywallControl.PurchaseResult
+
+Critical engineering telemetry to log the result of purchase attempt triggered manually by user. Product telemetry used for reconciliation of purchase transaction information with Microsoft’s commerce system to enable associated subscription benefits.
+
+The following fields are collected:
+
+- **EventDate** – Timestamp of the event occurence 
+
+- **IsModeFre** – Boolean indicating if purchase was made from upsell FRE screen or Sku Chooser
+
+- **Result** – Int denoting the enum result of the operation.
+
+- **SessionID** – GUID to connect events by session
+
+
+### Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
+
+We collect this usage telemetry to see how much time the user spends on the “See more benefits” screen.  The data is used to understand usage of the “See more benefits” feature and further optimize the experience in future versions.
+
+The following fields are collected:
+
+- **Duration** - Long integer indicating time spent by user on “See All Features” screen in milliseconds
+
+- **EventDate** - Timestamp of the event occurrence 
+
+- **MostExplored** - Integer denoting the index of the most toggled item in a list of M365 apps and their features
+
+- **SessionID** - Globally Unique Identifier (GUID) to connect events by session
+
+### Office.Android.DocsUI.PaywallControl.SkuChooserAnalytics
+
+Usage telemetry to see how much time user spends on SKU Chooser screen. Usage telemetry to see how much time user spends on Sku Chooser screen.
+
+The following fields are collected:
+
+- **Duration** – Long integer indicating time spent by user on Sku Chooser screen in milliseconds
+
+- **EventDate** – Timestamp of the event occurence
+
+- **SessionID** – GUID to connect events by session
+
+
+### Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Critical usage telemetry is collected to indicate when the user taps the Purchase/Buy Button.  The data is used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
+
+The following fields are collected:
+
+- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
+
+- **productId** - String – App-store product-id of the product for which the Buy Button was tapped
+
+- **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
+
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -8016,6 +8568,8 @@ The following fields are collected:
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
+- **ScreenLocked** – Indication whether download is initiated behind locked screen
+
 - **SessionId** - The identifier for the session
 
 
@@ -8146,6 +8700,8 @@ The following fields are collected:
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **ScreenLocked** – Indication whether download is initiated behind locked screen
 
 - **SessionId** - The identifier for the session
 
@@ -14557,13 +15113,60 @@ No required service data events are collected by Services Configuration.
 
 ## Telemetry events
 
+### Office.Android.DocsUI.Views.PaywallOperationMetrics
+
+Microsoft uses this to get the health of the feature, success, or error rates for the user for purchases, to ensure appropriate investments to improve the customers’ purchase experience across mobile platforms.
+
+The following fields are collected:
+
+- **OperationTimeInMs** - Time taken for the purchase operation to complete (long – milliseconds)
+
+- **PaywallOperationResult** - Success / Error Code / User Cancelled (Enum / int – finite)
+
+- **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
+
+
 ### Office_FirstRun_Apple_TelemetryOptIn
 
 This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our telemetry opt-in flow in First Run Experience. We collect a code that denotes what type of diagnostic data collection option was selected by the user.
 
 The following fields are collected:
 
- - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
+- **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
+
+### Office.iOS.Paywall.Provisioning.Response
+
+Product telemetry used for reconciliation of purchase transaction information with the Microsoft commerce system to enable associated subscription benefits. Used to facilitate the transaction logging and subscription provisioning for future reference and internal reconciliation.
+
+The following fields are collected:
+
+- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+
+- **productId** - String – App Store ID of the product the request was made for
+
+- **status** - String – Success or Failure, indicating if the request succeeded or failed
+
+
+### Office.iOS.Paywall.StoreKit.Response
+
+The data is collected as critical engineering telemetry to log the result of purchase attempt triggered manually by user. The product telemetry is used for reconciliation of purchase transaction information with the Microsoft commerce system to enable associated subscription benefits.
+
+The following fields are collected:
+
+- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the App-store response
+
+- **productId** - String – Only for “MakePurchase”, “PendingPurchase”, the app-store ID of the product for which the request was made.
+
+- **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
+
+- **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
+
+- **status** - String – Success or Failure, indicating success or failure of the request
+
 
 ### Office.System.GracefulExit.GracefulAppExitDesktop
 
