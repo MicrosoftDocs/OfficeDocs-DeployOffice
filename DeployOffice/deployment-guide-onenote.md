@@ -46,7 +46,8 @@ If Office is already installed on the device, but OneNote didn't get installed, 
 Although you're deploying the freemium version of OneNote, the first time the user opens OneNote after it's installed, the license will update automatically to the same license as the version of Office already installed on the device.
 
 > [!NOTE]
-> Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote back to these versions of Office, run an Online Repair.
+> - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote back to these versions of Office, run an Online Repair.
+> - If you deploy the freemium version of OneNote, when you go to **Control Panel** > **Programs** > **Programs and Features**, OneNote will appear as a standalone entry named Microsoft OneNote Home and Student 2016.
 
 ### To exclude OneNote from being installed
 
