@@ -39,7 +39,7 @@ Within the devices tab, you can see the update status of these devices, view inf
 
 ## Actions
 
-Actions allows you to view the actions taken within your tenant, the same as [Action Center](action-center), within the Servicing Profile, to easily keep track of any actions you have taken.
+Actions allows you to view the actions you have taken, to easily keep track within the Servicing Profile.
 
 ## Issues
 
