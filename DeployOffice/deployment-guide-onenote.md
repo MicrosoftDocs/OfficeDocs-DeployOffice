@@ -49,7 +49,7 @@ If all the devices that you're adding OneNote to have the same version of Office
 ```
 
 > [!NOTE]
-> - If you excluded certain apps when you originally installed Office, such as Publisher, be sure to include the appropriate [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file when you add OneNote to the existing installation of Office.
+> - If you excluded an app, such as Publisher, when you originally installed Office, be sure to include the appropriate [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) for that app in your configuration.xml file when you add OneNote to the existing installation of Office.
 > - Be sure to use the appropriate Product ID for the version of Office that's installed. For example, if you have Office Professional Plus 2019, you should use ProPlus2019Volume as the Product ID.
 
 #### XML file example if the devices have different versions of Office installed
@@ -72,7 +72,7 @@ To install OneNote as a standalone product, you can use the following configurat
 Although you're deploying the freemium version of OneNote, the first time the user opens OneNote after it's installed, the license will update automatically to the same license as the version of Office already installed on the device.
 
 > [!NOTE]
-> - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote back to these versions of Office, you can run an Online Repair or use .
+> - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote back to these versions of Office, you can run an Online Repair or use a configuration.xml file similar to the example in the previous section.
 > - If you deploy the freemium version of OneNote, when you go to **Control Panel** > **Programs** > **Programs and Features**, OneNote will appear as a standalone entry named Microsoft OneNote Home and Student 2016.
 
 ### To exclude OneNote from being installed
