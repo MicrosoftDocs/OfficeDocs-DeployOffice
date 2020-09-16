@@ -93,14 +93,11 @@ OneNote for Windows 10 is installed by default on computers running Windows 10. 
 
 If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This option allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview)
 
-If you plan to move your users from OneNote for Windows 10 to OneNote, no steps are needed to migrate their notebooks. All cloud-based notebooks associated with their user account will be accessible in OneNote after they sign in with that same user account.
+If you plan to move your users from OneNote for Windows 10 to OneNote, ensure that all open notebooks have finished syncing before removing OneNote for Windows 10. No additional steps are needed to migrate their notebooks. All notebooks supported by OneNote for Windows 10 are also fully supported by OneNote. All cloud-based notebooks associated with their user account will be accessible in OneNote after they sign in with that same user account.
 
 ### To exclude OneNote for Windows 10 
 
 To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
-
-> [!NOTE]
-> There is an issue with Windows 10, version 1703 or 1709, where an app that you removed might reappear after a feature update. The issue was fixed in Windows 10, version 1803. For more information, see [How to keep apps removed from Windows 10 from returning during an update](https://docs.microsoft.com/windows/application-management/remove-provisioned-apps-during-update).
 
 ## Additional information about deploying OneNote
 
