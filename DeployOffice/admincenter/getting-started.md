@@ -27,7 +27,7 @@ To get started using the Microsoft 365 Apps management services, you will need t
 ## Enable the Microsoft 365 Apps management services
 
 1. Visit [https://config.office.com](https://config.office.com) and sign in with your Office 365 administration account.
-2. On the navigation menu select Settings.
+2. On the navigation menu, select one of the preview features.
 3. You will be prompted to enable preview features.
 4. You will be prompted to accept the preview agreement/terms.
 5. After you enable preview features and agree to the preview terms, the settings page will display your Tenant Association Key.  This key is used to connect your Office devices to the Microsoft 365 Apps management services on your tenant.
