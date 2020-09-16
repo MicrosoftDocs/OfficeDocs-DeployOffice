@@ -29,7 +29,7 @@ When working with enterprise customers who are deploying Microsoft 365 Apps for 
 
 To learn more how you can use FastTrack to help with your deployment, see [Microsoft FastTrack](https://fasttrack.microsoft.com/office). You can review how FastTrack will help you prepare, upgrade, and manage Microsoft 365 Apps for enterprise in the [Office 365 FastTrack Benefit](https://docs.microsoft.com/fasttrack/o365-fasttrack-benefit-for-office-365).
 
-To deliver the workshop, FastTrack uses the PowerPoint deck below, which we encourage you to review and use as part of your deployment planning. The workshop aligns to the phases and best practices available in the [Office Deployment Guide](https://aka.ms/officedeployment).
+To deliver the workshop, FastTrack uses the PowerPoint deck below, which we encourage you to review and use as part of your deployment planning. The workshop aligns to the phases and best practices available in the [Office Deployment Guide](deployment-guide-microsoft-365-apps.md).
 
 [![Thumb image for FastTrack assessment workshop PowerPoint deck](images/thumbnail-fasttrack-assessment-workshop.png)](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/raw/live/DeployOffice/images/microsoft-365-apps-assessment-workshop.pdf)  <br/>[PDF](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/raw/live/DeployOffice/images/microsoft-365-apps-assessment-workshop.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice/raw/live/DeployOffice/images/microsoft-365-apps-assessment-workshop.pptx)
 
