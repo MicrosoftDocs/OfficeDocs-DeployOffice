@@ -16,9 +16,9 @@ description: "The Office cloud policy service lets you enforce policy settings f
 
 # Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise
 
-The [Office cloud policy service](https://aka.ms/o365clientmgmt) lets you enforce policy settings for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
+The [Office cloud policy service](https://config.office.com/) lets you enforce policy settings for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 
-The Office cloud policy service is part of a [portal](https://aka.ms/o365clientmgmt) for managing Microsoft 365 Apps for enterprise. The service includes many of the same user-based policy settings that are available in Group Policy. You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).  
+The Office cloud policy service is part of a [portal](https://config.office.com/) for managing Microsoft 365 Apps for enterprise. The service includes many of the same user-based policy settings that are available in Group Policy. You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).  
 
 When you create policy configurations, you can review and apply policies that are recommended by Microsoft as security baseline policies. These recommendations are marked as "Security Baseline" when selecting policies. You can also use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
 
@@ -41,7 +41,7 @@ The following are the requirements for using the Office cloud policy service wit
 
 The following are the basic steps for creating a policy configuration.
 
-1. Sign into the [portal](https://aka.ms/o365clientmgmt), review the terms, and then choose **Accept**.
+1. Sign into the [portal](https://config.office.com/), review the terms, and then choose **Accept**.
 2. Under **Customization**, choose **Policy Management**.
 3. On the **Policy configurations** page, choose **Create**.
 4. On the **Create policy configuration** page, do the following:

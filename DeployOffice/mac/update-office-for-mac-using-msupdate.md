@@ -18,7 +18,7 @@ description: "Provides admins with information about how to update Office and ot
 
 Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. This can be used to start the update process for Microsoft applications produced for Mac, such as Office. The tool is primarily designed for IT administrators so that they have more precise control over when updates are applied. You can download the latest version of MAU from [this link](https://go.microsoft.com/fwlink/p/?linkid=830196).
 
-msupdate works by sending Apple Events to the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you are using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [here](https://aka.ms/msupdateprofile).
+msupdate works by sending Apple Events to the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you are using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [here](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
 
 Use the following steps to start using the tool:
 1. Open the Terminal application
