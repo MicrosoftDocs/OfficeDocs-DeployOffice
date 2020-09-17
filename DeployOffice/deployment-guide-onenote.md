@@ -37,7 +37,7 @@ If Office is already installed on the device, but OneNote didn't get installed p
 <Configuration>
    <Add>
       <Product ID="OneNoteFreeRetail">
-       <Language ID="MatchOS"/>
+       <Language ID="MatchInstalled"/>
       </Product>
    </Add>
 <Logging Level="Verbose" Path="%WINDIR%\temp\OneNote_Win32" /> 
@@ -68,13 +68,17 @@ OneNote for Windows 10 is installed by default on computers running Windows 10. 
 
 If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This option allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview)
 
-If you plan to move your users from OneNote for Windows 10 to OneNote, ensure that all open notebooks have finished syncing before removing OneNote for Windows 10. No additional steps are needed to migrate their notebooks. All notebooks supported by OneNote for Windows 10 are also fully supported by OneNote. All cloud-based notebooks associated with their user account will be accessible in OneNote after they sign in with that same user account.
+If your users already use OneNote for Windows 10, they may continue to use it. We recommend excluding OneNote for Windows 10 for new deployments. We don't recommend uninstalling OneNote for Windows 10 for existing users because uninstalling an app permanently removes any  changes in the local cache that haven't been synchronized. If you plan to uninstall OneNote for Windows 10 for existing users, ensure that all open notebooks have finished synchronizing before uninstalling.
 
-### To exclude OneNote for Windows 10 
+All notebooks supported by OneNote for Windows 10 are also fully supported by OneNote. All cloud-based notebooks associated with their user account will be accessible in OneNote after they sign in with that same user account.
+
+### To exclude OneNote for Windows 10 from a Windows image
 
 To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
 
 ## Additional information about deploying OneNote
+
+**OneNote training resources** We're providing [free and shareable eBooks](https://support.microsoft.com/office/4e08cf8b-dc37-4229-bdef-1f580220b6f5) to help your users transition to the user interface and functionalities in OneNote.
 
 **Configure OneNote settings:** You can use Group Policy to configure certain OneNote settings for your users. To use Group Policy, download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement the policy settings by using Active Directory Domain Services (AD DS).
 
@@ -83,7 +87,7 @@ To remove OneNote for Windows 10 from a Windows image so that OneNote for Window
 > - Most of these same policy settings can be applied by using the [Office cloud policy service](overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
 > - Neither Group Policy nor Office cloud policy service can be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
 
-**Support dates:** In November 2019, we [announced](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) that mainstream support for OneNote will continue until October 2023. Extended supported remains the same, ending in October 2025. These dates align with the support dates for Office 2019. These specific support dates apply only to OneNote included with versions of Office, such as Office Professional Plus 2016, that are available as a one-time purchase or through volume licensing agreements.
+**Support dates:** In November 2019, we [announced](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) that mainstream support for OneNote will continue until October 2023. Extended support remains the same, ending in October 2025. These dates align with the support dates for Office 2019. These specific support dates apply only to OneNote included with versions of Office, such as Office Professional Plus 2016, that are available as a one-time purchase or through volume licensing agreements.
 
 **Supported languages:** While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone)
 
