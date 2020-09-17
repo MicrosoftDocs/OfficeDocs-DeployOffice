@@ -1,5 +1,5 @@
 # Microsoft 365 Apps Admin Center
-## [Overview](DeployOffice\overview-m365-apps-admin-center.md)
+## [Overview](overview-m365-apps-admin-center.md)
 ## [Getting started](getting-started.md)
 ## [Inventory](inventory.md)
 ## [Microsoft 365 Apps health](microsoft-365-apps-health.md)
