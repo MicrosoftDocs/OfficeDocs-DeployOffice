@@ -68,7 +68,7 @@ OneNote for Windows 10 is installed by default on computers running Windows 10. 
 
 If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This option allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview)
 
-If your users already use OneNote for Windows 10, they may continue to use it. We recommend excluding OneNote for Windows 10 for new deployments. We don't recommend uninstalling OneNote for Windows 10 for existing users because uninstalling an app permanently removes any  changes in the local cache that haven't been synchronized. If you plan to uninstall OneNote for Windows 10 for existing users, ensure that all open notebooks have finished synchronizing before uninstalling.
+If your users already use OneNote for Windows 10, they may continue to use it. We recommend excluding OneNote for Windows 10 for new deployments. We don't recommend uninstalling OneNote for Windows 10 for existing users because uninstalling an app permanently removes any notebook changes in the local cache that haven't been synchronized. If you plan to uninstall OneNote for Windows 10 for existing users, ensure that all open notebooks have finished synchronizing before uninstalling.
 
 All notebooks supported by OneNote for Windows 10 are also fully supported by OneNote. All cloud-based notebooks associated with their user account will be accessible in OneNote after they sign in with that same user account.
 
