@@ -34,9 +34,9 @@ You can use Security Policy Advisor to receive and implement security policy rec
 
 For more information, see [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](../overview-of-security-policy-advisor.md).
 
-## Office customization tool
+## Office Customization Tool
 
-The Office customization tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy a customized version of Office. 
+The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy a customized version of Office. 
 
 For more information, see [Overview of the Office Customization Tool](../overview-of-the-office-customization-tool-for-click-to-run.md).
 
@@ -49,35 +49,27 @@ The following features and services have been recently released in preview or re
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices.  
+Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
 
-Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
-
-For more information on how to use the Apps health service, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
+For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
 
 ### Inventory 
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-You can use the inventory pane to view details about the client devices in your organization, including hardware, operating system and the version of Office on the device. 
-
-Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+You can use the inventory pane to view details about the client devices in your organization, including hardware, operating system, and the version of Office on the device. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
 
 ### Security currency
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-Security currency shows whether the client devices in your organization have been updated with the latest security patch.
-
-Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+Security currency shows whether the client devices in your organization have been updated with the latest security patch. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
 
 ### Servicing profile
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office updates for specific users or groups. You can throttle updates for users where network congestion or bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. 
-
-Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 

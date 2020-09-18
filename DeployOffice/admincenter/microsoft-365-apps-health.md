@@ -17,7 +17,7 @@ description: "Provides Office admins information about Microsoft 365 Apps health
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-The Microsoft 365 Apps health dashboard on Apps Admin Center is designed to help you optimize and troubleshoot Office clients in your tenant. Its main benefits are:
+The Microsoft 365 Apps health dashboard in the Apps Admin Center is designed to help you optimize and troubleshoot Office clients in your tenant. Its main benefits are:
 
 - Zero-effort: no need for additional agents or processes running on your premises
 - Insightful: it proactively detects problems or areas of optimization in your Office clients
