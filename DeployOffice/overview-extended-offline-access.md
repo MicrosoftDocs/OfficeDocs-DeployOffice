@@ -72,7 +72,7 @@ To disable the setting, set the following:
 
 When a device loses internet access, the user can continue to use Office without an internet connection for up to 180 days.  When 15 days remain, the user receives an in-client notification to connect to the internet so the license can be verified. If possible, the user should connect the device to the internet, which will enable an additional 180 days. 
 
-If the device cannot connect to the internet every 180 days, you can still [extend the Office license for offline use](https://support.office.com/article/extend-your-office-license-for-offline-use-06de5162-e230-4ce6-83bb-e6f06190a8f5).
+If the device cannot connect to the internet every 180 days, you can still [extend the Office license for offline use](https://support.microsoft.com/office/extend-your-office-license-for-offline-use-06de5162-e230-4ce6-83bb-e6f06190a8f5).
 
 ## Considerations when using extended offline access
 
