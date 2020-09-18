@@ -49,3 +49,16 @@ Issues allows you to view errors relating to Office deployment, including the nu
 ## Settings
 
 The Servicing Profile provides additional settings for your Microsoft 365 Apps, such as setting an [update deadline](update-deadline) to ensure updates are installed after they are downloaded, and setting [update exclusion dates](update-exclusion-dates) to prevent devices from downloading updates during specified dates.
+
+## Update deadline
+
+To make sure that your users apply updates to Microsoft 365 Apps, you can configure an update deadline. The deadline specifies how long an update can be available on a device before the updates must be applied. If the updates aren't applied by the deadline, Office automatically closes any open Office programs and applies the updates.
+
+Users are given notifications leading up to the deadline when a deadline is set. For more information about user notifications, see [notifications your users see when you set an update deadline](../end-user-update-notifications-microsoft-365-apps.md#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps).
+
+# Update exclusion dates
+
+Update exclusions can be created to prevent devices downloading security and feature updates during specific dates. Update exclusions allow you to reduce change in your environment during busy periods, such as during tax season or at the end of the financial year. Manual actions in Action Center and end-user actions are unaffected by update exclusion dates. Note that update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
+
+> [!NOTE]
+> Update exclusions prevent devices downloading security and feature updates. If you also want to prevent devices installing updates, consider starting the exclusion sooner and enforcing installations with an [update deadline](update-deadline.md).
