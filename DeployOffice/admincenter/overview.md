@@ -51,7 +51,7 @@ The following features and services have been recently released in preview or re
 
 Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices.  
 
-Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
+Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
 
 For more information on how to use the Apps health service, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
 
@@ -62,7 +62,7 @@ For more information on how to use the Apps health service, see [Microsoft 365 A
 
 You can use the inventory pane to view details about the client devices in your organization, including hardware, operating system and the version of Office on the device. 
 
-Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
+Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
 
 ### Security currency
 
@@ -71,17 +71,13 @@ Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use w
 
 Security currency shows whether the client devices in your organization have been updated with the latest security patch.
 
-Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
+Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
 
 ### Servicing profile
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office apps updates for specific users or groups. You can throttle updates for users where network congestion or bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. 
+Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office updates for specific users or groups. You can throttle updates for users where network congestion or bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. 
 
-Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
-
-### Configure client devices with earlier versions of Microsoft 365 Apps
-
-If you want to use a feature that requires version 2006 or later, you can [download a new component for the Click-to-Run service](https://go.microsoft.com/fwlink/?linkid=2141871) and install it on those devices. 
+Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 

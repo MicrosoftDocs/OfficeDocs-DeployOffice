@@ -25,7 +25,7 @@ The Microsoft 365 Apps health dashboard on Apps Admin Center is designed to help
 
 ## Accessing the Microsoft 365 Apps health dashboard
 
-The Microsoft 365 Apps health dashboard is available at https://config.office.com/apphealth on the Apps Admin Center. In order to use it, you will need:
+The Microsoft 365 Apps health dashboard is available at https://config.office.com on the Apps Admin Center. In order to use it, you will need:
 
 - An account with the [Office App Administrator role ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#office-apps-administrator-permissions)
 - During the preview period, you will need to join the preview program on Apps Admin Center. If you have not joined the preview program yet, you will be prompted to do so when visiting the Microsoft 365 Apps health dashboard for the first time
