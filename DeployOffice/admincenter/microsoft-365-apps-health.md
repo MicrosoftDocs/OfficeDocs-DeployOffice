@@ -139,6 +139,6 @@ Not yet, but we are working hard on it
 
 Not yet, but we are working hard on it
 
-#### How does this dashboard integrate with Office Telemetry Dashboard (OTD)?
+#### How does this dashboard integrate with Office Telemetry Dashboard?
 
-The Microsoft 365 Apps health dashboard aspires to offer capabilities and insights that supersede OTD, while requiring less work and resources from your organization and users.
+The Microsoft 365 Apps health dashboard aspires to offer capabilities and insights that supersede Office Telemetry Dashboard, while requiring less work and resources from your organization and users.
