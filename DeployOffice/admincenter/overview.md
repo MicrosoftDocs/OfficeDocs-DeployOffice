@@ -20,7 +20,7 @@ The [Microsoft 365 Apps admin center](https://aka.ms/o365clientmgmt) provides mo
  
 ## How to get to the admin center
 
-Sign in at [config.office.com](https://config.office.com/) with your admin account. To sign into the admin center, your account must have either the global administrator, security administrator or Office Apps administrator role.
+Sign in at [config.office.com](https://config.office.com/) with your admin account. To sign into the admin center, your account must have either the global administrator, security administrator, or Office apps administrator role.
 
 ## Office cloud policy service
 
