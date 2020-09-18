@@ -66,7 +66,7 @@ SQL Server must be deployed before you can configure Office Telemetry Dashboard.
 - SQL Server 2005 or SQL Server 2005 Express Edition
 
 > [!NOTE]
-> To check which versions of SQL Server are currently supported, go to the [Search product lifecycle](https://support.microsoft.com/lifecycle/search) page.
+> To check which versions of SQL Server are currently supported, go to [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/) page.
 
 The **Getting started** worksheet in Office Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
@@ -245,7 +245,7 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 
 - Windows Server 2008
 
-The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on the [Microsoft Product Lifecycle Search website](https://go.microsoft.com/fwlink/p/?LinkId=286402) before you install the agent. 
+The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/) before you install the agent. 
 
 > [!NOTE]
 > - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.

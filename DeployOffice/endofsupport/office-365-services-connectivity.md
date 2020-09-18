@@ -23,6 +23,8 @@ Starting on October 13, 2020, only these versions of Office will be supported fo
 
 Examples of Office 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
 
+For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+
 > [!IMPORTANT]
 > We won’t take any active measures to block other versions of the Office client, such as Office 2013, from connecting to Office 365 services, but these older clients may encounter performance or reliability issues over time.
 
@@ -60,7 +62,7 @@ Skype for Business Online will be retired on July 31, 2021. For more information
 
 ## Additional information about connectivity to Office 365 services  
 
-- Versions of Office 2019 and Office 2016 are supported until October 2023.
+- Versions of Office 2019 and Office 2016 will be supported for connecting to Office 365 (and Microsoft 365) services until October 2023.
 - Connecting to Office 365 services using Office 2016 for Mac isn’t supported after October 13, 2020. That’s because Office 2016 for Mac reaches end of support on that date.
 - This information about connecting to Office 365 services also applies to Project and Visio.
 - This information about connecting to Office 365 services does *not* apply to InfoPath 2013 or SharePoint Designer 2013.
