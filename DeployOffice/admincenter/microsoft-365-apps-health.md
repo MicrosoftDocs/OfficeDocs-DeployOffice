@@ -109,7 +109,7 @@ Microsoft 365 Apps health monitor the following metrics:
 
 - App Crash Rate: indicates you the number of app crashes over number of user sessions, within the selected scope (app, build)
 - App Boot Time: indicates the time it takes from the moment the user opens the Office client until it is ready for user input, within the selected scope (app, build)
-- App File Open Time (local): indicates the time it takes from the moment the user saves a file to their local computer until the file has completed saving, within the selected scope (app, build)
-- App File Open Time (SharePoint): indicates the time it takes from the moment the user save a file to a SharePoint site or OneDrive for Business until the file has completed saving, within the selected scope (app, build)
+- App File Open Time (local): indicates the time it takes from the moment the user opens a file from a local drive until the file is ready for user input, within the selected scope (app, build)
+- App File Open Time (SharePoint): indicates the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
 Note that "Pending" is displayed if not enough signals have been observed for the specific app and build.
