@@ -49,7 +49,7 @@ The following features and services have been recently released in preview or re
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-Microsoft 365 Apps health  can help optimize and troubleshoot Microsoft 365 Apps on your client devices. The health dashboard uses diagnostic data that your organization already shares with Microsoft, so no additional agents or client-side processes are required. 
+Microsoft 365 Apps health monitors reliability and performance metrics and can help optimize and troubleshoot Microsoft 365 Apps on your client devices.  
 
 Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
 
