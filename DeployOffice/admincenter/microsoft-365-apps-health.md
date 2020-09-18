@@ -19,11 +19,9 @@ description: "Provides Office admins information about Microsoft 365 Apps health
 
 The Microsoft 365 Apps health dashboard on Apps Admin Center is designed to help you optimize and troubleshoot Office clients in your tenant. Its main benefits are:
 
-- Zero onboarding: it leverages diagnostics data that your tenant already shares with Microsoft so there is not need for additional agents or processes running on your premises
-- Insightful: it analysis diagnostics data proactively looking for regressions or issues and creates insights to help you discover problems or areas of optimization in your Office clients
+- Zero-effort: no need for additional agents or processes running on your premises
+- Insightful: it proactively detects problems or areas of optimization in your Office clients
 - Actionable: it provides steps, based on best practices, to troubleshoot issues or optimize your Office client environment
-
-Diagnostics data is always under your control. To learn more about diagnostics data and the controls available to you see [Privacy Controls on Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/privacy/overview-privacy-controls)
 
 ## Accessing the Microsoft 365 Apps health dashboard
 
@@ -38,11 +36,10 @@ The Microsoft 365 Apps health dashboard is available at https://config.office.co
 
 When you first sign-in to the Microsoft 365 Apps health dashboard, you will see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
 
+- Advisories in your tenant: shows the latest advisories on performance and reliability regressions in occurring on your tenant. You can select any advisory to see advisory details
 - Performance and reliability scores: these scores are measured against industry benchmarks and their purpose is to help you compare  the performance and reliability of the Office clients in your tenant versus the industry
 - Supported versions score: indicates the percentage of active devices in your tenant that are using supported versions of the Office clients. You ensure your devices are secure and supported, want for this score to be as close to 100% as possible, all the time
-- Diagnostics data coverage: because the insights on the Microsoft 365 Apps health are powered by diagnostics data, it is important that you understand which percentage of your devices are configured to send diagnostics data to Microsoft. Ideally, you want this percentage to be as high as possible and equally distributed across the [update channels](https://docs.microsoft.com/deployoffice/overview-update-channels) you have configured devices in your tenant to
 - Activity in recommended channels: this insight informs you about the percentage of Office client activity that is taking place on devices set to the Current and Monthly Enterprise channels, which deliver the latest and most secure features for the Office clients. In order to boost collaboration and productivity in your organization, you want this number to be as high as possible
-- Advisories in your tenant: shows the latest advisories on performance and reliability regressions in occurring on your tenant. You can select any advisory to see advisory details.
 
 ### Advisory Details
 
@@ -81,6 +78,7 @@ This view presents performance and reliability metrics and advisories for the se
 This view the reliability and performance of your Office clients for each of the active builds in your tenant, grouped by channel. Some common scenarios where this view can help are:
 
 - Assess how a recently deployed build is behaving
+- Identify the build with most active devices
 - Identify if unsupported builds are still being used in your tenant
 - Compare performance and reliability across builds and update channels
 - Assess fragmentation (usage of too many builds) of Office clients in your tenant  
@@ -91,15 +89,18 @@ You can select a build to get more information on the build and see the performa
 
 This view provides you with additional release information and Office client performance and reliability metrics for the selected build. Some common scenarios where this view can help are:
 
-- Obtain more information (for example, release type, release date, end of support date) about the build
+- Obtain additional release information about the build (for example, release type, release date, end of support date)
 - Assess how the Office client performance and reliability of a specific build is evolving in your tenant
 - Identify Office clients usage within the selected build
+- Discover advisories related to the build
 
 ## Frequently asked questions
 
 ### How is the data for the Microsoft 365 Apps health dashboard obtained?
 
-The Microsoft 365 Apps health dashboard uses the diagnostics data that your Office clients send to Microsoft. You are in control of which data and which devices send this data.
+The Microsoft 365 Apps health dashboard uses the diagnostic data that your Office clients send to Microsoft. You are in control of which data and which devices send this data.
+
+Diagnostic data is always under your control. To learn more about diagnostic data and the controls available to you see [Privacy Controls on Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/privacy/overview-privacy-controls)
 
 ### Which apps are covered and on which platforms?
 
@@ -111,16 +112,16 @@ At preview, the Microsoft 365 Apps health dashboard detects issues every 24 hour
 
 ### What is 'active device count' and why is it different from what my device management tools show?
 
-Microsoft 365 Apps health is based on diagnostics data which depends on user activity. As such, there will be a slight misalignment between the number of devices that are deployed with Office clients (as shown by your device management tools) since not all deployed devices have usage all the time.
+Active devices count refers to number of devices in your tenant on which the Office apps are being used. There may be a slight misalignment with management tools as these typically report number of devices on which the Office apps are installed, even if they are not being used.
 
 ### What performance and reliability metrics are monitored by the Microsoft 365 Apps health dashboard?
 
 At the moment, Microsoft 365 Apps health offers monitoring for the following metrics:
 
 - App Crash Rate: indicates you the number of app crashes over number of user sessions, within the selected scope (app, build)
-- App Launch Time: indicates the time it takes from the moment the user opens the Office client until it is ready for user input, within the selected scope (app, build)
-- App File Open Time (Local): indicates the time it takes from the moment the user saves a file to their local computer until the file has completed saving, within the selected scope (app, build)
-- App File Open Time (Network): indicates the time it takes from the moment the user save a file to a SharePoint site or OneDrive for Business until the file has completed saving, within the selected scope (app, build)
+- App Boot Time: indicates the time it takes from the moment the user opens the Office client until it is ready for user input, within the selected scope (app, build)
+- App File Open Time (local): indicates the time it takes from the moment the user saves a file to their local computer until the file has completed saving, within the selected scope (app, build)
+- App File Open Time (SharePoint): indicates the time it takes from the moment the user save a file to a SharePoint site or OneDrive for Business until the file has completed saving, within the selected scope (app, build)
 
 #### Will you be adding more performance and reliability metrics?
 
