@@ -44,12 +44,12 @@ For more information, see [Overview of the Office Customization Tool](../overvie
 
 The following features and services have been recently released in preview or recently announced. In some cases, they are not yet available. If you want to enable preview features in the admin center, click a preview feature and accept the license.
 
-### Apps health 
+### Microsoft 365 Apps health 
 
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-Microsoft 365 Apps health monitors reliability and performance metrics and can help optimize and troubleshoot Microsoft 365 Apps on your client devices.  
+Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices.  
 
 Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
 
