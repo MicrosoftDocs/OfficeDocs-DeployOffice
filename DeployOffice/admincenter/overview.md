@@ -16,7 +16,7 @@ description: "Overview of the Microsoft 365 Apps Admin Center"
 
 # Overview of the Microsoft 365 Apps admin center
 
-The [Microsoft 365 Apps admin center](https://aka.ms/o365clientmgmt) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. This article lists the features and services available in the admin center. For newly released or announced features, see [What's new in preview](#whats-new-in-preview).
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. This article lists the features and services available in the admin center. For newly released or announced features, see [What's new in preview](#whats-new-in-preview).
  
 ## How to get to the admin center
 
@@ -78,10 +78,10 @@ Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use w
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-The servicing profile provides a simple way for admins to manage and monitor updates to Microsoft 365 Apps for client devices. Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. To help plan for network capacity, updates are delivered in waves. Using the servicing profile, you can monitor which devices have been updated and fix update issues, including restoring devices to a previous build.
+Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office apps updates for specific users or groups. You can throttle updates for users where network congestion or bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. 
 
 Requirements: Windows 10 and Microsoft 365 Apps, version 2006 or later. To use with earlier versions, see [Configure client devices](#configure-client-devices-with-earlier-versions-of-microsoft-365-apps). 
 
 ### Configure client devices with earlier versions of Microsoft 365 Apps
 
-If you want to use a feature that requires version 2006 or later, you can [download a new component for the click-to-run service](https://go.microsoft.com/fwlink/?linkid=2141871) and install it on those devices. 
+If you want to use a feature that requires version 2006 or later, you can [download a new component for the Click-to-Run service](https://go.microsoft.com/fwlink/?linkid=2141871) and install it on those devices. 
