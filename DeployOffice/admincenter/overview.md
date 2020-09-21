@@ -49,27 +49,45 @@ The following features and services have been recently released in preview or re
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
 
-For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
+Requirements:
+- Microsoft 365 Apps for enterprise, Version 2007 or later
+- A version of Windows 10 supported by Microsoft 365 Apps for enterprise
+- An E3, E5, A3, or A5 subscription plan. For example, Microsoft 365 E5 or Office 365 A3.
 
 ### Inventory 
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-You can use the inventory pane to view details about the client devices in your organization, including hardware, operating system, and the version of Office on the device. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+You can use the inventory pane to view details about the client devices in your organization, including hardware, operating system, and the version of Office on the device. 
 
-### Security currency
+Requirements:
+- Microsoft 365 Apps for enterprise, Version 2007 or later
+- A version of Windows 10 supported by Microsoft 365 Apps for enterprise
+- An E3, E5, A3, or A5 subscription plan. For example, Microsoft 365 E5 or Office 365 A3.
+
+### Security update status
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-Security currency shows whether the client devices in your organization have been updated with the latest security patch. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+Security update status shows whether the client devices in your organization have been updated with the latest security patch. 
+
+Requirements:
+- Microsoft 365 Apps for enterprise, Version 2007 or later
+- A version of Windows 10 supported by Microsoft 365 Apps for enterprise
+- An E3, E5, A3, or A5 subscription plan. For example, Microsoft 365 E5 or Office 365 A3.
 
 ### Servicing profile
 
 > [!IMPORTANT]
 > This is pre-release documentation for a feature that has been announced but is not yet available. More information will be provided when it's available in preview.
 
-Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. Requirements: Windows 10 and Microsoft 365 Apps for enterprise, version 2006 or later. 
+Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. 
+
+Requirements:
+- Microsoft 365 Apps for enterprise, Version 2007 or later
+- A version of Windows 10 supported by Microsoft 365 Apps for enterprise
+- An E3, E5, A3, or A5 subscription plan. For example, Microsoft 365 E5 or Office 365 A3.
