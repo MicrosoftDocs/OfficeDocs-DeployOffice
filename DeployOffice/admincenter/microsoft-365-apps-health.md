@@ -22,7 +22,6 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 Requirements:
 - Microsoft 365 Apps for enterprise, Version 2007 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
-- An E3, E5, A3, or A5 subscription plan. For example, Microsoft 365 E5 or Office 365 A3.
 
 ## How to get to the health dashboard
 
