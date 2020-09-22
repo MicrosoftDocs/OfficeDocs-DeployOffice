@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Microsoft 365 Apps Admin Center"
+title: "Overview of the Microsoft 365 Apps admin center"
 ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
