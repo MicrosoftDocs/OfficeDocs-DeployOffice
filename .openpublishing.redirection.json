@@ -416,6 +416,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "DeployOffice/admincenter/index.md",
+      "redirect_url": "overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "DeployOffice/about-office-365-proplus-in-the-enterprise.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/about-microsoft-365-apps",
       "redirect_document_id": true
