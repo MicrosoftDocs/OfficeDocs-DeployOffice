@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
