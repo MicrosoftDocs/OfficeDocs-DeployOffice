@@ -1,3 +1,3 @@
-# Servicing Profile
-## [Update deadline](update-deadline.md)
-## [Update exclusion dates](update-exclusion-dates.md)
+# Microsoft 365 Apps admin center
+## [Overview](overview.md)
+## [Microsoft 365 Apps health](microsoft-365-apps-health.md)
