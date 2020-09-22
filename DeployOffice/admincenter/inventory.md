@@ -27,8 +27,8 @@ Onboarding to the Inventory is simple and straightforward, requiring only two st
 
 2. Ensure your devices are using the minimum required build.<br/><br/>Inventory information is collected the Serviceability Manager, a component in Click-to-Run. Once you have rolled out Office Release 1908 or greater to your end user devices, Serviceability Manager will be deployed automatically. This will check the device has your Tenant association key applied and if it is, it will start up loading data to the Inventory service.
   
-> [!NOTE]
-> It might take up to 105 minutes to start seeing data in the Inventory dashboard and tables.
+   > [!NOTE]
+   > It might take up to 105 minutes to start seeing data in the Inventory dashboard and tables.
 
 ## Landing Dashboard
 
