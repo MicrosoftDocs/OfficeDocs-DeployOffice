@@ -37,12 +37,12 @@ The Microsoft 365 Apps health dashboard is designed to help you optimize and tro
 
 The dashboard monitors Word, Excel, PowerPoint, Outlook, OneNote, and Publisher on Windows. Issues are updated every 24 hours.
 
-When you first sign-in to the Microsoft 365 Apps health dashboard, you will see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
+When you first sign in to the Microsoft 365 Apps health dashboard, you will see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
 
 - Advisories in your tenant: shows the latest advisories on performance and reliability regressions in occurring on your tenant. You can select any advisory to see advisory details
 - Performance and reliability scores: these scores are measured against industry benchmarks and their purpose is to help you compare the performance and reliability of the Office clients in your tenant versus the industry
 - Supported versions score: indicates the percentage of active devices in your tenant that are using supported versions of the Office clients. You ensure your devices are secure and supported, want for this score to be as close to 100% as possible, all the time
-- Activity in recommended channels: this insight informs you about the percentage of Office client activity that is taking place on devices set to the Current and Monthly Enterprise channels, which deliver the latest and most secure features for the Office clients. In order to boost collaboration and productivity in your organization, you want this number to be as high as possible
+- Activity in recommended channels: this insight informs you about the percentage of Office client activity that is taking place on devices set to Current Channel and Monthly Enterprise Channel, which deliver the latest and most secure features for the Office clients. In order to boost collaboration and productivity in your organization, you want this number to be as high as possible
 
 ### Advisory Details
 
