@@ -48,7 +48,7 @@ Issues allows you to view errors relating to Office deployment, including the nu
 
 ## Settings
 
-The Servicing Profile provides additional settings for your Microsoft 365 Apps, such as setting an [update deadline](update-deadline) to ensure updates are installed after they are downloaded, and setting [update exclusion dates](update-exclusion-dates) to prevent devices from downloading updates during specified dates.
+The Servicing Profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they are downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
 
 ## Update deadline
 
