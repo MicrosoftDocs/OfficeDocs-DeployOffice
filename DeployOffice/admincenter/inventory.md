@@ -23,13 +23,9 @@ The Apps admin center Inventory is the page that exposes the information collect
 
 Onboarding to the Inventory is simple and straightforward, requiring only two steps.
 
-1. Onboard at config.office.com
+1. Onboard at config.office.com<br/><br/>Log onto config.office.com and click Inventory in the left-hand pane. If this is your first time visiting the page, you will be presented with an onboarding flow. After you click accept, you will see a provisioning flow and shortly after be presented with the Inventory dashboard.
 
-Log onto config.office.com and click Inventory in the left-hand pane. If this is your first time visiting the page, you will be presented with an onboarding flow. After you click accept, you will see a provisioning flow and shortly after be presented with the Inventory dashboard.
-
-2. Ensure your devices are using the minimum required build
-
-Inventory information is collected the Serviceability Manager, a component in Click-to-Run. Once you have rolled out Office Release 1908 or greater to your end user devices, Serviceability Manager will be deployed automatically. This will check the device has your Tenant association key applied and if it is, it will start up loading data to the Inventory service.
+2. Ensure your devices are using the minimum required build.<br/><br/>Inventory information is collected the Serviceability Manager, a component in Click-to-Run. Once you have rolled out Office Release 1908 or greater to your end user devices, Serviceability Manager will be deployed automatically. This will check the device has your Tenant association key applied and if it is, it will start up loading data to the Inventory service.
   
 > [!NOTE]
 > It might take up to 105 minutes to start seeing data in the Inventory dashboard and tables.
@@ -70,7 +66,7 @@ The following table provides a list of information displayed in the Inventory ta
 | Office Build| The Office build string installed |
 | Office Channel| The office channel the device is receiving updates from |
 | Serviceability Manager Version| The build string of the Serviceability manager installed on the device |
-| Office apps (Word, Xls, PPT, etc)| A list of the Office apps installed on the device |
+| Office apps (Word, Xls, PPT, etc.)| A list of the Office apps installed on the device |
 | Office Add-ins | A list of the COM add-ins that are installed on the device. This excludes inbox add-ins |
 | Download location | The location from where the device is downloading updates. |
 | Use macros | Has the device recently opened a file with a macro |
