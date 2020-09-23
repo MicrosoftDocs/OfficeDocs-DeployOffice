@@ -50,31 +50,32 @@ We'll use these collections to deploy Configuration Manager applications and upd
 
 ## Implement collections that catch devices on a certain update channel
 
-Follow these steps to create a dynamic collection that will add devices based on a specific, installed update channel. After it's set up, devices will be dropped and added automatically. This enables you to see/target all devices on a certain channel easily.
+Follow these steps to create a dynamic collection that will add devices based on a specific, installed update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily.
 
 1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
-2. Provide a name and select a limiting collection. Select **Next**.
+2. Provide a name and choose a limiting collection. Select **Next**.
 3. Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
-4. Paste the following text into the editor window.
+4. Paste the following query into the editor window.
 ```sql
 select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
 ```
 > [!NOTE]
 > The query is provided as-is and is based on engagements in the field.
-5. Replace the string **ReplaceThis** with the matching update channel value for the channel you want to capture in this collection from the following table:
 
-|Update channel                           |Update channel value                                                  |
-|:----------------------------------------|:---------------------------------------------------------------------|
-|Beta Channel                             |http://officecdn.microsoft.com/pr/5440fd1f-7ecb-4221-8110-145efaa6372f|
-|Current Channel (Preview)                |http://officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be|
-|Current Channel                          |http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60|
-|Monthly Enterprise Channel               |http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6|
-|Semi-Annual Enterprise Channel (Preview) |http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf|
-|Semi-Annual Enterprise Channel           |http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114|
+5. Replace the string **ReplaceThis** with the matching update channel value for the channel that you want to capture in this collection from the following table:
 
-The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
+   |Update channel                           |Update channel value                                                  |
+   |:----------------------------------------|:---------------------------------------------------------------------|
+   |Beta Channel                             |http://officecdn.microsoft.com/pr/5440fd1f-7ecb-4221-8110-145efaa6372f|
+   |Current Channel (Preview)                |http://officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be|
+   |Current Channel                          |http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60|
+   |Monthly Enterprise Channel               |http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6|
+   |Semi-Annual Enterprise Channel (Preview) |http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf|
+   |Semi-Annual Enterprise Channel           |http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114|
 
-![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes_DynCollection_1.png)
+   The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
+
+   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes_DynCollection_1.png)
 
 7. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 8. Select **Summary**, **Next**, and then **Close** to complete the wizard.
@@ -85,21 +86,22 @@ Repeat these steps for each update channel that you want to be captured in a sep
 
 ## Implement a collection that catches all devices running Microsoft 365 Apps
 
-Follow these steps to create a dynamic collection that will add all devices with Microsoft 365 Apps for enterprise installed. After it's set up, devices will be dropped and added automatically. This enables you to target Microsoft 365 Apps client updates easily.
+Follow these steps to create a dynamic collection that will add all devices with Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped and added automatically. This enables you to target Microsoft 365 Apps client updates easily.
 
-1. Navigate to **Assets and Compliance**, select **Device Collections** and **Create Device Collection** button on the **Home** menu.
-2. Provide a name and select a limiting collection. Click **Next**.
+1. Navigate to **Assets and Compliance**, select **Device Collections** and **Create Device Collection** on the **Home** menu.
+2. Provide a name and choose a limiting collection. Select **Next**.
 3. Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
-4. Paste the following text into the editor window.
+4. Paste the following query into the editor window.
 
-```sql
-select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
-```
-> [!NOTE]
->The query is provided as-is and based on engagements in the field. This query checks for Microsoft 365 Apps for enterprise. You might want to adjust the query for other licenses.
+   ```sql
+   select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier,      SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
+   ```
+   > [!NOTE]
+   > The query is provided as-is and based on engagements in the field. This query checks for Microsoft 365 Apps for enterprise. You might want to adjust the query for other licenses.
 
 5. Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
 6. Click **Summary**, **Next**, and then **Close** to complete the wizard.
+
 The result is a collection that will automatically add all devices running Microsoft 365 Apps, regardless of the update channel.
 
 ## Implement a collection that catches all devices running other update channels
