@@ -129,7 +129,7 @@ Optional.
 
 Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
 
-This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. See [Change the Microsoft 365 Apps update channel](change-update-channels.md) for additional details.
+This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](change-update-channels.md).
 
 For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 
@@ -236,7 +236,7 @@ Allowed values:
 
 Defines which products to download or install. If you define multiple products, the products are installed in the order in the configuration file. The first product determines the context for the Microsoft Office First Run Experience. 
 
-You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more details on how, including an example configuration file, see  [Deploy languages to existing installations of Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
+You can also use the Product element to add language packs to existing installations of Microsoft 365 Apps. For more information, including an example configuration file, see  [Deploy languages to existing installations of Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md#deploy-languages-to-existing-installations-of-microsoft-365-apps).
 
 ### Example
 
@@ -269,20 +269,25 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Optional.
 
-Specifies the Windows Installer (MSI) versions of Office products that need to be installed on the device already in order for the product specified by the ID attribute to be installed on the device. For example, if Office Professional Plus 2013 is installed on the device, then install Microsoft 365 Apps for enterprise.
+Specifies which Office products, that were installed by using Windows Installer (MSI), need to be already installed on the device in order for the product specified by the [ID attribute](#id-attribute-part-of-product-element) to be installed on the device. For example, if an MSI-based version of Office Professional Plus is installed on the device, then install Microsoft 365 Apps for enterprise.
 
-You can specify any MSI-based Office product, such as Office, Project, or Visio. The version of the MSI-based Office product must be 2010, 2013, or 2016.
+You can specify any MSI-based Office product, such as an Office suite, Project, or Visio. The Office product can be either a volume licensed or a retail version, as long as the product is installed by using MSI.
+
+MSICondition will recognize 2010, 2013, and 2016 versions of the Office product that you specify. But, you can't specify a particular version. For example, you can't have MSICondition look specifically for Office Standard 2013. MSICondition will look for MSI-based installations of Office Standard 2010, Office Standard 2013, and Office Standard 2016.
+
+The value that you specify for the MSICondition attribute is the Setup ID that is found in the Setup.xml file in the *{product}*.WW folder of the installation files for your existing version of the Office product. For example, the Setup.xml file for Office Professional Plus 2013 is found in the ProPlus.WW folder and the Setup.xml file for Visio Professional 2016 is found in the VisPro.WW folder. You can specify multiple types of an Office product, separated by a comma. For example, you can specify "VisStd,VisStdR,VisPro,VisProR" to look for installations of Visio Standard or Visio Professional, either volume licensed or retail.
 
 > [!NOTE]
-> We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
+> - We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
 
 ### Examples of MSICondition attribute
 
+In the following example, Microsoft 365 Apps for enterprise will be installed on the device only if an MSI-based version of Office Professional Plus is already installed on the device. Also, Office Professional Plus will be removed from the device as part of the installation of Microsoft 365 Apps for enterprise.
 
 ```xml
 <Configuration>
   <Add OfficeClientEdition="64" Channel="Current" >
-      <Product ID="O365ProPlusRetail" MSICondition="">
+      <Product ID="O365ProPlusRetail" MSICondition="ProPlus">
          <Language ID="en-us" />
          <Language ID="MatchPreviousMSI">
       </Product>
@@ -291,11 +296,12 @@ You can specify any MSI-based Office product, such as Office, Project, or Visio.
 </Configuration>
 ```
 
+In the following example, Project Online Desktop Client will be installed on the device only if an MSI-based version of Project Standard is already installed on the device. Also, Project Standard will be removed from the device as part of the installation of Project Online Desktop Client.
 
 ```xml
 <Configuration>
   <Add >
-      <Product ID="ProjectProRetail" MSICondition="PrjPro,PrjProR">
+      <Product ID="ProjectProRetail" MSICondition="PrjStd,PrjStdR">
          <Language ID="en-us" />
          <Language ID="MatchPreviousMSI">
       </Product>
@@ -303,7 +309,6 @@ You can specify any MSI-based Office product, such as Office, Project, or Visio.
   <RemoveMSI />
 </Configuration>
 ```
-
 
 ## Language element
 
@@ -350,13 +355,13 @@ For more information about MatchPreviousMSI, see [Remove existing MSI versions o
 
 Note that MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and allow the ODT to use the Office CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. 
 
-MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more details on MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](fieldnotes/build-dynamic-lean-universal-packages.md).
+MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more information about MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](fieldnotes/build-dynamic-lean-universal-packages.md).
 
 ### Fallback attribute (part of Language element)
 
 Optional.
 
-When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
+When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more information, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
 
 Example values:
 
@@ -413,7 +418,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Microsoft 365 Apps products should not be installed. Note that OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more details, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
+Defines which Microsoft 365 Apps products should not be installed. Note that OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more information, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
 
 ### Example
 
@@ -708,9 +713,9 @@ Optional.
 
 Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use **Deadline** with **Target Version** to make sure that Office is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
 
-Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This gives users the opportunity to save the Office documents that they are working on and to close any Office programs that are open. If users don't close the Office programs,the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
+Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This gives users the opportunity to save the Office documents that they are working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
 
-After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up-to-date, you must change the deadline every time a new update for Office is available.
+After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up to date, you must change the deadline every time a new update for Office is available.
 
 To use this attribute, Office must be running at least Service Pack 1 (version 15.0.4569.1507). If you use Group Policy with the [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030), you can set **Deadline** by using the **Update Deadline** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
@@ -768,7 +773,7 @@ Optional.
 
 Defines application preferences for Microsoft 365 Apps, including VBA Macro notifications, default file locations, and default file format. To create a configuration file with application preferences, we recommend you use the [Office Customization Tool for Click-to-Run](https://config.office.com/), a web application with a full user interface. You can also use the tool to learn more about the available application preferences.
 
-For more details on application preferences, see [Apply application preferences](overview-office-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps) and [Apply application preferences to an existing installation of Office](overview-office-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-microsoft-365-apps).
+For more information about application preferences, see [Apply application preferences](overview-office-deployment-tool.md#apply-application-preferences-to-microsoft-365-apps) and [Apply application preferences to an existing installation of Office](overview-office-deployment-tool.md#apply-application-preferences-to-an-existing-installation-of-microsoft-365-apps).
 
 ### Example
 
