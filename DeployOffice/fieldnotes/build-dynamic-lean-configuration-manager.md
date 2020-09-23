@@ -49,22 +49,22 @@ We'll use these collections to deploy Configuration Manager applications and upd
 - The collection that catches all Microsoft 365 App installations can be used to deploy updates for all supported channels. Configuration Manager will deem updates that don't match the update channel of the device as not applicable, so devices will only download matching updates. Devices that are about to change the channel will be able to perform the required update to the new channel as well automatically.
 - The collection that catches devices with a configuration drift can be used to force such devices back to update channels supported by IT.
 
-## Implement collections which catch devices on a certain update channel
+## Implement collections that catch devices on a certain update channel
 
-The following steps will walk you through the process of creating a dynamic collection which will add devices based on a specific, installed update channel. Once set up, devices will be dropped and added automatically. This allows you to see/target all devices on a certain channel easily.
+Follow these steps to create a dynamic collection that will add devices based on a specific, installed update channel. After it's set up, devices will be dropped and added automatically. This enables you to see/target all devices on a certain channel easily.
 
-1. Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
-2. Provide a name and select a limiting collection. Click **Next**.
-3. Click on **Add Rule** and select **Query Rule**. Provide a **Name** and click on **Edit Query Statement**. Click on **Show Query Language**.
-4. Copy paste the text below into the editor window.
+1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
+2. Provide a name and select a limiting collection. Select **Next**.
+3. Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
+4. Paste the folowing text into the editor window.
 ```sql
 select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
 ```
 > [!NOTE]
->The query is provided as-is and based on engagements in the field.
-5. Replace the string **ReplaceThis** with the matching Update Channel Value for the channel you want to capture in this collection from the table below:
+> The query is provided as-is and is based on engagements in the field.
+5. Replace the string **ReplaceThis** with the matching update channel value for the channel you want to capture in this collection from the following table:
 
-|Update Channel                           |Update Channel Value                                                  |
+|Update channel                           |Update channel value                                                  |
 |:----------------------------------------|:---------------------------------------------------------------------|
 |Beta Channel                             |http://officecdn.microsoft.com/pr/5440fd1f-7ecb-4221-8110-145efaa6372f|
 |Current Channel (Preview)                |http://officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be|
@@ -73,20 +73,20 @@ select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATION
 |Semi-Annual Enterprise Channel (Preview) |http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf|
 |Semi-Annual Enterprise Channel           |http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114|
 
-6. The final query should look similar to the screenshot below. Make sure to keep the quote signs.
+The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
 
 ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes_DynCollection_1.png)
 
-7. Click **OK**, **OK**. We recommend ticking the box for incremental updates, but this is optional.
-8. Click **Summary**, **Next** and **Close** to finish the wizard.
+7. Select **OK** and then **OK** again. We recommend that you select the check box for incremental updates but it's optional.
+8. Select **Summary**, **Next** and then **Close** to complete the wizard.
 
-Repeat the steps for each update channel you want to be captured in a separate collection. The result will look like this:
+Repeat these steps for each update channel you want to be captured in a separate collection. The result will look like this:
 
 ![Screenshot from Configuration Manager showing three collections](../images/fieldnotes_DynCollection_2.png)
 
-## Implement a collection which catches all devices running Microsoft 365 Apps
+## Implement a collection that catches all devices running Microsoft 365 Apps
 
-The following steps will walk you through the process of creating a dynamic collection which will add all devices with Microsoft 365 Apps for enterprise installed. Once set up, devices will be dropped and added automatically. This allows you to target Microsoft 365 Apps client updates easily.
+Follow these steps to create a dynamic collection that will add all devices with Microsoft 365 Apps for enterprise installed. After it's set up, devices will be dropped and added automatically. This enables you to target Microsoft 365 Apps client updates easily.
 
 1. Navigate to **Assets and Compliance**, click on **Device Collections** and on the **Create Device Collection** button in the **Home** menu.
 2. Provide a name and select a limiting collection. Click **Next**.
