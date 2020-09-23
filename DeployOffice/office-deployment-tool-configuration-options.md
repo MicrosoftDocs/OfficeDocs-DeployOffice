@@ -265,6 +265,46 @@ Example values:
 
 For a list of all supported product IDs, see  [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://go.microsoft.com/fwlink/p/?LinkID=301891)
 
+### MSICondition attribute (part of Product element)
+
+Optional.
+
+Specifies the Windows Installer (MSI) versions of Office products that need to be installed on the device already in order for the product specified by the ID attribute to be installed on the device. For example, if Office Professional Plus 2013 is installed on the device, then install Microsoft 365 Apps for enterprise.
+
+You can specify any MSI-based Office product, such as Office, Project, or Visio. The version of the MSI-based Office product must be 2010, 2013, or 2016.
+
+> [!NOTE]
+> We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
+
+### Examples of MSICondition attribute
+
+
+```xml
+<Configuration>
+  <Add OfficeClientEdition="64" Channel="Current" >
+      <Product ID="O365ProPlusRetail" MSICondition="">
+         <Language ID="en-us" />
+         <Language ID="MatchPreviousMSI">
+      </Product>
+  </Add>
+  <RemoveMSI />
+</Configuration>
+```
+
+
+```xml
+<Configuration>
+  <Add >
+      <Product ID="ProjectProRetail" MSICondition="PrjPro,PrjProR">
+         <Language ID="en-us" />
+         <Language ID="MatchPreviousMSI">
+      </Product>
+  </Add>
+  <RemoveMSI />
+</Configuration>
+```
+
+
 ## Language element
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
