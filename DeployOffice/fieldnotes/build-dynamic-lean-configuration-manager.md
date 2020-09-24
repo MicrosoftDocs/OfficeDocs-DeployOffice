@@ -56,11 +56,11 @@ Follow these steps to create a dynamic collection that will add devices based on
 2. Provide a name and choose a limiting collection. Select **Next**.
 3. Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
 4. Paste the following query into the editor window.
-```sql
-select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
-```
-> [!NOTE]
-> The query is provided as-is and is based on engagements in the field.
+   ```sql
+   select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
+   ```
+   > [!NOTE]
+   > The query is provided as-is and is based on engagements in the field.
 
 5. Replace the string **ReplaceThis** with the matching update channel value for the channel that you want to capture in this collection from the following table:
 
