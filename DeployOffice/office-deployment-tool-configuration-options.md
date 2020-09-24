@@ -269,32 +269,18 @@ For a list of all supported product IDs, see  [Product IDs that are supported by
 
 Optional.
 
-Specifies which Office products, that were installed by using Windows Installer (MSI), need to be already installed on the device in order for the product specified by the [ID attribute](#id-attribute-part-of-product-element) to be installed on the device. For example, if an MSI-based version of Office Professional Plus is installed on the device, then install Microsoft 365 Apps for enterprise.
+Allows you to control the installation of an Office product, as specified by the [ID attribute](#id-attribute-part-of-product-element), based on whether a particular MSI-based Office product is already installed on the device. For example, if an MSI-based version of Project Professional is already installed on the device, then install Project Online Desktop Client.
 
-You can specify any MSI-based Office product, such as an Office suite, Project, or Visio. The Office product can be either a volume licensed or a retail version, as long as the product is installed by using MSI.
+You can specify any Office product that was installed by Windows Installer (MSI), but MSICondition is most commonly used for Project or Visio installations. The value that you specify for the MSICondition attribute can be either a volume licensed or a retail version of the product, as long as that version of the product was installed by using MSI.
 
-MSICondition will recognize 2010, 2013, and 2016 versions of the Office product that you specify. But, you can't specify a particular version. For example, you can't have MSICondition look specifically for Office Standard 2013. MSICondition will look for MSI-based installations of Office Standard 2010, Office Standard 2013, and Office Standard 2016.
+MSICondition will recognize 2007, 2010, 2013, and 2016 versions of the Office product that you specify. But, you can't specify a particular version. For example, you can't have MSICondition look specifically for Visio Standard 2013. MSICondition will look for all MSI-based installations of Visio Standard, including Visio Standard 2007, Visio Standard 2010, Visio Standard 2013, and Visio Standard 2016.
 
-The value that you specify for the MSICondition attribute is the Setup ID that is found in the Setup.xml file in the *{product}*.WW folder of the installation files for your existing version of the Office product. For example, the Setup.xml file for Office Professional Plus 2013 is found in the ProPlus.WW folder and the Setup.xml file for Visio Professional 2016 is found in the VisPro.WW folder. You can specify multiple types of an Office product, separated by a comma. For example, you can specify "VisStd,VisStdR,VisPro,VisProR" to look for installations of Visio Standard or Visio Professional, either volume licensed or retail.
+The value that you specify for the MSICondition attribute is the Setup ID that is found in the Setup.xml file in the *{product}*.WW folder of the installation files for your existing version of the Office product. For example, the Setup.xml file for Visio Professional 2016 is found in the VisPro.WW folder. You can specify multiple types of an Office product, separated by a comma. For example, you can specify "PrjStd,PrjStdR,PrjPro,PrjProR" to look for installations of Project Standard or Project Professional, either volume licensed or retail.
 
 > [!NOTE]
 > - We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
 
-### Examples of MSICondition attribute
-
-In the following example, Microsoft 365 Apps for enterprise will be installed on the device only if an MSI-based version of Office Professional Plus is already installed on the device. Also, Office Professional Plus will be removed from the device as part of the installation of Microsoft 365 Apps for enterprise.
-
-```xml
-<Configuration>
-  <Add OfficeClientEdition="64" Channel="Current" >
-      <Product ID="O365ProPlusRetail" MSICondition="ProPlus">
-         <Language ID="en-us" />
-         <Language ID="MatchPreviousMSI">
-      </Product>
-  </Add>
-  <RemoveMSI />
-</Configuration>
-```
+### Example of MSICondition attribute
 
 In the following example, Project Online Desktop Client will be installed on the device only if an MSI-based version of Project Standard is already installed on the device. Also, Project Standard will be removed from the device as part of the installation of Project Online Desktop Client.
 
