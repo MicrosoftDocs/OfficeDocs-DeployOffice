@@ -113,7 +113,7 @@ After you create collections for the updates channels that you're supporting as 
 3. Select **Add Rule** and then **Include Collections**. Select the collection that you created to catch all devices running Microsoft 365 Apps. Select **OK**.
 4. Select **Add Rule** again and then **Select Exclude Collections**. Select the collections you created that catch devices on supported update channels. Select **OK**.
 
-![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes_DynCollection_3.png)
+   ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes_DynCollection_3.png)
 
 5. Select **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
