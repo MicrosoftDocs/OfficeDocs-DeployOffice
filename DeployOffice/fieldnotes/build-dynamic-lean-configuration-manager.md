@@ -106,26 +106,26 @@ The result is a collection that will automatically add all devices running Micro
 
 ## Implement a collection that catches all devices running other update channels
 
-After you create collections for the updates channels that you're supporting as IT, you might also want to create one to catch all devices running other channels. This can help to find configuration drift and implement measures to re-establish the desired configuration on those devices.
+After you create collections for the updates channels that you're supporting as IT, you might also want to create one to catch all devices that are running other channels. This can help you find configuration drift and implement measures to reestablish the desired configuration on those devices.
 
 1. Navigate to **Assets and Compliance**. Select **Device Collections** and **Create Device Collection** on the **Home** menu.
 2. Provide a name and select a limiting collection. Select **Next**.
-3. Select **Add Rule** and then **Include Collections**. Select the collection you created to catch all devices running Microsoft 365 Apps. Select **OK**.
-4. Select **Add Rule** again and then **Select Exclude Collections**. Select the collections you created that catching devices on supported update channels. select **OK**.
+3. Select **Add Rule** and then **Include Collections**. Select the collection that you created to catch all devices running Microsoft 365 Apps. Select **OK**.
+4. Select **Add Rule** again and then **Select Exclude Collections**. Select the collections you created that catch devices on supported update channels. Select **OK**.
 
 ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes_DynCollection_3.png)
 
 5. Select **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
-This collection will now automatically add all devices that have Microsoft 365 Apps installed but are not a member of one of the other collections that we created. As a result, the collection will catch all devices that are running on an update channel that you haven't created a separate collection for.
+This collection will now automatically add all devices that have Microsoft 365 Apps installed but are not a member of one of the other collections that we created. This collection will catch all devices that are running on an update channel that you haven't created a separate collection for.
 
 ## Deploy applications and updates
 
 Based on our example scenario, the next steps could be:
-- Deploy an application that instructs the device to [perform a channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager) to Monthly Enterprise Channel as "available" to the collection that holds SAEC and SAEC-P devices. This enables users to switch the channel on their own terms and at their own pace. You'd see the devices transitioning to the new collection automatically.
-- Deploy an application that allows a user to revert from, for example, Monthly Enterprise Channel to Semi-Annual Enterprise Channel in case there are any issues. If your devices are receiving updates from the Office CDN, you can use the same approach as described previously. If you manage updates using Configuration Manager, you must offer a re-install of the Microsoft 365 Apps to the users as Configuration Manager [can't perform a downgrade](../change-update-channels.md#considerations-when-changing-channels) when it comes to the installed build version.
-- [Deploy updates](../manage-microsoft-365-apps-updates-configuration-manager.md) from all the update channels that you support to the collection that holds all devices running Microsoft 365 Apps. It's important to not deploy updates to the individual collections, because devices that are undergoing performing a channel change must have access to the target update to complete the transition. Devices will only download applicable updates. So if a device is offered SEAC, SAEC-P and MEC updates, it will only download the delta from the update channel that the device is currently on or is instructed to switch to. Updates from other channels will not be downloaded.
+- Deploy an application that instructs the device to [perform a channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager) to Monthly Enterprise Channel as "available" to the collection that holds SAEC and SAEC-P devices. This enables users to switch the channel on their own terms and at their own pace. You'll see the devices transitioning to the new collection automatically.
+- Deploy an application that allows a user to revert from, for example, Monthly Enterprise Channel to Semi-Annual Enterprise Channel in case there are any issues. If your devices are receiving updates from the Office CDN, you can use the same approach as described previously. If you manage updates by using Configuration Manager, you must offer a reinstall of Microsoft 365 Apps to the users because Configuration Manager [can't perform a downgrade](../change-update-channels.md#considerations-when-changing-channels) for the installed build version.
+- [Deploy updates](../manage-microsoft-365-apps-updates-configuration-manager.md) from all the update channels that you support to the collection that holds all devices running Microsoft 365 Apps. It's important to *not* deploy updates to the individual collections, because devices that are undergoing performing a channel change must have access to the target update to complete the transition. Devices will only download applicable updates. So if a device is offered SEAC, SAEC-P and MEC updates, it will only download the delta from the update channel that the device is currently on or is instructed to switch to. Updates from other channels won't be downloaded.
 - Deploy an application that reinstalls the desired Microsoft 365 Apps configuration (for example, Monthly Enterprise Channel) to the collection that holds all devices that have configuration drift.
 
 ## Notes
@@ -133,4 +133,4 @@ Based on our example scenario, the next steps could be:
 - If the configuration of a device is changed, there are two timers that are relevant on the Configuration Manager side:
     - First, the device must upload the [Hardware Inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory.md), which includes the information about the selected update channel.
     - Second, the Configuration Manager infrastructure must recalculate the memberships of the collections.
-- The term "update channel supported by IT" in this article refers to what the IT supports as an approved configuration in the organization. The created collection will not catch devices which are running an unsupported build of the Microsoft 365 Apps.
+- The term "update channel supported by IT" in this article refers to channels that the IT department supports as approved configurations in the organization. The created collection will not catch devices that are running an unsupported build of the Microsoft 365 Apps.
