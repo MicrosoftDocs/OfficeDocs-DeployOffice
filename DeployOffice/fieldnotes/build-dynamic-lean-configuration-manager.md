@@ -55,12 +55,10 @@ Follow these steps to create a dynamic collection that will add devices based on
 1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and choose a limiting collection. Select **Next**.
 3. Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
-4. Paste the following query into the editor window.
+4. Paste the following sample query into the editor window.
    ```sql
    select * from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceId = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.cfgUpdateChannel = "ReplaceThis"
    ```
-   > [!NOTE]
-   > The query is provided as-is and is based on engagements in the field.
 
 5. Replace the ***ReplaceThis*** string in the query with the matching update channel value for the channel that you want to capture in this collection from the following table:
 
@@ -91,15 +89,13 @@ Follow these steps to create a dynamic collection that will add all devices that
 1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and choose a limiting collection. Select **Next**.
 3. Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
-4. Paste the following query into the editor window.
+4. Paste the following sample query into the editor window.
 
    ```sql
    select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier,      SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
    ```
    > [!NOTE]
-   > The query is provided as-is and based on engagements in the field. 
-   >
-   > This query checks for Microsoft 365 Apps for enterprise. You might want to adjust the query for other licenses.
+   > This sample query checks for Microsoft 365 Apps for enterprise. You might want to adjust the query for other licenses.
 
 5. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
@@ -133,7 +129,7 @@ Based on our example scenario, the next steps could be:
 >[!Note]
 >- If the configuration of a device is changed, there are two timers that are relevant on the Configuration Manager side:
 >
->   - First, the device must upload the [hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory.md), which includes the information about the selected update channel.
+>   - First, the device must upload the [hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), which includes the information about the selected update channel.
 >
 >    - Second, the Configuration Manager infrastructure must recalculate the memberships of the collections.
 >
