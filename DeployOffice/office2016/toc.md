@@ -14,7 +14,7 @@
 #### [Deploy](../compat/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
 #### [Update components](../compat/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json)
 #### [Monitor Office compatibility and deployments](../compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
-#### [Manage add-ins](../compat/(manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json)
+#### [Manage add-ins](../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json)
 #### [Manage the privacy of data collected](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
 #### [Custom reporting and database schema](../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
 #### [Data that the agent collects](../compat/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json)
