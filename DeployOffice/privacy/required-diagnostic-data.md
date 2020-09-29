@@ -1719,6 +1719,8 @@ The following fields are collected across iOS and Android:
 
 - **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, I.e. was the mic used. This is instrumental in ensuring accurate and helpful searches. 
 
+- **conversation_id** - Unique ID for every search session (i.e. every time the user enters the search box)
+
 - **entrance_type** - This determines how the user started the search query, from the search tab, zero query, search heading, or search result. 
 
 - **has_contact_results** - Simple whether contact results are shown or not in the search query
@@ -1758,6 +1760,8 @@ The following fields are collected across iOS applications of Outlook Mobile:
 - **contact_result_selected_count** - tracks how many contact results were selected during the combined search session
 
 - **conversation_result_selected_count** - tracks how many conversations were selecting during the combined search session
+
+- **mail_paging_gesture_count** - tracks how many mail search paging gestures were performed within the combined search session
 
 - **mail_requests_count** - tracks how many mail search requests were sent within the combined search session
 
@@ -10453,7 +10457,11 @@ The following fields are collected:
 
 - **crashTime** - Date and time the crash occurred to help with investigation
 
+- **crash_time_from_start** – The elapsed time from app start to the crash occurred, to help with investigation
+
 - **exceptionName** - The name of the exception that triggered the crash to help with investigation
+
+- **exception_reason** – The reason of the exception that triggered the crash to help with investigation
 
 - **hasHx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
 
@@ -11065,7 +11073,7 @@ The following fields are collected:
 
 #### inbox.component
 
-This event lets us detect and fix issues where there is perceivable performance impact on your inbox UI components which would cause email messages, avatar, read/unread state to not load or display properly.
+This event collects two types of user data: M365 subscription status, and whether the user sees ads. This helps us detect and fix issues where there is perceivable performance impact on the user's inbox UI components which would cause email messages, avatar, read/unread state to not load or display properly.
 
 The following fields are collected: 
 
@@ -11081,7 +11089,9 @@ The following fields are collected:
 
 - **ad_shown** - whether an ad was shown (if ads are enabled)
 
-- **age** - age of the person (used to confirm compliance with age limitations on ads)
+- **ad_shown_for_premium** - unexpectedly showing ad to premium users
+
+- **age** - age of the person (used to confirm compliance with age limitations on ads) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
 
@@ -11100,6 +11110,8 @@ The following fields are collected:
 - **network_error_code** - network error code when requesting ads
 
 - **orientation** - the screen orientation at the time of the even (portrait or landscape)
+
+- **provider** – the provider (Xandr or Facebook) of the current showing ad
 
 - **sub_error_type** - detailed error type
 
@@ -11711,29 +11723,35 @@ Collected when an Office application is booted. Includes whether the boot was in
 
 The following fields are collected:
 
-  - **ActivationKind** - Whether the application was started by launching from the Start menu, by opening a file, or through OLE Automation.
+- **ActivationKind** - Whether the application was started by launching from the Start menu, by opening a file, or through OLE Automation.
   
-  - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
+- **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
-  - **ColdBoot** - Whether is first time Office application runs after a system restart or application binary had to be loaded from disk.
+- **ColdBoot** - Whether is first time Office application runs after a system restart or application binary had to be loaded from disk.
 
-  - **DeviceModel** - The model of the device.
+- **DeviceModel** - The model of the device.
 
-  - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
+- **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
 
-  - **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
+- **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
 
-  - **FirstBoot** - Whether this was a first boot of the application.
+- **Embedding** – Whether the app was opened for OLE embedding.
 
-  - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
+- **FirstBoot** - Whether this was a first boot of the application.
 
-  - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
+- **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
-  - **TotalWorkingSetMB** - The amount of memory in megabytes in the process's working set.
+- **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
 
-  - **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (MacOS / iOS only)
+- **LegacyDuration** - The length of time the activity took to execute, measured using different starting and ending points than Activity.Duration.
 
-  - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
+- **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
+
+- **TotalWorkingSetMB** - The amount of memory in megabytes in the process's working set.
+
+- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (MacOS / iOS only)
+
+- **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
@@ -11786,10 +11804,23 @@ The following fields are collected:
 
 - **PageURL:string**- This is URL of page which we can use to identify if session was successful or some error happened.
 
-- **Sessionid:string** - This is speech frontdoor session id. We can use this to debug service logs.
+- **PayloadCreationTime** – This is the time taken in milliseconds to create payload. 
 
-- **SummaryPageLoadTime:int** – Time (in ms) taken to load summary page. This includes payload creation time 
+- **PostUrlCallTime** – This is the time taken in milliseconds to send the post Url call. 
 
+- **RehearseSessionid** - This is speech frontdoor session id. We can use this to debug service logs.
+
+- **RequestPayloadSize** – This is the size of the request payload. 
+
+- **ResourcesLoadTime** – This is the time taken in milliseconds to load resources (js, css). 
+
+- **SummaryPageHtmlLoadTime** – This is the time taken in milliseconds to load summarypageHtml. 
+
+- **SummaryPageLoadStartTime** – This is the time taken in milliseconds receive first response from the server. 
+
+- **SummaryPageLoadTime** – Time (in ms) taken to load summary page. This includes payload creation time 
+
+- **ThumbnailsCount** – This is the total number of thumbnails that will be part of summary page. 
 
 #### Office.PowerPoint.PPT.Android.RehearseView.StartSession
 
@@ -11805,6 +11836,10 @@ Event triggered when the speech session is stopped for Presenter Coach. This eve
 
 The following fields are collected:
 
+- **ActualRehearseBootTimeInMs** – This is the actual time taken for the connections to be created.
+
+- **AdaptationTextSize** – This is the size of the text that is send to service.
+
 - **AuthDurationInMs** – This is the time taken in milliseconds for authentication (refresh the auth token).
 
 - **AuthError** – This describes the authentication error that occurred (if at all).
@@ -11815,15 +11850,23 @@ The following fields are collected:
 
 - **FirstAudioDelayInMs** – This is the time taken in milliseconds for the first audio data to be received.
 
+- **FRetriedOnOpenConnection** – This is a Boolean which indicates whether retry happen for openconnection or not.
+
 - **InitMediaCaptureLayerDurationInMs** – This is the time taken in milliseconds to initialize the media/audio capture layer.
 
 - **LocallyDroppedMessageCount** – This is the total number of messages dropped locally.
+
+- **NumReconnectAttemptsDuringSession** – This indicates how many times the attempt was made to reconnect to speechservice.
+
+- **NumTriesDuringEachReconnectAttempt** – This is an array that indicates number of tries that were done during each reconnect attempt.
 
 - **OpenFrontDoorConnectionDurationInMs** – This is the time in milliseconds taken to open the connection to the FrontDoor service.
 
 - **SendAdaptationTextDurationInMs** – This is the time taken in milliseconds to send the adaptation text to the service.
 
 - **ServiceDroppedMessageCount** – This is the total number of messages dropped by the service.
+
+- **SessionDurationInMs** – This is the time duration of entire session from when user clicked start to when user clicked stop.
 
 - **SessionId** – This is the speech frontdoor session id. We can use this to debug service logs.
 
@@ -11832,6 +11875,8 @@ The following fields are collected:
 - **SpeechHResultsWithTimestamps** – This is an array of error codes received along with the timestamps which can help in debugging.
 
 - **StartSpeechCaptureDurationInMs** – This is the time taken in milliseconds to start speech capture.
+
+- **StartSpeechServiceDurationInMs** – This is an array of time taken to start speech session every time there is reconnect, including first start speech session duration also. 
 
 - **TotalMessageCount** – This is the total number of audio messages sent to the service.
 
@@ -12034,13 +12079,21 @@ The following fields are collected:
 
 #### performance.record
 
-Allows us to detect and fix situations where the app memory usage and CPU usage becomes critically high which could cause your device to slow down
+This event collects performance metrics of the app. This allows us to detect and fix situations where the app memory usage and CPU usage becomes critically high or has other performance issues which could cause your device to slow down.
 
 The following fields are collected: 
+
+- **app_exit_metric** - Tell us the metrics about counts of different performance types of foreground and background app exits, to help us understand app exits unexpectedly with negative performance reasons.
+
+- **average_suspended_memory** - Tells us the average amount of memory in use by the app when it’s suspended so we have something to compare, to help us understand the negative performance impact.
 
 - **category** - Tells us if the app is in the foreground or background at the time. Possible values include foreground and background.
 
 - **cpu_usage** - Tells us how much CPU was used by the app so we have something to compare, to help us understand the negative performance impact
+
+- **cumulative_CPU_time** - Tells us the total amount of CPU the app used with the measurement of duration of time, so we have something to compare, to help us understand the negative performance impact.
+
+- **cumulative_GPU_time** - Tells us the total amount of GPU time used by the app, so we have something to compare, to help us understand the negative battery life impact.
 
 - **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it is installed to help us understand the negative performance impact due to the Watch
 
@@ -12051,6 +12104,10 @@ The following fields are collected:
 - **memoAry_used_percentage** - Tells us what percentage of memory was used by the app so we have something to compare, to help us understand the negative performance impact
 
 - **memory_used** - Tells us how much memory was used by the app so we have something to compare, to help us understand the negative performance impact
+
+- **peak_memory_usage** - Tells us the largest amount of memory used by the app so we have something to compare, to help us understand the negative performance impact.
+
+- **scroll_hitch_time_ratio** - Tells us the ratio of the time spent hitching while scrolling on UI, to help us understand the negative UI performance impact.
 
 
 ### *Application activity error subtype*
