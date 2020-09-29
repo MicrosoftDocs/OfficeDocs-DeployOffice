@@ -4205,7 +4205,7 @@ The following fields are collected:
 
 ### cloningtask.begin
 
-This event indicates start of cloning task prior to application update. We use this event in conjunction with cloningtask_status event to determine volume of cloning failures in order to determine whether cloning feature should be throttled on different audience channels.
+This event indicates start of cloning task prior to application update. We use this event in conjunction with cloningtask.status event to determine volume of cloning failures in order to determine whether cloning feature should be throttled on different audience channels.
  
 The following fields are collected:
 
