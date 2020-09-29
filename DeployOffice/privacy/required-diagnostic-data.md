@@ -5698,6 +5698,35 @@ The following fields are collected:
 
 - **LAUNCH_REASON** - Indicates the flow under which OfficeLens was launched. It could be over the lock screen or via Camera or Gallery options in StickyNotes or via OneNote Canvas etc.
 
+
+#### Office.OneNote.StickyNotes.NoteCreated
+ 
+Critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.   Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **IsExportable** - A flag indicating whether this event was a result of a user action or not. Should be set to True as NoteCreated is a user-triggered action.
+
+- **NoteLocalId** - Distinguishable unique identifier assigned to a note at the time of a user creates the note within the app.
+
+- **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+
+#### Office.OneNote.Android.StickyNotes.NoteViewed
+
+Critical signal that is used to monitor the ability of Sticky Notes users to view notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t view their notes, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **HasImages** - A flag indicating whether the note viewed has images stored in it.
+
+- **IsExportable** - A flag indicating whether this event was a result of a user action or not. Should be set to True as NoteViewed is a user-triggered action.
+
+- **NoteLocalId** - Distinguishable unique identifier assigned to a note at the time a user creates the note within the app.
+
+- **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+
 #### Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
 This event is used to detect and diagnose a high frequency bug that a user encounters while using Ink feature.  This will be used to determine the most appropriate mode of fixing this issue. 
@@ -5840,6 +5869,16 @@ The following fields are collected:
 -  **TimeToLastResultInMs** - Indicates the amount of time OneNote takes to find the last match.
 
 -  **TimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches.
+
+### Office.OneNote.SIGS.CriticalErrorEncountered
+
+This event captures a critical signal that is used to monitor the health of Signal Ingestion Service (SIGS), by logging whenever a critical error is encountered. Critical errors can block the whole of SIGS, and this will help us catch any such issues as soon as they are encountered by users. 
+
+Without this we will be dependent on users to report the problems they are facing. Absence of such telemetry would make the turnaround time for such issues much higher.
+
+The following fields are collected: 
+
+- **ErrorCode** - The code of the issue that was hit by the user.
 
 
 #### Office.OneNote.StickyNotes.NoteCreated (on iOS), OneNote.StickyNotes.NoteCreated (on Android)
@@ -8936,6 +8975,21 @@ The following fields are collected:
 - **TotalTime** - total time spent
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
+
+#### Office.OfficeMobile.AppActivation.Launch
+
+This event identifies first time and subsequent activations through external triggers that activate the app. App activation loads certain dependencies that are responsible for making the app run smoothly and this event will record if it loaded successfully. It will also record the source of activation and app intent that was responsible for activating the app
+
+The following fields are collected:
+
+- **ActionName** - Integer value mapping to the name of the action/feature which is invoked from the activation point.
+ 
+- **ActivationType** - Integer value mapping to the source of activation
+  
+- **IsActionTriggered** - Boolean value determing whether the action got triggered after the successful activation of the app.
+
+- **IsFirstRun** - Boolean value determining whether it was the first run of the app or a subsequent run.
+ 
 
 #### Office.OfficeMobile.FRE.FirstRunSetup
 
