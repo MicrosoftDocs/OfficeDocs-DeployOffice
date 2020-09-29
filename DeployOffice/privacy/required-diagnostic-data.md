@@ -8121,13 +8121,13 @@ The following fields are collected:
 
 #### search.subtab.selected
 
-This event lets us track the entity type pills (all, mail, contacts and calendar) that users are using when they do their searches so we can ensure the search filter mechanisms are working properly.
+The event collects origin points for the reason a search sub_tab was selected. The sub tabs sit under the primary app search bar to filter data. This event lets us track the entity type pills (all, mail, contacts and calendar) that users are using when they do their searches so we can ensure the search filter mechanisms are working properly.
 
 The following fields are collected:
 
 - **properties_general** -The general properties that all Aria event is collecting
 
-- **selected_reason** - The cause of the type pill getting selected, which could be one of these three values: tap_on_header, tap_on_see_all, enter_search_mode
+- **selected_reason** - The cause of the type pill getting selected, which could be one of the following values (glyph being an icon): tap_on_header, tap_on_see_all, enter_search_mode, mail_glyph, calendar_glyph.
 
 - **subtab_type** - The type pill that got selected, which could be one of these four values: all, mail, contact, event.
 
