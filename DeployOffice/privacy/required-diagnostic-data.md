@@ -11127,7 +11127,7 @@ The following fields are collected:
 
 #### inbox.component
 
-This event collects two types of user data: M365 subscription status, and whether the user sees ads. This helps us detect and fix issues where there is perceivable performance impact on the user's inbox UI components which would cause email messages, avatar, read/unread state to not load or display properly.
+This event collects two types of user data: Microsoft 365 subscription status, and whether the user sees ads. This helps us detect and fix issues where there is perceivable performance impact on the user's inbox UI components which would cause email messages, avatar, read/unread state to not load or display properly.
 
 The following fields are collected: 
 
@@ -11856,7 +11856,7 @@ Event triggered when summary page is loaded. This event helps us in capturing th
 
 The following fields are collected:
 
-- **PageURL:string**- This is URL of page which we can use to identify if session was successful or some error happened.
+- **PageURL**- This is URL of page which we can use to identify if session was successful or some error happened.
 
 - **PayloadCreationTime** – This is the time taken in milliseconds to create payload. 
 
@@ -11867,6 +11867,8 @@ The following fields are collected:
 - **RequestPayloadSize** – This is the size of the request payload. 
 
 - **ResourcesLoadTime** – This is the time taken in milliseconds to load resources (js, css). 
+
+- **SummaryPageErrorReceived** – This is a Boolean value which indicates if summary page was received or error occurred.
 
 - **SummaryPageHtmlLoadTime** – This is the time taken in milliseconds to load summarypageHtml. 
 
