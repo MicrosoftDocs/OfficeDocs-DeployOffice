@@ -4332,7 +4332,7 @@ The following fields are collected:
 
 - **UpdateID** - The identifier for update.
 
-### cloningtask.status_finish
+### cloningtask.status.finish
 
 This event reports on the completion of “cloning” task. This event forms part of the update funnel report and we use it to determine health of application updates.
  
@@ -11070,7 +11070,7 @@ The following fields are collected:
 
 This event reports on status of MicrosoftAutoUpdate process periodically. Specifically, it reports on what remaining tasks process is waiting on for completion for Update Assistant, and in the case of UI it reports on whether process is terminating due to user inaction.  We use this event to determine what is preventing Update Assistant from completing updates and terminating and, whether the UI is terminating due to user inaction.
 
-Following fields are collected:
+The following fields are collected:
 
 - **App** - The application process sending the event
 
@@ -15178,6 +15178,8 @@ The following fields are collected:
 ### Office.Android.DocsUI.Views.PaywallSessionData
 
 Session based metadata when Paywall UI is shown to the user. Microsoft uses this to get the user journey, and understand the device and OS versions the user is using, to help make decisions on investments in improving the experience in these areas.
+
+The following fields are collected:
 
 - **App Version** - Version code of the consuming application
 
