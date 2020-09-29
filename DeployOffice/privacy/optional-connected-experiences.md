@@ -17,7 +17,7 @@ hideEdit: true
 
 # Overview of optional connected experiences in Office
 
-If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use and describes how you can turn them off or on at any time.
+If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use, and describes how you can turn them off or on at any time.
 
 > [!NOTE]
 > If you're an admin, see the following articles to learn how to give or restrict your users' ability to use optional connected experiences:
@@ -25,6 +25,7 @@ If you have a work or school account, your organization's admin may have provide
 > - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 > - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 > - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
+> - [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
 >
 > Most optional connected experiences also can be managed by the privacy controls for connected experiences. For example, Insert Online Pictures can also be managed by the *Allow the use of connected experiences in Office that download online content* policy setting.
 
@@ -70,7 +71,11 @@ MERP connects to the Watson.microsoft.com service to send diagnostic data when O
 
 ### Office Store 
 
-When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider's terms of use. These can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+
+> [!NOTE]
+> - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
+> - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
 
 ### Research
 
@@ -87,12 +92,13 @@ On Outlook for iOS, your next upcoming event will be summarized at the top of yo
 
 The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
 
-
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
 To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
+
+For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 ## Your privacy settings
 
@@ -100,13 +106,10 @@ If your admin has given you the ability to use optional connected experiences in
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
-## Diagnostic data
+## Required service data
 
-When you use any of the optional cloud-backed services described in this article, Microsoft may collect diagnostic data (such as usage data, error and performance data) about the performance of the experience when you used it. This diagnostic data may contain "personal data" as defined by Article 4 of the European GDPR. All diagnostic data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3) standard.
-
+When you use any of the optional cloud-backed services described in this article, Microsoft may collect [required service data for Office](required-service-data.md) (such as usage data, error and performance data) about the performance of the experience when you used it. This required service data may contain "personal data" as defined by Article 4 of the European GDPR. All required service data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3) standard.
 
 ## Related articles
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
-- [Required service data for Office](required-service-data.md)
-- [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
