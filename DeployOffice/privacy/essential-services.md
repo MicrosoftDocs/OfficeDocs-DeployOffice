@@ -3841,7 +3841,7 @@ The following fields are collected:
 
 ## Microsoft AutoUpdate (MAU) events
 
-### additionalappinfo_invalidpreference
+### additionalappinfo.invalidpreference
 
 This event reports on invalid preference set to display more information with respect to End of Service for a product. We use this information to advise customers to set correct preferences in order to see additional information.
  
@@ -3879,7 +3879,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### appdelegate_launch
+### appdelegate.launch
 
 This event denotes that an attempt to launch the app occurred. We log its result (failure or success). We use this event to identify cases in which MAU fails to launch
 
@@ -3920,7 +3920,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### appdelegate_terminate
+### appdelegate.terminate
 
 This event denotes that a graceful Application Exit occurred. We use this event to distinguish Graceful Application Exits from ungraceful ones.
 
@@ -3961,7 +3961,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### appinstall_connecttoxpc
+### appinstall.connecttoxpc
 
 This event denotes that errors occurred connecting to MAU Helper (a component that performs application installation).  This event denotes a potential corruption of the MAU application. The device will not be able to install updates.
 
@@ -4001,7 +4001,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### appinstall_logscanned
+### appinstall.logscanned
 
 This event is used to determine if log file was successfully processed. We use this event to detect and address any issues arise during application installation. 
  
@@ -4041,7 +4041,7 @@ The following fields are collected:
 
 - **SessionId** – The identifier for the session
 
-### appregistry_config
+### appregistry.config
 
 This event reports on any errors encountered while loading application registry information. We use this report to advise IT Admins on the correct format of setting up client application registrations.
  
@@ -4081,7 +4081,7 @@ The following fields are collected:
 
 - **SessionId** – The identifier for the session
 
-### appregistry_info
+### appregistry.info
 
 This event denotes that the application launched. We use this event to list the applications for which MAU can control updates, the number of copies available as well as their version and install location (default or other).
 
@@ -4122,7 +4122,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### appregistry_remove
+### appregistry.remove
 
 This event denotes that an attempt to remove an App from the list of applications Managed by MAU took place. We use this event to confirm that only MAU-released applications are managed via MAU (no AppStore apps should appear here).
 
@@ -4163,7 +4163,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### catalog_errorsignature
+### catalog.errorsignature
 
 This event denotes that a failure while performing code sign validation on an update collateral file occurred.  Any collateral failing code sign verification should be considered invalid.
 
@@ -4203,7 +4203,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### cloningtask_begin
+### cloningtask.begin
 
 This event indicates start of cloning task prior to application update. We use this event in conjunction with cloningtask_status event to determine volume of cloning failures in order to determine whether cloning feature should be throttled on different audience channels.
  
@@ -4246,7 +4246,7 @@ The following fields are collected:
 - **UpdateID** – The identifier for update.
 
 
-### cloningtask_helpertoolconnection
+### cloningtask.helpertoolconnection
 
 This event records issues with install on clone (i.e. either we fail to connect to the helper to apply an update, or we connect but the helper is unable to apply the update). If we ever get a record reported, this means install on clone has failed and will now have to fallback to an in-place update.
 
@@ -4286,7 +4286,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### cloningtask_status
+### cloningtask.status
 
 This event indicates status of cloning process for the application to be updated. We use this event to determine success rate as well as types of errors encountered causing failures. This event is used to determine whether cloning feature should be throttled on different audience channels.
 
@@ -4332,7 +4332,7 @@ The following fields are collected:
 
 - **UpdateID** - The identifier for update.
 
-### cloningtask_status_finish
+### cloningtask.status_finish
 
 This event reports on the completion of “cloning” task. This event forms part of the update funnel report and we use it to determine health of application updates.
  
@@ -4373,7 +4373,7 @@ The following fields are collected:
 - **UpdateID** - The update identifier.
 
 
-### configuration_channel
+### configuration.channel
 
 This event records attempts to switch Channels (Audience Group) in MAU.  We use this to log attempts and their results (success or failure).
 
@@ -4414,7 +4414,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### configuration_metadata
+### configuration.metadata
 
 This event is logged whenever MAU is initializing. It is a MAU heartbeat type of event
 
@@ -4454,7 +4454,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session.
 
-### configuration_systemVersion
+### configuration.systemVersion
 
 This event indicates an attempt to retrieve system version has failed. This also contains information on the information Microsoft Auto Update (MAU) was able to collect from the system. We use this event to determine whether MAU should cater for failures. Note that system version is used to determine whether an update can be applied to the client device.
  
@@ -4494,7 +4494,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### controller_alertmanager_reinstallresponse
+### controller.alertmanager.reinstallresponse
 
 This event denotes that MAU fell into an unusable/unrecoverable state and needs to be reinstalled. This event denotes an unrecoverable error and user intervention is required.
 
@@ -4535,7 +4535,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_alertmanager_tmpdiskfull
+### controller.alertmanager.tmpdiskfull
 
 This event denotes that insufficient disk space was detected. We will not be able to install updates due to insufficient disk space.
 
@@ -4576,7 +4576,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_alertmanager_tmpdiskfullretry
+### controller.alertmanager.tmpdiskfullretry
 
 This event denotes that a retry attempt to install an update was initiated after Insufficient disk space was detected. We retry the installation after not being able to install updates due to insufficient disk space.
 
@@ -4617,7 +4617,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
     
 
-### controller_alertmanager_tmpdiskfullretrycancel
+### controller.alertmanager.tmpdiskfullretrycancel
 
 This event denotes that a cancellation on an install-retry attempt after Insufficient disk space was detected. We use this event to determine if our fallback mechanism was enough to guide the user thru the update process when insufficient disk was detected.
 
@@ -4658,7 +4658,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_checkwindow_noupdatefoundok
+### controller.checkwindow.noupdatefoundok
 
 This event denotes that a check for updates resulted in no updates found. We use this event for ensuring updates are offered correctly, optimizing service loads, and define how frequent our updates checks should be. We also want to optimize our release cadence based on user expectation of updates.
 
@@ -4700,7 +4700,7 @@ The following fields are collected:
 
     
 
-### controller_checkwindow_updatecheck
+### controller.checkwindow.updatecheck
 
 This event denotes that a check for updates was performed. We use this event for ensuring updates are offered correctly, optimizing service loads, and define how frequent our updates checks should be. We also want to optimize our release cadence based on user expectation of updates.
 
@@ -4741,7 +4741,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_checkwindow_updatecheckcancel
+### controller.checkwindow.updatecheckcancel
 
 This event denotes that the process of checking for updates was canceled (either by the user or by the system). We use this event for ensuring updates are offered correctly, optimizing service loads, and define how frequent our updates checks should be. We also want to optimize our release cadence based on user expectation of updates.
 
@@ -4782,7 +4782,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_checkwindow_updatecheckcanceluser
+### controller.checkwindow.updatecheckcanceluser
 
 This event denotes that the process of checking for updates was canceled by the user.  We use this event for ensuring updates are offered correctly, optimizing service loads, and define how frequent our updates checks should be. We also want to optimize our release cadence based on user expectation of updates.
 
@@ -4823,7 +4823,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_checkwindow_updatesfound
+### controller.checkwindow.updatesfound
 
 This event denotes that the process of checking for updates resulted in updates found.  We use this event for ensuring updates are offered correctly.
 
@@ -4864,7 +4864,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_checkwindow_uptodate
+### controller.checkwindow.uptodate
 
 This event denotes that the process of checking for updates resulted no updates because apps in the device are up to date.  We use this event for ensuring updates are offered correctly.
 
@@ -4905,7 +4905,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_applaunchwithpendingupdate
+### controller.downloadwindow.applaunchwithpendingupdate
 
 This event denotes that an app that is in the process of getting updates was launched. We use this event for ensuring updates are offered correctly. We should prevent opened apps from getting updates. Apps must be closed prior to update.
 
@@ -4946,7 +4946,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_closeapplicationdialog
+### controller.downloadwindow.closeapplicationdialog
 
 This event denotes that an app that is in the process of getting updates was launched. We use this event for ensuring updates are offered correctly. We should prevent opened apps from getting updates. Apps must be closed prior to update.
 
@@ -4987,7 +4987,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_curtasknull
+### controller.downloadwindow.curtasknull
 
 This event denotes that an unexpected error occurred while attempting to apply an update. We use this event for ensuring updates are offered correctly.
 
@@ -5028,7 +5028,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_downloadcancel
+### controller.downloadwindow.downloadcancel
 
 This event denotes that the download process was canceled by user.  We use this event for ensuring updates are offered correctly.
 
@@ -5069,7 +5069,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_downloadfailed
+### controller.downloadwindow.downloadfailed
 
 This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly.
 
@@ -5110,7 +5110,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_downloadfailedok
+### controller.downloadwindow.downloadfailedok
 
 This event denotes that a failure occurred when downloading an update and the user was notified. We use this event for ensuring updates are offered and download correctly, and that in case of failure, a notification is served to the user.
 
@@ -5151,7 +5151,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_downloadpathmissing
+### controller.downloadwindow.downloadpathmissing
 
 This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly. This event indicates a download URL is missing.
 
@@ -5192,7 +5192,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_downloadtasknull
+### controller.downloadwindow.downloadtasknull
 
 This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly. This event indicates that Microsoft Autoupdate was asked to pause/resume a download but could not find corresponding download manager.
 
@@ -5233,7 +5233,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_filesignaturenotverified
+### controller.downloadwindow.filesignaturenotverified
 
 This event denotes that a failure occurred when downloading an update. This event indicates that Microsoft Autoupdate was unable to verify that this update was published by Microsoft. We use this event for ensuring updates are offered and downloaded correctly. 
 
@@ -5274,7 +5274,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_installcomplete
+### controller.downloadwindow.installcomplete
 
 This event denotes that the installation of all updates offered by Microsoft Autoupdate completed. We use this event for ensuring updates are offered and downloaded correctly. 
 
@@ -5315,7 +5315,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_networkunavailablealert
+### controller.downloadwindow.networkunavailablealert
 
 This event denotes that network connectivity was lost while downloading updates.  We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5356,7 +5356,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_networkunavailablealertok
+### controller.downloadwindow.networkunavailablealertok
 
 This event denotes that network connectivity was lost while downloading updates. It also denotes that the user was notified of this error. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5397,7 +5397,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_downloadwindow_noconnectionok
+### controller.downloadwindow.noconnectionok
 
 This event denotes that network connectivity was lost while downloading updates. It also denotes that the user was notified of this error. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5438,7 +5438,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_repairrequired
+### controller.downloadwindow.repairrequired
 
 This event denotes that the update process failed. It also denotes that an update was completed but Microsoft Autoupdate found a problem with updated application and repair is required. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5478,7 +5478,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### controller_downloadwindow_updateaborted
+### controller.downloadwindow.updateaborted
 
 This event denotes that the update process was aborted. It also denotes that an update was already in progress by Daemon and user clicked OK to abort download. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5519,7 +5519,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_updatefailed
+### controller.downloadwindow.updatefailed
 
 This event denotes that one or more updates from the current batch failed. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5560,7 +5560,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_updatesuccessful
+### controller.downloadwindow.updatesuccessful
 
 This event denotes that all updates from the current batch were successful. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5601,7 +5601,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_userpaused
+### controller.downloadwindow.userpaused
 
 This event denotes that all updates from the current batch were successful. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5642,7 +5642,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_downloadwindow_userresumed
+### controller.downloadwindow.userresumed
 
 This event denotes that the download updates process was resumed successfully after going into pause. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5683,7 +5683,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_mainwindow_setautomaticdownloadinstall
+### controller.mainwindow.setautomaticdownloadinstall
 
 This event denotes that the device was enrolled into Automatic Update mode. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5724,7 +5724,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_mainwindow_setmanualchecking
+### controller.mainwindow.setmanualchecking
 
 This event denotes that the device was enrolled into Manual Update mode. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5765,7 +5765,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_templateawindow_cancel
+### controller.templateawindow.cancel
 
 This event denotes that the user chose to cancel or ignore a provided warning message. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5806,7 +5806,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_templateawindow_enroll
+### controller.templateawindow.enroll
 
 This event denotes that the user chose to follow a provided warning recommendation. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5848,7 +5848,7 @@ The following fields are collected:
 
 
 
-### controller_templateawindow_install
+### controller.templateawindow.install
 
 This event denotes that the user chose to follow a provided warning recommendation related to initiating a software installation action. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5889,7 +5889,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_updatewindow_begindownloadingapps
+### controller.updatewindow.begindownloadingapps
 
 This event denotes that the download for updates was started via Update Window. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5930,7 +5930,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_updatewindow_networkretry
+### controller.updatewindow.networkretry
 
 This event denotes that a retry was triggered at the Update Sheet due to network failure. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
 
@@ -5971,7 +5971,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_updatewindow_networkretrycancel
+### controller.updatewindow.networkretrycancel
 
 This event denotes that a retry could not be triggered at the Update Sheet due to network failure. This event indicates user elected to cancel updates after being alerted of network becoming unavailable. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6012,7 +6012,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_updatewindow_networkunavailable
+### controller.updatewindow.networkunavailable
 
 This event denotes that network connectivity was suddenly lost. This event indicates server is not reachable when attempting to download an update package. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6053,7 +6053,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_updatewindow_noupdateavailable
+### controller.updatewindow.noupdateavailable
 
 This event denotes that there was a search for updates that resulted in no updates being available. This event indicates no available updates were found by Microsoft Autoupdate. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6094,7 +6094,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### controller_updatewindow_noupdatestoselect
+### controller.updatewindow.noupdatestoselect
 
 This event denotes that an error occurred resulting in an empty list of updates. This event indicates Microsoft Autoupdate is showing an empty update sheet. This should not happen. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6135,7 +6135,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### Controller_UpdateWindow_UpdateAvailable
+### Controller.UpdateWindow.UpdateAvailable
 
 This event denotes that there was a search for updates that resulted in updates being offered. We use this even to determine whether updates are being offered for the user to see, whether the proper updates are being shown, or whether update blocking is working as expected. We use this event to ensure the update process works as expected and to help troubleshoot errors.
  
@@ -6176,7 +6176,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### controller_updatewindow_updateavailablecancel
+### controller.updatewindow.updateavailablecancel
 
 This event denotes that a user canceled after we displayed the update sheet listing updates. We use this even to explain reasons for not updating (i.e. user willingly cancels). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6217,7 +6217,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadactor_pause
+### downloadactor.pause
 
 This event denotes that the user issued a request to pause the download. We use this even to explain reasons for updates apparently not completing. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6258,7 +6258,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadactor_redirect
+### downloadactor.redirect
 
 This event denotes that the downloader agent is pointed to an endpoint that issues a URL redirect for the download request. We use this even to explain reasons for download failure and diagnose proxy issues. It can also help diagnose reasons why users are observed to install older builds. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6299,7 +6299,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### downloadactor_resume
+### downloadactor.resume
 
 This event denotes the user issues a request to resume a paused download. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6340,7 +6340,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadactor_resumeerror
+### downloadactor.resumeerror
 
 This event denotes the user issues a request to resume a paused download. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6381,7 +6381,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### downloadactor_status
+### downloadactor.status
 
 This event logs that there are attempts to fetch collateral files and their result (Success or Failure). We want to know the collaterals and packages being fetched. A wrong file being fetched can indicate a build/collateral issue. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6422,7 +6422,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_configuration
+### downloadmanifest.configuration
 
 This event reports an error with Microsoft Auto Update (MAU) configuration - either with Custom Server setup in preferences or in endpoint definitions in Update Assistant in installed MAU components. We use this event to advise IT Admins to set correct Manifest Server endpoints.
  
@@ -6461,7 +6461,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_downloadcatalogfail
+### downloadmanifest.downloadcatalogfail
 
 This event a download failure occurred. The file that failed to download is logged. We want to know the collaterals and packages being fetched. A failure to download a manifest can point to either a build collateral generation failure, a CDN configuration error, a client configuration error, a network error. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6502,7 +6502,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### downloadmanifest_downloadcatalogsuccess
+### downloadmanifest.downloadcatalogsuccess
 
 This event denotes that a file was successfully downloaded. A failure to download a manifest can point to either a build collateral generation failure, a CDN configuration error, a client configuration error, a network error. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6543,7 +6543,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_downloadfail
+### downloadmanifest.downloadfail
 
 This event denotes that a download error occurred. The manifest or package file that failed to download as well as error details are logged. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6584,7 +6584,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_downloadfromurl
+### downloadmanifest.downloadfromurl
 
 This event denotes that the downloading of a catalog file has started. We log the URL from which the catalog file is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6625,7 +6625,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_downloading
+### downloadmanifest.downloading
 
 This event denotes that the downloading of a catalog file has started. We log the URL from which the catalog file is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6666,7 +6666,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_downloadsuccess
+### downloadmanifest.downloadsuccess
 
 This event denotes that the downloading of an XML and package file has succeeded. We log the URL from which the file is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6707,7 +6707,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### downloadmanifest_downloadurl
+### downloadmanifest.downloadurl
 
 This event denotes that a request to download a file occurred. We log the URL from which the file is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6748,7 +6748,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_filenameerror
+### downloadmanifest.filenameerror
 
 This event denotes that an unexpected error occurred. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6789,7 +6789,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_invalidhash
+### downloadmanifest.invalidhash
 
 This event denotes a security validation of our files failed. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6830,7 +6830,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_missingdaemon
+### downloadmanifest.missingdaemon
 
 This event denotes a user attempted to check for updates and we discovered that MAU was missing a core component (daemon). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6871,7 +6871,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_signatureerror
+### downloadmanifest.signatureerror
 
 This event denotes that the code signature verification failed for a package. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6912,7 +6912,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmanifest_status
+### downloadmanifest.status
 
 This event logs a summarized aggregation of attempts/failures hit during the download process for manifest and package files. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6953,7 +6953,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmgr_downloadend
+### downloadmgr.downloadend
 
 This event logs a marker that indicates the download process completed on its own. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -6994,7 +6994,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### downloadmgr_downloadstart
+### downloadmgr.downloadstart
 
 This event logs the update that is about to be downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -7034,7 +7034,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### downloadtask_downloadbegin
+### downloadtask.downloadbegin
 
 This event indicates start of download activity for an application update. This forms part of update funnel and we use this to determine health of application updates.
  
@@ -7083,7 +7083,7 @@ The following fields are collected:
 - **UpdateVersion** - Version of the application after the update
 
 
-### downloadtask_downloadfailure
+### downloadtask.downloadfailure
 
 This event logs that an error occurred downloading a package file. We log the update path and the error. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -7130,7 +7130,7 @@ The following fields are collected:
 - **UpdateID** – The identifier of the update being downloaded.
 
 
-### downloadtask_downloadsuccess
+### downloadtask.downloadsuccess
 
 The successful downloading a package file. We log the update path used. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -7174,7 +7174,7 @@ The following fields are collected:
 
 - **UpdateID** – The identifier of downloaded update.
 
-### downloadtask_updatertypeerror
+### downloadtask.updatertypeerror
 
 This event reports on an updater type error in the downloaded manifest file. We use this event to notify owner of the manifest file so that the error can be corrected.
  
@@ -7218,7 +7218,7 @@ The following fields are collected:
 
 - **UpdateURL** - URL of update package that need to be applied
 
-### downloadtask_urlerror
+### downloadtask.urlerror
 
 This event reports on an error in the URL specified in downloaded manifest file. We use this event to notify owner of the manifest file so that the error can be corrected.
  
@@ -7260,7 +7260,7 @@ The following fields are collected:
 
 - **UpdateURL** - URL of update package that need to be applied
 
-### fba_changelastupdate
+### fba.changelastupdate
 
 This event reports on when Microsoft Auto Update (MAU) has checked for updates. We use this event to debug when a particular device has not been offered an update for an extended period of time.
 
@@ -7299,7 +7299,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_checkforupdate
+### fba.checkforupdate
 
 This event denotes that a background process is checking for updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -7340,7 +7340,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_checkforupdateskip
+### fba.checkforupdateskip
 
 This event denotes that a background process skipped update due to MAU GUI being opened. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -7381,7 +7381,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_forceinstallmsgsent
+### fba.forceinstallmsgsent
 
 This event indicates that a forced update is initiated from the user interface. This event forms part of funnel and is used to determine health of force update feature.
 
@@ -7419,7 +7419,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_forceupdatecheck
+### fba.forceupdatecheck
 
 This event indicates update check is forced. We use this event to determine volume of forced update checks which happen outside normal update check cycle.
 
@@ -7459,7 +7459,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_guiappopen
+### fba.guiappopen
 
 This event indicates that the user interface is being launched under Automatic Check mode, as an application with applicable update is currently open. This event is used to determine volume of user interface launches from Automatic Check mode for future feature development.
 
@@ -7499,7 +7499,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_installpending
+### fba.installpending
 
 This event indicates Microsoft Auto Update (MAU) sent a notification regarding pending updates. This event is used to determine volume of updates that are initiated from user notifications and is used to enhance user experience by minimizing interruption to the user in the future releases.
 
@@ -7539,7 +7539,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_launch
+### fba.launch
 
 This event indicates start of Microsoft Update Assistant with the method of being launched. This event is used to determine whether Microsoft Update Assistant is being launched in incorrect context.
 
@@ -7579,7 +7579,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_launchbyagent
+### fba.launchbyagent
 
 This event indicates that the Microsoft Update Assistant has been launched via Launch Agent. This event is used to determine volume of Microsoft Update Assistant being launched from user interface for future development.
 
@@ -7619,7 +7619,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_launchfromprotocol
+### fba.launchfromprotocol
 
 This event indicates that the Microsoft Update Assistant has been launched via URL protocol. This event is used to determine volume of Microsoft Update Assistant being launched via URL for future development.
 
@@ -7659,7 +7659,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_launchgui
+### fba.launchgui
 
 This event indicates that the Microsoft Update Assistant is attempting to launch Graphical User Interface (GUI). This event is used to determine volume of UI launches initiated from Microsoft Update Assistant, to help with future development, including minimizing user interruption from frequent UI launch.
 
@@ -7700,7 +7700,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_launchstatus
+### fba.launchstatus
 
 This event logs MAU's daemon failures while attempting to launch. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -7745,7 +7745,7 @@ The following fields are collected:
 - **Success** – The string Boolean indicating whether MAU daemon process was successfully launched.
 
 
-### fba_mausilentupdate
+### fba.mausilentupdate
 
 This event indicates Microsoft Update Assistant is initiating silent updates. This event is used to determine volume of updates that are applied without user intervention, to help drive enhancements in user experience.
 
@@ -7785,7 +7785,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_moreinfofromappnotification
+### fba.moreinfofromappnotification
 
 This event reports on information that a registered application is routing through Microsoft Auto Update (MAU). For example, end-of-service messages are pushed through MAU notification. We use this event to determine the volume of devices that are displaying this particular notification, to determine the success of information dissemination.
 
@@ -7827,7 +7827,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_multipledaemon
+### fba.multipledaemon
 
 This event indicates that another instance of Microsoft Update Assistant has been detected and current instance will be terminated. We will be using this event to determine volume of devices that attempt to run multiple instances of Update Assistant and design a workaround if need arises.
 
@@ -7867,7 +7867,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_nofifyappclosed
+### fba.nofifyappclosed
 
 This event indicates that the Microsoft Update Assistant is sending a notification for pending updates because there are no registered applications open and updates can proceed without interrupting the user. We use this event to determine volume of updates that can be applied but need user action to do so. This event is used to help drive enhancement in user experience.
 
@@ -7907,7 +7907,7 @@ The following fields are collected:
 	
 - **SessionId** - The identifier for the session
 
-### fba_nofifyappopen
+### fba.nofifyappopen
 
 This event indicates that the Microsoft Update Assistant is sending a notification for pending updates because there are registered applications open and updates will require the applications closed to proceed.  We use this event to determine volume of updates that require user intervention.  This event is used to help drive enhancement in user experience.
 
@@ -7947,7 +7947,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_settimerfail  
+### fba.settimerfail  
 
 This event indicates an attempt to set up timer to trigger a future update has failed. This event is critical, and we use this event to determine volume of failures to develop work-around if needed.
 
@@ -7988,7 +7988,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_silentupdateoptin
+### fba.silentupdateoptin
 
 This event denotes that the user is Opting into silent updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8028,7 +8028,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fba_skipforcedupdate
+### fba.skipforcedupdate
 
 This event indicates forced update check is being skipped due to open applications. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8069,7 +8069,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_startforcedupdate
+### fba.startforcedupdate
 
 This event indicates that an attempt to apply a forced update has occurred. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8110,7 +8110,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_terminate
+### fba.terminate
 
 This event indicates that the MAU daemon terminated normally. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8151,7 +8151,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fba_updatefound
+### fba.updatefound
 
 This event indicates that the MAU daemon has found available updates to offer. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8192,7 +8192,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### fba_updatetimer
+### fba.updatetimer
 
 This event indicates Microsoft Autoupdate Daemon process became active to check for updates after sleeping for set amount of time. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8233,7 +8233,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_allappsclosed
+### fbasilentupdate.allappsclosed
 
 This event logs if all apps were closed prior to an install. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8274,7 +8274,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_applaunchafterupdate
+### fbasilentupdate.applaunchafterupdate
 
 This event logs an attempt to relaunch the app after a silent update and the update mode (clone or not). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8319,7 +8319,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_applaunchwileinstalling
+### fbasilentupdate.applaunchwileinstalling
 
 We log when an app launch was made while installing an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8360,7 +8360,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_appneedtoclose
+### fbasilentupdate.appneedtoclose
 
 We log when an update process was kicked off and we find that the application to update was opened. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8401,7 +8401,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_appterminationeventreceived
+### fbasilentupdate.appterminationeventreceived
 
 This event indicates Microsoft Autoupdate has received an Apple event informing the application has been terminated. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8448,7 +8448,7 @@ The following fields are collected:
 - **UpdateID** – The identifier of the application update.
 
 
-### FBASilentUpdate_ClientSession
+### FBASilentUpdate.ClientSession
 
 This event is used to calculated critical update health metric for Microsoft Auto Update (MAU). This event allows us to indicate which update session (download or install) the backend is currently handling.
  
@@ -8489,7 +8489,7 @@ The following fields are collected:
 - **SessionId** – The identifier for the session
 
 
-### fbasilentupdate_codesignfailure
+### fbasilentupdate.codesignfailure
 
 This event logs the result of codesign verification after applying an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8530,7 +8530,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_download
+### fbasilentupdate.download
 
 This event denotes that an update is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8573,7 +8573,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_downloadfailed
+### fbasilentupdate.downloadfailed
 
 This event denotes that a failure occurred while downloading an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8622,7 +8622,7 @@ The following fields are collected:
 - **UpdateName** – The name of the application update.
 
 
-### fbasilentupdate_downloadinbackground
+### fbasilentupdate.downloadinbackground
 
 This event denotes that we are starting the download a set of updates in the background (we log the number of updates being concurrently downloaded). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8663,7 +8663,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_downloadingrepairupdate
+### fbasilentupdate.downloadingrepairupdate
 
 This event denotes that we have initiated an attempt to download a repair for a failed update. We log the version and the update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8706,7 +8706,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_duplicatedownloadattempted
+### fbasilentupdate.duplicatedownloadattempted
 
 This event denotes that an error occurred. We should only be downloading one update for a given app at a time. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8747,7 +8747,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_installattemptfailed
+### fbasilentupdate.installattemptfailed
 
 This event denotes that an installation attempt for an update (version) failed. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8788,7 +8788,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_installcomplete
+### fbasilentupdate.installcomplete
 
 This event denotes that all updates on the batch finished installing. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8829,7 +8829,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_installed
+### fbasilentupdate.installed
 
 This event denotes that an individual update was installed successfully. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8870,7 +8870,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### fbasilentupdate_installing
+### fbasilentupdate.installing
 
 This event denotes that an individual update was initiated. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -8910,7 +8910,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### fbasilentupdate_installstatus
+### fbasilentupdate.installstatus
 
 This event reports on the status of the application update task. This event forms part of the application update funnel and we use it to monitor the health of application updates.
 
@@ -8960,7 +8960,7 @@ The following fields are collected:
 
 - **UpdatePkg** - Name of the update package being applied
 
-### fbasilentupdate_notificationerror
+### fbasilentupdate.notificationerror
 
 This event reports on an error encountered while trying to send user notification. This event will be used to debug cause of error and take corrective actions.
 
@@ -9006,7 +9006,7 @@ The following fields are collected:
 
 - **Type** - Type of notification
 
-### fbasilentupdate_notificationremoved
+### fbasilentupdate.notificationremoved
 
 This event denotes that an update that was blocked is no longer blocked. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9047,7 +9047,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_queueinstall
+### fbasilentupdate.queueinstall
 
 This event denotes that an update will be queued for silent installation. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9088,7 +9088,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_requiredappsclosed
+### fbasilentupdate.requiredappsclosed
 
 We log when an application that has a pending update has been closed. This indicates the time at which the actual install can proceed. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9128,7 +9128,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### FBASilentUpdate_TimerForAppTermination
+### FBASilentUpdate.TimerForAppTermination
 
 This event is used to calculated critical update health metric for Microsoft Auto Update (MAU). This event allows us to keep track of the termination event of the opened application and the duration of its opened state.
  
@@ -9168,7 +9168,7 @@ The following fields are collected:
 
 - **SessionId** – The identifier for the session
 
-### fbasilentupdate_updateavailablenotification
+### fbasilentupdate.updateavailablenotification
 
 This event indicates an update available notification is triggered. We must ensure the flow to prompt for updates is triggered when an update is detected. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9209,7 +9209,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_userclicknotification
+### fbasilentupdate.userclicknotification
 
 This event indicates user clicked content section of the update available notification and Microsoft Autoupdate GUI is being launched. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9250,7 +9250,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_userselectinstalllater
+### fbasilentupdate.userselectinstalllater
 
 This event indicates user opted to install later after shown update available notification. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9291,7 +9291,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### fbasilentupdate_userselectinstallnow
+### fbasilentupdate.userselectinstallnow
 
 This event indicates user opted to install now after shown update available notification. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -9331,7 +9331,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### gui_dashboardview_appisopendialog_display 
+### gui.dashboardview.appisopendialog.display 
 
 This event indicates that the UI has shown a dialog to close an open application to proceed with application update. This event is used to determine volume of updates being delayed in order to provide future enhancements to minimize user interruption.
 
@@ -9375,7 +9375,7 @@ The following fields are collected:
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
-### gui_dashboardview_appisopendialogbutton_clicked
+### gui.dashboardview.appisopendialogbutton.clicked
 
 This event indicates whether application update is skipped, or another attempt is being made after showing an open application dialog. This event is used to determine volume of updates that are being skipped and used for future enhancements to minimize user interruption.
 
@@ -9421,7 +9421,7 @@ The following fields are collected:
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
-### gui_dashboardview_updateinprogressdialog_display
+### gui.dashboardview.updateinprogressdialog.display
 
 This event logs whether a dialog was displayed to users indicating update is already in progress.
  
@@ -9459,7 +9459,7 @@ The following fields are collected:
 
 - **SessionId** – The identifier for the session
 
-### gui_dashboardview_updatemodebutton_clicked
+### gui.dashboardview.updatemodebutton.clicked
 
 This event indicates update mode changed from UI control. This event is used to determine volume of devices that transition from one mode to another and is used to help determine why customers are moving away from automatic updates. 
 
@@ -9499,7 +9499,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### gui_feedbackwindow_buttonclicked
+### gui.feedbackwindow.buttonclicked
 
 This event reports on whether feedback is submitted or canceled before submission. This event is used to help determine volume of feedback sent on a particular release version. This helps to isolate potential issues early.
 
@@ -9539,7 +9539,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### gui_preferenceview_consentsheet_display
+### gui.preferenceview.consentsheet.display
 
 This event indicates that a consent sheet for a given channel is displayed, if available. This event is used to determine volume of devices that newly enroll into applicable audience channel (Insider Fast / Insider Slow). We also use this event to ensure consent dialog display is functioning to show terms of usage to users.
  
@@ -9579,7 +9579,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### gui_preferenceview_consentsheet_licenseerror
+### gui.preferenceview.consentsheet.licenseerror
 
 This event reports on the error encountered while attempting to show consent dialog. This event is critical and is used to correct any issues caused by a change in product, if applicable.
 
@@ -9621,7 +9621,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### gui_preferenceview_switchchannel
+### gui.preferenceview.switchchannel
 
 This event reports on transition between user selected channels. This event is used to help determine why customers are opting out of Insiders channels.  
 
@@ -9663,7 +9663,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### gui_updatemanager_applaunchduringupdate
+### gui.updatemanager.applaunchduringupdate
 
 This event reports that an application was launched while it was being updated, and Microsoft AutoUpdate is terminating the launched application. Note that launching an application while being updated may result in application corruption. We use this event to ensure update process is not impacted by launched application before it is ready to be used.
  
@@ -9707,7 +9707,7 @@ The following fields are collected:
 
 - **UpdateID** - The identifier of application update.
 
-### gui_updatemanager_downloadupdateforapp
+### gui.updatemanager.downloadupdateforapp
 
 This event reports on download completion status for an update. We use this event to ensure health of update process and track/address failure point.
 
@@ -9756,7 +9756,7 @@ The following fields are collected:
 - **UpdateName** - The update name.
 
 
-### gui_updatemanager_error
+### gui.updatemanager.error
 
 This event reports back on any errors encountered during application updates. This may indicate error in Microsoft Auto Update (MAU) execution sequence.  We use this report to apply updates to MAU to cater for common error scenarios.
 
@@ -9798,7 +9798,7 @@ The following fields are collected:
 
 - **Success** – The string Boolean value indicating whether application was successfully terminated.
 
-### gui_updatemanager_installcleanupforapp
+### gui.updatemanager.installcleanupforapp
 
 This event indicates temporary files created during application installation were successfully cleaned up. This forms part of update funnel used to determine application update health.
  
@@ -9843,7 +9843,7 @@ The following fields are collected:
 - **UpdateID** – The update identifier.
 
 
-### gui_updatemanager_installsuccessforapp
+### gui.updatemanager.installsuccessforapp
 
 This event indicates successful application update. This event forms part of the update funnel which we use to determine update health.
  
@@ -9887,7 +9887,7 @@ The following fields are collected:
 
 - **UpdateID** - The update identifier.
 
-### gui_updatemanager_installupdateforapp
+### gui.updatemanager.installupdateforapp
 
 This event indicates start of actual install process for an application update. This event forms part of application update funnel which we use to determine update health.
  
@@ -9929,7 +9929,7 @@ The following fields are collected:
 
 - **UpdateID** - The update identifier.
 
-### gui_updatemanager_queueinstallforapp
+### gui.updatemanager.queueinstallforapp
 
 This event indicates start of actual install process for an application update. This event forms part of application update funnel which we use to determine update health.
  
@@ -9971,7 +9971,7 @@ The following fields are collected:
 
 - **UpdateID** - The update identifier.
 
-### gui_updatemanager_relaunchapp
+### gui.updatemanager.relaunchapp
 
 This event logs whether applications were successfully relaunched after updates.
  
@@ -10017,7 +10017,7 @@ The following fields are collected:
 
 - **UpdateName** - The update name.
 
-### installdata_checkrunning
+### installdata.checkrunning
 
 This event logs the result of a check between the apps to be installed and whether the installation attempt will proceed based on the app being opened. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10058,7 +10058,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installdata_cleanup
+### installdata.cleanup
 
 Package files should be removed after installation. This event records instances in which we fail to remove them. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10099,7 +10099,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installedapp_invalidbundle
+### installedapp.invalidbundle
 
 This event indicates Microsoft Autoupdate could not retrieve bundle information for the registered application at given path. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10140,7 +10140,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installedapp_invalidpreference
+### installedapp.invalidpreference
 
 This event logs cases in which the user preference contains an invalid application entry. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10181,7 +10181,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installedapp_nilbundleid
+### installedapp.nilbundleid
 
 This event logs cases in which the bundle ID was missing for an app. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10222,7 +10222,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installedapp_nilbundlename
+### installedapp.nilbundlename
 
 This event logs cases in which the bundle name was missing for an app. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10263,7 +10263,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installedapp_sendcoreappleevent
+### installedapp.sendcoreappleevent
 
 This event indicates Microsoft Auto Update (MAU) is sending an Apple event to a registered application to terminate the application in order to proceed with pending application update. This event is currently being used to help develop future enhancement to minimize user interruption during application updates. 
 
@@ -10314,7 +10314,7 @@ The following fields are collected:
 - **Success** -	Indicates whether the subject application has reported success of operation
 
     
-### installstatus_codesign
+### installstatus.codesign
 
 This event logs the status of the OS codesign binary. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10355,7 +10355,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installstatus_daemon
+### installstatus.daemon
 
 This event logs the status of the Microsoft AutoUpdate daemon. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10396,7 +10396,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installstatus_helper
+### installstatus.helper
 
 This event logs the status of the Microsoft AutoUpdate helper tool. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10437,7 +10437,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installupdatestask_applaunched
+### installupdatestask.applaunched
 
 This event indicates Microsoft Autoupdate has detected application launch for a blocked update but could not find matching installer. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10478,7 +10478,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installupdatestask_applaunchwithpendingupdate
+### installupdatestask.applaunchwithpendingupdate
 
 This event indicates Microsoft Autoupdate detected application launch for an application with a pending update. Launched application will be terminated. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10519,7 +10519,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installupdatestask_codesignverificationfail
+### installupdatestask.codesignverificationfail
 
 This event denotes that CodeSign verification failed for an app update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10560,7 +10560,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_codesignverificationstart
+### installupdatestask.codesignverificationstart
 
 This event denotes that CodeSign verification started for an app update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10601,7 +10601,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_codesignverificationsuccess
+### installupdatestask.codesignverificationsuccess
 
 This event denotes CodeSign verification success for an app update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10642,7 +10642,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_failsilentinstall
+### installupdatestask.failsilentinstall
 
 This event logs failures while applying silent updates and whether this was a cloned or regular install. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10683,7 +10683,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installupdatestask_multiplerelocatablepackage
+### installupdatestask.multiplerelocatablepackage
 
 This event indicates Microsoft Autoupdate has found multiple instances of application entry for a given update package in downloaded manifest. We use this event to ensure the update process works as expected and to help troubleshoot errors.
  
@@ -10724,7 +10724,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installupdatestask_removeclone
+### installupdatestask.removeclone
 
 This event denotes that a clone was removed. We remove a clone when either the Install On clone process completed, or when a new process starts, and an older cloned version is found in the machine. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10765,7 +10765,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_retryfail
+### installupdatestask.retryfail
 
 This event denotes that errors were encountered during the installation retry process. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10806,7 +10806,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_retryproxyerror
+### installupdatestask.retryproxyerror
 
 This event logs intra-process communication errors (communication with MAU helper tool). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10847,7 +10847,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### installupdatestask_retryproxyerror
+### installupdatestask.retryproxyerror
 
 This event logs intra-process communication errors (communication with MAU helper tool). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10889,7 +10889,7 @@ The following fields are collected:
 
     
 
-### installupdatestask_retryresponse
+### installupdatestask.retryresponse
 
 This event logs that a retry did not work. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10930,7 +10930,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_retrysuccess
+### installupdatestask.retrysuccess
 
 This event logs a successful update installation after a retry. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -10971,7 +10971,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_setreopengui
+### installupdatestask.setreopengui
 
 This event indicates whether setting preference to reopen GUI after install was successful. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11012,7 +11012,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### installupdatestask_updatestatus
+### installupdatestask.updatestatus
 
 This event reports on status of installation task. This event forms part of the update funnel and is used to determine health of application updates.
 
@@ -11067,7 +11067,7 @@ The following fields are collected:
 - **UpdatePkg** - Name of the update package being applied
 
 
-### msupdate_cli_eventhandler
+### msupdate.cli.eventhandler
 
 This event is used to calculate the usage of various types of Microsoft Auto Update (MAU) Command Line Interface API.
 
@@ -11110,7 +11110,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### msupdate_cli_eventhandler_applyupdates_appids
+### msupdate.cli.eventhandler.applyupdates.appids
 
 This event indicates a CLI (client-line interface) command was issued to apply an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11151,7 +11151,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### msupdate_cli_eventhandler_config
+### msupdate.cli.eventhandler.config
 
 This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to configure. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11192,7 +11192,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### msupdate_cli_eventhandler_updates
+### msupdate.cli.eventhandler.updates
 
 This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to list updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11233,7 +11233,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### msupdate_monitor_progress_downloaded
+### msupdate.monitor.progress.downloaded
 
 This event indicates that updates were downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11274,7 +11274,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### msupdate_monitor_progress_failure
+### msupdate.monitor.progress.failure
 
 This event logs a list of queued updates that failed to be applied. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11315,7 +11315,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### msupdate_monitor_progress_finished
+### msupdate.monitor.progress.finished
 
 This event logs a list of queued updates that completed install. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11356,7 +11356,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### msupdate_monitor_progress_queued
+### msupdate.monitor.progress.queued
 
 This event logs a list of queued updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -11438,7 +11438,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### sauforcedupdate_autodismiss
+### sauforcedupdate.autodismiss
 
 This event indicates displayed force update dialog is being dismissed due to user inactivity. This event is used to determine volume of forced updates that proceed without users providing any input to the displayed notification. This event is used to enhance user interface to minimize interruption.
 
@@ -11478,7 +11478,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_close
+### sauforcedupdate.close
 
 This event indicates user has chosen to close forced update dialog. This event is used to determine volume of forced updates that are postponed by user action. This event is used to enhance user interface to minimize interruption. 
 
@@ -11518,7 +11518,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_completeautodismiss
+### sauforcedupdate.completeautodismiss
 
 This event indicates that displayed forced update dialog from deadline feature is being dismissed due to user inactivity. This event is used to determine volume of forced updates that proceed without users providing any input to the displayed notification. This event is used to enhance user interface to minimize interruption for deadline feature.
 
@@ -11558,7 +11558,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_completeclose
+### sauforcedupdate.completeclose
 
 This event indicates successful completion of a forced update. This event is used to help determine health of the forced update feature. 
 
@@ -11598,7 +11598,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_display
+### sauforcedupdate.display
 
 This event indicates that a forced update dialog has been displayed.  This event forms part of a forced update funnel and is used to determine the health of the forced update feature.
 
@@ -11638,7 +11638,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_displayfinalhour
+### sauforcedupdate.displayfinalhour
 
 This event indicates that a forced update final hour dialog has been displayed. This event forms part of forced update funnel and is used to determine health of forced update feature.
 
@@ -11678,7 +11678,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_done
+### sauforcedupdate.done
 
 This event indicates that a forced update has successfully completed. This event forms part of forced update funnel and is used to determine health of forced update feature. 
 
@@ -11718,7 +11718,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_enabled
+### sauforcedupdate.enabled
 
 This event is triggered when Microsoft Auto Update (MAU) determines forced update is applicable.  This event is used to determine health of forced update feature. 
 
@@ -11760,7 +11760,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_forcedupdatedismiss
+### sauforcedupdate.forcedupdatedismiss
 
 This event indicates that the displayed force update final hour dialog is being dismissed due to user inactivity. This event is used to determine volume of forced updates that proceed without users providing any input to the displayed notification. This event is used to enhance the user interface to minimize interruption. 
 
@@ -11800,7 +11800,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_forcequitandupdatenow
+### sauforcedupdate.forcequitandupdatenow
 
 This event indicates start of user initiated forced update. This event forms part of funnel and is used to determine health of forced update feature. 
 
@@ -11840,7 +11840,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session 
 
-### sauforcedupdate_forceterminate
+### sauforcedupdate.forceterminate
 
 This event indicates start of the forced update with application being terminated forcefully.  This event forms part of the funnel and is used to determine health of forced update feature.
 
@@ -11880,7 +11880,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_quitandupdatenow
+### sauforcedupdate.quitandupdatenow
 
 This event indicates that the user has elected to close the application and apply update. This event forms part of a funnel and is used to determine the health of the forced update feature. 
 
@@ -11920,7 +11920,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_snooze
+### sauforcedupdate.snooze
 
 This event indicates user has elected to postpone forced update. This event forms part of funnel and is used to determine health of forced update feature. 
 
@@ -11960,7 +11960,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_terminate
+### sauforcedupdate.terminate
 
 This event indicates start of the forced update with application being terminated. This event forms part of the funnel and is used to determine health of forced update feature.
 
@@ -12000,7 +12000,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### sauforcedupdate_updatenow
+### sauforcedupdate.updatenow
 
 This event indicates user has elected to update application now.  This event forms part of funnel and is used to determine health of forced update feature.
 
@@ -12082,7 +12082,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### update_applaunchdetected
+### update.applaunchdetected
 
 This event indicates an application was launched while an update was in progress. This event is used to determine the volume of applications that are launched during update and is used for enhancing user experience in future releases.
 
@@ -12126,7 +12126,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### update_appterminationreceived
+### update.appterminationreceived
 
 This event indicates that an application with blocked update has been terminated and whether Microsoft Auto Update (MAU) can continue with the update. This event forms part of a funnel and is used to determine the health of application updates.
 
@@ -12172,7 +12172,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### update_blockedappclosed
+### update.blockedappclosed
 
 This event indicates Microsoft Auto Update (MAU) has detected an application with blocked update has closed and can continue with update. This event forms part of funnel and is used to determine health of application updates. 
 
@@ -12216,7 +12216,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### update_blockedinstallskip
+### update.blockedinstallskip
 
 This event logs an error encountered when trying to skip an application update. This event is critical and is used to investigate reported errors.  
 
@@ -12258,7 +12258,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### update_clientsession
+### update.clientsession
 
 This event is reported when the status of client device changes, causing Microsoft Update Assistant to pause or resume update process. This event forms part of funnel and is used to determine health of application updates. 
 
@@ -12298,7 +12298,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### update_download_begin 
+### update.download.begin 
 
 This event indicates start of the application update process. This event forms part of the update funnel and is used to determine the health of application updates. 
 
@@ -12344,7 +12344,7 @@ The following fields are collected:
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
-### update_download_finish
+### update.download.finish
 
 This event indicates completion of the download phase for application update. This event forms part of the update funnel and is used to determine the health of application updates.  
 
@@ -12390,7 +12390,7 @@ The following fields are collected:
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
-### update_downloadresume
+### update.downloadresume
 
 This event reports an error encountered while attempting to resume a paused download task. This event is critical and is used to investigate on reported errors. 
 
@@ -12434,7 +12434,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### update_error
+### update.error
 
 This event reports an error encountered while attempting to update registered application.  This event is critical and is used to investigate on reported errors. 
 
@@ -12476,7 +12476,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### update_installcleanupforapp
+### update.installcleanupforapp
 
 This event indicates update install has completed and Microsoft Auto Update (MAU) is cleaning up.  This event forms part of update funnel and is used to determine health of application updates.
 
@@ -12520,7 +12520,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### update_installupdateforapp
+### update.installupdateforapp
 
 This event is used to report on start of application update install process. This event forms part of update funnel and is used to determine health of application updates. 
 
@@ -12566,7 +12566,7 @@ The following fields are collected:
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
-### update_installupdateforapp_success
+### update.installupdateforapp.success
 
 This event reports on the status of install task. This event forms part of update funnel and is used to determine health of application updates. 
 
@@ -12612,7 +12612,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### Update_InstallVariance
+### Update.InstallVariance
 
 This event is used to calculate critical update health metric for MAU. This event allows us to determine the success metrics of install priority feature and verify the integrity of the feature.
  
@@ -12652,7 +12652,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### update_multipleappupdates 
+### update.multipleappupdates 
 
 This event indicates multiple application updates are in progress in background. This event forms part of update funnel and is used to determine health of application updates.
 
@@ -12692,7 +12692,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### update_previousidnil
+### update.previousidnil
 
 This event indicates a repair update package is being downloaded but there is no previous download information. This event is critical and is used to investigate reported errors. 
 
@@ -12734,7 +12734,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### update_queueinstallforapp 
+### update.queueinstallforapp 
 
 This event indicates that a downloaded update package has been placed in a queue for install.  This event forms part of update funnel and is used to determine health of application updates.
 
@@ -12780,7 +12780,7 @@ The following fields are collected:
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
-### update_relaunchafterupdate 
+### update.relaunchafterupdate 
 
 This event indicates application update has completed and is being re-launched. This event forms part of update funnel and is used to determine health of application updates. 
 
@@ -12824,7 +12824,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-### update_timerforapptermination 
+### update.timerforapptermination 
 
 This event indicates start/end of timer for checking on the status application. This event comes in a pair and is used to determine all timer objects are removed when application update progresses.
 
@@ -12865,7 +12865,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatecore_appregistration
+### updatecore.appregistration
 
 This event logs attempts to register an app and the result/reason. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -12906,7 +12906,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatecore_loadinglaunchagent
+### updatecore.loadinglaunchagent
 
 This event indicates Launch Agent is being loaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -12946,7 +12946,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatecore_runnstaskcommand
+### updatecore.runnstaskcommand
 
 This event reports on an error while attempting to launch a task. This event is critical and is used to investigate reported errors.  
 
@@ -12986,7 +12986,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatecore_server_connectionfail
+### updatecore.server.connectionfail
 
 This event logs errors hit while reaching out to the CDN. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13026,7 +13026,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatecore_server_nullurl
+### updatecore.server.nullurl
 
 This event reports an error indicating that a given server could not be reached. This event is used to determine update failure rate caused by network issue. 
 
@@ -13066,7 +13066,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatefilterhelper_cannotretrievebuilddate
+### updatefilterhelper.cannotretrievebuilddate
 
 We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log that we could not retrieve the date from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13107,7 +13107,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefilterhelper_invalidappid
+### updatefilterhelper.invalidappid
 
 This event reports an error indicating that no matching manifest files could be found with application id retrieved from web response. This event is used to investigate reported error.
 
@@ -13147,7 +13147,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatefilterhelper_invalidappidfromwebservices
+### updatefilterhelper.invalidappidfromwebservices
 
 This event reports an error indicating that application ID retrieved from web response is not in expected format. This event is used to investigate reported error.
 
@@ -13187,7 +13187,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatefilterhelper_invalidresponsefromupdatefiltering
+### updatefilterhelper.invalidresponsefromupdatefiltering
 
 We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13228,7 +13228,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefilterhelper_missingbuilddate
+### updatefilterhelper.missingbuilddate
 
 We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13269,7 +13269,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefilterhelper_updatebypassedoldage
+### updatefilterhelper.updatebypassedoldage
 
 We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log the service is bypassed due to old update date. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13310,7 +13310,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_check_error
+### updatefinder.check.error
 
 This event reports an error encountered while checking for updates. This event is critical and is used to investigate reported error. 
 
@@ -13353,7 +13353,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
  
-### updatefinder_check_start
+### updatefinder.check.start
 
 This event logs whenever we initiate a check for updates operation. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13394,7 +13394,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_check_status
+### updatefinder.check.status
 
 This event aggregates the status of the check for update operations (the funnel from searching until downloading). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13435,7 +13435,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_check_updatefound
+### updatefinder.check.updatefound
 
 We log whenever a check for updates results in updates found. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13476,7 +13476,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_check_updatenotfound
+### updatefinder.check.updatenotfound
 
 We log whenever a check for updates results in no updates offered due to no updates being found. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13517,7 +13517,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_check_uptodate
+### updatefinder.check.uptodate
 
 We log whenever a check for updates results in no updates offered due to all apps being already up to date. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13558,7 +13558,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_offerupdates_invalidappid
+### updatefinder.offerupdates.invalidappid
 
 This event reports an error while trying to assess whether an update is applicable. This event is critical and is used to investigate reported error.  
 
@@ -13600,7 +13600,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatefinder_offerupdates_minoscheckfail
+### updatefinder.offerupdates.minoscheckfail
 
 We log whenever we blocked an update due to not meeting OS requirements. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13640,7 +13640,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatefinder_offerupdates_missingtrigger
+### updatefinder.offerupdates.missingtrigger
 
 This event reports an error while attempting to evaluate triggers from downloaded application update manifest. This critical and is used to investigate reported error.  
 
@@ -13682,7 +13682,7 @@ The following fields are collected:
 
 - **Triggers** - Dictionary of triggers found in manifest
 
-### updatefinder_offerupdates_nullbundleforappid
+### updatefinder.offerupdates.nullbundleforappid
 
 This event indicates Microsoft Autoupdate was unable to load bundle information for the application ID specified in downloaded manifest file. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13723,7 +13723,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_offerupdates_updaterulematched
+### updatefinder.offerupdates.updaterulematched
 
 This event denotes that an update was found for an app and baseline. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13764,7 +13764,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### updatefinder_registeredapps
+### updatefinder.registeredapps
 
 We log the apps that are installed/registered/Controlled by MAU. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13804,7 +13804,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### updatefinder_suite_invalidsuiteversion
+### updatefinder.suite.invalidsuiteversion
 
 This event reports on a suite version error while assessing whether an update is applicable. This event is critical and is used to investigate reported error.
 
@@ -13844,7 +13844,7 @@ The following fields are collected:
 
 - **Suite** - Name of suite under consideration
 
-### updatefinder_suite_keyvaluemissing
+### updatefinder.suite.keyvaluemissing
 
 This event reports an error while attempting to add an application to suite. This event is critical and is used to investigate reported error.
 
@@ -13887,7 +13887,7 @@ The following fields are collected:
 - **Suite** - Name of suite application is to be added
 
     
-### updatefinder_suite_missingcollateral
+### updatefinder.suite.missingcollateral
 
 Suite Update - We log whenever a suite update is not applicable due to collateral missing. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13928,7 +13928,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_suite_staleversion
+### updatefinder.suite.staleversion
 
 Suite Update - We log whenever a suite update is not applicable due to baseline version being too old. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -13969,7 +13969,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_suite_updateapplicable
+### updatefinder.suite.updateapplicable
 
 Suite Update - We log whenever a suite update is applicable. We log the baseline version and the Suite AppId. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14010,7 +14010,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_suite_updatenotapplicabledefaultpath
+### updatefinder.suite.updatenotapplicabledefaultpath
 
 Suite Update - We log whenever a suite update is not offered due not all suite apps being install under the default path. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14051,7 +14051,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### updatefinder_suite_updatenotapplicableversion
+### updatefinder.suite.updatenotapplicableversion
 
 Suite Update - We log whenever a suite update is not offered due not all suite apps being in the same baseline version. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14092,7 +14092,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_suite_updatenotoffered
+### updatefinder.suite.updatenotoffered
 
 Suite Update - We log whenever a suite update is not offered due to suite size being larger than individual updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14133,7 +14133,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatefinder_suite_updateoffered
+### updatefinder.suite.updateoffered
 
 Suite Update - We log whenever a suite update is offered. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14174,7 +14174,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### updatemanager_checkupdate
+### updatemanager.checkupdate
 
 This event logs number of updates found by Microsoft Autoupdate while checking for available updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14215,7 +14215,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### updatemanager_updatespending
+### updatemanager.updatespending
 
 This event denotes that updates were found and are pending install. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14255,7 +14255,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### UpdateStatus_Codesign
+### UpdateStatus.Codesign
 
 This event reports the status from codesign verification Microsoft Update Assistant runs after installing client application updates. We use this event to ensure that we provide packages that are valid and will update the installed application to newest version.
 
@@ -14305,7 +14305,7 @@ The following fields are collected:
 
 - **UpdatePkg** - Name of the update package applied
 
-### urlutilities_getmauinfo
+### urlutilities.getmauinfo
 
 This event reports an error encountered while accessing Microsoft Auto Update (MAU) application bundle. This event is critical and is used to investigate reported error.
 
@@ -14345,7 +14345,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
    
-### webservices_checkforsilentupdates
+### webservices.checkforsilentupdates
 
 This event denotes that silent-update candidates were found. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14386,7 +14386,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### webservices_deltaupdater
+### webservices.deltaupdater
 
 This event logs interactions between the client code and the feature gate that controls whether the client should allow for Delta updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14427,7 +14427,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### webservices_serviceaction
+### webservices.serviceaction
 
 We log any errors resulting from an unexpected webservice response. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14468,7 +14468,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### webservices_serviceaction
+### webservices.serviceaction
 
 We log any errors resulting from an unexpected webservice response. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14509,7 +14509,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### webservices_serviceresponse
+### webservices.serviceresponse
 
 This event logs requests to MAU Service, response times and Errors. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14550,7 +14550,7 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
     
-### webservices_silentupdate
+### webservices.silentupdate
 
 We log requests to check for any "force update" applicability rules, i.e. we must take a user from build N to build N+1 due to some major issue. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14590,7 +14590,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### webservices_updatefiltering
+### webservices.updatefiltering
 
 This event indicates filtering performed on the list of applicable updates via web-services. We use this event to ensure application blocks are working correctly if we have to block an update.
 
@@ -14630,7 +14630,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### webservices_webcontent
+### webservices.webcontent
 
 We log requests and responses received into webservices. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -14670,7 +14670,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-### webservices_whatsnew
+### webservices.whatsnew
 
 This event is triggered when Microsoft Auto Update (MAU) queries web-services on the “what’s new” feature for registered applications. This event is used to determine health of the “what’s new” feature. 
 
@@ -15126,7 +15126,7 @@ The following fields are collected:
 - **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
 
 
-### Office_FirstRun_Apple_TelemetryOptIn
+### Office_FirstRun.Apple.TelemetryOptIn
 
 This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our telemetry opt-in flow in First Run Experience. We collect a code that denotes what type of diagnostic data collection option was selected by the user.
 
