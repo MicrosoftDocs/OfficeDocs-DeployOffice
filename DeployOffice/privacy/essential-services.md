@@ -3309,7 +3309,7 @@ The following fields are collected:
 
 - **EventDate** - Timestamp of the event occurrence 
 
-- **MostExplored** - Integer denoting the index of the most toggled item in a list of M365 apps and their features
+- **MostExplored** - Integer denoting the index of the most toggled item in a list of Microsoft 365 apps and their features
 
 - **SessionID** - Globally Unique Identifier (GUID) to connect events by session
 
@@ -11066,6 +11066,56 @@ The following fields are collected:
 
 - **UpdatePkg** - Name of the update package being applied
 
+### Lifecycle.periodiccheck
+
+This event reports on status of MicrosoftAutoUpdate process periodically. Specifically, it reports on what remaining tasks process is waiting on for completion for Update Assistant, and in the case of UI it reports on whether process is terminating due to user inaction.  We use this event to determine what is preventing Update Assistant from completing updates and terminating and, whether the UI is terminating due to user inaction.
+
+Following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application Version
+
+- **Channel** - The preference for audience
+
+- **dataCollectionDialog** - Boolean indicating whether the process is waiting for user response on Data Collection Dialog
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The Hardware Model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** - The Version of the Operating System
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **forcedUpdateDialog** - Boolean indicating whether the process is waiting for user response on Forced Update Dialog
+
+- **HowToCheck** - How To Check setting
+
+- **isBusy** - Boolean indicating whether the process is busy with active update
+
+- **isInactive** - Boolean indicating whether the process has been waiting for user action for prolonged period of time
+
+- **isWaiting** - Boolean indicating whether the process is waiting for user response on notification
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **SessionLength** - Length of current process session in seconds
+
 
 ### msupdate.cli.eventhandler
 
@@ -15125,8 +15175,24 @@ The following fields are collected:
 
 - **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
 
+### Office.Android.DocsUI.Views.PaywallSessionData
 
-### Office_FirstRun.Apple.TelemetryOptIn
+Session based metadata when Paywall UI is shown to the user. Microsoft uses this to get the user journey, and understand the device and OS versions the user is using, to help make decisions on investments in improving the experience in these areas.
+
+- **App Version** - Version code of the consuming application
+
+- **ClientId** - Anonymous non PII unique device identifier (guid / string)
+
+- **Entry Point** - Unique identifier for contextual or constant entry points from the consuming application
+
+- **isTablet** - Whether the device is showing tablet UX
+
+- **OSVersion** - Android OS version of the device
+
+- **SessionId** - Guid: Unique Paywall session identifier
+
+
+### Office.FirstRun.Apple.TelemetryOptIn
 
 This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our telemetry opt-in flow in First Run Experience. We collect a code that denotes what type of diagnostic data collection option was selected by the user.
 
