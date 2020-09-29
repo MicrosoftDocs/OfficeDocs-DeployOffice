@@ -778,3 +778,4 @@ For more information about application preferences, see [Apply application prefe
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
 - [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages)
+- [Deprecated attributes in the ODT configuration file](https://docs.microsoft.com/en-us/office/troubleshoot/installation/forceupgrade-forcedowngrade-removed-odt-config)
