@@ -17,14 +17,8 @@ hideEdit: true
 
 # Optional diagnostic data for Office
 
-> [!IMPORTANT]
-> The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
-> - Microsoft 365 Apps for business (previously named Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
-> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
->
-> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
@@ -36,12 +30,12 @@ If you choose to send us optional diagnostic data, required diagnostic data is a
 
 Examples of optional diagnostic data include data we collect about the shapes users insert into Word documents so we can provide better options, and data we collect about the time it takes for a PowerPoint slide to appear on your screen so we can improve the experience if it’s slow.
 
-For more information about diagnostic data, see the following:
+For more information about diagnostic data, see the following articles:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
-- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-If you’re the admin for your organization, you might also be interested in the following:
+If you’re the admin for your organization, you might also be interested in the following articles:
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
