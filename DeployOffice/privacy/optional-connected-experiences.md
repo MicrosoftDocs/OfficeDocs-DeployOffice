@@ -27,7 +27,7 @@ If you have a work or school account, your organization's admin may have provide
 
 ### If you use these services, what terms of use do you need to agree to?
 
-It is important to know that these optional cloud-backed services are not covered by your organization's license with Microsoft. Instead, they are licensed directly to you. By using these optional cloud-backed services, you also agree to the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Depending on which service you use, additional terms may also apply. In most cases, there is no fee to use these services. If a fee does apply (as may be the case with some [Office add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) available to you for download through Office Store), you will be clearly informed prior to use.
+It is important to know that these optional cloud-backed services are not covered by your organization's license with Microsoft. Instead, they are licensed directly to you. By using these optional cloud-backed services, you also agree to the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Depending on which service you use, additional terms may also apply. In most cases, there is no fee to use these services. If a fee does apply (as may be the case with some [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) available to you for download through Office Store), you will be clearly informed prior to use.
 
 ## Experiences that rely on Bing
 
@@ -45,7 +45,7 @@ Bing powers the following experiences in Outlook for iOS and Android:
 
 [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) provides an experience in Word that is powered by LinkedIn. It delivers ideas for your resume. LinkedIn is a different company that is owned by Microsoft. If you use Resume Assistant, the LinkedIn [user agreement](https://www.linkedin.com/legal/user-agreement) and [privacy policy](https://www.linkedin.com/legal/privacy-policy) apply in addition to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to LinkedIn. They are not linked to you by the LinkedIn organization. You do not need to have a LinkedIn account to use this cloud-backed service.
 
-Note: The privacy setting described below does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
+Note: Your [privacy setting](#your-privacy-settings) does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
 
@@ -67,7 +67,7 @@ MERP connects to the Watson.microsoft.com service to send diagnostic data when O
 
 ### Office Store 
 
-When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [Office add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). However, any [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
 
 > [!NOTE]
 > - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
@@ -78,7 +78,7 @@ When you use the Office Store, your use of the store site itself is licensed by 
 [Research](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397) connects to cloud-backed services to obtain dictionary, thesaurus, translation, and word lookup results. When you use this experience, it connects to Microsoft-owned services by default and the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/) apply. Research allows you to add other service providers. If you decide to use another service provider, additional terms may apply.
 
 > [!NOTE]
-> Research is different than Researcher. In newer versions of Office, another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed above under [Experiences that rely on Bing](#experiences-that-rely-on-bing).
+> Research is different than Researcher. In newer versions of Office, another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed in the [Experiences that rely on Bing](#experiences-that-rely-on-bing) section.
 
 ### Travel time in Up Next in Outlook for iOS
 
@@ -101,6 +101,8 @@ For more information, see [Account Privacy Settings](https://support.microsoft.c
 If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
+
+For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 ## Required service data
 
