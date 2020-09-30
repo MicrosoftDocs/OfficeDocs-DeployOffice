@@ -106,7 +106,7 @@ For more information, see [Account Privacy Settings](https://support.microsoft.c
 
 ## Required service data
 
-When you use any of the optional cloud-backed services described in this article, Microsoft may collect [required service data for Office](required-service-data.md) (such as usage data, error and performance data) about the performance of the experience when you used it. This required service data may contain "personal data" as defined by Article 4 of the European GDPR. All required service data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3) standard.
+When you use any of the optional cloud-backed services described in this article, Microsoft may collect [required service data](required-service-data.md) (such as usage data, error and performance data) about the performance of the experience when you used it. This required service data may contain "personal data" as defined by Article 4 of the European GDPR. All required service data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3) standard.
 
 ## Admin controls for optional connected experiences 
 
