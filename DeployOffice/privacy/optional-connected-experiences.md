@@ -23,14 +23,7 @@ hideEdit: true
 If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use, and describes how you can turn them off or on at any time.
 
 > [!NOTE]
-> If you're an admin, see the following articles to learn how to give or restrict your users' ability to use optional connected experiences:
-> - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
-> - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
-> - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
-> - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
-> - [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
->
-> Most optional connected experiences also can be managed by the privacy controls for connected experiences. For example, Insert Online Pictures can also be managed by the *Allow the use of connected experiences in Office that download online content* policy setting.
+> If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
 
 ### If you use these services, what terms of use do you need to agree to?
 
@@ -113,6 +106,16 @@ If you're using Office for Mac, open any Office application and select the app m
 
 When you use any of the optional cloud-backed services described in this article, Microsoft may collect [required service data for Office](required-service-data.md) (such as usage data, error and performance data) about the performance of the experience when you used it. This required service data may contain "personal data" as defined by Article 4 of the European GDPR. All required service data Microsoft collects during the use of any Microsoft 365 Apps for enterprise applications and services is pseudonymized as defined in ISO/IEC 19944:2017, (section 8.3.3) standard.
 
-## Related articles
+## Admin controls for optional connected experiences 
 
-- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+If you're an admin, see the following articles to learn how to give or restrict your users' ability to use optional connected experiences:
+
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
+- [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
+- [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
+- [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md)
+
+Most optional connected experiences also can be managed by the privacy controls for connected experiences. For example, Insert Online Pictures can also be managed by the *Allow the use of connected experiences in Office that download online content* policy setting.
+
+For more information, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md).
