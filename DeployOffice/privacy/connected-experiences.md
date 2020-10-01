@@ -17,16 +17,8 @@ hideEdit: true
 
 # Connected experiences in Office
 
-> [!IMPORTANT]
-> The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)
-> - Microsoft 365 Apps for business (previously named Office 365 Business)
-> - Microsoft 365 Personal, Microsoft 365 Family, or other versions of Office that are part of a Microsoft 365 subscription.
-> - Project and Visio desktop apps that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
->
-> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
->
-> This information will apply to a version of Outlook for iOS and Android that is expected to be released at the end of January 2020.
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive or translating the contents of a Word document into a different language are examples of connected experiences.
 
@@ -51,6 +43,7 @@ The following table provides a list of connected experiences that analyze your c
 | *Map chart*\*    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Maps in Power View   | [Maps in Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
+|PivotTable recommendations (Excel for the web)|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
 | PowerPoint Designer   | [Create professional slide layouts with PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publish to Power BI   | [Publish to Power BI from Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
@@ -151,7 +144,8 @@ If you are signed in with a Microsoft account, open an Office app, such as Word,
 If you are signed in with a work or school account, the admin in your organization will decide whether these connected experiences are available to you. You won't see any choices for these connected experiences if you go to **File** > **Account** > **Account Privacy** > **Manage Settings**.
 
 > [!NOTE]
-> If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
+> - If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
+> - For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don't use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
 
@@ -170,4 +164,3 @@ Even if you decide to turn off these connected experiences, certain Office funct
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Required service data for Office](required-service-data.md)
 - [Essential services for Office](essential-services.md)
-- [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
