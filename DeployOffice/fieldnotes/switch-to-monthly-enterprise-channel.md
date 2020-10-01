@@ -104,5 +104,5 @@ With the next [Hardware Inventory cycle](https://docs.microsoft.com/mem/configmg
     - After the device received the intent to switch channel, it will not apply Current Channel updates anymore. Once the MEC build passed the installed Current Channel build, devices will switch.
     - Detach devices from Configuration Manager as the update source by disabling the Office COM Management interface. This is a major change and must be planned and executed with caution.
 - If the configuration of a device is changed, there are two timers which are relevant on the Configuration Manager side:
-    - First, the device must upload the [Hardware Inventory](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) which includes the information about the selected update channel.
+    - First, the device must upload the [Hardware Inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) which includes the information about the selected update channel.
     - Second, the Configuration Manager infrastructure must re-calculate the memberships of the collections in question.
