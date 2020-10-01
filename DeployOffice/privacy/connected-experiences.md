@@ -164,7 +164,7 @@ If you choose to turn off some types of connected experiences, either the ribbon
 
 Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there is a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you are properly licensed to use Office.
 
-## Related topics
+## Related articles
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
