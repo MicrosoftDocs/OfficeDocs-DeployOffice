@@ -31,6 +31,7 @@ Here is an overview of an example scenario of moving devices from Semi-Annual En
 - During next [Software Updates Deployment Evaluation Cycle](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process) the Click-to-Run service will use [COM interface](https://docs.microsoft.com/office/client-developer/shared/manageability-applications-with-the-office-365-click-to-run-installer) to download update from distribution point and install build from new channel. 
 - Device now runs on new channel
 - Configuration Manager receives updated Hardware Inventory and removes device from old collection and adds to new one
+
 For the admin there are three actions to take:
 - Group the devices you want to target in a collection, preferably in a [dynamic collection tailored for the Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md).
 - Create and deploy an application to inject the new channel assignment to the devices.
@@ -79,8 +80,9 @@ At this stage, the device is still on e.g. Semi-Annual Enterprise Channel, but n
 So, in most cases you want to deploy the Microsoft 365 Apps Updates for both channels to a collection holding the targeted devices:
 - Devices which have not yet received the instructions to switch channels can apply the regular Semi-Annual Enterprise Channel update to stay safe and secure.
 - Devices which already have received the instruction to switch channels, will download and apply the update from the Monthly Enterprise Channel.
-[NOTE] It is important to note that devices will only download applicable updates. Devices will not download both updates, but only the required update. And the delta calculation applies as well, so devices are not pulling the full update source, but only the content needed to perform the update or channel change.
-A common practice is to have a dynamic collection which catches all devices running Microsoft 365 Apps . You can then deploy the Microsoft 365 Apps Updates for all channels supported by your organization to this collection and each device will fetch the matching update. At the same time devices changing the channel have access to the targeted one.
+> [!NOTE]
+> It is important to note that devices will only download applicable updates. Devices will not download both updates, but only the required update. And the delta calculation applies as well, so devices are not pulling the full update source, but only the content needed to perform the update or channel change.
+A common practice is to have a [dynamic collection which catches all devices running Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md). You can then deploy the Microsoft 365 Apps Updates for all channels supported by your organization to this collection and each device will fetch the matching update. At the same time devices changing the channel have access to the targeted one.
 
 (SCREENSHOT)
 
@@ -88,13 +90,15 @@ Follow the common process of [deploying updates using Configuration Manager](htt
 So once the devices have received the information to switch the channel and an update detection cycle is performed, these devices will download the delta update sources for Monthly Enterprise Channel, extract them locally and apply them. If Office applications are open, those must be closed to apply the update. The regular mechanism of Configuration Manager applies to decide if an update is enforced or the user can postpone the disruption.
 With the next [Hardware Inventory cycle](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) the device will sent up the new channel information to the Configuration Manager infrastructure. With the next evaluation cycle, device membership for dynamic collection will be recalculated and the devices will be removed from the old collection and added to the matching one:
 
+(SCREENSHOT)
+
 ## Notes
 
 - Make sure to use the most recent version of the Office Deployment Tool, so the tool supports the Monthly Enterprise Channel.
-- If you have a group policy applied to the device which sets the “Update Channel”, this will overrule the Office Deployment tool. So in this case the device will not do a channel change, unless you remove the GPO setting or adjust the GPO itself. Make sure to have the latest ADMX template deployed to have the Monthly Enterprise Channel available as an option to select.
+- If you have a group policy applied to the device which sets the “Update Channel”, this will overrule the Office Deployment tool. So in this case the device will not do a channel change, unless you remove the GPO setting or adjust the GPO itself. Make sure to have the latest [ADMX template](https://www.microsoft.com/en-us/download/details.aspx?id=49030) deployed to have the Monthly Enterprise Channel available as an option to select.
 - Configuration Manager will only apply updates onto a device if the targeted build version is higher than the currently installed. Moving devices from Semi-Annual Enterprise or Semi-Annual Enterprise (Preview) channel to Monthly Enterprise just works. If you want to move devices from Current Channel to Monthly Enterprise, you have two options:
     - After the device received the intent to switch channel, it will not apply Current Channel updates anymore. Once the MEC build passed the installed Current Channel build, devices will switch.
     - Detach devices from Configuration Manager as the update source by disabling the Office COM Management interface. This is a major change and must be planned and executed with caution.
 - If the configuration of a device is changed, there are two timers which are relevant on the Configuration Manager side:
-    - First, the device must upload the Hardware Inventory which includes the information about the selected update channel.
+    - First, the device must upload the [Hardware Inventory](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) which includes the information about the selected update channel.
     - Second, the Configuration Manager infrastructure must re-calculate the memberships of the collections in question.
