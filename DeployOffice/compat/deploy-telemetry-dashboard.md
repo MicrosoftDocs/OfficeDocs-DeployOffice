@@ -113,13 +113,7 @@ Each computer on which you install the processors and database must also run the
 
 We recommend the following operating systems for computers that run the processor:
 
- **For production environments:** For best performance, we recommend these operating systems: 
-
-- Windows Server 2016
-
-- Windows Server 2012 R2
-
-- Windows Server 2012
+ **For production environments:** For best performance, we recommend you use a supported version of Windows Server, such as Windows Server 2019.
 
 **For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
