@@ -73,14 +73,14 @@ Follow these steps to create a dynamic collection that will add devices based on
 
    The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
 
-   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes_DynCollection_1.png)
+   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes-dyncollection-1.png)
 
 7. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 8. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
 Repeat these steps for each update channel that you want to be captured in a separate collection. The result will look like this:
 
-![Screenshot from Configuration Manager showing three collections](../images/fieldnotes_DynCollection_2.png)
+![Screenshot from Configuration Manager showing three collections](../images/fieldnotes-dyncollection-2.png)
 
 ## Implement a collection that catches all devices running Microsoft 365 Apps
 
@@ -111,7 +111,7 @@ After you create collections for the update channels that you support, you might
 3. Select **Add Rule** and choose **Include Collections**. Select the collection that you created to catch all devices running Microsoft 365 Apps. Select **OK**.
 4. Select **Add Rule** again and choose **Select Exclude Collections**. Select the collections you created that catch devices on supported update channels. Select **OK**.
 
-   ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes_DynCollection_3.png)
+   ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes-dyncollection-3.png)
 
 5. Select **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
