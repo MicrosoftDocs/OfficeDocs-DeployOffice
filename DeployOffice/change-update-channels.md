@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
+- M365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
 ---
