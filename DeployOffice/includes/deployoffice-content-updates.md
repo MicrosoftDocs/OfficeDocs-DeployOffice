@@ -114,3 +114,16 @@
 | 9/25/2020 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
 | 9/25/2020 | [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/DeployOffice/upgrade-from-msi-version) | modified |
 | 9/25/2020 | [Overview of the update process for Microsoft 365 Apps](/DeployOffice/overview-update-process-microsoft-365-apps) | modified |
+
+
+## Week of September 28, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/28/2020 | [Deploy Office Telemetry Dashboard](/DeployOffice/compat/deploy-telemetry-dashboard) | modified |
+| 9/28/2020 | [Changes to update channels for Microsoft 365 Apps](/DeployOffice/update-channels-changes) | modified |
+| 9/30/2020 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
+| 9/30/2020 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
+| 9/30/2020 | [Optional diagnostic data for Office](/DeployOffice/privacy/optional-diagnostic-data) | modified |
+| 10/1/2020 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
