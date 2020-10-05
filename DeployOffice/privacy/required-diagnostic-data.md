@@ -11864,8 +11864,6 @@ Event triggered when summary page is loaded. This event helps us in capturing th
 
 The following fields are collected:
 
-- **PageURL**- This is URL of page which we can use to identify if session was successful or some error happened.
-
 - **PayloadCreationTime** – This is the time taken in milliseconds to create payload. 
 
 - **PostUrlCallTime** – This is the time taken in milliseconds to send the post Url call. 
