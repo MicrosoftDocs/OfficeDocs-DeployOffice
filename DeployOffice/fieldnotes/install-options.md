@@ -106,7 +106,7 @@ Disadvantages:
 - Customer may need to adopt other technologies like DFS-R and DFS-N to replicate content to file shares globally to remote sites.
 - No caching technology available to reduce network impact.
 
-## Self-install from the portal 
+## Self-install from the portal
 
 Advantages:
 - The most direct and simple method of installing Microsoft 365 Apps.
@@ -114,3 +114,8 @@ Advantages:
 Disadvantages:
 - Requires end-user administrator permissions to install.
 - Does not permit advanced customization of the installation with the configuration file.
+
+## Related topics
+
+[Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)
+[Right-sizing your initial deployment](right-sizing-initial-deployment.md)
