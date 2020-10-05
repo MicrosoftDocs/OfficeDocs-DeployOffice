@@ -110,37 +110,37 @@ Information regarding the users consent for diagnostic data and connected experi
 
 This category contains the following fields:
 
-  - **UserCategory –** Identified the type of user who made the consent. One of MSAUser, AADUser or LocalDeviceUser
-
-  - **DiagnosticConsentLevel** – Indicates what level of diagnostic data consent the user has given
-
-  - **DiagnosticConsentSourceLocation** – Indicates how the user had provided the consent for diagnostic data
-
-  - **DiagnosticConsentConsentTime** – Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
-
-  - **ServiceConnectionState** – Indicates whether the user has chosen to use or not use all connected experiences
-
-  - **ServiceConnectionStateSourceLocation** – Indicates how the user provided the choice whether to use all connected experiences
-
-  - **ServiceConnectionStateConsentTime** – Indicates when the user chose whether to use all connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+  - **ControllerConnectedServicesSourceLocation** – Indicates how the user's choice for optional connected experiences was made
 
   - **ControllerConnectedServicesState** – Indicates whether the user has access to optional connected experiences
 
-  - **ControllerConnectedServicesStateSourceLocation** – Indicates how the user's choice for optional connected experiences was made
-
   - **ControllerConnectedServicesStateConsentTime** – Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
-  - **UserContentDependentState** – Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+  - **DiagnosticConsentConsentTime** – Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
-  - **UserContentDependentStateSourceLocation** – Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+  - **DiagnosticConsentLevel** – Indicates what level of diagnostic data consent the user has given
 
-  - **UserContentDependentStateConsentTime** – Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+  - **DiagnosticConsentLevelSourceLocation** – Indicates how the user had provided the consent for diagnostic data
+
+  - **DownloadContentSourceLocation** – Indicates how the user made the choice to enable or disable connected experiences that that download online content
 
   - **DownloadContentState** – Indicates whether the user has chosen to enable or disable connected experiences that download online content
 
-  - **DownloadContentStateSourceLocation** – Indicates how the user made the choice to enable or disable connected experiences that that download online content
-
   - **DownloadContentStateConsentTime** – Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+  - **ServiceConnectionState** – Indicates whether the user has chosen to use or not use all connected experiences
+
+  - **ServiceConnectionStateConsentTime** – Indicates when the user chose whether to use all connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+  - **ServiceConnectionStateSourceLocation** – Indicates how the user provided the choice whether to use all connected experiences
+
+  - **UserCategoryValue –** Identified the type of user who made the consent. One of MSAUser, AADUser or LocalDeviceUser
+
+  - **UserContentDependentSourceLocation** – Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
+
+  - **UserContentDependentState** – Indicates whether the user has chosen to enable or disable connected experiences that analyze content
+
+  - **UserContentDependentStateConsentTime** – Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
 
 #### Device 
 
@@ -194,7 +194,15 @@ This category contains the following fields:
 
   - **MeasuresEnabled** - Flag indicating if the current sessions data is sampled or not. Allows us to determine how to statistically evaluate the data that is gathered from the given session.
 
-  - **SamplingClientId** - The id of the client used to determine if it is part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
+  - **SamplingClientIdValue** - The id of the client used to determine if it is part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
+  
+ - **SubAppName** - For Office Mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field will report the value of “Word”.
+
+ - **VirtualizationType** - Type of virtualization if Office is running in one. The possible values are: 
+    - 0 = None
+    - 1 = Windows Virtual Desktop
+    - 2 = Windows Defender Application Guard
+    - 3 = Windows Core OS
 
 #### User
 
@@ -402,25 +410,25 @@ This category contains the following fields:
 
   - **DisableTelemetry** - Flag indicating if the DisableTelemetry key is set. Allows us to know if a session was not reporting diagnostic data other than EssentialServiceMetadata.
 
-  - **SamplingKey** - The key used to determine whether the session is sampled or not. Allows us to understand how individual sessions are making their choice of whether they are sampled or not.
-
-  - **SamplingMethod** - The method used to determine sampling policy. Allows us to understand what data is coming from a session.
-
-  - **Sequence** - A unique numeric identifier for the session. Allows the ordering of sessions for analysis of the issues might have occurred.
-
-  - **Start** - The boot time of the process session. Allows us to establish when the session started.
-
-  - **TimeZoneBiasInMinutes** - The difference in minutes between UTC and the local time. Allows normalization of UTC times back to the local time.
-
   - **SamplingClientIdValue** - The value of the key used to determine sampling. Allows us to determine why a session was sampled or not.
 
   - **SamplingDeviceIdValue** - The value of the key used to determine sampling. Allows us to determine why a session was sampled or not.
+
+  - **SamplingKey** - The key used to determine whether the session is sampled or not. Allows us to understand how individual sessions are making their choice of whether they are sampled or not.
+
+  - **SamplingMethod** - The method used to determine sampling policy. Allows us to understand what data is coming from a session.
 
   - **SamplingSessionKValue** - Advanced sampling metadata. Used to help evaluate statistical meaning of data that is received.
 
   - **SamplingSessionNValue** - Advanced sampling metadata. Used to help evaluate statistical meaning of data that is received.
 
+  - **Sequence** - A unique numeric identifier for the session. Allows the ordering of sessions for analysis of the issues might have occurred.
+
+  - **Start** - The boot time of the process session. Allows us to establish when the session started.
+
   - **TelemetryPermissionLevel** - Value indicating what level of diagnostic data the user has opted into. Allows us to understand what level of diagnostic data to expect from a session.
+
+  - **TimeZoneBiasInMinutes** - The difference in minutes between UTC and the local time. Allows normalization of UTC times back to the local time.
 
 ## Data fields that are common for OneNote events
 
