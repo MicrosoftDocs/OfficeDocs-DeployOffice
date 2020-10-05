@@ -59,7 +59,7 @@ Next step is to deploy an application which instructs the client to perform a ch
 ```
 3. Create an application on Configuration Manager, following your regular process. Do not use the Office Installation Wizard, as we do not need a full configuration file and no source files. A few notes:
     - The command line is **setup.exe /configure switch_to_MEC.xml**. Adjust the name of the configuration file to match yours.
-    - Use the Detection Method shown below. It will check if the intend to switch channels has been injected correctly.
+    - Use the Detection Method shown below. It will check if the intent to switch channels has been injected correctly.
         - **Setting Type**: Registry
          - **Hive**: HKEY_LOCAL_MACHINE
          - **Key**: setup.exe /configure UpdateChannel_MEC.xml
@@ -92,7 +92,7 @@ Follow the regular process of [deploying software updates using Configuration Ma
 
 So once the devices have received the information to switch the channel and an update detection cycle is performed, these devices will download the delta update sources for Monthly Enterprise Channel, extract them locally and apply them. If Office applications are open, those must be closed to apply the update. The regular mechanism of Configuration Manager applies to decide if an update is enforced or the user can postpone the installation.
 
-With the next [Hardware Inventory cycle](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) the device will sent up the new channel information to the Configuration Manager infrastructure. With the next evaluation cycle, device membership for dynamic collection will be recalculated and the devices will be removed from the old collection and added to the matching one:
+With the next [Hardware Inventory cycle](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) the device will send up the new channel information to the Configuration Manager infrastructure. With the next evaluation cycle, device membership for dynamic collection will be recalculated and the devices will be removed from the old collection and added to the matching one:
 
 ![Screenshot from Configuration Manager collections with devices moved from one to another collection](../images/fieldnotes_movemeccm_4.png)
 
