@@ -21,3 +21,4 @@
 ### [Required service data](required-service-data.md)
 
 ## [Essential services](essential-services.md)
+## [In-product recommendations](in-product-recommendations.md)
