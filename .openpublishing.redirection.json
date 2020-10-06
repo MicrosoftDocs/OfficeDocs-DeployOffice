@@ -629,6 +629,11 @@
       "source_path": "DeployOffice/frp/sync-accounts.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/delay-feature-updates-semi-annual-channel.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options#targetversion-attribute-part-of-updates-element",
+      "redirect_document_id": false
     }
   ]
 }
