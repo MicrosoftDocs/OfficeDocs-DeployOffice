@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
+- M365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ---
