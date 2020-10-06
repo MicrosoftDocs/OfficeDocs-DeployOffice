@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- M365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 description: "This article lists the new tools, content, and processes for IT Pros deploying Office."
 ---
