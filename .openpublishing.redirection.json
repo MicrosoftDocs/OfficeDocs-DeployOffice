@@ -547,7 +547,7 @@
     },
     {
       "source_path": "DeployOffice/delay-receiving-feature-updates-from-deferred-channel-for-office-365-proplus.md",
-      "redirect_url": "https://docs.microsoft.com/deployoffice/delay-feature-updates-semi-annual-channel",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options#targetversion-attribute-part-of-updates-element",
       "redirect_document_id": true
     },
     {
