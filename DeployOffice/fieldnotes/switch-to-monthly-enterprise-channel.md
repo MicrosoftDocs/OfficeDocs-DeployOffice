@@ -1,5 +1,5 @@
 ---
-title: Switch to Monthly Enterprise Channel with  Configuration Manager
+title: Switch to Monthly Enterprise Channel with Configuration Manager
 author: manoth-msft
 ms.author: manoth
 manager: laurawi
