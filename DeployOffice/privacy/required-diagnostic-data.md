@@ -8994,7 +8994,7 @@ The following fields are collected:
  
 - **ActivationType** - Integer value mapping to the source of activation
   
-- **IsActionTriggered** - Boolean value determing whether the action got triggered after the successful activation of the app.
+- **IsActionTriggered** - Boolean value determining whether the action got triggered after the successful activation of the app.
 
 - **IsFirstRun** - Boolean value determining whether it was the first run of the app or a subsequent run.
  
@@ -13568,7 +13568,7 @@ The following fields are collected:
 
 #### Office.ServiceabilityManager.OfficeSvcMgrProfile
 
-This event is triggered when Office Serviceability Manager starts, and is critical for providing accurate insights related to Deployment Status and Application and Add-in crashes within customer's tenant by allowing us to generate insights for the IT Admin to be able to confidently roll-out updates for their enterprise machines.  
+This event is triggered when Office Serviceability Manager starts, and is critical for providing accurate insights related to Deployment Status and Application and Add-in crashes within customer's tenant by allowing us to generate insights for the IT Admin to be able to confidently roll out updates for their enterprise machines.  
 
 The following fields are collected:
 
