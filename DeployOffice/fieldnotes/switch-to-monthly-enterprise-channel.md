@@ -42,7 +42,7 @@ For the admin there are three actions to take:
 We recommend implementing [dynamic collections tailored for Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md) to group devices by update channel automatically. This allows easy targeting, e.g. if you want to move all devices running Semi-Annual Enterprise Channel to Monthly Enterprise Channel. Of course, you can also group devices in a collection manually, e.g. if you want to move only a subset of users or a pilot group first.
 When using the dynamic collections, they might look like this before you start moving devices:
 
-![Screenshot from Configuration Manager showing three collections](../images/fieldnotes_movemeccm_1.png)
+![Screenshot from Configuration Manager showing three collections](../images/fieldnotes/move-mec-w-configmgr-1.png)
 
 The benefit of using dynamic collections is that devices will automatically switch between the collections based on the currently installed update channel. This allows you to target devices easier and monitor progress at a glance.
 
@@ -74,7 +74,7 @@ Next step is to deploy an application which instructs the client to perform a ch
 
 After the configuration of the device has been updated by the deployed application, the actual channel change must still be performed. With the next update cycle, the Click-To-Run service on the device will detect the pending channel change and try to download and apply the update from the targeted channel. At this stage, the device is still on e.g. Semi-Annual Enterprise Channel, but needs to be able to fetch the Microsoft 365 Apps Update for Monthly Enterprise Channel:
 
-![Screenshot from Configuration Manager showing two Microsoft 365 Apps Updates from Monthly Enterprise Channel](../images/fieldnotes_movemeccm_2.png)
+![Screenshot from Configuration Manager showing two Microsoft 365 Apps Updates from Monthly Enterprise Channel](../images/fieldnotes/move-mec-w-configmgr-2.png)
 
 So, in most cases you want to deploy the Microsoft 365 Apps Updates for both channels to a collection holding the targeted devices:
 
@@ -86,7 +86,7 @@ So, in most cases you want to deploy the Microsoft 365 Apps Updates for both cha
 
 A common practice is to have a [dynamic collection which catches all devices running Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md). You can then deploy the Microsoft 365 Apps Updates for all channels supported by your organization to this collection and each device will fetch the matching update. At the same time devices changing the channel have access to the targeted one.
 
-![Screenshot from Configuration Manager showing updates from different channels deployed to the same collection](../images/fieldnotes_movemeccm_3.png)
+![Screenshot from Configuration Manager showing updates from different channels deployed to the same collection](../images/fieldnotes/move-mec-w-configmgr-3.png)
 
 Follow the regular process of [deploying software updates using Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/deploy-software-updates), we recommend using [Automatic Deployment Rules](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/automatically-deploy-software-updates).
 
@@ -94,7 +94,7 @@ So once the devices have received the information to switch the channel and an u
 
 With the next [Hardware Inventory cycle](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) the device will send up the new channel information to the Configuration Manager infrastructure. With the next evaluation cycle, device membership for dynamic collection will be recalculated and the devices will be removed from the old collection and added to the matching one:
 
-![Screenshot from Configuration Manager collections with devices moved from one to another collection](../images/fieldnotes_movemeccm_4.png)
+![Screenshot from Configuration Manager collections with devices moved from one to another collection](../images/fieldnotes/move-mec-w-configmgr-4.png)
 
 ## Notes
 
