@@ -579,6 +579,56 @@
       "source_path": "DeployOffice/feedback.md",
       "redirect_url": "https://techcommunity.microsoft.com/t5/microsoft-365-apps-for/bd-p/Microsoft365Apps",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/assess-network.md",
+      "redirect_url": "https://docs.microsoft.com/office365/enterprise/office-365-networking-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/assign-licenses.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/add-users/add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/choose-settings.md",
+      "redirect_url": "https://config.office.com/officeSettings/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/create-support-group.md",
+      "redirect_url": "https://adoption.microsoft.com/microsoft-365/#build-champions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/deploy-Office.md",
+      "redirect_url": "https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/get-insights.md",
+      "redirect_url": "https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/plan-updates.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/overview-update-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/request-admin-access.md",
+      "redirect_url": "https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/streamline-addins.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/readiness-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/frp/sync-accounts.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization",
+      "redirect_document_id": false
     }
   ]
 }
