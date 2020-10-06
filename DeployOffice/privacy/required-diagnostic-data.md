@@ -5707,7 +5707,7 @@ The following fields are collected:
 - **LAUNCH_REASON** - Indicates the flow under which OfficeLens was launched. It could be over the lock screen or via Camera or Gallery options in StickyNotes or via OneNote Canvas etc.
 
 
-#### Office.OneNote.StickyNotes.NoteCreated
+#### Office.OneNote.Android.StickyNotes.NoteCreated
  
 Critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.   Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
 
