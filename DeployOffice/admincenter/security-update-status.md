@@ -12,7 +12,7 @@ hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps security currency within their environment"
 ---
 
-# Security Currency
+# Overview of the security update status report in the Microsoft 365 Apps admin center
 
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
