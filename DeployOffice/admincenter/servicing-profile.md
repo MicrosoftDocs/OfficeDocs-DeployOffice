@@ -16,11 +16,27 @@ description: "Provides Office admins information about the servicing profile in 
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-You can use servicing profile in the Microsoft 365 Apps admin center to automate Office updates for your devices. When you apply the servicing profile to a device, the following changes occur:
+Streamlined and automated Microsoft 365 Apps servicing helps you reduce the burden of manual deployments and accelerate the rollout of the latest productivity features. With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled rollouts based on whether devices meet specific success criteria. 
+
+You can apply a servicing profile in the Microsoft 365 Apps admin center. When you apply the profile, the following changes occur:
 
 - The device is moved to the Monthly Enteprise Channel
 - Updates to the device come from the Office Content Delivery Network (CDN)
 
+Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. In the servicing profile pane, you can investigate and resolve update issues, pause updates, and restore devices to a previous update. You can also set deadlines for updates to be installed and dates on which updates should not be installed.
+
+Requirements:
+- Microsoft 365 Apps for enterprise, Version 2007 or later
+- A version of Windows 10 supported by Microsoft 365 Apps for enterprise
+ 
+## How to apply the servicing profile to a device
+
+1. Go to the [Microsoft 365 Apps admin center](https://config.office.com) and click **Servicing** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+2.  
+
+
+
+ the servicing profile can be managed  
  
 Here's what happens when you move selected devices to the Monthly Enterprise Channel and streamline the management of those devices. Here's When you apply the servicing profile to a device a device to the servicing profile,  , you can automate updates for Microsoft 365 Apps by moving your streamline your  select which devices to move to the Monthly add devices to a servicing profile to moveYou can use servicing profile to move You can apply a servicing profile to an app The servicing profile automates the monthly updates for Office apps while providing you with control.   Apps will be updated from the Office CDN and be placed on the Monthly Enterprise Channel. The setup wizard will walk you through the process of selecting devices that you would like to add to the profile along with other settings like update deadline and update exclusion dates
 The Servicing Profile getting started page provides information about the devices in Inventory including the number of devices meeting the following criteria:
