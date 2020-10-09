@@ -13,9 +13,7 @@ description: "Provides recommendations, information, and links to help administr
 
 # Office 2010 end of support roadmap
 
-Office 2010 will reach its end of support on October 13, 2020. If you haven't already begun to upgrade your Office 2010 environment, we recommend you start now.
-
-Also, support for Windows 7 ended on January 14, 2020. Even though Office 2010 is still supported until October, Windows 7 will no longer receive security updates after January 2020, unless you purchase Extended Security Updates (ESU). Without ESU, Windows 7 is vulnerable to security threats. For more information, see the [Windows 7 end of support site](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support) and [FAQ about Extended Security Updates for Windows 7](https://support.microsoft.com/help/4527878/faq-about-extended-security-updates-for-windows-7).
+Office 2010 reached its end of support on October 13, 2020. If you haven't already begun to upgrade your Office 2010 environment, we recommend you start now.
   
 This article provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps.
   
@@ -27,7 +25,7 @@ We also recommend business and enterprise customers use the deployment benefits 
   
 ## What does end of support mean?
 
-Office 2010, like almost all Microsoft products, has a support lifecycle during which we provide bug fixes and security fixes. This lifecycle lasts for a certain number of years from the date of the product's initial release. For Office 2010, the support lifecycle is 10 years. The end of this lifecycle is known as the product's end of support. When Office 2010 reaches its end of support on October 13, 2020, Microsoft will no longer provide the following:
+Office 2010, like almost all Microsoft products, has a support lifecycle during which we provide bug fixes and security fixes. This lifecycle lasts for a certain number of years from the date of the product's initial release. For Office 2010, the support lifecycle is 10 years. The end of this lifecycle is known as the product's end of support. Office 2010 reached its end of support on October 13, 2020, and Microsoft no longer provides the following services:
   
 - Technical support for issues
     
@@ -35,11 +33,11 @@ Office 2010, like almost all Microsoft products, has a support lifecycle during 
     
 - Security fixes for vulnerabilities that are discovered
     
-Because of the changes listed above, we strongly recommend that you upgrade as soon as possible.
+Because of these changes, we strongly recommend that you upgrade as soon as possible.
   
 ## What are my options?
 
-With Office 2010 reaching its end of support, this is a good time to explore your options and prepare an upgrade plan to either of these latest versions of Office: 
+Because Office 2010 has reached its end of support, you should explore your options and prepare an upgrade plan to either of these latest versions of Office: 
   
 - Microsoft 365 Apps, the subscription version of Office that comes with many Office 365 (and Microsoft 365) enterprise and business plans.
     
@@ -69,9 +67,9 @@ For information about the new features available in Microsoft 365 Apps, see [Wha
   
 ## Review the system requirements for Microsoft 365 Apps
 
-Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-resources).
+Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
-In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://products.office.com/office-resources).
+In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
 ## Plan for Office 365
 
@@ -83,11 +81,11 @@ Before deploying Microsoft 365 Apps, you may want to test your business-critical
   
 To help with assessing application compatibility with Microsoft 365 Apps, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
+You can [download the Readiness Toolkit](https://www.microsoft.com/download/details.aspx?id=55983) for free from the Microsoft Download Center. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
   
 ## Assess your infrastructure and environment
 
-To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrastructure and environment, including the following:
+To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrastructure and environment, including the following areas:
   
 - Number and distribution of your clients, including required languages.
     
@@ -103,7 +101,7 @@ Your assessment of these components will influence how you want to upgrade. For 
 
 As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy settings. All Group Policy settings for Microsoft 365 Apps are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
   
-You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Microsoft 365 Apps from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030) for free. The download includes an Excel file that lists all the Group Policy settings for Microsoft 365 Apps. 
+You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy settings for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the Group Policy settings for Microsoft 365 Apps. 
   
 ## Choose how you want to deploy Microsoft 365 Apps
 
@@ -131,13 +129,13 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
   
  **Removal of InfoPath from Microsoft 365 Apps**. InfoPath 2013 remains the current version and therefore isn't included in Microsoft 365 Apps. When you upgrade an existing installation of Office 2010 to Microsoft 365 Apps, InfoPath is removed from the computer. If your users still need to use InfoPath, the 2013 version of InfoPath is available for installation on the Software page in the Office 365 portal. 
   
-## Related topics
+## Related articles
 
 - For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md).
     
 - To find out more about upgrading from Office 2010 servers, see [Resources to help you upgrade from Office 2010 servers and clients](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products).
     
-- For more information about Office 365 (and Microsoft 365) plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
+- For more information about Office 365 (and Microsoft 365) plans, see [Microsoft 365 and Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
 - For more information about the support lifecycle for Microsoft products, see [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
 
