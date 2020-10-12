@@ -16,9 +16,7 @@ description: "Provides Office admins information about the servicing profile in 
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled roll-outs based on whether devices meet specific criteria. 
-
-You can apply a servicing profile to a set of devices in the Microsoft 365 Apps admin center. When you apply the profile, the following changes occur:
+Servicing profiles let you automatically deliver monthly Office updates for specific users or groups. You can apply a servicing profile to a set of devices in the Microsoft 365 Apps admin center. When you apply the profile, the following changes occur:
 
 - The devices are moved to the Monthly Enterprise Channel
 - Updates to the device come from the Office Content Delivery Network (CDN)
@@ -36,7 +34,7 @@ Requirements:
 
 1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Servicing profile**. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You can apply the servicing profile based on a device's servicing channel, available disk space, macro usage, add-ins, and name.
-3. When you complete the wizard, the listed devices will have the servicing profile applied within 24 hours.
+3. When you complete the wizard, the listed devices will have the servicing profile applied within 2 hours.
 
 ## Using the Servicing Profile
 
