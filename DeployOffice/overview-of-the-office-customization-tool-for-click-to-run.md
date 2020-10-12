@@ -10,7 +10,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 ms.assetid: 
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
