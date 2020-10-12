@@ -127,3 +127,36 @@
 | 9/30/2020 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
 | 9/30/2020 | [Optional diagnostic data for Office](/DeployOffice/privacy/optional-diagnostic-data) | modified |
 | 10/1/2020 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
+
+
+## Week of October 05, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/5/2020 | [Choose how to install Microsoft 365 Apps (Office 365 ProPlus)](/DeployOffice/fieldnotes/install-options) | modified |
+| 10/5/2020 | [About Microsoft 365 Apps in the enterprise](/DeployOffice/about-microsoft-365-apps) | modified |
+| 10/5/2020 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
+| 10/5/2020 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
+| 10/5/2020 | [Delivery Optimization and Microsoft 365 Apps](/DeployOffice/delivery-optimization) | modified |
+| 10/5/2020 | [Deploy Microsoft 365 Apps from the cloud](/DeployOffice/deploy-microsoft-365-apps-cloud) | modified |
+| 10/5/2020 | [Overview of the Office Customization Tool](/DeployOffice/overview-of-the-office-customization-tool-for-click-to-run) | modified |
+| 10/5/2020 | [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/DeployOffice/overview-office-cloud-policy-service) | modified |
+| 10/5/2020 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/overview-update-channels) | modified |
+| 10/5/2020 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
+| 10/5/2020 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
+| 10/5/2020 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
+| 10/6/2020 | Assess network and firewall settings | removed |
+| 10/6/2020 | Assign licenses for Office 365 ProPlus | removed |
+| 10/6/2020 | Choose update and language settings for deploying Office 365 ProPlus | removed |
+| 10/6/2020 | Create self-support group in Teams (or Yammer) | removed |
+| 10/6/2020 | Pilot or deploy Office 365 ProPlus to high-confidence devices | removed |
+| 10/6/2020 | Get Office compatibility insights for the company | removed |
+| 10/6/2020 | Plan for ongoing updates to Office 365 ProPlus | removed |
+| 10/6/2020 | Request delegated admin access | removed |
+| 10/6/2020 | Streamline Office add-ins to simplify deployment | removed |
+| 10/6/2020 | Configure Azure Active Directory to sync user accounts | removed |
+| 10/6/2020 | Delay receiving feature updates from Semi-Annual Channel for Microsoft 365 Apps | removed |
+| 10/6/2020 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 10/6/2020 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
+| 10/6/2020 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
