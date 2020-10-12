@@ -43,7 +43,7 @@ For more information, see [Overview of the Office Customization Tool](../overvie
 
 ## What's new in preview
 
-The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, click a preview feature and accept the license.
+The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, click a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
 
 > Preview features aren't available to everyone and are subject to change.
 
