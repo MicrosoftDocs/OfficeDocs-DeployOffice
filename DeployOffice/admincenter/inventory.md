@@ -39,7 +39,7 @@ The inventory view gives you insights across the devices in your organization, i
 
 ## Device view
 
-The device view shows detailed information on devices that are managed as part of the servicing profile. This informaiton includes the following:
+The device view shows detailed information on devices, including the following:
 
 |**Item**|**Description**|
 |:-----|:-----|

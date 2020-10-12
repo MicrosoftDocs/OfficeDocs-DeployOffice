@@ -57,7 +57,7 @@ You can use the inventory page to see information about the devices in your orga
 
 ### Security update status
 
-Security update status shows whether the client devices in your organization have been updated with the latest security patch. Requirements: Microsoft 365 Apps for enterprise, Version 2007 or later, and a version of Windows 10 supported by Microsoft 365 Apps for enterprise.
+You can use the security update status page in the Microsoft 365 Apps admin center to see the which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
 
 ### Servicing profile
 
