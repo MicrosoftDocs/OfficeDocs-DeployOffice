@@ -83,7 +83,7 @@ To help with assessing application compatibility with Microsoft 365 Apps, you ca
   
 You can [download the Readiness Toolkit](https://www.microsoft.com/download/details.aspx?id=55983) for free from the Microsoft Download Center. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
-Other resources are also available. For example, if you use Microsoft Endpoint Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance directly from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
+Other resources are also available. For example, if you use Microsoft Endpoint Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
   
 ## Assess your infrastructure and environment
 
