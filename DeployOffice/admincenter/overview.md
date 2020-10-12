@@ -64,4 +64,4 @@ Security update status shows whether the client devices in your organization hav
 > [!IMPORTANT]
 > This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
-For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
+With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled roll-outs based on whether devices meet specific criteria. For more information, see [Overview of servicing profile](servicing-profile.md).
