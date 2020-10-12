@@ -24,7 +24,7 @@ You can apply a servicing profile to a set of devices in the Microsoft 365 Apps 
 - Updates to the device come from the Office Content Delivery Network (CDN)
 - The devices are managed by the servicing profile
 
-Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. You can  investigate and resolve update issues, pause updates, and restore devices to a previous update. You can also set deadlines for updates to be installed and dates on which updates cannot be installed.
+Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. You can  pause updates and investigate and resolve update issues. You can also set deadlines for updates to be installed and dates on which updates cannot be installed.
 
 Requirements:
 - Microsoft 365 Apps for enterprise, Version 2007 or later
