@@ -53,15 +53,12 @@ Microsoft 365 Apps health monitors reliability and performance metrics and provi
 
 ### Inventory
 
-You can use the inventory pane to view details about the client devices in your organization, including hardware, operating system, and the version of Office on the device. Requirements: Microsoft 365 Apps for enterprise, Version 2007 or later, and a version of Windows 10 supported by Microsoft 365 Apps for enterprise.
+You can use the inventory page to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device. For more information, see [Overview of inventory](inventory.md).
 
 ### Security update status
 
 Security update status shows whether the client devices in your organization have been updated with the latest security patch. Requirements: Microsoft 365 Apps for enterprise, Version 2007 or later, and a version of Windows 10 supported by Microsoft 365 Apps for enterprise.
 
 ### Servicing profile
-
-> [!IMPORTANT]
-> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
 With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled roll-outs based on whether devices meet specific criteria. For more information, see [Overview of servicing profile](servicing-profile.md).
