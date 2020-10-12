@@ -61,4 +61,4 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 
 ### Servicing profile
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. You can throttle updates for users where network bandwidth is an issue and you can enable update waves for controlled roll-outs based on whether devices meet specific criteria. For more information, see [Overview of servicing profile](servicing-profile.md).
+With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. For more information, see [Overview of servicing profile](servicing-profile.md).
