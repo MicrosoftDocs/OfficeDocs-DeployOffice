@@ -79,9 +79,11 @@ Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 
 
 Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility). 
   
-To help with assessing application compatibility with Microsoft 365 Apps, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
+To help with assessing application compatibility with Microsoft 365 Apps, you can use the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
   
 You can [download the Readiness Toolkit](https://www.microsoft.com/download/details.aspx?id=55983) for free from the Microsoft Download Center. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
+
+Other resources are also available. For example, if you use Microsoft Endpoint Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance directly from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
   
 ## Assess your infrastructure and environment
 
@@ -105,7 +107,7 @@ You can [download the Administrative Template files (ADMX/ADML)](https://www.mic
   
 ## Choose how you want to deploy Microsoft 365 Apps
 
-You can deploy Microsoft 365 Apps from the cloud, from a local source on your network, or with Microsoft Endpoint Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Microsoft 365 Apps, including which applications and languages are installed on which client computers.
+You can deploy Microsoft 365 Apps from the cloud, from a local source on your network, or with Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, offers more granular control over the deployment of Microsoft 365 Apps, including which applications and languages are installed on which client computers.
   
 For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](../plan-microsoft-365-apps.md). 
   
