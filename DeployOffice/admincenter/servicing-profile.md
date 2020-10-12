@@ -44,7 +44,7 @@ You can see an overview of the devices in the Servicing profile section of the M
 
 ## Devices
 
-Within the devices tab, you can see the update status of these devices, view information on individual devices, and perform quick actions such as restore and pause devices. You can click on the device to view the same information you can view within inventory such as details on the device's hardware, operating system and Microsoft 365 Apps configuration.
+Within the devices tab, you can see the update status of these devices, view information on individual devices, and  pause devices. You can click on the device to view the same information you can view within inventory such as details on the device's hardware, operating system and Microsoft 365 Apps configuration.
 
 ## Actions
 
