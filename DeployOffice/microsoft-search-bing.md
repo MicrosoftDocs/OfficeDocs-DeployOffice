@@ -119,7 +119,7 @@ The following table shows the tentative release schedule for Version 2005 for th
 |---------|---------|---------|
 |Current Channel (Preview) |Version 2005   | May 14, 2020  |
 |Current Channel   | Version 2005  | June 2, 2020  |
-|Monthly Enterprise Channel | *Version 2008*  | *October 13, 2020*   |
+|Monthly Enterprise Channel | Version 2008  | October 13, 2020   |
 |Semi-Annual Enterprise Channel (Preview) | Version 2008  | September 8, 2020  |
 |Semi-Annual Enterprise Channel | *Version 2008*   |*January 12, 2021*   |
 
