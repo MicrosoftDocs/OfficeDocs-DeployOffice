@@ -64,7 +64,7 @@ Whichever deployment method you decide to use, the following information can hel
 
 - **Version numbers** Version numbers of 16.17 or higher for retail or volume licensed installs indicate you have Office 2019 for Mac. Office 2016 for Mac, which is no longer supported, had version numbers of 16.16 or lower. Since the "major" version (16) hasn't changed between Office 2016 for Mac and Office 2019 for Mac, application settings, including policies, preferences, and preference domains are similar between the two versions. Also, add-ins and other extensibility solutions that were compatible with Office 2016 for Mac will most likely be compatible with Office 2019 for Mac or will require minimal testing.
 
-## Upgrading to a newer version of Office for Mac
+## Upgrade to Office for Mac or to Office 2019 for Mac
 
 - **Upgrade to Office for Mac (subscription version):** If you're a volume licensed customer of Office 2016 for Mac or Office 2019 for Mac, you can upgrade to Office for Mac (available with certain Office 365 or Microsoft 365 plans) without uninstalling your current version. First, download and run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193). Second, launch Microsoft AutoUpdate (MAU) and install the latest Office updates. Finally, launch any Office app and sign in with your Office 365 or Microsoft 365 account. For a demo of these steps, and an example of how to automate this process with Jamf Pro, [watch this video](https://www.youtube.com/watch?v=Zwuq_TT9QhU).
 

@@ -16,7 +16,7 @@ description: "Provides admins with links to information about how to deploy Offi
 
 This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office for Mac in their organizations.
 
-There are three versions of Office for Mac that are referred to in this guide:
+There are two versions of Office for Mac that are referred to in this guide:
 - **Office for Mac**, which is available with any Office 365 (or Microsoft 365) plan that includes Office. For example, the Office 365 E5 plan. This version is updated on a regular basis to provide new features. It also receives security and quality updates, as needed.
 - **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
 

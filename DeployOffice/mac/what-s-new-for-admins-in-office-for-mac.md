@@ -18,7 +18,7 @@ description: "Describes changes in Office for Mac that are of interest to admins
 
 Before you deploy Office for Mac to users in your organization, you should be aware of some changes introduced in Office for Mac. These changes might affect how you deploy and manage Office for Mac in your organization.
   
- - **System requirements:** There are some new system requirements to install Office for Mac. See [System requirement for Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for details.
+ - **System requirements:** There are some new system requirements to install Office for Mac. For example, only the three most recent versions of macOS are supported. For more information, see [Upgrade macOS to continue receiving Microsoft 365 and Office for Mac updates](https://support.microsoft.com/office/16b8414f-08ec-4b24-8c91-10a918f649f8). For all the system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for details.
  
  - **App bundles:** The app bundle for each app, such as Word, now includes all the resources needed to run the app. There are no longer any shared resources among the apps, like there were in Office for Mac 2011. For example, the app bundles for Excel for Mac and Word for Mac both contain the font resources needed by the app. Because of this change, the size of the app bundles is larger. 
   
