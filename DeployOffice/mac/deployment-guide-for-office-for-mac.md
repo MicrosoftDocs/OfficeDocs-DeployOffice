@@ -19,10 +19,9 @@ This guide is intended to help administrators and other IT professionals plan, i
 There are three versions of Office for Mac that are referred to in this guide:
 - **Office for Mac**, which is available with any Office 365 (or Microsoft 365) plan that includes Office. For example, the Office 365 E5 plan. This version is updated on a regular basis to provide new features. It also receives security and quality updates, as needed.
 - **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
-- **Office 2016 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed, until October 13, 2020.
 
 > [!IMPORTANT]
-> Support for Office 2016 for Mac ends on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
+> Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
 
  
   
