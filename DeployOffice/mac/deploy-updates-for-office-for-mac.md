@@ -32,7 +32,7 @@ Individual security updates or other updates can't be downloaded and installed. 
   
 Updates work the same for Office for Mac whether you have an Office 365 (or Microsoft 365) plan or you have a retail or volume licensed version.
   
-## Related topics
+## Related articles
 
 - [Update Office for Mac by using msupdate](update-office-for-mac-using-msupdate.md)
 - [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac) and [release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac) for Office for Mac

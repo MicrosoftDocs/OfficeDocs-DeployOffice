@@ -19,9 +19,8 @@ description: "Describes for admins how activation works for Office for Mac, for 
 To use Office for Mac in your organization, it needs to be activated. How you activate Office for Mac depends on whether your organization has an Office 365 (or Microsoft 365) plan or has a volume license agreement. But in both cases your users won't have to enter any product keys.
 
 > [!NOTE]
-> If you're an Office user trying to activate a personal copy of Office for Mac, [follow these instructions](https://support.microsoft.com/office/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.   
+> If you're an Office user trying to activate a personal copy of Office for Mac, [follow these instructions](https://support.microsoft.com/office/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.
 
-   
 ## Activate Office 365 versions of Office for Mac
 
 If your organization has an Office 365 (or Microsoft 365) plan, make sure you [assign each user a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Office before you deploy Office  for Mac to your users. If you don't assign a user a license, you can still deploy Office for Mac to that user, but the user won't be able to activate and use Office. 
@@ -30,7 +29,7 @@ For Office 365 (and Microsoft 365) customers, Office for Mac activates by contac
   
 After you deploy Office for Mac, your users are prompted to activate Office the first time they use it. Make sure users are connected to the internet when they activate Office.
   
-On the **Sign in to Activate Office** screen, users should select **Sign In**, and then enter their email address and password. After they sign in, users may see an alert asking for permission to access the Microsoft identity stored in their keychain. They should select **Allow** or **Always Allow** to continue. 
+On the **Sign in to Activate Office** screen, users should select **Sign In**, and then enter their email address and password. After they sign in, users may see an alert asking for permission to access the Microsoft identity stored in their keychain. They should select **Allow** or **Always Allow** to continue.
   
 While you can deploy Office for Mac for your users, your users need to sign in and activate Office for Mac for themselves. That's to ensure that the Office Licensing Service properly associates Office for Mac with the correct licensed user.
   
@@ -44,11 +43,10 @@ Users can sign into the Office 365 portal to deactivate an existing installation
   
 ## Activate volume licensed versions of Office for Mac
 
-To activate a volume licensed version of Office 2019 for Mac or Office 2016 for Mac, use the Volume License (VL) Serializer. You can download the VL Serializer by signing into the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). You run the VL Serializer on each computer. By doing this, your users won't see any activation prompts when they first open Office 2019 for Mac or Office 2016 for Mac.
+To activate a volume licensed version of Office 2019 for Mac, use the Volume License (VL) Serializer. You can download the VL Serializer by signing into the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). You run the VL Serializer on each computer. By doing this, your users won't see any activation prompts when they first open Office 2019 for Mac.
 
 For more information, see [Overview of the Volume License (VL) Serializer](volume-license-serializer.md).
   
 ## Related articles
   
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
-

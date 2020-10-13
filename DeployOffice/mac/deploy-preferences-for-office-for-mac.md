@@ -35,11 +35,9 @@ defaults write com.microsoft.autoupdate2 HowToCheck Manual
 You can take an existing .plist file and modify it with your organization's preferences. In some cases, you can actually copy that .plist file to other computers in your organization that have Office for Mac installed. But that doesn't work in the case of all .plist files. Therefore, the preferred method is to create a script that incorporates all the defaults commands that you want to use to set preferences. Then deploy that script to your users. The script needs to be run in the user's context, because preferences are user specific. That also means that if several users share the same computer and each has a different login account, then the script needs to be run for each user of that computer.
   
 Depending on which preferences you're configuring and how you deploy those preferences, the user might need to quit all Office apps and restart the computer for the preferences to take effect. Also, remember that the preferences you deploy might overwrite existing preference settings configured by the user.
+
   
-> [!NOTE]
-> Office for Mac 2011, which is no longer supported, also used preference files. There are some preferences in common between Office for Mac and Office for Mac 2011. Therefore, if you install Office for Mac on a computer that has Office for Mac 2011 installed, Office for Mac will automatically inherit some preference settings from the Office for Mac 2011 installation. 
-  
-## Related topics
+## Related articles
 
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
 

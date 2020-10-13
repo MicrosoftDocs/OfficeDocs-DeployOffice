@@ -42,7 +42,7 @@ Here is some additional information about using this preference:
     
 - It's CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
     
-## Related topics
+## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)

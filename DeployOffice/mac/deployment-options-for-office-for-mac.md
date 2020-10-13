@@ -68,8 +68,6 @@ Whichever deployment method you decide to use, the following information can hel
 
 - **Version numbers** Version numbers of 16.17 or higher for retail or volume licensed installs indicate you have Office 2019 for Mac. Office 2016 for Mac has version numbers of 16.16 or lower. Since the "major" version (16) hasn't changed between Office 2016 for Mac and Office 2019 for Mac, application settings, including policies, preferences, and preference domains are similar between the two versions. Also, add-ins and other extensibility solutions that are compatible with Office 2016 for Mac will most likely be compatible with Office 2019 for Mac or will require minimal testing.
 
-- **Office for Mac 2011:** Support for Office for Mac 2011 ended on October 10, 2017. All of your Office for Mac 2011 apps will continue to function. But, you could expose yourself to serious and potentially harmful security risks. To completely remove Office for Mac 2011, [follow these steps](https://support.microsoft.com/office/ba8d8d13-0015-4eea-b60b-7719c2cedd17). 
-
 ## Related articles
 
 - [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
