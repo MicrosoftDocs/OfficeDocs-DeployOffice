@@ -25,7 +25,7 @@ We also recommend business and enterprise customers use the deployment benefits 
   
 ## What does end of support mean?
 
-Office 2007, like almost all Microsoft products, had a support lifecycle during which we provided bug fixes and security fixes. This lifecycle lasts for a certain number of years from the date of the product's initial release. For Office 2007, the support lifecycle was 10 years. The end of this lifecycle is known as the product's end of support. Office 2007 reached its end of support on October 10, 2017, and Microsoft no longer provides the following:
+Office 2007, like almost all Microsoft products, had a support lifecycle during which we provided bug fixes and security fixes. This lifecycle lasts for a certain number of years from the date of the product's initial release. For Office 2007, the support lifecycle was 10 years. The end of this lifecycle is known as the product's end of support. Office 2007 reached its end of support on October 10, 2017, and Microsoft no longer provides the following services:
   
 - Technical support for issues
     
@@ -33,11 +33,11 @@ Office 2007, like almost all Microsoft products, had a support lifecycle during 
     
 - Security fixes for vulnerabilities that are discovered
     
-Because of the changes listed above, we strongly recommend that you upgrade as soon as possible.
+Because of these changes, we strongly recommend that you upgrade as soon as possible.
   
 ## What are my options?
 
-Since Office 2007 has reached its end of support, you should explore your options and prepare an upgrade plan to either of these latest versions of Office:
+Because Office 2007 has reached its end of support, you should explore your options and prepare an upgrade plan to either of these latest versions of Office:
   
 - Microsoft 365 Apps, the subscription version of Office that comes with many Office 365 (and Microsoft 365) enterprise and business plans.
     
@@ -67,9 +67,9 @@ For information about the new features available in Microsoft 365 Apps, see [Wha
   
 ## Review the system requirements for Microsoft 365 Apps
 
-Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://products.office.com/office-resources).
+Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
-In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://products.office.com/office-resources).
+In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](https://docs.microsoft.com/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
 ## Plan for Office 365
 
@@ -79,13 +79,15 @@ Because Microsoft 365 Apps comes with many enterprise Office 365 (and Microsoft 
 
 Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
   
-To help with assessing application compatibility with Microsoft 365 Apps, we recommend using the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
+To help with assessing application compatibility with Microsoft 365 Apps, you can use the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps. 
   
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
+You can [download the Readiness Toolkit](https://www.microsoft.com/download/details.aspx?id=55983) for free from the Microsoft Download Center. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
+
+Other resources are also available. For example, if you use Microsoft Endpoint Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
   
 ## Assess your infrastructure and environment
 
-To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrastructure and environment, including the following:
+To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrastructure and environment, including the following areas:
   
 - Number and distribution of your clients, including required languages.
     
@@ -101,7 +103,7 @@ Your assessment of these components will influence how you want to upgrade. For 
 
 As with any new version of Office, there are new Administrative Template files (ADMX/ADML) for Group Policy settings. All Group Policy settings for Microsoft 365 Apps are now located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
   
-You can download the Administrative Template files (ADMX/ADML) for Group Policy settings for Microsoft 365 Apps from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030) for free. The download includes an Excel file that lists all the Group Policy settings for Microsoft 365 Apps. 
+You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy settings for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the Group Policy settings for Microsoft 365 Apps. 
   
 ## Choose how you want to deploy Microsoft 365 Apps
 
@@ -129,13 +131,13 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
   
  **Removal of InfoPath from Microsoft 365 Apps**. InfoPath 2013 remains the current version and therefore isn't included in Microsoft 365 Apps. When you upgrade an existing installation of Office 2007 to Microsoft 365 Apps, InfoPath is removed from the computer. If your users still need to use InfoPath, the 2013 version of InfoPath is available for installation on the Software page in the Office 365 portal. 
   
-## Related topics
+## Related articles
 
 - For articles about planning, deploying, and managing Microsoft 365 Apps in an enterprise environment, see [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md).
     
 - To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 servers and clients](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products).
     
-- For more information about Office 365 (and Microsoft 365) plans, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
+- For more information about Office 365 (and Microsoft 365) plans, see [Microsoft 365 and Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
     
 - For more information about the support lifecycle for Microsoft products, see [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
 

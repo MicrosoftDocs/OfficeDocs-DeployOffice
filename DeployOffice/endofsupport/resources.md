@@ -25,9 +25,6 @@ The following table shows upcoming end of support events that affect Office that
 
 |End of support event  |Date |More information|
 |---------|---------|---------|
-|Office 2010 | October 13, 2020 |[Office 2010 end of support roadmap](office-2010-end-support-roadmap.md) |
-|Office 2016 for Mac | October 13, 2020 | [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056) |
-|Office 2013 connectivity to Office 365 services|October 13, 2020|[Office versions and connectivity to Office 365 services](office-365-services-connectivity.md)|
 |Internet Explorer 11 with Microsoft 365|August 17, 2021|[Microsoft 365 apps say farewell to Internet Explorer 11](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)|
 
 
@@ -37,6 +34,9 @@ The following table shows recent end of support events that affect Office along 
 
 |End of support event   |End of support date |More information|
 |---------|---------|---------|
+|Office 2010 | October 13, 2020 |[Office 2010 end of support roadmap](office-2010-end-support-roadmap.md) |
+|Office 2016 for Mac | October 13, 2020 | [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056) |
+|Office 2013 connectivity to Office 365 services|October 13, 2020|[Office versions and connectivity to Office 365 services](office-365-services-connectivity.md)|
 |Windows 7|January 14, 2020|[Windows 7 end of support and Microsoft 365 Apps](windows-7-support.md)|
 |Windows Server 2008 R2| January 14, 2020|[Windows Server end of support and Microsoft 365 Apps](windows-server-support.md) |
 |Microsoft 365 Apps on Windows Server 2012| January 14, 2020|[Windows Server end of support and Microsoft 365 Apps](windows-server-support.md) |
@@ -58,7 +58,7 @@ We provide various services to help you upgrade to subscription versions of the 
 
 ## Other resources
 
-- **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://products.office.com/office-resources).
+- **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 - **Office configuration support matrix** For a printable chart showing end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 

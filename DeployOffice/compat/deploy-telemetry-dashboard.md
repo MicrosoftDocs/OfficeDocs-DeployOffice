@@ -209,6 +209,9 @@ The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2
 
 - Office 2010
 
+> [!NOTE]
+> Office 2003, Office 2007, and Office 2010 are no longer supported.
+
 For computers that are running Office 2013 and you have the Office 2013 agent installed on the computer, there are several additional considerations:
 
 - You can monitor computers running Office 2013 from the Office 2019 or Office 2016 Office Telemetry Dashboard. In order for this to work, the computer must also be running the Office 2013 agent. The agent must be configured to point to the Office 2019 or Office 2016 Office Telemetry Dashboard.

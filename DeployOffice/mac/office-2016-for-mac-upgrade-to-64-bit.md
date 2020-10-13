@@ -14,7 +14,7 @@ description: "Provides information to admins about Office for Mac changing to 64
 
 # Office for Mac upgrade to 64-bit
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
 Apple has long encouraged application developers to adopt the 64-bit runtime environment, and we've been hearing from customers that 64-bit versions of Office for Mac are desirable to enable larger address spaces, better performance, and new innovative features. All releases of Office for Mac after August 22, 2016 are 64-bit only.
   
