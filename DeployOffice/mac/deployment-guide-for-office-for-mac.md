@@ -39,7 +39,7 @@ This guide covers the following areas:
     
 In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following sites:
   
-- [System requirements for Office](https://products.office.com/office-resources), for installation requirements, such as supported operating systems.
+- [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), for installation requirements, such as supported operating systems.
 
 - [Office for Mac](https://products.office.com/mac), for purchasing information.
     

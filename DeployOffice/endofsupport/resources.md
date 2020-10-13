@@ -58,7 +58,7 @@ We provide various services to help you upgrade to subscription versions of the 
 
 ## Other resources
 
-- **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://products.office.com/office-resources).
+- **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 - **Office configuration support matrix** For a printable chart showing end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 
