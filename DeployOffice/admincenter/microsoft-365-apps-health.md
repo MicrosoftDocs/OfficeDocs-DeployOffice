@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
 ---
@@ -22,6 +21,7 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 Requirements:
 - Microsoft 365 Apps for enterprise, Version 2007 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
+- Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 
 ## How to get to the health dashboard
 
