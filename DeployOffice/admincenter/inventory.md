@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: None
+ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
 description: "Provides Office admins information about configuring and using inventory in Microsoft 365 Apps admin center to view their managed devices"
 ---
