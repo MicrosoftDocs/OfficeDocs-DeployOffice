@@ -27,7 +27,7 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 Requirements:
 - Microsoft 365 Apps for enterprise, Version 2007 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
-- Office 365 (or Microsoft 365) E3 or E5 subscription plan
+- Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 - To apply a servicing profile to a device, that device must be part of the inventory in the Microsoft 365 Apps admin center
  
 ## How to apply the servicing profile to a device

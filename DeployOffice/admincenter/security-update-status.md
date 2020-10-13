@@ -21,7 +21,7 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 Requirements:
 - Microsoft 365 Apps for enterprise, Version 2007 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
-- Office 365 (or Microsoft 365) E3 or E5 subscription plan
+- Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 - Device must be part of inventory in the Microsoft 365 Apps admin center
 
 ## How to view security state status
