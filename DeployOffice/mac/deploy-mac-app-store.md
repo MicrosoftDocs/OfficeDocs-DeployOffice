@@ -35,7 +35,7 @@ The Office apps available from the Mac App Store provide the very latest produc
 > Some Office 365 (and Microsoft 365) subscriptions don't include access to downloadable Office apps. For example, the Office 365 E1 and Microsoft 365 Business Basic plans. For more information, see [Office 365 plans](https://products.office.com/business/compare-more-office-365-for-business-plans).
 
 ## Can I use apps from the Mac App Store with my Volume License?
-No. Perpetual licenses, including Office 2019 and Office 2016, are not supported with Office apps available from the Mac App Store. The [Volume License (VL) Serializer](volume-license-serializer.md) is not compatible with these apps. Attempts to use a perpetual license with Mac App Store apps will cause the apps to enter [reduced functionality mode](https://go.microsoft.com/fwlink/p/?linkid=2060861).
+No. Perpetual licenses, such as Office 2019, are not supported with Office apps available from the Mac App Store. The [Volume License (VL) Serializer](volume-license-serializer.md) is not compatible with these apps. Attempts to use a perpetual license with Mac App Store apps will cause the apps to enter [reduced functionality mode](https://go.microsoft.com/fwlink/p/?linkid=2060861).
 
 ## How do I deploy Office apps from the Mac App Store to computers in my organization?
 You need an enterprise mobility management (EMM) tool that supports either [Apple's Volume Purchase Program (VPP)](https://volume.itunes.apple.com/), [Apple Business Manager](https://www.apple.com/business/it/), or [Apple School Manager](https://www.apple.com/education/it/). For example, [Jamf Pro](https://www.jamf.com/) is compatible with these programs and can be used to deploy Office apps. Office supports managed distribution, which allows your Mobile Device Management (MDM) server to install Office even when the user does not have an Apple ID. Office apps cannot be distributed through redeemable codes.
@@ -52,7 +52,7 @@ The Office builds available from the Mac App Store are production builds and are
 Microsoft Teams and Skype for Business are not available through the Mac App Store and must be deployed from the Microsoft CDN.
 
 ## How do Office updates occur?
-When Office apps are deployed through the Mac App Store, it is the sole responsibility of the App Store to keep those apps up-to-date. Conversely, apps deployed from Microsoft's CDN are updated through the Microsoft AutoUpdate (MAU) tool. [Content caching](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac) services in macOS can be used (and is highly recommended) to optimize both the installation and update process of Office apps acquired through the Mac App Store.
+When Office apps are deployed through the Mac App Store, it is the sole responsibility of the App Store to keep those apps up to date. Conversely, apps deployed from Microsoft's CDN are updated through the Microsoft AutoUpdate (MAU) tool. [Content caching](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac) services in macOS can be used (and is highly recommended) to optimize both the installation and update process of Office apps acquired through the Mac App Store.
 
 The download size of monthly update packages is the same, regardless of whether the CDN or Mac App Store is used for deployment.
 
