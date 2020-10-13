@@ -14,7 +14,7 @@ description: "Provides admins with information about how to install updates for 
 
 # Deploy updates for Office for Mac
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
 Microsoft regularly publishes software updates to improve performance or security, and for Office 365 (and Microsoft 365) users, to update features.
   

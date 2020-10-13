@@ -52,7 +52,7 @@ The Office builds available from the Mac App Store are production builds and are
 Microsoft Teams and Skype for Business are not available through the Mac App Store and must be deployed from the Microsoft CDN.
 
 ## How do Office updates occur?
-When Office apps are deployed through the Mac App Store, it is the sole responsibility of the App Store to keep those apps up-to-date. Conversely, apps deployed from Microsoft's CDN are updated through the Microsoft AutoUpdate (MAU) tool. [Content caching](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac) services in macOS can be used (and is highly recommended) to optimize both the installation and update process of Office apps acquired through the Mac App Store.
+When Office apps are deployed through the Mac App Store, it is the sole responsibility of the App Store to keep those apps up to date. Conversely, apps deployed from Microsoft's CDN are updated through the Microsoft AutoUpdate (MAU) tool. [Content caching](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac) services in macOS can be used (and is highly recommended) to optimize both the installation and update process of Office apps acquired through the Mac App Store.
 
 The download size of monthly update packages is the same, regardless of whether the CDN or Mac App Store is used for deployment.
 

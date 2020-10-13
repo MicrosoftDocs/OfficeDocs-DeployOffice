@@ -14,7 +14,7 @@ description: "Describes changes in Office for Mac that are of interest to admins
 
 # What's new for admins in Office for Mac
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
 Before you deploy Office for Mac to users in your organization, you should be aware of some changes introduced in Office for Mac. These changes might affect how you deploy and manage Office for Mac in your organization.
   
@@ -44,7 +44,7 @@ Before you deploy Office for Mac to users in your organization, you should be aw
   - **Office 2016 for Mac:** If you want to compare key features of Office 2016 for Mac with the features of Office for Mac 2011, review the comparison tables for [Outlook](https://support.microsoft.com/office/f40accc7-de7e-48bd-a536-ba5af0e499b6), [PowerPoint](https://support.microsoft.com/office/6213ffc8-c8bd-4073-acf8-1869180c6ae0), and [Word](https://support.microsoft.com/office/ac41aed9-3d23-48de-8474-31515e29c48c).
   
 > [!IMPORTANT]
-> Support for Office 2016 for Mac ends on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
+> Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
   
 If you're looking for information to help your users get started with Office for Mac, review the resources on the [Microsoft 365 Training](https://support.microsoft.com/training).
 

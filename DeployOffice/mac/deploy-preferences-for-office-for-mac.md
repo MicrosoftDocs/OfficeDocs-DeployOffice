@@ -14,7 +14,7 @@ description: "Provides information for admins on how to deploy standard preferen
 
 # Deploy preferences for Office for Mac
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
  
 After Office for Mac is installed, users can configure settings for the apps. These settings are called preferences. As an admin, you might want to provide Office for Mac users in your organization with a standard set of preferences. For example, you can configure how often to check for software updates for Office for Mac - daily, weekly, or monthly.
