@@ -238,7 +238,7 @@ Set the availability and default position of the [New Outlook](https://support.m
 |**Availability** |16.38 |
 
     
-## Related topics
+## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
