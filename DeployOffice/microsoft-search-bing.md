@@ -99,7 +99,10 @@ If the check box is selected in the Microsoft 365 admin center and the backgroun
 - Google Chrome is installed on the device.
 - Bing is not already the default search engine for Google Chrome.
 
-If all those criteria are met, then the extension is installed on the user's device and Bing is made the default search engine for Google Chrome with easier access to Microsoft Search capabilities. 
+If all those criteria are met, then the extension is installed on the user's device and Bing is made the default search engine for Google Chrome with easier access to Microsoft Search capabilities.
+
+> [!NOTE]
+> The extension won't be installed on the user's device if Microsoft 365 Apps for enterprise is deployed in an Office 365 (or Microsoft 365) GCC, GCC High, or DoD environment.
 
 For what happens next, see [What your users will see with Microsoft Search in Bing](#what-your-users-will-see-with-microsoft-search-in-bing).
 
@@ -138,7 +141,7 @@ At this time, the Microsoft Search in Bing extension for Google Chrome will only
 
 The location of the device is checked once every month. At that time, if the device has moved to a location listed above, and you've selected the setting in the Microsoft 365 admin center, then the extension for Google Chrome will be installed and Bing will be made the default search engine.
 
-Other locations might be added over time. Before any new locations are added, we'll notify you through the Message Center in the Microsoft 365 admin center and we'll update the list above accordingly.
+Other locations might be added over time. Before any new locations are added, we'll notify you through the Message Center in the Microsoft 365 admin center and we'll update the list of locations accordingly.
 
 > [!TIP]
 > If you want to set Bing as the default search engine for Google Chrome for locations that aren't listed, you can [follow these steps](https://docs.microsoft.com/microsoftsearch/set-default-search-engine#google-chrome-on-windows-xp-sp2-or-later).
