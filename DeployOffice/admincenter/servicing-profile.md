@@ -29,7 +29,8 @@ Requirements:
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 - To apply a servicing profile to a device, that device must be part of the inventory in the Microsoft 365 Apps admin center
- 
+- Client devices can reach the following endpoints: ```https://login.live.com```, ```https://*.config.office.com```
+
 ## How to apply the servicing profile to a device
 
 1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Servicing profile**. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
