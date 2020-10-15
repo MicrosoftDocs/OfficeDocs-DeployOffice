@@ -74,7 +74,7 @@ Follow these steps to deploy an application to initiate a channel change update:
         - **Value**: CDNBaseUrl
         - **Data Type**: String
         - **Operator**: Equals
-        - **Value**: http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6
+        - **Value**: https://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6
     - Installation behavior needs to be **Install for System** because the assigned update channel is a system-wide setting.
 1. After the application has been created, deploy it to the collection that holds your targeted devices. You can decide if you want to set the **Purpose** to **Required**, meaning the Office Deployment Tool will run on all devices. You can also make it a user-driven deployment by selecting **Available**.
 
