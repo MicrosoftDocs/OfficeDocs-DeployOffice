@@ -288,6 +288,12 @@ The following fields are collected:
 
   - **Duration** - How long the authentication took
 
+  - **Duration_Max** - If this signal is aggregated, the maximum duration of any aggregated event.
+
+  - **Duration_Min** - If this signal is aggregated, the minimum duration of any aggregated event.
+
+  - **Duration_Sum** - If this signal is aggregated, the sum of the durations of all the aggregated events.
+
   - **Endtime** - When the authentication event ended
 
   - **Error** - Error code if the authentication failed
@@ -402,11 +408,19 @@ The following fields are collected:
 
   - **Microsoft\_ADAL\_user\_cancel** - True / false if the user interface window was canceled.
 
+  - **Microsoft_ADAL_was_request_throttled** – True / false indicating if this event was throttled by ADAL due to too many requests.
+ 
   - **Microsoft\_ADAL\_x\_ms\_request\_id** – Additional request ID provided in HTTP header to service by ADAL.
 
   - **Platform** - Win32/WinRT/Android/iOS/Mac
 
+  - **Promptreasoncorrelationid** – For prompts, this is the correlation id of another event which explains why the user might be seeing an authentication prompt.
+
+  - **Resource** – The resource that the user is requesting a token for, such as Exchange or SharePoint.
+
   - **Scenarioid** – GUID. Multiple events may belong to a single scenario, e.g. the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This ID enables correlation to happen.
+
+  - **Scenarioname** – The name of the scenario which this authentication event belongs to.
 
   - **Sessionid** - GUID identifying the boot session
 
