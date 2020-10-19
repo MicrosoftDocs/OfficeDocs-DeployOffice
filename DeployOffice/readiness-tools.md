@@ -7,11 +7,12 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- m365initiative-coredeploy
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Compat
-- m365initiative-coredeploy
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Microsoft 365 Apps"
 ---
 
