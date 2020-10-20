@@ -253,6 +253,7 @@ Prevent users from applying the **Encrypt-Only** option to emails when using Mic
 ### Disable "Do Not Forward"
 
 Prevent users from applying the **Do Not Forward** option to emails when using Microsoft 365 Message Encryption.
+
 |||
 |:-----|:-----|
 |**Domain**  | com.microsoft.Outlook |
