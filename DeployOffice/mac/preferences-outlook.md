@@ -25,6 +25,26 @@ The following preferences can be used to simplify account setup for Office 365 m
 
 These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
 
+The following list shows the preferences that are covered in this article:
+
+- [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
+- [Automatically configure Office 365 mailbox on first launch](#automatically-configure-office-365-mailbox-on-first-launch)
+- [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
+- [Disable "Do Not Forward"](#disable-do-not-forward)
+- [Disable "Encrypt-Only"](#disable-encrypt-only)
+- [Disable export](#disable-export)
+- [Disable import](#disable-import)
+- [Disable signatures](#disable-signatures)
+- [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
+- [Disable Teams online meetings](#disable-teams-online-meetings)
+- [Enable new Outlook](#enable-new-outlook)
+- [Hide local folders](#hide-local-folders)
+- [Hide text about adding non-corporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
+- [Specify calendar first day of week](#specify-calendar-first-day-of-week)
+- [Specify default weather location](#specify-default-weather-location)
+- [Specify Office 365 mailbox to be added on first launch](#specify-office-365-mailbox-to-be-added-on-first-launch)
+- [Specify when pictures are downloaded for email](#specify-when-pictures-are-downloaded-for-email)
+
 ## Mailbox settings
 
 ### Automatically configure Office 365 mailbox on first launch
