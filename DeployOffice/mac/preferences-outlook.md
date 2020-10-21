@@ -25,6 +25,26 @@ The following preferences can be used to simplify account setup for Office 365 m
 
 These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
 
+The following list shows the preferences that are covered in this article:
+
+- [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
+- [Automatically configure Office 365 mailbox on first launch](#automatically-configure-office-365-mailbox-on-first-launch)
+- [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
+- [Disable "Do Not Forward"](#disable-do-not-forward)
+- [Disable "Encrypt-Only"](#disable-encrypt-only)
+- [Disable export](#disable-export)
+- [Disable import](#disable-import)
+- [Disable signatures](#disable-signatures)
+- [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
+- [Disable Teams online meetings](#disable-teams-online-meetings)
+- [Enable new Outlook](#enable-new-outlook)
+- [Hide local folders](#hide-local-folders)
+- [Hide text about adding non-corporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
+- [Specify calendar first day of week](#specify-calendar-first-day-of-week)
+- [Specify default weather location](#specify-default-weather-location)
+- [Specify Office 365 mailbox to be added on first launch](#specify-office-365-mailbox-to-be-added-on-first-launch)
+- [Specify when pictures are downloaded for email](#specify-when-pictures-are-downloaded-for-email)
+
 ## Mailbox settings
 
 ### Automatically configure Office 365 mailbox on first launch
@@ -67,7 +87,7 @@ Specify one or more domains users are allowed to add in Outlook.
 |**Data Type**  | Array of Strings |
 |**Possible values**  |  *Various (example: "'contoso\\\\.com$'")*  |
 |**Availability** | 16.18|
-|**Comments**| Format strings as regular expressions. Does not remove or disconnect accounts already added in Outlook. |
+|**Comments**| Format strings as regular expressions. Doesn't remove or disconnect accounts already added in Outlook. |
 
 
 ### Hide text about adding non-corporate mailboxes
@@ -81,7 +101,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |**Data Type**  |Boolean   |
 |**Possible values**  | false (default) <br/> true  |
 |**Availability** |16.18 |
-|**Comments**| Only hides text. Does not impact ability to add non-corporate mailboxes. |
+|**Comments**| Only hides text. Doesn't impact ability to add non-corporate mailboxes. |
 
 
 ## Import/export settings
@@ -225,7 +245,7 @@ Set the first day of week in calendar view.
 |**Possible values**  | 1 = Sunday (default) <br/> 2 = Monday  <br/> 3 = Tuesday <br/> 4 = Wednesday  <br/> 5 = Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
 |**Availability** |16.19 |
 
-### Enable New Outlook
+### Enable new Outlook
 
 Set the availability and default position of the [New Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439) switch.
 
@@ -236,6 +256,32 @@ Set the availability and default position of the [New Outlook](https://support.m
 |**Data Type**  | Integer |
 |**Possible values**  | 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
 |**Availability** |16.38 |
+
+### Disable "Encrypt-Only"
+
+Prevent users from applying the **Encrypt-Only** option to emails when using Microsoft 365 Message Encryption.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** |DisableEncryptOnly |
+|**Data Type**  | Boolean |
+|**Possible values**  | false (default) <br/> true  |
+|**Availability** |16.40 |
+|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Disable "Do Not Forward"
+
+Prevent users from applying the **Do Not Forward** option to emails when using Microsoft 365 Message Encryption.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** |DisableDoNotForward |
+|**Data Type**  |Boolean  |
+|**Possible values**  | false (default) <br/> true  |
+|**Availability** |16.40 |
+|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
     
 ## Related articles
