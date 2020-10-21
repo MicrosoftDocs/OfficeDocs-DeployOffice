@@ -35,6 +35,33 @@ To use Microsoft 365 Apps, your users will need the appropriate license. To assi
 
 After a user is assigned a license, you can deploy Office to your users or your users can install Office directly from the Office 365 portal. If the user hasn't been assigned a license, the user can't install Office from the Office 365 portal. We recommend assigning the  license 24 hours prior to the deployment so you can ensure that the license is provisioned. 
 
+## Licensing Modes
+
+There are various licensing modes that can be used with a supported version of Microsoft 365 Apps.
+
+### Subscription User Based Licensing
+[More Information](https://docs.microsoft.com/en-us/DeployOffice/about-microsoft-365-apps#licensing-differences)
+- This is the default licensing mode for Microsoft 365 Apps.  In this mode, the license is carried within the user’s profile.  With a single license, users can install and activate Microsoft 365 Apps on up to 5 desktops/laptops, 5 tablets, and 5 mobile devices.  Subscription User Based Licensing requires user level activation and requires user sign-in with an Azure Active Directory account.
+- It is recommended for most scenarios where the user has defined computers and don’t often share them.
+
+### Shared Computer Activation
+[More Information](https://docs.microsoft.com/en-us/deployoffice/overview-shared-computer-activation)
+- This licensing mode lets you deploy Microsoft 365 Apps to a single computer that is shared by multiple users and where those users are logging in with their own account.
+- This mode is typically used in scenarios with multiple licensed users connecting to the same device.  It is the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI).  It is ideal for shift workers, bank tellers, and users that need to [roam](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options#sharedcomputerlicensing-property-part-of-property-element) across devices.
+
+### Device Based Licensing
+[More Information](https://docs.microsoft.com/en-us/deployoffice/device-based-licensing)
+- The Device Based License is designed to simplify management of Microsoft 365 Apps for Enterprise on devices shared by many users.  Anyone that signs in and uses that device can use Microsoft 365 Apps for Enterprise to create and edit documents.  Device Based Licensing does not require user level activation and does not require the user to have an Azure Active Directory account.  There is no limit to the number of sign-ins and anyone with device access can use Microsoft 365 Apps for Enterprise applications.
+- It is applicable in shared and open access device scenarios where users work across multiple shared devices or where users need occasional access.  This is an ideal mode for healthcare and education customers that do not sync generic accounts to Azure Active Directory.
+
+>[!NOTE]
+>The device must be synced to Azure Active Directory for a Device Based License to be assigned.
+
+### Viewer Mode
+[More Information](https://docs.microsoft.com/en-us/deployoffice/overview-viewer-mode)
+- This mode can be used when your organization has users that only need view/print capabilities instead of full create or edit capabilities.  This allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office.  When Word, Excel, or PowerPoint are opened, users see a banner message underneath the ribbon in their Office apps that informs them that Office is in Viewer Mode.
+- This is an ideal mode when the users have an Office for the Web license but not a Microsoft 365 Apps license.
+
 ## Activating Microsoft 365 Apps
 
 As part of the installation process, Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user logs on to their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Microsoft 365 Apps remains fully functional. If the computer goes offline for more than 30 days, Microsoft 365 Apps enters reduced functionality mode until the next time a connection can be made. To get Microsoft 365 Apps fully functional again, the user can connect to the internet and let the Activation and Validation Service reactivate the installation, though in some cases the user may have to sign back in first.
