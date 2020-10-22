@@ -73,7 +73,7 @@ Follow these steps to create a dynamic collection that will add devices based on
 
    The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
 
-   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes-dyncollection-1.png)
+   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes/dyncollection-1.png)
 
 7. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 8. Select **Summary**, **Next**, and then **Close** to complete the wizard.
