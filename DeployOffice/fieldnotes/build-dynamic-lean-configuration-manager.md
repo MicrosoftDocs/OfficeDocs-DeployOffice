@@ -21,36 +21,23 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-As an admin, you often have to manage more than one [update channel](../overview-update-channels.md) for Microsoft 365 Apps in your organization. Or you may have to move devices to a new channel and need a way to see and manage devices by channel with minimal overhead and effort. This article shows how to implement [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) in Microsoft Endpoint Configuration Manager to:
-- Set up collections that automatically add and remove devices based on the installed update channel.
-- Set up a collection that automatically add all devices running Microsoft 365 Apps for easier update targeting.
-- Set up a collection that hold all devices on update channels that your IT department doesn't support.
+Managing Microsoft 365 Apps in larger organizations using Configuration Manager can be a complex task. Maybe you have multiple [update channels](../overview-update-channels.md) deployed in your environment, maybe not all devices have Microsoft 365 Apps yet, but you want to target updates correctly or you want to identify devices with configuration drifts easily. This article will share some best practices on how to leverage [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) to cover such scenarios. For dynamic collections, Configuration Manager automatically evaluates the membership of devices based on rules and queries. So these collections will update themselves and always give you a currnet view into your estate.
 
-For dynamic collections, Configuration Manager automatically evaluates the membership of devices based on rules and queries. No manual work is required to keep these collections up to date. This implementation will enable you to:
-- Easily identify and target devices based on their currently installed update channel.
-- When devices switch update channels, you can easily check progress just by looking at the number of devices per collection.
-- Identify devices that are on undesired update channels and implement actions to correct configuration drift.
-- Reduce admin effort by targeting the right set of devices with updates automatically.
+This article covers the following scenarios:
 
-This article includes an example as well as step-by-step instructions to set up dynamic collections.
+- [Set up collections that automatically add and remove devices based on the installed update channel](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific update-channels). This help you to quickly identify how many devices are running on each channel and also to move devices to a new channel.
+- [Set up a collection that automatically add all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). This helps you to easily target Microsoft 365 Apps updates.
+- [Set up a collection that captures all devices on update channels which your IT department doesn't support](build-dynamic-lean-configuration-manager.md#catch-devices-on-other-update-channels). In case you don't support all available update channels internally, this implementation helps you to quickly identify and mitigate any configuration drift.
 
-## Example
+For each scenario, you will find a detailed step-by-step implementation guide as well as some notes on how these collections can be leveraged during day-to-day admin operations.
 
-Let’s assume that your organization has deployed Microsoft 365 Apps to several thousand devices. You run a mix of [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) (SAEC-P) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) (SAEC), and you want to adopt the recently introduced [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) (MEC). A few devices in your environment run Current Channel, even though it's not supported by your IT department.
+## Catch devices on specific update channels
 
-In this scenario, we would implement five dynamic collections in Configuration Manager:
-- Three collections to add devices as members when the device is running a specific update channel, one each for SAEC-P, SAEC, and MEC.
-- One collection to catch all devices running Microsoft 365 Apps to make deploying updates for all update channels easier. Devices will download matching updates only.
-- One collection to capture devices running any update channel other than the three that are supported by the IT department.
+Follow these steps to create a dynamic collection that will add devices based on a specific, installed update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily. We recommend that you set up one collection per update channel that your IT organization supports internally.
 
-We'll use these collections to deploy Configuration Manager applications and updates:
-- To the SAEC and SAEC-P collections, we'll deploy applications that will trigger a channel change to MEC. Once the channel change has been done, the devices will automatically leave the old collection and get added to the MEC collection.
-- The collection that catches all Microsoft 365 App installations can be used to deploy updates for all supported channels. Configuration Manager will deem updates that don't match the update channel of the device as not applicable, so devices will only download matching updates. Devices that are about to change channels will also be able to perform the required update to the new channel automatically.
-- The collection that catches devices that have configuration drift can be used to force such devices back to update channels that are supported by IT.
+Once those collections are set up, you can use them e.g. to publish applications which allow users to initiate an [update channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager) for themselves. Or make it a required deployment, in case you want to switch away from an update channel completely. E.g. when moving from [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) (SAEC-P) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview).
 
-## Implement collections that catch devices on a certain update channel
-
-Follow these steps to create a dynamic collection that will add devices based on a specific, installed update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily.
+Here is how to implement these collections:
 
 1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and choose a limiting collection. Select **Next**.
@@ -78,11 +65,11 @@ Follow these steps to create a dynamic collection that will add devices based on
 7. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 8. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
-Repeat these steps for each update channel that you want to be captured in a separate collection. The result will look like this:
+Repeat these steps for each update channel that you want to be captured in a separate collection. The result might look like this:
 
 ![Screenshot from Configuration Manager showing three collections](../images/fieldnotes-dyncollection-2.png)
 
-## Implement a collection that catches all devices running Microsoft 365 Apps
+## Catch devices running Microsoft 365 Apps
 
 Follow these steps to create a dynamic collection that will add all devices that have Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped automatically. This enables you to target Microsoft 365 Apps client updates easily.
 
@@ -102,7 +89,7 @@ Follow these steps to create a dynamic collection that will add all devices that
 
 The result is a collection that will automatically add all devices that are running Microsoft 365 Apps regardless of their update channel.
 
-## Implement a collection that catches all devices running other update channels
+## Catch devices on other update channels
 
 After you create collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you find configuration drift and implement measures to reestablish the desired configuration on those devices.
 
