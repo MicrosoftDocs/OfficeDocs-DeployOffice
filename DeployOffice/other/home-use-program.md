@@ -14,10 +14,10 @@ hideEdit: true
 # (Preview) In-product notification for Home Use Program (HUP) employee benefit
 
 > [!IMPORTANT]
-> - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC###### on October ##, 2020.
+> - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC###### on October 23, 2020.
 > - This is documentation for a preview program that isn’t available to everyone and is subject to change.
 
-Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end-users about the Home Use Program (HUP) employee benefit. The notification will be shown in their desktop Windows Word, Excel, PowerPoint, and Outlook applications for Office 365 (or Microsoft 365) subscription clients. The preview is available for your organization as part of Version 2006 or later of Microsoft 365 Apps for enterprise, and this article outlines how users in your organization can see the preview if enabled by you.
+Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end users about the Home Use Program (HUP) employee benefit. The notification will be shown in their desktop Windows Word, Excel, PowerPoint, and Outlook applications for Office 365 (or Microsoft 365) subscription clients. The preview is available for your organization as part of Version 2008 or later of Microsoft 365 Apps for enterprise, and this article outlines how users in your organization can see the preview if enabled by you.
 
 ## Goal of the HUP in-product notification feature
 
@@ -27,7 +27,7 @@ The preview is meant to give organizations an opportunity to test the user exper
 
 ## What is the Home Use Program (HUP)?
 
-The Home Use Program (HUP) is an employee purchase program for Microsoft’s valued customers. HUP provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft and you do not need to take any additional steps to activate the benefit for your users. If you are unsure of whether your organization is eligible for this program, please visit https://www.microsoft.com/home-use-program/resources.
+The Home Use Program (HUP) is an employee purchase program for Microsoft’s valued customers. HUP provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft and you do not need to take any additional steps to activate the benefit for your users. If you are unsure of whether your organization is eligible for this program, visit https://www.microsoft.com/home-use-program/resources.
 
 The Home Use Program helps your employees become more proficient and productive with Microsoft 365 at home, increasing employee satisfaction while lowering the cost of IT help and training. Skill and experience grow from personal use and translate to higher productivity, satisfaction, and savings for your company.
 
@@ -40,11 +40,11 @@ If this feature is enabled by you for a user, they will see one notification tot
 
 When the user clicks on **Learn more and sign up**, they will be taken to the HUP webpage (https://aka.ms/huplearnmore) where they can learn more about the program and sign up for it if they would like. The subscription will be separate from any organizational subscription enabled by you.
 
-End-users will be able to opt out of all HUP-related messaging on their device by clicking on the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
+End users will be able to opt out of all HUP-related messaging on their device by clicking on the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
 
 ## How can you get the preview?
 
-This notification feature is available with Version 2006 or later of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2006 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
+This notification feature is available with Version 2008 or later of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2008 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
 
 The notifications will be controlled by a policy setting that can be enabled by using the Office cloud policy service or Group Policy. The notifications will be OFF by default unless you enable them by using the policy setting.
 
