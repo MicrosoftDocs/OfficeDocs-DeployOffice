@@ -17,7 +17,7 @@ hideEdit: true
 > - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC###### on October ##, 2020.
 > - This is documentation for a preview program that isn’t available to everyone and is subject to change.
 
-Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end-users about the Home Use Program (HUP) employee benefit. The notification will be shown in their desktop Windows Word, Excel, PowerPoint, and Outlook applications for Office 365 (or Microsoft 365) subscription clients. The preview is available for your organization as part of Version 2006 and higher of Microsoft 365 Apps for enterprise, and this article outlines how users in your organization can see the preview if enabled by you.
+Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end-users about the Home Use Program (HUP) employee benefit. The notification will be shown in their desktop Windows Word, Excel, PowerPoint, and Outlook applications for Office 365 (or Microsoft 365) subscription clients. The preview is available for your organization as part of Version 2006 or later of Microsoft 365 Apps for enterprise, and this article outlines how users in your organization can see the preview if enabled by you.
 
 ## Goal of the HUP in-product notification feature
 
@@ -44,7 +44,7 @@ End-users will be able to opt out of all HUP-related messaging on their device b
 
 ## How can you get the preview?
 
-This notification feature is available with Version 2006 and higher of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2006 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
+This notification feature is available with Version 2006 or later of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2006 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
 
 The notifications will be controlled by a policy setting that can be enabled by using the Office cloud policy service or Group Policy. The notifications will be OFF by default unless you enable them by using the policy setting.
 
