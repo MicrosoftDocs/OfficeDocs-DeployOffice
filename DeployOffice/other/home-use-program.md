@@ -11,7 +11,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
 ---
 
-# "(Preview) In-product notification for Home Use Program (HUP) employee benefit"
+# (Preview) In-product notification for Home Use Program (HUP) employee benefit
 
 > [!IMPORTANT]
 > - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC###### on October ##, 2020.
@@ -44,7 +44,7 @@ End-users will be able to opt out of all HUP-related messaging on their device b
 
 ## How can you get the preview?
 
-This notification feature is available with Version 2006 and higher and switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2006 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
+This notification feature is available with Version 2006 and higher of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2006 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
 
 The notifications will be controlled by a policy setting that can be enabled by using the Office cloud policy service or Group Policy. The notifications will be OFF by default unless you enable them by using the policy setting.
 
