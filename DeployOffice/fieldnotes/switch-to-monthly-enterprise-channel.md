@@ -107,7 +107,7 @@ In the next [hardware inventory cycle](https://docs.microsoft.com/mem/configmgr/
 
 ## Notes
 
-- Make sure to use Office Deployment Tool version 16.0.12827.20258 or higher to have Monthly Enterprise Channel support included. We recommend to run the latest version of ODT always.
+- Make sure to use Office Deployment Tool version 16.0.12827.20258 or higher to have Monthly Enterprise Channel support included. We recommend that you always run the latest version of the ODT.
 - If you have a Group Policy applied to the device that sets the **Update Channel**, it will overrule the Office Deployment Tool. In this case, the device won't perform a channel change unless you remove or adjust the Group Policy Object (GPO) setting. Make sure to deploy the latest [ADMX template](https://www.microsoft.com/download/details.aspx?id=49030) to have the Monthly Enterprise Channel available as an option to select.
 - Configuration Manager only applies device updates if the targeted build version is later than the currently installed build. Moving devices from Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview) to Monthly Enterprise Channel just works. If you want to move devices from Current Channel to Monthly Enterprise Channel, you have two options:
    - After the device receives the intent to switch channels, the device will no longer apply Current Channel updates. Devices will switch channels after the Monthly Enterprise Channel build passes the installed Current Channel build.
