@@ -26,12 +26,17 @@ The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterpri
 The article shows the individual steps aligned to a common approach to moving devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel:
 
 1. Group devices based on their current channel in [dynamic collections](build-dynamic-lean-configuration-manager.md) for easier targeting of deployments. Group all devices running Microsoft 365 Apps for enterprise in an additional collection.
+
 1. The admin creates and deploys an application to change the assigned update channel to Monthly Enterprise Channel by using the collection holding all SAEC devices.
+
 1. The admin deploys Microsoft 365 Apps update for Monthly Enterprise Channel to the collection holding all Microsoft 365 Apps devices.
+
 1. The device executes application and updates the Click-to-Run service configuration with the newly assigned update channel.
+
 1. During the next [Software Updates Deployment Evaluation Cycle](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process), the Click-to-Run service will download updates from the distribution point and install builds from the new channel.
 
    The device now runs on the new channel.
+   
 1. Configuration Manager receives an updated hardware inventory and then automatically moves the device from the **SAEC devices** collection to the **MEC devices** collection.
 
 The admin must take three actions:
@@ -58,25 +63,31 @@ Next, you deploy an application that instructs the client to perform a channel c
 Follow these steps to deploy an application to initiate an update channel change:
 
 1. Download and extract the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065). Copy only the **setup.exe** file to a folder you'll use as a source for the application.
+
 1. Create a configuration file based on the following XML and save it to the same folder:
 
    ```XML
    <Configuration>
 	    <Updates Channel="MonthlyEnterprise" />
-   </Configuration>```
+   </Configuration>
+   ```
 
 1. Create an application in Configuration Manager by following your regular process. Don't use the Office Installation Wizard because you don't need a full configuration file and no source files. Note the following:
 
     - The command line is **setup.exe /configure switch_to_MEC.xml**. Adjust the name of the configuration file to match yours.
+    
     - Use the following detection method to check if the intent to switch channels has been injected correctly:
-        - **Setting Type**: Registry
-        - **Hive**: HKEY_LOCAL_MACHINE
-        - **Key**: setup.exe /configure UpdateChannel_MEC.xml
-        - **Value**: CDNBaseUrl
-        - **Data Type**: String
-        - **Operator**: Equals
-        - **Value**: `http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`
+    
+      - **Setting Type**: Registry
+      - **Hive**: HKEY_LOCAL_MACHINE
+      - **Key**: setup.exe /configure UpdateChannel_MEC.xml
+      - **Value**: CDNBaseUrl
+      - **Data Type**: String
+      - **Operator**: Equals
+      - **Value**: `http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`
+	
     - Installation behavior needs to be **Install for System** because the assigned update channel is a system-wide setting.
+    
 1. After the application has been created, deploy it to the collection that holds your targeted devices. You can decide if you want to set the **Purpose** to **Required**, meaning the Office Deployment Tool will run on all devices. You can also make it a user-driven deployment by selecting **Available**.
 
 ## Make Monthly Enterprise Channel updates available to the device
@@ -88,6 +99,7 @@ After the deployed application updates the device configuration, it still must p
 In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both channels to a collection holding the targeted devices:
 
 - Devices that have not yet received instructions to switch channels can apply the regular Semi-Annual Enterprise Channel update to stay safe and secure.
+
 - Devices that have already received instructions to switch channels will download and apply the update from the Monthly Enterprise Channel.
 
 > [!IMPORTANT]
@@ -108,10 +120,17 @@ In the next [hardware inventory cycle](https://docs.microsoft.com/mem/configmgr/
 ## Additional details
 
 - Make sure to use Office Deployment Tool version 16.0.12827.20258 or higher to have Monthly Enterprise Channel support included. We recommend that you always run the latest version of the ODT.
+
 - If you have a Group Policy applied to the device that sets the **Update Channel**, it will overrule the Office Deployment Tool. In this case, the device won't perform a channel change unless you remove or adjust the Group Policy Object (GPO) setting. Make sure to deploy the latest [ADMX template](https://www.microsoft.com/download/details.aspx?id=49030) to have the Monthly Enterprise Channel available as an option to select.
+
 - Configuration Manager only applies device updates if the targeted build version is later than the currently installed build. Moving devices from Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview) to Monthly Enterprise Channel just works. If you want to move devices from Current Channel to Monthly Enterprise Channel, you have two options:
+
    - After the device receives the intent to switch channels, the device will no longer apply Current Channel updates. Devices will switch channels after the Monthly Enterprise Channel build passes the installed Current Channel build.
+   
    - Detach devices from Configuration Manager as the update source by disabling the Office COM Management interface. This is a major change that you must plan and execute with caution.
+   
 - If the device configuration is changed, two timers are relevant on the Configuration Manager side:
+
    - The device must upload the [hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) that includes information about the selected update channel.
+   
    - The Configuration Manager infrastructure must recalculate the memberships of the collections.
