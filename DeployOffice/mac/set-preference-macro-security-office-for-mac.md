@@ -14,7 +14,7 @@ description: "Shows IT Pros how to set the macro security level for Office for M
 
 # Set a preference for macro security in Office for Mac
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac, Office 2016 for Mac*
+***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
 In Office for Mac, there are three levels of macro security available, as seen in the following screenshot: 
   
@@ -42,7 +42,7 @@ Here is some additional information about using this preference:
     
 - It's CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
     
-## Related topics
+## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)

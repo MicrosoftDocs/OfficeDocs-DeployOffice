@@ -16,7 +16,7 @@ description: "Provides IT admins with an overview of deploying Office 2019."
 
 # Overview of Office 2019 (for IT Pros)
  
-Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. 
+Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.
 
 > [!IMPORTANT]
 > Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. 
@@ -45,14 +45,14 @@ In addition to Click-to-Run, the following are some other changes that you need 
 - Instead of downloading the installation files from the Volume Licensing Service Center (VLSC), you use the Office Deployment Tool to download the installation files directly from the Office Content Delivery Network (CDN) on the internet.
 - When you install Office Professional Plus 2019, all apps are installed by default. But, you can configure the Office Deployment Tool to exclude certain apps from being installed.
 - Office 2019 is installed on the system drive, which is usually the C:\ drive. The installation location can’t be changed.
-- Updates to Office 2019, such as security updates and bug fixes, can be configured to be automatically downloaded and installed from the Office CDN. Individual downloads for each security update or bug fix aren’t available. 
+- You can configure updates to Office 2019, such as security updates and bug fixes, to be automatically downloaded and installed from the Office CDN. Individual downloads for each security update or bug fix aren’t available. 
 
 
 ## What's stayed the same in Office 2019?
 
 Even though there is a different installation technology, you can still use the same software distribution tools, such as Microsoft Endpoint Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.
 
-The major version of Office 2019 is staying at 16.0, so some additional things are staying the same for those upgrading from Office 2016, including the following:
+The major version of Office 2019 is staying at 16.0, so some additional things are staying the same if you're upgrading from Office 2016, including the following:
 
 - Existing Group Policy settings will continue to work, because the registry location for those settings will still be located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
 - Other registry locations and settings information that reference 16.0 will still apply.
@@ -67,7 +67,7 @@ Office 2019 won’t receive additional new features now that it has been release
 
 ## How do I upgrade to Office 2019?
 
-We recommend that you uninstall existing versions of Office before you deploy Office 2019. If you’re uninstalling previous versions of Office products that were installed with Windows Installer (MSI), the Office Deployment Tool can remove most of those for you as part of the installation of Office 2019. For more information, see [Remove existing versions of Office before installing Office 2019](deploy.md#remove-existing-versions-of-office-before-installing-office-2019).
+We recommend that you uninstall existing versions of Office before you deploy Office 2019. If you’re uninstalling previous versions of Office products that were installed with Windows Installer (MSI), the Office Deployment Tool can remove most of those products for you as part of the installation of Office 2019. For more information, see [Remove existing versions of Office before installing Office 2019](deploy.md#remove-existing-versions-of-office-before-installing-office-2019).
 
 ## Additional information
 
@@ -76,9 +76,10 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 - All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 gb or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version.  For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet access isn’t required to install, activate, or use Office 2019.
 - There isn’t a 2019 version of SharePoint Designer or InfoPath. The last version for both products is 2013.
+- Volume licensed versions of Office 2019 aren't supported on [Windows 10 in S mode](https://support.microsoft.com/windows/851057d6-1ee9-b9e5-c30b-93baebeebc85) or when using [Windows Defender Application Control (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview).
 
 
-## Related topics
+## Related articles
 
 - [Deploy Office 2019 (for IT Pros)](deploy.md)
 - [Update Office 2019 (for IT Pros)](update.md)

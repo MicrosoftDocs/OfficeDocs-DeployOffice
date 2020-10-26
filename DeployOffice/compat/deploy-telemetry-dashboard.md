@@ -29,7 +29,7 @@ This article helps you deploy the five components of Office Telemetry Dashboard:
 
 ## Office Telemetry Dashboard
 
-Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
+Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel installed from Microsoft 365 Apps for enterprise, Office 2019, or Office 2016.
 
 After Office is installed, you can start Office Telemetry Dashboard by using one of the procedures in the following table: 
 
@@ -113,13 +113,7 @@ Each computer on which you install the processors and database must also run the
 
 We recommend the following operating systems for computers that run the processor:
 
- **For production environments:** For best performance, we recommend these operating systems: 
-
-- Windows Server 2016
-
-- Windows Server 2012 R2
-
-- Windows Server 2012
+ **For production environments:** For best performance, we recommend you use a supported version of Windows Server, such as Windows Server 2019.
 
 **For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
@@ -214,6 +208,9 @@ The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2
 - Office 2007
 
 - Office 2010
+
+> [!NOTE]
+> Office 2003, Office 2007, and Office 2010 are no longer supported.
 
 For computers that are running Office 2013 and you have the Office 2013 agent installed on the computer, there are several additional considerations:
 

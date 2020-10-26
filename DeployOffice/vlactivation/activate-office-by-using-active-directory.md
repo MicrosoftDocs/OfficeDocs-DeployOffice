@@ -49,13 +49,13 @@ To configure Active Directory-based activation, you must have Domain Administrat
 8. When you're done, an **Activation Succeeded** page displays. 
 
 
-## Additional information about Active-Directory based activation
+## Additional information about Active Directory-based activation
 
-- Active-Directory based activation uses the same keys that are used by Key Management Service (KMS). However, Active Directory-based activation doesn't require a dedicated host computer. The activation object is replicated across all the domain controllers in the Active Directory forest.
+- Active Directory-based activation uses the same keys that are used by Key Management Service (KMS). However, Active Directory-based activation doesn't require a dedicated host computer. The activation object is replicated across all the domain controllers in the Active Directory forest.
 - A successful Active Directory-based activation of Office lasts for up to 180 days. The Software Protection service running on the computer periodically attempts to re-activate Office by querying Active Directory for the activation object. If Active Directory can't be contacted, Office will try to activate by using a discoverable KMS host computer. 
 
     
-## Related topics
+## Related articles
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md)

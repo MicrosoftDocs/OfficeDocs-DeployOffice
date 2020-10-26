@@ -54,6 +54,9 @@ The agent collects inventory-related data, hardware and software data, and user 
 - Publisher
 - Visio
 - Word
+
+> [!NOTE]
+> Office 2003, Office 2007, and Office 2010 are no longer supported.
     
 For Office 2019, Office 2016, and Office 2013 only, the agent collects data for the following applications:
   
