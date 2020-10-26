@@ -16,9 +16,9 @@ description: "Overview of viewer mode for Microsoft 365 Apps."
 
 # Overview of viewer mode for Microsoft 365 Apps
 
-Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must use a supported version of Microsoft 365 Apps for enterpriser.
+Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must use a supported version of Microsoft 365 Apps for enterprise.
 
-Viewer mode is designed for users who need to view or print Office files without creating or editing. For example, a doctor or nurse can use this mode to open files in Office from a health-care line-of-business application. Viewer MOde is a benefit to existing Office for the web users.
+Viewer mode is designed for users who need to view or print Office files without creating or editing. For example, a doctor or nurse can use this mode to open files in Office from a health-care line-of-business application. Viewer mode is a benefit to users of Office for the web.
 
 When viewer mode is enabled, an unlicensed user of Microsoft 365 Apps for enterprise is not prompted to activate Office when they open Word, Excel, or PowerPoint. Instead, they see a banner message underneath the ribbon in their Office apps that informs them Office is in viewer mode:
 
