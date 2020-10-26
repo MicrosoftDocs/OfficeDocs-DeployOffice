@@ -25,7 +25,7 @@ The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterpri
 
 The article shows the individual steps aligned to a common approach to moving devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel:
 
-1. Group devices based on their current channel in [dynamic collections](/build-dynamic-lean-configuration-manager.md) for easier targeting of deployments. Group all devices running Microsoft 365 Apps for enterprise in an additional collection.
+1. Group devices based on their current channel in [dynamic collections](build-dynamic-lean-configuration-manager.md) for easier targeting of deployments. Group all devices running Microsoft 365 Apps for enterprise in an additional collection.
 1. The admin creates and deploys an application to change the assigned update channel to Monthly Enterprise Channel by using the collection holding all SAEC devices.
 1. The admin deploys Microsoft 365 Apps update for Monthly Enterprise Channel to the collection holding all Microsoft 365 Apps devices.
 1. The device executes application and updates the Click-to-Run service configuration with the newly assigned update channel.
@@ -36,7 +36,7 @@ The article shows the individual steps aligned to a common approach to moving de
 
 The admin must take three actions:
 
-1. Group the devices you want to target in a collection, preferably a [dynamic collection tailored for the Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md).
+1. Group the devices you want to target in a collection, preferably a [dynamic collection tailored for the Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md).
 
 1. Create and deploy an application to inject the new channel assignment into the devices.
 
@@ -44,7 +44,7 @@ The admin must take three actions:
 
 ## Group targeted devices
 
-We recommend that you implement [dynamic collections tailored for Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md) to group devices by update channel automatically. This allows easy targeting—for example, if you want to move all devices running Semi-Annual Enterprise Channel to Monthly Enterprise Channel. You can also group devices in a collection manually—for example, if you want to move only a subset of users or a pilot group first.
+We recommend that you implement [dynamic collections tailored for Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md) to group devices by update channel automatically. This allows easy targeting—for example, if you want to move all devices running Semi-Annual Enterprise Channel to Monthly Enterprise Channel. You can also group devices in a collection manually—for example, if you want to move only a subset of users or a pilot group first.
 When using the dynamic collections, the collections might look like this before you start moving devices:
 
 ![Screenshot from Configuration Manager showing three collections](../images/fieldnotes/move-mec-w-configmgr-1.png)
@@ -75,7 +75,7 @@ Follow these steps to deploy an application to initiate an update channel change
         - **Value**: CDNBaseUrl
         - **Data Type**: String
         - **Operator**: Equals
-        - **Value**: http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6
+        - **Value**: `http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`
     - Installation behavior needs to be **Install for System** because the assigned update channel is a system-wide setting.
 1. After the application has been created, deploy it to the collection that holds your targeted devices. You can decide if you want to set the **Purpose** to **Required**, meaning the Office Deployment Tool will run on all devices. You can also make it a user-driven deployment by selecting **Available**.
 
@@ -93,7 +93,7 @@ In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both cha
 > [!IMPORTANT]
 > It's important to note that devices will only download applicable updates. Devices won't download both updates but only the required update. Because the delta calculation also applies, devices don't pull the full update source but only the content needed to perform the update or channel change.
 
-A common practice is to have a [dynamic collection that catches all devices running Microsoft 365 Apps](/build-dynamic-lean-configuration-manager.md##implement-a-collection-that-catches-all-devices-running-microsoft-365-apps). You can then deploy to this collection the Microsoft 365 Apps updates for all channels supported by your organization, and each device will fetch the matching update. At the same time, devices changing channels have access to the new one.
+A common practice is to have a [dynamic collection that catches all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md##implement-a-collection-that-catches-all-devices-running-microsoft-365-apps). You can then deploy to this collection the Microsoft 365 Apps updates for all channels supported by your organization, and each device will fetch the matching update. At the same time, devices changing channels have access to the new one.
 
 ![Screenshot from Configuration Manager showing updates from different channels deployed to the same collection](../images/fieldnotes/move-mec-w-configmgr-3.png)
 
@@ -105,7 +105,7 @@ In the next [hardware inventory cycle](https://docs.microsoft.com/mem/configmgr/
 
 ![Screenshot from Configuration Manager collections with devices moved from one to another collection](../images/fieldnotes/move-mec-w-configmgr-4.png)
 
-## Notes
+## Additional details
 
 - Make sure to use Office Deployment Tool version 16.0.12827.20258 or higher to have Monthly Enterprise Channel support included. We recommend that you always run the latest version of the ODT.
 - If you have a Group Policy applied to the device that sets the **Update Channel**, it will overrule the Office Deployment Tool. In this case, the device won't perform a channel change unless you remove or adjust the Group Policy Object (GPO) setting. Make sure to deploy the latest [ADMX template](https://www.microsoft.com/download/details.aspx?id=49030) to have the Monthly Enterprise Channel available as an option to select.
