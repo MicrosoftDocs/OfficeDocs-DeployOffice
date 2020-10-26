@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to handle multiple update channels, you might have to review multiple Office releases, or you might have to identify and remediate devices which are showing a configuration drift. This article will share some best practices on how to use Microsoft Entdpoint Configuration Manager's [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries automatically. These dynamic collections update themselves automatically and provide a current view of your environment.
+Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices which are showing a configuration drift. This article will share some best practices on how to use Microsoft Endpoint Configuration Manager's [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
 
 This article covers the following scenarios:
 
