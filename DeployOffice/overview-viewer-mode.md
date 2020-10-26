@@ -16,11 +16,11 @@ description: "Overview of viewer mode for Microsoft 365 Apps."
 
 # Overview of viewer mode for Microsoft 365 Apps
 
-Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription.
+Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must use a supported version of Microsoft 365 Apps for enterprise.
 
-Viewer mode is designed for users who need to view or print Office files without creating or editing them. For example, a doctor or nurse can use this mode to open files in Office from a health-care line-of-business application.
+Viewer mode is designed for users who need to view or print Office files without creating or editing. For example, a doctor or nurse can use this mode to open files in Office from a health-care line-of-business application. Viewer mode is a benefit to users of Office for the web.
 
-When viewer mode is enabled, an unlicensed user of Microsoft 365 Apps is not prompted to activate Office when they open Word, Excel, or PowerPoint. Instead, they see a banner message underneath the ribbon in their Office apps that informs them that Office is in viewer mode:
+When viewer mode is enabled, an unlicensed user of Microsoft 365 Apps for enterprise is not prompted to activate Office when they open Word, Excel, or PowerPoint. Instead, they see a banner message underneath the ribbon in their Office apps that informs them Office is in viewer mode:
 
 :::image type="content" source="images/viewermode2.png" alt-text="Viewer mode enabled in Word":::
 
@@ -38,8 +38,8 @@ To use these policy settings, download and install the [Administrative Template 
 
 ## Considerations when using viewer mode
 
-- Viewer mode is currently supported for Word, Excel, PowerPoint (Version 1902), Project and Visio (Version 2005). 
+- Viewer mode is currently supported for Word, Excel, PowerPoint(Version 1902 or later), Project and Visio (Version 2005 or later). 
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
-- For information about the availability of Version 1902 or later in the update channels for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+- For information about the availability of specific versions in the update channels for Microsoft 365 Apps for enterprise, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 - The Activate Product button under File > Account is hidden when Office is in viewer mode.
 - Even when viewer mode is enabled, users need to accept the license agreement when Office is opened for the first time. You can automatically accept the license agreement for your users when you deploy Office by configuring the [AcceptEULA attribute](office-deployment-tool-configuration-options.md#accepteula-attribute-part-of-display-element).

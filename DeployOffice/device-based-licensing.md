@@ -38,7 +38,7 @@ To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet 
 ## Steps to configure device-based licensing for Microsoft 365 Apps for enterprise
 
 After you have verified that your Windows 10 devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following:
-- Add the Windows 10 devices to a group that's available in Azure AD and assign the appropriate licenses to that group.
+- Add the Windows 10 devices to a group that's available in Azure AD and assign the appropriate licenses to that group. The license assignment is done in the M365 Admin Portal > Billing > Licenses. 
 - Configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing.
 
 > [!IMPORTANT]
@@ -46,7 +46,7 @@ After you have verified that your Windows 10 devices and Microsoft 365 Apps for 
 
 ### Add Windows 10 devices to a group in Azure AD and assign that group licenses
 
-To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.
+To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.The license assignment is done in the M365 Admin Portal > Billing > Licenses. 
 
 
 | Group type | Create using these tools |
