@@ -105,7 +105,7 @@ In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both cha
 > [!IMPORTANT]
 > It's important to note that devices will only download applicable updates. Devices won't download both updates but only the required update. Because the delta calculation also applies, devices don't pull the full update source but only the content needed to perform the update or channel change.
 
-A common practice is to have a [dynamic collection that catches all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md##implement-a-collection-that-catches-all-devices-running-microsoft-365-apps). You can then deploy to this collection the Microsoft 365 Apps updates for all channels supported by your organization, and each device will fetch the matching update. At the same time, devices changing channels have access to the new one.
+A common practice is to have a [dynamic collection that catches all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). You can then deploy to this collection the Microsoft 365 Apps updates for all channels supported by your organization, and each device will fetch the matching update. At the same time, devices changing channels have access to the new one.
 
 ![Screenshot from Configuration Manager showing updates from different channels deployed to the same collection](../images/fieldnotes/move-mec-w-configmgr-3.png)
 
