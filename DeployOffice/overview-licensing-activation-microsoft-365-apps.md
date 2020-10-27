@@ -54,8 +54,16 @@ There are various licensing modes that can be used with a supported version of M
 - The Device Based License is designed to simplify management of Microsoft 365 Apps for Enterprise on devices shared by many users.  Anyone that signs in and uses that device can use Microsoft 365 Apps for Enterprise to create and edit documents.  Device Based Licensing does not require user level activation and does not require the user to have an Azure Active Directory account.  There is no limit to the number of sign-ins and anyone with device access can use Microsoft 365 Apps for Enterprise applications.
 - It is applicable in shared and open access device scenarios where users work across multiple shared devices or where users need occasional access.  This is an ideal mode for healthcare and education customers that do not sync generic accounts to Azure Active Directory.
 
->[!NOTE]
->The device must be synced to Azure Active Directory for a Device Based License to be assigned.
+> [!NOTE]
+> The device must be synced to Azure Active Directory for a Device Based License to be assigned.
+
+### Unattended License
+[More Information](https://developer.microsoft.com/en-us/office/blogs/new-licensing-options-for-microsoft-365-for-unattended-scenarios)
+- Organizations use an array of tools to connect applications and processes together, including frameworks automating other applications.  These automation processes may be unattended in their operation and leveraging traditional user accounts is not best practice.
+- The Unattended License allows for the use of Office with service accounts or other non-user accounts, typically common for automation process execution.
+
+> [!NOTE]
+> Office applications are not specifically designed for large scale unattended usage scenarios.  For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](https://docs.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
 
 ### Viewer Mode
 [More Information](https://docs.microsoft.com/en-us/deployoffice/overview-viewer-mode)
