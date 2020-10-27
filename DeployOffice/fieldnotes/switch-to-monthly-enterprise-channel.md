@@ -21,31 +21,25 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
 
-The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Endpoint Configuration Manager to change channels. The following steps assume that you use Configuration Manager to manage your devices and deploy [Microsoft 365 Apps client updates](https://docs.microsoft.com/deployoffice/manage-microsoft-365-apps-updates-configuration-manager).
+The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Endpoint Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](https://docs.microsoft.com/deployoffice/manage-microsoft-365-apps-updates-configuration-manager).
 
-The article shows the individual steps aligned to a common approach to moving devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel:
+The article shows a common approach to move devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. The admin has to perform three actions:
 
-1. Group devices based on their current channel in [dynamic collections](build-dynamic-lean-configuration-manager.md) for easier targeting of deployments. Group all devices running Microsoft 365 Apps for enterprise in an additional collection.
+1. Group devices based on their currently installed channel in distinct [dynamic collections](build-dynamic-lean-configuration-manager.md).
 
-1. The admin creates and deploys an application to change the assigned update channel to Monthly Enterprise Channel by using the collection holding all SAEC devices.
+1. Create and deploy an application to change the assigned update channel to Monthly Enterprise Channel.
 
-1. The admin deploys Microsoft 365 Apps update for Monthly Enterprise Channel to the collection holding all Microsoft 365 Apps devices.
+1. Deploy Microsoft 365 Apps update for Monthly Enterprise Channel to a collection holding all Microsoft 365 Apps devices.
 
-1. The device executes application and updates the Click-to-Run service configuration with the newly assigned update channel.
+This will trigger the following flow of events on Configuration Manager and the individual device:
 
-1. During the next [Software Updates Deployment Evaluation Cycle](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process), the Click-to-Run service will download updates from the distribution point and install builds from the new channel.
+1. Configuration Manager automatically adds/removes devices based on the currently installed channel for easier targeting of a specific channel.
 
-   The device now runs on the new channel.
+1. The device executes the assigned application and updates the Click-to-Run configuration with the newly assigned update channel.
+
+1. During the next [Software Updates Deployment Evaluation Cycle](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process), Click-to-Run will download and install the client update from the new channel. The device now runs on the new channel.
    
-1. Configuration Manager receives an updated hardware inventory and then automatically moves the device from the **SAEC devices** collection to the **MEC devices** collection.
-
-The admin must take three actions:
-
-1. Group the devices you want to target in a collection, preferably a [dynamic collection tailored for the Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md).
-
-1. Create and deploy an application to inject the new channel assignment into the devices.
-
-1. Ensure that the Microsoft 365 Apps update for the Monthly Enterprise Channel is available for devices.
+1. Configuration Manager receives an updated hardware inventory and automatically removes the device from the old collection and adds it to the **MEC devices** collection.
 
 ## Group targeted devices
 
@@ -103,7 +97,7 @@ In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both cha
 - Devices that have already received instructions to switch channels will download and apply the update from the Monthly Enterprise Channel.
 
 > [!IMPORTANT]
-> It's important to note that devices will only download applicable updates. Devices won't download both updates but only the required update. Because the delta calculation also applies, devices don't pull the full update source but only the content needed to perform the update or channel change.
+> It's important to note that devices will only download applicable updates. Devices won't download both updates but only the required one. Because the delta calculation also applies, devices don't pull the full update source but only the content needed to perform the update or channel change.
 
 A common practice is to have a [dynamic collection that catches all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). You can then deploy to this collection the Microsoft 365 Apps updates for all channels supported by your organization, and each device will fetch the matching update. At the same time, devices changing channels have access to the new one.
 
@@ -123,9 +117,9 @@ In the next [hardware inventory cycle](https://docs.microsoft.com/mem/configmgr/
 
 - If you have a Group Policy applied to the device that sets the **Update Channel**, it will overrule the Office Deployment Tool. In this case, the device won't perform a channel change unless you remove or adjust the Group Policy Object (GPO) setting. Make sure to deploy the latest [ADMX template](https://www.microsoft.com/download/details.aspx?id=49030) to have the Monthly Enterprise Channel available as an option to select.
 
-- Configuration Manager only applies device updates if the targeted build version is later than the currently installed build. Moving devices from Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview) to Monthly Enterprise Channel just works. If you want to move devices from Current Channel to Monthly Enterprise Channel, you have two options:
+- Configuration Manager only applies device updates if the targeted build version is higher than the currently installed build. Moving devices from Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview) to Monthly Enterprise Channel just works. If you want to move devices from Current Channel to Monthly Enterprise Channel, you have two options:
 
-   - After the device receives the intent to switch channels, the device will no longer apply Current Channel updates. Devices will switch channels after the Monthly Enterprise Channel build passes the installed Current Channel build.
+   - After the device receives the intent to switch channels, the device will no longer apply any Current Channel updates. It will switch channels only after the Monthly Enterprise Channel build passed the installed Current Channel build.
    
    - Detach devices from Configuration Manager as the update source by disabling the Office COM Management interface. This is a major change that you must plan and execute with caution.
    
