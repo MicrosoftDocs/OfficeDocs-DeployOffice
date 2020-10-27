@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to handle multiple update channels, you might have to review multiple Office releases, or you might have to identify and remediate devices which are showing a configuration drift. This article will share some best practices on how to use Microsoft Entdpoint Configuration Manager's [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries automatically. These dynamic collections update themselves automatically and provide a current view of your environment.
+Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices which are showing a configuration drift. This article will share some best practices on how to use Microsoft Endpoint Configuration Manager's [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
 
 This article covers the following scenarios:
 
@@ -35,7 +35,7 @@ For each scenario, you will find a detailed step-by-step guide as well as some n
 
 Follow these steps to create a dynamic collection that will capture devices which run Office on a specific update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily. We recommend that you set up one collection per update channel that your manage.
 
-Once those collections are set up, you can use them to publish applications which allow users to initiate an [update channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager). You can also deploy the application as required, in case you want to switch away from an update channel completely. For example, you can move from [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview).
+Once those collections are set up, you can use them to publish applications which allow users to initiate an [update channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager). You can also deploy the application as required, in case you want to switch away from an update channel completely. For example, you can move from [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview). We also have [detailed guidance for switching to Monthly Enterprise Channel](switch-to-monthly-enterprise-channel.md) available.
 
 Here is how to implement these collections:
 
@@ -60,14 +60,14 @@ Here is how to implement these collections:
 
    The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
 
-   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes-dyncollection-1.png)
+   ![Screenshot from Configuration Manager Wizard showing the query editor](../images/fieldnotes/build-dynamic-lean-configuration-manager-1.png)
 
 7. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 8. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
 Repeat these steps for each update channel that you want to be captured in a separate collection. The result might look like this:
 
-![Screenshot from Configuration Manager showing three collections](../images/fieldnotes-dyncollection-2.png)
+![Screenshot from Configuration Manager showing three collections](../images/fieldnotes/build-dynamic-lean-configuration-manager-2.png)
 
 ## Catch devices running Microsoft 365 Apps
 
@@ -100,7 +100,7 @@ After you created collections for the update channels that you support, you migh
 3. Select **Add Rule** and choose **Include Collections**. Select the collection that you created to [catch all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). Select **OK**.
 4. Select **Add Rule** again and choose **Select Exclude Collections**. Select the collections you created that [catch devices on supported update channels](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific update-channels). Select **OK**.
 
-   ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes-dyncollection-3.png)
+   ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes/build-dynamic-lean-configuration-manager-3.png)
 
 5. Select **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
