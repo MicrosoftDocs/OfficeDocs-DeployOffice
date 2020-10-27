@@ -80,7 +80,7 @@ Follow these steps to deploy an application to initiate an update channel change
     
       - **Setting Type**: Registry
       - **Hive**: HKEY_LOCAL_MACHINE
-      - **Key**: setup.exe /configure UpdateChannel_MEC.xml
+      - **Key**: SOFTWARE\Microsoft\Office\ClickToRun\Configuration
       - **Value**: CDNBaseUrl
       - **Data Type**: String
       - **Operator**: Equals
