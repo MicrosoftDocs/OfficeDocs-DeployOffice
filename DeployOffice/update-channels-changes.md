@@ -26,7 +26,7 @@ For the official announcement of these changes, [read this blog post](https://te
 
 ## Monthly Enterprise Channel
 
-We recommend that you use choose an update channel that provides your users with the newest Office features as soon as they're ready. For the last several years, Monthly Channel has provided that capability, delivering new or updated Office features every month, but on no set release schedule.
+We recommend that you choose an update channel that provides your users with the newest Office features as soon as they're ready. For the last several years, Monthly Channel has provided that capability, delivering new or updated Office features every month, but on no set release schedule.
 
 Based on customer feedback, we're now introducing Monthly Enterprise Channel. This update channel provides new Office features to Microsoft 365 Apps once a month, on the second Tuesday of the month. While we still recommend Monthly Channel (to be renamed Current Channel), if you need a more predictable release schedule for monthly feature updates, Monthly Enterprise Channel can provide that for you. These once-a-month updates will also include, as needed, security updates and non-security updates.
 
