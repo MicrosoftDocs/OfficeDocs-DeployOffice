@@ -14,9 +14,12 @@ description: "Provides Office admins with information about the implications of 
 
 # Windows Server end of support and Microsoft 365 Apps
 
-Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
+> [!IMPORTANT]
+> - Microsoft 365 Apps is not supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
+> - Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time.
+> - If your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to Windows Server 2019 or [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
 
-Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to Windows Server 2019 or [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
+Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](https://docs.microsoft.com/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 The following sections provide information about support for Microsoft 365 Apps on various versions of Windows Server.
 
@@ -33,6 +36,9 @@ For information about managing updates to Microsoft 365 Apps on Windows Server 2
 ## Windows Server 2012
 
 As of January 14, 2020, Microsoft 365 Apps isn’t supported on Windows Server 2012, even though Windows Server 2012 is supported until October 10, 2023.
+
+> [!WARNING]
+> There are known functionality and stability issues when running Version 2005 or later of Microsoft 365 Apps on Windows Server 2012.
 
 If you’re using Microsoft 365 Apps on a device running Windows Server 2012, you should be aware of the following information about updates to the Office apps:
 
