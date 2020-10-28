@@ -42,7 +42,7 @@ As of January 14, 2020, Microsoft 365 Apps isn’t supported on Windows Server 2
 
 If you’re using Microsoft 365 Apps on a device running Windows Server 2012, you should be aware of the following information about updates to the Office apps:
 
-- If you’ve configured the Office apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, Version 2004 is the last update you'll receive for the Office apps. You'll no longer receive any feature, security, and other quality updates beyond Version 2004.
+- If you’ve configured the Office apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, Version 2002 is the last update you'll receive for the Office apps. You'll no longer receive any feature, security, and other quality updates beyond Version 2002.
 - If you control the deployment of updates of Office apps (for example, by using Microsoft Endpoint Configuration Manager) deploying Version 2005 or later will result in functionality and stability issues for the Office apps. These issues are caused by features in Version 2005 and later that aren’t compatible with Windows Server 2012.
 
 ## Windows Server 2012 R2

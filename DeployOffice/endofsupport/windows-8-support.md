@@ -31,7 +31,7 @@ Using Microsoft 365 Apps on older, unsupported operating systems may cause perfo
 
 If you’re using Microsoft 365 Apps on a device running Windows 8, you should be aware of the following information about updates to the Office apps:
 
-- If you’ve configured the Office apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, Version 2004 is the last update you'll receive for the Office apps. You'll no longer receive any feature, security, and other quality updates beyond Version 2004.
+- If you’ve configured the Office apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, Version 2002 is the last update you'll receive for the Office apps. You'll no longer receive any feature, security, and other quality updates beyond Version 2002.
 - If you control the deployment of updates of Office apps (for example, by using Microsoft Endpoint Configuration Manager) deploying Version 2005 or later will result in functionality and stability issues for the Office apps. These issues are caused by features in Version 2005 and later that aren’t compatible with Windows 8.
 
 ## Upgrade from Windows 8 to a supported operating system
