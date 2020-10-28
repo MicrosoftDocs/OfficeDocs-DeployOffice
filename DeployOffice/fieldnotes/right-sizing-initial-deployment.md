@@ -55,7 +55,7 @@ The good news is that we do not have to think in extremes. Instead, we can use a
 
 To be able to identify which language packs we should exclude; we can generate an overview of how often each language pack is installed. We can then add up the number of all language pack installs and calculate the share of each one. Typically, the distribution is not even and a small subset of language packs accounts for the majority of installs as shown below:
 
-![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/Lean6-Rightsize_3.png)
+![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/fieldnotes/Lean6-Rightsize_3.png)
 
 In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl and ru-ru) account for 92% of all language pack installations. The remaining 16 language packs are only installed on 8% of all devices. Based on this data, we can calculate the impact on the on-prem WAN/LAN as well as internet connections (caused by devices having to to download additional source files):
 
