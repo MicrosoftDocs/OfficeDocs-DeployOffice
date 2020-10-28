@@ -91,7 +91,7 @@ For the last bullet, perform these calculations for each group:
 
 For the above table, it could look like this:
 
-![Table showing the savings per language pack combination](../images/fieldnotes/right-sizing-initial-deployment-4.png)
+![Table showing the savings per language pack combination](../images/fieldnotes/right-sizing-initial-deployment-3.png)
 
 Decide which language packs you want to include and note them down.
 
@@ -129,7 +129,7 @@ The next step is to craft a deployment package which includes the selected langu
 
 7. Save the file and return to the Configuration Manager console. Navigate to **Software Library** > **Application Management** > **Applications**, select your application, switch to the **Deployment Types** tab, right-click the matching entry and click **Update Content**.
 
-![Screenshot of Configuration Manager console](../images/fieldnotes/right-sizing-initial-deployment-5.png)
+![Screenshot of Configuration Manager console](../images/fieldnotes/right-sizing-initial-deployment-4.png)
 
 8. Once all distribution points have synchronized the changes, you can deploy your application as usual.
 
