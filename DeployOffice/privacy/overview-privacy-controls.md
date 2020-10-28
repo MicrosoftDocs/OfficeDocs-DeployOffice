@@ -25,7 +25,7 @@ hideEdit: true
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
-- ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
+- ***Diagnostic data*** that is collected and sent to Microsoft about Office client software running on the user's device in your organization.
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 As part of these changes, there are new and updated user interface (UI) elements and policy settings.
@@ -34,7 +34,7 @@ As part of these changes, there are new and updated user interface (UI) elements
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
-This diagnostic data is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
+This diagnostic data is collected and sent to Microsoft about Office client software running on the user's device in your organization.
 
 There are three levels of diagnostic data for Microsoft 365 Apps for enterprise client software that you can choose from:
 
