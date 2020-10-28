@@ -25,7 +25,7 @@ hideEdit: true
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
-- ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
+- ***Diagnostic data*** that is collected and sent to Microsoft about Office client software running on the user's device in your organization.
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 As part of these changes, there are new and updated user interface (UI) elements and policy settings.
@@ -34,7 +34,7 @@ As part of these changes, there are new and updated user interface (UI) elements
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
-This diagnostic data is collected and sent to Microsoft about Office client software being used on computers running Windows in your organization.
+This diagnostic data is collected and sent to Microsoft about Office client software running on the user's device in your organization.
 
 There are three levels of diagnostic data for Microsoft 365 Apps for enterprise client software that you can choose from:
 
@@ -56,7 +56,7 @@ This diagnostic data doesn’t include names of users, their email addresses, or
 
 To see what diagnostic data is being sent to Microsoft, you can use the Diagnostic Data Viewer, which you can download and install for free from the Microsoft Store.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
@@ -84,7 +84,7 @@ If you choose not to provide your users with certain types of connected experien
 
 Your users won’t be able to choose whether to turn these connected experiences on or off if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Connected experiences in Office](connected-experiences.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
@@ -102,7 +102,7 @@ Because these optional connected experiences are governed by separate terms and 
 
 Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
@@ -125,6 +125,6 @@ There is also a set of services that are essential to how Microsoft 365 Apps for
 
 For more information, see [Essential services for Office](essential-services.md).
 
-## Related topics
+## Related articles
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
 - [Windows privacy](https://docs.microsoft.com/windows/privacy/)

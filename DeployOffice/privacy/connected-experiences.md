@@ -120,7 +120,7 @@ The following table provides a list of those other connected experiences and pro
 | Focused Inbox (Outlook) |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Office add-ins*\* | [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| *Office add-ins*\* | [View, manage, and install add-ins in Office programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
 | Organization chart (Visio) |[Create an organization chart in Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
