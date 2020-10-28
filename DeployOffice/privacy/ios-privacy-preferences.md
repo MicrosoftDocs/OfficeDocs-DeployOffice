@@ -18,6 +18,9 @@ hideEdit: true
 
 # Use preferences to manage privacy controls for Office on iOS devices
 
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 There are new preference settings for Office on iOS devices that allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used.
@@ -25,14 +28,6 @@ There are new preference settings for Office on iOS devices that allow you to co
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
-
-These preference settings apply to the following applications:
-- Version 2.30 and later of Word for iOS, Excel for iOS, and PowerPoint for iOS.
-- Version 4.30.0 and later of Outlook for iOS
-- Version 16.30 and later of OneNote for iOS.
-- Version 11.19.11 and later of OneDrive for iOS.
-- Version 1.17 and later of Visio Viewer for iOS.
-- Version 2.34 and later of the Office app for iOS.
 
 > [!NOTE]
 > For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)

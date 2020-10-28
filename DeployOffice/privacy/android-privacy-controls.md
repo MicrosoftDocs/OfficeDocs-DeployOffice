@@ -17,6 +17,9 @@ hideEdit: true
 
 # Use policy settings to manage privacy controls for Office on Android devices
 
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 There are policy settings for Office on Android devices that allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used.
@@ -24,13 +27,6 @@ There are policy settings for Office on Android devices that allow you to contro
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
-
-These policy settings apply to the following applications:
-- Version 16.0.12228.20260 and later of Word for Android, Excel for Android, and PowerPoint for Android.
-- Version 4.1.71 and later of Outlook for Android.
-- Version 16.0.12228.20004 and later of OneNote for Android.
-- Version 5.47 and later of OneDrive for Android.
-- Version 16.0.12430.20254 and later of the Office app for Android.
 
 ## Policy settings available for Office on Android devices
 
