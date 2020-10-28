@@ -56,7 +56,7 @@ This diagnostic data doesn’t include names of users, their email addresses, or
 
 To see what diagnostic data is being sent to Microsoft, you can use the Diagnostic Data Viewer, which you can download and install for free from the Microsoft Store.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
@@ -84,7 +84,7 @@ If you choose not to provide your users with certain types of connected experien
 
 Your users won’t be able to choose whether to turn these connected experiences on or off if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Connected experiences in Office](connected-experiences.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
@@ -102,7 +102,7 @@ Because these optional connected experiences are governed by separate terms and 
 
 Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Overview of optional connected experiences in Office](optional-connected-experiences.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
@@ -125,6 +125,6 @@ There is also a set of services that are essential to how Microsoft 365 Apps for
 
 For more information, see [Essential services for Office](essential-services.md).
 
-## Related topics
+## Related articles
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
 - [Windows privacy](https://docs.microsoft.com/windows/privacy/)
