@@ -55,11 +55,11 @@ The good news is that we do not have to think in extremes. Instead, we can use a
 
 To be able to identify which language packs we should exclude; we can generate an overview of how often each language pack is installed. We can then add up the number of all language pack installs and calculate the share of each one. Typically, the distribution is not even and a small subset of language packs accounts for the majority of installs as shown below:
 
-![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/fieldnotes/Lean6-Rightsize_3.png)
+![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/fieldnotes/right-sizing-initial-deployment-1.png)
 
 In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl and ru-ru) account for 92% of all language pack installations. The remaining 16 language packs are only installed on 8% of all devices. Based on this data, we can calculate the impact on the on-prem WAN/LAN as well as internet connections (caused by devices having to to download additional source files):
 
-![Spreadsheet showing the different impact on LAN/WAN and internet bandwidth for different language pack combinations](../images/Lean6-Rightsize_2.png)
+![Spreadsheet showing the different impact on LAN/WAN and internet bandwidth for different language pack combinations](../images/fieldnotes/right-sizing-initial-deployment-2.png)
 
 We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic as well as internet bandwidth consumed. But if we include just the 8 language packs mentioned above, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50% and we will save more than 180 terabytes of LAN/WAN network traffic. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md) and [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
@@ -91,7 +91,7 @@ For the last bullet, perform these calculations for each group:
 
 For the above table, it could look like this:
 
-![Table showing the savings per language pack combination](../images/Lean6-Rightsize_4.png)
+![Table showing the savings per language pack combination](../images/fieldnotes/right-sizing-initial-deployment-4.png)
 
 Decide which language packs you want to include and note them down.
 
@@ -129,7 +129,7 @@ The next step is to craft a deployment package which includes the selected langu
 
 7. Save the file and return to the Configuration Manager console. Navigate to **Software Library** > **Application Management** > **Applications**, select your application, switch to the **Deployment Types** tab, right-click the matching entry and click **Update Content**.
 
-![Screenshot of Configuration Manager console](../images/Lean6-Rightsize_5.png)
+![Screenshot of Configuration Manager console](../images/fieldnotes/right-sizing-initial-deployment-5.png)
 
 8. Once all distribution points have synchronized the changes, you can deploy your application as usual.
 
