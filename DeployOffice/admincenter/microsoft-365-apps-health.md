@@ -23,6 +23,9 @@ Requirements:
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 
+> [!NOTE]
+> The dashboard might show insights for versions older than 1908, but those versions aren't officially supported.
+
 ## How to get to the health dashboard
 
 Go to the [Microsoft 365 Apps admin center](https://config.office.com) and click **Health** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
