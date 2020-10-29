@@ -44,11 +44,14 @@ Several things have to happen for the Microsoft Search in Bing extension to be i
 - A background service for Microsoft Search in Bing must be installed on the user's device. This background service is included with Microsoft 365 Apps for enterprise.
 - The device must meet specific criteria  for the extension to be installed.
 
-For more details, see the following sections.
+For more information, see the following sections.
 
 ### Configure the setting in the Microsoft 365 admin center to allow the extension to be installed
 
-To allow the extension to be installed, sign in to the Microsoft 365 admin center with your admin account. Then, go to **Show all** > **Settings** > **Microsoft Search** > **Configurations**, and then choose **Edit**.
+To allow the extension to be installed, sign in to the Microsoft 365 admin center with your admin account. Then, go to **Show all** > **Settings** > **Search & intelligence** > **Configurations**, and then choose **Edit**.
+
+> [!NOTE]
+> **Search & intelligence** was previously named **Microsoft Search**.
 
 There you'll see the **Install extension and set Bing as the default search engine** check box. The check box is not selected by default, as shown in the following screenshot.
 
