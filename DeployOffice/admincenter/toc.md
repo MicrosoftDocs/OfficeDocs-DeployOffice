@@ -9,4 +9,3 @@
 ### [Inventory (preview)](inventory.md)
 ### [Security update status (preview)](security-update-status.md)
 ### [Servicing profile (preview)](servicing-profile.md)
-### [Known issues and release notes](known-issues.md)
