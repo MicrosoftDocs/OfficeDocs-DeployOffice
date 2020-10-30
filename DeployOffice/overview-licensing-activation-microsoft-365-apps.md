@@ -50,7 +50,7 @@ There are various licensing modes that can be used with a supported version of M
 - This mode is typically used in scenarios with multiple licensed users connecting to the same device.  It is the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI).  It is ideal for shift workers, bank tellers, and users that need to [roam](office-deployment-tool-configuration-options.md#sharedcomputerlicensing-property-part-of-property-element) across devices.
 
 ### Device Based Licensing
-[More Information](deployoffice/device-based-licensing.md)
+[More Information](device-based-licensing.md)
 - The Device Based License is designed to simplify management of Microsoft 365 Apps for Enterprise on devices shared by many users.  Anyone that signs in and uses that device can use Microsoft 365 Apps for Enterprise to create and edit documents.  Device Based Licensing does not require user level activation and does not require the user to have an Azure Active Directory account.  There is no limit to the number of sign-ins and anyone with device access can use Microsoft 365 Apps for Enterprise applications.
 - It is applicable in shared and open access device scenarios where users work across multiple shared devices or where users need occasional access.  This is an ideal mode for healthcare and education customers that do not sync generic accounts to Azure Active Directory.
 
