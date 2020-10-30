@@ -1,5 +1,5 @@
 ---
-title: "Manage software download settings in Office 365"
+title: "Manage Office installation options in the Microsoft 365 admin center"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -9,16 +9,16 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-description: "Provides Office 365 admins with information to help them configure software download settings in the admin center."
+description: "Provides admins with information to help them configure Office installation options in the Microsoft 365 admin center."
 ---
 
 
-# Manage software download settings in Office 365
+# Manage Office installation options in the Microsoft 365 admin center
 
-As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office software download settings** page determine which software users can install from the **My account** > **Apps & devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
+As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office installation options** page determine which software users can install from the **My account** > **Apps & devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
 
 > [!TIP]
-> To get to the **Office software download settings** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
+> To get to the **Office installation options** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
   
 If you choose to make some software unavailable to users, they see a message on their **My account** > **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
@@ -50,8 +50,8 @@ In addition to Office, you can download InfoPath 2013 and SharePoint Designer 20
     
 After you download the software, you can use your existing software deployment tools and processes to deploy InfoPath or SharePoint Designer to your users.
   
-## Additional considerations about managing software download settings in Office 365
-- The list of Office software that appears on the **Office software download settings** page depends on the type of Office 365 (or Microsoft 365) plan that your organization has. 
+## Additional considerations about managing Office installation options
+- The list of Office software that appears on the **Office installation options** page depends on the type of Office 365 (or Microsoft 365) plan that your organization has. 
     
 - Users have to be local administrators on their computers to install Office software. If users aren't local administrators, you'll have to install Office for them.
     
