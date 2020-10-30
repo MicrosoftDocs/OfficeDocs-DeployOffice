@@ -17,7 +17,7 @@ hideEdit: true
 > - The information in this article only applies to organizations that received [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) post MC215291 on June 4, 2020.
 > - If you don’t use Configuration Manager to deploy updates for Microsoft 365 Apps by using Windows Server Update Services (WSUS) and Office COM, or if you're using Group Policy to specify an update channel for your devices, then this issue doesn’t apply to your organization and no action is needed on your part.
 
-In the last few months, we contacted you about helping you move certain devices in your organization from Semi-Annual Enterprise Channel to Current Channel. We intended to move only devices configured to get updates directly from the Office Content Delivery Network (CDN) on the internet and only when **Current Channel** was selected on the **Office software download settings** page in the Microsoft 365 admin center. 
+In the last few months, we contacted you about helping you move certain devices in your organization from Semi-Annual Enterprise Channel to Current Channel. We intended to move only devices configured to get updates directly from the Office Content Delivery Network (CDN) on the internet and only when **Current Channel** was selected on the **Office installation options** page in the Microsoft 365 admin center. 
 
 While we were able to assist you in moving those devices to Current Channel, we recently identified an issue with some devices that are configured to receive updates from Configuration Manager. For those devices, we might have inadvertently moved those devices in your organization from Semi-Annual Enterprise Channel to Current Channel.
 
