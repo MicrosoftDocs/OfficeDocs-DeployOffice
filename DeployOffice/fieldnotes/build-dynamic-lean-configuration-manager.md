@@ -98,7 +98,7 @@ After you created collections for the update channels that you support, you migh
 1. Navigate to **Assets and Compliance**. Select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and select a limiting collection. Select **Next**.
 3. Select **Add Rule** and choose **Include Collections**. Select the collection that you created to [catch all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). Select **OK**.
-4. Select **Add Rule** again and choose **Select Exclude Collections**. Select the collections you created that [catch devices on supported update channels](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific update-channels). Select **OK**.
+4. Select **Add Rule** again and choose **Select Exclude Collections**. Select the collections you created that [catch devices on supported update channels](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels). Select **OK**.
 
    ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections](../images/fieldnotes/build-dynamic-lean-configuration-manager-3.png)
 
