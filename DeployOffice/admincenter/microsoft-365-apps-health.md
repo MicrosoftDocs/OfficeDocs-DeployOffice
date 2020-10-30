@@ -24,7 +24,8 @@ Requirements:
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 
 > [!IMPORTANT]
-> The dashboard might show insights for versions older than 1908, however these are not officially supported.
+> [!NOTE]
+> The dashboard might show insights for versions older than 1908, but those versions aren't officially supported.
 
 ## How to get to the health dashboard
 
