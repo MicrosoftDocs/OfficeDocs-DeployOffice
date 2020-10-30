@@ -50,4 +50,6 @@ If you don’t want your Office installations to be moved to Current Channel, ch
 
 If you choose **Don’t move the devices to Current Channel**, you’ll be taken to another page (as shown in the following screenshot), where you can choose to move your devices to Monthly Enterprise Channel or to remain on Semi-Annual Enterprise Channel. Of these 2 choices, we recommend Monthly Enterprise Channel, because you’ll still receive new features and other updates once a month, but on a predictable schedule (the second Tuesday of each month).
 
+After you make a selection, devices will be notified within 12 hours. Once notified, the devices will move to the selected update channel the next time they check for Office updates.
+
   ***[INSERT SCREENSHOT]***
