@@ -38,7 +38,7 @@ For organizations that don't have Configuration Manager but still want to manage
 
 If you use the ODT and have the network capacity, we recommend deploying Office from the cloud. Doing so will minimize your administrative overhead. If you don't have the network capacity to install Office on client devices from the cloud, you can use the ODT to download the Office files to a local source on your network and install from there.
 
-You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage software download settings in Office 365](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
+You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage Office installation options in the Microsoft 365 admin center](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
 
 Choose how you want to deploy:
 
