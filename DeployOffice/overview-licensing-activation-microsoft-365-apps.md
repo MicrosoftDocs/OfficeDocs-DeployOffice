@@ -40,17 +40,17 @@ After a user is assigned a license, you can deploy Office to your users or your 
 There are various licensing modes that can be used with a supported version of Microsoft 365 Apps.
 
 ### Subscription User Based Licensing
-[More Information](https://docs.microsoft.com/en-us/DeployOffice/about-microsoft-365-apps#licensing-differences)
+[More Information](about-microsoft-365-apps.md#licensing-differences)
 - This is the default licensing mode for Microsoft 365 Apps.  In this mode, the license is carried within the user’s profile.  With a single license, users can install and activate Microsoft 365 Apps on up to 5 desktops/laptops, 5 tablets, and 5 mobile devices.  Subscription User Based Licensing requires user level activation and requires user sign-in with an Azure Active Directory account.
 - It is recommended for most scenarios where the user has defined computers and don’t often share them.
 
 ### Shared Computer Activation
-[More Information](https://docs.microsoft.com/en-us/deployoffice/overview-shared-computer-activation)
+[More Information](overview-shared-computer-activation.md)
 - This licensing mode lets you deploy Microsoft 365 Apps to a single computer that is shared by multiple users and where those users are logging in with their own account.
-- This mode is typically used in scenarios with multiple licensed users connecting to the same device.  It is the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI).  It is ideal for shift workers, bank tellers, and users that need to [roam](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options#sharedcomputerlicensing-property-part-of-property-element) across devices.
+- This mode is typically used in scenarios with multiple licensed users connecting to the same device.  It is the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI).  It is ideal for shift workers, bank tellers, and users that need to [roam](office-deployment-tool-configuration-options.md#sharedcomputerlicensing-property-part-of-property-element) across devices.
 
 ### Device Based Licensing
-[More Information](https://docs.microsoft.com/en-us/deployoffice/device-based-licensing)
+[More Information](device-based-licensing.md)
 - The Device Based License is designed to simplify management of Microsoft 365 Apps for Enterprise on devices shared by many users.  Anyone that signs in and uses that device can use Microsoft 365 Apps for Enterprise to create and edit documents.  Device Based Licensing does not require user level activation and does not require the user to have an Azure Active Directory account.  There is no limit to the number of sign-ins and anyone with device access can use Microsoft 365 Apps for Enterprise applications.
 - It is applicable in shared and open access device scenarios where users work across multiple shared devices or where users need occasional access.  This is an ideal mode for healthcare and education customers that do not sync generic accounts to Azure Active Directory.
 
@@ -58,15 +58,15 @@ There are various licensing modes that can be used with a supported version of M
 > The device must be synced to Azure Active Directory for a Device Based License to be assigned.
 
 ### Unattended License
-[More Information](https://developer.microsoft.com/en-us/office/blogs/new-licensing-options-for-microsoft-365-for-unattended-scenarios)
+[More Information](https://developer.microsoft.com/office/blogs/new-licensing-options-for-microsoft-365-for-unattended-scenarios)
 - Organizations use an array of tools to connect applications and processes together, including frameworks automating other applications.  These automation processes may be unattended in their operation and leveraging traditional user accounts is not best practice.
 - The Unattended License allows for the use of Office with service accounts or other non-user accounts, typically common for automation process execution.
 
 > [!NOTE]
-> Office applications are not specifically designed for large scale unattended usage scenarios.  For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](https://docs.microsoft.com/en-us/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
+> Office applications are not specifically designed for large scale unattended usage scenarios.  For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](https://docs.microsoft.com/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
 
 ### Viewer Mode
-[More Information](https://docs.microsoft.com/en-us/deployoffice/overview-viewer-mode)
+[More Information](overview-viewer-mode.md)
 - This mode can be used when your organization has users that only need view/print capabilities instead of full create or edit capabilities.  This allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office.  When Word, Excel, or PowerPoint are opened, users see a banner message underneath the ribbon in their Office apps that informs them that Office is in Viewer Mode.
 - This is an ideal mode when the users have an Office for the Web license but not a Microsoft 365 Apps license.
 
