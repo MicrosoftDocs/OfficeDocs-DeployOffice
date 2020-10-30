@@ -45,14 +45,14 @@ For more information about update channels, see [Overview of update channels for
 
 If you don’t want your Office installations to be moved to Current Channel, choose **Don’t move the devices to Current Channel** button in the message on the **Office installation options** page, as shown in the following screenshot.
 
-![Screenshot showing the "Office installation options" page in the Microsoft 365 admin center and showing a message that says devices will be moved to Current Channel.](../images/move-devices-current-channel-message.png) 
+![Screenshot showing the "Office installation options" page in the Microsoft 365 admin center and showing a message that says devices will be moved to Current Channel.](../images/other/move-devices-current-channel-message-text.png) 
 
 > [!NOTE]
 > The date shown in the screenshot is an example. The date that applies for your organization is listed in the Message center post that you received and will be reflected in the message that appears on the **Office installation options** page.
 
 If you choose **Don’t move the devices to Current Channel**, you’ll be taken to another page (similar to the one shown in the following screenshot), where you can choose to move your devices to Monthly Enterprise Channel or to remain on Semi-Annual Enterprise Channel.
 
-![Screenshot showing a page entitled "Don't move the devices to Current Channel" with options to choose to move to Monthly Enterprise Channel or to keep on Semi-Annual Enterprise Channel.](../images/move-devices-current-channel-channel-option.png) 
+![Screenshot showing a page entitled "Don't move the devices to Current Channel" with options to choose to move to Monthly Enterprise Channel or to keep on Semi-Annual Enterprise Channel.](../images/other/move-devices-current-channel-dont-move-page.png) 
 
 Of these two choices, we recommend Monthly Enterprise Channel, because you’ll still receive new features and other updates once a month, but on a predictable schedule (the second Tuesday of each month).
 
