@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: None
+localization_priority: Normal
 hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
 ---
@@ -117,4 +117,6 @@ Microsoft 365 Apps health monitor the following metrics:
 - App File Open Time (local): indicates the time it takes from the moment the user opens a file from a local drive until the file is ready for user input, within the selected scope (app, build)
 - App File Open Time (SharePoint): indicates the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
-Note that "Pending" is displayed if not enough signals have been observed for the specific app and build.
+> [!NOTE]
+> "Pending" is displayed if not enough signals have been observed for the specific app and build.
+
