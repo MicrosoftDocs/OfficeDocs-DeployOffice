@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: None
+localization_priority: Normal
 hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps security currency within their environment"
 ---
@@ -26,7 +26,7 @@ Requirements:
 
 ## How to view security state status
 
-1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Health** anbd then click **Security update status** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Health** and then click **Security update status** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
 2. If you haven't viewed security update status before, complete the setup wizard.
 
 ## Security update status
