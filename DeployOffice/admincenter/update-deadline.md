@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: None
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
 ---
