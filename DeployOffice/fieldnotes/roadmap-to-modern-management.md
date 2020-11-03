@@ -74,7 +74,7 @@ With these new preview features, there are two scenarios to consider when moving
 - If you are planning to adopt Servicing Profiles at some point (see below), devices will automatically be moved to the Monthly Enterprise Channel. In this scenario there is no need to move devices upfront.
 - If you want to control the rate of devices switching to Monthly Enterprise Channel, are not ready to adopt Servicing Profiles yet, or want to manage on-prem bandwidth with existing on-prem tools, then you should perform the switch upfront.
 
-If you prefer to move your devices first, we have detailed guidance on how to [prepare your environment for multi-channel management](https://docs.microsoft.com/en-us/deployoffice/fieldnotes/build-dynamic-lean-configuration-manager), as well as how to perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](https://docs.microsoft.com/en-us/deployoffice/fieldnotes/switch-to-monthly-enterprise-channel). If you are not using Configuration Manager, you can adapt the [generic change update channel guidance](https://docs.microsoft.com/en-us/deployoffice/change-update-channels).
+If you prefer to move your devices first, we have detailed guidance on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md), as well as how to perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you are not using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
 
 ## Prepare your network for receiving updates from the internet
 
