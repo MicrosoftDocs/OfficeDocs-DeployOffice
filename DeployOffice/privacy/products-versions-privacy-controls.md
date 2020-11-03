@@ -70,6 +70,9 @@ Some Office products might not have certain types of connected experiences, so s
 
 To configure these privacy controls for your users that are using Office on Windows devices in your organization, you can use Group Policy or the Office cloud policy service. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md).
 
+> [!NOTE]
+> The "Allow the use of additional optional connected experiences in Office" privacy control is supported on volume licensed versions of Office 2019, Project 2019, and Visio 2019. You must be using at least Version 1808 (Build 10367.20048), which was released on October 13, 2020.
+
 ## Office on Mac devices
 
 Our most recent privacy controls are available for the following Office products when using Office on Mac devices:

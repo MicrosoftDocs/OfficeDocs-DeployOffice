@@ -96,6 +96,9 @@ If you're using Office for Mac, open any Office application and select the app m
 
 For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
+> [!NOTE]
+> If the admin for your organization has provided you with a volume licensed version of Office 2019, Project 2019, or Visio 2019, go to **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Privacy Options**.
+
 ## Your privacy settings
 
 If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
@@ -103,6 +106,9 @@ If your admin has given you the ability to use optional connected experiences in
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
 For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+
+> [!NOTE]
+> If the admin for your organization has provided you with a volume licensed version of Office 2019, Project 2019, or Visio 2019, go to **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Privacy Options**.
 
 ## Required service data
 
