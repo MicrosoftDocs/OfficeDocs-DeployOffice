@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Microsoft recently released into public preview, a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) for monitoring, managing and updating the installation of Microsoft 365 Apps for enterprise. The Microsoft 365 Apps Ranger team at Microsoft has worked with customers during the closed Preview phases and wants to share some best practices on how to adopt these new features.
+Microsoft recently released into public preview, a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) for monitoring, managing, and updating the installation of Microsoft 365 Apps for enterprise. The Microsoft 365 Apps Ranger team at Microsoft has worked with customers during the closed Preview phases and wants to share some best practices on how to adopt these new features.
 
 While there is no definitive or required way to adopt these new features, the order laid out below has proven to be successful in enabling admins to quickly recognize the benefits, while keeping the rate of change manageable. But ultimately, feel free to adjust your approach according to the needs of your organization.
 
@@ -35,7 +35,7 @@ A good starting point is to adopt [Apps health](../admincenter/microsoft-365-app
 Here is how to enable Apps health:
 
 1. Log into the Apps Admin Center at [config.office.com](https://config.office.com/).
-2. Navigate to **Health**, **Apps health**, read and accept the Preview EULA.
+2. Navigate to **Health**, **Apps health**, read and accept the Preview EULA (end user license agreements).
 3. It will take about 10 minutes for the service to be provisioned.
 
 You can then delve right into:
@@ -44,11 +44,11 @@ You can then delve right into:
 - Performance metrics such as application launch times and document load times.
 - Channel metrics such as which channels and builds are sending diagnostic data.
 
-You also have the ability to compare two builds, enabling you to quickly asses if a newly deployed build is more stable, the same, or less stable and fast as the previous one. This gives you the ability to pro-actively address issues, as opposed to waiting for issues to surface from end users after releasing a new build into your environment.
+You also can compare two builds, enabling you to quickly assess if a newly deployed build is more stable, the same, or less stable and fast as the previous one. This gives you the ability to pro-actively address issues, as opposed to waiting for issues to surface from end users after releasing a new build into your environment.
 
-Note that there is a minimum number of sessions required per app and version. This ensures that Apps health can calculate reliable insights. A session is the time frame from launching an application until it is closed. So for example, you are likely to see more sessions from an app like Excel than Outlook.
+Note that there is a minimum number of sessions required per app and version. This ensures that Apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
 
-If you have disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To leverage Apps health you will have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to Optional.
+If you have disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Apps health, you will have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to Optional.
 
 ## Get insights per device: Leverage Inventory and Security Update Status
 
@@ -95,14 +95,14 @@ For users working from home or on the road using VPN, you should consider:
 
 With [Servicing Profiles](../admincenter/servicing-profile.md), you can enable your tenant to take control over the update deployment to all devices connected to this tenant, regardless of how the device is actually managed (if at all). You can set up rules which control which devices are in-scope for the update deployment and monitor progress through tailored reports.
 
-There is no additional infrastructure or software agent required to enable this feature. As long as the device has provisioned itself into inventory, its characteristics will be evaluated by Servicing Profiles. If it matches the rules set by the admin, it will manage Microsoft 365 Apps updates on this device going forward. This enables you to cover installations on BYOD, personal or unmanaged devices which are connected to your tenant, as well as devices managed by Configuration Manager or Microsoft Endpoint Manager.
+There is no additional infrastructure or software agent required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by Servicing Profiles. If it matches the rules set by the admin, it will manage Microsoft 365 Apps updates on this device going forward. This enables you to cover installations on BYOD, personal or unmanaged devices which are connected to your tenant, as well as devices managed by Configuration Manager or Microsoft Endpoint Manager.
 
 Note that Servicing Profiles currently only supports managing Monthly Enterprise Channel updates, so any device which falls into the scope of the rules will be moved to this channel.
 
 Before you adopt Servicing Profiles, please consider the following:
 
-- All devices matching the ruleset will be switched over to Monthly Enterprise Channel and kept up-to-date going forward.
+- All devices matching the ruleset will be switched over to Monthly Enterprise Channel and kept up to date going forward.
 - There is currently no way to include or exclude specific devices.
 - Double-check if your network is set up to handle the traffic caused by moving devices to Monthly Enterprise Channel and the monthly updates.
 
-If everything mentioned above checks out, navigate to the Servicing Profile blade and follow the instructions in the wizard. Note that the Servicing Profile is active immediately after you save the profile. So if an eligible device checks in with the service right after you finished the wizard, it will get the instructions to move to the latest Monthly Enterprise update.
+If everything mentioned above checks out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile is active immediately after you save the profile. So, if an eligible device checks in with the service right after you finished the wizard, it will get the instructions to move to the latest Monthly Enterprise update.
