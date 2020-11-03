@@ -23,15 +23,15 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 
 ### As of October 29, 2020
 
-- Servicing Profile Device & Issues page take time to load
-- When creating the Serving profile with the default values, device will not be added to the profile
-- Please wait dialogue is sometimes shown on the Inventory page
+- The servicing profile device and issues page takes time to load.
+- When creating the serving profile with the default values, the device might not be added to the profile
+- The Inventory page sometimes displays a Please wait dialog box.
  
 
 ## Release notes
 
 ### October 29, 2020
 
-- New Channel selection option when creating the Servicing Profile
-- Fixed an issue in the first run experience crashing when setting up Servicing Profile
-- Updated the Servicing Profile "Getting Started" page to show more accurate devices numbers
+- Servicing profile now includes new update channel.
+- Fixed an issue in the first run experience crashing when setting up servicing profile.
+- Updated the servicing profile Getting started page to show more accurate devices numbers.
