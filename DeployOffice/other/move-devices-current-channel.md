@@ -16,7 +16,7 @@ hideEdit: true
 > [!IMPORTANT]
 > The information in this article applies only to organizations that received a Message center post entitled "Microsoft 365 Apps channel selection will be set to Current Channel for all installations of Office" in the Microsoft 365 admin center.
 
-Your update channel selection on the **Office installation options** page in the Microsoft 365 admin center is currently defaulted to Semi-Annual Enterprise Channel. Starting as soon as the end of November 2020, this selection will change to Current Channel, which is our recommended update channel.
+Your update channel selection on the **Office installation options** page in the Microsoft 365 admin center is currently defaulted to Semi-Annual Enterprise Channel. Starting as soon as early December 2020, this selection will change to Current Channel, which is our recommended update channel.
 
 > [!TIP]
 > - To get to the **Office installation options** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**.
@@ -48,7 +48,8 @@ If you don’t want your Office installations to be moved to Current Channel, ch
 ![Screenshot showing the "Office installation options" page in the Microsoft 365 admin center and showing a message that says devices will be moved to Current Channel.](../images/other/move-devices-current-channel-message-text.png) 
 
 > [!NOTE]
-> The date shown in the screenshot is an example. The date that applies for your organization is listed in the Message center post that you received and will be reflected in the message that appears on the **Office installation options** page.
+> - The date shown in the screenshot is an example. The date that applies for your organization is listed in the Message center post that you received and will be reflected in the message that appears on the **Office installation options** page.
+> - After that date, the message and the **Don't move the devices to Current Channel** option will no longer appear.
 
 If you choose **Don’t move the devices to Current Channel**, you’ll be taken to another page (similar to the one shown in the following screenshot), where you can choose to move your devices to Monthly Enterprise Channel or to remain on Semi-Annual Enterprise Channel.
 
