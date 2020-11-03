@@ -89,7 +89,7 @@ For users working from home or on the road using VPN, you should consider:
 
 - Configure VPN with [selective tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#4-vpn-selective-tunnel) instead of [forced tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#1-vpn-forced-tunnel). Then the VPN tunnel is used only for corpnet-based services. Default route (Internet and all Internet-based services) goes direct, so does the Microsoft 365 Apps updates.
 - If your VPN is configured for [forced tunnel with exceptions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) and supports using FQDNs for Dynamic Split Tunneling, ensure that the [URL for the Office CDN is included in the exclusion list](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) (#92). We have [howto guides for common VPN solutions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#howto-guides-for-common-vpn-platforms) available.
-- If your VPN is configured for forced tunnel and does not supports FQDN-based exceptions, please reach out to your Microsoft representative for guidance.
+- If your VPN is configured for forced tunnel and does not supports FQDN-based exceptions, please reach out to your Microsoft representative for support on implementing an IP-based static solution.
 
 ## Leverage Servicing Profiles to keep devices current
 
