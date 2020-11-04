@@ -120,7 +120,7 @@ These connected experiences are different because they are not covered by your o
 You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these optional connected experiences will be available to your users.
 
 > [!NOTE]
-> To apply the *Allow the use of additional optional connected experiences in Office* policy setting to volume licensed versions of Office 2019, Project 2019, or Visio 2019, you must use Group Policy. You can't use the Office cloud policy service.
+> To apply the *Allow the use of additional optional connected experiences in Office* policy setting to volume licensed versions of Office 2019, Project 2019, or Visio 2019, you must use Group Policy. You can't use the Office cloud policy service. This applies to when Office 2019, Project 2019, or Visio 2019 is configured to use the PerpetualVL2019 update channel.
 
 Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn them off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed into Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
