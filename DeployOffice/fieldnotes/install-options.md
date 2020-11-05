@@ -36,6 +36,7 @@ The installation options apply to initial install and upgrade to Microsoft 365 A
 The flowchart below is a comparison of install options, including the consideration of network transport.  Network optimization features can include peer to peer technologies such as Configuration Manager Peer Cache or Delivery Optimization (DO) to reduce network bandwidth demand.  
 
 :::image type="content" source="../images/install-options-2.png" alt-text="Options for installing Microsoft 365 Apps":::
+test
 
 Note that the [Office Deployment Tool (ODT)](../overview-of-the-office-2016-deployment-tool.md) is used to install Microsoft 365 Apps in all these options. 
 
