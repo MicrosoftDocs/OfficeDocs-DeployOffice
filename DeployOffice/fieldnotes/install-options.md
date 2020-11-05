@@ -29,14 +29,13 @@ Microsoft 365 Apps was designed to use the Office 365 Content Delivery Network (
 
 The files shown below are sorted by size. You’ll notice that one file, stream.x64.x-none.dat, is over 2 GB. This file contains all the language-neutral content.  The second set of .dat files contain support languages, which are typically  about 370 MB each. The v64.cab or v32.cab file lets the ODT validate the installation media. This file is required for local installation and is automatically provided  when downloading the latest build for a respective channel. Omitting this file within a deployment package may lead to downloading entire content from the CDN instead of using the local source.   
 
-:::image type="content" source="../images/install-options-1.png" alt-text="Details of the installation package for Microsoft 365 Apps, including the Office Deployment Tool":::
+![Details of the installation package for Microsoft 365 Apps, including the Office Deployment Tool](../images/fieldnotes/install-options-1.png)
 
 The installation options apply to initial install and upgrade to Microsoft 365 Apps as well as subsequent installations of language packs, proofing tools, and the addition of products such as Visio or Project. We call these subsequent installations "second installs." For more information on this approach, see [Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps](build-dynamic-lean-universal-packages.md).
 
 The flowchart below is a comparison of install options, including the consideration of network transport.  Network optimization features can include peer to peer technologies such as Configuration Manager Peer Cache or Delivery Optimization (DO) to reduce network bandwidth demand.  
 
-:::image type="content" source="../images/install-options-2.png" alt-text="Options for installing Microsoft 365 Apps":::
-test
+![Options for installing Microsoft 365 Apps](../images/fieldnotes/install-options-2.png)
 
 Note that the [Office Deployment Tool (ODT)](../overview-of-the-office-2016-deployment-tool.md) is used to install Microsoft 365 Apps in all these options. 
 
