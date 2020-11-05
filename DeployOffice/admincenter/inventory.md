@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: None
+localization_priority: Normal
 hideEdit: true
 description: "Provides Office admins information about configuring and using inventory in Microsoft 365 Apps admin center to view their managed devices"
 ---
@@ -41,7 +41,7 @@ The inventory view gives you insights across the devices in your organization, i
 
 The device view shows detailed information on devices, including the following:
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 | Device name | The name of the device |
 | Last seen | The last time the device checked in |
@@ -75,7 +75,7 @@ Devices status shows which devices are recently active, which means they've chec
 
 The add-in view shows the Office add-ins on the devices in your organization. The add-in view shows details for add-ins across the devices, including the following:
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 | Add-in Name | The name of the add-in |
 | Publisher | The publisher of the add-in |
