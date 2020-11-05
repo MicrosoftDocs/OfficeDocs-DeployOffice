@@ -23,7 +23,7 @@ Microsoft is releasing a limited preview to a new in-product notification featur
 
 The goal of this feature is to raise awareness about the Home Use Program among your employee community. This notification will only appear for employees of organizations that meet the qualification criteria for the Home Use Program.
 
-The preview is meant to give organizations an opportunity to test the user experience and understand what this feature will mean for their users, as well as to decide on what policy setting they want to keep for which users. This is also an opportunity for Microsoft to gain an understanding on what to expect during the full release as well as to seek feedback from customers. Microsoft may receive aggregated (non-identifiable) user data such as impression count, click count for these notifications.
+The preview is meant to give organizations an opportunity to test the user experience and understand what this feature will mean for their users, as well as to decide on what policy setting they want to keep for which users. This preview is also an opportunity for Microsoft to gain an understanding on what to expect during the full release as well as to seek feedback from customers. Microsoft may receive aggregated (non-identifiable) user data such as impression count, click count for these notifications.
 
 ## What is the Home Use Program (HUP)?
 
@@ -35,8 +35,8 @@ The Home Use Program helps your employees become more proficient and productive 
 
 If this feature is enabled by you for a user, they will see one notification total per month across all their apps. The notification will be similar to one of the following screenshots, localized to the language setting of the user’s device.
 
-![Screenshot showing a document in Word, with a message about the Home Use Program showing underneath the ribbon.](../images/home-use-program-1.png)
-![Screenshot showing a document in Word, with a message about the Home User Program showing underneath the user's name on the title bar.](../images/home-use-program-2.png)
+![Screenshot showing a document in Word, with a message about the Home Use Program showing underneath the ribbon.](../images/other/home-use-program-1.png)
+![Screenshot showing a document in Word, with a message about the Home User Program showing underneath the user's name on the title bar.](../images/other/home-use-program-2.png)
 
 When the user clicks on **Learn more and sign up**, they will be taken to the HUP webpage (https://aka.ms/huplearnmore) where they can learn more about the program and sign up for it if they would like. The subscription will be separate from any organizational subscription enabled by you.
 
@@ -57,9 +57,6 @@ The notifications will be controlled by a policy setting that can be enabled by 
 For instructions on how to use the Office cloud policy service, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../overview-office-cloud-policy-service.md).
 
 In the Office cloud policy service, search for the policy setting, which is named "Show in-product notifications for the Microsoft Home Use Program," and then set it to Enabled.
-
-> [!NOTE]
-> This policy setting is expected to be available in the Office cloud policy service by Friday October 30, 2020.
 
 ### Use Group Policy to enable the policy setting
 
