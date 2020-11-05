@@ -8936,24 +8936,7 @@ The following fields are collected:
 
   - **Data\_WinLaunchTime:integer -** time taken to launch the Visio startup pane, etc.)
 
-  - **Office.Visio.FileCharacteristicsVisio -** Captures file properties at the time of file boot for Visio C2R and Dev16. This event helps us to categorize and debug errors about document properties, which in turn enables us root cause issues faster and fix it for customer satisfaction.
-
-  - **Office.Visio.Shared.BootStats -** This event collects boot time for Visio Win32 app. It collects various fields for boot of various components like Ribbon load time, App Initialization time. This event is used to measure Boot perf for Visio.
-
-  - **Office.Visio.Shared.FileOpen -** This event collects File open stats for Visio. This event is used to monitor file open Success/ Fail rates and maps it with few properties of like file size. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.Shared.Filesave -** This event collects File save stats for Visio. This event is used to monitor file save Success/ Fail rates and maps it with few properties of like file size and location it is being saved to e.g. cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.Shared.FilesaveAs -** This event collects File save as stats for Visio. This event is used to monitor file save Success/ Fail rates and maps it with few properties of like file size and location it is being saved to, e.g. cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.Shared.PostSave -** This event captures failure reason for failure in file save.
-
-  - **Office.Visio.VisioFileSaveAs -** This event collects File save as stats for Visio Dev16. This event is used to monitor file save as Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to, e.g. cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.VisioFileSaveAsync -** This event collects File save async stats for Visio Dev16. This event is used to monitor file save async Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to e.g., cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.VisioFileSaveSync -** This event collects File save sync stats for Visio Dev16. This event is used to monitor file save sync Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to e.g., cloud/local. File properties enable us debug and root cause issues faster. This event helps us monitor save failure reasons for a file.
-
+  
 #### Office.Extensibility.Sandbox.ODPActivationHanging
 
 Collects when an Office add-in takes unexpectedly long to launch (>5 sec). Used to detect and fix problems with Office add-ins launching.
