@@ -47,7 +47,7 @@ Word, Excel, PowerPoint, Outlook, and OneNote provide the same end-user function
 
 The OneDrive app, when acquired from Microsoft's CDN, offers IT admins more deployment flexibility such as pre-enabling icon overlays and system access. When acquired from the Mac App Store, users will see additional prompts to enable this functionality.
 
-The Office builds available from the Mac App Store are production builds and are usually updated on a monthly basis. The [Office Insider](https://insider.office.com/) program is not supported through the Mac App Store. If you wish to use the Insider Slow or Fast channels, you should continue to install Office apps from the Microsoft CDN.
+The Office builds available from the Mac App Store are production builds and are usually updated on a monthly basis. The [Office Insider](https://insider.office.com/) program is not supported through the Mac App Store. If you wish to use Current Channel (Preview) or Beta Channel, you should continue to install Office apps from the Microsoft CDN.
 
 Microsoft Teams and Skype for Business are not available through the Mac App Store and must be deployed from the Microsoft CDN.
 
