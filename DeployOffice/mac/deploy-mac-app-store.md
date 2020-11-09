@@ -29,7 +29,7 @@ Starting in January 2019, the following Office applications are available for d
 \* These apps were also available from the Mac App Store in previous years.
 
 ## What version of Office is available from the Mac App Store?
-The Office apps available from the Mac App Store provide the very latest production version of Office on the Mac. Word, Excel, PowerPoint, and Outlook require an Office 365 (or Microsoft 365) subscription to activate. OneNote and OneDrive do not require a subscription, but some premium features may require a subscription. All apps are compatible with Office 365 (and Microsoft 365) subscription plans, such as Office 365 E5 or Microsoft 365 Business Premium.
+The Office apps available from the Mac App Store provide the latest Current Channel version of Office on the Mac. Word, Excel, PowerPoint, and Outlook require an Office 365 (or Microsoft 365) subscription to activate. OneNote and OneDrive do not require a subscription, but some premium features may require a subscription. All apps are compatible with Office 365 (and Microsoft 365) subscription plans, such as Office 365 E5 or Microsoft 365 Business Premium.
 
 > [!NOTE]
 > Some Office 365 (and Microsoft 365) subscriptions don't include access to downloadable Office apps. For example, the Office 365 E1 and Microsoft 365 Business Basic plans. For more information, see [Office 365 plans](https://products.office.com/business/compare-more-office-365-for-business-plans).
@@ -47,7 +47,7 @@ Word, Excel, PowerPoint, Outlook, and OneNote provide the same end-user function
 
 The OneDrive app, when acquired from Microsoft's CDN, offers IT admins more deployment flexibility such as pre-enabling icon overlays and system access. When acquired from the Mac App Store, users will see additional prompts to enable this functionality.
 
-The Office builds available from the Mac App Store are production builds and are usually updated on a monthly basis. The [Office Insider](https://insider.office.com/) program is not supported through the Mac App Store. If you wish to use the Insider Slow or Fast channels, you should continue to install Office apps from the Microsoft CDN.
+The Office builds available from the Mac App Store are Current Channel builds and are usually updated on a monthly basis. The [Office Insider](https://insider.office.com/) program is not supported through the Mac App Store. If you wish to use Current Channel (Preview) or Beta Channel, you should continue to install Office apps from the Microsoft CDN.
 
 Microsoft Teams and Skype for Business are not available through the Mac App Store and must be deployed from the Microsoft CDN.
 
