@@ -31,7 +31,7 @@ Since that time, there have been tremendous innovations in Windows and Configura
 
 By default, Microsoft 365 Apps for enterprise will update from Office CDN.  If you are a customer who currently delivers updates using one of the on-premises selections, you must [reverse policies and configurations to restore default behavior](../manage-microsoft-365-apps-updates-configuration-manager.md).  For example, if Office 365 Client Management was enabled to support Configuration Manager integration, those steps must be reversed. Configuration Manager client settings or domain policy should be set so that Office 365 Client Management is disabled. Once the change is made, Office will update against CDN  after the next restart of the  Microsoft Office Click-to-Run service. It is always a good idea to perform such an action with phased deployment processes to monitor compliance and network impact.
 
-:::image type="content" source="../images/update-options-flowchart.png" alt-text="Update options for Microsoft 365 Apps for enterprise":::
+![Update options for Microsoft 365 Apps for enterprise](../images/fieldnotes/choose-how-to-deliver-updates-1.png)
 
 ## Network options for updates
 
