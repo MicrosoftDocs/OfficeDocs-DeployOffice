@@ -24,6 +24,9 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 
 This diagnostic data is collected and sent to Microsoft about Office client software running on the user's device. Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data through the use of privacy controls, such as policy settings for organizations. You can see the diagnostic data being sent to us by using the Diagnostic Data Viewer.
 
+> [!NOTE]
+> If you're using a version of Office 2019 or Office 2016 that doesn't give you or your admin the ability to choose whether to send us required or optional diagnostic data, then only required diagnostic data is sent. For example, if you're using Office Professional Plus 2019 or Office Standard 2016, which don't provide that choice, then only required diagnostic data is sent. Office 2013 doesn't send required or optional diagnostic data. For more information about which versions of Office provide this choice, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 ***Optional diagnostic data*** is additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and fix issues.
 
 If you choose to send us optional diagnostic data, required diagnostic data is also included. Also, diagnostic log files for Office, which contain information very similar to optional diagnostic data, might be sent. For more information about those log files, see [Overview of diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
