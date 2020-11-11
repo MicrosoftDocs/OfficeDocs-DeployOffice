@@ -2,6 +2,27 @@
 
 
 
+## Week of November 02, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/2/2020 | [Inventory](/DeployOffice/admincenter/inventory) | modified |
+| 11/2/2020 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 11/2/2020 | [Security Currency](/DeployOffice/admincenter/security-update-status) | modified |
+| 11/2/2020 | [Update deadline](/DeployOffice/admincenter/update-deadline) | modified |
+| 11/2/2020 | [Update exclusion dates](/DeployOffice/admincenter/update-exclusion-dates) | modified |
+| 11/2/2020 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
+| 11/3/2020 | [Build dynamic, lean, universal packages for Microsoft 365 Apps for enterprise](/DeployOffice/fieldnotes/build-dynamic-lean-universal-packages) | modified |
+| 11/3/2020 | [Move devices to Current Channel](/DeployOffice/other/move-devices-current-channel) | modified |
+| 11/4/2020 | [(Preview) In-product notification for Home Use Program (HUP) employee benefit](/DeployOffice/other/home-use-program) | modified |
+| 11/5/2020 | [Choose how to install Microsoft 365 Apps (Office 365 ProPlus)](/DeployOffice/fieldnotes/install-options) | modified |
+| 11/5/2020 | [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](/DeployOffice/privacy/manage-privacy-controls) | modified |
+| 11/5/2020 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
+| 11/5/2020 | [Optional diagnostic data for Office](/DeployOffice/privacy/optional-diagnostic-data) | modified |
+| 11/5/2020 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
+
+
 ## Week of October 26, 2020
 
 
@@ -135,16 +156,3 @@
 | 10/6/2020 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
 | 10/6/2020 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
 | 10/6/2020 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-
-
-## Week of September 28, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/28/2020 | [Deploy Office Telemetry Dashboard](/DeployOffice/compat/deploy-telemetry-dashboard) | modified |
-| 9/28/2020 | [Changes to update channels for Microsoft 365 Apps](/DeployOffice/update-channels-changes) | modified |
-| 9/30/2020 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
-| 9/30/2020 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
-| 9/30/2020 | [Optional diagnostic data for Office](/DeployOffice/privacy/optional-diagnostic-data) | modified |
-| 10/1/2020 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
