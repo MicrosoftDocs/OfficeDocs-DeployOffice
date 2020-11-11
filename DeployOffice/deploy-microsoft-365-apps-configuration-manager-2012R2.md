@@ -92,7 +92,7 @@ For the Microsoft 365 Apps application, the deployment type includes the followi
     
   - In the **Content location** box, enter the network share where you put the Office Deployment Tool, your configuration.xml file, and the Microsoft 365 Apps installation files that you downloaded from the internet.
     
-  - In the **Installation program** box, enter the following text: setup.exe /configure configuration.xml
+  - In the **Installation program** box, enter the following text: setupodt.exe /configure configuration.xml
     
     After you enter this information, choose **Next**.
     
