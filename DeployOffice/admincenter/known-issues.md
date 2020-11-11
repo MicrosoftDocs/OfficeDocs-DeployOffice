@@ -10,7 +10,6 @@ localization_priority: Normal
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
-- m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 description: "Known issues and release notes for the Microsoft 365 Apps admin center"
 ---
