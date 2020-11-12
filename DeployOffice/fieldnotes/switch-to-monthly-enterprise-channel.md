@@ -56,7 +56,7 @@ Next, you deploy an application that instructs the client to perform a channel c
 
 Follow these steps to deploy an application to initiate an update channel change:
 
-1. Download and extract the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065). Copy only the **setup.exe** file to a folder you'll use as a source for the application.
+1. Download and extract the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065). Copy only the **setupodt.exe** file to a folder you'll use as a source for the application.
 
 1. Create a configuration file based on the following XML and save it to the same folder:
 
@@ -68,7 +68,7 @@ Follow these steps to deploy an application to initiate an update channel change
 
 1. Create an application in Configuration Manager by following your regular process. Don't use the Office Installation Wizard because you don't need a full configuration file and no source files. Note the following:
 
-    - The command line is **setup.exe /configure switch_to_MEC.xml**. Adjust the name of the configuration file to match yours.
+    - The command line is **setupodt.exe /configure switch_to_MEC.xml**. Adjust the name of the configuration file to match yours.
     
     - Use the following detection method to check if the intent to switch channels has been injected correctly:
     

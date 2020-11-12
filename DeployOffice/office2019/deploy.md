@@ -27,9 +27,9 @@ Installing directly from the Office CDN requires the least amount of administrat
 
 The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT.
 
-After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files:  setup.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
+After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files:  setupodt.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
-The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
+The setupodt.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
 
 ## Create the configuration.xml
 
