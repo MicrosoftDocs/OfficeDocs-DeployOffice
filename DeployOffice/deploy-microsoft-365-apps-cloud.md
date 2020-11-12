@@ -46,7 +46,7 @@ You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. T
 
 2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\\Server\Share\M365. If you've already downloaded the ODT, make sure you have the latest version.
 
-3. After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
+3. After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setupodt.exe) and a sample configuration file (configuration.xml).
 
 ## Step 2: Create a configuration file for the pilot group
 
@@ -83,7 +83,7 @@ To deploy Office, you provide commands that users can run from their client comp
 
 From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-pilot-SECP.xml`
+ `\\Server\Share\M365\setupodt.exe /configure \\Server\Share\M365\config-pilot-SECP.xml`
 
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
@@ -96,7 +96,7 @@ After Office has deployed to the pilot group, you can test Office in your enviro
 
 After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-broad-SEC.xml`
+ `\\Server\Share\M365\setupodt.exe /configure \\Server\Share\M365\config-broad-SEC.xml`
 
 This command is the same as the pilot group, except that it references the configuration file for the broad group. After running the command, the Office installation should start immediately. 
 
