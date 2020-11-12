@@ -1549,6 +1549,8 @@ This event is collected to ensure account configuration is operating successfull
 
 The following fields are collected: 
 
+- **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SS0), create_new_account, manual, etc.
+
 - **action** - The type of action performed on the account, such as add, remove, or reset
 
 #### add.new.account.step
@@ -2575,6 +2577,8 @@ The following fields are collected:
 - **Data_AppWarmUpGain** - The gain in application boot duration we get because of pre-booting a part of the application beforehand.
 
 - **Data_BootDuration** - The duration of application boot in process of the file open.
+
+- **Data_BootMarkers** – A string value logging the time duration between some function calls when booting the application, in a format with function ID and duration.
 
 - **Data_ClosePreviouslyOpenedMarkers** – In some file open scenarios, closing of a previously opened document takes place before the opening of the current document. This time duration between some of the operations that take place in this case is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
@@ -8283,6 +8287,8 @@ The following fields are collected:
    - **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
      - **swipe_action** - indicates what the user was trying to do, i.e. flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
      - **swipe_direction** - indicates which way the user set up the swipe to be, i.e. left to right or right to left. This allows us to determine if there is a problem with a particular swipe direction.
+   - **temperature_unit_setting** -  the selected temperature unit to be used for weather 
+   - **theme_color_setting** - the custom app theme color selected by the user 
    - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
    - **signature_setting** - indicates if the setting was applied to all account or an individual account
 
@@ -11126,9 +11132,15 @@ The following fields are collected:
 
 - **above_40fps** - count of frames rendered above 40fps
 
+- **above_40rate**- radio of frames rendered above 40fps
+
 - **above_50fps** - count of frames rendered above 50fps
 
+- **above_50rate**- radio of frames rendered above 50fps
+
 - **above_55fps** - count of frames rendered above 55fps
+
+- **above_55rate**- radio of frames rendered above 55fps
 
 - **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
 
@@ -11347,10 +11359,16 @@ This event lets us detect and fix issues where there is perceivable performance 
 The following fields are collected: 
 
 - **above_40fps** - count of frames rendered above 40fps
+
+- **above_40rate**- radio of frames rendered above 40fps
  
 - **above_50fps** - count of frames rendered above 50fps
+
+- **above_50rate**- radio of frames rendered above 50fps
  
 - **above_55fps** - count of frames rendered above 55fps
+
+- **above_55rate**- radio of frames rendered above 55fps
  
 - **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
  
@@ -13428,6 +13446,8 @@ The following fields are collected for Android only:
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
 
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
+
+- **theme_color** - The custom (user-selected) theme color currently in use by the application
 
 - **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
 
