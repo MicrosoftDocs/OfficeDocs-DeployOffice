@@ -18,7 +18,7 @@ description: "Configuration options for the Office Deployment Tool"
 # Configuration options for the Office Deployment Tool
 
 > [!IMPORTANT]
-> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took affect with the November 10, 2020 release of the Office Deployment Tool. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
 
 With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 

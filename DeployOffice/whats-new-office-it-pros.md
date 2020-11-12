@@ -20,7 +20,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## November 2020
 
-The executable file for the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is now named setup**odt**.exe, instead of setup.exe. This change took affect with the November 10, 2020 release of the Office Deployment Tool. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+The executable file for the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
 
 ## October 2020
 
