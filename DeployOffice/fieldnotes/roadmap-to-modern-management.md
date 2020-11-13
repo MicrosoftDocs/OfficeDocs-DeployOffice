@@ -46,7 +46,7 @@ You can then delve right into:
 
 You also can compare two builds, enabling you to quickly assess if a newly deployed build is more stable, the same, or less stable and fast as the previous one. This gives you the ability to proactively address issues, as opposed to waiting for issues to surface from end users after releasing a new build into your environment.
 
-Note that there is a minimum number of sessions required per app and version. This ensures that apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
+Note that there is a minimum number of sessions required per app and version. This ensures that Microsoft 365 Apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
 
 If you have disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Microsoft 365 Apps health, you will have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to Optional.
 
