@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-description: "Field best practices: Roadmap to modern management of Microsoft 365 Apps in the enterprise"
+description: "Field best practices: Road map to modern management of Microsoft 365 Apps in the enterprise"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -16,23 +16,23 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Best practices from the field: Roadmap to modern management of Microsoft 365 Apps in the enterprise
+# Best practices from the field: Road map to modern management of Microsoft 365 Apps in the enterprise
+
+> [!IMPORTANT]
+> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Microsoft recently released into public preview, a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) for monitoring, managing, and updating the installation of Microsoft 365 Apps for enterprise. The Microsoft 365 Apps Ranger team at Microsoft has worked with customers during the closed Preview phases and wants to share some best practices on how to adopt these new features.
+Microsoft recently released into public preview a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) for monitoring, managing, and updating the installation of Microsoft 365 Apps for enterprise. Based on our work with customers during the preview, we've developed some best practices on how to adopt these new features.
 
-While there is no definitive or required way to adopt these new features, the order laid out below has proven to be successful in enabling admins to quickly recognize the benefits, while keeping the rate of change manageable. But ultimately, feel free to adjust your approach according to the needs of your organization.
+While there is no definitive or required way to adopt these new features, the order laid out below has proven to be successful in enabling admins to quickly recognize the benefits while keeping the rate of change manageable. Feel free, though, to adjust your approach according to the needs of your organization.
 
-> [!NOTE]
->This article covers several features that are still in preview. These features may evolve faster than this article can be updated.
+## Get insights within minutes: Microsoft 365 Apps health
 
-## Get insights within minutes: Apps health
+A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/microsoft-365-apps-health.md) first. This feature gives you insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. This feature uses diagnostic data sent by your devices, so there is no need to stand up any infrastructure or deploy additional software agents. You can get insights into the health of your Microsoft 365 Apps within minutes.
 
-A good starting point is to adopt [Apps health](../admincenter/microsoft-365-apps-health.md) first. Apps health will give you insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. As Apps health is leveraging the diagnostic data sent by your devices, there is no need to stand up any infrastructure or deploy additional software agents. You can get insights into the health of your Microsoft 365 Apps literally within minutes.
-
-Here is how to enable Apps health:
+How to enable Microsoft 365 Apps health:
 
 1. Log into the Apps Admin Center at [config.office.com](https://config.office.com/).
 2. Navigate to **Health**, **Apps health**, read and accept the Preview EULA (end user license agreements).
@@ -44,30 +44,30 @@ You can then delve right into:
 - Performance metrics such as application launch times and document load times.
 - Channel metrics such as which channels and builds are sending diagnostic data.
 
-You also can compare two builds, enabling you to quickly assess if a newly deployed build is more stable, the same, or less stable and fast as the previous one. This gives you the ability to pro-actively address issues, as opposed to waiting for issues to surface from end users after releasing a new build into your environment.
+You also can compare two builds, enabling you to quickly assess if a newly deployed build is more stable, the same, or less stable and fast as the previous one. This gives you the ability to proactively address issues, as opposed to waiting for issues to surface from end users after releasing a new build into your environment.
 
-Note that there is a minimum number of sessions required per app and version. This ensures that Apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
+Note that there is a minimum number of sessions required per app and version. This ensures that apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
 
-If you have disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Apps health, you will have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to Optional.
+If you have disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Microsoft 365 Apps health, you will have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to Optional.
 
-## Get insights per device: Leverage Inventory and Security Update Status
+## Get insights per device: Inventory and Security Update Status
 
 After you join the Preview program, Microsoft 365 Apps that are installed and running on Current Channel or Monthly Enterprise Channel version 2008 or higher will start registering in [Inventory](../admincenter/inventory.md). The Inventory page in the Apps Admin Center provides a consolidated view of your Microsoft 365 Apps and key information, such as:
 
-- Update Channel
+- Update channel
 - Versions deployed
 - Apps deployed
 - Architecture
-- Installed Add-Ins
+- Installed add-ins
 - If macros are used on the device
 
 It will also populate the [Security Update Status](../admincenter/security-update-status.md) page, which provides you with an easy overview of which channels are deployed, how many devices are on the latest security update, and which ones are behind and need attention.
 
-The Microsoft 365 Apps installation itself is providing the inventory information, so there is no conflict with existing management solutions. For example, a device can be managed by both Microsoft Endpoint Manager and registered into the new tenant-based Inventory at the same time.
+The Microsoft 365 Apps installation itself is providing the inventory information, so there is no conflict with existing management solutions. For example, a device can be managed by both Microsoft Endpoint Manager and registered into the new tenant-based inventory at the same time.
 
 ## Move devices to Monthly Enterprise Channel
 
-We highly recommend that you move devices to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview). This channel provides a good balance between receiving monthly feature and quality updates (similar to [Current Channel](../overview-update-channels.md#current-channel-overview)), while having a predictable cadence with only one update per month (similar to [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview)).
+Moving your devices to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) provides a good balance between receiving monthly feature and quality updates (similar to [Current Channel](../overview-update-channels.md#current-channel-overview)), while having a predictable cadence with only one update per month.
 
 With these new preview features, there are two scenarios to consider when moving devices to the Monthly Enterprise Channel:
 
@@ -101,7 +101,7 @@ Note that Servicing Profiles currently only supports managing Monthly Enterprise
 
 Before you adopt Servicing Profiles, please consider the following:
 
-- All devices matching the ruleset will be switched over to Monthly Enterprise Channel and kept up to date going forward.
+- All devices matching the rule set will be switched over to Monthly Enterprise Channel and kept up to date going forward.
 - There is currently no way to include or exclude specific devices.
 - Double-check if your network is set up to handle the traffic caused by moving devices to Monthly Enterprise Channel and the monthly updates.
 
