@@ -11132,15 +11132,15 @@ The following fields are collected:
 
 - **above_40fps** - count of frames rendered above 40fps
 
-- **above_40rate**- radio of frames rendered above 40fps
+- **above_40rate** - radio of frames rendered above 40fps
 
 - **above_50fps** - count of frames rendered above 50fps
 
-- **above_50rate**- radio of frames rendered above 50fps
+- **above_50rate** - radio of frames rendered above 50fps
 
 - **above_55fps** - count of frames rendered above 55fps
 
-- **above_55rate**- radio of frames rendered above 55fps
+- **above_55rate** - radio of frames rendered above 55fps
 
 - **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
 
@@ -11360,15 +11360,15 @@ The following fields are collected:
 
 - **above_40fps** - count of frames rendered above 40fps
 
-- **above_40rate**- radio of frames rendered above 40fps
+- **above_40rate** - radio of frames rendered above 40fps
  
 - **above_50fps** - count of frames rendered above 50fps
 
-- **above_50rate**- radio of frames rendered above 50fps
+- **above_50rate** - radio of frames rendered above 50fps
  
 - **above_55fps** - count of frames rendered above 55fps
 
-- **above_55rate**- radio of frames rendered above 55fps
+- **above_55rate** - radio of frames rendered above 55fps
  
 - **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
  
