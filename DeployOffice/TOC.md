@@ -5,6 +5,7 @@
 ## [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
 ## [Announcement: Office 365 ProPlus renamed](name-change.md)
+## [Microsoft 365 Apps admin center](admincenter/overview.md)
 
 # Prepare
 ## [Assess your environment and requirements](assess-microsoft-365-apps.md)
@@ -52,11 +53,13 @@
 # Best practices from the field
 ## [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
 ## [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
-## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
-## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 ## [Build dynamic collections with Configuration Manager](fieldnotes\build-dynamic-lean-configuration-manager.md)
+## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
+## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
+## [Switch to Monthly Enterprise Channel with Configuration Manager](fieldnotes/switch-to-monthly-enterprise-channel.md)
 
 # Reference
+## [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md)
 ## [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
 ## [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md)

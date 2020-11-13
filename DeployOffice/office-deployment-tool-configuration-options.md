@@ -17,6 +17,9 @@ description: "Configuration options for the Office Deployment Tool"
 
 # Configuration options for the Office Deployment Tool
 
+> [!IMPORTANT]
+> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+
 With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
 > [!NOTE]
@@ -24,7 +27,7 @@ With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365
 
 ## Example of a standard configuration file
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
+The ODT consists of two files: setupodt.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setupodt.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
 
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
 

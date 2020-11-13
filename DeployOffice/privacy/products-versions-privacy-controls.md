@@ -37,7 +37,6 @@ Our most recent privacy controls are available for the following Office products
 - Retail versions of Office 2019 and Office 2016, which are available as a one-time purchase. For example, Office Professional 2019 or Office Home & Student 2016.
 - Desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 - Retail versions of Project 2019, Project 2016, Visio 2019, and Visio 2016, which are available as a one-time purchase.
-- Volume licensed versions of Project 2016 and Visio 2016 that are installed by using Click-to-Run instead of being installed by using Windows Installer (MSI). For example, Project Professional 2016 or Visio Standard 2016.
 
 For Windows devices, the following table lists the apps and the minimum version of those apps which have our most recent privacy controls.
 
@@ -69,6 +68,12 @@ For those versions of Office apps on Windows devices, the following privacy cont
 Some Office products might not have certain types of connected experiences, so some privacy controls won’t be relevant.
 
 To configure these privacy controls for your users that are using Office on Windows devices in your organization, you can use Group Policy or the Office cloud policy service. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md).
+
+> [!NOTE]
+> The "Allow the use of additional optional connected experiences in Office" privacy control is supported on the following *volume licensed* versions of Office, Project, and Visio.
+> - Office 2019, Project 2019, and Visio 2019, when they're configured to use the PerpetualVL2019 update channel. In that case, you must be using at least Version 1808 (Build 10367.20048), which was released on October 13, 2020.
+> - Project 2019 and Visio 2019, when they're configured to use an update channel other than PerpetualVL2019. For example, if they're configured to use Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. In that case, you must be using at least Version 1904.
+> - Project 2016 and Visio 2016 that are installed by using Click-to-Run instead of being installed by using Windows Installer (MSI). In that case, you must be using at least Version 1904.
 
 ## Office on Mac devices
 

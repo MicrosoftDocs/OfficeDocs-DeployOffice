@@ -33,7 +33,7 @@ RemoveMSI can be used to uninstall 2007, 2010, 2013, or 2016 versions of Office,
 
 The following are requirements for using the RemoveMSI element in your configuration.xml file:
 
-- You must be using at least version 16.0.12827.20268 (setup.exe version 16.0.12827.20258) of the Office Deployment Tool, which you can download from [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). We recommend that you always download and use the most current version of the Office Deployment Tool. To check the version of the Office Deployment Tool, right-click on setup.exe, choose **Properties**, and then choose **Details**.
+- You must be using at least version 16.0.12827.20268 (setupodt.exe version 16.0.12827.20258) of the Office Deployment Tool, which you can download from [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). We recommend that you always download and use the most current version of the Office Deployment Tool. To check the version of the Office Deployment Tool, right-click on setupodt.exe, choose **Properties**, and then choose **Details**.
 - You must be installing at least Version 1803 of Microsoft 365 Apps. Version 1803 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
 - You must be installing Microsoft 365 Apps on a computer running at least Windows 7 Service Pack 1 (SP1) or above.
 

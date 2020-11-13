@@ -18,6 +18,15 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## November 2020
+
+The executable file for the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+
+## October 2020
+
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md).
+
+
 ## July 2020
 
 ### End of support resources
@@ -114,7 +123,7 @@ Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline
 ## June 2019
 
 ### Comparison of application compatibility and readiness assessments tools
-Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](readiness-tools.md)
+Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](readiness-tools.md).
 
 ## April 2019
 
@@ -163,7 +172,7 @@ Office apps, such as Word and Outlook, are now available from the Mac App Store.
 
 ## October 2018
 
-The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it [here](overview-of-the-office-customization-tool-for-click-to-run.md).
+The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-deploying-languages-microsoft-365-apps.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 

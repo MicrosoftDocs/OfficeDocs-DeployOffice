@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: None
+localization_priority: Normal
 hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
 ---
@@ -22,6 +22,9 @@ Requirements:
 - Microsoft 365 Apps for enterprise, Version 1908 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
+
+> [!NOTE]
+> The dashboard might show insights for versions older than 1908, but those versions aren't officially supported.
 
 ## How to get to the health dashboard
 
@@ -114,4 +117,6 @@ Microsoft 365 Apps health monitor the following metrics:
 - App File Open Time (local): indicates the time it takes from the moment the user opens a file from a local drive until the file is ready for user input, within the selected scope (app, build)
 - App File Open Time (SharePoint): indicates the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
-Note that "Pending" is displayed if not enough signals have been observed for the specific app and build.
+> [!NOTE]
+> "Pending" is displayed if not enough signals have been observed for the specific app and build.
+
