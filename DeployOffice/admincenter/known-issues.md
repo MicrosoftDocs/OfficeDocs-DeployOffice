@@ -20,6 +20,13 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
  
 ## Known issues
 
+### As of November 9, 2020
+
+- Organizations using IPv6 only machines cannot access Public Preview features
+- When a device moved out of the servicing profile, monthhly updates will be requried to be setup
+- "Divided by 0" error may occur when setting up the Servicing Profile with a single device
+
+
 ### As of October 29, 2020
 
 - The servicing profile device and issues page takes time to load.
@@ -28,6 +35,13 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
  
 
 ## Release notes
+
+### Novmeber 9, 2020
+
+- OFfice Apps on SAC-P will now automatically show up in inventory
+- Fixed an issue where the "Please wait" dialogue staying for a long time is sometimes shown on the Inventory page 
+- Fixed an issue when creating the Serving profile with the default values, all device are not automatically added 
+- Improved load times in the Servicing Profile Device & Issues page
 
 ### October 29, 2020
 
