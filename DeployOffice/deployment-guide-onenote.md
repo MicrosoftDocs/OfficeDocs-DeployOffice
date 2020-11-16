@@ -40,7 +40,6 @@ If Office is already installed on the device, but OneNote didn't get installed p
        <Language ID="MatchInstalled"/>
       </Product>
    </Add>
-<Logging Level="Verbose" Path="%WINDIR%\temp\OneNote_Win32" /> 
 </Configuration>
 ```
 

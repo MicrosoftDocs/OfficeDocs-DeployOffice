@@ -18,7 +18,7 @@ description: "Configuration options for the Office Deployment Tool"
 # Configuration options for the Office Deployment Tool
 
 > [!IMPORTANT]
-> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took effect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
 
 With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
@@ -50,7 +50,6 @@ This configuration file includes the most-commonly used elements and attributes,
   <Updates Enabled="TRUE" 
            UpdatePath="\\Server\Share" />
    <Display Level="None" AcceptEULA="TRUE" />  
-  <Logging Level="Standard" Path="%temp%" /> 
 </Configuration>
 ```
 
@@ -64,7 +63,6 @@ This configuration file includes the most-commonly used elements and attributes,
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
 |Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
-|Logging Level="Standard" Path="%temp%"  <br/> |Log files are stored in the %temp% folder.  <br/> |
 
 ## Add element
 
@@ -451,39 +449,6 @@ Allowed values:
 For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
 
 For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
-
-## Logging element
-
-Defines options for ODT logging.
-
-### Example
-
-```xml
-<Logging Level="Standard" 
-         Path="%temp%" />
-```
-
-### Level attribute (part of Logging element)
-
-Optional. Default is **Standard** if not specified.
-
-Turns logging on or off. 
-
-Allowed values:
-
-- Level="Off"
-- Level="Standard"
-
-### Path attribute (part of Logging element)
-
-Optional. Default is **%temp%** if not specified.
-
-Defines the location of the log files. 
-
-Example values:
-
-- Path="%temp%"
-- Path="\\\server\share\userlogs\"
 
 ## Property element
 
