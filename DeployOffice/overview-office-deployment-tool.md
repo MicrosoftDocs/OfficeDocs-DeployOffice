@@ -17,7 +17,7 @@ description: "The Office Deployment Tool (ODT) is a command-line tool that you c
 # Overview of the Office Deployment Tool
 
 > [!IMPORTANT]
-> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took effect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
 
 The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users.
 
@@ -85,7 +85,7 @@ From a command prompt, run the ODT executable in download mode and with a refere
 
  **Step 3: Validate that the files have been downloaded**
 
-After running the command, go to the download location you defined in the configuration file and look for an Office folder with the appropriate files in it. If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log file in the %temp% directory.
+After running the command, go to the download location you defined in the configuration file and look for an Office folder with the appropriate files in it. If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
 
 ## Download the installation files for Microsoft 365 Apps from a local source
 <a name="BKMK_downloadfromlocalsource"> </a>
@@ -143,7 +143,7 @@ You must have local administrator permissions on the client computer. You can ru
 
  **Step 3: Verify that installation was successful**
 
-After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\temp directories.
+After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% folder.
 
 ## Update Microsoft 365 Apps
 <a name="BKMK_updateoffice"> </a>
@@ -287,7 +287,7 @@ From a command prompt, run the ODT executable in packager mode with a reference 
 
  **Step 3: Verify that the package was created**
 
-After running the command, the package location should have an App-V Packages folder and a WorkingDir folder. You can troubleshoot issues by reviewing the log file in the %temp% directory.
+After running the command, the package location should have an App-V Packages folder and a WorkingDir folder. You can troubleshoot issues by reviewing the log file in the %temp% folder.
 
 ## Related topics
 <a name="BKMK_createanappvpackage"> </a>
