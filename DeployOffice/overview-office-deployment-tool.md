@@ -85,7 +85,7 @@ From a command prompt, run the ODT executable in download mode and with a refere
 
  **Step 3: Validate that the files have been downloaded**
 
-After running the command, go to the download location you defined in the configuration file and look for an Office folder with the appropriate files in it. If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log file in the %temp% directory.
+After running the command, go to the download location you defined in the configuration file and look for an Office folder with the appropriate files in it. If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
 
 ## Download the installation files for Microsoft 365 Apps from a local source
 <a name="BKMK_downloadfromlocalsource"> </a>
@@ -143,7 +143,7 @@ You must have local administrator permissions on the client computer. You can ru
 
  **Step 3: Verify that installation was successful**
 
-After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% and %windir%\temp directories.
+After running the command, you should see the Office installation start (unless you set display level to none). After installation is complete, the command prompt will display "Products configured successfully." If you run into problems, make sure you have the newest version of the ODT. You can also troubleshoot issues by reviewing the log files in the %temp% folder.
 
 ## Update Microsoft 365 Apps
 <a name="BKMK_updateoffice"> </a>
@@ -287,7 +287,7 @@ From a command prompt, run the ODT executable in packager mode with a reference 
 
  **Step 3: Verify that the package was created**
 
-After running the command, the package location should have an App-V Packages folder and a WorkingDir folder. You can troubleshoot issues by reviewing the log file in the %temp% directory.
+After running the command, the package location should have an App-V Packages folder and a WorkingDir folder. You can troubleshoot issues by reviewing the log file in the %temp% folder.
 
 ## Related topics
 <a name="BKMK_createanappvpackage"> </a>
