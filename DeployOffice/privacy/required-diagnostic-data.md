@@ -11242,6 +11242,18 @@ This event lets us detect and fix issues where there is perceivable performance 
 
 The following fields are collected: 
 
+- **above_40fps** - count of frames rendered above 40fps
+
+- **above_40rate** - radio of frames rendered above 40fps
+
+- **above_50fps** - count of frames rendered above 50fps
+
+- **above_50rate** - radio of frames rendered above 50fps
+
+- **above_55fps** - count of frames rendered above 55fps
+
+- **above_55rate** - radio of frames rendered above 55fps
+
 - **account_counter** - tracks the number of accounts associated for each type of calendar, e.g. 2 for Gmail calendar and whether that account is using our new sync service
 
 - **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
