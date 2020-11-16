@@ -22,11 +22,15 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 [Learn from Microsoft experts](fieldnotes/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
 
-The executable file for the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is now named setup**odt**.exe, instead of setup.exe. This change took affect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+### Changes to the Office Deployment Tool
+
+The executable file for the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is now named setup**odt**.exe, instead of setup.exe. This change took effect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+
+Also, the Logging element is no longer supported. Log files can be found in the %temp% folder.
 
 ## October 2020
 
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md).
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md).
 
 
 ## July 2020
@@ -91,7 +95,7 @@ Security Policy Advisor is now generally available. You can use Security Policy 
 For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](overview-of-security-policy-advisor.md).
 
 ### Windows 7 end of support and Microsoft 365 Apps
-***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization move those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
+***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
 Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
 
