@@ -1549,6 +1549,8 @@ This event is collected to ensure account configuration is operating successfull
 
 The following fields are collected: 
 
+- **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SS0), create_new_account, manual, etc.
+
 - **action** - The type of action performed on the account, such as add, remove, or reset
 
 #### add.new.account.step
@@ -2575,6 +2577,8 @@ The following fields are collected:
 - **Data_AppWarmUpGain** - The gain in application boot duration we get because of pre-booting a part of the application beforehand.
 
 - **Data_BootDuration** - The duration of application boot in process of the file open.
+
+- **Data_BootMarkers** – A string value logging the time duration between some function calls when booting the application, in a format with function ID and duration.
 
 - **Data_ClosePreviouslyOpenedMarkers** – In some file open scenarios, closing of a previously opened document takes place before the opening of the current document. This time duration between some of the operations that take place in this case is captured in a string value which has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
@@ -7375,6 +7379,194 @@ The following fields are collected:
 - **Data.warningMessage** - Warning message reported by the service
 
 
+#### Office.UX.AccChecker.AccCheckerFinalViolationCountPerRule
+
+This event is triggered when Accessibility issues are reported for the currently opened document. This event represents the Accessibility violations (Errors, Warnings and Tips) that exist per Rule, for the opened document at the beginning and end of the session.  This event is used to record the counts of Accessibility violations (Errors, Warnings and Tips) per Rule, for the opened document at the beginning and end of the session.
+
+Details of violation counts per rule help Microsoft to identify which Accessibility issues are most common in Office documents. This helps with work on remediating them and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+
+- **Data_FinalCount_RuleID_0** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_1** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_2** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_3** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_4** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_5** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_6** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_7** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_8** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_9** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_10** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_11** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_12** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_13** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_14** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_15** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_16** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_FinalCount_RuleID_17** - Number of violations of Rule ID = n that remain the last time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_0** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_1** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_2** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_3** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_4** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_5** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_6** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_7** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_8** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_9** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_10** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_11** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_12** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_13** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_14** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_15** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_16** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **Data_InitialCount_RuleID_17** - Number of violations of Rule ID = n that were found the first time the acc checker ran in a session.
+
+- **FinalDocID** - Final DocumentID of the scanned document
+
+- **FinalDocUrlHash** - Final DocumentURLHash of the scanned document
+	
+- **InitialDocID** - Initial DocumentID of the scanned document
+
+- **InitialDocUrlHash** - Initial DocumentURLHash of the scanned document
+
+- **PaneOpened** - A boolean that tracks whether the AccChecker pane was opened
+
+- **ServerDocID** - Server DocumentID for the document scanned by the Accessibility checker
+
+
+#### Office.UX.AccChecker.AccCheckerViolationInformation
+
+This event is triggered when Accessibility issues are reported for the currently opened document. It represents the aggregate counts of violations (Errors, Warnings and Tips) for the opened document at the beginning and end of the session. This event is used to record the aggregate counts of Accessibility violations (Errors, Warnings and Tips) for the opened document at the beginning and end of the session. The knowledge of Accessibility checker usage allows Microsoft to improve its application experiences to be more inclusive for people with disabilities in Office usage scenarios for the workplace and classroom.
+
+The following fields are collected:
+	
+- **FinalDocID** - Final DocumentID of the scanned document
+
+- **FinalDocUrlHash** - Final DocumentURLHash of the scanned document
+
+- **FinalErrorCount** - Final count of Errors reported by Accessibility Checker for the document
+
+- **FinalIntelligentServiceCount** - Final count of Intelligent services issues reported by Accessibility Checker for the document
+
+- **FinalTipCount** - Final count of tips reported by Accessibility Checker for the document
+
+- **FinalViolationCount** - Final count of violations reported by Accessibility Checker for the document
+
+- **FinalWarningCount** - Final count of warnings reported by Accessibility Checker in the document
+
+- **InitialDocID** - Initial DocumentID of the scanned document
+
+- **InitialDocUrlHash** - Initial DocumentURLHash of the scanned document
+
+- **InitialErrorCount** - Number of all violations of type Error that were found the first time the acc checker ran in a session.
+
+- **InitialIntelligentServicesCount** - Number of all violations of type Intelligent Service that were found the first time the acc checker ran in a session.
+
+- **InitialTipCount** - Number of all violations of type Tip that were found the first time the acc checker ran in a session.
+
+- **InitialUrlHash** - Number of all violations of type error that were found the first time the acc checker ran in a session.
+
+- **InitialViolationCount** - Number of all violations that were found the first time the acc checker ran in a session.
+
+- **InitialWarningCount** - Number of all violations of type Warning that were found the first time the acc checker ran in a session.
+
+- **PaneOpened** - A Boolean that tracks whether the Accessibility Checker pane was opened
+
+- **ServerDocID** - Server DocumentID for the document scanned by the Accessibility checker
+
+
+#### Office.UX.AccChecker.BackgroundAccCheckerEnabledState
+
+This event is triggered when the user or IT Admin has enabled the Background Accessibility checker for the Office user. This event is used to understand the instances when the Background Accessibility checker is enabled for Office users. The enabled status of the Background Accessibility checker allows Microsoft to understand if documents can be scanned automatically in the background. This helps to create a more inclusive workplace and classroom environment for people with disabilities.
+
+The following fields are collected:
+
+- **BackgroundAccCheckerEnabled** - Boolean to track the Enabled/Disabled state of the Background Accessibility checker
+
+
+#### Office.UX.AccChecker.BackgroundScanningCheckboxClicked
+
+This event is triggered when the user enables the Background Accessibility checker from the Accessibility checker task pane.  This event is used to understand the instances when the Background Accessibility checker is enabled for Office documents. The enabled status of the Background Accessibility checker allows Microsoft to understand if documents can be scanned automatically in the background. This helps to create a more inclusive workplace and classroom environment for people with disabilities.
+
+The following fields are collected:
+	
+- **FinalBackgroundScanningState** - Initial state of the checkbox that enables background scanning
+
+- **InitialBackgroundScanningState** - Initial state of the checkbox that enables background scanning
+
+
+#### Office.UX.AccChecker.DisabledResults
+
+This event is triggered when the Accessibility Checker gets disabled for the opened document. This event is used to understand the instances when the Office Accessibility checker gets disabled, due to a legacy or unsupported Office document. The disabled status of the Accessibility checker allows Microsoft to understand how often a document cannot be scanned, and to assist users in allowing the scanning of such documents – by upconverting the document to a modern file format. This helps to create a more inclusive workplace and classroom environment for people with disabilities.
+
+The following fields are collected:
+	
+- **Data_Disabled_ID** - ID of the disabled error
+
+- **Data_Disabled_Reason** - Reason for disabling the Accessibility Checker
+
+- **Data_IsUpConvertEnabled** - Tracks whether Upconvert to a modern file format is available for the document
+
+
+#### Office.UX.AccChecker.ShowTaskPane
+
+This event is triggered when the Accessibility Checker task pane is launched for the currently opened document.  This event is used to understand the usage of the Office Accessibility Checker. The Accessibility Checker is used to identify and remediate Accessibility issues in Office documents. The knowledge of Accessibility Checker usage allows Microsoft to improve its application experiences to be more inclusive for people with disabilities in Office usage scenarios for the workplace and classroom.
+
+The following fields are collected:
+
+- **BackgroundScanCheckboxEnabled** - Tracks whether the Background Accessibility Checker is enabled
+	
+- **Column** - Purpose
+
+- **DocUrlHash** - Unique doc id hash of the document that was scanned
+
+- **HasAccessibilityViolations** - Tracks if the document contains any accessibility violations at the point the pane is opened
+
+- **IsPaneDisabled** - Tracks if the Accessibility Checker pane is opened in a disabled state (legacy or unsupported document)
+
+- **PaneOpenedBefore** - Tracks if the Accessibility Checker pane was opened before
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned
+
+
 #### Office.Visio.Shared.FeatureExperimentation
 
 Tracks feature flighting for users. This event helps us determines success or failure of feature flights.
@@ -8283,6 +8475,8 @@ The following fields are collected:
    - **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
      - **swipe_action** - indicates what the user was trying to do, i.e. flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
      - **swipe_direction** - indicates which way the user set up the swipe to be, i.e. left to right or right to left. This allows us to determine if there is a problem with a particular swipe direction.
+   - **temperature_unit_setting** -  the selected temperature unit to be used for weather 
+   - **theme_color_setting** - the custom app theme color selected by the user 
    - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
    - **signature_setting** - indicates if the setting was applied to all account or an individual account
 
@@ -8936,24 +9130,7 @@ The following fields are collected:
 
   - **Data\_WinLaunchTime:integer -** time taken to launch the Visio startup pane, etc.)
 
-  - **Office.Visio.FileCharacteristicsVisio -** Captures file properties at the time of file boot for Visio C2R and Dev16. This event helps us to categorize and debug errors about document properties, which in turn enables us root cause issues faster and fix it for customer satisfaction.
-
-  - **Office.Visio.Shared.BootStats -** This event collects boot time for Visio Win32 app. It collects various fields for boot of various components like Ribbon load time, App Initialization time. This event is used to measure Boot perf for Visio.
-
-  - **Office.Visio.Shared.FileOpen -** This event collects File open stats for Visio. This event is used to monitor file open Success/ Fail rates and maps it with few properties of like file size. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.Shared.Filesave -** This event collects File save stats for Visio. This event is used to monitor file save Success/ Fail rates and maps it with few properties of like file size and location it is being saved to e.g. cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.Shared.FilesaveAs -** This event collects File save as stats for Visio. This event is used to monitor file save Success/ Fail rates and maps it with few properties of like file size and location it is being saved to, e.g. cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.Shared.PostSave -** This event captures failure reason for failure in file save.
-
-  - **Office.Visio.VisioFileSaveAs -** This event collects File save as stats for Visio Dev16. This event is used to monitor file save as Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to, e.g. cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.VisioFileSaveAsync -** This event collects File save async stats for Visio Dev16. This event is used to monitor file save async Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to e.g., cloud/local. File properties enable us debug and root cause issues faster.
-
-  - **Office.Visio.VisioFileSaveSync -** This event collects File save sync stats for Visio Dev16. This event is used to monitor file save sync Success/ Fail rates and maps it with few properties of like file size and location that it is being saved to e.g., cloud/local. File properties enable us debug and root cause issues faster. This event helps us monitor save failure reasons for a file.
-
+  
 #### Office.Extensibility.Sandbox.ODPActivationHanging
 
 Collects when an Office add-in takes unexpectedly long to launch (>5 sec). Used to detect and fix problems with Office add-ins launching.
@@ -11065,6 +11242,18 @@ This event lets us detect and fix issues where there is perceivable performance 
 
 The following fields are collected: 
 
+- **above_40fps** - count of frames rendered above 40fps
+
+- **above_40rate** - radio of frames rendered above 40fps
+
+- **above_50fps** - count of frames rendered above 50fps
+
+- **above_50rate** - radio of frames rendered above 50fps
+
+- **above_55fps** - count of frames rendered above 55fps
+
+- **above_55rate** - radio of frames rendered above 55fps
+
 - **account_counter** - tracks the number of accounts associated for each type of calendar, e.g. 2 for Gmail calendar and whether that account is using our new sync service
 
 - **app_instance** – Outlook has 2 entry points for Duo, one is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar
@@ -11143,9 +11332,15 @@ The following fields are collected:
 
 - **above_40fps** - count of frames rendered above 40fps
 
+- **above_40rate** - radio of frames rendered above 40fps
+
 - **above_50fps** - count of frames rendered above 50fps
 
+- **above_50rate** - radio of frames rendered above 50fps
+
 - **above_55fps** - count of frames rendered above 55fps
+
+- **above_55rate** - radio of frames rendered above 55fps
 
 - **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
 
@@ -11364,10 +11559,16 @@ This event lets us detect and fix issues where there is perceivable performance 
 The following fields are collected: 
 
 - **above_40fps** - count of frames rendered above 40fps
+
+- **above_40rate** - radio of frames rendered above 40fps
  
 - **above_50fps** - count of frames rendered above 50fps
+
+- **above_50rate** - radio of frames rendered above 50fps
  
 - **above_55fps** - count of frames rendered above 55fps
+
+- **above_55rate** - radio of frames rendered above 55fps
  
 - **account_counter** - count of each account type present on the device, for example, an Office 365 account = 1 account, Outlook.com account = 1 account.
  
@@ -13324,6 +13525,28 @@ The following fields are collected:
 
 - **token_type** - the type of token used to authenticate the account in order to save the file to help us detect authentication issues associated with saving a file
 
+#### wkwebview.error
+
+This event lets us detect when web view errors occurred when composing or reading email so that we can prevent issues that could cause your app can’t compose email or read email. 
+
+The following fields are collected: 
+
+- **description** - description for the error
+
+- **error_code** - error code for WKError
+
+- **function_name** - javascript function name when error
+
+- **js_exception_column_number** - The column number where JavaScript exception occurred 
+
+- **js_exception_line_number** - The line number where JavaScript exception occurred
+
+- **js_exception_message** - The exception message when JavaScript exception occurred
+
+- **js_exception_source_url** - The source URL where JavaScript exception occurred  
+
+- **scenario** - where the error occurred, rendering or composing.
+
 
 ## Device connectivity and configuration​ data events
 
@@ -13445,6 +13668,8 @@ The following fields are collected for Android only:
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
 
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
+
+- **theme_color** - The custom (user-selected) theme color currently in use by the application
 
 - **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
 
