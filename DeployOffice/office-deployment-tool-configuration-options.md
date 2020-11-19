@@ -600,7 +600,7 @@ For more information, see  [Overview of the Office Deployment Tool](overview-off
 ```
 ### All attribute (part of Remove element)
 
-Optional. The default value is **FALSE** is not specified.
+Optional. The default value is **FALSE** if not specified.
 
 If set to **TRUE**, all Microsoft 365 Apps products and languages will be removed, including Project and Visio.
 
