@@ -100,7 +100,7 @@ For more information about using RemoveMSI, see [Remove existing MSI versions of
 Once you have a copy of the ODT and have created your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
 
 ```console
-	setup /download configuration.xml
+	setupodt /download configuration.xml
 ```
 
 If you have saved the configuration.xml file with a different name, use that name in the command.
@@ -117,7 +117,7 @@ Here some additional details about downloading Office 2019 installation files:
 Once you have a copy of the ODT and have created your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
 
 ```console
-	setup /configure configuration.xml
+	setupodt /configure configuration.xml
 ```
 
 If you have saved the configuration.xml file with a different name, use that name in the command. 
