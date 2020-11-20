@@ -1549,7 +1549,7 @@ This event is collected to ensure account configuration is operating successfull
 
 The following fields are collected: 
 
-- **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SS0), create_new_account, manual, etc.
+- **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SSO), create_new_account, manual, etc.
 
 - **action** - The type of action performed on the account, such as add, remove, or reset
 
