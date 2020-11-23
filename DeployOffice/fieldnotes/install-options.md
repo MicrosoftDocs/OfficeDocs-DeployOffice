@@ -25,7 +25,7 @@ There are a variety of options to choose from when installing Microsoft 365 Apps
 
 ## Anatomy of the Microsoft 365 Apps package
 
-Microsoft 365 Apps was designed to use the Office 365 Content Delivery Network (CDN), which stores all the Office files needed for installation.  IT Pros can use the Office Deployment Tool (ODT) to download the installation files by using the setupodt.exe /download command in their configuration file. This download creates a folder named **Office** with all the Microsoft 365 Apps installation files. The size of the folder with one language is approximately 2.8 GB. 
+Microsoft 365 Apps was designed to use the Office 365 Content Delivery Network (CDN), which stores all the Office files needed for installation.  IT Pros can use the Office Deployment Tool (ODT) to download the installation files by using the setup.exe /download command in their configuration file. This download creates a folder named **Office** with all the Microsoft 365 Apps installation files. The size of the folder with one language is approximately 2.8 GB. 
 
 The files shown below are sorted by size. You’ll notice that one file, stream.x64.x-none.dat, is over 2 GB. This file contains all the language-neutral content.  The second set of .dat files contain support languages, which are typically  about 370 MB each. The v64.cab or v32.cab file lets the ODT validate the installation media. This file is required for local installation and is automatically provided  when downloading the latest build for a respective channel. Omitting this file within a deployment package may lead to downloading entire content from the CDN instead of using the local source.   
 

@@ -58,7 +58,7 @@ Because you're deploying Microsoft 365 Apps from a local source, you have to cre
 
 Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\Server\Share\M365. If you've already downloaded the ODT, make sure you have the latest version.
 
-After downloading the file, run the self-extracting executable file, which contains the ODT executable (setupodt.exe) and a sample configuration file (configuration.xml).
+After downloading the file, run the self-extracting executable file, which contains the ODT executable (setup.exe) and a sample configuration file (configuration.xml).
 
 ## Step 3: Create a configuration file for the pilot group
 
@@ -94,7 +94,7 @@ This configuration file is used to download Office installation files and then d
 
 From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the pilot group:
 
- `\\server\share\M365\setupodt.exe /download \\server\share\M365\config-pilot-SECP.xml`
+ `\\server\share\M365\setup.exe /download \\server\share\M365\config-pilot-SECP.xml`
 
 The files should begin downloading immediately. After running the command, go to **\\\server\share\M365\SECP**  and look for an Office folder with the appropriate files in it.
 
@@ -106,7 +106,7 @@ If you run into problems, make sure you have the newest version of the ODT and m
 
 From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the broad group:
 
- `\\server\share\M365\setupodt.exe /download \\server\share\M365\config-broad-SEC.xml`
+ `\\server\share\M365\setup.exe /download \\server\share\M365\config-broad-SEC.xml`
 
 The files should begin downloading immediately. After running the command, go to **\\\server\share\M365\SEC** and look for an Office folder with the appropriate files in it.
 
@@ -116,7 +116,7 @@ To deploy Office, we'll provide commands that users can run from their client co
 
 From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setupodt.exe /configure \\Server\Share\M365\config-pilot-SECP.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-pilot-SECP.xml`
 
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
@@ -129,7 +129,7 @@ After Office has deployed to the pilot group, test Office in your environment, p
 
 After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setupodt.exe /configure \\Server\Share\M365\config-broad-SEC.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-broad-SEC.xml`
 
 This command is the same as the pilot group, except that it references the configuration file for the broad group.
 
