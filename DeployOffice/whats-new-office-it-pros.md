@@ -22,9 +22,6 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 [Learn from Microsoft experts](fieldnotes/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
 
-### Change to the Office Deployment Tool
-
-The Logging element is no longer supported as a configuration option for the Office Deployment Tool. Log files can be found in the %temp% folder.
 
 ## October 2020
 
