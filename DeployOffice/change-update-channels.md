@@ -37,7 +37,7 @@ After policy has been applied, the Office Automatic Update 2.0 task must run. Wh
 
 1. Before you begin, make sure the scheduled task "Office Automatic Update 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, or Configuration Manager.
 
-2. Download the latest version of the ODT (setupodt.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
+2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
 3. Create a configuration file that specifies the new channel name. In the example below, the channel changes to Current Channel.  For more information on channel names, see [Channel attribute in the Configuration Options article](office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
 

@@ -75,7 +75,7 @@ To work with configuration files in the cloud, sign in to the [Office 365 Client
 - To edit an existing file, click the name of the file, make your changes, and then click **Done**.
 - To get a link to a configuration file, select the file, click **Get Link**, and then click **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. 
 
-When running the Office Deployment Tool, you refer to the cloud-based configuration file by including the link in quotes. To deploy with the ODT, for example, use `setupodt.exe /configure "link"`.
+When running the Office Deployment Tool, you refer to the cloud-based configuration file by including the link in quotes. To deploy with the ODT, for example, use `setup.exe /configure "link"`.
 
 You can also copy, upload, or download configuration files from the Device Configuration page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
 

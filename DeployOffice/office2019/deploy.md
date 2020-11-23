@@ -27,9 +27,9 @@ Installing directly from the Office CDN requires the least amount of administrat
 
 The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT.
 
-After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files:  setupodt.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
+After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files:  setup.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
-The setupodt.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
+The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
 
 ## Create the configuration.xml
 
@@ -100,7 +100,7 @@ For more information about using RemoveMSI, see [Remove existing MSI versions of
 Once you have a copy of the ODT and have created your configuration.xml file, you can download the Office 2019 installation files to your local network. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type this command:
 
 ```console
-	setupodt /download configuration.xml
+	setup /download configuration.xml
 ```
 
 If you have saved the configuration.xml file with a different name, use that name in the command.
@@ -117,7 +117,7 @@ Here some additional details about downloading Office 2019 installation files:
 Once you have a copy of the ODT and have created your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
 
 ```console
-	setupodt /configure configuration.xml
+	setup /configure configuration.xml
 ```
 
 If you have saved the configuration.xml file with a different name, use that name in the command. 
