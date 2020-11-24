@@ -17,7 +17,7 @@ description: "The Office Deployment Tool (ODT) is a command-line tool that you c
 # Overview of the Office Deployment Tool
 
 > [!IMPORTANT]
-> The executable file for the Office Deployment Tool is now named setup**odt**.exe, instead of setup.exe. This change took effect with Version 16.0.13328.20356 (setupodt.exe version 16.0.13328.20336), which was released on November 10, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool. Therefore, if you have scripts or batch files that refer to setup.exe, you need to update them to refer to setup**odt**.exe.
+> Based on customer feedback, we've decided to rename the executable file for the Office Deployment Tool back to setup.exe (from setup*odt*.exe), starting with the release on November 23, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool.
 
 The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users.
 
@@ -27,27 +27,30 @@ If you're not an enterprise administrator and are looking to install Office in y
 
 Download the Office Deployment Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setupodt.exe) and a sample configuration file (configuration.xml).
+After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and a sample configuration file (configuration.xml).
 
 Before using the ODT to download or install Office, we recommend making sure you have the latest version.
+
+> [!TIP]
+> For more information about what changes are in the latest version of the ODT, see [Release history for Office Deployment Tool](https://docs.microsoft.com/officeupdates/odt-release-history).
 
 ## Get started with the Office Deployment Tool
 <a name="BKMK_GetStarted"> </a>
 
-The ODT consists of two files: setupodt.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setupodt.exe from the command line. For example, you can edit the configuration file to install the 64-bit English edition of Office with the EULA automatically accepted. For the full set of options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to install the 64-bit English edition of Office with the EULA automatically accepted. For the full set of options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 > [!NOTE]
 > **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
 
-- To download Microsoft 365 Apps products and languages, use **download** mode. Example: `setupodt.exe /download downloadconfig.xml`. When you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
+- To download Microsoft 365 Apps products and languages, use **download** mode. Example: `setup.exe /download downloadconfig.xml`. When you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
 
-- To install the downloaded Microsoft 365 Apps products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setupodt.exe /configure installconfig.xml`
+- To install the downloaded Microsoft 365 Apps products and languages on a client computer, use **configure** mode. You also use configure mode to remove and update Office products and languages. Example: `setup.exe /configure installconfig.xml`
 
-- To apply new application preferences to client computers that already have Microsoft 365 Apps installed, use **customize** mode. This mode will apply only application preferences, without changing any other deployment settings. Example: `setupodt.exe /customize preferencesconfig.xml`
+- To apply new application preferences to client computers that already have Microsoft 365 Apps installed, use **customize** mode. This mode will apply only application preferences, without changing any other deployment settings. Example: `setup.exe /customize preferencesconfig.xml`
 
-- To create an App-V package from the downloaded Microsoft 365 Apps products and languages, use **packager** mode. Example: `setupodt.exe /packager packageconfig.xml`
+- To create an App-V package from the downloaded Microsoft 365 Apps products and languages, use **packager** mode. Example: `setup.exe /packager packageconfig.xml`
 
 You can also use **help** mode to read command-line help for the tool.
 
@@ -81,7 +84,7 @@ For more information about the configuration options and more examples, see [Con
 
 From a command prompt, run the ODT executable in download mode and with a reference to the configuration file you saved. In this example, the configuration file is named **downloadconfig.xml:**
 
- `setupodt.exe /download downloadconfig.xml`
+ `setup.exe /download downloadconfig.xml`
 
  **Step 3: Validate that the files have been downloaded**
 
@@ -137,9 +140,9 @@ For more information about the configuration options, see [Configuration options
 
 From a command prompt, run the ODT executable in configure mode with a reference to the configuration file you saved. In the following example, the configuration file is named **installconfig.xml**:
 
- `setupodt.exe /configure installconfig.xml`
+ `setup.exe /configure installconfig.xml`
 
-You must have local administrator permissions on the client computer. You can run the executable from the client computer on which you want to install Office or you can put the ODT and the configuration file on a network share and run it from there. If you use a network share, make sure to pass the full network path for both the setupodt.exe and the configuration file to the command.
+You must have local administrator permissions on the client computer. You can run the executable from the client computer on which you want to install Office or you can put the ODT and the configuration file on a network share and run it from there. If you use a network share, make sure to pass the full network path for both the setup.exe and the configuration file to the command.
 
  **Step 3: Verify that installation was successful**
 
@@ -249,7 +252,7 @@ You can apply new application preferences to client computers that already have 
 1. Use the steps in [define application preferences](overview-of-the-office-customization-tool-for-click-to-run.md#define-application-preferences) to create the configuration file.
 2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you created. In the following example, the configuration file is named **installapppreferences.xml**:
   
- `setupodt.exe /customize installapppreferences.xml`
+ `setup.exe /customize installapppreferences.xml`
   
 You must run the executable from the client computer on which you want to apply the app preferences and you must have local administrator permissions on that computer. When using customize mode, the app preferences defined in the configuration file are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted. 
 
@@ -283,7 +286,7 @@ The location of the Office installation files is \\\\server\share. For your conf
 
 From a command prompt, run the ODT executable in packager mode with a reference to the configuration file you saved and to the location where you want to save the App-V package. In the following example, the configuration file is named **packageconfig.xml** and the App-V package will be saved to **\\\\server\share\appv\\**:
 
- `setupodt.exe /packager packageconfig.xml \\server\share\appv\`
+ `setup.exe /packager packageconfig.xml \\server\share\appv\`
 
  **Step 3: Verify that the package was created**
 
