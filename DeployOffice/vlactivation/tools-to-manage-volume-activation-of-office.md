@@ -9,7 +9,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Provides Office admins with informaiton about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
+description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
 ---
 
 # Tools to manage volume activation of Office
