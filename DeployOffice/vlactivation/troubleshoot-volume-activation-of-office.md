@@ -22,7 +22,7 @@ Setting up volume activation of Office, including Project and Visio, by using Ke
 > [!NOTE]
 > If you're an Office user troubleshooting a personal copy of Office, see [Unlicensed Product and activation errors in Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) instead of reading this article.
   
-Many of the solutions include running the ospp.vbs, which you need to run from an elevated command prompt on the computer on which Office is installed. The opss.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder. You can also use the slmgr.vbs script to configure and manage volume activation. For detailed information about these scripts, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+Many of the solutions include running the ospp.vbs, which you need to run from an elevated command prompt on the computer on which Office is installed. The ospp.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder. You can also use the slmgr.vbs script to configure and manage volume activation. For detailed information about these scripts, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
    
 ## Tips for configuring KMS clients and host computers
@@ -48,7 +48,7 @@ KMS activation issues can be due to a misconfiguration on one or more of the fol
     
 To quickly identify your KMS trouble spots, use either the Office Client KMS activation diagnostic or Office KMS Host Activation diagnostic tool to analyze your environment for known issues. These diagnostic tools automate almost all of the troubleshooting steps available for KMS issues and provide a detailed report with recommendations on how to fix the detected issues.
   
-You should always analyze the client first by using the Office Client KMS activation diagnostic tool, even if you feel you have a KMS Host configuration problem. It'll determine if your changes need to occur on the client, your network, or your KMS host.
+You should always analyze the client first by using the Office Client KMS activation diagnostic tool, even if you feel you have a KMS Host configuration problem. It will determine if your changes need to occur on the client, your network, or your KMS host.
   
 If the Office Client KMS activation diagnostic tool indicates you have KMS host issues, you should then run the Office KMS Host Activation diagnostic tool.
   
@@ -87,7 +87,7 @@ If the Office Client KMS activation diagnostic tool indicates you have KMS host 
     
 6. When you are prompted, choose **Run** or **Save File**. If you choose **Save File**, you can later run the file from the folder where you saved it.
     
-7. When prompted to select the computer on which to run the diagnostic, choose **This Computer**, and then choose **Next**. On the next page choose **Start**.
+7. When prompted to select the computer on which to run the diagnostic, choose **This Computer**, and then choose **Next**. On the next page, choose **Start**.
     
 8. A report is automatically generated and opened in your browser.
     

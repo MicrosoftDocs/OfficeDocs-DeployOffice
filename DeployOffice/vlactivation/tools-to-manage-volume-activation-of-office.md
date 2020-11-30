@@ -9,7 +9,7 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Provides Office admins with informaiton about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
+description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
 ---
 
 # Tools to manage volume activation of Office
@@ -25,7 +25,7 @@ The Office Software Protection Platform script (ospp.vbs), the Software License 
 ## The ospp.vbs script
 
 
-The Office Software Protection Platform script (ospp.vbs) enables you to configure volume licensed versions of Office products, including Project and Visio. The opss.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder. 
+The Office Software Protection Platform script (ospp.vbs) enables you to configure volume licensed versions of Office products, including Project and Visio. The ospp.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder. 
   
 Running ospp.vbs requires the cscript.exe script engine. To see the Help file, type the following command, and then press ENTER:
   
