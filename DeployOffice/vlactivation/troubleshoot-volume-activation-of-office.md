@@ -48,7 +48,7 @@ KMS activation issues can be due to a misconfiguration on one or more of the fol
     
 To quickly identify your KMS trouble spots, use either the Office Client KMS activation diagnostic or Office KMS Host Activation diagnostic tool to analyze your environment for known issues. These diagnostic tools automate almost all of the troubleshooting steps available for KMS issues and provide a detailed report with recommendations on how to fix the detected issues.
   
-You should always analyze the client first by using the Office Client KMS activation diagnostic tool, even if you feel you have a KMS Host configuration problem. It'll determine if your changes need to occur on the client, your network, or your KMS host.
+You should always analyze the client first by using the Office Client KMS activation diagnostic tool, even if you feel you have a KMS Host configuration problem. It will determine if your changes need to occur on the client, your network, or your KMS host.
   
 If the Office Client KMS activation diagnostic tool indicates you have KMS host issues, you should then run the Office KMS Host Activation diagnostic tool.
   
@@ -87,7 +87,7 @@ If the Office Client KMS activation diagnostic tool indicates you have KMS host 
     
 6. When you are prompted, choose **Run** or **Save File**. If you choose **Save File**, you can later run the file from the folder where you saved it.
     
-7. When prompted to select the computer on which to run the diagnostic, choose **This Computer**, and then choose **Next**. On the next page choose **Start**.
+7. When prompted to select the computer on which to run the diagnostic, choose **This Computer**, and then choose **Next**. On the next page, choose **Start**.
     
 8. A report is automatically generated and opened in your browser.
     
