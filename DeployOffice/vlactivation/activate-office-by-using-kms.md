@@ -32,7 +32,7 @@ If the network environment does not use SRV RRs, you can manually assign a KMS c
 
 You can configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer is not cached, the KMS client will query DNS every time that activation is attempted. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client won't query DNS and instead will attempt to contact the cached KMS host computer that last resulted in successful activation.
 
-To configure KMS host caching, you can use the opss.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+To configure KMS host caching, you can use the ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
 To configure KMS host caching, open an elevated command prompt on the KMS client computer and go to the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder.  
 
