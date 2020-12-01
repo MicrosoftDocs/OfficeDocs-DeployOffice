@@ -40,7 +40,7 @@ If this feature is enabled by you for a user, they will see one notification tot
 ![Screenshot showing a document in Word, with a message about the Home Use Program showing underneath the ribbon.](../images/other/home-use-program-1.png)
 ![Screenshot showing a document in Word, with a message about the Home User Program showing underneath the user's name on the title bar.](../images/other/home-use-program-2.png)
 
-When the user clicks on **Learn more and sign up**, they will be taken to the HUP webpage (https://aka.ms/huplearnmore) where they can learn more about the program and sign up for it if they would like. The subscription will be separate from any organizational subscription enabled by you.
+When the user selects **Learn more and sign up**, they will be taken to the HUP webpage (https://aka.ms/huplearnmore) where they can learn more about the program and sign up for it if they would like. The subscription will be separate from any organizational subscription enabled by you.
 
 End users will be able to opt out of all HUP-related messaging on their device by clicking on the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
 
