@@ -71,8 +71,8 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 ## Additional information
 
-- Office Professional Plus 2019 includes Access, Excel, Outlook, PowerPoint, Publisher, Word, and Skype for Business.
-- There isn’t a 2019 version of OneNote, but OneNote is available for Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+- Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business.
+- There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
 - All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 gb or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version.  For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet access isn’t required to install, activate, or use Office 2019.
 - There isn’t a 2019 version of SharePoint Designer or InfoPath. The last version for both products is 2013.
@@ -83,4 +83,4 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - [Deploy Office 2019 (for IT Pros)](deploy.md)
 - [Update Office 2019 (for IT Pros)](update.md)
-- [Volume activation for Office](../vlactivation/plan-volume-activation-of-office.md)
+- [Overview of volume activation for Office](../vlactivation/plan-volume-activation-of-office.md)
