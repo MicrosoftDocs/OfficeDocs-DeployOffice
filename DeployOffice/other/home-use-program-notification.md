@@ -20,13 +20,9 @@ hideEdit: true
 
 Microsoft is releasing a new in-product notification feature that informs qualifying end users about the Home Use Program (HUP) employee benefit. The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows. This feature is only for Office 365 (or Microsoft 365) subscription clients and is available with Version 2008 or later of Microsoft 365 Apps for enterprise.
 
-The following information outlines what you can expect from the rollout of this feature. For your organization, the feature will be made available on the start date indicated in the Message center post sent to you and will be rolled out by default to your users in the United States.
-
-## Goal of the HUP in-product notification feature
-
 The goal of this feature is to raise awareness about the Home Use Program among your employee community. This notification will only appear for employees of organizations that meet the qualification criteria for the Home Use Program.
 
-Microsoft may receive aggregated (non-identifiable) user data such as impression count or click count for these notifications.
+The following information outlines what you can expect from the rollout of this feature. For your organization, the feature will be made available on the start date indicated in the Message center post sent to you and will be rolled out by default to your users in the United States.
 
 ## What is the Home Use Program (HUP)?
 
@@ -69,6 +65,8 @@ To disable the *Show in-product notifications for the Microsoft Home Use Program
 You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous.
 
 ## User privacy and notifications about HUP
+
+Microsoft may receive aggregated (non-identifiable) user data such as impression count or click count for these notifications.
 
 User data in the Microsoft 365 enterprise applications described above continues to be governed by the Online Service Terms while receiving and interacting with HUP messages, but once a user selects the **Learn more** option in the HUP offering, a Microsoft consumer website will open in their browser and further interaction with HUP will be governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
