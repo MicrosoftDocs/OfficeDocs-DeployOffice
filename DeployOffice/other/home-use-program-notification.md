@@ -20,7 +20,7 @@ hideEdit: true
 
 Microsoft is releasing a new in-product notification feature that informs qualifying end users about the Home Use Program (HUP) employee benefit. The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows. This feature is only for Office 365 (or Microsoft 365) subscription clients and is available with Version 2008 or later of Microsoft 365 Apps for enterprise.
 
-The following information outlines what you can expect from the rollout of this feature. For your tenant, the feature will be made available on the start date indicated in the Message center post sent to you and will be rolled out by default to your users in the United States.
+The following information outlines what you can expect from the rollout of this feature. For your organization, the feature will be made available on the start date indicated in the Message center post sent to you and will be rolled out by default to your users in the United States.
 
 ## Goal of the HUP in-product notification feature
 
@@ -36,12 +36,9 @@ The Home Use Program helps your employees become more proficient and productive 
 
 ## What is the user experience?
 
-The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows for Version 2008 or later of Microsoft 365 Apps for enterprise. For your tenant, the notification will begin appearing on the start date indicated in the Message center post sent to you.
+The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows for Version 2008 or later of Microsoft 365 Apps for enterprise. For your organization, the notification will begin appearing on the start date indicated in the Message center post sent to you.
 
-This notification will be automatically enabled for users in your organization who are in the United States. You can choose to [turn off these notifications](#how-to-turn-off-notifications-about-hup) for some or all of your users by using a policy setting.
-
-> [!TIP]
-> You can use the same policy setting to enable HUP notifications to users in your organization who are not in the United States. In that case, you'll set the policy setting to Enabled.
+This notification will be automatically enabled for users in your organization who are in the United States. You can choose to [turn off these notifications](#how-to-turn-off-notifications-about-hup) for some or all of your users by using a policy setting. You can use the same policy setting to enable these notifications for users in your organization who are not in the United States.
 
 If enabled, users will see one notification total per month across all their apps. The notification will be similar to the following screenshot, localized to the language setting of the user’s device.
 
@@ -56,6 +53,8 @@ End users will be able to opt out of all HUP-related messaging on their device b
 The notifications can be controlled by a policy setting that can be configured by using the Office cloud policy service or Group Policy. The policy setting is named *Show in-product notifications for the Microsoft Home Use Program*.
 
 You can configure this policy setting for some or all of your users, and you can configure the policy setting before or after the notifications begin appearing.
+
+If you want users in your organization who are not in the United States to receive these notifications, you can set the policy setting to Enabled.
 
 ### Use the Office cloud policy service to turn off notifications about HUP
 
@@ -73,7 +72,7 @@ You can find this policy setting under User Configuration\Policies\Administrativ
 
 User data in the Microsoft 365 enterprise applications described above continues to be governed by the Online Service Terms while receiving and interacting with HUP messages, but once a user selects the **Learn more** option in the HUP offering, a Microsoft consumer website will open in their browser and further interaction with HUP will be governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-In order to ensure that only the right enterprise users see HUP notifications, our services will utilize the following data: Tenant ID associated with the device.
+In order to ensure that only the right enterprise users see HUP notifications, our services will utilize the following data: Tenant ID associated with the user signed in to the device.
 
 We will be looking at basic user engagement data to draw insights on the program design, such as how many users saw notifications, and how many clicked on them. This data is collected as diagnostic data as it is for all user in-product notifications; under the provisions of the Online Services Terms, and governed by the Tenant Admin setting for diagnostic data collection: optional/required/neither.
 
