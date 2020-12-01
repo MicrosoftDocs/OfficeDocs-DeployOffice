@@ -636,7 +636,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "DeployOffice/other/home-use-program",
+      "source_path": "DeployOffice/other/home-use-program.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/other/home-use-program-preview",
       "redirect_document_id": true
     }
