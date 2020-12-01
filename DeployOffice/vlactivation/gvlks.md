@@ -62,7 +62,7 @@ By default, volume licensed versions of Office 2019 and Office 2016 are installe
 |Word 2016  <br/> |WXY84-JN2Q9-RBCCQ-3Q3J3-3PFJ6  <br/> |
    
 
-## Related topics
+## Related articles
 
 - [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md)
 - [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md) 
