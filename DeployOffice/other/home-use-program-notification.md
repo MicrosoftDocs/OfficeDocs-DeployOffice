@@ -68,7 +68,7 @@ To disable the *Show in-product notifications for the Microsoft Home Use Program
 
 You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous.
 
-## User privacy and the Home Use Program
+## User privacy and notifications about HUP
 
 User data in the Microsoft 365 enterprise applications described above continues to be governed by the Online Service Terms while receiving and interacting with HUP messages, but once a user selects the **Learn more** option in the HUP offering, a Microsoft consumer website will open in their browser and further interaction with HUP will be governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
