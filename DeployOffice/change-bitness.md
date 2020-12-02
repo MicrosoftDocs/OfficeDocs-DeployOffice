@@ -20,6 +20,9 @@ But now, to make it easier to change from a 32-bit to a 64-bit installation of M
 
 With MigrateArch, you don't have to account for all the installed products and languages or other deployment settings. The migration process will preserve those during the migration process. But, if you want to make any changes to the installed products and languages, or other deployment settings, you can do that as part of the migration process by explicitly specifying those settings in your configuration.xml file. For more information, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
+> [!NOTE]
+> The 32-bit version will be uninstalled and then the 64-bit version will be installed.
+
 ## Requirements for using the MigrateArch attribute
 
 To use the MigrateArch attribute, you need the following:
@@ -86,7 +89,7 @@ If you want to change the products or languages installed, or want to change oth
 
 - If a user has an Office app, such as Word, open when the migration process begins, and the [Level](office-deployment-tool-configuration-options.md#level-attribute-part-of-display-element) attribute is set to Full for the [Display](office-deployment-tool-configuration-options.md#display-element) element in your configuration.xml file, then the user will be prompted to close the app. If they cancel the prompt, the migration is canceled. If the Level attribute is set to None, and Office apps are running on the device, then the migration will fail. You can use the [FORCEAPPSHUTDOWN](office-deployment-tool-configuration-options.md#forceappshutdown-property-part-of-property-element) property in your configuration.xml file, but that will close the user's apps without any warning.
 
-## Related topics
+## Related articles
 
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
