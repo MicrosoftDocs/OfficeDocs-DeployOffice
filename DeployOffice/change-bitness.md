@@ -20,6 +20,9 @@ But now, to make it easier to change from a 32-bit to a 64-bit installation of M
 
 With MigrateArch, you don't have to account for all the installed products and languages or other deployment settings. The migration process will preserve those during the migration process. But, if you want to make any changes to the installed products and languages, or other deployment settings, you can do that as part of the migration process by explicitly specifying those settings in your configuration.xml file. For more information, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
+> [!NOTE]
+> The 32-bit version will be uninstalled and then the 64-bit version will be installed.
+
 ## Requirements for using the MigrateArch attribute
 
 To use the MigrateArch attribute, you need the following:
