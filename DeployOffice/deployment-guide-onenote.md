@@ -21,7 +21,9 @@ There are two versions of OneNote that you can deploy to users in your organizat
 While both versions are supported and can be installed on the same device, OneNote is the recommended version for enterprise environments. OneNote provides more features and allows you to customize user settings through Group Policy.
 
 > [!NOTE]
-> If you're using Version 2003 or earlier of Microsoft 365 Apps, OneNote still appears as OneNote 2016.
+> OneNote still appears as OneNote 2016 for the following installations:
+> - Version 2003 or earlier of Microsoft 365 Apps
+> - Volume licensed versions of Office 2019, such as Office Professional Plus 2019.
 
 ## OneNote deployment guidance
 

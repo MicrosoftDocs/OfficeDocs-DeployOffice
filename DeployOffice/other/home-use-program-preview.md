@@ -17,13 +17,15 @@ hideEdit: true
 > - This article is for a preview program that isn’t available to everyone and is subject to change.
 > - The information in this article applies only to organizations that receive a Message center post (in the Microsoft 365 admin center) about this preview program.
 
-Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end users about the Home Use Program (HUP) employee benefit. The notification will be shown in their desktop Windows Word, Excel, PowerPoint, and Outlook applications for Office 365 (or Microsoft 365) subscription clients. The preview is available for your organization as part of Version 2008 or later of Microsoft 365 Apps for enterprise, and this article outlines how users in your organization can see the preview if enabled by you.
+Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end users about the Home Use Program (HUP) employee benefit. The notification will be shown to your users in Word, Excel, PowerPoint, and Outlook apps on devices running Windows. This feature is only for Office 365 (or Microsoft 365) subscription clients and is available with Version 2008 or later of Microsoft 365 Apps for enterprise.
+
+The following information outlines how users in your organization can see the preview if enabled by you.
 
 ## Goal of the HUP in-product notification feature
 
 The goal of this feature is to raise awareness about the Home Use Program among your employee community. This notification will only appear for employees of organizations that meet the qualification criteria for the Home Use Program.
 
-The preview is meant to give organizations an opportunity to test the user experience and understand what this feature will mean for their users, as well as to decide on what policy setting they want to keep for which users. This preview is also an opportunity for Microsoft to gain an understanding on what to expect during the full release as well as to seek feedback from customers. Microsoft may receive aggregated (non-identifiable) user data such as impression count, click count for these notifications.
+The preview is meant to give organizations an opportunity to test the user experience and understand what this feature will mean for their users, as well as to decide on what policy setting they want to keep for which users. This preview is also an opportunity for Microsoft to gain an understanding on what to expect during the full release as well as to seek feedback from customers. 
 
 ## What is the Home Use Program (HUP)?
 
@@ -38,13 +40,13 @@ If this feature is enabled by you for a user, they will see one notification tot
 ![Screenshot showing a document in Word, with a message about the Home Use Program showing underneath the ribbon.](../images/other/home-use-program-1.png)
 ![Screenshot showing a document in Word, with a message about the Home User Program showing underneath the user's name on the title bar.](../images/other/home-use-program-2.png)
 
-When the user clicks on **Learn more and sign up**, they will be taken to the HUP webpage (https://aka.ms/huplearnmore) where they can learn more about the program and sign up for it if they would like. The subscription will be separate from any organizational subscription enabled by you.
+When the user selects **Learn more and sign up**, they will be taken to the HUP webpage (https://aka.ms/huplearnmore) where they can learn more about the program and sign up for it if they would like. The subscription will be separate from any organizational subscription enabled by you.
 
 End users will be able to opt out of all HUP-related messaging on their device by clicking on the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
 
 ## How can you get the preview?
 
-This notification feature is available with Version 2008 or later of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2008 or higher will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
+This notification feature is available with Version 2008 or later of Microsoft 365 Apps for enterprise and is switched off by default. You can enable the notification for some or all of your users through a policy setting. Once enabled, users with Version 2008 or later will see a notification in their Word, Excel, PowerPoint, and Outlook apps.
 
 The notifications will be controlled by a policy setting that can be enabled by using the Office cloud policy service or Group Policy. The notifications will be OFF by default unless you enable them by using the policy setting.
 
@@ -69,6 +71,8 @@ You can find this policy setting under User Configuration\Policies\Administrativ
 Depending on the performance and feedback of this optional preview, Microsoft may release this feature more broadly for HUP-eligible customers. The user experience will be as outlined above. We will post an update on the Microsoft 365 admin center before any changes to the feature roll-out plans to ensure you are aligned. As the admin you will always have the choice to disable or enable the feature for any of your users. Your users will always have the right opt their device out from receiving any future in-product notifications about the Home Use Program, even if you have enabled the feature for them.
 
 ## User privacy
+
+Microsoft may receive aggregated (non-identifiable) user data such as impression count or click count for these notifications.
 
 User data in the Microsoft 365 enterprise applications described above continues to be governed by the Online Service Terms while receiving and interacting with HUP messages, but once a user selects the **Learn more** option in the HUP offering, a Microsoft consumer website will open in their browser and further interaction with HUP will be governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 

@@ -634,6 +634,11 @@
       "source_path": "DeployOffice/delay-feature-updates-semi-annual-channel.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/office-deployment-tool-configuration-options#targetversion-attribute-part-of-updates-element",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/other/home-use-program.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/other/home-use-program-preview",
+      "redirect_document_id": true
     }
   ]
 }
