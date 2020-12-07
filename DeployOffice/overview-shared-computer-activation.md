@@ -56,7 +56,7 @@ If Microsoft 365 Apps is already installed and you want to enable shared compute
 
 - Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
 - Use Registry Editor to add a String value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
-- Download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_OfficeSCA_Docs). This is key to change the activation method over from subscription Mmde to shared mode. 
+- Download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_OfficeSCA_Docs). This is required to change the activation method from subscription mode to shared mode. 
 
   > [!NOTE]
   > Microsoft 365 Apps for business doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
