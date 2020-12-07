@@ -20,6 +20,23 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
  
 ## Known issues
 
+### As of December 7, 2020
+
+ - Admins using IPv6 only machines cannot access public preview features
+ - When a device is moved out of the profile, admin needs to manually service it
+
+### As of November 30, 2020
+
+ - Admins using IPv6 only machines cannot access public preview features
+ - When a device is moved out of the profile, admin needs to manually service it
+
+### As of November 16, 2020
+
+ - Admins using IPv6 only machines cannot access public preview features
+ - When a device is moved out of the profile, admin needs to manually service it
+ - Issues don't load and can show an error
+ - When navigating to the Settings page, changes can't be saved
+
 ### As of November 9, 2020
 
 - Organizations using IPv6 only machines cannot access Public Preview features
@@ -33,6 +50,23 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 - The Inventory page sometimes displays a Please wait dialog.
 
 ## Release notes
+
+### December 7, 2020
+
+ - Fixed error that shows the Add-in module not loading in the inventory page
+ - Fixed error when navigating to the Issues page in the servicing profile
+ - Fixed errors when navigating to the servicing profile
+ - Fixed an issue when trying to save changes in Settings page
+ - Fixed an issue with the Servicing profile issues page not loading and showing an error
+
+### November 30, 2020
+
+ - Fixed an issue when trying to save changes in Settings page
+ - Fixed an issue with the Servicing profile issues page not loading and showing an error
+
+### November 16, 2020
+
+ - "Divided by 0" error may occur when setting up the Servicing Profile with a single device
 
 ### November 9, 2020
 
