@@ -16260,7 +16260,7 @@ The following fields are collected:
 
   - **ModuleBaseAddress** - Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleOffset** - Offset in bytes from the base address where the failure occurred.
+  - **ModuleOffset** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
   - **ModuleSize** - Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
