@@ -20,30 +20,30 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
  
 ## Known issues
 
-### As of December 7, 2020
+### December 7, 2020
 
  - Admins using IPv6 only machines cannot access public preview features
  - When a device is moved out of the profile, admin needs to manually service it
 
-### As of November 30, 2020
+### November 30, 2020
 
  - Admins using IPv6 only machines cannot access public preview features
  - When a device is moved out of the profile, admin needs to manually service it
 
-### As of November 16, 2020
+### November 16, 2020
 
  - Admins using IPv6 only machines cannot access public preview features
  - When a device is moved out of the profile, admin needs to manually service it
  - Issues don't load and can show an error
  - When navigating to the Settings page, changes can't be saved
 
-### As of November 9, 2020
+### November 9, 2020
 
 - Organizations using IPv6 only machines cannot access Public Preview features
-- When a device moved out of the servicing profile, monthly updates will be required to be setup
+- When a device moved out of the servicing profile, monthly updates will be required to be set up
 - "Divided by 0" error may occur when setting up the servicing profile with a single device
 
-### As of October 29, 2020
+### October 29, 2020
 
 - The servicing profile device and issues page takes time to load.
 - When creating the serving profile with the default values, the device might not be added to the profile
