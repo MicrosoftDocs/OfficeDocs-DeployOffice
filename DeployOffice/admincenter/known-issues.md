@@ -56,8 +56,6 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
  - Fixed error that shows the Add-in module not loading in the inventory page
  - Fixed error when navigating to the Issues page in the servicing profile
  - Fixed errors when navigating to the servicing profile
- - Fixed an issue when trying to save changes in Settings page
- - Fixed an issue with the Servicing profile issues page not loading and showing an error
 
 ### November 30, 2020
 
