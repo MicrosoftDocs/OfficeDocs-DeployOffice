@@ -2474,7 +2474,7 @@ The following fields are collected:
 
 - **message_id** - server message id targeted for action, or comma-separated list if more than one item was in action.
 
-- **message_type** - indicates what type of message type the action was taken on** - group or other
+- **message_type** - indicates what type of message type the action was taken on - group or other
 
 - **number_selected** - the number of items the user selected on the message list and took action on during multiple selection mode.
 
