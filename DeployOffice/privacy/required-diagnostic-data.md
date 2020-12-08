@@ -1822,6 +1822,10 @@ The following fields are collected:
 
 - **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
 
+- **hx_error_type** - tells us what error occurred that prohibited the service from completing a remove, update, or add reaction on a message.
+
+- **hx_string_tag** - tells us the tag of the error in the service's codebase
+
 - **reaction_origin** – Tells us origin from where the user reacted 
 
 - **reaction_type** – Tells us the reaction type of the user
@@ -2440,7 +2444,7 @@ The following fields are collected:
 
 - **attachment_download_time** - the time for an attachment download action
 
-- **attachment_extn** - the file extension of the downloaded attachment
+- **attachment_extn** - the file extension of the downloaded attachment *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **attachment_id** - the system identifier for the downloaded attachment 
 
@@ -2454,7 +2458,7 @@ The following fields are collected:
 
 - **event_mode** - what type of event mode it was in, groups or others. 
 
-- **Extension** - file extension of link or attachment associated with this action 
+- **Extension** - four characters of file extension of link or attachment associated with this action  *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **internet_message_id** - tracking message ID
 
@@ -2476,6 +2480,8 @@ The following fields are collected:
 
 - **origin** - source of action, i.e. cell swipe, zero-query, deep link, email view, email list, etc.
 
+- **origin_view** - source view of action, e.g., conversation, message, etc.
+
 - **reported_to_msft** - after sending an email to junk (spam) or trash (phishing) they can choose to report their action to Microsoft.
 
 - **retry** - whether the action was retried
@@ -2489,6 +2495,8 @@ The following fields are collected:
 - **source_folder** - tracks source folder type when action is indicating to move from one folder to other, i.e. to inbox, trash etc. 
 
 - **source_inbox** - indicates which inbox the mail action is taking place (i.e. focused, other, etc.) state - state of the action, i.e. success or point of failure
+
+- **state** - state of the action, i.e., success or point of failure
 
 - **target_folder** - indicates target folder type when moving emails from one folder to other
 
@@ -8434,6 +8442,14 @@ The following fields are collected:
 
 - **has_hx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
 
+- **Session.Duration** - the length of the session in seconds
+
+- **Session.DurationBucket** - duration length time bucket *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **Session.FirstLaunchTime** - first recorded launch time of the app *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **Session.State** - the indicator of whether this is the start or end of the session
+
 #### settings.action
 
 This event collects the configuration information in settings. The data allows us to detect situations where there is possible negative impact on the users’ ability configure app settings, such as notification settings, primary mail account, and configuring the email signature.
@@ -12050,17 +12066,6 @@ The following fields are collected:
 - **SlideshowViewLoadTime** – Time taken by slideshow to load.
 
 
-#### Office.PowerPoint.PPT.Android.RehearseView.Errors
-
-Event triggered when any error occurs. This event will help us know the errors that user has faced and will help keep the Presenter Coach performant on mobile.
-
-The following fields are collected:
-
-- **Session id:string** – rehearsal session id
-
-- **RehearsalEventCode:int** – rehearsal error code
-
-
 #### Office.PowerPoint.PPT.Android.RehearseView.RehearsalSummaryPage 
 
 Event triggered when summary page is loaded. This event helps us in capturing the performance of summary page. It tells how much time it takes for rehearsal summary service page to load on client. It is required to keep the feature performant. 
@@ -12094,6 +12099,20 @@ Event triggered when user clicks on start session. This event helps us in captur
 The following fields are collected:
 
  - None
+
+
+#### Office.PowerPoint.PPT.Shared.RehearseView.Errors
+
+*[This event was previously named Office.PowerPoint.PPT.Android.RehearseView.Errors]*
+
+Event triggered when any error occurs. This event will help us know what errors that user has faced and will help keep the Presenter Coach performant on mobile.
+
+The following fields are collected:
+
+- **Session ID** – rehearsal session id
+
+- **RehearsalEventCode** – rehearsal error code
+
 
 #### Office.PowerPoint.Rehearsal.SessionMetrics 
 
@@ -12334,11 +12353,22 @@ The following fields are collected:
 
 - **app_start_show_message_list** - that means there was a performance issue with the app start-up causing your inbox message list to take a long time to load
 
+- **average** - collects the amount of reloads that happen on a conversation divided by the amount of messages in that conversation.  
+
 - **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
 
 - **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, i.e. when did this action start and end, etc. 
 
 - **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
+
+- **runtime_performance_monitoring_data** - provides the performance data (loading time, record count) when loading data in different parts of the app.
+  - **average_cost_time_ns** - The average cost time measured in nanoseconds.
+  - **cost_type** - Tells us whether this event is for measuring storage layer execution or total duration.
+  - **hx_object_type** - Provides the detail programming object type of the measuring.
+  - **is_main_thread** - Tells us whether this events only measures main thread execution time.
+  - **record_count** - The number of records the underlying storage layer returns.
+  - **scope** - Provides the name of UI page/components this event belongs to.
+  - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
 
@@ -13545,7 +13575,7 @@ The following fields are collected:
 
 - **js_exception_source_url** - The source URL where JavaScript exception occurred  
 
-- **scenario** - where the error occurred, rendering or composing.
+- **scenario** - where the error occurred. It’s an enum. Possible values are old_renderer, react_renderer, and composing.
 
 
 ## Device connectivity and configuration​ data events
