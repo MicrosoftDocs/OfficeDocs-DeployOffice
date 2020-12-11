@@ -639,6 +639,11 @@
       "source_path": "DeployOffice/other/home-use-program.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/other/home-use-program-preview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/office2019/update-from-preview.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/vlactivation/plan-volume-activation-of-office",
+      "redirect_document_id": false
     }
   ]
 }
