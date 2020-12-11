@@ -32,6 +32,7 @@ The following are the requirements for using the Office cloud policy service wit
 - User accounts created in or synchronized to Azure Active Directory (AAD). The user must be signed into Microsoft 365 Apps for enterprise with an AAD-based account.
 - Office cloud policy service supports security groups and mail-enabled security groups created in Azure AD. The membership type can be either Dynamic or Assigned.
 - To create a policy configuration, you must be assigned one of the following roles in Azure Active Directory (AAD): Global Administrator, Security Administrator, or Office Apps Admin.
+- The [required URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
 
 > [!IMPORTANT]
 > - The Office cloud policy service isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
@@ -85,8 +86,7 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - As new user-based policy settings are made available for Office, the Office cloud policy service will automatically add them. There is no need to download updated Administrative Templates files (ADMX/ADML).
 - You can also create policy configurations to apply policy settings for Version 1808 or later of the subscription versions of the Project and Visio desktop apps.
 - Version 1808 of Microsoft 365 Apps for enterprise (and for the subscription versions of the Project and Visio desktop apps) is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel. For Microsoft 365 Apps for enterprise release information, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
-- If users are located in nested groups and the parent group is targeted for policies in OCPS, the users in the nested groups will receive the policies.
-
+- If users are located in nested groups and the parent group is targeted for policies in OCPS, the users in the nested groups will receive the policies. 
 
 ## Troubleshooting tips
 
