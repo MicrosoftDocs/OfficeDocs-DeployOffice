@@ -14,8 +14,6 @@
 ### [Activate by using Active Directory](../vlactivation/activate-office-by-using-active-directory.md?toc=/deployoffice/office2019/toc.json)
 ### [Rearm Office in an image](../vlactivation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/deployoffice/office2019/toc.json)
 ### [Tools to manage volume activation](../vlactivation/tools-to-manage-volume-activation-of-office.md?toc=/deployoffice/office2019/toc.json)
-### [Change Office 2019 Preview activation to Office 2019](update-from-preview.md)
-
 
 ## Project, Visio, and OneNote
 ### [Deploy Project](../deployment-guide-for-project.md?toc=/deployoffice/office2019/toc.json#deploy-a-volume-licensed-version-of-project-2019)
