@@ -3339,7 +3339,7 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
-### Dime_Sdk_Health
+### Office.Dime.Sdk.Health
 
 This event captures data that helps in monitoring the health of the Dime components. The data is used to monitor and alert on the health of Dime purchase flow to ensure it is working as expected. 
 
@@ -5823,7 +5823,7 @@ This event denotes that the device was enrolled into Automatic Update mode. We u
 
 The following fields are collected:
 
- **App** – The application process sending the event
+ - **App** – The application process sending the event
 
 - **AppInfo_Language** – The language the application is running under
 
