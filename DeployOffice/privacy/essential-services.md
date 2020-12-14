@@ -3339,6 +3339,83 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
+### Dime_Sdk_Health
+
+This event captures data that helps in monitoring the health of the Dime components. The data is used to monitor and alert on the health of Dime purchase flow to ensure it is working as expected. 
+
+The following fields are collected:
+
+- **Data_ActivityErrorDescription** - Error description of the activity
+
+- **Data_ActivityErrorMessage** - Error message of the activity 
+
+- **Data_CampaignId** - Campaign ID for attribution
+
+- **Data_ContentId** - Based on the Experience ID; it is mapped to a Flow ID and a Content ID
+
+- **Data_CorrelationVector** - Correlation Vector to correlate dime with partners that use correlation vector
+
+- **Data_CustomerImpacted** - Used for troubleshooting if customer is impacted in loading the flow
+
+- **Data_DimeActivityDuration** - Duration time 
+
+- **Data_DimeActivityMetadata** - Activity metadata
+
+- **Data_DimeActivityName** - Activity name for health monitoring
+
+- **Data_DimeActivityResult** - Activity result, Success/ Error/ Expected Error
+
+- **Data_DimeVersion** - Build Version
+
+- **Data_DurationLevel** - Severity - 0/1/2
+
+- **Data_EcsConfigIds** - IDs for the experiments
+
+- **Data_EcsCountry** - Detected country
+
+- **Data_EcsETag** - Flights information
+
+- **Data_Environment** - Dime Environment production/pre-production
+
+- **Data_ExperienceId** - Experience to load 
+
+- **Data_FlowId** - Based on the Experience ID; it is mapped to a Flow ID and a Content ID
+
+- **Data_Language** - Culture
+
+- **Data_Market** - Detected market
+
+- **Data_OTelJS_Version** - Office telemetry version
+
+- **Data_PageSessionId** - Session ID of the page
+
+- **Data_PartnerId** - Caller App
+
+- **Data_QosLevel** - Severity 0/1/2
+
+- **Data_SDX_AssetId** - Asset ID of the Service Delivered Experience (SDX) hosting content
+
+- **Data_SDX_BrowserToken** - Token of the browser
+
+- **Data_SDX_HostJsVersion** - JavaScript library version
+
+- **Data_SDX_Id** - Service Delivered Experience Id
+
+- **Data_SDX_InstanceId** - Instance ID of the SDX
+
+- **Data_SDX_MarketplaceType** - SDX Marketplace Type
+
+- **Data_SDX_OfficeJsVersion** - Office JS Version
+
+- **Data_SDX_SessionId** - Session ID of the SDX
+
+- **Data_SDX_Version** - SDX Version
+
+- **Data_TimestampUTC** - Timestamp of the event
+
+- **Data_TsgId** - Troubleshooting Guide Id for each activity
+
+- **Data_UserAgent** - Header Tags
 
 ### Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
@@ -3384,6 +3461,47 @@ The following fields are collected:
 If we are not able to automatically activate the license for some reason, we show an activation wizard to the user. This reports that the wizard is being shown to the user. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 This event collects no fields.
+
+### Office.Licensing.Dialogs.WebViewDialog.Close
+ 
+This event is used as a signal to tell us that the in-app purchase experience is being closed either by the user or by the application. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+ 
+The following fields are collected:
+ 
+- **Data_ClosedDialog** - flag indicating the user closed the dialog
+
+### Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
+ 
+This event is used as a signal to tell us that the in-app purchase experience attempted to load, but an error occurred which resulted in the dialog not showing. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+ 
+The following fields are collected:
+  
+- **Data_MoeErrorCode** - Error code seen in the web dialog framework
+
+### Office.Licensing.Dialogs.WebViewDialog.Preload
+ 
+This event is used as a signal to tell us that the in-app purchase experience is being loaded in the background. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+ 
+The following fields are collected:
+
+ - None
+
+### Office.Licensing.Dialogs.WebViewDialog.Show
+ 
+This event is used as a signal to tell us that the in-app purchase experience is being shown to the user. The data is used to monitor and alert on the health of the in-app purchase flow.  
+
+The following fields are collected:
+
+ - None
+
+### Office.Licensing.Dialogs.WebViewDialog.Timeout
+
+This event is used as a signal to tell us that the in-app purchase experience attempted to load but timed out. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is performing as expected. 
+
+The following fields are collected:
+
+ - None
+
 
 ### Office.Licensing.EnforceSignInQualified 
 
@@ -5697,6 +5815,47 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### controller.mainwindow.setautomaticchecking
+
+This event denotes that the device was enrolled into Automatic Update mode. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+
+The following fields are collected:
+
+ **App** – The application process sending the event
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application Version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device country (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** – The Version of the Operating System
+
+- **Event_ReceivedTime** – The time at which telemetry was received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **Payload** – Text that indicates the nature of the event.
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first 3 octets of the IP address
+
+- **SessionId** – The identifier for the session
 
 
 ### controller.mainwindow.setautomaticdownloadinstall
@@ -11082,6 +11241,94 @@ The following fields are collected:
 
 - **UpdatePkg** - Name of the update package being applied
 
+### Lifecycle.complimentproclaunch
+
+This event indicates attempt to launch Microsoft Update Assistant from Microsoft AutoUpdate or from Microsoft AutoUpdate from Microsoft Update Assistant. This event is used to determine and ensure health of Microsoft AutoUpdate and Microsoft Update Assistant.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Error** - Any error reported during launch attempt
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **Reason** - Reason for attempting to launch compliment process
+
+- **SessionId** - The identifier for the session
+
+- **Success** -	 Indication whether launch attempt was successful
+
+### Lifecycle.launch
+
+This event indicates start of Microsoft AutoUpdate or Microsoft Update Assistant. This event is also used to report any issues found during the launch process, as well as reporting method used to launch in the case of Microsoft Update Assistant.
+
+*[This event replaces the fba.launch and appdelegate.launch events.]*
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** -	 The application Version
+
+- **Channel** -	 The preference for audience
+
+- **Device_NetworkCountry** -	 The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Error** - Any error found on launch
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **LaunchedBy** - Method used to launch Microsoft Update Assistant, if applicable
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
 ### Lifecycle.periodiccheck
 
 This event reports on status of MicrosoftAutoUpdate process periodically. Specifically, it reports on what remaining tasks process is waiting on for completion for Update Assistant, and in the case of UI it reports on whether process is terminating due to user inaction.  We use this event to determine what is preventing Update Assistant from completing updates and terminating and, whether the UI is terminating due to user inaction.
@@ -11131,6 +11378,50 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 - **SessionLength** - Length of current process session in seconds
+
+
+### Lifecycle.terminate
+
+This event indicates termination of Microsoft AutoUpdate or Microsoft Update Assistant. This event is used to determine the health of Microsoft AutoUpdate and Microsoft Update Assistant.
+
+*[This event replaces the fba.launch and appdelegate.launch events.]*
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application Version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **SessionLength** -	Length of current process session in seconds
+
 
 
 ### msupdate.cli.eventhandler
@@ -15250,6 +15541,46 @@ The following fields are collected:
 - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
 
 - **status** - String – Success or Failure, indicating success or failure of the request
+
+### Office.OneNote.GetSharePointIdsForDocument
+
+The data collected logs the failure and success of fetching the SharePoint (SPO) IDs for a document URL. The success and the failure (including the reason for failure) of the call is logged for all platforms. This marker is required to track and diagnose the health of the call made to get the IDs. The IDs are required to have a OneNote page (belonging to SharePoint-stored notebooks) data displayed in the feed. 
+
+The following fields are collected:
+
+- **ErrorCode** - int value of error
+
+- **ErrorMessage** - string describing error
+
+- **FailureType** - string to determine type of error
+
+- **HttpStatusCode** - HTTP error code for network call
+
+- **InnerErrorCode** - int code
+
+- **InnerErrorMesage** - message for error
+
+- **IsSuccess** - Boolean value for is signal succeeded
+
+### Office.OneNote.GetSharePointIdsForDocumentW32Old
+
+The telemetry logs the failure scenarios and success of fetching the SharePoint (SPO) IDs for a Document URL. The success and the failure (including the reason for failure) of the call is logged. This is only logged in the old win32 platform. This marker is required to track and diagnose the health of the call made to get the IDs. The IDs are required to have the OneNote page (belonging to SharePoint-stored notebooks) data displayed in the feed. 
+
+The following fields are collected:
+
+- **ErrorCode** - int value of error
+
+- **ErrorMessage** - string describing error
+
+- **FailureType** - string to determine type of error
+
+- **HttpStatusCode** - HTTP error code for network call
+
+- **InnerErrorCode** - int code
+
+- **InnerErrorMesage** - message for error
+
+- **IsSuccess** - Boolean value for is signal succeeded
 
 
 ### Office.System.GracefulExit.GracefulAppExitDesktop
