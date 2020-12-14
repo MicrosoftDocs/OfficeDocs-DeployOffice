@@ -623,7 +623,7 @@ We make changes to our services, but we also update Microsoft 365 clients. Both 
     
       - Read about the latest releases and features in our blog posts, which are separate from our formal documentation at [docs.microsoft.com](https://docs.microsoft.com/).
 
-  - [Microsoft 365 Service Descriptions](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)
+  - [Microsoft 365 Service Descriptions](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)
     
       - Review Microsoft 365 services and features to learn more about existing features you can leverage for improving security and productivity.
 
