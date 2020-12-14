@@ -10980,48 +10980,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-
-### installupdatestask.retryproxyerror
-
-This event logs intra-process communication errors (communication with MAU helper tool). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
- 
-The following fields are collected:
-
-- **App** - The application process sending the event
-
-- **AppInfo_Language** - The language the application is running under
-
-- **AppVersionLong** - The application Version
-
-- **Channel** - The preference for audience
-
-- **Device_NetworkCountry** - The device country (based on IP address)
-
-- **DeviceID** - The device identifier
-
-- **DeviceInfo_Model** - The Hardware Model of the device
-
-- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
-
-- **DeviceInfo_OsBuild** - The Version of the Operating System
-
-- **Event_ReceivedTime** - The time at which telemetry was received
-
-- **EventInfo_Name** - The name of the telemetry event being logged
-
-- **EventInfo_Time** - The time at which the logged event took place 
-
-- **HowTocheck** - The preference for checking of updates
-
-- **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
-
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
-
-- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
-
-- **SessionId** - The identifier for the session
-
-    
+   
 ### installupdatestask.retryproxyerror
 
 This event logs intra-process communication errors (communication with MAU helper tool). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
@@ -14776,47 +14735,6 @@ The following fields are collected:
 - **HowTocheck** - The preference for checking of updates
 
 - **Payload** - Contains response from web-services and updater type to applied.
-
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
-
-- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
-
-- **SessionId** - The identifier for the session
-
-
-### webservices.serviceaction
-
-We log any errors resulting from an unexpected webservice response. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
- 
-The following fields are collected:
-
-- **App** - The application process sending the event
-
-- **AppInfo_Language** - The language the application is running under
-
-- **AppVersionLong** - The application Version
-
-- **Channel** - The preference for audience
-
-- **Device_NetworkCountry** - The device country (based on IP address)
-
-- **DeviceID** - The device identifier
-
-- **DeviceInfo_Model** - The Hardware Model of the device
-
-- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
-
-- **DeviceInfo_OsBuild** - The Version of the Operating System
-
-- **Event_ReceivedTime** - The time at which telemetry was received
-
-- **EventInfo_Name** - The name of the telemetry event being logged
-
-- **EventInfo_Time** - The time at which the logged event took place 
-
-- **HowTocheck** - The preference for checking of updates
-
-- **Payload** - Contains details of action being pushed from web-services.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
