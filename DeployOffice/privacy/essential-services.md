@@ -16355,7 +16355,7 @@ The following fields are collected:
 
   - **ModuleSize -** Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleVersion** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+  - **ModuleVersion** - Version of the fault module responsible for a crash.
 
   - **OfficeArchitectureText** - The architecture of the install: x64, x86, etc.
 
@@ -16515,7 +16515,7 @@ The following fields are collected:
 
   - **ModuleStamp** - Failing module stamp.
 
-  - **ModuleVersion** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+  - **ModuleVersion** - Version of the fault module responsible for a crash.
 
   - **OfficeArchitectureText** - The architecture of Office product as string (e.g. x86, arm).
 
