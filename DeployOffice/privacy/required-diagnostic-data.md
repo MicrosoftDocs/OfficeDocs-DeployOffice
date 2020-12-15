@@ -680,6 +680,16 @@ The following fields are collected:
 - **provider** - the identifier for the provider software package for the SSO.
 
 - **state** – current state of the account, (example value: FAILED, PENDING, ADDED etc.)
+
+
+#### install.referral
+
+This event is triggered at the initial install of the app and records from where the user was referred (if available).
+
+The following fields are collected:
+
+- **install_referrer** - Product or experience from where the user was referred
+
  
 #### Office.ClickToRun.UpdateStatus
 
@@ -2699,6 +2709,33 @@ We are enabling Android Package Kit (APK) expansion files for the Office mobile 
 The following fields are collected: 
 
 - **Data_DownloadSuccess** - A Boolean flag that indicates whether APK Expansion files download is successful, whenever we attempt a download during app boot.
+
+#### Office.Android.EarlyTelemetry.NoteCreated
+
+Critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app. Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **IsExportable** - A flag indicating whether this event was a result of a user action or not. Should be set to True as NoteCreated is a user-triggered action.
+
+- **NoteLocalId** - Distinguishable unique identifier assigned to a note at the time of a user creates the note within the app.
+
+- **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+
+#### Office.Android.EarlyTelemetry.NoteViewed 
+
+Critical signal that is used to monitor the ability of Sticky Notes users to view notes in the app. Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t view their notes, this would trigger a high severity incident.
+
+The following fields are collected:
+
+- **HasImages** - A flag indicating whether the note viewed has images stored in it.
+
+- **IsExportable** - A flag indicating whether this event was a result of a user action or not. Should be set to True as NoteViewed is a user-triggered action.
+
+- **NoteLocalId** - Distinguishable unique identifier assigned to a note at the time a user creates the note within the app.
+
+- **StickyNotes-SDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
 
 #### Office.Android.Intune.IntuneComplianceRequest
@@ -6994,6 +7031,37 @@ The following fields are collected:
 
 - **SrcDoc** - Original location of document (in case of SaveAs)
 
+#### Office.PowerPoint.PPT.IOS.RehearseView.RehearsalSummaryPage
+
+Event is triggered when summary page has finished loading. This event helps us capture the performance of the summary page. It tells how much time it takes for the rehearsal summary service page to load on the client. It is required to keep the feature performant.  
+
+The following fields are collected: 
+
+- **PayloadCreationTime** - This is the time taken in milliseconds to create payload.  
+
+- **PostUrlCallTime** - This is the time taken in milliseconds to send the post URL call. 
+
+- **RehearseSessionId** - This is speech front door session ID. We can use this to debug service logs.  
+
+- **SummaryPageErrorReceived** - This is a Boolean value which indicates if summary page was received or error occurred.
+
+- **SummaryPageHtmlLoadTime** - This is the time taken in milliseconds to load summarypageHtml. 
+
+- **SummaryPageLoadStartTime** - This is the time taken in milliseconds receive first response from the server. 
+
+- **SummaryPageLoadTime** - Time taken to load summary page. This includes payload creation time. 
+
+- **ThumbnailsCount** - This is the total number of thumbnails that will be part of summary page. 
+
+
+#### Office.PowerPoint.PPT.IOS.RehearseView.StartSession 
+ 
+This event is triggered when the user clicks on start session. This event helps us capture how many users are using the Presenter coach feature on iOS. When combined with Office.PowerPoint.PPT.iOS.RehearseView it will tell us how many users successfully completed the rehearsal session and how many couldn’t. This is our first indicator of crashes or errors in the feature.
+
+The following fields are collected:
+
+- None
+
 #### Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
 Collected whenever an export PDF operation has completed and contains information about the success of the operation. This information is critical to identify the success of export PDF operations for our application.
@@ -7001,6 +7069,14 @@ Collected whenever an export PDF operation has completed and contains informatio
 The following fields are collected:
 
 - **Data_ExportAsPDFSucceed** - Boolean indicating if exporting as PDF was a success.
+
+#### Office.PowerPoint.PPT.Shared.RehearseView.RehearseClicked
+
+This event captures when RehearseWithCoach is clicked.  This event is used to analyze the seen- tried-kept funnel of the feature. This event along with tried and kept event helps us figure out if users are dropping out of the funnel. This helps us maintain the health of the feature.
+
+The following fields are collected:
+
+- None
 
 
 #### Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -11310,6 +11386,21 @@ The following fields are collected:
 
 - **time** - Tells us the amount of time that it has taken for the email conversation to complete loading.
 
+#### conversation.reloaded
+
+This event lets us detect how often we reload the conversation based on service notifications. We need to track if the update notifications are being too loud and need to be trimmed because they are degrading usability.
+
+The following fields are collected: 
+
+- **average** - the amount of reloads divided by the size 
+
+- **client-request-ID** - the client request identifier for the request which caused the error
+
+- **date** - the date stamp of the request which caused the error
+
+- **duration** - the time the conversation was open 
+
+
 #### core.data.migration
 
 Allows us to detect and fix situations where there was an error in updating email data on your device to a newer version.
@@ -11621,6 +11712,53 @@ The following fields are collected:
 - **total_count** - total frames displayed by the component
  
 - **view_duration** - how long the component was viewed by the user
+
+#### message.rendering.intercepted
+
+This event enables us to track how often the users intercept the rendering process before it is completed. We use this data to detect performance issues.
+
+The following fields are collected: 
+
+- **is_cache** - whether the message body is loaded from cache
+
+- **is_on_screen** - whether the rendering process is visible to users (normal rendering)
+
+- **is_rendering_complete** - whether the rendering process is completed 
+
+- **is_trimmed_body** - whether the message body is trimmed body 
+
+- **rendering_method** - the method of rendering message
+
+- **rendering_time** - the duration of rendering the message until user leaves the page
+
+#### message.rendering.performance
+
+This event lets us monitor the performance of the message rendering process, so that we can analyze the performance of different rendering processes and detect performance issues. 
+
+The following fields are collected: 
+
+- **bundle_prepare_time** - the time to prepare the bundle for rendering
+
+- **full_rendering_time** - the time of full rendering process
+
+- **is_cache** - whether the message body is loaded from cache
+
+- **is_on_screen** - whether the rendering process is visible to users (normal rendering)
+
+- **is_trimmed_body** - whether the message body is trimmed body 
+
+- **load_message_time** - the time to load message from backend (can be 0 if the message has been cached)
+
+- **native_preprocess_time** - the time to preprocess message body in native side 
+
+- **prepare_body_time** - the time to prepare message body (including load and preprocess message)
+
+- **rendering_method** - the method of rendering message
+
+- **rendering_time** - the time to render message by the bundle  
+
+- **wait_time** - the time to build message URL
+
 
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
@@ -13576,6 +13714,16 @@ The following fields are collected:
 - **js_exception_source_url** - The source URL where JavaScript exception occurred  
 
 - **scenario** - where the error occurred. It’s an enum. Possible values are old_renderer, react_renderer, and composing.
+
+#### wkwebview.terminate
+
+This event allows us to detect when web view is terminated by the system. This data allows us to monitor the error user encountered when composing or reading an email. 
+
+The following fields are collected: 
+
+- **is_foreground** - whether app is in foreground when this event happens.
+
+- **Scenario** - where the error occurred, when rendering or composing.
 
 
 ## Device connectivity and configuration​ data events
