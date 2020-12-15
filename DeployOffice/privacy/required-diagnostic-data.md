@@ -7031,6 +7031,38 @@ The following fields are collected:
 
 - **SrcDoc** - Original location of document (in case of SaveAs)
 
+
+#### Office.PowerPoint.PPT.IOS.RehearseView 
+
+This event is denoting that user has stopped the rehearsal session. The data is used in combination with Office.PowerPoint.IOS.Android.RehearseView.StartSession as the first indicator of any crashes or errors that user faces.  
+ 
+The following fields are collected:
+
+- **ConnectionCreationTime** - time taken to create service side connections.
+
+- **CountDownAlertTime** - Time for which countdown alert was displayed.
+
+- **CountdownInitTime** – Time between slideshow load completed and countdown started.
+
+- **CritiqueSummary** - Summary of what all critiques user saw with their counts.
+
+- **ExitEventCode** - Code to identify under which scenario user exit out of rehearse session, whether it was error scenario or successful exit
+
+- **FRETime** - Time between FRE screen started to display until user dismissed it.
+
+- **MicrophonePermissionTime** - Time for which microphone permission alert was displayed until user selected one of the options.
+
+- **PauseRehearsingCount** - Count of how many times user clicked on pause rehearsal
+
+- **RehearsalInitTime** - Time taken by rehearsal to initialize
+
+- **ResumeRehearsingCount** - Count of how many times user clicked on resume rehearsal
+
+- **Sessionid** - This is speech front door session ID.  This is used to debug service logs.
+
+- **SlideshowViewLoadTime** - Time taken by slideshow to load.
+
+
 #### Office.PowerPoint.PPT.IOS.RehearseView.RehearsalSummaryPage
 
 Event is triggered when summary page has finished loading. This event helps us capture the performance of the summary page. It tells how much time it takes for the rehearsal summary service page to load on the client. It is required to keep the feature performant.  
