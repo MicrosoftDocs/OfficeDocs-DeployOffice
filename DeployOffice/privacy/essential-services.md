@@ -22,12 +22,12 @@ hideEdit: true
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. While you can control many of the connected experiences that are available to you, or to your users if you're the admin in your organization, there are a set of services that are essential to how Office functions and therefore cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office. Required service data about these services is collected and sent to Microsoft, regardless of any other privacy-related policy settings that you have configured.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Required service data for Office](required-service-data.md)
 - [Connected experiences in Office](connected-experiences.md)
 
-If you're the admin for your organization, you might also be interested in the following:
+If you're the admin for your organization, you might also be interested in the following articles:
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
@@ -3340,6 +3340,97 @@ The following fields are collected:
 - **SessionID** – GUID to connect events by session
 
 
+### Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+
+This product telemetry is collected for tracking and logging the internal transaction status and reconciliation information to improve reliability and performance. Microsoft uses this data to analyze and improve the reliability and performance of the internal transaction processing and reconciliation mechanisms.
+
+The following fields are collected:
+
+- **MicrosoftPurchaseOrderId** - Microsoft Order Id sent by Retail Federation Service (RFS) for tracking purposes.
+
+- **ResponseCode** - HTTP Response code (int)
+
+- **StatusCode** - RFS response status code (RFS defined Enum int- finite)
+
+
+### Office.Dime.Sdk.Health
+
+This event captures data that helps in monitoring the health of the Dime components. The data is used to monitor and alert on the health of Dime purchase flow to ensure it is working as expected. 
+
+The following fields are collected:
+
+- **Data_ActivityErrorDescription** - Error description of the activity
+
+- **Data_ActivityErrorMessage** - Error message of the activity 
+
+- **Data_CampaignId** - Campaign ID for attribution
+
+- **Data_ContentId** - Based on the Experience ID; it is mapped to a Flow ID and a Content ID
+
+- **Data_CorrelationVector** - Correlation Vector to correlate dime with partners that use correlation vector
+
+- **Data_CustomerImpacted** - Used for troubleshooting if customer is impacted in loading the flow
+
+- **Data_DimeActivityDuration** - Duration time 
+
+- **Data_DimeActivityMetadata** - Activity metadata
+
+- **Data_DimeActivityName** - Activity name for health monitoring
+
+- **Data_DimeActivityResult** - Activity result, Success/ Error/ Expected Error
+
+- **Data_DimeVersion** - Build Version
+
+- **Data_DurationLevel** - Severity - 0/1/2
+
+- **Data_EcsConfigIds** - IDs for the experiments
+
+- **Data_EcsCountry** - Detected country
+
+- **Data_EcsETag** - Flights information
+
+- **Data_Environment** - Dime Environment production/pre-production
+
+- **Data_ExperienceId** - Experience to load 
+
+- **Data_FlowId** - Based on the Experience ID; it is mapped to a Flow ID and a Content ID
+
+- **Data_Language** - Culture
+
+- **Data_Market** - Detected market
+
+- **Data_OTelJS_Version** - Office telemetry version
+
+- **Data_PageSessionId** - Session ID of the page
+
+- **Data_PartnerId** - Caller App
+
+- **Data_QosLevel** - Severity 0/1/2
+
+- **Data_SDX_AssetId** - Asset ID of the Service Delivered Experience (SDX) hosting content
+
+- **Data_SDX_BrowserToken** - Token of the browser
+
+- **Data_SDX_HostJsVersion** - JavaScript library version
+
+- **Data_SDX_Id** - Service Delivered Experience Id
+
+- **Data_SDX_InstanceId** - Instance ID of the SDX
+
+- **Data_SDX_MarketplaceType** - SDX Marketplace Type
+
+- **Data_SDX_OfficeJsVersion** - Office JS Version
+
+- **Data_SDX_SessionId** - Session ID of the SDX
+
+- **Data_SDX_Version** - SDX Version
+
+- **Data_TimestampUTC** - Timestamp of the event
+
+- **Data_TsgId** - Troubleshooting Guide Id for each activity
+
+- **Data_UserAgent** - Header Tags
+
 ### Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Critical usage telemetry is collected to indicate when the user taps the Purchase/Buy Button.  The data is used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
@@ -3384,6 +3475,47 @@ The following fields are collected:
 If we are not able to automatically activate the license for some reason, we show an activation wizard to the user. This reports that the wizard is being shown to the user. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 This event collects no fields.
+
+### Office.Licensing.Dialogs.WebViewDialog.Close
+ 
+This event is used as a signal to tell us that the in-app purchase experience is being closed either by the user or by the application. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+ 
+The following fields are collected:
+ 
+- **Data_ClosedDialog** - flag indicating the user closed the dialog
+
+### Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
+ 
+This event is used as a signal to tell us that the in-app purchase experience attempted to load, but an error occurred which resulted in the dialog not showing. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+ 
+The following fields are collected:
+  
+- **Data_MoeErrorCode** - Error code seen in the web dialog framework
+
+### Office.Licensing.Dialogs.WebViewDialog.Preload
+ 
+This event is used as a signal to tell us that the in-app purchase experience is being loaded in the background. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+ 
+The following fields are collected:
+
+ - None
+
+### Office.Licensing.Dialogs.WebViewDialog.Show
+ 
+This event is used as a signal to tell us that the in-app purchase experience is being shown to the user. The data is used to monitor and alert on the health of the in-app purchase flow.  
+
+The following fields are collected:
+
+ - None
+
+### Office.Licensing.Dialogs.WebViewDialog.Timeout
+
+This event is used as a signal to tell us that the in-app purchase experience attempted to load but timed out. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is performing as expected. 
+
+The following fields are collected:
+
+ - None
+
 
 ### Office.Licensing.EnforceSignInQualified 
 
@@ -4383,6 +4515,8 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+- **Success** - Indication whether the cloning task succeeded
 
 - **UpdateID** - The update identifier.
 
@@ -5695,6 +5829,47 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### controller.mainwindow.setautomaticchecking
+
+This event denotes that the device was enrolled into Automatic Update mode. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+
+The following fields are collected:
+
+ - **App** – The application process sending the event
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application Version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device country (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** – The Version of the Operating System
+
+- **Event_ReceivedTime** – The time at which telemetry was received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **Payload** – Text that indicates the nature of the event.
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first 3 octets of the IP address
+
+- **SessionId** – The identifier for the session
 
 
 ### controller.mainwindow.setautomaticdownloadinstall
@@ -10819,48 +10994,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-
-### installupdatestask.retryproxyerror
-
-This event logs intra-process communication errors (communication with MAU helper tool). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
- 
-The following fields are collected:
-
-- **App** - The application process sending the event
-
-- **AppInfo_Language** - The language the application is running under
-
-- **AppVersionLong** - The application Version
-
-- **Channel** - The preference for audience
-
-- **Device_NetworkCountry** - The device country (based on IP address)
-
-- **DeviceID** - The device identifier
-
-- **DeviceInfo_Model** - The Hardware Model of the device
-
-- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
-
-- **DeviceInfo_OsBuild** - The Version of the Operating System
-
-- **Event_ReceivedTime** - The time at which telemetry was received
-
-- **EventInfo_Name** - The name of the telemetry event being logged
-
-- **EventInfo_Time** - The time at which the logged event took place 
-
-- **HowTocheck** - The preference for checking of updates
-
-- **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
-
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
-
-- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
-
-- **SessionId** - The identifier for the session
-
-    
+   
 ### installupdatestask.retryproxyerror
 
 This event logs intra-process communication errors (communication with MAU helper tool). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
@@ -11080,6 +11214,94 @@ The following fields are collected:
 
 - **UpdatePkg** - Name of the update package being applied
 
+### Lifecycle.complimentproclaunch
+
+This event indicates attempt to launch Microsoft Update Assistant from Microsoft AutoUpdate or from Microsoft AutoUpdate from Microsoft Update Assistant. This event is used to determine and ensure health of Microsoft AutoUpdate and Microsoft Update Assistant.
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Error** - Any error reported during launch attempt
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **Reason** - Reason for attempting to launch compliment process
+
+- **SessionId** - The identifier for the session
+
+- **Success** -	 Indication whether launch attempt was successful
+
+### Lifecycle.launch
+
+This event indicates start of Microsoft AutoUpdate or Microsoft Update Assistant. This event is also used to report any issues found during the launch process, as well as reporting method used to launch in the case of Microsoft Update Assistant.
+
+*[This event replaces the fba.launch and appdelegate.launch events.]*
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** -	 The application Version
+
+- **Channel** -	 The preference for audience
+
+- **Device_NetworkCountry** -	 The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Error** - Any error found on launch
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** - The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **LaunchedBy** - Method used to launch Microsoft Update Assistant, if applicable
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
 ### Lifecycle.periodiccheck
 
 This event reports on status of MicrosoftAutoUpdate process periodically. Specifically, it reports on what remaining tasks process is waiting on for completion for Update Assistant, and in the case of UI it reports on whether process is terminating due to user inaction.  We use this event to determine what is preventing Update Assistant from completing updates and terminating and, whether the UI is terminating due to user inaction.
@@ -11129,6 +11351,50 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 - **SessionLength** - Length of current process session in seconds
+
+
+### Lifecycle.terminate
+
+This event indicates termination of Microsoft AutoUpdate or Microsoft Update Assistant. This event is used to determine the health of Microsoft AutoUpdate and Microsoft Update Assistant.
+
+*[This event replaces the fba.terminate and appdelegate.terminate events.]*
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppVersionLong** - The application Version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **SessionLength** -	Length of current process session in seconds
+
 
 
 ### msupdate.cli.eventhandler
@@ -14532,47 +14798,6 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
-### webservices.serviceaction
-
-We log any errors resulting from an unexpected webservice response. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
- 
-The following fields are collected:
-
-- **App** - The application process sending the event
-
-- **AppInfo_Language** - The language the application is running under
-
-- **AppVersionLong** - The application Version
-
-- **Channel** - The preference for audience
-
-- **Device_NetworkCountry** - The device country (based on IP address)
-
-- **DeviceID** - The device identifier
-
-- **DeviceInfo_Model** - The Hardware Model of the device
-
-- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown)
-
-- **DeviceInfo_OsBuild** - The Version of the Operating System
-
-- **Event_ReceivedTime** - The time at which telemetry was received
-
-- **EventInfo_Name** - The name of the telemetry event being logged
-
-- **EventInfo_Time** - The time at which the logged event took place 
-
-- **HowTocheck** - The preference for checking of updates
-
-- **Payload** - Contains details of action being pushed from web-services.
-
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
-
-- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
-
-- **SessionId** - The identifier for the session
-
-
 ### webservices.serviceresponse
 
 This event logs requests to MAU Service, response times and Errors. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
@@ -15248,6 +15473,46 @@ The following fields are collected:
 - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
 
 - **status** - String – Success or Failure, indicating success or failure of the request
+
+### Office.OneNote.GetSharePointIdsForDocument
+
+The data collected logs the failure and success of fetching the SharePoint (SPO) IDs for a document URL. The success and the failure (including the reason for failure) of the call is logged for all platforms. This marker is required to track and diagnose the health of the call made to get the IDs. The IDs are required to have a OneNote page (belonging to SharePoint-stored notebooks) data displayed in the feed. 
+
+The following fields are collected:
+
+- **ErrorCode** - int value of error
+
+- **ErrorMessage** - string describing error
+
+- **FailureType** - string to determine type of error
+
+- **HttpStatusCode** - HTTP error code for network call
+
+- **InnerErrorCode** - int code
+
+- **InnerErrorMesage** - message for error
+
+- **IsSuccess** - Boolean value for is signal succeeded
+
+### Office.OneNote.GetSharePointIdsForDocumentW32Old
+
+The telemetry logs the failure scenarios and success of fetching the SharePoint (SPO) IDs for a Document URL. The success and the failure (including the reason for failure) of the call is logged. This is only logged in the old win32 platform. This marker is required to track and diagnose the health of the call made to get the IDs. The IDs are required to have the OneNote page (belonging to SharePoint-stored notebooks) data displayed in the feed. 
+
+The following fields are collected:
+
+- **ErrorCode** - int value of error
+
+- **ErrorMessage** - string describing error
+
+- **FailureType** - string to determine type of error
+
+- **HttpStatusCode** - HTTP error code for network call
+
+- **InnerErrorCode** - int code
+
+- **InnerErrorMesage** - message for error
+
+- **IsSuccess** - Boolean value for is signal succeeded
 
 
 ### Office.System.GracefulExit.GracefulAppExitDesktop
@@ -16018,7 +16283,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthUngracefulAppExitDesktop
 
-Used to capture crash metrics.
+The event is triggered by an abnormal application termination (Example: task manager kill, application hang, etc.) for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used to infer product stability.
 
 The following fields are collected:
 
@@ -16026,83 +16291,103 @@ The following fields are collected:
 
   - **AffectedProcessAppBuildRevision -** Build revision identifier for the affected process.
 
+  - **AffectedProcessAppMajorVer** - Minor version identifier for the affected process.
+
   - **AffectedProcessAppMinorVer -** Minor version identifier for the affected process.
 
-  - **AffectedProcessAppName -** The name of the affected process.
+  - **AffectedProcessAppName -** The name of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessExeBuildVersion -** The Build Version number of the affected process.
+  - **AffectedProcessExeBuildVersion -** The Build Version number of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessExeMajorVersion -** The Major Version number of the affected process.
+  - **AffectedProcessExeMajorVersion -** The Major Version number of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessExeMinorVersion -** The Minor Version number of the affected process.
+  - **AffectedProcessExeMinorVersion -** The Minor Version number of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessExeRevisionVersion -** The Build Revision Version number of the affected process.
+  - **AffectedProcessExeRevisionVersion -** The Build Revision Version number of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessIsDebug -** Whether the affected process is a debug build.
+  - **AffectedProcessIsDebug -** Whether the affected process is a debug build. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessIsLabMachine -** Whether the affected process is in a Microsoft lab.
+  - **AffectedProcessIsLabMachine -** Whether the affected process is in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessOsEnvironment -** An operating system identifier for the affected process.
+  - **AffectedProcessOsEnvironment -** An operating system identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AppName -** The name of the affected application.
+  - **AppName -** The name of the affected application. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedAssignedFlights -** The flights assigned to the crashed process.
+  - **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedConfigIds -** The configuration assigned to the crashed process.
+  - **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **CrashedEcsETag -** An experiment identifier for the crashed process.
 
-  - **CrashedImpressionId -** The impression identifier of the crashed process.
+  - **CrashedImpressionId -** The impression identifier of the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedProcessSessionID -** A unique identifier of the crashed process.
+  - **CrashedModuleName** - Failing module name
 
-  - **CrashedProcessSessionInitTime -** The time when the affected process started.
+  - **CrashedProcessSessionID -** A unique identifier of the crashed process. 
+
+  - **CrashedProcessSessionInitTime -** The time when the affected process started. 
+
+  - **CrashedProcessSessionUninitTime** - The time when the affected process ended.
+
+  - **CrashTag** - The unique identifier for the code of the crash.
 
   - **CrashType -** Bucketing identifier for the type of crash.
 
-  - **DetectionTime -** The time when the unexpected exit was detected.
+  - **DetectionTime -** The time when the unexpected exit was detected. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ErrorString -** Error description.
+  - **ErrorString -** Error description. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ExceptionAddress -** Address in the program where the failure occurred.
+  - **ExceptionAddress -** Address in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **ExceptionCode -** Bucketing identifier for the exception.
 
-  - **FaultAppName -** The name of the faulting app.
+  - **FaultAppName -** The name of the faulting app. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
 
-  - **InstallType -** An identifier for the method by which Office was installed.
+  - **InstallType -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallTypeName -** An identifier for the method by which Office was installed.
+  - **InstallTypeName -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **IsLabMachine -** Whether Office is being run in a Microsoft lab.
+  - **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee.
+  - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleBaseAddress -** Base Address of the failing module.
+  - **ModuleBaseAddress -** Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleBuildVersion -** Failing module build version number.
+  - **ModuleBuildVersion -** Failing module build version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleMajorVersion -** Failing module major version number.
+  - **ModuleMajorVersion -** Failing module major version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleMinorVersion -** Failing module minor version number.
+  - **ModuleMinorVersion -** Failing module minor version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleName -** Failing module name.
+  - **ModuleName -** Failing module name. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleOffset -** Offset in bytes from the base address where the failure occurred.
+  - **ModuleOffset -** Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
-  - **ModuleRevisionVersion -** Failing module build revision version number.
+  - **ModuleRevisionVersion -** Failing module build revision version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleSize -** Failing module size in bytes.
+  - **ModuleSize -** Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **ModuleVersion** - Version of the fault module responsible for a crash.
+
+  - **OfficeArchitectureText** - The architecture of the install: x64, x86, etc.
+
+  - **OfficeUILang** - The Language of the User Interface in the Office Build.
 
   - **OSEnvironment -** Identifier for what environment Office is running on.
 
   - **PreviousBuild -** Previously installed build version
 
-  - **UAETypeName -** Bucketing identifier for how the app exited ungracefully.
+  - **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
 
-  - **VerifyElseCrashTag -** Unique identifier for where the app crashed.
+  - **SessionFlags** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc. 
+
+  - **UAETypeName -** Bucketing identifier for how the app exited ungracefully. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **UninitLibletId** - The unique identifier for the failing component of the crash.
+
+  - **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 ### Office.System.SystemHealthUngracefulAppExitImmersive
 
@@ -16168,79 +16453,110 @@ The event is triggers by an abnormal application termination (for example, task 
 
 The following fields are collected:
 
-  - **AddinExecution -** Flag that informs if an add-in was executing and didn't finish during an ungraceful application exit.
+  - **AddinExecution** - Flag that informs if an add-in was executing and didn't finish during an ungraceful application exit. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **BootCompleted –** Was Office boot completed at the time of crash.
+  - **AppUsedVirtualMemory** - Virtual memory utilized by office application
 
-  - **CrashedAppBuild -** Build version identifier for the affected process.
+  - **BootCompleted** - Was Office boot completed at the time of crash. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedAppMajor -** Major version identifier for the affected process.
+  - **BucketId** - Watson bucket Identifier for crash
+ 
+  - **CabGuid** - Globally Unique Identifier (GUID) identifier for the Watson cab.
 
-  - **CrashedAppMinor -** Minor version identifier for the affected process.
+  - **CrashedAppBuild** - Build version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedAppRevision -** Build version identifier for the affected process.
+  - **CrashedAppMajor** - Major version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+ 
+  - **CrashedAppMinor** - Minor version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedEcsETag -** An experiment identifier for the crashed process.
+  - **CrashedAppVersion** - Application version identifier for crashed process.
 
-  - **CrashedModuleName -** Failing module name.
+  - **CrashedEcsETag** - An experiment identifier for the crashed process.
 
-  - **CrashedSessionId -** A unique identifier of the crashed process.
+  - **CrashedModuleName** - Failing module name.
 
-  - **CrashedSessionInitTime -** The time when the affected process started.
+  - **CrashedProcessSessionId** - A unique identifier of the crashed process.
 
-  - **CrashTime –** The time indicating the client terminated ungracefully.
+  - **CrashedProcessSessionInitTime** - The time when the affected process started.
 
-  - **CrashType -** Bucketing identifier for the type of crash.
+  - **CrashedProcessSessionUninitTime** - The time when the affected process ended.
 
-  - **DetectionTime -** The time when the unexpected exit was detected.
+  - **CrashTag** - The unique identifier for the code of the crash.
 
-  - **ExceptionAddress -** Address in the program where the failure occurred.
+  - **CrashTime** - The time indicating the client terminated ungracefully. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ExceptionCode -** Bucketing identifier for the exception.
+  - **CrashType** - Bucketing identifier for the type of crash.
 
-  - **HandOff –** Did the user create and hand off the Office process to a new session.
+  - **DetectionTime** - The time when the unexpected exit was detected. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **HasEdit –** Was the user editing a document in the crashed client.
+  - **ExceptionAddress** - Address in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **HasOpen –** Was a document open in the crashed client.
+  - **ExceptionCode** - Bucketing identifier for the exception.
 
-  - **HexCrashTag -**  The unique identifier for the code of the crash.
+  - **ExceptionInfo** - System information for the exception.
 
-  - **HexExceptionAddress -** Address in hexadecimal in the program where the failure occurred.
+  - **HandOff** - Did the user create and hand off the Office process to a new session. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **HexExceptionCode -** Bucketing identifier in hexadecimal for the exception.
+  - **HangTypeCode** - Represents class of hang if the process hung during execution.
 
-  - **HexModuleBaseAddress -** Base Address in hexadecimal of the failing module.
+  - **HasEdit** - Was the user editing a document in the crashed client. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **HexModuleOffset -** Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+  - **HasOpen** - Was a document open in the crashed client. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **HexModuleSize -** Failing module size in bytes in hexadecimal.
+  - **HexCrashTag** -  The unique identifier for the code of the crash. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **HexVerifyElseCrashTag -** Unique identifier in hexadecimal for where the app crashed.
+  - **HexExceptionAddress** - Address in hexadecimal in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+  - **HexExceptionCode** - Bucketing identifier in hexadecimal for the exception. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **IsLabMachine -** Whether Office is being run in a Microsoft lab.
+  - **HexModuleBaseAddress** - Base Address in hexadecimal of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleBaseAddress -** Base Address of the failing module.
+  - **HexModuleOffset** - Offset in bytes (in hexadecimal) from the base address where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleOffset -** Offset in bytes from the base address where the failure occurred.
+  - **HexModuleSize** - Failing module size in bytes in hexadecimal. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleSize -** Failing module size in bytes.
+  - **HexVerifyElseCrashTag** - Unique identifier in hexadecimal for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **OfficeArchitectureText -** The architecture of Office product as string (e.g. x86, arm).
+  - **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
 
-  - **OfficeUILang –** The language of the User Interface in the Office build.
+  - **IsLabMachine** - Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **PreviousBuild -** Previously installed build version
+  - **ModuleBaseAddress** - Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **SafeMode –** Was the session booted in safe mode.
+  - **ModuleOffset** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
-  - **UAEOSEnvironment -** Operating System environment identifier.
+  - **ModuleSize** - Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **UninitLibletId –** The unique identifier for the failing component of the crash.
+  - **ModuleStamp** - Failing module stamp.
 
-  - **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+  - **ModuleVersion** - Version of the fault module responsible for a crash.
+
+  - **OfficeArchitectureText** - The architecture of Office product as string (e.g. x86, arm).
+
+  - **OfficeUILang** - The language of the User Interface in the Office build.
+
+  - **PreviousBuild** - Previously installed build version
+
+  - **ProcessorArchitecture** - Processor Architecture for the environment x64, x86, etc.
+
+  - **SafeMode** - Was the session booted in safe mode. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **SessionFlags** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc. 
+
+  - **StackHash** - Provides a hashed id for the failure stack in Office.
+
+  - **SystemAvailableMemory** - Available memory in the operating system
+
+  - **UAEOSEnvironment** - Operating System environment identifier. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **UninitLibletId** - The unique identifier for the failing component of the crash.
+
+  - **VerifyElseCrashTag** - Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **WatsonReportId** - Identifier of report sent to the Windows Watson service.
+
+  - **WerEventCreatedTime** - Time stamp for Windows Error Reporting event.
+
 
 ### Office.System.UngracefulApplicationExit.DesktopAppExit
 
