@@ -3339,6 +3339,20 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
+
+### Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+
+This product telemetry is collected for tracking and logging the internal transaction status and reconciliation information to improve reliability and performance. Microsoft uses this data to analyze and improve the reliability and performance of the internal transaction processing and reconciliation mechanisms.
+
+The following fields are collected:
+
+- **MicrosoftPurchaseOrderId** - Microsoft Order Id sent by Retail Federation Service (RFS) for tracking purposes.
+
+- **ResponseCode** - HTTP Response code (int)
+
+- **StatusCode** - RFS response status code (RFS defined Enum int- finite)
+
+
 ### Office.Dime.Sdk.Health
 
 This event captures data that helps in monitoring the health of the Dime components. The data is used to monitor and alert on the health of Dime purchase flow to ensure it is working as expected. 
