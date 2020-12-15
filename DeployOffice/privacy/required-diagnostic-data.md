@@ -28,12 +28,12 @@ This diagnostic data is collected and sent to Microsoft about Office client soft
 
 Required diagnostic data helps to identify problems with Office that may be related to a device or software configuration. For example, it can help determine if an Office feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Office features are disabled. Required diagnostic data helps us detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 
-For more information about diagnostic data, see the following:
+For more information about diagnostic data, see the following articles:
 
 - [Optional diagnostic data for Office](optional-diagnostic-data.md)
 - [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-If you're the admin for your organization, you might also be interested in the following:
+If you're the admin for your organization, you might also be interested in the following articles:
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
@@ -236,11 +236,11 @@ This category contains the following fields:
 
   - **Duration** - The length of time the activity took to execute. Allows us to identify performance issues that are negatively impacting the user's experience.
 
-  - **Result**.**Code** - An application defined code to identify a given result. Allows us to determine more specific details of a given failure such as a failure code that can be used to classify and fix issues.
+  - **Result.Code** - An application defined code to identify a given result. Allows us to determine more specific details of a given failure such as a failure code that can be used to classify and fix issues.
 
   - **Result.Tag** - An integer tag that identifies the location in code where the result was generated. Allows us to distinctly identify the location in code where a result was generated which enables classification of failures.
 
-  - **Result**.**Type** - The type of the result code. Identifies what type of result code was sent so that the value can be correctly interpreted.
+  - **Result.Type** - The type of the result code. Identifies what type of result code was sent so that the value can be correctly interpreted.
 
   - **Success** - A flag indicating if the activity succeeded or failed. Allows us to determine if actions the user takes in the product are succeeding or failing. This allows us to identify issues that are impacting the user.
 
@@ -252,7 +252,7 @@ This category contains the following fields:
 
   - **Architecture** - The architecture of the application. Let's us classify errors that might be specific to an architecture of the application.
 
-  - **Click2RunPackageVersion** - The version number of the Click-To-Run package that installed the app. Allows us to identify which version of the installer was used to install Office so we can identify setup related issues.
+  - **Click2RunPackageVersion** - The version number of the Click-To-Run package that installed the app. Allows us to identify which version of the installer was used to install Office so we can identify setup-related issues.
 
   - **DistributionChannel** - The channel where the app was deployed. Allows us to partition incoming data so we can determine if issues are impacting audiences.
 
@@ -260,15 +260,15 @@ This category contains the following fields:
 
   - **IsClickToRunInstall** - Flag indicating if install was a click to run install. Allows us to identify issues that might be specific to the Click-To-Run install mechanism.
 
-  - **IsDebug** - Flag indicating if the Office build is a Debug build. Allows us to identify if issues are coming from Debug builds which may behave differently.
+  - **IsDebug** - Flag indicating if the Office build is a Debug build. Allows us to identify if issues are coming from Debug builds, which may behave differently.
 
   - **IsInstalledOnExternalStorage** - Flag indicating if Office was installed on an external storage device. Let's us determine if issues can be traced to an external storage location.
 
-  - **IsOEMInstalled** - Flag indicating if Office was installed by an original equipment manufacturer (OEM). Let's us determine if the application was installed by an OEM which can help us classify and identify issues.
+  - **IsOEMInstalled** - Flag indicating if Office was installed by an original equipment manufacturer (OEM). Let's us determine if the application was installed by an OEM, which can help us classify and identify issues.
 
   - **PreviousVersion** - The version of Office that was previously installed on the machine. Allows us to roll back to a previous version if the current one has an issue.
 
-  - **ProcessFileName** - The name of the application filename. Allows us to identify the name of the executable which is generating the data as there may be several different process filenames reporting as the same app name.
+  - **ProcessFileName** - The name of the application filename. Allows us to identify the name of the executable that is generating the data as there may be several different process filenames reporting as the same app name.
 
 #### Client
 
@@ -360,7 +360,7 @@ This category contains the following fields:
 
   - **RuleId** - The identifier of the rule that generated the data if it was generated by a rule. Allows us to identify the source of a piece of data so that we can validate and manage that events parameters.
 
-  - **RuleInterfaces** - Any interfaces that are implemented by the specific rule. Allows us to classify and import the data based on its structure which simplifies data processing.
+  - **RuleInterfaces** - Any interfaces that are implemented by the specific rule. Allows us to classify and import the data based on its structure, which simplifies data processing.
 
   - **RuleVersion** - The identifier of the rule that generated the data if it was generated by a rule. Allows us to identify the source of a piece of data so that we can validate and manage that events parameters.
 
@@ -563,7 +563,7 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **device_category** - Indicates what type of device it is (phone, tablet, etc.) to help us detect device category specific issues
 
-- **DeviceInfo.Id** - A unique device identifier to help us detect device specific issues
+- **DeviceInfo.Id** - A unique device identifier to help us detect device-specific issues
 
 - **DeviceInfo.Make** - The make of the device (i.e. Apple, Samsung, etc.) to help us detect device make specific issues
 
@@ -635,7 +635,7 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **aad_id** - a pseudonymous Azure Active Directory identifier
 
-- **DeviceInfo.NetworkCost** - Indication of devices current network cost which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
+- **DeviceInfo.NetworkCost** - Indication of devices current network cost, which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
 - **is_app_in_duo_split_view_mode** - This will let us know that the app was in Duo split-screen mode.  This property is set only for Duo (Android only) devices.
 
@@ -711,7 +711,7 @@ The following fields are collected:
 
 #### Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
 
-Indicates whether the Office File Format choice dialog box was shown to the user on first/second boot of Word, Excel, PowerPoint on Win32.  Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel or PPT Win32.
+Indicates whether the Office File Format choice dialog box was shown to the user on first/second boot of Word, Excel, PowerPoint on Win32.  Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel, or PPT Win32.
 
 The following fields are collected.
 
@@ -723,7 +723,7 @@ The following fields are collected.
 
 #### Office.Compliance.FileFormatBallotOption
 
-Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel or PPT Win32.  Indicates whether the Office File Format choice dialog box is displayed on first or second boot of Word, Excel, or PowerPoint on Win32.
+Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel, or PPT Win32.  Indicates whether the Office File Format choice dialog box is displayed on first or second boot of Word, Excel, or PowerPoint on Win32.
 
 The following fields are collected:
 
@@ -798,7 +798,7 @@ The following fields are collected:
 
 - **Generic String Type** - Returns if it is full reset of a notes_light_data reset
 
-- **LaunchPoint** - The point from where Reset is initiated. Possible values: Sign Out Button, Sign-out failure, Intune Triggered
+- **LaunchPoint** - The point from where Reset is initiated. Possible values: Sign Out Button, Sign out failure, Intune Triggered
 
 - **Pass** - Indicates if the Reset was successful
 
@@ -838,7 +838,7 @@ The following fields are collected:
 
 - **ServerType** - Returns the type of the server offering the service 
 
-- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
+- **SignInMode** - Sign in or Sign up or Auto Sign in or Sign up accelerated
 
 
 #### Office.OneNote.FirstRun.FirstRun
@@ -933,7 +933,7 @@ The following fields are collected:
 
   - **Data\_GetFileStreamFromPackageSuccess -** successful attempts to read the package
 
-  - **Data\_GetFileStreamSuccess -** no disk issues nor configuration issues which doesn't let the file stream to be read
+  - **Data\_GetFileStreamSuccess -** no disk issues nor configuration issues which don't let the file stream to be read
 
   - **Data\_GetRelativePathsFailed -** relative path doesn't point to accessible location
 
@@ -1052,7 +1052,7 @@ The following fields are collected:
 
   - **AuthScheme -** the auth scheme requested by exchange
 
-  - **BackEndHttpStatus -** http code reported when talking to exchange back end-
+  - **BackEndHttpStatus -** http code reported when talking to exchange back end
 
   - **BackupUrl -** the secondary exchange URL to call
 
@@ -1360,7 +1360,7 @@ The following fields are collected:
 
   - **CLSID** - class identifier of the control
 
-  - **Count** - how many times was the control activated
+  - **Count** - how many times the control was activated
 
 #### Office.Security.ActivationFilter.FailedToRegister
 
@@ -1457,7 +1457,7 @@ Tracks if the macro was verified to be from a trusted publisher. Used to ensure
 
 The following fields are collected:
 
-  - **Policy** - is the policy set or not set or not available
+  - **Policy** - is the policy set, not set, or not available
 
 #### Office.Security.Macro.Prompted
 
@@ -2748,13 +2748,13 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneComplianceRequest
 
-This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign-in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It is used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office.Android.Intune.IntuneComplianceStatus, to ensure the configured policy is enforced. 
+This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It is used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office.Android.Intune.IntuneComplianceStatus, to ensure the configured policy is enforced. 
 
 No data fields are collected.
 
 #### Office.Android.Intune.IntuneComplianceStatus
 
-This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign-in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It is combined with another event, Office.Android.Intune.IntuneComplianceRequest, to ensure the configured policy is enforced.
+This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It is combined with another event, Office.Android.Intune.IntuneComplianceRequest, to ensure the configured policy is enforced.
   
 The following fields are collected:
 
@@ -2762,8 +2762,8 @@ The following fields are collected:
   - -1 – Unknown error
   -    0 – The application is compliant with the organization policies
   - 1 – The application is not compliant with the organization policies
-  - 2 – Service related failures
-  - 3 – Network related failures
+  - 2 – Service-related failures
+  - 3 – Network-related failures
   - 4 – Application failed to retrieve authentication token 
   - 5 – The response has not been yet received from the service
   - 6 – The company portal application needs to be installed
@@ -2894,7 +2894,7 @@ The following fields are collected:
 
 - **Data_Doc_FqdnHash** – A GUID that uniquely identifies server host name.
 
-- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open..
+- **Data_Doc_IdentityTelemetryId** – A one-way hash of the user identity used to perform the open.
 
 - **Data_Doc_InitializationScenario** – An enumeration indicating the detailed scenario type of a file open operation.
 
@@ -3833,7 +3833,7 @@ This event is collected for Office applications running under Apple platforms. T
 
 The following fields are collected:
 
-- **Data_InHomeTab** - A Boolean value that indicate whether the new file from template was created from the Home tab of the file new experience.
+- **Data_InHomeTab** - A Boolean value that indicates whether the new file from template was created from the Home tab of the file new experience.
 
 - **Data_InSearch** - A Boolean that indicates whether the file was created when the user was searching for a template.
 
@@ -4017,7 +4017,7 @@ The following fields are collected:
 
 #### Office.DocsUI.PaywallControl.UserImageClicked 
  
-This event measures telemetry to see if users are trying to complete an action by clicking on a user avatar. This data will be used to measure how many users interact with the avatar icon to assess the need for a follow up experience upon tap.
+This event measures telemetry to see if users are trying to complete an action by clicking on a user avatar. This data will be used to measure how many users interact with the avatar icon to assess the need for a follow-up experience upon tap.
  
 The following fields are collected: 
 
@@ -4066,9 +4066,9 @@ The following fields are collected:
 
 - **Data_LocationServiceType** - An abstract categorization of the location of a file like "SharePoint", "OneDrive", "Local", "WOPI", etc., and explicitly not the actual location of the file.
 
-- **Data_UploadAction** - A hard coded string that indicates whether the upload was a move or a copy operation.
+- **Data_UploadAction** - A hard-coded string that indicates whether the upload was a move or a copy operation.
 
-- **Data_UploadResult** - A hard coded string that indicates the result of the attempt to upload including but not limited to ''Success", "UserCancelledUpload", and "PreAuthFailed".
+- **Data_UploadResult** - A hard-coded string that indicates the result of the attempt to upload including but not limited to ''Success", "UserCancelledUpload", and "PreAuthFailed".
 
 #### Office.DocsUI.SharingUI.CopyLinkOperation
 
@@ -4078,7 +4078,7 @@ The following fields are collected:
 
 - **Data_ ServiceType** - An abstract categorization of the location of a file like "SharePoint", "OneDrive", "Local", "WOPI", etc., and explicitly not the actual location of the file.
 
-- **Data_LinkType** - A hard coded string that describes the kind of invite operation performed like "ViewOnly" and "ViewAndEdit".
+- **Data_LinkType** - A hard-coded string that describes the kind of invite operation performed like "ViewOnly" and "ViewAndEdit".
 
 - **Data_ShareScenario** - A hard-coded string description of where within the application's user interface the file is being shared from including but not limited to, "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
 
@@ -4112,7 +4112,7 @@ The following fields are collected:
 
 - **Data_MessageLength** - A numerical count of the total number of characters sent in the invite message.
 
-- **Data_ShareScenario** - A hard coded string description of where within the application's user interface the file is being shared from including but not limited to, "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
+- **Data_ShareScenario** - A hard-coded string description of where within the application's user interface the file is being shared from including but not limited to, "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
 
 #### Office.DocsUI.SharingUI.SendACopyOperation
 
@@ -4128,9 +4128,9 @@ The following fields are collected:
 
 - **Data_ServiceType** - An abstract categorization of the location of a file like "SharePoint", "OneDrive", "Local", "WOPI", etc., and explicitly not the actual location of the file.
 
-- **Data_ShareFileType** - A hard coded string description of what type of object is being shared including but not limited to, "Document", "PDF", "Picture".
+- **Data_ShareFileType** - A hard-coded string description of what type of object is being shared including but not limited to, "Document", "PDF", "Picture".
 
-- **Data_ShareScenario** - A hard coded string description of where within the application's user interface the file is being shared from including but not limited to, "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
+- **Data_ShareScenario** - A hard-coded string description of where within the application's user interface the file is being shared from including but not limited to, "FileMenu", "OpenTabShareActionMenu", "RecentTabShareActionMenu".
 
 - **Data_SharingService** - A Boolean that indicates whether the file was created when the user was searching for a template.
 
@@ -4471,7 +4471,7 @@ The following fields are collected:
 
   - **Data.CountOfMultiRoundTripsUpload -** Count of round trips to the server used to troubleshoot performance and network issues
 
-  - **Data.DialogId -** Set if a UI dialog was displayed during Open, indicating a that a warning message was displayed to the user
+  - **Data.DialogId -** Set if a UI dialog was displayed during Open, indicating that a warning message was displayed to the user
 
   - **Data.DidFallbackToDAV -** Set if the document was opened using an older file transfer protocol
 
@@ -5024,7 +5024,7 @@ The following fields are collected:
 
 #### Office.FirstRun.Apple.FirstRunComplete
 
-This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase) and the identity type (MSA/OrgID). We use this event to figure out if the First Run-Experience (FRE) was completed and type of identity used to sign-in (MSA/OrgID).
+This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase) and the identity type (MSA/OrgID). We use this event to figure out if the First Run-Experience (FRE) was completed and type of identity used to sign in (MSA/OrgID).
 
 The following fields are collected:
 
@@ -5609,7 +5609,7 @@ The following fields are collected:
     - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
     - **networkEffectiveType** - The effective type of network connection, e.g. "slow-2g Online" to identify whether the user is connected to the internet at the time of showing the persona card
     - **networkType** - The type of network connectivity of the device in use
-    - **roundTripEstimateMs** - Estimated effective round-trip of the current connection in milliseconds
+    - **roundTripEstimateMs** - Estimated effective round trip of the current connection in milliseconds
 
 - **Data.region** -The geographical region of the profile card backend service to which user is connected
 
@@ -5677,7 +5677,7 @@ The following fields are collected:
 
 - **Data_Doc_FileOpSessionID** - Unique Id for a Document Session.
 
-- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third party files app, wopi
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
 
 - **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
 
@@ -5721,11 +5721,11 @@ The following fields are collected:
 
 - **Data_PageCount** - Count of page in the PDF File.
 
-- **Data_PasswordProtected** - Marker that tell whether the file is password protected or not.
+- **Data_PasswordProtected** - Marker that tells whether the file is password protected or not.
 
 - **Data_ProviderApp** - currently providing provider app in case of file activation only 
 
-- **Data_ReadOnly** - Marker that tell whether the file is read-only or not.
+- **Data_ReadOnly** - Marker that tells whether the file is read-only or not.
 
 - **Data_Result** - The status of the operation being performed, ex: true:success, false:failure
 
@@ -5755,11 +5755,11 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 
 - **Data_PageCount** - Count of page in the PDF File.
 
-- **Data_PasswordProtected** - Marker that tell whether the file is password protected or not. 
+- **Data_PasswordProtected** - Marker that tells whether the file is password protected or not. 
 
 - **Data_ProviderApp** – currently providing provider app in case of file activation only 
 
-- **Data_ReadOnly** - Marker that tell whether the file is read-only or not.
+- **Data_ReadOnly** - Marker that tells whether the file is read-only or not.
 
 - **Data_Result** - The status of the operation being performed ( true:success , false:failure) 
 
@@ -5810,7 +5810,7 @@ This event collects the critical signal used to ensure that OfficeLens is launch
 
 The following fields are collected: 
 
-- **CAPTURE_MODE** - Indicates which mode has OfficeLens been launched in.  It could be default, edit, fast insert or video import.
+- **CAPTURE_MODE** - Indicates which mode has OfficeLens has been launched in.  It could be default, edit, fast insert or video import.
 
 - **ERROR_CODE** - Indicates the launch error code in case there was an error while launching.
 
@@ -6288,7 +6288,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_Doc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+  - **Data\_Doc\_IOFlags:long -** Bitmask for various IO-related flags for a given document
 
   - **Data\_Doc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
@@ -6692,7 +6692,7 @@ The following fields are collected:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-- **Data_DstDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
+- **Data_DstDoc_IOFlags:long** - Bitmask for various IO-related flags for a given document
 
 - **Data_DstDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
     
@@ -6879,7 +6879,7 @@ The following fields are collected:
 
 - **Data_Doc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-- **Data_Doc_IOFlags:long** - Bitmask for various IO related flags for a given document
+- **Data_Doc_IOFlags:long** - Bitmask for various IO-related flags for a given document
 
 - **Data_Doc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
@@ -6905,7 +6905,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash:string** - Hash of resource identifier for documents stored in cloud
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId:string** - immutable identifier for documents stored in cloud
 
@@ -6957,7 +6957,7 @@ The following fields are collected:
 
 - **Data_DstDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-- **Data_DstDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
+- **Data_DstDoc_IOFlags:long** - Bitmask for various IO-related flags for a given document
 
 - **Data_DstDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
@@ -7041,7 +7041,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_IdentityUniqueId:string** - Unique identifier of identity that was used for Shared Documents action
 
-- **Data_SrcDoc_IOFlags:long** - Bitmask for various IO related flags for a given document
+- **Data_SrcDoc_IOFlags:long** - Bitmask for various IO-related flags for a given document
 
 - **Data_SrcDoc_IrmRights:long** - Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
     
@@ -7836,7 +7836,7 @@ This event indicates Office Word opens a document by user initiation instead of 
  
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics. 
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics. 
 
 - **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving. 
 
@@ -7960,7 +7960,7 @@ This event indicates that a user is saving their changes to a new document. The 
 
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics.
 
 - **Data_DetachedDuration** - How long was the activity detached from the thread
 
@@ -8010,7 +8010,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -8056,7 +8056,7 @@ This event indicates Office Word prompts the user to save changes when it tries 
 
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics.
 
 - **Data_DetachedDuration** - How long was the activity detached from the thread
 
@@ -8106,7 +8106,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -8173,11 +8173,11 @@ This event indicates Office Word saves a document into a new document. It allows
 
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics.
 
-- **Data_AddDocTelemResDst** - Reports whether we were able to properly populate other document telemetry related values in the event for the destination document. Used for data quality diagnostics.
+- **Data_AddDocTelemResDst** - Reports whether we were able to properly populate other document telemetry-related values in the event for the destination document. Used for data quality diagnostics.
 
-- **Data_AddDocTelemResSrc** - Reports whether we were able to properly populate other document telemetry related values in the event for the source document. Used for data quality diagnostics.
+- **Data_AddDocTelemResSrc** - Reports whether we were able to properly populate other document telemetry-related values in the event for the source document. Used for data quality diagnostics.
 
 - **Data_DetachedDuration** - How long was the activity detached from the thread
 
@@ -8223,7 +8223,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems
 
@@ -8671,7 +8671,7 @@ Data fields that are common for Outlook Mobile for this event on iOS and Android
 
 - **mail_folder_type** - what type of folder was selected during the side bar action, if any.
 
-- **sidebar_type** - tracks the type of side bar associated with this event, i.e. mail or calendar to helps us ensure the navigation from the favorites setting works properly
+- **sidebar_type** - tracks the type of side bar associated with this event, i.e. mail or calendar to help us ensure the navigation from the favorites setting works properly
 
 The following fields are collected: 
 
@@ -9052,7 +9052,7 @@ The following fields are collected:
 
   - **Data\_AppSizeWidth –** Add**-**in window size's width
 
-  - **Data\_AppURL -** URL of the Add in; Logs full URL for Store Add-ins and URL domain for non-store Add-ins
+  - **Data\_AppURL -** URL of the Add-in; Logs full URL for Store Add-ins and URL domain for non-store Add-ins
 
   - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
@@ -9068,7 +9068,7 @@ The following fields are collected:
 
   - **Data\_CommentsCount:integer -** number of comments in document
 
-  - **Data\_ConnectionCount:integer -** number of data connection in diagram
+  - **Data\_ConnectionCount:integer -** number of data connections in diagram
 
   - **Data\_ContentMgrInitTim:integer -** time taken to initialize content manager
 
@@ -9244,7 +9244,7 @@ The following fields are collected:
 
   - **Data\_OpenDurationTimeInMs:integer -** duration to open file in milliseconds
 
-  - **Data\_OriginatedFromTemplateID:integer -** identifier for template from which diagram was created. NULL for third party templates
+  - **Data\_OriginatedFromTemplateID:integer -** identifier for template from which diagram was created. NULL for third-party templates
 
   - **Data\_Pages:integer -** number of pages in document
 
@@ -9268,17 +9268,17 @@ The following fields are collected:
 
   - **Data\_SDX\_BrowserToken -** Identifier that sits in the browser's cache
 
-  - **Data\_SDX\_HostJsVersion -** This is the platform specific version of Office.js (e.g. outlook web16.01.js) This contains the API surface for ad ins
+  - **Data\_SDX\_HostJsVersion -** This is the platform-specific version of Office.js (e.g. outlook web16.01.js) This contains the API surface for ad ins
 
-  - **Data\_SDX\_Id -** The GUID of an Add in which uniquely identifies it
+  - **Data\_SDX\_Id -** The GUID of an Add-in which uniquely identifies it
 
   - **Data\_SDX\_InstanceId -** Represents Add in document pair
 
-  - **Data\_SDX\_MarketplaceType -** Indicates where the Add in installed from
+  - **Data\_SDX\_MarketplaceType -** Indicates where the Add-in installed from
 
-  - **Data\_SDX\_OfficeJsVersion -** This is the version of Office.js which will redirect to the platform specific version.
+  - **Data\_SDX\_OfficeJsVersion -** This is the version of Office.js which will redirect to the platform-specific version.
 
-  - **Data\_SDX\_Version -** Version of the Add in
+  - **Data\_SDX\_Version -** Version of the Add-in
 
   - **Data\_ShellCmdLineTime:integer -** time taken to Parse and execute any shell commands on the command line
 
@@ -9486,7 +9486,7 @@ The following fields are collected:
 
 - **InstallLocation** - Indicates if the app is pre-installed or downloaded form Store
 
-- **is_boot_completed_ever** - Indicates if the App have even been booted successfully before in the device
+- **is_boot_completed_ever** - Indicates if the App has even been booted successfully before in the device
 
 - **IS_DARK_MODE_ENABLED** - A Boolean which indicates if app is in dark mode or not
 
@@ -9525,7 +9525,7 @@ The following fields are collected:
 
   - **Data\_AddDocumentToMruList -** Method AddDocumentToMruList execution duration
 
-  - **Data\_AlreadyOpened -** Was this document previously opened (within the context of same process session)
+  - **Data\_AlreadyOpened -** Was this document previously opened (within the context of the same process session)
 
   - **Data\_AntiVirusScanMethod -** Predefined set of values of type of anti-virus scanned (IOAV, AMSI, None etc.)
 
@@ -9599,7 +9599,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IdentityUniqueId:string -** Unique identifier of identity that was used for Shared Documents action
 
-  - **Data\_Doc\_IOFlags:long -** Bitmask for various IO related flags for a given document
+  - **Data\_Doc\_IOFlags:long -** Bitmask for various IO-related flags for a given document
 
   - **Data\_Doc\_IrmRights:long -** Predefined set of values of what type of Information Rights Management is applied on this document (Forward, Reply, SecureReader, Edit etc.)
 
@@ -9625,7 +9625,7 @@ The following fields are collected:
 
   - **Data\_Doc\_ResourceIdHash:string -** Hash of resource identifier for documents stored in cloud
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId:string -** immutable identifier for documents stored in cloud
 
@@ -9735,7 +9735,7 @@ The following fields are collected:
 
   - **Data\_InitSecureReaderReasons -** Method InitSecureReaderReasons execution duration in milliseconds
 
-  - **Data\_IsIncOpenInProgressWhileOpen -** In case of multiple open of same document, is Inc open protocol running alongside open protocol?
+  - **Data\_IsIncOpenInProgressWhileOpen -** In case of multiple open of the same document, is Inc open protocol running alongside open protocol?
 
   - **Data\_IsMultiOpen -** Do we support multiple open?
 
@@ -9783,9 +9783,9 @@ The following fields are collected:
 
   - **Data\_PreviousDiscardFailed -** Indicates previous open/close attempt on the document didn't properly release all memory
 
-  - **Data\_PreviousFailureHr -** In case of re-opening of same document, what was last failure result
+  - **Data\_PreviousFailureHr -** In case of re-opening of the same document, what was last failure result
 
-  - **Data\_PreviousFailureTag -** In case of re-opening of same document, what was last failure tag (pointer to code location)
+  - **Data\_PreviousFailureTag -** In case of re-opening of the same document, what was last failure tag (pointer to code location)
 
   - **Data\_RemoteDocToken -** Is Remote Open enabled (prototype feature that enables opening file from service rather than from host)?
 
@@ -9988,7 +9988,7 @@ The following fields are collected:
 
 - **OfficeProcessSessionStart** sends basic information upon the start of a new Office session. This is used to count the number of unique sessions seen on a given device. This is used as a heartbeat event to ensure that the application is running on a device or not. In addition, it serves as a critical signal for overall application reliability
 
-- **AppSessionGuid** - An identifier of a particular application session starting at process creation time and persisting until process end. It is formatted as a standard 128-bit GUID but constructed of 4 parts. Those four parts in order are (1) 32 bit Process ID (2) 16 bit Session ID (3) 16 bit Boot ID (4) 64 bit Process creation time in UTC 100ns
+- **AppSessionGuid** - An identifier of a particular application session starting at process creation time and persisting until process end. It is formatted as a standard 128-bit GUID but constructed of 4 parts. Those four parts in order are (1) 32-bit Process ID (2) 16-bit Session ID (3) 16 bit Boot ID (4) 64-bit Process creation time in UTC 100ns
 
 - **processSessionId** - Randomly generated guid to identify the app session
 
@@ -10058,7 +10058,7 @@ This event indicates Office Word opens a document from the Most Recent Used (MRU
 
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics.
 
 - **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
 
@@ -10116,7 +10116,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
@@ -10179,11 +10179,11 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.OpenFFileOpenXstzCore
 
-This event indicates Office Word opens a document who is double clicked by a user. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-openfrom-file-double-click is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document who is double-clicked by a user. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-openfrom-file-double-click is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics
     
 - **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
     
@@ -10241,7 +10241,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems
 
@@ -10308,7 +10308,7 @@ This event indicates Office Word opens a document via COM activation or command 
 
 The following fields are collected:
 
-  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+  - **Data\_AddDocTelemRes -** Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics.
 
   - **Data\_BytesAsynchronous -** Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving.
 
@@ -10364,7 +10364,7 @@ The following fields are collected:
 
   - **Data\_Doc\_ResourceIdHash -** An anonymized document Identifier used to diagnose problems
 
-  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+  - **Data_Doc_RtcType -**  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
   - **Data\_Doc\_ServerDocId -** An immutable anonymized document Identifier used to diagnose problems
 
@@ -10431,7 +10431,7 @@ This event indicates Office Word opens a document via Open dialog. It also conta
 
 The following fields are collected:
 
-- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry related values in the event. Used for data quality diagnostics.
+- **Data_AddDocTelemRes** - Reports whether we were able to properly populate other document telemetry-related values in the event. Used for data quality diagnostics.
 
 - **Data_BytesAsynchronous** - Number of bytes (compressed) that we believe we can open the file without if we get them before the user wants to start editing or maybe saving
 
@@ -10489,7 +10489,7 @@ The following fields are collected:
 
 - **Data_Doc_ResourceIdHash** - An anonymized document Identifier used to diagnose problems
 
-- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was setup for current file (Disabled, unsupported, on demand, always on, etc.).
+- **Data_Doc_RtcType** -  Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
 
 - **Data_Doc_ServerDocId** - An immutable anonymized document Identifier used to diagnose problems 
 
@@ -10841,7 +10841,7 @@ The following fields are collected:
 
 - **application_version_name** - Application version name defined by the Outlook app 
 
-- **com.** (e.g. com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Manufacturer specific configuration values provided by the Android platform
+- **com.** (e.g. com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) Manufacturer-specific configuration values provided by the Android platform
 
 - **crash_report_sdk** - SDK to send crash logs. Either Hockey or AppCenter
 
@@ -11211,7 +11211,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.UAE.Session
 
-Collecting what feature have been used when PowerPoint session ungracefully exited.  This information is critical to catch PowerPoint ungracefully exits. Microsoft is using this data to diagnose the issue in order to guarantee PowerPoint running as expected.
+Collecting what feature has been used when PowerPoint session ungracefully exited.  This information is critical to catch PowerPoint ungracefully exits. Microsoft is using this data to diagnose the issue in order to guarantee PowerPoint running as expected.
 
 The following fields are collected:
 
@@ -11495,7 +11495,7 @@ The following fields are collected:
 
 - **db_size_megabytes** - tracks the size of the core data database rounded to the nearest 25 megabytes and with a maximum megabyte of 500
 
-- **db_wal_size_megabytes** - tracks the size of the core data database when the main store file is untouched rounded to the nearest 1 megabytes and with a maximum megabyte of 10
+- **db_wal_size_megabytes** - tracks the size of the core data database when the main store file is untouched rounded to the nearest 1 megabyte and with a maximum megabyte of 10
 
 - **free_space_megabytes** - tracks the free space available in buckets 10, 100, 1000, 10,000, and then 100,000. 
 
@@ -12009,7 +12009,7 @@ This event is collected for Office applications running under Apple platforms. T
 
 The following fields are collected:
 
-- **Data_CountSpinControlStart** - A marker than indicates that the application appears to have become unresponsive (or slow to respond)
+- **Data_CountSpinControlStart** - A marker that indicates that the application appears to have become unresponsive (or slow to respond)
 
 #### Office.Apple.MbuInstrument.VMOnDocumentClose
 
@@ -12376,7 +12376,7 @@ The following fields are collected:
 
 - **ActualRehearseBootTimeInMs** – This is the actual time taken for the connections to be created.
 
-- **AdaptationTextSize** – This is the size of the text that is send to service.
+- **AdaptationTextSize** – This is the size of the text that is sent to service.
 
 - **AuthDurationInMs** – This is the time taken in milliseconds for authentication (refresh the auth token).
 
@@ -12388,7 +12388,7 @@ The following fields are collected:
 
 - **FirstAudioDelayInMs** – This is the time taken in milliseconds for the first audio data to be received.
 
-- **FRetriedOnOpenConnection** – This is a Boolean which indicates whether retry happen for openconnection or not.
+- **FRetriedOnOpenConnection** – This is a Boolean which indicates whether retry happens for openconnection or not.
 
 - **InitMediaCaptureLayerDurationInMs** – This is the time taken in milliseconds to initialize the media/audio capture layer.
 
@@ -12497,7 +12497,7 @@ The following fields are collected:
 
 #### Office.Visio.VisioFileOpenReliability
 
-This event collects File open perf data for Visio Dev16. This event is used to monitor performance of File open and associates it with file properties like file size for Visio Dev16. File properties enable us debug and root cause issues faster.
+This event collects File open perf data for Visio Dev16. This event is used to monitor performance of File open and associates it with file properties like file size for Visio Dev16. File properties enable us to debug and root cause issues faster.
 
 The following fields are collected:
 
@@ -12593,7 +12593,7 @@ The following fields are collected:
   - **average_cost_time_ns** - The average cost time measured in nanoseconds.
   - **cost_type** - Tells us whether this event is for measuring storage layer execution or total duration.
   - **hx_object_type** - Provides the detail programming object type of the measuring.
-  - **is_main_thread** - Tells us whether this events only measures main thread execution time.
+  - **is_main_thread** - Tells us whether this event only measures main thread execution time.
   - **record_count** - The number of records the underlying storage layer returns.
   - **scope** - Provides the name of UI page/components this event belongs to.
   - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
@@ -12724,7 +12724,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidAppDocsFileOperationEnds
 
-Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operations and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -12832,7 +12832,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileOpenReliability
 
-This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code are reporting them.  Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in Word, Excel, or PowerPoint.
+This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code is reporting them.  Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -12888,7 +12888,7 @@ The following fields are collected:
 
 - **WordFileCorruptionReason** - Reason for corruption due to which word file can fail in opening
 
-- **WordFileOpenErrorCode** - Word specific file open error code.
+- **WordFileOpenErrorCode** - Word-specific file open error code.
 
 - **WordFileTypeFromDod** - File type determined by word based on actual file format
 
@@ -12910,7 +12910,7 @@ The following fields are collected:
 
 - **DocInstanceId** - DocInstanceId the document instance ID generated by AppDocs that is scoped to an operation instance on a document
 
-- **ExcelFileSaveResult** - Excel specific HResult
+- **ExcelFileSaveResult** - Excel-specific HResult
 
 - **FileExtension** - Extension of file.
 
@@ -12938,13 +12938,13 @@ The following fields are collected:
 
 - **WordFileSaveCancelReason** - trackback tag for cancels in word
 
-- **WordFileSaveEid** - Word specific error code
+- **WordFileSaveEid** - Word-specific error code
 
 - **WordFileSaveErrorTrackbackTag** - trackback tag for save failures
 
 - **WordFileSaveOpResult** - enumeration for result status 0 if succeeded, 1 if failed, 2 if canceled
 
-- **WordFileSaveSuccess** - enumeration for Word specific details for file save operation success.
+- **WordFileSaveSuccess** - enumeration for Word-specific details for file save operation success.
 
 #### Office.Android.AndroidOfficeActivationLatency
 
@@ -13000,7 +13000,7 @@ The following fields are collected:
 
 #### Office.Android.AppDocsFileOperationEnds
 
-Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operation and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operations and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -13070,7 +13070,7 @@ The following fields are collected:
 
 #### Office.Android.AuthACEErrors
 
-This event uses the Microsoft Account (MSA) to determine which user is attempting to sign-in to the app and during that which telemetry in discussion is getting triggered as part of an unsuccessful attempt.  
+This event uses the Microsoft Account (MSA) to determine which user is attempting to sign in to the app and during that which telemetry in discussion is getting triggered as part of an unsuccessful attempt.  
 
 This event helps with MSA sign-in error distribution analysis, which helps in understanding reasons behind unsuccessful MSA sign-in flow end.
 
@@ -13539,7 +13539,7 @@ The following fields are collected:
 
 #### Office.Outlook.Desktop.OutlookCalendarUsageErr.MeetRcpt.ForwardActions.Rule.O16
 
-Collects success and failure of the Forward, Forward as Attachment, and Forward as iCalendar action for Single, Recurring, and Exceptional Meeting Responses in the Mail, Calendar, and Inspector Outlook view. The failure rate of the Forward, Forward as Attachment, and Forward as iCalendar actions are actively monitored for anomalies. Anomalous statistics indicate a failure Outlooks ability to conduct core calendar operations. This data is also used to diagnose other Calendar related issues that may be detected.
+Collects success and failure of the Forward, Forward as Attachment, and Forward as iCalendar action for Single, Recurring, and Exceptional Meeting Responses in the Mail, Calendar, and Inspector Outlook view. The failure rate of the Forward, Forward as Attachment, and Forward as iCalendar actions are actively monitored for anomalies. Anomalous statistics indicate a failure Outlooks ability to conduct core calendar operations. This data is also used to diagnose other Calendar-related issues that may be detected.
 
 The following fields are collected:
 
@@ -13573,7 +13573,7 @@ The following fields are collected:
 
 #### Office.Outlook.Desktop.OutlookCalendarUsageErr.MeetRcpt.ReplyActions.Rule.O16
 
-Collects success and failure of the Reply, Reply All, Reply With IM, and Reply All with IM action for Single, Recurring, and Exception Meeting Responses in the Mail, Calendar, and Inspector Outlook view. The failure rate of the Reply, Reply All, Reply With IM, and Reply All with IM actions are actively monitored for anomalies. Anomalous statistics indicate a failure Outlooks ability to conduct core calendar operations. This data is also used to diagnose other Calendar related issues that may be detected.
+Collects success and failure of the Reply, Reply All, Reply With IM, and Reply All with IM action for Single, Recurring, and Exception Meeting Responses in the Mail, Calendar, and Inspector Outlook view. The failure rate of the Reply, Reply All, Reply With IM, and Reply All with IM actions are actively monitored for anomalies. Anomalous statistics indicate a failure Outlooks ability to conduct core calendar operations. This data is also used to diagnose other Calendar-related issues that may be detected.
 
 The following fields are collected:
 
