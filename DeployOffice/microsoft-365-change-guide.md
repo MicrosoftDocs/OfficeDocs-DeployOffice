@@ -19,51 +19,7 @@ Legal Disclaimer
 
 Microsoft Corporation Non-Disclosure Agreement for Compliance Materials   READ THIS\! THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION ("MICROSOFT") AND THE RECIPIENT OF THESE MATERIALS, WHETHER AN INDIVIDUAL OR A CORPORATION OR OTHER ENTITY ("YOU"). BY CLICKING "I ACCEPT", DOWNLOADING OR USING THE MATERIALS, YOU AGREE TO THESE TERMS. IF THIS AGREEMENT IS ATTACHED TO MATERIALS, BY ACCESSING OR USING THE ATTACHED MATERIALS, YOU AGREE TO THESE TERMS. 1. For good and valuable consideration, the receipt and sufficiency of which are  acknowledged, You and Microsoft agree as follows: (a) If You are an authorized representative of a corporation or other entity ("Company"), and such Company  has executed a Microsoft Corporation Non-Disclosure Agreement that is not limited to a specific subject matter or event ("Microsoft NDA"), You represent that  You have authority to act on behalf of Company and agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and  conditions of the Microsoft NDA and that Company will treat the Confidential Information accordingly; (b) If You are an individual, and have executed a  Microsoft NDA, You agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and conditions of the Microsoft NDA and  that You will treat the Confidential Information accordingly; or (c) If a Microsoft NDA has not been executed, You (if You are an individual), or Company (if You  are an authorized representative of Company), as applicable, agrees: (a) to refrain from disclosing or distributing the Confidential Information to any third party  for five (5) years from the date of disclosure of the Confidential Information by Microsoft to Company/You; (b) to refrain from reproducing or summarizing the  Confidential Information; and (c) to take reasonable security precautions, at least as great as the precautions it takes to protect its own confidential information,  but no less than reasonable care, to keep confidential the Confidential Information. You/Company, however, may disclose Confidential Information in  accordance with a judicial or other governmental order, provided You/Company either (i) gives Microsoft reasonable notice prior to such disclosure and to allow  Microsoft a reasonable opportunity to seek a protective order or equivalent, or (ii) obtains written assurance from the applicable judicial or governmental entity  that it will afford the Confidential Information the highest level of protection afforded under applicable law or regulation. Confidential Information shall not  include any information, however designated, that: (i) is or subsequently becomes publicly available without Your/Company’s breach of any obligation owed to  Microsoft; (ii) became known to You/Company prior to Microsoft’s disclosure of such information to You/Company pursuant to the terms of this Agreement; (iii)  became known to You/Company from a source other than Microsoft other than by the breach of an obligation of confidentiality owed to Microsoft; or (iv) is  independently developed by You/Company. For purposes of this paragraph, "Confidential Information" means nonpublic information that Microsoft designates as being confidential or which, under the circumstances surrounding disclosure ought to be treated as confidential by Recipient. "Confidential Information" includes, without limitation, information in tangible or intangible form relating to and/or including released or unreleased Microsoft software or hardware products, the marketing or promotion of any Microsoft product, Microsoft's business policies or practices, and information received from others that Microsoft is obligated to treat as confidential. 2. You may review these Materials only (a) as a reference to validate the platform and assist you in evaluating the referenced product(s) for purchase and use. All other rights are retained by Microsoft; this agreement does not give You rights under any Microsoft patents. You may not (i) duplicate any part of these Materials, (ii) remove this agreement or any notices from these Materials, or (iii) give any part of these Materials, or assign or otherwise provide Your rights under this agreement, to anyone else. 3. If You are an entity and (a) merge into another entity or (b) a controlling ownership interest in You changes, your right to use these Materials automatically terminates and You must destroy them. 4.  Monetary damages may not sufficiently compensate a breach of these terms. Microsoft may seek court orders to stop the disclosure of Confidential Information in breach of these terms without the obligation of posting a bond.  5. This agreement is governed by the laws of the State of Washington. Any dispute involving it must be brought in the federal or state superior courts located in King County, Washington, and You waive any defenses allowing the dispute to be litigated elsewhere. If there is litigation, the losing party must pay the other party’s reasonable attorneys’ fees, costs and other expenses. If any part of this agreement is unenforceable, it will be considered modified to the extent necessary to make it enforceable, and the remainder shall continue in effect. This agreement is the entire agreement between You and Microsoft concerning these Materials; it may be changed only by a written document signed by both You and Microsoft. 
 
-# Contents
-
-[Continuous change in the cloud 4](#continuous-change-in-the-cloud)
-
-[Controlling change: challenges and strategy 6](#controlling-change-challenges-and-strategy)
-
-[Challenges 6](#challenges)
-
-[Strategy 7](#strategy)
-
-[Consuming and Managing Change – Message center and Planner 9](#consuming-and-managing-change-message-center-and-planner)
-
-[Change types and control methods 11](#change-types-and-control-methods)
-
-[Types of changes for Microsoft 365 services and clients 11](#types-of-changes-for-microsoft-365-services-and-clients)
-
-[Service release channels & controls 12](#service-release-channels-controls)
-
-[Service Release Channels 12](#service-release-channels)
-
-[Service Release Controls 13](#service-release-controls)
-
-[Client release channels & controls 15](#client-release-channels-controls)
-
-[Client Release Channels 15](#client-release-channels)
-
-[Client Release Controls 16](#client-release-controls)
-
-[Client Configuration Controls 18](#client-configuration-controls)
-
-[Change evaluation democratization 19](#change-evaluation-democratization)
-
-[Microsoft’s change plan, policies, & procedures 20](#microsofts-change-plan-policies-procedures)
-
-[Change management plan 20](#change-management-plan)
-
-[Change classification and notification 22](#change-classification-and-notification)
-
-[Sources of information and feedback channels 24](#sources-of-information-and-feedback-channels)
-
-[Sources of change information 24](#sources-of-change-information)
-
-[Feedback channels 28](#feedback-channels)
-
-# Continuous change in the cloud
+## Continuous change in the cloud
 
 The Microsoft 365 cloud environment is a hyperscale suite of service offerings in which change is an undeniable constant. In the technology industry, staying cutting-edge benefits productivity, security, and end user happiness. Change in the Microsoft cloud has purpose: deliver customer value, secure the environment, and delight end users. The pace of change in the Microsoft 365 is rapid and continuous, which are both adjectives describing the customer value pipeline facilitated by this model. At Microsoft, we are focused on empowering your end users with innovative features and secure services that increase efficiency within your organization.
 
@@ -84,7 +40,7 @@ Description automatically generated](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice
 
 Our goal is to provide your organization with changes that can be controlled (where possible), if deemed impactful to the organization, while still allowing the majority of changes to flow to end users for enhancing value, productivity, collaboration, and security.
 
-# Controlling change: challenges and strategy
+## Controlling change: challenges and strategy
 
 Despite the overwhelming benefits of rapid feature release and adoption, robust change management strategy is important to employ. We recognize that managing change, especially continuous cloud change, can be challenging for organizations. IT departments and other lines of defense often believe that each change must be reviewed in depth before deployment into their environments. While this may be an advantageous strategy for a subset of high impact changes, reviewing 100% of changes is a burdensome strategy that will delay deployment of the endlessly evolving features that enable your end users.
 
@@ -92,7 +48,7 @@ Not all features or changes have the potential to impact your security or compli
 
 The ability to control impactful changes is a differentiator offered by Microsoft. The technology industry is predominantly focused on innovation, which is generally assumed to have positive impact on users. It is uncommon to find granularity of control over these innovations by technology leaders or other cloud providers. By respecting your right to control most impactful changes, we are demonstrating our commitment to partnership and ultimately your success. Furthermore, we are committed to improving the overall change experience. By providing transparency into our change process, procedures, and roadmap, and by monitoring customer feedback, we seek to enable our customers in evaluating and deploying the rapidly increasing volume of updates we release.
 
-## Challenges
+### Challenges
 
 From industry observation, feedback, and supporting data, we have identified a key challenge our customers face when applying highly restrictive change ingestion models to the continuous release policy of Microsoft 365. The challenge lies in how frequently Microsoft updates services in the modern cloud. To illustrate the challenge, let us assume Microsoft pushes 720 changes per year released linearly. If these changes are restricted for evaluation, IT departments gating changes could be behind up to 60 changes after the first month. The resulting backlog of changes heightens the entropy in the environment and prevents users from utilizing the latest features and updates. The question becomes: is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?
 
@@ -104,7 +60,7 @@ We cite this as a challenge because we acknowledge the delicate balance that mus
 
 The security updates that are happening in the background are not the focus of this conversation. Rather, the focus is on the features we deliver. The same features that we develop with exhaustive market research to increase productivity and user satisfaction. The features that help empower our customers to achieve more, with open feedback channels to adjust for negative feedback in an agile manner. We require customer participation to validate our features, which means features must first be deployed in customer environments for end users to leverage.
 
-## Strategy 
+### Strategy 
 
 Three categories of customers can be identified based on their observed change strategies: Maximize Change, Allow Most Restricting High Impact, and Restrict All Change. *Figure 2* below summarizes these categories.
 
@@ -120,7 +76,7 @@ Microsoft advises customers to be intentional with their decisions to disable a 
 
 Microsoft’s industry observation shows the “Restrict All Change” strategy to be overly burdensome and less effective at end user empowerment by limiting the benefits of continuous innovation.
 
-## Consuming and Managing Change – Message center and Planner
+### Consuming and Managing Change – Message center and Planner
 
 Regardless of the change strategy employed, consuming and acting on any change requires communication and messaging. [Message center is the mechanism for notification of events for Microsoft 365 services](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide). Located in the Microsoft 365 Admin Center, upcoming new and changed features, planned maintenance, and other important announcements are all surfaced here. There are three categories for messages:
 
@@ -154,13 +110,13 @@ Taking advantage of Planner to manage tasks, group tasks, and formulate a plan o
 
 ![A screen shot of a message center post.](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image5.png)
 
-# Change types and control methods
+## Change types and control methods
 
 Microsoft provides various release options and tools to aid you in controlling and deploying changes in a manner that aligns with your strategy. We discussed our recommended strategy in the section above and describe in this section how you can implement this strategy.
 
 Changes are released to both Microsoft 365 *services* (e.g. SharePoint Online, Teams) and to *clients*, referred to as Microsoft 365 Apps (e.g. Microsoft Word, Excel, PowerPoint). Release channels and deployment controls differ between services and clients, which are important to understand as you implement your release management strategy.
 
-## Types of changes for Microsoft 365 services and clients
+### Types of changes for Microsoft 365 services and clients
 
 Changes may be planned or unplanned by their nature. For example, security updates are not always planned, as they are reactions to emergent risks or issues in our products or services. Depending on the type of change, the communication channel may also vary. Communication channels are further described in the section [Change classification and notification](#change-classification-and-notification). A summary of change types for both services and client applications is available in *Table 1* below.
 
@@ -249,9 +205,9 @@ Responsibility for managing these changes is shared between Microsoft and you as
 
 Now that we have outlined the types of changes you can expect from Microsoft 365 services and client applications, including associated responsibilities, the next section explores the different release channels and the controls available for each.
 
-## Service release channels & controls
+### Service release channels & controls
 
-### Service Release Channels
+#### Service Release Channels
 
 Microsoft 365 services provide two channels for receiving new product updates and features as they become available: Standard Release and Targeted Release.\[4\] These release options help you manage how your organization receives service updates. We provide you controls to designate which users receive updates, based on their association to one of the release channels.
 
@@ -271,7 +227,7 @@ To implement the [democratization of change](#change-evaluation-democratization)
 
 *Figure 3*
 
-### Service Release Controls
+#### Service Release Controls
 
 Your primary control for receiving service updates is the configuration of your release channels. While Microsoft provides you control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services and not to installations of software running in your IT infrastructure. It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes do not provide you the same granularity of control over deployment, as compared to Microsoft 365 Apps which have both release channels and various deployment tools available.
 
@@ -283,9 +239,9 @@ Configuration of release options can be done from the Microsoft 365 admin portal
 
 Having a staging or test tenant as part of your change strategy is important. Certain features require tenant changes prior to manifestation in the user experience. These tenant changes can be implemented in the staging tenant, allowing for feature preview, while preserving production tenant configurations.
 
-## Client release channels & controls
+### Client release channels & controls
 
-### Client Release Channels
+#### Client Release Channels
 
 Microsoft offers different update channels to which customers may subscribe for updates to our click-to-run clients, Microsoft 365 Apps (previously Office 365 ProPlus). These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater end user population. Refer to [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels) for more information.
 
@@ -363,7 +319,7 @@ Microsoft provides three main methods for modifying Microsoft 365 Apps update ch
 
 Certain considerations exist when switching channels, such as loss of features when switching users from Current Channel to Semi-Annual Enterprise Channel. Refer to [Considerations when changing channels](https://docs.microsoft.com/deployoffice/change-update-channels#considerations-when-changing-channels) for a complete list.
 
-### Client Release Controls
+#### Client Release Controls
 
 In conjunction with release channels, which are inherently controls themselves, Microsoft provides you a selection of tools and configurations for further deploying, controlling, and managing your Microsoft 365 clients. The tools for managing your devices and the Microsoft 365 clients installed on them have historically been decentralized. In addition to a multitude of third-party options available in the market, the Microsoft offered solutions included the following tools:
 
@@ -431,7 +387,7 @@ The Microsoft 365 Apps admin center offers [inventory](https://docs.microsoft.co
 
 *\* Note: The Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and above at the time of publishing. *
 
-### Client Configuration Controls
+#### Client Configuration Controls
 
 Once Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
 
@@ -447,7 +403,7 @@ Microsoft provides customers privacy controls so you can meet compliance and sec
 
 *Figure 5*
 
-## Change evaluation democratization 
+### Change evaluation democratization 
 
 Earlier, we shared data supporting the end user value of being on Current Channel, which provides continuous updates. We recommend this channel and Monthly Enterprise Channel as two solutions for expediting update evaluation and testing. Microsoft recommends two models for using these channels:
 
@@ -463,7 +419,7 @@ These two models may be used concurrently to provide comprehensive, effective, a
 
 Internally, Microsoft employs these change evaluation strategies in a program called Microsoft Elite. The Microsoft Elite program is beyond dogfood and serves as our early adopter program. Our employees test features and specific scenarios, providing quality feedback that improves programs and features before they are released to our customers and colleagues. You may use the release cadences and strategy described above to mimic this program in your own environment.
 
-# Microsoft’s change plan, policies, & procedures
+## Microsoft’s change plan, policies, & procedures
 
 Microsoft’s change mission is to enable rapid delivery, improve productivity, and delight customers with new applications and features while minimizing friction and disruption. Managing change is an evergreen program delivering continuous innovation to end users. Changes are necessary to keep products and services secure, up to date, and working as expected. While innovation is key to delivering end user value, we recognize that impactful changes to your environment may create legal, regulatory, security, or compliance risks. To reduce potential risk, Microsoft commits to:
 
@@ -473,7 +429,7 @@ Microsoft’s change mission is to enable rapid delivery, improve productivity, 
 
 3.  Listening to community feedback to improve the change release process
 
-## Change management plan
+### Change management plan
 
 The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. The pillars of the plan are pictured below:
 
@@ -533,7 +489,7 @@ The Microsoft Change Management Plan outlines three change phases with recommend
 
 Regardless of change strategy, ensuring your users are aware of and understand incorporated changes is key to business success. The criticality of adoption and change management will continue to trend upward as Microsoft and the greater market move toward continuous change.
 
-## Change classification and notification
+### Change classification and notification
 
 Microsoft classifies changes to assist customers in understanding and planning appropriately for each update. “Major updates” should be a key focus for customers evaluating and analyzing upcoming changes. If a change is classified as a major update, Microsoft commits to notifying customers at least 30 days prior to implementation when an action may be required.
 
@@ -579,11 +535,11 @@ The Message center admin user interface is one way to obtain service change info
 
 We commit to continuously improving our change classification and notification processes. Our efforts to predict which changes may impact customer environments are the basis of our change classifications, but these predictions are limited without input from our community of customers. The customer feedback we receive through various channels enhances our ability to respond to change concerns in an agile, democratized, customer-centric manner.
 
-# Sources of information and feedback channels
+## Sources of information and feedback channels
 
 Microsoft publishes change information in a variety of locations to ensure broad dissemination and accessibility. The [Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure they are holistically informed in a timely manner.
 
-## Sources of change information
+### Sources of change information
 
 [**Microsoft 365 Roadmap**](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=)
 
@@ -629,7 +585,7 @@ We make changes to our services, but we also update Microsoft 365 clients. Both 
 
 Outside of formal documentation, we recommend customers join the [Microsoft Tech Community](https://aka.ms/office365network) to keep a pulse on how changes are managed and deployed by industry peers. The Microsoft Tech Community is an active, raw, real-time source of information and we actively monitor the platform to better understand how changes are being received.
 
-## Feedback channels
+### Feedback channels
 
 Microsoft establishes a virtuous feedback loop between customers and our products. There are several examples of changes that have been rolled back or modified resulting from feedback submitted by customers. Customers may provide feedback through multiple channels.
 
