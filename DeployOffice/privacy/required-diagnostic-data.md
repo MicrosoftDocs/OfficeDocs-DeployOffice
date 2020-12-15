@@ -904,7 +904,9 @@ The following fields are collected:
 
   - **Data\_VisioSKU**:**integer** - 0 for Standard SKU and 1 for Professional SKU
 
-#### OneNote.App.OneNoteLaunchedNonActivated *(previous name)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+#### Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+
+*[This event was previously named OneNote.App.OneNoteLaunchedNonActivated.]*
 
 Records information about activation state of the App.  The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
 
@@ -912,7 +914,9 @@ The following fields are collected:
 
 - **INSTALL_LOCATION** - Indicates if the app is pre-installed or is downloaded from Store
 
-#### OneNote.ResetStatus *(previous name)*, Office.OneNote.Android.ResetStatus
+#### Office.OneNote.Android.ResetStatus
+
+*[This event was previously named OneNote.ResetStatus.]*
 
 The signal used to record any issues encountered when a user tries to reset the App.  The telemetry is used to monitor, detect and fix any issues caused during reset. 
 
@@ -926,7 +930,9 @@ The following fields are collected:
 
 - **Pass** - Indicates if the Reset was successful
 
-#### OneNote.SignIn.SignInCompleted *(previous name)*, Office.OneNote.Android.SignIn.SignInCompleted
+#### Office.OneNote.Android.SignIn.SignInCompleted
+
+*[This event was previously named OneNote.SignIn.SignInCompleted.]*
 
 The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
 
@@ -946,7 +952,9 @@ The following fields are collected:
 
 - **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
 
-#### OneNote.SignIn.SignInStarted *(previous name)*, Office.OneNote.Android.SignIn.SignInStarted
+#### Office.OneNote.Android.SignIn.SignInStarted
+
+*[This event was previously named OneNote.SignIn.SignInStarted.]*
 
 The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
 
@@ -5756,7 +5764,9 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 - **Data_Type** - Type of file operation (open, close or save)
 
 
-#### Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(previous name)*
+#### Office.OneNote.Android.App.Navigation.NavigationUIStateChanged
+
+*[This event was previously named OneNote.App.Navigation.NavigationUIStateChanged.]*
 
 This event collects the critical signal used to ensure OneNote users can successfully navigate through the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -5768,7 +5778,9 @@ The following fields are collected:
 
 - **OLD_STATE** - Indicates the applications' state right before the navigation
 
-#### Office.OneNote.Android.LensSDK.OfficeLensLaunched, OneNote.LensSDK.OfficeLensLaunched *(previous name)*
+#### Office.OneNote.Android.LensSDK.OfficeLensLaunched
+
+*[This event was previously named OneNote.LensSDK.OfficeLensLaunched.]*
 
 This event collects the critical signal used to ensure that OfficeLens is launched correctly.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -8393,7 +8405,9 @@ The following fields are collected:
 
 - None
 
-#### OneNote.Canvas.PageOpened *(previous name)*, Office.OneNote.Android.Canvas.PageOpened
+#### Office.OneNote.Android.Canvas.PageOpened
+
+*[This event was previously named OneNote.Canvas.PageOpened.]*
 
 The signal used to record when a Page is opened.  The telemetry is used to monitor, detect and fix any issues caused when a Page is opened in OneNote
 
@@ -8403,7 +8417,9 @@ The following fields are collected:
 
 - **TIME_TAKEN_IN_MS** - time taken to open page
 
-#### OneNote.Capture.NewNote.NewNoteTaken *(previous name)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+#### Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+
+*[This event was previously named OneNote.Capture.NewNote.NewNoteTaken.]*
 
 This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
 
@@ -8411,7 +8427,9 @@ The following fields are collected:
 
 - None
 
-#### OneNote.MessageBar.MessageBarClicked *(previous name)*, Office.OneNote.Android.MessageBar.MessageBarClicked
+#### Office.OneNote.Android.MessageBar.MessageBarClicked
+
+*[This event was previously named OneNote.MessageBar.MessageBarClicked.]*
 
 The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
 
@@ -9337,7 +9355,9 @@ The following fields are collected:
 
 - **IsFRELoadSuccessful** - integer mentioning the result state
 
-#### OneNote.App.AppBootComplete *(previous name)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+#### Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
+
+*[This event was previously named OneNote.App.AppBootComplete.]*
 
 The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.  This is used to ensure critical regression detection for OneNote app and service health.  If users can't launch the app for the first time, this would trigger a high severity incident.
 
@@ -9439,13 +9459,19 @@ The following fields are collected:
  
 - **USER_INTERACTED_DURING_EVENT** - Indicates if the user has interacted during booting
 
-#### OneNote.App.OneNoteAppForeground *(previous name)*, Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+#### Office.OneNote.Android.App.OneNoteAppForeground, Office.Android.EarlyTelemetry.OneNoteAppForeground
+
+*[This event was previously named OneNote.App.OneNoteAppForeground.]*
 
 The signal used to indicate OneNote App is in foreground.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
-The following fields are collected: None
+The following fields are collected: 
 
-#### OneNote.AppLaunch *(previous name)*, Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+- None
+
+#### Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+
+*[This event was previously named OneNote.AppLaunch.]*
 
 The critical signal used to ensure OneNote users can successfully launch the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
@@ -12514,7 +12540,9 @@ The following fields are collected:
 - **DIALOG_ACTION** - Which dialog button did the user click on – Positive button or negative button
 
 
-#### OneNote.Sync.ProvisioningCompleted *(previous name)*, Office.OneNote.Android.Sync.ProvisioningCompleted
+#### Office.OneNote.Android.Sync.ProvisioningCompleted
+
+*[This event was previously named OneNote.Sync.ProvisioningCompleted.]*
 
 The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
 
@@ -12530,7 +12558,9 @@ The following fields are collected:
 
 - **TimeTakenInMilliSeconds** - Returns time taken to complete provisioning in millisecond
 
-#### OneNote.Sync.ProvisioningStarted *(previous name)*, Office.OneNote.Android.Sync.ProvisioningStarted
+#### Office.OneNote.Android.Sync.ProvisioningStarted
+
+*[This event was previously named OneNote.Sync.ProvisioningStarted.]*
 
 The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health
 
