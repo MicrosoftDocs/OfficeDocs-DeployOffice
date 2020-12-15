@@ -231,7 +231,7 @@ To implement the [democratization of change](#change-evaluation-democratization)
 
 Your primary control for receiving service updates is the configuration of your release channels. While Microsoft provides you control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services and not to installations of software running in your IT infrastructure. It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes do not provide you the same granularity of control over deployment, as compared to Microsoft 365 Apps which have both release channels and various deployment tools available.
 
-Configuration of release options can be done from the Microsoft 365 admin portal as described in [Set up the release option in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center). After navigating to the portal, select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. *Figure 4* shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
+Configuration of release options can be done from the Microsoft 365 admin portal as described in [Set up the release option in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center&preserve-view=true). After navigating to the portal, select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. *Figure 4* shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
 ![A screenshot of the release preferences fly out in the M365 Admin Center.](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image7.png)
 
@@ -411,7 +411,7 @@ Earlier, we shared data supporting the end user value of being on Current Channe
 
   - **Microsoft 365 Apps**: Information on the benefits and how to enroll or change update channels is available in the article: [Change the Microsoft 365 Apps update channel for devices in your organization](https://docs.microsoft.com/deployoffice/change-update-channels), with the benefits described in the [Client release channels](#client-release-channels) section of this document.
 
-  - **Microsoft 365 Services:** Information on the benefits and how to enroll into these update channels is available in the article: [Set up the Standard or Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide), with the channels outlined in the above section [Service release channels & controls](#service-release-channels--controls).
+  - **Microsoft 365 Services:** Information on the benefits and how to enroll into these update channels is available in the article: [Set up the Standard or Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true), with the channels outlined in the above section [Service release channels & controls](#service-release-channels--controls).
 
 **Power User (Expertise):** Democratize update evaluations by identifying power users within your production tenant and subscribing them to Current Channel or Monthly Enterprise Channel (Microsoft 365 Apps) and the Targeted Release channel (services). Only the power users specified will receive continuous or early updates and will serve as an essential source of feedback, bugs, and experience across various lines of business and user expertise.
 
@@ -519,7 +519,7 @@ Alluded to earlier and further described here, messages are identified in the ri
   
 **Plan for Change**: These messages inform you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, we will let you know about changes to system requirements or about features that are being removed. We strive to provide at least 30 days' notice of any change that requires an admin to act to keep the service running normally.  
   
-**Stay Informed**: This is where we tell you about new or updated features that we are turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages may also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance may result in down time, where you or your users cannot access Microsoft 365, a specific feature, or a service such as email or OneDrive for Business. Review the [Message center documentation](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide) for more information.
+**Stay Informed**: This is where we tell you about new or updated features that we are turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages may also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance may result in down time, where you or your users cannot access Microsoft 365, a specific feature, or a service such as email or OneDrive for Business. Review the [Message center documentation](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) for more information.
 
 Both “Prevent or Fix Issues” and “Plan for Change” messages may require action from admins. An action required date is provided in the “Act by” column to assist customers in prioritization and planning.
 
@@ -537,7 +537,7 @@ We commit to continuously improving our change classification and notification p
 
 ## Sources of information and feedback channels
 
-Microsoft publishes change information in a variety of locations to ensure broad dissemination and accessibility. The [Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure they are holistically informed in a timely manner.
+Microsoft publishes change information in a variety of locations to ensure broad dissemination and accessibility. The [Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure they are holistically informed in a timely manner.
 
 ### Sources of change information
 
@@ -553,7 +553,7 @@ The Message center weekly digest allows your admins to review Message center com
 
 ![A screenshot of a message center announcement.](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image14.png)
 
-![](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image15.png)[**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide)
+![](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image15.png)[**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
 
 The Microsoft 365 admin mobile app has over 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple or Google Play store for iOS and Android, respectively. Common tasks that can be performed from the app include user password reset, adding users to a group, and reviewing change notifications and alerts. We recommend enabling mobile alerts, so you stay apprised of updates the moment they are released.
 
@@ -598,7 +598,7 @@ Microsoft establishes a virtuous feedback loop between customers and our product
   - Microsoft Tech Community
 
 [**Customer Pulse**](https://docs.microsoft.com/services-hub/support/customer-pulse)  
-It only takes a few minutes to provide valuable feedback through Customer Pulse. Sign into the [Services Hub](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide), expand the “Management” menu, select “Customer Pulse,” and follow the on-screen instructions. This feedback is aggregated and routed directly to engineering.
+It only takes a few minutes to provide valuable feedback through Customer Pulse. Sign into the [Services Hub](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true), expand the “Management” menu, select “Customer Pulse,” and follow the on-screen instructions. This feedback is aggregated and routed directly to engineering.
 
 [**Microsoft 365 Admin Portal**](https://portal.office.com/)  
 At the bottom-right of each page in the Admin Portal, customers can provide feedback by clicking the “Give feedback” button.
