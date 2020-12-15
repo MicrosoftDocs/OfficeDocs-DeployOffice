@@ -22,12 +22,12 @@ hideEdit: true
 
 Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. While you can control many of the connected experiences that are available to you, or to your users if you're the admin in your organization, there are a set of services that are essential to how Office functions and therefore cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office. Required service data about these services is collected and sent to Microsoft, regardless of any other privacy-related policy settings that you have configured.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Required service data for Office](required-service-data.md)
 - [Connected experiences in Office](connected-experiences.md)
 
-If you're the admin for your organization, you might also be interested in the following:
+If you're the admin for your organization, you might also be interested in the following articles:
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
