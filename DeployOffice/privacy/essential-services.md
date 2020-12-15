@@ -11357,7 +11357,7 @@ The following fields are collected:
 
 This event indicates termination of Microsoft AutoUpdate or Microsoft Update Assistant. This event is used to determine the health of Microsoft AutoUpdate and Microsoft Update Assistant.
 
-*[This event replaces the fba.launch and appdelegate.launch events.]*
+*[This event replaces the fba.terminate and appdelegate.terminate events.]*
 
 The following fields are collected:
 
