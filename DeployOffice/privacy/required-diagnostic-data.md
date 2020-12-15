@@ -776,6 +776,71 @@ The following fields are collected:
 
 - **UTCReplace_AppSessionGuid** - Constant boolean value. Always true.
 
+#### Office.OneNote.Android.App.OneNoteLaunchedNonActivated
+
+*[This event was previously named OneNote.App.OneNoteLaunchedNonActivated.]*
+
+Records information about activation state of the App.  The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
+
+The following fields are collected: 
+
+- **INSTALL_LOCATION** - Indicates if the app is pre-installed or is downloaded from Store
+
+#### Office.OneNote.Android.ResetStatus
+
+*[This event was previously named OneNote.ResetStatus.]*
+
+The signal used to record any issues encountered when a user tries to reset the App.  The telemetry is used to monitor, detect and fix any issues caused during reset. 
+
+The following fields are collected: 
+
+- **Accounts** - Indicates the types if accounts used for signing-into the App
+
+- **Generic String Type** - Returns if it is full reset of a notes_light_data reset
+
+- **LaunchPoint** - The point from where Reset is initiated. Possible values: Sign Out Button, Sign-out failure, Intune Triggered
+
+- **Pass** - Indicates if the Reset was successful
+
+#### Office.OneNote.Android.SignIn.SignInCompleted
+
+*[This event was previously named OneNote.SignIn.SignInCompleted.]*
+
+The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
+
+The following fields are collected: 
+
+- **CompletionState** - Final state of sign in - Succeeded or failed. And failure cases
+
+- **EntryPoint** - Indicates from where Sign-In was initiated
+
+- **Hresult** - Error code
+
+- **Provider Package ID** - In case of Auto sign in
+
+- **Result** - Succeeded, Failed, Unknown, Canceled
+
+- **ServerType** - Returns the type of the server offering the service 
+
+- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
+
+#### Office.OneNote.Android.SignIn.SignInStarted
+
+*[This event was previously named OneNote.SignIn.SignInStarted.]*
+
+The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
+
+The following fields are collected: 
+
+- **EntryPoint** - Indicates from where Sign-In was initiated
+
+- **Result** - Result of the sign-in flow
+
+- **ServerType** - Returns the type of the server offering the service 
+
+- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
+
+
 #### Office.OneNote.FirstRun.FirstRun
 
 The critical signal used to ensure new users can successfully launch and run OneNote for the first time.  The telemetry is collected to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
@@ -903,71 +968,6 @@ Captures Visio SKU whether it's standard or professional. Essential to categoriz
 The following fields are collected:
 
   - **Data\_VisioSKU**:**integer** - 0 for Standard SKU and 1 for Professional SKU
-
-#### Office.OneNote.Android.App.OneNoteLaunchedNonActivated
-
-*[This event was previously named OneNote.App.OneNoteLaunchedNonActivated.]*
-
-Records information about activation state of the App.  The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
-
-The following fields are collected: 
-
-- **INSTALL_LOCATION** - Indicates if the app is pre-installed or is downloaded from Store
-
-#### Office.OneNote.Android.ResetStatus
-
-*[This event was previously named OneNote.ResetStatus.]*
-
-The signal used to record any issues encountered when a user tries to reset the App.  The telemetry is used to monitor, detect and fix any issues caused during reset. 
-
-The following fields are collected: 
-
-- **Accounts** - Indicates the types if accounts used for signing-into the App
-
-- **Generic String Type** - Returns if it is full reset of a notes_light_data reset
-
-- **LaunchPoint** - The point from where Reset is initiated. Possible values: Sign Out Button, Sign-out failure, Intune Triggered
-
-- **Pass** - Indicates if the Reset was successful
-
-#### Office.OneNote.Android.SignIn.SignInCompleted
-
-*[This event was previously named OneNote.SignIn.SignInCompleted.]*
-
-The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
-
-The following fields are collected: 
-
-- **CompletionState** - Final state of sign in - Succeeded or failed. And failure cases
-
-- **EntryPoint** - Indicates from where Sign-In was initiated
-
-- **Hresult** - Error code
-
-- **Provider Package ID** - In case of Auto sign in
-
-- **Result** - Succeeded, Failed, Unknown, Canceled
-
-- **ServerType** - Returns the type of the server offering the service 
-
-- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
-
-#### Office.OneNote.Android.SignIn.SignInStarted
-
-*[This event was previously named OneNote.SignIn.SignInStarted.]*
-
-The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
-
-The following fields are collected: 
-
-- **EntryPoint** - Indicates from where Sign-In was initiated
-
-- **Result** - Result of the sign-in flow
-
-- **ServerType** - Returns the type of the server offering the service 
-
-- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
-
 
 ### *Office add-in configuration subtype*
 
@@ -2838,14 +2838,6 @@ The following fields are collected:
 
 - **UserDecision** - Indicates the choice made by user like sign-in or sign-up or sign in later.
 
-#### Office.AppCompat.AppCompat.AgentUpload
-
-Generated on client startup when end user has enabled Office Telemetry Dashboard.  It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
-
-The following fields are collected:
-
-- **UploadTime** - the timestamp of the last successful upload performed by the Telemetry Agent.
-
 
 #### Office.AppCompat.AppCompat.AgentScanAndUpload
 
@@ -2858,6 +2850,15 @@ The following fields are collected:
   - **Data.AgentScan** - Timestamp of when the Telemetry agent completed a scan successfully
 
   - **Data.AgentUpload** - Timestamp of when the Telemetry agent completes the upload successfully
+
+#### Office.AppCompat.AppCompat.AgentUpload
+
+Generated on client startup when end user has enabled Office Telemetry Dashboard.  It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
+
+The following fields are collected:
+
+- **UploadTime** - the timestamp of the last successful upload performed by the Telemetry Agent.
+
 
 #### Office.AppCompat.AppCompat.TelemetryDashboardResiliencyCrashLog
 
@@ -2984,6 +2985,119 @@ The following fields are collected:
 - **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
 
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office.Apple.ActivatePerpetual
+
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of the perpetual activation flow as well as investigating causes of failures by reviewing the FailedAt values.
+
+The following fields are collected:
+
+- **Data_FailedAt** - We collect a string representing where in the activate perpetual license flow we failed.
+
+#### Office.Apple.ActivateSubscription
+
+This event is collected for Office applications running under Apple platforms. We collect information related to the migration from the legacy licensing code stack to the vNext licensing code tack. This is used to monitor the health of the subscription activation flow as well as tracking if this is a migration to licensing vNext and if the primary identity was used.
+
+The following fields are collected:
+
+- **Data_ActivatingPrimaryIdentity** - A true/false value denoting if the primary identity was used. 
+
+- **Data_NULSubscriptionLicensed** - A true/false value denoting the state of subscription
+
+#### Office.Apple.CISAuthTicketWithIdentity
+
+This event is collected for Office applications running under Apple platforms. The event is used for capturing auth token generation failures during InAppPurchase on the Mac (the event logs the error code received).  This event is used for detecting and helping troubleshoot auth token generation failures
+
+The following fields are collected:
+
+- **Data_EmptyAuthToken** - We collect a string representing where in the activate perpetual license flow we failed.
+
+- **Data_TicketAuthError** - Error code which indicates the cause of failure
+
+- **Data_ValidIdentity** - If the client has a valid identity
+
+#### Office.Apple.InAppAssociationActivity
+
+This event is collected for Office applications running under Apple platforms. 
+We collect information related to product association after an in-app purchase. We log which subscription SKU we are associating.  This is used to monitor the health of the in-app purchase product associations.
+
+The following fields are collected:
+
+- **Data_ProductID** - The subscription SKU we are trying to associate the product to.
+
+#### Office.Apple.InAppPurchaseActivity
+
+This event is collected for Office applications running under Apple platforms. 
+
+We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Microsoft 365 Family, etc.).  This data is used for monitoring the health of the in-app purchase flows.
+
+The following fields are collected:
+
+- **Data_ Data_PurchaseResult** - The result of the purchase operation
+
+- **Data_ProductID** - The product being purchased
+
+- **Data_PurchaseRequestType** - The type of purchase request
+
+#### Office.Apple.InTune
+
+This event is collected for Office applications running under Apple platforms. We collect whether the current session is Intune-managed. This is used to pivot/filter on Intune managed sessions and allows us to investigate potential issues related to Office being run as an Intune-managed application.
+
+The following fields are collected:
+
+- **Data_EventID** - We collect a string representing a code that indicates whether the session is intune-managed.
+
+#### Office.Apple.Licensing.Mac.LicensingState
+
+This event is collected for Office applications running under Apple platforms. The event captures the current state of the license for a session in a machine (OLS license id, SKU being used, grace-period or not, RFM, etc.). The data collected is used for detecting errors and investigating causes of failures. 
+
+The following fields are collected:
+
+- **Data_DidRunPreview** - A string indicating if this session is run under preview
+
+- **Data_LicensingACID** - A string representing a licensing system internal identifier
+
+- **Data_LicensingType** - A string representing the type of license
+
+- **Data_OLSLicenseId** - A string representing a license identifier
+
+- **Data_State** - A string representing the current state of the license
+
+#### Office.ConnectDevice.Activity.Start
+
+Allows us to know if a connection to a device or application was successful.  Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
+
+The following fields are collected:
+
+- **Datasource_Type** - Serial device, or App Service information
+
+- **DataSource_Name** - Name of connected data source
+
+- **Activity_Name** = Name of the activity "ConnectDevice"
+
+- **Activity_CV** = ID to correlate the events across the connection session
+
+- **Activity_StartStopType** = Start
+
+- **Activity_DateTimeTicks** = Data Time for the activity
+ 
+#### Office.ConnectDevice.Activity.Stop
+
+Allows us to know if a connection to a device or application was successful. Used for feature health and monitoring This event is generated by Microsoft Data Streamer for Excel Add-in.
+
+The following fields are collected:
+
+- **Datasource_Type** - Serial device, or App Service information
+
+- **DataSource_Name** - Name of connected data source
+
+- **Activity_Name** - Name of the activity "ConnectDevice"
+
+- **Activity_CV** - ID to correlate the events across the connection session
+
+- **Activity_StartStopType** - Stop
+
+- **Activity_DateTimeTicks** - Data Time for the activity
 
 #### Office.Docs.AppDocs.OperationOpenFromMruByPath
 
@@ -3660,118 +3774,6 @@ The following fields are collected:
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
 
 
-#### Office.Apple.ActivatePerpetual
-
-This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of the perpetual activation flow as well as investigating causes of failures by reviewing the FailedAt values.
-
-The following fields are collected:
-
-- **Data_FailedAt** - We collect a string representing where in the activate perpetual license flow we failed.
-
-#### Office.Apple.ActivateSubscription
-
-This event is collected for Office applications running under Apple platforms. We collect information related to the migration from the legacy licensing code stack to the vNext licensing code tack. This is used to monitor the health of the subscription activation flow as well as tracking if this is a migration to licensing vNext and if the primary identity was used.
-
-The following fields are collected:
-
-- **Data_ActivatingPrimaryIdentity** - A true/false value denoting if the primary identity was used. 
-
-- **Data_NULSubscriptionLicensed** - A true/false value denoting the state of subscription
-
-#### Office.Apple.CISAuthTicketWithIdentity
-
-This event is collected for Office applications running under Apple platforms. The event is used for capturing auth token generation failures during InAppPurchase on the Mac (the event logs the error code received).  This event is used for detecting and helping troubleshoot auth token generation failures
-
-The following fields are collected:
-
-- **Data_EmptyAuthToken** - We collect a string representing where in the activate perpetual license flow we failed.
-
-- **Data_TicketAuthError** - Error code which indicates the cause of failure
-
-- **Data_ValidIdentity** - If the client has a valid identity
-
-#### Office.Apple.InAppAssociationActivity
-
-This event is collected for Office applications running under Apple platforms. 
-We collect information related to product association after an in-app purchase. We log which subscription SKU we are associating.  This is used to monitor the health of the in-app purchase product associations.
-
-The following fields are collected:
-
-- **Data_ProductID** - The subscription SKU we are trying to associate the product to.
-
-#### Office.Apple.InAppPurchaseActivity
-
-This event is collected for Office applications running under Apple platforms. 
-
-We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Microsoft 365 Family, etc.).  This data is used for monitoring the health of the in-app purchase flows.
-
-The following fields are collected:
-
-- **Data_ Data_PurchaseResult** - The result of the purchase operation
-
-- **Data_ProductID** - The product being purchased
-
-- **Data_PurchaseRequestType** - The type of purchase request
-
-#### Office.Apple.InTune
-
-This event is collected for Office applications running under Apple platforms. We collect whether the current session is Intune-managed. This is used to pivot/filter on Intune managed sessions and allows us to investigate potential issues related to Office being run as an Intune-managed application.
-
-The following fields are collected:
-
-- **Data_EventID** - We collect a string representing a code that indicates whether the session is intune-managed.
-
-#### Office.Apple.Licensing.Mac.LicensingState
-
-This event is collected for Office applications running under Apple platforms. The event captures the current state of the license for a session in a machine (OLS license id, SKU being used, grace-period or not, RFM, etc.). The data collected is used for detecting errors and investigating causes of failures. 
-
-The following fields are collected:
-
-- **Data_DidRunPreview** - A string indicating if this session is run under preview
-
-- **Data_LicensingACID** - A string representing a licensing system internal identifier
-
-- **Data_LicensingType** - A string representing the type of license
-
-- **Data_OLSLicenseId** - A string representing a license identifier
-
-- **Data_State** - A string representing the current state of the license
-
-#### Office.ConnectDevice.Activity.Start
-
-Allows us to know if a connection to a device or application was successful.  Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
-
-The following fields are collected:
-
-- **Datasource_Type** - Serial device, or App Service information
-
-- **DataSource_Name** - Name of connected data source
-
-- **Activity_Name** = Name of the activity "ConnectDevice"
-
-- **Activity_CV** = ID to correlate the events across the connection session
-
-- **Activity_StartStopType** = Start
-
-- **Activity_DateTimeTicks** = Data Time for the activity
- 
-#### Office.ConnectDevice.Activity.Stop
-
-Allows us to know if a connection to a device or application was successful. Used for feature health and monitoring This event is generated by Microsoft Data Streamer for Excel Add-in.
-
-The following fields are collected:
-
-- **Datasource_Type** - Serial device, or App Service information
-
-- **DataSource_Name** - Name of connected data source
-
-- **Activity_Name** - Name of the activity "ConnectDevice"
-
-- **Activity_CV** - ID to correlate the events across the connection session
-
-- **Activity_StartStopType** - Stop
-
-- **Activity_DateTimeTicks** - Data Time for the activity
 
 #### Office.Docs.Apple.DocsUXiOSSaveAsThroughFileMenu 
 
@@ -5689,7 +5691,7 @@ browse, File Activation, Protocol Activation, etc.).
 - **Doc_RenderDurationms** - Time to render a pdf file
 
 
-#### Office.OfficeMobile.PdfViewer.PdfFileOperations
+#### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
 
 The event is collected for the Office app for Android. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close and save operations performing as expected, and to improve .pdf file operation performance.
 
@@ -5729,7 +5731,7 @@ The following fields are collected:
 
 - **Data_Type** - Type of file operation (open, close or save) 
 
-#### Office.OfficeMobile.PdfViewer.PdfFileOperations
+#### Office.OfficeMobile.PdfViewer.PdfFileOperations (on iOS)
 
 The event is collected for the Office app for iOS. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close and save operations performing as expected, and to improve .pdf file operation performance. 
 
@@ -5778,6 +5780,28 @@ The following fields are collected:
 
 - **OLD_STATE** - Indicates the applications' state right before the navigation
 
+#### Office.OneNote.Android.Canvas.PageOpened
+
+*[This event was previously named OneNote.Canvas.PageOpened.]*
+
+The signal used to record when a Page is opened.  The telemetry is used to monitor, detect and fix any issues caused when a Page is opened in OneNote
+
+The following fields are collected: 
+
+- **JOT_ID** - object of the page opened
+
+- **TIME_TAKEN_IN_MS** - time taken to open page
+
+#### Office.OneNote.Android.Capture.NewNote.NewNoteTaken
+
+*[This event was previously named OneNote.Capture.NewNote.NewNoteTaken.]*
+
+This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
+
+The following fields are collected:
+
+- None
+
 #### Office.OneNote.Android.LensSDK.OfficeLensLaunched
 
 *[This event was previously named OneNote.LensSDK.OfficeLensLaunched.]*
@@ -5794,6 +5818,17 @@ The following fields are collected:
 
 - **LAUNCH_REASON** - Indicates the flow under which OfficeLens was launched. It could be over the lock screen or via Camera or Gallery options in StickyNotes or via OneNote Canvas etc.
 
+#### Office.OneNote.Android.MessageBar.MessageBarClicked
+
+*[This event was previously named OneNote.MessageBar.MessageBarClicked.]*
+
+The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
+
+The following fields are collected: 
+
+- **Message_Bar_Type** - Returns if the user is using old or new message bar
+
+- **Message_Type** - Returns the error message ID
 
 #### Office.OneNote.Android.StickyNotes.NoteCreated
  
@@ -8397,6 +8432,8 @@ The following fields are collected:
 
   - **Data\_ViewKind-** Type of Word view
 
+
+
 #### OneNote.App.Navigation.RatingReminderDialogShown
 
 The critical signal used to measure effectiveness of trigger logic for Rating reminder. This dialog is shown when the user has met all the conditions to see the rating reminder (no. of active days, has rated previously or not, etc.). This is used to ensure that the trigger logic for Rating reminder. If the users are seeing this dialog, it will provide us with ways to receive feedback from the customers on the right time and improve app health.
@@ -8404,40 +8441,6 @@ The critical signal used to measure effectiveness of trigger logic for Rating re
 The following fields are collected:
 
 - None
-
-#### Office.OneNote.Android.Canvas.PageOpened
-
-*[This event was previously named OneNote.Canvas.PageOpened.]*
-
-The signal used to record when a Page is opened.  The telemetry is used to monitor, detect and fix any issues caused when a Page is opened in OneNote
-
-The following fields are collected: 
-
-- **JOT_ID** - object of the page opened
-
-- **TIME_TAKEN_IN_MS** - time taken to open page
-
-#### Office.OneNote.Android.Capture.NewNote.NewNoteTaken
-
-*[This event was previously named OneNote.Capture.NewNote.NewNoteTaken.]*
-
-This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
-
-The following fields are collected:
-
-- None
-
-#### Office.OneNote.Android.MessageBar.MessageBarClicked
-
-*[This event was previously named OneNote.MessageBar.MessageBarClicked.]*
-
-The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect and fix any issues caused during interaction with Message Bar
-
-The following fields are collected: 
-
-- **Message_Bar_Type** - Returns if the user is using old or new message bar
-
-- **Message_Type** - Returns the error message ID
 
 #### ParseLicenseOp
 
@@ -9469,7 +9472,7 @@ The following fields are collected:
 
 - None
 
-#### Office.Android.EarlyTelemetry.AppLaunch, Office.OneNote.Android.AppLaunch
+#### Office.OneNote.Android.AppLaunch, Office.Android.EarlyTelemetry.AppLaunch
 
 *[This event was previously named OneNote.AppLaunch.]*
 
@@ -11340,7 +11343,7 @@ The following fields are collected:
 
 - **Event Name** - Event Name is the Event Category and Event Label.
 
-#### OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+#### OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry.SafeBootResetCrashCounterOnAppSuspend
 
 The critical signal is sent when we are resetting the crash counter on app suspend before safe boot dialog is shown. This marker is required to track and diagnose the health of the app. A safe boot dialog is shown when the app crashes multiple times continuously. It gives the user an option to reset the app. This marker will help  figure out if Safe boot dialog was not shown to a user despite hitting trigger criteria. 
 
@@ -12143,6 +12146,24 @@ The following fields are collected:
 
   - **Data.Last Error** - One of five string values (enumerators) to log which stage of policy application was being executed when the exception occurred
 
+#### Office.OneNote.Android.Sync.ProvisioningCompleted
+
+*[This event was previously named OneNote.Sync.ProvisioningCompleted.]*
+
+The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
+
+The following fields are collected: 
+
+- **AppSuspendedDuringEvent** - Returns Boolean to indicate if app was suspended during provisioning
+
+- **NetworkConnection** - The type of network connectivity of the device in use
+
+- **NetworkDataExchange** - Records the number of bytes exchanged during provisioning.
+
+- **ServerType** - Returns the type of the server offering the service
+
+- **TimeTakenInMilliSeconds** - Returns time taken to complete provisioning in millisecond
+
 #### Office.OneNote.Android.Sync.ProvisioningError
 
 The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health.
@@ -12161,6 +12182,18 @@ The following fields are collected:
 
 - **TimeTakenInMilliSeconds**: Returns time taken to complete provisioning in millisecond
 
+
+#### Office.OneNote.Android.Sync.ProvisioningStarted
+
+*[This event was previously named OneNote.Sync.ProvisioningStarted.]*
+
+The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health
+
+The following fields are collected: 
+
+- **NetworkConnection** - The type of network connectivity of the device in use
+
+- **ServerType** - Returns the type of the server offering the service
 
 #### Office.OneNote.System.BootDialogs.SafeBootDialogPending 
 
@@ -12539,36 +12572,6 @@ The following fields are collected:
 
 - **DIALOG_ACTION** - Which dialog button did the user click on – Positive button or negative button
 
-
-#### Office.OneNote.Android.Sync.ProvisioningCompleted
-
-*[This event was previously named OneNote.Sync.ProvisioningCompleted.]*
-
-The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
-
-The following fields are collected: 
-
-- **AppSuspendedDuringEvent** - Returns Boolean to indicate if app was suspended during provisioning
-
-- **NetworkConnection** - The type of network connectivity of the device in use
-
-- **NetworkDataExchange** - Records the number of bytes exchanged during provisioning.
-
-- **ServerType** - Returns the type of the server offering the service
-
-- **TimeTakenInMilliSeconds** - Returns time taken to complete provisioning in millisecond
-
-#### Office.OneNote.Android.Sync.ProvisioningStarted
-
-*[This event was previously named OneNote.Sync.ProvisioningStarted.]*
-
-The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health
-
-The following fields are collected: 
-
-- **NetworkConnection** - The type of network connectivity of the device in use
-
-- **ServerType** - Returns the type of the server offering the service
 
 #### perf.event
 
