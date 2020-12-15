@@ -3991,6 +3991,31 @@ The following fields are collected:
 
 - **Data_SaveOperationType** - A numerical value defined by Apple's NSSaveOperationType group of values.
 
+
+#### Office.DocsUI.PaywallControl.PreSignInFRE
+ 
+This is critical usage telemetry for the upsell in the First Run Experience for unsigned users. This event captures the first-run sign-in metrics. The data will be used to infer insights for the pre sign-in and understand if the user is continuing to the next stage in the user flow.
+ 
+The following fields are collected: 
+
+- **EventDate** - Timestamp of the event occurrence  
+
+- **FunnelPoint** - Enumerator to indicate where user is in this experiment funnel. The enumerator will tell if user sees the treatment and drops off or not.
+
+- **SessionID** - Globally Unique Identifier to connect events by session
+
+
+#### Office.DocsUI.PaywallControl.UserImageClicked 
+ 
+This event measures telemetry to see if users are trying to complete an action by clicking on a user avatar. This data will be used to measure how many users interact with the avatar icon to assess the need for a follow up experience upon tap.
+ 
+The following fields are collected: 
+
+- **EventDate** -Timestamp of the event occurrence  
+
+- **SessionID** - Globally Unique Identifier to connect events by session 
+
+
 #### Office.DocsUI.SharingUI.CloudUpsellShown 
 
 This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow.  This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
