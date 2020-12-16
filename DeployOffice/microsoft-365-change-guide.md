@@ -632,7 +632,7 @@ The Message center also supports “like” and “dislike” buttons for each m
 
 7.  For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
 
-## See also
+## Read this
 <details>
   <summary>Legal Disclaimer</summary>
 
