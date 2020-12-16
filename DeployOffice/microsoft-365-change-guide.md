@@ -66,7 +66,7 @@ The security updates that are happening in the background are not the focus of t
 
 Three categories of customers can be identified based on their observed change strategies: Maximize Change, Allow Most Restricting High Impact, and Restrict All Change. *Figure 2* below summarizes these categories.
 
-![](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image4.png)
+![](../images/maximum-change-strategy.png)
 
 *Figure 2*
 
