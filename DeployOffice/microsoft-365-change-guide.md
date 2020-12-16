@@ -29,7 +29,7 @@ Historically, the deployment of changes within customer organizations has been t
 
 When Microsoft adds capabilities and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score\[1\] (NPS) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). This comparison is demonstrated in *Figure 1*.
 
-![Chart, bar chart](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice-pr/blob/master/DeployOffice/images/net-promoter-score-release-channel-comparison.png)
+![Net Promoter Score Release Channel Comparison](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice-pr/blob/master/DeployOffice/images/net-promoter-score-release-channel-comparison.png)
 
 *Figure 1*
 
@@ -59,7 +59,7 @@ The security updates that are happening in the background are not the focus of t
 
 Three categories of customers can be identified based on their observed change strategies: Maximize Change, Allow Most Restricting High Impact, and Restrict All Change. *Figure 2* below summarizes these categories.
 
-![](/images/maximum-change-strategy.png)
+![Maximum change strategy diagram](/images/maximum-change-strategy.png)
 
 *Figure 2*
 
@@ -103,7 +103,7 @@ The task will be structured as:
 
 Taking advantage of Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, allows for review boards and change management teams to track change efficiently.
 
-![A screen shot of a message center post.](/images/new-feature-post.png)
+![Message center post sample](/images/new-feature-post.png)
 
 ## Change types and control methods
 
@@ -218,7 +218,7 @@ Rings 3 and 4 are public releases, with Ring 3 comprised of customers who have c
 
 To implement the [democratization of change](#change-evaluation-democratization) strategy within your organization, leverage Targeted Release (Ring 3) for both IT and power users.
 
-![](/images/release-management-validation.png)
+![Release management validation diagram](/images/release-management-validation.png)
 
 *Figure 3*
 
@@ -228,7 +228,7 @@ Your primary control for receiving service updates is the configuration of your 
 
 Configuration of release options can be done from the Microsoft 365 admin portal as described in [Set up the release option in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center&preserve-view=true). After navigating to the portal, select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. *Figure 4* shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
-![A screenshot of the release preferences fly out in the M365 Admin Center.](/images/release-preferences.png)
+![Release preferences options](/images/release-preferences.png)
 
 *Figure 4*
 
@@ -332,7 +332,7 @@ In conjunction with release channels, which are inherently controls themselves, 
 
 While the capabilities these tools represent are still available, we have listened market feedback and consolidated these tools to create one single integrated solution: **Microsoft Endpoint Configuration Manager**.
 
-![](/images/endpoint-configuration-manager-breakdown.png)
+![Microsoft Endpoint Configuration Manager chart](/images/endpoint-configuration-manager-breakdown.png)
 
 As of 2019, Microsoft refers to our suite of management solutions under this single brand. By attaching Intune to your Configuration Manager deployment (referred to as “Co-Management”), we empower you to attach the intelligence from the Microsoft 365 cloud to your workflows in powerful ways. You can completely automate compatibility testing for Windows upgrades, you can deploy client updates faster to make your organization secure and compliant quickly, and you can take immediate actions on your devices.
 
@@ -352,7 +352,7 @@ The [Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/ad
 
 The Microsoft 365 Apps admin center offers [inventory](https://docs.microsoft.com/deployoffice/admincenter/inventory) and [servicing profiles](https://docs.microsoft.com/deployoffice/admincenter/servicing-profile) to better manage device updates for Microsoft 365 Apps.
 
-> **Office Inventory**
+**Office Inventory**
 
   - Drill into detailed views of Office devices and add-in information.
 
@@ -360,7 +360,7 @@ The Microsoft 365 Apps admin center offers [inventory](https://docs.microsoft.co
 
   - Export the data.
 
-> **Security Currency**
+**Security Currency**
 
   - View a dashboard for security update compliance status cross-channel.
 
@@ -368,7 +368,7 @@ The Microsoft 365 Apps admin center offers [inventory](https://docs.microsoft.co
 
   - Identify failing devices and take mitigating action.
 
-> **Servicing Profiles**
+**Servicing Profiles**
 
   - Setup profiles for devices to automatically receive updates based on custom requirements.
 
@@ -380,22 +380,23 @@ The Microsoft 365 Apps admin center offers [inventory](https://docs.microsoft.co
 
   - Maintain device compliance with update deadlines and update date exclusions.
 
-*\* Note: The Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and above at the time of publishing. *
+> [!NOTE]
+> The Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and above at the time of publishing.
 
 #### Client Configuration Controls
 
-Once Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
+After Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
 
-While group policy has historically been used to enforce client settings and is still a viable method, we have developed a cloud-based synchronization nexus service that allows policies to roam with users: the [Office cloud policy service](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service) (OCPS). OCPS lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device is not domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
+Although group policy has historically been used to enforce client settings and is still a viable method, we have developed a cloud-based synchronization nexus service that allows policies to roam with users: the [Office cloud policy service](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service) (OCPS). OCPS lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device is not domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
 
 *Figure 5* shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 
-![](/images/configure-connected-experiences.png)
+![Screenshot of drop-down box to enable or disable the use of connected experiences in Office that analyze content](/images/configure-connected-experiences.png)
 Some configuration options control basic client behavior, such as scroll bar visibility in Excel or availability of Live Subtitles in PowerPoint, while other configurations may be important to your security, compliance, or risk departments. For example, OCPS allows you to enable or disable connected experiences in Microsoft 365 Apps, which provide users with web-based services from their desktop clients (e.g. Translator, Bing image search, or 3D Maps).
 
 Microsoft provides customers privacy controls so you can meet compliance and security obligations on a global scale, regardless of operational localities. Modifying these settings with a simple dropdown menu, and having those settings apply across the devices leveraging that profile is the power of OCPS.
 
-![A screenshot of a Office Cloud Policy Configuration webpage. ](/images/edit-policy-configuration.png)
+![Screenshot of the Edit policy configuration webpage](/images/edit-policy-configuration.png)
 
 *Figure 5*
 
@@ -429,7 +430,7 @@ Microsoft’s change mission is to enable rapid delivery, improve productivity, 
 
 The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. The pillars of the plan are pictured below:
 
-![](/images/change-management-plan-pillars.png)
+![Diagram of the four pillars of the Microsoft 365 Change Management Plan](/images/change-management-plan-pillars.png)
 
 The Microsoft Change Management Plan outlines three change phases with recommended customer actions associated with each, as illustrated in *Table 3* below:
 
@@ -507,7 +508,7 @@ To be classified as a **major update**, changes must meet one or more of the fol
 
 The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗), enabling easy identification and tracking of significant updates across various stages of release:
 
-![A screenshot of messages in the message center.](/images/message-center-preferences.png)
+![Screenshot of Message Center preferences](/images/message-center-preferences.png)
 
 Alluded to earlier and further described here, messages are identified in the right-hand column above by one of three categories:  
   
@@ -541,15 +542,17 @@ Microsoft publishes change information in a variety of locations to ensure broad
 
 The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal. Filtering allows you to easily find services or features of interest.
 
-![A screenshot of the Microsoft 365 roadmap.](/images/roadmap-filtering.png)
+![Screenshot of the Microsoft 365 roadmap with filters](/images/roadmap-filtering.png)
 
 [**Message center Weekly Digest**](https://techcommunity.microsoft.com/t5/change-alerts/office-365-message-center-weekly-digest/m-p/46692)
 
 The Message center weekly digest allows your admins to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers may choose to opt out of digest emails by changing settings in the Admin Portal. An example of the digest is included below.
 
-![A screenshot of a message center announcement.](/images/message-center-announcement.png)
+![Sample Message Center announcement](/images/message-center-announcement.png)
 
-![](/images/mobile-admin-app.png) [**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
+![Screenshot of the Microsoft 365 Admin mobile app](/images/mobile-admin-app.png) 
+
+[**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
 
 The Microsoft 365 admin mobile app has over 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple or Google Play store for iOS and Android, respectively. Common tasks that can be performed from the app include user password reset, adding users to a group, and reviewing change notifications and alerts. We recommend enabling mobile alerts, so you stay apprised of updates the moment they are released.
 
@@ -599,23 +602,23 @@ It only takes a few minutes to provide valuable feedback through Customer Pulse.
 [**Microsoft 365 Admin Portal**](https://portal.office.com/)  
 At the bottom-right of each page in the Admin Portal, customers can provide feedback by clicking the “Give feedback” button.
 
-![A screen shot of the feedback icon on the Microsoft 365 Admin Center webpage.
-](/images/give-feedback-button.png)
+![Screenshot of the Give Feedback button](/images/give-feedback-button.png)
 
 [**Center**](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
 The “Give feedback” button also exists in the Message center so you can provide feedback on incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback provided. If your feedback is regarding a specific change or message, be sure to include the Message center ID so the feedback can be properly correlated.
 
-![A screenshot of the Microsoft 365 Admin Center message center configuration page.
-](/images/message-center-planner-synching.png)
+![Screenshot of the Message center configuration page](/images/message-center-planner-synching.png)
 
 The Message center also supports “like” and “dislike” buttons for each message, allowing you to provide feedback without much time input. We aggregate this feedback and use it to understand general customer reception of our recent changes.
 
-![](/images/message-center-like-and-dislike.png)
+![Screenshot of the Like and Dislike icons](/images/message-center-like-and-dislike.png)
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-![](/images/feedback-forums.png)This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
+![Screenshot of Feedback forums list](/images/feedback-forums.png)
+
+This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
 
 1.  NPS is an industry calculation measuring end user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
 
@@ -635,5 +638,6 @@ The Message center also supports “like” and “dislike” buttons for each m
 <details>
   <summary>Legal Disclaimer</summary>
 
-Microsoft Corporation Non-Disclosure Agreement for Compliance Materials   READ THIS\! THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION ("MICROSOFT") AND THE RECIPIENT OF THESE MATERIALS, WHETHER AN INDIVIDUAL OR A CORPORATION OR OTHER ENTITY ("YOU"). BY CLICKING "I ACCEPT", DOWNLOADING OR USING THE MATERIALS, YOU AGREE TO THESE TERMS. IF THIS AGREEMENT IS ATTACHED TO MATERIALS, BY ACCESSING OR USING THE ATTACHED MATERIALS, YOU AGREE TO THESE TERMS. 1. For good and valuable consideration, the receipt and sufficiency of which are  acknowledged, You and Microsoft agree as follows: (a) If You are an authorized representative of a corporation or other entity ("Company"), and such Company  has executed a Microsoft Corporation Non-Disclosure Agreement that is not limited to a specific subject matter or event ("Microsoft NDA"), You represent that  You have authority to act on behalf of Company and agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and  conditions of the Microsoft NDA and that Company will treat the Confidential Information accordingly; (b) If You are an individual, and have executed a  Microsoft NDA, You agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and conditions of the Microsoft NDA and  that You will treat the Confidential Information accordingly; or (c) If a Microsoft NDA has not been executed, You (if You are an individual), or Company (if You  are an authorized representative of Company), as applicable, agrees: (a) to refrain from disclosing or distributing the Confidential Information to any third party  for five (5) years from the date of disclosure of the Confidential Information by Microsoft to Company/You; (b) to refrain from reproducing or summarizing the  Confidential Information; and (c) to take reasonable security precautions, at least as great as the precautions it takes to protect its own confidential information,  but no less than reasonable care, to keep confidential the Confidential Information. You/Company, however, may disclose Confidential Information in  accordance with a judicial or other governmental order, provided You/Company either (i) gives Microsoft reasonable notice prior to such disclosure and to allow  Microsoft a reasonable opportunity to seek a protective order or equivalent, or (ii) obtains written assurance from the applicable judicial or governmental entity  that it will afford the Confidential Information the highest level of protection afforded under applicable law or regulation. Confidential Information shall not  include any information, however designated, that: (i) is or subsequently becomes publicly available without Your/Company’s breach of any obligation owed to  Microsoft; (ii) became known to You/Company prior to Microsoft’s disclosure of such information to You/Company pursuant to the terms of this Agreement; (iii)  became known to You/Company from a source other than Microsoft other than by the breach of an obligation of confidentiality owed to Microsoft; or (iv) is  independently developed by You/Company. For purposes of this paragraph, "Confidential Information" means nonpublic information that Microsoft designates as being confidential or which, under the circumstances surrounding disclosure ought to be treated as confidential by Recipient. "Confidential Information" includes, without limitation, information in tangible or intangible form relating to and/or including released or unreleased Microsoft software or hardware products, the marketing or promotion of any Microsoft product, Microsoft's business policies or practices, and information received from others that Microsoft is obligated to treat as confidential. 2. You may review these Materials only (a) as a reference to validate the platform and assist you in evaluating the referenced product(s) for purchase and use. All other rights are retained by Microsoft; this agreement does not give You rights under any Microsoft patents. You may not (i) duplicate any part of these Materials, (ii) remove this agreement or any notices from these Materials, or (iii) give any part of these Materials, or assign or otherwise provide Your rights under this agreement, to anyone else. 3. If You are an entity and (a) merge into another entity or (b) a controlling ownership interest in You changes, your right to use these Materials automatically terminates and You must destroy them. 4.  Monetary damages may not sufficiently compensate a breach of these terms. Microsoft may seek court orders to stop the disclosure of Confidential Information in breach of these terms without the obligation of posting a bond.  5. This agreement is governed by the laws of the State of Washington. Any dispute involving it must be brought in the federal or state superior courts located in King County, Washington, and You waive any defenses allowing the dispute to be litigated elsewhere. If there is litigation, the losing party must pay the other party’s reasonable attorneys’ fees, costs and other expenses. If any part of this agreement is unenforceable, it will be considered modified to the extent necessary to make it enforceable, and the remainder shall continue in effect. This agreement is the entire agreement between You and Microsoft concerning these Materials; it may be changed only by a written document signed by both You and Microsoft. 
+Microsoft Corporation Non-Disclosure Agreement for Compliance Materials
+THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION ("MICROSOFT") AND THE RECIPIENT OF THESE MATERIALS, WHETHER AN INDIVIDUAL OR A CORPORATION OR OTHER ENTITY ("YOU"). BY CLICKING "I ACCEPT", DOWNLOADING OR USING THE MATERIALS, YOU AGREE TO THESE TERMS. IF THIS AGREEMENT IS ATTACHED TO MATERIALS, BY ACCESSING OR USING THE ATTACHED MATERIALS, YOU AGREE TO THESE TERMS. 1. For good and valuable consideration, the receipt and sufficiency of which are  acknowledged, You and Microsoft agree as follows: (a) If You are an authorized representative of a corporation or other entity ("Company"), and such Company  has executed a Microsoft Corporation Non-Disclosure Agreement that is not limited to a specific subject matter or event ("Microsoft NDA"), You represent that  You have authority to act on behalf of Company and agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and  conditions of the Microsoft NDA and that Company will treat the Confidential Information accordingly; (b) If You are an individual, and have executed a  Microsoft NDA, You agree that the Confidential Information, as defined in the Microsoft NDA, is subject to the terms and conditions of the Microsoft NDA and  that You will treat the Confidential Information accordingly; or (c) If a Microsoft NDA has not been executed, You (if You are an individual), or Company (if You  are an authorized representative of Company), as applicable, agrees: (a) to refrain from disclosing or distributing the Confidential Information to any third party  for five (5) years from the date of disclosure of the Confidential Information by Microsoft to Company/You; (b) to refrain from reproducing or summarizing the  Confidential Information; and (c) to take reasonable security precautions, at least as great as the precautions it takes to protect its own confidential information,  but no less than reasonable care, to keep confidential the Confidential Information. You/Company, however, may disclose Confidential Information in  accordance with a judicial or other governmental order, provided You/Company either (i) gives Microsoft reasonable notice prior to such disclosure and to allow  Microsoft a reasonable opportunity to seek a protective order or equivalent, or (ii) obtains written assurance from the applicable judicial or governmental entity  that it will afford the Confidential Information the highest level of protection afforded under applicable law or regulation. Confidential Information shall not  include any information, however designated, that: (i) is or subsequently becomes publicly available without Your/Company’s breach of any obligation owed to  Microsoft; (ii) became known to You/Company prior to Microsoft’s disclosure of such information to You/Company pursuant to the terms of this Agreement; (iii)  became known to You/Company from a source other than Microsoft other than by the breach of an obligation of confidentiality owed to Microsoft; or (iv) is  independently developed by You/Company. For purposes of this paragraph, "Confidential Information" means nonpublic information that Microsoft designates as being confidential or which, under the circumstances surrounding disclosure ought to be treated as confidential by Recipient. "Confidential Information" includes, without limitation, information in tangible or intangible form relating to and/or including released or unreleased Microsoft software or hardware products, the marketing or promotion of any Microsoft product, Microsoft's business policies or practices, and information received from others that Microsoft is obligated to treat as confidential. 2. You may review these Materials only (a) as a reference to validate the platform and assist you in evaluating the referenced product(s) for purchase and use. All other rights are retained by Microsoft; this agreement does not give You rights under any Microsoft patents. You may not (i) duplicate any part of these Materials, (ii) remove this agreement or any notices from these Materials, or (iii) give any part of these Materials, or assign or otherwise provide Your rights under this agreement, to anyone else. 3. If You are an entity and (a) merge into another entity or (b) a controlling ownership interest in You changes, your right to use these Materials automatically terminates and You must destroy them. 4.  Monetary damages may not sufficiently compensate a breach of these terms. Microsoft may seek court orders to stop the disclosure of Confidential Information in breach of these terms without the obligation of posting a bond.  5. This agreement is governed by the laws of the State of Washington. Any dispute involving it must be brought in the federal or state superior courts located in King County, Washington, and You waive any defenses allowing the dispute to be litigated elsewhere. If there is litigation, the losing party must pay the other party’s reasonable attorneys’ fees, costs and other expenses. If any part of this agreement is unenforceable, it will be considered modified to the extent necessary to make it enforceable, and the remainder shall continue in effect. This agreement is the entire agreement between You and Microsoft concerning these Materials; it may be changed only by a written document signed by both You and Microsoft. 
 </details>
