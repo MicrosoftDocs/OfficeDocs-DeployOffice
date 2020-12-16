@@ -36,7 +36,7 @@ Historically, the deployment of changes within customer organizations has been t
 When Microsoft adds capabilities and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score\[1\] (NPS) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). This comparison is demonstrated in *Figure 1*.
 
 ![Chart, bar chart
-Description automatically generated](c:\\Users\\v-tibur\\OfficeDocs-DeployOffice-pr\\DeployOffice/media/image3.png)
+Description automatically generated](../images/net-promoter-score-release-channel-comparison.png)
 
 *Figure 1*
 
