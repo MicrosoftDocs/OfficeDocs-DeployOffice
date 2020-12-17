@@ -660,6 +660,6 @@ READ THIS! THIS IS A LEGAL AGREEMENT BETWEEN MICROSOFT CORPORATION ("MICROSOFT"
 3. If You are an entity and <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) merge into another entity or <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) a controlling ownership interest in You changes, your right to use these Materials automatically terminates and You must destroy them. <br>
-4.  Monetary damages may not sufficiently compensate a breach of these terms. Microsoft may seek court orders to stop the disclosure of Confidential Information in breach of these terms without the obligation of posting a bond. <br>
+4. Monetary damages may not sufficiently compensate a breach of these terms. Microsoft may seek court orders to stop the disclosure of Confidential Information in breach of these terms without the obligation of posting a bond. <br>
 5. This agreement is governed by the laws of the State of Washington. Any dispute involving it must be brought in the federal or state superior courts located in King County, Washington, and You waive any defenses allowing the dispute to be litigated elsewhere. If there is litigation, the losing party must pay the other party’s reasonable attorneys’ fees, costs and other expenses. If any part of this agreement is unenforceable, it will be considered modified to the extent necessary to make it enforceable, and the remainder shall continue in effect. This agreement is the entire agreement between You and Microsoft concerning these Materials; it may be changed only by a written document signed by both You and Microsoft. 
 </details>
