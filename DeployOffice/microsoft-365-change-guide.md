@@ -608,15 +608,15 @@ At the bottom-right of each page in the Admin Portal, customers can provide feed
 
 The “Give feedback” button also exists in the Message center so you can provide feedback on incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback provided. If your feedback is regarding a specific change or message, be sure to include the Message center ID so the feedback can be properly correlated.
 
-![Screenshot of the Message center configuration page](/images/message-center-planner-synching.png)
+![Screenshot of the Message center configuration page](images/message-center-planner-synching.png)
 
 The Message center also supports “like” and “dislike” buttons for each message, allowing you to provide feedback without much time input. We aggregate this feedback and use it to understand general customer reception of our recent changes.
 
-![Screenshot of the Like and Dislike icons](/images/message-center-like-and-dislike.png)
+![Screenshot of the Like and Dislike icons](images/message-center-like-and-dislike.png)
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-![Screenshot of Feedback forums list](/images/feedback-forums.png)
+![Screenshot of Feedback forums list](images/feedback-forums.png)
 
 This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
 
