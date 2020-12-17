@@ -59,7 +59,7 @@ The security updates that are happening in the background are not the focus of t
 
 Three categories of customers can be identified based on their observed change strategies: Maximize Change, Allow Most Restricting High Impact, and Restrict All Change. *Figure 2* below summarizes these categories.
 
-![Maximum change strategy diagram](/images/maximum-change-strategy.png)
+![Maximum change strategy diagram](images/maximum-change-strategy.png)
 
 *Figure 2*
 
@@ -103,7 +103,7 @@ The task will be structured as:
 
 Taking advantage of Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, allows for review boards and change management teams to track change efficiently.
 
-![Message center post sample](/images/new-feature-post.png)
+![Message center post sample](images/new-feature-post.png)
 
 ## Change types and control methods
 
@@ -218,7 +218,7 @@ Rings 3 and 4 are public releases, with Ring 3 comprised of customers who have c
 
 To implement the [democratization of change](#change-evaluation-democratization) strategy within your organization, leverage Targeted Release (Ring 3) for both IT and power users.
 
-![Release management validation diagram](/images/release-management-validation.png)
+![Release management validation diagram](images/release-management-validation.png)
 
 *Figure 3*
 
@@ -228,7 +228,7 @@ Your primary control for receiving service updates is the configuration of your 
 
 Configuration of release options can be done from the Microsoft 365 admin portal as described in [Set up the release option in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center&preserve-view=true). After navigating to the portal, select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. *Figure 4* shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
-![Release preferences options](/images/release-preferences.png)
+![Release preferences options](images/release-preferences.png)
 
 *Figure 4*
 
@@ -332,7 +332,7 @@ In conjunction with release channels, which are inherently controls themselves, 
 
 While the capabilities these tools represent are still available, we have listened market feedback and consolidated these tools to create one single integrated solution: **Microsoft Endpoint Configuration Manager**.
 
-![Microsoft Endpoint Configuration Manager chart](/images/endpoint-configuration-manager-breakdown.png)
+![Microsoft Endpoint Configuration Manager chart](images/endpoint-configuration-manager-breakdown.png)
 
 As of 2019, Microsoft refers to our suite of management solutions under this single brand. By attaching Intune to your Configuration Manager deployment (referred to as “Co-Management”), we empower you to attach the intelligence from the Microsoft 365 cloud to your workflows in powerful ways. You can completely automate compatibility testing for Windows upgrades, you can deploy client updates faster to make your organization secure and compliant quickly, and you can take immediate actions on your devices.
 
@@ -391,12 +391,12 @@ Although group policy has historically been used to enforce client settings and 
 
 *Figure 5* shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 
-![Screenshot of drop-down box to enable or disable the use of connected experiences in Office that analyze content](/images/configure-connected-experiences.png)
+![Screenshot of drop-down box to enable or disable the use of connected experiences in Office that analyze content](images/configure-connected-experiences.png)
 Some configuration options control basic client behavior, such as scroll bar visibility in Excel or availability of Live Subtitles in PowerPoint, while other configurations may be important to your security, compliance, or risk departments. For example, OCPS allows you to enable or disable connected experiences in Microsoft 365 Apps, which provide users with web-based services from their desktop clients (e.g. Translator, Bing image search, or 3D Maps).
 
 Microsoft provides customers privacy controls so you can meet compliance and security obligations on a global scale, regardless of operational localities. Modifying these settings with a simple dropdown menu, and having those settings apply across the devices leveraging that profile is the power of OCPS.
 
-![Screenshot of the Edit policy configuration webpage](/images/edit-policy-configuration.png)
+![Screenshot of the Edit policy configuration webpage](images/edit-policy-configuration.png)
 
 *Figure 5*
 
@@ -430,7 +430,7 @@ Microsoft’s change mission is to enable rapid delivery, improve productivity, 
 
 The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. The pillars of the plan are pictured below:
 
-![Diagram of the four pillars of the Microsoft 365 Change Management Plan](/images/change-management-plan-pillars.png)
+![Diagram of the four pillars of the Microsoft 365 Change Management Plan](images/change-management-plan-pillars.png)
 
 The Microsoft Change Management Plan outlines three change phases with recommended customer actions associated with each, as illustrated in *Table 3* below:
 
@@ -508,7 +508,7 @@ To be classified as a **major update**, changes must meet one or more of the fol
 
 The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗), enabling easy identification and tracking of significant updates across various stages of release:
 
-![Screenshot of Message Center preferences](/images/message-center-preferences.png)
+![Screenshot of Message Center preferences](images/message-center-preferences.png)
 
 Alluded to earlier and further described here, messages are identified in the right-hand column above by one of three categories:  
   
@@ -542,15 +542,15 @@ Microsoft publishes change information in a variety of locations to ensure broad
 
 The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal. Filtering allows you to easily find services or features of interest.
 
-![Screenshot of the Microsoft 365 roadmap with filters](/images/roadmap-filtering.png)
+![Screenshot of the Microsoft 365 roadmap with filters](images/roadmap-filtering.png)
 
 [**Message center Weekly Digest**](https://techcommunity.microsoft.com/t5/change-alerts/office-365-message-center-weekly-digest/m-p/46692)
 
 The Message center weekly digest allows your admins to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers may choose to opt out of digest emails by changing settings in the Admin Portal. An example of the digest is included below.
 
-![Sample Message Center announcement](/images/message-center-announcement.png)
+![Sample Message Center announcement](images/message-center-announcement.png)
 
-![Screenshot of the Microsoft 365 Admin mobile app](/images/mobile-admin-app.png) 
+![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app.png) 
 
 [**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
 
@@ -602,7 +602,7 @@ It only takes a few minutes to provide valuable feedback through Customer Pulse.
 [**Microsoft 365 Admin Portal**](https://portal.office.com/)  
 At the bottom-right of each page in the Admin Portal, customers can provide feedback by clicking the “Give feedback” button.
 
-![Screenshot of the Give Feedback button](/images/give-feedback-button.png)
+![Screenshot of the Give Feedback button](images/give-feedback-button.png)
 
 [**Center**](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
