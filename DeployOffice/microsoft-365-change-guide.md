@@ -318,7 +318,7 @@ Certain considerations exist when switching channels, such as loss of features w
 
 In conjunction with release channels, which are inherently controls themselves, Microsoft provides you a selection of tools and configurations for further deploying, controlling, and managing your Microsoft 365 clients. The tools for managing your devices and the Microsoft 365 clients installed on them have historically been decentralized. In addition to a multitude of third-party options available in the market, the Microsoft offered solutions included the following tools:
 
-  - Microsoft Endpoint [Configuration Manager](https://docs.microsoft.com/configmgr)
+  - [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr)
 
   - [Intune](https://docs.microsoft.com/intune)
 
@@ -549,6 +549,7 @@ The Microsoft 365 Roadmap is a public website that relays the status of products
 The Message center weekly digest allows your admins to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers may choose to opt out of digest emails by changing settings in the Admin Portal. An example of the digest is included below.
 
 ![Sample Message Center announcement](images/message-center-announcement.png)
+
 
 ![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app.png) 
 
