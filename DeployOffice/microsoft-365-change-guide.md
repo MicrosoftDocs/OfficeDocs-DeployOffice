@@ -548,7 +548,7 @@ The Microsoft 365 Roadmap is a public website that relays the status of products
 
 The Message center weekly digest allows your admins to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers may choose to opt out of digest emails by changing settings in the Admin Portal. An example of the digest is included below.
 
-:::image type="content" source="images/message-center-announcement-snip.png" alt-text="Sample Message center announcement":::
+:::image type="content" source="images/message-center-announcement.png" alt-text="Sample Message center announcement":::
 
 [**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
 
@@ -616,7 +616,7 @@ The Message center also supports “like” and “dislike” buttons for each m
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-![Screenshot of Feedback forums list](images/feedback-forums-snip.png)
+![Screenshot of Feedback forums list](images/feedback-forums.png)
 
 This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
 
