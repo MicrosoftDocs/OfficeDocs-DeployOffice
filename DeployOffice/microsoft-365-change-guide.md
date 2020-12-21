@@ -550,6 +550,8 @@ The Message center weekly digest allows your admins to review Message center com
 
 :::image type="content" source="images/message-center-announcement-visio-resized.png" alt-text="Sample Message center announcement":::
 
+![Sample Message center announcement](images/message-center-announcement-resized.png)
+
 [**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
 
 The Microsoft 365 admin mobile app has over 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple or Google Play store for iOS and Android, respectively. Common tasks that can be performed from the app include user password reset, adding users to a group, and reviewing change notifications and alerts. We recommend enabling mobile alerts, so you stay apprised of updates the moment they are released.
