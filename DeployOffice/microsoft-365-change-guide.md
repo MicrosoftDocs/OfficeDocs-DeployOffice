@@ -554,9 +554,7 @@ The Message center weekly digest allows your admins to review Message center com
 
 The Microsoft 365 admin mobile app has over 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple or Google Play store for iOS and Android, respectively. Common tasks that can be performed from the app include user password reset, adding users to a group, and reviewing change notifications and alerts. We recommend enabling mobile alerts, so you stay apprised of updates the moment they are released.
 
-![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app-snip.png) 
-
-[Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
+![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app-snip.png) [Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
 
 **<span class="underline">Other Change Information Resources</span>**
 
@@ -616,9 +614,7 @@ The Message center also supports “like” and “dislike” buttons for each m
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-![Screenshot of Feedback forums list](images/feedback-forums.png)
-
-This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
+![Screenshot of Feedback forums list](images/feedback-forums.png) This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
 
 1.  NPS is an industry calculation measuring end user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
 
