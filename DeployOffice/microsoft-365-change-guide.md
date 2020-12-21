@@ -548,13 +548,13 @@ The Microsoft 365 Roadmap is a public website that relays the status of products
 
 The Message center weekly digest allows your admins to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers may choose to opt out of digest emails by changing settings in the Admin Portal. An example of the digest is included below.
 
-:::image type="content" source="images/message-center-announcement-visio-resized.png" alt-text="Sample Message center announcement":::
+:::image type="content" source="images/message-center-announcement-snip.png" alt-text="Sample Message center announcement":::
 
 [**Mobile Admin App**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app?view=o365-worldwide&preserve-view=true)
 
 The Microsoft 365 admin mobile app has over 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple or Google Play store for iOS and Android, respectively. Common tasks that can be performed from the app include user password reset, adding users to a group, and reviewing change notifications and alerts. We recommend enabling mobile alerts, so you stay apprised of updates the moment they are released.
 
-![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app.png) 
+![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app-snip.png) 
 
 [Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
 
@@ -616,7 +616,7 @@ The Message center also supports “like” and “dislike” buttons for each m
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-![Screenshot of Feedback forums list](images/feedback-forums.png)
+![Screenshot of Feedback forums list](images/feedback-forums-snip.png)
 
 This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions.
 
