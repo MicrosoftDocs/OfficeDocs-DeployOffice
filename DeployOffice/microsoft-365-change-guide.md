@@ -15,6 +15,8 @@ description: "Microsoft 365 change guide"
 
 # Microsoft 365 change guide
 
+> The information in this article applies to the Microsoft 365 multitenant environment.
+
 ## Continuous change in the cloud
 
 The Microsoft 365 cloud environment is a hyperscale suite of service offerings that's constantly changing. In the technology industry, being consistently cutting-edge benefits productivity, security, and user happiness. Change in the Microsoft cloud has purpose: to deliver customer value, secure the environment, and delight users. The pace of change in Microsoft 365 is rapid and continuous - both adjectives describe the customer value pipeline that this model helps. Microsoft helps users increase efficiency in their organizations by offering innovative features and secure services.
