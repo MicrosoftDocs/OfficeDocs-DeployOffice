@@ -302,7 +302,7 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
 
-  - [Autopilot](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
+  - [Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot)
 
   - [Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/overview#:~:text=The%20Microsoft%20365%20Apps%20admin%20center%20provides%20modern,features%20and%20services%20available%20in%20the%20admin%20center.) ([config.office.com](https://config.office.com/)), which integrates with the [Office cloud policy service](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 
