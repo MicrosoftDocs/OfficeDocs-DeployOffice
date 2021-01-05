@@ -1246,21 +1246,42 @@ The following fields are collected:
 - **Status** - status of add-in installation
 
 
-#### Office.Programmability.Add-ins.InternalSetConnectEnterprise
+#### Office.Programmability.Addins.InternalSetConnectEnterprise
 
-Event generated when a COM Add-in is loaded on an enterprise device. 
+Event generated when a COM Add-in is loaded on an enterprise device. Used to determine adoption, performance, and reliability issues with Office add-ins. 
 
 The following fields are collected:
 
-  - **Activity Result** - Success state of the connection
+  - **Activity Result** - Success state of the connection *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **Add-inconnectFlag** – current load behavior
+  - **AddinConnectFlag** – represents load behavior 
 
-  - **Add-inId** – the add-in Class Id
+  - **AddinDescriptionV2** - the add-in description
 
-  - **Add-inTimeDateStamp** – the add-in timestamp from the DLL metadata
+  - **AddinFileNameV2** - the add-in file name, excluding file path
+
+  - **AddinFriendlyNameV2** - the add-in friendly name
+
+  - **Add-inId** – the add-in Class Id *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **AddinIdV2** - the add-in Class ID
+
+  - **AddinProgIdV2** - the add-in prog ID
+
+ - **AddinProviderV2** - the add-in provider
+
+  - **Add-inTimeDateStamp** – the add-in timestamp from the DLL metadata *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+  - **AddinTimeDateStampV2** - the add-in timestamp from the DLL metadata
+
+  - **AddinVersionV2** - the add-in version
 
   - **IsBootInProgress** – whether the Office application is in the process of booting
+ 
+  - **LoadDuration** - duration of the add-in load
+  
+  - **LoadResult** - success state of the load
+
 
 #### Office.Visio.Visio.AddonLoad
 
@@ -2692,6 +2713,21 @@ The following fields are collected:
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
 
+#### Office.Android.DocsUI.PaywallControl.PreSignInFRE
+
+*[This event was previously named Office.DocsUI.PaywallControl.PreSignInFRE.]*
+ 
+This is critical usage telemetry for the upsell in the First Run Experience for unsigned users. This event captures the first-run sign-in metrics. The data will be used to infer insights for the pre sign-in and understand if the user is continuing to the next stage in the user flow.
+ 
+The following fields are collected: 
+
+- **EventDate** - Timestamp of the event occurrence  
+
+- **FunnelPoint** - Enumerator to indicate where user is in this experiment funnel. The enumerator will tell if user sees the treatment and drops off or not.
+
+- **SessionID** - Globally Unique Identifier to connect events by session
+
+
 #### Office.Android.DocsUI.PaywallControl.SkuChooserToggled
 
 Usage telemetry to view how many times user switches between different SKUs before attempting a purchase. Used to understand usage of the SKU chooser and optimize the in app purchase experience in future versions.
@@ -2701,6 +2737,20 @@ The following fields are collected:
 - **EventDate** – Timestamp of the event occurrence 
 
 - **SessionID** – GUID to connect events by session
+
+
+#### Office.Android.DocsUI.PaywallControl.UserImageClicked 
+
+*[This event was previously named Office.DocsUI.PaywallControl.UserImageClicked.]*
+ 
+This event measures telemetry to see if users are trying to complete an action by clicking on a user avatar. This data will be used to measure how many users interact with the avatar icon to assess the need for a follow-up experience upon tap.
+ 
+The following fields are collected: 
+
+- **EventDate** -Timestamp of the event occurrence  
+
+- **SessionID** - Globally Unique Identifier to connect events by session 
+
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesAvailability
 
@@ -4000,30 +4050,6 @@ The following fields are collected:
 - **Data_SaveLocation** - An abstract categorization of the location of a file like "SharePoint", "OneDrive", "Local", "WOPI", etc., and explicitly not the actual location of the file.
 
 - **Data_SaveOperationType** - A numerical value defined by Apple's NSSaveOperationType group of values.
-
-
-#### Office.DocsUI.PaywallControl.PreSignInFRE
- 
-This is critical usage telemetry for the upsell in the First Run Experience for unsigned users. This event captures the first-run sign-in metrics. The data will be used to infer insights for the pre sign-in and understand if the user is continuing to the next stage in the user flow.
- 
-The following fields are collected: 
-
-- **EventDate** - Timestamp of the event occurrence  
-
-- **FunnelPoint** - Enumerator to indicate where user is in this experiment funnel. The enumerator will tell if user sees the treatment and drops off or not.
-
-- **SessionID** - Globally Unique Identifier to connect events by session
-
-
-#### Office.DocsUI.PaywallControl.UserImageClicked 
- 
-This event measures telemetry to see if users are trying to complete an action by clicking on a user avatar. This data will be used to measure how many users interact with the avatar icon to assess the need for a follow-up experience upon tap.
- 
-The following fields are collected: 
-
-- **EventDate** -Timestamp of the event occurrence  
-
-- **SessionID** - Globally Unique Identifier to connect events by session 
 
 
 #### Office.DocsUI.SharingUI.CloudUpsellShown 
@@ -12587,6 +12613,8 @@ The following fields are collected:
 
 - **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, i.e. when did this action start and end, etc. 
 
+-	**has_work_profile** - indicates whether the app is running under Android Work Profile or similar configuration, in order to correlate performance analysis to these environments.
+
 - **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
 
 - **runtime_performance_monitoring_data** - provides the performance data (loading time, record count) when loading data in different parts of the app.
@@ -12595,7 +12623,7 @@ The following fields are collected:
   - **hx_object_type** - Provides the detail programming object type of the measuring.
   - **is_main_thread** - Tells us whether this event only measures main thread execution time.
   - **record_count** - The number of records the underlying storage layer returns.
-  - **scope** - Provides the name of UI page/components this event belongs to.
+  - **scope_name** - Provides the name of UI page/components this event belongs to.
   - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
