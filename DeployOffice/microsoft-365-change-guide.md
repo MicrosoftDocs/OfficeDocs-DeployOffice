@@ -248,7 +248,7 @@ Channel</strong></td>
 <td>For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[5]</td>
 </tr>
 <tr class="odd">
-<td>rnRelease frequency</td>
+<td>Release frequency</td>
 <td>At least once a month (likely more often), but not on a set schedule</td>
 <td>Once a month, on the second Tuesday of the month</td>
 <td>Once a month, on the second Tuesday of the month</td>
@@ -524,7 +524,7 @@ The Microsoft 365 Roadmap is a public website that relays the status of products
 
 Figure 11
 
-[**Message center weekly digest**](https://techcommunity.microsoft.com/t5/change-alerts/office-365-message-center-weekly-digest/m-p/46692)
+**Message center weekly digest**
 
 Your admins can use the Message center weekly digest to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers can opt out of digest emails by changing settings in the admin portal. Figure 12 shows an example of the digest.
 
