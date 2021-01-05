@@ -16,7 +16,7 @@ hideEdit: true
 > [!IMPORTANT]
 > The information in this article applies only to organizations that received a Message center post entitled "Microsoft 365 Apps channel selection will be set to Current Channel for all installations of Office" in the Microsoft 365 admin center.
 
-Your update channel selection on the **Office installation options** page in the Microsoft 365 admin center is currently defaulted to Semi-Annual Enterprise Channel. Starting as soon as early December 2020, this selection will change to Current Channel, which is our recommended update channel.
+Your update channel selection on the **Office installation options** page in the Microsoft 365 admin center is currently defaulted to Semi-Annual Enterprise Channel. In the next several weeks, this selection will change to Current Channel, which is our recommended update channel.
 
 > [!TIP]
 > - To get to the **Office installation options** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**.
