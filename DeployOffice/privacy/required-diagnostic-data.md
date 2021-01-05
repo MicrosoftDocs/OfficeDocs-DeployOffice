@@ -5218,6 +5218,127 @@ The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
+#### Office.Lens.LensSdk.CloudConnectorLaunch
+
+When the user crops the image and taps confirm on the final image selection for using OCR, this event is collected. 	
+This is user-to-request record for the service as there is no user-to-service-job mapping on the service. UserId is required to fulfill GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product, as well as identifying changes in trends, help look for and rectify issues in the product.
+
+The following fields are collected:
+
+- **CallType** - String to identify if the API call was synchronous or asynchronous.
+
+- **CloudConnectorRequestId** - String that identifies the service request which was made to convert images via service. 
+
+- **CloudConnectorTarget** - String that confirms which type of conversion the service will do on images, like converting to PDF, Docx, text, etc.
+
+- **CustomerId** - String that identifies the user who owns the images being processed.
+
+- **CustomerType** - String that identifies the customer as an enterprise or individual user. This distinction affects the number of images (quota) the client can convert at a time. 
+
+- **RelationId** - String, which identifies correlation between Lens and the service used to process files.
+
+
+#### Office.Lens.LensSdk.CloudConnectorUploadError
+
+In Image to Table, when the user taps either Share, Copy or Open, the corrections in the table made by the user are shared with the service to improve the OCR. This event is collected on the error response of that service and contains the relevant identifiers to troubleshoot various issues on the service. 
+
+The following fields are collected:
+
+- **CloudConnectorRequestId** - String identifier to link the service job to the current service request for which the improvement data was shared.
+
+- **CorrelationId** - String which contains the identifier of the current service job instance.
+
+- **Reason** - String which contains the error code and description of the error.
+
+- **TargetType** - String which identifies the endpoint on the service.
+
+- **TaskType** - String which identifies the intent of the service call.
+
+
+#### Office.Lens.LensSdk.CloudConnectorUploadSuccess
+
+In Image to Table, when the user taps either Share, Copy or Open, the corrections in the table made by the user are shared with the service to improve the OCR. This event is collected on the successful response of that service and contains the relevant identifiers to troubleshoot the process. It also helps analyze the usage of service improvement pipeline.
+
+The following fields are collected:
+
+- **CloudConnectorRequestId** - String identifier to link the service job to the current service request for which the improvement data was shared.
+
+- **CorrelationId** - String which contains the identifier of the current service job instance.
+
+- **TargetType** - String which identifies the endpoint on the service.
+
+- **TaskType** - String which identifies the intent of the service call.
+
+
+#### Office.Lens.LensSdk.Permission
+
+Permissions are a sensitive feature, as without them user cannot experience any of Lens's features. Permissions are tracked to understand user habits for providing/revoking permissions. When the user interacts with any permission dialogs in our app, we collect these events. Based on user trends for accepting and rejecting permissions, we identify feature enhancements to help users understand why permissions are critical.
+
+The following fields are collected:
+
+- **Data_action** - Contains values like “CameraPermissionAllowed (or Denied), StoragePermissionGranted (or Denied), which help us understand whether the user accepted or rejected storage and camera permissions.
+
+- **Data_Action** - This field helps us understand which type of permission was asked from the user such as Camera or storage
+
+- **Data_status** - Contains values like Allowed, Denied and DeniedForever which help us understand whether the user accepted or rejected storage and camera permissions.
+
+
+#### Office.Lens.LensSdk.SaveMedia
+
+This event is invoked when the user clicks on the done button and saves images on Android and iOS. It helps measure the level of user engagement by quantifying users who end up saving images through our app.
+
+The following fields are collected on Android:
+
+- **Data_FileSizeAfterCleanUp** - Size of the file after it is cleaned by app, to understand how much compression was achieved after cleanup.
+
+- **Data_FileSizeAfterSave** - Size of the file after it is saved by user, to understand how much compression was achieved after saving.
+
+- **Data_FileSizeBeforeCleanUp** - Size of the file before it is cleaned by app, to understand how much captured size was
+
+- **Data_Filter** - The filter applied to the image.
+
+- **Data_ImageHeightAfterCleanUp** - Height of the image after it was cleaned by app.
+
+- **Data_ImageHeightBeforeCleanUp** - Height of the image before it was cleaned by app.
+
+- **Data_ImageWidthAfterCleanUp** - Width of the image before it was cleaned by app.
+
+- **Data_ImageWidthBeforeCleanUp** - Width of the image before it was cleaned by app.
+
+- **Data_MediaId** - Identifier for images to help track operation success.
+
+- **Data_ProcessMode** - Mode of the user at the time of the saving the image by the user.
+
+- **Data_Source** - Defines where the image was sourced from, example captured via camera, imported from gallery, etc. 
+
+The following fields are collected on iOS:
+
+- **Data_filter** - The filter applied to the image. 
+
+- **Data_imageDPI** - Image reduction applied to the saved file image
+
+- **Data_imageSize** - Size of the image after user has saved the image
+
+- **Data_mediaId** - Identifier for images to help track operation success.
+
+- **Data_mode** - Mode of the user at the time of the saving the image by the user.
+
+- **Data_sizeinPixel** - Size of the image in the form of pixel
+
+- **Data_source** - Defines where the image was sourced from, example captured via camera, imported from gallery, etc. 
+
+
+#### Office.Lens.LensSdk.ServiceIDMapping
+
+When an image is uploaded successfully to the service, this event is collected. It signifies that service will now run one or more jobs to process the image and contain relevant IDs to help troubleshoot the process. It also helps analyze the usage of different service features.
+
+The following fields are collected:
+
+- **CloudConnectorRequestId** - String that identifies the service request which was made to convert images via service.
+
+- **I2DserviceProcessID** - String that identifies the service job running a particular sub-request 
+
+
 #### Office.iOS.Paywall.Paywall.Presented
 
 This critical usage telemetry is collected when Paywall control is shown to the user, and is used to understand the in-app purchase experience for the user and optimize the same for future versions.
@@ -9362,6 +9483,37 @@ The following fields are collected:
 - **TotalTime** - total time spent
 
 - **UsesSharedRuntime** - indicates if the app uses sharedRuntime or not.
+
+#### Office.Lens.LensSdk.LaunchLens
+
+When user launches Lens to capture or import images in any app, Lens SDK is launched, and this event is collected. Launch data helps us determine the number of users/devices launching the app and further understand feature usage. It helps us track the volume of users using the product, as well as identifying changes in trends, help look for and rectify issues in the product.
+
+The following fields are collected:
+
+- **Data_isResumeSession** - Whether the app was launched in resume or user did a fresh start. (Boolean field) 
+
+- **Data_launchPerf** - Integer indicating time taken to launch the app (on Android)
+
+- **Data_LaunchWorkFlowItem** - Field specifies if the app is launched from camera screen or edit screen. 
+
+- **Data_mediaCompressionFactor** - The factor by which images are compressed by app.
+
+- **Data_RecoveryMode** - Boolean field indicating if this session was recovered after app was killed (on Android)
+
+- **IsDexModeEnabled** - Boolean indicating if device supports Samsung Dex features.
+
+- **IsEmbeddedLaunch** - Boolean field indicating if user launched the control in picture-in-picture mode.
+
+- **IsInterimCropEnabled** - Boolean field indicating if user has chosen to manually crop each image.
+
+- **IsMultiWindowEnabled** - Boolean field indicating if it's possible to run app in split screen.
+
+- **LaunchPerf** - Integer indicating time taken to launch the app (on iOS)
+
+- **RecoveryMode** - Boolean field indicating if this session was recovered after app was killed (on iOS)
+
+- **SDKMode** - The mode in which images were captured.
+
 
 #### Office.OfficeMobile.AppActivation.Launch
 
