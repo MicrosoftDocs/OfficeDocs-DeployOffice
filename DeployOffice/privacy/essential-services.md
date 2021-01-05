@@ -3312,6 +3312,20 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
+### Office.Android.DocsUI.PaywallControl.PurchaseTokenRedemptionResponse
+
+*[This event was previously named Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse.]*
+
+This product telemetry is collected for tracking and logging the internal transaction status and reconciliation information to improve reliability and performance. Microsoft uses this data to analyze and improve the reliability and performance of the internal transaction processing and reconciliation mechanisms.
+
+The following fields are collected:
+
+- **MicrosoftPurchaseOrderId** - Microsoft Order Id sent by Retail Federation Service (RFS) for tracking purposes.
+
+- **ResponseCode** - HTTP Response code (int)
+
+- **StatusCode** - RFS response status code (RFS defined Enum int- finite)
+
 
 ### Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -3340,17 +3354,21 @@ The following fields are collected:
 - **SessionID** – GUID to connect events by session
 
 
-### Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+### Office.Android.DocsUI.Views.DimeError
 
-This product telemetry is collected for tracking and logging the internal transaction status and reconciliation information to improve reliability and performance. Microsoft uses this data to analyze and improve the reliability and performance of the internal transaction processing and reconciliation mechanisms.
+This event is collected for the Office app for Android (released on Huawei and in China Stores). This event indicates that an attempt to purchase a Microsoft 365 subscription through Dime (a webURL loaded in client webview) has failed. Only the error scenarios are captured. This event data is error data only and is used to ensure the health of the Dime purchase flow in the client.
 
-The following fields are collected:
+This following fields are collected:
 
-- **MicrosoftPurchaseOrderId** - Microsoft Order Id sent by Retail Federation Service (RFS) for tracking purposes.
+- **CorrelationID** - ID that uniquely identifies a Dime purchase session.
 
-- **ResponseCode** - HTTP Response code (int)
-
-- **StatusCode** - RFS response status code (RFS defined Enum int- finite)
+- **ErrorReason** - Indicates the reason for the error that happened.
+  - 0 – Unknown error
+  - 1 – Internet not available
+  - 2 – Universally unique identifier (UUID) validation failed
+  - 3 - Universally unique identifier (UUID) is null or empty
+  - 4 – Java Script injection error where the Office app for Android can’t pass authToken to Dime
+  - 5 – Base WebURL loaded on client is invalid
 
 
 ### Office.Dime.Sdk.Health
@@ -15402,7 +15420,9 @@ No required service data events are collected by Services Configuration.
 
 ## Telemetry events
 
-### Office.Android.DocsUI.Views.PaywallOperationMetrics
+### Office.Android.DocsUI.PayWallControl.PaywallOperationMetrics
+
+*[This event was previously named Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
 Microsoft uses this to get the health of the feature, success, or error rates for the user for purchases, to ensure appropriate investments to improve the customers’ purchase experience across mobile platforms.
 
@@ -15414,7 +15434,9 @@ The following fields are collected:
 
 - **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
 
-### Office.Android.DocsUI.Views.PaywallSessionData
+### Office.Android.DocsUI.PayWallControl.PaywallSessionData
+
+*[This event was previously named Office.Android.DocsUI.Views.PaywallSessionData.]*
 
 Session based metadata when Paywall UI is shown to the user. Microsoft uses this to get the user journey, and understand the device and OS versions the user is using, to help make decisions on investments in improving the experience in these areas.
 
