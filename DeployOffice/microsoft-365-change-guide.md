@@ -583,7 +583,7 @@ Figure 14
 
 [**Message center**](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
-The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. Figure 15 is a screenshot of Message center messages.
+The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 15, you can see the **Give feedback** button in the lower-right of the Message center.
 
 ![Screenshot of the Message center configuration page](images/message-center-planner-synching.png)
 
