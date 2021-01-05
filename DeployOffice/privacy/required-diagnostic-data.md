@@ -188,6 +188,10 @@ This category contains the following fields:
 
   - **Flags** - Bitmask tracking flags applicable to an entire session, currently primarily focused on sampling and diagnostic data options. Allows us to control how a given session behaves in relation to the diagnostic data that the session generates.
 
+  - **HostAppName** - Identifies the host app name which launches a sub-app. Apps like Office Mobile (Android) can launch Word, Excel and PowerPoint sub-apps. For such sub-apps, the host app is OfficeMobile
+
+  - **HostSessionId** - Uniquely identifies the host app session for a sub-app
+
   - **Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
 
   - **ImpressionId** - Identifies the set of flights that are running in a given session. Allows us to identify which individual flights are running on a session so that we can determine if a flight is the source of an issue impacting users.
