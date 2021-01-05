@@ -29,7 +29,7 @@ Microsoft constantly improves Microsoft 365 services to help every person and ev
 
 Historically, the deployment of changes within customer organizations has been tightly controlled by IT departments. Controlling deployments within your tenant holds a place in the modern cloud landscape, but faster feature deployment is key to realizing value for your users. As the Microsoft cloud further adopts a continuous update model, organizations’ ability to make risk-based decisions on which changes require granular evaluation and which can be implemented immediately becomes paramount.
 
-When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
+When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage[[2]](#footnote-2) to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
 
 ![Net Promoter Score Release Channel Comparison](images/net-promoter-score-release-channel-comparison.png)
 
@@ -51,7 +51,7 @@ From industry observations, feedback, and supporting data, we've identified a ke
 
 The challenge can be further explained by the “automobile metaphor.” Many organizations focus only on functionality and security. In the context of a vehicle, this is the equivalent of focusing on getting from point A to point B. In this case, owners are content if they can fix the vehicle, if they know how it works, and if the vehicle has seat belts for security. However, we challenge the IT professionals reading this to consider the user. To the average vehicle consumer, transportation is more than A to B. Users (consumer drivers) want a radio for entertainment, air conditioning for climate control, and power windows for convenience. Drivers want anti-lock braking systems, airbags, and seat belts for security. If the focus is solely on enabling users to reach the destination, you might be disenfranchising the population that wants to be more secure, comfortable, and efficient on the journey. If organizational lines of defense spend valuable time divining which features are important, which features users care about, and which features are causing disruption to the IT environment, the burden becomes unsustainable. This calls for democratization of change evaluation; for more information, see the section, [Change Evaluation Democratization](#change-evaluation-democratization).
 
-Although Microsoft doesn't provide a default off option, we find that very few customers take advantage of the options that we provide to disable features in their environments. When organizations employ an “everything off” strategy by leveraging our provided configurations, the result is similar to managing on-premises software. The benefits originally sought by moving to the cloud are largely alienated by this approach, because the innovations that users care about are unavailable. Moreover, the Microsoft ecosystem suffers from the gap in usage data created by this strategy. For example, diagnostic data\[3\] provides Microsoft with valuable information about how our customers use features, how the features are (or aren't) improving overall experience, and crash reports that help us to stay apprised of widespread issues. Although we provide customers control over diagnostic data, exercising these controls limits the data we have for keeping our service secure, up to date, and functioning as expected.
+Although Microsoft doesn't provide a default off option, we find that very few customers take advantage of the options that we provide to disable features in their environments. When organizations employ an “everything off” strategy by leveraging our provided configurations, the result is similar to managing on-premises software. The benefits originally sought by moving to the cloud are largely alienated by this approach, because the innovations that users care about are unavailable. Moreover, the Microsoft ecosystem suffers from the gap in usage data created by this strategy. For example, diagnostic data[[3]](#footnote-3) provides Microsoft with valuable information about how our customers use features, how the features are (or aren't) improving overall experience, and crash reports that help us to stay apprised of widespread issues. Although we provide customers control over diagnostic data, exercising these controls limits the data we have for keeping our service secure, up to date, and functioning as expected.
 
 We cite this as a challenge because we acknowledge the delicate balance that must be reached between controlling the environment, ensuring proper training, and providing employees exciting new features. IT professionals are at the forefront of maintaining this balance - this is why Microsoft provides tools, transparency, and guidance for making risk-based deployment decisions. Configuration management tools, product roadmaps, change notifications, and documentation are manifestations of our commitment to aid you in reaching change-risk equilibrium.
 
@@ -192,7 +192,7 @@ Now that we've outlined the types of changes that you can expect from Microsoft 
 
 #### Service release channels
 
-Microsoft 365 services provide two channels for receiving new product updates and features as they become available: Standard Release and Targeted Release.\[4\] These release options help you to manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association to one of the release channels.
+Microsoft 365 services provide two channels for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-4) These release options help you to manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association to one of the release channels.
 
 As Microsoft develops products and features, new releases are validated in a ring deployment model. Figure 4 depicts the validation rings, with each deployment ring reaching a broader audience. Before moving to the next ring, a threshold of deployments in the prior ring must complete without any issues.
 
@@ -245,7 +245,7 @@ Channel</strong></td>
 <td>Recommended use</td>
 <td>Provide your users with new Office features as soon as they are ready, but not on a set schedule.</td>
 <td>Provide your users with new Office features only once a month and on a predictable schedule.</td>
-<td>For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[5]</td>
+<td>For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[[5]](#footnote-5)</td>
 </tr>
 <tr class="odd">
 <td>Release frequency</td>
@@ -271,7 +271,7 @@ Channel</strong></td>
 (if needed)</td>
 <td>Usually at least once a month (possibly more often), but no set schedule</td>
 <td>Once a month, on the second Tuesday of the month</td>
-<td>Once a month, on the second Tuesday of the month[6]</td>
+<td>Once a month, on the second Tuesday of the month[[6]](#footnote-6)</td>
 </tr>
 <tr class="odd">
 <td>Support duration for a given version</td>
@@ -328,7 +328,7 @@ As of 2019, Microsoft refers to our suite of management solutions under this sin
 
 - How to enable Microsoft 365 clients to receive updates from Configuration Manager.
 
-- Your options for enabling clients to receive updates from Configuration Manager.\[7\]
+- Your options for enabling clients to receive updates from Configuration Manager.[[7]](#footnote-7)
 
 For comprehensive instructions to configure your deployment strategy, see the [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/mem/configmgr/).
 
@@ -607,17 +607,17 @@ Figure 16
 
 <div id="footnote-1">1.</div> Net Promoter Score (NPS) is an industry calculation that measures user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
 
-2. With a 1.5 margin of error.
+<div id="footnote-2">2.</div> With a 1.5 margin of error.
 
-3. Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/privacy/manage-privacy-controls). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/en-us/licensing/product-licensing/products#:~:text=Online%20Services%20Data%20Protection%20Addendum%20%28DPA%29%20When%20you,The%20DPA%20is%20an%20addendum%20to%20the%20OST.) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section (“Processing of Personal Data; GDPR”).
+<div id="footnote-3">3.</div> Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/privacy/manage-privacy-controls). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/en-us/licensing/product-licensing/products#:~:text=Online%20Services%20Data%20Protection%20Addendum%20%28DPA%29%20When%20you,The%20DPA%20is%20an%20addendum%20to%20the%20OST.) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section (“Processing of Personal Data; GDPR”).
 
-4. For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](https://microsoft-my.sharepoint-df.com/:x:/p/tabriggs/EagrVwgMlWxAiQhXZaOxcnoBpJvtc1e79KkMNjszu9gPqg).
+<div id="footnote-4">4.</div> For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](https://microsoft-my.sharepoint-df.com/:x:/p/tabriggs/EagrVwgMlWxAiQhXZaOxcnoBpJvtc1e79KkMNjszu9gPqg).
 
-5. If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait an such an extended period between releases.
+<div id="footnote-5">5.</div> If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait an such an extended period between releases.
 
-6. This consists of a selected subset of non-security updates for Semi-Annual Enterprise Channel.
+<div id="footnote-6">6.</div> This consists of a selected subset of non-security updates for Semi-Annual Enterprise Channel.
 
-7. For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
+<div id="footnote-7">7.</div> For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
 
 ## Microsoft Corporation Non-Disclosure Agreement for Compliance Materials
 <details>
