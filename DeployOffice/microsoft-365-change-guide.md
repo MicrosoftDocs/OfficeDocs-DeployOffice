@@ -589,7 +589,9 @@ The **Give feedback** button also exists in the Message center so that you can p
 
 Figure 15
 
-The Message center also supports **Like** and **Dislike** buttons for each message. Using these, you can quickly provide feedback. We aggregate this feedback and use it to understand general customer reception of our recent changes.
+The Message center also supports **Like** and **Dislike** buttons, as shown in Figure 16, for each message. Using these, you can quickly provide feedback. We aggregate this feedback and use it to understand general customer reception of our recent changes.
+
+![Screenshot of Like and Dislike buttons](images/message-center-like-and-dislike.png)
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
