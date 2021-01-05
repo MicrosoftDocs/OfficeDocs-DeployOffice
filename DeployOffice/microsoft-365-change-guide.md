@@ -29,7 +29,7 @@ Microsoft constantly improves Microsoft 365 services to help every person and ev
 
 Historically, the deployment of changes within customer organizations has been tightly controlled by IT departments. Controlling deployments within your tenant holds a place in the modern cloud landscape, but faster feature deployment is key to realizing value for your users. As the Microsoft cloud further adopts a continuous update model, organizations’ ability to make risk-based decisions on which changes require granular evaluation and which can be implemented immediately becomes paramount.
 
-When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)\[1\](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
+When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)\[1\] between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
 
 ![Net Promoter Score Release Channel Comparison](images/net-promoter-score-release-channel-comparison.png)
 
@@ -605,7 +605,7 @@ Figure 16
 
 ## Footnotes
 
-<div id="footnote-1">1.</div> Net Promoter Score (NPS) is an industry calculation that measures user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
+1. Net Promoter Score (NPS) is an industry calculation that measures user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
 
 2. With a 1.5 margin of error.
 
