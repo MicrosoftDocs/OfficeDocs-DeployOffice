@@ -29,7 +29,7 @@ Microsoft constantly improves Microsoft 365 services to help every person and ev
 
 Historically, the deployment of changes within customer organizations has been tightly controlled by IT departments. Controlling deployments within your tenant holds a place in the modern cloud landscape, but faster feature deployment is key to realizing value for your users. As the Microsoft cloud further adopts a continuous update model, organizations’ ability to make risk-based decisions on which changes require granular evaluation and which can be implemented immediately becomes paramount.
 
-When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)<sup>[1]</sup>(#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
+When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage\[2\] to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
 
 ![Net Promoter Score Release Channel Comparison](images/net-promoter-score-release-channel-comparison.png)
 
