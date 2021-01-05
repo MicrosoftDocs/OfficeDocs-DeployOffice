@@ -593,6 +593,8 @@ The Message center also supports **Like** and **Dislike** buttons, as shown in F
 
 ![Screenshot of Like and Dislike buttons](images/message-center-like-and-dislike.png)
 
+Figure 16
+
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
 This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions. Figure 16 shows a list of feedback forums.
