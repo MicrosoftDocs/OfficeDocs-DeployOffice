@@ -363,8 +363,10 @@ When using MatchInstalled, you have to specify if you want to match a specific a
 
 Example values:
 
-- <Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail"
-- <Language ID="MatchInstalled" TargetProduct="All"
+```xml
+<Language ID="MatchInstalled" TargetProduct="O365ProPlusRetail" />
+<Language ID="MatchInstalled" TargetProduct="All" />
+```
 
 ## Display element
 
