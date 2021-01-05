@@ -15420,7 +15420,7 @@ No required service data events are collected by Services Configuration.
 
 ## Telemetry events
 
-### Office.Android.DocsUI.PayWallControl.PaywallOperationMetrics
+### Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
 *[This event was previously named Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
@@ -15434,7 +15434,7 @@ The following fields are collected:
 
 - **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
 
-### Office.Android.DocsUI.PayWallControl.PaywallSessionData
+### Office.Android.DocsUI.PaywallControl.PaywallSessionData
 
 *[This event was previously named Office.Android.DocsUI.Views.PaywallSessionData.]*
 
