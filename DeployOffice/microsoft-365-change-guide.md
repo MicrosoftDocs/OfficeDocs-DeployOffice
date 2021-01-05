@@ -113,10 +113,6 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 <table>
 <tbody>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td></td>
