@@ -538,9 +538,9 @@ The Microsoft 365 admin mobile app has more than 80 features that help you manag
 
 ![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app-snip.png)
 
-[Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
-
 Figure 13
+
+[Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
 
 **<span class="underline">Other change information resources</span>**
 
