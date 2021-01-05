@@ -537,6 +537,7 @@ Figure 12
 The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they are released. Figure 13 shows a screenshot of the mobile app.
 
 ![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app-snip.png)
+
 [Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
 
 Figure 13
