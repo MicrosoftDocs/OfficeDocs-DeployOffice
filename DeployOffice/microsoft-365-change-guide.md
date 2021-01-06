@@ -308,55 +308,15 @@ The Microsoft 365 Change Management Plan is essential for enabling customers to 
 ![Diagram of the four pillars of the Microsoft 365 Change Management Plan](images/change-management-plan-pillars.png)
 *Figure 9*
 
-The Microsoft Change Management Plan outlines three change phases and recommended customer actions that are associated with each action. The following table summarizes the three change phases.
+The Microsoft Change Management Plan outlines three change phases and recommended customer actions that are associated with each action. Table 3 summarizes the three change phases.
 
-<table>
-<thead>
-<tr class="header">
-<th>Microsoft Change Management plan phases</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Phases</td>
-<td><ol type="1">
-<li><p><strong>Before change</strong></p></li>
-</ol></td>
-<td><ol start="2" type="1">
-<li><p><strong>During change</strong></p></li>
-</ol></td>
-<td><ol start="3" type="1">
-<li><p><strong>After change</strong></p></li>
-</ol></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.</p>
-<p>Validate existing change policies and create policies as required.</p></td>
-<td>Consider the change’s impact to your organization and your users.</td>
-<td>Provide feedback in the <a href="https://docs.microsoft.com/services-hub/support/customer-pulse">Customer Pulse</a>, or use the Message center communication.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p>Know about the change:</p>
-<ul>
-<li><p>Check <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=">Product roadmap</a></p></li>
-<li><p>Check the Message center in the Microsoft 365 <a href="https://portal.office.com">admin</a> center</p></li>
-</ul></td>
-<td>Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management.</td>
-<td>Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Provide feedback about an upcoming service change in the <a href="https://docs.microsoft.com/services-hub/support/customer-pulse">Customer Pulse</a> or by using the Message center communication.</td>
-<td>Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM).</td>
-<td>Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them.</td>
-</tr>
-</tbody>
-</table>
+*Table 3: Microsoft Change Management Plan phases*
+
+| Phase 1: Before change | Phase 2: During change | Phase 3: After change |
+|------------------------|------------------------|-----------------------|
+| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub/support/customer-pulse), or by using the Message center communication. |
+| Know about the change:<br> Check [Product Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=)<br> Check the Message center in the Microsoft 365 [admin center](https://portal.office.com/) | Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management. | Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency. |
+| Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub/support/customer-pulse), or by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
 
 Regardless of change strategy, it's important to business success to ensure that your users are aware of and understand incorporated changes. The criticality of adoption and change management continues to trend upward as Microsoft and the greater market move toward continuous change.
 
