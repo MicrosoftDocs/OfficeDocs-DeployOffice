@@ -15,7 +15,7 @@ description: "Microsoft 365 change guide"
 
 # Microsoft 365 change guide
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > The information in this article applies to the Microsoft 365 multitenant environment.
 
 ## Continuous change in the cloud
@@ -49,8 +49,8 @@ The ability to control impactful changes is a differentiator offered by Microsof
 
 From industry observations, feedback, and supporting data, we've identified a key challenge that our customers face when they apply highly restrictive change ingestion models to the continuous release policy of Microsoft 365. The challenge lies in how frequently Microsoft updates services in the modern cloud. To illustrate the challenge, assume that Microsoft pushes 720 changes per year, released linearly. If these changes are restricted for evaluation, IT departments that are gating changes could be behind up to 60 changes after the first month. The resulting backlog of changes heightens the entropy in the environment and prevents users from utilizing the latest features and updates. The question becomes: is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?
 
-[!IMPORTANT]
->"Is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?"
+> [!IMPORTANT]
+> "Is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?"
 
 The challenge can be further explained by the “automobile metaphor.” Many organizations focus only on functionality and security. In the context of a vehicle, this is the equivalent of focusing on getting from point A to point B. In this case, owners are content if they can fix the vehicle, if they know how it works, and if the vehicle has seat belts for security. However, we challenge the IT professionals reading this to consider the user. To the average vehicle consumer, transportation is more than A to B. Users (consumer drivers) want a radio for entertainment, air conditioning for climate control, and power windows for convenience. Drivers want anti-lock braking systems, airbags, and seat belts for security. If the focus is solely on enabling users to reach the destination, you might be disenfranchising the population that wants to be more secure, comfortable, and efficient on the journey. If organizational lines of defense spend valuable time divining which features are important, which features users care about, and which features are causing disruption to the IT environment, the burden becomes unsustainable. This calls for democratization of change evaluation; for more information, see the section, [Change Evaluation Democratization](#change-evaluation-democratization).
 
@@ -353,8 +353,8 @@ Messages are identified in the right-side column above by one of three categorie
 
 Both "prevent or fix issues" and "plan for change" messages might require action from admins. To help you prioritize and plan, the **Act by** column contains the date by which action is required.
 
-[!IMPORTANT]
->"To help you prioritize and plan, the **Act by** column contains the date by which action is required."
+> [!IMPORTANT]
+> "To help you prioritize and plan, the **Act by** column contains the date by which action is required."
 
 The Message center admin user interface is one way to obtain service change information. Using the [Office 365 Service Communications API](https://docs.microsoft.com/office/office-365-management-api/office-365-service-communications-api-reference), you can build automated solutions to query the following relevant data:
 
