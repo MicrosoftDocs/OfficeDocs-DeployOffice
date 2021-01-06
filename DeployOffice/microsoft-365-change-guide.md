@@ -73,7 +73,7 @@ The Microsoft industry observation shows that the Restrict All Change strategy i
 
 ### Consuming and managing change – Message center and Planner
 
-All change strategies require communication and messaging for users to consume and act on the change. [Message center is the mechanism for notification of events for Microsoft 365 services](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true). Message center is located in the Microsoft 365 Admin Center. It includes upcoming new and changed features, planned maintenance, and other important announcements. There are three categories for messages:
+All change strategies require communication and messaging for users to consume and act on the change. [Message center is your notification hub for planned changes and other important Microsoft 365 announcements](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true). Message center is located in the Microsoft 365 Admin Center. It includes upcoming new and changed features, planned maintenance, and other important announcements. There are three categories for messages:
 
 - Prevent or fix issues
 - Plan for change, and
