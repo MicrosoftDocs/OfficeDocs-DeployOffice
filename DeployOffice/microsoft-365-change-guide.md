@@ -445,8 +445,8 @@ This community serves both as a source of change information from your peers and
 ![Screenshot of Feedback forums list](images/feedback-forums.png)
 *Figure 17*
 
-<details>
-  <summary>Footnotes</summary>
+## Footnotes
+
 1:<span id="footnote-1"></span>
 Net Promoter Score (NPS) is an industry calculation that measures user preferences for a product or service. NPS is calculated by accounting for users who detract, support, or are neutral toward the target of the examination. Subtracting the percentage of Detractors from the percentage of Promoters yields the Net Promoter Score, which can range from a low of -100 (if every customer is a Detractor) to a high of 100 (if every customer is a Promoter).
 
@@ -467,7 +467,8 @@ This consists of a selected subset of non-security updates for Semi-Annual Enter
 
 7:<span id="footnote-7"></span>
 For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
-</details>
+
+## Legal disclaimer
 
 <details>
   <summary>Microsoft Corporation Non-Disclosure Agreement for Compliance Materials</summary>
