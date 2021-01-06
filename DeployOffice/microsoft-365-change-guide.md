@@ -260,8 +260,8 @@ The Microsoft 365 Apps admin center offers [inventory](https://docs.microsoft.co
 
   - Maintain device compliance with update deadlines and update date exclusions.
 
-> [!NOTE]
-> At the time of publishing, the Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and above.
+> [!IMPORTANT]
+> At the time of publishing, the Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and later.
 
 #### Client configuration controls
 
@@ -389,10 +389,10 @@ Your admins can use the Message center weekly digest to review Message center co
 
 The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they are released. Figure 13 shows a screenshot of the mobile app.
 
-![Screenshot of the Microsoft 365 Admin mobile app](images/mobile-admin-app-snip.png)<br>
+![Screenshot of the Microsoft 365 admin mobile app](images/mobile-admin-app-snip.png)<br>
 *Figure 13*
 
-[Download the mobile admin app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app)
+To take advantage of the Microsoft 365 admin mobile app features, you can [download the app](https://www.microsoft.com/en-us/microsoft-365/business/manage-office-365-admin-app).
 
 **<span class="underline">Other change information resources</span>**
 
