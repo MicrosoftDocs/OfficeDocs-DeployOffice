@@ -162,59 +162,18 @@ It's important to have a staging or test tenant as part of your change strategy.
 
 Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps (previously Office 365 ProPlus). These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
-For a comparison of the Microsoft 365 Apps channels, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel, see the following table.
+Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Channel name</td>
-<td><strong>Current<br />
-Channel</strong></td>
-<td><strong>Monthly Enterprise<br />
-Channel</strong></td>
-<td><strong>Semi-Annual Enterprise<br />
-Channel</strong></td>
-</tr>
-<tr class="even">
-<td>Recommended use</td>
-<td>Provide your users with new Office features as soon as they are ready, but not on a set schedule.</td>
-<td>Provide your users with new Office features only once a month and on a predictable schedule.</td>
-<td>For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[[5]](#footnote-5)</td>
-</tr>
-<tr class="odd">
-<td>Release frequency</td>
-<td>At least once a month (likely more often), but not on a set schedule</td>
-<td>Once a month, on the second Tuesday of the month</td>
-<td>Once a month, on the second Tuesday of the month</td>
-</tr>
-<tr class="even">
-<td>Feature updates</td>
-<td>As soon as they are ready (usually once a month), but not on a set schedule</td>
-<td>Once a month, on the second Tuesday of the month</td>
-<td>Twice a year (in January and July), on the second Tuesday of the month</td>
-</tr>
-<tr class="odd">
-<td>Security updates<br />
-(if needed)</td>
-<td>Once a month, on the second Tuesday of the month</td>
-<td>Once a month, on the second Tuesday of the month</td>
-<td>Once a month, on the second Tuesday of the month</td>
-</tr>
-<tr class="even">
-<td>Non-security updates<br />
-(if needed)</td>
-<td>Usually at least once a month (possibly more often), but no set schedule</td>
-<td>Once a month, on the second Tuesday of the month</td>
-<td>Once a month, on the second Tuesday of the month[[6]](#footnote-6)</td>
-</tr>
-<tr class="odd">
-<td>Support duration for a given version</td>
-<td>Until the next version is released with new features, which is usually about one month</td>
-<td>Two months</td>
-<td>Fourteen months</td>
-</tr>
-</tbody>
-</table>
+*Table 2: Microsoft 365 Apps update channels*
+
+| Channel name | Current channel | Monthly enterprise channel | Semi-Annual enterprise channel |
+|--------------|-----------------|----------------------------|--------------------------------|
+| Recommended use | Provide your users with new Office features as soon as they are ready, but not on a set schedule. | Provide your users with new Office features only once a month and on a predictable schedule. | For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[[5]](#footnote-5) |
+| Release frequency | At least once a month (likely more often), but not on a set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month 
+| Feature updates | As soon as they are ready (usually once a month), but not on a set schedule | Once a month, on the second Tuesday of the month | Twice a year (in January and July), on the second Tuesday of the month |
+| Security updates (if needed) | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
+| Non-security updates (if needed) | Usually at least once a month (possibly more often), but not on a set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month[[6]](#footnote-6) |
+| Support duration for a specific version | Until the next version is released with new features, which is usually about one month | Two months | Fourteen months |
 
 Microsoft provides three main methods to modify Microsoft 365 Apps update channels for devices in your organization:
 
