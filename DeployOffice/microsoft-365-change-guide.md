@@ -404,7 +404,7 @@ In addition to changing our services, we also update Microsoft 365 clients. Both
 - [Change management for Microsoft 365 clients](https://technet.microsoft.com/library/mt584223)
   - This documentation describes the servicing model for updates and reinforces the information in the Change Management Plan section.
 
-- [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/eofficeupdates/release-notes-microsoft365-apps?redirectedfrom=MSDN)
+- [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/en-us/officeupdates/release-notes-microsoft365-apps?redirectedfrom=MSDN)
   - Client release notes provide a wealth of information about the latest security updates, update sizes, and updates for different platforms (for example, Mac).
 
 - [Microsoft 365 news and announcements](https://blogs.office.com)
