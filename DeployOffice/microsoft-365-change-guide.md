@@ -114,74 +114,11 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 
 |                        | Functionality                                                                                              | Non-security updates                                         | Security                                                     |   |
 |------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|---|
-| Type of change         | Feature updates New features or applications Deprecated features                                           | Client hotfixes for issues                                   | Security patches                                             |   |
+| Type of change         | Feature updates<br> New features or applications<br> Deprecated features                                           | Client hotfixes for issues                                   | Security patches                                             |   |
 | Advance notice?        | 30 days' notice for changes that require action                                                            | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |   |
-| Communication channel  | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454) [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089) [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090)        | Security bulletin or CVE                                     |   |
+| Communication channel  | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090)        | Security bulletin or CVE                                     |   |
 | Requires admin action? | Sometimes                                                                                                  | Rarely                                                       | Rarely                                                       |   |
-| What kind of action?   | Change settings Communicate changes to users Validate customizations                                       | Change admin settings                                        |                                                              |   |
-
-<table>
-<tbody>
-<td><strong><br />
-Functionality</strong></td>
-<td><strong><br />
-Non-security updates</strong></td>
-<td><strong><br />
-Security</strong></td>
-</tr>
-<tr class="odd">
-<td>Type of change</td>
-<td>Feature updates<br />
-New features or applications<br />
-Deprecated features</td>
-<td>Client hotfixes for issues</td>
-<td>Security patches</td>
-</tr>
-<tr class="even">
-<td>Advance notice?</td>
-<td>30 days’ notice for changes that require action</td>
-<td>No, these are included in the monthly build for all channels</td>
-<td>No, these are included in the monthly build for all channels</td>
-</tr>
-<tr class="odd">
-<td>Communication channel</td>
-<td>Message center<br />
-<a href="https://go.microsoft.com/fwlink/p/?LinkID=529454">Microsoft 365 Roadmap</a><br />
-<a href="https://go.microsoft.com/fwlink/p/?LinkId=626089">Microsoft 365 blog</a><br />
-<a href="https://go.microsoft.com/fwlink/p/?linkid=860047">Microsoft 365 </a>area of the Microsoft Tech Community</td>
-<td><a href="https://go.microsoft.com/fwlink/p/?LinkID=626090">Release information for updates to Microsoft 365 Apps</a></td>
-<td>Security bulletin or CVE</td>
-</tr>
-<tr class="even">
-<td>Requires admin action?</td>
-<td>Sometimes</td>
-<td>Rarely</td>
-<td>Rarely</td>
-</tr>
-<tr class="odd">
-<td>What kind of action?</td>
-<td>Change settings<br />
-Communicate changes to users<br />
-Validate customizations</td>
-<td>Change admin settings</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Requires testing?</td>
-<td>Rarely - check business critical Add-ins</td>
-<td>Sometimes - testing the fix against processes or customizations</td>
-<td>Rarely</td>
-</tr>
-<tr class="odd">
-<td>Examples of changes</td>
-<td>Feature updates: PowerPoint - simpler process for embedding videos<br />
-<br />
-New features or applications: Microsoft Teams</td>
-<td>Hotfixes based on customer reported bugs</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| What kind of action?   | Change settings<br> Communicate changes to users<br> Validate customizations                                       | Change admin settings                                        |                                                              |   |
 
 Responsibility for managing these changes is shared between Microsoft and you as the administrator of your Microsoft 365 tenant. For more information, see the [Microsoft shared responsibility model](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
 
