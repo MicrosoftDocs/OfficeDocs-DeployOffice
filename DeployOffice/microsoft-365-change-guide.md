@@ -112,13 +112,13 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 
 *Table 1: Change types for Microsoft 365 services and client applications*
 
-|                        | Functionality                                                                                              | Non-security updates                                         | Security                                                     |   |
-|------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|---|
-| Type of change         | Feature updates<br> New features or applications<br> Deprecated features                                           | Client hotfixes for issues                                   | Security patches                                             |   |
-| Advance notice?        | 30 days' notice for changes that require action                                                            | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |   |
-| Communication channel  | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090)        | Security bulletin or CVE                                     |   |
-| Requires admin action? | Sometimes                                                                                                  | Rarely                                                       | Rarely                                                       |   |
-| What kind of action?   | Change settings<br> Communicate changes to users<br> Validate customizations                                       | Change admin settings                                        |                                                              |   |
+|                        | Functionality | Non-security updates | Security |
+|------------------------|---------------|----------------------|----------|
+| Type of change | Feature updates<br> New features or applications<br> Deprecated features | Client hotfixes for issues | Security patches|
+| Advance notice? | 30 days' notice for changes that require action | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |
+| Communication channel | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090) | Security bulletin or CVE |
+| Requires admin action? | Sometimes | Rarely | Rarely |
+| What kind of action? | Change settings<br> Communicate changes to users<br> Validate customizations | Change admin settings |      |
 
 Responsibility for managing these changes is shared between Microsoft and you as the administrator of your Microsoft 365 tenant. For more information, see the [Microsoft shared responsibility model](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
 
