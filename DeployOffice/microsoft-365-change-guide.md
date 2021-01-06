@@ -112,7 +112,7 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 
 *Table 1: Change types for Microsoft 365 services and client applications*
 
-|                        | Functionality | Non-security updates | Security |
+| Item | Functionality | Non-security updates | Security |
 |------------------------|---------------|----------------------|----------|
 | Type of change | Feature updates<br> New features or applications<br> Deprecated features | Client hotfixes for issues | Security patches|
 | Advance notice? | 30 days' notice for changes that require action | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |
