@@ -129,7 +129,6 @@ Responsibility for managing these changes is shared between Microsoft and you as
 Now that we've outlined the types of changes that you can expect from Microsoft 365 services and client applications, including associated responsibilities, the next section explores the different release channels and the controls available for each.
 
 ### Service release channels and controls
-
 #### Service release channels
 
 Microsoft 365 services provide two channels for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-4) These release options help you to manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association to one of the release channels.
@@ -161,7 +160,6 @@ You can configure release options in the Microsoft 365 admin portal as described
 It's important to have a staging or test tenant as part of your change strategy. Certain features require tenant changes before manifestation in the user experience. These tenant changes can be implemented in the staging tenant, so you can preview features, while preserving production tenant configurations.
 
 ### Client release channels and controls
-
 #### Client release channels
 
 Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps (previously Office 365 ProPlus). These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
