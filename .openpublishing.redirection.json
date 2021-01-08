@@ -649,6 +649,11 @@
       "source_path": "DeployOffice/change-management-for-office-365-clients.md",
       "redirect_url": "https://docs.microsoft.com/deployoffice/overview-update-channels",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/microsoft-365-change-guide.md",
+      "redirect_url": "https://docs.microsoft.com/deployoffice/fieldnotes/microsoft-365-change-guide",
+      "redirect_document_id": true
     }
   ]
 }
