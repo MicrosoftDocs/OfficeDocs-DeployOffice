@@ -15,6 +15,9 @@ description: "Microsoft 365 change guide"
 
 # Microsoft 365 change guide
 
+> [!NOTE]
+> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+
 > [!IMPORTANT]
 > The information in this article applies to the Microsoft 365 multitenant environment.
 
