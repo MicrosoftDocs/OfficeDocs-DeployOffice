@@ -3373,7 +3373,7 @@ This following fields are collected:
 
 ### Office.Dime.Sdk.Health
 
-This event captures data that helps in monitoring the health of the Dime components. The data is used to monitor and alert on the health of Dime purchase flow to ensure it is working as expected. 
+This event captures data that helps in monitoring the health of the Dime components. For example, for the in-app purchase flow when a user opts to buy a Microsoft 365 subscription from within the Office app for Android or on devices running Windows.
 
 The following fields are collected:
 
@@ -3425,23 +3425,23 @@ The following fields are collected:
 
 - **Data_QosLevel** - Severity 0/1/2
 
-- **Data_SDX_AssetId** - Asset ID of the Service Delivered Experience (SDX) hosting content
+- **Data_SDX_AssetId** - Asset ID of the Service Delivered Experience (SDX) hosting content for Win32
 
-- **Data_SDX_BrowserToken** - Token of the browser
+- **Data_SDX_BrowserToken** - Token of the browser for Win32
 
-- **Data_SDX_HostJsVersion** - JavaScript library version
+- **Data_SDX_HostJsVersion** - JavaScript library version for Win32
 
-- **Data_SDX_Id** - Service Delivered Experience Id
+- **Data_SDX_Id** - Service Delivered Experience Id for Win32
 
-- **Data_SDX_InstanceId** - Instance ID of the SDX
+- **Data_SDX_InstanceId** - Instance ID of the SDX for Win32
 
-- **Data_SDX_MarketplaceType** - SDX Marketplace Type
+- **Data_SDX_MarketplaceType** - SDX Marketplace Type for Win32
 
-- **Data_SDX_OfficeJsVersion** - Office JS Version
+- **Data_SDX_OfficeJsVersion** - Office JS Version for Win32
 
-- **Data_SDX_SessionId** - Session ID of the SDX
+- **Data_SDX_SessionId** - Session ID of the SDX for Win32
 
-- **Data_SDX_Version** - SDX Version
+- **Data_SDX_Version** - SDX Version for Win32
 
 - **Data_TimestampUTC** - Timestamp of the event
 
