@@ -11437,6 +11437,38 @@ The following fields are collected:
 
   - **Version** - crashed session version
 
+
+#### Office.Programmability.Addins.COMAddInCrash 
+
+Event generated when a COM Add-in crashes. Used to determine adoption and reliability issues with Office add-ins. 
+
+The following fields are collected:
+
+- **AddinConnectFlag** - Represents load behavior  
+
+- **AddinDescriptionV2** - Description of the add-in 
+
+- **AddinFileNameV2** - Name of the actual add-in DLL. Does not include file location.
+
+- **AddinFriendlyNameV2** - Add-in friendly name
+
+- **AddinIdV2** - Add-in class ID (CLSID)
+
+- **AddinProgIdV2** - Add-in prog ID 
+
+- **AddinProviderV2** - Provider of the add-in 
+
+- **AddinTimeDateStampV2** - Complier timestamp
+
+- **AddinVersionV2** - Add-in version 
+
+- **Interface** - COM interface of add-in which led to crash 
+
+- **LoadAttempts** - how many load attempts were made prior to crash 
+
+- **Method** - COM method of add-in which led to crash 
+
+
 #### Office.Programmability.Telemetry.AddInCrash
 
 Event generated when a COM Add-in is loaded. This information is critical to determine whether an add-in caused an Office application crash. It is used to assess global add-in compatibility with Office applications.
