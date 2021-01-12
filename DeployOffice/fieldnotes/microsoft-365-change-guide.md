@@ -171,7 +171,7 @@ Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channe
 
 *Table 2: Microsoft 365 Apps update channels*
 
-| Channel name | Current channel | Monthly enterprise channel | Semi-Annual enterprise channel |
+| Channel name | Current Channel | Monthly Enterprise Channel | Semi-Annual Enterprise Channel |
 |--------------|-----------------|----------------------------|--------------------------------|
 | Recommended use | Provide your users with new Office features as soon as they are ready, but not on a set schedule. | Provide your users with new Office features only once a month and on a predictable schedule. | For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[[5]](#footnote-5) |
 | Release frequency | At least once a month (likely more often), but not on a set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month 
