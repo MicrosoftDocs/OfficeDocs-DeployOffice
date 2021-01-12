@@ -154,7 +154,7 @@ This category contains the following fields:
 
 #### Legacy 
 
-Provides an App Id and OS version for compatibility with existing legacy collection practices.
+Provides an App ID and OS version for compatibility with existing legacy collection practices.
 
 This category contains the following fields:
 
@@ -198,7 +198,7 @@ This category contains the following fields:
 
   - **MeasuresEnabled** - Flag indicating if the current sessions data is sampled or not. Allows us to determine how to statistically evaluate the data that is gathered from the given session.
 
-  - **SamplingClientIdValue** - The id of the client used to determine if it is part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
+  - **SamplingClientIdValue** - The ID of the client used to determine if it is part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
   
  - **SubAppName** - For Office Mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field will report the value of “Word”.
 
@@ -330,7 +330,7 @@ This category contains the following fields:
 
   - **ScreenDPI** - The DPI value of the screen. Allows us to classify data based on device pivot.
 
-  - **SusClientId** - The Windows Update id of the device Office is run on.
+  - **SusClientId** - The Windows Update ID of the device Office is run on.
 
   - **SystemVolumeFreeSpaceMB** - The amount of free space on the system volume. Allows us to classify data based on device pivot.
 
@@ -535,7 +535,7 @@ Outlook mobile collects common fields for each of our events so that we can ensu
 
 The following data fields are common for all events for Outlook for iOS and Android.
 
-- **aad_tenant_id** - The tenant id of the customer if available
+- **aad_tenant_id** - The tenant ID of the customer if available
 
 - **account_cid** - A pseudonymous identifier that represents the current user
 
@@ -583,7 +583,7 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **DeviceInfo.SDKUid** - The device unique identifier (similar to DeviceInfo.Id)
 
-- **EventInfo.InitId** - Id used as part of sequencing for event ordering through our telemetry pipeline to help us detect the root cause of a pipeline issue
+- **EventInfo.InitId** - ID used as part of sequencing for event ordering through our telemetry pipeline to help us detect the root cause of a pipeline issue
 
 - **EventInfo.SdkVersion** - The SDK version we are using to send our telemetry to help us detect the root cause of a pipeline issue
 
@@ -630,7 +630,7 @@ In addition, the following fields are common for all events for Outlook for iOS.
  
 - **multi_window_mode** – Tells us if the user on the iPad is using multiple windows to help us detect issues related to multi-window usage.
 
-- **office_session_id** - A unique id tracking the session for connected Office services to help detect issues specific an Office service integration in Outlook like Word
+- **office_session_id** - A unique ID tracking the session for connected Office services to help detect issues specific an Office service integration in Outlook like Word
 
 - **state** - Whether the app was active when this event was sent to help detect issues specific to active or inactive app states
 
@@ -1015,7 +1015,7 @@ The following fields are collected:
 
 - **AppVersion** - version of the app
 
-- **SolutionId** - id of the solution
+- **SolutionId** - ID of the solution
 
 - **StoreType** - indicates the origin of the app
 
@@ -1162,7 +1162,7 @@ The following fields are collected:
 
 #### Office.Extensibility.VBATelemetryComObjectInstantiated
 
-Collects information about invocation of automation server or client in VBA solutions. Used to understand interaction between VBA and Com Objects.
+Collects information about invocation of automation server or client in VBA solutions. Used to understand interaction between VBA and COM Objects.
 
 The following fields are collected:
 
@@ -1266,7 +1266,7 @@ The following fields are collected:
 
   - **AddinFriendlyNameV2** - the add-in friendly name
 
-  - **Add-inId** – the add-in Class Id *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+  - **Add-inId** – the add-in Class ID *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **AddinIdV2** - the add-in Class ID
 
@@ -1309,7 +1309,7 @@ The following fields are collected:
 
   - **Data\_AddOnID**:**string** - GUID to identify addon loaded
 
-  - **Data\_Error**:**integer** - Error Id
+  - **Data\_Error**:**integer** - Error ID
 
 ### *Security subtype*
 
@@ -1963,7 +1963,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -1975,7 +1975,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -1993,7 +1993,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -2007,7 +2007,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2025,7 +2025,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey**- Logging service server Id
+- **iKey**- Logging service server ID
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -2039,7 +2039,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2057,7 +2057,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
 
@@ -2073,9 +2073,9 @@ The following fields are collected:
 
 - **RMS.ErrorCode** - The error code returned if any from the API call
 
-- **RMS.GuestTenant** - Guest tenant Id for the user
+- **RMS.GuestTenant** - Guest tenant ID for the user
 
-- **RMS.HomeTenant** - Home tenant Id for the user
+- **RMS.HomeTenant** - Home tenant ID for the user
 
 - **RMS.HttpCall** - indicate if there is HTTP operation
 
@@ -2089,7 +2089,7 @@ The following fields are collected:
 
 - **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
 
-- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate 
 
 - **RMS.LicenseFormat** - The license Format: Xrml or Json
 
@@ -2097,7 +2097,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2105,7 +2105,7 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Status code of the returned result
 
-- **UserInfo.UserObjectId** - The user object Id
+- **UserInfo.UserObjectId** - The user object ID
 
 #### IpcGetTemplateList
 
@@ -2119,7 +2119,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
 
@@ -2135,9 +2135,9 @@ The following fields are collected:
 
 - **RMS.ErrorCode** - The error code returned if any from the API call
 
-- **RMS.GuestTenant** - Guest tenant Id for the user
+- **RMS.GuestTenant** - Guest tenant ID for the user
 
-- **RMS.HomeTenant** - Home tenant Id for the user
+- **RMS.HomeTenant** - Home tenant ID for the user
 
 - **RMS.HttpCall** - indicate if there is http operation
 
@@ -2151,7 +2151,7 @@ The following fields are collected:
 
 - **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
 
-- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate 
 
 - **RMS.LicenseFormat** - The license Format: Xrml or Json
 
@@ -2159,7 +2159,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2169,7 +2169,7 @@ The following fields are collected:
 
 - **RMS.TemplatesCount** - The number of the templates
 
-- **UserInfo.UserObjectId** - The user object Id
+- **UserInfo.UserObjectId** - The user object ID
 
 #### IpcpCreateLicenseFromScratch
 
@@ -2183,7 +2183,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -2191,9 +2191,9 @@ The following fields are collected:
 
 - **RMS.ErrorCode** - The error code returned if any from the API call
 
-- **RMS.GuestTenant** - Guest tenant Id for the user
+- **RMS.GuestTenant** - Guest tenant ID for the user
 
-- **RMS.HomeTenant** - Home tenant Id for the user
+- **RMS.HomeTenant** - Home tenant ID for the user
 
 - **RMS.HttpCall** - indicate if there is HTTP operation
 
@@ -2203,7 +2203,7 @@ The following fields are collected:
 
 - **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
 
-- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate 
 
 - **RMS.LicenseFormat** - The license Format: Xrml or Json
 
@@ -2211,7 +2211,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2223,7 +2223,7 @@ The following fields are collected:
 
 - **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
 
-- **UserInfo.UserObjectId** - The user object Id 
+- **UserInfo.UserObjectId** - The user object ID 
 
 #### IpcpCreateLicenseFromTemplate
 
@@ -2237,7 +2237,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
 
@@ -2253,7 +2253,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2275,9 +2275,9 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
 
@@ -2293,9 +2293,9 @@ The following fields are collected:
 
 - **RMS.ErrorCode** - The error code returned if any from the API call
 
-- **RMS.GuestTenant** - Guest tenant Id for the user
+- **RMS.GuestTenant** - Guest tenant ID for the user
 
-- **RMS.HomeTenant** - Home tenant Id for the user
+- **RMS.HomeTenant** - Home tenant ID for the user
 
 - **RMS.HttpCall** - Indicates if there is HTTP operation
 
@@ -2309,7 +2309,7 @@ The following fields are collected:
 
 - **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
 
-- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate 
 
 - **RMS.LicenseFormat** - The license Format: Xrml or Json
 
@@ -2317,7 +2317,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2331,7 +2331,7 @@ The following fields are collected:
     
 - **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
 
-- **UserInfo.UserObjectId** - The user object Id 
+- **UserInfo.UserObjectId** - The user object ID 
 
 #### IpcpSerializeLicense
 
@@ -2345,15 +2345,15 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
 
 - **RMS.ConnectionMode** - The connection mode between Rights Management Service client and server: online or offline
 
-- **RMS.ContentId** - Content Id of the document
+- **RMS.ContentId** - Content ID of the document
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -2361,9 +2361,9 @@ The following fields are collected:
 
 - **RMS.ErrorCode** - The error code returned if any from the API call
 
-- **RMS.GuestTenant** - Guest tenant Id for the user
+- **RMS.GuestTenant** - Guest tenant ID for the user
 
-- **RMS.HomeTenant** - Home tenant Id for the user
+- **RMS.HomeTenant** - Home tenant ID for the user
 
 - **RMS.HttpCall** - indicate if there is http operation
 
@@ -2377,7 +2377,7 @@ The following fields are collected:
 
 - **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
 
-- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate 
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate 
 
 - **RMS.KeyHandle** - The memory address of key handle
 
@@ -2389,7 +2389,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -2401,7 +2401,7 @@ The following fields are collected:
 
 - **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
 
-- **UserInfo.UserObjectId** - The user object Id 
+- **UserInfo.UserObjectId** - The user object ID 
 
 #### IpcSetLicenseProperty
 
@@ -2415,7 +2415,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -2429,11 +2429,11 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
-- **RMS.StatusCode** - Scenario Id defined by the API
+- **RMS.StatusCode** - Scenario ID defined by the API
 
 
 #### link.clicked.action
@@ -2515,7 +2515,7 @@ The following fields are collected:
 
 - **left_swipe_setting** - indicates what action was a set to be the left swipe
 
-- **message_id** - server message id targeted for action, or comma-separated list if more than one item was in action.
+- **message_id** - server message ID targeted for action, or comma-separated list if more than one item was in action.
 
 - **message_type** - indicates what type of message type the action was taken on - group or other
 
@@ -2543,7 +2543,7 @@ The following fields are collected:
 
 - **target_folder** - indicates target folder type when moving emails from one folder to other
 
-- **thread_id** - thread id of the conversation targeted for action, or comma-separated list if more than one item was targeted
+- **thread_id** - thread ID of the conversation targeted for action, or comma-separated list if more than one item was targeted
 
 - **time_taken_to_fetch_access_token** - time taken to fetch a system access token to use for opening a link
 
@@ -2569,9 +2569,9 @@ Used for monitoring possible negative impact on your ability to compose and repl
 
 The following fields are collected: 
 
-- **draft_message_id** - The draft id of the conversation being created as a draft to help us detect issues related to draft emails
+- **draft_message_id** - The draft ID of the conversation being created as a draft to help us detect issues related to draft emails
 
-- **message_id** - The message id of the conversation being replied to or forwarded from to help us detect issues related to a specific message
+- **message_id** - The message ID of the conversation being replied to or forwarded from to help us detect issues related to a specific message
 
 - **origin** - Tells us where the compose originated from, such as from a reply all, a new compose, or quick reply. Helps us detect issues associated with a specific reply origin type.
 
@@ -2585,7 +2585,7 @@ The following fields are collected:
 
 - **source_inbox** - Tells us the source inbox, such as whether it was a focused or other inbox
 
-- **thread_id** - The thread id of the conversation being replied to or forwarded from to help us detect issues related to a specific thread
+- **thread_id** - The thread ID of the conversation being replied to or forwarded from to help us detect issues related to a specific thread
 
 #### meeting.call.to.action
 
@@ -2669,9 +2669,9 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** - An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** - A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** - A GUID that uniquely identifies server resource ID of the file.
 
-- **Data_Doc_RtcType** - An enumeration indicating type of real- time channel (RTC) used by the file.
+- **Data_Doc_RtcType** - An enumeration indicating type of real-time channel (RTC) used by the file.
 
 - **Data_Doc_ServerDocId** - A GUID that uniquely identifies server document ID.
 
@@ -2970,7 +2970,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3103,7 +3103,7 @@ The following fields are collected:
 
 #### Office.Apple.Licensing.Mac.LicensingState
 
-This event is collected for Office applications running under Apple platforms. The event captures the current state of the license for a session in a machine (OLS license id, SKU being used, grace-period or not, RFM, etc.). The data collected is used for detecting errors and investigating causes of failures. 
+This event is collected for Office applications running under Apple platforms. The event captures the current state of the license for a session in a machine (OLS license ID, SKU being used, grace-period or not, RFM, etc.). The data collected is used for detecting errors and investigating causes of failures. 
 
 The following fields are collected:
 
@@ -3201,7 +3201,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3313,7 +3313,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3426,7 +3426,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3538,7 +3538,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3650,7 +3650,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3763,7 +3763,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** – An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** – A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** – An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -3931,7 +3931,7 @@ The following fields are collected:
 
 - **Data_ClickTime** - The Unix epoch time when the user clicked a link in iOS Outlook to open the file in Office app.
 
-- **Data_ClosePreviouslyOpenedMarkers** – A string value logging the time duration between some function calls, in a format with function id and duration.
+- **Data_ClosePreviouslyOpenedMarkers** – A string value logging the time duration between some function calls, in a format with function ID and duration.
 
 - **Data_DetachedDuration** - The duration of detach process of an event. 
 
@@ -3971,7 +3971,7 @@ The following fields are collected:
 
 - **Data_Doc_ReadOnlyReasons** - An enumeration indicating the read only reason of a file.
 
-- **Data_Doc_ResourceIdHash** - A GUID that uniquely identifies server resource id of the file.
+- **Data_Doc_ResourceIdHash** - A GUID that uniquely identifies server resource ID of the file.
 
 - **Data_Doc_RtcType** - An enumeration indicating type of real-time channel (RTC) used by the file.
 
@@ -4377,7 +4377,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.FloodgateClient.TriggerMet
 
@@ -4391,7 +4391,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.FloodgateClient.UserSelected
 
@@ -4405,7 +4405,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.UI.Android
 
@@ -4419,7 +4419,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.UI.IOS
 
@@ -4433,7 +4433,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.UI.Mac
 
@@ -4447,7 +4447,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.UI.Win32
 
@@ -4461,7 +4461,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.Feedback.Survey.UI.Win32.Toast
 
@@ -4475,7 +4475,7 @@ The following fields are collected:
 
 - **SurveyId** – Unique instance of a campaign
 
-- **UniqueId** – Id to identify the individual piece of telemetry
+- **UniqueId** – ID to identify the individual piece of telemetry
 
 #### Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
@@ -5493,7 +5493,7 @@ The following fields are collected:
 
 - **AppInfo_Version** – Version of the host application
 
-- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
@@ -5569,7 +5569,7 @@ The following fields are collected:
 
 - **BatchId** - Globally unique identifier if a set of requests was made
 
-- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
@@ -5636,7 +5636,7 @@ The following fields are collected:
 
 - **AppInfo_Version** – Version of the host application
 
-- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
@@ -5719,7 +5719,7 @@ Logged when the user opens a Persona Card. It is used to observe critical anomal
 
 The following fields are collected:
 
-- **Data.appContextId** - A randomly generated id used to identify different accounts in the same app
+- **Data.appContextId** - A randomly generated ID used to identify different accounts in the same app
 
 - **Data.AppInfo.Name** - Name of the service in use (Profile card)
 
@@ -5826,7 +5826,7 @@ The following fields are collected:
 
 - **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
 
-- **Data_Doc_FileOpSessionID** - Unique Id for a Document Session.
+- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session.
 
 - **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
 
@@ -5886,7 +5886,7 @@ The following fields are collected:
 
 The event is collected for the Office app for iOS. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close and save operations performing as expected, and to improve .pdf file operation performance. 
 
-- **Data_Doc_FileOpSessionID** - Unique Id for a Document Session 
+- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session 
 
 - **Data_ErrorCode** – error in case of file open failures/download failures / download canceled 
 
@@ -6447,7 +6447,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports co-authoring using new OCS service
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document is being opened from local cache
 
@@ -6457,7 +6457,7 @@ The following fields are collected:
 
   - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_Doc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+  - **Data\_Doc\_NumberCoAuthors:long -** Number of co-authors at the time of opening of a document
 
   - **Data\_Doc\_PasswordFlags:long -** Predefined set of values of how document is encrypted with password (None, password to read, password to edit)-
 
@@ -6583,7 +6583,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports co-authoring using new OCS service
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
@@ -6593,7 +6593,7 @@ The following fields are collected:
 
   - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_Doc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+  - **Data\_Doc\_NumberCoAuthors:long -** Number of co-authors at the time of opening of a document
 
   - **Data\_Doc\_PasswordFlags:long -** Predefined set of values of how document is encrypted with password (None, password to read, password to edit)-
 
@@ -6707,7 +6707,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsIncrementalOpen:bool -** Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports co-authoring using new OCS service
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** verifies if document being is opened from local cache
 
@@ -6717,7 +6717,7 @@ The following fields are collected:
 
   - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-  - **Data\_Doc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+  - **Data\_Doc\_NumberCoAuthors:long -** Number of co-authors at the time of opening of a document
 
   - **Data\_Doc\_PasswordFlags:long -**Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -6851,7 +6851,7 @@ The following fields are collected:
 
 - **Data_DstDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-- **Data_DstDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
+- **Data_DstDoc_IsOcsSupported:bool** - Is Document supports co-authoring using new OCS service
 
 - **Data_DstDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
@@ -6861,7 +6861,7 @@ The following fields are collected:
 
 - **Data_DstDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-- **Data_DstDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
+- **Data_DstDoc_NumberCoAuthors:long** - Number of co-authors at the time of opening of a document
 
 - **Data_DstDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -6937,7 +6937,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-- **Data_SrcDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
+- **Data_SrcDoc_IsOcsSupported:bool** - Is Document supports co-authoring using new OCS service
 
 - **Data_SrcDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
@@ -6947,7 +6947,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-- **Data_SrcDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
+- **Data_SrcDoc_NumberCoAuthors:long** - Number of co-authors at the time of opening of a document
 
 - **Data_SrcDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -6987,7 +6987,7 @@ The following fields are collected:
 
 - **Data_WaitForSaveOrMergeSuccess:bool** - SaveAs succeeded waiting for a background save or merge.
  
-- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs timeouted when waiting for a background save or merge.
+- **Data_WaitForSaveOrMergeTimeout:long** - SaveAs timed out when waiting for a background save or merge.
 
 - **DstDoc** - New location of document 
 
@@ -7038,7 +7038,7 @@ The following fields are collected:
 
 - **Data_Doc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-- **Data_Doc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
+- **Data_Doc_IsOcsSupported:bool** - Is Document supports co-authoring using new OCS service
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
@@ -7048,7 +7048,7 @@ The following fields are collected:
 
 - **Data_Doc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-- **Data_Doc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
+- **Data_Doc_NumberCoAuthors:long** - Number of co-authors at the time of opening of a document
 
 - **Data_Doc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -7116,7 +7116,7 @@ The following fields are collected:
 
 - **Data_DstDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-- **Data_DstDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
+- **Data_DstDoc_IsOcsSupported:bool** - Is Document supports co-authoring using new OCS service
 
 - **Data_DstDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
@@ -7126,7 +7126,7 @@ The following fields are collected:
 
 - **Data_DstDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures etc.)
 
-- **Data_DstDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
+- **Data_DstDoc_NumberCoAuthors:long** - Number of co-authors at the time of opening of a document
 
 - **Data_DstDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -7200,7 +7200,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_IsIncrementalOpen:bool** - Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-- **Data_SrcDoc_IsOcsSupported:bool** - Is Document supports coauthoring using new OCS service
+- **Data_SrcDoc_IsOcsSupported:bool** - Is Document supports co-authoring using new OCS service
 
 - **Data_SrcDoc_IsOpeningOfflineCopy:bool** - verifies if document is being opened from local cache
 
@@ -7210,7 +7210,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_LocationDetails:long** - Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures, etc.)
 
-- **Data_SrcDoc_NumberCoAuthors:long** - Number of coauthors at the time of opening of a document
+- **Data_SrcDoc_NumberCoAuthors:long** - Number of co-authors at the time of opening of a document
 
 - **Data_SrcDoc_PasswordFlags:long** - Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -7895,7 +7895,7 @@ The following fields are collected:
 	
 - **Column** - Purpose
 
-- **DocUrlHash** - Unique doc id hash of the document that was scanned
+- **DocUrlHash** - Unique doc ID hash of the document that was scanned
 
 - **HasAccessibilityViolations** - Tracks if the document contains any accessibility violations at the point the pane is opened
 
@@ -8573,7 +8573,7 @@ The following fields are collected:
 
   - **Data\_FirstEditTime-** Timestamp of first edit
 
-  - **Data\_NumberCoAuthors-** Number of coauthors editing the document during the session
+  - **Data\_NumberCoAuthors-** Number of co-authors editing the document during the session
 
   - **Data\_NumberOfTimesDocumentDirtied-** Number of edits made to the document
 
@@ -8605,9 +8605,9 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logger server Id
+- **iKey** - Logger server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.Duration** - Total time for the operation to complete
 
@@ -8621,7 +8621,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -8868,11 +8868,11 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
-- **RMS.ContentId** - Content Id in End User License
+- **RMS.ContentId** - Content ID in End User License
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -8888,7 +8888,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -8979,9 +8979,9 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.Duration** - Total time for the operation to complete
 
@@ -8999,7 +8999,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -9037,9 +9037,9 @@ The following fields are collected:
 
 - **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
-- **RMS.ContentId** - Content Id
+- **RMS.ContentId** - Content ID
 
 - **RMS.Duration** - Total time for the operation to complete
 
@@ -9053,7 +9053,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -9075,15 +9075,15 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.CallBackStatus** - The status of authentication call back returned result
 
 - **RMS.CallbackTime** - The time consumed by authentication call back 
 
-- **RMS.CorrelationId** - correlation Id of the http request
+- **RMS.CorrelationId** - correlation ID of the http request
 
 - **RMS.DataSize** - data size of the HTTP request
 
@@ -9101,7 +9101,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -9133,7 +9133,7 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.Duration** - Total time for API call to complete
 
@@ -9145,7 +9145,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -9261,7 +9261,7 @@ The following fields are collected:
 
   - **Data\_Doc\_UrlHash:string -** hash of full URL of documents stored in cloud
 
-  - **Data\_DpiAwarenessTime:integer -** Time taken to enable Per Monitor Dpi Awareness
+  - **Data\_DpiAwarenessTime:integer -** Time taken to enable Per Monitor DPI Awareness
 
   - **Data\_DurationToCompleteInMilliseconds:double-** Duration to complete save as in millisecond
 
@@ -9297,7 +9297,7 @@ The following fields are collected:
 
   - **Data\_GdiInitTime:integer -** time taken to initialize GDI module
 
-  - **Data\_HasCoauthUserEdit:bool -** true if document was edited in a coauthoring session
+  - **Data\_HasCoauthUserEdit:bool -** true if document was edited in a co-authoring session
 
   - **Data\_HasCustomPages:bool -** true if document contains custom pages
 
@@ -9365,7 +9365,7 @@ The following fields are collected:
 
   - **Data\_MasterCount:integer -** number of masters in the diagram
 
-  - **Data\_MaxCoauthUsers:integer -** maximum number of users coauthoring at any point of time in the session Filesystem, Registry, First Party, SDX
+  - **Data\_MaxCoauthUsers:integer -** maximum number of users co-authoring at any point of time in the session Filesystem, Registry, First Party, SDX
 
   - **Data\_MaxTilesAutoSizeOn:integer -** Maximum number of tiles of a page for which auto size was enabled
 
@@ -9789,7 +9789,7 @@ The following fields are collected:
 
   - **Data\_Doc\_IsIncrementalOpen:bool – -** Was document opened incrementally (new feature that opens document without needing to download entire document)
 
-  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports coauthoring using new OCS service
+  - **Data\_Doc\_IsOcsSupported:bool -** Is Document supports co-authoring using new OCS service
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Is document being opened from local cache?
 
@@ -9799,7 +9799,7 @@ The following fields are collected:
 
   - **Data\_Doc\_LocationDetails:long -** Predefined set of values of more detailed location (Temp folder, downloads folder, One Drive Documents, One Drive Pictures, etc.)
 
-  - **Data\_Doc\_NumberCoAuthors:long -** Number of coauthors at the time of opening of a document
+  - **Data\_Doc\_NumberCoAuthors:long -** Number of co-authors at the time of opening of a document
 
   - **Data\_Doc\_PasswordFlags:long -** Predefined set of values of how document is encrypted with password (None, password to read, password to edit)
 
@@ -10742,9 +10742,9 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logger server Id
+- **iKey** - Logger server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.Duration** - Total time for the operation to complete
 
@@ -10758,7 +10758,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -10780,9 +10780,9 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.Duration** - Total time for the operation to complete
 
@@ -10798,7 +10798,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the operation
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -11165,7 +11165,7 @@ The following fields are collected:
 
 - **Interface** – Office interface where exception occurred
 
-- **AddinId** – the add-in Class Id
+- **AddinId** – the add-in Class ID
 
 - **AddinProgId** – deprecated
 
@@ -11195,7 +11195,7 @@ Usage: this is used to compute a global, non-enterprise-specific Microsoft 365 A
 
 - **Interface** – Office interface where exception occurred
 
-- **AddinId** – the add-in Class Id
+- **AddinId** – the add-in Class ID
 
 - **AddinProgId** – deprecated
 
@@ -11256,7 +11256,7 @@ Desktop Analytics: This is used as numerator in the computation of enterprise-sp
 
 The following fields are collected:
 
-- **TagId** – the id of the telemetry tag
+- **TagId** – the ID of the telemetry tag
 
 - **BreakReason** – the reason for the break (runtime, compile, other error)
 
@@ -11813,9 +11813,9 @@ The following fields are collected:
 
 - **AppInfo.Version** - Application version
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
-- **RMS.ApplicationScenarioId** - Scenario Id provided by the application
+- **RMS.ApplicationScenarioId** - Scenario ID provided by the application
 
 - **RMS.AuthCallbackProvided** - Indicate if provides the authentication callback as input of the API call or not
 
@@ -11831,9 +11831,9 @@ The following fields are collected:
 
 - **RMS.ErrorCode** - The error code returned if any from the API call
 
-- **RMS.GuestTenant** - Guest tenant Id for the user
+- **RMS.GuestTenant** - Guest tenant ID for the user
 
-- **RMS.HomeTenant** - Home tenant Id for the user
+- **RMS.HomeTenant** - Home tenant ID for the user
 
 - **RMS.HttpCall** - indicate if there is HTTP operation
 
@@ -11847,7 +11847,7 @@ The following fields are collected:
 
 - **RMS.Identity.UserProvided** - Indicate if the user email address provided or not while getting new Rights Account Certificate from the server
 
-- **RMS.IssuerId** - The Id of the Rights Management Service server which issues Rights Account Certificate  
+- **RMS.IssuerId** - The ID of the Rights Management Service server which issues Rights Account Certificate  
 
 - **RMS.LicenseFormat** - The license Format: Xrml or Json
 
@@ -11855,7 +11855,7 @@ The following fields are collected:
 
 - **RMS.Result** - Success or fail of the API call
 
-- **RMS.ScenarioId** - Scenario Id defined by the API
+- **RMS.ScenarioId** - Scenario ID defined by the API
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -11869,7 +11869,7 @@ The following fields are collected:
 
 - **RMS.UserProvided** - Indicate if provides the consumer as input of the API call or not 
 
-- **UserInfo.UserObjectId** - The user object Id
+- **UserInfo.UserObjectId** - The user object ID
 
 #### IpcpGetKey
 
@@ -12498,7 +12498,7 @@ The following fields are collected:
 
 - **TotalWorkingSetMB** - The amount of memory in megabytes in the process's working set.
 
-- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (MacOS / iOS only)
+- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS / iOS only)
 
 - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
 
@@ -12529,7 +12529,7 @@ The following fields are collected:
 
 - **ResumeRehearsingCount** – Count of how many times user clicked on resume rehearsal.
 
-- **Sessionid** - This is speech frontdoor session id. This is used to debug service logs.
+- **Sessionid** - This is speech frontdoor session ID. This is used to debug service logs.
 
 - **SlideshowViewLoadTime** – Time taken by slideshow to load.
 
@@ -12544,7 +12544,7 @@ The following fields are collected:
 
 - **PostUrlCallTime** – This is the time taken in milliseconds to send the post Url call. 
 
-- **RehearseSessionid** - This is speech frontdoor session id. We can use this to debug service logs.
+- **RehearseSessionid** - This is speech frontdoor session ID. We can use this to debug service logs.
 
 - **RequestPayloadSize** – This is the size of the request payload. 
 
@@ -12577,7 +12577,7 @@ Event triggered when any error occurs. This event will help us know what errors 
 
 The following fields are collected:
 
-- **Session ID** – rehearsal session id
+- **Session ID** – rehearsal session ID
 
 - **RehearsalEventCode** – rehearsal error code
 
@@ -12620,7 +12620,7 @@ The following fields are collected:
 
 - **SessionDurationInMs** – This is the time duration of entire session from when user clicked start to when user clicked stop.
 
-- **SessionId** – This is the speech frontdoor session id. We can use this to debug service logs.
+- **SessionId** – This is the speech frontdoor session ID. We can use this to debug service logs.
 
 - **SpeechClientResultEventsWithTimestamps** – This is an array of error codes received along with the timestamps which can help in debugging.
 
@@ -12950,7 +12950,7 @@ The following fields are collected:
 
 - **ContentUriAuthority** - the authority of the content URL from SAF
 
-- **Correlation** - GUID for the correlation Id related to the operation
+- **Correlation** - GUID for the correlation ID related to the operation
 
 - **DocId** - the document ID generated by AppDocs
 
@@ -13228,7 +13228,7 @@ The following fields are collected:
 
 - **Correlation** - GUID for the correlation ID related to the operation
 
-- **DocId** - the document id generated by AppDocs
+- **DocId** - the document ID generated by AppDocs
 
 - **DocInstanceId** - DocInstanceId the document instance ID generated by AppDocs that is scoped to an operation instance on a document
 
@@ -13236,7 +13236,7 @@ The following fields are collected:
 
 - **DocUserId** - user ID from the MS auth layer
 
-- **DocUserIdProvider** - enumeration that represents the user id provider, 0 = Unkown, 1 = LiveId , 2 = OrgId, 3 = SSPI, 4 = ADAL
+- **DocUserIdProvider** - enumeration that represents the user ID provider, 0 = Unkown, 1 = LiveId , 2 = OrgId, 3 = SSPI, 4 = ADAL
 
 - **DurationInMs** - time in milliseconds for the file operation to end
 
@@ -13274,7 +13274,7 @@ The following fields are collected:
 
 - **ProviderApp** - the package name of the app from which file is opened
 
-- **ScopeInstanceId** - Scope Instance Id used to join data context to activities
+- **ScopeInstanceId** - Scope Instance ID used to join data context to activities
 
 - **Size** - file size
 
@@ -13634,7 +13634,7 @@ The following fields are collected:
 
 - **LastLoginDelta** - The time delta from last successful login.
 
-- **MSAserverUAID** - Correlation id with service telemetry data.
+- **MSAserverUAID** - Correlation ID with service telemetry data.
 
 - **PreviousIdentityState** - Indicates state of the account, like session expired. 
 
@@ -13653,7 +13653,7 @@ This event is collected for Office applications running under Apple platforms. T
 
 The following fields are collected:
 
-- **Data_DigitalRiverID** - Digital River product Id that maps to this Office product SKY
+- **Data_DigitalRiverID** - Digital River product ID that maps to this Office product SKY
 
 - **Data_Error** - A string representing an activation error code.
 
@@ -13675,7 +13675,7 @@ Tracks the various error notifications received from the sandbox. Used to detect
  
 The following fields are collected:
 
-- **AppId** - Id of the App
+- **AppId** - ID of the App
 
 - **AppUrl** - scrubbed app URL 
 
@@ -13973,15 +13973,15 @@ The following fields are collected:
 
 - **Failure.Detail** - The detailed info of the failure
 
-- **Failure.Id** - Failure Id
+- **Failure.Id** - Failure ID
 
 - **Failure.Signature** - The signature of the failure, which is same as the event name
 
-- **iKey** - Logging service server Id
+- **iKey** - Logging service server ID
 
 - **RMS.HRESULT** - The result of renewing user certificate
 
-- **RMS.ScenarioId** - Scenario Id defined by Rights Management Service Client
+- **RMS.ScenarioId** - Scenario ID defined by Rights Management Service Client
 
 - **RMS.SDKVersion** - The version of Rights Management Service Client
 
@@ -14009,7 +14009,7 @@ The following fields are collected:
 
 - **error_code** - error code for WKError
 
-- **function_name** - javascript function name when error
+- **function_name** - JavaScript function name when error
 
 - **js_exception_column_number** - The column number where JavaScript exception occurred 
 
