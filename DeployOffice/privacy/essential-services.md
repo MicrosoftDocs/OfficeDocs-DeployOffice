@@ -583,7 +583,7 @@ The following fields are collected:
 
 - **Microsoft_ADAL_is_silent_ui** - True/false telling if UI was shown (prompt) by ADAL
 
-- **Microsoft_ADAL_is_successfull** - True/false telling if ADAL API succeeded (MacOS)
+- **Microsoft_ADAL_is_successfull** - True/false telling if ADAL API succeeded (macOS)
 
 - **Microsoft_ADAL_is_successful** - True/false telling if ADAL API succeeded
 
@@ -687,7 +687,7 @@ The following fields are collected:
 
 - **MSAL_read_token** - Tokens that were read from cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
 
-- **MSAL_read_token_last_error** - If MSAL encountered an error reading from cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on MacOS).
+- **MSAL_read_token_last_error** - If MSAL encountered an error reading from cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on macOS).
 
 - **MSAL_request_duration** - How long the request took from when MSAL's top level API was called, until we returned a result.
 
@@ -713,7 +713,7 @@ The following fields are collected:
 
 - **MSAL_write_token** - Tokens that were written to cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
 
-- **MSAL_write_token_last_error** - If MSAL encountered an error writing to cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on MacOS).
+- **MSAL_write_token_last_error** - If MSAL encountered an error writing to cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on macOS).
 
 - **oneauth_api** - OneAuth API invoked for this authentication attempt.
 
@@ -721,7 +721,7 @@ The following fields are collected:
 
 - **oneauth_version** - The version of the OneAuth SDK.
 
-- **Platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+- **Platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: macOS, 4: UWP)
 
 - **Promptreasoncorrelationid** - A correlation identifier that can be used to look up a previous authentication event, which is used to explain why the user was prompted to authenticate.
 
@@ -872,7 +872,7 @@ specific device)
 
 - **oneauth_version** - The version of the OneAuth SDK.
 
-- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: macOS, 4: WinRT
 
 - **Scenarioname** - Name of the scenario for which auth is necessary, specified by the calling application.
 
