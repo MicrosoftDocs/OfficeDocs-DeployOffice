@@ -16,7 +16,7 @@ description: "Provides Office admins with information about an optional Microsof
 
 Microsoft Search in Bing helps the users in your organization quickly find work-related information, including people, files, internal sites, and more. Searching for this information is as easy as searching the web. For more information, see [What is Microsoft Search in Bing?](#what-is-microsoft-search-in-bing)
 
-To help your users take advantage of the benefits of Microsoft Search in Bing, we're making an extension available for the Google Chrome web browser. This optional extension will be available only in specific [locations](#which-locations-will-receive-the-microsoft-search-in-bing-extension) for domain-joined devices running Windows. If you decide to deploy this extension, it sets Bing as the default search engine for Google Chrome and provides easier access to Microsoft Search capabilities. If Bing is already the default search engine, the extension doesn't get installed. Even after the extension is installed, a simple [On/Off](#change-whether-bing-is-the-default-search-engine-for-google-chrome) toggle easily allows your users to stop using Bing as the default search engine.
+To help your users take advantage of the benefits of Microsoft Search in Bing, we're making an extension available for the Google Chrome web browser. This optional extension will be available only in specific [locations](#which-locations-will-receive-the-microsoft-search-in-bing-extension) for domain-joined devices running Windows. If you decide to deploy this extension, it sets Bing as the default search engine for Google Chrome and provides easier access to Microsoft Search capabilities. If Bing is already the default search engine, the extension doesn't get installed. Even after the extension is installed, an [On/Off](#change-whether-bing-is-the-default-search-engine-for-google-chrome) toggle easily allows your users to stop using Bing as the default search engine.
 
 Deployment of this optional extension relies on a background service, which we're making available with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). Even with the background service installed, you have control over the deployment of the extension. For example, the extension won't get installed on devices in your organization unless you opt in. You can opt in by selecting a specific setting in the Microsoft Search section of the Microsoft 365 admin center. For more information, see [How does the Microsoft Search in Bing extension for Google Chrome get installed?](#how-does-the-microsoft-search-in-bing-extension-for-google-chrome-get-installed)
 
@@ -63,7 +63,7 @@ If the extension has been installed on devices in your organization, and you cle
 
 #### Assign the extension to groups of users
 
-You can choose to provide the extension to everyone in your organization or just specific groups of users. The option to provide the extension only to specific groups of users allows you to do the following in your organization:
+You can choose to provide the extension to everyone in your organization or specific groups of users. The option to provide the extension only to specific groups of users allows you to do the following in your organization:
 
 - Pilot the use of Microsoft Search in Bing to a subset of users before deploying more broadly.
 - Deploy the extension only to groups of users that will benefit most from using Microsoft Search in Bing.
