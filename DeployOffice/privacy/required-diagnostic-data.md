@@ -11458,7 +11458,7 @@ The following fields are collected:
 
 - **AddinProviderV2** - Provider of the add-in 
 
-- **AddinTimeDateStampV2** - Complier timestamp
+- **AddinTimeDateStampV2** - Compiler timestamp
 
 - **AddinVersionV2** - Add-in version 
 
