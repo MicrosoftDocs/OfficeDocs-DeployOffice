@@ -44,7 +44,7 @@ Then, deploy and run the VL Serializer package file on each computer that you wa
 - Because the license plist file is encrypted using information from the computer on which it's installed, you can't copy it to a different computer to activate Office on that computer.
 - There's a single VL Serializer package that contains a single key that's shared between all volume licensed customer installations.
 - The VL Serializer package contains a binary executable that's named "Microsoft Office Setup Assistant." It's this executable that actually activates the volume license.
-- The VL Serializer package is compatible with mobile device management (MDM) servers such as Microsoft Intune, Jamf Pro, or FileWave.
+- The VL Serializer package is compatible with mobile device management (MDM) servers such as Jamf Pro, or FileWave.
 
 
 ## Related articles
