@@ -1,7 +1,7 @@
 ---
 title: "Change the Microsoft 365 Apps update channel for devices in your organization"
-ms.author: davguent
-author: davguent
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
