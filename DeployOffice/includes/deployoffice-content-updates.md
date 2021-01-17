@@ -2,6 +2,20 @@
 
 
 
+## Week of January 11, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/12/2021 | [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](/DeployOffice/microsoft-search-bing) | modified |
+| 1/12/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+| 1/12/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 1/12/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 1/14/2021 | [Overview of viewer mode for Microsoft 365 Apps](/DeployOffice/overview-viewer-mode) | modified |
+| 1/14/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 1/15/2021 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
+
+
 ## Week of January 04, 2021
 
 
