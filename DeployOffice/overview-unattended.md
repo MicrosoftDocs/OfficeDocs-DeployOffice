@@ -61,7 +61,7 @@ This process is mostly applicable if you're running unattended RPA on a dedicate
 
 &nbsp;&nbsp;&nbsp;*Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
 
-After that, and if the per-user settings are adjusted, users can open their app using any method. They don't have to use the command prompt to open the app.
+After that, and if the per-user settings are adjusted, users can open their app using any method. They don't have to use the command prompt to open it.
 
 ## See also
 
