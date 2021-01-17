@@ -54,15 +54,15 @@ After you start the application:
    > [!NOTE]
    > *appname* is dependent on the name of the Office app that you're opening.
 
-The preceding scenario happens every time that you want to run an unattended RPA scenario in Office. You can also save the syntax offline and paste it back into the prompt later.
+This scenario happens every time that you want to run an unattended RPA scenario in Office. You can also save the syntax offline and paste it back into the prompt later.
 
 ## Using the registry key
 
-This process is mostly applicable if you're running unattended RPA on a dedicated device. To indicate unattended usage, you can adjust your key with the following syntax:
+This process is mostly applicable if you're running unattended RPA on a dedicated device. To indicate unattended usage, you can adjust your key with this syntax:
 
-*Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
+> *Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
 
-Users can then open their application using any method (it doesn't have to be through the command prompt), as long as the per-user settings have been adjusted.
+After that, users can open their application using any method (it doesn't have to be through the command prompt), as long as the per-user settings are adjusted.
 
 ## See also
 
