@@ -48,7 +48,7 @@ After you start the application:
 1. Open the command prompt window (using your automation mechanism).
 1. At the command prompt, call your Office app.
    - After the app is called, a switch appears as the next command line.
-1. At the command line switch, pass an argument to indicate that you will use RPA unattended:
+1. At the command-line switch, pass an argument to indicate that you will use RPA unattended:
 
    *“\[appname\].exe - unattended”*
 
