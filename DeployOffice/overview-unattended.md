@@ -33,7 +33,9 @@ These are the requirements for using Microsoft 365 Apps for enterprise with unat
 Like with an attended user license, admins can manage the Microsoft 365 Apps for enterprise (unattended) licenses in the Microsoft 365 Admin center.
 
 If the account doesn't have a license for Microsoft 365 Apps for enterprise (unattended), the Office app that's being used for unattended RPA runs in reduced functionality mode. The unattended process can open and print existing documents in Office applications, but it can't create new documents or edit and save existing documents. In this case, the following message appears under the ribbon in the document:
-> **LICENSE REQUIRED** The account \<*account sign-in name*\> requires an Office license for unattended use.
+
+&nbsp;&nbsp;&nbsp;**LICENSE REQUIRED** The account \<*account sign-in name*\> requires an Office license for unattended use.
+&nbsp;&nbsp;&nbsp;
 
 ## Steps to use Microsoft 365 Apps for enterprise with unattended RPA
 
@@ -60,7 +62,8 @@ This scenario happens every time that you want to run an unattended RPA scenario
 
 This process is mostly applicable if you're running unattended RPA on a dedicated device. To indicate unattended usage, you can adjust your key with this syntax:
 
-> *Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
+&nbsp;&nbsp;&nbsp;*Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
+&nbsp;&nbsp;&nbsp;
 
 After that, users can open their application using any method (it doesn't have to be through the command prompt), as long as the per-user settings are adjusted.
 
