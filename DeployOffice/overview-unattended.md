@@ -32,10 +32,9 @@ These are the requirements for using Microsoft 365 Apps for enterprise with unat
 
 Like with an attended user license, admins can manage the Microsoft 365 Apps for enterprise (unattended) licenses in the Microsoft 365 Admin center.
 
-If the account doesn't have a license for Microsoft 365 Apps for enterprise (unattended), the Office app that's being used for unattended RPA runs in reduced functionality mode. The unattended process can open and print existing documents in Office applications, but it can't create new documents or edit and save existing documents. In this case, the following message appears under the ribbon in the document:
+If the account doesn't have a license for Microsoft 365 Apps for enterprise (unattended), the Office app that's being used for unattended RPA runs in reduced functionality mode. The unattended process can open and print existing documents in Office apps, but it can't create new documents or edit and save existing documents. In this case, the following message appears under the ribbon in the document:
 
-&nbsp;&nbsp;&nbsp;**LICENSE REQUIRED** The account \<*account sign-in name*\> requires an Office license for unattended use.
-&nbsp;&nbsp;&nbsp;
+> "**LICENSE REQUIRED** The account \<*account sign-in name*\> requires an Office license for unattended use."
 
 ## Steps to use Microsoft 365 Apps for enterprise with unattended RPA
 
@@ -44,7 +43,7 @@ You can use one of the following options.
 ## Use the command prompt window
 This process applies mostly to UI automation scenarios.
 
-After you start the application:
+After you start the app:
 
 1. Open the command prompt window (using your automation mechanism).
 1. At the command prompt, call your Office app.
@@ -63,9 +62,8 @@ This scenario happens every time that you want to run an unattended RPA scenario
 This process is mostly applicable if you're running unattended RPA on a dedicated device. To indicate unattended usage, you can adjust your key with this syntax:
 
 &nbsp;&nbsp;&nbsp;*Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
-&nbsp;&nbsp;&nbsp;
 
-After that, users can open their application using any method (it doesn't have to be through the command prompt), as long as the per-user settings are adjusted.
+After that, and if the per-user settings are adjusted, users can open their app using any method. They don't have to use the command prompt to open the app.
 
 ## See also
 
