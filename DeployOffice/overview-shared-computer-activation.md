@@ -41,6 +41,7 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
   
 > [!NOTE]
 > - The Microsoft 365 Business Premium plan is the only business plan that includes support for shared computer activation. There are other business plans, such as Microsoft 365 Business Standard, that include Microsoft 365 Apps for business, but, those business plans don't include support for shared computer activation.
+> - Shared computer activation is available for Education plans that include Microsoft 365 Apps for enterprise. For example, Office 365 A3 or Microsoft 365 A5.
 > - Shared computer activation isn't available for Office for Mac.
 
 Make sure you [assign each user a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
