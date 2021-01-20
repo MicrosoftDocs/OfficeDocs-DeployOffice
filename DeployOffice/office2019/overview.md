@@ -21,7 +21,7 @@ Office 2019 is the latest version of Microsoft's productivity software that's av
 > [!IMPORTANT]
 > Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. 
   
-Volume licensed versions of Office 2019 are available for enterprise admins to download and deploy to the users in their organization. This includes the following Office products:
+Volume licensed versions of Office 2019 are available for enterprise admins to download and deploy to the users in their organization. The following Office products are available for devices running Windows:
 
 - Office Professional Plus 2019
 - Office Standard 2019
@@ -32,7 +32,9 @@ Volume licensed versions of Office 2019 are available for enterprise admins to d
 
 These Office products now use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
-Office 2019 for Mac is also available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For devices running macOS, Office Standard 2019 for Mac is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+
+For more information about these Office 2019 products, see [Compare suites available through volume licensing](https://www.microsoft.com/microsoft-365/business/microsoft-office-volume-licensing-suites-comparison).
 
 ## What's changed in Office 2019?
 
@@ -71,9 +73,10 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 ## Additional information
 
-- Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business.
+- Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business. 
+- Access and Publisher aren't available for devices running macOS.
 - There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
-- All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 gb or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version.  For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+- All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version.  For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet access isn’t required to install, activate, or use Office 2019.
 - There isn’t a 2019 version of SharePoint Designer or InfoPath. The last version for both products is 2013.
 - Volume licensed versions of Office 2019 aren't supported on [Windows 10 in S mode](https://support.microsoft.com/windows/851057d6-1ee9-b9e5-c30b-93baebeebc85) or when using [Windows Defender Application Control (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview).
