@@ -23,13 +23,7 @@
 |------|------------|--------|
 | 1/5/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
 | 1/5/2021 | [Move devices to Current Channel](/DeployOffice/other/move-devices-current-channel) | modified |
+| 1/6/2021 | [Microsoft 365 change guide](/DeployOffice/microsoft-365-change-guide) | added |
+| 1/6/2021 | [Microsoft 365 change guide](/DeployOffice/microsoft-365-change-guide) | modified |
 | 1/7/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
-
-
-## Week of December 14, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/15/2020 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 12/15/2020 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 1/8/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | renamed |
