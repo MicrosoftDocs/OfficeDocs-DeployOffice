@@ -21,7 +21,7 @@ description: "Best practices from the field: Right-sizing your initial deploymen
 
 When you plan a Microsoft 365 Apps deployment with Configuration Manager in a multi-language enterprise environment, you might face the following challenge:
 
-To prevent overloading your corporate internet connections, include  as many source files for different languages as possible in the on-premises deployment package. But including that many languages increases the on-premises LAN/WAN traffic, as all distribution points and managed clients will download the whole package, regardless of what's actually needed.
+To prevent overloading your corporate internet connections, include as many source files for different languages as possible in the on-premises deployment package. But including that many languages increases the on-premises LAN/WAN traffic, as all distribution points and managed clients will download the whole package, regardless of what's actually needed.
 
 Leaning toward the two extremes (host everything on-premises or host nothing) isn't feasible for most organizations. This article will show you how to find the sweet spot that balances the impact on internet and on local resources.
 
@@ -48,7 +48,7 @@ So, we could include all languages in one on-premises deployment package to redu
 
 If we go the other extreme, we could remove all source files and use Configuration Manager to just initiate the install. We would rely on the Office CDN (content delivery network) to supply just the required source files. This method would ensure that devices will only download what they need, but it all comes from the internet. If we assume that every other device needs one more language, we are looking at roughly 81 terabytes of traffic from the internet (50,000 devices * 1.5 GB plus 25,000 devices * 0.25 GB). That is a great reduction in overall traffic, but it will contribute to internet access congestion.
 
-We could also break the one, large deployment package into a smaller core package and individual language packs. This will reduce that amount of content being synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex and we would have to maintain 25 individual deployment packages going forward.
+We could also break the one large deployment package into a smaller core package and individual language packs. This will reduce that amount of content being synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex and we would have to maintain 25 individual deployment packages going forward.
 
 The good news is that we don't have to think in extremes. Instead, we can use a feature called “AllowCdnFallback”. When enabled, the installation engine is allowed to fall back to Office CDN for each language pack that it can't find locally in the Ccmcache folder. This method allows us to replace LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, this device will have to download approximately 250 megabytes. But it will save 49,999 devices from synchronizing the source files from distribution points (~12.5 terabytes), if we remove this language from the source file set. This sounds like a  good deal!
 
@@ -80,7 +80,7 @@ Feel free to adjust the query to your needs, keeping in mind that getting a roug
 This method enables you to quickly access three key factors:
 
 - Which group of language packs is standing for 80%/90%/95%/99% of your install base?
-- How many installs of language packs are'nt covered by this group?
+- How many installs of language packs aren't covered by this group?
 - What is the saving on WAN/LAN network traffic and impact on internet bandwidth?
 
 For the last bullet, do these calculations for each group:

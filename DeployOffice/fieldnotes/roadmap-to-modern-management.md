@@ -26,7 +26,7 @@ ms.collection:
 
 Microsoft recently released to public preview a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers during the preview, we've developed some best practices on how to adopt these new features.
 
-There's no definitive way to adopt these new features. But the following the order enables admins to quickly recognize the benefits while keeping the rate of change manageable. But adjust the approach according to the needs of your organization.
+There's no definitive way to adopt these new features. But the following the order enables admins to quickly recognize the benefits while keeping the rate of change manageable. But you can adjust the approach according to the needs of your organization.
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
@@ -44,9 +44,9 @@ You can then delve right into:
 - Performance metrics such as application launch times and document load times.
 - Channel metrics such as which channels and builds are sending diagnostic data.
 
-You can also compare two builds. This step, enables you to quickly assess if a newly deployed build is more stable and faster than the previous one. You then can proactively address issues, as opposed to waiting for issues to surface after you release a new build into your environment.
+You can also compare two builds. This step enables you to quickly assess if a newly deployed build is more stable and faster than the previous one. You then can proactively address issues, as opposed to waiting for issues to surface after you release a new build into your environment.
 
-There is a minimum number of sessions required per app and version. This minimum ensures that Microsoft 365 Apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
+There's a minimum number of sessions required per app and version. This minimum ensures that Microsoft 365 Apps health can calculate reliable insights. A session is the period from launching an application until it is closed. For example, you are likely to see more sessions from an app like Excel than Outlook.
 
 If you've disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Microsoft 365 Apps health, you have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to Optional.
 
