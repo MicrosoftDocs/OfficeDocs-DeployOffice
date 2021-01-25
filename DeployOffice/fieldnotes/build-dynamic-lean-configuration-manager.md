@@ -26,7 +26,7 @@ Managing Microsoft 365 Apps in larger organizations can be a complex task. You m
 This article covers the following scenarios:
 
 - [Set up collections that automatically add and remove devices based on installed update channel](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels). This helps you to quickly identify how many devices are running on a given channel.
-- [Set up a collection that automatically captures all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). This helps you to easily target Microsoft 365 Apps updates, especially if some devices are running other Office releases like Office 2016.
+- [Set up a collection that automatically captures all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). This helps you to easily target Microsoft 365 Apps updates, especially if you support multiple update channels in your organization. If you have a mixed environment, e.g. with devices still running Office 2016, this makes proper targeting to Microsoft 365 Apps only easier as well.
 - [Set up a collection that captures all devices on update channels which your IT department doesn't support](build-dynamic-lean-configuration-manager.md#catch-devices-on-other-update-channels). In case you don't support all available update channels in your organization, this implementation helps you to quickly identify and mitigate any configuration drift.
 
 For each scenario, you will find a detailed step-by-step guide as well as some notes on how these collections can be put to work.
@@ -71,7 +71,9 @@ Repeat these steps for each update channel that you want to be captured in a sep
 
 ## Catch devices running Microsoft 365 Apps
 
-Follow these steps to create a dynamic collection that will add all devices that have Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped automatically. This kind of collection is often used to [deploy Microsoft 365 Apps updates](../manage-microsoft-365-apps-updates-configuration-manager.md) for all update channels that you support internally. It's important to *not* deploy updates to the individual collections, because devices that are performing a channel change must have access to an update from the newly assigned channel to complete the transition. Devices will only download applicable updates. So if a device is offered updates from multiple channels, it will only download the delta from the update channel that the device is currently on or is instructed to switch to. Updates from other channels won't be downloaded.
+Follow these steps to create a dynamic collection that will add all devices that have Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped automatically. E.g. when you are currently migrating to Microsoft 365 Apps, there is no need for manual maintenance of such a collection any more.
+
+It's a common practise to use this collection for deploying [Microsoft 365 Apps updates](../manage-microsoft-365-apps-updates-configuration-manager.md) for all channels supported by your organization. This allows each device to fetch the matching update, it will ignore (and not download) updates from other channels. This will also cover the scenario that a device is switching channels. In this state, the device is still on the previous channel, but must be able to access the latest update from the targeted channel to finalize transition. Deploying updates to the individual, per-channel collections would break such scenarios. During download, device will use delta compression, so only required chunks will be downloaded, not the complete update source.
 
 Here is how to implement this collection:
 
