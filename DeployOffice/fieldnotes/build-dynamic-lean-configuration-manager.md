@@ -26,7 +26,7 @@ Managing Microsoft 365 Apps in larger organizations can be a complex task. You m
 This article covers the following scenarios:
 
 - [Set up collections that automatically add and remove devices based on installed update channel](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels). This helps you to quickly identify how many devices are running on a given channel.
-- [Set up a collection that automatically captures all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). This helps you to easily target Microsoft 365 Apps updates, especially if you support multiple update channels in your organization. If you have a mixed environment, e.g. with devices still running Office 2016, this makes proper targeting to Microsoft 365 Apps only easier as well.
+- [Set up a collection that automatically captures all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). This helps you to easily target Microsoft 365 Apps updates, especially if you support multiple update channels in your organization. If you have a mixed environment, such as with devices still running Office 2016, this makes proper targeting to Microsoft 365 Apps only easier as well.
 - [Set up a collection that captures all devices on update channels which your IT department doesn't support](build-dynamic-lean-configuration-manager.md#catch-devices-on-other-update-channels). In case you don't support all available update channels in your organization, this implementation helps you to quickly identify and mitigate any configuration drift.
 
 For each scenario, you will find a detailed step-by-step guide as well as some notes on how these collections can be put to work.
@@ -95,7 +95,7 @@ The result is a collection that will automatically add all devices that are runn
 
 ## Catch devices on other update channels
 
-After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices which are on update channels that you support internally. This leaves all devices which are on other update channels in this collection. You can then use this collection to deploy e.g. a required appplication which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
+After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices which are on update channels that you support internally. This leaves all devices which are on other update channels in this collection. You can then use this collection to deploy, for example a required appplication which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
 
 1. Navigate to **Assets and Compliance**. Select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and select a limiting collection. Select **Next**.
