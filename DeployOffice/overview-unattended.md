@@ -2,7 +2,7 @@
 title: "Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise"
 ms.author: jwhit
 author: jwhit-MSFT
-manager: laurawi
+manager: laurawiu
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -48,7 +48,7 @@ After you start the app:
    - After the app is called, a switch appears as the next command line.
 1. At the command-line switch, pass an argument to indicate that you'll use RPA unattended:
 
-   *“\[appname\].exe - unattended”*
+   *“\[appname\].exe -unattended”*
 
    > [!NOTE]
    > *appname* is dependent on the name of the Office app that you're opening.
