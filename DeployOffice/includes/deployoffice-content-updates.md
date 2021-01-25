@@ -2,6 +2,18 @@
 
 
 
+## Week of January 18, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/19/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
+| 1/19/2021 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
+| 1/22/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | added |
+| 1/20/2021 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
+| 1/20/2021 | [Overview of Office 2019 (for IT Pros)](/DeployOffice/office2019/overview) | modified |
+
+
 ## Week of January 11, 2021
 
 
@@ -16,6 +28,15 @@
 | 1/15/2021 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
 
 
+## Week of December 14, 2020
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/15/2020 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 12/15/2020 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of January 04, 2021
 
 
@@ -23,7 +44,4 @@
 |------|------------|--------|
 | 1/5/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
 | 1/5/2021 | [Move devices to Current Channel](/DeployOffice/other/move-devices-current-channel) | modified |
-| 1/6/2021 | [Microsoft 365 change guide](/DeployOffice/microsoft-365-change-guide) | added |
-| 1/6/2021 | [Microsoft 365 change guide](/DeployOffice/microsoft-365-change-guide) | modified |
 | 1/7/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
-| 1/8/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | renamed |
