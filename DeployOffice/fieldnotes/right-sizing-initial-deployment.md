@@ -17,65 +17,64 @@ description: "Best practices from the field: Right-sizing your initial deploymen
 # Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
 
-When you plan a Microsoft 365 Apps deployment with Configuration Manager in a multi-language enterprise environment, you might face the following challenge:
+When you plan a Microsoft 365 Apps deployment with Configuration Manager in a multi-language enterprise environment, you might face the following challenge: 
+To prevent overloading your corporate internet connections, you  want to include as many source files for different languages as possible in the on-premises deployment package. But including that many languages increases the on-premises LAN/WAN traffic, as all distribution points and managed clients will download the whole package, regardless of what's actually needed.
 
-To prevent overloading your corporate internet connections, include as many source files for different languages as possible in the on-premises deployment package. But including that many languages increases the on-premises LAN/WAN traffic, as all distribution points and managed clients will download the whole package, regardless of what's actually needed.
+Leaning toward either extreme (host everything on-premises or host nothing) isn't feasible for most organizations. This article shows how to find the sweet spot that balances the impact on internet and on local resources.
 
-Leaning toward the two extremes (host everything on-premises or host nothing) isn't feasible for most organizations. This article will show you how to find the sweet spot that balances the impact on internet and on local resources.
-
-There are three goals that we're trying to achieve:
+There are three goals to achieve:
 
 - Reduce the impact on your company’s internet circuits as much as possible.
 - Reduce the impact on your internal network as much as possible.
-- Go with the minimum number of deployment packages to reduce on-going maintenance costs.
+- Use a minimum of deployment packages to reduce on-going maintenance costs.
 
-The guidance in this article applies to the initial on-premises deployment of Microsoft 365 Apps. In other articles, we cover how to best support [remote work](https://techcommunity.microsoft.com/t5/office-365-blog/deploy-office-365-proplus-to-remote-workers/ba-p/1258514) and optimize [subsequent installs of Visio, Project, or another language packs](build-dynamic-lean-universal-packages.md).
+This article applies to the initial on-premises deployment of Microsoft 365 Apps. In other articles, we cover how to best support [remote work](https://techcommunity.microsoft.com/t5/office-365-blog/deploy-office-365-proplus-to-remote-workers/ba-p/1258514) and optimize [subsequent installs of Visio, Project, or another language packs](build-dynamic-lean-universal-packages.md).
 
-Let’s first look at a sample scenario and how we identified the right balance. Then we'll walk you through the steps to implement the solution in your organization.
+Let’s first look at a sample scenario and how we determine the right balance. Then we'll walk through the steps to implement the solution in your organization.
 
 ## Sample scenario and solution
 
-Below is a sample scenario based on an actual customer engagement. It is pretty typical of the characteristics of an enterprise environment: 
+Let's look at a sample scenario in a typical enterprise environment:
 
 - IT supports 24 different languages for Microsoft 365 Apps.
-- IT manages 50,000 devices around the globe using Microsoft Endpoint Configuration Manager.
+- IT use Microsoft Endpoint Configuration Manager to manage 50,000 devices around the globe.
 - There's a small number of internet breakouts, and those are always congested.
-- Goal is to complete upgrade in 6 months.
+- The goal is to upgrade within 6 months.
 
-So, we could include all languages in one on-premises deployment package to reduce impact on the internet breakouts to zero. Including 24 languages bumps the package size up to approximately 8 gigabytes. As Configuration Manager synchronizes the full package to each device, regardless of what the device actually needs, this package size causes 400 terabytes of LAN traffic (8 gigabytes times 50,000 devices).
+We could include all the languages in one on-premises deployment package to reduce impact on the internet breakouts to zero. Including 24 languages inflates the package size up to about 8 gigabytes. As Configuration Manager synchronizes the full package to each device, regardless of what the device actually needs, this package size causes 400 terabytes of LAN traffic (8 gigabytes times 50,000 devices).
 
-If we go the other extreme, we could remove all source files and use Configuration Manager to just initiate the install. We would rely on the Office CDN (content delivery network) to supply just the required source files. This method would ensure that devices will only download what they need, but it all comes from the internet. If we assume that every other device needs one more language, we are looking at roughly 81 terabytes of traffic from the internet (50,000 devices * 1.5 GB plus 25,000 devices * 0.25 GB). That is a great reduction in overall traffic, but it will contribute to internet access congestion.
+If we go the other extreme, we could remove all source files, and use Configuration Manager to just initiate the install. We would rely on the Office content delivery network (CDN) to supply just the required source files. This method would ensure that each device will only download what they need. But it all comes from the internet. If we assume that every other device needs one extra language, this adds up to roughly 81 terabytes of traffic from the internet (50,000 devices * 1.5 GB plus 25,000 devices * 0.25 GB). That is a great reduction in overall traffic, but it would contribute to internet access congestion.
 
-We could also break the one large deployment package into a smaller core package and individual language packs. This will reduce that amount of content being synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex and we would have to maintain 25 individual deployment packages going forward.
+We could also break the single large deployment package into a smaller core package and individual language packs. This reduces the amount of content being synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex, and we would have to maintain 25 individual deployment packages going forward.
 
-The good news is that we don't have to think in extremes. Instead, we can use a feature called “AllowCdnFallback”. When enabled, the installation engine is allowed to fall back to Office CDN for each language pack that it can't find locally in the Ccmcache folder. This method allows us to replace LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, this device will have to download approximately 250 megabytes. But it will save 49,999 devices from synchronizing the source files from distribution points (~12.5 terabytes), if we remove this language from the source file set. This sounds like a  good deal!
+The good news is that we don't have to go to extremes. Instead, we can use a feature called *AllowCdnFallback*. When this option enabled, the installation engine can fall back to Office CDN for each language pack that it can't find locally in the *Ccmcache* folder. This method lets us replace LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, the device will have to download about 250 megabytes. But if we remove this language from the source file set, it will save 49,999 devices from synchronizing the source files from distribution points (~12.5 terabytes). This sounds like a  good deal!
 
-To be able to identify which language packs we should exclude, we can generate an overview of how often each language pack is installed. We can then add up the number of all language pack installs and calculate the share of each one. Typically, the distribution isn't even, and a small subset of language packs accounts for most installs as shown below:
+To identify which language packs to exclude, we can generate an overview of how often each language pack is installed. We then add up the number of all language pack installs and calculate the share of each one. Typically, the distribution isn't even, and a small subset of language packs accounts for most installs, as the following example shows:
 
 ![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/fieldnotes/right-sizing-initial-deployment-1.png)
 
-In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl, and ru-ru) account for 92% of all language pack installations. The remaining 16 language packs are only installed on 8% of all devices. Based on this data, we can calculate the impact on the on-prem WAN/LAN as well as internet connections (caused by devices having to download additional source files):
+In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl, and ru-ru) account for 92 percent of all language pack installations. The remaining 16 language packs are only installed on 8 percent of devices. Based on this data, we can calculate the impact on the on-prem WAN/LAN as well as internet connections (caused by devices having to download additional source files):
 
 ![Spreadsheet showing the different impact on LAN/WAN and internet bandwidth for different language pack combinations](../images/fieldnotes/right-sizing-initial-deployment-2.png)
 
-We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic as well as internet bandwidth consumed. But if we include just the 8 language packs mentioned above, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50% and we will save more than 180 terabytes of LAN/WAN network traffic. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md) and [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
+We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic, as well as internet bandwidth consumed. But if we include just the 8 language packs mentioned previously, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50 percent. We would reduce LAN/WAN network traffic by more than 180 terabytes. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md) and [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
-Therefore, we went with 8 language packs in this scenario, which saved time and network bandwidth during the first sync across all distribution points and client devices. Going forward, we also applied this on-premises/cloud split to Office updates, so this customer is benefiting from the split every month, not only during the initial deployment.
+In this scenario, we decided to go with 8 language packs, which saves time and network bandwidth during the first sync across all distribution points and client devices. We'll also apply this on-premises/cloud split to future Office updates, so the customer is benefits from the split every month, not only during the initial deployment.
 
 ## How to implement a right-sized deployment in your environment
 
 ### Identify your most used language packs
 
-First off, you need an overview on how often each individual language pack is installed in your environment. If you're using Configuration Manager, you can directly query the database for an overview and count of installed language packs with the below query:
+First, you need to know how often each individual language pack is installed in your environment. If you're using Configuration Manager, you can use the following query against the database to get an overview and count of installed language pack:
 
 ```sql
 select count (distinct resourceid) as total, DisplayName0 from v_Add_Remove_Programs where DisplayName0 like 'Microsoft Office Language Pack%' group by resourceid, DisplayName0
 
 ```
 
-Feel free to adjust the query to your needs, keeping in mind that getting a rough understanding of the distribution of language packs is fine. Copy the data into Excel, sort by number of installs and calculate the total number of installs. Then calculate the individual share of each language pack and start summing those up as shown above.
+Adjust the query to your needs. Keep in mind that even a rough understanding of the distribution of language packs is fine. Copy the data into Microsoft Excel, sort by number of installs, and calculate the total number of installs. Then calculate the individual share of each language pack, and start summing those up as shown above.
 
 This method enables you to quickly access three key factors:
 
