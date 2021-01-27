@@ -19,10 +19,10 @@ description: "Best practices from the field: Right-sizing your initial deploymen
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
 
-When you plan a Microsoft 365 Apps deployment with Configuration Manager in a multi-language enterprise environment, you might face the following challenge: 
-To prevent overloading your corporate internet connections, you  want to include as many source files for different languages as possible in the on-premises deployment package. But including that many languages increases the on-premises LAN/WAN traffic, as all distribution points and managed clients will download the whole package, regardless of what's actually needed.
+When you plan a Microsoft 365 Apps deployment using Configuration Manager in a multi-language enterprise environment, you might face the following challenge: 
+To prevent overloading your corporate internet connections, you  want to include as many source files for different languages as possible in the on-premises deployment package. But including many languages increases the on-premises LAN/WAN traffic, because all distribution points and managed clients will download the whole package, regardless of what's actually needed.
 
-Leaning toward either extreme (host everything on-premises or host nothing) isn't feasible for most organizations. This article shows how to find the sweet spot that balances the impact on internet and on local resources.
+Either extreme (host everything on-premises or host nothing) isn't feasible for most organizations. This article shows how to balance the impact on internet and on local resources.
 
 There are three goals to achieve:
 
@@ -30,7 +30,7 @@ There are three goals to achieve:
 - Reduce the impact on your internal network as much as possible.
 - Use a minimum of deployment packages to reduce on-going maintenance costs.
 
-This article applies to the initial on-premises deployment of Microsoft 365 Apps. In other articles, we cover how to best support [remote work](https://techcommunity.microsoft.com/t5/office-365-blog/deploy-office-365-proplus-to-remote-workers/ba-p/1258514) and optimize [subsequent installs of Visio, Project, or another language packs](build-dynamic-lean-universal-packages.md).
+This article applies to the initial on-premises deployment of Microsoft 365 Apps. In other articles, we cover how to best support [remote work](https://techcommunity.microsoft.com/t5/office-365-blog/deploy-office-365-proplus-to-remote-workers/ba-p/1258514) and optimize [subsequent installations of Visio, Project, or another language packs](build-dynamic-lean-universal-packages.md).
 
 Let’s first look at a sample scenario and how we determine the right balance. Then we'll walk through the steps to implement the solution in your organization.
 
@@ -40,14 +40,14 @@ Let's look at a sample scenario in a typical enterprise environment:
 
 - IT supports 24 different languages for Microsoft 365 Apps.
 - IT use Microsoft Endpoint Configuration Manager to manage 50,000 devices around the globe.
-- There's a small number of internet breakouts, and those are always congested.
+- A small number of internet breakouts occur, and these are always congested.
 - The goal is to upgrade within 6 months.
 
-We could include all the languages in one on-premises deployment package to reduce impact on the internet breakouts to zero. Including 24 languages inflates the package size up to about 8 gigabytes. As Configuration Manager synchronizes the full package to each device, regardless of what the device actually needs, this package size causes 400 terabytes of LAN traffic (8 gigabytes times 50,000 devices).
+We could include all the languages in one on-premises deployment package to reduce impact on the internet breakouts to zero. Including 24 languages inflates the package size up to about 8 gigabytes. As Configuration Manager synchronizes the full package to each device, regardless of what the device actually needs, this package size causes 400 terabytes of LAN traffic (8 gigabytes * 50,000 devices).
 
-If we go the other extreme, we could remove all source files, and use Configuration Manager to just initiate the install. We would rely on the Office content delivery network (CDN) to supply just the required source files. This method would ensure that each device will only download what they need. But it all comes from the internet. If we assume that every other device needs one extra language, this adds up to roughly 81 terabytes of traffic from the internet (50,000 devices * 1.5 GB plus 25,000 devices * 0.25 GB). That is a great reduction in overall traffic, but it would contribute to internet access congestion.
+At other extreme, we could remove all source files, and use Configuration Manager to just initiate the installation. We'd rely on the Office content delivery network (CDN) to supply just the required source files. This method would ensure that each device will only download what they need. But it all comes from the internet. If we assume that every other device needs one extra language, this adds up to roughly 81 terabytes of traffic from the internet (50,000 devices * 1.5 GB plus 25,000 devices * 0.25 GB). That is a great reduction in overall traffic, but it would contribute to internet access congestion.
 
-We could also break the single large deployment package into a smaller core package and individual language packs. This reduces the amount of content being synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex, and we would have to maintain 25 individual deployment packages going forward.
+We could also break the single large deployment package into a smaller core package and individual language packs. This option reduces the amount of content synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex, and we'd then have to maintain 25 individual deployment packages going forward.
 
 The good news is that we don't have to go to extremes. Instead, we can use a feature called *AllowCdnFallback*. When this option enabled, the installation engine can fall back to Office CDN for each language pack that it can't find locally in the *Ccmcache* folder. This method lets us replace LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, the device will have to download about 250 megabytes. But if we remove this language from the source file set, it will save 49,999 devices from synchronizing the source files from distribution points (~12.5 terabytes). This sounds like a  good deal!
 
@@ -55,13 +55,13 @@ To identify which language packs to exclude, we can generate an overview of how 
 
 ![Table showing how the individual install base of language packs is summed up to the overall coverage](../images/fieldnotes/right-sizing-initial-deployment-1.png)
 
-In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl, and ru-ru) account for 92 percent of all language pack installations. The remaining 16 language packs are only installed on 8 percent of devices. Based on this data, we can calculate the impact on the on-prem WAN/LAN as well as internet connections (caused by devices having to download additional source files):
+In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl, and ru-ru) account for 92 percent of all language pack installations. The remaining 16 language packs are only installed on 8 percent of devices. Based on this data, we can calculate the impact on the on-prem WAN/LAN and internet connections (caused by devices having to download another source files):
 
 ![Spreadsheet showing the different impact on LAN/WAN and internet bandwidth for different language pack combinations](../images/fieldnotes/right-sizing-initial-deployment-2.png)
 
-We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic, as well as internet bandwidth consumed. But if we include just the 8 language packs mentioned previously, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50 percent. We would reduce LAN/WAN network traffic by more than 180 terabytes. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md) and [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
+We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic and internet bandwidth consumed. But if we include just the 8 language packs mentioned previously, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50 percent. We'd reduce LAN/WAN network traffic by more than 180 terabytes. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md) and [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
-In this scenario, we decided to go with 8 language packs, which saves time and network bandwidth during the first sync across all distribution points and client devices. We'll also apply this on-premises/cloud split to future Office updates, so the customer is benefits from the split every month, not only during the initial deployment.
+In this scenario, we decided to go with 8 language packs, which save time and network bandwidth during the first sync across all distribution points and client devices. We'll also apply this on-premises/cloud split to future Office updates, so the customer is benefits from the split every month, not only during the initial deployment.
 
 ## How to implement a right-sized deployment in your environment
 
@@ -78,9 +78,9 @@ Adjust the query to your needs. Keep in mind that even a rough understanding of 
 
 This method enables you to quickly access three key factors:
 
-- Which group of language packs is standing for 80%/90%/95%/99% of your install base?
-- How many installs of language packs aren't covered by this group?
-- What is the saving on WAN/LAN network traffic and impact on internet bandwidth?
+- Which group of language packs is standing for most of your install base?
+- How many installations of language packs aren't covered by this group?
+- What's the saving on WAN/LAN network traffic and impact on internet bandwidth?
 
 For the last bullet, do these calculations for each group:
 
@@ -97,17 +97,17 @@ Decide which language packs you want to include and note them down.
 
 The next step is to craft a deployment package that includes the selected language packs and allows devices to fall back to Office CDN for missing content.
 
-1. Make sure, that the account (user or SYSTEM) used to install Microsoft 365 Apps can connect to the internet [as documented](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
-2. Launch your Configuration Manager, navigate to **Software Library**, open the **Office 365 Client Management** node, and launch the **Office 365 Installer** wizard. 
+1. Make sure, that the account (user or SYSTEM) that's used to install Microsoft 365 Apps can connect to the internet [as documented](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
+2. Launch your Configuration Manager, navigate to **Software Library**, open the **Office 365 Client Management** node, and start the **Office 365 Installer** wizard. 
 3. Click through the wizard and make sure to select all the languages you want to include. 
-4. Once the wizard has finished its work, we must adjust the configuration file to allow Office CDN fallback and instruct the setup engine to dynamically determine which languages to install instead of hard coding them. Navigate to your content source folder and open the configuration.xml in an editor. 
-5. Remove all the hard-coded languages and replace them by a combination of:
+4. Once the wizard has finished its work, you need to adjust the configuration file to allow Office CDN fallback and instruct the setup engine to dynamically determine which languages to install instead of hard coding them. Navigate to your content source folder and open the configuration.xml in an editor.
+5. Remove all the hard-coded languages and replace them by a combination of these:
 
-- Specify languages you want to always install. 
-- Add ID="[MatchPreviousMSI](../upgrade-from-msi-version.md#install-the-same-language-resources)" if you want to carry forward any already installed languages. 
-- Add ID="[MatchOS](../overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system)" if you want to install languages matching the Windows Display Language.
+   - Specific languages you want to always install. 
+   - Add ID="[MatchPreviousMSI](../upgrade-from-msi-version.md#install-the-same-language-resources)" if you want to carry forward any already installed languages. 
+   - Add ID="[MatchOS](../overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system)" if you want to install languages matching the Windows Display Language.
 
-6. Also add [AllowCdnFallback="True"](../office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Below is an example of such a configuration.xml:
+6. Also add [AllowCdnFallback="True"](../office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Here's example of such a configuration.xml:
 
 ```
 <Configuration>
@@ -125,20 +125,20 @@ The next step is to craft a deployment package that includes the selected langua
 </Configuration>
 ```
 
-7. Save the file and return to the Configuration Manager console. Navigate to **Software Library** > **Application Management** > **Applications**, select your application, switch to the **Deployment Types** tab, right-click the matching entry and click **Update Content**.
+7. Save the file and return to the Configuration Manager console. Navigate to **Software Library** > **Application Management** > **Applications**. Select your application, switch to the **Deployment Types** tab, right-click the matching entry, and then select **Update Content**.
 
 ![Screenshot of Configuration Manager console](../images/fieldnotes/right-sizing-initial-deployment-4.png)
 
-8. Once all distribution points have synchronized the changes, you can deploy your application as usual.
+8. After all distribution points have synchronized the changes, you can deploy your application as usual.
 
-We're all set!
+You're all set!
 
 ### Further reduce network impact
 
-We recommend using these additional features to further reduce the network impact:
+We recommend these more steps to further reduce the network impact:
 
-- Use [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content that's coming from distribution points. As this is the bulk of the download, enabling this is highly recommended and will help all your on-premises deployments, not just Office.
-- Configure [Delivery Optimization](../delivery-optimization.md) on your devices to allow them to peer cache content coming from the Office CDN. To use Delivery Optimization during Office install, you should deploy version 1908 or later. For version 1908 to 1911, you must set a specific registry key as [described here](../delivery-optimization.md#configure-microsoft-365-apps-to-use-delivery-optimization).
+- Use [Client Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content coming from distribution points. Because this content is the bulk of the download, we recommend this step will help all your on-premises deployments, not just Office.
+- Configure [Delivery Optimization](../delivery-optimization.md) on your devices to allow them to peer cache content coming from the Office CDN. To use Delivery Optimization during Office installation, deploy version 1908 or later. For versions 1908 to 1911, you must [set a specific registry key](../delivery-optimization.md#configure-microsoft-365-apps-to-use-delivery-optimization).
 - Optionally enable [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. This step enables your distribution points to act as a persistent cache for your devices. Connected cache will use already existing information within Configuration Manager about your network infrastructure and preferred distribution points.
 
 *Special thanks to Tom Ferguson, one of our ConfigMgr experts, for the SQL example*
