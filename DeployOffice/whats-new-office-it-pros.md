@@ -18,6 +18,10 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## January 2021
+
+[Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](overview-unattended.md) covers how to enable RPA for Microsoft 365 Apps, including licensing requirements.
+
 ## November 2020
 
 [Learn from Microsoft experts](fieldnotes/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
