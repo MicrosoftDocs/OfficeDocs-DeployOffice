@@ -26,11 +26,11 @@ ms.collection:
 
 Microsoft recently released to public preview a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers during the preview, we've developed best practices on how to adopt these new features.
 
-There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognizes the benefits while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
+There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
-A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/microsoft-365-apps-health.md). This feature provides insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. It uses diagnostic data sent by your devices, so you don't have to deploy additional infrastructure or software agents to use. You can get insights into the health of your Microsoft 365 Apps within minutes.
+A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/microsoft-365-apps-health.md). This feature provides insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. It uses diagnostic data sent by your devices, so you don't have to deploy additional infrastructure or software agents to use it. You can get insights into the health of your Microsoft 365 Apps within minutes.
 
 How to enable Microsoft 365 Apps health:
 
@@ -40,12 +40,12 @@ How to enable Microsoft 365 Apps health:
 It takes about 10 minutes for the service to be provisioned. You can then access:
 
 - Crash rates on a per-application level, grouped by version.
-- Performance metrics such as application launch times and document load times.
+- Performance metrics, such as application launch times and document load times.
 - Channel metrics, such as which channels and builds are sending diagnostic data.
 
 You can also compare two builds. This feature enables you to quickly assess if a newly deployed build is more stable and faster than the previous build. You then can proactively address issues, as opposed to waiting for issues to surface after you release a new build into your environment.
 
-There's a minimum number of sessions required per app and version. This minimum ensures that Microsoft 365 Apps health can calculate reliable insights. A *session* is the period from launching an application until it's closed. For example, you're likely to see more sessions from an app like Excel than Outlook.
+There's a minimum number of sessions required per app and version. This minimum ensures that Microsoft 365 Apps health can calculate reliable insights. A *session* is the period from launching an application until it's closed. For example, you're likely to see more sessions from an app like Microsoft Excel than Outlook.
 
 If you disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Microsoft 365 Apps health, you have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to *Optional*.
 
@@ -60,7 +60,7 @@ When you join the Preview program, Microsoft 365 Apps that are installed and run
 - Installed add-ins
 - Whether macros are used on the device
 
-It also populated the [Security update status](../admincenter/security-update-status.md) page, which provides an overview of:
+It also populates the [Security update status](../admincenter/security-update-status.md) page, which provides an overview of:
 - Which channels are deployed
 - How many devices are on the latest security update
 - Which devices are behind schedule and need attention
@@ -71,10 +71,10 @@ The Microsoft 365 Apps installation itself provides the inventory information, s
 
 Moving your devices to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) provides a good balance between receiving monthly feature and quality updates (similar to [Current Channel](../overview-update-channels.md#current-channel-overview)), while having a predictable cadence with only one update per month.
 
-With these new preview features, consider these two scenarios when you move devices to the Monthly Enterprise Channel:
+With these new preview features, consider the following two scenarios when you move devices to the Monthly Enterprise Channel:
 
 - If you're planning to adopt Servicing Profiles (see below), devices will automatically be moved to the Monthly Enterprise Channel. In this scenario, there's no need to move devices first.
-- If you want to control the rate of devices switching to Monthly Enterprise Channel, aren't ready to adopt Servicing Profiles yet, or want to manage on-prem bandwidth with existing on-prem tools, you should do the switch first.
+- If you want to control the rate of devices switching to Monthly Enterprise Channel, aren't ready to adopt Servicing Profiles yet, or want to manage on-prem bandwidth with existing on-premises tools, you should do the switch first.
 
 If you prefer to move your devices first, detailed guidance is available on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and how to perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
 
@@ -87,7 +87,7 @@ If you use Servicing Profiles to manage updates directly from the cloud, your de
 - [Enable Delivery Optimization](../delivery-optimization.md) to allow devices to share content with each other through P2P mechanisms.
 - If you have Configuration Manager deployed, enable [Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. Use client settings to [enable devices](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#enable-connected-cache) to use Microsoft Connected Cache servers for content download.
 
-**For users working from home or remotely by using VPN**, you should consider these options:
+**For users working from home or remotely by VPN**, you should consider these options:
 
 - Configure VPN with [selective tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#4-vpn-selective-tunnel) instead of [forced tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#1-vpn-forced-tunnel). The VPN tunnel is then used only for corpnet-based services. Default route traffic (internet and all internet-based services) goes direct, as do Microsoft 365 Apps updates.
 - If your VPN is configured for [forced tunnel with exceptions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) and supports using FQDNs for Dynamic Split Tunneling, ensure that the [URL for the Office CDN is included in the exclusion list](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) (#92). For details, see our [how-to guides for common VPN solutions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#howto-guides-for-common-vpn-platforms).
@@ -105,6 +105,6 @@ Before you adopt Servicing Profiles, consider the following factors:
 
 - All devices that match the rule set will be switched over to Monthly Enterprise Channel and kept up to date.
 - There's currently no way to include or exclude specific devices.
-- Double-check if your network is set up to handle the traffic caused by moving devices to Monthly Enterprise Channel and the monthly updates.
+- Double-check if your network can handle the traffic caused by moving devices to Monthly Enterprise Channel and the monthly updates.
 
-If these factors check out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile is active immediately when you save the profile. So, if an eligible device checks in with the service right after you finished the wizard, it will get the instructions to move to the latest Monthly Enterprise update.
+If these factors check out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile becomes active immediately when you save the profile. So, if an eligible device checks in with the service right after you finish the wizard, it will get the instructions to move to the latest Monthly Enterprise update.
