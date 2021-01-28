@@ -79,28 +79,28 @@ If you prefer to move your devices first, detailed guidance is available on how 
 
 If you use Servicing Profiles to manage updates directly from the cloud, your devices will download those profiles from the internet. To determine if your network can handle this traffic without disruption, see [published sizes of the update downloads](https://docs.microsoft.com/officeupdates/download-sizes-microsoft365-apps-updates). There are several ways to optimize your network for taking updates directly from the cloud.
 
-**For users on-premises**, you should consider:
+**For users on-premises**, you should consider these options:
 
 - [Enable Delivery Optimization](../delivery-optimization.md) to allow devices to share content with each other through P2P mechanisms.
-- If you have Configuration Manager deployed, you can enable [Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. Use client settings to [enable devices](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#enable-connected-cache) to use Microsoft Connected Cache servers for content download.
+- If you have Configuration Manager deployed, enable [Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. Use client settings to [enable devices](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#enable-connected-cache) to use Microsoft Connected Cache servers for content download.
 
-**For users working from home or on the road by using VPN**, you should consider:
+**For users working from home or remotely by using VPN**, you should consider these options:
 
-- Configure VPN with [selective tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#4-vpn-selective-tunnel) instead of [forced tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#1-vpn-forced-tunnel). Then the VPN tunnel is used only for corpnet-based services. Default route (internet and all internet-based services) goes direct, as do Microsoft 365 Apps updates.
-- If your VPN is configured for [forced tunnel with exceptions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) and supports using FQDNs for Dynamic Split Tunneling, ensure that the [URL for the Office CDN is included in the exclusion list](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) (#92). We have [how-to guides for common VPN solutions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#howto-guides-for-common-vpn-platforms) available.
-- If your VPN is configured for forced tunnel and doesn't support FQDN-based exceptions, contact your Microsoft representative for support implementing an IP-based static solution.
+- Configure VPN with [selective tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#4-vpn-selective-tunnel) instead of [forced tunnel](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#1-vpn-forced-tunnel). The VPN tunnel is then used only for corpnet-based services. Default route traffic (internet and all internet-based services) goes direct, as do Microsoft 365 Apps updates.
+- If your VPN is configured for [forced tunnel with exceptions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) and supports using FQDNs for Dynamic Split Tunneling, ensure that the [URL for the Office CDN is included in the exclusion list](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) (#92). For details, see our [how-to guides for common VPN solutions](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#howto-guides-for-common-vpn-platforms).
+- If your VPN is configured for forced tunnel and doesn't support FQDN-based exceptions, contact your Microsoft representative for support to implement an IP-based static solution.
 
 ## Use Servicing Profiles to keep devices current
 
-With [Servicing Profiles](../admincenter/servicing-profile.md), you can enable your tenant to take control over update deployment to all devices connected to this tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
+You can use [Servicing Profiles](../admincenter/servicing-profile.md) to enable your tenant to take control over update deployment to all devices connected to the tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
 
-No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by Servicing Profiles. If it matches the rules set by the admin, Service Profiles will manage Microsoft 365 Apps updates on the device. This functionality enables you to cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Endpoint Manager.
+No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by Servicing Profiles. If the device matches the rules set by the admin, Service Profiles will manage Microsoft 365 Apps updates on the device. This functionality lets you cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Endpoint Manager.
 
-Note that Servicing Profiles currently only supports managing Monthly Enterprise Channel updates, so any device that falls into the scope of the rules will be moved to this channel.
+Note that Servicing Profiles currently only supports managing Monthly Enterprise Channel updates. So any device that falls into the scope of the rules will be moved to this channel.
 
 Before you adopt Servicing Profiles, consider the following factors:
 
-- All devices matching the rule set will be switched over to Monthly Enterprise Channel and kept up to date.
+- All devices that match the rule set will be switched over to Monthly Enterprise Channel and kept up to date.
 - There's currently no way to include or exclude specific devices.
 - Double-check if your network is set up to handle the traffic caused by moving devices to Monthly Enterprise Channel and the monthly updates.
 
