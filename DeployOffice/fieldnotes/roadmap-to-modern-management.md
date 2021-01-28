@@ -26,7 +26,7 @@ ms.collection:
 
 Microsoft recently released to public preview a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers during the preview, we've developed best practices on how to adopt these new features.
 
-There's no definitive or required way to adopt these features. But the order described in this article help admins quickly recognize the benefits while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
+There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognizes the benefits while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
@@ -51,7 +51,7 @@ If you disabled Diagnostic Data for Office on your devices, you might only see a
 
 ## Get insights per device: Inventory and security update status
 
-After you join the Preview program, Microsoft 365 Apps that are installed and running on Current Channel or Monthly Enterprise Channel version 2008 or later will start registering in [Inventory](../admincenter/inventory.md). The Inventory page in the Apps Admin Center provides a consolidated view of your Microsoft 365 Apps and key information, such as:
+When you join the Preview program, Microsoft 365 Apps that are installed and running on Current Channel or Monthly Enterprise Channel version 2008 or later start registering in [Inventory](../admincenter/inventory.md). The Inventory page in the Apps Admin Center provides a consolidated view of your Microsoft 365 Apps and key information, such as:
 
 - Update channel
 - Versions deployed
@@ -60,7 +60,10 @@ After you join the Preview program, Microsoft 365 Apps that are installed and ru
 - Installed add-ins
 - Whether macros are used on the device
 
-It also populated the [Security update status](../admincenter/security-update-status.md) page. Update status is an overview of which channels are deployed, how many devices are on the latest security update, and which devices are behind schedule and need attention.
+It also populated the [Security update status](../admincenter/security-update-status.md) page, which provides an overview of:
+- Which channels are deployed
+- How many devices are on the latest security update
+- Which devices are behind schedule and need attention
 
 The Microsoft 365 Apps installation itself provides the inventory information, so there's no conflict with existing management solutions. For example, a device can be managed by Microsoft Endpoint Manager and registered into the new tenant-based inventory at the same time.
 
