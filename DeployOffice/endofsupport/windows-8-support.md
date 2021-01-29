@@ -29,10 +29,18 @@ Using Microsoft 365 Apps on older, unsupported operating systems may cause perfo
 
 ## Windows 8 and updates to the Office apps
 
-If you’re using Microsoft 365 Apps on a device running Windows 8, you should be aware of the following information about updates to the Office apps:
+If you’re using Microsoft 365 Apps on a device running Windows 8, you should be aware of the following information about updates to the Office apps.
 
-- If you’ve configured the Office apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, Version 2002 is the last update you'll receive for the Office apps. You'll no longer receive any feature, security, and other quality updates beyond Version 2002.
-- If you control the deployment of updates of Office apps (for example, by using Microsoft Endpoint Configuration Manager) deploying Version 2005 or later will result in functionality and stability issues for the Office apps. These issues are caused by features in Version 2005 and later that aren’t compatible with Windows 8.
+If you’ve configured the Office apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, you’ll no longer receive any feature, security, and other quality updates beyond the following versions:
+- Version 2002, for Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview).
+- Version 2004, for all other update channels. For example, Current Channel or Monthly Enterprise Channel.
+ 
+If you control the deployment of updates of Office apps (for example, by using Microsoft Endpoint Configuration Manager), you’ll be prevented from deploying or updating beyond the following versions:
+- Version 2008, for Semi-Annual Enterprise Channel or Semi-Annual Enterprise Channel (Preview).
+- Version 2012, for all other update channels. For example, Current Channel or Monthly Enterprise Channel.
+ 
+If you try to deploy or update to a newer version of the Office apps, you'll receive an error message that states "This version of Office requires a newer version of Windows."
+
 
 ## Upgrade from Windows 8 to a supported operating system
 
