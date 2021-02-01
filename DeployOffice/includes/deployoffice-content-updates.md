@@ -2,6 +2,19 @@
 
 
 
+## Week of January 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/25/2021 | [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](/DeployOffice/fieldnotes/build-dynamic-lean-configuration-manager) | modified |
+| 1/25/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 1/27/2021 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
+| 1/29/2021 | [Windows 8 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-8-support) | modified |
+| 1/29/2021 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
+| 1/29/2021 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
+
+
 ## Week of January 18, 2021
 
 
