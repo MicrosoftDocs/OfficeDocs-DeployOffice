@@ -1,7 +1,7 @@
 ---
 title: Network guidance for deploying and servicing Microsoft 365 Apps
 author: bobclements-msft
-ms.author: bobclements
+ms.author: bob.clements@microsoft.com
 manager: laurawi
 audience: ITPro 
 ms.topic: article 
@@ -33,7 +33,7 @@ If you are supporting a remote workforce, you likely fall into 1 of 2 scenarios:
 The following solutions will address these 2 groups. In general, you will see the biggest benefits to your network and endpoints by leveraging cloud-based services for managing your Microsoft 365 Apps. 
 
 ### Split Tunneling
-[Split tunneling for Microsoft 365 Apps](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?view=o365-worldwide) is recommended if you are supporting a remote workforce that is frequently connected to your company’s VPN. With split tunneling enabled, all traffic coming from the Office CDN will bypass the VPN tunnel and go directly to the internet. This includes full installs of Microsoft 365 Apps and monthly updates. For more information on implementing VPN split tunneling for Microsoft 365 Apps, refer to the following article: [Implementing VPN split tunneling for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel?view=o365-worldwide).
+[Split tunneling for Microsoft 365 Apps](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnelo365-worldwide) is recommended if you are supporting a remote workforce that is frequently connected to your company’s VPN. With split tunneling enabled, all traffic coming from the Office CDN will bypass the VPN tunnel and go directly to the internet. This includes full installs of Microsoft 365 Apps and monthly updates. For more information on implementing VPN split tunneling for Microsoft 365 Apps, refer to the following article: [Implementing VPN split tunneling for Office 365](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel).
 
 ### Deploying Microsoft 365 Apps with Intune
 If you are using Microsoft Intune to manage your devices, there is native integration for [creating and deploying Microsoft 365 Apps](https://docs.microsoft.com/mem/intune/apps/apps-add-office365), including the option to [provide a custom configuration XML](https://docs.microsoft.com/mem/intune/apps/apps-add-office365#step-2---option-2-configure-app-suite-using-xml-data). When creating the app consider setting the following options:
@@ -112,7 +112,7 @@ To get started with Client Peer Cache refer to the documented **requirements**, 
 3.	Create a new custom client device setting.
 4.	Name your new client settings and select the **Client Cache Settings** category.
 
-    ![Custom Device Settings Wizard](../images/fieldnotes/NetOp-005.png)
+    ![Custom Device Settings wizard for Peer Cache](../images/fieldnotes/NetOp-005.png)
 
 5.	Select **Client Cache Settings** on the left to configure the available settings shown below.
 
@@ -152,7 +152,7 @@ With BranchCache enabled on your distribution points, you will need to configure
 2.	Create a new custom client device setting.
 3.	Name your new client settings and select the **Client Cache Settings** category.
 
-    ![Custom Device Settings Wizard](../images/fieldnotes/NetOp-003.png)
+    ![Custom Device Settings wizard for BranchCache](../images/fieldnotes/NetOp-003.png)
 
 4.	Select **Client Cache Settings** on the left to configure the available settings shown below.
 
@@ -179,7 +179,7 @@ With BranchCache enabled on your distribution points, you will need to configure
 3.	Create a new custom client device setting.
 4.	Name your new client settings and select the **Background Intelligent Transfer** category.
 
-    ![Custom Device Settings Wizard](../images/fieldnotes/NetOp-009.png)
+    ![Custom Device Settings wizard for BITS](../images/fieldnotes/NetOp-009.png)
 
 5.	Select **Background Intelligent Transfer** on the left to configure the available settings shown below.
 
