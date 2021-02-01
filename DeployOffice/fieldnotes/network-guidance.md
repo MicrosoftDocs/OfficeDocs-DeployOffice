@@ -80,15 +80,15 @@ If your organization is using Intune (or Co-Management), the following technolog
 ### Configuration Manager
 If your organization is using Configuration Manager there are multiple technologies available to help with network optimization. In this section we will look at the native site technologies, along with modern peer-to-peer capabilities.
 
-The first 4 technologies that we will look at can be enabled independently or in combination with one another. Microsoft’s recommendation is to review each technology and leverage them in combination where it makes sense (e.g., you may enable BranchCache and Client Peer Cache, but BITS throttling isn’t necessary). This will help maximize efficiency and reduce traffic to your distribution points. Once enabled, you can review the [Client data sources](https://docs.microsoft.com/en-us/mem/configmgr/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard) dashboard to monitor content distribution for Client Peer Cache, BranchCache, Distribution Points, and Cloud Distribution Points.
+The first 4 technologies that we will look at can be enabled independently or in combination with one another. Microsoft’s recommendation is to review each technology and leverage them in combination where it makes sense (e.g., you may enable BranchCache and Client Peer Cache, but BITS throttling isn’t necessary in your environment). This will help maximize efficiency and reduce traffic to your distribution points. Once enabled, you can review the [Client data sources](https://docs.microsoft.com/en-us/mem/configmgr/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard) dashboard to monitor content distribution for Client Peer Cache, BranchCache, Distribution Points, and Cloud Distribution Points.
 
-- [Client Peer Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#peer-cache) is another peer-to-peer technology. This technology is native to Configuration Manager and does require devices to be domain joined and managed by Configuration Manager. With Client Peer Cache you have additional controls over your network segmentation and peer-to-peer traffic. Refer to [Enabling Client Peer Cache]() to get started.
+- [Client Peer Cache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#peer-cache) is another peer-to-peer technology. This technology is native to Configuration Manager and does require devices to be domain joined and managed by Configuration Manager. With Client Peer Cache you have additional controls over your network segmentation and peer-to-peer traffic. Refer to [Enabling Client Peer Cache](#enabling-client-peer-cache) to get started.
 
-- [BranchCache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache) is a Windows technology focused on peer-to-peer content delivery. Clients that support BranchCache, and have downloaded a deployment configured for BranchCache, will serve as a content source to other BranchCache-enabled clients. Refer to [Enabling BranchCache]() to get started.
+- [BranchCache](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#branchcache) is a Windows technology focused on peer-to-peer content delivery. Clients that support BranchCache, and have downloaded a deployment configured for BranchCache, will serve as a content source to other BranchCache-enabled clients. Refer to [Enabling BranchCache](#enabling-branchcache) to get started.
 
-- [Windows Low Extra Delay Background Transport (LEDBAT)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#windows-ledbat) is a network congestion control feature of Windows Server to help manage background network transfers. For distribution points running on supported versions of Windows Server, enable an option to help adjust network traffic. Then clients only use network bandwidth when it's available. Refer to [Enabling Windows LEDBAT]() to get started.
+- [Windows Low Extra Delay Background Transport (LEDBAT)](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#windows-ledbat) is a network congestion control feature of Windows Server to help manage background network transfers. For distribution points running on supported versions of Windows Server, enable an option to help adjust network traffic. Then clients only use network bandwidth when it's available. Refer to [Enabling Windows LEDBAT](#enabling-windows-ledbat) to get started.
 
-- [Background Intelligent Transfer Service (BITS) throttling for clients](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/about-client-settings#background-intelligent-transfer-service-bits) is another option for reducing network saturation when you deploy your Microsoft 365 Apps and updates. Configuration Manager provides several settings that to establish a scheduled and predictable transfer rate. Refer to [Enabling BITS throttling for clients]() to get started.
+- [Background Intelligent Transfer Service (BITS) throttling for clients](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/about-client-settings#background-intelligent-transfer-service-bits) is another option for reducing network saturation when you deploy your Microsoft 365 Apps and updates. Configuration Manager provides several settings that to establish a scheduled and predictable transfer rate. Refer to [Enabling BITS throttling for clients](#enabling-bits-throttling-for-clients) to get started.
 
 These next 2 technologies leverage the modern peer-to-peer capabilities in Windows 10. Configuration Manager offers native support for enablement, but configuration will require Group Policy and/or a Configuration Baseline to setup.
 
@@ -103,32 +103,6 @@ These last 2 items are recommendations specific to deploying and upgrading Micro
 - [Build dynamic, lean, and universal packages for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/fieldnotes/build-dynamic-lean-universal-packages). In this article we deep dive into building light weight packages for deploying Microsoft 365 Apps. For this implementation content is sourced directly from the Office CDN (or DO/CC if enabled). 
 
 ## Network Optimization Features in Configuration Manager
-
-### Enabling BranchCache
-To get started with BranchCache refer to the documented [requirements](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/configs/support-for-windows-features-and-networks#requirements-to-support-branchcache-with-configuration-manager), then proceed with the following steps to enable the feature:
-
-1.	Open the **Configuration Manager Console**.
-2.	Navigate to the **Administration** workspace and select **Distribution Points**.
-3.	Right-click on a distribution point and select **Properties**.
-4.	On the **General** tab, check the box to **Enable and configure BranchCache for this distribution point**.
-5.	Click **OK** to apply your changes.
-
-    ![Channel settings for M365 Apps in Intune](../images/fieldnotes/NetOp-002.png)
-
-With BranchCache enabled on your distribution points, you will need to configure and assign the necessary [client settings](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/about-client-settings#configure-branchcache).
-
-1.	Navigate to the **Administration** workspace and select Client Settings.
-2.	Create a new custom client device setting.
-3.	Name your new client settings and select the **Client Cache Settings** category.
-
-    ![Channel settings for M365 Apps in Intune](../images/fieldnotes/NetOp-003.png)
-
-4.	Select **Client Cache Settings** on the left to configure the available settings shown below.
-
-    ![Channel settings for M365 Apps in Intune](../images/fieldnotes/NetOp-004.png)
-
-5.	Click **OK** to save your changes.
-6.	Deploy the new client settings to a device collection containing the devices you need to enable BranchCache on.
    
 ### Enabling Client Peer Cache
 To get started with Client Peer Cache refer to the documented **requirements**, then proceed with the following steps to setup the feature:
@@ -159,6 +133,32 @@ With your peer sources defined, confirm that your boundary groups are accepting 
 
 After validating your boundary group settings, you can start deploying applications and updates. In order to optimize client peer cache, always deploy to your collection of peer sources first and provide enough time for them to receive it before deploying to other devices. 
 For more information on enabling the Client Peer Cache in Configuration Manager, refer to the following article: [Peer cache for Configuration Manager clients](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/client-peer-cache).
+
+### Enabling BranchCache
+To get started with BranchCache refer to the documented [requirements](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/configs/support-for-windows-features-and-networks#requirements-to-support-branchcache-with-configuration-manager), then proceed with the following steps to enable the feature:
+
+1.	Open the **Configuration Manager Console**.
+2.	Navigate to the **Administration** workspace and select **Distribution Points**.
+3.	Right-click on a distribution point and select **Properties**.
+4.	On the **General** tab, check the box to **Enable and configure BranchCache for this distribution point**.
+5.	Click **OK** to apply your changes.
+
+    ![Channel settings for M365 Apps in Intune](../images/fieldnotes/NetOp-002.png)
+
+With BranchCache enabled on your distribution points, you will need to configure and assign the necessary [client settings](https://docs.microsoft.com/en-us/mem/configmgr/core/clients/deploy/about-client-settings#configure-branchcache).
+
+1.	Navigate to the **Administration** workspace and select Client Settings.
+2.	Create a new custom client device setting.
+3.	Name your new client settings and select the **Client Cache Settings** category.
+
+    ![Channel settings for M365 Apps in Intune](../images/fieldnotes/NetOp-003.png)
+
+4.	Select **Client Cache Settings** on the left to configure the available settings shown below.
+
+    ![Channel settings for M365 Apps in Intune](../images/fieldnotes/NetOp-004.png)
+
+5.	Click **OK** to save your changes.
+6.	Deploy the new client settings to a device collection containing the devices you need to enable BranchCache on.
 
 ### Enabling Windows LEDBAT
 
