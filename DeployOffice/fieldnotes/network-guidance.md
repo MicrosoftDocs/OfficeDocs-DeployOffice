@@ -22,7 +22,7 @@ ms.collection:
 
 Microsoft 365 Apps is a version of Office that offers you the latest security and feature updates on a manageable and predictable cadence. With this modern servicing approach there are multiple scenarios to consider for optimizing your network. Whether you are planning your first deployment, or have the apps deployed to your entire organization, network optimization is something you will need to plan for. In this article we are going to look at some of the most common scenarios when managing Microsoft 365 Apps, along with Microsoft’s recommendations for optimizing deployment and servicing across your network. 
 
-## Managing Microsoft 365 Apps for Remote Users
+## Managing Microsoft 365 Apps for remote users
 The key objective for this section is to help you understand what options are available when managing Microsoft 365 Apps for a remote workforce. More specifically, we will review solutions that can significantly reduce or eliminate content distribution across your VPN (if relevant), and cloud-based services that will simplify management and maintenance for Microsoft 365 Apps. 
 
 If you are supporting a remote workforce, you likely fall into 1 of 2 scenarios: 
@@ -61,8 +61,8 @@ If you have Microsoft Endpoint Configuration Manager in your environment, a [Clo
 
 For more information on deploying a CMG in Configuration Manager, refer to the following article: [Plan for the cloud management gateway in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/cmg/plan-cloud-management-gateway).
 
-## Managing Microsoft 365 Apps for On-Prem Users
-The key objective for this section is to help you understand what options are available when managing Microsoft 365 Apps for on-prem users. More specifically, we will review solutions that can help optimize content distribution across your network and look at utilizing cloud-based services that will simplify management and maintenance for Microsoft 365 Apps.
+## Managing Microsoft 365 Apps for on-premises Users
+The key objective for this section is to help you understand what options are available when managing Microsoft 365 Apps for on-premises users. More specifically, we will review solutions that can help optimize content distribution across your network and look at utilizing cloud-based services that will simplify management and maintenance for Microsoft 365 Apps.
 
 ### Microsoft Intune
 If your organization is using Intune (or Co-Management), the following technologies are recommended for optimizing network traffic with Microsoft 365 Apps:
