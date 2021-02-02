@@ -1,7 +1,7 @@
 ---
 title: Network guidance for deploying and servicing Microsoft 365 Apps
 author: bobclements-msft
-ms.author: bob.clements@microsoft.com
+ms.author: roclemen
 manager: laurawi
 audience: ITPro 
 ms.topic: article 
@@ -61,7 +61,7 @@ If you have Microsoft Endpoint Configuration Manager in your environment, a [Clo
 
 For more information on deploying a CMG in Configuration Manager, refer to the following article: [Plan for the cloud management gateway in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/cmg/plan-cloud-management-gateway).
 
-## Managing Microsoft 365 Apps for on-premises Users
+## Managing Microsoft 365 Apps for on-premises users
 The key objective for this section is to help you understand what options are available when managing Microsoft 365 Apps for on-premises users. More specifically, we will review solutions that can help optimize content distribution across your network and look at utilizing cloud-based services that will simplify management and maintenance for Microsoft 365 Apps.
 
 ### Microsoft Intune
