@@ -53,7 +53,7 @@ Here are the general steps to deploy a volume licensed version of Visio Professi
   
 1. Purchase Visio 2019 as part of a volume licensing agreement.
     
-2. Use the Office Deployment Tool and a configuration.xml file to download and install Visio from 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to download and install Visio 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
 
 If you already use other tools to deploy software to your users, such as Microsoft Endpoint Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Visio. 
   
