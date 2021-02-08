@@ -2,6 +2,15 @@
 
 
 
+## Week of February 01, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/1/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
+| 2/3/2021 | [Deployment guide for Visio](/DeployOffice/deployment-guide-for-visio) | modified |
+
+
 ## Week of January 25, 2021
 
 
