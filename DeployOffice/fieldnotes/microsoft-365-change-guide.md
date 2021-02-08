@@ -465,7 +465,7 @@ With a 1.5 margin of error.
 Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/privacy/manage-privacy-controls). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/en-us/licensing/product-licensing/products#:~:text=Online%20Services%20Data%20Protection%20Addendum%20%28DPA%29%20When%20you,The%20DPA%20is%20an%20addendum%20to%20the%20OST.) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section (“Processing of Personal Data; GDPR”).
 
 4:<span id="footnote-4"></span>
-For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](https://microsoft-my.sharepoint-df.com/:x:/p/tabriggs/EagrVwgMlWxAiQhXZaOxcnoBpJvtc1e79KkMNjszu9gPqg).
+For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365).
 
 5:<span id="footnote-5"></span>
 If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait an such an extended period between releases.
