@@ -123,7 +123,7 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 |------------------------|---------------|----------------------|----------|
 | Type of change | Feature updates<br> New features or applications<br> Deprecated features | Client hotfixes for issues | Security patches|
 | Advance notice? | 30 days' notice for changes that require action | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |
-| Communication channel | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?LinkId=626089)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090) | Security bulletin or CVE |
+| Communication channel | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090) | Security bulletin or CVE |
 | Requires admin action? | Sometimes | Rarely | Rarely |
 | What kind of action? | Change settings<br> Communicate changes to users<br> Validate customizations | Change admin settings |      |
 
@@ -319,9 +319,9 @@ The Microsoft Change Management Plan outlines three change phases and recommende
 
 | Phase 1: Before change | Phase 2: During change | Phase 3: After change |
 |------------------------|------------------------|-----------------------|
-| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub/support/customer-pulse), or by using the Message center communication. |
+| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub//unified/support/customer-pulse), or by using the Message center communication. |
 | Know about the change:<br> Check [Product Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=)<br> Check the Message center in the Microsoft 365 [admin center](https://portal.office.com/) | Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management. | Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency. |
-| Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub/support/customer-pulse), or by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
+| Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub/unified/support/customer-pulse), or by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
 
 Regardless of change strategy, ensuring that your users understand the latest changes is important for successful adoption. The criticality of adoption and change management continues to trend upward as Microsoft and the greater market move toward continuous change.
 
@@ -408,7 +408,7 @@ In addition to changing our services, we also update Microsoft 365 clients. Both
 - [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps?redirectedfrom=MSDN)
   - Client release notes provide a wealth of information about the latest security updates, update sizes, and updates for different platforms (for example, Mac).
 
-- [Microsoft 365 news and announcements](https://blogs.office.com)
+- [Microsoft 365 news and announcements](https://www.microsoft.com/microsoft-365/blog/)
   - Read about the latest releases and features in our blog posts, which are separate from our formal documentation on [docs.microsoft.com](https://docs.microsoft.com/).
 
 - [Microsoft 365 Service Descriptions](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)
@@ -425,7 +425,7 @@ Microsoft establishes a virtuous feedback loop between customers and our product
 - Message center
 - Microsoft Tech Community
 
-[**Customer Pulse**](https://docs.microsoft.com/services-hub/support/customer-pulse)  
+[**Customer Pulse**](https://docs.microsoft.com/services-hub//unified/support/customer-pulse)  
 It only takes a few minutes to provide valuable feedback through Customer Pulse. Sign into the [Services Hub](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true), expand the “Management” menu, select “Customer Pulse,” and follow the on-screen instructions. This feedback is aggregated and routed directly to engineering.
 
 [**Microsoft 365 admin portal**](https://portal.office.com/)  
