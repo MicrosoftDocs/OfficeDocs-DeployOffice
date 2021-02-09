@@ -31,7 +31,7 @@ The following table provides a list of connected experiences that analyze your c
 | **Name**   | **More information**   |
 | ----------- | ------------------ |
 | *3D Maps*\*    | [Get started with 3D Maps](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
-|AutoFix|[Align your content quickly and easily with Auto Fix](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
+|Auto Fix|[Align your content quickly and easily with Auto Fix](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Chart recommendations (Excel for the web)|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Class Notebook add-ins (OneNote)|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
