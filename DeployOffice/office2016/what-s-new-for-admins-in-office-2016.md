@@ -44,7 +44,7 @@ Outlook now requires Autodiscover to be configured or it will be unable to conne
   
 ## Data Loss Protection (DLP) added to Word 2016, Excel 2016, and PowerPoint 2016
 
-Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admins can centrally create, manage and enforce policies for content authoring and document sharing. End users will see policy tips or sharing restrictions when the apps detect a potential policy violation. This capability is available with SharePoint Online and OneDrive for Business. More information is coming, but for now you can read this blog post - [Evolving Data Loss Prevention in SharePoint Online/OneDrive for Business and Office applications](https://blogs.office.com/2015/04/21/evolving-data-loss-prevention-in-sharepoint-onlineonedrive-for-business-and-office-applications/).
+Data Loss Protection (DLP) is now available in Word, Excel, and PowerPoint. Admins can centrally create, manage and enforce policies for content authoring and document sharing. End users will see policy tips or sharing restrictions when the apps detect a potential policy violation. This capability is available with SharePoint Online and OneDrive for Business. More information is coming, but for now you can read this blog post - [Evolving Data Loss Prevention in SharePoint Online/OneDrive for Business and Office applications](https://www.microsoft.com/microsoft-365/blog/2015/04/21/evolving-data-loss-prevention-in-sharepoint-onlineonedrive-for-business-and-office-applications/).
   
 ## Visio 2016 supports Information Rights Management (IRM)
 
