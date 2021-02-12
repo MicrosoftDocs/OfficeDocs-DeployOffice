@@ -1286,6 +1286,7 @@ The following fields are collected:
   
   - **LoadResult** - success state of the load
 
+  - **OfficeArchitecture** - Architecture of the Office client
 
 #### Office.Visio.Visio.AddonLoad
 
@@ -11468,6 +11469,7 @@ The following fields are collected:
 
 - **Method** - COM method of add-in, which led to crash 
 
+- **OfficeArchitecture** - Architecture of the Office client
 
 #### Office.Programmability.Telemetry.AddInCrash
 
