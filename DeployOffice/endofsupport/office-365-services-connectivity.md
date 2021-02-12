@@ -60,7 +60,7 @@ There are some changes planned related to the use of Basic Authentication with E
 
 Skype for Business Online will be retired on July 31, 2021. For more information, see [Skype for Business Online retirement](https://docs.microsoft.com/microsoftteams/skype-for-business-online-retirement).
 
-### Minimum requirements for Outlook for Windows
+### Minimum version requirements for Outlook for Windows
 
 > [!NOTE]
 > The information in this section was communicated in the following Message center post in the Microsoft 365 admin center. 
