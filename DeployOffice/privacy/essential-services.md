@@ -7063,11 +7063,7 @@ The following fields are collected:
 
 - **AppVersionLong** - The application Version
 
-- **BundleReachable** – Boolean indicating whether there was a problem accessing Microsoft AutoUpdate application bundle.
-
 - **Channel** - The preference for audience
-
-- **Codesigned** – Boolean indicating whether the Update Assistant were codesigned correctly.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -7084,8 +7080,6 @@ The following fields are collected:
 - **EventInfo_Name** - The name of the telemetry event being logged
 
 - **EventInfo_Time** - The time at which the logged event took place 
-
-- **Exists** – Boolean indicating whether the Update Assistant exists on disk.
 
 - **HowTocheck** - The preference for checking of updates
 
@@ -10599,7 +10593,11 @@ The following fields are collected:
 
 - **AppVersionLong** - The application Version
 
+- **BundleReachable** – Boolean indicating whether there was a problem accessing Microsoft AutoUpdate application bundle.
+
 - **Channel** - The preference for audience
+
+- **Codesigned** – Boolean indicating whether the Update Assistant were codesigned correctly.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -10616,6 +10614,8 @@ The following fields are collected:
 - **EventInfo_Name** - The name of the telemetry event being logged
 
 - **EventInfo_Time** - The time at which the logged event took place 
+
+- **Exists** – Boolean indicating whether the Update Assistant exists on disk.
 
 - **HowTocheck** - The preference for checking of updates
 
