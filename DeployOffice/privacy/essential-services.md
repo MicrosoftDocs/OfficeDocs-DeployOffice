@@ -3463,6 +3463,14 @@ The following fields are collected:
 
 - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
 
+### Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
+
+Usage telemetry to know when the user taps “See All Benefits”, after a successful purchase to see the apps and features included in the purchase they just made. The data is used to help develop future enhancement to minimize user interruption during application updates.
+
+The following fields are collected:
+
+- **productId** - String – App Store ID of the product for which user is viewing all benefits offered
+
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -4329,7 +4337,7 @@ The following fields are collected:
 
 ### catalog.errorsignature
 
-This event denotes that a failure while performing code sign validation on an update collateral file occurred.  Any collateral failing code sign verification should be considered invalid.
+This event reports on various problems with downloaded files, including vendor signature and hash value mismatch on downloaded file. We use this event to detect problems in publishing manifest set for applications.
 
 The following fields are collected:
 
@@ -4357,9 +4365,15 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
+- **FileHash** – Hash value of the downloaded file
+
+- **FileName** – The name of the file showing hash value mismatch
+
+- **HashInCatalog** – Hash value entry in the corresponding catalog file
+
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains name of the catalog file with invalid signature. Different static text describes different error conditions.
+- **Payload** - contains information on the app reporting problem
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -7984,11 +7998,13 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** -	 Static text
+- **Payload** -	Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **Reason** - Static text indicating a silent update cannot proceed as UI is open
 
 - **SessionId** - The identifier for the session
 
@@ -9389,6 +9405,8 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
+- **CustomNotification** – Boolean indicating whether custom notification was used.
+
 - **Device_NetworkCountry** - The device country (based on IP address)
 
 - **DeviceID** - The device identifier
@@ -9407,7 +9425,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -10520,6 +10538,7 @@ The following fields are collected:
 
 - **Success** -	Indicates whether the subject application has reported success of operation
 
+- **UpdateID** - The update identifier
     
 ### installstatus.codesign
 
@@ -10574,7 +10593,11 @@ The following fields are collected:
 
 - **AppVersionLong** - The application Version
 
+- **BundleReachable** – Boolean indicating whether there was a problem accessing Microsoft AutoUpdate application bundle.
+
 - **Channel** - The preference for audience
+
+- **Codesigned** – Boolean indicating whether the Update Assistant were codesigned correctly.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -10592,9 +10615,11 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
+- **Exists** – Boolean indicating whether the Update Assistant exists on disk.
+
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned.
+- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
