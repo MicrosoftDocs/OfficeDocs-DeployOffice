@@ -2,6 +2,24 @@
 
 
 
+## Week of February 08, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/8/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+| 2/8/2021 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
+| 2/9/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+| 2/9/2021 | [Changes in Office 2016 for Windows desktop](/DeployOffice/office2016/changes-in-office-2016-for-windows-desktop) | modified |
+| 2/9/2021 | [What's new for admins in Office 2016](/DeployOffice/office2016/what-s-new-for-admins-in-office-2016) | modified |
+| 2/9/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 2/10/2021 | [Microsoft Edge WebView2 and Microsoft 365 Apps](/DeployOffice/webview2-install) | added |
+| 2/11/2021 | [Office versions and connectivity to Office 365 services](/DeployOffice/endofsupport/office-365-services-connectivity) | modified |
+| 2/12/2021 | [Office versions and connectivity to Office 365 services](/DeployOffice/endofsupport/office-365-services-connectivity) | modified |
+| 2/12/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 2/12/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of February 01, 2021
 
 
