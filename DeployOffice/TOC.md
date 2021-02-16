@@ -74,6 +74,7 @@
 ## [Device-based licensing](device-based-licensing.md)
 ## [Overview of licensing and activation](overview-licensing-activation-microsoft-365-apps.md)
 ## [Overview of unattended automation](overview-unattended.md)
+## [Overview of extended offline access](overview-extended-offline-access.md)
 ## [Overview of viewer mode](overview-viewer-mode.md)
 ## [Change installation from 32-bit to 64-bit](change-bitness.md)
 ## [App compat & readiness assessment tools](readiness-tools.md)

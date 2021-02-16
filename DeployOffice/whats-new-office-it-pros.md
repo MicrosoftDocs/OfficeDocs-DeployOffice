@@ -18,6 +18,10 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## February 2021
+
+[Extended offline access](overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Note that extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
+
 ## January 2021
 
 [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](overview-unattended.md) covers how to enable RPA for Microsoft 365 Apps, including licensing requirements.
