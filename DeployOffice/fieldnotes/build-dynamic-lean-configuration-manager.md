@@ -28,6 +28,7 @@ This article covers the following scenarios:
 - [Set up collections that automatically add and remove devices based on installed update channel](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels). This helps you to quickly identify how many devices are running on a given channel.
 - [Set up a collection that automatically captures all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). This helps you to easily target Microsoft 365 Apps updates, especially if you support multiple update channels in your organization. If you have a mixed environment, such as with devices still running Office 2016, this makes proper targeting to Microsoft 365 Apps only easier as well.
 - [Set up a collection that captures all devices on update channels which your IT department doesn't support](build-dynamic-lean-configuration-manager.md#catch-devices-on-other-update-channels). In case you don't support all available update channels in your organization, this implementation helps you to quickly identify and mitigate any configuration drift.
+- [Set up a collection that captures all devices running outdated builds](build-dynamic-lean-configuration-manager.md#catch-devices-on-builds-below-a-certain-threshold). This collection will show all devices which are running a release of the Microsoft 365 Apps below a certain build. This can be used to quickly identify devices which are lacking updates or must be updated to a certain minimum build.
 
 For each scenario, you will find a detailed step-by-step guide as well as some notes on how these collections can be put to work.
 
@@ -108,6 +109,28 @@ After you created collections for the update channels that you support, you migh
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
 This collection will now automatically add all devices that have Microsoft 365 Apps installed but are not a member of one of the other collections that we created. This collection will catch all devices that are running on an update channel that you haven't created a separate collection for.
+
+## Catch Devices on builds below a certain threshold
+
+Follow these steps to create a dynamic collection that will capture devices which run a release of the Microsoft 365 Apps below a certain version. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target e.g. outdated devices for updates or if you need to ensure that all devices are above a certain build, e.g. to enable new features.
+
+Here is how to implement this collection:
+1.	Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
+2.	Provide a name and choose a limiting collection. Select **Next**.
+3.	Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
+4.	Paste the following sample query into the editor window.
+
+   ```sql
+select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
+   ```
+
+5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you are interested in. 
+   > [!NOTE]
+   > Devices on Semi-Annual Enterprise Channel might have a far lower build number than devices on Current Channel, even when running the latest build. You can exclude devices on Semi-Annual Enterprise Channe by adding the collection holding these devices as an exclusion.
+6.	Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
+7.	Select **Summary**, **Next**, and then **Close** to complete the wizard.
+
+After the membership calculation has finished, you can easily see all devices running a build lower the configured threshold. You can now use this collection to e.g. deploy Microsoft 365 Apps client updates to it, trigger Client Policy cycles or investigate why those devices are not updating to the latest version.
 
 ## Notes
 
