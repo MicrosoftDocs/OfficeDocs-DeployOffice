@@ -1286,6 +1286,7 @@ The following fields are collected:
   
   - **LoadResult** - success state of the load
 
+  - **OfficeArchitecture** - Architecture of the Office client
 
 #### Office.Visio.Visio.AddonLoad
 
@@ -5363,6 +5364,37 @@ The following fields are collected:
 
 - **userDuration** - Double – Duration in milliseconds the user spent on Paywall
 
+
+#### Office.iOS.Paywall.Provisioning.Response
+
+Critical engineering telemetry with Microsoft Retail Federation Service (RFS) to collect the information provided in this event. RFS is the internal service used within Microsoft for crosschecking the purchase. The data is used to get the health of the API call made to RFS which would help in understanding the success rate and debugging for any failures.
+
+The following fields are collected:
+
+- **entryPoint**- String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **failureReason**- String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+
+- **productId**- String – App Store ID of the product the request was made for
+
+- **status**- String – Success or Failure, indicating if the request succeeded or failed
+
+
+#### Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Critical usage telemetry that indicates when a user taps the Purchase/Buy Button. Used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
+
+The following fields are collected:
+
+- **entryPoint**- String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **isDefaultSKU**- Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
+
+- **productId** - String – App-store product-id of the product for which the Buy Button was tapped
+
+- **toggleCount**- Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
+
+
 #### Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
 
 This event collects the features and apps the user expands from “See More Benefits”, and the duration of time spent.  The data is used to understand usage of the “See all benefits” feature and further optimize the experience in future versions.
@@ -5374,6 +5406,16 @@ The following fields are collected:
 - **productId** - String - App Store ID of the product for which user is viewing more benefits offered
 
 - **userDuration** - Double - Duration in milliseconds the user spent on the Benefits Screen.
+
+
+### Office.iOS.Paywall.SKUChooser.ProductSwitched
+
+Usage telemetry to show how many times a user switches between different SKUs before attempting a purchase.
+
+The following fields are collected:
+
+- **productId**- String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
+
 
 #### Office.iOS.Paywall.SKUChooser.Stats
 
@@ -11468,6 +11510,7 @@ The following fields are collected:
 
 - **Method** - COM method of add-in, which led to crash 
 
+- **OfficeArchitecture** - Architecture of the Office client
 
 #### Office.Programmability.Telemetry.AddInCrash
 

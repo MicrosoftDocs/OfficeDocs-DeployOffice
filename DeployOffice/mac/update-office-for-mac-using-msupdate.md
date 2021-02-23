@@ -39,6 +39,8 @@ The following options are displayed:
     -w | --wait <secs>    Number of seconds to wait for action to complete before returning the current state of the install command 
     -f | --format         Format output results in the specified format 
         p | plist         Property list format
+    -t | --terminate <secs>  Number of seconds to wait before closing opened applications in order for updates to complete
+       -m | --message <msg>  Optional message to display on macOS banner notification to notify user
 ```
 
 ## Examples of how to use msupdate
@@ -54,9 +56,14 @@ The following options are displayed:
 `./msupdate --install --apps MSWD2019 XCEL2019 PPT32019`
 - Download and install a version-specific update for Outlook:
 `./msupdate --install --apps OPIM2019 --version 16.17.180090901`
+- Download and install latest available updates for Excel, wait for 180 seconds (3 minutes) before closing Excel, and display "Excel will close in 3 minutes to install updates." on macOS banner notification to notify user:
+`./msupdate --install --apps XCEL2019 -t 180 -m "Excel will close in 3 minutes to install updates."`
+
+> [!NOTE]
+> To use the -t and -m modifiers, you must be using Microsoft AutoUpdate 4.24 or later.
 
 ## Application identifiers
-The following table lists the applications for Mac supported by MAU. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.
+The following table lists the Microsoft applications for Mac supported by MAU. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.
 
 | Application          |Identifier |
 |:----------------------|:-----------|

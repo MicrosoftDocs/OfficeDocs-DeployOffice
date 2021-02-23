@@ -2,6 +2,55 @@
 
 
 
+## Week of February 15, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/17/2021 | [Microsoft Edge WebView2 and Microsoft 365 Apps](/DeployOffice/webview2-install) | modified |
+| 2/17/2021 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
+
+
+## Week of February 08, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/8/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+| 2/8/2021 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
+| 2/9/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+| 2/9/2021 | [Changes in Office 2016 for Windows desktop](/DeployOffice/office2016/changes-in-office-2016-for-windows-desktop) | modified |
+| 2/9/2021 | [What's new for admins in Office 2016](/DeployOffice/office2016/what-s-new-for-admins-in-office-2016) | modified |
+| 2/9/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 2/10/2021 | [Microsoft Edge WebView2 and Microsoft 365 Apps](/DeployOffice/webview2-install) | added |
+| 2/11/2021 | [Office versions and connectivity to Office 365 services](/DeployOffice/endofsupport/office-365-services-connectivity) | modified |
+| 2/12/2021 | [Office versions and connectivity to Office 365 services](/DeployOffice/endofsupport/office-365-services-connectivity) | modified |
+| 2/12/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 2/12/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
+## Week of February 01, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/1/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
+| 2/3/2021 | [Deployment guide for Visio](/DeployOffice/deployment-guide-for-visio) | modified |
+
+
+## Week of January 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/25/2021 | [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](/DeployOffice/fieldnotes/build-dynamic-lean-configuration-manager) | modified |
+| 1/25/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 1/27/2021 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
+| 1/29/2021 | [Windows 8 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-8-support) | modified |
+| 1/29/2021 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
+| 1/29/2021 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
+
+
 ## Week of January 18, 2021
 
 
@@ -12,36 +61,3 @@
 | 1/22/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | added |
 | 1/20/2021 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
 | 1/20/2021 | [Overview of Office 2019 (for IT Pros)](/DeployOffice/office2019/overview) | modified |
-
-
-## Week of January 11, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/12/2021 | [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](/DeployOffice/microsoft-search-bing) | modified |
-| 1/12/2021 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
-| 1/12/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 1/12/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 1/14/2021 | [Overview of viewer mode for Microsoft 365 Apps](/DeployOffice/overview-viewer-mode) | modified |
-| 1/14/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 1/15/2021 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
-
-
-## Week of December 14, 2020
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/15/2020 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 12/15/2020 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-
-
-## Week of January 04, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/5/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
-| 1/5/2021 | [Move devices to Current Channel](/DeployOffice/other/move-devices-current-channel) | modified |
-| 1/7/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
