@@ -69,6 +69,10 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 ## Considerations when changing channels
 
 - When moving from a channel with a higher build number to a channel with a lower build number (such as Current Channel to Semi-Annual Enterprise Channel), binary delta compression is not applied. Because of this, the update will be larger than normal. The update, however, will not be as large as a full installation of Microsoft 365 Apps.
+- Devices must be able to fetch an update from the newly assigned channel to complete the transition.
+   - If your devices are receiving updates from the internet, you are all set and no additional changes are required.
+   - If you are using Configuation Manager to deploy updates, make sure that an update from the newly assigned channel has been deployed to the devices. We recommend to use [dynamic collections](/fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps) for easier targeting. Devices will only download the required updates, so it is save to assign updates from multiple channels to a device.
+   - If you are using file shares for hosting updates, you must download and host the matching update in a new location/folder. Use the **Update Path** group policy setting or the Office Deployment Tool to point devices at the new location. 
 
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.
 
