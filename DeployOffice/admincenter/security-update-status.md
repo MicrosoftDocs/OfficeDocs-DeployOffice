@@ -19,7 +19,7 @@ description: "Provides Office admins information about Microsoft 365 Apps securi
 You can use the security update status page in the Microsoft 365 Apps admin center to see the which devices have installed the latest security updates for Office.
 
 Requirements:
-- Microsoft 365 Apps for enterprise, Version 2007 or later
+- Microsoft 365 Apps for enterprise, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 - Device must be part of inventory in the Microsoft 365 Apps admin center
@@ -39,6 +39,8 @@ The security update status view shows what percentage of your devices have the m
 
 You can also drill down into all devices on or view the devices that are not up to date.
 
+An additional view is to view the update status by channel for each channel you have Microsoft 365 Apps installed from. This chart shows the number of devices in that channel and how many of them have updated to the latest security update. You can also view the Goal status for each channel.
+
 ## Set a goal for updating devices
 
-To set a goal for updating devices and view your progress against that goal, click **Set a goal** on the Security device status page. You can specify the percentage of devices you want  to update and the schedule for meeting that target.
+To set a goal for updating devices and view your progress against that goal, click **Set a goal** on the Security device status page. You can specify the percentage of devices you want to update and the schedule for meeting that target. This doesn't create any policies or changes to your devices. It is used only for reporting on the security update status page.
