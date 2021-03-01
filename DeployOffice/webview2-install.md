@@ -20,7 +20,7 @@ By making use of WebView2, we can more easily provide your users with Office fea
 
 WebView2 requires that Microsoft Edge WebView2 Runtime be installed on the device running Office. If WebView2 Runtime isn’t installed on the device, your users won’t be able to make use of the Office features that rely on WebView2.
 
-Therefore, starting on March 22, 2021, WebView2 Runtime will be installed on devices running Windows and that have Version 2101 or later of Microsoft 365 Apps installed.
+Therefore, starting on April 1, 2021, WebView2 Runtime will be installed on devices running Windows and that have Version 2101 or later of Microsoft 365 Apps installed.
 
 > [!IMPORTANT]
 > - WebView2 Runtime doesn’t install Microsoft Edge (full browser) on the device and doesn’t require Microsoft Edge to be installed on the device.
@@ -28,7 +28,7 @@ Therefore, starting on March 22, 2021, WebView2 Runtime will be installed on dev
 
 ## WebView2 Runtime installation information
 
-WebView2 Runtime will be installed starting on March 22, 2021. Only devices that are running Windows and that have Version 2101 or later of Microsoft 365 Apps installed are affected. If WebView2 Runtime is already installed on the device, WebView2 Runtime will be updated to the latest version, if needed.
+WebView2 Runtime will be installed starting on April 1, 2021. Only devices that are running Windows and that have Version 2101 or later of Microsoft 365 Apps installed are affected. If WebView2 Runtime is already installed on the device, WebView2 Runtime will be updated to the latest version, if needed.
 
 > [!TIP]
 > To see if Version 2101 or later is available in the update channel you’re using for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
