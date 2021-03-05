@@ -26,7 +26,7 @@ Therefore, starting on April 1, 2021, WebView2 Runtime will be installed on devi
 > - WebView2 Runtime doesn’t install Microsoft Edge (full browser) on the device and doesn’t require Microsoft Edge to be installed on the device.
 > - When WebView2 Runtime is installed on the device, no change is made to the user’s default browser selection.
 
-## WebView2 Runtime installation information
+## WebView2 Runtime installation
 
 WebView2 Runtime will be installed starting on April 1, 2021. Only devices that are running Windows and that have Version 2101 or later of Microsoft 365 Apps installed are affected. If WebView2 Runtime is already installed on the device, WebView2 Runtime will be updated to the latest version, if needed.
 
@@ -46,12 +46,12 @@ To prevent the automatic installation of WebView2 Runtime, sign in to the Micros
 
 If you want to deploy WebView2 Runtime to devices in your organization on your own schedule, you can download it from https://developer.microsoft.com/microsoft-edge/webview2/#download-section. You should use either the Evergreen Bootstrapper or the Evergreen Standalone Installer, depending on your deployment needs.
 
-## Updates to WebView2 Runtime
+## Updates to WebView2
 
 To keep WebView2 up to date with the latest security and reliability updates, WebView2 Runtime uses its own automatic update process, separate from the update channel used by Microsoft 365 Apps. WebView2 Runtime is updated approximately a few times each month. Updates usually range in size from 5 MB to 30 MB, depending on the type of update. Differential updates and Delivery Optimization are used where possible. For information about managing these updates, see [Managing WebView2 applications](https://docs.microsoft.com/microsoft-edge/webview2/concepts/enterprise).
 
 
-## Additional information
+## Additional information about WebView2
 
 - WebView2 Runtime won’t be installed on devices in organizations that have the following plans:
   - Office 365 operated by 21Vianet
@@ -60,10 +60,10 @@ To keep WebView2 up to date with the latest security and reliability updates, We
   - Office 365 GCC High and DoD
 - WebView2 Runtime won’t be installed on devices running macOS.
 - To see if Version 2101 or later is available in the update channel you’re using for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
-- The following devices might receive WebView2 Runtime before April 1, 2021.
+- WebView2 Runtime might be installed on the following devices before April 1, 2021.
   - Devices with Microsoft 365 Apps that aren't being managed by Microsoft Endpoint Configuration Manager, Microsoft Intune, or Office policy settings (with Group Policy or Office cloud policy service).
-  - Devices with subscription versions of Office for home users, such as Microsoft 365 Family or Microsoft 365 Personal.
   - Devices where Microsoft 365 Apps is configured to use Beta Channel or Current Channel (Preview).
+  - Devices with subscription versions of Office for home users, such as Microsoft 365 Family or Microsoft 365 Personal.
 - Other applications may have already installed WebView2 Runtime on the device. For example, applications from companies other than Microsoft or line-of-business applications created within your organization. Office features that rely on WebView2 will be able to use that installation.
 - As soon as WebView2 is available on the device, then your users can start using the Office features that rely on WebView2, even if that's before April 1, 2021.
  
