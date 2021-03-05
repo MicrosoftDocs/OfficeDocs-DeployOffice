@@ -23,14 +23,16 @@ Requirements:
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
 - Client devices can reach the following endpoints: 
-  - ```https://login.live.com```
-  - ```https://*.config.office.com```
-  - ```https://insights.office.net```
+  - `https://login.live.com`
+  - `https://*.config.office.com`
+  - `https://insights.office.net`
 
 ## How to view inventory
 
 1. Go to the [Microsoft 365 Apps admin center](https://config.office.com) and click **Inventory** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+
 2. If you haven't viewed inventory before, complete the setup wizard.
+
 3. When you complete the wizard, active devices  should appear on the inventory page within 2 hours where the user has launch an Microsoft 365 App
 
 ## Inventory view
@@ -87,7 +89,7 @@ The add-in view shows the Office add-ins on the devices in your organization. Th
 | Number of versions | The number of versions installed across your devices |
 | Number of installs | The number of add-in installs across your devices |
 
-You can drill down from an add-in to see the versions of that add-in in your organisation. You can then drill down into the details of the devices on a given version of an add-in.
+You can drill down from an add-in to see the versions of that add-in in your organization. You can then drill down into the details of the devices on a given version of an add-in.
 
 > [!NOTE]
 > Add-ins installed as a part of Microsoft 365 Apps for enterprise won’t appear in the table.
