@@ -80,7 +80,7 @@ The following table provides a list of connected experiences that download onlin
 | ------------- | ------------- |
 | Calendar apps| [What are Calendar Apps?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Cloud fonts                 | [Cloud fonts in Office](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to [Outlook Mobile FAQs](https://support.microsoft.com/office/820ab229-529c-4e41-b227-b5dda358bfd4).|
+| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to either [Outlook for iOS Help](https://support.microsoft.com/article/4456b5ef-d20e-4e86-abee-c95f9eba26da) or [Outlook for Android Help](https://support.microsoft.com/article/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
 | Ink Effects                 | [Draw and write with ink in Office](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Insert Icons                | [Insert icons in Microsoft Office](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | Insert Microsoft Forms      | [Insert a form or quiz into PowerPoint](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
@@ -89,14 +89,14 @@ The following table provides a list of connected experiences that download onlin
 | *Insert Online Video*\*     | [Insert a video from YouTube or another site](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
 | *Interesting Calendars*\*| [Subscribe to a calendar](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
 | *Location suggestions*\* | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
-| Maps in event details | Know where you need to go with [maps](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all) in event details on Outlook for iOS and Android. |
+| Maps in event details | The event details page will show a [map](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46) based on the address of the location of the event on Outlook for iOS and Android. |
 | Office Help                 | When you choose **Help** > **Help** on the ribbon or use F1 in an Office app   |
 | Online Shape Search (Visio) | [Find more shapes and stencils](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *PowerPoint QuickStarter*\*     | [Research a topic with PowerPoint QuickStarter](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Researcher*\*    | [Research your paper easily within Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Tell Me    | [Do things quickly with Tell Me](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Templates  | [Download free, pre-built templates](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|*Travel time estimates in Up Next*\*| [What are Time to Leave notifications?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)<br/> [How does Up Next work?](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e)|
+|*Travel time estimates in Up Next*\*|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) card at the top of your inbox.|
 | *Weather Bar*\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
