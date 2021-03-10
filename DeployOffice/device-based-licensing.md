@@ -24,7 +24,7 @@ Starting in Summer 2020, commercial customers can use *Microsoft 365 Apps for en
 The following are the requirements for device-based licensing for Microsoft 365 Apps for enterprise:
 
 - Version 1907 or later of Microsoft 365 Apps for enterprise.
-- A supported version of Windows 10 Semi-Annual Channel, but at least Version 1803.
+- A supported version of Windows 10 Semi-Annual Channel or Windows 10 Enterprise LTSC 2019.
 - The Windows 10 device must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
 To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet these requirements, do the following:
