@@ -16,9 +16,6 @@ description: "The Office Deployment Tool (ODT) is a command-line tool that you c
 
 # Overview of the Office Deployment Tool
 
-> [!IMPORTANT]
-> Based on customer feedback, we've decided to rename the executable file for the Office Deployment Tool back to setup.exe (from setup*odt*.exe), starting with the release on November 23, 2020. We recommend that you always download and use the most current version of the Office Deployment Tool.
-
 The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users.
 
 If you're not an enterprise administrator and are looking to install Office in your home or business, see [Install Office with Office 365](https://go.microsoft.com/fwlink/p/?LinkId=273820).
@@ -292,7 +289,7 @@ From a command prompt, run the ODT executable in packager mode with a reference 
 
 After running the command, the package location should have an App-V Packages folder and a WorkingDir folder. You can troubleshoot issues by reviewing the log file in the %temp% folder.
 
-## Related topics
+## Related articles
 <a name="BKMK_createanappvpackage"> </a>
 
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
