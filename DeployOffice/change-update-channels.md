@@ -35,7 +35,9 @@ After policy has been applied, the Office Automatic Update 2.0 task must run. Wh
 
 ## Change the update channel with the Office Deployment Tool (ODT)
 
-1. Before you begin, make sure the scheduled task "Office Automatic Update 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, or Configuration Manager.
+1. Before you begin, double-check these items:
+   - Make sure the scheduled task "Office Automatic Update 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, or Configuration Manager.
+   - Make sure that the update channel is not set through a group policy setting for the targeted device. Otherweise it would overrule the Office Deployment Tool and the device will stay on the channel specified in the group policy setting. In such case, either lift the group policy setting from the device or use [group policy to change the channel](./change-update-channels.md#change-the-update-channel-with-group-policy).
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
