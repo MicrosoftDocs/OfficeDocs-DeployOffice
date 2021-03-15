@@ -82,7 +82,7 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 ### Travel time in Up Next in Outlook for iOS
 
-On Outlook for iOS, your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
+On Outlook for iOS, your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
 
 ### Weather Bar in Outlook
 
