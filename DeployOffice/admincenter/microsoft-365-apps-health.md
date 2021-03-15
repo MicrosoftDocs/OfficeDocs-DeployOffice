@@ -106,7 +106,7 @@ This view provides you with additional release information and Office client per
 
 The Microsoft 365 Apps health dashboard uses the diagnostic data that your Office clients send to Microsoft. You are in control of which data and which devices send this data.
 
-Diagnostic data is always under your control. To learn more about diagnostic data and the controls available to you, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](../privacy/overview-privacy-controls.md)
+Diagnostic data is always under your control. To learn more about diagnostic data and the controls available to you, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](../privacy/overview-privacy-controls.md).
 
 ## Performance and reliability metrics 
 
