@@ -28,6 +28,7 @@ These keys are CFPreferences-compatible, which means that it can be set by using
 The following list shows the preferences that are covered in this article:
 
 - [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
+- [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
 - [Automatically configure Office 365 mailbox on first launch](#automatically-configure-office-365-mailbox-on-first-launch)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
@@ -40,6 +41,7 @@ The following list shows the preferences that are covered in this article:
 - [Enable new Outlook](#enable-new-outlook)
 - [Hide local folders](#hide-local-folders)
 - [Hide text about adding non-corporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
+- [Set the order in which S/MIME certificates are considered](#set-the-order-in-which-smime-certificates-are-considered)
 - [Specify calendar first day of week](#specify-calendar-first-day-of-week)
 - [Specify default weather location](#specify-default-weather-location)
 - [Specify Office 365 mailbox to be added on first launch](#specify-office-365-mailbox-to-be-added-on-first-launch)
@@ -162,6 +164,63 @@ Prevent users from adding Teams online meeting details to events.
 |**Availability** | 16.20|
 |**Comments**| Key must be set to true and forced. |
 
+## Security settings
+
+### Disable "Encrypt-Only"
+
+Prevent users from applying the **Encrypt-Only** option to emails when using Microsoft 365 Message Encryption.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** |DisableEncryptOnly |
+|**Data Type**  | Boolean |
+|**Possible values**  | false (default) <br/> true  |
+|**Availability** |16.40 |
+|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Disable "Do Not Forward"
+
+Prevent users from applying the **Do Not Forward** option to emails when using Microsoft 365 Message Encryption.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** |DisableDoNotForward |
+|**Data Type**  |Boolean  |
+|**Possible values**  | false (default) <br/> true  |
+|**Availability** |16.40 |
+|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+
+### Allow S/MIME certificates without a matching email address
+
+Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** |AllowCertsWithoutMatchingEmailAddress|
+|**Data Type**  |Boolean  |
+|**Possible values**  | false (default) <br/> true  |
+|**Availability** |16.45 |
+|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+
+### Set the order in which S/MIME certificates are considered
+
+Set the order in which certificates will be used to decrypt and encrypt S/MIME messages.
+
+|||
+|:-----|:-----|
+|**Domain**  | com.microsoft.Outlook |
+|**Key** |SMIMECertificatesLookupOrder|
+|**Data Type**  |Array of unsigned integer  |
+|**Possible values**  | 0 (Contacts), 1 (GAL), 2 (Device), 3 (LDAP) <br/> Default is [0, 1, 2, 3] |
+|**Availability** |16.45 |
+|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+
 ## Weather location settings
 
 ### Specify default weather location
@@ -257,33 +316,7 @@ Set the availability and default position of the [New Outlook](https://support.m
 |**Possible values**  | 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
 |**Availability** |16.38 |
 
-### Disable "Encrypt-Only"
-
-Prevent users from applying the **Encrypt-Only** option to emails when using Microsoft 365 Message Encryption.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key** |DisableEncryptOnly |
-|**Data Type**  | Boolean |
-|**Possible values**  | false (default) <br/> true  |
-|**Availability** |16.40 |
-|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
-
-### Disable "Do Not Forward"
-
-Prevent users from applying the **Do Not Forward** option to emails when using Microsoft 365 Message Encryption.
-
-|||
-|:-----|:-----|
-|**Domain**  | com.microsoft.Outlook |
-|**Key** |DisableDoNotForward |
-|**Data Type**  |Boolean  |
-|**Possible values**  | false (default) <br/> true  |
-|**Availability** |16.40 |
-|**Comments**|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
-
-    
+ 
 ## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
