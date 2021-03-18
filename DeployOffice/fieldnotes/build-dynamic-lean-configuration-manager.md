@@ -96,7 +96,7 @@ The result is a collection that will automatically add all devices that are runn
 
 ## Catch devices on other update channels
 
-After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices which are on update channels that you support internally. This leaves all devices which are on other update channels in this collection. You can then use this collection to deploy, for example a required appplication which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
+After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices which are on update channels that you support internally. This leaves all devices which are on other update channels in this collection. You can then use this collection to deploy, for example a required application which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
 
 1. Navigate to **Assets and Compliance**. Select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and select a limiting collection. Select **Next**.
