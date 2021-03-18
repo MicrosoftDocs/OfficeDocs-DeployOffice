@@ -18,6 +18,10 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## March 2021
+
+Microsoft 365 Apps is starting to provide new or improved features that rely on Microsoft Edge WebView2. WebView2 requires that Microsoft Edge WebView2 Runtime be installed on the device running Office. Therefore, WebView2 Runtime will be installed on devices running Windows and that have Version 2101 or later of Microsoft 365 Apps installed. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](webview2-install.md).
+
 ## February 2021
 
 [Extended offline access](overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Note that extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
