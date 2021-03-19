@@ -15,7 +15,7 @@ description: "Provides admins with information to help them configure Office ins
 
 # Manage Office installation options in the Microsoft 365 admin center
 
-As a Microsoft 365 admin, you can choose to do the following tasks in the **Office installation options** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center):
+As a Microsoft 365 admin, you can choose to do the following tasks on the **Office installation options** page in the Microsoft 365 admin center:
 
 - [Choose how often to get feature updates for Office](#choose-how-often-to-get-feature-updates-for-office)
 - [Manage which version of Office is installed](#manage-which-version-of-office-is-installed), including
@@ -47,7 +47,7 @@ Keep in mind that moving to a different update channel can also change which fea
 > [!NOTE]
 > - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (either the Channel or the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
 >
-> - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element)), then your choice on the Office installation options page will apply to those devices.
+> - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element)), then your choice under **Feature updates** will apply to those devices.
 >
 > - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
 
@@ -62,7 +62,7 @@ This capability is available to you on the **Version management** tab in the Mic
 >
 > - If you’re using the Office Deployment Tool to manage Office on devices in your organization, but none of the other methods mentioned in the previous bullet point, then your choices on the **Version management** tab will apply to devices in your organization.
 >
-> - The **Version management** tab isn't available if you have one the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+> - The **Version management** tab isn't available if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
 
 On the **Version management** tab, you can see your current version, your previous version, and your next scheduled version of Office for Monthly Enterprise Channel. Updates to Monthly Enterprise Channel are released on the second Tuesday of each month.
 
@@ -92,12 +92,12 @@ As an admin, you can control which Office software your users can download and i
 
 If you choose to make some software unavailable to your users, they will see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
-*Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.*
+&nbsp;&nbsp;&nbsp; Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.
 
 > [!NOTE]
-> - Users have to be local administrators on their computers to install Office software. If users aren't local administrators, you'll have to install Office for them. For more information, see [Manually deploy the Office apps](#manually-deploy-the-office-apps).
+> - Users have to be local administrators on their devices to install Office software. If users aren't local administrators, you'll have to install Office for them. For more information, see [Manually deploy the Office apps](#manually-deploy-the-office-apps).
 > - For users to be able to install Office, you need to [assign them a license](/microsoft-365/admin/manage/assign-licenses-to-users).
-> - By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office Deployment Tool to deploy Office to your users without those apps.
+> - By default, Office installs all the apps that are included in your version of Office on the user's device. If you want some users to get only certain apps, such as only Word and PowerPoint, you can use the Office Deployment Tool to deploy Office to your users with only those apps.
 
 ## Manually deploy Office to your users
 
@@ -125,3 +125,9 @@ After you download the software, you can use your existing software deployment t
 
 > [!NOTE]
 > If you want your users to install InfoPath 2013 or SharePoint Designer 2013 for themselves, there are links to the downloads on [My account](https://portal.office.com/account) > **Tools & add-ins**.
+
+
+## Related articles
+
+- [About the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center)
+- [Manage which Office‎ features appear in What's New](/microsoft-365/admin/manage/show-hide-new-feature)
