@@ -130,4 +130,4 @@ After you download the software, you can use your existing software deployment t
 ## Related articles
 
 - [About the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center)
-- [Manage which Office‎ features appear in What's New](/microsoft-365/admin/manage/show-hide-new-feature)
+- [Manage which Office‎ features appear in What's New](/microsoft-365/admin/manage/show-hide-new-features)
