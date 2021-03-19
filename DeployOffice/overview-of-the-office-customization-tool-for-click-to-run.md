@@ -41,7 +41,7 @@ Follow these steps to create a configuration file that can be used by the Office
 2. In the **Product and releases** section, choose the architecture you want to deploy. Each configuration file can only deploy one architecture. For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 3. Choose the products and applications you want to deploy.
 4. Choose the update channel you want to deploy. The update channel determines how frequently your client devices are updated with new features. For best practice recommendations, see [Step 3 - Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels).
-5. Choose which version you want to deploy. Unless you require a particular version, we recommend choosing the latest. For details on previous versions, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+5. Choose which version you want to deploy. Unless you require a particular version, we recommend choosing the latest. For details on previous versions, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 6. In the **Language** section, choose which languages to include. You can include multiple languages and you can select **Match operating system** to automatically install the same languages that are in use on the client device. For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 7. In the **Installation** section, choose whether to install the Office files directly from the cloud or from a local source on your network. For more details, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
 8. Choose whether to display the installation to your end users and whether to pin the Office icons to the taskbar. For more details on these options, see [Display element](office-deployment-tool-configuration-options.md#display-element) and [PinIconsToTaskBar property](office-deployment-tool-configuration-options.md#piniconstotaskbar-property-part-of-property-element).
@@ -86,13 +86,3 @@ As part of the Office Customization Tool, you can define application preferences
 ## Notes
 
 When creating a configuration file, the Office Customization Tool includes two attributes for the Configuration element: The ID attribute, which identifies the deployment method, and the Host attribute, which identifies the deployment options that have been selected. These attributes don't contain any personally identifiable information (PII), but Click-to-Run sends the attribute values to Microsoft so that we can better understand what configurations customers use and make customization even easier. Because of these insights, we recommend keeping the attributes. They are optional, however, and can be removed without affecting your deployment.
-
-
-
-
-
-
-
-
-
-

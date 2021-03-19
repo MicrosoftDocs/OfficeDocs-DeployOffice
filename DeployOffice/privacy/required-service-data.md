@@ -45,7 +45,7 @@ Required service data is separate from required or optional [diagnostic data](ov
 
 Required service data is also collected and sent to Microsoft for the [essential services](essential-services.md) of Office, such as the licensing service that confirms that you're properly licensed to use Office. While you can control many of the connected experiences that are available to you, or to your users if you're the administrator in your organization, this set of services are essential to how Office functions, and therefore cannot be disabled. The data for essential services is always sent to and processed by Microsoft when using Office, regardless of how other privacy-related settings are configured.
 
-Required service data is available through Data Service Requests (DSRs). For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Office 365 Data Subject Requests for the GDPR and CCPA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
+Required service data is available through Data Service Requests (DSRs). For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Office 365 Data Subject Requests for the GDPR and CCPA](/microsoft-365/compliance/gdpr-dsr-office365).
 
 If you’re the administrator for your organization and want to manage connected experiences, see the following articles:
 

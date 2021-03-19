@@ -62,7 +62,7 @@ That said, to maintain a high level of security on password-protected files, we 
     
 - Make sure that no single individual can compromise public key infrastructure (PKI) services. Also, we recommend that you distribute certificate management roles across different people in your organization.
     
-If you do not follow these recommendations consistently, the security of all new password-protected files can be compromised. Your company or organization should already have a well-defined Active Directory Certificate Services (AD CS) administration model and certification authority (CA) infrastructure strategy that includes, for example, off-site storage of the private key and certificates. For more information, see [Implement Role-Based Administration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732590(v=ws.11)). 
+If you do not follow these recommendations consistently, the security of all new password-protected files can be compromised. Your company or organization should already have a well-defined Active Directory Certificate Services (AD CS) administration model and certification authority (CA) infrastructure strategy that includes, for example, off-site storage of the private key and certificates. For more information, see [Implement Role-Based Administration](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732590(v=ws.11)). 
   
 > [!NOTE]
 > The certificate used for DocRecrypt can be a regular user certificate with User Authentication as the intended purpose. The main goal of the certificate is to be able to encrypt the document. 
@@ -138,7 +138,7 @@ To be able to remove a password from a Word, PowerPoint, or Excel file, you must
     
     Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0 \common\Security\Crypto\EscrowCerts
     
-    Create this new key either manually or through a .reg batch file. To create a .reg file by using regedit.exe, see [Creating a .reg File](https://go.microsoft.com/fwlink/p/?LinkId=268116).
+    Create this new key either manually or through a .reg batch file. To create a .reg file by using regedit.exe, see [Creating a .reg File](/previous-versions/windows/it-pro/windows-server-2003/dd379001(v=ws.10)).
     
    **Create a key in the client computer registry**
 
@@ -158,7 +158,7 @@ To be able to remove a password from a Word, PowerPoint, or Excel file, you must
 |Type  <br/> |STRING  <br/> |
 |Value  <br/> |The hash that is used as the certificate unique identifier, also known as a "thumbprint" in the **Windows Certificate** dialog box. For example, if your certificate thumbprint is 9131517191121d94d143117fc126213c1781d21c, set this value to that number. This hash can include spaces if you want to make it more readable.  <br/> |
    
-- When the registry entries are in place, push the certificate to the client computer. The public key certificate should be stored in Windows Certificate Manager (certmgr.msc) in the Certificates - Current User or Logical, Personal store. For details about pushing public key certificates to client computers through Group Policy, see [Distribute Certificates to Client Computers by Using Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=268118).
+- When the registry entries are in place, push the certificate to the client computer. The public key certificate should be stored in Windows Certificate Manager (certmgr.msc) in the Certificates - Current User or Logical, Personal store. For details about pushing public key certificates to client computers through Group Policy, see [Distribute Certificates to Client Computers by Using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd807084(v=ws.10)).
     
     > [!IMPORTANT]
     > The IT admin must make sure that the certificate that was used for this process is valid and has not expired. 
@@ -237,5 +237,3 @@ Once files are password protected using Office 2016, will not remove the passwor
 ### Office 2010 and 2007 files
 
 Once the client computers in your organization have been configured by using the Office DocRecrypt tool (either individually or through Group Policy), any future Word 2016, Excel 2016, or PowerPoint 2016 files (docx, xlsx and pptx files) and any existing password protected Office Word 2007, Word 2010, Office Excel 2007, Excel 2010, Office PowerPoint 2007 or PowerPoint 2010 files that the users edit in Office 2016 can be unlocked or the password reset with the DocRecrypt tool. Once an escrow key is added to a password protected file, it can be unlocked or reset even if it's been edited in Office 2007 or Office 2010.
-  
-

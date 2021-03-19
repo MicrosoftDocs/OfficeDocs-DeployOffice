@@ -26,7 +26,7 @@ Changing the permissions on the DNS server requires administrative rights in the
 - Add each computer running KMS to the new security group.
 - Set the permissions on the DNS server to enable updates by members of the newly created security group.
     
-For more information, see [Configuring DNS](https://go.microsoft.com/fwlink/p/?LinkId=238674).
+For more information, see [Configuring DNS](/previous-versions/tn-archive/ff793405(v=technet.10)).
   
 
 ## How DNS is used to find a KMS host computer
@@ -41,5 +41,3 @@ If the KMS host computer that a client selects does not respond, the KMS client 
 
 - [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md)
 - [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md)
-
-

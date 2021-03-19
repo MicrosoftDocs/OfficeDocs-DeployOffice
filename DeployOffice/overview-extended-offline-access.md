@@ -77,4 +77,4 @@ If the device cannot connect to the internet every 180 days, you can still [exte
 
 - Extended offline access is currently supported for Word, Excel, PowerPoint, Outlook, OneNote, Publisher and Access, as well as Project and Visio subscription plans. For information about how to exclude applications when deploying, see [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element). 
 - Updates, such as new features and security updates, must be applied manually if the device is not connected to the internet.
-- For information about the availability of Version 2002 or later in the update channels for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+- For information about the availability of Version 2002 or later in the update channels for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-office365-proplus-by-date).

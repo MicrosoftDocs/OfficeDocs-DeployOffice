@@ -48,7 +48,7 @@ If you want to deploy WebView2 Runtime to devices in your organization on your o
 
 ## Updates to WebView2
 
-To keep WebView2 up to date with the latest security and reliability updates, WebView2 Runtime uses its own automatic update process, separate from the update channel used by Microsoft 365 Apps. WebView2 Runtime is updated approximately a few times each month. Updates usually range in size from 5 MB to 30 MB, depending on the type of update. Differential updates and Delivery Optimization are used where possible. For information about managing these updates, see [Managing WebView2 applications](https://docs.microsoft.com/microsoft-edge/webview2/concepts/enterprise).
+To keep WebView2 up to date with the latest security and reliability updates, WebView2 Runtime uses its own automatic update process, separate from the update channel used by Microsoft 365 Apps. WebView2 Runtime is updated approximately a few times each month. Updates usually range in size from 5 MB to 30 MB, depending on the type of update. Differential updates and Delivery Optimization are used where possible. For information about managing these updates, see [Managing WebView2 applications](/microsoft-edge/webview2/concepts/enterprise).
 
 
 ## Additional information about WebView2
@@ -59,7 +59,7 @@ To keep WebView2 up to date with the latest security and reliability updates, We
   - Office 365 GCC
   - Office 365 GCC High and DoD
 - WebView2 Runtime won’t be installed on devices running macOS.
-- To see if Version 2101 or later is available in the update channel you’re using for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+- To see if Version 2101 or later is available in the update channel you’re using for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date).
 - WebView2 Runtime might be installed on the following devices before April 1, 2021.
   - Devices with Microsoft 365 Apps that aren't being managed by Microsoft Endpoint Configuration Manager, Microsoft Intune, or Office policy settings (with Group Policy or Office cloud policy service).
   - Devices where Microsoft 365 Apps is configured to use Beta Channel or Current Channel (Preview).
@@ -70,4 +70,4 @@ To keep WebView2 up to date with the latest security and reliability updates, We
 ## Related articles
 
 - [Announcing Microsoft Edge WebView2 General Availability](https://blogs.windows.com/msedgedev/2020/10/19/edge-webview2-general-availability/)
-- [Introduction to Microsoft Edge WebView2](https://docs.microsoft.com/microsoft-edge/webview2)
+- [Introduction to Microsoft Edge WebView2](/microsoft-edge/webview2)

@@ -23,7 +23,7 @@ To use Office for Mac in your organization, it needs to be activated. How you ac
 
 ## Activate Office 365 versions of Office for Mac
 
-If your organization has an Office 365 (or Microsoft 365) plan, make sure you [assign each user a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Office before you deploy Office  for Mac to your users. If you don't assign a user a license, you can still deploy Office for Mac to that user, but the user won't be able to activate and use Office. 
+If your organization has an Office 365 (or Microsoft 365) plan, make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Office before you deploy Office  for Mac to your users. If you don't assign a user a license, you can still deploy Office for Mac to that user, but the user won't be able to activate and use Office. 
   
 For Office 365 (and Microsoft 365) customers, Office for Mac activates by contacting the Office Licensing Service on the internet. The Office Licensing Service keeps track of which users are licensed and how many computers they've installed Office on.
   
@@ -39,7 +39,7 @@ If the computer can't contact the Office Licensing Service after 30 days, Office
   
 For each user that you've assigned a license to, you can deploy and activate Office for Mac on up to five Macs for the user. If you need to provide Office for Mac on a sixth computer for a user, you need to deactivate an existing installation first. Deactivating an installation doesn't remove Office for Mac from the computer. Instead, the installation goes into reduced functionality mode.
   
-Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
+Users can sign into the Office 365 portal to deactivate an existing installation by going to **My account** > **Install status** > **Manage installs**. Or, you can deactivate an installation as an Office 365 administrator. Sign into the Office 365 portal, go to the [admin center](/microsoft-365/admin/admin-overview/about-the-admin-center), and then go to **Users** > **Active Users**. Select the user, and then choose **Edit** for the **Office installs** property of the user. 
   
 ## Activate volume licensed versions of Office for Mac
 

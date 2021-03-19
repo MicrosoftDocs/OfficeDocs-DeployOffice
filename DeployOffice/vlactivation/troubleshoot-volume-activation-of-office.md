@@ -121,13 +121,10 @@ To display licensing information for Office applications, open an Office applica
   
 If you see a notification that product activation is required even though you know that Office is in the licensed state, restart the application.
   
-The client applications can be in this state because Office was activated by using ospp.vbs /act or the [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool). In these cases, you must restart any Office applications to complete the activation.
+The client applications can be in this state because Office was activated by using ospp.vbs /act or the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). In these cases, you must restart any Office applications to complete the activation.
   
 ### Generic Volume License Keys (GVLKs) for Office
 
-All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled that's used to activate Office by using a KMS host computer. If you entered a MAK key for a product and you want to change the activation method back to KMS, use the appropriate KMS client GVLK. For more information, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md). The recommended way to enter the key is by using [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool). You can also use ospp.vbs /inpkey to enter the key. 
+All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled that's used to activate Office by using a KMS host computer. If you entered a MAK key for a product and you want to change the activation method back to KMS, use the appropriate KMS client GVLK. For more information, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md). The recommended way to enter the key is by using [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). You can also use ospp.vbs /inpkey to enter the key. 
   
 For Office suites, only one key is required for all the products in the suite. For example, if you use Office Professional Plus, you must enter only the Office Professional Plus key for the complete suite. For a complete listing of the keys, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md).
-  
-
-

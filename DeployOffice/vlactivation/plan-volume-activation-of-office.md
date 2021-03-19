@@ -34,7 +34,7 @@ There are three different methods that you can activate volume licensed versions
  - **[Active Directory-based:](plan-volume-activation-of-office.md#ad)** Office on a domain-joined computer is activated through Active Directory. 
 
 
-Which activation method you choose depends on the size, network infrastructure, connectivity, and security requirements of your environment. You can choose to use different activation methods for different versions of Office and for different computers, for example desktops and laptops. Because these three activation methods are also used to activate volume licensed versions of Windows, you might be able to use the same method to activate both Windows and Office. For more information, see [Volume Activation for Windows 10](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-windows-10) and [Volume Activation Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
+Which activation method you choose depends on the size, network infrastructure, connectivity, and security requirements of your environment. You can choose to use different activation methods for different versions of Office and for different computers, for example desktops and laptops. Because these three activation methods are also used to activate volume licensed versions of Windows, you might be able to use the same method to activate both Windows and Office. For more information, see [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10) and [Volume Activation Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
 
 
 All volume licensed versions of Office, including Project and Visio, have a preinstalled product key, called a Generic Volume License Key (GVLK), that can be used for KMS and Active Directory-based activation. You don't have to enter a product key for each Office installation if you're activating Office by using KMS or Active Directory. If you're activating Office by using MAK, you must enter a product key for each Office installation, but there are ways to automate that.
@@ -78,4 +78,3 @@ For more information, see [Activate volume licensed versions of Office by using 
 
 - [Microsoft Office Licensing](https://www.microsoft.com/licensing/product-licensing/office.aspx)
 
-  

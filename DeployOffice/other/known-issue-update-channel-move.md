@@ -135,7 +135,7 @@ To re-enable the Office COM object after the devices have updated to the desired
 To disable the Office COM object by using Configuration Manager, do the following steps:
 
 1. In the Configuration Manager console, go to **Administration** > **Overview** > **Client Settings**.
-2. Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-client-settings).
+2. Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](/mem/configmgr/core/clients/deploy/configure-client-settings).
 3. Choose **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent** setting.
 
 To re-enable the Office COM object after the devices have updated to the desired update channel, set **Enable management of the Office 365 Client Agent setting** back to **Yes**.
@@ -144,5 +144,5 @@ To re-enable the Office COM object after the devices have updated to the desired
 
 - [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md)
 - [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
-- [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
-- [Release notes for Microsoft 365 Apps Security Updates](https://docs.microsoft.com/officeupdates/microsoft365-apps-security-updates)
+- [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
+- [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates)

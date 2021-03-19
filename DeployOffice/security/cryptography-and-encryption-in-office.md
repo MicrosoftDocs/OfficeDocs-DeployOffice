@@ -87,7 +87,7 @@ The following table lists the settings that are available to change the encrypti
 |**Configure CNG cipher chaining mode** <br/> |Lets you configure the cipher chaining mode that is used. The default is **Cipher Block Chaining (CBC)**.  <br/> |
 |**Set CNG cipher key length** <br/> |Lets you configure the number of bits to use when you create the cipher key. The default is 256 bits.  <br/> |
 |**Specify encryption compatibility** <br/> |Lets you specify the compatibility format. The default is **Use next generation format**.  <br/> |
-|**Set parameters for CNG context** <br/> |Lets you specify the encryption parameters that should be used for the CNG context. To use this setting, a CNG context first has to be created by using CryptoAPI: Next Generation (CNG). For more information, see [CNG Cryptographic Configuration Functions](https://go.microsoft.com/fwlink/p/?LinkID=192996).  <br/> |
+|**Set parameters for CNG context** <br/> |Lets you specify the encryption parameters that should be used for the CNG context. To use this setting, a CNG context first has to be created by using CryptoAPI: Next Generation (CNG). For more information, see [CNG Cryptographic Configuration Functions](/windows/win32/seccng/cng-cryptographic-configuration-functions).  <br/> |
 |**Specify CNG hash algorithm** <br/> |Lets you specify the hash algorithm that is used. The default is SHA1.  <br/> |
 |**Set CNG password spin count** <br/> |Lets you specify the number of times to spin (rehash) the password verifier. The default is 100000.  <br/> |
 |**Specify CNG random number generator algorithm** <br/> |Lets you configure the CNG random number generator to use. The default is RNG (Random Number Generator).  <br/> |
@@ -113,7 +113,7 @@ You can use the setting that is listed in the following table to prevent users f
 
 ## Compatibility with previous versions of Office
 
-If you have to encrypt Office documents, we recommend that you save the documents as Open XML Format files (.docx, .xlsx, .pptx, and so on) instead of Office 97-2003 format (.doc, .xls, .ppt, and so on). The encryption that is used for binary documents (.doc, .xls, .ppt) uses RC4. It isn't recommended, as discussed in Security Considerations sections 4.3.2 and 4.3.3 of the [Office Document Cryptography Structure Specification](https://go.microsoft.com/fwlink/p/?LinkId=192287). Documents that are saved in the older Office binary formats can only be encrypted by using RC4 to maintain compatibility with older versions of Office. AES, the default and recommended encryption algorithm, is used to encrypt Open XML Format files.
+If you have to encrypt Office documents, we recommend that you save the documents as Open XML Format files (.docx, .xlsx, .pptx, and so on) instead of Office 97-2003 format (.doc, .xls, .ppt, and so on). The encryption that is used for binary documents (.doc, .xls, .ppt) uses RC4. It isn't recommended, as discussed in Security Considerations sections 4.3.2 and 4.3.3 of the [Office Document Cryptography Structure Specification](/openspecs/office_file_formats/ms-offcrypto/3c34d72a-1a61-4b52-a893-196f9157f083). Documents that are saved in the older Office binary formats can only be encrypted by using RC4 to maintain compatibility with older versions of Office. AES, the default and recommended encryption algorithm, is used to encrypt Open XML Format files.
   
 Office 2016, Office 2013, Office 2010, and the 2007 Office system let you save documents as Open XML Format files. In addition, if you have Office 2003 you can use the Compatibility Pack to save documents as Open XML Format files.
   
@@ -132,5 +132,4 @@ If your organization uses the Microsoft Office Compatibility Pack for Word, Exce
 ## Related topics
 [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md)
 
-[Office Document Cryptography Structure Specification](https://go.microsoft.com/fwlink/p/?LinkId=192287)
-
+[Office Document Cryptography Structure Specification](/openspecs/office_file_formats/ms-offcrypto/3c34d72a-1a61-4b52-a893-196f9157f083)

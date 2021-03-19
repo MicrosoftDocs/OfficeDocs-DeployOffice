@@ -51,5 +51,4 @@ You can rearm five times, unless you activate Office by using a KMS host compute
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
-- [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
-
+- [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool)

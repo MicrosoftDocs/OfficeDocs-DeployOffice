@@ -45,7 +45,7 @@ It's important that you don't include the SourcePath attribute in the Add sectio
   
 ## Create an application for Microsoft 365 Apps in Configuration Manager
 
-The next step is to [create an application](https://go.microsoft.com/fwlink/p/?LinkId=535035) in Configuration Manager. An application contains the files and information that Configuration Manager needs to deploy software to a user's computer.
+The next step is to [create an application](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)) in Configuration Manager. An application contains the files and information that Configuration Manager needs to deploy software to a user's computer.
   
  **To create an application**
   
@@ -68,7 +68,7 @@ The next step is to [create an application](https://go.microsoft.com/fwlink/p/?L
 ## Create a deployment type for the Microsoft 365 Apps application in Configuration Manager
 <a name="BKMK_DeployType"> </a>
 
-An application in Configuration Manager must contain at least one [deployment type](https://go.microsoft.com/fwlink/p/?LinkId=535030). The deployment type contains the installation files for a software package as well as rules that specify when and how the software is deployed.
+An application in Configuration Manager must contain at least one [deployment type](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)). The deployment type contains the installation files for a software package as well as rules that specify when and how the software is deployed.
   
 For the Microsoft 365 Apps application, the deployment type includes the following:
   
@@ -76,7 +76,7 @@ For the Microsoft 365 Apps application, the deployment type includes the followi
     
 - The command line that gets the Office Deployment Tool to start the installation of Microsoft 365 Apps.
     
-- A [detection method](https://go.microsoft.com/fwlink/p/?LinkId=535032), which Configuration Manager uses to determine if Microsoft 365 Apps is already installed on the user's computer.
+- A [detection method](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)), which Configuration Manager uses to determine if Microsoft 365 Apps is already installed on the user's computer.
     
  **To create a deployment type**
   
@@ -121,7 +121,7 @@ For the Microsoft 365 Apps application, the deployment type includes the followi
 ## Distribute the Microsoft 365 Apps application to distribution points in Configuration Manager
 <a name="BKMK_Distribute"> </a>
 
-After you create the Microsoft 365 Apps application and configure its deployment type, the next step is to copy all the files needed by the application to the appropriate [distribution points](https://go.microsoft.com/fwlink/p/?LinkId=535033) in your Configuration Manager environment.
+After you create the Microsoft 365 Apps application and configure its deployment type, the next step is to copy all the files needed by the application to the appropriate [distribution points](/previous-versions/system-center/system-center-2012-R2/gg682083(v=technet.10)) in your Configuration Manager environment.
   
  **To distribute the application to distribution points**
   
@@ -146,7 +146,7 @@ After you create the Microsoft 365 Apps application and configure its deployment
 ## Deploy the Microsoft 365 Apps application in Configuration Manager
 <a name="BKMK_Deploy"> </a>
 
-After the files for the Microsoft 365 Apps application are copied to the appropriate distribution points, the next step is to [deploy the application](https://go.microsoft.com/fwlink/p/?LinkId=535036). When you deploy the application, you specify which computers or users get the application and when.
+After the files for the Microsoft 365 Apps application are copied to the appropriate distribution points, the next step is to [deploy the application](/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10)). When you deploy the application, you specify which computers or users get the application and when.
   
  **To deploy the application**
   
@@ -171,6 +171,4 @@ After you deploy the application, a targeted computer becomes aware of the deplo
 ![Office installation status](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
   
 ## Related topics
-- [Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=535034)
-  
-
+- [Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))

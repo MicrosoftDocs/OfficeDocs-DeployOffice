@@ -71,5 +71,4 @@ You use the ospp.vbs script with the **/dstatusall** option to check the license
 - [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md)
 - [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
 - [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md)
-- [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
-
+- [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool)
