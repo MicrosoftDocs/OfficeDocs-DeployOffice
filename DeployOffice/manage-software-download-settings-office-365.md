@@ -15,33 +15,106 @@ description: "Provides admins with information to help them configure Office ins
 
 # Manage Office installation options in the Microsoft 365 admin center
 
-As an Office 365 admin, you can control which Office software your users can download and install from Office 365. The choices you make on the **Office installation options** page determine which software users can install from the **My account** > **Apps & devices** page in Office 365. Whichever choices you make, they apply to all users in your organization.
+As a Microsoft 365 admin, you can choose to do the following tasks on the **Office installation options** page in the Microsoft 365 admin center:
+
+- [Choose how often to get feature updates for Office](#choose-how-often-to-get-feature-updates-for-office)
+- [Manage which version of Office is installed](#manage-which-version-of-office-is-installed), including
+  - [Roll back to a previous version](#roll-back-to-a-previous-version)
+  - [Skip an upcoming version](#skip-an-upcoming-version)
+- [Choose whether users can install Office on their own devices](#choose-whether-users-can-install-office-on-their-own-devices) 
+
+If you don't want users installing Office themselves, you can [manually deploy Office to your users](#manually-deploy-office-to-your-users).
 
 > [!TIP]
-> To get to the **Office installation options** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
-  
-If you choose to make some software unavailable to users, they see a message on their **My account** > **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
-  
-*Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.*
-  
+> To get to **Office installation options**, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
+
 ## Choose how often to get feature updates for Office
 
-For Microsoft 365 Apps, you must choose how often you want users to get feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
+You can choose how often you want your users to get feature updates for the Office apps installed on devices running Windows. For example, you can provide new features as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
+
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+
+After you select an update channel under **Feature updates** and choose **Save**, your choice of update channel will apply to both new and existing installations of Office in your organization. You can change your channel selection at any time.
+
+For *new* installations, your update channel selection will apply to any new installations of Office that are initiated by your users at [My account](https://portal.office.com/account) > **Apps & devices**.
+
+For *existing* installations of Office, your selection will be applied to devices within 12 hours. Devices will automatically get the latest build from the selected update channel the next time they check for Office updates. Office will be updated directly from the Office Content Delivery Network (CDN) on the internet.
+
+Keep in mind that moving to a different update channel can also change which features are available to your users. For more information about which features are available in each update channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). 
+
+> [!NOTE]
+> - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (either the Channel or the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
+>
+> - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element)), then your choice under **Feature updates** will apply to those devices.
+>
+> - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+
+## Manage which version of Office is installed
+
+You can also, in certain situations, roll back devices in your organization to a previous version of Office or skip an upcoming version. 
+
+This capability is available to you on the **Version management** tab in the Microsoft 365 admin center, under **Settings** > **Org settings** > **Services** > **Office installation options**. The **Version management** tab is only shown if you have chosen Monthly Enterprise Channel for feature updates on the **Installation options** tab. You can only manage versions of Office that are installed on devices running Windows.
+
+> [!NOTE]
+> - Your choices on the **Version management** tab won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, or Microsoft Intune.
+>
+> - If you’re using the Office Deployment Tool to manage Office on devices in your organization, but none of the other methods mentioned in the previous bullet point, then your choices on the **Version management** tab will apply to devices in your organization.
+>
+> - The **Version management** tab isn't available if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+
+On the **Version management** tab, you can see your current version, your previous version, and your next scheduled version of Office for Monthly Enterprise Channel. Updates to Monthly Enterprise Channel are released on the second Tuesday of each month.
+
+### Roll back to a previous version
+
+If you’re having a problem with the current version of Office, you can roll back devices in your organization to a previous version of Monthly Enterprise Channel.
+
+If you decide to roll back to a previous version, devices in your organization will roll back to that previous version the next time Office checks for updates. Also, the information on the **Version management** tab will be updated to show that the previous version is now the current version for devices in your organization.
+
+If you want to stay on that previous version beyond the next version update, you’ll also need to choose **Skip this version**. If you don’t, devices in your organization will be updated to the most recent version available starting on the second Tuesday of the month. That update will come directly from the Office Content Delivery Network (CDN) on the internet.
+
+We don’t recommend staying on a version that is no longer supported and that is no longer receiving security updates.
+
+### Skip an upcoming version
+
+If you want to stay on your current version of Office, you can skip the next scheduled version for Monthly Enterprise Channel. But, you can only skip one version at a time. 
+
+If you want to skip more than one upcoming version, you need to go to the **Version management** tab before the second Tuesday of the month and once again choose **Skip this version**. If you don’t choose **Skip this version**, devices in your organization will be updated to the most recent version available starting on the second Tuesday of the month. That update will come directly from the Office Content Delivery Network (CDN) on the internet.
+
+If you skip a version, you won’t be able to roll back to that version at a later time. The information displayed on the **Version management** tab will always show you which version you can roll back to.
+
+We don’t recommend staying on a version that is no longer supported and that is no longer receiving security updates.
+
+## Choose whether users can install Office on their own devices
+
+As an admin, you can control which Office software your users can download and install from [My account](https://portal.office.com/account) > **Apps & devices**. Whichever choices you make, they apply to all users in your organization.
+
+If you choose to make some software unavailable to your users, they will see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
-If you want some users to get feature updates every month, but have other users get feature updates only every six months, you can manually download and install the Office apps for your users by using the Office Deployment Tool. This gives you the control to select different feature update settings for different groups of users.
+&nbsp;&nbsp;&nbsp; Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.
+
+> [!NOTE]
+> - Users have to be local administrators on their devices to install Office software. If users aren't local administrators, you'll have to install Office for them. For more information, see [Manually deploy the Office apps](#manually-deploy-the-office-apps).
+> - For users to be able to install Office, you need to [assign them a license](/microsoft-365/admin/manage/assign-licenses-to-users).
+> - By default, Office installs all the apps that are included in your version of Office on the user's device. If you want some users to get only certain apps, such as only Word and PowerPoint, you can use the Office Deployment Tool to deploy Office to your users with only those apps.
+
+## Manually deploy Office to your users
+
+From the **Manually deploy apps to users** page, you can download the installation packages for Skype for Business or Office for Mac. For more information about deploying Office for Mac, see [Deployment guide for Office for Mac](mac/deployment-guide-for-office-for-mac.md).
+
+### Manually deploy the Office apps
+
+If you don't want your users to install software themselves from [My account](https://portal.office.com/account) > **Apps & devices**, there are several ways you can deploy Office to devices running Windows in your organization.
   
-For more information, [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+One way you can deploy Office to your users is by using the Office Deployment Tool, which you can download for free from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117). You can use the Office Deployment Tool on its own or with your existing software deployment tools and processes. For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
+
+You can use the Office Deployment Tool to configure your deployments of Office, whether you’re installing Office directly from the Office Content Delivery Network (CDN) on the internet or from a shared folder on your network. As part of the installation, you can, for example, specify an update channel, include additional languages, or exclude certain applications from being installed, such as Access or Publisher. 
+
+If available to your organization, you can also use Microsoft Endpoint Configuration Manager or Microsoft Intune to deploy Office to your users. For more information, see [Manage Microsoft 365 Apps with Configuration Manager](/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates) and [Add Microsoft 365 apps to Windows 10 devices using Microsoft Intune](/mem/intune/apps/apps-add-office365).
   
-## Manually download and install the Office apps by using the Office Deployment Tool
-If you don't want your users to install software themselves from Office 365, you can download the software to your local network. Then, you can deploy the software to your users by using your existing software deployment tools and processes.
-  
-To manually deploy Office, as well as Project or Visio, you need to use the Office Deployment Tool. You can download the Office Deployment Tool for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
-  
-You use the Office Deployment Tool to both download and deploy Office, such as Microsoft 365 Apps, to your users. If you already use other tools, such as Microsoft Endpoint Configuration Manager, to deploy software to your users, you can use the Office Deployment Tool along with those tools to deploy Office.
-  
-For more information, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
-  
-## Manually download InfoPath 2013 and SharePoint Designer 2013
+### Manually deploy InfoPath 2013 and SharePoint Designer 2013
+
 In addition to Office, you can download InfoPath 2013 and SharePoint Designer 2013 in order to deploy them to your users. You can download them from the Microsoft Download Center by using the following links:
   
 - [InfoPath 2013](https://go.microsoft.com/fwlink/p/?LinkID=626623) (32-bit and 64-bit versions) 
@@ -49,12 +122,12 @@ In addition to Office, you can download InfoPath 2013 and SharePoint Designer 20
 - [SharePoint Designer 2013](https://go.microsoft.com/fwlink/p/?LinkID=626622) (32-bit and 64-bit versions) 
     
 After you download the software, you can use your existing software deployment tools and processes to deploy InfoPath or SharePoint Designer to your users.
-  
-## Additional considerations about managing Office installation options
-- The list of Office software that appears on the **Office installation options** page depends on the type of Office 365 (or Microsoft 365) plan that your organization has. 
-    
-- Users have to be local administrators on their computers to install Office software. If users aren't local administrators, you'll have to install Office for them.
-    
-- For users to be able to install Office, you need to [assign them a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
-    
-- By default, Office installs all the apps that are included in your version of Office on the user's computer. If you want some users to get fewer apps, such as only Word and PowerPoint, you need to use the Office Deployment Tool to deploy Office to your users without those apps.
+
+> [!NOTE]
+> If you want your users to install InfoPath 2013 or SharePoint Designer 2013 for themselves, there are links to the downloads on [My account](https://portal.office.com/account) > **Tools & add-ins**.
+
+
+## Related articles
+
+- [About the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center)
+- [Manage which Office‎ features appear in What's New](/microsoft-365/admin/manage/show-hide-new-feature)
