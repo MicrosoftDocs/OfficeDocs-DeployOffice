@@ -1783,6 +1783,8 @@ The following fields are collected across iOS and Android:
 
 - **include_deleted** - whether the search is showing deleted options in the search results 
 
+- **is_best_match_suggestion** - whether the search suggestion selected is a best match.
+
 - **is_ics_external_data** - Captures if an added event is internal (i.e added in Outlook to Outlook calendar) or external (i.e added from another email app such as Gmail to Outlook calendar).
 
 - **is_network_fully_connected** - This is to get a hint of the reason behind the offline search. If the network is connected and the search is offline, then the reason is likely to be the server timeout
@@ -2615,6 +2617,18 @@ The following fields are collected:
 - **txp** - Indicates what type of meeting it was generated from flight reservations and deliveries to help us detect issues with this type of meeting
 
 - **with_message_enabled** - Indicates whether a user can respond with a message to help us detect issues with responding to meeting invites
+
+
+#### multi.window.launch
+
+This event captures when the user takes action that involves multi-window launch on foldable devices, e.g., compose mail, event, open calendar window.  It uses the action to remember such action, e.g., to keep getting the prompt or always launch in new window.  The data collected by this event will be used to assess discoverability, effectiveness as well as general user preferences to drive current and future developments of multi window related functionalities.
+
+The following fields are collected: 
+
+- **is_remembered** - whether the preference to launch in a new window from the reported location has been saved by user.
+
+- **multi_window_origin** - the location within the app where the interaction to launch another app screen in a new window happens.
+
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -6601,6 +6615,28 @@ The following fields are collected:
 
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
 
+- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
 
   - **Data\_Doc\_Ext:string -** Document extension
@@ -6710,6 +6746,28 @@ The following fields are collected:
   - **Data\_ClearDirtyFlagTimeMS:long -** Time taken to clear document dirty flag
 
   - **Data\_CloneDocumentTimeMS:long -** Time taken to clone document before starting the save
+
+- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
   - **Data\_CommitTransactionTimeMS:long -** Time taken to commit the save transaction
 
@@ -6856,6 +6914,28 @@ Collected whenever PowerPoint performs a Save As. Includes success or failure re
 The following fields are collected:
 
 - **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
+
+- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
 - **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
@@ -7043,6 +7123,28 @@ Collected whenever PowerPoint performs a save using the legacy code path. Includ
 The following fields are collected:
 
 - **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
+
+- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
 - **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
@@ -8749,6 +8851,12 @@ The following fields are collected:
 
 - **has_mip_label** - indicates whether a MIP label was stamped on the message or not
 
+- **image_attachment_count** - indicates how many images are being sent as attachments to the message
+
+- **image_body_count** - indicates how many images are being sent inline as part of the body of the message
+
+- **image_movement_count** - indicates how many images of the message that have been moved to inline or move back.
+
 - **is_group_escalation** - is this a group escalated message, "escalated message" is a message that was sent to the user's mailbox because of an escalation (subscribed to group)
 
 - **is_groups** - track whether message sent is a groups message or not
@@ -9778,6 +9886,28 @@ The following fields are collected:
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
    
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
+
+- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
   - **Data\_ContentTransaction -** Predefined set of values of when transaction can be created (AllowedOnLoadDocument, AllowedOnOpenComplete, etc.)
 
@@ -12519,9 +12649,9 @@ The following fields are collected:
   
 - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
-- **ColdBoot** - Whether is first time Office application runs after a system restart or application binary had to be loaded from disk.
+- **ColdBoot** - Whether this is the first time the Office application ran after a system restart or application binary had to be loaded from disk. (macOS/iOS only)
 
-- **DeviceModel** - The model of the device.
+- **DeviceModel** - The model of the device. (macOS/iOS only)
 
 - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
 
@@ -12531,6 +12661,8 @@ The following fields are collected:
 
 - **FirstBoot** - Whether this was a first boot of the application.
 
+- **FreeMemoryPercentage** – What percent of memory on the device is free. (Windows only)
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
@@ -12539,9 +12671,19 @@ The following fields are collected:
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
+- **PageFaultCount** – The number of page faults for the process. (Windows only)
+
+- **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
+
+- **PrivateCommitUsageMB** – The Commit Charge (i.e., the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
+
+- **ProcessorCount** – The number of processors on the device. (macOS/iOS only)
+
+- **TotalPhysicalMemory** – The total amount of physical memory on the device. (macOS/iOS only)
+
 - **TotalWorkingSetMB** - The amount of memory in megabytes in the process's working set.
 
-- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS / iOS only)
+- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS/iOS only)
 
 - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
 
