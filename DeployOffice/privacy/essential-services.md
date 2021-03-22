@@ -11194,7 +11194,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Text indicating success of operation.
+- **Payload** - Text indicating success of operation. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -11202,6 +11202,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+- **Success** – Boolean indicating success of operation.
 
 ### installupdatestask.updatestatus
 
@@ -11843,11 +11844,13 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** - Static text
+- **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** -The first three octets of the IP address
+
+- **Reason** - Static text
 
 - **SessionId** - The identifier for the session
 
@@ -12165,11 +12168,13 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** - Static text
+- **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **Reason** - Static text
 
 - **SessionId** - The identifier for the session
 
@@ -12317,6 +12322,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The version of the operating system
 
+- **Duration** - Text indicating duration of snooze
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -12325,7 +12332,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** - Static text
+- **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -16360,81 +16367,100 @@ The following fields are collected:
 
   - **AppName -** The name of the affected application. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **AppUsedVirtualMemory** - Virtual memory utilized by office application
 
-  - **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **BucketId** - Watson bucket Identifier for crash
 
-  - **CrashedEcsETag -** An experiment identifier for the crashed process.
+- **CabGuid** - GUID identifier for the Watson cab.
 
-  - **CrashedImpressionId -** The impression identifier of the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CallStack** - The Microsoft internal call stack causing the crash.
 
-  - **CrashedModuleName** - Failing module name
+- **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedProcessSessionID -** A unique identifier of the crashed process. 
+- **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedProcessSessionInitTime -** The time when the affected process started. 
+- **CrashedEcsETag -** An experiment identifier for the crashed process.
 
-  - **CrashedProcessSessionUninitTime** - The time when the affected process ended.
+- **CrashedImpressionId -** The impression identifier of the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashTag** - The unique identifier for the code of the crash.
+- **CrashedModuleName** - Failing module name
 
-  - **CrashType -** Bucketing identifier for the type of crash.
+- **CrashedProcessSessionID -** A unique identifier of the crashed process. 
 
-  - **DetectionTime -** The time when the unexpected exit was detected. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CrashedProcessSessionInitTime -** The time when the affected process started. 
 
-  - **ErrorString -** Error description. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CrashedProcessSessionUninitTime** - The time when the affected process ended.
 
-  - **ExceptionAddress -** Address in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CrashTag** - The unique identifier for the code of the crash.
 
-  - **ExceptionCode -** Bucketing identifier for the exception.
+- **CrashType -** Bucketing identifier for the type of crash.
 
-  - **FaultAppName -** The name of the faulting app. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **DetectionTime -** The time when the unexpected exit was detected. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+- **ErrorString -** Error description. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallType -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ExceptionAddress -** Address in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallTypeName -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ExceptionCode -** Bucketing identifier for the exception.
 
-  - **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ExceptionInfo** - System information for the exception.
 
-  - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **FaultAppName -** The name of the faulting app. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **HangTypeCode** - Represents class of hang if the process hung during execution.
 
-  - **ModuleBaseAddress -** Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
 
-  - **ModuleBuildVersion -** Failing module build version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **InstallType -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleMajorVersion -** Failing module major version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **InstallTypeName -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleMinorVersion -** Failing module minor version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleName -** Failing module name. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleOffset -** Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+- **ModuleBaseAddress -** Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleRevisionVersion -** Failing module build revision version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ModuleBuildVersion -** Failing module build version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleSize -** Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ModuleMajorVersion -** Failing module major version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleVersion** - Version of the fault module responsible for a crash.
+- **ModuleMinorVersion -** Failing module minor version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **OfficeArchitectureText** - The architecture of the install: x64, x86, etc.
+- **ModuleName -** Failing module name. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **OfficeUILang** - The Language of the User Interface in the Office Build.
+- **ModuleOffset -** Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
-  - **OSEnvironment -** Identifier for what environment Office is running on.
+- **ModuleRevisionVersion -** Failing module build revision version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **PreviousBuild -** Previously installed build version
+- **ModuleSize -** Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
+- **ModuleVersion** - Version of the fault module responsible for a crash.
 
-  - **SessionFlags** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc. 
+- **OfficeArchitectureText** - The architecture of the install: x64, x86, etc.
 
-  - **UAETypeName -** Bucketing identifier for how the app exited ungracefully. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **OfficeUILang** - The Language of the User Interface in the Office Build.
 
-  - **UninitLibletId** - The unique identifier for the failing component of the crash.
+- **OSEnvironment -** Identifier for what environment Office is running on.
 
-  - **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **PreviousBuild -** Previously installed build version
+
+- **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
+
+- **SessionFlags** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc. 
+
+- **StackHash** - Provides a hashed id for the failure stack in Office.
+
+- **SystemAvailableMemory** - Available memory in the operating system
+
+- **UAETypeName -** Bucketing identifier for how the app exited ungracefully. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **UninitLibletId** - The unique identifier for the failing component of the crash.
+
+- **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **WatsonReportId** - Identifier of report sent to the Windows Watson service.
+
+- **WerEventCreatedTime** - Time stamp for Windows Error Reporting event.
 
 ### Office.System.SystemHealthUngracefulAppExitImmersive
 
