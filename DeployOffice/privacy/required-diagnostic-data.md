@@ -6605,6 +6605,28 @@ The following fields are collected:
 
   - **Data\_CloseAndReopen:bool -** Was this document closed and reopened?
 
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+
+  - **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+
+  - **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+
   - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
 
   - **Data\_Doc\_AccessMode:long -** How was this document opened (Read only | read write)
@@ -6614,28 +6636,6 @@ The following fields are collected:
   - **Data_Doc_AsyncOpenKind:long –** Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
 
   - **Data\_Doc\_ChunkingType:long -** How is document stored in SharePoint
-
-- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
-
-- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
-
-- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
-
-- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
-
-- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
-
-- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
-
-- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
-
-- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
-
-- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
-
-- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
-
-- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
   - **Data\_Doc\_EdpState:long -** Enterprise Data Protection state of document
 
@@ -6747,27 +6747,27 @@ The following fields are collected:
 
   - **Data\_CloneDocumentTimeMS:long -** Time taken to clone document before starting the save
 
-- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
 
-- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+  - **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
 
-- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
 
-- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
 
-- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
 
-- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+  - **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
 
-- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
 
-- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
 
-- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
 
-- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
 
-- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
   - **Data\_CommitTransactionTimeMS:long -** Time taken to commit the save transaction
 
@@ -9887,27 +9887,27 @@ The following fields are collected:
    
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
 
-- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
 
-- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+  - **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
 
-- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
 
-- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
 
-- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
 
-- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+  - **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
 
-- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
 
-- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
 
-- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
 
-- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
 
-- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
 
   - **Data\_ContentTransaction -** Predefined set of values of when transaction can be created (AllowedOnLoadDocument, AllowedOnOpenComplete, etc.)
 
