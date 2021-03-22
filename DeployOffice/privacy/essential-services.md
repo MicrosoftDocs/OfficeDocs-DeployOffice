@@ -3371,6 +3371,42 @@ The following fields are collected:
   - 5 – Base WebURL loaded on client is invalid
 
 
+### Office.Android.DocsUI.Views.PremiumFeatureUpsell
+
+This event captures clicks by a free user clicks to view a feature behind the pay wall. The data is used to measure the interaction of users with the contextual upsell experience and understand which features are preferred by the user which drives them to buy a subscription. This helps us invest to improve those preferred set of entry points. 
+
+The following fields are collected:
+
+- **featureId** - TCID for premium feature
+
+- **featureName** - Premium Feature Title
+
+- **seePlanButtonClick** - How many times “See plan buttons” gets clicked in upsell UI
+
+### Office.Apple.IAPReviewYourSubscriptioniOS
+
+This event captures session-based metadata when the In-App-Purchase (IAP) UI is shown to the user and the buttons the user subsequently interacts with. This data is used to help us understand the friction in the purchase flow and compare it with the funnel of a different purchase experience to understand which experience is better for the user. 
+
+The following fields are collected:
+
+- **FlowType** - Integer – Flow from where IAP was launched.
+
+- **Restore** - String – rule tag is logged when restore button is clicked
+
+- **PremiumFeatures** - String – rule tag is logged when “PremiumFeatures” button is clicked
+
+- **Product** - String - The SKU selected by the users
+
+
+### Office.Apple.InAppPurchaseContext
+
+This event measures critical usage telemetry for the point of entry of the in-app purchase screen. The data helps understand and improve the user experience by identifying the preferred entry point for an in-app purchase.
+
+The following fields are collected:
+
+- **context** - String – The flow through which the user landed on the in app purchase page
+
+
 ### Office.Dime.Sdk.Health
 
 This event captures data that helps in monitoring the health of the Dime components. For example, for the in-app purchase flow when a user opts to buy a Microsoft 365 subscription from within the Office app for Android or on devices running Windows.
@@ -3449,6 +3485,16 @@ The following fields are collected:
 
 - **Data_UserAgent** - Header Tags
 
+
+### Office.Docs.Shared.PremiumFeatureMessageBar
+
+This event collects free users’ taps on a premium feature that resides behind the paywall. The data is used to understand the set of features consumers are interacting with as they convert to a paid user. This tells us the preferred entry points of the users and improve the user experience.
+
+The following fields are collected:
+
+- **featureId** - TCID for premium feature on which user taps
+
+
 ### Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Critical usage telemetry is collected to indicate when the user taps the Purchase/Buy Button.  The data is used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
@@ -3501,6 +3547,26 @@ The following fields are collected:
 If we are not able to automatically activate the license for some reason, we show an activation wizard to the user. This reports that the wizard is being shown to the user. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 This event collects no fields.
+
+### Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
+
+This event is triggered once for every licensing business bar type that will be shown that has the dynamic business bar flight on (treatment group). This data event reports whether there is an LPP dynamic business bar campaign ready on disk. Data will be used to measure the health of the new LPP dynamic licensing business bar technology.
+
+The following fields are collected:
+
+- **DoesCampaignExist (bool)** - Indicates if the campaign is on disk
+
+- **Type (int32)** - Indicates the licensing business bar type
+
+
+### Office.Licensing.BusBar.ShowStashedBusbar
+
+This event is triggered when the dynamic LPP business bar fails to show and stashed static business bar needs to be shown instead. This data event will be used to make sure fallback to static business bar is successful.
+
+The following fields are collected:
+
+- **Type (int32)** - Indicates the licensing business bar type
+
 
 ### Office.Licensing.Dialogs.WebViewDialog.Close
  
@@ -4011,6 +4077,17 @@ The following fields are collected:
  
 - **EnrollmentResult** - The result of Intune enrollment
 
+### SKU.PRODUCT.PRICE.NULL.EVENT
+
+This event is used to capture events to quantify the impact of the bug due to which users today see “Null” instead of a price at the SKU chooser screen. The bug will be diagnosed further to determine a fix. 
+
+The following fields are collected:
+
+- **PriceNotFound** - Prices is not found from the store.
+
+- **StoreNotInitilized** - When store is not initialized successfully.
+
+
 ## Microsoft AutoUpdate (MAU) events
 
 ### additionalappinfo.invalidpreference
@@ -4212,6 +4289,49 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
 - **SessionId** – The identifier for the session
+
+### appinstall.xpcremoteobjecterror
+
+This event reports on an error found while attempting to connect to Privileged Helper Tool via XPC connection. We use this event to track and address possible MAU installation issues.
+
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppID** – The application identifier.
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device country (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** – The version of the operating system
+
+- **Event_ReceivedTime** – The time at which telemetry was received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **Payload** – Contains information on the nature of proxy error encountered
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first three octets of the IP address
+
+- **SessionId** – The identifier for the session
+
 
 ### appregistry.config
 
@@ -9556,6 +9676,50 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+
+### gui.dashboardrowview.updatestate
+
+This event reports on an error found while attempting to display application information in MAU UI. We use this event to ensure health of MAU and track and address failures.
+
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppID** – The application identifier.
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device country (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** – The version of the operating system
+
+- **Event_ReceivedTime** – The time at which telemetry was received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **Payload** – Contains information on the nature of error encountered
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first three octets of the IP address
+
+- **SessionId** – The identifier for the session
+
+
 ### gui.dashboardview.appisopendialog.display 
 
 This event indicates that the UI has shown a dialog to close an open application to proceed with application update. This event is used to determine volume of updates being delayed in order to provide future enhancements to minimize user interruption.
@@ -10322,6 +10486,55 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### installedapp.acknowledgedcoreappleevent
+
+This event indicates Microsoft Auto Update (MAU) has received an Apple event acknowledgement from a registered application to terminate the application to proceed with pending application update. This event is used to help develop future enhancement to minimize user interruption during application updates. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppID** - Identifier for the application being updated
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppleEventClass** - Indicates type of event being sent/acknowledged
+
+- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains retry count
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **UpdateID** - The update identifier
 
 
 ### installedapp.invalidbundle
@@ -14594,6 +14807,47 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+
+### updatemanager.network
+
+This event logs network availability. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+ 
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application Version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device county (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The Hardware Model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** – The Version of the Operating System
+
+- **Event_ReceivedTime** – The time at which telemetry got received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first 3 octets of the IP address
+
+- **SessionId** – The identifier for the session
+
+- **ServerReacheable** – Boolean indicating whether the network is available.
+
     
 ### updatemanager.updatespending
 
@@ -15451,6 +15705,19 @@ The following fields are collected:
 No required service data events are collected by Services Configuration.
 
 ## Telemetry events
+
+### app.deep.link
+
+This event helps to track the usage of calendar meeting launch, across different endpoints. This event lets us detect two things when a meeting is launched via Skype for Business, and when a meeting is launched via Teams, and if the Teams app is installed.
+
+The following fields are collected: 
+
+- **account** - Hashed account information which performed the action
+
+- **action_type** - action performed, such as launch meeting or install application
+
+- **application** - Application that was launched via a deep link, such as Teams or Skype for Business
+
 
 ### Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
