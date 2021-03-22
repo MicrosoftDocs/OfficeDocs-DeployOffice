@@ -3550,7 +3550,7 @@ This event collects no fields.
 
 ### Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
 
-This event is triggered once for every licensing business bar type that will be shown that has the dynamic business bar flight on (treatment group). This data event reports whether there is an LPP dynamic business bar campaign ready on disk. Data will be used to measure the health of the new LPP dynamic licensing business bar technology.
+This event is triggered once for every licensing business bar type that will be shown that has the dynamic business bar flight on (treatment group). This data event reports whether there is a Lifecycle Programming Platform dynamic business bar campaign ready on disk. Data will be used to measure the health of the new Lifecycle Programming Platform dynamic licensing business bar technology.
 
 The following fields are collected:
 
@@ -3561,7 +3561,7 @@ The following fields are collected:
 
 ### Office.Licensing.BusBar.ShowStashedBusbar
 
-This event is triggered when the dynamic LPP business bar fails to show and stashed static business bar needs to be shown instead. This data event will be used to make sure fallback to static business bar is successful.
+This event is triggered when the dynamic Lifecycle Programming Platform business bar fails to show and stashed static business bar needs to be shown instead. This data event will be used to make sure fallback to static business bar is successful.
 
 The following fields are collected:
 
