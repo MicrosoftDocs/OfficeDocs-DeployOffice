@@ -10490,7 +10490,7 @@ The following fields are collected:
 
 ### installedapp.acknowledgedcoreappleevent
 
-This event indicates Microsoft Auto Update (MAU) has received an Apple event acknowledgement from a registered application to terminate the application to proceed with pending application update. This event is used to help develop future enhancement to minimize user interruption during application updates. 
+This event indicates Microsoft Auto Update (MAU) has received an Apple event acknowledgment from a registered application to terminate the application to proceed with pending application update. This event is used to help develop future enhancement to minimize user interruption during application updates. 
 
 The following fields are collected:
 
