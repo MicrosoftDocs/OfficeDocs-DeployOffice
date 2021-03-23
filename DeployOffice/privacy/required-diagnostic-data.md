@@ -6605,27 +6605,27 @@ The following fields are collected:
 
   - **Data\_CloseAndReopen:bool -** Was this document closed and reopened?
 
-  - **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
 
-  - **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+  - **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
 
-  - **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
 
-  - **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
 
-  - **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
 
-  - **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+  - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-  - **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
 
-  - **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
-  - **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
 
-  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
 
-  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
   - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
 
@@ -6747,27 +6747,27 @@ The following fields are collected:
 
   - **Data\_CloneDocumentTimeMS:long -** Time taken to clone document before starting the save
 
-  - **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
 
-  - **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+  - **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
 
-  - **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
 
-  - **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
 
-  - **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
 
-  - **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+  - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-  - **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
 
-  - **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
-  - **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
 
-  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
 
-  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
   - **Data\_CommitTransactionTimeMS:long -** Time taken to commit the save transaction
 
@@ -6915,27 +6915,27 @@ The following fields are collected:
 
 - **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
 
-- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+- **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
 
-- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+- **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
 
-- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
 
-- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
 
-- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+- **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
 
-- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+- **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
 
-- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
-- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+- **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
 
-- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
 
-- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
 - **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
@@ -7124,27 +7124,27 @@ The following fields are collected:
 
 - **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
 
-- **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+- **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
 
-- **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+- **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
 
-- **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
 
-- **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
 
-- **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+- **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
 
-- **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+- **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-- **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
 
-- **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
-- **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+- **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
 
-- **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
 
-- **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
 - **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
@@ -9887,27 +9887,27 @@ The following fields are collected:
    
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
 
-  - **Data_ClpDocHasDrmDoc:bool** - Whether the associated CLP document has a DRM document
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
 
-  - **Data_ClpDocHasIdentity:bool**  - Whether the associated CLP document has identity info
+  - **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
 
-  - **Data_ClpDocHasSessionMetadata:bool** – Whether the associated CLP document has working label metadata from the session
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
 
-  - **Data_ClpDocHasSpoMetadata:bool** - Whether the associated CLP document has label metadata from SPO via IMetadataCache
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
 
-  - **Data_ClpDocHasSpoPackage:bool** – Whether the associated CLP document has label metadata from SPO via IPackage
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
 
-  - **Data_ClpDocIsProtected:bool** - Whether or not the associated CLP document is protected by IRM
+  - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-  - **Data_ClpDocMetadataSource:int** - Enum specifying where label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
 
-  - **Data_ClpDocNeedsUpconversion:bool** - Whether the associated CLP document needs to upconvert label data from the custom.xml part
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
-  - **Data_ClpDocNumFailedSetLabels:int** - Count of labels that failed to set on the document
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
 
-  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the associated CLP document has working label metadata that has been dirtied
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
 
-  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the associated CLP document was in the trust boundary
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
   - **Data\_ContentTransaction -** Predefined set of values of when transaction can be created (AllowedOnLoadDocument, AllowedOnOpenComplete, etc.)
 
