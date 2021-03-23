@@ -2839,7 +2839,7 @@ The following fields are collected:
 
 #### Office.Android.ODWXPSSO.Telemetry
 
-This event helps in understanding with which other Microsoft app in the device, our app got silent single sign on, from which entry point and so on. Also helps in understanding the failure reason for not getting silent single sign on.  We get better insights like from which Microsoft app in the device, we are getting single sign on experience. Act upon failures, where single sign on is not working as expected.
+This event helps in understanding with which other Microsoft app in the device, our app got silent single sign on, from which entry point and so on. Also helps in understanding the failure reason for not getting silent single sign on.  We get better insights like from which Microsoft app in the device, we are getting single sign on experience. Act upon failures, where single sign on isn't working as expected.
 
 The following fields are collected:
 
