@@ -654,6 +654,11 @@
       "source_path": "DeployOffice/microsoft-365-change-guide.md",
       "redirect_url": "/deployoffice/fieldnotes/microsoft-365-change-guide",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/fasttrack-assessment-workshop.md",
+      "redirect_url": "https://fasttrack.microsoft.com/office",
+      "redirect_document_id": false
     }
   ]
 }
