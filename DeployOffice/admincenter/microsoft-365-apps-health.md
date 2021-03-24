@@ -190,11 +190,9 @@ Investigation workflow for unexpected shifts in Office performance:
 3. **Confirm findings or continue analysis** using the following steps:
     1. Using a device that is exhibiting slower performance:
         
-        1. If the shift correlates with a change in the device environment then test the scenario on the device with and without the change to confirm that is the source of the performance shift. 
-        For instance, if a new anti-virus software was rolled out get a device with the anti-virus software and measure the performance of the scenario several times.  Then remove the anti-virus software and measure the performance several times. Compare the results to verify that the removal of the anti-virus software resolves the shift in performance.
-        
-        2. If no correlating factor was found at the broad level then measure the current performance on the device and begin removing common factors testing performance after each change to identify the source. 
-        For instance, remove add-ins one by one and see if performance improves when they are removed. If it isn’t add-in related then remove anti-virus and continue testing performance at each step to find the source.
+        1. If the shift correlates with a change in the device environment then test the scenario on the device with and without the change to confirm that is the source of the performance shift. For instance, if a new anti-virus software was rolled out get a device with the anti-virus software and measure the performance of the scenario several times.  Then remove the anti-virus software and measure the performance several times. Compare the results to verify that the removal of the anti-virus software resolves the shift in performance.
+    
+        2. If no correlating factor was found at the broad level then measure the current performance on the device and begin removing common factors testing performance after each change to identify the source. For instance, remove add-ins one by one and see if performance improves when they are removed. If it isn’t add-in related then remove anti-virus and continue testing performance at each step to find the source.
 
     2. Test on other devices to build confidence that is the source of the issue.
 
