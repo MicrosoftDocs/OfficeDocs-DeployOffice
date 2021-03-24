@@ -66,7 +66,7 @@ After that, and if the per-user settings are adjusted, users can open their app 
 ## See also
 
 - [Microsoft 365 Unattended License Overview](https://download.microsoft.com/download/3/D/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/M365_Unattended_Brief.pdf) (PDF)
-- [New licensing options for Microsoft 365 for unattended scenarios](https://developer.microsoft.com/en-us/office/blogs/new-licensing-options-for-microsoft-365-for-unattended-scenarios/)
+- [New licensing options for Microsoft 365 for unattended scenarios](https://developer.microsoft.com/office/blogs/new-licensing-options-for-microsoft-365-for-unattended-scenarios/)
 - [Considerations for unattended automation of Office in the Microsoft 365 for unattended RPA environment](https://docs.microsoft.com/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
-- [Command-line switch code](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.office.com%2Fen-us%2Farticle%2Fcommand-line-switches-for-microsoft-office-products-079164cd-4ef5-4178-b235-441737deb3a6&data=02%7C01%7CEbo.Quansah%40microsoft.com%7C286c55703b9445abc83108d8120ed42e%7C72f988bf86f141af91ab2d7cd011db47%7C0%7C0%7C637279202233188356&sdata=ZNlu5SadmbLCz3fK3zo8cYEX5s7SMo00ocODFpM2NZk%3D&reserved=0)
+- [Command-line switch code](https://support.microsoft.com/office/079164cd-4ef5-4178-b235-441737deb3a6)
 

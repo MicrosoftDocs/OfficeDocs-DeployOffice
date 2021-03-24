@@ -1286,6 +1286,7 @@ The following fields are collected:
   
   - **LoadResult** - success state of the load
 
+  - **OfficeArchitecture** - Architecture of the Office client
 
 #### Office.Visio.Visio.AddonLoad
 
@@ -1781,6 +1782,8 @@ The following fields are collected across iOS and Android:
 - **has_contact_results** - Simple whether contact results are shown or not in the search query
 
 - **include_deleted** - whether the search is showing deleted options in the search results 
+
+- **is_best_match_suggestion** - whether the search suggestion selected is a best match.
 
 - **is_ics_external_data** - Captures if an added event is internal (i.e added in Outlook to Outlook calendar) or external (i.e added from another email app such as Gmail to Outlook calendar).
 
@@ -2615,6 +2618,18 @@ The following fields are collected:
 
 - **with_message_enabled** - Indicates whether a user can respond with a message to help us detect issues with responding to meeting invites
 
+
+#### multi.window.launch
+
+This event captures when the user takes action that involves multi-window launch on foldable devices, e.g., compose mail, event, open calendar window.  It uses the action to remember such action, e.g., to keep getting the prompt or always launch in new window.  The data collected by this event will be used to assess discoverability, effectiveness as well as general user preferences to drive current and future developments of multi window related functionalities.
+
+The following fields are collected: 
+
+- **is_remembered** - whether the preference to launch in a new window from the reported location has been saved by user.
+
+- **multi_window_origin** - the location within the app where the interaction to launch another app screen in a new window happens.
+
+
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 This event is collected for Office applications running under Android platform and records when a file open operation takes place. The event helps in keeping the file open operation secure, up- to- date and performing properly. The goal of collecting this data is to continuously improve the file open performance. 
@@ -2824,7 +2839,7 @@ The following fields are collected:
 
 #### Office.Android.ODWXPSSO.Telemetry
 
-This event helps in understanding with which other Microsoft app in the device, our app got silent single sign on, from which entry point and so on. Also helps in understanding the failure reason for not getting silent single sign on.  We get better insights like from which Microsoft app in the device, we are getting single sign on experience. Act upon failures, where single sign on is not working as expected.
+This event helps in understanding with which other Microsoft app in the device, our app got silent single sign on, from which entry point and so on. Also helps in understanding the failure reason for not getting silent single sign on.  We get better insights like from which Microsoft app in the device, we are getting single sign on experience. Act upon failures, where single sign on isn't working as expected.
 
 The following fields are collected:
 
@@ -5363,6 +5378,37 @@ The following fields are collected:
 
 - **userDuration** - Double – Duration in milliseconds the user spent on Paywall
 
+
+#### Office.iOS.Paywall.Provisioning.Response
+
+Critical engineering telemetry with Microsoft Retail Federation Service (RFS) to collect the information provided in this event. RFS is the internal service used within Microsoft for crosschecking the purchase. The data is used to get the health of the API call made to RFS which would help in understanding the success rate and debugging for any failures.
+
+The following fields are collected:
+
+- **entryPoint**- String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **failureReason**- String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+
+- **productId**- String – App Store ID of the product the request was made for
+
+- **status**- String – Success or Failure, indicating if the request succeeded or failed
+
+
+#### Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Critical usage telemetry that indicates when a user taps the Purchase/Buy Button. Used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
+
+The following fields are collected:
+
+- **entryPoint**- String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+
+- **isDefaultSKU**- Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
+
+- **productId** - String – App-store product-id of the product for which the Buy Button was tapped
+
+- **toggleCount**- Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
+
+
 #### Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
 
 This event collects the features and apps the user expands from “See More Benefits”, and the duration of time spent.  The data is used to understand usage of the “See all benefits” feature and further optimize the experience in future versions.
@@ -5374,6 +5420,16 @@ The following fields are collected:
 - **productId** - String - App Store ID of the product for which user is viewing more benefits offered
 
 - **userDuration** - Double - Duration in milliseconds the user spent on the Benefits Screen.
+
+
+### Office.iOS.Paywall.SKUChooser.ProductSwitched
+
+Usage telemetry to show how many times a user switches between different SKUs before attempting a purchase.
+
+The following fields are collected:
+
+- **productId**- String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
+
 
 #### Office.iOS.Paywall.SKUChooser.Stats
 
@@ -6549,6 +6605,28 @@ The following fields are collected:
 
   - **Data\_CloseAndReopen:bool -** Was this document closed and reopened?
 
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
+
+  - **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
+
+  - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
+
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
+
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
+
   - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
 
   - **Data\_Doc\_AccessMode:long -** How was this document opened (Read only | read write)
@@ -6668,6 +6746,28 @@ The following fields are collected:
   - **Data\_ClearDirtyFlagTimeMS:long -** Time taken to clear document dirty flag
 
   - **Data\_CloneDocumentTimeMS:long -** Time taken to clone document before starting the save
+
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
+
+  - **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
+
+  - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
+
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
+
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
   - **Data\_CommitTransactionTimeMS:long -** Time taken to commit the save transaction
 
@@ -6814,6 +6914,28 @@ Collected whenever PowerPoint performs a Save As. Includes success or failure re
 The following fields are collected:
 
 - **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
+
+- **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
 - **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
@@ -7001,6 +7123,28 @@ Collected whenever PowerPoint performs a save using the legacy code path. Includ
 The following fields are collected:
 
 - **Data_AddDocTelemetryResult:long** - Does this log entry have all necessary document telemetry (Data_Doc_* fields)? If not, why?
+
+- **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
+
+- **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
+
+- **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
+
+- **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
+
+- **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
+
+- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+
+- **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
+
+- **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
+
+- **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
+
+- **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
 - **Data_CppUncaughtExceptionCount:long** - Uncaught native exceptions while activity was running
 
@@ -8707,6 +8851,12 @@ The following fields are collected:
 
 - **has_mip_label** - indicates whether a MIP label was stamped on the message or not
 
+- **image_attachment_count** - indicates how many images are being sent as attachments to the message
+
+- **image_body_count** - indicates how many images are being sent inline as part of the body of the message
+
+- **image_movement_count** - indicates how many images of the message that have been moved to inline or move back.
+
 - **is_group_escalation** - is this a group escalated message, "escalated message" is a message that was sent to the user's mailbox because of an escalation (subscribed to group)
 
 - **is_groups** - track whether message sent is a groups message or not
@@ -9736,6 +9886,28 @@ The following fields are collected:
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
    
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
+
+  - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
+
+  - **Data_ClpDocHasIdentity:bool**  - Whether the document has identity info (used to get and set sensitivity labels)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – Whether the document has working sensitivity label metadata from the session
+
+  - **Data_ClpDocHasSpoMetadata:bool** - Whether the document has sensitivity label metadata from SPO via IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – Whether the document has sensitivity label metadata from SPO via IPackage
+
+  - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
+
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+
+  - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
+
+  - **Data_ClpDocNumFailedSetLabels:int** - Count of sensitivity labels that failed to set on the document
+
+  - **Data_ClpDocSessionMetadataDirty:bool** - Whether the document has working sensitivity label metadata that has been dirtied
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – Whether the document was in the trust boundary (allowing for coauthoring on documents protected by sensitivity labels)
 
   - **Data\_ContentTransaction -** Predefined set of values of when transaction can be created (AllowedOnLoadDocument, AllowedOnOpenComplete, etc.)
 
@@ -11468,6 +11640,7 @@ The following fields are collected:
 
 - **Method** - COM method of add-in, which led to crash 
 
+- **OfficeArchitecture** - Architecture of the Office client
 
 #### Office.Programmability.Telemetry.AddInCrash
 
@@ -12476,9 +12649,9 @@ The following fields are collected:
   
 - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
-- **ColdBoot** - Whether is first time Office application runs after a system restart or application binary had to be loaded from disk.
+- **ColdBoot** - Whether this is the first time the Office application ran after a system restart or application binary had to be loaded from disk. (macOS/iOS only)
 
-- **DeviceModel** - The model of the device.
+- **DeviceModel** - The model of the device. (macOS/iOS only)
 
 - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
 
@@ -12488,6 +12661,8 @@ The following fields are collected:
 
 - **FirstBoot** - Whether this was a first boot of the application.
 
+- **FreeMemoryPercentage** – What percent of memory on the device is free. (Windows only)
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
@@ -12496,9 +12671,19 @@ The following fields are collected:
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
+- **PageFaultCount** – The number of page faults for the process. (Windows only)
+
+- **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
+
+- **PrivateCommitUsageMB** – The Commit Charge (i.e., the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
+
+- **ProcessorCount** – The number of processors on the device. (macOS/iOS only)
+
+- **TotalPhysicalMemory** – The total amount of physical memory on the device. (macOS/iOS only)
+
 - **TotalWorkingSetMB** - The amount of memory in megabytes in the process's working set.
 
-- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS / iOS only)
+- **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS/iOS only)
 
 - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
 
