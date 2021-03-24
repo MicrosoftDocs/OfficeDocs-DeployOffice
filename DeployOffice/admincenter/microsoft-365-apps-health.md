@@ -48,7 +48,7 @@ Currently, Microsoft 365 Apps health offers trends for the following performance
 - App File Open Time (SharePoint): indicates the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
 > [!TIP]
-> To learn more about how to interpret trends, see [Performance Trends](#performance_trends)
+> To learn more about how to interpret trends, see [Performance Trends](## Performance trends)
 
 When a noteworthy change in a trend is detected, the dashboard presents it as an advisory. Advisories help you isolate fault domains and are defined in the context of a metric of a specific Office app, build, and channel (e.g. crash rate of Word in build 16.0.13628.20274 in the Current update channel) and inform about a deterioration or improvement and are categorized as significant or minor. 
 
@@ -67,7 +67,7 @@ When you first sign in to the Microsoft 365 Apps health dashboard, you will see 
 - App health overview: highlights the builds for which significant health deteriorations have been detected in your tenant. It includes the number of devices observed to run the impacted builds in the last 14 days. This is useful to assess impact and prioritize troubleshooting of impacted builds 
 - App currency overview: shows the percentage of devices running builds from the recommended Monthly and Monthly Enterprise update channels, which deliver the most secure and rich-feature versions of the Office apps. It also highlights the percentage of devices running builds that are out of support and should be updated as soon as possible to a supported build
 - List of recent advisories: shows the latest advisories (generated in the last 24 hours) on significant deteriorations or improvements in the health trends of your Office apps. Each row includes the description of the deterioration as well as the impact app, build, and update channel. You can select any advisory to see additional details or navigate to Advisory History to see past (older than 24 hours) advisories
-- Monitoring Coverage: shows the percentage of users in your organization, who are sending diagnostic data to the dashboard. You can click to expand the insight and see the percentage of users sending devices for each of the update channels deployed in your organization. The bigger the percentage across your organization or a specific channel, the more representative the insights in the dashboard will be. 
+- Monitoring Coverage: shows the percentage of users in your organization who are sending diagnostic data to the dashboard over the last 14 days. The higher the percentage, the more representative the insights on the dashboard will be. You can expand this insight to see this percentage for each of the update channels deployed in your organization as well as the number of devices monitored by the dashboard. Note that the number of devices reported might differ from what your device management solution shows as device population might have changed in your organization during the 14-day period or due to devices not reporting diagnostic data or not being actively used. The number of devices is intended to provide an idea of magnitude rather than a precise device management count. 
 
 ### App Metrics
 This view helps you assess the health for each of the Office apps separately. This is useful if your organization's operations depend on specific Office app that you need to monitor closely (e.g. Excel). The following information is available for each app:
@@ -150,7 +150,7 @@ The Microsoft 365 Apps health dashboard uses the diagnostic data that your Offic
 
 Diagnostic data is always under your control. To learn more about diagnostic data and the controls available to you see [Privacy Controls on Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/privacy/overview-privacy-controls)
 
-## <a name="performance_trends"/>Performance trends
+## Performance trends
 
 Apps Health shows performance trends for the selected scope (app, build).  For builds rolled out at a monthly (Monthly Enterprise Channel) or faster cadence (Current Channel), this enables you to see how a build’s performance changes over the build’s lifecycle.  For instance, when a build is first released it has lower usage so the performance metrics are often higher, then as the build usage increases and stabilizes the performance metrics go down and stabilize, i.e. the performance of an Office build can improve after a period, post deployment. Then when a new build is rolled out it goes through the same pattern while the old build has reduced usage and performance metrics show a correlated change.  The specific patterns are often unique to your organization and the way that build rollouts happen within your tenant.  Hint: Hover over a trend to see the current usage (Event Count) to understand when the builds have similar usage and therefore it makes sense to compare them.  Often the closer the usage is between builds the more comparable the performance trends are.
 
