@@ -29,7 +29,7 @@ Microsoft uses an agile development model that promotes rapid development. This 
 
 Many changes relate to new features that are designed to enhance the user experience. These changes are a category of change that's within a broader set. The broader set of categories of change includes service maintenance, security updates, and updates to meet the needs of the ever-changing regulatory and compliance landscape.
 
-Microsoft constantly improves Microsoft 365 services to help every person and every organization on the planet to achieve more. Our commitment to enhancing the user experience means that we offer a continuous stream of updates to the service. And to ease your deployment planning, we release client updates in alignment with release cycles. We design new features to improve productivity and delight users. Equally important is for features to operate in a secure and compliant environment. As part of the [shared responsibility model](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility), Microsoft takes extensive measures to secure our environment. Our certifications hosted on the Microsoft [Service Trust Portal](https://aka.ms/stp) evidence our compliance with 100+ frameworks. The other half of the responsibility model – your environment – must also be secure and compliant, so we carefully consider potential customer impact when we structure our changes and the surrounding processes.
+Microsoft constantly improves Microsoft 365 services to help every person and every organization on the planet to achieve more. Our commitment to enhancing the user experience means that we offer a continuous stream of updates to the service. And to ease your deployment planning, we release client updates in alignment with release cycles. We design new features to improve productivity and delight users. Equally important is for features to operate in a secure and compliant environment. As part of the [shared responsibility model](/azure/security/fundamentals/shared-responsibility), Microsoft takes extensive measures to secure our environment. Our certifications hosted on the Microsoft [Service Trust Portal](https://aka.ms/stp) evidence our compliance with 100+ frameworks. The other half of the responsibility model – your environment – must also be secure and compliant, so we carefully consider potential customer impact when we structure our changes and the surrounding processes.
 
 Historically, the deployment of changes within customer organizations has been tightly controlled by IT departments. Controlling deployments within your tenant holds a place in the modern cloud landscape, but faster feature deployment is key to realizing value for your users. As the Microsoft cloud further adopts a continuous update model, organizations’ ability to make risk-based decisions on which changes require granular evaluation and which can be implemented immediately becomes paramount.
 
@@ -80,13 +80,13 @@ The Microsoft industry observation shows that the Restrict All Change strategy i
 
 ### Consuming and managing change – Message center and Planner
 
-All change strategies require communication and messaging for users to consume and act on the change. [Message center is your notification hub for planned changes and other important Microsoft 365 announcements](https://docs.microsoft.com/microsoft-365/admin/manage/message-center). Message center is located in the Microsoft 365 Admin Center. It includes upcoming new and changed features, planned maintenance, and other important announcements. There are three categories for messages:
+All change strategies require communication and messaging for users to consume and act on the change. [Message center is your notification hub for planned changes and other important Microsoft 365 announcements](/microsoft-365/admin/manage/message-center). Message center is located in the Microsoft 365 Admin Center. It includes upcoming new and changed features, planned maintenance, and other important announcements. There are three categories for messages:
 
 - Prevent or fix issues
 - Plan for change, and
 - Stay informed
 
-The message attributes that Message center provide include Publish Date, Message ID (for tracking specific messages), Title, and (change/event) Description. The Message center is a critical source of information that's important for change planning and update consumption across Microsoft 365. Building projects and tasks from these often-actionable notifications is critical to successful change strategy. To help you better understand this content, [Planner has been integrated with Message center allowing messages to be directly synced with Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
+The message attributes that Message center provide include Publish Date, Message ID (for tracking specific messages), Title, and (change/event) Description. The Message center is a critical source of information that's important for change planning and update consumption across Microsoft 365. Building projects and tasks from these often-actionable notifications is critical to successful change strategy. To help you better understand this content, [Planner has been integrated with Message center allowing messages to be directly synced with Planner](/office365/planner/track-message-center-tasks-planner).
 
 Planner features include:
 
@@ -123,11 +123,11 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 |------------------------|---------------|----------------------|----------|
 | Type of change | Feature updates<br> New features or applications<br> Deprecated features | Client hotfixes for issues | Security patches|
 | Advance notice? | 30 days' notice for changes that require action | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |
-| Communication channel | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](https://go.microsoft.com/fwlink/p/?LinkID=626090) | Security bulletin or CVE |
+| Communication channel | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps) | Security bulletin or CVE |
 | Requires admin action? | Sometimes | Rarely | Rarely |
 | What kind of action? | Change settings<br> Communicate changes to users<br> Validate customizations | Change admin settings |      |
 
-Responsibility for managing these changes is shared between Microsoft and you as the administrator of your Microsoft 365 tenant. For more information, see the [Microsoft shared responsibility model](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility).
+Responsibility for managing these changes is shared between Microsoft and you as the administrator of your Microsoft 365 tenant. For more information, see the [Microsoft shared responsibility model](/azure/security/fundamentals/shared-responsibility).
 
 Now that we've outlined the types of changes that you can expect from Microsoft 365 services and client applications, including associated responsibilities, the next section explores the different release channels and the controls available for each.
 
@@ -155,7 +155,7 @@ To implement the [democratization of change](#change-evaluation-democratization)
 
 Your primary control for receiving service updates is the configuration of your release channels. Although Microsoft provides you control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services (instead of to software installations that are running in your IT infrastructure). It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes give you less granularity of control over deployment than Microsoft 365 Apps do, because Microsoft 365 Apps have both release channels and various deployment tools available.
 
-You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
+You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
 ![Release preferences options](../images/release-preferences.png)
 *Figure 5*
@@ -194,13 +194,13 @@ When you switch channels, there are certain considerations - such as loss of fea
 
 In conjunction with release channels, which are inherently controls themselves, Microsoft provides a selection of tools and configurations for further deploying, controlling, and managing your Microsoft 365 clients. The tools for managing your devices and the Microsoft 365 clients installed on them have historically been decentralized. In addition to a multitude of third-party options that are available, the Microsoft solutions include the following tools:
 
-  - [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr)
+  - [Microsoft Endpoint Configuration Manager](/configmgr)
 
-  - [Intune](https://docs.microsoft.com/intune)
+  - [Intune](/intune)
 
-  - [Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
+  - [Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
 
-  - [Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot)
+  - [Autopilot](/mem/autopilot/windows-autopilot)
 
   - [Microsoft 365 Apps admin center](../admincenter/overview.md) ([config.office.com](https://config.office.com/)), which integrates with the [Office cloud policy service](../overview-office-cloud-policy-service.md)
 
@@ -227,7 +227,7 @@ As of 2019, Microsoft refers to our suite of management solutions under this sin
 
 - Your options for enabling clients to receive updates from Configuration Manager.[[7]](#footnote-7)
 
-For comprehensive instructions to configure your deployment strategy, see the [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/mem/configmgr/).
+For comprehensive instructions to configure your deployment strategy, see the [Microsoft Endpoint Configuration Manager documentation](/mem/configmgr/).
 
 The [Microsoft 365 Apps admin center](../admincenter/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
 
@@ -290,7 +290,7 @@ Earlier, we shared data that supports the user value of being on Current Channel
 
    - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../change-update-channels.md). For a description of benefits, see the [Client release channels](#client-release-channels) section of this article.
 
-   - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release channels & controls](#service-release-channels-and-controls) section earlier in this article.
+   - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release channels & controls](#service-release-channels-and-controls) section earlier in this article.
 
 - **Power user (expertise):** To democratize update evaluations, identify power users in your production tenant and subscribe them to Current Channel or Monthly Enterprise Channel (Microsoft 365 Apps) and the Targeted Release channel (services). Only the specified power users receive continuous or early updates and serve as an essential source of feedback, bugs, and experience across various lines of business and user expertise.
 
@@ -319,9 +319,9 @@ The Microsoft Change Management Plan outlines three change phases and recommende
 
 | Phase 1: Before change | Phase 2: During change | Phase 3: After change |
 |------------------------|------------------------|-----------------------|
-| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub//unified/support/customer-pulse), or by using the Message center communication. |
+| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change in the [Customer Pulse](/services-hub//unified/support/customer-pulse), or by using the Message center communication. |
 | Know about the change:<br> Check [Product Roadmap](https://www.microsoft.com/microsoft-365/roadmap)<br> Check the Message center in the Microsoft 365 [admin center](https://portal.office.com/) | Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management. | Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency. |
-| Provide feedback about an upcoming service change in the [Customer Pulse](https://docs.microsoft.com/services-hub/unified/support/customer-pulse), or by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
+| Provide feedback about an upcoming service change in the [Customer Pulse](/services-hub/unified/support/customer-pulse), or by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
 
 Regardless of change strategy, ensuring that your users understand the latest changes is important for successful adoption. The criticality of adoption and change management continues to trend upward as Microsoft and the greater market move toward continuous change.
 
@@ -350,14 +350,14 @@ Messages are identified in the right-side column above by one of three categorie
   
 **Plan for change**: These messages inform you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, you will be notified about upcoming changes to system requirements and about features that will be removed. To keep the service running normally, we strive to provide at least 30 days' notice of any change that requires an admin to act.  
   
-**Stay informed**: This is where we notify you about new or updated features that we're turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages might also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance might result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service like email or OneDrive for Business. For more information, see the [Message center documentation](https://docs.microsoft.com/microsoft-365/admin/manage/message-center).
+**Stay informed**: This is where we notify you about new or updated features that we're turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages might also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance might result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service like email or OneDrive for Business. For more information, see the [Message center documentation](/microsoft-365/admin/manage/message-center).
 
 Both "prevent or fix issues" and "plan for change" messages might require action from admins. To help you prioritize and plan, the **Act by** column contains the date by which action is required.
 
 > [!IMPORTANT]
 > "To help you prioritize and plan, the **Act by** column contains the date by which action is required."
 
-The Message center admin user interface is one way to obtain service change information. Using the [Office 365 Service Communications API](https://docs.microsoft.com/office/office-365-management-api/office-365-service-communications-api-reference), you can build automated solutions to query the following relevant data:
+The Message center admin user interface is one way to obtain service change information. Using the [Office 365 Service Communications API](/office/office-365-management-api/office-365-service-communications-api-reference), you can build automated solutions to query the following relevant data:
 
 - **Get Services:** Returns the list of services to which you are subscribed.
 - **Get Current Status:** Returns a real-time view of current and ongoing services incidents.
@@ -368,7 +368,7 @@ We commit to continuously improving our change classification and notification p
 
 ## Sources of information and feedback channels
 
-To ensure broad dissemination and accessibility, Microsoft publishes change information in a variety of locations. The [Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure that you're holistically informed in a timely manner.
+To ensure broad dissemination and accessibility, Microsoft publishes change information in a variety of locations. The [Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure that you're holistically informed in a timely manner.
 
 ### Sources of change information
 
@@ -386,7 +386,7 @@ Your admins can use the Message center weekly digest to review Message center co
 ![Sample Message center announcement](../images/message-center-announcement.png)
 *Figure 12*
 
-[**Microsoft admin mobile app**](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-mobile-app)
+[**Microsoft admin mobile app**](/microsoft-365/admin/admin-overview/admin-mobile-app)
 
 The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they are released. Figure 13 shows a screenshot of the mobile app.
 
@@ -402,13 +402,13 @@ In addition to changing our services, we also update Microsoft 365 clients. Both
 - [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
   - These update channels mirror those described earlier in the Change Management Plan.
 
-- [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps?redirectedfrom=MSDN)
+- [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)
   - Client release notes provide a wealth of information about the latest security updates, update sizes, and updates for different platforms (for example, Mac).
 
 - [Microsoft 365 news and announcements](https://www.microsoft.com/microsoft-365/blog/)
   - Read about the latest releases and features in our blog posts, which are separate from our formal documentation on [docs.microsoft.com](https://docs.microsoft.com/).
 
-- [Microsoft 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)
+- [Microsoft 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
   - Review Microsoft 365 services and features to learn more about existing features that you can leverage to improve security and productivity.
 
 Outside of formal documentation, we recommend customers join the [Microsoft Tech Community](https://aka.ms/office365network) to keep a pulse on how changes are managed and deployed by industry peers. The Microsoft Tech Community is an active, raw, real-time source of information. We actively monitor the platform to better understand how changes are being received.
@@ -422,7 +422,7 @@ Microsoft establishes a virtuous feedback loop between customers and our product
 - Message center
 - Microsoft Tech Community
 
-[**Customer Pulse**](https://docs.microsoft.com/services-hub//unified/support/customer-pulse)  
+[**Customer Pulse**](/services-hub//unified/support/customer-pulse)  
 It only takes a few minutes to provide valuable feedback through Customer Pulse. Sign into the [Services Hub](https://serviceshub.microsoft.com/), expand the “Management” menu, select “Customer Pulse,” and follow the on-screen instructions. This feedback is aggregated and routed directly to engineering.
 
 [**Microsoft 365 admin portal**](https://portal.office.com/)  
@@ -462,7 +462,7 @@ With a 1.5 margin of error.
 Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/licensing/product-licensing/products) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section (“Processing of Personal Data; GDPR”).
 
 4:<span id="footnote-4"></span>
-For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365).
+For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
 5:<span id="footnote-5"></span>
 If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait an such an extended period between releases.
@@ -472,4 +472,3 @@ This consists of a selected subset of non-security updates for Semi-Annual Enter
 
 7:<span id="footnote-7"></span>
 For Configuration Manager to be able to manage Office updates, an Office COM object needs to be enabled on the computer where Office is installed. The Office COM object takes commands from Configuration Manager to download and install client updates. You can enable the Office COM object by using client policy in Configuration Manager, Group Policy, or the Office Deployment Tool. If you use more than one method, the Group Policy setting determines the final configuration.
-

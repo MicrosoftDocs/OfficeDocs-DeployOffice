@@ -78,7 +78,7 @@ Here are some example installation scenarios, whether they're supported, and an 
 |Microsoft 365 Apps  <br/><br/> Project Professional 2019 (volume licensed)  |   Yes, but with a caveat. <sup>1</sup>   | They both use Click-to-Run and are the same version (16.0).         |
 | Microsoft 365 Apps  <br/><br/> Visio Standard 2019 (retail) |   Yes, but with a caveat. <sup>1</sup>  | They both use Click-to-Run and are the same version (16.0).         |
 
-<sup>1</sup> You must be using at least Version 1808 of Microsoft 365 Apps, because that's the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel. For Microsoft 365 Apps release information, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+<sup>1</sup> You must be using at least Version 1808 of Microsoft 365 Apps, because that's the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel. For Microsoft 365 Apps release information, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 
 ## Additional information

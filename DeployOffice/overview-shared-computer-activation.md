@@ -44,7 +44,7 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 > - Shared computer activation is available for Education plans that include Microsoft 365 Apps for enterprise. For example, Office 365 A3 or Microsoft 365 A5.
 > - Shared computer activation isn't available for Office for Mac.
 
-Make sure you [assign each user a license](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
+Make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
 
 If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
 - When you are using the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-4---create-and-deploy-the-office-application-to-the-broad-group), make sure that you enable the option **Shared Computer** in the **Product activation** section.
@@ -61,7 +61,7 @@ If Microsoft 365 Apps is already installed and you want to enable shared compute
 
   > [!NOTE]
   > Microsoft 365 Apps for business doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
-  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](https://docs.microsoft.com//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
+  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
@@ -112,7 +112,7 @@ Microsoft allows a single user to activate Microsoft 365 Apps on a reasonable nu
     
    ![Too many computers activated message](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
   
-**Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Azure Active Directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity).
+**Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity).
     
 If you don't use single sign-on, you should consider using roaming profiles and include the %localappdata%\\Microsoft\\Office\\16.0\\Licensing folder as part of the roaming profile.
     
@@ -137,5 +137,3 @@ To configure licensing token roaming, you can use either the Office Deployment T
 - [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 - [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
 - [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
-  
-

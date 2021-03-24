@@ -24,12 +24,12 @@ Teams is also being added to ***existing*** installations of Microsoft 365 Apps 
 
 If Skype for Business is already installed on the device, Skype for Business won't be removed and will continue to function as before. Skype for Business will continue to be installed with new installations of Microsoft 365 Apps, unless you configure your installation to exclude it.
 
-You don't have to wait if you're ready now to deploy Teams to the users in your organization. You can deploy Teams for your users by [following these instructions](https://docs.microsoft.com/MicrosoftTeams/msi-deployment) or you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads).
+You don't have to wait if you're ready now to deploy Teams to the users in your organization. You can deploy Teams for your users by [following these instructions](/MicrosoftTeams/msi-deployment) or you can have your users install Teams for themselves from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads).
 
 We also have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) or [existing](#what-about-existing-installations-of-microsoft-365-apps) installations of Microsoft 365 Apps if your organization isn't ready to deploy Teams.
 
 > [!IMPORTANT]
-> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
+> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
 
 If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
@@ -87,7 +87,7 @@ If you're deploying Microsoft 365 Apps by using Microsoft Intune, there is a che
 
 If you're letting your users install Microsoft 365 Apps for themselves from the Office 365 portal, you can't exclude Teams from being included as part of the installation, unless you use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams).
 
-To remove Teams after it's been installed, go to **Control Panel** > **Uninstall a program** and uninstall **Microsoft Teams** and any instances of **Teams Machine-Wide Installer**. If you previously installed Teams separately from installing Microsoft 365 Apps, you might see multiple instances of **Teams Machine-Wide Installer**. You can also use PowerShell to remove Teams as shown in this [script sample](https://docs.microsoft.com/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
+To remove Teams after it's been installed, go to **Control Panel** > **Uninstall a program** and uninstall **Microsoft Teams** and any instances of **Teams Machine-Wide Installer**. If you previously installed Teams separately from installing Microsoft 365 Apps, you might see multiple instances of **Teams Machine-Wide Installer**. You can also use PowerShell to remove Teams as shown in this [script sample](/microsoftteams/scripts/powershell-script-teams-deployment-clean-up).
 
 
 ## What about existing installations of Microsoft 365 Apps?
@@ -155,7 +155,7 @@ If you want Teams to be installed, but don't want Teams to start automatically f
 By enabling this policy setting ***before Teams is installed***, Teams won't start automatically when the user logs in to the device. Once a user signs in to Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams to not start automatically by configuring user settings within Teams or by clearing the **Open Teams on startup** check box on the sign in screen for Teams.
 
 > [!TIP]
-> If you've already installed Teams but you want to use this policy setting to prevent Teams from starting automatically, enable this policy setting and then [run this script](https://docs.microsoft.com/MicrosoftTeams/scripts/powershell-script-teams-reset-autostart) on a per-user basis to reset the autostart setting for Teams.
+> If you've already installed Teams but you want to use this policy setting to prevent Teams from starting automatically, enable this policy setting and then [run this script](/MicrosoftTeams/scripts/powershell-script-teams-reset-autostart) on a per-user basis to reset the autostart setting for Teams.
 
 But even if you enable this policy setting so that Teams doesn't start automatically, an icon for Microsoft Teams will appear on the user's desktop.
 
@@ -172,17 +172,17 @@ If you have Microsoft 365 Apps for business or can't use Group Policy for some o
 
 If devices in your organization are shared by multiple users, be aware that Teams is installed separately for each user that signs into that device. Installations of Teams average about 500 mb, so hard disk space, as well network bandwidth for updates, might become an issue for these shared devices installed with Teams. In cases where shared devices are used by a significant number of users, you might want to consider not installing Teams on those shared devices.
 
-If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](https://docs.microsoft.com/microsoftteams/teams-for-vdi). Teams installed with Microsoft 365 Apps as described in this article is ***NOT*** currently supported in VDI environments.
+If you plan to use Teams in a Virtual Desktop Infrastructure (VDI) environment, see [Teams for Virtualized Desktop Infrastructure](/microsoftteams/teams-for-vdi). Teams installed with Microsoft 365 Apps as described in this article is ***NOT*** currently supported in VDI environments.
 
 ## Feature and quality updates for Microsoft Teams
 
-After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
+After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
 ## Microsoft Teams installations on a Mac
 
 If you're using Version 16.21, or later, of the Office suite install package to deploy on a Mac, Teams will be included as part of the installation.
 
-If you don't want Teams included as part of the installation, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac).  
+If you don't want Teams included as part of the installation, there is an Office suite install package available that doesn't include Teams. You can also use the install packages for individual applications, such as Word or Excel. For links to the most current install packages, see [Update history for Office for Mac](/officeupdates/update-history-office-for-mac).  
 
 If you're letting your users install Office for themselves on a Mac, such as from [https://teams.microsoft.com/downloads](https://teams.microsoft.com/downloads), you can't exclude Teams from being included as part of the installation.
 
@@ -192,11 +192,11 @@ To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the d
 
 Some Office 365 plans include Microsoft 365 Apps, but don't include the Teams service. Even if a plan doesn't include the Teams service, Teams will still be installed with Microsoft 365 Apps, as described earlier in this article. To prevent Teams from being installed, follow the steps outlined earlier in this article.
 
-For Office 365 plans that don't include the Teams service, a free trial version of Teams that's valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](https://docs.microsoft.com/microsoftteams/iw-trial-teams).
+For Office 365 plans that don't include the Teams service, a free trial version of Teams that's valid for 1 year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Commercial Cloud Trial offer](/microsoftteams/iw-trial-teams).
 
 ## Additional information about installing Microsoft Teams
 
 - There is no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
-- Teams is installed with Microsoft 365 Apps in the same way that Teams is installed if you use the [MSI-based installer for Teams](https://docs.microsoft.com/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
+- Teams is installed with Microsoft 365 Apps in the same way that Teams is installed if you use the [MSI-based installer for Teams](/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
 - The architecture (sometimes referred to as the *bitness*) of Teams and Microsoft 365 Apps installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Microsoft 365 Apps. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
-- For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams).
+- For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](/MicrosoftTeams/Microsoft-Teams).

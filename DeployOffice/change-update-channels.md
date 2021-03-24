@@ -29,7 +29,7 @@ Group Policy and the ODT are the only supported methods to change update channel
 
 3. Link the updated policy to the OU with the devices whose channel you want to change.
 
-4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](https://docs.microsoft.com/windows-server/administration/windows-commands/gpupdate).
+4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate).
 
 After policy has been applied, the Office Automatic Update 2.0 task must run. When that task runs, it detects the updated policy and updates the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed.
 

@@ -37,7 +37,7 @@ The easiest way to download Office for Mac, and ensure you're always getting the
 
 Here is some additional information about installer packages:
 
-- Installer and update packages for individual applications are also available on the Office CDN. For links to those packages, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
+- Installer and update packages for individual applications are also available on the Office CDN. For links to those packages, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
 - The same installer package is used for Office for Mac and Office 2019 for Mac. How you activate the product determines whether you get the features for Office for Mac or the features for Office 2019 for Mac.
 - Unlike Office 2016 for Mac, the installer package for Office 2019 for Mac isn't available on the Volume Licensing Service Center (VLSC).
   
@@ -56,7 +56,7 @@ Whichever deployment method you decide to use, the following information can hel
     
 - **Side-by-side installation:** You can't have Office 2016 for Mac, which is no longer supported, and Office 2019 for Mac installed on the same computer. Also, you can't have Office for Mac (from an Office 365 or Microsoft 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same computer.
     
-- **Deploying individual apps:**  Installer package files for individual applications are available on the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
+- **Deploying individual apps:**  Installer package files for individual applications are available on the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
     
 - **Activation:** To use Office for Mac, it needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) in Office for Mac. 
 

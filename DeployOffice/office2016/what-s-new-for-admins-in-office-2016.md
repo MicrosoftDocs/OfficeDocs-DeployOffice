@@ -40,7 +40,7 @@ Multi-factor authentication (MFA) is now available in Outlook through integratio
   
 ## Outlook 2016 now requires Autodiscover to be configured
 
-Outlook now requires Autodiscover to be configured or it will be unable to connect to Exchange Server. Outlook retrieves Exchange connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature. For more information, see [Autodiscover service](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover). 
+Outlook now requires Autodiscover to be configured or it will be unable to connect to Exchange Server. Outlook retrieves Exchange connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature. For more information, see [Autodiscover service](/Exchange/architecture/client-access/autodiscover). 
   
 ## Data Loss Protection (DLP) added to Word 2016, Excel 2016, and PowerPoint 2016
 
@@ -54,5 +54,3 @@ IRM protection is now available for Visio files, enabling both online and offlin
 
 - [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
 - [Office Help & Training](https://support.microsoft.com/office)
-  
-

@@ -28,13 +28,13 @@ Microsoft Search in Bing enables your users to use the familiar browser address 
 
 Microsoft Search is the native search experience in Microsoft 365, so no initial setup is required for access within Office apps. Microsoft Search in Bing enables easier access through the address bar.  You can improve the search experience for your users by adding content, such as bookmarks, Q&As, acronyms, building locations, and floor plans. For more information, see [How to enhance Microsoft Search in Bing results for your organization](#how-to-enhance-microsoft-search-in-bing-results-for-your-organization).
 
-Users must be signed in with their work or school account to receive results from Microsoft Search in Bing. For more information, see [Security and Privacy for Microsoft Search in Bing](https://docs.microsoft.com/microsoftsearch/security-for-search).
+Users must be signed in with their work or school account to receive results from Microsoft Search in Bing. For more information, see [Security and Privacy for Microsoft Search in Bing](/microsoftsearch/security-for-search).
 
 For more information about features and capabilities, see the following resources:
 
 - [Intelligent search for work](https://www.microsoft.com/edge/business/intelligent-search-with-bing)
 - [Microsoft Search and How to Set it Up](https://www.youtube.com/watch?v=a5oXeaV1LEI) *(Microsoft Mechanics video)*
-- [Overview of Microsoft Search](https://docs.microsoft.com/microsoftsearch/overview-microsoft-search) *(documentation)*
+- [Overview of Microsoft Search](/microsoftsearch/overview-microsoft-search) *(documentation)*
 
 ## How does the Microsoft Search in Bing extension for Google Chrome get installed?
 
@@ -144,7 +144,7 @@ The location of the device is checked once every month. At that time, if the dev
 Other locations might be added over time. Before any new locations are added, we'll notify you through the Message Center in the Microsoft 365 admin center and we'll update the list of locations accordingly.
 
 > [!TIP]
-> If you want to set Bing as the default search engine for Google Chrome for locations that aren't listed, you can [follow these steps](https://docs.microsoft.com/microsoftsearch/set-default-search-engine#google-chrome-on-windows-xp-sp2-or-later).
+> If you want to set Bing as the default search engine for Google Chrome for locations that aren't listed, you can [follow these steps](/microsoftsearch/set-default-search-engine#google-chrome-on-windows-xp-sp2-or-later).
 
 ## How to prevent the background service for Microsoft Search in Bing from being installed with Microsoft 365 Apps for enterprise
 
@@ -200,12 +200,12 @@ If your organization is new to Microsoft Search in Bing, we suggest reviewing th
 
 There are tools for Microsoft Search that you can use to provide a better search experience for your users so that your users can find the content that they're looking for more easily. For example, you can do the following:
 
-- [Create bookmarks](https://docs.microsoft.com/microsoftsearch/manage-bookmarks) for frequently searched internal web sites and tools, such as employee benefits, time and expense reporting, and self-help IT services.
-- [Create Q&As](https://docs.microsoft.com/microsoftsearch/manage-qas) to instantly answer frequently asked questions in your company, such as "How do I change my password?" or "How do I create a purchase order?"
-- [Add building locations](https://docs.microsoft.com/microsoftsearch/manage-locations) or [upload office floor plans](https://docs.microsoft.com/microsoftsearch/manage-floorplans) to help your users navigate large company campuses with ease.
-- [Define acronyms](https://docs.microsoft.com/microsoftsearch/manage-acronyms) that are commonly used within your organization.
+- [Create bookmarks](/microsoftsearch/manage-bookmarks) for frequently searched internal web sites and tools, such as employee benefits, time and expense reporting, and self-help IT services.
+- [Create Q&As](/microsoftsearch/manage-qas) to instantly answer frequently asked questions in your company, such as "How do I change my password?" or "How do I create a purchase order?"
+- [Add building locations](/microsoftsearch/manage-locations) or [upload office floor plans](/microsoftsearch/manage-floorplans) to help your users navigate large company campuses with ease.
+- [Define acronyms](/microsoftsearch/manage-acronyms) that are commonly used within your organization.
 
-For more information, see [Plan your content](https://docs.microsoft.com/microsoftsearch/plan-your-content).
+For more information, see [Plan your content](/microsoftsearch/plan-your-content).
 
 ## What your users will see with Microsoft Search in Bing
 

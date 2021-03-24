@@ -28,7 +28,7 @@ Here's an overview of the steps to enable Configuration Manager to manage Office
 
 3. [Enable Office 365 clients to receive updates from Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md#BKMK_EnableClient)
 
-After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/deploy-software-updates).
+After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](/mem/configmgr/sum/deploy-use/deploy-software-updates).
 
 <a name="BKMK_Reqs"> </a>
 ## Requirements for using Configuration Manager to manage Office updates
@@ -39,13 +39,13 @@ To enable Configuration Manager to manage Office updates, you need the following
 
 - Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, the subscription version of the Project desktop app, or the subscription version of the Visio desktop app.
 
-- Supported update channel version for Office. For more details, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
+- Supported update channel version for Office. For more details, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)
 
 - Windows Server Update Services (WSUS) 4.0
 
     You can't use WSUS by itself to deploy these updates. You need to use WSUS in conjunction with Configuration Manager
 
-- The hierarchy's top level WSUS server and the top level Configuration Manager site server must have access to the following URLs: *.microsoft.com, *.msocdn.com, *.office.com, *.office.net, *.onmicrosoft.com, officecdn.microsoft.com, officecdn.microsoft.com.edgesuite.net. For more details, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
+- The hierarchy's top level WSUS server and the top level Configuration Manager site server must have access to the following URLs: *.microsoft.com, *.msocdn.com, *.office.com, *.office.net, *.onmicrosoft.com, officecdn.microsoft.com, officecdn.microsoft.com.edgesuite.net. For more details, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
 
 - On the computers that have the Office installed, the [Office COM object is enabled](manage-microsoft-365-apps-updates-configuration-manager.md#BKMK_EnableClient).
 
@@ -66,7 +66,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
      You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Office 365 Client** and **Updates** need to be selected for Configuration Manager to receive notifications when Office update packages are available.
 
-4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction).
+4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](/mem/configmgr/sum/understand/software-updates-introduction).
 
 <a name="BKMK_EnableClient"> </a>
 ## Enable Office 365 clients to receive updates from Configuration Manager
@@ -83,7 +83,7 @@ To enable Configuration Manager to manage Office updates on specific computers b
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
 - Open the client settings, click **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
 
-For more information, see [client policy](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/about-client-settings).
+For more information, see [client policy](/mem/configmgr/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 ### Method 2: Use Group Policy to enable updates from Configuration Manager
@@ -125,10 +125,10 @@ If it meets your business and technical requirements, we recommend updating your
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 
 - In the Configuration Manager console, click **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-client-settings).
+- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](/mem/configmgr/core/clients/deploy/configure-client-settings).
 - Click **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent setting**.
 
-For more information, see [client policy](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/about-client-settings).
+For more information, see [client policy](/mem/configmgr/core/clients/deploy/about-client-settings).
 
 <a name="BKMK_GP"> </a>
 

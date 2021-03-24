@@ -274,7 +274,7 @@ You use the OCT to create a setup customization file (.msp file) that setup appl
     
     Setup applies the file automatically when you install Office on users' computers.
     
-For more information about how to use the OCT, see [Office Customization Tool (OCT) reference for Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
+For more information about how to use the OCT, see [Office Customization Tool (OCT) reference for Office 2013](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
   
 ### Use the Language Preferences tool to change language settings
 
@@ -481,4 +481,3 @@ If you have only one or two users who want proofing tools, you can install proof
 ## Related articles
 
 - [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
-

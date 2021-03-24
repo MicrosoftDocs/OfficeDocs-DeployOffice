@@ -49,10 +49,10 @@ Because you're deploying Microsoft 365 Apps from a local source, you have to cre
 
  These folders will include all the Office installation files you need to deploy. 
 
-2. Assign Read permissions for your users. Installing Office from a shared folder requires only that the user have Read permission for that folder, so you should assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](https://go.microsoft.com/fwlink/p/?LinkId=184710)
+2. Assign Read permissions for your users. Installing Office from a shared folder requires only that the user have Read permission for that folder, so you should assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11))
 
 > [!NOTE]
-> In this article, we have just one shared folder on the network, but many organizations make the Office installation files available from multiple locations. Using multiple locations can help improve availability and minimize the effect on network bandwidth. For example, if some of your users are located in a branch office, you can create a shared folder in the branch office. Those users can then install Office from the local network. You can use the Distributed File System (DFS) role service in Windows Server to create a network share that is replicated to multiple locations. For more information, see [DFS Management](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732006(v=ws.11)). 
+> In this article, we have just one shared folder on the network, but many organizations make the Office installation files available from multiple locations. Using multiple locations can help improve availability and minimize the effect on network bandwidth. For example, if some of your users are located in a branch office, you can create a shared folder in the branch office. Those users can then install Office from the local network. You can use the Distributed File System (DFS) role service in Windows Server to create a network share that is replicated to multiple locations. For more information, see [DFS Management](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732006(v=ws.11)). 
 
 ## Step 2: Download the Office Deployment Tool
 
@@ -77,7 +77,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the Office installation files and Office updates will come from Semi-Annual Enterprise Channel (Preview). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps).
+Note that the Office installation files and Office updates will come from Semi-Annual Enterprise Channel (Preview). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
 ## Step 4: Create a configuration file for the broad group
 
@@ -163,5 +163,4 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 
-[Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)  
-
+[Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)

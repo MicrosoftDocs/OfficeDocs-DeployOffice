@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices which are showing a configuration drift. This article will share some best practices on how to use Microsoft Endpoint Configuration Manager's [dynamic collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
+Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices which are showing a configuration drift. This article will share some best practices on how to use Microsoft Endpoint Configuration Manager's [dynamic collections](/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
 
 This article covers the following scenarios:
 
@@ -123,7 +123,8 @@ Here is how to implement this collection:
    ```sql
     select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
    ```
-5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you are interested in.
+5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you are interested in.
+
 
    > [!NOTE]
    > Devices on Semi-Annual Enterprise Channel might have a far lower build number than devices on Current Channel, even when running the latest build. You can exclude devices on Semi-Annual Enterprise Channel by adding the collection holding these devices as an exclusion.
@@ -136,6 +137,6 @@ After the membership calculation has finished, you can easily see all devices ru
 ## Notes
 
 - If the configuration of a device is changed, there are two timers that are relevant on the Configuration Manager side:
-    - First, the device must upload the [hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), which includes the information about the selected update channel.
+    - First, the device must upload the [hardware inventory](/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), which includes the information about the selected update channel.
     - Second, the Configuration Manager infrastructure must recalculate the memberships of the collections.
 - "Update channels supported by the IT department" in this article refers to channels that the IT department supports as approved configurations in the organization. The created collection will not catch devices that are running a build which is no longer supported by Microsoft.
