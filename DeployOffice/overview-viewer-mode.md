@@ -40,6 +40,6 @@ To use these policy settings, download and install the [Administrative Template 
   - Version 1902 or later of Word, Excel, and PowerPoint.
   - Version 2005 or later of Project and Visio.
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
-- For information about the availability of specific versions in the update channels for Microsoft 365 Apps for enterprise, see [Update history for Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+- For information about the availability of specific versions in the update channels for Microsoft 365 Apps for enterprise, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 - The **Activate Product** button under **File** > **Account** is hidden when Office is in viewer mode.
 - Even when viewer mode is enabled, users need to accept the license agreement when Office is opened for the first time. You can automatically accept the license agreement for your users when you deploy Office by configuring the [AcceptEULA attribute](office-deployment-tool-configuration-options.md#accepteula-attribute-part-of-display-element).

@@ -29,9 +29,9 @@ To use Microsoft 365 Apps, your users will need the appropriate license. To assi
 
 - Assign a license to a user directly in the Office 365 portal by selecting a check box on the licenses page for the user’s account. 
 
-- Use Office 365 PowerShell. For more information, see [Assign Microsoft 365 licenses to user accounts with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+- Use Office 365 PowerShell. For more information, see [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
-- If you have a subscription for Azure AD Premium P1 and above, or an edition of Office 365 Enterprise E3 or Office 365 A3 or Office 365 GCC G3 and above, you can use group-based licensing with Azure AD. You can assign one or more product licenses to a group, and Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. For more information, see  [Group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). 
+- If you have a subscription for Azure AD Premium P1 and above, or an edition of Office 365 Enterprise E3 or Office 365 A3 or Office 365 GCC G3 and above, you can use group-based licensing with Azure AD. You can assign one or more product licenses to a group, and Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. For more information, see  [Group-based licensing in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). 
 
 After a user is assigned a license, you can deploy Office to your users or your users can install Office directly from the Office 365 portal. If the user hasn't been assigned a license, the user can't install Office from the Office 365 portal. We recommend assigning the  license 24 hours prior to the deployment so you can ensure that the license is provisioned. 
 
@@ -63,7 +63,7 @@ There are various licensing modes that can be used with a supported version of M
 - The Unattended License allows for the use of Office with service accounts or other non-user accounts, typically common for automation process execution.
 
 > [!NOTE]
-> Office applications are not specifically designed for large scale unattended usage scenarios.  For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](https://docs.microsoft.com/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
+> Office applications are not specifically designed for large scale unattended usage scenarios.  For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
 
 ### Viewer Mode
 [More Information](overview-viewer-mode.md)
@@ -105,8 +105,8 @@ In Microsoft 365 Apps version 1910 and later, we made the following improvements
 
 ## Related topics
 
-[Licensing and activation data sent to Office 365 by Microsoft 365 Apps](licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md)
+[Licensing and activation data sent to Office 365 by Microsoft 365 Apps](./licensing-activation-data-sent-microsoft-365-apps.md)
   
-[About Microsoft 365 Apps in the enterprise](about-office-365-proplus-in-the-enterprise.md)
+[About Microsoft 365 Apps in the enterprise](./about-microsoft-365-apps.md)
   
-[Choose how to deploy Microsoft 365 Apps](choose-how-to-deploy-office-365-proplus.md)
+[Choose how to deploy Microsoft 365 Apps](./plan-microsoft-365-apps.md)

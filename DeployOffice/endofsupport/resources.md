@@ -52,7 +52,7 @@ We provide various services to help you upgrade to subscription versions of the 
 - [Microsoft FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365?rtc=1), for migration and deployment assistance from Microsoft experts.
 - [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1), for assistance from Microsoft with application compatibility issues.
 - [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md), for technical documentation.
-- [Product lifecycle dashboard](https://docs.microsoft.com/mem/configmgr/core/clients/manage/asset-intelligence/product-lifecycle-dashboard) and [upgrade readiness dashboard](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness), for users of Microsoft Endpoint Configuration Manager (current branch).
+- [Product lifecycle dashboard](/mem/configmgr/core/clients/manage/asset-intelligence/product-lifecycle-dashboard) and [upgrade readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness), for users of Microsoft Endpoint Configuration Manager (current branch).
 - [Readiness Toolkit for Office add-ins and VBA](../readiness-toolkit-application-compatibility-microsoft-365-apps.md), to help identify potential issues with add-ins and VBA macros used in your organization.
 
 
@@ -62,6 +62,6 @@ We provide various services to help you upgrade to subscription versions of the 
 
 - **Office configuration support matrix** For a printable chart showing end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 
-- **Microsoft Lifecycle Policy** To get support information about all Microsoft products, go to the [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/) site. 
+- **Microsoft Lifecycle Policy** To get support information about all Microsoft products, go to the [Microsoft Lifecycle Policy](/lifecycle/) site. 
  
 - **Microsoft Tech Community** To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.

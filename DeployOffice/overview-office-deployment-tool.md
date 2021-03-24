@@ -29,7 +29,7 @@ After downloading the file, run the self-extracting executable file, which conta
 Before using the ODT to download or install Office, we recommend making sure you have the latest version.
 
 > [!TIP]
-> For more information about what changes are in the latest version of the ODT, see [Release history for Office Deployment Tool](https://docs.microsoft.com/officeupdates/odt-release-history).
+> For more information about what changes are in the latest version of the ODT, see [Release history for Office Deployment Tool](/officeupdates/odt-release-history).
 
 ## Get started with the Office Deployment Tool
 <a name="BKMK_GetStarted"> </a>
@@ -258,7 +258,7 @@ You must run the executable from the client computer on which you want to apply 
 
 In addition to downloading and deploying Microsoft 365 Apps, you can use the Office Deployment Tool to create App-V packages. To do so, update the configuration file and then run the ODT in packager mode. You must create App-V packages on a computer that has a clean install of the operating system.
 
-This article does not cover all the issues related to deploying App-V packages. For more information on that scenario, see [Deploying Microsoft Office 2016 by Using App-V](https://docs.microsoft.com/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
+This article does not cover all the issues related to deploying App-V packages. For more information on that scenario, see [Deploying Microsoft Office 2016 by Using App-V](/microsoft-desktop-optimization-pack/appv-v5/deploying-microsoft-office-2016-by-using-app-v).
 
  **Step 1: Create the configuration file**
 
@@ -293,5 +293,3 @@ After running the command, the package location should have an App-V Packages fo
 <a name="BKMK_createanappvpackage"> </a>
 
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
-
-

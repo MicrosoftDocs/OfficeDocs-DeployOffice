@@ -71,7 +71,7 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 > [!NOTE]
 > - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
-> - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
+> - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](/office/dev/add-ins/outlook/privacy-and-security).
 
 ### Research
 
@@ -86,7 +86,7 @@ On Outlook for iOS, your next upcoming event will be summarized at the top of yo
 
 ### Weather Bar in Outlook
 
-The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
+The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 

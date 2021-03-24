@@ -25,7 +25,7 @@ The following are the requirements for device-based licensing for Microsoft 365 
 
 - Version 1907 or later of Microsoft 365 Apps for enterprise.
 - A supported version of Windows 10 Semi-Annual Channel or Windows 10 Enterprise LTSC 2019.
-- The Windows 10 device must be [Azure Active Directory (Azure AD) joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+- The Windows 10 device must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
 To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet these requirements, do the following steps:
 
@@ -59,11 +59,11 @@ To configure device-based licensing, you first need to add your Windows 10 devic
 
 
 For more information about Azure group management, see the following articles:
-- [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
-- [Create a dynamic group and check status](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
-- [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
+- [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Create a dynamic group and check status](/azure/active-directory/users-groups-roles/groups-create-rule)
+- [Azure AD Connect sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
-After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](https://go.microsoft.com/fwlink/p/?LinkID=2100336). You can assign licenses to only one group, but you can nest groups within that one group.
+After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
@@ -121,6 +121,6 @@ In this case, the device is having problems contacting the Office Licensing Serv
 
 ## Transition from subscription licensing or shared computer activation to device-based licensing 
 
-If Microsoft 365 Apps  are already installed and activated with user-based subscription licensing or shared computer activation, you will need to reset the license state on the device before it will transition over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](https://docs.microsoft.com/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
+If Microsoft 365 Apps  are already installed and activated with user-based subscription licensing or shared computer activation, you will need to reset the license state on the device before it will transition over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
 
-Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).  
+Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).

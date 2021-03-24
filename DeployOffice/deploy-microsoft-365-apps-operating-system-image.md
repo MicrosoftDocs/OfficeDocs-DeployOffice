@@ -24,7 +24,7 @@ Here are the basic steps of how to include Microsoft 365 Apps when you create an
 ### Step 1: Install and configure the operating system for the image
 <a name="Step1"> </a>
 
-To start, install and configure the operating system on a test computer. There are several free tools from Microsoft to help you do this, such as [Windows Assessment and Deployment Kit (Windows ADK)](https://go.microsoft.com/fwlink/p/?LinkID=312996) and [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkID=268150). 
+To start, install and configure the operating system on a test computer. There are several free tools from Microsoft to help you do this, such as [Windows Assessment and Deployment Kit (Windows ADK)](/previous-versions/windows/hh824947(v=win.10)) and [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/). 
   
 ### Step 2: Install Microsoft 365 Apps for the image by using the Office Deployment Tool
 <a name="Step2"> </a>
@@ -79,7 +79,7 @@ The location of the ospp.vbs script depends on whether you install the 32-bit or
 ### Step 5: Save the operating system image
 <a name="Step5"> </a>
 
-You can use Windows ADK or MDT 2012 to save the operating system image file that you'll deploy to your users. You can also use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment).
+You can use Windows ADK or MDT 2012 to save the operating system image file that you'll deploy to your users. You can also use [Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment).
   
 ### Step 6: Test that the operating system image works
 <a name="Step6"> </a>
@@ -98,5 +98,3 @@ Users are prompted to activate Microsoft 365 Apps when they open their first Off
 ![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
 As long as the computer is connected to the internet, the user just needs to sign in when prompted, and then activation occurs automatically.
-  
-

@@ -145,7 +145,7 @@ The following table describes each column in the **Document issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -169,7 +169,7 @@ The following table describes each column in the **Document sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the document that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -198,7 +198,7 @@ The following screenshot shows the **Solutions** worksheet.
 
 ![A screenshot of the main Solutions worksheet from Office Telemetry Dashboard.](../images/ORK_Telem_SolutionWorksheet1.png)
   
-After data is collected, you can manage Office add-ins by using the **Add-in management mode** link on the **Solutions** worksheet. For more information, see [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=271236).
+After data is collected, you can manage Office add-ins by using the **Add-in management mode** link on the **Solutions** worksheet. For more information, see [Let's manage add-ins using Telemetry Dashboard](/archive/blogs/office_resource_kit/lets-manage-add-ins-using-telemetry-dashboard).
   
 There are two main sections on the **Solutions** worksheet: 
   
@@ -273,7 +273,7 @@ The following table describes each column in the **Solution details** worksheet.
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
 |Last loaded  <br/> |Shows the last time that the solution was loaded.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Office version  <br/> |Shows the Office version that was used to open the solution.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -299,7 +299,7 @@ The following table describes each column in the **Solution issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -323,7 +323,7 @@ The following table describes each column in the **Solution sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the solution that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -333,7 +333,7 @@ The following table describes each column in the **Solution sessions** worksheet
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Office version  <br/> |Shows the Office version with build numbers that used this solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Document loaded  <br/> |Shows the documents that were open when the issue occurred.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -439,4 +439,3 @@ When you select the **Create custom report** button on the **Custom report** wor
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
-

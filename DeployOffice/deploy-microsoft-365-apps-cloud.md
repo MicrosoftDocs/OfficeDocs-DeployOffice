@@ -42,7 +42,7 @@ You can customize these options to match the requirements for your organization,
 
 You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
 
-1. Create the shared folder **\\\\Server\Share\M365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11)).
+1. Create the shared folder **\\\\Server\Share\M365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11)).
 
 2. Download the Office Deployment Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\\Server\Share\M365. If you've already downloaded the ODT, make sure you have the latest version.
 
@@ -65,7 +65,7 @@ To download and deploy Microsoft 365 Apps to the pilot group, you use a configur
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the Office installation files and Office updates will come from Semi-Annual Enterprise Channel (Preview). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps).
+Note that the Office installation files and Office updates will come from Semi-Annual Enterprise Channel (Preview). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
 ## Step 3: Create a configuration file for the broad group
 
@@ -128,5 +128,4 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md)
 
-[Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)  
-
+[Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
