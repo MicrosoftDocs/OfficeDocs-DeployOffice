@@ -35,6 +35,5 @@ Updates work the same for Office for Mac whether you have an Office 365 (or Micr
 ## Related articles
 
 - [Update Office for Mac by using msupdate](update-office-for-mac-using-msupdate.md)
-- [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac) and [release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac) for Office for Mac
+- [Update history](/officeupdates/update-history-office-for-mac) and [release notes](/officeupdates/release-notes-office-for-mac) for Office for Mac
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
-

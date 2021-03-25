@@ -181,7 +181,7 @@ The following table lists the possible severities that can appear in a readiness
 |Member  <br/> |VBA Module section name where the issue was identified (i.e. function).  <br/> |CommandBars  <br/> |
 |Statement  <br/> |The section of the code where the issue was identified.  <br/> |Dim ctlName As CommandBarControl  <br/> |
 |VBA Hash  <br/> |Uniquely generated hash for the VBA code.  <br/> |CC-D2-F3-9C-58-48-04-E4-16-5B-B6-44-B3-EB-EB-FE  <br/> |
-|Reference  <br/> |Link to description of issue and help content (where applicable).  <br/> |[https://technet.microsoft.com/library/cc178954.aspx](https://technet.microsoft.com/library/cc178954.aspx) <br/> |
+|Reference  <br/> |Link to description of issue and help content (where applicable).  <br/> |[https://technet.microsoft.com/library/cc178954.aspx](/previous-versions/office/office-2013-resource-kit/cc178954(v=office.15)) <br/> |
 |FileStatus  <br/> |Classification of the status of the file that was processed.  <br/> |Password protected  <br/> |
 |64Bit  <br/> |Specifies if the issues identified is 64-bit specific.  <br/> |Yes  <br/> |
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
@@ -195,7 +195,7 @@ The following table lists the possible severities that can appear in a readiness
 |Source file reference |Unique value used to identify the file name in the file-names.log file when concealing file names when doing a scan. For more information, see [Manage the privacy of data collected in reports](#manage-the-privacy-of-data-collected-in-reports). |9FE4E090A33CDA8F4502E7E5672464C8F40E79E353DC98FF8CA84846C7D99822|
 |RT Version|Version of the Readiness Toolkit installed on the computer running the scan  | 1.0.0.0 |
 
-<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](https://docs.microsoft.com/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
+<sup>1</sup> For more information about writing VBA code for 64-bit versions of Office, see [64-Bit Visual Basic for Applications Overview](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 <sup>2</sup> **Important:** All proposed changes are provided as is, with no warranty or guarantee. It's important to validate that all changes work as expected when you update your VBA macro code.
 
@@ -486,7 +486,7 @@ For more information about macro setting choices, see [Enable or disable macros 
 
 If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this is an add-in that is business critical for your organization, you can do the following:
 
-- Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps. Also, you can request that your software provider list the add-in's support for Microsoft 365 Apps on the [Ready for Windows](https://go.microsoft.com/fwlink/p/?linkid=860044) site. By listing the add-in, the software provider can make the add-in's support status for Microsoft 365 Apps available to other enterprises.
+- Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps. Also, you can request that your software provider list the add-in's support for Microsoft 365 Apps on the [Ready for Windows](/mem/configmgr/desktop-analytics/ready-for-windows) site. By listing the add-in, the software provider can make the add-in's support status for Microsoft 365 Apps available to other enterprises.
 
 - Contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). We'll do our best to add the readiness status of the add-in to our database. Please provide as much information about the add-in as possible including, but not limited to, the following:
 

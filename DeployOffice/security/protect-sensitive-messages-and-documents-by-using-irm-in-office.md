@@ -31,7 +31,7 @@ Azure Rights Management and Active Directory Rights Management are persistent do
   
 The ability to create documents or email messages that have restricted permission by using IRM is available in Office Professional Plus 2016 and Microsoft 365 Apps for enterprise, and in the stand-alone versions of Excel 2016, Outlook 2016, PowerPoint 2016, InfoPath 2016, and Word 2016. IRM content that is created in Office 2016 can be viewed in Office 2007, Office 2010, Office 2013, or Office 2016.
   
-For more information about IRM and Active Directory Rights Management Services (AD RMS) features that are supported in Office 2016, Office 2013, Office 2010, and Office 2007, see [AD RMS and Microsoft Office Deployment Considerations](https://go.microsoft.com/fwlink/p/?LinkId=153314). For information about IRM and Azure RMS see [How applications support Azure Rights Management](https://docs.microsoft.com/azure/information-protection/applications-support) and [What is Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms).
+For more information about IRM and Active Directory Rights Management Services (AD RMS) features that are supported in Office 2016, Office 2013, Office 2010, and Office 2007, see [AD RMS and Microsoft Office Deployment Considerations](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772697(v=ws.10)). For information about IRM and Azure RMS see [How applications support Azure Rights Management](/azure/information-protection/applications-support) and [What is Azure Rights Management](/azure/information-protection/what-is-azure-rms).
   
 IRM support in Office 2016 helps organizations and knowledge workers address two fundamental needs:
   
@@ -44,10 +44,10 @@ For information technology (IT) managers, IRM helps enable the enforcement of ex
 <a name="BKMK_HowIRMWorks"> </a>
 
 ## How IRM works in Office 2016
-Office users apply permissions to messages or documents by using options in the **File** menu; for example, by using the **Restrict Access** option, under **Info**, **Protect Document**. The protection options that are available are based on Rights Policy Templates that you can customize for your organization. Rights Policy Templates are groups of IRM rights that you package together in a predefined policy that users can apply to their documents. Office 2016 also provides a predefined **Do Not Forward** option which grants specific rights to the recipients of an email. To learn more about Rights Policy Templates, see [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates).
+Office users apply permissions to messages or documents by using options in the **File** menu; for example, by using the **Restrict Access** option, under **Info**, **Protect Document**. The protection options that are available are based on Rights Policy Templates that you can customize for your organization. Rights Policy Templates are groups of IRM rights that you package together in a predefined policy that users can apply to their documents. Office 2016 also provides a predefined **Do Not Forward** option which grants specific rights to the recipients of an email. To learn more about Rights Policy Templates, see [Configuring and managing templates for Azure Information Protection](/azure/information-protection/configure-policy-templates).
   
 > [!NOTE]
-> In addition to using the options from the **File** menu, users can select **Share Protected** from the Office ribbon when you install the Rights Management sharing application for Windows. This application also enables additional functionality, such as the ability to track consumption of shared documents. For more information, see [Rights Management Sharing Application for Windows](https://docs.microsoft.com/azure/information-protection/rms-client/sharing-app-windows). 
+> In addition to using the options from the **File** menu, users can select **Share Protected** from the Office ribbon when you install the Rights Management sharing application for Windows. This application also enables additional functionality, such as the ability to track consumption of shared documents. For more information, see [Rights Management Sharing Application for Windows](/azure/information-protection/rms-client/sharing-app-windows). 
   
 To protect a document in Office 2016 using IRM, you must have an on-premises AD RMS or an Azure RMS subscription either as part of Office 365 or as a standalone service.
   
@@ -57,9 +57,9 @@ Enabling IRM in your organization requires access to a computer running Active D
   
 Organizations can define the permissions policies that appear in Office applications by creating rights policy templates. For example, you might define a rights policy template named **Marketing Confidential**, which specifies that documents or email messages that use the policy can only be opened by users inside that department. While there is no limit to the number of permission policies that can be created, Office can only display up to 20 policy templates at a time. Azure Rights Management provides two pre-defined organization-wide templates to which you can either add your own custom templates, or alternatively you can disable the templates if you want.
   
-With AD RMS on Windows Server 2012, users can share rights-protected documents between companies that have a federated trust relationship. For more information, see [Active Directory Rights Management Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=183052) and [Federating AD RMS](https://go.microsoft.com/fwlink/p/?LinkId=183053). With Azure RMS, the ability to securely collaborate between organizations is built-in and doesn't require you to complete any special configuration. 
+With AD RMS on Windows Server 2012, users can share rights-protected documents between companies that have a federated trust relationship. For more information, see [Active Directory Rights Management Services Overview](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771627(v=ws.11)) and [Federating AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee256071(v=ws.10)). With Azure RMS, the ability to securely collaborate between organizations is built-in and doesn't require you to complete any special configuration. 
   
-While the ability to create and consume protected emails in Outlook 2016 does not require any special configuration in the email server, Exchange Server 2016 offers additional IRM-protected email functionality including RMS protection for Unified Messaging voice mail messages and Microsoft Outlook protection rules that can automatically apply IRM-protection to messages in Outlook 2016 before they leave the Microsoft Outlook client. Additionally, enabling IRM integration in Exchange Server allows users to create and consume protected emails in Outlook Web App and in Exchange ActiveSync IRM-enabled mobile devices. For more information, [Information Rights Management in Exchange 2016](https://go.microsoft.com/fwlink/p/?LinkId=183063).
+While the ability to create and consume protected emails in Outlook 2016 does not require any special configuration in the email server, Exchange Server 2016 offers additional IRM-protected email functionality including RMS protection for Unified Messaging voice mail messages and Microsoft Outlook protection rules that can automatically apply IRM-protection to messages in Outlook 2016 before they leave the Microsoft Outlook client. Additionally, enabling IRM integration in Exchange Server allows users to create and consume protected emails in Outlook Web App and in Exchange ActiveSync IRM-enabled mobile devices. For more information, [Information Rights Management in Exchange 2016](/Exchange/policy-and-compliance/information-rights-management).
   
 <a name="BKMK_SettingUpIRM"> </a>
 
@@ -88,7 +88,7 @@ RMS client software is included in Windows Vista, Windows 7, Windows 8.1, and Wi
 
 As in Office 2007, Office 2010, and Office 2013, Office 2016 includes the option for users to apply individual rights to documents and messages, such as **Read** and **Change** in Word 2016, Excel 2016, PowerPoint 2016, and Visio 2016. In Outlook you can use the **Do Not Forward** option that allows you to confidently share email, granting only limited rights to the intended recipients of the message. You can also define custom rights policy templates for your organization that are deployed to clients automatically so they can be applied by users in one click. 
   
-You create and manage rights policy templates by using the administration site on your RMS or AD RMS server. For information about how to create, configure, and post custom policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=183068). 
+You create and manage rights policy templates by using the administration site on your RMS or AD RMS server. For information about how to create, configure, and post custom policy templates, see [AD RMS Rights Policy Templates Deployment Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731070(v=ws.10)). 
   
 The rights that you can include in permissions policy templates for Office 2016 are listed in the following sections.
   
@@ -287,6 +287,3 @@ By default, Outlook 2016 automatically downloads the IRM license for rights-mana
 3. Choose **Enabled**.
     
 4. Choose **OK**.
-    
-
-

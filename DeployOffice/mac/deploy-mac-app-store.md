@@ -78,6 +78,6 @@ While CDN-based installations of Office can utilize the bandwidth-optimized suit
 Word, Excel, PowerPoint, Outlook, and OneNote offer the same policies and preferences as their CDN-based counterparts. IT admins do not need to alter existing Configuration Profiles as the bundle ID for each app is unchanged.
 
 > [!NOTE]
-> OneDrive does use a different bundle ID, and different management controls are available depending on how you obtain the app. For more information, see [Deploy and configure the new OneDrive sync client for Mac](https://docs.microsoft.com/onedrive/deploy-and-configure-on-macos).
+> OneDrive does use a different bundle ID, and different management controls are available depending on how you obtain the app. For more information, see [Deploy and configure the new OneDrive sync client for Mac](/onedrive/deploy-and-configure-on-macos).
 
 It is highly recommended that IT admins set the [OfficeAutoSignIn](preferences-outlook.md#automatically-configure-office-365-mailbox-on-first-launch) value to `TRUE` in the `com.microsoft.office` preferences domain. For new installations from the Mac App Store, this preference will bypass the first run dialogs that ask users if they wish to purchase a new Office 365 (or Microsoft 365) subscription. This will mitigate calls to the help desk in commercial environments as users can only activate an existing subscription.

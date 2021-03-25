@@ -118,7 +118,7 @@ If you haven't worked with business groups yet, this is the time to approach the
 |Documents and solutions that IT will fix if somebody calls about them  <br/> |**Reactive testing** <br/> These solutions are fixed only when a user reports an issue to your help desk.  <br/> |
 |Documents and solutions that nobody cares about  <br/> |**Don't test** <br/> |
    
-When you approach business groups to classify their documents and solutions, you might meet some resistance from business groups that assign everything to the high priority list. One of our Office compatibility experts, Chris Jackson, wrote an article for TechNet Magazine that describes some costs behind Office compatibility testing. You can use this information to help justify reactive testing and ease the emotional fears that often affect Office migrations. Read more at [Microsoft Office: The Mathematics of Office Compatibility](https://go.microsoft.com/fwlink/p/?LinkId=266229).
+When you approach business groups to classify their documents and solutions, you might meet some resistance from business groups that assign everything to the high priority list. One of our Office compatibility experts, Chris Jackson, wrote an article for TechNet Magazine that describes some costs behind Office compatibility testing. You can use this information to help justify reactive testing and ease the emotional fears that often affect Office migrations. Read more at [Microsoft Office: The Mathematics of Office Compatibility](/previous-versions/technet-magazine/jj250906(v=msdn.10)).
   
 <a name="validate"> </a>
 
@@ -154,12 +154,12 @@ It is much easier to transform user acceptance testing into piloting when you us
 
 By now you have identified the high priority documents and solutions that have to be ready on day one of deployment, and users have tested them by using Office. In addition to bug reports from users, data in Office Telemetry Dashboard indicates how Word, Excel, and Microsoft Outlook perform when used with your existing Office documents and solutions. As you collect information about bugs and other issues, work with in-house developers and business group managers to create remediation plans. You'll have to decide whether to retire solutions or fix them (if they were developed in-house) and work with vendors to obtain updated versions (for third-party products).
   
-Both Office Telemetry Dashboard and Office Telemetry Log can help you during this process. You can monitor the health of Word, Excel, and Microsoft Outlook as you deploy incremental fixes or new versions of Office solutions. Developers can [use the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532) to observe the compatibility events that occur on the local computer when Word, Excel, and Microsoft Outlook are used with existing documents and solutions. 
+Both Office Telemetry Dashboard and Office Telemetry Log can help you during this process. You can monitor the health of Word, Excel, and Microsoft Outlook as you deploy incremental fixes or new versions of Office solutions. Developers can [use the Office Telemetry Log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) to observe the compatibility events that occur on the local computer when Word, Excel, and Microsoft Outlook are used with existing documents and solutions. 
   
 Your development teams might have automated testing tools that can help with the testing process. Ensure that the tools are tuned in such a way that only issues that block deployment are flagged and fixed for readiness on the first day of deployment. It's probably not worth fixing bugs that don't affect the user's day-to-day work, at least not for day one. Those solutions can be fixed over time if it is necessary.
   
 > [!NOTE]
-> You may wonder whether it's a good idea to substitute vendor support statements with compatibility testing. Chris Jackson covers the cost pros and cons of researching vendor support in his article [Microsoft Office: The Mathematics of Office Compatibility](https://go.microsoft.com/fwlink/p/?LinkId=266229). 
+> You may wonder whether it's a good idea to substitute vendor support statements with compatibility testing. Chris Jackson covers the cost pros and cons of researching vendor support in his article [Microsoft Office: The Mathematics of Office Compatibility](/previous-versions/technet-magazine/jj250906(v=msdn.10)). 
   
 <a name="manage"> </a>
 
@@ -202,5 +202,4 @@ Your Help Desk should be ramped up on Office and ready to support users. They sh
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-- [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=266224)
-
+- [Let's manage add-ins using Telemetry Dashboard](/archive/blogs/office_resource_kit/lets-manage-add-ins-using-telemetry-dashboard)

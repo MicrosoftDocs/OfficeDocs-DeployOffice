@@ -67,7 +67,7 @@ But, if you're allowing your users to install Office for themselves from the Off
 
 OneNote for Windows 10 is installed by default on computers running Windows 10. Users can also install it directly from the [Microsoft Store](https://www.microsoft.com/p/onenote/9wzdncrfhvjl?activetab=pivot%3aoverviewtab), if you allow them to install apps from there. In either case, updates to OneNote for Windows 10 come directly from the Microsoft Store.
 
-If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This option allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview)
+If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This option allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](/microsoft-store/microsoft-store-for-business-overview)
 
 If your users already use OneNote for Windows 10, they may continue to use it. We recommend excluding OneNote for Windows 10 for new deployments. We don't recommend uninstalling OneNote for Windows 10 for existing users because uninstalling an app permanently removes any notebook changes in the local cache that haven't been synchronized. If you plan to uninstall OneNote for Windows 10 for existing users, ensure that all open notebooks have finished synchronizing before uninstalling.
 
@@ -75,7 +75,7 @@ All notebooks supported by OneNote for Windows 10 are also fully supported by On
 
 ### To exclude OneNote for Windows 10 from a Windows image
 
-To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
+To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
 
 ## Additional information about deploying OneNote
 

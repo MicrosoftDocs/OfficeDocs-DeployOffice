@@ -33,7 +33,7 @@ Requirements:
 
 The security update status view shows what percentage of your devices have the most recent security update. Your devices are evaluated against the latest release patch date (depending on the assigned channel) and can be in 3 categories.
 
-- Up to date – Device that has installed the [latest security patch](https://docs.microsoft.com/officeupdates/microsoft365-apps-security-updates)
+- Up to date – Device that has installed the [latest security patch](/officeupdates/microsoft365-apps-security-updates)
 - Not up to date – Device that has not installed the most recent security update
 - Unknown – Status of the security update could not be retrieved.
 

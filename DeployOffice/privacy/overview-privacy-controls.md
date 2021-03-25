@@ -127,4 +127,4 @@ For more information, see [Essential services for Office](essential-services.md)
 
 ## Related articles
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
-- [Windows privacy](https://docs.microsoft.com/windows/privacy/)
+- [Windows privacy](/windows/privacy/)

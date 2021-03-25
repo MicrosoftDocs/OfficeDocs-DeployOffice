@@ -187,7 +187,7 @@ To configure this privacy control for your users that are using Office on the we
 
 ## Related articles
 
-- [Privacy and Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-privacy)
+- [Privacy and Microsoft Teams](/MicrosoftTeams/teams-privacy)
 - [Privacy settings in Microsoft Whiteboard](https://support.microsoft.com/office/ed9f0de9-71be-44c2-837d-e0f448660be1)
 - [What version of Office am I using?](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19)
 - [What version of Outlook do I have?](https://support.microsoft.com/office/b3a9568c-edb5-42b9-9825-d48d82b2257c)

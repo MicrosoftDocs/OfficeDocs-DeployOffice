@@ -30,7 +30,7 @@ Use the Add-in management worksheet to generate a Group Policy Object script tha
   
 By using the Group Policy Administrative Template files (ADMX/ADML) for Office, you can also create lists of managed add-ins and optionally block any add-in that isn't on the list. Users can't override these settings unless you allow them to.
   
-For more information about how to manage Office add-ins by using Office Telemetry Dashboard, see [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=271236).
+For more information about how to manage Office add-ins by using Office Telemetry Dashboard, see [Let's manage add-ins using Telemetry Dashboard](/archive/blogs/office_resource_kit/lets-manage-add-ins-using-telemetry-dashboard).
 
   
 ## Related topics
@@ -38,4 +38,3 @@ For more information about how to manage Office add-ins by using Office Telemetr
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-

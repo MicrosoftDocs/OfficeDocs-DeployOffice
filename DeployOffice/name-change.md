@@ -60,4 +60,4 @@ Some registry key values might change to reflect the new naming. If you rely on 
 
 There shouldn't be any changes needed to PowerShell scripts for licensing. The string ID and GUID that were used for Office 365 ProPlus in PowerShell cmdlets are the same string ID and GUID that are now used for Microsoft 365 Apps for enterprise. But it's always a good idea to test your scripts before applying them broadly in your organization.
 
- For more information about licensing identifiers used with PowerShell cmdlets, see [Product names and service plan identifiers for licensing](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+ For more information about licensing identifiers used with PowerShell cmdlets, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).

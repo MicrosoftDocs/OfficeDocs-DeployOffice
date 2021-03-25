@@ -89,11 +89,11 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 > - The identifiers for the Office apps, such as Word and Outlook, can be used for Office for Mac (from an Office 365 or Microsoft 365 subscription plan) or for Office 2019 for Mac (either a retail or a volume licensed version).
 > - If an update is pending for MAU itself, that update must be applied before any applications can be updated.
 > - Identifiers are not case-sensitive when run interactively from the command-line, but use the character casing in the table when running from a management tool such as Jamf Pro.
-> - Microsoft Teams might use MAU to provide updates in some scenarios, such as if the Teams updater fails. But, you can't use msupdate to have MAU manage updates for Teams, because Teams doesn't provide admins the ability to deploy and manage updates. Instead, Teams is updated automatically approximately every two weeks with new features and quality updates. For more information, see [Teams update process](https://docs.microsoft.com/microsoftteams/teams-client-update).
+> - Microsoft Teams might use MAU to provide updates in some scenarios, such as if the Teams updater fails. But, you can't use msupdate to have MAU manage updates for Teams, because Teams doesn't provide admins the ability to deploy and manage updates. Instead, Teams is updated automatically approximately every two weeks with new features and quality updates. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
 
 ## Related articles
 
 - [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
-- [Update history for Office for Mac](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
-- [Release notes for Office for Mac](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
+- [Update history for Office for Mac](/officeupdates/update-history-office-for-mac)
+- [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac)

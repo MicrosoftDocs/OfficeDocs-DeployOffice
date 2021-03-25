@@ -26,7 +26,7 @@ Your update channel selection on the **Office installation options** page in the
 
 This selection will apply to both new and existing installations of the Office apps in your organization. We will automatically configure existing installations to begin receiving feature updates from Current Channel instead of from Semi-Annual Enterprise Channel.
 
-If you change your selection on the **Office installation options** page at a later time, new and existing installations of Office will begin using that update channel. Keep in mind that changing to a different update channel also changes which features are available to your users. For more information about which features are available in each update channel, see [Release notes for Microsoft 365 Apps releases](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
+If you change your selection on the **Office installation options** page at a later time, new and existing installations of Office will begin using that update channel. Keep in mind that changing to a different update channel also changes which features are available to your users. For more information about which features are available in each update channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
 
 > [!IMPORTANT]
 > If you're already using some other method, such as Group Policy or Microsoft Endpoint Configuration Manager, to manage how your users get feature updates, then the settings you select in the Microsoft 365 admin center won't apply.
@@ -58,4 +58,3 @@ If you choose **Don’t move the devices to Current Channel**, you’ll be taken
 Of these two choices, we recommend Monthly Enterprise Channel, because you’ll still receive new features and other updates once a month, but on a predictable schedule (the second Tuesday of each month).
 
 After you make a selection, devices will be notified within 12 hours. Once notified, the devices will move to the selected update channel the next time they check for Office updates.
-

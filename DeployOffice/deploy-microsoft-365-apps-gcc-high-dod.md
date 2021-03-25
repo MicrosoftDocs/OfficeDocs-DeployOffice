@@ -32,7 +32,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 > [!IMPORTANT]
 > For Teams, currently you need to exclude Teams from being installed when you install Microsoft 365 Apps for enterprise. Instead, you need to install Teams by using the separate MSI-based installer. In the future, you'll be able to install Teams along with Microsoft 365 Apps for enterprise without needing to use the separate MSI-based installer.
 > - For steps on how to exclude Teams from being installed with Microsoft 365 Apps for enterprise, see [How to exclude Microsoft Teams from new installations of Microsoft 365 Apps](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
->- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/MicrosoftTeams/msi-deployment).
+>- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment).
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use
 
@@ -109,7 +109,7 @@ For other Office apps, such as Skype for Business client, Office for Mac, and Of
 ### Turn off sending telemetry data to Microsoft from Skype for Business client
 To prevent Skype for Business client from sending telemetry data to Microsoft, edit the registry and add the TelemetryTier value to the HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Lync key. The type for TelemetryTier is REG_DWORD, and the value should be set to 0.
 
-For more information, see [Skype for Business and Microsoft Teams data collection practices](https://docs.microsoft.com/SkypeForBusiness/legal-and-regulatory/data-collection-practices).
+For more information, see [Skype for Business and Microsoft Teams data collection practices](/SkypeForBusiness/legal-and-regulatory/data-collection-practices).
 
 ### Turn off sending telemetry data to Microsoft from Office for Mac
 Office for Mac sends telemetry information back to Microsoft at regular intervals. Data is uploaded to the 'Nexus' endpoint. The telemetry data helps the engineering team assess the health and any unexpected behaviors of each Office app. There are two categories of telemetry:
@@ -143,7 +143,7 @@ defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -b
 ```
 
 ### Turn off sending telemetry data to Microsoft from Office apps on iOS
-To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS devices](/intune/app-configuration-policies-use-ios).
 
 > [!IMPORTANT]
 > You must be using at least Version 2.11 of Office on iOS.
@@ -164,7 +164,7 @@ and
 In addition to telemetry data settings, there are some additional settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Ensure modern authentication is enabled
-Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Microsoft 365 Apps for enterprise. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
+Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Microsoft 365 Apps for enterprise. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
 
 ### Turn off Windows Error Reporting
 To disable Windows Error Reporting (Watson), edit the registry and under the HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting key, set the Disabled value to 1. The type for the Disabled value is REG_DWORD. 
@@ -189,7 +189,7 @@ The following registry values are optional. The type for these registry values i
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
   **Description:** This suppresses the option of configuring Outlook on a mobile device following a successfully configured account in Outlook Desktop. <br/>
 
-Also, if [Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user's mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
+Also, if [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user's mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
 
 
 ## Special considerations
@@ -219,9 +219,9 @@ The DMS service doesn't process, store or transmit any personally identifiable i
 ## Related topics
 For more information about the GCC High and DoD environments provided by Microsoft, see the following service descriptions:
 
-- [Office 365 US Government](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [GCC High and DoD](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod)
-- [Enterprise Mobility + Security for US Government](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)
+- [Office 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [GCC High and DoD](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod)
+- [Enterprise Mobility + Security for US Government](/enterprise-mobility-security/solutions/ems-govt-service-description)
 
 For general deployment guidance about Microsoft 365 Apps for enterprise, see the following articles:
 
@@ -234,7 +234,7 @@ For general deployment guidance about Microsoft 365 Apps for enterprise, see the
 
 For networking information, see the following articles:
 
-- [Office 365 U.S. Government GCC High endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
-- [Office 365 U.S. Government DoD endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
-- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
-- [Network requests in Office for Mac](https://docs.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
+- [Office 365 U.S. Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)
+- [Office 365 U.S. Government DoD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- [Network requests in Office for Mac](/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)

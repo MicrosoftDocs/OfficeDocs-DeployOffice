@@ -11,7 +11,6 @@
 ## [Assess your environment and requirements](assess-microsoft-365-apps.md)
 ## [Plan your enterprise deployment](plan-microsoft-365-apps.md)
 ## [Use Readiness Toolkit to assess application compatibility](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
-## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 
 # Upgrade
 ## [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
@@ -24,8 +23,8 @@
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
 ## [Delivery Optimization](delivery-optimization.md)
-## [Update history](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
-## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
+## [Update history](/officeupdates/update-history-microsoft365-apps-by-date)
+## [Release notes](/officeupdates/release-notes-microsoft365-apps)
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)

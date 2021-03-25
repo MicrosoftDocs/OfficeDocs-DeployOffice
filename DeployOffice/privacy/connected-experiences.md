@@ -52,7 +52,7 @@ The following table provides a list of connected experiences that analyze your c
 | PowerPoint Designer   | [Create professional slide layouts with PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Presenter Coach (PowerPoint)|[Rehearse your slide show with Presenter Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Publish to Power BI   | [Publish to Power BI from Excel](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
+| Publish to Power BI   | [Publish to Power BI from Excel](/power-bi/service-publish-from-excel) |
 | *Research*\*   | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Sharing notification|[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
@@ -115,14 +115,14 @@ The following table provides a list of those other connected experiences and pro
 | Coming Soon (Outlook)  |[Coming Soon](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Contact Support (Outlook) | When you choose **Help** > **Contact Support** on the ribbon|
 | Custom Import (Visio)  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
-| Data Loss Prevention (DLP) policy tips |[Send email notifications and show policy tips for DLP policies](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Data Loss Prevention (DLP) policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Data Visualizer (Visio) |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | Design Flows (Visio)  | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | External list (Outlook) |[Connect an external list to Outlook](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
 | Focused Inbox (Outlook) |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *Office add-ins*\* | [View, manage, and install add-ins in Office programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
+| *Office add-ins*\* | [View, manage, and install add-ins in Office programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
 | Organization chart (Visio) |[Create an organization chart in Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -131,8 +131,8 @@ The following table provides a list of those other connected experiences and pro
 | Recent documents |[Open files from the File menu](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *Resume Assistant (or CV Assistant)*\* |[Use Resume Assistant and LinkedIn for great resumes](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Room Finder (Outlook)|[How to control the Room Finder in Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-|Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Safe Documents in Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-| Safe Links |[ATP Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
+|Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Safe Documents in Microsoft 365 E5](/microsoft-365/security/office-365-security/safe-docs)|
+| Safe Links |[ATP Safe Links](/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Sensitivity labels |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Shared with me |[See files others have shared with you](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |

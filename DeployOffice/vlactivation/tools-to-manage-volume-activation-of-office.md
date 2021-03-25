@@ -152,7 +152,7 @@ The following scenarios assume that you are running ospp.vbs in an elevated comm
 
 ## The slmgr.vbs script
 
-The Software License Manager (slmgr.vbs) script is used to configure and retrieve volume activation information for the Office KMS host and the Windows host. For more information, see [Configuring KMS Hosts](https://go.microsoft.com/fwlink/p/?LinkID=311942) for Windows. 
+The Software License Manager (slmgr.vbs) script is used to configure and retrieve volume activation information for the Office KMS host and the Windows host. For more information, see [Configuring KMS Hosts](/previous-versions/tn-archive/ff793407(v=technet.10)) for Windows. 
   
 You can run the script locally on the target computer or remotely from another computer. You have to be an administrator to use the script. If a standard user runs **slmgr.vbs**, some license data might be missing or incorrect, and many operations are prohibited. 
   
@@ -209,7 +209,7 @@ The following table shows the command options for activating an AD DS forest by 
 
 ## Volume Activation Management Tool (VAMT)
 
-Volume Activation Management Tool (VAMT) provides a graphical user interface to manage volume activation. For more information about VAMT, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
+Volume Activation Management Tool (VAMT) provides a graphical user interface to manage volume activation. For more information about VAMT, see [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 
 > [!NOTE]
 > Office 2019 requires at least VAMT 3.1.
@@ -219,4 +219,3 @@ Volume Activation Management Tool (VAMT) provides a graphical user interface to 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md)
 - [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
-

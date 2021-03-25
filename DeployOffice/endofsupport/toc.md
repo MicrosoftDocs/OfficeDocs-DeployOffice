@@ -16,12 +16,12 @@
 
 ## Office server products
 
-### [Office 2007 servers](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products)
-### [Office 2010 servers](https://docs.microsoft.com/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products)
+### [Office 2007 servers](/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products)
+### [Office 2010 servers](/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products)
 
 ## Upgrade assistance
 
-### [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview)
+### [FastTrack](/fasttrack/m365-fasttrack-benefit-overview)
 ### [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1)
 
 ## Related resources
@@ -29,4 +29,4 @@
 ### [Office system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)
 ### [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)
 ### [Tech Community: Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS)
-### [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/)
+### [Microsoft Lifecycle Policy](/lifecycle/)
