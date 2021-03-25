@@ -13,7 +13,7 @@ ms.assetid:
 description: "Microsoft 365 change guide"
 ---
 
-# Microsoft 365 change guide
+# Best practices from the field: Microsoft 365 change guide
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
@@ -465,7 +465,7 @@ Microsoft provides controls over the diagnostic data collected from user endpoin
 For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
 5:<span id="footnote-5"></span>
-If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait an such an extended period between releases.
+If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait for such an extended period between releases.
 
 6:<span id="footnote-6"></span>
 This consists of a selected subset of non-security updates for Semi-Annual Enterprise Channel.

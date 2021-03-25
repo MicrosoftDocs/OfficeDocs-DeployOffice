@@ -16,7 +16,7 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Choose how to install Microsoft 365 Apps
+# Best practices from the field: Choose how to install Microsoft 365 Apps
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
