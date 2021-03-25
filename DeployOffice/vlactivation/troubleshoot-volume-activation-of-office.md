@@ -37,9 +37,8 @@ You can manually configure KMS host computers and clients, depending on the netw
 - For more information about how to configure the KMS client, see [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md). 
 - For more information about how to configure the KMS host computer, see [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md).
   
-## MAK activation issues
   
-### Office does not activate when it is connected to the network through an authenticated proxy
+## MAK activation issue when internet connection uses an authenticated proxy
 
 You have to be connected to the internet to use MAK activation. But, if your internet connection requires authentication, MAK activation won't work and you'll have to activate over the telephone. For more information about this issue, see [Windows activation or validation fails with error code 0x8004FE33](https://support.microsoft.com/topic/a9afe65e-230b-c1ed-3414-39acd7fddf52).
   
@@ -49,10 +48,7 @@ Error codes help you troubleshoot activation issues. If you see a dialog box tha
   
 Another way to obtain an error code is to run ospp.vbs /act on the client computer to manually activate Office. If activation fails, an error code will be shown. 
   
-
-## Other activation issues
-
-### Licensing information is not updated on the client
+## Licensing information is not updated on the client
 
 To display licensing information for Office applications, open an Office application, such as Word, and go to **File** > **Account**.
   
@@ -60,7 +56,7 @@ If you see a notification that product activation is required even though you kn
   
 The client applications can be in this state because Office was activated by using ospp.vbs /act or the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). In these cases, you must restart any Office applications to complete the activation.
   
-### Generic Volume License Keys (GVLKs) for Office
+## Generic Volume License Keys (GVLKs) for Office
 
 All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled that's used to activate Office by using a KMS host computer. If you entered a MAK key for a product and you want to change the activation method back to KMS, use the appropriate KMS client GVLK. For more information, see [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md). The recommended way to enter the key is by using [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). You can also use ospp.vbs /inpkey to enter the key. 
   
