@@ -58,6 +58,7 @@
 ## [Switch to Monthly Enterprise Channel with Configuration Manager](fieldnotes/switch-to-monthly-enterprise-channel.md)
 ## [Road map to modern management](fieldnotes/roadmap-to-modern-management.md)
 ## [Microsoft 365 change guide](fieldnotes/microsoft-365-change-guide.md)
+## [Network guidance for deploying and servicing Microsoft 365 Apps](fieldnotes/network-guidance.md)
 
 # Reference
 ## [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md)
