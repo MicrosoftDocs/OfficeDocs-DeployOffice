@@ -31,87 +31,24 @@ Generally, you do not have to configure Office Key Management Service (KMS) clie
   
 By default, KMS host computers automatically publish the information that KMS clients use to find and connect to them by using DNS dynamic update protocol. By default, KMS clients query the DNS server for KMS service information.
   
-You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer. For more information about using DNS with volume activation, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md). For more information about how to configure the KMS client, see [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md). For more information about how to configure the KMS host computer, see [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md).
+You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer. 
+
+- For more information about using DNS with volume activation, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md). 
+- For more information about how to configure the KMS client, see [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp) and [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md). 
+- For more information about how to configure the KMS host computer, see [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md).
   
-
-
-
-## KMS activation issues
-
-KMS activation issues can be due to a misconfiguration on one or more of the following items:
-  
-- Office client
-  
-- Network/DNS
-    
-- KMS host computer
-    
-To quickly identify your KMS trouble spots, use either the Office Client KMS activation diagnostic or Office KMS Host Activation diagnostic tool to analyze your environment for known issues. These diagnostic tools automate almost all of the troubleshooting steps available for KMS issues and provide a detailed report with recommendations on how to fix the detected issues.
-  
-You should always analyze the client first by using the Office Client KMS activation diagnostic tool, even if you feel you have a KMS Host configuration problem. It will determine if your changes need to occur on the client, your network, or your KMS host.
-  
-If the Office Client KMS activation diagnostic tool indicates you have KMS host issues, you should then run the Office KMS Host Activation diagnostic tool.
-  
-
-### To use the Office Client KMS activation diagnostic tool
-
-1. As a local administrator, log into any Office client that is unable to activate using KMS activation.
-    
-2. Go to [Office Client KMS activation diagnostic tool](https://go.microsoft.com/fwlink/p/?LinkId=335903) and sign in to the Microsoft Support Diagnostics Self-Help portal with your Microsoft Account credentials. 
-    
-3. On the **New Session** page, choose **Office Client KMS activation diagnostic**.
-    
-4. Enter a name in **Session Name** text box and then choose **Create**.
-    
-5. To start the analysis, choose **Download**.
-    
-6. When you are prompted, choose **Run** or **Save File**. If you choose **Save File**, you can later run the file from the folder where you saved it.
-    
-7. When prompted to select the computer on which to run the diagnostic, choose **This Computer**, and then choose **Next**. On the next page choose **Start**.
-    
-8. When the diagnostic displays an alert indicating a report has been saved, choose **Open Report**.
-    
-9. Review the details listed in the report **Summary** section, and then review the problems listed in the **Issues Detected** section and follow the recommendations provided under **Recommended steps and related resources**.
-    
-### To use the Office KMS Host Activation diagnostic tool
-
-1. As a local administrator, log into your Office KMS host computer.
-    
-2. Go to [Office KMS Host Activation diagnostic tool](https://go.microsoft.com/fwlink/p/?LinkId=335904) and sign in to the Microsoft Support Diagnostics Self-Help portal with your Microsoft Account credentials. 
-    
-3. On the **New Session** page, choose **Office Client KMS Host Activation diagnostic**.
-    
-4. Enter a name in **Session Name** text box and then choose **Create**.
-    
-5. To start the analysis, choose **Download**.
-    
-6. When you are prompted, choose **Run** or **Save File**. If you choose **Save File**, you can later run the file from the folder where you saved it.
-    
-7. When prompted to select the computer on which to run the diagnostic, choose **This Computer**, and then choose **Next**. On the next page, choose **Start**.
-    
-8. A report is automatically generated and opened in your browser.
-    
-9. Review the information listed in the **Summary** section and then review the problems listed in the **Details** section. Follow the recommendations provided under **Action needed or comment** for the items flagged with '**Attention Required**' in the **Result** column. 
-    
-
 ## MAK activation issues
-
-
   
 ### Office does not activate when it is connected to the network through an authenticated proxy
 
-You have to be connected to the internet to use MAK activation. But, if your internet connection requires authentication, MAK activation won't work and you'll have to activate over the telephone. For more information about this issue, see Knowledge Base article [921471](https://go.microsoft.com/fwlink/p/?LinkId=183044).
+You have to be connected to the internet to use MAK activation. But, if your internet connection requires authentication, MAK activation won't work and you'll have to activate over the telephone. For more information about this issue, see [Windows activation or validation fails with error code 0x8004FE33](https://support.microsoft.com/topic/a9afe65e-230b-c1ed-3414-39acd7fddf52).
   
-
-<a name="ErrorText"> </a>
-
 ## How to get the text for activation error codes
 
 Error codes help you troubleshoot activation issues. If you see a dialog box that contains an activation notification, an error code is usually displayed at the lower corner. You can then run ospp.vbs /ddescr together with the error code to see the text of the error message. The text will help you better understand the issue and what to do to fix it. 
   
 Another way to obtain an error code is to run ospp.vbs /act on the client computer to manually activate Office. If activation fails, an error code will be shown. 
   
-<a name="OtherIssues"> </a>
 
 ## Other activation issues
 
