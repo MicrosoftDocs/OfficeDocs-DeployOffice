@@ -16,7 +16,7 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Choose how to deliver updates for Microsoft 365 Apps for enterprise
+# Best practices from the field: Choose how to deliver updates for Microsoft 365 Apps for enterprise
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
