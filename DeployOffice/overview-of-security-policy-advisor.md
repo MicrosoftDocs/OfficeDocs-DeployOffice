@@ -73,7 +73,7 @@ To turn off Security Policy Advisor, sign in to the [portal](https://config.offi
 
 When you turn off Security Policy Advisor, usage and threat data from your organization are no longer analyzed and no recommendations or insights will be generated.  
 
-Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Microsoft 365 Apps](./privacy/overview-privacy-controls.md?toc=%2fdeployoffice%2ftoc.json).
+Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Microsoft 365 Apps](privacy/overview-privacy-controls.md).
 
 ## How Security Policy Advisor creates recommendations 
 
