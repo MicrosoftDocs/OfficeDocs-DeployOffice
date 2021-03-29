@@ -33,9 +33,9 @@ Shared computer activation is required for scenarios where multiple users share 
 
 ## How to enable shared computer activation for Microsoft 365 Apps
 
-To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer activation is available for the following:
+To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer activation is available for the following plans:
 
-- Any plan that include Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
+- Any plan that includes Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
 - Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
 - The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business.
   
@@ -61,7 +61,7 @@ If Microsoft 365 Apps is already installed and you want to enable shared compute
 
   > [!NOTE]
   > Microsoft 365 Apps for business doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
-  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](//office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
+  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](/office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
@@ -72,7 +72,7 @@ After Microsoft 365 Apps is installed, you can [verify that shared computer acti
 
 Here's what happens after Microsoft 365 Apps is installed on a computer that has shared computer activation enabled.
   
-1. A user logs on to the computer with her account.
+1. A user logs on to the computer with their account.
     
 2. The user starts an Office program, such as Word.
     
