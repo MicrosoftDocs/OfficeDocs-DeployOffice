@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
@@ -25,7 +25,7 @@ There are two ways to activate computers by using MAK:
   
 - **MAK independent activation** requires that each computer independently connect and be activated with Microsoft, either over the internet or by telephone. MAK independent activation is best for computers that have direct access to the internet. 
     
-- **MAK proxy activation by using VAMT** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](//windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt).
+- **MAK proxy activation by using VAMT** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt).
     
 
 ## Activate Office 2019 by using MAK
@@ -129,7 +129,7 @@ If you don't want to create separate XML files for each group, you could use one
 - [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp)
 - [Enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry)
 
-## Related topics
+## Related articles
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
