@@ -71,7 +71,8 @@ Before installing and using the Readiness Toolkit, you should be aware of the fo
 - [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) (only if you're using a Click-to-Run version of Access)
 
 > [!NOTE]
-> We recommend using the 64-bit version of Excel, especially if you expect more than 400,000 results to appear in the readiness report. 
+> - We recommend using the 64-bit version of Excel, especially if you expect more than 400,000 results to appear in the readiness report.
+> - Windows 7 and Excel 2010 are no longer supported products.
 
 Also, there a few limitations about the Readiness Report Creator that you should know about:
 
@@ -110,7 +111,7 @@ The readiness status for add-ins is derived from telemetry-based computations as
 
 To provide you with the most up-to-date remediation advice and readiness status, the Readiness Report Creator contacts Microsoft when it creates the report. Some information about your VBA macros and add-ins is sent to Microsoft. For more information about what is sent, see [Examples of the information sent to Microsoft when creating an advanced report](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_InfoSent).
 
- **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the internet. The Readiness Toolkit calls a publicly available web-service, so the following URLs need to be whitelisted in your firewall:
+ **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the internet. The Readiness Toolkit calls a publicly available web-service, so the following URLs need to be allowed by your firewall:
 
 - https://officeclient.microsoft.com/serverconfig16
 
@@ -178,7 +179,7 @@ The following table lists the possible severities that can appear in a readiness
 |Module  <br/> |Name of the module where the code issue was identified.  <br/> |mDJSCommandBars  <br/> |
 |Line #  <br/> |Line number where the code issue was identified.  <br/> |112  <br/> |
 |Type  <br/> |Type of issue that has been identified.  <br/> |VBA  <br/> |
-|Member  <br/> |VBA Module section name where the issue was identified (i.e. function).  <br/> |CommandBars  <br/> |
+|Member  <br/> |VBA Module section name where the issue was identified (that is, function).  <br/> |CommandBars  <br/> |
 |Statement  <br/> |The section of the code where the issue was identified.  <br/> |Dim ctlName As CommandBarControl  <br/> |
 |VBA Hash  <br/> |Uniquely generated hash for the VBA code.  <br/> |CC-D2-F3-9C-58-48-04-E4-16-5B-B6-44-B3-EB-EB-FE  <br/> |
 |Reference  <br/> |Link to description of issue and help content (where applicable).  <br/> |[https://technet.microsoft.com/library/cc178954.aspx](/previous-versions/office/office-2013-resource-kit/cc178954(v=office.15)) <br/> |
@@ -186,7 +187,7 @@ The following table lists the possible severities that can appear in a readiness
 |64Bit  <br/> |Specifies if the issue identified is 64-bit specific.  <br/> |Yes  <br/> |
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
 |DeviceName  <br/> |Name of the computer where the scan was performed.  <br/> |Laptop01  <br/> |
-|Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
+|Original code  <br/> |VBA code found in the macro, which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
 |Label1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
 |Label2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
@@ -213,7 +214,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 
 You can adjust what information is shown in the add-in report by selecting choices from the drop-down lists on the Add-in Summary tab, and then refreshing the report. For example, you can adjust the report to only show information about Access and Excel add-ins.
 
-By default, add-ins that are shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises won't need to worry about application compatibility of add-ins which are shipped with Office.
+By default, add-ins that are shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises won't need to worry about application compatibility of add-ins that are shipped with Office.
 
 If you're [collecting add-in usage information](#collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
 
@@ -507,7 +508,7 @@ For more information about macro setting choices, see [Enable or disable macros 
 
 If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this is an add-in that is business critical for your organization, you can do the following:
 
-- Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps. Also, you can request that your software provider list the add-in's support for Microsoft 365 Apps on the [Ready for Windows](/mem/configmgr/desktop-analytics/ready-for-windows) site. By listing the add-in, the software provider can make the add-in's support status for Microsoft 365 Apps available to other enterprises.
+- Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps.
 
 - Contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). We'll do our best to add the readiness status of the add-in to our database. Please provide as much information about the add-in as possible including, but not limited to, the following:
 
