@@ -380,6 +380,27 @@ By default, the Readiness Report Creator can't scan files that are saved in a Sh
 One possible workaround is to scan the local cache of these cloud-based files on the user's computer. If the files are only stored in a cloud-based location, you can create a mapped network drive to a OneDrive or SharePoint share. Then, you can have Readiness Report Creator scan that drive. But, when this location is scanned, the files must be downloaded in memory to perform the scan. Depending on the number and size of those files, this could result in the scan taking significantly longer and using up a considerable amount of network bandwidth.
 
 
+## Scan Office documents for macro signature issues
+
+To enhance the security of the Office VBA macro project signing, Microsoft provides a more secure version of VBA project signature scheme: V3 signature. We recommend that organizations apply the V3 signature to all macros to eliminate the risk of tampering.
+
+You can use the Readiness Toolkit to find existing signed VBA files in your organization that you should upgrade to use the V3 signature.
+
+To find these files, run the Readiness Report Creator from an elevated command prompt and use the sigscan option. The following example command line will scan files in the vba_files folder and will create a JSON file in the vba_results folder with the results of the scan.
+
+```console
+ReadinessReportCreator.exe -sigscan -p C:\vba_files -r -output C:\vba_results
+```
+
+To view the results in Excel, run the Readiness Toolkit and on the **Create a readiness report** page, select **Previous readiness results saved together in a local folder or network share**. Then, specify the JSON file you created using sigscan at the command line, and finish the steps in the Readiness Toolkit wizard.
+
+> [!NOTE]
+> To use sigscan, you must be using at least version 1.2.21067 of the Readiness Toolkit, which was released on March 19, 2021.
+
+For more information, including how to upgrade those files to use the V3 signature, see [Upgrade signed Office VBA macro projects to V3 signature](https://developer.microsoft.com/office/blogs/upgrade-signed-office-vba-macro-projects-to-v3-signature/).
+
+
+
 <a name="BKMK_AddInfo"> </a>
 
 ## Additional information
