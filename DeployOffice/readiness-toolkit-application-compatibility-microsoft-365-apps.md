@@ -21,7 +21,7 @@ description: "Provides IT Pros with info on how the Readiness Toolkit for Office
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Microsoft 365 Apps.
 
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=859119). We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55983). We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
 
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
@@ -134,7 +134,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 
 |**Worksheet name**|**Contents**|
 |:-----|:-----|
-|VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie charts shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. See the tables later in this section for more information about the file status and readiness status values that appear in these pie charts.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. The Readiness Toolkit does something similar to identify duplicate files. The Readiness Toolkit does this to provide you with a more realistic assessment of how many unique VBA macros and unique files need to be evaluated.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure that the "Include 64-bit readiness data" check box is selected and that you've refreshed the report. <br/> |
+|VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie chart shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. See the tables later in this section for more information about the file status and readiness status values that appear in these pie charts.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. The Readiness Toolkit does something similar to identify duplicate files. The Readiness Toolkit does this to provide you with a more realistic assessment of how many unique VBA macros and unique files need to be evaluated.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure that the "Include 64-bit readiness data" check box is selected and that you've refreshed the report. <br/> |
 |VBA Summary  <br/> |Provides some pre-defined PivotTables to allow you to analyze the data captured from the scan.  <br/> <br/>If these PivotTables don't meet your specific needs, you can create your own based on the data on the VBA Results worksheet.  <br/> |
 |VBA Results  <br/> |Provides information on each file scanned by the Readiness Report Creator. If multiple issues are found in a scanned file, there is a separate row for each issue.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 |VBA Remediation  <br/> |Provides proposed changes to VBA macro code found during the scan.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
@@ -183,7 +183,7 @@ The following table lists the possible severities that can appear in a readiness
 |VBA Hash  <br/> |Uniquely generated hash for the VBA code.  <br/> |CC-D2-F3-9C-58-48-04-E4-16-5B-B6-44-B3-EB-EB-FE  <br/> |
 |Reference  <br/> |Link to description of issue and help content (where applicable).  <br/> |[https://technet.microsoft.com/library/cc178954.aspx](/previous-versions/office/office-2013-resource-kit/cc178954(v=office.15)) <br/> |
 |FileStatus  <br/> |Classification of the status of the file that was processed.  <br/> |Password protected  <br/> |
-|64Bit  <br/> |Specifies if the issues identified is 64-bit specific.  <br/> |Yes  <br/> |
+|64Bit  <br/> |Specifies if the issue identified is 64-bit specific.  <br/> |Yes  <br/> |
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
 |DeviceName  <br/> |Name of the computer where the scan was performed.  <br/> |Laptop01  <br/> |
 |Original code  <br/> |VBA code found in the macro which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
@@ -309,7 +309,7 @@ Starting with Version 1.2.19098 (which was released on April 9, 2019), you can e
 
 You can use either the Readiness Report Creator wizard or the command line. If you're using the Readiness Report Creator, select either **Office documents in a local folder or network share** or **Previous readiness results saved together in a local folder or network share** option. Then, on the **Report settings** page, select **SQL Server report**. Provide the necessary credentials and the name of the database you want to use. If the database doesn't exist, it will be created.
 
-Instead of creating an Excel file, a Power BI report, with the same information, is created for you to review the results. This PowerBI report can be expanded on or changed as desired. It has a file extension of .pbit and is saved to the folder where the Readiness Toolkit is installed, which is usually C:\Program Files (x86)\Microsoft Readiness Toolkit for Office. If prompted in Power BI, select **Direct Query** data access mode.
+Instead of creating an Excel file, a Power BI report, with the same information, is created for you to review the results. This Power BI report can be expanded on or changed as desired. It has a file extension of .pbit and is saved to the folder where the Readiness Toolkit is installed, which is usually C:\Program Files (x86)\Microsoft Readiness Toolkit for Office. If prompted in Power BI, select **Direct Query** data access mode.
 
 If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, you can use the following command to create a report from previous readiness results for the Finance department, using a local SQL database named Readiness, and using SQL Server authentication, instead of Windows authentication.
 
@@ -325,7 +325,7 @@ You can specify up to four custom labels to categorize and filter data in report
 
 You can specify any string for the custom labels. For example, you can use a label to indicate the user’s department, title, or geographic location. When the Readiness Toolkit runs on the user’s computer, the custom labels are collected and are made available in the reports that are created. For example, you can filter the report to show only data from the Finance Department or only data from offices in Africa. Assign labels in a consistent manner, such as always using Label 1 for department.
 
-You can specify these labels by using the **Specify custom labels to use with the Readiness Toolkit** Group Policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit. Be sure to download the latest [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001).
+You can specify these labels by using the **Specify custom labels to use with the Readiness Toolkit** Group Policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Readiness Toolkit. Be sure to download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > If you're using the Office Telemetry Dashboard and have already configured tags (labels), the Readiness Toolkit automatically collects those labels during its scan of the user's computer and will make them available in its reports. But, labels you specify for the Readiness Toolkit won't appear in the Office Telemetry Dashboard.
@@ -499,7 +499,7 @@ In some cases, you might not see the Message Bar and the **Enable Content** choi
 
 If the macro settings choices are grayed out in the **Trust Center** dialog box, an administrator has configured these settings by using Group Policy and the settings can't be changed manually. In this case, the simplest solution is to open the report file on a different computer where the macro settings for Excel allow you to enable macros by selecting the **Enable Content** choice in the Message Bar.
 
-For more information about macro setting choices, see [Enable or disable macros in Office files](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6).
+For more information about macro setting choices, see [Enable or disable macros in Office files](https://support.microsoft.com/topic/12b036fd-d140-4e74-b45e-16fed1a7e5c6).
 
 <a name="BKMK_UnknownInsufficient"> </a>
 
