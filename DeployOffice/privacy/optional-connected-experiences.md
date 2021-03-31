@@ -37,7 +37,7 @@ Bing powers the following experiences in Outlook for iOS and Android:
 
 - **Location suggestions:**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
 - **Interesting Calendars:**   You can [subscribe](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) to calendars about your favorite sports teams or TV shows.
-- **Travel time in Up Next:** Your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
+- **Travel time in Up Next:** Your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
 
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
 
@@ -71,7 +71,7 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 > [!NOTE]
 > - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
-> - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
+> - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](/office/dev/add-ins/outlook/privacy-and-security).
 
 ### Research
 
@@ -82,11 +82,11 @@ When you use the Office Store, your use of the store site itself is licensed by 
 
 ### Travel time in Up Next in Outlook for iOS
 
-On Outlook for iOS, your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
+On Outlook for iOS, your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
 
 ### Weather Bar in Outlook
 
-The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
+The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 

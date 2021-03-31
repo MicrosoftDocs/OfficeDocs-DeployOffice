@@ -264,7 +264,7 @@ Example values:
 - ID="VisioProRetail"
 - ID="ProjectProRetail"
 
-For a list of all supported product IDs, see  [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://go.microsoft.com/fwlink/p/?LinkID=301891)
+For a list of all supported product IDs, see  [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run)
 
 ### MSICondition attribute (part of Product element)
 
@@ -359,9 +359,9 @@ Example values:
 
 Optional.
 
-When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products.To target a specific product, you can specify any [supported product ID](https://docs.microsoft.com/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match all already installed languages, you can specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
+When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products. To target a specific product, you can specify any [supported product ID](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match the languages of all already installed products, you specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
 
-If there is no TargetProduct specified with MatchInstalled, the ODT will attempt to match on the same Product ID that the Language tag belongs to in the configuration file. For example, if you are using MatchInstalled while installing VisioProRetail without a TargetProduct, then the ODT will attempt to match the installed languages for an existing VisioProRetail product already installed on the device.
+If there is no TargetProduct specified with MatchInstalled, the ODT will attempt to match the same Product ID that the Language tag belongs to in the configuration file. For example, if you are using MatchInstalled while installing "VisioProRetail" without a TargetProduct, ODT will attempt to match the already installed languages for this product.
 
 Example values:
 

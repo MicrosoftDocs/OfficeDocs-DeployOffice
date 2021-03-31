@@ -38,7 +38,7 @@ The following are the five new policy settings:
 - Allow the use of additional optional connected experiences in Office
 - Allow the use of connected experiences in Office
 
-These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](../overview-office-client-policy-service.md). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
+These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](../overview-office-cloud-policy-service.md). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > - For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
@@ -126,7 +126,7 @@ Even if you choose to make these optional connected experiences available to you
 
 Also, some of these optional connected experiences are also considered to be connected experiences that analyze content or that download online content. For example, Insert Online Pictures is an optional connected experience, powered by Microsoft Bing, but it’s also considered to be a connected experience that downloads online content. Therefore, if you disable the *Allow the use of connected experiences in Office that download online content* policy setting, Insert Online Pictures won’t be available to your users. It won’t be available even if you have enabled the *Allow the use of additional optional connected experiences in Office* policy setting. For more information about which connected experiences analyze content or download online content, see [Connected experiences in Office](connected-experiences.md).
 
-There is one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
+There is one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Azure Active Directory](/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### Policy setting for most connected experiences
 

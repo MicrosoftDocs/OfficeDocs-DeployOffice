@@ -26,9 +26,9 @@ Delivery Optimization can be an effective way to reduce network bandwidth withou
 
 For more information about Delivery Optimization in Windows 10, see the following information. Even though the information primarily covers Windows 10 updates, the concepts and configuration are similar for Microsoft 365 Apps since Office uses the capabilities of Delivery Optimization provided by Windows 10.
 
-- [Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
-- [Set up Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-setup)
-- [Delivery Optimization reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference)
+- [Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization)
+- [Set up Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization-setup)
+- [Delivery Optimization reference](/windows/deployment/update/waas-delivery-optimization-reference)
 - [Delivery Optimization: Scenarios and configuration options](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Delivery-Optimization-Scenarios-and-configuration-options/ba-p/280195)
 - [Delivery Optimization deep dive: How to reduce internet bandwidth impact on your network (Ignite 2018 presentation)](https://www.youtube.com/watch?v=o0C2j7msdCE)
 - [Delivery Optimization - a deep dive (Ignite 2017 presentation)](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK2048)
@@ -55,7 +55,7 @@ To use Delivery Optimization for background updates of Microsoft 365 Apps, there
 
 To take advantage of Delivery Optimization when installing or when doing user-initiated updates, do the following:
 - For Version 1912 or later of Microsoft 365 Apps, no additional configuration is needed.
-- For Version 1908 through Version 1911, you need to configure a registry key on devices in your organization before installing Microsoft 365 Apps on those devices. You can use the following [reg add](https://docs.microsoft.com/windows-server/administration/windows-commands/reg-add) command to configure the registry key:  
+- For Version 1908 through Version 1911, you need to configure a registry key on devices in your organization before installing Microsoft 365 Apps on those devices. You can use the following [reg add](/windows-server/administration/windows-commands/reg-add) command to configure the registry key:  
 <br/> `reg add HKLM\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate  /v SetDOAsPrimary /t REG_DWORD /d 1`
 
 > [!NOTE]
@@ -68,31 +68,31 @@ If you're using Configuration Manager or local network shares to manage installi
 
 ## Configure Delivery Optimization settings for Microsoft 365 Apps
 
-There are some settings that you can configure to allow your environment to take better advantage of Delivery Optimization.  For example, you should choose the appropriate [download mode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode) for your environment. The download mode defines how devices determine whether other devices are suitable peers. Here are some recommendations for download mode:
+There are some settings that you can configure to allow your environment to take better advantage of Delivery Optimization.  For example, you should choose the appropriate [download mode](/windows/deployment/update/waas-delivery-optimization-reference#download-mode) for your environment. The download mode defines how devices determine whether other devices are suitable peers. Here are some recommendations for download mode:
 
-- If you're using Microsoft Endpoint Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
+- If you're using Microsoft Endpoint Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
 - If you're not using Configuration Manager, you can still use *Group (2)* for download mode. This uses the Active Directory site to determine which devices should be considered as peers.
 - If you're not using Active Directory, consider using *LAN (1)* for the download mode.
 
 There are a few other settings that have specific implications for Microsoft 365 Apps:
 
-- [Minimum Peer Caching Content File Size](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-peer-caching-content-file-size): Updates for Microsoft 365 Apps contain files which are as small as 1 megabyte. To maximize the effectiveness of Delivery Optimization you can reduce value of this setting down to its minimum.
-- [Delay background download from http (in secs)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-from-http-in-secs) and [Delay foreground download from http (in secs)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-from-http-in-secs):  A higher value for these settings allows devices to search longer for peers, but it also increases the time needed for an update. For background updates, users aren't likely to be impacted. But if you set this to 5 minutes and do a user-initiated update, the update might take up to 5 minutes longer due to the search for peer devices. Take this into consideration during testing or troubleshooting.
+- [Minimum Peer Caching Content File Size](/windows/deployment/update/waas-delivery-optimization-reference#minimum-peer-caching-content-file-size): Updates for Microsoft 365 Apps contain files which are as small as 1 megabyte. To maximize the effectiveness of Delivery Optimization you can reduce value of this setting down to its minimum.
+- [Delay background download from http (in secs)](/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-from-http-in-secs) and [Delay foreground download from http (in secs)](/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-from-http-in-secs):  A higher value for these settings allows devices to search longer for peers, but it also increases the time needed for an update. For background updates, users aren't likely to be impacted. But if you set this to 5 minutes and do a user-initiated update, the update might take up to 5 minutes longer due to the search for peer devices. Take this into consideration during testing or troubleshooting.
 
 Delivery Optimization also handles how the devices download content from the HTTP source, such as from the Office CDN, and not just between the devices. In those cases, there are settings available to throttle bandwidth, which can be useful in sites with constrained bandwidth. There are several settings available, including the following:
 
-- [Maximum Download Bandwidth](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-download-bandwidth) for a throttle based on an absolute value.
-- [Maximum Background Download Bandwidth](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-background-download-bandwidth) for a throttle based on a percentage.
-- [Set Business Hours to Limit Background Download Bandwidth](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#set-business-hours-to-limit-background-download-bandwidth) for a throttle based on the time of day.
+- [Maximum Download Bandwidth](/windows/deployment/update/waas-delivery-optimization-reference#maximum-download-bandwidth) for a throttle based on an absolute value.
+- [Maximum Background Download Bandwidth](/windows/deployment/update/waas-delivery-optimization-reference#maximum-background-download-bandwidth) for a throttle based on a percentage.
+- [Set Business Hours to Limit Background Download Bandwidth](/windows/deployment/update/waas-delivery-optimization-reference#set-business-hours-to-limit-background-download-bandwidth) for a throttle based on the time of day.
 
-For additional configuration options available for Delivery Optimization, see [Delivery Optimization reference](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference).
+For additional configuration options available for Delivery Optimization, see [Delivery Optimization reference](/windows/deployment/update/waas-delivery-optimization-reference).
 
 
 ## Viewing data about the use of Delivery Optimization
 
-On an individual device, you can go to **Settings** > **Update & Security** > **Delivery Optimization** > **Activity monitor**. You can also use PowerShell cmdlets. For more information about those cmdlets, see [Monitor Delivery Optimization](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-setup#monitor-delivery-optimization).
+On an individual device, you can go to **Settings** > **Update & Security** > **Delivery Optimization** > **Activity monitor**. You can also use PowerShell cmdlets. For more information about those cmdlets, see [Monitor Delivery Optimization](/windows/deployment/update/waas-delivery-optimization-setup#monitor-delivery-optimization).
 
-If your organization uses [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), a Delivery Optimization report is available. For more information, see [Delivery Optimization in Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-delivery-optimization). 
+If your organization uses [Update Compliance](/windows/deployment/update/update-compliance-monitor), a Delivery Optimization report is available. For more information, see [Delivery Optimization in Update Compliance](/windows/deployment/update/update-compliance-delivery-optimization). 
 
 Keep in mind that this information represents overall results for Delivery Optimization, not just from using Delivery Optimization for Microsoft 365 Apps. For example, it might include information related to Windows 10 updates, depending how your environment is configured.  Also, you won't be able to get 100% of the content from peer devices.
 
@@ -100,8 +100,8 @@ Keep in mind that this information represents overall results for Delivery Optim
 ## Additional information about Delivery Optimization and Microsoft 365 Apps
 
 - You can also take advantage of Delivery Optimization if you're using the [AllowCdnFallback](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
-- If you're already using Configuration Manager (current branch) and [peer cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
-- You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
+- If you're already using Configuration Manager (current branch) and [peer cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
+- You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 - Delivery Optimization can also be used with the subscription versions of the Project and Visio desktop apps. The same requirements listed above for Microsoft 365 Apps apply.
 - Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installing or for foreground updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
 - If you're already using a 3rd party peer-to-peer solution along with Configuration Manager, Delivery Optimization isn't expected to cause any problems with that solution.

@@ -32,7 +32,7 @@ Here are the general steps to deploy a subscription version of Visio to users in
   
 1. Purchase Visio Plan 2, with enough licenses for each of your Visio users.
     
-2. Sign in to Office 365 and [assign licenses](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) for Visio to those users. 
+2. Sign in to Office 365 and [assign licenses](/microsoft-365/admin/manage/assign-licenses-to-users) for Visio to those users. 
     
 3. Have your users sign in to Office 365 and install Visio from the **Software** section of the Office 365 portal. Users have to be local administrators on their computers to install Visio. 
     
@@ -53,7 +53,7 @@ Here are the general steps to deploy a volume licensed version of Visio Professi
   
 1. Purchase Visio 2019 as part of a volume licensing agreement.
     
-2. Use the Office Deployment Tool and a configuration.xml file to download and install Visio from 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to download and install Visio 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
 
 If you already use other tools to deploy software to your users, such as Microsoft Endpoint Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Visio. 
   
@@ -97,4 +97,3 @@ To help your users get started with Visio, here are some resources to share with
 
 - [Plans and pricing information](https://products.office.com/visio/microsoft-visio-plans-and-pricing-compare-visio-options?tab=tabs-1)
 - [Visio licensing](https://products.office.com/Visio/microsoft-visio-volume-licensing-visio-for-multiple-users)
-

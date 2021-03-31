@@ -80,7 +80,7 @@ Configuration Manager also provides reporting capabilities which can be used to 
 
 Even though they are separate tools, the Readiness Toolkit and Configuration Manager can be combined to form a powerful end-to-end solution ideal for Configuration Manager customers.
 
-For more information, see [Integration for Office 365 ProPlus readiness](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) and [Office 365 ProPlus upgrade readiness dashboard](https://docs.microsoft.com/mem/configmgr/core/get-started/2019/technical-preview-1904#bkmk_o365).
+For more information, see [Integration for Office 365 ProPlus readiness](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness) and [Office 365 ProPlus upgrade readiness dashboard](/mem/configmgr/core/get-started/2019/technical-preview-1904#bkmk_o365).
 
 
 ## Office Telemetry Dashboard
@@ -102,4 +102,4 @@ But, Office Telemetry Dashboard requires a significant amount of time to plan an
 
 We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we are planning to provide health reporting capabilities in future releases of Configuration Manager (current branch). In the meantime, organizations who need this type of information can continue to use Office Telemetry Dashboard.
 
-For more information about Office Telemetry Dashboard, see [Guide to Office Telemetry Dashboard resources](compat/compatibility-and-telemetry-in-office.md). 
+For more information about Office Telemetry Dashboard, see [Guide to Office Telemetry Dashboard resources](compat/compatibility-and-telemetry-in-office.md).

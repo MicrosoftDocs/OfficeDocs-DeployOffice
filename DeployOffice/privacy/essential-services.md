@@ -112,7 +112,7 @@ The following fields are collected:
 
 Collected when a user signs out of Office.
 
-Knowing the user is signed-out makes it possible to classify other events, such as prompts, as expected, so those events can be correctly computed in reliability / ship-readiness metrics and avoid alerting or rolling back builds on the faulty premise that the user is experiencing unexpected sign-in prompts.
+Knowing the user is signed out makes it possible to classify other events, such as prompts, as expected, so those events can be correctly computed in reliability / ship-readiness metrics and avoid alerting or rolling back builds on the faulty premise that the user is experiencing unexpected sign-in prompts.
 
 The following fields are collected:
 
@@ -146,7 +146,7 @@ These events, along with the Office.MATS namespace events, are used for the foll
 
 3\) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4\) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical user-blocking failures
+4\) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical user-blocking failures
 
 The following fields are collected:
 
@@ -202,7 +202,7 @@ These events, along with the Office.MATS namespace events, are used for the foll
 
 3\) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4\) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical user-blocking failures.
+4\) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical user-blocking failures.
 
 The following fields are collected:
 
@@ -256,7 +256,7 @@ Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acqu
 
 3\) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4\) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+4\) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
 
 The following fields are collected:
 
@@ -322,7 +322,7 @@ The following fields are collected:
 
   - **Microsoft\_ADAL\_broker\_app** - Tells whether ADAL used a broker for authentication
 
-  - **Microsoft\_ADAL\_broker\_app\_used** – Tells the name of the broker (e.g., Windows Account Management)
+  - **Microsoft\_ADAL\_broker\_app\_used** – Tells the name of the broker (for example, Windows Account Management)
 
   - **Microsoft\_ADAL\_broker\_version** - Tells the version of the broker if used
 
@@ -418,9 +418,9 @@ The following fields are collected:
 
   - **Resource** – The resource that the user is requesting a token for, such as Exchange or SharePoint.
 
-  - **Scenarioid** – GUID. Multiple events may belong to a single scenario, e.g. the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This ID enables correlation to happen.
+  - **Scenarioid** – GUID. Multiple events may belong to a single scenario, for example, the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This ID enables correlation to happen.
 
-  - **Scenarioname** – The name of the scenario which this authentication event belongs to.
+  - **Scenarioname** – The name of the scenario that this authentication event belongs to.
 
   - **Sessionid** - GUID identifying the boot session
 
@@ -447,7 +447,7 @@ Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acqu
 
 3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+4) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
 
 The following fields are collected:
 
@@ -525,7 +525,7 @@ The following fields are collected:
 
 - **Microsoft_ADAL_broker_app** - Tells whether ADAL used a broker for authentication
 
-- **Microsoft_ADAL_broker_app_used** - Tells the name of the broker (e.g., Windows Account Management)
+- **Microsoft_ADAL_broker_app_used** - Tells the name of the broker (for example, Windows Account Management)
 
 - **Microsoft_ADAL_broker_version** - Tells the version of the broker if used
 
@@ -557,7 +557,7 @@ The following fields are collected:
 
 - **Microsoft_ADAL_device_id** - ADAL-generated local device id.
 
-- **Microsoft_ADAL_error_domain** - The domain/component which generated the error code.
+- **Microsoft_ADAL_error_domain** - The domain/component that generated the error code.
 
 - **Microsoft_ADAL_error_protocol_code** - OAuth protocol error code returned by the service, recorded by ADAL.
 
@@ -583,7 +583,7 @@ The following fields are collected:
 
 - **Microsoft_ADAL_is_silent_ui** - True/false telling if UI was shown (prompt) by ADAL
 
-- **Microsoft_ADAL_is_successfull** - True/false telling if ADAL API succeeded (MacOS)
+- **Microsoft_ADAL_is_successfull** - True/false telling if ADAL API succeeded (macOS)
 
 - **Microsoft_ADAL_is_successful** - True/false telling if ADAL API succeeded
 
@@ -659,13 +659,13 @@ The following fields are collected:
 
 - **MSAL_api_error_tag** - Unique string for the place in code where this error occurred.
 
-- **MSAL_api_name** - Name of the MSAL top level API called to start this authentication flow.
+- **MSAL_api_name** - Name of the MSAL top-level API called to start this authentication flow.
 
 - **MSAL_api_status_code** - Status code MSAL returned for this authentication flow result.
 
 - **MSAL_auth_flow** - Steps MSAL attempted during this authentication flow (AT, PRT, LRT, FRT, ART, IRT). Separated by the pipe "|" symbol for easy parsing.
 
-- **MSAL_auth_flow_last_error** - Error code we received from the server on the 2nd to last item in AuthFlow. (Ex: if AuthFlow = "PRT|LRT", PRT's error would be in AuthFlowLastError).
+- **MSAL_auth_flow_last_error** - Error code we received from the server on the second to last item in AuthFlow. (Ex: if AuthFlow = "PRT|LRT", PRT's error would be in AuthFlowLastError).
 
 - **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
 
@@ -687,9 +687,9 @@ The following fields are collected:
 
 - **MSAL_read_token** - Tokens that were read from cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
 
-- **MSAL_read_token_last_error** - If MSAL encountered an error reading from cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on MacOS).
+- **MSAL_read_token_last_error** - If MSAL encountered an error reading from cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on macOS).
 
-- **MSAL_request_duration** - How long the request took from when MSAL's top level API was called, until we returned a result.
+- **MSAL_request_duration** - How long the request took from when MSAL's top-level API was called, until we returned a result.
 
 - **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
 
@@ -699,7 +699,7 @@ The following fields are collected:
 
 - **MSAL_server_suberror_code** - Microsoft specific secure token service suberror code string if we received one.
 
-- **MSAL_start_time** - Time MSAL request was started at the top level public API.
+- **MSAL_start_time** - Time MSAL request was started at the top-level public API.
 
 - **MSAL_stop_time** - Time MSAL finished processing the request and returned a result to the caller.
 
@@ -713,7 +713,7 @@ The following fields are collected:
 
 - **MSAL_write_token** - Tokens that were written to cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
 
-- **MSAL_write_token_last_error** - If MSAL encountered an error writing to cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on MacOS).
+- **MSAL_write_token_last_error** - If MSAL encountered an error writing to cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on macOS).
 
 - **oneauth_api** - OneAuth API invoked for this authentication attempt.
 
@@ -721,17 +721,17 @@ The following fields are collected:
 
 - **oneauth_version** - The version of the OneAuth SDK.
 
-- **Platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: UWP)
+- **Platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: macOS, 4: UWP)
 
 - **Promptreasoncorrelationid** - A correlation identifier that can be used to look up a previous authentication event, which is used to explain why the user was prompted to authenticate.
 
-- **Resource** - The resource for which a token is requested for.
+- **Resource** - The resource for which a token is requested.
 
-- **Scenarioid** - Multiple events may belong to a single scenario, e.g. the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This identifier enables correlation of those related events.
+- **Scenarioid** - Multiple events may belong to a single scenario, for example, the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This identifier enables correlation of those related events.
 
-- **Scenarioname** - Name of the application scenario where authentication was required, e.g., first-boot, licensing check, etc.
+- **Scenarioname** - Name of the application scenario where authentication was required, for example, first-boot, licensing check, etc.
 
-- **Scope** - The scope for which a token is requested for.
+- **Scope** - The scope for which a token is requested.
 
 - **Sdkver** - Version of Microsoft Auth Telemetry System library used to produce this data
 
@@ -781,7 +781,7 @@ The following fields are collected:
 
 - **WAM_redirect_uri** - The redirect URI registered for the application in Azure Active Directory.
 
-- **WAM_resource**	- The resource for which a token is requested for.
+- **WAM_resource**	- The resource for which a token is requested.
 
 - **WAM_server_error_code** - The error code returned by the service to WAM.
 
@@ -812,13 +812,13 @@ Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acqu
 
 3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4) These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+4) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
 
 The following fields are collected:
 
 - **Actiontype** - "oneauthtransaction" is the only value.
 
-- **Appaudience** - Application audience (Automation, Preproduction or Production)
+- **Appaudience** - Application audience (Automation, Preproduction, or Production)
 
 - **Appname** - App name
 
@@ -868,11 +868,11 @@ specific device)
 
 - **oneauth_Tag** - The OneAuth tag designating the final place in code reached at the conclusion of this API call.
 
-- **oneauth_transactionuploadid** - Specifies the randomly-generated internal GUID that maps to the specific invocation of a OneAuth API.
+- **oneauth_transactionuploadid** - Specifies the randomly generated internal GUID that maps to the specific invocation of a OneAuth API.
 
 - **oneauth_version** - The version of the OneAuth SDK.
 
-- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: MacOS, 4: WinRT
+- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: macOS, 4: WinRT
 
 - **Scenarioname** - Name of the scenario for which auth is necessary, specified by the calling application.
 
@@ -2985,7 +2985,7 @@ Reports the result of the end-to-end installation attempt
 
 Reports on the action that reason over the input collected using CollectParameters
 
-- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
+- **BitField –**    Integer value of the BitField argument, which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
 - **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
@@ -3064,7 +3064,7 @@ Reports on the action that reads tagged input from the exe's embedded signature.
 
 Reports the parameters used for the Office installation
 
-- **BitField –**    Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
+- **BitField –**    Integer value of the BitField argument, which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
 - **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
@@ -3232,7 +3232,7 @@ Collects the list of configurations received by the client from ECS
 
 The following fields are collected:
 
-  - **ECSConfigs** - Comma separated list of ECS Configs
+  - **ECSConfigs** - Comma-separated list of ECS Configs
 
   - **LockType** - Type of FlightManager lock.
 
@@ -3256,7 +3256,7 @@ This event is logged when OneNote asks ECS server for flight values.  This is us
  
 The following fields are collected:
  
-- **ConfigParam** - The config for which the value is being accessed for
+- **ConfigParam** - The config for which the value is being accessed
 
 ## Licensing events
 
@@ -3312,6 +3312,20 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
+### Office.Android.DocsUI.PaywallControl.PurchaseTokenRedemptionResponse
+
+*[This event was previously named Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse.]*
+
+This product telemetry is collected for tracking and logging the internal transaction status and reconciliation information to improve reliability and performance. Microsoft uses this data to analyze and improve the reliability and performance of the internal transaction processing and reconciliation mechanisms.
+
+The following fields are collected:
+
+- **MicrosoftPurchaseOrderId** - Microsoft Order Id sent by Retail Federation Service (RFS) for tracking purposes.
+
+- **ResponseCode** - HTTP Response code (int)
+
+- **StatusCode** - RFS response status code (RFS defined Enum int- finite)
+
 
 ### Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -3340,22 +3354,62 @@ The following fields are collected:
 - **SessionID** – GUID to connect events by session
 
 
-### Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+### Office.Android.DocsUI.Views.DimeError
 
-This product telemetry is collected for tracking and logging the internal transaction status and reconciliation information to improve reliability and performance. Microsoft uses this data to analyze and improve the reliability and performance of the internal transaction processing and reconciliation mechanisms.
+This event is collected for the Office app for Android (released on Huawei and in China Stores). This event indicates that an attempt to purchase a Microsoft 365 subscription through Dime (a webURL loaded in client webview) has failed. Only the error scenarios are captured. This event data is error data only and is used to ensure the health of the Dime purchase flow in the client.
 
 The following fields are collected:
 
-- **MicrosoftPurchaseOrderId** - Microsoft Order Id sent by Retail Federation Service (RFS) for tracking purposes.
+- **CorrelationID** - ID that uniquely identifies a Dime purchase session.
 
-- **ResponseCode** - HTTP Response code (int)
+- **ErrorReason** - Indicates the reason for the error that happened.
+  - 0 – Unknown error
+  - 1 – Internet not available
+  - 2 – Universally unique identifier (UUID) validation failed
+  - 3 - Universally unique identifier (UUID) is null or empty
+  - 4 – JavaScript injection error where the Office app for Android can’t pass authToken to Dime
+  - 5 – Base WebURL loaded on client is invalid
 
-- **StatusCode** - RFS response status code (RFS defined Enum int- finite)
+
+### Office.Android.DocsUI.Views.PremiumFeatureUpsell
+
+This event captures clicks by a free user clicks to view a feature behind the pay wall. The data is used to measure the interaction of users with the contextual upsell experience and understand which features are preferred by the user which drives them to buy a subscription. This helps us invest to improve those preferred set of entry points. 
+
+The following fields are collected:
+
+- **featureId** - TCID for premium feature
+
+- **featureName** - Premium Feature Title
+
+- **seePlanButtonClick** - How many times “See plan buttons” gets clicked in upsell UI
+
+### Office.Apple.IAPReviewYourSubscriptioniOS
+
+This event captures session-based metadata when the In-App-Purchase (IAP) UI is shown to the user and the buttons the user subsequently interacts with. This data is used to help us understand the friction in the purchase flow and compare it with the funnel of a different purchase experience to understand which experience is better for the user. 
+
+The following fields are collected:
+
+- **FlowType** - Integer – Flow from where IAP was launched.
+
+- **Restore** - String – rule tag is logged when restore button is clicked
+
+- **PremiumFeatures** - String – rule tag is logged when “PremiumFeatures” button is clicked
+
+- **Product** - String - The SKU selected by the users
+
+
+### Office.Apple.InAppPurchaseContext
+
+This event measures critical usage telemetry for the point of entry of the in-app purchase screen. The data helps understand and improve the user experience by identifying the preferred entry point for an in-app purchase.
+
+The following fields are collected:
+
+- **context** - String – The flow through which the user landed on the in app purchase page
 
 
 ### Office.Dime.Sdk.Health
 
-This event captures data that helps in monitoring the health of the Dime components. The data is used to monitor and alert on the health of Dime purchase flow to ensure it is working as expected. 
+This event captures data that helps in monitoring the health of the Dime components. For example, for the in-app purchase flow when a user opts to buy a Microsoft 365 subscription from within the Office app for Android or on devices running Windows.
 
 The following fields are collected:
 
@@ -3407,29 +3461,39 @@ The following fields are collected:
 
 - **Data_QosLevel** - Severity 0/1/2
 
-- **Data_SDX_AssetId** - Asset ID of the Service Delivered Experience (SDX) hosting content
+- **Data_SDX_AssetId** - Asset ID of the Service Delivered Experience (SDX) hosting content for Win32
 
-- **Data_SDX_BrowserToken** - Token of the browser
+- **Data_SDX_BrowserToken** - Token of the browser for Win32
 
-- **Data_SDX_HostJsVersion** - JavaScript library version
+- **Data_SDX_HostJsVersion** - JavaScript library version for Win32
 
-- **Data_SDX_Id** - Service Delivered Experience Id
+- **Data_SDX_Id** - Service Delivered Experience Id for Win32
 
-- **Data_SDX_InstanceId** - Instance ID of the SDX
+- **Data_SDX_InstanceId** - Instance ID of the SDX for Win32
 
-- **Data_SDX_MarketplaceType** - SDX Marketplace Type
+- **Data_SDX_MarketplaceType** - SDX Marketplace Type for Win32
 
-- **Data_SDX_OfficeJsVersion** - Office JS Version
+- **Data_SDX_OfficeJsVersion** - Office JS Version for Win32
 
-- **Data_SDX_SessionId** - Session ID of the SDX
+- **Data_SDX_SessionId** - Session ID of the SDX for Win32
 
-- **Data_SDX_Version** - SDX Version
+- **Data_SDX_Version** - SDX Version for Win32
 
 - **Data_TimestampUTC** - Timestamp of the event
 
 - **Data_TsgId** - Troubleshooting Guide Id for each activity
 
 - **Data_UserAgent** - Header Tags
+
+
+### Office.Docs.Shared.PremiumFeatureMessageBar
+
+This event collects free users’ taps on a premium feature that resides behind the paywall. The data is used to understand the set of features consumers are interacting with as they convert to a paid user. This tells us the preferred entry points of the users and improve the user experience.
+
+The following fields are collected:
+
+- **featureId** - TCID for premium feature on which user taps
+
 
 ### Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
@@ -3445,6 +3509,14 @@ The following fields are collected:
 
 - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
 
+### Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
+
+Usage telemetry to know when the user taps “See All Benefits”, after a successful purchase to see the apps and features included in the purchase they just made. The data is used to help develop future enhancement to minimize user interruption during application updates.
+
+The following fields are collected:
+
+- **productId** - String – App Store ID of the product for which user is viewing all benefits offered
+
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -3456,7 +3528,7 @@ The following fields are collected:
 
   - **ACID** - A GUID identifier representing the Office product that the user is licensed for
 
-  - **DwEulaId** – Numeric identifier of the type of EULA that was just accepted by the user
+  - **DwEulaId** – Numeric identifier of the type of EULA that was accepted by the user
 
 ### Office.Licensing.Activation 
 
@@ -3475,6 +3547,26 @@ The following fields are collected:
 If we are not able to automatically activate the license for some reason, we show an activation wizard to the user. This reports that the wizard is being shown to the user. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 This event collects no fields.
+
+### Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
+
+This event is triggered once for every licensing business bar type that will be shown that has the dynamic business bar flight on (treatment group). This data event reports whether there is a Lifecycle Programming Platform dynamic business bar campaign ready on disk. Data will be used to measure the health of the new Lifecycle Programming Platform dynamic licensing business bar technology.
+
+The following fields are collected:
+
+- **DoesCampaignExist (bool)** - Indicates if the campaign is on disk
+
+- **Type (int32)** - Indicates the licensing business bar type
+
+
+### Office.Licensing.BusBar.ShowStashedBusbar
+
+This event is triggered when the dynamic Lifecycle Programming Platform business bar fails to show and stashed static business bar needs to be shown instead. This data event will be used to make sure fallback to static business bar is successful.
+
+The following fields are collected:
+
+- **Type (int32)** - Indicates the licensing business bar type
+
 
 ### Office.Licensing.Dialogs.WebViewDialog.Close
  
@@ -3519,7 +3611,7 @@ The following fields are collected:
 
 ### Office.Licensing.EnforceSignInQualified 
 
-This is the signal that tells us if the experiment that we are running to enforce user sign as part of licensing is successful. This is critical in detecting the success or failure of the experiment that is forcing the users to login which is a required step for the modern licensing stack. Failure to sign in will result in the users not being able to use the app.
+This is the signal that tells us if the experiment that we are running to enforce user sign as part of licensing is successful. This is critical in detecting the success or failure of the experiment that is forcing the users to log in which is a required step for the modern licensing stack. Failure to sign in will result in the users not being able to use the app.
 
 The following fields are collected:
 
@@ -3562,7 +3654,7 @@ The following fields are collected:
 
 ### Office.Licensing.Heartbeat 
 
-On every session we check if 72 hours have passed since the last license renewal and try to extend the expiry of the current license. This event reports the success or failure of the call that we make to ensure we can extend the expiry of the license and keep the user's Office installation functional. It is critical in diagnosing subscription related issues and service issues for the user and is critical in detecting regressions for already activated subscription users.
+On every session, we check if 72 hours have passed since the last license renewal and try to extend the expiry of the current license. This event reports the success or failure of the call that we make to ensure we can extend the expiry of the license and keep the user's Office installation functional. It is critical in diagnosing subscription-related issues and service issues for the user and is critical in detecting regressions for already activated subscription users.
 
 The following fields are collected:
 
@@ -3985,6 +4077,17 @@ The following fields are collected:
  
 - **EnrollmentResult** - The result of Intune enrollment
 
+### SKU.PRODUCT.PRICE.NULL.EVENT
+
+This event is used to capture events to quantify the impact of the bug due to which users today see “Null” instead of a price at the SKU chooser screen. The bug will be diagnosed further to determine a fix. 
+
+The following fields are collected:
+
+- **PriceNotFound** - Prices is not found from the store.
+
+- **StoreNotInitilized** - When store is not initialized successfully.
+
+
 ## Microsoft AutoUpdate (MAU) events
 
 ### additionalappinfo.invalidpreference
@@ -4187,6 +4290,49 @@ The following fields are collected:
 
 - **SessionId** – The identifier for the session
 
+### appinstall.xpcremoteobjecterror
+
+This event reports on an error found while attempting to connect to Privileged Helper Tool via XPC connection. We use this event to track and address possible MAU installation issues.
+
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppID** – The application identifier.
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device country (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** – The version of the operating system
+
+- **Event_ReceivedTime** – The time at which telemetry was received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **Payload** – Contains information on the nature of proxy error encountered
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first three octets of the IP address
+
+- **SessionId** – The identifier for the session
+
+
 ### appregistry.config
 
 This event reports on any errors encountered while loading application registry information. We use this report to advise IT Admins on the correct format of setting up client application registrations.
@@ -4311,7 +4457,7 @@ The following fields are collected:
 
 ### catalog.errorsignature
 
-This event denotes that a failure while performing code sign validation on an update collateral file occurred.  Any collateral failing code sign verification should be considered invalid.
+This event reports on various problems with downloaded files, including vendor signature and hash value mismatch on downloaded file. We use this event to detect problems in publishing manifest set for applications.
 
 The following fields are collected:
 
@@ -4339,9 +4485,15 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
+- **FileHash** – Hash value of the downloaded file
+
+- **FileName** – The name of the file showing hash value mismatch
+
+- **HashInCatalog** – Hash value entry in the corresponding catalog file
+
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains name of the catalog file with invalid signature. Different static text describes different error conditions.
+- **Payload** - contains information on the app reporting problem
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -4394,7 +4546,7 @@ The following fields are collected:
 
 ### cloningtask.helpertoolconnection
 
-This event records issues with install on clone (i.e. either we fail to connect to the helper to apply an update, or we connect but the helper is unable to apply the update). If we ever get a record reported, this means install on clone has failed and will now have to fallback to an in-place update.
+This event records issues with install on clone (i.e. either we fail to connect to the helper to apply an update, or we connect but the helper is unable to apply the update). If we ever get a record reported, this means install on clone has failed and will now have to fall back to an in-place update.
 
 The following fields are collected:
 
@@ -7405,7 +7557,7 @@ The following fields are collected:
 
 - **UpdaterType** - Type of updater specified in the downloaded manifest file
 
-- **UpdateURL** - URL of update package that need to be applied
+- **UpdateURL** - URL of update package that needs to be applied
 
 ### downloadtask.urlerror
 
@@ -7447,7 +7599,7 @@ The following fields are collected:
 
 - **UpdateID** - Identifier for an application update
 
-- **UpdateURL** - URL of update package that need to be applied
+- **UpdateURL** - URL of update package that needs to be applied
 
 ### fba.changelastupdate
 
@@ -7966,11 +8118,13 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** -	 Static text
+- **Payload** -	Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **Reason** - Static text indicating a silent update cannot proceed as UI is open
 
 - **SessionId** - The identifier for the session
 
@@ -9371,6 +9525,8 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
+- **CustomNotification** – Boolean indicating whether custom notification was used.
+
 - **Device_NetworkCountry** - The device country (based on IP address)
 
 - **DeviceID** - The device identifier
@@ -9389,7 +9545,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Text that indicates the nature of the event.
+- **Payload** - Text that indicates the nature of the event. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -9519,6 +9675,50 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### gui.dashboardrowview.updatestate
+
+This event reports on an error found while attempting to display application information in MAU UI. We use this event to ensure health of MAU and track and address failures.
+
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppID** – The application identifier.
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device country (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** – The version of the operating system
+
+- **Event_ReceivedTime** – The time at which telemetry was received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **Payload** – Contains information on the nature of error encountered
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first three octets of the IP address
+
+- **SessionId** – The identifier for the session
+
 
 ### gui.dashboardview.appisopendialog.display 
 
@@ -9742,7 +9942,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **ChannelName** - Channel for which the consent dialog is displayed for
+- **ChannelName** - Channel for which the consent dialog is displayed
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -10288,6 +10488,55 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### installedapp.acknowledgedcoreappleevent
+
+This event indicates Microsoft Auto Update (MAU) has received an Apple event acknowledgment from a registered application to terminate the application to proceed with pending application update. This event is used to help develop future enhancement to minimize user interruption during application updates. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppID** - Identifier for the application being updated
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppleEventClass** - Indicates type of event being sent/acknowledged
+
+- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains retry count
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **UpdateID** - The update identifier
+
+
 ### installedapp.invalidbundle
 
 This event indicates Microsoft Autoupdate could not retrieve bundle information for the registered application at given path. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
@@ -10502,6 +10751,7 @@ The following fields are collected:
 
 - **Success** -	Indicates whether the subject application has reported success of operation
 
+- **UpdateID** - The update identifier
     
 ### installstatus.codesign
 
@@ -10556,7 +10806,11 @@ The following fields are collected:
 
 - **AppVersionLong** - The application Version
 
+- **BundleReachable** – Boolean indicating whether there was a problem accessing Microsoft AutoUpdate application bundle.
+
 - **Channel** - The preference for audience
+
+- **Codesigned** – Boolean indicating whether the Update Assistant were codesigned correctly.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -10574,9 +10828,11 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
+- **Exists** – Boolean indicating whether the Update Assistant exists on disk.
+
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned.
+- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -11151,7 +11407,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Text indicating success of operation.
+- **Payload** - Text indicating success of operation. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -11159,6 +11415,7 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+- **Success** – Boolean indicating success of operation.
 
 ### installupdatestask.updatestatus
 
@@ -11405,7 +11662,7 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-- **AppID** - The identifier of application that sends command line interface API to MAU.
+- **AppID** - The identifier of application that sends command-line interface API to MAU.
 
 - **AppInfo_Language** - The language the application is running under
 
@@ -11429,7 +11686,7 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
-- **EventType** - The type of event that is sent by application to MAU’s command line interface API.
+- **EventType** - The type of event that is sent by application to MAU’s command-line interface API.
 
 - **HowTocheck** - The preference for checking of updates
 
@@ -11800,11 +12057,13 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** - Static text
+- **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** -The first three octets of the IP address
+
+- **Reason** - Static text
 
 - **SessionId** - The identifier for the session
 
@@ -12122,11 +12381,13 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** - Static text
+- **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
+
+- **Reason** - Static text
 
 - **SessionId** - The identifier for the session
 
@@ -12274,6 +12535,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The version of the operating system
 
+- **Duration** - Text indicating duration of snooze
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -12282,7 +12545,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **Payload** - Static text
+- **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -13398,7 +13661,7 @@ The following fields are collected:
 
 ### updatefilterhelper.cannotretrievebuilddate
 
-We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log that we could not retrieve the date from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log that we could not retrieve the date from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -13519,7 +13782,7 @@ The following fields are collected:
 
 ### updatefilterhelper.invalidresponsefromupdatefiltering
 
-We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -13560,7 +13823,7 @@ The following fields are collected:
 
 ### updatefilterhelper.missingbuilddate
 
-We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -13601,7 +13864,7 @@ The following fields are collected:
 
 ### updatefilterhelper.updatebypassedoldage
 
-We can filter updates via MAU Service only when the update being offered is not older than certain amount of days. Here we log the service is bypassed due to old update date. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log the service is bypassed due to old update date. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -14544,6 +14807,47 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+
+### updatemanager.network
+
+This event logs network availability. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+ 
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application Version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device county (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The Hardware Model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** – The Version of the Operating System
+
+- **Event_ReceivedTime** – The time at which telemetry got received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first 3 octets of the IP address
+
+- **SessionId** – The identifier for the session
+
+- **ServerReacheable** – Boolean indicating whether the network is available.
+
     
 ### updatemanager.updatespending
 
@@ -15300,7 +15604,7 @@ The critical signal used to track performance of inbound sync operations includi
 
 This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data from our service, information about the data they were downloading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. 
 
-If we see an unacceptable latency for a section or notebook we will also use this data to correlate that with other signals from the client and service regarding the same document to identify client side performance regressions allowing us to deliver a more performant service.
+If we see an unacceptable latency for a section or notebook we will also use this data to correlate that with other signals from the client and service regarding the same document to identify client-side performance regressions allowing us to deliver a more performant service.
 
 If we do not receive this data, we will be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
 
@@ -15368,7 +15672,7 @@ The following fields are collected:
 
 The critical signal used to track errors and exceptions that have occurred inside the sync stack in the OneNote client allowing us to monitor and mitigate these unexpected conditions.
 
-This is used to ensure service health by allowing us to see error reports from the clients in near real-time, which lets us respond to sync issues as they arise. It is also used to identify how widespread an issue is, and how severe by cross-referencing the error tag with the client code to identify the source of failure. We also aggregate this data to get information on our performance over time and the impact and effectiveness of improvements we make to our clients and services. If we do not have this data, we won’t be able to proactively respond to error conditions in our sync service without customer escalation.
+This is used to ensure service health by allowing us to see error reports from the clients in near real time, which lets us respond to sync issues as they arise. It is also used to identify how widespread an issue is, and how severe by cross-referencing the error tag with the client code to identify the source of failure. We also aggregate this data to get information on our performance over time and the impact and effectiveness of improvements we make to our clients and services. If we do not have this data, we won’t be able to proactively respond to error conditions in our sync service without customer escalation.
 
 The following fields are collected: 
 
@@ -15402,7 +15706,22 @@ No required service data events are collected by Services Configuration.
 
 ## Telemetry events
 
-### Office.Android.DocsUI.Views.PaywallOperationMetrics
+### app.deep.link
+
+This event helps to track the usage of calendar meeting launch, across different endpoints. This event lets us detect two things when a meeting is launched via Skype for Business, and when a meeting is launched via Teams, and if the Teams app is installed.
+
+The following fields are collected: 
+
+- **account** - Hashed account information which performed the action
+
+- **action_type** - action performed, such as launch meeting or install application
+
+- **application** - Application that was launched via a deep link, such as Teams or Skype for Business
+
+
+### Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
+
+*[This event was previously named Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
 Microsoft uses this to get the health of the feature, success, or error rates for the user for purchases, to ensure appropriate investments to improve the customers’ purchase experience across mobile platforms.
 
@@ -15414,15 +15733,17 @@ The following fields are collected:
 
 - **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
 
-### Office.Android.DocsUI.Views.PaywallSessionData
+### Office.Android.DocsUI.PaywallControl.PaywallSessionData
 
-Session based metadata when Paywall UI is shown to the user. Microsoft uses this to get the user journey, and understand the device and OS versions the user is using, to help make decisions on investments in improving the experience in these areas.
+*[This event was previously named Office.Android.DocsUI.Views.PaywallSessionData.]*
+
+Session-based metadata when Paywall UI is shown to the user. Microsoft uses this to get the user journey, and understand the device and OS versions the user is using, to help make decisions on investments in improving the experience in these areas.
 
 The following fields are collected:
 
 - **App Version** - Version code of the consuming application
 
-- **ClientId** - Anonymous non PII unique device identifier (guid / string)
+- **ClientId** - Anonymous non-PII unique device identifier (guid / string)
 
 - **Entry Point** - Unique identifier for contextual or constant entry points from the consuming application
 
@@ -16313,81 +16634,100 @@ The following fields are collected:
 
   - **AppName -** The name of the affected application. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **AppUsedVirtualMemory** - Virtual memory utilized by office application
 
-  - **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **BucketId** - Watson bucket Identifier for crash
 
-  - **CrashedEcsETag -** An experiment identifier for the crashed process.
+- **CabGuid** - GUID identifier for the Watson cab.
 
-  - **CrashedImpressionId -** The impression identifier of the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CallStack** - The Microsoft internal call stack causing the crash.
 
-  - **CrashedModuleName** - Failing module name
+- **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedProcessSessionID -** A unique identifier of the crashed process. 
+- **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashedProcessSessionInitTime -** The time when the affected process started. 
+- **CrashedEcsETag -** An experiment identifier for the crashed process.
 
-  - **CrashedProcessSessionUninitTime** - The time when the affected process ended.
+- **CrashedImpressionId -** The impression identifier of the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **CrashTag** - The unique identifier for the code of the crash.
+- **CrashedModuleName** - Failing module name
 
-  - **CrashType -** Bucketing identifier for the type of crash.
+- **CrashedProcessSessionID -** A unique identifier of the crashed process. 
 
-  - **DetectionTime -** The time when the unexpected exit was detected. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CrashedProcessSessionInitTime -** The time when the affected process started. 
 
-  - **ErrorString -** Error description. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CrashedProcessSessionUninitTime** - The time when the affected process ended.
 
-  - **ExceptionAddress -** Address in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **CrashTag** - The unique identifier for the code of the crash.
 
-  - **ExceptionCode -** Bucketing identifier for the exception.
+- **CrashType -** Bucketing identifier for the type of crash.
 
-  - **FaultAppName -** The name of the faulting app. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **DetectionTime -** The time when the unexpected exit was detected. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+- **ErrorString -** Error description. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallType -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ExceptionAddress -** Address in the program where the failure occurred. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **InstallTypeName -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ExceptionCode -** Bucketing identifier for the exception.
 
-  - **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ExceptionInfo** - System information for the exception.
 
-  - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **FaultAppName -** The name of the faulting app. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **HangTypeCode** - Represents class of hang if the process hung during execution.
 
-  - **ModuleBaseAddress -** Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
 
-  - **ModuleBuildVersion -** Failing module build version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **InstallType -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleMajorVersion -** Failing module major version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **InstallTypeName -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleMinorVersion -** Failing module minor version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleName -** Failing module name. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleOffset -** Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+- **ModuleBaseAddress -** Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleRevisionVersion -** Failing module build revision version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ModuleBuildVersion -** Failing module build version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleSize -** Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **ModuleMajorVersion -** Failing module major version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ModuleVersion** - Version of the fault module responsible for a crash.
+- **ModuleMinorVersion -** Failing module minor version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **OfficeArchitectureText** - The architecture of the install: x64, x86, etc.
+- **ModuleName -** Failing module name. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **OfficeUILang** - The Language of the User Interface in the Office Build.
+- **ModuleOffset -** Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
-  - **OSEnvironment -** Identifier for what environment Office is running on.
+- **ModuleRevisionVersion -** Failing module build revision version number. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **PreviousBuild -** Previously installed build version
+- **ModuleSize -** Failing module size in bytes. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
+- **ModuleVersion** - Version of the fault module responsible for a crash.
 
-  - **SessionFlags** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc. 
+- **OfficeArchitectureText** - The architecture of the install: x64, x86, etc.
 
-  - **UAETypeName -** Bucketing identifier for how the app exited ungracefully. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **OfficeUILang** - The Language of the User Interface in the Office Build.
 
-  - **UninitLibletId** - The unique identifier for the failing component of the crash.
+- **OSEnvironment -** Identifier for what environment Office is running on.
 
-  - **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **PreviousBuild -** Previously installed build version
+
+- **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
+
+- **SessionFlags** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc. 
+
+- **StackHash** - Provides a hashed id for the failure stack in Office.
+
+- **SystemAvailableMemory** - Available memory in the operating system
+
+- **UAETypeName -** Bucketing identifier for how the app exited ungracefully. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **UninitLibletId** - The unique identifier for the failing component of the crash.
+
+- **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **WatsonReportId** - Identifier of report sent to the Windows Watson service.
+
+- **WerEventCreatedTime** - Time stamp for Windows Error Reporting event.
 
 ### Office.System.SystemHealthUngracefulAppExitImmersive
 
@@ -16728,7 +17068,7 @@ The following fields are collected:
 
   - **RejectedConfigs** - Number of rejected configs
 
-  - **RejectedConfigsList** - Comma separated list of rejected configs.
+  - **RejectedConfigsList** - Comma-separated list of rejected configs.
 
 ### Office.Telemetry.DynamicConfig.ParseJsonConfig
 
@@ -16895,8 +17235,6 @@ The following fields are collected:
   - **ErrorRuleVersion** - Telemetry rule version that caused the error
 
   - **WarningInfo** - Warning diagnostic info number
-
-<!-- end list -->
 
   - **QueueFlushCount** - Number of queue flushes
 

@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
@@ -25,7 +25,7 @@ There are two ways to activate computers by using MAK:
   
 - **MAK independent activation** requires that each computer independently connect and be activated with Microsoft, either over the internet or by telephone. MAK independent activation is best for computers that have direct access to the internet. 
     
-- **MAK proxy activation by using VAMT** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com//windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](https://docs.microsoft.com/windows/deployment/volume-activation/proxy-activation-vamt).
+- **MAK proxy activation by using VAMT** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt).
     
 
 ## Activate Office 2019 by using MAK
@@ -40,7 +40,7 @@ If you're using MAK to activate volume licensed versions of Office 2016, you can
   
 - Before you install Office 2016, you can use the [Office Customization Tool (OCT)](activate-office-by-using-mak.md#OCT) or the [Config.xml file](activate-office-by-using-mak.md#ConfigXML).
     
-- After you install Office 2016, you can use the [product UI](activate-office-by-using-mak.md#OCT), the [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry).
+- After you install Office 2016, you can use the [product UI](activate-office-by-using-mak.md#OCT), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry).
         
     
 <a name="OCT"> </a>
@@ -57,7 +57,7 @@ To enter a MAK key by using the Office Customization Tool (OCT), follow these st
     
 > [!NOTE]
 > - For more information, see [Office Customization Tool (OCT) 2016 Help: Overview](../oct/oct-2016-help-overview.md) and [Office Customization Tool (OCT) 2016 Help: Licensing and user interface](../oct/oct-2016-help-licensing-and-user-interface.md).
-> - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
+> - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
 
 <a name="ConfigXML"> </a>
 
@@ -80,8 +80,8 @@ To enter a multiple activation key by using the Config.xml file, follow these st
 ```
     
 > [!NOTE]
-> - For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
-> - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)* 
+> - For more information about the Config.xml file, see [Config.xml file reference](/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
+> - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)* 
   
 <a name="UI"> </a>
 
@@ -94,7 +94,7 @@ To change the Office 2016 product key on only one computer:
 2. Go to **File** > **Account**.
 3. Choose **Change Product Key** and enter the product key. 
  
-If you need to change the Office 2016 product key on multiple computers after Office is installed, we recommend that you use Volume Activation Management Tool (VAMT) 3.1. For more information, see [Volume Activation Management Tool (VAMT) Technical Reference](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool).
+If you need to change the Office 2016 product key on multiple computers after Office is installed, we recommend that you use Volume Activation Management Tool (VAMT) 3.1. For more information, see [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool).
     
  
 <a name="registry"> </a>
@@ -117,7 +117,7 @@ Or, you can set the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtecti
  - To disable, set "UserOperations"=dword:00000000
   
 > [!NOTE]
-> For more information about the Config.xml file, see [Config.xml file reference](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
+> For more information about the Config.xml file, see [Config.xml file reference](/previous-versions/office/office-2013-resource-kit/cc179195%28v%3doffice.15%29). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
 
 ## Deploying multiple MAK keys
 
@@ -125,12 +125,11 @@ In some organizations, different groups have different MAK keys for their volume
 
 If you don't want to create separate XML files for each group, you could use one of these other methods:
 
-- [Volume Activation Management Tool (VAMT)](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-management-tool)
+- [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool)
 - [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp)
 - [Enable a non-admin user to activate using MAK](activate-office-by-using-mak.md#registry)
 
-## Related topics
+## Related articles
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md)
-

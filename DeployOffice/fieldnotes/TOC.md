@@ -6,3 +6,5 @@
 ## [Build dynamic, lean, and universal packages](build-dynamic-lean-universal-packages.md)
 ## [Switch to Monthly Enterprise Channel with Configuration Manager](switch-to-monthly-enterprise-channel.md)
 ## [Road map to modern management](roadmap-to-modern-management.md)
+## [Microsoft 365 change guide](microsoft-365-change-guide.md)
+## [Network guidance for deploying and servicing Microsoft 365 Apps](network-guidance.md)

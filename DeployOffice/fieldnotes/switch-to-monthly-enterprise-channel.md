@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
 
-The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Endpoint Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](https://docs.microsoft.com/deployoffice/manage-microsoft-365-apps-updates-configuration-manager).
+The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Endpoint Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](../manage-microsoft-365-apps-updates-configuration-manager.md).
 
 The article shows a common approach to move devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. The admin has to perform three actions:
 
@@ -37,7 +37,7 @@ This will trigger the following flow of events on Configuration Manager and the 
 
 1. The device executes the assigned application and updates the Click-to-Run configuration with the newly assigned update channel.
 
-1. During the next [Software Updates Deployment Evaluation Cycle](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process), Click-to-Run will download and install the client update from the new channel. The device now runs on the new channel.
+1. During the next [Software Updates Deployment Evaluation Cycle](/mem/configmgr/sum/understand/software-updates-introduction#scan-for-software-updates-compliance-process), Click-to-Run will download and install the client update from the new channel. The device now runs on the new channel.
    
 1. Configuration Manager receives an updated hardware inventory and automatically removes the device from the old collection and adds it to the **MEC devices** collection.
 
@@ -103,11 +103,11 @@ A common practice is to have a [dynamic collection that catches all devices runn
 
 ![Screenshot from Configuration Manager showing updates from different channels deployed to the same collection](../images/fieldnotes/move-mec-w-configmgr-3.png)
 
-Follow the regular process of [deploying software updates using Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/deploy-software-updates). We recommend using [Automatic Deployment Rules](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/automatically-deploy-software-updates).
+Follow the regular process of [deploying software updates using Configuration Manager](/mem/configmgr/sum/deploy-use/deploy-software-updates). We recommend using [Automatic Deployment Rules](/mem/configmgr/sum/deploy-use/automatically-deploy-software-updates).
 
 After a device has received instructions to switch channels and an update detection cycle is performed, the device downloads the delta update sources for Monthly Enterprise Channel, extracts them locally, and then applies them. If Office applications are open, you must close them to apply the update. The Configuration Manager mechanism decides if an update is enforced or if the user can postpone installation.
 
-In the next [hardware inventory cycle](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), the device sends the new channel information to the Configuration Manager infrastructure. In the next evaluation cycle, device membership for dynamic collection is recalculated. The devices will be removed from the old collection and added to the matching one as follows:
+In the next [hardware inventory cycle](/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), the device sends the new channel information to the Configuration Manager infrastructure. In the next evaluation cycle, device membership for dynamic collection is recalculated. The devices will be removed from the old collection and added to the matching one as follows:
 
 ![Screenshot from Configuration Manager collections with devices moved from one to another collection](../images/fieldnotes/move-mec-w-configmgr-4.png)
 
@@ -125,6 +125,6 @@ In the next [hardware inventory cycle](https://docs.microsoft.com/mem/configmgr/
    
 - If the device configuration is changed, two timers are relevant on the Configuration Manager side:
 
-   - The device must upload the [hardware inventory](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) that includes information about the selected update channel.
+   - The device must upload the [hardware inventory](/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory) that includes information about the selected update channel.
    
    - The Configuration Manager infrastructure must recalculate the memberships of the collections.

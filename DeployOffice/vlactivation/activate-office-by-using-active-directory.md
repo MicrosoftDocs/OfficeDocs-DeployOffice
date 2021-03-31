@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -16,7 +16,7 @@ description: "Provides Office admins with information about using Active Directo
 
 ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
   
-Active Directory-based activation enables an organization to activate volume licensed versions of Office, including Project and Visio, on computers that are joined to an Active Directory domain. Active Directory-based activation is implemented as a role service on Windows Server and relies on Active Directory Domain Services to store an activation object. For more information, see [Activate using Active Directory-based activation](https://docs.microsoft.com/windows/deployment/volume-activation/activate-using-active-directory-based-activation-client).
+Active Directory-based activation enables an organization to activate volume licensed versions of Office, including Project and Visio, on computers that are joined to an Active Directory domain. Active Directory-based activation is implemented as a role service on Windows Server and relies on Active Directory Domain Services to store an activation object. For more information, see [Activate using Active Directory-based activation](/windows/deployment/volume-activation/activate-using-active-directory-based-activation-client).
 
 
 ## Requirements for using Active Directory-based activation
@@ -25,6 +25,7 @@ To use Active Directory-based activation, the volume licensed version of Office,
 
 - Windows 10
 - Windows 8.1
+- Windows Server 2019
 - Windows Server 2016
 - Windows Server 2012 R2
 - Windows Server 2012  
@@ -59,4 +60,3 @@ To configure Active Directory-based activation, you must have Domain Administrat
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016](gvlks.md)
- 

@@ -16,7 +16,7 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Choose how to install Microsoft 365 Apps
+# Best practices from the field: Choose how to install Microsoft 365 Apps
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
@@ -37,7 +37,7 @@ The flowchart below is a comparison of install options, including the considerat
 
 ![Options for installing Microsoft 365 Apps](../images/fieldnotes/install-options-2.png)
 
-Note that the [Office Deployment Tool (ODT)](../overview-of-the-office-2016-deployment-tool.md) is used to install Microsoft 365 Apps in all these options. 
+Note that the [Office Deployment Tool (ODT)](../overview-office-deployment-tool.md) is used to install Microsoft 365 Apps in all these options. 
 
 ## Configuration Manager hybrid – subset of content (Microsoft recommended)
 
@@ -49,7 +49,7 @@ Advantages:
 - Reduces the amount of content required to download each month if you have chosen to keep installation packages always up to date.
 
 Consideration:
-- Network optimization features like [Configuration Peer Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Microsoft Connected Cache](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache), and [Delivery Optimization](../delivery-optimization.md) require configuration review to ensure they are optimally configured.
+- Network optimization features like [Configuration Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache), and [Delivery Optimization](../delivery-optimization.md) require configuration review to ensure they are optimally configured.
 
 Disadvantages:
 - Hybrid workflow is not currently built into the Configuration Manager wizard. The IT Pro must manually update the configuration.xml to support AllowCDNFallback + MatchPreviousMSI or MatchInstalled.

@@ -142,7 +142,7 @@ Note that the Active devices count refers to the number of devices in your tenan
 
 ## Data for the Microsoft 365 Apps health dashboard
 
-The Microsoft 365 Apps health dashboard uses the diagnostic data that your Office apps send to Microsoft. Diagnostic data is always under your control. To learn more about diagnostic data and the controls available to you see [Privacy Controls on Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/privacy/overview-privacy-controls)
+The Microsoft 365 Apps health dashboard uses the diagnostic data that your Office apps send to Microsoft. Diagnostic data is always under your control. To learn more about diagnostic data and the controls available to you see [Overview of privacy controls for  Microsoft 365 Apps for enterprise](../privacy/overview-privacy-controls.md).
 
 ## Performance trends
 

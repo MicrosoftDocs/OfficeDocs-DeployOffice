@@ -11,8 +11,8 @@
 
 # Manage updates
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
-## [Update history](https://docs.microsoft.com/officeupdates/update-history-office-for-mac)
-## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-office-for-mac)
+## [Update history](/officeupdates/update-history-office-for-mac)
+## [Release notes](/officeupdates/release-notes-office-for-mac)
 
 # Set preferences
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
@@ -22,10 +22,10 @@
 ## [Default decryption password (Excel)](set-preference-default-password-excel.md)
 
 # Related articles
-## [Network requests](https://docs.microsoft.com/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
+## [Network requests](/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
 ## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
 
 # Microsoft AutoUpdate (MAU)
 ## [Set a deadline](mau-deadline.md)
 ## [Use msupdate](update-office-for-mac-using-msupdate.md)
-## [Release history](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate)
+## [Release history](/officeupdates/release-history-microsoft-autoupdate)

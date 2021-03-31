@@ -4,7 +4,7 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
@@ -13,11 +13,6 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
 ---
 
 # Deployment guide for Microsoft 365 Apps
-
-> [!NOTE]
-> - Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. For more information, see [Name change for Office 365 ProPlus](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
-> - We've made some changes to the update channels for Microsoft 365 Apps, including adding a new update channel (Monthly Enterprise Channel) and changing the names of the existing update channels. For more information, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
-
 
  This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments.
   
@@ -61,7 +56,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md) 
 
-- [Release information for updates to Microsoft 365 Apps](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
+- [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)
 
 
 ## Reference

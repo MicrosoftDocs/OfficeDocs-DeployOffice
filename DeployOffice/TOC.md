@@ -11,7 +11,6 @@
 ## [Assess your environment and requirements](assess-microsoft-365-apps.md)
 ## [Plan your enterprise deployment](plan-microsoft-365-apps.md)
 ## [Use Readiness Toolkit to assess application compatibility](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
-## [FastTrack assessment workshop](FastTrack-assessment-workshop.md)
 
 # Upgrade
 ## [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
@@ -24,8 +23,8 @@
 ## [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ## [Change the update channel](change-update-channels.md)
 ## [Delivery Optimization](delivery-optimization.md)
-## [Update history](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
-## [Release notes](https://docs.microsoft.com/officeupdates/release-notes-microsoft365-apps)
+## [Update history](/officeupdates/update-history-microsoft365-apps-by-date)
+## [Release notes](/officeupdates/release-notes-microsoft365-apps)
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
@@ -58,6 +57,8 @@
 ## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ## [Switch to Monthly Enterprise Channel with Configuration Manager](fieldnotes/switch-to-monthly-enterprise-channel.md)
 ## [Road map to modern management](fieldnotes/roadmap-to-modern-management.md)
+## [Microsoft 365 change guide](fieldnotes/microsoft-365-change-guide.md)
+## [Network guidance for deploying and servicing Microsoft 365 Apps](fieldnotes/network-guidance.md)
 
 # Reference
 ## [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md)
@@ -72,9 +73,11 @@
 ## [Overview of shared computer activation](overview-shared-computer-activation.md)
 ## [Device-based licensing](device-based-licensing.md)
 ## [Overview of licensing and activation](overview-licensing-activation-microsoft-365-apps.md)
+## [Overview of unattended automation](overview-unattended.md)
+## [Overview of extended offline access](overview-extended-offline-access.md)
 ## [Overview of viewer mode](overview-viewer-mode.md)
 ## [Change installation from 32-bit to 64-bit](change-bitness.md)
-## [App compat & readiness assessment tools](readiness-tools.md)
+## [App compatability & readiness assessment tools](readiness-tools.md)
 ## [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 
 # Project, Visio, Teams, and OneNote

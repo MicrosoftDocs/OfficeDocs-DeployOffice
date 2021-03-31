@@ -18,6 +18,18 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
 
+## March 2021
+
+Microsoft 365 Apps is starting to provide new or improved features that rely on Microsoft Edge WebView2. WebView2 requires that Microsoft Edge WebView2 Runtime be installed on the device running Office. Therefore, WebView2 Runtime will be installed on devices running Windows and that have Version 2101 or later of Microsoft 365 Apps installed. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](webview2-install.md).
+
+## February 2021
+
+[Extended offline access](overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Note that extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
+
+## January 2021
+
+[Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](overview-unattended.md) covers how to enable RPA for Microsoft 365 Apps, including licensing requirements.
+
 ## November 2020
 
 [Learn from Microsoft experts](fieldnotes/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
@@ -165,7 +177,7 @@ A public preview is now available for the Office client policy service, which is
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
- - [Overview of the Office client policy service (Preview) for Office 365 ProPlus](overview-office-client-policy-service.md)
+ - [Overview of the Office client policy service (Preview) for Office 365 ProPlus](./overview-office-cloud-policy-service.md)
 
 ### Office for Mac available in the Mac App Store
 Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
@@ -196,5 +208,3 @@ You can now  use the Office Deployment Tool to apply application preferences to 
 To help you uninstall versions of Office that use Windows Installer (MSI) as the installation technology, you can now use the Office Deployment Tool and specify the RemoveMSI element in your configuration.xml file. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
 For best practices for planning your deployment of Microsoft 365 Apps, see [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md) and [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
-
-

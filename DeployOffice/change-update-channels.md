@@ -1,7 +1,7 @@
 ---
 title: "Change the Microsoft 365 Apps update channel for devices in your organization"
-ms.author: davguent
-author: davguent
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -29,13 +29,15 @@ Group Policy and the ODT are the only supported methods to change update channel
 
 3. Link the updated policy to the OU with the devices whose channel you want to change.
 
-4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](https://docs.microsoft.com/windows-server/administration/windows-commands/gpupdate).
+4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate).
 
 After policy has been applied, the Office Automatic Update 2.0 task must run. When that task runs, it detects the updated policy and updates the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed.
 
 ## Change the update channel with the Office Deployment Tool (ODT)
 
-1. Before you begin, make sure the scheduled task "Office Automatic Update 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, or Configuration Manager.
+1. Before you begin, double-check these items:
+   - Make sure the scheduled task "Office Automatic Update 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, or Configuration Manager.
+   - Make sure that the update channel for the targeted device is not set through Group Policy. Otherwise, the policy setting will take precedence over the Office Deployment Tool setting and the device will stay on the channel specified by the policy setting. In such case, either remove the policy setting from the device or use [Group Policy to change the channel](#change-the-update-channel-with-group-policy).
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
@@ -69,6 +71,10 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 ## Considerations when changing channels
 
 - When moving from a channel with a higher build number to a channel with a lower build number (such as Current Channel to Semi-Annual Enterprise Channel), binary delta compression is not applied. Because of this, the update will be larger than normal. The update, however, will not be as large as a full installation of Microsoft 365 Apps.
+- Devices must be able to fetch an update from the newly assigned channel to complete the transition.
+   - If your devices are receiving updates from the internet, you are all set and no other changes are required.
+   - If you are using Configuration Manager to deploy updates, make sure that an update from the newly assigned channel has been deployed to the devices. We recommend using [dynamic collections](fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps) for easier targeting. Devices will only download the required updates, so it is safe to assign updates from multiple channels to a device.
+   - If you are using file shares, you must download and host the matching update in a new location/folder. Use the **Update Path** group policy setting or the Office Deployment Tool to point devices at the new location. 
 
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.
 

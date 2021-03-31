@@ -29,9 +29,8 @@ The following table lists the document and solution types that Office Telemetry 
 |Word WLL add-ins  <br/> |Word  <br/> |WLL (.wll) add-ins are specific to Word and built with any compiler that supports building DLLs.  <br/> |
 |Application add-ins  <br/> |Word, PowerPoint, Excel   <br/> |Application add-ins are application-specific files that contain VBA code. These include macro-enabled Word templates (.dotm), Excel add-ins (.xla, .xlam), and PowerPoint add-ins (.ppa, .ppam).  <br/> |
 |Templates  <br/> |Word  <br/> |Templates include document (.dot, .dotx), worksheet (.xlt, .xltx), or presentation (.pot, .potx) templates that are attached to an Office file.  <br/> |
-|apps for Office  <br/> |Word, PowerPoint, Excel  <br/> |These are apps for Office that are hosted in a task pane, content, or email within the client application. To learn more, see [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).  <br/> |
+|apps for Office  <br/> |Word, PowerPoint, Excel  <br/> |These are apps for Office that are hosted in a task pane, content, or email within the client application. To learn more, see [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins).  <br/> |
    
 ## Related topics
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
-
