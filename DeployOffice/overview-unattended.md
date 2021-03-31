@@ -57,11 +57,11 @@ This scenario happens every time that you want to run an unattended RPA scenario
 
 ## Using the registry key
 
-This process is mostly applicable if you're running unattended RPA on a dedicated device. To indicate unattended usage, you can adjust your key with this syntax:
+This process is mostly applicable if you're running unattended RPA on a dedicated device. To indicate unattended usage, you can set the below registry value:
 
-&nbsp;&nbsp;&nbsp;*Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", and <span class="underline">type</span> = DWORD.*
+&nbsp;&nbsp;&nbsp;*HKEY_CURRENT_USER\\\\Software\\\\Microsoft\\\\Office\\\\Common\\\\Licensing", <span class="underline">key</span> = "Unattended", <span class="underline">type</span> = DWORD, and <span class="underline">value</span> = 1.*
 
-After that, and if the per-user settings are adjusted, users can open their app using any method. They don't have to use the command prompt to open it.
+Once that value is set, users can open the application using any method and it will use the unattended licence. They don't have to use the command prompt to open it.
 
 ## See also
 
