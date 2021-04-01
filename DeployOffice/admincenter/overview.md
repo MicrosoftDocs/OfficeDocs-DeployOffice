@@ -41,16 +41,16 @@ The Office Customization Tool creates the configuration files that are used to d
 
 For more information, see [Overview of the Office Customization Tool](../overview-of-the-office-customization-tool-for-click-to-run.md).
 
+## Microsoft 365 Apps health 
+
+Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
+
 ## What's new in preview
 
 The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, click a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
 
 > [!NOTE]
 > Preview features aren't available to everyone and are subject to change.
-
-### Microsoft 365 Apps health 
-
-Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
 
 ### Inventory
 
