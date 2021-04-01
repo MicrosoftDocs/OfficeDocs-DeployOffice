@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-hideEdit: true
 description: "Provides Office admins information about the servicing profile in the Microsoft 365 Apps admin center"
 ---
 
