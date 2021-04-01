@@ -46,7 +46,7 @@ Currently, Microsoft 365 Apps health offers trends for the following performance
 - App File Open Time (SharePoint): the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
 > [!TIP]
-> To learn more about how to interpret trends, see [Performance Trends](## Performance trends)
+> To learn more about how to interpret trends, see [Performance Trends](#performance-trends).
 
 When a noteworthy change in a trend is detected, the dashboard presents it as an advisory. Advisories help you isolate fault domains and are defined in the context of a metric of a specific Office app, build, and channel (e.g. crash rate of Word in build 16.0.13628.20274 in the Current update channel) and inform about a deterioration or improvement and are categorized as significant or minor. 
 
