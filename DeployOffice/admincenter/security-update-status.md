@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps security currency within their environment"
 ---
 
@@ -18,7 +17,7 @@ description: "Provides Office admins information about Microsoft 365 Apps securi
 
 You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office.
 
-Requirements:
+## Requirements for using security update status
 - Microsoft 365 Apps for enterprise, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
@@ -31,7 +30,7 @@ Requirements:
 
 ## Security update status
 
-The security update status view shows what percentage of your devices have the most recent security update. Your devices are evaluated against the latest release patch date (depending on the assigned channel) and can be in 3 categories.
+The security update status view shows what percentage of your devices have the most recent security update. Your devices are evaluated against the latest release patch date (depending on the assigned channel) and can be in three categories.
 
 - Up to date – Device that has installed the [latest security patch](/officeupdates/microsoft365-apps-security-updates)
 - Not up to date – Device that has not installed the most recent security update

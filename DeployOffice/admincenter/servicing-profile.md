@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-hideEdit: true
 description: "Provides Office admins information about the servicing profile in the Microsoft 365 Apps admin center"
 ---
 
@@ -24,7 +23,7 @@ Servicing profiles let you automatically deliver monthly Office updates for spec
 
 Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. You can  pause updates and investigate and resolve update issues. You can also set deadlines for updates to be installed and dates on which updates cannot be installed.
 
-Requirements:
+## Requirements for using a servicing profile
 - Microsoft 365 Apps for enterprise, Version 2007 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
@@ -42,7 +41,7 @@ Requirements:
 
 ## Using the Servicing Profile
 
-You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including , details on the next build rollout, projected waves, and information on any device failures and issues. From there  you can click into **Devices**, **Actions**, **Issues**, and **Settings** to get more information on devices managed by the servicing profile.
+You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including details on the next build rollout, projected waves, and information on any device failures and issues. From there  you can click into **Devices**, **Actions**, **Issues**, and **Settings** to get more information on devices managed by the servicing profile.
 
 ### Devices
 
@@ -71,4 +70,4 @@ Users are given notifications leading up to the deadline when a deadline is set.
 Update exclusions can be created to prevent devices downloading security and feature updates during specific dates. Update exclusions allow you to reduce change in your environment during busy periods, such as during tax season or at the end of the financial year. Manual actions in Action Center and end-user actions are unaffected by update exclusion dates. Note that update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
 
 > [!NOTE]
-> Update exclusions prevent devices downloading security and feature updates. If you also want to prevent devices installing updates, consider starting the exclusion sooner and enforcing installations with an [update deadline](update-deadline.md).
+> Update exclusions prevent devices downloading security and feature updates. If you also want to prevent devices installing updates, consider starting the exclusion sooner and enforcing installations with an update deadline.
