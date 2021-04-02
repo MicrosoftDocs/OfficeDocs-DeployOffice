@@ -17,7 +17,7 @@ description: "Provides Office admins information about Microsoft 365 Apps securi
 
 You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office.
 
-Requirements:
+## Requirements for using security update status
 - Microsoft 365 Apps for enterprise, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan

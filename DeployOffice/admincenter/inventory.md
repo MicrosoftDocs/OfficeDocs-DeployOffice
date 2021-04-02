@@ -17,7 +17,7 @@ description: "Provides Office admins information about configuring and using inv
 
 You can use the inventory page in the Microsoft 365 Apps admin center to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device.
 
-Requirements:
+## Requirements for using inventory
 - Microsoft 365 Apps for enterprise, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise
 - Microsoft 365 (or Office 365) A3, A5, E3, or E5 subscription plan
