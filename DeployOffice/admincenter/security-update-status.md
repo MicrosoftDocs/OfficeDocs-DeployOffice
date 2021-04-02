@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
-hideEdit: true
 description: "Provides Office admins information about Microsoft 365 Apps security currency within their environment"
 ---
 
@@ -31,7 +30,7 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 
 ## Security update status
 
-The security update status view shows what percentage of your devices have the most recent security update. Your devices are evaluated against the latest release patch date (depending on the assigned channel) and can be in 3 categories.
+The security update status view shows what percentage of your devices have the most recent security update. Your devices are evaluated against the latest release patch date (depending on the assigned channel) and can be in three categories.
 
 - Up to date – Device that has installed the [latest security patch](/officeupdates/microsoft365-apps-security-updates)
 - Not up to date – Device that has not installed the most recent security update
