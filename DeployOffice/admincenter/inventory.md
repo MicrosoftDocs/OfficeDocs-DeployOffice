@@ -32,7 +32,7 @@ Requirements:
 
 2. If you haven't viewed inventory before, complete the setup wizard.
 
-3. When you complete the wizard, active devices  should appear on the inventory page within 2 hours where the user has launch an Microsoft 365 App
+3. When you complete the wizard, active devices  should appear on the inventory page within 2 hours where the user has launched a Microsoft 365 App
 
 ## Inventory view
 
@@ -45,7 +45,7 @@ The inventory view gives you insights across the devices in your organization, i
 
 ## Device view
 
-The device view shows detailed information on devices, including the following:
+The device view shows detailed information on devices, including the following information:
 
 | Item | Description |
 |:-----|:-----|
@@ -78,13 +78,13 @@ Devices status shows which devices are recently active, which means they've chec
 
 ## Add-in view
 
-The add-in view shows the Office add-ins on the devices in your organization. The add-in view shows details for add-ins across the devices, including the following:
+The add-in view shows the Office add-ins on the devices in your organization. The add-in view shows details for add-ins across the devices, including the following information:
 
 | Item | Description |
 |:-----|:-----|
 | Add-in Name | The name of the add-in |
 | Publisher | The publisher of the add-in |
-| Version | The version number of the add-in. If there is multiple version of the add-in this will state "Multiple" |
+| Version | The version number of the add-in. If there are multiple versions of the add-in, this will state "Multiple" |
 | Number of versions | The number of versions installed across your devices |
 | Number of installs | The number of add-in installs across your devices |
 

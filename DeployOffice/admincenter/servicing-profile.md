@@ -41,7 +41,7 @@ Requirements:
 
 ## Using the Servicing Profile
 
-You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including , details on the next build rollout, projected waves, and information on any device failures and issues. From there  you can click into **Devices**, **Actions**, **Issues**, and **Settings** to get more information on devices managed by the servicing profile.
+You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including details on the next build rollout, projected waves, and information on any device failures and issues. From there  you can click into **Devices**, **Actions**, **Issues**, and **Settings** to get more information on devices managed by the servicing profile.
 
 ### Devices
 
