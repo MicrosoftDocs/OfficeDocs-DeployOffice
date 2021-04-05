@@ -2,6 +2,26 @@
 
 
 
+## Week of March 29, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/29/2021 | [Network guidance for deploying and servicing Microsoft 365 Apps](/DeployOffice/fieldnotes/network-guidance) | modified |
+| 3/29/2021 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
+| 3/29/2021 | [Activate volume licensed versions of Office by using MAK](/DeployOffice/vlactivation/activate-office-by-using-mak) | modified |
+| 3/30/2021 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
+| 3/30/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 4/1/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 4/1/2021 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
+| 4/2/2021 | [Inventory](/DeployOffice/admincenter/inventory) | modified |
+| 4/2/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 4/2/2021 | [Security Currency](/DeployOffice/admincenter/security-update-status) | modified |
+| 4/2/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
+| 4/2/2021 | Update deadline | removed |
+| 4/2/2021 | Update exclusion dates | removed |
+
+
 ## Week of March 22, 2021
 
 
