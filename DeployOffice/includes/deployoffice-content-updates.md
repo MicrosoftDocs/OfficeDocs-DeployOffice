@@ -2,6 +2,16 @@
 
 
 
+## Week of April 05, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/6/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
+| 4/7/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
+| 4/9/2021 | [Manage Office installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
+
+
 ## Week of March 29, 2021
 
 
