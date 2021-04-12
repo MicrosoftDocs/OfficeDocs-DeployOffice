@@ -628,6 +628,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 
 - **gcc_restrictions_enabled** - Tells us if GCC restrictions have been applied to the app so we can ensure our GCC customers are using our app securely
  
+- **multi_pane_mode** - Tells us if the user on the iPad is using their inbox with multiple panes turned on where they can see their folder list while triaging email. This is needed to help us detect issues specific to those using their inbox with multiple panes open.
+
 - **multi_window_mode** – Tells us if the user on the iPad is using multiple windows to help us detect issues related to multi-window usage.
 
 - **office_session_id** - A unique ID tracking the session for connected Office services to help detect issues specific an Office service integration in Outlook like Word
