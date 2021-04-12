@@ -5285,19 +5285,6 @@ The following fields are collected:
 - **TaskType** - String that identifies the intent of the service call.
 
 
-#### Office.Lens.LensSdk.Permission
-
-Permissions are a sensitive feature, as without them user cannot experience any of Lens's features. Permissions are tracked to understand user habits for providing/revoking permissions. When the user interacts with any permission dialogs in our app, we collect these events. Based on user trends for accepting and rejecting permissions, we identify feature enhancements to help users understand why permissions are critical.
-
-The following fields are collected:
-
-- **Data_action** - Contains values like “CameraPermissionAllowed (or Denied), StoragePermissionGranted (or Denied), which help us understand whether the user accepted or rejected storage and camera permissions.
-
-- **Data_Action** - This field helps us understand which type of permission was asked from the user such as Camera or storage
-
-- **Data_status** - Contains values like Allowed, Denied, and DeniedForever, which help us understand whether the user accepted or rejected storage and camera permissions.
-
-
 #### Office.Lens.LensSdk.SaveMedia
 
 This event is invoked when the user clicks on the done button and saves images on Android and iOS. It helps measure the level of user engagement by quantifying users who end up saving images through our app.
