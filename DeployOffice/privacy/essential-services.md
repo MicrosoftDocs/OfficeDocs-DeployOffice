@@ -3828,6 +3828,107 @@ If we are not able to activate a user for some reason and have to show them a di
 
 This event collects no fields.
 
+### Office.Licensing.OOBE.HandleDigitalAttachFailure
+
+This event is triggered when the abovementioned service check didn’t find a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach failure.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** tells us how we transition user to various Error states.
+   - 0x222e318f - We should keep searching AFO offer.
+   - 0x222e318e - We will fall back to OEM mode in this session for when this device doesn’t come with any Digital Attach Offer.
+   - 0x222e318d - No internet connectivity, which will lead us to show NoInternetConnectivity dialog to user 
+   - 0 - We will show various error UI to user based on their specific error code.
+
+- **Data_DigitalAttachErrorType** - tells us what the specific error code is from the abovementioned service call.
+
+- **Data_FallbackFlight** - tells us if the UseAFOAsFallBack flight is turned ON or not.
+
+
+### Office.Licensing.OOBE.HandleDigitalAttachSuccess
+
+This event is triggered when the service check finds a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach success.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** - tells us how we handle the Digital Attach Success scenarios.
+   - 0 - We’re able to auto load identity and we’ve shown “YGO w/ account” UI to the user.
+   - 0x222e3191 - We’re not able to auto load identity, so we’re going to show them “YGO w/o account” UI.
+   - 0x222e3193 - We’ve shown “YGO w/o account” UI to the user, or we don’t need to show any YGO UI to the user because it’s a device-based offer.
+
+- **Data_IsClaimTypeDevice** - tells us if the claim type of the digital attach offer is device based.
+
+### Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is already signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+
+The following fields are collected:
+
+- **Data_ExpirationDate** - tells us the expiration date for the subscription offer
+
+- **Data_IsSubscription** - tells us if the to-be-claimed product is subscription SKU or perpetual SKU
+
+- **Data_ProductName** - tells us the product name of the digital attach offer
+
+
+### Office.Licensing.OOBE.SearchForDigitalAttach
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. Machines that are setup with a specific regkey (OOBEMode: OEMTA) might have an Office offer digitally attached to it. When we boot Office, we perform service checks to see if a digitally attached Office offer is found. This activity is instrumented to track this. 
+
+The following fields are collected:
+
+- **Activity_Result_Tag** - tells us the overall result of this service check. 
+   - 0x222e318c	DA Flight is turned OFF, so no service check is made.
+   - 0x222e318b	The client doesn’t have internet, so no service check is made.
+   - 0x222e318a	Found a redeemable DA offer
+   - 0x222e3189	Found a non-redeemable DA offer
+
+- **Data_EnableDAFlight** - tells us if the DA flight that enables this service check is ON or not.
+
+
+### Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event is triggered when an error occurs in the Digital Attach redemption and activation flow for OEM PCs that come pre-entitled with Office.  We use this data to monitor the health of the systems and services and fix issues related the OEM Office activation flow.
+
+The following fields are collected:
+
+- **Data_Continue** - tells us if user clicks “Continue” on the dialog.
+
+- **Activity_Result_Tag**:
+   - 0x222e319d - User clicks “Retry” on the dialog
+   - 0x222e319c - User clicks “Continue” on the dialog
+   - 0 - User exits out of the dialog
+
+- **Data_IsForDigitalAttach** - tells us which platform and workflow the user is on – Legacy (Activation for Office (AFO)) or Modern (Digital Attach).
+
+- **Data_Retry** - tells us if the user clicks “Retry” on the dialog.
+
+
+### Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is not signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** -
+   - 0x222e3194 - We’re not able to get user identity (they either cancelled sign-in or authentication failed).
+   - 0 - We got an identity from user.
+
+- **Data_ExpirationDate** - tells us the expiration date for the subscription offer
+
+- **Data_IsCentennial** - tells us if the running office application is on centennial platform
+
+- **Data_IsForDigitalAttach** - tells us if this dialog is triggered from DA flow or AFO flow.
+
+- **Data_IsSubscription** - tells us if the to-be-claimed product is subscription SKU or perpetual SKU
+
+- **Data_OExType** - tells us if user exits out the dialog after they click ChangeAccount link
+
+- **Data_ProductName** - tells us the product name of the digital attach offer
+
+- **Data_UseInAppRedemption** - tells us if we use in-app redemption of web redemption – this is only relevant to AFO flow.
+
+
 ### Office.Licensing.OOBE.TryBuyChoice
 
 Users with pre-installed Office on new machines who have no Office entitlement are shown a dialog through which they can try, buy or enter a product key to get licensed. This event captures the user action on the dialog. This event is used to track the user action taken on the dialog shown to users with no Office entitlement where Office was pre-installed on the machine and helps determining if the user is licensed or unlicensed by design.
@@ -10699,6 +10800,55 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### installedapp.respondedcoreappleevent
+
+This event indicates Microsoft Auto Update (MAU) has received an Apple event response code from a registered application to terminate the application in order to proceed with pending application update. This event is used to help develop future enhancement to minimize user interruption during application updates. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppID** - Identifier for the application being updated
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppleEventClass** - Indicates type of event being sent/acknowledged
+
+- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains retry count
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **UpdateID** - The update identifier
 
 
 ### installedapp.sendcoreappleevent
