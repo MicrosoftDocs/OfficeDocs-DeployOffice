@@ -5233,6 +5233,16 @@ The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
+
+#### Office.Floodgate.UserFact.AppUsage
+
+This indicates when a user has used high value features within the product. It may indicate if the user discovered the feature or used it. The signal will feed feature usage product insights that help make the product better.
+
+The following fields are collected: 
+
+- **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
+
+
 #### Office.Lens.LensSdk.CloudConnectorLaunch
 
 When the user crops the image and taps confirm on the final image selection for using OCR, this event is collected. 	
@@ -9043,6 +9053,33 @@ The following fields are collected:
 - **RMS.StatusCode** - Status code of the operation result
 
 - **RMS.Url** - The URL of Rights Management Service Server
+
+
+#### Survey.Floodgate.TriggerMet
+
+Tracks when a device has met the criteria to show a survey. Used to assess the health of the survey triggering process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected: 
+
+- **CampaignId** – Identifier of a service delivered campaign
+
+- **SurveyId** – Unique instance of a campaign
+
+- **SurveyType** – Identifies the type of survey
+
+
+#### Survey.UI.Form.Submit
+
+Tracks when a survey is submitted. Used to assess the health of the survey submission process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected: 
+
+- **CampaignId** – Identifier of a service delivered campaign
+
+- **SurveyId** – Unique instance of a campaign
+
+- **SurveyType** – Identifies the type of survey
+
 
 #### watchAppV2
 
@@ -13901,6 +13938,30 @@ The following fields are collected:
   - **Data\_TagCount** - The count of each failure that occurred
 
   - **Data\_TagID** - The identifier of the failure that occurred
+
+
+#### Office.OfficeMobile.PersonalizedCampaigning.Errors
+
+To raise awareness about the features of Office mobile that users have not yet explored, Office mobile integrates with IRIS to support in-app and push notifications. In case of in-app notifications, it captures errors that happen while pulling or displaying notification and when user interactions with the notification as well as providing feedback to IRIS server. In case of push notifications, it captures errors that happen while displaying notification, and when user interacts with the notification.
+
+The following fields are collected:
+
+- **Class** - Name of the class where error occurred
+
+- **CreativeId** - The id of notification which uniquely identifies the notification and its content.
+
+- **ErrorDetails** - Details on the error
+
+- **ErrorMessage** - Error message.
+
+- **ErrorReason** - The underlying reason for the error
+
+- **Method** - Name of the function where error occurred.
+
+- **RequestParams** - Request parameters used when contacting the IRIS server to pull the notification.
+
+- **SurfaceId** - ID of the surface where the notification will be shown.
+
 
 #### Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 
