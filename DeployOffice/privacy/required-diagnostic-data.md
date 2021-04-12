@@ -5332,13 +5332,22 @@ The following fields are collected on iOS:
 
 #### Office.Lens.LensSdk.ServiceIDMapping
 
-When an image is uploaded successfully to the service, this event is collected. It signifies that service will now run one or more jobs to process the image and contain relevant IDs to help troubleshoot the process. It also helps analyze the usage of different service features.
+This event is collected when Lens SDK interacts with Microsoft’s Image-to-document (or I2D) service. This means that the event is called:
+
+- When an image is uploaded to our I2D service for file conversion and extraction (OCR).
+- When the user needs to correct the service’s output, we send feedback to improve quality.
+
+The data is used to analyse the usage and troubleshoot issues on the service side.  
 
 The following fields are collected:
 
-- **CloudConnectorRequestId** - String that identifies the service request that was made to convert images via service.
+- **CloudConnectorRequestId** - String that identifies the service-requests on the client app for both conversion and feedback scenarios.
 
-- **I2DserviceProcessID** - String that identifies the service job running a particular sub-request 
+- **CustomerId** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.	
+
+- **I2DFeedbackAPICorrelationId** - String that identifies the feedback-request in I2D service when user corrects the service output.
+
+- **I2DServiceProcessID** - String that identifies the service-request in I2D service when user is uploading images for conversion.
 
 
 #### Office.iOS.Paywall.Paywall.Presented
@@ -12636,6 +12645,8 @@ The following fields are collected:
   
 - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
+- **ChildProcessCount** – The number of child processes that have been launched by the application. (Windows only)
+
 - **ColdBoot** - Whether this is the first time the Office application ran after a system restart or application binary had to be loaded from disk. (macOS/iOS only)
 
 - **DeviceModel** - The model of the device. (macOS/iOS only)
@@ -12650,6 +12661,10 @@ The following fields are collected:
 
 - **FreeMemoryPercentage** – What percent of memory on the device is free. (Windows only)
 
+- **HandleCount** – The number of operating system handles the process has opened. (Windows only)
+
+- **HardFaultCount** – The number of hard page faults for the process. (Windows only)
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
@@ -12658,13 +12673,23 @@ The following fields are collected:
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
+- **OtherOperationCount** – The number of I/O operations performed, other than read and write operations. (Windows only)
+
+- **OtherTransferCount** – The number of bytes transferred during operations other than read and write operations. (Windows only)
+
 - **PageFaultCount** – The number of page faults for the process. (Windows only)
 
 - **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
 
 - **PrivateCommitUsageMB** – The Commit Charge (i.e., the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
 
+- **PrivateWorkingSetMB** – The amount of memory in megabytes in the process’s working set that isn’t shared with other processes. (Windows only)
+
 - **ProcessorCount** – The number of processors on the device. (macOS/iOS only)
+
+- **ReadOperationCount** – The number of read operations performed. (Windows only)
+
+- **ReadTransferCount** – The number of bytes read.
 
 - **TotalPhysicalMemory** – The total amount of physical memory on the device. (macOS/iOS only)
 
@@ -12673,6 +12698,10 @@ The following fields are collected:
 - **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS/iOS only)
 
 - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
+
+- **WriteOperationCount** – The number of write operations performed. (Windows only)
+
+- **WriteTransferCount** – The number of bytes written. (Windows only)
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
