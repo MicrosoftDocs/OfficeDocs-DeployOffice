@@ -3860,7 +3860,7 @@ The following fields are collected:
 
 ### Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
 
-Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is already signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is already signed in with a Microsoft Account to allow us to monitor the health of the system and services.
 
 The following fields are collected:
 
@@ -3873,7 +3873,7 @@ The following fields are collected:
 
 ### Office.Licensing.OOBE.SearchForDigitalAttach
 
-Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. Machines that are setup with a specific regkey (OOBEMode: OEMTA) might have an Office offer digitally attached to it. When we boot Office, we perform service checks to see if a digitally attached Office offer is found. This activity is instrumented to track this. 
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. Machines that are setup with a specific regkey (OOBEMode: OEMTA) might have an Office offer digitally attached to it. When we boot Office, we perform service checks to see if a digitally attached Office offer is found. This activity is instrumented to track this. 
 
 The following fields are collected:
 
@@ -3888,7 +3888,7 @@ The following fields are collected:
 
 ### Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
 
-Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event is triggered when an error occurs in the Digital Attach redemption and activation flow for OEM PCs that come pre-entitled with Office.  We use this data to monitor the health of the systems and services and fix issues related the OEM Office activation flow.
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event is triggered when an error occurs in the Digital Attach redemption and activation flow for OEM PCs that come pre-entitled with Office.  We use this data to monitor the health of the systems and services and fix issues related the OEM Office activation flow.
 
 The following fields are collected:
 
@@ -3906,7 +3906,7 @@ The following fields are collected:
 
 ### Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
 
-Original Equipment Manufacturers (OEM) sell machines that come with Office (One-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is not signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is not signed in with a Microsoft Account to allow us to monitor the health of the system and services.
 
 The following fields are collected:
 
