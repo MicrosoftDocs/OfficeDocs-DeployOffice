@@ -628,6 +628,8 @@ In addition, the following fields are common for all events for Outlook for iOS.
 
 - **gcc_restrictions_enabled** - Tells us if GCC restrictions have been applied to the app so we can ensure our GCC customers are using our app securely
  
+- **multi_pane_mode** - Tells us if the user on the iPad is using their inbox with multiple panes turned on where they can see their folder list while triaging email. This is needed to help us detect issues specific to those using their inbox with multiple panes open.
+
 - **multi_window_mode** – Tells us if the user on the iPad is using multiple windows to help us detect issues related to multi-window usage.
 
 - **office_session_id** - A unique ID tracking the session for connected Office services to help detect issues specific an Office service integration in Outlook like Word
@@ -5233,6 +5235,16 @@ The following fields are collected:
 
 - **Data_FirstRunPanelName** - The name of the panel from which the experience started
 
+
+#### Office.Floodgate.UserFact.AppUsage
+
+This indicates when a user has used high value features within the product. It may indicate if the user discovered the feature or used it. The signal will feed feature usage product insights that help make the product better.
+
+The following fields are collected: 
+
+- **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
+
+
 #### Office.Lens.LensSdk.CloudConnectorLaunch
 
 When the user crops the image and taps confirm on the final image selection for using OCR, this event is collected. 	
@@ -5285,19 +5297,6 @@ The following fields are collected:
 - **TaskType** - String that identifies the intent of the service call.
 
 
-#### Office.Lens.LensSdk.Permission
-
-Permissions are a sensitive feature, as without them user cannot experience any of Lens's features. Permissions are tracked to understand user habits for providing/revoking permissions. When the user interacts with any permission dialogs in our app, we collect these events. Based on user trends for accepting and rejecting permissions, we identify feature enhancements to help users understand why permissions are critical.
-
-The following fields are collected:
-
-- **Data_action** - Contains values like “CameraPermissionAllowed (or Denied), StoragePermissionGranted (or Denied), which help us understand whether the user accepted or rejected storage and camera permissions.
-
-- **Data_Action** - This field helps us understand which type of permission was asked from the user such as Camera or storage
-
-- **Data_status** - Contains values like Allowed, Denied, and DeniedForever, which help us understand whether the user accepted or rejected storage and camera permissions.
-
-
 #### Office.Lens.LensSdk.SaveMedia
 
 This event is invoked when the user clicks on the done button and saves images on Android and iOS. It helps measure the level of user engagement by quantifying users who end up saving images through our app.
@@ -5345,105 +5344,22 @@ The following fields are collected on iOS:
 
 #### Office.Lens.LensSdk.ServiceIDMapping
 
-When an image is uploaded successfully to the service, this event is collected. It signifies that service will now run one or more jobs to process the image and contain relevant IDs to help troubleshoot the process. It also helps analyze the usage of different service features.
+This event is collected when Lens SDK interacts with Microsoft’s Image-to-document (or I2D) service. This means that the event is called:
+
+- When an image is uploaded to our I2D service for file conversion and extraction (OCR).
+- When the user needs to correct the service’s output, we send feedback to improve quality.
+
+The data is used to analyse the usage and troubleshoot issues on the service side.  
 
 The following fields are collected:
 
-- **CloudConnectorRequestId** - String that identifies the service request that was made to convert images via service.
+- **CloudConnectorRequestId** - String that identifies the service-requests on the client app for both conversion and feedback scenarios.
 
-- **I2DserviceProcessID** - String that identifies the service job running a particular sub-request 
+- **CustomerId** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.	
 
+- **I2DFeedbackAPICorrelationId** - String that identifies the feedback-request in I2D service when user corrects the service output.
 
-#### Office.iOS.Paywall.Paywall.Presented
-
-This critical usage telemetry is collected when Paywall control is shown to the user, and is used to understand the in-app purchase experience for the user and optimize the same for future versions.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
-
-- **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
-
-#### Office.iOS.Paywall.Paywall.Stats
-
-This session-based metadata is collected when the Paywall UI is shown to the user, the duration of the interaction and whether a purchase was attempted and succeeded or failed.  The data is used to understand the usage and health of the entire payment experience and debug, optimize, and troubleshoot the in-app purchase experience in future versions.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
-
-- **status** - String – Exit status of Paywall. Like “initiated”, “paymentDone”, “provisionFailed”
-
-- **userDuration** - Double – Duration in milliseconds the user spent on Paywall
-
-
-#### Office.iOS.Paywall.Provisioning.Response
-
-Critical engineering telemetry with Microsoft Retail Federation Service (RFS) to collect the information provided in this event. RFS is the internal service used within Microsoft for crosschecking the purchase. The data is used to get the health of the API call made to RFS which would help in understanding the success rate and debugging for any failures.
-
-The following fields are collected:
-
-- **entryPoint**- String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **failureReason**- String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
-
-- **productId**- String – App Store ID of the product the request was made for
-
-- **status**- String – Success or Failure, indicating if the request succeeded or failed
-
-
-#### Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Critical usage telemetry that indicates when a user taps the Purchase/Buy Button. Used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
-
-The following fields are collected:
-
-- **entryPoint**- String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **isDefaultSKU**- Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
-
-- **productId** - String – App-store product-id of the product for which the Buy Button was tapped
-
-- **toggleCount**- Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
-
-
-#### Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
-
-This event collects the features and apps the user expands from “See More Benefits”, and the duration of time spent.  The data is used to understand usage of the “See all benefits” feature and further optimize the experience in future versions.
-
-The following fields are collected:
-
-- **appsExpanded** - String - Comma-separated list of services/apps for which the benefits were expanded.
-
-- **productId** - String - App Store ID of the product for which user is viewing more benefits offered
-
-- **userDuration** - Double - Duration in milliseconds the user spent on the Benefits Screen.
-
-
-### Office.iOS.Paywall.SKUChooser.ProductSwitched
-
-Usage telemetry to show how many times a user switches between different SKUs before attempting a purchase.
-
-The following fields are collected:
-
-- **productId**- String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
-
-
-#### Office.iOS.Paywall.SKUChooser.Stats
-
-This usage telemetry is collected to see how the user entered the SKU Chooser, how much time the user spends on the SKU Chooser screen and why they exited the SKU Chooser.  The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton
-
-- **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
-
-- **userDuration** - Double – Duration in milliseconds the user spent on the SKU chooser
+- **I2DServiceProcessID** - String that identifies the service-request in I2D service when user is uploading images for conversion.
 
 
 #### Office.LivePersonaCard.ConfigurationSetAction
@@ -9048,6 +8964,33 @@ The following fields are collected:
 
 - **RMS.Url** - The URL of Rights Management Service Server
 
+
+#### Survey.Floodgate.TriggerMet
+
+Tracks when a device has met the criteria to show a survey. Used to assess the health of the survey triggering process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected: 
+
+- **CampaignId** – Identifier of a service delivered campaign
+
+- **SurveyId** – Unique instance of a campaign
+
+- **SurveyType** – Identifies the type of survey
+
+
+#### Survey.UI.Form.Submit
+
+Tracks when a survey is submitted. Used to assess the health of the survey submission process as well as to ensure the signal used to analyze customer issues and health is working properly.
+
+The following fields are collected: 
+
+- **CampaignId** – Identifier of a service delivered campaign
+
+- **SurveyId** – Unique instance of a campaign
+
+- **SurveyType** – Identifies the type of survey
+
+
 #### watchAppV2
 
 This event allows us to detect and fix possible issues with capabilities on your Apple Watch such as receiving notifications and responding to emails.
@@ -12510,16 +12453,6 @@ The following fields are collected:
 
 - **TypeId** - GUID for the interface on which this method being called
 
-#### Office.iOS.Paywall.FailedScreen.RetryButtonTap
-
-This usage telemetry is collected to know when the Purchase/Provisioning/Activation failed, and the user tapped the “Retry” button.  Used to troubleshoot purchase error scenarios that lead to retry and improve process reliability.
-
-The following fields are collected:
-
-- **failureReason** - String – Indicates what the failure was the user is retrying. Like “provisioningFailed”, “purchaseFailed”, “activationFailed”.
-
-- **productid** - String – App Store ID of the product for which user is retrying the failed request
-
 
 #### Office.Manageability.Service.ApplyPolicy
 
@@ -12649,6 +12582,8 @@ The following fields are collected:
   
 - **BootToStart** - Whether the user has chosen to show the start screen when this application starts.
 
+- **ChildProcessCount** – The number of child processes that have been launched by the application. (Windows only)
+
 - **ColdBoot** - Whether this is the first time the Office application ran after a system restart or application binary had to be loaded from disk. (macOS/iOS only)
 
 - **DeviceModel** - The model of the device. (macOS/iOS only)
@@ -12663,6 +12598,10 @@ The following fields are collected:
 
 - **FreeMemoryPercentage** – What percent of memory on the device is free. (Windows only)
 
+- **HandleCount** – The number of operating system handles the process has opened. (Windows only)
+
+- **HardFaultCount** – The number of hard page faults for the process. (Windows only)
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
@@ -12671,13 +12610,23 @@ The following fields are collected:
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
+- **OtherOperationCount** – The number of I/O operations performed, other than read and write operations. (Windows only)
+
+- **OtherTransferCount** – The number of bytes transferred during operations other than read and write operations. (Windows only)
+
 - **PageFaultCount** – The number of page faults for the process. (Windows only)
 
 - **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
 
 - **PrivateCommitUsageMB** – The Commit Charge (i.e., the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
 
+- **PrivateWorkingSetMB** – The amount of memory in megabytes in the process’s working set that isn’t shared with other processes. (Windows only)
+
 - **ProcessorCount** – The number of processors on the device. (macOS/iOS only)
+
+- **ReadOperationCount** – The number of read operations performed. (Windows only)
+
+- **ReadTransferCount** – The number of bytes read.
 
 - **TotalPhysicalMemory** – The total amount of physical memory on the device. (macOS/iOS only)
 
@@ -12686,6 +12635,10 @@ The following fields are collected:
 - **VirtualSetMB** - The amount of memory in megabytes in the process's virtual set. (macOS/iOS only)
 
 - **WorkingSetPeakMB** - The largest amount of memory in megabytes that was ever in the process's working set so far.
+
+- **WriteOperationCount** – The number of write operations performed. (Windows only)
+
+- **WriteTransferCount** – The number of bytes written. (Windows only)
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
@@ -13885,6 +13838,30 @@ The following fields are collected:
   - **Data\_TagCount** - The count of each failure that occurred
 
   - **Data\_TagID** - The identifier of the failure that occurred
+
+
+#### Office.OfficeMobile.PersonalizedCampaigning.Errors
+
+To raise awareness about the features of Office mobile that users have not yet explored, Office mobile integrates with IRIS to support in-app and push notifications. In case of in-app notifications, it captures errors that happen while pulling or displaying notification and when user interactions with the notification as well as providing feedback to IRIS server. In case of push notifications, it captures errors that happen while displaying notification, and when user interacts with the notification.
+
+The following fields are collected:
+
+- **Class** - Name of the class where error occurred
+
+- **CreativeId** - The ID of notification which uniquely identifies the notification and its content.
+
+- **ErrorDetails** - Details on the error
+
+- **ErrorMessage** - Error message.
+
+- **ErrorReason** - The underlying reason for the error
+
+- **Method** - Name of the function where error occurred.
+
+- **RequestParams** - Request parameters used when contacting the IRIS server to pull the notification.
+
+- **SurfaceId** - ID of the surface where the notification will be shown.
+
 
 #### Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 
