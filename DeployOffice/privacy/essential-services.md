@@ -3735,7 +3735,7 @@ The following fields are collected:
 
 - **ErrorType** - Reason of failure, such as "AlreadyRedeemedByOther".
 
-- **InAFOFlow** - A Boolean indicating if we are in the AFO redemption flow.
+- **InAFOFlow** - A Boolean indicating if we are in the Activation for Office redemption flow.
 
 - **StatusCode** - One-word result of the service call, such as "Created".
 
@@ -3893,17 +3893,17 @@ This event collects no fields.
 
 ### Office.Licensing.OOBE.HandleDigitalAttachFailure
 
-This event is triggered when the abovementioned service check didn’t find a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach failure.
+This event is triggered when the service check (see Office.Licensing.OOBE.SearchForDigitalAttach) didn’t find a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach failure.
 
 The following fields are collected:
 
-- **Activity_Result_Tag** tells us how we transition user to various Error states.
-   - 0x222e318f - We should keep searching AFO offer.
-   - 0x222e318e - We will fall back to OEM mode in this session for when this device doesn’t come with any Digital Attach Offer.
+- **Activity_Result_Tag** tells us how we transition user to various error states.
+   - 0x222e318f - We should keep searching Activation for Office offer.
+   - 0x222e318e - We will fall back to OEM mode in this session for when this device doesn’t come with any Digital Attach offer.
    - 0x222e318d - No internet connectivity, which will lead us to show NoInternetConnectivity dialog to user 
    - 0 - We will show various error UI to user based on their specific error code.
 
-- **Data_DigitalAttachErrorType** - tells us what the specific error code is from the abovementioned service call.
+- **Data_DigitalAttachErrorType** - tells us what the specific error code is from the service call.
 
 - **Data_FallbackFlight** - tells us if the UseAFOAsFallBack flight is turned ON or not.
 
@@ -3915,9 +3915,9 @@ This event is triggered when the service check finds a claimable Digital Attach 
 The following fields are collected:
 
 - **Activity_Result_Tag** - tells us how we handle the Digital Attach Success scenarios.
-   - 0 - We’re able to auto load identity and we’ve shown “YGO w/ account” UI to the user.
-   - 0x222e3191 - We’re not able to auto load identity, so we’re going to show them “YGO w/o account” UI.
-   - 0x222e3193 - We’ve shown “YGO w/o account” UI to the user, or we don’t need to show any YGO UI to the user because it’s a device-based offer.
+   - 0 - We’re able to auto load identity and we’ve shown the "You've got Office" (with account) UI to the user.
+   - 0x222e3191 - We’re not able to auto load identity, so we’re going to show them the "You've got Office" (without account) UI.
+   - 0x222e3193 - We’ve shown the "You've got Office" (without account) UI to the user, or we don’t need to show any "You've got Office" UI to the user because it’s a device-based offer.
 
 - **Data_IsClaimTypeDevice** - tells us if the claim type of the digital attach offer is device based.
 
@@ -3941,10 +3941,10 @@ Original Equipment Manufacturers (OEM) sell machines that come with Office (one-
 The following fields are collected:
 
 - **Activity_Result_Tag** - tells us the overall result of this service check. 
-   - 0x222e318c	DA Flight is turned OFF, so no service check is made.
+   - 0x222e318c	Digital Attach Flight is turned OFF, so no service check is made.
    - 0x222e318b	The client doesn’t have internet, so no service check is made.
-   - 0x222e318a	Found a redeemable DA offer
-   - 0x222e3189	Found a non-redeemable DA offer
+   - 0x222e318a	Found a redeemable Digital Attach offer
+   - 0x222e3189	Found a non-redeemable Digital Attach offer
 
 - **Data_EnableDAFlight** - tells us if the DA flight that enables this service check is ON or not.
 
@@ -3957,7 +3957,7 @@ The following fields are collected:
 
 - **Data_Continue** - tells us if user clicks “Continue” on the dialog.
 
-- **Activity_Result_Tag**:
+- **Activity_Result_Tag** - tells us the button the user clicked on the dialog.
    - 0x222e319d - User clicks “Retry” on the dialog
    - 0x222e319c - User clicks “Continue” on the dialog
    - 0 - User exits out of the dialog
@@ -3973,7 +3973,7 @@ Original Equipment Manufacturers (OEM) sell machines that come with Office (one-
 
 The following fields are collected:
 
-- **Activity_Result_Tag** -
+- **Activity_Result_Tag** - tells us if an identity was found for the user
    - 0x222e3194 - We’re not able to get user identity (they either cancelled sign-in or authentication failed).
    - 0 - We got an identity from user.
 
@@ -3981,7 +3981,7 @@ The following fields are collected:
 
 - **Data_IsCentennial** - tells us if the running office application is on centennial platform
 
-- **Data_IsForDigitalAttach** - tells us if this dialog is triggered from DA flow or AFO flow.
+- **Data_IsForDigitalAttach** - tells us if this dialog is triggered from Digital Attach flow or Activation for Office flow.
 
 - **Data_IsSubscription** - tells us if the to-be-claimed product is subscription SKU or perpetual SKU
 
@@ -3989,7 +3989,7 @@ The following fields are collected:
 
 - **Data_ProductName** - tells us the product name of the digital attach offer
 
-- **Data_UseInAppRedemption** - tells us if we use in-app redemption of web redemption – this is only relevant to AFO flow.
+- **Data_UseInAppRedemption** - tells us if we use in-app redemption of web redemption – this is only relevant to Activation for Office flow.
 
 
 ### Office.Licensing.OOBE.TryBuyChoice
@@ -4126,7 +4126,7 @@ The following fields are collected:
 
 ### Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the EULA dialog.  As a part of our modernizing AFO feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
+After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the EULA dialog.  As a part of our modernizing Activation for Office feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
 
 The following fields are collected:
 
@@ -4142,9 +4142,9 @@ The following fields are collected:
 
 - **DialogEULA** -  Signal that we showed the ‘Accept EULA’ dialog. 
 
-- **DialogRedemption** - Signal that we showed the AFO redemption dialog.
+- **DialogRedemption** - Signal that we showed the Activation for Office redemption dialog.
 
-- **DialogSignIn** - Signal that we showed the AFO sign-in dialog.
+- **DialogSignIn** - Signal that we showed the Activation for Office sign-in dialog.
 
 - **EmptyRedemptionDefaults** - Signal that we failed to fetch default redemption information.
  
@@ -4156,7 +4156,7 @@ The following fields are collected:
 
 - **OExType** - The error type we get back when identity's sign-in dialog was dismissed.
 
-- **Tag** - Tells us at which step the user exits the AFO redemption process. Possible tags:
+- **Tag** - Tells us at which step the user exits the Activation for Office redemption process. Possible tags:
     - 0x0311380b    User dismissed identity's sign-in dialog from redemption dialog
     - 0x0311380c    Failed to auto-load an identity post user sign-in from redemption dialog
     - 0x03113810    Failed to load the account's demographic information (country code, language,     currency, trial offer, and marketing preferences)
@@ -4171,13 +4171,13 @@ The following fields are collected:
     - 0x2370e3c1	  Go to web for pin redemption
     - 0x2370e3a1 	  Go to web for pin redemption
     - 0x2370e3c0	  Dialog sequence looped caused by user going back and forth in the dialog flow
-    - 0x2370e3a3	  User clicked “Not now” hyperlink which skips the AFO offer for that session
-    - 0x2370e3a2	  User clicked on “Never show this to me” hyperlink which disables the AFO offer
+    - 0x2370e3a3	  User clicked “Not now” hyperlink which skips the Activation for Office offer for that session
+    - 0x2370e3a2	  User clicked on “Never show this to me” hyperlink which disables the Activation for Office offer
 
 
 - **UseInAppRedemption** - Tells us if we're keeping users in-app for redemption or sending them to the web to redeem their fetched pin (pre-populated).
 
-- **UseModernAFO** - Tells us if we're using the new or old AFO experience.
+- **UseModernAFO** - Tells us if we're using the new or old Activation for Office experience.
 
 ### Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4187,7 +4187,7 @@ The following fields are collected:
 
 - **ActiveView** - Tells the dialog ID shown to the user
 
-- **CurrentOOBEMode** - Tells the pre-install mode (OOBE mode such as AFO, OEM etc.)
+- **CurrentOOBEMode** - Tells the pre-install mode (OOBE mode such as Activation for Office, OEM etc.)
 
 - **NotInitializedBeforeWhileAdding** - This is just informational and tells if the event was added to a telemetry manager map without explicitly registering for it
 
