@@ -3946,7 +3946,7 @@ The following fields are collected:
    - 0x222e318a	Found a redeemable Digital Attach offer
    - 0x222e3189	Found a non-redeemable Digital Attach offer
 
-- **Data_EnableDAFlight** - tells us if the DA flight that enables this service check is ON or not.
+- **Data_EnableDAFlight** - tells us if the Digital Attach flight that enables this service check is ON or not.
 
 
 ### Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
