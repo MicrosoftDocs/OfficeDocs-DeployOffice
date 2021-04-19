@@ -3407,6 +3407,92 @@ The following fields are collected:
 - **context** - String – The flow through which the user landed on the in app purchase page
 
 
+### Office.Apple.Licensing.CommonPaywallControl
+
+This event is used to understand the in-app purchase (IAP) experience for the user. It allows us to ensure IAP performs as expected and helps us understand user issues so we can optimize the IAP experience.  Collection occurs through one of the following sub-events.
+
+- **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
+
+   The following fields are collected:
+
+  - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
+  - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+
+- **Office.iOS.Paywall.Paywall.Stats** - Data is collected when the paywall user interface is shown to the user, the duration of the interaction and whether a purchase was attempted, succeeded, or failed. The data is used to measure the performance of the user interface and ensure that it performing as expected. 
+
+   The following fields are collected:
+
+   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **isFRE** - Boolean – Check to see if the First Run Experience or regular UI is showing.
+   - **status** - String – Exit status of Paywall. Like “initiated”, “paymentDone”, “provisionFailed”.
+   - **userDuration** - Double – Duration in milli-seconds the user spent on Paywall
+  
+- **Office.iOS.Paywall.SKUChooser.BuyButtonTap** - Data is collected when user taps the Purchase/Buy Button. The data is used to measure the performance of the button and ensure that it performing as expected.
+
+   The following fields are collected:
+
+   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
+   - **productId** - String – App-store product-id of the product for which the Buy Button was tapped.
+   - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
+
+- **Office.iOS.Paywall.SKUChooser.Stats** - Data collected to see how the user entered the SKU Chooser, how much time the user spends on the SKU Chooser screen and why they exited the SKU Chooser. Using the information, we can ensure that the SKU Chooser is performing as expected, and we will be able to optimize and improve the end user experience.
+
+   The following fields are collected:
+
+   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton”
+   - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+   - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
+
+- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected.
+
+   The following fields are collected:
+
+   - **failureReason** - String – Indicates what the failure was the user is retrying; for example, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
+   - **productId** - String – App Store ID of the product for which user is retrying the failed request.
+
+- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** - Data collected when users tap on “See More Benefits” to see all the services, apps and features included in the purchase. They must expand sections detailing the features for each of the apps. This event collects which features and apps they expanded, along with the duration of time spent. The data is used to ensure that the UI offered to end users to learn about the benefits is performing as expected. 
+
+   The following fields are collected:
+
+   - **appsExpanded** - String – Comma-separated list of services/apps for which the benefits were expanded.
+   - **productId** - String – App Store ID of the product for which user is viewing more benefits offered
+   - **userDuration** - Double – Duration in milli-seconds the user spent on the Benefits Screen.
+
+- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
+
+   The following fields are collected:
+
+   - **productId** - String – App Store ID of the product for which user is viewing all benefits offered.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Usage telemetry to view the end user’s interaction with the UI provided to switch between different SKUs and ensure that it is performing as expected. 
+
+   The following fields are collected:
+
+  - **productId** - String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
+
+- **Office.iOS.Paywall.StoreKit.Response** - Critical engineering telemetry to log the result of purchase attempt triggered manually by user and the App store response to the event. The data is used to measure the status of a purchase attempt and reasons of failure (if any) and take corrective actions to ensure that the IAP and all the entry points as performing as expected.
+
+   The following fields are collected:
+
+   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the App-store response.
+   - **productId** - String – Only for “MakePurchase”, “PendingPurchase”, the app-store ID of the product for which the request was made.
+   - **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
+   - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
+   - **status** - String – Success or Failure, indicating success or failure of the request.
+
+- **Office.iOS.Paywall.Provisioning.Response** - Critical Engineering Telemetry and Contract with Retail Federation Service (RFS) to collect the information provided in this. RFS is the internal service used within Microsoft for crosschecking the purchase. This is used to get the health of the API call made to RFS which would help in understand that the performance of the integration is as expected.  
+
+   The following fields are collected:
+
+   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+   - **productId** - String – App Store ID of the product the request was made for
+   - **status** - String – Success or Failure, indicating if the request succeeded or failed
+
+
 ### Office.Dime.Sdk.Health
 
 This event captures data that helps in monitoring the health of the Dime components. For example, for the in-app purchase flow when a user opts to buy a Microsoft 365 subscription from within the Office app for Android or on devices running Windows.
@@ -3493,29 +3579,6 @@ This event collects free users’ taps on a premium feature that resides behind 
 The following fields are collected:
 
 - **featureId** - TCID for premium feature on which user taps
-
-
-### Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Critical usage telemetry is collected to indicate when the user taps the Purchase/Buy Button.  The data is used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
-
-- **productId** - String – App-store product-id of the product for which the Buy Button was tapped
-
-- **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
-
-### Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
-
-Usage telemetry to know when the user taps “See All Benefits”, after a successful purchase to see the apps and features included in the purchase they just made. The data is used to help develop future enhancement to minimize user interruption during application updates.
-
-The following fields are collected:
-
-- **productId** - String – App Store ID of the product for which user is viewing all benefits offered
 
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
@@ -3672,7 +3735,7 @@ The following fields are collected:
 
 - **ErrorType** - Reason of failure, such as "AlreadyRedeemedByOther".
 
-- **InAFOFlow** - A Boolean indicating if we are in the AFO redemption flow.
+- **InAFOFlow** - A Boolean indicating if we are in the Activation for Office redemption flow.
 
 - **StatusCode** - One-word result of the service call, such as "Created".
 
@@ -3828,6 +3891,107 @@ If we are not able to activate a user for some reason and have to show them a di
 
 This event collects no fields.
 
+### Office.Licensing.OOBE.HandleDigitalAttachFailure
+
+This event is triggered when the service check (see Office.Licensing.OOBE.SearchForDigitalAttach) didn’t find a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach failure.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** tells us how we transition user to various error states.
+   - 0x222e318f - We should keep searching Activation for Office offer.
+   - 0x222e318e - We will fall back to OEM mode in this session for when this device doesn’t come with any Digital Attach offer.
+   - 0x222e318d - No internet connectivity, which will lead us to show NoInternetConnectivity dialog to user 
+   - 0 - We will show various error UI to user based on their specific error code.
+
+- **Data_DigitalAttachErrorType** - tells us what the specific error code is from the service call.
+
+- **Data_FallbackFlight** - tells us if the UseAFOAsFallBack flight is turned ON or not.
+
+
+### Office.Licensing.OOBE.HandleDigitalAttachSuccess
+
+This event is triggered when the service check finds a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach success.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** - tells us how we handle the Digital Attach Success scenarios.
+   - 0 - We’re able to auto load identity and we’ve shown the "You've got Office" (with account) UI to the user.
+   - 0x222e3191 - We’re not able to auto load identity, so we’re going to show them the "You've got Office" (without account) UI.
+   - 0x222e3193 - We’ve shown the "You've got Office" (without account) UI to the user, or we don’t need to show any "You've got Office" UI to the user because it’s a device-based offer.
+
+- **Data_IsClaimTypeDevice** - tells us if the claim type of the digital attach offer is device based.
+
+### Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is already signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+
+The following fields are collected:
+
+- **Data_ExpirationDate** - tells us the expiration date for the subscription offer
+
+- **Data_IsSubscription** - tells us if the to-be-claimed product is subscription SKU or perpetual SKU
+
+- **Data_ProductName** - tells us the product name of the digital attach offer
+
+
+### Office.Licensing.OOBE.SearchForDigitalAttach
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. Machines that are setup with a specific regkey (OOBEMode: OEMTA) might have an Office offer digitally attached to it. When we boot Office, we perform service checks to see if a digitally attached Office offer is found. This activity is instrumented to track this. 
+
+The following fields are collected:
+
+- **Activity_Result_Tag** - tells us the overall result of this service check. 
+   - 0x222e318c	Digital Attach Flight is turned OFF, so no service check is made.
+   - 0x222e318b	The client doesn’t have internet, so no service check is made.
+   - 0x222e318a	Found a redeemable Digital Attach offer
+   - 0x222e3189	Found a non-redeemable Digital Attach offer
+
+- **Data_EnableDAFlight** - tells us if the Digital Attach flight that enables this service check is ON or not.
+
+
+### Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event is triggered when an error occurs in the Digital Attach redemption and activation flow for OEM PCs that come pre-entitled with Office.  We use this data to monitor the health of the systems and services and fix issues related the OEM Office activation flow.
+
+The following fields are collected:
+
+- **Data_Continue** - tells us if user clicks “Continue” on the dialog.
+
+- **Activity_Result_Tag** - tells us the button the user clicked on the dialog.
+   - 0x222e319d - User clicks “Retry” on the dialog
+   - 0x222e319c - User clicks “Continue” on the dialog
+   - 0 - User exits out of the dialog
+
+- **Data_IsForDigitalAttach** - tells us which platform and workflow the user is on – Legacy (Activation for Office (AFO)) or Modern (Digital Attach).
+
+- **Data_Retry** - tells us if the user clicks “Retry” on the dialog.
+
+
+### Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
+
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is not signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** - tells us if an identity was found for the user
+   - 0x222e3194 - We’re not able to get user identity (they either cancelled sign-in or authentication failed).
+   - 0 - We got an identity from user.
+
+- **Data_ExpirationDate** - tells us the expiration date for the subscription offer
+
+- **Data_IsCentennial** - tells us if the running office application is on centennial platform
+
+- **Data_IsForDigitalAttach** - tells us if this dialog is triggered from Digital Attach flow or Activation for Office flow.
+
+- **Data_IsSubscription** - tells us if the to-be-claimed product is subscription SKU or perpetual SKU
+
+- **Data_OExType** - tells us if user exits out the dialog after they click ChangeAccount link
+
+- **Data_ProductName** - tells us the product name of the digital attach offer
+
+- **Data_UseInAppRedemption** - tells us if we use in-app redemption of web redemption – this is only relevant to Activation for Office flow.
+
+
 ### Office.Licensing.OOBE.TryBuyChoice
 
 Users with pre-installed Office on new machines who have no Office entitlement are shown a dialog through which they can try, buy or enter a product key to get licensed. This event captures the user action on the dialog. This event is used to track the user action taken on the dialog shown to users with no Office entitlement where Office was pre-installed on the machine and helps determining if the user is licensed or unlicensed by design.
@@ -3962,7 +4126,7 @@ The following fields are collected:
 
 ### Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the EULA dialog.  As a part of our modernizing AFO feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
+After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the EULA dialog.  As a part of our modernizing Activation for Office feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
 
 The following fields are collected:
 
@@ -3978,9 +4142,9 @@ The following fields are collected:
 
 - **DialogEULA** -  Signal that we showed the ‘Accept EULA’ dialog. 
 
-- **DialogRedemption** - Signal that we showed the AFO redemption dialog.
+- **DialogRedemption** - Signal that we showed the Activation for Office redemption dialog.
 
-- **DialogSignIn** - Signal that we showed the AFO sign-in dialog.
+- **DialogSignIn** - Signal that we showed the Activation for Office sign-in dialog.
 
 - **EmptyRedemptionDefaults** - Signal that we failed to fetch default redemption information.
  
@@ -3992,7 +4156,7 @@ The following fields are collected:
 
 - **OExType** - The error type we get back when identity's sign-in dialog was dismissed.
 
-- **Tag** - Tells us at which step the user exits the AFO redemption process. Possible tags:
+- **Tag** - Tells us at which step the user exits the Activation for Office redemption process. Possible tags:
     - 0x0311380b    User dismissed identity's sign-in dialog from redemption dialog
     - 0x0311380c    Failed to auto-load an identity post user sign-in from redemption dialog
     - 0x03113810    Failed to load the account's demographic information (country code, language,     currency, trial offer, and marketing preferences)
@@ -4007,13 +4171,13 @@ The following fields are collected:
     - 0x2370e3c1	  Go to web for pin redemption
     - 0x2370e3a1 	  Go to web for pin redemption
     - 0x2370e3c0	  Dialog sequence looped caused by user going back and forth in the dialog flow
-    - 0x2370e3a3	  User clicked “Not now” hyperlink which skips the AFO offer for that session
-    - 0x2370e3a2	  User clicked on “Never show this to me” hyperlink which disables the AFO offer
+    - 0x2370e3a3	  User clicked “Not now” hyperlink which skips the Activation for Office offer for that session
+    - 0x2370e3a2	  User clicked on “Never show this to me” hyperlink which disables the Activation for Office offer
 
 
 - **UseInAppRedemption** - Tells us if we're keeping users in-app for redemption or sending them to the web to redeem their fetched pin (pre-populated).
 
-- **UseModernAFO** - Tells us if we're using the new or old AFO experience.
+- **UseModernAFO** - Tells us if we're using the new or old Activation for Office experience.
 
 ### Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4023,7 +4187,7 @@ The following fields are collected:
 
 - **ActiveView** - Tells the dialog ID shown to the user
 
-- **CurrentOOBEMode** - Tells the pre-install mode (OOBE mode such as AFO, OEM etc.)
+- **CurrentOOBEMode** - Tells the pre-install mode (OOBE mode such as Activation for Office, OEM etc.)
 
 - **NotInitializedBeforeWhileAdding** - This is just informational and tells if the event was added to a telemetry manager map without explicitly registering for it
 
@@ -10701,6 +10865,55 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### installedapp.respondedcoreappleevent
+
+This event indicates Microsoft Auto Update (MAU) has received an Apple event response code from a registered application to terminate the application in order to proceed with pending application update. This event is used to help develop future enhancement to minimize user interruption during application updates. 
+
+The following fields are collected:
+
+- **App** - The application process sending the event
+
+- **AppID** - Identifier for the application being updated
+
+- **AppInfo_Language** - The language the application is running under
+
+- **AppleEventClass** - Indicates type of event being sent/acknowledged
+
+- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+
+- **AppVersionLong** - The application version
+
+- **Channel** - The preference for audience
+
+- **Device_NetworkCountry** - The device country (based on IP address)
+
+- **DeviceID** - The device identifier
+
+- **DeviceInfo_Model** - The hardware model of the device
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, wired, unknown)
+
+- **DeviceInfo_OsBuild** - The version of the operating system
+
+- **Event_ReceivedTime** - The time at which telemetry was received
+
+- **EventInfo_Name** - The name of the telemetry event being logged
+
+- **EventInfo_Time** -	 The time at which the logged event took place 
+
+- **HowToCheck** - How to check setting
+
+- **Payload** - Contains retry count
+
+- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** - The first 3 octets of the IP address
+
+- **SessionId** - The identifier for the session
+
+- **UpdateID** - The update identifier
+
+
 ### installedapp.sendcoreappleevent
 
 This event indicates Microsoft Auto Update (MAU) is sending an Apple event to a registered application to terminate the application in order to proceed with pending application update. This event is currently being used to help develop future enhancement to minimize user interruption during application updates. 
@@ -15761,39 +15974,6 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
-
-### Office.iOS.Paywall.Provisioning.Response
-
-Product telemetry used for reconciliation of purchase transaction information with the Microsoft commerce system to enable associated subscription benefits. Used to facilitate the transaction logging and subscription provisioning for future reference and internal reconciliation.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
-
-- **productId** - String – App Store ID of the product the request was made for
-
-- **status** - String – Success or Failure, indicating if the request succeeded or failed
-
-
-### Office.iOS.Paywall.StoreKit.Response
-
-The data is collected as critical engineering telemetry to log the result of purchase attempt triggered manually by user. The product telemetry is used for reconciliation of purchase transaction information with the Microsoft commerce system to enable associated subscription benefits.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the App-store response
-
-- **productId** - String – Only for “MakePurchase”, “PendingPurchase”, the app-store ID of the product for which the request was made.
-
-- **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
-
-- **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
-
-- **status** - String – Success or Failure, indicating success or failure of the request
 
 ### Office.OneNote.GetSharePointIdsForDocument
 
