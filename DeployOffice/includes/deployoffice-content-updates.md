@@ -2,6 +2,17 @@
 
 
 
+## Week of April 12, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/15/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 4/15/2021 | [Inventory](/DeployOffice/admincenter/inventory) | modified |
+| 4/15/2021 | [Security Currency](/DeployOffice/admincenter/security-update-status) | modified |
+| 4/15/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
+
+
 ## Week of April 05, 2021
 
 
