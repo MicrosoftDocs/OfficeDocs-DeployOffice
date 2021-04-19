@@ -3581,29 +3581,6 @@ The following fields are collected:
 - **featureId** - TCID for premium feature on which user taps
 
 
-### Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Critical usage telemetry is collected to indicate when the user taps the Purchase/Buy Button.  The data is used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
-
-- **productId** - String – App-store product-id of the product for which the Buy Button was tapped
-
-- **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
-
-### Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
-
-Usage telemetry to know when the user taps “See All Benefits”, after a successful purchase to see the apps and features included in the purchase they just made. The data is used to help develop future enhancement to minimize user interruption during application updates.
-
-The following fields are collected:
-
-- **productId** - String – App Store ID of the product for which user is viewing all benefits offered
-
-
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
 This is collected when the user gets licensed and accepts EULA for the current license
@@ -15997,39 +15974,6 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
-
-### Office.iOS.Paywall.Provisioning.Response
-
-Product telemetry used for reconciliation of purchase transaction information with the Microsoft commerce system to enable associated subscription benefits. Used to facilitate the transaction logging and subscription provisioning for future reference and internal reconciliation.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
-
-- **productId** - String – App Store ID of the product the request was made for
-
-- **status** - String – Success or Failure, indicating if the request succeeded or failed
-
-
-### Office.iOS.Paywall.StoreKit.Response
-
-The data is collected as critical engineering telemetry to log the result of purchase attempt triggered manually by user. The product telemetry is used for reconciliation of purchase transaction information with the Microsoft commerce system to enable associated subscription benefits.
-
-The following fields are collected:
-
-- **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-
-- **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the App-store response
-
-- **productId** - String – Only for “MakePurchase”, “PendingPurchase”, the app-store ID of the product for which the request was made.
-
-- **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
-
-- **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
-
-- **status** - String – Success or Failure, indicating success or failure of the request
 
 ### Office.OneNote.GetSharePointIdsForDocument
 
