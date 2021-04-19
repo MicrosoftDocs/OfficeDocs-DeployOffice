@@ -13848,7 +13848,7 @@ The following fields are collected:
 
 - **Class** - Name of the class where error occurred
 
-- **CreativeId** - The id of notification which uniquely identifies the notification and its content.
+- **CreativeId** - The ID of notification which uniquely identifies the notification and its content.
 
 - **ErrorDetails** - Details on the error
 
