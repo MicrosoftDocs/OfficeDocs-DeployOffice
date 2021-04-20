@@ -38,7 +38,7 @@ The following table provides a list of connected experiences that analyze your c
 |Class Notebook add-ins (OneNote)|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 |Designer (Word for the web)|[Use Designer to create more polished documents](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
-| Dictation  | [Dictate your documents Word](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+| Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor<sup>1</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Friendly links in Outlook |[Friendlier link names in email](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
