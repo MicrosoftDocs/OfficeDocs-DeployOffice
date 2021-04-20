@@ -31,16 +31,16 @@ The following table provides a list of connected experiences that analyze your c
 | **Name**   | **More information**   |
 | ----------- | ------------------ |
 | *3D Maps*\*    | [Get started with 3D Maps](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Analyze Data (previously named Ideas) | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 |Auto Fix|[Align your content quickly and easily with Auto Fix](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Chart recommendations (Excel for the web)|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Class Notebook add-ins (OneNote)|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 |Designer (Word for the web)|[Use Designer to create more polished documents](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
-| Dictation  | [Dictate your documents Word](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+| Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor<sup>1</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Friendly links in Outlook |[Friendlier link names in email](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
-| Ideas     | [Ideas in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 |Learning Tools|[Learning Tools](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
@@ -98,6 +98,7 @@ The following table provides a list of connected experiences that download onlin
 | Templates  | [Download free, pre-built templates](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Travel time estimates in Up Next*\*|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) card at the top of your inbox.<br/><br/> [What are Time to Leave notifications?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Weather Bar*\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+|*Weather on calendar*\* (Outlook mobile)|[How do I turn on weather on calendar on Outlook mobile?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
 
 > [!NOTE]
 >\*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.

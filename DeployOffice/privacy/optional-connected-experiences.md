@@ -38,6 +38,7 @@ Bing powers the following experiences in Outlook for iOS and Android:
 - **Location suggestions:**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
 - **Interesting Calendars:**   You can [subscribe](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) to calendars about your favorite sports teams or TV shows.
 - **Travel time in Up Next:** Your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
+- **Weather on calendar:** The [weather forecast](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) for your current location will appear at the top of your calendar screen.
 
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
 
