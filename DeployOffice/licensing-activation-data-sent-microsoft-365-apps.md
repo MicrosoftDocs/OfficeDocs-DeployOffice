@@ -9,7 +9,6 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ms.assetid: f7d07a88-35c3-48f5-b30e-c842f2d911a5
 description: "Describes what data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes."
 ---
 

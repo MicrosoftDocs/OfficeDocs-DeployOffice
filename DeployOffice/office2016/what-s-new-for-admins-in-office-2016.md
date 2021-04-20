@@ -11,7 +11,6 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 9b4d1da4-c3d7-46ab-8b63-3efc38ca8057
 description: "Provides IT admins with an overview of the new features and capabilities in Office 2016."
 ---
 

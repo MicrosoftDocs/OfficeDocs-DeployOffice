@@ -9,7 +9,6 @@ ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: 
 ms.custom: Ent_Office_ProPlus
-ms.assetid:
 description: "Microsoft 365 change guide"
 ---
 

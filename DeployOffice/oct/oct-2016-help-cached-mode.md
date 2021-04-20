@@ -10,7 +10,6 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 29eead6a-7cdc-4787-aa79-c71a2cf702b4
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
