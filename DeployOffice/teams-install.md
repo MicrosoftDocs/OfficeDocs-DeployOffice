@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365

@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 9/8/2017
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
