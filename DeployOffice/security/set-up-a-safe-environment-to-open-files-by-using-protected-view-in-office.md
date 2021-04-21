@@ -20,11 +20,10 @@ description: "Explains how to use Protected View settings to open documents, pre
   
   
 Change how the sandbox preview feature in Office 2016 behaves by configuring Protected View settings. Protected View is a security feature in Office 2016 that helps reduce exploits to your computer by opening files in a restricted environment so they can be examined before they are opened for editing in Excel 2016, PowerPoint 2016, or Word 2016.
-  
-|||
-|:-----|:-----|
-|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you are looking for information on protected view in individual Office 2016 applications, see [What is Protected View](https://go.microsoft.com/fwlink/p/?LinkId=393945) instead.  <br/> |
-|![Are you an admin?](../images/IconAdmin.jpg)           <br/> |If you are an IT Professional and planning to configure Protected View settings for Office 2016 in your organization, **you're at the right place**, keep reading.  <br/> |
+
+> [!NOTE]
+> - If you are looking for information on protected view in individual Office 2016 applications, see [What is Protected View](https://go.microsoft.com/fwlink/p/?LinkId=393945) instead.
+> - If you are an IT Professional and planning to configure Protected View settings for Office 2016 in your organization, you're at the right place, so keep reading.
    
 
 <a name="about"> </a>
@@ -141,8 +140,7 @@ HKEY_CURRENT_USER\Software\Microsoft\Office\Common\Security\TrustedStoreApps\
   
 Contact the developer of the application in order to obtain the PFN of the application you want to add to the Trusted Microsoft Store application. This is a global setting that applies to Excel 2016, PowerPoint 2016, and Word 2016.
   
-## Related topics
-[Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
-  
-[Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)
+## Related articles
+- [Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
+- [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)
 

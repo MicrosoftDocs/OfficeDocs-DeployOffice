@@ -20,7 +20,7 @@ By default, when Excel opens an encrypted file, Excel tries to use a default pas
 
 Use the following information to configure a policy:
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** <br/> | com.microsoft.Excel  <br/> |
 |**Key** <br/> |TryDefaultPassword  <br/> |

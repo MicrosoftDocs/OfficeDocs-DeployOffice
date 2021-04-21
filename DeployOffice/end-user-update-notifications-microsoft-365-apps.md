@@ -23,7 +23,7 @@ Updates can only be applied when Office programs aren't running. Therefore, noti
 
 After updates are downloaded to the computer that is running Microsoft 365 Apps, Office attempts to apply the updates. If, after four days, the updates still aren't applied, a message appears in the notification area in Windows, telling the user that updates are available.
   
-![Office updates are available](images/a5ed310f-432c-49de-a810-38962b552531.jpg)
+!["Office updates are available" notification shown on the taskbar](images/a5ed310f-432c-49de-a810-38962b552531.jpg)
   
 The message disappears in a few seconds, but the Office icon stays visible in the notification area. If the user clicks the message, Office tries to apply the updates. If any Office programs are currently being used, they must be closed.
   
@@ -35,7 +35,7 @@ Users can choose **Update now** to apply the updates. The user is then prompted 
   
 Users also see notifications if they go to **File > Account** in an Office program. The **Office Updates** section turns yellow if updates are ready to be applied.
   
-![Office updates are available](images/574a065f-f666-481f-b2f7-5cc56d7c97f9.jpg)
+![Updates available notification that is shown under File > Account > Update Options](images/574a065f-f666-481f-b2f7-5cc56d7c97f9.jpg)
   
 If you don't want your users to see these types of notifications, you can [use Group Policy to hide the notifications](configure-update-settings-microsoft-365-apps.md).
   

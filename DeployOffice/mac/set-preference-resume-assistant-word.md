@@ -25,7 +25,7 @@ In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/o
 
 If you're an admin, you may want to prevent this option from being shown to users. Use the following information to configure a policy:
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** <br/> | com.microsoft.Word  <br/> |
 |**Key** <br/> |DisableResumeAssistant  <br/> |
