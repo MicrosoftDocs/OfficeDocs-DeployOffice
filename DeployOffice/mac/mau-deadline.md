@@ -49,7 +49,7 @@ The following are the preference settings for configuring a deadline. These keys
 
 To configure a deadline that is a certain number of days after the update is detected, use the following preference setting.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.DaysBeforeForcedQuit  |
@@ -104,7 +104,7 @@ If you want to configure a deadline of 4 days for Excel and 7 days for PowerPoin
 
 To configure a deadline for a specific date and time, use the following preference setting.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.ApplicationsForcedUpdateSchedule   |
@@ -160,7 +160,7 @@ If you want to configure a specific date and time for a deadline for Word and Ou
 
 To configure how many days in advance of the deadline that Automatic Download and Install mode begins, use the following preference setting.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.StartAutomaticUpdates  |
