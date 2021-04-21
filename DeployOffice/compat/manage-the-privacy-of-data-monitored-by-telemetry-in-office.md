@@ -180,7 +180,7 @@ The policy settings that are listed in the following table are available in the 
 
 **Agent policy settings that disable logging**
 
-|**Setting**||
+|**Setting**|**Description**|
 |:-----|:-----|
 |Turn on telemetry data collection  <br/> |Set this setting to Disabled to turn off data collection.  <br/> |
 |Turn on data uploading for Office Telemetry Agent  <br/> |Set this setting to Disabled to stop uploading data to the shared folder.  <br/> |
