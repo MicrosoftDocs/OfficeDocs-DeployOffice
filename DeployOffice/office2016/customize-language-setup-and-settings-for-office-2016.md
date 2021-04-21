@@ -5,12 +5,11 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 1c423975-1848-4060-999c-cafcadf3047d
 description: "Learn how to customize languages for Office 2016."
 ---
 

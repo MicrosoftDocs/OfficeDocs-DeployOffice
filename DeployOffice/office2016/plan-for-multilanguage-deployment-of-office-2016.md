@@ -5,12 +5,11 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 11/26/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: f458a0cb-a3a5-4d4a-9f98-a4a81a17ee3a
 description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."
 ---
 

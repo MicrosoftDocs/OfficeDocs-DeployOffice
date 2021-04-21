@@ -4,7 +4,7 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 

@@ -11,7 +11,6 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
-ms.assetid: 
 description: "You can use Security Policy Advisor to receive and implement security policy recommendations."
 ---
 

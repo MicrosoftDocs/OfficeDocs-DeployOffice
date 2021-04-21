@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -45,7 +45,7 @@ The Office compatibility tools address common issues that can make Office deploy
   
 **Phases of the Office compatibility process**
 
-|||
+|Phase|Description|
 |:-----|:-----|
 |![Icon for the Discover phase](../images/ORK_Compat_Discover_reverse.png)|Discover what is being used, by whom, and how often. This helps you determine what to test for compatibility with the version of Office you are upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  <br/> |
 |![Icon for the Rationalize phase](../images/ORK_Compat_Rationalize_reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  <br/> |
@@ -112,7 +112,7 @@ If you haven't worked with business groups yet, this is the time to approach the
   
 **Classifying Office documents and solutions to test**
 
-|||
+|Type of documents and solutions|Testing needed|
 |:-----|:-----|
 |Documents and solutions that IT is accountable for and must keep functioning at all costs  <br/> |**Proactive testing** <br/> These high-priority documents and solutions are tested, fixed, and ready for use on the first day of the Office deployment.  <br/> |
 |Documents and solutions that IT will fix if somebody calls about them  <br/> |**Reactive testing** <br/> These solutions are fixed only when a user reports an issue to your help desk.  <br/> |

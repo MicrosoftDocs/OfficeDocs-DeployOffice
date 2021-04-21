@@ -4,12 +4,12 @@ ms.author: jwhit
 author: jwhit-MSFT
 manager: laurawi
 udience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
+audience: ITPro
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-ms.assetid: e486afce-ad31-4889-87a4-28796751bb86
 description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
 ---
 

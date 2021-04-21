@@ -10,7 +10,6 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: f5fee727-df49-4ef7-b073-dd6c08dfecfa
 description: "Find language identifier and OptionState ID values for identifying and customizing Office 2016 language and proofing tools installations."
 ---
 
