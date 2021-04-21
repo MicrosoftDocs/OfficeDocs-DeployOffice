@@ -28,7 +28,7 @@ If you're an admin, you might want to configure macro security for your users, i
     
 In either case, you can configure this setting by using a preference. The following is the information that you need to set the preference:
   
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** <br/> | com.microsoft.office  <br/> |
 |**Key** <br/> |VisualBasicMacroExecutionState  <br/> |
