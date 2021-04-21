@@ -75,7 +75,7 @@ All notebooks supported by OneNote for Windows 10 are also fully supported by On
 
 ### To exclude OneNote for Windows 10 from a Windows image
 
-To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
+To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
 
 ## Additional information about deploying OneNote
 
