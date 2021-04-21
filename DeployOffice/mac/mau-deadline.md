@@ -34,9 +34,9 @@ When you specify a deadline, you can configure the deadline in either of these t
 
 If you use a specific date and time for the deadline, it’s tied to a specific version that you’re updating to. That means for the next set of updates that Microsoft releases, you would need to configure a new date and time for the deadline.
 
-If you use a certain number of days for the deadline, you can re-use that deadline for future updates that Microsoft releases. The number of days is calculated from when an update is detected by MAU.
+If you use a certain number of days for the deadline, you can reuse that deadline for future updates that Microsoft releases. The number of days is calculated from when an update is detected by MAU.
 
-You can also configure how many days in advance of the deadline that Automatic Download and Install mode begins. This is optional and the default is 3 days (72 hours) before the deadline.
+You can also configure how many days in advance of the deadline that Automatic Download and Install mode begins. This is optional and the default is three days (72 hours) before the deadline.
 
 ## Preference settings for deadlines
 
@@ -49,7 +49,7 @@ The following are the preference settings for configuring a deadline. These keys
 
 To configure a deadline that is a certain number of days after the update is detected, use the following preference setting.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.DaysBeforeForcedQuit  |
@@ -57,7 +57,7 @@ To configure a deadline that is a certain number of days after the update is det
 |**Possible values**  |*various  (example: 5)* |
 |**Comments** | There is no default value. |
 
-For example, if you want to configure a deadline of 5 days after an update for Excel is detected, you can use the following:
+For example, if you want to configure a deadline of five days after an update for Excel is detected, you can use the following:
 
 ```xml
 <key>Applications</key>
@@ -74,7 +74,7 @@ For example, if you want to configure a deadline of 5 days after an update for E
 </dict>
 ```
 
-If you want to configure a deadline of 4 days for Excel and 7 days for PowerPoint, you can use the following:
+If you want to configure a deadline of four days for Excel and seven days for PowerPoint, you can use the following:
 
 ```xml
 <key>Applications</key>
@@ -104,7 +104,7 @@ If you want to configure a deadline of 4 days for Excel and 7 days for PowerPoin
 
 To configure a deadline for a specific date and time, use the following preference setting.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.ApplicationsForcedUpdateSchedule   |
@@ -160,7 +160,7 @@ If you want to configure a specific date and time for a deadline for Word and Ou
 
 To configure how many days in advance of the deadline that Automatic Download and Install mode begins, use the following preference setting.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Domain** | com.microsoft.autoupdate2  |
 |**Key**  |UpdateDeadline.StartAutomaticUpdates  |
@@ -169,7 +169,7 @@ To configure how many days in advance of the deadline that Automatic Download an
 |**Comments** | This is an optional setting. <br/><br/>The default value is 3. <br/><br/> Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
 
 
-For example, if you want to configure Automatic Download and Install mode to being 2 days before the deadline, you can use the following.
+For example, if you want to configure Automatic Download and Install mode to being two days before the deadline, you can use the following.
 
 ```xml
 <key>UpdateDeadline.StartAutomaticUpdates</key> 
@@ -205,6 +205,6 @@ If you configured a [deadline for a specific date and time](#configure-a-deadlin
 
 - Deadlines can be configured regardless of where MAU is looking for the updates. For example, deadlines work if MAU is getting updates directly from the Office Content Delivery Network (CDN) on the internet of if MAU is getting updates from a MAU caching server within your local network.
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
-- If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a deadline of 7 days for all applications, and then specify that the deadline for Excel is 4 days.
+- If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a deadline of seven days for all applications, and then specify that the deadline for Excel is four days.
 - Instead of configuring a specific date and time for a deadline for a specific version, you can configure that deadline to be a certain number of days after that specific version is detected by MAU.
 - If no values are set for UpdateDeadline.DaysBeforeForcedQuit or UpdateDeadline.StartAutomaticUpdates in the user configuration profile or management configuration profile, macOS automatically generates and inserts empty values for those keys in the user configuration profile. This does not set any deadlines.

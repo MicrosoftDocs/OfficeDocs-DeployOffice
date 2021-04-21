@@ -20,11 +20,10 @@ description: "Explains how to use the Office DocRecrypt tool to unlock password 
   
   
 Use Group Policy to push registry changes that associate a certificate with password-protected documents. This certificate information is embedded in the file header. Later, if the password is forgotten or lost, use the DocRecrypt command-line tool and the private key to unlock the file and, optionally, assign a new password.
-  
-|||
-|:-----|:-----|
-|![Are you a user?](../images/Iconforuser.jpg)           <br/> |If you want information about passwords in a personal copy of Office 2016, [Add or remove protection in your document, workbook, or presentation](https://go.microsoft.com/fwlink/p/?LinkId=268111). <br/> |
-|![Are you an admin?](../images/IconAdmin.jpg)           <br/> |If you are an IT Professional looking to remove or reset passwords in Office 2016 files within your organization, for example if an employee has left the organization and you do not know the password, you're at the right place, keep reading.  <br/> |
+
+> [!NOTE]
+> - If you want information about passwords in a personal copy of Office 2016, see [Protect a document with a password](https://support.microsoft.com/topic/05084cc3-300d-4c1a-8416-38d3e37d6826) or [Protect an Excel file](https://support.microsoft.com/office/7359d4ae-7213-4ac2-b058-f75e9311b599). 
+> - If you are an IT Professional looking to remove or reset passwords in Office 2016 files within your organization, for example if an employee has left the organization and you do not know the password, you're at the right place, so keep reading. |
    
     
 <a name="BKMK_Overview"> </a>
@@ -41,7 +40,7 @@ There are many reasons why users may want or have to password protect a Word, Ex
     
 - Media professionals, and scientists who work on presentations to key researchers in their fields, want to make sure their breakthroughs do not leak to the public before their major announcements.
     
-Previously, if the original creator of a file password either forgot the password or left the organization, the file was rendered unrecoverable. By using Office 2016 and an escrow key, which is generated from your company or organization's private key certificate store, an IT admin can "unlock" the file for a user and then either leave the file without password protection, or assign a new password to the file. You, the IT admin, are the keeper of the escrow key which is generated from your company or organization's private key certificate store. You can silently push the public key information to client computers one time through a registry key setting that you can manually create or you can create it through a Group Policy script. When a user later creates a password-protected Word, Excel, or PowerPoint file, this public key is included in the file header. Later, an IT pro can use the Office DocRecrypt tool to remove the password that is attached to the file, and then, optionally, protect the file by using a new password. To do this, the IT pro must have  *all*  the following: 
+Previously, if the original creator of a file password either forgot the password or left the organization, the file was rendered unrecoverable. By using Office 2016 and an escrow key, which is generated from your company or organization's private key certificate store, an IT admin can "unlock" the file for a user and then either leave the file without password protection, or assign a new password to the file. You, the IT admin, are the keeper of the escrow key, which is generated from your company or organization's private key certificate store. You can silently push the public key information to client computers one time through a registry key setting that you can manually create or you can create it through a Group Policy script. When a user later creates a password-protected Word, Excel, or PowerPoint file, this public key is included in the file header. Later, an IT pro can use the Office DocRecrypt tool to remove the password that is attached to the file, and then, optionally, protect the file by using a new password. To do this, the IT pro must have  *all*  the following: 
   
 - The new Office DocRecrypt tool
     
