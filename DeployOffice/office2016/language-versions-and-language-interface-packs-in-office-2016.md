@@ -10,7 +10,6 @@ ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 9994905c-9fe9-4085-9f77-924dbaa38764
 description: "Learn about the language packs and language interface packs that are available for Office."
 ---
 

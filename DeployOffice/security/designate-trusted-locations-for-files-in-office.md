@@ -5,12 +5,11 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: 5b677942-4aa4-4127-a247-b1cfd86912a9
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use a designate a folder on a user's computer or a network share as a trusted location to help differentiate safe files from potentially harmful files in Office."
 ---

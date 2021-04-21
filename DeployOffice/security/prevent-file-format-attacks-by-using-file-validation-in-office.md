@@ -5,12 +5,11 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 9/21/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: 17f92cf7-75e3-47e1-8383-1ba19ae64e8d
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how you can prevent file format attacks using file validation in Office."
 ---

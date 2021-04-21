@@ -5,12 +5,11 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 9/8/2017
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: 92a8dc04-47c7-4946-83ee-4c0ecaff440a
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Information Rights Management (IRM) in Office to specify permission for accessing and using sensitive documents and messages."
 ---

@@ -5,12 +5,11 @@ author: DHB-MSFT
 manager: laurawi
 ms.date: 8/28/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 32d33020-c00b-4a1e-b586-c407ec9fc61e
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
