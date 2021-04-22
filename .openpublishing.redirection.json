@@ -421,6 +421,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "DeployOffice/office2021/index.md",
+      "redirect_url": "overview-ltsc-preview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "DeployOffice/about-office-365-proplus-in-the-enterprise.md",
       "redirect_url": "/deployoffice/about-microsoft-365-apps",
       "redirect_document_id": true
