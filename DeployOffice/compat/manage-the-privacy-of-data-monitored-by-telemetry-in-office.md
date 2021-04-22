@@ -70,7 +70,7 @@ Actual file details on the monitored client computer
 |:-----|:-----|:-----|:-----|
 |#1 |Resume_Contoso.xlsx  |C:\Users\John\Documents |Resume_Contoso.docx  |
 |#2|Merger_Contoso.docx   |\\\FileShare\Operations\FY2018   |Merger_Contoso.docx   |
-|#3|FY2018_Merger.xlsx   |http:\\\sharepoint\sites\HR\SharedDocuments   |FY2018_Merger.xlsx   |
+|#3|FY2018_Merger.xlsx   |https://sharepoint/sites/HR/SharedDocuments   |FY2018_Merger.xlsx   |
 |#4 |10 cures for diseases.pptx   |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD   |10 cures for diseases   |
 
 Data that is sent to the shared folder after you enable file obfuscation
@@ -79,7 +79,7 @@ Data that is sent to the shared folder after you enable file obfuscation
 |:-----|:-----|:-----|:-----|
 |#1  |Re\*.xlsx   |C:\\*   |\*  |
 |#2 |Me\*.docx   |\\\FileShare\\*   |\*   |
-|#3 |FY\*.xlsx   |http://sharepoint/\*   |\*   |
+|#3 |FY\*.xlsx   |https://sharepoint/*   |\*   |
 |#4|10\*.pptx   |Outlook:\*   |\*   |
 
 #### To enable file obfuscation by using the registry
