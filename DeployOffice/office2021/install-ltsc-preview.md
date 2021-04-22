@@ -276,7 +276,7 @@ Therefore, we recommend that you use the preview products only for testing purpo
 
 If you want to provide feedback about an Office app or feature, go to **File** > **Feedback** in that app.
 
-If you have questions about Office LTSC Preview or want to provide additional feedback, go to the [Office LTSC 2021 Preview forum](https://answers.microsoft.com/msoffice/forum/msoffice_LTSC) on Microsoft Community.
+If you have questions about Office LTSC Preview or want to provide additional feedback, go to the [Office LTSC 2021 Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
 
 > [!NOTE]
 > When Office LTSC, Project 2021, and Visio 2021 are released later this year, they will have five years of Mainstream Support. There won’t be any Extended Support available for these products after the five years of Mainstream Support ends.
