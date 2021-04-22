@@ -64,16 +64,23 @@ The following table describes different ways in which file information is disgui
 
 **Examples of obfuscated file names, file paths, and titles**
 
-||**File name**|**File path**|**Title**|
+Actual file details on the monitored client computer 
+
+|Example|**File name**|**File path**|**Title**|
 |:-----|:-----|:-----|:-----|
-|Actual file details on the monitored client computer  <br/> |Resume_Contoso.xlsx  <br/> |C:\Users\John\Documents  <br/> |Resume_Contoso.docx  <br/> |
-|Merger_Contoso.docx  <br/> |\\\FileShare\Operations\FY2018  <br/> |Merger_Contoso.docx  <br/> |
-|FY2018_Merger.xlsx  <br/> |http:\\\sharepoint\sites\HR\SharedDocuments  <br/> |FY2018_Merger.xlsx  <br/> |
-|10 cures for diseases.pptx  <br/> |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD  <br/> |10 cures for diseases  <br/> |
-|Data that is sent to the shared folder after you enable file obfuscation  <br/> |Re\*.xlsx  <br/> |C:\\*  <br/> |\* <br/> |
-|Me\*.docx  <br/> |\\\FileShare\\*  <br/> |\*  <br/> |
-|FY\*.xlsx  <br/> |http://sharepoint/\*  <br/> |\*  <br/> |
-|10\*.pptx  <br/> |Outlook:\*  <br/> |\*  <br/> |
+|#1 |Resume_Contoso.xlsx  |C:\Users\John\Documents |Resume_Contoso.docx  |
+|#2|Merger_Contoso.docx   |\\\FileShare\Operations\FY2018   |Merger_Contoso.docx   |
+|#3|FY2018_Merger.xlsx   |https://sharepoint/sites/HR/SharedDocuments   |FY2018_Merger.xlsx   |
+|#4 |10 cures for diseases.pptx   |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD   |10 cures for diseases   |
+
+Data that is sent to the shared folder after you enable file obfuscation
+
+|Example|**File name**|**File path**|**Title**|
+|:-----|:-----|:-----|:-----|
+|#1  |Re\*.xlsx   |C:\\*   |\*  |
+|#2 |Me\*.docx   |\\\FileShare\\*   |\*   |
+|#3 |FY\*.xlsx   |https://sharepoint/*   |\*   |
+|#4|10\*.pptx   |Outlook:\*   |\*   |
 
 #### To enable file obfuscation by using the registry
 
