@@ -33,6 +33,9 @@ The following products are available as part of this preview program:
 
 Office LTSC Professional Plus 2021 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word.
 
+> [!NOTE]
+> LTSC stands for Long-Term Servicing Channel.
+
 For information about installing, activating, and updating the preview versions of Office, Project, and Visio, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
 For information about the preview version of Office for devices running macOS, see [Overview of Office 2021 for Mac (Preview)](overview-mac-preview.md).
