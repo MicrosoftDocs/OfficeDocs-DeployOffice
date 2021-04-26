@@ -15,7 +15,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Technical overview for IT Pros about the preview version of Office LTSC"
 ---
 
-# Overview of Office LTSC Preview
+# Overview of Office Long Term Servicing Channel Preview (LTSC)
 
 > [!IMPORTANT]
 > - This is pre-release documentation for a preview program and is subject to change.
