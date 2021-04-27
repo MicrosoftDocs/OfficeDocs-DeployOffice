@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
@@ -32,6 +32,9 @@ The following products are available as part of this preview program:
 - Visio Professional 2021 Preview
 
 Office LTSC Professional Plus 2021 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word.
+
+> [!NOTE]
+> LTSC stands for Long-Term Servicing Channel.
 
 For information about installing, activating, and updating the preview versions of Office, Project, and Visio, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
