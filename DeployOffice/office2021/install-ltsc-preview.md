@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.prod: office-perpetual-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: 
@@ -129,7 +129,7 @@ For more information about using the Office Deployment Tool and the settings ava
 
 > [!TIP]
 > - To help you create your configuration.xml, we recommend that you use the [Office Customization Tool](https://config.office.com/deploymentsettings). This tool provides a web-based interface for making your selections and helps reduce syntax errors.
-> - The option to select the preview products in the Office Customization Tool isn't available yet. That option is expected to be available by the end of April.
+> - The option to select the preview products in the Office Customization Tool isn't available yet. That option is expected to be available sometime in the first half of May.
 
 Copy the ODT (setup.exe) and your configuration.xml file to the device, and then from an elevated command prompt, run the following command to install the preview products:
 
@@ -171,7 +171,7 @@ If you don’t want certain Office apps to be installed, such as Publisher, you 
 If you’re using Configuration Manager (current branch) in your organization, you can use the Office 365 Client Installation wizard to deploy the preview products.
 
 > [!NOTE]
-> The option to select the preview products in the wizard isn't available yet. That option is expected to be available by the end of April.
+> The option to select the preview products in the wizard isn't available yet. That option is expected to be available sometime in the first half of May.
 
 To use the wizard, perform the following steps:
 
