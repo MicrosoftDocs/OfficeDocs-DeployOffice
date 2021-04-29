@@ -119,7 +119,7 @@ Therefore, we recommend that you use Office 2021 for Mac (Preview) only for test
 
 If you want to provide feedback about an Office app or feature, go to **File** > **Feedback** in that app.
 
-If you have questions about Office 2021 for Mac (Preview) or want to provide additional feedback, go to the [Office LTSC 2021 Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
+If you have questions about Office 2021 for Mac (Preview) or want to provide additional feedback, go to the [Office LTSC Commercial Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
 
 > [!NOTE]
 > When Office 2021 Standard for Mac is released later this year, it will have five years of Mainstream Support. There won’t be any Extended Support available after the five years of Mainstream Support ends.
