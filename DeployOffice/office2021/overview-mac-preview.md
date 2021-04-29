@@ -74,7 +74,6 @@ The final list of the features that will be included in Office 2021 for Mac (Pre
 
 Here are a few examples of new features that are included in Office 2021 for Mac (Preview): 
 
-- Line Focus, which removes distractions so that you can move through a Word document line by line.
 - XLOOKUP function, to help you find things in a table or range by row in an Excel worksheet.
 - Dynamic array support in Excel, including new functions that make use of dynamic arrays. 
 - Record a slide show with narration in PowerPoint.

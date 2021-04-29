@@ -82,7 +82,7 @@ For more information about the installation of the Teams client app with Office 
 
 #### Office Telemetry Dashboard
 
-[Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office. Office Telemetry Dashboard will be available as a separate download from the Microsoft Download Center when Office LTSC is released later this year. 
+[Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office and won't be supported for Office LTSC when it's released later this year.
 
 
 #### Office Add-ins JavaScript APIs
