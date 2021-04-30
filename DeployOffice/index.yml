@@ -1,0 +1,41 @@
+### YamlMime:Hub
+
+title: Office deployment
+brand: office
+
+metadata:
+  title: Office deployment
+  description: Office deployment
+  brand: office
+  author: dstrome
+
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Discover # < 60 chars (optional)
+      items:
+        # Card
+        - title: Get Started
+          summary: Learn how to plan, deploy, and manage Microsoft 365 Apps in your enterprise environment.
+          url: /en-us/DeployOffice/deployment-guide-microsoft-365-apps
+        # Card
+        - title: Deploy
+          summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.
+          url: /en-us/DeployOffice/plan-microsoft-365-apps
+        # Card
+        - title: FastTrack
+          summary: FastTrack guides you through the most common deployment configurations.
+          url: https://fasttrack.microsoft.com/office
+        # Card
+        - title: Manage updates
+          summary: Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates.
+          url: /en-us/DeployOffice/overview-update-channels
+        # Card
+        - title: Office for Mac
+          summary: Find guidance about deploying Office to Macs in your organization.
+          url: /en-us/DeployOffice/mac/deployment-guide-for-office-for-mac
+        # Card
+        - title: Office 2019
+          summary: Find guidance about deploying the volume licensed version of Office.
+          url: /en-us/DeployOffice/office2019/overview
