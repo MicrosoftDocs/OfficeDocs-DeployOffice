@@ -20,7 +20,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## April 2021
 
-Microsoft has announced the final release of the recommended security configuration baseline settings for Version 2104 of Microsoft 365 Apps. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2104/ba-p/2307695).
+Microsoft has announced the final release of the recommended security configuration baseline settings for Version 2104 of Microsoft 365 Apps for enterprise. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2104/ba-p/2307695).
 
 ## March 2021
 
