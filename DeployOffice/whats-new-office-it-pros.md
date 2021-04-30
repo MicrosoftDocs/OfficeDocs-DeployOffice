@@ -16,7 +16,11 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 # What's new in Office deployment for IT Pros
 
-This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap).
+This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
+## April 2021
+
+Microsoft has announced the final release of the recommended security configuration baseline settings for Version 2104 of Microsoft 365 Apps for enterprise. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2104/ba-p/2307695).
 
 ## March 2021
 
@@ -24,7 +28,7 @@ Microsoft 365 Apps is starting to provide new or improved features that rely on 
 
 ## February 2021
 
-[Extended offline access](overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Note that extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
+[Extended offline access](overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
 
 ## January 2021
 
@@ -185,7 +189,7 @@ Office apps, such as Word and Outlook, are now available from the Mac App Store.
 
 ## October 2018
 
-The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use this simple web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
+The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
 
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-deploying-languages-microsoft-365-apps.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 
