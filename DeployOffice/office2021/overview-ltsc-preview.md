@@ -82,7 +82,7 @@ For more information about the installation of the Teams client app with Office 
 
 #### Office Telemetry Dashboard
 
-[Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office. Office Telemetry Dashboard will be available as a separate download from the Microsoft Download Center when Office LTSC is released later this year. 
+[Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office and won't be supported for Office LTSC when it's released later this year.
 
 
 #### Office Add-ins JavaScript APIs
@@ -148,7 +148,7 @@ Therefore, we recommend that you use the preview products only for testing purpo
 
 If you want to provide feedback about an Office app or feature, go to **File** > **Feedback** in that app.
 
-If you have questions about Office LTSC Preview or want to provide additional feedback, go to the [Office LTSC 2021 Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
+If you have questions about Office LTSC Preview or want to provide additional feedback, go to the [Office LTSC Commercial Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
 
 > [!NOTE]
 > When Office LTSC, Project 2021, and Visio 2021 are released later this year, they will have five years of Mainstream Support. There won’t be any Extended Support available for these products after the five years of Mainstream Support ends.
