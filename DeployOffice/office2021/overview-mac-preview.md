@@ -74,7 +74,6 @@ The final list of the features that will be included in Office 2021 for Mac (Pre
 
 Here are a few examples of new features that are included in Office 2021 for Mac (Preview): 
 
-- Line Focus, which removes distractions so that you can move through a Word document line by line.
 - XLOOKUP function, to help you find things in a table or range by row in an Excel worksheet.
 - Dynamic array support in Excel, including new functions that make use of dynamic arrays. 
 - Record a slide show with narration in PowerPoint.
@@ -119,7 +118,7 @@ Therefore, we recommend that you use Office 2021 for Mac (Preview) only for test
 
 If you want to provide feedback about an Office app or feature, go to **File** > **Feedback** in that app.
 
-If you have questions about Office 2021 for Mac (Preview) or want to provide additional feedback, go to the [Office LTSC 2021 Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
+If you have questions about Office 2021 for Mac (Preview) or want to provide additional feedback, go to the [Office LTSC Commercial Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
 
 > [!NOTE]
 > When Office 2021 Standard for Mac is released later this year, it will have five years of Mainstream Support. There won’t be any Extended Support available after the five years of Mainstream Support ends.
