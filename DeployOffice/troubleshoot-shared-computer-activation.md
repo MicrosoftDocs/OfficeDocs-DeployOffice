@@ -11,7 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 search.appverid:
 - MET150
-
+recommendations: false
 description: "Explains how to troubleshoot issues with deployments of Microsoft 365 Apps that are configured to use shared computer activation."
 ---
 

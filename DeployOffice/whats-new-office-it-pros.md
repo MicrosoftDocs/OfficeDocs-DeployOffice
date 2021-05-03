@@ -11,6 +11,7 @@ ms.collection:
 - Ent_O365
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Office."
 ---
 
