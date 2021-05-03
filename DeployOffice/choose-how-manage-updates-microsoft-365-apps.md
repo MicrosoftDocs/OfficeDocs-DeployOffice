@@ -10,6 +10,7 @@ localization_priority: Normal
 audience: ITPro
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
 ---
 

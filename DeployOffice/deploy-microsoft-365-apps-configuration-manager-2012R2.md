@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Provides Office admins with information on how to Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager."
 ---
 

@@ -10,6 +10,7 @@ ms.date: 08/31/2018
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: Learn about using Outlook 2016, OneDrive for Business, and Skype for Business in RDSH and VDI deployments
 
 ---
