@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
+recommendations: false
 description: "Provides admins with information about the Volume License (VL) Serializer, which is used to activate volume licensed versions of Office 2019 for Mac."
 ---
 

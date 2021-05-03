@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
+recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps security currency within their environment"
 ---
 
