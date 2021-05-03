@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
+recommendations: true
 description: "Describes changes in Office for Mac that are of interest to admins that plan to deploy it to users in their organization"
 ---
 

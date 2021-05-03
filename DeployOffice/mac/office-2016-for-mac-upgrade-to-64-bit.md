@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
+recommendations: false
 description: "Provides information to admins about Office for Mac changing to 64-bit."
 ---
 

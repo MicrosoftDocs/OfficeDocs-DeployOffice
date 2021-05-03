@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
+recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center"
 ---
 
