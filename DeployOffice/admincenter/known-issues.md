@@ -11,6 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Known issues and release notes for the Microsoft 365 Apps admin center"
 ---
 
