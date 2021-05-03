@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
+recommendations: true
 description: "Provides admins with information about how to install updates for Office for Mac by using Microsoft AutoUpdate"
 ---
 

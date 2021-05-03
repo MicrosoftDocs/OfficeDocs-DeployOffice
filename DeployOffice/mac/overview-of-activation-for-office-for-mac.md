@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
+recommendations: true
 description: "Describes for admins how activation works for Office for Mac, for both Office 365 plans and volume license agreements"
 ---
 
