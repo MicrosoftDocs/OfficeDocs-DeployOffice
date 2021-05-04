@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
+recommendations: true
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
 ---
 

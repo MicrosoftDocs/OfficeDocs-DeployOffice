@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
+recommendations: true
 description: "The Office cloud policy service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
 ---
 
