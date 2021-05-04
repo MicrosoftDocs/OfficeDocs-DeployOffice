@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Provides Office admins information about Office 365 ProPlus being renamed to Microsoft 365 Apps for enterprise."
 ---
 

@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
+recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
 ---
 

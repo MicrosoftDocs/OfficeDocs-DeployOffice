@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Describes what data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes."
 ---
 

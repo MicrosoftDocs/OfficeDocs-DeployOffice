@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Provides Office admins information about changes to update channels for Microsoft 365 Apps, including introduction of Monthly Enterprise Channel and new names for existing update channels."
 ---
 

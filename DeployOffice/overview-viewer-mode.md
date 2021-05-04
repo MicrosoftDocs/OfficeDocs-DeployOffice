@@ -11,6 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Overview of viewer mode for Microsoft 365 Apps."
 ---
 
