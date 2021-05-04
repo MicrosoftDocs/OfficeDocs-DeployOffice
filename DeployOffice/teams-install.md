@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
+recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
 ---
 

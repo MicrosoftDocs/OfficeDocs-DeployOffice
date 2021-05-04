@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
+recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
 ---
 

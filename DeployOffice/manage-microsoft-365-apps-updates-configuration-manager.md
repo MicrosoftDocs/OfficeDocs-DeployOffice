@@ -11,6 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
+recommendations: true
 description: "Microsoft Endpoint Configuration Manager has the ability to manage Office 365 client updates by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps, Office 365 Business, and the the subscription version of the Project desktop app."
 ---
 
