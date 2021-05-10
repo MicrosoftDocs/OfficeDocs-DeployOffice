@@ -1715,6 +1715,8 @@ The following fields are collected:
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
 
+- **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the Every meeting online feature.
+
 - **guest_count** - The number of guests on the meeting.  Helps us make sure that the guests are being added correctly. 
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
@@ -14302,6 +14304,8 @@ The following fields are collected for Android only:
 - **caption** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
 
 - **color_inversion** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
+
+- **density_setting** - The custom (user-selected) density mode currently in use by the application
 
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
