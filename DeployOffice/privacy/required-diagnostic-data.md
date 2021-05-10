@@ -12273,23 +12273,23 @@ The following fields are collected:
 - **OEMPreInstalled** - Identifies if the app is pre-installed or organically installed by the user
 
 - **PurchaseState** - State of the user when attempting a purchase
-     0 - Unknown error
-     1 - Dime is attempted by the user for open
-     2 - Network error
-     3 - Dime is shown to the user
-     4 - Dime is cancelled by the user
-     5 - Refresh needed as purchase is successful
-     6 - Purchase is successful
-     7 - Generic dime error
-     8 - Dime telemetry cannot be uploaded due to communication failure
-     9 - Two instances of Dime running causing interruption error
-     10 - Base WebURL loaded on officemobile app is invalid
-     11 - Communication of officemobile app with Dime failed 
-     12 - No communication channel could be established
-     13 - Communication ID could not be sent to Dime
-     14 - The officemobile app is communicating to the wrong endpoint
-     15 - AuthToken is not obtained for this MSA account
-     16 - AuthToken is not sent to Dime
+    - 0 - Unknown error
+    - 1 - Dime is attempted by the user for open
+    - 2 - Network error
+    - 3 - Dime is shown to the user
+    - 4 - Dime is cancelled by the user
+    - 5 - Refresh needed as purchase is successful
+    - 6 - Purchase is successful
+    - 7 - Generic dime error
+    - 8 - Dime telemetry cannot be uploaded due to communication failure
+    - 9 - Two instances of Dime running causing interruption error
+    - 10 - Base WebURL loaded on officemobile app is invalid
+    - 11 - Communication of officemobile app with Dime failed 
+    - 12 - No communication channel could be established
+    - 13 - Communication ID could not be sent to Dime
+    - 14 - The officemobile app is communicating to the wrong endpoint
+    - 15 - AuthToken is not obtained for this MSA account
+    - 16 - AuthToken is not sent to Dime
 
 - **WebViewShownDuration** - Duration for which the dime purchase page is shown to the user 
 
