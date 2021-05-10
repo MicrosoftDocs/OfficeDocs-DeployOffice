@@ -2,6 +2,97 @@
 
 
 
+## Week of May 03, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/3/2021 | Office deployment | removed |
+| 5/3/2021 | [Inventory](/DeployOffice/admincenter/inventory) | modified |
+| 5/3/2021 | [Known issues and release notes for the Microsoft 365 Apps admin center](/DeployOffice/admincenter/known-issues) | modified |
+| 5/3/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 5/3/2021 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
+| 5/3/2021 | [Security Currency](/DeployOffice/admincenter/security-update-status) | modified |
+| 5/3/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
+| 5/3/2021 | [Office 2007 end of support roadmap](/DeployOffice/endofsupport/office-2007-end-support-roadmap) | modified |
+| 5/3/2021 | [Office 2010 end of support roadmap](/DeployOffice/endofsupport/office-2010-end-support-roadmap) | modified |
+| 5/3/2021 | [Office versions and connectivity to Office 365 services](/DeployOffice/endofsupport/office-365-services-connectivity) | modified |
+| 5/3/2021 | [End of support resources for Office](/DeployOffice/endofsupport/resources) | modified |
+| 5/3/2021 | [Windows 7 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-7-support) | modified |
+| 5/3/2021 | [Windows 8 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-8-support) | modified |
+| 5/3/2021 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
+| 5/3/2021 | [Deploy Office for Mac from the Mac App Store](/DeployOffice/mac/deploy-mac-app-store) | modified |
+| 5/3/2021 | [Deploy preferences for Office for Mac](/DeployOffice/mac/deploy-preferences-for-office-for-mac) | modified |
+| 5/3/2021 | [Deploy updates for Office for Mac](/DeployOffice/mac/deploy-updates-for-office-for-mac) | modified |
+| 5/3/2021 | [Deployment guide for Office for Mac](/DeployOffice/mac/deployment-guide-for-office-for-mac) | modified |
+| 5/3/2021 | [Deployment options for admins for Office for Mac](/DeployOffice/mac/deployment-options-for-office-for-mac) | modified |
+| 5/3/2021 | [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline) | modified |
+| 5/3/2021 | [Office for Mac upgrade to 64-bit](/DeployOffice/mac/office-2016-for-mac-upgrade-to-64-bit) | modified |
+| 5/3/2021 | [Overview of activation for Office for Mac](/DeployOffice/mac/overview-of-activation-for-office-for-mac) | modified |
+| 5/3/2021 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
+| 5/3/2021 | [Set a preference for trying a default decryption password in Excel for Mac](/DeployOffice/mac/set-preference-default-password-excel) | modified |
+| 5/3/2021 | [Set a preference for macro security in Office for Mac](/DeployOffice/mac/set-preference-macro-security-office-for-mac) | modified |
+| 5/3/2021 | [Set a preference for Resume Assistant in Word for Mac](/DeployOffice/mac/set-preference-resume-assistant-word) | modified |
+| 5/3/2021 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
+| 5/3/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
+| 5/3/2021 | [What's new for admins in Office for Mac](/DeployOffice/mac/what-s-new-for-admins-in-office-for-mac) | modified |
+| 5/3/2021 | [About Microsoft 365 Apps in the enterprise](/DeployOffice/about-microsoft-365-apps) | modified |
+| 5/3/2021 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
+| 5/3/2021 | [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](/DeployOffice/change-bitness) | modified |
+| 5/3/2021 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
+| 5/3/2021 | [Choose how to manage updates to Microsoft 365 Apps](/DeployOffice/choose-how-manage-updates-microsoft-365-apps) | modified |
+| 5/3/2021 | [Configure update settings for Microsoft 365 Apps](/DeployOffice/configure-update-settings-microsoft-365-apps) | modified |
+| 5/3/2021 | [Default file format setting for the Office Customization Tool (for Click-to-Run)](/DeployOffice/default-file-format-oct) | modified |
+| 5/3/2021 | [Delivery Optimization and Microsoft 365 Apps](/DeployOffice/delivery-optimization) | modified |
+| 5/3/2021 | [Deploy Microsoft 365 Apps from the cloud](/DeployOffice/deploy-microsoft-365-apps-cloud) | modified |
+| 5/3/2021 | [Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager](/DeployOffice/deploy-microsoft-365-apps-configuration-manager-2012r2) | modified |
+| 5/3/2021 | [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
+| 5/3/2021 | [Guidance for deploying Microsoft 365 Apps for enterprise in a GCC High or DoD environment](/DeployOffice/deploy-microsoft-365-apps-gcc-high-dod) | modified |
+| 5/3/2021 | [Deploy Microsoft 365 Apps from a local source](/DeployOffice/deploy-microsoft-365-apps-local-source) | modified |
+| 5/3/2021 | [Deploy Microsoft 365 Apps as part of an operating system image](/DeployOffice/deploy-microsoft-365-apps-operating-system-image) | modified |
+| 5/3/2021 | [Deploy Microsoft 365 Apps by using Remote Desktop Services](/DeployOffice/deploy-microsoft-365-apps-remote-desktop-services) | modified |
+| 5/3/2021 | [Content updates for deploying Office](/DeployOffice/deploy-office-content-updates) | modified |
+| 5/3/2021 | [Deployment guide for Project](/DeployOffice/deployment-guide-for-project) | modified |
+| 5/3/2021 | [Deployment guide for Visio](/DeployOffice/deployment-guide-for-visio) | modified |
+| 5/3/2021 | [Deployment guide for Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps) | modified |
+| 5/3/2021 | [Deployment guide for OneNote](/DeployOffice/deployment-guide-onenote) | modified |
+| 5/3/2021 | [Device-based licensing for Microsoft 365 Apps for enterprise](/DeployOffice/device-based-licensing) | modified |
+| 5/3/2021 | [End-user update notifications for Microsoft 365 Apps](/DeployOffice/end-user-update-notifications-microsoft-365-apps) | modified |
+| 5/3/2021 | [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](/DeployOffice/install-different-office-visio-and-project-versions-on-the-same-computer) | modified |
+| 5/3/2021 | [Licensing and activation data sent to Office 365 by Microsoft 365 Apps](/DeployOffice/licensing-activation-data-sent-microsoft-365-apps) | modified |
+| 5/3/2021 | [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](/DeployOffice/manage-microsoft-365-apps-updates-configuration-manager) | modified |
+| 5/3/2021 | [Manage Office installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
+| 5/3/2021 | [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](/DeployOffice/microsoft-search-bing) | modified |
+| 5/3/2021 | [Name change for Office 365 ProPlus](/DeployOffice/name-change) | modified |
+| 5/3/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
+| 5/3/2021 | [Overview of deploying languages for Microsoft 365 Apps](/DeployOffice/overview-deploying-languages-microsoft-365-apps) | modified |
+| 5/3/2021 | [Overview of extended offline access for Microsoft 365 Apps for enterprise](/DeployOffice/overview-extended-offline-access) | modified |
+| 5/3/2021 | [Overview of licensing and activation in Microsoft 365 Apps](/DeployOffice/overview-licensing-activation-microsoft-365-apps) | modified |
+| 5/3/2021 | [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](/DeployOffice/overview-of-security-policy-advisor) | modified |
+| 5/3/2021 | [Overview of the Office Customization Tool](/DeployOffice/overview-of-the-office-customization-tool-for-click-to-run) | modified |
+| 5/3/2021 | [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/DeployOffice/overview-office-cloud-policy-service) | modified |
+| 5/3/2021 | [Overview of the Office Deployment Tool](/DeployOffice/overview-office-deployment-tool) | modified |
+| 5/3/2021 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
+| 5/3/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 5/3/2021 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/overview-update-channels) | modified |
+| 5/3/2021 | [Overview of the update process for Microsoft 365 Apps](/DeployOffice/overview-update-process-microsoft-365-apps) | modified |
+| 5/3/2021 | [Overview of viewer mode for Microsoft 365 Apps](/DeployOffice/overview-viewer-mode) | modified |
+| 5/3/2021 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
+| 5/3/2021 | [Office 2016 in RDSH and VDI deployments](/DeployOffice/rds-office-vdi-rdsh) | modified |
+| 5/3/2021 | [Dealing with Outlook search in non-persistent RDS environments](/DeployOffice/rds-outlook-search) | modified |
+| 5/3/2021 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
+| 5/3/2021 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
+| 5/3/2021 | [Deploy Microsoft Teams with Microsoft 365 Apps](/DeployOffice/teams-install) | modified |
+| 5/3/2021 | [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](/DeployOffice/troubleshoot-shared-computer-activation) | modified |
+| 5/3/2021 | [Changes to update channels for Microsoft 365 Apps](/DeployOffice/update-channels-changes) | modified |
+| 5/3/2021 | [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/DeployOffice/upgrade-from-msi-version) | modified |
+| 5/3/2021 | [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](/DeployOffice/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016) | modified |
+| 5/3/2021 | [Microsoft Edge WebView2 and Microsoft 365 Apps](/DeployOffice/webview2-install) | modified |
+| 5/3/2021 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
+| 5/5/2021 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 5/6/2021 | [Install Office LTSC Preview](/DeployOffice/office2021/install-ltsc-preview) | modified |
+
+
 ## Week of April 26, 2021
 
 
@@ -162,23 +253,3 @@
 | 4/6/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
 | 4/7/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
 | 4/9/2021 | [Manage Office installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
-
-
-## Week of March 29, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/29/2021 | [Network guidance for deploying and servicing Microsoft 365 Apps](/DeployOffice/fieldnotes/network-guidance) | modified |
-| 3/29/2021 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
-| 3/29/2021 | [Activate volume licensed versions of Office by using MAK](/DeployOffice/vlactivation/activate-office-by-using-mak) | modified |
-| 3/30/2021 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
-| 3/30/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
-| 4/1/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
-| 4/1/2021 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
-| 4/2/2021 | [Inventory](/DeployOffice/admincenter/inventory) | modified |
-| 4/2/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
-| 4/2/2021 | [Security Currency](/DeployOffice/admincenter/security-update-status) | modified |
-| 4/2/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
-| 4/2/2021 | Update deadline | removed |
-| 4/2/2021 | Update exclusion dates | removed |
