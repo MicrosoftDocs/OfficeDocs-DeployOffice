@@ -5801,39 +5801,6 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
-#### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements
-
-This event is collected for the Office app for iOS, it records when a file open operation takes
-place. We collect this data to ensure good performance for all file opens on the app. 
-
-The following fields are collected:
-
-- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
-(only first party app info is being logged).
-
-- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(for example: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
-
-- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
-
-- **Data_Doc_DownloadEndTime** - Timestamp for end of download of a cloud file.
-
-- **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
-
-- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session.
-
-- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
-
-- **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
-
-- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
-
-- **Data_Doc_OpenStartTime** - Timestamp for start of open operation of a PDF file.
-
-- **Data_Doc_TelemetryReason** - Telemetry reason for the open event (for example: open from MRU or
-browse, File Activation, Protocol Activation, etc.).
-
-- **Doc_RenderDurationms** - Time to render a pdf file
-
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
 
@@ -5848,6 +5815,8 @@ The following fields are collected:
 - **Data_ErrorMessage** - relevant message-to-error code
 
 - **Data_FailureReason** - In case of open failure, these enums define the reason for failure.
+
+- **Data_FetchReason** - Denotes how the file was fetched (manual, cached, not cached) 
 
 - **Data_FileGUID** – Global identifier for the file, which is randomly generated
 
@@ -5886,6 +5855,8 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 - **Data_ErrorMessage** – relevant message to error code 
 
 - **Data_FailureReason** - In case of open failure, these enums define the reason for failure. 
+
+- **Data_FetchReason** - Denotes how the file was fetched (manual, cached, not cached)
 
 - **Data_FileGUID** – Global identifier for the file, which is randomly generated
 
@@ -12522,6 +12493,63 @@ The following fields are collected:
   - **Data.Cid** - dynamically generated correlation identifier sent to the service when the service call was made to fetch the cloud policy. Used to correlate which call caused an issue while applying the policies on the cloud.
 
   - **Data.Last Error** - One of five string values (enumerators) to log which stage of policy application was being executed when the exception occurred
+
+
+#### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on Android)
+
+This event is collected for the Office app for Android. It records when a file open operation takes
+place. We collect this data to ensure good performance for all file opens on the app. 
+
+The following fields are collected:
+
+- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
+(only first party app info is being logged).
+
+- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
+
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
+
+- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
+
+- **Data_FetchReason** – Denotes how the file was fetched (manual, cached, not cached)
+
+- **Doc_RenderDurationms** - Time to render a pdf file
+
+#### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on iOS)
+
+This event is collected for the Office app for iOS. It records when a file open operation takes
+place. We collect this data to ensure good performance for all file opens on the app. 
+
+The following fields are collected:
+
+- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
+(only first party app info is being logged).
+
+- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(for example: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
+
+- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
+
+- **Data_Doc_DownloadEndTime** - Timestamp for end of download of a cloud file.
+
+- **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
+
+- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session.
+
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
+
+- **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
+
+- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
+
+- **Data_Doc_OpenStartTime** - Timestamp for start of open operation of a PDF file.
+
+- **Data_Doc_TelemetryReason** - Telemetry reason for the open event (for example: open from MRU or
+browse, File Activation, Protocol Activation, etc.).
+
+- **Data_FetchReason** – Denotes how the file was fetched (manual, cached, not cached)
+
+- **Doc_RenderDurationms** - Time to render a pdf file
+
 
 #### Office.OneNote.Android.Sync.ProvisioningCompleted
 
