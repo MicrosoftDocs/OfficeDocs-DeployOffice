@@ -2578,6 +2578,8 @@ The following fields are collected:
 
 - **draft_message_id** - The draft ID of the conversation being created as a draft to help us detect issues related to draft emails
 
+- **from_context_menu** - Tells us whether the compose is originated from context menu actions.
+
 - **message_id** - The message ID of the conversation being replied to or forwarded from to help us detect issues related to a specific message
 
 - **origin** - Tells us where the compose originated from, such as from a reply all, a new compose, or quick reply. Helps us detect issues associated with a specific reply origin type.
@@ -4032,6 +4034,8 @@ The following fields are collected:
 
 - **Data_OpenStartTime** - The Unix epoch time when the file open started.
 
+- **Data_PrefetchSourceOptions** - An enumeration indicating how the file is made available offline for cloud documents, e.g., from recent and recommended files. 
+
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
 
 - **Data_SourceApplication** - A string indicating the bundle ID of the source application when a file open was triggered by another app.
@@ -4746,7 +4750,7 @@ The following fields are collected:
 
 #### Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
 
-Allows us to know if a file was successfully saved from the FIO Layer. Used for Feature Health and monitoring.
+This event allows us to know if a file was successfully saved from the FIO Layer. Used for Feature Health and monitoring.
 
 The following fields are collected:
 
@@ -9980,6 +9984,8 @@ The following fields are collected:
 
   - **Data_FErrorAfterDocWinCreation:boolean-**  Did any error or exception happen after the document window is created.
 
+  - **Data_FileIOClpState:int** – Bitset containing values regarding sensitivity label status. For example, this includes information about whether coauthoring with protected labels is enabled, whether the document has a label applied from the current tenant, and whether the document is protected by IRM.
+
   - **Data\_FileUrlLocation -** Predefined set of values of where document is stored (NetworkShare, LocalDrive, ServerOther etc.)
 
   - **Data\_FirstSlideCompressedSize -** compressed size of first slide zip part (usually Slide1.xml)
@@ -11345,6 +11351,8 @@ The following fields are collected:
 - **AssetId** - Asset ID of the app
 
 - **ErrorCode** - Total time spent
+
+- **IsArm64** - indicates if the add-in activation is happening on an application emulated on an ARM64 device
 
 - **IsAugmentationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
 
