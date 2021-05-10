@@ -3715,6 +3715,29 @@ The following fields are collected:
 - **EntitlementCount** – Number of entitlements the user has
 
 
+### Office.Licensing.GetNextUserLicense
+
+This event gets triggered when fetching license for the chosen user-based Office entitlement during the activation first run experience. We use this data to monitor the health of the systems and services.
+
+The following fields are collected:
+
+- **Activity_Success** - Boolean: tells us if we successfully fetched a license for the device to be activated on its Office application.
+
+- **Data_AllowNULPerpetual** - Boolean: tells us if the flight to enable vNext Perpetual is on.
+
+- **Data_AttemptNulReactivation** - Boolean: tells us if this is a reactivation scenario.
+
+- **Data_CurrentMode** - 0 means SPP (the legacy licensing stack), 2 means vNext (the modern licensing stack).
+
+- **Data_HasError** - Boolean: tells us if we got any error when trying to get a license for the chosen user-based entitlement.
+
+- **Data_IsSubscription** - Boolean: tells us if the reactivation is for subscription office.
+
+- **Data_NewMode** - 0 means SPP (the legacy licensing stack), 2 means vNext (the modern licensing stack). We should expect 2 most of the time.
+
+- **Data_SkuToSkuNeeded** - Boolean: tells us if we need to do SKU to SKU conversion due to the entitled Office SKU not matching the installed Office SKU.
+
+
 ### Office.Licensing.Heartbeat 
 
 On every session, we check if 72 hours have passed since the last license renewal and try to extend the expiry of the current license. This event reports the success or failure of the call that we make to ensure we can extend the expiry of the license and keep the user's Office installation functional. It is critical in diagnosing subscription-related issues and service issues for the user and is critical in detecting regressions for already activated subscription users.
@@ -15931,6 +15954,10 @@ The following fields are collected:
 
 - **application** - Application that was launched via a deep link, such as Teams or Skype for Business
 
+- **context** - The experience navigated to within the app, e.g., office_union - word, office_union – excel, etc.
+
+- **source** - The origin of an action, for example, initiated from the user, automatically by the client, etc.
+
 
 ### Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
@@ -16788,15 +16815,17 @@ The event is triggered by an abnormal application termination (Example: task man
 
 The following fields are collected:
 
-  - **AffectedProcessAppBuild -** Build version identifier for the affected process.
+  - **AffectedProcessAppBuild -** Build version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessAppBuildRevision -** Build revision identifier for the affected process.
+  - **AffectedProcessAppBuildRevision -** Build revision identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessAppMajorVer** - Minor version identifier for the affected process.
+  - **AffectedProcessAppMajorVer** - Minor version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-  - **AffectedProcessAppMinorVer -** Minor version identifier for the affected process.
+  - **AffectedProcessAppMinorVer -** Minor version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
   - **AffectedProcessAppName -** The name of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+  
+  - **AffectedProcessAppVersion** - Version identifier for the affected process.
 
   - **AffectedProcessExeBuildVersion -** The Build Version number of the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
@@ -16982,6 +17011,8 @@ The following fields are collected:
   - **BucketId** - Watson bucket Identifier for crash
  
   - **CabGuid** - Globally Unique Identifier (GUID) identifier for the Watson cab.
+
+  - **CallStack** - The Microsoft internal call stack causing the crash.
 
   - **CrashedAppBuild** - Build version identifier for the affected process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
