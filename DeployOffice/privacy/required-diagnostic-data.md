@@ -611,6 +611,8 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **PipelineInfo.IngestionTime** - Timestamp of when our telemetry ingestion happens for this event
 
+- **sample_rate** - The percentage of devices that collect instances of the event. Helps calculate the original number of instances of the event.
+
 - **Session.Id** - A unique identifier for the app session to help identify session-related issues
 
 - **Session.ImpressionId** - A unique identifier for managing release of our features to ensure features are successfully released to all users and devices
@@ -647,7 +649,13 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **is_dex_mode_enabled** - Whether Samsung DeX mode is enabled to help detect issues specific to DeX mode with Samsung devices
 
+- **is_preload_install** – Tells us if our app was pre-loaded on device (Android 11 or later devices)
+
 - **is_sliding_drawer_enabled** - Whether Sliding Drawer interface is enabled to help detect issues caused by our sliding drawer interface
+
+- **oem_preinstall** - Tells us if our app was pre-installed on the device
+
+- **oem_preload_property** – Tells us if our app was pre-loaded as part of a specific agreement with the OEM
 
 - **orientation** - Physical orientation of the screen (portrait/landscape) to help detect issues specific to device orientation
 
@@ -14393,8 +14401,6 @@ The following fields are collected for Android only:
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
 - **large_text** - Tells us if the device has large text setting turned on to help us detect issues related to this setting
-
-- **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
