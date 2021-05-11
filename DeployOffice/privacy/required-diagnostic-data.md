@@ -611,6 +611,8 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **PipelineInfo.IngestionTime** - Timestamp of when our telemetry ingestion happens for this event
 
+- **sample_rate** - The percentage of devices that collect instances of the event. Helps calculate the original number of instances of the event.
+
 - **Session.Id** - A unique identifier for the app session to help identify session-related issues
 
 - **Session.ImpressionId** - A unique identifier for managing release of our features to ensure features are successfully released to all users and devices
@@ -647,7 +649,13 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **is_dex_mode_enabled** - Whether Samsung DeX mode is enabled to help detect issues specific to DeX mode with Samsung devices
 
+- **is_preload_install** – Tells us if our app was pre-loaded on device (Android 11 or later devices)
+
 - **is_sliding_drawer_enabled** - Whether Sliding Drawer interface is enabled to help detect issues caused by our sliding drawer interface
+
+- **oem_preinstall** - Tells us if our app was pre-installed on the device
+
+- **oem_preload_property** – Tells us if our app was pre-loaded as part of a specific agreement with the OEM
 
 - **orientation** - Physical orientation of the screen (portrait/landscape) to help detect issues specific to device orientation
 
@@ -916,6 +924,21 @@ The following fields are collected:
 - **OnPremNBCount** - Count of notebooks in On Prem Server
 
 - **TotalNBCount** - Total count of notebooks associated with the User Account
+
+#### Office.OneNote.System.AppLifeCycle.UserAccountInfo
+
+This event is triggered for shared code and records values for type of accounts signed in via isEdu, isMsftInternal, isIW, isMSA. The data is collected the first time the queue becomes idle after launch. This marker is used to track the types of accounts which have been signed in on the device. This will help us identify EDU users in OneNote. 
+
+The following fields are collected: 
+
+- **IsEdu** - Possible values - true/false
+
+- **IsMSA** - Possible values - true/false
+
+- **IsIW** - Possible values – true/false
+
+- **IsMsftInternal** - Possible values – true/false
+
 
 #### Office.TargetedMessaging.EnsureCached 
 
@@ -1714,6 +1737,8 @@ The following fields are collected:
 - **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
+
+- **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the Every meeting online feature.
 
 - **guest_count** - The number of guests on the meeting.  Helps us make sure that the guests are being added correctly. 
 
@@ -2575,6 +2600,8 @@ Used for monitoring possible negative impact on your ability to compose and repl
 The following fields are collected: 
 
 - **draft_message_id** - The draft ID of the conversation being created as a draft to help us detect issues related to draft emails
+
+- **from_context_menu** - Tells us whether the compose is originated from context menu actions.
 
 - **message_id** - The message ID of the conversation being replied to or forwarded from to help us detect issues related to a specific message
 
@@ -4030,6 +4057,8 @@ The following fields are collected:
 
 - **Data_OpenStartTime** - The Unix epoch time when the file open started.
 
+- **Data_PrefetchSourceOptions** - An enumeration indicating how the file is made available offline for cloud documents, e.g., from recent and recommended files. 
+
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
 
 - **Data_SourceApplication** - A string indicating the bundle ID of the source application when a file open was triggered by another app.
@@ -4744,7 +4773,7 @@ The following fields are collected:
 
 #### Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
 
-Allows us to know if a file was successfully saved from the FIO Layer. Used for Feature Health and monitoring.
+This event allows us to know if a file was successfully saved from the FIO Layer. Used for Feature Health and monitoring.
 
 The following fields are collected:
 
@@ -5780,39 +5809,6 @@ The following fields are collected:
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
-#### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements
-
-This event is collected for the Office app for iOS, it records when a file open operation takes
-place. We collect this data to ensure good performance for all file opens on the app. 
-
-The following fields are collected:
-
-- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
-(only first party app info is being logged).
-
-- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(for example: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
-
-- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
-
-- **Data_Doc_DownloadEndTime** - Timestamp for end of download of a cloud file.
-
-- **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
-
-- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session.
-
-- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
-
-- **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
-
-- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
-
-- **Data_Doc_OpenStartTime** - Timestamp for start of open operation of a PDF file.
-
-- **Data_Doc_TelemetryReason** - Telemetry reason for the open event (for example: open from MRU or
-browse, File Activation, Protocol Activation, etc.).
-
-- **Doc_RenderDurationms** - Time to render a pdf file
-
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
 
@@ -5827,6 +5823,8 @@ The following fields are collected:
 - **Data_ErrorMessage** - relevant message-to-error code
 
 - **Data_FailureReason** - In case of open failure, these enums define the reason for failure.
+
+- **Data_FetchReason** - Denotes how the file was fetched (manual, cached, not cached) 
 
 - **Data_FileGUID** – Global identifier for the file, which is randomly generated
 
@@ -5865,6 +5863,8 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 - **Data_ErrorMessage** – relevant message to error code 
 
 - **Data_FailureReason** - In case of open failure, these enums define the reason for failure. 
+
+- **Data_FetchReason** - Denotes how the file was fetched (manual, cached, not cached)
 
 - **Data_FileGUID** – Global identifier for the file, which is randomly generated
 
@@ -9978,6 +9978,8 @@ The following fields are collected:
 
   - **Data_FErrorAfterDocWinCreation:boolean-**  Did any error or exception happen after the document window is created.
 
+  - **Data_FileIOClpState:int** – Bitset containing values regarding sensitivity label status. For example, this includes information about whether coauthoring with protected labels is enabled, whether the document has a label applied from the current tenant, and whether the document is protected by IRM.
+
   - **Data\_FileUrlLocation -** Predefined set of values of where document is stored (NetworkShare, LocalDrive, ServerOther etc.)
 
   - **Data\_FirstSlideCompressedSize -** compressed size of first slide zip part (usually Slide1.xml)
@@ -11344,6 +11346,8 @@ The following fields are collected:
 
 - **ErrorCode** - Total time spent
 
+- **IsArm64** - indicates if the add-in activation is happening on an application emulated on an ARM64 device
+
 - **IsAugmentationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
 
 - **IsDebug** - indicates if session is a debug session
@@ -12237,6 +12241,38 @@ The following fields are collected:
 - **UserDialogInterruptionDuringBoot** - Boolean for any blocking dialog shown during boot
 
 
+#### Office.Android.DocsUI.Views.DimePurchaseFlowState
+
+This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription.
+
+The following fields are collected:
+
+- **EntryPoint** - Entry point of the purchase attempted by the user
+
+- **OEMPreInstalled** - Identifies if the app is pre-installed or organically installed by the user
+
+- **PurchaseState** - State of the user when attempting a purchase
+    - 0 - Unknown error
+    - 1 - Dime is attempted by the user for open
+    - 2 - Network error
+    - 3 - Dime is shown to the user
+    - 4 - Dime is cancelled by the user
+    - 5 - Refresh needed as purchase is successful
+    - 6 - Purchase is successful
+    - 7 - Generic dime error
+    - 8 - Dime telemetry cannot be uploaded due to communication failure
+    - 9 - Two instances of Dime running causing interruption error
+    - 10 - Base WebURL loaded on officemobile app is invalid
+    - 11 - Communication of officemobile app with Dime failed 
+    - 12 - No communication channel could be established
+    - 13 - Communication ID could not be sent to Dime
+    - 14 - The officemobile app is communicating to the wrong endpoint
+    - 15 - AuthToken is not obtained for this MSA account
+    - 16 - AuthToken is not sent to Dime
+
+- **WebViewShownDuration** - Duration for which the dime purchase page is shown to the user 
+
+
 #### Office.Apple.Apple.AppBoot.Mac
 
 This event is collected for Office applications running under Apple platforms. The event is used to collect the time taken to boot the app, as well as some details on the type of boot done. This event helps us monitor our performance and provide performance improvements.
@@ -12465,6 +12501,63 @@ The following fields are collected:
   - **Data.Cid** - dynamically generated correlation identifier sent to the service when the service call was made to fetch the cloud policy. Used to correlate which call caused an issue while applying the policies on the cloud.
 
   - **Data.Last Error** - One of five string values (enumerators) to log which stage of policy application was being executed when the exception occurred
+
+
+#### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on Android)
+
+This event is collected for the Office app for Android. It records when a file open operation takes
+place. We collect this data to ensure good performance for all file opens on the app. 
+
+The following fields are collected:
+
+- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
+(only first party app info is being logged).
+
+- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
+
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
+
+- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
+
+- **Data_FetchReason** – Denotes how the file was fetched (manual, cached, not cached)
+
+- **Doc_RenderDurationms** - Time to render a pdf file
+
+#### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on iOS)
+
+This event is collected for the Office app for iOS. It records when a file open operation takes
+place. We collect this data to ensure good performance for all file opens on the app. 
+
+The following fields are collected:
+
+- **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
+(only first party app info is being logged).
+
+- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(for example: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
+
+- **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
+
+- **Data_Doc_DownloadEndTime** - Timestamp for end of download of a cloud file.
+
+- **Data_Doc_DownloadStartTime** – Timestamp for start of download of a cloud file.
+
+- **Data_Doc_FileOpSessionID** - Unique ID for a Document Session.
+
+- **Data_Doc_Location** - Location where the file sits (Local, ODSP, iCloud, third-party files app, wopi
+
+- **Data_Doc_OpenCompletionTime** - Timestamp for end of open operation of a PDF file.
+
+- **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
+
+- **Data_Doc_OpenStartTime** - Timestamp for start of open operation of a PDF file.
+
+- **Data_Doc_TelemetryReason** - Telemetry reason for the open event (for example: open from MRU or
+browse, File Activation, Protocol Activation, etc.).
+
+- **Data_FetchReason** – Denotes how the file was fetched (manual, cached, not cached)
+
+- **Doc_RenderDurationms** - Time to render a pdf file
+
 
 #### Office.OneNote.Android.Sync.ProvisioningCompleted
 
@@ -14303,11 +14396,11 @@ The following fields are collected for Android only:
 
 - **color_inversion** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
 
+- **density_setting** - The custom (user-selected) density mode currently in use by the application
+
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
 - **large_text** - Tells us if the device has large text setting turned on to help us detect issues related to this setting
-
-- **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
