@@ -671,6 +671,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "DeployOffice/admincenter/known-issues.md",
+      "redirect_url": "/deployoffice/admincenter/overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "DeployOffice/admincenter/update-exclusion-dates.md",
       "redirect_url": "/deployoffice/admincenter/servicing-profile#set-update-exclusion-dates",
       "redirect_document_id": false
