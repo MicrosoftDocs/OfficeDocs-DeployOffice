@@ -19,7 +19,7 @@ description: "Provides IT Pros with info about the different application compati
 
 # Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps
 
-Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Microsoft 365 Apps. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Microsoft 365 Apps. The answer can depend on a variety of factors, but in general our recommendation is:
+Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Microsoft 365 Apps. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Microsoft 365 Apps. The answer can depend on various factors, but in general our recommendation is:
 
  - Use the [Readiness Toolkit](#readiness-toolkit-for-office-add-ins-and-vba) for basic environments where simplified tool deployment and use is desired.
  - Use the [readiness features in Configuration Manager](#microsoft-365-apps-readiness-features-in-configuration-manager-current-branch), if you already have Microsoft Endpoint Configuration Manager (current branch) deployed in your organization.
@@ -40,7 +40,7 @@ The following sections provide an overview of the key features of each of these 
 
 The Readiness Toolkit for Office add-ins and VBA is our recommended basic solution for application compatibility and readiness assessment. The Readiness Toolkit is a free tool available from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55983).
 
-The Readiness Toolkit creates reports, in either Excel or Power BI, which can assist organizations in the Prepare phase. The reports contain inventory and readiness assessment information, including the following:
+The Readiness Toolkit creates reports, in either Excel or Power BI, which can assist organizations in the Prepare phase. The reports contain inventory and readiness assessment information, including the following information:
 
 - An inventory of COM add-ins, plus information on add-in adoption and ISV support for Microsoft 365 Apps.
 - A compatibility assessment of VBA macros for devices installed with older versions of Office, as far back as Office 2003.
@@ -51,7 +51,7 @@ You can assess an individual device, a collection of devices, or a collection of
 
 There are different ways you can deploy and run the Readiness Toolkit within your organization without significant planning or investment in time. The Readiness Toolkit does not require database infrastructure, but you can export report data to SQL Server to create interactive Power BI reports for high scale reporting and custom analysis.
 
-While the Readiness Toolkit is designed for on-premises use, add-in adoption information, which is optional, requires access to a publicly available web service. If you can't use this web service in your environment, you can find third party add-in adoption information on the [Ready for Modern Desktop](https://developer.microsoft.com/windows/ready-for-windows#/) website.
+While the Readiness Toolkit is designed for on-premises use, add-in adoption information, which is optional, requires access to a publicly available web service.
 
 For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
@@ -63,7 +63,7 @@ If you have at least Version 1902 of Microsoft Endpoint Configuration Manager (c
 
 - An inventory of Office COM add-ins, including information on add-in adoption and ISV support for Microsoft 365 Apps.
 - An inventory of devices that have recently used macros and devices that have not.
-- A report of devices ready for Microsoft 365 Apps deployment, as well as a list of devices to pilot to validate that they are ready for Microsoft 365 Apps.
+- A report of devices ready for Microsoft 365 Apps deployment, and a list of devices to pilot to validate that they are ready for Microsoft 365 Apps.
 - The ability to create collections of devices based on their readiness assessment.
 
 Unlike the Readiness Toolkit, add-in adoption information is downloaded directly into Configuration Manager, instead of having to rely on accessing a publicly available web service.
@@ -77,7 +77,7 @@ After you run the Readiness Toolkit on those devices, the following additional i
 
 You can also use the Readiness Toolkit to scan Office documents in specific folders or network shares, but this information can't be used by Configuration Manager.
 
-Configuration Manager also provides reporting capabilities which can be used to filter on additional add-in and macro compatibility data fields.
+Configuration Manager also provides reporting capabilities that can be used to filter on additional add-in and macro compatibility data fields.
 
 Even though they are separate tools, the Readiness Toolkit and Configuration Manager can be combined to form a powerful end-to-end solution ideal for Configuration Manager customers.
 
