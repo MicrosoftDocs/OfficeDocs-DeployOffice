@@ -2,6 +2,17 @@
 
 
 
+## Week of May 10, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/10/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 5/11/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 5/12/2021 | Known issues and release notes for the Microsoft 365 Apps admin center | removed |
+| 5/12/2021 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
+
+
 ## Week of May 03, 2021
 
 
@@ -243,13 +254,3 @@
 | 4/15/2021 | [Inventory](/DeployOffice/admincenter/inventory) | modified |
 | 4/15/2021 | [Security Currency](/DeployOffice/admincenter/security-update-status) | modified |
 | 4/15/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
-
-
-## Week of April 05, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/6/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
-| 4/7/2021 | [Overview of the Volume License (VL) Serializer](/DeployOffice/mac/volume-license-serializer) | modified |
-| 4/9/2021 | [Manage Office installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
