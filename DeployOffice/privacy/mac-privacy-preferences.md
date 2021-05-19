@@ -18,6 +18,9 @@ hideEdit: true
 
 # Use preferences to manage privacy controls for Office for Mac
 
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 Starting with Version 16.28 of Office for Mac, there are new preference settings that allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used.
@@ -51,19 +54,18 @@ These new preference settings are CFPreferences API compatible and can be set us
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Preference Domain**  | `com.microsoft.office` |
 |**Key**  | `DiagnosticDataTypePreference`  |
 |**Data Type**  | String |
-|**Possible values**  | `BasicDiagnosticData` *(this sets the level to Required)* <br/> `FullDiagnosticData` *(this sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this sets the level to Neither)* |
+|**Possible values**  | `BasicDiagnosticData` *(this value sets the level to Required)* <br/> `FullDiagnosticData` *(this value sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this value sets the level to Neither)* |
 |**Availability** |16.28 and later |
 
-Starting with new installations of Version 16.30, if you don't set this preference, only required diagnostic data is sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account or if users have a volume licensed version of Office 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account or if users have a volume licensed version of Office 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
 > [!NOTE]
-> - If you install Version 16.28 or 16.29 and you don't set this preference, both optional and required diagnostic data is sent to Microsoft. If you then upgrade to Version 16.30 or later, both optional and required diagnostic data is still sent to Microsoft, unless you use this preference to set a different value.
-> - If you set this preference, it also will apply to Version 1.00.217856 and later of Teams for Mac and to Version 16.28 and later of Skype for Business for Mac.
+> We've updated the previous paragraph to clarify that optional diagnostic data is also sent to Microsoft if you don't set this preference.
 
 For other users, such as home users with an Office 365 (or Microsoft 365) subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Preferences** > **Privacy**.
 
@@ -71,7 +73,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Researcher in Word. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Preference Domain**  | `com.microsoft.office` |
 |**Key**  | `OfficeExperiencesAnalyzingContentPreference`  |
@@ -89,7 +91,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 Connected experiences that download online content are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Preference Domain**  | `com.microsoft.office` |
 |**Key**  | `OfficeExperiencesDownloadingContentPreference`  |
@@ -107,7 +109,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 In addition to the connected experiences mentioned above, there are some optional connected experiences that you may choose to allow your users to access with their organization account, which is sometimes referred to as a work or school account. For example, the LinkedIn features of the Resume Assistant in Word or the Weather Bar in Outlook, which uses MSN Weather. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Preference Domain**  | `com.microsoft.office` |
 |**Key**  | `OptionalConnectedExperiencesPreference`  |
@@ -123,7 +125,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 You can use this preference to control whether most connected experiences are available to your users.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Preference Domain**  | `com.microsoft.office` |
 |**Key**  | `ConnectedOfficeExperiencesPreference`  |
@@ -138,7 +140,7 @@ For example, if you set this preference to `FALSE`, the following types of conne
 - Experiences that download online content
 - Optional connected experiences
 
-In addition, if you set this preference to `FALSE`, most other connected experiences are also turned off, such as co-authoring and online file storage. For a list of these other connected experiences, see [Connected experiences in Office](connected-experiences.md).
+In addition, if you set this preference to `FALSE`, most other connected experiences are also turned off, such as coauthoring and online file storage. For a list of these other connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
 But even if you set this preference to `FALSE`, limited Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. [Essential services](essential-services.md), such as the licensing service that confirms that you’re properly licensed to use Office, will also remain available.
 
@@ -148,11 +150,11 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 ## Preference setting for the Required Data Notice dialog for Microsoft AutoUpdate
 
-The first time Version 4.12 or later of Microsoft AutoUpdate (MAU) is launched, users will see a **Required Data Notice** dialog which provides them with information about what data from MAU is sent to Microsoft.
+The first time Version 4.12 or later of Microsoft AutoUpdate (MAU) is launched, users will see a **Required Data Notice** dialog, which provides them with information about what data from MAU is sent to Microsoft.
 
 If you don't want your users to see this **Required Data Notice** dialog for Microsoft AutoUpdate, you can set the following preference. Regardless of which value you set, the dialog won't be shown to your users.
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Preference Domain**  | `com.microsoft.autoupdate2` |
 |**Key**  | `AcknowledgedDataCollectionPolicy`  |
@@ -163,7 +165,7 @@ If you don't want your users to see this **Required Data Notice** dialog for Mic
 If you let your users see this dialog, then when the user chooses **OK**, the value `RequiredDataOnly` is written to `AcknowledgedDataCollectionPolicy` and the dialog is not shown to the user again.
 
 
-## Related topics
+## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 - [Deploy preferences for Office for Mac](../mac/deploy-preferences-for-office-for-mac.md)

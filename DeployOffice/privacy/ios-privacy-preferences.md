@@ -62,13 +62,16 @@ Once sent to the device, the configuration dictionary will reside under the `com
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Key**  | `DiagnosticDataTypePreference`  |
 |**Data Type**  | String |
-|**Possible values**  | `BasicDiagnosticData` *(this sets the level to Required)* <br/> `FullDiagnosticData` *(this sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this sets the level to Neither)* |
+|**Possible values**  | `BasicDiagnosticData` *(this value sets the level to Required)* <br/> `FullDiagnosticData` *(this value sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this value sets the level to Neither)* |
 
-If you don't set this preference, only required diagnostic data is sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+
+> [!NOTE]
+> We've updated the previous paragraph to clarify that optional diagnostic data is also sent to Microsoft if you don't set this preference.
 
 For other users, such as home users with an Office 365 (or Microsoft 365) subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Settings** > **Privacy Settings**.
 
@@ -77,7 +80,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, Design Ideas in PowerPoint. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Key**  | `OfficeExperiencesAnalyzingContentPreference`  |
 |**Data Type**  | Boolean |
@@ -94,7 +97,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 Connected experiences that download online content are experiences that allow you to search and download online content including templates, images, videos, and reference materials to enhance your documents. For example, Office templates or inserting an online icon. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Key**  | `OfficeExperiencesDownloadingContentPreference`  |
 |**Data Type**  | Boolean |
@@ -111,7 +114,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 In addition to the connected experiences mentioned above, there are some optional connected experiences that you may choose to allow your users to access with their organization account, which is sometimes referred to as a work or school account. For example, Office add-ins that are downloaded through the Office Store to your device. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
-|||
+|Category|Details|
 |:-----|:-----|
 |**Key**  | `OptionalConnectedExperiencesPreference`  |
 |**Data Type**  | Boolean |
