@@ -72,3 +72,4 @@ To keep WebView2 up to date with the latest security and reliability updates, We
 
 - [Announcing Microsoft Edge WebView2 General Availability](https://blogs.windows.com/msedgedev/2020/10/19/edge-webview2-general-availability/)
 - [Introduction to Microsoft Edge WebView2](/microsoft-edge/webview2)
+- [Understanding the Office Add-ins runtime](https://developer.microsoft.com/office/blogs/understanding-office-add-ins-runtime/)
