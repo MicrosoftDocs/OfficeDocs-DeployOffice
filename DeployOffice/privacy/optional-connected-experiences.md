@@ -24,7 +24,7 @@ If you have a work or school account, your organization's admin may have provide
 
 > [!NOTE]
 > - If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
-> - For information about optional connected experiences for Microsoft Teams, see [Overview of optional connected experiences in Microsoft Teams](/microsoftteams/teams-privacy-oce-overview).
+> - For Microsoft Teams, see [Overview of optional connected experiences in Microsoft Teams](/microsoftteams/teams-privacy-oce-overview).
 
 ### If you use these services, what terms of use do you need to agree to?
 
