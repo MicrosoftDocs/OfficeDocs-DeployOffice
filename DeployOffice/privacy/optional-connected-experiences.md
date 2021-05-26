@@ -23,7 +23,8 @@ hideEdit: true
 If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus). These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use, and describes how you can turn them off or on at any time.
 
 > [!NOTE]
-> If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
+> - If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
+> - For information about optional connected experiences for Microsoft Teams, see [Overview of optional connected experiences in Microsoft Teams](/microsoftteams/teams-privacy-oce-overview).
 
 ### If you use these services, what terms of use do you need to agree to?
 
