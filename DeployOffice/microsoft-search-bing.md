@@ -199,7 +199,7 @@ If you're deploying Microsoft 365 Apps for enterprise by using Intune, on the **
 
 If your organization is new to Microsoft Search in Bing, we suggest reviewing the [Microsoft Search in Bing Admin Essentials Guide](https://go.microsoft.com/fwlink/p/?linkid=2127979) for configuration and deployment information. To help increase your user's awareness of Microsoft Search in Bing, our [adoption kit](https://go.microsoft.com/fwlink/p/?LinkID=2114710) includes training and communication resources.
 
-There are tools for Microsoft Search that you can use to provide a better search experience for your users so that your users can find the content that they're looking for more easily. For example, you can do the following:
+There are tools for Microsoft Search that you can use to provide a better search experience for your users so that your users can find the content that they're looking for more easily. For example, you can do the following actions:
 
 - [Create bookmarks](/microsoftsearch/manage-bookmarks) for frequently searched internal web sites and tools, such as employee benefits, time and expense reporting, and self-help IT services.
 - [Create Q&As](/microsoftsearch/manage-qas) to instantly answer frequently asked questions in your company, such as "How do I change my password?" or "How do I create a purchase order?"
@@ -237,7 +237,7 @@ To remove the background service from an individual device, go to **Control Pane
 If you want to remove the background service from multiple devices in your organization, you can run the following command as an administrator in a script:
 
 ```console
-"%ProgramFiles(x86)%\Microsoft\DefaultPackMSI\MainBootStrap.exe" uninstallAll
+"%ProgramData%\Microsoft\DefaultPackMSI\MainBootStrap.exe" uninstallAll
 ```
 
 ## Additional information about Microsoft Search in Bing and Microsoft 365 Apps for enterprise
