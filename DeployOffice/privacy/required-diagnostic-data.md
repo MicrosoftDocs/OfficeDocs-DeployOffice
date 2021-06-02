@@ -153,6 +153,8 @@ Information about the operating system and build.
 
 This category contains the following fields:
 
+  - **Model** - string containing the physical model for the device running the app. iOS only. For example, iPhone13.3 or iPad11.6.
+  
   - **OsBuild** - The build number of the operating system installed on the device. Allows us to identify whether issues are impacting individual service packs or versions of a given operating system differently than others so we can prioritize issues.
 
   - **OsVersion** - The major version of the operating system installed on the device. Allows us to determine if issues are impacting a particular operating system version more than other so we can prioritize issues.
