@@ -41,6 +41,11 @@ If you're the admin for your organization, you might also be interested in the f
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
+> [!NOTE]
+> For information about required diagnostic data for Microsoft Teams, see the following articles:
+> - [Required desktop diagnostic data for Microsoft Teams](/microsoftteams/policy-control-diagnostic-data-desktop)
+> - [Required mobile diagnostic data for Microsoft Teams](/microsoftteams/policy-control-diagnostic-data-mobile)
+
 ## Categories, data subtypes, events, and data fields for required diagnostic data
 
 Required diagnostic data is organized into categories and data subtypes. Within each data subtype are events, which contain data fields that are specific to that event.
