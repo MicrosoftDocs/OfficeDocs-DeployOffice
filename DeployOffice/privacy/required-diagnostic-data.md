@@ -363,6 +363,8 @@ This category contains the following fields:
 
   - **Id** - A unique identifier for the event. Allows us to uniquely identify the events that are being received.
 
+  - **IsExportable** - A field to denote if this event needs further processing by export pipeline.
+
   - **Level** - denotes the type of event.
 
   - **Name** - The name of the event. Allows us to identify the event that was being sent from the client.
