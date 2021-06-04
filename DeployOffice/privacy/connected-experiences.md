@@ -34,7 +34,7 @@ The following table provides a list of connected experiences that analyze your c
 | Analyze Data (previously named Ideas) | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 |Auto Fix|[Align your content quickly and easily with Auto Fix](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
-|Chart recommendations (Excel for the web)|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
+|Chart recommendations|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0)|
 |Class Notebook add-ins (OneNote)|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 |Designer (Word for the web)|[Use Designer to create more polished documents](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
@@ -48,7 +48,7 @@ The following table provides a list of connected experiences that analyze your c
 | *Map chart*\*    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Maps in Power View   | [Maps in Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
-|PivotTable recommendations (Excel for the web)|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
+|PivotTable recommendations|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | PowerPoint Designer   | [Create professional slide layouts with PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Presenter Coach (PowerPoint)|[Rehearse your slide show with Presenter Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
