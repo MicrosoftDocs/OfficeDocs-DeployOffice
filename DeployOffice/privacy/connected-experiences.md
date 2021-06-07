@@ -92,11 +92,13 @@ The following table provides a list of connected experiences that download onlin
 | Online Shape Search (Visio) | [Find more shapes and stencils](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *PowerPoint QuickStarter*\*     | [Research a topic with PowerPoint QuickStarter](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Researcher*\*    | [Research your paper easily within Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
-| Tell Me    | [Do things quickly with Tell Me](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
+| Tell Me<sup>2</sup>    | [Do things quickly with Tell Me](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Templates  | [Download free, pre-built templates](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Travel time estimates in Up Next*\*|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) card at the top of your inbox.<br/><br/> [What are Time to Leave notifications?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Weather Bar*\* (Outlook)| [Change the calendar Weather Bar forecast city](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 |*Weather on calendar*\* (Outlook mobile)|[How do I turn on weather on calendar on Outlook mobile?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
+
+<sup>2</sup> Basic functionality of Tell Me remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that download online content. In both cases, no data about the use of Tell Me is sent to Microsoft.
 
 > [!NOTE]
 >\*When users are signed in with a work or school account, the connected experiences listed above in italics are optional and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
