@@ -32,12 +32,10 @@ The following table provides a list of connected experiences that analyze your c
 | ----------- | ------------------ |
 | *3D Maps*\*    | [Get started with 3D Maps](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Analyze Data (previously named Ideas) | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-|Auto Fix|[Align your content quickly and easily with Auto Fix](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Chart recommendations|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0)|
 |Class Notebook add-ins (OneNote)|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
-|Designer (Word for the web)|[Use Designer to create more polished documents](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor<sup>1</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Friendly links in Outlook |[Friendlier link names in email](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
@@ -61,7 +59,6 @@ The following table provides a list of connected experiences that analyze your c
 | Suggested replies | [What are suggested replies?](https://support.microsoft.com/office/58517b93-946e-42d4-95d0-777aa5aa42a5) <br/> [How are suggested replies generated?](https://support.microsoft.com/office/af9cfa57-4f4f-419f-b76d-bb305c3a9d4d)|
 | Tap for Word (Add from files)   | [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Text predictions (a feature of Editor)|[Make writing faster with text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
-|Transcription |[Transcribe your recordings](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
