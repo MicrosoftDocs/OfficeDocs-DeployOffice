@@ -41,6 +41,7 @@ The following table provides a list of connected experiences that analyze your c
 |Friendly links in Outlook |[Friendlier link names in email](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
 | Ink to Text, Ink to Shape, Ink to Math | [Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Insert data from picture| [Insert data from picture](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
+|Insights Outlook add-in|[Insights Outlook add-in](https://docs.microsoft.com/workplace-analytics/myanalytics/use/add-in)|
 |Learning Tools|[Learning Tools](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | *Map chart*\*    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
