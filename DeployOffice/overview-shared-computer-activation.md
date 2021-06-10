@@ -29,6 +29,9 @@ Shared computer activation lets you deploy Microsoft 365 Apps to a computer in y
 - Multiple users access an instance of Office that is hosted through [Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md).
 
 Shared computer activation is required for scenarios where multiple users share the same computer and the users are logging in with their own account. Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit. If your users have dedicated computers and no other users work on those computers, you [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
+
+> [!NOTE]
+> To activate Microsoft 365 Apps, the operating system must support TLS 1.2. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to support TLS 1.2. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](endofsupport/resources.md).
   
 <a name="Enable"> </a>
 
