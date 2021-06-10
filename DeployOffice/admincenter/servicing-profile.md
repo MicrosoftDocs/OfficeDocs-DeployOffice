@@ -34,6 +34,10 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
   - ```https://*.config.office.com```
   - ```https://insights.office.net```
 
+## Compatibility with other tools
+
+Servicing profile takes precedence over other management tools such as Endpoint Manager or Office Deployment Tool. If you are using another management tool you may want to disable it but this isn't required, servicing profile will affect all devices that meet the above requirements regardless of existing management tools in your environment.
+
 ## How to apply the servicing profile to a device
 
 1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Servicing profile**. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
