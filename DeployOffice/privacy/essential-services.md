@@ -4730,7 +4730,7 @@ The following fields are collected:
 
 - **AppInfo_Language** – The language the application is running under
 
-- **AppVersionLong** – The application Version
+- **AppVersionLong** – The application version
 
 - **CatalogFile** – Name of the catalog file that caused error condition.
 
@@ -4740,11 +4740,11 @@ The following fields are collected:
 
 - **DeviceID** – The device identifier
 
-- **DeviceInfo_Model** – The Hardware Model of the device
+- **DeviceInfo_Model** – The hardware model of the device
 
 - **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
 
-- **DeviceInfo_OsBuild** – The Version of the Operating System
+- **DeviceInfo_OsBuild** – The version of the operating system
 
 - **Event_ReceivedTime** – The time at which telemetry got received
 
@@ -13210,7 +13210,7 @@ The following fields are collected:
 
 - **AppInfo_Language** – The language the application is running under
 
-- **AppVersionLong** – The application Version
+- **AppVersionLong** – The application version
 
 - **Channel** – The preference for audience
 
@@ -13218,11 +13218,11 @@ The following fields are collected:
 
 - **DeviceID** – The device identifier
 
-- **DeviceInfo_Model** – The Hardware Model of the device
+- **DeviceInfo_Model** – The hardware model of the device
 
 - **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
 
-- **DeviceInfo_OsBuild** – The Version of the Operating System
+- **DeviceInfo_OsBuild** – The version of the operating system
 
 - **Event_ReceivedTime** – The time at which telemetry got received
 
