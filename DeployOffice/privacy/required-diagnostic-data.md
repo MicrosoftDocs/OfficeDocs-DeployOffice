@@ -1812,7 +1812,7 @@ The following fields are collected across iOS and Android:
 - **account_switcher_action_type** - This action type tracks if the user used the account switcher either in simply discovery or if they decided to switch the account
 
 - **action** - the type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches.
-- 
+
 - **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches. *[This field has been removed from current builds of Office, but might still appear in older builds.]* 
 
 - **conversation_id** - Unique ID for every search session (for example, every time the user enters the search box)
@@ -1910,7 +1910,7 @@ The following fields are collected:
 
 - **hx_string_tag** - tells us the tag of the error in the service's codebase
 
--**is_pinned** - Tells us if the conversation is pinned. This is to assess if users are interacting with pin messages and if the pinning feature is behaving as expected.
+- **is_pinned** - Tells us if the conversation is pinned. This is to assess if users are interacting with pin messages and if the pinning feature is behaving as expected.
 
 - **reaction_origin** – Tells us origin from where the user reacted 
 
@@ -8854,7 +8854,7 @@ The following fields are collected:
 
 - **emo_default_provider_selected_type** - Field that determines the type of the default meeting provider set by the user. 
 
--**emo_default_provider_switch_type** - The type of switch done by the user between the online meeting providers in the Every Meeting Online screen. Helps us to understand the user’s engagement with the feature. 
+- **emo_default_provider_switch_type** - The type of switch done by the user between the online meeting providers in the Every Meeting Online screen. Helps us to understand the user’s engagement with the feature. 
 
 - **enabled_state** - Whether your auto reply, save contacts, and block external images settings are configured correctly  
 
