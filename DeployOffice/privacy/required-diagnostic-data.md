@@ -41,6 +41,11 @@ If you're the admin for your organization, you might also be interested in the f
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
+> [!NOTE]
+> For information about required diagnostic data for Microsoft Teams, see the following articles:
+> - [Required desktop diagnostic data for Microsoft Teams](/microsoftteams/policy-control-diagnostic-data-desktop)
+> - [Required mobile diagnostic data for Microsoft Teams](/microsoftteams/policy-control-diagnostic-data-mobile)
+
 ## Categories, data subtypes, events, and data fields for required diagnostic data
 
 Required diagnostic data is organized into categories and data subtypes. Within each data subtype are events, which contain data fields that are specific to that event.
@@ -148,6 +153,8 @@ Information about the operating system and build.
 
 This category contains the following fields:
 
+  - **Model** - string containing the physical model for the device running the app. iOS only. For example, iPhone13,3 or iPad11,6.
+  
   - **OsBuild** - The build number of the operating system installed on the device. Allows us to identify whether issues are impacting individual service packs or versions of a given operating system differently than others so we can prioritize issues.
 
   - **OsVersion** - The major version of the operating system installed on the device. Allows us to determine if issues are impacting a particular operating system version more than other so we can prioritize issues.
@@ -355,6 +362,8 @@ This category contains the following fields:
   - **Flags** - Information used to alter how a given event responds. Used to manage how a given event is treated for the purposes of uploading the data to Microsoft.
 
   - **Id** - A unique identifier for the event. Allows us to uniquely identify the events that are being received.
+
+  - **IsExportable** - A field to denote if this event needs further processing by export pipeline.
 
   - **Level** - denotes the type of event.
 
@@ -1742,6 +1751,8 @@ The following fields are collected:
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
 
+- **is_every_meeting_online_on** - True if the users account is set to have online meetings on by default. Helps us understand if there are any issues with online meeting enabled calendars. 
+
 - **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
 
 - **is_organizer** - Helps us understand if meetings are able to be edited and created by the organizer correctly. 
@@ -1800,7 +1811,9 @@ The following fields are collected across iOS and Android:
 
 - **account_switcher_action_type** - This action type tracks if the user used the account switcher either in simply discovery or if they decided to switch the account
 
-- **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches. 
+- **action** - the type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches.
+
+- **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches. *[This field has been removed from current builds of Office, but might still appear in older builds.]* 
 
 - **conversation_id** - Unique ID for every search session (for example, every time the user enters the search box)
 
@@ -1835,8 +1848,6 @@ The following fields are collected across iOS and Android:
 - **search_result_filter_type** - Indicates what type of filter was applied to search, show all or attachments only
 
 The following fields are collected across iOS applications of Outlook Mobile: 
-
-- **action** - the type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches.
 
 - **answer_result_selected_count** - tracks how many times the search was "successful", for example, did the user find the person they wanted? Composed an email? Bookmarked the message? 
 
@@ -1898,6 +1909,8 @@ The following fields are collected:
 - **hx_error_type** - tells us what error occurred that prohibited the service from completing a remove, update, or add reaction on a message.
 
 - **hx_string_tag** - tells us the tag of the error in the service's codebase
+
+- **is_pinned** - Tells us if the conversation is pinned. This is to assess if users are interacting with pin messages and if the pinning feature is behaving as expected.
 
 - **reaction_origin** – Tells us origin from where the user reacted 
 
@@ -2536,6 +2549,8 @@ The following fields are collected:
 - **internet_message_id** - tracking message ID
 
 - **is_group_escalation** - indicates whether the message the action was taken on was sent to the user's mailbox because of an escalation (subscribed to group)
+
+- **is_pinned** - Tells us if the conversation is pinned. This is to assess if users are interacting with pin messages and if the pinning feature is behaving as expected.
 
 - **is_rule** - indicates if the mail action done is resetting a focused/other classification
 
@@ -4409,6 +4424,16 @@ This event is collected when the feed is shown to the user. The event is used to
 - **userPuid** - The globally unique user identifier for a consumer Microsoft account.
 
 - **version** - The version of the feed client.
+
+#### Office.Feedback.Survey.FloodgateClient.GetDecisionForActionPreStart
+
+In Office apps we control the frequency of in-product and push messages through a governance layer. This event gets logged in error conditions when we try to apply governance to in-app messages before the module that is handling governance is fully activated. This telemetry helps make our governance logic more robust by collecting details of the scenarios in which the governance is not being applied.
+
+The following fields are collected:
+
+- **Data_EventId** - Unique identifier of the log statement.
+
+- **Data_SurveyId** - Name of the message that we are trying to show when this error is generated.
 
 
 #### Office.Feedback.Survey.FloodgateClient.SurveyTracked
@@ -8693,6 +8718,16 @@ The following fields are collected:
 
 - **RMS.VerifySignatureDuration** - Duration time to verify signature
 
+
+#### qr.code.scan
+
+This event lets us know when a user signs into Outlook Mobile by scanning an auth QR code on a desktop Outlook client which securely contains the user's sign-in information, thereby eliminating the need for manual sign-in. The event is used to detect the successful initiation and completion of the user authentication process using QR functionality. The event diagnoses sign-in errors that could prevent the user from successfully authenticating in the mobile app.
+
+The following fields are collected: 
+
+- **action** - what action has the user taken for the qrcode flow
+
+
 #### read.conversation
 
 Used for monitoring possible negative impact on the health and performance of rendering an email message
@@ -8836,6 +8871,10 @@ The following fields are collected:
 - **changed_folder** - Capturing whether a folder was changed to help us diagnose issues. 
 
 - **delete_scope** - During an account deletion, whether you deleted the account from this device or from all devices with Outlook.  
+
+- **emo_default_provider_selected_type** - Field that determines the type of the default meeting provider set by the user. 
+
+- **emo_default_provider_switch_type** - The type of switch done by the user between the online meeting providers in the Every Meeting Online screen. Helps us to understand the user’s engagement with the feature. 
 
 - **enabled_state** - Whether your auto reply, save contacts, and block external images settings are configured correctly  
 
@@ -9868,6 +9907,8 @@ The following fields are collected:
 
   - **Data\_CreateLocalTempFile -** Method CreateLocalTempFile execution duration in milliseconds
 
+  - **Data_CsiDownloadErrDlgSuppressed:bool** – Whether the dialog that would have been shown by CSI during a download error has been suppressed, usually in favor of a dialog shown by PowerPoint instead.
+
   - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
 
   - **Data\_DetermineFileType -** Method DetermineFileType execution duration in milliseconds
@@ -9949,6 +9990,10 @@ The following fields are collected:
   - **Data\_Doc\_UsedWrsDataOnOpen:bool -** true if the file was opened incrementally using pre-cached WRS data on the host
 
   - **Data\_Doc\_WopiServiceId:string -** WOPI Service identifier, for example "Dropbox"
+
+  - **Data_DownloadErrorCsi:int** – Type of a download error, as provided by CSI
+
+  - **Data_DownloadErrorHResult:int** – HResult of a download error, as provided by CSI
 
   - **Data\_DownloadExcludedData -** Method DownloadExcludedData execution duration in milliseconds
 
@@ -11677,6 +11722,20 @@ The following fields are collected:
 
 - **Event Name** - Event Name is the Event Category and Event Label.
 
+
+#### OneNote.SafeBootAction
+
+This is triggered during application start if the app crashed in the previous session. This data is used to track the new crashes and will help us identify if the crash detection logic is working properly and to keep track of number of boot crashes and early crashes.
+
+The following fields are collected: 
+
+- **ActionType** - Possible values - IncrementCount, ResetBootCounter, ResetEarlyCounter
+
+- **IsLoopCrash** - Possible values – Yes/No
+
+- **IsNativeCrash** - Possible values - Yes/No
+
+
 #### OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry.SafeBootResetCrashCounterOnAppSuspend
 
 The critical signal is sent when we are resetting the crash counter on app suspend before safe boot dialog is shown. This marker is required to track and diagnose the health of the app. A safe boot dialog is shown when the app crashes multiple times continuously. It gives the user an option to reset the app. This marker will help  figure out if Safe boot dialog was not shown to a user despite hitting trigger criteria. 
@@ -13011,7 +13070,7 @@ The following fields are collected:
 
 #### OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
 
-The critical signal used to track user response when the user sees a safe boot dialog. Safe boot dialog is shown when we were unable to launch repeatedly. User choice to safe boot is used as permission to clear app data to launch successfully. This is used to ensure critical regression detection for OneNote app and service health. User sees when they encounter critical boot crash bug. This info will help track if they crash cause has been resolved and user can launch the app successfully or not.
+The critical signal used to track user response when a safe boot dialog is shown. Safe boot dialog is shown when we were unable to launch repeatedly. This is used to ensure critical regression detection for OneNote app and service health. User sees when they encounter critical boot crash bug. This info will help track if the crash cause has been resolved and the user can launch the app successfully.
 
 The following fields are collected: 
 
@@ -14397,6 +14456,8 @@ The following fields are collected for Android only:
 - **caption** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
 
 - **color_inversion** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
+
+- **density_setting** - The custom (user-selected) density mode currently in use by the application
 
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
