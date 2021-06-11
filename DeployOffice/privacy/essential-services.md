@@ -13427,6 +13427,8 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
+- **ForcedUpdate** - String indication whether an update is forced by IT Admin
+
 - **HowToCheck** - How to check setting
 
 - **Payload** - Indicates whether progress view has been displayed during install process
