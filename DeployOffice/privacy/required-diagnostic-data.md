@@ -4425,6 +4425,16 @@ This event is collected when the feed is shown to the user. The event is used to
 
 - **version** - The version of the feed client.
 
+#### Office.Feedback.Survey.FloodgateClient.GetDecisionForActionPreStart
+
+In Office apps we control the frequency of in-product and push messages through a governance layer. This event gets logged in error conditions when we try to apply governance to in-app messages before the module that is handling governance is fully activated. This telemetry helps make our governance logic more robust by collecting details of the scenarios in which the governance is not being applied.
+
+The following fields are collected:
+
+- **Data_EventId** - Unique identifier of the log statement.
+
+- **Data_SurveyId** - Name of the message that we are trying to show when this error is generated.
+
 
 #### Office.Feedback.Survey.FloodgateClient.SurveyTracked
 
@@ -8708,6 +8718,16 @@ The following fields are collected:
 
 - **RMS.VerifySignatureDuration** - Duration time to verify signature
 
+
+#### qr.code.scan
+
+This event lets us know when a user signs into Outlook Mobile by scanning an auth QR code on a desktop Outlook client which securely contains the user's sign-in information, thereby eliminating the need for manual sign-in. The event is used to detect the successful initiation and completion of the user authentication process using QR functionality. The event diagnoses sign-in errors that could prevent the user from successfully authenticating in the mobile app.
+
+The following fields are collected: 
+
+- **action** - what action has the user taken for the qrcode flow
+
+
 #### read.conversation
 
 Used for monitoring possible negative impact on the health and performance of rendering an email message
@@ -11701,6 +11721,20 @@ The following fields are collected:
 - **Exception** - Call stack for the Exception
 
 - **Event Name** - Event Name is the Event Category and Event Label.
+
+
+#### OneNote.SafeBootAction
+
+This is triggered during application start if the app crashed in the previous session. This data is used to track the new crashes and will help us identify if the crash detection logic is working properly and to keep track of number of boot crashes and early crashes.
+
+The following fields are collected: 
+
+- **ActionType** - Possible values - IncrementCount, ResetBootCounter, ResetEarlyCounter
+
+- **IsLoopCrash** - Possible values – Yes/No
+
+- **IsNativeCrash** - Possible values - Yes/No
+
 
 #### OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry.SafeBootResetCrashCounterOnAppSuspend
 
