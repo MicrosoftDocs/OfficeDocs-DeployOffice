@@ -54,6 +54,8 @@ To keep WebView2 up to date with the latest security and reliability updates, We
 
 ## Additional information about WebView2
 
+- The file name for WebView2 Runtime is msedgewebview2.exe
+- If you're using Task Manager, you will see multiple instances of Microsoft Edge WebView2 running under the Microsoft Outlook process. 
 - WebView2 Runtime won’t be installed on devices in organizations that have the following plans:
   - Office 365 operated by 21Vianet
   - Office 365 Germany
