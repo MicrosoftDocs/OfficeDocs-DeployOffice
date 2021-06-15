@@ -16,6 +16,8 @@ description: "Learn about the data collected by the agent for Office Telemetry D
 
 ***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
+> [!IMPORTANT]
+> Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
   
 The Office Telemetry Dashboard uses an agent to collect several types of inventory, usage, and health data for installations of Office, such as the following:
   
