@@ -3593,6 +3593,24 @@ The following fields are collected:
 
   - **DwEulaId** – Numeric identifier of the type of EULA that was accepted by the user
 
+
+### Office.Licensing.ActivateDeviceEntitlement
+
+This event gets triggered when we are trying to activate a device-based perpetual Office offer for the user. We use this data to monitor the health of the systems and services.
+
+The following fields are collected:	
+
+- **Activity_Success** - tells us if the device is licensed with a device-based perpetual Office offer.
+
+- **Data_Count** - tells us the number of device-based perpetual Office entitlement associated with the device. Technically, there should be no more than one.
+
+- **Data_EligibleEntitlementsCount** - tells us the number of eligible entitlements. Because service will return all the device entitlements associated with the device, but we need to check those offers that are relevant to the Office application that’s being running.
+
+- **Data_Errors** - a string with a list of errors while we’re fetching licenses for the entitlements, separated by comma.
+
+- **Data_LicensedEntitlementsCount** - tells us the number of entitlements that we successfully fetch a license for. There could be entitlement errors that lead us to not be able to get a license. 
+
+
 ### Office.Licensing.Activation 
 
 Post setting up the license on the machine, we attempt to activate the license by calling the AVS service. This reports the result of the activation call
@@ -3803,6 +3821,19 @@ The following fields are collected:
   - **LicenseStatus** – Status of the Office license that the user is using
 
   - **MachineKey** - An alphanumeric identifier of the license key that was issued to the user
+
+### Office.Licensing.LaunchSetupOffice
+
+This event is triggered when we redeem an Office offer for the user who either bought a device bundled with an OEM Office pre-entitlement or has entered a product key. We use this data to monitor the health of the systems and services.
+
+The following fields are collected:
+
+- **Activity_Result_Tag** - tells us how we finished this event.
+
+- **Data_DialogResult** - tells us the overall result of the redemption process.
+
+- **Data_Scenario** - tells us the scenario where the redemption occurred for.
+
 
 ### Office.Licensing.LicensingBar
 
@@ -4687,6 +4718,48 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### catalog.invalid
+
+This event logs an error condition pointing to invalid manifest catalog downloaded. We use this event to ensure no errors are present in published manifest files. 
+
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application version
+
+- **CatalogFile** – Name of the catalog file that caused error condition.
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device county (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** – The version of the operating system
+
+- **Event_ReceivedTime** – The time at which telemetry got received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first 3 octets of the IP address
+
+- **SessionId** – The identifier for the session
+
 
 ### cloningtask.begin
 
@@ -13127,6 +13200,47 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+### update.clonedisablereason
+
+This event logs a condition that an Install-On-Clone feature is disabled for a particular update. We use this event to monitor the health of Install-On-Clone feature and to provide improved service.
+
+The following fields are collected:
+
+- **App** – The application process sending the event
+
+- **AppInfo_Language** – The language the application is running under
+
+- **AppVersionLong** – The application version
+
+- **Channel** – The preference for audience
+
+- **Device_NetworkCountry** – The device county (based on IP address)
+
+- **DeviceID** – The device identifier
+
+- **DeviceInfo_Model** – The hardware model of the device
+
+- **DeviceInfo_NetworkType** – The type of network (Wi-Fi, Wired, Unknown)
+
+- **DeviceInfo_OsBuild** – The version of the operating system
+
+- **Event_ReceivedTime** – The time at which telemetry got received
+
+- **EventInfo_Name** – The name of the telemetry event being logged
+
+- **EventInfo_Time** – The time at which the logged event took place 
+
+- **HowTocheck** – The preference for checking of updates
+
+- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+
+- **PipelineInfo_ClientIp** – The first 3 octets of the IP address
+
+- **Reason** – Reason why Install On Clone is disabled for this update.
+
+- **SessionId** – The identifier for the session
+
+
 ### update.download.begin 
 
 This event indicates start of the application update process. This event forms part of the update funnel and is used to determine the health of application updates. 
@@ -13426,6 +13540,8 @@ The following fields are collected:
 - **EventInfo_Name** - The name of the telemetry event being logged
 
 - **EventInfo_Time** - The time at which the logged event took place 
+
+- **ForcedUpdate** - String indication whether an update is forced by IT Admin
 
 - **HowToCheck** - How to check setting
 
