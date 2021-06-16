@@ -86,6 +86,9 @@ For more information, see [Integration for Office 365 ProPlus readiness](/mem/co
 
 ## Office Telemetry Dashboard
 
+> [!IMPORTANT]
+> Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](compat/telemetry-dashboard-removal.md).
+
 In the past, before there was the Readiness Toolkit or the Microsoft 365 Apps readiness features in Configuration Manager, we recommended Office Telemetry Dashboard for Office compatibility assessment. Office Telemetry Dashboard, which was first released in Office 2013, is still a supported tool, but we now only recommend it if you need specific usage and health information.
 
 Office Telemetry Dashboard can assist some organizations primarily in the Manage phase, because it provides the following usage and health information:
