@@ -34,7 +34,7 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
   - ```https://*.config.office.com```
   - ```https://insights.office.net```
 
-## Compatibility with other tools
+## Compatibility with other management tools
 
 A servicing profile takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the above requirements regardless of existing management tools in your environment. If you’re using these management tools you may want to disable them but it isn't required.
 
