@@ -5,7 +5,7 @@
 ## [Office Customization Tool](../overview-of-the-office-customization-tool-for-click-to-run.md)
 ## [Microsoft 365 Apps health](microsoft-365-apps-health.md)
 ## [Inventory](inventory.md)
-# [Security update status](security-update-status.md)
+## [Security update status](security-update-status.md)
 
 ## Preview features
 ### [Servicing profile (preview)](servicing-profile.md)
