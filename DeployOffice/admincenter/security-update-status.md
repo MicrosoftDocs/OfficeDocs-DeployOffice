@@ -8,36 +8,51 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 recommendations: false
-description: "Provides Office admins information about Microsoft 365 Apps security currency within their environment"
+description: "Guidance for Office admins on how to use the security update status feature in the Microsoft 365 Apps admin center."
 ---
 
 # Overview of the security update status report in the Microsoft 365 Apps admin center
 
-You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office.
+The security update status page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into which devices have installed the latest security updates for Office. This information can help you keep your environment secure.
 
 ## Requirements for using security update status
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
-- Device must be part of inventory in the Microsoft 365 Apps admin center
+- Device must be part of [inventory](inventory.md) in the Microsoft 365 Apps admin center
 
-## How to view security state status
+## How to view security update status
 
-1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Health** and then click **Security update status** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+To view the security update status for the devices in your inventory, perform the following steps:
+
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com), and then go to **Health** > **Security Update Status** in the navigation pane.
 2. If you haven't viewed security update status before, complete the setup wizard.
+3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
 
-## Security update status
 
-The security update status view shows what percentage of your devices have the most recent security update. Your devices are evaluated against the latest release patch date (depending on the assigned channel) and can be in three categories.
+## Update status insight
 
-- Up to date – Device that has installed the [latest security patch](/officeupdates/microsoft365-apps-security-updates)
-- Not up to date – Device that has not installed the most recent security update
-- Unknown – Status of the security update could not be retrieved.
+The **Update status** insight on the **Security Update Status** page shows you what percentage of your devices have the most recent security update. The date of the most recent security update is listed at the top of the page for reference. For a list of security updates, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
-You can also drill down into all devices on or view the devices that are not up to date.
+Your devices in inventory are evaluated against the latest release update date (depending on the assigned update channel). Devices can be in one of the following three categories.
 
-An additional view is to view the update status by channel for each channel you have Microsoft 365 Apps installed from. This chart shows the number of devices in that channel and how many of them have updated to the latest security update. You can also view the Goal status for each channel.
+- **Up to date** - The device has installed the most recent security update.
+- **Not up to date** - The device hasn't installed the most recent security update.
+- **Unknown** - The security update status for the device couldn't be retrieved.
 
-## Set a goal for updating devices
+You can also drill down into all devices or a filtered view of the devices that aren't up to date.
 
-To set a goal for updating devices and view your progress against that goal, click **Set a goal** on the Security device status page. You can specify the percentage of devices you want to update and the schedule for meeting that target. This doesn't create any policies or changes to your devices. It is used only for reporting on the security update status page.
+
+## Goal insight
+
+The **Goal** insight on the **Security Update Status** page can help you track your progress on getting devices up to date and secure with each security update. 
+
+To set a goal, choose **Set goal**. You can specify the percentage of devices you want to update within a given timeframe, in days, for meeting that goal.
+
+Setting a goal doesn't create any policies or changes to your devices. The goal is used only for your personal reporting on the **Security Update Status** page.
+
+
+## Update status by channel insight
+
+The **Update status by channel** insight on the **Security Update Status** page shows you the update status of devices in your inventory based on their update channel. You can also see the **Goal status** for each update channel, based on the goal you have set.
+
