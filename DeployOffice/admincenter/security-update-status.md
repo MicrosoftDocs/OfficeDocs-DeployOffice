@@ -1,5 +1,5 @@
 ---
-title: "Security Currency"
+title: "Overview of the security update status report in the Microsoft 365 Apps admin center"
 ms.author: darrend
 author: darrendmsft
 manager: laurawi
@@ -12,9 +12,6 @@ description: "Provides Office admins information about Microsoft 365 Apps securi
 ---
 
 # Overview of the security update status report in the Microsoft 365 Apps admin center
-
-> [!IMPORTANT]
-> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
 
 You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office.
 

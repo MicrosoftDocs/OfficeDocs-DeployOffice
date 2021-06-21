@@ -13,9 +13,6 @@ description: "Provides Office admins information about configuring and using inv
 
 # Overview of inventory in the Microsoft 365 Apps admin center
 
-> [!IMPORTANT]
-> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
-
 You can use the inventory page in the Microsoft 365 Apps admin center to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device.
 
 ## Requirements for using inventory
