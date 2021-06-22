@@ -16,6 +16,9 @@ description: "Guidance for Office admins on how to use the security update statu
 The security update status page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into which devices have installed the most security updates for Office. This information can help you keep your environment secure.
 
 ## Requirements for using security update status
+
+To view security update status for your environment, the following requirements must be met:
+
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan

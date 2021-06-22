@@ -1,5 +1,5 @@
 ---
-title: "Inventory"
+title: "Overview of inventory in the Microsoft 365 Apps admin center"
 ms.author: darrend
 author: darrendmsft
 manager: laurawi
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 localization_priority: Normal
 recommendations: false
-description: "Provides Office admins information about configuring and using inventory in Microsoft 365 Apps admin center to view their managed devices"
+description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
 ---
 
 # Overview of inventory in the Microsoft 365 Apps admin center
@@ -16,6 +16,9 @@ description: "Provides Office admins information about configuring and using inv
 You can use the inventory page in the Microsoft 365 Apps admin center to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device.
 
 ## Requirements for using inventory
+
+To view inventory for your environment, the following requirements must be met:
+
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
@@ -26,71 +29,93 @@ You can use the inventory page in the Microsoft 365 Apps admin center to see inf
 
 ## How to view inventory
 
-1. Go to the [Microsoft 365 Apps admin center](https://config.office.com) and click **Inventory** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+To view an inventory of devices in your organization with Microsoft 365 Apps, perform the following steps:
 
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com), and then go to **Health** > **Inventory** in the navigation pane.
 2. If you haven't viewed inventory before, complete the setup wizard.
+3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
 
-3. When you complete the wizard, active devices  should appear on the inventory page within 2 hours where the user has launched a Microsoft 365 App
 
-## Inventory view
+## Inventory insights dashboard
 
-The inventory view gives you insights across the devices in your organization, including:
+The first page in inventory is the insights dashboard. This pages show you insights across the devices in your organization, including the following information:
 
-- The number of different Office builds
-- The number of  different Office update channels
-- The number of devices which Microsoft 365 Apps, version 2008 or greater, are installed.
+- The number of different Office builds, devices on those builds, and their support status.
+- The number of  different Office update channels, number of different builds from those update channels, and their support status.
+- The number of devices on which Microsoft 365 Apps, version 2008 or later, is installed.
 - The top installed add-ins on those devices.
 
-## Device view
 
-The device view shows detailed information on devices, including the following information:
+## Office build spread insight
 
-| Item | Description |
+The **Office build spread** insight shows you a view of each Office build installed on devices in your organization, grouped by build number or unsupported builds. You can hover over the insight to get counts of devices per build or in the unsupported category. 
+
+By choosing **See all builds** you will get a flyout that provides more details, such as the build number, the update channel that build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
+
+
+## Channels insight
+
+The **Channels** insight shows you the number of builds in your environment by update channel and their support status. Choosing **Show all channels** will show you a flyout with additional information. From the flyout you can select a given update channel to see a list of devices configured to use that update channel.  
+
+## Devices insight
+
+The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there you can select any device in the table to show a flyout with additional information about that specific device.
+
+The flyout for a specific device shows the following information:
+
+| Heading | Description |
 |:-----|:-----|
 | Device name | The name of the device |
 | Last seen | The last time the device checked in |
-| Status |	Marks if the device is active or inactive |
 | Manufacturer | The device manufacturer |
-| Model Family | Device model family |
+| Model family | The device model family |
 | Model | The device model  |
-| Installed RAM | RAM installed on the device |
-| OS Family | Which OS is running on the device |
-| OS Version| Which version of the OS is running on the device |
-| OS Build| What is the build number of the OS running on the device |
-| Free Storage| Remaining storage on the drive on which Office is installed |
-| Total Storage| The total storage on the drive on which Office is installed |
+| Total RAM | The amount of RAM installed on the device |
+| OS family | Which operating system is running on the device |
+| OS version| Which version of the operating system is running on the device |
+| OS build| The build number of the operating system running on the device |
+| Free storage| Remaining storage on the drive on which Office is installed |
+| Total storage| The total storage on the drive on which Office is installed |
 | Last signed in user | Information about who the last signed in user was |
-| Office Version| Which Office version is installed |
-| Office Build| The Office build string installed |
-| Office Channel| The office channel the device is receiving updates from |
-| Office apps (Word, Excel, PowerPoint, etc.)| A list of the Office apps installed on the device |
-| Office Add-ins | A list of the COM add-ins that are installed on the device. This excludes inbox add-ins |
-| Use macros | Has the device recently opened a file with a macro |
+| Version| Version of Office that is installed on the device. |
+| Build| The build of Office that is installed on the device. |
+| Update channel| The update channel that Office is configured to receive Office updates from |
+| Office apps| A list of the Office apps installed on the device |
+| Office Add-ins | A list of the COM add-ins that are installed on the device. This excludes Add-ins that are part of the Office installation.|
+| Macro files | Has the device recently opened a macro enabled file |
 
 > [!NOTE]
-> Inventory reports the Office channel based on the build installed on a device. If the channel was switched but the device still has builds from the older channel installed, the Inventory will report the old channel.
+> Inventory reports the update channel for Office based on the build installed on the device. If the update channel was switched but the device still has builds from the older channel installed, then inventory will report the old channel.
 
-## Device status
 
-Devices status shows which devices are recently active, which means they've checked in within the last 30 days. Note that devices that don't check in for 180 days are automatically deleted from the system. If a device checks in again, it will be placed back in the active state.
+## Add-ins insight
 
-## Add-in view
+The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed in your organization.
 
-The add-in view shows the Office add-ins on the devices in your organization. The add-in view shows details for add-ins across the devices, including the following information:
+If you choose **Show all add-ins**, you can see a table with the following information:
 
-| Item | Description |
+| Column heading | Description |
 |:-----|:-----|
-| Add-in Name | The name of the add-in |
-| Publisher | The publisher of the add-in |
-| Version | The version number of the add-in. If there are multiple versions of the add-in, this will state "Multiple" |
-| Number of versions | The number of versions installed across your devices |
-| Number of installs | The number of add-in installs across your devices |
+| Name| The name of the add-in. |
+| Version | The version number of the add-in. If there are multiple versions of the add-in installed on devices in your organization, you will see **Mutliple**. |
+| Publisher | The publisher of the add-in. |
+| Number of versions | The number of different versions of the add-in that are installed on devices in your organization. |
+| Number of devices | The number of devices in your organization that the add-in is installed on. |
 
-You can drill down from an add-in to see the versions of that add-in in your organization. You can then drill down into the details of the devices on a given version of an add-in.
+You can drill down to see details about an add-in by clicking on its name. Those details include all the versions of that add-in that are installed in your organization, the architecture of the add-in, and the number of devices running that specific version of the add-in. You can then drill down further to see a list of the devices that a specific version of the add-in is installed on.
 
 > [!NOTE]
-> Add-ins installed as a part of Microsoft 365 Apps for enterprise won’t appear in the table.
+> Add-ins that are installed as part of Microsoft 365 Apps for enterprise won’t appear in the table.
+
+## Inventory search
+
+If you need to find a specific device or add-in, you can use the search box located at the top right corner of the page.
+
+## Inventory cleanup
+
+Devices will send a heartbeat once a day to inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. 
+
 
 ## Export inventory views
 
-You can export the inventory views to .csv format so you can import your data into other tools. To use export, filter the views down to the selection of data you wish to export, then click the export button on the top left of the table. This will export the current filtered view of data up to a limit of the top 8000 devices. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
+You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, filter the view down to the selection of data you wish to export. Then, choose **Export** at the top of the table. This will export the current filtered view of data, up to a limit of the top 8,000 devices. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
