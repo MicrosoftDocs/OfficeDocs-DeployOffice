@@ -27,7 +27,7 @@ To view the inventory for your environment, the following requirements must be m
 - Client devices can reach the following endpoints: 
   - `https://login.live.com`
   - `https://*.config.office.com`
-  - `https://insights.office.net`
+  - `https://*.insights.office.net`
 
 ## How to view inventory
 
@@ -78,7 +78,7 @@ The flyout for a specific device shows the following information:
 | OS build| The build number of the operating system that is running on the device |
 | Free storage| The remaining storage on the drive on which Office is installed |
 | Total storage| The total storage on the drive on which Office is installed |
-| Last signed in user | Information about who the last signed in user on the device was |
+| Last signed in user and email | Information about who the last signed in user on the device was |
 | Version| The version of Office that is installed on the device |
 | Build| The build of Office that is installed on the device |
 |Release date|The release data of that build of Office|
@@ -88,7 +88,7 @@ The flyout for a specific device shows the following information:
 | Macro files | Whether the device has recently opened a macro enabled file |
 
 > [!NOTE]
-> The inventory reports the update channel for Office based on the build installed on the device. If the update channel was switched but the device still has builds from the older channel installed, then the inventory will report the old channel.
+> The inventory reports the update channel for Office based on the build installed on the device. If the update channel was recently changed but the device hasn't completed the process of switching to the new update channel, then the inventory will still report the previous update channel.
 
 
 ## Add-ins insight
@@ -127,4 +127,4 @@ You can export the inventory views to .csv format so that you can import your da
 
 If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
 
-In a small number of cases, some devices may appear more than once in the inventory. This mainly occurs with non-persisted VDI environments.
+In a small number of cases, some devices may appear more than once in the inventory. This mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
