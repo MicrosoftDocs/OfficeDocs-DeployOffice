@@ -52,11 +52,11 @@ You can use the inventory page to see information about the devices in your orga
 
 ## Security update status
 
-You can use the security update status page in the Microsoft 365 Apps admin center to see the which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
+You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
 
 ## What's new in preview
 
-The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, click a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
+The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, choose a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
 
 > [!NOTE]
 > Preview features aren't available to everyone and are subject to change.

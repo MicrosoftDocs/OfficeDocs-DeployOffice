@@ -127,4 +127,4 @@ You can export the inventory views to .csv format so that you can import your da
 
 If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
 
-In a small number of cases, some devices may appear more than once in the inventory. This mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
+In a few cases, some devices may appear more than once in the inventory. This duplication mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
