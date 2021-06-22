@@ -13,7 +13,7 @@ description: "Guidance for Office admins on how to use the security update statu
 
 # Overview of the security update status report in the Microsoft 365 Apps admin center
 
-The security update status page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into which devices have installed the most security updates for Office. This information can help you keep your environment secure.
+The **Security Update Status** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into which devices have installed the most security updates for Office. This information can help you keep your environment secure.
 
 ## Requirements for using security update status
 

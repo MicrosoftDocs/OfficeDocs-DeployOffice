@@ -13,7 +13,9 @@ description: "Guidance for Office admins on how to use the inventory feature in 
 
 # Overview of inventory in the Microsoft 365 Apps admin center
 
-You can use the inventory page in the Microsoft 365 Apps admin center to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device.
+The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into the state of Office installations on devices in your organization. These insights can help you identify issues with those Office installations, such as identifying devices that are running an older, unsupported build of Office. Insights are also available about add-ins that are installed on those devices.
+
+From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device.
 
 ## Requirements for using inventory
 
@@ -29,7 +31,7 @@ To view inventory for your environment, the following requirements must be met:
 
 ## How to view inventory
 
-To view an inventory of devices in your organization with Microsoft 365 Apps, perform the following steps:
+To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com), and then go to **Health** > **Inventory** in the navigation pane.
 2. If you haven't viewed inventory before, complete the setup wizard.
@@ -38,7 +40,7 @@ To view an inventory of devices in your organization with Microsoft 365 Apps, pe
 
 ## Inventory insights dashboard
 
-The first page in inventory is the insights dashboard. This pages show you insights across the devices in your organization, including the following information:
+The first page in inventory is the insights dashboard. This page shows you insights across the devices in your organization, including the following information:
 
 - The number of different Office builds, devices on those builds, and their support status.
 - The number of  different Office update channels, number of different builds from those update channels, and their support status.
@@ -48,18 +50,18 @@ The first page in inventory is the insights dashboard. This pages show you insig
 
 ## Office build spread insight
 
-The **Office build spread** insight shows you a view of each Office build installed on devices in your organization, grouped by build number or unsupported builds. You can hover over the insight to get counts of devices per build or in the unsupported category. 
+The **Office build spread** insight shows you a view of each Office build installed on devices in your organization, grouped by build number or by unsupported builds. You can hover over the insight to get counts of devices per build or in the unsupported category. 
 
-By choosing **See all builds** you will get a flyout that provides more details, such as the build number, the update channel that build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
+By choosing **See all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
 
 
 ## Channels insight
 
-The **Channels** insight shows you the number of builds in your environment by update channel and their support status. Choosing **Show all channels** will show you a flyout with additional information. From the flyout you can select a given update channel to see a list of devices configured to use that update channel.  
+The **Channels** insight shows you the number of builds in your environment by update channel and their support status. Choosing **Show all channels** will show you a flyout with additional information. From the flyout, you can select a given update channel to see a list of devices configured to use that update channel.  
 
 ## Devices insight
 
-The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there you can select any device in the table to show a flyout with additional information about that specific device.
+The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device.
 
 The flyout for a specific device shows the following information:
 
@@ -71,18 +73,19 @@ The flyout for a specific device shows the following information:
 | Model family | The device model family |
 | Model | The device model  |
 | Total RAM | The amount of RAM installed on the device |
-| OS family | Which operating system is running on the device |
-| OS version| Which version of the operating system is running on the device |
-| OS build| The build number of the operating system running on the device |
-| Free storage| Remaining storage on the drive on which Office is installed |
+| OS family | The operating system that is running on the device |
+| OS version| The version of the operating system that is running on the device |
+| OS build| The build number of the operating system that is running on the device |
+| Free storage| The remaining storage on the drive on which Office is installed |
 | Total storage| The total storage on the drive on which Office is installed |
-| Last signed in user | Information about who the last signed in user was |
-| Version| Version of Office that is installed on the device. |
-| Build| The build of Office that is installed on the device. |
+| Last signed in user | Information about who the last signed in user on the device was |
+| Version| The version of Office that is installed on the device |
+| Build| The build of Office that is installed on the device |
+|Release date|The release data of that build of Office|
 | Update channel| The update channel that Office is configured to receive Office updates from |
 | Office apps| A list of the Office apps installed on the device |
-| Office Add-ins | A list of the COM add-ins that are installed on the device. This excludes Add-ins that are part of the Office installation.|
-| Macro files | Has the device recently opened a macro enabled file |
+| Office Add-ins | A list of the COM add-ins that are installed on the device. This list excludes Add-ins that are part of the Office installation.|
+| Macro files | Whether the device has recently opened a macro enabled file |
 
 > [!NOTE]
 > Inventory reports the update channel for Office based on the build installed on the device. If the update channel was switched but the device still has builds from the older channel installed, then inventory will report the old channel.
@@ -90,14 +93,14 @@ The flyout for a specific device shows the following information:
 
 ## Add-ins insight
 
-The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed in your organization.
+The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed on devices in your organization.
 
 If you choose **Show all add-ins**, you can see a table with the following information:
 
 | Column heading | Description |
 |:-----|:-----|
 | Name| The name of the add-in. |
-| Version | The version number of the add-in. If there are multiple versions of the add-in installed on devices in your organization, you will see **Mutliple**. |
+| Version | The version number of the add-in. If there are multiple versions of the add-in installed on devices in your organization, you will see **Multiple**. |
 | Publisher | The publisher of the add-in. |
 | Number of versions | The number of different versions of the add-in that are installed on devices in your organization. |
 | Number of devices | The number of devices in your organization that the add-in is installed on. |
@@ -109,7 +112,7 @@ You can drill down to see details about an add-in by clicking on its name. Those
 
 ## Inventory search
 
-If you need to find a specific device or add-in, you can use the search box located at the top right corner of the page.
+If you need to find a specific device or add-in, you can use the search box located at the top of the page.
 
 ## Inventory cleanup
 
@@ -118,4 +121,4 @@ Devices will send a heartbeat once a day to inventory. If a device hasn't sent a
 
 ## Export inventory views
 
-You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, filter the view down to the selection of data you wish to export. Then, choose **Export** at the top of the table. This will export the current filtered view of data, up to a limit of the top 8,000 devices. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
+You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, filter the view down to the selection of data you wish to export. Then, choose **Export** at the top of the table. This command will export the current filtered view of data, up to a limit of the top 8,000 devices. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
