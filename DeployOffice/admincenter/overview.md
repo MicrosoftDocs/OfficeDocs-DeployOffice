@@ -46,20 +46,20 @@ For more information, see [Overview of the Office Customization Tool](../overvie
 
 Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
 
-## What's new in preview
-
-The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, click a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
-
-> [!NOTE]
-> Preview features aren't available to everyone and are subject to change.
-
-### Inventory
+## Inventory
 
 You can use the inventory page to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device. For more information, see [Overview of inventory](inventory.md).
 
-### Security update status
+## Security update status
 
-You can use the security update status page in the Microsoft 365 Apps admin center to see the which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
+You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
+
+## What's new in preview
+
+The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, choose a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
+
+> [!NOTE]
+> Preview features aren't available to everyone and are subject to change.
 
 ### Servicing profile
 
