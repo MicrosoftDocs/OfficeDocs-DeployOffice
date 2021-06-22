@@ -19,7 +19,7 @@ From the **Inventory** page, you can drill down to see detailed information abou
 
 ## Requirements for using inventory
 
-To view inventory for your environment, the following requirements must be met:
+To view the inventory for your environment, the following requirements must be met:
 
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
 - A version of Windows 10 supported by Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business
@@ -34,13 +34,13 @@ To view inventory for your environment, the following requirements must be met:
 To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Health** > **Inventory** in the navigation pane.
-2. If you haven't viewed inventory before, complete the setup wizard.
+2. If you haven't viewed the inventory before, complete the setup wizard.
 3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
 
 
 ## Inventory insights dashboard
 
-The first page in inventory is the insights dashboard. This page shows you insights across the devices in your organization, including the following information:
+The first page of **Inventory** is the insights dashboard. This page shows you insights across the devices in your organization, including the following information:
 
 - The number of different Office builds, devices on those builds, and their support status.
 - The number of  different Office update channels, number of different builds from those update channels, and their support status.
@@ -88,7 +88,7 @@ The flyout for a specific device shows the following information:
 | Macro files | Whether the device has recently opened a macro enabled file |
 
 > [!NOTE]
-> Inventory reports the update channel for Office based on the build installed on the device. If the update channel was switched but the device still has builds from the older channel installed, then inventory will report the old channel.
+> The inventory reports the update channel for Office based on the build installed on the device. If the update channel was switched but the device still has builds from the older channel installed, then the inventory will report the old channel.
 
 
 ## Add-ins insight
@@ -116,9 +116,15 @@ If you need to find a specific device or add-in, you can use the search box loca
 
 ## Inventory cleanup
 
-Devices will send a heartbeat once a day to inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. 
+Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. 
 
 
 ## Export inventory views
 
 You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, filter the view down to the selection of data you wish to export. Then, choose **Export** at the top of the table. This command will export the current filtered view of data, up to a limit of the top 8,000 devices. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
+
+## Missing or duplicate devices
+
+If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
+
+In a small number of cases, some devices may appear more than once in the inventory. This mainly occurs with non-persisted VDI environments.
