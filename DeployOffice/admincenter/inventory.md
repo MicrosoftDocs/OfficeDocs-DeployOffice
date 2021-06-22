@@ -33,7 +33,7 @@ To view inventory for your environment, the following requirements must be met:
 
 To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
-1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com), and then go to **Health** > **Inventory** in the navigation pane.
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Health** > **Inventory** in the navigation pane.
 2. If you haven't viewed inventory before, complete the setup wizard.
 3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
 
