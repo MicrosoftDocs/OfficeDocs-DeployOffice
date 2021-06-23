@@ -88,7 +88,8 @@ The flyout for a specific device shows the following information:
 | Macro files | Whether the device has recently opened a macro enabled file |
 
 > [!NOTE]
-> The inventory reports the update channel for Office based on the build installed on the device. If the update channel was recently changed but the device hasn't completed the process of switching to the new update channel, then the inventory will still report the previous update channel.
+> - For a list of all the inventory information that is collected from devices, see [Data sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center](inventory-data.md).
+> - The inventory reports the update channel for Office based on the build installed on the device. If the update channel was recently changed but the device hasn't completed the process of switching to the new update channel, then the inventory will still report the previous update channel.
 
 
 ## Add-ins insight
