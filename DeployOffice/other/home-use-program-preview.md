@@ -14,8 +14,7 @@ hideEdit: true
 # (Preview) In-product notification for Home Use Program (HUP) employee benefit
 
 > [!IMPORTANT]
-> - This article is for a preview program that isn’t available to everyone and is subject to change.
-> - The information in this article applies only to organizations that receive a Message center post (in the Microsoft 365 admin center) about this preview program.
+> The preview for this feature has ended as the feature is now in production. You will receive a notification in the Message center when the feature is ready to roll out to your organization along with instructions on how to manage it or turn it off. 
 
 Microsoft is releasing a limited preview to a new in-product notification feature that informs qualifying end users about the Home Use Program (HUP) employee benefit. The notification will be shown to your users in Word, Excel, PowerPoint, and Outlook apps on devices running Windows. This feature is only for Office 365 (or Microsoft 365) subscription clients and is available with Version 2008 or later of Microsoft 365 Apps for enterprise.
 

@@ -28,15 +28,17 @@ The following information outlines what you can expect from the rollout of this 
 
 The Home Use Program (HUP) is an employee purchase program for Microsoft’s valued customers. HUP provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft and you do not need to take any additional steps to activate the benefit for your users. If you are unsure of whether your organization is eligible for this program, visit https://www.microsoft.com/home-use-program/resources.
 
+Please ensure your custom domains are added in Azure Active Directory. Employees with email addresses that use the domain you add will be eligible for the Microsoft Home Use Program. For instructions on how to add custom domains, see [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain). 
+
 The Home Use Program helps your employees become more proficient and productive with Microsoft 365 at home, increasing employee satisfaction while lowering the cost of IT help and training. Skill and experience grow from personal use and translate to higher productivity, satisfaction, and savings for your company.
 
 ## What is the user experience?
 
-The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows for Version 2008 or later of Microsoft 365 Apps for enterprise. For your organization, the notification will begin appearing on the start date indicated in the Message center post sent to you.
+The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows for Version 2008 or later of Microsoft 365 Apps for enterprise. For your organization, the notification will begin appearing on the start date indicated in the Message center post sent to you. Each user will see a maximum of one notification per month across all their apps and devices, even if they have multiple Windows devices or virtual machines.
 
 This notification will be automatically enabled for users in your organization who are in the United States. You can choose to [turn off these notifications](#how-to-turn-off-notifications-about-hup) for some or all of your users by using a policy setting. You can use the same policy setting to enable these notifications for users in your organization who are not in the United States.
 
-If enabled, users will see one notification total per month across all their apps. The notification will be similar to the following screenshot, localized to the language setting of the user’s device.
+If enabled, users will see one notification total per month across all their apps and devices. The notification will be similar to the following screenshot, localized to the language setting of the user’s device.
 
 ![Screenshot showing a document in Word, with a message about the Home Use Program showing underneath the ribbon.](../images/other/home-use-program-notification.png)
 
