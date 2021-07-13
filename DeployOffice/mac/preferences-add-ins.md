@@ -17,7 +17,7 @@ description: "Shows IT Pros how to set a preference to prevent users from instal
 
 ***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
-If you’re an admin, you may want to prevent Mac users from installing and running Office add-ins for Word, Excel, and PowerPoint. To do that, you can configure a preference using the following information:
+If you’re an admin, you may want to prevent Mac users from installing and running Office add-ins for Word, Excel, and PowerPoint. To do that, configure a preference using the following information.
 
 |Category|Details|
 |:-----|:-----|
@@ -27,9 +27,9 @@ If you’re an admin, you may want to prevent Mac users from installing and runn
 |Possible values |false  *(default)*  <br/> true |
 |Availability|16.29 or later |
 
-Setting the key to `true` will also disable default add-ins including Wikipedia, Bing Maps, People Graph, and Microsoft Visio Data Visualizer. But users will still be able to run admin-managed add-ins.
+Setting the key to `true` also disables default add-ins including Wikipedia, Bing Maps, People Graph, and Microsoft Visio Data Visualizer. Users are still able to run admin-managed add-ins.
 
-If you want to disable all add-ins from running, even add-ins that are admin-managed, configure the following preference:
+If you want to disable all add-ins from running, even add-ins that are admin-managed, configure the following preference.
 
 |Category|Details|
 |:-----|:-----|
