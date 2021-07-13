@@ -1,5 +1,5 @@
 ---
-title: "Set a preference to prevent use of add-ins"
+title: "Set a preference to prevent the use of add-ins"
 ms.author: danbrown
 author: pbowden-msft
 manager: laurawi
@@ -13,11 +13,11 @@ recommendations: false
 description: "Shows IT Pros how to set a preference to prevent users from installing and running add-ins for Office for Mac."
 ---
 
-# Set a preference to prevent use of add-ins
+# Set a preference to prevent the use of add-ins
 
 ***Applies to:*** *Office for Mac, Office 2019 for Mac*
 
-If you’re an admin, you may want to prevent Mac users from installing and running Office add-ins for Word, Excel, and PowerPoint. To do that, you can use the following information to configure a preference:
+If you’re an admin, you may want to prevent Mac users from installing and running Office add-ins for Word, Excel, and PowerPoint. To do that, you can configure a preference using the following information:
 
 |Category|Details|
 |:-----|:-----|
@@ -42,7 +42,7 @@ If you want to disable all add-ins from running, even add-ins that are admin-man
 These preferences are CFPreferences-compatible, which means that they can be set using enterprise management software for Mac, such as Jamf Pro.
 
 > [!NOTE]
-> Both of these preferences do not affect Office add-ins in Outlook for Mac or Outlook 2019 for Mac.
+> Neither of these preferences affect Office add-ins in Outlook for Mac or Outlook 2019 for Mac.
 
 
 ## Related articles
