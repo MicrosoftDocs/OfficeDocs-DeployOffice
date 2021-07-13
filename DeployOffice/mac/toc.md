@@ -16,9 +16,10 @@
 
 # Set preferences
 ## [Deploy preferences](deploy-preferences-for-office-for-mac.md)
-## [Macro security](set-preference-macro-security-office-for-mac.md)
-## [Resume Assistant](set-preference-resume-assistant-word.md)
 ## [Outlook preferences](preferences-outlook.md)
+## [Macro security](set-preference-macro-security-office-for-mac.md)
+## [Add-ins](preferences-add-ins.md)
+## [Resume Assistant](set-preference-resume-assistant-word.md)
 ## [Default decryption password (Excel)](set-preference-default-password-excel.md)
 
 # Related articles
