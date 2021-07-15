@@ -103,8 +103,9 @@ If you use Group Policy to configure Microsoft 365 Apps for enterprise settings,
 > - This policy setting was previously named "Use a device-based license for Office 365 ProPlus." If you configured the previously named policy setting, the setting you chose still applies.
 
 ## Troubleshoot device-based licensing for Microsoft 365 Apps for enterprise
+You can view device licensing status by signing in to the [Microsoft 365 Apps admin center](https://config.office.com/) and going to **Health** > **Licensing**. That page shows devices that failed to activate with a device license.  
 
-You can verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
+You can also verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
 If the device hasn't been properly configured for device-based licensing, when a user tries to use Microsoft 365 Apps for enterprise on the device, Office will be in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
 
