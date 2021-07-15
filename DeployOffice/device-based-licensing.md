@@ -45,6 +45,8 @@ After you have verified that your Windows 10 devices and Microsoft 365 Apps for 
 > [!IMPORTANT]
 > Be sure to create the Azure AD group and assign the licenses ***before*** you configure Microsoft 365 Apps for enterprise to use device-based licensing. Otherwise you will receive error messages in Microsoft 365 Apps for enterprise.
 
+> You must assign license in the M365 Admin portal. You cannot assign device-based license in Azure portal. 
+
 ### Add Windows 10 devices to a group in Azure AD and assign that group licenses
 
 To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups. The license assignment is done in the M365 Admin Portal > Billing > Licenses. 
@@ -103,8 +105,9 @@ If you use Group Policy to configure Microsoft 365 Apps for enterprise settings,
 > - This policy setting was previously named "Use a device-based license for Office 365 ProPlus." If you configured the previously named policy setting, the setting you chose still applies.
 
 ## Troubleshoot device-based licensing for Microsoft 365 Apps for enterprise
+You can view device licensing status by sign in to [Microsoft 365 Apps admin center](https://config.office.com/) and go to Health > Licensing. It shows devices that failed activating with device license.  
 
-You can verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
+You can also verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
 If the device hasn't been properly configured for device-based licensing, when a user tries to use Microsoft 365 Apps for enterprise on the device, Office will be in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
 
