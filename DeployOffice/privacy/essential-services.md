@@ -12019,6 +12019,8 @@ The following fields are collected:
 
 ### msupdate.cli.eventhandler.applyupdates.appids
 
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
+
 This event indicates a CLI (client-line interface) command was issued to apply an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
@@ -12060,6 +12062,8 @@ The following fields are collected:
 
 ### msupdate.cli.eventhandler.config
 
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
+
 This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to configure. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
@@ -12100,6 +12104,8 @@ The following fields are collected:
 
 
 ### msupdate.cli.eventhandler.updates
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
 This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to list updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -12305,6 +12311,8 @@ The following fields are collected:
 
 
 ### Optinnotificationaction
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
 This event logs the user's response to opt-in dialog for enrolling into silent updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
