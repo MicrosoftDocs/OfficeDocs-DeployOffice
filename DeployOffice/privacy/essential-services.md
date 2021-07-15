@@ -4283,6 +4283,21 @@ The following fields are collected:
 
   - **ReArmResult** – Indicates the result of rearming the installed key which can extend the expiry of the current license
 
+### Office.SetupOffice.Sdx.Log 
+
+This event is triggered when we redeem an Office offer for the user who either bought a device bundled with an OEM Office pre-entitlement or has entered a product key. This data is used for general log messages.
+
+The following fields are collected:
+
+- **Ctid (Data_Ctid)** - CorrelationId is used for linking different logs withing one redemption session.
+
+- **Environment (Data_ Environment)** - dev environment (Pr, Edog, Prod, Int).
+
+- **Message (Data_Message)** - The log message from setup.office.com. For example, "image ‘../img/spinner.csv’ can’t be loaded, cdn is used."
+
+- **Type (Data_Type)** - The type of log message (Error, Warning, Info)
+
+
 ### OneNote.EnrollmentResult
  
 This event logs the status upon Intune enrollment.  This scenario is specific to Intune enabled accounts.
