@@ -1687,7 +1687,7 @@ All characters are also possible properties. This helps us understand the charac
 
 #### app.launch.report
 
-This event lets us detect and fix issues where Outlook is starting slowly or incompletely, making it difficult for users to use our app. This includes information on the specific features that were enabled and how long parts of the startup took.
+This event is triggered when Outlook starts slowly or incompletely. The data collected provides information on the specific features that were enabled and how long parts of the startup took.  It allows us to detect and fix the cause of the issues.
 
 The following fields are collected: 
 
@@ -8786,11 +8786,13 @@ The following fields are collected:
 
 #### send.message
 
-Used for monitoring possible negative impact on the performance and health of sending email messages.
+Data collected indicates possible negative impact on the performance and health of sending email messages. The data is used to understand if feature is functioning successfully and to plan feature improvement for images in emails.
 
 The following fields are collected:
   
 - **account** - tracks the account that performed the action
+
+- **compose_addressing_duration** - indicates the total time user spends on To/Cc/Bcc fields
 
 - **compose_duration** - tracks the total time user took to compose the message including multiple drafts session
 
