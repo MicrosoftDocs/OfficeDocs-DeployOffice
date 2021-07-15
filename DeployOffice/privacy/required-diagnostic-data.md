@@ -1322,6 +1322,28 @@ The following fields are collected:
 
   - **OfficeArchitecture** - Architecture of the Office client
 
+
+#### Office.Programmability.Addins.RibbonButtonClick
+
+The event is generated the first time in a session the user clicks a button added to the ribbon by a specific add-in. If the session spans multiple days, this telemetry will be sent once per day instead. The data is used in two ways: 1. When an add-in breaks, knowing how much users truly use the add-in will help us triage the issue. 2. To display to admins as part of COM add-in management scenarios in add-in Inventory and as part of planned add-in health scenarios in Microsoft 365 Apps health. Admins will be able to monitor add-in usage per device, letting them disable or uninstall unused COM add-ins.
+
+The following fields are collected:
+
+- **Add-inTimeDateStamp** - The add-in timestamp from the DLL metadata
+
+- **CLSID** - The add-in class identifier
+
+- **Description** - The add-in description
+
+- **FileName** - The add-in file name, excluding the file path
+
+- **FriendlyName** - The add-in friendly name
+
+- **OfficeApplication** - The Office application currently executing
+
+- **ProgID** - The add-in Prog identifier
+
+
 #### Office.Visio.Visio.AddonLoad
 
 Captures errors when a solution fails to load. Essential to debug addon load errors in Visio.
@@ -2672,6 +2694,20 @@ The following fields are collected:
 - **is_remembered** - whether the preference to launch in a new window from the reported location has been saved by user.
 
 - **multi_window_origin** - the location within the app where the interaction to launch another app screen in a new window happens.
+
+
+#### notification.center
+
+This event allows us to track when users enter and exit the notification center in addition to the count of unseen notifications. This helps us make sure that the notification center is consistent with all other clients. We also track when a user taps on a notification so we can tell what type it is.
+
+The following fields are collected: 
+
+- **action** - the action taken by the user (closed, opened, notification_tapped)
+
+- **type** - the notification type, as of now it will always be reaction
+
+- **unseen_count** - how many notifications in the current view have not been seen before
+ 
 
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
@@ -5833,6 +5869,19 @@ The following fields are collected:
   - **Data.ExitReason** - An enumerator value telling the exit reason, if the Precheck failed
 
   - **Data.Log** - Custom log message indicating the precheck success or failure
+
+
+#### Office.OfficeMobile.Fluid.FluidFileOperations
+
+This event is collected for Office applications when a fluid file operation takes place. Data is used to track feature health and understand user-experience based on the operation information.
+
+The following fields are collected: 
+
+- **FailureReason** - If the operation was a failure. Contains the error code of the failure.
+
+- **Result** - A boolean value that indicates the end result of the operation.
+
+- **Type** - The operation type (for example, Open).
 
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
