@@ -11201,7 +11201,7 @@ The following fields are collected:
 
 - **device_brand** - Device brand (manufacturer or carrier) as indicated by android.os.Build#BRAND
 
-- **device_ID** - Device unique ID (IMEI)
+- **device_ID** - Device unique ID (IMEI) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **device_manufacturer** - Device manufacturer as indicated by android.os.Build#MANUFACTURER
 
@@ -14464,6 +14464,8 @@ The following fields are collected for Android only:
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
 - **large_text** - Tells us if the device has large text setting turned on to help us detect issues related to this setting
+
+- **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
