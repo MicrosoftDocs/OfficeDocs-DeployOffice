@@ -850,6 +850,8 @@ specific device)
 
 - **Issilent** - False if UI was shown; true if it was a background event.
 
+- **oneauth_Activeflights** - The list of flights that are active in the session, used for AB testing.
+
 - **oneauth_api** - Specifies the public API of OneAuth that was invoked.
 
 - **oneauth_Domain** - If the API call resulted in an error, this is the system domain of that error.
@@ -3176,22 +3178,16 @@ This event is logged when the call to the webservice made within the Click-to-Ru
 
 The following fields are collected:
 
-- **ActionDetail** -  Additional details for when a failure occurs.
-   - If the HTTP request succeeds, ActionDetail will be 0.
-   - If the Result field is not OK (i.e. not 0), which means that the request is not sent, this field will log the internal error code which is the same as the Result field.
-   - If the Result field is OK (i.e. 0), which means that the HTTP response code >= 300, it will log the HTTP response code (e.g. 404).
+- **ActionDetail** - Additional details for when a failure occurs.
 
-- **Result** - Numeric error code flags returned by the Office webservice call APIs. – e.g. 3 would mean that there was a problem initializing the HTTP headers.
+- **Result** - Numeric error code flags returned by the Office webservice call APIs. For example, 3 would mean that there was a problem initializing the HTTP headers.
 
-- **Type** - Additional type information. In the case of the Inventory, this information specifies the type of payload being sent – e.g. full or just a delta of changes. 
+- **Type** - Additional type information. In the case of the Inventory, this information specifies the type of payload being sent. For example, full or just a delta of changes. 
 
--  **WebCallSource** - An enumeration value (specified as an integer) indicating the Serviceability Manager add-on that was the source of the call:
-   - Inventory: 0
-   - Inventory Configuration: 1
-   - Inventory Policy: 2
-   - Inventory Network Status: 3
-   - Serviceability Manager: 4
-   - Manageability: 5
+- **Version** - The full four-part version number of Office. For example, 16.0.10000.10000. (Note that for these events, the standard version field is populated with the Windows version as this runs as part of a Windows process.)
+
+-  **WebCallSource** - An enumeration value (specified as an integer) indicating the Serviceability Manager add-on that was the source of the call.
+   
 
 ### Office.ServiceabilityManager.WebserviceFailure
 
@@ -4286,6 +4282,21 @@ The following fields are collected:
   - **OpportunisticTokenRenewalAttempted** – Indicates if we attempted an opportunistic renewal for the user in shared computer activation mode
 
   - **ReArmResult** – Indicates the result of rearming the installed key which can extend the expiry of the current license
+
+### Office.SetupOffice.Sdx.Log 
+
+This event is triggered when we redeem an Office offer for the user who either bought a device bundled with an OEM Office pre-entitlement or has entered a product key. This data is used for general log messages.
+
+The following fields are collected:
+
+- **Ctid (Data_Ctid)** - CorrelationId is used for linking different logs withing one redemption session.
+
+- **Environment (Data_ Environment)** - dev environment (Pr, Edog, Prod, Int).
+
+- **Message (Data_Message)** - The log message from setup.office.com. For example, "image ‘../img/spinner.csv’ can’t be loaded, cdn is used."
+
+- **Type (Data_Type)** - The type of log message (Error, Warning, Info)
+
 
 ### OneNote.EnrollmentResult
  
@@ -12008,6 +12019,8 @@ The following fields are collected:
 
 ### msupdate.cli.eventhandler.applyupdates.appids
 
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
+
 This event indicates a CLI (client-line interface) command was issued to apply an update. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
@@ -12049,6 +12062,8 @@ The following fields are collected:
 
 ### msupdate.cli.eventhandler.config
 
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
+
 This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to configure. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
@@ -12089,6 +12104,8 @@ The following fields are collected:
 
 
 ### msupdate.cli.eventhandler.updates
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
 This event indicates Microsoft Autoupdate Command Line Interface module received an Apple event to list updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
@@ -12294,6 +12311,8 @@ The following fields are collected:
 
 
 ### Optinnotificationaction
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
 This event logs the user's response to opt-in dialog for enrolling into silent updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
