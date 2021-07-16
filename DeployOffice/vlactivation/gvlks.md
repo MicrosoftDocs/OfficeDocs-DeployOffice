@@ -46,6 +46,7 @@ By default, volume licensed versions of Office 2019 and Office 2016 are installe
 ## GVLKs for Office 2016
 |**Product**|**GVLK**|
 |:-----|:-----|
+|Office Mondo 2016  <br/> |HFTND-W9MK4-8B7MJ-B6C4G-XQBR2  <br/> |
 |Office Professional Plus 2016  <br/> |XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99  <br/> |
 |Office Standard 2016  <br/> |JNRGM-WHDWX-FJJG3-K47QV-DRTFM  <br/> |
 |Project Professional 2016  <br/> |YG9NW-3K39V-2T3HJ-93F3Q-G83KT  <br/> |
