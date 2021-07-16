@@ -39,7 +39,8 @@ To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet 
 ## Steps to configure device-based licensing for Microsoft 365 Apps for enterprise
 
 After you have verified that your Windows 10 devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following tasks:
-- Add the Windows 10 devices to a group that's available in Azure AD and assign the appropriate licenses to that group. The license assignment is done in the M365 Admin Portal > Billing > Licenses. 
+- Add the Windows 10 devices to a group that's available in Azure AD.
+- Assign the appropriate licenses to that group by signing into the Microsoft 365 admin center and going to **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 - Configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing.
 
 > [!IMPORTANT]
@@ -47,8 +48,7 @@ After you have verified that your Windows 10 devices and Microsoft 365 Apps for 
 
 ### Add Windows 10 devices to a group in Azure AD and assign that group licenses
 
-To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups. The license assignment is done in the M365 Admin Portal > Billing > Licenses. 
-
+To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups. 
 
 | Group type | Create using these tools |
 |---------|---------|
@@ -57,14 +57,15 @@ To configure device-based licensing, you first need to add your Windows 10 devic
 |Distribution list| On-premises Active Directory and sync to Azure AD with Azure AD Connect <br/><br/>On-premises Exchange Server and sync to Azure AD with Azure AD Connect<br/><br/> Microsoft 365 admin center      |
 |Office 365 | Not supported   (type of group in Azure AD |
 
-
-
 For more information about Azure group management, see the following articles:
 - [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 - [Create a dynamic group and check status](/azure/active-directory/users-groups-roles/groups-create-rule)
 - [Azure AD Connect sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
 After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
+
+> [!IMPORTANT]
+> The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
