@@ -1322,6 +1322,28 @@ The following fields are collected:
 
   - **OfficeArchitecture** - Architecture of the Office client
 
+
+#### Office.Programmability.Addins.RibbonButtonClick
+
+The event is generated the first time in a session the user clicks a button added to the ribbon by a specific add-in. If the session spans multiple days, this telemetry will be sent once per day instead. The data is used in two ways: 1. When an add-in breaks, knowing how much users truly use the add-in will help us triage the issue. 2. To display to admins as part of COM add-in management scenarios in add-in Inventory and as part of planned add-in health scenarios in Microsoft 365 Apps health. Admins will be able to monitor add-in usage per device, letting them disable or uninstall unused COM add-ins.
+
+The following fields are collected:
+
+- **Add-inTimeDateStamp** - The add-in timestamp from the DLL metadata
+
+- **CLSID** - The add-in class identifier
+
+- **Description** - The add-in description
+
+- **FileName** - The add-in file name, excluding the file path
+
+- **FriendlyName** - The add-in friendly name
+
+- **OfficeApplication** - The Office application currently executing
+
+- **ProgID** - The add-in Prog identifier
+
+
 #### Office.Visio.Visio.AddonLoad
 
 Captures errors when a solution fails to load. Essential to debug addon load errors in Visio.
@@ -1687,7 +1709,7 @@ All characters are also possible properties. This helps us understand the charac
 
 #### app.launch.report
 
-This event lets us detect and fix issues where Outlook is starting slowly or incompletely, making it difficult for users to use our app. This includes information on the specific features that were enabled and how long parts of the startup took.
+This event is triggered when Outlook starts slowly or incompletely. The data collected provides information on the specific features that were enabled and how long parts of the startup took.  It allows us to detect and fix the cause of the issues.
 
 The following fields are collected: 
 
@@ -2672,6 +2694,20 @@ The following fields are collected:
 - **is_remembered** - whether the preference to launch in a new window from the reported location has been saved by user.
 
 - **multi_window_origin** - the location within the app where the interaction to launch another app screen in a new window happens.
+
+
+#### notification.center
+
+This event allows us to track when users enter and exit the notification center in addition to the count of unseen notifications. This helps us make sure that the notification center is consistent with all other clients. We also track when a user taps on a notification so we can tell what type it is.
+
+The following fields are collected: 
+
+- **action** - the action taken by the user (closed, opened, notification_tapped)
+
+- **type** - the notification type, as of now it will always be reaction
+
+- **unseen_count** - how many notifications in the current view have not been seen before
+ 
 
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
@@ -5835,6 +5871,19 @@ The following fields are collected:
   - **Data.Log** - Custom log message indicating the precheck success or failure
 
 
+#### Office.OfficeMobile.Fluid.FluidFileOperations
+
+This event is collected for Office applications when a fluid file operation takes place. Data is used to track feature health and understand user-experience based on the operation information.
+
+The following fields are collected: 
+
+- **FailureReason** - If the operation was a failure. Contains the error code of the failure.
+
+- **Result** - A boolean value that indicates the end result of the operation.
+
+- **Type** - The operation type (for example, Open).
+
+
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
 
 The event is collected for the Office app for Android. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close, and save operations performing as expected, and to improve .pdf file operation performance.
@@ -8786,11 +8835,13 @@ The following fields are collected:
 
 #### send.message
 
-Used for monitoring possible negative impact on the performance and health of sending email messages.
+Data collected indicates possible negative impact on the performance and health of sending email messages. The data is used to understand if feature is functioning successfully and to plan feature improvement for images in emails.
 
 The following fields are collected:
   
 - **account** - tracks the account that performed the action
+
+- **compose_addressing_duration** - indicates the total time user spends on To/Cc/Bcc fields
 
 - **compose_duration** - tracks the total time user took to compose the message including multiple drafts session
 
@@ -11199,7 +11250,7 @@ The following fields are collected:
 
 - **device_brand** - Device brand (manufacturer or carrier) as indicated by android.os.Build#BRAND
 
-- **device_ID** - Device unique ID (IMEI)
+- **device_ID** - Device unique ID (IMEI) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **device_manufacturer** - Device manufacturer as indicated by android.os.Build#MANUFACTURER
 
@@ -14462,6 +14513,8 @@ The following fields are collected for Android only:
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
 - **large_text** - Tells us if the device has large text setting turned on to help us detect issues related to this setting
+
+- **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
