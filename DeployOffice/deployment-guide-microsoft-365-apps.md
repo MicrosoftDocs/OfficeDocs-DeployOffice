@@ -74,4 +74,6 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
 
+- [Plan your deploymet of office 365 ProPlus]{plan-office-365-proplus.md}
+
 - [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
