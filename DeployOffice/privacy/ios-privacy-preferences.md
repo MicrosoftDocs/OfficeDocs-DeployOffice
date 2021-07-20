@@ -70,9 +70,6 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 
 If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
-> [!NOTE]
-> We've updated the previous paragraph to clarify that optional diagnostic data is also sent to Microsoft if you don't set this preference.
-
 For other users, such as home users with an Office 365 (or Microsoft 365) subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Settings** > **Privacy Settings**.
 
 
