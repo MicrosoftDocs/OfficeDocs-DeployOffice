@@ -1,7 +1,7 @@
 ---
 title: Configuration options for the Office Deployment Tool
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: reference
