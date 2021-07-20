@@ -71,6 +71,9 @@ If you enable this policy setting, you must choose which level of diagnostic dat
 
 If you disable or don’t configure this policy setting, both optional and required diagnostic data are sent to Microsoft.
 
+> [!NOTE]
+> Even if you choose ***Neither***, required service data will be sent from the user's device to Microsoft. For more information, see [Required service data for Office](required-service-data.md).
+
 For more information about diagnostic data, see the following:
 
 - [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)

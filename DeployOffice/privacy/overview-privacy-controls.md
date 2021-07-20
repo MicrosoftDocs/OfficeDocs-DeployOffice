@@ -48,6 +48,9 @@ Required diagnostic data could include, for example, information about the versi
 
 If you choose to send us optional diagnostic data, required diagnostic data is also included.
 
+> [!NOTE]
+> Even if you choose Neither, required service data will be sent from the user's device to Microsoft. For more information, see [Required service data for Office](required-service-data.md).
+
 As an admin for your organization, you’ll be able to use a policy setting to choose which level of diagnostic data is sent to us. Optional diagnostic data will be sent to Microsoft unless you change the setting. Providing optional diagnostic data better enables the Office engineering team at Microsoft to detect, diagnose, and mitigate issues to reduce impacts to your organization.
 
 Your users won’t be able to change the diagnostic data level for their devices if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
