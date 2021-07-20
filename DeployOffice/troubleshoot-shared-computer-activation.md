@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot issues with shared computer activation for Microsoft 365 Apps"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: troubleshooting

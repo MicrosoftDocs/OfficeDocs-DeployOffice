@@ -1,7 +1,7 @@
 ---
 title: "Plan your enterprise deployment of Microsoft 365 Apps"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article

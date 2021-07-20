@@ -1,7 +1,7 @@
 ---
 title: "Choose how to manage updates to Microsoft 365 Apps"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 udience: ITPro
 ms.topic: article
