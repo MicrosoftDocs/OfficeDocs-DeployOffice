@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise"
-ms.author: jwhit
-author: jwhit-MSFT
+ms.author: danbrown
+author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
