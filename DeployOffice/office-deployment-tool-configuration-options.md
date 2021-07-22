@@ -291,7 +291,7 @@ In the following example, Project Online Desktop Client will be installed on the
   <Add >
       <Product ID="ProjectProRetail" MSICondition="PrjStd,PrjStdR">
          <Language ID="en-us" />
-         <Language ID="MatchPreviousMSI">
+         <Language ID="MatchPreviousMSI" />
       </Product>
   </Add>
   <RemoveMSI />
