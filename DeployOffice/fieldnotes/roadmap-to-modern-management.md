@@ -35,9 +35,9 @@ A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/mic
 How to enable Microsoft 365 Apps health:
 
 1. Sign in to the Apps Admin Center at [config.office.com](https://config.office.com/).
-2. Navigate to **Health** > **Apps health**. Read and accept the Preview Microsoft Software License Terms.
+2. Navigate to **Health** > **Apps health** and choose **Get started** to enable the feature.
 
-It takes about 10 minutes for the service to be provisioned. You can then access:
+It takes up to 3 hours for the service to be provisioned. You can then access:
 
 - Crash rates on a per-application level, grouped by version.
 - Performance metrics, such as application launch times and document load times.
@@ -47,11 +47,16 @@ You can also compare two builds. This feature enables you to quickly assess if a
 
 There's a minimum number of sessions required per app and version. This minimum ensures that Microsoft 365 Apps health can calculate reliable insights. A *session* is the period from launching an application until it's closed. For example, you're likely to see more sessions from an app like Microsoft Excel than Outlook.
 
-If you disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To use Microsoft 365 Apps health, you have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to *Optional*.
+If you disabled Diagnostic Data for Office on your devices, you might only see a subset of your devices or none at all. To get the full benefit from Microsoft 365 Apps health, you have to [enable Diagnostic Data](../privacy/manage-privacy-controls.md#policy-setting-for-diagnostic-data) and set the level to *Optional*.
 
 ## Get insights per device: Inventory and security update status
 
-When you join the Preview program, Microsoft 365 Apps that are installed and running on Current Channel or Monthly Enterprise Channel version 2008 or later start registering in [Inventory](../admincenter/inventory.md). The Inventory page in the Apps Admin Center provides a consolidated view of your Microsoft 365 Apps and key information, such as:
+Another new feature is Inventory. It is specifically tailored for the Microsoft 365 Apps and gives you a full overview of all Microsoft 365 Apps instances on Windows which are activated and connected to your tenant. It is not limited by management or directory domain. So no matter how a device is managed (or not managed at all) or into which directory service it is joined (or still in workgroup mode), Inventory will provide you insights. All devices running at least Version 2008 of Microsoft 365 Apps will automatically register after enabling the feature:
+
+1. Sign in to the Apps Admin Center at [config.office.com](https://config.office.com/).
+2. Navigate to **Inventory** and choose **Get started** to enable the feature.
+
+It usually takes up to 10 minutes for provisioning the service. After this has finished, devices will start to regiseter into the inventory and you can drill through data points like:
 
 - Update channel
 - Versions deployed
@@ -71,12 +76,12 @@ The Microsoft 365 Apps installation itself provides the inventory information, s
 
 Moving your devices to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) provides a good balance between receiving monthly feature and quality updates (similar to [Current Channel](../overview-update-channels.md#current-channel-overview)), while having a predictable cadence with only one update per month.
 
-With these new preview features, consider the following two scenarios when you move devices to the Monthly Enterprise Channel:
+We highly recommend to test out Monthly Enterprise Channel. There are two common ways how you can switch devices over without the need for a re-install:
 
-- If you're planning to adopt Servicing Profiles (see below), devices will automatically be moved to the Monthly Enterprise Channel. In this scenario, there's no need to move devices first.
-- If you want to control the rate of devices switching to Monthly Enterprise Channel, aren't ready to adopt Servicing Profiles yet, or want to manage on-prem bandwidth with existing on-premises tools, you should do the switch first.
+- If you're planning to adopt Servicing Profiles (see below), devices will automatically be moved to Monthly Enterprise Channel if they are in-scope of the selected criteria. In this scenario, there's no need to move devices upfront and everything will happen automatically after setting up Servicing Profiles.
+- If you don't want to adopt Servicing Profiles yet or at a later stage, you can use existing management tools.
 
-If you prefer to move your devices first, detailed guidance is available on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and how to perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
+If you prefer to move your devices using existing tools, detailed guidance for the most common scenarios is available on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and how to perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
 
 ## Prepare your network to receive updates from the internet
 
@@ -104,7 +109,7 @@ Note that Servicing Profiles currently only supports managing Monthly Enterprise
 Before you adopt Servicing Profiles, consider the following factors:
 
 - All devices that match the rule set will be switched over to Monthly Enterprise Channel and kept up to date.
+- All devices that match the rule set will automatically stop accepting updates for Microsoft 365 Apps coming from other sources.
 - There's currently no way to include or exclude specific devices.
-- Double-check if your network can handle the traffic caused by moving devices to Monthly Enterprise Channel and the monthly updates.
 
-If these factors check out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile becomes active immediately when you save the profile. So, if an eligible device checks in with the service right after you finish the wizard, it will get the instructions to move to the latest Monthly Enterprise update.
+If these factors check out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile becomes active immediately when you save the profile. So, if an eligible device checks in with the service right after you finish the wizard, it will get the instructions to move to the latest Monthly Enterprise Channel update.
