@@ -1,5 +1,5 @@
 ---
-title: "GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016"
+title: "GVLKs for KMS and Active Directory-based activation of Office LTSC 2021, Office 2019, and Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -10,18 +10,35 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ROBOTS: NOINDEX, NOFOLLOW
-description: Lists the Generic Volume License Keys (GVLKs) that Office admins use for activating volume licensed versions of Office 2019 and Office 2016, including Project and Visio. 
+description: Lists the Generic Volume License Keys (GVLKs) that Office admins use for activating volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 
 ---
 
-# GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016
+# GVLKs for KMS and Active Directory-based activation of Office LTSC 2021, Office 2019, and Office 2016
 
-***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
 
-  
-By default, volume licensed versions of Office 2019 and Office 2016 are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
+
+By default, volume licensed versions of Office, such as Office LTSC 2021, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
   
 > [!IMPORTANT]
 > These license keys can't be used to activate your personal copy of Office. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759). 
+
+## GVLKs for Office LTSC 2021
+|**Product**|**GVLK**|
+|:-----|:-----|
+|Office LTSC Professional Plus 2021   |  |
+|Office LTSC Standard 2021   |  |
+|Project Professional 2021   |  |
+|Project Standard 2021   |  |
+|Visio LTSC Professional 2021   |  |
+|Visio LTSC Standard 2021    |  |
+|Access LTSC 2021   |  |
+|Excel LTSC 2021   |  |
+|Outlook LTSC 2021  |  |
+|PowerPoint LTSC 2021   |  |
+|Publisher LTSC 2021  |  |
+|Skype for Business 2021   |  |
+|Word LTSC 2021   |  |
   
 ## GVLKs for Office 2019
 |**Product**|**GVLK**|
