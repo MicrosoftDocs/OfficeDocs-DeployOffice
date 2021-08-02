@@ -41,8 +41,16 @@ A servicing profile takes precedence over other management tools, such as Micros
 ## How to apply the servicing profile to a device
 
 1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Servicing profile**. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
-2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You can apply the servicing profile based on a device's servicing channel, available disk space, macro usage, add-ins, and name.
-3. When you complete the wizard, the listed devices will have the servicing profile applied within 2 hours.
+2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
+
+    - The first (and recommended) option will be to use **All Devices**, which will manage all eligible devices on your tenant. This choice will move the device from the channel it’s on to Monthly Enterprise Channel.
+    - The second option is to use **Groups (Preview)**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins.
+
+> [!NOTE]
+> - You can edit these selection rules once the profile has been created by going to the **Settings** tab.
+> - Azure Active Directory registered devices are not supported at this time.
+
+3. When you complete the wizard, the eligible devices will have the servicing profile applied within 2 hours.
 
 ## Using the Servicing Profile
 
