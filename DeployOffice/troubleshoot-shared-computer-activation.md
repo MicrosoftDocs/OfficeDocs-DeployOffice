@@ -99,7 +99,7 @@ This error means that Office has a problem with the user's licensing token on th
   
 <a name="Expires"> </a>
 
-### PRODUCT NOTICE Your shared computer license expires on *date* and we're having trouble renewing it.
+### PRODUCT NOTICE Your shared computer license expires on \<date\> and we're having trouble renewing it.
 
 This error means that Office tried to renew the licensing token automatically, but there was a problem. One possible cause for this is that the shared computer wasn't connected to the internet when Office tried to renew the licensing token with the Office Licensing Service.
   

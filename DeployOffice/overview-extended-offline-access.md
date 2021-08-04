@@ -38,7 +38,7 @@ When Extended Offline Access is enabled on a device, the Office account page for
 
 > **License Information**  
 Device name: PC-XXXXXX  
-License expires: <<date>>  
+License expires: \<date\>  
 To extend this license, go to https://go.microsoft.com/...  
 
 

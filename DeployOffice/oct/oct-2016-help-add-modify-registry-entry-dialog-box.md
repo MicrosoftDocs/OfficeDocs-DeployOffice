@@ -27,7 +27,7 @@ In the **Add/Modify Registry Entry** dialog box, you can configure the following
     
 - Select **Create empty key** if the registry entry does not contain a value name or value data. Some settings are determined by the presence or absence of the registry entry. 
     
-- In the **Value name** type the name for the new registry entry. If you include **Value data**, but leave this field blank, the value is assigned the name `<Default>`. A key can have only one \<Default\> value name. 
+- In the **Value name** type the name for the new registry entry. If you include **Value data**, but leave this field blank, the value is assigned the name \<Default\>. A key can have only one \<Default\> value name. 
     
 - In the **Value data** box, type the value to store in the new registry entry. The data must match the data type. 
     
