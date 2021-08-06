@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
-description: "Provides Office admins with information what versions of Office are supported for connecting to MIcrosoft 365 (and Office 365) services and the implications of using older Office clients."
+description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 (and Office 365) services and the implications of using older Office clients."
 ---
 
 # Office versions and connectivity to Microsoft 365 services
 
-As of October 13, 2020, only these versions of Office are supported for connecting to MIcrosoft 365 (and Office 365) services:
+As of October 13, 2020, only these versions of Office are supported for connecting to Microsoft 365 (and Office 365) services:
 
 - Microsoft 365 Apps for enterprise *(previously named Office 365 ProPlus)*
 - Microsoft 365 Apps for business *(previously named Office 365 Business)*
@@ -27,7 +27,7 @@ Examples of Microsoft 365 services include Exchange Online, SharePoint Online, a
 For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 > [!IMPORTANT]
-> We won’t take any active measures to block other versions of the Office client, such as Office 2013, from connecting to Microsoft 365 services, but these older clients may encounter performance or reliability issues over time.
+> We won’t take any active measures to block other versions of the Office client that are still supported and are up to date, such as Office 2013 with Service Pack 1, from connecting to Microsoft 365 services, but these older clients may encounter performance or reliability issues over time.
 
 ## Impact of using older Office clients to connect to Microsoft 365 services
 
@@ -79,7 +79,7 @@ All versions of Outlook 2019 should be able to connect to Microsoft 365 services
 
 Even though newer versions of Outlook 2013 might be able to connect to Microsoft 365 services, it's not supported and you may encounter performance or reliability issues.
 
-Versions of Outlook that are newer than those listed, but aren't the most current (supported) versions, may experience connectivity issues. To find what is the most current (supported) version, see the following articles:
+Versions of Outlook that are newer than those versions listed, but aren't the most current (supported) versions, may experience connectivity issues. To find what is the most current (supported) version, see the following articles:
 - [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date)
 - [Update history for Office 2016 C2R and Office 2019](/officeupdates/update-history-office-2019)
 - [Latest updates for versions of Outlook that use Windows Installer (MSI)](/officeupdates/outlook-updates-msi)
