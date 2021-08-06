@@ -68,7 +68,7 @@ You should see **\<No installed product keys detected\>**, as shown in the follo
   
 ![No installed product key detected](images/aa1e234d-c2d1-471f-bf7f-9b11adc8b4b4.jpg)
   
-The location of the ospp.vbs script depends on whether you install the 32-bit or 64-bit version of Microsoft 365 Apps and whether you install on a 32-bit or 64 bit version of the operating system. The following table lists the possible locations of the ospp.vbs script.
+The location of the ospp.vbs script depends on whether you install the 32-bit or 64-bit version of Microsoft 365 Apps and whether you install on a 32-bit or 64-bit version of the operating system. The following table lists the possible locations of the ospp.vbs script.
   
 |**Version of Microsoft 365 Apps**|**Version of operating system**|**Location of ospp.vbs file**|
 |:-----|:-----|:-----|
