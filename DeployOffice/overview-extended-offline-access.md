@@ -27,19 +27,19 @@ Extended offline access is designed for users with devices that need to go offli
 ## Online setup of the device for users
 
 To enable extended offline access for users in your organization:
-- Admin installs Microsoft 365 Apps and enables extended offline access by deploying the [group policy](#enable-extended-offline-access-with-group-policy) or the [registry](#enable-extended-offline-access-with-the-registry).
+- Admin installs Microsoft 365 Apps and enables extended offline access by deploying the [Group Policy](#enable-extended-offline-access-with-group-policy) or the [registry](#enable-extended-offline-access-with-the-registry).
 - Once deployed, the user signs into Windows using an Azure AD account.
 - User launches an Office app like Word or Excel.
 - User confirms Office license is valid for 180 days.
 
 ## User experience for extended offline access
 
-When Extended Offline Access is enabled on a device, the Office account page for Microsoft 365 Apps on the device displays the license expiration date and links to information about extending the license.
+When extended offline access is enabled on a device, the Office account page for Microsoft 365 Apps on the device displays the license expiration date and a link to information about extending the license.
 
 > **License Information**  
 Device name: PC-XXXXXX  
-License expires: <<date>>  
-To extend this license, go to https://go.microsoft.com/...  
+License expires: *\<date\>*  
+To extend this license, go to https://go.microsoft.com/fwlink/?linkid=2109092
 
 
 ## Enable extended offline access with Group Policy
@@ -76,7 +76,7 @@ To disable the setting, set the following:
 
 When a device loses internet access, the user can continue to use Office without an internet connection for up to 180 days.  When 15 days remain, the user receives an in-client notification to connect to the internet so the license can be verified. If possible, the user should connect the device to the internet, which will enable an additional 180 days. 
 
-If the device cannot connect to the internet every 180 days, you can still [extend the Office license for offline use](https://support.microsoft.com/office/extend-your-office-license-for-offline-use-06de5162-e230-4ce6-83bb-e6f06190a8f5).
+If the device cannot connect to the internet every 180 days, you can still [extend the Office license for offline use](https://support.microsoft.com/office/06de5162-e230-4ce6-83bb-e6f06190a8f5).
 
 ## Considerations when using extended offline access
 
