@@ -27,7 +27,7 @@ Examples of Microsoft 365 services include Exchange Online, SharePoint Online, a
 For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 > [!IMPORTANT]
-> We won’t take any active measures to block other versions of the Office client that are still supported and are up to date, such as Office 2013 with Service Pack 1, from connecting to Microsoft 365 services, but these older clients may encounter performance or reliability issues over time.
+> We won’t take any active measures to block other versions of the Office client that are still supported and are up to date, such as Office 2013 with Service Pack 1, from connecting to Microsoft 365 services. But these older clients may encounter performance or reliability issues over time.
 
 ## Impact of using older Office clients to connect to Microsoft 365 services
 
