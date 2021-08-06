@@ -17,7 +17,7 @@ description: "Overview of extended offline access for Microsoft 365 Apps."
 
 # Overview of extended offline access for Microsoft 365 Apps
 
-Extended offline access enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. To use extended offline access, you must have version 2002 of Microsoft 365 Apps or later. To enable extended offline access, your organization must have a Microsoft 365 Apps license subscription.
+Extended offline access enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. To use extended offline access, you must have Version 2002 of Microsoft 365 Apps or later. To enable extended offline access, your organization must have a Microsoft 365 Apps license subscription.
 
 > [!IMPORTANT]
 > Extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
