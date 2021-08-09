@@ -54,7 +54,7 @@ You can use the inventory page to see information about the devices in your orga
 
 You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
 
-### Servicing profile
+## Servicing profile
 
 With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. For more information, see [Overview of servicing profile](servicing-profile.md).
 
