@@ -6,6 +6,4 @@
 ## [Microsoft 365 Apps health](microsoft-365-apps-health.md)
 ## [Inventory](inventory.md)
 ## [Security update status](security-update-status.md)
-
-## Preview features
-### [Servicing profile (preview)](servicing-profile.md)
+## [Servicing profile)](servicing-profile.md)

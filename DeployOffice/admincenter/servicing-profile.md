@@ -13,9 +13,6 @@ description: "Provides Office admins information about the servicing profile in 
 
 # Overview of servicing profile in the Microsoft 365 Apps admin center
 
-> [!IMPORTANT]
-> This is pre-release documentation for a preview program that isn’t available to everyone and is subject to change.
-
 Servicing profiles let you automatically deliver monthly Office updates for specific users or groups. You can apply a servicing profile to a set of devices in the Microsoft 365 Apps admin center. When you apply the profile, the following changes occur:
 
 - The devices are moved to the Monthly Enterprise Channel
@@ -40,7 +37,7 @@ A servicing profile takes precedence over other management tools, such as Micros
 
 ## How to apply the servicing profile to a device
 
-1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Servicing profile**. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Servicing profile**. 
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
 
     - The first (and recommended) option will be to use **All Devices**, which will manage all eligible devices on your tenant. This choice will move the device from the channel it’s on to Monthly Enterprise Channel.
@@ -52,7 +49,7 @@ A servicing profile takes precedence over other management tools, such as Micros
 
 3. When you complete the wizard, the eligible devices will have the servicing profile applied within 2 hours.
 
-## Using the Servicing Profile
+## Using the servicing profile
 
 You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including details on the next build rollout, projected waves, and information on any device failures and issues. From there  you can click into **Devices**, **Actions**, **Issues**, and **Settings** to get more information on devices managed by the servicing profile.
 

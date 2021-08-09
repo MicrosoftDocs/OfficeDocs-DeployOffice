@@ -54,6 +54,10 @@ You can use the inventory page to see information about the devices in your orga
 
 You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. For more information, see [Overview of the security update status](security-update-status.md).
 
+### Servicing profile
+
+With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. For more information, see [Overview of servicing profile](servicing-profile.md).
+
 ## What's new in preview
 
 The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, choose a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
@@ -61,6 +65,4 @@ The following features and services have been recently released in preview or re
 > [!NOTE]
 > Preview features aren't available to everyone and are subject to change.
 
-### Servicing profile
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. For more information, see [Overview of servicing profile](servicing-profile.md).
