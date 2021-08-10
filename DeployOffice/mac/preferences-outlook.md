@@ -111,7 +111,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 
 ### Disable import
 
-Prevent users from being able to import archive files (.olm and .pst) and Outlook 2011 for Mac data. 
+Prevent users from being able to import archive files (.olm and .pst) and Outlook for Mac 2011 data. 
 
 |Category|Details|
 |:-----|:-----|
