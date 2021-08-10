@@ -31,11 +31,6 @@ Therefore, in April 2021, we began installing WebView2 Runtime on devices runnin
 
 WebView2 Runtime installations began in April 2021. Only devices that are running Windows and that have Version 2101 or later of Microsoft 365 Apps installed are affected. If WebView2 Runtime is already installed on the device, WebView2 Runtime will be updated to the latest version, if needed.
 
-> [!NOTE]
-> - Starting on July 13, 2021, Version 2102 of Microsoft 365 Apps will be available in Semi-Annual Enterprise Channel. After you install or update to Version 2102 of Semi-Annual Enterprise Channel, the device will become eligible to have WebView2 Runtime installed.
-> - We’ll be rolling out WebView2 Runtime installations to eligible devices on Semi-Annual Enterprise Channel over the course of several weeks. Therefore, eligible devices in your organization might not receive the WebView2 Runtime installation right away.
-> - Once WebView2 Runtime installations begin on eligible devices in your organization, those devices will likely get the installation within a few days of each other, if they are regularly connected to the internet. 
-
 To benefit from the new or improved Office features or add-ins that rely on WebView2, no action is required on your part. We recommend that you allow WebView2 Runtime to be installed. As soon as WebView2 is available on the device, then your users can start using the Office features that rely on WebView2. 
 
 After installation, you’ll see an entry for Microsoft Edge WebView2 Runtime under **Control Panel** > **Programs** > **Programs and Features**.
