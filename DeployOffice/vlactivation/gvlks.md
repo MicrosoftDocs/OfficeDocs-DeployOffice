@@ -26,19 +26,19 @@ By default, volume licensed versions of Office, such as Office LTSC 2021, are in
 ## GVLKs for Office LTSC 2021
 |**Product**|**GVLK**|
 |:-----|:-----|
-|Office LTSC Professional Plus 2021   |  |
-|Office LTSC Standard 2021   |  |
-|Project Professional 2021   |  |
-|Project Standard 2021   |  |
-|Visio LTSC Professional 2021   |  |
-|Visio LTSC Standard 2021    |  |
-|Access LTSC 2021   |  |
-|Excel LTSC 2021   |  |
-|Outlook LTSC 2021  |  |
-|PowerPoint LTSC 2021   |  |
-|Publisher LTSC 2021  |  |
-|Skype for Business 2021   |  |
-|Word LTSC 2021   |  |
+|Office LTSC Professional Plus 2021   |FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH  |
+|Office LTSC Standard 2021   |KDX7X-BNVR8-TXXGX-4Q7Y8-78VT3  |
+|Project Professional 2021   |FTNWT-C6WBT-8HMGF-K9PRX-QV9H8 |
+|Project Standard 2021   |J2JDC-NJCYY-9RGQ4-YXWMH-T3D4T  |
+|Visio LTSC Professional 2021   |KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4  |
+|Visio LTSC Standard 2021    |MJVNY-BYWPY-CWV6J-2RKRT-4M8QG  |
+|Access LTSC 2021   |WM8YG-YNGDD-4JHDC-PG3F4-FC4T4  |
+|Excel LTSC 2021   |NWG3X-87C9K-TC7YY-BC2G7-G6RVC  |
+|Outlook LTSC 2021  |C9FM6-3N72F-HFJXB-TM3V9-T86R9  |
+|PowerPoint LTSC 2021   |TY7XF-NFRBR-KJ44C-G83KF-GX27K  |
+|Publisher LTSC 2021  |2MW9D-N4BXM-9VBPG-Q7W6M-KFBGQ  |
+|Skype for Business LTSC 2021 |HWCXN-K3WBT-WJBKY-R8BD9-XK29P |
+|Word LTSC 2021   |TN8H9-M34D3-Y64V9-TR72V-X79KV  |
   
 ## GVLKs for Office 2019
 |**Product**|**GVLK**|
