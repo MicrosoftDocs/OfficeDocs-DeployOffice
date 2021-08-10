@@ -65,6 +65,6 @@ The following features and services have been recently released in preview or re
 > [!NOTE]
 > Preview features aren't available to everyone and are subject to change.
 
-#### OneDrive sync health
+#### OneDrive sync health (preview)
 
 You can use the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health).
