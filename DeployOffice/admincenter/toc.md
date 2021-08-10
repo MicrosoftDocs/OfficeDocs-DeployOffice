@@ -7,3 +7,6 @@
 ## [Inventory](inventory.md)
 ## [Security update status](security-update-status.md)
 ## [Servicing profile](servicing-profile.md)
+
+## Preview features
+### [OneDrive sync health (preview)](/onedrive/sync-health)
