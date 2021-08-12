@@ -1827,7 +1827,7 @@ The following fields are collected:
 
 #### combined.search.use
 
-Used for monitoring possible negative impact on your ability to perform key search functionality such as searching for mail, contacts, or events.
+This event is triggered when a user enters / exits search mode or interacts with search entities such as results, suggestions, or filters. Used for monitoring possible negative impact on your ability to perform key search functionality such as searching for mail, contacts, or events.
 
 The following fields are collected across iOS and Android: 
 
@@ -1871,6 +1871,10 @@ The following fields are collected across iOS and Android:
 
 The following fields are collected across iOS applications of Outlook Mobile: 
 
+- **all_paging_gesture_count** - Tracks how many search paging gestures were performed in the All tab within the combined search session.
+
+- **all_paging_timeout_count** - Tracks how many paging search requests were blocked due to Hx session timeout in the All tab within the combined search session.
+
 - **answer_result_selected_count** - tracks how many times the search was "successful", for example, did the user find the person they wanted? Composed an email? Bookmarked the message? 
 
 - **contact_result_in_full_list_selected_count** - tracks how many times the user asked to "see all contacts" in full list was selected during the combined search session
@@ -1880,6 +1884,8 @@ The following fields are collected across iOS applications of Outlook Mobile:
 - **conversation_result_selected_count** - tracks how many conversations were selecting during the combined search session
 
 - **mail_paging_gesture_count** - tracks how many mail search paging gestures were performed within the combined search session
+
+- **mail_paging_timeout_count** - Tracks how many paging search requests were blocked due to Hx session timeout in the Mail tab within the combined search session.
 
 - **mail_requests_count** - tracks how many mail search requests were sent within the combined search session
 
@@ -1928,6 +1934,8 @@ The following fields are collected:
 
 - **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
 
+- **from_message_reminder** - If the action taken was on a message from a message reminder
+
 - **hx_error_type** - tells us what error occurred that prohibited the service from completing a remove, update, or add reaction on a message.
 
 - **hx_string_tag** - tells us the tag of the error in the service's codebase
@@ -1937,6 +1945,12 @@ The following fields are collected:
 - **reaction_origin** – Tells us origin from where the user reacted 
 
 - **reaction_type** – Tells us the reaction type of the user
+
+- **suggested_file_selected** - Report a Boolean value representing if the user selected a file from the mini-picker
+
+- **suggested_file_shown** - Report a Boolean value representing if file suggestions were shown in the mini-picker
+
+- **suggested_file_time_to_select** - Report the time in ms from when the user clicks the suggested file pill to when they are returned to the compose canvas 
 
 - **suggested_reply_char_count** - Tells us how many characters the suggested replies we offer (if available) to help us detect anomalies and issues related to our suggestions
 
@@ -2640,6 +2654,8 @@ The following fields are collected:
 
 - **from_context_menu** - Tells us whether the compose is originated from context menu actions.
 
+- **from_message_reminder** - Tells us if the message we are writing is in response to a message reminder
+
 - **message_id** - The message ID of the conversation being replied to or forwarded from to help us detect issues related to a specific message
 
 - **origin** - Tells us where the compose originated from, such as from a reply all, a new compose, or quick reply. Helps us detect issues associated with a specific reply origin type.
@@ -2704,11 +2720,11 @@ The following fields are collected:
 
 - **action** - the action taken by the user (closed, opened, notification_tapped)
 
+- **message_reminder_available** - True if there is a message reminder available and will be displayed when the notification center is opened
+
 - **type** - the notification type, as of now it will always be reaction
 
 - **unseen_count** - how many notifications in the current view have not been seen before
- 
-
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -8801,6 +8817,8 @@ The following fields are collected:
 
 - **recent_message_id** - the ID of the most recent message in the conversation
 
+- **start_time** - timestamp of when the email message was visible to user.
+
 - **suggested_reply_state** - the state of suggested replies for this conversation (unavailable, available, shown, used, or discarded)
 
 - **suggested_reply_types** - indicates type and count of suggested reply shown/used for this conversation. It’s a dictionary. For example, {text: 2, send_avail: 1}.
@@ -8846,6 +8864,8 @@ The following fields are collected:
 - **compose_duration** - tracks the total time user took to compose the message including multiple drafts session
 
 - **draft_message_id** - tracks the compose message ID of the message being sent
+
+- **from_message_reminder** - Indicates if the message was sent in response to a message reminder
 
 - **event_mode** - tracks the event mode if applicable to the message ("groups" or "other")
 
@@ -9083,17 +9103,31 @@ The following fields are collected:
 
 #### watchAppV2
 
-This event allows us to detect and fix possible issues with capabilities on your Apple Watch such as receiving notifications and responding to emails.
+This event is triggered from the Outlook watch app, when notifications are communicated from Outlook mobile to the Outlook watch app, and when the user is performing actions in the Outlook watch app. This event allows us to detect and fix possible issues with capabilities on the watch, such as receiving notifications and responding to emails.
 
 The following fields are collected: 
 
-- **app_action** - Tells us the types of action the user took on the Apple watch, such as "archive_message" to help us detect issues related to a specific action such as being unable to successfully archive messages on the Apple Watch
+- **app_action** - Tells us the types of action the user took on the watch, such as "archive_message" to help us detect issues related to a specific action such as being unable to successfully archive messages on the watch
 
-- **is_watch_app_installed** - Tells us if the user has installed our Apple Watch app on their device
+- **category** - Specifies a category (Usage, app_action, notification, etc.) for the event
 
-- **is_complication_enabled** - Tells us if the user has added Outlook to their Apple Watch screen to help us detect issues related to Apple Watch screens
+- **is_watch_app_installed** - Tells us if the user has installed our watch app on their device
 
-- **watch_os** - Tells us the OS version of the Apple Watch they have installed to help us detect issues related to specific OS versions of the Apple Watch
+- **is_complication_enabled** - Tells us if the user has added Outlook to their watch screen to help us detect issues related to watch screens
+
+- **notification** - Tells us the if a notification, if any was sent to the watch from the device.
+
+- **view** - Tells us the view (Home, Inbox, Calendar, etc.) the watch was on, to help us detect issues related to a specific view
+
+- **watch_app_version** - Tell us the version of the connected watch app 
+
+- **watch_manufacturer** - Tells us the manufacturer of the connected watch
+
+- **watch_model** - Tells us the model of the connected watch
+
+- **watch_os** - Tells us the OS version of the watch they have installed to help us detect issues related to specific OS versions of the watch
+
+- **watch_os_brand** - Tells us the type of OS (Apple, Wear, Tizen, etc.) the connected watch is running
 
 
 ### *Application status and boot subtype*
@@ -9669,33 +9703,64 @@ The following fields are collected:
 
 #### Office.Lens.LensSdk.LaunchLens
 
-When user launches Lens to capture or import images in any app, Lens SDK is launched, and this event is collected. Launch data helps us determine the number of users/devices launching the app and further understand feature usage. It helps us track the volume of users using the product, as well as identifying changes in trends, help look for and rectify issues in the product.
-
+Launches help us determine the number of users/devices launching the app and further understand feature usage. It helps us track the volume of users using the product, as well as identifying changes in trends, help look for and rectify issues in the product.
 The following fields are collected:
 
-- **Data_isResumeSession** - Whether the app was launched in resume or user did a fresh start. (Boolean field) 
+The following fields are collected on Android:
 
-- **Data_launchPerf** - Integer indicating time taken to launch the app (on Android)
+- **Data_CameraXBindUsecasesApi** - Time taken by camera library to initialize before it launches camera.
 
-- **Data_LaunchWorkFlowItem** - Field specifies if the app is launched from camera screen or edit screen. 
+- **Data_CameraXBindUsecasesToPreview** - Time taken by camera library in showing camera preview to user.
+
+- **Data_CurrentWorkFlowType** - Explains whether the user was capturing, editing, saving images, etc.
+
+- **Data_IsDexModeEnabled** - Boolean indicating if device supports Samsung Dex features.
+
+- **Data_IsEmbeddedLaunch** - Boolean field indicating if user launched the control in picture-in-picture mode.
+
+- **Data_IsInterimCropEnabled** - Boolean field indicating if user has chosen to manually crop each image.
+
+- **Data_IsMultiWindowEnabled** - Boolean field indicating if it's possible to run app in split screen.
+
+- **Data_IsTalkBackEnabled** - Boolean indicating if device is in accessibility mode. 
+
+- **Data_LaunchPerf** - Integer indicating time taken to launch the app.
+
+- **Data_LensSdkVersion** - Version of the SDK running in the app.
+
+- **Data_RecoveryMode** - Boolean field indicating if this session was recovered after app was killed.
+
+- **Data_SDKMode** - The mode in which image(s) were captured.
+
+- **Data_SessionId** - Identifier tracking each session of the app.
+
+- **Data_TelemetryEventTimestamp** - Time at which this event or action was completed.
+
+The following fields are collected on iOS:
+
+- **Data_currentWorkflowId** - Explains whether the user was capturing a photo, scanning document, whiteboard, etc; or extracting text, table, etc; from images.
+
+- **Data_defaultWorkflow** - Explains the default mode in which camera was launched, like document, whiteboard, photo, businesscard.
+
+- **Data_imageDPI** - Specifies the quality in DPI (low, high medium) in which media was captured.
+
+- **Data_isExistingUser** - Specifies if the user is a new user or existing user.
+
+- **Data_isFirstLaunch** - Boolean indicating if the app is being launched after a new installation.
+
+- **Data_isResumeSession** - Specifies whether the app was launched in resume or user did a fresh start. (Boolean field)
+
+- **Data_launchReason** - Determine if the launch is done via Camera or Gallery.
+
+- **Data_launchWorkflowItem** - Field specifies if the app is launched from camera screen or edit screen.
+
+- **Data_Lens_SessionId** - Identifier tracking each session of the app.
+
+- **Data_LensEventName** - Name of the event, I.e. Office_Lens_LensSdk_LaunchLens  
 
 - **Data_mediaCompressionFactor** - The factor by which images are compressed by app.
 
-- **Data_RecoveryMode** - Boolean field indicating if this session was recovered after app was killed (on Android)
-
-- **IsDexModeEnabled** - Boolean indicating if device supports Samsung Dex features.
-
-- **IsEmbeddedLaunch** - Boolean field indicating if user launched the control in picture-in-picture mode.
-
-- **IsInterimCropEnabled** - Boolean field indicating if user has chosen to manually crop each image.
-
-- **IsMultiWindowEnabled** - Boolean field indicating if it's possible to run app in split screen.
-
-- **LaunchPerf** - Integer indicating time taken to launch the app (on iOS)
-
-- **RecoveryMode** - Boolean field indicating if this session was recovered after app was killed (on iOS)
-
-- **SDKMode** - The mode in which images were captured.
+- **Data_version** - Version of the SDK running in the app.
 
 
 #### Office.OfficeMobile.AppActivation.Launch
@@ -12791,7 +12856,13 @@ The following fields are collected:
 
 - **DeviceModel** - The model of the device. (macOS/iOS only)
 
+- **DocAsyncOpenKind** - When opening a document, an enumeration indicating the type of asynchronous flow used.
+
 - **DocLocation** -  When opening a document, indicates which service provided the document (OneDrive, File Server, SharePoint, etc.).
+
+- **DocSizeInBytes** - When opening a document, the file size in bytes.
+
+- **DocSyncBackedType** - When opening a document, an indicator as to the type of document (local or service based)
 
 - **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
 
@@ -12822,6 +12893,8 @@ The following fields are collected:
 - **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
 
 - **PrivateCommitUsageMB** – The Commit Charge (i.e., the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
+
+- **PrivateCommitUsagePeakMB** - The largest Commit Charge in megabytes ever for this process. (Windows only)
 
 - **PrivateWorkingSetMB** – The amount of memory in megabytes in the process’s working set that isn’t shared with other processes. (Windows only)
 
