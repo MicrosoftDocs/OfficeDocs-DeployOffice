@@ -3349,6 +3349,20 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
+### Office.Android.DocsUI.PaywallControl.SkuPriceDiscountErrorEvent
+
+The event is triggered when a user lands on the SKU chooser screen of the app and the prices are fetched from the Google Playstore for different subscriptions. The event identifies price differences between monthly and annual plan offered in different countries and in different currencies. The data is used to ensure that the pricing configuration is working as expected. 
+
+The following fields are collected:
+
+- **CountryCode** - To identify the country where purchase is made.
+
+- **Discount** - Discount Percentage offered based on price differences between monthly and annual SKU of the both the personal and family plans.
+
+- **ProductIndex** - To identify whether personal or family plan.
+
+- **StoreCurrencyCode** - To identify the currency in which the app store is offering the end users the subscriptions plans.
+
 
 ### Office.Android.DocsUI.Views.DimeError
 
@@ -3506,7 +3520,59 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session.
-  - **status** -String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
+  - **status** - String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
+
+
+### Office.Apple.Licensing.CommonPaywallDetails
+
+This event logs the user details before Paywall control is shown to the user. The data is used to diagnose issues with Common Paywall Control (CPC) and will be used in conjunction with the table Office.Apple.Licensing.CommonPaywallControl to check if there are any issues in the code or to debunk any data anomalies with regard to CPC. 
+
+The following fields are collected: 
+
+- **canUserSeeUpsell** - Boolean: True if the SignedIn user is not underage and qualified to see upsell screen
+
+- **EffectiveIdentityType** - Boolean: Sign in type of the user. Can be -1 (Unsigned), 1 (MSA), 2 (OrgId)
+
+- **HasSubscription** - Boolean: True if the user has an active Microsoft 65 subscription
+
+- **IsCPCOnSignInEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FollowSignInWithCPC is enabled
+
+- **isFREUpsellToUnsignedUsersEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FREUpsellToUnsignedUsers is enabled
+
+- **IsProClassDisplay** - Boolean: If the users’ device is a pro class display (Screen size > 10.1 inch) or not
+
+- **ShowCPC** - Boolean: If CPC First Run Experience (FRE) is to be shown to the user.
+
+- **SKUEffectiveIdentityType** - Int: Sign in type of the user. Can be -1 (Unsigned), 1 (MSA), 2 (OrgId)
+
+- **SKUHasSubscription** - Boolean: True if the user has an active Microsoft 365 subscription 
+
+- **SKUIsCommonPaywallControlEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.UseCPC is enabled
+
+- **SKUIsPreSignInDiamondEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.PreSignInDiamond is enabled
+
+- **SKUIsProClassDisplay** - Boolean: If the users’ device is a pro-class display (Screen size greater than 10.1 inch) 
+
+- **SKUShowCPC** - Boolean: If CPC SKU Chooser is to be shown to the user
+
+
+### Office.Apple.Licensing.PremiumFeatureUpsell
+
+This event is triggered when a free user clicks to view a feature behind the paywall. The data is used to measure the interaction of users with the contextual upsell experience and ensure that it is working as expected.
+
+The following fields are collected:
+
+- **CanUserSeeUpsell** - Captured when the state of the users allow them to see an upsell CTA
+
+- **dismissUpsellUI** - Captured when users click on “Cancel Button” in alert box or user dismiss the bottom sheet to 
+
+- **featureId** - Identifier for the premium feature which users are trying to use
+
+- **learnMoreButtonClick** - Captured when users click on “Learn More” button
+
+- **LicensingUpgradeUIShown** - Captured when users see the upsell alert box
+
+- **seePlanButtonClick** - Captured when users click on “See plans” button 
 
 
 ### Office.Dime.Sdk.Health
