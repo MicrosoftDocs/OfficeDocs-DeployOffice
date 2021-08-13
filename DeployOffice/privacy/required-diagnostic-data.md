@@ -8924,9 +8924,9 @@ The following fields are collected:
 
 - **draft_message_id** - tracks the compose message ID of the message being sent
 
-- **from_message_reminder** - Indicates if the message was sent in response to a message reminder
-
 - **event_mode** - tracks the event mode if applicable to the message ("groups" or "other")
+
+- **from_message_reminder** - Indicates if the message was sent in response to a message reminder
 
 - **has_attachment** - indicates whether message has any attachments
 
