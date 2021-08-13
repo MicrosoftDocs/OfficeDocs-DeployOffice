@@ -3349,6 +3349,20 @@ The following fields are collected:
 
 - **SessionID** – GUID to connect events by session
 
+### Office.Android.DocsUI.PaywallControl.SkuPriceDiscountErrorEvent
+
+The event is triggered when a user lands on the SKU chooser screen of the app and the prices are fetched from the Google Playstore for different subscriptions. The event identifies price differences between monthly and annual plan offered in different countries and in different currencies. The data is used to ensure that the pricing configuration is working as expected. 
+
+The following fields are collected:
+
+- **CountryCode** - To identify the country where purchase is made.
+
+- **Discount** - Discount Percentage offered based on price differences between monthly and annual SKU of the both the personal and family plans.
+
+- **ProductIndex** - To identify whether personal or family plan.
+
+- **StoreCurrencyCode** - To identify the currency in which the app store is offering the end users the subscriptions plans.
+
 
 ### Office.Android.DocsUI.Views.DimeError
 
@@ -3413,6 +3427,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
   - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
 
 - **Office.iOS.Paywall.Paywall.Stats** - Data is collected when the paywall user interface is shown to the user, the duration of the interaction and whether a purchase was attempted, succeeded, or failed. The data is used to measure the performance of the user interface and ensure that it performing as expected. 
 
@@ -3420,8 +3435,10 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isFRE** - Boolean – Check to see if the First Run Experience or regular UI is showing.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **status** - String – Exit status of Paywall. Like “initiated”, “paymentDone”, “provisionFailed”.
    - **userDuration** - Double – Duration in milli-seconds the user spent on Paywall
+
   
 - **Office.iOS.Paywall.SKUChooser.BuyButtonTap** - Data is collected when user taps the Purchase/Buy Button. The data is used to measure the performance of the button and ensure that it performing as expected.
 
@@ -3429,6 +3446,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App-store product-id of the product for which the Buy Button was tapped.
    - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
 
@@ -3439,13 +3457,16 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton”
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
+   
 
 - **Office.iOS.Paywall.FailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected.
 
    The following fields are collected:
 
    - **failureReason** - String – Indicates what the failure was the user is retrying; for example, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product for which user is retrying the failed request.
 
 - **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** - Data collected when users tap on “See More Benefits” to see all the services, apps and features included in the purchase. They must expand sections detailing the features for each of the apps. This event collects which features and apps they expanded, along with the duration of time spent. The data is used to ensure that the UI offered to end users to learn about the benefits is performing as expected. 
@@ -3453,6 +3474,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    The following fields are collected:
 
    - **appsExpanded** - String – Comma-separated list of services/apps for which the benefits were expanded.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product for which user is viewing more benefits offered
    - **userDuration** - Double – Duration in milli-seconds the user spent on the Benefits Screen.
 
@@ -3460,12 +3482,14 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected:
 
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product for which user is viewing all benefits offered.
 
 - **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Usage telemetry to view the end user’s interaction with the UI provided to switch between different SKUs and ensure that it is performing as expected. 
 
    The following fields are collected:
 
+  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
   - **productId** - String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
 
 - **Office.iOS.Paywall.StoreKit.Response** - Critical engineering telemetry to log the result of purchase attempt triggered manually by user and the App store response to the event. The data is used to measure the status of a purchase attempt and reasons of failure (if any) and take corrective actions to ensure that the IAP and all the entry points as performing as expected.
@@ -3474,9 +3498,10 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the App-store response.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – Only for “MakePurchase”, “PendingPurchase”, the app-store ID of the product for which the request was made.
    - **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
-   - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”
+   - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”, "Restore"
    - **status** - String – Success or Failure, indicating success or failure of the request.
 
 - **Office.iOS.Paywall.Provisioning.Response** - Critical Engineering Telemetry and Contract with Retail Federation Service (RFS) to collect the information provided in this. RFS is the internal service used within Microsoft for crosschecking the purchase. This is used to get the health of the API call made to RFS which would help in understand that the performance of the integration is as expected.  
@@ -3485,8 +3510,69 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product the request was made for
    - **status** - String – Success or Failure, indicating if the request succeeded or failed
+
+- **Office.iOS.Paywall.SignIn.Response** - The event is collected when users complete SignIn during upsell flow, which is triggered for PreSignIn upsell scenarios like the PreSignIn FRE and PreSignInDiamond. This can be used to check the SignIn rates during the Upsell flow and help us analyse the PreSign scenarios.
+
+  The following fields are collected:
+
+  - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session.
+  - **status** - String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
+
+
+### Office.Apple.Licensing.CommonPaywallDetails
+
+This event logs the user details before Paywall control is shown to the user. The data is used to diagnose issues with Common Paywall Control (CPC) and will be used in conjunction with the table Office.Apple.Licensing.CommonPaywallControl to check if there are any issues in the code or to debunk any data anomalies with regard to CPC. 
+
+The following fields are collected: 
+
+- **canUserSeeUpsell** - Boolean: True if the SignedIn user is not underage and qualified to see upsell screen
+
+- **EffectiveIdentityType** - Boolean: Sign in type of the user. Can be -1 (Unsigned), 1 (MSA), 2 (OrgId)
+
+- **HasSubscription** - Boolean: True if the user has an active Microsoft 65 subscription
+
+- **IsCPCOnSignInEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FollowSignInWithCPC is enabled
+
+- **isFREUpsellToUnsignedUsersEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FREUpsellToUnsignedUsers is enabled
+
+- **IsProClassDisplay** - Boolean: If the users’ device is a pro class display (Screen size > 10.1 inch) or not
+
+- **ShowCPC** - Boolean: If CPC First Run Experience (FRE) is to be shown to the user.
+
+- **SKUEffectiveIdentityType** - Int: Sign in type of the user. Can be -1 (Unsigned), 1 (MSA), 2 (OrgId)
+
+- **SKUHasSubscription** - Boolean: True if the user has an active Microsoft 365 subscription 
+
+- **SKUIsCommonPaywallControlEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.UseCPC is enabled
+
+- **SKUIsPreSignInDiamondEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.PreSignInDiamond is enabled
+
+- **SKUIsProClassDisplay** - Boolean: If the users’ device is a pro-class display (Screen size greater than 10.1 inch) 
+
+- **SKUShowCPC** - Boolean: If CPC SKU Chooser is to be shown to the user
+
+
+### Office.Apple.Licensing.PremiumFeatureUpsell
+
+This event is triggered when a free user clicks to view a feature behind the paywall. The data is used to measure the interaction of users with the contextual upsell experience and ensure that it is working as expected.
+
+The following fields are collected:
+
+- **CanUserSeeUpsell** - Captured when the state of the users allow them to see an upsell CTA
+
+- **dismissUpsellUI** - Captured when users click on “Cancel Button” in alert box or user dismiss the bottom sheet to 
+
+- **featureId** - Identifier for the premium feature which users are trying to use
+
+- **learnMoreButtonClick** - Captured when users click on “Learn More” button
+
+- **LicensingUpgradeUIShown** - Captured when users see the upsell alert box
+
+- **seePlanButtonClick** - Captured when users click on “See plans” button 
 
 
 ### Office.Dime.Sdk.Health
