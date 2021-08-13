@@ -1827,7 +1827,7 @@ The following fields are collected:
 
 #### combined.search.use
 
-This event is triggered when a user enters / exits search mode or interacts with search entities such as results, suggestions, or filters. Used for monitoring possible negative impact on your ability to perform key search functionality such as searching for mail, contacts, or events.
+This event is triggered when a user enters or exits search mode or interacts with search entities such as results, suggestions, or filters. Used for monitoring possible negative impact on your ability to perform key search functionality such as searching for mail, contacts, or events.
 
 The following fields are collected across iOS and Android: 
 
@@ -1926,7 +1926,7 @@ The following fields are collected:
 
 #### conversation.view.action
 
-Used for monitoring possible negative impact on your ability to view and reply to email messages
+This event is triggered when a user interacts with the conversation view. For example, attempting to load more conversations or opening quick reply. The data is used for monitoring possible negative impact on the ability to view and reply to email messages as well as for determining issues related to conversation features such as reactions, suggested replies, pinning, etc.
 
 The following fields are collected:
 
@@ -8795,7 +8795,7 @@ The following fields are collected:
 
 #### read.conversation
 
-Used for monitoring possible negative impact on the health and performance of rendering an email message
+This event is triggered when an email is not visible on the device screen anymore. Used for monitoring possible negative impact on the health and performance of rendering an email message.
 
 The following fields are collected: 
 
@@ -9111,9 +9111,9 @@ The following fields are collected:
 
 - **category** - Specifies a category (Usage, app_action, notification, etc.) for the event
 
-- **is_watch_app_installed** - Tells us if the user has installed our watch app on their device
-
 - **is_complication_enabled** - Tells us if the user has added Outlook to their watch screen to help us detect issues related to watch screens
+
+- **is_watch_app_installed** - Tells us if the user has installed our watch app on their device
 
 - **notification** - Tells us the if a notification, if any was sent to the watch from the device.
 
@@ -9703,8 +9703,7 @@ The following fields are collected:
 
 #### Office.Lens.LensSdk.LaunchLens
 
-Launches help us determine the number of users/devices launching the app and further understand feature usage. It helps us track the volume of users using the product, as well as identifying changes in trends, help look for and rectify issues in the product.
-The following fields are collected:
+Launches help us determine the number of users or devices launching the app and further understand feature usage. It helps us track the volume of users using the product, as well as identifying changes in trends, help look for and rectify issues in the product.
 
 The following fields are collected on Android:
 
