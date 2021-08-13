@@ -35,7 +35,7 @@ To work with the service, go to [Office Customization Tool](https://config.offic
 Follow these steps to create a configuration file that can be used by the Office Deployment Tool or another software distribution solution to install Office. 
 
 > [!NOTE] 
-> We recommend saving and managing your configuration files in the cloud. To do so, sign in to the Office 365 Client Configuration Service before you create your configuration file.  For more details, see [Save and manage configuration files in the cloud](#save-and-manage-configuration-files-in-the-cloud).
+> We recommend saving and managing your configuration files in the cloud. To do so, sign in to the Microsoft 365 Apps admin center before you create your configuration file.  For more details, see [Save and manage configuration files in the cloud](#save-and-manage-configuration-files-in-the-cloud).
 
 1. Go to [Office Customization Tool](https://config.office.com/).
 2. In the **Product and releases** section, choose the architecture you want to deploy. Each configuration file can only deploy one architecture. For details on which architecture to choose, see [Choose the 32-bit or 64-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
@@ -69,7 +69,7 @@ Follow these steps to import and edit an existing configuration file.
 You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configuration files in the cloud. You can also refer to these cloud-based files directly when running the Office Deployment Tool. 
 
 
-To work with configuration files in the cloud, sign in to the [Office 365 Client Configuration Service](https://config.office.com/) and go to the [Device Configuration](https://config.office.com/officeSettings/configurations) page. From that page, you can do the following:
+To work with configuration files in the cloud, sign in to the [Microsoft 365 Apps admin center](https://config.office.com/) and go to the [Device Configuration](https://config.office.com/officeSettings/configurations) page. From that page, you can do the following:
 
 - To create a new file, click **Create**, create a configuration file, and then click **Done**. The configuration file is automatically saved to the cloud as part of your tenant.
 - To edit an existing file, click the name of the file, make your changes, and then click **Done**.
