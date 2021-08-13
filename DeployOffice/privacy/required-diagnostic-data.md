@@ -11270,15 +11270,6 @@ The following fields are collected:
 
 - **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
 
-#### Office.OfficeMobile.FRE.UpsellBlockedAADC
- 
-This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Office Mobile app. 
-We will use the data to summarize how many upsell opportunities were lost due to age compliance.
- 
-The following fields are collected: 
-
-- **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
-
 
 #### Office.IntelligentService.PrivacyConsent.PrivacyEvent
 
@@ -11318,6 +11309,15 @@ The following fields are collected:
 
   - **Data_WillShowDialogs -** Record of user needing to see privacy First Run dialogs
 
+
+#### Office.OfficeMobile.FRE.UpsellBlockedAADC
+ 
+This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Office Mobile app. 
+We will use the data to summarize how many upsell opportunities were lost due to age compliance.
+ 
+The following fields are collected: 
+
+- **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
 
 
 ## Product and service performance data events
