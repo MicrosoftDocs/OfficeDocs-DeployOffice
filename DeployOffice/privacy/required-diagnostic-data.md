@@ -2701,6 +2701,18 @@ The following fields are collected:
 - **with_message_enabled** - Indicates whether a user can respond with a message to help us detect issues with responding to meeting invites
 
 
+#### message.reminder
+
+This event is triggered when a user interacts with a message reminder. A message reminder is a User Interface (UI) element that prompts the user to interact with a message they might have forgotten about and should follow up on. The data is used to determine the optimal UI for showing message reminders and for monitoring the success and impact of the feature.
+
+The following fields are collected across iOS and Android:
+
+- **origin** - Which view is the message reminder is on
+
+- **action** - The type of action taken on the message reminder. This includes actions such as opening the message, dismissing the reminder, turning off the feature, and when the reminder was rendered.
+
+
+
 #### multi.window.launch
 
 This event captures when the user takes action that involves multi-window launch on foldable devices, e.g., compose mail, event, open calendar window.  It uses the action to remember such action, e.g., to keep getting the prompt or always launch in new window.  The data collected by this event will be used to assess discoverability, effectiveness as well as general user preferences to drive current and future developments of multi window related functionalities.
@@ -5979,6 +5991,27 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 - **Data_Type** - Type of file operation (open, close, or save)
 
 
+#### Office.OfficeMobile.Search.VoiceSearchUsage
+
+This event is triggered when the user taps on the microphone in the search box inside the Office Mobile app. The event will track the usage of voice search and also time taken to establish service request post tap on microphone. This data will be used to track the usage and health of the feature.
+
+The following fields are collected:
+
+- **VoiceButtonClicked** - Integer value mapped to taps on the voice search mic.
+
+- **VoiceConsentAccepted** - Integer value mapped to Cortana consent/permissions given (only applicable to Microsoft internal audience)
+
+- **VoicePermissionGranted** - Integer value mapped to the permissions access action
+
+- **VoiceRecognitionCompleted** - Integer value mapped to successful voice recognition completion
+
+- **VoiceSearchError** - Integer value mapped to occurrence of errors during speech to text.
+
+- **VoiceSearchStartupLatency** - Real number mapped to start-up latency for speech.
+
+- **VoiceSearchTokenFetchingLatency** - Real number mapped to successful token fetch latency
+
+
 #### Office.OneNote.Android.App.Navigation.NavigationUIStateChanged
 
 *[This event was previously named OneNote.App.Navigation.NavigationUIStateChanged.]*
@@ -7405,6 +7438,23 @@ The following fields are collected:
 - **SrcDoc** - Original location of document (in case of SaveAs)
 
 
+#### Office.PowerPoint.PPT.Android.RehearseView.FeedbackReceived
+
+This event is used to analyze the seen/tried/kept funnel of the feature. This event along with Seen and Tried event helps us determine if users are dropping out of the funnel. The data is used to determine into if users are dropping because of errors faced during the experience. This helps us maintain the health of the feature.
+
+The following fields are collected:
+
+- None
+
+#### Office.PowerPoint.PPT.Android.RehearseView.SessionStarted
+
+This event is used to analyze the seen/tried/kept funnel of the feature. This event along with Seen and Kept event helps us figure out if users are dropping out of the funnel. This data is used to understand if users are dropping because of errors faced during experience. This helps us maintain the health of the feature.
+
+The following fields are collected:
+
+- None
+
+
 #### Office.PowerPoint.PPT.IOS.RehearseView 
 
 This event is denoting that user has stopped the rehearsal session. The data is used in combination with Office.PowerPoint.IOS.Android.RehearseView.StartSession as the first indicator of any crashes or errors that user faces.  
@@ -7506,7 +7556,16 @@ The following fields are collected:
 
 - **FirstSlideShowError** - first error happened in slide show
 
-    
+
+#### Office.PowerPoint.Rehearsal.RehearseAgain 
+
+This event captures when Rehearse Again is clicked in the summary report. This event is used to analyze the success of the PowerPoint Coach entry points, and is an indicator of the health of the feature.
+
+The following fields are collected:
+
+- None
+
+   
 #### Office.PowerPoint.RunPrintOperation
 
 Collected whenever a print PDF operation has completed and contains information about the layout type, use of slide numbers, and the success of the operation. This information is critical to identify the success of print PDF operations for our application.
@@ -11201,6 +11260,25 @@ The following fields are collected:
 ### *Privacy subtype*
 
 Office privacy settings 
+
+
+#### Office.Android.DocsUI.Views.UpsellBlockedAADC
+ 
+This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in Word, Excel or PowerPoint mobile app. We will use the data to summarize how many upsell opportunities were lost due to age compliance.
+ 
+The following fields are collected: 
+
+- **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
+
+#### Office.OfficeMobile.FRE.UpsellBlockedAADC
+ 
+This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Office Mobile app. 
+We will use the data to summarize how many upsell opportunities were lost due to age compliance.
+ 
+The following fields are collected: 
+
+- **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
+
 
 #### Office.IntelligentService.PrivacyConsent.PrivacyEvent
 
