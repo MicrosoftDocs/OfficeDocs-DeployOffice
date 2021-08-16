@@ -69,6 +69,17 @@ After deploying Microsoft 365 Apps, you can deploy additional languages for Offi
 
 When you add to an existing deployment, the ODT can automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups. The Office Customization Tool, however, requires that you specify all these values, so you can only use this feature if you create the configuration file in a text editor. 
 
+## Allow users who aren't admins to install additional languages
+
+By default, users must have local administrator permissions on their devices to install additional languages for Office. If you want to allow users who aren't local admins on their devices to install additional languages, you can enable the "Allow users who aren't admins to install language accessory packs" policy setting. You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or the  [Office cloud policy service](overview-office-cloud-policy-service.md) to enable the policy setting.
+
+> [!NOTE]
+> - You must be using Version 2108 or later of Microsoft 365 Apps in Current Channel or Monthly Enterprise Channel.
+> - In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
+> - Users can install additional languages by going to **File** > **Options** > **Language** > **Office authoring languages and proofing** > **Add a Language...** in their Office app, such as Word or PowerPoint.
+
+If you're using a local source to deploy Office, we recommend that you use the [AllowCdnFallback attribute](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This attribute enables you to use the Office CDN on the internet as a backup source location for the language files if they aren't available on your local source. For more information, see [Use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs).
+
 ## Deploy proofing tools
 
 Each language version of Microsoft 365 Apps includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
