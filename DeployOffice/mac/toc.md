@@ -24,7 +24,6 @@
 
 # Related articles
 ## [Network requests](/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
-## [64-bit upgrade](office-2016-for-mac-upgrade-to-64-bit.md)
 
 # Microsoft AutoUpdate (MAU)
 ## [Set a deadline](mau-deadline.md)
