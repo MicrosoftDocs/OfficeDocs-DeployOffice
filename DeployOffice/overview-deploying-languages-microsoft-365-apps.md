@@ -71,12 +71,16 @@ When you add to an existing deployment, the ODT can automatically use the same a
 
 ## Allow users who aren't admins to install additional languages
 
-By default, users must have local administrator permissions on their devices to install additional languages for Office. If you want to allow users who aren't local admins on their devices to install additional languages, you can enable the "Allow users who aren't admins to install language accessory packs" policy setting. You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or the  [Office cloud policy service](overview-office-cloud-policy-service.md) to enable the policy setting.
+By default, users must have local administrator permissions on their devices to install additional languages for Office. If you want to allow users who aren't local admins on their devices to install additional languages, you can enable the "Allow users who aren't admins to install language accessory packs" policy setting.
+
+You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or the [Office cloud policy service](overview-office-cloud-policy-service.md) to enable the policy setting. In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
+
+The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install additional languages by going to **File** > **Options** > **Language** > **Office authoring languages and proofing** > **Add a Language...** in their Office app.
 
 > [!NOTE]
-> - You must be using Version 2108 or later of Microsoft 365 Apps in Current Channel or Monthly Enterprise Channel.
-> - In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
-> - Users can install additional languages by going to **File** > **Options** > **Language** > **Office authoring languages and proofing** > **Add a Language...** in their Office app, such as Word or PowerPoint.
+> - You must be using Version 2108 or later of Microsoft 365 Apps for enterprise.
+> - We'll begin rolling out support in Current Channel in early September, followed by Monthly Enterprise Channel in October.
+> - Support will be available at a later date for Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel.
 
 If you're using a local source to deploy Office, we recommend that you use the [AllowCdnFallback attribute](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This attribute enables you to use the Office CDN on the internet as a backup source location for the language files if they aren't available on your local source. For more information, see [Use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs).
 
