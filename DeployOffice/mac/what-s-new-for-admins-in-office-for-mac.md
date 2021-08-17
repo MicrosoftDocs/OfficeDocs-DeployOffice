@@ -29,7 +29,7 @@ Before you deploy Office for Mac to users in your organization, you should be aw
   
  - **Updates:** The default setting is to check for updates every day.
 
- - **64 bit:** All releases of Office for Mac after August 22, 2016 are 64-bit only. For more information, see [Office for Mac upgrade to 64-bit](office-2016-for-mac-upgrade-to-64-bit.md).
+ - **64 bit:** All releases of Office for Mac are 64-bit only.
   
  - **App icons in the dock:** When you deploy Office for Mac, the app icons aren't automatically added to the dock, but are available from Launchpad. You can provide your users with instructions on [how to add app icons to the dock](https://support.microsoft.com/office/95db1c14-45e7-450e-86ad-1134f7e80851).
 
