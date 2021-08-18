@@ -39,6 +39,6 @@ This key is CFPreferences-compatible, which means that it can be set by using en
     
 ## Related articles
 
-- [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
+- [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
 

@@ -22,7 +22,7 @@ As an IT admin, you may want to provide Outlook for Mac users in your organizati
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
 
-The following preferences can be used to simplify account setup for Office 365 mailboxes, help protect company data, and support a streamlined user experience.
+The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
 
 These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
 
@@ -30,7 +30,7 @@ The following list shows the preferences that are covered in this article:
 
 - [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
-- [Automatically configure Office 365 mailbox on first launch](#automatically-configure-office-365-mailbox-on-first-launch)
+- [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
@@ -45,12 +45,12 @@ The following list shows the preferences that are covered in this article:
 - [Set the order in which S/MIME certificates are considered](#set-the-order-in-which-smime-certificates-are-considered)
 - [Specify calendar first day of week](#specify-calendar-first-day-of-week)
 - [Specify default weather location](#specify-default-weather-location)
-- [Specify Office 365 mailbox to be added on first launch](#specify-office-365-mailbox-to-be-added-on-first-launch)
+- [Specify Microsoft 365 mailbox to be added on first launch](#specify-microsoft-365-mailbox-to-be-added-on-first-launch)
 - [Specify when pictures are downloaded for email](#specify-when-pictures-are-downloaded-for-email)
 
 ## Mailbox settings
 
-### Automatically configure Office 365 mailbox on first launch
+### Automatically configure Microsoft 365 mailbox on first launch
 
 The email address used for Office activation will be added on first launch.
 
@@ -65,9 +65,9 @@ The email address used for Office activation will be added on first launch.
 
 
 
-### Specify Office 365 mailbox to be added on first launch
+### Specify Microsoft 365 mailbox to be added on first launch
 
-Set the domain or full email address of Office 365 mailbox to be added on first launch.
+Set the domain or full email address of Microsoft 365 mailbox to be added on first launch.
 
 |Category|Details|
 |:-----|:-----|
@@ -320,5 +320,5 @@ Set the availability and default position of the [New Outlook](https://support.m
  
 ## Related articles
 
-- [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
+- [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)

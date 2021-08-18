@@ -22,7 +22,7 @@ In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/o
 ![Screenshot of Resume Assistant icon in the Word for Mac ribbon](../images/resume-assistant-ribbon.png)
 
 > [!NOTE]
-> Resume Assistant is only available to Office 365 (and Microsoft 365) subscribers.
+> Resume Assistant is only available to Microsoft 365 (and Office 365) subscribers.
 
 If you're an admin, you may want to prevent this option from being shown to users. Use the following information to configure a policy:
 
@@ -37,6 +37,6 @@ This key is CFPreferences-compatible, which means that it can be set by using en
     
 ## Related articles
 
-- [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
+- [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
 

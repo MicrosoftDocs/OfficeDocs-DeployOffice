@@ -88,7 +88,7 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 
 > [!NOTE]
 > - The identifiers for the Office apps, such as Word and Outlook, can be used for the following versions:
->   - Office for Mac (from an Office 365 or Microsoft 365 subscription plan)
+>   - Office for Mac (Microsoft 365 or Office 365 subscription plan)
 >   - Office LTSC for Mac 2021 (volume license)
 >   - Office 2019 for Mac (retail or volume license)
 > - If an update is pending for MAU itself, that update must be applied before any applications can be updated.
