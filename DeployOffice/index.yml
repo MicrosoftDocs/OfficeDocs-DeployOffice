@@ -8,6 +8,8 @@ metadata:
   description: Office deployment
   brand: office
   author: danbrown
+  ms.topic: hub-page
+  ms.prod: microsoft-365
 
 # Card with summary style
 additionalContent:
