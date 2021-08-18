@@ -15,7 +15,7 @@ description: "Provides admins with information about the Volume License (VL) Ser
 
 # Overview of the Volume License (VL) Serializer
 
-***Applies to:*** *Office 2019 for Mac*
+***Applies to:*** *Office LTSC for Mac 2021, Office 2019 for Mac*
 
 The Volume License Serializer (VL) is used to activate Office 2019 for Mac as a volume licensed version. It's an approximately 4 mb package file that you run on a user's computer, either before or after you've installed Office.
 

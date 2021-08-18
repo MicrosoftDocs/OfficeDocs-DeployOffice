@@ -15,7 +15,7 @@ description: "Shows IT Pros how to set a preference to prevent users from instal
 
 # Set a preference to prevent the use of add-ins
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac*
+***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
 If you’re an admin, you may want to prevent Mac users from installing and running Office add-ins for Word, Excel, and PowerPoint. To do that, configure a preference using the following information.
 

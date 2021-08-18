@@ -15,7 +15,7 @@ description: "Describes changes in Office for Mac that are of interest to admins
 
 # What's new for admins in Office for Mac
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac*
+***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
 Before you deploy Office for Mac to users in your organization, you should be aware of some changes introduced in Office for Mac. These changes might affect how you deploy and manage Office for Mac in your organization.
   

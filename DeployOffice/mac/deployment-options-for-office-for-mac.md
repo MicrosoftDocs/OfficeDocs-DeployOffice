@@ -15,7 +15,7 @@ description: "Provides information to admins on how to download and deploy Offic
 
 # Deployment options for admins for Office for Mac
 
-***Applies to:*** *Office for Mac, Office 2019 for Mac*
+***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
 There are two basic ways that you, as an admin, can deploy Office for Mac to users in your organization:
   
