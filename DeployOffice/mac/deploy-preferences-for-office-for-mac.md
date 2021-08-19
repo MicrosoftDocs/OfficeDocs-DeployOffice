@@ -23,7 +23,7 @@ After Office for Mac is installed, users can configure settings for the apps. Th
 Preferences for Office for Mac are stored in preference files. These files are often referred to as .plist files. 
   
 > [!IMPORTANT]
-> There are changes in Office for Mac to improve security, including implementing Apple app sandboxing guidelines. These changes mean that you can't customize the app bundle before or after you deploy Office. But, preference files aren't part of the app bundle for an app, so you can make changes to these files. 
+> To help improve security, Office for Mac has implemented Apple app sandboxing guidelines. This means that you can't customize the app bundle before or after you deploy Office. But, preference files aren't part of the app bundle for an app, so you can make changes to these files.
   
 Preference files are stored in the app container, which isn't the same thing as the app bundle. The app container is created the first time an app is run. The app container is located in the user's ~/Library/Containers folder. For example, the app container for Excel is named com.microsoft.Excel. Within the app container, the .plist file is located in the Data/Library/Preferences folder. For example, the .plist file for Excel is named com.microsoft.Excel.plist.
   
