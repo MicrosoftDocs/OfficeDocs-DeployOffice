@@ -43,7 +43,7 @@ To configure Active Directory-based activation, you must have Domain Administrat
 4. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
 5. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
     
-     ![Manage Activations Objects page](../images/473b8652-0fc8-4903-abb3-41cd3c5d45ce.png)
+     ![Manage Activations Objects page.](../images/473b8652-0fc8-4903-abb3-41cd3c5d45ce.png)
   
 6. On the **Manage Activation Objects** page, enter the KMS host key, which you got from the VLSC, and, optionally, give it a name. Then choose **Next**.
 7. On the **Activate Product** page, either activate the KMS host key online or by phone, and then follow the rest of the wizard instructions.
