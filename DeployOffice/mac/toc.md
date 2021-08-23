@@ -22,6 +22,8 @@
 ## [Resume Assistant](set-preference-resume-assistant-word.md)
 ## [Default decryption password (Excel)](set-preference-default-password-excel.md)
 
+# [Privacy controls](../privacy/mac-privacy-preferences.md)
+
 # Related articles
 ## [Network requests](/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
 
