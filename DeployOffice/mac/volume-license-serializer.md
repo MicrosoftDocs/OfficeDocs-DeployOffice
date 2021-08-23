@@ -10,14 +10,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 recommendations: false
-description: "Provides admins with information about the Volume License (VL) Serializer, which is used to activate volume licensed versions of Office 2019 for Mac."
+description: "Provides admins with information about the Volume License (VL) Serializer, which is used to activate volume licensed versions of Office for Mac."
 ---
 
 # Overview of the Volume License (VL) Serializer
 
 ***Applies to:*** *Office LTSC for Mac 2021, Office 2019 for Mac*
 
-The Volume License Serializer (VL) is used to activate Office 2019 for Mac as a volume licensed version. It's an approximately 4 mb package file that you run on a user's device, either before or after you've installed Office.
+The Volume License Serializer (VL) is used to activate Office LTSC for Mac 2021 or Office 2019 for Mac as a volume licensed version. It's a package (.pkg) file that you run on a device where Office for Mac is installed.
 
 ## Download the Volume License (VL) Serializer from the VLSC
 
@@ -25,18 +25,26 @@ To download the VL Serializer, do the following steps:
 
 1. Sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). 
 2. Select the **Download and Keys** tab.
-3. Search for "Office 2019 for Mac Standard."
+3. Search for "Office LTSC Standard for Mac 2021" or "Office 2019 for Mac Standard" (depending on which version of Office you're licensed for).
 4. Select the **Download** link in the results panel.
 5. Select the **Continue** button at the bottom of the window.
 6. Select the icon (circle with download arrow) to download the VL Serializer .iso file.
 7. Once the download is complete, mount the .iso file to extract the VL Serializer package file.
 
-The name of the package file is Microsoft_Office_2019_VL_Serializer.pkg.
-
 Then, deploy and run the VL Serializer package file on each device that you want to activate Office as a volume licensed version.
 
-> [!NOTE]
-> Volume licensed versions of Office 2019 for Mac have version numbers of 16.17 or higher.
+### Office LTSC for Mac 2021 information
+
+- The name of the package file is Microsoft_Office_LTSC_2021_VL_Serializer.pkg.
+- The package file is approximately 12 MB in size.
+- Volume licensed versions of Office 2019 for Mac have version numbers of 16.17 or higher.
+- The VL Serializer has been improved so that a management tool can run the VL Serializer in the background even while the user still has Office 2019 for Mac apps open and running. The next time the user closes and opens the app, Office will switch over to using the Office LTSC for Mac 2021 license. This should help minimize user disruption when organizations move from Office 2019 for Mac to Office LTSC for Mac 2021.
+
+### Office 2019 for Mac information
+
+- The name of the package file is Microsoft_Office_2019_VL_Serializer.pkg.
+- The package file is approximately 4 MB in size.
+- Volume licensed versions of Office 2019 for Mac have version numbers of 16.17 or higher.
 
 ## Additional information about the VL Serializer
 
