@@ -55,7 +55,7 @@ Whichever deployment method you decide to use, the following information can hel
   
 - **What's new:** Before you deploy, review the information about [what's new for admins](what-s-new-for-admins-in-office-for-mac.md) in Office for Mac. This article includes information about system requirements, language support, and new features. 
     
-- **Side-by-side installation:** You can't have Office 2016 for Mac, which is no longer supported, and Office 2019 for Mac installed on the same computer. Also, you can't have Office for Mac (from an Office 365 or Microsoft 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same computer.
+- **Side-by-side installation:** You can't have Office 2016 for Mac, which is no longer supported, and Office 2019 for Mac installed on the same device. Also, you can't have Office for Mac (from an Office 365 or Microsoft 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same device.
     
 - **Deploying individual apps:**  Installer package files for individual applications are available on the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
     

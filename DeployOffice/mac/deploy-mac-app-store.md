@@ -38,7 +38,7 @@ The Office apps available from the Mac App Store provide the latest Current Cha
 ## Can I use apps from the Mac App Store with my volume license?
 No. Perpetual licenses, such as Office LTSC for Mac 2021 or Office 2019, are not supported with Office apps available from the Mac App Store. The [Volume License (VL) Serializer](volume-license-serializer.md) is not compatible with these apps. Attempts to use a perpetual license with Mac App Store apps will cause the apps to enter reduced functionality mode. For more information, see [Microsoft Office activation and the Mac App Store](https://support.microsoft.com/office/a699bd24-a8f1-4f40-9d19-9b6b6034ec51).
 
-## How do I deploy Office apps from the Mac App Store to computers in my organization?
+## How do I deploy Office apps from the Mac App Store to devices in my organization?
 You need an enterprise mobility management (EMM) tool that supports either [Apple Business Manager](https://www.apple.com/business/it/) or [Apple School Manager](https://www.apple.com/education/k12/it/). For example, [Jamf Pro](https://www.jamf.com/) is compatible with these programs and can be used to deploy Office apps. Office supports managed distribution, which allows your Mobile Device Management (MDM) server to install Office even when the user does not have an Apple ID. Office apps cannot be distributed through redeemable codes.
 
 While a consumer may acquire Office through the Mac App Store as a bundle with a single-click download, IT admins will need to deploy the individual apps.

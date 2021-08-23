@@ -33,9 +33,9 @@ The best way to add or edit preferences is by using the defaults command. For ex
 defaults write com.microsoft.autoupdate2 HowToCheck Manual
 ```
 
-You can take an existing .plist file and modify it with your organization's preferences. In some cases, you can actually copy that .plist file to other computers in your organization that have Office for Mac installed. But that doesn't work for all .plist files. Therefore, the preferred method is to create a script that incorporates all the defaults commands that you want to use to set preferences. Then deploy that script to your users. Because preferences are user specific, you need to run the script in the user's context. That also means that if several users share the same computer and each user has a different account, then the script needs to be run for each user of that computer.
+You can take an existing .plist file and modify it with your organization's preferences. In some cases, you can actually copy that .plist file to other devices in your organization that have Office for Mac installed. But that doesn't work for all .plist files. Therefore, the preferred method is to create a script that incorporates all the defaults commands that you want to use to set preferences. Then deploy that script to your users. Because preferences are user specific, you need to run the script in the user's context. That also means that if several users share the same device and each user has a different account, then the script needs to be run for each user of that device.
   
-Depending on which preferences you're configuring and how you deploy those preferences, the user might need to quit all Office apps and restart the computer for the preferences to take effect. Also, remember that the preferences you deploy might overwrite existing preference settings configured by the user.
+Depending on which preferences you're configuring and how you deploy those preferences, the user might need to quit all Office apps and restart the device for the preferences to take effect. Also, remember that the preferences you deploy might overwrite existing preference settings configured by the user.
 
   
 ## Related articles
