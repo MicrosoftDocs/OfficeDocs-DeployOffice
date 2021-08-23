@@ -15,10 +15,13 @@ description: "Provides admins with links to information about how to deploy Offi
 
 # Deployment guide for Office for Mac
 
-This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office for Mac in their organizations.
+This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office on devices running macOS in their organization.
 
-There are two versions of Office for Mac that are referred to in this guide:
-- **Office for Mac**, which is available with any Office 365 (or Microsoft 365) plan that includes Office. For example, the Office 365 E5 plan. This version is updated on a regular basis to provide new features. It also receives security and quality updates, as needed.
+There are several versions of Office for Mac that are referred to in this guide:
+- **Office for Mac**, which is available with any Microsoft 365 (or Office 365) plan that includes the Office desktop apps. For example, the Microsoft 365 Business Premium plan or the Office 365 E5 plan. This version is updated on a regular basis to provide new features. It also receives security and quality updates, as needed.
+
+- **Office LTSC for Mac 2021**, which is available through a volume licensing agreement. This version receives security and quality updates, as needed.
+
 - **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
 
 > [!IMPORTANT]
@@ -29,21 +32,19 @@ There are two versions of Office for Mac that are referred to in this guide:
 This guide covers the following areas:
   
 - [What's new for admins in Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
-    
+
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
-    
+
 - [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
-    
+
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
-    
+
 - [Overview of activation for Office for Mac](overview-of-activation-for-office-for-mac.md)
-    
+
 In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following sites:
   
 - [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), for installation requirements, such as supported operating systems.
 
-- [Office for Mac](https://products.office.com/mac), for purchasing information.
-    
-- [Office Help & Training](https://support.microsoft.com/office), for help on how to use Office for Mac.
-        
+- [Microsoft 365 for Mac](https://www.microsoft.com/microsoft-365/mac/microsoft-365-for-mac), for purchasing information.
 
+- [Office Help & Training](https://support.microsoft.com/office), for help on how to use Office for Mac.
