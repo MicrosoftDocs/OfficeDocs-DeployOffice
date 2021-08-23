@@ -25,9 +25,9 @@ As an admin, you can choose how to download and install updates for Office for M
     
 - Manually download updates to your local network, and then use your software distribution tools to deploy the updates.
     
-To update Office for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, Microsoft AutoUpdate automatically checks for updates every 12 hours, but you can change that to daily, weekly, monthly, or manually.
+To update Office for Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, Microsoft AutoUpdate automatically checks for updates every 12 hours, but you can change that to some other time period, such as weekly, or set it to manual.
   
-If you decide to deploy updates by using your software distribution tools, you should configure Microsoft AutoUpdate to check for software updates. You can [deploy preferences](deploy-preferences-for-office-for-mac.md) to configure how and when Microsoft AutoUpdate checks for updates.
+If you decide to deploy updates by using your software distribution tools, you should configure Microsoft AutoUpdate to manually check for software updates. You can [deploy preferences](deploy-preferences-for-office-for-mac.md) to configure how and when Microsoft AutoUpdate checks for updates.
   
 Individual security updates or other updates can't be downloaded and installed. Instead, Microsoft provides a new app bundle of an app, such as Word, that includes all the updates. As an admin, this means that you can't pick and choose which updates to install for a particular app, such as Excel. But, if you're doing manual deployments of updates, you can choose which apps you want to update. For example, you might decide to deploy the updates for Word and PowerPoint now, but wait to update Excel until you've had the chance to test that the updated version of Excel works with your line-of-business applications.
   
