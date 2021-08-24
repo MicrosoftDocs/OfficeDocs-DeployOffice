@@ -13,11 +13,13 @@ recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
 ---
 
-# Overview for admins of Office for Mac
+# Overview for admins of Office for Mac 
 
 ***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
-Before you deploy Office for Mac to users in your organization, review the following information that might affect how you deploy and manage Office for Mac in your organization.
+The following sections are intended to provide information to help you plan your deployment of Office for Mac to users in your organization.
+
+For more information, see [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md) and [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
 
 ## System requirements
 
@@ -27,7 +29,7 @@ For all the system requirements, see [System requirements for Microsoft 365 and 
 
 ## Chipset support
 
-Office provides native support for both Apple Silicon and Intel-based Macs. For more information, see [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
+Office provides native support for both Apple Silicon and Intel-based Mac devices. For more information, see [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
 
 ## 64-bit
 
@@ -41,11 +43,11 @@ All the [supported languages](https://support.microsoft.com/office/26d30382-9fba
 
 For information about features in the various versions of Office for Mac, review the following resources. Keep in mind that Office LTSC for Mac 2021 and Office 2019 for Mac don't receive new features after they've been released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office.
 
-#### Office for Mac
+#### Office for Mac features
 
 To see the latest features in each monthly release, see [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac) or [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac).
 
-#### Office LTSC for Mac 2021
+#### Office LTSC for Mac 2021 features
 
 For information about the new features in Office 2019 for Mac, see the following articles:
 - [What's new in Excel 2021 for Mac](https://support.microsoft.com/office/4100753f-93bc-4143-a77c-7258d1a80cd3)
@@ -53,7 +55,7 @@ For information about the new features in Office 2019 for Mac, see the following
 - [What's new in PowerPoint 2021 for Mac](https://support.microsoft.com/office/fcbbd1ee-a94a-42a6-910e-df9cab3a1bf6)
 - [What's new in Word 2021 for Mac](https://support.microsoft.com/office/ee054758-cf8d-4fb9-ba07-e105414459d5)
 
-#### Office 2019 for Mac
+#### Office 2019 for Mac features
 
 For information about the new features in Office 2019 for Mac, see the following articles:
 - [What's new in Excel 2019 for Mac](https://support.microsoft.com/office/5ce129d3-9e5c-417f-9545-fb6f7b72674d)
@@ -67,7 +69,7 @@ If you're looking for information to help your users get started with Office for
 
 ## Privacy controls
 
-There are preference settings that allow you to control settings related to diagnostic data and connected experiences for Office on a Mac. For more information, see [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
+There are preference settings available that allow you to configure settings related to diagnostic data and connected experiences for Office on a Mac. For more information, see [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
 
 ## App bundles
 
@@ -88,8 +90,3 @@ The major version of Office for Mac, Office LTSC for Mac 2021, and Office 2019 f
 Also, add-ins and other extensibility solutions that were compatible with an older version will most likely be compatible with a newer version or will require minimal testing. For example, when upgrading from Office 2019 for Mac to Office LTSC for Mac 2021.
 
 Office LTSC for Mac 2021 has version numbers of 16.53 or higher. Office 2019 for Mac has version numbers of 16.17 or higher.
-  
-## Related articles
-
-- [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
-- [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
