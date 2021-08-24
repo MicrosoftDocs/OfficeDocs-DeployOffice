@@ -15,7 +15,7 @@ description: "Provides admins with information about how to set a deadline for u
 
 # Set a deadline for updates from Microsoft AutoUpdate
 
-Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s device. Version 4.13 was released on July 18, 2019.
+Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s Mac. Version 4.13 was released on July 18, 2019.
 
 Users will receive notifications about the upcoming deadline and can temporarily postpone the updates from being installed. But once the deadline is reached, any applications the user has open will be closed and the updates applied.
 
