@@ -51,7 +51,7 @@ All the [supported languages](https://support.microsoft.com/office/26d30382-9fba
 
 ## Updates
 
-Office for Mac is updated approximately once a month. These updates include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. For those with a Microsoft 365 (or Office 365) plan, these updates can also include new or improved features. For more information, see [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
+Office for Mac is updated approximately once a month. These updates include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. For those users with a Microsoft 365 (or Office 365) plan, these updates can also include new or improved features. For more information, see [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
 
 ## Features
 

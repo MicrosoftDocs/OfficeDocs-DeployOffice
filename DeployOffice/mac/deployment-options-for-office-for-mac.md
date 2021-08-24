@@ -62,11 +62,27 @@ Whichever deployment method you decide to use, the following information can hel
 
 - **Uninstalling:** If you need to uninstall Office from a Mac, you can [follow these steps to completely remove Office](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0). Unfortunately, there is no program to uninstall Office from a Mac automatically.
 
-## Upgrade to Office for Mac or to Office 2019 for Mac
+## Upgrade an installation of Office for Mac
 
-- **Upgrade to Office for Mac (subscription version):** If you're a volume licensed customer of Office 2016 for Mac or Office 2019 for Mac, you can upgrade to Office for Mac (available with certain Office 365 or Microsoft 365 plans) without uninstalling your current version. First, download and run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193). Second, launch Microsoft AutoUpdate (MAU) and install the latest Office updates. Finally, launch any Office app and sign in with your Office 365 or Microsoft 365 account. For a demo of these steps, and an example of how to automate this process with Jamf Pro, [watch this video](https://www.youtube.com/watch?v=Zwuq_TT9QhU).
+You can upgrade an existing installation of Office on a Mac to a newer version without having to uninstall your current version. For example, if you want to upgrade your volume licensed version of Office 2019 for Mac to Office LTSC for Mac 2021. Or, if you want to move from a volume licensed version of Office, such as Office LTSC for Mac 2021, to a subscription version of Office for Mac.
 
-- **Upgrade to Office 2019 for Mac:** If you're a volume licensed customer, you can upgrade to Office 2019 for Mac without uninstalling Office 2016 for Mac. First, you need to download the 2019 version of the [Volume License (VL) Serializer](volume-license-serializer.md) from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). Second, [download](https://go.microsoft.com/fwlink/p/?linkid=525133) the latest version of Office 2019 for Mac. Then, deploy both the Volume License (VL) Serializer and Office 2019 for Mac to each device running Office 2016 for Mac. There is no need to remove Office 2016 for Mac first. 
+#### Upgrade to Office for Mac (subscription version)
+
+If you're a volume licensed customer of Office LTSC for Mac 2021 or Office 2019 for Mac, you can upgrade to Office for Mac (available with certain Microsoft 365 or Office 365 subscription plans) without uninstalling your current version. Just follow these steps:
+
+1. Install the latest Office updates on each Mac where Office is installed.
+2. Download and run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193) on each Mac where Office is installed.
+3. Have the user open any Office app and sign in with their Microsoft 365 (or Office 365) account.
+
+For a demo of these steps, and an example of how to automate this process with Jamf Pro, [watch this video](https://www.youtube.com/watch?v=Zwuq_TT9QhU).
+
+#### Upgrade to Office LTSC for Mac 2021 (volume license)
+
+If you're a volume licensed customer, you can upgrade to Office LTSC for Mac 2021 without having to uninstall Office 2019 for Mac. Just follow these steps:
+
+1. Install the latest Office updates on each Mac where Office is installed. Office must be updated to at least Version 16.53.
+2. Download the [Volume License (VL) Serializer](volume-license-serializer.md) for Office LTSC for Mac 2021 from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx).
+3. Run VL Serializer on each Mac where Office is installed.
 
 ## Related articles
 
