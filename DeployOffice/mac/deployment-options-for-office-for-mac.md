@@ -26,6 +26,9 @@ There are two basic ways that you, as an admin, can deploy Office to Mac users i
 If you have a Microsoft 365 (or Office 365) plan, you can provide your Mac users with instructions on [how to download and install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) themselves. To install Office on a Mac, a user has to be an administrator on the device or know an administrator account name and password.
   
 But, if you deploy Office for your Mac users, you have more control over the deployment, including which users get Office and when. To plan your deployment, review the following information.
+
+> [!NOTE]
+> For information about upgrades, see [Upgrade an installation of Office for Mac](#upgrade-an-installation-of-office-for-mac).
   
 ## Download Office for Mac to your local network
 
@@ -64,7 +67,7 @@ Whichever deployment method you decide to use, the following information can hel
 
 ## Upgrade an installation of Office for Mac
 
-You can upgrade an existing installation of Office on a Mac to a newer version without having to uninstall your current version. For example, if you want to upgrade your volume licensed version of Office 2019 for Mac to Office LTSC for Mac 2021. Or, if you want to move from a volume licensed version of Office, such as Office LTSC for Mac 2021, to a subscription version of Office for Mac.
+You can upgrade an existing installation of Office on a Mac to a newer version without having to uninstall the version already on the Mac. For example, if you want to upgrade a volume licensed version of Office 2019 for Mac to Office LTSC for Mac 2021. Or, if you want to move from a volume licensed version of Office, such as Office LTSC for Mac 2021, to a subscription version of Office for Mac.
 
 #### Upgrade to Office for Mac (subscription version)
 
@@ -72,7 +75,7 @@ If you're a volume licensed customer of Office LTSC for Mac 2021 or Office 2019 
 
 1. Install the latest Office updates on each Mac where Office is installed.
 2. Download and run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193) on each Mac where Office is installed.
-3. Have the user open any Office app and sign in with their Microsoft 365 (or Office 365) account.
+3. Have users open any Office app and sign in with their Microsoft 365 (or Office 365) account.
 
 For a demo of these steps, and an example of how to automate this process with Jamf Pro, [watch this video](https://www.youtube.com/watch?v=Zwuq_TT9QhU).
 
@@ -82,7 +85,7 @@ If you're a volume licensed customer, you can upgrade to Office LTSC for Mac 202
 
 1. Install the latest Office updates on each Mac where Office is installed. Office must be updated to at least Version 16.53.
 2. Download the [Volume License (VL) Serializer](volume-license-serializer.md) for Office LTSC for Mac 2021 from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx).
-3. Run VL Serializer on each Mac where Office is installed.
+3. Run the VL Serializer on each Mac where Office is installed.
 
 ## Related articles
 
