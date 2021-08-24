@@ -55,15 +55,29 @@ Office for Mac uses the Apple Installer technology for installation. That means 
 
 Whichever deployment method you decide to use, the following information can help you plan your Office for Mac deployment.
   
-- **Side-by-side installations:** You can't have two different versions of Office installed on a Mac. For example, you can't install Office LTSC for Mac 2021 on the same Mac where Office for Mac (from a Microsoft 365 or Office 365 subscription plan) is already installed.
+#### Side-by-side installations
 
-- **Deploying individual apps:**  Installer package files for individual applications, such as Word or Excel, are available to download from the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
+You can't have two different versions of Office installed on a Mac. For example, you can't install Office LTSC for Mac 2021 on the same Mac where Office for Mac (from a Microsoft 365 or Office 365 subscription plan) is already installed.
 
-- **Microsoft Teams** Teams is included as part of the installer packages for the Office suite. If you don't want Teams included as part of the installation, you can [download this installer package](https://go.microsoft.com/fwlink/p/?linkid=525133), which doesn't include Teams.
+#### Deploying individual apps
 
-- **Activation:** To use Office on a Mac, Office needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) for Office for Mac.
+Installer package files for individual applications, such as Word or Excel, are available to download from the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
 
-- **Uninstalling:** If you need to uninstall Office from a Mac, you can [follow these steps to completely remove Office](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0). Unfortunately, there is no program to uninstall Office from a Mac automatically.
+#### Microsoft Teams
+
+Teams is included as part of the installer packages for the Office suite. If you don't want Teams included as part of the installation, you can [download this installer package](https://go.microsoft.com/fwlink/p/?linkid=525133), which doesn't include Teams.
+
+#### Activation
+
+To use Office on a Mac, Office needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) for Office for Mac.
+
+#### Internet access
+
+After downloading the installer package, internet access isn’t required to install, activate, or use Office LTSC for Mac 2021 or Office 2019 for Mac.  
+
+#### Uninstalling
+
+If you need to uninstall Office from a Mac, you can [follow these steps to completely remove Office](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0). Unfortunately, there is no program to uninstall Office from a Mac automatically.
 
 ## Upgrade an installation of Office for Mac
 
