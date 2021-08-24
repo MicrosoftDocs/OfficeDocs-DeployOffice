@@ -13,9 +13,19 @@ recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
 ---
 
-# Overview for admins of Office for Mac 
+# Overview of Office for Mac (for admins and IT Pros)
 
 ***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+
+The following Office apps are available for devices running macOS:
+
+- Word
+- Excel
+- PowerPoint
+- Outlook
+- OneNote
+- OneDrive
+- Teams
 
 The following sections are intended to provide information to help you plan your deployment of Office to Mac users in your organization.
 
@@ -46,6 +56,9 @@ For information about features in the various versions of Office for Mac, review
 #### Office for Mac features
 
 To see the latest features in each monthly release, see [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac) or [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac).
+
+> [!TIP]
+> For early access to new features, join the [Office Insider program](https://insider.office.com).
 
 #### Office LTSC for Mac 2021 features
 

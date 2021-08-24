@@ -15,7 +15,7 @@ description: "Provides admins with links to information about how to deploy Offi
 
 # Deployment guide for Office for Mac
 
-This guide is intended to help administrators and other IT professionals plan, implement, and maintain deployments of Office on devices running macOS in their organization.
+This guide is intended to help administrators and other IT professionals to plan, implement, and maintain deployments of Office on devices running macOS in their organization.
 
 There are several versions of Office that are referred to in this guide:
 - **Office for Mac**, which is available with any Microsoft 365 (or Office 365) plan that includes the Office desktop apps. For example, the Microsoft 365 Business Premium plan or the Office 365 E5 plan. This version is updated on a regular basis to provide new features. It also receives security and quality updates, as needed.
@@ -31,15 +31,16 @@ There are several versions of Office that are referred to in this guide:
   
 This guide covers the following areas:
   
-- [What's new for admins in Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
+- [Overview of Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
 
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
+
+- [Overview of activation for Office for Mac](overview-of-activation-for-office-for-mac.md)
 
 - [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
 
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
 
-- [Overview of activation for Office for Mac](overview-of-activation-for-office-for-mac.md)
 
 In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following sites:
   
