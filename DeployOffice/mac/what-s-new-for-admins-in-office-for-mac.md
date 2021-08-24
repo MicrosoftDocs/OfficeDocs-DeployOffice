@@ -17,9 +17,9 @@ description: "Provides general information for admins about Office for Mac to he
 
 ***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
-The following sections are intended to provide information to help you plan your deployment of Office for Mac to users in your organization.
+The following sections are intended to provide information to help you plan your deployment of Office to Mac users in your organization.
 
-For more information, see [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md) and [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
+For more information, see [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md).
 
 ## System requirements
 
@@ -81,7 +81,7 @@ To help improve security, Office for Mac has implemented Apple app sandboxing gu
 
 ## App icons
 
-When you deploy Office for Mac, the app icons aren't automatically added to the dock, but are available from Launchpad. You can provide your users with instructions on [how to add app icons to the dock](https://support.microsoft.com/office/95db1c14-45e7-450e-86ad-1134f7e80851).
+When you deploy Office on a Mac, the app icons aren't automatically added to the dock, but are available from Launchpad. You can provide your users with instructions on [how to add app icons to the dock](https://support.microsoft.com/office/95db1c14-45e7-450e-86ad-1134f7e80851).
 
 ## Version numbers
 

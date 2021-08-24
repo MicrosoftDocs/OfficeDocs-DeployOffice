@@ -17,32 +17,30 @@ description: "Provides information to admins on how to download and deploy Offic
 
 ***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
-There are two basic ways that you, as an admin, can deploy Office for Mac to users in your organization:
+There are two basic ways that you, as an admin, can deploy Office to Mac users in your organization:
   
-- Provide your users with the installer package file, and have them install Office for Mac for themselves
+- Provide your Mac users with the installer package file, and have them install Office for themselves
 
-- Download the installer package file to your local network, and then use your software distribution tools to deploy Office for Mac to your users
+- Download the installer package file to your local network, and then use your software distribution tools to deploy Office to Mac devices
 
-If you have an Microsoft 365 (or Office 365) plan, you can provide your users with instructions on [how to download and install](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) Office for Mac for themselves. To install Office for Mac, a user has to be administrator on the device or know an administrator account name and password.
+If you have a Microsoft 365 (or Office 365) plan, you can provide your Mac users with instructions on [how to download and install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) themselves. To install Office on a Mac, a user has to be an administrator on the device or know an administrator account name and password.
   
-But, if you deploy Office for Mac for your users, you have more control over the deployment, including which users get Office for Mac and when. To plan your deployment, review the following information.
+But, if you deploy Office for your Mac users, you have more control over the deployment, including which users get Office and when. To plan your deployment, review the following information.
   
 ## Download Office for Mac to your local network
 
-The easiest way to download Office for Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet.  Here are the links to the installer packages for the Office suite, which contains all the applications:
+The easiest way to download Office for a Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet.  Here are the links to the installer packages for the Office suite, which contains all the applications.
+
 - [Office for Mac](https://go.microsoft.com/fwlink/p/?linkid=2009112) (Microsoft 365 or Office 365 subscription plan)
 - [Office LTSC for Mac 2021](https://go.microsoft.com/fwlink/p/?linkid=2009112) (volume license)
 - [Office 2019 for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (retail or volume license)
 
-> [!IMPORTANT]
-> Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
+The same installer package is used for Office for Mac, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
 
-Here is some additional information about installer packages:
+> [!NOTE]
+> - Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
+> - The installer packages for Office LTSC for Mac 2021 and for Office 2019 for Mac aren't available on the Volume Licensing Service Center (VLSC).
 
-- Installer and update packages for individual applications are also available on the Office CDN. For links to those packages, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
-- The same installer package is used for Office for Mac, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
-- The installer packages for Office LTSC for Mac 2021 and for Office 2019 for Mac aren't available on the Volume Licensing Service Center (VLSC).
-  
 ## Deploy Office for Mac to users in your organization
 
 Office for Mac uses the Apple Installer technology for installation. That means you can use the software distribution tools that you normally use to deploy software to Mac users. Some of the most common tools are [Jamf Pro](https://www.jamfsoftware.com/products/casper-suite/), [Munki](https://www.munki.org/), and [AutoPkg](https://github.com/autopkg/autopkg). You can also use [Apple Remote Desktop](https://www.apple.com/remotedesktop/).
@@ -54,17 +52,13 @@ Office for Mac uses the Apple Installer technology for installation. That means 
 
 Whichever deployment method you decide to use, the following information can help you plan your Office for Mac deployment.
   
-- **What's new:** Before you deploy, review the information about [what's new for admins](what-s-new-for-admins-in-office-for-mac.md) in Office for Mac. This article includes information about system requirements, language support, and new features. 
-    
-- **Side-by-side installation:** You can't have Office 2016 for Mac, which is no longer supported, and Office 2019 for Mac installed on the same device. Also, you can't have Office for Mac (from an Office 365 or Microsoft 365 plan) along with either Office 2016 for Mac or Office 2019 for Mac (both of which are one-time purchase versions) installed on the same device.
-    
-- **Deploying individual apps:**  Installer package files for individual applications are available on the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
-    
-- **Activation:** To use Office for Mac, it needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) in Office for Mac. 
+- **Side-by-side installations** You can't have two different versions of Office installed on a Mac. For example, you can't install Office LTSC for Mac 2021 on the same Mac where Office for Mac (from a Microsoft 365 or Office 365 subscription plan) is already installed.
 
-- **Uninstalling:** If you need to uninstall Office for Mac, you can [follow these steps to completely remove](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0) Office for Mac. Unfortunately, there is no program to uninstall Office for Mac automatically.
+- **Deploying individual apps:**  Installer package files for individual applications, such as Word or Excel, are available to download from the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
 
-- **Version numbers** Version numbers of 16.17 or higher for retail or volume licensed installs indicate you have Office 2019 for Mac. Office 2016 for Mac, which is no longer supported, had version numbers of 16.16 or lower. Since the "major" version (16) hasn't changed between Office 2016 for Mac and Office 2019 for Mac, application settings, including policies, preferences, and preference domains are similar between the two versions. Also, add-ins and other extensibility solutions that were compatible with Office 2016 for Mac will most likely be compatible with Office 2019 for Mac or will require minimal testing.
+- **Activation:** To use Office on a Mac, it needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) for Office for Mac.
+
+- **Uninstalling:** If you need to uninstall Office from a Mac, you can [follow these steps to completely remove](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0) Office for Mac. Unfortunately, there is no program to uninstall Office from a Mac automatically.
 
 ## Upgrade to Office for Mac or to Office 2019 for Mac
 
