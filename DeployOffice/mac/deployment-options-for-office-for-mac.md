@@ -29,13 +29,13 @@ But, if you deploy Office for your Mac users, you have more control over the dep
   
 ## Download Office for Mac to your local network
 
-The easiest way to download Office for a Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet.  Here are the links to the installer packages for the Office suite, which contains all the applications.
+The easiest way to download Office for Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet. Here are the links to the installer packages for the Office suite, which contains all the applications.
 
 - [Office for Mac](https://go.microsoft.com/fwlink/p/?linkid=2009112) (Microsoft 365 or Office 365 subscription plan)
 - [Office LTSC for Mac 2021](https://go.microsoft.com/fwlink/p/?linkid=2009112) (volume license)
 - [Office 2019 for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (retail or volume license)
 
-The same installer package is used for Office for Mac, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
+The same installer package can be used for Office for Mac, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
 
 > [!NOTE]
 > - Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
@@ -52,13 +52,15 @@ Office for Mac uses the Apple Installer technology for installation. That means 
 
 Whichever deployment method you decide to use, the following information can help you plan your Office for Mac deployment.
   
-- **Side-by-side installations** You can't have two different versions of Office installed on a Mac. For example, you can't install Office LTSC for Mac 2021 on the same Mac where Office for Mac (from a Microsoft 365 or Office 365 subscription plan) is already installed.
+- **Side-by-side installations:** You can't have two different versions of Office installed on a Mac. For example, you can't install Office LTSC for Mac 2021 on the same Mac where Office for Mac (from a Microsoft 365 or Office 365 subscription plan) is already installed.
 
 - **Deploying individual apps:**  Installer package files for individual applications, such as Word or Excel, are available to download from the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
 
-- **Activation:** To use Office on a Mac, it needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) for Office for Mac.
+- **Microsoft Teams** Teams is included as part of the installer packages for the Office suite. If you don't want Teams included as part of the installation, you can [download this installer package](https://go.microsoft.com/fwlink/p/?linkid=525133), which doesn't include Teams.
 
-- **Uninstalling:** If you need to uninstall Office from a Mac, you can [follow these steps to completely remove](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0) Office for Mac. Unfortunately, there is no program to uninstall Office from a Mac automatically.
+- **Activation:** To use Office on a Mac, Office needs to be activated. Before you deploy, review the information about [how activation works](overview-of-activation-for-office-for-mac.md) for Office for Mac.
+
+- **Uninstalling:** If you need to uninstall Office from a Mac, you can [follow these steps to completely remove Office](https://support.microsoft.com/office/ec3aa66e-6a76-451f-9d35-cba2e14e94c0). Unfortunately, there is no program to uninstall Office from a Mac automatically.
 
 ## Upgrade to Office for Mac or to Office 2019 for Mac
 

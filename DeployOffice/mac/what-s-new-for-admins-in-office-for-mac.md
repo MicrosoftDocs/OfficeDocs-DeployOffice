@@ -37,7 +37,7 @@ All releases of Office for Mac are 64-bit only.
 
 ## Languages
 
-All the [supported languages](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Mac&ID0EAACAAA=Mac) in Office for Mac are now included as part of the installer package (.pkg) file. There aren't separate installer package files for each language. This means that admins can't choose which language to deploy to users. Instead, the language is chosen during the installation based on the System Preferences settings. If none of the language settings are supported by Office, Office installs in English. All the languages get installed, which means users can easily [switch to a different language](https://support.microsoft.com/office/f5c54ff9-a6fa-4348-a43c-760e7ef148f8#ID0EACAAA=MacOS&ID0EAACAAA=MacOS&OfficeVersion=macOS) without having to reinstall Office.
+All the [supported languages](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Mac&ID0EAACAAA=Mac) in Office for Mac are included as part of the installer package (.pkg) file. There aren't separate installer package files for each language. This means that admins can't choose which language to deploy to users. Instead, the language is chosen during the installation based on the System Preferences settings. If none of the language settings are supported by Office, Office installs in English. All the languages get installed, which means users can easily [switch to a different language](https://support.microsoft.com/office/f5c54ff9-a6fa-4348-a43c-760e7ef148f8#ID0EACAAA=MacOS&ID0EAACAAA=MacOS&OfficeVersion=macOS) without having to reinstall Office.
 
 ## Features
 
@@ -49,7 +49,7 @@ To see the latest features in each monthly release, see [What's new in Microsoft
 
 #### Office LTSC for Mac 2021 features
 
-For information about the new features in Office 2019 for Mac, see the following articles:
+For information about the new features in Office LTSC for Mac 2021, see the following articles:
 - [What's new in Excel 2021 for Mac](https://support.microsoft.com/office/4100753f-93bc-4143-a77c-7258d1a80cd3)
 - [What's new in Outlook 2021 for Mac](https://support.microsoft.com/office/cac45ed4-3f1c-490e-a76d-95af48ba770e)
 - [What's new in PowerPoint 2021 for Mac](https://support.microsoft.com/office/fcbbd1ee-a94a-42a6-910e-df9cab3a1bf6)
