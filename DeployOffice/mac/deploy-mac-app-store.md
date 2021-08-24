@@ -30,7 +30,7 @@ Starting in January 2019, the following Office applications are available for d
 \* These apps were also available from the Mac App Store in previous years.
 
 ## What version of Office is available from the Mac App Store?
-The Office apps available from the Mac App Store provide the latest Current Channel version of Office on the Mac. Word, Excel, PowerPoint, and Outlook require a Microsoft 365 (or Office 365) subscription to activate. OneNote and OneDrive do not require a subscription, but some premium features may require a subscription. All apps are compatible with Microsoft 365 (and Office 365) subscription plans, such as Microsoft 365 E3, Microsoft 365 Business Premium, or Office 365 E5.
+The Office apps available from the Mac App Store provide the latest Current Channel version of Office for Mac. Word, Excel, PowerPoint, and Outlook require a Microsoft 365 (or Office 365) subscription to activate. OneNote and OneDrive do not require a subscription, but some premium features may require a subscription. All apps are compatible with Microsoft 365 (and Office 365) subscription plans, such as Microsoft 365 E3, Microsoft 365 Business Premium, or Office 365 E5.
 
 > [!NOTE]
 > Some Microsoft 365 (and Office 365) subscriptions don't include access to downloadable Office apps. For example, the Office 365 E1 and Microsoft 365 Business Basic plans. For more information, see [Microsoft 365 plans for businesses](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products), [Microsoft 365 plans for enterprises](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), and [Office 365 plans for enterprises](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).

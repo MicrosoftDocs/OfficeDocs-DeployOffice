@@ -17,7 +17,7 @@ description: "Shows preferences that IT Pros can set for Outlook for Mac and Out
 
 ***Applies to:*** *Outlook for Mac, Outlook LTSC for Mac 2021, Outlook 2019 for Mac*
 
-As an IT admin, you may want to provide Outlook for Mac users in your organization with a standard set of preferences in either of the following ways:
+As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
