@@ -49,9 +49,15 @@ All releases of Office for Mac are 64-bit only.
 
 All the [supported languages](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Mac&ID0EAACAAA=Mac) in Office for Mac are included as part of the installer package (.pkg) file. There aren't separate installer package files for each language. This means that admins can't choose which language to deploy to users. Instead, the language is chosen during the installation based on the System Preferences settings. If none of the language settings are supported by Office, Office installs in English. All the languages get installed, which means users can easily [switch to a different language](https://support.microsoft.com/office/f5c54ff9-a6fa-4348-a43c-760e7ef148f8#ID0EACAAA=MacOS&ID0EAACAAA=MacOS&OfficeVersion=macOS) without having to reinstall Office.
 
+## Updates
+
+Office for Mac is updated approximately once a month. These updates include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. For those with a Microsoft 365 (or Office 365) plan, these updates can also include new or improved features. For more information, see [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
+
 ## Features
 
 For information about features in the various versions of Office for Mac, review the following resources. Keep in mind that Office LTSC for Mac 2021 and Office 2019 for Mac don't receive new features after they've been released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office.
+
+If you're looking for information to help your users get started with Office for Mac, review the resources on [Office Help & Training](https://support.microsoft.com/office).
 
 #### Office for Mac features
 
@@ -76,9 +82,6 @@ For information about the new features in Office 2019 for Mac, see the following
 - [What's new in PowerPoint 2019 for Mac](https://support.microsoft.com/office/5038ba79-48c5-40f0-adff-11489e5d6fed)
 - [What's new in Word 2019 for Mac](https://support.microsoft.com/office/247e0cd4-a758-4b42-a157-42eb8853aef5)
 
-## Help and training content
-
-If you're looking for information to help your users get started with Office for Mac, review the resources on [Office Help & Training](https://support.microsoft.com/office).
 
 ## Privacy controls
 
