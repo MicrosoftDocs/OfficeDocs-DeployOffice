@@ -14,7 +14,7 @@ description: "Provides Office admins with information about using Active Directo
 
 # Activate volume licensed versions of Office by using Active Directory
 
-***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
   
 Active Directory-based activation enables an organization to activate volume licensed versions of Office, including Project and Visio, on computers that are joined to an Active Directory domain. Active Directory-based activation is implemented as a role service on Windows Server and relies on Active Directory Domain Services to store an activation object. For more information, see [Activate using Active Directory-based activation](/windows/deployment/volume-activation/activate-using-active-directory-based-activation-client).
 

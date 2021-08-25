@@ -14,7 +14,7 @@ description: "Provides Office admins with information on how to rearm a volume l
 
 # Rearm a volume licensed version of Office that's included in an operating system image
 
- ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+ ***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
   
 There is a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users don't see notifications to activate.

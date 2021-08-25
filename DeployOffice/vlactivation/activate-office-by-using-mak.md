@@ -14,8 +14,7 @@ description: "Provides Office admins with information about using Multiple Activ
 
 # Activate volume licensed versions of Office by using MAK
 
- ***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
-
+***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
   
 Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft-hosted activation services, either via the internet or by telephone. MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against those services.
 
