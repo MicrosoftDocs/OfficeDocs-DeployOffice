@@ -7,7 +7,7 @@ ms.date: 3/14/2018
 audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Learn about the language packs and language interface packs that are available for Office."

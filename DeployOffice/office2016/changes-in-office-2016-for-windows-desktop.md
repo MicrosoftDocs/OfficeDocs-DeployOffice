@@ -7,7 +7,7 @@ ms.date: 6/16/2017
 audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released."

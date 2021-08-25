@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from Office 2007."
