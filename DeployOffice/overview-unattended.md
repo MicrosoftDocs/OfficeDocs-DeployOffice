@@ -6,7 +6,7 @@ manager: laurawiu
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 ms.custom: Ent_Office_ProPlus
 recommendations: false

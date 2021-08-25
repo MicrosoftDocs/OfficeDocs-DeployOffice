@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-administration 
-localization_priority: Normal 
+ms.localizationpriority: medium 
 ms.collection: Ent_O365 
 ms.custom: Ent_Office_ProPlus 
 recommendations: false

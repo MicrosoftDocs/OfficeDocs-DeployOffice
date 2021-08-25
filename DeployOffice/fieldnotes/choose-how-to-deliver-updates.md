@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Field best practices: choose how to deliver updates software updates for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)"
 ms.custom: 
 - Ent_Office_ProPlus
