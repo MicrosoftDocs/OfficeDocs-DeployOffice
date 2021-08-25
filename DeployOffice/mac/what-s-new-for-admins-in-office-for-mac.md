@@ -1,5 +1,5 @@
 ---
-title: "Overview for admins of Office for Mac"
+title: "Overview of Office for Mac (for admins and IT Pros)"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
