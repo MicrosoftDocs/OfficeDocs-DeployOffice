@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Field best practices: Road map to modern management of Microsoft 365 Apps in the enterprise"
 ms.custom: 
 - Ent_Office_ProPlus

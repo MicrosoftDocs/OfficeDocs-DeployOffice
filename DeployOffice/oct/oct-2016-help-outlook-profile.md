@@ -7,7 +7,7 @@ ms.date: 9/21/2015
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ROBOTS: NOINDEX, NOFOLLOW

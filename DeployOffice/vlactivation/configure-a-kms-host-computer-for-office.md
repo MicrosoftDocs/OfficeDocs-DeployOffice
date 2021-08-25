@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016."

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: troubleshooting
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides Office admins with information on how to troubleshoot common errors for KMS or MAK-based activation of Office."
