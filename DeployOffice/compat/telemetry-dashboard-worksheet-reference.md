@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Find reference information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."

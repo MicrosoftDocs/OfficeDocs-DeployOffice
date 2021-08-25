@@ -7,7 +7,7 @@ ms.date: 3/9/2016
 audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Find language identifier and OptionState ID values for identifying and customizing Office 2016 language and proofing tools installations."

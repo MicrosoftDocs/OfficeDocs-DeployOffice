@@ -7,7 +7,7 @@ ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
