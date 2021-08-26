@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Field best practices: Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
 ms.custom: 
 - Ent_Office_ProPlus

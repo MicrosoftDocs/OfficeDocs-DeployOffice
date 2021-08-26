@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 ms.custom: Ent_Office_ProPlus
 description: "Microsoft 365 change guide"

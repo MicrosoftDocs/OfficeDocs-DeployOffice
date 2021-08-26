@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 recommendations: false
 description: "Guidance for Office admins on how to use the security update status feature in the Microsoft 365 Apps admin center."
 ---

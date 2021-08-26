@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus)"
 ms.custom: 
 - Ent_Office_ProPlus

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Provides an overview of how to assess compatibility between versions of Office in your deployment, and use tools like Office Telemetry Dashboard that help you plan for an Office deployment."

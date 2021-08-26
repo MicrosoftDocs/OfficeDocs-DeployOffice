@@ -7,7 +7,7 @@ ms.date: 11/26/2015
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."

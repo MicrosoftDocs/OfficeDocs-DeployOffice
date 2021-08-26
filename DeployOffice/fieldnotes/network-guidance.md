@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Field best practices: Network guidance for deploying and servicing Microsoft 365 Apps"
 ms.custom: 
 - Ent_Office_ProPlus
