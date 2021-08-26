@@ -56,7 +56,7 @@ To allow the extension to be installed, sign in to the Microsoft 365 admin cente
 
 There you'll see the **Install extension and set Bing as the default search engine** check box. The check box is not selected by default, as shown in the following screenshot.
 
-![Configurations tab for Microsoft Search in the Microsoft 365 admin center](images/microsoft-search-bing-microsoft-365-admin-center.png)
+![Configurations tab for Microsoft Search in the Microsoft 365 admin center.](images/microsoft-search-bing-microsoft-365-admin-center.png)
 
 To allow the extension to be installed, select the check box, and then choose **Save**.
 
@@ -187,13 +187,13 @@ You can find this policy setting under Computer Configuration\Policies\Administr
 
 If you're deploying Microsoft 365 Apps for enterprise  by using the Office 365 Client Installation wizard in Configuration Manager, you can set the **Background service for Microsoft Search in Bing** toggle to **Off** in the **Features** section.
 
-![The Features section showing the toggle for Microsoft Search in Bing](images/oct-features-toggle-bing.PNG)
+![The Features section showing the toggle for Microsoft Search in Bing.](images/oct-features-toggle-bing.PNG)
 
 ### Microsoft Intune
 
 If you're deploying Microsoft 365 Apps for enterprise by using Intune, on the **Configure app suite** page, you can set the **Install background service for Microsoft Search in Bing** toggle to **No** in the **Properties** section.
 
-![The Properties section showing the toggle for Microsoft Search in Bing](images/intune-toggle-bing.PNG)
+![The Properties section showing the toggle for Microsoft Search in Bing.](images/intune-toggle-bing.PNG)
 
 ## How to enhance Microsoft Search in Bing results for your organization
 
@@ -212,11 +212,11 @@ For more information, see [Plan your content](/microsoftsearch/plan-your-content
 
 After the extension for Microsoft Search in Bing is installed and Bing is set as the default search engine, your users will see a Welcome screen similar to the following screenshot:
 
-![Welcome screen for Microsoft Search in Bing when using Google Chrome web browser](images/welcome-screen-chrome.png)
+![Welcome screen for Microsoft Search in Bing when using Google Chrome web browser.](images/welcome-screen-chrome.png)
 
 As they use Microsoft Search in Bing, your users will see work-related information in their search results when searching from the address bar, similar to what is shown in the following screenshot:
 
-![Work-related search results displayed in Microsoft Search in Bing](images/work-related-search-result.png)
+![Work-related search results displayed in Microsoft Search in Bing.](images/work-related-search-result.png)
 
 ### Change whether Bing is the default search engine for Google Chrome
 
