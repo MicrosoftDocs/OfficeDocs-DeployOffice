@@ -29,7 +29,7 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 - Client devices can reach the following endpoints: 
   - ```https://login.live.com```
   - ```https://*.config.office.com```
-  - ```https://insights.office.net```
+  - ```https://*.config.office.net```
 
 ## Compatibility with other management tools
 
