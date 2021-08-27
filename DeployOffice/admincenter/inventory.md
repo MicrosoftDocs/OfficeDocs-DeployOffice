@@ -27,7 +27,7 @@ To view the inventory for your environment, the following requirements must be m
 - Client devices can reach the following endpoints: 
   - `https://login.live.com`
   - `https://*.config.office.com`
-  - `https://*.insights.office.net`
+  - `https://*.config.office.net`
 
 ## How to view inventory
 
