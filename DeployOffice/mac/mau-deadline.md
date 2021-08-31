@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 recommendations: false
@@ -204,7 +204,7 @@ If you configured a [deadline for a specific date and time](#configure-a-deadlin
 
 ## Additional information about MAU deadlines
 
-- Deadlines can be configured regardless of where MAU is looking for the updates. For example, deadlines work if MAU is getting updates directly from the Office Content Delivery Network (CDN) on the internet of if MAU is getting updates from a MAU caching server within your local network.
+- Deadlines can be configured regardless of where MAU is looking for the updates. For example, deadlines work if MAU is getting updates directly from the Office Content Delivery Network (CDN) on the internet or if MAU is getting updates from a MAU caching server within your local network.
 - If you have configured the deadline to be a certain number of days after an update is detected, and then MAU detects a new update, the deadline will be reset to apply to the new update.
 - If you have specified a deadline for all applications, you can still configure a more specific deadline for one of the applications. For example, you can configure a deadline of seven days for all applications, and then specify that the deadline for Excel is four days.
 - Instead of configuring a specific date and time for a deadline for a specific version, you can configure that deadline to be a certain number of days after that specific version is detected by MAU.

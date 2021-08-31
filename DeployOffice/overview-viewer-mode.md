@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
@@ -23,7 +23,7 @@ Viewer mode is designed for users who need to view or print Office files without
 
 When viewer mode is enabled, an unlicensed user of Microsoft 365 Apps for enterprise is not prompted to activate Office when they open Word, Excel, or PowerPoint. Instead, they see the following banner message underneath the ribbon in their Office apps that informs them Office is in viewer mode.
 
-:::image type="content" source="images/viewermode1.png" alt-text="Viewer mode enabled in Microsoft 365 Apps":::
+:::image type="content" source="images/viewermode1.png" alt-text="Viewer mode enabled in Microsoft 365 Apps.":::
 
 ## Enable viewer mode with Group Policy
 

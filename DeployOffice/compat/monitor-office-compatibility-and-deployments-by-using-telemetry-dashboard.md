@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Office Telemetry Dashboard."
@@ -117,7 +117,7 @@ In the navigation pane on the left side of the dashboard, there are filters call
 - The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.
 - The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
 
-  ![An image of the Date Range drop down box in the Office Telemetry Dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
+  ![An image of the Date Range drop down box in the Office Telemetry Dashboard's navigation pane.](../images/ORK_Telem_DateRange.png)
 
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:

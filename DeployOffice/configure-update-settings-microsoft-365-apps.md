@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
@@ -59,7 +59,7 @@ If you have Windows Server and Active Directory Domain Services (AD DS) deployed
 
 After you copy the Administrative Template files to AD DS, you'll find the update policy settings under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates in the Group Policy Management Console. You'll also find a description of how to configure each policy setting.
   
-![Group Policy settings updates](images/86a9781c-0e91-4e5d-b334-7a0d07d85466.jpg)
+![Group Policy settings updates.](images/86a9781c-0e91-4e5d-b334-7a0d07d85466.jpg)
   
 If you decide to make a change later, update the Group Policy setting by using the Group Policy Management Console. The updated policy settings are automatically applied to Microsoft 365 Apps, through the normal Group Policy update process.
   

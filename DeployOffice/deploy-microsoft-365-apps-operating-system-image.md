@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
@@ -66,7 +66,7 @@ For example, at a command prompt, run the following command:
   
 You should see **\<No installed product keys detected\>**, as shown in the following screenshot.
   
-![No installed product key detected](images/aa1e234d-c2d1-471f-bf7f-9b11adc8b4b4.jpg)
+![No installed product key detected.](images/aa1e234d-c2d1-471f-bf7f-9b11adc8b4b4.jpg)
   
 The location of the ospp.vbs script depends on whether you install the 32-bit or 64-bit version of Microsoft 365 Apps and whether you install on a 32-bit or 64-bit version of the operating system. The following table lists the possible locations of the ospp.vbs script.
   
@@ -95,6 +95,6 @@ After you test your operating system image, you can deploy it to your users. The
   
 Users are prompted to activate Microsoft 365 Apps when they open their first Office program, as seen in the following screenshot.
   
-![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
+![Activate Office.](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
 As long as the computer is connected to the internet, the user just needs to sign in when prompted, and then activation occurs automatically.

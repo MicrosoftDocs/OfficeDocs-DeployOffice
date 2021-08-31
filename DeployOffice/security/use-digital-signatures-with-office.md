@@ -7,7 +7,7 @@ ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
@@ -84,7 +84,7 @@ The following figure shows the warning that the user sees after opening a docume
   
 **Digital signature warning for documents originally signed in Office 2003 or earlier versions.**
 
-![Figure 1 Compatibility Issues](../images/CompatibilityIssues.jpg)
+![Figure 1 Compatibility Issues.](../images/CompatibilityIssues.jpg)
   
 Also, if you use XAdES for a digital signature in Office 2016, the digital signature will not be compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](use-digital-signatures-with-office.md#configsigs) later in this article. 
   

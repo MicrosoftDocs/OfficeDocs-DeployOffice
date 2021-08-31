@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Provides an overview of how to assess compatibility between versions of Office in your deployment, and use tools like Office Telemetry Dashboard that help you plan for an Office deployment."
@@ -49,10 +49,10 @@ The Office compatibility tools address common issues that can make Office deploy
 
 |Phase|Description|
 |:-----|:-----|
-|![Icon for the Discover phase](../images/ORK_Compat_Discover_reverse.png)|Discover what is being used, by whom, and how often. This helps you determine what to test for compatibility with the version of Office you are upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  <br/> |
-|![Icon for the Rationalize phase](../images/ORK_Compat_Rationalize_reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  <br/> |
-|![Icon for the Validate phase](../images/ORK_Compat_Validate_reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  <br/> |
-|![Icon for the Manage phase](../images/ORK_Compat_Manage_reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  <br/> |
+|![Icon for the Discover phase.](../images/ORK_Compat_Discover_reverse.png)|Discover what is being used, by whom, and how often. This helps you determine what to test for compatibility with the version of Office you are upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  <br/> |
+|![Icon for the Rationalize phase.](../images/ORK_Compat_Rationalize_reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  <br/> |
+|![Icon for the Validate phase.](../images/ORK_Compat_Validate_reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  <br/> |
+|![Icon for the Manage phase.](../images/ORK_Compat_Manage_reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  <br/> |
    
 In this article, we'll discuss each phase of the compatibility process and describe how you can use Office Telemetry Dashboard to support the process.
   

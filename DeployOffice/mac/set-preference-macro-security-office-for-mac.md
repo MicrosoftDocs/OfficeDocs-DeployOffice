@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Mac
 recommendations: false
@@ -19,7 +19,7 @@ description: "Shows IT Pros how to set the macro security level for Office for M
 
 In Office for Mac, there are three levels of macro security available, as seen in the following screenshot: 
   
-![Shows the macro security options for Security &amp; Privacy](../images/48dc9e7f-d4d0-4603-9a50-7112f40805c9.png)
+![Shows the macro security options for Security &amp; Privacy.](../images/48dc9e7f-d4d0-4603-9a50-7112f40805c9.png)
   
 If you're an admin, you might want to configure macro security for your users, in either of the following ways:
   

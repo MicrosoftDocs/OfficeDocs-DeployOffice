@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
@@ -84,7 +84,7 @@ Here's what happens after Microsoft 365 Apps is installed on a computer that has
     
     To determine whether the user is licensed to use Microsoft 365 Apps, the Office Licensing Service has to know the user's account for Office 365. In some cases, Microsoft 365 Apps prompts the user to provide the information. For example, the user might see the **Activate Office** dialog box.
     
-     ![Activate Office](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
+     ![Activate Office.](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
     If your environment is configured to synchronize Office 365 (Azure Active Directory) and local Active Directory (AD) accounts, then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
     
@@ -108,13 +108,13 @@ If the user doesn't log on to the shared computer for 30 days, the licensing tok
     
 **Reduced functionality mode** If the user is not licensed for Microsoft 365 Apps, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Microsoft 365 Apps isn't activated. Microsoft 365 Apps is now in reduced functionality mode. This means that the user can view and print Office documents, but can't create or edit documents. The user also sees a message in the Office program that most features are turned off.
     
-   ![Reduced functionality](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
+   ![Reduced functionality.](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
   
 **Activation limits** Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
     
 Microsoft allows a single user to activate Microsoft 365 Apps on a reasonable number of shared computers in a given time period. The user gets an error message in the unlikely event the limit is exceeded.
     
-   ![Too many computers activated message](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
+   ![Too many computers activated message.](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
   
 **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity).
     

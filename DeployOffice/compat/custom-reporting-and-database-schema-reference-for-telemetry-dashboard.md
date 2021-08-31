@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
@@ -37,7 +37,7 @@ For example, the following screenshot shows a custom report that lists the unreg
   
 **Custom report that shows unregistered ActiveX solutions**
 
-![Illustrates a custom report that shows unregistered ActiveX controls](../images/ORK_CustomReport_ActiveXreport.GIF)
+![Illustrates a custom report that shows unregistered ActiveX controls.](../images/ORK_CustomReport_ActiveXreport.GIF)
   
 > [!IMPORTANT]
 > To use labels in custom reports, you have to configure them when you deploy the agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
@@ -46,13 +46,13 @@ As another example, the following screenshot shows the list of Office client com
   
 **The Deployments worksheet**
 
-![Shows the Office deployments that are tracked by Office Telemetry Dashboard in the Deployments worksheet](../images/ORK_CR_OfficeDeployments.GIF)
+![Shows the Office deployments that are tracked by Office Telemetry Dashboard in the Deployments worksheet.](../images/ORK_CR_OfficeDeployments.GIF)
   
 You can get a more detailed view of Office clients by using a custom report. In the following illustration, the Office clients are grouped by business groups (as configured for Label 2) so that you can see the breakdown of Office deployments across each group. You can also create a PivotChart to help show the data. This custom report uses a hidden table, System_details, that you have to manually add before you can add Office versions to your report. You can learn how to do this in [Hidden tables in Office Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables).
   
 **Custom report showing Office deployments by business group**
 
-![Displays an example of a custom report that shows Office deployments by business group](../images/ORK_CR_OfficeCustomReport.png)
+![Displays an example of a custom report that shows Office deployments by business group.](../images/ORK_CR_OfficeCustomReport.png)
   
 <a name="Create_customreport"> </a>
 
@@ -361,15 +361,15 @@ The following illustrations show the relationships between tables in the databas
   
 **Default relationships between tables in the database**
 
-![Shows the primary keys and relationships between tables in the database](../images/ORK_CR_DefaultRelationships.gif)
+![Shows the primary keys and relationships between tables in the database.](../images/ORK_CR_DefaultRelationships.gif)
   
 **The Usage_summary table and its relationships**
 
-![Shows the Usage_Summary table and its relationship to other tables in the database](../images/ORK_CR_Usage_Summary.gif)
+![Shows the Usage_Summary table and its relationship to other tables in the database.](../images/ORK_CR_Usage_Summary.gif)
   
 **The Issue_summary table and its relationships**
 
-![Shows the Issue_Summary table and its relationships to other tables in the database](../images/ORK_CR_Issue_Summary.gif)
+![Shows the Issue_Summary table and its relationships to other tables in the database.](../images/ORK_CR_Issue_Summary.gif)
   
 ## Related topics
 

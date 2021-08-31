@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
@@ -91,7 +91,7 @@ If a user installs Microsoft 365 Apps on more than 10 devices, then the device t
 
 In reduced functionality mode, Microsoft 365 Apps remains installed on the device, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message like the following:
   
-![Product deactivated](images/78aa59b0-8772-4ba2-8094-bfeb65602ab7.png)
+![Product deactivated.](images/78aa59b0-8772-4ba2-8094-bfeb65602ab7.png)
   
 The user can then choose one of the available options to reactivate Microsoft 365 Apps on that computer.
 

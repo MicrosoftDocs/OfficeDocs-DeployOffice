@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
@@ -23,7 +23,7 @@ Office 365 ProPlus is the version of Office that comes with several enterprise, 
 
 The new name will appear in Version 2004 onwards, starting on April 21, 2020. For example, the following screenshot is an example of what you'll see under the **Product Information** section when you go to **File** > **Account** in an Office app, such as Word.
 
-![Product information section in an Office application showing "Microsoft 365 for enterprise"](images/product-information-microsoft-365-enterprise.png)
+![Product information section in an Office application showing "Microsoft 365 for enterprise."](images/product-information-microsoft-365-enterprise.png)
 
 Starting with Version 2005, when you go to **Control Panel** > **Programs** > **Programs and Features**, you will see an entry similar to the following:
 

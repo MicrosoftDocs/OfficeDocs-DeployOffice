@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
@@ -36,7 +36,7 @@ Users can choose **Update now** to apply the updates. The user is then prompted 
   
 Users also see notifications if they go to **File > Account** in an Office program. The **Office Updates** section turns yellow if updates are ready to be applied.
   
-![Updates available notification that is shown under File > Account > Update Options](images/574a065f-f666-481f-b2f7-5cc56d7c97f9.jpg)
+![Updates available notification that is shown under File > Account > Update Options.](images/574a065f-f666-481f-b2f7-5cc56d7c97f9.jpg)
   
 If you don't want your users to see these types of notifications, you can [use Group Policy to hide the notifications](configure-update-settings-microsoft-365-apps.md).
   
@@ -50,17 +50,17 @@ To make sure that your users apply updates to Microsoft 365 Apps, you can [confi
 
 Users are given notifications leading up to the deadline. For example, within seventy-two hours of the deadline, users see a message, in any newly opened Office document, that updates are blocked.
   
-![Office updates 72 hour deadline](images/f69d4bed-ab4d-43ac-ae5d-01ac31653cb9.jpg)
+![Office updates 72 hour deadline.](images/f69d4bed-ab4d-43ac-ae5d-01ac31653cb9.jpg)
   
 The next reminder users see is twelve hours before the deadline. They'll see a message in the notification area in Windows, reminding them that updates are ready to be applied.
   
-![Office updates 12 hour deadline notification](images/6c315397-3f15-4c9f-86b1-5132c28dbc7e.jpg)
+![Office updates 12 hour deadline notification.](images/6c315397-3f15-4c9f-86b1-5132c28dbc7e.jpg)
   
 This message appears every two hours. It'll also be shown 60 minutes, 30 minutes, 15 minutes, and 5 minutes before the deadline.
   
 If the deadline arrives and the updates still aren't applied, users see a dialog box that warns them that they have 15 minutes before the updates are applied.
   
-![Office updates 15 minute deadline notification](images/1016ec10-5e8a-4280-896a-4e1026304a63.jpg)
+![Office updates 15 minute deadline notification.](images/1016ec10-5e8a-4280-896a-4e1026304a63.jpg)
   
 This gives users fifteen minutes to save and close any work. When the countdown reaches 00:00, any open Office programs are closed, and the updates are applied.
   

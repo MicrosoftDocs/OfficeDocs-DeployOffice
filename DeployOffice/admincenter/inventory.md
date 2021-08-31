@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 recommendations: false
 description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
 ---
@@ -27,7 +27,7 @@ To view the inventory for your environment, the following requirements must be m
 - Client devices can reach the following endpoints: 
   - `https://login.live.com`
   - `https://*.config.office.com`
-  - `https://*.insights.office.net`
+  - `https://*.config.office.net`
 
 ## How to view inventory
 
