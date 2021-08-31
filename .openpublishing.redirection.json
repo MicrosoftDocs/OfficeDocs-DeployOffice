@@ -699,6 +699,11 @@
       "source_path": "DeployOffice/office2021/overview-mac-preview.md",
       "redirect_url": "/deployoffice/ltsc2021/overview-mac-preview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/office-365-services-connectivity.md",
+      "redirect_url": "/deployoffice/endofsupport/microsoft-365-services-connectivity",
+      "redirect_document_id": true
     }
   ]
 }
