@@ -19,7 +19,7 @@ description: "Shows IT Pros how to set a preference for Resume Assistant in Word
 
 In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) will appear on the Review tab if you are running version 16.13 or later, as shown in the following screenshot.
 
-![Screenshot of Resume Assistant icon in the Word for Mac ribbon](../images/resume-assistant-ribbon.png)
+![Screenshot of Resume Assistant icon in the Word for Mac ribbon.](../images/resume-assistant-ribbon.png)
 
 > [!NOTE]
 > Resume Assistant is only available to Microsoft 365 (and Office 365) subscribers.

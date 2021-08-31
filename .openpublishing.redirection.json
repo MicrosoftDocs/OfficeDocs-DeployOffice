@@ -421,7 +421,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "DeployOffice/office2021/index.md",
+      "source_path": "DeployOffice/ltsc2021/index.md",
       "redirect_url": "overview-ltsc-preview",
       "redirect_document_id": false
     },
@@ -683,6 +683,21 @@
     {
       "source_path": "DeployOffice/mac/office-2016-for-mac-upgrade-to-64-bit.md",
       "redirect_url": "/deployoffice/mac/what-s-new-for-admins-in-office-for-mac",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/office2021/overview-ltsc-preview.md",
+      "redirect_url": "/deployoffice/ltsc2021/overview-ltsc-preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/office2021/install-ltsc-preview.md",
+      "redirect_url": "/deployoffice/ltsc2021/install-ltsc-preview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/office2021/overview-mac-preview.md",
+      "redirect_url": "/deployoffice/ltsc2021/overview-mac-preview",
       "redirect_document_id": true
     }
   ]

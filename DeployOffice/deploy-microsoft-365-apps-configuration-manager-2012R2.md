@@ -42,7 +42,7 @@ Next, edit the configuration.xml, and review [Configuration options for the Offi
 
 It's important that you don't include the SourcePath attribute in the Add section of your configuration.xml file. That's because Configuration Manager copies the installation files for an application into a folder under the Configuration Manager client cache folder, and the name of that subfolder is different for each computer. Because the folder name is different for each computer, you can't specify a SourcePath that will work for every computer that you're deploying Microsoft 365 Apps to. Instead, leave out the SourcePath attribute. When a SourcePath isn't specified, the Office Deployment Tool automatically looks for the Microsoft 365 Apps installation files in the same folder that the Office Deployment Tool is located. That's why we're including the Office Deployment Tool, the configuration.xml, and the Microsoft 365 Apps installation files together in the same shared folder.
   
-![Microsoft 365 Apps installation file folder](images/b556bbf7-f881-4d34-98fb-b96de5d6e0ec.png)
+![Microsoft 365 Apps installation file folder.](images/b556bbf7-f881-4d34-98fb-b96de5d6e0ec.png)
   
 ## Create an application for Microsoft 365 Apps in Configuration Manager
 
@@ -109,7 +109,7 @@ For the Microsoft 365 Apps application, the deployment type includes the followi
     
   - Select the **Use (Default) registry key value for detection** check box.
     
-     ![Detection rule](images/c6565ea7-2326-490e-8e1f-c2daaa928193.png)
+     ![Detection rule.](images/c6565ea7-2326-490e-8e1f-c2daaa928193.png)
   
     After you enter this information, choose **OK**, and then on the **Detection Method** page, choose **Next**.
     
@@ -142,7 +142,7 @@ After you create the Microsoft 365 Apps application and configure its deployment
     
 8. Select the application, and then view the **Completion Statistics**.
     
-     ![Completion Statistics](images/2023e38c-7c9d-4981-a336-ca676b81e430.png)
+     ![Completion Statistics.](images/2023e38c-7c9d-4981-a336-ca676b81e430.png)
   
 ## Deploy the Microsoft 365 Apps application in Configuration Manager
 <a name="BKMK_Deploy"> </a>
@@ -169,7 +169,7 @@ After the files for the Microsoft 365 Apps application are copied to the appropr
     
 After you deploy the application, a targeted computer becomes aware of the deployed application during the computer's next client policy polling cycle, which is once every sixty minutes by default. Then, the computer downloads the installation files for the application from a distribution point into the Configuration Manager client cache. The installation of Microsoft 365 Apps takes place from the client cache and no additional files are downloaded from the network or from the internet.
   
-![Office installation status](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
+![Office installation status.](images/3804d212-3bbc-4768-a90a-864fa69b1dfb.png)
   
 ## Related topics
 - [Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))
