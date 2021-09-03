@@ -26,7 +26,7 @@ description: "Technical guidance for IT Pros about the preview version of Office
 
 Microsoft is planning to release a new volume licensed version of Office later this year. A preview version is available now for you to install and test on devices running macOS in your organization.
 
-Office 2021 Standard for Mac (Preview) includes Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, and Teams. 
+Office LTSC Standard for Mac 2021 (Preview) includes Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, and Teams. 
 
 For information about the preview version of Office for devices running Windows, see [Overview of Office LTSC Preview](overview-ltsc-preview.md).
 
@@ -78,7 +78,7 @@ Here are a few examples of new features that are included in Office LTSC for Mac
 - Dynamic array support in Excel, including new functions that make use of dynamic arrays. 
 - Record a slide show with narration in PowerPoint.
 
-Keep in mind that after Office LTSC for Mac 2021 is released later this year, it won’t receive any new features. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office 2021 Standard for Mac. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
+Keep in mind that after Office LTSC for Mac 2021 is released later this year, it won’t receive any new features. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office LTSC Standard for Mac 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 ## Additional information about Office LTSC for Mac 2021 (Preview)
 
@@ -121,5 +121,5 @@ If you want to provide feedback about an Office app or feature, go to **File** >
 If you have questions about Office LTSC for Mac 2021 (Preview) or want to provide additional feedback, go to the [Office LTSC Commercial Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
 
 > [!NOTE]
-> When Office 2021 Standard for Mac is released later this year, it will have five years of Mainstream Support. There won’t be any Extended Support available after the five years of Mainstream Support ends.
+> When Office LTSC Standard for Mac 2021 is released later this year, it will have five years of Mainstream Support. There won’t be any Extended Support available after the five years of Mainstream Support ends.
 
