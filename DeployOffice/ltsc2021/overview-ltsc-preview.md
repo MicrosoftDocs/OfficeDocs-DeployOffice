@@ -38,7 +38,7 @@ Office LTSC Professional Plus 2021 Preview includes Access, Excel, OneNote, Outl
 
 For information about installing, activating, and updating the preview versions of Office, Project, and Visio, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
-For information about the preview version of Office for devices running macOS, see [Overview of Office 2021 for Mac (Preview)](overview-mac-preview.md).
+For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2021 (Preview)](overview-mac-preview.md).
 
 ## What’s changed in Office LTSC Preview
 
@@ -87,7 +87,7 @@ For more information about the installation of the Teams client app with Office 
 
 #### Office Add-ins JavaScript APIs
 
-Several more Office Add-ins JavaScript APIs are available with Office LTSC Preview and Office 2021 for Mac (Preview). These include the following requirement sets.
+Several more Office Add-ins JavaScript APIs are available with Office LTSC Preview and Office LTSC for Mac 2021 (Preview). These include the following requirement sets.
 
 - Product requirement sets:
    - Outlook: Up to [1.9](/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/outlook-requirement-set-1.9) on Windows, up to [1.8](/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/outlook-requirement-set-1.8) on Mac
@@ -103,7 +103,7 @@ Several more Office Add-ins JavaScript APIs are available with Office LTSC Previ
    - [RibbonApi 1.1](/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets) (Excel)
    - [SharedRuntime 1.1](/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets) (Excel)
 
-We encourage you to use, test, and provide feedback on the interaction of your current add-ins (including VBA and COM/VSTO) with Office LTSC Preview and Office 2021 for Mac (Preview). If you develop add-ins, consider taking this opportunity to test the new features to ensure that your customers can continue to use your add-in in Office LTSC Preview and Office 2021 for Mac (Preview).
+We encourage you to use, test, and provide feedback on the interaction of your current add-ins (including VBA and COM/VSTO) with Office LTSC Preview and Office LTSC for Mac 2021 (Preview). If you develop add-ins, consider taking this opportunity to test the new features to ensure that your customers can continue to use your add-in in Office LTSC Preview and Office LTSC for Mac 2021 (Preview).
 
 
 ## What’s stayed the same in Office LTSC Preview
