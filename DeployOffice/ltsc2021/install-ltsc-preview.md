@@ -33,7 +33,7 @@ The following products are available as part of this preview program:
 
 For an overview of this preview program, including what’s changed since Office 2019, see [Overview of Office LTSC Preview](overview-ltsc-preview.md).
 
-For information about the preview version of Office for devices running macOS, see [Overview of Office 2021 for Mac (Preview)](overview-mac-preview.md).
+For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2021 (Preview)](overview-mac-preview.md).
 
 ## Installation considerations for Office LTSC Preview
 
