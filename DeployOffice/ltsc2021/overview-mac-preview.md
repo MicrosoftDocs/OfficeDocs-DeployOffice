@@ -55,7 +55,7 @@ Overall, there are no significant differences in how Office LTSC for Mac 2021 (P
 
 There are two things that might be of interest to organizations:
 
-- The VL Serializer has been improved so that a management tool can run the VL Serializer in the background even while the user still has Office 2019 for Mac apps open and running. The next time the user closes and opens the app, Office will switch over to using the Office 2021 license. This should help minimize user disruption when organizations move from Office 2019 for Mac to Office LTSC for Mac 2021.
+- The VL Serializer has been improved so that a management tool can run the VL Serializer in the background even while the user still has Office 2019 for Mac apps open and running. The next time the user closes and opens the app, Office will switch over to using the Office LTSC 2021 license. This should help minimize user disruption when organizations move from Office 2019 for Mac to Office LTSC for Mac 2021.
 
 - Several more Office Add-ins JavaScript APIs are available with Office LTSC for Mac 2021 (Preview). For more information, see [Office Add-ins JavaScript APIs](overview-ltsc-preview.md#office-add-ins-javascript-apis).
 
