@@ -2,7 +2,7 @@
 title: "Overview of Office LTSC Preview"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
@@ -12,6 +12,7 @@ ms.custom:
 - Ent_Office_VL
 - OfficeLTSC
 ROBOTS: NOINDEX, NOFOLLOW
+recommendations: false
 description: "Technical overview for IT Pros about the preview version of Office LTSC"
 ---
 
