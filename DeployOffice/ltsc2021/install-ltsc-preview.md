@@ -2,7 +2,7 @@
 title: "Install Office LTSC Preview"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
@@ -10,8 +10,9 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_VL
-- OfficeLTSC
+- OfficeLTSC2021
 ROBOTS: NOINDEX, NOFOLLOW
+recommendations: false
 description: "Technical guidance for IT Pros about how to install the preview version of Office LTSC"
 ---
 
