@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_VL
-- OfficeLTSC
+- OfficeLTSC2021
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Technical overview for IT Pros about the preview version of Office LTSC"
