@@ -98,7 +98,9 @@ When you download Office to a folder that already contains that version of Offic
 Example values:
 
 - SourcePath="\\\server\share\"
-- SourcePath="c:\preload\office"
+- SourcePath="c:\preload\"
+
+The SourcePath value should not include the /Office part or the name of the folder on which Office Data have been downloaded.
 
 ### Version attribute (part of Add element)
 
