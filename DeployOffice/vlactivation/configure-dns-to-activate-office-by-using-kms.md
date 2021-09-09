@@ -9,7 +9,7 @@ ms.prod: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Provides Office admins with information on how to configure DNS and Key Management Service (KMS) to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."
+description: "Provides Office admins with information on how to configure DNS and Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
 ---
 
 # Configure DNS for activating volume licensed versions of Office by using KMS
@@ -24,10 +24,9 @@ Changing the permissions on the DNS server requires administrative rights in the
 - Create a global security group in AD DS for the computers running KMS.
 - Add each computer running KMS to the new security group.
 - Set the permissions on the DNS server to enable updates by members of the newly created security group.
-    
+
 For more information, see [Configuring DNS](/previous-versions/tn-archive/ff793405(v=technet.10)).
   
-
 ## How DNS is used to find a KMS host computer
 
 The first time that a KMS client queries DNS for KMS information, it randomly selects a KMS host computer from the list of SRV RRs that DNS returns. The address of a DNS server that contains the SRV RRs can be listed as a suffixed entry on KMS clients. This enables advertisement of SRV RRs for KMS in one DNS server and KMS clients that have other primary DNS servers to find it.
