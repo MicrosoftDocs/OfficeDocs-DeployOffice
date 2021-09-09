@@ -1,5 +1,5 @@
 ---
-title: "GVLKs for KMS and Active Directory-based activation of Office LTSC 2021, Office 2019, and Office 2016"
+title: "GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -11,18 +11,17 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
-description: Lists the Generic Volume License Keys (GVLKs) that Office admins use for activating volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 
+description: Lists the Generic Volume License Keys (GVLKs) used to activate volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 
 ---
 
-# GVLKs for KMS and Active Directory-based activation of Office LTSC 2021, Office 2019, and Office 2016
+# GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio
 
 ***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
-
 
 By default, volume licensed versions of Office, such as Office LTSC 2021, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
   
 > [!IMPORTANT]
-> These license keys can't be used to activate your personal copy of Office. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759). 
+> These license keys can't be used to activate your personal copy of Office at home. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
 
 ## GVLKs for Office LTSC 2021
 |**Product**|**GVLK**|
@@ -78,10 +77,9 @@ By default, volume licensed versions of Office, such as Office LTSC 2021, are in
 |Publisher 2016  <br/> |F47MM-N3XJP-TQXJ9-BP99D-8K837  <br/> |
 |Skype for Business 2016  <br/> |869NQ-FJ69K-466HW-QYCP2-DDBV6  <br/> |
 |Word 2016  <br/> |WXY84-JN2Q9-RBCCQ-3Q3J3-3PFJ6  <br/> |
-   
 
 ## Related articles
 
-- [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md)
-- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md) 
-
+- [Overview of volume activation of Office](plan-volume-activation-of-office.md)
+- [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md)
+- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
