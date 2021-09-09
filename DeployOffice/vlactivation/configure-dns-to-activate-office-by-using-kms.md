@@ -2,7 +2,7 @@
 title: "Configure DNS for activating volume licensed versions of Office by using KMS"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro

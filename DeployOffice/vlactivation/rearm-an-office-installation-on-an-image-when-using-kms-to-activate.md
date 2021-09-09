@@ -2,7 +2,7 @@
 title: "Rearm a volume licensed version of Office that's included in an operating system image"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro

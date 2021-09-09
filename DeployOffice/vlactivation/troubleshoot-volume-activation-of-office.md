@@ -2,7 +2,7 @@
 title: "Troubleshoot volume activation of Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: troubleshooting
 ms.prod: office-perpetual-itpro

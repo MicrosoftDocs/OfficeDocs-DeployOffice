@@ -2,7 +2,7 @@
 title: "Activate volume licensed versions of Office by using Active Directory"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro

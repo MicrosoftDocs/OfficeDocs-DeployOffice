@@ -2,7 +2,7 @@
 title: "Configure a KMS host computer to activate volume licensed versions of Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
