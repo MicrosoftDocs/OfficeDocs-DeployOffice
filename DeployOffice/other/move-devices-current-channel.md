@@ -1,36 +1,43 @@
 ---
-title: "Move devices to Current Channel"
+title: "Move devices with Office to Current Channel"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
+recommendations: false
 hideEdit: true
+description: "Provides guidance only to customers who received a Message center post about moving their devices with Office to Current Channel."
 ---
 
-# Move devices to Current Channel
+# Move devices with Office to Current Channel
 
 > [!IMPORTANT]
-> The information in this article applies only to organizations that received a Message center post (in the Microsoft 365 admin center) about their Office devices being moved from Semi-Annual Enterprise Channel to Current Channel.
+> The information in this article applies only to organizations that received a Message center post (in the Microsoft 365 admin center) about their devices with Office being moved from Semi-Annual Enterprise Channel to Current Channel.
 
-Your update channel selection on the **Office installation options** page in the Microsoft 365 admin center is currently defaulted to Semi-Annual Enterprise Channel. In the next several weeks, this selection will change to Current Channel, which is our recommended update channel.
+In June 2020, we changed the default update channel selection on the **Office installation options** page in the Microsoft 365 admin center to Current Channel. We made that change because customers on Current Channel have reported higher satisfaction than those customers on Semi-Annual Enterprise Channel, the previous default. That change only applied to new customers.
+
+With the goal of improving the experiences of all our customers, we're now transitioning existing customers to Current Channel, which is our recommended channel. This includes making sure that the default channel selection under **Feature updates** on the **Office installation options** page is set to Current Channel. For more about Current Channel, see [What is Current Channel?](#what-is-current-channel)
+
+In the next several weeks, we'll begin automatically moving devices with Office to Current Channel, but not any devices that are already managed by other admin tools. For more information, see [Which installations of Office are affected by this change?](#which-installations-of-office-are-affected-by-this-change)
+
+If you don't want those devices moved to Current Channel, [you can opt out](#how-to-opt-out-of-moving-devices-to-current-channel) and you can choose a different update channel.
 
 > [!TIP]
-> - To get to the **Office installation options** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**.
-> - The Office apps are those apps that come with Microsoft 365 Apps, which is included with your subscription plan. For example, Word, Excel, and PowerPoint.
+> For more information about the **Office installation options** page, see [Manage Office installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md).
 
 ## Which installations of Office are affected by this change?
 
-This selection will apply to both new and existing installations of the Office apps in your organization. We will automatically configure existing installations to begin receiving feature updates from Current Channel instead of from Semi-Annual Enterprise Channel.
+The selection under **Feature updates** on the **Office installation options** page applies to both new and existing installations of the Office apps in your organization. The Office apps are those apps that come with Microsoft 365 Apps, which is included with your subscription plan. For example, Word, Excel, and PowerPoint.
 
-If you change your selection on the **Office installation options** page at a later time, new and existing installations of Office will begin using that update channel. Keep in mind that changing to a different update channel also changes which features are available to your users. For more information about which features are available in each update channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
+Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization.
 
-> [!IMPORTANT]
-> - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (either the Channel or the UpdatePath attribute in the [Updates element](../office-deployment-tool-configuration-options.md#updates-element). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
-> - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](../office-deployment-tool-configuration-options.md#add-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
+For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (either the Channel or the UpdatePath attribute in the [Updates element](../office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
+
+If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](../office-deployment-tool-configuration-options.md#add-element)), and not any of the other methods mentioned in the previous paragraph, then your choice under **Feature updates** will apply to those devices.
 
 ## What is Current Channel?
 
@@ -44,15 +51,15 @@ For more information about update channels, see [Overview of update channels for
 
 ## How to opt out of moving devices to Current Channel
 
-If you don’t want your Office installations to be moved to Current Channel, choose **Don’t move the devices to Current Channel** button in the message on the **Office installation options** page, as shown in the following screenshot.
+If you don’t want your devices with Office to be moved to Current Channel, choose **Don’t move the devices to Current Channel** button in the message on the **Office installation options** page, as shown in the following screenshot.
 
 ![Screenshot showing part of the "Office installation options" page in the Microsoft 365 admin center and showing a message that says devices will be moved to Current Channel.](../images/other/move-devices-current-channel-message-text.png) 
 
 > [!NOTE]
-> - The date shown in the screenshot is an example. The date that applies for your organization is listed in the Message center post that you received and will be reflected in the message that appears on the **Office installation options** page.
+> - The date shown in the screenshot is an example. The date that applies to your organization is listed in the Message center post that you received and will be reflected in the message that appears on the **Office installation options** page.
 > - After that date, the message and the **Don't move the devices to Current Channel** option will no longer appear.
 
-If you choose **Don’t move the devices to Current Channel**, you’ll be taken to another page (similar to the one shown in the following screenshot), where you can choose to move your devices to Monthly Enterprise Channel or to remain on Semi-Annual Enterprise Channel.
+If you choose **Don’t move the devices to Current Channel**, you’ll be taken to another page (similar to the one shown in the following screenshot), where you can choose to move your devices with Office to Monthly Enterprise Channel or to remain on Semi-Annual Enterprise Channel.
 
 ![Screenshot showing a page entitled "Don't move the devices to Current Channel" with options to choose to move to Monthly Enterprise Channel or to keep on Semi-Annual Enterprise Channel.](../images/other/move-devices-current-channel-dont-move-page.png)
 
