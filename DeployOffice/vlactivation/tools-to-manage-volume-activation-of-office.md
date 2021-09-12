@@ -81,7 +81,7 @@ The following table describes the ospp.vbs options for configuring the KMS clien
 | /remhst  |Removes KMS host name and sets port to default. The default port is 1688.   |
 | /cachst:*value*  |Allows or denies KMS host caching. Value parameter is required (TRUE or FALSE).   |
 | /actype:*value*  |(Windows 8.1 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory-based), 2 (for KMS), 0 (for both).   |
-| /skms-domain:*value*  |(Windows 8.1 and later versions only) Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the /sethst option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.   |
+| /skms-domain:*value*  |*(Windows 8.1 and later versions only)* Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the /sethst option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.   |
 | /ckms-domain  |*(Windows 8.1 and later versions only)* Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the /sethst option. Otherwise, auto-discovery of the KMS host is used.   |
 
 ### Scenarios that use ospp.vbs
@@ -222,9 +222,9 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (7 days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]
-> - Office LTSC 2021 Activation ID: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
-> - Office 2019 Activation ID: 70512334-47B4-44DB-A233-BE5EA33B914C
-> - Office 2016 Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
+- Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
+- Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
+- Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
   
 ### Slmgr.vbs command options (Active Directory-based activation)
 
