@@ -22,9 +22,9 @@ Each MAK has a predetermined number of allowed activations and is based on your 
 
 There are two ways to activate computers by using MAK:
   
-- **MAK independent activation** requires that each computer independently connect and be activated with Microsoft, either over the internet or by telephone. MAK independent activation is best for computers that have direct access to the internet.
+- ***MAK independent activation*** requires that each computer independently connect and be activated with Microsoft, either over the internet or by telephone. MAK independent activation is best for computers that have direct access to the internet.
 
-- **MAK proxy activation by using VAMT** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt).
+- ***MAK proxy activation by using VAMT*** enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt).
 
 ## Activate Office LTSC 2021 by using MAK
 
@@ -40,7 +40,7 @@ If you're using MAK to activate volume licensed versions of Office 2016, you can
   
 - Before you install Office 2016, you can use the [Office Customization Tool (OCT)](#configure-mak-activation-in-the-office-customization-tool-oct) or the [Config.xml file](#configure-mak-activation-in-the-configxml-file).
 
-- After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate Office using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
+- After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script), or [enable a non-admin user to activate Office using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
 
 ### Configure MAK activation in the Office Customization Tool (OCT)
 
@@ -115,7 +115,7 @@ In some organizations, different groups have different MAK keys for their volume
 If you don't want to create separate XML files for each group, you could use one of these other methods:
 
 - [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool)
-- [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp)
+- [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script)
 - [Enable a non-admin user to activate Office by using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak)
 
 ## Related articles

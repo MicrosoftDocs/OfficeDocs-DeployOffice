@@ -26,7 +26,7 @@ Rearming does the following important tasks:
 - Freezes the grace timer until either an Office application is run, or the ospp.vbs script is run.
 - Resets the client computer ID (CMID). This is important because the KMS host computer uses the CMID to determine the number of unique clients. You can use the ospp.vbs script to check the CMID.
 
-For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md#ospp).
+For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script).
 
 You can rearm five times, unless you activate Office by using a KMS host computer. If you run out of rearms, activating by using a KMS host computer lets you rearm once.
 

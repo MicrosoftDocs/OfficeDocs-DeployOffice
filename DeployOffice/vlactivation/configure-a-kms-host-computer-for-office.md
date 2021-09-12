@@ -36,7 +36,7 @@ You can download the appropriate Office Volume License Pack from the Microsoft D
 To get the KMS key, sign in to the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) and download the KMS key for each product and version of Office that you want KMS to activate.
 
 > [!NOTE]
-> If you are setting up KMS on Windows 7 volume license edition or Windows Server 2008 R2, you must first install a patch as described in Microsoft Knowledge Base article [2757817](https://go.microsoft.com/fwlink/p/?LinkId=254800). This patch allows the KMS host computer to activate Office clients that run on Windows 8 and Windows Server 2012.
+> If you are setting up KMS on Windows 7 volume license edition or Windows Server 2008 R2, you must first install a patch as described in this [support article](https://support.microsoft.com/topic/22412808-3176-fa2c-6610-4be38f850d3a). This patch allows the KMS host computer to activate Office clients that run on Windows 8 and Windows Server 2012.
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
@@ -94,7 +94,7 @@ After you've obtained the telephone number, cancel the wizard. You can ignore th
  ```console
 cscript slmgr.vbs /atp CONFIRMATIONID ACTIVATIONID
 ```
-Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received over the telephone. 
+Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received over the telephone.
 
 Replace *ACTIVATIONID* with the Activation ID for your version of Office.
 - Office LTSC 2021 Activation ID: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
@@ -116,7 +116,7 @@ From an elevated command prompt on the KMS host computer, run the following comm
    cscript slmgr.vbs /dlv all
 ```    
     
-To view information only for a specific version of Office, specify that version's Activation ID after the **/dlv** parameter. For example, for Office 2019:
+To view information only for a specific version of Office, specify that version's Activation ID after the /dlv parameter. For example, for Office 2019:
 
 ```console   
     cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C

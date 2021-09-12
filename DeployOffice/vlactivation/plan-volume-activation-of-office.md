@@ -21,18 +21,15 @@ Activation is the process of validating software with the manufacturer after it 
 > [!NOTE]
 > If you're a user trying to activate a personal copy of Office at home, see [Activate Office](https://support.microsoft.com/office/5bd38f38-db92-448b-a982-ad170b1e187e) instead of reading this article.
   
-
 Volume activation is the process that Microsoft volume licensing customers use to automate and manage the activation of Windows operating systems, Microsoft Office, and other Microsoft products across large organizations.
-
 
 There are three different methods that you can activate volume licensed versions of Office, including Project and Visio:
   
- - **[Key Management Service (KMS):](#key-management-service-kms-activation-of-office)** Office is activated by contacting a KMS host computer on your network.
-    
- - **[Multiple Activation Key (MAK):](#multiple-activation-key-mak-activation-of-office)** Office is activated online by Microsoft-hosted activation servers or by telephone.
-    
- - **[Active Directory-based:](#active-directory-based-activation-of-office)** Office on a domain-joined computer is activated through Active Directory.
+- [Key Management Service (KMS):](#key-management-service-kms-activation-of-office) Office is activated by contacting a KMS host computer on your network.
 
+- [Multiple Activation Key (MAK):](#multiple-activation-key-mak-activation-of-office) Office is activated online by Microsoft-hosted activation servers or by telephone.
+
+- [Active Directory-based:](#active-directory-based-activation-of-office) Office on a domain-joined computer is activated through Active Directory.
 
 Which activation method you choose depends on the size, network infrastructure, connectivity, and security requirements of your environment. You can choose to use different activation methods for different versions of Office and for different computers, for example desktops and laptops. Because these three activation methods are also used to activate volume licensed versions of Windows, you might be able to use the same method to activate both Windows and Office. For more information, see [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10) and [Volume Activation Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
 
@@ -48,7 +45,6 @@ For more information, see the following:
 - [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md)
 - [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md)
   
-
 ## Multiple Activation Key (MAK) activation of Office
 
 MAK activation is used for one-time activation through Microsoft-hosted activation services, either via the internet or by telephone. MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against those services.

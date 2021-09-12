@@ -32,15 +32,15 @@ To configure KMS host caching, you can use the ospp.vbs script. For more informa
   
 To configure KMS host caching, open an elevated command prompt on the KMS client computer and go to the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder.  
 
-To **disable** KMS host caching, type the following command, and then press ENTER:
+To *disable* KMS host caching, type the following command, and then press ENTER:
 
 ```console
     cscript ospp.vbs /cachst:FALSE
 ```
 
-To **enable** KMS host caching, type the following command, and then press ENTER:
+To *enable* KMS host caching, type the following command, and then press ENTER:
 
-```console     
+```console
     cscript ospp.vbs /cachst:TRUE
 ```
   
@@ -50,11 +50,11 @@ The following table describes the license state of the Office with respect to ac
 
 |**License state**|**Description**|
 |:-----|:-----|
-|Licensed  <br/> |By default, the KMS client requests activation with the KMS host computer one time every seven days. (The number of days is configurable.) This design allows the maximum possible time for the client to be in the licensed state.  <br/> <br/>After the client is successfully activated, it remains in the licensed state for 180 days. When in the licensed state, users do not see any notification dialog boxes prompting them to activate the client. After 180 days, the activation attempt process resumes. If activation is continually successful, the whole activation experience is transparent to the user.  <br/> |
-|Out-of-tolerance  <br/> |If activation does not occur during the 180-day period, Office goes into the out-of-tolerance state for 30 days. Users then see notifications that request activation.  <br/> |
-|Unlicensed notification  <br/> |If activation does not occur during the out-of-tolerance state, Office goes into the unlicensed notification state. Users then see notifications that request activation and a red title bar.  <br/> |
-   
-You can use the ospp.vbs script with the **/dstatusall** option to check the license state for all Office clients. Or, use the **/dstatus** option to check the status of the local client. For more information about using the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+|Licensed  |By default, the KMS client requests activation with the KMS host computer one time every seven days. (The number of days is configurable.) This design allows the maximum possible time for the client to be in the licensed state.  <br/> <br/>After the client is successfully activated, it remains in the licensed state for 180 days. When in the licensed state, users do not see any notification dialog boxes prompting them to activate the client. After 180 days, the activation attempt process resumes. If activation is continually successful, the whole activation experience is transparent to the user.  |
+|Out-of-tolerance  |If activation does not occur during the 180-day period, Office goes into the out-of-tolerance state for 30 days. Users then see notifications that request activation.  |
+|Unlicensed notification  |If activation does not occur during the out-of-tolerance state, Office goes into the unlicensed notification state. Users then see notifications that request activation and a red title bar.  |
+
+You can use the ospp.vbs script with the /dstatusall option to check the license state for all Office clients. Or, use the /dstatus option to check the status of the local client. For more information about using the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
 ## Related articles
 
