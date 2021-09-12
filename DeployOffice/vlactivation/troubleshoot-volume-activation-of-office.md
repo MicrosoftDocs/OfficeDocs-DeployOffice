@@ -33,9 +33,9 @@ By default, KMS host computers automatically publish the information that KMS cl
 You can manually configure KMS host computers and clients, depending on the network configuration and your security requirements. For example, if the network environment does not use SRV records, you can manually configure a KMS client to use a specific KMS host computer.
 
 - For more information about using DNS with volume activation, see [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md).
-- For more information about how to configure the KMS client, see [ospp.vbs script](#the-osppvbs-script) and [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md).
+- For more information about how to configure the KMS client, see [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) and [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md).
 - For more information about how to configure the KMS host computer, see [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md).
-  
+
 ## MAK activation issue when internet connection uses an authenticated proxy
 
 You have to be connected to the internet to use MAK activation. But, if your internet connection requires authentication, MAK activation won't work and you'll have to activate over the telephone. For more information about this issue, see [Windows activation or validation fails with error code 0x8004FE33](https://support.microsoft.com/topic/a9afe65e-230b-c1ed-3414-39acd7fddf52).
@@ -43,6 +43,7 @@ You have to be connected to the internet to use MAK activation. But, if your int
 ## How to get the text for activation error codes
 
 Error codes help you troubleshoot activation issues. If you see a dialog box that contains an activation notification, an error code is usually displayed at the lower corner. You can then run ospp.vbs /ddescr together with the error code to see the text of the error message. The text will help you better understand the issue and what to do to fix it.
+
 Another way to obtain an error code is to run ospp.vbs /act on the client computer to manually activate Office. If activation fails, an error code will be shown.
   
 ## Licensing information is not updated on the client

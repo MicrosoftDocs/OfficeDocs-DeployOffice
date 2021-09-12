@@ -39,7 +39,7 @@ All volume licensed versions of Office, including Project and Visio, have a prei
 
 KMS activation is a client-server model in which each client requests activation from a KMS host computer. The keys needed to activate Office are installed on the KMS host computer. The client uses DNS to locate a KMS host computer to request activation.
 
-For more information, see the following:
+For more information, see the following articles:
 
 - [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md)
 - [Configure DNS for activating volume licensed versions of Office by using KMS](configure-dns-to-activate-office-by-using-kms.md)

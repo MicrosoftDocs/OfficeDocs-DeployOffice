@@ -76,13 +76,13 @@ The following table describes the ospp.vbs options for configuring the KMS clien
 |:-----|:-----|
 | /dhistorykms  |Displays KMS client activation history.   |
 | /dcmid  |Displays KMS client computer ID (CMID).   |
-| /sethst:*value  |Sets a KMS host name with a user-provided host name. Value parameter is required.  <br/> <br/>This sets HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServiceName (REG_SZ).   |
+| /sethst:*value*  |Sets a KMS host name with a user-provided host name. Value parameter is required.  <br/> <br/>This sets HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServiceName (REG_SZ).   |
 | /setprt:*value*  |Sets a KMS port with a user-provided port number. The default port number is 1688. Value parameter is required.  <br/><br/> This sets HKLM\Software\Microsoft\OfficeSoftwareProtectionPlatform\KeyManagementServicePort (REG_SZ).   |
 | /remhst  |Removes KMS host name and sets port to default. The default port is 1688.   |
 | /cachst:*value*  |Allows or denies KMS host caching. Value parameter is required (TRUE or FALSE).   |
 | /actype:*value*  |(Windows 8.1 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory-based), 2 (for KMS), 0 (for both).   |
 | /skms-domain:*value*  |(Windows 8.1 and later versions only) Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the /sethst option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.   |
-| /ckms-domain  |(Windows 8.1 and later versions only) Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the /sethst option. Otherwise, auto-discovery of the KMS host is used.   |
+| /ckms-domain  |*(Windows 8.1 and later versions only)* Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the /sethst option. Otherwise, auto-discovery of the KMS host is used.   |
 
 ### Scenarios that use ospp.vbs
 
@@ -91,7 +91,7 @@ The following scenarios assume that you are running ospp.vbs in an elevated comm
 > [!NOTE]
 > Any changes that you make affect only the Office client products. You have to configure the Windows client separately by using the [slmgr.vbs script](#the-slmgrvbs-script).
   
-### To change the product key to a MAK key on a remote computer
+#### To change the product key to a MAK key on a remote computer
 
 1. If the remote computer is named contoso1, run the following command to enter the product key. This assumes that you have administrator credentials on the remote computer. If your credentials on the remote computer differ from your logon name and password, you must type your logon name and password at the command line, and then press ENTER:
 
@@ -105,7 +105,7 @@ cscript ospp.vbs /inpkey:xxxxx-xxxxx-xxxxx-xxxxx-xxxxx contoso1
 cscript ospp.vbs /act contoso1
 ```
 
-### To diagnose KMS activation errors
+#### To diagnose KMS activation errors
 
 1. If the computer has the KMS client key installed, check the licensing status. To do this, type the following command, and then press ENTER:
 
@@ -131,7 +131,7 @@ cscript ospp.vbs /act
 cscript ospp.vbs /ddescr:0xC004F042
 ```
 
-### To turn on or off KMS host caching on the KMS client
+#### To turn on or off KMS host caching on the KMS client
 
 1. On the KMS client computer, to turn caching on, type the following command, and then press ENTER:
 
@@ -145,7 +145,7 @@ cscript ospp.vbs /cachst:TRUE
 cscript ospp.vbs /cachst:FALSE
 ```
 
-### To test KMS host name, and then set to auto-discovery
+#### To test KMS host name, and then set to auto-discovery
 
 1. If you are testing a KMS host named kmstest.contoso.com, and you want to specify it in the KMS client, type the following command, and then press ENTER:
 
@@ -153,8 +153,8 @@ cscript ospp.vbs /cachst:FALSE
 cscript ospp.vbs /sethst:kmstest.contoso.com
 ```
 
-    > [!NOTE]
-    > If you change the default port on the KMS host computer, you must run ospp.vbs with the /setprt option. For example: cscript ospp.vbs /setprt:1750
+> [!NOTE]
+> If you change the default port on the KMS host computer, you must run ospp.vbs with the /setprt option. For example: cscript ospp.vbs /setprt:1750
   
 2. To trigger activation, type the following command, and then press ENTER:
 
@@ -176,7 +176,7 @@ cscript ospp.vbs /remhst
 
 ## The slmgr.vbs script
 
-The Software License Manager (slmgr.vbs) script, located in the Windows\system32, is used to configure and retrieve volume activation information for the Office KMS host and the Windows host. For more information, see [Configuring KMS Hosts](/previous-versions/tn-archive/ff793407(v=technet.10)) for Windows.
+The Software License Manager (slmgr.vbs) script, located in the Windows\system32 folder, is used to configure and retrieve volume activation information for the Office KMS host and the Windows host. For more information, see [Configuring KMS Hosts](/previous-versions/tn-archive/ff793407(v=technet.10)) for Windows.
   
 You can run the script locally on the target computer or remotely from another computer. You have to be an administrator to use the script. If a standard user runs slmgr.vbs, some license data might be missing or incorrect, and many operations are prohibited.
   
@@ -185,7 +185,7 @@ The slmgr.vbs script can use the Windows-based script host, wscript.exe, or the 
 You must restart the Software Licensing Service for any changes to take effect. To restart the Software Licensing Service, use the Microsoft Management Console (MMC) Services snap-in or run the following command:
 
 ```console  
-net stop sppsvc &amp;&amp; net start sppsvc
+net stop sppsvc && net start sppsvc
 ```
   
 The slmgr.vbs script requires at least one parameter. If you run the script without any parameters, it displays Help information. The following table lists slmgr.vbs command-line options, and a description of each. Most of the parameters in the table configure the KMS host computer. However, the parameters /sai and /sri are passed to KMS clients after the KMS clients contact the KMS host computer. The general syntax of slmgr.vbs is as follows (assuming you are using the cscript.exe as the script engine):
@@ -202,7 +202,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
   
  ***Option*** Options are shown in the following table.
   
-### Slmgr.vbs command options — standard
+### Slmgr.vbs command options 
 
 |**Option**|**Description**|
 |:-----|:-----|
@@ -218,7 +218,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ cdns  |Disables automatic DNS publishing by a KMS host computer.   |
 |/ sdns  |Enables automatic DNS publishing by the KMS host computer.   |
 |/ cpri  |Lowers the priority of KMS host computer processes.   |
-|/ sai *ActivationInterval8  |Changes how often a KMS client attempts to activate itself when it cannot find a KMS host computer. It replaces  ActivationInterval with a value expressed in minutes. The default setting is 120 minutes.   |
+|/ sai *ActivationInterval*  |Changes how often a KMS client attempts to activate itself when it cannot find a KMS host computer. It replaces  ActivationInterval with a value expressed in minutes. The default setting is 120 minutes.   |
 |/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (7 days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]
@@ -226,7 +226,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 > - Office 2019 Activation ID: 70512334-47B4-44DB-A233-BE5EA33B914C
 > - Office 2016 Activation ID: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
   
-### Slmgr.vbs command options — Active Directory-based activation
+### Slmgr.vbs command options (Active Directory-based activation)
 
 The following table shows the command options for activating an AD DS forest by using Active Directory-based activation.
 
