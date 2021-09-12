@@ -9,7 +9,7 @@ ms.prod: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "How to prepare and configure the Key Management Service (KMS) host computer to enable client computers to activate Office 2016."
+description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office

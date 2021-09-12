@@ -9,7 +9,7 @@ ms.prod: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-description: "Provides Office admins with information about using Key Management Service (KMS) to activate volume licensed versions of Office 2019 and Office 2016, including Project and Visio."
+description: "Provides Office admins with information about using Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
 ---
 
 # Activate volume licensed versions of Office by using KMS
@@ -22,11 +22,8 @@ If the KMS host computer is available and properly configured, activation of Off
   
 You don't have to do anything else to enable activation of Office by KMS. KMS clients can locate a KMS host computer automatically by querying DNS for service (SRV) resource records (RRs) that publish the KMS service. For more information, see [How DNS is used to find a KMS host computer](configure-dns-to-activate-office-by-using-kms.md#how-dns-is-used-to-find-a-kms-host-computer).
 
-If the network environment does not use SRV RRs, you can manually assign a KMS client to use a specific KMS host computer by configuring the HKEY_LOCAL_MACHINE\\Software\\Microsoft\\OfficeSoftwareProtectionPlatform registry key on the KMS client. The KMS host computer name is specified by KeyManagementServiceName (REG_SZ), and the port is specified by KeyManagementServicePort (REG_SZ). The default port is 1688. These registry keys can also be set through by using ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+If the network environment does not use SRV RRs, you can manually assign a KMS client to use a specific KMS host computer by configuring the HKEY_LOCAL_MACHINE\\Software\\Microsoft\\OfficeSoftwareProtectionPlatform registry key on the KMS client. The KMS host computer name is specified by KeyManagementServiceName (REG_SZ), and the port is specified by KeyManagementServicePort (REG_SZ). The default port is 1688. These registry keys can also be set by using ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
- 
-<a name="KMSClientCacheOnOff"> </a>
-
 ## Configure KMS host caching
 
 You can configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer is not cached, the KMS client will query DNS every time that activation is attempted. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client won't query DNS and instead will attempt to contact the cached KMS host computer that last resulted in successful activation.
@@ -39,20 +36,17 @@ To **disable** KMS host caching, type the following command, and then press ENTE
 
 ```console
     cscript ospp.vbs /cachst:FALSE
-``` 
+```
 
 To **enable** KMS host caching, type the following command, and then press ENTER:
 
 ```console     
     cscript ospp.vbs /cachst:TRUE
-``` 
+```
   
-    
 ## Check the license status of Office
 
 The following table describes the license state of the Office with respect to activation.
-  
-
 
 |**License state**|**Description**|
 |:-----|:-----|
@@ -60,10 +54,9 @@ The following table describes the license state of the Office with respect to ac
 |Out-of-tolerance  <br/> |If activation does not occur during the 180-day period, Office goes into the out-of-tolerance state for 30 days. Users then see notifications that request activation.  <br/> |
 |Unlicensed notification  <br/> |If activation does not occur during the out-of-tolerance state, Office goes into the unlicensed notification state. Users then see notifications that request activation and a red title bar.  <br/> |
    
-You use the ospp.vbs script with the **/dstatusall** option to check the license state for all Office clients. Use the **/dstatus** option to check the status of the local client. For more information about using the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+You can use the ospp.vbs script with the **/dstatusall** option to check the license state for all Office clients. Or, use the **/dstatus** option to check the status of the local client. For more information about using the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
-    
-## Related topics
+## Related articles
 
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
 - [Configure a KMS host computer to activate volume licensed versions of Office](configure-a-kms-host-computer-for-office.md)
