@@ -28,7 +28,7 @@ There are two ways to activate computers by using MAK:
 
 ## Activate Office LTSC 2021 by using MAK
 
-If you're using MAK to activate Office LTSC 2021, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office 2019 to the users in your organization. For more information, see [Deploy Office LTSC 2021](../ltsc2021/deploy.md).
+If you're using MAK to activate Office LTSC 2021, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office LTSC 2021 to the users in your organization. For more information, see [Deploy Office LTSC 2021](../ltsc2021/deploy.md).
 
 ## Activate Office 2019 by using MAK
 
@@ -40,7 +40,7 @@ If you're using MAK to activate volume licensed versions of Office 2016, you can
   
 - Before you install Office 2016, you can use the [Office Customization Tool (OCT)](#configure-mak-activation-in-the-office-customization-tool-oct) or the [Config.xml file](#configure-mak-activation-in-the-configxml-file).
 
-- After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
+- After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#ospp), or [enable a non-admin user to activate Office using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
 
 ### Configure MAK activation in the Office Customization Tool (OCT)
 
