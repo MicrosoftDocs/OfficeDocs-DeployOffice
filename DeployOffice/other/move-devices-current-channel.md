@@ -27,7 +27,8 @@ In the next several weeks, we'll begin automatically moving devices with Office 
 If you don't want those devices moved to Current Channel, [you can opt out](#how-to-opt-out-of-moving-devices-to-current-channel) and you can choose a different update channel.
 
 > [!TIP]
-> For more information about the **Office installation options** page, see [Manage Office installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md).
+> - To get to the **Office installation options** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**.
+> - For more information, see [Manage Office installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md).
 
 ## Which installations of Office are affected by this change?
 
