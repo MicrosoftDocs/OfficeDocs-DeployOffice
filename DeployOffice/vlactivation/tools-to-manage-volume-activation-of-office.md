@@ -222,9 +222,9 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (7 days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]
-- Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
-- Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
-- Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
+> - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
+> - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
+> - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
   
 ### Slmgr.vbs command options (Active Directory-based activation)
 
