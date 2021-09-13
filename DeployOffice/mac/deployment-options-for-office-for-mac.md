@@ -66,7 +66,7 @@ Installer package files for individual applications, such as Word or Excel, are 
 
 #### Microsoft Teams
 
-Teams is included as part of the installer packages for the Office suite. If you don't want Teams included as part of the installation, you can [download this installer package](https://go.microsoft.com/fwlink/p/?linkid=525133), which doesn't include Teams.
+Teams is included as part of the installer packages for Office for Mac and for Office LTSC for Mac 2021. If you don't want Teams included as part of the installation, you can [download this installer package](https://go.microsoft.com/fwlink/p/?linkid=525133), which doesn't include Teams.
 
 #### Activation
 
