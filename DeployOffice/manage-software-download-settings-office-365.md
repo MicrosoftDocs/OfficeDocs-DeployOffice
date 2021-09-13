@@ -2,7 +2,7 @@
 title: "Manage Office installation options in the Microsoft 365 admin center"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -46,7 +46,9 @@ For *existing* installations of Office, your selection will be applied to device
 Keep in mind that moving to a different update channel can also change which features are available to your users. For more information about which features are available in each update channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). 
 
 > [!NOTE]
-> - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (either the Channel or the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
+> - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization.
+>
+> - For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (either the Channel or the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
 >
 > - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
 >
