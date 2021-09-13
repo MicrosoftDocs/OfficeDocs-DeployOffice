@@ -1,5 +1,5 @@
 ---
-title: Road map to modern management of Microsoft 365 Apps in the enterprise
+title: Roadmap to modern management of Microsoft 365 Apps in the enterprise
 author: manoth-msft
 ms.author: manoth
 manager: laurawi
@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-description: "Field best practices: Road map to modern management of Microsoft 365 Apps in the enterprise"
+description: "Field best practices: Roadmap to modern management of Microsoft 365 Apps in the enterprise"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -16,10 +16,7 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Best practices from the field: Road map to modern management of Microsoft 365 Apps in the enterprise
-
-> [!IMPORTANT]
-> This is prerelease documentation for a preview program that isn’t available to everyone and is subject to change.
+# Best practices from the field: Roadmap to modern management of Microsoft 365 Apps in the enterprise
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
