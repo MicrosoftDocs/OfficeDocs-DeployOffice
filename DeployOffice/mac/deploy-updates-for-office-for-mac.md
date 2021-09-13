@@ -2,7 +2,7 @@
 title: "Deploy updates for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -22,9 +22,9 @@ Microsoft regularly publishes software updates to improve performance or securit
 As an admin, you can choose how to download and install updates for Office on Mac devices in your organization. You can do either of the following steps:
   
 - Configure Office for Mac to download updates automatically to users' devices, and then have the users install the updates themselves.
-    
+
 - Manually download updates to your local network, and then use your software distribution tools to deploy the updates.
-    
+
 To update Office on a Mac, a program named Microsoft AutoUpdate (MAU) is used. By default, Microsoft AutoUpdate automatically checks for updates every 12 hours, but you can change that to some other time period, such as weekly, or set it to manual.
   
 If you decide to deploy updates by using your software distribution tools, you should configure Microsoft AutoUpdate to manually check for software updates. You can [deploy preferences](deploy-preferences-for-office-for-mac.md) to configure how and when Microsoft AutoUpdate checks for updates.

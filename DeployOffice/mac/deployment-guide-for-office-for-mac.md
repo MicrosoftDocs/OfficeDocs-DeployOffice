@@ -2,7 +2,7 @@
 title: "Deployment guide for Office for Mac"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-proplus-itpro
@@ -27,8 +27,6 @@ There are several versions of Office that are referred to in this guide:
 > [!NOTE]
 > Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
 
- 
-  
 This guide covers the following areas:
   
 - [Overview of Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
@@ -40,7 +38,6 @@ This guide covers the following areas:
 - [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md)
 
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
-
 
 In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following sites:
   

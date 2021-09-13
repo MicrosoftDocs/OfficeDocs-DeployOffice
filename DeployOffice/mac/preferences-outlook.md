@@ -2,7 +2,7 @@
 title: "Set preferences for Outlook for Mac"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -111,7 +111,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 
 ### Disable import
 
-Prevent users from being able to import archive files (.olm and .pst) and Outlook for Mac 2011 data. 
+Prevent users from being able to import archive files (.olm and .pst) and Outlook for Mac 2011 data.
 
 |Category|Details|
 |:-----|:-----|
@@ -121,7 +121,6 @@ Prevent users from being able to import archive files (.olm and .pst) and Outloo
 |Possible values|  false (default) <br/> true  |
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
-
 
 ### Disable export
 
@@ -135,7 +134,6 @@ Prevent users from being able to export archive files (.olm).
 |Possible values| false (default) <br/> true |
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
-
 
 ## Online meetings settings
 
@@ -193,7 +191,6 @@ Prevent users from applying the **Do Not Forward** option to emails when using M
 |Availability|16.40 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
-
 ### Allow S/MIME certificates without a matching email address
 
 Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address.
@@ -207,7 +204,6 @@ Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate d
 |Availability|16.45 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
-
 ### Set the order in which S/MIME certificates are considered
 
 Set the order in which certificates will be used to decrypt and encrypt S/MIME messages.
@@ -220,7 +216,6 @@ Set the order in which certificates will be used to decrypt and encrypt S/MIME m
 |Possible values| 0 (Contacts), 1 (GAL), 2 (Device), 3 (LDAP) <br/> Default is [0, 1, 2, 3] |
 |Availability|16.45 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
-
 
 ## Weather location settings
 
@@ -249,9 +244,8 @@ Prevent users from choosing **Update Location Automatically** for weather locati
 |Possible values| false (default) <br/> true  |
 |Availability|16.19 |
 
-
 ## Other settings
-    
+
 ### Hide local folders
 
 Prevent users from viewing local **On My Computer** folders in the sidebar.
@@ -278,7 +272,6 @@ Set when pictures are automatically downloaded from the internet for email.
 |Availability|16.17 |
 |Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
 
-
 ### Disable signatures
 
 Prevent users from being able to create, edit, and add client-side signatures.
@@ -291,7 +284,6 @@ Prevent users from being able to create, edit, and add client-side signatures.
 |Possible values|  false (default) <br/> true  |
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
-
 
 ### Specify calendar first day of week 
 
@@ -317,7 +309,6 @@ Set the availability and default position of the [New Outlook](https://support.m
 |Possible values| 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
 |Availability|16.38 |
 
- 
 ## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)

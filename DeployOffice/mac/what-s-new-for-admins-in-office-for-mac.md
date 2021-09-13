@@ -2,7 +2,7 @@
 title: "Overview of Office for Mac (for admins and IT Pros)"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
@@ -81,7 +81,6 @@ For information about the new features in Office 2019 for Mac, see the following
 - [What's new in Outlook 2019 for Mac](https://support.microsoft.com/office/05736033-f99e-4cb2-88aa-01e979b0736b)
 - [What's new in PowerPoint 2019 for Mac](https://support.microsoft.com/office/5038ba79-48c5-40f0-adff-11489e5d6fed)
 - [What's new in Word 2019 for Mac](https://support.microsoft.com/office/247e0cd4-a758-4b42-a157-42eb8853aef5)
-
 
 ## Privacy controls
 

@@ -2,7 +2,7 @@
 title: "Set a preference for Resume Assistant in Word for Mac"
 ms.author: danbrown
 author: pbowden-msft
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -34,9 +34,8 @@ If you're an admin, you may want to prevent this option from being shown to user
 |**Possible values** <br/> |false  *(default)*  <br/> true  <br/> |
 
 This key is CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
-    
+
 ## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
-

@@ -2,7 +2,7 @@
 title: "Set a preference to prevent the use of add-ins"
 ms.author: danbrown
 author: pbowden-msft
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -46,7 +46,6 @@ These preferences are CFPreferences-compatible, which means that they can be set
 > - Outlook for Mac
 > - Outlook LTSC for Mac 2021
 > - Outlook 2019 for Mac
-
 
 ## Related articles
 
