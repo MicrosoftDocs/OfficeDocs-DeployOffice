@@ -24,7 +24,7 @@ Preferences for Office are stored in preference files. These files are often ref
 > [!IMPORTANT]
 > To help improve security, Office for Mac has implemented Apple app sandboxing guidelines. This means that you can't customize the app bundle before or after you deploy Office. But, preference files aren't part of the app bundle for an app, so you can make changes to these files.
   
-Preference files are stored in the app container, which isn't the same thing as the app bundle. The app container is created the first time an app is run. The app container is located in the user's ~/Library/Containers folder. For example, the app container for Excel is named com.microsoft.Outlook. Within the app container, the .plist file is located in the Data/Library/Preferences folder. For example, the .plist file for Excel is named com.microsoft.Outlook.plist.
+Preference files are stored in the app container, which isn't the same thing as the app bundle. The app container is created the first time an app is run. The app container is located in the user's ~/Library/Containers folder. For example, the app container for Outlook is named com.microsoft.Outlook. Within the app container, the .plist file is located in the Data/Library/Preferences folder. For example, the .plist file for Outlook is named com.microsoft.Outlook.plist.
   
 The best way to add or edit preferences is by using the defaults command. For example, if you want to set the first day of the week in Calendar view in Outlook to be Monday, you can open Terminal and enter the following command:
   
