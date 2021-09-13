@@ -54,7 +54,7 @@ For more information about update channels, see [Overview of update channels for
 
 If you don’t want your devices with Office to be moved to Current Channel, choose **Don’t move the devices to Current Channel** button in the message on the **Office installation options** page, as shown in the following screenshot.
 
-![Screenshot showing part of the "Office installation options" page in the Microsoft 365 admin center and showing a message that says devices will be moved to Current Channel.](../images/other/move-devices-current-channel-message.png)
+![Screenshot showing part of the "Office installation options" page in the Microsoft 365 admin center and showing a message that says devices will be moved to Current Channel.](../images/other/move-devices-current-channel-message-text.png)
 
 > [!NOTE]
 > - The date shown in the screenshot is an example. The date that applies to your organization is listed in the Message center post that you received and will be reflected in the message that appears on the **Office installation options** page.
