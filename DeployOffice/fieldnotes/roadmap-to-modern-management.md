@@ -1,5 +1,5 @@
 ---
-title: Road map to modern management of Microsoft 365 Apps in the enterprise
+title: Roadmap to modern management of Microsoft 365 Apps in the enterprise
 author: manoth-msft
 ms.author: manoth
 manager: laurawi
@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-description: "Field best practices: Road map to modern management of Microsoft 365 Apps in the enterprise"
+description: "Field best practices: Roadmap to modern management of Microsoft 365 Apps in the enterprise"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -16,17 +16,14 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Best practices from the field: Road map to modern management of Microsoft 365 Apps in the enterprise
-
-> [!IMPORTANT]
-> This is prerelease documentation for a preview program that isn’t available to everyone and is subject to change.
+# Best practices from the field: Roadmap to modern management of Microsoft 365 Apps in the enterprise
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Microsoft recently released to public preview a set of [new admin capabilities](../admincenter/overview.md#whats-new-in-preview) to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers during the preview, we've developed best practices on how to adopt these new features.
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides several new admin capabilities to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers, we have developed the following best practices on how to adopt these new features.
 
-There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
+There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits, while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
@@ -34,7 +31,7 @@ A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/mic
 
 How to enable Microsoft 365 Apps health:
 
-1. Sign in to the Apps Admin Center at [config.office.com](https://config.office.com/).
+1. Sign in to the Microsoft 365 Apps admin center at [config.office.com](https://config.office.com/).
 2. Navigate to **Health** > **Apps health** and choose **Get started** to enable the feature.
 
 It takes up to 3 hours for the service to be provisioned. You can then access:
