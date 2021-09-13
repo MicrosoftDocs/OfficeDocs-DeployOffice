@@ -124,7 +124,7 @@ To view information only for a specific version of Office, specify that version'
     cscript slmgr.vbs /dlv 70512334-47B4-44DB-A233-BE5EA33B914C
 ```
  
-The following text is an example of the output. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
+The following text is an example of the output for Office 2016. The line that says: "License Status: Licensed" indicates that your KMS host computer is successfully activated.
     
    ```console
    Name: Office 16, OfficeKMSHostVL_KMS_Host edition
