@@ -29,7 +29,7 @@ To update Office on a Mac, a program named Microsoft AutoUpdate (MAU) is used. B
   
 If you decide to deploy updates by using your software distribution tools, you should configure Microsoft AutoUpdate to manually check for software updates. You can [deploy preferences](deploy-preferences-for-office-for-mac.md) to configure how and when Microsoft AutoUpdate checks for updates.
   
-Individual security updates or other updates can't be downloaded and installed. Instead, Microsoft provides a new app bundle of an app, such as Word, that includes all the updates. As an admin, this means that you can't pick and choose which updates to install for a particular app, such as Excel. But, if you're doing manual deployments of updates, you can choose which apps you want to update. For example, you might decide to deploy the updates for Word and PowerPoint now, but wait to update Excel until you've had the chance to test that the updated version of Excel works with your line-of-business applications.
+Individual security updates or other updates can't be downloaded and installed. Instead, Microsoft provides a new app bundle of an app, such as Word, that includes all the updates. You can choose which apps you want to update. For example, you might decide to deploy the updates for Word and PowerPoint now, but wait to update Excel until you've had the chance to test that the updated version of Excel works with your line-of-business applications.
   
 Updates work the same for Office on a Mac whether you have a Microsoft 365 (or Office 365) plan or you have a retail or volume licensed version.
   

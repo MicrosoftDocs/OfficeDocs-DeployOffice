@@ -28,9 +28,7 @@ If your organization has a Microsoft 365 (or Office 365) plan, make sure you [as
   
 For Microsoft 365 (and Office 365) customers, Office for Mac activates by contacting the Office Licensing Service on the internet. The Office Licensing Service keeps track of which users are licensed and how many devices they've installed Office on.
   
-After you deploy Office, your users are prompted to activate Office the first time they use it. Make sure users are connected to the internet when they activate Office.
-  
-On the **Sign in to Activate Office** screen, users should select **Sign In**, and then enter their email address and password.
+After you deploy Office, your users are prompted to activate Office the first time they use it. Make sure users are connected to the internet when they activate Office. On the **Sign in to Activate Office** screen, users should select **Sign In**, and then enter their email address and password.
   
 While you can deploy Office for your Mac users, your users need to sign in and activate Office for themselves. That's to ensure that the Office Licensing Service properly associates Office with the correct licensed user.
   

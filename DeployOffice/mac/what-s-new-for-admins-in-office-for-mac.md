@@ -41,9 +41,8 @@ For all the system requirements, see [System requirements for Microsoft 365 and 
 
 Office provides native support for both Apple Silicon and Intel-based Mac devices. For more information, see [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
 
-## 64-bit
-
-All releases of Office for Mac are 64-bit only.
+> [!NOTE]
+> OneDrive and Microsoft Teams don't have native support for Apple Silicon.
 
 ## Languages
 
