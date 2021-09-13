@@ -111,7 +111,7 @@ If you want to check that the files are downloading, go to the location you spec
 
 Here some additional details about downloading Office 2019 installation files:
 - You must download the 32-bit and 64-bit versions separately.
-- All volume licensed versions of Office 2019 – such as Office Professional Plus 2019, Visio Professional 2019, and Project Professional 2019 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for the Office 2019 products are in the stream.x86.x-none.dat or stream.x64.x-none-dat file, depending if it’s the 32-bit or 64-bit version of Office. 
+- All volume licensed versions of Office 2019 – such as Office Professional Plus 2019, Visio Professional 2019, and Project Professional 2019 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for the Office 2019 products are in the stream.x86.x-none.dat or stream.x64.x-none.dat file, depending if it’s the 32-bit or 64-bit version of Office. 
 
 ## Install Office 2019 by using the Office Deployment Tool
 Once you have a copy of the ODT and have created your configuration.xml file (and downloaded the Office 2019 installation files to your local network, if necessary), you can install Office 2019. To do that, open an elevated command prompt, go to the folder where you saved the ODT and the configuration.xml file, and type the following command:
