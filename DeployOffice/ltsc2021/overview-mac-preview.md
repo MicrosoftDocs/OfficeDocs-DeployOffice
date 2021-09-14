@@ -63,7 +63,7 @@ There are two things that might be of interest to organizations:
 
 - The VL Serializer has been improved so that a management tool can run the VL Serializer in the background even while the user still has Office 2019 for Mac apps open and running. The next time the user closes and opens the app, Office will switch over to using the Office LTSC 2021 license. This should help minimize user disruption when organizations move from Office 2019 for Mac to Office LTSC for Mac 2021.
 
-- Several more Office Add-ins JavaScript APIs are available with Office LTSC for Mac 2021 (Preview). For more information, see [Office Add-ins JavaScript APIs](overview-ltsc-preview.md#office-add-ins-javascript-apis).
+- Several more Office Add-ins JavaScript APIs are available with Office LTSC for Mac 2021 (Preview). For more information, see [Office Add-ins](overview.md#office-add-ins).
 
 ## What’s stayed the same in Office LTSC for Mac 2021 (Preview)
 
@@ -72,30 +72,25 @@ The major version of Office LTSC for Mac 2021 (Preview) is 16.x, which is the sa
 - Application settings including policies, preferences, and preference domains remain the same.
 - Add-ins and other extensibility solutions that are compatible with Office 2019 for Mac will most likely be compatible with Office LTSC for Mac 2021 (Preview) or will require only minimal testing.
 
-Office LTSC for Mac 2021 (Preview) and Office 2019 for Mac will share the same version and build numbers for their releases. For example, Version 16.48 (21041102) for the release in April 2021. For a list of releases, see [Release history for Office for Mac](/officeupdates/update-history-office-for-mac#release-history-for-office-for-mac).
+Office LTSC for Mac 2021 (Preview) and Office 2019 for Mac share the same version and build numbers for their releases. For example, Version 16.52 (21080801) for the release in August 2021. For a list of releases, see [Release history for Office for Mac](/officeupdates/update-history-office-for-mac#release-history-for-office-for-mac).
 
 ## New features included in Office LTSC for Mac 2021 (Preview)
 
-The final list of the features that will be included in Office LTSC for Mac 2021 (Preview) isn’t available yet. More information about the features will be available closer to when Office LTSC for Mac 2021 is released later this year.
+For information about the new features in Office LTSC for Mac 2021, see the following articles:
+- [What's new in Excel 2021 for Mac](https://support.microsoft.com/office/4100753f-93bc-4143-a77c-7258d1a80cd3)
+- [What's new in Outlook 2021 for Mac](https://support.microsoft.com/office/cac45ed4-3f1c-490e-a76d-95af48ba770e)
+- [What's new in PowerPoint 2021 for Mac](https://support.microsoft.com/office/fcbbd1ee-a94a-42a6-910e-df9cab3a1bf6)
+- [What's new in Word 2021 for Mac](https://support.microsoft.com/office/ee054758-cf8d-4fb9-ba07-e105414459d5)
 
-Here are a few examples of new features that are included in Office LTSC for Mac 2021 (Preview): 
-
-- XLOOKUP function, to help you find things in a table or range by row in an Excel worksheet.
-- Dynamic array support in Excel, including new functions that make use of dynamic arrays. 
-- Record a slide show with narration in PowerPoint.
-
-Keep in mind that after Office LTSC for Mac 2021 is released later this year, it won’t receive any new features. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office LTSC Standard for Mac 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
+Keep in mind that after Office LTSC for Mac 2021 won’t receive any new features now that it's been released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office LTSC Standard for Mac 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 ## Additional information about Office LTSC for Mac 2021 (Preview)
 
 #### macOS requirements
-Office LTSC for Mac 2021 (Preview) is supported on the three most recent versions of macOS. As new major versions of macOS are made generally available, Microsoft will stop support for the oldest version and support the newest and previous two versions of macOS. As of April 2021, the three supported versions are macOS Big Sur (11), macOS Catalina (10.15), and macOS Mojave (10.14). Product functionality and feature availability may vary on older systems.
+Office LTSC for Mac 2021 (Preview) is supported on the three most recent versions of macOS. As new major versions of macOS are made generally available, Microsoft will stop support for the oldest version and support the newest and previous two versions of macOS. Product functionality and feature availability may vary on older systems.
 
 #### Memory and disk space 
 The device on which you’re installing Office LTSC for Mac 2021 (Preview) should have at least 4 GB of memory and at least 10 GB of available disk space.
-
-#### 64-bit version
-Office LTSC for Mac 2021 (Preview) is only available as a 64-bit version.
 
 #### Chipset support
 Office LTSC for Mac 2021 (Preview) provides native support for both Apple Silicon and Intel-based Macs. For more information, see [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
@@ -111,7 +106,6 @@ To go back to using Office 2019 for Mac on the device, perform the following ste
 1. Close all Office apps.
 2. Delete /Library/Preferences/com.microsoft.office.licensingV2.plist
 3. Run the VL Serializer for Office 2019 for Mac Standard. For more information, see [Overview of the Volume License (VL) Serializer](../mac/volume-license-serializer.md).
-
 
 ## Getting support and providing feedback
 

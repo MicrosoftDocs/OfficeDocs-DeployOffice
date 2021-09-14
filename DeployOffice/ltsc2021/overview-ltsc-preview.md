@@ -46,15 +46,15 @@ For information about the preview version of Office for devices running macOS, s
 
 ## What’s changed in Office LTSC Preview
 
-For more information, see [What’s changed in Office LTSC 2021?](overview.md#whats-changed-in-office-ltsc-2021).
+For more information, see [What’s changed in Office LTSC 2021?](overview.md#whats-changed-in-office-ltsc-2021)
 
 ## What’s stayed the same in Office LTSC Preview
 
-For more information, see [What’s stayed the same in Office LTSC 2021?](overview.md#whats-stayed-the-same-in-office-ltsc-2021).
+For more information, see [What’s stayed the same in Office LTSC 2021?](overview.md#whats-stayed-the-same-in-office-ltsc-2021)
 
 ## New features included in Office LTSC Preview
 
-For more information, see [What are the new features in Office LTSC 2021?](overview.md#what-are-the-new-features-in-office-ltsc-2021).
+For more information, see [What are the new features in Office LTSC 2021?](overview.md#what-are-the-new-features-in-office-ltsc-2021)
 
 ## Getting support and providing feedback for Office LTSC Preview
 
