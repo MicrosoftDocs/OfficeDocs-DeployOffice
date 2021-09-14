@@ -38,8 +38,6 @@ The following products are available as part of this preview program:
 - Project Professional 2021 Preview
 - Visio Professional 2021 Preview
 
-For an overview of this preview program, including what’s changed since Office 2019, see [Overview of Office LTSC Preview](overview-ltsc-preview.md).
-
 For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2021 (Preview)](overview-mac-preview.md).
 
 ## Installation considerations for Office LTSC Preview
@@ -50,22 +48,20 @@ Before installing Office LTSC Preview, review the following information.
 
 Office LTSC Preview can be installed on the following operating systems:
 
-- Windows 10 Semi-Annual Channel
+- Windows 11
+- Windows 10 Semi-annual Channel
 - Windows 10 LTSC 2019
 - Windows Server 2019
-
 
 #### Memory and disk space
 
 The device on which you’re installing the preview products should have at least 4 GB of memory and at least 4 GB of available disk space for each product that you’re installing.
-
 
 #### 32-bit and 64-bit versions
 
 The preview versions of Office LTSC, Project 2021, and Visio 2021 are available in both 32-bit and 64-bit versions. We recommend 64-bit, especially on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 All installed products must be either the 32-bit version or the 64-bit version. For example, you can't install a 32-bit version of Visio on the same device with a 64-bit version of Office.
-
 
 #### Previous versions of Office
 
@@ -79,34 +75,19 @@ To remove Office products that were installed by using Click-to-Run, such as Off
 
 The preview products are installed on the system drive, which is usually the C:\ drive. The installation location can’t be changed.
 
-
 #### Apps installed
 
 Office LTSC Professional Plus 2021 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
-Here is some additional information about OneNote, Teams, and Skype for Business.
+Here is some additional information about Microsoft Teams with Office LTSC Professional Plus 2021 Preview.
 
-**OneNote**
+- To complete the installation of the Teams client app after installing Office LTSC Preview, either restart the device or sign out and then sign in again.
 
-Office LTSC Preview includes the OneNote desktop app. This is the same version of OneNote that's included with volume licensed versions of Office 2019, such as Office Professional Plus 2019, and with Microsoft 365 Apps. It's different than OneNote for Windows 10, which is a Microsoft Store app that's available only on Windows 10. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+- After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
-**Microsoft Teams**
-
-To complete the installation of the Teams client app after installing Office LTSC Preview, either restart the device or sign out and then sign in again.
-
-After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
-
-If you don’t want the Teams client app included when you install Office LTSC Preview, you can use either of these methods:
-- The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file if you’re using the Office Deployment Tool to install Office LTSC Preview.
-- The “Don't install Microsoft Teams with new installations or updates of Office” policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
-
-**Skype for Business**
-
-Skype for Business won’t be included in the installation of Office LTSC Preview when you use either of the following methods to install Office LTSC Preview:
-
-- The Office Deployment Tool with a configuration xml file created by using the [Office Customization Tool](https://config.office.com/deploymentsettings) and you don’t change the default settings under the **Apps** section.
-- The Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch) and you don’t change the default settings under the **Apps** section.
-
+- If you don’t want the Teams client app included when you install Office LTSC Preview, you can use either of these methods:
+  - The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file if you’re using the Office Deployment Tool to install Office LTSC Preview.
+  - The “Don't install Microsoft Teams with new installations or updates of Office” policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
 
 #### Internet access
 
@@ -115,9 +96,6 @@ After downloading the installation files, internet access isn’t required to in
 ## Install Office LTSC Preview by using the Office Deployment Tool
 
 The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) (ODT) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT. The ODT is used to download and install Office products, such as the preview products, that use the Click-to-Run installation technology.
-
-> [!NOTE]
-> You must be using at least Version 16.0.13901.20336 (setup.exe version 16.0.13901.20328) of the ODT to install the preview products. This version was released on April 13, 2021.
 
 After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe).
 
@@ -131,7 +109,7 @@ For more information about using the Office Deployment Tool and the settings ava
 Copy the ODT (setup.exe) and your configuration.xml file to the device, and then from an elevated command prompt, run the following command to install the preview products:
 
 ```console
-setup.exe /configure  configuration.xml
+setup.exe /configure configuration.xml
 ```
 
 #### Example configuration.xml file
@@ -220,11 +198,9 @@ If you don’t specify the product key in the configuration.xml file, you can en
 
 ## Update Office LTSC Preview
 
-The preview products will be updated a few times each month during the preview program. These updates will include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office.
+The preview products will be updated approximately once a month. These updates will include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office.
 
 To manually check for updates, open any Office app, such as Word, and go to **File** > **Account** > **Update Options** > **Update Now**.
-
-You have options on how to update the preview products.
 
 ### Update from the Office CDN
 
@@ -240,7 +216,7 @@ This option requires more administrative effort and more disk space. For example
 
 ## Getting support and providing feedback
 
-For the preview program, Microsoft support isn’t available.
+Microsoft support isn’t available for the preview program.
 
 Therefore, we recommend that you use the preview products only for testing purposes. For example, to familiarize yourself with deploying the preview products and using the new features in the Office apps. The preview products shouldn’t be used in your normal production environment or on a production device.
 

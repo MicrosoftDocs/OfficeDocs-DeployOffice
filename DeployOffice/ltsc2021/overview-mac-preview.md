@@ -119,7 +119,7 @@ If you decide to purchase Office LTSC for Mac 2021 once it’s released, there w
 
 ## Getting support and providing feedback
 
-For the preview program, Microsoft support isn’t available.
+Microsoft support isn’t available for the preview program.
 
 Therefore, we recommend that you use Office LTSC for Mac 2021 (Preview) only for testing purposes. For example, to familiarize yourself with deploying Office LTSC for Mac 2021 (Preview) and using the new features in the Office apps. Office LTSC for Mac 2021 (Preview) shouldn’t be used in your normal production environment or on a production device.
 

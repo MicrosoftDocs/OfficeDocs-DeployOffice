@@ -146,7 +146,7 @@ To get on-going feature updates for the desktop versions of Project and Visio, y
 
 ## Getting support and providing feedback for Office LTSC Preview
 
-For the preview program, Microsoft support isn’t available.
+Microsoft support isn’t available for the preview program.
 
 Therefore, we recommend that you use the preview products only for testing purposes. For example, to familiarize yourself with deploying the preview products and using the new features in the Office apps. The preview products shouldn’t be used in your normal production environment or on a production device.
 
