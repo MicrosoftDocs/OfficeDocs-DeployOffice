@@ -22,11 +22,12 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 > - Office LTSC 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
 > - For steps on how to update your preview installation to Office LTSC 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
 
-
 > [!NOTE]
-> - This is pre-release documentation for a preview program and is subject to change.
+> - This article is for a preview program and is subject to change. The preview expires on January 17, 2022.
 >
-> - This preview program is intended for organizations that expect to buy and deploy the new volume licensed (perpetual) version of Office that is scheduled to be released later this year. This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan. 
+> - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2021, the new volume licensed (perpetual) version of Office.
+>
+> - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan.
 >
 > - This preview program isn't intended for home users of Office.
 
@@ -44,7 +45,6 @@ For information about the preview version of Office for devices running macOS, s
 ## Installation considerations for Office LTSC Preview
 
 Before installing Office LTSC Preview, review the following information.
-
 
 #### Supported operating systems
 
@@ -112,12 +112,7 @@ Skype for Business won’t be included in the installation of Office LTSC Previe
 
 After downloading the installation files, internet access isn’t required to install, activate, or use the preview products.
 
-
-## Install Office LTSC Preview
-
-The following information provides steps on how to install the preview products by using either the Office Deployment Tool (ODT) or Microsoft Endpoint Configuration Manager (current branch).
-
-### Install by using the Office Deployment Tool
+## Install Office LTSC Preview by using the Office Deployment Tool
 
 The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) (ODT) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT. The ODT is used to download and install Office products, such as the preview products, that use the Click-to-Run installation technology.
 
@@ -133,16 +128,15 @@ For more information about using the Office Deployment Tool and the settings ava
 - [Overview of the Office Deployment Tool](../overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](../office-deployment-tool-configuration-options.md)
 
-> [!TIP]
-> To help you create your configuration.xml, we recommend that you use the [Office Customization Tool](https://config.office.com/deploymentsettings). This tool provides a web-based interface for making your selections and helps reduce syntax errors.
-
 Copy the ODT (setup.exe) and your configuration.xml file to the device, and then from an elevated command prompt, run the following command to install the preview products:
 
-&nbsp;&nbsp;&nbsp; `setup.exe /configure  configuration.xml`
+```console
+setup.exe /configure  configuration.xml
+```
 
-##### Example configuration.xml file
+#### Example configuration.xml file
 
-The following sample configuration.xml will install the 64-bit version of the three preview products in English. Also, any previous versions of Office that were installed by using the Windows Installer (MSI) installation technology will be removed from the device. Because no [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) is specified, the preview products will be updated directly from the Office Content Delivery Network (CDN) on the internet. 
+The following sample configuration.xml will install the 64-bit version of the three preview products in English. Also, any previous versions of Office that were installed by using the Windows Installer (MSI) installation technology will be removed from the device. Because no [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) is specified, the preview products will be updated directly from the Office Content Delivery Network (CDN) on the internet.
 
 
 ```xml
@@ -170,24 +164,9 @@ If you want to download and install the preview products from a shared folder fr
 
 If you don’t want certain Office apps to be installed, such as Publisher, you can use the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
-
-### Install by using Configuration Manager
-
-If you’re using Configuration Manager (current branch) in your organization, you can use the Office 365 Client Installation wizard to deploy the preview products.
-
-To use the wizard, perform the following steps:
-
-1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
-2. Select **Office 365 Installer** in the upper-right pane. The installation wizard opens.
-3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then choose **Next**. The location must be specified as *\\\server\share*.
-4. On the **Office Settings** page, select **Go to the Office Customization Tool**. This will open the Office Customization Tool.
-5. Configure the desired settings for the installation of the preview products. Then select **Submit** in the upper right of the page when you complete the configuration.
-6. Finish the rest of the steps in the wizard.
-
-
 ## Activate Office LTSC Preview
 
-There are special product keys to activate the preview versions of Office LTSC, Project 2021, and Visio 2021. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products. 
+There are special product keys to activate the preview versions of Office LTSC, Project 2021, and Visio 2021. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
 
 > [!IMPORTANT]
 > - The special product keys for the preview products expire on January 17, 2022.
@@ -196,11 +175,9 @@ There are special product keys to activate the preview versions of Office LTSC, 
 > 
 > - In Outlook, you’ll be able to read existing items that have been synchronized to your mailbox, but Outlook won’t be able to connect to your email server and synchronize more items.
 
-When Office LTSC, Project 2021, and Visio 2021 are released later this year, new product keys for KMS and MAK activation will be made available on the Volume Licensing Service Center (VLSC). At that time, we'll provide documentation on how to transition from using the preview product keys to using the new product keys for activation.
-
 ### Use KMS to activate
 
-To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2019 activation. Even though the KMS host computer is configured to activate Office 2019 products, that KMS host computer will be able to activate the preview products. When Office LTSC, Project 2021, and Visio 2021 are released later this year, we'll provide instructions on how to configure your KMS host computer to activate those products.
+To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2019 activation. Even though the KMS host computer is configured to activate Office 2019 products, that KMS host computer will be able to activate the preview products.
 
 If you don’t have a KMS host computer that supports Office 2019 activation, you can use the [MAK product keys](#use-mak-to-activate) to activate the preview products.
 
@@ -221,7 +198,7 @@ The following table lists the product keys for KMS activation of the preview pro
 |Project Professional 2021 Preview |WDNBY-PCYFY-9WP6G-BXVXM-92HDV |
 |Visio Professional 2021 Preview |2XYX7-NXXBK-9CK7W-K2TKW-JFJ7G  |
 
-You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file). 
+You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file).
 
 If you don’t specify the product key in the configuration.xml file, you can enter the product key manually by opening an Office app, such as Word, and going to **File** > **Account** > **Change Product Key**.
 
@@ -241,28 +218,19 @@ You include this product key as the PIDKEY attribute in the configuration.xml fi
 
 If you don’t specify the product key in the configuration.xml file, you can enter the product key manually by opening an Office app, such as Word, and going to **File** > **Account** > **Change Product Key**.
 
-
 ## Update Office LTSC Preview
 
 The preview products will be updated a few times each month during the preview program. These updates will include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office.
 
 To manually check for updates, open any Office app, such as Word, and go to **File** > **Account** > **Update Options** > **Update Now**.
 
-You have several options on how to update the preview products.
+You have options on how to update the preview products.
 
 ### Update from the Office CDN
 
 If network connectivity and other considerations based on your organizational requirements aren’t an issue, we recommend that you let the preview products automatically update themselves directly from the Office Content Delivery Network (CDN) on the internet. This option requires the least administrative effort and is the easiest way to keep the preview products up to date.
 
 While the updates are being downloaded in the background, you can continue to use your Office apps, such as Word. After the updates are downloaded, the updates are installed. If you have any Office apps open, you’re prompted to save your work and close the apps, so that the updates can be installed.
-
-### Update by using Configuration Manager
-
-You can use the software update management workflow in Microsoft Endpoint Configuration Manager (current branch) to update the preview products. 
-
-When an updated version of the preview products is published to the Office CDN, an update package will also be published to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute the update to distribution points selected by the administrator. The Configuration Manager desktop client then tells Office where to get the update and when to start the update installation process.
-
-For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md). Even though the article isn’t specifically for the preview products, the information covered in the article does apply.
 
 ### Update by using a network share
 

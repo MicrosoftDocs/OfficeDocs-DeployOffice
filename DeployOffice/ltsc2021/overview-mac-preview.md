@@ -24,9 +24,11 @@ description: "Technical guidance for IT Pros about the preview version of Office
 > - For steps on how to update your preview installation to Office LTSC for Mac 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
 
 > [!NOTE]
-> - This is pre-release documentation for a preview program and is subject to change.
+> - This article is for a preview program and is subject to change. The preview expires on January 17, 2022.
 >
-> - This preview program is intended for organizations that expect to buy and deploy the new volume licensed (perpetual) version of Office that is scheduled to be released later this year. This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan. 
+> - This preview program is intended for organizations that expect to buy and deploy Office LTSC for Mac 2021, the new volume licensed (perpetual) version of Office.
+>
+> - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan.
 >
 > - This preview program isn't intended for home users of Office.
 
