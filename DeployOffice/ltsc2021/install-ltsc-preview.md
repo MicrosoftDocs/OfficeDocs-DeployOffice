@@ -90,7 +90,7 @@ Here is some additional information about Microsoft Teams with Office LTSC Profe
 
 #### Internet connectivity
 
-After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required if you're using MAK activation, but not for other types of activation. But after activation, internet connectivity isn't required to use the preview products.
+After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required if you're using MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use the preview products.
 
 ## Install Office LTSC Preview by using the Office Deployment Tool
 
