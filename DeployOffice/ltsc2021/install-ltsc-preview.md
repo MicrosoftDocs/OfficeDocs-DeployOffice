@@ -33,7 +33,6 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
-The following products are available as part of this preview program:
 - Office LTSC Professional Plus 2021 Preview
 - Project Professional 2021 Preview
 - Visio Professional 2021 Preview
@@ -89,9 +88,9 @@ Here is some additional information about Microsoft Teams with Office LTSC Profe
   - The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file if you’re using the Office Deployment Tool to install Office LTSC Preview.
   - The “Don't install Microsoft Teams with new installations or updates of Office” policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
 
-#### Internet access
+#### Internet connectivity
 
-After downloading the installation files, internet access isn’t required to install, activate, or use the preview products.
+After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required if you're using MAK activation, but not for other types of activation. But after activation, internet connectivity isn't required to use the preview products.
 
 ## Install Office LTSC Preview by using the Office Deployment Tool
 

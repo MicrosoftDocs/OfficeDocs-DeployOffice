@@ -32,11 +32,9 @@ description: "Technical guidance for IT Pros about the preview version of Office
 >
 > - This preview program isn't intended for home users of Office.
 
-Microsoft is planning to release a new volume licensed version of Office later this year. A preview version is available now for you to install and test on devices running macOS in your organization.
+Office LTSC Standard for Mac 2021 (Preview) is available for you to install and test on devices running macOS in your organization. It includes Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, and Teams.
 
-Office LTSC Standard for Mac 2021 (Preview) includes Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, and Teams. 
-
-For information about the preview version of Office for devices running Windows, see [Overview of Office LTSC Preview](overview-ltsc-preview.md).
+For information about installing preview versions of Office on devices running Windows, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
 ## Install Office LTSC for Mac 2021 (Preview)
 
@@ -114,8 +112,6 @@ To go back to using Office 2019 for Mac on the device, perform the following ste
 2. Delete /Library/Preferences/com.microsoft.office.licensingV2.plist
 3. Run the VL Serializer for Office 2019 for Mac Standard. For more information, see [Overview of the Volume License (VL) Serializer](../mac/volume-license-serializer.md).
 
-#### Updating to the released version
-If you decide to purchase Office LTSC for Mac 2021 once it’s released, there will be a way that you can update Office LTSC for Mac 2021 (Preview) to Office LTSC for Mac 2021 without having to uninstall and reinstall. More details will be available closer to when Office LTSC for Mac 2021 is released later this year.
 
 ## Getting support and providing feedback
 
