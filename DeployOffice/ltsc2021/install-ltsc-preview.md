@@ -19,13 +19,18 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 # Install Office LTSC Preview
 
 > [!IMPORTANT]
+> - Office LTSC 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
+> - For steps on how to update your preview installation to Office LTSC 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
+
+
+> [!NOTE]
 > - This is pre-release documentation for a preview program and is subject to change.
 >
 > - This preview program is intended for organizations that expect to buy and deploy the new volume licensed (perpetual) version of Office that is scheduled to be released later this year. This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan. 
 >
 > - This preview program isn't intended for home users of Office.
 
-Microsoft is planning to release new volume licensed versions of Office, Project, and Visio later this year. Preview versions of those products are available now for you to install and test on devices running Windows in your organization.
+Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
 The following products are available as part of this preview program:
 - Office LTSC Professional Plus 2021 Preview
@@ -267,13 +272,10 @@ This option requires more administrative effort and more disk space. For example
 
 ## Getting support and providing feedback
 
-Since this is a preview program, Microsoft support isn’t available. 
+For the preview program, Microsoft support isn’t available.
 
-Therefore, we recommend that you use the preview products only for testing purposes. For example, to familiarize yourself with deploying the preview products and using the new features in the Office apps. The preview products shouldn’t be used in your normal production environment or on a production device. 
+Therefore, we recommend that you use the preview products only for testing purposes. For example, to familiarize yourself with deploying the preview products and using the new features in the Office apps. The preview products shouldn’t be used in your normal production environment or on a production device.
 
 If you want to provide feedback about an Office app or feature, go to **File** > **Feedback** in that app.
 
 If you have questions about Office LTSC Preview or want to provide additional feedback, go to the [Office LTSC Commercial Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
-
-> [!NOTE]
-> When Office LTSC, Project 2021, and Visio 2021 are released later this year, they will have five years of Mainstream Support. There won’t be any Extended Support available for these products after the five years of Mainstream Support ends.
