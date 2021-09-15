@@ -90,6 +90,7 @@ This background service gets installed automatically on the user's device only i
 > - Microsoft 365 Apps for business (previously named Office 365 Business)
 > - Office for Mac
 > - Volume licensed versions of Office 2019, such as Office Professional Plus 2019
+> - Office LTSC Professional Plus 2021 or Office LTSC Standard 2021
 
 You can also [manually download and install the background service](#manually-download-and-install-the-background-service).
 
