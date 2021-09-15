@@ -49,7 +49,7 @@ The following table lists the end of support dates for perpetual versions of Off
 |Office Professional Plus 2019 |October 14, 2025 |
 
 > [!NOTE]
-> Office Telemetry Dashboard isn't available in Microsoft 365 Apps for business.
+> Office Telemetry Dashboard isn't available in Microsoft 365 Apps for business or in Office LTSC 2021.
 
 ## What happens when Office Telemetry Dashboard is removed?
 
