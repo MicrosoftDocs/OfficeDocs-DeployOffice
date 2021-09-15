@@ -2,7 +2,7 @@
 title: "Deployment guide for OneNote"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -22,15 +22,13 @@ There are two versions of OneNote that you can deploy to users in your organizat
 While both versions are supported and can be installed on the same device, OneNote is the recommended version for enterprise environments. OneNote provides more features and allows you to customize user settings through Group Policy.
 
 > [!NOTE]
-> OneNote still appears as OneNote 2016 for the following installations:
-> - Version 2003 or earlier of Microsoft 365 Apps
-> - Volume licensed versions of Office 2019, such as Office Professional Plus 2019.
+> OneNote still appears as OneNote 2016 in volume licensed versions of Office 2019, such as Office Professional Plus 2019.
 
 ## OneNote deployment guidance
 
 You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Endpoint Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
 
-As of March 2020, OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps or Office 2019. There are no additional steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
+OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no additional steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
 ### To add OneNote to an existing installation of Office
 
@@ -49,7 +47,7 @@ If Office is already installed on the device, but OneNote didn't get installed p
 Although you're deploying the freemium version of OneNote, the first time the user opens OneNote after it's installed, the license will update automatically to the same license as the version of Office already installed on the device.
 
 > [!NOTE]
-> - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office 2019, such as Office Professional Plus 2019 or Office Standard 2019. To add OneNote back to those versions of Office, you can run an Online Repair.
+> - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office, such as Office LTSC Professional Plus 2021 or Office Standard 2019. To add OneNote back to those versions of Office, you can run an Online Repair.
 > - If you deploy the freemium version of OneNote, when you go to **Control Panel** > **Programs** > **Programs and Features**, OneNote will appear as a standalone entry named Microsoft OneNote Home and Student 2016.
 
 ### To exclude OneNote from being installed
@@ -87,11 +85,10 @@ To remove OneNote for Windows 10 from a Windows image so that OneNote for Window
 > [!NOTE]
 > - Group Policy requires the devices with OneNote to be joined to an Active Directory domain. 
 > - Most of these same policy settings can be applied by using the [Office cloud policy service](overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
-> - Neither Group Policy nor Office cloud policy service can be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
+> - Group Policy can't be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
+> - Office cloud policy service can only be used with Microsoft 365 Apps for enterprise.
 
-**Support dates:** In November 2019, we [announced](https://techcommunity.microsoft.com/t5/Office-365-Blog/Your-OneNote/ba-p/954922) that mainstream support for OneNote will continue until October 2023. Extended support remains the same, ending in October 2025. These dates align with the support dates for Office 2019. These specific support dates apply only to OneNote included with versions of Office, such as Office Professional Plus 2016, that are available as a one-time purchase or through volume licensing agreements.
-
-**Supported languages:** While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone)
+**Supported languages:** While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone&ID0EBBF=Windows_Phone)
 
 **Other platforms:** There are also versions of OneNote for Mac, iPad, iPhone, Android, and for web browsers. For more information, see [What's the difference between the OneNote versions?](https://support.microsoft.com/office/a624e692-b78b-4c09-b07f-46181958118f)
 
