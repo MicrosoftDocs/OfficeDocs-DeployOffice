@@ -16,8 +16,8 @@
 ### [Update from Office LTSC 2021 Preview](update-from-preview.md)
 
 ## Project, Visio, and OneNote
-### [Deploy Project](../deployment-guide-for-project.md?toc=/deployoffice/ltsc2021/toc.json)
-### [Deploy Visio](../deployment-guide-for-visio.md?toc=/deployoffice/ltsc2021/toc.json)
+### [Deploy Project](../deployment-guide-for-project.md?toc=/deployoffice/ltsc2021/toc.json#deploy-a-volume-licensed-version-of-project-2021)
+### [Deploy Visio](../deployment-guide-for-visio.md?toc=/deployoffice/ltsc2021/toc.json#deploy-visio-ltsc-2021)
 ### [Deploy OneNote](../deployment-guide-onenote.md?toc=/deployoffice/ltsc2021/toc.json)
 
 ## Office LTSC for Mac 2021
