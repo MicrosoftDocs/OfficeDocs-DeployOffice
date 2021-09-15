@@ -1,8 +1,8 @@
 ---
-title: "GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016"
+title: "GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
@@ -10,18 +10,35 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 ROBOTS: NOINDEX, NOFOLLOW
-description: Lists the Generic Volume License Keys (GVLKs) that Office admins use for activating volume licensed versions of Office 2019 and Office 2016, including Project and Visio. 
+recommendations: false
+description: Lists the Generic Volume License Keys (GVLKs) used to activate volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 
 ---
 
-# GVLKs for KMS and Active Directory-based activation of Office 2019 and Office 2016
+# GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio
 
-***Applies to:*** *Volume licensed versions of Office 2019 and Office 2016, including Project and Visio*
+***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
 
-  
-By default, volume licensed versions of Office 2019 and Office 2016 are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your KMS host computer or Active Directory infrastructure.
+By default, volume licensed versions of Office, such as Office LTSC 2021, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
   
 > [!IMPORTANT]
-> These license keys can't be used to activate your personal copy of Office. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759). 
+> These license keys can't be used to activate your personal copy of Office at home. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+
+## GVLKs for Office LTSC 2021
+|**Product**|**GVLK**|
+|:-----|:-----|
+|Office LTSC Professional Plus 2021   |FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH  |
+|Office LTSC Standard 2021   |KDX7X-BNVR8-TXXGX-4Q7Y8-78VT3  |
+|Project Professional 2021   |FTNWT-C6WBT-8HMGF-K9PRX-QV9H8 |
+|Project Standard 2021   |J2JDC-NJCYY-9RGQ4-YXWMH-T3D4T  |
+|Visio LTSC Professional 2021   |KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4  |
+|Visio LTSC Standard 2021    |MJVNY-BYWPY-CWV6J-2RKRT-4M8QG  |
+|Access LTSC 2021   |WM8YG-YNGDD-4JHDC-PG3F4-FC4T4  |
+|Excel LTSC 2021   |NWG3X-87C9K-TC7YY-BC2G7-G6RVC  |
+|Outlook LTSC 2021  |C9FM6-3N72F-HFJXB-TM3V9-T86R9  |
+|PowerPoint LTSC 2021   |TY7XF-NFRBR-KJ44C-G83KF-GX27K  |
+|Publisher LTSC 2021  |2MW9D-N4BXM-9VBPG-Q7W6M-KFBGQ  |
+|Skype for Business LTSC 2021 |HWCXN-K3WBT-WJBKY-R8BD9-XK29P |
+|Word LTSC 2021   |TN8H9-M34D3-Y64V9-TR72V-X79KV  |
   
 ## GVLKs for Office 2019
 |**Product**|**GVLK**|
@@ -60,10 +77,9 @@ By default, volume licensed versions of Office 2019 and Office 2016 are installe
 |Publisher 2016  <br/> |F47MM-N3XJP-TQXJ9-BP99D-8K837  <br/> |
 |Skype for Business 2016  <br/> |869NQ-FJ69K-466HW-QYCP2-DDBV6  <br/> |
 |Word 2016  <br/> |WXY84-JN2Q9-RBCCQ-3Q3J3-3PFJ6  <br/> |
-   
 
 ## Related articles
 
-- [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md)
-- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md) 
-
+- [Overview of volume activation of Office](plan-volume-activation-of-office.md)
+- [Activate volume licensed versions of Office by using KMS](activate-office-by-using-kms.md)
+- [Activate volume licensed versions of Office by using Active Directory](activate-office-by-using-active-directory.md)
