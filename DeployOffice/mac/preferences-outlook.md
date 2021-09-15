@@ -2,7 +2,7 @@
 title: "Set preferences for Outlook for Mac"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -15,14 +15,14 @@ description: "Shows preferences that IT Pros can set for Outlook for Mac and Out
 
 # Set preferences for Outlook for Mac
 
-***Applies to:*** *Outlook for Mac, Outlook 2019 for Mac*
+***Applies to:*** *Outlook for Mac, Outlook LTSC for Mac 2021, Outlook 2019 for Mac*
 
-As an IT admin, you may want to provide Outlook for Mac users in your organization with a standard set of preferences in either of the following ways:
+As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
 
-The following preferences can be used to simplify account setup for Office 365 mailboxes, help protect company data, and support a streamlined user experience.
+The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
 
 These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
 
@@ -30,7 +30,7 @@ The following list shows the preferences that are covered in this article:
 
 - [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
-- [Automatically configure Office 365 mailbox on first launch](#automatically-configure-office-365-mailbox-on-first-launch)
+- [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
@@ -45,12 +45,12 @@ The following list shows the preferences that are covered in this article:
 - [Set the order in which S/MIME certificates are considered](#set-the-order-in-which-smime-certificates-are-considered)
 - [Specify calendar first day of week](#specify-calendar-first-day-of-week)
 - [Specify default weather location](#specify-default-weather-location)
-- [Specify Office 365 mailbox to be added on first launch](#specify-office-365-mailbox-to-be-added-on-first-launch)
+- [Specify Microsoft 365 mailbox to be added on first launch](#specify-microsoft-365-mailbox-to-be-added-on-first-launch)
 - [Specify when pictures are downloaded for email](#specify-when-pictures-are-downloaded-for-email)
 
 ## Mailbox settings
 
-### Automatically configure Office 365 mailbox on first launch
+### Automatically configure Microsoft 365 mailbox on first launch
 
 The email address used for Office activation will be added on first launch.
 
@@ -65,9 +65,9 @@ The email address used for Office activation will be added on first launch.
 
 
 
-### Specify Office 365 mailbox to be added on first launch
+### Specify Microsoft 365 mailbox to be added on first launch
 
-Set the domain or full email address of Office 365 mailbox to be added on first launch.
+Set the domain or full email address of Microsoft 365 mailbox to be added on first launch.
 
 |Category|Details|
 |:-----|:-----|
@@ -111,7 +111,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 
 ### Disable import
 
-Prevent users from being able to import archive files (.olm and .pst) and Outlook for Mac 2011 data. 
+Prevent users from being able to import archive files (.olm and .pst) and Outlook for Mac 2011 data.
 
 |Category|Details|
 |:-----|:-----|
@@ -121,7 +121,6 @@ Prevent users from being able to import archive files (.olm and .pst) and Outloo
 |Possible values|  false (default) <br/> true  |
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
-
 
 ### Disable export
 
@@ -135,7 +134,6 @@ Prevent users from being able to export archive files (.olm).
 |Possible values| false (default) <br/> true |
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
-
 
 ## Online meetings settings
 
@@ -193,7 +191,6 @@ Prevent users from applying the **Do Not Forward** option to emails when using M
 |Availability|16.40 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
-
 ### Allow S/MIME certificates without a matching email address
 
 Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address.
@@ -207,7 +204,6 @@ Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate d
 |Availability|16.45 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
-
 ### Set the order in which S/MIME certificates are considered
 
 Set the order in which certificates will be used to decrypt and encrypt S/MIME messages.
@@ -220,7 +216,6 @@ Set the order in which certificates will be used to decrypt and encrypt S/MIME m
 |Possible values| 0 (Contacts), 1 (GAL), 2 (Device), 3 (LDAP) <br/> Default is [0, 1, 2, 3] |
 |Availability|16.45 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
-
 
 ## Weather location settings
 
@@ -249,9 +244,8 @@ Prevent users from choosing **Update Location Automatically** for weather locati
 |Possible values| false (default) <br/> true  |
 |Availability|16.19 |
 
-
 ## Other settings
-    
+
 ### Hide local folders
 
 Prevent users from viewing local **On My Computer** folders in the sidebar.
@@ -278,7 +272,6 @@ Set when pictures are automatically downloaded from the internet for email.
 |Availability|16.17 |
 |Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
 
-
 ### Disable signatures
 
 Prevent users from being able to create, edit, and add client-side signatures.
@@ -291,7 +284,6 @@ Prevent users from being able to create, edit, and add client-side signatures.
 |Possible values|  false (default) <br/> true  |
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
-
 
 ### Specify calendar first day of week 
 
@@ -317,8 +309,7 @@ Set the availability and default position of the [New Outlook](https://support.m
 |Possible values| 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
 |Availability|16.38 |
 
- 
 ## Related articles
 
-- [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
+- [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](deploy-preferences-for-office-for-mac.md)
