@@ -13,7 +13,7 @@
 ### [Activate by using Active Directory](../vlactivation/activate-office-by-using-active-directory.md?toc=/deployoffice/ltsc2021/toc.json)
 ### [Rearm Office in an image](../vlactivation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/deployoffice/ltsc2021/toc.json)
 ### [Tools to manage volume activation](../vlactivation/tools-to-manage-volume-activation-of-office.md?toc=/deployoffice/ltsc2021/toc.json)
-### [Change Office LTSC 2021 Preview activation to Office LTSC 2021](update-from-preview.md)
+### [Update from Office LTSC 2021 Preview](update-from-preview.md)
 
 ## Project, Visio, and OneNote
 ### [Deploy Project](../deployment-guide-for-project.md?toc=/deployoffice/ltsc2021/toc.json)
