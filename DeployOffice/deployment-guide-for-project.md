@@ -22,7 +22,7 @@ How you deploy Project to the users in your organization depends on which versio
 - Project Professional 2019 or Project Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2016 or Project Standard 2016, available as a one-time purchase through a volume licensing agreement.
 
-Before you deploy, be sure to [review the system requirements](https://products.office.com/office-resources) for the version of Project that you plan to deploy to the users in your organization.
+Before you deploy, be sure to [review the system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the version of Project that you plan to deploy to the users in your organization.
   
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same device. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
@@ -98,7 +98,7 @@ If you already use other tools to deploy software to your users, such as Microso
 
 If you want to specify and maintain certain user settings for your Project installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with devices joined to a domain.
   
-The same Group Policy settings work for Project Online Desktop Client, and volume licensed versions of Project, such as Project Professional 2021 or Project Standard 2016.
+The same Group Policy settings work for Project Online Desktop Client, and volume licensed versions of Project, such as Project Professional 2021 or Project Standard 2019.
   
 ## End user resources for Project
 
