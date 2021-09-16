@@ -21,7 +21,9 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## September 2021
 
-Office LTSC 2021 is generally available to volume licensed customers as of September 16, 2021. If you've deployed Microsoft 365 Apps to users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021. For more information, see [Overview of Office LTSC 2021](ltsc2021/overview.md) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
+Office LTSC 2021 is generally available to volume licensed customers as of September 16, 2021. If you've deployed Microsoft 365 Apps to users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021. 
+
+For more information, see [Overview of Office LTSC 2021](ltsc2021/overview.md) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
 
 ## April 2021
 
