@@ -37,6 +37,7 @@ Our most recent privacy controls are available for the following Office products
 - Retail versions of Office 2019 and Office 2016, which are available as a one-time purchase. For example, Office Professional 2019 or Office Home & Student 2016.
 - Desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
 - Retail versions of Project 2019, Project 2016, Visio 2019, and Visio 2016, which are available as a one-time purchase.
+- Volume licensed versions of Office LTSC 2021, Project 2021, and Visio LTSC 2021.
 
 For Windows devices, the following table lists the apps and the minimum version of those apps which have our most recent privacy controls.
 
@@ -70,7 +71,7 @@ Some Office products might not have certain types of connected experiences, so s
 To configure these privacy controls for your users that are using Office on Windows devices in your organization, you can use Group Policy or the Office cloud policy service. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md).
 
 > [!NOTE]
-> The "Allow the use of additional optional connected experiences in Office" privacy control is supported on the following *volume licensed* versions of Office, Project, and Visio.
+> The following *volume licensed* versions of Office, Project, and Visio only support the "Allow the use of additional optional connected experiences in Office" privacy control. 
 > - Office 2019, Project 2019, and Visio 2019, when they're configured to use the PerpetualVL2019 update channel. In that case, you must be using at least Version 1808 (Build 10367.20048), which was released on October 13, 2020.
 > - Project 2019 and Visio 2019, when they're configured to use an update channel other than PerpetualVL2019. For example, if they're configured to use Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. In that case, you must be using at least Version 1904.
 > - Project 2016 and Visio 2016 that are installed by using Click-to-Run instead of being installed by using Windows Installer (MSI). In that case, you must be using at least Version 1904.
@@ -81,6 +82,7 @@ Our most recent privacy controls are available for the following Office products
 
 - Office for Mac, which is available with any Office 365 or Microsoft 365 subscription plan that includes the desktop versions of the Office apps. For example, the Office apps that come with the Microsoft 365 Family plan (for home), the Microsoft 365 Business Premium plan (for businesses), or the Microsoft 365 E3 plan (for enterprises).
 - Office 2019 for Mac, which is available as a one-time purchase from a retail store or through a volume licensing agreement.
+- Office LTSC Standard for Mac 2021, which is available as a one-time purchase through a volume licensing agreement.
 
 For Mac devices, the following table lists the apps and the minimum version of those apps which have our most recent privacy controls.
 
