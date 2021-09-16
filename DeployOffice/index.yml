@@ -38,6 +38,6 @@ additionalContent:
           summary: Find guidance about deploying Office to Macs in your organization.
           url: /en-us/DeployOffice/mac/deployment-guide-for-office-for-mac
         # Card
-        - title: Office 2019
+        - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
-          url: /en-us/DeployOffice/office2019/overview
+          url: /en-us/DeployOffice/ltsc2021/overview
