@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 recommendations: false
+description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps
