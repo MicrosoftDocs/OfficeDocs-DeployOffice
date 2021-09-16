@@ -1,5 +1,5 @@
 # [Deployment guide for Office for Mac](deployment-guide-for-office-for-mac.md)
-# [Overview of Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
+# [Overview of Office for Mac](overview.md)
 
 # Deploy
 ## [Deployment options](deployment-options-for-office-for-mac.md)

@@ -682,7 +682,7 @@
     },
     {
       "source_path": "DeployOffice/mac/office-2016-for-mac-upgrade-to-64-bit.md",
-      "redirect_url": "/deployoffice/mac/what-s-new-for-admins-in-office-for-mac",
+      "redirect_url": "/deployoffice/mac/overview",
       "redirect_document_id": true
     },
     {
@@ -704,6 +704,11 @@
       "source_path": "DeployOffice/endofsupport/office-365-services-connectivity.md",
       "redirect_url": "/deployoffice/endofsupport/microsoft-365-services-connectivity",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/mac/what-s-new-for-admins-in-office-for-mac.md",
+      "redirect_url": "/deployoffice/mac/overview",
+      "redirect_document_id": false
     }
   ]
 }
