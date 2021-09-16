@@ -22,6 +22,6 @@
 
 ## Office LTSC for Mac 2021
 ### [Deployment guide](../mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/ltsc2021/toc.json)
-### [Overview](../mac/what-s-new-for-admins-in-office-for-mac.md?toc=/deployoffice/ltsc2021/toc.json)
+### [Overview](../mac/overview.md?toc=/deployoffice/ltsc2021/toc.json)
 ### [Deployment options](../mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/ltsc2021/toc.json)
 ### [Volume License (VL) Serializer](../mac/volume-license-serializer.md?toc=/deployoffice/ltsc2021/toc.json)
