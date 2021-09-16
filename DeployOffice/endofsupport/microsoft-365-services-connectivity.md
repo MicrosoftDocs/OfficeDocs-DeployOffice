@@ -92,7 +92,16 @@ Versions of Outlook that are newer than those versions listed, but aren't the mo
 - Versions of Office 2019 and Office 2016 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2023.
 - Versions of Office LTSC 2021 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2026.
 - Connecting to Microsoft 365 services using Office 2016 for Mac isn’t supported. That’s because Office 2016 for Mac reached its end of support on October 13, 2020.
-- This information about connecting to Microsoft 365 services also applies to Project and Visio.
+- The following versions of Project are supported for connecting to Microsoft 365 (and Office 365) services:
+  - Project Online Desktop Client
+  - Project Professional 2021 and Project Standard 2021
+  - Project Professional 2019 and Project Standard 2019
+  - Project Professional 2016 and Project Standard 2016
+- The following versions of Visio are supported for connecting to Microsoft 365 (and Office 365) services:
+  - Visio desktop app that comes with a Visio Plan 2 subscription
+  - Visio LTSC Professional 2021 and Visio LTSC Standard 2021
+  - Visio Professional 2019 and Visio Standard 2019
+  - Visio Professional 2016 and Visio Standard 2016
 - This information about connecting to Microsoft 365 services does *not* apply to InfoPath 2013 or SharePoint Designer 2013.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
