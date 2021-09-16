@@ -2,7 +2,7 @@
 title: "What's new in Office deployment for IT Pros"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,7 +17,13 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 # What's new in Office deployment for IT Pros
 
-This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For a list of Office deployment articles that have been changed over the last several weeks, see [Content updates](deploy-office-content-updates.md). For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
+## September 2021
+
+Office LTSC 2021 is generally available to volume licensed customers as of September 16, 2021. If you've deployed Microsoft 365 Apps to users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021. 
+
+For more information, see [Overview of Office LTSC 2021](ltsc2021/overview.md) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
 
 ## April 2021
 

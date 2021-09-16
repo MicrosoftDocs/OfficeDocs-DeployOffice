@@ -56,7 +56,18 @@
         "garycentric"
       ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "recommendations": {
+        "compat/**/*.md": false,
+        "fieldnotes/**/*.md": false,
+        "oct/**/*.md": false,
+        "office2016/**/*.md": false,
+        "other/**/*.md": false,
+        "privacy/**/*.md": false,
+        "security/**/*.md": false,
+        "vlactivation/**/*.md": false
+      }
+    },
     "template": [],
     "dest": "OfficeDocs-OfficeProPlus",
     "markdownEngineName": "markdig"
