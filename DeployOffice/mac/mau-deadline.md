@@ -2,7 +2,7 @@
 title: "Set a deadline for updates from Microsoft AutoUpdate"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -15,7 +15,7 @@ description: "Provides admins with information about how to set a deadline for u
 
 # Set a deadline for updates from Microsoft AutoUpdate
 
-Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s device. Version 4.13 was released on July 18, 2019.
+Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user’s Mac. Version 4.13 was released on July 18, 2019.
 
 Users will receive notifications about the upcoming deadline and can temporarily postpone the updates from being installed. But once the deadline is reached, any applications the user has open will be closed and the updates applied.
 
@@ -156,7 +156,6 @@ If you want to configure a specific date and time for a deadline for Word and Ou
 </dict>
 ```
 
-
 ### Configure Automatic Download and Install mode
 
 To configure how many days in advance of the deadline that Automatic Download and Install mode begins, use the following preference setting.
@@ -168,7 +167,6 @@ To configure how many days in advance of the deadline that Automatic Download an
 |**Data Type** |Integer  |
 |**Possible values**  |*various (example: 2)* |
 |**Comments** | This is an optional setting. <br/><br/>The default value is 3. <br/><br/> Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
-
 
 For example, if you want to configure Automatic Download and Install mode to being two days before the deadline, you can use the following.
 

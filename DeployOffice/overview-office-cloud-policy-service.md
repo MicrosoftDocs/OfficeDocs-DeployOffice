@@ -2,7 +2,7 @@
 title: "Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -37,7 +37,7 @@ The following are the requirements for using the Office cloud policy service wit
 
 > [!IMPORTANT]
 > - The Office cloud policy service isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
-> - A policy configuration can't be applied to other commercial versions of Office that use Click-to-Run, such as Office Professional Plus 2019 or Office Standard 2019.
+> - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
 > - You can create a policy configuration for Microsoft 365 Apps for business, but only policy settings related to privacy controls are supported. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](privacy/manage-privacy-controls.md).
 
 ## Steps for creating a policy configuration
