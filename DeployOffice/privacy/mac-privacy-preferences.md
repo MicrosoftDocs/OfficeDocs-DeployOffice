@@ -2,7 +2,7 @@
 title: "Use preferences to manage privacy controls for Office for Mac"
 ms.author: danbrown
 author: pbowden-msft
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

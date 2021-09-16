@@ -2,7 +2,7 @@
 title: "Overview of update channels for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro

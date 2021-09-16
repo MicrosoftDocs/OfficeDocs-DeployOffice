@@ -2,7 +2,7 @@
 title: "Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
