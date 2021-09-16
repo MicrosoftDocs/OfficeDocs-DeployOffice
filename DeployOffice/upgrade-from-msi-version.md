@@ -145,6 +145,7 @@ The following are some additional details about using the RemoveMSI element in y
    - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
    - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
    - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
+   - Office LTSC Professional Plus 2021 or Office LTSC Standard 2021.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
 - You can use the RemoveMSI element in conjunction with the MSICondition attribute. That attribute allows you to control the installation of an Office product based on whether a particular MSI-based product is already installed on the device. For example, only install Project Online Desktop Client if Project Professional is already installed on the device. For more information, see [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element).
