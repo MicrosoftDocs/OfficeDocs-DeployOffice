@@ -29,7 +29,7 @@ There are several versions of Office that are referred to in this guide:
 
 This guide covers the following areas:
   
-- [Overview of Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
+- [Overview of Office for Mac](overview.md)
 
 - [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md)
 
