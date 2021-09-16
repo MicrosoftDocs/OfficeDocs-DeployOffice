@@ -1,5 +1,5 @@
 # [Deployment guide for Office for Mac](deployment-guide-for-office-for-mac.md)
-# [What's new for admins](what-s-new-for-admins-in-office-for-mac.md)
+# [Overview of Office for Mac](what-s-new-for-admins-in-office-for-mac.md)
 
 # Deploy
 ## [Deployment options](deployment-options-for-office-for-mac.md)
@@ -21,6 +21,8 @@
 ## [Add-ins](preferences-add-ins.md)
 ## [Resume Assistant](set-preference-resume-assistant-word.md)
 ## [Default decryption password (Excel)](set-preference-default-password-excel.md)
+
+# [Privacy controls](../privacy/mac-privacy-preferences.md)
 
 # Related articles
 ## [Network requests](/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)

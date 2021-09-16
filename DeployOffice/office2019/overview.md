@@ -2,7 +2,7 @@
 title: "Overview of Office 2019 (for IT Pros)"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.prod: office-perpetual-itpro
@@ -16,7 +16,7 @@ description: "Provides IT admins with an overview of deploying Office 2019."
 
 # Overview of Office 2019 (for IT Pros)
  
-Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.
+Office 2019 is a version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.
 
 > [!IMPORTANT]
 > Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. 
@@ -33,8 +33,6 @@ Volume licensed versions of Office 2019 are available for enterprise admins to d
 These Office products now use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
 For devices running macOS, Office Standard 2019 for Mac is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
-
-For more information about these Office 2019 products, see [Compare suites available through volume licensing](https://www.microsoft.com/microsoft-365/business/microsoft-office-volume-licensing-suites-comparison).
 
 ## What's changed in Office 2019?
 
