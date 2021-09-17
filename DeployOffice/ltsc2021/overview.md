@@ -104,6 +104,8 @@ Several more Office Add-ins JavaScript APIs are available with Office LTSC 2021.
    - [RibbonApi 1.1](/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets) (Excel)
    - [SharedRuntime 1.1](/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets) (Excel)
 
+Office Add-ins on Windows now use Microsoft Edge with WebView2. For more information, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins).
+
 #### Office Telemetry Dashboard
 
 [Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
