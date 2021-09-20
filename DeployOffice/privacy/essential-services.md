@@ -3444,6 +3444,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected:
 
+   - **currentFeatureCard** - String – The Title of the current feature card on display just before the Purchase/Buy Button was tapped
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -3454,6 +3455,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected:
 
+   - **cardsVisited** - Int – number of displayed feature cards the user has seen
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton”
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
@@ -17072,6 +17074,8 @@ The following fields are collected:
 
 - **CallStack** - The Microsoft internal call stack causing the crash.
 
+- **CallStackHash** - Hash of CallStack field (GUID format)
+
 - **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -17154,6 +17158,8 @@ The following fields are collected:
 - **UninitLibletId** - The unique identifier for the failing component of the crash.
 
 - **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **WatsonBucket** - Watson bucket Identifier for crash (GUID format)
 
 - **WatsonReportId** - Identifier of report sent to the Windows Watson service.
 
