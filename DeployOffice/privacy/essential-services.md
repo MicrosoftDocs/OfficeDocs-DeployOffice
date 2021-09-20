@@ -2,7 +2,7 @@
 title: "Essential services for Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
@@ -3444,6 +3444,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected:
 
+   - **currentFeatureCard** - String – The Title of the current feature card on display just before the Purchase/Buy Button was tapped
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -3454,6 +3455,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected:
 
+   - **cardsVisited** - Int – number of displayed feature cards the user has seen
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton”
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
@@ -3731,6 +3733,43 @@ The following fields are collected:
 - **Type (int32)** - Indicates the licensing business bar type
 
 
+### Office.Licensing.Dialogs.ReactNativeDialog.RekaService.CloseAndStoreUserAction
+
+This event is triggered when a Licensing Validation User Experience (LVUX) 2.0 ReactNative dialog is closed. The data is used to verify that the ReactNative dialog events are occurring and triggering expected behavior and successfully closing the ReactNative dialogs.
+
+The following fields are collected:
+
+- **Action** - User action taken on LVUX RN dialog.
+
+- **DialogView** - Specifies LVUX RN dialog.
+
+- **Flow** - Entry flow type of LVUX session.
+
+
+### Office.Licensing.Dialogs.ReactNativeDialog.RekaService.HandleAction
+
+The event is triggered when an event occurs on a Licensing Validation User Experience (LVUX) 2.0 ReactNative dialog. The data is used to verify that the ReactNative dialog events are occurring and triggering expected behavior.
+
+The following fields are collected:
+
+- **Action** - User action taken on LVUX RN dialog.
+
+- **DialogView** - Specifies LVUX RN dialog.
+
+- **Flow** - Entry flow type of LVUX session.
+
+
+### Office.Licensing.Dialogs.ReactNativeDialog.Show
+
+This event is triggered when a Licensing Validation User Experience (LVUX) 2.0 ReactNative dialog is shown. Used to verify that the ReactNative dialog are launching as expected.
+
+The following fields are collected:
+
+- **DialogView** - Specifies LVUX RN dialog.
+
+- **Flow** - Entry flow type of LVUX session.
+
+
 ### Office.Licensing.Dialogs.WebViewDialog.Close
  
 This event is used as a signal to tell us that the in-app purchase experience is being closed either by the user or by the application. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
@@ -3787,6 +3826,107 @@ This is collected when we show the expiration dialog to the user that says that 
 The following fields are collected:
 
   - **LicNotificationState** – An enumerator that tells us what kind of notification is being shown to the user
+
+
+### Office.Licensing.Flows.GenericRFMDialog
+
+This event is triggered when the generic RFM (Reduced Functionality Mode) dialog is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and make sure user actions are handled appropriately.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+- **UserAction** - User action taken on LVUX ReactNative dialog.
+
+
+### Office.Licensing.Flows.GraceDialog
+
+This event is triggered when grace license notification dialogs are shown during in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and make sure user actions are handled appropriately. The grace period is a one-time, five -day free license to use the installed Office product on new PCs.
+
+The following fields are collected:
+
+- **ACID** - License SKU ID for which grace key was installed.
+
+- **MainFlow** -  Entry flow type of LVUX session.
+
+
+### Office.Licensing.Flows.GraceEula
+
+This event is triggered when the grace End-User License Agreement (EULA) is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and ensure user actions are handled appropriately. The grace period is a one-time, five-day free license to use the installed Office product on new PCs. The grace EULA is the license agreement a user must accept before activating the grace license.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+- **UserAction** - User action taken on LVUX ReactNative dialog.
+
+
+### Office.Licensing.Flows.GraceLicenseActiveDialog
+
+This event is triggered when the active grace license dialog is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and make sure user actions are handled appropriately. The grace period is a one-time, five-day free license to use the installed Office product on new PCs.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+- **UserAction** - User action taken on LVUX ReactNative dialog.
+
+
+### Office.Licensing.Flows.GraceLicenseExpiredDialog
+
+This event is triggered when the expired grace license dialog is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and make sure user actions are handled appropriately. The grace period is a one-time, five-day free license to use the installed Office product on new PCs.
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+- **UserAction** - User action taken on LVUX ReactNative dialog.
+
+
+### Office.Licensing.Flows.GraceState
+
+This event is triggered when a user enters the grace license state. The data is used to verify the resilience grace license flow in the Office client license experience (LVUX: Licensing Validation User Experience) and make sure users are receiving a grace period before Reduced Functionality Mode, the unlicensed state of Office apps (RFM). The grace period is a one-time, five-day free license to use the installed Office product on new PCs. 
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+
+### Office.Licensing.Flows.PurchaseProduct
+
+This event is triggered when the user enters the inline purchase flow in the Office client. The data is used to verify that the purchase flow is launched as expected.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+- **IdentityAvailable** - Indicates whether the LVUX session is running with active user identity or not.
+
+- **WebDialogResult** - Indicates result of inline purchase dialog.
+
+
+### Office.Licensing.Flows.ShowWebPurchaseExperience
+
+This event is triggered when user is sent to web purchase flow from the Office client. The data is used to verify that purchase flow is launched as expected.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of Licensing Validation User Experience (LVUX) session.
+
+
+### Office.Licensing.Flows.StartFlow
+
+This event is triggered when a new Licensing Validation User Experience (LVUX) flow is started in the Office client. The data is used to verify that users are launching and entering LVUX 2.0 flows as expected.
+
+The following fields are collected:
+
+- **FlowStatesExecuted** - Indicated flow states (components of flow) executed in LVUX 2.0 before falling back to LVUX 1.0 or exiting LVUX 2.0.
+
+- **FlowTypesExecuted** - Indicates types of flows executed in LVUX 2.0 before falling back to LVUX 1.0 or exiting LVUX 2.0.
+
+- **LvuxFallbackState** - Indicates fallback state from LVUX 2.0 to LVUX 1.0.
+
+- **MainFlow** - Entry flow type of LVUX session.
+
 
 ### Office.Licensing.FullValidation 
 
@@ -4169,6 +4309,16 @@ The following fields are collected:
   - **OpportunisticTokenRenewalAttempted** – Indicates whether we attempted to renew the user's session token opportunistically
 
   - **SetAcidResult** – Represent the error code/success code of whether we were able to set the acid to the expected value
+
+
+### Office.Licensing.ShouldRunRedesignedGraceExperience
+
+This event is triggered when determining if a user should fall into new Office client licensing experiences (LVUX 1.0) or old Office client licensing experiences (LVUX 2.0). Used to verify that users are entering LVUX 1.0/2.0 based on a set of eligibility criteria. LVUX = Licensing Validation User Experience.
+
+The following fields are collected:
+
+- None 
+
 
 ### Office.Licensing.ShowNewDeviceActivationDialog
 
@@ -17072,6 +17222,8 @@ The following fields are collected:
 
 - **CallStack** - The Microsoft internal call stack causing the crash.
 
+- **CallStackHash** - Hash of CallStack field (GUID format)
+
 - **CrashedAssignedFlights -** The flights assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **CrashedConfigIds -** The configuration assigned to the crashed process. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -17154,6 +17306,8 @@ The following fields are collected:
 - **UninitLibletId** - The unique identifier for the failing component of the crash.
 
 - **VerifyElseCrashTag -** Unique identifier for where the app crashed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **WatsonBucket** - Watson bucket Identifier for crash (GUID format)
 
 - **WatsonReportId** - Identifier of report sent to the Windows Watson service.
 
