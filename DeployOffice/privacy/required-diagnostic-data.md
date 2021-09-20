@@ -11263,7 +11263,7 @@ This event is used to track the frequency with which the Accessibility Checker F
 
 The following fields are collected:
 
--**RuleID** - Integer value used to track which category of Accessibility violation is being remediated by the user.
+- **RuleID** - Integer value used to track which category of Accessibility violation is being remediated by the user.
 
 
 #### Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
