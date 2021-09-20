@@ -2,7 +2,7 @@
 title: "Required diagnostic data for Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
@@ -8948,6 +8948,14 @@ The following fields are collected:
 
 - **origin** - indicates where compose was initiated, that is, new, reply, quick reply etc.
 
+- **proofing_card_shown** - the number of proofing card displayed to show suggestions
+
+- **proofing_suggestion_applied** - the number of proofing suggestions applied by the user
+
+- **proofing_suggestion_displayed** - whether there's at least one proofing suggestion displayed while sending
+
+- **proofing_unused_suggestions** - the number of unresolved proofing suggestions while sending the message
+
 - **send_draft_origin** - indicates where send was initiated, that is, compose or quick reply
 
 - **smart_compose_model_version** - tracks which version of smart compose model is being used
@@ -11237,6 +11245,27 @@ The following fields are collected:
 
 - **Data_VoiceOverRunning** - A flag indicating whether this setting is enabled
 
+
+#### Office.UX.AccChecker.FixItMenuItemSelection
+
+This event is used to track the selected choice within the Accessibility Checker Fixit menu. The data allows Microsoft to understand how documents are being remediated to fix accessibility issues, which helps to create a more inclusive workplace and classroom environment for people with disabilities.
+
+The following fields are collected:
+
+- **RuleID** - Integer value used to track which category of Accessibility violation is being remediated by the user.
+
+- **SelectionItem** - Integer value that represents the user selection within the FixIt menu.
+
+
+#### Office.UX.AccChecker.FixItMenuOpenClose
+
+This event is used to track the frequency with which the Accessibility Checker Fixit menu is invoked or dismissed. The data helps Microsoft understand the frequency with which and how documents are being remediated to fix accessibility issues. This contributes to a more inclusive workplace and classroom environment for people with disabilities.
+
+The following fields are collected:
+
+- **RuleID** - Integer value used to track which category of Accessibility violation is being remediated by the user.
+
+
 #### Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
 
 This event indicates Office Word reads aloud the text in the document. The event is a heartbeat of the accessibility feature, which allows Microsoft to evaluate the feature health of read-aloud-text.
@@ -13304,6 +13333,8 @@ The following fields are collected:
   - **record_count** - The number of records the underlying storage layer returns.
   - **scope_name** - Provides the name of UI page/components this event belongs to.
   - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
+
+- **standard_probe_label** - Provides the information of the sub steps of each user scenario when instrumented with Standard Probe. It will help us reduce the scope of the issue.
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
 
