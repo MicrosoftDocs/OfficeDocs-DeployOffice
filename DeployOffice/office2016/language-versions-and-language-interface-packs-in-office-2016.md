@@ -106,7 +106,7 @@ For some languages, Microsoft localizes only some Office 2016 applications and r
     
   - Galician: gl-ES
     
-  - Macedonian: mk-MK
+  - Macedonian (North Macedonia): mk-MK
     
   - Serbian (Cyrillic): sr-Cyrl-RS
     
@@ -143,7 +143,7 @@ The remaining Office applications appear in the base Office 2016 installation la
 |Konkani  <br/> |English  <br/> |
 |Krygyz  <br/> |Russian  <br/> |
 |Luxembourgish  <br/> |French  <br/> |
-|Macedonian (FYROM)  <br/> |English  <br/> |
+|Macedonian (North Macedonia)  <br/> |English  <br/> |
 |Malayalam  <br/> |English  <br/> |
 |Maltese  <br/> |English  <br/> |
 |Maori  <br/> |English  <br/> |
