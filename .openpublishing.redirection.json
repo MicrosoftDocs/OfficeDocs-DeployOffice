@@ -642,7 +642,7 @@
     },
     {
       "source_path": "DeployOffice/other/home-use-program.md",
-      "redirect_url": "/deployoffice/other/home-use-program-preview",
+      "redirect_url": "/deployoffice/other/home-use-program-notification",
       "redirect_document_id": true
     },
     {
@@ -708,6 +708,11 @@
     {
       "source_path": "DeployOffice/mac/what-s-new-for-admins-in-office-for-mac.md",
       "redirect_url": "/deployoffice/mac/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/other/home-use-program-preview.md",
+      "redirect_url": "/deployoffice/other/home-use-program-notification",
       "redirect_document_id": false
     }
   ]
