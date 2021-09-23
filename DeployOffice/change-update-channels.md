@@ -46,7 +46,7 @@ After policy has been applied, the Office Automatic Updates 2.0 task must run. W
 
 4. Deploy the configuration file using your standard processes.
 
-After ODT has executed, the Office Automatic Update 2.0 task must run. The task will detect change and update channel. After the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed.
+After ODT has executed, the Office Automatic Updates 2.0 task must run. The task will detect change and update channel. After the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed.
 
 ### Example
 
@@ -64,7 +64,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 - Make sure that the build from the new channel is available to the device through the Software Update Point in Configuration Manager.
 
-- After the Office Automatic Update 2.0 task runs and updates the assigned channel, the new build is installed the next time the Configuration Manager client runs a Software Updates Deployment Evaluation Cycle.
+- After the Office Automatic Updates 2.0 task runs and updates the assigned channel, the new build is installed the next time the Configuration Manager client runs a Software Updates Deployment Evaluation Cycle.
 
 > [!IMPORTANT]
 > If you use Configuration Manger to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
