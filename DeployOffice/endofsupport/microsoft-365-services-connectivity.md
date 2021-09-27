@@ -57,7 +57,7 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Microso
 
 ### Basic authentication with Exchange Online
 
-There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – June 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-june-2021-update/ba-p/2454827).
+There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210).
 
 ### Retirement of Skype for Business Online
 
