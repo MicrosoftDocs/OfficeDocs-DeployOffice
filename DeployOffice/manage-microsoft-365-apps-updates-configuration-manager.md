@@ -29,7 +29,7 @@ Here's an overview of the steps to enable Configuration Manager to manage Office
 
 3. [Enable Microsoft 365 Apps clients to receive updates from Configuration Manager](#enable-microsoft-365-apps-clients-to-receive-updates-from-configuration-manager)
 
-After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Manage software updates in Microsoft Endpoint Configuration Manager](/mem/configmgr/sum/deploy-use/deploy-software-updates).
+After you perform these steps, you can use the software update management capabilities of Configuration Manager to deploy the updates. For more information, see [Deploy software updates](/mem/configmgr/sum/deploy-use/deploy-software-updates).
 
 ## Requirements for using Configuration Manager to manage Office updates
 
@@ -65,7 +65,7 @@ To start, you need to configure Configuration Manager to receive notifications w
 
      You can have other check boxes selected in the **Products** and **Classifications** tabs. But, **Microsoft 365 Apps/Office 2019/Office LTSC** and **Updates** need to be selected for Configuration Manager to receive notifications when Office update packages are available.
 
-4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Microsoft Endpoint Configuration Manager](/mem/configmgr/sum/understand/software-updates-introduction).
+4. Next, synchronize software updates. If you don't do that, you won't see the updates in the console and the updates won't be available to deploy. For more information about how to synchronize software updates, see [Introduction to software updates in Configuration Manager](/mem/configmgr/sum/understand/software-updates-introduction).
 
 ## Enable Microsoft 365 Apps clients to receive updates from Configuration Manager
 
@@ -80,7 +80,7 @@ To enable Configuration Manager to manage Office updates on specific computers b
 - In the Configuration Manager console, go to **Administration** > **Overview** > **Client Settings**.
 - Open the client settings, choose **Software Updates** and select **Yes** for the **Enable management of the Office 365 Client Agent** setting.
 
-For more information, see [client policy](/mem/configmgr/core/clients/deploy/about-client-settings).
+For more information, see [About client settings in Configuration Manager](/mem/configmgr/core/clients/deploy/about-client-settings).
 
 ### Method 2: Use Group Policy to enable updates from Configuration Manager
 
@@ -118,10 +118,10 @@ If it meets your business and technical requirements, we recommend updating your
 ### Method 1: Use client policy in Configuration Manager to enable updates from the CDN
 
 - In the Configuration Manager console, go to **Administration** > **Overview** > **Client Settings**.
-- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](/mem/configmgr/core/clients/deploy/configure-client-settings).
+- Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Configuration Manager](/mem/configmgr/core/clients/deploy/configure-client-settings).
 - Choose **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent setting**.
 
-For more information, see [client policy](/mem/configmgr/core/clients/deploy/about-client-settings).
+For more information, see [About client settings in Configuration Manager](/mem/configmgr/core/clients/deploy/about-client-settings).
 
 ### Method 2: Use Group Policy to enable updates from the CDN
 
