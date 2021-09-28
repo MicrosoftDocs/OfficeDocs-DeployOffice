@@ -831,13 +831,15 @@ The following fields are collected:
 
 The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
 
-The following fields are collected: 
+The following fields are collected:
 
 - **CompletionState** - Final state of sign in - Succeeded or failed. And failure cases
 
 - **EntryPoint** - Indicates from where Sign-In was initiated
 
 - **Hresult** - Error code
+
+- **IsSignInCompleteFGEnabled** - [Yes/ No] Status of FG during first boot
 
 - **Provider Package ID** - In case of Auto sign in
 
@@ -1652,6 +1654,8 @@ The following fields are collected:
 - **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SSO), create_new_account, manual, etc.
 
 - **action** - The type of action performed on the account, such as add, remove, or reset
+
+- **auth_framework_type** - optional property to track what type of framework was used to add the account. It can have values like oneauth, adal or none.
 
 #### add.new.account.step
 
@@ -5912,6 +5916,28 @@ The following fields are collected:
 - **Type** - The operation type (for example, Open).
 
 
+#### Office.OfficeMobile.Lens.LensRequiredUsage
+
+This event is triggered when one of the following things happens:
+- The user launches Lens to capture or import images in any workflow.  This helps Microsoft determine the volume of users launching the app and further understand feature usage, changes in trends, and to identify and rectify issues in the product. 
+- The user completes the Lens workflow. For example, creating images or copying extracted data from image. This helps Microsoft to understand engagement metrics for the Lens App and to calculate the completion rate in any Lens workflow.
+- Lens Software Developer Kit interacts with Microsoft’s Image-to-document (I2D) service. This means that the event is called when an image is uploaded to our I2D service for file conversion and extraction (OCR) and when the user needs to correct the service’s output, we send feedback to improve quality. 
+
+The following fields are collected: 
+
+- **Data_Action** - integer value to identify action, such as lensLaunch, LensFlowCompletion, or ServiceIDMapping.
+
+- **Data_CloudConnectorRequestID** - String that identifies the service requests on the client app for both conversion and feedback scenarios.
+
+- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.  
+
+- **Data_EntryPoint** - integer value to identify entry point for Lens flow.
+
+- **Data_I2DServiceProcessID** - String that identifies the service-request in I2D service when user is uploading images for conversion. 
+
+- **Data_LensSessionID** - String field to identify Lens session ID.
+
+
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
 
 The event is collected for the Office app for Android. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close, and save operations performing as expected, and to improve .pdf file operation performance.
@@ -9216,6 +9242,8 @@ The following fields are collected:
 - **hx_okhttp_mode** - whether the new email syncing service component is using OKHttp for sending and receiving HTTP-based network requests
 
 - **initial_activity_name** - the Android Activity that launched the app
+
+- **is_pen_connected** - detects if a user is using pen or stylus to operate the app
 
 - **manufacturer** - the device manufacturer
 
