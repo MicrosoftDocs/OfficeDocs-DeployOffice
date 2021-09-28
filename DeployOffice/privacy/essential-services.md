@@ -3282,9 +3282,11 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
 
-Critical Usage telemetry to know when user clicks on the Purchase Button. Used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
+Critical usage telemetry to know when user clicks on the Purchase Button. Used to infer the usage pattern and conversion metric for users who attempt to buy a subscription in the app.
 
 The following fields are collected:
+
+- **Card** - Integer – Carousel index of last feature card seen by user before attempting a purchase.
 
 - **EventDate** – Timestamp of the event occurrence
 
@@ -3342,6 +3344,8 @@ The following fields are collected:
 Usage telemetry to see how much time user spends on SKU Chooser screen. Usage telemetry to see how much time user spends on Sku Chooser screen.
 
 The following fields are collected:
+
+- **CardCount** - Integer - Number of cards seen by user before exiting from SKU Chooser screen
 
 - **Duration** – Long integer indicating time spent by user on Sku Chooser screen in milliseconds
 
@@ -3419,12 +3423,18 @@ The following fields are collected:
 
 ### Office.Apple.Licensing.CommonPaywallControl
 
-This event is used to understand the in-app purchase (IAP) experience for the user. It allows us to ensure IAP performs as expected and helps us understand user issues so we can optimize the IAP experience.  Collection occurs through one of the following sub-events.
+This event is used to understand the in-app purchase (IAP) experience for the user. It allows us to ensure IAP performs as expected and helps us understand user issues so we can optimize the IAP experience. Collection occurs through one of the following sub-events.
+
+- **Office.iOS.Paywall.BottomSheet.Stats** - Usage telemetry to measure how many users expanded/dismissed bottom sheet UI of subscription-plan (SKU) chooser screen. The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions. 
+
+   The following fields are collected:
+   - **isExpanded** - Bool - true when user expanded the bottom sheet.
+   - **isDimissed** - Bool - true if user dismissed the drawer.
 
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
    The following fields are collected:
-
+  - **CPCVersion** - Integer -The version of customer paywall control we are presenting. We determine this based on experiment flag.
   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
   - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -3432,7 +3442,6 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 - **Office.iOS.Paywall.Paywall.Stats** - Data is collected when the paywall user interface is shown to the user, the duration of the interaction and whether a purchase was attempted, succeeded, or failed. The data is used to measure the performance of the user interface and ensure that it performing as expected. 
 
    The following fields are collected:
-
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isFRE** - Boolean – Check to see if the First Run Experience or regular UI is showing.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -3444,7 +3453,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected:
 
-   - **currentFeatureCard** - String – The Title of the current feature card on display just before the Purchase/Buy Button was tapped
+   - **currentFeatureCard** - String – The title of the current feature card on display just before the Purchase/Buy Button was tapped
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -3520,6 +3529,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
   The following fields are collected:
 
+  - **authToken** - String - The Auth token of the signed in user. Used to debug issues where auth token is invalid and provisioning for the account fails. If the token is nil, logged as “nil-auth-token”.  
   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session.
   - **status** - String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
@@ -16364,6 +16374,7 @@ The following fields are collected:
 
 - **SessionId** - Guid: Unique Paywall session identifier
 
+- **V2Enabled** - Boolean – Flag denoting if experimental modern upsell UX was shown.
 
 ### Office.FirstRun.Apple.TelemetryOptIn
 
@@ -16372,6 +16383,66 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
+
+
+### Office.OneNote.FirstRun.FirstRunDurationsBreakdown
+
+The event is triggered upon completion of provisioning of the user in the app. This happens right after user signs into the app for the first time. The event collects durations of different stages of provisioning. The data will help Microsoft determine which stages of provisioning consume the most time and help us develop a solution to reduce the time taken.
+
+The following fields are collected:
+
+- **Duration_FirstRunAttemptToCreateGuide_MS** - Time taken by the app to create a 'Getting Started' guide
+
+- **Duration_FirstRunBootStatusUpdateEnded_MS** - Time taken for the app to update the value of BootStatus to Succeeded/Failed. BootStatus helps the app track its status during First run. 
+
+- **Duration_FirstRunBootStatusUpdateStarted_MS** - Time taken for the app to update the value of BootStatus to Started. BootStatus helps the app track its status during First run. 
+
+- **Duration_FirstRunCheckIfPathBeAccessible_MS** - Time taken by the app to figure out if the notebook's path is accessible to it
+
+- **Duration_FirstRunCreateEmptyNotebook_MS** - Time taken by the app to create an empty organizational notebook
+
+- **Duration_FirstRunCreateNotebook_MS** - Time taken for the app to create a new personal notebook
+
+- **Duration_FirstRunCreateQuickNotes_MS** - Time taken by the app to create a 'Quick Notes' section in the notebook, in case one didn't already exist
+
+- **Duration_FirstRunEnsureOneDriveIdentityForOpenDefaultNotebook_MS** - Time taken by the app to ensure that an identity exists for a notebook
+
+- **Duration_FirstRunExecutionForMsaAccount_MS** - Time taken for provisioning to complete for a Live account
+
+- **Duration_FirstRunExecutionForOrgAccount_MS** - Time taken for provisioning to complete for an organizational account
+
+- **Duration_FirstRunFGetNotebooks_WaitForResult_MS** - Time taken by the app to obtain personal notebooks for an identity
+
+- **Duration_FirstRunFGetNotebooks_WaitForResultForPersonalNotebook_MS** - Time taken by the app to obtain notebooks for an identity
+
+- **Duration_FirstRunFindLogicalDuplicateOfNotebookInNotebookList_MS** - Time taken for the app to check if a duplicate notebook could exist
+
+- **Duration_FirstRunFOpenOrCreateDefaultOrgIdNotebook_MS** - Total time taken for the app to find or create and finally open the default notebook for an organizational account
+
+- **Duration_FirstRunFTryGetCreateDefaultNotebook_MS** - Time taken by the app to find or create a new default notebook
+
+- **Duration_FirstRunGetAvailableAccount_MS** - Time taken to obtain the signed in accounts
+
+- **Duration_FirstRunGetEnterpriseIdentity_MS** - Time taken by the app to find the Enterprise Identity
+
+- **Duration_FirstRunGetFolderProxyFromPath_MS** - Time taken by the app to obtain web location for a notebook
+
+- **Duration_FirstRunGetNotebook_MS** - Time taken for the app to obtain a notebook
+
+- **Duration_FirstRunGetPersonalNotebooks_MS** - Time taken by the app to obtain personal notebooks for an identity
+
+- **Duration_FirstRunOldCreateAndOpenNotebook_MS** - Total time taken for the app to find or create and finally open the default notebook
+
+- **Duration_FirstRunOpenDefaultNotebook_MS** - Time taken for the app to make few validations and finally open the default notebook
+
+- **Duration_FirstRunOpenNotebook_MS** - Time taken by the app to open an existing organizational notebook
+
+- **Duration_FirstRunSearchForExistingPersonalNotebook_MS** - Time taken for the app to find the existing personal notebook
+
+- **Duration_FirstRunStampNotebookAsDefault_MS** - Time taken by the app to stamp a notebook as default, in case it wasn't already
+
+- **Duration_FirstRunTryOpenDefaultNotebook_MS** - Time taken for the app to just open the default notebook
+
 
 ### Office.OneNote.GetSharePointIdsForDocument
 
