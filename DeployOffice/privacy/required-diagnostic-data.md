@@ -839,7 +839,7 @@ The following fields are collected:
 
 - **Hresult** - Error code
 
-- **IsSignInCompleteFGEnabled** - [Yes/ No] Status of FG during first boot
+- **IsSignInCompleteFGEnabled** - [Yes/ No] Status of feature gate during first boot
 
 - **Provider Package ID** - In case of Auto sign in
 
