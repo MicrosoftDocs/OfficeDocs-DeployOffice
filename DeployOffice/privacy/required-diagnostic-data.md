@@ -1649,13 +1649,13 @@ The following fields are collected:
 
 This event is collected to ensure account configuration is operating successfully and is used to monitor health of account creation, ability to add new email accounts, and monitor soft account resets.
 
-The following fields are collected: 
+The following fields are collected:
 
 - **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SSO), create_new_account, manual, etc.
 
 - **action** - The type of action performed on the account, such as add, remove, or reset
 
-- **auth_framework_type** - optional property to track what type of framework was used to add the account. It can have values like oneauth, adal or none.
+- **auth_framework_type** - optional property to track what type of framework was used to add the account. It can have values such as oneauth, adal, or none.
 
 #### add.new.account.step
 
