@@ -36,7 +36,8 @@ Our most recent privacy controls are available for the following Office products
 - Desktop versions of the Office applications that come with Microsoft 365 or Office 365 subscription plans. For example, the Office apps that come with the Microsoft 365 Personal plan (for home), the Microsoft 365 Business Standard plan (for businesses), or the Microsoft 365 E5 plan (for enterprises). 
 - Retail versions of Office 2019 and Office 2016, which are available as a one-time purchase. For example, Office Professional 2019 or Office Home & Student 2016.
 - Desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2.
-- Retail versions of Project 2019, Project 2016, Visio 2019, and Visio 2016, which are available as a one-time purchase.
+- Retail versions of Project 2021, Project 2019, and Project 2016, which all are available as a one-time purchase.
+- Retail versions of Visio 2021, Visio 2019, and Visio 2016, which all are available as a one-time purchase.
 - Volume licensed versions of Office LTSC 2021, Project 2021, and Visio LTSC 2021.
 
 For Windows devices, the following table lists the apps and the minimum version of those apps which have our most recent privacy controls.
