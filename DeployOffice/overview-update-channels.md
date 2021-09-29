@@ -50,7 +50,7 @@ The following table provides a comparison of Current Channel, Monthly Enterprise
 
 <sup>2</sup> For information about what feature updates and non-security updates are included in a given release of these update channels, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
 
-<sup>3</sup> For a list of security updates included in a given release of these update channels, see [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates)
+<sup>3</sup> For a list of security updates included in a given release of these update channels, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates)
 
 <sup>4</sup> For a table that shows which version and build is currently supported for each of these update channels, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). 
 
@@ -85,7 +85,7 @@ Security updates are cumulative. The most current release of Current Channel inc
 
 Separate downloads of just security updates for Current Channel aren’t available. Also, new security updates aren’t provided for versions of Current Channel that are no longer supported.
 
-For a list of security updates included in a given release of Current Channel, see [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates).
+For a list of security updates included in a given release of Current Channel, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
 ### Non-security updates for Current Channel
 If needed, non-security updates are provided for Current Channel. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
@@ -136,7 +136,7 @@ Security updates are cumulative. The most current release of Monthly Enterprise 
 
 Separate downloads of just security updates for Monthly Enterprise Channel aren’t available. Also, new security updates aren’t provided for versions of Monthly Enterprise Channel that are no longer supported.
 
-For a list of security updates included in a given release of Monthly Enterprise Channel, see [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates).
+For a list of security updates included in a given release of Monthly Enterprise Channel, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
 ### Non-security updates for Monthly Enterprise Channel
 If needed, non-security updates for Monthly Enterprise Channel are provided on the second Tuesday of the month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office. 
@@ -183,7 +183,7 @@ Security updates are cumulative. The most current release of Semi-Annual Enterpr
 
 Separate downloads of just security updates for Semi-Annual Enterprise Channel aren’t available. Also, new security updates aren’t provided for versions of Semi-Annual Enterprise Channel that are no longer supported.
 
-For a list of security updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates).
+For a list of security updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
 ### Non-security updates for Semi-Annual Enterprise Channel
 If needed, non-security updates for Semi-Annual Enterprise Channel are provided on the second Tuesday of the month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
@@ -246,7 +246,7 @@ After Office is installed, you can change the update channel for a device. For m
 
 ### Managing updates
 - To simplify managing updates, especially for Current Channel and Monthly Enterprise Channel, we recommend that you configure devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
-- If you configure devices to get updates directly from the Office CDN, and those devices are running Windows 10, you can take advantage of [Delivery Optimization](delivery-optimization.md) to help reduce network bandwidth utilization. 
+- If you configure devices to get updates directly from the Office CDN, and those devices are running Windows 11 or Windows 10, you can take advantage of [Delivery Optimization](delivery-optimization.md) to help reduce network bandwidth utilization. 
 - When we make a new release available on the Office CDN, we gradually advertise the availability of this release over a period of several days to devices worldwide that have Office installed. This way not all devices in your organization will try to access the Office CDN at the same time to download the new release, which could possibly cause network bandwidth utilization issues.
 - For examples of approximate update sizes when updating from a recent release to the most current release of an update channel, see [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates).
 - If you use Microsoft Endpoint Configuration Manager, you can manage updates for these update channels by using the Software Update management workflow. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).

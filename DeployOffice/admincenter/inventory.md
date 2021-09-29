@@ -2,7 +2,7 @@
 title: "Overview of inventory in the Microsoft 365 Apps admin center"
 ms.author: darrend
 author: darrendmsft
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -22,7 +22,7 @@ From the **Inventory** page, you can drill down to see detailed information abou
 To view the inventory for your environment, the following requirements must be met:
 
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
-- A version of Windows 10 supported by Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business
+- A version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
 - Client devices can reach the following endpoints: 
   - `https://login.live.com`

@@ -2,7 +2,7 @@
 title: "Device-based licensing for Microsoft 365 Apps for enterprise"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -15,7 +15,7 @@ description: "Explains how to configure device-based licensing for Microsoft 365
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
 
-Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to assign a Microsoft 365 Apps for enterprise license to a Windows 10 device instead of to a user. Education customers can do the same thing by using the *Microsoft 365 Apps for Education (device)* license. This device-based license is designed to simplify management of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on devices shared by many users. Anyone that signs in and uses that device can use Microsoft 365 Apps for enterprise to create and edit documents.
+Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to assign a Microsoft 365 Apps for enterprise license to a Windows client device instead of to a user. Education customers can do the same thing by using the *Microsoft 365 Apps for Education (device)* license. This device-based license is designed to simplify management of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on devices shared by many users. Anyone that signs in and uses that device can use Microsoft 365 Apps for enterprise to create and edit documents.
 
 > [!IMPORTANT]
 > Device-based licensing for Microsoft 365 Apps for enterprise is available as a license only for some commercial customers and some education customers. For commercial customers, the license is *Microsoft 365 Apps for enterprise (device)* and is available only through Enterprise Agreement/Enterprise Agreement Subscription.  For education customers, the license is *Microsoft 365 Apps for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). For commercial availability, contact your Microsoft account representative.
@@ -25,30 +25,30 @@ Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to ass
 The following are the requirements for device-based licensing for Microsoft 365 Apps for enterprise:
 
 - Version 1907 or later of Microsoft 365 Apps for enterprise.
-- A supported version of Windows 10 Semi-Annual Channel or Windows 10 Enterprise LTSC 2019.
-- The Windows 10 device must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+- A supported version of Windows 11, Windows 10 Semi-Annual Channel, or Windows 10 Enterprise LTSC 2019.
+- The Windows client device must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
-To verify that Microsoft 365 Apps for enterprise and the Windows 10 device meet these requirements, do the following steps:
+To verify that Microsoft 365 Apps for enterprise and the Windows client device meet these requirements, do the following steps:
 
-- On the Windows 10 device, open an Office application, such as Word, and go to **File** > **Account**. The version number of Microsoft 365 Apps for enterprise that is installed on the device appears in the **About** section of the **Product Information** section.
-- On the Windows 10 device, from the Start menu or a command prompt, type `winver` and then hit Enter. The **About Windows** dialog appears and lists the version of Windows 10.
-- Sign in to the [Microsoft Azure](https://portal.azure.com/) and go to **Azure Active Directory** > **Devices**. The type of join for your Windows 10 device is listed in the **Join Type** column. 
+- On the Windows client device, open an Office application, such as Word, and go to **File** > **Account**. The version number of Microsoft 365 Apps for enterprise that is installed on the device appears in the **About** section of the **Product Information** section.
+- On the Windows client device, from the Start menu or a command prompt, type `winver` and then hit Enter. The **About Windows** dialog appears and lists the version of Windows client.
+- Sign in to the [Microsoft Azure](https://portal.azure.com/) and go to **Azure Active Directory** > **Devices**. The type of join for your Windows client device is listed in the **Join Type** column.
 
-  If the Windows 10 device doesn't appear, sign in to the Windows 10 device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
+  If the Windows client device doesn't appear, sign in to the Windows client device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
 
 ## Steps to configure device-based licensing for Microsoft 365 Apps for enterprise
 
-After you have verified that your Windows 10 devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following tasks:
-- Add the Windows 10 devices to a group that's available in Azure AD.
+After you have verified that your Windows client devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following tasks:
+- Add the Windows client devices to a group that's available in Azure AD.
 - Assign the appropriate licenses to that group by signing into the Microsoft 365 admin center and going to **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 - Configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing.
 
 > [!IMPORTANT]
 > Be sure to create the Azure AD group and assign the licenses ***before*** you configure Microsoft 365 Apps for enterprise to use device-based licensing. Otherwise you will receive error messages in Microsoft 365 Apps for enterprise.
 
-### Add Windows 10 devices to a group in Azure AD and assign that group licenses
+### Add Windows client devices to a group in Azure AD and assign that group licenses
 
-To configure device-based licensing, you first need to add your Windows 10 devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups. 
+To configure device-based licensing, you first need to add your Windows client devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.
 
 | Group type | Create using these tools |
 |---------|---------|
@@ -62,14 +62,14 @@ For more information about Azure group management, see the following articles:
 - [Create a dynamic group and check status](/azure/active-directory/users-groups-roles/groups-create-rule)
 - [Azure AD Connect sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
-After you have created the appropriate group type and assigned the appropriate Windows 10 devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
+After you have created the appropriate group type and assigned the appropriate Windows client devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
 
 > [!IMPORTANT]
 > The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
-After you have assigned licenses to the group in Azure AD that contains your Windows 10 devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
+After you have assigned licenses to the group in Azure AD that contains your Windows client devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
  - The Office Deployment Tool and the DeviceBasedLicensing setting.
 - Group Policy and the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting
 
@@ -83,7 +83,7 @@ If you use the Office Deployment Tool to install or configure Microsoft 365 Apps
 > [!IMPORTANT]
 > To configure device-based licensing by using the Office Deployment Tool, you must be installing Version 1909 or later of Microsoft 365 Apps for enterprise. There was a problem with earlier versions that prevented device-based licensing from being properly configured using the DeviceBasedLicensing setting with the Office Deployment Tool.
 >
-> If you're using an earlier version of Microsoft 365 Apps for enterprise, you can configure device-based licensing by using [Group Policy](#using-group-policy).  Or, from an elevated command prompt you can run the following command:
+> If you're using an earlier version of Microsoft 365 Apps for enterprise, you can configure device-based licensing by using [Group Policy](#using-group-policy). Or, from an elevated command prompt you can run the following command:
 >
 >   `reg add HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v O365ProPlusRetail.DeviceBasedLicensing /t REG_SZ /d 1`
 
@@ -122,7 +122,7 @@ In other cases, the user might see this message:
 
 In this case, the device is having problems contacting the Office Licensing Service on the internet. Office tries to contact the Office Licensing Service to ensure the device is properly licensed and to automatically renew a license that is about to expire. A device-based license is set to expire in 90 days, so the device doesn't have to access to internet constantly. The **CAN'T VERIFY LICENSE** message usually appears about 10 days before the license is about to expire.
 
-## Transition from subscription licensing or shared computer activation to device-based licensing 
+## Transition from subscription licensing or shared computer activation to device-based licensing
 
 If Microsoft 365 Apps  are already installed and activated with user-based subscription licensing or shared computer activation, you will need to reset the license state on the device before it will transition over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
 

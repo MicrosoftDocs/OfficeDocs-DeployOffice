@@ -2,7 +2,7 @@
 title: "Microsoft 365 Apps health"
 ms.author: jacarril
 author: javiercarrillo
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -17,7 +17,7 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 
 ## Requirements for using Microsoft 365 Apps health
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 1908 or later
-- A version of Windows 10 supported by Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business
+- A version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
 
 > [!NOTE]

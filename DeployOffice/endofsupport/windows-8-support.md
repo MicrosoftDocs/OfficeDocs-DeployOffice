@@ -2,7 +2,7 @@
 title: "Windows 8 end of support and Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -23,7 +23,7 @@ description: "Provides Office admins with information about the implications of 
 
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
-Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 8, we strongly recommend your organization moves those devices to a supported operating system, preferably Windows 10.
+Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 8, we strongly recommend your organization moves those devices to a supported operating system, such as Windows 11 or Windows 10.
 
 > [!WARNING]
 > There are known functionality and stability issues when running Version 2005 or later of Microsoft 365 Apps on Windows 8.
@@ -47,7 +47,7 @@ If you try to deploy or update to a newer version of the Office apps, you'll rec
 
 Because Windows 8 is no longer supported, Windows 8 doesn’t receive security updates, leaving it vulnerable to security threats.
 
-To get security updates for Windows and updates to Microsoft 365 Apps, we strongly recommend that you move to a supported operating system. For example, Windows 8.1, or preferably Windows 10.
+To get security updates for Windows and updates to Microsoft 365 Apps, we strongly recommend that you move to a supported operating system. For example, Windows 8.1, or preferably Windows 11 or Windows 10.
 
 > [!TIP]
 > - If you’re using Microsoft Endpoint Configuration Manager (current branch), you can use the [Computers with a specific operating system](/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.
