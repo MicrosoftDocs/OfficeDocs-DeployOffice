@@ -54,7 +54,7 @@ Office 365 (and Microsoft 365) provides subscription plans that include access t
   
 Unlike Office 2007, Microsoft 365 Apps uses a user-based licensing model that allows people to install Office on up to 5 PCs or Macs and on their mobile devices. There are also differences in how you deploy, license, and activate Microsoft 365 Apps compared to Office 2007. For more information about Microsoft 365 Apps, see the following information:
   
-- [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
+- [Compare enterprise plans for Office 365](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans)
 
 - [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md)
 
@@ -144,7 +144,7 @@ For more information, see [Overview of deploying languages for Microsoft 365 App
 
 - To find out more about upgrading from Office 2007 servers, see [Resources to help you upgrade from Office 2007 servers and clients](/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products).
 
-- For more information about Office 365 (and Microsoft 365) plans, see [Microsoft 365 and Office 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
+- For more information about Office 365 (and Microsoft 365) plans, see [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
 
 - For more information about the support lifecycle for Microsoft products, see [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
