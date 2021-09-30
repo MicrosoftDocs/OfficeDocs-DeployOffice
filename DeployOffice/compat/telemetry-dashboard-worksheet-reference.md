@@ -2,7 +2,7 @@
 title: "Office Telemetry Dashboard worksheet reference"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro

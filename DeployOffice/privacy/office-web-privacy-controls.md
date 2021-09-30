@@ -2,7 +2,7 @@
 title: "Use policy settings to manage privacy controls for Office for the web applications"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

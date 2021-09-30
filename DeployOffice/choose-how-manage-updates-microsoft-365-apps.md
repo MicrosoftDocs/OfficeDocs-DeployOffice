@@ -2,7 +2,7 @@
 title: "Choose how to manage updates to Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 udience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
