@@ -2,7 +2,7 @@
 title: "Device-based licensing for Microsoft 365 Apps for enterprise"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

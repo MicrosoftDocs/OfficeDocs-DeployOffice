@@ -2,7 +2,7 @@
 title: "End-user update notifications for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

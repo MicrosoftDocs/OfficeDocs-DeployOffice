@@ -2,7 +2,7 @@
 title: "Language identifiers and OptionState Id values in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 3/9/2016
 audience: ITPro
 ms.topic: reference

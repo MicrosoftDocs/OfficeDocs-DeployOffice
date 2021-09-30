@@ -2,7 +2,7 @@
 title: "Custom reporting and database schema reference for Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro

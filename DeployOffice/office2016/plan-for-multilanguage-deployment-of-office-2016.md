@@ -2,7 +2,7 @@
 title: "Plan for multilanguage deployment of Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/26/2015
 audience: ITPro
 ms.topic: article

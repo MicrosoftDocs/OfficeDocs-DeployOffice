@@ -2,7 +2,7 @@
 title: "Change a Microsoft 365 Apps installation from 32-bit to 64-bit"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
