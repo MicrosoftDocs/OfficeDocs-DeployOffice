@@ -36,31 +36,17 @@ For more information about Delivery Optimization in Windows, see the following i
 
 ## Requirements for using Delivery Optimization with Microsoft 365 Apps
 
-To use Delivery Optimization with Microsoft 365 Apps, the device must be running Windows 11 or Windows 10 (at least Version 1709).
+The following requirements must be met to use Delivery Optimization with Microsoft 365 Apps.
 
-In addition, the following are requirements for Microsoft 365 Apps:
-
-- At least Version 1808 for background updates
-- At least Version 1908 for installing or for user-initiated updates
-- Configured to be installed from or to receive updates directly from the Office Content Delivery Network (CDN) on the internet
-
-By user-initiated updates, we're referring to when the user goes to **File** > **Account** in an Office app, such as Word, and then chooses **Update Options** > **Update Now**. Otherwise, Click-to-Run tries to automatically download and install updates for Microsoft 365 Apps in the background without any prompting from the user.
+- A supported version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps.
+- At least Version 1912 of Microsoft 365 Apps.
+- Microsoft 365 Apps is configured to be installed from or to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
 
 ## Configure Microsoft 365 Apps to use Delivery Optimization
 
-Delivery Optimization is enabled by default on devices running the Enterprise or Education editions of Windows. Therefore, there isn't anything additional you need to do for Microsoft 365 Apps to start taking advantage of Delivery Optimization for background updates.
+Microsoft 365 Apps can use Delivery Optimization during installation and for background or user-initiated (foreground) updates. By user-initiated updates, we're referring to when the user goes to **File** > **Account** in an Office app, such as Word, and then chooses **Update Options** > **Update Now**. Otherwise, Click-to-Run tries to automatically download and install updates for Microsoft 365 Apps in the background without any prompting from the user.
 
-To use Delivery Optimization for background updates of Microsoft 365 Apps, there is no additional configuration needed.
-
-To take advantage of Delivery Optimization when installing or when doing user-initiated updates, do the following:
-- For Version 1912 or later of Microsoft 365 Apps, no additional configuration is needed.
-- For Version 1908 through Version 1911, you need to configure a registry key on devices in your organization before installing Microsoft 365 Apps on those devices. You can use the following [reg add](/windows-server/administration/windows-commands/reg-add) command to configure the registry key:  
-<br/> `reg add HKLM\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate  /v SetDOAsPrimary /t REG_DWORD /d 1`
-
-> [!NOTE]
-> - Version 1912 is available in Current Channel as of January 8, 2020.
-> - Version 2002 is available in Semi-Annual Enterprise Channel (Preview) as of March 10, 2020 and in Semi-Annual Enterprise Channel as of July 14, 2020. Version 2002 or later doesn't require the registry key.
-> - Version 2003 is available in Monthly Enterprise Channel as of May 12, 2020.
+Delivery Optimization is enabled by default on devices running the Enterprise or Education editions of Windows. Therefore, there isn't anything additional you need to do for Microsoft 365 Apps to start taking advantage of Delivery Optimization.
 
 If you're using Configuration Manager or local network shares to manage installing and updating Microsoft 365 Apps on devices, Delivery Optimization won't be used. Delivery Optimization is used only if you're installing or updating Microsoft 365 Apps directly from the Office Content Delivery Network (CDN) on the internet. If you want some of these devices, such as those on Current Channel, to take advantage of Delivery Optimization, you need to reconfigure them to use the Office CDN. You can do that by using the Office Deployment Tool or Group Policy settings, depending how your environment is configured. You have to remove any configuration of the update path as well as the use of the [OfficeMgmtCOM](office-deployment-tool-configuration-options.md#officemgmtcom-attribute-part-of-add-element) attribute, which enables Configuration Manager to manage updates.
 
@@ -98,7 +84,7 @@ Keep in mind that this information represents overall results for Delivery Optim
 - You can also take advantage of Delivery Optimization if you're using the [AllowCdnFallback](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) attribute to allow devices to use the Office Content Delivery Network (CDN) on the internet as a source for installing additional language packs.
 - If you're already using Configuration Manager (current branch) and [peer cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to manage installing and updating Microsoft 365 Apps, Delivery Optimization won't provide any added benefit for content coming from your on-premises infrastructure.
 - You can also try using a Microsoft Connected Cache server, which is an application installed on Windows Server and can be used with distribution points in Configuration Manager (current branch). For more information, see [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
-- Delivery Optimization can also be used with the subscription versions of the Project and Visio desktop apps. The same requirements listed above for Microsoft 365 Apps apply.
-- Office LTSC Professional Plus 2021 and Office LTSC Standard 2021 can take advantage of Delivery Optimization for installing, background updates, and foreground updates. The same applies to volume licensed versions of Project 2021 and Visio LTSC 2021.
-- Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installing or for foreground updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
+- Delivery Optimization can also be used with the subscription versions of the Project and Visio desktop apps. The same [requirements](#requirements-for-using-delivery-optimization-with-microsoft-365-apps) as for Microsoft 365 Apps apply.
+- Office LTSC Professional Plus 2021 and Office LTSC Standard 2021 can take advantage of Delivery Optimization for installing, background updates, and user-initiated updates. The same applies to volume licensed versions of Project 2021 and Visio LTSC 2021.
+- Volume licensed versions of Office 2019, such as Office Professional Plus 2019, can take advantage of Delivery Optimization, but only for background updates. Delivery Optimization isn't available for installing or for user-initiated updates. The same applies to volume licensed versions of Project 2019 and Visio 2019.
 - If you're already using a 3rd party peer-to-peer solution along with Configuration Manager, Delivery Optimization isn't expected to cause any problems with that solution.
