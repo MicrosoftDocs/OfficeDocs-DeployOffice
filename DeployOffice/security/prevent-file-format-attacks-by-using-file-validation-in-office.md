@@ -2,7 +2,7 @@
 title: "Prevent file format attacks by using Office file validation in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 9/21/2015
 audience: ITPro
 ms.topic: article

@@ -2,7 +2,7 @@
 title: "Document and solution types monitored by Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro

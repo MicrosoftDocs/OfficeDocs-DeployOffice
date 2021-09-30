@@ -2,7 +2,7 @@
 title: "Office Customization Tool (OCT) 2016 Help Configure shortcuts"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/30/2015
 audience: ITPro
 ms.topic: article

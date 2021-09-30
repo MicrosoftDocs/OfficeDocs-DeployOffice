@@ -2,7 +2,7 @@
 title: "Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

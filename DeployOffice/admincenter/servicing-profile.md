@@ -2,7 +2,7 @@
 title: "Servicing profile"
 ms.author: dhirenb
 author: dhirendra-bhupati
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

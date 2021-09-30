@@ -2,7 +2,7 @@
 title: Choose how to deliver updates for Microsoft 365 Apps for enterprise
 author: davguent
 ms.author: davguent
-manager: laurawi
+manager: dougeby
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
