@@ -65,7 +65,8 @@ For more information about Azure group management, see the following articles:
 After you have created the appropriate group type and assigned the appropriate Windows client devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
 
 > [!IMPORTANT]
-> The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
+> - The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
+> - After you go to **Billing** > **Licenses** > **Subscriptions** in the Microsoft 365 admin center, be sure that you select either **Microsoft 365 Apps for enterprise (device)** or **Microsoft 365 Apps for Education (device)** (depending on which license you have) to assign those licenses to the group you created.
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
