@@ -2,7 +2,7 @@
 title: "What's new for admins in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
 ms.topic: overview
@@ -25,7 +25,7 @@ If you're looking for information for end users about the new features in Word, 
   
 ## Updated system requirements for Office 2016
 
-With any new software release, you should [review the system requirements](https://products.office.com/office-resources) to ensure that your computers meet those requirements. For example, for Office 2016, the minimum requirement is now 2 GB of RAM. 
+With any new software release, you should [review the system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) to ensure that your computers meet those requirements. For example, for Office 2016, the minimum requirement is now 2 GB of RAM. 
   
 Another important change to be aware of is that Outlook 2016 doesn't support connecting to Exchange Server 2007.
   
