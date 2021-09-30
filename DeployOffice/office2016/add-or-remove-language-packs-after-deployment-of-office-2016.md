@@ -2,7 +2,7 @@
 title: "Add or remove language packs after deployment of Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/19/2015
 audience: ITPro
 ms.topic: article

@@ -2,7 +2,7 @@
 title: "(Known Issue) Some Semi-Annual Enterprise Channel devices moved to Current Channel if receiving updates from Configuration Manager"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

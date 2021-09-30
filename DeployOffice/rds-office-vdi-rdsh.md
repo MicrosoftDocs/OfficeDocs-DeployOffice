@@ -2,7 +2,7 @@
 title: Office 2016 in RDSH and VDI deployments
 author: DHB-MSFT
 ms.author: danbrown
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

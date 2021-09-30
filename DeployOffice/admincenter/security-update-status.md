@@ -2,7 +2,7 @@
 title: "Overview of the security update status report in the Microsoft 365 Apps admin center"
 ms.author: darrend
 author: darrendmsft
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

@@ -2,7 +2,7 @@
 title: "Companion proofing languages for Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/7/2015
 audience: ITPro
 ms.topic: reference

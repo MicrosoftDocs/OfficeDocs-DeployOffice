@@ -2,7 +2,7 @@
 title: Right-sizing your initial deployment of Microsoft 365 Apps
 author: manoth
 ms.author: manoth
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
