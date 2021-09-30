@@ -2,7 +2,7 @@
 title: "Name change for Office 365 ProPlus"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

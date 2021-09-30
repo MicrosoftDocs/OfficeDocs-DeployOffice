@@ -2,7 +2,7 @@
 title: Network guidance for deploying and servicing Microsoft 365 Apps
 author: bobclements-msft
 ms.author: roclemen
-manager: laurawi
+manager: dougeby
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro

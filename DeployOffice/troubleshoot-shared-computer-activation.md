@@ -2,7 +2,7 @@
 title: "Troubleshoot issues with shared computer activation for Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: troubleshooting
 ms.service: o365-proplus-itpro

@@ -2,7 +2,7 @@
 title: "Set up a safe environment to open files by using Protected View in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/2/2017
 audience: ITPro
 ms.topic: article

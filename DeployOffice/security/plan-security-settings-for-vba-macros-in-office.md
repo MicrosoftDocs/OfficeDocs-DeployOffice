@@ -2,7 +2,7 @@
 title: "Plan security settings for VBA macros in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/10/2015
 audience: ITPro
 ms.topic: article
