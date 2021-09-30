@@ -2,7 +2,7 @@
 title: Roadmap to modern management of Microsoft 365 Apps in the enterprise
 author: manoth-msft
 ms.author: manoth
-manager: laurawi
+manager: dougeby
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro

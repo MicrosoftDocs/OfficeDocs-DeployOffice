@@ -2,7 +2,7 @@
 title: "Microsoft 365 Apps health"
 ms.author: jacarril
 author: javiercarrillo
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

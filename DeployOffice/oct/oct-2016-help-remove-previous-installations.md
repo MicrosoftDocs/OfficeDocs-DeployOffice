@@ -2,7 +2,7 @@
 title: "Office Customization Tool (OCT) 2016 Help Remove previous installations"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/28/2015
 audience: ITPro
 ms.topic: article

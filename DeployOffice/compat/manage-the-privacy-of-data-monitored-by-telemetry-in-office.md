@@ -2,7 +2,7 @@
 title: "Manage the privacy of data monitored by Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
