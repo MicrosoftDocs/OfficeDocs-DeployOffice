@@ -2,7 +2,7 @@
 title: "About Microsoft 365 Apps in the enterprise"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -22,7 +22,7 @@ Microsoft 365 Apps is a version of Office that's available through many Office 3
   
 > [!NOTE]
 > - Project and Visio aren't included with Microsoft 365 Apps, but are available from other subscription plans.
-> - For more information about Office 365 (and Microsoft 365) plans, see [https://products.office.com](https://products.office.com) and the [Office 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library). 
+> - For more information about Office 365 (and Microsoft 365) plans, see [https://microsoft.com/microsoft-365](https://microsoft.com/microsoft-365) and the [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library). 
   
 ## Microsoft 365 Apps is similar to other versions of Office
 <a name="BKMK_Similar"> </a>
@@ -31,7 +31,7 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
   
 - Microsoft 365 Apps is a full version of Office.  
     
-- Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://products.office.com/office-resources).
+- Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
     
 - Like other versions of Office, Microsoft 365 Apps is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
     
@@ -79,9 +79,9 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Microsoft 365 Apps isn't the same as the [web versions of the Office applications](/office365/servicedescriptions/office-online-service-description/office-online-service-description). The web versions let users open and work with Word, Excel, PowerPoint, or OneNote documents in a web browser. The web versions of these Office application are included with all Office 365 (and Microsoft 365) plans.
     
-- Read the [Office 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365 (and Microsoft 365).
+- Read the [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365 (and Microsoft 365).
     
 ## Related topics
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
-- [Compare enterprise plans for Office 365](https://products.office.com/business/compare-more-office-365-for-business-plans)
+- [Compare enterprise plans for Office 365](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans)
