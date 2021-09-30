@@ -2,7 +2,7 @@
 title: "Remove or reset file passwords in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article

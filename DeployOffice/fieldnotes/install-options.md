@@ -2,7 +2,7 @@
 title: Choose how to install Microsoft 365 Apps (Office 365 ProPlus)
 author: davguent
 ms.author: davguent
-manager: laurawi
+manager: dougeby
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro

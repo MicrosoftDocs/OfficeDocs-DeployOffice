@@ -2,7 +2,7 @@
 title: "Windows Server end of support and Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -68,6 +68,10 @@ Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
 Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
 
 For some best practices when running Microsoft 365 Apps with Windows Server 2019, see [Windows Server 2019 adds support for Office 365 ProPlus](https://cloudblogs.microsoft.com/windowsserver/2019/10/07/windows-server-2019-adds-support-for-office-365-proplus/).  *(Office 365 ProPlus is now named Microsoft 365 Apps for enterprise.)*
+
+## Windows Server 2022
+
+Microsoft 365 Apps isn’t supported on Windows Server 2022, even though Windows Server 2022 is supported until October 2031.
 
 ## Additional information
 

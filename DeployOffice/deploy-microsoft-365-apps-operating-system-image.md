@@ -2,7 +2,7 @@
 title: "Deploy Microsoft 365 Apps as part of an operating system image"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

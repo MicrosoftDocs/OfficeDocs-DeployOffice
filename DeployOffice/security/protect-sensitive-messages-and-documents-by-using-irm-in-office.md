@@ -2,7 +2,7 @@
 title: "Protect sensitive messages and documents by using Information Rights Management (IRM) in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 9/8/2017
 audience: ITPro
 ms.topic: article
