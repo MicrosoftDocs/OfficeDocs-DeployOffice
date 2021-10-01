@@ -3428,8 +3428,9 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 - **Office.iOS.Paywall.BottomSheet.Stats** - Usage telemetry to measure how many users expanded/dismissed bottom sheet UI of subscription-plan (SKU) chooser screen. The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions. 
 
    The following fields are collected:
-      - **isDimissed** - Bool - true if user dismissed the drawer.
-      - **isExpanded** - Bool - true when user expanded the bottom sheet.
+
+  - **isDimissed** - Bool - true if user dismissed the drawer.
+  - **isExpanded** - Bool - true when user expanded the bottom sheet.
   
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
