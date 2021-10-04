@@ -103,6 +103,3 @@ If you’re not a volume licensed customer, such as a home user, you need to do 
 - For Office on Windows, purchase a retail version of Office 2021. After that, you need to uninstall Office LTSC 2021 Preview before installing Office 2021. The same is true if you want to update from a preview version of Project or Visio to the retail version.
 
 - For Office on a Mac, you don’t need to uninstall Office 2021 for Mac (Preview). But first you need to purchase a retail version of Office 2021 for Mac. After that, update your existing preview installation to at least Version 16.53, run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193), and then [activate](https://support.microsoft.com/office/7f6646b1-bb14-422a-9ad4-a53410fcefb2) Office.
-
-> [!NOTE]
-> The retail versions of Office 2021 (for Windows and for Mac), Project 2021, and Visio 2021 have not been released yet.
