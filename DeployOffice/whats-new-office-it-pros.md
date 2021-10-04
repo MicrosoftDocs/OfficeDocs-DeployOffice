@@ -19,7 +19,17 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## October 2021
+
+### Windows and Office configuration support matrix (updated)
+
+Are you wondering which versions of Office are supported on Windows 11? Or how long Microsoft 365 Apps will be supported on Windows 10?
+
+You can download and print the recently updated [Windows and Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390) to use as a reference.
+
 ## September 2021
+
+### Office LTSC 2021
 
 Office LTSC 2021 is generally available to volume licensed customers as of September 16, 2021. If you've deployed Microsoft 365 Apps to users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021. 
 
@@ -45,11 +55,9 @@ Microsoft 365 Apps is starting to provide new or improved features that rely on 
 
 [Learn from Microsoft experts](fieldnotes/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
 
-
 ## October 2020
 
 The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md).
-
 
 ## July 2020
 
@@ -86,7 +94,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](o
 Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, including what actions you might need to take, see [Name change for Office 365 ProPlus](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 ### Best practices articles
-We've published two new best practice articles from the field:[Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](fieldnotes/choose-how-to-deliver-updates.md). 
+We've published two new best practice articles from the field:[Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](fieldnotes/choose-how-to-deliver-updates.md).
 
 ### Viewer mode
 Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](overview-viewer-mode.md).
@@ -118,7 +126,7 @@ For more information, see this [blog post](https://techcommunity.microsoft.com/t
 Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
 
 ### Delivery Optimization and Microsoft 365 Apps
-Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft. 
+Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
 
 Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Microsoft 365 Apps](delivery-optimization.md).
 
@@ -193,7 +201,6 @@ For more information, see the following resources:
 ### Office for Mac available in the Mac App Store
 Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
 
-
 ## October 2018
 
 The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
@@ -205,7 +212,7 @@ For best practices on deploying Microsoft 365 Apps with Configuration Manager, s
 ## September 2018
 
 Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. For more information, see [Overview of Office 2019](office2019/overview.md) and [Deploy Office 2019](office2019/deploy.md).
- 
+
 ## August 2018
 
 Version 1.2 of the Readiness Toolkit was released, with new functionality to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md).
