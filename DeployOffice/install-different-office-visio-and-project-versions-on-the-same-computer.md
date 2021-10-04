@@ -31,7 +31,7 @@ The following table shows Office releases that are currently supported by Micros
 |Office release  |Version |Installation technologies  |
 |---------|---------|---------|
 |Office 365 <br/> (and Microsoft 365)  | 16.0 | Click-to-Run <br/> Microsoft Store  |
-|Office LTSC 2021|16.0|Click-to-Run |
+|Office LTSC 2021<br/>Office 2021|16.0|Click-to-Run |
 |Office 2019 | 16.0 | Click-to-Run <br/> Microsoft Store        |
 |Office 2016 | 16.0 | Click-to-Run <br/> Windows Installer (MSI) <br/>Microsoft Store        |
 |Office 2013 | 15.0 | Click-to-Run <br/> Windows Installer (MSI)        |
@@ -39,7 +39,7 @@ The following table shows Office releases that are currently supported by Micros
 You can find this version information by going to **Control Panel** > **Programs** > **Programs and Features**. You can also find this version in the **About** dialog for the Office app. For example, open Word, and go to **File** > **Account** > **About Word**. On the top line of the **About Microsoft Word** dialog box, you will see the version number. For example, Microsoft Word 2019 MSO (16.0.10336.20044) 32-bit. For steps to find this version in different Office releases, see [Find details for other versions of Office](https://support.microsoft.com/office/8e83dd74-3b83-4528-bda6-6ff6118f8293).
 
 > [!NOTE]
-> - Office 365, Microsoft 365, Office LTSC 2021, Office 2019, and Office 2016 all have the same version: 16.0
+> - Office 365, Microsoft 365, Office LTSC 2021, Office 2021, Office 2019, and Office 2016 all have the same version: 16.0
 > - Office 2010, which is no longer supported, had a version of 14.0 and used Windows Installer (MSI) as the installation technology.
 
 ## Installation technologies used by Office
