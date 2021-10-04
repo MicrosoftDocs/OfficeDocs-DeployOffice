@@ -831,13 +831,15 @@ The following fields are collected:
 
 The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
 
-The following fields are collected: 
+The following fields are collected:
 
 - **CompletionState** - Final state of sign in - Succeeded or failed. And failure cases
 
 - **EntryPoint** - Indicates from where Sign-In was initiated
 
 - **Hresult** - Error code
+
+- **IsSignInCompleteFGEnabled** - [Yes/ No] Status of feature gate during first boot
 
 - **Provider Package ID** - In case of Auto sign in
 
@@ -1647,11 +1649,13 @@ The following fields are collected:
 
 This event is collected to ensure account configuration is operating successfully and is used to monitor health of account creation, ability to add new email accounts, and monitor soft account resets.
 
-The following fields are collected: 
+The following fields are collected:
 
 - **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SSO), create_new_account, manual, etc.
 
 - **action** - The type of action performed on the account, such as add, remove, or reset
+
+- **auth_framework_type** - optional property to track what type of framework was used to add the account. It can have values such as oneauth, adal, or none.
 
 #### add.new.account.step
 
@@ -5912,6 +5916,28 @@ The following fields are collected:
 - **Type** - The operation type (for example, Open).
 
 
+#### Office.OfficeMobile.Lens.LensRequiredUsage
+
+This event is triggered when one of the following things happens:
+- The user launches Lens to capture or import images in any workflow.  This helps Microsoft determine the volume of users launching the app and further understand feature usage, changes in trends, and to identify and rectify issues in the product. 
+- The user completes the Lens workflow. For example, creating images or copying extracted data from image. This helps Microsoft to understand engagement metrics for the Lens App and to calculate the completion rate in any Lens workflow.
+- Lens Software Developer Kit interacts with Microsoft’s Image-to-document (I2D) service. This means that the event is called when an image is uploaded to our I2D service for file conversion and extraction (OCR) and when the user needs to correct the service’s output, we send feedback to improve quality. 
+
+The following fields are collected: 
+
+- **Data_Action** - integer value to identify action, such as lensLaunch, LensFlowCompletion, or ServiceIDMapping.
+
+- **Data_CloudConnectorRequestID** - String that identifies the service requests on the client app for both conversion and feedback scenarios.
+
+- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.  
+
+- **Data_EntryPoint** - integer value to identify entry point for Lens flow.
+
+- **Data_I2DServiceProcessID** - String that identifies the service-request in I2D service when user is uploading images for conversion. 
+
+- **Data_LensSessionID** - String field to identify Lens session ID.
+
+
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on Android)
 
 The event is collected for the Office app for Android. It records when a .pdf open, close, or save operation takes place and is used to understand and prioritize the user experience based on .pdf file operation information. The event enables us to keep the .pdf open, close, and save operations performing as expected, and to improve .pdf file operation performance.
@@ -6129,6 +6155,66 @@ The following fields are collected:
 - **InkStrokeWithPencilInkEffect** - Count of ink strokes with pencil ink effect since the last log.
 
 - **InkStrokeWithTilt** - Count of ink strokes with tilt since the last log.
+
+
+#### Office.OneNote.FirstRun.FirstRunDurationsBreakdown
+
+The event is triggered upon completion of provisioning of the user in the app. This happens right after user signs into the app for the first time. The event collects durations of different stages of provisioning. The data will help Microsoft determine which stages of provisioning consume the most time and help us develop a solution to reduce the time taken.
+
+The following fields are collected:
+
+- **Duration_FirstRunAttemptToCreateGuide_MS** - Time taken by the app to create a 'Getting Started' guide
+
+- **Duration_FirstRunBootStatusUpdateEnded_MS** - Time taken for the app to update the value of BootStatus to Succeeded/Failed. BootStatus helps the app track its status during First run. 
+
+- **Duration_FirstRunBootStatusUpdateStarted_MS** - Time taken for the app to update the value of BootStatus to Started. BootStatus helps the app track its status during First run. 
+
+- **Duration_FirstRunCheckIfPathBeAccessible_MS** - Time taken by the app to figure out if the notebook's path is accessible to it
+
+- **Duration_FirstRunCreateEmptyNotebook_MS** - Time taken by the app to create an empty organizational notebook
+
+- **Duration_FirstRunCreateNotebook_MS** - Time taken for the app to create a new personal notebook
+
+- **Duration_FirstRunCreateQuickNotes_MS** - Time taken by the app to create a 'Quick Notes' section in the notebook, in case one didn't already exist
+
+- **Duration_FirstRunEnsureOneDriveIdentityForOpenDefaultNotebook_MS** - Time taken by the app to ensure that an identity exists for a notebook
+
+- **Duration_FirstRunExecutionForMsaAccount_MS** - Time taken for provisioning to complete for a Live account
+
+- **Duration_FirstRunExecutionForOrgAccount_MS** - Time taken for provisioning to complete for an organizational account
+
+- **Duration_FirstRunFGetNotebooks_WaitForResult_MS** - Time taken by the app to obtain personal notebooks for an identity
+
+- **Duration_FirstRunFGetNotebooks_WaitForResultForPersonalNotebook_MS** - Time taken by the app to obtain notebooks for an identity
+
+- **Duration_FirstRunFindLogicalDuplicateOfNotebookInNotebookList_MS** - Time taken for the app to check if a duplicate notebook could exist
+
+- **Duration_FirstRunFOpenOrCreateDefaultOrgIdNotebook_MS** - Total time taken for the app to find or create and finally open the default notebook for an organizational account
+
+- **Duration_FirstRunFTryGetCreateDefaultNotebook_MS** - Time taken by the app to find or create a new default notebook
+
+- **Duration_FirstRunGetAvailableAccount_MS** - Time taken to obtain the signed in accounts
+
+- **Duration_FirstRunGetEnterpriseIdentity_MS** - Time taken by the app to find the Enterprise Identity
+
+- **Duration_FirstRunGetFolderProxyFromPath_MS** - Time taken by the app to obtain web location for a notebook
+
+- **Duration_FirstRunGetNotebook_MS** - Time taken for the app to obtain a notebook
+
+- **Duration_FirstRunGetPersonalNotebooks_MS** - Time taken by the app to obtain personal notebooks for an identity
+
+- **Duration_FirstRunOldCreateAndOpenNotebook_MS** - Total time taken for the app to find or create and finally open the default notebook
+
+- **Duration_FirstRunOpenDefaultNotebook_MS** - Time taken for the app to make few validations and finally open the default notebook
+
+- **Duration_FirstRunOpenNotebook_MS** - Time taken by the app to open an existing organizational notebook
+
+- **Duration_FirstRunSearchForExistingPersonalNotebook_MS** - Time taken for the app to find the existing personal notebook
+
+- **Duration_FirstRunStampNotebookAsDefault_MS** - Time taken by the app to stamp a notebook as default, in case it wasn't already
+
+- **Duration_FirstRunTryOpenDefaultNotebook_MS** - Time taken for the app to just open the default notebook
+
 
 #### Office.OneNote.Navigation.CreatePage
 
@@ -9216,6 +9302,8 @@ The following fields are collected:
 - **hx_okhttp_mode** - whether the new email syncing service component is using OKHttp for sending and receiving HTTP-based network requests
 
 - **initial_activity_name** - the Android Activity that launched the app
+
+- **is_pen_connected** - detects if a user is using pen or stylus to operate the app
 
 - **manufacturer** - the device manufacturer
 
