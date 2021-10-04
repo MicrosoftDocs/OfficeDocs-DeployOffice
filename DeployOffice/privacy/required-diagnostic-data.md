@@ -6156,6 +6156,66 @@ The following fields are collected:
 
 - **InkStrokeWithTilt** - Count of ink strokes with tilt since the last log.
 
+
+#### Office.OneNote.FirstRun.FirstRunDurationsBreakdown
+
+The event is triggered upon completion of provisioning of the user in the app. This happens right after user signs into the app for the first time. The event collects durations of different stages of provisioning. The data will help Microsoft determine which stages of provisioning consume the most time and help us develop a solution to reduce the time taken.
+
+The following fields are collected:
+
+- **Duration_FirstRunAttemptToCreateGuide_MS** - Time taken by the app to create a 'Getting Started' guide
+
+- **Duration_FirstRunBootStatusUpdateEnded_MS** - Time taken for the app to update the value of BootStatus to Succeeded/Failed. BootStatus helps the app track its status during First run. 
+
+- **Duration_FirstRunBootStatusUpdateStarted_MS** - Time taken for the app to update the value of BootStatus to Started. BootStatus helps the app track its status during First run. 
+
+- **Duration_FirstRunCheckIfPathBeAccessible_MS** - Time taken by the app to figure out if the notebook's path is accessible to it
+
+- **Duration_FirstRunCreateEmptyNotebook_MS** - Time taken by the app to create an empty organizational notebook
+
+- **Duration_FirstRunCreateNotebook_MS** - Time taken for the app to create a new personal notebook
+
+- **Duration_FirstRunCreateQuickNotes_MS** - Time taken by the app to create a 'Quick Notes' section in the notebook, in case one didn't already exist
+
+- **Duration_FirstRunEnsureOneDriveIdentityForOpenDefaultNotebook_MS** - Time taken by the app to ensure that an identity exists for a notebook
+
+- **Duration_FirstRunExecutionForMsaAccount_MS** - Time taken for provisioning to complete for a Live account
+
+- **Duration_FirstRunExecutionForOrgAccount_MS** - Time taken for provisioning to complete for an organizational account
+
+- **Duration_FirstRunFGetNotebooks_WaitForResult_MS** - Time taken by the app to obtain personal notebooks for an identity
+
+- **Duration_FirstRunFGetNotebooks_WaitForResultForPersonalNotebook_MS** - Time taken by the app to obtain notebooks for an identity
+
+- **Duration_FirstRunFindLogicalDuplicateOfNotebookInNotebookList_MS** - Time taken for the app to check if a duplicate notebook could exist
+
+- **Duration_FirstRunFOpenOrCreateDefaultOrgIdNotebook_MS** - Total time taken for the app to find or create and finally open the default notebook for an organizational account
+
+- **Duration_FirstRunFTryGetCreateDefaultNotebook_MS** - Time taken by the app to find or create a new default notebook
+
+- **Duration_FirstRunGetAvailableAccount_MS** - Time taken to obtain the signed in accounts
+
+- **Duration_FirstRunGetEnterpriseIdentity_MS** - Time taken by the app to find the Enterprise Identity
+
+- **Duration_FirstRunGetFolderProxyFromPath_MS** - Time taken by the app to obtain web location for a notebook
+
+- **Duration_FirstRunGetNotebook_MS** - Time taken for the app to obtain a notebook
+
+- **Duration_FirstRunGetPersonalNotebooks_MS** - Time taken by the app to obtain personal notebooks for an identity
+
+- **Duration_FirstRunOldCreateAndOpenNotebook_MS** - Total time taken for the app to find or create and finally open the default notebook
+
+- **Duration_FirstRunOpenDefaultNotebook_MS** - Time taken for the app to make few validations and finally open the default notebook
+
+- **Duration_FirstRunOpenNotebook_MS** - Time taken by the app to open an existing organizational notebook
+
+- **Duration_FirstRunSearchForExistingPersonalNotebook_MS** - Time taken for the app to find the existing personal notebook
+
+- **Duration_FirstRunStampNotebookAsDefault_MS** - Time taken by the app to stamp a notebook as default, in case it wasn't already
+
+- **Duration_FirstRunTryOpenDefaultNotebook_MS** - Time taken for the app to just open the default notebook
+
+
 #### Office.OneNote.Navigation.CreatePage
 
 Critical signal used to monitor the ability of OneNote users to create pages in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create a page this would trigger a high severity incident.
