@@ -23,12 +23,12 @@ description: "Provides Office admins with information about the implications of 
 
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
-Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
+Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
 
 
 ## Security updates will continue for Microsoft 365 Apps on Windows 7
 
-Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next 3 years, until January 2023. We're doing this to give you additional time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new features updates.
+Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next 3 years, until January 2023. We're doing this to give you additional time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new features updates.
 
 > [!IMPORTANT]
 > - Even with these security updates, Microsoft 365 Apps is no longer supported on Windows 7.
@@ -58,13 +58,13 @@ In the Office 365 Updates node, you'll see entries like the following, where ###
 - Microsoft 365 Apps Update for Windows 7 – Version 2002 for x64 based Edition (Build 12527.#####)
 - Microsoft 365 Apps Update for Windows 7 – Version 2002 for x86 based Edition (Build 12527.#####)
 
-These update packages are configured to apply ***only*** to devices running Windows 7. These update packages can't be used to update Microsoft 365 Apps on devices running other supported operating systems, such as Windows 10.
+These update packages are configured to apply ***only*** to devices running Windows 7. These update packages can't be used to update Microsoft 365 Apps on devices running other supported operating systems, such as Windows 11 or Windows 10.
 
 If you use an automatic deployment rule (ADR), you should create a new rule for these update packages. Then, use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Microsoft 365 Apps Update for Windows 7" as well as the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients will apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
 
 ## Extended availability of Version 2002
 
-Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates).
+Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
 Versions of Semi-Annual Enterprise Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel (Preview).
 
@@ -80,7 +80,7 @@ If you're getting updates directly from the Office CDN on the internet, after th
 
 Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
-Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, leaving it vulnerable to security threats, unless you have ESU. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
+Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, leaving it vulnerable to security threats, unless you have ESU. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as Windows 11 or Windows 10.
 
 ## Additional information
 
@@ -89,6 +89,7 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 - For information about Windows Server 2008 R2, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md).
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
-- Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
+- Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
+- For more information and resources, see [Support for Windows 7 has ended](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
 - If you're using Microsoft 365 Apps for enterprise on a device running Windows 7 or Windows Server 2008 R2, you'll continue to see **Office 365 ProPlus** under the **Product Information** section when you go to **File** > **Account** in an Office app, such as Word. If you're using Version 2002 of Microsoft 365 Apps for business, you'll see **Microsoft 365 for business** under the **Product Information** section.
