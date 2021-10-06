@@ -20,6 +20,9 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 - A version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
 
+> [!IMPORTANT]
+> Microsoft 365 Apps health isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+
 > [!NOTE]
 > The dashboard might show insights for versions older than 1908, but those versions aren't officially supported.
 

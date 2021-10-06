@@ -29,6 +29,9 @@ To view the inventory for your environment, the following requirements must be m
   - `https://*.config.office.com`
   - `https://*.config.office.net`
 
+> [!IMPORTANT]
+> Inventory isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+
 ## How to view inventory
 
 To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
