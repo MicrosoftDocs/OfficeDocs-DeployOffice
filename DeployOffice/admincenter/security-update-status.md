@@ -24,6 +24,13 @@ To view security update status for your environment, the following requirements 
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
 - Device must be part of [inventory](inventory.md) in the Microsoft 365 Apps admin center
 
+> [!IMPORTANT]
+> Security update status isn't available to customers who have the following plans:
+>- Office 365 operated by 21Vianet
+>- Office 365 Germany
+>- Office 365 GCC
+>- Office 365 GCC High and DoD
+
 ## How to view security update status
 
 To view the security update status for the devices in your inventory, perform the following steps:
