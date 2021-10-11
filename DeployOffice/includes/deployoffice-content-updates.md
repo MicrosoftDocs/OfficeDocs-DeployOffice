@@ -2,6 +2,34 @@
 
 
 
+## Week of October 04, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/4/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 10/4/2021 | [Overview of inventory in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/inventory) | modified |
+| 10/4/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 10/4/2021 | [Overview of the security update status report in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/security-update-status) | modified |
+| 10/4/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
+| 10/4/2021 | [Delivery Optimization and Microsoft 365 Apps](/DeployOffice/delivery-optimization) | modified |
+| 10/4/2021 | [Deploy Microsoft 365 Apps from the cloud](/DeployOffice/deploy-microsoft-365-apps-cloud) | modified |
+| 10/4/2021 | [Deploy Microsoft 365 Apps from a local source](/DeployOffice/deploy-microsoft-365-apps-local-source) | modified |
+| 10/4/2021 | [Device-based licensing for Microsoft 365 Apps for enterprise](/DeployOffice/device-based-licensing) | modified |
+| 10/4/2021 | [Windows 7 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-7-support) | modified |
+| 10/4/2021 | [Windows 8 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-8-support) | modified |
+| 10/4/2021 | [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](/DeployOffice/install-different-office-visio-and-project-versions-on-the-same-computer) | modified |
+| 10/4/2021 | [Update Office LTSC 2021 Preview to Office LTSC 2021](/DeployOffice/ltsc2021/update-from-preview) | modified |
+| 10/4/2021 | [Overview of Office 2019 (for IT Pros)](/DeployOffice/office2019/overview) | modified |
+| 10/4/2021 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/overview-update-channels) | modified |
+| 10/4/2021 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
+| 10/4/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 10/7/2021 | [Overview of inventory in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/inventory) | modified |
+| 10/7/2021 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
+| 10/7/2021 | [Overview of the security update status report in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/security-update-status) | modified |
+| 10/7/2021 | [Servicing profile](/DeployOffice/admincenter/servicing-profile) | modified |
+
+
 ## Week of September 27, 2021
 
 
