@@ -40,10 +40,9 @@ Version 2002 is the last version of Microsoft 365 Apps that you can install on d
 
 This means that if you want to continue to deploy and update Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows 7, you'll receive an error message.
 
-> [!NOTE]
-> You can continue to use a version of Microsoft 365 Apps earlier than Version 2002 on devices running Windows 7 if that version is still available. For example, you can continue to use Version 1908 of Semi-Annual Enterprise Channel until March 2021. To see the version available in each update channel of Microsoft 365 Apps, refer to the table in [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).  
+You can use the Office Deployment Tool to deploy Microsoft 365 Apps on devices that are running Windows 7. But, you can't use the [Office Customization Tool](https://config.office.com/deploymentsettings) or the Office 365 Installer wizard in Microsoft Endpoint Configuration Manager (current branch) to deploy Version 2002. You can't use those tools because Version 2002 is no longer available as a choice in the version drop-down list in those tools.
 
-To deploy or update Version 2002 on devices running Windows 7, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Microsoft Endpoint Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
+To update an existing installation of Version 2002, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
 
 If Microsoft 365 Apps is configured to get updates directly from the Office Content Delivery Network (CDN) on the internet, Microsoft 365 Apps on devices running Windows 7 will be updated automatically to the most current release of Version 2002 for that update channel.
 
