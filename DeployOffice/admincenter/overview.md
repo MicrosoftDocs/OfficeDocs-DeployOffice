@@ -49,8 +49,8 @@ For more information, see [Overview of Security Policy Advisor for Microsoft 365
 The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](../overview-office-deployment-tool.md) to deploy a customized version of Office.
 
 > [!NOTE]
-> If you don't sign in to the Microsoft 365 Apps admin center, you can still use the [Office Customization Tool](#office-customization-tool) regardless of which plan you have.
-> Office 365 GCC customers can sign in and use the Office Customization Tool.
+> - If you don't sign in to the Microsoft 365 Apps admin center, you can still use the [Office Customization Tool](#office-customization-tool) regardless of which plan you have.
+> - Office 365 GCC customers can sign in and use the Office Customization Tool.
 
 For more information, see [Overview of the Office Customization Tool](../overview-of-the-office-customization-tool-for-click-to-run.md).
 
