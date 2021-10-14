@@ -25,12 +25,12 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 Sign in at [config.office.com](https://config.office.com/) with your admin account. To sign into the admin center, your account must have either the global administrator, security administrator, or Office apps administrator role.
 
 > [!IMPORTANT]
-> The features in the Microsoft 365 Apps admin center, such as inventory and servicing profiles, aren't available to customers who have the following plans:
->- Office 365 operated by 21Vianet
->- Office 365 Germany
->- Office 365 GCC
->- Office 365 GCC High and DoD
-> Some functionality of the Office Customization Tool is available to all customers regardless of which plan they have. For more information, see [Office Customization Tool](#office-customization-tool).
+>- The features in the Microsoft 365 Apps admin center, such as inventory and servicing profiles, aren't available to customers who have the following plans:
+>   - Office 365 operated by 21Vianet
+>   - Office 365 Germany
+>   - Office 365 GCC
+>   - Office 365 GCC High and DoD
+>- Some functionality of the Office Customization Tool is available to all customers regardless of which plan they have. For more information, see [Office Customization Tool](#office-customization-tool).
 
 ## Office cloud policy service
 
