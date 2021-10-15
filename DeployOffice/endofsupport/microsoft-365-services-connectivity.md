@@ -72,6 +72,8 @@ Skype for Business Online was retired on July 31, 2021. For more information, se
 >   - Publish date: December 9, 2020.
 >
 > - For more information, see the [New minimum Outlook for Windows version requirements for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-minimum-outlook-for-windows-version-requirements-for/ba-p/2684142) blog post on the Microsoft Tech Community.
+>
+> - This information only applies to Outlook for Windows, and not any other operating systems, such as macOS, iOS, or Android.
 
 Starting on November 1, 2021, the following versions are the minimum versions of Outlook for Windows you need to be using to be able to connect to Microsoft 365 services, such as Exchange Online.
 
