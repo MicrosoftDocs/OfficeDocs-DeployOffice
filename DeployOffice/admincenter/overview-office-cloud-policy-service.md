@@ -38,7 +38,7 @@ The following are the requirements for using the Office cloud policy service wit
 > [!IMPORTANT]
 > - The Office cloud policy service isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
-> - You can create a policy configuration for Microsoft 365 Apps for business, but only policy settings related to privacy controls are supported. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](privacy/manage-privacy-controls.md).
+> - You can create a policy configuration for Microsoft 365 Apps for business, but only policy settings related to privacy controls are supported. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md).
 
 ## Steps for creating a policy configuration
 
@@ -74,7 +74,7 @@ The Click-to-Run service used by Microsoft 365 Apps for enterprise checks with t
 For example, when a user signs into Office on a device for the first time, a check is immediately made to see if there is a policy configuration that pertains to the user. If the user isn't a member of an AAD group that is assigned a policy configuration, then another check is made again in 24 hours. If the user is a member of an AAD group that is assigned a policy configuration, then the appropriate policy settings are applied and a check is made again in 90 minutes. In the event of an error, a check is made when the user opens an Office app, such as Word or Excel. If no Office apps are running when the next check is scheduled, then the check will be made the next time the user opens an Office app.
 
 > [!NOTE]
-> Policies from the Office cloud policy service are applied only when the Office app is restarted. The behavior is the same as with Group Policy. For Windows devices, policies are enforced based on the primary user that is signed into Microsoft 365 Apps for enterprise.  If there are multiple accounts signed in, only policies for the primary account are applied.  If the primary account is switched, most of the policies assigned to that account will not apply until the Office apps are restarted. Some policies related to [privacy controls](privacy/overview-privacy-controls.md) will apply without restarting any Office apps. 
+> Policies from the Office cloud policy service are applied only when the Office app is restarted. The behavior is the same as with Group Policy. For Windows devices, policies are enforced based on the primary user that is signed into Microsoft 365 Apps for enterprise.  If there are multiple accounts signed in, only policies for the primary account are applied.  If the primary account is switched, most of the policies assigned to that account will not apply until the Office apps are restarted. Some policies related to [privacy controls](../privacy/overview-privacy-controls.md) will apply without restarting any Office apps. 
 
 If the user is a member of multiple AAD groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
 
