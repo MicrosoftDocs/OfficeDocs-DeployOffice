@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "DeployOffice/overview-office-client-policy-service.md",
-      "redirect_url": "/DeployOffice/overview-office-cloud-policy-service",
+      "redirect_url": "/DeployOffice/admincenter/overview-office-cloud-policy-service",
       "redirect_document_id": true
     },
     {
@@ -719,6 +719,22 @@
       "source_path": "DeployOffice/default-file-format-oct.md",
       "redirect_url": "/deployoffice/admincenter/default-file-format-oct",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-of-security-policy-advisor.md",
+      "redirect_url": "/deployoffice/admincenter/overview-security-policy-advisor",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-office-cloud-policy-service.md",
+      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-of-the-office-customization-tool-for-click-to-run.md",
+      "redirect_url": "/deployoffice/admincenter/overview-office-customization-tool",
+      "redirect_document_id": true
     }
   ]
 }
+

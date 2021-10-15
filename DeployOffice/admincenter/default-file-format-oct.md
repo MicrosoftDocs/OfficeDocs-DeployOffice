@@ -35,4 +35,4 @@ To learn more about ODF generally, see:
 - [ISO organization](https://www.iso.org/standard/45245.html)
 
 ## Related articles
-- [Overview of the Office Customization Tool (for Click-to-Run)](overview-of-the-office-customization-tool-for-click-to-run.md)
+- [Overview of the Office Customization Tool](overview-office-customization-tool.md)
