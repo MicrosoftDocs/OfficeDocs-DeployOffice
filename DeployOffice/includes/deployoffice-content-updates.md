@@ -2,6 +2,18 @@
 
 
 
+## Week of October 11, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/13/2021 | [Right-sizing your initial deployment of Microsoft 365 Apps](/DeployOffice/fieldnotes/right-sizing-initial-deployment) | modified |
+| 10/14/2021 | [Windows 7 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-7-support) | modified |
+| 10/14/2021 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
+| 10/14/2021 | [Overview of the Office Customization Tool](/DeployOffice/overview-of-the-office-customization-tool-for-click-to-run) | modified |
+| 10/15/2021 | [Office versions and connectivity to Microsoft 365 services](/DeployOffice/endofsupport/microsoft-365-services-connectivity) | modified |
+
+
 ## Week of October 04, 2021
 
 
