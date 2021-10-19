@@ -34,7 +34,7 @@ For more information, see [Overview of optional connected experiences in Office]
 
 ## Configure the policy setting by using the Office cloud policy service
 
-You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether your users have the choice to use optional connected experiences. To configure this policy setting for Office for the web applications, you need to use the [Office cloud policy service](../overview-office-cloud-policy-service.md).  
+You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether your users have the choice to use optional connected experiences. To configure this policy setting for Office for the web applications, you need to use the [Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).  
 
 If you don’t configure this policy setting, the choice to use optional connected experiences will be available to your users. If you disable this policy setting, your users won’t be able to use any of the optional connected experiences.
 

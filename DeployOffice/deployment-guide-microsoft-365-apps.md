@@ -21,9 +21,9 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
 
 - [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md)
 
-- [Overview of the Office cloud policy service](overview-office-cloud-policy-service.md)
+- [Overview of the Office cloud policy service](admincenter/overview-office-cloud-policy-service.md)
 
-- [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) 
+- [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
 
 - [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md)
  

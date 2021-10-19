@@ -29,7 +29,7 @@ The following are the requirements for using Security Policy Advisor:
 
 - Must be using the Office cloud policy service and meet all the [requirements for that service](overview-office-cloud-policy-service.md#requirements-for-using-the-office-cloud-policy-service). 
 - At least version **1908** of Microsoft 365 Apps for enterprise. 
-- To create the recommendations and insights, Security Policy Advisor relies on required service data from Microsoft 365 Apps for enterprise. For more information, see [Required service data for Office](privacy/required-service-data.md).
+- To create the recommendations and insights, Security Policy Advisor relies on required service data from Microsoft 365 Apps for enterprise. For more information, see [Required service data for Office](../privacy/required-service-data.md).
 - The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) properly configured on your network.
 
 ## Turn on Security Policy Advisor
@@ -73,7 +73,7 @@ To turn off Security Policy Advisor, sign in to the [portal](https://config.offi
 
 When you turn off Security Policy Advisor, usage and threat data from your organization are no longer analyzed and no recommendations or insights will be generated.  
 
-Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Microsoft 365 Apps](privacy/overview-privacy-controls.md).
+Admins can control the data collected from their clients using the new privacy controls supported by Office apps. For more details, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
 
 ## How Security Policy Advisor creates recommendations 
 
@@ -92,7 +92,7 @@ Recommendations are currently available for the following security policies:
 
 In addition, if your organization has Office 365 Advanced Threat Protection Plan 2, then Security Policy Advisor can use data from this service to provide insights on recommended policies. These insights will be based on threats that have been detected and stopped by Advanced Threat Protection. For more details on Office 365 Advanced Threat Protection, see [Threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti). 
 
-To create the recommendations and insights, Security Policy Advisor requires required service data from Microsoft 365 Apps for enterprise. For more information, see [Required service data for Office](privacy/required-service-data.md).
+To create the recommendations and insights, Security Policy Advisor requires required service data from Microsoft 365 Apps for enterprise. For more information, see [Required service data for Office](../privacy/required-service-data.md).
 
 ## Known Issues
 The following are known issues we are tracking from input we have received during preview.

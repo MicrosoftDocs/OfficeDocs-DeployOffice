@@ -118,7 +118,7 @@ Starting with Version 2.30 of the Office apps for iOS, there are new preference 
 ### General availability of Security Policy Advisor
 Security Policy Advisor is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
 
-For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](overview-of-security-policy-advisor.md).
+For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](admincenter/overview-security-policy-advisor.md).
 
 ### Windows 7 end of support and Microsoft 365 Apps
 ***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
@@ -144,7 +144,7 @@ Starting with Version 16.28 of Office for Mac, there are new preference settings
 Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ### Create and manage your deployment configurations in the cloud
-You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
 
 ### Security baseline for Microsoft 365 Apps
 Microsoft has announced the *draft* release of the recommended security configuration baseline settings for Microsoft 365 Apps, version 1907. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1907-July-2019-DRAFT/ba-p/771308).
@@ -165,14 +165,14 @@ It's now easier to change an existing installation of Microsoft 365 Apps from 32
 For more information, see [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](change-bitness.md).
 
 ### General availability of Office cloud policy service
-The Office cloud policy service (OCPS) is now generally available.  OCPS is a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
+The Office cloud policy service is now generally available.  It's a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
+For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](admincenter/overview-office-cloud-policy-service.md).
 
 ### Preview of Security Policy Advisor
 Security Policy Advisor is now available for public preview. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
 
-For more information, see [Overview of Security Policy Advisor](overview-of-security-policy-advisor.md).
+For more information, see [Overview of Security Policy Advisor](admincenter/overview-security-policy-advisor.md).
 
 ### Privacy controls for Microsoft 365 Apps
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft 365 Apps.
@@ -191,19 +191,19 @@ Microsoft Teams will be installed for ***new*** installations of Microsoft 365 A
 
 ## January 2019
 
-### Public preview of Office client policy service
-A public preview is now available for the Office client policy service, which is a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
+### Public preview of Office cloud policy service
+A public preview is now available for the Office cloud policy service, which is a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
- - [Overview of the Office client policy service (Preview) for Office 365 ProPlus](./overview-office-cloud-policy-service.md)
+ - [Overview of the Office cloud policy service](admincenter/overview-office-cloud-policy-service.md)
 
 ### Office for Mac available in the Mac App Store
 Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
 
 ## October 2018
 
-The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md).
+The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
 
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-deploying-languages-microsoft-365-apps.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 

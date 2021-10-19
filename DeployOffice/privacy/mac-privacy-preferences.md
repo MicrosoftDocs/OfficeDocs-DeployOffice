@@ -47,7 +47,7 @@ These new preference settings are CFPreferences API compatible and can be set us
 > - Allow the use of additional optional connected experiences in Office
 > - Allow the use of connected experiences in Office
 >
-> For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../overview-office-cloud-policy-service.md).
+> For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).
 
 
 ## Preference setting for diagnostic data

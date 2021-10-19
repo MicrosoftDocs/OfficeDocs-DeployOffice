@@ -201,7 +201,7 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - [Autopilot](/mem/autopilot/windows-autopilot)
 
-  - [Microsoft 365 Apps admin center](../admincenter/overview.md) ([config.office.com](https://config.office.com/)), which integrates with the [Office cloud policy service](../overview-office-cloud-policy-service.md)
+  - [Microsoft 365 Apps admin center](../admincenter/overview.md) ([config.office.com](https://config.office.com/)), which integrates with the [Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md)
 
   - Other features in the [Device Management Admin Console](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/microsoft-intune-rolls-out-an-improved-streamlined-endpoint/ba-p/937760)
 
@@ -267,19 +267,19 @@ The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.
 
 After Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
 
-Although group policy has historically been used to enforce client settings and is still a viable method, we have developed a cloud-based synchronization nexus service that allows policies to roam with users: the [Office cloud policy service](../overview-office-cloud-policy-service.md) (OCPS). OCPS lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device is not domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
+Although group policy has historically been used to enforce client settings and is still a viable method, we have developed a cloud-based synchronization nexus service that allows policies to roam with users: the [Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device is not domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
 
 Figure 7 shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 
 ![Screenshot of the Edit policy configuration webpage.](../images/edit-policy-configuration.png)
 *Figure 7*
 
-Some configuration options control basic client behavior, such as scroll bar visibility in Excel or availability of Live Subtitles in PowerPoint, while other configurations may be important to your security, compliance, or risk departments. Figure 8 illustrates the OCPS option to enable or disable connected experiences in Microsoft 365 Apps, which provide users with web-based services from their desktop clients (like Translator, Bing image search, and 3D Maps).
+Some configuration options control basic client behavior, such as scroll bar visibility in Excel or availability of Live Subtitles in PowerPoint, while other configurations may be important to your security, compliance, or risk departments. Figure 8 illustrates the Office cloud policy service option to enable or disable connected experiences in Microsoft 365 Apps, which provide users with web-based services from their desktop clients (like Translator, Bing image search, and 3D Maps).
 
 ![Screenshot of drop-down box to enable or disable the use of connected experiences in Office that analyze content.](../images/configure-connected-experiences.png)
 *Figure 8*
 
-Microsoft provides privacy controls so that you can meet compliance and security obligations on a global scale, regardless of operational localities. With OCPS, you can use a simple drop-down menu to modify these settings and apply the modifications across the devices that use that profile.
+Microsoft provides privacy controls so that you can meet compliance and security obligations on a global scale, regardless of operational localities. With Office cloud policy service, you can use a simple drop-down menu to modify these settings and apply the modifications across the devices that use that profile.
 
 ### Change evaluation democratization
 

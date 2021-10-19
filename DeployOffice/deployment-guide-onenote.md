@@ -56,7 +56,7 @@ There are different ways to exclude OneNote from being installed with Office, de
 
 |Method  |Instructions  |
 |---------|---------|
-|Office Deployment Tool | You can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file. <br/><br/> We recommend that you use the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) to help you create your configuration.xml file.|
+|Office Deployment Tool | You can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file. <br/><br/> We recommend that you use the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you create your configuration.xml file.|
 |Microsoft Endpoint Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote in the **Select Office apps** drop-down list.|
 
@@ -84,7 +84,7 @@ To remove OneNote for Windows 10 from a Windows image so that OneNote for Window
 
 > [!NOTE]
 > - Group Policy requires the devices with OneNote to be joined to an Active Directory domain. 
-> - Most of these same policy settings can be applied by using the [Office cloud policy service](overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
+> - Most of these same policy settings can be applied by using the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
 > - Group Policy can't be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
 > - Office cloud policy service can only be used with Microsoft 365 Apps for enterprise.
 
