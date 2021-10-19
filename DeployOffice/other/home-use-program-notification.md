@@ -56,7 +56,7 @@ If you want users in your organization who are not in the United States to recei
 
 ### Use the Office cloud policy service to turn off notifications about HUP
 
-For instructions on how to use the Office cloud policy service, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../overview-office-cloud-policy-service.md).
+For instructions on how to use the Office cloud policy service, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
 
 In the Office cloud policy service, search for the *Show in-product notifications for the Microsoft Home Use Program* policy setting, and then set it to Disabled.
 

@@ -171,7 +171,7 @@ If you use the Office Deployment Tool, you can use the ExcludeApp element in you
 
 > [!NOTE]
 > - Be sure to [download](https://www.microsoft.com/download/details.aspx?id=49117) the most current version of the Office Deployment Tool.
-> - We recommend that you use the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) to help you create your configuration.xml file with the appropriate settings.
+> - We recommend that you use the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you create your configuration.xml file with the appropriate settings.
 
 ### Group Policy
 

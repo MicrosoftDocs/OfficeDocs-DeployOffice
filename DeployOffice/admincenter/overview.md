@@ -36,13 +36,13 @@ Sign in at [config.office.com](https://config.office.com/) with your admin accou
 
 The Office cloud policy service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../overview-office-cloud-policy-service.md).
+For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
 
 ## Security Policy Advisor
 
 You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment.
 
-For more information, see [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](../overview-of-security-policy-advisor.md).
+For more information, see [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](overview-security-policy-advisor.md).
 
 ## Office Customization Tool
 
@@ -52,7 +52,7 @@ The Office Customization Tool creates the configuration files that are used to d
 > - If you don't sign in to the Microsoft 365 Apps admin center, you can still use the Office Customization Tool regardless of which plan you have.
 > - Office 365 GCC customers can sign in and use the Office Customization Tool.
 
-For more information, see [Overview of the Office Customization Tool](../overview-of-the-office-customization-tool-for-click-to-run.md).
+For more information, see [Overview of the Office Customization Tool](overview-office-customization-tool.md).
 
 ## Microsoft 365 Apps health
 

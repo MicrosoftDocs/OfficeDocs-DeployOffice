@@ -48,7 +48,7 @@ The following table lists which policy settings are available for Office on Andr
 
 ## Use Office cloud policy service to apply policy settings
 
-To apply any of these 4 policy settings for Office on Android devices, you need to use the Office cloud policy service. For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../overview-office-cloud-policy-service.md).
+To apply any of these 4 policy settings for Office on Android devices, you need to use the Office cloud policy service. For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).
 
 > [!NOTE]
 > If you previously used Office cloud policy service to configure these policy settings for Office on devices running Windows, those same settings will apply to Office on Android devices. For that to happen, you just need to sign in to the Office cloud policy service and the service will apply the settings automatically to Office on Android devices.

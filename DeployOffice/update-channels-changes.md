@@ -115,7 +115,7 @@ This change takes effect with versions of the Office Deployment Tool that are re
 If you want to use a specific update channel, specify that update channel in your configuration XML file. Or, you can use Group Policy and enable the Update Channel policy setting and select the appropriate update channel for your organization.
 
 ### Office Customization Tool  
-We recommend using the [Office Customization Tool](overview-of-the-office-customization-tool-for-click-to-run.md) to help you build your configuration XML files for use with the Office Deployment Tool. When you use the Office Customization Tool and select Microsoft 365 Apps for enterprise in the **Office Suites** drop-down list, the **Update channel** drop-down will choose Current Channel automatically. You can always choose a different update channel.
+We recommend using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you build your configuration XML files for use with the Office Deployment Tool. When you use the Office Customization Tool and select Microsoft 365 Apps for enterprise in the **Office Suites** drop-down list, the **Update channel** drop-down will choose Current Channel automatically. You can always choose a different update channel.
 
 You will also see this default update channel selection if you use Microsoft Endpoint Configuration Manager (current branch) and the Office 365 Client Installation Wizard. That’s because the wizard makes use of the Office Customization Tool.
 
